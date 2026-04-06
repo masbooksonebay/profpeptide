@@ -1,11 +1,11 @@
 "use client";
-
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const nav = [
   { label: "Peptide Library", href: "/peptides" },
+  { label: "Supplements", href: "/supplements" },
   { label: "Research", href: "/research" },
   { label: "Calculator", href: "/calculator" },
   { label: "Discount Codes", href: "/coupons" },
@@ -16,7 +16,6 @@ const nav = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
