@@ -4,74 +4,74 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const nav = [
-  { label: "Peptide Library", href: "/peptides" },
-  { label: "Supplements", href: "/supplements" },
-  { label: "Research", href: "/research" },
-  { label: "Calculator", href: "/calculator" },
-  { label: "Discount Codes", href: "/coupons" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Get the App", href: "/app" },
-];
+  { label: "Peptides", href: "/peptides" },
+    { label: "Supplements", href: "/supplements" },
+      { label: "Research", href: "/research" },
+        { label: "Calculator", href: "/calculator" },
+          { label: "Discount Codes", href: "/coupons" },
+            { label: "FAQ", href: "/faq" },
+              { label: "Get the App", href: "/app" },
+              ];
 
-export default function Header() {
-  const [open, setOpen] = useState(false);
-  const pathname = usePathname();
-  return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="text-[#0D7377] font-bold text-xl tracking-tight">
-            Prof. Peptide
-          </span>
-          <span className="hidden sm:inline text-xs text-gray-400 font-normal mt-0.5">
-            Research &amp; Education
-          </span>
-        </Link>
-        <nav className="hidden md:flex items-center gap-6">
-          {nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`text-sm transition-colors duration-150 ${
-                pathname === item.href
-                  ? "text-[#0D7377] font-medium"
-                  : "text-gray-600 hover:text-[#0D7377]"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-        <button
-          className="md:hidden p-2 rounded-md text-gray-500 hover:text-gray-800"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {open ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
-      </div>
-      {open && (
-        <div className="md:hidden border-t border-gray-100 bg-white px-4 pb-4">
-          {nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              className={`block py-3 text-sm border-b border-gray-50 ${
-                pathname === item.href ? "text-[#0D7377] font-medium" : "text-gray-600"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
-      )}
-    </header>
-  );
-}
+              export default function Header() {
+                const [open, setOpen] = useState(false);
+                  const pathname = usePathname();
+                    return (
+                        <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
+                              <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+                                      <Link href="/" className="flex items-center gap-2">
+                                                <span className="text-[#0D7377] font-bold text-xl tracking-tight">
+                                                            Prof. Peptide
+                                                                      </span>
+                                                                                <span className="hidden sm:inline text-xs text-gray-400 font-normal mt-0.5">
+                                                                                            Research &amp; Education
+                                                                                                      </span>
+                                                                                                              </Link>
+                                                                                                                      <nav className="hidden md:flex items-center gap-6">
+                                                                                                                                {nav.map((item) => (
+                                                                                                                                            <Link
+                                                                                                                                                          key={item.href}
+                                                                                                                                                                        href={item.href}
+                                                                                                                                                                                      className={`text-sm transition-colors duration-150 ${
+                                                                                                                                                                                                      pathname === item.href
+                                                                                                                                                                                                                        ? "text-[#0D7377] font-medium"
+                                                                                                                                                                                                                                          : "text-gray-600 hover:text-[#0D7377]"
+                                                                                                                                                                                                                                                        }`}
+                                                                                                                                                                                                                                                                    >
+                                                                                                                                                                                                                                                                                  {item.label}
+                                                                                                                                                                                                                                                                                              </Link>
+                                                                                                                                                                                                                                                                                                        ))}
+                                                                                                                                                                                                                                                                                                                </nav>
+                                                                                                                                                                                                                                                                                                                        <button
+                                                                                                                                                                                                                                                                                                                                  className="md:hidden p-2 rounded-md text-gray-500 hover:text-gray-800"
+                                                                                                                                                                                                                                                                                                                                            onClick={() => setOpen(!open)}
+                                                                                                                                                                                                                                                                                                                                                      aria-label="Toggle menu"
+                                                                                                                                                                                                                                                                                                                                                              >
+                                                                                                                                                                                                                                                                                                                                                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                                                                                                                                                                                                                                                                                                                                                    {open ? (
+                                                                                                                                                                                                                                                                                                                                                                                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                                                                                                                                                                                                                                                                                                                                                                                              ) : (
+                                                                                                                                                                                                                                                                                                                                                                                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                                                                                                                                                                                                                                                                                                                                                                                                                        )}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  </svg>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          </button>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      {open && (
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div className="md:hidden border-t border-gray-100 bg-white px-4 pb-4">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        {nav.map((item) => (
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <Link
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  key={item.href}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                href={item.href}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              onClick={() => setOpen(false)}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            className={`block py-3 text-sm border-b border-gray-50 ${
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            pathname === item.href ? "text-[#0D7377] font-medium" : "text-gray-600"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }`}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      >
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    {item.label}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </Link>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ))}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        )}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </header>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              );
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              }
