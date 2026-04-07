@@ -14,17 +14,6 @@ type PeptideData = {
 };
 
 const peptideData: Record<string, PeptideData> = {
-  "semaglutide": {
-    name: "Semaglutide",
-    category: "GLP-1 Receptor Agonist",
-    halfLife: "~7 days",
-    route: "Subcutaneous injection or oral",
-    overview: "Semaglutide is a long-acting GLP-1 receptor agonist originally developed for type 2 diabetes (Ozempic) and later approved for weight management (Wegovy). It is one of the most studied peptides in metabolic research.",
-    mechanism: "Acts on GLP-1 receptors in the pancreas (stimulating insulin, suppressing glucagon), brain (reducing appetite via hypothalamic pathways), and gut (slowing gastric emptying). The 7-day half-life is achieved via a C18 fatty acid chain enabling albumin binding.",
-    research: "Multiple large Phase III trials (SUSTAIN, STEP) demonstrated significant reductions in HbA1c and body weight. The STEP 1 trial showed approximately 15% average body weight reduction over 68 weeks at 2.4mg weekly dose.",
-    notes: "Common side effects in clinical trials: nausea, vomiting, diarrhea (usually transient). Gradual dose titration is standard protocol. Research interest growing in cardiovascular and renal outcomes. Semaglutide is FDA approved as Ozempic (for type 2 diabetes) and Wegovy (for chronic weight management).",
-    tags: ["Metabolic", "Weight", "GLP-1", "Long-acting"],
-  },
   "tb-500": {
     name: "TB-500",
     category: "Tissue Repair Peptide",
