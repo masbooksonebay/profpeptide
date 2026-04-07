@@ -5,14 +5,14 @@ import { useState } from "react";
 const vendors = [
   {
     name: "Peptide Partners",
-    url: "https://peptidespartners.com",
+    url: "https://peptide.partners/",
     code: "PROFPEPTIDE",
     discount: "10% off",
     editorsPick: true,
   },
   {
     name: "Apollo Peptide Sciences",
-    url: "https://apollopeptides.co",
+    url: "https://apollopeptidesciences.com/",
     code: "PROFPEPTIDE",
     discount: "10% off",
   },
@@ -48,7 +48,7 @@ const vendors = [
   },
   {
     name: "Royal Peptides",
-    url: "https://royalpeptides.com",
+    url: "https://royal-peptides.com/",
     code: "PROFPEPTIDE",
     discount: "10% off",
   },
