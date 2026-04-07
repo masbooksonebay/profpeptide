@@ -162,11 +162,7 @@ export default function WolverineStackPage() {
         ))}
       </div>
 
-      <div className="bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mt-10 text-xs text-amber-800">
-        <strong>Disclaimer:</strong> All information is for educational and research purposes only. Not medical advice. Not for human use. Neither BPC-157 nor TB-500 is approved by the FDA for therapeutic use.
-      </div>
-
-      <div className="mt-6 p-5 bg-gray-50 border border-gray-100 rounded-xl">
+      <div className="mt-10 p-5 bg-gray-50 border border-gray-100 rounded-xl">
         <p className="text-sm font-medium text-gray-700 mb-1">Need to calculate a dose?</p>
         <p className="text-xs text-gray-500 mb-3">
           Use the Prof. Peptide dosage calculator for accurate reconstitution and dosing math.
