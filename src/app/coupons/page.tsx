@@ -30,6 +30,7 @@ const vendors = [
     url: "https://ascensionpeptides.com",
     code: "PROFPEPTIDE",
     discount: "50% off",
+    bestDeal: true,
     region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
   {
@@ -157,6 +158,11 @@ export default function CouponsPage() {
                 {v.editorsPick && (
                   <span className="text-xs bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded-full font-medium">
                     Editor&apos;s Pick
+                  </span>
+                )}
+                {"bestDeal" in v && v.bestDeal && (
+                  <span className="text-xs bg-green-100 text-green-800 border border-green-300 px-2 py-0.5 rounded-full font-medium">
+                    Best Deal
                   </span>
                 )}
                 {v.region && (
