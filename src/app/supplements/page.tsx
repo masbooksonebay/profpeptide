@@ -62,9 +62,9 @@ const categories = [
   {
     name: "✨ Skin Health & Anti-Aging",
     supplements: [
-      { name: "Collagen Peptides", slug: "collagen-peptides" },
+      { name: "Collagen Peptides", slug: "collagen-peptides-skin" },
       { name: "Hyaluronic Acid", slug: "hyaluronic-acid" },
-      { name: "Vitamin C", slug: "vitamin-c" },
+      { name: "Vitamin C", slug: "vitamin-c-skin" },
       { name: "Biotin", slug: "biotin" },
     ],
   },
