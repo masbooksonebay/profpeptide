@@ -40,6 +40,13 @@ const vendors = [
     region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
   {
+    name: "Ignite Peptides",
+    url: "https://ignitepeptides.com/ref/profpeptide/",
+    code: "welcome10",
+    discount: "10% off",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+  },
+  {
     name: "Integrative Peptides",
     url: "https://integrativepeptides.com/affiliate/profpeptide/",
     code: "PROFPEPTIDE",
