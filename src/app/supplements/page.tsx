@@ -20,7 +20,6 @@ const categories = [
   {
     name: "⚡ Recovery & Tissue Repair",
     supplements: [
-      { name: "Creatine", slug: "creatine" },
       { name: "Collagen Peptides", slug: "collagen-peptides" },
       { name: "Glutamine", slug: "glutamine" },
       { name: "Curcumin", slug: "curcumin" },
@@ -31,11 +30,13 @@ const categories = [
   {
     name: "🏃 Performance & Energy",
     supplements: [
+      { name: "Creatine", slug: "creatine" },
       { name: "Protein Powder", slug: "protein-powder" },
       { name: "Electrolyte Powders", slug: "electrolyte-powders" },
       { name: "BCAAs", slug: "bcaas" },
       { name: "Beta-Alanine", slug: "beta-alanine" },
       { name: "Caffeine + L-Theanine", slug: "caffeine-l-theanine" },
+      { name: "L-Citrulline Malate", slug: "l-citrulline-malate" },
     ],
   },
   {
