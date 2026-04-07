@@ -38,11 +38,11 @@ const categories = [
     emoji: "\uD83E\uDDEC",
     name: "Growth Hormone",
     peptides: [
-      { name: "CJC-1295", slug: "cjc-1295" },
-      { name: "Ipamorelin", slug: "ipamorelin" },
-      { name: "Sermorelin", slug: "sermorelin" },
-      { name: "Tesamorelin", slug: "tesamorelin" },
-      { name: "GH Stack", slug: "gh-stack" },
+      { name: "CJC-1295", slug: "cjc-1295", active: true },
+      { name: "Ipamorelin", slug: "ipamorelin", active: true },
+      { name: "Sermorelin", slug: "sermorelin", active: true },
+      { name: "Tesamorelin", slug: "tesamorelin", active: true },
+      { name: "GH Stack", slug: "gh-stack", active: true },
     ],
   },
   {
