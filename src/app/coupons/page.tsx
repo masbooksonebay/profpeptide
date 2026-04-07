@@ -1,10 +1,6 @@
-import Link from "next/link";
+"use client";
 
-export const metadata = {
-  title: "Discount Codes | Prof. Peptide",
-  description:
-    "Verified discount codes for peptide vendors with third-party lab testing.",
-};
+import { useState } from "react";
 
 const vendors = [
   {
@@ -64,6 +60,29 @@ const vendors = [
   },
 ];
 
+function CodeBox({ code }: { code: string }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  };
+
+  return (
+    <button
+      onClick={handleCopy}
+      className="block w-full bg-gray-50 border border-gray-200 px-4 py-2.5 rounded-lg text-sm font-mono font-bold text-[#1e2d3d] tracking-widest text-center cursor-pointer hover:bg-gray-100 transition-colors"
+    >
+      {copied ? (
+        <span className="text-[#0D7377] font-sans font-medium tracking-normal">Copied!</span>
+      ) : (
+        code
+      )}
+    </button>
+  );
+}
+
 export default function CouponsPage() {
   return (
     <div className="section max-w-3xl">
@@ -77,20 +96,20 @@ export default function CouponsPage() {
         {vendors.map((v) => (
           <div
             key={v.name}
-            className={`border rounded-xl overflow-hidden transition-shadow ${
+            className={`rounded-xl overflow-hidden transition-shadow ${
               v.editorsPick
-                ? "border-amber-200 shadow-md hover:shadow-lg"
-                : "border-gray-100 shadow-sm hover:shadow-md"
+                ? "border-l-4 border-l-amber-400 border border-amber-200 shadow-md hover:shadow-lg bg-[#FFFBEB]"
+                : "border border-gray-100 shadow-sm hover:shadow-md bg-white"
             }`}
           >
             <div
-              className={`bg-[#1B3A4B] flex items-center justify-between ${
+              className={`bg-[#0D7377] flex items-center justify-between ${
                 v.editorsPick ? "px-6 py-5" : "px-5 py-4"
               }`}
             >
               <h2
                 className={`font-bold text-white leading-tight ${
-                  v.editorsPick ? "text-lg" : "text-base"
+                  v.editorsPick ? "text-xl" : "text-base"
                 }`}
               >
                 {v.name}
@@ -100,7 +119,7 @@ export default function CouponsPage() {
               </span>
             </div>
 
-            <div className={`bg-white ${v.editorsPick ? "px-6 py-5" : "px-5 py-4"}`}>
+            <div className={v.editorsPick ? "px-6 py-5" : "px-5 py-4"}>
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">
                   Verified
@@ -113,17 +132,15 @@ export default function CouponsPage() {
               </div>
 
               <div className="mb-4">
-                <p className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-1">Your Code</p>
-                <code className="block bg-gray-50 border border-gray-200 px-4 py-2.5 rounded-lg text-sm font-mono font-bold text-[#1e2d3d] tracking-widest text-center">
-                  {v.code}
-                </code>
+                <p className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-1">Click to copy code</p>
+                <CodeBox code={v.code} />
               </div>
 
               <a
                 href={v.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center text-sm font-medium text-white py-2.5 rounded-lg bg-[#1B3A4B] transition-opacity hover:opacity-90"
+                className="block w-full text-center text-sm font-medium text-white py-2.5 rounded-lg bg-[#0D7377] transition-colors hover:bg-[#0a5c60]"
               >
                 Shop Now &rarr;
               </a>
