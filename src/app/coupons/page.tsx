@@ -8,55 +8,78 @@ const vendors = [
     url: "https://peptide.partners/",
     code: "PROFPEPTIDE",
     discount: "10% off",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
     editorsPick: true,
+  },
+  {
+    name: "Almighty Peptides",
+    url: "https://www.almightypeptides.com/?sld=profpeptide",
+    code: "profpep",
+    discount: "10% off",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
   {
     name: "Apollo Peptide Sciences",
     url: "https://apollopeptidesciences.com/",
     code: "PROFPEPTIDE",
     discount: "10% off",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
   {
     name: "Ascension Peptides",
     url: "https://ascensionpeptides.com",
     code: "PROFPEPTIDE",
     discount: "20% off",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
   {
     name: "Fusion Peptide",
     url: "https://fusionpeptide.com/?ref=PROFPEPTIDE",
     code: "MARK15",
     discount: "15% off",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
   {
     name: "Integrative Peptides",
     url: "https://integrativepeptides.com/affiliate/profpeptide/",
     code: "PROFPEPTIDE",
     discount: "10% off",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
   {
     name: "Limitless Biotech",
     url: "https://limitlessbiotech.com",
     code: "PROFPEPTIDE",
     discount: "10% off",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
   {
     name: "Oasis Labs",
     url: "https://myoasislabs.com",
     code: "PROFPEPTIDE",
     discount: "10% off",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+  },
+  {
+    name: "Particle Peptides",
+    url: "https://particlepeptides.com/en/",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "\uD83C\uDDEC\uD83C\uDDE7 UK",
   },
   {
     name: "Royal Peptides",
     url: "https://royal-peptides.com/",
     code: "PROFPEPTIDE",
     discount: "10% off",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
   {
     name: "Vital Core Research",
     url: "https://vitalcoreresearch.com",
     code: "PROFPEPTIDE",
     discount: "10% off",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
 ];
 
@@ -127,6 +150,11 @@ export default function CouponsPage() {
                 {v.editorsPick && (
                   <span className="text-xs bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded-full font-medium">
                     Editor&apos;s Pick
+                  </span>
+                )}
+                {v.region && (
+                  <span className="text-xs bg-gray-50 text-gray-500 border border-gray-200 px-2 py-0.5 rounded-full">
+                    {v.region}
                   </span>
                 )}
               </div>
