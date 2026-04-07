@@ -64,7 +64,7 @@ const sections = [
     id: "limitations",
     title: "Research Limitations & Regulatory Status",
     content:
-      "The majority of TB-500 research has been conducted in preclinical animal models. Limited human clinical trial data exists — one pilot study examined autologous Thymosin Beta-4 pre-treated endothelial progenitor cell transplantation in patients with acute myocardial infarction, and clinical trials for venous stasis ulcers and corneal injuries have been registered. TB-500 is not approved by the FDA for any medical use in humans. The World Anti-Doping Agency (WADA) prohibits TB-500 use in competitive sports. Results from animal studies cannot be freely extrapolated to humans, and further clinical research is needed. TB-500 is not FDA approved for any medical use in humans.",
+      "The majority of TB-500 research has been conducted in preclinical animal models. Limited human clinical trial data exists — one pilot study examined autologous Thymosin Beta-4 pre-treated endothelial progenitor cell transplantation in patients with acute myocardial infarction, and clinical trials for venous stasis ulcers and corneal injuries have been registered. TB-500 is not approved by the FDA for any medical use in humans. The World Anti-Doping Agency (WADA) prohibits TB-500 use in competitive sports. Results from animal studies cannot be freely extrapolated to humans, and further clinical research is needed.",
   },
   {
     id: "stacking",

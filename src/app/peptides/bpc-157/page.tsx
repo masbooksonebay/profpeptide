@@ -103,7 +103,7 @@ export default function BPC157Page() {
       </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
-        {["Gut", "Recovery", "Tissue Repair", "Preclinical"].map((tag) => (
+        {["Recovery", "Tissue Repair", "Preclinical"].map((tag) => (
           <span
             key={tag}
             className="text-xs bg-gray-100 text-gray-500 px-2.5 py-1 rounded-full"
