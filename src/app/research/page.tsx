@@ -30,8 +30,8 @@ const categories = [
     emoji: "\uD83C\uDFC3",
     name: "Performance & Energy",
     peptides: [
-      { name: "IGF-1 LR3", slug: "igf-1-lr3" },
-      { name: "Follistatin", slug: "follistatin" },
+      { name: "IGF-1 LR3", slug: "igf-1-lr3", active: true },
+      { name: "Follistatin", slug: "follistatin", active: true },
     ],
   },
   {
