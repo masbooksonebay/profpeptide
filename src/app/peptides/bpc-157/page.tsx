@@ -41,7 +41,7 @@ const sections = [
     id: "limitations",
     title: "Research Limitations",
     content:
-      "Several important caveats apply to the BPC-157 literature: (1) Almost all evidence is from rodent models; direct extrapolation to humans carries significant uncertainty. (2) No completed randomised controlled human trials exist as of 2025. (3) Many studies originate from a single Croatian research group (Sikiric et al.), creating a concentration-of-source bias. (4) Optimal human dosing, administration route, and cycle length are unknown. (5) Long-term safety data in humans is absent. (6) BPC-157 is not approved by the FDA, EMA, or any major regulatory body for therapeutic use. It is not scheduled as a controlled substance in most countries but is prohibited in sport by WADA.",
+      "Several important caveats apply to the BPC-157 literature: (1) Almost all evidence is from rodent models; direct extrapolation to humans carries significant uncertainty. (2) No completed randomised controlled human trials exist as of 2025. (3) Many studies originate from a single Croatian research group (Sikiric et al.), creating a concentration-of-source bias. (4) Optimal human dosing, administration route, and cycle length are unknown. (5) Long-term safety data in humans is absent. (6) BPC-157 is not approved by the FDA, EMA, or any major regulatory body for therapeutic use. It is not scheduled as a controlled substance in most countries but is prohibited in sport by WADA. BPC-157 is not FDA approved for any medical use and is classified as a Category 2 bulk drug substance, meaning it cannot be compounded by commercial pharmacies.",
   },
   {
     id: "stacking",
