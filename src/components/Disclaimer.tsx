@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 
-const SHOW_ON = ["/peptides", "/research", "/calculator", "/coupons"];
+const SHOW_ON = ["/peptides", "/research"];
 
 export default function Disclaimer() {
   const pathname = usePathname();
