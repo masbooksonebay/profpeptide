@@ -71,7 +71,7 @@ const sections: Section[] = [
     ],
   },
   {
-    title: "⚗️ Reconstitution & Storage",
+    title: "🧪 Reconstitution & Storage",
     faqs: [
       {
         q: "How do I reconstitute a lyophilized peptide?",
