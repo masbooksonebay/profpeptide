@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Discount Codes | Prof. Peptide",
   description:
-    "Verified peptide coupon codes and discount codes for trusted research suppliers — updated regularly.",
+    "Verified discount codes for peptide vendors with third-party lab testing.",
 };
 
 const coupons = [
@@ -10,7 +10,7 @@ const coupons = [
   { vendor: "Integrative Peptides", code: "PROFPEPTIDE", discount: "10% off", verified: true, note: "Use code at checkout for 10% off." },
   { vendor: "Limitless Biotech", code: "PROFPEPTIDE", discount: "10% off", verified: true, note: "Use code at checkout for 10% off." },
   { vendor: "Oasis Labs", code: "PROFPEPTIDE", discount: "10% off", verified: true, note: "Use code at checkout for 10% off." },
-  { vendor: "Peptide Partners", code: "PROFPEPTIDE", discount: "10% off", verified: true, note: "Use code at checkout for 10% off." },
+  { vendor: "Peptide Partners", code: "PROFPEPTIDE", discount: "10% off", verified: true, editorsPick: true, note: "Use code at checkout for 10% off." },
   { vendor: "Royal Peptides", code: "PROFPEPTIDE", discount: "10% off", verified: true, note: "Use code at checkout for 10% off." },
   { vendor: "Vital Core Research", code: "PROFPEPTIDE", discount: "10% off", verified: true, note: "Use code at checkout for 10% off." },
 ];
@@ -21,7 +21,7 @@ export default function CouponsPage() {
       <span className="tag mb-3 inline-block">Updated Regularly</span>
       <h1 className="text-3xl font-bold text-[#1e2d3d] mb-3">Discount Codes</h1>
       <p className="text-sm text-gray-500 mb-8 leading-relaxed max-w-lg">
-        Verified peptide coupon codes and discount codes for trusted research suppliers — updated regularly.
+        Verified discount codes for peptide vendors with third-party lab testing.
       </p>
       <div className="space-y-4 mb-10">
         {coupons.map((c) => (
@@ -33,6 +33,11 @@ export default function CouponsPage() {
                   {c.verified && (
                     <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full">
                       Verified
+                    </span>
+                  )}
+                  {c.editorsPick && (
+                    <span className="text-xs bg-amber-50 text-amber-700 border border-amber-300 px-2 py-0.5 rounded-full font-medium">
+                      Editor&apos;s Pick
                     </span>
                   )}
                 </div>
