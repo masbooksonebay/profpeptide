@@ -25,17 +25,6 @@ const peptideData: Record<string, PeptideData> = {
     notes: "Often compared to BPC-157 and stacked with it in research protocols. Different mechanism of action suggests potential complementarity. TB-500 is not FDA approved for any medical use in humans.",
     tags: ["Recovery", "Inflammation", "Tissue Repair"],
   },
-  "selank": {
-    name: "Selank",
-    category: "Peptide Nootropic",
-    halfLife: "~2 minutes (intranasal)",
-    route: "Intranasal or subcutaneous",
-    overview: "Selank is a synthetic heptapeptide derived from the immune peptide tuftsin, developed in Russia. It is studied for anxiolytic, nootropic, and immunomodulatory properties.",
-    mechanism: "Influences GABA-A receptors and modulates brain-derived neurotrophic factor (BDNF) expression. May inhibit enkephalin-degrading enzymes, potentially modulating opioid signaling. Affects monoamine neurotransmitter systems.",
-    research: "Russian clinical research suggests anxiolytic effects comparable to benzodiazepines without dependence or sedation. Limited Western peer-reviewed literature. BDNF upregulation may support cognitive function.",
-    notes: "Intranasal administration is most studied due to very short systemic half-life. Stability requires careful storage. Most available literature originates from Russian research institutions. Selank is not FDA approved for any medical use.",
-    tags: ["Anxiety", "Cognitive", "Nootropic"],
-  },
 };
 
 export function generateStaticParams() {
