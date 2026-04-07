@@ -29,7 +29,7 @@ const vendors = [
     name: "Ascension Peptides",
     url: "https://ascensionpeptides.com",
     code: "PROFPEPTIDE",
-    discount: "20% off",
+    discount: "50% off",
     region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
   {
