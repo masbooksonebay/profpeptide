@@ -15,6 +15,7 @@ const categories = [
       { name: "Garcinia Cambogia", slug: "garcinia-cambogia" },
       { name: "Alpha Lipoic Acid", slug: "alpha-lipoic-acid" },
       { name: "Caffeine", slug: "caffeine" },
+      { name: "Chromium", slug: "chromium" },
     ],
   },
   {

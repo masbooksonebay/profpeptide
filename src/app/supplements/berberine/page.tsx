@@ -95,7 +95,7 @@ export default function BerberinePage() {
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-2">🔗 Related Supplements</h2>
           <p className="text-sm text-gray-600 leading-relaxed">
-            Alpha Lipoic Acid | Chromium | Magnesium — Berberine pairs well with these for comprehensive metabolic support.
+            <Link href="/supplements/alpha-lipoic-acid" className="text-[#0D7377] hover:underline">Alpha Lipoic Acid</Link> | <Link href="/supplements/chromium" className="text-[#0D7377] hover:underline">Chromium</Link> | <Link href="/supplements/magnesium" className="text-[#0D7377] hover:underline">Magnesium</Link> — Berberine pairs well with these for comprehensive metabolic support.
           </p>
         </div>
 
