@@ -21,9 +21,9 @@ const categories = [
     emoji: "\u26A1",
     name: "Recovery & Tissue Repair",
     peptides: [
-      { name: "BPC-157", slug: "bpc-157" },
-      { name: "TB-500", slug: "tb-500" },
-      { name: "Wolverine Stack", slug: "wolverine-stack" },
+      { name: "BPC-157", slug: "bpc-157", active: true },
+      { name: "TB-500", slug: "tb-500", active: true },
+      { name: "Wolverine Stack", slug: "wolverine-stack", active: true },
     ],
   },
   {
