@@ -1,188 +1,130 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Research & Education | Prof. Peptide",
-  description: "Curated peptide research articles, study summaries, and educational guides.",
+  title: "Research | Prof. Peptide",
+  description: "Peer-reviewed research summaries organized by peptide.",
 };
 
-interface Article {
-  title: string;
-  url: string;
-  date?: string;
-  source?: string;
-}
-
-interface PeptideSection {
-  peptide: string;
-  articles: Article[];
-}
-
-interface CategorySection {
-  category: string;
-  peptides: PeptideSection[];
-}
-
-const categories: CategorySection[] = [
+const categories = [
   {
-    category: "Metabolic & Weight Loss",
+    emoji: "\uD83D\uDD25",
+    name: "Metabolic & Weight Loss",
     peptides: [
-      { peptide: "Semaglutide", articles: [] },
-      { peptide: "Tirzepatide", articles: [] },
-      {
-        peptide: "Retatrutide",
-        articles: [
-          {
-            title: "TRIUMPH-4 Phase 3 Trial: 71.2 lbs Average Weight Loss Plus Knee Osteoarthritis Pain Relief",
-            url: "https://www.rheumatologyadvisor.com/news/triumph-4-results-retatrutide-cuts-weight-and-knee-oa-pain/",
-            date: "December 2025",
-            source: "Rheumatology Advisor",
-          },
-          {
-            title: "Retatrutide: A Game Changer in Obesity Pharmacotherapy",
-            url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12190491/",
-            date: "June 2025",
-            source: "PMC",
-          },
-          {
-            title: "Triple-Hormone-Receptor Agonist Retatrutide for Obesity — Phase 2 Trial",
-            url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972",
-            source: "NEJM",
-          },
-          {
-            title: "Efficacy and Safety of Retatrutide — Systematic Review and Meta-Analysis",
-            url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12026077/",
-            date: "2025",
-            source: "PMC",
-          },
-        ],
-      },
-      { peptide: "MOTS-c", articles: [] },
+      { name: "Semaglutide", slug: "semaglutide", active: true },
+      { name: "Tirzepatide", slug: "tirzepatide", active: true },
+      { name: "Retatrutide", slug: "retatrutide", active: true },
+      { name: "MOTS-c", slug: "mots-c", active: true },
+      { name: "AOD-9604", slug: "aod-9604", active: true },
     ],
   },
   {
-    category: "Cross-Peptide Research",
+    emoji: "\u26A1",
+    name: "Recovery & Tissue Repair",
     peptides: [
-      {
-        peptide: "Cross-Peptide Research",
-        articles: [
-          {
-            title: "Tirzepatide vs Semaglutide for Obesity — SURMOUNT-5 Head-to-Head Trial",
-            url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2416394",
-            date: "May 2025",
-            source: "NEJM",
-          },
-          {
-            title: "Cardiovascular Outcomes of Semaglutide and Tirzepatide in Clinical Practice",
-            url: "https://www.nature.com/articles/s41591-025-04102-x",
-            date: "November 2025",
-            source: "Nature Medicine",
-          },
-          {
-            title: "Semaglutide and Tirzepatide in a Remote Weight Management Program — 12-Month Study",
-            url: "https://formative.jmir.org/2025/1/e81912",
-            date: "September 2025",
-            source: "JMIR",
-          },
-        ],
-      },
+      { name: "BPC-157", slug: "bpc-157" },
+      { name: "TB-500", slug: "tb-500" },
+      { name: "Wolverine Stack", slug: "wolverine-stack" },
     ],
   },
   {
-    category: "Recovery & Tissue Repair",
+    emoji: "\uD83C\uDFC3",
+    name: "Performance & Energy",
     peptides: [
-      { peptide: "BPC-157", articles: [] },
-      { peptide: "TB-500", articles: [] },
+      { name: "IGF-1 LR3", slug: "igf-1-lr3" },
+      { name: "Follistatin", slug: "follistatin" },
     ],
   },
   {
-    category: "Growth Hormone",
+    emoji: "\uD83E\uDDEC",
+    name: "Growth Hormone",
     peptides: [
-      { peptide: "CJC-1295", articles: [] },
-      { peptide: "Ipamorelin", articles: [] },
+      { name: "CJC-1295", slug: "cjc-1295" },
+      { name: "Ipamorelin", slug: "ipamorelin" },
+      { name: "Sermorelin", slug: "sermorelin" },
+      { name: "Tesamorelin", slug: "tesamorelin" },
+      { name: "GH Stack", slug: "gh-stack" },
     ],
   },
   {
-    category: "Cognitive & Nootropic",
+    emoji: "\uD83E\uDDE0",
+    name: "Cognitive & Nootropic",
     peptides: [
-      { peptide: "Selank", articles: [] },
-      { peptide: "Semax", articles: [] },
+      { name: "Semax", slug: "semax" },
+      { name: "Selank", slug: "selank" },
     ],
   },
   {
-    category: "Longevity",
-    peptides: [{ peptide: "Epitalon", articles: [] }],
+    emoji: "\u2728",
+    name: "Skin Health & Anti-Aging",
+    peptides: [
+      { name: "GHK-Cu", slug: "ghk-cu" },
+      { name: "Melanotan II", slug: "melanotan-ii" },
+    ],
   },
   {
-    category: "Sexual Health & Melanocortin",
-    peptides: [{ peptide: "PT-141", articles: [] }],
+    emoji: "\uD83D\uDEE1\uFE0F",
+    name: "Gut Health & Immunity",
+    peptides: [
+      { name: "Thymosin Alpha-1", slug: "thymosin-alpha-1" },
+    ],
+  },
+  {
+    emoji: "\uD83C\uDF3F",
+    name: "Longevity",
+    peptides: [
+      { name: "Epitalon", slug: "epitalon" },
+      { name: "NAD+", slug: "nad-plus" },
+    ],
+  },
+  {
+    emoji: "\u2764\uFE0F",
+    name: "Sexual Health",
+    peptides: [
+      { name: "PT-141", slug: "pt-141" },
+    ],
   },
 ];
+
 export default function ResearchPage() {
   return (
     <div className="section">
       <div className="mb-10">
-        <span className="tag mb-3 inline-block">Research & Education</span>
-        <h1 className="text-3xl font-bold text-[#1e2d3d] mb-3">Research Hub</h1>
+        <span className="tag mb-3 inline-block">Peer-Reviewed Studies</span>
+        <h1 className="text-3xl font-bold text-[#1e2d3d] mb-3">Research</h1>
         <p className="text-gray-500 max-w-xl text-sm leading-relaxed">
-          Curated study summaries and research articles organized by peptide. Written to be accurate, honest about unknowns, and useful for serious researchers.
+          Peer-reviewed research summaries organized by peptide. Click any peptide to read key studies and plain-English summaries.
         </p>
       </div>
-      <div className="space-y-12">
+
+      <div className="space-y-10">
         {categories.map((cat) => (
-          <section key={cat.category}>
-            <h2 className="text-xl font-bold text-[#1e2d3d] mb-6 pb-2 border-b border-[#d0eeef]">
-              {cat.category}
+          <div key={cat.name}>
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4 pb-2 border-b border-gray-100">
+              {cat.emoji} {cat.name}
             </h2>
-            <div className="space-y-8">
-              {cat.peptides.map((ps) => (
-                <div key={ps.peptide}>
-                  {cat.category !== "Cross-Peptide Research" && (
-                    <h3 className="text-base font-semibold text-[#0D7377] mb-3">{ps.peptide}</h3>
-                  )}
-                  {ps.articles.length === 0 ? (
-                    <div className="card border-dashed border-gray-200 bg-gray-50">
-                      <p className="text-xs text-gray-400 italic">No articles yet — check back soon.</p>
-                    </div>
-                  ) : (
-                    <div className="space-y-3">
-                      {ps.articles.map((article) => (
-                        <a
-                          key={article.url}
-                          href={article.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="card flex flex-col sm:flex-row sm:items-start gap-3 hover:border-[#0D7377] transition-colors group"
-                        >
-                          <div className="flex-1">
-                            <div className="flex flex-wrap items-center gap-2 mb-1">
-                              {article.source && (
-                                <span className="tag text-xs">{article.source}</span>
-                              )}
-                              {article.date && (
-                                <span className="text-xs text-gray-400">{article.date}</span>
-                              )}
-                            </div>
-                            <p className="text-sm font-semibold text-[#1e2d3d] group-hover:text-[#0D7377] transition-colors leading-snug">
-                              {article.title}
-                            </p>
-                          </div>
-                          <span className="text-xs font-medium text-[#0D7377] whitespace-nowrap flex-shrink-0 mt-1">
-                            Read
-                          </span>
-                        </a>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
+            <ul className="space-y-2">
+              {cat.peptides.map((p) =>
+                "active" in p && p.active ? (
+                  <li key={p.slug}>
+                    <Link
+                      href={`/research/${p.slug}`}
+                      className="inline-flex items-center gap-2 text-sm font-medium text-[#1e2d3d] hover:text-[#0D7377] transition-colors group"
+                    >
+                      <span className="w-1 h-1 rounded-full bg-gray-300 group-hover:bg-[#0D7377] transition-colors flex-shrink-0" />
+                      {p.name}
+                    </Link>
+                  </li>
+                ) : (
+                  <li key={p.slug} className="inline-flex items-center gap-2 text-sm text-gray-400">
+                    <span className="w-1 h-1 rounded-full bg-gray-200 flex-shrink-0" />
+                    {p.name}
+                    <span className="text-xs bg-gray-100 text-gray-400 px-2 py-0.5 rounded-full">Coming Soon</span>
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
         ))}
-      </div>
-      <div className="mt-12 p-6 bg-gray-50 border border-gray-100 rounded-xl text-center">
-        <p className="text-sm font-medium text-[#1e2d3d] mb-2">More articles coming soon</p>
-        <p className="text-xs text-gray-500">The research hub is actively updated. Get the app to be notified of new content.</p>
-        <Link href="/app" className="btn-primary text-sm mt-4 inline-block">Get the App</Link>
       </div>
     </div>
   );
