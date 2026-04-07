@@ -103,18 +103,18 @@ export default function CouponsPage() {
             }`}
           >
             <div
-              className={`bg-[#0D7377] flex items-center justify-between ${
-                v.editorsPick ? "px-6 py-5" : "px-5 py-4"
+              className={`border-b border-gray-100 flex items-center justify-between ${
+                v.editorsPick ? "px-6 py-4 bg-[#FFFBEB]" : "px-5 py-3.5 bg-gray-50"
               }`}
             >
               <h2
-                className={`font-bold text-white leading-tight ${
+                className={`font-bold text-[#1e2d3d] leading-tight ${
                   v.editorsPick ? "text-xl" : "text-base"
                 }`}
               >
                 {v.name}
               </h2>
-              <span className="text-xs font-bold text-white/90 bg-white/20 px-2.5 py-1 rounded-full whitespace-nowrap">
+              <span className="text-xs font-bold text-[#0D7377] bg-[#d0eeef] px-2.5 py-1 rounded-full whitespace-nowrap">
                 {v.discount}
               </span>
             </div>
@@ -140,7 +140,7 @@ export default function CouponsPage() {
                 href={v.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center text-sm font-medium text-white py-2.5 rounded-lg bg-[#0D7377] transition-colors hover:bg-[#0a5c60]"
+                className="btn-primary w-full text-center block"
               >
                 Shop Now &rarr;
               </a>
