@@ -87,7 +87,7 @@ export default function ZMAPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Ashwagandha | GABA | L-Arginine | Magnesium</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/ashwagandha" className="text-[#0D7377] hover:underline">Ashwagandha</Link> | <Link href="/supplements/gaba" className="text-[#0D7377] hover:underline">GABA</Link> | <Link href="/supplements/l-arginine" className="text-[#0D7377] hover:underline">L-Arginine</Link> | <Link href="/supplements/magnesium" className="text-[#0D7377] hover:underline">Magnesium</Link></p>
         </div>
 
         <div>

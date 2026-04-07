@@ -88,7 +88,7 @@ export default function PhosphatidylserinePage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Alpha GPC | Bacopa Monnieri | Lion&apos;s Mane | Omega-3 Fish Oil</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/alpha-gpc" className="text-[#0D7377] hover:underline">Alpha GPC</Link> | <Link href="/supplements/bacopa-monnieri" className="text-[#0D7377] hover:underline">Bacopa Monnieri</Link> | <Link href="/supplements/lions-mane" className="text-[#0D7377] hover:underline">Lion&apos;s Mane</Link> | <Link href="/supplements/fish-oil" className="text-[#0D7377] hover:underline">Omega-3 Fish Oil</Link></p>
         </div>
 
         <div>

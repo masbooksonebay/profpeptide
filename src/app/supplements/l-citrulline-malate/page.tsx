@@ -88,7 +88,7 @@ export default function LCitrullineMalatePage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Beta-Alanine | Creatine | BCAAs | Electrolyte Powders</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/beta-alanine" className="text-[#0D7377] hover:underline">Beta-Alanine</Link> | <Link href="/supplements/creatine" className="text-[#0D7377] hover:underline">Creatine</Link> | <Link href="/supplements/bcaas" className="text-[#0D7377] hover:underline">BCAAs</Link> | <Link href="/supplements/electrolyte-powders" className="text-[#0D7377] hover:underline">Electrolyte Powders</Link></p>
         </div>
 
         <div>

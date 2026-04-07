@@ -85,7 +85,7 @@ export default function BetaAlaninePage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Creatine | BCAAs | Electrolyte Powders | Caffeine + L-Theanine</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/creatine" className="text-[#0D7377] hover:underline">Creatine</Link> | <Link href="/supplements/bcaas" className="text-[#0D7377] hover:underline">BCAAs</Link> | <Link href="/supplements/electrolyte-powders" className="text-[#0D7377] hover:underline">Electrolyte Powders</Link> | <Link href="/supplements/caffeine-l-theanine" className="text-[#0D7377] hover:underline">Caffeine + L-Theanine</Link></p>
         </div>
 
         <div>

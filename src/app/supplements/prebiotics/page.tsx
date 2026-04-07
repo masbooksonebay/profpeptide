@@ -57,7 +57,7 @@ export default function PrebioticsPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Probiotics | Magnesium | Zinc | Fish Oil</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/probiotics" className="text-[#0D7377] hover:underline">Probiotics</Link> | <Link href="/supplements/magnesium" className="text-[#0D7377] hover:underline">Magnesium</Link> | <Link href="/supplements/zinc" className="text-[#0D7377] hover:underline">Zinc</Link> | <Link href="/supplements/fish-oil" className="text-[#0D7377] hover:underline">Fish Oil</Link></p>
         </div>
 
         <div>

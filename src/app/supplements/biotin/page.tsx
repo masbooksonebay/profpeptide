@@ -85,7 +85,7 @@ export default function BiotinPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Collagen Peptides | Hyaluronic Acid | Vitamin C | Zinc</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/collagen-peptides" className="text-[#0D7377] hover:underline">Collagen Peptides</Link> | <Link href="/supplements/hyaluronic-acid" className="text-[#0D7377] hover:underline">Hyaluronic Acid</Link> | <Link href="/supplements/vitamin-c" className="text-[#0D7377] hover:underline">Vitamin C</Link> | <Link href="/supplements/zinc" className="text-[#0D7377] hover:underline">Zinc</Link></p>
         </div>
 
         <div>

@@ -86,7 +86,7 @@ export default function LArgininePage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">L-Citrulline Malate | ZMA | Ashwagandha | GABA</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/l-citrulline-malate" className="text-[#0D7377] hover:underline">L-Citrulline Malate</Link> | <Link href="/supplements/zma" className="text-[#0D7377] hover:underline">ZMA</Link> | <Link href="/supplements/ashwagandha" className="text-[#0D7377] hover:underline">Ashwagandha</Link> | <Link href="/supplements/gaba" className="text-[#0D7377] hover:underline">GABA</Link></p>
         </div>
 
         <div>

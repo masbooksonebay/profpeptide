@@ -87,7 +87,7 @@ export default function CaffeineLTheaninePage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Lion&apos;s Mane | Alpha GPC | Rhodiola Rosea | Ashwagandha</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/lions-mane" className="text-[#0D7377] hover:underline">Lion&apos;s Mane</Link> | <Link href="/supplements/alpha-gpc" className="text-[#0D7377] hover:underline">Alpha GPC</Link> | <Link href="/supplements/rhodiola-rosea" className="text-[#0D7377] hover:underline">Rhodiola Rosea</Link> | <Link href="/supplements/ashwagandha" className="text-[#0D7377] hover:underline">Ashwagandha</Link></p>
         </div>
 
         <div>

@@ -57,7 +57,7 @@ export default function ChromiumPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Berberine | Alpha Lipoic Acid | Magnesium | Cinnamon</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/berberine" className="text-[#0D7377] hover:underline">Berberine</Link> | <Link href="/supplements/alpha-lipoic-acid" className="text-[#0D7377] hover:underline">Alpha Lipoic Acid</Link> | <Link href="/supplements/magnesium" className="text-[#0D7377] hover:underline">Magnesium</Link> | Cinnamon</p>
         </div>
 
         <div>

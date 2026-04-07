@@ -88,7 +88,7 @@ export default function RhodiolaRoseaPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Ashwagandha | L-Theanine | Bacopa Monnieri | Lion&apos;s Mane</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/ashwagandha" className="text-[#0D7377] hover:underline">Ashwagandha</Link> | <Link href="/supplements/l-theanine" className="text-[#0D7377] hover:underline">L-Theanine</Link> | <Link href="/supplements/bacopa-monnieri" className="text-[#0D7377] hover:underline">Bacopa Monnieri</Link> | <Link href="/supplements/lions-mane" className="text-[#0D7377] hover:underline">Lion&apos;s Mane</Link></p>
         </div>
 
         <div>

@@ -57,7 +57,7 @@ export default function LCitrullinePage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Maca Root | Tongkat Ali | Fenugreek | L-Arginine</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/maca-root" className="text-[#0D7377] hover:underline">Maca Root</Link> | <Link href="/supplements/tongkat-ali" className="text-[#0D7377] hover:underline">Tongkat Ali</Link> | <Link href="/supplements/fenugreek" className="text-[#0D7377] hover:underline">Fenugreek</Link> | <Link href="/supplements/l-arginine" className="text-[#0D7377] hover:underline">L-Arginine</Link></p>
         </div>
 
         <div>

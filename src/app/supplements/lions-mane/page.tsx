@@ -87,7 +87,7 @@ export default function LionsManePage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Bacopa Monnieri | Alpha GPC | L-Theanine | Phosphatidylserine</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/bacopa-monnieri" className="text-[#0D7377] hover:underline">Bacopa Monnieri</Link> | <Link href="/supplements/alpha-gpc" className="text-[#0D7377] hover:underline">Alpha GPC</Link> | <Link href="/supplements/l-theanine" className="text-[#0D7377] hover:underline">L-Theanine</Link> | <Link href="/supplements/phosphatidylserine" className="text-[#0D7377] hover:underline">Phosphatidylserine</Link></p>
         </div>
 
         <div>

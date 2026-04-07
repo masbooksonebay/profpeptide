@@ -88,7 +88,7 @@ export default function HyaluronicAcidPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Collagen Peptides | Vitamin C | Biotin | GHK-Cu peptide</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/collagen-peptides" className="text-[#0D7377] hover:underline">Collagen Peptides</Link> | <Link href="/supplements/vitamin-c" className="text-[#0D7377] hover:underline">Vitamin C</Link> | <Link href="/supplements/biotin" className="text-[#0D7377] hover:underline">Biotin</Link> | <Link href="/peptides/ghk-cu" className="text-[#0D7377] hover:underline">GHK-Cu peptide</Link></p>
         </div>
 
         <div>

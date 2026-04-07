@@ -85,7 +85,7 @@ export default function BCAAsPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Protein Powder | Creatine | Glutamine | Beta-Alanine</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/protein-powder" className="text-[#0D7377] hover:underline">Protein Powder</Link> | <Link href="/supplements/creatine" className="text-[#0D7377] hover:underline">Creatine</Link> | <Link href="/supplements/glutamine" className="text-[#0D7377] hover:underline">Glutamine</Link> | <Link href="/supplements/beta-alanine" className="text-[#0D7377] hover:underline">Beta-Alanine</Link></p>
         </div>
 
         <div>

@@ -57,7 +57,7 @@ export default function MacaRootPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Tongkat Ali | Fenugreek | L-Citrulline | Ashwagandha</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/tongkat-ali" className="text-[#0D7377] hover:underline">Tongkat Ali</Link> | <Link href="/supplements/fenugreek" className="text-[#0D7377] hover:underline">Fenugreek</Link> | <Link href="/supplements/l-citrulline" className="text-[#0D7377] hover:underline">L-Citrulline</Link> | <Link href="/supplements/ashwagandha" className="text-[#0D7377] hover:underline">Ashwagandha</Link></p>
         </div>
 
         <div>

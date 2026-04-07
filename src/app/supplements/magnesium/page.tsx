@@ -57,7 +57,7 @@ export default function MagnesiumPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Zinc | Vitamin D3 | Fish Oil | ZMA</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/zinc" className="text-[#0D7377] hover:underline">Zinc</Link> | <Link href="/supplements/vitamin-d3" className="text-[#0D7377] hover:underline">Vitamin D3</Link> | <Link href="/supplements/fish-oil" className="text-[#0D7377] hover:underline">Fish Oil</Link> | <Link href="/supplements/zma" className="text-[#0D7377] hover:underline">ZMA</Link></p>
         </div>
 
         <div>

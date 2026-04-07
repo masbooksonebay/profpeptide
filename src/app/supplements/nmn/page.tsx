@@ -57,7 +57,7 @@ export default function NMNPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Resveratrol | CoQ10 | Quercetin | Spermidine</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/resveratrol" className="text-[#0D7377] hover:underline">Resveratrol</Link> | <Link href="/supplements/coq10" className="text-[#0D7377] hover:underline">CoQ10</Link> | <Link href="/supplements/quercetin" className="text-[#0D7377] hover:underline">Quercetin</Link> | <Link href="/supplements/spermidine" className="text-[#0D7377] hover:underline">Spermidine</Link></p>
         </div>
 
         <div>

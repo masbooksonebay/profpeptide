@@ -57,7 +57,7 @@ export default function SpermidinePage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">NMN | Quercetin | Resveratrol | CoQ10</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/nmn" className="text-[#0D7377] hover:underline">NMN</Link> | <Link href="/supplements/quercetin" className="text-[#0D7377] hover:underline">Quercetin</Link> | <Link href="/supplements/resveratrol" className="text-[#0D7377] hover:underline">Resveratrol</Link> | <Link href="/supplements/coq10" className="text-[#0D7377] hover:underline">CoQ10</Link></p>
         </div>
 
         <div>

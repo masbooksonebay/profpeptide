@@ -86,7 +86,7 @@ export default function ProteinPowderPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">BCAAs | Creatine | Glutamine | Collagen Peptides</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/bcaas" className="text-[#0D7377] hover:underline">BCAAs</Link> | <Link href="/supplements/creatine" className="text-[#0D7377] hover:underline">Creatine</Link> | <Link href="/supplements/glutamine" className="text-[#0D7377] hover:underline">Glutamine</Link> | <Link href="/supplements/collagen-peptides" className="text-[#0D7377] hover:underline">Collagen Peptides</Link></p>
         </div>
 
         <div>

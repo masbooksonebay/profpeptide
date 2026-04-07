@@ -87,7 +87,7 @@ export default function ElectrolytePowdersPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600">Magnesium | Creatine | Protein Powder | BCAAs</p>
+          <p className="text-sm text-gray-600"><Link href="/supplements/magnesium" className="text-[#0D7377] hover:underline">Magnesium</Link> | <Link href="/supplements/creatine" className="text-[#0D7377] hover:underline">Creatine</Link> | <Link href="/supplements/protein-powder" className="text-[#0D7377] hover:underline">Protein Powder</Link> | <Link href="/supplements/bcaas" className="text-[#0D7377] hover:underline">BCAAs</Link></p>
         </div>
 
         <div>

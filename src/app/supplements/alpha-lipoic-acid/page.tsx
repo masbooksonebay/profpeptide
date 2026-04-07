@@ -88,9 +88,7 @@ export default function AlphaLipoicAcidPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600 leading-relaxed">
-            Berberine | CoQ10 | Magnesium — ALA pairs well with these for comprehensive metabolic and antioxidant support.
-          </p>
+          <p className="text-sm text-gray-600 leading-relaxed"><Link href="/supplements/berberine" className="text-[#0D7377] hover:underline">Berberine</Link> | <Link href="/supplements/coq10" className="text-[#0D7377] hover:underline">CoQ10</Link> | <Link href="/supplements/magnesium" className="text-[#0D7377] hover:underline">Magnesium</Link> — ALA pairs well with these for comprehensive metabolic and antioxidant support.</p>
         </div>
 
         <div>
