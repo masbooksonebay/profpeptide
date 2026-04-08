@@ -60,6 +60,14 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/ascension-peptides",
       },
       {
+        name: "Almighty Peptides",
+        url: "https://www.almightypeptides.com/?sld=profpeptide",
+        code: "PROFPEPTIDE",
+        discount: "20% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/almighty-peptides",
+      },
+      {
         name: "Fusion Peptide",
         url: "https://fusionpeptide.com/?ref=PROFPEPTIDE",
         code: "MARK15",
@@ -86,7 +94,7 @@ const sections: VendorSection[] = [
       {
         name: "Ignite Peptides",
         url: "https://ignitepeptides.com/ref/profpeptide/",
-        code: "welcome10",
+        code: "PROFPEPTIDE",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/ignite-peptides",
@@ -129,14 +137,6 @@ const sections: VendorSection[] = [
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/vital-core-research",
-      },
-      {
-        name: "Almighty Peptides",
-        url: "https://www.almightypeptides.com/?sld=profpeptide",
-        code: "profpep",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/almighty-peptides",
       },
     ],
   },
