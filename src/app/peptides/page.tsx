@@ -118,10 +118,6 @@ export default function PeptidesPage() {
           </div>
         ))}
       </div>
-
-      <div className="bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mt-10 text-xs text-amber-800">
-        <strong>Disclaimer:</strong> All information is for educational and research purposes only. Not medical advice. Not for human use.
-      </div>
     </div>
   );
 }
