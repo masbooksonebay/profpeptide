@@ -136,6 +136,7 @@ const sections: VendorSection[] = [
         code: "profpep",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/almighty-peptides",
       },
     ],
   },
