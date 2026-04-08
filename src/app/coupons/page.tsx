@@ -34,6 +34,7 @@ const sections: VendorSection[] = [
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         editorsPick: true,
+        detailPage: "/coupons/peptide-partners",
       },
       {
         name: "Spartan Peptides",
