@@ -189,7 +189,7 @@ function VendorCard({ v }: { v: Vendor }) {
           }`}
         >
           {v.detailPage ? (
-            <Link href={v.detailPage} className="text-[#1e2d3d] hover:text-[#0D7377] transition-colors">
+            <Link href={v.detailPage} className="inline-block text-[#1e2d3d] hover:text-[#0D7377] transition-all duration-150 hover:scale-105 origin-left">
               {v.name}
             </Link>
           ) : (
