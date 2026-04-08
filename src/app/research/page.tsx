@@ -57,15 +57,15 @@ const categories = [
     emoji: "\u2728",
     name: "Skin Health & Anti-Aging",
     peptides: [
-      { name: "GHK-Cu", slug: "ghk-cu" },
-      { name: "Melanotan II", slug: "melanotan-ii" },
+      { name: "GHK-Cu", slug: "ghk-cu", active: true },
+      { name: "Melanotan II", slug: "melanotan-ii", active: true },
     ],
   },
   {
     emoji: "\uD83D\uDEE1\uFE0F",
     name: "Gut Health & Immunity",
     peptides: [
-      { name: "Thymosin Alpha-1", slug: "thymosin-alpha-1" },
+      { name: "Thymosin Alpha-1", slug: "thymosin-alpha-1", active: true },
     ],
   },
   {
