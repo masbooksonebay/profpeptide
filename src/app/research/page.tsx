@@ -49,8 +49,8 @@ const categories = [
     emoji: "\uD83E\uDDE0",
     name: "Cognitive & Nootropic",
     peptides: [
-      { name: "Semax", slug: "semax" },
-      { name: "Selank", slug: "selank" },
+      { name: "Semax", slug: "semax", active: true },
+      { name: "Selank", slug: "selank", active: true },
     ],
   },
   {
