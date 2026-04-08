@@ -57,6 +57,7 @@ const sections: VendorSection[] = [
         discount: "50% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         bestDeal: true,
+        detailPage: "/coupons/ascension-peptides",
       },
       {
         name: "Fusion Peptide",
