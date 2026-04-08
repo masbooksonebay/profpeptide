@@ -84,6 +84,7 @@ const categories = [
   {
     name: "🌿 Longevity",
     supplements: [
+      { name: "NAD+", slug: "nad-plus" },
       { name: "NMN", slug: "nmn" },
       { name: "Resveratrol", slug: "resveratrol" },
       { name: "Quercetin", slug: "quercetin" },
