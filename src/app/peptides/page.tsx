@@ -107,7 +107,7 @@ export default function PeptidesPage() {
                 <li key={p.slug}>
                   <Link
                     href={`/peptides/${p.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-[#1e2d3d] hover:text-[#0D7377] transition-colors group"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-[#1e2d3d] hover:text-[#0D7377] transition-all duration-150 hover:scale-105 origin-left group"
                   >
                     <span className="w-1 h-1 rounded-full bg-gray-300 group-hover:bg-[#0D7377] transition-colors flex-shrink-0" />
                     {p.name}
