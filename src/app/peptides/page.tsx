@@ -8,8 +8,9 @@ export const metadata = {
 
 const categories = [
   {
-    emoji: "🔥",
+    emoji: "\uD83D\uDD25",
     name: "Metabolic & Weight Loss",
+    slug: "metabolic",
     peptides: [
       { name: "Semaglutide", slug: "semaglutide" },
       { name: "Tirzepatide", slug: "tirzepatide" },
@@ -19,8 +20,9 @@ const categories = [
     ],
   },
   {
-    emoji: "⚡",
+    emoji: "\u26A1",
     name: "Recovery & Tissue Repair",
+    slug: "recovery",
     peptides: [
       { name: "BPC-157", slug: "bpc-157" },
       { name: "TB-500", slug: "tb-500" },
@@ -28,16 +30,18 @@ const categories = [
     ],
   },
   {
-    emoji: "🏃",
+    emoji: "\uD83C\uDFC3",
     name: "Performance & Energy",
+    slug: "performance",
     peptides: [
       { name: "IGF-1 LR3", slug: "igf-1-lr3" },
       { name: "Follistatin", slug: "follistatin" },
     ],
   },
   {
-    emoji: "🧬",
+    emoji: "\uD83E\uDDEC",
     name: "Growth Hormone",
+    slug: "growth-hormone",
     peptides: [
       { name: "CJC-1295", slug: "cjc-1295" },
       { name: "Ipamorelin", slug: "ipamorelin" },
@@ -46,46 +50,54 @@ const categories = [
     ],
   },
   {
-    emoji: "🧠",
+    emoji: "\uD83E\uDDE0",
     name: "Cognitive & Nootropic",
+    slug: "cognitive",
     peptides: [
       { name: "Selank", slug: "selank" },
       { name: "Semax", slug: "semax" },
     ],
   },
   {
-    emoji: "✨",
+    emoji: "\u2728",
     name: "Skin Health & Anti-Aging",
+    slug: "skin-health",
     peptides: [
       { name: "GHK-Cu", slug: "ghk-cu" },
       { name: "Melanotan II", slug: "melanotan-ii" },
     ],
   },
   {
-    emoji: "🛡️",
+    emoji: "\uD83D\uDEE1\uFE0F",
     name: "Gut Health & Immunity",
+    slug: "gut-health",
     peptides: [
       { name: "Thymosin Alpha-1", slug: "thymosin-alpha-1" },
     ],
   },
   {
-    emoji: "🌿",
+    emoji: "\uD83C\uDF3F",
     name: "Longevity",
+    slug: "longevity",
     peptides: [
       { name: "Epitalon", slug: "epitalon" },
       { name: "NAD+", slug: "nad-plus" },
     ],
   },
   {
-    emoji: "❤️",
+    emoji: "\u2764\uFE0F",
     name: "Sexual Health",
+    slug: "sexual-health",
     peptides: [
       { name: "PT-141", slug: "pt-141" },
     ],
   },
 ];
 
-export default function PeptidesPage() {
+export default function PeptidesPage({ searchParams }: { searchParams: { category?: string } }) {
+  const filter = searchParams.category;
+  const filtered = filter ? categories.filter((c) => c.slug === filter) : categories;
+
   return (
     <div className="section">
       <div className="mb-10">
@@ -94,10 +106,15 @@ export default function PeptidesPage() {
         <p className="text-gray-500 max-w-xl text-sm leading-relaxed">
           Research profiles organized by category. Click any peptide to read the full profile including mechanism of action, key research findings, and references.
         </p>
+        {filter && (
+          <Link href="/peptides" className="text-xs text-[#0D7377] hover:underline mt-2 inline-block">
+            &larr; Show all categories
+          </Link>
+        )}
       </div>
 
       <div className="space-y-10">
-        {categories.map((cat) => (
+        {filtered.map((cat) => (
           <div key={cat.name}>
             <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4 pb-2 border-b border-gray-100">
               {cat.emoji} {cat.name}

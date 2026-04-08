@@ -8,7 +8,9 @@ export const metadata = {
 
 const categories = [
   {
-    name: "🔥 Metabolic & Weight Loss",
+    emoji: "\uD83D\uDD25",
+    name: "Metabolic & Weight Loss",
+    slug: "metabolic",
     supplements: [
       { name: "Berberine", slug: "berberine" },
       { name: "Glucomannan", slug: "glucomannan" },
@@ -20,7 +22,9 @@ const categories = [
     ],
   },
   {
-    name: "⚡ Recovery & Tissue Repair",
+    emoji: "\u26A1",
+    name: "Recovery & Tissue Repair",
+    slug: "recovery",
     supplements: [
       { name: "Collagen Peptides", slug: "collagen-peptides" },
       { name: "Glutamine", slug: "glutamine" },
@@ -30,7 +34,9 @@ const categories = [
     ],
   },
   {
-    name: "🏃 Performance & Energy",
+    emoji: "\uD83C\uDFC3",
+    name: "Performance & Energy",
+    slug: "performance",
     supplements: [
       { name: "Creatine", slug: "creatine" },
       { name: "Protein Powder", slug: "protein-powder" },
@@ -42,9 +48,11 @@ const categories = [
     ],
   },
   {
-    name: "🧠 Cognitive & Nootropic",
+    emoji: "\uD83E\uDDE0",
+    name: "Cognitive & Nootropic",
+    slug: "cognitive",
     supplements: [
-      { name: "Lion's Mane", slug: "lions-mane" },
+      { name: "Lion\u2019s Mane", slug: "lions-mane" },
       { name: "L-Theanine", slug: "l-theanine" },
       { name: "Alpha GPC", slug: "alpha-gpc" },
       { name: "Bacopa Monnieri", slug: "bacopa-monnieri" },
@@ -53,7 +61,9 @@ const categories = [
     ],
   },
   {
-    name: "🧬 Growth Hormone Support",
+    emoji: "\uD83E\uDDEC",
+    name: "Growth Hormone Support",
+    slug: "growth-hormone",
     supplements: [
       { name: "Ashwagandha", slug: "ashwagandha" },
       { name: "L-Arginine", slug: "l-arginine" },
@@ -62,7 +72,9 @@ const categories = [
     ],
   },
   {
-    name: "✨ Skin Health & Anti-Aging",
+    emoji: "\u2728",
+    name: "Skin Health & Anti-Aging",
+    slug: "skin-health",
     supplements: [
       { name: "Collagen Peptides", slug: "collagen-peptides-skin" },
       { name: "Hyaluronic Acid", slug: "hyaluronic-acid" },
@@ -71,7 +83,9 @@ const categories = [
     ],
   },
   {
-    name: "🛡️ Gut Health & Immunity",
+    emoji: "\uD83D\uDEE1\uFE0F",
+    name: "Gut Health & Immunity",
+    slug: "gut-health",
     supplements: [
       { name: "Probiotics", slug: "probiotics" },
       { name: "Prebiotics", slug: "prebiotics" },
@@ -82,7 +96,9 @@ const categories = [
     ],
   },
   {
-    name: "🌿 Longevity",
+    emoji: "\uD83C\uDF3F",
+    name: "Longevity",
+    slug: "longevity",
     supplements: [
       { name: "NAD+", slug: "nad-plus" },
       { name: "NMN", slug: "nmn" },
@@ -93,7 +109,9 @@ const categories = [
     ],
   },
   {
-    name: "❤️ Sexual Health",
+    emoji: "\u2764\uFE0F",
+    name: "Sexual Health",
+    slug: "sexual-health",
     supplements: [
       { name: "Maca Root", slug: "maca-root" },
       { name: "L-Citrulline", slug: "l-citrulline" },
@@ -103,7 +121,10 @@ const categories = [
   },
 ];
 
-export default function SupplementsPage() {
+export default function SupplementsPage({ searchParams }: { searchParams: { category?: string } }) {
+  const filter = searchParams.category;
+  const filtered = filter ? categories.filter((c) => c.slug === filter) : categories;
+
   return (
     <div className="section">
       <div className="mb-10">
@@ -113,12 +134,17 @@ export default function SupplementsPage() {
           Evidence-based supplement profiles organized by category. Click any supplement to read the
           full profile including uses, benefits, and research.
         </p>
+        {filter && (
+          <Link href="/supplements" className="text-xs text-[#0D7377] hover:underline mt-2 inline-block">
+            &larr; Show all categories
+          </Link>
+        )}
       </div>
       <div className="space-y-10">
-        {categories.map((cat) => (
+        {filtered.map((cat) => (
           <div key={cat.name}>
             <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4 pb-2 border-b border-gray-100">
-              {cat.name}
+              {cat.emoji} {cat.name}
             </h2>
             <ul className="space-y-2">
               {cat.supplements.map((s) => (
