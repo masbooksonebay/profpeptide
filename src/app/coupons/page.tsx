@@ -2,100 +2,142 @@
 
 import { useState } from "react";
 
-const vendors = [
+interface Vendor {
+  name: string;
+  url: string;
+  code: string;
+  discount: string;
+  region: string;
+  editorsPick?: boolean;
+  bestDeal?: boolean;
+  purityBadge?: string;
+  specialBadge?: string;
+  specialBadgeColor?: string;
+  description?: string;
+}
+
+interface VendorSection {
+  label: string;
+  vendors: Vendor[];
+}
+
+const sections: VendorSection[] = [
   {
-    name: "Peptide Partners",
-    url: "https://peptide.partners/",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-    editorsPick: true,
+    label: "\uD83C\uDFC6 Featured Vendors",
+    vendors: [
+      {
+        name: "Peptide Partners",
+        url: "https://peptide.partners/",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        editorsPick: true,
+      },
+      {
+        name: "Spartan Peptides",
+        url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        purityBadge: "\u226598% Purity Verified",
+      },
+    ],
   },
   {
-    name: "Almighty Peptides",
-    url: "https://www.almightypeptides.com/?sld=profpeptide",
-    code: "profpep",
-    discount: "10% off",
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+    label: "\uD83D\uDCB0 Best Deals",
+    vendors: [
+      {
+        name: "Ascension Peptides",
+        url: "https://ascensionpeptides.com",
+        code: "PROFPEPTIDE",
+        discount: "50% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        bestDeal: true,
+      },
+      {
+        name: "Fusion Peptide",
+        url: "https://fusionpeptide.com/?ref=PROFPEPTIDE",
+        code: "MARK15",
+        discount: "15% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        specialBadge: "Topicals & Nasal Sprays Available",
+        specialBadgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
+        description: "Unique delivery formats including topical creams and nasal sprays alongside injectable research peptides. 99% purity verified.",
+      },
+    ],
   },
   {
-    name: "Apollo Peptide Sciences",
-    url: "https://apollopeptidesciences.com/",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+    label: "\uD83C\uDDFA\uD83C\uDDF8 US Vendors",
+    vendors: [
+      {
+        name: "Apollo Peptide Sciences",
+        url: "https://apollopeptidesciences.com/",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+      },
+      {
+        name: "Ignite Peptides",
+        url: "https://ignitepeptides.com/ref/profpeptide/",
+        code: "welcome10",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+      },
+      {
+        name: "Integrative Peptides",
+        url: "https://integrativepeptides.com/affiliate/profpeptide/",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+      },
+      {
+        name: "Limitless Biotech",
+        url: "https://limitlessbiotech.com",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+      },
+      {
+        name: "Oasis Labs",
+        url: "https://myoasislabs.com",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+      },
+      {
+        name: "Royal Peptides",
+        url: "https://royal-peptides.com/",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+      },
+      {
+        name: "Vital Core Research",
+        url: "https://vitalcoreresearch.com",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+      },
+      {
+        name: "Almighty Peptides",
+        url: "https://www.almightypeptides.com/?sld=profpeptide",
+        code: "profpep",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+      },
+    ],
   },
   {
-    name: "Ascension Peptides",
-    url: "https://ascensionpeptides.com",
-    code: "PROFPEPTIDE",
-    discount: "50% off",
-    bestDeal: true,
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-  },
-  {
-    name: "Fusion Peptide",
-    url: "https://fusionpeptide.com/?ref=PROFPEPTIDE",
-    code: "MARK15",
-    discount: "15% off",
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-  },
-  {
-    name: "Ignite Peptides",
-    url: "https://ignitepeptides.com/ref/profpeptide/",
-    code: "welcome10",
-    discount: "10% off",
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-  },
-  {
-    name: "Integrative Peptides",
-    url: "https://integrativepeptides.com/affiliate/profpeptide/",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-  },
-  {
-    name: "Limitless Biotech",
-    url: "https://limitlessbiotech.com",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-  },
-  {
-    name: "Oasis Labs",
-    url: "https://myoasislabs.com",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-  },
-  {
-    name: "Particle Peptides",
-    url: "https://particlepeptides.com/en/",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    region: "\uD83C\uDDEC\uD83C\uDDE7 UK",
-  },
-  {
-    name: "Royal Peptides",
-    url: "https://royal-peptides.com/",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-  },
-  {
-    name: "Spartan Peptides",
-    url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
-    code: "",
-    discount: "Code coming soon",
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-    comingSoon: true,
-  },
-  {
-    name: "Vital Core Research",
-    url: "https://vitalcoreresearch.com",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+    label: "\uD83C\uDF0D International",
+    vendors: [
+      {
+        name: "Particle Peptides",
+        url: "https://particlepeptides.com/en/",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDEC\uD83C\uDDE7 UK",
+      },
+    ],
   },
 ];
 
@@ -122,6 +164,86 @@ function CodeBox({ code }: { code: string }) {
   );
 }
 
+function VendorCard({ v }: { v: Vendor }) {
+  return (
+    <div
+      className={`rounded-xl overflow-hidden transition-shadow ${
+        v.editorsPick
+          ? "border-l-4 border-l-amber-400 border border-amber-200 shadow-md hover:shadow-lg bg-[#FFFBEB]"
+          : "border border-gray-100 shadow-sm hover:shadow-md bg-white"
+      }`}
+    >
+      <div
+        className={`border-b border-gray-100 flex items-center justify-between ${
+          v.editorsPick ? "px-6 py-4 bg-[#FFFBEB]" : "px-5 py-3.5 bg-gray-50"
+        }`}
+      >
+        <h2
+          className={`font-bold text-[#1e2d3d] leading-tight ${
+            v.editorsPick ? "text-xl" : "text-base"
+          }`}
+        >
+          {v.name}
+        </h2>
+        <span className="text-xs font-bold text-[#0D7377] bg-[#d0eeef] px-2.5 py-1 rounded-full whitespace-nowrap">
+          {v.discount}
+        </span>
+      </div>
+
+      <div className={v.editorsPick ? "px-6 py-5" : "px-5 py-4"}>
+        <div className="flex flex-wrap items-center gap-2 mb-3">
+          <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">
+            Verified
+          </span>
+          {v.editorsPick && (
+            <span className="text-xs bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded-full font-medium">
+              Editor&apos;s Pick
+            </span>
+          )}
+          {v.bestDeal && (
+            <span className="text-xs bg-green-100 text-green-800 border border-green-300 px-2 py-0.5 rounded-full font-medium">
+              Best Deal
+            </span>
+          )}
+          {v.purityBadge && (
+            <span className="text-xs bg-slate-100 text-slate-700 border border-slate-300 px-2 py-0.5 rounded-full font-medium">
+              {v.purityBadge}
+            </span>
+          )}
+          {v.specialBadge && (
+            <span className={`text-xs border px-2 py-0.5 rounded-full font-medium ${v.specialBadgeColor || "bg-gray-100 text-gray-600 border-gray-300"}`}>
+              {v.specialBadge}
+            </span>
+          )}
+          {v.region && (
+            <span className="text-xs bg-gray-50 text-gray-500 border border-gray-200 px-2 py-0.5 rounded-full">
+              {v.region}
+            </span>
+          )}
+        </div>
+
+        {v.description && (
+          <p className="text-xs text-gray-500 leading-relaxed mb-3">{v.description}</p>
+        )}
+
+        <div className="mb-4">
+          <p className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-1">Click to copy code</p>
+          <CodeBox code={v.code} />
+        </div>
+
+        <a
+          href={v.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary w-full text-center block"
+        >
+          Shop Now &rarr;
+        </a>
+      </div>
+    </div>
+  );
+}
+
 export default function CouponsPage() {
   return (
     <div className="section max-w-3xl">
@@ -134,79 +256,16 @@ export default function CouponsPage() {
         All discount codes, promo codes, and coupon codes are verified by Prof. Peptide and updated regularly.
       </p>
 
-      <div className="space-y-4 mb-10">
-        {vendors.map((v) => (
-          <div
-            key={v.name}
-            className={`rounded-xl overflow-hidden transition-shadow ${
-              v.editorsPick
-                ? "border-l-4 border-l-amber-400 border border-amber-200 shadow-md hover:shadow-lg bg-[#FFFBEB]"
-                : "border border-gray-100 shadow-sm hover:shadow-md bg-white"
-            }`}
-          >
-            <div
-              className={`border-b border-gray-100 flex items-center justify-between ${
-                v.editorsPick ? "px-6 py-4 bg-[#FFFBEB]" : "px-5 py-3.5 bg-gray-50"
-              }`}
-            >
-              <h2
-                className={`font-bold text-[#1e2d3d] leading-tight ${
-                  v.editorsPick ? "text-xl" : "text-base"
-                }`}
-              >
-                {v.name}
-              </h2>
-              <span className="text-xs font-bold text-[#0D7377] bg-[#d0eeef] px-2.5 py-1 rounded-full whitespace-nowrap">
-                {v.discount}
-              </span>
-            </div>
-
-            <div className={v.editorsPick ? "px-6 py-5" : "px-5 py-4"}>
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">
-                  Verified
-                </span>
-                {v.editorsPick && (
-                  <span className="text-xs bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded-full font-medium">
-                    Editor&apos;s Pick
-                  </span>
-                )}
-                {"bestDeal" in v && v.bestDeal && (
-                  <span className="text-xs bg-green-100 text-green-800 border border-green-300 px-2 py-0.5 rounded-full font-medium">
-                    Best Deal
-                  </span>
-                )}
-                {v.region && (
-                  <span className="text-xs bg-gray-50 text-gray-500 border border-gray-200 px-2 py-0.5 rounded-full">
-                    {v.region}
-                  </span>
-                )}
-              </div>
-
-              <div className="mb-4">
-                {"comingSoon" in v && v.comingSoon ? (
-                  <>
-                    <p className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-1">Discount Code</p>
-                    <div className="block w-full bg-gray-50 border border-gray-200 px-4 py-2.5 rounded-lg text-sm text-gray-400 italic text-center">
-                      Code coming soon
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <p className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-1">Click to copy code</p>
-                    <CodeBox code={v.code} />
-                  </>
-                )}
-              </div>
-
-              <a
-                href={v.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary w-full text-center block"
-              >
-                Shop Now &rarr;
-              </a>
+      <div className="space-y-8 mb-10">
+        {sections.map((section) => (
+          <div key={section.label}>
+            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 pb-1.5 border-b border-gray-100">
+              {section.label}
+            </p>
+            <div className="space-y-4">
+              {section.vendors.map((v) => (
+                <VendorCard key={v.name} v={v} />
+              ))}
             </div>
           </div>
         ))}
