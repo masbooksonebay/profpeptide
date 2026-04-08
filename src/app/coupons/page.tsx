@@ -173,21 +173,19 @@ function VendorCard({ v }: { v: Vendor }) {
   return (
     <div
       className={`rounded-xl overflow-hidden transition-all duration-200 ${
-        v.editorsPick
-          ? "border-l-4 border-l-amber-400 border border-amber-200 shadow-md hover:shadow-lg bg-[#FFFBEB]"
-          : v.detailPage
+        v.detailPage
             ? "border border-gray-200 shadow-sm hover:shadow-md hover:border-[#0D7377]/40 bg-white"
             : "border border-gray-100 shadow-sm hover:shadow-md bg-white"
       }`}
     >
       <div
         className={`border-b border-gray-100 flex items-center justify-between ${
-          v.editorsPick ? "px-6 py-4 bg-[#FFFBEB]" : "px-5 py-3.5 bg-gray-50"
+          "px-5 py-3.5 bg-gray-50"
         }`}
       >
         <h2
           className={`font-bold leading-tight ${
-            v.editorsPick ? "text-xl" : "text-base"
+            "text-base"
           }`}
         >
           {v.detailPage ? (
@@ -203,7 +201,7 @@ function VendorCard({ v }: { v: Vendor }) {
         </span>
       </div>
 
-      <div className={v.editorsPick ? "px-6 py-5" : "px-5 py-4"}>
+      <div className="px-5 py-4">
         <div className="flex flex-wrap items-center gap-2 mb-3">
           <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">
             Verified
