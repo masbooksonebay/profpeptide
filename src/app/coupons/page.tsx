@@ -149,6 +149,7 @@ const sections: VendorSection[] = [
         code: "PROFPEPTIDE",
         discount: "10% off",
         region: "\uD83C\uDDEC\uD83C\uDDE7 UK",
+        detailPage: "/coupons/particle-peptides",
       },
     ],
   },
