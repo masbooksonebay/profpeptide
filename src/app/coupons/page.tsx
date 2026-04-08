@@ -83,6 +83,14 @@ const vendors = [
     region: "\uD83C\uDDFA\uD83C\uDDF8 US",
   },
   {
+    name: "Spartan Peptides",
+    url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
+    code: "",
+    discount: "Code coming soon",
+    region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+    comingSoon: true,
+  },
+  {
     name: "Vital Core Research",
     url: "https://vitalcoreresearch.com",
     code: "PROFPEPTIDE",
@@ -173,8 +181,19 @@ export default function CouponsPage() {
               </div>
 
               <div className="mb-4">
-                <p className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-1">Click to copy code</p>
-                <CodeBox code={v.code} />
+                {"comingSoon" in v && v.comingSoon ? (
+                  <>
+                    <p className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-1">Discount Code</p>
+                    <div className="block w-full bg-gray-50 border border-gray-200 px-4 py-2.5 rounded-lg text-sm text-gray-400 italic text-center">
+                      Code coming soon
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <p className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-1">Click to copy code</p>
+                    <CodeBox code={v.code} />
+                  </>
+                )}
               </div>
 
               <a
