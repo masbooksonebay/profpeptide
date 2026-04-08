@@ -70,8 +70,8 @@ const sections: VendorSection[] = [
       {
         name: "Fusion Peptide",
         url: "https://fusionpeptide.com/?ref=PROFPEPTIDE",
-        code: "MARK15",
-        discount: "15% off",
+        code: "PROFPEPTIDE",
+        discount: "20% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/fusion-peptide",
         specialBadge: "Topicals & Nasal Sprays Available",
