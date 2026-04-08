@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 interface Vendor {
   name: string;
@@ -14,6 +15,7 @@ interface Vendor {
   specialBadge?: string;
   specialBadgeColor?: string;
   description?: string;
+  detailPage?: string;
 }
 
 interface VendorSection {
@@ -60,6 +62,7 @@ const sections: VendorSection[] = [
         code: "MARK15",
         discount: "15% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/fusion-peptide",
         specialBadge: "Topicals & Nasal Sprays Available",
         specialBadgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
         description: "Unique delivery formats including topical creams and nasal sprays alongside injectable research peptides. 99% purity verified.",
@@ -179,11 +182,17 @@ function VendorCard({ v }: { v: Vendor }) {
         }`}
       >
         <h2
-          className={`font-bold text-[#1e2d3d] leading-tight ${
+          className={`font-bold leading-tight ${
             v.editorsPick ? "text-xl" : "text-base"
           }`}
         >
-          {v.name}
+          {v.detailPage ? (
+            <Link href={v.detailPage} className="text-[#1e2d3d] hover:text-[#0D7377] transition-colors">
+              {v.name}
+            </Link>
+          ) : (
+            <span className="text-[#1e2d3d]">{v.name}</span>
+          )}
         </h2>
         <span className="text-xs font-bold text-[#0D7377] bg-[#d0eeef] px-2.5 py-1 rounded-full whitespace-nowrap">
           {v.discount}
