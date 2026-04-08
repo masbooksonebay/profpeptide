@@ -43,6 +43,7 @@ const sections: VendorSection[] = [
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         purityBadge: "\u226598% Purity Verified",
+        detailPage: "/coupons/spartan-peptides",
       },
     ],
   },
