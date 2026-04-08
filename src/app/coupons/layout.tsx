@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Discount Codes | Prof. Peptide",
+  title: "Peptide Discount Codes 2026 — Verified Coupon & Promo Codes | Prof. Peptide",
   description:
-    "Verified discount codes for peptide vendors with third-party lab testing.",
+    "Verified peptide discount codes, promo codes, and coupon codes for 13 trusted vendors. Updated regularly. Save up to 50% on research peptides.",
 };
 
 export default function CouponsLayout({ children }: { children: React.ReactNode }) {

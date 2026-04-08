@@ -127,8 +127,11 @@ export default function CouponsPage() {
     <div className="section max-w-3xl">
       <span className="tag mb-3 inline-block">Updated Regularly</span>
       <h1 className="text-3xl font-bold text-[#1e2d3d] mb-3">Discount Codes</h1>
-      <p className="text-sm text-gray-500 mb-8 leading-relaxed max-w-lg">
+      <p className="text-sm text-gray-500 mb-3 leading-relaxed max-w-lg">
         Verified discount codes for peptide vendors with third-party lab testing.
+      </p>
+      <p className="text-xs text-gray-400 mb-8 leading-relaxed max-w-lg">
+        All discount codes, promo codes, and coupon codes are verified by Prof. Peptide and updated regularly.
       </p>
 
       <div className="space-y-4 mb-10">
