@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Probiotics Supplement Profile | Prof. Peptide",
+  title: "Probiotics — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Probiotics supplement profile — gut microbiome restoration, immune modulation, IBS symptom reduction, antibiotic-associated diarrhea prevention, dosing, and references.",
+    "Probiotics supplement profile covering gut microbiome restoration, IBS symptom reduction, immune modulation, and strain selection guidance.",
 };
 
 export default function ProbioticsPage() {

@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "AOD-9604 Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on AOD-9604 with plain-English summaries.",
+  title: "AOD-9604 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key AOD-9604 studies summarized in plain English. Covers animal lipolysis data, human Phase 2b failure, safety profile, and development history.",
 };
 
 const studies = [

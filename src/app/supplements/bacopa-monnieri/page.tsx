@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Bacopa Monnieri Supplement Profile | Prof. Peptide",
+  title: "Bacopa Monnieri — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Bacopa Monnieri supplement profile — bacoside activity, memory enhancement, anxiety reduction, acetylcholinesterase inhibition, dosing, and references.",
+    "Bacopa monnieri profile covering bacoside mechanism, memory enhancement, anxiety reduction, Ayurvedic history, and 8-12 week dosage.",
 };
 
 export default function BacopaMonnieriPage() {

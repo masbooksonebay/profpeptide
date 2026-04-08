@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "MOTS-c Research Profile | Prof. Peptide",
+  title: "MOTS-c — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "MOTS-c research profile \u2014 mitochondrial-derived exercise mimetic, AMPK activation, insulin sensitivity, physical performance, aging research, and references.",
+    "MOTS-c research profile covering mitochondrial-derived exercise mimetic mechanism, AMPK activation, insulin sensitivity, and aging research.",
 };
 
 const sections = [

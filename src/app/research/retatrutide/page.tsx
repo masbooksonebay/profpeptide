@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Retatrutide Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on Retatrutide with plain-English summaries.",
+  title: "Retatrutide Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "3 key Retatrutide studies summarized in plain English. Covers Phase 2 obesity and diabetes trials plus TRIUMPH Phase 3 program status.",
 };
 
 const studies = [

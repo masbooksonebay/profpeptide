@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "PT-141 Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on PT-141 (Bremelanotide) with plain-English summaries.",
+  title: "PT-141 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "5 key PT-141 studies summarized in plain English. Covers FDA-approved RECONNECT trials, long-term safety, male ED evidence, and mechanism review.",
 };
 
 const studies = [

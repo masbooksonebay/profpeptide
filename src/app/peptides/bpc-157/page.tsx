@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "BPC-157 Research Profile | Prof. Peptide",
+  title: "BPC-157 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "BPC-157 peptide research profile covering mechanism of action, tissue repair studies, half-life, research limitations, stacking, and references.",
+    "BPC-157 research profile covering tissue repair mechanism, gut healing evidence, tendon recovery studies, dosage protocols, and safety considerations.",
 };
 
 const sections = [

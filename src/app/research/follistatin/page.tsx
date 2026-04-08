@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Follistatin Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on Follistatin-344 with plain-English summaries.",
+  title: "Follistatin Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "5 key Follistatin studies summarized in plain English. Covers myostatin inhibition, gene therapy trials, satellite cell proliferation, and Becker MD.",
 };
 
 const studies = [

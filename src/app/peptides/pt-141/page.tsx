@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "PT-141 Research Profile | Prof. Peptide",
+  title: "PT-141 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "PT-141 (bremelanotide/Vyleesi) research profile \u2014 melanocortin receptor mechanism, FDA approval for HSDD, male ED research, and references.",
+    "PT-141 (Bremelanotide) research profile covering FDA-approved CNS mechanism for sexual desire, RECONNECT trial data, and off-label male ED use.",
 };
 
 const sections = [

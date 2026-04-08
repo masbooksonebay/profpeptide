@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Green Tea Extract Supplement Profile | Prof. Peptide",
+  title: "Green Tea Extract — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Green tea extract (EGCG) supplement profile — fat oxidation, COMT inhibition, cardiovascular and cognitive benefits, dosing, and references.",
+    "Green tea extract (EGCG) profile covering fat oxidation, COMT inhibition, caffeine synergy, cardiovascular benefits, and dosage guidance.",
 };
 
 export default function GreenTeaExtractPage() {

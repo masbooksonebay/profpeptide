@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "TB-500 Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on TB-500 with plain-English summaries.",
+  title: "TB-500 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "5 key TB-500 studies summarized in plain English. Covers wound healing, muscle regeneration, cardiac repair, and developmental biology.",
 };
 
 const studies = [

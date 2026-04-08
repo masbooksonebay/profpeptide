@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Tirzepatide Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on Tirzepatide with plain-English summaries.",
+  title: "Tirzepatide Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key Tirzepatide studies summarized in plain English. Covers SURMOUNT obesity trials, head-to-head vs semaglutide, and SUMMIT heart failure data.",
 };
 
 const studies = [

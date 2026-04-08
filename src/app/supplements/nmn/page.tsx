@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "NMN Supplement Profile | Prof. Peptide",
+  title: "NMN — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "NMN supplement profile — NAD+ precursor, sirtuin activation, mitochondrial biogenesis, telomere length, human clinical trials, dosing, and references.",
+    "NMN supplement profile covering NAD+ precursor mechanism, sirtuin activation, mitochondrial biogenesis, telomere support, and clinical trial data.",
 };
 
 export default function NMNPage() {

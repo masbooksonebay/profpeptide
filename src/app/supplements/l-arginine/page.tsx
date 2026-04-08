@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "L-Arginine Supplement Profile | Prof. Peptide",
+  title: "L-Arginine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "L-Arginine supplement profile — nitric oxide precursor, growth hormone secretion, cardiovascular support, wound healing, dosing, and references.",
+    "L-Arginine supplement profile covering nitric oxide precursor role, growth hormone secretion, cardiovascular support, and wound healing.",
 };
 
 export default function LArgininePage() {

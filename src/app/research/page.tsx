@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Research | Prof. Peptide",
-  description: "Peer-reviewed research summaries organized by peptide.",
+  title: "Peptide Research — Peer-Reviewed Study Summaries | Prof. Peptide",
+  description:
+    "Plain-English summaries of peer-reviewed peptide research. Key studies on BPC-157, Semaglutide, Tirzepatide, GHK-Cu, PT-141, and 20+ more compounds.",
 };
 
 const categories = [

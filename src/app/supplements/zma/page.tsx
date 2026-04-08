@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "ZMA Supplement Profile | Prof. Peptide",
+  title: "ZMA — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "ZMA supplement profile — zinc magnesium aspartate, sleep quality, testosterone support in deficient athletes, mineral repletion, dosing, and references.",
+    "ZMA supplement profile covering zinc magnesium aspartate, sleep quality improvement, testosterone support in athletes, and mineral repletion.",
 };
 
 export default function ZMAPage() {

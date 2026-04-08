@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "L-Theanine Supplement Profile | Prof. Peptide",
+  title: "L-Theanine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "L-Theanine supplement profile — alpha wave induction, calm focus, caffeine synergy, anxiety reduction, dosing, and references.",
+    "L-Theanine supplement profile covering alpha wave induction, calm focus mechanism, caffeine synergy, sleep support, and optimal dosage.",
 };
 
 export default function LTheaninePage() {

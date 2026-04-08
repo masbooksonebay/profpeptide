@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: "Prof. Peptide — Research-Grade Peptide Education",
+  title: "Prof. Peptide — Research Guide for Peptides and Natural Supplements",
   description:
-    "Evidence-based peptide education, dosage calculators, coupon codes, and research resources. Trusted by thousands of researchers.",
+    "Evidence-based research profiles for 23+ peptides and 48+ natural supplements. Dosage calculator, verified discount codes, and independent education. No ads.",
   metadataBase: new URL("https://profpeptide.com"),
   openGraph: {
     title: "Prof. Peptide",

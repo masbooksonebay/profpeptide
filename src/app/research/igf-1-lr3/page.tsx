@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "IGF-1 LR3 Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on IGF-1 LR3 with plain-English summaries.",
+  title: "IGF-1 LR3 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key IGF-1 LR3 studies summarized in plain English. Covers muscle therapeutics, mTOR signaling, doping pharmacology, and performance research.",
 };
 
 const studies = [

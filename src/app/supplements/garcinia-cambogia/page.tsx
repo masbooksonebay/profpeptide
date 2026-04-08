@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Garcinia Cambogia Supplement Profile | Prof. Peptide",
+  title: "Garcinia Cambogia — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Garcinia cambogia (HCA) supplement profile — fat synthesis inhibition, appetite suppression, mixed research evidence, dosing, and references.",
+    "Garcinia cambogia profile covering HCA mechanism, ATP citrate lyase inhibition, mixed weight loss evidence, and honest efficacy assessment.",
 };
 
 export default function GarciniaCambogiaPage() {

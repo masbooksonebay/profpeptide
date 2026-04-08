@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Beta-Alanine Supplement Profile | Prof. Peptide",
+  title: "Beta-Alanine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Beta-alanine supplement profile — carnosine synthesis, pH buffering, fatigue delay in 1–4 minute exercise, paraesthesia, dosing, and references.",
+    "Beta-alanine supplement profile covering carnosine synthesis, pH buffering, fatigue delay in 1-4 minute exercise, and paraesthesia management.",
 };
 
 export default function BetaAlaninePage() {

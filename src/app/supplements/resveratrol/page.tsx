@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Resveratrol Supplement Profile | Prof. Peptide",
+  title: "Resveratrol — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Resveratrol supplement profile — SIRT1 activation, AMPK pathway, cardiovascular protection, caloric restriction mimicry, NMN synergy, dosing, and references.",
+    "Resveratrol supplement profile covering SIRT1 activation, cardiovascular protection, caloric restriction mimicry, and NMN synergy stack.",
 };
 
 export default function ResveratrolPage() {

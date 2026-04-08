@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Vitamin C Supplement Profile | Prof. Peptide",
+  title: "Vitamin C — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Vitamin C supplement profile — collagen cofactor, immune support, antioxidant defense, iron absorption, dosing, and references.",
+    "Vitamin C supplement profile covering collagen cofactor role, immune support, antioxidant defense, iron absorption, and exercise recovery.",
 };
 
 export default function VitaminCPage() {

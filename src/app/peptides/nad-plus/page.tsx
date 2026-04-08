@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "NAD+ Research Profile | Prof. Peptide",
+  title: "NAD+ — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "NAD+ research profile \u2014 sirtuin activation, DNA repair, mitochondrial function, NMN and NR precursors, clinical data, and references.",
+    "NAD+ research profile covering sirtuin activation, mitochondrial function, NMN and NR precursors, DNA repair support, and longevity research.",
 };
 
 const sections = [

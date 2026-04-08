@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Berberine Supplement Profile | Prof. Peptide",
+  title: "Berberine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Berberine supplement profile — AMPK activation, blood sugar regulation, metformin comparison, lipid metabolism, dosing, and references.",
+    "Berberine supplement profile covering blood sugar regulation, AMPK activation, metformin comparison, lipid metabolism, and optimal dosage.",
 };
 
 export default function BerberinePage() {

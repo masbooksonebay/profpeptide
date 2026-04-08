@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Caffeine Supplement Profile | Prof. Peptide",
+  title: "Caffeine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Caffeine supplement profile — adenosine antagonism, thermogenesis, fat oxidation, physical and cognitive performance, dosing, and references.",
+    "Caffeine supplement profile covering adenosine antagonism, metabolic rate increase, fat oxidation, physical performance, and optimal dosage.",
 };
 
 export default function CaffeinePage() {

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Tesamorelin Research Profile | Prof. Peptide",
+  title: "Tesamorelin — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Tesamorelin research profile — GHRH analog mechanism, FDA-approved for HIV lipodystrophy, visceral fat reduction, cognitive function research, and references.",
+    "Tesamorelin research profile covering FDA-approved GHRH analog mechanism, visceral fat reduction data, cognitive research, and clinical evidence.",
 };
 
 const sections = [

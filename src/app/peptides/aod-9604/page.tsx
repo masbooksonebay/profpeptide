@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "AOD-9604 Research Profile | Prof. Peptide",
+  title: "AOD-9604 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "AOD-9604 research profile \u2014 GH fragment 176-191, selective lipolysis, failed Phase IIb trial, cartilage repair pivot, regulatory status, and references.",
+    "AOD-9604 research profile covering GH fragment lipolysis mechanism, Phase 2b trial failure, cartilage repair pivot, and regulatory status.",
 };
 
 const sections = [

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Semaglutide Research Profile | Prof. Peptide",
+  title: "Semaglutide — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Semaglutide research profile — mechanism of action, clinical trial data (STEP, SELECT, SUSTAIN, FLOW), FDA approval status, side effects, and references.",
+    "Semaglutide research profile covering GLP-1 mechanism, STEP trial weight loss data, cardiovascular benefits, FDA approval status, and dosage guidance.",
 };
 
 const sections = [

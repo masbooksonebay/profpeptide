@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Biotin Supplement Profile | Prof. Peptide",
+  title: "Biotin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Biotin (vitamin B7) supplement profile — hair and nail support, keratin infrastructure, deficiency correction, lab test interference, dosing, and references.",
+    "Biotin (vitamin B7) profile covering nail strength evidence, hair support in deficiency, keratin mechanism, and lab test interference warning.",
 };
 
 export default function BiotinPage() {

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Semax Research Profile | Prof. Peptide",
+  title: "Semax — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Semax research profile — ACTH 4-10 analog mechanism, BDNF upregulation, neuroprotection, stroke research, cognitive enhancement, and references.",
+    "Semax research profile covering BDNF upregulation, neuroprotective mechanism, stroke treatment evidence, and cognitive enhancement research.",
 };
 
 const sections = [

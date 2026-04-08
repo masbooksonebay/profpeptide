@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Melanotan II Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on Melanotan II with plain-English summaries.",
+  title: "Melanotan II Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key Melanotan II studies summarized in plain English. Covers Phase I tanning trial, sexual function discovery, melanoma risk assessment, and safety concerns.",
 };
 
 const studies = [

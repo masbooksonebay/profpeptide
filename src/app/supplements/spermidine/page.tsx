@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Spermidine Supplement Profile | Prof. Peptide",
+  title: "Spermidine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Spermidine supplement profile — autophagy induction, Bruneck mortality study, cognitive function, cardioprotection, fasting mimicry, dosing, and references.",
+    "Spermidine supplement profile covering autophagy induction, Bruneck mortality study, cognitive function, and fasting mimicry mechanism.",
 };
 
 export default function SpermidinePage() {

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Glucomannan Supplement Profile | Prof. Peptide",
+  title: "Glucomannan — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Glucomannan supplement profile — konjac fiber mechanism, satiety, blood sugar blunting, EFSA-approved weight loss claim, dosing, and references.",
+    "Glucomannan supplement profile covering konjac fiber satiety mechanism, EFSA weight loss claim, blood sugar blunting, and dosage guidance.",
 };
 
 export default function GlucomannanPage() {

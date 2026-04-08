@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Thymosin Alpha-1 Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on Thymosin Alpha-1 with plain-English summaries.",
+  title: "Thymosin Alpha-1 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "5 key Thymosin Alpha-1 studies summarized in plain English. Covers immune modulation, viral infections, cancer immunotherapy, and immunosenescence.",
 };
 
 const studies = [

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "L-Citrulline for Sexual Health | Prof. Peptide",
+  title: "L-Citrulline — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "L-Citrulline supplement profile — nitric oxide production, erectile function support, vascular health, endothelial function, dosing, and references.",
+    "L-Citrulline supplement profile covering nitric oxide production, erectile function support, vascular health, and comparison to L-arginine.",
 };
 
 export default function LCitrullinePage() {

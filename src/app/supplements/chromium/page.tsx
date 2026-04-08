@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Chromium Supplement Profile | Prof. Peptide",
+  title: "Chromium — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Chromium supplement profile — chromodulin and insulin potentiation, GLUT4 translocation, blood sugar regulation, lipid metabolism, dosing, and references.",
+    "Chromium supplement profile covering chromodulin insulin potentiation, GLUT4 translocation, blood sugar regulation, and picolinate dosage.",
 };
 
 export default function ChromiumPage() {

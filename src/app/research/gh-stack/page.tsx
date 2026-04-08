@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "GH Stack Research | Prof. Peptide",
-  description: "Research basis for the GH Stack (CJC-1295 + Ipamorelin) with plain-English summaries.",
+  title: "GH Stack Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key GH Stack studies summarized in plain English. Covers CJC-1295 + Ipamorelin dual-pathway synergy and GHRH+GHRP combination evidence.",
 };
 
 const studies = [

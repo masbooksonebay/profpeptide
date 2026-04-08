@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "MOTS-c Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on MOTS-c with plain-English summaries.",
+  title: "MOTS-c Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key MOTS-c studies summarized in plain English. Covers mitochondrial exercise mimicry, insulin resistance, aging, and cardiac metabolism.",
 };
 
 const studies = [

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Rhodiola Rosea Supplement Profile | Prof. Peptide",
+  title: "Rhodiola Rosea — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Rhodiola Rosea supplement profile — adaptogenic stress response, mental fatigue reduction, HPA axis modulation, MAO inhibition, dosing, and references.",
+    "Rhodiola rosea profile covering adaptogenic stress response, mental fatigue reduction, HPA axis modulation, and burnout research.",
 };
 
 export default function RhodiolaRoseaPage() {

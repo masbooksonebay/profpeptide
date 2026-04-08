@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "BCAAs Supplement Profile | Prof. Peptide",
+  title: "BCAAs — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "BCAAs supplement profile — leucine and mTOR activation, muscle soreness reduction, fasted training use, context-dependent benefits, and references.",
+    "BCAAs supplement profile covering leucine mTOR activation, muscle soreness reduction, fasted training use, and context-dependent benefits.",
 };
 
 export default function BCAAsPage() {

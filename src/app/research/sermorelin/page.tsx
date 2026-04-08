@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Sermorelin Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on Sermorelin with plain-English summaries.",
+  title: "Sermorelin Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key Sermorelin studies summarized in plain English. Covers pituitary preservation, elderly GH restoration, cognitive function, and testosterone effects.",
 };
 
 const studies = [

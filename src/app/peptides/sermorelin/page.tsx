@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Sermorelin Research Profile | Prof. Peptide",
+  title: "Sermorelin — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Sermorelin research profile — GHRH 1-29 mechanism, pulsatile GH release, pediatric GH deficiency data, FDA history, off-label use, and references.",
+    "Sermorelin research profile covering GHRH 1-29 mechanism, pituitary preservation, former FDA approval history, and off-label clinical use.",
 };
 
 const sections = [

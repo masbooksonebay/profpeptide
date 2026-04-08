@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Get the App | Prof. Peptide",
-  description: "The Prof. Peptide iOS app is coming soon. Join the waitlist.",
+  title: "Get the Prof. Peptide App — Peptide Research in Your Pocket",
+  description: "Access peptide profiles, supplement guides, dosage tools, and discount codes on the go. The Prof. Peptide app for iOS and Android.",
 };
 
 const features = [

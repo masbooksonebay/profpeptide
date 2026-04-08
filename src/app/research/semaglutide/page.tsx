@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Semaglutide Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on Semaglutide with plain-English summaries.",
+  title: "Semaglutide Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "5 key Semaglutide studies summarized in plain English. Covers STEP weight loss trials, SELECT cardiovascular outcomes, and SUSTAIN diabetes data.",
 };
 
 const studies = [

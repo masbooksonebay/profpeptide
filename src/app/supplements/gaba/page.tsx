@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "GABA Supplement Profile | Prof. Peptide",
+  title: "GABA — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "GABA supplement profile — calming neurotransmitter, growth hormone release, sleep support, peripheral receptor effects, dosing, and references.",
+    "GABA supplement profile covering calming neurotransmitter mechanism, 400% growth hormone increase, sleep support, and PharmaGABA dosage.",
 };
 
 export default function GABAPage() {

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Tongkat Ali Supplement Profile | Prof. Peptide",
+  title: "Tongkat Ali — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Tongkat Ali supplement profile — testosterone support, SHBG reduction, aromatase inhibition, cortisol modulation, male fertility, dosing, and references.",
+    "Tongkat Ali supplement profile covering testosterone support, SHBG reduction, aromatase inhibition, cortisol modulation, and Physta dosage.",
 };
 
 export default function TongkatAliPage() {

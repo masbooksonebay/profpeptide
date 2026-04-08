@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Alpha GPC Supplement Profile | Prof. Peptide",
+  title: "Alpha GPC — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Alpha GPC supplement profile — choline bioavailability, acetylcholine synthesis, cognitive enhancement, growth hormone release, dosing, and references.",
+    "Alpha GPC supplement profile covering choline bioavailability, acetylcholine synthesis, cognitive enhancement, and growth hormone release.",
 };
 
 export default function AlphaGPCPage() {

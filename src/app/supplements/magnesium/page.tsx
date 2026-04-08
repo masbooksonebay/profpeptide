@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Magnesium Supplement Profile | Prof. Peptide",
+  title: "Magnesium — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Magnesium supplement profile — 300+ enzymatic reactions, sleep quality, blood pressure, insulin sensitivity, form comparison, dosing, and references.",
+    "Magnesium supplement profile covering 300+ enzymatic reactions, sleep quality, blood pressure, glycinate vs citrate forms, and optimal dosage.",
 };
 
 export default function MagnesiumPage() {

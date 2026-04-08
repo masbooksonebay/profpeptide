@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Retatrutide Research Profile | Prof. Peptide",
+  title: "Retatrutide — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Retatrutide research profile — triple GIP/GLP-1/glucagon agonist mechanism, TRIUMPH Phase 3 trial data, liver fat reduction, side effects, and references.",
+    "Retatrutide research profile covering triple GIP/GLP-1/glucagon mechanism, 28.7% Phase 3 weight loss, liver fat reduction, and clinical trial status.",
 };
 
 const sections = [

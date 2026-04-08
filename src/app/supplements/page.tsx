@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Supplement Library | Prof. Peptide",
-  description: "Evidence-based supplement profiles organized by category.",
+  title: "Supplement Library — 48 Natural Supplement Profiles | Prof. Peptide",
+  description:
+    "Browse 48 natural supplement profiles covering metabolic health, recovery, cognition, longevity, and more. Evidence-based and independently researched.",
 };
 
 const categories = [

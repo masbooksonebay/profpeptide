@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Creatine Supplement Profile | Prof. Peptide",
+  title: "Creatine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Creatine supplement profile — phosphocreatine resynthesis, strength and muscle gains, cognitive benefits, dosing, safety, and references.",
+    "Creatine supplement profile covering phosphocreatine mechanism, strength and muscle gains, cognitive benefits, and monohydrate gold standard.",
 };
 
 export default function CreatinePage() {

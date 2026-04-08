@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Epitalon Research Profile | Prof. Peptide",
+  title: "Epitalon — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Epitalon research profile \u2014 telomerase activation, telomere lengthening, pineal gland regulation, cancer paradox, clinical data, and references.",
+    "Epitalon research profile covering telomerase activation, telomere lengthening evidence, pineal gland regulation, and longevity research.",
 };
 
 const sections = [

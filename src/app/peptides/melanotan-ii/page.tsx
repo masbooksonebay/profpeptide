@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Melanotan II Research Profile | Prof. Peptide",
+  title: "Melanotan II — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Melanotan II research profile \u2014 melanocortin receptor agonist mechanism, tanning research, sexual function discovery, safety concerns, and references.",
+    "Melanotan II research profile covering melanocortin receptor mechanism, tanning effects, sexual function discovery, and safety risk assessment.",
 };
 
 const sections = [

@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Epitalon Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on Epitalon with plain-English summaries.",
+  title: "Epitalon Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key Epitalon studies summarized in plain English. Covers telomerase activation, independent replication, pineal regulation, and longevity research.",
 };
 
 const studies = [

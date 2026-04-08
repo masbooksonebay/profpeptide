@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Caffeine + L-Theanine Supplement Profile | Prof. Peptide",
+  title: "Caffeine + L-Theanine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Caffeine + L-Theanine supplement profile — synergistic cognitive enhancement, alpha wave modulation, alertness without jitters, dosing, and references.",
+    "Caffeine + L-Theanine profile covering synergistic cognitive enhancement, alpha wave modulation, focus without jitters, and optimal ratio.",
 };
 
 export default function CaffeineLTheaninePage() {

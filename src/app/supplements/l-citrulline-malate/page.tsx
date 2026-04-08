@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "L-Citrulline Malate Supplement Profile | Prof. Peptide",
+  title: "L-Citrulline Malate — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "L-citrulline malate supplement profile — nitric oxide production, endurance improvement, muscle soreness reduction, dosing, and references.",
+    "L-citrulline malate profile covering nitric oxide production, endurance improvement, muscle soreness reduction, and pre-workout dosage.",
 };
 
 export default function LCitrullineMalatePage() {

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Prebiotics Supplement Profile | Prof. Peptide",
+  title: "Prebiotics — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Prebiotics supplement profile — selective fermentation, SCFA production, Bifidobacterium growth, calcium absorption, dosing, and references.",
+    "Prebiotics supplement profile covering selective fermentation, butyrate production, Bifidobacterium growth, and synbiotic combination approach.",
 };
 
 export default function PrebioticsPage() {

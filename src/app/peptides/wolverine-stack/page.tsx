@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Wolverine Stack Research Profile | Prof. Peptide",
+  title: "Wolverine Stack — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Wolverine Stack (BPC-157 + TB-500) research profile — how these two peptides combine for synergistic tissue repair, key research, benefits, and limitations.",
+    "Wolverine Stack (BPC-157 + TB-500) research profile covering synergistic tissue repair mechanisms, complementary pathways, and combination rationale.",
 };
 
 const sections = [

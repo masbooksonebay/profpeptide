@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Protein Powder Supplement Profile | Prof. Peptide",
+  title: "Protein Powder — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Protein powder supplement profile — muscle protein synthesis, whey vs casein vs plant, optimal intake, dosing, and references.",
+    "Protein powder profile covering muscle protein synthesis, whey vs casein vs plant sources, optimal intake, and post-workout timing.",
 };
 
 export default function ProteinPowderPage() {

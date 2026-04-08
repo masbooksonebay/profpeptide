@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Tirzepatide Research Profile | Prof. Peptide",
+  title: "Tirzepatide — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Tirzepatide research profile — dual GIP/GLP-1 mechanism, SURMOUNT and SURPASS trial data, FDA approval status, side effects, and references.",
+    "Tirzepatide research profile covering dual GIP/GLP-1 mechanism, SURMOUNT trial data, head-to-head vs semaglutide, FDA approval, and dosage guidance.",
 };
 
 const sections = [

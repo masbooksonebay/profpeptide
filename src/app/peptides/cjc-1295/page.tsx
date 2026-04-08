@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "CJC-1295 Research Profile | Prof. Peptide",
+  title: "CJC-1295 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "CJC-1295 research profile — GHRH analog mechanism, pulsatile GH release, IGF-1 elevation, synergy with Ipamorelin, pharmacokinetics, and references.",
+    "CJC-1295 research profile covering GHRH analog mechanism, pulsatile GH release, DAC vs non-DAC forms, and Ipamorelin synergy data.",
 };
 
 const sections = [

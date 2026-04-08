@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Selank Research Profile | Prof. Peptide",
+  title: "Selank — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Selank research profile — tuftsin analog mechanism, anxiolytic effects, GABAergic modulation, comparison to benzodiazepines, and references.",
+    "Selank research profile covering anxiolytic mechanism, GABAergic modulation, benzodiazepine comparison, and cognitive support research.",
 };
 
 const sections = [

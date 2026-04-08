@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "CJC-1295 Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on CJC-1295 with plain-English summaries.",
+  title: "CJC-1295 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key CJC-1295 studies summarized in plain English. Covers human GH/IGF-1 elevation, pulsatility preservation, and GH secretagogue development.",
 };
 
 const studies = [

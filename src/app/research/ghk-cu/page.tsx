@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "GHK-Cu Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on GHK-Cu with plain-English summaries.",
+  title: "GHK-Cu Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "5 key GHK-Cu studies summarized in plain English. Covers skin regeneration, gene expression modulation, wound healing, and clinical trial data.",
 };
 
 const studies = [

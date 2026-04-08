@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Vitamin C for Skin | Prof. Peptide",
+  title: "Vitamin C for Skin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Vitamin C for skin — collagen cofactor, melanin inhibition, UV protection, antioxidant defense, synergy with collagen peptides, dosing, and references.",
+    "Vitamin C for skin profile covering collagen hydroxylation, melanin inhibition, UV protection, vitamin E regeneration, and dosage.",
 };
 
 export default function VitaminCSkinPage() {

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Lion's Mane Supplement Profile | Prof. Peptide",
+  title: "Lion's Mane — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Lion's Mane supplement profile — NGF and BDNF stimulation, cognitive improvement, neurogenesis, clinical trial data, dosing, and references.",
+    "Lion's Mane mushroom profile covering NGF and BDNF stimulation, neurogenesis, cognitive improvement, and clinical trial evidence.",
 };
 
 export default function LionsManePage() {

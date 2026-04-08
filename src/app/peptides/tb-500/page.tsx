@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "TB-500 Research Profile | Prof. Peptide",
+  title: "TB-500 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "TB-500 peptide research profile covering mechanism of action, wound healing studies, cardiac repair, half-life, research limitations, stacking, and references.",
+    "TB-500 research profile covering Thymosin Beta-4 mechanism, wound healing data, muscle repair evidence, dosage protocols, and safety information.",
 };
 
 const sections = [

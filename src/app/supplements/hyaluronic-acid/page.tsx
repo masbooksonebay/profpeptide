@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Hyaluronic Acid Supplement Profile | Prof. Peptide",
+  title: "Hyaluronic Acid — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Hyaluronic acid supplement profile — skin hydration, water binding capacity, wrinkle reduction, joint lubrication, dosing, and references.",
+    "Hyaluronic acid supplement profile covering skin hydration, 6L water binding per gram, wrinkle reduction, joint lubrication, and dosage.",
 };
 
 export default function HyaluronicAcidPage() {

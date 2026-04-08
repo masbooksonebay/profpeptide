@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Phosphatidylserine Supplement Profile | Prof. Peptide",
+  title: "Phosphatidylserine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Phosphatidylserine supplement profile — neuronal membrane support, FDA qualified health claim, cortisol blunting, memory improvement, dosing, and references.",
+    "Phosphatidylserine profile covering FDA qualified health claim, neuronal membrane support, cortisol blunting, and memory improvement.",
 };
 
 export default function PhosphatidylserinePage() {

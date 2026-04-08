@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Semax Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on Semax with plain-English summaries.",
+  title: "Semax Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "5 key Semax studies summarized in plain English. Covers BDNF upregulation, stroke neuroprotection, genome-wide transcriptomics, and Alzheimer research.",
 };
 
 const studies = [

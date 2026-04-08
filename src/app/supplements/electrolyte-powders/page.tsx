@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Electrolyte Powders Supplement Profile | Prof. Peptide",
+  title: "Electrolyte Powders — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Electrolyte powders supplement profile — sodium and fluid balance, hyponatremia prevention, endurance performance, dosing, and references.",
+    "Electrolyte powders profile covering sodium balance, hyponatremia prevention, endurance performance, and hydration optimization.",
 };
 
 export default function ElectrolytePowdersPage() {

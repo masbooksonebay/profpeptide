@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "BPC-157 Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on BPC-157 with plain-English summaries.",
+  title: "BPC-157 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "5 key BPC-157 studies summarized in plain English. Covers tissue repair, gut healing, musculoskeletal recovery, and orthopedic sports medicine.",
 };
 
 const studies = [

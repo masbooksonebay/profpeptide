@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Alpha Lipoic Acid Supplement Profile | Prof. Peptide",
+  title: "Alpha Lipoic Acid — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Alpha lipoic acid (ALA) supplement profile — universal antioxidant, AMPK activation, diabetic neuropathy, insulin sensitivity, dosing, and references.",
+    "Alpha lipoic acid profile covering universal antioxidant mechanism, diabetic neuropathy evidence, insulin sensitivity, and R-ALA vs S-ALA forms.",
 };
 
 export default function AlphaLipoicAcidPage() {

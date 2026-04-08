@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Zinc Supplement Profile | Prof. Peptide",
+  title: "Zinc — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Zinc supplement profile — immune cell development, cold duration reduction, gut barrier support, testosterone, antiviral activity, dosing, and references.",
+    "Zinc supplement profile covering immune cell development, cold duration reduction, gut barrier support, testosterone, and form comparison.",
 };
 
 export default function ZincPage() {

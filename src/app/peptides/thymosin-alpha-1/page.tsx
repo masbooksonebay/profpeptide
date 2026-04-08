@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Thymosin Alpha-1 Research Profile | Prof. Peptide",
+  title: "Thymosin Alpha-1 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Thymosin Alpha-1 research profile \u2014 immune modulation mechanism, hepatitis and COVID-19 research, sepsis data, FDA status, and references.",
+    "Thymosin Alpha-1 research profile covering immune modulation mechanism, TLR activation, hepatitis treatment, and cancer immunotherapy data.",
 };
 
 const sections = [

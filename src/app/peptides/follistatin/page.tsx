@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Follistatin Research Profile | Prof. Peptide",
+  title: "Follistatin — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Follistatin research profile — myostatin inhibition mechanism, gene therapy trials for muscular dystrophy, muscle growth data, limitations, and references.",
+    "Follistatin research profile covering myostatin inhibition, gene therapy trials for muscular dystrophy, muscle growth data, and safety information.",
 };
 
 const sections = [

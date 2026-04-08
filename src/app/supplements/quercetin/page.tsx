@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Quercetin Supplement Profile | Prof. Peptide",
+  title: "Quercetin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Quercetin supplement profile — senolytic activity, NF-\u03BAB inhibition, zinc ionophore, AMPK activation, Mayo Clinic research, dosing, and references.",
+    "Quercetin supplement profile covering senolytic activity, NF-κB inhibition, zinc ionophore mechanism, and Mayo Clinic aging research.",
 };
 
 export default function QuercetinPage() {

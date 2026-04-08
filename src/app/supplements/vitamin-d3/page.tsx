@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Vitamin D3 Supplement Profile | Prof. Peptide",
+  title: "Vitamin D3 — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Vitamin D3 supplement profile — nuclear receptor activation, immune modulation, respiratory infection prevention, bone health, dosing, and references.",
+    "Vitamin D3 supplement profile covering nuclear receptor activation, immune modulation, respiratory infection prevention, and D3 vs D2 dosage.",
 };
 
 export default function VitaminD3Page() {

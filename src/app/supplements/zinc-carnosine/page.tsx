@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Zinc Carnosine Supplement Profile | Prof. Peptide",
+  title: "Zinc Carnosine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Zinc carnosine supplement profile — gut mucosal repair, ulcer healing, leaky gut support, athlete gut health, dosing, and references.",
+    "Zinc carnosine profile covering gut mucosal repair, ulcer healing, leaky gut support, athlete gut health, and PepZin GI dosage.",
 };
 
 export default function ZincCarnosinePage() {

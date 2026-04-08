@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "CoQ10 Supplement Profile | Prof. Peptide",
+  title: "CoQ10 — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "CoQ10 supplement profile — mitochondrial electron transport, heart failure research, statin myopathy, ubiquinol vs ubiquinone, dosing, and references.",
+    "CoQ10 supplement profile covering mitochondrial electron transport, heart failure research, statin myopathy support, and ubiquinol vs ubiquinone.",
 };
 
 export default function CoQ10Page() {

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Fenugreek Supplement Profile | Prof. Peptide",
+  title: "Fenugreek — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Fenugreek supplement profile — aromatase inhibition, testosterone support, blood glucose regulation, Testofen extract, dosing, and references.",
+    "Fenugreek supplement profile covering aromatase inhibition, testosterone support, blood glucose regulation, Testofen extract, and dosage.",
 };
 
 export default function FenugreekPage() {

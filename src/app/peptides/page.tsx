@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Peptide Library | Prof. Peptide",
-  description: "Research profiles organized by category.",
+  title: "Peptide Library — 23 Research Peptide Profiles | Prof. Peptide",
+  description:
+    "Browse 23 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [

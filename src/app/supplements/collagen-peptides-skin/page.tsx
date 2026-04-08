@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Collagen Peptides for Skin | Prof. Peptide",
+  title: "Collagen Peptides for Skin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Collagen peptides for skin — fibroblast stimulation, wrinkle reduction, skin elasticity and hydration, clinical trial data, dosing, and references.",
+    "Collagen peptides for skin profile covering fibroblast stimulation, wrinkle reduction, elasticity improvement, and vitamin C synergy.",
 };
 
 export default function CollagenPeptidesSkinPage() {

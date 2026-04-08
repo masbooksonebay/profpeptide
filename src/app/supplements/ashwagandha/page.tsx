@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Ashwagandha Supplement Profile | Prof. Peptide",
+  title: "Ashwagandha — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Ashwagandha supplement profile — HPA axis modulation, cortisol reduction, testosterone increase, muscle strength, sleep quality, dosing, and references.",
+    "Ashwagandha supplement profile covering cortisol reduction, testosterone support, KSM-66 evidence, muscle strength, and sleep quality.",
 };
 
 export default function AshwagandhaPage() {

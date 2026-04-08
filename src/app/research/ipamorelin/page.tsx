@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Ipamorelin Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on Ipamorelin with plain-English summaries.",
+  title: "Ipamorelin Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key Ipamorelin studies summarized in plain English. Covers selective GH release, body composition, human pharmacokinetics, and hypogonadal males.",
 };
 
 const studies = [

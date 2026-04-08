@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Collagen Peptides Supplement Profile | Prof. Peptide",
+  title: "Collagen Peptides — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Collagen peptides supplement profile — joint pain reduction, skin elasticity, tendon support, vitamin C synergy, dosing, and references.",
+    "Collagen peptides profile covering joint pain reduction, skin elasticity, tendon support, vitamin C synergy, and optimal dosage guidance.",
 };
 
 export default function CollagenPeptidesPage() {

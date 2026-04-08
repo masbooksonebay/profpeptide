@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Maca Root Supplement Profile | Prof. Peptide",
+  title: "Maca Root — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Maca root supplement profile — non-hormonal libido enhancement, male fertility, postmenopausal support, adaptogenic effects, dosing, and references.",
+    "Maca root supplement profile covering non-hormonal libido enhancement, male fertility support, adaptogenic mechanism, and color variety guide.",
 };
 
 export default function MacaRootPage() {

@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Wolverine Stack Research | Prof. Peptide",
-  description: "Research basis for the Wolverine Stack (BPC-157 + TB-500) with plain-English summaries.",
+  title: "Wolverine Stack Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key Wolverine Stack studies summarized in plain English. Covers BPC-157 and TB-500 complementary mechanisms and orthopaedic combination rationale.",
 };
 
 const studies = [

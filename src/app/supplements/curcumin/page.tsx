@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Curcumin Supplement Profile | Prof. Peptide",
+  title: "Curcumin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Curcumin supplement profile — NF-κB inhibition, anti-inflammatory effects, joint pain relief, bioavailability solutions, dosing, and references.",
+    "Curcumin supplement profile covering NF-κB inhibition, anti-inflammatory effects, joint pain relief, bioavailability solutions, and dosage.",
 };
 
 export default function CurcuminPage() {

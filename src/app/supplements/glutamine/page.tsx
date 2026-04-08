@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Glutamine Supplement Profile | Prof. Peptide",
+  title: "Glutamine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Glutamine supplement profile — gut barrier support, immune function, muscle recovery, clinical nutrition, dosing, and references.",
+    "Glutamine supplement profile covering gut barrier support, immune cell fuel, muscle recovery, and clinical nutrition evidence.",
 };
 
 export default function GlutaminePage() {

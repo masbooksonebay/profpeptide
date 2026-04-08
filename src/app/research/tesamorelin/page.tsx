@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Tesamorelin Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on Tesamorelin with plain-English summaries.",
+  title: "Tesamorelin Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "4 key Tesamorelin studies summarized in plain English. Covers FDA-approved visceral fat reduction, cognitive neurochemistry, and liver fat research.",
 };
 
 const studies = [

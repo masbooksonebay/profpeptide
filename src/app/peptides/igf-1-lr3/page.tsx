@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "IGF-1 LR3 Research Profile | Prof. Peptide",
+  title: "IGF-1 LR3 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "IGF-1 LR3 research profile — mechanism of action, muscle hypertrophy research, satellite cell activation, pharmacokinetics, limitations, and references.",
+    "IGF-1 LR3 research profile covering extended half-life mechanism, mTOR activation, satellite cell stimulation, and muscle growth research.",
 };
 
 const sections = [

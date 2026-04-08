@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "NAD+ Research | Prof. Peptide",
-  description: "Key peer-reviewed studies on NAD+ and its precursors NMN and NR with plain-English summaries.",
+  title: "NAD+ Research — Key Studies & Plain-English Summaries | Prof. Peptide",
+  description:
+    "5 key NAD+ studies summarized in plain English. Covers NMN and NR human trials, cognitive function, metabolic health, and honest efficacy assessment.",
 };
 
 const studies = [

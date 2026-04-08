@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Fish Oil Supplement Profile | Prof. Peptide",
+  title: "Fish Oil — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
-    "Fish oil (omega-3) supplement profile — EPA and DHA mechanisms, triglyceride reduction, cardiovascular protection, anti-inflammatory effects, dosing, and references.",
+    "Fish oil (omega-3) profile covering EPA and DHA mechanisms, triglyceride reduction, cardiovascular protection, and anti-inflammatory effects.",
 };
 
 export default function FishOilPage() {

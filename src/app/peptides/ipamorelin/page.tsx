@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Ipamorelin Research Profile | Prof. Peptide",
+  title: "Ipamorelin — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "Ipamorelin research profile — selective ghrelin receptor agonist mechanism, GH release without cortisol elevation, synergy with CJC-1295, and references.",
+    "Ipamorelin research profile covering selective ghrelin receptor mechanism, GH release without cortisol elevation, and CJC-1295 combination data.",
 };
 
 const sections = [

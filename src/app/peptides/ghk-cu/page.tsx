@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "GHK-Cu Research Profile | Prof. Peptide",
+  title: "GHK-Cu — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
-    "GHK-Cu research profile — copper peptide mechanism, collagen synthesis, gene expression reprogramming, wound healing, clinical trial data, and references.",
+    "GHK-Cu research profile covering copper peptide mechanism, collagen synthesis, gene expression reprogramming, wound healing, and skin rejuvenation.",
 };
 
 const sections = [
