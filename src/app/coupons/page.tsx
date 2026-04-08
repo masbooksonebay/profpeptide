@@ -172,10 +172,12 @@ function CodeBox({ code }: { code: string }) {
 function VendorCard({ v }: { v: Vendor }) {
   return (
     <div
-      className={`rounded-xl overflow-hidden transition-shadow ${
+      className={`rounded-xl overflow-hidden transition-all duration-200 ${
         v.editorsPick
           ? "border-l-4 border-l-amber-400 border border-amber-200 shadow-md hover:shadow-lg bg-[#FFFBEB]"
-          : "border border-gray-100 shadow-sm hover:shadow-md bg-white"
+          : v.detailPage
+            ? "border border-gray-200 shadow-sm hover:shadow-md hover:border-[#0D7377]/40 bg-white"
+            : "border border-gray-100 shadow-sm hover:shadow-md bg-white"
       }`}
     >
       <div
@@ -250,6 +252,15 @@ function VendorCard({ v }: { v: Vendor }) {
         >
           Shop Now &rarr;
         </a>
+
+        {v.detailPage && (
+          <Link
+            href={v.detailPage}
+            className="block w-full text-center text-xs font-medium text-[#0D7377] hover:text-[#0a5c60] mt-3 py-2 rounded-lg hover:bg-[#f0fafa] transition-colors"
+          >
+            Learn More &rarr;
+          </Link>
+        )}
       </div>
     </div>
   );
