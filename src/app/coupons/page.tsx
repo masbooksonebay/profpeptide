@@ -80,6 +80,7 @@ const sections: VendorSection[] = [
         code: "PROFPEPTIDE",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/apollo-peptide-sciences",
       },
       {
         name: "Ignite Peptides",
