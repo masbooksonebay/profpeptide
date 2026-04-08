@@ -72,15 +72,15 @@ const categories = [
     emoji: "\uD83C\uDF3F",
     name: "Longevity",
     peptides: [
-      { name: "Epitalon", slug: "epitalon" },
-      { name: "NAD+", slug: "nad-plus" },
+      { name: "Epitalon", slug: "epitalon", active: true },
+      { name: "NAD+", slug: "nad-plus", active: true },
     ],
   },
   {
     emoji: "\u2764\uFE0F",
     name: "Sexual Health",
     peptides: [
-      { name: "PT-141", slug: "pt-141" },
+      { name: "PT-141", slug: "pt-141", active: true },
     ],
   },
 ];
