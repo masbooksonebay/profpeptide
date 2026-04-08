@@ -89,6 +89,7 @@ const sections: VendorSection[] = [
         code: "welcome10",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/ignite-peptides",
       },
       {
         name: "Integrative Peptides",
