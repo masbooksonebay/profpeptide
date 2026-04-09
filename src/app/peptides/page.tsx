@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Peptide Library — 23 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 24 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 23 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 24 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -15,8 +15,8 @@ const categories = [
       { name: "Semaglutide", slug: "semaglutide" },
       { name: "Tirzepatide", slug: "tirzepatide" },
       { name: "Retatrutide", slug: "retatrutide" },
-      { name: "MOTS-c", slug: "mots-c" },
       { name: "AOD-9604", slug: "aod-9604" },
+      { name: "MOTS-c", slug: "mots-c" },
     ],
   },
   {
@@ -43,8 +43,8 @@ const categories = [
     name: "Growth Hormone",
     slug: "growth-hormone",
     peptides: [
-      { name: "CJC-1295", slug: "cjc-1295" },
       { name: "Ipamorelin", slug: "ipamorelin" },
+      { name: "CJC-1295", slug: "cjc-1295" },
       { name: "Sermorelin", slug: "sermorelin" },
       { name: "Tesamorelin", slug: "tesamorelin" },
     ],
@@ -54,8 +54,8 @@ const categories = [
     name: "Cognitive & Nootropic",
     slug: "cognitive",
     peptides: [
-      { name: "Selank", slug: "selank" },
       { name: "Semax", slug: "semax" },
+      { name: "Selank", slug: "selank" },
     ],
   },
   {
@@ -64,6 +64,7 @@ const categories = [
     slug: "skin-health",
     peptides: [
       { name: "GHK-Cu", slug: "ghk-cu" },
+      { name: "GLOW", slug: "glow" },
       { name: "Melanotan II", slug: "melanotan-ii" },
     ],
   },

@@ -13,12 +13,12 @@ const categories = [
     slug: "metabolic",
     supplements: [
       { name: "Berberine", slug: "berberine" },
-      { name: "Glucomannan", slug: "glucomannan" },
       { name: "Green Tea Extract", slug: "green-tea-extract" },
-      { name: "Garcinia Cambogia", slug: "garcinia-cambogia" },
       { name: "Alpha Lipoic Acid", slug: "alpha-lipoic-acid" },
       { name: "Caffeine", slug: "caffeine" },
       { name: "Chromium", slug: "chromium" },
+      { name: "Garcinia Cambogia", slug: "garcinia-cambogia" },
+      { name: "Glucomannan", slug: "glucomannan" },
     ],
   },
   {
@@ -40,10 +40,10 @@ const categories = [
     supplements: [
       { name: "Creatine", slug: "creatine" },
       { name: "Protein Powder", slug: "protein-powder" },
-      { name: "Electrolyte Powders", slug: "electrolyte-powders" },
+      { name: "Caffeine + L-Theanine", slug: "caffeine-l-theanine" },
       { name: "BCAAs", slug: "bcaas" },
       { name: "Beta-Alanine", slug: "beta-alanine" },
-      { name: "Caffeine + L-Theanine", slug: "caffeine-l-theanine" },
+      { name: "Electrolyte Powders", slug: "electrolyte-powders" },
       { name: "L-Citrulline Malate", slug: "l-citrulline-malate" },
     ],
   },
@@ -55,9 +55,9 @@ const categories = [
       { name: "Lion\u2019s Mane", slug: "lions-mane" },
       { name: "L-Theanine", slug: "l-theanine" },
       { name: "Alpha GPC", slug: "alpha-gpc" },
+      { name: "Rhodiola Rosea", slug: "rhodiola-rosea" },
       { name: "Bacopa Monnieri", slug: "bacopa-monnieri" },
       { name: "Phosphatidylserine", slug: "phosphatidylserine" },
-      { name: "Rhodiola Rosea", slug: "rhodiola-rosea" },
     ],
   },
   {
@@ -66,9 +66,9 @@ const categories = [
     slug: "growth-hormone",
     supplements: [
       { name: "Ashwagandha", slug: "ashwagandha" },
-      { name: "L-Arginine", slug: "l-arginine" },
-      { name: "GABA", slug: "gaba" },
       { name: "ZMA", slug: "zma" },
+      { name: "GABA", slug: "gaba" },
+      { name: "L-Arginine", slug: "l-arginine" },
     ],
   },
   {
@@ -88,11 +88,11 @@ const categories = [
     slug: "gut-health",
     supplements: [
       { name: "Probiotics", slug: "probiotics" },
-      { name: "Prebiotics", slug: "prebiotics" },
       { name: "Vitamin D3", slug: "vitamin-d3" },
       { name: "Fish Oil", slug: "fish-oil" },
       { name: "Magnesium", slug: "magnesium" },
       { name: "Zinc", slug: "zinc" },
+      { name: "Prebiotics", slug: "prebiotics" },
     ],
   },
   {
@@ -102,10 +102,10 @@ const categories = [
     supplements: [
       { name: "NAD+", slug: "nad-plus" },
       { name: "NMN", slug: "nmn" },
+      { name: "CoQ10", slug: "coq10" },
       { name: "Resveratrol", slug: "resveratrol" },
       { name: "Quercetin", slug: "quercetin" },
       { name: "Spermidine", slug: "spermidine" },
-      { name: "CoQ10", slug: "coq10" },
     ],
   },
   {
@@ -113,9 +113,9 @@ const categories = [
     name: "Sexual Health",
     slug: "sexual-health",
     supplements: [
+      { name: "Tongkat Ali", slug: "tongkat-ali" },
       { name: "Maca Root", slug: "maca-root" },
       { name: "L-Citrulline", slug: "l-citrulline" },
-      { name: "Tongkat Ali", slug: "tongkat-ali" },
       { name: "Fenugreek", slug: "fenugreek" },
     ],
   },
