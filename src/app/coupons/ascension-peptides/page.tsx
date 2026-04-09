@@ -130,21 +130,6 @@ export default function AscensionPeptidesCouponPage() {
             <Link href="/peptides/ghk-cu" className="text-[#0D7377] hover:underline">GLOW blend</Link> are also available.
           </p>
         </div>
-
-        <div className="bg-gray-50 border border-gray-100 rounded-xl p-5">
-          <p className="text-sm text-gray-600 mb-3">
-            Can&apos;t find what you need? Search for related supplements on Amazon.
-          </p>
-          <a
-            href="https://www.amazon.com/s?k=research+peptide+supplements&tag=profpeptide-20"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium text-[#0D7377] hover:underline"
-          >
-            Search on Amazon &rarr;
-          </a>
-        </div>
-      </div>
     </div>
   );
 }
