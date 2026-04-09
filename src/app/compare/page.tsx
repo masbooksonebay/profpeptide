@@ -43,6 +43,42 @@ const comparisons = [
     href: "/compare/creatine-vs-beta-alanine",
     tag: "Performance",
   },
+  {
+    title: "CJC-1295 vs Sermorelin vs Ipamorelin",
+    desc: "Growth hormone peptide comparison — GHRH analogs vs GHRP, half-lives, and stacking rationale.",
+    href: "/compare/cjc-1295-vs-sermorelin-vs-ipamorelin",
+    tag: "Growth Hormone",
+  },
+  {
+    title: "BPC-157 vs GHK-Cu",
+    desc: "Healing peptide comparison — systemic tissue repair vs skin regeneration and gene modulation.",
+    href: "/compare/bpc-157-vs-ghk-cu",
+    tag: "Recovery",
+  },
+  {
+    title: "Ashwagandha vs Rhodiola Rosea",
+    desc: "Adaptogen comparison — chronic stress and sleep vs acute mental performance and endurance.",
+    href: "/compare/ashwagandha-vs-rhodiola-rosea",
+    tag: "Adaptogens",
+  },
+  {
+    title: "NMN vs NR vs Niacin",
+    desc: "NAD+ precursor triple comparison — pathways, cost, flushing, and 2026 head-to-head trial data.",
+    href: "/compare/nmn-vs-nr-vs-niacin",
+    tag: "Longevity",
+  },
+  {
+    title: "Epitalon vs NAD+",
+    desc: "Longevity comparison — telomere biology vs mitochondrial metabolism, evidence quality, and cost.",
+    href: "/compare/epitalon-vs-nad-plus",
+    tag: "Longevity",
+  },
+  {
+    title: "Semax vs Selank",
+    desc: "Cognitive peptide comparison — neuroprotection vs anxiolytic, both approved in Russia.",
+    href: "/compare/semax-vs-selank",
+    tag: "Cognitive",
+  },
 ];
 
 export default function ComparePage() {
