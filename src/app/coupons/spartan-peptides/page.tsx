@@ -13,10 +13,10 @@ function CodeBox({ code }: { code: string }) {
   return (
     <button
       onClick={handleCopy}
-      className="block w-full bg-gray-50 border border-gray-200 px-4 py-3 rounded-lg text-lg font-mono font-bold text-[#1e2d3d] tracking-widest text-center cursor-pointer hover:bg-gray-100 transition-colors"
+      className="block w-full bg-gray-50 dark:bg-[#1e293b] border border-gray-200 dark:border-slate-600 px-4 py-3 rounded-lg text-lg font-mono font-bold text-[#1e2d3d] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:bg-gray-100 dark:bg-slate-700 transition-colors"
     >
       {copied ? (
-        <span className="text-[#0D7377] font-sans font-medium tracking-normal">Copied!</span>
+        <span className="text-[#0891b2] font-sans font-medium tracking-normal">Copied!</span>
       ) : (
         code
       )}
@@ -27,16 +27,16 @@ function CodeBox({ code }: { code: string }) {
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="border border-gray-100 rounded-xl overflow-hidden">
+    <div className="border border-gray-100 dark:border-slate-700 rounded-xl overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors"
+        className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:bg-[#1e293b] transition-colors"
       >
-        <span className="text-sm font-medium text-[#1e2d3d] pr-4">{q}</span>
-        <span className="text-[#0D7377] flex-shrink-0 text-lg">{open ? "\u2212" : "+"}</span>
+        <span className="text-sm font-medium text-[#1e2d3d] dark:text-slate-100 pr-4">{q}</span>
+        <span className="text-[#0891b2] flex-shrink-0 text-lg">{open ? "\u2212" : "+"}</span>
       </button>
       {open && (
-        <div className="px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-3">
+        <div className="px-5 pb-4 text-sm text-gray-600 dark:text-slate-300 leading-relaxed border-t border-gray-50 dark:border-slate-800 pt-3">
           {a}
         </div>
       )}
@@ -47,36 +47,36 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 export default function SpartanPeptidesCouponPage() {
   return (
     <div className="section max-w-3xl">
-      <Link href="/coupons" className="text-sm text-[#0D7377] hover:underline mb-6 inline-block">
+      <Link href="/coupons" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
         &larr; Back to Discount Codes
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#1e2d3d]">Spartan Peptides Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Spartan Peptides Discount Code &mdash; Save 10%</h1>
       </div>
       <div className="flex flex-wrap items-center gap-2 mb-8">
         <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
         <span className="text-xs bg-slate-100 text-slate-700 border border-slate-300 px-2 py-0.5 rounded-full font-medium">&ge;98% Purity Verified</span>
-        <span className="text-xs bg-gray-50 text-gray-500 border border-gray-200 px-2 py-0.5 rounded-full">{"\uD83C\uDDFA\uD83C\uDDF8"} US</span>
+        <span className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-500 dark:text-slate-400 border border-gray-200 dark:border-slate-600 px-2 py-0.5 rounded-full">{"\uD83C\uDDFA\uD83C\uDDF8"} US</span>
       </div>
 
       <div className="space-y-8">
         <div>
-          <p className="text-sm text-gray-600 leading-relaxed mb-4">
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Spartan Peptides is a US-based research peptide supplier distinguished by the depth of its internal research infrastructure. The company maintains a dedicated research team of peptide researchers, biochemists, and quality assurance specialists with expertise spanning peptide science, endocrinology, analytical chemistry, and regulatory affairs. Their catalog covers eight research categories: anti-aging and cellular health, repair and recovery, weight loss, muscle development, sexual health, mood and sleep, focus and clarity, and immunity compounds.
           </p>
-          <p className="text-sm text-gray-600 leading-relaxed mb-4">
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Spartan Peptides conducts three categories of quality testing on every batch. HPLC (High-Performance Liquid Chromatography) analysis is used to verify purity, with a minimum threshold of &ge;98% required before any batch is approved for sale &mdash; batches that fail this standard are not released. Mass spectrometry (MS) is applied to confirm molecular identity, verifying that the peptide sequence is precisely as specified and free from structural anomalies or substitutions. This dual-method approach &mdash; HPLC for purity quantification and MS for identity confirmation &mdash; exceeds the single-method testing offered by most research peptide suppliers, as HPLC alone cannot confirm compound identity. Every batch is accompanied by a comprehensive Certificate of Analysis documenting purity, molecular weight confirmation, and testing methodology.
           </p>
-          <p className="text-sm text-gray-600 leading-relaxed">
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Independent third-party testing is conducted in partnership with accredited external laboratories, providing an additional accountability layer beyond in-house analysis. Spartan Peptides applies the same commitment to scientific rigor to their educational content: their research team follows a structured five-step editorial process &mdash; Primary Source Review, Expert Drafting, Internal Peer Review, Fact-Checking, and Compliance Review &mdash; with articles updated when new research emerges and last-reviewed dates displayed for transparency.
           </p>
         </div>
 
-        <div className="border border-gray-100 rounded-xl p-6 bg-gray-50">
-          <p className="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
+        <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
+          <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
           <CodeBox code="PROFPEPTIDE" />
-          <p className="text-center text-sm text-[#0D7377] font-medium mt-2 mb-4">10% off your entire order</p>
+          <p className="text-center text-sm text-[#0891b2] font-medium mt-2 mb-4">10% off your entire order</p>
           <a
             href="https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0"
             target="_blank"
@@ -88,7 +88,7 @@ export default function SpartanPeptidesCouponPage() {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem
               q="Does Spartan Peptides have a discount code?"
@@ -114,20 +114,20 @@ export default function SpartanPeptidesCouponPage() {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-2">What Does Spartan Peptides Carry?</h2>
-          <p className="text-sm text-gray-600 leading-relaxed">
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does Spartan Peptides Carry?</h2>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Spartan Peptides carries research compounds across eight categories. Anti-aging and cellular health compounds include{" "}
-            <Link href="/peptides/ghk-cu" className="text-[#0D7377] hover:underline">GHK-Cu</Link>,{" "}
-            <Link href="/peptides/epitalon" className="text-[#0D7377] hover:underline">Epitalon</Link>,{" "}
-            <Link href="/supplements/nad-plus" className="text-[#0D7377] hover:underline">NAD+</Link>, and{" "}
-            <Link href="/peptides/mots-c" className="text-[#0D7377] hover:underline">MOTS-c</Link>.
+            <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>,{" "}
+            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>,{" "}
+            <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>, and{" "}
+            <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>.
             Recovery and repair peptides include{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0D7377] hover:underline">BPC-157</Link> and{" "}
-            <Link href="/peptides/tb-500" className="text-[#0D7377] hover:underline">TB-500</Link>.
-            Their weight loss catalog features GLP-3 (<Link href="/peptides/retatrutide" className="text-[#0D7377] hover:underline">Retatrutide</Link>).
+            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link> and{" "}
+            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>.
+            Their weight loss catalog features GLP-3 (<Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>).
             Muscle development compounds include{" "}
-            <Link href="/peptides/igf-1-lr3" className="text-[#0D7377] hover:underline">IGF-1 LR3</Link>.
-            Additional categories cover sexual health (<Link href="/peptides/pt-141" className="text-[#0D7377] hover:underline">PT-141</Link>), mood and sleep, focus and clarity, and immunity compounds.
+            <Link href="/peptides/igf-1-lr3" className="text-[#0891b2] hover:underline">IGF-1 LR3</Link>.
+            Additional categories cover sexual health (<Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>), mood and sleep, focus and clarity, and immunity compounds.
           </p>
         </div>
       </div>

@@ -13,10 +13,10 @@ function CodeBox({ code }: { code: string }) {
   return (
     <button
       onClick={handleCopy}
-      className="block w-full bg-gray-50 border border-gray-200 px-4 py-3 rounded-lg text-lg font-mono font-bold text-[#1e2d3d] tracking-widest text-center cursor-pointer hover:bg-gray-100 transition-colors"
+      className="block w-full bg-gray-50 dark:bg-[#1e293b] border border-gray-200 dark:border-slate-600 px-4 py-3 rounded-lg text-lg font-mono font-bold text-[#1e2d3d] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:bg-gray-100 dark:bg-slate-700 transition-colors"
     >
       {copied ? (
-        <span className="text-[#0D7377] font-sans font-medium tracking-normal">Copied!</span>
+        <span className="text-[#0891b2] font-sans font-medium tracking-normal">Copied!</span>
       ) : (
         code
       )}
@@ -27,16 +27,16 @@ function CodeBox({ code }: { code: string }) {
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="border border-gray-100 rounded-xl overflow-hidden">
+    <div className="border border-gray-100 dark:border-slate-700 rounded-xl overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors"
+        className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:bg-[#1e293b] transition-colors"
       >
-        <span className="text-sm font-medium text-[#1e2d3d] pr-4">{q}</span>
-        <span className="text-[#0D7377] flex-shrink-0 text-lg">{open ? "\u2212" : "+"}</span>
+        <span className="text-sm font-medium text-[#1e2d3d] dark:text-slate-100 pr-4">{q}</span>
+        <span className="text-[#0891b2] flex-shrink-0 text-lg">{open ? "\u2212" : "+"}</span>
       </button>
       {open && (
-        <div className="px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-3">
+        <div className="px-5 pb-4 text-sm text-gray-600 dark:text-slate-300 leading-relaxed border-t border-gray-50 dark:border-slate-800 pt-3">
           {a}
         </div>
       )}
@@ -47,36 +47,36 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 export default function PeptidePartnersCouponPage() {
   return (
     <div className="section max-w-3xl">
-      <Link href="/coupons" className="text-sm text-[#0D7377] hover:underline mb-6 inline-block">
+      <Link href="/coupons" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
         &larr; Back to Discount Codes
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#1e2d3d]">Peptide Partners Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Peptide Partners Discount Code &mdash; Save 10%</h1>
       </div>
       <div className="flex flex-wrap items-center gap-2 mb-8">
         <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
-        <span className="text-xs bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded-full font-medium">Editor&apos;s Pick</span>
-        <span className="text-xs bg-gray-50 text-gray-500 border border-gray-200 px-2 py-0.5 rounded-full">{"\uD83C\uDDFA\uD83C\uDDF8"} US</span>
+        <span className="text-xs bg-amber-100 text-amber-800 dark:text-amber-300 border border-amber-300 px-2 py-0.5 rounded-full font-medium">Editor&apos;s Pick</span>
+        <span className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-500 dark:text-slate-400 border border-gray-200 dark:border-slate-600 px-2 py-0.5 rounded-full">{"\uD83C\uDDFA\uD83C\uDDF8"} US</span>
       </div>
 
       <div className="space-y-8">
         <div>
-          <p className="text-sm text-gray-600 leading-relaxed mb-4">
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Peptide Partners is a US-based research peptide supplier operating out of Florida, reachable during business hours at (941) 248-3873. The company operates on a wholesale pricing model, listing cost per milligram transparently on every product page &mdash; a practice uncommon among research peptide suppliers. Bulk pricing structures offer significant savings at higher quantities. Their catalog spans metabolic compounds, growth hormone secretagogues, recovery peptides, cognitive compounds, longevity peptides, and skin health compounds.
           </p>
-          <p className="text-sm text-gray-600 leading-relaxed mb-4">
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Peptide Partners conducts four categories of independent third-party testing on their batches &mdash; purity, endotoxin, heavy metals, and sterility &mdash; using multiple accredited laboratories including TrustPointe Analytics, Kovera, BioRegen, and Chromate. Purity is verified via HPLC (High-Performance Liquid Chromatography), with recent batch results consistently exceeding 99% across compounds including BPC-157 (99.99%), Thymosin Alpha-1 (99.95%), Ipamorelin/CJC-1295 (99.92%), and NAD+ (99.92%). Endotoxin testing follows USP &lt;85&gt; Bacterial Endotoxin Test methodology using the Charles River Endosafe PTS system, with full suitability data &mdash; including coefficient of variation and spike recovery &mdash; published alongside results for complete transparency. Heavy metals certifications and sterility testing on reconstitution products round out the quality documentation package.
           </p>
-          <p className="text-sm text-gray-600 leading-relaxed">
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Every certificate of analysis provided by Peptide Partners is independently verifiable on the issuing laboratory&apos;s own website &mdash; not merely a downloadable PDF. Each product page lists a Manufacturer ID and Batch ID enabling direct cross-reference with the third-party lab&apos;s records. Peptide Partners explicitly addresses certificate fraud in the research peptide industry, noting that doctored images and stolen certificates are common, and provides verification guidance so researchers can authenticate documentation themselves.
           </p>
         </div>
 
-        <div className="border-l-4 border-l-amber-400 border border-amber-200 rounded-xl p-6 bg-[#FFFBEB]">
-          <p className="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
+        <div className="border-l-4 border-l-amber-400 border border-amber-200 dark:border-amber-700/50 rounded-xl p-6 bg-[#FFFBEB]">
+          <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
           <CodeBox code="PROFPEPTIDE" />
-          <p className="text-center text-sm text-[#0D7377] font-medium mt-2 mb-4">10% off your entire order</p>
+          <p className="text-center text-sm text-[#0891b2] font-medium mt-2 mb-4">10% off your entire order</p>
           <a
             href="https://peptide.partners/"
             target="_blank"
@@ -88,7 +88,7 @@ export default function PeptidePartnersCouponPage() {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem
               q="Does Peptide Partners have a discount code?"
@@ -114,31 +114,31 @@ export default function PeptidePartnersCouponPage() {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-2">What Does Peptide Partners Carry?</h2>
-          <p className="text-sm text-gray-600 leading-relaxed">
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does Peptide Partners Carry?</h2>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Peptide Partners carries research peptides across a broad range of categories. Their metabolic and GLP-1 compound catalog includes{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0D7377] hover:underline">Semaglutide</Link>,{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0D7377] hover:underline">Tirzepatide</Link>,{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0D7377] hover:underline">Retatrutide</Link>, and{" "}
-            <Link href="/peptides/mots-c" className="text-[#0D7377] hover:underline">MOTS-c</Link>.
+            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>,{" "}
+            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, and{" "}
+            <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>.
             Recovery peptides include{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0D7377] hover:underline">BPC-157</Link>,{" "}
-            <Link href="/peptides/tb-500" className="text-[#0D7377] hover:underline">TB-500</Link>, and combination blends.
+            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>,{" "}
+            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, and combination blends.
             Growth hormone secretagogues include{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0D7377] hover:underline">Ipamorelin</Link>,{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0D7377] hover:underline">CJC-1295</Link>,{" "}
-            <Link href="/peptides/sermorelin" className="text-[#0D7377] hover:underline">Sermorelin</Link>, and{" "}
-            <Link href="/peptides/tesamorelin" className="text-[#0D7377] hover:underline">Tesamorelin</Link>.
+            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>,{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>,{" "}
+            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>, and{" "}
+            <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>.
             Additional categories include cognitive compounds such as{" "}
-            <Link href="/peptides/semax" className="text-[#0D7377] hover:underline">Semax</Link> and{" "}
-            <Link href="/peptides/selank" className="text-[#0D7377] hover:underline">Selank</Link>,
+            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link> and{" "}
+            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>,
             skin health peptides including{" "}
-            <Link href="/peptides/ghk-cu" className="text-[#0D7377] hover:underline">GHK-Cu</Link>,
+            <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>,
             longevity and mitochondrial compounds including{" "}
-            <Link href="/supplements/nad-plus" className="text-[#0D7377] hover:underline">NAD+</Link>, SS-31, and Humanin,
+            <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>, SS-31, and Humanin,
             and immune peptides including{" "}
-            <Link href="/peptides/thymosin-alpha-1" className="text-[#0D7377] hover:underline">Thymosin Alpha-1</Link> and{" "}
-            <Link href="/peptides/pt-141" className="text-[#0D7377] hover:underline">PT-141</Link>.
+            <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link> and{" "}
+            <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>.
           </p>
         </div>
       </div>

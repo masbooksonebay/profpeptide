@@ -91,35 +91,35 @@ export default function TesamorelinPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0D7377] hover:underline mb-6 inline-block"
+        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#1e2d3d]">Tesamorelin</h1>
+        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Tesamorelin</h1>
         <span className="tag">Growth Hormone</span>
         <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2.5 py-1 rounded-full font-medium">
           FDA Approved — HIV-Associated Lipodystrophy
         </span>
       </div>
-      <p className="text-sm text-gray-500 mb-8">
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-8">
         Also Known As: Egrifta, Egrifta SV, TH9507
       </p>
 
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id}>
-            <h2 className="text-lg font-semibold text-[#1e2d3d] mb-2">
+            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.content && (
-              <p className="text-sm text-gray-600 leading-relaxed">{s.content}</p>
+              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 leading-relaxed">
+                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}
@@ -133,24 +133,24 @@ export default function TesamorelinPage() {
         {["GH Axis", "GHRH", "Visceral Fat", "FDA Approved"].map((tag) => (
           <span
             key={tag}
-            className="text-xs bg-gray-100 text-gray-500 px-2.5 py-1 rounded-full"
+            className="text-xs bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400 px-2.5 py-1 rounded-full"
           >
             {tag}
           </span>
         ))}
       </div>
 
-      <div className="mt-12 p-5 bg-gray-50 border border-gray-100 rounded-xl">
-        <p className="text-sm font-medium text-gray-700 mb-1">Need to calculate a dose?</p>
-        <p className="text-xs text-gray-500 mb-3">
+      <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">Need to calculate a dose?</p>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">
           Use the Prof. Peptide dosage calculator for accurate reconstitution and dosing math.
         </p>
         <Link href="/calculator" className="btn-primary text-sm">
           Open Calculator
         </Link>
       </div>
-      <div className="mt-10 p-5 bg-gray-50 border border-gray-100 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] mb-3">Where to Buy</h2>
+      <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Where to Buy</h2>
         <div className="flex flex-col sm:flex-row gap-3">
           <Link href="/coupons" className="btn-primary text-sm text-center">
             View Verified Discount Codes &rarr;
@@ -164,7 +164,7 @@ export default function TesamorelinPage() {
             Search Related Supplements on Amazon &rarr;
           </a>
         </div>
-        <p className="text-xs text-gray-400 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
+        <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
       </div>
     </div>
   );

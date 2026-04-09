@@ -48,37 +48,37 @@ const studies = [
 export default function AOD9604ResearchPage() {
   return (
     <div className="section max-w-3xl">
-      <Link href="/research" className="text-sm text-[#0D7377] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
+      <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#1e2d3d]">AOD-9604 Research</h1>
+        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">AOD-9604 Research</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
       </div>
-      <p className="text-sm text-gray-500 mb-8 leading-relaxed max-w-xl">
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-8 leading-relaxed max-w-xl">
         Key peer-reviewed studies on AOD-9604 (GH fragment 176-191). This compound completed Phase 2 clinical trials but pharmaceutical development was discontinued in 2007 after failing to meet primary endpoints in humans. Each summary is written in plain English. Click any title to read the full article.
       </p>
 
       <div className="space-y-6">
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 rounded-xl p-5 hover:border-[#0D7377] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
-              <span className="text-xs text-gray-400">{s.journal} &middot; {s.year}</span>
-              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 text-gray-500"}`}>
+              <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>
                 {s.access}
               </span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] hover:text-[#0D7377] transition-colors leading-snug block mb-1">
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">
               {s.title} &rarr;
             </a>
-            <p className="text-xs text-gray-400 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 leading-relaxed">{s.summary}</p>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-10 p-5 bg-gray-50 border border-gray-100 rounded-xl">
-        <p className="text-sm font-medium text-gray-700 mb-1">View the full AOD-9604 profile</p>
-        <p className="text-xs text-gray-500 mb-3">Mechanism of action, clinical trial history, regulatory status, and WADA status.</p>
+      <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">View the full AOD-9604 profile</p>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">Mechanism of action, clinical trial history, regulatory status, and WADA status.</p>
         <Link href="/peptides/aod-9604" className="btn-primary text-sm">AOD-9604 Profile</Link>
       </div>
     </div>

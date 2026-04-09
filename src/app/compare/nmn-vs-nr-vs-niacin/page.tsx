@@ -21,32 +21,32 @@ const rows = [
 export default function NMNvsNRvsNiacinPage() {
   return (
     <div className="section max-w-5xl">
-      <Link href="/compare" className="text-sm text-[#0D7377] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] mb-3">NMN vs NR vs Niacin &mdash; NAD+ Precursor Comparison</h1>
-      <p className="text-sm text-gray-500 leading-relaxed mb-8 max-w-2xl">All three raise NAD+ levels but through different pathways, at vastly different costs, and with different side effect profiles. A 2026 head-to-head human clinical trial in Nature Metabolism found NMN and NR comparable in raising blood NAD+, while nicotinamide (NAM) produced only a transient effect. Here&apos;s how all three compare.</p>
+      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">NMN vs NR vs Niacin &mdash; NAD+ Precursor Comparison</h1>
+      <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">All three raise NAD+ levels but through different pathways, at vastly different costs, and with different side effect profiles. A 2026 head-to-head human clinical trial in Nature Metabolism found NMN and NR comparable in raising blood NAD+, while nicotinamide (NAM) produced only a transient effect. Here&apos;s how all three compare.</p>
       <div className="overflow-x-auto mb-8">
         <table className="w-full text-sm border-collapse">
-          <thead><tr className="bg-gray-50">
-            <th className="text-left px-4 py-3 font-semibold text-gray-400 text-xs uppercase tracking-wider border-b border-gray-100 w-1/5"></th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100">NMN</th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100">NR</th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100">Niacin</th>
+          <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
+            <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/5"></th>
+            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700">NMN</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700">NR</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700">Niacin</th>
           </tr></thead>
           <tbody>{rows.map(([label, a, b, c], i) => (
-            <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
-              <td className="px-4 py-3 font-medium text-[#1e2d3d] border-b border-gray-100">{label}</td>
-              <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{a}</td>
-              <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{b}</td>
-              <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{c}</td>
+            <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
+              <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+              <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
+              <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
+              <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{c}</td>
             </tr>
           ))}</tbody>
         </table>
       </div>
-      <div className="border border-gray-100 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600">NR has the strongest human trial base and is generally considered the best-studied option. <Link href="/supplements/nmn" className="text-[#0D7377] hover:underline">NMN</Link> is comparable in efficacy but costs more and has a more uncertain regulatory future. Niacin raises <Link href="/supplements/nad-plus" className="text-[#0D7377] hover:underline">NAD+</Link> at ~1% of the cost but causes flushing and has different downstream effects. All three effectively raise NAD+ &mdash; the choice comes down to budget, flush tolerance, and secondary goals.</p>
+      <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-sm text-gray-600 dark:text-slate-300">NR has the strongest human trial base and is generally considered the best-studied option. <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link> is comparable in efficacy but costs more and has a more uncertain regulatory future. Niacin raises <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link> at ~1% of the cost but causes flushing and has different downstream effects. All three effectively raise NAD+ &mdash; the choice comes down to budget, flush tolerance, and secondary goals.</p>
       </div>
-      <p className="text-xs text-gray-400">For educational and research purposes only. Not medical advice.</p>
+      <p className="text-xs text-gray-400 dark:text-slate-500">For educational and research purposes only. Not medical advice.</p>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Icon } from "@/components/CategoryIcon";
 
 interface FAQ {
   q: string;
@@ -8,12 +9,14 @@ interface FAQ {
 
 interface Section {
   title: string;
+  icon: string;
   faqs: FAQ[];
 }
 
 const sections: Section[] = [
   {
-    title: "🧬 About Peptides",
+    title: "About Peptides",
+    icon: "dna",
     faqs: [
       {
         q: "What are research peptides?",
@@ -50,7 +53,8 @@ const sections: Section[] = [
     ],
   },
   {
-    title: "💊 About Supplements",
+    title: "About Supplements",
+    icon: "pill",
     faqs: [
       {
         q: "How are supplements different from research peptides?",
@@ -71,7 +75,8 @@ const sections: Section[] = [
     ],
   },
   {
-    title: "🧪 Reconstitution & Storage",
+    title: "Reconstitution & Storage",
+    icon: "flask",
     faqs: [
       {
         q: "How do I reconstitute a lyophilized peptide?",
@@ -79,11 +84,11 @@ const sections: Section[] = [
       },
       {
         q: "What is bacteriostatic water and why is it used?",
-        a: "Bacteriostatic water is sterile water containing 0.9% benzyl alcohol, which inhibits bacterial growth in the solution. It is preferred over plain sterile water for peptide reconstitution because the benzyl alcohol prevents bacterial contamination and extends the usable shelf life of the reconstituted solution — typically 28–30 days when refrigerated. Plain sterile water can be used but the reconstituted solution should be used within a few days as it has no preservative protection against bacterial growth.",
+        a: "Bacteriostatic water is sterile water containing 0.9% benzyl alcohol, which inhibits bacterial growth in the solution. It is preferred over plain sterile water for peptide reconstitution because the benzyl alcohol prevents bacterial contamination and extends the usable shelf life of the reconstituted solution — typically 28\u201330 days when refrigerated. Plain sterile water can be used but the reconstituted solution should be used within a few days as it has no preservative protection against bacterial growth.",
       },
       {
         q: "How should reconstituted peptides be stored?",
-        a: "Reconstituted peptides should be refrigerated at 2–8\u00B0C and kept away from light. Most reconstituted peptides are stable for 4–6 weeks when properly refrigerated in bacteriostatic water. Do not freeze a reconstituted solution — freezing and thawing can degrade the peptide. Lyophilized (unreconstituted) peptides should be stored in the freezer at -20\u00B0C and are stable for significantly longer periods — often 1–2 years or more when kept dry and frozen. Always minimize exposure to heat, light, and repeated temperature changes.",
+        a: "Reconstituted peptides should be refrigerated at 2\u20138\u00B0C and kept away from light. Most reconstituted peptides are stable for 4\u20136 weeks when properly refrigerated in bacteriostatic water. Do not freeze a reconstituted solution — freezing and thawing can degrade the peptide. Lyophilized (unreconstituted) peptides should be stored in the freezer at -20\u00B0C and are stable for significantly longer periods — often 1\u20132 years or more when kept dry and frozen. Always minimize exposure to heat, light, and repeated temperature changes.",
       },
       {
         q: "What can degrade a peptide?",
@@ -92,7 +97,8 @@ const sections: Section[] = [
     ],
   },
   {
-    title: "🔬 About This Site",
+    title: "About This Site",
+    icon: "microscope",
     faqs: [
       {
         q: "Is the information on this site medical advice?",
@@ -124,31 +130,32 @@ export default function FAQPage() {
   return (
     <div className="section max-w-3xl">
       <span className="tag mb-3 inline-block">Common Questions</span>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] mb-3">Frequently Asked Questions</h1>
-      <p className="text-sm text-gray-500 mb-10 leading-relaxed max-w-lg">
+      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Frequently Asked Questions</h1>
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-10 leading-relaxed max-w-lg">
         Answers to the most common questions about peptide research, supplements, reconstitution, and this platform.
       </p>
 
       <div className="space-y-10">
         {sections.map((section) => (
           <div key={section.title}>
-            <h2 className="text-lg font-bold text-[#1e2d3d] mb-4 pb-2 border-b border-gray-100">
+            <h2 className="text-lg font-bold text-[#1e2d3d] dark:text-slate-100 mb-4 pb-2 border-b border-gray-100 dark:border-slate-800 flex items-center gap-2">
+              <span className="text-[#0891b2]"><Icon name={section.icon} /></span>
               {section.title}
             </h2>
             <div className="space-y-2">
               {section.faqs.map((faq) => {
                 const key = `${section.title}-${faq.q}`;
                 return (
-                  <div key={key} className="border border-gray-100 rounded-xl overflow-hidden">
+                  <div key={key} className="border border-gray-100 dark:border-slate-700 rounded-xl overflow-hidden">
                     <button
                       onClick={() => setOpen(open === key ? null : key)}
-                      className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors"
+                      className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors"
                     >
-                      <span className="text-sm font-medium text-[#1e2d3d] pr-4">{faq.q}</span>
-                      <span className="text-[#0D7377] flex-shrink-0 text-lg">{open === key ? "\u2212" : "+"}</span>
+                      <span className="text-sm font-medium text-[#1e2d3d] dark:text-slate-200 pr-4">{faq.q}</span>
+                      <span className="text-[#0891b2] flex-shrink-0 text-lg">{open === key ? "\u2212" : "+"}</span>
                     </button>
                     {open === key && (
-                      <div className="px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-3">
+                      <div className="px-5 pb-4 text-sm text-gray-600 dark:text-slate-300 leading-relaxed border-t border-gray-50 dark:border-slate-700 pt-3">
                         {faq.a}
                       </div>
                     )}
@@ -160,9 +167,9 @@ export default function FAQPage() {
         ))}
       </div>
 
-      <div className="mt-12 p-5 bg-gray-50 border border-gray-100 rounded-xl">
-        <p className="text-sm font-medium text-gray-700 mb-1">Still have questions?</p>
-        <p className="text-xs text-gray-500">Browse the Peptide Library for detailed compound-specific information, check the Supplement Library for evidence-based supplement profiles, or explore the Research Hub for in-depth guides.</p>
+      <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">Still have questions?</p>
+        <p className="text-xs text-gray-500 dark:text-slate-400">Browse the Peptide Library for detailed compound-specific information, check the Supplement Library for evidence-based supplement profiles, or explore the Research Hub for in-depth guides.</p>
       </div>
     </div>
   );

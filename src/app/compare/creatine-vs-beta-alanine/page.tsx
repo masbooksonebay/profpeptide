@@ -22,34 +22,34 @@ const rows = [
 export default function CreatineVsBetaAlaninePage() {
   return (
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0D7377] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] mb-3">Creatine vs Beta-Alanine &mdash; Performance Supplement Comparison</h1>
-      <p className="text-sm text-gray-500 leading-relaxed mb-8 max-w-2xl">Creatine and Beta-Alanine are two of the most evidence-backed performance supplements available. They&apos;re often compared but work through completely different mechanisms &mdash; making them complementary rather than interchangeable. Creatine is best for explosive strength. Beta-alanine is best for sustained high-intensity endurance lasting 1&ndash;4 minutes.</p>
+      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Creatine vs Beta-Alanine &mdash; Performance Supplement Comparison</h1>
+      <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Creatine and Beta-Alanine are two of the most evidence-backed performance supplements available. They&apos;re often compared but work through completely different mechanisms &mdash; making them complementary rather than interchangeable. Creatine is best for explosive strength. Beta-alanine is best for sustained high-intensity endurance lasting 1&ndash;4 minutes.</p>
 
       <div className="overflow-x-auto mb-8">
         <table className="w-full text-sm border-collapse">
           <thead>
-            <tr className="bg-gray-50">
-              <th className="text-left px-4 py-3 font-semibold text-gray-400 text-xs uppercase tracking-wider border-b border-gray-100 w-1/4"></th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100 w-[37.5%]">Creatine</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100 w-[37.5%]">Beta-Alanine</th>
+            <tr className="bg-gray-50 dark:bg-[#1e293b]">
+              <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
+              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Creatine</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Beta-Alanine</th>
             </tr>
           </thead>
           <tbody>
             {rows.map(([label, a, b], i) => (
-              <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
-                <td className="px-4 py-3 font-medium text-[#1e2d3d] border-b border-gray-100">{label}</td>
-                <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{a}</td>
-                <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{b}</td>
+              <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
+                <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+                <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
+                <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      <div className="border border-gray-100 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600">These supplements are not competitors &mdash; they address different metabolic bottlenecks. <Link href="/supplements/creatine" className="text-[#0D7377] hover:underline">Creatine</Link> handles the ATP side (explosive power), <Link href="/supplements/beta-alanine" className="text-[#0D7377] hover:underline">Beta-Alanine</Link> handles the acid buffering side (endurance and repeated efforts). Combined use is well-supported by research and makes sense for most athletes. If you can only pick one: choose creatine for strength and power sports, beta-alanine for endurance and mixed sports.</p>
+      <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-sm text-gray-600 dark:text-slate-300">These supplements are not competitors &mdash; they address different metabolic bottlenecks. <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine</Link> handles the ATP side (explosive power), <Link href="/supplements/beta-alanine" className="text-[#0891b2] hover:underline">Beta-Alanine</Link> handles the acid buffering side (endurance and repeated efforts). Combined use is well-supported by research and makes sense for most athletes. If you can only pick one: choose creatine for strength and power sports, beta-alanine for endurance and mixed sports.</p>
       </div>
 
       <div className="flex gap-3 mb-8">
@@ -57,7 +57,7 @@ export default function CreatineVsBetaAlaninePage() {
         <Link href="/supplements/beta-alanine" className="btn-outline text-sm">Beta-Alanine Profile</Link>
       </div>
 
-      <p className="text-xs text-gray-400 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
+      <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
     </div>
   );
 }

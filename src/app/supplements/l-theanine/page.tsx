@@ -9,25 +9,25 @@ export const metadata = {
 export default function LTheaninePage() {
   return (
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0D7377] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#1e2d3d]">L-Theanine</h1>
+        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">L-Theanine</h1>
         <span className="tag">Cognitive &amp; Nootropic</span>
       </div>
-      <p className="text-sm text-gray-500 mb-2">Also Known As: Theanine, L-γ-glutamylethylamide, suntheanine</p>
-      <p className="text-sm text-[#0D7377] font-medium mb-8">The calm focus amino acid found in green tea</p>
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">Also Known As: Theanine, L-γ-glutamylethylamide, suntheanine</p>
+      <p className="text-sm text-[#0891b2] font-medium mb-8">The calm focus amino acid found in green tea</p>
 
       <div className="space-y-8">
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-2">📋 Overview</h2>
-          <p className="text-sm text-gray-600 leading-relaxed">
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             L-theanine is an amino acid found almost exclusively in tea leaves (Camellia sinensis) — particularly green tea — and is the compound largely responsible for the distinctly calm yet focused mental state that tea drinkers often describe as different from coffee despite similar caffeine content. L-theanine crosses the blood-brain barrier and increases alpha brain wave activity — the neural pattern associated with relaxed alertness, creativity, and flow states — without causing sedation. It modulates key neurotransmitter systems including GABA, glutamate, dopamine, and serotonin to produce anxiolytic effects without impairing cognitive performance. While effective as a standalone nootropic, L-theanine&apos;s most well-researched application is in combination with caffeine — where it selectively blunts caffeine&apos;s anxiogenic effects while preserving and enhancing its cognitive benefits. It is one of the safest, most consistent, and most evidence-backed supplements in the nootropic category.
           </p>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🧠 Key Benefits</h2>
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Key Benefits</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {[
               "Promotes relaxed alertness without sedation",
@@ -38,13 +38,13 @@ export default function LTheaninePage() {
               "Reduces blood pressure response to stress",
               "Neuroprotective effects in preclinical research",
             ].map((b) => (
-              <p key={b} className="text-sm text-gray-600 bg-gray-50 rounded-lg px-3 py-2">{b}</p>
+              <p key={b} className="text-sm text-gray-600 dark:text-slate-300 bg-gray-50 dark:bg-[#1e293b] rounded-lg px-3 py-2">{b}</p>
             ))}
           </div>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-2">⚙️ How It Works</h2>
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">How It Works</h2>
           <ol className="list-decimal list-inside space-y-1">
             {[
               "Alpha Wave Induction — L-theanine's most distinctive mechanism is selective increase of alpha brain wave power (8–14 Hz) — the neural oscillation associated with calm focus, creative thinking, and meditative states. This effect distinguishes it from most anxiolytics that produce sedation.",
@@ -53,20 +53,20 @@ export default function LTheaninePage() {
               "Dopamine and Serotonin Effects — L-theanine modulates dopamine and serotonin systems, contributing to improved mood and the cognitive-enhancing effects observed particularly in combination with caffeine.",
               "Caffeine Synergy — L-theanine selectively attenuates caffeine's cardiovascular stimulating and anxiety-producing effects while preserving its alertness and cognitive benefits — producing a synergistic nootropic combination that is superior to either compound alone.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 leading-relaxed">{item}</li>
+              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-2">🔬 What the Research Shows</h2>
-          <p className="text-sm text-gray-600 leading-relaxed">
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Multiple RCTs confirm L-theanine&apos;s anxiolytic and cognitive effects. A double-blind crossover study found L-theanine significantly increased alpha wave activity within 40 minutes of ingestion. Combined with caffeine in a 2:1 ratio (200mg theanine : 100mg caffeine), multiple RCTs show superior improvements in attention, reaction time, and working memory compared to caffeine alone. Research shows L-theanine reduces physiological and psychological stress responses including salivary cortisol and blood pressure during challenging tasks. Higher doses (200–400mg) show sleep quality improvements — reduced time to sleep onset and improved sleep satisfaction without next-day grogginess.
           </p>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-2">💊 How to Use</h2>
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">How to Use</h2>
           <ul className="space-y-1">
             {[
               "Standalone anxiolytic dose: 100–200mg as needed for stress or anxiety",
@@ -75,31 +75,31 @@ export default function LTheaninePage() {
               "Timing: Effects begin within 30–60 minutes and last 4–6 hours",
               "Daily use: Safe for chronic use — no tolerance or dependence",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 leading-relaxed">{item}</li>
+              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-2">⚠️ Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 leading-relaxed">
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Exceptionally safe — one of the safest supplements studied. No serious adverse effects in any clinical research. May cause mild headache at very high doses in some individuals. May enhance the effects of blood pressure medications. No interactions with common medications documented at typical doses.
           </p>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-3">🔗 Related Supplements</h2>
-          <p className="text-sm text-gray-600"><Link href="/supplements/caffeine-l-theanine" className="text-[#0D7377] hover:underline">Caffeine + L-Theanine</Link> | <Link href="/supplements/lions-mane" className="text-[#0D7377] hover:underline">Lion&apos;s Mane</Link> | <Link href="/supplements/ashwagandha" className="text-[#0D7377] hover:underline">Ashwagandha</Link> | <Link href="/supplements/rhodiola-rosea" className="text-[#0D7377] hover:underline">Rhodiola Rosea</Link></p>
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Related Supplements</h2>
+          <p className="text-sm text-gray-600 dark:text-slate-300"><Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">Caffeine + L-Theanine</Link> | <Link href="/supplements/lions-mane" className="text-[#0891b2] hover:underline">Lion&apos;s Mane</Link> | <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link> | <Link href="/supplements/rhodiola-rosea" className="text-[#0891b2] hover:underline">Rhodiola Rosea</Link></p>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] mb-2">📚 References</h2>
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">References</h2>
           <ol className="list-decimal list-inside space-y-1">
             {[
               "Nobre AC, et al. L-theanine, a natural constituent in tea, and its effect on mental state. Asia Pac J Clin Nutr. 2008.",
               "Owen GN, et al. The combined effects of L-theanine and caffeine on cognitive performance and mood. Nutr Neurosci. 2008.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 leading-relaxed">{ref}</li>
+              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>
@@ -107,11 +107,11 @@ export default function LTheaninePage() {
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Alpha Waves", "Calm Focus", "Caffeine Synergy", "Anxiolytic"].map((tag) => (
-          <span key={tag} className="text-xs bg-gray-100 text-gray-500 px-2.5 py-1 rounded-full">{tag}</span>
+          <span key={tag} className="text-xs bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400 px-2.5 py-1 rounded-full">{tag}</span>
         ))}
       </div>
-      <div className="mt-10 p-5 bg-gray-50 border border-gray-100 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] mb-3">Where to Buy</h2>
+      <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Where to Buy</h2>
         <a
           href="https://www.amazon.com/s?k=l-theanine+supplement&tag=profpeptide-20"
           target="_blank"
@@ -120,7 +120,7 @@ export default function LTheaninePage() {
         >
           Search on Amazon &rarr;
         </a>
-        <p className="text-xs text-gray-400 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
+        <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
       </div>
     </div>
   );

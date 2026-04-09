@@ -26,7 +26,7 @@ interface VendorSection {
 
 const sections: VendorSection[] = [
   {
-    label: "\uD83C\uDFC6 Featured Vendors",
+    label: "Featured Vendors",
     vendors: [
       {
         name: "Peptide Partners",
@@ -49,7 +49,7 @@ const sections: VendorSection[] = [
     ],
   },
   {
-    label: "\uD83D\uDCB0 Best Deals",
+    label: "Best Deals",
     vendors: [
       {
         name: "Ascension Peptides",
@@ -82,7 +82,7 @@ const sections: VendorSection[] = [
     ],
   },
   {
-    label: "\uD83C\uDDFA\uD83C\uDDF8 US Vendors",
+    label: "US Vendors",
     vendors: [
       {
         name: "Apollo Peptide Sciences",
@@ -143,7 +143,7 @@ const sections: VendorSection[] = [
     ],
   },
   {
-    label: "\uD83C\uDF0D International",
+    label: "International",
     vendors: [
       {
         name: "Particle Peptides",
@@ -178,10 +178,10 @@ function CodeBox({ code }: { code: string }) {
   return (
     <button
       onClick={handleCopy}
-      className="block w-full bg-gray-50 border border-gray-200 px-4 py-2.5 rounded-lg text-sm font-mono font-bold text-[#1e2d3d] tracking-widest text-center cursor-pointer hover:bg-gray-100 transition-colors"
+      className="block w-full bg-gray-50 dark:bg-[#1e293b] border border-gray-200 dark:border-slate-600 px-4 py-2.5 rounded-lg text-sm font-mono font-bold text-[#1e2d3d] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:bg-gray-100 dark:bg-slate-700 transition-colors"
     >
       {copied ? (
-        <span className="text-[#0D7377] font-sans font-medium tracking-normal">Copied!</span>
+        <span className="text-[#0891b2] font-sans font-medium tracking-normal">Copied!</span>
       ) : (
         code
       )}
@@ -194,13 +194,13 @@ function VendorCard({ v }: { v: Vendor }) {
     <div
       className={`rounded-xl overflow-hidden transition-all duration-200 ${
         v.detailPage
-            ? "border border-gray-200 shadow-sm hover:shadow-md hover:border-[#0D7377]/40 bg-white"
-            : "border border-gray-100 shadow-sm hover:shadow-md bg-white"
+            ? "border border-gray-200 dark:border-slate-600 shadow-sm hover:shadow-md hover:border-[#0891b2]/40 bg-white dark:bg-[#0f172a]"
+            : "border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-md bg-white dark:bg-[#0f172a]"
       }`}
     >
       <div
-        className={`border-b border-gray-100 flex items-center justify-between ${
-          "px-5 py-3.5 bg-gray-50"
+        className={`border-b border-gray-100 dark:border-slate-700 flex items-center justify-between ${
+          "px-5 py-3.5 bg-gray-50 dark:bg-[#1e293b]"
         }`}
       >
         <h2
@@ -209,14 +209,14 @@ function VendorCard({ v }: { v: Vendor }) {
           }`}
         >
           {v.detailPage ? (
-            <Link href={v.detailPage} className="inline-block text-[#1e2d3d] hover:text-[#0D7377] transition-all duration-150 hover:scale-105 origin-left">
+            <Link href={v.detailPage} className="inline-block text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-all duration-150 hover:scale-105 origin-left">
               {v.name}
             </Link>
           ) : (
-            <span className="text-[#1e2d3d]">{v.name}</span>
+            <span className="text-[#1e2d3d] dark:text-slate-100">{v.name}</span>
           )}
         </h2>
-        <span className="text-xs font-bold text-[#0D7377] bg-[#d0eeef] px-2.5 py-1 rounded-full whitespace-nowrap">
+        <span className="text-xs font-bold text-[#0891b2] bg-[#0891b2]/15 px-2.5 py-1 rounded-full whitespace-nowrap">
           {v.discount}
         </span>
       </div>
@@ -227,7 +227,7 @@ function VendorCard({ v }: { v: Vendor }) {
             Verified
           </span>
           {v.editorsPick && (
-            <span className="text-xs bg-amber-100 text-amber-800 border border-amber-300 px-2 py-0.5 rounded-full font-medium">
+            <span className="text-xs bg-amber-100 text-amber-800 dark:text-amber-300 border border-amber-300 px-2 py-0.5 rounded-full font-medium">
               Editor&apos;s Pick
             </span>
           )}
@@ -242,23 +242,23 @@ function VendorCard({ v }: { v: Vendor }) {
             </span>
           )}
           {v.specialBadge && (
-            <span className={`text-xs border px-2 py-0.5 rounded-full font-medium ${v.specialBadgeColor || "bg-gray-100 text-gray-600 border-gray-300"}`}>
+            <span className={`text-xs border px-2 py-0.5 rounded-full font-medium ${v.specialBadgeColor || "bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-slate-300 border-gray-300"}`}>
               {v.specialBadge}
             </span>
           )}
           {v.region && (
-            <span className="text-xs bg-gray-50 text-gray-500 border border-gray-200 px-2 py-0.5 rounded-full">
+            <span className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-500 dark:text-slate-400 border border-gray-200 dark:border-slate-600 px-2 py-0.5 rounded-full">
               {v.region}
             </span>
           )}
         </div>
 
         {v.description && (
-          <p className="text-xs text-gray-500 leading-relaxed mb-3">{v.description}</p>
+          <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed mb-3">{v.description}</p>
         )}
 
         <div className="mb-4">
-          <p className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-1">Click to copy code</p>
+          <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-medium mb-1">Click to copy code</p>
           <CodeBox code={v.code} />
         </div>
 
@@ -274,7 +274,7 @@ function VendorCard({ v }: { v: Vendor }) {
         {v.detailPage && (
           <Link
             href={v.detailPage}
-            className="block w-full text-center text-xs font-medium text-[#0D7377] hover:text-[#0a5c60] mt-3 py-2 rounded-lg hover:bg-[#f0fafa] transition-colors"
+            className="block w-full text-center text-xs font-medium text-[#0891b2] hover:text-[#0a5c60] mt-3 py-2 rounded-lg hover:bg-[#0891b2]/10 transition-colors"
           >
             Learn More &rarr;
           </Link>
@@ -288,18 +288,18 @@ export default function CouponsPage() {
   return (
     <div className="section max-w-3xl">
       <span className="tag mb-3 inline-block">Updated Regularly</span>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] mb-3">Discount Codes</h1>
-      <p className="text-sm text-gray-500 mb-3 leading-relaxed max-w-lg">
+      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Discount Codes</h1>
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-3 leading-relaxed max-w-lg">
         Verified discount codes for peptide vendors with third-party lab testing.
       </p>
-      <p className="text-xs text-gray-400 mb-8 leading-relaxed max-w-lg">
+      <p className="text-xs text-gray-400 dark:text-slate-500 mb-8 leading-relaxed max-w-lg">
         All discount codes, promo codes, and coupon codes are verified by Prof. Peptide and updated regularly.
       </p>
 
       <div className="space-y-8 mb-10">
         {sections.map((section) => (
           <div key={section.label}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 pb-1.5 border-b border-gray-100">
+            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-3 pb-1.5 border-b border-gray-100 dark:border-slate-700">
               {section.label}
             </p>
             <div className="space-y-4">
@@ -311,7 +311,7 @@ export default function CouponsPage() {
         ))}
       </div>
 
-      <p className="text-xs text-gray-400 leading-relaxed">
+      <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">
         Prof. Peptide may earn a commission when you use our discount codes. This never influences our editorial content or research.
       </p>
     </div>

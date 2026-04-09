@@ -22,34 +22,34 @@ const rows = [
 export default function SemaglutideVsTirzepatidePage() {
   return (
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0D7377] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] mb-3">Semaglutide vs Tirzepatide &mdash; GLP-1 Peptide Comparison</h1>
-      <p className="text-sm text-gray-500 leading-relaxed mb-8 max-w-2xl">Semaglutide and Tirzepatide are the two most clinically significant metabolic peptides of the past decade. Both are FDA-approved and backed by large-scale Phase 3 trials. Tirzepatide is newer and shows greater average weight loss, but semaglutide has a longer track record and broader approval history.</p>
+      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Semaglutide vs Tirzepatide &mdash; GLP-1 Peptide Comparison</h1>
+      <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Semaglutide and Tirzepatide are the two most clinically significant metabolic peptides of the past decade. Both are FDA-approved and backed by large-scale Phase 3 trials. Tirzepatide is newer and shows greater average weight loss, but semaglutide has a longer track record and broader approval history.</p>
 
       <div className="overflow-x-auto mb-8">
         <table className="w-full text-sm border-collapse">
           <thead>
-            <tr className="bg-gray-50">
-              <th className="text-left px-4 py-3 font-semibold text-gray-400 text-xs uppercase tracking-wider border-b border-gray-100 w-1/4"></th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100 w-[37.5%]">Semaglutide</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100 w-[37.5%]">Tirzepatide</th>
+            <tr className="bg-gray-50 dark:bg-[#1e293b]">
+              <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
+              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Semaglutide</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Tirzepatide</th>
             </tr>
           </thead>
           <tbody>
             {rows.map(([label, a, b], i) => (
-              <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
-                <td className="px-4 py-3 font-medium text-[#1e2d3d] border-b border-gray-100">{label}</td>
-                <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{a}</td>
-                <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{b}</td>
+              <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
+                <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+                <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
+                <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      <div className="border border-gray-100 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600">Tirzepatide produces greater average weight loss and better blood sugar control in head-to-head data. <Link href="/peptides/semaglutide" className="text-[#0D7377] hover:underline">Semaglutide</Link> has a longer track record, broader approval history, and more long-term safety data. Both are prescription medications &mdash; neither is available as a research peptide in the same category as BPC-157 or TB-500.</p>
+      <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-sm text-gray-600 dark:text-slate-300">Tirzepatide produces greater average weight loss and better blood sugar control in head-to-head data. <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link> has a longer track record, broader approval history, and more long-term safety data. Both are prescription medications &mdash; neither is available as a research peptide in the same category as BPC-157 or TB-500.</p>
       </div>
 
       <div className="flex gap-3 mb-8">
@@ -57,7 +57,7 @@ export default function SemaglutideVsTirzepatidePage() {
         <Link href="/peptides/tirzepatide" className="btn-outline text-sm">Tirzepatide Profile</Link>
       </div>
 
-      <p className="text-xs text-gray-400 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
+      <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
     </div>
   );
 }

@@ -48,17 +48,17 @@ const studies = [
 export default function WolverineStackResearchPage() {
   return (
     <div className="section max-w-3xl">
-      <Link href="/research" className="text-sm text-[#0D7377] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
+      <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#1e2d3d]">Wolverine Stack Research</h1>
+        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Wolverine Stack Research</h1>
         <span className="tag">Recovery &amp; Tissue Repair</span>
       </div>
-      <p className="text-sm text-gray-500 mb-4 leading-relaxed max-w-xl">
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-4 leading-relaxed max-w-xl">
         The Wolverine Stack combines BPC-157 and TB-500 for synergistic tissue repair. There are no studies specifically examining the combination \u2014 research on the stack is based on the individual evidence for each peptide and their complementary mechanisms. Each summary is written in plain English. Click any title to read the full article.
       </p>
 
-      <div className="bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-8 text-xs text-amber-800">
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 rounded-lg px-4 py-3 mb-8 text-xs text-amber-800 dark:text-amber-300">
         There are currently no published human clinical trials examining BPC-157 and TB-500 in combination. The research basis for the Wolverine Stack comes from the individual evidence for each compound. For BPC-157 specific research, see the{" "}
         <Link href="/research/bpc-157" className="underline font-medium">BPC-157 Research page</Link>. For TB-500 specific research, see the{" "}
         <Link href="/research/tb-500" className="underline font-medium">TB-500 Research page</Link>.
@@ -66,25 +66,25 @@ export default function WolverineStackResearchPage() {
 
       <div className="space-y-6">
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 rounded-xl p-5 hover:border-[#0D7377] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
-              <span className="text-xs text-gray-400">{s.journal} &middot; {s.year}</span>
-              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 text-gray-500"}`}>
+              <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>
                 {s.access}
               </span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] hover:text-[#0D7377] transition-colors leading-snug block mb-1">
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">
               {s.title} &rarr;
             </a>
-            <p className="text-xs text-gray-400 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 leading-relaxed">{s.summary}</p>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-10 p-5 bg-gray-50 border border-gray-100 rounded-xl">
-        <p className="text-sm font-medium text-gray-700 mb-1">View the full Wolverine Stack profile</p>
-        <p className="text-xs text-gray-500 mb-3">How BPC-157 and TB-500 work together, synergy mechanisms, and research limitations.</p>
+      <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">View the full Wolverine Stack profile</p>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">How BPC-157 and TB-500 work together, synergy mechanisms, and research limitations.</p>
         <Link href="/peptides/wolverine-stack" className="btn-primary text-sm">Wolverine Stack Profile</Link>
       </div>
     </div>

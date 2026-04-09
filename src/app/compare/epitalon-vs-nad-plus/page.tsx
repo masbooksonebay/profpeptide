@@ -22,35 +22,35 @@ const rows = [
 export default function EpitalonVsNADPage() {
   return (
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0D7377] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] mb-3">Epitalon vs NAD+ &mdash; Longevity Compound Comparison</h1>
-      <p className="text-sm text-gray-500 leading-relaxed mb-8 max-w-2xl">Epitalon and NAD+ are two of the most discussed compounds in longevity research &mdash; but they work through completely different mechanisms and have very different evidence bases. Epitalon is a research peptide targeting telomere biology. NAD+ (via NMN or NR) targets mitochondrial function and cellular energy metabolism.</p>
+      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Epitalon vs NAD+ &mdash; Longevity Compound Comparison</h1>
+      <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Epitalon and NAD+ are two of the most discussed compounds in longevity research &mdash; but they work through completely different mechanisms and have very different evidence bases. Epitalon is a research peptide targeting telomere biology. NAD+ (via NMN or NR) targets mitochondrial function and cellular energy metabolism.</p>
       <div className="overflow-x-auto mb-8">
         <table className="w-full text-sm border-collapse">
-          <thead><tr className="bg-gray-50">
-            <th className="text-left px-4 py-3 font-semibold text-gray-400 text-xs uppercase tracking-wider border-b border-gray-100 w-1/4"></th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100 w-[37.5%]">Epitalon</th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100 w-[37.5%]">NAD+ (via NMN/NR)</th>
+          <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
+            <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
+            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Epitalon</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">NAD+ (via NMN/NR)</th>
           </tr></thead>
           <tbody>{rows.map(([label, a, b], i) => (
-            <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
-              <td className="px-4 py-3 font-medium text-[#1e2d3d] border-b border-gray-100">{label}</td>
-              <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{a}</td>
-              <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{b}</td>
+            <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
+              <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+              <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
+              <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
             </tr>
           ))}</tbody>
         </table>
       </div>
-      <div className="border border-gray-100 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600">NAD+ precursors have far more robust and independently replicated human evidence. <Link href="/peptides/epitalon" className="text-[#0D7377] hover:underline">Epitalon</Link> has fascinating telomere biology but the evidence base is narrow and concentrated in a single research group. They target entirely different aging mechanisms and could theoretically be studied together as part of a comprehensive longevity protocol.</p>
+      <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-sm text-gray-600 dark:text-slate-300">NAD+ precursors have far more robust and independently replicated human evidence. <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link> has fascinating telomere biology but the evidence base is narrow and concentrated in a single research group. They target entirely different aging mechanisms and could theoretically be studied together as part of a comprehensive longevity protocol.</p>
       </div>
       <div className="flex gap-3 mb-8">
         <Link href="/peptides/epitalon" className="btn-primary text-sm">Epitalon Profile</Link>
         <Link href="/supplements/nad-plus" className="btn-outline text-sm">NAD+ Profile</Link>
         <Link href="/supplements/nmn" className="btn-outline text-sm">NMN Profile</Link>
       </div>
-      <p className="text-xs text-gray-400">For educational and research purposes only. Not medical advice.</p>
+      <p className="text-xs text-gray-400 dark:text-slate-500">For educational and research purposes only. Not medical advice.</p>
     </div>
   );
 }

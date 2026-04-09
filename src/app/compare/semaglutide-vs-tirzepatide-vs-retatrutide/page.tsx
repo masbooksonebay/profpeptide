@@ -24,39 +24,39 @@ const rows = [
 export default function TripleGLP1ComparisonPage() {
   return (
     <div className="section max-w-5xl">
-      <Link href="/compare" className="text-sm text-[#0D7377] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] mb-3">Semaglutide vs Tirzepatide vs Retatrutide &mdash; GLP-1 Comparison</h1>
-      <p className="text-sm text-gray-500 leading-relaxed mb-8 max-w-2xl">Three generations of GLP-1 metabolic peptides &mdash; each adding another receptor to the mix. Semaglutide targets one receptor, Tirzepatide two, and Retatrutide three. Each generation has shown greater average weight loss than the last. Here&apos;s how they compare based on clinical trial data.</p>
+      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Semaglutide vs Tirzepatide vs Retatrutide &mdash; GLP-1 Comparison</h1>
+      <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Three generations of GLP-1 metabolic peptides &mdash; each adding another receptor to the mix. Semaglutide targets one receptor, Tirzepatide two, and Retatrutide three. Each generation has shown greater average weight loss than the last. Here&apos;s how they compare based on clinical trial data.</p>
 
       <div className="overflow-x-auto mb-8">
         <table className="w-full text-sm border-collapse">
           <thead>
-            <tr className="bg-gray-50">
-              <th className="text-left px-4 py-3 font-semibold text-gray-400 text-xs uppercase tracking-wider border-b border-gray-100 w-1/5"></th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100 w-[26.6%]">Semaglutide</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100 w-[26.6%]">Tirzepatide</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0D7377] text-xs uppercase tracking-wider border-b border-gray-100 w-[26.6%]">Retatrutide</th>
+            <tr className="bg-gray-50 dark:bg-[#1e293b]">
+              <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/5"></th>
+              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[26.6%]">Semaglutide</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[26.6%]">Tirzepatide</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[26.6%]">Retatrutide</th>
             </tr>
           </thead>
           <tbody>
             {rows.map(([label, a, b, c], i) => (
-              <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}>
-                <td className="px-4 py-3 font-medium text-[#1e2d3d] border-b border-gray-100">{label}</td>
-                <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{a}</td>
-                <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{b}</td>
-                <td className="px-4 py-3 text-gray-600 border-b border-gray-100">{c}</td>
+              <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
+                <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+                <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
+                <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
+                <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{c}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      <div className="border border-gray-100 rounded-xl p-5 mb-4">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600">Each generation shows greater efficacy than the last &mdash; but more receptors means more unknowns. <Link href="/peptides/semaglutide" className="text-[#0D7377] hover:underline">Semaglutide</Link> has the longest safety record and broadest availability. <Link href="/peptides/tirzepatide" className="text-[#0D7377] hover:underline">Tirzepatide</Link> has now beaten semaglutide head-to-head in the SURMOUNT-5 trial. <Link href="/peptides/retatrutide" className="text-[#0D7377] hover:underline">Retatrutide</Link> shows the most dramatic weight loss data of all three, but is not yet FDA approved and long-term safety data is still accumulating.</p>
+      <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-4">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-sm text-gray-600 dark:text-slate-300">Each generation shows greater efficacy than the last &mdash; but more receptors means more unknowns. <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link> has the longest safety record and broadest availability. <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link> has now beaten semaglutide head-to-head in the SURMOUNT-5 trial. <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link> shows the most dramatic weight loss data of all three, but is not yet FDA approved and long-term safety data is still accumulating.</p>
       </div>
 
-      <p className="text-xs text-gray-400 mb-8">Note: All three are prescription medications. Retatrutide is currently only available through clinical trials.</p>
+      <p className="text-xs text-gray-400 dark:text-slate-500 mb-8">Note: All three are prescription medications. Retatrutide is currently only available through clinical trials.</p>
 
       <div className="flex flex-wrap gap-3 mb-8">
         <Link href="/peptides/semaglutide" className="btn-primary text-sm">Semaglutide Profile</Link>
@@ -64,7 +64,7 @@ export default function TripleGLP1ComparisonPage() {
         <Link href="/peptides/retatrutide" className="btn-outline text-sm">Retatrutide Profile</Link>
       </div>
 
-      <p className="text-xs text-gray-400 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
+      <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
     </div>
   );
 }

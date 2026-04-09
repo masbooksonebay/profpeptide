@@ -57,29 +57,29 @@ const studies = [
 export default function NADPlusResearchPage() {
   return (
     <div className="section max-w-3xl">
-      <Link href="/research" className="text-sm text-[#0D7377] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
+      <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#1e2d3d]">NAD+ Research</h1>
+        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">NAD+ Research</h1>
         <span className="tag">Longevity</span>
       </div>
-      <p className="text-sm text-gray-500 mb-4 leading-relaxed max-w-xl">Key peer-reviewed studies on NAD+ (Nicotinamide Adenine Dinucleotide) and its precursors NMN (Nicotinamide Mononucleotide) and NR (Nicotinamide Riboside). NAD+ is a naturally occurring coenzyme essential to cellular energy production. NAD+ levels decline significantly with age. NMN and NR are dietary supplements \u2014 not peptides \u2014 used to raise NAD+ levels. Each summary is written in plain English. Click any title to read the full article.</p>
-      <div className="bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 mb-8 text-xs text-amber-800">NAD+ is not a peptide \u2014 it is a coenzyme. NMN and NR are its precursors and are sold as dietary supplements, not research peptides. They are included here because of their significant role in longevity research and their frequent use alongside peptide protocols.</div>
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-4 leading-relaxed max-w-xl">Key peer-reviewed studies on NAD+ (Nicotinamide Adenine Dinucleotide) and its precursors NMN (Nicotinamide Mononucleotide) and NR (Nicotinamide Riboside). NAD+ is a naturally occurring coenzyme essential to cellular energy production. NAD+ levels decline significantly with age. NMN and NR are dietary supplements \u2014 not peptides \u2014 used to raise NAD+ levels. Each summary is written in plain English. Click any title to read the full article.</p>
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 rounded-lg px-4 py-3 mb-8 text-xs text-amber-800 dark:text-amber-300">NAD+ is not a peptide \u2014 it is a coenzyme. NMN and NR are its precursors and are sold as dietary supplements, not research peptides. They are included here because of their significant role in longevity research and their frequent use alongside peptide protocols.</div>
       <div className="space-y-6">
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 rounded-xl p-5 hover:border-[#0D7377] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
-              <span className="text-xs text-gray-400">{s.journal} &middot; {s.year}</span>
-              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 text-gray-500"}`}>{s.access}</span>
+              <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] hover:text-[#0D7377] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
-            <p className="text-xs text-gray-400 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 leading-relaxed">{s.summary}</p>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
-      <div className="mt-10 p-5 bg-gray-50 border border-gray-100 rounded-xl">
-        <p className="text-sm font-medium text-gray-700 mb-1">View the full NAD+ profile</p>
-        <p className="text-xs text-gray-500 mb-3">Sirtuin activation, PARP support, mitochondrial function, and NMN vs NR comparison.</p>
+      <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">View the full NAD+ profile</p>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">Sirtuin activation, PARP support, mitochondrial function, and NMN vs NR comparison.</p>
         <Link href="/peptides/nad-plus" className="btn-primary text-sm">NAD+ Profile</Link>
       </div>
     </div>

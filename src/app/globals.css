@@ -7,28 +7,38 @@
   body {
     @apply bg-white text-gray-800 font-sans antialiased;
   }
+  .dark body,
+  :is(.dark) body {
+    @apply bg-[#0f172a] text-slate-200;
+  }
   h1, h2, h3, h4 {
     font-family: Inter, system-ui, sans-serif;
     font-weight: 600;
     letter-spacing: -0.02em;
     color: #1e2d3d;
   }
+  :is(.dark) h1,
+  :is(.dark) h2,
+  :is(.dark) h3,
+  :is(.dark) h4 {
+    color: #f1f5f9;
+  }
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-[#0D7377] text-white font-medium rounded-md hover:bg-[#0a5c60] transition-colors duration-200 text-sm;
+    @apply inline-flex items-center justify-center px-6 py-3 bg-[#0891b2] text-white font-medium rounded-md hover:bg-[#0e7490] transition-colors duration-200 text-sm;
   }
   .btn-outline {
-    @apply inline-flex items-center justify-center px-6 py-3 border border-[#0D7377] text-[#0D7377] font-medium rounded-md hover:bg-[#f0fafa] transition-colors duration-200 text-sm;
+    @apply inline-flex items-center justify-center px-6 py-3 border border-[#0891b2] text-[#0891b2] font-medium rounded-md hover:bg-[#f0fafa] dark:hover:bg-[#0891b2]/10 transition-colors duration-200 text-sm;
   }
   .section {
     @apply max-w-5xl mx-auto px-4 sm:px-6 py-16;
   }
   .card {
-    @apply bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200;
+    @apply bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200;
   }
   .tag {
-    @apply inline-block text-xs font-medium px-2.5 py-1 rounded-full bg-[#d0eeef] text-[#0D7377];
+    @apply inline-block text-xs font-medium px-2.5 py-1 rounded-full bg-[#0891b2]/15 text-[#0891b2];
   }
 }
