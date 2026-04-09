@@ -16,6 +16,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-600">
               <li><Link href="/peptides" className="hover:text-[#0D7377]">Peptide Library</Link></li>
               <li><Link href="/research" className="hover:text-[#0D7377]">Research</Link></li>
+              <li><Link href="/compare" className="hover:text-[#0D7377]">Comparisons</Link></li>
               <li><Link href="/faq" className="hover:text-[#0D7377]">FAQ</Link></li>
             </ul>
           </div>
