@@ -16,7 +16,7 @@ interface Section {
 const sections: Section[] = [
   {
     title: "About Peptides",
-    icon: "dna",
+    icon: "flask-outline",
     faqs: [
       {
         q: "What are research peptides?",
@@ -54,7 +54,7 @@ const sections: Section[] = [
   },
   {
     title: "About Supplements",
-    icon: "pill",
+    icon: "bag-outline",
     faqs: [
       {
         q: "How are supplements different from research peptides?",
@@ -76,7 +76,7 @@ const sections: Section[] = [
   },
   {
     title: "Reconstitution & Storage",
-    icon: "flask",
+    icon: "beaker-outline",
     faqs: [
       {
         q: "How do I reconstitute a lyophilized peptide?",
@@ -98,7 +98,7 @@ const sections: Section[] = [
   },
   {
     title: "About This Site",
-    icon: "microscope",
+    icon: "search-outline",
     faqs: [
       {
         q: "Is the information on this site medical advice?",

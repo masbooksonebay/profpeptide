@@ -7,12 +7,12 @@ export const metadata = {
 };
 
 const features = [
-  { icon: "dna", title: "Full Peptide Library", desc: "Every profile, offline. Search, filter, and save your most-used compounds." },
-  { icon: "calculator", title: "Dosage Calculator", desc: "The same trusted calculator from the site, available offline on your phone." },
-  { icon: "clipboard", title: "Protocol Logging", desc: "Track your research protocols with date, dose, compound, and custom notes." },
-  { icon: "clock", title: "Reminders", desc: "Set dosing schedule reminders for time-sensitive research protocols." },
-  { icon: "lock", title: "Private by Design", desc: "No account required. All data stays on your device. No tracking." },
-  { icon: "chat", title: "Research Notes", desc: "Attach notes to any compound or protocol. Export anytime." },
+  { icon: "flask-outline", title: "Full Peptide Library", desc: "Every profile, offline. Search, filter, and save your most-used compounds." },
+  { icon: "calculator-outline", title: "Dosage Calculator", desc: "The same trusted calculator from the site, available offline on your phone." },
+  { icon: "clipboard-outline", title: "Protocol Logging", desc: "Track your research protocols with date, dose, compound, and custom notes." },
+  { icon: "time-outline", title: "Reminders", desc: "Set dosing schedule reminders for time-sensitive research protocols." },
+  { icon: "lock-closed-outline", title: "Private by Design", desc: "No account required. All data stays on your device. No tracking." },
+  { icon: "chatbubble-outline", title: "Research Notes", desc: "Attach notes to any compound or protocol. Export anytime." },
 ];
 
 export default function AppPage() {
