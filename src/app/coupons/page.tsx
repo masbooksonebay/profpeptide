@@ -151,6 +151,14 @@ const sections: VendorSection[] = [
         region: "\uD83C\uDDEC\uD83C\uDDE7 UK",
         detailPage: "/coupons/particle-peptides",
       },
+      {
+        name: "Nordic Peptides",
+        url: "https://nordicpeptides.is?tracking=YPIYKOnVzjUxFUBzUjMguT01DrDOfTcsJhXEfi15i6MMovBJRFEwZguHeWt7mRkR",
+        code: "",
+        discount: "Code coming soon",
+        region: "\uD83C\uDDEE\uD83C\uDDF8 Iceland",
+        comingSoon: true,
+      },
     ],
   },
 ];
