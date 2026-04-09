@@ -106,6 +106,18 @@ export default function BCAAsPage() {
           <span key={tag} className="text-xs bg-gray-100 text-gray-500 px-2.5 py-1 rounded-full">{tag}</span>
         ))}
       </div>
+      <div className="mt-10 p-5 bg-gray-50 border border-gray-100 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] mb-3">Where to Buy</h2>
+        <a
+          href="https://www.amazon.com/s?k=BCAA+supplement&tag=profpeptide-20"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary text-sm inline-block"
+        >
+          Search on Amazon &rarr;
+        </a>
+        <p className="text-xs text-gray-400 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
+      </div>
     </div>
   );
 }

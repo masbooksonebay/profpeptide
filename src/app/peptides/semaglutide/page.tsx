@@ -171,6 +171,23 @@ export default function SemaglutidePage() {
           Open Calculator
         </Link>
       </div>
+      <div className="mt-10 p-5 bg-gray-50 border border-gray-100 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] mb-3">Where to Buy</h2>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <Link href="/coupons" className="btn-primary text-sm text-center">
+            View Verified Discount Codes &rarr;
+          </Link>
+          <a
+            href="https://www.amazon.com/s?k=metabolic+weight+loss+supplements&tag=profpeptide-20"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline text-sm text-center"
+          >
+            Search Related Supplements on Amazon &rarr;
+          </a>
+        </div>
+        <p className="text-xs text-gray-400 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
+      </div>
     </div>
   );
 }

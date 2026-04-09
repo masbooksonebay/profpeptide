@@ -99,6 +99,18 @@ export default function NADPlusSupplementPage() {
         <p className="text-xs text-gray-500 mb-3">5 key studies summarized in plain English covering NMN and NR human trials, cognitive function, and metabolic health.</p>
         <Link href="/research/nad-plus" className="btn-primary text-sm">NAD+ Research</Link>
       </div>
+      <div className="mt-10 p-5 bg-gray-50 border border-gray-100 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] mb-3">Where to Buy</h2>
+        <a
+          href="https://www.amazon.com/s?k=NAD+supplement+NMN&tag=profpeptide-20"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary text-sm inline-block"
+        >
+          Search on Amazon &rarr;
+        </a>
+        <p className="text-xs text-gray-400 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
+      </div>
     </div>
   );
 }
