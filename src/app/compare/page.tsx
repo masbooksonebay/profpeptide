@@ -20,6 +20,12 @@ const comparisons = [
     tag: "Metabolic",
   },
   {
+    title: "Semaglutide vs Tirzepatide vs Retatrutide",
+    desc: "Three generations of GLP-1 peptides compared — single, dual, and triple agonist side by side.",
+    href: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
+    tag: "Metabolic",
+  },
+  {
     title: "Berberine vs Metformin",
     desc: "Blood sugar comparison — AMPK activation, clinical data, cost, and when to use each.",
     href: "/compare/berberine-vs-metformin",

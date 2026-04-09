@@ -172,7 +172,13 @@ export default function TirzepatidePage() {
           Open Calculator
         </Link>
       </div>
-      <div className="mt-10 p-5 bg-gray-50 border border-gray-100 rounded-xl">
+      <div className="mt-10 p-5 border border-[#d0eeef] bg-[#f0fafa] rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] mb-2">How Does Tirzepatide Compare?</h2>
+        <p className="text-sm text-gray-600 mb-3">See how Tirzepatide compares to Semaglutide and Retatrutide in our side-by-side GLP-1 comparison.</p>
+        <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#0D7377] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
+      </div>
+
+      <div className="mt-6 p-5 bg-gray-50 border border-gray-100 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] mb-3">Where to Buy</h2>
         <div className="flex flex-col sm:flex-row gap-3">
           <Link href="/coupons" className="btn-primary text-sm text-center">
