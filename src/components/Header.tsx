@@ -22,9 +22,8 @@ const nav = [
   { label: "Supplements", href: "/supplements", dropdown: true },
   { label: "Research", href: "/research" },
   { label: "Calculator", href: "/calculator" },
-  { label: "Discount Codes", href: "/coupons" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Get the App", href: "/app" },
+  { label: "Codes", href: "/coupons" },
+  { label: "App", href: "/app" },
 ];
 
 function DropdownPanel({ baseHref }: { baseHref: string }) {
@@ -104,9 +103,6 @@ export default function Header() {
           </span>
           <span className="text-[#0891b2] font-bold text-xl tracking-tight">
             Prof. Peptide
-          </span>
-          <span className="hidden sm:inline text-xs text-gray-400 dark:text-slate-500 font-normal mt-0.5">
-            Research &amp; Education
           </span>
         </Link>
         <div className="flex items-center gap-2">
