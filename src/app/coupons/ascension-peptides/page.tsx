@@ -130,6 +130,7 @@ export default function AscensionPeptidesCouponPage() {
             <Link href="/peptides/ghk-cu" className="text-[#0D7377] hover:underline">GLOW blend</Link> are also available.
           </p>
         </div>
+      </div>
     </div>
   );
 }

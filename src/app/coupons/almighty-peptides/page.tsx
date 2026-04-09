@@ -133,6 +133,7 @@ export default function AlmightyPeptidesCouponPage() {
             <Link href="/peptides/melanotan-ii" className="text-[#0D7377] hover:underline">Melanotan II</Link>. Their capsule catalog includes BPC-157, GHK-Cu, Methylene Blue, MK-677, LGD-4033, and SLU-PP-332. Their liquids catalog covers SARMs, aromatase inhibitors, and other research chemicals.
           </p>
         </div>
+      </div>
     </div>
   );
 }

@@ -126,6 +126,7 @@ export default function OasisLabsCouponPage() {
             <Link href="/peptides/thymosin-alpha-1" className="text-[#0D7377] hover:underline">Thymosin Alpha-1</Link>, among others.
           </p>
         </div>
+      </div>
     </div>
   );
 }

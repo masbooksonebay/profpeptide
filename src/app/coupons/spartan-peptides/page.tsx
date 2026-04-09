@@ -130,6 +130,7 @@ export default function SpartanPeptidesCouponPage() {
             Additional categories cover sexual health (<Link href="/peptides/pt-141" className="text-[#0D7377] hover:underline">PT-141</Link>), mood and sleep, focus and clarity, and immunity compounds.
           </p>
         </div>
+      </div>
     </div>
   );
 }

@@ -16,6 +16,7 @@ interface Vendor {
   specialBadgeColor?: string;
   description?: string;
   detailPage?: string;
+  comingSoon?: boolean;
 }
 
 interface VendorSection {

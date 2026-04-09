@@ -118,6 +118,7 @@ export default function ApolloPeptideSciencesCouponPage() {
             <Link href="/peptides/retatrutide" className="text-[#0D7377] hover:underline">Retatrutide</Link>, alongside individual peptides spanning repair, cognitive, and cellular health research applications. Bacteriostatic water and research bundles are also available.
           </p>
         </div>
+      </div>
     </div>
   );
 }

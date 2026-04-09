@@ -131,6 +131,7 @@ export default function ParticlePeptidesCouponPage() {
             <Link href="/peptides/melanotan-ii" className="text-[#0D7377] hover:underline">Melanotan 2</Link>. Their specialty catalog also includes FOXO4-DRI (Proxofim), a rare senolytic compound.
           </p>
         </div>
+      </div>
     </div>
   );
 }

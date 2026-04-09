@@ -122,6 +122,7 @@ export default function RoyalPeptidesCouponPage() {
             <Link href="/peptides/pt-141" className="text-[#0D7377] hover:underline">PT-141</Link> among others.
           </p>
         </div>
+      </div>
     </div>
   );
 }

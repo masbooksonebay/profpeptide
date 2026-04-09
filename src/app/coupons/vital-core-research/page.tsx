@@ -135,6 +135,7 @@ export default function VitalCoreResearchCouponPage() {
             <Link href="/peptides/thymosin-alpha-1" className="text-[#0D7377] hover:underline">Thymosin Alpha-1</Link>. Novel compounds include SLU-PP-332 capsules and Tesofensine capsules. Pre-formulated blends include GLOW and KLOW. A 13-compound SARMs catalog is also available.
           </p>
         </div>
+      </div>
     </div>
   );
 }

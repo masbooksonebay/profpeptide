@@ -131,6 +131,7 @@ export default function LimitlessBiotechCouponPage() {
             <Link href="/peptides/pt-141" className="text-[#0D7377] hover:underline">PT-141</Link>. Peptide capsule and spray formats are also available alongside standard lyophilized compounds.
           </p>
         </div>
+      </div>
     </div>
   );
 }

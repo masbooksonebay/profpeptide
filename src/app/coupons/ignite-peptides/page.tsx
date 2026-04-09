@@ -120,6 +120,7 @@ export default function IgnitePeptidesCouponPage() {
             <Link href="/peptides/retatrutide" className="text-[#0D7377] hover:underline">Retatrutide</Link>, alongside a broad range of additional peptides for diverse research applications.
           </p>
         </div>
+      </div>
     </div>
   );
 }

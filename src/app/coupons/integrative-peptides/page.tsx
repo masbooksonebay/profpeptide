@@ -105,6 +105,7 @@ export default function IntegrativePeptidesCouponPage() {
             />
           </div>
         </div>
+      </div>
     </div>
   );
 }

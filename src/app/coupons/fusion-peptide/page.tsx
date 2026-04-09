@@ -116,6 +116,7 @@ export default function FusionPeptideCouponPage() {
             <Link href="/peptides/igf-1-lr3" className="text-[#0D7377] hover:underline">IGF-1 LR3</Link>, available in injectable, topical, and nasal spray formats. The company identifies cognitive enhancement and metabolic research as primary application areas for their compound portfolio.
           </p>
         </div>
+      </div>
     </div>
   );
 }
