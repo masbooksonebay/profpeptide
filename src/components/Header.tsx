@@ -75,6 +75,9 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
+          <span className="w-9 h-9 flex items-center justify-center rounded-md border-[1.5px] border-[#0891b2] text-[#0891b2] font-semibold text-base leading-none select-none flex-shrink-0">
+            Pp
+          </span>
           <span className="text-[#0D7377] font-bold text-xl tracking-tight">
             Prof. Peptide
           </span>
