@@ -29,7 +29,7 @@ const sections: VendorSection[] = [
     vendors: [
       {
         name: "Peptide Partners",
-        url: "https://peptide.partners/",
+        url: "https://peptide.partners/ref/48/",
         code: "PROFPEPTIDE",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
@@ -52,7 +52,7 @@ const sections: VendorSection[] = [
     vendors: [
       {
         name: "Ascension Peptides",
-        url: "https://ascensionpeptides.com",
+        url: "https://ascensionpeptides.com/ref/profpeptide/",
         code: "PROFPEPTIDE",
         discount: "50% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
@@ -85,7 +85,7 @@ const sections: VendorSection[] = [
     vendors: [
       {
         name: "Apollo Peptide Sciences",
-        url: "https://apollopeptidesciences.com/",
+        url: "https://apollopeptidesciences.com/?rfsn=8846124.8bdc49",
         code: "PROFPEPTIDE",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
@@ -108,7 +108,7 @@ const sections: VendorSection[] = [
       },
       {
         name: "Limitless Biotech",
-        url: "https://limitlessbiotech.com",
+        url: "https://www.limitlesslifenootropics.com/?_ef_transaction_id=&oid=1&affid=10477",
         code: "PROFPEPTIDE",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
@@ -116,7 +116,7 @@ const sections: VendorSection[] = [
       },
       {
         name: "Oasis Labs",
-        url: "https://myoasislabs.com",
+        url: "https://myoasislabs.com/?sld=profpeptide",
         code: "PROFPEPTIDE",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
@@ -124,7 +124,7 @@ const sections: VendorSection[] = [
       },
       {
         name: "Royal Peptides",
-        url: "https://royal-peptides.com/",
+        url: "https://royal-peptides.com/?ref=urunwnog",
         code: "PROFPEPTIDE",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
@@ -145,7 +145,7 @@ const sections: VendorSection[] = [
     vendors: [
       {
         name: "Particle Peptides",
-        url: "https://particlepeptides.com/en/",
+        url: "https://particlepeptides.com/en/?refs=18075",
         code: "PROFPEPTIDE",
         discount: "10% off",
         region: "\uD83C\uDDEC\uD83C\uDDE7 UK",
