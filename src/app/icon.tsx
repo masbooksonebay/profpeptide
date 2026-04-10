@@ -14,7 +14,7 @@ export default function Icon() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#0d9488",
+          backgroundColor: "#0f172a",
           borderRadius: 4,
           position: "relative",
         }}
@@ -26,7 +26,7 @@ export default function Icon() {
             left: 0,
             right: 0,
             bottom: 0,
-            border: "1.5px solid rgba(255,255,255,0.5)",
+            border: "1.5px solid #0891b2",
             borderRadius: 4,
           }}
         />
@@ -34,7 +34,7 @@ export default function Icon() {
           style={{
             fontSize: 17,
             fontWeight: 800,
-            color: "white",
+            color: "#f1f5f9",
             fontFamily: "sans-serif",
             marginTop: 2,
             letterSpacing: -0.5,
