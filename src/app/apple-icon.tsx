@@ -30,20 +30,7 @@ export default function AppleIcon() {
             borderRadius: 20,
           }}
         />
-        <div
-          style={{
-            position: "absolute",
-            top: 16,
-            left: 20,
-            fontSize: 28,
-            color: "rgba(255,255,255,0.75)",
-            fontWeight: 700,
-            fontFamily: "sans-serif",
-          }}
-        >
-          15
-        </div>
-        <div
+<div
           style={{
             fontSize: 96,
             fontWeight: 800,

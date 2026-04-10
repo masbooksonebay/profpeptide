@@ -30,20 +30,7 @@ export default function Icon() {
             borderRadius: 4,
           }}
         />
-        <div
-          style={{
-            position: "absolute",
-            top: 2,
-            left: 3,
-            fontSize: 6,
-            color: "rgba(255,255,255,0.8)",
-            fontWeight: 700,
-            fontFamily: "sans-serif",
-          }}
-        >
-          15
-        </div>
-        <div
+<div
           style={{
             fontSize: 17,
             fontWeight: 800,
