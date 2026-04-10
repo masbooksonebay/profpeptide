@@ -8,13 +8,30 @@ interface Results {
   syringeUnits: number;
 }
 
+const compounds = [
+  "Custom Peptide",
+  "AOD-9604", "BPC-157", "CJC-1295", "Epitalon", "Follistatin",
+  "GHK-Cu", "GLOW", "IGF-1 LR3", "Ipamorelin", "Melanotan II",
+  "MOTS-c", "NAD+", "PT-141", "Retatrutide", "Selank", "Semax",
+  "Semaglutide", "Sermorelin", "TB-500", "Tesamorelin",
+  "Thymosin Alpha-1", "Tirzepatide", "Wolverine Stack",
+];
+
+const mgDefaults = new Set(["Semaglutide", "Tirzepatide", "Retatrutide", "NAD+"]);
+
 export default function CalculatorPage() {
+  const [compound, setCompound] = useState(compounds[0]);
   const [vialSize, setVialSize] = useState('');
   const [waterVolume, setWaterVolume] = useState('');
   const [dose, setDose] = useState('');
   const [doseUnit, setDoseUnit] = useState<'mcg' | 'mg'>('mcg');
   const [results, setResults] = useState<Results | null>(null);
   const [error, setError] = useState('');
+
+  const selectCompound = (name: string) => {
+    setCompound(name);
+    setDoseUnit(mgDefaults.has(name) ? 'mg' : 'mcg');
+  };
 
   const calculate = () => {
     setError('');
@@ -39,6 +56,7 @@ export default function CalculatorPage() {
   };
 
   const reset = () => {
+    setCompound(compounds[0]);
     setVialSize('');
     setWaterVolume('');
     setDose('');
@@ -70,6 +88,21 @@ export default function CalculatorPage() {
             </h2>
 
             <div className="space-y-5">
+              <div>
+                <label className="block text-sm font-medium mb-1.5 text-[#1e2d3d] dark:text-slate-200">
+                  Select Compound
+                </label>
+                <select
+                  value={compound}
+                  onChange={(e) => selectCompound(e.target.value)}
+                  className="w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#0891b2] transition appearance-none cursor-pointer"
+                >
+                  {compounds.map((c) => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+              </div>
+
               <div>
                 <label className="block text-sm font-medium mb-1.5 text-[#1e2d3d] dark:text-slate-200">
                   Vial Size (mg)
