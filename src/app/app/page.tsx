@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Icon } from "@/components/CategoryIcon";
+import WaitlistForm from "@/components/WaitlistForm";
 
 export const metadata = {
   title: "Get the Prof. Peptide App — Peptide Research in Your Pocket",
@@ -58,16 +59,7 @@ export default function AppPage() {
         <p className="text-sm text-gray-500 dark:text-slate-400 mb-6 max-w-sm mx-auto">
           Be first to know when the app launches. No spam — one email when it goes live.
         </p>
-        <form className="flex flex-col sm:flex-row gap-3 max-w-sm mx-auto">
-          <input
-            type="email"
-            placeholder="your@email.com"
-            className="flex-1 border border-gray-200 dark:border-slate-600 rounded-md px-4 py-2.5 text-sm bg-white dark:bg-[#0f172a] text-gray-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-[#0891b2] focus:border-transparent"
-          />
-          <button type="submit" className="btn-primary whitespace-nowrap">
-            Notify Me
-          </button>
-        </form>
+        <WaitlistForm />
         <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">By joining you agree to receive one launch notification email only.</p>
       </div>
     </div>
