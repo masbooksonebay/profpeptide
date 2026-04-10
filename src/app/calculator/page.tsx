@@ -230,7 +230,14 @@ export default function CalculatorPage() {
           </div>
         </div>
 
-        <p className="mt-8 text-xs text-gray-400 dark:text-slate-500 text-center">
+        <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2">
+          <a href="/peptides" className="text-sm text-[#0891b2] hover:underline">Peptide Library</a>
+          <a href="/glossary" className="text-sm text-[#0891b2] hover:underline">Glossary</a>
+          <a href="/coupons" className="text-sm text-[#0891b2] hover:underline">Discount Codes</a>
+          <a href="/faq" className="text-sm text-[#0891b2] hover:underline">FAQ</a>
+        </div>
+
+        <p className="mt-6 text-xs text-gray-400 dark:text-slate-500 text-center">
           For research purposes only. Always verify calculations independently before use.
         </p>
       </div>

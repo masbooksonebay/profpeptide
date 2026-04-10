@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Peptide & Supplement Research Glossary | Prof. Peptide",
   description:
@@ -173,7 +175,18 @@ export default function GlossaryPage() {
         ))}
       </div>
 
-      <p className="text-xs text-gray-400 dark:text-slate-500 mt-12">
+      <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">See Also</h2>
+        <div className="flex flex-wrap gap-x-6 gap-y-2">
+          <Link href="/peptides" className="text-sm text-[#0891b2] hover:underline">Peptide Library</Link>
+          <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline">Supplement Library</Link>
+          <Link href="/calculator" className="text-sm text-[#0891b2] hover:underline">Dosage Calculator</Link>
+          <Link href="/faq" className="text-sm text-[#0891b2] hover:underline">FAQ</Link>
+          <Link href="/compare" className="text-sm text-[#0891b2] hover:underline">Comparisons</Link>
+        </div>
+      </div>
+
+      <p className="text-xs text-gray-400 dark:text-slate-500 mt-8">
         This glossary is for educational and research purposes only. Nothing on this page constitutes medical advice. Not for human use.
       </p>
     </div>

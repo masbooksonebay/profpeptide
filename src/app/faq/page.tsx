@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import { Icon } from "@/components/CategoryIcon";
 
 interface FAQ {
@@ -169,7 +170,8 @@ export default function FAQPage() {
 
       <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">Still have questions?</p>
-        <p className="text-xs text-gray-500 dark:text-slate-400">Browse the Peptide Library for detailed compound-specific information, check the Supplement Library for evidence-based supplement profiles, or explore the Research Hub for in-depth guides.</p>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">Browse the <Link href="/peptides" className="text-[#0891b2] hover:underline">Peptide Library</Link> for detailed compound-specific information, check the <Link href="/supplements" className="text-[#0891b2] hover:underline">Supplement Library</Link> for evidence-based supplement profiles, or explore the <Link href="/research" className="text-[#0891b2] hover:underline">Research Hub</Link> for in-depth guides.</p>
+        <p className="text-xs text-gray-500 dark:text-slate-400">Need help with technical terms? Browse the <Link href="/glossary" className="text-[#0891b2] hover:underline">Research Glossary</Link> for plain-English definitions. Ready to calculate a dose? Try the <Link href="/calculator" className="text-[#0891b2] hover:underline">Dosage Calculator</Link>.</p>
       </div>
     </div>
   );

@@ -118,7 +118,15 @@ export default function BerberinePage() {
           <span key={tag} className="text-xs bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400 px-2.5 py-1 rounded-full">{tag}</span>
         ))}
       </div>
-      <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+      
+      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
+        <div className="flex flex-wrap gap-4">
+        <Link href="/compare/berberine-vs-metformin" className="text-sm font-medium text-[#0891b2] hover:underline">Berberine vs Metformin &rarr;</Link>
+        </div>
+      </div>
+
+<div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Where to Buy</h2>
         <a
           href="https://www.amazon.com/s?k=berberine&tag=profpeptide-20"
