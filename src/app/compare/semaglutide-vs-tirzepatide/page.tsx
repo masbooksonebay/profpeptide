@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Semaglutide vs Tirzepatide — GLP-1 Comparison | Prof. Peptide",
@@ -21,6 +22,9 @@ const rows = [
 
 export default function SemaglutideVsTirzepatidePage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Semaglutide vs Tirzepatide — GLP-1 Comparison","description":"Semaglutide vs Tirzepatide comparison — mechanism, weight loss data, FDA approval status, side effects, and key clinical trial results.","url":"https://www.profpeptide.com/compare/semaglutide-vs-tirzepatide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://www.profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Semaglutide vs Tirzepatide — GLP-1 Comparison"}]}} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Semaglutide vs Tirzepatide &mdash; GLP-1 Peptide Comparison</h1>
@@ -59,5 +63,6 @@ export default function SemaglutideVsTirzepatidePage() {
 
       <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
     </div>
+    </>
   );
 }

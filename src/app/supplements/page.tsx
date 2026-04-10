@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
@@ -118,6 +119,8 @@ export default function SupplementsPage({ searchParams }: { searchParams: { cate
   const filtered = filter ? categories.filter((c) => c.slug === filter) : categories;
 
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements"}]}} />
     <div className="section">
       <div className="mb-10">
         <span className="tag mb-3 inline-block">Research Profiles</span>
@@ -155,5 +158,6 @@ export default function SupplementsPage({ searchParams }: { searchParams: { cate
         ))}
       </div>
     </div>
+    </>
   );
 }

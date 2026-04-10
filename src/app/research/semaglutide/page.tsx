@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Semaglutide Research — Key Studies & Plain-English Summaries | Prof. Peptide",
@@ -56,6 +57,9 @@ const studies = [
 
 export default function SemaglutideResearchPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Semaglutide Research","description":"5 key Semaglutide studies summarized in plain English. Covers STEP weight loss trials, SELECT cardiovascular outcomes, and SUSTAIN diabetes data.","url":"https://www.profpeptide.com/research/semaglutide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"Semaglutide Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
 
@@ -91,5 +95,6 @@ export default function SemaglutideResearchPage() {
         <Link href="/peptides/semaglutide" className="btn-primary text-sm">Semaglutide Profile</Link>
       </div>
     </div>
+    </>
   );
 }

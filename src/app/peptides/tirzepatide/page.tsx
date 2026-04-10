@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Tirzepatide — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
@@ -97,6 +98,9 @@ const sections = [
 
 export default function TirzepatidePage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tirzepatide","description":"Tirzepatide research profile covering dual GIP/GLP-1 mechanism, SURMOUNT trial data, head-to-head vs semaglutide, FDA approval, and dosage guidance.","url":"https://www.profpeptide.com/peptides/tirzepatide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Tirzepatide"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
@@ -196,5 +200,6 @@ export default function TirzepatidePage() {
         <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
       </div>
     </div>
+    </>
   );
 }

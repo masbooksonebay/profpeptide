@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "GLOW (Peptide Stack) — Research Profile, Mechanism & Protocol | Prof. Peptide",
@@ -79,6 +80,9 @@ const sections = [
 
 export default function GLOWPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GLOW (Peptide Stack)","description":"GLOW peptide stack research profile covering GHK-Cu, BPC-157, and TB-500 synergy for skin rejuvenation, collagen production, tissue repair, and anti-inflammatory recovery.","url":"https://www.profpeptide.com/peptides/glow","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"GLOW (Peptide Stack)"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
@@ -181,5 +185,6 @@ export default function GLOWPage() {
 
       <p className="text-xs text-gray-400 dark:text-slate-500 mt-8">For research purposes only. Not FDA-approved for human use. Not medical advice.</p>
     </div>
+    </>
   );
 }

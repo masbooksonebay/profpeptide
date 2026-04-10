@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Semax Research — Key Studies & Plain-English Summaries | Prof. Peptide",
@@ -56,6 +57,9 @@ const studies = [
 
 export default function SemaxResearchPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Semax Research","description":"5 key Semax studies summarized in plain English. Covers BDNF upregulation, stroke neuroprotection, genome-wide transcriptomics, and Alzheimer research.","url":"https://www.profpeptide.com/research/semax","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"Semax Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
       <div className="flex flex-wrap items-center gap-3 mb-1">
@@ -82,5 +86,6 @@ export default function SemaxResearchPage() {
         <Link href="/peptides/semax" className="btn-primary text-sm">Semax Profile</Link>
       </div>
     </div>
+    </>
   );
 }

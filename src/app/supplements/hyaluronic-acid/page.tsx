@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Hyaluronic Acid — Benefits, Research & Dosage Guide | Prof. Peptide",
@@ -8,6 +9,9 @@ export const metadata = {
 
 export default function HyaluronicAcidPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Hyaluronic Acid","description":"Hyaluronic acid supplement profile covering skin hydration, 6L water binding per gram, wrinkle reduction, joint lubrication, and dosage.","url":"https://www.profpeptide.com/supplements/hyaluronic-acid","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://www.profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Hyaluronic Acid"}]}} />
     <div className="section max-w-3xl">
       <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
@@ -122,5 +126,6 @@ export default function HyaluronicAcidPage() {
         <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
       </div>
     </div>
+    </>
   );
 }

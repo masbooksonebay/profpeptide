@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Follistatin — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
@@ -77,6 +78,9 @@ const sections = [
 
 export default function FollistatinPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Follistatin","description":"Follistatin research profile covering myostatin inhibition, gene therapy trials for muscular dystrophy, muscle growth data, and safety information.","url":"https://www.profpeptide.com/peptides/follistatin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Follistatin"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
@@ -164,5 +168,6 @@ export default function FollistatinPage() {
         <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
       </div>
     </div>
+    </>
   );
 }

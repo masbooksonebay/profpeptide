@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Ipamorelin Research — Key Studies & Plain-English Summaries | Prof. Peptide",
@@ -47,6 +48,9 @@ const studies = [
 
 export default function IpamorelinResearchPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Ipamorelin Research","description":"4 key Ipamorelin studies summarized in plain English. Covers selective GH release, body composition, human pharmacokinetics, and hypogonadal males.","url":"https://www.profpeptide.com/research/ipamorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"Ipamorelin Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
       <div className="flex flex-wrap items-center gap-3 mb-1">
@@ -73,5 +77,6 @@ export default function IpamorelinResearchPage() {
         <Link href="/peptides/ipamorelin" className="btn-primary text-sm">Ipamorelin Profile</Link>
       </div>
     </div>
+    </>
   );
 }

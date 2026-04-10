@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Retatrutide — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
@@ -96,6 +97,9 @@ const sections = [
 
 export default function RetatrutidePage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Retatrutide","description":"Retatrutide research profile covering triple GIP/GLP-1/glucagon mechanism, 28.7% Phase 3 weight loss, liver fat reduction, and clinical trial status.","url":"https://www.profpeptide.com/peptides/retatrutide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Retatrutide"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
@@ -195,5 +199,6 @@ export default function RetatrutidePage() {
         <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
       </div>
     </div>
+    </>
   );
 }

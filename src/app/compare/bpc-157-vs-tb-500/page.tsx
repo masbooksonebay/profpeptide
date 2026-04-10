@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "BPC-157 vs TB-500 — How These Recovery Peptides Differ | Prof. Peptide",
@@ -21,6 +22,9 @@ const rows = [
 
 export default function BPC157vsTB500Page() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"BPC-157 vs TB-500 — How These Recovery Peptides Differ","description":"BPC-157 vs TB-500 comparison — mechanism of action, research differences, tissue targets, and how to choose between these two recovery peptides.","url":"https://www.profpeptide.com/compare/bpc-157-vs-tb-500","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://www.profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"BPC-157 vs TB-500 — How These Recovery Peptides Differ"}]}} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">BPC-157 vs TB-500 &mdash; Recovery Peptide Comparison</h1>
@@ -70,5 +74,6 @@ export default function BPC157vsTB500Page() {
 
       <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">For educational and research purposes only. Not medical advice. Not for human use.</p>
     </div>
+    </>
   );
 }

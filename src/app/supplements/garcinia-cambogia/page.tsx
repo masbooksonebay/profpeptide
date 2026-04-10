@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Garcinia Cambogia — Benefits, Research & Dosage Guide | Prof. Peptide",
@@ -8,6 +9,9 @@ export const metadata = {
 
 export default function GarciniaCambogiaPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Garcinia Cambogia","description":"Garcinia cambogia profile covering HCA mechanism, ATP citrate lyase inhibition, mixed weight loss evidence, and honest efficacy assessment.","url":"https://www.profpeptide.com/supplements/garcinia-cambogia","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://www.profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Garcinia Cambogia"}]}} />
     <div className="section max-w-3xl">
       <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
@@ -122,5 +126,6 @@ export default function GarciniaCambogiaPage() {
         <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
       </div>
     </div>
+    </>
   );
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "GH Stack Research — Key Studies & Plain-English Summaries | Prof. Peptide",
@@ -47,6 +48,9 @@ const studies = [
 
 export default function GHStackResearchPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GH Stack Research","description":"4 key GH Stack studies summarized in plain English. Covers CJC-1295 + Ipamorelin dual-pathway synergy and GHRH+GHRP combination evidence.","url":"https://www.profpeptide.com/research/gh-stack","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"GH Stack Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
       <div className="flex flex-wrap items-center gap-3 mb-1">
@@ -80,5 +84,6 @@ export default function GHStackResearchPage() {
         <Link href="/peptides/gh-stack" className="btn-primary text-sm">GH Stack Profile</Link>
       </div>
     </div>
+    </>
   );
 }

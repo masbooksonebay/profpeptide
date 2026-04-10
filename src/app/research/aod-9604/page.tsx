@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "AOD-9604 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
@@ -47,6 +48,9 @@ const studies = [
 
 export default function AOD9604ResearchPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"AOD-9604 Research","description":"4 key AOD-9604 studies summarized in plain English. Covers animal lipolysis data, human Phase 2b failure, safety profile, and development history.","url":"https://www.profpeptide.com/research/aod-9604","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"AOD-9604 Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
 
@@ -82,5 +86,6 @@ export default function AOD9604ResearchPage() {
         <Link href="/peptides/aod-9604" className="btn-primary text-sm">AOD-9604 Profile</Link>
       </div>
     </div>
+    </>
   );
 }

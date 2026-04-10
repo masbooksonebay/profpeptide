@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Peptide & Supplement Comparisons | Prof. Peptide",
@@ -83,6 +84,8 @@ const comparisons = [
 
 export default function ComparePage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons"}]}} />
     <div className="section max-w-3xl">
       <span className="tag mb-3 inline-block">Research Comparisons</span>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Comparisons</h1>
@@ -107,5 +110,6 @@ export default function ComparePage() {
         ))}
       </div>
     </div>
+    </>
   );
 }

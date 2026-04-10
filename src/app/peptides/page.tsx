@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
@@ -92,6 +93,8 @@ export default function PeptidesPage({ searchParams }: { searchParams: { categor
   const filtered = filter ? categories.filter((c) => c.slug === filter) : categories;
 
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides"}]}} />
     <div className="section">
       <div className="mb-10">
         <span className="tag mb-3 inline-block">Research Profiles</span>
@@ -129,5 +132,6 @@ export default function PeptidesPage({ searchParams }: { searchParams: { categor
         ))}
       </div>
     </div>
+    </>
   );
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Sermorelin Research — Key Studies & Plain-English Summaries | Prof. Peptide",
@@ -47,6 +48,9 @@ const studies = [
 
 export default function SermorelinResearchPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Sermorelin Research","description":"4 key Sermorelin studies summarized in plain English. Covers pituitary preservation, elderly GH restoration, cognitive function, and testosterone effects.","url":"https://www.profpeptide.com/research/sermorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"Sermorelin Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
       <div className="flex flex-wrap items-center gap-3 mb-1">
@@ -73,5 +77,6 @@ export default function SermorelinResearchPage() {
         <Link href="/peptides/sermorelin" className="btn-primary text-sm">Sermorelin Profile</Link>
       </div>
     </div>
+    </>
   );
 }

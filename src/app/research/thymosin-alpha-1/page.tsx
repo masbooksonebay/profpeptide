@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Thymosin Alpha-1 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
@@ -56,6 +57,9 @@ const studies = [
 
 export default function ThymosinAlpha1ResearchPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Thymosin Alpha-1 Research","description":"5 key Thymosin Alpha-1 studies summarized in plain English. Covers immune modulation, viral infections, cancer immunotherapy, and immunosenescence.","url":"https://www.profpeptide.com/research/thymosin-alpha-1","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"Thymosin Alpha-1 Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
       <div className="flex flex-wrap items-center gap-3 mb-1">
@@ -82,5 +86,6 @@ export default function ThymosinAlpha1ResearchPage() {
         <Link href="/peptides/thymosin-alpha-1" className="btn-primary text-sm">Thymosin Alpha-1 Profile</Link>
       </div>
     </div>
+    </>
   );
 }

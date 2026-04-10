@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "MOTS-c — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
@@ -92,6 +93,9 @@ const sections = [
 
 export default function MOTSCPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"MOTS-c","description":"MOTS-c research profile covering mitochondrial-derived exercise mimetic mechanism, AMPK activation, insulin sensitivity, and aging research.","url":"https://www.profpeptide.com/peptides/mots-c","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"MOTS-c"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
@@ -180,5 +184,6 @@ export default function MOTSCPage() {
         <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
       </div>
     </div>
+    </>
   );
 }

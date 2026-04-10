@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Peptide & Supplement Research Glossary | Prof. Peptide",
@@ -143,7 +144,20 @@ const sections: { letter: string; terms: [string, string][] }[] = [
 ];
 
 export default function GlossaryPage() {
+  const allTerms = sections.flatMap((s) => s.terms);
   return (
+    <>
+    <JsonLd data={{
+      "@context": "https://schema.org",
+      "@type": "DefinedTermSet",
+      "name": "Peptide & Supplement Research Glossary",
+      "url": "https://www.profpeptide.com/glossary",
+      "hasDefinedTerm": allTerms.map(([term, def]) => ({
+        "@type": "DefinedTerm",
+        "name": term,
+        "description": def,
+      })),
+    }} />
     <div className="section max-w-3xl">
       <span className="tag mb-3 inline-block">Reference</span>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">
@@ -190,5 +204,6 @@ export default function GlossaryPage() {
         This glossary is for educational and research purposes only. Nothing on this page constitutes medical advice. Not for human use.
       </p>
     </div>
+    </>
   );
 }

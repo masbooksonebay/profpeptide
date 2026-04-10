@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "TB-500 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
@@ -56,6 +57,9 @@ const studies = [
 
 export default function TB500ResearchPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"TB-500 Research","description":"5 key TB-500 studies summarized in plain English. Covers wound healing, muscle regeneration, cardiac repair, and developmental biology.","url":"https://www.profpeptide.com/research/tb-500","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"TB-500 Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
 
@@ -91,5 +95,6 @@ export default function TB500ResearchPage() {
         <Link href="/peptides/tb-500" className="btn-primary text-sm">TB-500 Profile</Link>
       </div>
     </div>
+    </>
   );
 }

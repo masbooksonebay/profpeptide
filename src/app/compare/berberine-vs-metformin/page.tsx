@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Berberine vs Metformin — Blood Sugar Comparison | Prof. Peptide",
@@ -22,6 +23,9 @@ const rows = [
 
 export default function BerberineVsMetforminPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Berberine vs Metformin — Blood Sugar Comparison","description":"Berberine vs Metformin comparison — mechanism, blood sugar efficacy, side effects, availability, and what the research actually shows.","url":"https://www.profpeptide.com/compare/berberine-vs-metformin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://www.profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Berberine vs Metformin — Blood Sugar Comparison"}]}} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Berberine vs Metformin &mdash; Metabolic Health Comparison</h1>
@@ -57,5 +61,6 @@ export default function BerberineVsMetforminPage() {
 
       <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
     </div>
+    </>
   );
 }

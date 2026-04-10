@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "AOD-9604 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
@@ -87,6 +88,9 @@ const sections = [
 
 export default function AOD9604Page() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"AOD-9604","description":"AOD-9604 research profile covering GH fragment lipolysis mechanism, Phase 2b trial failure, cartilage repair pivot, and regulatory status.","url":"https://www.profpeptide.com/peptides/aod-9604","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"AOD-9604"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
@@ -175,5 +179,6 @@ export default function AOD9604Page() {
         <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
       </div>
     </div>
+    </>
   );
 }

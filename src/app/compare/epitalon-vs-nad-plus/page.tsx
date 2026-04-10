@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Epitalon vs NAD+ — Longevity Supplement Comparison | Prof. Peptide",
@@ -21,6 +22,9 @@ const rows = [
 
 export default function EpitalonVsNADPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Epitalon vs NAD+ — Longevity Supplement Comparison","description":"Epitalon vs NAD+ comparison — how these two longevity compounds work, what the research shows, and how they differ in mechanism, evidence, and use.","url":"https://www.profpeptide.com/compare/epitalon-vs-nad-plus","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://www.profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Epitalon vs NAD+ — Longevity Supplement Comparison"}]}} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Epitalon vs NAD+ &mdash; Longevity Compound Comparison</h1>
@@ -52,5 +56,6 @@ export default function EpitalonVsNADPage() {
       </div>
       <p className="text-xs text-gray-400 dark:text-slate-500">For educational and research purposes only. Not medical advice.</p>
     </div>
+    </>
   );
 }

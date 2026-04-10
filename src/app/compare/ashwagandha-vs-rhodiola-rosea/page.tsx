@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison | Prof. Peptide",
@@ -21,6 +22,9 @@ const rows = [
 
 export default function AshwagandhaVsRhodiolaPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison","description":"Ashwagandha vs Rhodiola Rosea — stress response, cortisol, energy, anxiety, and which adaptogen is right for your goals based on the research.","url":"https://www.profpeptide.com/compare/ashwagandha-vs-rhodiola-rosea","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://www.profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison"}]}} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Ashwagandha vs Rhodiola Rosea &mdash; Adaptogen Comparison</h1>
@@ -47,5 +51,6 @@ export default function AshwagandhaVsRhodiolaPage() {
       </div>
       <p className="text-xs text-gray-400 dark:text-slate-500">For educational and research purposes only. Not medical advice.</p>
     </div>
+    </>
   );
 }

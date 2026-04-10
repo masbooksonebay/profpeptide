@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   title: "BPC-157 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
@@ -56,6 +57,9 @@ const studies = [
 
 export default function BPC157ResearchPage() {
   return (
+    <>
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"BPC-157 Research","description":"5 key BPC-157 studies summarized in plain English. Covers tissue repair, gut healing, musculoskeletal recovery, and orthopedic sports medicine.","url":"https://www.profpeptide.com/research/bpc-157","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"BPC-157 Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
 
@@ -91,5 +95,6 @@ export default function BPC157ResearchPage() {
         <Link href="/peptides/bpc-157" className="btn-primary text-sm">BPC-157 Profile</Link>
       </div>
     </div>
+    </>
   );
 }
