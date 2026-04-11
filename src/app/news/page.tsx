@@ -8,11 +8,11 @@ export const metadata = {
   openGraph: {
     title: "News — Peptide Research & Regulatory Updates",
     description: "Latest news on peptide research, FDA regulatory changes, and supplement industry developments.",
-    images: [{ url: "https://www.profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
+    images: [{ url: "https://www.profpeptide.com/profpeptide-logo-1024.png", width: 1024, height: 1024, alt: "Prof. Peptide" }],
   },
   twitter: {
     card: "summary_large_image" as const,
-    images: ["https://www.profpeptide.com/og-image.png"],
+    images: ["https://www.profpeptide.com/profpeptide-logo-1024.png"],
   },
 };
 

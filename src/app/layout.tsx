@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.profpeptide.com/og-image.png",
-        width: 1200,
-        height: 630,
+        url: "https://www.profpeptide.com/profpeptide-logo-1024.png",
+        width: 1024,
+        height: 1024,
         alt: "Prof. Peptide",
       },
     ],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Prof. Peptide",
     description: "Evidence-based peptide education and research tools.",
-    images: ["https://www.profpeptide.com/og-image.png"],
+    images: ["https://www.profpeptide.com/profpeptide-logo-1024.png"],
   },
 };
 
