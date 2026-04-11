@@ -21,6 +21,7 @@ const nav = [
   { label: "Peptides", href: "/peptides", dropdown: true },
   { label: "Supplements", href: "/supplements", dropdown: true },
   { label: "Research", href: "/research" },
+  { label: "News", href: "/news" },
   { label: "Calculator", href: "/calculator" },
   { label: "Codes", href: "/coupons" },
   { label: "App", href: "/app" },
