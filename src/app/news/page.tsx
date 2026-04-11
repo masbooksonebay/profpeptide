@@ -5,6 +5,15 @@ export const metadata = {
   title: "News — Peptide Research & Regulatory Updates | Prof. Peptide",
   description:
     "Latest news on peptide research, FDA regulatory changes, and supplement industry developments. Independent reporting from Prof. Peptide.",
+  openGraph: {
+    title: "News — Peptide Research & Regulatory Updates",
+    description: "Latest news on peptide research, FDA regulatory changes, and supplement industry developments.",
+    images: [{ url: "https://www.profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    images: ["https://www.profpeptide.com/og-image.png"],
+  },
 };
 
 const articles = [
