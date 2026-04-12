@@ -18,6 +18,13 @@ export const metadata = {
 
 const articles = [
   {
+    title: "RFK\u2019s Peptide Ruling: Where Things Stand in April 2026",
+    slug: "rfk-peptide-update-april-2026",
+    date: "April 12, 2026",
+    excerpt:
+      "RFK Jr. announced 14 peptides would return to legal compounding status \u2014 but the FDA hasn\u2019t published the official list yet. Here\u2019s what we know, what\u2019s still pending, and what it means for researchers.",
+  },
+  {
     title: "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List",
     slug: "rfk-peptide-ban-2026",
     date: "April 10, 2026",
