@@ -63,13 +63,13 @@ export default function AscensionPeptidesCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Ascension Peptides is a US-based research peptide supplier shipping exclusively within the United States. The company is reachable by phone at (303) 518-6550 during business hours Monday through Friday, 9am&ndash;5pm CST. Ascension distinguishes itself through an extensive catalog of individual peptides and pre-formulated peptide blends and stacks &mdash; combining multiple compounds into single research formulations. Wholesale and distributor tiered pricing programs are available for higher-volume research operations.
+            Ascension Peptides is a US-based research peptide supplier shipping exclusively within the United States. Ascension distinguishes itself through an extensive catalog of individual peptides and pre-formulated peptide blends and stacks &mdash; combining multiple compounds into single research formulations. Wholesale and distributor tiered pricing programs are available for higher-volume research operations.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Ascension Peptides conducts multi-stage third-party testing on all products, guaranteeing 99%+ purity and verifying that compounds are contaminant-free and potency-verified. Certificates of Analysis are publicly accessible through a dedicated &quot;Lab Testing / COAs&quot; page on their website, allowing researchers to review documentation prior to purchase.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Ascension Peptides offers the largest discount available across Prof. Peptide&apos;s entire vendor network. Using code PROFPEPTIDE at checkout applies a 50% discount &mdash; a savings level that is rare in the research peptide space and makes Ascension Peptides a compelling option for researchers prioritizing value without compromising on documented quality standards.
+            Ascension Peptides offers the largest discount available across Prof. Peptide&apos;s entire vendor network. Using code PROFPEPTIDE at checkout applies a 50% discount &mdash; a savings level that is rare in the research peptide space and makes Ascension Peptides a compelling option for researchers prioritizing value without compromising on documented quality standards. Ascension Peptides can be reached by phone at (303) 518-6550, Monday through Friday, 9am&ndash;5pm CST.
           </p>
         </div>
 

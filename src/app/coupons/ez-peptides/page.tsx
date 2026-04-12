@@ -65,16 +65,10 @@ export default function EZPeptidesCouponPage() {
             EZ Peptides is a U.S.-based peptide supplier headquartered in Albuquerque, New Mexico, founded to support the research community with rigorously sourced compounds. They are known for fast fulfillment &mdash; orders ship within 0&ndash;2 business days with same-day shipping available &mdash; and consistent product quality backed by independent third-party lab testing.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            With a 4.7/5 customer rating across 176+ reviews, EZ Peptides has built a reputation for reliable service, competitive pricing, and responsive support. Every batch comes with a Certificate of Analysis (COA) so researchers can verify purity and consistency before use.
+            EZ Peptides ships most orders within 0&ndash;2 business days, with same-day shipping available for orders placed before the daily cut-off. Every batch is independently third-party tested and accompanied by a Certificate of Analysis, so researchers can verify purity and consistency before use. With a 4.7/5 customer rating across 176+ reviews, the company has built a reputation for competitive pricing, responsive customer support, and reliable fulfillment. EZ Peptides is headquartered in Albuquerque, New Mexico.
           </p>
-          <ul className="list-disc list-inside text-sm text-gray-600 dark:text-slate-300 space-y-1 mb-4">
-            <li>4.7/5 customer rating (176+ reviews)</li>
-            <li>Same-day shipping available, orders processed within 0&ndash;2 business days</li>
-            <li>Third-party tested with COAs on every batch</li>
-            <li>Based in Albuquerque, New Mexico, USA</li>
-          </ul>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <strong className="text-[#1e2d3d] dark:text-slate-100">Notable products:</strong> <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>, <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>, <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>, <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>, <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>, and more.
+            Notable products include <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>, <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>, <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>, <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>, <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>, and more.
           </p>
         </div>
 
