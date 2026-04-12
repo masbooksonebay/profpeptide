@@ -79,6 +79,7 @@ const sections: VendorSection[] = [
     ],
   },
   {
+    // US Vendors — keep alphabetical order when adding new vendors
     label: "US Vendors",
     vendors: [
       {
@@ -88,6 +89,28 @@ const sections: VendorSection[] = [
         discount: "10% off",
         region: "US",
         detailPage: "/coupons/apollo-peptide-sciences",
+      },
+      {
+        name: "EZ Peptides",
+        url: "https://ezpeptides.com/?ref=nldbbgvs",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "US",
+        detailPage: "/coupons/ez-peptides",
+        specialBadge: "4.7/5 Rating (176+ Reviews)",
+        specialBadgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
+        description: "U.S.-based supplier in Albuquerque, NM. Same-day shipping available. Third-party tested with COAs on every batch. Carries BPC-157, Semaglutide, Tirzepatide, Retatrutide, TB-500, Semax, Selank, NAD+, PT-141, and more.",
+      },
+      {
+        name: "Fusion Peptide",
+        url: "https://fusionpeptide.com/?ref=PROFPEPTIDE",
+        code: "PROFPEPTIDE",
+        discount: "15% off",
+        region: "US",
+        detailPage: "/coupons/fusion-peptide",
+        specialBadge: "Topicals & Nasal Sprays Available",
+        specialBadgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
+        description: "Unique delivery formats including topical creams and nasal sprays alongside injectable research peptides. 99% purity verified.",
       },
       {
         name: "Ignite Peptides",
@@ -128,25 +151,6 @@ const sections: VendorSection[] = [
         discount: "10% off",
         region: "US",
         detailPage: "/coupons/royal-peptides",
-      },
-      {
-        name: "Fusion Peptide",
-        url: "https://fusionpeptide.com/?ref=PROFPEPTIDE",
-        code: "PROFPEPTIDE",
-        discount: "15% off",
-        region: "US",
-        detailPage: "/coupons/fusion-peptide",
-        specialBadge: "Topicals & Nasal Sprays Available",
-        specialBadgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
-        description: "Unique delivery formats including topical creams and nasal sprays alongside injectable research peptides. 99% purity verified.",
-      },
-      {
-        name: "EZ Peptides",
-        url: "https://ezpeptides.com/?ref=nldbbgvs",
-        code: "PROFPEPTIDE",
-        discount: "10% off",
-        region: "US",
-        detailPage: "/coupons/ez-peptides",
       },
     ],
   },
