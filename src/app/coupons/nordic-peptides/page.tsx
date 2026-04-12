@@ -69,6 +69,10 @@ export default function NordicPeptidesCouponPage() {
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
+ q="What peptides does Nordic Peptides carry?"
+ a="Nordic Peptides carries European-sourced research peptides with a focus on purity and quality. Their catalog includes standard research peptides across recovery, metabolic, cognitive, and longevity categories."
+ />
+ <FAQItem
  q="Does Nordic Peptides have a discount code?"
  a="Not yet, but Prof. Peptide is working on securing an exclusive code. Check back soon."
  />

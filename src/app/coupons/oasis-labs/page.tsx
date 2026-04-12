@@ -91,6 +91,10 @@ export default function OasisLabsCouponPage() {
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
+ q="What peptides does Oasis Labs carry?"
+ a="Oasis Labs carries research-grade peptides across recovery, growth hormone, metabolic, cognitive, and longevity categories. Their catalog includes compounds such as BPC-157, TB-500, CJC-1295, Ipamorelin, Semaglutide, GHK-Cu, and Thymosin Alpha-1, among others."
+ />
+ <FAQItem
  q="Does Oasis Labs have a discount code?"
  a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Oasis Labs order. This code is verified and maintained by Prof. Peptide."
  />
@@ -113,12 +117,6 @@ export default function OasisLabsCouponPage() {
  </div>
  </div>
 
- <div>
- <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does Oasis Labs Carry?</h2>
- <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Oasis Labs carries research-grade peptides across recovery, growth hormone, metabolic, cognitive, and longevity categories. Their catalog includes compounds such as BPC-157, TB-500, CJC-1295, Ipamorelin, Semaglutide, GHK-Cu, and Thymosin Alpha-1, among others.
- </p>
- </div>
  </div>
  </div>
  );

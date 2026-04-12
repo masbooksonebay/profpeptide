@@ -88,6 +88,10 @@ export default function IntegrativePeptidesCouponPage() {
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
+ q="What peptides does Integrative Peptides carry?"
+ a="Integrative Peptides specializes in oral and topical peptide formulations designed for researchers who prefer non-injectable delivery formats. Their catalog includes oral BPC-157 (capsules and tablets), topical preparations, and combination peptide formulations."
+ />
+ <FAQItem
  q="Does Integrative Peptides have a discount code?"
  a="Yes, use code PROFPEPTIDE for 10% off your order. This code is verified and maintained by Prof. Peptide."
  />

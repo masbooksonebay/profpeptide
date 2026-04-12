@@ -87,6 +87,10 @@ export default function RoyalPeptidesCouponPage() {
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
+ q="What peptides does Royal Peptides carry?"
+ a="Royal Peptides carries research-grade peptides across recovery, growth hormone, metabolic, skin health, longevity, cognitive, and sexual health research categories. Their catalog includes compounds such as BPC-157, TB-500, CJC-1295, Ipamorelin, Semaglutide, GHK-Cu, and PT-141 among others."
+ />
+ <FAQItem
  q="Does Royal Peptides have a discount code?"
  a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Royal Peptides order. This code is verified and maintained by Prof. Peptide."
  />
@@ -109,12 +113,6 @@ export default function RoyalPeptidesCouponPage() {
  </div>
  </div>
 
- <div>
- <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does Royal Peptides Carry?</h2>
- <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Royal Peptides carries research-grade peptides across recovery, growth hormone, metabolic, skin health, longevity, cognitive, and sexual health research categories. Their catalog includes compounds such as BPC-157, TB-500, CJC-1295, Ipamorelin, Semaglutide, GHK-Cu, and PT-141 among others.
- </p>
- </div>
  </div>
  </div>
  );

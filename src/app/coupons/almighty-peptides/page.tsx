@@ -90,6 +90,10 @@ export default function AlmightyPeptidesCouponPage() {
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
+ q="What peptides does Almighty Peptides carry?"
+ a="Almighty Peptides carries 60+ research compounds across three delivery formats. Their lyophilized peptide catalog includes metabolic compounds such as Semaglutide, Tirzepatide, and Retatrutide, recovery peptides including BPC-157 and TB-500, growth hormone secretagogues including CJC-1295, Ipamorelin, Sermorelin, and Tesamorelin, longevity compounds including NAD+, Epitalon, and MOTS-c, skin health compounds including GHK-Cu, and sexual health compounds including PT-141 and Melanotan II. Their capsule catalog includes BPC-157, GHK-Cu, Methylene Blue, MK-677, LGD-4033, and SLU-PP-332. Their liquids catalog covers SARMs, aromatase inhibitors, and other research chemicals."
+ />
+ <FAQItem
  q="Does Almighty Peptides have a discount code?"
  a="Yes. Use code profpep at checkout to save 10% on any Almighty Peptides order. This code is verified and maintained by Prof. Peptide."
  />
@@ -112,12 +116,6 @@ export default function AlmightyPeptidesCouponPage() {
  </div>
  </div>
 
- <div>
- <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does Almighty Peptides Carry?</h2>
- <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Almighty Peptides carries 60+ research compounds across three delivery formats. Their lyophilized peptide catalog includes metabolic compounds such as Semaglutide, Tirzepatide, and Retatrutide, recovery peptides including BPC-157 and TB-500, growth hormone secretagogues including CJC-1295, Ipamorelin, Sermorelin, and Tesamorelin, longevity compounds including NAD+, Epitalon, and MOTS-c, skin health compounds including GHK-Cu, and sexual health compounds including PT-141 and Melanotan II. Their capsule catalog includes BPC-157, GHK-Cu, Methylene Blue, MK-677, LGD-4033, and SLU-PP-332. Their liquids catalog covers SARMs, aromatase inhibitors, and other research chemicals.
- </p>
- </div>
  </div>
  </div>
  );

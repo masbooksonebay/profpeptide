@@ -91,6 +91,10 @@ export default function SpartanPeptidesCouponPage() {
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
+ q="What peptides does Spartan Peptides carry?"
+ a="Spartan Peptides carries research compounds across eight categories. Anti-aging and cellular health compounds include GHK-Cu, Epitalon, NAD+, and MOTS-c. Recovery and repair peptides include BPC-157 and TB-500. Their weight loss catalog features GLP-3 (Retatrutide). Muscle development compounds include IGF-1 LR3. Additional categories cover sexual health (PT-141), mood and sleep, focus and clarity, and immunity compounds."
+ />
+ <FAQItem
  q="Does Spartan Peptides have a discount code?"
  a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Spartan Peptides order. This code is verified and maintained by Prof. Peptide."
  />
@@ -113,16 +117,6 @@ export default function SpartanPeptidesCouponPage() {
  </div>
  </div>
 
- <div>
- <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does Spartan Peptides Carry?</h2>
- <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Spartan Peptides carries research compounds across eight categories. Anti-aging and cellular health compounds include GHK-Cu, Epitalon, NAD+, and MOTS-c.
- Recovery and repair peptides include BPC-157 and TB-500.
- Their weight loss catalog features GLP-3 (Retatrutide).
- Muscle development compounds include IGF-1 LR3.
- Additional categories cover sexual health (PT-141), mood and sleep, focus and clarity, and immunity compounds.
- </p>
- </div>
  </div>
  </div>
  );

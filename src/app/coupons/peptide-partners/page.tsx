@@ -91,6 +91,10 @@ export default function PeptidePartnersCouponPage() {
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
+ q="What peptides does Peptide Partners carry?"
+ a="Peptide Partners carries research peptides across a broad range of categories. Their metabolic and GLP-1 compound catalog includes Semaglutide, Tirzepatide, Retatrutide, and MOTS-c. Recovery peptides include BPC-157, TB-500, and combination blends. Growth hormone secretagogues include Ipamorelin, CJC-1295, Sermorelin, and Tesamorelin. Additional categories include cognitive compounds such as Semax and Selank, skin health peptides including GHK-Cu, longevity and mitochondrial compounds including NAD+, SS-31, and Humanin, and immune peptides including Thymosin Alpha-1 and PT-141."
+ />
+ <FAQItem
  q="Does Peptide Partners have a discount code?"
  a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Peptide Partners order. This code is verified and maintained by Prof. Peptide."
  />
@@ -113,18 +117,6 @@ export default function PeptidePartnersCouponPage() {
  </div>
  </div>
 
- <div>
- <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does Peptide Partners Carry?</h2>
- <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Peptide Partners carries research peptides across a broad range of categories. Their metabolic and GLP-1 compound catalog includes Semaglutide, Tirzepatide, Retatrutide, and MOTS-c.
- Recovery peptides include BPC-157, TB-500, and combination blends.
- Growth hormone secretagogues include Ipamorelin, CJC-1295, Sermorelin, and Tesamorelin.
- Additional categories include cognitive compounds such as Semax and Selank,
- skin health peptides including GHK-Cu,
- longevity and mitochondrial compounds including NAD+, SS-31, and Humanin,
- and immune peptides including Thymosin Alpha-1 and PT-141.
- </p>
- </div>
  </div>
  </div>
  );

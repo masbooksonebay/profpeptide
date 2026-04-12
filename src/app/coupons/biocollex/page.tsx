@@ -70,10 +70,7 @@ export default function BioCollexCouponPage() {
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             The BioCollex catalog includes a strong selection of research compounds including Retatrutide, Tirzepatide, BPC-157, TB-500, GHK-Cu, NAD+, Semax, Selank, PT-141, Tesamorelin, CJC-1295, Ipamorelin, and more. Pre-formulated blends such as the Wolverine Stack (BPC-157 + TB-500) are also available.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            BioCollex can be reached by email at info@biocollexresearch.com.
-          </p>
-        </div>
+          </div>
 
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
           <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
@@ -92,6 +89,10 @@ export default function BioCollexCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
+ <FAQItem
+ q="What peptides does BioCollex carry?"
+ a="The BioCollex catalog includes a strong selection of research compounds including Retatrutide, Tirzepatide, BPC-157, TB-500, GHK-Cu, NAD+, Semax, Selank, PT-141, Tesamorelin, CJC-1295, Ipamorelin, and more. Pre-formulated blends such as the Wolverine Stack (BPC-157 + TB-500) are also available."
+ />
             <FAQItem
               q="Does BioCollex have a discount code?"
               a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any BioCollex order. This code is verified and maintained by Prof. Peptide."

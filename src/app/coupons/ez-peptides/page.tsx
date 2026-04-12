@@ -90,6 +90,10 @@ export default function EZPeptidesCouponPage() {
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
+ q="What peptides does EZ Peptides carry?"
+ a="The EZ Peptides catalog covers a wide range of research compounds including metabolic and GLP peptides such as Semaglutide, Tirzepatide, and Retatrutide, recovery compounds including BPC-157 and TB-500, cognitive peptides such as Semax and Selank, and longevity compounds including NAD+. PT-141 and additional compounds round out their catalog."
+ />
+ <FAQItem
  q="Does EZ Peptides have a discount code?"
  a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any EZ Peptides order. This code is verified and maintained by Prof. Peptide."
  />

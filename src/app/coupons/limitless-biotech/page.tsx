@@ -90,6 +90,10 @@ export default function LimitlessBiotechCouponPage() {
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
+ q="What peptides does Limitless Biotech carry?"
+ a="Limitless Biotech carries 90+ research-grade compounds &mdash; one of the largest catalogs in the research peptide space. Their catalog includes recovery peptides such as BPC-157 and TB-500, growth hormone secretagogues including Sermorelin, Ipamorelin, and CJC-1295, metabolic compounds including AOD-9604 and Semaglutide, cognitive and nootropic compounds including Selank and Semax, longevity compounds including Epitalon, MOTS-c, and NAD+, and sexual health compounds including PT-141. Peptide capsule and spray formats are also available alongside standard lyophilized compounds."
+ />
+ <FAQItem
  q="Does Limitless Biotech have a discount code?"
  a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Limitless Biotech order. This code is verified and maintained by Prof. Peptide."
  />
@@ -112,12 +116,6 @@ export default function LimitlessBiotechCouponPage() {
  </div>
  </div>
 
- <div>
- <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does Limitless Biotech Carry?</h2>
- <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Limitless Biotech carries 90+ research-grade compounds &mdash; one of the largest catalogs in the research peptide space. Their catalog includes recovery peptides such as BPC-157 and TB-500, growth hormone secretagogues including Sermorelin, Ipamorelin, and CJC-1295, metabolic compounds including AOD-9604 and Semaglutide, cognitive and nootropic compounds including Selank and Semax, longevity compounds including Epitalon, MOTS-c, and NAD+, and sexual health compounds including PT-141. Peptide capsule and spray formats are also available alongside standard lyophilized compounds.
- </p>
- </div>
  </div>
  </div>
  );

@@ -69,7 +69,7 @@ export default function AscensionPeptidesCouponPage() {
  Ascension Peptides conducts multi-stage third-party testing on all products, guaranteeing 99%+ purity and verifying that compounds are contaminant-free and potency-verified. Certificates of Analysis are publicly accessible through a dedicated &quot;Lab Testing / COAs&quot; page on their website, allowing researchers to review documentation prior to purchase.
  </p>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Ascension Peptides offers the largest discount available across Prof. Peptide&apos;s entire vendor network. Using code PROFPEPTIDE at checkout applies a 50% discount &mdash; a savings level that is rare in the research peptide space and makes Ascension Peptides a compelling option for researchers prioritizing value without compromising on documented quality standards. Ascension Peptides can be reached by phone at (303) 518-6550, Monday through Friday, 9am&ndash;5pm CST.
+ Ascension Peptides offers the largest discount available across Prof. Peptide&apos;s entire vendor network. Using code PROFPEPTIDE at checkout applies a 50% discount &mdash; a savings level that is rare in the research peptide space and makes Ascension Peptides a compelling option for researchers prioritizing value without compromising on documented quality standards.
  </p>
  </div>
 
@@ -90,6 +90,10 @@ export default function AscensionPeptidesCouponPage() {
  <div>
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
+ <FAQItem
+ q="What peptides does Ascension Peptides carry?"
+ a="Ascension Peptides carries a wide range of individual research peptides and pre-formulated blends. Their catalog includes GLP-1 compounds such as Semaglutide, recovery peptides including BPC-157 and TB-500, growth hormone secretagogues including CJC-1295 and Ipamorelin, skin health compounds including GHK-Cu and Melanotan, and longevity compounds including NAD+, Epithalon, and MOTS-c. Pre-formulated stacks including the Wolverine Stack and GLOW blend are also available."
+ />
  <FAQItem
  q="Does Ascension Peptides have a discount code?"
  a="Yes. Use code PROFPEPTIDE at checkout to save 50% on any Ascension Peptides order. This is the largest discount available across our entire vendor network and is verified and maintained by Prof. Peptide."
@@ -113,12 +117,6 @@ export default function AscensionPeptidesCouponPage() {
  </div>
  </div>
 
- <div>
- <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does Ascension Peptides Carry?</h2>
- <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Ascension Peptides carries a wide range of individual research peptides and pre-formulated blends. Their catalog includes GLP-1 compounds such as Semaglutide, recovery peptides including BPC-157 and TB-500, growth hormone secretagogues including CJC-1295 and Ipamorelin, skin health compounds including GHK-Cu and Melanotan, and longevity compounds including NAD+, Epithalon, and MOTS-c. Pre-formulated stacks including the Wolverine Stack and GLOW blend are also available.
- </p>
- </div>
  </div>
  </div>
  );

@@ -68,7 +68,7 @@ export default function ParticlePeptidesCouponPage() {
  Particle Peptides conducts the most comprehensive independent testing program of any vendor in Prof. Peptide&apos;s network. Every product is independently analyzed across six parameters: purity, molecular identity, peptide content, bioburden, endotoxin levels, and heavy metals &mdash; covering both class 1 and class 2 heavy metal contaminants. Particle Peptides states they are the only company in the market to present independent analysis of all six parameters across their entire product range. All testing limits are established in accordance with the European Pharmacopoeia (Ph. Eur.) &mdash; the gold standard for pharmaceutical substance quality in Europe. Compounds are produced by a manufacturer inspected by the FDA, NMPA, EMA, TGA, and MFDA, and compliant with cGMP, ISO 9001, and ISO 13485 standards. Testing is conducted blind and independently across multiple laboratories. All Certificates of Analysis are publicly accessible through a dedicated COA Vault on their website at particlepeptides.com/en/coa-vault.
  </p>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Particle Peptides stores all compounds in temperature-controlled environments to preserve peptide integrity from storage through delivery. The company emphasizes long-term customer relationships through recurring discounts and responsive customer service operating from their European base. Particle Peptides can be reached by phone at +421 917 149 682 or by email at info@particlepeptides.com.
+ Particle Peptides stores all compounds in temperature-controlled environments to preserve peptide integrity from storage through delivery. The company emphasizes long-term customer relationships through recurring discounts and responsive customer service operating from their European base.com.
  </p>
  </div>
 
@@ -89,6 +89,10 @@ export default function ParticlePeptidesCouponPage() {
  <div>
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
+ <FAQItem
+ q="What peptides does Particle Peptides carry?"
+ a="Particle Peptides carries 25 research compounds across eight categories. Healing and regeneration compounds include BPC-157, TB-500, GHK-Cu, LL-37, and KPV. Growth hormone secretagogues include Ipamorelin, CJC-1295 with DAC, Mod GRF 1-29 (CJC-1295 no DAC), GHRP-2, GHRP-6, and Hexarelin. Longevity and anti-aging compounds include Epithalon, MOTS-c, Pinealon, Thymalin, and Thymosin Alpha-1. Weight loss compounds include Retatrutide and AOD-9604. Cognitive compounds include Semax and Selank. Sleep research compounds include DSIP. Reproductive health compounds include Melanotan 2. Their specialty catalog also includes FOXO4-DRI (Proxofim), a rare senolytic compound."
+ />
  <FAQItem
  q="Does Particle Peptides have a discount code?"
  a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Particle Peptides order. This code is verified and maintained by Prof. Peptide."
@@ -112,12 +116,6 @@ export default function ParticlePeptidesCouponPage() {
  </div>
  </div>
 
- <div>
- <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does Particle Peptides Carry?</h2>
- <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Particle Peptides carries 25 research compounds across eight categories. Healing and regeneration compounds include BPC-157, TB-500, GHK-Cu, LL-37, and KPV. Growth hormone secretagogues include Ipamorelin, CJC-1295 with DAC, Mod GRF 1-29 (CJC-1295 no DAC), GHRP-2, GHRP-6, and Hexarelin. Longevity and anti-aging compounds include Epithalon, MOTS-c, Pinealon, Thymalin, and Thymosin Alpha-1. Weight loss compounds include Retatrutide and AOD-9604. Cognitive compounds include Semax and Selank. Sleep research compounds include DSIP. Reproductive health compounds include Melanotan 2. Their specialty catalog also includes FOXO4-DRI (Proxofim), a rare senolytic compound.
- </p>
- </div>
  </div>
  </div>
  );
