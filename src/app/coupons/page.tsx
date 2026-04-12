@@ -235,7 +235,7 @@ function VendorCard({ v }: { v: Vendor }) {
             Verified
           </span>
           {v.editorsPick && (
-            <span className="text-xs bg-amber-100 text-amber-800 dark:text-amber-300 border border-amber-300 px-2 py-0.5 rounded-full font-medium">
+            <span className="text-xs bg-amber-700 text-amber-100 border border-amber-600 px-2 py-0.5 rounded-full font-semibold">
               Editor&apos;s Pick
             </span>
           )}
