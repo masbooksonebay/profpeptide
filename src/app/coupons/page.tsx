@@ -90,6 +90,14 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/apollo-peptide-sciences",
       },
       {
+        name: "BioCollex",
+        url: "https://biocollexresearch.com/?ref=profpeptidehq",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/biocollex",
+      },
+      {
         name: "EZ Peptides",
         url: "https://ezpeptides.com/?ref=nldbbgvs",
         code: "PROFPEPTIDE",
