@@ -96,7 +96,6 @@ const sections: VendorSection[] = [
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/ez-peptides",
-        description: "U.S.-based supplier in Albuquerque, NM. 4.7/5 customer rating (176+ reviews). Same-day shipping available. Third-party tested with COAs on every batch. Carries BPC-157, Semaglutide, Tirzepatide, Retatrutide, TB-500, Semax, Selank, NAD+, PT-141, and more.",
       },
       {
         name: "Fusion Peptide",
@@ -105,7 +104,6 @@ const sections: VendorSection[] = [
         discount: "15% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/fusion-peptide",
-        description: "Unique delivery formats including topical creams and nasal sprays alongside injectable research peptides. 99% purity verified.",
       },
       {
         name: "Ignite Peptides",
