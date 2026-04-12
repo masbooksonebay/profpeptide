@@ -33,7 +33,7 @@ const sections: VendorSection[] = [
         url: "https://peptide.partners/ref/48/",
         code: "PROFPEPTIDE",
         discount: "10% off",
-        region: "US",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         editorsPick: true,
         detailPage: "/coupons/peptide-partners",
       },
@@ -42,17 +42,8 @@ const sections: VendorSection[] = [
         url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
         code: "PROFPEPTIDE",
         discount: "10% off",
-        region: "US",
-        purityBadge: "\u226598% Purity Verified",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/spartan-peptides",
-      },
-      {
-        name: "Vital Core Research",
-        url: "https://vitalcoreresearch.com/?ref=nbwnvhnu",
-        code: "PROFPEPTIDE",
-        discount: "20% off",
-        region: "US",
-        detailPage: "/coupons/vital-core-research",
       },
     ],
   },
@@ -64,7 +55,7 @@ const sections: VendorSection[] = [
         url: "https://ascensionpeptides.com/ref/profpeptide/",
         code: "PROFPEPTIDE",
         discount: "50% off",
-        region: "US",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         bestDeal: true,
         detailPage: "/coupons/ascension-peptides",
       },
@@ -73,8 +64,16 @@ const sections: VendorSection[] = [
         url: "https://www.almightypeptides.com/?sld=profpeptide",
         code: "PROFPEPTIDE",
         discount: "20% off",
-        region: "US",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/almighty-peptides",
+      },
+      {
+        name: "Vital Core Research",
+        url: "https://vitalcoreresearch.com/?ref=nbwnvhnu",
+        code: "PROFPEPTIDE",
+        discount: "20% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/vital-core-research",
       },
     ],
   },
@@ -87,7 +86,7 @@ const sections: VendorSection[] = [
         url: "https://apollopeptidesciences.com/?rfsn=8846124.8bdc49",
         code: "PROFPEPTIDE",
         discount: "10% off",
-        region: "US",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/apollo-peptide-sciences",
       },
       {
@@ -95,21 +94,17 @@ const sections: VendorSection[] = [
         url: "https://ezpeptides.com/?ref=nldbbgvs",
         code: "PROFPEPTIDE",
         discount: "10% off",
-        region: "US",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/ez-peptides",
-        specialBadge: "4.7/5 Rating (176+ Reviews)",
-        specialBadgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
-        description: "U.S.-based supplier in Albuquerque, NM. Same-day shipping available. Third-party tested with COAs on every batch. Carries BPC-157, Semaglutide, Tirzepatide, Retatrutide, TB-500, Semax, Selank, NAD+, PT-141, and more.",
+        description: "U.S.-based supplier in Albuquerque, NM. 4.7/5 customer rating (176+ reviews). Same-day shipping available. Third-party tested with COAs on every batch. Carries BPC-157, Semaglutide, Tirzepatide, Retatrutide, TB-500, Semax, Selank, NAD+, PT-141, and more.",
       },
       {
         name: "Fusion Peptide",
         url: "https://fusionpeptide.com/?ref=PROFPEPTIDE",
         code: "PROFPEPTIDE",
         discount: "15% off",
-        region: "US",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/fusion-peptide",
-        specialBadge: "Topicals & Nasal Sprays Available",
-        specialBadgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
         description: "Unique delivery formats including topical creams and nasal sprays alongside injectable research peptides. 99% purity verified.",
       },
       {
@@ -117,7 +112,7 @@ const sections: VendorSection[] = [
         url: "https://ignitepeptides.com/ref/profpeptide/",
         code: "PROFPEPTIDE",
         discount: "10% off",
-        region: "US",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/ignite-peptides",
       },
       {
@@ -125,7 +120,7 @@ const sections: VendorSection[] = [
         url: "https://integrativepeptides.com/affiliate/profpeptide/",
         code: "PROFPEPTIDE",
         discount: "10% off",
-        region: "US",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/integrative-peptides",
       },
       {
@@ -133,7 +128,7 @@ const sections: VendorSection[] = [
         url: "https://www.limitlesslifenootropics.com/?_ef_transaction_id=&oid=1&affid=10477",
         code: "PROFPEPTIDE",
         discount: "10% off",
-        region: "US",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/limitless-biotech",
       },
       {
@@ -141,7 +136,7 @@ const sections: VendorSection[] = [
         url: "https://myoasislabs.com/?sld=profpeptide",
         code: "PROFPEPTIDE",
         discount: "10% off",
-        region: "US",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/oasis-labs",
       },
       {
@@ -149,7 +144,7 @@ const sections: VendorSection[] = [
         url: "https://royal-peptides.com/?ref=urunwnog",
         code: "PROFPEPTIDE",
         discount: "10% off",
-        region: "US",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/royal-peptides",
       },
     ],
@@ -239,7 +234,7 @@ function VendorCard({ v }: { v: Vendor }) {
             Verified
           </span>
           {v.editorsPick && (
-            <span className="text-xs bg-amber-700 text-amber-100 border border-amber-600 px-2 py-0.5 rounded-full font-semibold">
+            <span className="text-xs bg-[#eab308] text-[#1c1917] border border-[#ca8a04] px-2 py-0.5 rounded-full font-semibold">
               Editor&apos;s Pick
             </span>
           )}
