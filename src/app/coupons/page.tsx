@@ -82,21 +82,21 @@ const sections: VendorSection[] = [
     label: "US Vendors",
     vendors: [
       {
-        name: "Behemoth Labz",
-        url: "https://behemothlabz.com/aff/208/",
-        code: "",
-        discount: "Code coming soon",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        comingSoon: true,
-        detailPage: "/coupons/behemoth-labz",
-      },
-      {
         name: "Apollo Peptide Sciences",
         url: "https://apollopeptidesciences.com/?rfsn=8846124.8bdc49",
         code: "PROFPEPTIDE",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/apollo-peptide-sciences",
+      },
+      {
+        name: "Behemoth Labz",
+        url: "https://behemothlabz.com/aff/208/",
+        code: "",
+        discount: "Coming soon",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        comingSoon: true,
+        detailPage: "/coupons/behemoth-labz",
       },
       {
         name: "BioCollex",

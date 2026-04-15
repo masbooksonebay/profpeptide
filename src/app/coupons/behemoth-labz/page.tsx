@@ -54,7 +54,7 @@ export default function BehemothLabzCouponPage() {
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
           <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Discount Code</p>
           <div className="w-full bg-gray-100 dark:bg-slate-800 border border-gray-200 dark:border-slate-600 px-4 py-3 rounded-lg text-center">
-            <span className="text-sm text-gray-500 dark:text-slate-400 italic">Code coming soon</span>
+            <span className="text-sm text-gray-500 dark:text-slate-400 italic">Coming soon</span>
           </div>
           <p className="text-center text-sm text-gray-400 dark:text-slate-500 mt-2 mb-4">Check back for an exclusive discount code</p>
           <a href="https://behemothlabz.com/aff/208/" target="_blank" rel="noopener noreferrer" className="btn-primary w-full text-center block">
