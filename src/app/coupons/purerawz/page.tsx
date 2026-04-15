@@ -71,8 +71,14 @@ export default function PureRawzCouponPage() {
 
         <div className="space-y-8">
           <div>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+              PureRawz is a US-based research compound supplier founded to serve the scientific research community with a broad catalog of third-party tested peptides, SARMs, nootropics, and related compounds. Operating out of the United States, PureRawz ships domestically with free shipping on orders over $100 and offers international shipping at competitive rates.
+            </p>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+              PureRawz conducts both first-party and third-party testing on all products. Every batch is accompanied by a Certificate of Analysis (COA) from independent third-party analytical laboratories, confirming purity, molecular identity, batch number, and testing methodology &mdash; typically HPLC or Mass Spectrometry. PureRawz maintains a minimum purity standard of 99% across its peptide catalog, with COAs published directly on product pages so researchers can verify results before purchase. This commitment to documented transparency places PureRawz above many suppliers in the research compound space who do not publish third-party verification.
+            </p>
             <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-              PureRawz is a US-based research peptide and compound supplier known for its extensive product catalog and third-party testing standards. Their offerings span peptides, SARMs, nootropics, and other research compounds. PureRawz publishes certificates of analysis on their product pages and offers a wide selection of both common and harder-to-find research compounds.
+              PureRawz offers research compounds in multiple forms &mdash; lyophilized powder, liquid solution, nasal spray, tablets, and capsules &mdash; allowing researchers to select the format best suited to their experimental protocols. Their catalog spans peptides, SARMs (Selective Androgen Receptor Modulators), nootropics, and post-cycle therapy compounds, making PureRawz a single source for researchers studying a wide range of biological pathways.
             </p>
           </div>
 
@@ -80,12 +86,7 @@ export default function PureRawzCouponPage() {
             <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
             <CodeBox code="PROF10" />
             <p className="text-center text-sm text-[#0891b2] font-medium mt-2 mb-4">10% off your entire order</p>
-            <a
-              href="https://purerawz.co/?ref=1901"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary w-full text-center block"
-            >
+            <a href="https://purerawz.co/?ref=1901" target="_blank" rel="noopener noreferrer" className="btn-primary w-full text-center block">
               Shop PureRawz &rarr;
             </a>
           </div>
@@ -93,27 +94,19 @@ export default function PureRawzCouponPage() {
           <div>
             <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
             <div className="space-y-2">
-              <FAQItem
-                q="What compounds does PureRawz carry?"
-                a="PureRawz carries an extensive catalog of research compounds including peptides such as BPC-157, TB-500, CJC-1295, Ipamorelin, Semaglutide, Tirzepatide, and GHK-Cu. They also offer SARMs, nootropics, and other research compounds. Their catalog includes both common research peptides and harder-to-find compounds not widely available from other suppliers."
-              />
-              <FAQItem
-                q="Does PureRawz have a discount code?"
-                a="Yes. Use code PROF10 at checkout to save 10% on any PureRawz order. This code is verified and maintained by Prof. Peptide."
-              />
-              <FAQItem
-                q="How do I use the PureRawz discount code?"
-                a="Add your items to cart at purerawz.co, proceed to checkout, and enter PROF10 in the discount code field. The 10% discount will be applied to your order total."
-              />
-              <FAQItem
-                q="What types of third-party testing does PureRawz provide?"
-                a="PureRawz publishes certificates of analysis (COAs) on their product pages. Third-party testing verifies compound identity, purity, and consistency, allowing researchers to review documentation before purchasing."
-              />
-              <FAQItem
-                q="Is PureRawz pricing competitive?"
-                a="PureRawz offers competitive pricing across their catalog, particularly for larger quantity orders. Combined with the PROF10 discount code for 10% off, their pricing is among the more affordable options for research-grade compounds."
-              />
+              <FAQItem q="What compounds does PureRawz carry?" a="PureRawz carries a broad catalog including peptides (BPC-157, TB-500, IGF-1 LR3, Ipamorelin, CJC-1295, GHK-Cu, NAD+, Epitalon, PT-141), SARMs (RAD-140, MK-677, LGD-4033, Ostarine, Cardarine), nootropics, and PCT compounds. Available in liquid, powder, nasal spray, tablet, and capsule forms." />
+              <FAQItem q="Does PureRawz have a discount code?" a="Yes. Use code PROF10 at checkout for 10% off your entire order at PureRawz. This code is verified by Prof. Peptide and updated regularly." />
+              <FAQItem q="How do I use the PureRawz discount code?" a="Add compounds to your cart at purerawz.co, proceed to checkout, and enter PROF10 in the discount code field. The 10% discount applies to your order total before payment." />
+              <FAQItem q="What types of third-party testing does PureRawz provide?" a="PureRawz conducts first-party and independent third-party testing using HPLC and Mass Spectrometry. COAs are published on each product page confirming purity, batch number, testing date, and methodology." />
+              <FAQItem q="Is PureRawz pricing competitive?" a="PureRawz offers competitive pricing with free US shipping over $100. Use code PROF10 for an additional 10% off." />
             </div>
+          </div>
+
+          <div>
+            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does PureRawz Carry?</h2>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+              PureRawz carries research compounds across multiple categories. Their peptide catalog includes BPC-157, TB-500, GHK-Cu, Epitalon, IGF-1 LR3, Ipamorelin, CJC-1295, PT-141, Selank, Semax, and NAD+. Their SARMs catalog includes RAD-140 (Testolone), MK-677 (Ibutamoren), LGD-4033 (Ligandrol), Ostarine (MK-2866), and Cardarine (GW-501516). PureRawz also carries nootropic research compounds and post-cycle therapy compounds. All products are available in multiple formats with third-party COAs.
+            </p>
           </div>
         </div>
       </div>
