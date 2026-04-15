@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Integrative Peptides Discount Code & Promo Code 2026 (April 2026) | Prof. Peptide",
+  title: "Integrative Peptides Discount Code (April 2026) — Save 10% | Prof. Peptide",
   description:
     "Get 10% off at Integrative Peptides with code PROFPEPTIDE. Verified coupon and promo code for physician-trusted oral peptide supplements.",
 };

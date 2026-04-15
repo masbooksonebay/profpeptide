@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Peptide Partners Discount Code — Save 10% (April 2026) | Prof. Peptide",
+  title: "Peptide Partners Discount Code (April 2026) — Save 10% | Prof. Peptide",
   description:
     "Use Peptide Partners discount code PROFPEPTIDE to save 10% on research peptides. Four independent test types per batch. Purity, endotoxin, heavy metals, and sterility verified.",
 };
