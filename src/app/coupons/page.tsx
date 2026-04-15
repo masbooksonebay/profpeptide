@@ -146,6 +146,14 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/oasis-labs",
       },
       {
+        name: "PureRawz",
+        url: "https://purerawz.co/?ref=1901",
+        code: "PROF10",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/purerawz",
+      },
+      {
         name: "Royal Peptides",
         url: "https://royal-peptides.com/?ref=urunwnog",
         code: "PROFPEPTIDE",

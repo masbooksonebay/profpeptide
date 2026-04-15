@@ -5,5 +5,10 @@ export const metadata = {
 };
 
 export default function FusionPeptideLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Fusion Peptide Discount Code - Save 15%\",\"description\":\"Use code PROFPEPTIDE for 15% off at Fusion Peptide\",\"url\":\"https://www.profpeptide.com/coupons/fusion-peptide\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Fusion Peptide\"}}" }} />
+      {children}
+    </>
+  );
 }

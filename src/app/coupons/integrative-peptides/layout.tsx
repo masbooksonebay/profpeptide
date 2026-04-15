@@ -1,9 +1,14 @@
 export const metadata = {
-  title: "Integrative Peptides Discount Code & Promo Code 2026 | Prof. Peptide",
+  title: "Integrative Peptides Discount Code & Promo Code 2026 (April 2026) | Prof. Peptide",
   description:
     "Get 10% off at Integrative Peptides with code PROFPEPTIDE. Verified coupon and promo code for physician-trusted oral peptide supplements.",
 };
 
 export default function IntegrativePeptidesLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Integrative Peptides Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at Integrative Peptides\",\"url\":\"https://www.profpeptide.com/coupons/integrative-peptides\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Integrative Peptides\"}}" }} />
+      {children}
+    </>
+  );
 }
