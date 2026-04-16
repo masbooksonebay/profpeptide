@@ -82,6 +82,10 @@ export default function IgnitePeptidesCouponPage() {
  Shop Ignite Peptides &rarr;
  </a>
  </div>
+        <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">
+          Discount code verified and valid as of April 2026.
+        </p>
+
 
  <div>
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>

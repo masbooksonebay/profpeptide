@@ -120,6 +120,25 @@ export default function Home() {
       </div>
 
       <section className="section">
+        <div className="mb-12">
+          <div className="flex items-end justify-between mb-4">
+            <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100">Latest News</h2>
+            <Link href="/news" className="text-xs font-medium text-[#0891b2] hover:underline">View all news &rarr;</Link>
+          </div>
+          <Link
+            href="/news/fda-peptide-compounding-update-april-2026"
+            className="block border border-gray-200 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] hover:shadow-md transition-all group bg-white dark:bg-[#0f172a]"
+          >
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">April 16, 2026</p>
+            <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#0891b2] transition-colors mb-2">
+              FDA Moves to Restore Peptide Access &mdash; What Researchers Need to Know
+            </h3>
+            <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+              The FDA posted a Federal Register notice considering lifting restrictions on seven Category 2 peptides, with an advisory panel scheduled for late July 2026. Here&rsquo;s what it means for the research community.
+            </p>
+            <span className="text-xs font-medium text-[#0891b2] mt-3 inline-block">Read more &rarr;</span>
+          </Link>
+        </div>
         <h2 className="text-2xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2 text-center">Everything a researcher needs</h2>
         <p className="text-gray-500 dark:text-slate-400 text-center mb-10 text-sm max-w-lg mx-auto">
           From peptide mechanisms to reconstitution math — Prof. Peptide covers it all, clearly and credibly.

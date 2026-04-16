@@ -92,10 +92,9 @@ const sections: VendorSection[] = [
       {
         name: "Behemoth Labz",
         url: "https://behemothlabz.com/aff/208/",
-        code: "",
-        discount: "Coming soon",
+        code: "PROF10",
+        discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        comingSoon: true,
         detailPage: "/coupons/behemoth-labz",
       },
       {
@@ -329,6 +328,16 @@ export default function CouponsPage() {
       <p className="text-xs text-gray-400 dark:text-slate-500 mb-8 leading-relaxed max-w-lg">
         All discount codes, promo codes, and coupon codes are verified by Prof. Peptide and updated regularly.
       </p>
+
+      <div className="mb-10">
+        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">How We Choose Our Vendors</h2>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+          Not all peptide suppliers are created equal. We&rsquo;ve done the research so you don&rsquo;t have to &mdash; independently evaluating vendors across the industry on the criteria that matter most: third-party lab testing, certificate of analysis (COA) availability, purity standards, shipping reliability, and customer trust. Every vendor featured on this page has earned their place. We only partner with suppliers who meet our standards for transparency and quality &mdash; and we update our recommendations regularly to reflect changes in the market. All discount codes below are verified and valid as of April 2026.
+        </p>
+        <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">
+          Codes verified and valid as of April 2026.
+        </p>
+      </div>
 
       <div className="space-y-8 mb-10">
         {sections.map((section) => (

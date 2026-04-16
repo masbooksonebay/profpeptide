@@ -7,7 +7,7 @@ export const metadata = {
 export default function LimitlessBiotechLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Limitless Biotech Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at Limitless Biotech\",\"url\":\"https://www.profpeptide.com/coupons/limitless-biotech\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Limitless Biotech\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Limitless Biotech Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at Limitless Biotech\",\"url\":\"https://www.profpeptide.com/coupons/limitless-biotech\",\"validFrom\":\"2026-04-01\",\"priceValidUntil\":\"2026-04-30\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Limitless Biotech\"}}" }} />
       {children}
     </>
   );

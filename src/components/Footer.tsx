@@ -50,9 +50,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-200 dark:border-slate-700 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-gray-400 dark:text-slate-500">
-            &copy; {new Date().getFullYear()} Prof. Peptide. All rights reserved.
-          </p>
+          <div className="text-xs text-gray-400 dark:text-slate-500 space-y-1">
+            <p>&copy; {new Date().getFullYear()} Prof. Peptide. All rights reserved.</p>
+            <p>&copy; 2026 Strength Cycle Studios, LLC. All rights reserved.</p>
+          </div>
           <p className="text-xs text-gray-400 dark:text-slate-500 text-center sm:text-right max-w-sm">
             For educational and research purposes only. Not medical advice. Not for human consumption.
           </p>

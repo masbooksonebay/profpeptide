@@ -18,6 +18,13 @@ export const metadata = {
 
 const articles = [
   {
+    title: "FDA Moves to Restore Peptide Access \u2014 What Researchers Need to Know",
+    slug: "fda-peptide-compounding-update-april-2026",
+    date: "April 16, 2026",
+    excerpt:
+      "The FDA posted a Federal Register notice considering lifting restrictions on seven Category 2 peptides, with an advisory panel scheduled for late July 2026. Here\u2019s what it means for the research community.",
+  },
+  {
     title: "RFK\u2019s Peptide Ruling: Where Things Stand in April 2026",
     slug: "rfk-peptide-update-april-2026",
     date: "April 12, 2026",

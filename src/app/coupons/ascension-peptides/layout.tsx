@@ -7,7 +7,7 @@ export const metadata = {
 export default function AscensionPeptidesLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Ascension Peptides Discount Code - Save 50%\",\"description\":\"Use code PROFPEPTIDE for 50% off at Ascension Peptides\",\"url\":\"https://www.profpeptide.com/coupons/ascension-peptides\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Ascension Peptides\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Ascension Peptides Discount Code - Save 50%\",\"description\":\"Use code PROFPEPTIDE for 50% off at Ascension Peptides\",\"url\":\"https://www.profpeptide.com/coupons/ascension-peptides\",\"validFrom\":\"2026-04-01\",\"priceValidUntil\":\"2026-04-30\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Ascension Peptides\"}}" }} />
       {children}
     </>
   );

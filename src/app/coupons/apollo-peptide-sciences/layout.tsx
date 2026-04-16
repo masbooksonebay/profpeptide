@@ -7,7 +7,7 @@ export const metadata = {
 export default function ApolloPeptideSciencesLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Apollo Peptide Sciences Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at Apollo Peptide Sciences\",\"url\":\"https://www.profpeptide.com/coupons/apollo-peptide-sciences\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Apollo Peptide Sciences\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Apollo Peptide Sciences Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at Apollo Peptide Sciences\",\"url\":\"https://www.profpeptide.com/coupons/apollo-peptide-sciences\",\"validFrom\":\"2026-04-01\",\"priceValidUntil\":\"2026-04-30\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Apollo Peptide Sciences\"}}" }} />
       {children}
     </>
   );
