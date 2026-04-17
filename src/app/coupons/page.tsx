@@ -329,13 +329,19 @@ export default function CouponsPage() {
         All discount codes, promo codes, and coupon codes are verified by Prof. Peptide and updated regularly.
       </p>
 
-      <div className="mb-10">
+      <div className="mb-8">
         <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">How We Choose Our Vendors</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           Not all peptide suppliers are created equal. We&rsquo;ve done the research so you don&rsquo;t have to &mdash; independently evaluating vendors across the industry on the criteria that matter most: third-party lab testing, certificate of analysis (COA) availability, purity standards, shipping reliability, and customer trust. Every vendor featured on this page has earned their place. We only partner with suppliers who meet our standards for transparency and quality &mdash; and we update our recommendations regularly to reflect changes in the market. All discount codes below are verified and valid as of April 2026.
         </p>
-        <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">
-          Codes verified and valid as of April 2026.
+      </div>
+
+      <div className="flex items-center justify-center gap-2.5 mb-8 py-3.5 px-4 bg-[#0891b2]/10 border border-[#0891b2]/30 rounded-lg">
+        <svg className="w-5 h-5 text-[#0891b2] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <p className="text-base font-bold text-[#1e2d3d] dark:text-white tracking-tight">
+          All codes verified working &mdash; April 2026
         </p>
       </div>
 

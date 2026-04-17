@@ -73,6 +73,15 @@ export default function SpartanPeptidesCouponPage() {
  </p>
  </div>
 
+ <div className="flex items-center justify-center gap-2.5 py-3.5 px-4 bg-[#0891b2]/10 border border-[#0891b2]/30 rounded-lg">
+   <svg className="w-5 h-5 text-[#0891b2] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
+     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+   </svg>
+   <p className="text-base font-bold text-[#1e2d3d] dark:text-white tracking-tight">
+     Verified working as of April 2026
+   </p>
+ </div>
+
  <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
  <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
  <CodeBox code="PROFPEPTIDE" />
@@ -86,9 +95,6 @@ export default function SpartanPeptidesCouponPage() {
  Shop Spartan Peptides &rarr;
  </a>
  </div>
-        <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">
-          Discount code verified and valid as of April 2026.
-        </p>
 
 
  <div>

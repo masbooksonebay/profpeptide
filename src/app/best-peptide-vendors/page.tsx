@@ -143,9 +143,18 @@ export default function BestPeptideVendorsPage() {
           Finding a reliable peptide supplier requires more than a Google search. Quality varies dramatically across vendors &mdash; from rigorous third-party tested compounds with published COAs, to unverified products with no documentation. At Prof. Peptide, we&rsquo;ve done the research so you don&rsquo;t have to. Below is our curated list of the best peptide vendors for research in 2026, evaluated on third-party testing standards, COA transparency, catalog depth, shipping reliability, and community reputation. All codes verified as of April 2026.
         </p>
 
-        <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed mb-10 max-w-xl">
+        <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed mb-8 max-w-xl">
           Looking for the full discount code list? Visit our <Link href="/coupons" className="text-[#0891b2] hover:underline">verified discount codes</Link> page.
         </p>
+
+        <div className="flex items-center justify-center gap-2.5 mb-8 py-3.5 px-4 bg-[#0891b2]/10 border border-[#0891b2]/30 rounded-lg">
+          <svg className="w-5 h-5 text-[#0891b2] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <p className="text-base font-bold text-[#1e2d3d] dark:text-white tracking-tight">
+            All codes verified working &mdash; April 2026
+          </p>
+        </div>
 
         <div className="space-y-6">
           {vendors.map((v, idx) => (
