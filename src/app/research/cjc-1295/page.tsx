@@ -49,8 +49,8 @@ const studies = [
 export default function CJC1295ResearchPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"CJC-1295 Research","description":"4 key CJC-1295 studies summarized in plain English. Covers human GH/IGF-1 elevation, pulsatility preservation, and GH secretagogue development.","url":"https://www.profpeptide.com/research/cjc-1295","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"CJC-1295 Research"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"CJC-1295 Research","description":"4 key CJC-1295 studies summarized in plain English. Covers human GH/IGF-1 elevation, pulsatility preservation, and GH secretagogue development.","url":"https://profpeptide.com/research/cjc-1295","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"CJC-1295 Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
       <div className="flex flex-wrap items-center gap-3 mb-1">

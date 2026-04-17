@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "RFK\u2019s Peptide Ruling: Where Things Stand in April 2026",
     description: "RFK Jr. announced 14 peptides would return to legal compounding status \u2014 but the FDA hasn\u2019t published the official list yet.",
-    url: "https://www.profpeptide.com/news/rfk-peptide-update-april-2026",
-    images: [{ url: "https://www.profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
+    url: "https://profpeptide.com/news/rfk-peptide-update-april-2026",
+    images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
   },
   twitter: {
     card: "summary_large_image" as const,
     title: "RFK\u2019s Peptide Ruling: Where Things Stand in April 2026",
     description: "RFK Jr. announced 14 peptides would return to legal compounding status \u2014 but the FDA hasn\u2019t published the official list yet.",
-    images: ["https://www.profpeptide.com/og-image.png"],
+    images: ["https://profpeptide.com/og-image.png"],
   },
 };
 
@@ -29,16 +29,16 @@ export default function RFKPeptideUpdatePage() {
         "description": "RFK Jr. announced 14 peptides would return to legal compounding status \u2014 but the FDA hasn\u2019t published the official list yet.",
         "datePublished": "2026-04-12",
         "dateModified": "2026-04-12",
-        "url": "https://www.profpeptide.com/news/rfk-peptide-update-april-2026",
-        "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://www.profpeptide.com" },
+        "url": "https://profpeptide.com/news/rfk-peptide-update-april-2026",
+        "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://profpeptide.com" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.profpeptide.com" },
-          { "@type": "ListItem", "position": 2, "name": "News", "item": "https://www.profpeptide.com/news" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://profpeptide.com" },
+          { "@type": "ListItem", "position": 2, "name": "News", "item": "https://profpeptide.com/news" },
           { "@type": "ListItem", "position": 3, "name": "RFK\u2019s Peptide Ruling: Where Things Stand in April 2026" },
         ],
       }} />

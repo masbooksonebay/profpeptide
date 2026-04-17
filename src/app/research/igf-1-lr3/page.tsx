@@ -49,8 +49,8 @@ const studies = [
 export default function IGF1LR3ResearchPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"IGF-1 LR3 Research","description":"4 key IGF-1 LR3 studies summarized in plain English. Covers muscle therapeutics, mTOR signaling, doping pharmacology, and performance research.","url":"https://www.profpeptide.com/research/igf-1-lr3","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"IGF-1 LR3 Research"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"IGF-1 LR3 Research","description":"4 key IGF-1 LR3 studies summarized in plain English. Covers muscle therapeutics, mTOR signaling, doping pharmacology, and performance research.","url":"https://profpeptide.com/research/igf-1-lr3","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"IGF-1 LR3 Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
 

@@ -94,8 +94,8 @@ const sections = [
 export default function MOTSCPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"MOTS-c","description":"MOTS-c research profile covering mitochondrial-derived exercise mimetic mechanism, AMPK activation, insulin sensitivity, and aging research.","url":"https://www.profpeptide.com/peptides/mots-c","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"MOTS-c"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"MOTS-c","description":"MOTS-c research profile covering mitochondrial-derived exercise mimetic mechanism, AMPK activation, insulin sensitivity, and aging research.","url":"https://profpeptide.com/peptides/mots-c","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"MOTS-c"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

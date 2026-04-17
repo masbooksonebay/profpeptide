@@ -8,11 +8,11 @@ export const metadata = {
   openGraph: {
     title: "News — Peptide Research & Regulatory Updates",
     description: "Latest news on peptide research, FDA regulatory changes, and supplement industry developments.",
-    images: [{ url: "https://www.profpeptide.com/og-image.png", width: 1024, height: 1024, alt: "Prof. Peptide" }],
+    images: [{ url: "https://profpeptide.com/og-image.png", width: 1024, height: 1024, alt: "Prof. Peptide" }],
   },
   twitter: {
     card: "summary_large_image" as const,
-    images: ["https://www.profpeptide.com/og-image.png"],
+    images: ["https://profpeptide.com/og-image.png"],
   },
 };
 
@@ -47,7 +47,7 @@ export default function NewsPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.profpeptide.com" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://profpeptide.com" },
           { "@type": "ListItem", "position": 2, "name": "News" },
         ],
       }} />

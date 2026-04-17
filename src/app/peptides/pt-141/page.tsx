@@ -95,8 +95,8 @@ const sections = [
 export default function PT141Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"PT-141","description":"PT-141 (Bremelanotide) research profile covering FDA-approved CNS mechanism for sexual desire, RECONNECT trial data, and off-label male ED use.","url":"https://www.profpeptide.com/peptides/pt-141","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"PT-141"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"PT-141","description":"PT-141 (Bremelanotide) research profile covering FDA-approved CNS mechanism for sexual desire, RECONNECT trial data, and off-label male ED use.","url":"https://profpeptide.com/peptides/pt-141","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"PT-141"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

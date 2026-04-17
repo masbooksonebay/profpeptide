@@ -2,6 +2,10 @@ import Link from "next/link";
 import { Icon } from "@/components/CategoryIcon";
 import JsonLd from "@/components/JsonLd";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 const features = [
   {
     icon: "flask-outline",
@@ -75,11 +79,11 @@ export default function Home() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Prof. Peptide",
-        "url": "https://www.profpeptide.com",
+        "url": "https://profpeptide.com",
         "description": "Independent peptide and supplement research education platform.",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://www.profpeptide.com/peptides?q={search_term_string}",
+          "target": "https://profpeptide.com/peptides?q={search_term_string}",
           "query-input": "required name=search_term_string",
         },
       }} />
@@ -87,9 +91,9 @@ export default function Home() {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Prof. Peptide",
-        "url": "https://www.profpeptide.com",
+        "url": "https://profpeptide.com",
         "description": "Independent peptide and supplement research education platform.",
-        "logo": "https://www.profpeptide.com/icon.png",
+        "logo": "https://profpeptide.com/icon.png",
       }} />
       <section className="bg-white dark:bg-[#0f172a] border-b border-gray-100 dark:border-slate-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center">

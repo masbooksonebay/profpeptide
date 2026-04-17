@@ -10,8 +10,8 @@ export const metadata = {
 export default function GreenTeaExtractPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Green Tea Extract","description":"Green tea extract (EGCG) profile covering fat oxidation, COMT inhibition, caffeine synergy, cardiovascular benefits, and dosage guidance.","url":"https://www.profpeptide.com/supplements/green-tea-extract","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://www.profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Green Tea Extract"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Green Tea Extract","description":"Green tea extract (EGCG) profile covering fat oxidation, COMT inhibition, caffeine synergy, cardiovascular benefits, and dosage guidance.","url":"https://profpeptide.com/supplements/green-tea-extract","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Green Tea Extract"}]}} />
     <div className="section max-w-3xl">
       <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 

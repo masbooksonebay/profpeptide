@@ -49,8 +49,8 @@ const studies = [
 export default function MelanotanIIResearchPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Melanotan II Research","description":"4 key Melanotan II studies summarized in plain English. Covers Phase I tanning trial, sexual function discovery, melanoma risk assessment, and safety concerns.","url":"https://www.profpeptide.com/research/melanotan-ii","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"Melanotan II Research"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Melanotan II Research","description":"4 key Melanotan II studies summarized in plain English. Covers Phase I tanning trial, sexual function discovery, melanoma risk assessment, and safety concerns.","url":"https://profpeptide.com/research/melanotan-ii","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"Melanotan II Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
       <div className="flex flex-wrap items-center gap-3 mb-1">

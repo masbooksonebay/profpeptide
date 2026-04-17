@@ -86,8 +86,8 @@ const sections = [
 export default function MelanotanIIPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Melanotan II","description":"Melanotan II research profile covering melanocortin receptor mechanism, tanning effects, sexual function discovery, and safety risk assessment.","url":"https://www.profpeptide.com/peptides/melanotan-ii","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Melanotan II"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Melanotan II","description":"Melanotan II research profile covering melanocortin receptor mechanism, tanning effects, sexual function discovery, and safety risk assessment.","url":"https://profpeptide.com/peptides/melanotan-ii","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Melanotan II"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

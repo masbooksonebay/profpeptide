@@ -10,8 +10,8 @@ export const metadata = {
 export default function BerberinePage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Berberine","description":"Berberine supplement profile covering blood sugar regulation, AMPK activation, metformin comparison, lipid metabolism, and optimal dosage.","url":"https://www.profpeptide.com/supplements/berberine","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://www.profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Berberine"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Berberine","description":"Berberine supplement profile covering blood sugar regulation, AMPK activation, metformin comparison, lipid metabolism, and optimal dosage.","url":"https://profpeptide.com/supplements/berberine","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Berberine"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/supplements"

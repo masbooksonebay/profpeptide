@@ -49,8 +49,8 @@ const studies = [
 export default function WolverineStackResearchPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Wolverine Stack Research","description":"4 key Wolverine Stack studies summarized in plain English. Covers BPC-157 and TB-500 complementary mechanisms and orthopaedic combination rationale.","url":"https://www.profpeptide.com/research/wolverine-stack","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"Wolverine Stack Research"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Wolverine Stack Research","description":"4 key Wolverine Stack studies summarized in plain English. Covers BPC-157 and TB-500 complementary mechanisms and orthopaedic combination rationale.","url":"https://profpeptide.com/research/wolverine-stack","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"Wolverine Stack Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
 

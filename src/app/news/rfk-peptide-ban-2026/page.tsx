@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List",
     description: "14 of 19 restricted peptides will be moved off the FDA\u2019s \u201Cdo not compound\u201D list \u2014 the largest regulatory reversal in U.S. peptide history.",
-    url: "https://www.profpeptide.com/news/rfk-peptide-ban-2026",
-    images: [{ url: "https://www.profpeptide.com/og-image.png", width: 1024, height: 1024, alt: "Prof. Peptide" }],
+    url: "https://profpeptide.com/news/rfk-peptide-ban-2026",
+    images: [{ url: "https://profpeptide.com/og-image.png", width: 1024, height: 1024, alt: "Prof. Peptide" }],
   },
   twitter: {
     card: "summary_large_image" as const,
     title: "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List",
     description: "14 of 19 restricted peptides coming off the FDA restricted list.",
-    images: ["https://www.profpeptide.com/og-image.png"],
+    images: ["https://profpeptide.com/og-image.png"],
   },
 };
 
@@ -28,11 +28,11 @@ export default function RFKPeptideBanPage() {
         "headline": "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List",
         "description": "HHS Secretary Robert F. Kennedy Jr. announced that 14 of 19 previously restricted peptides will be moved off the FDA\u2019s \u201Cdo not compound\u201D list.",
         "datePublished": "2026-04-10",
-        "url": "https://www.profpeptide.com/news/rfk-peptide-ban-2026",
+        "url": "https://profpeptide.com/news/rfk-peptide-ban-2026",
         "publisher": {
           "@type": "Organization",
           "name": "Prof. Peptide",
-          "url": "https://www.profpeptide.com",
+          "url": "https://profpeptide.com",
         },
         "author": {
           "@type": "Organization",
@@ -43,8 +43,8 @@ export default function RFKPeptideBanPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.profpeptide.com" },
-          { "@type": "ListItem", "position": 2, "name": "News", "item": "https://www.profpeptide.com/news" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://profpeptide.com" },
+          { "@type": "ListItem", "position": 2, "name": "News", "item": "https://profpeptide.com/news" },
           { "@type": "ListItem", "position": 3, "name": "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List" },
         ],
       }} />

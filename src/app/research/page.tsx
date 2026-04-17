@@ -82,7 +82,7 @@ const categories = [
 export default function ResearchPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research"}]}} />
     <div className="section">
       <div className="mb-10">
         <span className="tag mb-3 inline-block">Peer-Reviewed Studies</span>

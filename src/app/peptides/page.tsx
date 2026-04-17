@@ -94,7 +94,7 @@ export default function PeptidesPage({ searchParams }: { searchParams: { categor
 
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides"}]}} />
     <div className="section">
       <div className="mb-10">
         <span className="tag mb-3 inline-block">Research Profiles</span>

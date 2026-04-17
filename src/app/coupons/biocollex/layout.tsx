@@ -7,7 +7,7 @@ export const metadata = {
 export default function BioCollexLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"BioCollex Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at BioCollex\",\"url\":\"https://www.profpeptide.com/coupons/biocollex\",\"validFrom\":\"2026-04-01\",\"priceValidUntil\":\"2026-04-30\",\"seller\":{\"@type\":\"Organization\",\"name\":\"BioCollex\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"BioCollex Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at BioCollex\",\"url\":\"https://profpeptide.com/coupons/biocollex\",\"validFrom\":\"2026-04-01\",\"priceValidUntil\":\"2026-04-30\",\"seller\":{\"@type\":\"Organization\",\"name\":\"BioCollex\"}}" }} />
       {children}
     </>
   );

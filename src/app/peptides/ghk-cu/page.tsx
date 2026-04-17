@@ -93,8 +93,8 @@ const sections = [
 export default function GHKCuPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GHK-Cu","description":"GHK-Cu research profile covering copper peptide mechanism, collagen synthesis, gene expression reprogramming, wound healing, and skin rejuvenation.","url":"https://www.profpeptide.com/peptides/ghk-cu","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"GHK-Cu"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GHK-Cu","description":"GHK-Cu research profile covering copper peptide mechanism, collagen synthesis, gene expression reprogramming, wound healing, and skin rejuvenation.","url":"https://profpeptide.com/peptides/ghk-cu","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"GHK-Cu"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

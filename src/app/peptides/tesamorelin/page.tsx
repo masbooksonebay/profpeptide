@@ -90,8 +90,8 @@ const sections = [
 export default function TesamorelinPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tesamorelin","description":"Tesamorelin research profile covering FDA-approved GHRH analog mechanism, visceral fat reduction data, cognitive research, and clinical evidence.","url":"https://www.profpeptide.com/peptides/tesamorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Tesamorelin"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tesamorelin","description":"Tesamorelin research profile covering FDA-approved GHRH analog mechanism, visceral fat reduction data, cognitive research, and clinical evidence.","url":"https://profpeptide.com/peptides/tesamorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Tesamorelin"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

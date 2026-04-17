@@ -10,8 +10,8 @@ export const metadata = {
 export default function TongkatAliPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tongkat Ali","description":"Tongkat Ali supplement profile covering testosterone support, SHBG reduction, aromatase inhibition, cortisol modulation, and Physta dosage.","url":"https://www.profpeptide.com/supplements/tongkat-ali","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://www.profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Tongkat Ali"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tongkat Ali","description":"Tongkat Ali supplement profile covering testosterone support, SHBG reduction, aromatase inhibition, cortisol modulation, and Physta dosage.","url":"https://profpeptide.com/supplements/tongkat-ali","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Tongkat Ali"}]}} />
     <div className="section max-w-3xl">
       <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 

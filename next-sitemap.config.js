@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://www.profpeptide.com",
+  siteUrl: "https://profpeptide.com",
   generateRobotsTxt: true,
 };

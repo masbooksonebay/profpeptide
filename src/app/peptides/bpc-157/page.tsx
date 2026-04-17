@@ -68,8 +68,8 @@ const sections = [
 export default function BPC157Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"BPC-157","description":"BPC-157 research profile covering tissue repair mechanism, gut healing evidence, tendon recovery studies, dosage protocols, and safety considerations.","url":"https://www.profpeptide.com/peptides/bpc-157","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"BPC-157"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"BPC-157","description":"BPC-157 research profile covering tissue repair mechanism, gut healing evidence, tendon recovery studies, dosage protocols, and safety considerations.","url":"https://profpeptide.com/peptides/bpc-157","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"BPC-157"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

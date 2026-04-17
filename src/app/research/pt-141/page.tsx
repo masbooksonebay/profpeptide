@@ -58,8 +58,8 @@ const studies = [
 export default function PT141ResearchPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"PT-141 Research","description":"5 key PT-141 studies summarized in plain English. Covers FDA-approved RECONNECT trials, long-term safety, male ED evidence, and mechanism review.","url":"https://www.profpeptide.com/research/pt-141","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"PT-141 Research"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"PT-141 Research","description":"5 key PT-141 studies summarized in plain English. Covers FDA-approved RECONNECT trials, long-term safety, male ED evidence, and mechanism review.","url":"https://profpeptide.com/research/pt-141","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"PT-141 Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
       <div className="flex flex-wrap items-center gap-3 mb-1">

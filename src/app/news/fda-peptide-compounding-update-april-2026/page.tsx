@@ -9,15 +9,15 @@ export const metadata = {
     title: "FDA Moves to Restore Peptide Access \u2014 What Researchers Need to Know (April 2026)",
     description:
       "The FDA posted a Federal Register notice in April 2026 considering lifting restrictions on seven Category 2 peptides.",
-    url: "https://www.profpeptide.com/news/fda-peptide-compounding-update-april-2026",
-    images: [{ url: "https://www.profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
+    url: "https://profpeptide.com/news/fda-peptide-compounding-update-april-2026",
+    images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
   },
   twitter: {
     card: "summary_large_image" as const,
     title: "FDA Moves to Restore Peptide Access \u2014 What Researchers Need to Know (April 2026)",
     description:
       "The FDA posted a Federal Register notice in April 2026 considering lifting restrictions on seven Category 2 peptides.",
-    images: ["https://www.profpeptide.com/og-image.png"],
+    images: ["https://profpeptide.com/og-image.png"],
   },
 };
 
@@ -31,16 +31,16 @@ export default function FDAPeptideCompoundingUpdatePage() {
         "description": "The FDA posted a Federal Register notice in April 2026 considering lifting restrictions on seven Category 2 peptides. What researchers need to know.",
         "datePublished": "2026-04-16",
         "dateModified": "2026-04-16",
-        "url": "https://www.profpeptide.com/news/fda-peptide-compounding-update-april-2026",
-        "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://www.profpeptide.com" },
+        "url": "https://profpeptide.com/news/fda-peptide-compounding-update-april-2026",
+        "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://profpeptide.com" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.profpeptide.com" },
-          { "@type": "ListItem", "position": 2, "name": "News", "item": "https://www.profpeptide.com/news" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://profpeptide.com" },
+          { "@type": "ListItem", "position": 2, "name": "News", "item": "https://profpeptide.com/news" },
           { "@type": "ListItem", "position": 3, "name": "FDA Moves to Restore Access to Key Peptides" },
         ],
       }} />

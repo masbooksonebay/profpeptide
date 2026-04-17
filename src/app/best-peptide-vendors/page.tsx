@@ -9,12 +9,12 @@ export const metadata = {
     title: "Best Peptide Vendors (April 2026) — Vetted Research Suppliers",
     description:
       "Alphabetical list of vetted peptide research suppliers — third-party tested, COA-backed, and reviewed by Prof. Peptide.",
-    url: "https://www.profpeptide.com/best-peptide-vendors",
-    images: [{ url: "https://www.profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
+    url: "https://profpeptide.com/best-peptide-vendors",
+    images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
   },
   twitter: {
     card: "summary_large_image" as const,
-    images: ["https://www.profpeptide.com/og-image.png"],
+    images: ["https://profpeptide.com/og-image.png"],
   },
 };
 
@@ -121,15 +121,15 @@ export default function BestPeptideVendorsPage() {
         "description": "Alphabetical list of the peptide vendors Prof. Peptide has vetted for third-party testing, COA transparency, purity standards, shipping reliability, and community reputation.",
         "datePublished": "2026-04-16",
         "dateModified": "2026-04-17",
-        "url": "https://www.profpeptide.com/best-peptide-vendors",
-        "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://www.profpeptide.com" },
+        "url": "https://profpeptide.com/best-peptide-vendors",
+        "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://profpeptide.com" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.profpeptide.com" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://profpeptide.com" },
           { "@type": "ListItem", "position": 2, "name": "Best Peptide Vendors" },
         ],
       }} />

@@ -10,8 +10,8 @@ export const metadata = {
 export default function GlucomannanPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Glucomannan","description":"Glucomannan supplement profile covering konjac fiber satiety mechanism, EFSA weight loss claim, blood sugar blunting, and dosage guidance.","url":"https://www.profpeptide.com/supplements/glucomannan","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://www.profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Glucomannan"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Glucomannan","description":"Glucomannan supplement profile covering konjac fiber satiety mechanism, EFSA weight loss claim, blood sugar blunting, and dosage guidance.","url":"https://profpeptide.com/supplements/glucomannan","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Glucomannan"}]}} />
     <div className="section max-w-3xl">
       <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 

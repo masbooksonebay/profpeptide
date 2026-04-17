@@ -100,8 +100,8 @@ const sections = [
 export default function ThymosinAlpha1Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Thymosin Alpha-1","description":"Thymosin Alpha-1 research profile covering immune modulation mechanism, TLR activation, hepatitis treatment, and cancer immunotherapy data.","url":"https://www.profpeptide.com/peptides/thymosin-alpha-1","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Thymosin Alpha-1"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Thymosin Alpha-1","description":"Thymosin Alpha-1 research profile covering immune modulation mechanism, TLR activation, hepatitis treatment, and cancer immunotherapy data.","url":"https://profpeptide.com/peptides/thymosin-alpha-1","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Thymosin Alpha-1"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

@@ -7,7 +7,7 @@ export const metadata = {
 export default function BehemothLabzLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Offer","name":"Behemoth Labz Discount Code - Save 10%","description":"Use code PROF10 for 10% off at Behemoth Labz","url":"https://www.profpeptide.com/coupons/behemoth-labz","validFrom":"2026-04-01","priceValidUntil":"2026-04-30","seller":{"@type":"Organization","name":"Behemoth Labz"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"Offer","name":"Behemoth Labz Discount Code - Save 10%","description":"Use code PROF10 for 10% off at Behemoth Labz","url":"https://profpeptide.com/coupons/behemoth-labz","validFrom":"2026-04-01","priceValidUntil":"2026-04-30","seller":{"@type":"Organization","name":"Behemoth Labz"}}) }} />
       {children}
     </>
   );

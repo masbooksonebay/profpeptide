@@ -10,8 +10,8 @@ export const metadata = {
 export default function VitaminCPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Vitamin C","description":"Vitamin C supplement profile covering collagen cofactor role, immune support, antioxidant defense, iron absorption, and exercise recovery.","url":"https://www.profpeptide.com/supplements/vitamin-c","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://www.profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Vitamin C"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Vitamin C","description":"Vitamin C supplement profile covering collagen cofactor role, immune support, antioxidant defense, iron absorption, and exercise recovery.","url":"https://profpeptide.com/supplements/vitamin-c","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Vitamin C"}]}} />
     <div className="section max-w-3xl">
       <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 

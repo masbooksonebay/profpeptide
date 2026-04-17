@@ -151,7 +151,7 @@ export default function GlossaryPage() {
       "@context": "https://schema.org",
       "@type": "DefinedTermSet",
       "name": "Peptide & Supplement Research Glossary",
-      "url": "https://www.profpeptide.com/glossary",
+      "url": "https://profpeptide.com/glossary",
       "hasDefinedTerm": allTerms.map(([term, def]) => ({
         "@type": "DefinedTerm",
         "name": term,

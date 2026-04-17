@@ -87,8 +87,8 @@ const sections = [
 export default function SermorelinPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Sermorelin","description":"Sermorelin research profile covering GHRH 1-29 mechanism, pituitary preservation, former FDA approval history, and off-label clinical use.","url":"https://www.profpeptide.com/peptides/sermorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Sermorelin"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Sermorelin","description":"Sermorelin research profile covering GHRH 1-29 mechanism, pituitary preservation, former FDA approval history, and off-label clinical use.","url":"https://profpeptide.com/peptides/sermorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Sermorelin"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

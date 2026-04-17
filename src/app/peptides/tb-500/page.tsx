@@ -92,8 +92,8 @@ const sections = [
 export default function TB500Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"TB-500","description":"TB-500 research profile covering Thymosin Beta-4 mechanism, wound healing data, muscle repair evidence, dosage protocols, and safety information.","url":"https://www.profpeptide.com/peptides/tb-500","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"TB-500"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"TB-500","description":"TB-500 research profile covering Thymosin Beta-4 mechanism, wound healing data, muscle repair evidence, dosage protocols, and safety information.","url":"https://profpeptide.com/peptides/tb-500","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"TB-500"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

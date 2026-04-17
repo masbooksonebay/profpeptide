@@ -25,8 +25,8 @@ const rows = [
 export default function TripleGLP1ComparisonPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Semaglutide vs Tirzepatide vs Retatrutide — GLP-1 Comparison","description":"Semaglutide vs Tirzepatide vs Retatrutide — mechanism, weight loss data, FDA status, and how all three GLP-1 peptides compare side by side.","url":"https://www.profpeptide.com/compare/semaglutide-vs-tirzepatide-vs-retatrutide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://www.profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Semaglutide vs Tirzepatide vs Retatrutide — GLP-1 Comparison"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Semaglutide vs Tirzepatide vs Retatrutide — GLP-1 Comparison","description":"Semaglutide vs Tirzepatide vs Retatrutide — mechanism, weight loss data, FDA status, and how all three GLP-1 peptides compare side by side.","url":"https://profpeptide.com/compare/semaglutide-vs-tirzepatide-vs-retatrutide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Semaglutide vs Tirzepatide vs Retatrutide — GLP-1 Comparison"}]}} />
     <div className="section max-w-5xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Semaglutide vs Tirzepatide vs Retatrutide &mdash; GLP-1 Comparison</h1>

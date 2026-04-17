@@ -10,8 +10,8 @@ export const metadata = {
 export default function MacaRootPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Maca Root","description":"Maca root supplement profile covering non-hormonal libido enhancement, male fertility support, adaptogenic mechanism, and color variety guide.","url":"https://www.profpeptide.com/supplements/maca-root","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://www.profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Maca Root"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Maca Root","description":"Maca root supplement profile covering non-hormonal libido enhancement, male fertility support, adaptogenic mechanism, and color variety guide.","url":"https://profpeptide.com/supplements/maca-root","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Maca Root"}]}} />
     <div className="section max-w-3xl">
       <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 

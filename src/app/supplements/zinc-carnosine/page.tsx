@@ -10,8 +10,8 @@ export const metadata = {
 export default function ZincCarnosinePage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Zinc Carnosine","description":"Zinc carnosine profile covering gut mucosal repair, ulcer healing, leaky gut support, athlete gut health, and PepZin GI dosage.","url":"https://www.profpeptide.com/supplements/zinc-carnosine","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://www.profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Zinc Carnosine"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Zinc Carnosine","description":"Zinc carnosine profile covering gut mucosal repair, ulcer healing, leaky gut support, athlete gut health, and PepZin GI dosage.","url":"https://profpeptide.com/supplements/zinc-carnosine","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Zinc Carnosine"}]}} />
     <div className="section max-w-3xl">
       <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 

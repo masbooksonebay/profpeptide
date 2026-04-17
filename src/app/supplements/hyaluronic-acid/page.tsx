@@ -10,8 +10,8 @@ export const metadata = {
 export default function HyaluronicAcidPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Hyaluronic Acid","description":"Hyaluronic acid supplement profile covering skin hydration, 6L water binding per gram, wrinkle reduction, joint lubrication, and dosage.","url":"https://www.profpeptide.com/supplements/hyaluronic-acid","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://www.profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Hyaluronic Acid"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Hyaluronic Acid","description":"Hyaluronic acid supplement profile covering skin hydration, 6L water binding per gram, wrinkle reduction, joint lubrication, and dosage.","url":"https://profpeptide.com/supplements/hyaluronic-acid","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Hyaluronic Acid"}]}} />
     <div className="section max-w-3xl">
       <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 

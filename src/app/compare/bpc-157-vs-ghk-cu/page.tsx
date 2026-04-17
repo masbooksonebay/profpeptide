@@ -23,8 +23,8 @@ const rows = [
 export default function BPC157vsGHKCuPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"BPC-157 vs GHK-Cu — Healing Peptide Comparison","description":"BPC-157 vs GHK-Cu comparison — mechanisms, tissue targets, research evidence, and when to use each of these two tissue repair and anti-aging peptides.","url":"https://www.profpeptide.com/compare/bpc-157-vs-ghk-cu","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://www.profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"BPC-157 vs GHK-Cu — Healing Peptide Comparison"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"BPC-157 vs GHK-Cu — Healing Peptide Comparison","description":"BPC-157 vs GHK-Cu comparison — mechanisms, tissue targets, research evidence, and when to use each of these two tissue repair and anti-aging peptides.","url":"https://profpeptide.com/compare/bpc-157-vs-ghk-cu","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"BPC-157 vs GHK-Cu — Healing Peptide Comparison"}]}} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">BPC-157 vs GHK-Cu &mdash; Healing &amp; Tissue Repair Peptide Comparison</h1>

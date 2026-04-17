@@ -88,8 +88,8 @@ const sections = [
 export default function IGF1LR3Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"IGF-1 LR3","description":"IGF-1 LR3 research profile covering extended half-life mechanism, mTOR activation, satellite cell stimulation, and muscle growth research.","url":"https://www.profpeptide.com/peptides/igf-1-lr3","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"IGF-1 LR3"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"IGF-1 LR3","description":"IGF-1 LR3 research profile covering extended half-life mechanism, mTOR activation, satellite cell stimulation, and muscle growth research.","url":"https://profpeptide.com/peptides/igf-1-lr3","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"IGF-1 LR3"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

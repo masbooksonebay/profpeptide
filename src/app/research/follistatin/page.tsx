@@ -58,8 +58,8 @@ const studies = [
 export default function FollistatinResearchPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Follistatin Research","description":"5 key Follistatin studies summarized in plain English. Covers myostatin inhibition, gene therapy trials, satellite cell proliferation, and Becker MD.","url":"https://www.profpeptide.com/research/follistatin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://www.profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"Follistatin Research"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Follistatin Research","description":"5 key Follistatin studies summarized in plain English. Covers myostatin inhibition, gene therapy trials, satellite cell proliferation, and Becker MD.","url":"https://profpeptide.com/research/follistatin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Research","item":"https://profpeptide.com/research"},{"@type":"ListItem","position":3,"name":"Follistatin Research"}]}} />
     <div className="section max-w-3xl">
       <Link href="/research" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Research</Link>
 

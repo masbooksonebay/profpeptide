@@ -102,8 +102,8 @@ const sections = [
 export default function WolverineStackPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Wolverine Stack","description":"Wolverine Stack (BPC-157 + TB-500) research profile covering synergistic tissue repair mechanisms, complementary pathways, and combination rationale.","url":"https://www.profpeptide.com/peptides/wolverine-stack","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://www.profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Wolverine Stack"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Wolverine Stack","description":"Wolverine Stack (BPC-157 + TB-500) research profile covering synergistic tissue repair mechanisms, complementary pathways, and combination rationale.","url":"https://profpeptide.com/peptides/wolverine-stack","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Wolverine Stack"}]}} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

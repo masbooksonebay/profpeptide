@@ -10,8 +10,8 @@ export const metadata = {
 export default function VitaminD3Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Vitamin D3","description":"Vitamin D3 supplement profile covering nuclear receptor activation, immune modulation, respiratory infection prevention, and D3 vs D2 dosage.","url":"https://www.profpeptide.com/supplements/vitamin-d3","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://www.profpeptide.com"}}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://www.profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Vitamin D3"}]}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Vitamin D3","description":"Vitamin D3 supplement profile covering nuclear receptor activation, immune modulation, respiratory infection prevention, and D3 vs D2 dosage.","url":"https://profpeptide.com/supplements/vitamin-d3","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Supplements","item":"https://profpeptide.com/supplements"},{"@type":"ListItem","position":3,"name":"Vitamin D3"}]}} />
     <div className="section max-w-3xl">
       <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
