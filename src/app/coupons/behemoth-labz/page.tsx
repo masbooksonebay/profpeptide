@@ -72,15 +72,6 @@ export default function BehemothLabzCouponPage() {
           </p>
         </div>
 
-        <div className="flex items-center justify-center gap-2.5 py-3.5 px-4 bg-[#0891b2]/10 border border-[#0891b2]/30 rounded-lg">
-          <svg className="w-5 h-5 text-[#0891b2] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <p className="text-base font-bold text-[#1e2d3d] dark:text-white tracking-tight">
-            Verified working as of April 2026
-          </p>
-        </div>
-
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
           <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
           <CodeBox code="PROF10" />
@@ -90,15 +81,10 @@ export default function BehemothLabzCouponPage() {
           </a>
         </div>
 
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          Use code <span className="font-mono font-semibold text-[#1e2d3d] dark:text-slate-100">PROF10</span> at checkout to save 10% on your entire Behemoth Labz order. Verified as of April 2026.
-        </p>
-
-
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="What compounds does Behemoth Labz carry?" a="Behemoth Labz carries research compounds across SARMs, peptides, nootropics, prohormones, and PCT categories. Their SARMs catalog includes RAD-140, MK-677, LGD-4033, Ostarine, YK-11, S-23, GW-501516, and SR-9009. Nootropics include Noopept, Phenibut, and racetam-class compounds. Their peptide selection includes individual compounds and pre-formulated research blends. Products are available in liquid, capsule, and powder forms. All products are third-party tested by Colmaric Analyticals with published COAs." />
+            <FAQItem q="What products does Behemoth Labz carry?" a="Behemoth Labz carries research products across SARMs, peptides, nootropics, prohormones, and PCT categories. Their SARMs catalog includes RAD-140, MK-677, LGD-4033, Ostarine, YK-11, S-23, GW-501516, and SR-9009. Nootropics include Noopept, Phenibut, and racetam-class compounds. Their peptide selection includes individual compounds and pre-formulated research blends. Products are available in liquid, capsule, and powder forms. All products are third-party tested by Colmaric Analyticals with published COAs." />
             <FAQItem q="Does Behemoth Labz have a discount code?" a="Yes. Use code PROF10 at checkout to save 10% on your entire Behemoth Labz order. This code is verified and maintained by Prof. Peptide and valid as of April 2026." />
             <FAQItem q="How do I use the Behemoth Labz discount code?" a="Add your items to cart at behemothlabz.com, proceed to checkout, and enter PROF10 in the discount code field. The 10% discount will be applied to your order total." />
             <FAQItem q="How is Behemoth Labz third-party tested?" a="Every Behemoth Labz product is tested by Colmaric Analyticals LLC, an accredited laboratory in Goodlettsville, Tennessee. Certificates of Analysis are published publicly and consistently show purity results above 99%." />

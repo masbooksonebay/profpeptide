@@ -72,15 +72,6 @@ export default function VitalCoreResearchCouponPage() {
  </p>
  </div>
 
- <div className="flex items-center justify-center gap-2.5 py-3.5 px-4 bg-[#0891b2]/10 border border-[#0891b2]/30 rounded-lg">
-   <svg className="w-5 h-5 text-[#0891b2] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
-     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-   </svg>
-   <p className="text-base font-bold text-[#1e2d3d] dark:text-white tracking-tight">
-     Verified working as of April 2026
-   </p>
- </div>
-
  <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
  <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
  <CodeBox code="PROFPEPTIDE" />
@@ -100,8 +91,8 @@ export default function VitalCoreResearchCouponPage() {
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
- q="What peptides does Vital Core Research carry?"
- a="Vital Core Research carries 56 research compounds across peptides, SARMs, and blends. Their metabolic catalog covers the full GLP generation range including Semaglutide, Tirzepatide, Retatrutide, Cagrilintide, and combination blends. Recovery peptides include BPC-157 and TB-500. Growth hormone secretagogues include CJC-1295 (both DAC and No DAC), Ipamorelin, Sermorelin, Tesamorelin, Hexarelin, GHRP-2, GHRP-6, and IGF-1 LR3. Longevity compounds include NAD+, Epithalon, and MOTS-c. Cognitive peptides include Semax and Selank. Sexual health compounds include PT-141. Immune compounds include Thymosin Alpha-1. Novel compounds include SLU-PP-332 capsules and Tesofensine capsules. Pre-formulated blends include GLOW and KLOW. A 13-compound SARMs catalog is also available."
+ q="What products does Vital Core Research carry?"
+ a="Vital Core Research carries 56 research products across peptides, SARMs, and blends. Their metabolic catalog covers the full GLP generation range including Semaglutide, Tirzepatide, Retatrutide, Cagrilintide, and combination blends. Recovery peptides include BPC-157 and TB-500. Growth hormone secretagogues include CJC-1295 (both DAC and No DAC), Ipamorelin, Sermorelin, Tesamorelin, Hexarelin, GHRP-2, GHRP-6, and IGF-1 LR3. Longevity compounds include NAD+, Epithalon, and MOTS-c. Cognitive peptides include Semax and Selank. Sexual health compounds include PT-141. Immune compounds include Thymosin Alpha-1. Novel compounds include SLU-PP-332 capsules and Tesofensine capsules. Pre-formulated blends include GLOW and KLOW. A 13-compound SARMs catalog is also available."
  />
  <FAQItem
  q="Does Vital Core Research have a discount code?"

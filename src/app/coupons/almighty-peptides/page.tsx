@@ -72,15 +72,6 @@ export default function AlmightyPeptidesCouponPage() {
  </p>
  </div>
 
- <div className="flex items-center justify-center gap-2.5 py-3.5 px-4 bg-[#0891b2]/10 border border-[#0891b2]/30 rounded-lg">
-   <svg className="w-5 h-5 text-[#0891b2] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
-     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-   </svg>
-   <p className="text-base font-bold text-[#1e2d3d] dark:text-white tracking-tight">
-     Verified working as of April 2026
-   </p>
- </div>
-
  <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
  <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
  <CodeBox code="profpep" />
@@ -100,7 +91,7 @@ export default function AlmightyPeptidesCouponPage() {
  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
- q="What peptides does Almighty Peptides carry?"
+ q="What products does Almighty Peptides carry?"
  a="Almighty Peptides carries 60+ research compounds across three delivery formats. Their lyophilized peptide catalog includes metabolic compounds such as Semaglutide, Tirzepatide, and Retatrutide, recovery peptides including BPC-157 and TB-500, growth hormone secretagogues including CJC-1295, Ipamorelin, Sermorelin, and Tesamorelin, longevity compounds including NAD+, Epitalon, and MOTS-c, skin health compounds including GHK-Cu, and sexual health compounds including PT-141 and Melanotan II. Their capsule catalog includes BPC-157, GHK-Cu, Methylene Blue, MK-677, LGD-4033, and SLU-PP-332. Their liquids catalog covers SARMs, aromatase inhibitors, and other research chemicals."
  />
  <FAQItem
