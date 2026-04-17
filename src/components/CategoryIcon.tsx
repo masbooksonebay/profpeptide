@@ -112,6 +112,12 @@ const icons: Record<string, React.ReactNode> = {
       <path d="M176,16h24a8,8,0,0,1,8,8h0a16,16,0,0,0,16,16h64a16,16,0,0,0,16-16h0a8,8,0,0,1,8-8h24" />
     </svg>
   ),
+  "shield-block-outline": (
+    <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={BLOCK}>
+      <polyline points="336 176 225.2 304 176 255.8" />
+      <path d="M463.1,112.37C373.68,96.33,336.71,84.45,256,48,175.29,84.45,138.32,96.33,48.9,112.37,32.7,369.13,240.58,457.79,256,464,271.42,457.79,479.3,369.13,463.1,112.37Z" />
+    </svg>
+  ),
 
   /* ── App page extra icons ── */
   "clipboard-outline": (

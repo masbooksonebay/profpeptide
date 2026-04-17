@@ -81,7 +81,9 @@ export default function RFKPeptideUpdatePage() {
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Why the Delay Matters</h2>
           <p>
-            The gray market fills the gap. Since the 2023 restrictions, researchers have largely turned to vendors selling peptides labeled &ldquo;for research use only&rdquo; &mdash; the category Prof. Peptide&rsquo;s vendor network operates in. Demand has not decreased; it simply moved outside the compounding pharmacy system.
+            The gray market fills the gap. Since the 2023 restrictions, researchers have largely turned to vendors selling peptides labeled &ldquo;for research use only&rdquo; &mdash; the category that Prof. Peptide&rsquo;s{" "}
+            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">vetted vendor network</Link>{" "}
+            operates in. Demand has not decreased; it simply moved outside the compounding pharmacy system.
           </p>
           <p>
             When the formal reclassification does arrive, compounding pharmacies will need time to source pharmaceutical-grade ingredients and ramp up production. Industry groups have warned that even after a formal announcement, supply through compounding channels may take weeks or months to stabilize.
@@ -112,7 +114,7 @@ export default function RFKPeptideUpdatePage() {
           <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Explore More</h2>
           <div className="flex flex-wrap gap-3">
             <Link href="/peptides" className="btn-primary text-sm">Explore Compound Profiles</Link>
-            <Link href="/app" className="btn-outline text-sm">Download the App</Link>
+            <Link href="/best-peptide-vendors" className="btn-outline text-sm">Best Peptide Vendors</Link>
             <Link href="/coupons" className="btn-outline text-sm">Browse Discount Codes</Link>
           </div>
         </div>

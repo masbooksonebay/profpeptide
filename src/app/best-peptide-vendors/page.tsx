@@ -2,13 +2,13 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
-  title: "Best Peptide Vendors (April 2026) — Top Rated Suppliers | Prof. Peptide",
+  title: "Best Peptide Vendors (April 2026) — Vetted Research Suppliers | Prof. Peptide",
   description:
-    "Curated list of the best peptide vendors for research in 2026 — evaluated on third-party testing, COAs, catalog depth, shipping, and reputation. All codes verified April 2026.",
+    "Alphabetical list of the peptide vendors we've vetted for third-party testing, published COAs, purity standards, shipping reliability, and community reputation. Not a ranking.",
   openGraph: {
-    title: "Best Peptide Vendors (April 2026) — Top Rated Suppliers",
+    title: "Best Peptide Vendors (April 2026) — Vetted Research Suppliers",
     description:
-      "Curated list of the best peptide vendors for research in 2026 — third-party tested, COA-backed, and verified.",
+      "Alphabetical list of vetted peptide research suppliers — third-party tested, COA-backed, and reviewed by Prof. Peptide.",
     url: "https://www.profpeptide.com/best-peptide-vendors",
     images: [{ url: "https://www.profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
   },
@@ -30,24 +30,14 @@ interface HubVendor {
 
 const vendors: HubVendor[] = [
   {
-    name: "Spartan Peptides",
-    slug: "spartan-peptides",
-    url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
+    name: "Almighty Peptides",
+    slug: "almighty-peptides",
+    url: "https://www.almightypeptides.com/?sld=profpeptide",
     code: "PROFPEPTIDE",
-    discount: "10% off",
+    discount: "20% off",
     description:
-      "US-based research peptide supplier backed by an internal team of biochemists, QA specialists, and peptide researchers. HPLC + mass spectrometry testing on every batch, minimum \u226598% purity required before release, and COAs provided with every order.",
-    strengths: ["HPLC + MS dual testing", "\u226598% purity minimum", "Third-party lab verified", "Broad research catalog"],
-  },
-  {
-    name: "Peptide Partners",
-    slug: "peptide-partners",
-    url: "https://peptide.partners/ref/48/",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    description:
-      "US research peptide supplier notable for running four independent test types per batch: purity, endotoxin, heavy metals, and sterility. Extensive transparency on test data and documentation. One of our Editor&rsquo;s Picks.",
-    strengths: ["Four independent batch tests", "Endotoxin + sterility tested", "Published COAs", "Editor\u2019s Pick"],
+      "US research supplier offering 20% off with our code. Catalog covers the full range of commonly studied research peptides with COAs available on request.",
+    strengths: ["20% off with code", "Full research catalog", "COAs on request", "US-based shipping"],
   },
   {
     name: "Ascension Peptides",
@@ -56,28 +46,8 @@ const vendors: HubVendor[] = [
     code: "PROFPEPTIDE",
     discount: "50% off",
     description:
-      "Deepest discount in our network with 50% off storewide using our code. US-based, third-party tested, and known for aggressive pricing on bulk research quantities without compromising batch documentation.",
-    strengths: ["50% off storewide", "Third-party tested", "Competitive bulk pricing", "Best Deal pick"],
-  },
-  {
-    name: "Almighty Peptides",
-    slug: "almighty-peptides",
-    url: "https://www.almightypeptides.com/?sld=profpeptide",
-    code: "PROFPEPTIDE",
-    discount: "20% off",
-    description:
-      "US research supplier offering 20% off with our code \u2014 one of the better all-around discounts in the space. Catalog covers the full range of commonly studied research peptides with COAs available on request.",
-    strengths: ["20% off with code", "Full research catalog", "COAs on request", "US-based shipping"],
-  },
-  {
-    name: "PureRawz",
-    slug: "purerawz",
-    url: "https://purerawz.co/?ref=1901",
-    code: "PROF10",
-    discount: "10% off",
-    description:
-      "Broad US-based research compound supplier with a catalog spanning peptides, SARMs, nootropics, and PCT compounds. Maintains a minimum 99% purity standard across peptides with COAs published directly on product pages.",
-    strengths: ["99% minimum purity", "COAs on product pages", "Multiple formats", "Free US shipping over $100"],
+      "US-based, third-party tested supplier with aggressive bulk pricing. 50% off storewide with our code.",
+    strengths: ["50% off storewide", "Third-party tested", "Competitive bulk pricing", "US-based"],
   },
   {
     name: "Behemoth Labz",
@@ -96,8 +66,38 @@ const vendors: HubVendor[] = [
     code: "PROFPEPTIDE",
     discount: "10% off",
     description:
-      "US-based supplier operating C-GMP certified manufacturing with same-day shipping and 99% purity standards. A strong middle-of-the-pack choice when reliability and documentation matter more than headline discount size.",
+      "US-based supplier operating C-GMP certified manufacturing with same-day shipping and 99% purity standards. Emphasis on reliability and documentation.",
     strengths: ["C-GMP certified", "99% purity", "Same-day shipping", "Documented supply chain"],
+  },
+  {
+    name: "Peptide Partners",
+    slug: "peptide-partners",
+    url: "https://peptide.partners/ref/48/",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    description:
+      "US research peptide supplier that runs four independent test types per batch: purity, endotoxin, heavy metals, and sterility. Extensive transparency on test data and documentation.",
+    strengths: ["Four independent batch tests", "Endotoxin + sterility tested", "Published COAs", "Transparent test data"],
+  },
+  {
+    name: "PureRawz",
+    slug: "purerawz",
+    url: "https://purerawz.co/?ref=1901",
+    code: "PROF10",
+    discount: "10% off",
+    description:
+      "Broad US-based research compound supplier with a catalog spanning peptides, SARMs, nootropics, and PCT compounds. Maintains a minimum 99% purity standard across peptides with COAs published directly on product pages.",
+    strengths: ["99% minimum purity", "COAs on product pages", "Multiple formats", "Free US shipping over $100"],
+  },
+  {
+    name: "Spartan Peptides",
+    slug: "spartan-peptides",
+    url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    description:
+      "US-based research peptide supplier backed by an internal team of biochemists, QA specialists, and peptide researchers. HPLC + mass spectrometry testing on every batch, minimum \u226598% purity required before release, and COAs provided with every order.",
+    strengths: ["HPLC + MS dual testing", "\u226598% purity minimum", "Third-party lab verified", "Broad research catalog"],
   },
   {
     name: "Vital Core Research",
@@ -106,8 +106,8 @@ const vendors: HubVendor[] = [
     code: "PROFPEPTIDE",
     discount: "20% off",
     description:
-      "US research compound supplier with 20% off via our code. Straightforward catalog with COA availability and responsive fulfillment. A reliable second-source option alongside our Featured vendors.",
-    strengths: ["20% off with code", "COA availability", "Reliable fulfillment", "US-based"],
+      "US research compound supplier with 20% off via our code. Straightforward catalog with COA availability and responsive fulfillment.",
+    strengths: ["20% off with code", "COA availability", "Responsive fulfillment", "US-based"],
   },
 ];
 
@@ -118,9 +118,9 @@ export default function BestPeptideVendorsPage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "Best Peptide Vendors for Research (April 2026)",
-        "description": "Curated list of the best peptide vendors for research in 2026, evaluated on third-party testing, COA transparency, catalog depth, shipping reliability, and community reputation.",
+        "description": "Alphabetical list of the peptide vendors Prof. Peptide has vetted for third-party testing, COA transparency, purity standards, shipping reliability, and community reputation.",
         "datePublished": "2026-04-16",
-        "dateModified": "2026-04-16",
+        "dateModified": "2026-04-17",
         "url": "https://www.profpeptide.com/best-peptide-vendors",
         "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://www.profpeptide.com" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
@@ -139,40 +139,37 @@ export default function BestPeptideVendorsPage() {
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-4">
           Best Peptide Vendors for Research (April 2026)
         </h1>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4 max-w-xl">
+          An alphabetical list of the research peptide vendors we&rsquo;ve vetted and recommend. This is not a ranking &mdash; every vendor below meets our baseline criteria, so rather than pick winners we list them alphabetically.
+        </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-6 max-w-xl">
-          Finding a reliable peptide supplier requires more than a Google search. Quality varies dramatically across vendors &mdash; from rigorous third-party tested compounds with published COAs, to unverified products with no documentation. At Prof. Peptide, we&rsquo;ve done the research so you don&rsquo;t have to. Below is our curated list of the best peptide vendors for research in 2026, evaluated on third-party testing standards, COA transparency, catalog depth, shipping reliability, and community reputation. All codes verified as of April 2026.
+          To be listed, a vendor must provide third-party lab testing with published Certificates of Analysis, meet documented purity standards, offer transparent shipping, maintain responsive customer service, and hold a positive reputation in the research community.
         </p>
 
-        <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed mb-8 max-w-xl">
-          Looking for the full discount code list? Visit our <Link href="/coupons" className="text-[#0891b2] hover:underline">verified discount codes</Link> page.
-        </p>
-
-        <div className="flex items-center justify-center gap-2.5 mb-8 py-3.5 px-4 bg-[#0891b2]/10 border border-[#0891b2]/30 rounded-lg">
-          <svg className="w-5 h-5 text-[#0891b2] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <p className="text-base font-bold text-[#1e2d3d] dark:text-white tracking-tight">
-            All codes verified working &mdash; April 2026
-          </p>
+        <div className="mb-8 p-4 bg-[#0891b2]/5 border border-[#0891b2]/20 rounded-lg flex items-start gap-3 flex-wrap">
+          <div className="flex-1 min-w-[200px]">
+            <p className="text-sm text-gray-700 dark:text-slate-200 font-medium mb-1">Looking for active discounts?</p>
+            <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">
+              This page covers vendor quality. Current codes and promotions live on our codes page.
+            </p>
+          </div>
+          <Link href="/coupons" className="text-sm font-medium text-[#0891b2] hover:underline whitespace-nowrap">
+            See current codes &rarr;
+          </Link>
         </div>
 
         <div className="space-y-6">
-          {vendors.map((v, idx) => (
+          {vendors.map((v) => (
             <div
               key={v.slug}
               className="border border-gray-200 dark:border-slate-700 rounded-xl p-6 bg-white dark:bg-[#0f172a] hover:shadow-md transition-shadow"
             >
               <div className="flex items-start justify-between gap-4 mb-3 flex-wrap">
-                <div className="flex items-center gap-3">
-                  <span className="w-7 h-7 rounded-full bg-[#0891b2]/10 text-[#0891b2] text-xs font-bold flex items-center justify-center flex-shrink-0">
-                    {idx + 1}
-                  </span>
-                  <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100">
-                    <Link href={`/coupons/${v.slug}`} className="hover:text-[#0891b2] transition-colors">
-                      {v.name}
-                    </Link>
-                  </h2>
-                </div>
+                <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100">
+                  <Link href={`/coupons/${v.slug}`} className="hover:text-[#0891b2] transition-colors">
+                    {v.name}
+                  </Link>
+                </h2>
                 <span className="text-xs font-bold text-[#0891b2] bg-[#0891b2]/15 px-2.5 py-1 rounded-full whitespace-nowrap">
                   {v.discount}
                 </span>
@@ -222,9 +219,12 @@ export default function BestPeptideVendorsPage() {
         </div>
 
         <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">How We Rank Peptide Vendors</h2>
+          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">How We Vet Vendors</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
-            Every vendor on this page is evaluated against a consistent rubric: third-party lab testing, published Certificates of Analysis, minimum purity standards, catalog breadth, shipping reliability, and community reputation. We update this list regularly as the market changes. See all <Link href="/coupons" className="text-[#0891b2] hover:underline">verified discount codes</Link> or browse our <Link href="/peptides" className="text-[#0891b2] hover:underline">peptide research library</Link>.
+            Every vendor on this page is evaluated against the same criteria: third-party lab testing, published Certificates of Analysis, documented purity standards, catalog breadth, transparent shipping, responsive customer service, and reputation in the research community. Meeting all of them gets a vendor on the list &mdash; we don&rsquo;t score beyond that. We update this list regularly as the market changes.
+          </p>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            Looking for <Link href="/coupons" className="text-[#0891b2] hover:underline">active discount codes</Link> or our <Link href="/peptides" className="text-[#0891b2] hover:underline">peptide research library</Link>?
           </p>
         </div>
 

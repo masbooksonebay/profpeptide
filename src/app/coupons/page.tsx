@@ -323,17 +323,22 @@ export default function CouponsPage() {
       <span className="tag mb-3 inline-block">Updated Regularly</span>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Discount Codes</h1>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-3 leading-relaxed max-w-lg">
-        Verified discount codes for peptide vendors with third-party lab testing.
+        Active discount codes for research peptide vendors. Every code is manually verified and valid as of April 2026.
       </p>
       <p className="text-xs text-gray-400 dark:text-slate-500 mb-8 leading-relaxed max-w-lg">
-        All discount codes, promo codes, and coupon codes are verified by Prof. Peptide and updated regularly.
+        Codes refresh as promotions change. Featured deals and biggest savings are grouped at the top.
       </p>
 
-      <div className="mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">How We Choose Our Vendors</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          Not all peptide suppliers are created equal. We&rsquo;ve done the research so you don&rsquo;t have to &mdash; independently evaluating vendors across the industry on the criteria that matter most: third-party lab testing, certificate of analysis (COA) availability, purity standards, shipping reliability, and customer trust. Every vendor featured on this page has earned their place. We only partner with suppliers who meet our standards for transparency and quality &mdash; and we update our recommendations regularly to reflect changes in the market. All discount codes below are verified and valid as of April 2026.
-        </p>
+      <div className="mb-8 p-4 bg-[#0891b2]/5 border border-[#0891b2]/20 rounded-lg flex items-start gap-3 flex-wrap">
+        <div className="flex-1 min-w-[200px]">
+          <p className="text-sm text-gray-700 dark:text-slate-200 font-medium mb-1">Want to know which vendors we trust and why?</p>
+          <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">
+            See our full vetted list with third-party testing, COA availability, and the quality criteria we use to include each supplier.
+          </p>
+        </div>
+        <Link href="/best-peptide-vendors" className="text-sm font-medium text-[#0891b2] hover:underline whitespace-nowrap">
+          See vetted vendors &rarr;
+        </Link>
       </div>
 
       <div className="flex items-center justify-center gap-2.5 mb-8 py-3.5 px-4 bg-[#0891b2]/10 border border-[#0891b2]/30 rounded-lg">

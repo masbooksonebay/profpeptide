@@ -32,6 +32,13 @@ const features = [
     cta: "See codes",
   },
   {
+    icon: "shield-block-outline",
+    title: "Best Peptide Vendors",
+    desc: "Our vetted alphabetical list of research peptide suppliers — with third-party testing, published COAs, and the quality criteria we use to include them.",
+    href: "/best-peptide-vendors",
+    cta: "See vetted vendors",
+  },
+  {
     icon: "book-outline",
     title: "Research Hub",
     desc: "Curated studies, guides, and educational articles for serious researchers.",

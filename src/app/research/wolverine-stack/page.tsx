@@ -91,6 +91,12 @@ export default function WolverineStackResearchPage() {
         <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">How BPC-157 and TB-500 work together, synergy mechanisms, and research limitations.</p>
         <Link href="/peptides/wolverine-stack" className="btn-primary text-sm">Wolverine Stack Profile</Link>
       </div>
+
+      <div className="mt-6 p-5 border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">Where to buy Wolverine Stack</p>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">Every vendor on our vetted list is third-party tested with published Certificates of Analysis. See which research suppliers carry Wolverine Stack.</p>
+        <Link href="/best-peptide-vendors" className="text-sm font-medium text-[#0891b2] hover:underline">See vendors that carry Wolverine Stack in our full list &rarr;</Link>
+      </div>
     </div>
     </>
   );
