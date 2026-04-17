@@ -98,7 +98,7 @@ export default function BehemothLabzCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="What compounds does Behemoth Labz carry?" a="Behemoth Labz carries SARMs (RAD-140, MK-677, LGD-4033, Ostarine, YK-11, S-23, and others), peptides and peptide blends, nootropics (including Noopept, Phenibut, and racetam compounds), prohormones, and post-cycle therapy compounds. Products are available in liquid, capsule, and powder forms." />
+            <FAQItem q="What compounds does Behemoth Labz carry?" a="Behemoth Labz carries research compounds across SARMs, peptides, nootropics, prohormones, and PCT categories. Their SARMs catalog includes RAD-140, MK-677, LGD-4033, Ostarine, YK-11, S-23, GW-501516, and SR-9009. Nootropics include Noopept, Phenibut, and racetam-class compounds. Their peptide selection includes individual compounds and pre-formulated research blends. Products are available in liquid, capsule, and powder forms. All products are third-party tested by Colmaric Analyticals with published COAs." />
             <FAQItem q="Does Behemoth Labz have a discount code?" a="Yes. Use code PROF10 at checkout to save 10% on your entire Behemoth Labz order. This code is verified and maintained by Prof. Peptide and valid as of April 2026." />
             <FAQItem q="How do I use the Behemoth Labz discount code?" a="Add your items to cart at behemothlabz.com, proceed to checkout, and enter PROF10 in the discount code field. The 10% discount will be applied to your order total." />
             <FAQItem q="How is Behemoth Labz third-party tested?" a="Every Behemoth Labz product is tested by Colmaric Analyticals LLC, an accredited laboratory in Goodlettsville, Tennessee. Certificates of Analysis are published publicly and consistently show purity results above 99%." />
@@ -107,12 +107,6 @@ export default function BehemothLabzCouponPage() {
           </div>
         </div>
 
-        <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What Does Behemoth Labz Carry?</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Behemoth Labz carries research compounds across SARMs, peptides, nootropics, prohormones, and PCT categories. Their SARMs catalog includes RAD-140, MK-677, LGD-4033, Ostarine, YK-11, S-23, GW-501516, and SR-9009. Nootropics include Noopept, Phenibut, and racetam-class compounds. Their peptide selection includes individual compounds and pre-formulated research blends. All products are third-party tested by Colmaric Analyticals with published COAs.
-          </p>
-        </div>
       </div>
     </div>
   );
