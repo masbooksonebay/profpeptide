@@ -1,0 +1,346 @@
+{
+  "peptides": {
+    "aod-9604": {
+      "displayName": "AOD-9604",
+      "vendors": [
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null }
+      ]
+    },
+    "bpc-157": {
+      "displayName": "BPC-157",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "apollo-peptide-sciences", "note": null },
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "biocollex", "note": null },
+        { "slug": "ez-peptides", "note": null },
+        { "slug": "fusion-peptide", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "integrative-peptides", "note": "Oral capsules & spray — no injection needed" },
+        { "slug": "limitless-biotech", "note": null },
+        { "slug": "nordic-peptides", "note": "Pre-filled pen format" },
+        { "slug": "oasis-labs", "note": null },
+        { "slug": "particle-peptides", "note": "UK/EU shipping" },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "purerawz", "note": null },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "cjc-1295": {
+      "displayName": "CJC-1295",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": "DAC + no-DAC variants" },
+        { "slug": "apollo-peptide-sciences", "note": "CJC-1295 / Ipamorelin combo" },
+        { "slug": "ascension-peptides", "note": "No-DAC variant" },
+        { "slug": "behemoth-labz", "note": "DAC + no-DAC variants" },
+        { "slug": "biocollex", "note": null },
+        { "slug": "ez-peptides", "note": null },
+        { "slug": "fusion-peptide", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "nordic-peptides", "note": "Pre-filled pen format" },
+        { "slug": "oasis-labs", "note": null },
+        { "slug": "particle-peptides", "note": "UK/EU shipping" },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "purerawz", "note": "Revive Nasal blend (CJC-1295 + Ipamorelin)" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "epitalon": {
+      "displayName": "Epitalon",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "apollo-peptide-sciences", "note": null },
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "fusion-peptide", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "nordic-peptides", "note": "Pre-filled pen format" },
+        { "slug": "purerawz", "note": "In Youth Nasal Spray blend" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "follistatin": {
+      "displayName": "Follistatin",
+      "vendors": [
+        { "slug": "behemoth-labz", "note": "Widest research catalog" },
+        { "slug": "purerawz", "note": null },
+        { "slug": "royal-peptides", "note": null }
+      ]
+    },
+    "gh-stack": {
+      "displayName": "GH Stack",
+      "vendors": [
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "spartan-peptides", "note": "Spartan Strong pre-formulated blend" }
+      ]
+    },
+    "ghk-cu": {
+      "displayName": "GHK-Cu",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "apollo-peptide-sciences", "note": null },
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "biocollex", "note": null },
+        { "slug": "fusion-peptide", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "oasis-labs", "note": null },
+        { "slug": "particle-peptides", "note": "UK/EU shipping" },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "purerawz", "note": null },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null }
+      ]
+    },
+    "igf-1-lr3": {
+      "displayName": "IGF-1 LR3",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "apollo-peptide-sciences", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "oasis-labs", "note": null },
+        { "slug": "purerawz", "note": null },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null }
+      ]
+    },
+    "ipamorelin": {
+      "displayName": "Ipamorelin",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "apollo-peptide-sciences", "note": "CJC-1295 / Ipamorelin combo" },
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": "Nasal + vial formats" },
+        { "slug": "biocollex", "note": "CJC-1295 / Ipamorelin combo" },
+        { "slug": "fusion-peptide", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "nordic-peptides", "note": "Pre-filled pen format" },
+        { "slug": "oasis-labs", "note": null },
+        { "slug": "particle-peptides", "note": "UK/EU shipping" },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "purerawz", "note": "Revive Nasal blend (CJC-1295 + Ipamorelin)" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "melanotan-ii": {
+      "displayName": "Melanotan II",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "ez-peptides", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "oasis-labs", "note": null },
+        { "slug": "purerawz", "note": null },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null }
+      ]
+    },
+    "mots-c": {
+      "displayName": "MOTS-c",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "fusion-peptide", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "purerawz", "note": "Nasal spray format" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null }
+      ]
+    },
+    "nad-plus": {
+      "displayName": "NAD+",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "apollo-peptide-sciences", "note": null },
+        { "slug": "biocollex", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "purerawz", "note": null },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": "Included in Energizer Bunny blend" },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "pt-141": {
+      "displayName": "PT-141",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": "Nasal + vial formats" },
+        { "slug": "biocollex", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "nordic-peptides", "note": "Pre-filled pen format" },
+        { "slug": "oasis-labs", "note": null },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null }
+      ]
+    },
+    "retatrutide": {
+      "displayName": "Retatrutide",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "apollo-peptide-sciences", "note": "Sold as \"GLP-3 R\"" },
+        { "slug": "ascension-peptides", "note": "Sold as R-10 / R-30" },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "biocollex", "note": "Sold as \"GLP-3 RT\"" },
+        { "slug": "ez-peptides", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "oasis-labs", "note": "Sold as \"GLP3R\"" },
+        { "slug": "purerawz", "note": null },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "selank": {
+      "displayName": "Selank",
+      "vendors": [
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": "Nasal format" },
+        { "slug": "biocollex", "note": null },
+        { "slug": "fusion-peptide", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "limitless-biotech", "note": "N-Acetyl Selank" },
+        { "slug": "purerawz", "note": "N-Acetyl Selank" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "semaglutide": {
+      "displayName": "Semaglutide",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "apollo-peptide-sciences", "note": "Sold as \"GLP-1 S\"" },
+        { "slug": "ascension-peptides", "note": "Sold as S-5" },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "biocollex", "note": null },
+        { "slug": "ez-peptides", "note": null },
+        { "slug": "fusion-peptide", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "nordic-peptides", "note": "Pre-filled pen format" },
+        { "slug": "oasis-labs", "note": null },
+        { "slug": "purerawz", "note": null },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "semax": {
+      "displayName": "Semax",
+      "vendors": [
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": "Nasal format" },
+        { "slug": "biocollex", "note": null },
+        { "slug": "fusion-peptide", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "limitless-biotech", "note": "N-Acetyl Semax" },
+        { "slug": "oasis-labs", "note": null },
+        { "slug": "purerawz", "note": "N-Acetyl Semax" },
+        { "slug": "spartan-peptides", "note": null },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "sermorelin": {
+      "displayName": "Sermorelin",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "ez-peptides", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "nordic-peptides", "note": "Pre-filled pen format" },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "purerawz", "note": "Sermorelin + GHRP-2 blend" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null }
+      ]
+    },
+    "tb-500": {
+      "displayName": "TB-500",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "biocollex", "note": null },
+        { "slug": "ez-peptides", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "nordic-peptides", "note": "Pre-filled pen format" },
+        { "slug": "oasis-labs", "note": null },
+        { "slug": "particle-peptides", "note": "UK/EU shipping" },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "purerawz", "note": null },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "tesamorelin": {
+      "displayName": "Tesamorelin",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "biocollex", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": "Included in Spartan Strong blend" }
+      ]
+    },
+    "thymosin-alpha-1": {
+      "displayName": "Thymosin Alpha-1",
+      "vendors": [
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "integrative-peptides", "note": "Oral format — no injection needed" },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null }
+      ]
+    },
+    "tirzepatide": {
+      "displayName": "Tirzepatide",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "apollo-peptide-sciences", "note": "Sold as \"GLP-2 T\"" },
+        { "slug": "ascension-peptides", "note": "Sold as T-10 / T-30" },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "biocollex", "note": "Sold as \"GLP-2 TZ\"" },
+        { "slug": "ez-peptides", "note": null },
+        { "slug": "ignite-peptides", "note": null },
+        { "slug": "oasis-labs", "note": null },
+        { "slug": "purerawz", "note": null },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "wolverine-stack": {
+      "displayName": "Wolverine Stack",
+      "vendors": [
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "biocollex", "note": null },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": "Pre-formulated research blend" }
+      ]
+    }
+  }
+}

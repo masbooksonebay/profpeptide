@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
+import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
   title: "Epitalon Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
@@ -78,11 +79,7 @@ export default function EpitalonResearchPage() {
         <Link href="/peptides/epitalon" className="btn-primary text-sm">Epitalon Profile</Link>
       </div>
 
-      <div className="mt-6 p-5 border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">Where to buy Epitalon</p>
-        <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">Every vendor on our vetted list is third-party tested with published Certificates of Analysis. See which research suppliers carry Epitalon.</p>
-        <Link href="/best-peptide-vendors" className="text-sm font-medium text-[#0891b2] hover:underline">See vendors that carry Epitalon in our full list &rarr;</Link>
-      </div>
+      <WhereToBuy peptide="epitalon" />
     </div>
     </>
   );
