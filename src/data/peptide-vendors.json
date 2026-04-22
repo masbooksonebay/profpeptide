@@ -33,6 +33,18 @@
         { "slug": "vital-core-research", "note": null }
       ]
     },
+    "cagrilintide": {
+      "displayName": "Cagrilintide",
+      "vendors": [
+        { "slug": "apollo-peptide-sciences", "note": null },
+        { "slug": "ascension-peptides", "note": "Sold as C-10" },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "spartan-peptides", "note": null },
+        { "slug": "vital-core-research", "note": null }
+      ]
+    },
     "cjc-1295": {
       "displayName": "CJC-1295",
       "vendors": [
@@ -52,6 +64,16 @@
         { "slug": "royal-peptides", "note": null },
         { "slug": "spartan-peptides", "note": null },
         { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "dsip": {
+      "displayName": "DSIP",
+      "vendors": [
+        { "slug": "almighty-peptides", "note": null },
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": "Nasal format" },
+        { "slug": "nordic-peptides", "note": "Pre-filled pen format" },
+        { "slug": "purerawz", "note": "Available in Youth Nasal Spray + Asleep blends" }
       ]
     },
     "epitalon": {
@@ -134,6 +156,17 @@
         { "slug": "royal-peptides", "note": null },
         { "slug": "spartan-peptides", "note": null },
         { "slug": "vital-core-research", "note": null }
+      ]
+    },
+    "kpv": {
+      "displayName": "KPV",
+      "vendors": [
+        { "slug": "ascension-peptides", "note": null },
+        { "slug": "behemoth-labz", "note": null },
+        { "slug": "biocollex", "note": null },
+        { "slug": "integrative-peptides", "note": "Oral capsules & spray — no injection needed" },
+        { "slug": "nordic-peptides", "note": "Pre-filled pen format" },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" }
       ]
     },
     "melanotan-ii": {

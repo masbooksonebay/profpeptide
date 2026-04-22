@@ -13,11 +13,12 @@ const categories = [
   {
     name: "Metabolic & Weight Loss",
     peptides: [
+      { name: "AOD-9604", slug: "aod-9604", active: true },
+      { name: "Cagrilintide", slug: "cagrilintide", active: true },
+      { name: "MOTS-c", slug: "mots-c", active: true },
+      { name: "Retatrutide", slug: "retatrutide", active: true },
       { name: "Semaglutide", slug: "semaglutide", active: true },
       { name: "Tirzepatide", slug: "tirzepatide", active: true },
-      { name: "Retatrutide", slug: "retatrutide", active: true },
-      { name: "MOTS-c", slug: "mots-c", active: true },
-      { name: "AOD-9604", slug: "aod-9604", active: true },
     ],
   },
   {
@@ -62,7 +63,14 @@ const categories = [
   {
     name: "Gut Health & Immunity",
     peptides: [
+      { name: "KPV", slug: "kpv", active: true },
       { name: "Thymosin Alpha-1", slug: "thymosin-alpha-1", active: true },
+    ],
+  },
+  {
+    name: "Sleep & Recovery",
+    peptides: [
+      { name: "DSIP", slug: "dsip", active: true },
     ],
   },
   {

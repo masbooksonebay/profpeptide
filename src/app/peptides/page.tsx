@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 24 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 27 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 24 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 27 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -14,11 +14,12 @@ const categories = [
     name: "Metabolic & Weight Loss",
     slug: "metabolic",
     peptides: [
+      { name: "AOD-9604", slug: "aod-9604" },
+      { name: "Cagrilintide", slug: "cagrilintide" },
+      { name: "MOTS-c", slug: "mots-c" },
+      { name: "Retatrutide", slug: "retatrutide" },
       { name: "Semaglutide", slug: "semaglutide" },
       { name: "Tirzepatide", slug: "tirzepatide" },
-      { name: "Retatrutide", slug: "retatrutide" },
-      { name: "AOD-9604", slug: "aod-9604" },
-      { name: "MOTS-c", slug: "mots-c" },
     ],
   },
   {
@@ -69,7 +70,15 @@ const categories = [
     name: "Gut Health & Immunity",
     slug: "gut-health",
     peptides: [
+      { name: "KPV", slug: "kpv" },
       { name: "Thymosin Alpha-1", slug: "thymosin-alpha-1" },
+    ],
+  },
+  {
+    name: "Sleep & Recovery",
+    slug: "sleep-recovery",
+    peptides: [
+      { name: "DSIP", slug: "dsip" },
     ],
   },
   {

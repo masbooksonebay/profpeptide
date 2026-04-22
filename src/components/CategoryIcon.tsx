@@ -58,6 +58,11 @@ const icons: Record<string, React.ReactNode> = {
       <path d="M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z" />
     </svg>
   ),
+  "moon-outline": (
+    <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={INLINE}>
+      <path d="M160,136c0-30.62,4.51-61.61,16-88C99.57,81.27,48,159.32,48,248c0,119.29,96.71,216,216,216,88.68,0,166.73-51.57,200-128-26.39,11.49-57.37,16-88,16C256.71,352,160,255.29,160,136Z" />
+    </svg>
+  ),
 
   /* ── Feature / section icons (Ionicons outline, viewBox 512) ── */
   "flask-outline": (
@@ -171,6 +176,7 @@ const categoryMap: Record<string, string> = {
   "Gut Health & Immunity": "shield-checkmark-outline",
   "Longevity": "infinite-outline",
   "Sexual Health": "heart-outline",
+  "Sleep & Recovery": "moon-outline",
 };
 
 export function CategoryIcon({ name, className }: { name: string; className?: string }) {
