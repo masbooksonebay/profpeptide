@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/tb-500" },
   title: "TB-500 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "5 key TB-500 studies summarized in plain English. Covers wound healing, muscle regeneration, cardiac repair, and developmental biology.",

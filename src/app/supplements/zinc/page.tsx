@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/zinc" },
   title: "Zinc — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Zinc supplement profile covering immune cell development, cold duration reduction, gut barrier support, testosterone, and form comparison.",

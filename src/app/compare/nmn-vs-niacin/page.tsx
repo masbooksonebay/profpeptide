@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/compare/nmn-vs-niacin" },
   title: "NMN vs Niacin — NAD+ Precursor Comparison | Prof. Peptide",
   description:
     "NMN vs Niacin comparison — how they raise NAD+, what the research shows, cost differences, side effects, and which is better for longevity.",

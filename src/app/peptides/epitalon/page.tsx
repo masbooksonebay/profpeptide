@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/epitalon" },
   title: "Epitalon — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Epitalon research profile covering telomerase activation, telomere lengthening evidence, pineal gland regulation, and longevity research.",

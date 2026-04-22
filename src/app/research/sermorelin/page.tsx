@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/sermorelin" },
   title: "Sermorelin Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "4 key Sermorelin studies summarized in plain English. Covers pituitary preservation, elderly GH restoration, cognitive function, and testosterone effects.",

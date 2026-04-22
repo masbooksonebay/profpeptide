@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/glutamine" },
   title: "Glutamine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Glutamine supplement profile covering gut barrier support, immune cell fuel, muscle recovery, and clinical nutrition evidence.",

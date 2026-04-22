@@ -3,6 +3,7 @@ import { Icon } from "@/components/CategoryIcon";
 import WaitlistForm from "@/components/WaitlistForm";
 
 export const metadata = {
+  alternates: { canonical: "/app" },
   title: "Get the Prof. Peptide App — Peptide Research in Your Pocket",
   description: "Access peptide profiles, supplement guides, dosage tools, and discount codes on the go. The Prof. Peptide app for iOS and Android.",
 };

@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
+  alternates: { canonical: "/research" },
   title: "Peptide Research — Peer-Reviewed Study Summaries | Prof. Peptide",
   description:
     "Plain-English summaries of peer-reviewed peptide research. Key studies on BPC-157, Semaglutide, Tirzepatide, GHK-Cu, PT-141, and 20+ more compounds.",

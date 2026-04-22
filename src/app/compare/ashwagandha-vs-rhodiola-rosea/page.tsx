@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/compare/ashwagandha-vs-rhodiola-rosea" },
   title: "Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison | Prof. Peptide",
   description: "Ashwagandha vs Rhodiola Rosea — stress response, cortisol, energy, anxiety, and which adaptogen is right for your goals based on the research.",
 };

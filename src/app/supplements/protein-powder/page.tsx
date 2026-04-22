@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/protein-powder" },
   title: "Protein Powder — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Protein powder profile covering muscle protein synthesis, whey vs casein vs plant sources, optimal intake, and post-workout timing.",

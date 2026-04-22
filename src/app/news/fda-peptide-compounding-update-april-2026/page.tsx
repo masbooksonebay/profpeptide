@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/news/fda-peptide-compounding-update-april-2026" },
   title: "FDA Moves to Restore Peptide Access — What Researchers Need to Know (April 2026) | Prof. Peptide",
   description:
     "The FDA posted a Federal Register notice in April 2026 considering lifting restrictions on seven Category 2 peptides. Here\u2019s what researchers need to know about the compounding pharmacy framework and what happens next.",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/ghk-cu" },
   title: "GHK-Cu — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "GHK-Cu research profile covering copper peptide mechanism, collagen synthesis, gene expression reprogramming, wound healing, and skin rejuvenation.",

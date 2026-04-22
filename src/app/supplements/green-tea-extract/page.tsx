@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/green-tea-extract" },
   title: "Green Tea Extract — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Green tea extract (EGCG) profile covering fat oxidation, COMT inhibition, caffeine synergy, cardiovascular benefits, and dosage guidance.",

@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/retatrutide" },
   title: "Retatrutide Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "3 key Retatrutide studies summarized in plain English. Covers Phase 2 obesity and diabetes trials plus TRIUMPH Phase 3 program status.",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/compare/creatine-vs-beta-alanine" },
   title: "Creatine vs Beta-Alanine — Performance Supplement Comparison | Prof. Peptide",
   description:
     "Creatine vs Beta-Alanine comparison — mechanisms, evidence, best use cases, side effects, and whether you should take one or both.",

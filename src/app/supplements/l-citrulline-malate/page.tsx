@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/l-citrulline-malate" },
   title: "L-Citrulline Malate — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "L-citrulline malate profile covering nitric oxide production, endurance improvement, muscle soreness reduction, and pre-workout dosage.",

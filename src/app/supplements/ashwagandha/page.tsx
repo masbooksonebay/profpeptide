@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/ashwagandha" },
   title: "Ashwagandha — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Ashwagandha supplement profile covering cortisol reduction, testosterone support, KSM-66 evidence, muscle strength, and sleep quality.",

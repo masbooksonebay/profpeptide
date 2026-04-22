@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/glucomannan" },
   title: "Glucomannan — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Glucomannan supplement profile covering konjac fiber satiety mechanism, EFSA weight loss claim, blood sugar blunting, and dosage guidance.",

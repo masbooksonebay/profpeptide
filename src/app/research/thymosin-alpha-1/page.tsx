@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/thymosin-alpha-1" },
   title: "Thymosin Alpha-1 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "5 key Thymosin Alpha-1 studies summarized in plain English. Covers immune modulation, viral infections, cancer immunotherapy, and immunosenescence.",

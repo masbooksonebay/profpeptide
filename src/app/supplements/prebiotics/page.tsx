@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/prebiotics" },
   title: "Prebiotics — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Prebiotics supplement profile covering selective fermentation, butyrate production, Bifidobacterium growth, and synbiotic combination approach.",

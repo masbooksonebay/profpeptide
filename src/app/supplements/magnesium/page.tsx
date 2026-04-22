@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/magnesium" },
   title: "Magnesium — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Magnesium supplement profile covering 300+ enzymatic reactions, sleep quality, blood pressure, glycinate vs citrate forms, and optimal dosage.",

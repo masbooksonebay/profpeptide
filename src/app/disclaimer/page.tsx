@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/disclaimer" },
   title: "Disclaimer | Prof. Peptide",
 };
 

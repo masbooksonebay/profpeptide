@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/lions-mane" },
   title: "Lion's Mane — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Lion's Mane mushroom profile covering NGF and BDNF stimulation, neurogenesis, cognitive improvement, and clinical trial evidence.",

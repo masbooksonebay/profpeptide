@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/l-citrulline" },
   title: "L-Citrulline — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "L-Citrulline supplement profile covering nitric oxide production, erectile function support, vascular health, and comparison to L-arginine.",

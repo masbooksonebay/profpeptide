@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/semaglutide" },
   title: "Semaglutide — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Semaglutide research profile covering GLP-1 mechanism, STEP trial weight loss data, cardiovascular benefits, FDA approval status, and dosage guidance.",

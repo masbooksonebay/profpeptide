@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/semax" },
   title: "Semax Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "5 key Semax studies summarized in plain English. Covers BDNF upregulation, stroke neuroprotection, genome-wide transcriptomics, and Alzheimer research.",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/tb-500" },
   title: "TB-500 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "TB-500 research profile covering Thymosin Beta-4 mechanism, wound healing data, muscle repair evidence, dosage protocols, and safety information.",

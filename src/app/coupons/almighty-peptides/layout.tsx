@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/coupons/almighty-peptides" },
   title: "Almighty Peptides Discount Code (April 2026) — Save 20% | Prof. Peptide",
   description:
     "Use Almighty Peptides discount code profpep to save 10%. HPLC & mass spec tested. Buy 1 Get 1 FREE on most products. Peptides, capsules, and research liquids available.",

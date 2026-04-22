@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/glow" },
   title: "GLOW (Peptide Stack) — Research Profile, Mechanism & Protocol | Prof. Peptide",
   description:
     "GLOW peptide stack research profile covering GHK-Cu, BPC-157, and TB-500 synergy for skin rejuvenation, collagen production, tissue repair, and anti-inflammatory recovery.",

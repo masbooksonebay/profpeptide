@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/zma" },
   title: "ZMA — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "ZMA supplement profile covering zinc magnesium aspartate, sleep quality improvement, testosterone support in athletes, and mineral repletion.",

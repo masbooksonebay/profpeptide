@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/tirzepatide" },
   title: "Tirzepatide — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Tirzepatide research profile covering dual GIP/GLP-1 mechanism, SURMOUNT trial data, head-to-head vs semaglutide, FDA approval, and dosage guidance.",

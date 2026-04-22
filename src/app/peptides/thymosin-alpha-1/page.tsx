@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/thymosin-alpha-1" },
   title: "Thymosin Alpha-1 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Thymosin Alpha-1 research profile covering immune modulation mechanism, TLR activation, hepatitis treatment, and cancer immunotherapy data.",

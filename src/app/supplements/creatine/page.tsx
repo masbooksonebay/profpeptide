@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/creatine" },
   title: "Creatine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Creatine supplement profile covering phosphocreatine mechanism, strength and muscle gains, cognitive benefits, and monohydrate gold standard.",

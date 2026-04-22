@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/bcaas" },
   title: "BCAAs — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "BCAAs supplement profile covering leucine mTOR activation, muscle soreness reduction, fasted training use, and context-dependent benefits.",

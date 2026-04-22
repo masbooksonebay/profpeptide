@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
+  alternates: { canonical: "/peptides" },
   title: "Peptide Library — 24 Research Peptide Profiles | Prof. Peptide",
   description:
     "Browse 24 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",

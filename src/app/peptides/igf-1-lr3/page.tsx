@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/igf-1-lr3" },
   title: "IGF-1 LR3 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "IGF-1 LR3 research profile covering extended half-life mechanism, mTOR activation, satellite cell stimulation, and muscle growth research.",

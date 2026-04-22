@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/semax" },
   title: "Semax — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Semax research profile covering BDNF upregulation, neuroprotective mechanism, stroke treatment evidence, and cognitive enhancement research.",

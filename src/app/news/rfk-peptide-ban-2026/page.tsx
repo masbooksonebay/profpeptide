@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/news/rfk-peptide-ban-2026" },
   title: "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List | Prof. Peptide",
   description:
     "HHS Secretary Robert F. Kennedy Jr. announced that 14 of 19 previously restricted peptides will be moved off the FDA\u2019s \u201Cdo not compound\u201D list \u2014 the largest regulatory reversal in U.S. peptide history.",

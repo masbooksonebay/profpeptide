@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/coupons/ez-peptides" },
   title: "EZ Peptides Discount Code (April 2026) — Save 10% | Prof. Peptide",
   description:
     "Use EZ Peptides discount code PROFPEPTIDE to save 10%. U.S.-based supplier with same-day shipping, 4.7/5 rating, and third-party tested peptides.",

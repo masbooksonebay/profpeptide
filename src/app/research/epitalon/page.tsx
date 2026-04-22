@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/epitalon" },
   title: "Epitalon Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "4 key Epitalon studies summarized in plain English. Covers telomerase activation, independent replication, pineal regulation, and longevity research.",

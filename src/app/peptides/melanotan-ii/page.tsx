@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/melanotan-ii" },
   title: "Melanotan II — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Melanotan II research profile covering melanocortin receptor mechanism, tanning effects, sexual function discovery, and safety risk assessment.",

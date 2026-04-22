@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/compare/semaglutide-vs-tirzepatide" },
   title: "Semaglutide vs Tirzepatide — GLP-1 Comparison | Prof. Peptide",
   description:
     "Semaglutide vs Tirzepatide comparison — mechanism, weight loss data, FDA approval status, side effects, and key clinical trial results.",

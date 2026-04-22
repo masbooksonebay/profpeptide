@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/vitamin-d3" },
   title: "Vitamin D3 — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Vitamin D3 supplement profile covering nuclear receptor activation, immune modulation, respiratory infection prevention, and D3 vs D2 dosage.",

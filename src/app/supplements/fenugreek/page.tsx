@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/fenugreek" },
   title: "Fenugreek — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Fenugreek supplement profile covering aromatase inhibition, testosterone support, blood glucose regulation, Testofen extract, and dosage.",

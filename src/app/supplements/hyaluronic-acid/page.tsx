@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/hyaluronic-acid" },
   title: "Hyaluronic Acid — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Hyaluronic acid supplement profile covering skin hydration, 6L water binding per gram, wrinkle reduction, joint lubrication, and dosage.",

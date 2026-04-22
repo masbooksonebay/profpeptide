@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/collagen-peptides-skin" },
   title: "Collagen Peptides for Skin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Collagen peptides for skin profile covering fibroblast stimulation, wrinkle reduction, elasticity improvement, and vitamin C synergy.",

@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/aod-9604" },
   title: "AOD-9604 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "4 key AOD-9604 studies summarized in plain English. Covers animal lipolysis data, human Phase 2b failure, safety profile, and development history.",

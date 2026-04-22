@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/compare/semax-vs-selank" },
   title: "Semax vs Selank — Cognitive Peptide Comparison | Prof. Peptide",
   description: "Semax vs Selank comparison — mechanisms, cognitive effects, anxiety, neuroprotection, and how to choose between these two Russian nootropic peptides.",
 };

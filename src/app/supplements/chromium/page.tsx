@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/chromium" },
   title: "Chromium — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Chromium supplement profile covering chromodulin insulin potentiation, GLUT4 translocation, blood sugar regulation, and picolinate dosage.",

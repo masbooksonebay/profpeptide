@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/nmn" },
   title: "NMN — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "NMN supplement profile covering NAD+ precursor mechanism, sirtuin activation, mitochondrial biogenesis, telomere support, and clinical trial data.",

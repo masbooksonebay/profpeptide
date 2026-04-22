@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/ghk-cu" },
   title: "GHK-Cu Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "5 key GHK-Cu studies summarized in plain English. Covers skin regeneration, gene expression modulation, wound healing, and clinical trial data.",

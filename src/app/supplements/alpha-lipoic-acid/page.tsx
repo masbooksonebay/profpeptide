@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/alpha-lipoic-acid" },
   title: "Alpha Lipoic Acid — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Alpha lipoic acid profile covering universal antioxidant mechanism, diabetic neuropathy evidence, insulin sensitivity, and R-ALA vs S-ALA forms.",

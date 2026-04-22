@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/wolverine-stack" },
   title: "Wolverine Stack Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "4 key Wolverine Stack studies summarized in plain English. Covers BPC-157 and TB-500 complementary mechanisms and orthopaedic combination rationale.",

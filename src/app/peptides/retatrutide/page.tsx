@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/retatrutide" },
   title: "Retatrutide — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Retatrutide research profile covering triple GIP/GLP-1/glucagon mechanism, 28.7% Phase 3 weight loss, liver fat reduction, and clinical trial status.",

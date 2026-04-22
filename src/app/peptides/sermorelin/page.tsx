@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/sermorelin" },
   title: "Sermorelin — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Sermorelin research profile covering GHRH 1-29 mechanism, pituitary preservation, former FDA approval history, and off-label clinical use.",

@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/tirzepatide" },
   title: "Tirzepatide Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "4 key Tirzepatide studies summarized in plain English. Covers SURMOUNT obesity trials, head-to-head vs semaglutide, and SUMMIT heart failure data.",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/quercetin" },
   title: "Quercetin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Quercetin supplement profile covering senolytic activity, NF-κB inhibition, zinc ionophore mechanism, and Mayo Clinic aging research.",

@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/coupons/apollo-peptide-sciences" },
   title: "Apollo Peptide Sciences Discount Code (April 2026) — Save 10% | Prof. Peptide",
   description:
     "Use Apollo Peptide Sciences discount code PROFPEPTIDE to save 10% on research peptides. COA and endotoxin reports on every product. Independent third-party tested.",

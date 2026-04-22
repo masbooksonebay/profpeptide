@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/coupons/limitless-biotech" },
   title: "Limitless Biotech Discount Code (April 2026) — Save 10% | Prof. Peptide",
   description:
     "Use Limitless Biotech discount code PROFPEPTIDE to save 10%. 90+ compounds, HPLC + LC-MS testing, COA on every product page. Worldwide shipping, 30-day guarantee.",

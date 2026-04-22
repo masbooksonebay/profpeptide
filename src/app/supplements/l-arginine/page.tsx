@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/l-arginine" },
   title: "L-Arginine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "L-Arginine supplement profile covering nitric oxide precursor role, growth hormone secretion, cardiovascular support, and wound healing.",

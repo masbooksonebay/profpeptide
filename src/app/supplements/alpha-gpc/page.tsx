@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/alpha-gpc" },
   title: "Alpha GPC — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Alpha GPC supplement profile covering choline bioavailability, acetylcholine synthesis, cognitive enhancement, and growth hormone release.",

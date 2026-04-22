@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/nad-plus" },
   title: "NAD+ Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "5 key NAD+ studies summarized in plain English. Covers NMN and NR human trials, cognitive function, metabolic health, and honest efficacy assessment.",

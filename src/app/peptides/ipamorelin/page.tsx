@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/ipamorelin" },
   title: "Ipamorelin — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Ipamorelin research profile covering selective ghrelin receptor mechanism, GH release without cortisol elevation, and CJC-1295 combination data.",

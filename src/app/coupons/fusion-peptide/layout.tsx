@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/coupons/fusion-peptide" },
   title: "Fusion Peptide Discount Code (April 2026) — Save 15% | Prof. Peptide",
   description:
     "Use Fusion Peptide discount code MARK15 to save 15% on research peptides. Verified promo code updated April 2026. Topical and nasal spray formats available.",

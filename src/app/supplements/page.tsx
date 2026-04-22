@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
+  alternates: { canonical: "/supplements" },
   title: "Supplement Library — 48 Natural Supplement Profiles | Prof. Peptide",
   description:
     "Browse 48 natural supplement profiles covering metabolic health, recovery, cognition, longevity, and more. Evidence-based and independently researched.",

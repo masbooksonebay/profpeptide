@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/coupons/ignite-peptides" },
   title: "Ignite Peptides Discount Code (April 2026) — Save 10% | Prof. Peptide",
   description:
     "Use Ignite Peptides discount code welcome10 to save 10% on research peptides. 99%+ purity, two-stage independent testing, COA on every product. US-based, 40+ compounds.",

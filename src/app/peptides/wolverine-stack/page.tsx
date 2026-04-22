@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/wolverine-stack" },
   title: "Wolverine Stack — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Wolverine Stack (BPC-157 + TB-500) research profile covering synergistic tissue repair mechanisms, complementary pathways, and combination rationale.",

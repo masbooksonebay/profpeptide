@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/biotin" },
   title: "Biotin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Biotin (vitamin B7) profile covering nail strength evidence, hair support in deficiency, keratin mechanism, and lab test interference warning.",

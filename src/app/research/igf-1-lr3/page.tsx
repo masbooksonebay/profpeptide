@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/igf-1-lr3" },
   title: "IGF-1 LR3 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "4 key IGF-1 LR3 studies summarized in plain English. Covers muscle therapeutics, mTOR signaling, doping pharmacology, and performance research.",

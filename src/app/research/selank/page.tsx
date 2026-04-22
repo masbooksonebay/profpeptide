@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/selank" },
   title: "Selank Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "5 key Selank studies summarized in plain English. Covers anxiolytic clinical trials, GABAergic mechanism, diazepam synergy, and neuroprotection.",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/phosphatidylserine" },
   title: "Phosphatidylserine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Phosphatidylserine profile covering FDA qualified health claim, neuronal membrane support, cortisol blunting, and memory improvement.",

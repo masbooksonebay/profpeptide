@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/tesamorelin" },
   title: "Tesamorelin — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Tesamorelin research profile covering FDA-approved GHRH analog mechanism, visceral fat reduction data, cognitive research, and clinical evidence.",

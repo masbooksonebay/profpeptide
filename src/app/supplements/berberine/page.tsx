@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/berberine" },
   title: "Berberine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Berberine supplement profile covering blood sugar regulation, AMPK activation, metformin comparison, lipid metabolism, and optimal dosage.",

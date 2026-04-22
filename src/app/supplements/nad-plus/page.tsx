@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/nad-plus" },
   title: "NAD+ — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "NAD+ supplement profile covering cellular energy, sirtuin activation, DNA repair, NMN and NR precursors, clinical trial evidence, and dosage guidance.",

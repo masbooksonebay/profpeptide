@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/coupons/ascension-peptides" },
   title: "Ascension Peptides Discount Code (April 2026) — Save 50% | Prof. Peptide",
   description:
     "Use Ascension Peptides discount code PROFPEPTIDE to save 50% on research peptides. The largest discount on our vendor list. 99%+ purity, multi-stage third-party tested.",

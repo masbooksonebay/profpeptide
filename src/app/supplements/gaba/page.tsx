@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/gaba" },
   title: "GABA — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "GABA supplement profile covering calming neurotransmitter mechanism, 400% growth hormone increase, sleep support, and PharmaGABA dosage.",

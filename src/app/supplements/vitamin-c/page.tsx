@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/vitamin-c" },
   title: "Vitamin C — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Vitamin C supplement profile covering collagen cofactor role, immune support, antioxidant defense, iron absorption, and exercise recovery.",

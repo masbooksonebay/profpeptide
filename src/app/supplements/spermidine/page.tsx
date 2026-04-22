@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/spermidine" },
   title: "Spermidine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Spermidine supplement profile covering autophagy induction, Bruneck mortality study, cognitive function, and fasting mimicry mechanism.",

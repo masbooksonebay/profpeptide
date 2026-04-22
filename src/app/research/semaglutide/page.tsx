@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/semaglutide" },
   title: "Semaglutide Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "5 key Semaglutide studies summarized in plain English. Covers STEP weight loss trials, SELECT cardiovascular outcomes, and SUSTAIN diabetes data.",

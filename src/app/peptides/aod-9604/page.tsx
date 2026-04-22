@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/aod-9604" },
   title: "AOD-9604 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "AOD-9604 research profile covering GH fragment lipolysis mechanism, Phase 2b trial failure, cartilage repair pivot, and regulatory status.",

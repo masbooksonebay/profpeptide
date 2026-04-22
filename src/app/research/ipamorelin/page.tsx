@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/ipamorelin" },
   title: "Ipamorelin Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "4 key Ipamorelin studies summarized in plain English. Covers selective GH release, body composition, human pharmacokinetics, and hypogonadal males.",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/follistatin" },
   title: "Follistatin — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Follistatin research profile covering myostatin inhibition, gene therapy trials for muscular dystrophy, muscle growth data, and safety information.",

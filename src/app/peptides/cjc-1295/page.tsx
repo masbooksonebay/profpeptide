@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/cjc-1295" },
   title: "CJC-1295 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "CJC-1295 research profile covering GHRH analog mechanism, pulsatile GH release, DAC vs non-DAC forms, and Ipamorelin synergy data.",

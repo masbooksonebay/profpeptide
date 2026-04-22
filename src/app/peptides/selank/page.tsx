@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/selank" },
   title: "Selank — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "Selank research profile covering anxiolytic mechanism, GABAergic modulation, benzodiazepine comparison, and cognitive support research.",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/coq10" },
   title: "CoQ10 — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "CoQ10 supplement profile covering mitochondrial electron transport, heart failure research, statin myopathy support, and ubiquinol vs ubiquinone.",

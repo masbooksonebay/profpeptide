@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/rhodiola-rosea" },
   title: "Rhodiola Rosea — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Rhodiola rosea profile covering adaptogenic stress response, mental fatigue reduction, HPA axis modulation, and burnout research.",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/glossary" },
   title: "Peptide & Supplement Research Glossary | Prof. Peptide",
   description:
     "Key terms and definitions for researchers exploring peptides and natural supplements. Alphabetical glossary covering reconstitution, dosing, peptide science, and more.",

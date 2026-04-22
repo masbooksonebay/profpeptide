@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/bpc-157" },
   title: "BPC-157 Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "5 key BPC-157 studies summarized in plain English. Covers tissue repair, gut healing, musculoskeletal recovery, and orthopedic sports medicine.",

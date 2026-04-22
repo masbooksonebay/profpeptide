@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/resveratrol" },
   title: "Resveratrol — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Resveratrol supplement profile covering SIRT1 activation, cardiovascular protection, caloric restriction mimicry, and NMN synergy stack.",

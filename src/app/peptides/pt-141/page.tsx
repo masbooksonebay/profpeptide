@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/pt-141" },
   title: "PT-141 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "PT-141 (Bremelanotide) research profile covering FDA-approved CNS mechanism for sexual desire, RECONNECT trial data, and off-label male ED use.",

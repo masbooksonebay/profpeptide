@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/curcumin" },
   title: "Curcumin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Curcumin supplement profile covering NF-κB inhibition, anti-inflammatory effects, joint pain relief, bioavailability solutions, and dosage.",

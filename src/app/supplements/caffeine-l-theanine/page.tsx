@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/caffeine-l-theanine" },
   title: "Caffeine + L-Theanine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Caffeine + L-Theanine profile covering synergistic cognitive enhancement, alpha wave modulation, focus without jitters, and optimal ratio.",

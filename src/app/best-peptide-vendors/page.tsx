@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/best-peptide-vendors" },
   title: "Best Peptide Vendors (April 2026) — Vetted Research Suppliers | Prof. Peptide",
   description:
     "Alphabetical list of the peptide vendors we've vetted for third-party testing, published COAs, purity standards, shipping reliability, and community reputation. Not a ranking.",

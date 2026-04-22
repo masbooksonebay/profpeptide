@@ -31,6 +31,12 @@ export function generateStaticParams() {
   return Object.keys(peptideData).map((slug) => ({ slug }));
 }
 
+export function generateMetadata({ params }: { params: { slug: string } }) {
+  return {
+    alternates: { canonical: `/peptides/${params.slug}` },
+  };
+}
+
 export default function PeptidePage({ params }: { params: { slug: string } }) {
   const data = peptideData[params.slug];
   if (!data) notFound();

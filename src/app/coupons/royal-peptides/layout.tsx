@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/coupons/royal-peptides" },
   title: "Royal Peptides Discount Code (April 2026) — Save 10% | Prof. Peptide",
   description:
     "Use Royal Peptides discount code PROFPEPTIDE to save 10%. cGMP & ISO-certified labs, 99%+ purity, purity/pH/vacuum-integrity tested per batch. US and global fulfillment.",

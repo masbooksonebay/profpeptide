@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/compare/berberine-vs-metformin" },
   title: "Berberine vs Metformin — Blood Sugar Comparison | Prof. Peptide",
   description:
     "Berberine vs Metformin comparison — mechanism, blood sugar efficacy, side effects, availability, and what the research actually shows.",

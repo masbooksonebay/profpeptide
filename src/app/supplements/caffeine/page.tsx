@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/caffeine" },
   title: "Caffeine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Caffeine supplement profile covering adenosine antagonism, metabolic rate increase, fat oxidation, physical performance, and optimal dosage.",

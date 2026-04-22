@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/tesamorelin" },
   title: "Tesamorelin Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "4 key Tesamorelin studies summarized in plain English. Covers FDA-approved visceral fat reduction, cognitive neurochemistry, and liver fat research.",

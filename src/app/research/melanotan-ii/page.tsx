@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/melanotan-ii" },
   title: "Melanotan II Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "4 key Melanotan II studies summarized in plain English. Covers Phase I tanning trial, sexual function discovery, melanoma risk assessment, and safety concerns.",

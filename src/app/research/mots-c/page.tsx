@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/mots-c" },
   title: "MOTS-c Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "4 key MOTS-c studies summarized in plain English. Covers mitochondrial exercise mimicry, insulin resistance, aging, and cardiac metabolism.",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/mots-c" },
   title: "MOTS-c — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "MOTS-c research profile covering mitochondrial-derived exercise mimetic mechanism, AMPK activation, insulin sensitivity, and aging research.",

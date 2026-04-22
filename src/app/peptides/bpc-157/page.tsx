@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/bpc-157" },
   title: "BPC-157 — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "BPC-157 research profile covering tissue repair mechanism, gut healing evidence, tendon recovery studies, dosage protocols, and safety considerations.",

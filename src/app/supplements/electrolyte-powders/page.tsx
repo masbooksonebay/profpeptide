@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/electrolyte-powders" },
   title: "Electrolyte Powders — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Electrolyte powders profile covering sodium balance, hyponatremia prevention, endurance performance, and hydration optimization.",

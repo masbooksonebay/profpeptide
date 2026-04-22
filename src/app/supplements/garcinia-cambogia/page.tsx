@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/garcinia-cambogia" },
   title: "Garcinia Cambogia — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Garcinia cambogia profile covering HCA mechanism, ATP citrate lyase inhibition, mixed weight loss evidence, and honest efficacy assessment.",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/peptides/gh-stack" },
   title: "GH Stack — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "GH Stack (CJC-1295 + Ipamorelin) research profile covering dual-pathway GH synergy, GHRH + GHRP mechanisms, and combination rationale.",

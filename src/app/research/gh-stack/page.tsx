@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 
 import WhereToBuy from "@/components/WhereToBuy";
 export const metadata = {
+  alternates: { canonical: "/research/gh-stack" },
   title: "GH Stack Research — Key Studies & Plain-English Summaries | Prof. Peptide",
   description:
     "4 key GH Stack studies summarized in plain English. Covers CJC-1295 + Ipamorelin dual-pathway synergy and GHRH+GHRP combination evidence.",

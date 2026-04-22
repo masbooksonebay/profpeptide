@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/compare" },
   title: "Peptide & Supplement Comparisons | Prof. Peptide",
   description:
     "Side-by-side research comparisons for peptides and supplements. Covers BPC-157 vs TB-500, Semaglutide vs Tirzepatide, Berberine vs Metformin, NMN vs Niacin, and more.",

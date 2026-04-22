@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/beta-alanine" },
   title: "Beta-Alanine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Beta-alanine supplement profile covering carnosine synthesis, pH buffering, fatigue delay in 1-4 minute exercise, and paraesthesia management.",

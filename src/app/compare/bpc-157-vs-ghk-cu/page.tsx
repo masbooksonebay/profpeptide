@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/compare/bpc-157-vs-ghk-cu" },
   title: "BPC-157 vs GHK-Cu — Healing Peptide Comparison | Prof. Peptide",
   description: "BPC-157 vs GHK-Cu comparison — mechanisms, tissue targets, research evidence, and when to use each of these two tissue repair and anti-aging peptides.",
 };

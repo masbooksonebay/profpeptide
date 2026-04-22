@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/supplements/maca-root" },
   title: "Maca Root — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Maca root supplement profile covering non-hormonal libido enhancement, male fertility support, adaptogenic mechanism, and color variety guide.",

@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/coupons/oasis-labs" },
   title: "Oasis Labs Discount Code (April 2026) — Save 10% | Prof. Peptide",
   description:
     "Use Oasis Labs discount code PROFPEPTIDE to save 10% on research peptides. Veteran-owned, US-based, QR-verified COAs, medical-grade -20\u00B0C storage, FedEx 2Day shipping.",

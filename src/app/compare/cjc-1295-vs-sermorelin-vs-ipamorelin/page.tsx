@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
+  alternates: { canonical: "/compare/cjc-1295-vs-sermorelin-vs-ipamorelin" },
   title: "CJC-1295 vs Sermorelin vs Ipamorelin — Growth Hormone Peptide Comparison | Prof. Peptide",
   description: "CJC-1295 vs Sermorelin vs Ipamorelin — mechanisms, half-lives, GH output, research evidence, and how to choose between these three growth hormone peptides.",
 };
