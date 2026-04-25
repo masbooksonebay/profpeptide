@@ -15,7 +15,7 @@ const sections = [
     node: (
       <div className="space-y-4">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          BPC-157 is a synthetic peptide that researchers study for its effects on healing. It comes from a small protein originally found in human stomach fluid, and it stays stable in conditions that break down most peptides — including stomach acid. People in the peptide research community use BPC-157 to support recovery from injuries to muscles, tendons, joints, and the gut. Most of the evidence comes from animal studies, and no completed human clinical trials have been published.
+          BPC-157 is a synthetic peptide that researchers study for its effects on healing. It comes from a small protein originally found in human stomach fluid, and it stays stable in conditions that break down most peptides — including stomach acid. People in the peptide research community use BPC-157 to support recovery from injuries to muscles, tendons, joints, and the gut.
         </p>
         <div>
           <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { Icon } from "@/components/CategoryIcon";
 
 interface Vendor {
   name: string;
@@ -329,18 +330,6 @@ export default function CouponsPage() {
         Codes refresh as promotions change. Featured deals and biggest savings are grouped at the top.
       </p>
 
-      <div className="mb-8 p-4 bg-[#0891b2]/5 border border-[#0891b2]/20 rounded-lg flex items-start gap-3 flex-wrap">
-        <div className="flex-1 min-w-[200px]">
-          <p className="text-sm text-gray-700 dark:text-slate-200 font-medium mb-1">Want to know which vendors we trust and why?</p>
-          <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">
-            See our full vetted list with third-party testing, COA availability, and the quality criteria we use to include each supplier.
-          </p>
-        </div>
-        <Link href="/best-peptide-vendors" className="text-sm font-medium text-[#0891b2] hover:underline whitespace-nowrap">
-          See vetted vendors &rarr;
-        </Link>
-      </div>
-
       <div className="flex items-center justify-center gap-2.5 mb-8 py-3.5 px-4 bg-[#0891b2]/10 border border-[#0891b2]/30 rounded-lg">
         <svg className="w-5 h-5 text-[#0891b2] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -364,6 +353,15 @@ export default function CouponsPage() {
           </div>
         ))}
       </div>
+
+      <Link href="/best-peptide-vendors" className="card group block mb-8">
+        <span className="text-[#0891b2] mb-3 block"><Icon name="shield-block-outline" /></span>
+        <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1.5 group-hover:text-[#0891b2] transition-colors">Best Peptide Vendors</h3>
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
+          Our vetted list of research peptide suppliers — with third-party testing, published COAs, and the quality criteria we use to include them.
+        </p>
+        <span className="text-xs font-medium text-[#0891b2] group-hover:underline">See our full vetted vendor list &rarr;</span>
+      </Link>
 
       <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">
         Prof. Peptide may earn a commission when you use our discount codes. This never influences our editorial content or research.
