@@ -322,13 +322,7 @@ export default function CouponsPage() {
   return (
     <div className="section max-w-3xl">
       <span className="tag mb-3 inline-block">Updated Regularly</span>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Discount Codes</h1>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-3 leading-relaxed max-w-lg">
-        Active discount codes for research peptide vendors. Every code is manually verified and valid as of April 2026.
-      </p>
-      <p className="text-xs text-gray-400 dark:text-slate-500 mb-8 leading-relaxed max-w-lg">
-        Codes refresh as promotions change. Featured deals and biggest savings are grouped at the top.
-      </p>
+      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-8">Discount Codes</h1>
 
       <div className="flex items-center justify-center gap-2.5 mb-8 py-3.5 px-4 bg-[#0891b2]/10 border border-[#0891b2]/30 rounded-lg">
         <svg className="w-5 h-5 text-[#0891b2] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
