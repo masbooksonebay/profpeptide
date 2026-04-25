@@ -6,7 +6,7 @@ import JsonLd from "./JsonLd";
 export type PeptideFAQItem = { q: string; a: string };
 
 export default function PeptideFAQ({ faqs }: { faqs: PeptideFAQItem[] }) {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   const schema = {
     "@context": "https://schema.org",

@@ -28,7 +28,7 @@ const keyFacts = [
   {
     label: "Evidence tier",
     value:
-      "Preclinical (rodent) — one cancelled Phase I trial (2015–2016) with no published results; no completed human RCTs",
+      "Preclinical (rodent) — one Phase I trial registered Dec 2015 (NCT02637284, status “Unknown”, no results posted); no completed human RCTs",
   },
   {
     label: "Regulatory status",
@@ -40,7 +40,7 @@ const keyFacts = [
 const faqs: PeptideFAQItem[] = [
   {
     q: "Is BPC-157 FDA-approved?",
-    a: "No. BPC-157 is not approved by the FDA for any medical use. In 2023 the FDA placed it on its Category 2 bulk drug substance list, meaning it cannot be compounded by 503A or 503B compounding pharmacies for patient use. There are no completed human Phase II or Phase III trials, and the only known Phase I trial — registered in 2015 by Diagen Smart Solutions — was terminated in 2016 with no published results.",
+    a: "No. BPC-157 is not approved by the FDA for any medical use. In 2023 the FDA placed it on its Category 2 bulk drug substance list, meaning it cannot be compounded by 503A or 503B compounding pharmacies for patient use. There are no completed human Phase II or Phase III trials, and the only known Phase I trial — NCT02637284, registered in December 2015 by PharmaCotherapia d.o.o. — has status “Unknown” on ClinicalTrials.gov with no results posted.",
   },
   {
     q: "Is BPC-157 legal?",
@@ -52,11 +52,11 @@ const faqs: PeptideFAQItem[] = [
   },
   {
     q: "What does the research say about safety?",
-    a: "Rodent studies have not reported significant toxicity at the doses tested, but the human safety profile is largely unknown. There are no completed long-term human clinical trials, and the cancelled Phase I trial means even short-term human pharmacovigilance data is sparse. A theoretical concern raised in the literature is that BPC-157's angiogenic activity could in principle support tumor vascularization, though this has not been demonstrated clinically. Researchers should also be aware that product quality is a known issue in the unregulated peptide market — third-party Certificate of Analysis (COA) testing is the only way to verify identity and purity.",
+    a: "Rodent studies have not reported significant toxicity at the doses tested, but the human safety profile is largely unknown. There are no completed long-term human clinical trials, and the unreported Phase I trial means even short-term human pharmacovigilance data is sparse. A theoretical concern raised in the literature is that BPC-157's angiogenic activity could in principle support tumor vascularization, though this has not been demonstrated clinically. Researchers should also be aware that product quality is a known issue in the unregulated peptide market — third-party Certificate of Analysis (COA) testing is the only way to verify identity and purity.",
   },
   {
-    q: "Why was the Phase I human trial cancelled?",
-    a: "A Phase I safety study of BPC-157 (PL-14736) was registered by Diagen Smart Solutions in 2015 and terminated in 2016. No reason was published, no results were posted to ClinicalTrials.gov, and no peer-reviewed paper has appeared. The absence of a stated reason and the lack of any subsequent human trial is itself part of the evidence picture — when reading rodent efficacy claims, the missing human safety data should be weighed alongside.",
+    q: "Why didn't the Phase I human trial publish results?",
+    a: "A Phase I safety and pharmacokinetics study of PCO-02 (BPC-157) — NCT02637284 — was registered with ClinicalTrials.gov by PharmaCotherapia d.o.o. in December 2015. Its status is listed as “Unknown,” meaning the sponsor stopped updating the record. No results have been posted and no peer-reviewed paper has appeared. The absence of follow-up reporting and the lack of any subsequent human trial in the decade since is itself part of the evidence picture — when reading rodent efficacy claims, the missing human safety data should be weighed alongside.",
   },
   {
     q: "Can BPC-157 be taken orally?",
@@ -112,8 +112,9 @@ export default function BPC157Page() {
             BPC-157 is a synthetic 15-amino-acid peptide derived from a protective protein in human
             gastric juice. Rodent studies suggest it accelerates healing in tendon, muscle, bone, and
             gastrointestinal tissue through angiogenic and cytoprotective effects. There are no
-            completed human clinical trials — the only Phase I study, registered in 2015, was cancelled
-            in 2016 with no published results. BPC-157 is not FDA approved, is on the FDA's Category 2
+            completed human clinical trials — the only registered Phase I study (NCT02637284, 2015) has
+            status &ldquo;Unknown&rdquo; on ClinicalTrials.gov with no results posted. BPC-157 is not
+            FDA approved, is on the FDA&apos;s Category 2
             bulk drug substance list, and is prohibited in sport by WADA under category S0. Treat all
             efficacy claims as preclinical until human data exists.
           </p>
@@ -225,11 +226,12 @@ export default function BPC157Page() {
                 Human data
               </h3>
               <p>
-                Direct human evidence is essentially absent. A Phase I trial of BPC-157 (sponsor
-                code PL-14736) was registered with ClinicalTrials.gov in 2015 by Diagen Smart Solutions
-                and was terminated in 2016 — no results were posted and no peer-reviewed paper has
-                been published. No subsequent human trial has been registered. All clinical claims in
-                the marketing literature trace back to rodent data.
+                Direct human evidence is essentially absent. A Phase I trial (NCT02637284) of PCO-02
+                — the development name for BPC-157 — was registered with ClinicalTrials.gov in
+                December 2015 by PharmaCotherapia d.o.o. Its status is listed as &ldquo;Unknown,&rdquo;
+                no results have been posted, and no peer-reviewed paper has been published. No
+                subsequent human trial has been registered. All clinical claims in the marketing
+                literature trace back to rodent data.
               </p>
 
               <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mt-5">
@@ -252,12 +254,14 @@ export default function BPC157Page() {
             </h2>
             <div className="space-y-3 text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
               <p>
-                <strong>The cancelled Phase I trial.</strong> The single registered human safety study
-                was terminated in 2016 with no published explanation and no posted results. This is
-                arguably the most important fact in the BPC-157 evidence picture: a sponsor opened a
-                human trial, closed it, and stopped. Whether this reflects a safety signal, a funding
-                or sponsor issue, or something else is publicly unknown — but the absence of any
-                follow-up human trial in the decade since is itself a signal.
+                <strong>The unreported Phase I trial.</strong> The single registered human safety
+                study (NCT02637284, PharmaCotherapia d.o.o., December 2015) has status
+                &ldquo;Unknown&rdquo; on ClinicalTrials.gov with no published explanation and no
+                posted results. This is arguably the most important fact in the BPC-157 evidence
+                picture: a sponsor opened a human trial and stopped reporting on it. Whether this
+                reflects a safety signal, a funding or sponsor issue, or something else is publicly
+                unknown — but the absence of any follow-up human trial in the decade since is itself
+                a signal.
               </p>
               <p>
                 <strong>Source concentration.</strong> A substantial share of BPC-157 efficacy data
@@ -350,8 +354,18 @@ export default function BPC157Page() {
                 Neuropsychopharmacol Biol Psychiatry. 2018;84(Pt B):363–372. PMID: 28830777.
               </li>
               <li>
-                ClinicalTrials.gov. NCT registration of BPC-157 (PL-14736) Phase I — Diagen Smart
-                Solutions, 2015 (terminated 2016, no results posted).
+                ClinicalTrials.gov.{" "}
+                <a
+                  href="https://classic.clinicaltrials.gov/ct2/show/study/NCT02637284"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0891b2] hover:underline"
+                >
+                  NCT02637284
+                </a>{" "}
+                — Safety and Pharmacokinetics of PCO-02 (BPC-157) in Healthy Volunteers. Sponsor:
+                PharmaCotherapia d.o.o. Registered December 2015, status &ldquo;Unknown&rdquo;, no
+                results posted.
               </li>
             </ol>
           </section>
