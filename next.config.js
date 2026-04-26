@@ -8,6 +8,16 @@ const nextConfig = {
         destination: "https://profpeptide.com/:path*",
         permanent: true,
       },
+      {
+        source: "/compare/retatrutide-vs-tirzepatide",
+        destination: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
+        permanent: true,
+      },
+      {
+        source: "/compare/retatrutide-vs-semaglutide",
+        destination: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
+        permanent: true,
+      },
     ];
   },
 };

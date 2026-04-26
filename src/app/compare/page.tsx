@@ -49,18 +49,6 @@ const sections: Section[] = [
         tag: "Metabolic",
       },
       {
-        title: "Retatrutide vs Semaglutide",
-        desc: "Three-receptor vs single-receptor GLP — weight loss data, cardiovascular evidence, and FDA status compared.",
-        href: "/compare/retatrutide-vs-semaglutide",
-        tag: "Metabolic",
-      },
-      {
-        title: "Retatrutide vs Tirzepatide",
-        desc: "Triple agonist vs dual agonist — weight loss data, side effect profiles, and FDA status compared.",
-        href: "/compare/retatrutide-vs-tirzepatide",
-        tag: "Metabolic",
-      },
-      {
         title: "Semaglutide vs Tirzepatide",
         desc: "GLP-1 comparison — weight loss data, FDA status, and head-to-head clinical trial results.",
         href: "/compare/semaglutide-vs-tirzepatide",
