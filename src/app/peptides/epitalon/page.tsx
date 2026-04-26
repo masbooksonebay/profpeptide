@@ -1,97 +1,269 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import PageTOC from "@/components/PageTOC";
 
 export const metadata = {
   alternates: { canonical: "/peptides/epitalon" },
-  title: "Epitalon — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
+  title: "Epitalon — Telomerase Activator, Pineal Peptide | Prof. Peptide",
   description:
-    "Epitalon research profile covering telomerase activation, telomere lengthening evidence, pineal gland regulation, and longevity research.",
+    "Epitalon (AEDG tetrapeptide) research profile: telomerase activation, pineal/melatonin restoration, Khavinson research, dosing protocol, side effects.",
 };
 
-const sections = [
+const faqs = [
   {
-    id: "overview",
-    title: "Overview",
-    content:
-      "Epitalon is a synthetic tetrapeptide with the amino acid sequence Ala-Glu-Asp-Gly (AEDG) \u2014 just four amino acids \u2014 developed by Vladimir Khavinson and the St. Petersburg Institute of Bioregulation and Gerontology based on the composition of Epithalamin, a polypeptide extract from bovine pineal glands. First synthesized in the 1980s, Epitalon has been the subject of over 25 years of research examining its potential geroprotective (aging-protective) effects, primarily through two proposed mechanisms: activation of telomerase to maintain telomere length, and regulation of pineal gland function to restore melatonin secretion. Epitalon occupies a unique position in longevity research \u2014 it is small enough (0.39 kDa) to directly interact with DNA and act as a regulatory factor, and has demonstrated telomere lengthening in human cell lines, human blood cells, and animal models. It is approved for use and available clinically in Russia, and has been studied in human clinical trials. Outside Russia it is not FDA approved and is classified as a research compound. Epitalon presents what researchers call the \"Epitalon Paradox\" \u2014 it activates telomerase and extends telomeres (normally associated with cancer risk) yet animal studies consistently show reduced tumor incidence, not increased. This paradox makes it a scientifically compelling but not fully understood compound.",
+    q: "Is Epitalon FDA-approved?",
+    a: "No. Epitalon is not FDA-approved for any indication and has not been through Western clinical trials. The bulk of clinical evidence comes from Russian gerontology research (Khavinson and colleagues, St. Petersburg Institute of Bioregulation and Gerontology). It is sold as a research-grade peptide.",
   },
+  {
+    q: "Does Epitalon really lengthen telomeres?",
+    a: "Khavinson's lab reported telomerase activation and telomere lengthening in human somatic cells in culture. Animal lifespan extension was also reported. However, these findings have not been independently replicated in Western labs at the same level, and skepticism is warranted regarding the strength of telomere-lengthening claims. The mechanism is the most scientifically interesting claim but also the least replicated outside Khavinson's group.",
+  },
+  {
+    q: "What's the difference between Epitalon and Epithalamin?",
+    a: "Epithalamin is a natural pineal gland extract studied by Khavinson and colleagues for decades in Soviet-era gerontology research. Epitalon is a synthetic tetrapeptide (AEDG: alanine-glutamate-aspartate-glycine) developed in the 1980s as a short-peptide analog of epithalamin. Epitalon retains the key biological effects of the parent extract in a defined, reproducible synthetic form.",
+  },
+  {
+    q: "How long until I see results?",
+    a: "Acute effects (sleep quality, circadian rhythm) are measurable in 1–2 weeks of cycling. Telomerase activation effects accumulate over months. Multi-cycle protocols typically run 2–4 cycles over a year. Long-term effects (the framing in Russian cohort research) are measured over years, not weeks.",
+  },
+  {
+    q: "Can I take Epitalon with NAD+ or other longevity peptides?",
+    a: "Yes — Epitalon + NAD+ is a common longevity stack pairing (cellular metabolism + cellular aging). Compatible with standard longevity protocols including resveratrol, NMN, omega-3, vitamin D. Often combined with GHK-Cu for cellular regeneration + telomere protection. No documented major drug interactions at standard doses.",
+  },
+  {
+    q: "Is Epitalon safe long-term?",
+    a: "Russian cohort data spanning 20+ years suggests excellent long-term safety. Methodology differs from Western RCT standards, but the duration of human observation is unmatched in peptide research. Cycling rather than continuous use is standard practice. Cancer patients should consult their oncologist before use given theoretical telomerase activation concerns in cancer contexts.",
+  },
+  {
+    q: "What is the optimal dosing schedule?",
+    a: "Standard cycle: 5–10 mg total dose per cycle, divided as 0.5–1 mg subcutaneously daily for 10–20 days. Cycles are typically run 2–4 times per year, with 2–6 months between cycles. Bedtime injection is preferred to align with natural pineal/melatonin pathway timing. Lifelong cycling protocols are common in Russian gerontology contexts.",
+  },
+  {
+    q: "Where can I buy Epitalon?",
+    a: (
+      <>
+        Epitalon is sold by specialty research peptide vendors in the US. Quality varies dramatically — verify Certificate of Analysis. PP maintains a list of vetted vendors with verified discount codes — see{" "}
+        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          Verified Discount Codes &rarr;
+        </Link>
+        .
+      </>
+    ),
+  },
+];
+
+const sections = [
   {
     id: "mechanism",
     title: "Mechanism of Action",
     body: [
-      "Telomerase Activation [1] \u2014 Epitalon's best-documented mechanism in vitro is induction of telomerase enzyme activity in human somatic cells. Addition of Epitalon to telomerase-negative human fetal fibroblast cultures induced expression of the catalytic subunit of telomerase (hTERT), enzymatic activity of telomerase, and telomere elongation \u2014 sufficient to surpass the Hayflick limit (the normal cellular replication ceiling) in cell cultures. A 2025 study confirmed telomerase activation in bovine cumulus cells and oocytes.",
-      "Telomere Length Maintenance [2] \u2014 Telomeres are repetitive DNA sequences at chromosome ends that shorten with each cell division. Short telomeres trigger cellular senescence or apoptosis. By activating telomerase, Epitalon enables telomere length extension in aging cells, potentially delaying cellular senescence. Human clinical studies showed significant telomere length increases in blood cells of patients aged 60\u201365 and 75\u201380 years.",
-      "Pineal Gland Regulation and Melatonin Restoration [3] \u2014 Epitalon was derived from pineal gland extracts and appears to act on the hypothalamic-pituitary axis to regulate pineal function. Studies show Epitalon restores melatonin secretion by the pineal gland in both aged monkeys and humans \u2014 a significant finding given that melatonin declines substantially with age and plays a critical role in circadian rhythm regulation, antioxidant defense, and neuroprotection.",
-      "DNA Interaction and Epigenetic Regulation [2] \u2014 At only 0.39 kDa, Epitalon is small enough to directly interact with DNA. Research demonstrates it influences chromatin structure and gene expression, including modulation of hTERT promoter activity, IL-2 mRNA levels, and neurogenic differentiation markers in stem cells.",
-      "Antioxidant and Mitochondrial Protection [3] \u2014 Epitalon enhanced mitochondrial health and reduced intracellular reactive oxygen species in treated cells, demonstrated by improved JC-1 staining (a mitochondrial membrane potential indicator). It also increased activities of antioxidant enzymes superoxide dismutase, glutathione peroxidase, and glutathione-S-transferase in aging rats.",
-      "Neuroprotective Effects [2] \u2014 Epitalon reduced 8-hydroxydeoxyguanosine (8-OHdG) \u2014 a key marker of oxidative DNA damage \u2014 in neurons, and increased the quantity and length of dendrites. It also increased BDNF and cyclic-AMP responsive element binding protein 1 by regulating melatonin synthesis and circadian gene expression.",
+      "Telomerase Activation [1] — Cell culture studies show Epitalon activates telomerase, the enzyme that maintains chromosomal telomeres. Telomere shortening is a hallmark of cellular aging; telomerase activation potentially extends cellular replicative lifespan. This is the most scientifically interesting but least replicated claim.",
+      "Pineal Gland Modulation [2] — Originally derived from epithalamin (pineal extract). Restores age-related decline in melatonin production. Melatonin rhythm restoration is a key claim in Russian gerontology research.",
+      "Gene Expression — Modulates expression of genes related to circadian rhythm, antioxidant defense, and apoptosis regulation. Smaller scope than GHK-Cu's 4,000+ genes but specifically targeted to aging pathways.",
+      "Antioxidant Activity — Increases activity of endogenous antioxidant enzymes (superoxide dismutase, catalase, glutathione peroxidase) in animal models.",
+      "Circadian Rhythm Restoration — Pineal-mediated melatonin rhythm restoration improves sleep architecture and overall circadian function in aging populations.",
     ],
   },
   {
     id: "research",
     title: "Key Research Areas",
     body: [
-      "Telomere Lengthening \u2014 Cell and Human Studies [1] \u2014 The foundational 2003 study published in Experimental Gerontology established Epitalon's ability to induce telomerase activity and telomere elongation in human fetal fibroblasts. A 2025 study in Biogerontology confirmed dose-dependent telomere length extension in multiple human cell lines including normal epithelial cells and fibroblasts, through both telomerase upregulation and Alternative Lengthening of Telomeres (ALT) mechanisms.",
-      "Human Clinical Trials \u2014 Telomere Length and Aging [4] \u2014 Human clinical studies conducted in Russia demonstrated that both Epitalon and Epithalamin significantly increased telomere lengths in blood cells of patients aged 60\u201365 and 75\u201380 years, establishing human evidence for its telomere-lengthening effects.",
-      "Biological Age Reduction \u2014 Case Report [4] \u2014 A 2024 case report documented that a combination protocol including Epitalon (5 mg subcutaneously for 10 consecutive days) reduced a patient's biological age by 7.9 years (from 75.93 to 68.03) and increased telomere length from 6.45 to 6.59 kb over one year of treatment, alongside improvements in cognitive function.",
-      "Cancer Research \u2014 The Epitalon Paradox [2] \u2014 Multiple animal studies report that Epitalon reduced spontaneous tumor incidence, reduced metastases, and delayed tumor development in cancer-prone mouse models \u2014 despite its telomerase-activating properties. This apparent contradiction with established telomere-cancer biology remains an active area of investigation, with proposed explanations involving epigenetic gating of oncogenic pathways or melatonin-mediated oncostatic effects.",
-      "Circadian Rhythm and Melatonin [3] \u2014 Epitalon restored melatonin secretion patterns in aged monkeys and humans, supporting its pineal regulatory mechanism and suggesting applications in age-related circadian disruption and sleep quality.",
-      "Retinitis Pigmentosa \u2014 Human Trial [1] \u2014 A human clinical trial in retinitis pigmentosa patients found that Epitalon produced a positive clinical effect in 90% of cases in the treated group \u2014 one of the strongest human efficacy signals in the Epitalon literature.",
+      "Telomerase & Telomere Lengthening [1] — Khavinson's lab demonstrated telomerase activation in human somatic cells in culture. Telomere lengthening observed over multiple cell divisions. Has not been replicated in Western labs at the same level.",
+      "Russian Long-Term Cohort Studies [3] — Multi-year human studies (1990s–2010s) reporting reduced mortality and improved age-related markers in elderly subjects taking Epitalon. Methodology differs from Western RCT standards but the duration is unmatched in peptide research.",
+      "Sleep & Circadian — Restoration of melatonin rhythm in aging populations. Improved sleep quality reported in shorter-duration human studies.",
+      "Animal Lifespan — Chick, mouse, and rat lifespan extension reported in Russian research. Effect sizes vary; methodology not always Western-standard.",
+      "Cancer Research — Limited data; some studies suggest reduced spontaneous tumor incidence in animal models. Mechanism unclear.",
     ],
   },
   {
-    id: "benefits",
-    title: "Observed Benefits in Research",
+    id: "timeline",
+    title: "What to Expect (Timeline)",
+    content:
+      "Epitalon effects develop on multiple timescales. Acute effects (sleep quality, circadian rhythm) measurable in 1–2 weeks of cycling. Telomerase activation effects accumulate over months. Multi-cycle protocols typically run 2–4 cycles over a year. Long-term effects (the framing used in Russian cohort research) are measured over years rather than weeks. Most acute subjective benefits relate to sleep quality and energy.",
+  },
+  {
+    id: "dosing",
+    title: "Dosing & Protocols",
+    node: (
+      <div className="space-y-3">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Epitalon is administered as a subcutaneous injection in cycles. The standard Russian protocol uses 10–20 day intensive cycles followed by extended breaks.
+        </p>
+        <ol className="list-decimal list-inside space-y-1">
+          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard cycle: 5–10 mg total dose per cycle, divided as 0.5–1 mg subcutaneously daily for 10–20 days.</li>
+          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle frequency: 2–4 cycles per year, with 2–6 months between cycles.</li>
+          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Time of day: bedtime preferred (aligns with pineal/melatonin pathway).</li>
+          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reconstitution: 10 mg vial + 2 mL bacteriostatic water = 5 mg/mL.</li>
+          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Lifelong cycling protocols are common in Russian gerontology contexts.</li>
+          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Some users do oral (sublingual) protocols, though evidence for oral bioavailability is limited.</li>
+        </ol>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          The single 10–20 day intensive cycle followed by 2–6 month break is the standard pattern. Cycling rather than continuous use is the conventional approach.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: "side-effects",
+    title: "Side Effects & Safety",
+    node: (
+      <div className="space-y-5">
+        <div>
+          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            Common (most users)
+          </h3>
+          <ol className="list-decimal list-inside space-y-1">
+            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
+            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Occasional vivid dreams or mild sleep changes during cycles</li>
+          </ol>
+        </div>
+        <div>
+          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            Less common (moderate)
+          </h3>
+          <ol className="list-decimal list-inside space-y-1">
+            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
+            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue</li>
+          </ol>
+        </div>
+        <div>
+          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            Serious (rare)
+          </h3>
+          <ol className="list-decimal list-inside space-y-1">
+            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No major adverse events documented in Russian cohort research over 20+ years</li>
+            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical telomerase activation concern in cancer contexts</li>
+          </ol>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Epitalon has one of the cleanest safety profiles of any peptide on Prof. Peptide, supported by decades of Russian human use under research conditions. NOT FDA-approved. Cancer patients should consult their oncologist before use given the theoretical concern about telomerase activation in cancer cells.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: "how-to-take",
+    title: "How to Take",
     body: [
-      "Telomere length extension in human cell cultures surpassing the Hayflick limit",
-      "Significant telomere lengthening in blood cells of elderly humans in clinical studies",
-      "7.9-year reduction in biological age in a case report using combination protocol",
-      "Restored melatonin secretion in aged monkeys and humans",
-      "Reduced spontaneous tumor incidence and metastases in cancer-prone animal models",
-      "Positive clinical effect in 90% of retinitis pigmentosa patients",
-      "Enhanced mitochondrial function and reduced reactive oxygen species",
-      "Neuroprotective effects \u2014 reduced oxidative DNA damage in neurons",
-      "Chromosomal aberration reduction in aging mice models",
+      "Subcutaneous injection at bedtime.",
+      "Site rotation: abdomen, thigh, upper arm.",
+      "Reconstitute with bacteriostatic water; swirl gently — do not shake.",
+      "Store reconstituted solution refrigerated.",
+      "Single 10–20 day intensive cycle, then break of 2–6 months.",
+      "Storage of reconstituted: 2–8°C, use within 30 days.",
     ],
   },
   {
-    id: "pharmacokinetics",
-    title: "Pharmacokinetics",
+    id: "stacks",
+    title: "Common Stacks",
     body: [
-      "Structure: Tetrapeptide (Ala-Glu-Asp-Gly) \u2014 4 amino acids",
-      "Molecular weight: 0.39 kDa \u2014 small enough to directly interact with DNA",
-      "Half-life: Short \u2014 specific human pharmacokinetic data limited",
-      "Administration: Subcutaneous injection (typical research protocol: 5\u201310 mg daily for 10\u201320 consecutive days, repeated every 3\u20136 months)",
+      "NAD+ — common longevity stack pairing. Cellular metabolism + cellular aging mechanisms.",
+      "Melatonin — supportive for pineal function (but Epitalon is intended to restore endogenous melatonin, not replace it).",
+      "Standard longevity protocols (resveratrol, NMN, omega-3, vitamin D) — compatible.",
+      "GHK-Cu — for combined cellular regeneration + telomere protection.",
+      "Avoid: high-dose direct telomerase inhibitors (theoretical antagonism, mostly experimental research compounds).",
+    ],
+  },
+  {
+    id: "interactions",
+    title: "Drug & Peptide Interactions",
+    body: [
+      "Sleep medications — Epitalon may shift natural melatonin rhythm; monitor for changes in sleep onset.",
+      "SSRIs — limited data; no documented interactions.",
+      "Cancer therapies — theoretical concern with telomerase activation in cancer contexts. Cancer patients should consult oncologist before use.",
+      "No documented major drug interactions at standard doses.",
+    ],
+  },
+  {
+    id: "storage",
+    title: "Storage & Handling",
+    body: [
+      "Lyophilized: -20°C long-term, 2–8°C short-term.",
+      "Reconstituted: 2–8°C, use within 30 days.",
+      "Light-sensitive; store in original packaging.",
+      "Do NOT freeze reconstituted solution.",
+      "Reconstitute with bacteriostatic water for injection. Swirl gently — do not shake.",
+      "Discard if cloudy, discolored, or contains particles.",
     ],
   },
   {
     id: "limitations",
-    title: "Research Limitations",
-    content:
-      "(1) The majority of research originates from a single Russian research group (Khavinson et al., St. Petersburg Institute of Bioregulation and Gerontology) \u2014 independent replication outside this group is limited, though increasing. (2) The Epitalon Paradox remains unresolved \u2014 telomerase activation theoretically increases cancer risk, yet animal studies show reduced tumors. The mechanism explaining this apparent contradiction is not fully understood. (3) Large-scale randomized controlled trials under Western regulatory frameworks do not exist. (4) Human evidence is largely from Russian clinical studies with limited methodological detail available in English. (5) Not FDA approved. (6) Optimal dosing, cycle length, and long-term safety in humans are not fully established.",
+    title: "Research Limitations & Regulatory Status",
+    node: (
+      <div className="space-y-3">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Epitalon is NOT FDA-approved. The bulk of clinical evidence comes from Russian gerontology research (Khavinson and colleagues, St. Petersburg Institute of Bioregulation and Gerontology). The long duration of this research is unmatched, but methodology differs from Western RCT standards and has not been independently replicated.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          The telomerase activation mechanism is the most scientifically interesting claim but also the least replicated outside Khavinson&apos;s group. Skepticism regarding the strength of telomere-lengthening claims is warranted; supportive citations exist but cross-validation is limited.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Research-grade material is sold by specialty peptide vendors in the US. Quality varies dramatically; verify Certificate of Analysis.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Anti-doping: Epitalon is NOT currently on the WADA prohibited list. The Russian human cohort data is the strongest evidence available for Epitalon&apos;s longevity claims; long-term safety appears excellent in this dataset.
+        </p>
+      </div>
+    ),
   },
   {
-    id: "stacking",
-    title: "Common Research Stacking",
-    content:
-      "Epitalon is frequently studied alongside Semax \u2014 Epitalon for telomere and longevity support, Semax for cognitive enhancement. In broader longevity protocols it is combined with Thymosin Alpha-1 for immune support, and with NAD+ precursors for comprehensive cellular health.",
+    id: "faq",
+    title: "FAQ",
+    node: (
+      <div className="space-y-4">
+        {faqs.map((f, i) => (
+          <div key={i}>
+            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+              {f.q}
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+              {f.a}
+            </p>
+          </div>
+        ))}
+      </div>
+    ),
   },
   {
     id: "references",
     title: "References",
-    body: [
-      "PubMed. Epithalon peptide induces telomerase activity and telomere elongation in human somatic cells. 2003. https://pubmed.ncbi.nlm.nih.gov/12937682/",
-      "Springer/Biogerontology. Epitalon increases telomere length in human cell lines through telomerase upregulation or ALT activity. 2025. https://link.springer.com/article/10.1007/s10522-025-10315-x",
-      "PMC. Overview of Epitalon \u2014 Highly Bioactive Pineal Tetrapeptide with Promising Properties. 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC11943447/",
-      "Restorative Medicine. Improving Biological Age, Telomere Length, and Cognition: A Case Report. 2024. https://restorativemedicine.org/journal/improving-biological-age/",
-    ],
+    node: (
+      <ol className="list-decimal list-inside space-y-2">
+        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Khavinson VK, Bondarev IE, Butyugov AA. Epithalon peptide induces telomerase activity and telomere elongation in human somatic cells. Bull Exp Biol Med. 2003;135(6):590-2.
+        </li>
+        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Anisimov VN, Khavinson VK. Peptide bioregulation of aging: results and prospects. Biogerontology. 2010;11(2):139-49.
+        </li>
+        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Khavinson VK, Morozov VG. Peptides of pineal gland and thymus prolong human life. Neuro Endocrinol Lett. 2003;24(3-4):233-40.
+        </li>
+        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Khavinson VK. Peptides and Ageing. Neuro Endocrinol Lett. 2002;23(Suppl 3):11-144.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/12624164/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/12624164/
+          </a>
+        </li>
+        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Wikipedia. Epithalon.{" "}
+          <a href="https://en.wikipedia.org/wiki/Epithalon" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://en.wikipedia.org/wiki/Epithalon
+          </a>
+        </li>
+        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Khavinson VK. Tetrapeptide stimulating the functional activity of pinealocytes, geroprotective composition based thereon and a method of its application. (Khavinson lab patent reference)
+        </li>
+      </ol>
+    ),
   },
 ];
+
+const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
 
 export default function EpitalonPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Epitalon","description":"Epitalon research profile covering telomerase activation, telomere lengthening evidence, pineal gland regulation, and longevity research.","url":"https://profpeptide.com/peptides/epitalon","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Epitalon","description":"Epitalon (AEDG tetrapeptide) research profile: telomerase activation, pineal/melatonin restoration, Khavinson research, dosing protocol, side effects.","url":"https://profpeptide.com/peptides/epitalon","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Epitalon"}]}} />
     <div className="section max-w-3xl">
       <Link
@@ -101,23 +273,60 @@ export default function EpitalonPage() {
         Back to Peptide Library
       </Link>
 
-      <div className="flex flex-wrap items-center gap-3 mb-1">
+      <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Epitalon</h1>
         <span className="tag">Longevity</span>
-        <span className="text-xs bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-700/50 px-2.5 py-1 rounded-full font-medium">
-          Not FDA Approved — Research Use Only
-        </span>
+        <span className="tag">Research-Grade</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-8">
-        Also Known As: Epithalon, Epithalone, AEDG peptide
+        Also Known As: Epithalon, Epithalamin, AEDG Tetrapeptide, Ala-Glu-Asp-Gly
       </p>
+
+      <div id="overview" className="scroll-mt-20">
+        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
+        <div className="space-y-4">
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            Epitalon is a synthetic tetrapeptide (alanine-glutamate-aspartate-glycine, AEDG) developed in the 1980s by Vladimir Khavinson at the St. Petersburg Institute of Bioregulation and Gerontology. It was synthesized as a short-peptide analog of epithalamin, a natural pineal gland extract that Khavinson and colleagues studied for decades in Soviet-era gerontology research. Epitalon&apos;s most-cited mechanism is telomerase activation, which extends the protective telomere caps on chromosomes — a process linked to cellular aging. Russian gerontology research (multi-decade cohort studies) reported reduced mortality and improved age-related markers in elderly subjects taking Epitalon. The Khavinson research has not been replicated in Western clinical trials, but the long-term Russian human data is among the most extensive available for any anti-aging peptide. Epitalon ranks #15 in Google Trends for most-searched peptides (Feb 2026).
+          </p>
+          <div>
+            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+              Reported benefits:
+            </p>
+            <ul className="list-disc list-inside space-y-1">
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Telomerase activation and telomere lengthening (cell culture and animal evidence)</li>
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Restoration of melatonin rhythm in aging</li>
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved circadian function</li>
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduced age-related cellular dysfunction (Russian cohort data)</li>
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Anti-aging gene expression modulation</li>
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Pineal gland support</li>
+            </ul>
+          </div>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Subcutaneous injection: 5–10 mg per cycle, divided over 10–20 days (typically 0.5–1 mg/day). Cycle: 10–20 day intensive course, 2–6 months between cycles. Some users do 2–4 cycles per year. See{" "}
+            <a href="#dosing" className="text-[#0891b2] hover:underline">
+              Dosing &amp; Protocols
+            </a>{" "}
+            below for details.
+          </p>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Epitalon is not FDA-approved and is sold by specialty research peptide vendors. See{" "}
+            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+              Verified Discount Codes &rarr;
+            </Link>{" "}
+            for current options.
+          </p>
+        </div>
+      </div>
+
+      <PageTOC sections={tocSections} />
 
       <div className="space-y-8">
         {sections.map((s) => (
-          <div key={s.id} id={s.id}>
+          <div key={s.id} id={s.id} className="scroll-mt-20">
             <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
+            {s.node && s.node}
             {s.content && (
               <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
@@ -135,7 +344,7 @@ export default function EpitalonPage() {
       </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
-        {["Longevity", "Telomerase", "Pineal Gland", "Preclinical"].map((tag) => (
+        {["Longevity", "Telomerase Activator", "Pineal Peptide", "Research-Grade"].map((tag) => (
           <span
             key={tag}
             className="text-xs bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400 px-2.5 py-1 rounded-full"
@@ -145,26 +354,23 @@ export default function EpitalonPage() {
         ))}
       </div>
 
-      
+
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
+        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu</Link>
         <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>
-        <Link href="/peptides/semax" className="text-sm font-medium text-[#0891b2] hover:underline">Semax</Link>
-        </div>
-      </div>
-      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
-        <div className="flex flex-wrap gap-4">
-        <Link href="/compare/epitalon-vs-nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon vs NAD+ &rarr;</Link>
         </div>
       </div>
 
 <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">Need to calculate a dose?</p>
+        <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">
+          Need to calculate a dose?
+        </p>
         <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">
-          Use the Prof. Peptide dosage calculator for accurate reconstitution and dosing math.
+          Use the Prof. Peptide dosage calculator for accurate reconstitution
+          and dosing math.
         </p>
         <Link href="/calculator" className="btn-primary text-sm">
           Open Calculator
