@@ -1,9 +1,10 @@
 "use client";
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTheme } from "./ThemeProvider";
 import { CategoryIcon } from "./CategoryIcon";
+import SearchOverlay from "./SearchOverlay";
 
 const categories = [
   { label: "Metabolic & Weight Loss", slug: "metabolic" },
@@ -133,9 +134,21 @@ function ThemeToggle() {
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const closeTimeout = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        setSearchOpen((s) => !s);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   const handleEnter = useCallback((href: string) => {
     if (closeTimeout.current) {
@@ -208,6 +221,18 @@ export default function Header() {
               )
             )}
           </nav>
+          <button
+            onClick={() => setSearchOpen(true)}
+            className="p-2 rounded-md text-gray-500 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-100 transition-colors inline-flex items-center gap-1.5"
+            aria-label="Open search"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.75} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-4.3-4.3M10.5 18a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
+            </svg>
+            <span className="hidden md:inline text-[11px] font-mono text-gray-400 dark:text-slate-500 border border-gray-200 dark:border-slate-600 rounded px-1 leading-tight">
+              ⌘K
+            </span>
+          </button>
           <ThemeToggle />
           <button
             className="md:hidden p-2 rounded-md text-gray-500 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-100"
@@ -240,6 +265,7 @@ export default function Header() {
           ))}
         </div>
       )}
+      <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </header>
   );
 }
