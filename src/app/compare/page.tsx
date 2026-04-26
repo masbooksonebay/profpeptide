@@ -23,6 +23,23 @@ type Section = {
 
 const sections: Section[] = [
   {
+    name: "Recovery & Tissue Repair",
+    comparisons: [
+      {
+        title: "BPC-157 vs GHK-Cu",
+        desc: "Healing peptide comparison — systemic tissue repair vs skin regeneration and gene modulation.",
+        href: "/compare/bpc-157-vs-ghk-cu",
+        tag: "Recovery",
+      },
+      {
+        title: "BPC-157 vs TB-500",
+        desc: "Recovery peptide comparison — mechanism, tissue targets, and how to choose between them.",
+        href: "/compare/bpc-157-vs-tb-500",
+        tag: "Recovery",
+      },
+    ],
+  },
+  {
     name: "Metabolic & Weight Loss",
     comparisons: [
       {
@@ -54,23 +71,6 @@ const sections: Section[] = [
         desc: "Three generations of GLP-1 peptides compared — single, dual, and triple agonist side by side.",
         href: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
         tag: "Metabolic",
-      },
-    ],
-  },
-  {
-    name: "Recovery & Tissue Repair",
-    comparisons: [
-      {
-        title: "BPC-157 vs GHK-Cu",
-        desc: "Healing peptide comparison — systemic tissue repair vs skin regeneration and gene modulation.",
-        href: "/compare/bpc-157-vs-ghk-cu",
-        tag: "Recovery",
-      },
-      {
-        title: "BPC-157 vs TB-500",
-        desc: "Recovery peptide comparison — mechanism, tissue targets, and how to choose between them.",
-        href: "/compare/bpc-157-vs-tb-500",
-        tag: "Recovery",
       },
     ],
   },
