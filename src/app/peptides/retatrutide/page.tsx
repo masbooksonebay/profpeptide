@@ -351,7 +351,7 @@ export default function RetatrutidePage() {
             </ul>
           </div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Clinical trial protocols start at 2 mg once weekly by subcutaneous injection, then escalate every 4 weeks (typically 2 mg → 4 mg → 8 mg → 12 mg) up to a maintenance dose between 8 mg and 12 mg weekly. See{" "}
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Clinical trial protocols start at 2 mg once weekly by subcutaneous injection, then escalate every 4 weeks (typically 2 mg → 4 mg → 6 mg → 9 mg → 12 mg per the TRIUMPH-3+ schedule) up to a maintenance dose between 8 mg and 12 mg weekly. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
