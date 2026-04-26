@@ -28,6 +28,18 @@ const comparisons = [
     tag: "Metabolic",
   },
   {
+    title: "Retatrutide vs Tirzepatide",
+    desc: "Triple agonist vs dual agonist — weight loss data, side effect profiles, and FDA status compared.",
+    href: "/compare/retatrutide-vs-tirzepatide",
+    tag: "Metabolic",
+  },
+  {
+    title: "Retatrutide vs Semaglutide",
+    desc: "Three-receptor vs single-receptor GLP — weight loss data, cardiovascular evidence, and FDA status compared.",
+    href: "/compare/retatrutide-vs-semaglutide",
+    tag: "Metabolic",
+  },
+  {
     title: "Berberine vs Metformin",
     desc: "Blood sugar comparison — AMPK activation, clinical data, cost, and when to use each.",
     href: "/compare/berberine-vs-metformin",

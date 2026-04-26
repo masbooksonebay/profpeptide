@@ -54,7 +54,7 @@ export default function SemaglutideVsTirzepatidePage() {
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300">Tirzepatide produces greater average weight loss and better blood sugar control in head-to-head data. <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link> has a longer track record, broader approval history, and more long-term safety data. Both are prescription medications &mdash; neither is available as a research peptide in the same category as BPC-157 or TB-500.</p>
+        <p className="text-sm text-gray-600 dark:text-slate-300">Tirzepatide produces greater average weight loss and better blood sugar control in head-to-head data. <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link> has a longer track record, broader approval history, and more long-term safety data. Both are prescription medications, but both are also widely available as research-grade peptides through specialty vendors. See <Link href="/coupons" className="text-[#0891b2] hover:underline">Verified Discount Codes</Link> for current options.</p>
       </div>
 
       <div className="flex gap-3 mb-8">
