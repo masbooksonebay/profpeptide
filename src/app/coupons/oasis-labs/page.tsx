@@ -52,7 +52,7 @@ export default function OasisLabsCouponPage() {
  </Link>
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Oasis Labs Discount Code &mdash; Save 10%</h1>
+ <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Oasis Labs Discount Code &mdash; Save 15%</h1>
  </div>
  <div className="flex flex-wrap items-center gap-2 mb-8">
  <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
@@ -75,8 +75,8 @@ export default function OasisLabsCouponPage() {
 
  <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
  <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
- <CodeBox code="PROFPEPTIDE" />
- <p className="text-center text-sm text-[#0891b2] font-medium mt-2 mb-4">10% off your entire order</p>
+ <CodeBox code="PROFPEPTIDE15" />
+ <p className="text-center text-sm text-[#0891b2] font-medium mt-2 mb-4">15% off your entire order</p>
  <a
  href="https://myoasislabs.com/"
  target="_blank"
@@ -97,11 +97,11 @@ export default function OasisLabsCouponPage() {
  />
  <FAQItem
  q="Does Oasis Labs have a discount code?"
- a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Oasis Labs order. This code is verified and maintained by Prof. Peptide."
+ a="Yes. Use code PROFPEPTIDE15 at checkout to save 15% on any Oasis Labs order. This code is verified and maintained by Prof. Peptide."
  />
  <FAQItem
  q="How do I use the Oasis Labs discount code?"
- a="Add your items to cart at myoasislabs.com, proceed to checkout, and enter PROFPEPTIDE in the promo code field. The 10% discount will be applied to your order total."
+ a="Add your items to cart at myoasislabs.com, proceed to checkout, and enter PROFPEPTIDE15 in the promo code field. The 15% discount will be applied to your order total."
  />
  <FAQItem
  q="How does the Oasis Labs QR code system work?"

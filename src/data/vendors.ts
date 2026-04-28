@@ -110,8 +110,8 @@ export const vendors: Record<string, Vendor> = {
   },
   "oasis-labs": {
     name: "Oasis Labs",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
+    code: "PROFPEPTIDE15",
+    discount: "15% off",
     region: "US",
     url: "https://myoasislabs.com/?sld=profpeptide",
     detailPage: "/coupons/oasis-labs",

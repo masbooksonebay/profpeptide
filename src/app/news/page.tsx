@@ -19,6 +19,13 @@ export const metadata = {
 
 const articles = [
   {
+    title: "FDA Releases Official Agenda for July Peptide Compounding Meeting \u2014 Here\u2019s What\u2019s on It",
+    slug: "fda-pcac-meeting-agenda-july-2026",
+    date: "April 28, 2026",
+    excerpt:
+      "The FDA published the official Federal Register notice for its July 23-24 Pharmacy Compounding Advisory Committee meeting, naming the seven peptides under review and the conditions each is being considered for.",
+  },
+  {
     title: "FDA Moves to Restore Peptide Access \u2014 What Researchers Need to Know",
     slug: "fda-peptide-compounding-update-april-2026",
     date: "April 16, 2026",
