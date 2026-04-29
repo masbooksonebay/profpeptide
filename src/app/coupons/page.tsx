@@ -149,7 +149,7 @@ const sections: VendorSection[] = [
       {
         name: "Oasis Labs",
         url: "https://myoasislabs.com/?sld=profpeptide",
-        code: "PROFPEPTIDE15",
+        code: "PROF15",
         discount: "15% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/oasis-labs",
