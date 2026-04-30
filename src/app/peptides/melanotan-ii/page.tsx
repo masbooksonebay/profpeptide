@@ -52,6 +52,45 @@ const faqs = [
   },
 ];
 
+const studies = [
+  {
+    title: "Evaluation of Melanotan-II \u2014 A Superpotent Cyclic Melanotropic Peptide \u2014 in a Pilot Phase I Clinical Study",
+    authors: "Dorr RT, Lines R, Levine N, et al.",
+    journal: "Life Sciences / PubMed",
+    year: "1996",
+    access: "Paywalled",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8622573/",
+    summary: "The first human Phase I clinical trial of Melanotan II, conducted at the University of Arizona. Researchers evaluated safety, pharmacokinetics, and tanning effects of subcutaneous MT-II in healthy volunteers. The trial confirmed that MT-II produced visible tanning within 5 doses without UV exposure \u2014 establishing proof of concept for its primary intended application. The study also documented the now well-known side effects: nausea, facial flushing, fatigue, yawning, and spontaneous penile erections \u2014 the last of which redirected subsequent research toward MT-II\u2019s effects on sexual function. This trial is the origin point of the entire Melanotan II research and commercial history.",
+  },
+  {
+    title: "Discovery That a Melanocortin Regulates Sexual Functions in Male and Female Humans",
+    authors: "Hadley ME",
+    journal: "Peptides / PubMed",
+    year: "2005",
+    access: "Paywalled",
+    url: "https://pubmed.ncbi.nlm.nih.gov/15996790/",
+    summary: "The paper documenting the accidental discovery that Melanotan II enhances sexual function in both males and females \u2014 an observation first noted during tanning trials. MT-II was shown to enhance erectile activity in men and increase sexual desire and genital arousal in women, working at the level of the brain through melanocortin receptor activation rather than through peripheral vascular effects. This discovery was significant because it demonstrated a central nervous system pathway for sexual arousal modulation \u2014 directly leading to the development of bremelanotide (PT-141), a more selective MC4R agonist that is now FDA-approved for female sexual dysfunction.",
+  },
+  {
+    title: "Melanocortin Peptide Therapeutics \u2014 Historical Milestones, Clinical Studies and Commercialization",
+    authors: "Hadley ME, Dorr RT",
+    journal: "Peptides / PubMed",
+    year: "2006",
+    access: "Paywalled",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16412534/",
+    summary: "A comprehensive review of the full Melanotan program \u2014 from initial discovery through clinical development and the pivot toward commercialization. The paper traces MT-I (afamelanotide) and MT-II development, documents the clinical trial history for tanning and erectile dysfunction indications, and describes the development of PT-141 (bremelanotide) as a more selective derivative of MT-II. A key finding: while MT-II showed efficacy for erectile dysfunction in clinical studies, its non-selective receptor binding profile and side effect burden led researchers to develop PT-141 as a cleaner next-generation compound. This paper represents the most complete scientific history of the Melanotan program available in the English-language literature.",
+  },
+  {
+    title: "An Overview of Benefits and Risks of Chronic Melanocortin-1 Receptor Activation",
+    authors: "PMC Research Group",
+    journal: "PMC / British Journal of Dermatology",
+    year: "2024",
+    access: "Open Access",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11664455/",
+    summary: "The most current and balanced risk assessment of Melanotan II, documenting five reported cases of melanoma occurring during or after MT-II use \u2014 all in individuals with additional risk factors including fair skin, tanning bed use, and/or family history of melanoma. The review explains the biological mechanism of concern: MT-II stimulates melanocyte activity through MC1R, which can accelerate melanocytic activity in pre-existing nevi (moles). It also covers the non-selective receptor activation profile of MT-II \u2014 unlike selective MC1R agonists, MT-II crosses the blood-brain barrier and activates MC3R and MC4R, producing appetite suppression, fatigue, and erections as off-target effects. The authors recommend against the use of unlicensed melanocortin agents.",
+  },
+];
+
 const sections = [
   {
     id: "mechanism",
@@ -271,6 +310,28 @@ const sections = [
           Dorr RT, Lines R, Levine N, et al. Evaluation of melanotan-II, a superpotent cyclic melanotropic peptide. Life Sci. 1996;58(20):1777-84.
         </li>
       </ol>
+    ),
+  },
+  {
+    id: "studies",
+    title: "Published Studies",
+    node: (
+      <div className="space-y-6">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
+        </p>
+        {studies.map((s, i) => (
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
+            </div>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+          </div>
+        ))}
+      </div>
     ),
   },
 ];
