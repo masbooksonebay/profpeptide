@@ -73,6 +73,45 @@ const sections = [
   },
 ];
 
+const studies = [
+  {
+    title: "Prolonged Stimulation of GH and IGF-I Secretion by CJC-1295 in Healthy Adults",
+    authors: "Ionescu M, Frohman LA",
+    journal: "Journal of Clinical Endocrinology & Metabolism / PubMed",
+    year: "2006",
+    access: "Abstract open",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16352683/",
+    summary: "The primary human study of CJC-1295 — the GHRH component of the GH Stack. Demonstrated sustained, dose-dependent GH and IGF-1 elevation lasting 6–8 days from a single injection, with IGF-1 increasing 1.5–3 fold above baseline. CJC-1295's albumin-binding mechanism provides the prolonged “GH amplitude amplification” that forms one half of the stack's dual-pathway mechanism.",
+  },
+  {
+    title: "Ipamorelin, the First Selective Growth Hormone Secretagogue",
+    authors: "Raun K, Hansen BS, Johansen NL, et al.",
+    journal: "European Journal of Endocrinology / PubMed",
+    year: "1998",
+    access: "Abstract open",
+    url: "https://pubmed.ncbi.nlm.nih.gov/9849822/",
+    summary: "The landmark selectivity study for Ipamorelin — the GHRP component of the GH Stack. Established that Ipamorelin produces robust GH release with approximately 90% less cortisol elevation and no meaningful ACTH or prolactin response compared to older GHRPs. This clean hormonal profile is why Ipamorelin became the default GHRP for stacking — it adds GH pulse triggering through the ghrelin receptor without the cortisol and appetite side effects of GHRP-6 or GHRP-2.",
+  },
+  {
+    title: "GHRH+GHRP Synergy — Co-Administration of GHRH Analogs with GHSR Agonists",
+    authors: "Jørgensen JOL, et al.",
+    journal: "Growth Hormone & IGF Research / PubMed",
+    year: "2001",
+    access: "Paywalled",
+    url: "https://pubmed.ncbi.nlm.nih.gov/11420165/",
+    summary: "A mechanistic study demonstrating supra-additive GH release when GHRH analogs and GHSR agonists are co-administered — the scientific foundation for the GH Stack's design. Co-administration produced 2–4x greater GH area under the curve compared to either compound given in isolation, with the effect being additive to synergistic depending on timing. The biological explanation: CJC-1295 activates GHRHR and raises intracellular cAMP (via PKA), while Ipamorelin activates GHS-R1a and raises intracellular calcium (via PKC). When both second messenger cascades fire simultaneously, the somatotroph cell response is amplified beyond what either signal produces alone.",
+  },
+  {
+    title: "Growth Hormone Secretagogues: History, Mechanism of Action, and Clinical Development",
+    authors: "Ishida J, Saitoh M, Ebner N, et al.",
+    journal: "JCSM Rapid Communications / Wiley",
+    year: "2020",
+    access: "Open Access",
+    url: "https://onlinelibrary.wiley.com/doi/full/10.1002/rco2.9",
+    summary: "A comprehensive review of the GH secretagogue class providing clinical context for the CJC-1295 + Ipamorelin combination. The paper covers the evolution from native GHRH and ghrelin to long-acting analogs and selective GHRPs — documenting how the dual-pathway approach became the preferred research and clinical protocol for GH axis optimization. It also addresses why the combination is considered safer than direct GH administration — stimulating endogenous production preserves natural feedback mechanisms and avoids supraphysiological IGF-1 spikes.",
+  },
+];
+
 export default function GHStackPage() {
   return (
     <>
@@ -132,6 +171,28 @@ export default function GHStackPage() {
             )}
           </div>
         ))}
+      </div>
+
+      <div id="studies" className="mt-8">
+        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          Published Studies
+        </h2>
+        <div className="space-y-6">
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
+          </p>
+          {studies.map((s, i) => (
+            <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+              <div className="flex flex-wrap items-center gap-2 mb-2">
+                <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
+                <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
+              </div>
+              <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+              <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
+              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
