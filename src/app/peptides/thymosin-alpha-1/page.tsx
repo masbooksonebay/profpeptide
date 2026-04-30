@@ -52,6 +52,54 @@ const faqs = [
   },
 ];
 
+const studies = [
+  {
+    title: "Thymosin Alpha 1: A Comprehensive Review of the Literature",
+    authors: "Seidel JA, et al.",
+    journal: "World Journal of Gastroenterology / PMC",
+    year: "2020",
+    access: "Open Access",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7747025/",
+    summary: "The most comprehensive English-language review of Thymosin Alpha-1, covering its biology, mechanisms, and clinical applications across multiple disease states. The review documents FDA orphan drug approval for thymalfasin for malignant melanoma, chronic active hepatitis B, DiGeorge anomaly with immune defects, and hepatocellular carcinoma. It covers clinical trials across DiGeorge syndrome, non-small cell lung cancer, hepatocellular carcinoma, hepatitis B and C, HIV, and melanoma — all yielding promising results. The paper also discusses Tα1's potential role in COVID-19, noting that its ability to repair immunological damage from T-cell overactivation could be beneficial in severe cases. Safety profile is described as excellent, with only mild injection-site reactions as common adverse effects.",
+  },
+  {
+    title: "Thymosin Alpha-1 and Its Role in Viral Infectious Diseases — Mechanism and Clinical Application",
+    authors: "MDPI Molecules Research Group",
+    journal: "Molecules (MDPI)",
+    year: "2023",
+    access: "Open Access",
+    url: "https://www.mdpi.com/1420-3049/28/8/3539",
+    summary: "A mechanistic deep-dive into how Thymosin Alpha-1 enhances immune responses against viral infections. The paper documents Tα1's interaction with Toll-like receptors (TLR3, TLR4, TLR7, TLR9) — pattern recognition receptors that detect viral and bacterial signatures. Through TLR binding, Tα1 activates downstream IRF3 and NF-κB pathways, promoting proliferation and activation of T cells, B cells, macrophages, and natural killer cells. This dual innate and adaptive immune activation explains Tα1's effectiveness across multiple viral infections — it doesn't target one virus, it enhances the immune system's own detection and response machinery, making it broadly applicable across hepatitis B, hepatitis C, HIV, and respiratory viral infections.",
+  },
+  {
+    title: "Thymosin Alpha-1 in Cancer Therapy — Immunoregulation and Potential Applications",
+    authors: "ScienceDirect Research Group",
+    journal: "International Immunopharmacology / ScienceDirect",
+    year: "2023",
+    access: "Paywalled",
+    url: "https://www.sciencedirect.com/science/article/abs/pii/S156757692300067X",
+    summary: "A 2023 review documenting Tα1's emerging role in cancer immunotherapy — particularly its potential synergy with immune checkpoint inhibitors (ICIs). The paper reviews Tα1's pleiotropic effects on immune cells through TLR activation and covers clinical data in melanoma, non-small cell lung cancer, and hepatocellular carcinoma. Most notably it documents preclinical evidence that Tα1 can convert “cold tumors” (those that don't respond to immunotherapy) into “hot tumors” by reversing macrophage polarization — a mechanism that could meaningfully enhance the efficacy of checkpoint inhibitors like pembrolizumab. Given ICI's relatively low response rates and the safety limitations of escalating doses, Tα1's exceptional safety profile makes it a compelling adjunct candidate.",
+  },
+  {
+    title: "Thymosin Alpha-1 — Reimagine Its Broader Applications in the Immuno-Oncology Era",
+    authors: "PubMed Research Group",
+    journal: "Cancer Medicine / PubMed",
+    year: "2023",
+    access: "Open Access",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36871535/",
+    summary: "A forward-looking clinical review examining Tα1's emerging role in modern oncology. The paper documents that Tα1 significantly improved overall survival in surgically resectable non-small cell lung cancer and liver cancer patients in the adjuvant setting. For locally advanced unresectable NSCLC, it significantly reduced chemoradiation-induced lymphopenia and pneumonia — two of the most common and serious complications of radiation-based cancer treatment. The review makes a compelling case for Tα1 as an adjunct to standard cancer therapies, particularly in immunocompromised patients where immune support during aggressive treatment could be the difference between completing a full treatment course and suffering dose-limiting toxicity.",
+  },
+  {
+    title: "Aging and Thymosin Alpha-1 — Immunosenescence and Therapeutic Potential",
+    authors: "MDPI International Journal of Molecular Sciences",
+    journal: "International Journal of Molecular Sciences (MDPI)",
+    year: "2025",
+    access: "Open Access",
+    url: "https://www.mdpi.com/1422-0067/26/23/11470",
+    summary: "A 2025 review examining Tα1's potential role in combating age-related immune decline (immunosenescence). As the thymus involutes with age — shrinking and losing function — T-cell production declines, chronic inflammation increases, and susceptibility to infections and cancer rises. Tα1 directly addresses this by stimulating T-cell differentiation, enhancing thymic output, and modulating dendritic cell and macrophage activity. Clinical studies show Tα1 can improve vaccine responses in elderly populations and mitigate immunosenescence markers. The review also covers a promising fusion protein (Refnot) combining Tα1 with TNFα that shows enhanced antitumor activity with dramatically reduced toxicity — representing a next-generation development of the Tα1 platform.",
+  },
+];
+
 const sections = [
   {
     id: "mechanism",
@@ -258,6 +306,28 @@ const sections = [
           </a>
         </li>
       </ol>
+    ),
+  },
+  {
+    id: "studies",
+    title: "Published Studies",
+    node: (
+      <div className="space-y-6">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
+        </p>
+        {studies.map((s, i) => (
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
+            </div>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+          </div>
+        ))}
+      </div>
     ),
   },
 ];
