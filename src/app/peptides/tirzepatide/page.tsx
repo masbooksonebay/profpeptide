@@ -52,6 +52,45 @@ const faqs = [
   },
 ];
 
+const studies = [
+  {
+    title: "Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1)",
+    authors: "Jastreboff AM, Aronne LJ, Ahmad NN, et al. \u2014 SURMOUNT-1 Investigators",
+    journal: "New England Journal of Medicine",
+    year: "2022",
+    access: "Open Access",
+    url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2206038",
+    summary: "The pivotal trial establishing tirzepatide for obesity treatment. In 2,539 adults with obesity (without diabetes) over 72 weeks, tirzepatide produced average weight losses of 15.0% (5mg), 19.5% (10mg), and 20.9% (15mg) \u2014 compared to 3.1% with placebo. At the highest dose, 57% of participants lost 20% or more of their body weight \u2014 a level of weight loss previously achievable only through bariatric surgery. This was the first trial demonstrating the dual GIP/GLP-1 mechanism\u2019s superior weight loss over single GLP-1 agonists.",
+  },
+  {
+    title: "Tirzepatide for Obesity Treatment and Diabetes Prevention \u2014 SURMOUNT-1 3-Year Results",
+    authors: "Jastreboff AM, le Roux CW, Stefanski A, et al. \u2014 SURMOUNT-1 Investigators",
+    journal: "New England Journal of Medicine",
+    year: "2025",
+    access: "Open Access",
+    url: "https://www.nejm.org/doi/abs/10.1056/NEJMoa2410819",
+    summary: "Three-year follow-up of SURMOUNT-1 participants with prediabetes. Tirzepatide maintained 19.7% weight loss at 176 weeks and dramatically reduced diabetes progression \u2014 only 1.3% of tirzepatide participants developed type 2 diabetes compared to 13.3% of those on placebo, representing a 93% relative risk reduction. Even 17 weeks after stopping treatment, the protection against diabetes development persisted \u2014 suggesting the weight loss itself is driving lasting metabolic benefit.",
+  },
+  {
+    title: "Tirzepatide as Compared with Semaglutide for the Treatment of Obesity (SURMOUNT-5)",
+    authors: "Aronne LJ, Bade Horn D, le Roux CW, et al. \u2014 SURMOUNT-5 Investigators",
+    journal: "New England Journal of Medicine",
+    year: "2025",
+    access: "Open Access",
+    url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2416394",
+    summary: "The first direct head-to-head comparison of tirzepatide and semaglutide for obesity. In 751 adults with obesity over 72 weeks, tirzepatide produced 20.2% average weight loss compared to 13.7% with semaglutide \u2014 a clinically meaningful difference of 6.5 percentage points favoring tirzepatide. Waist circumference reductions were also significantly greater with tirzepatide. This trial established tirzepatide as the more potent weight loss agent when the two are compared directly at maximum tolerated doses.",
+  },
+  {
+    title: "Tirzepatide and Heart Failure with Preserved Ejection Fraction (SUMMIT)",
+    authors: "Bhatt DL, Raman SV, et al.",
+    journal: "New England Journal of Medicine",
+    year: "2024",
+    access: "Open Access",
+    url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2410402",
+    summary: "The SUMMIT trial enrolled 731 adults with obesity-related heart failure with preserved ejection fraction (HFpEF) \u2014 a condition with very limited treatment options. Tirzepatide significantly improved exercise capacity, reduced symptoms, and led to greater weight loss compared to placebo. This extended tirzepatide\u2019s clinical evidence base to heart failure, one of obesity\u2019s most serious cardiovascular complications.",
+  },
+];
+
 const sections = [
   {
     id: "mechanism",
@@ -354,6 +393,28 @@ const sections = [
           </a>
         </li>
       </ol>
+    ),
+  },
+  {
+    id: "studies",
+    title: "Published Studies",
+    node: (
+      <div className="space-y-6">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
+        </p>
+        {studies.map((s, i) => (
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
+            </div>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+          </div>
+        ))}
+      </div>
     ),
   },
 ];
