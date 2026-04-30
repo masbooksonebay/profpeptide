@@ -52,6 +52,45 @@ const faqs = [
   },
 ];
 
+const studies = [
+  {
+    title: "Metabolic Studies of a Synthetic Lipolytic Domain (AOD9604) of Human Growth Hormone",
+    authors: "Ng FM, Sun J, Sharma L, et al.",
+    journal: "Hormone Research in Paediatrics",
+    year: "2000",
+    access: "Paywalled",
+    url: "https://pubmed.ncbi.nlm.nih.gov/10965310/",
+    summary: "One of the foundational animal studies establishing AOD-9604\u2019s lipolytic mechanism. Researchers confirmed that the C-terminal fragment of growth hormone specifically activates fat breakdown in adipose tissue without affecting IGF-1 levels or insulin sensitivity \u2014 the core design hypothesis of the compound. These results in obese rodent models generated the scientific rationale for advancing to human clinical trials.",
+  },
+  {
+    title: "The Effects of Human GH and its Lipolytic Fragment (AOD9604) on Lipid Metabolism Following Chronic Treatment in Obese Mice and Beta(3)-AR Knock-Out Mice",
+    authors: "Heffernan M, et al.",
+    journal: "Endocrinology",
+    year: "2001",
+    access: "Paywalled",
+    url: "https://pubmed.ncbi.nlm.nih.gov/11713242/",
+    summary: "This study examined AOD-9604\u2019s fat-burning mechanism more deeply in obese mice \u2014 including mice without functioning beta-3 adrenergic receptors. The findings confirmed that AOD-9604 reduces fat accumulation and promotes fat oxidation, and that while some of its effects involve beta-3 adrenergic signaling, additional pathways are also involved. The persistence of some effects in knock-out mice suggested a more complex mechanism than initially thought.",
+  },
+  {
+    title: "Safety and Tolerability of the Hexadecapeptide AOD9604 in Humans",
+    authors: "Stier H, Vos E, Kenley D",
+    journal: "Journal of Endocrinology and Metabolism",
+    year: "2013",
+    access: "Open Access",
+    url: "https://pubmed.ncbi.nlm.nih.gov/23943793/",
+    summary: "The key human safety study of AOD-9604, reporting findings from trials involving over 900 participants across six studies. AOD-9604 was found to be well tolerated with no significant effects on glucose levels, IGF-1, or other metabolic markers \u2014 confirming the selective mechanism designed to avoid growth hormone\u2019s side effects. The clean safety profile remains one of AOD-9604\u2019s genuine strengths even after its weight loss efficacy failed to be demonstrated in the pivotal Phase 2b trial.",
+  },
+  {
+    title: "AOD-9604: Lessons From a Discontinued Peptide Drug Candidate",
+    authors: "Emirati Times \u2014 Research Summary",
+    journal: "Emirati Times",
+    year: "2025",
+    access: "Open Access",
+    url: "https://emiratitimes.com/lessons-from-a-discontinued-aod-9604-research-peptide/",
+    summary: "A 2025 analysis examining the full arc of AOD-9604\u2019s development \u2014 from promising preclinical data to clinical failure and discontinuation. The article documents how a 24-week Phase 2b trial in 536 subjects found no statistically significant weight loss difference from placebo, leading Metabolic Pharmaceuticals to terminate the obesity development program in 2007. It also covers the FDA\u2019s December 2024 determination that AOD-9604 should not be included on the 503A compounding bulks list, and the pivot toward cartilage repair as an emerging research direction. An important case study in how promising animal data can fail to translate to human clinical outcomes.",
+  },
+];
+
 const sections = [
   {
     id: "mechanism",
@@ -265,6 +304,28 @@ const sections = [
           AOD-9604 visceral adipose tissue 2024 Phase 2b metabolic syndrome trial. Industry research disclosure.
         </li>
       </ol>
+    ),
+  },
+  {
+    id: "studies",
+    title: "Published Studies",
+    node: (
+      <div className="space-y-6">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
+        </p>
+        {studies.map((s, i) => (
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
+            </div>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+          </div>
+        ))}
+      </div>
     ),
   },
 ];
