@@ -44,6 +44,45 @@ const faqs = [
   },
 ];
 
+const studies = [
+  {
+    title: "Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review",
+    authors: "Vasireddi N, Hahamyan H, Salata MJ, et al.",
+    journal: "Sports Health / PMC",
+    year: "2025",
+    access: "Open Access",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/",
+    summary: "The most current systematic review of BPC-157 for musculoskeletal injuries \u2014 directly relevant to the Wolverine Stack\u2019s primary use case. The review found consistent evidence across 36 studies that BPC-157 promotes healing of muscle, tendon, ligament, and bone injuries by upregulating growth factors and reducing inflammation. BPC-157\u2019s mechanism in musculoskeletal tissue involves FAK-paxillin signaling, VEGFR2-Akt-eNOS activation, and nitric oxide modulation \u2014 pathways that are distinct from TB-500\u2019s actin-based mechanism, providing the rationale for combining them.",
+  },
+  {
+    title: "Thymosin Beta-4: A Multi-Functional Regenerative Peptide \u2014 Basic Properties and Clinical Applications",
+    authors: "Goldstein AL, Hannappel E, Kleinman HK",
+    journal: "Expert Opinion on Biological Therapy",
+    year: "2012",
+    access: "Abstract open",
+    url: "https://pubmed.ncbi.nlm.nih.gov/22074294/",
+    summary: "The foundational review for TB-500\u2019s contribution to the Wolverine Stack. The paper documents Thymosin Beta-4\u2019s role in actin-mediated cell migration, stem cell mobilization, and angiogenesis \u2014 mechanisms that are upstream and complementary to BPC-157\u2019s downstream signaling effects on tissue repair. The two peptides together target both the cellular migration phase of healing (TB-500) and the tissue remodeling and vascularization phase (BPC-157), which is the mechanistic argument for using them in combination.",
+  },
+  {
+    title: "Therapeutic Peptides in Orthopaedics: Applications, Challenges, and Future Directions",
+    authors: "PMC Research Group",
+    journal: "PMC / Journal of the American Academy of Orthopaedic Surgeons",
+    year: "2025",
+    access: "Open Access",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/",
+    summary: "A 2025 orthopaedic review that specifically discusses both BPC-157 and TB-500 together as wound-healing peptides acting on complementary molecular signaling networks. The paper notes that BPC-157 acts on PI3K/Akt, MAPK, and VEGF pathways, while TB-500 targets actin dynamics and integrin-mediated matrix remodeling \u2014 two parallel but distinct repair cascades. This is the closest thing to a published scientific justification for the combination stack, as it explicitly describes the two compounds\u2019 complementary mechanisms in the same research context.",
+  },
+  {
+    title: "Stable Gastric Pentadecapeptide BPC 157 and Wound Healing",
+    authors: "Sikiric P, et al.",
+    journal: "Frontiers in Pharmacology",
+    year: "2021",
+    access: "Open Access",
+    url: "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full",
+    summary: "A comprehensive review of BPC-157\u2019s wound healing evidence that helps contextualize how it fits alongside TB-500 in a combination protocol. The paper covers BPC-157\u2019s role in accelerating wound closure, promoting collagen deposition, and maintaining vascular integrity \u2014 the downstream tissue remodeling effects that complement TB-500\u2019s upstream role in recruiting progenitor cells and promoting cell migration to the injury site. Together these two phases of healing \u2014 cellular recruitment followed by structural repair \u2014 represent the biological rationale for the Wolverine Stack.",
+  },
+];
+
 const sections = [
   {
     id: "how-they-work-together",
@@ -201,6 +240,28 @@ const sections = [
           </a>
         </li>
       </ol>
+    ),
+  },
+  {
+    id: "studies",
+    title: "Published Studies",
+    node: (
+      <div className="space-y-6">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
+        </p>
+        {studies.map((s, i) => (
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
+            </div>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+          </div>
+        ))}
+      </div>
     ),
   },
 ];
