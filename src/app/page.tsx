@@ -43,13 +43,6 @@ const features = [
     cta: "See vetted vendors",
   },
   {
-    icon: "book-outline",
-    title: "Research Hub",
-    desc: "Curated studies, guides, and educational articles for serious researchers.",
-    href: "/research",
-    cta: "Read research",
-  },
-  {
     icon: "help-circle-outline",
     title: "FAQ",
     desc: "Straight answers to the most common questions about peptide research.",

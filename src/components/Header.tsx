@@ -19,35 +19,6 @@ const categories = [
   { label: "Sexual Health", slug: "sexual-health" },
 ];
 
-const researchPeptides = [
-  { name: "AOD-9604", slug: "aod-9604" },
-  { name: "BPC-157", slug: "bpc-157" },
-  { name: "Cagrilintide", slug: "cagrilintide" },
-  { name: "CJC-1295", slug: "cjc-1295" },
-  { name: "DSIP", slug: "dsip" },
-  { name: "Epitalon", slug: "epitalon" },
-  { name: "Follistatin", slug: "follistatin" },
-  { name: "GH Stack", slug: "gh-stack" },
-  { name: "GHK-Cu", slug: "ghk-cu" },
-  { name: "IGF-1 LR3", slug: "igf-1-lr3" },
-  { name: "Ipamorelin", slug: "ipamorelin" },
-  { name: "KPV", slug: "kpv" },
-  { name: "Melanotan II", slug: "melanotan-ii" },
-  { name: "MOTS-c", slug: "mots-c" },
-  { name: "NAD+", slug: "nad-plus" },
-  { name: "PT-141", slug: "pt-141" },
-  { name: "Retatrutide", slug: "retatrutide" },
-  { name: "Selank", slug: "selank" },
-  { name: "Semaglutide", slug: "semaglutide" },
-  { name: "Semax", slug: "semax" },
-  { name: "Sermorelin", slug: "sermorelin" },
-  { name: "TB-500", slug: "tb-500" },
-  { name: "Tesamorelin", slug: "tesamorelin" },
-  { name: "Thymosin Alpha-1", slug: "thymosin-alpha-1" },
-  { name: "Tirzepatide", slug: "tirzepatide" },
-  { name: "Wolverine Stack", slug: "wolverine-stack" },
-];
-
 type DropdownVariant = "categories" | "research";
 
 const nav: { label: string; href: string; dropdown?: DropdownVariant }[] = [
@@ -60,30 +31,6 @@ const nav: { label: string; href: string; dropdown?: DropdownVariant }[] = [
 ];
 
 function DropdownPanel({ baseHref, variant }: { baseHref: string; variant: DropdownVariant }) {
-  if (variant === "research") {
-    return (
-      <div className="bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl shadow-lg py-2 w-64 max-h-[80vh] overflow-y-auto">
-        {researchPeptides.map((p) => (
-          <Link
-            key={p.slug}
-            href={`/research/${p.slug}`}
-            className="block px-4 py-2 text-sm text-gray-600 dark:text-slate-300 hover:bg-[#0891b2] hover:text-white transition-colors"
-          >
-            {p.name}
-          </Link>
-        ))}
-        <div className="border-t border-gray-100 dark:border-slate-700 mt-1 pt-1">
-          <Link
-            href={baseHref}
-            className="flex items-center gap-2.5 px-4 py-2 text-sm font-medium text-[#0891b2] hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
-          >
-            <span className="w-5 text-center text-xs">&rarr;</span>
-            Browse by Category
-          </Link>
-        </div>
-      </div>
-    );
-  }
   return (
     <div className="bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl shadow-lg py-2 w-64">
       {categories.map((cat) => (

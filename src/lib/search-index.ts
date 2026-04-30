@@ -124,7 +124,6 @@ export const searchIndex: SearchEntry[] = [
   { title: "Discount Codes", url: "/coupons", category: "page", description: "Vendor discount codes and promo offers", tags: ["coupons", "promo", "deals"] },
   { title: "Dosage Calculator", url: "/calculator", category: "page", description: "Reconstitution and dosing calculator", tags: ["dosing", "reconstitution"] },
   { title: "FAQ", url: "/faq", category: "page", description: "Frequently asked questions", tags: [] },
-  { title: "Research Hub", url: "/research", category: "page", description: "Peer-reviewed study summaries", tags: ["studies", "papers"] },
   { title: "Best Peptide Vendors", url: "/best-peptide-vendors", category: "page", description: "Vetted research suppliers", tags: ["vendors", "suppliers"] },
   { title: "Glossary", url: "/glossary", category: "page", description: "Peptide & supplement research glossary", tags: [] },
   { title: "Prof. Peptide App", url: "/app", category: "page", description: "Get the Prof. Peptide app", tags: ["mobile", "ios", "android"] },

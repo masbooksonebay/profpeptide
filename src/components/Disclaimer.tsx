@@ -1,11 +1,11 @@
 "use client";
 import { usePathname } from "next/navigation";
 
-const SHOW_ON = ["/peptides", "/research"];
+const SHOW_ON = ["/peptides"];
 
 export default function Disclaimer() {
   const pathname = usePathname();
-  const isIndexPage = pathname === "/peptides" || pathname === "/research";
+  const isIndexPage = pathname === "/peptides";
   const show = !isIndexPage && SHOW_ON.some((prefix) => pathname.startsWith(prefix));
   if (!show) return null;
   return (

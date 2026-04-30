@@ -90,7 +90,7 @@ export default function FusionPeptideCouponPage() {
  <div className="space-y-2">
  <FAQItem
  q="What peptides does Fusion Peptide carry?"
- a="Fusion Peptide carries research peptides across growth hormone secretagogue, recovery, longevity, and performance categories. Their catalog includes compounds such as CJC-1295, BPC-157, <Link href=&quot;/research/epitalon&quot; className=&quot;text-[#0891b2] hover:underline&quot;>Epithalon</Link>, and IGF-1 LR3, available in injectable, topical, and nasal spray formats. The company identifies cognitive enhancement and metabolic research as primary application areas for their compound portfolio."
+ a="Fusion Peptide carries research peptides across growth hormone secretagogue, recovery, longevity, and performance categories. Their catalog includes compounds such as CJC-1295, BPC-157, <Link href=&quot;/peptides/epitalon#studies&quot; className=&quot;text-[#0891b2] hover:underline&quot;>Epithalon</Link>, and IGF-1 LR3, available in injectable, topical, and nasal spray formats. The company identifies cognitive enhancement and metabolic research as primary application areas for their compound portfolio."
  />
  <FAQItem
  q="Does Fusion Peptide have a discount code?"

@@ -204,13 +204,7 @@ const sections = [
     node: (
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 — most common pairing for gut applications. KPV&apos;s anti-inflammatory + BPC-157&apos;s regenerative effects.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          KLOW Blend (GHK-Cu + BPC-157 + TB-500 + KPV at 50/10/10/10 mg) — compounded all-in-one regenerative blend. See{" "}
-          <Link href="/research/kpv" className="text-[#0891b2] hover:underline">
-            KLOW research
-          </Link>
-          .
-        </li>
+        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">KLOW Blend (GHK-Cu + BPC-157 + TB-500 + KPV at 50/10/10/10 mg) — compounded all-in-one regenerative blend.</li>
         <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">TB-500 — for combined inflammation + tissue repair.</li>
         <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard IBD-supportive protocols (probiotics, glutamine, omega-3) — compatible.</li>
         <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Avoid: high-dose oral copper supplements during topical KPV use (theoretical interaction with copper-binding proteins).</li>

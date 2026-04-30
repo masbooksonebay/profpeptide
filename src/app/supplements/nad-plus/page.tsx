@@ -102,7 +102,7 @@ export default function NADPlusSupplementPage() {
       <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">Read the full NAD+ research</p>
         <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">5 key studies summarized in plain English covering NMN and NR human trials, cognitive function, and metabolic health.</p>
-        <Link href="/research/nad-plus" className="btn-primary text-sm">NAD+ Research</Link>
+        <Link href="/peptides/nad-plus#studies" className="btn-primary text-sm">NAD+ Research</Link>
       </div>
       <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Where to Buy</h2>
