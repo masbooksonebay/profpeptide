@@ -54,8 +54,8 @@ export default function PureRawzCouponPage() {
         "name": "PureRawz Discount Code - Save 10%",
         "description": "Use code PROF10 for 10% off at PureRawz",
         "url": "https://profpeptide.com/coupons/purerawz",
-        "validFrom": "2026-04-01",
-        "priceValidUntil": "2026-04-30",
+        "validFrom": "2026-05-01",
+        "priceValidUntil": "2026-05-31",
         "seller": { "@type": "Organization", "name": "PureRawz" },
       }} />
       <div className="section max-w-3xl">

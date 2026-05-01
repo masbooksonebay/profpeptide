@@ -1,6 +1,6 @@
 export const metadata = {
   alternates: { canonical: "/coupons/peptide-partners" },
-  title: "Peptide Partners Discount Code (April 2026) — Save 10% | Prof. Peptide",
+  title: "Peptide Partners Discount Code (May 2026) — Save 10% | Prof. Peptide",
   description:
     "Use Peptide Partners discount code PROFPEPTIDE to save 10% on research peptides. Four independent test types per batch. Purity, endotoxin, heavy metals, and sterility verified.",
 };
@@ -8,7 +8,7 @@ export const metadata = {
 export default function PeptidePartnersLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Peptide Partners Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at Peptide Partners\",\"url\":\"https://profpeptide.com/coupons/peptide-partners\",\"validFrom\":\"2026-04-01\",\"priceValidUntil\":\"2026-04-30\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Peptide Partners\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Peptide Partners Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at Peptide Partners\",\"url\":\"https://profpeptide.com/coupons/peptide-partners\",\"validFrom\":\"2026-05-01\",\"priceValidUntil\":\"2026-05-31\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Peptide Partners\"}}" }} />
       {children}
     </>
   );

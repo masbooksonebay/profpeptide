@@ -12,7 +12,7 @@ export const metadata = {
 const faqs = [
   {
     q: "Is retatrutide FDA-approved?",
-    a: "No. Retatrutide is investigational and not approved by the FDA, EMA, or any major regulatory body. It is in Phase 3 clinical trials as of April 2026, with potential approval in 2027 or 2028.",
+    a: "No. Retatrutide is investigational and not approved by the FDA, EMA, or any major regulatory body. It is in Phase 3 clinical trials as of May 2026, with potential approval in 2027 or 2028.",
   },
   {
     q: "How does retatrutide compare to semaglutide and tirzepatide?",
@@ -244,7 +244,7 @@ const sections = [
     node: (
       <div className="space-y-3">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          Retatrutide is an investigational drug and is NOT approved by the FDA, EMA, or any major regulatory body. As of April 2026, it is in Phase 3 clinical trials. Eli Lilly's Phase 3 TRIUMPH program is expected to complete additional readouts throughout 2026, with regulatory submission to the FDA targeted for late 2026 and potential approval in 2027 or 2028.
+          Retatrutide is an investigational drug and is NOT approved by the FDA, EMA, or any major regulatory body. As of May 2026, it is in Phase 3 clinical trials. Eli Lilly's Phase 3 TRIUMPH program is expected to complete additional readouts throughout 2026, with regulatory submission to the FDA targeted for late 2026 and potential approval in 2027 or 2028.
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           Long-term safety data beyond 72 weeks does not yet exist — all current trials are 48 to 68 weeks. Cardiovascular outcomes trial (TRIUMPH-3) results are not expected until 2027 or later. The dysesthesia signal observed in Phase 3 (about 21% at 12 mg) is unique to retatrutide and is being monitored closely.

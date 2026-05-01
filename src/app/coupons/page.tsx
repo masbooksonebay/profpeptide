@@ -329,7 +329,7 @@ export default function CouponsPage() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <p className="text-base font-bold text-[#1e2d3d] dark:text-white tracking-tight">
-          Verified codes &mdash; April 2026
+          Verified codes &mdash; May 2026
         </p>
       </div>
 

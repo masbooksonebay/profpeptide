@@ -1,6 +1,6 @@
 export const metadata = {
   alternates: { canonical: "/coupons/apollo-peptide-sciences" },
-  title: "Apollo Peptide Sciences Discount Code (April 2026) — Save 10% | Prof. Peptide",
+  title: "Apollo Peptide Sciences Discount Code (May 2026) — Save 10% | Prof. Peptide",
   description:
     "Use Apollo Peptide Sciences discount code PROFPEPTIDE to save 10% on research peptides. COA and endotoxin reports on every product. Independent third-party tested.",
 };
@@ -8,7 +8,7 @@ export const metadata = {
 export default function ApolloPeptideSciencesLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Apollo Peptide Sciences Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at Apollo Peptide Sciences\",\"url\":\"https://profpeptide.com/coupons/apollo-peptide-sciences\",\"validFrom\":\"2026-04-01\",\"priceValidUntil\":\"2026-04-30\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Apollo Peptide Sciences\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Apollo Peptide Sciences Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at Apollo Peptide Sciences\",\"url\":\"https://profpeptide.com/coupons/apollo-peptide-sciences\",\"validFrom\":\"2026-05-01\",\"priceValidUntil\":\"2026-05-31\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Apollo Peptide Sciences\"}}" }} />
       {children}
     </>
   );
