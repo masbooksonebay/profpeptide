@@ -85,13 +85,6 @@ export default function MelatoninPage() {
           </p>
         </div>
 
-        <div className="rounded-xl p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700">
-          <a href={amazonHref} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm inline-block">
-            Shop melatonin on Amazon &rarr;
-          </a>
-          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
-        </div>
-
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the research shows</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
@@ -112,10 +105,6 @@ export default function MelatoninPage() {
             <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Sleep maintenance issues (waking in the middle of the night) when using immediate-release formulations</li>
           </ul>
         </div>
-
-        <a href={amazonHref} target="_blank" rel="noopener noreferrer" className="btn-outline text-sm inline-block">
-          Find melatonin on Amazon &rarr;
-        </a>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Considerations and unknowns</h2>
@@ -155,13 +144,14 @@ export default function MelatoninPage() {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Where to buy</h2>
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Where to Buy</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Melatonin is widely available at pharmacies, grocery stores, and online retailers. For the broadest selection of dose strengths and third-party-tested brands, Amazon offers the most comparable options.
           </p>
           <a href={amazonHref} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm inline-block">
             Shop melatonin on Amazon &rarr;
           </a>
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
         </div>
 
         <div>

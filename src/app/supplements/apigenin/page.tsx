@@ -88,13 +88,6 @@ export default function ApigeninPage() {
           </p>
         </div>
 
-        <div className="rounded-xl p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700">
-          <a href={amazonHref} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm inline-block">
-            Shop apigenin on Amazon &rarr;
-          </a>
-          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
-        </div>
-
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the research shows</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
@@ -113,10 +106,6 @@ export default function ApigeninPage() {
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Honest caveats:</span> most evidence on isolated apigenin (rather than chamomile extract) is from animal studies or in vitro work. The 50 mg evening dose that&apos;s become popular online is not directly validated by large human RCTs of pure apigenin — it&apos;s extrapolated from animal dosing and chamomile extract data. Direct human trials of standalone apigenin for sleep are limited.
           </p>
         </div>
-
-        <a href={amazonHref} target="_blank" rel="noopener noreferrer" className="btn-outline text-sm inline-block">
-          Find apigenin on Amazon &rarr;
-        </a>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Considerations and unknowns</h2>
@@ -160,13 +149,14 @@ export default function ApigeninPage() {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Where to buy</h2>
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Where to Buy</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Apigenin is available primarily as standalone extract supplements (often 50 mg capsules) and as chamomile extract products that may or may not standardize to apigenin content. For verified high-apigenin extracts, online supplement retailers offer the widest selection.
           </p>
           <a href={amazonHref} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm inline-block">
             Shop apigenin on Amazon &rarr;
           </a>
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
         </div>
 
         <div>
