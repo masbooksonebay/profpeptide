@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/supplements" },
-  title: "Supplement Library — 47 Natural Supplement Profiles | Prof. Peptide",
+  title: "Supplement Library — 51 Natural Supplement Profiles | Prof. Peptide",
   description:
-    "Browse 47 natural supplement profiles covering metabolic health, recovery, cognition, longevity, sleep, and more. Evidence-based and independently researched.",
+    "Browse 51 natural supplement profiles covering metabolic health, recovery, cognition, longevity, sleep, and more. Evidence-based and independently researched.",
 };
 
 type SupplementCategory =
@@ -48,6 +48,7 @@ const categories: CategoryMeta[] = [
 const supplements: Supplement[] = [
   { slug: "alpha-gpc",              name: "Alpha GPC",               categories: ["cognitive"] },
   { slug: "alpha-lipoic-acid",      name: "Alpha Lipoic Acid",       categories: ["metabolic", "longevity"] },
+  { slug: "apigenin",               name: "Apigenin",                categories: ["sleep-recovery", "longevity"] },
   { slug: "ashwagandha",            name: "Ashwagandha",             categories: ["growth-hormone", "sleep-recovery"] },
   { slug: "bacopa-monnieri",        name: "Bacopa Monnieri",         categories: ["cognitive"] },
   { slug: "bcaas",                  name: "BCAAs",                   categories: ["performance", "recovery"] },
@@ -69,6 +70,7 @@ const supplements: Supplement[] = [
   { slug: "garcinia-cambogia",      name: "Garcinia Cambogia",       categories: ["metabolic"] },
   { slug: "glucomannan",            name: "Glucomannan",             categories: ["metabolic", "gut-health"] },
   { slug: "glutamine",              name: "Glutamine",               categories: ["recovery", "gut-health"] },
+  { slug: "glycine",                name: "Glycine",                 categories: ["sleep-recovery", "longevity"] },
   { slug: "green-tea-extract",      name: "Green Tea Extract",       categories: ["metabolic", "longevity"] },
   { slug: "hyaluronic-acid",        name: "Hyaluronic Acid",         categories: ["skin-health", "recovery"] },
   { slug: "l-arginine",             name: "L-Arginine",              categories: ["growth-hormone", "performance", "sexual-health"] },
@@ -78,6 +80,7 @@ const supplements: Supplement[] = [
   { slug: "lions-mane",             name: "Lion’s Mane",        categories: ["cognitive", "longevity"] },
   { slug: "maca-root",              name: "Maca Root",               categories: ["sexual-health", "performance"] },
   { slug: "magnesium",              name: "Magnesium",               categories: ["gut-health", "sleep-recovery", "performance"] },
+  { slug: "melatonin",              name: "Melatonin",               categories: ["sleep-recovery", "longevity"] },
   { slug: "nad-plus",               name: "NAD+",                    categories: ["longevity", "performance"] },
   { slug: "nmn",                    name: "NMN",                     categories: ["longevity", "performance"] },
   { slug: "phosphatidylserine",     name: "Phosphatidylserine",      categories: ["cognitive", "sleep-recovery"] },
@@ -88,6 +91,7 @@ const supplements: Supplement[] = [
   { slug: "resveratrol",            name: "Resveratrol",             categories: ["longevity"] },
   { slug: "rhodiola-rosea",         name: "Rhodiola Rosea",          categories: ["cognitive", "performance"] },
   { slug: "spermidine",             name: "Spermidine",              categories: ["longevity"] },
+  { slug: "tart-cherry",            name: "Tart Cherry",             categories: ["sleep-recovery", "recovery"] },
   { slug: "tongkat-ali",            name: "Tongkat Ali",             categories: ["sexual-health", "growth-hormone"] },
   { slug: "vitamin-c",              name: "Vitamin C",               categories: ["recovery", "gut-health"] },
   { slug: "vitamin-c-skin",         name: "Vitamin C",               categories: ["skin-health"] },
