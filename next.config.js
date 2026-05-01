@@ -57,6 +57,16 @@ const nextConfig = {
         destination: `/peptides/${slug}#studies`,
         permanent: true,
       })),
+      {
+        source: "/tirzepatideresearch",
+        destination: "/peptides/tirzepatide",
+        permanent: true,
+      },
+      {
+        source: "/tesamorelin",
+        destination: "/peptides/tesamorelin",
+        permanent: true,
+      },
     ];
   },
 };
