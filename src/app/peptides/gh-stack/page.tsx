@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import PageTOC from "@/components/PageTOC";
 
 export const metadata = {
   alternates: { canonical: "/peptides/gh-stack" },
@@ -137,6 +138,25 @@ export default function GHStackPage() {
         Also Known As: CJC-1295 + Ipamorelin Stack, GHRH + GHRP Stack
       </p>
 
+      <div className="space-y-4 mb-8">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> The GH Stack is sold pre-blended by some research peptide vendors, while most users buy CJC-1295 and Ipamorelin separately and combine them. See{" "}
+          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            Verified Discount Codes &rarr;
+          </Link>{" "}
+          for current options.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Search Amazon:</span>{" "}
+          <a href="https://www.amazon.com/s?k=growth+hormone+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
+            Search related supplements on Amazon &rarr;
+          </a>
+          <span className="text-xs text-gray-400 dark:text-slate-500"> (As an Amazon Associate, Prof. Peptide earns from qualifying purchases.)</span>
+        </p>
+      </div>
+
+      <PageTOC sections={sections.map((s) => ({ id: s.id, title: s.title }))} />
+
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id}>
@@ -214,23 +234,6 @@ export default function GHStackPage() {
         <Link href="/calculator" className="btn-primary text-sm">
           Open Calculator
         </Link>
-      </div>
-      <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Where to Buy</h2>
-        <div className="flex flex-col sm:flex-row gap-3">
-          <Link href="/coupons" className="btn-primary text-sm text-center">
-            View Verified Discount Codes &rarr;
-          </Link>
-          <a
-            href="https://www.amazon.com/s?k=growth+hormone+supplements&tag=profpeptide-20"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-outline text-sm text-center"
-          >
-            Search Related Supplements on Amazon &rarr;
-          </a>
-        </div>
-        <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
       </div>
     </div>
     </>
