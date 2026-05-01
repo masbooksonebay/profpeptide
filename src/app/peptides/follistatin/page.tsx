@@ -147,6 +147,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Cycle structure rationale: follistatin cycling is designed to allow the body to re-establish baseline myostatin levels and any reproductive hormone changes to normalize. Some users do shorter, more frequent pulses (e.g., 10 days on, 3 weeks off, repeated) for sustained effect with reduced reproductive impact. Most experienced users keep cycles short — 10–14 days — and stack with longer-cycle compounds rather than running follistatin alone for extended periods.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

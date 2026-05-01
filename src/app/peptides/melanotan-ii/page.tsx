@@ -138,6 +138,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           MT-II is NOT FDA-approved. The risk profile is meaningfully worse than typical research peptides. Reading the full Side Effects &amp; Safety section before any use is strongly recommended.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

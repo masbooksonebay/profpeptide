@@ -147,6 +147,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           For most users, topical is the safer and more defensible starting point. Injectable adds systemic effects but carries the FDA Category 2 restriction and quality-control concerns for compounded preparations.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

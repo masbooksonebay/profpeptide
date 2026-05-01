@@ -138,6 +138,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Ipamorelin is frequently stacked with CJC-1295 (with or without DAC). The combination produces greater GH release than either alone because they activate different receptor pathways simultaneously — ipamorelin via GHSR-1a, CJC-1295 via GHRH receptor. The two together produce a more robust GH pulse than either component.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

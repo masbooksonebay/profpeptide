@@ -147,6 +147,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           For research-grade material, reconstitution with bacteriostatic water is standard. The 1.6 mg twice-weekly Zadaxin protocol is the most clinically validated dosing regimen.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

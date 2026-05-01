@@ -147,6 +147,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Russian clinical practice typically uses fixed 14-day courses for GAD or neurasthenia. Outside Russia, biohacker protocols often run continuous low-dose for several weeks then take a break. The 2-week-on/2-week-off cycle is conservative given limited long-term Western data, even though no tolerance has been documented.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

@@ -140,6 +140,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           There is no separate research-grade dosing standard validated by clinical evidence. Most online dosing guidance is extrapolated from the original Metabolic Pharmaceuticals trial protocols and may not produce comparable results.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

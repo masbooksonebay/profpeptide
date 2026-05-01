@@ -152,6 +152,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           DSIP dosing is among the least standardized of any peptide on Prof. Peptide. Original research used IV doses in nmol/kg ranges that don&apos;t translate cleanly to subcutaneous mcg dosing. Most modern protocols are derived from biohacker community reports rather than clinical trials. Start at the low end (50–100 mcg) for first-time use and titrate up only if needed.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

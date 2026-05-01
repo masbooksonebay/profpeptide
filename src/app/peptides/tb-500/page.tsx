@@ -160,6 +160,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Half-life is longer than BPC-157 — estimated at multiple days in animal pharmacokinetic studies, which is why twice-weekly dosing is sufficient. TB-500 is more expensive per dose than BPC-157 because the per-dose amount is much larger (2 mg vs 250 mcg), but cycle frequency is lower.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

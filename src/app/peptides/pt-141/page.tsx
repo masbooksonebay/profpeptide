@@ -147,6 +147,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           PT-141 is strictly on-demand, NOT a daily medication. Repeated dosing greater than 8 times per month increases hyperpigmentation risk. Always allow at least 24 hours between doses. The FDA approval labels Vyleesi specifically for premenopausal women — all other uses (men, postmenopausal women, SSRI-induced dysfunction) are off-label.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

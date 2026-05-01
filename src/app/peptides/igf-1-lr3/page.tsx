@@ -139,6 +139,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Training-day timing: inject within 30–60 minutes post-workout when muscles are primed for nutrient uptake and IGF-1 receptors are temporarily upregulated. Have a meal containing protein and carbohydrates ready within 30 minutes to prevent hypoglycemia and maximize anabolic effect. Rest-day timing: inject with morning meal. Do NOT inject fasted unless very experienced — IGF-1 LR3 can cause significant blood sugar drops.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

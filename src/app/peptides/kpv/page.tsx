@@ -145,6 +145,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           The KLOW blend (GHK-Cu + BPC-157 + TB-500 + KPV) is dosed at 0.25–0.5 mL of reconstituted blend, 5 days/week — see the GLOW page for blend protocol details.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

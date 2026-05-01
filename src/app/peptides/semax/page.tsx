@@ -147,6 +147,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Semax has three available variants. Standard Semax (0.1%/1% solution) has the most clinical data. N-Acetyl Semax has 2–3x potency and longer duration. N-Acetyl Semax Amidate (NA-Semax-A) is dramatically more potent (estimated 100–1,000× per microgram) and requires much smaller doses (50–100 mcg). The N-Acetyl variants are less studied and recommended only for users who have established their response to standard Semax.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

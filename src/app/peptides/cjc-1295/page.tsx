@@ -138,6 +138,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           DAC vs no-DAC choice: most experienced users prefer CJC-1295 without DAC because it preserves pulsatile GH dynamics that more closely mimic physiology. The DAC version produces a more &ldquo;flooded&rdquo; GH environment, which some users prefer for convenience but others find produces more side effects. Both are effective.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

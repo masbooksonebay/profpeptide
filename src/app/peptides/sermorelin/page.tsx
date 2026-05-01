@@ -138,6 +138,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Sermorelin produces gentler, more physiological effects than CJC-1295 with DAC because of the shorter half-life. Most users describe sermorelin as feeling &ldquo;cleaner&rdquo; than direct HGH or longer-acting analogs. The trade-off is slower onset and need for daily dosing — patients who prefer convenience often choose CJC-1295 instead.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

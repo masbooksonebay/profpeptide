@@ -157,6 +157,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Plasma half-life is under 30 minutes, but biological effects extend well beyond plasma clearance — likely due to local tissue depot activity and downstream gene expression changes. Dose titration is common, starting at 250 mcg daily and increasing as tolerated. The Huberman protocol recommends 300–500 mcg subcutaneously, two to three times per week for 8 weeks, followed by an 8–10 week off period.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

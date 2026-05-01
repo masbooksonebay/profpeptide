@@ -138,6 +138,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Tesamorelin is dosed once daily and not titrated up — the dose is fixed across patients. Injection should always be in the abdomen (not thigh or upper arm), with site rotation across different abdominal areas. Avoid scar tissue, bruises, and the navel.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },

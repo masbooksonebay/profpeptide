@@ -146,6 +146,10 @@ const sections = [
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           CagriSema 2.4 mg/2.4 mg is the FDA-submitted formulation, combining cagrilintide 2.4 mg and semaglutide 2.4 mg in a single weekly injection. Research-grade cagrilintide is dosed similarly to the trial schedule.
         </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+        </p>
       </div>
     ),
   },
