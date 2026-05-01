@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 
 export const metadata = {
@@ -392,17 +393,16 @@ export default function CagrilintidePage() {
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Cagrilintide is not yet FDA-approved. CagriSema is under FDA review (NDA filed December 2025). Research-grade cagrilintide is available through specialty peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
-              Verified Discount Codes &rarr;
+            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
+              Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Search Amazon:</span>{" "}
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=metabolic+weight+loss+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
-              Search related supplements on Amazon &rarr;
+              Find related supplements on Amazon.
             </a>
-            <span className="text-xs text-gray-400 dark:text-slate-500"> (As an Amazon Associate, Prof. Peptide earns from qualifying purchases.)</span>
           </p>
         </div>
       </div>
@@ -465,6 +465,8 @@ export default function CagrilintidePage() {
           Open Calculator
         </Link>
       </div>
+
+      <PageDisclaimer />
     </div>
     </>
   );

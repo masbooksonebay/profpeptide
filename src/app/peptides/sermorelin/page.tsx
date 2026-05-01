@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 
 export const metadata = {
@@ -389,17 +390,16 @@ export default function SermorelinPage() {
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sermorelin&apos;s brand product (Geref) was discontinued in 2008. It is currently available through compounding pharmacies (with prescription) or as research-grade peptide. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
-              Verified Discount Codes &rarr;
+            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
+              Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current research-grade options.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Search Amazon:</span>{" "}
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=growth+hormone+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
-              Search related supplements on Amazon &rarr;
+              Find related supplements on Amazon.
             </a>
-            <span className="text-xs text-gray-400 dark:text-slate-500"> (As an Amazon Associate, Prof. Peptide earns from qualifying purchases.)</span>
           </p>
         </div>
       </div>
@@ -462,6 +462,8 @@ export default function SermorelinPage() {
           Open Calculator
         </Link>
       </div>
+
+      <PageDisclaimer />
     </div>
     </>
   );

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import PageDisclaimer from "@/components/PageDisclaimer";
 
 export const metadata = {
   alternates: { canonical: "/supplements/glycine" },
@@ -152,7 +153,6 @@ export default function GlycinePage() {
           <a href={amazonHref} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm inline-block">
             Shop glycine on Amazon &rarr;
           </a>
-          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
         </div>
 
         <div>
@@ -173,6 +173,8 @@ export default function GlycinePage() {
           <span key={tag} className="text-xs bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400 px-2.5 py-1 rounded-full">{tag}</span>
         ))}
       </div>
+
+      <PageDisclaimer />
     </div>
     </>
   );

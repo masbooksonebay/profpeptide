@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import PageDisclaimer from "@/components/PageDisclaimer";
 
 export const metadata = {
   alternates: { canonical: "/supplements/collagen-peptides" },
@@ -127,8 +128,9 @@ export default function CollagenPeptidesPage() {
         >
           Search on Amazon &rarr;
         </a>
-        <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">As an Amazon Associate, Prof. Peptide earns from qualifying purchases.</p>
       </div>
+
+      <PageDisclaimer />
     </div>
     </>
   );
