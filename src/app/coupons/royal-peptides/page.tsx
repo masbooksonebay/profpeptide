@@ -71,7 +71,7 @@ export default function RoyalPeptidesCouponPage() {
 
  <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
  <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
- <CodeBox code="PROFPEPTIDE" />
+ <CodeBox code="PROF10" />
  <p className="text-center text-sm text-[#0891b2] font-medium mt-2 mb-4">10% off your entire order</p>
  <a
  href="https://royal-peptides.com/"
@@ -93,11 +93,11 @@ export default function RoyalPeptidesCouponPage() {
  />
  <FAQItem
  q="Does Royal Peptides have a discount code?"
- a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Royal Peptides order. This code is verified and maintained by Prof. Peptide."
+ a="Yes. Use code PROF10 at checkout to save 10% on any Royal Peptides order. This code is verified and maintained by Prof. Peptide."
  />
  <FAQItem
  q="How do I use the Royal Peptides discount code?"
- a="Add your items to cart at royal-peptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total."
+ a="Add your items to cart at royal-peptides.com, proceed to checkout, and enter PROF10 in the discount code field. The 10% discount will be applied to your order total."
  />
  <FAQItem
  q="What testing does Royal Peptides conduct?"

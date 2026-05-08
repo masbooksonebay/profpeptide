@@ -143,7 +143,7 @@ export const vendors: Record<string, Vendor> = {
   },
   "royal-peptides": {
     name: "Royal Peptides",
-    code: "PROFPEPTIDE",
+    code: "PROF10",
     discount: "10% off",
     region: "US",
     url: "https://royal-peptides.com/?ref=urunwnog",
