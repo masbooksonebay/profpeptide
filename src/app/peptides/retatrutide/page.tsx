@@ -392,40 +392,30 @@ export default function RetatrutidePage() {
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Retatrutide is an investigational peptide being studied for weight loss and type 2 diabetes. Unlike most weight-loss drugs that target one or two hormone receptors, retatrutide activates three at once — GLP-1, GIP, and glucagon. In Phase 3 trials, it has produced some of the largest weight reductions ever recorded for an obesity drug.
+            Retatrutide (LY3437943) is a once-weekly injectable peptide developed by Eli Lilly that activates three metabolic receptors at once: GLP-1, GIP, and glucagon. Among the GLP-1-class research peptides, it has produced the highest published weight-reduction figures to date &mdash; averaging roughly 24% of body weight at 48 weeks in Phase 2 obesity trials. People in research and biohacking communities look to retatrutide for metabolic and weight-management research where stronger response than semaglutide or tirzepatide is the goal.
           </p>
           <div>
             <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Significant weight loss (up to 28.7% in Phase 3 trials at the highest dose)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Better blood sugar control in people with type 2 diabetes</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduced appetite and slower stomach emptying</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Lower blood pressure and improved cholesterol</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduction in knee osteoarthritis pain (TRIUMPH-4 trial)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in fatty liver markers in early trials</li>
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Significant body weight reduction in Phase 2 obesity trials (averaging ~24% at 48 weeks at the highest dose)</li>
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved glycemic control in Phase 2 type 2 diabetes trials (HbA1c reductions around 2.2%)</li>
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Appetite suppression and reduced food intake</li>
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in liver fat markers in early MASLD substudy data</li>
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in blood pressure and lipid profiles alongside weight loss</li>
+              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Once-weekly dosing (half-life around 6 days)</li>
             </ul>
           </div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Clinical trial protocols start at 2 mg once weekly by subcutaneous injection, then escalate every 4 weeks (typically 2 mg → 4 mg → 6 mg → 9 mg → 12 mg per the TRIUMPH-3+ schedule) up to a maintenance dose between 8 mg and 12 mg weekly. See{" "}
-            <a href="#dosing" className="text-[#0891b2] hover:underline">
-              Dosing &amp; Protocols
-            </a>{" "}
-            below for the full titration schedule and additional details.
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Published Phase 2 protocols ranged from 2 mg to 12 mg subcutaneously once weekly, with the highest weight-loss figures observed at the 12 mg dose. Protocols followed in research and user communities draw from these published dose escalations and from animal research, not from finalized human clinical guidelines.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Retatrutide is investigational and not FDA-approved. PP maintains a vetted list of peptide vendors with verified discount codes for research-grade peptides. See{" "}
-            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
-              Verified Peptide Vendors &rarr;
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
+            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+              Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
-          </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
-            <a href="https://www.amazon.com/s?k=metabolic+weight+loss+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
-              Find related supplements on Amazon.
-            </a>
           </p>
         </div>
       </div>
