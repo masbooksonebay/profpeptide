@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/fish-oil" },
@@ -90,6 +91,7 @@ export default function FishOilPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Fish Oil" pagePath="/supplements/fish-oil" />
     </div>
     </>
   );

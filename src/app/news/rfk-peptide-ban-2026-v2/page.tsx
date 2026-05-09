@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/news/rfk-peptide-ban-2026-v2" },
@@ -109,6 +110,7 @@ export default function RFKPeptideBanPage() {
             <Link href="/coupons" className="btn-outline text-sm">Browse Discount Codes</Link>
           </div>
         </div>
+      <ContactLink pageName="RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List" pagePath="/news/rfk-peptide-ban-2026-v2" />
       </div>
     </>
   );

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/collagen-peptides-skin" },
@@ -128,6 +129,7 @@ export default function CollagenPeptidesSkinPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Collagen Peptides" pagePath="/supplements/collagen-peptides-skin" />
     </div>
     </>
   );

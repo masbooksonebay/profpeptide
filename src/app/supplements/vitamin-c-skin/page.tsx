@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/vitamin-c-skin" },
@@ -128,6 +129,7 @@ export default function VitaminCSkinPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Vitamin C" pagePath="/supplements/vitamin-c-skin" />
     </div>
     </>
   );

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/bacopa-monnieri" },
@@ -127,6 +128,7 @@ export default function BacopaMonnieriPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Bacopa Monnieri" pagePath="/supplements/bacopa-monnieri" />
     </div>
     </>
   );

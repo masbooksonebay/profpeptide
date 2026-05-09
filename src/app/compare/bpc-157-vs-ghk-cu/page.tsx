@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/compare/bpc-157-vs-ghk-cu" },
@@ -149,6 +150,7 @@ export default function BPC157vsGHKCuPage() {
       </div>
 
       <p className="text-xs text-gray-400 dark:text-slate-500">For educational and research purposes only. Not medical advice. Not for human use.</p>
+    <ContactLink pageName="BPC-157 vs GHK-Cu — Healing & Tissue Repair Peptide Comparison" pagePath="/compare/bpc-157-vs-ghk-cu" />
     </div>
     </>
   );

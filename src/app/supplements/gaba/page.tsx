@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/gaba" },
@@ -125,6 +126,7 @@ export default function GABAPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="GABA" pagePath="/supplements/gaba" />
     </div>
     </>
   );

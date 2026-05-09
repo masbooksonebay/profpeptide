@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/tongkat-ali" },
@@ -90,6 +91,7 @@ export default function TongkatAliPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Tongkat Ali" pagePath="/supplements/tongkat-ali" />
     </div>
     </>
   );

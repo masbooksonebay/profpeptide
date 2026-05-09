@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/nad-plus" },
@@ -118,6 +119,7 @@ export default function NADPlusSupplementPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="NAD+" pagePath="/supplements/nad-plus" />
     </div>
     </>
   );

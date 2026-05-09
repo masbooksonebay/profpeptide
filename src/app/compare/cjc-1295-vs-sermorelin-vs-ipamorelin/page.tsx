@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/compare/cjc-1295-vs-sermorelin-vs-ipamorelin" },
@@ -147,6 +148,7 @@ export default function CJCvsSermorelinvsIpamorelinPage() {
       </div>
 
       <p className="text-xs text-gray-400 dark:text-slate-500">For educational and research purposes only. Not medical advice. Not for human use.</p>
+    <ContactLink pageName="CJC-1295 vs Sermorelin vs Ipamorelin — Growth Hormone Peptide Comparison" pagePath="/compare/cjc-1295-vs-sermorelin-vs-ipamorelin" />
     </div>
     </>
   );

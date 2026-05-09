@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/peptides/bpc-157" },
@@ -510,6 +511,7 @@ export default function BPC157Page() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="BPC-157" pagePath="/peptides/bpc-157" />
     </div>
     </>
   );

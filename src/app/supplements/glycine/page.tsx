@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/glycine" },
@@ -175,6 +176,7 @@ export default function GlycinePage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Glycine" pagePath="/supplements/glycine" />
     </div>
     </>
   );

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/peptides/retatrutide" },
@@ -488,6 +489,7 @@ export default function RetatrutidePage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Retatrutide" pagePath="/peptides/retatrutide" />
     </div>
     </>
   );

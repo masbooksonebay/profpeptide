@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/protein-powder" },
@@ -126,6 +127,7 @@ export default function ProteinPowderPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Protein Powder" pagePath="/supplements/protein-powder" />
     </div>
     </>
   );

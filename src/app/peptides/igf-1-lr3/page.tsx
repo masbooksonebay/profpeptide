@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/peptides/igf-1-lr3" },
@@ -474,6 +475,7 @@ export default function IGF1LR3Page() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="IGF-1 LR3" pagePath="/peptides/igf-1-lr3" />
     </div>
     </>
   );

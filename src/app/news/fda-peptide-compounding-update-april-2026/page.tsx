@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/news/fda-peptide-compounding-update-april-2026" },
@@ -120,6 +121,7 @@ export default function FDAPeptideCompoundingUpdatePage() {
             <Link href="/news" className="btn-outline text-sm">More News</Link>
           </div>
         </div>
+      <ContactLink pageName="FDA Moves to Restore Access to Key Peptides — Here's What It Means" pagePath="/news/fda-peptide-compounding-update-april-2026" />
       </div>
     </>
   );

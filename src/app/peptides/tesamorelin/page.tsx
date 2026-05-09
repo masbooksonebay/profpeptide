@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/peptides/tesamorelin" },
@@ -470,6 +471,7 @@ export default function TesamorelinPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Tesamorelin" pagePath="/peptides/tesamorelin" />
     </div>
     </>
   );

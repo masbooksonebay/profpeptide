@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/nmn" },
@@ -90,6 +91,7 @@ export default function NMNPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="NMN" pagePath="/supplements/nmn" />
     </div>
     </>
   );

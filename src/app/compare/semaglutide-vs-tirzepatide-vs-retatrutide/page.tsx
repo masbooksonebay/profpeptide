@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide" },
@@ -166,6 +167,7 @@ export default function TripleGLP1ComparisonPage() {
       </div>
 
       <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
+    <ContactLink pageName="Semaglutide vs Tirzepatide vs Retatrutide — GLP-1 Comparison" pagePath="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" />
     </div>
     </>
   );

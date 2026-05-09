@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/compare/epitalon-vs-nad-plus" },
@@ -152,6 +153,7 @@ export default function EpitalonVsNADPage() {
         <Link href="/supplements/nmn" className="btn-outline text-sm">NMN Profile</Link>
       </div>
       <p className="text-xs text-gray-400 dark:text-slate-500">For educational and research purposes only. Not medical advice.</p>
+    <ContactLink pageName="Epitalon vs NAD+ — Longevity Compound Comparison" pagePath="/compare/epitalon-vs-nad-plus" />
     </div>
     </>
   );

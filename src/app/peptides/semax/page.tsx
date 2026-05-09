@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/peptides/semax" },
@@ -479,6 +480,7 @@ export default function SemaxPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Semax" pagePath="/peptides/semax" />
     </div>
     </>
   );

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/compare/retatrutide-vs-tirzepatide" },
@@ -80,6 +81,7 @@ export default function RetatrutideVsTirzepatidePage() {
       </div>
 
       <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
+    <ContactLink pageName="Retatrutide vs Tirzepatide — Triple Agonist vs Dual Agonist Comparison" pagePath="/compare/retatrutide-vs-tirzepatide" />
     </div>
     </>
   );

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/l-citrulline-malate" },
@@ -128,6 +129,7 @@ export default function LCitrullineMalatePage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="L-Citrulline Malate" pagePath="/supplements/l-citrulline-malate" />
     </div>
     </>
   );

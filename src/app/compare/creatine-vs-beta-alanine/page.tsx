@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/compare/creatine-vs-beta-alanine" },
@@ -160,6 +161,7 @@ export default function CreatineVsBetaAlaninePage() {
       </div>
 
       <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
+    <ContactLink pageName="Creatine vs Beta-Alanine — Performance Supplement Comparison" pagePath="/compare/creatine-vs-beta-alanine" />
     </div>
     </>
   );

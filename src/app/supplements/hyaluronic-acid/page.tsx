@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/hyaluronic-acid" },
@@ -128,6 +129,7 @@ export default function HyaluronicAcidPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Hyaluronic Acid" pagePath="/supplements/hyaluronic-acid" />
     </div>
     </>
   );

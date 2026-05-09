@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/curcumin" },
@@ -133,6 +134,7 @@ export default function CurcuminPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Curcumin" pagePath="/supplements/curcumin" />
     </div>
     </>
   );

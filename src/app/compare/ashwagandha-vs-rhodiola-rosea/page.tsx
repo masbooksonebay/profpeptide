@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/compare/ashwagandha-vs-rhodiola-rosea" },
@@ -158,6 +159,7 @@ export default function AshwagandhaVsRhodiolaPage() {
       </div>
 
       <p className="text-xs text-gray-400 dark:text-slate-500">For educational and research purposes only. Not medical advice.</p>
+    <ContactLink pageName="Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison" pagePath="/compare/ashwagandha-vs-rhodiola-rosea" />
     </div>
     </>
   );

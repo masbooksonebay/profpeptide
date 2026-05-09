@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/vitamin-d3" },
@@ -90,6 +91,7 @@ export default function VitaminD3Page() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Vitamin D3" pagePath="/supplements/vitamin-d3" />
     </div>
     </>
   );

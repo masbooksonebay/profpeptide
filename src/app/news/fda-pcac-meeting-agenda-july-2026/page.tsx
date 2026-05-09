@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/news/fda-pcac-meeting-agenda-july-2026" },
@@ -183,6 +184,7 @@ export default function FDAPcacMeetingAgendaJuly2026Page() {
             <Link href="/news" className="btn-outline text-sm">More News</Link>
           </div>
         </div>
+      <ContactLink pageName="FDA Releases Official Agenda for July Peptide Compounding Meeting — Here's What's on It" pagePath="/news/fda-pcac-meeting-agenda-july-2026" />
       </div>
     </>
   );

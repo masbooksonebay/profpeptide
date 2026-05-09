@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/zinc-carnosine" },
@@ -132,6 +133,7 @@ export default function ZincCarnosinePage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="Zinc Carnosine" pagePath="/supplements/zinc-carnosine" />
     </div>
     </>
   );

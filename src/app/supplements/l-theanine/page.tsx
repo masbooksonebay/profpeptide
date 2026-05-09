@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/supplements/l-theanine" },
@@ -129,6 +130,7 @@ export default function LTheaninePage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="L-Theanine" pagePath="/supplements/l-theanine" />
     </div>
     </>
   );

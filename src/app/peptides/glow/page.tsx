@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/peptides/glow" },
@@ -418,6 +419,7 @@ export default function GLOWPage() {
       </div>
 
       <PageDisclaimer />
+    <ContactLink pageName="GLOW" pagePath="/peptides/glow" />
     </div>
     </>
   );

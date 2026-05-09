@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/compare/nmn-vs-nr-vs-niacin" },
@@ -162,6 +163,7 @@ export default function NMNvsNRvsNiacinPage() {
       </div>
 
       <p className="text-xs text-gray-400 dark:text-slate-500">For educational and research purposes only. Not medical advice.</p>
+    <ContactLink pageName="NMN vs NR vs Niacin — NAD+ Precursor Comparison" pagePath="/compare/nmn-vs-nr-vs-niacin" />
     </div>
     </>
   );

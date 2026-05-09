@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/compare/semax-vs-selank" },
@@ -148,6 +149,7 @@ export default function SemaxVsSelankPage() {
         <Link href="/peptides/selank" className="btn-outline text-sm">Selank Profile</Link>
       </div>
       <p className="text-xs text-gray-400 dark:text-slate-500">For educational and research purposes only. Not medical advice. Not for human use.</p>
+    <ContactLink pageName="Semax vs Selank — Cognitive Peptide Comparison" pagePath="/compare/semax-vs-selank" />
     </div>
     </>
   );
