@@ -111,37 +111,37 @@ export default function NMNvsNiacinPage() {
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take both?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take both?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Yes, but there&apos;s no clear evidence stacking them produces additive NAD+ elevation. Most people pick one based on cost and flush tolerance. If you&apos;re already taking niacin for cholesterol, adding NMN is reasonable but probably redundant for NAD+ purposes.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How do I minimize the niacin flush?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How do I minimize the niacin flush?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Three approaches work: (1) Start low (50&ndash;100mg) and titrate up over weeks. (2) Take with food, particularly fat-containing meals. (3) Use extended-release niacin forms &mdash; but these have separate liver-stress concerns at high doses, so most clinicians prefer immediate-release with food. The flush diminishes naturally with consistent dosing as receptors desensitize.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Is NMN regulated by the FDA?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Is NMN regulated by the FDA?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Currently in regulatory limbo. The FDA notified manufacturers in 2022 that NMN was being reviewed as a potential drug ingredient &mdash; this would prevent its sale as a supplement. As of 2026, NMN is still sold as a supplement but the regulatory future is uncertain. Niacin has stable supplement and medication status.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How much should I take?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How much should I take?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               NMN typical dosing: 250&ndash;500mg daily, taken in the morning or split AM/midday (avoid late-day doses, may interfere with sleep). Niacin typical dosing: 500&ndash;1500mg daily for NAD+ effects, often split across meals. For cholesterol effects, prescription niacin is dosed 1&ndash;3g/day. Always start lower and titrate.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Will I notice anything subjectively?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Will I notice anything subjectively?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Highly variable. Some people report better energy, exercise recovery, or sleep within 2&ndash;4 weeks. Many people notice nothing subjectively even when blood NAD+ levels rise on testing. The supplement&apos;s benefits are largely &ldquo;preventive&rdquo; rather than acute &mdash; protecting cellular function over decades rather than producing immediate sensations.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Is it worth the cost difference?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Is it worth the cost difference?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Depends entirely on your priorities. Niacin gives you 95&ndash;100% of the NAD+ raising at 1% of the cost &mdash; but with flushing. NMN gives you the same NAD+ raising with no flush, no side effects, but 100x the cost. For most people, niacin is the rational starting point. If flushing proves intolerable or you specifically want to avoid it, NMN is reasonable.
             </p>

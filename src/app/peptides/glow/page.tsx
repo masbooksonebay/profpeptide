@@ -111,7 +111,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -121,7 +121,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -131,7 +131,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -236,7 +236,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -324,7 +324,7 @@ export default function GLOWPage() {
             GLOW is a synergistic peptide stack combining three well-studied regenerative peptides — GHK-Cu (copper tripeptide), BPC-157 (gastric pentadecapeptide), and TB-500 (Thymosin Beta-4 fragment). The blend is designed to deliver complementary mechanisms in a single injection: GHK-Cu drives collagen synthesis and gene expression modulation, BPC-157 promotes angiogenesis and tissue stabilization, and TB-500 enhances cellular migration and remodeling. Together they target skin quality, wound healing, anti-inflammatory signaling, and tissue regeneration through non-overlapping pathways. Common formulations use a 5:1:1 ratio (GHK-Cu:TB-500:BPC-157), often supplied as a 70 mg blend per vial: 50 mg GHK-Cu / 10 mg BPC-157 / 10 mg TB-500.
           </p>
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">

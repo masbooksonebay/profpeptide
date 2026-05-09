@@ -111,7 +111,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -122,7 +122,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -132,7 +132,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -221,7 +221,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -297,7 +297,7 @@ export default function MK677Page() {
             MK-677 (ibutamoren) is an orally active, non-peptide ghrelin receptor agonist developed by Merck in the 1990s as a potential treatment for growth hormone deficiency, muscle wasting, and osteoporosis. Despite Phase 2 trial data showing 24-hour sustained elevation of GH and IGF-1, MK-677 was never FDA-approved and remains an investigational compound. Unlike injectable GH secretagogues (sermorelin, ipamorelin, tesamorelin), MK-677 is taken orally — a major convenience advantage. It mimics ghrelin at the GHS-R1a receptor, triggering pulsatile GH release that preserves natural feedback loops, unlike exogenous GH injection which suppresses endogenous production. Note: MK-677 is technically NOT a peptide — it&apos;s a non-peptide small molecule ghrelin mimetic — but is included on Prof. Peptide because it acts on the same GH/IGF-1 axis as peptide secretagogues and is commonly compared to them.
           </p>
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">

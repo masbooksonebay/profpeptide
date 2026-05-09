@@ -154,7 +154,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -164,7 +164,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -174,7 +174,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -264,7 +264,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -380,7 +380,7 @@ export default function IGF1LR3Page() {
             IGF-1 LR3 is a synthetic 83-amino-acid analog of human insulin-like growth factor 1 (IGF-1). It contains two structural modifications: an arginine substitution at position 3 (&ldquo;Arg3&rdquo;) and a 13-amino-acid N-terminal extension (&ldquo;Long&rdquo;), producing a peptide with dramatically reduced binding to IGF binding proteins (IGFBPs) and a much longer half-life. Native IGF-1 has a half-life of minutes; IGF-1 LR3 has a half-life of 20–30 hours. The extended bioavailability and ~3x greater potency than native IGF-1 make it one of the most-studied research peptides for muscle hypertrophy, recovery, and metabolic research.
           </p>
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">

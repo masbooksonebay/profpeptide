@@ -163,7 +163,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -174,7 +174,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -183,7 +183,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -273,7 +273,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -371,7 +371,7 @@ export default function NADPlusPage() {
             NAD+ (nicotinamide adenine dinucleotide) is a coenzyme present in every cell of every living organism. It plays a central role in cellular metabolism, energy production, DNA repair, and gene expression regulation. Unlike most peptides on Prof. Peptide, NAD+ is technically a small-molecule cofactor rather than a peptide — but it&apos;s included because it&apos;s commonly stacked with peptides in longevity protocols and sold by the same vendors. NAD+ levels decline ~50% from age 20 to 60, and this decline is implicated in many hallmarks of aging including mitochondrial dysfunction, accumulated DNA damage, and reduced sirtuin activity. NAD+ supplementation (oral, sublingual, or injectable) has emerged as one of the most researched longevity interventions of the past decade, with growing clinical evidence for cellular metabolism, neuroprotection, and anti-aging effects. Direct NAD+ injection is the most bioavailable but also most controversial form.
           </p>
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">

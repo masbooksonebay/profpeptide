@@ -162,7 +162,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -172,7 +172,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -182,7 +182,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -274,7 +274,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -384,7 +384,7 @@ export default function PT141Page() {
             PT-141 (bremelanotide, brand name Vyleesi) is a synthetic cyclic heptapeptide melanocortin receptor agonist developed by Palatin Technologies. It was derived from melanotan II by removing the C-terminal amide group, eliminating the strong tanning effect while preserving sexual desire and arousal effects. The FDA approved PT-141 as Vyleesi in June 2019 for treatment of acquired, generalized hypoactive sexual desire disorder (HSDD) in premenopausal women — making it the first FDA-approved peptide that targets sexual desire through brain pathways rather than peripheral vascular mechanisms. Off-label use in men with erectile dysfunction is also documented.
           </p>
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">

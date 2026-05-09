@@ -134,7 +134,7 @@ export default function GlycinePage() {
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Glycine is one of the simpler supplements to evaluate. It&apos;s a single amino acid produced by reliable industrial fermentation processes and verified easily by standard lab tests.
           </p>
-          <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Look for products that:</p>
+          <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Look for products that:</p>
           <ul className="list-disc list-inside space-y-1 mb-3">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Are third-party tested (USP, NSF, or ConsumerLab certifications)</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">List &ldquo;glycine&rdquo; or &ldquo;L-glycine&rdquo; as the only active ingredient (avoid proprietary blends if you want to dose precisely)</li>
@@ -161,7 +161,7 @@ export default function GlycinePage() {
           <div className="space-y-4">
             {faqs.map((f, i) => (
               <div key={i}>
-                <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+                <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
                 <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
               </div>
             ))}

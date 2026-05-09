@@ -115,37 +115,37 @@ export default function BerberineVsMetforminPage() {
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take berberine and metformin together?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take berberine and metformin together?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Yes, and some clinicians actively prescribe both for metabolic syndrome. They have overlapping mechanisms (both activate AMPK) but berberine adds gut microbiome and lipid effects that metformin doesn&apos;t have. Combination protocols have shown additive HbA1c reduction in research. Discuss with your physician &mdash; particularly if you&apos;re on the maximum metformin dose.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why does berberine require higher doses?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why does berberine require higher doses?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Berberine has poor bioavailability &mdash; only about 5% of an oral dose reaches the bloodstream. To compensate, typical research doses are 1,500 mg daily (split into 3 doses of 500 mg with meals). Some products use absorption-enhancing forms like dihydroberberine or berberine HCL with bioenhancers, which may allow lower doses.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What are berberine&apos;s side effects?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What are berberine&apos;s side effects?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               GI symptoms are most common (~34% of users): constipation, stomach discomfort, mild diarrhea. Usually transient and decrease with continued use or split dosing. Berberine inhibits CYP3A4 enzyme &mdash; important if you&apos;re on medications metabolized through this pathway. Avoid in pregnancy and nursing.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why is metformin associated with longevity research?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why is metformin associated with longevity research?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Metformin has been associated with reduced all-cause mortality in some observational studies (most notably comparing metformin-treated diabetics vs non-diabetic controls &mdash; diabetics on metformin had lower mortality than non-diabetics). The TAME trial (Targeting Aging with Metformin) is the major ongoing RCT studying metformin&apos;s longevity effects in non-diabetic adults. Berberine has limited longevity-specific evidence beyond its metabolic effects.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Is &ldquo;nature&apos;s metformin&rdquo; an accurate marketing claim for berberine?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Is &ldquo;nature&apos;s metformin&rdquo; an accurate marketing claim for berberine?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Partially. Both activate AMPK and produce similar HbA1c reductions in some studies. But the marketing oversimplifies real differences: metformin has 60+ years of safety data, FDA approval, dramatically lower cost, and better-characterized pharmacokinetics. Berberine has additional benefits (lipids, gut microbiome) but isn&apos;t a like-for-like substitute. Better framing: &ldquo;berberine is a related but distinct compound with overlapping AMPK mechanism.&rdquo;
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How long until I see results from either?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How long until I see results from either?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Metformin: blood sugar effects within days, full HbA1c effect over 3 months. Berberine: similar 3-month timeline for HbA1c effect. Both show some effect within 2&ndash;4 weeks of consistent use, but the full glycemic effect requires 8&ndash;12 weeks of stable dosing. Bloodwork before and after is standard.
             </p>

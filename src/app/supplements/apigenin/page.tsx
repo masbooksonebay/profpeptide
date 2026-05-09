@@ -136,7 +136,7 @@ export default function ApigeninPage() {
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Apigenin supplements vary substantially in actual content vs. label claim. Quality markers help.
           </p>
-          <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Look for products that:</p>
+          <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Look for products that:</p>
           <ul className="list-disc list-inside space-y-1 mb-3">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">State the apigenin percentage clearly (98%+ apigenin extracts are most commonly studied)</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Specify the source (chamomile extract is the conventional source; synthetic versions exist)</li>
@@ -165,7 +165,7 @@ export default function ApigeninPage() {
           <div className="space-y-4">
             {faqs.map((f, i) => (
               <div key={i}>
-                <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+                <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
                 <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
               </div>
             ))}

@@ -136,7 +136,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cagrilintide is administered as a once-weekly subcutaneous injection. The dose escalates every 4 weeks to allow tolerance. CagriSema combines cagrilintide and semaglutide in a single fixed-dose injection.
         </p>
-        <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
           Cagrilintide escalation schedule:
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -161,7 +161,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -174,7 +174,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -184,7 +184,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Serious (rare — call a doctor)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -272,7 +272,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -373,7 +373,7 @@ export default function CagrilintidePage() {
             Cagrilintide is an investigational long-acting amylin analogue developed by Novo Nordisk for chronic weight management. It works by mimicking amylin, a hormone the pancreas releases alongside insulin after meals. Combined with semaglutide as CagriSema, it produced 20.4% average weight loss in the Phase 3 REDEFINE 1 trial (NEJM 2025) — competitive with tirzepatide and approaching retatrutide&apos;s efficacy. Novo Nordisk filed an FDA New Drug Application for CagriSema in December 2025.
           </p>
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">

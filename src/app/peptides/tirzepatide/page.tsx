@@ -131,7 +131,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tirzepatide is administered as a once-weekly subcutaneous injection. The FDA-approved titration schedule starts at 2.5 mg and increases every 4 weeks to allow the body to adapt and minimize gastrointestinal side effects. Maintenance doses range from 5 mg to 15 mg weekly depending on individual tolerance and goals.
         </p>
-        <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
           FDA-approved escalation schedule:
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -164,7 +164,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -178,7 +178,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -190,7 +190,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Serious (rare — call a doctor)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -283,7 +283,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -456,7 +456,7 @@ export default function TirzepatidePage() {
             Tirzepatide is an FDA-approved peptide for type 2 diabetes (sold as Mounjaro) and chronic weight management (sold as Zepbound). Unlike older GLP-1 drugs that target one receptor, tirzepatide activates two — GLP-1 and GIP — which is why head-to-head trials show it producing more weight loss than semaglutide. It&apos;s the most-prescribed weight loss medication in the United States as of 2026.
           </p>
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">

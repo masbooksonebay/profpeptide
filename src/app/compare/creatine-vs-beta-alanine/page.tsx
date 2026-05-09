@@ -117,37 +117,37 @@ export default function CreatineVsBetaAlaninePage() {
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Do I need to load creatine or beta-alanine?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Do I need to load creatine or beta-alanine?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Loading is optional for creatine &mdash; 20g/day for 5 days saturates muscle stores faster, but 3&ndash;5g/day reaches the same saturation level after 3&ndash;4 weeks without the risk of GI upset. Most users skip loading. Beta-alanine has no loading protocol &mdash; it doesn&apos;t act acutely. The 4&ndash;10 week timeline to peak carnosine is unavoidable regardless of dose.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What about the beta-alanine tingling?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What about the beta-alanine tingling?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Paraesthesia (tingling in the face, hands, scalp) is harmless and decreases with consistent use. It&apos;s caused by beta-alanine binding to nerve receptors near the skin. To minimize: split doses smaller (1g at a time vs 4g all at once), take with food, use sustained-release forms, or simply tolerate it for the first 2&ndash;3 weeks until receptors desensitize.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Will creatine make me hold water?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Will creatine make me hold water?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Yes, creatine causes mild intracellular water retention &mdash; typically 1&ndash;3 lbs in the first 2&ndash;4 weeks. This is intramuscular water (not subcutaneous bloat) and is part of the mechanism. Most users don&apos;t notice it visually, and the strength benefits significantly outweigh the small weight gain. The water retention plateaus after initial saturation.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are the cheap brands as good as expensive ones?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are the cheap brands as good as expensive ones?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               For both supplements, the cheapest forms are usually fine &mdash; these are simple molecules that don&apos;t benefit much from premium processing. Creatine: stick to creatine monohydrate (the most-researched form). Avoid &ldquo;buffered creatine&rdquo; or &ldquo;creatine HCL&rdquo; marketing &mdash; they don&apos;t show better performance than monohydrate. Beta-alanine: standard beta-alanine is fine; sustained-release forms only matter if tingling is intolerable.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take them together?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take them together?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Yes &mdash; research consistently supports the combination. They have completely separate mechanisms (ATP regeneration vs lactic acid buffering) and produce additive performance benefits. Combined supplementation is one of the most well-evidenced supplement stacks for athletes.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How safe are they long-term?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How safe are they long-term?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both have excellent long-term safety records. Creatine has 30+ years of human safety data &mdash; no documented organ damage, no kidney issues in healthy adults, no significant adverse signals. Beta-alanine has 15+ years of safety data, with the only documented &ldquo;side effect&rdquo; being the harmless tingling. Both are among the safest supplements in the performance category.
             </p>

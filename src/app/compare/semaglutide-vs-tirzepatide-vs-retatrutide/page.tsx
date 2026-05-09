@@ -122,37 +122,37 @@ export default function TripleGLP1ComparisonPage() {
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">When will retatrutide be available?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">When will retatrutide be available?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Retatrutide is currently in Phase 3 clinical trials through Eli Lilly&apos;s TRIUMPH program. FDA approval is expected in 2027 or 2028 based on current trial timelines. Until then, the only legal way to access retatrutide is through enrollment in a clinical trial. Research-grade retatrutide is sold for laboratory research only and is not for human use.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are GI side effects worse with each newer generation?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are GI side effects worse with each newer generation?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Not exactly. The GI side effect pattern (nausea, vomiting, diarrhea) is similar across all three drugs, with most occurring during the dose-titration phase. Some research suggests GIP receptor activation in tirzepatide may actually reduce nausea compared to semaglutide alone. Retatrutide&apos;s GI profile is still being characterized in trials but appears similar.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Which has the best safety record?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Which has the best safety record?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Semaglutide has 8+ years of post-market safety data (FDA-approved 2017). Tirzepatide has 4+ years (approved 2022). Retatrutide has only clinical trial safety data so far. For patients prioritizing long-term safety evidence, semaglutide has the largest body of real-world data.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How does insurance coverage compare?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How does insurance coverage compare?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Coverage varies dramatically by plan and indication. Many insurers cover semaglutide and tirzepatide for diabetes (Ozempic, Mounjaro) but require prior authorization or deny coverage for obesity (Wegovy, Zepbound). Patients with both diabetes and obesity often have an easier path to coverage. Retatrutide has no commercial pricing yet.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I switch between them?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I switch between them?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Switching between GLP-1 medications is common and generally safe under physician supervision. Most clinicians recommend a 1&ndash;2 week washout when switching to avoid additive side effects, then starting the new drug at its standard low dose for re-titration. Patients should not switch without medical guidance.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why does retatrutide produce so much more liver fat reduction?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why does retatrutide produce so much more liver fat reduction?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               The glucagon receptor (the third receptor only retatrutide targets) directly stimulates fat oxidation in the liver. This is a different mechanism from semaglutide and tirzepatide&apos;s appetite-suppression-driven weight loss. The Phase 3 TRIUMPH-4 trial reported up to 86% liver fat reduction &mdash; the most dramatic effect on hepatic fat seen in any GLP-1-class drug.
             </p>

@@ -141,7 +141,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Semaglutide is administered as a once-weekly subcutaneous injection (Wegovy/Ozempic) or as a daily oral tablet (Rybelsus, for type 2 diabetes only). Injectable dosing escalates every 4 weeks to allow the body to adapt and minimize gastrointestinal side effects.
         </p>
-        <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
           Wegovy (weight management) escalation schedule:
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -179,7 +179,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -194,7 +194,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -207,7 +207,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Serious (rare — call a doctor)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -302,7 +302,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -464,7 +464,7 @@ export default function SemaglutidePage() {
             Semaglutide is an FDA-approved peptide for type 2 diabetes (sold as Ozempic), chronic weight management (sold as Wegovy), and oral type 2 diabetes treatment (sold as Rybelsus). It works by mimicking GLP-1, a hormone the body naturally produces after eating. Approved in 2017 for diabetes and 2021 for obesity, it has the longest safety record and largest body of clinical evidence of any GLP-class medication.
           </p>
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">

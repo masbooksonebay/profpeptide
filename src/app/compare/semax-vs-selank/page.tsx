@@ -106,37 +106,37 @@ export default function SemaxVsSelankPage() {
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How are these legal in Russia but not the US?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How are these legal in Russia but not the US?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Russia&apos;s regulatory framework approved both peptides through their pharmacological standards based on Russian-conducted clinical trials. The FDA requires its own trials for US approval, which neither peptide has undergone. This is a common pattern with Russian peptides &mdash; they&apos;re sold legally in Russia as approved medications, but in the US they&apos;re sold only as research compounds. No legal pathway currently exists to import either for human use in the US.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How are they administered?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How are they administered?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both are intranasal sprays. The intranasal route is critical &mdash; it allows the peptides to cross the blood-brain barrier directly via nasal-to-CNS pathways, avoiding the digestive degradation that would happen with oral dosing. Effects begin within 15&ndash;60 minutes. Standard research dosing is 1&ndash;3 sprays per nostril per session, dosed 2&ndash;4 times daily.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are there side effects?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are there side effects?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both have unusually clean side effect profiles in research. Semax: rare mild irritation at the application site, occasional headache. Selank: rare drowsiness or mild dizziness, no dependence or withdrawal even after extended use. Neither causes the cognitive blunting, dependence, or rebound symptoms associated with conventional anxiolytics.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take Semax and Selank together?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take Semax and Selank together?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Yes, no documented interactions. Mechanisms are different (BDNF vs GABA-A) so combined effects are likely additive. Some research protocols dose Semax in the morning (cognitive enhancement) and Selank in the evening or as needed (anxiety reduction).
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How does Selank compare to benzodiazepines?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How does Selank compare to benzodiazepines?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               One RCT (62 patients with GAD, Russian, 2008) compared Selank to medazepam: comparable anxiety reduction, but Selank produced no sedation, no memory impairment, no dependence, and no rebound anxiety on discontinuation. This trial is small and not independently replicated outside Russia. The mechanism (allosteric GABA-A modulation) is biologically plausible for explaining the cleaner effect profile.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Will these show up on drug tests?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Will these show up on drug tests?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Neither is on standard drug screening panels (5-panel, 10-panel, expanded employment panels). They&apos;re not tested for in WADA athletic screening either, though policy may evolve as awareness grows. Custom mass-spectrometry testing could detect them, but no commercial tests target these peptides.
             </p>

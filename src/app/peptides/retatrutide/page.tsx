@@ -121,7 +121,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Retatrutide is administered as a once-weekly subcutaneous injection. Trials use a stepwise dose-escalation protocol, starting low and increasing every 4 weeks to allow the body to adapt and minimize gastrointestinal side effects. The slow titration is critical — Phase 2 data showed that participants who started at 4 mg instead of 2 mg had significantly higher rates of GI side effects.
         </p>
-        <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
           Standard escalation schedule (Phase 3 TRIUMPH protocol):
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -153,7 +153,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -166,7 +166,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -177,7 +177,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Serious (rare — call a doctor)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -264,7 +264,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -396,7 +396,7 @@ export default function RetatrutidePage() {
             Retatrutide (LY3437943) is a once-weekly injectable peptide developed by Eli Lilly that activates three metabolic receptors at once: GLP-1, GIP, and glucagon. Among the GLP-1-class research peptides, it has produced the highest published weight-reduction figures to date &mdash; averaging roughly 24% of body weight at 48 weeks in Phase 2 obesity trials. People in research and biohacking communities look to retatrutide for metabolic and weight-management research where stronger response than semaglutide or tirzepatide is the goal.
           </p>
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">

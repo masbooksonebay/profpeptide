@@ -115,37 +115,37 @@ export default function AshwagandhaVsRhodiolaPage() {
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are these safe to take long-term?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are these safe to take long-term?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both have strong long-term safety records. Ashwagandha has multiple long-duration RCTs (12+ months) without significant adverse signals &mdash; main caveats are mild GI effects and potential issues for people with autoimmune thyroid conditions (it can stimulate thyroid function). Rhodiola has multi-decade traditional-use data plus modern trials showing safety at standard doses. Both are well-tolerated by most users.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take them together?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take them together?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Yes, no documented interactions. The combination targets different stress mechanisms (HPA axis for ashwagandha, Hsp70 for rhodiola) and is one of the more sensible adaptogen stacks. Typical dosing: ashwagandha at bedtime, rhodiola in the morning.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How long until I see effects?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How long until I see effects?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Rhodiola: noticeable effects within days to 2 weeks. Ashwagandha: full effect builds over 4&ndash;8 weeks. The different timelines reflect their different mechanisms &mdash; rhodiola activates fast-acting cellular stress proteins, ashwagandha slowly modulates the hormonal stress axis.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What about thyroid concerns with ashwagandha?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What about thyroid concerns with ashwagandha?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Ashwagandha has been shown to mildly stimulate thyroid function. For most people this is neutral or beneficial (especially with subclinical hypothyroidism). For people with hyperthyroidism or autoimmune thyroid conditions (Graves&apos;, Hashimoto&apos;s), ashwagandha may worsen symptoms. Consult a physician before using if you have any thyroid condition.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are there standardized forms I should look for?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are there standardized forms I should look for?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Yes. For ashwagandha: KSM-66 and Sensoril are the most-researched extracts, both standardized to specific withanolide percentages. For rhodiola: look for extracts standardized to 3% rosavins and 1% salidroside (the standard ratio used in most clinical trials). Avoid generic &ldquo;rhodiola root powder&rdquo; without standardization &mdash; efficacy varies dramatically.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What are the side effects?</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What are the side effects?</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both are well-tolerated. Ashwagandha: rare mild GI upset, drowsiness if taken in the morning (it&apos;s better at bedtime), possible thyroid effects. Rhodiola: rare headache or dizziness at higher doses, mild stimulation in sensitive individuals (avoid late-day dosing). No dependence or withdrawal effects with either herb.
             </p>

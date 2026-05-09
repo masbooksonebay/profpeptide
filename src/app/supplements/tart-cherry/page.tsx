@@ -89,7 +89,7 @@ export default function TartCherryPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the research shows</h2>
-          <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Sleep evidence:</p>
+          <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Sleep evidence:</p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Howatson et al. (2012, European Journal of Nutrition) studied 20 healthy adults given Montmorency tart cherry juice concentrate for 7 days. Participants slept about 40 minutes longer on average and showed roughly a 6% increase in sleep efficiency, with measurable increases in urinary melatonin metabolites.
           </p>
@@ -99,7 +99,7 @@ export default function TartCherryPage() {
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             A 2025 systematic review in Food Science &amp; Nutrition examined seven interventional studies and concluded that tart cherry consumption can improve sleep duration, sleep efficiency, and sleep onset time, while also reducing inflammatory markers like CRP. The review noted significant heterogeneity in dosing and study populations and that the evidence base, while consistent in direction, remains limited.
           </p>
-          <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Recovery evidence:</p>
+          <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Recovery evidence:</p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             A 2021 systematic review and meta-analysis of 14 studies found that tart cherry supplementation produced a small beneficial effect on muscle soreness (effect size -0.44) and a moderate beneficial effect on muscular strength recovery after strenuous exercise.
           </p>
@@ -138,7 +138,7 @@ export default function TartCherryPage() {
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             The supplement industry around tart cherry varies widely in quality. Active compound concentration is what matters — not just the cherry&apos;s presence on the label.
           </p>
-          <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Look for products that:</p>
+          <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Look for products that:</p>
           <ul className="list-disc list-inside space-y-1 mb-3">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Specifically state Montmorency cultivar</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Are standardized to anthocyanin content (a marker of quality and concentration)</li>
@@ -167,7 +167,7 @@ export default function TartCherryPage() {
           <div className="space-y-4">
             {faqs.map((f, i) => (
               <div key={i}>
-                <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+                <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
                 <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
               </div>
             ))}

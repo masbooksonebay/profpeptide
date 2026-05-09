@@ -95,13 +95,13 @@ export default function MelatoninPage() {
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             The absolute effect size is modest compared to prescription sleep aids — melatonin is not a heavy sedative — but it is consistent and the safety profile is much more favorable than benzodiazepines or Z-drugs in short-term use.
           </p>
-          <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Effects are stronger in:</p>
+          <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Effects are stronger in:</p>
           <ul className="list-disc list-inside space-y-1 mb-3">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Circadian rhythm disorders (jet lag, shift work, delayed sleep phase)</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Older adults, who produce less endogenous melatonin</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Children and adolescents with neurodevelopmental sleep disturbances (under medical supervision)</li>
           </ul>
-          <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Effects are smaller or absent in:</p>
+          <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Effects are smaller or absent in:</p>
           <ul className="list-disc list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Acute primary insomnia in young healthy adults</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Sleep maintenance issues (waking in the middle of the night) when using immediate-release formulations</li>
@@ -132,7 +132,7 @@ export default function MelatoninPage() {
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Because melatonin is sold as a dietary supplement in the US, label accuracy varies more than you&apos;d expect. Independent testing has found that actual melatonin content in commercial products can vary substantially from what the label states.
           </p>
-          <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Look for products that:</p>
+          <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Look for products that:</p>
           <ul className="list-disc list-inside space-y-1 mb-3">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Are third-party tested (look for USP Verified, NSF Certified, or ConsumerLab approved seals)</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">State the exact dose per serving and have not been reformulated to higher than necessary doses</li>
@@ -160,7 +160,7 @@ export default function MelatoninPage() {
           <div className="space-y-4">
             {faqs.map((f, i) => (
               <div key={i}>
-                <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+                <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
                 <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
               </div>
             ))}

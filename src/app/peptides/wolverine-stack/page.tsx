@@ -195,7 +195,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -299,7 +299,7 @@ export default function WolverineStackPage() {
             The Wolverine Stack is the popular name for the combination of BPC-157 and TB-500 (Thymosin Beta-4 fragment) — two of the most widely studied tissue-repair peptides in preclinical research. Named for its association with rapid healing, the stack pairs two peptides that operate through distinct but complementary biological mechanisms. BPC-157 works primarily through growth factor modulation, nitric oxide signaling, and angiogenesis. TB-500 works through actin regulation, cellular migration, and stem cell mobilization. Together they address both the signaling that initiates repair and the cellular mechanics that carry it out.
           </p>
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">

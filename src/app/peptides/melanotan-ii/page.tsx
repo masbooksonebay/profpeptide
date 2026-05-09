@@ -153,7 +153,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -165,7 +165,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -176,7 +176,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
             Serious (documented in case reports)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -266,7 +266,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -373,7 +373,7 @@ export default function MelanotanIIPage() {
             Melanotan II is a synthetic cyclic heptapeptide and non-selective agonist of the melanocortin receptors (MC1R, MC3R, MC4R, MC5R). It was developed in the 1980s at the University of Arizona as a successor to Melanotan I (afamelanotide, FDA-approved as Scenesse for erythropoietic protoporphyria). Originally developed as a sunless tanning agent, MT-II also produces strong sexual arousal effects (via MC4R) and appetite suppression. It is NOT FDA-approved for any indication, and health agencies in multiple countries have warned against its use. PT-141 (bremelanotide / Vyleesi) was specifically derived from MT-II by removing the C-terminal amide group — eliminating the strong tanning effect while preserving sexual arousal effects. MT-II is associated with documented serious adverse events including rhabdomyolysis, renal injury, and reversible darkening of moles.
           </p>
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
