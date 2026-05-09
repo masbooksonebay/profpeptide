@@ -76,25 +76,25 @@ export default function NMNvsNiacinPage() {
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want NAD+ raising with no flush, cost is no concern</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want NAD+ raising with no flush, cost is no concern</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               NMN is the cleaner option &mdash; no flushing, no obvious side effects, no liver-enzyme monitoring needed at standard doses. Cost runs $50&ndash;150/month for typical 250&ndash;500mg daily dosing. For people who can absorb the cost, the absence of side effects is the main draw.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cost-conscious or want established supplement</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cost-conscious or want established supplement</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Niacin runs $5&ndash;15/month &mdash; roughly 1% the cost of NMN. The flushing decreases dramatically after 1&ndash;2 weeks of consistent use as receptors desensitize. For most people this is manageable. Niacin also has the longest safety record (decades of use as a cholesterol medication and supplement).
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Have high cholesterol or unfavorable lipid profile</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Have high cholesterol or unfavorable lipid profile</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Only niacin lowers LDL and triglycerides while raising HDL. This is FDA-recognized and was the original use of niacin as a prescription medication before statins replaced it. If you&apos;re managing both NAD+ and lipids, niacin is the obvious choice.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want the supplement with the most longevity-research attention</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want the supplement with the most longevity-research attention</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               NMN gets dramatically more longevity-research coverage &mdash; David Sinclair&apos;s research and public advocacy made it the go-to longevity supplement for many people. Animal data on NMN is broad. Niacin has been studied for decades but mostly for cholesterol and pellagra prevention rather than longevity specifically.
             </p>
@@ -103,8 +103,8 @@ export default function NMNvsNiacinPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300">Niacin raises NAD+ at approximately 1% of the cost of NMN. The flush is manageable for most people and can be reduced with extended-release forms. <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link> has no flush and is simpler to use, but costs significantly more and the long-term human evidence is still developing. Both effectively raise <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link> &mdash; the choice often comes down to budget, tolerance for flushing, and whether the cholesterol benefits of niacin are relevant.</p>
+        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-lg text-gray-600 dark:text-slate-300">Niacin raises NAD+ at approximately 1% of the cost of NMN. The flush is manageable for most people and can be reduced with extended-release forms. <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link> has no flush and is simpler to use, but costs significantly more and the long-term human evidence is still developing. Both effectively raise <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link> &mdash; the choice often comes down to budget, tolerance for flushing, and whether the cholesterol benefits of niacin are relevant.</p>
       </div>
 
       <div className="mb-8">

@@ -71,25 +71,25 @@ export default function SemaxVsSelankPage() {
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cognitive enhancement, focus, mental performance</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cognitive enhancement, focus, mental performance</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Semax is the more direct match. Russian clinical research approves it for stroke recovery, encephalopathy, ADHD, and cognitive impairment &mdash; all centered on its BDNF-elevating, neuroprotective mechanism. Self-reported effects in research-using populations include improved focus, mental clarity, and faster learning. Onset is fairly quick (within hours of intranasal dosing).
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Anxiety reduction without sedation or dependence</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Anxiety reduction without sedation or dependence</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Selank is the more direct match. Russia approves it for generalized anxiety disorder (GAD). The standout feature: in one RCT (62 patients with GAD), Selank was comparable to medazepam &mdash; a benzodiazepine &mdash; in anxiety reduction, but without sedation, memory impairment, or dependence risk. For research interested in anxiolysis without benzodiazepine downsides, this is an unusual peptide.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Stress recovery, neuroprotection, brain injury research</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Stress recovery, neuroprotection, brain injury research</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both have neuroprotective evidence, but Semax has stronger data for acute neuroprotection (stroke, traumatic brain injury, cognitive decline). Russian clinics use Semax post-stroke. Selank&apos;s neuroprotection is more about chronic stress resistance &mdash; protective against alcohol-induced cognitive decline in animal models.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Stack approach (cognitive + anxiety together)</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Stack approach (cognitive + anxiety together)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Some research protocols use both. Mechanisms don&apos;t overlap (BDNF/trkB for Semax, GABA-A allosteric modulation for Selank), so combined effects are theoretically additive. The combination is sometimes positioned as &ldquo;Semax for productivity, Selank for stress.&rdquo; No formal research has compared the stack to single-peptide protocols.
             </p>
@@ -98,8 +98,8 @@ export default function SemaxVsSelankPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300">Choose <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link> if the primary research interest is cognitive enhancement, neuroprotection, or stroke-related outcomes. Choose <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link> if the primary interest is anxiety reduction without sedation or dependence risk. They complement each other well &mdash; Semax for cognition, Selank for stress &mdash; and are sometimes studied together.</p>
+        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-lg text-gray-600 dark:text-slate-300">Choose <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link> if the primary research interest is cognitive enhancement, neuroprotection, or stroke-related outcomes. Choose <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link> if the primary interest is anxiety reduction without sedation or dependence risk. They complement each other well &mdash; Semax for cognition, Selank for stress &mdash; and are sometimes studied together.</p>
       </div>
 
       <div className="mb-8">

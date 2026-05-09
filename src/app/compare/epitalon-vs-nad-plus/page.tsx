@@ -74,25 +74,25 @@ export default function EpitalonVsNADPage() {
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Starting longevity research from scratch</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Starting longevity research from scratch</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               NAD+ precursors (NMN or NR) are the rational entry point. Strong international research base, dozens of independent clinical trials, well-characterized safety profile, multiple mechanism studies. Epitalon is more speculative &mdash; interesting biology but most evidence concentrated in one research group.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Specific interest in telomere biology</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Specific interest in telomere biology</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               If your primary research interest is telomere biology specifically, Epitalon is more directly relevant. Khavinson group studies (Russia, primarily) report blood cell telomere lengthening with cyclic dosing protocols. The 2025 UK study was the first major independent replication. Pair with TA-65 (another telomerase activator) for a telomere-focused stack.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comprehensive longevity protocol — both make sense</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comprehensive longevity protocol — both make sense</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               They target different aging mechanisms (telomere length vs cellular energy/sirtuins). Some longevity protocols use both. Typical structure: ongoing daily NAD+ precursor (NMN or NR), plus a 10&ndash;20 day cycle of Epitalon every 6&ndash;12 months (matching the cyclic dosing in research). The combination addresses replicative aging AND metabolic aging.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cost-conscious approach</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cost-conscious approach</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Niacin is the cheapest NAD+ precursor by far ($5&ndash;15/month) and effective. Epitalon courses run $50&ndash;200 for a 10&ndash;20 day cycle, but the cycle is occasional (1&ndash;2x/year) rather than continuous. Total annual cost: niacin ~$120/year, Epitalon ~$200&ndash;400/year for cyclic dosing. Both fit reasonable budgets.
             </p>
@@ -101,8 +101,8 @@ export default function EpitalonVsNADPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300">NAD+ precursors have far more robust and independently replicated human evidence. <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link> has fascinating telomere biology but the evidence base is narrow and concentrated in a single research group. They target entirely different aging mechanisms and could theoretically be studied together as part of a comprehensive longevity protocol.</p>
+        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-lg text-gray-600 dark:text-slate-300">NAD+ precursors have far more robust and independently replicated human evidence. <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link> has fascinating telomere biology but the evidence base is narrow and concentrated in a single research group. They target entirely different aging mechanisms and could theoretically be studied together as part of a comprehensive longevity protocol.</p>
       </div>
 
       <div className="mb-8">

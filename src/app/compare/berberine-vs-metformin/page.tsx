@@ -74,31 +74,31 @@ export default function BerberineVsMetforminPage() {
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Diagnosed type 2 diabetes</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Diagnosed type 2 diabetes</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Metformin is the clinical gold standard. 60+ years of safety data, FDA-approved since 1994, extensive cardiovascular outcome research. Berberine has comparable RCT data on HbA1c reduction but lacks the long-term safety record needed for chronic disease management. Almost no clinician would substitute berberine for metformin in diagnosed diabetes.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Prediabetes or insulin resistance (not yet diabetic)</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Prediabetes or insulin resistance (not yet diabetic)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Berberine becomes a more reasonable option here. Multiple meta-analyses show comparable HbA1c reduction (~0.75 percentage points). For patients who want to avoid prescription medication or whose providers prefer lifestyle + supplement approaches, berberine has genuine evidence behind it. Some clinicians use both, others prefer berberine first as a non-prescription option.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cost-conscious approach</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cost-conscious approach</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Metformin is dramatically cheaper. Generic metformin runs $4&ndash;15/month; berberine runs $20&ndash;40/month. If insurance covers metformin (most do, for diabetes), it&apos;s the cost winner by a wide margin. Berberine costs more but doesn&apos;t require a prescription, an office visit, or insurance.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want secondary lipid benefits</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want secondary lipid benefits</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Berberine has documented effects on cholesterol &mdash; modest LDL reduction, triglyceride reduction, and HDL increase. Metformin&apos;s effects on lipids are minimal. Patients who want both blood sugar AND lipid effects may favor berberine for the broader metabolic profile, or take both (some clinicians do prescribe metformin + berberine together for metabolic syndrome).
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">PCOS-related insulin resistance</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">PCOS-related insulin resistance</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both work. Metformin is the more-studied option for PCOS specifically and is the standard prescription approach. Berberine has growing PCOS-specific evidence and is sometimes used by patients who don&apos;t tolerate metformin (its GI side effects can be significant).
             </p>
@@ -107,8 +107,8 @@ export default function BerberineVsMetforminPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300"><Link href="/supplements/berberine" className="text-[#0891b2] hover:underline">Berberine</Link> shows genuine metabolic activity and is a legitimate option for prediabetes and metabolic health support. Metformin remains the clinical gold standard for type 2 diabetes with decades of safety data. Calling berberine &quot;natural metformin&quot; oversimplifies the science &mdash; berberine is promising but not a substitute for prescription treatment when clinically indicated.</p>
+        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/supplements/berberine" className="text-[#0891b2] hover:underline">Berberine</Link> shows genuine metabolic activity and is a legitimate option for prediabetes and metabolic health support. Metformin remains the clinical gold standard for type 2 diabetes with decades of safety data. Calling berberine &quot;natural metformin&quot; oversimplifies the science &mdash; berberine is promising but not a substitute for prescription treatment when clinically indicated.</p>
       </div>
 
       <div className="mb-8">

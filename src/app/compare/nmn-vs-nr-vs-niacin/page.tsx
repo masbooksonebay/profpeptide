@@ -78,31 +78,31 @@ export default function NMNvsNRvsNiacinPage() {
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Best evidence base, no flush, willing to pay more</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Best evidence base, no flush, willing to pay more</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               NR has the strongest human trial volume (40+ clinical studies) and is the best-studied NAD+ precursor. No flushing, well-tolerated, GRAS status. The premium for cost is real but justified by evidence depth. Niagen by ChromaDex is the most-researched commercial form.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cost-conscious, can manage the flush</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cost-conscious, can manage the flush</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Niacin raises NAD+ at roughly 1% the cost of NMN or NR. The flush (warmth, redness, tingling) is benign and decreases with consistent use. Extended-release forms reduce flushing but have separate liver-stress concerns at high doses. For budget-focused NAD+ raising plus cholesterol benefits (raises HDL, lowers LDL/triglycerides), niacin is the rational choice.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">David Sinclair fan, prioritizing latest research</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">David Sinclair fan, prioritizing latest research</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               NMN gets the most attention in longevity media because of David Sinclair&apos;s advocacy. Animal data is broad and impressive. The 2026 head-to-head trial showed NMN comparable to NR in raising blood NAD+, validating its efficacy. The trade-off is the highest cost of the three and uncertain regulatory future (FDA reviewing as potential drug ingredient).
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want secondary cholesterol benefits</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want secondary cholesterol benefits</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Only niacin has FDA-approved cholesterol effects (originally a prescription cholesterol medication before statins took over). Patients managing both NAD+ levels AND lipid profile have a clear winner here &mdash; niacin does both at minimal cost.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Stack approach (some researchers do all three)</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Stack approach (some researchers do all three)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               A minority of longevity researchers cycle or combine precursors on the theory that different pathways may produce different downstream effects (sirtuin activation, PARP activation, methylation effects). This is speculative &mdash; no research confirms additive benefit from combining precursors. Most data supports picking one.
             </p>
@@ -111,8 +111,8 @@ export default function NMNvsNRvsNiacinPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300">NR has the strongest human trial base and is generally considered the best-studied option. <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link> is comparable in efficacy but costs more and has a more uncertain regulatory future. Niacin raises <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link> at ~1% of the cost but causes flushing and has different downstream effects. All three effectively raise NAD+ &mdash; the choice comes down to budget, flush tolerance, and secondary goals.</p>
+        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-lg text-gray-600 dark:text-slate-300">NR has the strongest human trial base and is generally considered the best-studied option. <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link> is comparable in efficacy but costs more and has a more uncertain regulatory future. Niacin raises <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link> at ~1% of the cost but causes flushing and has different downstream effects. All three effectively raise NAD+ &mdash; the choice comes down to budget, flush tolerance, and secondary goals.</p>
       </div>
 
       <div className="mb-8">

@@ -72,8 +72,8 @@ export default function RetatrutideVsSemaglutidePage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300">Retatrutide is the most powerful weight loss peptide in trials so far. <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link> has the most established safety record, the only proven cardiovascular benefit in the class (SELECT trial), and the most approved indications. Retatrutide&apos;s dysesthesia signal (~21% at 12mg) is the most notable side-effect difference between the two.</p>
+        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-lg text-gray-600 dark:text-slate-300">Retatrutide is the most powerful weight loss peptide in trials so far. <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link> has the most established safety record, the only proven cardiovascular benefit in the class (SELECT trial), and the most approved indications. Retatrutide&apos;s dysesthesia signal (~21% at 12mg) is the most notable side-effect difference between the two.</p>
       </div>
 
       <div className="flex gap-3 mb-8">

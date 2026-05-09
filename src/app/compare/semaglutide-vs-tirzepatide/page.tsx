@@ -73,25 +73,25 @@ export default function SemaglutideVsTirzepatidePage() {
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">First time considering GLP-1 therapy</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">First time considering GLP-1 therapy</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Semaglutide is the most-studied option with the longest safety record (FDA-approved 2017 for diabetes, 2021 for obesity). It&apos;s the natural starting point for most patients new to this class. Available as Ozempic (diabetes), Wegovy (obesity), or Rybelsus (oral form).
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Currently on semaglutide and want stronger results</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Currently on semaglutide and want stronger results</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Tirzepatide showed about 47% greater weight loss than semaglutide in the SURMOUNT-5 head-to-head trial &mdash; roughly 22.5% body weight reduction vs 14.9% over 72 weeks. The dual GLP-1/GIP mechanism is responsible for the stronger output. Most patients who plateau on semaglutide find tirzepatide produces meaningful additional progress.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Have type 2 diabetes plus obesity</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Have type 2 diabetes plus obesity</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both are FDA-approved for both conditions. Tirzepatide has slightly stronger HbA1c reduction (~2&ndash;2.5% vs ~1&ndash;2%) and stronger weight loss. Semaglutide may be preferred where insurance coverage favors Ozempic/Wegovy. The choice often comes down to insurance approval as much as clinical efficacy.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Prioritize long-term safety data</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Prioritize long-term safety data</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Semaglutide has 8+ years of post-market data (approved 2017). Tirzepatide has 4+ years (approved 2022). For patients prioritizing the longest established safety record, semaglutide remains the first choice. Tirzepatide&apos;s safety profile so far is favorable but the body of long-term real-world data is still building.
             </p>
@@ -100,8 +100,8 @@ export default function SemaglutideVsTirzepatidePage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300">Tirzepatide produces greater average weight loss and better blood sugar control in head-to-head data. <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link> has a longer track record, broader approval history, and more long-term safety data. Both are prescription medications, but both are also widely available as research-grade peptides through specialty vendors. See <Link href="/coupons" className="text-[#0891b2] hover:underline">Verified Discount Codes</Link> for current options.</p>
+        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-lg text-gray-600 dark:text-slate-300">Tirzepatide produces greater average weight loss and better blood sugar control in head-to-head data. <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link> has a longer track record, broader approval history, and more long-term safety data. Both are prescription medications, but both are also widely available as research-grade peptides through specialty vendors. See <Link href="/coupons" className="text-[#0891b2] hover:underline">Verified Discount Codes</Link> for current options.</p>
       </div>
 
       <div className="mb-8">

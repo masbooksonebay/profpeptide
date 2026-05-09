@@ -33,9 +33,9 @@ export default function BPC157vsTB500Page() {
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">BPC-157 and TB-500 are the two most researched tissue repair peptides in the field. They&apos;re frequently used together and often compared &mdash; but they work through fundamentally different mechanisms and have distinct research profiles. This page breaks down the key differences.</p>
 
       <div className="bg-[#0891b2]/10 border border-[#0891b2]/20 rounded-xl p-5 mb-8">
-        <p className="text-sm text-[#1e2d3d] dark:text-slate-100 mb-2"><strong><Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>:</strong> Local repair specialist &mdash; strongest in gut, tendon, and CNS research</p>
-        <p className="text-sm text-[#1e2d3d] dark:text-slate-100 mb-2"><strong><Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>:</strong> Systemic healing specialist &mdash; strongest in cardiac, wound healing, and cell migration research</p>
-        <p className="text-sm text-[#1e2d3d] dark:text-slate-100"><strong>Together:</strong> Complementary &mdash; most researchers studying both use them in combination (the <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>)</p>
+        <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong><Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>:</strong> Local repair specialist &mdash; strongest in gut, tendon, and CNS research</p>
+        <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong><Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>:</strong> Systemic healing specialist &mdash; strongest in cardiac, wound healing, and cell migration research</p>
+        <p className="text-lg text-[#1e2d3d] dark:text-slate-100"><strong>Together:</strong> Complementary &mdash; most researchers studying both use them in combination (the <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>)</p>
       </div>
 
       <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
@@ -82,25 +82,25 @@ export default function BPC157vsTB500Page() {
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Site-specific injury research (tendon, ligament, gut)</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Site-specific injury research (tendon, ligament, gut)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               BPC-157 has the strongest research base for localized tissue damage. Animal studies on tendon healing, gut ulcers, and ligament tears consistently show its EGR-1-mediated mechanism delivers strong site-specific recovery. If your interest is a specific injured tissue, BPC-157 is the more direct match.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Systemic recovery, cardiac research, or whole-body wound healing</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Systemic recovery, cardiac research, or whole-body wound healing</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               TB-500&apos;s actin-binding mechanism is body-wide, making it more relevant for systemic applications. The strongest single piece of TB-500 evidence is a Nature paper on epicardial progenitor cell activation in cardiac tissue. Systemic wound healing models also favor TB-500.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Maximum tissue repair coverage (the Wolverine Stack)</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Maximum tissue repair coverage (the Wolverine Stack)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               The most-researched protocol uses both together &mdash; known informally as the <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>. Their non-overlapping mechanisms produce additive (not redundant) effects. Local + systemic. Most researchers studying both peptides use them in combination.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Neuroprotection or CNS research</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Neuroprotection or CNS research</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               BPC-157 has stronger CNS data &mdash; dopaminergic and serotonergic system modulation, nerve crush recovery models. TB-500 has CNS evidence too (oligodendrocyte differentiation, multiple sclerosis interest), but BPC-157 is more directly studied for neuroprotection.
             </p>
@@ -109,8 +109,8 @@ export default function BPC157vsTB500Page() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300"><Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link> is the local repair specialist &mdash; strongest for gut, tendon, and CNS research. <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link> is the systemic healing specialist &mdash; strongest for cardiac, wound healing, and cell migration research. Their non-overlapping mechanisms make them ideal stack partners (the <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>), which is how most serious research uses them. Neither is FDA-approved for human use; both are sold as research peptides.</p>
+        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link> is the local repair specialist &mdash; strongest for gut, tendon, and CNS research. <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link> is the systemic healing specialist &mdash; strongest for cardiac, wound healing, and cell migration research. Their non-overlapping mechanisms make them ideal stack partners (the <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>), which is how most serious research uses them. Neither is FDA-approved for human use; both are sold as research peptides.</p>
       </div>
 
       <div className="mb-8">

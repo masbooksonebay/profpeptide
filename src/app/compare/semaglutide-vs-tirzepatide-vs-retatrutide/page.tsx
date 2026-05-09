@@ -85,25 +85,25 @@ export default function TripleGLP1ComparisonPage() {
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">First-time considering GLP-1 therapy</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">First-time considering GLP-1 therapy</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Semaglutide is the most-studied option with the longest safety record (FDA-approved 2017 for diabetes, 2021 for obesity). It&apos;s the natural starting point for most patients new to this class. Available as Ozempic (diabetes), Wegovy (obesity), or Rybelsus (oral form).
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Already taking semaglutide, want stronger results</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Already taking semaglutide, want stronger results</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Tirzepatide has now beaten semaglutide head-to-head in the SURMOUNT-5 trial &mdash; about 22.5% weight loss vs 14.9%. The dual GLP-1/GIP mechanism produces more weight loss with similar tolerability. Most patients who plateau on semaglutide find tirzepatide makes meaningful additional progress.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Have type 2 diabetes plus obesity</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Have type 2 diabetes plus obesity</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               All three address both conditions, but tirzepatide currently has the strongest combined profile &mdash; FDA-approved for both diabetes (Mounjaro) and obesity (Zepbound), with HbA1c reduction of 2&ndash;2.5% and weight loss approaching 22.5%. Semaglutide is also dual-approved and may be preferred where insurance favors Ozempic/Wegovy coverage.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want maximum weight loss, willing to wait</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want maximum weight loss, willing to wait</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Retatrutide shows the most dramatic results in trials &mdash; about 24.2% weight loss at 12mg dose plus up to 86% liver fat reduction &mdash; but is not yet FDA-approved. Phase 3 TRIUMPH trials are running through 2026&ndash;2027, with approval expected in 2027 or 2028. Until then, retatrutide is only available through clinical trials.
             </p>

@@ -71,25 +71,25 @@ export default function BPC157vsGHKCuPage() {
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Gut healing, tendon repair, or CNS research</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Gut healing, tendon repair, or CNS research</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               BPC-157 is the right peptide. Its strongest research base is in localized internal tissue damage. Animal studies on tendon healing, gut ulcers, and nerve recovery consistently show BPC-157&apos;s EGR-1-mediated mechanism delivers strong site-specific repair. GHK-Cu has minimal evidence for these applications.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Skin regeneration, anti-aging, or wound healing research</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Skin regeneration, anti-aging, or wound healing research</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               GHK-Cu is the right peptide. Its tripeptide structure allows topical absorption, making it the only research peptide with serious cosmeceutical applications. Documented effects on skin elasticity, collagen synthesis, and fine line reduction are stronger than any peptide except retinol-class compounds. Often delivered as topical serums in concentrations of 1&ndash;3%.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comprehensive tissue repair (internal + external)</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comprehensive tissue repair (internal + external)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Some research protocols use both. BPC-157 addresses internal/structural tissue damage; GHK-Cu handles skin/external healing. The combination is sometimes used for athletes recovering from surgery (internal tissue with BPC-157, scar tissue with topical GHK-Cu). Mechanisms don&apos;t overlap, so combined effects are likely additive.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Topical-only application</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Topical-only application</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               GHK-Cu is the only realistic option here. BPC-157 is poorly absorbed transdermally and is ineffective when applied topically. GHK-Cu is the only research peptide with established topical bioavailability and proven cosmeceutical effects. Standard form: copper peptide serum applied to clean skin daily.
             </p>
@@ -98,8 +98,8 @@ export default function BPC157vsGHKCuPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300"><Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link> is the broader systemic repair peptide &mdash; strongest for gut, tendons, and CNS. <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link> is the skin and wound healing specialist &mdash; particularly valuable for topical applications and anti-aging. They don&apos;t overlap significantly and can be studied together for comprehensive tissue repair protocols.</p>
+        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link> is the broader systemic repair peptide &mdash; strongest for gut, tendons, and CNS. <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link> is the skin and wound healing specialist &mdash; particularly valuable for topical applications and anti-aging. They don&apos;t overlap significantly and can be studied together for comprehensive tissue repair protocols.</p>
       </div>
 
       <div className="mb-8">

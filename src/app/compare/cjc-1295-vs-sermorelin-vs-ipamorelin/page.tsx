@@ -68,25 +68,25 @@ export default function CJCvsSermorelinvsIpamorelinPage() {
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Standard GH peptide research starting point</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Standard GH peptide research starting point</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               The CJC-1295 (no DAC) + Ipamorelin stack is the most-studied combination and the typical starting point. CJC-1295 no-DAC has a ~30 minute half-life (matching natural pulse pattern) and Ipamorelin is the cleanest GHRP (no cortisol or prolactin elevation). Usually dosed 2&ndash;3x daily, with bedtime dose being most important.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Convenience-focused (longer dosing intervals)</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Convenience-focused (longer dosing intervals)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               CJC-1295 with DAC has a 6&ndash;8 day half-life, allowing 1&ndash;2 weekly injections instead of daily. The trade-off is loss of pulsatile pattern &mdash; sustained GHRH activation rather than mimicking natural pulses. Some researchers consider this less physiological.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Mimicking natural GHRH most closely</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Mimicking natural GHRH most closely</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Sermorelin matches natural GHRH almost exactly (it&apos;s the first 29 amino acids of natural GHRH). Half-life is short (~10&ndash;15 min), pulse pattern is the most physiological of the three. Sermorelin is also the only one with FDA-recognized compounded use for GH deficiency. Best choice for research models prioritizing physiological fidelity.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Maximum GH output</h3>
+            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Maximum GH output</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               The CJC-1295 (with DAC) + Ipamorelin stack produces the strongest sustained GH elevation in research. The DAC version provides constant GHRH signal while Ipamorelin amplifies pulses. Used in research interested in maximum output rather than physiological pulse pattern.
             </p>
@@ -95,8 +95,8 @@ export default function CJCvsSermorelinvsIpamorelinPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300"><Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link> is the most established with the longest clinical history. <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link> offers longer half-life and stronger GH output. <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link> is almost never used alone &mdash; its value is as a GHRP to complement a GHRH analog like CJC-1295 or Sermorelin, creating synergistic GH release through dual receptor activation. The CJC-1295 + Ipamorelin stack is the most commonly researched combination.</p>
+        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link> is the most established with the longest clinical history. <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link> offers longer half-life and stronger GH output. <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link> is almost never used alone &mdash; its value is as a GHRP to complement a GHRH analog like CJC-1295 or Sermorelin, creating synergistic GH release through dual receptor activation. The CJC-1295 + Ipamorelin stack is the most commonly researched combination.</p>
       </div>
 
       <div className="mb-8">
