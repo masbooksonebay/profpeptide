@@ -137,35 +137,35 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Semaglutide is administered as a once-weekly subcutaneous injection (Wegovy/Ozempic) or as a daily oral tablet (Rybelsus, for type 2 diabetes only). Injectable dosing escalates every 4 weeks to allow the body to adapt and minimize gastrointestinal side effects.
         </p>
         <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
           Wegovy (weight management) escalation schedule:
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 1–4: 0.25 mg once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 5–8: 0.5 mg once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 9–12: 1.0 mg once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 13–16: 1.7 mg once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 17+: 2.4 mg once weekly (maintenance dose)</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 1–4: 0.25 mg once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 5–8: 0.5 mg once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 9–12: 1.0 mg once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 13–16: 1.7 mg once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 17+: 2.4 mg once weekly (maintenance dose)</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Most users continue increasing through the schedule until they reach the 2.4 mg maintenance dose or hit dose-limiting side effects. Holding at a current dose for an additional 4 weeks if side effects are difficult to tolerate is standard practice. The 1.7 mg dose is sometimes used as the long-term maintenance dose if the 2.4 mg dose is poorly tolerated.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           For type 2 diabetes (Ozempic), the maximum approved dose is 2.0 mg weekly. The escalation is similar: 0.25 → 0.5 → 1.0 → 2.0 mg, with each step lasting at least 4 weeks.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Rybelsus (oral semaglutide) is approved only for type 2 diabetes. Doses are 3 mg, 7 mg, or 14 mg taken once daily on an empty stomach with no more than 4 oz of plain water, then waiting at least 30 minutes before eating. Oral bioavailability is low (about 1%), which is why the doses are larger than the injectable form.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The medication has a half-life of about 7 days, supporting once-weekly dosing with steady state reached in about 4 weeks at each dose level. Dose adjustments aren&apos;t typically needed for kidney or liver impairment, though dehydration from GI side effects can affect kidney function and should be monitored.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           For research-grade semaglutide outside FDA-approved use, dosing protocols mirror the approved schedule. There are no separate research-grade dosing standards.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -182,14 +182,14 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — most common side effect, especially during dose escalation. Affects 44% of users in trials, mostly in the first few weeks.</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Diarrhea — affects 30% of users</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Vomiting — affects 24%</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Constipation — affects 24%</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Abdominal pain — affects 20%</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Headache — common, often related to reduced food intake or dehydration</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Fatigue — common in first few weeks</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Decreased appetite — expected effect, sometimes excessive</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — most common side effect, especially during dose escalation. Affects 44% of users in trials, mostly in the first few weeks.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Diarrhea — affects 30% of users</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Vomiting — affects 24%</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Constipation — affects 24%</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Abdominal pain — affects 20%</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache — common, often related to reduced food intake or dehydration</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Fatigue — common in first few weeks</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Decreased appetite — expected effect, sometimes excessive</li>
           </ol>
         </div>
         <div>
@@ -197,12 +197,12 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Indigestion and acid reflux — common in the first weeks</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Belching and bloating</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Dizziness — typically mild, often related to dehydration or rapid weight loss</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hair shedding — reported during rapid weight loss phases (similar to other rapid-weight-loss interventions)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild liver enzyme elevations — usually resolve without intervention</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hypoglycemia — primarily when combined with insulin or sulfonylureas in users with diabetes</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Indigestion and acid reflux — common in the first weeks</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Belching and bloating</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Dizziness — typically mild, often related to dehydration or rapid weight loss</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hair shedding — reported during rapid weight loss phases (similar to other rapid-weight-loss interventions)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild liver enzyme elevations — usually resolve without intervention</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hypoglycemia — primarily when combined with insulin or sulfonylureas in users with diabetes</li>
           </ol>
         </div>
         <div>
@@ -210,16 +210,16 @@ const sections = [
             Serious (rare — call a doctor)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Pancreatitis — rare but reported. Symptoms: severe abdominal pain radiating to the back, persistent vomiting, fever</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Gallbladder problems — risk of cholelithiasis (gallstones) ~2% in trials. Symptoms: severe pain in upper right abdomen, jaundice, fever</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare. Symptoms: difficulty breathing, swelling of face/throat, hives</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Thyroid C-cell tumors — observed in rats; not confirmed in humans. Semaglutide carries a boxed warning. Tell your doctor if you have a personal or family history of medullary thyroid carcinoma or MEN-2 syndrome</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Acute kidney injury — risk increases if severe vomiting/diarrhea cause dehydration</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Diabetic retinopathy worsening — observed in some users with pre-existing retinopathy and rapid blood sugar improvement</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Suicidal ideation — investigated by FDA; no causal relationship established but reported in post-market surveillance</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pancreatitis — rare but reported. Symptoms: severe abdominal pain radiating to the back, persistent vomiting, fever</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Gallbladder problems — risk of cholelithiasis (gallstones) ~2% in trials. Symptoms: severe pain in upper right abdomen, jaundice, fever</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare. Symptoms: difficulty breathing, swelling of face/throat, hives</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Thyroid C-cell tumors — observed in rats; not confirmed in humans. Semaglutide carries a boxed warning. Tell your doctor if you have a personal or family history of medullary thyroid carcinoma or MEN-2 syndrome</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Acute kidney injury — risk increases if severe vomiting/diarrhea cause dehydration</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Diabetic retinopathy worsening — observed in some users with pre-existing retinopathy and rapid blood sugar improvement</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Suicidal ideation — investigated by FDA; no causal relationship established but reported in post-market surveillance</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           About 5% of trial participants discontinued semaglutide due to side effects. SURMOUNT-5 reported slightly higher discontinuation rates with semaglutide (5.6%) than tirzepatide (2.7%) due to GI events. Semaglutide carries a boxed warning for thyroid C-cell tumors based on rodent studies; this risk in humans is not established but is the basis for not using semaglutide in users with personal or family history of medullary thyroid carcinoma.
         </p>
       </div>
@@ -282,13 +282,13 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Semaglutide is FDA-approved for type 2 diabetes (Ozempic, December 2017), oral type 2 diabetes (Rybelsus, September 2019), chronic weight management in adults (Wegovy, June 2021), chronic weight management in adolescents 12+ (Wegovy expansion, December 2022), cardiovascular risk reduction in adults with obesity and established cardiovascular disease (Wegovy expansion, March 2024), kidney disease in type 2 diabetes (Ozempic expansion, 2025), and HFpEF (Wegovy expansion, 2024). It is also approved by the European Medicines Agency (EMA) and by regulators in most major markets.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Long-term safety data extends to about 4 years for some users in extension trials of SELECT. The thyroid C-cell tumor signal observed in rats has not been confirmed in humans and is the basis for the boxed warning rather than a documented human risk. Post-market surveillance has investigated reports of suicidal ideation; no causal relationship has been established.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade semaglutide sold by specialty peptide vendors is intended for laboratory research use only and is not approved for human consumption. The World Anti-Doping Agency prohibits semaglutide and other GLP-class drugs in sport. Pricing varies by formulation and insurance coverage; brand-name retail in the US runs roughly $1,000–$1,400 per month without insurance.
         </p>
       </div>
@@ -304,7 +304,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -317,7 +317,7 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wilding JPH, Batterham RL, Calanna S, et al. Once-Weekly Semaglutide in Adults with Overweight or Obesity (STEP 1). N Engl J Med. 2021;384:989-1002.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2032183"
@@ -328,7 +328,7 @@ const sections = [
             https://www.nejm.org/doi/full/10.1056/NEJMoa2032183
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wadden TA, Bailey TS, Billings LK, et al. Effect of Subcutaneous Semaglutide vs Placebo as an Adjunct to Intensive Behavioral Therapy on Body Weight in Adults with Overweight or Obesity (STEP 3). JAMA. 2021;325(14):1403-1413.{" "}
           <a
             href="https://pubmed.ncbi.nlm.nih.gov/33625476/"
@@ -339,7 +339,7 @@ const sections = [
             https://pubmed.ncbi.nlm.nih.gov/33625476/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lincoff AM, Brown-Frandsen K, Colhoun HM, et al. Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes (SELECT). N Engl J Med. 2023;389:2221-2232.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2307563"
@@ -350,7 +350,7 @@ const sections = [
             https://www.nejm.org/doi/full/10.1056/NEJMoa2307563
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Aronne LJ, Horn DB, le Roux CW, et al. Tirzepatide as Compared with Semaglutide for the Treatment of Obesity (SURMOUNT-5). N Engl J Med. 2025.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2502212"
@@ -361,7 +361,7 @@ const sections = [
             https://www.nejm.org/doi/full/10.1056/NEJMoa2502212
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kushner RF, Calanna S, Davies M, et al. Semaglutide 2.4 mg for the Treatment of Obesity: Key Elements of the STEP Trials 1 to 5. Obesity. 2020;28(6):1050-1061.{" "}
           <a
             href="https://pubmed.ncbi.nlm.nih.gov/32441890/"
@@ -372,7 +372,7 @@ const sections = [
             https://pubmed.ncbi.nlm.nih.gov/32441890/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Colhoun HM, Lingvay I, Brown PM, et al. Long-term Kidney Outcomes of Semaglutide in Obesity and Cardiovascular Disease in the SELECT trial. Nat Med. 2024.{" "}
           <a
             href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11271413/"
@@ -383,7 +383,7 @@ const sections = [
             https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11271413/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Weghuber D, Barrett T, Barrientos-Pérez M, et al. Once-Weekly Semaglutide in Adolescents with Obesity (STEP TEENS). N Engl J Med. 2022;387:2245-2257.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2208601"
@@ -394,7 +394,7 @@ const sections = [
             https://www.nejm.org/doi/full/10.1056/NEJMoa2208601
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kosiborod MN, Abildstrøm SZ, Borlaug BA, et al. Semaglutide in Patients with Heart Failure with Preserved Ejection Fraction and Obesity (STEP-HFpEF). N Engl J Med. 2023;389:1069-1084.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2306963"
@@ -413,7 +413,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -424,7 +424,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -459,7 +459,7 @@ export default function SemaglutidePage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Semaglutide is an FDA-approved peptide for type 2 diabetes (sold as Ozempic), chronic weight management (sold as Wegovy), and oral type 2 diabetes treatment (sold as Rybelsus). It works by mimicking GLP-1, a hormone the body naturally produces after eating. Approved in 2017 for diabetes and 2021 for obesity, it has the longest safety record and largest body of clinical evidence of any GLP-class medication.
           </p>
           <div>
@@ -467,29 +467,29 @@ export default function SemaglutidePage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Average 14.9% body weight loss over 68 weeks at the 2.4 mg dose (STEP 1 trial)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">20% reduction in major adverse cardiovascular events in adults with obesity and established heart disease (SELECT trial)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Lower blood sugar and A1C in type 2 diabetes (1–2% reduction)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduced appetite and slower stomach emptying</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Slowed progression of kidney disease in users with diabetes</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">73% reduction in new diabetes diagnoses in SELECT participants without diabetes at baseline</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Average 14.9% body weight loss over 68 weeks at the 2.4 mg dose (STEP 1 trial)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">20% reduction in major adverse cardiovascular events in adults with obesity and established heart disease (SELECT trial)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Lower blood sugar and A1C in type 2 diabetes (1–2% reduction)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduced appetite and slower stomach emptying</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Slowed progression of kidney disease in users with diabetes</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">73% reduction in new diabetes diagnoses in SELECT participants without diabetes at baseline</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> FDA-approved dosing for weight management starts at 0.25 mg once weekly and escalates every 4 weeks (0.25 → 0.5 → 1.0 → 1.7 → 2.4 mg) up to a maximum of 2.4 mg weekly. For type 2 diabetes (Ozempic), maximum dose is 2.0 mg weekly. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for the full schedule.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Semaglutide is available by prescription as Ozempic (diabetes), Wegovy (weight loss), or Rybelsus (oral diabetes) through licensed pharmacies. Research-grade semaglutide is also widely available through specialty peptide vendors with verified discount codes. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=metabolic+weight+loss+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -508,12 +508,12 @@ export default function SemaglutidePage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

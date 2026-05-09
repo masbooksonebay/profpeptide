@@ -27,7 +27,7 @@ export default function BCAAsPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             BCAAs (branched-chain amino acids) are three essential amino acids — leucine, isoleucine, and valine — named for their branched chemical structure. They constitute approximately 35% of the essential amino acids in muscle protein and are unique in being metabolized primarily in muscle rather than the liver, making them directly available as fuel during exercise. Leucine is the most important of the three — it is the primary activator of mTOR, the master regulator of muscle protein synthesis. BCAA supplements have been intensely marketed for decades, and while the underlying science is solid, the practical benefit depends heavily on context. For people already consuming adequate total protein (1.6–2.2g/kg/day from complete protein sources like whey, meat, or eggs), additional BCAAs provide minimal incremental benefit. BCAAs are most valuable in specific scenarios: fasted training, caloric restriction, vegan diets with incomplete proteins, or very prolonged exercise.
           </p>
         </div>
@@ -56,14 +56,14 @@ export default function BCAAsPage() {
               "Anti-Catabolic Effects — During prolonged exercise or caloric restriction, BCAAs reduce muscle protein breakdown by providing alternative fuel for muscle cells and signaling anti-catabolic pathways, reducing the net loss of muscle tissue.",
               "Central Fatigue Reduction — Tryptophan competes with BCAAs for transport across the blood-brain barrier. During prolonged exercise, as BCAA levels drop and tryptophan rises, more tryptophan enters the brain and is converted to serotonin — contributing to fatigue. Supplementing BCAAs may compete with tryptophan uptake, reducing central fatigue.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Meta-analyses show BCAAs reduce delayed onset muscle soreness (DOMS) and markers of muscle damage following resistance exercise. Leucine specifically has been shown to maximally stimulate muscle protein synthesis at 2–3g per dose. However, research also shows that whey protein (which contains BCAAs plus other essential amino acids) produces greater muscle protein synthesis than equivalent doses of BCAAs alone — confirming that BCAAs work best as part of a complete protein rather than in isolation. The case for BCAAs is strongest in fasted states, plant-based diets, and prolonged endurance activities.
           </p>
         </div>
@@ -77,14 +77,14 @@ export default function BCAAsPage() {
               "Ratio: Common ratios are 2:1:1 (leucine:isoleucine:valine) — higher leucine ratios (4:1:1) may be more effective for muscle protein synthesis",
               "Most effective when: Training fasted, following a plant-based diet, in a caloric deficit, or during prolonged exercise without access to whole food protein",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Extremely safe — BCAAs are amino acids found in all protein foods. No known toxicity at supplemental doses. May cause mild GI upset at high doses. Note: If consuming adequate complete protein from food or whey, additional BCAA supplements provide limited additional benefit — whole protein sources are superior and more cost-effective.
           </p>
         </div>
@@ -101,7 +101,7 @@ export default function BCAAsPage() {
               "Wolfe RR. Branched-chain amino acids and muscle protein synthesis in humans: myth or reality? J Int Soc Sports Nutr. 2017.",
               "Plotkin DL, et al. Isolated Leucine and Branched-Chain Amino Acid Supplementation for Enhancing Muscular Strength and Hypertrophy: A Narrative Review. Int J Sport Nutr Exerc Metab. 2021.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

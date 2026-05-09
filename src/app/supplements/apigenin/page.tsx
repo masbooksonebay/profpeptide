@@ -60,7 +60,7 @@ export default function ApigeninPage() {
       <div className="space-y-8">
         <div className="rounded-xl p-5 bg-[#0891b2]/10 border border-[#0891b2]/20">
           <p className="text-xs font-semibold uppercase tracking-wider text-[#0891b2] mb-2">Quick Answer</p>
-          <p className="text-sm text-gray-700 dark:text-slate-200 leading-relaxed">
+          <p className="text-lg text-gray-700 dark:text-slate-200 leading-relaxed">
             Apigenin is a flavonoid found in chamomile, parsley, celery, and citrus fruits. It&apos;s the active compound thought to give chamomile tea its calming, sleep-promoting effect. Apigenin binds to the benzodiazepine site on GABA-A receptors — the same receptor system targeted by anti-anxiety medications — but as a partial agonist, meaning it produces calming effects without the dependence or withdrawal seen with prescription benzodiazepines. Apigenin also inhibits CD38, an enzyme that consumes NAD+, giving it a secondary longevity-relevant mechanism. Human evidence is largely from chamomile extract studies; standalone apigenin extracts are newer and less studied.
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function ApigeninPage() {
           <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-slate-400 mb-3">Key Facts</p>
           <ul className="space-y-2">
             {keyFacts.map((f) => (
-              <li key={f.label} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+              <li key={f.label} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                 <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">{f.label}:</span> {f.value}
               </li>
             ))}
@@ -78,80 +78,80 @@ export default function ApigeninPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What does apigenin do?</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Apigenin is a plant flavonoid — one of thousands of polyphenolic compounds plants produce. Its concentration in foods is highest in dried chamomile flowers (the source of chamomile tea), parsley, celery, and citrus peels.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             The most-studied mechanism for apigenin&apos;s calming effect is binding at the benzodiazepine site of GABA-A receptors. GABA is the brain&apos;s primary inhibitory neurotransmitter — when GABA-A receptors are activated, neuronal firing slows, producing the calming effect we associate with anti-anxiety medications and sleep aids. Apigenin is a partial agonist at this site, meaning it activates the receptor less fully than benzodiazepines do. This partial activation appears to be enough to produce mild calming and sleep-supporting effects without the dependence, tolerance, and withdrawal characteristic of prescription benzodiazepines.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A second mechanism that&apos;s gained attention: apigenin inhibits CD38, an enzyme that breaks down NAD+. NAD+ is a coenzyme essential for cellular energy metabolism, and NAD+ levels decline with age. By inhibiting CD38, apigenin may help preserve NAD+ levels — a connection to the broader longevity supplement category.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the research shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             The apigenin evidence base is heterogeneous. The strongest data comes from chamomile extract studies, where apigenin is the principal active flavonoid:
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Chamomile extract has shown anxiolytic effects in randomized controlled trials in adults with generalized anxiety disorder. Effects on sleep have been reported in older adults, with chamomile extract improving sleep quality measures over several weeks of supplementation.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Animal studies on isolated apigenin show sedative and anxiolytic effects via the GABAergic pathway, with sedative effects blocked by flumazenil — confirming the benzodiazepine-site mechanism. Multiple animal models also show reduced anxiety-like behavior at doses comparable to typical human supplementation when scaled.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             CD38/NAD+ research is largely preclinical. In animal models, apigenin elevates NAD+ levels and improves markers of metabolic health. Translation to human longevity outcomes has not been demonstrated in controlled trials.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Honest caveats:</span> most evidence on isolated apigenin (rather than chamomile extract) is from animal studies or in vitro work. The 50 mg evening dose that&apos;s become popular online is not directly validated by large human RCTs of pure apigenin — it&apos;s extrapolated from animal dosing and chamomile extract data. Direct human trials of standalone apigenin for sleep are limited.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Considerations and unknowns</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Source matters significantly.</span> Most commercial apigenin supplements are derived from chamomile extract concentrated to a stated apigenin percentage (often 98%). Some are synthetic. Quality varies, and independent testing has occasionally found products with much less apigenin than the label claims.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Apigenin is poorly water-soluble. Bioavailability of oral apigenin is modest, and taking it with a small amount of dietary fat (such as a few nuts or a teaspoon of olive oil) may improve absorption.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Drug interactions:</span> apigenin can inhibit several cytochrome P450 enzymes (CYP2C9, CYP3A4 in particular). This can theoretically affect blood levels of medications metabolized by these enzymes, including blood thinners, some statins, and certain antidepressants. Anyone on prescription medications should check with a doctor before adding apigenin.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Pregnancy:</span> chamomile (and by extension apigenin) has historically been associated with concerns about uterine activity at very high doses. Pregnant women should avoid concentrated apigenin supplements and consult their healthcare provider before use.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             People with asteraceae allergies (ragweed, daisies, chrysanthemums) may have allergic reactions to chamomile-derived apigenin.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The CD38/NAD+ longevity story is mechanistically interesting but largely unproven in humans. Treating apigenin as a sleep aid with a possible longevity bonus is more honest than treating it as a longevity intervention with sleep benefits.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">How to evaluate quality</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Apigenin supplements vary substantially in actual content vs. label claim. Quality markers help.
           </p>
           <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Look for products that:</p>
           <ul className="list-disc list-inside space-y-1 mb-3">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">State the apigenin percentage clearly (98%+ apigenin extracts are most commonly studied)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Specify the source (chamomile extract is the conventional source; synthetic versions exist)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Are third-party tested for content accuracy and contaminants</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Are produced in cGMP-certified facilities</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Provide a Certificate of Analysis (COA) on request</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Use 50 mg or comparable doses per capsule (matching the typical evening protocol)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">State the apigenin percentage clearly (98%+ apigenin extracts are most commonly studied)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Specify the source (chamomile extract is the conventional source; synthetic versions exist)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Are third-party tested for content accuracy and contaminants</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Are produced in cGMP-certified facilities</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Provide a Certificate of Analysis (COA) on request</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Use 50 mg or comparable doses per capsule (matching the typical evening protocol)</li>
           </ul>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Avoid:</span> proprietary blends that don&apos;t disclose the actual apigenin amount, products with implausibly low prices for high-concentration extracts, and products without third-party verification.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Where to Buy</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Apigenin is available primarily as standalone extract supplements (often 50 mg capsules) and as chamomile extract products that may or may not standardize to apigenin content. For verified high-apigenin extracts, online supplement retailers offer the widest selection.
           </p>
           <a href={amazonHref} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm inline-block">
@@ -165,7 +165,7 @@ export default function ApigeninPage() {
             {faqs.map((f, i) => (
               <div key={i}>
                 <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
-                <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
+                <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
               </div>
             ))}
           </div>

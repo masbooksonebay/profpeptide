@@ -27,7 +27,7 @@ export default function RhodiolaRoseaPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Rhodiola rosea is a flowering plant that grows in cold, mountainous regions of Europe and Asia — particularly Siberia and Scandinavia — where it has been used in traditional medicine for centuries to increase endurance, reduce fatigue, and enhance resilience to physical and mental stress. It belongs to a class of herbs called adaptogens — natural compounds that help the body adapt to stressors by normalizing physiological processes without causing excessive stimulation or sedation. Rhodiola&apos;s primary bioactive compounds — rosavins and salidroside — modulate the stress response through multiple pathways including HPA axis regulation, monoamine neurotransmitter modulation, and antioxidant effects. It has one of the most consistent evidence bases of any adaptogen for reducing mental fatigue, improving cognitive performance under stress, and enhancing physical endurance. It is distinctly different from stimulants — it works by improving stress resilience rather than forcing arousal.
           </p>
         </div>
@@ -59,14 +59,14 @@ export default function RhodiolaRoseaPage() {
               "Antioxidant Effects — Rhodiola reduces oxidative stress in neural and muscle tissue, protecting against the cellular damage caused by physical and mental exertion.",
               "Serotonin Transport Inhibition — Rhodiola inhibits serotonin reuptake transporters, contributing to antidepressant-like effects documented in clinical trials.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A landmark RCT by Spasov et al. in medical students during exam stress found Rhodiola significantly improved physical fitness, mental fatigue, and neuromotor function vs. placebo. A 2009 RCT found Rhodiola significantly reduced symptoms of burnout in stressed physicians and nurses. A meta-analysis of 11 studies confirmed significant reductions in physical and mental fatigue with Rhodiola supplementation. A 2015 RCT compared Rhodiola to sertraline (Zoloft) in mild-to-moderate depression — Rhodiola showed fewer adverse effects and was similarly effective for some measures of depression. Exercise research shows Rhodiola improves time to exhaustion and reduces perceived exertion at doses taken acutely before exercise.
           </p>
         </div>
@@ -80,14 +80,14 @@ export default function RhodiolaRoseaPage() {
               "Cycling: Some practitioners recommend 5 days on, 2 days off to maintain sensitivity",
               "Duration: Both acute (single dose before stress) and chronic (daily for burnout/fatigue) protocols are supported by research",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Generally well tolerated. Most common side effects are mild — irritability, insomnia, or restlessness if taken too late in the day. Stimulating at higher doses for some individuals. May interact with antidepressants and blood pressure medications. Not recommended during pregnancy. Quality varies significantly between products — standardized extracts are essential.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function RhodiolaRoseaPage() {
               "Spasov AA, et al. A double-blind, placebo-controlled pilot study of the stimulating and adaptogenic effect of Rhodiola rosea SHR-5 extract on the fatigue of students caused by stress during an examination period. Phytomedicine. 2000.",
               "Anghelescu IG, et al. Stress management and the role of Rhodiola rosea: a review. Int J Psychiatry Clin Pract. 2018.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

@@ -126,21 +126,21 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Epitalon is administered as a subcutaneous injection in cycles. The standard Russian protocol uses 10–20 day intensive cycles followed by extended breaks.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard cycle: 5–10 mg total dose per cycle, divided as 0.5–1 mg subcutaneously daily for 10–20 days.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle frequency: 2–4 cycles per year, with 2–6 months between cycles.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Time of day: bedtime preferred (aligns with pineal/melatonin pathway).</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reconstitution: 10 mg vial + 2 mL bacteriostatic water = 5 mg/mL.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Lifelong cycling protocols are common in Russian gerontology contexts.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Some users do oral (sublingual) protocols, though evidence for oral bioavailability is limited.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard cycle: 5–10 mg total dose per cycle, divided as 0.5–1 mg subcutaneously daily for 10–20 days.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle frequency: 2–4 cycles per year, with 2–6 months between cycles.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Time of day: bedtime preferred (aligns with pineal/melatonin pathway).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reconstitution: 10 mg vial + 2 mL bacteriostatic water = 5 mg/mL.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Lifelong cycling protocols are common in Russian gerontology contexts.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Some users do oral (sublingual) protocols, though evidence for oral bioavailability is limited.</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           The single 10–20 day intensive cycle followed by 2–6 month break is the standard pattern. Cycling rather than continuous use is the conventional approach.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -157,8 +157,8 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Occasional vivid dreams or mild sleep changes during cycles</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Occasional vivid dreams or mild sleep changes during cycles</li>
           </ol>
         </div>
         <div>
@@ -166,8 +166,8 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue</li>
           </ol>
         </div>
         <div>
@@ -175,11 +175,11 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No major adverse events documented in Russian cohort research over 20+ years</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical telomerase activation concern in cancer contexts</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No major adverse events documented in Russian cohort research over 20+ years</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical telomerase activation concern in cancer contexts</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Epitalon has one of the cleanest safety profiles of any peptide on Prof. Peptide, supported by decades of Russian human use under research conditions. NOT FDA-approved. Cancer patients should consult their oncologist before use given the theoretical concern about telomerase activation in cancer cells.
         </p>
       </div>
@@ -235,16 +235,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Epitalon is NOT FDA-approved. The bulk of clinical evidence comes from Russian gerontology research (Khavinson and colleagues, St. Petersburg Institute of Bioregulation and Gerontology). The long duration of this research is unmatched, but methodology differs from Western RCT standards and has not been independently replicated.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The telomerase activation mechanism is the most scientifically interesting claim but also the least replicated outside Khavinson&apos;s group. Skepticism regarding the strength of telomere-lengthening claims is warranted; supportive citations exist but cross-validation is limited.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade material is sold by specialty peptide vendors in the US. Quality varies dramatically; verify Certificate of Analysis.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Anti-doping: Epitalon is NOT currently on the WADA prohibited list. The Russian human cohort data is the strongest evidence available for Epitalon&apos;s longevity claims; long-term safety appears excellent in this dataset.
         </p>
       </div>
@@ -260,7 +260,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -273,28 +273,28 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khavinson VK, Bondarev IE, Butyugov AA. Epithalon peptide induces telomerase activity and telomere elongation in human somatic cells. Bull Exp Biol Med. 2003;135(6):590-2.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Anisimov VN, Khavinson VK. Peptide bioregulation of aging: results and prospects. Biogerontology. 2010;11(2):139-49.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khavinson VK, Morozov VG. Peptides of pineal gland and thymus prolong human life. Neuro Endocrinol Lett. 2003;24(3-4):233-40.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khavinson VK. Peptides and Ageing. Neuro Endocrinol Lett. 2002;23(Suppl 3):11-144.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/12624164/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/12624164/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Epithalon.{" "}
           <a href="https://en.wikipedia.org/wiki/Epithalon" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/Epithalon
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khavinson VK. Tetrapeptide stimulating the functional activity of pinealocytes, geroprotective composition based thereon and a method of its application. (Khavinson lab patent reference)
         </li>
       </ol>
@@ -305,7 +305,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -316,7 +316,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -351,7 +351,7 @@ export default function EpitalonPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Epitalon is a synthetic tetrapeptide (alanine-glutamate-aspartate-glycine, AEDG) developed in the 1980s by Vladimir Khavinson at the St. Petersburg Institute of Bioregulation and Gerontology. It was synthesized as a short-peptide analog of epithalamin, a natural pineal gland extract that Khavinson and colleagues studied for decades in Soviet-era gerontology research. Epitalon&apos;s most-cited mechanism is telomerase activation, which extends the protective telomere caps on chromosomes — a process linked to cellular aging. Russian gerontology research (multi-decade cohort studies) reported reduced mortality and improved age-related markers in elderly subjects taking Epitalon. The Khavinson research has not been replicated in Western clinical trials, but the long-term Russian human data is among the most extensive available for any anti-aging peptide. Epitalon ranks #15 in Google Trends for most-searched peptides (Feb 2026).
           </p>
           <div>
@@ -359,29 +359,29 @@ export default function EpitalonPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Telomerase activation and telomere lengthening (cell culture and animal evidence)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Restoration of melatonin rhythm in aging</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved circadian function</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduced age-related cellular dysfunction (Russian cohort data)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Anti-aging gene expression modulation</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Pineal gland support</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Telomerase activation and telomere lengthening (cell culture and animal evidence)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Restoration of melatonin rhythm in aging</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improved circadian function</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduced age-related cellular dysfunction (Russian cohort data)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anti-aging gene expression modulation</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pineal gland support</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Subcutaneous injection: 5–10 mg per cycle, divided over 10–20 days (typically 0.5–1 mg/day). Cycle: 10–20 day intensive course, 2–6 months between cycles. Some users do 2–4 cycles per year. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Epitalon is not FDA-approved and is sold by specialty research peptide vendors. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=longevity+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -400,12 +400,12 @@ export default function EpitalonPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

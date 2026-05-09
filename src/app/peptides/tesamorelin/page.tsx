@@ -126,20 +126,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tesamorelin is administered as a subcutaneous injection in the abdomen. The current FDA-approved formulations differ in dose and reconstitution requirements.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Egrifta WR (current FDA-approved formulation): 1.28 mg subcutaneously once daily, abdominal injection. 11.6 mg vials, weekly reconstitution.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Egrifta SV (prior FDA-approved formulation, still available): 1.4 mg subcutaneously once daily, abdominal injection. 2 mg vials, daily reconstitution.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Original Egrifta (discontinued): 2 mg subcutaneously once daily.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Research-grade dosing: typically 1–2 mg subcutaneously per day</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: FDA labeling supports continuous use; assess risk/benefit at 26 weeks if no VAT reduction observed</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Egrifta WR (current FDA-approved formulation): 1.28 mg subcutaneously once daily, abdominal injection. 11.6 mg vials, weekly reconstitution.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Egrifta SV (prior FDA-approved formulation, still available): 1.4 mg subcutaneously once daily, abdominal injection. 2 mg vials, daily reconstitution.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Original Egrifta (discontinued): 2 mg subcutaneously once daily.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Research-grade dosing: typically 1–2 mg subcutaneously per day</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: FDA labeling supports continuous use; assess risk/benefit at 26 weeks if no VAT reduction observed</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Tesamorelin is dosed once daily and not titrated up — the dose is fixed across patients. Injection should always be in the abdomen (not thigh or upper arm), with site rotation across different abdominal areas. Avoid scar tissue, bruises, and the navel.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -156,9 +156,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Arthralgia (joint pain) — common with sustained GH elevation</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Pain in extremities, peripheral edema, myalgia</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Arthralgia (joint pain) — common with sustained GH elevation</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pain in extremities, peripheral edema, myalgia</li>
           </ol>
         </div>
         <div>
@@ -166,9 +166,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild glucose intolerance / elevated fasting glucose</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Carpal tunnel-like symptoms (numbness, tingling)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hypersensitivity reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild glucose intolerance / elevated fasting glucose</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Carpal tunnel-like symptoms (numbness, tingling)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hypersensitivity reactions</li>
           </ol>
         </div>
         <div>
@@ -176,12 +176,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Anti-tesamorelin IgG antibodies developed in 56–85% of patients in Phase 3 — did not eliminate efficacy but caused hypersensitivity reactions in some patients</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hyperglycemia / new-onset diabetes — monitor glucose during therapy</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing or active malignancy — discontinue if recurrent malignancy detected</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anti-tesamorelin IgG antibodies developed in 56–85% of patients in Phase 3 — did not eliminate efficacy but caused hypersensitivity reactions in some patients</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hyperglycemia / new-onset diabetes — monitor glucose during therapy</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing or active malignancy — discontinue if recurrent malignancy detected</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tesamorelin has the strongest documented safety profile of any GHRH analog because of completed Phase 3 trials and ongoing FDA post-marketing surveillance. Long-term cardiovascular safety has not been established. Tesamorelin is contraindicated in pregnancy (causes fetal harm in animal models), in patients with disrupted hypothalamic-pituitary axis, in active malignancy, and in those with hypersensitivity to tesamorelin.
         </p>
       </div>
@@ -240,19 +240,19 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tesamorelin (brand names Egrifta, Egrifta SV, Egrifta WR) is FDA-approved for reduction of excess abdominal fat in HIV-infected patients with lipodystrophy. ALL OTHER USES ARE OFF-LABEL. The drug is not indicated for general weight loss management — it has weight-neutral effect (visceral fat reduction without total weight loss).
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Long-term cardiovascular safety has not been established. The FDA labeling specifically notes that long-term cardiovascular outcomes data is absent and patients should have risk/benefit reassessed if visceral fat is not reduced by 26 weeks.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tesamorelin is contraindicated in pregnancy (causes fetal harm — hydrocephaly in rat offspring at 2–4x clinical dose). It is also contraindicated in patients with disrupted hypothalamic-pituitary axis and active malignancy.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The European Medicines Agency initially authorized tesamorelin in 2014 but the marketing authorization was subsequently withdrawn by the sponsor.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency prohibits tesamorelin in sport under Section S2 (peptide hormones).
         </p>
       </div>
@@ -268,7 +268,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -281,37 +281,37 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tesamorelin (Egrifta WR) FDA Prescribing Information. 2025.{" "}
           <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Theratechnologies. EGRIFTA WR (tesamorelin) F8 formulation FDA approval announcement. March 25, 2025.{" "}
           <a href="https://www.theratech.com/news-releases/news-release-details/theratechnologies-receives-fda-approval-egrifta-wrtm-tesamorelin/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.theratech.com/news-releases/news-release-details/theratechnologies-receives-fda-approval-egrifta-wrtm-tesamorelin/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Falutz J, Allas S, Blot K, et al. Metabolic effects of a growth hormone-releasing factor in patients with HIV. N Engl J Med. 2007;357(23):2359-70.{" "}
           <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa072375" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.nejm.org/doi/full/10.1056/NEJMoa072375
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Falutz J, Mamputu JC, Potvin D, et al. Effects of tesamorelin (TH9507), a growth hormone-releasing factor analog, in HIV-infected patients with excess abdominal fat: a pooled analysis of two multicenter, double-blind placebo-controlled phase 3 trials with safety extension data. J Clin Endocrinol Metab. 2010;95(9):4291-304.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/20554713/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20554713/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Stanley TL, Fourman LT, Feldpausch MN, et al. Effects of tesamorelin on non-alcoholic fatty liver disease in HIV: a randomised, double-blind, multicentre trial. Lancet HIV. 2019;6(12):e821-e830.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/31611038/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/31611038/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Baker LD, Barsness SM, Borson S, et al. Effects of growth hormone-releasing hormone on cognitive function in adults with mild cognitive impairment and healthy older adults. Arch Neurol. 2012;69(11):1420-9.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/22869065/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22869065/
@@ -325,7 +325,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -336,7 +336,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -371,7 +371,7 @@ export default function TesamorelinPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Tesamorelin (brand names Egrifta, Egrifta SV, Egrifta WR) is a synthetic 44-amino-acid analog of human growth hormone-releasing hormone (GHRH) developed by Theratechnologies. It is the only GHRH analog with current FDA approval — approved in November 2010 for reduction of excess abdominal fat (visceral adipose tissue) in HIV-infected adults with lipodystrophy. Unlike CJC-1295 or sermorelin, tesamorelin has full Phase 3 clinical efficacy data: roughly 15–20% visceral fat reduction at 26 weeks. The N-terminal trans-3-hexenoic acid modification protects against DPP-IV degradation while preserving full GHRH activity.
           </p>
           <div>
@@ -379,29 +379,29 @@ export default function TesamorelinPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">FDA-approved for reduction of visceral abdominal fat in HIV-associated lipodystrophy</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">~15–20% visceral fat reduction at 26 weeks (Phase 3 clinical data)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Preferentially targets visceral fat over subcutaneous fat</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates pulsatile GH release via GHRH receptor (preserves physiology)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in lipid profile and adiponectin</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Studied off-label for NAFLD with liver-fat reduction</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">FDA-approved for reduction of visceral abdominal fat in HIV-associated lipodystrophy</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">~15–20% visceral fat reduction at 26 weeks (Phase 3 clinical data)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Preferentially targets visceral fat over subcutaneous fat</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates pulsatile GH release via GHRH receptor (preserves physiology)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in lipid profile and adiponectin</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Studied off-label for NAFLD with liver-fat reduction</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> FDA-approved dose: Egrifta SV 1.4 mg subcutaneously once daily, OR Egrifta WR 1.28 mg subcutaneously once daily (newer weekly-reconstitution formulation). The older Egrifta original dose was 2 mg/day. Research-grade tesamorelin is typically dosed at 1–2 mg/day subcutaneously. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Tesamorelin is the only FDA-approved GHRH analog. The branded product (Egrifta WR / Egrifta SV) is available through specialty pharmacies with prescription. Research-grade tesamorelin is also sold by specialty peptide vendors. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=growth+hormone+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -420,12 +420,12 @@ export default function TesamorelinPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

@@ -27,7 +27,7 @@ export default function CreatinePage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Creatine is a naturally occurring compound synthesized in the body from the amino acids arginine, glycine, and methionine, and found in small amounts in red meat and fish. It is stored primarily in skeletal muscle as phosphocreatine — the rapid energy reserve that fuels high-intensity, short-duration efforts. Supplemental creatine is the most extensively researched sports supplement in existence, with over 500 published studies confirming its safety and efficacy. It increases muscle phosphocreatine stores by 20–40%, enhancing ATP regeneration during intense exercise. Beyond performance, creatine has a growing evidence base for cognitive function, bone health, and neuroprotection. It is safe, inexpensive, and effective — consistently ranked as the top evidence-based supplement by sports nutrition scientists worldwide.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function CreatinePage() {
               "Protein Synthesis Enhancement — Creatine upregulates satellite cell activity and myogenic transcription factors, directly supporting muscle protein synthesis and repair beyond its energy storage role.",
               "Cognitive Energy Support — The brain relies heavily on phosphocreatine for rapid energy demands. Creatine supplementation increases brain phosphocreatine levels, supporting cognitive performance particularly in tasks requiring rapid processing and working memory — effects most pronounced in sleep-deprived or vegetarian/vegan individuals.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Strength and power improvements are among the most replicated findings in sports science — meta-analyses consistently show 5–15% improvements in maximum strength and 10–20% improvements in high-intensity exercise performance. Muscle mass gains are significantly greater with creatine than placebo when combined with resistance training — an average of 1–2 kg additional lean mass over 4–12 weeks. A 2022 meta-analysis of 10 RCTs found creatine significantly improved memory performance, particularly in older adults and vegetarians. Long-term safety has been confirmed in studies lasting up to 5 years with no adverse effects on kidney or liver function in healthy individuals.
           </p>
         </div>
@@ -80,14 +80,14 @@ export default function CreatinePage() {
               "Hydration: Drink plenty of water — creatine draws water into muscles",
               "Form: Creatine monohydrate is the gold standard — most researched, cheapest, most effective",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Exceptionally safe — one of the best-documented safety profiles of any supplement. The only common side effect is mild water retention (1–2 kg in first week), which reflects increased muscle hydration rather than fat gain. Creatine does NOT cause kidney damage in healthy individuals — this myth has been thoroughly debunked by decades of research. May cause GI discomfort at high doses during loading — splitting into smaller doses resolves this.
           </p>
         </div>
@@ -100,7 +100,7 @@ export default function CreatinePage() {
               "Rawson ES, Venezia AC. Use of creatine in the elderly and evidence for effects on cognitive function in young and old. Amino Acids. 2011.",
               "Antonio J, Ciccone V. The effects of pre versus post workout supplementation of creatine monohydrate. J Int Soc Sports Nutr. 2013.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

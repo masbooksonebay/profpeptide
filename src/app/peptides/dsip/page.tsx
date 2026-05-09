@@ -140,20 +140,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           DSIP is typically administered as a subcutaneous injection at bedtime. Intravenous and intranasal routes have also been used in research. There is no standardized dosing protocol — most ranges come from limited human studies and biohacker reports.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard research dose: 100–200 mcg subcutaneously at bedtime</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Higher dose ranges: 250–500 mcg subcutaneously, used in some sleep protocols</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Original IV human studies: 25 nmol/kg intravenously (~0.025 mcmol/kg = ~21 mcg/kg) — much lower than typical SC dosing</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 5–7 days on, with breaks. Continuous daily long-term use is uncommon and lacks safety data.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Intranasal use: 100–250 mcg before bed, similar to SC dosing</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard research dose: 100–200 mcg subcutaneously at bedtime</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Higher dose ranges: 250–500 mcg subcutaneously, used in some sleep protocols</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Original IV human studies: 25 nmol/kg intravenously (~0.025 mcmol/kg = ~21 mcg/kg) — much lower than typical SC dosing</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 5–7 days on, with breaks. Continuous daily long-term use is uncommon and lacks safety data.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Intranasal use: 100–250 mcg before bed, similar to SC dosing</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           DSIP dosing is among the least standardized of any peptide on Prof. Peptide. Original research used IV doses in nmol/kg ranges that don&apos;t translate cleanly to subcutaneous mcg dosing. Most modern protocols are derived from biohacker community reports rather than clinical trials. Start at the low end (50–100 mcg) for first-time use and titrate up only if needed.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -170,9 +170,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Daytime drowsiness if dose is too high or mistimed</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache or dizziness</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild gastrointestinal discomfort, nausea (occasional)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Daytime drowsiness if dose is too high or mistimed</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache or dizziness</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild gastrointestinal discomfort, nausea (occasional)</li>
           </ol>
         </div>
         <div>
@@ -180,9 +180,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hormonal fluctuations (DSIP affects LH, GH, somatostatin)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fluid retention</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue or grogginess</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hormonal fluctuations (DSIP affects LH, GH, somatostatin)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fluid retention</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue or grogginess</li>
           </ol>
         </div>
         <div>
@@ -190,12 +190,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Potential immunogenicity — FDA has flagged DSIP for risk of immune-mediated adverse reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Long-term safety unknown — most research is short-term animal studies</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No published cases of severe adverse events from DSIP, though clinical experience is very limited</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Potential immunogenicity — FDA has flagged DSIP for risk of immune-mediated adverse reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term safety unknown — most research is short-term animal studies</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No published cases of severe adverse events from DSIP, though clinical experience is very limited</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           DSIP has the weakest safety database of any peptide on Prof. Peptide. The FDA has explicitly flagged DSIP for potential immunogenicity in compounded preparations — meaning the body may mount an immune response that is potentially serious. Most published safety data comes from short-term animal studies and limited human research from the 1980s–1990s. Long-term effects are unknown. The 2001 European Journal of Anaesthesiology editorial described DSIP as &ldquo;incredibly safe&rdquo; based on the lack of acute toxicity in animal studies, but the absence of harm signals in limited research is not the same as proven long-term safety.
         </p>
       </div>
@@ -252,19 +252,19 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           DSIP has one of the weakest evidence bases of any peptide on Prof. Peptide. It is NOT FDA-approved for any human use. The FDA has explicitly flagged DSIP-containing compounded drugs for potential immunogenicity risk, meaning the body may perceive DSIP as a threat and mount a potentially serious immune response.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Most published research on DSIP comes from the 1970s–1990s, with limited modern human clinical trials. The mechanism of action remains incompletely characterized after 50 years of research. Some studies failed to replicate the original sleep-promoting findings. Modern reviewers describe DSIP as &ldquo;a fascinating but unfinished chapter in peptide research&rdquo; rather than a proven sleep therapy.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Conflicting evidence exists on DSIP&apos;s involvement in sleep regulation — some studies link it to slow-wave sleep promotion and REM suppression, others show no consistent sleep effects. The original &ldquo;delta sleep-inducing&rdquo; name reflects the discovery context, not validated clinical action.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade DSIP material is sold for laboratory use only. Purity and potency vary by vendor — and given the FDA&apos;s immunogenicity flag, third-party testing is especially important for any DSIP product.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency does not currently include DSIP on the prohibited list, but the peptide&apos;s effects on GH and LH could theoretically have sport-related implications.
         </p>
       </div>
@@ -280,7 +280,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -293,37 +293,37 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pollard BJ, Pomfrett CJ. Delta sleep-inducing peptide. Eur J Anaesthesiol. 2001;18(7):419-22.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/11437868/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11437868/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Graf MV, Kastin AJ, Coy DH, Fischman AJ. Delta-sleep-inducing peptide reduces CRF-induced corticosterone release. Neuroendocrinology. 1985;41(5):353-6.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/2999626/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/2999626/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Delta-sleep-inducing peptide.{" "}
           <a href="https://en.wikipedia.org/wiki/Delta-sleep-inducing_peptide" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/Delta-sleep-inducing_peptide
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Schneider-Helmert D. Acute and delayed effects of DSIP (delta sleep-inducing peptide) on human sleep behavior. Int J Clin Pharmacol Ther Toxicol. 1981;19(8):341-5.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/6895513/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/6895513/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khvatova EM, Belousova ID, Sazanova EI, et al. Delta Sleep-Inducing Peptide Recovers Motor Function in SD Rats after Focal Stroke. Molecules. 2021;26(17):5173.{" "}
           <a href="https://www.mdpi.com/1420-3049/26/17/5173" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.mdpi.com/1420-3049/26/17/5173
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Larbig W, Gerber WD, Kluck M, Schoenenberger GA. Therapeutic effects of delta-sleep-inducing peptide (DSIP) in patients with chronic, pronounced pain episodes. A clinical pilot study. Eur Neurol. 1984;23(5):372-85.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/6437793/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/6437793/
@@ -337,7 +337,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -348,7 +348,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -383,7 +383,7 @@ export default function DSIPPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             DSIP (Delta Sleep-Inducing Peptide) is a naturally occurring nonapeptide (Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu) first isolated in 1977 from the cerebral venous blood of rabbits exhibiting deep slow-wave (delta) sleep. It is found in human brain, plasma, and breast milk. Unlike typical peptides, DSIP can cross the blood-brain barrier and is partially absorbed via the gut. Despite its name and decades of research, DSIP&apos;s role as a primary sleep-regulating compound remains uncertain — modern research describes it more accurately as a sleep-modulating substance that improves disturbed sleep without significantly affecting healthy sleepers. It also has documented anti-stress, antioxidant, and possible neuroprotective effects.
           </p>
           <div>
@@ -391,29 +391,29 @@ export default function DSIPPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">May improve slow-wave (delta) sleep depth in disturbed sleepers</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Anti-stress: blocks corticotropin release, reduces CRF-induced corticosterone</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Antioxidant effects in animal models</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Possible neuroprotection in stroke models</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Antinociceptive (pain-reducing) effects in animal research</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No sedation in healthy individuals — modulates rather than forces sleep</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">May improve slow-wave (delta) sleep depth in disturbed sleepers</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anti-stress: blocks corticotropin release, reduces CRF-induced corticosterone</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Antioxidant effects in animal models</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Possible neuroprotection in stroke models</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Antinociceptive (pain-reducing) effects in animal research</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No sedation in healthy individuals — modulates rather than forces sleep</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Typical research dose: 100–200 mcg subcutaneously at bedtime. Cycle 5–7 days, then break. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> DSIP is not FDA-approved and is sold only as a research-grade peptide. Note that the FDA has flagged DSIP for potential immunogenicity concerns. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=sleep+recovery+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -432,12 +432,12 @@ export default function DSIPPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

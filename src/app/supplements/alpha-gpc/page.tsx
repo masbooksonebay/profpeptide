@@ -27,7 +27,7 @@ export default function AlphaGPCPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Alpha GPC (alpha-glycerophosphocholine) is a choline-containing compound that occurs naturally in the brain and is derived commercially from soy or sunflower lecithin. It is the most bioavailable and brain-penetrant choline supplement available — significantly outperforming choline bitartrate and CDP-choline in terms of blood and brain choline elevation. Choline is an essential nutrient required for the synthesis of acetylcholine — the primary neurotransmitter for memory, learning, muscle control, and attention. Approximately 90% of people do not consume adequate dietary choline, making supplementation relevant for cognitive function. Alpha GPC is used clinically in Europe as a prescription medication for Alzheimer&apos;s disease and vascular dementia, and is widely used by nootropic users and athletes for cognitive enhancement and the acute growth hormone-releasing effects documented in exercise research.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function AlphaGPCPage() {
               "Growth Hormone Stimulation — Several studies show Alpha GPC acutely increases growth hormone secretion following exercise — with one study showing a 44% increase in peak GH compared to placebo. This is attributed to its cholinergic stimulation of the hypothalamic-pituitary axis.",
               "Cognitive Enhancement — By increasing acetylcholine availability, Alpha GPC enhances the cholinergic neurotransmission underlying attention, working memory, and episodic memory consolidation.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Italian clinical trials using 1200mg Alpha GPC daily in Alzheimer&apos;s patients and vascular dementia patients showed significant improvements in cognitive function, memory, and attention over 3–6 months — leading to its classification as a prescription drug in Italy and several other European countries. A 2015 study by Ziegenfuss et al. found Alpha GPC (600mg) taken 90 minutes before exercise significantly increased peak growth hormone levels, lower body force production, and isometric strength compared to placebo. Studies on healthy young adults show Alpha GPC improves memory and attention at doses of 400–600mg. It is consistently found superior to choline bitartrate for cognitive outcomes due to its superior bioavailability.
           </p>
         </div>
@@ -79,14 +79,14 @@ export default function AlphaGPCPage() {
               "Clinical doses (dementia research): 1200mg daily in divided doses",
               "Note: Alpha GPC is significantly more expensive than choline bitartrate — CDP-choline is a cost-effective alternative for many applications",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Well tolerated at typical doses. Most common side effects: headache, GI discomfort, dizziness at higher doses. Excessive choline from multiple sources can cause a fishy body odor — monitor total choline intake. Some reports of increased TMAO production with high choline intake — a potential cardiovascular marker worth monitoring with long-term high-dose use. May interact with anticholinergic medications.
           </p>
         </div>
@@ -103,7 +103,7 @@ export default function AlphaGPCPage() {
               "Parnetti L, et al. Multicentre study of l-alpha-glycerylphosphorylcholine vs ST200 among patients with probable senile dementia of Alzheimer's type. Drugs Aging. 1993.",
               "Ziegenfuss T, et al. Acute supplementation with alpha-glycerylphosphorylcholine augments growth hormone response to, and peak force production during, resistance exercise. J Int Soc Sports Nutr. 2008.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

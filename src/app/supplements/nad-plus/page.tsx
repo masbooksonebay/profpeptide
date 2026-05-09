@@ -27,7 +27,7 @@ export default function NADPlusSupplementPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme found in every living cell, essential to energy metabolism, DNA repair, and cellular signaling. NAD+ levels decline significantly with age — by middle age, levels may be roughly half of what they were in youth. This decline is associated with reduced cellular energy production, impaired DNA repair, and increased vulnerability to age-related disease. Rather than supplementing NAD+ directly (which has poor bioavailability), most protocols use NAD+ precursors — primarily NMN (Nicotinamide Mononucleotide) and NR (Nicotinamide Riboside) — which the body converts into NAD+.</p>
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme found in every living cell, essential to energy metabolism, DNA repair, and cellular signaling. NAD+ levels decline significantly with age — by middle age, levels may be roughly half of what they were in youth. This decline is associated with reduced cellular energy production, impaired DNA repair, and increased vulnerability to age-related disease. Rather than supplementing NAD+ directly (which has poor bioavailability), most protocols use NAD+ precursors — primarily NMN (Nicotinamide Mononucleotide) and NR (Nicotinamide Riboside) — which the body converts into NAD+.</p>
         </div>
 
         <div>
@@ -48,12 +48,12 @@ export default function NADPlusSupplementPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">How It Works</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">NAD+ functions as an electron carrier in cellular respiration, shuttling electrons during the conversion of nutrients into ATP — the cell&apos;s primary energy currency. It also serves as a substrate for sirtuins (SIRT1–SIRT7), enzymes that regulate gene expression, stress responses, and cellular repair processes. Additionally, NAD+ activates PARP enzymes that detect and repair DNA strand breaks. Because oral NAD+ has limited bioavailability, precursor compounds NMN and NR are the preferred supplementation route — both are efficiently absorbed and converted to NAD+ in tissues.</p>
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">NAD+ functions as an electron carrier in cellular respiration, shuttling electrons during the conversion of nutrients into ATP — the cell&apos;s primary energy currency. It also serves as a substrate for sirtuins (SIRT1–SIRT7), enzymes that regulate gene expression, stress responses, and cellular repair processes. Additionally, NAD+ activates PARP enzymes that detect and repair DNA strand breaks. Because oral NAD+ has limited bioavailability, precursor compounds NMN and NR are the preferred supplementation route — both are efficiently absorbed and converted to NAD+ in tissues.</p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Human clinical trials have confirmed that oral NMN and NR supplementation effectively raises blood NAD+ levels. A 2018 randomized controlled trial published in Nature Communications found that NR supplementation significantly elevated whole blood NAD+ metabolism in healthy middle-aged and older adults and was well tolerated. A 2022 Japanese trial demonstrated that 250mg daily NMN supplementation over 12 weeks significantly increased NAD+ metabolite concentrations and showed nominally significant improvements in gait speed and grip strength in older men. A 2024 meta-analysis of 12 randomized controlled trials confirmed NMN consistently raises blood NAD+ levels, though most clinically relevant metabolic outcomes require larger trials to confirm. Research is active and expanding — NAD+ restoration represents one of the most studied areas in longevity science.</p>
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Human clinical trials have confirmed that oral NMN and NR supplementation effectively raises blood NAD+ levels. A 2018 randomized controlled trial published in Nature Communications found that NR supplementation significantly elevated whole blood NAD+ metabolism in healthy middle-aged and older adults and was well tolerated. A 2022 Japanese trial demonstrated that 250mg daily NMN supplementation over 12 weeks significantly increased NAD+ metabolite concentrations and showed nominally significant improvements in gait speed and grip strength in older men. A 2024 meta-analysis of 12 randomized controlled trials confirmed NMN consistently raises blood NAD+ levels, though most clinically relevant metabolic outcomes require larger trials to confirm. Research is active and expanding — NAD+ restoration represents one of the most studied areas in longevity science.</p>
         </div>
 
         <div>
@@ -66,14 +66,14 @@ export default function NADPlusSupplementPage() {
               "Andrew Huberman takes 1–2g NMN sublingually each morning and 500mg NR daily",
               "Best taken in the morning due to mild energizing effects",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">NMN and NR are generally well tolerated in clinical trials. Common mild side effects include nausea and flushing at higher doses. Note: The FDA ruled in 2023 that NMN cannot be sold as a dietary supplement (it was filed as an investigational drug), though it remains widely available. NR remains available as a supplement. Long-term safety data in humans is still accumulating. Consult a healthcare provider before use.</p>
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">NMN and NR are generally well tolerated in clinical trials. Common mild side effects include nausea and flushing at higher doses. Note: The FDA ruled in 2023 that NMN cannot be sold as a dietary supplement (it was filed as an investigational drug), though it remains widely available. NR remains available as a supplement. Long-term safety data in humans is still accumulating. Consult a healthcare provider before use.</p>
         </div>
 
         <div>
@@ -88,7 +88,7 @@ export default function NADPlusSupplementPage() {
               "Martens CR, et al. Chronic nicotinamide riboside supplementation is well-tolerated and elevates NAD+ in healthy middle-aged and older adults. Nature Communications. 2018.",
               "Igarashi M, et al. Chronic nicotinamide mononucleotide supplementation elevates blood NAD+ levels and alters muscle function in healthy older men. NPJ Aging. 2022.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

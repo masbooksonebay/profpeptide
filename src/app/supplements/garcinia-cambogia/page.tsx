@@ -27,7 +27,7 @@ export default function GarciniaCambogiaPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Garcinia cambogia is a tropical fruit native to Southeast Asia and India whose rind contains high concentrations of hydroxycitric acid (HCA) — the active compound claimed to inhibit fat synthesis, suppress appetite, and reduce food intake. It was widely popularized in the early 2010s as a weight loss supplement. The reality is more nuanced: while animal studies and some early human trials showed promising effects, more rigorous meta-analyses have found modest and inconsistent weight loss results in humans. It remains popular but is considered one of the weaker evidence supplements in the metabolic category. Its primary interest is theoretical — for those who prefer natural approaches and want a supplement that may provide mild appetite modulation.
           </p>
         </div>
@@ -55,14 +55,14 @@ export default function GarciniaCambogiaPage() {
               "Serotonin Modulation — HCA may increase serotonin levels in the brain, which could reduce appetite and emotional eating. This mechanism is theoretical in humans though supported by some animal data.",
               "Gluconeogenesis Reduction — HCA may reduce hepatic glucose production, contributing to modest blood sugar regulation.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Evidence is mixed. A 2011 Cochrane-style systematic review and meta-analysis found garcinia cambogia produced a small but statistically significant weight loss of approximately 0.88 kg vs. placebo. However, the clinical significance of this effect is debated, and several well-designed trials found no significant effect. A 2020 meta-analysis of 9 RCTs found modest reductions in body weight and BMI but noted significant heterogeneity between studies and generally poor study quality. Most researchers consider the evidence insufficient to recommend it as a primary weight loss intervention.
           </p>
         </div>
@@ -75,14 +75,14 @@ export default function GarciniaCambogiaPage() {
               "Duration: Studies typically run 8–12 weeks",
               "Note: Effects are modest — best viewed as complementary to diet and exercise",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Generally considered safe at recommended doses. Most common side effects are mild GI symptoms. Rare cases of liver toxicity have been reported, primarily with high-dose products — stay within recommended dosing. Not recommended during pregnancy. May interact with diabetes medications and statins.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function GarciniaCambogiaPage() {
               "Onakpoya I, et al. The Use of Garcinia Extract (Hydroxycitric Acid) as a Weight Loss Supplement. J Obes. 2011.",
               "Chuah LO, et al. Updates on antiobesity effect of Garcinia origin (HCA) as complementary and alternative weight management resource. Evid Based Complement Alternat Med. 2013.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

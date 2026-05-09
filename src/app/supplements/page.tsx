@@ -115,7 +115,7 @@ export default function SupplementsPage({ searchParams }: { searchParams: { cate
       <div className="mb-10">
         <span className="tag mb-3 inline-block">Research Profiles</span>
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Supplement Library</h1>
-        <p className="text-gray-500 dark:text-slate-400 max-w-xl text-sm leading-relaxed">
+        <p className="text-gray-500 dark:text-slate-400 max-w-xl text-lg leading-relaxed">
           Evidence-based supplement profiles organized by category. Click any supplement to read the
           full profile including uses, benefits, and research.
         </p>

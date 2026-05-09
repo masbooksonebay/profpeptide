@@ -27,7 +27,7 @@ export default function BacopaMonnieriPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Bacopa monnieri is a creeping aquatic herb native to wetlands across South Asia and a cornerstone herb in Ayurvedic medicine — used for thousands of years to enhance memory, learning, and cognitive function. Its bioactive compounds — bacosides A and B — are the primary drivers of its nootropic effects, supporting antioxidant activity in the brain, enhancing synaptic transmission, and modulating key neurotransmitter systems. Unlike most nootropics that produce acute effects, Bacopa&apos;s cognitive benefits are cumulative — building over 8–12 weeks of consistent use. It is one of the best-studied herbal nootropics in Western science, with multiple double-blind RCTs in healthy adults showing significant improvements in memory acquisition and retention speed. Its primary applications are memory enhancement, anxiety reduction, and neuroprotection.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function BacopaMonnieriPage() {
               "Serotonin Modulation — Bacopa enhances serotonergic neurotransmission, contributing to its anxiolytic effects and mood-stabilizing properties during chronic use.",
               "Antioxidant Neuroprotection — Bacosides are potent antioxidants in brain tissue, protecting neurons from oxidative damage — a key mechanism in cognitive aging and neurodegeneration.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A meta-analysis by Kongkeaw et al. (2014) of 9 double-blind RCTs found Bacopa monnieri significantly improved cognitive function, particularly in tests of attention, cognitive processing, and working memory in healthy adults. Multiple Australian RCTs by Stough et al. found significant improvements in spatial working memory and rapid visual information processing after 90 days. A 2016 meta-analysis confirmed consistent improvements in memory free recall. Research also shows significant reductions in anxiety and cortisol levels with chronic Bacopa supplementation — an important distinction from stimulant nootropics that may increase anxiety.
           </p>
         </div>
@@ -79,14 +79,14 @@ export default function BacopaMonnieriPage() {
               "Duration: Minimum 8–12 weeks for full cognitive benefits — Bacopa is not an acute nootropic",
               "Consistency: Daily use is required — benefits diminish when supplementation stops",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Generally well tolerated. Most common side effects are GI — nausea, stomach cramps, diarrhea — particularly on an empty stomach. Taking with food significantly reduces GI effects. May cause sedation in some individuals — particularly at higher doses. Rare reports of dry mouth. Not recommended during pregnancy. May interact with thyroid medications and anticholinergic drugs.
           </p>
         </div>
@@ -103,7 +103,7 @@ export default function BacopaMonnieriPage() {
               "Kongkeaw C, et al. Meta-analysis of randomized controlled trials on cognitive effects of Bacopa monnieri extract. J Ethnopharmacol. 2014.",
               "Stough C, et al. The chronic effects of an extract of Bacopa monniera on cognitive function in healthy human subjects. Psychopharmacology. 2001.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

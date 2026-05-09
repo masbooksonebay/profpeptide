@@ -27,7 +27,7 @@ export default function AlphaLipoicAcidPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Alpha lipoic acid (ALA) is a naturally occurring organosulfur compound produced in small amounts by the body and found in trace amounts in foods like red meat, spinach, and broccoli. It serves as a cofactor for several mitochondrial enzyme complexes involved in energy metabolism, and is one of the most versatile antioxidants known — uniquely active in both fat-soluble and water-soluble environments, unlike most antioxidants which are active in only one. ALA is well-established as a treatment for diabetic peripheral neuropathy in Europe (particularly Germany) where it has been used medicinally since the 1960s, and has an evidence base supporting improvements in insulin sensitivity, nerve function, and weight management. It also regenerates other antioxidants including vitamins C and E and glutathione.
           </p>
         </div>
@@ -59,14 +59,14 @@ export default function AlphaLipoicAcidPage() {
               "Antioxidant Regeneration — ALA regenerates oxidized forms of vitamins C, E, coenzyme Q10, and glutathione — effectively amplifying the antioxidant capacity of these other compounds.",
               "Nerve Protection — In diabetic neuropathy, ALA reduces oxidative stress in nerve tissue, improves nerve conduction velocity, and reduces pain, numbness, and tingling. This is the most clinically validated application of ALA.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Diabetic neuropathy is the best-established application — multiple European RCTs show intravenous ALA significantly improves neuropathy symptoms, and oral ALA produces moderate but consistent benefits. Insulin sensitivity research shows ALA improves glucose disposal and reduces insulin resistance in insulin-resistant subjects. A meta-analysis found ALA supplementation significantly reduced body weight and BMI, with greater effects at higher doses. Anti-inflammatory research shows significant reductions in CRP, IL-6, and TNF-alpha with ALA supplementation.
           </p>
         </div>
@@ -80,21 +80,21 @@ export default function AlphaLipoicAcidPage() {
               "Duration: Neuropathy benefits typically seen after 4–5 weeks; metabolic effects with longer-term use",
               "R-ALA vs. S-ALA: R-alpha lipoic acid is the naturally occurring, more bioactive form",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Well tolerated at typical doses. Most common side effects are mild GI symptoms. May lower blood sugar — monitor glucose levels if taking diabetes medications. May affect thyroid hormone levels at high doses. Rare: skin rash. R-ALA is more potent and bioavailable than racemic ALA — lower doses may be needed.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Related Supplements</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed"><Link href="/supplements/berberine" className="text-[#0891b2] hover:underline">Berberine</Link> | <Link href="/supplements/coq10" className="text-[#0891b2] hover:underline">CoQ10</Link> | <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link> — ALA pairs well with these for comprehensive metabolic and antioxidant support.</p>
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><Link href="/supplements/berberine" className="text-[#0891b2] hover:underline">Berberine</Link> | <Link href="/supplements/coq10" className="text-[#0891b2] hover:underline">CoQ10</Link> | <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link> — ALA pairs well with these for comprehensive metabolic and antioxidant support.</p>
         </div>
 
         <div>
@@ -104,7 +104,7 @@ export default function AlphaLipoicAcidPage() {
               "Ziegler D, et al. Treatment of symptomatic diabetic peripheral neuropathy with the antioxidant alpha-lipoic acid. Diabetologia. 1995.",
               "Golbidi S, et al. Diabetes and alpha lipoic acid. Front Pharmacol. 2011.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

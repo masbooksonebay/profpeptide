@@ -27,7 +27,7 @@ export default function CollagenPeptidesPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Collagen is the most abundant protein in the human body — making up approximately 30% of total protein and forming the structural scaffold of skin, bones, tendons, ligaments, cartilage, and blood vessels. Collagen peptides are hydrolyzed collagen — broken into small bioactive peptides that are efficiently absorbed through the gut and distributed to connective tissues throughout the body. Unlike whole collagen (which is poorly absorbed), hydrolyzed collagen peptides have demonstrated bioavailability and measurable effects on collagen synthesis in skin, joints, and connective tissues. Production of collagen naturally declines from around age 25 at roughly 1% per year, accelerating visible skin aging and contributing to joint degradation. Supplemental collagen peptides provide both the amino acid building blocks (particularly glycine, proline, and hydroxyproline) and bioactive peptides that signal fibroblasts to increase collagen synthesis.
           </p>
         </div>
@@ -56,14 +56,14 @@ export default function CollagenPeptidesPage() {
               "Amino Acid Supply — Collagen is uniquely rich in glycine, proline, and hydroxyproline — amino acids that are rate-limiting for collagen synthesis but not abundant in standard dietary protein. Supplementation specifically addresses this amino acid gap.",
               "Cartilage Accumulation — Collagen peptides accumulate in cartilage tissue after absorption — radioactive labeling studies have tracked absorbed collagen peptides specifically to articular cartilage, confirming targeted delivery.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Joint health research includes multiple RCTs — a 24-week study in athletes with activity-related joint pain found significant reductions in joint pain and improved mobility vs. placebo. A 2021 meta-analysis of 15 RCTs found collagen supplementation significantly improved joint pain and function in osteoarthritis. Skin research is robust — a 2019 meta-analysis of 19 RCTs found oral collagen supplementation significantly improved skin elasticity, hydration, and reduced wrinkle depth. Sports performance research shows improved tendon cross-sectional area and reduced injury rates in athletes supplementing collagen around exercise sessions.
           </p>
         </div>
@@ -77,14 +77,14 @@ export default function CollagenPeptidesPage() {
               "⏱Exercise timing: For tendon and joint benefit, take 30–60 minutes before exercise",
               "☀Skin: Consistent daily use for 8–12 weeks to see skin improvements",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Extremely safe — collagen is a food protein with an excellent safety profile. Most common minor effects are mild GI symptoms. May contain allergens depending on source — bovine, marine, or porcine — check sourcing if allergies are a concern. Not vegan — collagen is always animal-derived.
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function CollagenPeptidesPage() {
               "Zdzieblik D, et al. Collagen peptide supplementation in combination with resistance training improves body composition and increases muscle strength in elderly sarcopenic men. Br J Nutr. 2015.",
               "de Miranda RB, et al. Effects of hydrolyzed collagen supplementation on skin aging — a systematic review and meta-analysis. Int J Dermatol. 2021.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

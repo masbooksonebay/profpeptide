@@ -27,7 +27,7 @@ export default function LTheaninePage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-theanine is an amino acid found almost exclusively in tea leaves (Camellia sinensis) — particularly green tea — and is the compound largely responsible for the distinctly calm yet focused mental state that tea drinkers often describe as different from coffee despite similar caffeine content. L-theanine crosses the blood-brain barrier and increases alpha brain wave activity — the neural pattern associated with relaxed alertness, creativity, and flow states — without causing sedation. It modulates key neurotransmitter systems including GABA, glutamate, dopamine, and serotonin to produce anxiolytic effects without impairing cognitive performance. While effective as a standalone nootropic, L-theanine&apos;s most well-researched application is in combination with caffeine — where it selectively blunts caffeine&apos;s anxiogenic effects while preserving and enhancing its cognitive benefits. It is one of the safest, most consistent, and most evidence-backed supplements in the nootropic category.
           </p>
         </div>
@@ -59,14 +59,14 @@ export default function LTheaninePage() {
               "Dopamine and Serotonin Effects — L-theanine modulates dopamine and serotonin systems, contributing to improved mood and the cognitive-enhancing effects observed particularly in combination with caffeine.",
               "Caffeine Synergy — L-theanine selectively attenuates caffeine's cardiovascular stimulating and anxiety-producing effects while preserving its alertness and cognitive benefits — producing a synergistic nootropic combination that is superior to either compound alone.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Multiple RCTs confirm L-theanine&apos;s anxiolytic and cognitive effects. A double-blind crossover study found L-theanine significantly increased alpha wave activity within 40 minutes of ingestion. Combined with caffeine in a 2:1 ratio (200mg theanine : 100mg caffeine), multiple RCTs show superior improvements in attention, reaction time, and working memory compared to caffeine alone. Research shows L-theanine reduces physiological and psychological stress responses including salivary cortisol and blood pressure during challenging tasks. Higher doses (200–400mg) show sleep quality improvements — reduced time to sleep onset and improved sleep satisfaction without next-day grogginess.
           </p>
         </div>
@@ -81,14 +81,14 @@ export default function LTheaninePage() {
               "Timing: Effects begin within 30–60 minutes and last 4–6 hours",
               "Daily use: Safe for chronic use — no tolerance or dependence",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Exceptionally safe — one of the safest supplements studied. No serious adverse effects in any clinical research. May cause mild headache at very high doses in some individuals. May enhance the effects of blood pressure medications. No interactions with common medications documented at typical doses.
           </p>
         </div>
@@ -105,7 +105,7 @@ export default function LTheaninePage() {
               "Nobre AC, et al. L-theanine, a natural constituent in tea, and its effect on mental state. Asia Pac J Clin Nutr. 2008.",
               "Owen GN, et al. The combined effects of L-theanine and caffeine on cognitive performance and mood. Nutr Neurosci. 2008.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

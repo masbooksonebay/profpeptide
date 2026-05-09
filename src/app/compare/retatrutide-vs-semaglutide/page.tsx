@@ -32,7 +32,7 @@ export default function RetatrutideVsSemaglutidePage() {
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Retatrutide vs Semaglutide &mdash; Triple Agonist vs Single Agonist Comparison</h1>
-      <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Semaglutide and Retatrutide sit at opposite ends of the GLP class. Semaglutide activates one receptor (GLP-1) and is FDA-approved with the longest safety record in the class. Retatrutide activates three (GLP-1, GIP, and glucagon) and is still investigational, but Phase 3 trials show it producing nearly twice the weight loss. Here&apos;s how they compare.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Semaglutide and Retatrutide sit at opposite ends of the GLP class. Semaglutide activates one receptor (GLP-1) and is FDA-approved with the longest safety record in the class. Retatrutide activates three (GLP-1, GIP, and glucagon) and is still investigational, but Phase 3 trials show it producing nearly twice the weight loss. Here&apos;s how they compare.</p>
 
       <div className="overflow-x-auto mb-8">
         <table className="w-full text-sm border-collapse">

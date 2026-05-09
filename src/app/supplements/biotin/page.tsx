@@ -27,7 +27,7 @@ export default function BiotinPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Biotin (vitamin B7) is a water-soluble B vitamin that serves as an essential cofactor for carboxylase enzymes involved in fatty acid synthesis, amino acid metabolism, and gluconeogenesis. It is well established that severe biotin deficiency causes hair loss, brittle nails, and skin rash — the three conditions for which biotin supplementation is most commonly marketed. However, in individuals without deficiency, the evidence for biotin supplementation&apos;s cosmetic benefits is considerably weaker than the marketing suggests. True biotin deficiency is relatively rare in healthy adults eating a balanced diet, but certain populations are at elevated risk: pregnant women (increased biotin catabolism), people who regularly consume raw egg whites (which contain avidin — a biotin-binding protein), those taking certain anticonvulsant medications, and people with biotinidase deficiency. For these populations, biotin supplementation can produce meaningful improvements in hair, nail, and skin health. For replete individuals, benefits are modest at best.
           </p>
         </div>
@@ -56,14 +56,14 @@ export default function BiotinPage() {
               "Keratin Support — Biotin supports the production of keratin — the structural protein that makes up hair, nails, and the outer skin layer. This is the mechanistic basis for biotin's role in hair and nail health, though the pathway is indirect rather than a direct keratin precursor.",
               "Fatty Acid Synthesis — Through acetyl-CoA carboxylase activation, biotin supports the synthesis of long-chain fatty acids that are incorporated into skin cell membranes, maintaining the skin's barrier function and moisture retention.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Nail brittleness has the strongest evidence — a Swiss study found biotin (2.5mg daily) significantly improved nail plate thickness in women with brittle nails, with 91% reporting improvement. A follow-up study confirmed increased nail firmness and reduced splitting. Hair loss evidence is primarily in deficiency states or specific conditions — a systematic review found most positive hair loss studies involved individuals with underlying biotin deficiency or related conditions. For healthy individuals with adequate biotin intake, evidence for cosmetic benefit is limited. The widespread marketing of biotin for hair growth in non-deficient individuals is not well supported by current RCT evidence.
           </p>
         </div>
@@ -77,14 +77,14 @@ export default function BiotinPage() {
               "Duration: Nail improvements typically seen after 3–6 months of consistent use",
               "Note: High biotin supplementation interferes with thyroid function lab tests and troponin tests — inform your doctor before blood tests if supplementing",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Extremely safe — water-soluble and excess excreted. No established upper tolerable limit due to low toxicity. The main safety concern is lab test interference — high biotin doses (above 5mg) can cause falsely elevated or falsely low results on immunoassay-based laboratory tests including thyroid hormones, vitamin D, and cardiac troponin. Always disclose biotin supplementation to healthcare providers before blood testing. Rare reports of acne with very high dose biotin supplementation.
           </p>
         </div>
@@ -101,7 +101,7 @@ export default function BiotinPage() {
               "Colombo VE, et al. Treatment of brittle fingernails and onychoschizia with biotin: scanning electron microscopy. J Am Acad Dermatol. 1990.",
               "Patel DP, et al. A Review of the Use of Biotin for Hair Loss. Skin Appendage Disord. 2017.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

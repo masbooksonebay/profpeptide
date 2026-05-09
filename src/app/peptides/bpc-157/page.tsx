@@ -144,21 +144,21 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           BPC-157 is administered by subcutaneous injection or oral dosing. Injection produces stronger systemic effects and is preferred for musculoskeletal injuries. Oral dosing is preferred for gastrointestinal applications because BPC-157&apos;s unusual gastric acid stability allows it to act locally on gut tissue.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard injectable: 250 mcg subcutaneously once daily, or 250 mcg twice daily for stronger effect</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Higher injectable: 500 mcg once or twice daily for severe injuries or post-surgical recovery</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Localized injection: Injecting subcutaneously near the injury site (tendon, joint capsule, muscle belly) is more effective for localized injuries than abdominal injection</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weight-based reference: Research literature uses 2.5–3.75 mcg/kg twice daily — for most adults this is 300–400 mcg/day</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 4–8 weeks for routine recovery; up to 12 weeks for chronic conditions or post-surgical protocols</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Oral dosing: 250–500 mcg once or twice daily on an empty stomach for gut-related research</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard injectable: 250 mcg subcutaneously once daily, or 250 mcg twice daily for stronger effect</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Higher injectable: 500 mcg once or twice daily for severe injuries or post-surgical recovery</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Localized injection: Injecting subcutaneously near the injury site (tendon, joint capsule, muscle belly) is more effective for localized injuries than abdominal injection</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weight-based reference: Research literature uses 2.5–3.75 mcg/kg twice daily — for most adults this is 300–400 mcg/day</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 4–8 weeks for routine recovery; up to 12 weeks for chronic conditions or post-surgical protocols</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Oral dosing: 250–500 mcg once or twice daily on an empty stomach for gut-related research</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Plasma half-life is under 30 minutes, but biological effects extend well beyond plasma clearance — likely due to local tissue depot activity and downstream gene expression changes. Dose titration is common, starting at 250 mcg daily and increasing as tolerated. The Huberman protocol recommends 300–500 mcg subcutaneously, two to three times per week for 8 weeks, followed by an 8–10 week off period.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -175,9 +175,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No common systemic side effects in animal studies</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Most users report no acute side effects</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No common systemic side effects in animal studies</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Most users report no acute side effects</li>
           </ol>
         </div>
         <div>
@@ -185,9 +185,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild dizziness on initial doses (uncommon)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Slight changes in heart rate (uncommon)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild dizziness on initial doses (uncommon)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Slight changes in heart rate (uncommon)</li>
           </ol>
         </div>
         <div>
@@ -195,12 +195,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Long-term human safety data is absent — no completed Phase 2 or 3 trials</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of unexplained tumor stimulation due to angiogenesis activity, though no reports of this in animal or human studies</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare and not commonly reported</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term human safety data is absent — no completed Phase 2 or 3 trials</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of unexplained tumor stimulation due to angiogenesis activity, though no reports of this in animal or human studies</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare and not commonly reported</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           BPC-157 has one of the cleanest safety profiles of any research peptide in animal studies — researchers have not identified a toxic dose (no LD1) in tested species across 30+ years of research. However, no completed human safety trials confirm long-term safety in humans. The FDA classified BPC-157 as a Category 2 bulk drug substance in 2023, restricting its availability through compounding pharmacies.
         </p>
       </div>
@@ -225,18 +225,18 @@ const sections = [
     title: "Common Stacks",
     node: (
       <ol className="list-decimal list-inside space-y-1">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standalone use — most common in research.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standalone use — most common in research.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           TB-500 (Wolverine Stack) — the most popular pairing for musculoskeletal recovery. BPC-157 + TB-500 work through complementary mechanisms (growth factor signaling vs cellular migration). See{" "}
           <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">
             Wolverine Stack
           </Link>
           .
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">GHK-Cu — combined for skin and connective tissue repair. Different mechanisms with theoretical synergy.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">KPV — combined for inflammatory bowel research protocols where BPC-157 provides healing and KPV provides anti-inflammatory effects.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">GHRPs (CJC-1295, Ipamorelin) — combined for systemic recovery research where growth hormone signaling supplements BPC-157&apos;s local healing effects.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training — natural pairing for athletic recovery research; mechanical loading is necessary for proper tendon and muscle remodeling.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">GHK-Cu — combined for skin and connective tissue repair. Different mechanisms with theoretical synergy.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">KPV — combined for inflammatory bowel research protocols where BPC-157 provides healing and KPV provides anti-inflammatory effects.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">GHRPs (CJC-1295, Ipamorelin) — combined for systemic recovery research where growth hormone signaling supplements BPC-157&apos;s local healing effects.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training — natural pairing for athletic recovery research; mechanical loading is necessary for proper tendon and muscle remodeling.</li>
       </ol>
     ),
   },
@@ -267,16 +267,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           BPC-157 is not FDA-approved and is classified as a Category 2 bulk drug substance, meaning it cannot be compounded by commercial pharmacies in the US. This restriction was finalized in 2023.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Almost all evidence for BPC-157 is from rodent models. No completed Phase 2 or Phase 3 human clinical trials exist. A Phase 1 safety and pharmacokinetics trial (NCT02637284) was registered but published peer-reviewed results are not available.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Much of the published research originates from a single Croatian research group (Sikiric et al.), creating concentration-of-source bias. Independent replication is limited.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency prohibits BPC-157 in sport under Section S0 (non-approved substances). Research-grade material is sold for laboratory use only and is not approved for human consumption.
         </p>
       </div>
@@ -292,7 +292,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -305,46 +305,46 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Seiwerth S, Brcic L, Vuletic LB, et al. BPC 157 and Standard Angiogenesis. Curr Pharm Des. 2014;20(7):1126-35.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/23782146/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23782146/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tkalcevic VI, Cuzic S, Brajsa K, et al. Enhancement by PL 14736 of granulation and angiogenesis in rats. Eur J Pharmacol. 2007;570(1-3):212-21.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/17588561/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17588561/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Chang CH, Tsai WC, Lin MS, et al. The promoting effect of pentadecapeptide BPC 157 on tendon healing involves tendon outgrowth, cell survival, and cell migration. J Appl Physiol. 2011;110(3):774-80.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21030672/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sikiric P, Hahm KB, Blagaic AB, et al. Stable Gastric Pentadecapeptide BPC 157, Robust Vascular Therapy in Ischemia/Reperfusion Injury. Front Pharmacol. 2018;9:1383.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sikiric P, Seiwerth S, Brcic L, et al. Brain-gut Axis and Pentadecapeptide BPC 157: Theoretical and Practical Implications. Curr Neuropharmacol. 2018;16(10):1401-25.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vasireddi S, Vasireddi A, Sikiric P, et al. Pentadecapeptide BPC 157 in tendon and ligament injuries — systematic review of preclinical evidence. Orthopaedic Journal of Sports Medicine. 2025.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12446177/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12446177/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hsieh MJ, Liu HT, Wang CN, et al. Therapeutic potential of BPC-157 on muscle injury healing. Sci Rep. 2020;10(1):17502.{" "}
           <a href="https://www.nature.com/articles/s41598-020-74552-5" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.nature.com/articles/s41598-020-74552-5
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vukojevic J, Sikiric P, Strbe S, et al. Pentadecapeptide BPC 157 and the central nervous system. Prog Neuropsychopharmacol Biol Psychiatry. 2018;84(Pt B):363-72.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/29017966/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29017966/
@@ -358,7 +358,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -369,7 +369,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -404,7 +404,7 @@ export default function BPC157Page() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             BPC-157 is a 15-amino-acid synthetic peptide derived from a protective protein found in human gastric juice. Researchers have studied it for over 30 years for its remarkable wound healing, tendon repair, and gut protection effects in animal models. Despite 544+ published research articles between 1993 and 2024, no Phase 2 or Phase 3 human clinical trials have been completed. It remains one of the most popular research peptides for soft tissue recovery, with a notable safety profile and unusual stability across a wide pH range.
           </p>
           <div>
@@ -412,29 +412,29 @@ export default function BPC157Page() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Accelerated tendon, ligament, and muscle healing in animal models (often 30–50% faster)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Gastroprotection against NSAIDs, alcohol, and stress-induced ulcers</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduced systemic inflammation markers</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Stable across wide pH range (1–11), allowing oral and injectable delivery</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved peripheral nerve recovery in crush-injury models</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reported reduction in pain and improved mobility within 5–10 days in user reports</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Accelerated tendon, ligament, and muscle healing in animal models (often 30–50% faster)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Gastroprotection against NSAIDs, alcohol, and stress-induced ulcers</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduced systemic inflammation markers</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stable across wide pH range (1–11), allowing oral and injectable delivery</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improved peripheral nerve recovery in crush-injury models</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reported reduction in pain and improved mobility within 5–10 days in user reports</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Most research protocols use 250–500 mcg subcutaneously once or twice daily. Typical cycle length is 4–8 weeks, sometimes extended to 12 weeks for chronic conditions. Oral formulations exist for gut-related research, though injectable produces stronger systemic effects. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> BPC-157 is not FDA-approved and is sold only as a research-grade peptide. The FDA classifies it as a Category 2 bulk drug substance, meaning it cannot be compounded by commercial pharmacies. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current research-grade options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=recovery+tissue+repair+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -453,12 +453,12 @@ export default function BPC157Page() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

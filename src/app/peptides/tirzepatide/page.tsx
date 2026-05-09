@@ -127,30 +127,30 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tirzepatide is administered as a once-weekly subcutaneous injection. The FDA-approved titration schedule starts at 2.5 mg and increases every 4 weeks to allow the body to adapt and minimize gastrointestinal side effects. Maintenance doses range from 5 mg to 15 mg weekly depending on individual tolerance and goals.
         </p>
         <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
           FDA-approved escalation schedule:
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 1–4: 2.5 mg once weekly (initiation dose, not for chronic use)</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 5–8: 5 mg once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 9–12: 7.5 mg once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 13–16: 10 mg once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 17–20: 12.5 mg once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 21+: 15 mg once weekly (maximum dose)</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 1–4: 2.5 mg once weekly (initiation dose, not for chronic use)</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 5–8: 5 mg once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 9–12: 7.5 mg once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 13–16: 10 mg once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 17–20: 12.5 mg once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 21+: 15 mg once weekly (maximum dose)</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Maintenance doses are 5, 10, or 15 mg weekly. Most users continue increasing through the schedule until they reach their target weight loss or hit dose-limiting side effects. Holding at a current dose for an additional 4 weeks if side effects are difficult to tolerate is standard practice and does not appear to reduce long-term outcomes.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The medication has a half-life of about 5 days, supporting once-weekly dosing with steady state reached in roughly 4 weeks at each dose level. Dose adjustments aren&apos;t typically needed for kidney or liver impairment, though dehydration from GI side effects can affect kidney function and should be monitored.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           For research-grade tirzepatide outside FDA-approved use, dosing protocols mirror the approved schedule. There are no separate research-grade dosing standards.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -167,13 +167,13 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — most common, especially during dose escalation. Affects 18–33% of users at peak doses.</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Diarrhea — affects 12–23% of users</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Constipation — affects 6–17%</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Vomiting — affects 8–13%</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Decreased appetite — expected effect, sometimes excessive</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions — mild redness or irritation</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Fatigue — common in the 48–72 hours after injection</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — most common, especially during dose escalation. Affects 18–33% of users at peak doses.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Diarrhea — affects 12–23% of users</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Constipation — affects 6–17%</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Vomiting — affects 8–13%</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Decreased appetite — expected effect, sometimes excessive</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions — mild redness or irritation</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Fatigue — common in the 48–72 hours after injection</li>
           </ol>
         </div>
         <div>
@@ -181,11 +181,11 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Indigestion and acid reflux — common in the first weeks</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Dizziness — typically mild, often related to reduced food intake</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hair shedding — reported during rapid weight loss phases (similar to other rapid-weight-loss interventions)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild liver enzyme elevations — usually resolve without intervention</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hypoglycemia — primarily when combined with insulin or sulfonylureas</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Indigestion and acid reflux — common in the first weeks</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Dizziness — typically mild, often related to reduced food intake</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hair shedding — reported during rapid weight loss phases (similar to other rapid-weight-loss interventions)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild liver enzyme elevations — usually resolve without intervention</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hypoglycemia — primarily when combined with insulin or sulfonylureas</li>
           </ol>
         </div>
         <div>
@@ -193,15 +193,15 @@ const sections = [
             Serious (rare — call a doctor)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Pancreatitis — rare but reported. Symptoms: severe abdominal pain radiating to the back, persistent vomiting, fever</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Gallbladder problems — increased risk in trials. Symptoms: severe pain in upper right abdomen, jaundice, fever</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare. Symptoms: difficulty breathing, swelling of face/throat, hives</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Thyroid C-cell tumors — observed in rats; not confirmed in humans. Tirzepatide carries a boxed warning. Tell your doctor if you have a personal or family history of medullary thyroid carcinoma or MEN-2 syndrome</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Acute kidney injury — risk increases if severe vomiting/diarrhea cause dehydration</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Vision changes — rare but reported, including diabetic retinopathy worsening in users with pre-existing retinopathy</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pancreatitis — rare but reported. Symptoms: severe abdominal pain radiating to the back, persistent vomiting, fever</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Gallbladder problems — increased risk in trials. Symptoms: severe pain in upper right abdomen, jaundice, fever</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare. Symptoms: difficulty breathing, swelling of face/throat, hives</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Thyroid C-cell tumors — observed in rats; not confirmed in humans. Tirzepatide carries a boxed warning. Tell your doctor if you have a personal or family history of medullary thyroid carcinoma or MEN-2 syndrome</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Acute kidney injury — risk increases if severe vomiting/diarrhea cause dehydration</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Vision changes — rare but reported, including diabetic retinopathy worsening in users with pre-existing retinopathy</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Most side effects are mild to moderate and improve as the body adapts. SURMOUNT-5 reported lower discontinuation rates with tirzepatide (2.7%) than semaglutide (5.6%) due to GI events. Tirzepatide carries a boxed warning for thyroid C-cell tumors based on rodent studies; this risk in humans is not established but is the basis for not using tirzepatide in users with personal or family history of medullary thyroid carcinoma.
         </p>
       </div>
@@ -263,13 +263,13 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tirzepatide is FDA-approved for type 2 diabetes (Mounjaro, May 2022), chronic weight management (Zepbound, November 2023), and moderate-to-severe obstructive sleep apnea in adults with obesity (Zepbound expanded approval, December 2024). It is also approved by the European Medicines Agency (EMA) and by regulators in most major markets.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Long-term safety data extends to about 4 years for some users in extension trials. Cardiovascular outcomes trial results from SURPASS-CVOT are pending. The thyroid C-cell tumor signal observed in rats has not been confirmed in humans and is the basis for the boxed warning rather than a documented human risk.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade tirzepatide sold by specialty peptide vendors is intended for laboratory research use only and is not approved for human consumption. The World Anti-Doping Agency prohibits tirzepatide and other GLP-class drugs in sport. Pricing varies by formulation and insurance coverage; brand-name retail in the US runs roughly $1,000–$1,300 per month without insurance.
         </p>
       </div>
@@ -285,7 +285,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -298,7 +298,7 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Frias JP, Davies MJ, Rosenstock J, et al. Tirzepatide versus Semaglutide Once Weekly in Patients with Type 2 Diabetes. N Engl J Med. 2021;385:503-515.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2107519"
@@ -309,7 +309,7 @@ const sections = [
             https://www.nejm.org/doi/full/10.1056/NEJMoa2107519
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Coskun T, Sloop KW, Loghin C, et al. LY3298176, a novel dual GIP and GLP-1 receptor agonist for the treatment of type 2 diabetes mellitus: From discovery to clinical proof of concept. Mol Metab. 2018;18:3-14.{" "}
           <a
             href="https://pubmed.ncbi.nlm.nih.gov/30122483/"
@@ -320,7 +320,7 @@ const sections = [
             https://pubmed.ncbi.nlm.nih.gov/30122483/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Jastreboff AM, Aronne LJ, Ahmad NN, et al. Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1). N Engl J Med. 2022;387:205-216.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2206038"
@@ -331,7 +331,7 @@ const sections = [
             https://www.nejm.org/doi/full/10.1056/NEJMoa2206038
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Aronne LJ, Horn DB, le Roux CW, et al. Tirzepatide as Compared with Semaglutide for the Treatment of Obesity (SURMOUNT-5). N Engl J Med. 2025.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2502212"
@@ -342,7 +342,7 @@ const sections = [
             https://www.nejm.org/doi/full/10.1056/NEJMoa2502212
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Rosenstock J, Wysham C, Frías JP, et al. Efficacy and safety of a novel dual GIP and GLP-1 receptor agonist tirzepatide in patients with type 2 diabetes (SURPASS-1). Lancet. 2021;398(10295):143-155.{" "}
           <a
             href="https://pubmed.ncbi.nlm.nih.gov/34186022/"
@@ -353,7 +353,7 @@ const sections = [
             https://pubmed.ncbi.nlm.nih.gov/34186022/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Eli Lilly. SURPASS-CVOT cardiovascular outcomes trial. ClinicalTrials.gov NCT04255433.{" "}
           <a
             href="https://clinicaltrials.gov/study/NCT04255433"
@@ -364,7 +364,7 @@ const sections = [
             https://clinicaltrials.gov/study/NCT04255433
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Malhotra A, Grunstein RR, Fietze I, et al. Tirzepatide for the Treatment of Obstructive Sleep Apnea and Obesity (SURMOUNT-OSA). N Engl J Med. 2024;391:1193-1205.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2404881"
@@ -375,7 +375,7 @@ const sections = [
             https://www.nejm.org/doi/full/10.1056/NEJMoa2404881
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Packer M, Zile MR, Kramer CM, et al. Tirzepatide for Heart Failure with Preserved Ejection Fraction and Obesity (SUMMIT). N Engl J Med. 2024.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2410027"
@@ -386,7 +386,7 @@ const sections = [
             https://www.nejm.org/doi/full/10.1056/NEJMoa2410027
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Loomba R, Hartman ML, Lawitz EJ, et al. Tirzepatide for Metabolic Dysfunction-Associated Steatohepatitis (SYNERGY-NASH). N Engl J Med. 2024;391:299-310.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2401943"
@@ -405,7 +405,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -416,7 +416,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -451,7 +451,7 @@ export default function TirzepatidePage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Tirzepatide is an FDA-approved peptide for type 2 diabetes (sold as Mounjaro) and chronic weight management (sold as Zepbound). Unlike older GLP-1 drugs that target one receptor, tirzepatide activates two — GLP-1 and GIP — which is why head-to-head trials show it producing more weight loss than semaglutide. It&apos;s the most-prescribed weight loss medication in the United States as of 2026.
           </p>
           <div>
@@ -459,29 +459,29 @@ export default function TirzepatidePage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Significant weight loss (average 20.2% over 72 weeks at max dose in SURMOUNT-5)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Lower blood sugar and A1C in type 2 diabetes</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduced appetite and slower stomach emptying</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in cholesterol and blood pressure</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Better insulin sensitivity</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Roughly 47% more weight loss than semaglutide head-to-head (SURMOUNT-5)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Significant weight loss (average 20.2% over 72 weeks at max dose in SURMOUNT-5)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Lower blood sugar and A1C in type 2 diabetes</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduced appetite and slower stomach emptying</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in cholesterol and blood pressure</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Better insulin sensitivity</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Roughly 47% more weight loss than semaglutide head-to-head (SURMOUNT-5)</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> FDA-approved dosing starts at 2.5 mg once weekly by subcutaneous injection, then increases every 4 weeks (2.5 mg → 5 mg → 7.5 mg → 10 mg → 12.5 mg → 15 mg) up to a maximum of 15 mg weekly. Most users settle at maintenance doses between 10 mg and 15 mg. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for the full schedule.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Tirzepatide is available by prescription as Mounjaro (diabetes) or Zepbound (weight loss) through licensed pharmacies. Research-grade tirzepatide is also widely available through specialty peptide vendors with verified discount codes. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=metabolic+weight+loss+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -500,12 +500,12 @@ export default function TirzepatidePage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

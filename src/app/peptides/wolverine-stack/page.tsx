@@ -95,7 +95,7 @@ const sections = [
     id: "bpc-157-role",
     title: "BPC-157's Role",
     node: (
-      <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+      <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
         In the Wolverine Stack, BPC-157 serves as the primary signaling peptide. It modulates nitric oxide (NO) synthesis — upregulating eNOS in vascular tissue while attenuating excessive iNOS in inflammatory states. It upregulates growth factor expression including VEGF and EGR-1, promoting angiogenesis and fibroblast proliferation. BPC-157 also enhances collagen synthesis and tendon-to-bone insertion remodeling through FAK-paxillin pathway activation. Its short half-life (under 30 minutes) is offset by sustained downstream gene expression effects. See the{" "}
         <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">
           BPC-157 full profile
@@ -108,7 +108,7 @@ const sections = [
     id: "tb-500-role",
     title: "TB-500's Role",
     node: (
-      <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+      <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
         In the Wolverine Stack, TB-500 serves as the primary structural repair peptide. Its core mechanism involves high-affinity binding to monomeric G-actin, sequestering actin monomers to maintain a ready pool for rapid cytoskeletal remodeling. This is critical for directed cellular migration — moving progenitor cells, endothelial cells, keratinocytes, and fibroblasts toward injury sites. TB-500 also upregulates matrix metalloproteinase (MMP) production, promotes angiogenesis through endothelial tube formation, reduces apoptosis, modulates inflammatory cascades, decreases myofibroblast activity (reducing scarring), and mobilizes stem and progenitor cells. Half-life is multiple days, allowing twice-weekly dosing. See the{" "}
         <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">
           TB-500 full profile
@@ -144,19 +144,19 @@ const sections = [
     title: "How to Stack",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           There is no clinically validated combined dosing schedule. The most common research protocols simply layer standard individual dosing for each peptide on top of one another. Both peptides use bacteriostatic water for reconstitution and subcutaneous injection.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157: 250–500 mcg subcutaneously once daily, every day of the cycle</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">TB-500 loading phase (Weeks 1–4): 2.0–2.5 mg subcutaneously twice weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">TB-500 maintenance phase (Weeks 5–8): 2.0 mg subcutaneously once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Total stack cycle: 6–8 weeks</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Off period: 4–6 weeks before another cycle</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Injection sites: rotate between abdomen, thigh, upper arm. BPC-157 can be injected near the injury site (within 0.5–1 inch) for localized benefit. TB-500 is typically given systemically.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Stack-specific timing: no controlled data favors injecting at separate times vs together. Most users inject BPC-157 daily on its own schedule and TB-500 on its loading days regardless.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157: 250–500 mcg subcutaneously once daily, every day of the cycle</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">TB-500 loading phase (Weeks 1–4): 2.0–2.5 mg subcutaneously twice weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">TB-500 maintenance phase (Weeks 5–8): 2.0 mg subcutaneously once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Total stack cycle: 6–8 weeks</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Off period: 4–6 weeks before another cycle</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injection sites: rotate between abdomen, thigh, upper arm. BPC-157 can be injected near the injury site (within 0.5–1 inch) for localized benefit. TB-500 is typically given systemically.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stack-specific timing: no controlled data favors injecting at separate times vs together. Most users inject BPC-157 daily on its own schedule and TB-500 on its loading days regardless.</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           For complete reconstitution and storage details, see the individual{" "}
           <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">
             BPC-157 profile
@@ -197,7 +197,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -210,31 +210,31 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Chang CH, Tsai WC, Lin MS, et al. The promoting effect of pentadecapeptide BPC 157 on tendon healing involves tendon outgrowth, cell survival, and cell migration. J Appl Physiol. 2011;110(3):774-80.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21030672/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vasireddi S, Vasireddi A, Sikiric P, et al. Pentadecapeptide BPC 157 in tendon and ligament injuries — systematic review of preclinical evidence. Orthopaedic Journal of Sports Medicine. 2025.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12446177/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12446177/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hsieh MJ, Liu HT, Wang CN, et al. Therapeutic potential of BPC-157 on muscle injury healing. Sci Rep. 2020;10(1):17502.{" "}
           <a href="https://www.nature.com/articles/s41598-020-74552-5" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.nature.com/articles/s41598-020-74552-5
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kleinman HK, Sosne G. Thymosin β4 Promotes Dermal Healing. Vitam Horm. 2016;102:53-70.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/27450031/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27450031/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Goldstein AL, Hannappel E, Sosne G, Kleinman HK. Thymosin β4: a multi-functional regenerative peptide. Expert Opin Biol Ther. 2012;12(1):37-51.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/22074294/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22074294/
@@ -248,7 +248,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -259,7 +259,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -294,7 +294,7 @@ export default function WolverineStackPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The Wolverine Stack is the popular name for the combination of BPC-157 and TB-500 (Thymosin Beta-4 fragment) — two of the most widely studied tissue-repair peptides in preclinical research. Named for its association with rapid healing, the stack pairs two peptides that operate through distinct but complementary biological mechanisms. BPC-157 works primarily through growth factor modulation, nitric oxide signaling, and angiogenesis. TB-500 works through actin regulation, cellular migration, and stem cell mobilization. Together they address both the signaling that initiates repair and the cellular mechanics that carry it out.
           </p>
           <div>
@@ -302,29 +302,29 @@ export default function WolverineStackPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Accelerated soft-tissue and tendon healing in preclinical injury models</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Enhanced angiogenesis through dual-pathway activation (VEGF + endothelial migration)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Broader anti-inflammatory coverage via complementary NO and cytokine modulation</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved cellular migration and fibroblast delivery to injury sites</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Increased collagen synthesis paired with structural remodeling capacity</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduced scar formation and fibrosis compared to unassisted healing in animal models</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Accelerated soft-tissue and tendon healing in preclinical injury models</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Enhanced angiogenesis through dual-pathway activation (VEGF + endothelial migration)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Broader anti-inflammatory coverage via complementary NO and cytokine modulation</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improved cellular migration and fibroblast delivery to injury sites</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Increased collagen synthesis paired with structural remodeling capacity</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduced scar formation and fibrosis compared to unassisted healing in animal models</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Most research protocols pair standard BPC-157 dosing (250–500 mcg subcutaneously daily) with TB-500 loading-then-maintenance dosing (2.0–2.5 mg twice weekly for 4 weeks, then 2.0 mg weekly). Total stack cycle is typically 6–8 weeks. See{" "}
             <a href="#how-to-stack" className="text-[#0891b2] hover:underline">
               How to Stack
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> BPC-157 and TB-500 are sold separately as research-grade peptides. Neither is FDA-approved. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current research-grade options for both peptides.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=recovery+tissue+repair+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -343,12 +343,12 @@ export default function WolverineStackPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

@@ -135,20 +135,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Semax is administered intranasally as a 0.1% (1 mg/mL) or 1% (10 mg/mL) solution. The intranasal route allows partial nose-to-brain transport via the olfactory and trigeminal nerve pathways. Subcutaneous administration is also used in research contexts. Oral bioavailability is effectively zero — gastric peptidases destroy the molecule.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cognitive enhancement (standard): 600–1,200 mcg/day intranasally via 0.1% solution. Typically split as 1–2 drops per nostril, 2–3 times daily.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Stroke recovery (Russian protocol): 9,000–18,000 mcg/day intranasally via 1% solution, administered within 6–12 hours of ischemic onset, continued for 10–14 days.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Optic nerve disorders: 2–3 drops per nostril, 3–4× daily, for 5–10 days.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Subcutaneous research dosing: 250–1,000 mcg/kg per dose; typical fixed dose 200–600 mcg per injection.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 10–14 days standard. Some users repeat cycles every 1–3 months. Continuous daily long-term use is uncommon in published protocols.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cognitive enhancement (standard): 600–1,200 mcg/day intranasally via 0.1% solution. Typically split as 1–2 drops per nostril, 2–3 times daily.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stroke recovery (Russian protocol): 9,000–18,000 mcg/day intranasally via 1% solution, administered within 6–12 hours of ischemic onset, continued for 10–14 days.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Optic nerve disorders: 2–3 drops per nostril, 3–4× daily, for 5–10 days.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Subcutaneous research dosing: 250–1,000 mcg/kg per dose; typical fixed dose 200–600 mcg per injection.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 10–14 days standard. Some users repeat cycles every 1–3 months. Continuous daily long-term use is uncommon in published protocols.</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Semax has three available variants. Standard Semax (0.1%/1% solution) has the most clinical data. N-Acetyl Semax has 2–3x potency and longer duration. N-Acetyl Semax Amidate (NA-Semax-A) is dramatically more potent (estimated 100–1,000× per microgram) and requires much smaller doses (50–100 mcg). The N-Acetyl variants are less studied and recommended only for users who have established their response to standard Semax.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -165,9 +165,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild nasal dryness or irritation (intranasal route)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Slight overstimulation or mild irritability at higher doses</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild nasal dryness or irritation (intranasal route)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Slight overstimulation or mild irritability at higher doses</li>
           </ol>
         </div>
         <div>
@@ -175,9 +175,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Sleep disturbance if dosed late in the day</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Transient mild dizziness or nausea</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue after end of dosing window</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Sleep disturbance if dosed late in the day</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Transient mild dizziness or nausea</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue after end of dosing window</li>
           </ol>
         </div>
         <div>
@@ -185,12 +185,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No serious adverse events reported in published Russian clinical literature spanning 30+ years</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No addictive potential or withdrawal syndrome documented</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Long-term safety beyond 14-day cycles in healthy individuals not formally established</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No serious adverse events reported in published Russian clinical literature spanning 30+ years</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No addictive potential or withdrawal syndrome documented</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term safety beyond 14-day cycles in healthy individuals not formally established</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Semax has one of the cleanest safety profiles of any nootropic peptide. Decades of Russian pharmaceutical use plus extensive preclinical toxicological studies show no serious adverse events, no addiction, no withdrawal, and no HPA-axis activation. The most common issues are local (nasal irritation) or due to overstimulation (resolves with dose reduction). Long-term continuous daily use beyond standard 10–14 day cycles has limited published data.
         </p>
       </div>
@@ -214,17 +214,17 @@ const sections = [
     title: "Common Stacks",
     node: (
       <ol className="list-decimal list-inside space-y-1">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Selank — the gold standard pairing. Semax for cognitive enhancement (BDNF, dopamine) + Selank for anxiolysis (GABA, serotonin) creates balanced nootropic effect. Most experienced users dose Semax in morning, Selank in afternoon/evening. See{" "}
           <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">
             Selank
           </Link>
           .
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Caffeine — anecdotally combined for amplified focus, though no controlled studies on the combination.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 — combined for general health/recovery support; no direct interaction.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">L-Theanine — added to take edge off any potential overstimulation.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Adequate sleep — essential. Semax effects are weakened by sleep deprivation. Bedtime hygiene matters more than dose timing.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Caffeine — anecdotally combined for amplified focus, though no controlled studies on the combination.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 — combined for general health/recovery support; no direct interaction.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">L-Theanine — added to take edge off any potential overstimulation.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Adequate sleep — essential. Semax effects are weakened by sleep deprivation. Bedtime hygiene matters more than dose timing.</li>
       </ol>
     ),
   },
@@ -255,16 +255,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Semax is approved in Russia and Ukraine as a prescription medication for ischemic stroke recovery, cognitive impairment, and optic nerve disorders. It is NOT FDA-approved in the United States or EMA-approved in Europe. Most clinical evidence comes from Russian-language journals that have not been replicated in large randomized Western trials.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The mechanism of action remains incompletely characterized. The most consistent finding (BDNF upregulation) is well-replicated in animal models but lacks equivalent human mechanistic studies. Effects on cognitive performance in healthy individuals are documented in Russian literature but are largely absent from Western peer-reviewed research.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade material sold outside Russian pharmaceutical channels is intended for laboratory use only. Purity and potency vary by vendor — third-party testing is recommended before use.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency does not currently include Semax on the prohibited list, but this status may change as the peptide attracts more attention in performance contexts.
         </p>
       </div>
@@ -280,7 +280,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -293,34 +293,34 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dolotov OV, Karpenko EA, Inozemtseva LS, et al. Semax, an analog of adrenocorticotropin (4-10), binds specifically and increases levels of brain-derived neurotrophic factor protein in rat basal forebrain. J Neurochem. 2006;97(suppl 1):82-86.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/16635258/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16635258/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Eremin KO, Kudrin VS, Saransaari P, et al. Semax, an ACTH(4-10) analogue with nootropic properties, activates dopaminergic and serotoninergic brain systems in rodents. Neurochem Res. 2005;30(12):1493-500.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/16362770/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16362770/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Semax.{" "}
           <a href="https://en.wikipedia.org/wiki/Semax" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/Semax
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ashmarin IP, Nezavibatko VN, Levitskaya NG, et al. Design and investigation of an ACTH(4-10) analog lacking D-amino acids and hydrophobic radicals. Neurosci Res Commun. 1995;16:105-12.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Gusev EI, Skvortsova VI, Miasoedov NF, et al. Effectiveness of Semax in the acute period of hemispheric ischemic stroke (a clinical and electrophysiological study). Zh Nevrol Psikhiatr Im S S Korsakova. 1997;97(6):26-34.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/9244639/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9244639/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Romanova GA, Shakova FM, Barskov IV, et al. Disturbance of learning and memory in rats with photothrombotic infarcts in the prefrontal cortex; protective effect of Semax. Bull Exp Biol Med. 2006;142(6):746-9.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/17603663/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17603663/
@@ -334,7 +334,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -345,7 +345,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -380,7 +380,7 @@ export default function SemaxPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Semax is a synthetic heptapeptide (Met-Glu-His-Phe-Pro-Gly-Pro) developed in the 1980s at the Institute of Molecular Genetics of the Russian Academy of Sciences. It combines the ACTH(4-7) fragment of adrenocorticotropic hormone with a Pro-Gly-Pro stabilizing tail that protects against rapid enzymatic degradation. Despite its short plasma half-life (~2-3 minutes), Semax produces long-lasting nootropic and neuroprotective effects through upregulation of brain-derived neurotrophic factor (BDNF) and nerve growth factor (NGF) in the hippocampus and cortex. It is approved in Russia for ischemic stroke recovery and cognitive impairment but has no FDA or EMA approval. Semax does NOT activate the HPA axis or stimulate cortisol, distinguishing it pharmacologically from full-length ACTH.
           </p>
           <div>
@@ -388,29 +388,29 @@ export default function SemaxPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cognitive enhancement: improved focus, memory, and mental clarity</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">BDNF and NGF upregulation in hippocampus and cortex</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Neuroprotection: reduces ischemic damage in animal stroke models</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Modulates serotonergic and dopaminergic systems</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No HPA axis activation, no cortisol elevation, no addiction or withdrawal</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Russian-approved for stroke recovery and cognitive impairment</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cognitive enhancement: improved focus, memory, and mental clarity</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">BDNF and NGF upregulation in hippocampus and cortex</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Neuroprotection: reduces ischemic damage in animal stroke models</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Modulates serotonergic and dopaminergic systems</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No HPA axis activation, no cortisol elevation, no addiction or withdrawal</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Russian-approved for stroke recovery and cognitive impairment</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Standard cognitive-enhancement dose: 600–1,200 mcg/day intranasally via 0.1% solution, typically split across the day. Stroke recovery protocols: 9,000–18,000 mcg/day intranasally via 1% solution. Cycles are typically 10–14 days. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Semax is approved as a prescription medication in Russia and Ukraine but is not FDA-approved in the US. It is sold by specialty research peptide vendors as research-grade material. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=cognitive+nootropic+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -429,12 +429,12 @@ export default function SemaxPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

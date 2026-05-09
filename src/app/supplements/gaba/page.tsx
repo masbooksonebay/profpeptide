@@ -27,7 +27,7 @@ export default function GABAPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             GABA (gamma-aminobutyric acid) is the primary inhibitory neurotransmitter in the central nervous system — responsible for reducing neural excitability and promoting calm, relaxation, and sleep. It is synthesized naturally in the brain from glutamate by the enzyme glutamic acid decarboxylase. The traditional view held that oral GABA could not cross the blood-brain barrier and was therefore ineffective as a supplement — and for standard synthetic GABA, this concern remains debated. However, more recent research suggests oral GABA may exert effects through peripheral GABA receptors in the gut, vagus nerve stimulation, and possibly direct CNS effects at higher doses. More notably, GABA supplementation has been shown to significantly increase growth hormone secretion both at rest and following exercise — a mechanism that has generated interest in its use for recovery, body composition, and sleep quality.
           </p>
         </div>
@@ -56,14 +56,14 @@ export default function GABAPage() {
               "Peripheral GABA Receptors — Oral GABA may activate GABA receptors in the enteric nervous system (gut-brain axis) and stimulate vagal afferent neurons, transmitting inhibitory signals to the brain indirectly — potentially explaining anxiolytic effects despite limited BBB penetration.",
               "Growth Hormone Stimulation — GABA's most surprising documented effect is significant growth hormone release. A landmark study by Powers et al. found that 3g oral GABA at rest increased immunoreactive GH by 400% and immunofunctional GH by 200% compared to placebo. Combined with exercise, the GH increase was even greater. The mechanism likely involves GABA's inhibition of somatostatin — the hormone that suppresses GH release.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The landmark GH study by Powers et al. (2008) found 3g GABA significantly increased both resting and post-exercise GH levels — with immunoreactive GH increasing 400% at rest and 200% after exercise compared to placebo. A 2009 study confirmed GABA supplementation increases GH levels. Sleep research shows oral GABA (100–300mg) reduces time to sleep onset and improves sleep quality in stressed individuals. PharmaGABA — a naturally fermented form — appears to have better evidence for CNS effects than synthetic GABA in some research. Anxiety research shows modest reductions in anxiety markers with GABA supplementation, though CNS penetration remains debated.
           </p>
         </div>
@@ -77,14 +77,14 @@ export default function GABAPage() {
               "PharmaGABA: 100–200mg — naturally fermented form with possibly superior CNS effects",
               "Timing: Evening or post-workout for GH and sleep applications",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Generally well tolerated. Common mild side effects include tingling, drowsiness, and changes in breathing pattern at higher doses. The drowsiness effect is intentional for sleep applications. Not recommended with alcohol or sedative medications due to additive CNS depression. Driving or operating machinery after high doses is not recommended. Pregnancy and breastfeeding: insufficient safety data — avoid.
           </p>
         </div>
@@ -101,7 +101,7 @@ export default function GABAPage() {
               "Powers ME, et al. Growth hormone isoform responses to GABA ingestion at rest and after exercise. Medicine & Science in Sports & Exercise. 2008.",
               "Abdou AM, et al. Relaxation and immunity enhancement effects of GABA administration in humans. Biofactors. 2006.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

@@ -132,22 +132,22 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cagrilintide is administered as a once-weekly subcutaneous injection. The dose escalates every 4 weeks to allow tolerance. CagriSema combines cagrilintide and semaglutide in a single fixed-dose injection.
         </p>
         <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
           Cagrilintide escalation schedule:
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 1–4: 0.16 mg or 0.30 mg once weekly (initiation)</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 5–8: 0.30 mg or 0.60 mg</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 9–12: 1.20 mg</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 13–16: 2.40 mg (target maintenance)</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 1–4: 0.16 mg or 0.30 mg once weekly (initiation)</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 5–8: 0.30 mg or 0.60 mg</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 9–12: 1.20 mg</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 13–16: 2.40 mg (target maintenance)</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           CagriSema 2.4 mg/2.4 mg is the FDA-submitted formulation, combining cagrilintide 2.4 mg and semaglutide 2.4 mg in a single weekly injection. Research-grade cagrilintide is dosed similarly to the trial schedule.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -164,12 +164,12 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — most common, dose-dependent. Affects similar percentage as GLP-class drugs.</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Vomiting</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Diarrhea</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Constipation</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Decreased appetite</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — most common, dose-dependent. Affects similar percentage as GLP-class drugs.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Vomiting</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Diarrhea</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Constipation</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Decreased appetite</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions</li>
           </ol>
         </div>
         <div>
@@ -177,9 +177,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Indigestion and bloating</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Fatigue</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Headache</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Indigestion and bloating</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Fatigue</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache</li>
           </ol>
         </div>
         <div>
@@ -187,13 +187,13 @@ const sections = [
             Serious (rare — call a doctor)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Pancreatitis — class-effect concern with appetite-suppressing peptides</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Gallbladder problems</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hypoglycemia in users with diabetes on insulin/sulfonylureas</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pancreatitis — class-effect concern with appetite-suppressing peptides</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Gallbladder problems</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hypoglycemia in users with diabetes on insulin/sulfonylureas</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           REDEFINE 1 and REDEFINE 2 trials reported low single-digit discontinuation rates due to adverse events with CagriSema, lower than some GLP-class drugs. 72.5% of CagriSema participants reported at least one GI adverse event — most transient and mild to moderate.
         </p>
       </div>
@@ -252,13 +252,13 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cagrilintide is investigational and not approved by the FDA, EMA, or any major regulatory body. Novo Nordisk submitted a New Drug Application for CagriSema (cagrilintide + semaglutide) to the FDA in December 2025. Cagrilintide monotherapy is not currently in active development for approval; the focus is the combination product.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Long-term safety data extends to 68 weeks from REDEFINE 1. Cardiovascular outcomes data is not yet available. The amylin/calcitonin pathway has been used clinically (pramlintide is FDA-approved for diabetes), so the mechanism class has an established safety record, but the long-acting cagrilintide molecule is newer.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade cagrilintide sold by specialty peptide vendors is intended for laboratory research use only and is not approved for human consumption. The World Anti-Doping Agency prohibits cagrilintide and other peptide hormones in sport.
         </p>
       </div>
@@ -274,7 +274,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -287,31 +287,31 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lau DCW, Erichsen L, Francisco AM, et al. Once-weekly cagrilintide for weight management in people with overweight and obesity: a multicentre, randomised, double-blind, placebo-controlled and active-controlled, dose-finding phase 2 trial. Lancet. 2021;398(10317):2160-72.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/34798060/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/34798060/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Enebo LB, Berthelsen KK, Kankam M, et al. Safety, tolerability, pharmacokinetics, and pharmacodynamics of concomitant administration of multiple doses of cagrilintide with semaglutide 2·4 mg. Lancet. 2021;397(10286):1736-48.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/33894838/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33894838/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Garvey WT, Birkenfeld AL, Dicker D, et al. Once-Weekly CagriSema for the Treatment of Obesity (REDEFINE 1). N Engl J Med. 2025.{" "}
           <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2502486" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.nejm.org/doi/full/10.1056/NEJMoa2502486
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Frias JP, Dahl D, Aronne LJ, et al. Preclinical and clinical evidence for amylin/GLP-1 combination therapy advantages. The Innovation Medicine. 2025.{" "}
           <a href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2025.100150" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2025.100150
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Davies M, Pratley R, et al. Once-Weekly CagriSema in Adults with Obesity and Type 2 Diabetes (REDEFINE 2). N Engl J Med. 2025.
         </li>
       </ol>
@@ -322,7 +322,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -333,7 +333,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -368,7 +368,7 @@ export default function CagrilintidePage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Cagrilintide is an investigational long-acting amylin analogue developed by Novo Nordisk for chronic weight management. It works by mimicking amylin, a hormone the pancreas releases alongside insulin after meals. Combined with semaglutide as CagriSema, it produced 20.4% average weight loss in the Phase 3 REDEFINE 1 trial (NEJM 2025) — competitive with tirzepatide and approaching retatrutide&apos;s efficacy. Novo Nordisk filed an FDA New Drug Application for CagriSema in December 2025.
           </p>
           <div>
@@ -376,29 +376,29 @@ export default function CagrilintidePage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">20.4% body weight loss with CagriSema combination over 68 weeks (REDEFINE 1, NEJM 2025)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Up to 23% weight loss when participants stayed on treatment as planned</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduced appetite and slower stomach emptying via amylin pathway</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Preserves lean mass better than GLP-class drugs alone in preclinical data</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in blood pressure, lipids, and glycemic markers</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Lower discontinuation rates than tirzepatide in REDEFINE trials</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">20.4% body weight loss with CagriSema combination over 68 weeks (REDEFINE 1, NEJM 2025)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Up to 23% weight loss when participants stayed on treatment as planned</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduced appetite and slower stomach emptying via amylin pathway</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Preserves lean mass better than GLP-class drugs alone in preclinical data</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in blood pressure, lipids, and glycemic markers</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Lower discontinuation rates than tirzepatide in REDEFINE trials</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Cagrilintide is dosed at 0.16 mg, 0.30 mg, 0.60 mg, 1.20 mg, or 2.40 mg once weekly via subcutaneous injection. Dose escalation occurs every 4 weeks. CagriSema (the FDA-submitted formulation) uses cagrilintide 2.4 mg + semaglutide 2.4 mg as a fixed-dose combination. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Cagrilintide is not yet FDA-approved. CagriSema is under FDA review (NDA filed December 2025). Research-grade cagrilintide is available through specialty peptide vendors with verified discount codes. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=metabolic+weight+loss+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -417,12 +417,12 @@ export default function CagrilintidePage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

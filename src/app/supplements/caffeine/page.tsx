@@ -27,7 +27,7 @@ export default function CaffeinePage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Caffeine is a naturally occurring methylxanthine alkaloid found in coffee, tea, cacao, and many other plants. It is the most widely consumed psychoactive substance in the world — with over 80% of adults consuming it daily — and also one of the most extensively researched. Unlike many supplements, caffeine has decades of high-quality human research across multiple domains: cognitive performance, physical performance, fat oxidation, thermogenesis, and metabolic rate. It is classified as GRAS (Generally Recognized As Safe) by the FDA. Caffeine&apos;s metabolic effects are particularly well established — it increases resting metabolic rate by 3–11%, significantly enhances fat oxidation (especially when taken before exercise), and is a core component of virtually every evidence-based fat loss formulation. It also has one of the strongest safety profiles of any supplement when used at moderate doses.
           </p>
         </div>
@@ -59,14 +59,14 @@ export default function CaffeinePage() {
               "Fat Oxidation Enhancement — Caffeine increases fat oxidation by 10–29% during moderate-intensity exercise by increasing hormone-sensitive lipase activity and shifting fuel utilization toward fat. Combined with EGCG from green tea, the fat oxidation effect is amplified synergistically.",
               "Phosphodiesterase Inhibition — Caffeine inhibits phosphodiesterase, the enzyme that breaks down cAMP — increasing intracellular cAMP and amplifying adrenergic signaling.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Performance research is among the most robust of any supplement. Meta-analyses confirm caffeine improves endurance performance by 2–4%, strength by 1–3%, and power output across multiple exercise modalities. Cognitive research shows improvements in alertness, reaction time, memory consolidation, and sustained attention. Fat oxidation meta-analyses confirm significant increases in fat burning during exercise. A dose of 3–6mg/kg body weight is considered the optimal performance-enhancing range. Long-term coffee consumption is consistently associated with reduced risk of type 2 diabetes, Parkinson&apos;s disease, liver disease, and all-cause mortality in epidemiological research.
           </p>
         </div>
@@ -81,14 +81,14 @@ export default function CaffeinePage() {
               "Sleep: Avoid within 6 hours of bedtime — caffeine half-life is 5–6 hours",
               "Sources: Coffee (~95mg per cup), tea (~50mg), energy drinks (80–300mg), anhydrous tablets (200mg)",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Very safe at moderate doses (up to 400mg/day for healthy adults — FDA guidance). Dose-dependent side effects at higher doses: anxiety, jitteriness, increased heart rate, insomnia, GI upset. Habitual use creates physical dependence — withdrawal symptoms include headache and fatigue (typically resolve within 2–3 days). Not recommended in high doses during pregnancy (limit to 200mg/day). May interact with certain medications. High doses (above 600mg) not recommended.
           </p>
         </div>
@@ -100,7 +100,7 @@ export default function CaffeinePage() {
               "Goldstein ER, et al. International society of sports nutrition position stand: caffeine and performance. J Int Soc Sports Nutr. 2010.",
               "Astrup A, et al. Caffeine: A double-blind, placebo-controlled study of its thermogenic, metabolic, and cardiovascular effects in healthy volunteers. Am J Clin Nutr. 1990.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

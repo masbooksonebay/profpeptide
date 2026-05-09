@@ -27,7 +27,7 @@ export default function ZincCarnosinePage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Zinc carnosine (polaprezinc) is a chelated compound of zinc and the dipeptide L-carnosine in a 1:1 molar ratio. This chelation is critical — it creates a compound with dramatically different properties and gut-specific benefits compared to taking zinc and carnosine separately. Zinc carnosine has been used as a prescription medication in Japan since 1994 for the treatment of gastric ulcers and H. pylori infection, and has accumulated an impressive evidence base for gut mucosal protection, repair, and integrity. It is now widely used in functional medicine as a foundational gut healing compound. Its benefits extend beyond the stomach to the entire GI tract — supporting the intestinal barrier, reducing gut permeability, and accelerating healing of damaged mucosal tissue. It is often used as part of protocols for leaky gut, NSAID-induced GI damage, and athletic gut issues.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function ZincCarnosinePage() {
               "Tight Junction Support — Zinc carnosine supports the integrity of tight junctions between intestinal epithelial cells — the molecular \"zippers\" that control what passes through the gut wall. By strengthening tight junctions, it reduces intestinal hyperpermeability (leaky gut).",
               "Heat Shock Protein Induction — Zinc carnosine induces heat shock proteins in gut mucosal cells, which protect cells from stress and accelerate repair after damage.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A 2001 double-blind RCT found zinc carnosine significantly improved gastric ulcer healing rates vs. placebo over 8 weeks. Multiple studies confirm benefits for H. pylori eradication when added to standard antibiotic triple therapy. A landmark 2011 study by Davison et al. found that zinc carnosine supplementation significantly reduced exercise-induced gut permeability increases in endurance athletes — a significant finding for athlete gut health. Research on NSAID users shows zinc carnosine protects against NSAID-induced gastric damage and small intestinal permeability increases. Clinical use in Japan for over 30 years provides substantial real-world safety and efficacy data.
           </p>
         </div>
@@ -79,14 +79,14 @@ export default function ZincCarnosinePage() {
               "Duration: Gut healing benefits typically seen over 4–8 weeks",
               "Note: Often used as part of a broader gut healing protocol with probiotics, glutamine, and collagen",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Excellent safety profile — used as a prescription drug in Japan for 30+ years with a well-established record. Most common minor effects are mild GI symptoms. Zinc content means caution with high-dose zinc from multiple sources — zinc toxicity is possible with excessive combined intake (upper limit 40mg elemental zinc daily). Not recommended in pregnancy without medical supervision.
           </p>
         </div>
@@ -98,7 +98,7 @@ export default function ZincCarnosinePage() {
               "Mahmood A, et al. Zinc carnosine, a health food supplement that stabilises small bowel integrity and stimulates gut repair processes. Gut. 2007.",
               "Davison G, et al. Zinc carnosine works with bovine colostrum in truncating heavy exercise-induced increase in gut permeability in healthy volunteers. Am J Clin Nutr. 2016.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

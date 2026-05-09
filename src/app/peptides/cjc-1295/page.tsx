@@ -126,20 +126,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           CJC-1295 dosing depends on whether DAC is included. With DAC, the long half-life allows weekly dosing. Without DAC (Modified GRF 1-29), the short half-life requires multiple daily doses, typically paired with a GHRP like ipamorelin.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">CJC-1295 with DAC: 1–2 mg subcutaneously once or twice weekly; sustained GH elevation between doses</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">CJC-1295 without DAC (Modified GRF 1-29): 100 mcg per dose, 2–3 times daily, ideally 30+ minutes after a meal</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Stack dosing: 100 mcg CJC-1295 (no DAC) + 100–300 mcg ipamorelin together at bedtime is the most common protocol</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 8–12 weeks on, with at least 4 weeks off</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Empty stomach: insulin spikes from food blunt GH release — dose 2+ hours after eating and wait 30 min before next meal</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">CJC-1295 with DAC: 1–2 mg subcutaneously once or twice weekly; sustained GH elevation between doses</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">CJC-1295 without DAC (Modified GRF 1-29): 100 mcg per dose, 2–3 times daily, ideally 30+ minutes after a meal</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stack dosing: 100 mcg CJC-1295 (no DAC) + 100–300 mcg ipamorelin together at bedtime is the most common protocol</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 8–12 weeks on, with at least 4 weeks off</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Empty stomach: insulin spikes from food blunt GH release — dose 2+ hours after eating and wait 30 min before next meal</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           DAC vs no-DAC choice: most experienced users prefer CJC-1295 without DAC because it preserves pulsatile GH dynamics that more closely mimic physiology. The DAC version produces a more &ldquo;flooded&rdquo; GH environment, which some users prefer for convenience but others find produces more side effects. Both are effective.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -156,9 +156,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild facial flushing or warmth (transient, due to vasodilation)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Headache (especially with first doses or higher doses)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild facial flushing or warmth (transient, due to vasodilation)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache (especially with first doses or higher doses)</li>
           </ol>
         </div>
         <div>
@@ -166,9 +166,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fluid retention or bloating</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Numbness or tingling (carpal-tunnel-like, similar to direct GH use)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Joint pain or stiffness</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fluid retention or bloating</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Numbness or tingling (carpal-tunnel-like, similar to direct GH use)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Joint pain or stiffness</li>
           </ol>
         </div>
         <div>
@@ -176,12 +176,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Long-term cardiovascular safety not established</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing tumors due to GH/IGF-1 elevation</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">One Phase 2 trial subject death — investigation concluded the cause was unrelated coronary artery disease, not CJC-1295 itself</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term cardiovascular safety not established</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing tumors due to GH/IGF-1 elevation</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">One Phase 2 trial subject death — investigation concluded the cause was unrelated coronary artery disease, not CJC-1295 itself</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           CJC-1295 was generally well-tolerated in human Phase 1 and 2 trials. The Phase 2 trial subject death noted above was investigated and the attending physician concluded the most likely cause was asymptomatic coronary artery disease unrelated to treatment. However, this incident contributed to the discontinuation of clinical development. Long-term safety data beyond Phase 2 trials does not exist.
         </p>
       </div>
@@ -206,17 +206,17 @@ const sections = [
     title: "Common Stacks",
     node: (
       <ol className="list-decimal list-inside space-y-1">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ipamorelin — the most popular pairing. Ipamorelin (ghrelin receptor) + CJC-1295 (GHRH receptor) produces synergistic GH release through dual-pathway activation. See{" "}
           <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">
             Ipamorelin
           </Link>
           .
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 / TB-500 — paired for recovery support during anabolic protocols.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">IGF-1 LR3 — combined for direct IGF-1 receptor activation alongside endogenous GH stimulation. Different mechanisms, additive effects.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Sermorelin — generally NOT stacked with CJC-1295. Both target the GHRH receptor — combining is redundant. Choose one.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training — exercise-induced GH release amplified when paired with CJC-1295.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 / TB-500 — paired for recovery support during anabolic protocols.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">IGF-1 LR3 — combined for direct IGF-1 receptor activation alongside endogenous GH stimulation. Different mechanisms, additive effects.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Sermorelin — generally NOT stacked with CJC-1295. Both target the GHRH receptor — combining is redundant. Choose one.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training — exercise-induced GH release amplified when paired with CJC-1295.</li>
       </ol>
     ),
   },
@@ -247,16 +247,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           CJC-1295 is not FDA-approved for any human use. Development by ConjuChem reached Phase 2 trials but was discontinued. The Phase 2 program included one subject death, attributed by the attending physician to unrelated coronary artery disease — but the incident contributed to halting development.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Most clinical evidence comes from short-term Phase 1 and 2 studies (typically 28-day exposure). Long-term safety data beyond a few months does not exist. Cardiovascular safety with sustained use has not been established.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency prohibits CJC-1295 (with or without DAC) in sport under Section S2 (peptide hormones). Research-grade material is sold for laboratory use only and is not approved for human consumption.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Note that CJC-1295 and Modified GRF (1-29) are sometimes confused in commercial labeling. Strict definitions: CJC-1295 with DAC includes the maleimidopropionyl-lysine extension; Modified GRF (1-29), also called CJC-1295 without DAC, lacks this extension. Verify the form before purchase.
         </p>
       </div>
@@ -272,7 +272,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -285,31 +285,31 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. CJC-1295.{" "}
           <a href="https://en.wikipedia.org/wiki/CJC-1295" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/CJC-1295
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Teichman SL, Neale A, Lawrence B, et al. Prolonged stimulation of growth hormone (GH) and insulin-like growth factor I secretion by CJC-1295 in healthy adults. J Clin Endocrinol Metab. 2006;91(3):799-805.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/16352683/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16352683/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ionescu M, Frohman LA. Pulsatile secretion of growth hormone (GH) persists during continuous stimulation by CJC-1295, a long-acting GHRH analog. J Clin Endocrinol Metab. 2006;91(12):4792-7.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/17018654/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17018654/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sackmann-Sala L, Ding J, Frohman LA, Kopchick JJ. Activation of the GH/IGF-1 axis by CJC-1295, a long-acting GHRH analog, results in serum protein profile changes in normal adult subjects. Growth Horm IGF Res. 2009;19(6):471-7.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/19467607/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/19467607/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Alba M, Fintini D, Sagazio A, et al. Once-daily administration of CJC-1295, a long-acting growth hormone-releasing hormone (GHRH) analog, normalizes growth in the GHRH knockout mouse. Am J Physiol Endocrinol Metab. 2006;291(6):E1290-4.{" "}
           <a href="https://journals.physiology.org/doi/full/10.1152/ajpendo.00201.2006" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://journals.physiology.org/doi/full/10.1152/ajpendo.00201.2006
@@ -323,7 +323,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -334,7 +334,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -369,7 +369,7 @@ export default function CJC1295Page() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             CJC-1295 is a synthetic 30-amino-acid analog of growth hormone-releasing hormone (GHRH) developed by ConjuChem Biotechnologies. It exists in two forms: CJC-1295 with DAC (Drug Affinity Complex) and CJC-1295 without DAC (also called Modified GRF 1-29). The DAC modification binds the peptide to serum albumin, extending its half-life from ~30 minutes to 6–8 days. Both forms stimulate pulsatile GH release via the GHRH receptor on pituitary somatotroph cells. CJC-1295 reached Phase 2 clinical trials before development was discontinued. It remains one of the most-studied research peptides for GH-axis stimulation, especially when stacked with ipamorelin or other GHRPs.
           </p>
           <div>
@@ -377,29 +377,29 @@ export default function CJC1295Page() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates pulsatile growth hormone release via GHRH receptor activation</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Increases IGF-1 levels with sustained elevation (6–14 days for DAC version)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Preserves natural physiological GH rhythm vs continuous GH administration</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Supports lean muscle growth, fat reduction, and recovery (downstream of GH)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Synergizes strongly with GHRPs like ipamorelin for amplified GH release</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">DAC version requires only 1–2 injections per week vs daily for non-DAC</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates pulsatile growth hormone release via GHRH receptor activation</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Increases IGF-1 levels with sustained elevation (6–14 days for DAC version)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Preserves natural physiological GH rhythm vs continuous GH administration</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Supports lean muscle growth, fat reduction, and recovery (downstream of GH)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Synergizes strongly with GHRPs like ipamorelin for amplified GH release</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">DAC version requires only 1–2 injections per week vs daily for non-DAC</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> With DAC: typically 1–2 mg subcutaneously once or twice weekly. Without DAC (Modified GRF 1-29): typically 100 mcg per dose, multiple times daily. Cycle length 8–12 weeks. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> CJC-1295 is not FDA-approved and is sold only as a research-grade peptide. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current research-grade options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=growth+hormone+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -418,12 +418,12 @@ export default function CJC1295Page() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

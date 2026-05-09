@@ -27,7 +27,7 @@ export default function ZMAPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             ZMA is a patented combination of zinc monomethionine aspartate, magnesium aspartate, and vitamin B6 (pyridoxine) — formulated specifically to optimize absorption of these minerals and support athletic recovery, sleep quality, and hormonal health. The formulation was developed by Victor Conte (SNAC System) based on research showing that intense exercise depletes zinc and magnesium through sweat and urine, and that these deficiencies are common in athletes. Zinc and magnesium are both essential minerals with critical roles in testosterone synthesis, protein synthesis, immune function, and sleep regulation. Vitamin B6 enhances the absorption of both minerals. ZMA works most effectively in individuals who are deficient or suboptimal in zinc and magnesium — which research suggests includes a significant proportion of athletes and active individuals. It is not a direct GH secretagogue but supports the hormonal environment — particularly testosterone and sleep quality — that optimizes GH release during sleep.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function ZMAPage() {
               "Magnesium and Muscle Function — Magnesium is required for over 300 enzymatic reactions including ATP synthesis and muscle relaxation. Exercise-depleted magnesium contributes to cramping, poor recovery, and suboptimal strength.",
               "Vitamin B6 Synergy — Pyridoxine (B6) enhances zinc and magnesium absorption and also serves as a cofactor for serotonin and GABA synthesis — supporting mood and sleep quality independently.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The original ZMA study by Brilla and Conte (2000) in NCAA football players found ZMA supplementation significantly increased free testosterone by 32.4% and IGF-1 by 3.6% vs. placebo, and improved muscle strength. However, a follow-up study by Wilborn et al. could not replicate the testosterone findings in athletes with adequate zinc and magnesium at baseline — supporting the conclusion that ZMA&apos;s benefits are most pronounced in deficient individuals. Sleep research on magnesium consistently shows improved sleep quality, particularly in older adults and those with suboptimal intake. Zinc research confirms its essential role in testosterone production and immune function. A 2022 meta-analysis confirmed magnesium supplementation significantly improves sleep quality.
           </p>
         </div>
@@ -79,14 +79,14 @@ export default function ZMAPage() {
               "Duration: Benefits of mineral repletion develop over 4–8 weeks",
               "Note: Individual zinc and magnesium supplements can replicate ZMA at lower cost if patented form is not required",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Generally well tolerated. Zinc at high doses (above 40mg daily) can cause nausea, copper depletion, and immune suppression — stay within recommended doses. Magnesium at high doses causes loose stools — magnesium glycinate is the gentlest form. B6 at very high doses (above 200mg daily, far above ZMA amounts) can cause nerve damage — not a concern at ZMA doses. May cause vivid dreams in some users — a commonly reported and generally benign effect.
           </p>
         </div>
@@ -103,7 +103,7 @@ export default function ZMAPage() {
               "Brilla LR, Conte V. Effects of a novel zinc-magnesium formulation on hormones and strength. J Exerc Physiol. 2000.",
               "Wilborn CD, et al. Effects of zinc magnesium aspartate supplementation on training adaptations and markers of anabolism and catabolism. J Int Soc Sports Nutr. 2004.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

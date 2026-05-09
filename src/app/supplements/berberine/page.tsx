@@ -32,7 +32,7 @@ export default function BerberinePage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Berberine is a bioactive isoquinoline alkaloid extracted from several plants including Berberis vulgaris (barberry), Coptis chinensis (goldenseal), and Phellodendron amurense. It has been used in traditional Chinese medicine for thousands of years — originally for gastrointestinal infections — and has emerged as one of the most extensively researched natural compounds for metabolic health. It is often called &quot;nature&apos;s metformin&quot; because its mechanisms and clinical effects closely parallel those of the leading diabetes medication, and a landmark clinical study found berberine&apos;s hypoglycemic effect to be similar to metformin in newly diagnosed type 2 diabetic patients. Berberine activates AMPK — the master metabolic switch — producing downstream effects on blood sugar regulation, lipid metabolism, insulin sensitivity, and fat storage. It is one of the few supplements with a substantial body of randomized controlled trial evidence supporting its efficacy.
           </p>
         </div>
@@ -65,14 +65,14 @@ export default function BerberinePage() {
               "Gut Microbiome Modulation — Berberine modulates gut microbiota composition, reducing harmful bacteria and increasing beneficial species. This contributes to improved metabolic parameters and reduced systemic inflammation.",
               "GLP-1 Induction — Berberine induces secretion of glucagon-like peptide-1 (GLP-1) from intestinal L cells — the same pathway targeted by semaglutide and tirzepatide — contributing to improved insulin secretion and appetite regulation.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A landmark pilot RCT compared berberine to metformin (0.5g three times daily) in 36 newly diagnosed type 2 diabetic patients over 3 months. Berberine produced comparable HbA1c reduction (from 9.5% to 7.5%) and similar improvements in fasting blood glucose and postprandial glucose. A meta-analysis of 37 RCTs involving 3,048 patients found berberine significantly reduced fasting plasma glucose by 0.82 mmol/L, HbA1c by 0.63%, and 2-hour postprandial blood glucose by 1.16 mmol/L. A 2025 systematic review confirmed berberine&apos;s comprehensive benefits across metabolic syndrome components including blood pressure, lipids, and insulin resistance. In weight loss research, berberine reduced body weight and waist circumference across multiple human trials, with mechanisms including adipocyte differentiation inhibition and gut microbiome modulation.
           </p>
         </div>
@@ -86,21 +86,21 @@ export default function BerberinePage() {
               "Duration: Benefits accumulate over 4–12 weeks of consistent use",
               "Note: Berberine has a short half-life — divided dosing throughout the day maintains consistent blood levels",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Generally well tolerated. Most common side effects are gastrointestinal — nausea, constipation, diarrhea — occurring in approximately 35% of users, typically mild and transient. May interact with medications metabolized by CYP enzymes. Important: May potentiate blood glucose lowering effects of diabetes medications — consult a healthcare provider before combining with metformin or other diabetes drugs. Not recommended during pregnancy. May affect bilirubin metabolism in newborns.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <Link href="/supplements/alpha-lipoic-acid" className="text-[#0891b2] hover:underline">Alpha Lipoic Acid</Link> | <Link href="/supplements/chromium" className="text-[#0891b2] hover:underline">Chromium</Link> | <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link> — Berberine pairs well with these for comprehensive metabolic support.
           </p>
         </div>
@@ -113,7 +113,7 @@ export default function BerberinePage() {
               "PMC. Berberine activates AMP-activated protein kinase with beneficial metabolic effects. https://pubmed.ncbi.nlm.nih.gov/16873688/",
               "PMC. Efficacy and safety of berberine on components of metabolic syndrome — meta-analysis. 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12307485/",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

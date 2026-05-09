@@ -62,7 +62,7 @@ export default function NewsPage() {
       <div className="section max-w-3xl">
         <span className="tag mb-3 inline-block">Latest Updates</span>
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">News</h1>
-        <p className="text-sm text-gray-500 dark:text-slate-400 mb-10 leading-relaxed max-w-xl">
+        <p className="text-lg text-gray-500 dark:text-slate-400 mb-10 leading-relaxed max-w-xl">
           Peptide research updates, regulatory changes, and industry developments.
         </p>
 
@@ -77,7 +77,7 @@ export default function NewsPage() {
               <h2 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#0891b2] transition-colors mb-2">
                 {a.title}
               </h2>
-              <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">{a.excerpt}</p>
+              <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed">{a.excerpt}</p>
               <span className="text-xs font-medium text-[#0891b2] mt-3 inline-block">Read more &rarr;</span>
             </Link>
           ))}

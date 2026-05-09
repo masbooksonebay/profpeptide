@@ -27,7 +27,7 @@ export default function GlucomannanPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Glucomannan is a highly viscous, water-soluble dietary fiber extracted from the root of the konjac plant (Amorphophallus konjac), native to Southeast Asia. It has one of the highest viscosities of any known dietary fiber — absorbing up to 50 times its weight in water to form a thick gel in the stomach. This remarkable property drives its primary benefits: powerful satiety enhancement, delayed gastric emptying, blunted post-meal blood sugar spikes, and reduced cholesterol absorption. Glucomannan is the only fiber supplement with a health claim approved by the European Food Safety Authority (EFSA) for contributing to weight loss when taken as part of an energy-restricted diet.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function GlucomannanPage() {
               "Cholesterol Binding — Glucomannan binds bile acids in the gut, reducing cholesterol reabsorption and lowering LDL cholesterol levels — similar to the mechanism of prescription bile acid sequestrant medications.",
               "Prebiotic Fermentation — Undigested glucomannan reaches the colon where it is fermented by beneficial bacteria into short-chain fatty acids, supporting gut microbiome health.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Multiple RCTs support glucomannan for weight loss — a meta-analysis found an average weight reduction of approximately 0.8 kg over short-term supplementation with caloric restriction. A systematic review of 14 RCTs found glucomannan significantly reduced LDL cholesterol, total cholesterol, triglycerides, fasting blood glucose, and body weight. Studies specifically show reductions in post-meal blood sugar of 20–30% when glucomannan is taken before carbohydrate-heavy meals. EFSA approved the health claim: &quot;Glucomannan contributes to weight loss in the context of an energy-restricted diet&quot; — a rare distinction for a dietary supplement.
           </p>
         </div>
@@ -79,14 +79,14 @@ export default function GlucomannanPage() {
               "Important: Must be taken with adequate water — taking without water risks esophageal obstruction",
               "Duration: Consistent daily use with caloric restriction for weight loss benefits",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Generally very safe. Most common effects are mild GI symptoms including bloating and increased flatulence from prebiotic fermentation. Rare but serious: esophageal obstruction if taken without sufficient water — always take with a full glass of water. May slow absorption of oral medications — take medications at least 1 hour before or 4 hours after glucomannan.
           </p>
         </div>
@@ -98,7 +98,7 @@ export default function GlucomannanPage() {
               "Onakpoya I, et al. The Use of Glucomannan in the Management of Obesity and Metabolic Disorders. J Am Coll Nutr. 2014.",
               "EFSA. Scientific Opinion on the substantiation of a health claim related to konjac mannan and reduction of body weight. 2010.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

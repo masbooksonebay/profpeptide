@@ -27,7 +27,7 @@ export default function BetaAlaninePage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Beta-alanine is a non-essential amino acid that is the rate-limiting precursor to carnosine synthesis in muscle tissue. Carnosine is a dipeptide (beta-alanine + histidine) that functions as an intramuscular pH buffer — neutralizing the hydrogen ions that accumulate during high-intensity exercise and cause the burning sensation of muscle fatigue. By supplementing beta-alanine, you increase muscle carnosine levels by 40–80% over 4–12 weeks, extending the time before muscular fatigue limits performance. Beta-alanine is most effective for exercise in the 1–4 minute duration range — the energy systems and fatigue mechanisms where carnosine buffering is most relevant. It is less effective for strength/power work under 60 seconds or endurance exercise over 10 minutes. It is well-established, evidence-based, and consistently supported by meta-analyses.
           </p>
         </div>
@@ -56,14 +56,14 @@ export default function BetaAlaninePage() {
               "pH Buffering — During high-intensity exercise, metabolic processes produce hydrogen ions that lower intramuscular pH (increase acidity). This acidosis impairs muscle contractile function and contributes to fatigue. Carnosine acts as a buffer — accepting hydrogen ions and preventing the pH drop that causes fatigue.",
               "Calcium Sensitivity — Carnosine also enhances calcium sensitivity of the contractile proteins (actin and myosin), which may improve muscle contractile efficiency independent of its buffering role.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Beta-alanine has a strong meta-analytic evidence base. A comprehensive meta-analysis by Hobson et al. (2012) of 15 RCTs found beta-alanine significantly improved exercise capacity, particularly for activities lasting 1–4 minutes. A 2016 meta-analysis confirmed significant improvements in physical performance with 4 weeks of supplementation. Research specifically shows benefits in rowing, cycling time trials, swimming, combat sports, team sports with repeated sprints, and CrossFit-style workouts. The combination of beta-alanine and creatine shows additive benefits — creatine supports the phosphocreatine energy system (0–10 seconds) while beta-alanine supports the glycolytic system (10 seconds to 4 minutes).
           </p>
         </div>
@@ -77,14 +77,14 @@ export default function BetaAlaninePage() {
               "Timing: Timing is not critical — take with meals to reduce paraesthesia",
               "Best for: Sports with repeated high-intensity efforts lasting 1–4 minutes each",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Very safe with one notable and common side effect — paraesthesia (tingling/flushing sensation), typically in the face, neck, hands, and ears. This is a harmless pharmacological effect of beta-alanine on sensory neurons, not an allergic reaction. It is dose-dependent — splitting doses to 1.6g per serving significantly reduces or eliminates it. Sustained-release formulations minimize paraesthesia. No serious adverse effects reported in research.
           </p>
         </div>
@@ -101,7 +101,7 @@ export default function BetaAlaninePage() {
               "Hobson RM, et al. Effects of beta-alanine supplementation on exercise performance: a meta-analysis. Amino Acids. 2012.",
               "Saunders B, et al. Beta-alanine supplementation to improve exercise capacity and performance: a systematic review and meta-analysis. Br J Sports Med. 2017.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

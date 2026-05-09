@@ -127,20 +127,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           IGF-1 LR3 is administered as a once-daily subcutaneous (or intramuscular) injection. The 20–30 hour half-life makes once-daily dosing sufficient to maintain stable blood levels. Timing relative to training matters more than time of day.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Beginner range: 20–30 mcg per day for the first cycle to assess tolerance</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard range: 30–50 mcg per day for established users</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Anabolic ceiling: ~40–50 mcg/day appears to be the practical upper limit; doses above 50 mcg significantly increase hypoglycemia risk</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 4–6 weeks on, followed by minimum 4 weeks off to allow IGF-1 receptor sensitivity to reset</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Some users follow 5 days on, 2 days off within the cycle to reduce receptor downregulation</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Beginner range: 20–30 mcg per day for the first cycle to assess tolerance</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard range: 30–50 mcg per day for established users</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anabolic ceiling: ~40–50 mcg/day appears to be the practical upper limit; doses above 50 mcg significantly increase hypoglycemia risk</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 4–6 weeks on, followed by minimum 4 weeks off to allow IGF-1 receptor sensitivity to reset</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Some users follow 5 days on, 2 days off within the cycle to reduce receptor downregulation</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Training-day timing: inject within 30–60 minutes post-workout when muscles are primed for nutrient uptake and IGF-1 receptors are temporarily upregulated. Have a meal containing protein and carbohydrates ready within 30 minutes to prevent hypoglycemia and maximize anabolic effect. Rest-day timing: inject with morning meal. Do NOT inject fasted unless very experienced — IGF-1 LR3 can cause significant blood sugar drops.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -157,9 +157,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hypoglycemia — most common side effect, especially if injected without food</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue or sleepiness following injection</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hypoglycemia — most common side effect, especially if injected without food</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue or sleepiness following injection</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
           </ol>
         </div>
         <div>
@@ -167,9 +167,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Joint pain or stiffness during cycles</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Bloating or fluid retention</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild numbness or tingling (carpal-tunnel-like symptoms)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Joint pain or stiffness during cycles</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Bloating or fluid retention</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild numbness or tingling (carpal-tunnel-like symptoms)</li>
           </ol>
         </div>
         <div>
@@ -177,12 +177,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Severe hypoglycemia — risk increases significantly above 50 mcg/day. Symptoms: shakiness, sweating, confusion, fainting</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing tumors due to IGF-1's effects on cell proliferation</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Receptor desensitization with sustained high-dose use, reducing future effectiveness</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe hypoglycemia — risk increases significantly above 50 mcg/day. Symptoms: shakiness, sweating, confusion, fainting</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing tumors due to IGF-1's effects on cell proliferation</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Receptor desensitization with sustained high-dose use, reducing future effectiveness</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Critical contraindications: active cancer or cancer history (IGF-1 stimulates cell growth including potentially cancerous cells), pregnancy or breastfeeding, diabetic retinopathy (IGF-1 may accelerate eye blood vessel growth), uncontrolled diabetes, and age under 21 (can affect growth plate closure). Always have food available when injecting. Most experienced users keep glucose tabs or simple sugar nearby during the first weeks of a cycle.
         </p>
       </div>
@@ -241,16 +241,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           IGF-1 LR3 is not FDA-approved for any human use. The recombinant IGF-1 form (mecasermin/Increlex) is FDA-approved for severe primary IGF-1 deficiency in children, but IGF-1 LR3 specifically is not approved for any indication.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Most research evidence comes from animal studies and preclinical research settings. Native IGF-1 has been studied extensively in humans for clinical applications; IGF-1 LR3 specifically has limited human controlled-trial data. Long-term safety data for sustained or high-dose use is absent.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency prohibits IGF-1 LR3 in sport under Section S2 (peptide hormones). Research-grade material is sold for laboratory use only and is not approved for human consumption.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Counterfeit and underdosed IGF-1 LR3 is common in the gray market — purity verification via Certificate of Analysis is critical.
         </p>
       </div>
@@ -266,7 +266,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -279,43 +279,43 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Long arginine 3-IGF-1 (IGF-1 LR3).{" "}
           <a href="https://en.wikipedia.org/wiki/IGF-1_LR3" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/IGF-1_LR3
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Florini JR, Ewton DZ, Coolican SA. Growth hormone and the insulin-like growth factor system in myogenesis. Annu Rev Physiol. 1991;53:201-16.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/2042959/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/2042959/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Yakar S, Pennisi P, Wu Y, et al. Circulating levels of IGF-1 directly regulate bone growth and density. J Clin Invest. 2002;110(6):771-81.{" "}
           <a href="https://www.jci.org/articles/view/15463" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.jci.org/articles/view/15463
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Adams GR, Haddad F. The relationships among IGF-1, DNA content, and protein accumulation during skeletal muscle hypertrophy. J Appl Physiol. 1996;81(6):2509-16.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/9018499/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9018499/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Philippou A, Maridaki M, Halapas A, Koutsilieris M. The role of the insulin-like growth factor 1 (IGF-1) in skeletal muscle physiology. In Vivo. 2007;21(1):45-54.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/17354613/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17354613/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bikle DD, Tahimic C, Chang W, et al. Role of IGF-I signaling in muscle bone interactions. Bone. 2015;80:79-88.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4665094/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC4665094/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Fernandez AM, Torres-Aleman I. The many faces of insulin-like peptide signalling in the brain. Nat Rev Neurosci. 2012;13(4):225-39.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/22430016/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22430016/
@@ -329,7 +329,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -340,7 +340,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -375,7 +375,7 @@ export default function IGF1LR3Page() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             IGF-1 LR3 is a synthetic 83-amino-acid analog of human insulin-like growth factor 1 (IGF-1). It contains two structural modifications: an arginine substitution at position 3 (&ldquo;Arg3&rdquo;) and a 13-amino-acid N-terminal extension (&ldquo;Long&rdquo;), producing a peptide with dramatically reduced binding to IGF binding proteins (IGFBPs) and a much longer half-life. Native IGF-1 has a half-life of minutes; IGF-1 LR3 has a half-life of 20–30 hours. The extended bioavailability and ~3x greater potency than native IGF-1 make it one of the most-studied research peptides for muscle hypertrophy, recovery, and metabolic research.
           </p>
           <div>
@@ -383,29 +383,29 @@ export default function IGF1LR3Page() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Activates IGF-1 receptors directly, bypassing the GH/IGF-1 axis</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates muscle protein synthesis via PI3K/Akt/mTOR pathway</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Promotes hyperplasia (new muscle fiber formation) — rare among research compounds</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Activates satellite cells for enhanced muscle repair and growth</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improves glucose and amino acid uptake into muscle tissue</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">20–30 hour half-life enables once-daily dosing</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Activates IGF-1 receptors directly, bypassing the GH/IGF-1 axis</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates muscle protein synthesis via PI3K/Akt/mTOR pathway</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Promotes hyperplasia (new muscle fiber formation) — rare among research compounds</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Activates satellite cells for enhanced muscle repair and growth</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improves glucose and amino acid uptake into muscle tissue</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">20–30 hour half-life enables once-daily dosing</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Most research protocols use 20–50 mcg per day administered subcutaneously, often immediately post-workout. Cycles typically run 4–6 weeks followed by a 4-week off period. Doses above 50 mcg/day significantly increase hypoglycemia risk without proportional muscle-building benefit. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> IGF-1 LR3 is not FDA-approved for performance enhancement and is sold only as a research-grade peptide. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current research-grade options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=performance+energy+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -424,12 +424,12 @@ export default function IGF1LR3Page() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

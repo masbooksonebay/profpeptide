@@ -148,20 +148,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           TB-500 is administered as a subcutaneous injection. Dosing follows a loading-then-maintenance pattern that mimics the original RegeneRx clinical trial protocols.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Loading phase (Weeks 1–4): 2.0–2.5 mg subcutaneously twice weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Maintenance phase (Weeks 5–8): 2.0 mg subcutaneously once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Severe injury / post-surgical: Continue loading phase up to 6 weeks before transitioning to maintenance</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Total typical cycle length: 6–8 weeks</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Off period: 4–6 weeks before another cycle</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Loading phase (Weeks 1–4): 2.0–2.5 mg subcutaneously twice weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Maintenance phase (Weeks 5–8): 2.0 mg subcutaneously once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe injury / post-surgical: Continue loading phase up to 6 weeks before transitioning to maintenance</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Total typical cycle length: 6–8 weeks</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Off period: 4–6 weeks before another cycle</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Half-life is longer than BPC-157 — estimated at multiple days in animal pharmacokinetic studies, which is why twice-weekly dosing is sufficient. TB-500 is more expensive per dose than BPC-157 because the per-dose amount is much larger (2 mg vs 250 mcg), but cycle frequency is lower.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -178,8 +178,8 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Most users report no acute systemic effects</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Most users report no acute systemic effects</li>
           </ol>
         </div>
         <div>
@@ -187,9 +187,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue during loading phase</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Slight nausea (uncommon)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue during loading phase</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Slight nausea (uncommon)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
           </ol>
         </div>
         <div>
@@ -197,12 +197,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Long-term human safety data is limited</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of unexplained tumor stimulation due to angiogenesis activity, though no reports of this in animal or human studies</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare and not commonly reported</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term human safety data is limited</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of unexplained tumor stimulation due to angiogenesis activity, though no reports of this in animal or human studies</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare and not commonly reported</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           TB-500 has a clean safety profile in animal studies. RegeneRx&apos;s Phase 2 trials in pressure ulcers and epidermolysis bullosa (NCT00382161, NCT00311766) reported it was well-tolerated, though both trials were terminated for non-efficacy reasons (lack of patient availability, drug expiration). No completed Phase 3 human safety trials exist.
         </p>
       </div>
@@ -226,17 +226,17 @@ const sections = [
     title: "Common Stacks",
     node: (
       <ol className="list-decimal list-inside space-y-1">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           BPC-157 (Wolverine Stack) — the most popular pairing. BPC-157 + TB-500 work through complementary mechanisms (growth factor signaling vs cellular migration). See{" "}
           <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">
             Wolverine Stack
           </Link>
           .
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">GHK-Cu — combined for dermal applications and skin repair research.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training — natural pairing for musculoskeletal recovery research; mechanical loading is necessary for proper tissue remodeling.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">MK-677 / GHRPs — combined for systemic recovery research where growth hormone signaling supplements TB-500&apos;s cellular repair effects.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standalone use is also common, particularly for cardiac or corneal-specific research.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">GHK-Cu — combined for dermal applications and skin repair research.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training — natural pairing for musculoskeletal recovery research; mechanical loading is necessary for proper tissue remodeling.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">MK-677 / GHRPs — combined for systemic recovery research where growth hormone signaling supplements TB-500&apos;s cellular repair effects.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standalone use is also common, particularly for cardiac or corneal-specific research.</li>
       </ol>
     ),
   },
@@ -267,13 +267,13 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           TB-500 is not FDA-approved by any major regulatory body. Two RegeneRx Phase 2 trials (NCT00382161 for pressure ulcers, NCT00311766 for epidermolysis bullosa) were terminated for non-efficacy reasons (patient availability and drug expiration), not for safety concerns.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Most evidence for TB-500 comes from animal models. Human evidence is limited to small pilot studies and the Phase 2 trials above. Long-term safety data is absent.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency prohibits TB-500 in sport under Section S2 (peptide hormones). Research-grade material is sold for laboratory use only and is not approved for human consumption.
         </p>
       </div>
@@ -289,7 +289,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -302,43 +302,43 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Goldstein AL, Hannappel E, Sosne G, Kleinman HK. Thymosin β4: a multi-functional regenerative peptide. Expert Opin Biol Ther. 2012;12(1):37-51.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/22074294/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22074294/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bock-Marquette I, Saxena A, White MD, et al. Thymosin beta4 activates integrin-linked kinase and promotes cardiac cell migration, survival, and cardiac repair. Nature. 2004;432(7016):466-72.{" "}
           <a href="https://www.nature.com/articles/nature03000" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.nature.com/articles/nature03000
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Smart N, Risebro CA, Melville AA, et al. Thymosin beta4 induces adult epicardial progenitor mobilization and neovascularization. Nature. 2007;445(7124):177-82.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/17108969/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17108969/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kleinman HK, Sosne G. Thymosin β4 Promotes Dermal Healing. Vitam Horm. 2016;102:53-70.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/27450031/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27450031/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tao Y, et al. Thymosin β4 improves the survival of cutaneous flaps of rat and activates Wnt/β-catenin pathway. Arch Med Sci. 2024.{" "}
           <a href="https://www.archivesofmedicalscience.com/Thymosin-4-improves-the-survival-of-cutaneous-flaps-of-rat-and-activates-Wnt-catenin-pathway/183145/0/article.html" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.archivesofmedicalscience.com/Thymosin-4-improves-the-survival-of-cutaneous-flaps-of-rat-and-activates-Wnt-catenin-pathway/183145/0/article.html
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sosne G, Qiu P, Kurpakus-Wheater M, Wheater M. Thymosin beta-4 and corneal wound healing: visions of the future. Ann N Y Acad Sci. 2010;1194:190-8.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/20536470/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20536470/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Gao X, Liang H, Hou F, et al. Thymosin Beta-4 Induces Mouse Hair Growth. PLoS One. 2015;10(6):e0130040.{" "}
           <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130040" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130040
@@ -352,7 +352,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -363,7 +363,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -398,7 +398,7 @@ export default function TB500Page() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             TB-500 is a synthetic fragment of Thymosin Beta-4 (Tβ4), a naturally occurring 43-amino-acid peptide found in virtually all mammalian cells. Unlike the full Thymosin Beta-4 protein, TB-500 is a shorter active fragment that&apos;s easier to synthesize and study. Researchers have studied it for over two decades, primarily for wound healing, cardiac repair, and corneal regeneration. It&apos;s commonly paired with BPC-157 in tissue-repair research protocols (the Wolverine Stack).
           </p>
           <div>
@@ -406,29 +406,29 @@ export default function TB500Page() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Accelerated wound healing in dermal, corneal, and cardiac tissue (animal models)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Promotes new blood vessel formation (angiogenesis)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduces fibrosis and scarring during repair</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Anti-inflammatory effects through NF-κB pathway modulation</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mobilizes stem and progenitor cells to injury sites</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Pairs synergistically with BPC-157 in musculoskeletal repair research</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Accelerated wound healing in dermal, corneal, and cardiac tissue (animal models)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Promotes new blood vessel formation (angiogenesis)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduces fibrosis and scarring during repair</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anti-inflammatory effects through NF-κB pathway modulation</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mobilizes stem and progenitor cells to injury sites</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pairs synergistically with BPC-157 in musculoskeletal repair research</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Most research protocols use 2.0–2.5 mg subcutaneously twice weekly for the first 4 weeks (loading phase), then 2.0 mg once weekly for maintenance. Total cycle length is typically 6–8 weeks. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> TB-500 is not FDA-approved and is sold only as a research-grade peptide. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current research-grade options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=recovery+tissue+repair+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -447,12 +447,12 @@ export default function TB500Page() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

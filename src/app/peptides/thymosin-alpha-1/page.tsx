@@ -135,20 +135,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Thymosin Alpha-1 is administered as a subcutaneous injection. Approved Zadaxin protocols in international clinical use give a clear dosing reference; research peptide protocols sometimes use lower doses.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hepatitis B/C (Zadaxin standard): 1.6 mg subcutaneously twice weekly for 6 months.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cancer adjunctive: 1.6 mg subcutaneously daily 5-on/2-off for 4–8 weeks.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Research peptide protocol (general immune support): 250–750 mcg daily, 4–8 weeks.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Immunocompromised support: 1.6 mg twice weekly.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reconstitution: typically 1.6 mg vials supplied as Zadaxin or 5–10 mg vials for research-grade.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hepatitis B/C (Zadaxin standard): 1.6 mg subcutaneously twice weekly for 6 months.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cancer adjunctive: 1.6 mg subcutaneously daily 5-on/2-off for 4–8 weeks.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Research peptide protocol (general immune support): 250–750 mcg daily, 4–8 weeks.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Immunocompromised support: 1.6 mg twice weekly.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reconstitution: typically 1.6 mg vials supplied as Zadaxin or 5–10 mg vials for research-grade.</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           For research-grade material, reconstitution with bacteriostatic water is standard. The 1.6 mg twice-weekly Zadaxin protocol is the most clinically validated dosing regimen.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -165,8 +165,8 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Transient injection site soreness</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Transient injection site soreness</li>
           </ol>
         </div>
         <div>
@@ -174,8 +174,8 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fever after first few doses</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fever after first few doses</li>
           </ol>
         </div>
         <div>
@@ -183,12 +183,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No major adverse events documented in 35+ years of clinical use</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Excellent safety profile in cancer chemotherapy adjunct settings</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical antagonism with active immunosuppressant therapy</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No major adverse events documented in 35+ years of clinical use</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Excellent safety profile in cancer chemotherapy adjunct settings</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical antagonism with active immunosuppressant therapy</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Thymosin Alpha-1 has the cleanest safety profile of any peptide on Prof. Peptide due to decades of clinical use under regulated conditions in 35+ countries. The international post-marketing surveillance is more substantial than for almost any other research peptide.
         </p>
       </div>
@@ -245,16 +245,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Thymosin Alpha-1 (thymalfasin) is approved as a prescription drug under the brand name Zadaxin in over 35 countries including Italy, China, Mexico, and others — but is NOT FDA-approved in the United States. The decades of approved international clinical use give Thymosin Alpha-1 one of the strongest evidence bases of any peptide on Prof. Peptide.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade material is sold by specialty peptide vendors in the US. Quality varies; verify Certificate of Analysis.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Anti-doping: Thymosin Alpha-1 is NOT currently on the WADA prohibited list.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The peptide is also distinct from Thymosin Beta-4 (TB-500), which has different mechanisms and applications despite the related name. Patients commonly confuse the two.
         </p>
       </div>
@@ -270,7 +270,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -283,28 +283,28 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Goldstein AL. From lab to bedside: emerging clinical applications of thymosin alpha 1. Expert Opin Biol Ther. 2009;9(5):593-608.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Romani L, Bistoni F, Gaziano R, et al. Thymosin alpha 1 activates dendritic cells for antifungal Th1 resistance through toll-like receptor signaling. Blood. 2004;103(11):4232-9.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Garaci E, Pica F, Sinibaldi-Vallebona P, et al. Thymosin alpha 1 in combination with cytokines and chemotherapy for the treatment of cancer. Int Immunopharmacol. 2003;3(8):1145-50.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           King R, Tuthill C. Immune modulation with thymosin alpha 1 treatment. Vitam Horm. 2016;102:151-78.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Rasi G, Mutchnick MG, Di Virgilio D, et al. Combination low-dose lymphoblastoid interferon and thymosin alpha 1 therapy in chronic hepatitis C. J Viral Hepat. 1996;3(4):191-6.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wu J, Zhou L, Liu J, et al. The efficacy of thymosin alpha 1 for severe sepsis (ETASS): a multicentre, single-blind, randomized and controlled trial. Crit Care. 2013;17(1):R8.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4029277/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC4029277/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Thymalfasin.{" "}
           <a href="https://en.wikipedia.org/wiki/Thymalfasin" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/Thymalfasin
@@ -318,7 +318,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -329,7 +329,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -364,7 +364,7 @@ export default function ThymosinAlpha1Page() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Thymosin Alpha-1 is a 28-amino-acid peptide naturally produced by the thymus gland, where it plays a critical role in T-cell maturation and immune system development. Synthetic Thymosin Alpha-1 (thymalfasin, brand name Zadaxin) is approved as a prescription drug in over 35 countries for treating chronic hepatitis B and hepatitis C, often as an adjunct to interferon therapy. It is also used as an immune-supportive treatment in cancer patients undergoing chemotherapy. While NOT FDA-approved in the United States, Thymosin Alpha-1 has decades of clinical use abroad and one of the strongest evidence bases of any peptide on Prof. Peptide. Research applications include immune modulation, chronic infections, autoimmune conditions, and post-COVID immune recovery.
           </p>
           <div>
@@ -372,29 +372,29 @@ export default function ThymosinAlpha1Page() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Enhanced T-cell maturation and function</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved immune response to chronic viral infections (Hepatitis B/C, CMV)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Adjunctive support during cancer chemotherapy</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Modulation of autoimmune conditions (without immunosuppression)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Restoration of immune function in immunocompromised states</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Approved internationally for clinical use (35+ countries)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Enhanced T-cell maturation and function</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improved immune response to chronic viral infections (Hepatitis B/C, CMV)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Adjunctive support during cancer chemotherapy</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Modulation of autoimmune conditions (without immunosuppression)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Restoration of immune function in immunocompromised states</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Approved internationally for clinical use (35+ countries)</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Subcutaneous injection: 1.6 mg twice weekly (standard Zadaxin protocol for hepatitis), or 1.6 mg daily for 5 days followed by 2 days off (cancer adjunct protocol). Research peptide protocols often use 250–750 mcg daily. Cycle length: 4–12 weeks. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Outside the US, Zadaxin is available by prescription. In the US, Thymosin Alpha-1 is sold by specialty research peptide vendors. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=gut+health+immunity+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -413,12 +413,12 @@ export default function ThymosinAlpha1Page() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

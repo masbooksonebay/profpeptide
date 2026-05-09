@@ -140,14 +140,14 @@ export default function GHStackPage() {
       </p>
 
       <div className="space-y-4 mb-8">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> The GH Stack is sold pre-blended by some research peptide vendors, while most users buy CJC-1295 and Ipamorelin separately and combine them. See{" "}
           <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
             Verified Peptide Vendors &rarr;
           </Link>{" "}
           for current options.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
           <a href="https://www.amazon.com/s?k=growth+hormone+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
             Find related supplements on Amazon.
@@ -164,12 +164,12 @@ export default function GHStackPage() {
               {s.title}
             </h2>
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}
@@ -198,7 +198,7 @@ export default function GHStackPage() {
           Published Studies
         </h2>
         <div className="space-y-6">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
           </p>
           {studies.map((s, i) => (
@@ -209,7 +209,7 @@ export default function GHStackPage() {
               </div>
               <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
               <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
             </div>
           ))}
         </div>

@@ -27,7 +27,7 @@ export default function VitaminCPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Vitamin C (ascorbic acid) is an essential water-soluble vitamin that humans cannot synthesize — unlike most animals — making dietary or supplemental intake critical. It is required for collagen synthesis (it is an irreplaceable cofactor for the enzymes prolyl hydroxylase and lysyl hydroxylase that stabilize collagen&apos;s triple helix structure), immune function, iron absorption, antioxidant defense, and neurotransmitter synthesis. Severe deficiency causes scurvy — a disease of collagen breakdown. While most people get adequate vitamin C from diet, supplementation is relevant for athletes (increased oxidative stress), smokers (depleted faster), people under high stress, and those seeking specific therapeutic effects. Vitamin C has one of the best safety profiles in nutrition — it is water-soluble and excess is excreted.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function VitaminCPage() {
               "Immune Stimulation — Vitamin C accumulates in immune cells at concentrations 50–100 times higher than plasma levels. It supports neutrophil function, enhances lymphocyte proliferation, and stimulates antibody production. During infection, vitamin C is rapidly depleted.",
               "Iron Absorption Enhancement — Vitamin C converts non-heme iron (from plant foods) from the ferric to ferrous form, dramatically increasing its intestinal absorption. Taking vitamin C with iron-rich plant foods or iron supplements significantly improves iron status.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Collagen synthesis research confirms vitamin C is essential — studies by Shaw et al. demonstrated that vitamin C-enriched gelatin taken before exercise significantly increased collagen synthesis markers compared to placebo. Immune research shows regular vitamin C supplementation reduces duration of common cold by 8% in adults and 14% in children, and may prevent colds in people under extreme physical stress. Cardiovascular research shows associations between higher vitamin C intake and reduced cardiovascular risk, reduced blood pressure, and improved endothelial function. Exercise recovery research suggests vitamin C reduces markers of oxidative stress but very high doses may blunt training adaptations.
           </p>
         </div>
@@ -79,14 +79,14 @@ export default function VitaminCPage() {
               "Collagen synthesis: Take with collagen supplements — the combination is essential for maximizing collagen production",
               "High dose caution: Doses above 2000mg daily may cause GI upset and diarrhea; very high doses may interfere with training adaptations by blunting oxidative stress signals that drive adaptation",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Extremely safe — water-soluble and excess excreted in urine. Most common side effect at high doses is loose stools or GI discomfort (tolerable upper limit 2000mg/day). Large doses may increase kidney stone risk in those predisposed — particularly oxalate stones. Rare: interference with certain lab tests at very high doses.
           </p>
         </div>
@@ -98,7 +98,7 @@ export default function VitaminCPage() {
               "Shaw G, et al. Vitamin C-enriched gelatin supplementation before intermittent activity augments collagen synthesis. Am J Clin Nutr. 2017.",
               "Hemilä H, Chalker E. Vitamin C for preventing and treating the common cold. Cochrane Database Syst Rev. 2013.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

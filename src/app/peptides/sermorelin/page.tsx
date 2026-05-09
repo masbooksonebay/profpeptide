@@ -126,20 +126,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sermorelin is administered as a subcutaneous injection. The short 10–20 minute half-life means effects depend entirely on dose timing. Most protocols target alignment with natural GH peaks during sleep.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard dose: 200–500 mcg subcutaneously once daily at bedtime</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Higher dose: up to 1000 mcg per dose for patients with more severe GHRH-axis decline</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Empty stomach: insulin spikes from food blunt GH release — wait 2+ hours after eating, 30 min before next meal</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 3–6 months is common for adult GHRH-replacement protocols; some patients use continuously under clinical supervision</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Some protocols stack sermorelin with a GHRP like ipamorelin to amplify GH release</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard dose: 200–500 mcg subcutaneously once daily at bedtime</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Higher dose: up to 1000 mcg per dose for patients with more severe GHRH-axis decline</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Empty stomach: insulin spikes from food blunt GH release — wait 2+ hours after eating, 30 min before next meal</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 3–6 months is common for adult GHRH-replacement protocols; some patients use continuously under clinical supervision</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Some protocols stack sermorelin with a GHRP like ipamorelin to amplify GH release</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Sermorelin produces gentler, more physiological effects than CJC-1295 with DAC because of the shorter half-life. Most users describe sermorelin as feeling &ldquo;cleaner&rdquo; than direct HGH or longer-acting analogs. The trade-off is slower onset and need for daily dosing — patients who prefer convenience often choose CJC-1295 instead.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -156,9 +156,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild facial flushing or warmth (transient)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Headache (especially first doses)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild facial flushing or warmth (transient)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache (especially first doses)</li>
           </ol>
         </div>
         <div>
@@ -166,9 +166,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fluid retention</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Joint pain or stiffness</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild numbness or tingling (uncommon)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fluid retention</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Joint pain or stiffness</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild numbness or tingling (uncommon)</li>
           </ol>
         </div>
         <div>
@@ -176,12 +176,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Allergic reactions (uncommon — was FDA-approved with established safety)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing tumors due to GH/IGF-1 elevation</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hypothyroidism — rare; monitored in long-term protocols</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Allergic reactions (uncommon — was FDA-approved with established safety)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing tumors due to GH/IGF-1 elevation</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hypothyroidism — rare; monitored in long-term protocols</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sermorelin had over 18 years of FDA-approved clinical use as Geref before the brand was discontinued (for commercial reasons, not safety or efficacy). It has the most established human safety profile of any GHRH analog discussed in research peptide contexts. The discontinuation of Geref was confirmed by the FDA as not being for safety or effectiveness reasons.
         </p>
       </div>
@@ -205,17 +205,17 @@ const sections = [
     title: "Common Stacks",
     node: (
       <ol className="list-decimal list-inside space-y-1">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ipamorelin — the most popular pairing. Sermorelin (GHRH receptor) + ipamorelin (ghrelin receptor) produces synergistic GH release through dual-pathway activation. See{" "}
           <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">
             Ipamorelin
           </Link>
           .
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 / TB-500 — paired for recovery support.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">IGF-1 LR3 — combined for direct IGF-1 receptor activation alongside endogenous GH stimulation.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">CJC-1295 — generally NOT stacked. Both target the GHRH receptor — combining is redundant. Choose one based on dosing convenience and feel.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training — exercise-induced GH release amplified when paired with sermorelin.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 / TB-500 — paired for recovery support.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">IGF-1 LR3 — combined for direct IGF-1 receptor activation alongside endogenous GH stimulation.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">CJC-1295 — generally NOT stacked. Both target the GHRH receptor — combining is redundant. Choose one based on dosing convenience and feel.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training — exercise-induced GH release amplified when paired with sermorelin.</li>
       </ol>
     ),
   },
@@ -246,13 +246,13 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sermorelin was FDA-approved as Geref in 1990 for pediatric GH deficiency and discontinued in 2008. The FDA later confirmed the discontinuation was NOT for safety or efficacy reasons, but for commercial reasons. Sermorelin remains accessible through licensed compounding pharmacies in the US (with prescription) and as a research-grade peptide.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Most published clinical evidence is from older studies (1990s–2000s) using sermorelin in pediatric and adult GH deficiency contexts. Anti-aging and longevity uses are off-label and not formally validated through controlled trials.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency prohibits sermorelin in sport under Section S2 (peptide hormones). Research-grade material sold outside compounding pharmacy channels is intended for laboratory use only and is not approved for human consumption.
         </p>
       </div>
@@ -268,7 +268,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -281,31 +281,31 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Walker RF. Sermorelin: a better approach to management of adult-onset growth hormone insufficiency? Clin Interv Aging. 2006;1(4):307-8.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2682417/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC2682417/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prakash A, Goa KL. Sermorelin: a review of its use in the diagnosis and treatment of children with idiopathic growth hormone deficiency. BioDrugs. 1999;12(2):139-57.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/18031173/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18031173/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khorram O, Laughlin GA, Yen SS. Endocrine and metabolic effects of long-term administration of [Nle27]growth hormone-releasing hormone-(1-29)-NH2 in older men and women. J Clin Endocrinol Metab. 1997;82(5):1472-9.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/9141537/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9141537/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Aimaretti G, Bellone S, Bellone J, et al. Short-term therapy with growth hormone (GH)-releasing hormone in children with partial GH insufficiency. Horm Res. 1995;43(3):113-20.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/7782059/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/7782059/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vittone J, Blackman MR, Busby-Whitehead J, et al. Effects of single nightly injections of growth hormone-releasing hormone (GHRH 1-29) in healthy elderly men. Metabolism. 1997;46(1):89-96.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/9005976/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9005976/
@@ -319,7 +319,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -330,7 +330,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -365,7 +365,7 @@ export default function SermorelinPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Sermorelin is a synthetic 29-amino-acid analog of growth hormone-releasing hormone (GHRH) — specifically the first 29 amino acids of native GHRH, which contain the entire biological activity of the parent hormone. It was originally developed by Serono and FDA-approved as Geref in 1990 for diagnosis of growth hormone deficiency in children. The brand was discontinued in 2008 (not for safety or efficacy reasons), but sermorelin remains widely used in compounding pharmacy and research-grade contexts. It stimulates pulsatile GH release through GHRH receptor activation, with a short half-life (~10–20 minutes) requiring frequent dosing.
           </p>
           <div>
@@ -373,29 +373,29 @@ export default function SermorelinPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates natural pulsatile growth hormone release via GHRH receptor</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Increases IGF-1 through GH-mediated pathway</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Supports lean muscle growth, fat reduction, recovery (downstream of GH)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved sleep quality reported with bedtime dosing</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Bone density support in clinical research</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Generally cleaner safety profile than other GHRH analogs (was FDA-approved)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates natural pulsatile growth hormone release via GHRH receptor</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Increases IGF-1 through GH-mediated pathway</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Supports lean muscle growth, fat reduction, recovery (downstream of GH)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improved sleep quality reported with bedtime dosing</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Bone density support in clinical research</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Generally cleaner safety profile than other GHRH analogs (was FDA-approved)</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Most research protocols use 200–500 mcg subcutaneously once daily, typically at bedtime. Cycle length is typically 8–12 weeks. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sermorelin&apos;s brand product (Geref) was discontinued in 2008. It is currently available through compounding pharmacies (with prescription) or as research-grade peptide. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current research-grade options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=growth+hormone+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -414,12 +414,12 @@ export default function SermorelinPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

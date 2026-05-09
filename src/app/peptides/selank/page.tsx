@@ -135,20 +135,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Selank is administered intranasally as a 0.15% solution (1.5 mg/mL). The intranasal route allows partial nose-to-brain transport via olfactory and trigeminal pathways. Subcutaneous administration is also used in research contexts. Oral bioavailability is effectively zero.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard intranasal protocol (Russian approved): 250–300 mcg per nostril, 2–3 times daily, for 14-day courses. Approximates 1,500–2,250 mcg/day total.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Lower-end starting dose: 200 mcg per nostril, 2× daily — for first-time users to assess tolerance.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Subcutaneous research dosing: 250–500 mcg per injection, once daily.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Course length: 14 days standard. Cycling: 2–4 weeks on, 2–4 weeks off, mirrors Russian clinical protocols. No tolerance reported in clinical studies.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Empty stomach not required: Selank effects are independent of food timing.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard intranasal protocol (Russian approved): 250–300 mcg per nostril, 2–3 times daily, for 14-day courses. Approximates 1,500–2,250 mcg/day total.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Lower-end starting dose: 200 mcg per nostril, 2× daily — for first-time users to assess tolerance.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Subcutaneous research dosing: 250–500 mcg per injection, once daily.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Course length: 14 days standard. Cycling: 2–4 weeks on, 2–4 weeks off, mirrors Russian clinical protocols. No tolerance reported in clinical studies.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Empty stomach not required: Selank effects are independent of food timing.</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Russian clinical practice typically uses fixed 14-day courses for GAD or neurasthenia. Outside Russia, biohacker protocols often run continuous low-dose for several weeks then take a break. The 2-week-on/2-week-off cycle is conservative given limited long-term Western data, even though no tolerance has been documented.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -165,9 +165,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild nasal irritation (intranasal route)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild stimulating effect (avoid late evening dosing)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Slight headache (especially first doses)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild nasal irritation (intranasal route)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild stimulating effect (avoid late evening dosing)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Slight headache (especially first doses)</li>
           </ol>
         </div>
         <div>
@@ -175,9 +175,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue after end of dosing course</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Transient mild dizziness</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild gastrointestinal discomfort</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue after end of dosing course</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Transient mild dizziness</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild gastrointestinal discomfort</li>
           </ol>
         </div>
         <div>
@@ -185,12 +185,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No serious adverse events documented in Russian clinical trials</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No physical dependence or withdrawal symptoms reported</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Long-term safety beyond 14-day courses in healthy individuals not formally established</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No serious adverse events documented in Russian clinical trials</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No physical dependence or withdrawal symptoms reported</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term safety beyond 14-day courses in healthy individuals not formally established</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Selank has one of the cleanest safety profiles of any anxiolytic compound. Russian clinical use spanning decades has documented no addictive potential, no tolerance development, no withdrawal syndrome, and no significant cognitive or motor impairment. This combination of efficacy and safety profile is unusual among anxiety treatments — most options carry sedation, dependence risk, or both. Western-standard long-term safety data remains limited.
         </p>
       </div>
@@ -214,17 +214,17 @@ const sections = [
     title: "Common Stacks",
     node: (
       <ol className="list-decimal list-inside space-y-1">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Semax — the gold standard pairing. Semax for cognitive enhancement (morning) + Selank for calm (afternoon/evening). The two work via complementary mechanisms (BDNF/dopamine vs GABA/serotonin) without redundancy. See{" "}
           <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">
             Semax
           </Link>
           .
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 — generally compatible; no direct interaction. Common in general health/recovery stacks.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">L-Theanine — additive calming effect; safe combination.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Adaptogenic herbs (rhodiola, ashwagandha) — generally compatible. Some users report potentiated stress resilience.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Caffeine — Selank counterbalances jitter from caffeine while preserving cognitive benefit.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 — generally compatible; no direct interaction. Common in general health/recovery stacks.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">L-Theanine — additive calming effect; safe combination.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Adaptogenic herbs (rhodiola, ashwagandha) — generally compatible. Some users report potentiated stress resilience.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Caffeine — Selank counterbalances jitter from caffeine while preserving cognitive benefit.</li>
       </ol>
     ),
   },
@@ -255,16 +255,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Selank is approved in Russia as a prescription anxiolytic for generalized anxiety disorder and neurasthenia. It is NOT FDA-approved in the United States. Most clinical evidence comes from Russian-language studies — including the key non-inferiority trial vs medazepam (Zozulya et al. 2008, n=62) — that have not been independently replicated in large Western trials.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The mechanism of GABA modulation is incompletely characterized. Selank&apos;s exact binding site on GABA-A is unclear — it does NOT bind the benzodiazepine site, which would explain the lack of sedation and dependence, but the alternative site has not been definitively identified.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade material sold outside Russian pharmaceutical channels is intended for laboratory use only. Purity and potency vary by vendor — third-party testing is recommended.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency does not currently include Selank on the prohibited list.
         </p>
       </div>
@@ -280,7 +280,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -293,43 +293,43 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Selank.{" "}
           <a href="https://en.wikipedia.org/wiki/Selank" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/Selank
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kozlovskaya MM, Kozlovskii II, Val&apos;dman EA, Seredenin SB. Selank and short peptides of the tuftsin family in the regulation of adaptive behavior in stress. Neurosci Behav Physiol. 2003;33(9):853-60.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/14969416/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/14969416/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Inozemtseva LS, Karpenko EA, Dolotov OV, et al. Intranasal administration of the peptide Selank regulates BDNF expression in the rat hippocampus in vivo. Dokl Biol Sci. 2008;421:241-3.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/18841779/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18841779/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kost NV, Sokolov OY, Gabaeva MV, et al. Semax and selank inhibit the enkephalin-degrading enzymes from human serum. Russ J Bioorg Chem. 2001;27(3):180-3.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/11443939/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11443939/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kolomin T, Shadrina M, Slominsky P, Limborska S. A new generation of drugs: synthetic peptides based on natural regulatory peptides. Neuroscience and Medicine. 2013;4:223-252.{" "}
           <a href="https://www.scirp.org/journal/paperinformation.aspx?paperid=42089" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.scirp.org/journal/paperinformation.aspx?paperid=42089
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Zozulya AA, Neznamov GG, Siuniakov TS, et al. Efficacy and possible mechanisms of action of a new peptide anxiolytic selank in the therapy of generalized anxiety disorders and neurasthenia. Zh Nevrol Psikhiatr Im S S Korsakova. 2008;108(4):38-48.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/18454097/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18454097/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Volchegorskii IA, Miroshnichenko IY, Rassokhina LM, Faizullin RM. Anxiolytic and antidepressant action of selank in alloxan diabetes-induced cognitive deficit. Bull Exp Biol Med. 2017;164(2):137-141.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/29177900/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29177900/
@@ -343,7 +343,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -354,7 +354,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -389,7 +389,7 @@ export default function SelankPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Selank is a synthetic heptapeptide (Thr-Lys-Pro-Arg-Pro-Gly-Pro) developed in the 1990s at the Institute of Molecular Genetics of the Russian Academy of Sciences. It combines tuftsin (an endogenous immunomodulatory tetrapeptide derived from immunoglobulin G) with the same Pro-Gly-Pro stabilizing tail used in Semax. Selank produces anxiolytic effects comparable to benzodiazepines like medazepam in Russian clinical trials — but without sedation, cognitive impairment, tolerance, or withdrawal. It is approved in Russia for generalized anxiety disorder (GAD) and neurasthenia. The peptide also retains immunomodulatory activity from its tuftsin parent, making it pharmacologically unique among anxiolytics.
           </p>
           <div>
@@ -397,29 +397,29 @@ export default function SelankPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Anxiolytic effect comparable to medazepam in clinical studies</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No sedation, cognitive impairment, or motor effects</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No tolerance, dependence, or withdrawal</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">BDNF upregulation in hippocampus</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Modulates GABA-A receptor signaling, serotonin, and dopamine</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Immunomodulation (IL-6 modulation, T-helper balance) from tuftsin parent</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anxiolytic effect comparable to medazepam in clinical studies</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No sedation, cognitive impairment, or motor effects</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No tolerance, dependence, or withdrawal</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">BDNF upregulation in hippocampus</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Modulates GABA-A receptor signaling, serotonin, and dopamine</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Immunomodulation (IL-6 modulation, T-helper balance) from tuftsin parent</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Standard intranasal protocol: 200–500 mcg per nostril, 2–3 times daily, administered as 0.15% solution. Standard course: 14 days. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Selank is approved as a prescription medication in Russia but not FDA-approved in the US. It is sold by specialty research peptide vendors as research-grade material. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=cognitive+nootropic+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -438,12 +438,12 @@ export default function SelankPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

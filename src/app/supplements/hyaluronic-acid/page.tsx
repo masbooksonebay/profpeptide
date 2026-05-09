@@ -27,7 +27,7 @@ export default function HyaluronicAcidPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Hyaluronic acid (HA) is a naturally occurring glycosaminoglycan — a long-chain sugar molecule — found throughout the body, with the highest concentrations in the skin, joints, and eyes. In the skin, HA is distributed throughout the dermis and epidermis where it binds and retains water with extraordinary capacity — a single gram of hyaluronic acid can hold up to 6 liters of water. This water-binding property is the foundation of skin hydration, plumpness, and the cushioning of the dermal matrix. Like collagen, HA declines with age — levels in the skin drop dramatically after age 40, contributing to dryness, loss of volume, and the sunken appearance of aging skin. Hyaluronic acid fillers are one of the most popular cosmetic procedures in the world — injecting HA directly into the dermis to restore volume. But oral and topical HA supplementation offers a non-invasive alternative with growing clinical evidence — oral HA has been shown to increase skin moisture content, reduce wrinkle depth, and improve skin elasticity in multiple RCTs.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function HyaluronicAcidPage() {
               "Joint Lubrication — HA is a primary component of synovial fluid — the lubricant in joints. Oral HA supplementation increases synovial fluid HA concentration, reducing friction and joint discomfort.",
               "Wound Healing — HA creates a moist wound environment that facilitates cell migration, reduces inflammation, and accelerates re-epithelialization — making it valuable in both topical wound care and oral supplementation for skin repair.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A double-blind RCT by Kawada et al. found oral HA (120mg daily for 12 weeks) significantly improved skin moisture content and reduced wrinkle scores vs. placebo in 60 volunteers. A 2017 RCT found low-molecular-weight oral HA (120mg daily for 12 weeks) significantly improved skin luster, suppleness, and reduced wrinkle depth. Joint research is robust — multiple RCTs confirm oral HA reduces knee joint pain and improves function in osteoarthritis patients. A 2021 meta-analysis of oral HA for skin confirmed significant improvements in skin hydration and elasticity across multiple trials.
           </p>
         </div>
@@ -80,14 +80,14 @@ export default function HyaluronicAcidPage() {
               "Topical HA: Effective for surface hydration; oral HA works systemically for deeper dermal effects — both can be used together",
               "Duration: 8–12 weeks minimum to assess skin improvements",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Excellent safety profile — HA is a naturally occurring body compound. Rare reports of mild GI discomfort. People with cancer or a history of cancer should consult a healthcare provider — HA&apos;s role in cell proliferation and the CD44 receptor may be relevant in oncological contexts. Generally considered very safe for healthy adults.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function HyaluronicAcidPage() {
               "Kawada C, et al. Ingested hyaluronan moisturizes dry skin. Nutr J. 2014.",
               "Oe M, et al. Oral hyaluronan relieves wrinkles: a double-blinded, placebo-controlled study over a 12-week period. Clin Cosmet Investig Dermatol. 2017.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

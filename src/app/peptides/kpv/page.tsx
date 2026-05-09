@@ -132,21 +132,21 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           KPV is administered orally (enteric-coated capsules), subcutaneously, or topically depending on the application. Oral is preferred for gut applications; injection for systemic effects; topical for skin.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Oral capsules (compounded, enteric-coated): 250–500 mcg once daily for general anti-inflammatory use.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Oral for IBD applications: up to 500 mcg twice daily (1 mg total/day).</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Subcutaneous injection: 200–500 mcg once daily.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Topical (skin): 0.05–0.1% concentration in creams, 1–2× daily.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 4–8 weeks active, 2-week break recommended.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reconstitution (injectable): 5 mg vial + 2 mL bacteriostatic water = 2.5 mg/mL.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Oral capsules (compounded, enteric-coated): 250–500 mcg once daily for general anti-inflammatory use.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Oral for IBD applications: up to 500 mcg twice daily (1 mg total/day).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Subcutaneous injection: 200–500 mcg once daily.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Topical (skin): 0.05–0.1% concentration in creams, 1–2× daily.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 4–8 weeks active, 2-week break recommended.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reconstitution (injectable): 5 mg vial + 2 mL bacteriostatic water = 2.5 mg/mL.</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           The KLOW blend (GHK-Cu + BPC-157 + TB-500 + KPV) is dosed at 0.25–0.5 mL of reconstituted blend, 5 days/week — see the GLOW page for blend protocol details.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -163,8 +163,8 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions (subcutaneous)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Occasional GI changes (oral)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions (subcutaneous)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Occasional GI changes (oral)</li>
           </ol>
         </div>
         <div>
@@ -172,8 +172,8 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue</li>
           </ol>
         </div>
         <div>
@@ -181,11 +181,11 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No documented serious adverse events at standard doses</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Long-term safety beyond 6 months not formally characterized</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No documented serious adverse events at standard doses</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term safety beyond 6 months not formally characterized</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           KPV has one of the cleanest side-effect profiles of any peptide on Prof. Peptide. The α-MSH-derived structure suggests low toxicity. NOT FDA-approved for any indication.
         </p>
       </div>
@@ -208,11 +208,11 @@ const sections = [
     title: "Common Stacks",
     node: (
       <ol className="list-decimal list-inside space-y-1">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 — most common pairing for gut applications. KPV&apos;s anti-inflammatory + BPC-157&apos;s regenerative effects.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">KLOW Blend (GHK-Cu + BPC-157 + TB-500 + KPV at 50/10/10/10 mg) — compounded all-in-one regenerative blend.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">TB-500 — for combined inflammation + tissue repair.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard IBD-supportive protocols (probiotics, glutamine, omega-3) — compatible.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Avoid: high-dose oral copper supplements during topical KPV use (theoretical interaction with copper-binding proteins).</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 — most common pairing for gut applications. KPV&apos;s anti-inflammatory + BPC-157&apos;s regenerative effects.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">KLOW Blend (GHK-Cu + BPC-157 + TB-500 + KPV at 50/10/10/10 mg) — compounded all-in-one regenerative blend.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">TB-500 — for combined inflammation + tissue repair.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard IBD-supportive protocols (probiotics, glutamine, omega-3) — compatible.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Avoid: high-dose oral copper supplements during topical KPV use (theoretical interaction with copper-binding proteins).</li>
       </ol>
     ),
   },
@@ -243,16 +243,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           KPV is NOT FDA-approved for any indication. Despite its small molecular size and clean side-effect profile, it has not progressed through formal clinical trials. Most evidence is from animal models (colitis, dermatitis) and cell-based research.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Anti-doping: KPV is NOT currently on the WADA prohibited list.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Compounded preparations vary in quality. Third-party HPLC testing recommended for any KPV product. Combined evidence base for KLOW blend is observational only.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade material is sold for laboratory use only and is not approved for human consumption.
         </p>
       </div>
@@ -268,7 +268,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -281,22 +281,22 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Brzoska T, Luger TA, Maaser C, et al. α-Melanocyte-Stimulating Hormone and Related Tripeptides: Biochemistry, Antiinflammatory and Protective Effects in Vitro and in Vivo. Endocr Rev. 2008;29(5):581-602.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kannengiesser K, Maaser C, Heidemann J, et al. Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease. Inflamm Bowel Dis. 2008;14(3):324-31.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cutuli M, Cristiani S, Lipton JM, Catania A. Antimicrobial effects of alpha-MSH peptides. J Leukoc Biol. 2000;67(2):233-9.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dalmasso G, Charrier-Hisamuddin L, Nguyen HT, et al. PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation. Gastroenterology. 2008;134(1):166-78.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Xiao B, Xu Z, Viennois E, et al. Orally Targeted Delivery of Tripeptide KPV via Hyaluronic Acid-Functionalized Nanoparticles Efficiently Alleviates Ulcerative Colitis. Mol Ther. 2017;25(7):1628-1640.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Alpha-melanocyte-stimulating hormone.{" "}
           <a href="https://en.wikipedia.org/wiki/Alpha-melanocyte-stimulating_hormone" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/Alpha-melanocyte-stimulating_hormone
@@ -310,7 +310,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -321,7 +321,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -356,7 +356,7 @@ export default function KPVPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             KPV is a small tripeptide (lysine-proline-valine) derived from the C-terminal sequence of α-melanocyte-stimulating hormone (α-MSH). Despite its size, KPV exhibits potent anti-inflammatory and antimicrobial activity through pathways distinct from larger immune peptides. It has emerged as a research compound of interest for inflammatory bowel disease (IBD), ulcerative colitis, atopic dermatitis, and other inflammation-driven conditions. KPV&apos;s small size allows it to penetrate cells and act intracellularly, where it inhibits NF-κB signaling and reduces pro-inflammatory cytokine production. KPV is the #10 most-searched peptide on Google Trends (Feb 2026), reflecting growing interest in gut-targeted research peptides.
           </p>
           <div>
@@ -364,29 +364,29 @@ export default function KPVPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Anti-inflammatory effects through NF-κB pathway inhibition</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduced inflammatory cytokine production (TNF-alpha, IL-6, IL-1beta)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Antimicrobial activity against bacterial, fungal, and yeast infections</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mucosal healing in inflammatory bowel models</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Skin inflammation reduction (atopic dermatitis, psoriasis research)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Often combined with BPC-157 in compounded blends for gut applications</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anti-inflammatory effects through NF-κB pathway inhibition</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduced inflammatory cytokine production (TNF-alpha, IL-6, IL-1beta)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Antimicrobial activity against bacterial, fungal, and yeast infections</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mucosal healing in inflammatory bowel models</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Skin inflammation reduction (atopic dermatitis, psoriasis research)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Often combined with BPC-157 in compounded blends for gut applications</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Oral capsules (compounded): 250–500 mcg daily. Subcutaneous injection: 200–500 mcg once daily. Some protocols use up to 1 mg daily for active inflammatory conditions. Topical formulations (creams) used for skin applications. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> KPV is not FDA-approved and is sold by specialty research peptide vendors as oral, injectable, or topical formulations. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=gut+health+immunity+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -405,12 +405,12 @@ export default function KPVPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

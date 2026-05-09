@@ -29,23 +29,23 @@ export default function AshwagandhaVsRhodiolaPage() {
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Ashwagandha vs Rhodiola Rosea &mdash; Adaptogen Comparison</h1>
-      <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Ashwagandha and Rhodiola Rosea are the two most evidence-backed adaptogens. Both reduce stress and improve performance &mdash; but they work through different mechanisms and are best suited to different situations. Ashwagandha primarily lowers cortisol and reduces anxiety. Rhodiola primarily enhances mental performance and physical endurance under stress.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Ashwagandha and Rhodiola Rosea are the two most evidence-backed adaptogens. Both reduce stress and improve performance &mdash; but they work through different mechanisms and are best suited to different situations. Ashwagandha primarily lowers cortisol and reduces anxiety. Rhodiola primarily enhances mental performance and physical endurance under stress.</p>
 
       <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why two adaptogens that both reduce stress aren&apos;t interchangeable</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Both ashwagandha and rhodiola are classified as &ldquo;adaptogens&rdquo; &mdash; herbs traditionally used to help the body adapt to stress. But this category is loose, and the two herbs work through fundamentally different biological mechanisms.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Ashwagandha (Withania somnifera) directly modulates the HPA axis &mdash; the body&apos;s central stress response system. Its main effect is lowering cortisol output. Multiple RCTs confirm 20&ndash;30% cortisol reduction at standard doses. The effect builds gradually over 4&ndash;8 weeks of consistent use, and the practical outcomes are reduced anxiety, improved sleep quality, and (in men) modest testosterone support.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Rhodiola (Rhodiola rosea) takes a different path. It activates Hsp70 (heat shock protein 70) &mdash; a stress response system that protects cells from damage during high-demand situations. It also inhibits cortisol-synthesizing enzymes. The effect is faster (days to 2 weeks) and is more about acute mental and physical performance under stress than chronic stress reduction.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Practical translation: ashwagandha is the herb you take for chronic stress, anxiety, and sleep problems &mdash; slow build, deep effect. Rhodiola is the herb you take for fatigue, focus under pressure, and athletic endurance &mdash; fast build, performance-oriented effect.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           They don&apos;t compete. Many adaptogen stacks use both (ashwagandha for the chronic baseline, rhodiola when acute demands spike).
         </p>
       </div>
@@ -68,37 +68,37 @@ export default function AshwagandhaVsRhodiolaPage() {
       </div>
       <div className="mb-8">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which one is right for you?</h2>
-        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
+        <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           Both are well-evidenced adaptogens, but they target different stress problems. Match the herb to the symptom pattern.
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Chronic stress, anxiety, or sleep problems</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Ashwagandha is the more direct match. Multiple RCTs confirm ~20&ndash;30% cortisol reduction with 4&ndash;8 weeks of consistent dosing. Effects build gradually but are deeper. KSM-66 or Sensoril extracts (300&ndash;600mg daily) are the most-studied commercial forms. Improved sleep quality is a frequent reported effect.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Acute mental fatigue, focus under stress, or burnout</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Rhodiola is the more direct match. The Hsp70 mechanism is about helping cells handle stress in the moment rather than reducing long-term cortisol. Effects begin in days. Standard dosing is 200&ndash;400mg of standardized extract (3% rosavins, 1% salidroside) once or twice daily. Best for high-demand workdays, deadline weeks, or burnout recovery.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Athletic endurance or VO2max focus</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Rhodiola has the stronger sports-performance evidence. Multiple trials show improved endurance, reduced perceived exertion, and faster recovery between bouts. Ashwagandha has some athletic data (improved VO2max in untrained populations) but rhodiola is the more direct match for performance-oriented research. Best taken 30&ndash;60 min before training.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Testosterone or strength support (men)</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Ashwagandha has modest evidence for testosterone elevation in men (10&ndash;15% increases in some studies). Effects are real but should not be overstated. Rhodiola does not show this effect. For men whose adaptogen interest includes hormonal support, ashwagandha is the right choice.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Stack approach (the most common protocol)</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Many adaptogen users take both. Typical stack: ashwagandha at night for chronic stress and sleep, rhodiola in the morning for daytime energy and focus. Mechanisms don&apos;t overlap and clinical interaction risk is minimal. This combination is one of the more rational adaptogen stacks because the herbs target genuinely different problems.
             </p>
           </div>
@@ -115,37 +115,37 @@ export default function AshwagandhaVsRhodiolaPage() {
         <div className="space-y-4">
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are these safe to take long-term?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both have strong long-term safety records. Ashwagandha has multiple long-duration RCTs (12+ months) without significant adverse signals &mdash; main caveats are mild GI effects and potential issues for people with autoimmune thyroid conditions (it can stimulate thyroid function). Rhodiola has multi-decade traditional-use data plus modern trials showing safety at standard doses. Both are well-tolerated by most users.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take them together?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Yes, no documented interactions. The combination targets different stress mechanisms (HPA axis for ashwagandha, Hsp70 for rhodiola) and is one of the more sensible adaptogen stacks. Typical dosing: ashwagandha at bedtime, rhodiola in the morning.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How long until I see effects?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Rhodiola: noticeable effects within days to 2 weeks. Ashwagandha: full effect builds over 4&ndash;8 weeks. The different timelines reflect their different mechanisms &mdash; rhodiola activates fast-acting cellular stress proteins, ashwagandha slowly modulates the hormonal stress axis.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What about thyroid concerns with ashwagandha?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Ashwagandha has been shown to mildly stimulate thyroid function. For most people this is neutral or beneficial (especially with subclinical hypothyroidism). For people with hyperthyroidism or autoimmune thyroid conditions (Graves&apos;, Hashimoto&apos;s), ashwagandha may worsen symptoms. Consult a physician before using if you have any thyroid condition.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are there standardized forms I should look for?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Yes. For ashwagandha: KSM-66 and Sensoril are the most-researched extracts, both standardized to specific withanolide percentages. For rhodiola: look for extracts standardized to 3% rosavins and 1% salidroside (the standard ratio used in most clinical trials). Avoid generic &ldquo;rhodiola root powder&rdquo; without standardization &mdash; efficacy varies dramatically.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What are the side effects?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both are well-tolerated. Ashwagandha: rare mild GI upset, drowsiness if taken in the morning (it&apos;s better at bedtime), possible thyroid effects. Rhodiola: rare headache or dizziness at higher doses, mild stimulation in sensitive individuals (avoid late-day dosing). No dependence or withdrawal effects with either herb.
             </p>
           </div>

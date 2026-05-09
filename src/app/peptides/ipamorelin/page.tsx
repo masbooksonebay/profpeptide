@@ -126,20 +126,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ipamorelin is administered as a subcutaneous injection. The 2-hour half-life means effects depend on dose timing rather than continuous coverage. Most protocols target alignment with natural GH circadian peaks (sleep).
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard dose: 200–300 mcg subcutaneously per injection</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Bedtime dosing: 200–300 mcg before sleep — most common protocol, aligns with natural GH peak during deep sleep</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Multiple daily dosing: 200 mcg 2–3x per day (morning, mid-day, bedtime) for users targeting sustained effect</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Pre-workout dosing: some users add a 200 mcg dose 30–60 minutes before training to amplify exercise-induced GH release</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 8–12 weeks on, with at least 4 weeks off; some protocols run continuously for 6+ months under clinical supervision</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard dose: 200–300 mcg subcutaneously per injection</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Bedtime dosing: 200–300 mcg before sleep — most common protocol, aligns with natural GH peak during deep sleep</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Multiple daily dosing: 200 mcg 2–3x per day (morning, mid-day, bedtime) for users targeting sustained effect</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pre-workout dosing: some users add a 200 mcg dose 30–60 minutes before training to amplify exercise-induced GH release</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 8–12 weeks on, with at least 4 weeks off; some protocols run continuously for 6+ months under clinical supervision</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Ipamorelin is frequently stacked with CJC-1295 (with or without DAC). The combination produces greater GH release than either alone because they activate different receptor pathways simultaneously — ipamorelin via GHSR-1a, CJC-1295 via GHRH receptor. The two together produce a more robust GH pulse than either component.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -156,9 +156,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Increased hunger (transient — ipamorelin activates the ghrelin receptor)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue or sleepiness following injection</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Increased hunger (transient — ipamorelin activates the ghrelin receptor)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue or sleepiness following injection</li>
           </ol>
         </div>
         <div>
@@ -166,9 +166,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Slight numbness or tingling (uncommon)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild fluid retention with long-term use</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Slight numbness or tingling (uncommon)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fluid retention with long-term use</li>
           </ol>
         </div>
         <div>
@@ -176,12 +176,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Long-term safety data beyond 12 weeks is limited</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing tumors due to GH/IGF-1 elevation</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare and not commonly reported</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term safety data beyond 12 weeks is limited</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing tumors due to GH/IGF-1 elevation</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare and not commonly reported</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ipamorelin has one of the cleanest safety profiles of any GHRP because of its selectivity. It does NOT raise cortisol (a problem with GHRP-2 and GHRP-6) and does not affect prolactin or other pituitary hormones. Long-term use should be monitored for IGF-1 elevation and glucose tolerance — both rise modestly with sustained GH stimulation.
         </p>
       </div>
@@ -205,17 +205,17 @@ const sections = [
     title: "Common Stacks",
     node: (
       <ol className="list-decimal list-inside space-y-1">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           CJC-1295 (with or without DAC) — the most popular pairing. CJC-1295 activates the GHRH receptor while ipamorelin activates the ghrelin receptor — the dual-pathway activation produces synergistic GH release. See{" "}
           <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">
             CJC-1295
           </Link>
           .
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 / TB-500 — paired for recovery support. The healing peptides accelerate tissue repair while ipamorelin supports the GH-driven anabolic environment.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">IGF-1 LR3 — combined for direct IGF-1 receptor activation alongside endogenous GH stimulation. Inject IGF-1 LR3 at least 2–3 hours apart from ipamorelin to avoid receptor competition.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training — natural pairing. Exercise-induced GH release is amplified when paired with ipamorelin&apos;s pulse.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Adequate sleep and protein — non-negotiable. GH effects depend on adequate recovery and substrate availability.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">BPC-157 / TB-500 — paired for recovery support. The healing peptides accelerate tissue repair while ipamorelin supports the GH-driven anabolic environment.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">IGF-1 LR3 — combined for direct IGF-1 receptor activation alongside endogenous GH stimulation. Inject IGF-1 LR3 at least 2–3 hours apart from ipamorelin to avoid receptor competition.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training — natural pairing. Exercise-induced GH release is amplified when paired with ipamorelin&apos;s pulse.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Adequate sleep and protein — non-negotiable. GH effects depend on adequate recovery and substrate availability.</li>
       </ol>
     ),
   },
@@ -246,13 +246,13 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ipamorelin is not FDA-approved for any human use. It was investigated in Phase 2 clinical trials for postoperative ileus by Helsinn Therapeutics but development was discontinued in 2014 due to lack of efficacy in that specific indication. The compound itself was found safe — the trial outcome reflected the unsuitability of the indication, not safety problems.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Most evidence for ipamorelin&apos;s anti-aging and body composition uses comes from animal models, small-scale clinical practice observations, and individual case reports rather than controlled human trials. Long-term safety data beyond 12 weeks is limited.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency prohibits ipamorelin in sport under Section S2 (peptide hormones). Research-grade material is sold for laboratory use only and is not approved for human consumption.
         </p>
       </div>
@@ -268,7 +268,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -281,31 +281,31 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Raun K, Hansen BS, Johansen NL, et al. Ipamorelin, the first selective growth hormone secretagogue. Eur J Endocrinol. 1998;139(5):552-61.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/9849822/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9849822/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Ipamorelin.{" "}
           <a href="https://en.wikipedia.org/wiki/Ipamorelin" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/Ipamorelin
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Johansen PB, Segev Y, Raun K, et al. Ipamorelin, a new growth-hormone-releasing peptide, induces longitudinal bone growth in rats. Growth Horm IGF Res. 1999;9(2):106-13.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/10373343/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/10373343/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Andersen NB, Malmlöf K, Johansen PB, et al. The growth hormone secretagogue ipamorelin counteracts glucocorticoid-induced decrease in bone formation of adult rats. Growth Horm IGF Res. 2001;11(5):266-72.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/11735237/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11735237/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Svensson J, Lall S, Dickson SL, et al. The GH secretagogues ipamorelin and GH-releasing peptide-6 increase bone mineral content in adult female rats. J Endocrinol. 2000;165(3):569-77.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/10860573/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/10860573/
@@ -319,7 +319,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -330,7 +330,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -365,7 +365,7 @@ export default function IpamorelinPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Ipamorelin is a synthetic pentapeptide (Aib-His-D-2-Nal-D-Phe-Lys-NH2) developed by Novo Nordisk in the late 1990s as a selective agonist of the ghrelin/growth hormone secretagogue receptor (GHSR-1a). Unlike other GHRPs (GHRP-2, GHRP-6), ipamorelin stimulates growth hormone release without elevating cortisol, prolactin, ACTH, FSH, LH, or TSH — making it the most selective GHRP available. It was investigated in Phase 2 trials for postoperative ileus but discontinued for lack of efficacy in that specific indication. It remains widely studied for body composition, recovery, and anti-aging research.
           </p>
           <div>
@@ -373,29 +373,29 @@ export default function IpamorelinPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates pulsatile growth hormone release via the ghrelin receptor pathway</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Highly selective for GH — does not affect cortisol, prolactin, or other pituitary hormones</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Increases IGF-1 levels through GH-mediated pathway</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Supports lean muscle growth and fat reduction (downstream of GH)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved sleep quality reported, especially with bedtime dosing</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Bone formation support (counters glucocorticoid-induced bone loss in animal models)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates pulsatile growth hormone release via the ghrelin receptor pathway</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Highly selective for GH — does not affect cortisol, prolactin, or other pituitary hormones</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Increases IGF-1 levels through GH-mediated pathway</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Supports lean muscle growth and fat reduction (downstream of GH)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improved sleep quality reported, especially with bedtime dosing</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Bone formation support (counters glucocorticoid-induced bone loss in animal models)</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Most research protocols use 200–300 mcg subcutaneously, 1–3 times daily. Bedtime dosing is most common to align with natural GH circadian peaks. Cycle length is typically 8–12 weeks. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Ipamorelin is not FDA-approved for any human use and is sold only as a research-grade peptide. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current research-grade options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=growth+hormone+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -414,12 +414,12 @@ export default function IpamorelinPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

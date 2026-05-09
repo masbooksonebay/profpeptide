@@ -87,18 +87,18 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           MK-677 is taken orally as a capsule or liquid solution. The 24-hour sustained GH/IGF-1 elevation per dose makes single bedtime dosing the standard protocol.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard research dose: 25 mg/day orally, taken at bedtime.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Some users start at 12.5 mg/day for 1–2 weeks to assess tolerance.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Time of day: bedtime — leverages natural GH pulse during deep sleep.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 8–16 weeks typical. Some users run extended protocols (6+ months) given continued IGF-1 elevation without HPG axis suppression.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Continuous daily dosing is the norm — unlike injectable secretagogues, no need for &ldquo;pulse&rdquo; timing.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Don&apos;t split daily dose — single bedtime dose maintains sustained 24-hour elevation.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard research dose: 25 mg/day orally, taken at bedtime.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Some users start at 12.5 mg/day for 1–2 weeks to assess tolerance.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Time of day: bedtime — leverages natural GH pulse during deep sleep.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 8–16 weeks typical. Some users run extended protocols (6+ months) given continued IGF-1 elevation without HPG axis suppression.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Continuous daily dosing is the norm — unlike injectable secretagogues, no need for &ldquo;pulse&rdquo; timing.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Don&apos;t split daily dose — single bedtime dose maintains sustained 24-hour elevation.</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Discontinuation: GH/IGF-1 returns to baseline within days of stopping. No HPG axis suppression like anabolic-androgenic steroids — no need for post-cycle therapy.
         </p>
       </div>
@@ -114,10 +114,10 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Increased appetite (significant — primary side effect)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Water retention (transient first 2–4 weeks)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild lethargy</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Vivid dreams</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Increased appetite (significant — primary side effect)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Water retention (transient first 2–4 weeks)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild lethargy</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Vivid dreams</li>
           </ol>
         </div>
         <div>
@@ -125,9 +125,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Slight numbness or tingling in extremities (peripheral edema)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Elevated fasting glucose</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild blood pressure changes</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Slight numbness or tingling in extremities (peripheral edema)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Elevated fasting glucose</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild blood pressure changes</li>
           </ol>
         </div>
         <div>
@@ -135,12 +135,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Insulin resistance / pre-diabetic glucose elevation in long-term high-dose use</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical concerns: cardiovascular hypertrophy at supraphysiological IGF-1 levels (not documented at standard doses)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cortisol elevation (mild but measurable)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Insulin resistance / pre-diabetic glucose elevation in long-term high-dose use</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical concerns: cardiovascular hypertrophy at supraphysiological IGF-1 levels (not documented at standard doses)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cortisol elevation (mild but measurable)</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           MK-677 elevates cortisol slightly and can elevate fasting glucose. Pre-diabetic individuals should monitor closely. The 1-year RCT data showed acceptable tolerability in healthy older adults at 25 mg/day. Long-term safety beyond 2 years is not formally characterized in healthy adults.
         </p>
       </div>
@@ -198,16 +198,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           MK-677 (ibutamoren) is NOT FDA-approved despite reaching Phase 2 trials. Merck did not pursue full approval, partially due to side effect profile concerns (appetite, water retention) for the original GH deficiency indication.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade MK-677 is sold as a &ldquo;research compound&rdquo; — quality varies by source. Independent third-party testing (HPLC, mass spectrometry) recommended.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Some bodybuilding contexts have raised concerns about cardiovascular hypertrophy at supraphysiological IGF-1 levels — not documented at standard 25 mg doses but worth flagging. Long-term safety beyond 2 years is not formally characterized in healthy adults.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Anti-doping: MK-677 IS on the WADA Prohibited List (S2 Hormones — Growth Hormone Releasers). Tested athletes should NOT use.
         </p>
       </div>
@@ -223,7 +223,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -236,28 +236,28 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Ibutamoren.{" "}
           <a href="https://en.wikipedia.org/wiki/Ibutamoren" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/Ibutamoren
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nass R, Pezzoli SS, Oliveri MC, et al. Effects of an oral ghrelin mimetic on body composition and clinical outcomes in healthy older adults: a randomized trial. Ann Intern Med. 2008;149(9):601-11.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2757071/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC2757071/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Murphy MG, et al. MK-677 ibutamoren mechanism in humans. Endocrinology research.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Garcia JM, et al. Ibutamoren mesylate for cachexia and muscle wasting research.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Chapman IM, Bach MA, Van Cauter E, et al. Stimulation of the growth hormone (GH)-insulin-like growth factor I axis by daily oral administration of a GH secretagogue (MK-677) in healthy elderly subjects. J Clin Endocrinol Metab. 1996;81(12):4249-57.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           WADA Prohibited List 2026. World Anti-Doping Agency.
         </li>
       </ol>
@@ -292,7 +292,7 @@ export default function MK677Page() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             MK-677 (ibutamoren) is an orally active, non-peptide ghrelin receptor agonist developed by Merck in the 1990s as a potential treatment for growth hormone deficiency, muscle wasting, and osteoporosis. Despite Phase 2 trial data showing 24-hour sustained elevation of GH and IGF-1, MK-677 was never FDA-approved and remains an investigational compound. Unlike injectable GH secretagogues (sermorelin, ipamorelin, tesamorelin), MK-677 is taken orally — a major convenience advantage. It mimics ghrelin at the GHS-R1a receptor, triggering pulsatile GH release that preserves natural feedback loops, unlike exogenous GH injection which suppresses endogenous production. Note: MK-677 is technically NOT a peptide — it&apos;s a non-peptide small molecule ghrelin mimetic — but is included on Prof. Peptide because it acts on the same GH/IGF-1 axis as peptide secretagogues and is commonly compared to them.
           </p>
           <div>
@@ -300,29 +300,29 @@ export default function MK677Page() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Sustained GH and IGF-1 elevation (24-hour duration per dose)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Increased lean body mass without change in fat mass (1-year RCT data)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved sleep quality (deeper slow-wave sleep)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Increased appetite (useful for muscle gain, problematic for cutting)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Oral administration — no injections</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Bone density improvement (1-year RCT)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Sustained GH and IGF-1 elevation (24-hour duration per dose)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Increased lean body mass without change in fat mass (1-year RCT data)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improved sleep quality (deeper slow-wave sleep)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Increased appetite (useful for muscle gain, problematic for cutting)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Oral administration — no injections</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Bone density improvement (1-year RCT)</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Standard research dose: 25 mg/day orally, taken at bedtime. This is the dose used in Merck&apos;s 1-year RCT in healthy older adults. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> MK-677 is not FDA-approved and is sold as a research compound by specialty vendors. MK-677 is on the WADA Prohibited List — tested athletes should NOT use. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=performance+energy+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -341,12 +341,12 @@ export default function MK677Page() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

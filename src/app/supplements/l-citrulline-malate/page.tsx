@@ -27,7 +27,7 @@ export default function LCitrullineMalatePage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-citrulline malate is a compound of the amino acid L-citrulline bound to malic acid (malate) in a 2:1 ratio. L-citrulline is a non-essential amino acid found naturally in watermelon that serves as a precursor to L-arginine — and paradoxically, supplementing citrulline raises blood arginine levels more effectively than supplementing arginine directly, because citrulline bypasses first-pass metabolism in the liver that degrades much of oral arginine before it reaches circulation. Arginine is the substrate for nitric oxide synthase — the enzyme that produces nitric oxide (NO), the signaling molecule that dilates blood vessels, increases blood flow to working muscles, and produces the &quot;pump&quot; sensation during training. The malate component contributes independently to aerobic energy production and fatigue reduction. Together, citrulline malate improves endurance performance, reduces muscle soreness, enhances muscle pump, and supports recovery — making it one of the most evidence-backed pre-workout compounds available.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function LCitrullineMalatePage() {
               "Ammonia Clearance — Citrulline is part of the urea cycle and helps clear ammonia — a fatigue-inducing metabolic byproduct that accumulates during intense exercise. Faster ammonia clearance reduces exercise-associated fatigue.",
               "Malate's Role — Malic acid is an intermediate in the citric acid cycle (Krebs cycle) — the central pathway for aerobic energy production. Malate supplementation may support ATP production and reduce lactate accumulation, contributing to the anti-fatigue effects of the compound beyond citrulline's NO mechanism.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A landmark 2010 RCT by P&eacute;rez-Guisado and Jakeman found that 8g of citrulline malate before an upper-body resistance training session significantly increased the number of repetitions performed to failure (by 52.92%), reduced muscle soreness by 40% at 24 and 48 hours post-exercise, and increased ATP production by 34%. A meta-analysis of 12 RCTs found citrulline malate significantly improved exercise performance, reduced soreness, and enhanced recovery. Endurance research shows improvements in cycling time trial performance and reduced perceived effort. Research consistently shows citrulline is superior to arginine for raising plasma arginine and nitric oxide levels.
           </p>
         </div>
@@ -80,14 +80,14 @@ export default function LCitrullineMalatePage() {
               "Consistency: Benefits accumulate with regular use but acute effects are present from first dose",
               "Best for: Resistance training, HIIT, endurance sports, any training with repeated high-effort sets",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Very safe with an excellent safety profile. Most common side effect is mild GI discomfort at high doses — taking with food reduces this. May cause modest blood pressure reductions due to vasodilation — generally favorable but relevant for those on blood pressure medications. No serious adverse effects documented in research.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function LCitrullineMalatePage() {
               "Pérez-Guisado J, Jakeman PM. Citrulline malate enhances athletic anaerobic performance and relieves muscle soreness. J Strength Cond Res. 2010.",
               "Rhim HC, et al. Effect of citrulline on post-exercise rating of perceived exertion, muscle soreness, and blood lactate levels: A systematic review and meta-analysis. J Sport Health Sci. 2020.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

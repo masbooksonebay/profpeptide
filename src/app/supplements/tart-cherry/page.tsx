@@ -60,7 +60,7 @@ export default function TartCherryPage() {
       <div className="space-y-8">
         <div className="rounded-xl p-5 bg-[#0891b2]/10 border border-[#0891b2]/20">
           <p className="text-xs font-semibold uppercase tracking-wider text-[#0891b2] mb-2">Quick Answer</p>
-          <p className="text-sm text-gray-700 dark:text-slate-200 leading-relaxed">
+          <p className="text-lg text-gray-700 dark:text-slate-200 leading-relaxed">
             Tart cherry — particularly the Montmorency cultivar — contains natural melatonin, the amino acid tryptophan, and powerful anti-inflammatory anthocyanins. Research shows it can modestly improve sleep duration and quality, with stronger evidence as an exercise recovery aid where it reduces muscle soreness and accelerates strength recovery after strenuous exercise. The natural melatonin content is small (well below pharmacological doses), suggesting the benefits come from the combined effect of multiple bioactive compounds rather than melatonin alone.
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function TartCherryPage() {
           <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-slate-400 mb-3">Key Facts</p>
           <ul className="space-y-2">
             {keyFacts.map((f) => (
-              <li key={f.label} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+              <li key={f.label} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                 <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">{f.label}:</span> {f.value}
               </li>
             ))}
@@ -78,10 +78,10 @@ export default function TartCherryPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What does tart cherry do?</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Tart cherry contains a unique combination of bioactive compounds. Montmorency cherries in particular have melatonin concentrations of roughly 2 to 13 nanograms per gram of fruit — much smaller than a typical melatonin supplement, but biologically active. Tart cherries also contain tryptophan, the amino acid precursor to serotonin and melatonin. And they&apos;re rich in anthocyanins, the same dark pigments that give them their color and contribute substantial anti-inflammatory and antioxidant activity.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             For sleep, the combination of natural melatonin, tryptophan, and circadian-supportive compounds appears to nudge sleep parameters in a positive direction. For exercise recovery, the anthocyanins reduce inflammation and oxidative stress in muscle tissue after strenuous exercise. This dual mechanism is why tart cherry is one of the few supplements with legitimate evidence in both sleep and athletic recovery contexts.
           </p>
         </div>
@@ -89,71 +89,71 @@ export default function TartCherryPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the research shows</h2>
           <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Sleep evidence:</p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Howatson et al. (2012, European Journal of Nutrition) studied 20 healthy adults given Montmorency tart cherry juice concentrate for 7 days. Participants slept about 40 minutes longer on average and showed roughly a 6% increase in sleep efficiency, with measurable increases in urinary melatonin metabolites.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             A pilot study at Louisiana State University in adults aged 50+ with chronic insomnia found that 2 weeks of tart cherry juice extended total sleep time by approximately 84 minutes compared to placebo.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             A 2025 systematic review in Food Science &amp; Nutrition examined seven interventional studies and concluded that tart cherry consumption can improve sleep duration, sleep efficiency, and sleep onset time, while also reducing inflammatory markers like CRP. The review noted significant heterogeneity in dosing and study populations and that the evidence base, while consistent in direction, remains limited.
           </p>
           <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Recovery evidence:</p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             A 2021 systematic review and meta-analysis of 14 studies found that tart cherry supplementation produced a small beneficial effect on muscle soreness (effect size -0.44) and a moderate beneficial effect on muscular strength recovery after strenuous exercise.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Studies in soccer players, marathon runners, and intermittent sprint athletes have shown reduced delayed onset muscle soreness (DOMS), faster recovery of strength and power, and attenuated inflammatory markers (notably IL-6) when supplementing in the 7-10 days surrounding a hard training stimulus.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The recovery effect appears stronger in endurance and intermittent-sprint contexts than in traditional resistance training, where some studies have shown null results.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Considerations and unknowns</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Cultivar matters a lot.</span> Montmorency cherries contain substantially more melatonin and anthocyanins than other tart cherry varieties. Sweet cherries are not equivalent. Look for products that specifically state Montmorency.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Form matters too.</span> Concentrate (typically 1 oz / 30 mL twice daily) is the most-studied form. Freeze-dried powder and capsules can work but quality varies. Juice can be effective but watch for added sugar — sweetened cherry juice partially defeats the purpose if you&apos;re using it for sleep.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             The melatonin content of tart cherry is far below what&apos;s in a melatonin supplement (~0.135 μg per typical study dose vs. 0.5-5 mg in a tablet). This means tart cherry is unlikely to compete with a melatonin tablet on raw circadian effect, but the broader bioactive profile (anthocyanins, tryptophan, polyphenols) appears to provide complementary benefits melatonin alone wouldn&apos;t.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Sugar content:</span> tart cherry juice and concentrate contain natural fruit sugars. Daily consumption of large amounts may be a consideration for people managing blood sugar or following low-carbohydrate diets. Powder and capsule forms minimize sugar intake while preserving the bioactive compounds.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Effect size for sleep is modest — meaningful, but not dramatic. Don&apos;t expect tart cherry to replace targeted treatment for serious insomnia. As a gentle, food-based addition to a sleep routine, the evidence supports it.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A 2024 study in adults with overweight/obesity found that a commonly used dose of Montmorency tart cherry powder did not improve sleep or inflammation outcomes, suggesting effects may be population- or dose-dependent.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">How to evaluate quality</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             The supplement industry around tart cherry varies widely in quality. Active compound concentration is what matters — not just the cherry&apos;s presence on the label.
           </p>
           <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Look for products that:</p>
           <ul className="list-disc list-inside space-y-1 mb-3">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Specifically state Montmorency cultivar</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Are standardized to anthocyanin content (a marker of quality and concentration)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Are third-party tested (USP, NSF, ConsumerLab)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Are produced in cGMP-certified facilities</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">For juice/concentrate: have no added sugar or sweeteners</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">For powder: use cold-pressed or freeze-dried processing to preserve heat-sensitive compounds</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Specifically state Montmorency cultivar</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Are standardized to anthocyanin content (a marker of quality and concentration)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Are third-party tested (USP, NSF, ConsumerLab)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Are produced in cGMP-certified facilities</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">For juice/concentrate: have no added sugar or sweeteners</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">For powder: use cold-pressed or freeze-dried processing to preserve heat-sensitive compounds</li>
           </ul>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Brand comparison:</span> established brands like CherryPharm, Cheribundi, and concentrated products from research-grade suppliers are commonly used in studies and tend to have more consistent active compound concentrations than budget options.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Where to Buy</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Tart cherry products are available at supplement retailers, health food stores, and online. For the broadest selection of forms (concentrate, powder, capsules) and verified Montmorency products, Amazon offers the widest range.
           </p>
           <a href={amazonHref} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm inline-block">
@@ -167,7 +167,7 @@ export default function TartCherryPage() {
             {faqs.map((f, i) => (
               <div key={i}>
                 <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
-                <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
+                <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
               </div>
             ))}
           </div>

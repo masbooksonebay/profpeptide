@@ -31,7 +31,7 @@ export default function RetatrutideVsTirzepatidePage() {
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Retatrutide vs Tirzepatide &mdash; Triple Agonist vs Dual Agonist Comparison</h1>
-      <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Retatrutide and Tirzepatide are both injectable peptides for weight loss and metabolic health, but they work on different numbers of receptors. Tirzepatide is FDA-approved and activates two receptors (GLP-1 and GIP). Retatrutide is investigational and activates three (GLP-1, GIP, and glucagon), which appears to drive even greater weight loss in trials. Here&apos;s how they compare.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Retatrutide and Tirzepatide are both injectable peptides for weight loss and metabolic health, but they work on different numbers of receptors. Tirzepatide is FDA-approved and activates two receptors (GLP-1 and GIP). Retatrutide is investigational and activates three (GLP-1, GIP, and glucagon), which appears to drive even greater weight loss in trials. Here&apos;s how they compare.</p>
 
       <div className="overflow-x-auto mb-8">
         <table className="w-full text-sm border-collapse">

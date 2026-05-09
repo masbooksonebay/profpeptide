@@ -27,7 +27,7 @@ export default function CurcuminPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Curcumin is the primary bioactive polyphenol in turmeric (Curcuma longa) — the bright yellow spice used for thousands of years in Ayurvedic and traditional Chinese medicine. It is one of the most extensively studied natural compounds for inflammation and pain, with over 3,000 published studies. Curcumin&apos;s core mechanism is inhibition of NF-κB — the master regulator of inflammatory gene expression — producing broad anti-inflammatory effects comparable to NSAIDs like ibuprofen in some studies, without the gastrointestinal and cardiovascular side effects. The major challenge with curcumin is bioavailability — standard curcumin powder is poorly absorbed. Modern formulations (BCM-95, Meriva phospholipid complex, Theracurmin nanoparticles, piperine co-administration) dramatically improve absorption and are essential for clinical effect.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function CurcuminPage() {
               "BDNF Upregulation — Curcumin increases brain-derived neurotrophic factor (BDNF) expression, supporting neuroplasticity and potentially explaining observed antidepressant effects.",
               "Antioxidant Activity — Curcumin directly scavenges free radicals and upregulates endogenous antioxidant enzymes including superoxide dismutase, catalase, and glutathione peroxidase.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A meta-analysis of 8 RCTs found curcumin supplementation significantly reduced markers of exercise-induced muscle damage (CK, LDH) and reduced muscle soreness vs. placebo. Osteoarthritis research is robust — a 2021 meta-analysis found curcumin produced significant pain reduction and functional improvement comparable to NSAIDs with fewer GI side effects. Cardiovascular research shows improvements in endothelial function and reductions in LDL oxidation. Mood and cognitive research suggests curcumin may have antidepressant effects and neuroprotective properties through BDNF upregulation.
           </p>
         </div>
@@ -80,14 +80,14 @@ export default function CurcuminPage() {
               "Duration: Anti-inflammatory effects typically seen within 4–8 weeks of consistent use",
               "Choose wisely: Standard turmeric powder or low-quality curcumin has minimal bioavailability — choose BCM-95, Meriva, Theracurmin, or curcumin + piperine formulations",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Very safe at typical doses. Mild GI effects including nausea at high doses. May have blood-thinning properties — use caution with anticoagulant medications. High doses not recommended during pregnancy. May interfere with iron absorption — separate from iron supplements. The excellent safety profile is well established across multiple clinical trials.
           </p>
         </div>
@@ -99,7 +99,7 @@ export default function CurcuminPage() {
               "Paultre K, et al. Therapeutic effects of turmeric or curcumin extract on pain and function for individuals with knee osteoarthritis. BMJ Open Sport Exerc Med. 2021.",
               "Hewlings SJ, Kalman DS. Curcumin: A Review of Its Effects on Human Health. Foods. 2017.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

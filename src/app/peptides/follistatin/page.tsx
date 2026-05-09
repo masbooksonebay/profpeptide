@@ -135,20 +135,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Follistatin (FS-344) is administered as a daily subcutaneous injection. The 90-minute half-life requires daily dosing during cycles to maintain effective levels. Dosing protocols are derived from community/research practice rather than validated clinical trials.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Conservative starting dose: 100 mcg per day for the first cycle to assess tolerance and response</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard dose: 100–200 mcg per day</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Maximum recommended: 200 mcg per day; doses above this have been associated with adverse events including a case report of central serous chorioretinopathy (vision impairment) at 1 mg single dose</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 10–30 days on, with off-periods 2–3 times the cycle length (typically 3–4 weeks off)</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Continuous use is not studied and not recommended</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Conservative starting dose: 100 mcg per day for the first cycle to assess tolerance and response</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard dose: 100–200 mcg per day</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Maximum recommended: 200 mcg per day; doses above this have been associated with adverse events including a case report of central serous chorioretinopathy (vision impairment) at 1 mg single dose</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 10–30 days on, with off-periods 2–3 times the cycle length (typically 3–4 weeks off)</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Continuous use is not studied and not recommended</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Cycle structure rationale: follistatin cycling is designed to allow the body to re-establish baseline myostatin levels and any reproductive hormone changes to normalize. Some users do shorter, more frequent pulses (e.g., 10 days on, 3 weeks off, repeated) for sustained effect with reduced reproductive impact. Most experienced users keep cycles short — 10–14 days — and stack with longer-cycle compounds rather than running follistatin alone for extended periods.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -165,9 +165,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Headache or fatigue during cycles</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild flu-like symptoms (uncommon)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache or fatigue during cycles</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild flu-like symptoms (uncommon)</li>
           </ol>
         </div>
         <div>
@@ -175,9 +175,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reproductive hormone changes — follistatin binds activin, which regulates FSH. Changes in FSH and downstream reproductive hormones can occur during use</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Joint pain or stiffness</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild bloating or fluid retention</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reproductive hormone changes — follistatin binds activin, which regulates FSH. Changes in FSH and downstream reproductive hormones can occur during use</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Joint pain or stiffness</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild bloating or fluid retention</li>
           </ol>
         </div>
         <div>
@@ -185,12 +185,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Central serous chorioretinopathy (vision impairment) — case report at 1 mg single dose (10x typical), resolved after discontinuation. Never exceed 200 mcg/day</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of fertility effects from sustained activin pathway modulation</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing tumors due to satellite cell and growth pathway activation</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Central serous chorioretinopathy (vision impairment) — case report at 1 mg single dose (10x typical), resolved after discontinuation. Never exceed 200 mcg/day</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of fertility effects from sustained activin pathway modulation</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical risk of accelerated growth in pre-existing tumors due to satellite cell and growth pathway activation</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Follistatin&apos;s safety profile is the most uncertain among muscle-building peptides because injectable peptide human data is minimal. Gene therapy approaches have shown clean safety profiles in primates and Becker muscular dystrophy patients, but those results don&apos;t directly translate to injectable peptide use. Reproductive considerations are real — monitor reproductive hormones if fertility is a concern. Cycling on/off is essential, not optional.
         </p>
       </div>
@@ -248,19 +248,19 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Follistatin (FS-344) injectable peptide is not FDA-approved for any human use. The strongest clinical evidence for follistatin comes from AAV1-FS344 gene therapy trials in Becker muscular dystrophy, not injectable peptide use. Gene therapy provides sustained expression for months from a single dose; injectable peptide has a 90-minute half-life requiring daily injection.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Most injectable peptide use sits outside published research. Effects on muscle in humans from subcutaneous injection are not formally validated through controlled trials. Doses, cycles, and outcomes are derived from research community practice rather than clinical evidence.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency added follistatin to the prohibited list in 2019 under Section S2 (peptide hormones). Subject to doping detection methods.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Counterfeit follistatin is common in the gray market. Recombinant production is expensive — extremely cheap product is suspect. Certificate of Analysis verification is critical.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade material is sold for laboratory use only and is not approved for human consumption.
         </p>
       </div>
@@ -276,7 +276,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -289,37 +289,37 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Rodino-Klapac LR, Haidet AM, Kota J, et al. Inhibition of myostatin with emphasis on follistatin as a therapy for muscle disease. Muscle Nerve. 2009;39(3):283-96.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2717722/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC2717722/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lee SJ. Quadrupling muscle mass in mice by targeting TGF-β signaling pathways. PLoS One. 2007;2(8):e789.{" "}
           <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000789" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0000789
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mendell JR, Sahenk Z, Malik V, et al. A phase 1/2a follistatin gene therapy trial for Becker muscular dystrophy. Mol Ther. 2015;23(1):192-201.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5240576/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC5240576/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Iezzi S, Di Padova M, Serra C, et al. Deacetylase inhibitors increase muscle cell size by promoting myoblast recruitment and fusion through induction of follistatin. Dev Cell. 2004;6(5):673-84.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/15130492/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/15130492/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kota J, Handy CR, Haidet AM, et al. Follistatin gene delivery enhances muscle growth and strength in nonhuman primates. Sci Transl Med. 2009;1(6):6ra15.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2852878/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC2852878/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Datta-Mannan A, Yaden B, Krishnan V, et al. An engineered human follistatin variant: insights into the pharmacokinetic and pharmacodynamic relationships of a novel molecule with broad therapeutic potential. J Pharmacol Exp Ther. 2013;344(3):616-23.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/23230213/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23230213/
@@ -333,7 +333,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -344,7 +344,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -379,7 +379,7 @@ export default function FollistatinPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Follistatin is a naturally occurring single-chain glycoprotein that functions as a potent inhibitor of the myostatin pathway. Myostatin is the body&apos;s primary negative regulator of skeletal muscle growth — it places a ceiling on how much muscle a person can build. By binding and neutralizing myostatin, follistatin allows muscle growth beyond normal genetic limits. The injectable research form is FS-344, a 344-amino-acid precursor protein that the body cleaves into two functional isoforms: FS-315 (circulating, muscle-targeting) and FS-288 (tissue-bound, gonad-concentrated). Strong gene therapy data exists in primates (15% muscle growth persisting 15+ months) and Becker muscular dystrophy patients; injectable peptide human data is minimal.
           </p>
           <div>
@@ -387,29 +387,29 @@ export default function FollistatinPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Inhibits myostatin, removing the body&apos;s primary muscle growth ceiling</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Enables both hypertrophy (bigger fibers) and hyperplasia (more fibers)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Inhibits activin A, providing dual-action anti-catabolic effect</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Promotes satellite cell proliferation for enhanced muscle regeneration</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduces fat deposition (myostatin deficiency lowers adipogenesis)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Strong gene therapy efficacy data in primates and humans</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Inhibits myostatin, removing the body&apos;s primary muscle growth ceiling</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Enables both hypertrophy (bigger fibers) and hyperplasia (more fibers)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Inhibits activin A, providing dual-action anti-catabolic effect</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Promotes satellite cell proliferation for enhanced muscle regeneration</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduces fat deposition (myostatin deficiency lowers adipogenesis)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Strong gene therapy efficacy data in primates and humans</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Most research protocols use 100–200 mcg per day administered subcutaneously, in 10–30 day cycles followed by 3–4 weeks off. Daily dosing is required because the injectable peptide has a ~90-minute half-life. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Follistatin is not FDA-approved and is sold only as a research-grade peptide. It is one of the most expensive research peptides per milligram due to recombinant production complexity. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current research-grade options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=performance+energy+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -428,12 +428,12 @@ export default function FollistatinPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

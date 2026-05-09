@@ -27,7 +27,7 @@ export default function LArgininePage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-arginine is a semi-essential amino acid found in red meat, poultry, fish, and dairy that serves as the direct substrate for nitric oxide synthase — the enzyme that produces nitric oxide (NO), the signaling molecule that dilates blood vessels and increases blood flow. L-arginine also stimulates growth hormone release from the pituitary gland, particularly when taken at rest or before sleep, making it a traditional GH-support supplement. However, L-arginine&apos;s effectiveness as a sports supplement is significantly limited by its poor oral bioavailability — the liver and intestines extract a large proportion of oral arginine before it reaches systemic circulation. This is why L-citrulline has largely replaced L-arginine for nitric oxide and performance applications — citrulline bypasses liver metabolism and raises blood arginine levels more effectively than arginine itself. L-arginine remains relevant for its GH-releasing effects, wound healing, and cardiovascular applications.
           </p>
         </div>
@@ -57,14 +57,14 @@ export default function LArgininePage() {
               "Urea Cycle Function — Arginine is a key intermediate in the urea cycle, facilitating the conversion of toxic ammonia to urea for excretion. This supports liver detoxification and nitrogen balance during high-protein diets.",
               "Immune and Wound Healing — Arginine is conditionally essential during illness, surgery, and injury — rapidly dividing immune cells and healing tissue have high arginine requirements. It supports T-cell proliferation, macrophage function, and collagen synthesis.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             GH research shows intravenous arginine consistently stimulates significant GH release. Oral arginine&apos;s GH-stimulating effects are more modest — a dose of 5–9g has been shown to increase GH in resting conditions. However, arginine taken around exercise may blunt the exercise-induced GH spike rather than enhance it. Cardiovascular research shows modest blood pressure reductions with arginine supplementation in hypertensive individuals. Wound healing research in clinical settings (post-surgery) supports arginine supplementation for faster healing. The sports performance evidence for oral arginine is weaker than for L-citrulline — citrulline is now preferred for exercise performance applications.
           </p>
         </div>
@@ -78,14 +78,14 @@ export default function LArgininePage() {
               "Wound healing: Often used at higher doses (6–20g) under medical supervision",
               "Note: L-citrulline is superior to L-arginine for pre-workout nitric oxide and performance applications",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Generally safe at typical doses. Common side effects at higher doses include GI upset, nausea, and diarrhea. May lower blood pressure — caution with antihypertensive medications. May worsen herpes outbreaks — lysine supplementation or caution advised in those with recurrent herpes. High doses may cause electrolyte imbalances. Not recommended immediately after heart attack — clinical guidance needed.
           </p>
         </div>
@@ -102,7 +102,7 @@ export default function LArgininePage() {
               "Kanaley JA. Growth hormone, arginine and exercise. Curr Opin Clin Nutr Metab Care. 2008.",
               "Lubec B, et al. L-arginine reduces lipid peroxidation in patients with diabetes mellitus. Free Radic Biol Med. 1997.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

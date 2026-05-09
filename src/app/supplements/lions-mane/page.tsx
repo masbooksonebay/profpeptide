@@ -27,7 +27,7 @@ export default function LionsManePage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Lion&apos;s Mane (Hericium erinaceus) is a medicinal mushroom native to North America, Europe, and Asia, characterized by its distinctive white cascading spines resembling a lion&apos;s mane. It is one of the most scientifically interesting natural compounds in the nootropic space — unique in its ability to stimulate the production of nerve growth factor (NGF) and brain-derived neurotrophic factor (BDNF), proteins that support the growth, maintenance, and survival of neurons. This neurogenic mechanism is genuinely novel — most nootropics modulate existing neurotransmitter systems, while Lion&apos;s Mane may actually promote new neuronal growth and synaptic connections. Its bioactive compounds — hericenones (from the fruiting body) and erinacines (from the mycelium) — cross the blood-brain barrier and stimulate NGF synthesis. Lion&apos;s Mane has been used in traditional Chinese and Japanese medicine for centuries and has an expanding evidence base from animal studies and several human clinical trials.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function LionsManePage() {
               "Anti-inflammatory and Antioxidant Effects — Lion's Mane polysaccharides reduce neuroinflammation and oxidative stress in the brain — both key contributors to cognitive decline and neurodegenerative disease.",
               "Mood Regulation — Lion's Mane appears to reduce anxiety and depression-like behaviors in animal models, with proposed mechanisms including reduced neuroinflammation, increased BDNF, and modulation of the HPA stress axis.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A landmark 2009 double-blind RCT by Mori et al. in 30 Japanese adults with mild cognitive impairment found Lion&apos;s Mane supplementation (250mg 3x daily for 16 weeks) produced significant improvements in cognitive function scores vs. placebo — though scores declined after supplementation stopped, suggesting ongoing use is required. A 2023 RCT in 41 healthy adults aged 18–45 found a single dose of Lion&apos;s Mane extract significantly improved processing speed and working memory. A 2010 study found significant reductions in anxiety and depression scores in women who consumed Lion&apos;s Mane cookies vs. placebo over 4 weeks. Animal studies show consistent NGF upregulation, neurogenesis promotion, and neuroprotection in models of Alzheimer&apos;s disease and nerve injury.
           </p>
         </div>
@@ -79,14 +79,14 @@ export default function LionsManePage() {
               "Timing: Daily consistent use — benefits accumulate over weeks",
               "Duration: Minimum 4–8 weeks to assess cognitive effects",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Excellent safety profile across clinical studies. Rare reports of skin rash or itching in people with mushroom allergies. Mild GI discomfort at high doses in some individuals. No serious adverse effects documented in human research. People with mushroom allergies should exercise caution.
           </p>
         </div>
@@ -103,7 +103,7 @@ export default function LionsManePage() {
               "Mori K, et al. Improving effects of the mushroom Yamabushitake on mild cognitive impairment: a double-blind placebo-controlled clinical trial. Phytother Res. 2009.",
               "Docherty S, et al. The Acute and Chronic Effects of Lion's Mane Mushroom Supplementation on Cognitive Function, Stress and Mood in Young Adults: A Double-Blind, Parallel Groups, Pilot Study. Nutrients. 2023.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

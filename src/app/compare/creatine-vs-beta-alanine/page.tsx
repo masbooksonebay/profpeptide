@@ -29,20 +29,20 @@ export default function CreatineVsBetaAlaninePage() {
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Creatine vs Beta-Alanine &mdash; Performance Supplement Comparison</h1>
-      <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Creatine and Beta-Alanine are two of the most evidence-backed performance supplements available. They&apos;re often compared but work through completely different mechanisms &mdash; making them complementary rather than interchangeable. Creatine is best for explosive strength. Beta-alanine is best for sustained high-intensity endurance lasting 1&ndash;4 minutes.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Creatine and Beta-Alanine are two of the most evidence-backed performance supplements available. They&apos;re often compared but work through completely different mechanisms &mdash; making them complementary rather than interchangeable. Creatine is best for explosive strength. Beta-alanine is best for sustained high-intensity endurance lasting 1&ndash;4 minutes.</p>
 
       <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why these two address completely different muscle bottlenecks</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Creatine and beta-alanine are the two performance supplements with the most research evidence &mdash; but they&apos;re addressing completely different limits in muscle performance.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Creatine works on the ATP energy system. Your muscles store energy as ATP (adenosine triphosphate). For maximum-effort, short-duration efforts (under ~10 seconds), ATP is replenished by phosphocreatine &mdash; and this is the bottleneck. By saturating your muscle phosphocreatine stores, creatine helps you regenerate ATP faster, which translates to more reps, more weight, more explosive output.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Beta-alanine works on the lactic acid problem. During high-intensity efforts lasting 1&ndash;4 minutes (think 400m sprint, high-rep lifting, intense intervals), lactic acid builds up in muscles, lowering pH and triggering fatigue. Your muscles use carnosine to buffer this acid. Beta-alanine is the rate-limiting precursor for carnosine synthesis. By raising muscle carnosine, beta-alanine extends the window before acidic fatigue sets in.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Practical outcome: creatine helps you lift heavier and sprint faster on short efforts. Beta-alanine helps you do more high-intensity work before fatigue. They address different bottlenecks, which is why combining them is well-researched and produces additive effects (creatine for the explosive work, beta-alanine for the sustained intensity).
         </p>
       </div>
@@ -70,37 +70,37 @@ export default function CreatineVsBetaAlaninePage() {
 
       <div className="mb-8">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which one is right for you?</h2>
-        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
+        <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           These supplements aren&apos;t competitors. Match them to the metabolic demand of your sport &mdash; and consider taking both, since the benefits stack additively.
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Strength training, powerlifting, explosive sports</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Creatine is the priority. Decades of RCT data confirm ~5&ndash;10% increases in 1RM, faster sprint times, and meaningful gains in lean muscle mass. The benefits are most visible in efforts lasting under 10 seconds &mdash; heavy lifts, sprints, jumps. Standard dose: 3&ndash;5g daily, no loading needed.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Endurance, mid-distance cardio, repeated high-intensity intervals</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Beta-alanine becomes more relevant. Sports lasting 1&ndash;4 minutes (rowing, swimming sprints, CrossFit, soccer) benefit most. The carnosine elevation extends muscle&apos;s ability to buffer lactic acid. Standard dose: 2&ndash;5g daily, split into smaller doses to minimize tingling. Carnosine levels peak after 4&ndash;10 weeks of consistent dosing.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Mixed sports (most athletes)</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Take both. The research consistently supports combined use producing additive performance benefits without interaction concerns. Most resistance-trained athletes do better with both than with either alone. Stack costs ~$30&ndash;50/month combined.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Aging adults focused on muscle and brain health</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Creatine is the priority. Beyond the performance benefits, creatine has growing research support for brain health, cognitive function in older adults, and prevention of muscle loss with aging (sarcopenia). Beta-alanine has less aging-population research but is also safe and reasonable.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Vegetarians or vegans</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Creatine is especially valuable. Plant-based diets contain essentially zero dietary creatine (it&apos;s only in animal flesh). Vegetarians often start with significantly lower baseline muscle creatine stores and see proportionally larger gains from supplementation. Beta-alanine is also useful but the deficit is less dramatic.
             </p>
           </div>
@@ -117,37 +117,37 @@ export default function CreatineVsBetaAlaninePage() {
         <div className="space-y-4">
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Do I need to load creatine or beta-alanine?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Loading is optional for creatine &mdash; 20g/day for 5 days saturates muscle stores faster, but 3&ndash;5g/day reaches the same saturation level after 3&ndash;4 weeks without the risk of GI upset. Most users skip loading. Beta-alanine has no loading protocol &mdash; it doesn&apos;t act acutely. The 4&ndash;10 week timeline to peak carnosine is unavoidable regardless of dose.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What about the beta-alanine tingling?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Paraesthesia (tingling in the face, hands, scalp) is harmless and decreases with consistent use. It&apos;s caused by beta-alanine binding to nerve receptors near the skin. To minimize: split doses smaller (1g at a time vs 4g all at once), take with food, use sustained-release forms, or simply tolerate it for the first 2&ndash;3 weeks until receptors desensitize.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Will creatine make me hold water?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Yes, creatine causes mild intracellular water retention &mdash; typically 1&ndash;3 lbs in the first 2&ndash;4 weeks. This is intramuscular water (not subcutaneous bloat) and is part of the mechanism. Most users don&apos;t notice it visually, and the strength benefits significantly outweigh the small weight gain. The water retention plateaus after initial saturation.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are the cheap brands as good as expensive ones?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               For both supplements, the cheapest forms are usually fine &mdash; these are simple molecules that don&apos;t benefit much from premium processing. Creatine: stick to creatine monohydrate (the most-researched form). Avoid &ldquo;buffered creatine&rdquo; or &ldquo;creatine HCL&rdquo; marketing &mdash; they don&apos;t show better performance than monohydrate. Beta-alanine: standard beta-alanine is fine; sustained-release forms only matter if tingling is intolerable.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take them together?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Yes &mdash; research consistently supports the combination. They have completely separate mechanisms (ATP regeneration vs lactic acid buffering) and produce additive performance benefits. Combined supplementation is one of the most well-evidenced supplement stacks for athletes.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How safe are they long-term?</h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both have excellent long-term safety records. Creatine has 30+ years of human safety data &mdash; no documented organ damage, no kidney issues in healthy adults, no significant adverse signals. Beta-alanine has 15+ years of safety data, with the only documented &ldquo;side effect&rdquo; being the harmless tingling. Both are among the safest supplements in the performance category.
             </p>
           </div>

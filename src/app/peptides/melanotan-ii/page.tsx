@@ -126,20 +126,20 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           MT-II is administered as a subcutaneous injection. Given the documented serious adverse events at higher doses, conservative starting and maintenance doses are critical.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">STARTING DOSE: 0.1 mg subcutaneously to assess tolerance. ALWAYS START LOW.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Loading phase (typical research protocol): 0.25–0.5 mg per dose, 3–5 days per week, 2–4 weeks.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Maintenance: 0.5 mg, 1–2× per week to maintain tan.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">NEVER exceed 1 mg per dose. The 6 mg case report describes near-fatal toxicity.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Avoid combining with concurrent UV exposure timing. MT-II effects are independent of UV.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">STARTING DOSE: 0.1 mg subcutaneously to assess tolerance. ALWAYS START LOW.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Loading phase (typical research protocol): 0.25–0.5 mg per dose, 3–5 days per week, 2–4 weeks.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Maintenance: 0.5 mg, 1–2× per week to maintain tan.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">NEVER exceed 1 mg per dose. The 6 mg case report describes near-fatal toxicity.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Avoid combining with concurrent UV exposure timing. MT-II effects are independent of UV.</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           MT-II is NOT FDA-approved. The risk profile is meaningfully worse than typical research peptides. Reading the full Side Effects &amp; Safety section before any use is strongly recommended.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -156,11 +156,11 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Nausea (40–65% at doses &gt;0.5 mg)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Flushing</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mole darkening</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Decreased appetite</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Spontaneous erections in males</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea (40–65% at doses &gt;0.5 mg)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Flushing</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mole darkening</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Decreased appetite</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Spontaneous erections in males</li>
           </ol>
         </div>
         <div>
@@ -168,10 +168,10 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hyperpigmentation (face, gums, breasts)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Persistent mole changes</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Headache, dizziness</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild blood pressure elevation</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hyperpigmentation (face, gums, breasts)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Persistent mole changes</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache, dizziness</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild blood pressure elevation</li>
           </ol>
         </div>
         <div>
@@ -179,14 +179,14 @@ const sections = [
             Serious (documented in case reports)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Rhabdomyolysis with renal failure — ICU admission documented in published case reports</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Renal infarction</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Sympathomimetic toxicity</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Priapism (prolonged erection requiring medical intervention)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reported melanoma cases (causation unclear, may relate to UV behavior in users)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Rhabdomyolysis with renal failure — ICU admission documented in published case reports</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Renal infarction</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Sympathomimetic toxicity</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Priapism (prolonged erection requiring medical intervention)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reported melanoma cases (causation unclear, may relate to UV behavior in users)</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           MT-II is NOT FDA-approved. Health authorities in the US, UK, Australia, and EU have issued warnings. PT-141 (Vyleesi) is the only FDA-approved derivative for sexual arousal indications. The combined risk profile — documented rhabdomyolysis, renal injury, mole darkening, theoretical melanoma risk — makes MT-II one of the higher-risk research peptides commonly available.
         </p>
       </div>
@@ -243,16 +243,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Melanotan II is NOT FDA-approved for any human use. Health agencies in the US, UK, Australia, EU, and elsewhere have issued warnings against its use.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Multiple published case reports document serious adverse events including rhabdomyolysis, renal injury, severe sympathomimetic toxicity, priapism, and reported melanoma cases. The &ldquo;research peptide&rdquo; market for MT-II is largely unregulated — purity and potency vary widely.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Long-term safety data are limited and concerning for melanoma risk (though causation vs UV behavior remains debated). PT-141 (bremelanotide) is the FDA-approved derivative for sexual arousal applications and represents the cleaner pharmacology that MT-II&apos;s non-selectivity lacks.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Anti-doping: not currently on the WADA prohibited list. We strongly recommend reading the full Side Effects &amp; Safety section before considering use.
         </p>
       </div>
@@ -268,7 +268,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -281,37 +281,37 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Melanotan II.{" "}
           <a href="https://en.wikipedia.org/wiki/Melanotan_II" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/Melanotan_II
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hadley ME, Dorr RT. Melanocortin peptide therapeutics: historical milestones, clinical studies and commercialization. Peptides. 2006;27(4):921-30.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wessells H, Levine N, Hadley ME, et al. Melanocortin receptor agonists, penile erection, and sexual motivation. Int J Impot Res. 2000;12 Suppl 4:S74-9.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nelson ME, Bryant SM, Aks SE. Melanotan II injection resulting in systemic toxicity and rhabdomyolysis. Clin Toxicol. 2012;50(10):1169-73.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/23121206/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23121206/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           DermNet NZ. Melanotan II.{" "}
           <a href="https://dermnetnz.org/topics/melanotan-ii" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://dermnetnz.org/topics/melanotan-ii
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Renal infarction case report. PMC.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7148395/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC7148395/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dorr RT, Lines R, Levine N, et al. Evaluation of melanotan-II, a superpotent cyclic melanotropic peptide. Life Sci. 1996;58(20):1777-84.
         </li>
       </ol>
@@ -322,7 +322,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -333,7 +333,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -368,7 +368,7 @@ export default function MelanotanIIPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Melanotan II is a synthetic cyclic heptapeptide and non-selective agonist of the melanocortin receptors (MC1R, MC3R, MC4R, MC5R). It was developed in the 1980s at the University of Arizona as a successor to Melanotan I (afamelanotide, FDA-approved as Scenesse for erythropoietic protoporphyria). Originally developed as a sunless tanning agent, MT-II also produces strong sexual arousal effects (via MC4R) and appetite suppression. It is NOT FDA-approved for any indication, and health agencies in multiple countries have warned against its use. PT-141 (bremelanotide / Vyleesi) was specifically derived from MT-II by removing the C-terminal amide group — eliminating the strong tanning effect while preserving sexual arousal effects. MT-II is associated with documented serious adverse events including rhabdomyolysis, renal injury, and reversible darkening of moles.
           </p>
           <div>
@@ -376,30 +376,30 @@ export default function MelanotanIIPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Sunless tanning (skin darkening via MC1R-mediated melanin production)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Appetite suppression (MC4R activation)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Sexual arousal / erection support in males (MC3R/MC4R)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduced UV exposure required for tan development</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Sunless tanning (skin darkening via MC1R-mediated melanin production)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Appetite suppression (MC4R activation)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Sexual arousal / erection support in males (MC3R/MC4R)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduced UV exposure required for tan development</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Reported risks (genuinely worth flagging upfront):</span> Mole darkening, new moles, reported melanoma cases (causation unclear), rhabdomyolysis, renal infarction, sympathomimetic toxicity, severe nausea, priapism. See the full Side Effects &amp; Safety section.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Starting dose: 0.1 mg subcutaneously to assess tolerance. Typical research range: 0.25–1 mg per dose, 2–3 times per week during loading phase, then weekly maintenance. NEVER exceed 1 mg per dose in research contexts. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> MT-II is sold by specialty research peptide vendors despite regulatory warnings. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=skin+anti+aging+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -418,12 +418,12 @@ export default function MelanotanIIPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

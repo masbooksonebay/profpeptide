@@ -27,7 +27,7 @@ export default function ElectrolytePowdersPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Electrolytes are electrically charged minerals dissolved in body fluids that are essential for nerve conduction, muscle contraction, fluid balance, and pH regulation. The primary electrolytes lost through sweat are sodium, potassium, magnesium, and chloride — with sodium being the most critical for hydration and performance. Electrolyte powders are concentrated mineral supplements designed to replenish these losses during and after exercise, hot weather exposure, or illness. While plain water is adequate for short, low-intensity activities, electrolyte replacement becomes increasingly important as exercise duration, intensity, and sweat rate increase. Sodium is particularly critical — it drives fluid retention and triggers thirst, making it the cornerstone of effective hydration. Many commercial sports drinks prioritize sugar over electrolyte content — quality electrolyte powders provide clinically relevant electrolyte doses without unnecessary sugar.
           </p>
         </div>
@@ -56,14 +56,14 @@ export default function ElectrolytePowdersPage() {
               "Nerve and Muscle Function — Potassium and sodium work together to maintain the electrochemical gradients across cell membranes that drive nerve impulses and muscle contractions. Depletion disrupts these gradients, contributing to weakness, cramping, and impaired coordination.",
               "Magnesium's Role — Magnesium is involved in over 300 enzymatic reactions, including ATP production and muscle relaxation. Magnesium depletion during exercise can contribute to muscle cramps, fatigue, and reduced power output.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Research consistently shows electrolyte supplementation improves performance in endurance events exceeding 60–90 minutes and in hot conditions. Sodium replacement specifically prevents exercise-associated hyponatremia — a potentially dangerous dilutional condition seen in endurance athletes who drink excessive plain water. Studies show sodium-containing beverages improve fluid retention compared to plain water. Magnesium supplementation reduces exercise-induced cramping in deficient individuals. Sweat rate and electrolyte loss vary enormously between individuals — &quot;salty sweaters&quot; have significantly higher sodium losses and greater supplementation needs.
           </p>
         </div>
@@ -79,14 +79,14 @@ export default function ElectrolytePowdersPage() {
               "Choose products without excessive sugar unless using for rapid energy alongside hydration",
               "Individual sweat testing can personalize electrolyte replacement for serious athletes",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Extremely safe when used appropriately. Excessive sodium in sedentary individuals with hypertension warrants caution. High-dose magnesium can cause diarrhea — start with lower doses. The main risk is not electrolyte supplementation but hyponatremia from drinking too much plain water during prolonged exercise without sodium replacement.
           </p>
         </div>
@@ -103,7 +103,7 @@ export default function ElectrolytePowdersPage() {
               "Shirreffs SM, Sawka MN. Fluid and electrolyte needs for training, competition, and recovery. J Sports Sci. 2011.",
               "Hew-Butler T, et al. Statement of the Third International Exercise-Associated Hyponatremia Consensus Development Conference. Clin J Sport Med. 2015.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

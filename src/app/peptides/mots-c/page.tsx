@@ -126,19 +126,19 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           MOTS-c is administered as a daily subcutaneous injection in research protocols. There are no FDA-approved dosing standards because MOTS-c is not approved for human use.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Common research-grade dose: 5–10 mg subcutaneously once daily</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Some protocols use 5 mg twice weekly for maintenance</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Animal study doses ranged from 0.5–15 mg/kg/day</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 4–12 weeks is common, with extended use in some longevity protocols</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Common research-grade dose: 5–10 mg subcutaneously once daily</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Some protocols use 5 mg twice weekly for maintenance</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Animal study doses ranged from 0.5–15 mg/kg/day</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 4–12 weeks is common, with extended use in some longevity protocols</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           MOTS-c is one of the largest peptides commonly used at this dose range, which makes per-dose cost relatively high compared to smaller peptides like BPC-157 or TB-500.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -155,8 +155,8 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions — minor</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Most users report no acute systemic effects</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions — minor</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Most users report no acute systemic effects</li>
           </ol>
         </div>
         <div>
@@ -164,9 +164,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Fatigue</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — uncommon</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Fatigue</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — uncommon</li>
           </ol>
         </div>
         <div>
@@ -174,11 +174,11 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Long-term human safety data is limited</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — theoretical, not commonly reported</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term human safety data is limited</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — theoretical, not commonly reported</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           MOTS-c has limited human clinical data. The peptide is endogenously produced, which suggests low immunogenicity, but long-term exogenous administration safety has not been established.
         </p>
       </div>
@@ -234,13 +234,13 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           MOTS-c is investigational and not approved by the FDA, EMA, or any major regulatory body for therapeutic use. Phase 1 clinical trials have begun, but no Phase 2 or Phase 3 efficacy trials have been completed. The bulk of research evidence remains in animal models and cell-based studies.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Long-term human safety data is limited. Because MOTS-c is endogenously produced, immunogenicity risk is theoretically low, but long-term exogenous administration safety has not been established. Anti-doping status is currently uncertain — MOTS-c is not specifically named on the WADA prohibited list but could fall under broader peptide hormone categories.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade MOTS-c sold by specialty peptide vendors is intended for laboratory research use only and is not approved for human consumption.
         </p>
       </div>
@@ -256,7 +256,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -269,28 +269,28 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lee C, Zeng J, Drew BG, et al. The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance. Cell Metab. 2015;21(3):443-54.{" "}
           <a href="https://www.cell.com/article/S1550-4131(15)00061-3/fulltext" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.cell.com/article/S1550-4131(15)00061-3/fulltext
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kim SJ, Mehta HH, Wan J, et al. Mitochondrial peptides modulate mitochondrial function during cellular senescence. Aging (Albany NY). 2018;10(6):1239-56.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kumagai H, Coelho AR, Wan J, et al. MOTS-c reduces myostatin and muscle atrophy signaling. Am J Physiol Endocrinol Metab. 2021;320(4):E680-90.{" "}
           <a href="https://journals.physiology.org/doi/full/10.1152/ajpendo.00275.2020" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://journals.physiology.org/doi/full/10.1152/ajpendo.00275.2020
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pham AH, Wei Y, Koleva M, et al. Mitochondria-derived peptide MOTS-c restores mitochondrial respiration in type 2 diabetic heart. Front Physiol. 2025.{" "}
           <a href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1602271/full" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1602271/full
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cha YJ, Mehta HH, Hollander MR, et al. Mitochondrial-encoded peptide MOTS-c prevents pancreatic islet cell senescence to delay diabetes. Exp Mol Med. 2025.{" "}
           <a href="https://www.nature.com/articles/s12276-025-01521-1" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://www.nature.com/articles/s12276-025-01521-1
@@ -304,7 +304,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -315,7 +315,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -350,7 +350,7 @@ export default function MOTScPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             MOTS-c is a 16-amino-acid peptide encoded inside the mitochondrial genome itself — making it one of the first known mitochondria-derived peptides. Discovered in 2015 at USC, it acts as a hormone-like signal from mitochondria to the rest of the body, regulating metabolism through AMPK pathways. Research interest has focused on insulin resistance, type 2 diabetes, muscle preservation, and cellular aging. MOTS-c blood levels naturally decline with age, which has made it a candidate for longevity research.
           </p>
           <div>
@@ -358,29 +358,29 @@ export default function MOTScPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved insulin sensitivity and glucose uptake in skeletal muscle (preclinical)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">AMPK pathway activation similar to metformin and exercise</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Reduced muscle wasting through suppression of myostatin signaling</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cardiovascular protection in diabetic models</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Potential anti-aging effects through mitochondrial function support</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No significant side effects in early clinical exposure</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improved insulin sensitivity and glucose uptake in skeletal muscle (preclinical)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">AMPK pathway activation similar to metformin and exercise</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduced muscle wasting through suppression of myostatin signaling</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cardiovascular protection in diabetic models</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Potential anti-aging effects through mitochondrial function support</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No significant side effects in early clinical exposure</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> MOTS-c is in early-stage clinical research. Animal studies use 0.5–15 mg/kg/day. Common research-grade human dose is 5–10 mg subcutaneously once daily, though there is no validated clinical dosing standard. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> MOTS-c is not FDA-approved and is sold only as a research-grade peptide. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current research-grade options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=metabolic+weight+loss+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -399,12 +399,12 @@ export default function MOTScPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

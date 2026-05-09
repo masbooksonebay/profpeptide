@@ -27,7 +27,7 @@ export default function AshwagandhaPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Ashwagandha (Withania somnifera) is one of the most important herbs in Ayurvedic medicine — used for over 3,000 years as a rasayana (rejuvenating tonic) to promote physical and mental health, enhance vitality, and increase longevity. It is classified as an adaptogen — a natural compound that helps the body normalize its response to physical and psychological stress. Ashwagandha&apos;s primary bioactive compounds, withanolides, modulate the HPA (hypothalamic-pituitary-adrenal) axis to reduce cortisol, the primary stress hormone. This cortisol reduction has downstream effects on testosterone levels, muscle recovery, sleep quality, and body composition — because chronically elevated cortisol suppresses testosterone, impairs sleep, and promotes fat accumulation. It is one of the most extensively researched adaptogens, with over 50 human clinical trials supporting its effects on stress, cortisol, testosterone, strength, and sleep.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function AshwagandhaPage() {
               "GABA Mimetic Activity — Withanolides bind to GABA receptors, producing anxiolytic and sleep-promoting effects without the dependence risk of benzodiazepines.",
               "Thyroid Stimulation — Ashwagandha increases T4 and T3 thyroid hormone levels in subclinical hypothyroidism, contributing to metabolic and energy improvements.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A double-blind RCT by Wankhede et al. (2015) found 300mg KSM-66 twice daily for 8 weeks significantly increased muscle strength (bench press by 18.2 kg vs 6.1 kg placebo), muscle recovery, and testosterone in healthy resistance-trained men. A 2019 RCT found Ashwagandha (240mg Sensoril daily for 60 days) significantly reduced cortisol by 22.2%, reduced perceived stress, and improved sleep quality vs. placebo. Multiple trials confirm significant reductions in serum cortisol and anxiety scores. A 2020 RCT found Ashwagandha improved VO2 max by 13% vs. 7% placebo over 8 weeks. A meta-analysis confirmed significant testosterone increases in men across multiple trials.
           </p>
         </div>
@@ -79,14 +79,14 @@ export default function AshwagandhaPage() {
               "Duration: Benefits accumulate over 4–12 weeks of consistent use",
               "Standardization: Look for KSM-66 (5% withanolides, full-spectrum root) or Sensoril (10% withanolides, root and leaf)",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Well tolerated in clinical trials. Most common side effects are mild GI discomfort and drowsiness. May lower blood pressure — caution with antihypertensive medications. May enhance thyroid hormone levels — monitor thyroid function if using thyroid medications. Rare reports of liver injury with very high doses — stay within recommended ranges. Not recommended during pregnancy. Some preparations contain root and leaf — root-only preparations have the better safety record.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function AshwagandhaPage() {
               "Pratte MA, et al. An alternative treatment for anxiety: a systematic review of human trial results reported for the Ayurvedic herb ashwagandha. J Altern Complement Med. 2014.",
               "Chandrasekhar K, et al. A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of ashwagandha root extract in reducing stress and anxiety. Indian J Psychol Med. 2012.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

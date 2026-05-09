@@ -126,22 +126,22 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           AOD-9604 was tested in clinical trials in both oral and subcutaneous formulations. Research-grade material is typically used by subcutaneous injection. There is no FDA-approved dose because AOD-9604 was discontinued before approval.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Common research-grade injectable dose: 250–500 mcg subcutaneously once daily</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Some protocols use 2–3 mg per week split into multiple injections</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Historical oral trial doses: 0.25 mg, 0.5 mg, and 1.0 mg daily</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 8–12 weeks is the most common, though there is no established standard</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Common research-grade injectable dose: 250–500 mcg subcutaneously once daily</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Some protocols use 2–3 mg per week split into multiple injections</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Historical oral trial doses: 0.25 mg, 0.5 mg, and 1.0 mg daily</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 8–12 weeks is the most common, though there is no established standard</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Half-life is roughly 30 minutes when administered subcutaneously, which is why daily dosing is standard. Some users dose twice daily for more sustained effects. Oral bioavailability is poor, which is why research has shifted toward injectable formulations.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           There is no separate research-grade dosing standard validated by clinical evidence. Most online dosing guidance is extrapolated from the original Metabolic Pharmaceuticals trial protocols and may not produce comparable results.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -158,8 +158,8 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions — redness or irritation at injection sites</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No common systemic side effects reported in trials</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions — redness or irritation at injection sites</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No common systemic side effects reported in trials</li>
           </ol>
         </div>
         <div>
@@ -167,9 +167,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Headache — reported infrequently</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild dizziness — uncommon</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Fatigue — uncommon</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache — reported infrequently</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild dizziness — uncommon</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Fatigue — uncommon</li>
           </ol>
         </div>
         <div>
@@ -177,11 +177,11 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare. Symptoms: difficulty breathing, swelling, hives. No anti-AOD-9604 antibodies were detected in any clinical trial, suggesting low immunogenicity.</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Long-term effects unknown — no data beyond 24 weeks</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare. Symptoms: difficulty breathing, swelling, hives. No anti-AOD-9604 antibodies were detected in any clinical trial, suggesting low immunogenicity.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term effects unknown — no data beyond 24 weeks</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           AOD-9604 has one of the cleanest short-term safety profiles of any peptide tested in obesity trials. The Phase 2 program found no meaningful elevation in IGF-1, blood glucose, blood pressure, heart rate, or other monitored parameters. However, long-term safety data beyond 24 weeks does not exist, and the FDA cited concerns about peptide impurities and potential immunogenicity in declining 503A bulks list inclusion in December 2024.
         </p>
       </div>
@@ -237,16 +237,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           AOD-9604 is not FDA-approved by the United States, EMA in Europe, or the TGA in Australia. Development as an obesity drug was terminated in 2007 after the Phase 2b trial failed to demonstrate statistically significant weight loss versus placebo when intensive diet and exercise were added.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           In December 2024, the FDA declined to include AOD-9604 (both free base and acetate forms) on the 503A Bulks List, citing concerns about long-term safety, peptide impurities, and potential immunogenicity. This restricts the peptide&apos;s availability through compounding pharmacies in the US.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           AOD-9604 received GRAS (Generally Recognized as Safe) status conditional on publication of safety data for use in foods and dietary supplements at low doses, but this status does not authorize it for therapeutic use.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency prohibits AOD-9604 in sport as a growth hormone fragment. Research-grade material is sold for laboratory use only and is not approved for human consumption.
         </p>
       </div>
@@ -262,7 +262,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -275,37 +275,37 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Heffernan MA, Thorburn AW, Fam B, et al. Increase of fat oxidation and weight loss in obese mice caused by chronic treatment with human growth hormone or a modified C-terminal fragment. Int J Obes. 2001.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/11713213/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11713213/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ng FM, Sun J, Sharma L, et al. Metabolic studies of a synthetic lipolytic domain (AOD9604) of human growth hormone. Horm Res. 2000;53(6):274-8.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/11146367/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11146367/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Stier H, Vos E, Kenley D. Safety and Tolerability of the Hexadecapeptide AOD9604 in Humans. J Endocrinol Metab. 2013;3(1-2):7-15.{" "}
           <a href="https://jofem.org/index.php/jofem/article/view/213/278" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://jofem.org/index.php/jofem/article/view/213/278
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wittert GA, Caterson ID, Bouchard C, et al. AOD9604, an orally active synthetic peptide derivative of human growth hormone, induced significant fat loss in obese subjects. Phase 2 trials, Metabolic Pharmaceuticals Ltd. 2003-2007.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Misra M. Obesity pharmacotherapy: current perspectives and future directions. Curr Drug Targets. 2013;14(7):739-43.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3584306/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC3584306/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cartilage repair Phase 2 investigation. Metabolic Pharmaceuticals (Calzada Limited) program disclosures.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           AOD-9604 visceral adipose tissue 2024 Phase 2b metabolic syndrome trial. Industry research disclosure.
         </li>
       </ol>
@@ -316,7 +316,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -327,7 +327,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -362,7 +362,7 @@ export default function AOD9604Page() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             AOD-9604 is a synthetic peptide fragment of human growth hormone, specifically the 16-amino-acid C-terminal sequence (amino acids 176-191) with a stabilizing tyrosine added at the front. It was developed in Australia in the 1990s to capture growth hormone&apos;s fat-burning effects without the broader hormonal side effects of full-length growth hormone. Despite six clinical trials in over 900 participants, it failed to demonstrate consistent weight loss in larger Phase 2b studies and was discontinued as a drug candidate in 2007. It remains available as a research peptide and has renewed interest for cartilage repair applications.
           </p>
           <div>
@@ -370,29 +370,29 @@ export default function AOD9604Page() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates lipolysis (fat breakdown) without raising blood sugar or IGF-1</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Modest weight reduction in early trials (2.6 kg vs 0.8 kg placebo over 12 weeks)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Selective fat-mobilization without growth hormone&apos;s broader endocrine effects</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Well-tolerated safety profile across 900+ trial participants</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Investigational interest in cartilage repair and joint applications</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No measurable effect on insulin sensitivity or glucose homeostasis</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stimulates lipolysis (fat breakdown) without raising blood sugar or IGF-1</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Modest weight reduction in early trials (2.6 kg vs 0.8 kg placebo over 12 weeks)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Selective fat-mobilization without growth hormone&apos;s broader endocrine effects</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Well-tolerated safety profile across 900+ trial participants</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Investigational interest in cartilage repair and joint applications</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No measurable effect on insulin sensitivity or glucose homeostasis</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Historical clinical trials used oral doses of 0.25 mg, 0.5 mg, and 1.0 mg daily, plus subcutaneous formulations. Research-grade injectable AOD-9604 is typically dosed at 250–500 mcg subcutaneously once daily. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> AOD-9604 is not FDA-approved and is sold only as a research-grade peptide through specialty vendors. The FDA declined to add AOD-9604 to the 503A Bulks List in December 2024, restricting compounding pharmacy availability. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current research-grade options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=metabolic+weight+loss+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -411,12 +411,12 @@ export default function AOD9604Page() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

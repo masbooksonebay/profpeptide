@@ -87,18 +87,18 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           GLOW is administered as a subcutaneous injection. Standard preparations supply roughly 40 doses per 70 mg vial at the typical research protocol.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard reconstitution: 70 mg vial + 2 mL bacteriostatic water = 35 mg/mL blend.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standard dose: 0.25–0.5 mL subcutaneously, 5 days/week (5 on, 2 off).</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Each ~40-dose vial typically lasts ~8 weeks at standard protocol.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 8–12 weeks active, 4-week break recommended.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Time of day: bedtime injection, at least 2 hours post-meal.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Site rotation: alternate abdomen, thigh, upper arm.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard reconstitution: 70 mg vial + 2 mL bacteriostatic water = 35 mg/mL blend.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standard dose: 0.25–0.5 mL subcutaneously, 5 days/week (5 on, 2 off).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Each ~40-dose vial typically lasts ~8 weeks at standard protocol.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 8–12 weeks active, 4-week break recommended.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Time of day: bedtime injection, at least 2 hours post-meal.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Site rotation: alternate abdomen, thigh, upper arm.</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Quality of compounded GLOW preparations varies dramatically. The standard 5:1:1 ratio (GHK-Cu:TB-500:BPC-157) at 70 mg total is the most common, but vendor formulations differ. Verify Certificate of Analysis before use.
         </p>
       </div>
@@ -114,9 +114,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Transient fatigue</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI changes</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Transient fatigue</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI changes</li>
           </ol>
         </div>
         <div>
@@ -124,9 +124,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Headache</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Lightheadedness</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Appetite changes</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Lightheadedness</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Appetite changes</li>
           </ol>
         </div>
         <div>
@@ -134,12 +134,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Copper allergy reactions from GHK-Cu component (hives, swelling — discontinue immediately)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical concerns from individual peptides apply</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">None of the three components are FDA-approved as injectables</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Copper allergy reactions from GHK-Cu component (hives, swelling — discontinue immediately)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical concerns from individual peptides apply</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">None of the three components are FDA-approved as injectables</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           GLOW combines three peptides not individually FDA-approved as injectables. Compounded preparations vary widely in quality. Third-party testing is essential. The combined safety profile of the blend has not been formally studied — most evidence comes from individual peptide research.
         </p>
       </div>
@@ -162,17 +162,17 @@ const sections = [
     title: "Common Stacks",
     node: (
       <ol className="list-decimal list-inside space-y-1">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Topical GHK-Cu serum — combine injectable GLOW with topical GHK-Cu cosmetic for layered effect.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Standalone GHK-Cu — for users wanting just copper peptide effects without BPC-157/TB-500.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Topical GHK-Cu serum — combine injectable GLOW with topical GHK-Cu cosmetic for layered effect.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standalone GHK-Cu — for users wanting just copper peptide effects without BPC-157/TB-500.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wolverine Stack (BPC-157 + TB-500) — alternative for users prioritizing recovery/joint applications over skin. See{" "}
           <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">
             Wolverine Stack
           </Link>
           .
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Avoid stacking with: full-dose individual GHK-Cu, BPC-157, or TB-500 protocols (you&apos;d be doubling the same peptide).</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training + adequate protein — natural pairing for tissue regeneration applications.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Avoid stacking with: full-dose individual GHK-Cu, BPC-157, or TB-500 protocols (you&apos;d be doubling the same peptide).</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Resistance training + adequate protein — natural pairing for tissue regeneration applications.</li>
       </ol>
     ),
   },
@@ -181,7 +181,7 @@ const sections = [
     title: "Drug & Peptide Interactions",
     node: (
       <ol className="list-decimal list-inside space-y-1">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Same as individual peptide profiles for each component (cross-reference{" "}
           <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>
           ,{" "}
@@ -190,9 +190,9 @@ const sections = [
           <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>
           ).
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Vitamin C topical (high concentration) — apply at separate time if combining with topical GHK-Cu products.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No significant systemic drug interactions documented at standard doses.</li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Anticoagulants — theoretical concern from BPC-157 and TB-500 angiogenic activity. Limited clinical data.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Vitamin C topical (high concentration) — apply at separate time if combining with topical GHK-Cu products.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No significant systemic drug interactions documented at standard doses.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anticoagulants — theoretical concern from BPC-157 and TB-500 angiogenic activity. Limited clinical data.</li>
       </ol>
     ),
   },
@@ -213,16 +213,16 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           GLOW is NOT FDA-approved. Each individual peptide has its own regulatory status — GHK-Cu (FDA-restricted as injectable since 2023), BPC-157 (Category 2 bulk drug substance, research-only), TB-500 (research-only).
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Compounded blends are sold as &ldquo;research peptides.&rdquo; Quality varies dramatically by source. Third-party HPLC testing is strongly recommended for any GLOW product.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Combined safety/efficacy research on the blend is limited. Most evidence comes from individual peptide studies plus clinical observation in functional medicine settings rather than controlled trials of the combination product.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Anti-doping: BPC-157 and TB-500 are on the WADA prohibited list (Section S0); GHK-Cu is not currently listed. Tested athletes should not use any GLOW formulation that includes BPC-157 or TB-500.
         </p>
       </div>
@@ -238,7 +238,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -251,37 +251,37 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pickart L, Margolina A. Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data. Int J Mol Sci. 2018;19(7):1987.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6073405/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC6073405/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pickart L, Margolina A. GHK Peptide as a Natural Modulator of Multiple Cellular Pathways in Skin Regeneration. Biomed Res Int. 2015;2015:648108.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4508379/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC4508379/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sikiric P, Hahm KB, Blagaic AB, et al. Stable Gastric Pentadecapeptide BPC 157, Robust Vascular Therapy in Ischemia/Reperfusion Injury. Front Pharmacol. 2018;9:1383.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Goldstein AL, Hannappel E, Sosne G, Kleinman HK. Thymosin β4: a multi-functional regenerative peptide. Expert Opin Biol Ther. 2012;12(1):37-51.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/22074294/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22074294/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kleinman HK, Sosne G. Thymosin β4 Promotes Dermal Healing. Vitam Horm. 2016;102:53-70.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/27450031/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27450031/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Chang CH, Tsai WC, Lin MS, et al. The promoting effect of pentadecapeptide BPC 157 on tendon healing. J Appl Physiol. 2011;110(3):774-80.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21030672/
@@ -319,7 +319,7 @@ export default function GLOWPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             GLOW is a synergistic peptide stack combining three well-studied regenerative peptides — GHK-Cu (copper tripeptide), BPC-157 (gastric pentadecapeptide), and TB-500 (Thymosin Beta-4 fragment). The blend is designed to deliver complementary mechanisms in a single injection: GHK-Cu drives collagen synthesis and gene expression modulation, BPC-157 promotes angiogenesis and tissue stabilization, and TB-500 enhances cellular migration and remodeling. Together they target skin quality, wound healing, anti-inflammatory signaling, and tissue regeneration through non-overlapping pathways. Common formulations use a 5:1:1 ratio (GHK-Cu:TB-500:BPC-157), often supplied as a 70 mg blend per vial: 50 mg GHK-Cu / 10 mg BPC-157 / 10 mg TB-500.
           </p>
           <div>
@@ -327,29 +327,29 @@ export default function GLOWPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Comprehensive skin rejuvenation (collagen + elastin + tissue remodeling in one stack)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Faster wound healing and reduced scarring</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Anti-inflammatory and antioxidant effects from three complementary mechanisms</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Hair follicle support</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Convenient single-injection format vs three separate peptide injections</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Synergistic effects from non-overlapping mechanisms</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Comprehensive skin rejuvenation (collagen + elastin + tissue remodeling in one stack)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Faster wound healing and reduced scarring</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anti-inflammatory and antioxidant effects from three complementary mechanisms</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hair follicle support</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Convenient single-injection format vs three separate peptide injections</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Synergistic effects from non-overlapping mechanisms</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Standard protocol: 0.25–0.5 mL of reconstituted blend, 5 days/week (5-on, 2-off), at bedtime. Approximately 40 doses per 70 mg vial. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> GLOW is sold by specialty research peptide vendors as a compounded blend. None of the three component peptides are FDA-approved as injectables. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=skin+anti+aging+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -368,12 +368,12 @@ export default function GLOWPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

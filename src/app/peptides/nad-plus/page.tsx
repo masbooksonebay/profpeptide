@@ -135,21 +135,21 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           NAD+ dosing varies dramatically by route of administration. Subcutaneous and IV produce direct NAD+ elevation; oral precursors require conversion in the body.
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Subcutaneous injection: 50–100 mg once or twice weekly.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">IV infusion (clinical): 250–1000 mg over 2–4 hours, monthly to weekly.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Sublingual: 50–125 mg daily.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Oral NMN/NR (precursors): 250–1000 mg daily — different absorption profile, less direct.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: continuous protocols common. Some users cycle 3 months on / 1 month off.</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Time of day: morning preferred (some users report sleep disruption with evening dosing).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Subcutaneous injection: 50–100 mg once or twice weekly.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">IV infusion (clinical): 250–1000 mg over 2–4 hours, monthly to weekly.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Sublingual: 50–125 mg daily.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Oral NMN/NR (precursors): 250–1000 mg daily — different absorption profile, less direct.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: continuous protocols common. Some users cycle 3 months on / 1 month off.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Time of day: morning preferred (some users report sleep disruption with evening dosing).</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Subcutaneous NAD+ is notoriously painful at the injection site — slow injection over 30–60 seconds reduces burning. IV infusion is more tolerable but requires a clinical setting. Oral precursors (NMN, NR) avoid the injection burning.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -166,10 +166,10 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Flushing (most common with IV/SC)</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild nausea</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Transient warmth sensation</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Injection site pain/burning (notable with subcutaneous)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Flushing (most common with IV/SC)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild nausea</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Transient warmth sensation</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injection site pain/burning (notable with subcutaneous)</li>
           </ol>
         </div>
         <div>
@@ -177,8 +177,8 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Brief anxiety or restlessness during IV infusion</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Brief anxiety or restlessness during IV infusion</li>
           </ol>
         </div>
         <div>
@@ -186,12 +186,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">No major adverse events documented at therapeutic doses</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Very rare allergic reactions</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Methylation depletion at very high doses (methyl donors counter this)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No major adverse events documented at therapeutic doses</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Very rare allergic reactions</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Methylation depletion at very high doses (methyl donors counter this)</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Subcutaneous NAD+ is notoriously painful at the injection site. IV infusion is more tolerable but requires a clinical setting. Oral precursors (NMN, NR) avoid the injection burning entirely. The pain at the injection site is a major reason many users start with oral precursors.
         </p>
       </div>
@@ -247,19 +247,19 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           NAD+ is NOT FDA-approved as an injectable therapy. Oral precursors (NMN, NR) are sold as dietary supplements in the US but the FDA has issued warnings to some manufacturers. NAD+ IV infusion is offered in clinical settings (functional medicine clinics) under physician supervision.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Most clinical evidence for longevity claims comes from animal models. Human clinical trials are growing but still limited compared to the marketing volume around NAD+ products.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade material is sold by specialty peptide/longevity vendors. Quality varies; verify Certificate of Analysis. Subcutaneous injection burning is commonly reported and should be expected.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Anti-doping: NAD+ is NOT currently on the WADA prohibited list. Some athletic federations may have stricter rules.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The &ldquo;is NAD+ a peptide&rdquo; question — technically NAD+ is a dinucleotide cofactor, not a peptide. It&apos;s included on Prof. Peptide because of its prevalence in longevity stacks alongside peptide therapies and its sale by the same specialty vendors.
         </p>
       </div>
@@ -275,7 +275,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -288,25 +288,25 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Verdin E. NAD+ in aging, metabolism, and neurodegeneration. Science. 2015;350(6265):1208-13.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Imai S, Guarente L. NAD+ and sirtuins in aging and disease. Trends Cell Biol. 2014;24(8):464-71.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cantó C, Menzies KJ, Auwerx J. NAD+ Metabolism and the Control of Energy Homeostasis: A Balancing Act between Mitochondria and the Nucleus. Cell Metab. 2015;22(1):31-53.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Camacho-Pereira J, Tarragó MG, Chini CCS, et al. CD38 Dictates Age-Related NAD Decline and Mitochondrial Dysfunction through an SIRT3-Dependent Mechanism. Cell Metab. 2016;23(6):1127-1139.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4911708/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC4911708/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Yoshino J, Baur JA, Imai SI. NAD+ Intermediates: The Biology and Therapeutic Potential of NMN and NR. Cell Metab. 2018;27(3):513-528.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Nicotinamide adenine dinucleotide.{" "}
           <a href="https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide
@@ -320,7 +320,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -331,7 +331,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -366,7 +366,7 @@ export default function NADPlusPage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             NAD+ (nicotinamide adenine dinucleotide) is a coenzyme present in every cell of every living organism. It plays a central role in cellular metabolism, energy production, DNA repair, and gene expression regulation. Unlike most peptides on Prof. Peptide, NAD+ is technically a small-molecule cofactor rather than a peptide — but it&apos;s included because it&apos;s commonly stacked with peptides in longevity protocols and sold by the same vendors. NAD+ levels decline ~50% from age 20 to 60, and this decline is implicated in many hallmarks of aging including mitochondrial dysfunction, accumulated DNA damage, and reduced sirtuin activity. NAD+ supplementation (oral, sublingual, or injectable) has emerged as one of the most researched longevity interventions of the past decade, with growing clinical evidence for cellular metabolism, neuroprotection, and anti-aging effects. Direct NAD+ injection is the most bioavailable but also most controversial form.
           </p>
           <div>
@@ -374,29 +374,29 @@ export default function NADPlusPage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Restoration of cellular NAD+ levels to youthful range</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Sirtuin enzyme activation (SIRT1, SIRT3, SIRT6) — longevity gene activation</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Enhanced mitochondrial function and ATP production</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved DNA repair via PARP activation</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Cognitive support and neuroprotection</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Combined energy + recovery + longevity effects</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Restoration of cellular NAD+ levels to youthful range</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Sirtuin enzyme activation (SIRT1, SIRT3, SIRT6) — longevity gene activation</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Enhanced mitochondrial function and ATP production</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improved DNA repair via PARP activation</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cognitive support and neuroprotection</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Combined energy + recovery + longevity effects</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Subcutaneous injection: 50–100 mg once or twice weekly. IV infusion (clinical settings): 250–1000 mg over 2–4 hours. Oral precursors (NMN, NR): 250–1000 mg daily — different absorption profile. Sublingual NAD+: 50–125 mg daily. See{" "}
             <a href="#dosing" className="text-[#0891b2] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> NAD+ is not FDA-approved as injectable therapy. Oral precursors (NMN, NR) are sold as dietary supplements; injectable NAD+ is sold by specialty research/longevity vendors. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=longevity+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
               Find related supplements on Amazon.
@@ -415,12 +415,12 @@ export default function NADPlusPage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}

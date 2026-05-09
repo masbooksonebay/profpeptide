@@ -27,7 +27,7 @@ export default function GlutaminePage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Glutamine is the most abundant amino acid in the human body and the primary fuel source for rapidly dividing cells including enterocytes (gut lining cells), immune cells, and cells in wound healing. Under normal conditions, the body can synthesize sufficient glutamine — making it &quot;non-essential.&quot; However, during periods of intense physical stress, illness, surgery, burns, or overtraining, glutamine demand can exceed production capacity, making it conditionally essential. This is where supplementation becomes most relevant. Glutamine plays critical roles in gut barrier integrity, immune system support, nitrogen transport, and muscle protein synthesis. It is widely used in clinical nutrition for critically ill patients and has a meaningful evidence base for gut health and immune function in athletic contexts.
           </p>
         </div>
@@ -57,14 +57,14 @@ export default function GlutaminePage() {
               "Muscle Protein Synthesis — Glutamine stimulates muscle protein synthesis and reduces protein catabolism, particularly during caloric restriction or intense training phases. It also supports glycogen synthesis in muscle cells.",
               "Nitrogen Transport — Glutamine carries nitrogen between tissues — releasing it where needed for amino acid synthesis and nucleotide production. This transport function is critical during tissue repair and wound healing.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Clinical evidence is strongest for critical illness and post-surgical recovery — multiple RCTs and meta-analyses support intravenous glutamine for reducing infection risk and hospital stay in ICU patients. Gut health research shows oral glutamine reduces intestinal permeability markers and improves gut barrier function in athletes and patients with inflammatory bowel conditions. Athletic recovery research is mixed for healthy athletes with adequate nutrition — glutamine supplementation shows most benefit when training volume is very high or nutrition is suboptimal. A meta-analysis found glutamine supplementation reduced post-exercise muscle soreness and improved recovery markers.
           </p>
         </div>
@@ -78,14 +78,14 @@ export default function GlutaminePage() {
               "Clinical use: Higher doses under medical supervision for gut conditions and post-surgical recovery",
               "Most useful during: Heavy training blocks, illness recovery, gut issues, caloric restriction",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Exceptionally safe — one of the most well-tolerated amino acid supplements. Mild GI symptoms at high doses. No significant adverse effects reported in studies using up to 30g daily for extended periods. People with kidney disease should use caution with high amino acid supplementation. Not recommended in rare genetic conditions involving glutamine metabolism disorders.
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function GlutaminePage() {
               "Newsholme P. Why is L-glutamine metabolism important to cells of the immune system? J Nutr. 2001.",
               "Cruzat V, et al. Glutamine: Metabolism and Immune Function, Supplementation and Clinical Translation. Nutrients. 2018.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

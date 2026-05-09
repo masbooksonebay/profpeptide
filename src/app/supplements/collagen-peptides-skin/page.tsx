@@ -27,7 +27,7 @@ export default function CollagenPeptidesSkinPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Collagen is the most abundant protein in the human body and the primary structural protein of the skin — comprising approximately 75–80% of the dry weight of skin. It forms a dense, organized network in the dermis that provides firmness, elasticity, and resistance to wrinkling. From around age 25, collagen production declines at approximately 1% per year — and this decline accelerates with UV exposure, smoking, poor nutrition, and stress. The result is progressively thinner skin, reduced elasticity, deeper wrinkles, and loss of that characteristic youthful plumpness. Collagen peptides are hydrolyzed collagen — broken into small bioactive peptides that are efficiently absorbed through the gut, travel through the bloodstream, and accumulate in skin tissue where they stimulate fibroblasts to increase collagen synthesis. Unlike topical collagen (which cannot penetrate the skin barrier), oral collagen peptides are absorbed systemically and have demonstrated measurable effects on skin elasticity, hydration, wrinkle depth, and dermal collagen density in multiple clinical trials.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function CollagenPeptidesSkinPage() {
               "Hyaluronic Acid Induction — Collagen peptides stimulate hyaluronic acid synthase expression in fibroblasts, increasing the skin's own hyaluronic acid production — enhancing moisture retention from within.",
               "Antioxidant Effects — Marine collagen peptides in particular have demonstrated antioxidant activity, scavenging free radicals that contribute to UV-induced skin aging.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A 2019 systematic review and meta-analysis of 19 RCTs involving 1,125 participants found oral collagen supplementation significantly improved skin elasticity, hydration, and reduced wrinkle scores — with effects sustained beyond the supplementation period. A 2023 clinical trial by Yuvan Research using a novel collagen-adjacent GHK-Cu formulation demonstrated 28% average increase in collagen density after 3 months. A 2014 double-blind RCT found 2.5g collagen peptides daily for 8 weeks significantly improved skin elasticity vs. placebo in women aged 35–55. Studies in women over 40 consistently show improvements in skin moisture content, roughness, and elasticity after 8–12 weeks.
           </p>
         </div>
@@ -80,14 +80,14 @@ export default function CollagenPeptidesSkinPage() {
               "Marine collagen: Type I collagen — most relevant for skin; bovine also contains Type I and III",
               "Timing: Can be taken any time — mix into beverages, smoothies, or foods",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Excellent safety profile. Mild GI discomfort in some individuals. Always animal-derived — bovine, marine, or porcine — not suitable for vegans. Check source if fish or shellfish allergies are a concern (marine collagen). Hypercalcemia risk with very high doses of marine collagen — stay within recommended ranges.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function CollagenPeptidesSkinPage() {
               "de Miranda RB, et al. Effects of hydrolyzed collagen supplementation on skin aging — a systematic review and meta-analysis. Int J Dermatol. 2021.",
               "Proksch E, et al. Oral supplementation of specific collagen peptides has beneficial effects on human skin physiology: a double-blind, placebo-controlled study. Skin Pharmacol Physiol. 2014.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

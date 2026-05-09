@@ -27,7 +27,7 @@ export default function GreenTeaExtractPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Green tea extract is a concentrated form of the bioactive compounds found in green tea leaves (Camellia sinensis), standardized primarily for epigallocatechin gallate (EGCG) — the most potent catechin polyphenol and the primary driver of green tea&apos;s metabolic and health benefits. Green tea has been consumed for thousands of years in Asia, and the past 30 years of research have produced an impressive body of evidence supporting EGCG&apos;s effects on metabolism, fat oxidation, cardiovascular health, cognitive function, and cancer prevention. Green tea extract is one of the most widely studied natural supplements and a common ingredient in evidence-based weight management formulations.
           </p>
         </div>
@@ -59,14 +59,14 @@ export default function GreenTeaExtractPage() {
               "Antioxidant Activity — EGCG is one of the most potent antioxidants found in food, scavenging free radicals and reducing oxidative stress. It protects LDL cholesterol from oxidation — a key step in atherosclerosis development.",
               "Anti-inflammatory Signaling — EGCG inhibits NF-κB signaling, reducing production of inflammatory cytokines. This broad anti-inflammatory effect contributes to cardiovascular and metabolic protection.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A meta-analysis of 11 RCTs found green tea catechins plus caffeine produced significant reductions in body weight (−1.38 kg), BMI, and waist circumference vs. control. Fat oxidation studies consistently show 10–16% increases in fat burning during exercise. Cardiovascular research shows significant LDL reduction and improved endothelial function. Epidemiological studies from Japan link regular green tea consumption to reduced risk of cardiovascular disease, type 2 diabetes, and all-cause mortality. Cognitive research suggests EGCG promotes neuroplasticity and may reduce risk of neurodegenerative disease.
           </p>
         </div>
@@ -80,14 +80,14 @@ export default function GreenTeaExtractPage() {
               "Timing: With meals to reduce potential stomach irritation",
               "Note: High doses on empty stomach can cause nausea",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Generally safe at typical doses. High doses (above 800mg EGCG daily) have been associated with liver stress in rare cases — stay within recommended dosing. Caffeine content in extract varies — check product labeling. May interact with blood thinners including warfarin. Contains natural caffeine — consider total caffeine intake.
           </p>
         </div>
@@ -99,7 +99,7 @@ export default function GreenTeaExtractPage() {
               "Hursel R, et al. The effects of catechin rich teas and caffeine on energy expenditure and fat oxidation: a meta-analysis. Obes Rev. 2011.",
               "Zheng XX, et al. Green tea intake lowers fasting serum total and LDL cholesterol. Am J Clin Nutr. 2011.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

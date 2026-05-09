@@ -27,7 +27,7 @@ export default function ProteinPowderPage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Protein powder is a concentrated dietary protein supplement derived from various food sources — most commonly whey (from dairy), casein (from dairy), egg white, soy, pea, rice, or hemp. It is the most widely used sports supplement in the world and one of the most thoroughly researched. Adequate protein intake is the single most important nutritional variable for muscle protein synthesis, muscle mass maintenance, and recovery from exercise. Protein powders make it convenient to hit daily protein targets, particularly for athletes with high requirements, people with limited appetite, or those with dietary restrictions. The benefits of protein powder are ultimately the benefits of adequate protein intake — which include increased muscle mass from resistance training, improved recovery, preserved lean mass during weight loss, and enhanced satiety. The specific source of protein matters less than total daily intake for most purposes, though bioavailability and amino acid profiles differ.
           </p>
         </div>
@@ -56,14 +56,14 @@ export default function ProteinPowderPage() {
               "Nitrogen Balance — Adequate protein intake maintains positive nitrogen balance — a state where protein synthesis exceeds protein breakdown. Positive nitrogen balance supports muscle growth and recovery, while negative nitrogen balance (inadequate protein) leads to muscle loss.",
               "Satiety Hormones — Protein is the most satiating macronutrient. It stimulates release of satiety hormones including GLP-1, PYY, and CCK while reducing ghrelin — the hunger hormone. This explains protein's effectiveness for appetite control and weight management.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Meta-analyses of protein supplementation consistently show that consuming additional protein above baseline increases muscle mass gains from resistance training by approximately 0.3 kg over 12 weeks. A landmark meta-analysis by Morton et al. (2018) of 49 RCTs found a protein intake of 1.62g/kg body weight per day maximizes muscle gains from resistance training. Research comparing protein sources shows whey produces the greatest acute muscle protein synthesis response due to its leucine content and rapid digestion, but long-term outcomes are comparable across high-quality sources. Plant-based proteins are effective when combined to provide complete amino acid profiles.
           </p>
         </div>
@@ -78,14 +78,14 @@ export default function ProteinPowderPage() {
               "Casein: Best before bed due to slow digestion providing sustained amino acid release overnight",
               "Plant protein: Effective when combined (pea + rice provides complete amino acid profile)",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Extremely safe — protein powder is essentially concentrated food protein. People with dairy allergies should avoid whey and casein. GI discomfort in lactose-intolerant individuals with whey concentrate — whey isolate (lactose-free) or plant protein are alternatives. Excess protein beyond requirements is simply used for energy — not harmful to healthy kidneys. People with pre-existing kidney disease should consult a healthcare provider about protein intake.
           </p>
         </div>
@@ -102,7 +102,7 @@ export default function ProteinPowderPage() {
               "Morton RW, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength. Br J Sports Med. 2018.",
               "Stokes T, et al. Recent Perspectives Regarding the Role of Dietary Protein for the Promotion of Muscle Hypertrophy with Resistance Exercise Training. Nutrients. 2018.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

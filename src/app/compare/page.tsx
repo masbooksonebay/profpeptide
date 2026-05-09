@@ -133,7 +133,7 @@ export default function ComparePage() {
     <div className="section max-w-3xl">
       <span className="tag mb-3 inline-block">Research Comparisons</span>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Comparisons</h1>
-      <p className="text-gray-500 dark:text-slate-400 max-w-xl text-sm leading-relaxed mb-10">
+      <p className="text-gray-500 dark:text-slate-400 max-w-xl text-lg leading-relaxed mb-10">
         Side-by-side research breakdowns to help you understand the differences between commonly compared peptides and supplements.
       </p>
       <div className="space-y-10">

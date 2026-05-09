@@ -27,7 +27,7 @@ export default function PhosphatidylserinePage() {
       <div className="space-y-8">
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Phosphatidylserine (PS) is a phospholipid — a fat-soluble molecule that forms a critical component of neuronal cell membranes. It is particularly concentrated in the brain, comprising approximately 15% of the total phospholipid content of neural tissue. PS supports the fluidity and integrity of neuronal membranes, facilitates neurotransmitter release, and plays a critical role in cell signaling — particularly apoptosis (programmed cell death) regulation. PS levels decline with age, correlating with reduced cognitive function and memory. Supplemental PS has been studied extensively for age-related cognitive decline, memory support, and athletic recovery — specifically for its ability to blunt cortisol release after intense exercise. It is notable for having received a qualified health claim from the FDA: &quot;Consumption of phosphatidylserine may reduce the risk of dementia and cognitive dysfunction in the elderly&quot; — a rare regulatory distinction for a dietary supplement.
           </p>
         </div>
@@ -58,14 +58,14 @@ export default function PhosphatidylserinePage() {
               "Cortisol Blunting — PS inhibits hypothalamic-pituitary-adrenal (HPA) axis activation in response to physical stress, blunting the cortisol and ACTH response to intense exercise. This is one of the most well-documented ergogenic effects in the research.",
               "Cell Signaling and Apoptosis — PS plays a critical role in phospholipid-dependent signaling pathways and regulates programmed cell death — influencing neuronal survival and turnover.",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ol>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the Research Shows</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Multiple clinical trials support PS for age-related cognitive decline. A landmark trial by Crook et al. found 300mg PS daily for 12 weeks significantly improved memory and learning in older adults with age-associated memory impairment. Three separate RCTs by Cenacchi et al. in 494 elderly patients found PS (300mg daily for 6 months) significantly improved cognitive function, memory, and behavioral symptoms. Exercise research shows PS supplementation significantly blunts post-exercise cortisol — a 2008 study found 600mg PS reduced cortisol by 20% following intensive cycling. A meta-analysis confirmed significant memory improvements in older adults with PS supplementation.
           </p>
         </div>
@@ -80,14 +80,14 @@ export default function PhosphatidylserinePage() {
               "Duration: Benefits accumulate over 4–8 weeks of consistent use",
               "Source: Sunflower or soy-derived PS (bovine brain-derived PS is no longer used due to BSE concerns)",
             ].map((item, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{item}</li>
             ))}
           </ul>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects &amp; Safety</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Well tolerated at doses up to 300mg daily. Higher doses may cause insomnia and GI upset. May have blood-thinning effects — caution with anticoagulant medications. Some PS products are derived from soy — relevant for soy allergies. Sunflower-derived PS is available for those avoiding soy.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function PhosphatidylserinePage() {
               "Crook TH, et al. Effects of phosphatidylserine in age-associated memory impairment. Neurology. 1991.",
               "Starks MA, et al. The effects of phosphatidylserine on endocrine response to moderate intensity exercise. J Int Soc Sports Nutr. 2008.",
             ].map((ref, i) => (
-              <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
+              <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{ref}</li>
             ))}
           </ol>
         </div>

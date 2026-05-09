@@ -117,29 +117,29 @@ const sections = [
     title: "Dosing & Protocols",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Retatrutide is administered as a once-weekly subcutaneous injection. Trials use a stepwise dose-escalation protocol, starting low and increasing every 4 weeks to allow the body to adapt and minimize gastrointestinal side effects. The slow titration is critical — Phase 2 data showed that participants who started at 4 mg instead of 2 mg had significantly higher rates of GI side effects.
         </p>
         <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
           Standard escalation schedule (Phase 3 TRIUMPH protocol):
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 1–4: 2 mg once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 5–8: 4 mg once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 9–12: 6 mg once weekly (TRIUMPH-3+ protocol)</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 13–16: 9 mg once weekly</li>
-          <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 17+: 12 mg once weekly (maintenance, max dose tested)</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 1–4: 2 mg once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 5–8: 4 mg once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 9–12: 6 mg once weekly (TRIUMPH-3+ protocol)</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 13–16: 9 mg once weekly</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 17+: 12 mg once weekly (maintenance, max dose tested)</li>
         </ol>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Phase 2 trials tested doses from 0.5 mg to 12 mg weekly. Phase 3 (TRIUMPH-4) tested 9 mg and 12 mg as maintenance doses, with full Phase 3 results pending for the 4 mg lower-dose maintenance arm. Half-life is approximately 6 days, supporting once-weekly dosing with steady state reached in 4–5 weeks at each dose level.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           If side effects are difficult to tolerate at any step, holding at the current dose for an additional 4 weeks is standard practice and does not appear to reduce long-term outcomes. Some users in research settings split doses into 2–3 smaller injections per week to reduce side effects, though this is not the protocol used in clinical trials.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Retatrutide is not FDA-approved and is investigational. Dosing protocols outside of clinical trials are derived from trial data and user reports — there are no approved retail dosing standards.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
         </p>
@@ -156,12 +156,12 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — most common, especially during dose escalation; affected up to 60% at 12 mg in Phase 2</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Diarrhea — affected 15–33% of users at higher doses</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Constipation — affected 11–25% of users</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Vomiting — affected 21–26% of users at higher doses</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Decreased appetite — expected effect, but can be excessive in some users</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions — mild redness or irritation in up to 8% of users</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — most common, especially during dose escalation; affected up to 60% at 12 mg in Phase 2</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Diarrhea — affected 15–33% of users at higher doses</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Constipation — affected 11–25% of users</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Vomiting — affected 21–26% of users at higher doses</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Decreased appetite — expected effect, but can be excessive in some users</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions — mild redness or irritation in up to 8% of users</li>
           </ol>
         </div>
         <div>
@@ -169,10 +169,10 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Dysesthesia — abnormal skin sensations including tingling, burning, or prickling. Reported in about 21% of participants at 12 mg in TRIUMPH-4. Specific to retatrutide and not seen with semaglutide or tirzepatide.</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Increased heart rate — average increase of 5–10 beats per minute, peaking around week 24 and then declining</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Headache and fatigue — typically mild, common in the 48–72 hours after injection</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Mild liver enzyme elevations — transient ALT increases in about 1% of users</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Dysesthesia — abnormal skin sensations including tingling, burning, or prickling. Reported in about 21% of participants at 12 mg in TRIUMPH-4. Specific to retatrutide and not seen with semaglutide or tirzepatide.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Increased heart rate — average increase of 5–10 beats per minute, peaking around week 24 and then declining</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache and fatigue — typically mild, common in the 48–72 hours after injection</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild liver enzyme elevations — transient ALT increases in about 1% of users</li>
           </ol>
         </div>
         <div>
@@ -180,13 +180,13 @@ const sections = [
             Serious (rare — call a doctor)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Pancreatitis — about 0.4% in Phase 2 trials. Symptoms: severe abdominal pain radiating to the back, persistent vomiting, fever</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Gallbladder problems — about 1.1% in trials. Symptoms: severe pain in upper right abdomen, jaundice, fever</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare. Symptoms: difficulty breathing, swelling of face/throat, hives. Seek emergency care.</li>
-            <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Heart rhythm changes — slightly more common with retatrutide (about 6% vs 3% placebo)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pancreatitis — about 0.4% in Phase 2 trials. Symptoms: severe abdominal pain radiating to the back, persistent vomiting, fever</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Gallbladder problems — about 1.1% in trials. Symptoms: severe pain in upper right abdomen, jaundice, fever</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare. Symptoms: difficulty breathing, swelling of face/throat, hives. Seek emergency care.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Heart rhythm changes — slightly more common with retatrutide (about 6% vs 3% placebo)</li>
           </ol>
         </div>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Most side effects are mild to moderate and improve as the body adapts. Discontinuation due to side effects ranged from 6% to 16% in Phase 2 trials, with most discontinuations during the escalation phase. The serious adverse event rate was 4% — the same as placebo.
         </p>
       </div>
@@ -244,13 +244,13 @@ const sections = [
     title: "Research Limitations & Regulatory Status",
     node: (
       <div className="space-y-3">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Retatrutide is an investigational drug and is NOT approved by the FDA, EMA, or any major regulatory body. As of May 2026, it is in Phase 3 clinical trials. Eli Lilly's Phase 3 TRIUMPH program is expected to complete additional readouts throughout 2026, with regulatory submission to the FDA targeted for late 2026 and potential approval in 2027 or 2028.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Long-term safety data beyond 72 weeks does not yet exist — all current trials are 48 to 68 weeks. Cardiovascular outcomes trial (TRIUMPH-3) results are not expected until 2027 or later. The dysesthesia signal observed in Phase 3 (about 21% at 12 mg) is unique to retatrutide and is being monitored closely.
         </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Retatrutide is not currently a scheduled controlled substance in the US, but it is also not approved for human use. Research-grade product is sold in a regulatory gray area, typically labeled &ldquo;for research use only, not for human consumption.&rdquo; The World Anti-Doping Agency prohibits all GLP-1-class drugs in sport. Legal status varies by country.
         </p>
       </div>
@@ -266,7 +266,7 @@ const sections = [
             <h3 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               {f.a}
             </p>
           </div>
@@ -279,7 +279,7 @@ const sections = [
     title: "References",
     node: (
       <ol className="list-decimal list-inside space-y-2">
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Jastreboff AM, Kaplan LM, Frías JP, et al. Triple-Hormone-Receptor Agonist Retatrutide for Obesity — A Phase 2 Trial. N Engl J Med. 2023;389:514-526.{" "}
           <a
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2301972"
@@ -290,7 +290,7 @@ const sections = [
             https://www.nejm.org/doi/full/10.1056/NEJMoa2301972
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Coskun T, Urva S, Roell WC, et al. LY3437943, a novel triple glucagon, GIP, and GLP-1 receptor agonist for glycemic control and weight loss. Cell Metab. 2022;34(9):1234-1247.{" "}
           <a
             href="https://pubmed.ncbi.nlm.nih.gov/35987205/"
@@ -301,7 +301,7 @@ const sections = [
             https://pubmed.ncbi.nlm.nih.gov/35987205/
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Eli Lilly. Lilly&apos;s triple agonist, retatrutide, delivered weight loss of up to an average of 71.2 lbs along with substantial relief from osteoarthritis pain in first successful Phase 3 trial (TRIUMPH-4). December 11, 2025.{" "}
           <a
             href="https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-weight-loss-average"
@@ -312,10 +312,10 @@ const sections = [
             https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-weight-loss-average
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Eli Lilly. TRANSCEND-T2D-1 Phase 3 Topline Results. March 19, 2026.
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Eli Lilly. TRIUMPH Phase 3 Clinical Trial Program.{" "}
           <a
             href="https://www.lilly.com/discovery/clinical-development"
@@ -326,7 +326,7 @@ const sections = [
             https://www.lilly.com/discovery/clinical-development
           </a>
         </li>
-        <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sanyal AJ, Kaplan LM, Frías JP, et al. Retatrutide for adults with metabolic dysfunction-associated steatotic liver disease: a Phase 2 trial. Nat Med. 2024;30:1235-1244.{" "}
           <a
             href="https://pubmed.ncbi.nlm.nih.gov/38509328/"
@@ -345,7 +345,7 @@ const sections = [
     title: "Published Studies",
     node: (
       <div className="space-y-6">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
@@ -356,7 +356,7 @@ const sections = [
             </div>
             <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
         ))}
       </div>
@@ -391,7 +391,7 @@ export default function RetatrutidePage() {
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
         <div className="space-y-4">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Retatrutide (LY3437943) is a once-weekly injectable peptide developed by Eli Lilly that activates three metabolic receptors at once: GLP-1, GIP, and glucagon. Among the GLP-1-class research peptides, it has produced the highest published weight-reduction figures to date &mdash; averaging roughly 24% of body weight at 48 weeks in Phase 2 obesity trials. People in research and biohacking communities look to retatrutide for metabolic and weight-management research where stronger response than semaglutide or tirzepatide is the goal.
           </p>
           <div>
@@ -399,18 +399,18 @@ export default function RetatrutidePage() {
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Significant body weight reduction in Phase 2 obesity trials (averaging ~24% at 48 weeks at the highest dose)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improved glycemic control in Phase 2 type 2 diabetes trials (HbA1c reductions around 2.2%)</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Appetite suppression and reduced food intake</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in liver fat markers in early MASLD substudy data</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in blood pressure and lipid profiles alongside weight loss</li>
-              <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">Once-weekly dosing (half-life around 6 days)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Significant body weight reduction in Phase 2 obesity trials (averaging ~24% at 48 weeks at the highest dose)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improved glycemic control in Phase 2 type 2 diabetes trials (HbA1c reductions around 2.2%)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Appetite suppression and reduced food intake</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in liver fat markers in early MASLD substudy data</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improvements in blood pressure and lipid profiles alongside weight loss</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Once-weekly dosing (half-life around 6 days)</li>
             </ul>
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Published Phase 2 protocols ranged from 2 mg to 12 mg subcutaneously once weekly, with the highest weight-loss figures observed at the 12 mg dose. Protocols followed in research and user communities draw from these published dose escalations and from animal research, not from finalized human clinical guidelines.
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
             <Link href="/coupons" className="text-[#0891b2] hover:underline">
               Verified Discount Codes &rarr;
@@ -430,12 +430,12 @@ export default function RetatrutidePage() {
             </h2>
             {s.node && s.node}
             {s.content && (
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
             )}
             {s.body && (
               <ol className="list-decimal list-inside space-y-1">
                 {s.body.map((item, i) => (
-                  <li key={i} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     {item}
                   </li>
                 ))}
