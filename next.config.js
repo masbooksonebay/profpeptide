@@ -67,6 +67,11 @@ const nextConfig = {
         destination: "/peptides/tesamorelin",
         permanent: true,
       },
+      {
+        source: "/retatrutide",
+        destination: "/peptides/retatrutide",
+        permanent: true,
+      },
     ];
   },
 };

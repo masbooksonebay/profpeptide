@@ -9,5 +9,7 @@ module.exports = {
     "/apple-icon.png",
     "/research",
     "/research/*",
+    "/compare/retatrutide-vs-tirzepatide",
+    "/compare/retatrutide-vs-semaglutide",
   ],
 };
