@@ -1,13 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/berberine-vs-metformin" },
+export const metadata = buildPageMetadata({
+  path: "/compare/berberine-vs-metformin",
   title: "Berberine vs Metformin — Blood Sugar Comparison | Prof. Peptide",
   description:
     "Berberine vs Metformin comparison — mechanism, blood sugar efficacy, side effects, availability, and what the research actually shows.",
-};
+});
 
 const rows = [
   ["Type", "Natural plant alkaloid (supplement)", "Prescription biguanide (the chemical class metformin belongs to) medication"],

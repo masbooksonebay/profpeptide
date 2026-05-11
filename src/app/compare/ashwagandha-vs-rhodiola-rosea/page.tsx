@@ -1,12 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/ashwagandha-vs-rhodiola-rosea" },
+export const metadata = buildPageMetadata({
+  path: "/compare/ashwagandha-vs-rhodiola-rosea",
   title: "Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison | Prof. Peptide",
-  description: "Ashwagandha vs Rhodiola Rosea — stress response, cortisol, energy, anxiety, and which adaptogen is right for your goals based on the research.",
-};
+  description:
+    "Ashwagandha vs Rhodiola Rosea — stress response, cortisol, energy, anxiety, and which adaptogen is right for your goals based on the research.",
+});
 
 const rows = [
   ["Primary Mechanism", "HPA axis (hypothalamic-pituitary-adrenal axis \u2014 the body's central stress response system) modulation \u2014 lowers cortisol (the body's primary stress hormone) directly", "Activates stress response proteins Hsp70 (heat shock protein 70 \u2014 a cellular stress response protein that protects cells from damage), inhibits cortisol-synthesizing enzymes"],

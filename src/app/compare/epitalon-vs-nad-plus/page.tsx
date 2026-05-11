@@ -1,12 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/epitalon-vs-nad-plus" },
+export const metadata = buildPageMetadata({
+  path: "/compare/epitalon-vs-nad-plus",
   title: "Epitalon vs NAD+ — Longevity Supplement Comparison | Prof. Peptide",
-  description: "Epitalon vs NAD+ comparison — how these two longevity compounds work, what the research shows, and how they differ in mechanism, evidence, and use.",
-};
+  description:
+    "Epitalon vs NAD+ comparison — how these two longevity compounds work, what the research shows, and how they differ in mechanism, evidence, and use.",
+});
 
 const rows = [
   ["Type", "Synthetic tetrapeptide (Ala-Glu-Asp-Gly)", "Coenzyme \u2014 supplemented via precursors NMN or NR"],

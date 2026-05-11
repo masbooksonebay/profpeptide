@@ -1,13 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/semaglutide-vs-tirzepatide" },
+export const metadata = buildPageMetadata({
+  path: "/compare/semaglutide-vs-tirzepatide",
   title: "Semaglutide vs Tirzepatide — GLP-1 Comparison | Prof. Peptide",
   description:
     "Semaglutide vs Tirzepatide comparison — mechanism, weight loss data, FDA approval status, side effects, and key clinical trial results.",
-};
+});
 
 const rows = [
   ["Mechanism", "GLP-1 receptor agonist (single agonist)", "Dual GLP-1 + GIP (glucose-dependent insulinotropic polypeptide — works with GLP-1 to enhance insulin response) receptor agonist"],

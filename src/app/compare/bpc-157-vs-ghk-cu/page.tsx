@@ -1,12 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/bpc-157-vs-ghk-cu" },
+export const metadata = buildPageMetadata({
+  path: "/compare/bpc-157-vs-ghk-cu",
   title: "BPC-157 vs GHK-Cu — Healing Peptide Comparison | Prof. Peptide",
-  description: "BPC-157 vs GHK-Cu comparison — mechanisms, tissue targets, research evidence, and when to use each of these two tissue repair and anti-aging peptides.",
-};
+  description:
+    "BPC-157 vs GHK-Cu comparison — mechanisms, tissue targets, research evidence, and when to use each of these two tissue repair and anti-aging peptides.",
+});
 
 const rows = [
   ["Structure", "15 amino acid pentadecapeptide", "Tripeptide (a peptide made of just 3 amino acids \u2014 among the smallest signaling peptides) \u2014 Glycine-Histidine-Lysine + copper"],

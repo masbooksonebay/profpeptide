@@ -1,12 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/semax-vs-selank" },
+export const metadata = buildPageMetadata({
+  path: "/compare/semax-vs-selank",
   title: "Semax vs Selank — Cognitive Peptide Comparison | Prof. Peptide",
-  description: "Semax vs Selank comparison — mechanisms, cognitive effects, anxiety, neuroprotection, and how to choose between these two Russian nootropic peptides.",
-};
+  description:
+    "Semax vs Selank comparison — mechanisms, cognitive effects, anxiety, neuroprotection, and how to choose between these two Russian nootropic peptides.",
+});
 
 const rows = [
   ["Origin", "ACTH (adrenocorticotropic hormone \u2014 the body's stress hormone) (4-7) analog", "Tuftsin (a naturally occurring immune-modulating peptide that Selank is derived from) analog"],

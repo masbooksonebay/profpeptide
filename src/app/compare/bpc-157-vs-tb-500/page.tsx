@@ -1,13 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/bpc-157-vs-tb-500" },
+export const metadata = buildPageMetadata({
+  path: "/compare/bpc-157-vs-tb-500",
   title: "BPC-157 vs TB-500 — How These Recovery Peptides Differ | Prof. Peptide",
   description:
     "BPC-157 vs TB-500 comparison — mechanism of action, research differences, tissue targets, and how to choose between these two recovery peptides.",
-};
+});
 
 const rows = [
   ["Origin", "Derived from human gastric juice (15 amino acids)", "Synthetic fragment of Thymosin Beta-4 (naturally occurring protein)"],

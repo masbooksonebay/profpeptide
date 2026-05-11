@@ -1,13 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/nmn-vs-niacin" },
+export const metadata = buildPageMetadata({
+  path: "/compare/nmn-vs-niacin",
   title: "NMN vs Niacin — NAD+ Precursor Comparison | Prof. Peptide",
   description:
     "NMN vs Niacin comparison — how they raise NAD+, what the research shows, cost differences, side effects, and which is better for longevity.",
-};
+});
 
 const rows = [
   ["Type", "NAD+ precursor \u2014 direct biosynthesis intermediate", "Vitamin B3 form \u2014 enters via Preiss-Handler pathway (the 3-step process niacin uses to become NAD+)"],

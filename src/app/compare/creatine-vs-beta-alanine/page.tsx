@@ -1,13 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/creatine-vs-beta-alanine" },
+export const metadata = buildPageMetadata({
+  path: "/compare/creatine-vs-beta-alanine",
   title: "Creatine vs Beta-Alanine — Performance Supplement Comparison | Prof. Peptide",
   description:
     "Creatine vs Beta-Alanine comparison — mechanisms, evidence, best use cases, side effects, and whether you should take one or both.",
-};
+});
 
 const rows = [
   ["Primary Mechanism", "Replenishes phosphocreatine (the high-energy molecule that quickly regenerates ATP for short bursts) stores \u2192 faster ATP (adenosine triphosphate \u2014 the basic energy currency cells use for muscle contraction) regeneration for explosive efforts", "Increases muscle carnosine (the muscle compound that buffers acidic byproducts during intense exercise) \u2192 buffers lactic acid buildup \u2192 delays fatigue"],

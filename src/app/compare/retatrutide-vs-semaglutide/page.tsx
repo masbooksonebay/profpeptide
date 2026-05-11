@@ -1,13 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/retatrutide-vs-semaglutide" },
+export const metadata = buildPageMetadata({
+  path: "/compare/retatrutide-vs-semaglutide",
   title: "Retatrutide vs Semaglutide — GLP Triple Agonist vs Single Agonist | Prof. Peptide",
   description:
     "Retatrutide vs Semaglutide research comparison: weight loss data, FDA status, cardiovascular evidence, dosing, and which to choose.",
-};
+});
 
 const rows = [
   ["Mechanism", "GLP-1 + GIP + Glucagon (triple agonist)", "GLP-1 only (single agonist)"],

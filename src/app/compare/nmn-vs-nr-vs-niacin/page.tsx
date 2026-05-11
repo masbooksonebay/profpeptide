@@ -1,12 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/nmn-vs-nr-vs-niacin" },
+export const metadata = buildPageMetadata({
+  path: "/compare/nmn-vs-nr-vs-niacin",
   title: "NMN vs NR vs Niacin — NAD+ Precursor Comparison | Prof. Peptide",
-  description: "NMN vs NR vs Niacin — how each raises NAD+, what the research shows, cost differences, side effects, and which is best for longevity.",
-};
+  description:
+    "NMN vs NR vs Niacin — how each raises NAD+, what the research shows, cost differences, side effects, and which is best for longevity.",
+});
 
 const rows = [
   ["Pathway to NAD+", "NMNAT (NMN adenylyltransferase \u2014 the enzyme that converts NMN to NAD+) enzymes (may convert to NR first)", "NRK (nicotinamide riboside kinase \u2014 the enzyme that converts NR to NMN) pathway \u2014 enters cells directly, converts to NMN then NAD+", "Preiss-Handler pathway (the 3-step process niacin uses to become NAD+)"],

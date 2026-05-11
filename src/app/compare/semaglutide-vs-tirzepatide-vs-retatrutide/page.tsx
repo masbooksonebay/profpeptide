@@ -1,13 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide" },
+export const metadata = buildPageMetadata({
+  path: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
   title: "Semaglutide vs Tirzepatide vs Retatrutide — GLP-1 Comparison | Prof. Peptide",
   description:
     "Semaglutide vs Tirzepatide vs Retatrutide — mechanism, weight loss data, FDA status, and how all three GLP-1 peptides compare side by side.",
-};
+});
 
 const rows = [
   ["Generation", "1st", "2nd", "3rd — investigational (still in clinical trials, not yet approved for sale)"],

@@ -1,13 +1,14 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare/retatrutide-vs-tirzepatide" },
+export const metadata = buildPageMetadata({
+  path: "/compare/retatrutide-vs-tirzepatide",
   title: "Retatrutide vs Tirzepatide — GLP Triple Agonist vs Dual Agonist | Prof. Peptide",
   description:
     "Retatrutide vs Tirzepatide research comparison: weight loss data, FDA status, side effect profiles, dosing, and which to choose.",
-};
+});
 
 const rows = [
   ["Mechanism", "GLP-1 + GIP + Glucagon (triple agonist)", "GLP-1 + GIP (dual agonist)"],
