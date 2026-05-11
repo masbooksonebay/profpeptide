@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/thymosin-alpha-1" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/thymosin-alpha-1",
   title: "Thymosin Alpha-1 — Immune Modulator, Zadaxin | Prof. Peptide",
   description:
     "Thymosin Alpha-1 (Zadaxin) research profile: T-cell maturation mechanism, hepatitis approval, dosing protocol, side effects, and immune modulation.",
-};
+});
 
 const faqs = [
   {

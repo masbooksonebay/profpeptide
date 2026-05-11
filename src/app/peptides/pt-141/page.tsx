@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/pt-141" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/pt-141",
   title: "PT-141 (Bremelanotide / Vyleesi) — FDA-Approved Sexual Health Peptide | Prof. Peptide",
   description:
     "PT-141 (Bremelanotide, Vyleesi) research profile: FDA-approved for HSDD, MC4R mechanism, on-demand dosing, off-label male ED use, side effects.",
-};
+});
 
 const faqs = [
   {

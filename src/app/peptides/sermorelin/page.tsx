@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/sermorelin" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/sermorelin",
   title: "Sermorelin — GHRH(1-29), Mechanism, Dosage, Side Effects | Prof. Peptide",
   description:
     "Sermorelin research profile: native GHRH(1-29) mechanism, dosing protocol, FDA history (Geref), ipamorelin stack, side effects.",
-};
+});
 
 const faqs = [
   {

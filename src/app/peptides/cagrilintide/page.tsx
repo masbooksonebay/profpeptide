@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/cagrilintide" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/cagrilintide",
   title: "Cagrilintide — Amylin Analog, CagriSema, Mechanism, Dosage | Prof. Peptide",
   description:
     "Cagrilintide research profile: amylin/calcitonin receptor mechanism, REDEFINE trial results, CagriSema combination, dosing, side effects.",
-};
+});
 
 const faqs = [
   {

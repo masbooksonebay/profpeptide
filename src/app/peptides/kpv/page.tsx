@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/kpv" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/kpv",
   title: "KPV — Anti-Inflammatory Tripeptide for Gut & Skin | Prof. Peptide",
   description:
     "KPV research profile: anti-inflammatory tripeptide derived from α-MSH. NF-κB inhibition, IBD applications, dosing protocols, and side effects.",
-};
+});
 
 const faqs = [
   {

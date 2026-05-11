@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/cjc-1295" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/cjc-1295",
   title: "CJC-1295 — DAC and Mod GRF 1-29, Mechanism, Dosage | Prof. Peptide",
   description:
     "CJC-1295 (with DAC and without DAC) research profile: GHRH receptor mechanism, dosing protocol, ipamorelin stack, side effects.",
-};
+});
 
 const faqs = [
   {

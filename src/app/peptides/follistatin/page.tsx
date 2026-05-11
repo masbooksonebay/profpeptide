@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/follistatin" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/follistatin",
   title: "Follistatin — FS-344 Myostatin Inhibitor, Mechanism, Dosage | Prof. Peptide",
   description:
     "Follistatin (FS-344) research profile: myostatin inhibition mechanism, dosing protocol, gene therapy data, side effects, and clinical evidence.",
-};
+});
 
 const faqs = [
   {

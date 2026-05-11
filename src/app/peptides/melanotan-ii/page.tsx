@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/melanotan-ii" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/melanotan-ii",
   title: "Melanotan II — Melanocortin Agonist, Tanning Peptide, Risks | Prof. Peptide",
   description:
     "Melanotan II research profile: melanocortin receptor mechanism, tanning effect, documented serious risks (rhabdomyolysis, mole darkening), dosing, regulatory warnings.",
-};
+});
 
 const faqs = [
   {

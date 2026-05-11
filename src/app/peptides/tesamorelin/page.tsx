@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/tesamorelin" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/tesamorelin",
   title: "Tesamorelin — Egrifta, FDA-Approved GHRH Analog, Mechanism, Dosage | Prof. Peptide",
   description:
     "Tesamorelin (Egrifta) research profile: FDA-approved for HIV lipodystrophy, GHRH receptor mechanism, Phase 3 visceral fat data, dosing protocol.",
-};
+});
 
 const faqs = [
   {

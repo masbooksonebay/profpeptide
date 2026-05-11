@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/ghk-cu" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/ghk-cu",
   title: "GHK-Cu — Copper Peptide, Skin, Hair, Wound Healing | Prof. Peptide",
   description:
     "GHK-Cu (copper tripeptide) research profile: collagen synthesis, gene expression modulation, hair growth, dosing, side effects, and FDA status.",
-};
+});
 
 const faqs = [
   {

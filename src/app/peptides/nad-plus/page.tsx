@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/nad-plus" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/nad-plus",
   title: "NAD+ — Cellular Metabolism, Longevity, Sirtuin Activator | Prof. Peptide",
   description:
     "NAD+ research profile: cellular metabolism cofactor, sirtuin activation, dosing protocols (SC, IV, oral), side effects, and longevity applications.",
-};
+});
 
 const faqs = [
   {

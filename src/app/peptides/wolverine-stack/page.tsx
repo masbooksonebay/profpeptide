@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/wolverine-stack" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/wolverine-stack",
   title: "Wolverine Stack — BPC-157 + TB-500 Combination Protocol | Prof. Peptide",
   description:
     "Wolverine Stack research profile: BPC-157 + TB-500 combination for tissue repair, mechanism synergy, dosing protocol, and research evidence.",
-};
+});
 
 const faqs = [
   {

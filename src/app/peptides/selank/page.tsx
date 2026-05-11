@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/selank" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/selank",
   title: "Selank — Russian Anxiolytic Peptide, GABA, Mechanism, Dosage | Prof. Peptide",
   description:
     "Selank research profile: GABAergic anxiolysis without sedation, intranasal dosing protocol, Semax stack, Russian clinical history, side effects.",
-};
+});
 
 const faqs = [
   {

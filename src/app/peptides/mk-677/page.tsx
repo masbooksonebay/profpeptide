@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/mk-677" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/mk-677",
   title: "MK-677 (Ibutamoren) — Oral GH Secretagogue, Dosing, Effects | Prof. Peptide",
   description:
     "MK-677 (ibutamoren) research profile: oral ghrelin receptor mechanism, 24-hour GH/IGF-1 elevation, dosing protocol, side effects, WADA status.",
-};
+});
 
 const faqs = [
   {

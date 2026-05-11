@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/bpc-157" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/bpc-157",
   title: "BPC-157 — Body Protection Compound, Mechanism, Dosage, Side Effects | Prof. Peptide",
   description:
     "BPC-157 research profile: tendon healing mechanism, dosing protocol, side effects, FDA Category 2 status, and clinical evidence.",
-};
+});
 
 const faqs = [
   {

@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/gh-stack" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/gh-stack",
   title: "GH Stack — Research Profile, Mechanism & Dosage Guide | Prof. Peptide",
   description:
     "GH Stack (CJC-1295 + Ipamorelin) research profile covering dual-pathway GH synergy, GHRH + GHRP mechanisms, and combination rationale.",
-};
+});
 
 const sections = [
   {

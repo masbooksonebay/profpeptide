@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/dsip" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/dsip",
   title: "DSIP — Delta Sleep-Inducing Peptide, Mechanism, Dosage | Prof. Peptide",
   description:
     "DSIP (Delta Sleep-Inducing Peptide) research profile: sleep modulation mechanism, dosing protocol, FDA immunogenicity flag, side effects.",
-};
+});
 
 const faqs = [
   {

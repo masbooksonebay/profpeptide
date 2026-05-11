@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/aod-9604" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/aod-9604",
   title: "AOD-9604 — Mechanism, Dosage, Research, Side Effects | Prof. Peptide",
   description:
     "AOD-9604 (hGH Fragment 176-191) research profile: mechanism, clinical trial history, dosing, side effects, and FDA regulatory status.",
-};
+});
 
 const faqs = [
   {

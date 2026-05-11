@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/epitalon" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/epitalon",
   title: "Epitalon — Telomerase Activator, Pineal Peptide | Prof. Peptide",
   description:
     "Epitalon (AEDG tetrapeptide) research profile: telomerase activation, pineal/melatonin restoration, Khavinson research, dosing protocol, side effects.",
-};
+});
 
 const faqs = [
   {

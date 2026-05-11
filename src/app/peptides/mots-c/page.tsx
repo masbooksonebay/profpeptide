@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/mots-c" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/mots-c",
   title: "MOTS-c — Mitochondrial Peptide, Mechanism, Dosage, Research | Prof. Peptide",
   description:
     "MOTS-c (mitochondrial-derived peptide) research profile: AMPK mechanism, insulin sensitivity research, dosing protocols, side effects, and longevity applications.",
-};
+});
 
 const faqs = [
   {

@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/tb-500" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/tb-500",
   title: "TB-500 — Thymosin Beta-4, Mechanism, Dosage, Side Effects | Prof. Peptide",
   description:
     "TB-500 (Thymosin Beta-4 fragment) research profile: actin/cellular migration mechanism, dosing protocol, wound healing research, side effects, and FDA status.",
-};
+});
 
 const faqs = [
   {

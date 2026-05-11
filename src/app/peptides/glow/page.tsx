@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/glow" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/glow",
   title: "GLOW Stack — GHK-Cu + BPC-157 + TB-500 Skin Blend | Prof. Peptide",
   description:
     "GLOW peptide stack research profile: GHK-Cu + BPC-157 + TB-500 synergy for skin, hair, and tissue repair. Mechanism, dosing, side effects.",
-};
+});
 
 const faqs = [
   {

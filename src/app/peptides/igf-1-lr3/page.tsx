@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/igf-1-lr3" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/igf-1-lr3",
   title: "IGF-1 LR3 — Long R3 IGF-1 Mechanism, Dosage, Side Effects | Prof. Peptide",
   description:
     "IGF-1 LR3 research profile: PI3K/Akt mechanism, dosing protocol, hypoglycemia risk, satellite cell activation, and clinical evidence.",
-};
+});
 
 const faqs = [
   {

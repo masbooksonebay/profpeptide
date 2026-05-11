@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/ipamorelin" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/ipamorelin",
   title: "Ipamorelin — Selective GHRP, Mechanism, Dosage, Side Effects | Prof. Peptide",
   description:
     "Ipamorelin research profile: selective GHSR-1a agonist mechanism, dosing protocol, CJC-1295 stack, side effects, and clinical evidence.",
-};
+});
 
 const faqs = [
   {

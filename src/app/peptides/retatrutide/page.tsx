@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/retatrutide" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/retatrutide",
   title: "Retatrutide — Research Profile, Mechanism, Dosage, Side Effects | Prof. Peptide",
   description:
     "Retatrutide (LY3437943) research profile: mechanism, Phase 3 TRIUMPH trial results, dosing protocol, side effects, FAQ, and current regulatory status.",
-};
+});
 
 const faqs = [
   {

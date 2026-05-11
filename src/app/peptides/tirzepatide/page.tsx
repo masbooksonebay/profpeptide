@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/tirzepatide" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/tirzepatide",
   title: "Tirzepatide — Mounjaro, Zepbound, Mechanism, Dosage, Side Effects | Prof. Peptide",
   description:
     "Tirzepatide (Mounjaro/Zepbound) research profile: mechanism, SURMOUNT trial results, dosing protocol, side effects, FAQ, and FDA approval status.",
-};
+});
 
 const faqs = [
   {

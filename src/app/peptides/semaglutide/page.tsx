@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides/semaglutide" },
+export const metadata = buildPageMetadata({
+  path: "/peptides/semaglutide",
   title: "Semaglutide — Ozempic, Wegovy, Mechanism, Dosage, Side Effects | Prof. Peptide",
   description:
     "Semaglutide (Ozempic/Wegovy/Rybelsus) research profile: mechanism, STEP trial results, SELECT cardiovascular data, dosing protocol, side effects, and FAQ.",
-};
+});
 
 const faqs = [
   {
