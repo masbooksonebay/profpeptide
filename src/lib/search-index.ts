@@ -117,7 +117,6 @@ export const searchIndex: SearchEntry[] = [
   // News
   { title: "FDA Moves to Restore Peptide Access (April 2026)", url: "/news/fda-peptide-compounding-update-april-2026", category: "news", description: "What researchers need to know", tags: [] },
   { title: "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List", url: "/news/rfk-peptide-ban-2026", category: "news", description: "", tags: [] },
-  { title: "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List (v2)", url: "/news/rfk-peptide-ban-2026-v2", category: "news", description: "", tags: [] },
   { title: "RFK's Peptide Ruling: Where Things Stand (April 2026)", url: "/news/rfk-peptide-update-april-2026", category: "news", description: "", tags: [] },
 
   // Key pages

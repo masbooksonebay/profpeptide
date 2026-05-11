@@ -72,6 +72,11 @@ const nextConfig = {
         destination: "/peptides/retatrutide",
         permanent: true,
       },
+      {
+        source: "/news/rfk-peptide-ban-2026-v2",
+        destination: "/news/rfk-peptide-ban-2026",
+        permanent: true,
+      },
     ];
   },
 };
