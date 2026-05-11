@@ -1,9 +1,11 @@
-export const metadata = {
-  alternates: { canonical: "/coupons/nordic-peptides" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/coupons/nordic-peptides",
   title: "Nordic Peptides Discount Code (May 2026) | Prof. Peptide",
   description:
     "Get the latest Nordic Peptides discount code and promo code. Save on research-grade pen-peptides from Norway and Iceland. Verified by Prof. Peptide.",
-};
+});
 
 export default function NordicPeptidesLayout({ children }: { children: React.ReactNode }) {
   return (

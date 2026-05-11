@@ -1,9 +1,11 @@
-export const metadata = {
-  alternates: { canonical: "/coupons/ez-peptides" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/coupons/ez-peptides",
   title: "EZ Peptides Discount Code (May 2026) — Save 10% | Prof. Peptide",
   description:
     "Use EZ Peptides discount code PROFPEPTIDE to save 10%. U.S.-based supplier with same-day shipping, 4.7/5 rating, and third-party tested peptides.",
-};
+});
 
 export default function EZPeptidesLayout({ children }: { children: React.ReactNode }) {
   return (

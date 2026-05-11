@@ -1,9 +1,11 @@
-export const metadata = {
-  alternates: { canonical: "/coupons/oasis-labs" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/coupons/oasis-labs",
   title: "Oasis Labs Discount Code (May 2026) — Save 15% | Prof. Peptide",
   description:
     "Use Oasis Labs discount code PROF15 to save 15% on research peptides. Veteran-owned, US-based, QR-verified COAs, medical-grade -20\u00B0C storage, FedEx 2Day shipping.",
-};
+});
 
 export default function OasisLabsLayout({ children }: { children: React.ReactNode }) {
   return (

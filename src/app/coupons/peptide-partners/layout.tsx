@@ -1,9 +1,11 @@
-export const metadata = {
-  alternates: { canonical: "/coupons/peptide-partners" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/coupons/peptide-partners",
   title: "Peptide Partners Discount Code (May 2026) — Save 10% | Prof. Peptide",
   description:
     "Use Peptide Partners discount code PROFPEPTIDE to save 10% on research peptides. Four independent test types per batch. Purity, endotoxin, heavy metals, and sterility verified.",
-};
+});
 
 export default function PeptidePartnersLayout({ children }: { children: React.ReactNode }) {
   return (

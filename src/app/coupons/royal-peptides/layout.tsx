@@ -1,9 +1,11 @@
-export const metadata = {
-  alternates: { canonical: "/coupons/royal-peptides" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/coupons/royal-peptides",
   title: "Royal Peptides Discount Code (May 2026) — Save 10% | Prof. Peptide",
   description:
     "Use Royal Peptides discount code PROF10 to save 10%. cGMP & ISO-certified labs, 99%+ purity, purity/pH/vacuum-integrity tested per batch. US and global fulfillment.",
-};
+});
 
 export default function RoyalPeptidesLayout({ children }: { children: React.ReactNode }) {
   return (
