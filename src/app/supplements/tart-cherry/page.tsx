@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/tart-cherry" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/tart-cherry",
   title: "Tart Cherry: Sleep, Recovery, and Anti-Inflammatory Evidence | Prof Peptide",
   description:
     "Montmorency tart cherry contains natural melatonin, tryptophan, and anti-inflammatory anthocyanins. Evidence for sleep quality, exercise recovery, DOMS reduction. Dosing, mechanism, and quality markers.",
-};
+});
 
 const amazonHref = "https://www.amazon.com/s?k=tart+cherry+extract&tag=profpeptide-20";
 

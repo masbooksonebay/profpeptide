@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/green-tea-extract" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/green-tea-extract",
   title: "Green Tea Extract — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Green tea extract (EGCG) profile covering fat oxidation, COMT inhibition, caffeine synergy, cardiovascular benefits, and dosage guidance.",
-};
+});
 
 export default function GreenTeaExtractPage() {
   return (

@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/spermidine" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/spermidine",
   title: "Spermidine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Spermidine supplement profile covering autophagy induction, Bruneck mortality study, cognitive function, and fasting mimicry mechanism.",
-};
+});
 
 export default function SpermidinePage() {
   return (

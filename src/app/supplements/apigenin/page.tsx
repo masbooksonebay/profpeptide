@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/apigenin" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/apigenin",
   title: "Apigenin: Sleep, GABA, and CD38/NAD+ Evidence | Prof Peptide",
   description:
     "Apigenin is the flavonoid in chamomile tea responsible for its calming effect. Evidence for sleep, GABA-A receptor binding, and CD38 inhibition for NAD+ preservation. Dosing, mechanism, and what's still uncertain.",
-};
+});
 
 const amazonHref = "https://www.amazon.com/s?k=apigenin&tag=profpeptide-20";
 

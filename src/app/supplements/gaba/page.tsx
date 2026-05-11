@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/gaba" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/gaba",
   title: "GABA — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "GABA supplement profile covering calming neurotransmitter mechanism, 400% growth hormone increase, sleep support, and PharmaGABA dosage.",
-};
+});
 
 export default function GABAPage() {
   return (

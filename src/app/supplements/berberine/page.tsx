@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/berberine" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/berberine",
   title: "Berberine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Berberine supplement profile covering blood sugar regulation, AMPK activation, metformin comparison, lipid metabolism, and optimal dosage.",
-};
+});
 
 export default function BerberinePage() {
   return (

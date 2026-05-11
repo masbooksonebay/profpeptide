@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/glutamine" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/glutamine",
   title: "Glutamine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Glutamine supplement profile covering gut barrier support, immune cell fuel, muscle recovery, and clinical nutrition evidence.",
-};
+});
 
 export default function GlutaminePage() {
   return (

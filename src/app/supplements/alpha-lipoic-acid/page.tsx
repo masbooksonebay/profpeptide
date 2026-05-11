@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/alpha-lipoic-acid" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/alpha-lipoic-acid",
   title: "Alpha Lipoic Acid — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Alpha lipoic acid profile covering universal antioxidant mechanism, diabetic neuropathy evidence, insulin sensitivity, and R-ALA vs S-ALA forms.",
-};
+});
 
 export default function AlphaLipoicAcidPage() {
   return (

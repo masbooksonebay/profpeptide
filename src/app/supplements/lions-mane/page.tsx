@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/lions-mane" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/lions-mane",
   title: "Lion's Mane — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Lion's Mane mushroom profile covering NGF and BDNF stimulation, neurogenesis, cognitive improvement, and clinical trial evidence.",
-};
+});
 
 export default function LionsManePage() {
   return (

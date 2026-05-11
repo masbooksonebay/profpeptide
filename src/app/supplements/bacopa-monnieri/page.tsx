@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/bacopa-monnieri" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/bacopa-monnieri",
   title: "Bacopa Monnieri — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Bacopa monnieri profile covering bacoside mechanism, memory enhancement, anxiety reduction, Ayurvedic history, and 8-12 week dosage.",
-};
+});
 
 export default function BacopaMonnieriPage() {
   return (

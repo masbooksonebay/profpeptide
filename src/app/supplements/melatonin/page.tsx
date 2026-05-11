@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/melatonin" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/melatonin",
   title: "Melatonin: Dosing, Sleep Effects, and Long-Term Safety | Prof Peptide",
   description:
     "Evidence-based guide to melatonin supplementation. Optimal dose for sleep onset (research shows 1-4mg), timing, safety profile, and recent long-term safety questions.",
-};
+});
 
 const amazonHref = "https://www.amazon.com/s?k=melatonin&tag=profpeptide-20";
 

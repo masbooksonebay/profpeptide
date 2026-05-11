@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/protein-powder" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/protein-powder",
   title: "Protein Powder — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Protein powder profile covering muscle protein synthesis, whey vs casein vs plant sources, optimal intake, and post-workout timing.",
-};
+});
 
 export default function ProteinPowderPage() {
   return (

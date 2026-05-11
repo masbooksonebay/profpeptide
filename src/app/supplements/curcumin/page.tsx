@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/curcumin" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/curcumin",
   title: "Curcumin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Curcumin supplement profile covering NF-κB inhibition, anti-inflammatory effects, joint pain relief, bioavailability solutions, and dosage.",
-};
+});
 
 export default function CurcuminPage() {
   return (

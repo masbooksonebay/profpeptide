@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/zma" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/zma",
   title: "ZMA — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "ZMA supplement profile covering zinc magnesium aspartate, sleep quality improvement, testosterone support in athletes, and mineral repletion.",
-};
+});
 
 export default function ZMAPage() {
   return (

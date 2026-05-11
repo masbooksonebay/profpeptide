@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/phosphatidylserine" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/phosphatidylserine",
   title: "Phosphatidylserine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Phosphatidylserine profile covering FDA qualified health claim, neuronal membrane support, cortisol blunting, and memory improvement.",
-};
+});
 
 export default function PhosphatidylserinePage() {
   return (

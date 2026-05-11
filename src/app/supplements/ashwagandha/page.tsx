@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/ashwagandha" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/ashwagandha",
   title: "Ashwagandha — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Ashwagandha supplement profile covering cortisol reduction, testosterone support, KSM-66 evidence, muscle strength, and sleep quality.",
-};
+});
 
 export default function AshwagandhaPage() {
   return (

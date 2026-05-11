@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/tongkat-ali" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/tongkat-ali",
   title: "Tongkat Ali — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Tongkat Ali supplement profile covering testosterone support, SHBG reduction, aromatase inhibition, cortisol modulation, and Physta dosage.",
-};
+});
 
 export default function TongkatAliPage() {
   return (

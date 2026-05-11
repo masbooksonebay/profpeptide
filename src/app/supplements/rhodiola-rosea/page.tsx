@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/rhodiola-rosea" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/rhodiola-rosea",
   title: "Rhodiola Rosea — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Rhodiola rosea profile covering adaptogenic stress response, mental fatigue reduction, HPA axis modulation, and burnout research.",
-};
+});
 
 export default function RhodiolaRoseaPage() {
   return (

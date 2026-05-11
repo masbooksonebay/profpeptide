@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/magnesium" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/magnesium",
   title: "Magnesium — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Magnesium supplement profile covering 300+ enzymatic reactions, sleep quality, blood pressure, glycinate vs citrate forms, and optimal dosage.",
-};
+});
 
 export default function MagnesiumPage() {
   return (

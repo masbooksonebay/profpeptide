@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/l-citrulline" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/l-citrulline",
   title: "L-Citrulline — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "L-Citrulline supplement profile covering nitric oxide production, erectile function support, vascular health, and comparison to L-arginine.",
-};
+});
 
 export default function LCitrullinePage() {
   return (

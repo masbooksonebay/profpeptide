@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/zinc" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/zinc",
   title: "Zinc — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Zinc supplement profile covering immune cell development, cold duration reduction, gut barrier support, testosterone, and form comparison.",
-};
+});
 
 export default function ZincPage() {
   return (

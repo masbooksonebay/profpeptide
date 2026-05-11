@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/collagen-peptides" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/collagen-peptides",
   title: "Collagen Peptides — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Collagen peptides profile covering joint pain reduction, skin elasticity, tendon support, vitamin C synergy, and optimal dosage guidance.",
-};
+});
 
 export default function CollagenPeptidesPage() {
   return (

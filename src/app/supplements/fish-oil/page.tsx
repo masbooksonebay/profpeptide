@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/fish-oil" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/fish-oil",
   title: "Fish Oil — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Fish oil (omega-3) profile covering EPA and DHA mechanisms, triglyceride reduction, cardiovascular protection, and anti-inflammatory effects.",
-};
+});
 
 export default function FishOilPage() {
   return (

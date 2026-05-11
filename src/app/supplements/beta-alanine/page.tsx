@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/beta-alanine" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/beta-alanine",
   title: "Beta-Alanine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Beta-alanine supplement profile covering carnosine synthesis, pH buffering, fatigue delay in 1-4 minute exercise, and paraesthesia management.",
-};
+});
 
 export default function BetaAlaninePage() {
   return (

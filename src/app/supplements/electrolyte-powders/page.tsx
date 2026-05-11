@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/electrolyte-powders" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/electrolyte-powders",
   title: "Electrolyte Powders — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Electrolyte powders profile covering sodium balance, hyponatremia prevention, endurance performance, and hydration optimization.",
-};
+});
 
 export default function ElectrolytePowdersPage() {
   return (

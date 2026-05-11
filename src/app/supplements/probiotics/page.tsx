@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/probiotics" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/probiotics",
   title: "Probiotics — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Probiotics supplement profile covering gut microbiome restoration, IBS symptom reduction, immune modulation, and strain selection guidance.",
-};
+});
 
 export default function ProbioticsPage() {
   return (

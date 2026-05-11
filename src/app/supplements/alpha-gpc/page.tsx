@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/alpha-gpc" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/alpha-gpc",
   title: "Alpha GPC — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Alpha GPC supplement profile covering choline bioavailability, acetylcholine synthesis, cognitive enhancement, and growth hormone release.",
-};
+});
 
 export default function AlphaGPCPage() {
   return (

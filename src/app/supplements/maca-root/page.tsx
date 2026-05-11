@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/maca-root" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/maca-root",
   title: "Maca Root — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Maca root supplement profile covering non-hormonal libido enhancement, male fertility support, adaptogenic mechanism, and color variety guide.",
-};
+});
 
 export default function MacaRootPage() {
   return (

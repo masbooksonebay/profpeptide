@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/l-citrulline-malate" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/l-citrulline-malate",
   title: "L-Citrulline Malate — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "L-citrulline malate profile covering nitric oxide production, endurance improvement, muscle soreness reduction, and pre-workout dosage.",
-};
+});
 
 export default function LCitrullineMalatePage() {
   return (

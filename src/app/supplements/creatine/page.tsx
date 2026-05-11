@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/creatine" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/creatine",
   title: "Creatine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Creatine supplement profile covering phosphocreatine mechanism, strength and muscle gains, cognitive benefits, and monohydrate gold standard.",
-};
+});
 
 export default function CreatinePage() {
   return (

@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/chromium" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/chromium",
   title: "Chromium — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Chromium supplement profile covering chromodulin insulin potentiation, GLUT4 translocation, blood sugar regulation, and picolinate dosage.",
-};
+});
 
 export default function ChromiumPage() {
   return (

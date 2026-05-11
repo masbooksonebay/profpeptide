@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/l-arginine" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/l-arginine",
   title: "L-Arginine — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "L-Arginine supplement profile covering nitric oxide precursor role, growth hormone secretion, cardiovascular support, and wound healing.",
-};
+});
 
 export default function LArgininePage() {
   return (

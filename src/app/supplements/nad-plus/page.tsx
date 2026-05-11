@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/nad-plus" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/nad-plus",
   title: "NAD+ — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "NAD+ supplement profile covering cellular energy, sirtuin activation, DNA repair, NMN and NR precursors, clinical trial evidence, and dosage guidance.",
-};
+});
 
 export default function NADPlusSupplementPage() {
   return (

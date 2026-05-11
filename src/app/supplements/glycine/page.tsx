@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/glycine" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/glycine",
   title: "Glycine for Sleep: Evidence, Dosing, and Mechanism | Prof Peptide",
   description:
     "Glycine is a non-essential amino acid with surprising sleep evidence. Research shows 3g before bed reduces sleep latency, improves sleep quality, and reduces next-day fatigue. Mechanism, dosing, and safety profile.",
-};
+});
 
 const amazonHref = "https://www.amazon.com/s?k=glycine+powder&tag=profpeptide-20";
 

@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/vitamin-c-skin" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/vitamin-c-skin",
   title: "Vitamin C for Skin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Vitamin C for skin profile covering collagen hydroxylation, melanin inhibition, UV protection, vitamin E regeneration, and dosage.",
-};
+});
 
 export default function VitaminCSkinPage() {
   return (

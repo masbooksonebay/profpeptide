@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/quercetin" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/quercetin",
   title: "Quercetin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Quercetin supplement profile covering senolytic activity, NF-κB inhibition, zinc ionophore mechanism, and Mayo Clinic aging research.",
-};
+});
 
 export default function QuercetinPage() {
   return (

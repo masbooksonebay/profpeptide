@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/coq10" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/coq10",
   title: "CoQ10 — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "CoQ10 supplement profile covering mitochondrial electron transport, heart failure research, statin myopathy support, and ubiquinol vs ubiquinone.",
-};
+});
 
 export default function CoQ10Page() {
   return (

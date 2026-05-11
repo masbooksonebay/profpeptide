@@ -2,13 +2,14 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements/biotin" },
+export const metadata = buildPageMetadata({
+  path: "/supplements/biotin",
   title: "Biotin — Benefits, Research & Dosage Guide | Prof. Peptide",
   description:
     "Biotin (vitamin B7) profile covering nail strength evidence, hair support in deficiency, keratin mechanism, and lab test interference warning.",
-};
+});
 
 export default function BiotinPage() {
   return (
