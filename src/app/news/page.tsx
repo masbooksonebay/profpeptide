@@ -19,6 +19,13 @@ export const metadata = {
 
 const articles = [
   {
+    title: "Retatrutide Phase 3 Update \u2014 Diabetes and Osteoarthritis Trials Hit Primary Endpoints",
+    slug: "retatrutide-phase-3-update-may-2026",
+    date: "May 11, 2026",
+    excerpt:
+      "The first Phase 3 readouts from retatrutide\u2019s TRIUMPH and TRANSCEND-T2D programs are in. Here\u2019s what TRANSCEND-T2D-1 and TRIUMPH-4 showed and what comes next.",
+  },
+  {
     title: "FDA Releases Official Agenda for July Peptide Compounding Meeting \u2014 Here\u2019s What\u2019s on It",
     slug: "fda-pcac-meeting-agenda-july-2026",
     date: "April 28, 2026",
