@@ -99,15 +99,6 @@ export const vendors: Record<string, Vendor> = {
     url: "https://www.limitlesslifenootropics.com/?_ef_transaction_id=&oid=1&affid=10477",
     detailPage: "/coupons/limitless-biotech",
   },
-  "nordic-peptides": {
-    name: "Nordic Peptides",
-    code: "",
-    discount: "Code coming soon",
-    region: "IS",
-    url: "https://nordicpeptides.is?tracking=YPIYKOnVzjUxFUBzUjMguT01DrDOfTcsJhXEfi15i6MMovBJRFEwZguHeWt7mRkR",
-    detailPage: "/coupons/nordic-peptides",
-    comingSoon: true,
-  },
   "oasis-labs": {
     name: "Oasis Labs",
     code: "PROF15",
