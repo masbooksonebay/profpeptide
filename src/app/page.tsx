@@ -183,12 +183,12 @@ export default function Home() {
               </ul>
             </div>
             <div className="bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl p-6 shadow-sm">
-              <p className="text-xs font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-wider mb-4">Coming Soon — iOS App</p>
+              <p className="text-xs font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-wider mb-4">Now on iOS</p>
               <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Prof. Peptide for iPhone</h3>
               <p className="text-sm text-gray-500 dark:text-slate-400 mb-5 leading-relaxed">
-                Log research protocols, set dosage reminders, access the full peptide library offline, and track notes — all in a clean, private app.
+                Calculate doses, browse the full peptide and supplement libraries, and access discount codes — all offline in a clean, private app.
               </p>
-              <Link href="/app" className="btn-primary text-sm w-full text-center block">Join the Waitlist</Link>
+              <Link href="/app" className="btn-primary text-sm w-full text-center block">Get the App</Link>
             </div>
           </div>
         </div>
