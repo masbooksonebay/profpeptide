@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 27 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 29 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 27 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 29 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -16,6 +16,7 @@ const categories = [
     peptides: [
       { name: "AOD-9604", slug: "aod-9604" },
       { name: "Cagrilintide", slug: "cagrilintide" },
+      { name: "CagriSema", slug: "cagrisema" },
       { name: "MOTS-c", slug: "mots-c" },
       { name: "Retatrutide", slug: "retatrutide" },
       { name: "Semaglutide", slug: "semaglutide" },
@@ -63,6 +64,7 @@ const categories = [
     peptides: [
       { name: "GHK-Cu", slug: "ghk-cu" },
       { name: "GLOW", slug: "glow" },
+      { name: "KLOW", slug: "klow" },
       { name: "Melanotan II", slug: "melanotan-ii" },
     ],
   },
