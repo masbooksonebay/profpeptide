@@ -59,7 +59,7 @@ const features = [
 ];
 
 const trust = [
-  { value: "20+", label: "Peptide profiles" },
+  { value: "30+", label: "Peptide profiles" },
   { value: "50+", label: "Supplement profiles" },
   { value: "10+", label: "Verified discount codes" },
   { value: "100%", label: "Independent research" },

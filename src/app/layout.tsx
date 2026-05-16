@@ -8,7 +8,7 @@ import ThemeProvider from "@/components/ThemeProvider";
 export const metadata: Metadata = {
   title: "Prof. Peptide — Research Guide for Peptides and Natural Supplements",
   description:
-    "Evidence-based research profiles for 23+ peptides and 51 natural supplements. Dosage calculator, verified discount codes, and independent education. No ads.",
+    "Evidence-based research profiles for 30+ peptides and 50+ natural supplements. Dosage calculator, verified discount codes, and independent education. No ads.",
   metadataBase: new URL("https://profpeptide.com"),
   openGraph: {
     title: "Prof. Peptide",

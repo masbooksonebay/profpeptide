@@ -56,8 +56,8 @@ const categories = [
     name: "Cognitive & Nootropic",
     slug: "cognitive",
     peptides: [
-      { name: "Semax", slug: "semax" },
       { name: "Selank", slug: "selank" },
+      { name: "Semax", slug: "semax" },
       { name: "Semax + Selank", slug: "semax-selank" },
     ],
   },
