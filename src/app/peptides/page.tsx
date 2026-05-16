@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 29 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 32 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 29 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 32 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -44,8 +44,10 @@ const categories = [
     name: "Growth Hormone",
     slug: "growth-hormone",
     peptides: [
-      { name: "Ipamorelin", slug: "ipamorelin" },
       { name: "CJC-1295", slug: "cjc-1295" },
+      { name: "GH Stack", slug: "gh-stack" },
+      { name: "Ipamorelin", slug: "ipamorelin" },
+      { name: "MK-677", slug: "mk-677" },
       { name: "Sermorelin", slug: "sermorelin" },
       { name: "Tesamorelin", slug: "tesamorelin" },
     ],
@@ -56,6 +58,7 @@ const categories = [
     peptides: [
       { name: "Semax", slug: "semax" },
       { name: "Selank", slug: "selank" },
+      { name: "Semax + Selank", slug: "semax-selank" },
     ],
   },
   {
