@@ -9,12 +9,14 @@ export function buildPageMetadata({
   description,
   ogTitle,
   ogDescription,
+  useDefaultOgImage = true,
 }: {
   path: string;
   title: string;
   description: string;
   ogTitle?: string;
   ogDescription?: string;
+  useDefaultOgImage?: boolean;
 }): Metadata {
   const url = `${SITE_URL}${path}`;
   const finalOgTitle = ogTitle ?? title;
@@ -29,13 +31,15 @@ export function buildPageMetadata({
       url,
       siteName: "Prof. Peptide",
       type: "website",
-      images: [{ url: OG_IMAGE, width: 1024, height: 1024, alt: "Prof. Peptide" }],
+      ...(useDefaultOgImage && {
+        images: [{ url: OG_IMAGE, width: 1024, height: 1024, alt: "Prof. Peptide" }],
+      }),
     },
     twitter: {
       card: "summary_large_image",
       title: finalOgTitle,
       description: finalOgDescription,
-      images: [OG_IMAGE],
+      ...(useDefaultOgImage && { images: [OG_IMAGE] }),
     },
   };
 }
