@@ -52,9 +52,9 @@ const features = [
   {
     icon: "phone-portrait-outline",
     title: "Get the App",
-    desc: "The Prof. Peptide iOS app is coming soon — track protocols, log doses, and access the library on the go.",
+    desc: "Prof. Peptide for iOS is live on the App Store. Calculate doses, browse compound profiles, and access research — anywhere.",
     href: "/app",
-    cta: "Join waitlist",
+    cta: "Download",
   },
 ];
 

@@ -1,21 +1,22 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@/components/CategoryIcon";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/app" },
-  title: "Get the Prof. Peptide App — Peptide Research in Your Pocket",
-  description: "Access peptide profiles, supplement guides, dosage tools, and discount codes on the go. The Prof. Peptide iOS app — free, private, offline.",
-};
+export const metadata = buildPageMetadata({
+  path: "/app",
+  title: "Prof. Peptide for iOS — Peptide Research in Your Pocket",
+  description: "Prof. Peptide for iOS: peptide dose calculator, 30+ compound profiles, latest research, and verified vendor discount codes. Free on the App Store.",
+  ogTitle: "Prof. Peptide for iOS",
+  ogDescription: "Calculate doses, browse 30+ peptide profiles, follow research, and find verified vendor codes. Free on the App Store.",
+});
 
 const APP_STORE_URL = "https://apps.apple.com/app/prof-peptide/id6761995269";
 
 const features = [
-  { icon: "flask-outline", title: "Full Peptide Library", desc: "Every peptide profile, offline. Search, filter, and browse compounds by category." },
-  { icon: "bag-outline", title: "Supplement Library", desc: "Research-grade supplement references organized by category — sleep, recovery, cognitive, and more." },
-  { icon: "calculator-outline", title: "Dosage Calculator", desc: "Trusted reconstitution math, available offline on your phone. BAC water volume, desired dose, mL to draw." },
-  { icon: "pricetag-outline", title: "Discount Codes", desc: "Curated codes from research peptide vendors. One-tap copy to clipboard." },
-  { icon: "book-outline", title: "Research Hub", desc: "Peer-reviewed research summaries in plain English. Tap a category to read on profpeptide.com." },
+  { icon: "calculator-outline", title: "Calculator", desc: "Step-by-step dose math for any peptide. Volume, concentration, blend support." },
+  { icon: "flask-outline", title: "Compounds", desc: "30+ peptide profiles with mechanism, dosing, research, and references. Browse offline." },
+  { icon: "book-outline", title: "Research", desc: "Latest peptide research news, study summaries, and regulatory updates." },
+  { icon: "pricetag-outline", title: "Codes", desc: "Verified vendor discount codes, updated regularly." },
   { icon: "lock-closed-outline", title: "Private by Design", desc: "No account required. All data stays on your device. No tracking." },
 ];
 
