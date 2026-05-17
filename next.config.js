@@ -38,22 +38,22 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/compare/retatrutide-vs-tirzepatide",
+        source: "/compare/retatrutide-vs-tirzepatide{/}?",
         destination: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
         permanent: true,
       },
       {
-        source: "/compare/retatrutide-vs-semaglutide",
+        source: "/compare/retatrutide-vs-semaglutide{/}?",
         destination: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
         permanent: true,
       },
       {
-        source: "/research",
+        source: "/research{/}?",
         destination: "/peptides",
         permanent: true,
       },
       ...studiesRedirectSlugs.map((slug) => ({
-        source: `/research/${slug}`,
+        source: `/research/${slug}{/}?`,
         destination: `/peptides/${slug}#studies`,
         permanent: true,
       })),
@@ -73,7 +73,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/news/rfk-peptide-ban-2026-v2",
+        source: "/news/rfk-peptide-ban-2026-v2{/}?",
         destination: "/news/rfk-peptide-ban-2026",
         permanent: true,
       },
