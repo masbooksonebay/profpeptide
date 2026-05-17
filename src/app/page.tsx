@@ -130,15 +130,15 @@ export default function Home() {
             <Link href="/news" className="text-xs font-medium text-[#0891b2] hover:underline">View all news &rarr;</Link>
           </div>
           <Link
-            href="/news/retatrutide-phase-3-update-may-2026"
+            href="/news/eco2026-oral-glp1-recap-may-2026"
             className="block border border-gray-200 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] hover:shadow-md transition-all group bg-white dark:bg-[#0f172a]"
           >
-            <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">May 11, 2026</p>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">May 17, 2026</p>
             <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#0891b2] transition-colors mb-2">
-              Retatrutide Phase 3 Update &mdash; Diabetes and Osteoarthritis Trials Hit Primary Endpoints
+              ECO2026 Recap &mdash; Oral GLP-1 Data from Novo, Lilly, and Viking
             </h3>
             <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-              The first Phase 3 readouts from retatrutide&rsquo;s TRIUMPH and TRANSCEND-T2D programs are in. Here&rsquo;s what TRANSCEND-T2D-1 and TRIUMPH-4 showed and what comes next.
+              The European Congress on Obesity (ECO2026) ran May 12-15 in Istanbul. Novo Nordisk, Eli Lilly, and Viking Therapeutics each presented new oral GLP-1 data &mdash; including a Wegovy pill sub-analysis showing 21.6% weight loss in early responders, Lilly&rsquo;s maintenance trial results, and Viking&rsquo;s Phase 2 VK2735 readout. Here&rsquo;s what the data showed and why it matters.
             </p>
             <span className="text-xs font-medium text-[#0891b2] mt-3 inline-block">Read more &rarr;</span>
           </Link>

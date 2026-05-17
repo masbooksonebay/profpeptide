@@ -19,6 +19,13 @@ export const metadata = {
 
 const articles = [
   {
+    title: "ECO2026 Recap \u2014 Oral GLP-1 Data from Novo, Lilly, and Viking",
+    slug: "eco2026-oral-glp1-recap-may-2026",
+    date: "May 17, 2026",
+    excerpt:
+      "The European Congress on Obesity (ECO2026) ran May 12-15 in Istanbul. Novo Nordisk, Eli Lilly, and Viking Therapeutics each presented new oral GLP-1 data \u2014 including a Wegovy pill sub-analysis showing 21.6% weight loss in early responders, Lilly\u2019s maintenance trial results, and Viking\u2019s Phase 2 VK2735 readout. Here\u2019s what the data showed and why it matters.",
+  },
+  {
     title: "Retatrutide Phase 3 Update \u2014 Diabetes and Osteoarthritis Trials Hit Primary Endpoints",
     slug: "retatrutide-phase-3-update-may-2026",
     date: "May 11, 2026",
