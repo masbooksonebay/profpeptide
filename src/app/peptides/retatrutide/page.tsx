@@ -19,7 +19,14 @@ const faqs = [
   },
   {
     q: "How does retatrutide compare to semaglutide and tirzepatide?",
-    a: "Semaglutide activates one receptor (GLP-1). Tirzepatide activates two (GLP-1 + GIP). Retatrutide activates three (GLP-1 + GIP + glucagon). Trial weight loss has been progressively higher with each: semaglutide around 15%, tirzepatide around 22%, retatrutide around 28.7% at the highest doses. Retatrutide also has a unique side effect — dysesthesia (skin sensation changes) — that doesn't appear with the other two.",
+    a: (
+      <>
+        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>{" "}
+        activates one receptor (GLP-1).{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>{" "}
+        activates two (GLP-1 + GIP). Retatrutide activates three (GLP-1 + GIP + glucagon). Trial weight loss has been progressively higher with each: semaglutide around 15%, tirzepatide around 22%, retatrutide around 28.7% at the highest doses. Retatrutide also has a unique side effect &mdash; dysesthesia (skin sensation changes) &mdash; that doesn&apos;t appear with the other two.
+      </>
+    ),
   },
   {
     q: "How long does retatrutide take to work?",
@@ -31,7 +38,14 @@ const faqs = [
   },
   {
     q: "What is dysesthesia and should I be concerned?",
-    a: "Dysesthesia means abnormal skin sensations — tingling, burning, or pins-and-needles feeling. It was reported in about 21% of participants at the 12 mg dose in TRIUMPH-4. The effects were generally mild and rarely led to discontinuation. It's specific to retatrutide and not seen with semaglutide or tirzepatide. The mechanism is not fully understood but is thought to relate to glucagon-receptor activity.",
+    a: (
+      <>
+        Dysesthesia means abnormal skin sensations &mdash; tingling, burning, or pins-and-needles feeling. It was reported in about 21% of participants at the 12 mg dose in TRIUMPH-4. The effects were generally mild and rarely led to discontinuation. It&apos;s specific to retatrutide and not seen with{" "}
+        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+        or{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>. The mechanism is not fully understood but is thought to relate to glucagon-receptor activity.
+      </>
+    ),
   },
   {
     q: "What happens if I stop retatrutide?",
@@ -45,7 +59,7 @@ const faqs = [
     q: "Where can I get retatrutide?",
     a: (
       <>
-        Retatrutide is investigational and not available by prescription. Research-grade product is sold by peptide vendors for laboratory use only. PP maintains a list of vetted vendors with verified discount codes — see{" "}
+        Retatrutide is investigational and not available by prescription. Research-grade product is sold by peptide vendors for laboratory use only. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
         <Link href="/coupons" className="text-[#0891b2] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
@@ -57,28 +71,28 @@ const faqs = [
 
 const studies = [
   {
-    title: "Triple-Hormone-Receptor Agonist Retatrutide for Obesity \u2014 A Phase 2 Trial",
-    authors: "Jastreboff AM, Kaplan LM, Fr\u00EDas JP, et al. \u2014 Retatrutide Phase 2 Obesity Trial Investigators",
+    title: "Triple-Hormone-Receptor Agonist Retatrutide for Obesity — A Phase 2 Trial",
+    authors: "Jastreboff AM, Kaplan LM, Frías JP, et al. — Retatrutide Phase 2 Obesity Trial Investigators",
     journal: "New England Journal of Medicine",
     year: "2023",
     access: "Open Access",
     url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972",
-    summary: "The landmark Phase 2 trial of retatrutide in 338 adults with obesity. At the highest dose (12mg), participants lost an average of 24.2% of their body weight over 48 weeks \u2014 with weight loss curves that had not yet plateaued at trial end, suggesting even greater losses with longer treatment. Every single participant in the 12mg group achieved at least 5% weight loss, and 62% achieved 20% or more. These are the highest weight loss numbers ever recorded in a pharmacological trial and exceed those of bariatric surgery in some comparisons.",
+    summary: "The landmark Phase 2 trial of retatrutide in 338 adults with obesity. At the highest dose (12mg), participants lost an average of 24.2% of their body weight over 48 weeks — with weight loss curves that had not yet plateaued at trial end, suggesting even greater losses with longer treatment. Every single participant in the 12mg group achieved at least 5% weight loss, and 62% achieved 20% or more. These are the highest weight loss numbers ever recorded in a pharmacological trial and exceed those of bariatric surgery in some comparisons.",
   },
   {
-    title: "Retatrutide for People with Type 2 Diabetes \u2014 A Phase 2 Trial",
+    title: "Retatrutide for People with Type 2 Diabetes — A Phase 2 Trial",
     authors: "Rosenstock J, Frias JP, Jastreboff AM, et al.",
     journal: "New England Journal of Medicine",
     year: "2023",
     access: "Open Access",
     url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2302972",
-    summary: "Companion Phase 2 trial of retatrutide in 281 adults with type 2 diabetes. Retatrutide produced significant reductions in HbA1c (up to 2.02 percentage points) and body weight (up to 16.94%) compared to placebo over 36 weeks. The triple agonist mechanism improved glycemic control more than existing single and dual agonists, while also producing substantial weight loss \u2014 establishing the metabolic breadth of the compound beyond obesity alone.",
+    summary: "Companion Phase 2 trial of retatrutide in 281 adults with type 2 diabetes. Retatrutide produced significant reductions in HbA1c (up to 2.02 percentage points) and body weight (up to 16.94%) compared to placebo over 36 weeks. The triple agonist mechanism improved glycemic control more than existing single and dual agonists, while also producing substantial weight loss — establishing the metabolic breadth of the compound beyond obesity alone.",
   },
   {
-    title: "TRIUMPH Phase 3 Program \u2014 Trial Status and Design",
+    title: "TRIUMPH Phase 3 Program — Trial Status and Design",
     authors: "ClinicalTrials.gov",
     journal: "ClinicalTrials.gov",
-    year: "2024\u20132026 (ongoing)",
+    year: "2024–2026 (ongoing)",
     access: "Open Access",
     url: "https://clinicaltrials.gov/search?term=retatrutide+TRIUMPH",
     summary: "Retatrutide entered Phase 3 clinical trials under the TRIUMPH program in 2024, with seven trials evaluating it across obesity, type 2 diabetes, cardiovascular outcomes, and related metabolic conditions. As of early 2026 Phase 3 results are beginning to emerge. If the Phase 3 data replicates the Phase 2 findings, retatrutide would represent the most effective pharmacological weight loss treatment ever approved. This page will be updated as Phase 3 results are published.",
@@ -88,49 +102,61 @@ const studies = [
 const sections = [
   {
     id: "mechanism",
-    title: "Mechanism of Action",
+    title: "How does Retatrutide work?",
+    intro: (
+      <>
+        Retatrutide hits three metabolic receptors at once &mdash; GLP-1, GIP, and glucagon &mdash; whereas{" "}
+        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+        hits just one and{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+        hits two. The first two receptors slow the stomach and reduce appetite (the well-known GLP-1 effects); the third receptor &mdash; glucagon &mdash; adds a separate energy-expenditure boost on top, encouraging the body to burn more fat at rest. The triple-pathway design is the reason retatrutide produces the largest weight losses ever recorded in pharmacological trials, and it&rsquo;s also why it has a unique side-effect signature not seen with the dual or single agonists.
+      </>
+    ),
     body: [
-      "GLP-1 Receptor Activation [1] — Retatrutide activates the GLP-1 receptor, which slows stomach emptying, reduces appetite, and improves insulin release in response to food. This is the same pathway used by semaglutide (Ozempic, Wegovy).",
-      "GIP Receptor Activation [1] — The peptide also activates the GIP receptor, which enhances insulin signaling and supports fat metabolism. Adding GIP to GLP-1 activation is what made tirzepatide (Mounjaro, Zepbound) more effective than semaglutide.",
-      "Glucagon Receptor Activation [1][2] — Retatrutide adds a third receptor — glucagon — which increases the body's energy expenditure and encourages fat oxidation. This is the mechanism that distinguishes retatrutide from all other approved GLP-1-class drugs and explains the larger weight loss seen in trials.",
-      "Combined Triple-Agonist Effect [2] — The three receptors work together to reduce appetite, slow digestion, improve insulin response, and burn more fat at rest. The dose-response curve in trials suggests retatrutide produces continued weight loss even at the 68-week mark, suggesting a plateau may not have been reached.",
+      "GLP-1 Receptor Activation [1]. Retatrutide activates the GLP-1 receptor, which slows stomach emptying, reduces appetite, and improves insulin release in response to food. This is the same pathway used by semaglutide (Ozempic, Wegovy).",
+      "GIP Receptor Activation [1]. The peptide also activates the GIP receptor, which enhances insulin signaling and supports fat metabolism. Adding GIP to GLP-1 activation is what made tirzepatide (Mounjaro, Zepbound) more effective than semaglutide.",
+      "Glucagon Receptor Activation [1][2]. Retatrutide adds a third receptor — glucagon — which increases the body’s energy expenditure and encourages fat oxidation. This is the mechanism that distinguishes retatrutide from all other approved GLP-1-class drugs and explains the larger weight loss seen in trials.",
+      "Combined Triple-Agonist Effect [2]. The three receptors work together to reduce appetite, slow digestion, improve insulin response, and burn more fat at rest. The dose-response curve in trials suggests retatrutide produces continued weight loss even at the 68-week mark, suggesting a plateau may not have been reached.",
     ],
   },
   {
     id: "research",
-    title: "Key Research Areas",
+    title: "What is Retatrutide used for?",
+    intro:
+      "Retatrutide is in active Phase 3 clinical trials under Eli Lilly’s TRIUMPH program. As of mid-2026, two key Phase 3 readouts have landed: TRIUMPH-4 (obesity + knee osteoarthritis) and TRANSCEND-T2D-1 (type 2 diabetes). Additional Phase 3 readouts on cardiovascular outcomes, sleep apnea, and metabolic liver disease are expected through 2026 and into 2027 — making retatrutide a moving research target with results adding rapidly.",
     body: [
-      "Obesity and Weight Management [1][3] — The TRIUMPH Phase 3 program is testing retatrutide across multiple obesity populations. TRIUMPH-4 (Dec 2025) reported 28.7% average weight loss at the 12 mg dose over 68 weeks in adults with obesity and knee osteoarthritis.",
-      "Type 2 Diabetes [4] — TRANSCEND-T2D-1 (Mar 2026) reported 2.0% A1C reduction and 16.8% weight loss at 12 mg over 40 weeks in people with type 2 diabetes.",
-      "Knee Osteoarthritis [3] — TRIUMPH-4 also reported significant reductions in knee osteoarthritis pain (44-point improvement on the WOMAC pain subscale), suggesting weight loss may translate to functional improvements in joint disease.",
-      "Cardiovascular Risk [5] — TRIUMPH-3 is an ongoing cardiovascular outcomes trial in patients with established cardiovascular disease. Results are expected in 2027 or later.",
-      "Fatty Liver Disease (MASH) [6] — Phase 2 data showed significant reductions in liver fat and improvements in insulin sensitivity. A dedicated MASH Phase 3 trial is underway.",
-      "Sleep Apnea [5] — Phase 2 data showed a 42% reduction in the apnea-hypopnea index. A dedicated obstructive sleep apnea Phase 3 trial is in the TRIUMPH program.",
+      "Obesity and Weight Management [1][3]. The TRIUMPH Phase 3 program is testing retatrutide across multiple obesity populations. TRIUMPH-4 (Dec 2025) reported 28.7% average weight loss at the 12 mg dose over 68 weeks in adults with obesity and knee osteoarthritis.",
+      "Type 2 Diabetes [4]. TRANSCEND-T2D-1 (Mar 2026) reported 2.0% A1C reduction and 16.8% weight loss at 12 mg over 40 weeks in people with type 2 diabetes.",
+      "Knee Osteoarthritis [3]. TRIUMPH-4 also reported significant reductions in knee osteoarthritis pain (44-point improvement on the WOMAC pain subscale), suggesting weight loss may translate to functional improvements in joint disease.",
+      "Cardiovascular Risk [5]. TRIUMPH-3 is an ongoing cardiovascular outcomes trial in patients with established cardiovascular disease. Results are expected in 2027 or later.",
+      "Fatty Liver Disease (MASH) [6]. Phase 2 data showed significant reductions in liver fat and improvements in insulin sensitivity. A dedicated MASH Phase 3 trial is underway.",
+      "Sleep Apnea [5]. Phase 2 data showed a 42% reduction in the apnea-hypopnea index. A dedicated obstructive sleep apnea Phase 3 trial is in the TRIUMPH program.",
     ],
   },
   {
     id: "timeline",
-    title: "What to Expect (Timeline)",
+    title: "How long does Retatrutide take to work?",
+    intro:
+      "Retatrutide effects build progressively over weeks and months. Most users notice appetite reduction in the first 1–2 weeks. Meaningful weight loss accumulates over the dose-escalation phase — usually 5–7 months of steady increases. Trial data shows the weight-loss curve was still declining at the 68-week mark, suggesting plateau happens later than with semaglutide or tirzepatide.",
     content:
-      "Retatrutide effects build gradually over weeks and months. In trials, most participants noticed reduced appetite within the first 1–2 weeks of starting. Modest weight loss (about 2–3% of body weight) typically appeared by week 4 at the 2 mg starting dose. Significant weight loss accumulated over the dose-escalation phase as the dose was increased every 4 weeks. By 24 weeks, average weight loss was around 17%; by 48 weeks, around 24%; and by 68 weeks (TRIUMPH-4), around 28.7% at the highest dose. The weight-loss curve was still declining at the end of the longest trials, suggesting full effects may take longer than 68 weeks to plateau.",
+      "In trials, most participants noticed reduced appetite within the first 1–2 weeks of starting. Modest weight loss (about 2–3% of body weight) typically appeared by week 4 at the 2 mg starting dose. Significant weight loss accumulated over the dose-escalation phase as the dose was increased every 4 weeks. By 24 weeks, average weight loss was around 17%; by 48 weeks, around 24%; and by 68 weeks (TRIUMPH-4), around 28.7% at the highest dose. The weight-loss curve was still declining at the end of the longest trials, suggesting full effects may take longer than 68 weeks to plateau.",
   },
   {
     id: "dosing",
-    title: "Dosing & Protocols",
+    title: "How is Retatrutide dosed?",
+    intro:
+      "Retatrutide is administered as a once-weekly subcutaneous injection. Phase 3 TRIUMPH trials use a stepwise dose-escalation protocol — starting at 2 mg and increasing every 4 weeks — to give the body time to adapt and reduce gastrointestinal side effects. The slow titration is non-negotiable; Phase 2 data showed that starting at a higher dose (4 mg) significantly increased side-effect rates without improving outcomes.",
     node: (
       <div className="space-y-3">
-        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Retatrutide is administered as a once-weekly subcutaneous injection. Trials use a stepwise dose-escalation protocol, starting low and increasing every 4 weeks to allow the body to adapt and minimize gastrointestinal side effects. The slow titration is critical — Phase 2 data showed that participants who started at 4 mg instead of 2 mg had significantly higher rates of GI side effects.
-        </p>
         <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
           Standard escalation schedule (Phase 3 TRIUMPH protocol):
         </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 1–4: 2 mg once weekly</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 5–8: 4 mg once weekly</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 9–12: 6 mg once weekly (TRIUMPH-3+ protocol)</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 13–16: 9 mg once weekly</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 17+: 12 mg once weekly (maintenance, max dose tested)</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Weeks 1–4.</span> 2 mg once weekly.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Weeks 5–8.</span> 4 mg once weekly.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Weeks 9–12.</span> 6 mg once weekly (TRIUMPH-3+ protocol).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Weeks 13–16.</span> 9 mg once weekly.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Weeks 17+.</span> 12 mg once weekly (maintenance, max dose tested).</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Phase 2 trials tested doses from 0.5 mg to 12 mg weekly. Phase 3 (TRIUMPH-4) tested 9 mg and 12 mg as maintenance doses, with full Phase 3 results pending for the 4 mg lower-dose maintenance arm. Half-life is approximately 6 days, supporting once-weekly dosing with steady state reached in 4–5 weeks at each dose level.
@@ -149,8 +175,67 @@ const sections = [
     ),
   },
   {
+    id: "how-to-take",
+    title: "How is Retatrutide administered?",
+    intro:
+      "Retatrutide is given as a subcutaneous injection — under the skin, not into muscle — once weekly, using a small insulin syringe. The injection routine, timing, and supporting habits (hydration, eating pattern, alcohol management) matter as much as the dose for tolerability. The points below cover the practical details that experienced users converge on.",
+    body: [
+      "Route. Subcutaneous injection, once weekly. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.",
+      "Time of day. Any time, but consistent. Many users inject in the morning or before bed depending on side-effect timing.",
+      "With or without food. Either is fine.",
+      "Site rotation. Use a different site each week to reduce localized irritation. Stay at least 1 inch from previous injection sites.",
+      "Missed dose. If less than 5 days late, take as soon as remembered. If more than 5 days late, skip the missed dose and resume on the next scheduled day. Do not double-dose.",
+      "Alcohol. Avoid for at least 48 hours after injection — alcohol compounds nausea and dehydration.",
+      "Hydration. Drink water consistently. The medication blunts thirst signals, so set a daily water target rather than waiting for thirst.",
+      "Eating pattern. Small meals every 3–4 hours rather than waiting for hunger, which is suppressed. Empty-stomach nausea is the most common trigger for vomiting.",
+    ],
+  },
+  {
+    id: "stacks",
+    title: "What does Retatrutide stack well with?",
+    intro:
+      "Retatrutide’s triple-agonist mechanism is strong enough that standalone use is the most common research protocol — additional incretin-class peptides usually amplify side effects without proportional benefit. The cleanest additions are non-peptide: resistance training, adequate protein, and metformin in diabetes contexts. The things to avoid are other GLP-1-class compounds and stacks that would compound the same receptor pathways.",
+    node: (
+      <ol className="list-decimal list-inside space-y-1">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standalone use.</span> The most common research protocol. Retatrutide&apos;s triple-agonist effect is strong enough that stacking with other GLP-1-class peptides is unnecessary and can compound side effects.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Metformin.</span> Commonly used together in type 2 diabetes for additive blood-sugar control. Standard practice in clinical settings.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + 1.2–1.6 g/kg protein.</span> Recommended to preserve lean muscle mass during rapid weight loss. Without this, GLP-1-class drugs can cause significant muscle loss alongside fat loss.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">GH-axis peptides for lean-mass preservation.</span>{" "}
+          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>{" "}
+          (CJC-1295 + Ipamorelin) or{" "}
+          <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677</Link>{" "}
+          are sometimes added during caloric restriction to support lean-mass retention via elevated IGF-1. Side-effect profiles do not overlap meaningfully with retatrutide.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Tissue-repair peptides during rapid weight loss.</span>{" "}
+          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+          (BPC-157 + TB-500) or the broader{" "}
+          <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+          /{" "}
+          <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+          blends are sometimes used for joint and connective-tissue support during the higher-strain phase of significant weight loss.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Avoid: other GLP-1 agonists.</span>{" "}
+          <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
+          <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>, or liraglutide should not be combined with retatrutide. Combining incretin-based drugs significantly increases GI side effects without proportional benefit.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Avoid: CagriSema or standalone cagrilintide on top.</span>{" "}
+          <Link href="/peptides/cagrisema" className="text-[#0891b2] hover:underline">CagriSema</Link>{" "}
+          (semaglutide + cagrilintide) overlaps with retatrutide&apos;s GLP-1 arm.{" "}
+          <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">Cagrilintide</Link>{" "}
+          alone is amylin-based and is less directly overlapping but has limited combination data with retatrutide.
+        </li>
+      </ol>
+    ),
+  },
+  {
     id: "side-effects",
-    title: "Side Effects & Safety",
+    title: "What are the side effects of Retatrutide?",
+    intro:
+      "Retatrutide’s side-effect profile resembles other GLP-1-class drugs — gastrointestinal effects dominate, especially during dose escalation — with one important difference: dysesthesia (abnormal skin sensations) was reported in about 21% of participants at the 12 mg dose in TRIUMPH-4. This is unique to retatrutide and not seen with semaglutide or tirzepatide. The mechanism is thought to relate to glucagon-receptor activity.",
     node: (
       <div className="space-y-5">
         <div>
@@ -158,12 +243,12 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — most common, especially during dose escalation; affected up to 60% at 12 mg in Phase 2</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Diarrhea — affected 15–33% of users at higher doses</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Constipation — affected 11–25% of users</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Vomiting — affected 21–26% of users at higher doses</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Decreased appetite — expected effect, but can be excessive in some users</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions — mild redness or irritation in up to 8% of users</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Nausea.</span> Most common, especially during dose escalation; affected up to 60% at 12 mg in Phase 2.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Diarrhea.</span> Affected 15–33% of users at higher doses.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Constipation.</span> Affected 11–25% of users.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Vomiting.</span> Affected 21–26% of users at higher doses.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Decreased appetite.</span> Expected effect, but can be excessive in some users.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Injection site reactions.</span> Mild redness or irritation in up to 8% of users.</li>
           </ol>
         </div>
         <div>
@@ -171,10 +256,10 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Dysesthesia — abnormal skin sensations including tingling, burning, or prickling. Reported in about 21% of participants at 12 mg in TRIUMPH-4. Specific to retatrutide and not seen with semaglutide or tirzepatide.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Increased heart rate — average increase of 5–10 beats per minute, peaking around week 24 and then declining</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache and fatigue — typically mild, common in the 48–72 hours after injection</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild liver enzyme elevations — transient ALT increases in about 1% of users</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Dysesthesia.</span> Abnormal skin sensations including tingling, burning, or prickling. Reported in about 21% of participants at 12 mg in TRIUMPH-4. Specific to retatrutide and not seen with semaglutide or tirzepatide.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Increased heart rate.</span> Average increase of 5–10 beats per minute, peaking around week 24 and then declining.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Headache and fatigue.</span> Typically mild, common in the 48–72 hours after injection.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mild liver enzyme elevations.</span> Transient ALT increases in about 1% of users.</li>
           </ol>
         </div>
         <div>
@@ -182,10 +267,10 @@ const sections = [
             Serious (rare — call a doctor)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pancreatitis — about 0.4% in Phase 2 trials. Symptoms: severe abdominal pain radiating to the back, persistent vomiting, fever</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Gallbladder problems — about 1.1% in trials. Symptoms: severe pain in upper right abdomen, jaundice, fever</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — rare. Symptoms: difficulty breathing, swelling of face/throat, hives. Seek emergency care.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Heart rhythm changes — slightly more common with retatrutide (about 6% vs 3% placebo)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pancreatitis.</span> About 0.4% in Phase 2 trials. Symptoms: severe abdominal pain radiating to the back, persistent vomiting, fever.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Gallbladder problems.</span> About 1.1% in trials. Symptoms: severe pain in upper right abdomen, jaundice, fever.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Severe allergic reactions.</span> Rare. Symptoms: difficulty breathing, swelling of face/throat, hives. Seek emergency care.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Heart rhythm changes.</span> Slightly more common with retatrutide (about 6% vs 3% placebo).</li>
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -195,46 +280,24 @@ const sections = [
     ),
   },
   {
-    id: "how-to-take",
-    title: "How to Take",
-    body: [
-      "Route: Subcutaneous injection (under the skin), once weekly. Common injection sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.",
-      "Time of day: Any time, but consistent. Many users inject in the morning or before bed depending on side-effect timing.",
-      "With or without food: Either is fine.",
-      "Site rotation: Use a different site each week to reduce localized irritation. Stay at least 1 inch from previous injection sites.",
-      "Missed dose: If less than 5 days late, take as soon as remembered. If more than 5 days late, skip the missed dose and resume on the next scheduled day. Do not double-dose.",
-      "Alcohol: Avoid for at least 48 hours after injection — alcohol compounds nausea and dehydration.",
-      "Hydration: Drink water consistently. The medication blunts thirst signals, so set a daily water target rather than waiting for thirst.",
-      "Eating pattern: Small meals every 3–4 hours rather than waiting for hunger, which is suppressed. Empty-stomach nausea is the most common trigger for vomiting.",
-    ],
-  },
-  {
-    id: "stacks",
-    title: "Common Stacks",
-    body: [
-      "Standalone use — most common. Retatrutide's triple-agonist effect is strong enough that stacking with other GLP-1-class peptides is unnecessary and can compound side effects.",
-      "Metformin — commonly used together in type 2 diabetes for additive blood-sugar control. Standard practice in clinical settings.",
-      "Resistance training + adequate protein — recommended to preserve lean muscle mass during rapid weight loss. Without this, GLP-1-class drugs can cause significant muscle loss alongside fat loss.",
-      "Avoid stacking with other GLP-1 agonists (semaglutide, tirzepatide). Combining incretin-based drugs significantly increases GI side effects without proportional benefit.",
-    ],
-  },
-  {
     id: "interactions",
-    title: "Drug & Peptide Interactions",
+    title: "Does Retatrutide interact with other drugs?",
+    intro:
+      "Retatrutide has several important drug interactions, most notably with other blood-sugar-lowering medications (insulin, sulfonylureas), oral medications that depend on stomach emptying for absorption, and other GLP-1-class drugs. Alcohol compounds nausea and dehydration. The interactions below are the ones most relevant in research and clinical contexts.",
     body: [
-      "Insulin and sulfonylureas — risk of hypoglycemia (low blood sugar) increases when retatrutide is combined with insulin, glipizide, glyburide, or other blood-sugar-lowering drugs. Dose adjustment is typically needed.",
-      "Oral medications — retatrutide slows stomach emptying, which can affect the absorption of oral medications. Particularly relevant for medications with a narrow therapeutic window (warfarin, levothyroxine, certain antibiotics).",
-      "Birth control pills — slowed gastric emptying may reduce absorption. Some manufacturers recommend backup contraception during the first 4 weeks of treatment and 4 weeks after each dose increase.",
-      "GLP-1 agonists (semaglutide, tirzepatide, liraglutide) — should not be combined.",
-      "Alcohol — compounds nausea, dehydration, and hypoglycemia risk.",
+      "Insulin and sulfonylureas. Risk of hypoglycemia (low blood sugar) increases when retatrutide is combined with insulin, glipizide, glyburide, or other blood-sugar-lowering drugs. Dose adjustment is typically needed.",
+      "Oral medications. Retatrutide slows stomach emptying, which can affect the absorption of oral medications. Particularly relevant for medications with a narrow therapeutic window (warfarin, levothyroxine, certain antibiotics).",
+      "Birth control pills. Slowed gastric emptying may reduce absorption. Some manufacturers recommend backup contraception during the first 4 weeks of treatment and 4 weeks after each dose increase.",
+      "GLP-1 agonists (semaglutide, tirzepatide, liraglutide). Should not be combined.",
+      "Alcohol. Compounds nausea, dehydration, and hypoglycemia risk.",
     ],
   },
   {
     id: "storage",
-    title: "Storage & Handling",
+    title: "How should Retatrutide be stored?",
     body: [
-      "Lyophilized (powder) form: Store at 2–8°C (refrigerated). Stable for the manufacturer's stated shelf life when sealed.",
-      "Reconstituted solution: Store at 2–8°C. Most research-grade preparations are stable for 28–30 days after reconstitution; check vendor's product specifications.",
+      "Lyophilized (powder) form: Store at 2–8°C (refrigerated). Stable for the manufacturer’s stated shelf life when sealed.",
+      "Reconstituted solution: Store at 2–8°C. Most research-grade preparations are stable for 28–30 days after reconstitution; check vendor’s product specifications.",
       "Reconstitution: Use bacteriostatic water for injection (BAC water) at the volume specified by the dose calculator. Swirl gently — do not shake.",
       "Do not freeze. Freezing damages the peptide and renders it inactive.",
       "Protect from light — store in the original container or a light-protective container.",
@@ -243,11 +306,13 @@ const sections = [
   },
   {
     id: "limitations",
-    title: "Research Limitations & Regulatory Status",
+    title: "What are the limitations of Retatrutide research?",
+    intro:
+      "Retatrutide is an investigational drug, not approved by the FDA, EMA, or any major regulatory body. As of May 2026, it is in Phase 3 trials with potential approval in 2027 or 2028. Long-term safety data beyond 72 weeks does not yet exist. The dysesthesia signal at higher doses is unique to retatrutide and the safety concern being monitored most closely.",
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Retatrutide is an investigational drug and is NOT approved by the FDA, EMA, or any major regulatory body. As of May 2026, it is in Phase 3 clinical trials. Eli Lilly's Phase 3 TRIUMPH program is expected to complete additional readouts throughout 2026, with regulatory submission to the FDA targeted for late 2026 and potential approval in 2027 or 2028.
+          Retatrutide is an investigational drug and is NOT approved by the FDA, EMA, or any major regulatory body. As of May 2026, it is in Phase 3 clinical trials. Eli Lilly&rsquo;s Phase 3 TRIUMPH program is expected to complete additional readouts throughout 2026, with regulatory submission to the FDA targeted for late 2026 and potential approval in 2027 or 2028.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Long-term safety data beyond 72 weeks does not yet exist — all current trials are 48 to 68 weeks. Cardiovascular outcomes trial (TRIUMPH-3) results are not expected until 2027 or later. The dysesthesia signal observed in Phase 3 (about 21% at 12 mg) is unique to retatrutide and is being monitored closely.
@@ -260,7 +325,7 @@ const sections = [
   },
   {
     id: "faq",
-    title: "FAQ",
+    title: "Retatrutide FAQ",
     node: (
       <div className="space-y-4">
         {faqs.map((f, i) => (
@@ -386,15 +451,30 @@ export default function RetatrutidePage() {
         <span className="tag">Metabolic &amp; Weight Loss</span>
         <span className="tag">Investigational</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-8">
-        Also Known As: LY3437943, Triple Hormone Receptor Agonist, GIP/GLP-1/Glucagon Triple Agonist
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+        Last reviewed: May 17, 2026
       </p>
+      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> LY3437943, Triple Hormone Receptor Agonist, GIP/GLP-1/Glucagon Triple Agonist
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Triple Hormone Receptor Agonist (GLP-1 / GIP / Glucagon)
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Investigational — Phase 3 trials, not FDA-approved
+        </p>
+      </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
+        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Retatrutide?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Retatrutide (LY3437943) is a once-weekly injectable peptide developed by Eli Lilly that activates three metabolic receptors at once: GLP-1, GIP, and glucagon. Among the GLP-1-class research peptides, it has produced the highest published weight-reduction figures to date &mdash; averaging roughly 24% of body weight at 48 weeks in Phase 2 obesity trials. People in research and biohacking communities look to retatrutide for metabolic and weight-management research where stronger response than semaglutide or tirzepatide is the goal.
+            Retatrutide (LY3437943) is a once-weekly injectable peptide developed by Eli Lilly that activates three different hormone receptors at once: GLP-1, GIP, and glucagon. The first two are the receptors targeted by existing weight-loss drugs &mdash;{" "}
+            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>{" "}
+            (Ozempic, Wegovy) hits GLP-1;{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>{" "}
+            (Mounjaro, Zepbound) hits both GLP-1 and GIP &mdash; but retatrutide adds a third, glucagon, which boosts resting energy expenditure on top of the appetite-suppression effects shared across the class. That third receptor is the reason retatrutide has produced the largest weight losses ever recorded in a pharmacological trial: roughly 24% of body weight at 48 weeks in Phase 2 obesity research, with the weight-loss curve still declining at trial end. As of mid-2026, the drug is in Phase 3 trials under Eli Lilly&rsquo;s TRIUMPH program, with regulatory submission targeted for late 2026 and potential approval in 2027 or 2028.
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -430,6 +510,11 @@ export default function RetatrutidePage() {
             <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
+            {s.intro && (
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+                {s.intro}
+              </p>
+            )}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
@@ -465,8 +550,21 @@ export default function RetatrutidePage() {
         <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#0891b2] hover:underline">Tirzepatide</Link>
         <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide</Link>
         <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#0891b2] hover:underline">Cagrilintide</Link>
+        <Link href="/peptides/cagrisema" className="text-sm font-medium text-[#0891b2] hover:underline">CagriSema</Link>
+        <Link href="/peptides/mk-677" className="text-sm font-medium text-[#0891b2] hover:underline">MK-677</Link>
         </div>
       </div>
+
+      <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
+        <div className="flex flex-wrap gap-4">
+        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#0891b2] hover:underline">Wolverine Stack</Link>
+        <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#0891b2] hover:underline">GH Stack</Link>
+        <Link href="/peptides/glow" className="text-sm font-medium text-[#0891b2] hover:underline">GLOW</Link>
+        <Link href="/peptides/klow" className="text-sm font-medium text-[#0891b2] hover:underline">KLOW</Link>
+        </div>
+      </div>
+
       <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
