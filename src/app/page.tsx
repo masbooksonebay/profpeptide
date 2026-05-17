@@ -130,15 +130,15 @@ export default function Home() {
             <Link href="/news" className="text-xs font-medium text-[#0891b2] hover:underline">View all news &rarr;</Link>
           </div>
           <Link
-            href="/news/fda-peptide-compounding-update-april-2026"
+            href="/news/retatrutide-phase-3-update-may-2026"
             className="block border border-gray-200 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] hover:shadow-md transition-all group bg-white dark:bg-[#0f172a]"
           >
-            <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">April 16, 2026</p>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">May 11, 2026</p>
             <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#0891b2] transition-colors mb-2">
-              FDA Moves to Restore Peptide Access &mdash; What Researchers Need to Know
+              Retatrutide Phase 3 Update &mdash; Diabetes and Osteoarthritis Trials Hit Primary Endpoints
             </h3>
             <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-              The FDA posted a Federal Register notice considering lifting restrictions on seven Category 2 peptides, with an advisory panel scheduled for late July 2026. Here&rsquo;s what it means for the research community.
+              The first Phase 3 readouts from retatrutide&rsquo;s TRIUMPH and TRANSCEND-T2D programs are in. Here&rsquo;s what TRANSCEND-T2D-1 and TRIUMPH-4 showed and what comes next.
             </p>
             <span className="text-xs font-medium text-[#0891b2] mt-3 inline-block">Read more &rarr;</span>
           </Link>
