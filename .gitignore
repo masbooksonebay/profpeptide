@@ -9,3 +9,8 @@ npm-debug.log*
 .vercel
 *.tsbuildinfo
 next-env.d.ts
+
+# macOS Finder duplicates and resource forks
+* 2.*
+* [0-9].*
+._*
