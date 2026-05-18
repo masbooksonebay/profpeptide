@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -446,6 +447,28 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Retatrutide is not currently a scheduled controlled substance in the US, but it is also not approved for human use. Research-grade product is sold in a regulatory gray area, typically labeled &ldquo;for research use only, not for human consumption.&rdquo; The World Anti-Doping Agency prohibits all GLP-1-class drugs in sport. Legal status varies by country.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: "where-to-buy",
+    title: "Where can I research Retatrutide?",
+    intro:
+      "Retatrutide is investigational and not available by prescription. Research-grade product is sold by specialty peptide vendors for laboratory use only. The three vendors highlighted below carry Retatrutide and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
+    node: (
+      <div className="space-y-4">
+        <VendorHighlightBlock
+          highlights={[
+            { slug: "peptide-partners", note: "Sold as 'GLP-3 Retatrutide'" },
+            { slug: "ascension-peptides", note: "Sold as R-10 / R-30" },
+            { slug: "royal-peptides" },
+          ]}
+        />
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            See all 17 verified vendors &rarr;
+          </Link>
         </p>
       </div>
     ),
