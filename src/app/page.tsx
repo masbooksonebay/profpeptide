@@ -164,7 +164,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <span className="tag mb-4 inline-block">Why Prof. Peptide</span>
-              <h2 className="text-2xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-4">Built for researchers, not marketers</h2>
+              <h2 className="text-2xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-4">Built for researchers</h2>
               <p className="text-gray-500 dark:text-slate-400 text-sm leading-relaxed mb-5">
                 Most peptide sites exist to sell products. Prof. Peptide exists to educate. We&apos;re independent, ad-light, and committed to presenting research accurately — including limitations and unknowns.
               </p>
