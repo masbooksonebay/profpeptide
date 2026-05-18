@@ -10,9 +10,19 @@ export const metadata = buildPageMetadata({
 
 const guides = [
   {
+    href: "/guides/peptide-research-basics",
+    title: "Peptide Research Basics",
+    desc: "What research peptides are, how they signal at the receptor level, why doses are measured in micrograms, and what quality testing actually verifies.",
+    topic: "Foundations",
+    audience: "New to peptides",
+    readingTime: "10–12 min",
+  },
+  {
     href: "/guides/syringes-and-injection",
     title: "Insulin Syringes and Injection Technique",
     desc: "A practical guide to reading insulin syringes, choosing the right size, and injecting research peptides correctly.",
+    topic: "Hands-on technique",
+    audience: "New to peptide injection",
     readingTime: "8–10 min",
   },
 ];
@@ -38,7 +48,13 @@ export default function GuidesIndexPage() {
               <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100">{g.title}</h2>
               <span className="text-xs text-gray-500 dark:text-slate-400 whitespace-nowrap">{g.readingTime}</span>
             </div>
-            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mt-1">{g.desc}</p>
+            <div className="flex flex-wrap items-center gap-2 mt-2">
+              <span className="tag">{g.topic}</span>
+              <span className="text-xs bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400 px-2.5 py-1 rounded-full">
+                {g.audience}
+              </span>
+            </div>
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mt-3">{g.desc}</p>
           </Link>
         ))}
       </div>
