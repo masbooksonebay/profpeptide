@@ -179,16 +179,143 @@ const sections = [
     title: "How is Retatrutide administered?",
     intro:
       "Retatrutide is given as a subcutaneous injection — under the skin, not into muscle — once weekly, using a small insulin syringe. The injection routine, timing, and supporting habits (hydration, eating pattern, alcohol management) matter as much as the dose for tolerability. The points below cover the practical details that experienced users converge on.",
-    body: [
-      "Route. Subcutaneous injection, once weekly. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.",
-      "Time of day. Any time, but consistent. Many users inject in the morning or before bed depending on side-effect timing.",
-      "With or without food. Either is fine.",
-      "Site rotation. Use a different site each week to reduce localized irritation. Stay at least 1 inch from previous injection sites.",
-      "Missed dose. If less than 5 days late, take as soon as remembered. If more than 5 days late, skip the missed dose and resume on the next scheduled day. Do not double-dose.",
-      "Alcohol. Avoid for at least 48 hours after injection — alcohol compounds nausea and dehydration.",
-      "Hydration. Drink water consistently. The medication blunts thirst signals, so set a daily water target rather than waiting for thirst.",
-      "Eating pattern. Small meals every 3–4 hours rather than waiting for hunger, which is suppressed. Empty-stomach nausea is the most common trigger for vomiting.",
-    ],
+    node: (
+      <div className="space-y-4">
+        <ol className="list-decimal list-inside space-y-1">
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection, once weekly. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Any time, but consistent. Many users inject in the morning or before bed depending on side-effect timing.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each week to reduce localized irritation. Stay at least 1 inch from previous injection sites.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> If less than 5 days late, take as soon as remembered. If more than 5 days late, skip the missed dose and resume on the next scheduled day. Do not double-dose.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Avoid for at least 48 hours after injection — alcohol compounds nausea and dehydration.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hydration.</span> Drink water consistently. The medication blunts thirst signals, so set a daily water target rather than waiting for thirst.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Eating pattern.</span> Small meals every 3–4 hours rather than waiting for hunger, which is suppressed. Empty-stomach nausea is the most common trigger for vomiting.</li>
+        </ol>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Timing context.</span> Retatrutide is administered once weekly via subcutaneous injection. Unlike short-acting GH-axis peptides, Retatrutide does not require empty-stomach administration — its long half-life produces steady-state receptor activation independent of meal timing. The two timing variables that matter most are weekly consistency (same day each week supports stable plasma levels) and time of day (many researchers inject in the evening to sleep through peak GI side effects, especially during titration).
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Frequency</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Once weekly, same day each week</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Best time of day</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Evening often preferred — sleep through peak GI side effects (especially during titration)</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Food</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">No fasting required; inject with or without food</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Injection site rotation</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Rotate between abdomen, thigh, upper arm — avoid same site twice within 2 weeks</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0 pt-2">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Week</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Typical dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Notes</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">1–4</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">0.5–1 mg weekly</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Initial titration; assess GI tolerance</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">5–8</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">2 mg weekly</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">First dose increase if titration is tolerated</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">9–12</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">4 mg weekly</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Second escalation</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">13+</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">6–12 mg weekly</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Maintenance, dose-dependent on protocol goal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 dark:text-slate-400 italic leading-relaxed">
+          *Phase 3 trial doses ranged 1–12 mg weekly. Lower doses (1–4 mg) targeted weight reduction in obesity studies; higher doses (8–12 mg) were used in maximum-effect arms. Titrate slowly to manage GI side effects.
+        </p>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Reconstitution math.</span> Choose your bacteriostatic water volume based on dose precision. Lower water volume = higher concentration = smaller syringe draw. The standard convention is 2 mL for most peptides because it gives whole-number unit math; for Retatrutide, 1 mL is often preferred because higher dose tiers (4–8 mg) require larger draws that would exceed insulin syringe capacity at lower concentrations. All units below are measured on a U-100 insulin syringe (100 units = 1 mL). The table below assumes a 10 mg vial — adjust proportionally for 5 mg or 20 mg vials.
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">1 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">2 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">4 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">8 mg dose</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">1 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">20 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">40 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">80 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">2 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">5 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">20 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">40 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">80 units</td>
+                <td className="px-4 py-3 text-gray-500 dark:text-slate-500 whitespace-nowrap italic">n/a*</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">3 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">3.33 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">30 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">60 units</td>
+                <td className="px-4 py-3 text-gray-500 dark:text-slate-500 whitespace-nowrap italic">n/a*</td>
+                <td className="px-4 py-3 text-gray-500 dark:text-slate-500 whitespace-nowrap italic">n/a*</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 dark:text-slate-400 italic leading-relaxed">
+          *Draw exceeds standard 100-unit insulin syringe capacity at this reconstitution volume — would require split injections or a different reconstitution volume.
+        </p>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Units vs mcg.</span> Each unit drawn delivers 100 mcg of Retatrutide at 1 mL reconstitution, 50 mcg at 2 mL, and 33 mcg at 3 mL — the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
+          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+        </p>
+      </div>
+    ),
   },
   {
     id: "stacks",
