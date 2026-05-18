@@ -39,12 +39,13 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/peptide-partners",
       },
       {
-        name: "Spartan Peptides",
-        url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
+        name: "EZ Peptides",
+        url: "https://ezpeptides.com/?ref=nldbbgvs",
         code: "PROFPEPTIDE",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/spartan-peptides",
+        editorsPick: true,
+        detailPage: "/coupons/ez-peptides",
       },
     ],
   },
@@ -61,14 +62,6 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/ascension-peptides",
       },
       {
-        name: "Almighty Peptides",
-        url: "https://www.almightypeptides.com/?sld=profpeptide",
-        code: "PROFPEPTIDE",
-        discount: "20% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/almighty-peptides",
-      },
-      {
         name: "Vital Core Research",
         url: "https://vitalcoreresearch.com/?ref=nbwnvhnu",
         code: "PROFPEPTIDE",
@@ -82,6 +75,14 @@ const sections: VendorSection[] = [
     // US Vendors — keep alphabetical order when adding new vendors
     label: "US Vendors",
     vendors: [
+      {
+        name: "Almighty Peptides",
+        url: "https://www.almightypeptides.com/?sld=profpeptide",
+        code: "PROFPEPTIDE",
+        discount: "20% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/almighty-peptides",
+      },
       {
         name: "Apollo Peptide Sciences",
         url: "https://apollopeptidesciences.com/?rfsn=8846124.8bdc49",
@@ -105,14 +106,6 @@ const sections: VendorSection[] = [
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/biocollex",
-      },
-      {
-        name: "EZ Peptides",
-        url: "https://ezpeptides.com/?ref=nldbbgvs",
-        code: "PROFPEPTIDE",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/ez-peptides",
       },
       {
         name: "Fusion Peptide",
@@ -169,6 +162,14 @@ const sections: VendorSection[] = [
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/royal-peptides",
+      },
+      {
+        name: "Spartan Peptides",
+        url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/spartan-peptides",
       },
     ],
   },
