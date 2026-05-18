@@ -39,6 +39,7 @@
         { "slug": "ascension-peptides", "note": "Sold as C-10" },
         { "slug": "behemoth-labz", "note": null },
         { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "purerawz", "note": "Sold as 'AM833'" },
         { "slug": "royal-peptides", "note": null },
         { "slug": "spartan-peptides", "note": null },
         { "slug": "vital-core-research", "note": null }
@@ -349,6 +350,7 @@
         { "slug": "ez-peptides", "note": null },
         { "slug": "ignite-peptides", "note": null },
         { "slug": "oasis-labs", "note": null },
+        { "slug": "peptide-partners", "note": "Sold as 'GLP-2 Tirzepatide'" },
         { "slug": "purerawz", "note": null },
         { "slug": "royal-peptides", "note": null },
         { "slug": "spartan-peptides", "note": null },
