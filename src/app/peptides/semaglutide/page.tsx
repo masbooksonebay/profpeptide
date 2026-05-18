@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -292,6 +293,28 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade semaglutide sold by specialty peptide vendors is intended for laboratory research use only and is not approved for human consumption. The World Anti-Doping Agency prohibits semaglutide and other GLP-class drugs in sport. Pricing varies by formulation and insurance coverage; brand-name retail in the US runs roughly $1,000–$1,400 per month without insurance.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: "where-to-buy",
+    title: "Where can I research Semaglutide?",
+    intro:
+      "Semaglutide is sold by prescription as Ozempic, Wegovy, and Rybelsus. Research-grade product is also sold by specialty peptide vendors for laboratory use only. The three vendors highlighted below carry Semaglutide and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
+    node: (
+      <div className="space-y-4">
+        <VendorHighlightBlock
+          highlights={[
+            { slug: "peptide-partners" },
+            { slug: "ascension-peptides", note: "Sold as S-5" },
+            { slug: "vital-core-research" },
+          ]}
+        />
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            See all 17 verified vendors &rarr;
+          </Link>
         </p>
       </div>
     ),

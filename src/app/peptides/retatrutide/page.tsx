@@ -462,7 +462,7 @@ const sections = [
           highlights={[
             { slug: "peptide-partners", note: "Sold as 'GLP-3 Retatrutide'" },
             { slug: "ascension-peptides", note: "Sold as R-10 / R-30" },
-            { slug: "royal-peptides" },
+            { slug: "vital-core-research" },
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
