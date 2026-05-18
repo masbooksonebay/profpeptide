@@ -280,7 +280,7 @@ const sections = [
   },
   {
     id: "where-to-buy",
-    title: "Where can I research Tirzepatide?",
+    title: "Where to source Tirzepatide",
     intro:
       "Tirzepatide is sold by prescription as Mounjaro and Zepbound. Research-grade product is also sold by specialty peptide vendors for laboratory use only. The three vendors highlighted below carry Tirzepatide and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (

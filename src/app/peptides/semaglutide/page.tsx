@@ -299,7 +299,7 @@ const sections = [
   },
   {
     id: "where-to-buy",
-    title: "Where can I research Semaglutide?",
+    title: "Where to source Semaglutide",
     intro:
       "Semaglutide is sold by prescription as Ozempic, Wegovy, and Rybelsus. Research-grade product is also sold by specialty peptide vendors for laboratory use only. The three vendors highlighted below carry Semaglutide and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (

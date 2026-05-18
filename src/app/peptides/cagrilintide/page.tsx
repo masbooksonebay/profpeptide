@@ -269,7 +269,7 @@ const sections = [
   },
   {
     id: "where-to-buy",
-    title: "Where can I research Cagrilintide?",
+    title: "Where to source Cagrilintide",
     intro:
       "Cagrilintide is investigational and not available by prescription. Research-grade product is sold by specialty peptide vendors for laboratory use only. The three vendors highlighted below carry Cagrilintide and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
