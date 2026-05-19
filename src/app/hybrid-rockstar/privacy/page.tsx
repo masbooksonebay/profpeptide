@@ -66,9 +66,11 @@ export default function HybridRockstarPrivacyPage() {
             Strength Cycle Studios, LLC<br />
             9712 Ashbourn Drive<br />
             Burke, VA 22015<br />
-            Email: <a href="mailto:strengthcyclestudios@gmail.com" className="text-[#0891b2] hover:underline">strengthcyclestudios@gmail.com</a>
+            Email: <a href="mailto:support@hybridrockstar.app" className="text-[#0891b2] hover:underline">support@hybridrockstar.app</a>
           </p>
         </section>
+
+        <p className="text-xs text-gray-400 dark:text-slate-500 pt-6 border-t border-gray-100 dark:border-slate-800">&copy; 2026 Strength Cycle Studios, LLC</p>
       </div>
     </div>
   );
