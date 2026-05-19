@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -198,9 +199,6 @@ const sections = [
             <span className="font-semibold">CJC-1295 form matters.</span> Pre-blended GH Stack products almost always contain CJC-1295 <span className="font-semibold">without DAC</span>. The reason: CJC-1295 with DAC has a 6–8 day half-life that doesn&apos;t fit a daily-blend pattern, while no-DAC&apos;s 30-minute half-life synchronizes well with Ipamorelin&apos;s ~2-hour half-life for daily pulsatile dosing. If a pre-blend label says &ldquo;CJC-1295 DAC,&rdquo; verify with the vendor — most are no-DAC despite ambiguous labeling.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-            <span className="font-semibold">Reconstitution math.</span> Treat the combined 10 mg as the vial size in the dosing calculator. Reconstitute with 2 mL bacteriostatic water for a 5 mg/mL blend. A 0.04 mL draw (4 units on a U-100 insulin syringe) delivers 100 mcg of each peptide. A 0.1 mL draw delivers 250 mcg of each.
-          </p>
-          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
             <span className="font-semibold">Ratio variants.</span> Some vendors offer non-1:1 blends (for example, 5 mg CJC-1295 + 2 mg Ipamorelin). The 1:1 ratio is the most common and is the default for daily pulsatile dosing.
           </p>
         </div>
@@ -219,15 +217,119 @@ const sections = [
     title: "How is the GH Stack administered?",
     intro:
       "The GH Stack is administered by subcutaneous injection using a small insulin syringe. Pre-bed dosing on an empty stomach is the standard research protocol because it synchronizes with the body's natural overnight GH pulse. Some protocols add a second daily dose post-workout or upon waking.",
-    body: [
-      "Route. Subcutaneous injection. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.",
-      "Time of day. Pre-bed is the default — 30–60 minutes before sleep. Some protocols add a second dose post-workout or upon waking.",
-      "Empty stomach. At least 2 hours after the last meal. Elevated insulin and somatostatin blunt the GH response — this is the most important timing rule for the GH Stack.",
-      "Site rotation. Alternate sites each injection. Stay at least 1 inch from previous injection sites.",
-      "Missed dose. Resume on the next scheduled dose. Do not double-dose. For weekly CJC-1295 with DAC, shift the next dose by 1–2 days if needed.",
-      "Reconstitution. Use bacteriostatic water for injection (BAC water) at the volume specified by the dosing calculator. Swirl gently — do not shake — to avoid damaging the peptides.",
-      "Cycling. 8–12 weeks on, 4-week minimum break. Cycling avoids pituitary receptor desensitization and preserves GH-axis responsiveness.",
-    ],
+    node: (
+      <div className="space-y-4">
+        <ol className="list-decimal list-inside space-y-1">
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Pre-bed is the default &mdash; 30&ndash;60 minutes before sleep. Some protocols add a second dose post-workout or upon waking.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Empty stomach.</span> At least 2 hours after the last meal. Elevated insulin and somatostatin blunt the GH response &mdash; this is the most important timing rule for the GH Stack.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Alternate sites each injection. Stay at least 1 inch from previous injection sites.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Resume on the next scheduled dose. Do not double-dose. For weekly CJC-1295 with DAC, shift the next dose by 1&ndash;2 days if needed.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution.</span> Use bacteriostatic water for injection (BAC water) at the volume specified by the dosing calculator. Swirl gently &mdash; do not shake &mdash; to avoid damaging the peptides.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycling.</span> 8&ndash;12 weeks on, 4-week minimum break. Cycling avoids pituitary receptor desensitization and preserves GH-axis responsiveness.</li>
+        </ol>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Timing context.</span> The GH Stack is dosed to reinforce the body&rsquo;s own growth-hormone pulses &mdash; pre-bed, on an empty stomach, is the canonical protocol. Unlike the once-weekly GLP-class peptides, the no-DAC blend is short-acting and timing-sensitive: insulin and somatostatin from a recent meal will blunt the GH response. The table below summarizes the timing variables that most affect the result.
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Frequency</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">1&ndash;3&times; daily (no-DAC + Ipa) or 1&times; weekly CJC-DAC + 1&times; daily Ipa</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Best time of day</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Pre-bed (30&ndash;60 min before sleep); optional second dose post-workout or upon waking</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Food</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Empty stomach, 2+ hours after last meal (insulin + somatostatin blunt GH response)</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Injection site rotation</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Abdomen (avoid 2-inch radius around navel), upper outer thighs, back of upper arms &mdash; alternate per injection</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Half-life</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">CJC-1295 no-DAC ~30 min; Ipamorelin ~2 hours; CJC-1295 with DAC ~6&ndash;8 days</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Steady-state</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Sleep quality 1&ndash;2 weeks; recovery 4&ndash;8 weeks; body composition 12&ndash;24 weeks</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Reconstitution math.</span> The table below assumes the canonical pre-blended 10 mg vial &mdash; 5 mg CJC-1295 (no-DAC) + 5 mg Ipamorelin at a 1:1 ratio. Because the ratio is 1:1, every drawn unit delivers an equal dose of both peptides. Pick a bacteriostatic water volume, then read the syringe units for your target per-peptide dose. All draws are measured on a U-100 insulin syringe (100 units = 1 mL).
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration (each)</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">100 / 100 mcg</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">150 / 150</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">200 / 200</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">250 / 250</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">300 / 300</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">1 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">5 mg/mL each</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">2 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">3 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">4 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">5 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">6 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">2 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">2.5 mg/mL each</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">4 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">6 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">8 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">12 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">3 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">1.67 mg/mL each</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">6 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">9 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">12 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">15 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">18 units</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 dark:text-slate-400 italic leading-relaxed">
+          For non-1:1 ratio blends (e.g., 5 mg CJC + 2 mg Ipa) or different vial totals, per-peptide math diverges &mdash; use the{" "}
+          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator</Link>{" "}
+          for ratio-specific math.
+        </p>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Units vs mcg.</span> The table above reads in insulin-syringe units &mdash; on a U-100 syringe, 1 unit = 0.01 mL. Because the GH Stack is a 1:1 blend, each drawn unit delivers the same mcg of both CJC-1295 and Ipamorelin: 50 mcg of each per unit at 1 mL reconstitution, 25 mcg at 2 mL, and ~16.7 mcg at 3 mL. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
+          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+        </p>
+      </div>
+    ),
   },
   {
     id: "stacks",
@@ -371,6 +473,27 @@ const sections = [
     ),
   },
   {
+    id: "where-to-buy",
+    title: "Where to source GH Stack",
+    intro:
+      "The GH Stack is not FDA-approved and is sold by specialty peptide vendors for laboratory research use only — pre-blended as a fixed CJC-1295 + Ipamorelin vial, or as separate components. The vendors highlighted below carry a pre-blended GH Stack and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
+    node: (
+      <div className="space-y-4">
+        <VendorHighlightBlock
+          highlights={[
+            { slug: "peptide-partners" },
+            { slug: "spartan-peptides", note: "Spartan Strong pre-formulated blend" },
+          ]}
+        />
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            See all 17 verified vendors &rarr;
+          </Link>
+        </p>
+      </div>
+    ),
+  },
+  {
     id: "faq",
     title: "GH Stack FAQ",
     node: (
@@ -496,6 +619,10 @@ export default function GHStackPage() {
             <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
             (a selective GHRP). Activating both the GHRH receptor and the ghrelin / GHS-R1a receptor on pituitary somatotrophs at the same time produces supra-additive growth hormone release — 2–4× greater than either compound alone — while preserving the physiological pulsatile pattern of natural GH secretion. The stack is the most popular GH secretagogue blend in the research-grade market, and Ipamorelin's selectivity (no cortisol, ACTH, prolactin, or appetite spike) is the reason this particular combination became dominant over older GHRH/GHRP pairings.
           </p>
+          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+            New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+          </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               Reported benefits:
@@ -572,6 +699,12 @@ export default function GHStackPage() {
         <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Sermorelin</Link>
         <Link href="/peptides/tesamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Tesamorelin</Link>
         <Link href="/peptides/mk-677" className="text-sm font-medium text-[#0891b2] hover:underline">MK-677</Link>
+        </div>
+      </div>
+      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
+        <div className="flex flex-wrap gap-4">
+        <Link href="/compare/cjc-1295-vs-sermorelin-vs-ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">CJC-1295 vs Sermorelin vs Ipamorelin &rarr;</Link>
         </div>
       </div>
 
