@@ -47,6 +47,14 @@ const sections: VendorSection[] = [
         editorsPick: true,
         detailPage: "/coupons/ez-peptides",
       },
+      {
+        name: "Glacier Aminos",
+        url: "https://glacieraminos.shop/?ref=cknlhxrm",
+        code: "PROF10",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        editorsPick: true,
+      },
     ],
   },
   {
