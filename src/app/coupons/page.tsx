@@ -73,7 +73,7 @@ const sections: VendorSection[] = [
       {
         name: "Vital Core Research",
         url: "https://vitalcoreresearch.com/?ref=nbwnvhnu",
-        code: "PROFPEPTIDE",
+        code: "PROF20",
         discount: "20% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/vital-core-research",

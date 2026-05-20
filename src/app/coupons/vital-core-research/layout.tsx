@@ -4,13 +4,13 @@ export const metadata = buildPageMetadata({
   path: "/coupons/vital-core-research",
   title: "Vital Core Research Discount Code (May 2026) — Save 20% | Prof. Peptide",
   description:
-    "Use Vital Core Research discount code PROFPEPTIDE to save 20%. 56 compounds including GLP-1/2/3, SARMs, peptide blends, and capsule formats. COA on every product page.",
+    "Use Vital Core Research discount code PROF20 to save 20%. 56 compounds including GLP-1/2/3, SARMs, peptide blends, and capsule formats. COA on every product page.",
 });
 
 export default function VitalCoreResearchLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Vital Core Research Discount Code - Save 20%\",\"description\":\"Use code PROFPEPTIDE for 20% off at Vital Core Research\",\"url\":\"https://profpeptide.com/coupons/vital-core-research\",\"validFrom\":\"2026-05-01\",\"priceValidUntil\":\"2026-05-31\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Vital Core Research\"}}" }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Vital Core Research Discount Code - Save 20%\",\"description\":\"Use code PROF20 for 20% off at Vital Core Research\",\"url\":\"https://profpeptide.com/coupons/vital-core-research\",\"validFrom\":\"2026-05-01\",\"priceValidUntil\":\"2026-05-31\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Vital Core Research\"}}" }} />
       {children}
     </>
   );

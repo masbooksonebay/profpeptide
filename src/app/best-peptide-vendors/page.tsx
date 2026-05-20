@@ -104,7 +104,7 @@ const vendors: HubVendor[] = [
     name: "Vital Core Research",
     slug: "vital-core-research",
     url: "https://vitalcoreresearch.com/?ref=nbwnvhnu",
-    code: "PROFPEPTIDE",
+    code: "PROF20",
     discount: "20% off",
     description:
       "US research compound supplier with 20% off via our code. Straightforward catalog with COA availability and responsive fulfillment.",

@@ -151,7 +151,7 @@ export const vendors: Record<string, Vendor> = {
   },
   "vital-core-research": {
     name: "Vital Core Research",
-    code: "PROFPEPTIDE",
+    code: "PROF20",
     discount: "20% off",
     region: "US",
     url: "https://vitalcoreresearch.com/?ref=nbwnvhnu",
