@@ -19,6 +19,13 @@ export const metadata = {
 
 const articles = [
   {
+    title: "Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial",
+    slug: "retatrutide-triumph-1-phase-3-results",
+    date: "May 21, 2026",
+    excerpt:
+      "Eli Lilly\u2019s investigational triple agonist retatrutide produced 30.3% average weight loss at 104 weeks in the pivotal TRIUMPH-1 Phase 3 trial \u2014 comparable to bariatric surgery outcomes. Here\u2019s the full breakdown of the topline data and what comes next.",
+  },
+  {
     title: "ECO2026 Recap \u2014 Oral GLP-1 Data from Novo, Lilly, and Viking",
     slug: "eco2026-oral-glp1-recap-may-2026",
     date: "May 17, 2026",

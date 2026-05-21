@@ -616,6 +616,13 @@ export default function RetatrutidePage() {
         </p>
       </div>
 
+      <div className="mb-8 p-4 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Latest research:</span> Phase 3 TRIUMPH-1 results released May 21, 2026 &mdash; 30.3% average weight loss at 104 weeks, comparable to bariatric surgery outcomes.{" "}
+          <Link href="/news/retatrutide-triumph-1-phase-3-results" className="text-[#0891b2] hover:underline">Read the full breakdown &rarr;</Link>
+        </p>
+      </div>
+
       <div id="overview" className="scroll-mt-20">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Retatrutide?</h2>
         <div className="space-y-4">

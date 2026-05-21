@@ -130,15 +130,15 @@ export default function Home() {
             <Link href="/news" className="text-xs font-medium text-[#0891b2] hover:underline">View all news &rarr;</Link>
           </div>
           <Link
-            href="/news/eco2026-oral-glp1-recap-may-2026"
+            href="/news/retatrutide-triumph-1-phase-3-results"
             className="block border border-gray-200 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] hover:shadow-md transition-all group bg-white dark:bg-[#0f172a]"
           >
-            <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">May 17, 2026</p>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">May 21, 2026</p>
             <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#0891b2] transition-colors mb-2">
-              ECO2026 Recap &mdash; Oral GLP-1 Data from Novo, Lilly, and Viking
+              Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial
             </h3>
             <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-              The European Congress on Obesity (ECO2026) ran May 12-15 in Istanbul. Novo Nordisk, Eli Lilly, and Viking Therapeutics each presented new oral GLP-1 data &mdash; including a Wegovy pill sub-analysis showing 21.6% weight loss in early responders, Lilly&rsquo;s maintenance trial results, and Viking&rsquo;s Phase 2 VK2735 readout. Here&rsquo;s what the data showed and why it matters.
+              Eli Lilly&rsquo;s investigational triple agonist retatrutide produced 30.3% average weight loss at 104 weeks in the pivotal TRIUMPH-1 Phase 3 trial &mdash; comparable to bariatric surgery outcomes. The 12 mg dose hit 28.3% at 80 weeks, and analysts now project a 2027 FDA approval decision.
             </p>
             <span className="text-xs font-medium text-[#0891b2] mt-3 inline-block">Read more &rarr;</span>
           </Link>
