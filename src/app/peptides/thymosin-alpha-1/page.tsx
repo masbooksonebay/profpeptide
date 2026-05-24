@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/thymosin-alpha-1",
-  title: "Thymosin Alpha-1 — Immune Modulator, Zadaxin | Prof. Peptide",
+  title: "Thymosin Alpha-1 — Immune Modulator, Zadaxin, Dosage | Prof. Peptide",
   description:
-    "Thymosin Alpha-1 (Zadaxin) research profile: T-cell maturation mechanism, hepatitis approval, dosing protocol, side effects, and immune modulation.",
+    "Thymosin Alpha-1 (Zadaxin) research profile: T-cell maturation mechanism, hepatitis approval, dosing protocol, side effects, FAQ, and immune modulation.",
 });
 
 const faqs = [
@@ -19,7 +20,13 @@ const faqs = [
   },
   {
     q: "How is Thymosin Alpha-1 different from TB-500 / Thymosin Beta-4?",
-    a: "Different molecules with different mechanisms despite the related name. Thymosin Alpha-1 is a 28-amino-acid peptide that promotes T-cell maturation and activates innate immunity through TLR2/TLR9. Thymosin Beta-4 (TB-500) is a 43-amino-acid actin-binding peptide that drives cellular migration and tissue repair. They share a name but address completely different biological problems — Thymosin Alpha-1 for immune support, TB-500 for tissue repair.",
+    a: (
+      <>
+        Different molecules with different mechanisms despite the related name. Thymosin Alpha-1 is a 28-amino-acid peptide that promotes T-cell maturation and activates innate immunity through TLR2/TLR9.{" "}
+        <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">Thymosin Beta-4 (TB-500)</Link>{" "}
+        is a 43-amino-acid actin-binding peptide that drives cellular migration and tissue repair. They share a name but address completely different biological problems &mdash; Thymosin Alpha-1 for immune support, TB-500 for tissue repair.
+      </>
+    ),
   },
   {
     q: "What is Zadaxin?",
@@ -45,7 +52,7 @@ const faqs = [
     q: "Where can I buy Thymosin Alpha-1?",
     a: (
       <>
-        Outside the US, Zadaxin is available by prescription in 35+ countries. In the US, Thymosin Alpha-1 is sold as a research-grade peptide by specialty vendors. PP maintains a list of vetted vendors with verified discount codes — see{" "}
+        Outside the US, Zadaxin is available by prescription in 35+ countries. In the US, Thymosin Alpha-1 is sold as a research-grade peptide by specialty vendors. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
         <Link href="/coupons" className="text-[#0891b2] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
@@ -63,7 +70,7 @@ const studies = [
     year: "2020",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7747025/",
-    summary: "The most comprehensive English-language review of Thymosin Alpha-1, covering its biology, mechanisms, and clinical applications across multiple disease states. The review documents FDA orphan drug approval for thymalfasin for malignant melanoma, chronic active hepatitis B, DiGeorge anomaly with immune defects, and hepatocellular carcinoma. It covers clinical trials across DiGeorge syndrome, non-small cell lung cancer, hepatocellular carcinoma, hepatitis B and C, HIV, and melanoma — all yielding promising results. The paper also discusses Tα1's potential role in COVID-19, noting that its ability to repair immunological damage from T-cell overactivation could be beneficial in severe cases. Safety profile is described as excellent, with only mild injection-site reactions as common adverse effects.",
+    summary: "The most comprehensive English-language review of Thymosin Alpha-1, covering its biology, mechanisms, and clinical applications across multiple disease states. The review documents FDA orphan drug approval for thymalfasin for malignant melanoma, chronic active hepatitis B, DiGeorge anomaly with immune defects, and hepatocellular carcinoma.",
   },
   {
     title: "Thymosin Alpha-1 and Its Role in Viral Infectious Diseases — Mechanism and Clinical Application",
@@ -72,7 +79,7 @@ const studies = [
     year: "2023",
     access: "Open Access",
     url: "https://www.mdpi.com/1420-3049/28/8/3539",
-    summary: "A mechanistic deep-dive into how Thymosin Alpha-1 enhances immune responses against viral infections. The paper documents Tα1's interaction with Toll-like receptors (TLR3, TLR4, TLR7, TLR9) — pattern recognition receptors that detect viral and bacterial signatures. Through TLR binding, Tα1 activates downstream IRF3 and NF-κB pathways, promoting proliferation and activation of T cells, B cells, macrophages, and natural killer cells. This dual innate and adaptive immune activation explains Tα1's effectiveness across multiple viral infections — it doesn't target one virus, it enhances the immune system's own detection and response machinery, making it broadly applicable across hepatitis B, hepatitis C, HIV, and respiratory viral infections.",
+    summary: "A mechanistic deep-dive into how Thymosin Alpha-1 enhances immune responses against viral infections. The paper documents Tα1's interaction with Toll-like receptors (TLR3, TLR4, TLR7, TLR9) — activating downstream IRF3 and NF-κB pathways, promoting proliferation and activation of T cells, B cells, macrophages, and natural killer cells.",
   },
   {
     title: "Thymosin Alpha-1 in Cancer Therapy — Immunoregulation and Potential Applications",
@@ -81,7 +88,7 @@ const studies = [
     year: "2023",
     access: "Paywalled",
     url: "https://www.sciencedirect.com/science/article/abs/pii/S156757692300067X",
-    summary: "A 2023 review documenting Tα1's emerging role in cancer immunotherapy — particularly its potential synergy with immune checkpoint inhibitors (ICIs). The paper reviews Tα1's pleiotropic effects on immune cells through TLR activation and covers clinical data in melanoma, non-small cell lung cancer, and hepatocellular carcinoma. Most notably it documents preclinical evidence that Tα1 can convert “cold tumors” (those that don't respond to immunotherapy) into “hot tumors” by reversing macrophage polarization — a mechanism that could meaningfully enhance the efficacy of checkpoint inhibitors like pembrolizumab. Given ICI's relatively low response rates and the safety limitations of escalating doses, Tα1's exceptional safety profile makes it a compelling adjunct candidate.",
+    summary: "A 2023 review documenting Tα1's emerging role in cancer immunotherapy — particularly its potential synergy with immune checkpoint inhibitors (ICIs). Preclinical evidence that Tα1 can convert 'cold tumors' into 'hot tumors' by reversing macrophage polarization, which could meaningfully enhance the efficacy of checkpoint inhibitors.",
   },
   {
     title: "Thymosin Alpha-1 — Reimagine Its Broader Applications in the Immuno-Oncology Era",
@@ -90,7 +97,7 @@ const studies = [
     year: "2023",
     access: "Open Access",
     url: "https://pubmed.ncbi.nlm.nih.gov/36871535/",
-    summary: "A forward-looking clinical review examining Tα1's emerging role in modern oncology. The paper documents that Tα1 significantly improved overall survival in surgically resectable non-small cell lung cancer and liver cancer patients in the adjuvant setting. For locally advanced unresectable NSCLC, it significantly reduced chemoradiation-induced lymphopenia and pneumonia — two of the most common and serious complications of radiation-based cancer treatment. The review makes a compelling case for Tα1 as an adjunct to standard cancer therapies, particularly in immunocompromised patients where immune support during aggressive treatment could be the difference between completing a full treatment course and suffering dose-limiting toxicity.",
+    summary: "A clinical review documenting Tα1's emerging role in modern oncology. The paper documents that Tα1 significantly improved overall survival in surgically resectable non-small cell lung cancer and liver cancer patients. For locally advanced unresectable NSCLC, it significantly reduced chemoradiation-induced lymphopenia and pneumonia.",
   },
   {
     title: "Aging and Thymosin Alpha-1 — Immunosenescence and Therapeutic Potential",
@@ -99,53 +106,58 @@ const studies = [
     year: "2025",
     access: "Open Access",
     url: "https://www.mdpi.com/1422-0067/26/23/11470",
-    summary: "A 2025 review examining Tα1's potential role in combating age-related immune decline (immunosenescence). As the thymus involutes with age — shrinking and losing function — T-cell production declines, chronic inflammation increases, and susceptibility to infections and cancer rises. Tα1 directly addresses this by stimulating T-cell differentiation, enhancing thymic output, and modulating dendritic cell and macrophage activity. Clinical studies show Tα1 can improve vaccine responses in elderly populations and mitigate immunosenescence markers. The review also covers a promising fusion protein (Refnot) combining Tα1 with TNFα that shows enhanced antitumor activity with dramatically reduced toxicity — representing a next-generation development of the Tα1 platform.",
+    summary: "A 2025 review examining Tα1's potential role in combating age-related immune decline (immunosenescence). Clinical studies show Tα1 can improve vaccine responses in elderly populations and mitigate immunosenescence markers. The review also covers a promising fusion protein (Refnot) combining Tα1 with TNFα that shows enhanced antitumor activity with reduced toxicity.",
   },
 ];
 
 const sections = [
   {
     id: "mechanism",
-    title: "Mechanism of Action",
+    title: "How does Thymosin Alpha-1 work?",
+    intro:
+      "Thymosin Alpha-1 promotes T-cell maturation in the thymus and activates innate immunity through Toll-like receptor binding (TLR2, TLR9). It modulates Th1/Th2 balance (favoring cellular anti-viral immunity), enhances natural killer cell cytotoxicity, and does all this WITHOUT generalized immunosuppression — it modulates rather than suppresses, which is what makes it useful in immunocompromised states without infection risk.",
     body: [
-      "T-Cell Maturation [1] — Thymosin Alpha-1 promotes maturation of pre-T cells in the thymus into functional CD4+ and CD8+ T-cells. Critical for adaptive immune response, particularly in immunocompromised states.",
-      "Toll-Like Receptor Activation [2] — Activates TLR2 and TLR9 on dendritic cells, enhancing innate immune response and bridging to adaptive immunity. This is part of the mechanism behind antifungal Th1 resistance.",
-      "Th1/Th2 Balance Modulation [3] — Promotes Th1 responses (cellular immunity, anti-viral) while modulating Th2 (humoral immunity, allergic). Useful for chronic viral infections where Th1 response is impaired.",
-      "Natural Killer Cell Function — Enhances NK cell cytotoxic activity. Important for early viral control and cancer surveillance.",
-      "Without Generalized Immunosuppression [4] — Unlike traditional immunosuppressants, Thymosin Alpha-1 modulates rather than suppresses immune function. This balanced effect allows use in autoimmune contexts without infection risk.",
+      "T-Cell Maturation [1]. Thymosin Alpha-1 promotes maturation of pre-T cells in the thymus into functional CD4+ and CD8+ T-cells. Critical for adaptive immune response, particularly in immunocompromised states.",
+      "Toll-Like Receptor Activation [2]. Activates TLR2 and TLR9 on dendritic cells, enhancing innate immune response and bridging to adaptive immunity. This is part of the mechanism behind antifungal Th1 resistance.",
+      "Th1/Th2 Balance Modulation [3]. Promotes Th1 responses (cellular immunity, anti-viral) while modulating Th2 (humoral immunity, allergic). Useful for chronic viral infections where Th1 response is impaired.",
+      "Natural Killer Cell Function. Enhances NK cell cytotoxic activity. Important for early viral control and cancer surveillance.",
+      "Without Generalized Immunosuppression [4]. Unlike traditional immunosuppressants, Thymosin Alpha-1 modulates rather than suppresses immune function. This balanced effect allows use in autoimmune contexts without infection risk.",
     ],
   },
   {
     id: "research",
-    title: "Key Research Areas",
+    title: "What is Thymosin Alpha-1 used for?",
+    intro:
+      "Thymosin Alpha-1's research evidence base is the strongest of any peptide on Prof. Peptide — 35+ countries' worth of clinical approval and post-marketing surveillance. Established applications include chronic hepatitis B/C (Phase 3 evidence), cancer adjunctive therapy (multiple cancer types), sepsis (mortality reduction), and chronic viral infections. Post-COVID immune dysfunction is a recent growing research interest.",
     body: [
-      "Hepatitis B & C [5] — Multiple Phase 3 trials show improved sustained virological response when combined with interferon. Zadaxin approved in many countries specifically for chronic hepatitis B and C.",
-      "Cancer Adjunctive Therapy — Used in melanoma, hepatocellular carcinoma, and lung cancer settings to support immune function during chemotherapy. Reduced chemotherapy-related immunosuppression without compromising chemo efficacy.",
-      "Sepsis [6] — Multicenter trials in severe sepsis showed reduced 28-day mortality. Mechanism: enhanced T-cell function in immunocompromised septic patients.",
-      "Chronic Viral Infections — Cytomegalovirus, herpes zoster, chronic EBV. Benefits in immunocompromised populations. Less formally studied than hepatitis applications.",
-      "Post-COVID Immune Dysfunction — Recent research interest in long COVID and persistent post-infection immune dysregulation. Limited but growing evidence base.",
+      "Hepatitis B & C [5]. Multiple Phase 3 trials show improved sustained virological response when combined with interferon. Zadaxin approved in many countries specifically for chronic hepatitis B and C.",
+      "Cancer Adjunctive Therapy. Used in melanoma, hepatocellular carcinoma, and lung cancer settings to support immune function during chemotherapy. Reduced chemotherapy-related immunosuppression without compromising chemo efficacy.",
+      "Sepsis [6]. Multicenter trials in severe sepsis showed reduced 28-day mortality. Mechanism: enhanced T-cell function in immunocompromised septic patients.",
+      "Chronic Viral Infections. Cytomegalovirus, herpes zoster, chronic EBV. Benefits in immunocompromised populations. Less formally studied than hepatitis applications.",
+      "Post-COVID Immune Dysfunction. Recent research interest in long COVID and persistent post-infection immune dysregulation. Limited but growing evidence base.",
     ],
   },
   {
     id: "timeline",
-    title: "What to Expect (Timeline)",
+    title: "How long does Thymosin Alpha-1 take to work?",
+    intro:
+      "Thymosin Alpha-1 effects develop progressively. T-cell function changes are measurable in 2–4 weeks. Hepatitis B/C antiviral response is assessed over a 6–12 month protocol. Cancer adjunct effects are protocol-dependent. General immune support typically shows benefit after 4–8 week cycles. The gradual immune modulation profile (rather than acute effect) is consistent with the peptide's role in T-cell development.",
     content:
-      "Thymosin Alpha-1 effects develop progressively. T-cell function changes are measurable in 2–4 weeks. Hepatitis B/C antiviral response: 6–12 month protocol. Cancer adjunct: protocol-dependent. General immune support: 4–8 week cycles. The gradual immune modulation profile (rather than acute effect) is consistent with the peptide's role in T-cell development.",
+      "T-cell function changes are measurable in 2–4 weeks of consistent dosing. Hepatitis B/C antiviral response is assessed over the 6–12 month protocol that drives approved international use. Cancer adjunct effects are protocol-dependent — most benefit appears during chemotherapy cycles to maintain immune function rather than as direct anti-tumor effect. General immune support typically shows benefit after 4–8 week cycles. The gradual immune-modulation profile (rather than acute effect) is consistent with the peptide's role in T-cell development — restoration of immune cell populations takes weeks rather than hours.",
   },
   {
     id: "dosing",
-    title: "Dosing & Protocols",
+    title: "How is Thymosin Alpha-1 dosed?",
+    intro:
+      "Thymosin Alpha-1 is administered as a subcutaneous injection. Approved Zadaxin protocols in international clinical use give a clear dosing reference: 1.6 mg twice weekly for hepatitis B/C (6-month protocol), or 1.6 mg daily 5-on/2-off for cancer adjunct. Research peptide protocols sometimes use lower doses (250–750 mcg daily) for general immune support.",
     node: (
       <div className="space-y-3">
-        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Thymosin Alpha-1 is administered as a subcutaneous injection. Approved Zadaxin protocols in international clinical use give a clear dosing reference; research peptide protocols sometimes use lower doses.
-        </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hepatitis B/C (Zadaxin standard): 1.6 mg subcutaneously twice weekly for 6 months.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cancer adjunctive: 1.6 mg subcutaneously daily 5-on/2-off for 4–8 weeks.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Research peptide protocol (general immune support): 250–750 mcg daily, 4–8 weeks.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Immunocompromised support: 1.6 mg twice weekly.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reconstitution: typically 1.6 mg vials supplied as Zadaxin or 5–10 mg vials for research-grade.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hepatitis B/C (Zadaxin standard).</span> 1.6 mg subcutaneously twice weekly for 6 months.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cancer adjunctive.</span> 1.6 mg subcutaneously daily 5-on/2-off for 4–8 weeks.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Research peptide (general immune support).</span> 250–750 mcg daily, 4–8 weeks.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Immunocompromised support.</span> 1.6 mg twice weekly.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution.</span> Typically 1.6 mg vials supplied as Zadaxin, or 5–10 mg vials for research-grade material.</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           For research-grade material, reconstitution with bacteriostatic water is standard. The 1.6 mg twice-weekly Zadaxin protocol is the most clinically validated dosing regimen.
@@ -158,8 +170,152 @@ const sections = [
     ),
   },
   {
+    id: "how-to-take",
+    title: "How is Thymosin Alpha-1 administered?",
+    intro: (
+      <>
+        Thymosin Alpha-1 is given as a subcutaneous injection &mdash; under the skin, not into muscle &mdash; using a small insulin syringe. The Zadaxin standard protocol is 1.6 mg twice weekly; cancer adjunct uses 1.6 mg daily 5-on/2-off. For the practical mechanics of insulin syringes, units vs mcg conversion, and subcutaneous technique, see the{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        guide.
+      </>
+    ),
+    node: (
+      <div className="space-y-4">
+        <ol className="list-decimal list-inside space-y-1">
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection. Common sites: abdomen, thigh, upper arm.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Any consistent time. Daily consistency matters more than time of day.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine; no fasting requirement.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Alternate abdomen, thigh, upper arm to reduce localized irritation.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Skip and resume next scheduled dose. Do not double-dose.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution handling.</span> Bacteriostatic water (or sterile water for clinical Zadaxin use), swirl gently &mdash; do not shake.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle structure.</span> Hepatitis: 6 months. Cancer adjunct: 4–8 weeks. General immune: 4–12 weeks.</li>
+        </ol>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Timing context.</span> Thymosin Alpha-1&apos;s effects on T-cell maturation accumulate over weeks rather than via acute pharmacology. The Zadaxin 1.6 mg twice-weekly schedule was clinically optimized for hepatitis B/C &mdash; it represents the most-validated dosing regimen in this peptide class. Cancer adjunct protocols use daily 5-on/2-off scheduling to align with chemotherapy cycles. Research-grade lower-dose protocols (250–750 mcg daily) are extrapolated from preclinical work, not from Phase 3 evidence.
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Frequency</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Twice weekly (Zadaxin hepatitis); daily 5-on/2-off (cancer adjunct); daily (research immune support)</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Best time of day</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Any consistent time</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Food</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">No fasting required; inject with or without food</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Injection site rotation</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Rotate between abdomen, thigh, upper arm</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Half-life</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">~2 hours plasma; biological effects on T-cell maturation persist far longer</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Steady-state</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Immune effects accumulate over weeks; T-cell population changes measurable in 2–4 weeks</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Reconstitution math.</span> Choose your bacteriostatic water volume based on dose precision. Lower water volume = higher concentration = smaller syringe draw. Zadaxin clinical vials are 1.6 mg; research-grade vials are typically 10 mg. Because dose range spans 250 mcg (research) up to 1.6 mg (Zadaxin), 2 mL reconstitution gives clean unit math. All units below are measured on a U-100 insulin syringe (100 units = 1 mL). The table assumes a 10 mg research-grade vial.
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">250 mcg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">750 mcg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">1.6 mg (Zadaxin)</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">3 mg dose</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">1 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">3 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">8 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">16 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">30 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">2 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">5 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">5 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">15 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">32 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">60 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">3 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">3.33 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">8 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">23 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">48 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">90 units</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Units vs mcg.</span> At a 10 mg vial, each unit drawn delivers 100 mcg of Thymosin Alpha-1 at 1 mL reconstitution, 50 mcg at 2 mL, and 33 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
+          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: "stacks",
+    title: "What does Thymosin Alpha-1 stack well with?",
+    intro:
+      "Thymosin Alpha-1's most-validated pairing is with interferon for hepatitis B/C — the synergy is evidence-based and clinically approved. It pairs with BPC-157 for combined immune + tissue repair, and with KPV for combined immune modulation + anti-inflammatory effects. The most important non-pairing is active immunosuppressant therapy (cyclosporine, tacrolimus, mycophenolate) — theoretical antagonism since Thymosin Alpha-1 promotes immune function.",
+    node: (
+      <ol className="list-decimal list-inside space-y-1">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Interferon (clinical hepatitis protocols).</span> Synergistic, evidence-based combination &mdash; the basis of the Zadaxin hepatitis B/C approved indication.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">BPC-157.</span>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          for combined immune + tissue repair applications.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">KPV.</span>{" "}
+          <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+          for combined immune modulation + anti-inflammatory effects (gut-immune axis protocols).
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">NAD+.</span>{" "}
+          <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>{" "}
+          sometimes paired in immune optimization protocols (limited evidence).
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid: combination with active immunosuppressant therapy.</span> Theoretical antagonism &mdash; Thymosin Alpha-1 promotes immune function while immunosuppressants suppress it.</li>
+      </ol>
+    ),
+  },
+  {
     id: "side-effects",
-    title: "Side Effects & Safety",
+    title: "What are the side effects of Thymosin Alpha-1?",
+    intro:
+      "Thymosin Alpha-1 has the cleanest safety profile of any peptide on Prof. Peptide due to decades of clinical use under regulated conditions in 35+ countries. The international post-marketing surveillance is more substantial than for almost any other research peptide. The most-reported user effects are mild injection-site reactions and transient mild fever after first few doses. No major adverse events documented in 35+ years of clinical use.",
     node: (
       <div className="space-y-5">
         <div>
@@ -167,8 +323,8 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Transient injection site soreness</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mild injection site reactions.</span> Most common, typically mild and self-limiting.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Transient injection site soreness.</span> Resolves within hours.</li>
           </ol>
         </div>
         <div>
@@ -176,8 +332,8 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fever after first few doses</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mild fatigue.</span> Inconsistent across users.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mild fever after first few doses.</span> Self-limiting; reflects immune activation.</li>
           </ol>
         </div>
         <div>
@@ -185,9 +341,9 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No major adverse events documented in 35+ years of clinical use</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Excellent safety profile in cancer chemotherapy adjunct settings</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical antagonism with active immunosuppressant therapy</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">No major adverse events documented in 35+ years of clinical use.</span></li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Excellent safety profile in cancer chemotherapy adjunct settings.</span></li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical antagonism with active immunosuppressant therapy.</span></li>
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -197,42 +353,21 @@ const sections = [
     ),
   },
   {
-    id: "how-to-take",
-    title: "How to Take",
-    body: [
-      "Subcutaneous injection. Standard insulin syringe.",
-      "Site rotation: alternate abdomen, thigh, upper arm.",
-      "Time of day: any, but consistency recommended within a protocol.",
-      "With or without food: no requirement.",
-      "Reconstitution: bacteriostatic water (or sterile water for clinical use), swirl gently.",
-      "Storage of reconstituted: 2–8°C, use within 14 days.",
-    ],
-  },
-  {
-    id: "stacks",
-    title: "Common Stacks",
-    body: [
-      "Interferon (clinical hepatitis protocols) — synergistic, evidence-based combination.",
-      "BPC-157 — for combined immune + tissue repair applications.",
-      "KPV — for combined immune modulation + anti-inflammatory effects.",
-      "NAD+ — sometimes paired in immune optimization protocols (limited evidence).",
-      "Avoid: combination with active immunosuppressant therapy (theoretical antagonism — Thymosin Alpha-1 promotes immune function).",
-    ],
-  },
-  {
     id: "interactions",
-    title: "Drug & Peptide Interactions",
+    title: "Does Thymosin Alpha-1 interact with other drugs?",
+    intro:
+      "Thymosin Alpha-1's relevant interactions: synergistic with interferon (evidence-based, basis of approved hepatitis indication), generally compatible with chemotherapy agents (used adjunctively in approved international protocols), theoretical antagonism with immunosuppressants (cyclosporine, tacrolimus, mycophenolate). No major drug-drug interactions documented in clinical use across 35+ years.",
     body: [
-      "Interferon — synergistic, evidence-based for hepatitis B/C.",
-      "Chemotherapy agents — generally compatible (used adjunctively in approved international protocols).",
-      "Immunosuppressants (cyclosporine, tacrolimus, mycophenolate) — theoretical antagonism. Monitor closely.",
-      "Vaccines — limited data on combination timing.",
+      "Interferon. Synergistic, evidence-based for hepatitis B/C.",
+      "Chemotherapy agents. Generally compatible (used adjunctively in approved international protocols).",
+      "Immunosuppressants (cyclosporine, tacrolimus, mycophenolate). Theoretical antagonism. Monitor closely.",
+      "Vaccines. Limited data on combination timing; may enhance vaccine response (research interest in elderly populations).",
       "No major drug-drug interactions documented in clinical use.",
     ],
   },
   {
     id: "storage",
-    title: "Storage & Handling",
+    title: "How should Thymosin Alpha-1 be stored?",
     body: [
       "Lyophilized: 2–8°C long-term.",
       "Reconstituted: 2–8°C, use within 14 days.",
@@ -244,11 +379,13 @@ const sections = [
   },
   {
     id: "limitations",
-    title: "Research Limitations & Regulatory Status",
+    title: "What are the limitations of Thymosin Alpha-1 research?",
+    intro:
+      "Thymosin Alpha-1 (thymalfasin) is approved as a prescription drug under the brand name Zadaxin in over 35 countries but is NOT FDA-approved in the United States. The decades of approved international clinical use give Thymosin Alpha-1 one of the strongest evidence bases of any peptide on Prof. Peptide. In the US, research-grade material is sold by specialty peptide vendors. NOT on the WADA prohibited list. Commonly confused with Thymosin Beta-4 (TB-500) — different molecules.",
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Thymosin Alpha-1 (thymalfasin) is approved as a prescription drug under the brand name Zadaxin in over 35 countries including Italy, China, Mexico, and others — but is NOT FDA-approved in the United States. The decades of approved international clinical use give Thymosin Alpha-1 one of the strongest evidence bases of any peptide on Prof. Peptide.
+          Thymosin Alpha-1 (thymalfasin) is approved as a prescription drug under the brand name Zadaxin in over 35 countries including Italy, China, Mexico, and others &mdash; but is NOT FDA-approved in the United States. The decades of approved international clinical use give Thymosin Alpha-1 one of the strongest evidence bases of any peptide on Prof. Peptide.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade material is sold by specialty peptide vendors in the US. Quality varies; verify Certificate of Analysis.
@@ -257,14 +394,38 @@ const sections = [
           Anti-doping: Thymosin Alpha-1 is NOT currently on the WADA prohibited list.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          The peptide is also distinct from Thymosin Beta-4 (TB-500), which has different mechanisms and applications despite the related name. Patients commonly confuse the two.
+          The peptide is also distinct from{" "}
+          <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">Thymosin Beta-4 (TB-500)</Link>
+          , which has different mechanisms and applications despite the related name. Patients commonly confuse the two.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: "where-to-buy",
+    title: "Where to source Thymosin Alpha-1",
+    intro:
+      "Outside the US, Zadaxin is available by prescription in 35+ countries. In the US, Thymosin Alpha-1 is sold as a research-grade peptide by specialty vendors. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — including an oral-format option for users who prefer to avoid injection.",
+    node: (
+      <div className="space-y-4">
+        <VendorHighlightBlock
+          highlights={[
+            { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
+            { slug: "integrative-peptides", note: "Oral format — no injection needed" },
+            { slug: "ascension-peptides" },
+          ]}
+        />
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            See all 17 verified vendors &rarr;
+          </Link>
         </p>
       </div>
     ),
   },
   {
     id: "faq",
-    title: "FAQ",
+    title: "Thymosin Alpha-1 FAQ",
     node: (
       <div className="space-y-4">
         {faqs.map((f, i) => (
@@ -344,7 +505,7 @@ const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
 export default function ThymosinAlpha1Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Thymosin Alpha-1","description":"Thymosin Alpha-1 (Zadaxin) research profile: T-cell maturation mechanism, hepatitis approval, dosing protocol, side effects, and immune modulation.","url":"https://profpeptide.com/peptides/thymosin-alpha-1","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Thymosin Alpha-1","description":"Thymosin Alpha-1 (Zadaxin) research profile: T-cell maturation mechanism, hepatitis approval, dosing protocol, side effects, FAQ, and immune modulation.","url":"https://profpeptide.com/peptides/thymosin-alpha-1","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Thymosin Alpha-1"}]}} />
     <div className="section max-w-3xl">
       <Link
@@ -359,15 +520,33 @@ export default function ThymosinAlpha1Page() {
         <span className="tag">Gut Health &amp; Immunity</span>
         <span className="tag">Approved Internationally</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-8">
-        Also Known As: TA-1, Tα1, Thymalfasin, Zadaxin (brand name)
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+        Last reviewed: May 24, 2026
       </p>
+      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> TA-1, Tα1, Thymalfasin, Zadaxin (brand name)
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> 28-Amino-Acid Synthetic Peptide &mdash; Thymic Immune Modulator / T-Cell Maturation Factor
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Approved in 35+ countries as Zadaxin (hepatitis B/C). NOT FDA-approved in US (sold as research-grade). Not on WADA prohibited list.
+        </p>
+      </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
+        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Thymosin Alpha-1?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Thymosin Alpha-1 is a 28-amino-acid peptide naturally produced by the thymus gland, where it plays a critical role in T-cell maturation and immune system development. Synthetic Thymosin Alpha-1 (thymalfasin, brand name Zadaxin) is approved as a prescription drug in over 35 countries for treating chronic hepatitis B and hepatitis C, often as an adjunct to interferon therapy. It is also used as an immune-supportive treatment in cancer patients undergoing chemotherapy. While NOT FDA-approved in the United States, Thymosin Alpha-1 has decades of clinical use abroad and one of the strongest evidence bases of any peptide on Prof. Peptide. Research applications include immune modulation, chronic infections, autoimmune conditions, and post-COVID immune recovery.
+            Thymosin Alpha-1 is a 28-amino-acid peptide naturally produced by the thymus gland, where it plays a critical role in T-cell maturation and immune system development. Synthetic Thymosin Alpha-1 (thymalfasin, brand name Zadaxin) is approved as a prescription drug in over 35 countries for treating chronic hepatitis B and hepatitis C, often as an adjunct to interferon therapy. It is also used as an immune-supportive treatment in cancer patients undergoing chemotherapy. While NOT FDA-approved in the United States, Thymosin Alpha-1 has decades of clinical use abroad and one of the strongest evidence bases of any peptide on Prof. Peptide. Distinct from{" "}
+            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">Thymosin Beta-4 (TB-500)</Link>{" "}
+            despite the shared name. Often paired with{" "}
+            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            or{" "}
+            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            for combined immune + tissue / anti-inflammatory protocols. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -383,24 +562,14 @@ export default function ThymosinAlpha1Page() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Subcutaneous injection: 1.6 mg twice weekly (standard Zadaxin protocol for hepatitis), or 1.6 mg daily for 5 days followed by 2 days off (cancer adjunct protocol). Research peptide protocols often use 250–750 mcg daily. Cycle length: 4–12 weeks. See{" "}
-            <a href="#dosing" className="text-[#0891b2] hover:underline">
-              Dosing &amp; Protocols
-            </a>{" "}
-            below for details.
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Subcutaneous injection: 1.6 mg twice weekly (standard Zadaxin protocol for hepatitis), or 1.6 mg daily for 5 days followed by 2 days off (cancer adjunct protocol). Research peptide protocols often use 250–750 mcg daily. Cycle length: 4–12 weeks.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Outside the US, Zadaxin is available by prescription. In the US, Thymosin Alpha-1 is sold by specialty research peptide vendors. See{" "}
-            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
-              Verified Peptide Vendors &rarr;
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
+            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+              Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
-          </p>
-          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
-            <a href="https://www.amazon.com/s?k=gut+health+immunity+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
-              Find related supplements on Amazon.
-            </a>
           </p>
         </div>
       </div>
@@ -413,6 +582,11 @@ export default function ThymosinAlpha1Page() {
             <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
+            {s.intro && (
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+                {s.intro}
+              </p>
+            )}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
@@ -448,6 +622,8 @@ export default function ThymosinAlpha1Page() {
         <Link href="/peptides/kpv" className="text-sm font-medium text-[#0891b2] hover:underline">KPV</Link>
         <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
         <Link href="/peptides/tb-500" className="text-sm font-medium text-[#0891b2] hover:underline">TB-500</Link>
+        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu</Link>
+        <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
         </div>
       </div>
 
