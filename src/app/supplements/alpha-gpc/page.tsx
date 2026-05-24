@@ -528,8 +528,8 @@ const articleSchema = {
   "headline": "Alpha-GPC: What Biohackers Need to Know About Acetylcholine Boosting",
   "description": "Alpha-GPC dosing, mechanism, and real-world results for cognitive enhancement. Plus how it stacks with cognitive peptides like Semax and Selank.",
   "url": "https://profpeptide.com/supplements/alpha-gpc",
-  "datePublished": "2026-04-07",
-  "dateModified": "2026-05-24",
+  "datePublished": "2026-04-07T00:00:00Z",
+  "dateModified": "2026-05-24T00:00:00Z",
   "author": {
     "@type": "Organization",
     "name": "Prof. Peptide Editorial Team",
