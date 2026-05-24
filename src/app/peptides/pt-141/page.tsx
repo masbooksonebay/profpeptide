@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/pt-141",
   title: "PT-141 (Bremelanotide / Vyleesi) — FDA-Approved Sexual Health Peptide | Prof. Peptide",
   description:
-    "PT-141 (Bremelanotide, Vyleesi) research profile: FDA-approved for HSDD, MC4R mechanism, on-demand dosing, off-label male ED use, side effects.",
+    "PT-141 (Bremelanotide, Vyleesi) research profile: FDA-approved for HSDD, MC4R mechanism, on-demand dosing, off-label male ED use, side effects, FAQ.",
 });
 
 const faqs = [
@@ -42,10 +43,19 @@ const faqs = [
     a: "Yes — PT-141 causes transient blood pressure elevation averaging 6 mmHg systolic and 3 mmHg diastolic. It is contraindicated in uncontrolled hypertension and cardiovascular disease. Patients on antihypertensive medications should be monitored. The effect is transient and not expected to cause severe BP elevation when used at the standard 1.75 mg dose.",
   },
   {
+    q: "How is PT-141 different from Melanotan II?",
+    a: (
+      <>
+        <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>{" "}
+        is the predecessor compound &mdash; PT-141 was derived from Melanotan II by removing the C-terminal amide group, which eliminates the strong tanning effect while preserving the sexual desire and arousal effects. Melanotan II is primarily used for skin pigmentation (off-label tanning); PT-141 is specifically optimized for sexual response without the pigmentation. Do NOT stack the two &mdash; additive melanocortin receptor effects increase nausea, blood pressure changes, and hyperpigmentation risk.
+      </>
+    ),
+  },
+  {
     q: "Where can I buy PT-141?",
     a: (
       <>
-        The FDA-approved version (Vyleesi) is a prescription drug from specialty pharmacies — premenopausal women with HSDD only. Off-label and research-grade PT-141 is sold by specialty peptide vendors. PP maintains a list of vetted vendors with verified discount codes — see{" "}
+        The FDA-approved version (Vyleesi) is a prescription drug from specialty pharmacies &mdash; premenopausal women with HSDD only. Off-label and research-grade PT-141 is sold by specialty peptide vendors. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
         <Link href="/coupons" className="text-[#0891b2] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
@@ -63,92 +73,97 @@ const studies = [
     year: "2003",
     access: "Paywalled",
     url: "https://pubmed.ncbi.nlm.nih.gov/12851303/",
-    summary: "The foundational review establishing PT-141\u2019s mechanism and clinical rationale. PT-141 was developed as a next-generation analog of Melanotan II with higher selectivity for MC4R \u2014 the melanocortin receptor subtype most involved in sexual behavior \u2014 and a better safety profile. The paper documents PT-141\u2019s central nervous system mechanism: unlike PDE5 inhibitors (Viagra, Cialis) which increase blood flow to the genitals, PT-141 acts in the hypothalamus to modulate the neural pathways governing desire and arousal itself. This distinction is clinically important \u2014 it means PT-141 can work in patients where vascular mechanisms are intact but desire is absent, or where PDE5 inhibitors have failed. This paper set the stage for the full clinical development program that led to FDA approval.",
+    summary: "The foundational review establishing PT-141's mechanism and clinical rationale. PT-141 was developed as a next-generation analog of Melanotan II with higher selectivity for MC4R — the melanocortin receptor subtype most involved in sexual behavior — and a better safety profile. The paper documents PT-141's central nervous system mechanism: unlike PDE5 inhibitors which increase blood flow to the genitals, PT-141 acts in the hypothalamus to modulate the neural pathways governing desire and arousal itself.",
   },
   {
-    title: "Bremelanotide for the Treatment of Hypoactive Sexual Desire Disorder \u2014 Two Randomized Phase 3 Trials (RECONNECT)",
+    title: "Bremelanotide for the Treatment of Hypoactive Sexual Desire Disorder — Two Randomized Phase 3 Trials (RECONNECT)",
     authors: "Kingsberg SA, Clayton AH, Portman D, et al.",
     journal: "Obstetrics & Gynecology / PMC",
     year: "2019",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6819021/",
-    summary: "The pivotal Phase 3 trials that led to FDA approval of bremelanotide (Vyleesi) in 2019 \u2014 making PT-141 only the second drug ever approved for female sexual desire disorder, and the first with a non-hormonal, CNS mechanism. Two identical randomized, double-blind, placebo-controlled trials (RECONNECT 301 and 302) enrolled premenopausal women with HSDD. Bremelanotide 1.75mg subcutaneous significantly improved both the Female Sexual Function Index desire domain score and the Female Sexual Distress Scale compared to placebo at 24 weeks. Nausea was the most common adverse event (40% bremelanotide vs 1.3% placebo), but was generally mild and transient. The safety profile was otherwise favorable with small, transient blood pressure increases that resolved within 8\u201310 hours.",
+    summary: "The pivotal Phase 3 trials that led to FDA approval of bremelanotide (Vyleesi) in 2019. Two identical RCTs (RECONNECT 301 and 302) enrolled premenopausal women with HSDD. Bremelanotide 1.75mg subcutaneous significantly improved both the Female Sexual Function Index desire domain score and the Female Sexual Distress Scale compared to placebo at 24 weeks. Nausea was the most common adverse event (40% bremelanotide vs 1.3% placebo).",
   },
   {
     title: "Long-Term Safety and Efficacy of Bremelanotide for Hypoactive Sexual Desire Disorder",
-    authors: "Kingsberg SA, et al. \u2014 RECONNECT Study Group",
+    authors: "Kingsberg SA, et al. — RECONNECT Study Group",
     journal: "Obstetrics & Gynecology / PMC",
     year: "2019",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6819023/",
-    summary: "The 52-week open-label extension of the RECONNECT trials, examining bremelanotide\u2019s long-term safety and sustained efficacy. No new safety signals emerged over 52 weeks of continued use, and improvements in HSDD symptoms were maintained throughout the extension period. This long-term data was critical for the FDA approval package \u2014 demonstrating that the benefits observed in the 24-week trials are sustained with continued treatment and that no unexpected safety concerns emerge over time. For women using bremelanotide on an as-needed basis (up to 8 doses per month), the compound maintained its efficacy without tolerance development or new adverse effects.",
+    summary: "The 52-week open-label extension of the RECONNECT trials, examining bremelanotide's long-term safety and sustained efficacy. No new safety signals emerged over 52 weeks of continued use, and improvements in HSDD symptoms were maintained throughout the extension period. Critical for the FDA approval package.",
   },
   {
-    title: "Bremelanotide for Female Sexual Dysfunction \u2014 Mechanism, Clinical Trials, and FDA Approval",
+    title: "Bremelanotide for Female Sexual Dysfunction — Mechanism, Clinical Trials, and FDA Approval",
     authors: "PMC Research Group",
     journal: "PMC / Frontiers in Pharmacology",
     year: "2022",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8788464/",
-    summary: "A comprehensive review covering bremelanotide\u2019s full development history, mechanism of action, and clinical evidence across both female and male sexual dysfunction. The paper documents the earliest clinical study in women with HSDD (2006), the Phase 2b dose-finding trials that identified 1.75mg as the optimal dose, and the RECONNECT Phase 3 results. It also covers PT-141\u2019s off-label use in men \u2014 including studies showing efficacy in sildenafil non-responders and a synergistic effect when combined with PDE5 inhibitors. The review explains the different mechanisms in men vs women: in men, MC3R/MC4R stimulation causes nitric oxide release and direct vasodilation in penile tissue; in women, the pathway is neurochemical \u2014 modulating the neurotransmitter imbalance that underlies reduced desire in HSDD.",
+    summary: "A comprehensive review covering bremelanotide's full development history, mechanism of action, and clinical evidence across both female and male sexual dysfunction. Covers PT-141's off-label use in men — including studies showing efficacy in sildenafil non-responders and a synergistic effect when combined with PDE5 inhibitors.",
   },
   {
-    title: "Novel Emerging Therapies for Erectile Dysfunction \u2014 Bremelanotide Section",
-    authors: "World Journal of Men\u2019s Health Research Group",
-    journal: "World Journal of Men\u2019s Health",
+    title: "Novel Emerging Therapies for Erectile Dysfunction — Bremelanotide Section",
+    authors: "World Journal of Men's Health Research Group",
+    journal: "World Journal of Men's Health",
     year: "2021",
     access: "Open Access",
     url: "https://wjmh.org/DOIx.php?id=10.5534/wjmh.200007",
-    summary: "A review of PT-141\u2019s evidence for male erectile dysfunction \u2014 the off-label application that drives most research peptide use of this compound. The paper documents Phase 1 and 2 clinical data: at 20mg intranasal dosing, PT-141 produced significantly greater duration of base rigidity \u226580% vs placebo. In men with ED who were non-responsive to sildenafil, 34% of the PT-141 group reported significantly better results vs 9% placebo \u2014 a clinically meaningful response rate in a notoriously treatment-resistant population. A combination study showed PT-141 plus sildenafil produced a significantly greater erectile response than sildenafil alone. The paper also covers the pivot from intranasal to subcutaneous delivery after blood pressure concerns with the nasal route, and notes ongoing Phase 2 trials investigating a co-formulation of bremelanotide plus a PDE5 inhibitor for male ED.",
+    summary: "A review of PT-141's evidence for male erectile dysfunction. At 20mg intranasal dosing, PT-141 produced significantly greater duration of base rigidity ≥80% vs placebo. In men with ED non-responsive to sildenafil, 34% of the PT-141 group reported significantly better results vs 9% placebo.",
   },
 ];
 
 const sections = [
   {
     id: "mechanism",
-    title: "Mechanism of Action",
+    title: "How does PT-141 work?",
+    intro:
+      "PT-141 is a non-selective melanocortin receptor agonist (MC1R–MC5R). At therapeutic doses, MC4R activation in the central nervous system is the clinically relevant mechanism — neurons expressing MC4R in hypothalamic and limbic regions modulate sexual desire and arousal. Unlike PDE5 inhibitors (Viagra) which work peripherally on vascular nitric oxide signaling, PT-141 acts centrally. This is the clinical rationale for use in cases where vascular drugs fail or are contraindicated.",
     body: [
-      "Melanocortin Receptor Agonism [1] — PT-141 is a non-selective agonist of melanocortin receptors (MC1R through MC5R, except MC2R which binds full ACTH). At therapeutic doses, MC4R activation is most clinically relevant — neurons expressing MC4R are present throughout the central nervous system, particularly in hypothalamic and limbic regions involved in sexual arousal.",
-      "Central vs Peripheral Mechanism [2] — Unlike PDE5 inhibitors (sildenafil, tadalafil) which work peripherally on vascular nitric oxide signaling, PT-141 acts centrally to enhance sexual desire and arousal. This is the clinical rationale for use in cases where vascular drugs fail or are contraindicated.",
-      "Dopamine Pathway Activation — Mechanistic studies suggest MC4R activation in hypothalamic circuits enhances dopamine signaling linked to sexual desire. The exact downstream pathway by which Vyleesi improves HSDD is not fully characterized in the FDA labeling.",
-      "Cyclic Heptapeptide Structure — PT-141 is a cyclic 7-amino-acid peptide derived from melanotan II. The cyclization confers metabolic stability. Removal of the C-terminal amide compared to melanotan II eliminates the strong melanocyte-stimulating effect (tanning), while preserving sexual response.",
-      "Pharmacokinetics — Subcutaneous bioavailability ~100%. Peak plasma levels ~1 hour post-injection. Plasma half-life 2.7 hours (range 1.9–4.0). Excretion: 64.8% urine, 22.8% feces. Effects on sexual desire last 4–6 hours.",
+      "Melanocortin Receptor Agonism [1]. PT-141 is a non-selective agonist of melanocortin receptors (MC1R through MC5R, except MC2R which binds full ACTH). At therapeutic doses, MC4R activation is most clinically relevant — neurons expressing MC4R are present throughout the central nervous system, particularly in hypothalamic and limbic regions involved in sexual arousal.",
+      "Central vs Peripheral Mechanism [2]. Unlike PDE5 inhibitors (sildenafil, tadalafil) which work peripherally on vascular nitric oxide signaling, PT-141 acts centrally to enhance sexual desire and arousal. This is the clinical rationale for use in cases where vascular drugs fail or are contraindicated.",
+      "Dopamine Pathway Activation. Mechanistic studies suggest MC4R activation in hypothalamic circuits enhances dopamine signaling linked to sexual desire. The exact downstream pathway by which Vyleesi improves HSDD is not fully characterized in the FDA labeling.",
+      "Cyclic Heptapeptide Structure. PT-141 is a cyclic 7-amino-acid peptide derived from melanotan II. The cyclization confers metabolic stability. Removal of the C-terminal amide compared to melanotan II eliminates the strong melanocyte-stimulating effect (tanning), while preserving sexual response.",
+      "Pharmacokinetics. Subcutaneous bioavailability ~100%. Peak plasma levels ~1 hour post-injection. Plasma half-life 2.7 hours (range 1.9–4.0). Effects on sexual desire last 4–6 hours.",
     ],
   },
   {
     id: "research",
-    title: "Key Research Areas",
+    title: "What is PT-141 used for?",
+    intro:
+      "PT-141's FDA-approved indication is hypoactive sexual desire disorder (HSDD) in premenopausal women — the Vyleesi label, June 2019. Off-label uses include male erectile dysfunction (particularly PDE5-resistant cases), postmenopausal HSDD, and SSRI-induced sexual dysfunction. A weight-loss side effect has also been observed (MC4R agonism modulates appetite — setmelanotide, another MC4R agonist, is FDA-approved for rare types of obesity).",
     body: [
-      "Premenopausal HSDD [3] — FDA approval indication. Two identical Phase 3 clinical trials (n=1,202 total premenopausal women with HSDD) showed Vyleesi improved sexual desire and reduced sexual distress vs placebo. Approval granted June 2019.",
-      "Male Erectile Dysfunction (Off-Label) [4] — Earlier intranasal PT-141 trials in men with ED showed 34% achieving erection sufficient for intercourse vs 9% on placebo. Combination studies with sildenafil showed stronger erectile response than either drug alone — basis for off-label 'Viagra reboot' protocols in PDE5-resistant patients.",
-      "Postmenopausal HSDD (Off-Label) — Vyleesi is FDA-approved only for premenopausal women, but clinical practice has extended use to postmenopausal patients. Small case series report favorable outcomes; formal trials in this population are limited.",
-      "SSRI-Induced Sexual Dysfunction (Off-Label) — Off-label use for restoring sexual function in patients with SSRI-related sexual side effects. Limited published evidence but reported clinically.",
-      "Calorie Reduction Side Effect — A trial analysis found obese women on PT-141 reduced calorie intake and lost weight. Setmelanotide, another MC4R agonist, is FDA-approved for rare types of obesity — suggesting MC4R agonism has appetite-modulating effects.",
+      "Premenopausal HSDD [3]. FDA approval indication. Two identical Phase 3 clinical trials (n=1,202 total premenopausal women with HSDD) showed Vyleesi improved sexual desire and reduced sexual distress vs placebo. Approval granted June 2019.",
+      "Male Erectile Dysfunction (Off-Label) [4]. Earlier intranasal PT-141 trials in men with ED showed 34% achieving erection sufficient for intercourse vs 9% on placebo. Combination studies with sildenafil showed stronger erectile response than either drug alone — basis for off-label 'Viagra reboot' protocols in PDE5-resistant patients.",
+      "Postmenopausal HSDD (Off-Label). Vyleesi is FDA-approved only for premenopausal women, but clinical practice has extended use to postmenopausal patients. Small case series report favorable outcomes; formal trials in this population are limited.",
+      "SSRI-Induced Sexual Dysfunction (Off-Label). Off-label use for restoring sexual function in patients with SSRI-related sexual side effects. Limited published evidence but reported clinically.",
+      "Calorie Reduction Side Effect. A trial analysis found obese women on PT-141 reduced calorie intake and lost weight. Setmelanotide, another MC4R agonist, is FDA-approved for rare types of obesity — suggesting MC4R agonism has appetite-modulating effects.",
     ],
   },
   {
     id: "timeline",
-    title: "What to Expect (Timeline)",
+    title: "How long does PT-141 take to work?",
+    intro:
+      "PT-141 is on-demand, not daily — effects develop on a per-dose basis. Subjective effects on sexual desire and arousal typically peak around 45–60 minutes after subcutaneous injection. Effects last 4–6 hours per dose. The FDA-approved Vyleesi label requires assessment of efficacy at 8 weeks; if no improvement in sexual desire and distress, treatment should be discontinued.",
     content:
-      "PT-141 effects develop on a per-dose basis. Subjective effects on sexual desire and arousal typically peak around 45–60 minutes after subcutaneous injection. Effects last 4–6 hours per dose. The FDA-approved Vyleesi label requires assessment of efficacy at 8 weeks; if no improvement in sexual desire and distress, treatment should be discontinued. Unlike flibanserin (continuous daily dosing), PT-141 is purely on-demand.",
+      "PT-141 is on-demand, not daily. Subjective effects on sexual desire and arousal typically peak around 45–60 minutes after subcutaneous injection. Effects last 4–6 hours per dose. The FDA-approved Vyleesi label requires assessment of efficacy at 8 weeks of intermittent use; if no improvement in sexual desire and distress, treatment should be discontinued. Unlike flibanserin (which requires continuous daily dosing), PT-141 is purely on-demand and does not require cumulative dosing for effect.",
   },
   {
     id: "dosing",
-    title: "Dosing & Protocols",
+    title: "How is PT-141 dosed?",
+    intro:
+      "PT-141 is administered as a subcutaneous injection on-demand. The FDA-approved Vyleesi product comes pre-dosed in an autoinjector (1.75 mg). Research-grade PT-141 is sold as lyophilized powder for reconstitution. Standard dose is 1.75 mg ~45 minutes before anticipated activity. Maximum 1 dose per 24 hours; maximum 8 doses per month (hyperpigmentation risk limit).",
     node: (
       <div className="space-y-3">
-        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          PT-141 is administered as a subcutaneous injection on-demand. The FDA-approved Vyleesi product comes pre-dosed in an autoinjector. Research-grade PT-141 is sold as lyophilized powder for reconstitution.
-        </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">FDA-approved dose (Vyleesi): 1.75 mg subcutaneously, ~45 minutes before anticipated sexual activity. Maximum 1 dose per 24 hours, maximum 8 doses per month.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Research-grade typical range: 1–2 mg subcutaneously per dose.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Lower starting dose: 1 mg (or even 250–500 mcg) for first-time use to test tolerance — particularly to assess nausea response.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Off-label male ED protocol: 1.75–2 mg SC, 30–60 minutes before activity. Some clinicians combine with low-dose sildenafil (25 mg) for PDE5-resistant cases.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Discontinue if no improvement in sexual desire and distress after 8 weeks of use (per FDA label).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">FDA-approved (Vyleesi).</span> 1.75 mg subcutaneously, ~45 minutes before anticipated sexual activity. Maximum 1 dose per 24 hours, maximum 8 doses per month.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Research-grade typical range.</span> 1–2 mg subcutaneously per dose.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Lower starting dose.</span> 1 mg (or even 250–500 mcg) for first-time use to test tolerance — particularly to assess nausea response.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Off-label male ED protocol.</span> 1.75–2 mg SC, 30–60 minutes before activity. Some clinicians combine with low-dose sildenafil (25 mg) for PDE5-resistant cases.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Discontinuation.</span> Per FDA label, discontinue if no improvement in sexual desire and distress after 8 weeks of use.</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-          PT-141 is strictly on-demand, NOT a daily medication. Repeated dosing greater than 8 times per month increases hyperpigmentation risk. Always allow at least 24 hours between doses. The FDA approval labels Vyleesi specifically for premenopausal women — all other uses (men, postmenopausal women, SSRI-induced dysfunction) are off-label.
+          PT-141 is strictly on-demand, NOT a daily medication. Repeated dosing greater than 8 times per month increases hyperpigmentation risk. Always allow at least 24 hours between doses.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
@@ -158,8 +173,148 @@ const sections = [
     ),
   },
   {
+    id: "how-to-take",
+    title: "How is PT-141 administered?",
+    intro: (
+      <>
+        PT-141 is given as a subcutaneous injection &mdash; under the skin, not into muscle &mdash; on-demand ~45 minutes before anticipated sexual activity. The Vyleesi autoinjector is pre-dosed at 1.75 mg. Research-grade material requires reconstitution. For the practical mechanics of insulin syringes for research-grade material, see the{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        guide.
+      </>
+    ),
+    node: (
+      <div className="space-y-4">
+        <ol className="list-decimal list-inside space-y-1">
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection. Vyleesi autoinjector targets the abdomen or thigh.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> ~45 minutes before anticipated sexual activity. On-demand only &mdash; not daily.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine. Eating a light snack before may help reduce nausea.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Maximum frequency.</span> 1 dose per 24 hours; maximum 8 doses per month (hyperpigmentation risk limit).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Vyleesi autoinjector.</span> Pre-dosed at 1.75 mg, no reconstitution required.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anti-nausea prep (optional).</span> Some users take oral ondansetron 30 minutes before injection. Light snack with light protein also helps.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Storage of reconstituted solution.</span> Refrigerate at 2–8°C, use within 30 days, never freeze.</li>
+        </ol>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Timing context.</span> PT-141 is fundamentally different from daily peptides &mdash; it&apos;s on-demand, taken before anticipated activity. The 45-minute pre-dose timing aligns with peak plasma levels and central nervous system effect onset. Effects last 4–6 hours, then resolve. There&apos;s no cumulative dosing or steady-state &mdash; each dose is independent. The 8-dose-per-month limit is the practical constraint, driven by hyperpigmentation risk rather than tolerance.
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Frequency</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">On-demand only &mdash; max 1/24hr, max 8/month</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Best time</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">~45 minutes before anticipated activity (peak plasma timing)</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Food</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">No fasting requirement; light snack may help reduce nausea</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Injection site rotation</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Vyleesi: abdomen or thigh (per autoinjector instructions)</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Half-life</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">~2.7 hours; effects on sexual desire last 4–6 hours</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Steady-state</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Not applicable &mdash; each dose is independent (on-demand pharmacology)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Reconstitution math.</span> Choose your bacteriostatic water volume based on dose precision. PT-141 research vials are typically 10 mg. The 1.75 mg FDA-approved dose maps cleanly to standard reconstitution volumes. All units below are measured on a U-100 insulin syringe (100 units = 1 mL). The table assumes a 10 mg vial.
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">0.5 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">1 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">1.75 mg (FDA)</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">2 mg dose</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">1 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">5 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">18 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">20 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">2 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">5 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">20 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">35 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">40 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">3 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">3.33 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">15 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">30 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">53 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">60 units</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Units vs mcg.</span> At a 10 mg vial, each unit drawn delivers 100 mcg of PT-141 at 1 mL reconstitution, 50 mcg at 2 mL, and 33 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
+          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: "stacks",
+    title: "What does PT-141 stack well with?",
+    intro:
+      "PT-141's most-studied off-label combination is with sildenafil in PDE5-resistant ED — research data shows stronger erectile response than either alone. Cardiovascular monitoring required. Oxytocin is anecdotally combined for the emotional-bonding aspect of intimacy. The most important non-stacking is Melanotan II — both act on melanocortin receptors, additive nausea/BP/hyperpigmentation risk.",
+    node: (
+      <ol className="list-decimal list-inside space-y-1">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sildenafil (off-label, men).</span> Combination shows stronger erectile response than either alone in research data. Used in PDE5-resistant ED. Cardiovascular risk additive &mdash; requires medical screening.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Oxytocin.</span> Anecdotally combined for emotional bonding aspect of intimacy. Limited research on combination but generally considered safe.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">BPC-157.</span>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          &mdash; different mechanism (healing/gut). No direct interaction.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Avoid: Melanotan II.</span>{" "}
+          <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>{" "}
+          &mdash; both act on melanocortin receptors. Stacking increases nausea, blood pressure changes, and hyperpigmentation risk.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anti-nausea protocol.</span> Some users take oral ondansetron 30 minutes before injection. Ginger tablets are a non-prescription alternative.</li>
+      </ol>
+    ),
+  },
+  {
     id: "side-effects",
-    title: "Side Effects & Safety",
+    title: "What are the side effects of PT-141?",
+    intro:
+      "Nausea is the most common side effect (~40% in Phase 3 — major tolerability issue). Flushing (~20%) and injection site reactions (~13%) are also common. Less common moderate effects include headache, dizziness, vomiting. The most concerning serious risks are hyperpigmentation (focal skin darkening that may not resolve after stopping — driver of the 8-doses/month limit) and transient blood pressure elevation (6 mmHg systolic, 3 mmHg diastolic — contraindicated in uncontrolled hypertension).",
     node: (
       <div className="space-y-5">
         <div>
@@ -167,9 +322,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — most common side effect, occurs in ~40% of users in Phase 3 trials. Often most pronounced with first dose; many users find it tolerable after 1–2 doses or manageable with anti-nausea medication.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Flushing — facial warmth and redness in ~20% of users, usually mild and transient.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions — redness, pain, swelling in ~13% of users.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Nausea.</span> Most common side effect, occurs in ~40% of users in Phase 3 trials. Often most pronounced with first dose; many users find it tolerable after 1–2 doses or manageable with anti-nausea medication.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Flushing.</span> Facial warmth and redness in ~20% of users, usually mild and transient.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Injection site reactions.</span> Redness, pain, swelling in ~13% of users.</li>
           </ol>
         </div>
         <div>
@@ -177,9 +332,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache (~11%) and dizziness</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Vomiting (~5%), cough (~3%), fatigue (~3%)</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hot flashes, paresthesia, mild nasal congestion</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Headache (~11%) and dizziness.</span></li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Vomiting (~5%), cough (~3%), fatigue (~3%).</span></li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hot flashes, paresthesia, mild nasal congestion.</span></li>
           </ol>
         </div>
         <div>
@@ -187,55 +342,33 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hyperpigmentation — focal skin darkening on face, gums, or breasts. Risk increases with frequent use (&gt;8 doses per month). May not resolve after discontinuation.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Transient blood pressure elevation — average 6 mmHg systolic, 3 mmHg diastolic. Contraindicated in uncontrolled hypertension and cardiovascular disease.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Rare acute liver injury — single case of acute hepatitis after 10 doses over a year reported (LiverTox classification: D — possible rare cause).</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hyperpigmentation.</span> Focal skin darkening on face, gums, or breasts. Risk increases with frequent use (&gt;8 doses per month). May not resolve after discontinuation.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Transient blood pressure elevation.</span> Average 6 mmHg systolic, 3 mmHg diastolic. Contraindicated in uncontrolled hypertension and cardiovascular disease.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Rare acute liver injury.</span> Single case of acute hepatitis after 10 doses over a year reported (LiverTox classification: D &mdash; possible rare cause).</li>
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          PT-141 is contraindicated in patients with uncontrolled hypertension or cardiovascular disease due to transient blood pressure rises. The 8-doses-per-month limit exists to minimize hyperpigmentation risk — exceeding it raises the chance of skin darkening that may persist after stopping the drug. PT-141 reduces oral absorption (bioavailability) of certain medications (e.g., naltrexone, indomethacin) by slowing gastric motility — relevant for patients on chronic oral medications. Pregnancy contraindicated based on animal teratogenicity data.
+          PT-141 is contraindicated in patients with uncontrolled hypertension or cardiovascular disease due to transient blood pressure rises. The 8-doses-per-month limit exists to minimize hyperpigmentation risk &mdash; exceeding it raises the chance of skin darkening that may persist after stopping the drug. PT-141 reduces oral absorption (bioavailability) of certain medications (e.g., naltrexone, indomethacin) by slowing gastric motility. Pregnancy contraindicated based on animal teratogenicity data.
         </p>
       </div>
     ),
   },
   {
-    id: "how-to-take",
-    title: "How to Take",
-    body: [
-      "Route: Subcutaneous injection (under the skin). Vyleesi autoinjector targets the abdomen or thigh.",
-      "Time of day: ~45 minutes before anticipated sexual activity. On-demand only — not daily.",
-      "With or without food: Either is fine. Eating a light snack before may help reduce nausea.",
-      "Maximum frequency: 1 dose per 24 hours; maximum 8 doses per month.",
-      "Reconstitution (research-grade): 10 mg vial + 2 mL bacteriostatic water = 5 mg/mL. For 1.75 mg dose, draw 0.35 mL (35 units on U-100 insulin syringe). For 2 mg, draw 0.4 mL (40 units).",
-      "Vyleesi autoinjector: pre-dosed at 1.75 mg, no reconstitution required.",
-      "Storage of reconstituted solution: refrigerate at 2–8°C, use within 30 days, never freeze.",
-    ],
-  },
-  {
-    id: "stacks",
-    title: "Common Stacks",
-    body: [
-      "Sildenafil (off-label, men) — combination shows stronger erectile response than either alone in research data. Used in PDE5-resistant ED. Cardiovascular risk additive — requires medical screening.",
-      "Oxytocin — anecdotally combined for emotional bonding aspect of intimacy. Limited research on combination but generally considered safe.",
-      "BPC-157 — different mechanism (healing/gut) — no direct interaction. Compatible in general protocols.",
-      "Melanotan II — DO NOT combine. Both act on melanocortin receptors. Stacking increases nausea, blood pressure changes, and hyperpigmentation risk.",
-      "Anti-nausea protocol: Some users take oral ondansetron 30 minutes before injection. Ginger tablets are a non-prescription alternative.",
-    ],
-  },
-  {
     id: "interactions",
-    title: "Drug & Peptide Interactions",
+    title: "Does PT-141 interact with other drugs?",
+    intro:
+      "PT-141's most important interactions are with oral medications affected by slowed gastric motility (naltrexone, indomethacin — schedule away from PT-141 doses), antihypertensives (PT-141 raises BP transiently), other melanocortin agonists (additive side effects — avoid Melanotan II and setmelanotide), and PDE5 inhibitors (off-label combination shows stronger erectile response — cardiovascular monitoring required). Alcohol has minimal interaction.",
     body: [
-      "Naltrexone, indomethacin, and other oral medications — PT-141 slows gastric motility, reducing oral bioavailability of these drugs. Schedule oral meds away from PT-141 doses.",
-      "Antihypertensives — PT-141 raises blood pressure transiently. Effects on patients on BP medications are unpredictable; medical supervision recommended.",
-      "Other melanocortin agonists (melanotan II, setmelanotide) — additive side effects. Avoid combination.",
-      "Alcohol — minimal interaction (unlike flibanserin). Safe in moderate amounts.",
-      "PDE5 inhibitors (sildenafil, tadalafil) — off-label combination shows stronger erectile response in men. Cardiovascular monitoring required.",
+      "Naltrexone, indomethacin, and other oral medications. PT-141 slows gastric motility, reducing oral bioavailability of these drugs. Schedule oral meds away from PT-141 doses.",
+      "Antihypertensives. PT-141 raises blood pressure transiently. Effects on patients on BP medications are unpredictable; medical supervision recommended.",
+      "Other melanocortin agonists (Melanotan II, setmelanotide). Additive side effects. Avoid combination.",
+      "Alcohol. Minimal interaction (unlike flibanserin). Safe in moderate amounts.",
+      "PDE5 inhibitors (sildenafil, tadalafil). Off-label combination shows stronger erectile response in men. Cardiovascular monitoring required.",
     ],
   },
   {
     id: "storage",
-    title: "Storage & Handling",
+    title: "How should PT-141 be stored?",
     body: [
       "Vyleesi autoinjector: refrigerate at 2–8°C in original carton until use. Do not freeze.",
       "Lyophilized research-grade powder: Store at -20°C for long-term storage; refrigerate at 2–8°C for short-term.",
@@ -247,14 +380,16 @@ const sections = [
   },
   {
     id: "limitations",
-    title: "Research Limitations & Regulatory Status",
+    title: "What are the limitations of PT-141 research?",
+    intro:
+      "PT-141 (Vyleesi) is FDA-approved ONLY for acquired, generalized HSDD in premenopausal women. ALL OFF-LABEL USES (male ED, postmenopausal HSDD, SSRI-induced dysfunction) are not FDA-approved. Researchers have questioned the relevance and effect sizes of the Phase 3 rating scales. Contraindicated in pregnancy (animal teratogenicity), uncontrolled hypertension, and cardiovascular disease. Hyperpigmentation risk increases beyond 8 doses/month and may not resolve after stopping. NOT WADA-prohibited.",
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           PT-141 (brand name Vyleesi) is FDA-approved ONLY for acquired, generalized hypoactive sexual desire disorder (HSDD) in premenopausal women. The FDA labeling specifically excludes men, postmenopausal women, and use to enhance sexual performance.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          ALL OFF-LABEL USES — including male ED, postmenopausal HSDD, and SSRI-induced dysfunction — are not FDA-approved. Off-label prescribing is legal under physician judgment but lacks the controlled trial evidence supporting the approved indication.
+          ALL OFF-LABEL USES &mdash; including male ED, postmenopausal HSDD, and SSRI-induced dysfunction &mdash; are not FDA-approved. Off-label prescribing is legal under physician judgment but lacks the controlled trial evidence supporting the approved indication.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Researchers have questioned the relevance and effect sizes of the rating scales used in Phase 3 trials. The drug&apos;s clinical benefit was statistically significant but considered modest by some reviewers. Treatment should be discontinued after 8 weeks if no improvement in sexual desire and distress.
@@ -269,8 +404,30 @@ const sections = [
     ),
   },
   {
+    id: "where-to-buy",
+    title: "Where to source PT-141",
+    intro:
+      "PT-141 is FDA-approved as Vyleesi — prescription, premenopausal women with HSDD only — distributed through specialty pharmacies. Off-label and research-grade PT-141 is sold by specialty peptide vendors. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — including a nasal-format option (the original PT-141 delivery route in early clinical trials).",
+    node: (
+      <div className="space-y-4">
+        <VendorHighlightBlock
+          highlights={[
+            { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
+            { slug: "behemoth-labz", note: "Nasal + vial formats" },
+            { slug: "ascension-peptides" },
+          ]}
+        />
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            See all 17 verified vendors &rarr;
+          </Link>
+        </p>
+      </div>
+    ),
+  },
+  {
     id: "faq",
-    title: "FAQ",
+    title: "PT-141 FAQ",
     node: (
       <div className="space-y-4">
         {faqs.map((f, i) => (
@@ -310,7 +467,7 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Diamond LE, Earle DC, Rosen RC, et al. Double-blind, placebo-controlled evaluation of the safety, pharmacokinetic properties and pharmacodynamic effects of intranasal PT-141, a melanocortin receptor agonist, in healthy males and patients with mild-to-moderate erectile dysfunction. Int J Impot Res. 2004;16(1):51-9.{" "}
+          Diamond LE, Earle DC, Rosen RC, et al. Double-blind, placebo-controlled evaluation of the safety, pharmacokinetic properties and pharmacodynamic effects of intranasal PT-141. Int J Impot Res. 2004;16(1):51-9.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/14963471/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/14963471/
           </a>
@@ -359,7 +516,7 @@ const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
 export default function PT141Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"PT-141 (Bremelanotide / Vyleesi)","description":"PT-141 (Bremelanotide, Vyleesi) research profile: FDA-approved for HSDD, MC4R mechanism, on-demand dosing, off-label male ED use, side effects.","url":"https://profpeptide.com/peptides/pt-141","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"PT-141 (Bremelanotide / Vyleesi)","description":"PT-141 (Bremelanotide, Vyleesi) research profile: FDA-approved for HSDD, MC4R mechanism, on-demand dosing, off-label male ED use, side effects, FAQ.","url":"https://profpeptide.com/peptides/pt-141","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"PT-141"}]}} />
     <div className="section max-w-3xl">
       <Link
@@ -374,15 +531,29 @@ export default function PT141Page() {
         <span className="tag">Sexual Health</span>
         <span className="tag">FDA-Approved</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-8">
-        Also Known As: Bremelanotide, Vyleesi, MC4R Agonist
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+        Last reviewed: May 24, 2026
       </p>
+      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Bremelanotide, Vyleesi, MC4R Agonist
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Cyclic Heptapeptide &mdash; Melanocortin Receptor Agonist (MC1R/MC3R/MC4R/MC5R)
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> FDA-approved as Vyleesi (June 2019) for premenopausal HSDD only. All other uses off-label. Not on WADA prohibited list.
+        </p>
+      </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
+        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is PT-141?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            PT-141 (bremelanotide, brand name Vyleesi) is a synthetic cyclic heptapeptide melanocortin receptor agonist developed by Palatin Technologies. It was derived from melanotan II by removing the C-terminal amide group, eliminating the strong tanning effect while preserving sexual desire and arousal effects. The FDA approved PT-141 as Vyleesi in June 2019 for treatment of acquired, generalized hypoactive sexual desire disorder (HSDD) in premenopausal women — making it the first FDA-approved peptide that targets sexual desire through brain pathways rather than peripheral vascular mechanisms. Off-label use in men with erectile dysfunction is also documented.
+            PT-141 (bremelanotide, brand name Vyleesi) is a synthetic cyclic heptapeptide melanocortin receptor agonist developed by Palatin Technologies. It was derived from{" "}
+            <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>{" "}
+            by removing the C-terminal amide group, eliminating the strong tanning effect while preserving sexual desire and arousal effects. The FDA approved PT-141 as Vyleesi in June 2019 for treatment of acquired, generalized hypoactive sexual desire disorder (HSDD) in premenopausal women &mdash; making it the first FDA-approved peptide that targets sexual desire through brain pathways rather than peripheral vascular mechanisms. Off-label use in men with erectile dysfunction is also documented. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -398,24 +569,14 @@ export default function PT141Page() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> FDA-approved dose: 1.75 mg subcutaneously via Vyleesi autoinjector, ~45 minutes before anticipated sexual activity. Maximum 1 dose per 24 hours, maximum 8 doses per month. See{" "}
-            <a href="#dosing" className="text-[#0891b2] hover:underline">
-              Dosing &amp; Protocols
-            </a>{" "}
-            below for details.
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> FDA-approved dose: 1.75 mg subcutaneously via Vyleesi autoinjector, ~45 minutes before anticipated sexual activity. Maximum 1 dose per 24 hours, maximum 8 doses per month.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PT-141 is FDA-approved as Vyleesi (prescription, premenopausal women with HSDD only). Off-label and research-grade PT-141 is sold by specialty peptide vendors. See{" "}
-            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
-              Verified Peptide Vendors &rarr;
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
+            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+              Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
-          </p>
-          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
-            <a href="https://www.amazon.com/s?k=sexual+health+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
-              Find related supplements on Amazon.
-            </a>
           </p>
         </div>
       </div>
@@ -428,6 +589,11 @@ export default function PT141Page() {
             <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
+            {s.intro && (
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+                {s.intro}
+              </p>
+            )}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
@@ -461,8 +627,8 @@ export default function PT141Page() {
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/melanotan-ii" className="text-sm font-medium text-[#0891b2] hover:underline">Melanotan II</Link>
+        <Link href="/peptides/kpv" className="text-sm font-medium text-[#0891b2] hover:underline">KPV</Link>
         <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
-        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#0891b2] hover:underline">Wolverine Stack</Link>
         </div>
       </div>
 
