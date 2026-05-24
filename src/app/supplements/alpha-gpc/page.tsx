@@ -611,7 +611,8 @@ export default function AlphaGPCPage() {
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 300–600 mg once daily for cognitive baseline; 600 mg taken 60–90 minutes pre-workout for the acute GH and force-production effect; 1200 mg/day in divided doses for clinical dementia research (not a healthy-user starting point).
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — see the quality-markers checklist in the Where to Buy section below before clicking through.
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.{" "}
+            <a href="https://www.amazon.com/s?k=alpha+gpc&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#0891b2] hover:underline">Shop Alpha-GPC on Amazon &rarr;</a>
           </p>
         </div>
       </div>
