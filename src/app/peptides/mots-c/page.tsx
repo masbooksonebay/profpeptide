@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/mots-c",
-  title: "MOTS-c — Mitochondrial Peptide, Mechanism, Dosage, Research | Prof. Peptide",
+  title: "MOTS-c — Mitochondrial Peptide, Mechanism, Dosage, Side Effects | Prof. Peptide",
   description:
-    "MOTS-c (mitochondrial-derived peptide) research profile: AMPK mechanism, insulin sensitivity research, dosing protocols, side effects, and longevity applications.",
+    "MOTS-c (mitochondrial-derived peptide) research profile: AMPK mechanism, insulin sensitivity research, dosing protocols, side effects, FAQ, and longevity applications.",
 });
 
 const faqs = [
@@ -27,7 +28,15 @@ const faqs = [
   },
   {
     q: "Does MOTS-c help with weight loss?",
-    a: "Indirectly. MOTS-c improves metabolism through AMPK activation rather than appetite suppression. It does not produce GLP-class weight loss. Its primary use cases are improving insulin sensitivity, preserving muscle mass, and supporting mitochondrial function rather than direct weight reduction.",
+    a: (
+      <>
+        Indirectly. MOTS-c improves metabolism through AMPK activation rather than appetite suppression. It does not produce GLP-class weight loss like{" "}
+        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+        or{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>
+        . Its primary use cases are improving insulin sensitivity, preserving muscle mass, and supporting mitochondrial function rather than direct weight reduction.
+      </>
+    ),
   },
   {
     q: "Can MOTS-c help preserve muscle during weight loss?",
@@ -45,7 +54,7 @@ const faqs = [
     q: "Where can I buy MOTS-c?",
     a: (
       <>
-        MOTS-c is sold by specialty research peptide vendors. PP maintains a list of vetted vendors with verified discount codes — see{" "}
+        MOTS-c is sold by specialty research peptide vendors. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
         <Link href="/coupons" className="text-[#0891b2] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
@@ -63,7 +72,7 @@ const studies = [
     year: "2015",
     access: "Open Access via PMC",
     url: "https://pubmed.ncbi.nlm.nih.gov/25738459/",
-    summary: "The foundational study that first identified MOTS-c and established its role in metabolic regulation. Researchers found that MOTS-c is encoded by mitochondrial DNA, is released into circulation in response to metabolic stress, and acts on skeletal muscle to improve glucose uptake via AMPK activation. In mice fed a high-fat diet, MOTS-c treatment significantly reduced obesity and insulin resistance without altering food intake \u2014 suggesting a direct effect on metabolic rate. This paper established MOTS-c as a novel mitochondrial-derived hormone with broad metabolic relevance.",
+    summary: "The foundational study that first identified MOTS-c and established its role in metabolic regulation. Researchers found that MOTS-c is encoded by mitochondrial DNA, is released into circulation in response to metabolic stress, and acts on skeletal muscle to improve glucose uptake via AMPK activation. In mice fed a high-fat diet, MOTS-c treatment significantly reduced obesity and insulin resistance without altering food intake.",
   },
   {
     title: "MOTS-c is an Exercise-Induced Mitochondrial-Encoded Regulator of Age-Dependent Physical Decline and Muscle Homeostasis",
@@ -72,7 +81,7 @@ const studies = [
     year: "2021",
     access: "Open Access",
     url: "https://www.nature.com/articles/s41467-020-20790-0",
-    summary: "This study established MOTS-c as an exercise-induced peptide \u2014 showing that MOTS-c levels increase 11.9-fold in skeletal muscle after exercise in humans. More strikingly, MOTS-c treatment significantly enhanced physical performance in young, middle-aged, and old mice. When treatment was started very late in life (equivalent to human old age), it still improved physical capacity and healthspan \u2014 suggesting therapeutic potential even when initiated after decline has begun. This positions MOTS-c as a potential exercise mimetic for aging populations with limited mobility.",
+    summary: "This study established MOTS-c as an exercise-induced peptide — showing that MOTS-c levels increase 11.9-fold in skeletal muscle after exercise in humans. MOTS-c treatment significantly enhanced physical performance in young, middle-aged, and old mice — even when treatment was started very late in life (equivalent to human old age). This positions MOTS-c as a potential exercise mimetic for aging populations with limited mobility.",
   },
   {
     title: "MOTS-c: A Promising Mitochondrial-Derived Peptide for Therapeutic Exploitation",
@@ -81,7 +90,7 @@ const studies = [
     year: "2023",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9905433/",
-    summary: "A comprehensive review synthesizing a decade of MOTS-c research across multiple disease models. The review covers MOTS-c\u2019s mechanisms including AMPK activation, nuclear translocation during stress, anti-inflammatory effects, and insulin sensitization. It documents lower MOTS-c levels in type 2 diabetes, gestational diabetes, and obese children \u2014 establishing clinical associations between MOTS-c deficiency and metabolic disease. The paper also discusses MOTS-c\u2019s cardiovascular protective effects and its potential applications in aging, noting that no effective clinical application method has yet been established.",
+    summary: "A comprehensive review synthesizing a decade of MOTS-c research across multiple disease models. The review covers MOTS-c's mechanisms including AMPK activation, nuclear translocation during stress, anti-inflammatory effects, and insulin sensitization. It documents lower MOTS-c levels in type 2 diabetes, gestational diabetes, and obese children — establishing clinical associations between MOTS-c deficiency and metabolic disease.",
   },
   {
     title: "Mitochondria-Derived Peptide MOTS-c Restores Mitochondrial Respiration in Type 2 Diabetic Heart",
@@ -90,55 +99,64 @@ const studies = [
     year: "2025",
     access: "Open Access",
     url: "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1602271/full",
-    summary: "One of the most recent MOTS-c studies, examining its effects in a type 2 diabetic heart model. MOTS-c treatment restored mitochondrial respiratory function, reduced cardiac oxidative stress, and delayed weight gain in diabetic rats \u2014 without affecting food intake. The study confirms that MOTS-c directly increases whole-body metabolic rate rather than simply reducing appetite, and extends its relevance beyond skeletal muscle to cardiac metabolic function \u2014 a significant finding given that heart failure is the leading cause of death in type 2 diabetes.",
+    summary: "One of the most recent MOTS-c studies, examining its effects in a type 2 diabetic heart model. MOTS-c treatment restored mitochondrial respiratory function, reduced cardiac oxidative stress, and delayed weight gain in diabetic rats — without affecting food intake. The study confirms that MOTS-c directly increases whole-body metabolic rate rather than simply reducing appetite, and extends its relevance to cardiac metabolic function.",
   },
 ];
 
 const sections = [
   {
     id: "mechanism",
-    title: "Mechanism of Action",
+    title: "How does MOTS-c work?",
+    intro:
+      "MOTS-c activates AMPK (AMP-activated protein kinase), the same master energy regulator activated by metformin and exercise. It's encoded inside the mitochondrial genome itself (12S rRNA region) and acts as a retrograde signal from mitochondria to the nucleus, regulating which nuclear genes are expressed during metabolic stress. The mitochondrial origin is unique among research peptides and is why MOTS-c sits at the intersection of metabolic and longevity research.",
     body: [
-      "AMPK Pathway Activation [1] — MOTS-c activates AMPK (AMP-activated protein kinase), a master regulator of cellular energy. AMPK activation is the same pathway used by metformin and triggered by exercise, leading to increased glucose uptake and improved metabolism.",
-      "Mitochondrial Communication [2] — MOTS-c is encoded in the mitochondrial genome (12S rRNA region) and acts as a retrograde signal from mitochondria to the nucleus. It regulates which nuclear genes are expressed during metabolic stress.",
-      "Skeletal Muscle Glucose Uptake [1] — In skeletal muscle, MOTS-c upregulates GLUT4 expression and enhances insulin-independent glucose uptake. This is a primary mechanism for the insulin sensitivity improvements observed in animal models.",
-      "Muscle Atrophy Prevention [3] — MOTS-c reduces myostatin (a negative regulator of muscle mass) and other muscle-wasting signaling. In animal studies, it prevented atrophy associated with aging and metabolic disease.",
-      "Cardiac Function Restoration [4] — In rat models of type 2 diabetic heart disease, daily MOTS-c (15 mg/kg for 3 weeks) restored mitochondrial respiration and reduced left ventricular wall thickness.",
+      "AMPK Pathway Activation [1]. MOTS-c activates AMPK (AMP-activated protein kinase), a master regulator of cellular energy. AMPK activation is the same pathway used by metformin and triggered by exercise, leading to increased glucose uptake and improved metabolism.",
+      "Mitochondrial Communication [2]. MOTS-c is encoded in the mitochondrial genome (12S rRNA region) and acts as a retrograde signal from mitochondria to the nucleus. It regulates which nuclear genes are expressed during metabolic stress.",
+      "Skeletal Muscle Glucose Uptake [1]. In skeletal muscle, MOTS-c upregulates GLUT4 expression and enhances insulin-independent glucose uptake. This is a primary mechanism for the insulin sensitivity improvements observed in animal models.",
+      "Muscle Atrophy Prevention [3]. MOTS-c reduces myostatin (a negative regulator of muscle mass) and other muscle-wasting signaling. In animal studies, it prevented atrophy associated with aging and metabolic disease.",
+      "Cardiac Function Restoration [4]. In rat models of type 2 diabetic heart disease, daily MOTS-c (15 mg/kg for 3 weeks) restored mitochondrial respiration and reduced left ventricular wall thickness.",
     ],
   },
   {
     id: "research",
-    title: "Key Research Areas",
+    title: "What is MOTS-c used for?",
+    intro:
+      "MOTS-c's research evidence base spans type 2 diabetes and insulin sensitivity (the originating area), mitochondrial disease (MELAS syndrome), sarcopenia and muscle aging, cardiovascular disease in diabetic models, and pancreatic beta-cell senescence. Phase 1 clinical trials have begun. The bulk of evidence remains animal and cell-based.",
     body: [
-      "Type 2 Diabetes [1][5] — MOTS-c improves insulin sensitivity in animal models. Human studies show MOTS-c blood levels are lower in T2D, gestational diabetes, and obese children. Phase 1 clinical trials have begun.",
-      "Mitochondrial Disease [2] — Investigated for MELAS syndrome (mitochondrial encephalopathy), a severe genetic mitochondrial disorder. Effects on mtDNA mutation models are mixed.",
-      "Sarcopenia and Muscle Aging [3] — Reduces myostatin, prevents muscle atrophy in obesity and aging models. Of interest for age-related muscle loss.",
-      "Cardiovascular Disease [4] — Restores mitochondrial respiration in diabetic heart tissue. May offer cardioprotective effects via NRG1-ErbB4 pathway.",
-      "Pancreatic Beta-Cell Senescence [5] — A 2025 Experimental & Molecular Medicine study showed MOTS-c reduces beta-cell senescence in aged mice, slowing glucose intolerance progression.",
+      "Type 2 Diabetes [1][5]. MOTS-c improves insulin sensitivity in animal models. Human studies show MOTS-c blood levels are lower in T2D, gestational diabetes, and obese children. Phase 1 clinical trials have begun.",
+      "Mitochondrial Disease [2]. Investigated for MELAS syndrome (mitochondrial encephalopathy), a severe genetic mitochondrial disorder. Effects on mtDNA mutation models are mixed.",
+      "Sarcopenia and Muscle Aging [3]. Reduces myostatin, prevents muscle atrophy in obesity and aging models. Of interest for age-related muscle loss.",
+      "Cardiovascular Disease [4]. Restores mitochondrial respiration in diabetic heart tissue. May offer cardioprotective effects via NRG1-ErbB4 pathway.",
+      "Pancreatic Beta-Cell Senescence [5]. A 2025 Experimental & Molecular Medicine study showed MOTS-c reduces beta-cell senescence in aged mice, slowing glucose intolerance progression.",
     ],
   },
   {
     id: "timeline",
-    title: "What to Expect (Timeline)",
+    title: "How long does MOTS-c take to work?",
+    intro:
+      "MOTS-c is mechanism-driven rather than producing dramatic short-term effects. In animal studies, daily dosing for 3 weeks restored mitochondrial function. Human clinical effects are not well characterized. Most users report subtle changes in energy and recovery rather than acute effects — consistent with a mitochondrial-function-restoration mechanism rather than acute appetite suppression or hormonal stimulation.",
     content:
-      "MOTS-c is mechanism-driven rather than producing dramatic short-term effects. In animal studies, daily dosing for 3 weeks restored mitochondrial function. Human clinical effects are not well characterized. Most users report subtle changes in energy and recovery rather than acute effects.",
+      "MOTS-c is mechanism-driven rather than producing dramatic short-term effects. In animal studies, daily dosing for 3 weeks restored mitochondrial function. Human clinical effects are not well characterized. Most users report subtle changes in energy and recovery rather than acute effects — consistent with a mitochondrial-function-restoration mechanism rather than acute appetite suppression or hormonal stimulation. Effects in research protocols accumulate over 4–12 weeks of consistent daily dosing.",
   },
   {
     id: "dosing",
-    title: "Dosing & Protocols",
+    title: "How is MOTS-c dosed?",
+    intro:
+      "MOTS-c is administered as a daily subcutaneous injection in research protocols. There are no FDA-approved dosing standards because MOTS-c is not approved for human use. Common research-grade dose is 5–10 mg subcutaneously once daily; some protocols use 5 mg twice weekly for maintenance. Animal studies have ranged 0.5–15 mg/kg/day. Cycle length 4–12 weeks is common.",
     node: (
       <div className="space-y-3">
-        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          MOTS-c is administered as a daily subcutaneous injection in research protocols. There are no FDA-approved dosing standards because MOTS-c is not approved for human use.
-        </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Common research-grade dose: 5–10 mg subcutaneously once daily</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Some protocols use 5 mg twice weekly for maintenance</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Animal study doses ranged from 0.5–15 mg/kg/day</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle length: 4–12 weeks is common, with extended use in some longevity protocols</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard research-grade dose.</span> 5–10 mg subcutaneously once daily.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Maintenance protocols.</span> Some protocols use 5 mg twice weekly for maintenance.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Animal study range.</span> 0.5–15 mg/kg/day.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle length.</span> 4–12 weeks is common; some longevity protocols use extended use.</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-          MOTS-c is one of the largest peptides commonly used at this dose range, which makes per-dose cost relatively high compared to smaller peptides like BPC-157 or TB-500.
+          MOTS-c is one of the largest peptides commonly used at this dose range, which makes per-dose cost relatively high compared to smaller peptides like{" "}
+          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          or{" "}
+          <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>
+          .
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
@@ -148,8 +166,152 @@ const sections = [
     ),
   },
   {
+    id: "how-to-take",
+    title: "How is MOTS-c administered?",
+    intro: (
+      <>
+        MOTS-c is given as a subcutaneous injection &mdash; under the skin, not into muscle &mdash; once daily using a small insulin syringe. Morning dosing is most common in research protocols, often before exercise (since endogenous MOTS-c is exercise-induced). For the practical mechanics of insulin syringes, units vs mcg conversion, and subcutaneous technique, see the{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        guide.
+      </>
+    ),
+    node: (
+      <div className="space-y-4">
+        <ol className="list-decimal list-inside space-y-1">
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection, once daily. Common sites: abdomen, thigh, upper arm.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Morning dosing is most common, often before exercise where used in metabolic research &mdash; aligns with endogenous exercise-induced MOTS-c release.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine; no fasting requirement.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each day to reduce localized irritation.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> If less than 12 hours late, take as soon as remembered. Otherwise skip and resume on the next scheduled day.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle structure.</span> 4–12 weeks typical; some longevity protocols use extended cycles.</li>
+        </ol>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Timing context.</span> MOTS-c is endogenously exercise-induced &mdash; skeletal muscle MOTS-c levels rise 11.9-fold after exercise in humans. Research-grade administration aligned with training (morning, pre-workout) is a deliberate choice to layer exogenous dosing onto the natural exercise-induced pulse. The pharmacokinetic profile of exogenous MOTS-c in humans is not well characterized.
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Frequency</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Once daily during the cycle (4–12 weeks typical)</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Best time of day</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Morning, often pre-workout to align with endogenous exercise-induced MOTS-c pulse</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Food</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">No fasting required; inject with or without food</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Injection site rotation</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Rotate between abdomen, thigh, upper arm</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Half-life</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Not well characterized in humans; once-daily dosing is research convention</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Steady-state</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Effects accumulate over weeks of daily dosing &mdash; mitochondrial-function restoration is gradual</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Reconstitution math.</span> Choose your bacteriostatic water volume based on dose precision. Lower water volume = higher concentration = smaller syringe draw. MOTS-c research vials are typically 10 mg. Because per-dose amounts are large (5–10 mg), 1 mL reconstitution keeps syringe draws within insulin syringe capacity. All units below are measured on a U-100 insulin syringe (100 units = 1 mL). The table assumes a 10 mg vial.
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">1 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">2.5 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">5 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">10 mg dose</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">1 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">25 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">50 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">100 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">2 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">5 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">20 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">50 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">100 units</td>
+                <td className="px-4 py-3 text-gray-500 dark:text-slate-500 whitespace-nowrap italic">n/a*</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">3 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">3.33 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">30 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">75 units</td>
+                <td className="px-4 py-3 text-gray-500 dark:text-slate-500 whitespace-nowrap italic">n/a*</td>
+                <td className="px-4 py-3 text-gray-500 dark:text-slate-500 whitespace-nowrap italic">n/a*</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 dark:text-slate-400 italic leading-relaxed">
+          *Draw exceeds standard 100-unit insulin syringe capacity at this reconstitution volume &mdash; would require split injections or a lower reconstitution volume.
+        </p>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Units vs mcg.</span> At a 10 mg vial, each unit drawn delivers 100 mcg of MOTS-c at 1 mL reconstitution, 50 mcg at 2 mL, and 33 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
+          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: "stacks",
+    title: "What does MOTS-c stack well with?",
+    intro:
+      "MOTS-c is most commonly used standalone in research. Notable pairings include NAD+ precursors (NMN, NR) for mitochondrial-focused research, GLP-class drugs (semaglutide, tirzepatide, retatrutide) for muscle preservation during rapid weight loss (theoretical based on myostatin suppression — no clinical validation), and resistance training (which is the natural endogenous trigger). Metformin shares the AMPK activation pathway — combined use is theoretical.",
+    node: (
+      <ol className="list-decimal list-inside space-y-1">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standalone use.</span> Most common in MOTS-c research.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">NAD+ precursors.</span>{" "}
+          <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>{" "}
+          and NMN/NR are combined in mitochondrial-focused research; both target mitochondrial function through different pathways.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">GLP-class drugs.</span>{" "}
+          <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
+          <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>,{" "}
+          <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>{" "}
+          proposed combination during weight loss to preserve muscle mass via MOTS-c&apos;s myostatin-suppressing effect, though no clinical data validates this combination.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training.</span> Natural pairing since endogenous MOTS-c levels rise 11.9-fold with exercise &mdash; exogenous MOTS-c amplifies the exercise-induced metabolic benefits.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Metformin.</span> Mechanistic overlap (both activate AMPK), so combined use is theoretical rather than established.</li>
+      </ol>
+    ),
+  },
+  {
     id: "side-effects",
-    title: "Side Effects & Safety",
+    title: "What are the side effects of MOTS-c?",
+    intro:
+      "MOTS-c has limited human clinical data. The peptide is endogenously produced, which suggests low immunogenicity, but long-term exogenous administration safety has not been established. The most-reported user effects are mild injection-site reactions. Mild headache and fatigue are uncommon. No documented serious adverse events at researched doses, but the data set is small.",
     node: (
       <div className="space-y-5">
         <div>
@@ -157,8 +319,8 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injection site reactions — minor</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Most users report no acute systemic effects</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Injection site reactions.</span> Minor &mdash; mild redness or irritation.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">No common systemic effects.</span> Most users report no acute systemic effects.</li>
           </ol>
         </div>
         <div>
@@ -166,9 +328,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Fatigue</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — uncommon</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mild headache.</span> Inconsistent across users.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Fatigue.</span> Inconsistent across users.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Nausea.</span> Uncommon.</li>
           </ol>
         </div>
         <div>
@@ -176,8 +338,8 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term human safety data is limited</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Severe allergic reactions — theoretical, not commonly reported</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Long-term safety data limited.</span> Most evidence is preclinical.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Severe allergic reactions.</span> Theoretical, not commonly reported.</li>
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -187,42 +349,20 @@ const sections = [
     ),
   },
   {
-    id: "how-to-take",
-    title: "How to Take",
-    body: [
-      "Route: Subcutaneous injection (under the skin), once daily. Common injection sites are the abdomen, thigh, and upper arm.",
-      "Time of day: Morning dosing is most common in research protocols, often before exercise where used in metabolic research.",
-      "With or without food: Either is fine.",
-      "Site rotation: Use a different site each day to reduce irritation.",
-      "Missed dose: If less than 12 hours late, take as soon as remembered. Otherwise skip and resume on the next scheduled day.",
-      "Reconstitution: Reconstitute with bacteriostatic water for injection (BAC water). Swirl gently — do not shake.",
-      "Cycle: Most research protocols run 4–12 weeks. Some longevity protocols use longer cycles.",
-    ],
-  },
-  {
-    id: "stacks",
-    title: "Common Stacks",
-    body: [
-      "Standalone use — most common in MOTS-c research.",
-      "NAD+ precursors (NMN, NR) — combined in mitochondrial-focused research; both target mitochondrial function through different pathways.",
-      "GLP-class drugs (semaglutide, tirzepatide, retatrutide) — proposed combination during weight loss to preserve muscle mass via MOTS-c's myostatin-suppressing effect, though no clinical data validates this combination.",
-      "Resistance training — natural pairing since endogenous MOTS-c levels rise with exercise, suggesting it amplifies exercise-induced metabolic benefits.",
-      "Metformin — mechanistic overlap (both activate AMPK), so combined use is theoretical rather than established.",
-    ],
-  },
-  {
     id: "interactions",
-    title: "Drug & Peptide Interactions",
+    title: "Does MOTS-c interact with other drugs?",
+    intro:
+      "MOTS-c's relevant interactions are with diabetes medications (theoretically lower insulin or sulfonylurea requirements over time as insulin sensitivity improves — monitor blood glucose), metformin (overlapping AMPK pathway), and mitochondrial-targeted therapies (NAD+ precursors, CoQ10 — mechanism overlap, research-stage). No major drug interactions reported in early human clinical exposure.",
     body: [
-      "Diabetes medications — MOTS-c may improve insulin sensitivity in animal models, theoretically lowering insulin or sulfonylurea requirements over time. Monitor blood glucose.",
-      "Metformin — overlapping AMPK activation pathway; theoretical synergy but no clinical validation.",
-      "Mitochondrial-targeted therapies (NAD+ precursors, CoQ10) — overlap in mechanism; combined use is research-stage.",
+      "Diabetes medications. MOTS-c may improve insulin sensitivity in animal models, theoretically lowering insulin or sulfonylurea requirements over time. Monitor blood glucose.",
+      "Metformin. Overlapping AMPK activation pathway; theoretical synergy but no clinical validation.",
+      "Mitochondrial-targeted therapies (NAD+ precursors, CoQ10). Overlap in mechanism; combined use is research-stage.",
       "No major drug interactions reported in early human clinical exposure.",
     ],
   },
   {
     id: "storage",
-    title: "Storage & Handling",
+    title: "How should MOTS-c be stored?",
     body: [
       "Lyophilized (powder) form: Store at 2–8°C sealed; freeze at -20°C for long-term storage.",
       "Reconstituted solution: Store at 2–8°C; typically stable for 28–30 days.",
@@ -233,14 +373,16 @@ const sections = [
   },
   {
     id: "limitations",
-    title: "Research Limitations & Regulatory Status",
+    title: "What are the limitations of MOTS-c research?",
+    intro:
+      "MOTS-c is investigational and not approved by the FDA, EMA, or any major regulatory body for therapeutic use. Phase 1 clinical trials have begun, but no Phase 2 or Phase 3 efficacy trials have been completed. The bulk of research evidence remains in animal models and cell-based studies. WADA status is currently uncertain — MOTS-c is not specifically named on the prohibited list but could fall under broader peptide hormone categories.",
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           MOTS-c is investigational and not approved by the FDA, EMA, or any major regulatory body for therapeutic use. Phase 1 clinical trials have begun, but no Phase 2 or Phase 3 efficacy trials have been completed. The bulk of research evidence remains in animal models and cell-based studies.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Long-term human safety data is limited. Because MOTS-c is endogenously produced, immunogenicity risk is theoretically low, but long-term exogenous administration safety has not been established. Anti-doping status is currently uncertain — MOTS-c is not specifically named on the WADA prohibited list but could fall under broader peptide hormone categories.
+          Long-term human safety data is limited. Because MOTS-c is endogenously produced, immunogenicity risk is theoretically low, but long-term exogenous administration safety has not been established. Anti-doping status is currently uncertain &mdash; MOTS-c is not specifically named on the WADA prohibited list but could fall under broader peptide hormone categories.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Research-grade MOTS-c sold by specialty peptide vendors is intended for laboratory research use only and is not approved for human consumption.
@@ -249,8 +391,30 @@ const sections = [
     ),
   },
   {
+    id: "where-to-buy",
+    title: "Where to source MOTS-c",
+    intro:
+      "MOTS-c is not FDA-approved and is sold only as a research-grade peptide. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — including a nasal-spray format option that's interesting for the metabolic research context.",
+    node: (
+      <div className="space-y-4">
+        <VendorHighlightBlock
+          highlights={[
+            { slug: "ascension-peptides" },
+            { slug: "behemoth-labz" },
+            { slug: "purerawz", note: "Nasal spray format" },
+          ]}
+        />
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            See all 17 verified vendors &rarr;
+          </Link>
+        </p>
+      </div>
+    ),
+  },
+  {
     id: "faq",
-    title: "FAQ",
+    title: "MOTS-c FAQ",
     node: (
       <div className="space-y-4">
         {faqs.map((f, i) => (
@@ -330,7 +494,7 @@ const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
 export default function MOTScPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"MOTS-c","description":"MOTS-c (mitochondrial-derived peptide) research profile: AMPK mechanism, insulin sensitivity research, dosing protocols, side effects, and longevity applications.","url":"https://profpeptide.com/peptides/mots-c","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"MOTS-c","description":"MOTS-c (mitochondrial-derived peptide) research profile: AMPK mechanism, insulin sensitivity research, dosing protocols, side effects, FAQ, and longevity applications.","url":"https://profpeptide.com/peptides/mots-c","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"MOTS-c"}]}} />
     <div className="section max-w-3xl">
       <Link
@@ -345,15 +509,27 @@ export default function MOTScPage() {
         <span className="tag">Metabolic &amp; Weight Loss</span>
         <span className="tag">Research-Grade</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-8">
-        Also Known As: Mitochondrial ORF of the 12S rRNA Type-c, MOTSc
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+        Last reviewed: May 23, 2026
       </p>
+      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Mitochondrial ORF of the 12S rRNA Type-c, MOTSc
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Mitochondrial-Derived Peptide (MDP) &mdash; AMPK Activator / Exercise Mimetic
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved; research-use only. Phase 1 trials begun. WADA status uncertain (not specifically named on prohibited list).
+        </p>
+      </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
+        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is MOTS-c?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            MOTS-c is a 16-amino-acid peptide encoded inside the mitochondrial genome itself — making it one of the first known mitochondria-derived peptides. Discovered in 2015 at USC, it acts as a hormone-like signal from mitochondria to the rest of the body, regulating metabolism through AMPK pathways. Research interest has focused on insulin resistance, type 2 diabetes, muscle preservation, and cellular aging. MOTS-c blood levels naturally decline with age, which has made it a candidate for longevity research.
+            MOTS-c is a 16-amino-acid peptide encoded inside the mitochondrial genome itself &mdash; making it one of the first known mitochondria-derived peptides. Discovered in 2015 at USC, it acts as a hormone-like signal from mitochondria to the rest of the body, regulating metabolism through AMPK pathways (the same master energy regulator activated by metformin and exercise). Research interest has focused on insulin resistance, type 2 diabetes, muscle preservation, and cellular aging. MOTS-c blood levels naturally decline with age, which has made it a candidate for longevity research. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -369,24 +545,14 @@ export default function MOTScPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> MOTS-c is in early-stage clinical research. Animal studies use 0.5–15 mg/kg/day. Common research-grade human dose is 5–10 mg subcutaneously once daily, though there is no validated clinical dosing standard. See{" "}
-            <a href="#dosing" className="text-[#0891b2] hover:underline">
-              Dosing &amp; Protocols
-            </a>{" "}
-            below for details.
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> MOTS-c is in early-stage clinical research. Animal studies use 0.5–15 mg/kg/day. Common research-grade human dose is 5–10 mg subcutaneously once daily, though there is no validated clinical dosing standard.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> MOTS-c is not FDA-approved and is sold only as a research-grade peptide. See{" "}
-            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
-              Verified Peptide Vendors &rarr;
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
+            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+              Verified Discount Codes &rarr;
             </Link>{" "}
-            for current research-grade options.
-          </p>
-          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
-            <a href="https://www.amazon.com/s?k=metabolic+weight+loss+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
-              Find related supplements on Amazon.
-            </a>
+            for current options.
           </p>
         </div>
       </div>
@@ -399,6 +565,11 @@ export default function MOTScPage() {
             <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
+            {s.intro && (
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+                {s.intro}
+              </p>
+            )}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
@@ -434,6 +605,8 @@ export default function MOTScPage() {
         <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#0891b2] hover:underline">Cagrilintide</Link>
         <Link href="/peptides/aod-9604" className="text-sm font-medium text-[#0891b2] hover:underline">AOD-9604</Link>
         <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
+        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
+        <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide</Link>
         </div>
       </div>
 
