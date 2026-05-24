@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -19,7 +20,15 @@ const faqs = [
   },
   {
     q: "How does CagriSema compare to semaglutide alone?",
-    a: "In REDEFINE 1, CagriSema produced 22.7% mean weight loss (trial product estimand) at 68 weeks versus 14.9% with semaglutide alone — about a 50% greater reduction. In REIMAGINE 2 (type 2 diabetes), CagriSema produced 14.2% weight loss and a 1.91-point HbA1c reduction versus 10.2% and 1.76 points with semaglutide. The added cagrilintide component activates amylin receptors in the brainstem, a different appetite pathway than the GLP-1 receptor, which is why the combination outperforms either compound alone.",
+    a: (
+      <>
+        In REDEFINE 1, CagriSema produced 22.7% mean weight loss (trial product estimand) at 68 weeks versus 14.9% with{" "}
+        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+        alone — about a 50% greater reduction. In REIMAGINE 2 (type 2 diabetes), CagriSema produced 14.2% weight loss and a 1.91-point HbA1c reduction versus 10.2% and 1.76 points with semaglutide. The added{" "}
+        <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">cagrilintide</Link>{" "}
+        component activates amylin receptors in the brainstem, a different appetite pathway than the GLP-1 receptor, which is why the combination outperforms either compound alone.
+      </>
+    ),
   },
   {
     q: "How long does CagriSema take to work?",
@@ -31,7 +40,13 @@ const faqs = [
   },
   {
     q: "Can I stack CagriSema with semaglutide or tirzepatide?",
-    a: "No. CagriSema already contains semaglutide 2.4 mg, so adding additional semaglutide, tirzepatide, retatrutide, or any other GLP-1-class compound risks severe gastrointestinal side effects and compounded hypoglycemia without additional benefit. Likewise, do not add standalone cagrilintide — it is already in the formulation at the maintenance dose.",
+    a: (
+      <>
+        No. CagriSema already contains semaglutide 2.4 mg, so adding additional semaglutide,{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>,{" "}
+        <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>, or any other GLP-1-class compound risks severe gastrointestinal side effects and compounded hypoglycemia without additional benefit. Likewise, do not add standalone cagrilintide — it is already in the formulation at the maintenance dose.
+      </>
+    ),
   },
   {
     q: "What happens if I stop CagriSema?",
@@ -106,34 +121,55 @@ const studies = [
 const sections = [
   {
     id: "mechanism",
-    title: "Mechanism of Action",
+    title: "How does CagriSema work?",
+    intro:
+      "CagriSema is a fixed-dose combination of two long-acting peptides that act on non-overlapping appetite pathways. Cagrilintide is a long-acting amylin analogue that engages amylin receptors concentrated in the brainstem. Semaglutide is a GLP-1 receptor agonist that engages GLP-1 receptors in the pancreas, gut, and hypothalamus. Each component drives appetite reduction through a distinct neuronal circuit, and the engineered fatty-acid albumin-binding extends both half-lives to roughly 7 days — supporting synchronized once-weekly subcutaneous dosing in a single pre-blended injection.",
     body: [
-      "Amylin Receptor Activation [4][1] — Cagrilintide is a long-acting amylin analogue that binds amylin receptors concentrated in the brainstem — primarily the area postrema and the nucleus of the solitary tract. Amylin signaling reduces meal size, slows gastric emptying, and promotes satiety through a pathway anatomically and pharmacologically distinct from the GLP-1 receptor system.",
-      "GLP-1 Receptor Activation [1][5] — Semaglutide is a long-acting GLP-1 receptor agonist that activates GLP-1 receptors on pancreatic beta cells, in the gut, and in hypothalamic appetite centers. Activation increases glucose-dependent insulin secretion, suppresses glucagon, slows gastric emptying, and reduces food intake.",
-      "Non-Redundant Brain Targets [1] — Amylin and GLP-1 act on different neuronal populations and signaling pathways. Both ultimately reduce food intake, but through complementary rather than overlapping circuits. The combination produces larger and more durable weight loss than either compound alone — confirmed by REDEFINE 1, where CagriSema (22.7% trial product estimand) outperformed semaglutide alone (14.9%) and cagrilintide alone (11.5%).",
-      "Once-Weekly Half-Lives [4][5] — Both cagrilintide and semaglutide use engineered fatty-acid albumin-binding to extend their plasma half-lives to approximately 7 days each, supporting synchronized once-weekly subcutaneous dosing. The two compounds are formulated together in a single pre-blended injection in the Novo Nordisk product, simplifying administration.",
+      "Amylin receptor activation (cagrilintide component) [4][1]. Cagrilintide binds amylin receptors concentrated in the brainstem — primarily the area postrema and the nucleus of the solitary tract. Amylin signaling reduces meal size, slows gastric emptying, and promotes satiety through a pathway anatomically and pharmacologically distinct from the GLP-1 receptor system. See the standalone profile of cagrilintide for the full mechanism.",
+      "GLP-1 receptor activation (semaglutide component) [1][5]. Semaglutide activates GLP-1 receptors on pancreatic beta cells, in the gut, and in hypothalamic appetite centers. Activation increases glucose-dependent insulin secretion, suppresses glucagon, slows gastric emptying, and reduces food intake. See the standalone profile of semaglutide for the full mechanism.",
+      "Pre-blended 1:1 fixed-dose product [1][5]. CagriSema is formulated as a single subcutaneous injection containing equal milligrams of cagrilintide and semaglutide. The two components are co-titrated in lockstep through a 16-week synchronized escalation to a 2.4 mg / 2.4 mg maintenance dose, used in REDEFINE 1, REDEFINE 2, and REIMAGINE 2.",
+      "Once-weekly half-lives [4][5]. Both cagrilintide and semaglutide use engineered fatty-acid albumin-binding to extend their plasma half-lives to approximately 7 days each, supporting synchronized once-weekly dosing. Steady state is reached at each titration step after 4–5 weeks.",
+    ],
+  },
+  {
+    id: "combination-mechanism",
+    title: "How do cagrilintide and semaglutide work together?",
+    intro:
+      "The strongest argument for CagriSema over either component alone is mechanistic non-redundance. Amylin and GLP-1 receptors sit on different neuronal populations, signal through different downstream pathways, and converge on overlapping but not identical appetite outputs. The result is additive — and in some endpoints, more than additive — weight reduction in head-to-head Phase 3 comparisons. This is the structural reason for the blend.",
+    body: [
+      "Non-redundant brain targets [1]. Amylin and GLP-1 act on different neuronal populations and signaling pathways. Both ultimately reduce food intake, but through complementary rather than overlapping circuits.",
+      "Quantitative additivity in REDEFINE 1 [1]. CagriSema (22.7% trial product estimand) outperformed semaglutide alone (14.9%), cagrilintide alone (11.5%), and placebo (2.3%) over 68 weeks. The combined effect exceeded the sum of each component's marginal weight loss versus placebo, consistent with super-additive interaction at higher dose tiers.",
+      "Glycemic stacking in T2D (REIMAGINE 2) [3]. From a baseline HbA1c of 8.2%, the 2.4 mg / 2.4 mg blend produced a 1.91 percentage-point HbA1c reduction versus 1.76 with semaglutide 2.4 mg alone — a small but statistically significant added effect from the amylin component on top of GLP-1 monotherapy.",
+      "Side-effect profile is GLP-1-dominant [1]. Gastrointestinal events (nausea 55%, vomiting 26.1%, constipation 30.7%) track closely with the semaglutide profile, suggesting the amylin component adds efficacy without proportionally adding GI burden — a favorable therapeutic index argument for the combination.",
+      "Why not just escalate semaglutide further? The 2.4 mg semaglutide dose used in CagriSema is already the maximum approved dose for weight management (Wegovy). Higher GLP-1 monotherapy doses do not produce better tolerability or proportionally more weight loss. Adding a second pathway (amylin) is the way to extend efficacy beyond GLP-1 monotherapy ceiling without exceeding tolerated GLP-1 exposure.",
     ],
   },
   {
     id: "research",
-    title: "Key Research Areas",
+    title: "What is CagriSema used for?",
+    intro:
+      "CagriSema's evidence base is built on the REDEFINE Phase 3 program (REDEFINE 1, 2, 3, 11) and the REIMAGINE 2 trial in type 2 diabetes. The two flagship trials read out in 2025 and supported Novo Nordisk's December 2025 FDA NDA filing. Phase 3 evidence covers obesity with and without type 2 diabetes; the cardiovascular outcomes trial (REDEFINE 3) and long-duration extension (REDEFINE 11) are ongoing.",
     body: [
-      "Obesity Without Diabetes [1] — REDEFINE 1 enrolled 3,417 adults with overweight or obesity and at least one weight-related comorbidity but without type 2 diabetes. Over 68 weeks, CagriSema produced 22.7% mean weight loss (trial product estimand) and 20.4% under the treatment-policy estimand, versus 2.3% with placebo. 91.9% of participants achieved at least 5% weight loss, 60% at least 20%, and 23% at least 30%.",
-      "Obesity With Type 2 Diabetes [2] — REDEFINE 2 enrolled 1,206 adults with overweight or obesity and type 2 diabetes. Over 68 weeks, CagriSema produced 15.7% mean weight loss versus approximately 3.1% with placebo. Weight loss in T2D populations is typically lower than non-diabetic populations across the GLP-1 class.",
-      "Glycemic Control in Type 2 Diabetes [3] — REIMAGINE 2 enrolled 2,728 adults with type 2 diabetes inadequately controlled on metformin. From a baseline HbA1c of 8.2%, CagriSema 2.4/2.4 mg produced a 1.91 percentage-point HbA1c reduction versus 1.76 with semaglutide 2.4 mg alone, and 14.2% weight loss versus 10.2% with semaglutide alone.",
-      "Cardiovascular Outcomes [6] — REDEFINE 3 is an ongoing event-driven cardiovascular outcomes trial enrolling approximately 7,000 adults with established cardiovascular disease (with or without type 2 diabetes), treating for 156 weeks. Results are expected later in the decade.",
-      "Long-Duration Obesity [6] — REDEFINE 11 is an ongoing Phase 3 trial in 600 adults with BMI ≥30, designed to extend the maintenance evidence base. Initial results are expected in the first half of 2027.",
+      "Obesity without type 2 diabetes [1]. REDEFINE 1 enrolled 3,417 adults with overweight or obesity and at least one weight-related comorbidity but without type 2 diabetes. Over 68 weeks, CagriSema produced 22.7% mean weight loss (trial product estimand) and 20.4% under the treatment-policy estimand, versus 2.3% with placebo. 91.9% of participants achieved at least 5% weight loss, 60% at least 20%, and 23% at least 30%.",
+      "Obesity with type 2 diabetes [2]. REDEFINE 2 enrolled 1,206 adults with overweight or obesity and type 2 diabetes. Over 68 weeks, CagriSema produced 15.7% mean weight loss versus approximately 3.1% with placebo. Weight loss in T2D populations is typically lower than non-diabetic populations across the GLP-1 class.",
+      "Glycemic control in type 2 diabetes [3]. REIMAGINE 2 enrolled 2,728 adults with type 2 diabetes inadequately controlled on metformin. From a baseline HbA1c of 8.2%, CagriSema 2.4/2.4 mg produced a 1.91 percentage-point HbA1c reduction versus 1.76 with semaglutide 2.4 mg alone, and 14.2% weight loss versus 10.2% with semaglutide alone.",
+      "Cardiovascular outcomes [7]. REDEFINE 3 is an ongoing event-driven cardiovascular outcomes trial enrolling approximately 7,000 adults with established cardiovascular disease (with or without type 2 diabetes), treating for 156 weeks. Results are expected later in the decade.",
+      "Long-duration obesity [6]. REDEFINE 11 is an ongoing Phase 3 trial in 600 adults with BMI ≥30, designed to extend the maintenance evidence base. Initial results are expected in the first half of 2027.",
     ],
   },
   {
     id: "timeline",
-    title: "What to Expect (Timeline)",
+    title: "How long does CagriSema take to work?",
+    intro:
+      "CagriSema's effects build gradually across the 16-week synchronized titration and the maintenance period that follows. Appetite suppression appears first, modest weight loss accumulates through escalation, and the bulk of weight reduction emerges during the maintenance dose. No plateau was observed at week 68 in either flagship trial.",
     content:
-      "CagriSema effects build gradually across the 16-week synchronized titration and the maintenance period that follows. In REDEFINE 1, most participants noticed reduced appetite within the first 1–2 weeks. Modest weight loss appeared by week 4 at the lowest titration step (0.25 mg / 0.25 mg). Weight loss accumulated through escalation, reaching meaningful levels by the time participants hit the 2.4 mg / 2.4 mg maintenance dose at week 17. Through weeks 17–68, weight loss continued to deepen — and importantly, no weight-loss plateau was observed at week 68 in either REDEFINE 1 or REIMAGINE 2, suggesting full effects may take longer than 68 weeks to fully express. Gastrointestinal side effects are typically most prominent during the early escalation steps and improve as the body adapts.",
+      "In REDEFINE 1, most participants noticed reduced appetite within the first 1–2 weeks. Modest weight loss appeared by week 4 at the lowest titration step (0.25 mg / 0.25 mg). Weight loss accumulated through escalation, reaching meaningful levels by the time participants hit the 2.4 mg / 2.4 mg maintenance dose at week 17. Through weeks 17–68, weight loss continued to deepen — and importantly, no weight-loss plateau was observed at week 68 in either REDEFINE 1 or REIMAGINE 2, suggesting full effects may take longer than 68 weeks to fully express. Gastrointestinal side effects are typically most prominent during the early escalation steps and improve as the body adapts.",
   },
   {
     id: "dosing",
-    title: "Dosing & Protocols",
+    title: "How is CagriSema dosed?",
+    intro:
+      "Phase 3 dosing follows a fixed 16-week synchronized titration schedule. Both components escalate together at every step — there is no asynchronous titration in the trial protocol or research-grade product. Maintenance is 2.4 mg cagrilintide + 2.4 mg semaglutide weekly (4.8 mg combined total).",
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -142,13 +178,53 @@ const sections = [
         <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
           Standard escalation schedule (REDEFINE Phase 3 protocol):
         </p>
-        <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 1–4: 0.25 mg cagrilintide + 0.25 mg semaglutide once weekly</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 5–8: 0.5 mg + 0.5 mg once weekly</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 9–12: 1.0 mg + 1.0 mg once weekly</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 13–16: 1.7 mg + 1.7 mg once weekly</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Weeks 17+: 2.4 mg + 2.4 mg once weekly (maintenance)</li>
-        </ol>
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Week</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Cagrilintide</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Semaglutide</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Combined total</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">1–4</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">0.25 mg</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">0.25 mg</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">0.5 mg</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">5–8</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">0.5 mg</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">0.5 mg</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">1.0 mg</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">9–12</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">1.0 mg</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">1.0 mg</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">2.0 mg</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">13–16</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">1.7 mg</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">1.7 mg</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">3.4 mg</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">17+</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">2.4 mg</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">2.4 mg</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">4.8 mg (maintenance)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 dark:text-slate-400 italic leading-relaxed">
+          *Both components are co-titrated in lockstep — the pre-blended product fixes the 1:1 ratio at every step. To adjust the ratio independently (e.g., escalate amylin while holding GLP-1), researchers must buy the two component peptides separately rather than using a pre-blend.
+        </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           If side effects are difficult to tolerate at any step, holding at the current dose for an additional 4 weeks is the standard mitigation. In REDEFINE 2, 61.9% of participants reached the highest maintenance dose by week 68 under a flexible-dosing protocol — meaning a substantial minority held at a lower dose for the duration of the trial and still produced meaningful weight loss.
         </p>
@@ -160,7 +236,7 @@ const sections = [
             Research-grade CagriSema is sold by specialty peptide vendors as pre-blended vials in a 1:1 ratio of cagrilintide to semaglutide. Common label sizes are 5 mg total (2.5 mg + 2.5 mg), 10 mg total (5 mg + 5 mg), and 20 mg total (10 mg + 10 mg). The label always shows the combined total milligrams of both compounds.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-            When reconstituting, use the combined total label as the vial size in the dosing calculator. Because the ratio is fixed at 1:1, every drawn dose contains equal amounts of each compound. For example, a 20 mg vial (10 mg cagrilintide + 10 mg semaglutide) drawn for a 4.8 mg total weekly dose delivers 2.4 mg of each compound — the maintenance dose used in REDEFINE 1.
+            When reconstituting, use the combined total label as the vial size in the dosing calculator. Because the ratio is fixed at 1:1, every drawn dose contains equal amounts of each compound. For example, a 20 mg vial (10 mg cagrilintide + 10 mg semaglutide) drawn for a 4.8 mg combined weekly dose delivers 2.4 mg of each compound — the maintenance dose used in REDEFINE 1.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
             Researchers who want a non-1:1 ratio — for example, to preferentially escalate the amylin component or to maintain cagrilintide while reducing semaglutide — should buy the two components separately rather than using a pre-blended product. Pre-blended vials lock the ratio at the labeled 1:1.
@@ -178,32 +254,143 @@ const sections = [
   },
   {
     id: "how-to-take",
-    title: "How to Take",
-    body: [
-      "Route: Subcutaneous injection (under the skin), once weekly. Common injection sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.",
-      "Time of day: Any time, but consistent. Many users inject in the evening to sleep through the strongest nausea window after dose increases.",
-      "With or without food: Either is fine. Both cagrilintide and semaglutide are administered without regard to meals.",
-      "Site rotation: Use a different site each week to reduce localized irritation. Stay at least 1 inch from previous injection sites — injection site reactions were reported in approximately 12% of CagriSema participants in REDEFINE 1.",
-      "Missed dose: If less than 5 days late, take as soon as remembered. If more than 5 days late, skip the missed dose and resume on the next scheduled day. Do not double-dose.",
-      "Alcohol: Avoid for at least 48 hours after injection — alcohol compounds nausea and dehydration, and increases hypoglycemia risk in users with type 2 diabetes.",
-      "Hydration: Drink water consistently. The medication blunts thirst signals, so set a daily water target rather than waiting for thirst.",
-      "Eating pattern: Small meals every 3–4 hours rather than waiting for hunger, which is suppressed. Empty-stomach nausea is the most common trigger for vomiting.",
-    ],
+    title: "How is CagriSema administered?",
+    intro:
+      "CagriSema is given as a subcutaneous injection — under the skin, not into muscle — once weekly, using a small insulin syringe. The injection routine, timing, and supporting habits (hydration, eating pattern, alcohol management) matter as much as the dose for tolerability. The points below cover the practical details that experienced users converge on.",
+    node: (
+      <div className="space-y-4">
+        <ol className="list-decimal list-inside space-y-1">
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection, once weekly. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Any time, but consistent. Many users inject in the evening to sleep through the strongest nausea window after dose increases.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine. Both components are administered without regard to meals.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each week to reduce localized irritation. Stay at least 1 inch from previous injection sites — injection site reactions were reported in approximately 12% of CagriSema participants in REDEFINE 1.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> If less than 5 days late, take as soon as remembered. If more than 5 days late, skip the missed dose and resume on the next scheduled day. Do not double-dose.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Avoid for at least 48 hours after injection — alcohol compounds nausea, dehydration, and hypoglycemia risk in users with type 2 diabetes.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hydration.</span> Drink water consistently. The medication blunts thirst signals, so set a daily water target rather than waiting for thirst.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Eating pattern.</span> Small meals every 3–4 hours rather than waiting for hunger, which is suppressed. Empty-stomach nausea is the most common trigger for vomiting.</li>
+        </ol>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Frequency</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Once weekly, same day each week</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Best time of day</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Evening often preferred — sleep through peak GI side effects during titration</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Food</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">No fasting required; inject with or without food</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Site rotation</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Rotate abdomen, thigh, upper arm — avoid same site within 2 weeks</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Component co-titration</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Cagrilintide and semaglutide escalate together in lockstep; pre-blend locks the ratio at 1:1</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Missed dose</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">{"<5 days late: take as remembered. >5 days late: skip and resume next scheduled day."}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Reconstitution math.</span> Pre-blended CagriSema vials are labeled by total combined mass — for a 10 mg vial, that means 5 mg cagrilintide + 5 mg semaglutide. Reconstitute using the combined-total label as the vial size in the calculator. All units below are measured on a U-100 insulin syringe (100 units = 1 mL). The table assumes a 10 mg combined-total vial.
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">0.5 mg combined</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">2.0 mg combined</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">3.4 mg combined</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">4.8 mg combined</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">1 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">5 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">20 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">34 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">48 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">2 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">5 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">40 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">68 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">96 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">3 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">3.33 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">15 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">60 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">~100 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">144 units (2 draws)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 dark:text-slate-400 italic leading-relaxed">
+          *Combined-total dose values: at 4.8 mg combined (the REDEFINE maintenance dose), each draw delivers 2.4 mg cagrilintide + 2.4 mg semaglutide. Doses above ~100 units per draw exceed insulin syringe capacity at low concentrations — use 1 mL or 2 mL reconstitution volumes for the high tiers. The 2 mL volume is the most common research-protocol convention.
+        </p>
+      </div>
+    ),
   },
   {
     id: "stacks",
-    title: "Common Stacks",
-    body: [
-      "Standalone use — the standard protocol. CagriSema already contains both semaglutide and cagrilintide at full maintenance doses, so stacking with other GLP-1- or amylin-class peptides is unnecessary and increases side-effect risk without proportional benefit.",
-      "Resistance training + 1.2–1.6 g/kg protein per day — recommended throughout the dose-escalation and maintenance phases to preserve lean muscle mass during rapid weight loss. Without this, GLP-1-class regimens can cause significant muscle loss alongside fat loss.",
-      "Metformin (in type 2 diabetes) — commonly continued alongside CagriSema for additive glycemic control. REIMAGINE 2 enrolled participants on metformin with or without an SGLT2 inhibitor; CagriSema is compatible with both.",
-      "Avoid stacking with other GLP-1 agonists (semaglutide standalone, tirzepatide, retatrutide, liraglutide) — CagriSema already contains semaglutide 2.4 mg.",
-      "Avoid stacking with standalone cagrilintide or other amylin analogues (pramlintide) — CagriSema already contains cagrilintide 2.4 mg.",
-    ],
+    title: "What does CagriSema stack well with?",
+    intro:
+      "CagriSema is a standalone protocol in clinical practice. Because it already contains both an amylin analogue and a GLP-1 receptor agonist at full maintenance doses, additional GLP-1- or amylin-class compounds are clinically redundant and increase side-effect burden. The useful adjuncts are non-peptide: training, protein, and (in T2D) compatible glycemic agents.",
+    node: (
+      <ol className="list-decimal list-inside space-y-2">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Standalone use — the standard protocol.</span> CagriSema already contains both semaglutide and cagrilintide at full maintenance doses, so stacking with other GLP-1- or amylin-class peptides is unnecessary and increases side-effect risk without proportional benefit.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Resistance training + 1.2–1.6 g/kg protein per day.</span> Recommended throughout dose escalation and maintenance to preserve lean muscle mass during rapid weight loss. Without this, GLP-1-class regimens can cause significant muscle loss alongside fat loss.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Metformin (in type 2 diabetes).</span> Commonly continued alongside CagriSema for additive glycemic control. REIMAGINE 2 enrolled participants on metformin with or without an SGLT2 inhibitor; CagriSema is compatible with both.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Avoid: other GLP-1 agonists.</span> Standalone semaglutide,{" "}
+          <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>,{" "}
+          <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>, liraglutide — CagriSema already contains semaglutide 2.4 mg at the maximum approved dose.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Avoid: other amylin analogues.</span> Standalone{" "}
+          <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">cagrilintide</Link>{" "}
+          or pramlintide — CagriSema already contains cagrilintide 2.4 mg.
+        </li>
+      </ol>
+    ),
   },
   {
     id: "side-effects",
-    title: "Side Effects & Safety",
+    title: "What are the side effects of CagriSema?",
+    intro:
+      "The CagriSema side-effect profile is dominated by gastrointestinal events typical of the GLP-1 class, with overall rates comparable to or modestly higher than semaglutide monotherapy. Most discontinuations occur during early escalation; rates decline at maintenance. The amylin component does not appear to substantially worsen GI tolerability.",
     node: (
       <div className="space-y-5">
         <div>
@@ -248,31 +435,35 @@ const sections = [
   },
   {
     id: "interactions",
-    title: "Drug & Peptide Interactions",
+    title: "Does CagriSema interact with other drugs?",
+    intro:
+      "CagriSema's interaction profile mirrors semaglutide's: hypoglycemia risk with other glucose-lowering agents, absorption changes for oral medications due to slowed gastric emptying, and class-wide contraindications for stacking with other GLP-1 agonists or amylin analogues.",
     body: [
-      "Insulin and sulfonylureas — risk of hypoglycemia (low blood sugar) increases when CagriSema is combined with insulin, glipizide, glyburide, or other blood-sugar-lowering drugs. Dose adjustment of the background diabetes therapy is typically needed.",
-      "Oral medications — both cagrilintide and semaglutide slow gastric emptying, which can affect the absorption of oral medications. Particularly relevant for narrow-therapeutic-window drugs (warfarin, levothyroxine, certain antibiotics).",
-      "Birth control pills — slowed gastric emptying may reduce absorption. Backup contraception is commonly recommended during the first 4 weeks of treatment and the 4 weeks after each dose increase.",
-      "Other GLP-1 receptor agonists (semaglutide, tirzepatide, retatrutide, liraglutide) — should not be combined with CagriSema, which already contains semaglutide.",
-      "Other amylin analogues (pramlintide) — should not be combined with CagriSema, which already contains cagrilintide.",
-      "Alcohol — compounds nausea, dehydration, and hypoglycemia risk.",
+      "Insulin and sulfonylureas. Risk of hypoglycemia (low blood sugar) increases when CagriSema is combined with insulin, glipizide, glyburide, or other blood-sugar-lowering drugs. Dose adjustment of the background diabetes therapy is typically needed.",
+      "Oral medications. Both cagrilintide and semaglutide slow gastric emptying, which can affect the absorption of oral medications. Particularly relevant for narrow-therapeutic-window drugs (warfarin, levothyroxine, certain antibiotics).",
+      "Birth control pills. Slowed gastric emptying may reduce absorption. Backup contraception is commonly recommended during the first 4 weeks of treatment and the 4 weeks after each dose increase.",
+      "Other GLP-1 receptor agonists. Standalone semaglutide, tirzepatide, retatrutide, liraglutide — should not be combined with CagriSema, which already contains semaglutide.",
+      "Other amylin analogues. Pramlintide and standalone cagrilintide — should not be combined with CagriSema, which already contains cagrilintide.",
+      "Alcohol. Compounds nausea, dehydration, and hypoglycemia risk.",
     ],
   },
   {
     id: "storage",
-    title: "Storage & Handling",
+    title: "How should CagriSema be stored?",
     body: [
       "Lyophilized (powder) form: Store at 2–8°C (refrigerated). Stable for the manufacturer's stated shelf life when sealed.",
       "Reconstituted solution: Store at 2–8°C. Most research-grade preparations are stable for 28–30 days after reconstitution; check vendor's product specifications.",
       "Reconstitution: Use bacteriostatic water for injection (BAC water) at the volume specified by the dose calculator. Swirl gently — do not shake.",
-      "Do not freeze. Freezing damages the peptide and renders it inactive.",
+      "Do not freeze. Freezing damages both component peptides and renders the blend inactive.",
       "Protect from light — store in the original container or a light-protective container.",
       "Discard if the solution is cloudy, discolored, or contains particles.",
     ],
   },
   {
     id: "limitations",
-    title: "Research Limitations & Regulatory Status",
+    title: "What are the limitations of CagriSema research?",
+    intro:
+      "CagriSema is investigational. The flagship Phase 3 trials (REDEFINE 1, REDEFINE 2) and the T2D trial (REIMAGINE 2) read out in 2025–2026, and Novo Nordisk filed an FDA NDA in December 2025. As of May 2026, the FDA decision is still pending; the cardiovascular outcomes trial (REDEFINE 3) and long-duration extension (REDEFINE 11) are ongoing. A head-to-head against tirzepatide reported in early 2026 did not show superiority on weight loss.",
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -291,8 +482,30 @@ const sections = [
     ),
   },
   {
+    id: "where-to-buy",
+    title: "Where to source CagriSema",
+    intro:
+      "CagriSema is not available by prescription as of May 2026 — Novo Nordisk's NDA is under FDA review. Research-grade pre-blended product is sold by specialty peptide vendors for laboratory use only. The three vendors highlighted below carry CagriSema as a pre-blended 1:1 product and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
+    node: (
+      <div className="space-y-4">
+        <VendorHighlightBlock
+          highlights={[
+            { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
+            { slug: "ascension-peptides", note: "Sold as C-10/S-5 blend" },
+            { slug: "vital-core-research", note: "Pre-blended 1:1 ratio" },
+          ]}
+        />
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            See all verified vendors &rarr;
+          </Link>
+        </p>
+      </div>
+    ),
+  },
+  {
     id: "faq",
-    title: "FAQ",
+    title: "CagriSema FAQ",
     node: (
       <div className="space-y-4">
         {faqs.map((f, i) => (
@@ -437,19 +650,44 @@ export default function CagriSemaPage() {
         <span className="tag">Metabolic &amp; Weight Loss</span>
         <span className="tag">Investigational</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-8">
-        Also Known As: Cagri-Sema, CagriSema 2.4/2.4, Amylin-GLP-1 Combination
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+        Last reviewed: May 24, 2026
       </p>
+      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Cagri-Sema, CagriSema 2.4/2.4, Amylin-GLP-1 Combination
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Fixed-dose GLP-1 receptor agonist + amylin analogue blend
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Investigational — Novo Nordisk NDA filed Dec 18, 2025; FDA decision pending 2026
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Component peptides:</span>{" "}
+          <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">Cagrilintide</Link>
+          {" + "}
+          <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>{" "}
+          (1:1 pre-blended ratio, both 2.4 mg at maintenance)
+        </p>
+      </div>
+
+      <div className="mb-8 p-4 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Latest research:</span> Novo Nordisk filed CagriSema&apos;s FDA NDA on December 18, 2025 based on REDEFINE 1 (NEJM 2025) — 22.7% mean weight loss at 68 weeks, the largest published result for an injectable GLP-1-class combination. FDA decision expected in 2026. REIMAGINE 2 (T2D, Feb 2026) added superior HbA1c reduction versus semaglutide alone.
+        </p>
+      </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
+        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is CagriSema?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             CagriSema is a once-weekly injectable fixed-dose combination of{" "}
             <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">cagrilintide</Link>{" "}
             (a long-acting amylin analogue) and{" "}
             <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
-            (a GLP-1 receptor agonist), developed by Novo Nordisk. The two compounds act on non-overlapping appetite pathways — amylin receptors in the brainstem and GLP-1 receptors in the gut, pancreas, and hypothalamus — and together produce larger weight reduction than either compound alone. In the Phase 3 REDEFINE 1 trial, CagriSema 2.4 mg / 2.4 mg produced 22.7% mean weight loss at 68 weeks, the largest result published for an injectable GLP-1-class combination as of May 2026.
+            (a GLP-1 receptor agonist), developed by Novo Nordisk. The two compounds act on non-overlapping appetite pathways — amylin receptors in the brainstem and GLP-1 receptors in the gut, pancreas, and hypothalamus — and together produce larger weight reduction than either compound alone. In the Phase 3 REDEFINE 1 trial, CagriSema 2.4 mg / 2.4 mg produced 22.7% mean weight loss at 68 weeks, the largest result published for an injectable GLP-1-class combination as of May 2026. Compared head-to-head against{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>, CagriSema did not demonstrate superiority — both produced comparable weight reduction.
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -485,6 +723,11 @@ export default function CagriSemaPage() {
             <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
+            {s.intro && (
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+                {s.intro}
+              </p>
+            )}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
@@ -517,9 +760,10 @@ export default function CagriSemaPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide</Link>
         <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#0891b2] hover:underline">Cagrilintide</Link>
+        <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide</Link>
         <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#0891b2] hover:underline">Tirzepatide</Link>
+        <Link href="/peptides/retatrutide" className="text-sm font-medium text-[#0891b2] hover:underline">Retatrutide</Link>
         </div>
       </div>
 

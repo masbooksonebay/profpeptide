@@ -47,6 +47,20 @@
         { "slug": "vital-core-research", "note": null }
       ]
     },
+    "cagrisema": {
+      "displayName": "CagriSema",
+      "vendors": [
+        { "slug": "apollo-peptide-sciences", "note": "Pre-blended cagrilintide + semaglutide" },
+        { "slug": "ascension-peptides", "note": "Sold as C-10/S-5 blend" },
+        { "slug": "behemoth-labz", "note": "Pre-blended 1:1 ratio" },
+        { "slug": "fusion-peptide", "note": "Pre-blended blend product" },
+        { "slug": "limitless-biotech", "note": "VIP-gated catalog — login required" },
+        { "slug": "peptide-partners", "note": "Editor's Pick — 4-test purity program" },
+        { "slug": "purerawz", "note": "Pre-blended product" },
+        { "slug": "royal-peptides", "note": null },
+        { "slug": "vital-core-research", "note": "Pre-blended 1:1 ratio" }
+      ]
+    },
     "cjc-1295": {
       "displayName": "CJC-1295",
       "vendors": [
