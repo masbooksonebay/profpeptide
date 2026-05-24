@@ -398,9 +398,9 @@ const sections = [
       <div className="space-y-4">
         <VendorHighlightBlock
           highlights={[
-            { slug: "peptide-partners" },
             { slug: "ascension-peptides" },
             { slug: "vital-core-research" },
+            { slug: "behemoth-labz" },
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
