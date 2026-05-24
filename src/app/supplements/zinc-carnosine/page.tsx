@@ -15,7 +15,13 @@ export const metadata = buildPageMetadata({
 const faqs = [
   {
     q: "What's the difference between zinc-carnosine and just zinc + carnosine taken separately?",
-    a: "The chelated 1:1 molar complex behaves very differently from the two compounds taken separately. Zinc-carnosine physically adheres to damaged gastrointestinal mucosa — sticking to ulcer sites and inflamed tissue — and slowly releases zinc and carnosine locally rather than being rapidly absorbed into systemic circulation. The result is concentrated, targeted action at sites of mucosal injury, which is why the chelated form outperforms the separates for gut-healing endpoints. For systemic zinc supplementation (immune function, taste, hair/skin), regular zinc forms are equivalent and cheaper.",
+    a: (
+      <>
+        The chelated 1:1 molar complex behaves very differently from the two compounds taken separately. Zinc-carnosine physically adheres to damaged gastrointestinal mucosa — sticking to ulcer sites and inflamed tissue — and slowly releases zinc and carnosine locally rather than being rapidly absorbed into systemic circulation. The result is concentrated, targeted action at sites of mucosal injury, which is why the chelated form outperforms the separates for gut-healing endpoints. For systemic zinc supplementation (immune function, taste, hair/skin), regular{" "}
+        <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc</Link>{" "}
+        forms are equivalent and cheaper.
+      </>
+    ),
   },
   {
     q: "Is this the same as polaprezinc?",
@@ -35,7 +41,13 @@ const faqs = [
   },
   {
     q: "Will the zinc in zinc-carnosine count toward my daily zinc intake?",
-    a: "Yes, and this matters. A standard 75 mg zinc-carnosine capsule contains ~17 mg elemental zinc. Two doses daily (150 mg total) = ~34 mg elemental zinc/day — close to the 40 mg/day tolerable upper limit (UL) for adults. Add any other zinc sources (multivitamin, separate zinc, ZMA, dietary intake from oysters/red meat) and you can easily exceed the UL. Long-term zinc above UL impairs copper absorption and can cause copper deficiency. If you're using zinc-carnosine for &gt;3 months, audit total zinc intake and consider adding 1–2 mg copper to balance.",
+    a: (
+      <>
+        Yes, and this matters. A standard 75 mg zinc-carnosine capsule contains ~17 mg elemental zinc. Two doses daily (150 mg total) = ~34 mg elemental zinc/day — close to the 40 mg/day tolerable upper limit (UL) for adults. Add any other zinc sources (multivitamin, separate{" "}
+        <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc</Link>,{" "}
+        <Link href="/supplements/zma" className="text-[#0891b2] hover:underline">ZMA</Link>, dietary intake from oysters/red meat) and you can easily exceed the UL. Long-term zinc above UL impairs copper absorption and can cause copper deficiency. If you&apos;re using zinc-carnosine for &gt;3 months, audit total zinc intake and consider adding 1–2 mg copper to balance.
+      </>
+    ),
   },
   {
     q: "Can I stack zinc-carnosine with BPC-157?",
@@ -43,7 +55,11 @@ const faqs = [
       <>
         Yes — and the stack is mechanistically natural for gut-healing protocols.{" "}
         <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
-        is a synthetic pentadecapeptide derived from human gastric juice; it&apos;s extensively studied for tissue repair, vascular regrowth, and gut barrier protection (oral or subcutaneous routes). Zinc-carnosine works at the mucosal surface via direct adhesion and prostaglandin stimulation; BPC-157 works systemically via angiogenesis and tissue-repair signaling. Different mechanisms, both targeting the same endpoint. Common gut-healing protocol: zinc-carnosine 75 mg BID with meals + oral BPC-157 (250–500 mcg BID, with or before meals). Often paired with glutamine and probiotics for full-spectrum gut work.
+        is a synthetic pentadecapeptide derived from human gastric juice; it&apos;s extensively studied for tissue repair, vascular regrowth, and gut barrier protection (oral or subcutaneous routes). Zinc-carnosine works at the mucosal surface via direct adhesion and prostaglandin stimulation; BPC-157 works systemically via angiogenesis and tissue-repair signaling. Different mechanisms, both targeting the same endpoint. Common gut-healing protocol: zinc-carnosine 75 mg BID with meals + oral BPC-157 (250–500 mcg BID, with or before meals). Often paired with{" "}
+        <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">glutamine</Link>{" "}
+        and{" "}
+        <Link href="/supplements/probiotics" className="text-[#0891b2] hover:underline">probiotics</Link>{" "}
+        for full-spectrum gut work.
       </>
     ),
   },
@@ -196,8 +212,17 @@ const sections = [
   {
     id: "stacks",
     title: "What does Zinc-Carnosine stack with?",
-    intro:
-      "Zinc-carnosine is the foundational mucosal-protection layer of most gut-healing protocols. It stacks naturally with gut-healing peptides (BPC-157 and KPV), with other gut-repair supplements (glutamine, collagen, probiotics), and with lifestyle interventions that reduce gut stress (NSAID minimization, alcohol moderation, anti-inflammatory diet).",
+    intro: (
+      <>
+        Zinc-carnosine is the foundational mucosal-protection layer of most gut-healing protocols. It stacks naturally with gut-healing peptides ({" "}
+        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+        and{" "}
+        <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>), with other gut-repair supplements ({" "}
+        <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">glutamine</Link>,{" "}
+        <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">collagen</Link>,{" "}
+        <Link href="/supplements/probiotics" className="text-[#0891b2] hover:underline">probiotics</Link>), and with lifestyle interventions that reduce gut stress (NSAID minimization, alcohol moderation, anti-inflammatory diet).
+      </>
+    ),
     node: (
       <div className="space-y-5">
         <div>
@@ -268,7 +293,7 @@ const sections = [
         <div>
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Watch-list (cumulative zinc-related)</h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Total elemental zinc above 40 mg/day UL on multi-month use — audit all zinc sources (multivitamin, ZMA, standalone zinc, dietary).</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Total elemental zinc above 40 mg/day UL on multi-month use — audit all zinc sources (multivitamin, <Link href="/supplements/zma" className="text-[#0891b2] hover:underline">ZMA</Link>, standalone <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc</Link>, dietary).</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Copper deficiency from prolonged high-zinc intake — impaired copper absorption is the mechanism; mild copper supplementation (1–2 mg/day) offsets it.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Suppressed iron absorption with very high zinc intake — relevant for users with low ferritin or iron deficiency.</li>
           </ol>
@@ -281,7 +306,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Bisphosphonates — zinc may reduce absorption. Separate dosing by at least 2 hours.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Iron supplements — competitive absorption with zinc. Separate dosing by 2+ hours.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Proton pump inhibitors (omeprazole, pantoprazole, etc.) — no negative interaction; PPIs and zinc-carnosine are often used together in clinical Japanese protocols for ulcer disease.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standalone zinc, ZMA, multivitamins with zinc — additive total zinc intake. Audit total daily zinc; reduce other sources if zinc-carnosine pushes you near or above the 40 mg/day UL.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standalone <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc</Link>, <Link href="/supplements/zma" className="text-[#0891b2] hover:underline">ZMA</Link>, multivitamins with zinc — additive total zinc intake. Audit total daily zinc; reduce other sources if zinc-carnosine pushes you near or above the 40 mg/day UL.</li>
           </ol>
         </div>
       </div>
