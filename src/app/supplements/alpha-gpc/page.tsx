@@ -352,7 +352,7 @@ const sections = [
         <a
           href="https://www.amazon.com/s?k=alpha+gpc&tag=profpeptide-20"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored nofollow noopener noreferrer"
           className="btn-primary text-sm inline-block"
         >
           Search Alpha-GPC on Amazon &rarr;
@@ -612,7 +612,7 @@ export default function AlphaGPCPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.{" "}
-            <a href="https://www.amazon.com/s?k=alpha+gpc&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#0891b2] hover:underline">Shop Alpha-GPC on Amazon &rarr;</a>
+            <a href="https://www.amazon.com/s?k=alpha+gpc&tag=profpeptide-20" target="_blank" rel="sponsored nofollow noopener noreferrer" className="font-semibold text-[#0891b2] hover:underline">Shop Alpha-GPC on Amazon &rarr;</a>
           </p>
         </div>
       </div>
