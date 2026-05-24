@@ -3,13 +3,14 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/ghk-cu",
   title: "GHK-Cu — Copper Peptide, Skin, Hair, Wound Healing | Prof. Peptide",
   description:
-    "GHK-Cu (copper tripeptide) research profile: collagen synthesis, gene expression modulation, hair growth, dosing, side effects, and FDA status.",
+    "GHK-Cu (copper tripeptide) research profile: collagen synthesis, gene expression modulation, hair growth, dosing, side effects, FAQ, and FDA status.",
 });
 
 const faqs = [
@@ -19,7 +20,15 @@ const faqs = [
   },
   {
     q: "How is GHK-Cu different from BPC-157?",
-    a: "Different mechanisms. GHK-Cu is a copper-binding tripeptide that modulates 4,000+ human genes related to collagen synthesis, tissue remodeling, and anti-inflammatory signaling — primarily through copper-shuttling and Wnt activation. BPC-157 is a 15-amino-acid peptide that drives angiogenesis (VEGF/eNOS) and tissue repair through nitric oxide and FAK-paxillin pathways. They are commonly stacked together (often in the GLOW blend) because their mechanisms are complementary, not redundant.",
+    a: (
+      <>
+        Different mechanisms. GHK-Cu is a copper-binding tripeptide that modulates 4,000+ human genes related to collagen synthesis, tissue remodeling, and anti-inflammatory signaling &mdash; primarily through copper-shuttling and Wnt activation.{" "}
+        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+        is a 15-amino-acid peptide that drives angiogenesis (VEGF/eNOS) and tissue repair through nitric oxide and FAK-paxillin pathways. They are commonly stacked together (often in the GLOW blend) because their mechanisms are complementary, not redundant. See the{" "}
+        <Link href="/compare/bpc-157-vs-ghk-cu" className="text-[#0891b2] hover:underline">BPC-157 vs GHK-Cu comparison</Link>{" "}
+        for a side-by-side breakdown.
+      </>
+    ),
   },
   {
     q: "Topical vs injectable — which is better?",
@@ -45,7 +54,7 @@ const faqs = [
     q: "Where can I buy GHK-Cu?",
     a: (
       <>
-        Topical GHK-Cu is widely available in cosmetic skincare products at 1–3% concentrations. Injectable research-grade GHK-Cu is sold by specialty peptide vendors (note FDA restriction on compounded injectable as of 2023). PP maintains a list of vetted vendors with verified discount codes — see{" "}
+        Topical GHK-Cu is widely available in cosmetic skincare products at 1–3% concentrations. Injectable research-grade GHK-Cu is sold by specialty peptide vendors (note FDA restriction on compounded injectable as of 2023). PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
         <Link href="/coupons" className="text-[#0891b2] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
@@ -63,7 +72,7 @@ const studies = [
     year: "2015",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4508379/",
-    summary: "The comprehensive review that established GHK-Cu as a multi-pathway skin regeneration agent. The paper documents that GHK-Cu \u2014 first isolated by Pickart in 1973 when he discovered it made aged liver tissue behave like younger tissue \u2014 accelerates wound healing, improves transplanted skin take, stimulates collagen and glycosaminoglycan synthesis, attracts immune and endothelial cells to injury sites, and restores replicative vitality to fibroblasts after radiation therapy. Crucially, plasma GHK levels decline from 200 ng/mL at age 20 to 80 ng/mL by age 60 \u2014 a 60% drop that coincides with the well-documented decline in tissue regenerative capacity. The paper concludes that GHK-Cu \u201Cmay be one of the few molecules with the ability to reset cellular function\u201D toward a younger profile.",
+    summary: "The comprehensive review that established GHK-Cu as a multi-pathway skin regeneration agent. The paper documents that GHK-Cu — first isolated by Pickart in 1973 when he discovered it made aged liver tissue behave like younger tissue — accelerates wound healing, improves transplanted skin take, stimulates collagen and glycosaminoglycan synthesis, attracts immune and endothelial cells to injury sites, and restores replicative vitality to fibroblasts after radiation therapy. Crucially, plasma GHK levels decline from 200 ng/mL at age 20 to 80 ng/mL by age 60.",
   },
   {
     title: "Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data",
@@ -72,7 +81,7 @@ const studies = [
     year: "2018",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6073405/",
-    summary: "A landmark review synthesizing GHK-Cu\u2019s known biological actions with groundbreaking gene expression data from the Broad Institute\u2019s Connectivity Map. Using this publicly available genomic database, researchers found that GHK-Cu modulates expression of genes across an extraordinary range of categories \u2014 wound healing, collagen synthesis, anti-inflammatory signaling, nerve growth, antioxidant defense, and DNA repair. At higher concentrations it upregulated 10 caspase and caspase-associated genes with anti-cancer relevance, and combined GHK-Cu with ascorbic acid produced strong suppression of sarcoma-180 growth in mice. The paper expanded GHK-Cu\u2019s research profile from a wound healing peptide into a potential anti-aging genomic modulator \u2014 one of the most scientifically provocative findings in peptide research.",
+    summary: "A landmark review synthesizing GHK-Cu's known biological actions with groundbreaking gene expression data from the Broad Institute's Connectivity Map. Using this publicly available genomic database, researchers found that GHK-Cu modulates expression of genes across an extraordinary range of categories — wound healing, collagen synthesis, anti-inflammatory signaling, nerve growth, antioxidant defense, and DNA repair.",
   },
   {
     title: "Skin Regenerative and Anti-Cancer Actions of Copper Peptides",
@@ -81,16 +90,16 @@ const studies = [
     year: "2018",
     access: "Open Access",
     url: "https://www.mdpi.com/2079-9284/5/2/29",
-    summary: "A focused review of GHK-Cu\u2019s applications in skin protection and cancer prevention \u2014 two applications that emerge from the same underlying mechanism of DNA repair and gene expression modulation. The paper documents how GHK-Cu\u2019s ability to modulate 84 genes associated with DNA repair and cancer suppression could make it relevant for skin cancer prevention alongside its established role in skin regeneration and anti-aging. Human clinical trial data on topical GHK-Cu showed consistent improvements in wrinkles, skin density, and overall skin quality. The paper also documents GHK-Cu\u2019s anti-inflammatory and antioxidant properties through its copper-binding effects on superoxide dismutase activity.",
+    summary: "A focused review of GHK-Cu's applications in skin protection and cancer prevention — two applications that emerge from the same underlying mechanism of DNA repair and gene expression modulation. The paper documents how GHK-Cu's ability to modulate 84 genes associated with DNA repair and cancer suppression could make it relevant for skin cancer prevention alongside its established role in skin regeneration and anti-aging.",
   },
   {
-    title: "Exploring the Role of Tripeptides in Wound Healing and Skin Regeneration \u2014 A Comprehensive Review",
+    title: "Exploring the Role of Tripeptides in Wound Healing and Skin Regeneration — A Comprehensive Review",
     authors: "Medsci Research Group",
     journal: "International Journal of Medical Sciences",
     year: "2025",
     access: "Open Access",
     url: "https://www.medsci.org/v22p4175.htm",
-    summary: "The most current systematic review of GHK-Cu in wound healing, covering studies published between 2016 and 2025. The paper documents GHK-Cu\u2019s role across all phases of wound repair \u2014 stimulating fibroblast migration, enhancing collagen deposition, supporting angiogenesis, and facilitating extracellular matrix remodeling. It also covers advanced formulations including GHK-Cu nanoparticle conjugates, hydrogels, and clinical derivatives (TriHex and TriHex 2.0) that improve bioavailability for wound care applications. The review notes that GHK-Cu\u2019s small tripeptide size gives it physicochemical advantages over larger peptides \u2014 better water solubility, easier tissue diffusion, and resistance to enzymatic degradation \u2014 making it highly suitable for both topical and injectable formulations.",
+    summary: "The most current systematic review of GHK-Cu in wound healing, covering studies published between 2016 and 2025. The paper documents GHK-Cu's role across all phases of wound repair — stimulating fibroblast migration, enhancing collagen deposition, supporting angiogenesis, and facilitating extracellular matrix remodeling. It also covers advanced formulations including nanoparticle conjugates and hydrogels.",
   },
   {
     title: "Effects of Topical Copper Tripeptide Complex on CO2 Laser-Resurfaced Skin",
@@ -99,56 +108,61 @@ const studies = [
     year: "2006",
     access: "Paywalled",
     url: "https://www.liebertpub.com/abs/doi/10.1001/archfaci.8.4.252",
-    summary: "One of the few controlled human clinical trials of GHK-Cu \u2014 examining its use after CO2 laser skin resurfacing in 13 patients. While the study found no statistically significant reduction in post-procedure erythema between GHK-Cu and control groups, patient satisfaction was significantly higher in the GHK-Cu group (p=.04), and data suggested superior improvement in wrinkle scores in Fitzpatrick classes II and III. The mixed results reflect the challenge of measuring GHK-Cu\u2019s multifactorial effects in small controlled trials \u2014 and underscore why larger studies are needed to formally validate what extensive preclinical and cosmetic data already suggests.",
+    summary: "One of the few controlled human clinical trials of GHK-Cu — examining its use after CO2 laser skin resurfacing in 13 patients. Patient satisfaction was significantly higher in the GHK-Cu group (p=.04), and data suggested superior improvement in wrinkle scores in Fitzpatrick classes II and III.",
   },
 ];
 
 const sections = [
   {
     id: "mechanism",
-    title: "Mechanism of Action",
+    title: "How does GHK-Cu work?",
+    intro:
+      "GHK-Cu shuttles copper into cells where it powers enzymes including lysyl oxidase (collagen crosslinking), superoxide dismutase (antioxidant defense), and cytochrome c oxidase (cellular energy). It modulates expression of 4,000+ human genes related to collagen synthesis, tissue remodeling, and anti-inflammatory signaling — the breadth of this gene effect is unusual for any peptide. The combined copper-shuttle + gene-expression mechanism is what gives GHK-Cu its broad regenerative profile.",
     body: [
-      "Copper Shuttle [1] — GHK-Cu carries copper into cells where it powers enzymes including lysyl oxidase (collagen crosslinking), superoxide dismutase (antioxidant defense), and cytochrome c oxidase (cellular energy). The copper-binding capability is what gives GHK-Cu its name and broad mechanistic reach.",
-      "Gene Expression Modulation [2] — Modulates expression of 4,000+ human genes. Upregulates Type I and III collagen, decorin (302% increase), and glycosaminoglycans. Downregulates inflammatory and senescence pathways. This breadth of gene effect is unusual for any peptide.",
-      "Collagen Synthesis [3] — Stimulates collagen synthesis at picomolar to nanomolar concentrations in skin fibroblasts. Notably stimulates BOTH collagen production AND breakdown of damaged collagen via matrix metalloproteinases — true tissue remodeling, not just deposition.",
-      "Hair Follicle Stimulation [4] — Activates Wnt signaling in dermal papilla cells (anagen growth phase). Stimulates fibroblasts and angiogenesis around follicles. Inhibits TGF-beta-induced follicle miniaturization. This mechanism is distinct from Minoxidil's vasodilation pathway.",
-      "Anti-Inflammatory & Antioxidant [5] — Reduces TNF-alpha and IL-6 in dermal fibroblasts. Stimulates antioxidant enzymes including superoxide dismutase. Reduces oxidative stress markers in cellular and animal studies.",
+      "Copper Shuttle [1]. GHK-Cu carries copper into cells where it powers enzymes including lysyl oxidase (collagen crosslinking), superoxide dismutase (antioxidant defense), and cytochrome c oxidase (cellular energy). The copper-binding capability is what gives GHK-Cu its name and broad mechanistic reach.",
+      "Gene Expression Modulation [2]. Modulates expression of 4,000+ human genes. Upregulates Type I and III collagen, decorin (302% increase), and glycosaminoglycans. Downregulates inflammatory and senescence pathways. This breadth of gene effect is unusual for any peptide.",
+      "Collagen Synthesis [3]. Stimulates collagen synthesis at picomolar to nanomolar concentrations in skin fibroblasts. Notably stimulates BOTH collagen production AND breakdown of damaged collagen via matrix metalloproteinases — true tissue remodeling, not just deposition.",
+      "Hair Follicle Stimulation [4]. Activates Wnt signaling in dermal papilla cells (anagen growth phase). Stimulates fibroblasts and angiogenesis around follicles. Inhibits TGF-beta-induced follicle miniaturization. This mechanism is distinct from Minoxidil's vasodilation pathway.",
+      "Anti-Inflammatory & Antioxidant [5]. Reduces TNF-alpha and IL-6 in dermal fibroblasts. Stimulates antioxidant enzymes including superoxide dismutase. Reduces oxidative stress markers in cellular and animal studies.",
     ],
   },
   {
     id: "research",
-    title: "Key Research Areas",
+    title: "What is GHK-Cu used for?",
+    intro:
+      "GHK-Cu's research evidence base is one of the broadest of any peptide — decades of cell, animal, and human studies across wound healing, skin rejuvenation, hair growth, anti-aging gene expression, and systemic healing applications. The Pickart-Margolina gene expression work demonstrating 'resetting DNA to a healthier state' via 4,000+ gene modulation is what distinguishes GHK-Cu from single-pathway compounds.",
     body: [
-      "Wound Healing [6] — Animal studies show 40–50% faster wound closure. In rat ischemic skin flap models, GHK-Cu reduced wound size 64.5% vs 28.2% control over 13 days. Effects observed in dermal, corneal, and surgical wound models.",
-      "Skin Rejuvenation [7] — Pilot studies on aged skin show increased thickness, elasticity, hydration, and collagen density. Comparable to tretinoin in some endpoints, with cleaner tolerability profile.",
-      "Hair Growth — Studies suggest performance comparable to Minoxidil 5% via different mechanism (Wnt activation vs vasodilation). Topical formulations widely marketed for hair regrowth applications.",
-      "Anti-Aging Gene Expression [2] — Pickart and Margolina's gene expression work demonstrates \"resetting DNA to a healthier state\" via 4,000+ gene modulation. The breadth of effect is what distinguishes GHK-Cu from single-pathway compounds.",
-      "Systemic Healing — Animal studies show systemic effect: GHK-Cu injected in one tissue area improves healing at distant sites (rats, mice, pigs). This systemic activity is part of the rationale for injectable use over topical-only application.",
+      "Wound Healing [6]. Animal studies show 40–50% faster wound closure. In rat ischemic skin flap models, GHK-Cu reduced wound size 64.5% vs 28.2% control over 13 days. Effects observed in dermal, corneal, and surgical wound models.",
+      "Skin Rejuvenation [7]. Pilot studies on aged skin show increased thickness, elasticity, hydration, and collagen density. Comparable to tretinoin in some endpoints, with cleaner tolerability profile.",
+      "Hair Growth. Studies suggest performance comparable to Minoxidil 5% via different mechanism (Wnt activation vs vasodilation). Topical formulations widely marketed for hair regrowth applications.",
+      "Anti-Aging Gene Expression [2]. Pickart and Margolina's gene expression work demonstrates \"resetting DNA to a healthier state\" via 4,000+ gene modulation. The breadth of effect is what distinguishes GHK-Cu from single-pathway compounds.",
+      "Systemic Healing. Animal studies show systemic effect: GHK-Cu injected in one tissue area improves healing at distant sites (rats, mice, pigs). This systemic activity is part of the rationale for injectable use over topical-only application.",
     ],
   },
   {
     id: "timeline",
-    title: "What to Expect (Timeline)",
+    title: "How long does GHK-Cu take to work?",
+    intro:
+      "GHK-Cu effects develop on multiple timescales depending on route. Topical: visible skin texture changes typically 4–8 weeks of consistent use. Injectable: skin improvements within the first 30-day cycle; hair changes typically 60–90 days (second cycle). Systemic effects (gene expression modulation) are measurable within hours of dosing but cumulative over cycles. Most users complete 3 injectable cycles before assessing full results.",
     content:
-      "GHK-Cu effects develop on multiple timescales. Topical: visible skin texture changes typically 4–8 weeks of consistent use. Injectable: skin improvements within the first 30-day cycle; hair changes typically 60–90 days (second cycle). Systemic effects (gene expression modulation) are measurable within hours of dosing but cumulative over cycles. Most users complete 3 injectable cycles before assessing full results.",
+      "Topical: visible skin texture changes typically 4–8 weeks of consistent use. Injectable: skin improvements within the first 30-day cycle; hair changes typically 60–90 days (second cycle). Systemic effects (gene expression modulation) are measurable within hours of dosing but cumulative over cycles. Most users complete 3 injectable cycles before assessing full results — consistent with the gene-expression-driven mechanism where effects accumulate via tissue remodeling rather than acute pharmacology.",
   },
   {
     id: "dosing",
-    title: "Dosing & Protocols",
+    title: "How is GHK-Cu dosed?",
+    intro:
+      "GHK-Cu is used both topically (cosmetic skincare — strongest evidence base, FDA-permitted) and as an injectable research peptide (FDA-restricted as of 2023). Topical dose is 1–3% in serums/creams applied 1–2× daily. Injectable research protocol is typically a 30-day phased cycle: 1 mg/day for days 1–15, then 2 mg/day for days 16–30, followed by a 30-day break.",
     node: (
       <div className="space-y-3">
-        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          GHK-Cu is used both topically (cosmetic skincare) and as an injectable research peptide. Topical use has the strongest evidence base and is widely permitted; injectable use has FDA restrictions as of 2023.
-        </p>
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Topical (cosmetic): 1–3% concentration in serums or creams. Apply 1–2× daily after cleansing.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injectable research protocol — Phase 1 (Days 1–15): 1 mg/day subcutaneously before bed (4 units on insulin syringe with 0.5 mg/mL reconstitution).</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Injectable research protocol — Phase 2 (Days 16–30): 2 mg/day subcutaneously (8 units).</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cycle: 30 days on, 30 days off. Most users complete 3 cycles before assessing results.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reconstitution: 50 mg vial + 100 mL bacteriostatic water = 0.5 mg/mL (4 units = 1 mg).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Topical (cosmetic).</span> 1–3% concentration in serums or creams. Apply 1–2× daily after cleansing.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Injectable Phase 1 (Days 1–15).</span> 1 mg/day subcutaneously before bed.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Injectable Phase 2 (Days 16–30).</span> 2 mg/day subcutaneously.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle structure.</span> 30 days on, 30 days off. Most users complete 3 cycles before assessing results.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution.</span> 50 mg vial + 10 mL bacteriostatic water = 5 mg/mL (20 units = 1 mg). See How is GHK-Cu administered? for the full reconstitution table.</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-          For most users, topical is the safer and more defensible starting point. Injectable adds systemic effects but carries the FDA Category 2 restriction and quality-control concerns for compounded preparations.
+          For most users, topical is the safer and more defensible starting point. Injectable adds systemic effects but carries the FDA restriction (compounded injectable preparation prohibited as of 2023) and quality-control concerns for research-grade material.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
@@ -158,8 +172,150 @@ const sections = [
     ),
   },
   {
+    id: "how-to-take",
+    title: "How is GHK-Cu administered?",
+    intro: (
+      <>
+        GHK-Cu is administered topically (cosmetic skincare &mdash; FDA-permitted) or by subcutaneous injection (FDA-restricted as of 2023). Topical use is the more defensible starting point and has the strongest evidence base. Injectable produces systemic effects across tissues but requires research-grade material and carries regulatory restrictions. For the practical mechanics of insulin syringes for the injectable route, see the{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        guide.
+      </>
+    ),
+    node: (
+      <div className="space-y-4">
+        <ol className="list-decimal list-inside space-y-1">
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Topical.</span> Apply to clean dry skin, twice daily. Avoid combining with raw vitamin C in the same product (copper-vitamin C interactions destabilize both ingredients).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Injectable route.</span> Subcutaneous injection at bedtime, at least 2 hours after last meal. Common sites: abdomen, thigh, upper arm.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Bedtime preferred (aligns with natural overnight tissue-repair pulses).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Empty stomach preferred for injectable (2+ hours after eating).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Alternate abdomen, thigh, upper arm for injectable.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution handling.</span> Bacteriostatic water, swirl gently, never shake. Light-sensitive &mdash; store in opaque container.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid direct sunlight.</span> Avoid direct sunlight on injection sites for 24–48 hours post-injection.</li>
+        </ol>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Timing context.</span> GHK-Cu&apos;s effects accumulate via gene expression and tissue remodeling rather than acute pharmacology &mdash; the per-dose plasma profile matters less than cycle consistency. Topical and injectable produce different effect profiles: topical drives localized skin effects through direct dermal exposure; injectable produces systemic gene-expression modulation across tissues. Many users combine both routes (topical for skin, injectable for systemic) during research cycles.
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Frequency</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Topical: 1–2× daily. Injectable: once daily during 30-day cycle (3 cycles typical).</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Best time of day</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Topical: AM or PM. Injectable: bedtime preferred.</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Food</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Injectable: empty stomach preferred (2+ hours after eating)</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Route choice</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Topical for skin-focused (safer, FDA-permitted); injectable for systemic effects (FDA-restricted)</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Half-life</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Short plasma half-life; biological effects persist via gene-expression changes</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Steady-state</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Tissue effects accumulate over cycles &mdash; 3-cycle pattern is standard before full assessment</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Reconstitution math.</span> Choose your bacteriostatic water volume based on dose precision. Lower water volume = higher concentration = smaller syringe draw. GHK-Cu research vials are typically 50 mg &mdash; significantly larger than other research peptides. Because the per-dose amount is small (1–3 mg), higher reconstitution volumes (5–10 mL) are used to keep syringe draws practical. All units below are measured on a U-100 insulin syringe (100 units = 1 mL). The table assumes a 50 mg vial.
+        </p>
+
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">1 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">2 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">3 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">5 mg dose</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">2 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">25 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">4 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">8 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">12 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">20 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">5 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">10 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">20 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">30 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">50 units</td>
+              </tr>
+              <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium whitespace-nowrap">10 mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">5 mg/mL</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">20 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">40 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">60 units</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">100 units</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          <span className="font-semibold">Units vs mcg.</span> At a 50 mg vial, each unit drawn delivers 250 mcg of GHK-Cu at 2 mL reconstitution, 100 mcg at 5 mL, and 50 mcg at 10 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
+          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: "stacks",
+    title: "What does GHK-Cu stack well with?",
+    intro:
+      "GHK-Cu's canonical pairing is with BPC-157 + TB-500 in the GLOW blend for skin/recovery synergy, or in the KLOW blend (adds KPV). Topical retinoids combine well (collagen synthesis + cell turnover), and topical niacinamide is compatible. The most important non-stacking is vitamin C: topical high-concentration vitamin C destabilizes the copper complex, so apply at different times of day.",
+    node: (
+      <ol className="list-decimal list-inside space-y-1">
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">BPC-157 + TB-500 (GLOW Stack).</span>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          +{" "}
+          <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+          combined with GHK-Cu in the{" "}
+          <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+          blend for skin/recovery synergy. KPV adds anti-inflammatory effect for the broader{" "}
+          <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+          blend.
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Topical retinoids.</span> Combination of GHK-Cu (collagen synthesis) + retinoid (cell turnover) is well-tolerated and synergistic.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Vitamin C serum.</span> Apply at separate times (AM vitamin C, PM GHK-Cu) to avoid copper-vitamin C neutralization.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Topical niacinamide.</span> Compatible &mdash; both support barrier function.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid: high-dose oral copper supplements.</span> During injectable GHK-Cu cycles &mdash; theoretical risk of total copper overload.</li>
+      </ol>
+    ),
+  },
+  {
     id: "side-effects",
-    title: "Side Effects & Safety",
+    title: "What are the side effects of GHK-Cu?",
+    intro:
+      "GHK-Cu is NOT FDA-approved for injectable use (FDA prohibits compounded injectable commercial preparation as of 2023). Topical GHK-Cu is widely available in cosmetic formulations with decades of safe-use history. The most common practical issue is topical irritation — typically resolves with reduced concentration or frequency. Mild injection-site reactions are reported for injectable use. Copper allergy is a real but uncommon contraindication.",
     node: (
       <div className="space-y-5">
         <div>
@@ -167,9 +323,9 @@ const sections = [
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild injection site reactions</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Possible scalp or skin irritation (topical)</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">&ldquo;Copper uglies&rdquo; — transient skin purging in first 1–2 weeks (rare)</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mild injection site reactions.</span> Injectable route only.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Possible scalp or skin irritation.</span> Topical route.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">&ldquo;Copper uglies&rdquo;.</span> Transient skin purging in first 1–2 weeks (rare); self-resolving.</li>
           </ol>
         </div>
         <div>
@@ -177,9 +333,9 @@ const sections = [
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild headache</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild fatigue</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Allergic reactions in copper-sensitive individuals</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mild headache.</span> Uncommon.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mild fatigue.</span> Uncommon.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Allergic reactions.</span> In copper-sensitive individuals.</li>
           </ol>
         </div>
         <div>
@@ -187,61 +343,32 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Copper allergy reactions (hives, swelling, breathing issues — discontinue immediately)</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Theoretical copper toxicity (negligible at standard doses but possible with chronic high-dose use)</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term injectable safety not formally established</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Copper allergy reactions.</span> Hives, swelling, breathing issues &mdash; discontinue immediately.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical copper toxicity.</span> Negligible at standard doses but possible with chronic high-dose use.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Long-term injectable safety.</span> Not formally established.</li>
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          GHK-Cu is NOT FDA-approved for injectable use. The FDA prohibits injectable GHK-Cu in commercial compounding as of 2023. Topical GHK-Cu is widely available in cosmetic formulations and has decades of safe-use history. The most common practical issue is topical irritation — typically resolves with reduced concentration or frequency.
+          GHK-Cu is NOT FDA-approved for injectable use. The FDA prohibits injectable GHK-Cu in commercial compounding as of 2023. Topical GHK-Cu is widely available in cosmetic formulations and has decades of safe-use history. The most common practical issue is topical irritation &mdash; typically resolves with reduced concentration or frequency.
         </p>
       </div>
     ),
   },
   {
-    id: "how-to-take",
-    title: "How to Take",
-    body: [
-      "Topical: Apply to clean dry skin, twice daily. Avoid combining with raw vitamin C in the same product (copper-vitamin C interactions destabilize both).",
-      "Injectable: Subcutaneous injection at bedtime, at least 2 hours after last meal.",
-      "Site rotation: alternate abdomen, thigh, upper arm.",
-      "Reconstitution: bacteriostatic water, swirl gently, never shake.",
-      "Storage of reconstituted: 2–8°C, use within 30 days.",
-      "Avoid direct sunlight on injection sites for 24–48 hours post-injection.",
-    ],
-  },
-  {
-    id: "stacks",
-    title: "Common Stacks",
-    node: (
-      <ol className="list-decimal list-inside space-y-1">
-        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          BPC-157 + TB-500 — the classic GLOW stack for skin/recovery synergy. See{" "}
-          <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">
-            GLOW
-          </Link>
-          .
-        </li>
-        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Topical retinoids — combination of GHK-Cu (collagen synthesis) + retinoid (cell turnover) is well-tolerated.</li>
-        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Vitamin C serum — apply at separate times (AM vitamin C, PM GHK-Cu) to avoid copper-vitamin C neutralization.</li>
-        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Topical niacinamide — compatible, both support barrier function.</li>
-        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Avoid: high-dose oral copper supplements during injectable cycles.</li>
-      </ol>
-    ),
-  },
-  {
     id: "interactions",
-    title: "Drug & Peptide Interactions",
+    title: "Does GHK-Cu interact with other drugs?",
+    intro:
+      "GHK-Cu's most relevant interactions are with vitamin C (high-concentration topical destabilizes the copper complex — apply at different times), topical hydroquinone (limited data on combination), and copper-binding drugs like D-penicillamine or chelation therapy (theoretical interaction with injectable use). No significant systemic drug interactions documented at standard cosmetic doses.",
     body: [
-      "Vitamin C (high concentration topical) — destabilizes copper complex; apply at different times.",
-      "Topical hydroquinone — limited data on combination.",
+      "Vitamin C (high concentration topical). Destabilizes copper complex; apply at different times.",
+      "Topical hydroquinone. Limited data on combination.",
       "No significant systemic drug interactions documented at standard cosmetic doses.",
       "Injectable: theoretical interaction with chelation therapy or D-penicillamine (copper-binding drugs).",
     ],
   },
   {
     id: "storage",
-    title: "Storage & Handling",
+    title: "How should GHK-Cu be stored?",
     body: [
       "Lyophilized: -20°C long-term, 2–8°C short-term.",
       "Topical formulations: room temperature in opaque packaging (light-sensitive).",
@@ -253,11 +380,13 @@ const sections = [
   },
   {
     id: "limitations",
-    title: "Research Limitations & Regulatory Status",
+    title: "What are the limitations of GHK-Cu research?",
+    intro:
+      "GHK-Cu has one of the strongest evidence bases of any peptide on Prof. Peptide — decades of cell, animal, and human studies with consistent results across research groups. Topical use is established in cosmetic formulations and widely available without prescription. Injectable use is NOT FDA-approved and the FDA prohibits compounded injectable commercial preparation as of 2023. Long-term injectable safety data is not established. NOT currently on the WADA prohibited list.",
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          GHK-Cu has one of the strongest evidence bases of any peptide on Prof. Peptide — decades of cell, animal, and human studies, with consistent results across research groups.
+          GHK-Cu has one of the strongest evidence bases of any peptide on Prof. Peptide &mdash; decades of cell, animal, and human studies, with consistent results across research groups.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Topical GHK-Cu is established in cosmetic formulations and widely available without prescription. Injectable GHK-Cu is NOT FDA-approved. The FDA prohibits compounded injectable GHK-Cu commercial preparation as of 2023.
@@ -272,8 +401,30 @@ const sections = [
     ),
   },
   {
+    id: "where-to-buy",
+    title: "Where to source GHK-Cu",
+    intro:
+      "Topical GHK-Cu is widely available in cosmetic skincare products at 1–3% concentrations. Injectable research-grade GHK-Cu is sold by specialty peptide vendors (note FDA restriction on compounded injectable as of 2023). The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — including a UK/EU shipping option for international research.",
+    node: (
+      <div className="space-y-4">
+        <VendorHighlightBlock
+          highlights={[
+            { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
+            { slug: "particle-peptides", note: "UK/EU shipping" },
+            { slug: "ascension-peptides" },
+          ]}
+        />
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            See all 17 verified vendors &rarr;
+          </Link>
+        </p>
+      </div>
+    ),
+  },
+  {
     id: "faq",
-    title: "FAQ",
+    title: "GHK-Cu FAQ",
     node: (
       <div className="space-y-4">
         {faqs.map((f, i) => (
@@ -359,7 +510,7 @@ const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
 export default function GHKCuPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GHK-Cu","description":"GHK-Cu (copper tripeptide) research profile: collagen synthesis, gene expression modulation, hair growth, dosing, side effects, and FDA status.","url":"https://profpeptide.com/peptides/ghk-cu","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GHK-Cu","description":"GHK-Cu (copper tripeptide) research profile: collagen synthesis, gene expression modulation, hair growth, dosing, side effects, FAQ, and FDA status.","url":"https://profpeptide.com/peptides/ghk-cu","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"GHK-Cu"}]}} />
     <div className="section max-w-3xl">
       <Link
@@ -374,15 +525,35 @@ export default function GHKCuPage() {
         <span className="tag">Skin Health &amp; Anti-Aging</span>
         <span className="tag">Research-Grade</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-8">
-        Also Known As: Copper Tripeptide-1, Glycyl-L-Histidyl-L-Lysine Copper, GHK Copper Peptide
+      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+        Last reviewed: May 24, 2026
       </p>
+      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Copper Tripeptide-1, Glycyl-L-Histidyl-L-Lysine Copper, GHK Copper Peptide
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Natural Copper-Binding Tripeptide &mdash; Multi-Pathway Gene Expression Modulator
+        </p>
+        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Topical permitted in cosmetics. Injectable not FDA-approved &mdash; commercial compounding prohibited (2023). Not on WADA prohibited list.
+        </p>
+      </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Overview</h2>
+        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is GHK-Cu?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            GHK-Cu is a naturally occurring copper-binding tripeptide (glycyl-L-histidyl-L-lysine) first isolated by Loren Pickart in 1973 from human plasma albumin. It exists naturally in plasma, saliva, and urine — at age 20 plasma levels average ~200 ng/mL, declining to ~80 ng/mL by age 60. This decline coincides with reduced regenerative capacity. GHK-Cu has one of the broadest mechanistic profiles of any peptide on Prof. Peptide — gene expression studies show it modulates over 4,000 human genes related to collagen synthesis, wound healing, anti-inflammatory signaling, and tissue remodeling. It&apos;s the #11 most-searched peptide globally with +1,016% YoY search growth, primarily driven by viral skincare content and growing interest in copper peptides for hair regrowth and skin rejuvenation.
+            GHK-Cu is a naturally occurring copper-binding tripeptide (glycyl-L-histidyl-L-lysine) first isolated by Loren Pickart in 1973 from human plasma albumin. It exists naturally in plasma, saliva, and urine &mdash; at age 20 plasma levels average ~200 ng/mL, declining to ~80 ng/mL by age 60. This decline coincides with reduced regenerative capacity. GHK-Cu has one of the broadest mechanistic profiles of any peptide on Prof. Peptide &mdash; gene expression studies show it modulates over 4,000 human genes related to collagen synthesis, wound healing, anti-inflammatory signaling, and tissue remodeling. Often paired with{" "}
+            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            +{" "}
+            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+            in the{" "}
+            <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+            blend for skin and recovery, or in the broader{" "}
+            <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+            blend. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -398,24 +569,14 @@ export default function GHKCuPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Topical: 1–3% concentration in serums/creams, applied 1–2× daily. Injectable research protocol: 1–2 mg subcutaneously, 30-day cycle (typically 1 mg days 1–15, escalating to 2 mg days 16–30), then 30-day break. See{" "}
-            <a href="#dosing" className="text-[#0891b2] hover:underline">
-              Dosing &amp; Protocols
-            </a>{" "}
-            below for details.
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Topical: 1–3% concentration in serums/creams, applied 1–2× daily. Injectable research protocol: 1–2 mg subcutaneously, 30-day cycle (typically 1 mg days 1–15, escalating to 2 mg days 16–30), then 30-day break.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Topical GHK-Cu is widely available in cosmetic skincare. Injectable GHK-Cu is sold by specialty research peptide vendors (note FDA restrictions on compounded injectable as of 2023). See{" "}
-            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
-              Verified Peptide Vendors &rarr;
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
+            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+              Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
-          </p>
-          <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
-            <a href="https://www.amazon.com/s?k=skin+anti+aging+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
-              Find related supplements on Amazon.
-            </a>
           </p>
         </div>
       </div>
@@ -428,6 +589,11 @@ export default function GHKCuPage() {
             <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
+            {s.intro && (
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+                {s.intro}
+              </p>
+            )}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
@@ -462,7 +628,24 @@ export default function GHKCuPage() {
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
         <Link href="/peptides/tb-500" className="text-sm font-medium text-[#0891b2] hover:underline">TB-500</Link>
+        <Link href="/peptides/kpv" className="text-sm font-medium text-[#0891b2] hover:underline">KPV</Link>
+        <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>
+        </div>
+      </div>
+
+      <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
+        <div className="flex flex-wrap gap-4">
         <Link href="/peptides/glow" className="text-sm font-medium text-[#0891b2] hover:underline">GLOW</Link>
+        <Link href="/peptides/klow" className="text-sm font-medium text-[#0891b2] hover:underline">KLOW</Link>
+        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#0891b2] hover:underline">Wolverine Stack</Link>
+        </div>
+      </div>
+
+      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
+        <div className="flex flex-wrap gap-4">
+        <Link href="/compare/bpc-157-vs-ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157 vs GHK-Cu &rarr;</Link>
         </div>
       </div>
 
