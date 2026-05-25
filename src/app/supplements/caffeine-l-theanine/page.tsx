@@ -43,7 +43,13 @@ const faqs = [
       <>
         Yes — and{" "}
         <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
-        is mechanistically the natural peptide bridge from this stack. Caffeine raises arousal and dopamine availability; L-theanine smooths the curve via GABA and alpha-wave modulation; Semax adds BDNF-mediated neurotrophic signaling on top. The three operate on different pathways, so the combined effect tends to layer rather than overlap. Other supplement nootropics (Alpha-GPC for cholinergic substrate, Lion&apos;s Mane for BDNF/NGF, Bacopa for long-term memory consolidation) also stack cleanly. Introduce one variable at a time so you can tell what&apos;s actually doing what.
+        is mechanistically the natural peptide bridge from this stack. Caffeine raises arousal and dopamine availability; L-theanine smooths the curve via GABA and alpha-wave modulation; Semax adds BDNF-mediated neurotrophic signaling on top. The three operate on different pathways, so the combined effect tends to layer rather than overlap. Other supplement nootropics ({" "}
+        <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>{" "}
+        for cholinergic substrate,{" "}
+        <Link href="/supplements/lions-mane" className="text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>{" "}
+        for BDNF/NGF,{" "}
+        <Link href="/supplements/bacopa-monnieri" className="text-[#0891b2] hover:underline">Bacopa</Link>{" "}
+        for long-term memory consolidation) also stack cleanly. Introduce one variable at a time so you can tell what&apos;s actually doing what.
       </>
     ),
   },
