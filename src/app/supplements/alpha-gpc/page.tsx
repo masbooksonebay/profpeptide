@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import AmazonCTAButton from "@/components/AmazonCTAButton";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -357,14 +358,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Fresh manufacture date</span> — avoid jars sitting on warehouse shelves &gt;18 months pre-purchase.</li>
           </ul>
         </div>
-        <a
-          href="https://www.amazon.com/s?k=alpha+gpc&tag=profpeptide-20"
-          target="_blank"
-          rel="sponsored nofollow noopener noreferrer"
-          className="btn-primary text-sm inline-block"
-        >
-          Search Alpha-GPC on Amazon &rarr;
-        </a>
+        <AmazonCTAButton href="https://www.amazon.com/s?k=alpha+gpc&tag=profpeptide-20" label="Alpha-GPC" />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
           Amazon affiliate link — Prof. Peptide earns a small commission on qualifying purchases at no extra cost to you. We use commissions to fund research and editorial work.
         </p>
@@ -619,9 +613,9 @@ export default function AlphaGPCPage() {
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 300–600 mg once daily for cognitive baseline; 600 mg taken 60–90 minutes pre-workout for the acute GH and force-production effect; 1200 mg/day in divided doses for clinical dementia research (not a healthy-user starting point).
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.{" "}
-            <a href="https://www.amazon.com/s?k=alpha+gpc&tag=profpeptide-20" target="_blank" rel="sponsored nofollow noopener noreferrer" className="font-semibold text-[#0891b2] hover:underline">Shop Alpha-GPC on Amazon &rarr;</a>
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
           </p>
+          <AmazonCTAButton href="https://www.amazon.com/s?k=alpha+gpc&tag=profpeptide-20" label="Alpha-GPC" />
         </div>
       </div>
 

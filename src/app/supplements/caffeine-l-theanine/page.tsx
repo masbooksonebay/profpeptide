@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import AmazonCTAButton from "@/components/AmazonCTAButton";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -351,14 +352,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Fresh manufacture date</span> — avoid jars sitting on warehouse shelves &gt;18 months pre-purchase</li>
           </ul>
         </div>
-        <a
-          href="https://www.amazon.com/s?k=caffeine+l-theanine&tag=profpeptide-20"
-          target="_blank"
-          rel="sponsored nofollow noopener noreferrer"
-          className="btn-primary text-sm inline-block"
-        >
-          Search Caffeine + L-Theanine on Amazon &rarr;
-        </a>
+        <AmazonCTAButton href="https://www.amazon.com/s?k=caffeine+l-theanine&tag=profpeptide-20" label="Caffeine + L-Theanine" />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
           Amazon affiliate link — Prof. Peptide earns a small commission on qualifying purchases at no extra cost to you. We use commissions to fund research and editorial work.
         </p>
@@ -623,9 +617,9 @@ export default function CaffeineLTheaninePage() {
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> Canonical 1:2 ratio — 100 mg caffeine + 200 mg L-theanine — taken 30–60 minutes before sustained-attention tasks. The published dose range spans 1:1 to 1:4; the 1:2 protocol is the most-replicated. Light starting dose: 50 mg caffeine + 100 mg L-theanine. High-tolerance: 200 mg caffeine + 400 mg L-theanine.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter as combined capsules or separate caffeine tablets + L-theanine capsules. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.{" "}
-            <a href="https://www.amazon.com/s?k=caffeine+l-theanine&tag=profpeptide-20" target="_blank" rel="sponsored nofollow noopener noreferrer" className="font-semibold text-[#0891b2] hover:underline">Shop Caffeine + L-Theanine on Amazon &rarr;</a>
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter as combined capsules or separate caffeine tablets + L-theanine capsules. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
           </p>
+          <AmazonCTAButton href="https://www.amazon.com/s?k=caffeine+l-theanine&tag=profpeptide-20" label="Caffeine + L-Theanine" />
         </div>
       </div>
 

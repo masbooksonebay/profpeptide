@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
+import AmazonCTAButton from "@/components/AmazonCTAButton";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -359,14 +360,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Fresh manufacture date</span> — avoid jars sitting on warehouse shelves &gt;18 months pre-purchase</li>
           </ul>
         </div>
-        <a
-          href="https://www.amazon.com/s?k=zinc+carnosine&tag=profpeptide-20"
-          target="_blank"
-          rel="sponsored nofollow noopener noreferrer"
-          className="btn-primary text-sm inline-block"
-        >
-          Search Zinc-Carnosine on Amazon &rarr;
-        </a>
+        <AmazonCTAButton href="https://www.amazon.com/s?k=zinc+carnosine&tag=profpeptide-20" label="Zinc-Carnosine" />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
           Amazon affiliate link — Prof. Peptide earns a small commission on qualifying purchases at no extra cost to you. We use commissions to fund research and editorial work.
         </p>
@@ -616,9 +610,9 @@ export default function ZincCarnosinePage() {
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 75 mg twice daily with meals (the Japanese Rx polaprezinc protocol) for general gut-healing and ulcer applications. The Davison 2016 athlete trial used 37.5 mg BID for 14 days pre-event and demonstrated efficacy at the lower dose. For NSAID adjunct use: 75 mg with each NSAID dose. Each 75 mg capsule contains ~17 mg elemental zinc — audit total zinc intake from all sources to stay below the 40 mg/day UL.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.{" "}
-            <a href="https://www.amazon.com/s?k=zinc+carnosine&tag=profpeptide-20" target="_blank" rel="sponsored nofollow noopener noreferrer" className="font-semibold text-[#0891b2] hover:underline">Shop Zinc-Carnosine on Amazon &rarr;</a>
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
           </p>
+          <AmazonCTAButton href="https://www.amazon.com/s?k=zinc+carnosine&tag=profpeptide-20" label="Zinc-Carnosine" />
         </div>
       </div>
 
