@@ -23,7 +23,14 @@ const faqs = [
   },
   {
     q: "Will Alpha-GPC actually raise growth hormone?",
-    a: "Yes — but it's an acute, exercise-coupled effect, not a chronic GH protocol. Ziegenfuss 2008 found 600 mg taken 60–90 minutes before resistance exercise produced a 44% higher peak GH response versus placebo, with downstream improvements in lower-body force production. Without the exercise stimulus, the GH effect is small. Treat this as a workout-day adjunct, not a daily GH-axis intervention. For sustained GH support, peptides in the GH cluster (Sermorelin, Ipamorelin, CJC-1295) do the actual work.",
+    a: (
+      <>
+        Yes — but it&apos;s an acute, exercise-coupled effect, not a chronic GH protocol. Ziegenfuss 2008 found 600 mg taken 60–90 minutes before resistance exercise produced a 44% higher peak GH response versus placebo, with downstream improvements in lower-body force production. Without the exercise stimulus, the GH effect is small. Treat this as a workout-day adjunct, not a daily GH-axis intervention. For sustained GH support, peptides in the GH cluster ({" "}
+        <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>,{" "}
+        <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>,{" "}
+        <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>) do the actual work.
+      </>
+    ),
   },
   {
     q: "Can I take Alpha-GPC every day long-term?",
@@ -227,7 +234,8 @@ const sections = [
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-Theanine</Link>{" "}
-              — alpha-wave focus state without the jittery edge of stimulants. Pairs especially well with Alpha-GPC + caffeine.
+              — alpha-wave focus state without the jittery edge of stimulants. Pairs especially well with Alpha-GPC +{" "}
+              <Link href="/supplements/caffeine" className="text-[#0891b2] hover:underline">caffeine</Link>.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/phosphatidylserine" className="text-[#0891b2] hover:underline">Phosphatidylserine</Link>{" "}
@@ -247,7 +255,7 @@ const sections = [
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mental-work timing.</span> Take 30–60 minutes before deep cognitive work; effects build within the first hour.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Training timing.</span> 60–90 minutes pre-workout for the GH and force-production effects. Pair with creatine if performance is the goal.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Caffeine.</span> Synergistic. Caffeine raises arousal and adenosine resistance; Alpha-GPC raises acetylcholine availability. Watch total stimulant load.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold"><Link href="/supplements/caffeine" className="text-[#0891b2] hover:underline">Caffeine</Link>.</span> Synergistic. Caffeine raises arousal and adenosine resistance; Alpha-GPC raises acetylcholine availability. Watch total stimulant load.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sleep timing.</span> Avoid evening dosing if you&apos;re sensitive — cholinergic activation can disrupt REM architecture in some users.</li>
           </ol>
         </div>
@@ -284,7 +292,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anticholinergic medications (some antihistamines, tricyclic antidepressants, certain bladder medications) — Alpha-GPC&apos;s pro-cholinergic effect may partially oppose these drugs. Consult a clinician if you&apos;re on chronic anticholinergic therapy.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cholinesterase inhibitors (donepezil, rivastigmine — Alzheimer&apos;s drugs) — additive cholinergic effect. Coordinate with the prescribing clinician.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Other high-choline supplements (CDP-choline, choline bitartrate, phosphatidylcholine, lecithin) — stacking is fine but watch total choline load. Most users don&apos;t need to combine sources.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stimulants (caffeine, modafinil, ADHD medications) — synergistic for focus, but watch total cognitive load. Reduce caffeine if you notice over-stimulation.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stimulants (<Link href="/supplements/caffeine" className="text-[#0891b2] hover:underline">caffeine</Link>, modafinil, ADHD medications) — synergistic for focus, but watch total cognitive load. Reduce caffeine if you notice over-stimulation.</li>
           </ol>
         </div>
       </div>
