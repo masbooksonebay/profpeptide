@@ -8,7 +8,12 @@ export const metadata = buildPageMetadata({
   description: "Prof. Peptide for iOS: peptide dose calculator, 30+ compound profiles, latest research, and verified vendor discount codes. Free on the App Store.",
   ogTitle: "Prof. Peptide for iOS",
   ogDescription: "Calculate doses, browse 30+ peptide profiles, follow research, and find verified vendor codes. Free on the App Store.",
-  useDefaultOgImage: false,
+  ogImage: {
+    url: "/og/app-thumbnail.png",
+    width: 1200,
+    height: 630,
+    alt: "Prof. Peptide iOS App — Download on the App Store",
+  },
 });
 
 const APP_STORE_URL = "https://apps.apple.com/app/prof-peptide/id6761995269";
