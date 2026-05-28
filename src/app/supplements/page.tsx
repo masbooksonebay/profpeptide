@@ -95,7 +95,7 @@ const supplements: Supplement[] = [
   { slug: "tongkat-ali",            name: "Tongkat Ali",             categories: ["sexual-health", "growth-hormone"] },
   { slug: "vitamin-c",              name: "Vitamin C",               categories: ["recovery", "gut-health"] },
   { slug: "vitamin-c-skin",         name: "Vitamin C",               categories: ["skin-health"] },
-  { slug: "vitamin-d3",             name: "Vitamin D3",              categories: ["gut-health", "longevity"] },
+  { slug: "vitamin-d3",             name: "Vitamin D3",              categories: ["recovery", "gut-health"] },
   { slug: "zinc",                   name: "Zinc",                    categories: ["gut-health", "recovery"] },
   { slug: "zinc-carnosine",         name: "Zinc Carnosine",          categories: ["recovery", "gut-health"] },
   { slug: "zma",                    name: "ZMA",                     categories: ["growth-hormone", "sleep-recovery"] },
