@@ -70,10 +70,10 @@ export const vendors: Record<string, Vendor> = {
   },
   "fusion-peptide": {
     name: "Fusion Peptide",
-    code: "MARK15",
+    code: "PROFPEPTIDE",
     discount: "15% off",
     region: "US",
-    url: "https://fusionpeptide.com/?ref=PROFPEPTIDE",
+    url: "https://fusionpeptide.com/?ref=pacjbqyu",
     detailPage: "/coupons/fusion-peptide",
   },
   "ignite-peptides": {

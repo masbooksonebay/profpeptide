@@ -118,7 +118,7 @@ const sections: VendorSection[] = [
       },
       {
         name: "Fusion Peptide",
-        url: "https://fusionpeptide.com/?ref=PROFPEPTIDE",
+        url: "https://fusionpeptide.com/?ref=pacjbqyu",
         code: "PROFPEPTIDE",
         discount: "15% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
