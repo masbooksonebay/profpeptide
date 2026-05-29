@@ -29,6 +29,14 @@ const studiesRedirectSlugs = [
 ];
 
 const nextConfig = {
+  // Force Vercel's file tracer to bundle the OG card assets with the coupon
+  // image routes. They are read from disk at render time (see src/lib/coupon-og.tsx);
+  // without this the tracer can drop them and 500 the cards in production.
+  experimental: {
+    outputFileTracingIncludes: {
+      "/coupons/**": ["./public/og/coupon-card-base.png", "./public/fonts/*.ttf"],
+    },
+  },
   async redirects() {
     return [
       {

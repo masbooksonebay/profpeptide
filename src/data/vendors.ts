@@ -21,7 +21,7 @@ export const vendors: Record<string, Vendor> = {
   "almighty-peptides": {
     name: "Almighty Peptides",
     code: "profpep",
-    discount: "10% off",
+    discount: "20% off",
     region: "US",
     url: "https://www.almightypeptides.com/?sld=profpeptide",
     detailPage: "/coupons/almighty-peptides",
@@ -75,6 +75,15 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://fusionpeptide.com/?ref=pacjbqyu",
     detailPage: "/coupons/fusion-peptide",
+  },
+  "glacier-aminos": {
+    name: "Glacier Aminos",
+    code: "PROF10",
+    discount: "10% off",
+    region: "US",
+    url: "https://glacieraminos.shop/?ref=cknlhxrm",
+    detailPage: "/coupons/glacier-aminos",
+    editorsPick: true,
   },
   "ignite-peptides": {
     name: "Ignite Peptides",
