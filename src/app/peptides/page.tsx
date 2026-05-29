@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 32 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 37 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 32 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 37 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -20,7 +20,9 @@ const categories = [
       { name: "MOTS-c", slug: "mots-c" },
       { name: "Retatrutide", slug: "retatrutide" },
       { name: "Semaglutide", slug: "semaglutide" },
+      { name: "Semaglutide + BPC-157", slug: "semaglutide-bpc-157" },
       { name: "Tirzepatide", slug: "tirzepatide" },
+      { name: "Tirzepatide + BPC-157", slug: "tirzepatide-bpc-157" },
     ],
   },
   {
@@ -45,10 +47,12 @@ const categories = [
     slug: "growth-hormone",
     peptides: [
       { name: "CJC-1295", slug: "cjc-1295" },
+      { name: "CJC-1295 DAC + Ipamorelin", slug: "cjc-1295-dac-ipamorelin" },
       { name: "GH Stack", slug: "gh-stack" },
       { name: "Ipamorelin", slug: "ipamorelin" },
       { name: "MK-677", slug: "mk-677" },
       { name: "Sermorelin", slug: "sermorelin" },
+      { name: "Sermorelin + Ipamorelin", slug: "sermorelin-ipamorelin" },
       { name: "Tesamorelin", slug: "tesamorelin" },
     ],
   },
@@ -76,6 +80,7 @@ const categories = [
     slug: "gut-health",
     peptides: [
       { name: "KPV", slug: "kpv" },
+      { name: "KPV + BPC-157", slug: "kpv-bpc-157" },
       { name: "Thymosin Alpha-1", slug: "thymosin-alpha-1" },
     ],
   },
