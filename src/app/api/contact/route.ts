@@ -84,8 +84,8 @@ export async function POST(request: NextRequest) {
   if (subject.trim().length === 0 || subject.length > 120) {
     return NextResponse.json({ error: "Subject required (max 120 characters).", field: "subject" }, { status: 400 });
   }
-  if (message.trim().length < 20 || message.length > 2000) {
-    return NextResponse.json({ error: "Message must be 20-2000 characters.", field: "message" }, { status: 400 });
+  if (message.trim().length === 0 || message.length > 2000) {
+    return NextResponse.json({ error: "Message must be 1-2000 characters.", field: "message" }, { status: 400 });
   }
 
   const ip =
@@ -133,7 +133,7 @@ export async function POST(request: NextRequest) {
 
   const autoReplyBody = `Thanks for reaching out to Prof. Peptide.
 
-We've received your question and will respond within 3-5 business days.
+We've received your question and will respond within 1-2 business days.
 
 A reminder: Prof. Peptide publishes evidence-based peptide and supplement research. We are not licensed medical professionals and cannot provide medical advice. Our responses are for research and educational purposes only. Always consult a qualified healthcare provider before starting any peptide or supplement regimen.
 

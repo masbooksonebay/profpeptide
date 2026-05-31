@@ -34,7 +34,7 @@ export default function ContactForm() {
     if (!category) errs.category = "Please choose a topic.";
     if (!subject.trim()) errs.subject = "Subject is required.";
     else if (subject.length > 120) errs.subject = "Subject must be under 120 characters.";
-    if (message.trim().length < 20) errs.message = "Message must be at least 20 characters.";
+    if (!message.trim()) errs.message = "Message is required.";
     else if (message.length > 2000) errs.message = "Message must be under 2000 characters.";
     return errs;
   };
@@ -76,7 +76,7 @@ export default function ContactForm() {
       <div className="rounded-xl border border-[#0891b2]/30 bg-[#0891b2]/5 p-6">
         <p className="text-lg font-medium text-[#1e2d3d] dark:text-slate-100 mb-2">Got it.</p>
         <p className="text-base text-gray-600 dark:text-slate-300 leading-relaxed">
-          We&apos;ll respond within 3-5 business days. Check your inbox for a confirmation email.
+          We&apos;ll respond within 1-2 business days. Check your inbox for a confirmation email.
         </p>
       </div>
     );
@@ -167,7 +167,6 @@ export default function ContactForm() {
           id="contact-message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          minLength={20}
           maxLength={2000}
           rows={6}
           required
