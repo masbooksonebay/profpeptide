@@ -49,7 +49,7 @@ const categories = [
     peptides: [
       { name: "CJC-1295", slug: "cjc-1295" },
       { name: "CJC-1295 DAC + Ipamorelin", slug: "cjc-1295-dac-ipamorelin" },
-      { name: "GH Stack", slug: "gh-stack" },
+      { name: "CJC-1295 + Ipamorelin (GH Stack)", slug: "gh-stack" },
       { name: "Ipamorelin", slug: "ipamorelin" },
       { name: "MK-677", slug: "mk-677" },
       { name: "MK-677 + Ipamorelin", slug: "mk-677-ipamorelin" },
