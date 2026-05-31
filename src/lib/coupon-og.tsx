@@ -30,7 +30,7 @@ function codeFontSize(code: string): number {
   const n = code.length;
   if (n <= 6) return 64; // PROF10, profpep…
   if (n <= 8) return 56;
-  if (n <= 10) return 48; // welcome10
+  if (n <= 10) return 48; // WELCOME10
   if (n <= 12) return 42; // PROFPEPTIDE (11)
   return 34;
 }
