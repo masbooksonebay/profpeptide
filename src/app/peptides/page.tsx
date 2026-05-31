@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 37 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 41 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 37 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 41 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -17,6 +17,7 @@ const categories = [
       { name: "AOD-9604", slug: "aod-9604" },
       { name: "Cagrilintide", slug: "cagrilintide" },
       { name: "CagriSema", slug: "cagrisema" },
+      { name: "Metabolic Blend (NAD+ / MOTS-c / 5-Amino-1MQ)", slug: "nad-mots-c-5-amino-1mq" },
       { name: "MOTS-c", slug: "mots-c" },
       { name: "Retatrutide", slug: "retatrutide" },
       { name: "Semaglutide", slug: "semaglutide" },
@@ -51,9 +52,11 @@ const categories = [
       { name: "GH Stack", slug: "gh-stack" },
       { name: "Ipamorelin", slug: "ipamorelin" },
       { name: "MK-677", slug: "mk-677" },
+      { name: "MK-677 + Ipamorelin", slug: "mk-677-ipamorelin" },
       { name: "Sermorelin", slug: "sermorelin" },
       { name: "Sermorelin + Ipamorelin", slug: "sermorelin-ipamorelin" },
       { name: "Tesamorelin", slug: "tesamorelin" },
+      { name: "Tesamorelin + Ipamorelin", slug: "tesamorelin-ipamorelin" },
     ],
   },
   {
@@ -104,6 +107,7 @@ const categories = [
     slug: "sexual-health",
     peptides: [
       { name: "PT-141", slug: "pt-141" },
+      { name: "PT-141 + Oxytocin", slug: "pt-141-oxytocin" },
     ],
   },
 ];
