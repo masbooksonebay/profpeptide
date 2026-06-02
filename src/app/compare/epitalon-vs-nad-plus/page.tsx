@@ -5,9 +5,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/compare/epitalon-vs-nad-plus",
-  title: "Epitalon vs NAD+ — Longevity Supplement Comparison | Prof. Peptide",
+  title: "Epitalon vs NAD+ — Mechanism, Evidence & Which to Pick | Prof. Peptide",
   description:
-    "Epitalon vs NAD+ comparison — how these two longevity compounds work, what the research shows, and how they differ in mechanism, evidence, and use.",
+    "Epitalon vs NAD+ — how these two longevity compounds differ in mechanism, research evidence, and use, and which one fits your goal.",
 });
 
 const rows = [

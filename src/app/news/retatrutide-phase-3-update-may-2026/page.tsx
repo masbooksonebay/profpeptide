@@ -4,21 +4,21 @@ import ContactLink from "@/components/ContactLink";
 
 export const metadata = {
   alternates: { canonical: "/news/retatrutide-phase-3-update-may-2026" },
-  title: "Retatrutide Phase 3 Update — Diabetes and Osteoarthritis Trials Hit Primary Endpoints | Prof. Peptide",
+  title: "Retatrutide: Not Yet FDA-Approved — Phase 3 Status & 2026 Timeline | Prof. Peptide",
   description:
-    "The first Phase 3 readouts from retatrutide's TRIUMPH and TRANSCEND-T2D programs are in. Here's what TRANSCEND-T2D-1 and TRIUMPH-4 showed and what comes next.",
+    "Retatrutide is still investigational and not FDA-approved. Where Phase 3 stands in 2026, the latest TRANSCEND-T2D-1 and TRIUMPH-4 results, and when a filing could come (late 2026–2027).",
   openGraph: {
-    title: "Retatrutide Phase 3 Update — Diabetes and Osteoarthritis Trials Hit Primary Endpoints",
+    title: "Retatrutide: Not Yet FDA-Approved — Phase 3 Status & 2026 Timeline | Prof. Peptide",
     description:
-      "The first Phase 3 readouts from retatrutide's TRIUMPH and TRANSCEND-T2D programs are in. Here's what TRANSCEND-T2D-1 and TRIUMPH-4 showed and what comes next.",
+      "Retatrutide is still investigational and not FDA-approved. Where Phase 3 stands in 2026, the latest TRANSCEND-T2D-1 and TRIUMPH-4 results, and when a filing could come (late 2026–2027).",
     url: "https://profpeptide.com/news/retatrutide-phase-3-update-may-2026",
     images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
   },
   twitter: {
     card: "summary_large_image" as const,
-    title: "Retatrutide Phase 3 Update — Diabetes and Osteoarthritis Trials Hit Primary Endpoints",
+    title: "Retatrutide: Not Yet FDA-Approved — Phase 3 Status & 2026 Timeline | Prof. Peptide",
     description:
-      "The first Phase 3 readouts from retatrutide's TRIUMPH and TRANSCEND-T2D programs are in. Here's what TRANSCEND-T2D-1 and TRIUMPH-4 showed and what comes next.",
+      "Retatrutide is still investigational and not FDA-approved. Where Phase 3 stands in 2026, the latest TRANSCEND-T2D-1 and TRIUMPH-4 results, and when a filing could come (late 2026–2027).",
     images: ["https://profpeptide.com/og-image.png"],
   },
 };

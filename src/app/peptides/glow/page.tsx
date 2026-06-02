@@ -7,9 +7,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/glow",
-  title: "GLOW Blend — GHK-Cu + BPC-157 + TB-500 Skin & Repair Stack | Prof. Peptide",
+  title: "GLOW Peptide — 50 mg GHK-Cu + 10 mg BPC-157 + 10 mg TB-500 (5:1:1) | Prof. Peptide",
   description:
-    "GLOW peptide blend research profile: 3-component stack of GHK-Cu, BPC-157, and TB-500 for skin, hair, and tissue repair. Mechanism, dosing, side effects, FAQ.",
+    "GLOW peptide blend: a 5:1:1 stack of 50 mg GHK-Cu, 10 mg BPC-157, and 10 mg TB-500 for skin, hair, and tissue repair. Mechanism, dosing, side effects, and FAQ.",
 });
 
 const faqs = [

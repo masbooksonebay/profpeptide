@@ -5,9 +5,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/compare/berberine-vs-metformin",
-  title: "Berberine vs Metformin — Blood Sugar Comparison | Prof. Peptide",
+  title: "Berberine vs Metformin — Same AMPK Activation? Mechanism Compared | Prof. Peptide",
   description:
-    "Berberine vs Metformin comparison — mechanism, blood sugar efficacy, side effects, availability, and what the research actually shows.",
+    "Berberine vs metformin — both activate AMPK, but how similar are they really? Mechanism, blood-sugar efficacy, side effects, and what the research shows.",
 });
 
 const rows = [
