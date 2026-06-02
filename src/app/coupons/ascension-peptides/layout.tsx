@@ -2,9 +2,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/ascension-peptides",
-  title: "Ascension Peptides Discount Code (May 2026) — Save 50% | Prof. Peptide",
+  title: "Ascension Peptides Coupon Code & Discount — Save 50% (2026) | Prof. Peptide",
   description:
-    "Use Ascension Peptides discount code PROFPEPTIDE to save 50% on research peptides. The largest discount on our vendor list. 99%+ purity, multi-stage third-party tested.",
+    "Save 50% at Ascension Peptides with discount code PROFPEPTIDE — our largest discount, verified promo code for 2026. 99%+ purity, multi-stage third-party tested.",
 });
 
 export default function AscensionPeptidesLayout({ children }: { children: React.ReactNode }) {

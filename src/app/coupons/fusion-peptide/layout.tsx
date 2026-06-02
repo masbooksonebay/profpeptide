@@ -2,9 +2,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/fusion-peptide",
-  title: "Fusion Peptide Discount Code (May 2026) — Save 15% | Prof. Peptide",
+  title: "Fusion Peptide Coupon Code & Discount — Save 15% (2026) | Prof. Peptide",
   description:
-    "Use Fusion Peptide discount code PROFPEPTIDE to save 15% on research peptides. Verified promo code updated May 2026. Topical and nasal spray formats available.",
+    "Save 15% at Fusion Peptide with discount code PROFPEPTIDE — verified promo code for 2026. Topical and nasal spray formats available.",
 });
 
 export default function FusionPeptideLayout({ children }: { children: React.ReactNode }) {
