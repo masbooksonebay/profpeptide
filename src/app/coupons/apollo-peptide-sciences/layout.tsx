@@ -2,9 +2,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/apollo-peptide-sciences",
-  title: "Apollo Peptide Sciences Discount Code (May 2026) — Save 10% | Prof. Peptide",
+  title: "Apollo Peptide Sciences Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
   description:
-    "Use Apollo Peptide Sciences discount code PROFPEPTIDE to save 10% on research peptides. COA and endotoxin reports on every product. Independent third-party tested.",
+    "Save 10% at Apollo Peptide Sciences with discount code PROFPEPTIDE — verified promo code for 2026. COA and endotoxin reports on every product, third-party tested.",
 });
 
 export default function ApolloPeptideSciencesLayout({ children }: { children: React.ReactNode }) {

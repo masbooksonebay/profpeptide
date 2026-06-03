@@ -2,9 +2,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/ignite-peptides",
-  title: "Ignite Peptides Discount Code (May 2026) — Save 10% | Prof. Peptide",
+  title: "Ignite Peptides Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
   description:
-    "Use Ignite Peptides discount code WELCOME10 to save 10% on research peptides. 99%+ purity, two-stage independent testing, COA on every product. US-based, 40+ compounds.",
+    "Save 10% at Ignite Peptides with discount code WELCOME10 — verified promo code for 2026. 99%+ purity, two-stage independent testing, COA on every product.",
 });
 
 export default function IgnitePeptidesLayout({ children }: { children: React.ReactNode }) {

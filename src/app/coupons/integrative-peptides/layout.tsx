@@ -2,9 +2,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/integrative-peptides",
-  title: "Integrative Peptides Discount Code (May 2026) — Save 10% | Prof. Peptide",
+  title: "Integrative Peptides Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
   description:
-    "Get 10% off at Integrative Peptides with code PROFPEPTIDE. Verified coupon and promo code for physician-trusted oral peptide supplements.",
+    "Save 10% at Integrative Peptides with discount code PROFPEPTIDE — verified promo code for 2026. Physician-trusted oral peptide supplements.",
 });
 
 export default function IntegrativePeptidesLayout({ children }: { children: React.ReactNode }) {

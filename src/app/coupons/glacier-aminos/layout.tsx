@@ -2,9 +2,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/glacier-aminos",
-  title: "Glacier Aminos Discount Code (May 2026) — Save 10% | Prof. Peptide",
+  title: "Glacier Aminos Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
   description:
-    "Use Glacier Aminos discount code PROF10 to save 10% on research peptides. US-based labs, cold-chain shipping, batch-traceable COAs, and the lowest tracked Retatrutide pricing.",
+    "Save 10% at Glacier Aminos with discount code PROF10 — verified promo code for 2026. Cold-chain shipping, batch-traceable COAs, lowest tracked Retatrutide pricing.",
 });
 
 export default function GlacierAminosLayout({ children }: { children: React.ReactNode }) {

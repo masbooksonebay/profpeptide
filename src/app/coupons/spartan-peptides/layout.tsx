@@ -2,9 +2,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/spartan-peptides",
-  title: "Spartan Peptides Discount Code (May 2026) — Save 10% | Prof. Peptide",
+  title: "Spartan Peptides Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
   description:
-    "Use Spartan Peptides discount code PROFPEPTIDE to save 10% on research peptides. HPLC + mass spectrometry verified. \u226598% purity guaranteed. Independent third-party tested.",
+    "Save 10% at Spartan Peptides with discount code PROFPEPTIDE \u2014 verified promo code for 2026. HPLC + mass spec verified, \u226598% purity, independent third-party tested.",
 });
 
 export default function SpartanPeptidesLayout({ children }: { children: React.ReactNode }) {

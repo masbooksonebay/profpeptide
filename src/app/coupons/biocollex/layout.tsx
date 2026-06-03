@@ -2,9 +2,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/biocollex",
-  title: "BioCollex Discount Code (May 2026) — Save 10% | Prof. Peptide",
+  title: "BioCollex Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
   description:
-    "Use BioCollex discount code PROFPEPTIDE to save 10%. U.S.-based supplier with 99% purity, same-day shipping, and C-GMP certified manufacturing.",
+    "Save 10% at BioCollex with discount code PROFPEPTIDE — verified promo code for 2026. U.S.-based, 99% purity, same-day shipping, C-GMP certified.",
 });
 
 export default function BioCollexLayout({ children }: { children: React.ReactNode }) {
