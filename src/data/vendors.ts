@@ -134,6 +134,15 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/peptide-partners",
     editorsPick: true,
   },
+  "peptides-gg": {
+    name: "Peptides.gg",
+    code: "PROF15",
+    discount: "15% off",
+    region: "US",
+    url: "https://peptides.gg/?coupon=prof15",
+    detailPage: "/coupons/peptides-gg",
+    editorsPick: true,
+  },
   purerawz: {
     name: "PureRawz",
     code: "PROF10",

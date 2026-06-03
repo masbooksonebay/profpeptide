@@ -30,6 +30,15 @@ const sections: VendorSection[] = [
     label: "Featured Vendors",
     vendors: [
       {
+        name: "Peptides.gg",
+        url: "https://peptides.gg/?coupon=prof15",
+        code: "PROF15",
+        discount: "15% off",
+        region: "🇺🇸 US",
+        editorsPick: true,
+        detailPage: "/coupons/peptides-gg",
+      },
+      {
         name: "Peptide Partners",
         url: "https://peptide.partners/ref/48/",
         code: "PROFPEPTIDE",
