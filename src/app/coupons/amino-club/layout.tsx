@@ -1,0 +1,17 @@
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/coupons/amino-club",
+  title: "Amino Club Coupon Code & Discount — Save 20% (2026) | Prof. Peptide",
+  description:
+    "Save 20% at Amino Club with discount code PROFPEPTIDE — verified promo code for 2026. ISO/IEC 17025-accredited third-party testing, 99%+ HPLC purity, batch-specific COAs.",
+});
+
+export default function AminoClubLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Amino Club Discount Code - Save 20%\",\"description\":\"Use code PROFPEPTIDE for 20% off at Amino Club\",\"url\":\"https://profpeptide.com/coupons/amino-club\",\"validFrom\":\"2026-06-01\",\"priceValidUntil\":\"2026-06-30\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Amino Club\"}}" }} />
+      {children}
+    </>
+  );
+}
