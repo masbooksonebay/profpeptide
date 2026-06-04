@@ -101,7 +101,7 @@ export default function BestPeptideVendorsPage() {
         "headline": "Best Peptide Vendors for Research (June 2026)",
         "description": "Alphabetical list of the peptide vendors Prof. Peptide has vetted for third-party testing, COA transparency, purity standards, shipping reliability, and community reputation.",
         "datePublished": "2026-04-16",
-        "dateModified": "2026-05-01",
+        "dateModified": "2026-06-03",
         "url": "https://profpeptide.com/best-peptide-vendors",
         "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://profpeptide.com" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
