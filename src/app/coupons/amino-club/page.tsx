@@ -63,8 +63,58 @@ export default function AminoClubCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Amino Club is a US-based research-peptide vendor with a broad catalog of more than two dozen research compounds organized across seven categories: tissue repair, dermal, metabolic, secretagogue, cellular, neuro, and circadian research. The lineup spans high-demand metabolic compounds (<Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">Cagrilintide</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-C</Link>, AOD-9604, 5-Amino-1MQ), growth-hormone secretagogues (<Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">CJC-1295/Ipamorelin</Link>, Ipamorelin, <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>, IGF-1 LR3), tissue-repair and healing peptides (<Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, KPV), dermal and cosmetic peptides (<Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>, SNAP-8, Melanotan I and II, <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>), cellular and longevity compounds (<Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>, Epithalon, Thymosin Alpha-1, Glutathione), and neuro and circadian peptides (Semax, Selank, DSIP) &mdash; alongside multi-peptide blends including the <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link> and <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link> formulations.
+            Amino Club is a US-based research-peptide vendor with a broad catalog of more than two dozen research compounds spanning tissue repair, dermal, metabolic, secretagogue, cellular, neuro, and circadian research. Popular compounds by research area:
           </p>
+          <dl className="space-y-2 mb-4">
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">Cagrilintide</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-C</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth hormone</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>, <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>, <Link href="/peptides/igf-1-lr3" className="text-[#0891b2] hover:underline">IGF-1 LR3</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Tissue repair</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Dermal &amp; skin</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>, <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cellular &amp; longevity</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>, <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Circadian</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Blends</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>, <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>
+              </dd>
+            </div>
+          </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Every batch is tested by an ISO/IEC 17025-accredited third-party laboratory under a full quality-control panel, not purity alone. HPLC quantifies purity against a published 99%+ standard; identity is confirmed against a reference standard; ICP-MS screens for heavy metals (arsenic, cadmium, chromium, mercury, lead); sterility is verified by PCR; and bacterial endotoxin is measured by the USP &lt;85&gt; method. Amino Club states that 100% of batches are tested before release, so each lot carries its own documented result rather than a single representative certificate.
           </p>
