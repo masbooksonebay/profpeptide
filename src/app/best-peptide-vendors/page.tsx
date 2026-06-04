@@ -3,11 +3,11 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   alternates: { canonical: "/best-peptide-vendors" },
-  title: "Best Peptide Vendors (May 2026) — Vetted Research Suppliers | Prof. Peptide",
+  title: "Best Peptide Vendors (June 2026) — Vetted Research Suppliers | Prof. Peptide",
   description:
     "Alphabetical list of the peptide vendors we've vetted for third-party testing, published COAs, purity standards, shipping reliability, and community reputation. Not a ranking.",
   openGraph: {
-    title: "Best Peptide Vendors (May 2026) — Vetted Research Suppliers",
+    title: "Best Peptide Vendors (June 2026) — Vetted Research Suppliers",
     description:
       "Alphabetical list of vetted peptide research suppliers — third-party tested, COA-backed, and reviewed by Prof. Peptide.",
     url: "https://profpeptide.com/best-peptide-vendors",
@@ -31,16 +31,6 @@ interface HubVendor {
 
 const vendors: HubVendor[] = [
   {
-    name: "Almighty Peptides",
-    slug: "almighty-peptides",
-    url: "https://www.almightypeptides.com/?sld=profpeptide",
-    code: "PROFPEPTIDE",
-    discount: "20% off",
-    description:
-      "US research supplier offering 20% off with our code. Catalog covers the full range of commonly studied research peptides with COAs available on request.",
-    strengths: ["20% off with code", "Full research catalog", "COAs on request", "US-based shipping"],
-  },
-  {
     name: "Ascension Peptides",
     slug: "ascension-peptides",
     url: "https://ascensionpeptides.com/ref/profpeptide/",
@@ -51,24 +41,24 @@ const vendors: HubVendor[] = [
     strengths: ["50% off storewide", "Third-party tested", "Competitive bulk pricing", "US-based"],
   },
   {
-    name: "Behemoth Labz",
-    slug: "behemoth-labz",
-    url: "https://behemothlabz.com/aff/208/",
-    code: "PROF10",
-    discount: "10% off",
-    description:
-      "Founded 2014. US supplier covering SARMs, peptides, nootropics, and prohormones for research. Every product is third-party tested by Colmaric Analyticals with publicly published COAs consistently returning above 99% purity.",
-    strengths: ["Colmaric Analyticals tested", "Public COAs", "10+ years in market", "Subscription discounts"],
-  },
-  {
-    name: "BioCollex",
-    slug: "biocollex",
-    url: "https://biocollexresearch.com/?ref=profpeptidehq",
+    name: "EZ Peptides",
+    slug: "ez-peptides",
+    url: "https://ezpeptides.com/?ref=nldbbgvs",
     code: "PROFPEPTIDE",
     discount: "10% off",
     description:
-      "US-based supplier operating C-GMP certified manufacturing with same-day shipping and 99% purity standards. Emphasis on reliability and documentation.",
-    strengths: ["C-GMP certified", "99% purity", "Same-day shipping", "Documented supply chain"],
+      "US-based supplier in Albuquerque, New Mexico, known for fast fulfillment \u2014 orders ship within 0\u20132 business days with same-day shipping available. Every batch is independently third-party tested with a Certificate of Analysis, and the company holds a 4.7/5 rating across 176+ reviews.",
+    strengths: ["Third-party tested, COA per batch", "Ships in 0\u20132 business days", "4.7/5 across 176+ reviews", "10% off with code"],
+  },
+  {
+    name: "Oasis Labs",
+    slug: "oasis-labs",
+    url: "https://myoasislabs.com/?sld=profpeptide",
+    code: "PROF15",
+    discount: "15% off",
+    description:
+      "Veteran-owned, Las Vegas-based supplier with in-house fulfillment. Every batch is third-party tested at US labs to a guaranteed 99% purity, with a public COA Library plus a unique QR code on each vial for point-of-use COA access. Cold-shield shipping with same-day processing.",
+    strengths: ["Third-party tested, 99% purity", "Per-vial QR-code COAs", "Veteran-owned, in-house fulfillment", "15% off with code"],
   },
   {
     name: "Peptide Partners",
@@ -81,24 +71,14 @@ const vendors: HubVendor[] = [
     strengths: ["Four independent batch tests", "Endotoxin + sterility tested", "Published COAs", "Transparent test data"],
   },
   {
-    name: "PureRawz",
-    slug: "purerawz",
-    url: "https://purerawz.co/?ref=1901",
-    code: "PROF10",
-    discount: "10% off",
+    name: "Peptides.gg",
+    slug: "peptides-gg",
+    url: "https://peptides.gg/?coupon=prof15",
+    code: "PROF15",
+    discount: "15% off",
     description:
-      "Broad US-based research compound supplier with a catalog spanning peptides, SARMs, nootropics, and PCT compounds. Maintains a minimum 99% purity standard across peptides with COAs published directly on product pages.",
-    strengths: ["99% minimum purity", "COAs on product pages", "Multiple formats", "Free US shipping over $100"],
-  },
-  {
-    name: "Spartan Peptides",
-    slug: "spartan-peptides",
-    url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    description:
-      "US-based research peptide supplier backed by an internal team of biochemists, QA specialists, and peptide researchers. HPLC + mass spectrometry testing on every batch, minimum \u226598% purity required before release, and COAs provided with every order.",
-    strengths: ["HPLC + MS dual testing", "\u226598% purity minimum", "Third-party lab verified", "Broad research catalog"],
+      "US-made supplier with a deep catalog of 90+ products available as vials, liquids, and capsules. Every batch is third-party tested with published COAs where each sample ID links to the full lab report, at 98\u201399%+ purity depending on product. Same-day shipping and free shipping over $200.",
+    strengths: ["Per-batch COAs, sample-ID linked", "98\u201399%+ purity", "90+ products: vials, liquids, capsules", "15% off with code"],
   },
   {
     name: "Vital Core Research",
@@ -118,7 +98,7 @@ export default function BestPeptideVendorsPage() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Best Peptide Vendors for Research (May 2026)",
+        "headline": "Best Peptide Vendors for Research (June 2026)",
         "description": "Alphabetical list of the peptide vendors Prof. Peptide has vetted for third-party testing, COA transparency, purity standards, shipping reliability, and community reputation.",
         "datePublished": "2026-04-16",
         "dateModified": "2026-05-01",
@@ -136,9 +116,9 @@ export default function BestPeptideVendorsPage() {
       }} />
 
       <div className="section max-w-3xl">
-        <span className="tag mb-3 inline-block">Updated May 2026</span>
+        <span className="tag mb-3 inline-block">Updated June 2026</span>
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-4">
-          Best Peptide Vendors for Research (May 2026)
+          Best Peptide Vendors for Research (June 2026)
         </h1>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-6 max-w-xl">
           Below is a list of the research peptide vendors we&rsquo;ve vetted and recommend. To make our list, a vendor must provide third-party lab testing with published Certificates of Analysis, meet documented purity standards, offer transparent shipping, maintain responsive customer service, and hold a positive reputation in the research community.
