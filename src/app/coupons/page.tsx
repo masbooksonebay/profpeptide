@@ -47,24 +47,6 @@ const sections: VendorSection[] = [
         editorsPick: true,
         detailPage: "/coupons/peptide-partners",
       },
-      {
-        name: "EZ Peptides",
-        url: "https://ezpeptides.com/?ref=nldbbgvs",
-        code: "PROFPEPTIDE",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        editorsPick: true,
-        detailPage: "/coupons/ez-peptides",
-      },
-      {
-        name: "Glacier Aminos",
-        url: "https://glacieraminos.shop/?ref=cknlhxrm",
-        code: "PROF10",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        editorsPick: true,
-        detailPage: "/coupons/glacier-aminos",
-      },
     ],
   },
   {
@@ -126,12 +108,28 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/biocollex",
       },
       {
+        name: "EZ Peptides",
+        url: "https://ezpeptides.com/?ref=nldbbgvs",
+        code: "PROFPEPTIDE",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/ez-peptides",
+      },
+      {
         name: "Fusion Peptide",
         url: "https://fusionpeptide.com/?ref=pacjbqyu",
         code: "PROFPEPTIDE",
         discount: "15% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/fusion-peptide",
+      },
+      {
+        name: "Glacier Aminos",
+        url: "https://glacieraminos.shop/?ref=cknlhxrm",
+        code: "PROF10",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/glacier-aminos",
       },
       {
         name: "Ignite Peptides",
@@ -339,7 +337,7 @@ export default function CouponsPage() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <p className="text-base font-bold text-[#1e2d3d] dark:text-white tracking-tight">
-          Verified codes &mdash; May 2026
+          Verified codes &mdash; June 2026
         </p>
       </div>
 

@@ -66,7 +66,6 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ezpeptides.com/?ref=nldbbgvs",
     detailPage: "/coupons/ez-peptides",
-    editorsPick: true,
   },
   "fusion-peptide": {
     name: "Fusion Peptide",
@@ -83,7 +82,6 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
     detailPage: "/coupons/glacier-aminos",
-    editorsPick: true,
   },
   "ignite-peptides": {
     name: "Ignite Peptides",
