@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 45 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 46 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 45 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 46 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -75,6 +75,7 @@ const categories = [
       { name: "GHK-Cu", slug: "ghk-cu" },
       { name: "GLOW", slug: "glow" },
       { name: "KLOW", slug: "klow" },
+      { name: "Melanotan I (Afamelanotide)", slug: "melanotan-i" },
       { name: "Melanotan II", slug: "melanotan-ii" },
     ],
   },
