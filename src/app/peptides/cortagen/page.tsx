@@ -383,6 +383,7 @@ export default function CortagenPage() {
         <Link href="/peptides/semax" className="text-sm font-medium text-[#0891b2] hover:underline">Semax</Link>
         <Link href="/peptides/selank" className="text-sm font-medium text-[#0891b2] hover:underline">Selank</Link>
         </div>
+        <Link href="/bioregulators" className="text-sm font-medium text-[#0891b2] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
       </div>
 
       {/* TODO: add a Bioregulator Comparisons block (e.g. Cortagen vs Cardiogen / Pinealon) once those comparison pages are built and the four-spoke set (incl. Cardiogen) is live. */}

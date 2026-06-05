@@ -43,6 +43,13 @@ const features = [
     cta: "See vetted vendors",
   },
   {
+    icon: "book-outline",
+    title: "Bioregulator Guide",
+    desc: "A research guide to the Khavinson short-peptide bioregulators — the gene-regulation hypothesis, synthetic analogs vs. organ extracts, and the individual compounds.",
+    href: "/bioregulators",
+    cta: "Read the guide",
+  },
+  {
     icon: "help-circle-outline",
     title: "FAQ",
     desc: "Straight answers to the most common questions about peptide research.",

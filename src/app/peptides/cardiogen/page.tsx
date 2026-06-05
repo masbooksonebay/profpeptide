@@ -401,6 +401,7 @@ export default function CardiogenPage() {
         <Link href="/peptides/cortagen" className="text-sm font-medium text-[#0891b2] hover:underline">Cortagen</Link>
         <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
         </div>
+        <Link href="/bioregulators" className="text-sm font-medium text-[#0891b2] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
       </div>
 
       {/* TODO: add a Bioregulator Comparisons block (e.g. Cardiogen vs Cortagen / Pinealon / Thymogen) once those comparison pages are built. The four-spoke set (Pinealon, Thymogen, Cortagen, Cardiogen) is now live. */}

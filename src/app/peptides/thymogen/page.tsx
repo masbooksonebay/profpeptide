@@ -389,6 +389,7 @@ export default function ThymogenPage() {
         <Link href="/peptides/selank" className="text-sm font-medium text-[#0891b2] hover:underline">Selank</Link>
         <Link href="/peptides/dsip" className="text-sm font-medium text-[#0891b2] hover:underline">DSIP</Link>
         </div>
+        <Link href="/bioregulators" className="text-sm font-medium text-[#0891b2] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
       </div>
 
       {/* TODO: add a Comparisons block (e.g. Thymogen vs Thymosin Alpha-1, or sibling-bioregulator comparisons) once those comparison pages are built. */}

@@ -164,6 +164,11 @@ export default function PeptidesPage({ searchParams }: { searchParams: { categor
                 </li>
               ))}
             </ul>
+            {cat.slug === "bioregulators" && (
+              <Link href="/bioregulators" className="text-sm text-[#0891b2] hover:underline mt-3 inline-block">
+                Read the bioregulator guide &rarr;
+              </Link>
+            )}
           </div>
         ))}
       </div>

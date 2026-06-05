@@ -385,6 +385,7 @@ export default function PinealonPage() {
         <Link href="/peptides/selank" className="text-sm font-medium text-[#0891b2] hover:underline">Selank</Link>
         <Link href="/peptides/dsip" className="text-sm font-medium text-[#0891b2] hover:underline">DSIP</Link>
         </div>
+        <Link href="/bioregulators" className="text-sm font-medium text-[#0891b2] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
       </div>
 
       {/* TODO: add a Comparisons block (e.g. Pinealon vs Epitalon) once sibling-bioregulator comparison pages are built. */}
