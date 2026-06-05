@@ -15,11 +15,25 @@ const features = [
     cta: "Browse library",
   },
   {
+    icon: "book-outline",
+    title: "Bioregulator Guide",
+    desc: "A research guide to the Khavinson short-peptide bioregulators — the gene-regulation hypothesis, synthetic analogs vs. organ extracts, and the individual compounds.",
+    href: "/bioregulators",
+    cta: "Read the guide",
+  },
+  {
     icon: "bag-outline",
     title: "Supplement Library",
     desc: "Evidence-based profiles for the most popular supplements — organized by category with research and buying guides.",
     href: "/supplements",
     cta: "Browse supplements",
+  },
+  {
+    icon: "clipboard-outline",
+    title: "News",
+    desc: "The latest peptide research news, regulatory updates, and developments.",
+    href: "/news",
+    cta: "View news",
   },
   {
     icon: "calculator-outline",
@@ -43,11 +57,11 @@ const features = [
     cta: "See vetted vendors",
   },
   {
-    icon: "book-outline",
-    title: "Bioregulator Guide",
-    desc: "A research guide to the Khavinson short-peptide bioregulators — the gene-regulation hypothesis, synthetic analogs vs. organ extracts, and the individual compounds.",
-    href: "/bioregulators",
-    cta: "Read the guide",
+    icon: "phone-portrait-outline",
+    title: "Get the App",
+    desc: "Prof. Peptide for iOS is live on the App Store. Calculate doses, browse compound profiles, and access research — anywhere.",
+    href: "/app",
+    cta: "Download",
   },
   {
     icon: "help-circle-outline",
@@ -55,13 +69,6 @@ const features = [
     desc: "Straight answers to the most common questions about peptide research.",
     href: "/faq",
     cta: "View FAQ",
-  },
-  {
-    icon: "phone-portrait-outline",
-    title: "Get the App",
-    desc: "Prof. Peptide for iOS is live on the App Store. Calculate doses, browse compound profiles, and access research — anywhere.",
-    href: "/app",
-    cta: "Download",
   },
 ];
 
