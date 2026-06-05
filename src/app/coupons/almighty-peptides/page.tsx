@@ -52,7 +52,7 @@ export default function AlmightyPeptidesCouponPage() {
  </Link>
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Almighty Peptides Discount Code &mdash; Save 10%</h1>
+ <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Almighty Peptides Discount Code &mdash; Save 20%</h1>
  </div>
  <div className="flex flex-wrap items-center gap-2 mb-8">
  <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
@@ -74,8 +74,8 @@ export default function AlmightyPeptidesCouponPage() {
 
  <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
  <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
- <CodeBox code="profpep" />
- <p className="text-center text-sm text-[#0891b2] font-medium mt-2 mb-4">10% off your entire order</p>
+ <CodeBox code="PROFPEPTIDE" />
+ <p className="text-center text-sm text-[#0891b2] font-medium mt-2 mb-4">20% off your entire order</p>
  <a
  href="https://www.almightypeptides.com/?sld=profpeptide"
  target="_blank"
@@ -96,11 +96,11 @@ export default function AlmightyPeptidesCouponPage() {
  />
  <FAQItem
  q="Does Almighty Peptides have a discount code?"
- a="Yes. Use code profpep at checkout to save 10% on any Almighty Peptides order. This code is verified and maintained by Prof. Peptide."
+ a="Yes. Use code PROFPEPTIDE at checkout to save 20% on any Almighty Peptides order. This code is verified and maintained by Prof. Peptide."
  />
  <FAQItem
  q="How do I use the Almighty Peptides discount code?"
- a="Add your items to cart at almightypeptides.com, proceed to checkout, and enter profpep in the discount code field. The 10% discount will be applied to your order total."
+ a="Add your items to cart at almightypeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 20% discount will be applied to your order total."
  />
  <FAQItem
  q="What is the Almighty Peptides Buy 1 Get 1 Free offer?"

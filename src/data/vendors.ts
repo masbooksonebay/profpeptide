@@ -20,7 +20,7 @@ export const regionFlag: Record<Vendor["region"], string> = {
 export const vendors: Record<string, Vendor> = {
   "almighty-peptides": {
     name: "Almighty Peptides",
-    code: "profpep",
+    code: "PROFPEPTIDE",
     discount: "20% off",
     region: "US",
     url: "https://www.almightypeptides.com/?sld=profpeptide",
