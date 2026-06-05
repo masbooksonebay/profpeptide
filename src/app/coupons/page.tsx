@@ -164,6 +164,14 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/limitless-biotech",
       },
       {
+        name: "Midwest Peptide",
+        url: "https://midwestpeptide.com?ref=PROF10",
+        code: "PROF10",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/midwest-peptide",
+      },
+      {
         name: "Oasis Labs",
         url: "https://myoasislabs.com/?sld=profpeptide",
         code: "PROF15",

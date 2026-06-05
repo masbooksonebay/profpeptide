@@ -115,6 +115,14 @@ export const vendors: Record<string, Vendor> = {
     url: "https://www.limitlesslifenootropics.com/?_ef_transaction_id=&oid=1&affid=10477",
     detailPage: "/coupons/limitless-biotech",
   },
+  "midwest-peptide": {
+    name: "Midwest Peptide",
+    code: "PROF10",
+    discount: "10% off",
+    region: "US",
+    url: "https://midwestpeptide.com?ref=PROF10",
+    detailPage: "/coupons/midwest-peptide",
+  },
   "oasis-labs": {
     name: "Oasis Labs",
     code: "PROF15",
