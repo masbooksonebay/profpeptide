@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 46 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 47 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 46 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 47 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -86,6 +86,7 @@ const categories = [
       { name: "KPV", slug: "kpv" },
       { name: "KPV + BPC-157", slug: "kpv-bpc-157" },
       { name: "Thymosin Alpha-1", slug: "thymosin-alpha-1" },
+      { name: "VIP (Vasoactive Intestinal Peptide)", slug: "vip" },
     ],
   },
   {
