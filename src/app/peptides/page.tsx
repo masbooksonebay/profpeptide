@@ -103,6 +103,15 @@ const categories = [
     ],
   },
   {
+    // TODO: Leave Epitalon under Longevity for now. Add sibling Khavinson
+    // bioregulators (Cardiogen, Cortagen, Thymogen) here as their profiles go live.
+    name: "Bioregulators",
+    slug: "bioregulators",
+    peptides: [
+      { name: "Pinealon", slug: "pinealon" },
+    ],
+  },
+  {
     name: "Sexual Health",
     slug: "sexual-health",
     peptides: [
