@@ -162,6 +162,17 @@ const icons: Record<string, React.ReactNode> = {
       <line x1="338.29" y1="338.29" x2="448" y2="448" strokeLinecap="round" />
     </svg>
   ),
+  /* DNA double helix — custom inline SVG (no Ionicons DNA glyph exists) */
+  "dna-outline": (
+    <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={INLINE}>
+      <path d="M176,64 C176,149 336,171 336,256 C336,341 176,363 176,448" />
+      <path d="M336,64 C336,149 176,171 176,256 C176,341 336,363 336,448" />
+      <line x1="205" y1="120" x2="307" y2="120" />
+      <line x1="180" y1="200" x2="332" y2="200" />
+      <line x1="180" y1="312" x2="332" y2="312" />
+      <line x1="205" y1="392" x2="307" y2="392" />
+    </svg>
+  ),
 };
 
 // Map category names to icon keys
@@ -175,7 +186,7 @@ const categoryMap: Record<string, string> = {
   "Skin Health & Anti-Aging": "sparkles-outline",
   "Gut Health & Immunity": "shield-checkmark-outline",
   "Longevity": "infinite-outline",
-  "Bioregulators": "beaker-outline",
+  "Bioregulators": "dna-outline",
   "Sexual Health": "heart-outline",
   "Sleep & Recovery": "moon-outline",
 };
