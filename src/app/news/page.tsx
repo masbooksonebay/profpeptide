@@ -19,6 +19,13 @@ export const metadata = {
 
 const articles = [
   {
+    title: "What Is MariTide? Amgen’s Once-Monthly GLP-1/GIP Drug Heads Into a Six-Study Phase 3 Program",
+    slug: "amgen-maritide-glp1-gip-explainer-2026",
+    date: "June 5, 2026",
+    excerpt:
+      "A peptide-antibody conjugate that activates GLP-1 while blocking GIP — the mirror image of tirzepatide — MariTide is now in an expanding Phase 3 program, including a trial switching patients off weekly GLP-1s.",
+  },
+  {
     title: "Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial",
     slug: "retatrutide-triumph-1-phase-3-results",
     date: "May 21, 2026",
