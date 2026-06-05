@@ -16,6 +16,7 @@ const categories = [
   { label: "Gut Health & Immunity", slug: "gut-health" },
   { label: "Sleep & Recovery", slug: "sleep-recovery" },
   { label: "Longevity", slug: "longevity" },
+  { label: "Bioregulators", slug: "bioregulators" },
   { label: "Sexual Health", slug: "sexual-health" },
 ];
 
