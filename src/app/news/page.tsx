@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import { articles } from "@/data/news";
 
 export const metadata = {
   alternates: { canonical: "/news" },
@@ -16,72 +17,6 @@ export const metadata = {
     images: ["https://profpeptide.com/og-image.png"],
   },
 };
-
-const articles = [
-  {
-    title: "What Is MariTide? Amgen’s Once-Monthly GLP-1/GIP Drug Heads Into a Six-Study Phase 3 Program",
-    slug: "amgen-maritide-glp1-gip-explainer-2026",
-    date: "June 5, 2026",
-    excerpt:
-      "A peptide-antibody conjugate that activates GLP-1 while blocking GIP — the mirror image of tirzepatide — MariTide is now in an expanding Phase 3 program, including a trial switching patients off weekly GLP-1s.",
-  },
-  {
-    title: "FDA Moves to Bar Outsourcing Facilities From Bulk-Compounding Semaglutide, Tirzepatide, and Liraglutide",
-    slug: "fda-503b-glp1-bulk-compounding-2026",
-    date: "June 5, 2026",
-    excerpt:
-      "The FDA found no clinical need to keep the three leading GLP-1 drugs on the 503B bulks list. A public comment window runs through June 29 — here’s what the proposal does, and doesn’t, cover.",
-  },
-  {
-    title: "Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial",
-    slug: "retatrutide-triumph-1-phase-3-results",
-    date: "May 21, 2026",
-    excerpt:
-      "Eli Lilly\u2019s investigational triple agonist retatrutide produced 30.3% average weight loss at 104 weeks in the pivotal TRIUMPH-1 Phase 3 trial \u2014 comparable to bariatric surgery outcomes. Here\u2019s the full breakdown of the topline data and what comes next.",
-  },
-  {
-    title: "ECO2026 Recap \u2014 Oral GLP-1 Data from Novo, Lilly, and Viking",
-    slug: "eco2026-oral-glp1-recap-may-2026",
-    date: "May 17, 2026",
-    excerpt:
-      "The European Congress on Obesity (ECO2026) ran May 12-15 in Istanbul. Novo Nordisk, Eli Lilly, and Viking Therapeutics each presented new oral GLP-1 data \u2014 including a Wegovy pill sub-analysis showing 21.6% weight loss in early responders, Lilly\u2019s maintenance trial results, and Viking\u2019s Phase 2 VK2735 readout. Here\u2019s what the data showed and why it matters.",
-  },
-  {
-    title: "Retatrutide Phase 3 Update \u2014 Diabetes and Osteoarthritis Trials Hit Primary Endpoints",
-    slug: "retatrutide-phase-3-update-may-2026",
-    date: "May 11, 2026",
-    excerpt:
-      "The first Phase 3 readouts from retatrutide\u2019s TRIUMPH and TRANSCEND-T2D programs are in. Here\u2019s what TRANSCEND-T2D-1 and TRIUMPH-4 showed and what comes next.",
-  },
-  {
-    title: "FDA Releases Official Agenda for July Peptide Compounding Meeting \u2014 Here\u2019s What\u2019s on It",
-    slug: "fda-pcac-meeting-agenda-july-2026",
-    date: "April 28, 2026",
-    excerpt:
-      "The FDA published the official Federal Register notice for its July 23-24 Pharmacy Compounding Advisory Committee meeting, naming the seven peptides under review and the conditions each is being considered for.",
-  },
-  {
-    title: "FDA Moves to Restore Peptide Access \u2014 What Researchers Need to Know",
-    slug: "fda-peptide-compounding-update-april-2026",
-    date: "April 16, 2026",
-    excerpt:
-      "The FDA posted a Federal Register notice considering lifting restrictions on seven Category 2 peptides, with an advisory panel scheduled for late July 2026. Here\u2019s what it means for the research community.",
-  },
-  {
-    title: "RFK\u2019s Peptide Ruling: Where Things Stand in April 2026",
-    slug: "rfk-peptide-update-april-2026",
-    date: "April 12, 2026",
-    excerpt:
-      "RFK Jr. announced 14 peptides would return to legal compounding status \u2014 but the FDA hasn\u2019t published the official list yet. Here\u2019s what we know, what\u2019s still pending, and what it means for researchers.",
-  },
-  {
-    title: "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List",
-    slug: "rfk-peptide-ban-2026",
-    date: "April 10, 2026",
-    excerpt:
-      "HHS Secretary Robert F. Kennedy Jr. announced that 14 of 19 previously restricted peptides will be moved off the FDA\u2019s \u201Cdo not compound\u201D list \u2014 the largest regulatory reversal in U.S. peptide history.",
-  },
-];
 
 export default function NewsPage() {
   return (

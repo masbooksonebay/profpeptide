@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Icon } from "@/components/CategoryIcon";
 import JsonLd from "@/components/JsonLd";
+import { articles } from "@/data/news";
 
 export const metadata = {
   alternates: { canonical: "/" },
@@ -80,6 +81,7 @@ const trust = [
 ];
 
 export default function Home() {
+  const latest = articles[0];
   return (
     <>
       <JsonLd data={{
@@ -144,15 +146,15 @@ export default function Home() {
             <Link href="/news" className="text-xs font-medium text-[#0891b2] hover:underline">View all news &rarr;</Link>
           </div>
           <Link
-            href="/news/retatrutide-triumph-1-phase-3-results"
+            href={`/news/${latest.slug}`}
             className="block border border-gray-200 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] hover:shadow-md transition-all group bg-white dark:bg-[#0f172a]"
           >
-            <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">May 21, 2026</p>
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">{latest.date}</p>
             <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#0891b2] transition-colors mb-2">
-              Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial
+              {latest.title}
             </h3>
             <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-              Eli Lilly&rsquo;s investigational triple agonist retatrutide produced 30.3% average weight loss at 104 weeks in the pivotal TRIUMPH-1 Phase 3 trial &mdash; comparable to bariatric surgery outcomes. The 12 mg dose hit 28.3% at 80 weeks, and analysts now project a 2027 FDA approval decision.
+              {latest.excerpt}
             </p>
             <span className="text-xs font-medium text-[#0891b2] mt-3 inline-block">Read more &rarr;</span>
           </Link>
