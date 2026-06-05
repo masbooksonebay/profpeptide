@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 41 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 42 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 41 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 42 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -104,11 +104,12 @@ const categories = [
   },
   {
     // TODO: Leave Epitalon under Longevity for now. Add sibling Khavinson
-    // bioregulators (Cardiogen, Cortagen, Thymogen) here as their profiles go live.
+    // bioregulators (Cardiogen, Cortagen) here as their profiles go live.
     name: "Bioregulators",
     slug: "bioregulators",
     peptides: [
       { name: "Pinealon", slug: "pinealon" },
+      { name: "Thymogen", slug: "thymogen" },
     ],
   },
   {
