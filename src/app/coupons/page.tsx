@@ -142,7 +142,7 @@ const sections: VendorSection[] = [
       {
         name: "Ignite Peptides",
         url: "https://ignitepeptides.com/ref/profpeptide/",
-        code: "WELCOME10",
+        code: "PROF10",
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/ignite-peptides",

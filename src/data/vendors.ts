@@ -93,7 +93,7 @@ export const vendors: Record<string, Vendor> = {
   },
   "ignite-peptides": {
     name: "Ignite Peptides",
-    code: "WELCOME10",
+    code: "PROF10",
     discount: "10% off",
     region: "US",
     url: "https://ignitepeptides.com/ref/profpeptide/",
