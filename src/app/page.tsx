@@ -23,7 +23,7 @@ const features = [
     cta: "Read the guide",
   },
   {
-    icon: "bag-outline",
+    icon: "capsule-outline",
     title: "Supplement Library",
     desc: "Evidence-based profiles for the most popular supplements — organized by category with research and buying guides.",
     href: "/supplements",

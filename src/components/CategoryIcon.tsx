@@ -78,6 +78,15 @@ const icons: Record<string, React.ReactNode> = {
       <path d="M160,176V144a96,96,0,0,1,96-96h0a96,96,0,0,1,96,96v32" />
     </svg>
   ),
+  /* Capsule / pill — custom inline SVG (no Ionicons supplement/nutrition glyph exists) */
+  "capsule-outline": (
+    <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={BLOCK}>
+      <g transform="rotate(-45 256 256)">
+        <rect x="96" y="192" width="320" height="128" rx="64" ry="64" />
+        <line x1="256" y1="192" x2="256" y2="320" />
+      </g>
+    </svg>
+  ),
   "calculator-outline": (
     <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={BLOCK}>
       <rect x="112" y="48" width="288" height="416" rx="32" ry="32" />
