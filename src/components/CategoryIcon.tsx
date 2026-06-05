@@ -175,6 +175,7 @@ const categoryMap: Record<string, string> = {
   "Skin Health & Anti-Aging": "sparkles-outline",
   "Gut Health & Immunity": "shield-checkmark-outline",
   "Longevity": "infinite-outline",
+  "Bioregulators": "beaker-outline",
   "Sexual Health": "heart-outline",
   "Sleep & Recovery": "moon-outline",
 };
