@@ -26,6 +26,13 @@ const articles = [
       "A peptide-antibody conjugate that activates GLP-1 while blocking GIP — the mirror image of tirzepatide — MariTide is now in an expanding Phase 3 program, including a trial switching patients off weekly GLP-1s.",
   },
   {
+    title: "FDA Moves to Bar Outsourcing Facilities From Bulk-Compounding Semaglutide, Tirzepatide, and Liraglutide",
+    slug: "fda-503b-glp1-bulk-compounding-2026",
+    date: "June 5, 2026",
+    excerpt:
+      "The FDA found no clinical need to keep the three leading GLP-1 drugs on the 503B bulks list. A public comment window runs through June 29 — here’s what the proposal does, and doesn’t, cover.",
+  },
+  {
     title: "Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial",
     slug: "retatrutide-triumph-1-phase-3-results",
     date: "May 21, 2026",
