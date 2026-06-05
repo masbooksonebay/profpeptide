@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 42 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 43 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 42 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 43 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -110,6 +110,7 @@ const categories = [
     peptides: [
       { name: "Pinealon", slug: "pinealon" },
       { name: "Thymogen", slug: "thymogen" },
+      { name: "Cortagen", slug: "cortagen" },
     ],
   },
   {
