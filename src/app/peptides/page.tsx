@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 44 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 45 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 44 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 45 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -100,6 +100,7 @@ const categories = [
     peptides: [
       { name: "Epitalon", slug: "epitalon" },
       { name: "NAD+", slug: "nad-plus" },
+      { name: "SS-31 (Elamipretide)", slug: "ss-31" },
     ],
   },
   {
