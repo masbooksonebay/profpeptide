@@ -117,7 +117,7 @@ export default function MidwestPeptideCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Also carried</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                SS-31 (Elamipretide), VIP, Tesofensine, SLU-PP-332, plus capsule formats of GHK-Cu and BPC-157
+                SS-31 (Elamipretide), VIP, plus capsule formats of <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link> and <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>
               </dd>
             </div>
           </dl>
