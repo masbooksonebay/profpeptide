@@ -11,7 +11,7 @@ const features = [
   {
     icon: "flask-outline",
     title: "Peptide Library",
-    desc: "Comprehensive profiles on 30+ research peptides — mechanisms, half-lives, stacking protocols, and more.",
+    desc: "Comprehensive profiles on 40+ research peptides — mechanisms, half-lives, stacking protocols, and more.",
     href: "/peptides",
     cta: "Browse library",
   },
@@ -74,7 +74,7 @@ const features = [
 ];
 
 const trust = [
-  { value: "30+", label: "Peptide profiles" },
+  { value: "40+", label: "Peptide profiles" },
   { value: "50+", label: "Supplement profiles" },
   { value: "10+", label: "Verified discount codes" },
   { value: "100%", label: "Independent research" },
