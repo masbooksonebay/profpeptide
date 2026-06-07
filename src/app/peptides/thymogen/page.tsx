@@ -48,9 +48,9 @@ const faqs = [
     q: "Where can I buy Thymogen?",
     a: (
       <>
-        Thymogen is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
-          Verified Discount Codes &rarr;
+        Thymogen is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Among the vetted vendors, Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
+        <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+          Peptides.gg discount code (PROF15) &rarr;
         </Link>
         .
       </>
@@ -176,11 +176,10 @@ const sections = [
       "Thymogen is not approved for human use in the US and is sold by specialty research peptide vendors for laboratory use only. Quality varies across vendors — verify a Certificate of Analysis before purchase.",
     node: (
       <div className="space-y-4">
-        {/* TODO: wire in a peptides.gg VendorHighlightBlock here once peptides.gg is added to the vendor data. Do NOT add a fabricated carrier/note or invent a code in the meantime — use the inline /coupons link below until the vendor exists. */}
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Prof. Peptide maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
-            Verified Discount Codes &rarr;
+          The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Among the vetted vendors, Peptides.gg carries the Khavinson bioregulator line. See the{" "}
+          <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+            Peptides.gg discount code (PROF15) &rarr;
           </Link>{" "}
           for current options.
         </p>
@@ -327,9 +326,9 @@ export default function ThymogenPage() {
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> No FDA-approved dose exists. Thymogen is registered as a medicine only in the Russian Federation, in three forms: an intramuscular solution (100 µg/mL), a metered nasal spray (25 µg/dose), and a 0.05% topical cream. Published trials used intranasal regimens (e.g., 5 mg every other day in the negative AIDS-KS Phase III; 20 mg three times daily in a renal-cell-carcinoma Phase II). Prof. Peptide does not publish an injectable dosing schedule because none has been validated in controlled research.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Thymogen is sold by specialty peptide vendors for laboratory use only. PP maintains a vetted list of vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
-              Verified Discount Codes &rarr;
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Thymogen is sold by specialty peptide vendors for laboratory use only. Among the vetted vendors, Peptides.gg carries the Khavinson bioregulator line. See the{" "}
+            <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+              Peptides.gg discount code (PROF15) &rarr;
             </Link>{" "}
             for current options.
           </p>
