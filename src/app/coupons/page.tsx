@@ -203,6 +203,14 @@ const sections: VendorSection[] = [
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/spartan-peptides",
       },
+      {
+        name: "Synthesis Peptides",
+        url: "https://synthesispeptides.io/?synthaff=105",
+        code: "PROFPEPTIDE10",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/synthesis-peptides",
+      },
     ],
   },
   {

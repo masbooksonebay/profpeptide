@@ -181,6 +181,14 @@ export const vendors: Record<string, Vendor> = {
     url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
     detailPage: "/coupons/spartan-peptides",
   },
+  "synthesis-peptides": {
+    name: "Synthesis Peptides",
+    code: "PROFPEPTIDE10",
+    discount: "10% off",
+    region: "US",
+    url: "https://synthesispeptides.io/?synthaff=105",
+    detailPage: "/coupons/synthesis-peptides",
+  },
   "vital-core-research": {
     name: "Vital Core Research",
     code: "PROF20",
