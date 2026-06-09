@@ -410,7 +410,6 @@ const sections = [
         <VendorHighlightBlock
           highlights={[
             { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
-            { slug: "apollo-peptide-sciences", note: "CJC-1295 / Ipamorelin combo" },
             { slug: "behemoth-labz", note: "Nasal + vial formats" },
           ]}
         />

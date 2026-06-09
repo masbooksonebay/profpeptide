@@ -92,14 +92,6 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/amino-club",
       },
       {
-        name: "Apollo Peptide Sciences",
-        url: "https://apollopeptidesciences.com/?rfsn=8846124.8bdc49",
-        code: "PROFPEPTIDE",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/apollo-peptide-sciences",
-      },
-      {
         name: "Behemoth Labz",
         url: "https://behemothlabz.com/aff/208/",
         code: "PROF10",

@@ -409,7 +409,6 @@ const sections = [
         <VendorHighlightBlock
           highlights={[
             { slug: "behemoth-labz" },
-            { slug: "apollo-peptide-sciences" },
             { slug: "spartan-peptides" },
           ]}
         />

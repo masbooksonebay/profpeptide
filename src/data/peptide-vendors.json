@@ -14,7 +14,6 @@
       "displayName": "BPC-157",
       "vendors": [
         { "slug": "almighty-peptides", "note": null },
-        { "slug": "apollo-peptide-sciences", "note": null },
         { "slug": "ascension-peptides", "note": null },
         { "slug": "behemoth-labz", "note": null },
         { "slug": "biocollex", "note": null },
@@ -35,7 +34,6 @@
     "cagrilintide": {
       "displayName": "Cagrilintide",
       "vendors": [
-        { "slug": "apollo-peptide-sciences", "note": null },
         { "slug": "ascension-peptides", "note": "Sold as C-10" },
         { "slug": "behemoth-labz", "note": null },
         { "slug": "fusion-peptide", "note": null },
@@ -50,7 +48,6 @@
     "cagrisema": {
       "displayName": "CagriSema",
       "vendors": [
-        { "slug": "apollo-peptide-sciences", "note": "Pre-blended cagrilintide + semaglutide" },
         { "slug": "ascension-peptides", "note": "Sold as C-10/S-5 blend" },
         { "slug": "behemoth-labz", "note": "Pre-blended 1:1 ratio" },
         { "slug": "fusion-peptide", "note": "Pre-blended blend product" },
@@ -65,7 +62,6 @@
       "displayName": "CJC-1295",
       "vendors": [
         { "slug": "almighty-peptides", "note": "DAC + no-DAC variants" },
-        { "slug": "apollo-peptide-sciences", "note": "CJC-1295 / Ipamorelin combo" },
         { "slug": "ascension-peptides", "note": "No-DAC variant" },
         { "slug": "behemoth-labz", "note": "DAC + no-DAC variants" },
         { "slug": "biocollex", "note": null },
@@ -94,7 +90,6 @@
       "displayName": "Epitalon",
       "vendors": [
         { "slug": "almighty-peptides", "note": null },
-        { "slug": "apollo-peptide-sciences", "note": null },
         { "slug": "ascension-peptides", "note": null },
         { "slug": "behemoth-labz", "note": null },
         { "slug": "fusion-peptide", "note": null },
@@ -124,7 +119,6 @@
       "displayName": "GHK-Cu",
       "vendors": [
         { "slug": "almighty-peptides", "note": null },
-        { "slug": "apollo-peptide-sciences", "note": null },
         { "slug": "ascension-peptides", "note": null },
         { "slug": "behemoth-labz", "note": null },
         { "slug": "biocollex", "note": null },
@@ -142,7 +136,6 @@
       "displayName": "IGF-1 LR3",
       "vendors": [
         { "slug": "almighty-peptides", "note": null },
-        { "slug": "apollo-peptide-sciences", "note": null },
         { "slug": "behemoth-labz", "note": null },
         { "slug": "ignite-peptides", "note": null },
         { "slug": "oasis-labs", "note": null },
@@ -155,7 +148,6 @@
       "displayName": "Ipamorelin",
       "vendors": [
         { "slug": "almighty-peptides", "note": null },
-        { "slug": "apollo-peptide-sciences", "note": "CJC-1295 / Ipamorelin combo" },
         { "slug": "ascension-peptides", "note": null },
         { "slug": "behemoth-labz", "note": "Nasal + vial formats" },
         { "slug": "biocollex", "note": "CJC-1295 / Ipamorelin combo" },
@@ -211,7 +203,6 @@
       "displayName": "NAD+",
       "vendors": [
         { "slug": "almighty-peptides", "note": null },
-        { "slug": "apollo-peptide-sciences", "note": null },
         { "slug": "biocollex", "note": null },
         { "slug": "ignite-peptides", "note": null },
         { "slug": "purerawz", "note": null },
@@ -238,7 +229,6 @@
       "displayName": "Retatrutide",
       "vendors": [
         { "slug": "almighty-peptides", "note": null },
-        { "slug": "apollo-peptide-sciences", "note": "Sold as \"GLP-3 R\"" },
         { "slug": "ascension-peptides", "note": "Sold as R-10 / R-30" },
         { "slug": "behemoth-labz", "note": null },
         { "slug": "biocollex", "note": "Sold as \"GLP-3 RT\"" },
@@ -273,7 +263,6 @@
       "displayName": "Semaglutide",
       "vendors": [
         { "slug": "almighty-peptides", "note": null },
-        { "slug": "apollo-peptide-sciences", "note": "Sold as \"GLP-1 S\"" },
         { "slug": "ascension-peptides", "note": "Sold as S-5" },
         { "slug": "behemoth-labz", "note": null },
         { "slug": "biocollex", "note": null },
@@ -363,7 +352,6 @@
       "displayName": "Tirzepatide",
       "vendors": [
         { "slug": "almighty-peptides", "note": null },
-        { "slug": "apollo-peptide-sciences", "note": "Sold as \"GLP-2 T\"" },
         { "slug": "ascension-peptides", "note": "Sold as T-10 / T-30" },
         { "slug": "behemoth-labz", "note": null },
         { "slug": "biocollex", "note": "Sold as \"GLP-2 TZ\"" },

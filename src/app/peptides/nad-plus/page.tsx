@@ -430,7 +430,6 @@ const sections = [
           highlights={[
             { slug: "vital-core-research" },
             { slug: "spartan-peptides", note: "Included in Energizer Bunny blend" },
-            { slug: "apollo-peptide-sciences" },
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">

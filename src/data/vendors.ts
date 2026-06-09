@@ -34,14 +34,6 @@ export const vendors: Record<string, Vendor> = {
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
     detailPage: "/coupons/amino-club",
   },
-  "apollo-peptide-sciences": {
-    name: "Apollo Peptide Sciences",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    region: "US",
-    url: "https://apollopeptidesciences.com/?rfsn=8846124.8bdc49",
-    detailPage: "/coupons/apollo-peptide-sciences",
-  },
   "ascension-peptides": {
     name: "Ascension Peptides",
     code: "PROFPEPTIDE",
