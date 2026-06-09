@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/peptide-partners",
   title: "Peptide Partners Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
+  ogTitle: "Peptide Partners Coupon — Save 10% | Prof. Peptide",
   description:
     "Save 10% at Peptide Partners with discount code PROFPEPTIDE — verified promo code for 2026. Four independent tests per batch: purity, endotoxin, heavy metals, sterility.",
 });

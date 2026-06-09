@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/vital-core-research",
   title: "Vital Core Research Coupon Code & Discount — Save 20% (2026) | Prof. Peptide",
+  ogTitle: "Vital Core Research Coupon — Save 20% | Prof. Peptide",
   description:
     "Save 20% at Vital Core Research with discount code PROF20 — verified promo code for 2026. 56 compounds including GLP-1/2/3, SARMs, blends, capsule formats.",
 });

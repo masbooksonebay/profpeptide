@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/fusion-peptide",
   title: "Fusion Peptide Coupon Code & Discount — Save 15% (2026) | Prof. Peptide",
+  ogTitle: "Fusion Peptide Coupon — Save 15% | Prof. Peptide",
   description:
     "Save 15% at Fusion Peptide with discount code PROFPEPTIDE — verified promo code for 2026. Topical and nasal spray formats available.",
 });

@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/particle-peptides",
   title: "Particle Peptides Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
+  ogTitle: "Particle Peptides Coupon — Save 10% | Prof. Peptide",
   description:
     "Save 10% at Particle Peptides with discount code PROFPEPTIDE \u2014 verified promo code for 2026. Europe's most comprehensive peptide testing, Ph. Eur. compliant.",
 });

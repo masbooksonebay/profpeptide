@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/almighty-peptides",
   title: "Almighty Peptides Coupon Code & Discount — Save 20% (2026) | Prof. Peptide",
+  ogTitle: "Almighty Peptides Coupon — Save 20% | Prof. Peptide",
   description:
     "Save 20% at Almighty Peptides with discount code PROFPEPTIDE — verified promo code for 2026. HPLC & mass spec tested, Buy 1 Get 1 FREE on most products.",
 });

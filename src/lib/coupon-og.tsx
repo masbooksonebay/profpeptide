@@ -200,7 +200,7 @@ function Shell({
   );
 }
 
-function VendorCard({ bg, percent, code }: { bg: string; percent: number; code: string }) {
+function VendorCard({ bg, name, percent, code }: { bg: string; name: string; percent: number; code: string }) {
   return (
     <Shell bg={bg} justify="center">
       <LogoLockup />
@@ -220,7 +220,7 @@ function VendorCard({ bg, percent, code }: { bg: string; percent: number; code: 
           {`${percent}% OFF`}
         </div>
         <div style={{ display: "flex", marginTop: 10, fontSize: 48, fontWeight: 500, color: LIGHT, letterSpacing: -0.5 }}>
-          All Research Peptides
+          {name}
         </div>
         <div style={{ display: "flex", alignItems: "center", marginTop: 26 }}>
           <PriceTagIcon />
@@ -264,7 +264,7 @@ export async function generateCouponOg(slug: string): Promise<ImageResponse> {
     !vendor || pct === null ? (
       <FallbackCard bg={bg} />
     ) : (
-      <VendorCard bg={bg} percent={pct} code={vendor.code} />
+      <VendorCard bg={bg} name={vendor.name} percent={pct} code={vendor.code} />
     );
 
   return new ImageResponse(element, { ...IMAGE_SIZE, fonts });

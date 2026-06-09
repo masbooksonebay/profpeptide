@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/ignite-peptides",
   title: "Ignite Peptides Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
+  ogTitle: "Ignite Peptides Coupon — Save 10% | Prof. Peptide",
   description:
     "Save 10% at Ignite Peptides with discount code PROF10 — verified promo code for 2026. 99%+ purity, two-stage independent testing, COA on every product.",
 });

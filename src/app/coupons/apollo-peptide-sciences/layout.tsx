@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/apollo-peptide-sciences",
   title: "Apollo Peptide Sciences Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
+  ogTitle: "Apollo Peptide Sciences Coupon — Save 10% | Prof. Peptide",
   description:
     "Save 10% at Apollo Peptide Sciences with discount code PROFPEPTIDE — verified promo code for 2026. COA and endotoxin reports on every product, third-party tested.",
 });

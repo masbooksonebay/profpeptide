@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/limitless-biotech",
   title: "Limitless Biotech Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
+  ogTitle: "Limitless Biotech Coupon — Save 10% | Prof. Peptide",
   description:
     "Save 10% at Limitless Biotech with discount code PROFPEPTIDE — verified promo code for 2026. 90+ compounds, HPLC + LC-MS testing, worldwide shipping, 30-day guarantee.",
 });

@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/synthesis-peptides",
   title: "Synthesis Peptides Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
+  ogTitle: "Synthesis Peptides Coupon — Save 10% | Prof. Peptide",
   description:
     "Save 10% at Synthesis Peptides with discount code PROFPEPTIDE10 — verified promo code for 2026. Per-batch third-party HPLC testing, ≥99% verified purity, COA on request.",
 });

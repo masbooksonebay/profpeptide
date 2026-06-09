@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/spartan-peptides",
   title: "Spartan Peptides Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
+  ogTitle: "Spartan Peptides Coupon — Save 10% | Prof. Peptide",
   description:
     "Save 10% at Spartan Peptides with discount code PROFPEPTIDE \u2014 verified promo code for 2026. HPLC + mass spec verified, \u226598% purity, independent third-party tested.",
 });

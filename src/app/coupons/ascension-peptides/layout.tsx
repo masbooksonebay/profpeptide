@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/ascension-peptides",
   title: "Ascension Peptides Coupon Code & Discount — Save 50% (2026) | Prof. Peptide",
+  ogTitle: "Ascension Peptides Coupon — Save 50% | Prof. Peptide",
   description:
     "Save 50% at Ascension Peptides with discount code PROFPEPTIDE — our largest discount, verified promo code for 2026. 99%+ purity, multi-stage third-party tested.",
 });

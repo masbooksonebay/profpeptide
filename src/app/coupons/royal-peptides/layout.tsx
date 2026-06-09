@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/royal-peptides",
   title: "Royal Peptides Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
+  ogTitle: "Royal Peptides Coupon — Save 10% | Prof. Peptide",
   description:
     "Save 10% at Royal Peptides with discount code PROF10 — verified promo code for 2026. cGMP & ISO-certified labs, 99%+ purity, batch-tested.",
 });

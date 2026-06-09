@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   path: "/coupons/glacier-aminos",
   title: "Glacier Aminos Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
+  ogTitle: "Glacier Aminos Coupon — Save 10% | Prof. Peptide",
   description:
     "Save 10% at Glacier Aminos with discount code PROF10 — verified promo code for 2026. Cold-chain shipping, batch-traceable COAs, lowest tracked Retatrutide pricing.",
 });
