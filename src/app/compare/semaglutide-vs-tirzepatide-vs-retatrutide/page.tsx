@@ -5,9 +5,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
-  title: "Semaglutide vs Tirzepatide vs Retatrutide — Mechanism, Efficacy & Side Effects | Prof. Peptide",
+  title: "Semaglutide vs Tirzepatide vs Retatrutide Compared (2026)",
   description:
-    "Compare retatrutide vs semaglutide vs tirzepatide by mechanism, weight-loss efficacy, side effects, and FDA status — see how the three GLP-1 drugs differ side by side.",
+    "Weight loss ~15% vs 22% vs 24%, plus mechanism, side effects & FDA status — semaglutide vs tirzepatide vs retatrutide compared, and which fits your goal.",
 });
 
 const rows = [

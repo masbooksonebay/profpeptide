@@ -1,10 +1,13 @@
 import { buildPageMetadata } from "@/lib/seo";
+import { vendors } from "@/data/vendors";
+
+const v = vendors["ez-peptides"];
+const pct = v.discount.replace(" off", "");
 
 export const metadata = buildPageMetadata({
   path: "/coupons/ez-peptides",
-  title: "EZ Peptides Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
-  description:
-    "Save 10% at EZ Peptides with discount code PROFPEPTIDE — verified promo code for 2026. U.S.-based, same-day shipping, 4.7/5 rating, third-party tested.",
+  title: `EZ Peptides Discount Code — Save ${pct} (2026) | Prof. Peptide`,
+  description: `Use code ${v.code} for ${v.discount} at EZ Peptides (US) — verified 2026 promo. Same-day shipping, 4.7/5 across 176+ reviews, third-party tested.`,
 });
 
 export default function EZPeptidesLayout({ children }: { children: React.ReactNode }) {

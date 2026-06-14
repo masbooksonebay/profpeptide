@@ -1,11 +1,13 @@
 import { buildPageMetadata } from "@/lib/seo";
+import { vendors } from "@/data/vendors";
+
+const v = vendors["peptide-partners"];
+const pct = v.discount.replace(" off", "");
 
 export const metadata = buildPageMetadata({
   path: "/coupons/peptide-partners",
-  title: "Peptide Partners Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
-  ogTitle: "Peptide Partners Coupon — Save 10% | Prof. Peptide",
-  description:
-    "Save 10% at Peptide Partners with discount code PROFPEPTIDE — verified promo code for 2026. Four independent tests per batch: purity, endotoxin, heavy metals, sterility.",
+  title: `Peptide Partners Discount Code — Save ${pct} (2026)`,
+  description: `Use code ${v.code} for ${v.discount} at Peptide Partners (US) — our Editor's Pick. Four tests per batch: purity, endotoxin, heavy metals, sterility.`,
 });
 
 export default function PeptidePartnersLayout({ children }: { children: React.ReactNode }) {

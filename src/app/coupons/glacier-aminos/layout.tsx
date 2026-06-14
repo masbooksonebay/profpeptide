@@ -1,11 +1,13 @@
 import { buildPageMetadata } from "@/lib/seo";
+import { vendors } from "@/data/vendors";
+
+const v = vendors["glacier-aminos"];
+const pct = v.discount.replace(" off", "");
 
 export const metadata = buildPageMetadata({
   path: "/coupons/glacier-aminos",
-  title: "Glacier Aminos Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
-  ogTitle: "Glacier Aminos Coupon — Save 10% | Prof. Peptide",
-  description:
-    "Save 10% at Glacier Aminos with discount code PROF10 — verified promo code for 2026. Cold-chain shipping, batch-traceable COAs, lowest tracked Retatrutide pricing.",
+  title: `Glacier Aminos Discount Code — Save ${pct} (2026)`,
+  description: `Use code ${v.code} for ${v.discount} at Glacier Aminos (US) — verified 2026 promo. Cold-chain shipping, batch-traceable COAs, lowest tracked Retatrutide pricing.`,
 });
 
 export default function GlacierAminosLayout({ children }: { children: React.ReactNode }) {

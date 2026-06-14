@@ -7,9 +7,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/5-amino-1mq",
-  title: "5-Amino-1MQ — Small-Molecule NNMT Inhibitor, NAD+ & Metabolic Research | Prof. Peptide",
+  title: "5-Amino-1MQ: NNMT Inhibitor, NAD+ & Metabolic Research",
   description:
-    "5-Amino-1MQ (5-amino-1-methylquinolinium) research profile: a small-molecule NNMT inhibitor (not a peptide), its SAM/NAD+ mechanism, preclinical diet-induced-obesity studies, molecular identifiers, and research-use-only framing.",
+    "5-Amino-1MQ is a small-molecule NNMT inhibitor (not a peptide) studied to raise NAD+ and curb fat in preclinical obesity models. Mechanism & safety.",
 });
 
 const faqs = [

@@ -1,10 +1,13 @@
 import { buildPageMetadata } from "@/lib/seo";
+import { vendors } from "@/data/vendors";
+
+const v = vendors["amino-club"];
+const pct = v.discount.replace(" off", "");
 
 export const metadata = buildPageMetadata({
   path: "/coupons/amino-club",
-  title: "Amino Club Coupon Code & Discount — Save 20% (2026) | Prof. Peptide",
-  description:
-    "Save 20% at Amino Club with discount code PROFPEPTIDE — verified promo code for 2026. ISO/IEC 17025-accredited third-party testing, 99%+ HPLC purity, batch-specific COAs.",
+  title: `Amino Club Discount Code — Save ${pct} (2026) | Prof. Peptide`,
+  description: `Use code ${v.code} for ${v.discount} at Amino Club (US) — verified 2026 promo. Third-party tested to 99%+ HPLC purity (ISO 17025) with batch-specific COAs.`,
 });
 
 export default function AminoClubLayout({ children }: { children: React.ReactNode }) {
