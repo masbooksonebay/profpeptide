@@ -63,13 +63,63 @@ export default function SpartanPeptidesCouponPage() {
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Spartan Peptides is a US-based research peptide supplier distinguished by the depth of its internal research infrastructure. The company maintains a dedicated research team of peptide researchers, biochemists, and quality assurance specialists with expertise spanning peptide science, endocrinology, analytical chemistry, and regulatory affairs. Their catalog covers eight research categories: anti-aging and cellular health, repair and recovery, weight loss, muscle development, sexual health, mood and sleep, focus and clarity, and immunity compounds.
+ Spartan Peptides is a US-based research-peptide supplier offering a focused catalog of compounds at &ge;98% HPLC-verified purity, with same-day domestic dispatch. Their range spans metabolic and GLP compounds, tissue-repair and growth-hormone peptides, cognitive and longevity research compounds, and pre-built stacks.
  </p>
+ <dl className="space-y-2 mb-4">
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>, <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>, <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>, <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin Health &amp; Anti-Aging</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Gut Health &amp; Immunity</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>, <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual Health</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>
+ </dd>
+ </div>
+ </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Spartan Peptides conducts three categories of quality testing on every batch. HPLC (High-Performance Liquid Chromatography) analysis is used to verify purity, with a minimum threshold of &ge;98% required before any batch is approved for sale &mdash; batches that fail this standard are not released. Mass spectrometry (MS) is applied to confirm molecular identity, verifying that the peptide sequence is precisely as specified and free from structural anomalies or substitutions. This dual-method approach &mdash; HPLC for purity quantification and MS for identity confirmation &mdash; exceeds the single-method testing offered by most research peptide suppliers, as HPLC alone cannot confirm compound identity. Every batch is accompanied by a comprehensive Certificate of Analysis documenting purity, molecular weight confirmation, and testing methodology.
+ Every Spartan Peptides batch is independently verified to &ge;98% purity by HPLC and mass spectrometry, and the original third-party lab reports &mdash; signed by the analytical chemist &mdash; are published for each compound. A Certificate of Analysis is available so researchers can confirm identity and purity before use.
  </p>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Independent third-party testing is conducted in partnership with accredited external laboratories, providing an additional accountability layer beyond in-house analysis. Spartan Peptides applies the same commitment to scientific rigor to their educational content: their research team follows a structured five-step editorial process &mdash; Primary Source Review, Expert Drafting, Internal Peer Review, Fact-Checking, and Compliance Review &mdash; with articles updated when new research emerges and last-reviewed dates displayed for transparency.
+ Compounds are manufactured and shipped domestically from within the United States, with same-day dispatch on US orders placed before 2 PM Pacific and discreet packaging.
  </p>
  </div>
 
