@@ -610,6 +610,13 @@ export default function MOTScPage() {
         </div>
       </div>
 
+      <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
+        <div className="flex flex-wrap gap-4">
+        <Link href="/peptides/aod-9604-mots-c" className="text-sm font-medium text-[#0891b2] hover:underline">AOD-9604 + MOTS-c</Link>
+        </div>
+      </div>
+
 <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">
           Need to calculate a dose?

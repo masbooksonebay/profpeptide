@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 48 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 49 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 48 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 49 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -16,6 +16,7 @@ const categories = [
     peptides: [
       { name: "5-Amino-1MQ", slug: "5-amino-1mq" },
       { name: "AOD-9604", slug: "aod-9604" },
+      { name: "AOD-9604 + MOTS-c", slug: "aod-9604-mots-c" },
       { name: "Cagrilintide", slug: "cagrilintide" },
       { name: "CagriSema", slug: "cagrisema" },
       { name: "Metabolic Blend (NAD+ / MOTS-c / 5-Amino-1MQ)", slug: "nad-mots-c-5-amino-1mq" },
