@@ -69,7 +69,7 @@ export default function SpartanPeptidesCouponPage() {
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
  <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
  <dd className="text-gray-600 dark:text-slate-300">
- <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>, <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>
+ <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>, <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>, <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>
  </dd>
  </div>
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -81,7 +81,7 @@ export default function SpartanPeptidesCouponPage() {
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
  <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
  <dd className="text-gray-600 dark:text-slate-300">
- <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>, <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>
+ <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link> (<Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link> + <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>), <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>
  </dd>
  </div>
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
