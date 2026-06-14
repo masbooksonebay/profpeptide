@@ -30,7 +30,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
         "@context": "https://schema.org",
         "@type": "NewsArticle",
         "headline": "Retatrutide Phase 3 Update — Diabetes and Osteoarthritis Trials Hit Primary Endpoints",
-        "description": "The first Phase 3 readouts from retatrutide's TRIUMPH program are in. Here's what TRIUMPH-2 and TRIUMPH-4 showed and what comes next.",
+        "description": "The first Phase 3 readouts from retatrutide's TRIUMPH and TRANSCEND-T2D programs are in. Here's what TRANSCEND-T2D-1 and TRIUMPH-4 showed and what comes next.",
         "datePublished": "2026-05-11T00:00:00Z",
         "dateModified": "2026-05-11T00:00:00Z",
         "url": "https://profpeptide.com/news/retatrutide-phase-3-update-may-2026",
@@ -62,7 +62,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
             Retatrutide &mdash; the first-in-class triple hormone receptor agonist developed by Eli Lilly &mdash; has been one of the most closely watched compounds in the metabolic research space since its Phase 2 results were published in the <em>New England Journal of Medicine</em> in 2023. Those Phase 2 results were historic: a 24.2% mean body weight loss at the 12 mg dose over 48 weeks, exceeding the comparable data from tirzepatide&rsquo;s SURMOUNT-1 trial.
           </p>
           <p>
-            Two recent Phase 3 readouts now begin to test whether the Phase 2 signal holds at the larger scale required for FDA submission. Here&rsquo;s what the TRIUMPH-2 and TRIUMPH-4 trials show &mdash; and what comes next.
+            Two recent Phase 3 readouts now begin to test whether the Phase 2 signal holds at the larger scale required for FDA submission. Here&rsquo;s what the TRANSCEND-T2D-1 and TRIUMPH-4 trials show &mdash; and what comes next.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">A Quick Refresher on Retatrutide</h2>
@@ -73,12 +73,12 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
             The glucagon receptor activation is the meaningful mechanistic addition. It engages hepatic energy expenditure and lipolytic pathways that the dual and single agonists don&rsquo;t reach &mdash; adding a third lever to the metabolic intervention beyond the incretin-pathway effects that drive weight loss in semaglutide and tirzepatide.
           </p>
           <p>
-            The Phase 3 program for retatrutide runs under a single banner, TRIUMPH, spanning multiple sub-trials targeting weight, glycemic control (including type 2 diabetes), osteoarthritis pain, sleep apnea, cardiovascular and renal outcomes, and metabolic liver disease.
+            The Phase 3 program for retatrutide is divided across two trial families. TRIUMPH covers obesity and obesity-adjacent indications. TRANSCEND-T2D evaluates retatrutide specifically in type 2 diabetes. Together, the programs span multiple sub-trials targeting weight, glycemic control, osteoarthritis pain, sleep apnea, cardiovascular and renal outcomes, and metabolic liver disease.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">TRIUMPH-2 &mdash; First Type 2 Diabetes Phase 3 Hits All Endpoints</h2>
+          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">TRANSCEND-T2D-1 &mdash; First Type 2 Diabetes Phase 3 Hits All Endpoints</h2>
           <p>
-            In March 2026, Eli Lilly announced positive topline results from TRIUMPH-2, the first Phase 3 trial evaluating retatrutide specifically in adults with type 2 diabetes. The trial enrolled patients with a mean diabetes duration of 2.5 years who had not achieved adequate glycemic control through diet and exercise alone.
+            In March 2026, Eli Lilly announced positive topline results from TRANSCEND-T2D-1, the first Phase 3 trial evaluating retatrutide specifically in adults with type 2 diabetes. The trial enrolled patients with a mean diabetes duration of 2.5 years who had not achieved adequate glycemic control through diet and exercise alone.
           </p>
           <p>
             The trial met its primary endpoint and all key secondary endpoints at the 40-week assessment:
@@ -104,7 +104,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
             <li>WOMAC pain score reduction of up to 4.5 points (75.8%)</li>
             <li>58.6% of participants achieved at least 25% weight loss</li>
             <li>23.7% achieved at least 35% weight loss</li>
-            <li>More than 1 in 8 retatrutide-treated patients reported complete absence of knee pain at the end of the trial</li>
+            <li>About 1 in 8 retatrutide-treated patients reported complete absence of knee pain at the end of the trial</li>
             <li>Significant improvements in physical function measurements</li>
           </ul>
           <p>
@@ -113,11 +113,11 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What&rsquo;s Next &mdash; Seven Additional Readouts Expected in 2026</h2>
           <p>
-            The TRIUMPH-2 and TRIUMPH-4 readouts are early markers in a much larger Phase 3 program. Eli Lilly has stated that seven additional Phase 3 trial readouts are expected to complete in 2026, spanning:
+            The TRANSCEND-T2D-1 and TRIUMPH-4 readouts are early markers in a much larger Phase 3 program. Eli Lilly has stated that seven additional Phase 3 trial readouts are expected to complete in 2026, spanning:
           </p>
           <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-slate-300">
             <li>Additional sub-trials within the TRIUMPH obesity program (maintenance dosing, registration-tier trials)</li>
-            <li>Additional type 2 diabetes sub-trials within the TRIUMPH program</li>
+            <li>Additional T2D sub-trials within the TRANSCEND program</li>
             <li>Moderate-to-severe obstructive sleep apnea</li>
             <li>Chronic low back pain</li>
             <li>Cardiovascular and renal outcomes</li>
@@ -132,7 +132,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Our Take</h2>
           <p>
-            The Phase 3 data so far supports the dramatic Phase 2 efficacy signal. A 17% weight loss in TRIUMPH-2 and 71.2 lbs in TRIUMPH-4 are both consistent with retatrutide retaining its leading position in weight-loss efficacy across the GLP-1 family. What&rsquo;s strategically more interesting is the multi-indication Phase 3 scope &mdash; Lilly is testing retatrutide against a clinical surface broader than typical for a metabolic compound, which would position it as a category-redefining therapeutic if the broader program continues to deliver.
+            The Phase 3 data so far supports the dramatic Phase 2 efficacy signal. A 17% weight loss in TRANSCEND-T2D-1 and 71.2 lbs in TRIUMPH-4 are both consistent with retatrutide retaining its leading position in weight-loss efficacy across the GLP-1 family. What&rsquo;s strategically more interesting is the multi-indication Phase 3 scope &mdash; Lilly is testing retatrutide against a clinical surface broader than typical for a metabolic compound, which would position it as a category-redefining therapeutic if the broader program continues to deliver.
           </p>
           <p>
             For the research community, retatrutide remains the most-discussed compound in the GLP-1 family right now and is widely available through research-use-only channels at varying purity and verification standards. For full mechanism background, current research applications, and discount codes for vetted vendors, see our{" "}
