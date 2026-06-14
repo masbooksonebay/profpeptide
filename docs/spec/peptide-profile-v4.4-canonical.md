@@ -498,6 +498,12 @@ const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
 
 Placed before the export. The `<PageTOC sections={tocSections} />` is rendered between the overview block and the section render loop.
 
+### 1.15 First-mention linking
+
+First-mention linking: the first time any peptide/blend that has its own profile page is named in body prose, that first occurrence is the internal `<Link href="/peptides/SLUG">`. Never link a later occurrence while leaving the first as plain text. Don't self-link the page's own subject — but on a stack/combo profile, the individual component peptides ARE linked on their first appearance (e.g. the opening "X + Y" sentence links X and Y there).
+
+"Body prose" means the overview block plus the section render content (mechanism through studies, including FAQ answers). The footer Related Peptides / Related Blends / Comparisons blocks are navigation, not prose — they always link and are exempt from the first-mention rule. "First mention" is judged in rendered document order (overview first, then the `sections` array in order), not source-file order.
+
 ---
 
 ## 2. Blend Variant Spec (Cagrisema-derived)

@@ -17,9 +17,7 @@ const faqs = [
     q: "What is the AOD-9604 + MOTS-c stack?",
     a: (
       <>
-        It&apos;s a 2-component research-peptide pairing for fat-metabolism study:{" "}
-        <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link>, an hGH C-terminal fragment that mobilizes stored fat, plus{" "}
-        <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>, a mitochondrial-derived peptide that activates AMPK to improve fat oxidation and insulin sensitivity. They target different points in fat metabolism, which is the rationale for combining them.
+        It&apos;s a 2-component research-peptide pairing for fat-metabolism study: AOD-9604, an hGH C-terminal fragment that mobilizes stored fat, plus MOTS-c, a mitochondrial-derived peptide that activates AMPK to improve fat oxidation and insulin sensitivity. They target different points in fat metabolism, which is the rationale for combining them.
       </>
     ),
   },
@@ -35,10 +33,7 @@ const faqs = [
     q: "How is it different from a GLP-1 stack?",
     a: (
       <>
-        GLP-1 agonists ({" "}
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
-        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>
-        ) work through appetite/incretin signaling and have strong human outcome evidence. AOD-9604 + MOTS-c works through lipolysis and AMPK — a fat-metabolism mechanism with far weaker human data. Some protocols combine the two approaches; the GLP-1 is the evidence-backed component.
+        GLP-1 agonists (Semaglutide, Tirzepatide) work through appetite/incretin signaling and have strong human outcome evidence. AOD-9604 + MOTS-c works through lipolysis and AMPK — a fat-metabolism mechanism with far weaker human data. Some protocols combine the two approaches; the GLP-1 is the evidence-backed component.
       </>
     ),
   },
@@ -192,11 +187,7 @@ const sections = [
     node: (
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold">GLP-1 receptor agonists</span> ({" "}
-          <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
-          <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>,{" "}
-          <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>
-          ). Adds appetite-axis suppression — a different mechanism from this stack&apos;s lipolysis + oxidation. This is the combination several vendors market as a &ldquo;complete&rdquo; fat-loss protocol. Note: the GLP-1 arm carries the strong human evidence; the peptide arm is the speculative add-on.
+          <span className="font-semibold">GLP-1 receptor agonists</span> (Semaglutide, Tirzepatide, Retatrutide). Adds appetite-axis suppression — a different mechanism from this stack&apos;s lipolysis + oxidation. This is the combination several vendors market as a &ldquo;complete&rdquo; fat-loss protocol. Note: the GLP-1 arm carries the strong human evidence; the peptide arm is the speculative add-on.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + adequate protein.</span> The most evidence-based &ldquo;stack&rdquo; for body composition — preserves lean mass while fat is mobilized.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -243,9 +234,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hypersensitivity / injection-site infection.</span> As with any injectable; discontinue and seek care for systemic allergic signs.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anti-doping considerations.</span> Tested athletes should verify the current WADA status of each compound before use; growth-hormone-related and metabolic-modulating agents are an area of active anti-doping scrutiny.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <span className="font-semibold">Component-level concerns apply.</span> Each peptide carries its own (largely preclinical) safety considerations — see the individual{" "}
-              <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link>{" "}and{" "}
-              <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>{" "}pages.
+              <span className="font-semibold">Component-level concerns apply.</span> Each peptide carries its own (largely preclinical) safety considerations — see the individual AOD-9604 and MOTS-c pages.
             </li>
           </ol>
         </div>
@@ -263,9 +252,7 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Antidiabetic agents (insulin, metformin, GLP-1s, sulfonylureas).</span> MOTS-c improves insulin sensitivity via AMPK and AOD-9604 is studied as glucose-neutral; theoretical additive effects on glucose handling warrant attention in any glucose-lowering context.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold">Component-level profiles.</span> Cross-reference the{" "}
-          <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link>{" "}and{" "}
-          <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>{" "}pages for full per-component interaction notes.
+          <span className="font-semibold">Component-level profiles.</span> Cross-reference the AOD-9604 and MOTS-c pages for full per-component interaction notes.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Systemic drug interactions.</span> None well-documented at standard research doses for either compound.</li>
       </ol>
@@ -406,10 +393,7 @@ export default function AOD9604MOTScPage() {
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is AOD-9604 + MOTS-c?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            AOD-9604 + MOTS-c is a research-grade 2-component metabolic stack that pairs{" "}
-            <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link>{" "}
-            — a modified C-terminal fragment of human growth hormone — with{" "}
-            <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>, a mitochondrial-derived peptide. The pairing is built around two non-overlapping mechanisms: AOD-9604 acts at the adipocyte to mobilize stored fat (lipolysis and reduced fat storage), while MOTS-c acts upstream on cellular energy metabolism, activating AMPK to improve the body&apos;s capacity to oxidize that mobilized fat and to use glucose more efficiently. In short, one peptide is studied for releasing fat from storage; the other for improving the metabolic machinery that burns it.
+            <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link> + <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link> is a research-grade 2-component metabolic stack that pairs AOD-9604 — a modified C-terminal fragment of human growth hormone — with MOTS-c, a mitochondrial-derived peptide. The pairing is built around two non-overlapping mechanisms: AOD-9604 acts at the adipocyte to mobilize stored fat (lipolysis and reduced fat storage), while MOTS-c acts upstream on cellular energy metabolism, activating AMPK to improve the body&apos;s capacity to oxidize that mobilized fat and to use glucose more efficiently. In short, one peptide is studied for releasing fat from storage; the other for improving the metabolic machinery that burns it.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             This is a community-derived combination rather than a clinically validated drug product. It appears in the research literature only as two separate, individually studied compounds — there are no controlled human trials of the combination, and (as detailed below) AOD-9604&apos;s own pivotal human weight-loss trial did not meet its endpoint. The stack&apos;s rationale is mechanistic and complementary, not outcome-proven.
