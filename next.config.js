@@ -46,16 +46,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/compare/retatrutide-vs-tirzepatide{/}?",
-        destination: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
-        permanent: true,
-      },
-      {
-        source: "/compare/retatrutide-vs-semaglutide{/}?",
-        destination: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
-        permanent: true,
-      },
-      {
         source: "/research{/}?",
         destination: "/peptides",
         permanent: true,

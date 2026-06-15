@@ -28,9 +28,6 @@ module.exports = {
     // Canonical lives at /peptides/<slug>, which IS included.
     "/research",
     "/research/*",
-    // Superseded comparison URLs -> 301 redirect (next.config.js).
-    "/compare/retatrutide-vs-tirzepatide",
-    "/compare/retatrutide-vs-semaglutide",
     // Per-route OG/Twitter image endpoints (belt-and-suspenders with transform()).
     "/*/opengraph-image",
     "/*/twitter-image",
