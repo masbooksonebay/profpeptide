@@ -29,6 +29,9 @@ const studiesRedirectSlugs = [
 ];
 
 const nextConfig = {
+  // Disable Next's default trailing-slash normalization (which emits a 308) so the
+  // explicit redirect rule below can normalize trailing slashes with a clean 301.
+  skipTrailingSlashRedirect: true,
   // Force Vercel's file tracer to bundle the OG card assets with the coupon
   // image routes. They are read from disk at render time (see src/lib/coupon-og.tsx);
   // without this the tracer can drop them and 500 the cards in production.
@@ -74,6 +77,14 @@ const nextConfig = {
         source: "/news/rfk-peptide-ban-2026-v2{/}?",
         destination: "/news/rfk-peptide-ban-2026",
         permanent: true,
+      },
+      // Normalize ANY trailing-slash URL to its canonical no-trailing-slash form
+      // with a single clean 301. Kept LAST so the specific redirects above match
+      // first; pairs with skipTrailingSlashRedirect above.
+      {
+        source: "/:path+/",
+        destination: "/:path+",
+        statusCode: 301,
       },
     ];
   },
