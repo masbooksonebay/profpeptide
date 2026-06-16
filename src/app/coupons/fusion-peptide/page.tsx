@@ -1,5 +1,6 @@
 "use client";
 
+import { redirect } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -45,6 +46,9 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function FusionPeptideCouponPage() {
+ // Retired vendor: permanently redirect to the coupons hub (belt-and-suspenders
+ // with the next.config.js redirect). Page kept on disk per retirement plan.
+ redirect("/coupons");
  return (
  <div className="section max-w-3xl">
  <Link href="/coupons" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
