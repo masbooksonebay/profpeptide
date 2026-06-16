@@ -62,8 +62,58 @@ export default function AlmightyPeptidesCouponPage() {
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Almighty Peptides is a US-based research compound supplier headquartered in Lantana, Florida. The company&apos;s team brings over a decade of experience in the research supply industry and has been shipping products internationally since the early 2000s &mdash; one of the longest-established operations on our vendor list. Almighty Peptides offers a 100% money-back guarantee and free shipping on orders over $200. A standout feature of their pricing model is the Buy 1 Get 1 Free offer available on the majority of their product catalog, effectively doubling the value of most orders.
+ Almighty Peptides is a US-based research compound supplier headquartered in Lantana, Florida. The company&apos;s team brings over a decade of experience in the research supply industry and has been shipping products internationally since the early 2000s &mdash; one of the longest-established operations on our vendor list. Almighty Peptides offers a 100% money-back guarantee and free shipping on orders over $200. A standout feature of their pricing model is the Buy 1 Get 1 Free offer available on the majority of their product catalog, effectively doubling the value of most orders. Popular compounds by research area:
  </p>
+ <dl className="space-y-2 mb-4">
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>, <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">BPC-157 + TB-500</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Performance &amp; Energy</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/igf-1-lr3" className="text-[#0891b2] hover:underline">IGF-1 LR3</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>, <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>, <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>, <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677</Link>, <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>, <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin Health &amp; Anti-Aging</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>, <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Recovery</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>, <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual Health</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>
+ </dd>
+ </div>
+ </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
  All Almighty Peptides products are independently tested via third-party laboratories using both HPLC (High-Performance Liquid Chromatography) for purity verification and Mass Spectrometry for molecular identity confirmation. This dual-method approach verifies both the purity and the exact identity of each compound. Certificates of Analysis are available for products.
  </p>
