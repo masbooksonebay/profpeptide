@@ -63,10 +63,30 @@ export default function IntegrativePeptidesCouponPage() {
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Integrative Peptides was founded in 2018 with a mission to make advanced peptide therapies accessible without needles or high costs. They specialize in oral peptide formulations designed for physician use and patient access &mdash; a key differentiator from most research peptide vendors who sell injectable lyophilized powders. They use FDA-compliant manufacturing and independent third-party lab testing to verify &ge;99% purity on every batch, screening for heavy metals, microbials, and other contaminants.
+ Integrative Peptides was founded in 2018 with a mission to make advanced peptide therapies accessible without needles or high costs. They specialize in oral peptide formulations designed for physician use and patient access &mdash; a key differentiator from most research peptide vendors who sell injectable lyophilized powders. They use FDA-compliant manufacturing and independent third-party lab testing to verify &ge;99% purity on every batch, screening for heavy metals, microbials, and other contaminants. Popular compounds by research area:
  </p>
+ <dl className="space-y-2 mb-4">
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Gut Health &amp; Immunity</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Bioregulators</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/thymogen" className="text-[#0891b2] hover:underline">Thymogen</Link>, <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>
+ </dd>
+ </div>
+ </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Their product catalog includes BPC-157, TB4-Frag, Thymosin Alpha-1, KPV, Thymogen Alpha-1, CerebroPrep, CogniPep, PinealPep, and other peptide complexes &mdash; all in oral and convenient formats. Every batch undergoes independent third-party laboratory testing and is screened for heavy metals, residual solvents, and endotoxins. This oral-first approach makes Integrative Peptides particularly relevant for practitioners and patients who prefer non-injectable administration routes.
+ Their product catalog includes <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, TB4-Frag, <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>, KPV, Thymogen Alpha-1, CerebroPrep, CogniPep, PinealPep, and other peptide complexes &mdash; all in oral and convenient formats. Every batch undergoes independent third-party laboratory testing and is screened for heavy metals, residual solvents, and endotoxins. This oral-first approach makes Integrative Peptides particularly relevant for practitioners and patients who prefer non-injectable administration routes.
  </p>
  </div>
 
