@@ -31,6 +31,10 @@ module.exports = {
     // Per-route OG/Twitter image endpoints (belt-and-suspenders with transform()).
     "/*/opengraph-image",
     "/*/twitter-image",
+    // Retired vendors -> 301/308 redirect to /coupons (next.config.js). page.tsx
+    // is kept on disk so the route stays in the build manifest; exclude it here.
+    "/coupons/particle-peptides",
+    "/coupons/fusion-peptide",
   ],
   transform: async (config, path) => {
     if (DROP_EXACT.has(path)) return null;

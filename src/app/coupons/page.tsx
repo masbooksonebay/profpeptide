@@ -30,15 +30,6 @@ const sections: VendorSection[] = [
     label: "Featured Vendors",
     vendors: [
       {
-        name: "Peptides.gg",
-        url: "https://peptides.gg/?coupon=prof15",
-        code: "PROF15",
-        discount: "15% off",
-        region: "🇺🇸 US",
-        editorsPick: true,
-        detailPage: "/coupons/peptides-gg",
-      },
-      {
         name: "Peptide Partners",
         url: "https://peptide.partners/ref/48/",
         code: "PROFPEPTIDE",
@@ -69,6 +60,15 @@ const sections: VendorSection[] = [
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/vital-core-research",
       },
+      {
+        name: "Amino Club",
+        url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
+        code: "PROFPEPTIDE",
+        discount: "20% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        bestDeal: true,
+        detailPage: "/coupons/amino-club",
+      },
     ],
   },
   {
@@ -82,14 +82,6 @@ const sections: VendorSection[] = [
         discount: "20% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/almighty-peptides",
-      },
-      {
-        name: "Amino Club",
-        url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
-        code: "PROFPEPTIDE",
-        discount: "20% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/amino-club",
       },
       {
         name: "Behemoth Labz",
@@ -114,14 +106,6 @@ const sections: VendorSection[] = [
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/ez-peptides",
-      },
-      {
-        name: "Fusion Peptide",
-        url: "https://fusionpeptide.com/?ref=pacjbqyu",
-        code: "PROFPEPTIDE",
-        discount: "15% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/fusion-peptide",
       },
       {
         name: "Glacier Aminos",
@@ -172,6 +156,14 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/oasis-labs",
       },
       {
+        name: "Peptides.gg",
+        url: "https://peptides.gg/?coupon=prof15",
+        code: "PROF15",
+        discount: "15% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/peptides-gg",
+      },
+      {
         name: "PureRawz",
         url: "https://purerawz.co/?ref=1901",
         code: "PROF10",
@@ -202,19 +194,6 @@ const sections: VendorSection[] = [
         discount: "10% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/synthesis-peptides",
-      },
-    ],
-  },
-  {
-    label: "International",
-    vendors: [
-      {
-        name: "Particle Peptides",
-        url: "https://particlepeptides.com/en/?refs=18075",
-        code: "PROFPEPTIDE",
-        discount: "10% off",
-        region: "\uD83C\uDDEC\uD83C\uDDE7 UK",
-        detailPage: "/coupons/particle-peptides",
       },
     ],
   },

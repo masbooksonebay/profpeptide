@@ -78,6 +78,18 @@ const nextConfig = {
         destination: "/news/rfk-peptide-ban-2026",
         permanent: true,
       },
+      // Retired vendors: permanently redirect their coupon pages to the hub.
+      // page.tsx kept on disk; excluded from the sitemap in next-sitemap.config.js.
+      {
+        source: "/coupons/particle-peptides{/}?",
+        destination: "/coupons",
+        permanent: true,
+      },
+      {
+        source: "/coupons/fusion-peptide{/}?",
+        destination: "/coupons",
+        permanent: true,
+      },
       // Normalize ANY trailing-slash URL to its canonical no-trailing-slash form
       // with a single clean 301. Kept LAST so the specific redirects above match
       // first; pairs with skipTrailingSlashRedirect above.

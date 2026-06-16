@@ -410,7 +410,6 @@ const sections = [
         <VendorHighlightBlock
           highlights={[
             { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
-            { slug: "particle-peptides", note: "UK/EU shipping" },
             { slug: "ascension-peptides" },
           ]}
         />
