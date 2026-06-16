@@ -19,7 +19,7 @@ export const articles: NewsArticle[] = [
   {
     title: "Semaglutide Slowed Epigenetic Aging Markers in a Randomized Trial — In a Specific Population",
     slug: "semaglutide-biological-aging-rct-june-2026",
-    date: "June 11, 2026",
+    date: "June 16, 2026",
     excerpt:
       "A UC San Diego analysis in Nature Communications found semaglutide slowed multiple epigenetic-aging clocks (DunedinPACE ~9% slower; PCGrimAge −3.08 years) in a 32-week randomized, double-blind, placebo-controlled trial. The catch: it’s a secondary biomarker analysis in adults with HIV-associated lipohypertrophy — early, population-specific evidence, not proof of a longevity drug.",
   },

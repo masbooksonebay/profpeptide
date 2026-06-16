@@ -31,8 +31,8 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
         "@type": "NewsArticle",
         "headline": "Semaglutide Slowed Epigenetic Aging Markers in a Randomized Trial — In a Specific Population",
         "description": "A secondary epigenetic-clock analysis of a 32-week randomized, double-blind, placebo-controlled trial in adults with HIV-associated lipohypertrophy found semaglutide slowed multiple aging biomarkers (Nature Communications, June 2026).",
-        "datePublished": "2026-06-11T00:00:00Z",
-        "dateModified": "2026-06-11T00:00:00Z",
+        "datePublished": "2026-06-16T00:00:00Z",
+        "dateModified": "2026-06-16T00:00:00Z",
         "url": "https://profpeptide.com/news/semaglutide-biological-aging-rct-june-2026",
         "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://profpeptide.com" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
@@ -52,7 +52,7 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
           &larr; Back to News
         </Link>
 
-        <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">June 11, 2026 &middot; Last updated: June 11, 2026</p>
+        <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">June 16, 2026 &middot; Last updated: June 16, 2026</p>
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-6">
           Semaglutide Slowed Epigenetic Aging Markers in a Randomized Trial &mdash; In a Specific Population
         </h1>
