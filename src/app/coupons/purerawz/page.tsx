@@ -98,7 +98,7 @@ export default function PureRawzCouponPage() {
               <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
                 <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
                 <dd className="text-gray-600 dark:text-slate-300">
-                  <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>, <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677</Link>, <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>, <Link href="/peptides/sermorelin-ipamorelin" className="text-[#0891b2] hover:underline">Sermorelin + Ipamorelin</Link>, <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>
+                  <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>, <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>, <Link href="/peptides/sermorelin-ipamorelin" className="text-[#0891b2] hover:underline">Sermorelin + Ipamorelin</Link>, <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>
                 </dd>
               </div>
               <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -134,7 +134,7 @@ export default function PureRawzCouponPage() {
               <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
                 <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual Health</dt>
                 <dd className="text-gray-600 dark:text-slate-300">
-                  <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>
+                  <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>, <Link href="/peptides/pt-141-oxytocin" className="text-[#0891b2] hover:underline">PT-141 + Oxytocin</Link>
                 </dd>
               </div>
             </dl>
