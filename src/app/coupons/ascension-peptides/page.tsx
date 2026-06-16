@@ -63,8 +63,70 @@ export default function AscensionPeptidesCouponPage() {
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Ascension Peptides is a US-based research peptide supplier shipping exclusively within the United States. Ascension distinguishes itself through an extensive catalog of individual peptides and pre-formulated peptide blends and stacks &mdash; combining multiple compounds into single research formulations. Wholesale and distributor tiered pricing programs are available for higher-volume research operations.
+ Ascension Peptides is a US-based research peptide supplier shipping exclusively within the United States. Ascension distinguishes itself through an extensive catalog of individual peptides and pre-formulated peptide blends and stacks &mdash; combining multiple compounds into single research formulations. Wholesale and distributor tiered pricing programs are available for higher-volume research operations. Popular compounds by research area:
  </p>
+ <dl className="space-y-2 mb-4">
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>, <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>, <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">Cagrilintide</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>, <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link>, <Link href="/peptides/5-amino-1mq" className="text-[#0891b2] hover:underline">5-Amino-1MQ</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">BPC-157 + TB-500</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>, <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>, <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>, <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>, <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin Health &amp; Anti-Aging</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>, <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>, <Link href="/peptides/melanotan-i" className="text-[#0891b2] hover:underline">Melanotan I</Link>, <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>, <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Gut Health &amp; Immunity</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/vip" className="text-[#0891b2] hover:underline">VIP</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Recovery</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>, <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>, <Link href="/peptides/ss-31" className="text-[#0891b2] hover:underline">SS-31</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Bioregulators</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual Health</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>
+ </dd>
+ </div>
+ </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
  Ascension Peptides conducts multi-stage third-party testing on all products, guaranteeing 99%+ purity and verifying that compounds are contaminant-free and potency-verified. Certificates of Analysis are publicly accessible through a dedicated &quot;Lab Testing / COAs&quot; page on their website, allowing researchers to review documentation prior to purchase.
  </p>
