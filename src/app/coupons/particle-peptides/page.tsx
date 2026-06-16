@@ -62,8 +62,64 @@ export default function ParticlePeptidesCouponPage() {
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Particle Peptides is a European research peptide supplier operating since 2015, headquartered in Lucenec, Slovakia (PARTICLE s.r.o., Kolonada 4490/18, Lucenec 984 01). The company serves research institutes, universities, laboratories, and individual researchers worldwide, and has built a client base of over 10,000 researchers with a 4.9/5 rating from 323 verified reviews. Particle Peptides ships internationally. Their website includes a built-in peptide dosage calculator and an educational blog covering peptide science and research. Particle Peptides also proactively warns customers about fake and cloned websites impersonating their brand.
+ Particle Peptides is a European research peptide supplier operating since 2015, headquartered in Lucenec, Slovakia (PARTICLE s.r.o., Kolonada 4490/18, Lucenec 984 01). The company serves research institutes, universities, laboratories, and individual researchers worldwide, and has built a client base of over 10,000 researchers with a 4.9/5 rating from 323 verified reviews. Particle Peptides ships internationally. Their website includes a built-in peptide dosage calculator and an educational blog covering peptide science and research. Particle Peptides also proactively warns customers about fake and cloned websites impersonating their brand. Popular compounds by research area:
  </p>
+ <dl className="space-y-2 mb-4">
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>, <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>, <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin Health &amp; Anti-Aging</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>, <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Gut Health &amp; Immunity</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Recovery</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>, <Link href="/peptides/ss-31" className="text-[#0891b2] hover:underline">SS-31</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Bioregulators</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>
+ </dd>
+ </div>
+ </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
  Particle Peptides conducts the most comprehensive independent testing program of any vendor in Prof. Peptide&apos;s network. Every product is independently analyzed across six parameters: purity, molecular identity, peptide content, bioburden, endotoxin levels, and heavy metals &mdash; covering both class 1 and class 2 heavy metal contaminants. Particle Peptides states they are the only company in the market to present independent analysis of all six parameters across their entire product range. All testing limits are established in accordance with the European Pharmacopoeia (Ph. Eur.) &mdash; the gold standard for pharmaceutical substance quality in Europe. Compounds are produced by a manufacturer inspected by the FDA, NMPA, EMA, TGA, and MFDA, and compliant with cGMP, ISO 9001, and ISO 13485 standards. Testing is conducted blind and independently across multiple laboratories. All Certificates of Analysis are publicly accessible through a dedicated COA Vault on their website at particlepeptides.com/en/coa-vault.
  </p>
