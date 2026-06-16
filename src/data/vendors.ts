@@ -8,6 +8,8 @@ export interface Vendor {
   editorsPick?: boolean;
   bestDeal?: boolean;
   comingSoon?: boolean;
+  /** Retired vendor: page redirects to /coupons, not shown on the hub or counted. */
+  retired?: boolean;
 }
 
 export const regionFlag: Record<Vendor["region"], string> = {
@@ -74,6 +76,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://fusionpeptide.com/?ref=pacjbqyu",
     detailPage: "/coupons/fusion-peptide",
+    retired: true,
   },
   "glacier-aminos": {
     name: "Glacier Aminos",
@@ -130,6 +133,7 @@ export const vendors: Record<string, Vendor> = {
     region: "UK",
     url: "https://particlepeptides.com/en/?refs=18075",
     detailPage: "/coupons/particle-peptides",
+    retired: true,
   },
   "peptide-partners": {
     name: "Peptide Partners",
@@ -190,3 +194,10 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/vital-core-research",
   },
 };
+
+/**
+ * Number of active (non-retired) vendors in the registry — the single source of
+ * truth for "N trusted/verified vendors" copy across the site (coupons hub meta,
+ * per-peptide "See all N verified vendors" links). Derive from this; never hardcode.
+ */
+export const activeVendorCount = Object.values(vendors).filter((v) => !v.retired).length;

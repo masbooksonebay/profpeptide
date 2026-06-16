@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
@@ -467,7 +468,7 @@ const sections = [
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
           <Link href="/coupons" className="text-[#0891b2] hover:underline">
-            See all 17 verified vendors &rarr;
+            See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
       </div>
