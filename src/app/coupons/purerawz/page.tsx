@@ -74,8 +74,70 @@ export default function PureRawzCouponPage() {
         <div className="space-y-8">
           <div>
             <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-              PureRawz is a US-based research compound supplier founded to serve the scientific research community with a broad catalog of third-party tested peptides, SARMs, nootropics, and related compounds. Operating out of the United States, PureRawz ships domestically with free shipping on orders over $100 and offers international shipping at competitive rates.
+              PureRawz is a US-based research compound supplier founded to serve the scientific research community with a broad catalog of third-party tested peptides, SARMs, nootropics, and related compounds. Operating out of the United States, PureRawz ships domestically with free shipping on orders over $100 and offers international shipping at competitive rates. Popular compounds by research area:
             </p>
+            <dl className="space-y-2 mb-4">
+              <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+                <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
+                <dd className="text-gray-600 dark:text-slate-300">
+                  <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>, <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>, <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>, <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">Cagrilintide</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>, <Link href="/peptides/5-amino-1mq" className="text-[#0891b2] hover:underline">5-Amino-1MQ</Link>
+                </dd>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+                <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
+                <dd className="text-gray-600 dark:text-slate-300">
+                  <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>
+                </dd>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+                <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Performance &amp; Energy</dt>
+                <dd className="text-gray-600 dark:text-slate-300">
+                  <Link href="/peptides/igf-1-lr3" className="text-[#0891b2] hover:underline">IGF-1 LR3</Link>, <Link href="/peptides/follistatin" className="text-[#0891b2] hover:underline">Follistatin</Link>
+                </dd>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+                <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
+                <dd className="text-gray-600 dark:text-slate-300">
+                  <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>, <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677</Link>, <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>, <Link href="/peptides/sermorelin-ipamorelin" className="text-[#0891b2] hover:underline">Sermorelin + Ipamorelin</Link>, <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>
+                </dd>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+                <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
+                <dd className="text-gray-600 dark:text-slate-300">
+                  <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>
+                </dd>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+                <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin Health &amp; Anti-Aging</dt>
+                <dd className="text-gray-600 dark:text-slate-300">
+                  <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>, <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>, <Link href="/peptides/melanotan-i" className="text-[#0891b2] hover:underline">Melanotan I</Link>
+                </dd>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+                <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Gut Health &amp; Immunity</dt>
+                <dd className="text-gray-600 dark:text-slate-300">
+                  <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/vip" className="text-[#0891b2] hover:underline">VIP</Link>
+                </dd>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+                <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
+                <dd className="text-gray-600 dark:text-slate-300">
+                  <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>
+                </dd>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+                <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Bioregulators</dt>
+                <dd className="text-gray-600 dark:text-slate-300">
+                  <Link href="/peptides/cortagen" className="text-[#0891b2] hover:underline">Cortagen</Link>, <Link href="/peptides/cardiogen" className="text-[#0891b2] hover:underline">Cardiogen</Link>
+                </dd>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+                <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual Health</dt>
+                <dd className="text-gray-600 dark:text-slate-300">
+                  <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>
+                </dd>
+              </div>
+            </dl>
             <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
               PureRawz conducts both first-party and third-party testing on all products. Every batch is accompanied by a Certificate of Analysis (COA) from independent third-party analytical laboratories, confirming purity, molecular identity, batch number, and testing methodology &mdash; typically HPLC or Mass Spectrometry. PureRawz maintains a minimum purity standard of 99% across its peptide catalog, with COAs published directly on product pages so researchers can verify results before purchase.
             </p>
