@@ -10,6 +10,13 @@ export interface NewsArticle {
 // so prepending a new entry here updates both automatically — no other edits needed.
 export const articles: NewsArticle[] = [
   {
+    title: "ENDO 2026 Recap — GLP-1 and Peptide Readouts from the Endocrine Society Meeting",
+    slug: "endo-2026-glp1-recap-june-2026",
+    date: "June 16, 2026",
+    excerpt:
+      "Recap of ENDO 2026 (Chicago, June 13–16): a GLP-1 physical-activity decline and the muscle-preservation angle, reassuring male-fertility data, a CagriSema meta-analysis (SUN-726), real-world adherence patterns, and Entera Bio’s preclinical oral peptides EB618 and EB612. Each finding is labeled by evidence stage with primary-source links.",
+  },
+  {
     title: "What Is MariTide? Amgen’s Once-Monthly GLP-1/GIP Drug Heads Into a Six-Study Phase 3 Program",
     slug: "amgen-maritide-glp1-gip-explainer-2026",
     date: "June 5, 2026",
