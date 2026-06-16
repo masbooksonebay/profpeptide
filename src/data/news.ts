@@ -17,6 +17,13 @@ export const articles: NewsArticle[] = [
       "Recap of ENDO 2026 (Chicago, June 13–16): a GLP-1 physical-activity decline and the muscle-preservation angle, reassuring male-fertility data, a CagriSema meta-analysis (SUN-726), real-world adherence patterns, and Entera Bio’s preclinical oral peptides EB618 and EB612. Each finding is labeled by evidence stage with primary-source links.",
   },
   {
+    title: "Semaglutide Slowed Epigenetic Aging Markers in a Randomized Trial — In a Specific Population",
+    slug: "semaglutide-biological-aging-rct-june-2026",
+    date: "June 11, 2026",
+    excerpt:
+      "A UC San Diego analysis in Nature Communications found semaglutide slowed multiple epigenetic-aging clocks (DunedinPACE ~9% slower; PCGrimAge −3.08 years) in a 32-week randomized, double-blind, placebo-controlled trial. The catch: it’s a secondary biomarker analysis in adults with HIV-associated lipohypertrophy — early, population-specific evidence, not proof of a longevity drug.",
+  },
+  {
     title: "What Is MariTide? Amgen’s Once-Monthly GLP-1/GIP Drug Heads Into a Six-Study Phase 3 Program",
     slug: "amgen-maritide-glp1-gip-explainer-2026",
     date: "June 5, 2026",
