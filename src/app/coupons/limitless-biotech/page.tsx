@@ -62,8 +62,52 @@ export default function LimitlessBiotechCouponPage() {
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Limitless Biotech is a US-based research peptide supplier founded in Florida, formerly known as Limitless Life Nootropics. The company offers one of the largest research peptide catalogs available &mdash; over 90 compounds spanning peptides, nootropics, and advanced longevity compounds. Limitless Biotech ships worldwide and offers a 30-day money-back guarantee. Their products are used by physicians, biohackers, and research laboratories. Products contain no fillers such as mannitol or lactose.
+ Limitless Biotech is a US-based research peptide supplier founded in Florida, formerly known as Limitless Life Nootropics. The company offers one of the largest research peptide catalogs available &mdash; over 90 compounds spanning peptides, nootropics, and advanced longevity compounds. Limitless Biotech ships worldwide and offers a 30-day money-back guarantee. Their products are used by physicians, biohackers, and research laboratories. Products contain no fillers such as mannitol or lactose. Popular compounds by research area:
  </p>
+ <dl className="space-y-2 mb-4">
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>, <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link>, <Link href="/peptides/5-amino-1mq" className="text-[#0891b2] hover:underline">5-Amino-1MQ</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>, <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>, <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>, <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>, <Link href="/peptides/semax-selank" className="text-[#0891b2] hover:underline">Semax + Selank</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin Health &amp; Anti-Aging</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>, <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Gut Health &amp; Immunity</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/vip" className="text-[#0891b2] hover:underline">VIP</Link>
+ </dd>
+ </div>
+ <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+ <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Recovery</dt>
+ <dd className="text-gray-600 dark:text-slate-300">
+ <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>
+ </dd>
+ </div>
+ </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
  Limitless Biotech implements a comprehensive multi-method testing protocol on every batch. Quality control includes HPLC purity verification, LC-MS (Liquid Chromatography&ndash;Mass Spectrometry) for molecular identity confirmation, sterility screening, endotoxin testing for bacterial toxins, and chemical contaminant analysis. A proactive raw material testing stage is conducted before compounds enter the production process, providing an additional quality gate prior to synthesis. All testing is performed by three independent third-party laboratories complying with FDA and DEA standards &mdash; a multi-tiered approach that reduces reliance on any single lab&apos;s results. Every product page includes a Certificate of Analysis with HPLC results, LC-MS molecular confirmation, and contaminant screening data. All batches are verified at a minimum purity of &ge;98.5%.
  </p>
