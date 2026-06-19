@@ -82,7 +82,6 @@ const sections = [
     body: [
       "Direct DNA / Gene-Expression Interaction [1]. EDR is proposed to bypass cell-surface receptors, penetrate the cell and nuclear membranes, and interact directly with DNA to modulate gene expression (Fedoreyeva et al. 2011, in HeLa cells and in vitro).",
       "Oxidative-Stress Defense in Neurons [3]. In oxidatively stressed cortical neuron cultures, EDR reduced caspase-3 activation and reactive oxygen species, helped preserve mitochondrial membrane potential, and upregulated the antioxidant genes Sod2 and Cat.",
-      "Neural Cell-Cycle / Proliferation [4]. In neural progenitor cells, EDR modulated proliferation through changes in PCNA and p21 expression (Linkova et al. 2016).",
       "Cell Viability via Free-Radical Suppression [2]. Cultured-cell work reported increased cell viability through suppression of free-radical levels and activation of proliferative processes (Khavinson et al. 2011).",
     ],
   },
@@ -92,9 +91,9 @@ const sections = [
     intro:
       "Pinealon's research base is preclinical — in vitro neuronal cultures and rodent models of hypoxia and age-related cognitive decline — and comes predominantly from Khavinson-affiliated Russian laboratories. There are no human randomized controlled trials. The findings below should be read as early-stage, largely single-group preclinical signals, not clinical evidence.",
     body: [
-      "Cognitive Aging Under Hypoxia [5]. In young and aged rats subjected to acute hypoxic hypoxia, treatment improved Morris-water-maze spatial learning and reduced brain caspase-3 activity (Mendzheritskiĭ et al. 2014).",
-      "Alzheimer's-Model Neuroprotection [7][8]. EDR restored neuronal spine density in Alzheimer's-model preparations (Kraskovskaya/Linkova 2017) and showed neuroprotection in an Alzheimer's-disease mouse model (Khavinson et al. 2021).",
-      "Proposed Epigenetic Mechanism in Alzheimer's [6]. A 2020 review synthesized a possible mechanism by which EDR regulates gene expression and protein synthesis in the pathogenesis of Alzheimer's disease (Khavinson et al. 2020).",
+      "Cognitive Aging Under Hypoxia [4]. In young and aged rats subjected to acute hypoxic hypoxia, treatment improved Morris-water-maze spatial learning and reduced brain caspase-3 activity (Mendzheritskiĭ et al. 2014).",
+      "Alzheimer's-Model Neuroprotection [6][7]. EDR restored neuronal spine density in Alzheimer's-model preparations (Kraskovskaya/Linkova 2017) and showed neuroprotection in an Alzheimer's-disease mouse model (Khavinson et al. 2021).",
+      "Proposed Epigenetic Mechanism in Alzheimer's [5]. A 2020 review synthesized a possible mechanism by which EDR regulates gene expression and protein synthesis in the pathogenesis of Alzheimer's disease (Khavinson et al. 2020).",
       "Neuronal Viability and Proliferation [2]. Cell-culture work reported increased neuronal viability through free-radical suppression and activation of proliferative processes (Khavinson et al. 2011).",
     ],
   },
@@ -193,9 +192,6 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khavinson VKh, et al. EDR peptide in cortical neuron cultures under oxidative stress (caspase-3, ROS, Sod2/Cat). 2012.
-        </li>
-        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Linkova NS, et al. EDR peptide effects on PCNA/p21 in neural progenitor cells. 2016.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mendzheritskiĭ AM, Karantysh GV, Ryzhak GA, Dem&apos;ianenko SV. Cytokines and caspase-3 activity in old-rat brain under acute hypoxic hypoxia with Cortexin and Pinealon. Advances in Gerontology. 2014;27:94-97. (Paywalled)
