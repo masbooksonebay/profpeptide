@@ -102,9 +102,9 @@ const studies = [
   },
   {
     title: "Follistatin Gene Therapy Improves Ambulation in Becker Muscular Dystrophy",
-    authors: "Mendell JR, Sahenk Z, Malik V, et al.",
-    journal: "PMC / Science Translational Medicine",
-    year: "2017",
+    authors: "Al-Zaidy SA, Sahenk Z, Rodino-Klapac LR, et al.",
+    journal: "Journal of Neuromuscular Diseases / PMC",
+    year: "2015",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5240576/",
     summary: "The first human clinical trial of follistatin gene therapy — a landmark study delivering FS344 via intramuscular injection to patients with Becker muscular dystrophy. Six patients received bilateral quadriceps injections and were followed for safety and efficacy. The trial demonstrated that FS344 gene delivery was safe and well tolerated in humans, with no adverse reproductive effects or organ toxicity. Functional improvements in ambulation (walking ability) were observed in treated patients. This study represents the bridge between decades of animal research and human clinical application of follistatin — establishing its safety profile in humans for the first time.",
@@ -469,8 +469,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mendell JR, Sahenk Z, Malik V, et al. A phase 1/2a follistatin gene therapy trial for Becker muscular dystrophy. Mol Ther. 2015;23(1):192-201.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5240576/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pmc.ncbi.nlm.nih.gov/articles/PMC5240576/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25322757/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/25322757/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -487,8 +487,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Datta-Mannan A, Yaden B, Krishnan V, et al. An engineered human follistatin variant: insights into the pharmacokinetic and pharmacodynamic relationships of a novel molecule with broad therapeutic potential. J Pharmacol Exp Ther. 2013;344(3):616-23.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23230213/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/23230213/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23249626/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/23249626/
           </a>
         </li>
       </ol>

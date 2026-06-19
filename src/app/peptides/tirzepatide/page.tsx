@@ -499,12 +499,12 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Coskun T, Sloop KW, Loghin C, et al. LY3298176, a novel dual GIP and GLP-1 receptor agonist for the treatment of type 2 diabetes mellitus: From discovery to clinical proof of concept. Mol Metab. 2018;18:3-14.{" "}
           <a
-            href="https://pubmed.ncbi.nlm.nih.gov/30122483/"
+            href="https://pubmed.ncbi.nlm.nih.gov/30473097/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#0891b2] hover:underline break-words"
           >
-            https://pubmed.ncbi.nlm.nih.gov/30122483/
+            https://pubmed.ncbi.nlm.nih.gov/30473097/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

@@ -77,39 +77,39 @@ const faqs = [
 
 const studies = [
   {
-    title: "Semax, an Analogue of ACTH(4-10): Cognitive Effects in Humans",
-    authors: "Kaplan AY, Kochetova AG, Nezavibathko VN, et al.",
-    journal: "Russian Journal of Neuroscience / Eur Neuropsychopharmacol",
-    year: "1996",
+    title: "A Nootropic ACTH(4-10) Analogue (Semax): 15 Years of Design and Study",
+    authors: "Ashmarin IP, Nezavibat'ko VN, Myasoedov NF, et al.",
+    journal: "Zhurnal Vysshei Nervnoi Deyatelnosti / PubMed",
+    year: "1997",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8835678/",
-    summary: "Foundational human study of Semax's cognitive effects. Demonstrated improved attention, memory consolidation, and electrophysiological correlates of cognitive load in healthy adults at standard intranasal doses. Established the rationale for Semax's approval as a cognitive-enhancing pharmaceutical in Russia and the basis for its use in the Semax + Selank blend.",
+    url: "https://pubmed.ncbi.nlm.nih.gov/9173745/",
+    summary: "Foundational review of Semax's cognitive effects. Demonstrated improved attention, memory consolidation, and electrophysiological correlates of cognitive load in healthy adults at standard intranasal doses. Established the rationale for Semax's approval as a cognitive-enhancing pharmaceutical in Russia and the basis for its use in the Semax + Selank blend.",
   },
   {
     title: "Effects of Semax on the BDNF System and Cerebral Plasticity",
     authors: "Dolotov OV, Karpenko EA, Inozemtseva LS, et al.",
-    journal: "Journal of Neurochemistry / Neuroscience Letters",
+    journal: "Brain Research",
     year: "2006",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/16464469/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16996037/",
     summary: "Mechanistic study showing Semax upregulates BDNF (brain-derived neurotrophic factor) and its receptor TrkB in the rat hippocampus and cortex. BDNF signaling is the molecular pathway most directly tied to learning, memory consolidation, and neuroplasticity. The paper established the BDNF axis as the primary candidate mechanism for Semax's cognitive and neuroprotective effects in the Semax + Selank blend.",
   },
   {
-    title: "Selank: Anxiolytic and Antidepressant-Like Effects in Animal Models",
-    authors: "Kost NV, Sokolov OY, Kolobov AA, et al.",
-    journal: "Bulletin of Experimental Biology and Medicine",
-    year: "2001",
+    title: "Selank: Antidepressant-Like Effects in Genetic and Situational Models of Depression",
+    authors: "Sarkisova KY, Kozlovsky II, Kozlovskaya MM",
+    journal: "Zhurnal Vysshei Nervnoi Deyatelnosti / PubMed",
+    year: "2008",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/11550074/",
-    summary: "Preclinical anxiolytic characterization of Selank. Demonstrated anxiety-reducing effects comparable to benzodiazepine reference drugs in standard rodent anxiety paradigms (elevated plus maze, open field), but without the sedation, motor impairment, dependence, or withdrawal effects characteristic of GABA-A direct-modulating drugs. Established the empirical basis for Selank's approval as an anxiolytic pharmaceutical in Russia and the rationale for its use in the Semax + Selank blend.",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18661785/",
+    summary: "Preclinical characterization of Selank's antidepressant-like activity. In WAG/Rij and Wistar rats and BALB/c mice, Selank reduced both genetically-determined and stress-provoked depression-like behavior, without the sedation or dependence characteristic of GABA-A direct-modulating drugs. Supports Selank's mood-regulating profile and the rationale for its use in the Semax + Selank blend.",
   },
   {
     title: "Selank Modulates GABAergic Neurotransmission and Stress Response",
     authors: "Vyunova TV, Andreeva LA, Shevchenko KV, Myasoedov NF",
-    journal: "Current Medicinal Chemistry",
+    journal: "Protein and Peptide Letters",
     year: "2018",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29701145/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30255741/",
     summary: "Review of Selank's mechanism centered on indirect GABAergic system modulation, plus enkephalin and serotonin pathway effects. The paper documents how Selank produces anxiolytic effects without binding the GABA-A receptor directly — instead modulating GABA tone through upstream signaling — which is why Selank does not produce sedation, dependence, or withdrawal. Provides the mechanistic basis for why Selank pairs well with the activating Semax component without producing the typical GABA-A drug side-effect profile.",
   },
   {
@@ -370,27 +370,27 @@ const sections = [
     node: (
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Kaplan AY, Kochetova AG, Nezavibathko VN, et al. Synthetic ACTH analog Semax displays cognitive enhancement properties in healthy subjects. Eur Neuropsychopharmacol. 1996.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/8835678/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/8835678/
+          Ashmarin IP, Nezavibat'ko VN, Myasoedov NF, et al. A nootropic adrenocorticotropin analog 4-10 (Semax): 15 years of design and study. Zh Vyssh Nerv Deiat Im I P Pavlova. 1997;47(2):420-30.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9173745/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/9173745/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Dolotov OV, Karpenko EA, Inozemtseva LS, et al. Semax, an analog of ACTH(4-10), affects BDNF and TrkB expression in rat hippocampus and cortex. J Neurochem / Neurosci Lett. 2006.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16464469/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/16464469/
+          Dolotov OV, Karpenko EA, Inozemtseva LS, et al. Semax, an analog of ACTH(4-10) with cognitive effects, regulates BDNF and trkB expression in the rat hippocampus. Brain Res. 2006;1117(1):54-60.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16996037/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/16996037/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Kost NV, Sokolov OY, Kolobov AA, et al. Pharmacological properties of Selank, a synthetic analog of tuftsin. Bull Exp Biol Med. 2001.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11550074/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/11550074/
+          Sarkisova KY, Kozlovsky II, Kozlovskaya MM. Effects of heptapeptide selank on genetically-based and situation-provoked symptoms of depression in WAG/Rij and Wistar rats and BALB/c mice. Zh Vyssh Nerv Deiat Im I P Pavlova. 2008;58(2):226-37.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18661785/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/18661785/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Vyunova TV, Andreeva LA, Shevchenko KV, Myasoedov NF. Selank: anxiolytic peptide modulating GABAergic neurotransmission and stress response. Curr Med Chem. 2018.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29701145/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/29701145/
+          Vyunova TV, Andreeva LA, Shevchenko KV, Myasoedov NF. Peptide-based anxiolytics: the molecular aspects of heptapeptide selank biological activity. Protein Pept Lett. 2018;25(10):914-923.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30255741/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/30255741/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -400,9 +400,9 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Medvedev VE, Tereshchenko OY, Israelyan AY, et al. Optimization of therapy for generalized anxiety disorder with Selank. S.S. Korsakov Journal of Neurology and Psychiatry. 2014.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24988282/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/24988282/
+          Medvedev VE, Tereshchenko OY, Israelyan AY, et al. Optimization of therapy for generalized anxiety disorder with Selank. S.S. Korsakov Journal of Neurology and Psychiatry (Zh Nevrol Psikhiatr). 2015;115(6):33-40.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26356395/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/26356395/
           </a>
         </li>
       </ol>

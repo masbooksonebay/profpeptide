@@ -96,8 +96,8 @@ const studies = [
   },
   {
     title: "Bremelanotide for Female Sexual Dysfunction — Mechanism, Clinical Trials, and FDA Approval",
-    authors: "PMC Research Group",
-    journal: "PMC / Frontiers in Pharmacology",
+    authors: "Edinoff AN, Sanders NM, Lewis KB, et al.",
+    journal: "PMC / Neurology International",
     year: "2022",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8788464/",

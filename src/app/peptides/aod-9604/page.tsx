@@ -72,7 +72,7 @@ const studies = [
     journal: "Hormone Research in Paediatrics",
     year: "2000",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/10965310/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/11146367/",
     summary: "One of the foundational animal studies establishing AOD-9604's lipolytic mechanism. Researchers confirmed that the C-terminal fragment of growth hormone specifically activates fat breakdown in adipose tissue without affecting IGF-1 levels or insulin sensitivity.",
   },
   {
@@ -81,7 +81,7 @@ const studies = [
     journal: "Endocrinology",
     year: "2001",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/11713242/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/11713213/",
     summary: "This study examined AOD-9604's fat-burning mechanism more deeply in obese mice — including mice without functioning beta-3 adrenergic receptors. The findings confirmed that AOD-9604 reduces fat accumulation and promotes fat oxidation through both beta-3 adrenergic and additional pathways.",
   },
   {
@@ -90,17 +90,8 @@ const studies = [
     journal: "Journal of Endocrinology and Metabolism",
     year: "2013",
     access: "Open Access",
-    url: "https://pubmed.ncbi.nlm.nih.gov/23943793/",
+    url: "https://jofem.org/index.php/jofem/article/view/213/278",
     summary: "The key human safety study of AOD-9604, reporting findings from trials involving over 900 participants across six studies. AOD-9604 was found to be well tolerated with no significant effects on glucose levels, IGF-1, or other metabolic markers — confirming the selective mechanism designed to avoid growth hormone's side effects.",
-  },
-  {
-    title: "AOD-9604: Lessons From a Discontinued Peptide Drug Candidate",
-    authors: "Emirati Times — Research Summary",
-    journal: "Emirati Times",
-    year: "2025",
-    access: "Open Access",
-    url: "https://emiratitimes.com/lessons-from-a-discontinued-aod-9604-research-peptide/",
-    summary: "A 2025 analysis examining the full arc of AOD-9604's development — from promising preclinical data to clinical failure and discontinuation. The article documents how a 24-week Phase 2b trial in 536 subjects found no statistically significant weight loss difference from placebo, leading Metabolic Pharmaceuticals to terminate the obesity development program in 2007.",
   },
 ];
 
@@ -436,8 +427,8 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Heffernan MA, Thorburn AW, Fam B, et al. Increase of fat oxidation and weight loss in obese mice caused by chronic treatment with human growth hormone or a modified C-terminal fragment. Int J Obes. 2001.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11713213/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/11713213/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11673763/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/11673763/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -456,7 +447,7 @@ const sections = [
           Wittert GA, Caterson ID, Bouchard C, et al. AOD9604, an orally active synthetic peptide derivative of human growth hormone, induced significant fat loss in obese subjects. Phase 2 trials, Metabolic Pharmaceuticals Ltd. 2003-2007.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Misra M. Obesity pharmacotherapy: current perspectives and future directions. Curr Drug Targets. 2013;14(7):739-43.{" "}
+          Misra M. Obesity pharmacotherapy: current perspectives and future directions. Curr Cardiol Rev. 2013;9:33-54.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3584306/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC3584306/
           </a>

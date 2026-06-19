@@ -103,8 +103,8 @@ const studies = [
   },
   {
     title: "The Safety and Anti-Aging Effects of Nicotinamide Mononucleotide in Human Clinical Trials — An Update",
-    authors: "PubMed Research Group",
-    journal: "Journal of Nutritional Biochemistry / PubMed",
+    authors: "Song Q, Zhou X, Xu K, et al.",
+    journal: "Advances in Nutrition / PubMed",
     year: "2023",
     access: "Paywalled",
     url: "https://pubmed.ncbi.nlm.nih.gov/37619764/",
@@ -112,12 +112,12 @@ const studies = [
   },
   {
     title: "Efficacy of Oral NMN Supplementation on Glucose and Lipid Metabolism — A Systematic Review with Meta-Analysis",
-    authors: "PubMed Research Group",
-    journal: "Diabetes & Metabolic Syndrome / PubMed",
-    year: "2024",
+    authors: "Zhang J, Poon ET, Wong SH, et al.",
+    journal: "Critical Reviews in Food Science and Nutrition / PubMed",
+    year: "2025",
     access: "Paywalled",
     url: "https://pubmed.ncbi.nlm.nih.gov/39116016/",
-    summary: "A 2024 meta-analysis of 12 RCTs (513 participants) examining NMN's effects on metabolic health markers. The analysis confirmed NMN consistently and significantly elevates blood NAD+ levels, but found most clinically relevant outcomes (fasting glucose, triglycerides, cholesterol) were not significantly different from placebo. An important counterbalance to enthusiastic popular coverage.",
+    summary: "A 2025 meta-analysis of 12 RCTs (513 participants) examining NMN's effects on metabolic health markers. The analysis confirmed NMN consistently and significantly elevates blood NAD+ levels, but found most clinically relevant outcomes (fasting glucose, triglycerides, cholesterol) were not significantly different from placebo. An important counterbalance to enthusiastic popular coverage.",
   },
 ];
 

@@ -79,7 +79,7 @@ const studies = [
   {
     title: "Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review",
     authors: "Vasireddi N, Hahamyan H, Salata MJ, et al.",
-    journal: "Sports Health / PMC",
+    journal: "HSS Journal / PMC",
     year: "2025",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/",
@@ -97,8 +97,8 @@ const studies = [
   {
     title: "Brain-Gut Axis and Pentadecapeptide BPC 157: Theoretical and Practical Implications",
     authors: "Sikiric P, et al.",
-    journal: "PMC / Journal of Physiology and Pharmacology",
-    year: "2017",
+    journal: "Current Neuropharmacology / PMC",
+    year: "2016",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/",
     summary: "This review examines BPC-157’s effects on the gut-brain axis — the bidirectional communication network between the gastrointestinal tract and the central nervous system. The paper documents BPC-157’s success in treating GI conditions including ulcerative colitis, liver lesions, and gut fistulas, as well as its corresponding effects on the brain — including anxiolytic, antidepressant, and neuroprotective properties in animal models. This study is the basis for BPC-157’s reputation as both a gut-healing peptide and a potential CNS-protective compound — two seemingly unrelated applications that connect through the gut-brain axis.",
@@ -463,15 +463,15 @@ const sections = [
     node: (
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Seiwerth S, Brcic L, Vuletic LB, et al. BPC 157 and Standard Angiogenesis. Curr Pharm Des. 2014;20(7):1126-35.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23782146/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/23782146/
+          Seiwerth S, Rucman R, Turkovic B, et al. BPC 157 and standard angiogenic growth factors. Curr Pharm Des. 2018;24(18):1972-1989.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29998800/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/29998800/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Tkalcevic VI, Cuzic S, Brajsa K, et al. Enhancement by PL 14736 of granulation and angiogenesis in rats. Eur J Pharmacol. 2007;570(1-3):212-21.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17588561/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/17588561/
+          Tkalcevic VI, Cuzic S, Brajsa K, et al. Enhancement by PL 14736 of granulation and collagen organization in healing wounds and the potential role of egr-1 expression. Eur J Pharmacol. 2007;570(1-3):212-21.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17628536/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/17628536/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -481,30 +481,33 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Sikiric P, Hahm KB, Blagaic AB, et al. Stable Gastric Pentadecapeptide BPC 157, Robust Vascular Therapy in Ischemia/Reperfusion Injury. Front Pharmacol. 2018;9:1383.{" "}
+          Hsieh MJ, Liu HT, Wang CN, et al. Therapeutic potential of pro-angiogenic BPC157 is associated with VEGFR2 activation and up-regulation. J Mol Med (Berl). 2017;95(3):323-333.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27847966/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/27847966/
+          </a>
+        </li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          Sikiric P, Seiwerth S, Rucman R, et al. Brain-gut Axis and Pentadecapeptide BPC 157: Theoretical and Practical Implications. Curr Neuropharmacol. 2016;14(8):857-865.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Sikiric P, Seiwerth S, Brcic L, et al. Brain-gut Axis and Pentadecapeptide BPC 157: Theoretical and Practical Implications. Curr Neuropharmacol. 2018;16(10):1401-25.
-        </li>
-        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Vasireddi S, Vasireddi A, Sikiric P, et al. Pentadecapeptide BPC 157 in tendon and ligament injuries — systematic review of preclinical evidence. Orthopaedic Journal of Sports Medicine. 2025.{" "}
+          McGuire FP, Martinez R, Lenz A, et al. Regeneration or Risk? A Narrative Review of BPC-157 for Musculoskeletal Health. Curr Rev Musculoskelet Med. 2025.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12446177/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12446177/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Hsieh MJ, Liu HT, Wang CN, et al. Therapeutic potential of BPC-157 on muscle injury healing. Sci Rep. 2020;10(1):17502.{" "}
-          <a href="https://www.nature.com/articles/s41598-020-74552-5" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://www.nature.com/articles/s41598-020-74552-5
+          Staresinic M, Petrovic I, Novinscak T, et al. Effective therapy of transected quadriceps muscle in rat: Gastric pentadecapeptide BPC 157. J Orthop Res. 2006;24(5):1109-17.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16609979/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/16609979/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Vukojevic J, Sikiric P, Strbe S, et al. Pentadecapeptide BPC 157 and the central nervous system. Prog Neuropsychopharmacol Biol Psychiatry. 2018;84(Pt B):363-72.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29017966/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/29017966/
+          Vukojevic J, Milavic M, Perovic D, et al. Pentadecapeptide BPC 157 and the central nervous system. Neural Regen Res. 2022;17(3):482-487.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/34380875/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/34380875/
           </a>
         </li>
       </ol>

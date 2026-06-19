@@ -546,12 +546,12 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kushner RF, Calanna S, Davies M, et al. Semaglutide 2.4 mg for the Treatment of Obesity: Key Elements of the STEP Trials 1 to 5. Obesity. 2020;28(6):1050-1061.{" "}
           <a
-            href="https://pubmed.ncbi.nlm.nih.gov/32441890/"
+            href="https://pubmed.ncbi.nlm.nih.gov/32441473/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#0891b2] hover:underline break-words"
           >
-            https://pubmed.ncbi.nlm.nih.gov/32441890/
+            https://pubmed.ncbi.nlm.nih.gov/32441473/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

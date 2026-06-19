@@ -69,7 +69,7 @@ const studies = [
     journal: "Life Sciences / PubMed",
     year: "1996",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8622573/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8637402/",
     summary: "The first human Phase I clinical trial of Melanotan II at the University of Arizona. The trial confirmed visible tanning within 5 doses without UV exposure, and documented the now well-known side effects: nausea, facial flushing, fatigue, yawning, and spontaneous penile erections — the last of which redirected subsequent research toward MT-II's effects on sexual function.",
   },
   {
@@ -92,9 +92,9 @@ const studies = [
   },
   {
     title: "An Overview of Benefits and Risks of Chronic Melanocortin-1 Receptor Activation",
-    authors: "PMC Research Group",
-    journal: "PMC / British Journal of Dermatology",
-    year: "2024",
+    authors: "Böhm M, Robert C, Malhotra S, et al.",
+    journal: "PMC / Journal of the European Academy of Dermatology and Venereology",
+    year: "2025",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11664455/",
     summary: "The most current and balanced risk assessment of Melanotan II, documenting five reported cases of melanoma occurring during or after MT-II use. The review explains the biological mechanism of concern: MT-II stimulates melanocyte activity through MC1R, which can accelerate melanocytic activity in pre-existing nevi. The authors recommend against the use of unlicensed melanocortin agents.",
@@ -461,7 +461,7 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Renal infarction case report. PMC.{" "}
+          Peters B, Hadimeri H, Wahlberg R, et al. Melanotan II: a possible cause of renal infarction: review of the literature. CEN Case Rep. 2020;9(4):361-365.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7148395/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC7148395/
           </a>

@@ -76,28 +76,19 @@ const studies = [
     summary: "The landmark study establishing Ipamorelin as the first growth hormone secretagogue with high selectivity for GH release — meaning it stimulates GH without significantly raising cortisol, prolactin, or ACTH. The study demonstrated that Ipamorelin produced robust GH release in rats comparable to GHRP-6 and hexarelin, but with approximately 90% less cortisol response and no meaningful ACTH elevation. This selectivity profile is what distinguishes Ipamorelin from older GHRPs and makes it the preferred GHRP for stacking with GHRH analogs like CJC-1295.",
   },
   {
-    title: "Ipamorelin — Effects on Bone Mineral Density and Body Composition in Aged Rats",
-    authors: "Hansen BS, et al.",
-    journal: "Growth Hormone & IGF Research / PubMed",
-    year: "1999",
-    access: "Abstract open",
-    url: "https://pubmed.ncbi.nlm.nih.gov/10352464/",
-    summary: "A 12-week study examining Ipamorelin's effects on body composition and bone health in aged rats — directly relevant to its research application in age-related metabolic decline. Findings included significant increases in bone mineral content, reduced adiposity, and increased lean mass, all attributed to sustained GH/IGF-1 axis activation.",
-  },
-  {
     title: "Pharmacokinetic-Pharmacodynamic Modeling of Ipamorelin in Human Volunteers",
     authors: "Gobburu JVS, et al.",
     journal: "Pharmaceutical Research / PubMed",
     year: "1999",
     access: "Abstract open",
-    url: "https://pubmed.ncbi.nlm.nih.gov/10496653/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/10496658/",
     summary: "One of the few human pharmacokinetic studies of Ipamorelin, characterizing how it behaves in the human body. The study modeled the relationship between Ipamorelin plasma concentrations and GH release kinetics in healthy volunteers — confirming that the dose-response relationship seen in animal models translates to humans.",
   },
   {
     title: "Beyond the Androgen Receptor — The Role of Growth Hormone Secretagogues in Hypogonadal Males",
-    authors: "Sigalos JT, Pastuszak AW",
-    journal: "PMC / Sexual Medicine Reviews",
-    year: "2018",
+    authors: "Sinha DK, Balasubramanian A, Tatem AJ, et al.",
+    journal: "PMC / Translational Andrology and Urology",
+    year: "2020",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7108996/",
     summary: "A clinical review examining Ipamorelin alongside other GH secretagogues for applications in metabolic syndrome and hypogonadism. The paper summarizes Ipamorelin's selectivity advantage over GHRP-2 and GHRP-6 and reviews the synergistic GH response when Ipamorelin is combined with GHRH analogs — documenting 2–4x greater GH AUC compared to either compound in isolation.",
@@ -465,14 +456,14 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Andersen NB, Malmlöf K, Johansen PB, et al. The growth hormone secretagogue ipamorelin counteracts glucocorticoid-induced decrease in bone formation of adult rats. Growth Horm IGF Res. 2001;11(5):266-72.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11735237/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/11735237/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11735244/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/11735244/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Svensson J, Lall S, Dickson SL, et al. The GH secretagogues ipamorelin and GH-releasing peptide-6 increase bone mineral content in adult female rats. J Endocrinol. 2000;165(3):569-77.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/10860573/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/10860573/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/10828840/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/10828840/
           </a>
         </li>
       </ol>
