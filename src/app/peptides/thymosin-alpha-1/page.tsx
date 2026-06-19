@@ -66,8 +66,8 @@ const faqs = [
 const studies = [
   {
     title: "Thymosin Alpha 1: A Comprehensive Review of the Literature",
-    authors: "Seidel JA, et al.",
-    journal: "World Journal of Gastroenterology / PMC",
+    authors: "Dominari A, Hathaway III D, et al.",
+    journal: "World Journal of Virology / PMC",
     year: "2020",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7747025/",
@@ -75,7 +75,7 @@ const studies = [
   },
   {
     title: "Thymosin Alpha-1 and Its Role in Viral Infectious Diseases — Mechanism and Clinical Application",
-    authors: "MDPI Molecules Research Group",
+    authors: "Tao N, Xu X, Ying Y, et al.",
     journal: "Molecules (MDPI)",
     year: "2023",
     access: "Open Access",
@@ -84,7 +84,7 @@ const studies = [
   },
   {
     title: "Thymosin Alpha-1 in Cancer Therapy — Immunoregulation and Potential Applications",
-    authors: "ScienceDirect Research Group",
+    authors: "Wei Y, Zhang Y, Li P, et al.",
     journal: "International Immunopharmacology / ScienceDirect",
     year: "2023",
     access: "Paywalled",
@@ -93,8 +93,8 @@ const studies = [
   },
   {
     title: "Thymosin Alpha-1 — Reimagine Its Broader Applications in the Immuno-Oncology Era",
-    authors: "PubMed Research Group",
-    journal: "Cancer Medicine / PubMed",
+    authors: "Mao L",
+    journal: "International Immunopharmacology / PubMed",
     year: "2023",
     access: "Open Access",
     url: "https://pubmed.ncbi.nlm.nih.gov/36871535/",
@@ -102,7 +102,7 @@ const studies = [
   },
   {
     title: "Aging and Thymosin Alpha-1 — Immunosenescence and Therapeutic Potential",
-    authors: "MDPI International Journal of Molecular Sciences",
+    authors: "Simonova MA, Ivanov I, et al.",
     journal: "International Journal of Molecular Sciences (MDPI)",
     year: "2025",
     access: "Open Access",
@@ -464,8 +464,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wu J, Zhou L, Liu J, et al. The efficacy of thymosin alpha 1 for severe sepsis (ETASS): a multicentre, single-blind, randomized and controlled trial. Crit Care. 2013;17(1):R8.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4029277/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pmc.ncbi.nlm.nih.gov/articles/PMC4029277/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23327199/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/23327199/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

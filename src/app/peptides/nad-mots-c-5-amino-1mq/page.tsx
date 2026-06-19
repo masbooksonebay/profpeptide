@@ -79,12 +79,12 @@ const studies = [
   },
   {
     title: "MOTS-c Is an Exercise-Induced Mitochondrial-Encoded Regulator of Age-Dependent Physical Decline and Muscle Homeostasis",
-    authors: "Reynolds JC, Lai RW, Bhattacharya JS, et al.",
+    authors: "Reynolds JC, Lai RW, Woodhead JST, et al.",
     journal: "Nature Communications",
     year: "2021",
     access: "Open Access",
-    url: "https://pubmed.ncbi.nlm.nih.gov/34385422/",
-    summary: "Reynolds et al. demonstrated that endogenous MOTS-c levels rise in blood during exercise and that exogenous MOTS-c administration improved physical performance and muscle homeostasis in aged mice. This study established MOTS-c as a translatable exercise-mimetic signal and supported its potential for countering age-associated metabolic decline — directly relevant to the longevity framing of this metabolic blend. The work also confirmed that MOTS-c is mitochondrially encoded and acts as a retrograde mitochondria-to-nucleus signal under metabolic stress. PMID 34385422.",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33473109/",
+    summary: "Reynolds et al. demonstrated that endogenous MOTS-c levels rise in blood during exercise and that exogenous MOTS-c administration improved physical performance and muscle homeostasis in aged mice. This study established MOTS-c as a translatable exercise-mimetic signal and supported its potential for countering age-associated metabolic decline — directly relevant to the longevity framing of this metabolic blend. The work also confirmed that MOTS-c is mitochondrially encoded and acts as a retrograde mitochondria-to-nucleus signal under metabolic stress. PMID 33473109.",
   },
   {
     title: "Therapeutic Potential of NAD-Boosting Molecules: The In Vivo Evidence",
@@ -96,13 +96,13 @@ const studies = [
     summary: "A landmark review by Sinclair and colleagues synthesizing in vivo evidence for NAD+ precursor and direct NAD+ supplementation strategies across aging, metabolic disease, and organ protection models. The review documents the universal decline in NAD+ with aging and metabolic stress, and evaluates the downstream effects on sirtuins, PARP enzymes, and mitochondrial function — the mechanistic basis for NAD+ replenishment research. This paper is the primary published foundation for NAD+ as a longevity and metabolic research target. PMID 29514064.",
   },
   {
-    title: "A Novel NNMT Inhibitor, 5-Amino-1MQ, Prevents Fat Mass Gain and Improves Glycemic Control in a Mouse Model of Obesity",
-    authors: "Neelakantan H, Wang HY, Vance MV, et al.",
+    title: "Selective and Membrane-Permeable Small Molecule Inhibitors of NNMT Reverse High-Fat-Diet-Induced Obesity in Mice",
+    authors: "Neelakantan H, Vance V, Wetzel MD, et al.",
     journal: "Biochemical Pharmacology",
     year: "2018",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29307527/",
-    summary: "Neelakantan et al. characterized 5-Amino-1MQ as a selective NNMT inhibitor and demonstrated that it prevented fat mass gain, raised adipose NAD+ and SAM levels, and improved glycemic control in diet-induced obese mice. This is the primary preclinical evidence for 5-Amino-1MQ&apos;s mechanism of action in adipocyte metabolism and the paper most cited in vendor literature for the compound&apos;s inclusion in metabolic blends. The study confirmed that NNMT inhibition elevates intracellular NAD+ levels by reducing the methylation sink on NAD+ precursors — directly linking 5-Amino-1MQ to the NAD+ axis shared by the other two components. PMID 29307527.",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29155147/",
+    summary: "Neelakantan et al. characterized 5-Amino-1MQ as a selective NNMT inhibitor and demonstrated that it prevented fat mass gain, raised adipose NAD+ and SAM levels, and improved glycemic control in diet-induced obese mice. This is the primary preclinical evidence for 5-Amino-1MQ&apos;s mechanism of action in adipocyte metabolism and the paper most cited in vendor literature for the compound&apos;s inclusion in metabolic blends. The study confirmed that NNMT inhibition elevates intracellular NAD+ levels by reducing the methylation sink on NAD+ precursors — directly linking 5-Amino-1MQ to the NAD+ axis shared by the other two components. PMID 29155147.",
   },
 ];
 
@@ -373,9 +373,9 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Reynolds JC, Lai RW, Bhattacharya JS, et al. MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis. Nat Commun. 2021;12(1):470.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/34385422/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/34385422/
+          Reynolds JC, Lai RW, Woodhead JST, et al. MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis. Nat Commun. 2021;12(1):470.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33473109/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/33473109/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -385,9 +385,9 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Neelakantan H, Wang HY, Vance MV, et al. A novel NNMT inhibitor, 5-amino-1MQ, prevents fat mass gain and improves glycemic control in a mouse model of obesity. Biochem Pharmacol. 2018;147:27-34.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29307527/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/29307527/
+          Neelakantan H, Vance V, Wetzel MD, et al. Selective and membrane-permeable small molecule inhibitors of NNMT reverse high fat diet-induced obesity in mouse model of obesity. Biochem Pharmacol. 2018;147:27-34.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29155147/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/29155147/
           </a>
         </li>
       </ol>

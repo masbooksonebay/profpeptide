@@ -71,24 +71,6 @@ const studies = [
     url: "https://pubmed.ncbi.nlm.nih.gov/22117547/",
     summary: "The mechanistic basis for the Khavinson short-peptide model. Short peptides were shown to penetrate into the cell nucleus and to interact specifically with DNA in vitro — supporting the proposal that tripeptides such as EDR act not through cell-surface receptors but by entering the nucleus and binding DNA directly to influence gene expression.",
   },
-  {
-    title: "EDR Peptide in Cortical Neuron Cultures Under Oxidative Stress (caspase-3, ROS, Sod2/Cat)",
-    authors: "Khavinson VKh, et al.",
-    journal: "PubMed",
-    year: "2012",
-    access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/23199282/",
-    summary: "In oxidatively stressed cortical neuron cultures, EDR reduced caspase-3 activation and reactive oxygen species, helped preserve mitochondrial membrane potential, and upregulated the antioxidant genes Sod2 and Cat — the core in-vitro evidence behind the neuroprotection and oxidative-stress-defense framing.",
-  },
-  {
-    title: "EDR Peptide Effects on PCNA/p21 in Neural Progenitor Cells",
-    authors: "Linkova NS, et al.",
-    journal: "PubMed",
-    year: "2016",
-    access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27262825/",
-    summary: "Cell-cycle and proliferation work in neural progenitor cells reporting modulation of PCNA and p21 — providing a proposed route by which EDR influences neuronal proliferation, alongside its antioxidant and anti-apoptotic effects.",
-  },
 ];
 
 const sections = [
@@ -210,16 +192,10 @@ const sections = [
           Khavinson V, Ribakova Y, Kulebiakin K, et al. Pinealon increases cell viability by suppression of free radical levels and activating proliferative processes. Rejuvenation Research. 2011. (Paywalled)
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Khavinson VKh, et al. EDR peptide in cortical neuron cultures under oxidative stress (caspase-3, ROS, Sod2/Cat). 2012. PMID 23199282.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23199282/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/23199282/
-          </a>
+          Khavinson VKh, et al. EDR peptide in cortical neuron cultures under oxidative stress (caspase-3, ROS, Sod2/Cat). 2012.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Linkova NS, et al. EDR peptide effects on PCNA/p21 in neural progenitor cells. 2016. PMID 27262825.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27262825/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/27262825/
-          </a>
+          Linkova NS, et al. EDR peptide effects on PCNA/p21 in neural progenitor cells. 2016.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mendzheritskiĭ AM, Karantysh GV, Ryzhak GA, Dem&apos;ianenko SV. Cytokines and caspase-3 activity in old-rat brain under acute hypoxic hypoxia with Cortexin and Pinealon. Advances in Gerontology. 2014;27:94-97. (Paywalled)

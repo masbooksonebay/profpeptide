@@ -95,7 +95,7 @@ const studies = [
   },
   {
     title: "Exploring the Role of Tripeptides in Wound Healing and Skin Regeneration — A Comprehensive Review",
-    authors: "Medsci Research Group",
+    authors: "Adnan SB, Maarof M, Fauzi MB, et al.",
     journal: "International Journal of Medical Sciences",
     year: "2025",
     access: "Open Access",

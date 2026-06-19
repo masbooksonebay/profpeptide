@@ -83,7 +83,7 @@ const studies = [
     journal: "J Clin Endocrinol Metab",
     year: "1996",
     access: "Abstract available",
-    url: "https://pubmed.ncbi.nlm.nih.gov/8954020/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/8954023/",
     summary: "An earlier Merck study establishing the pharmacology of daily oral MK-677 in elderly subjects. The study showed that daily oral dosing produced sustained 24-hour GH/IGF-1 axis stimulation — a key finding that distinguished MK-677 from the injectable GHRPs of that era and supported the development of MK-677 as a once-daily oral therapy.",
   },
 ];
@@ -389,8 +389,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Chapman IM, Bach MA, Van Cauter E, et al. Stimulation of the growth hormone (GH)-insulin-like growth factor I axis by daily oral administration of a GH secretagogue (MK-677) in healthy elderly subjects. J Clin Endocrinol Metab. 1996;81(12):4249-57.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/8954020/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/8954020/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/8954023/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/8954023/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

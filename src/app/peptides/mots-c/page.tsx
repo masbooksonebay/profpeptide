@@ -86,7 +86,7 @@ const studies = [
   },
   {
     title: "MOTS-c: A Promising Mitochondrial-Derived Peptide for Therapeutic Exploitation",
-    authors: "Zhu Y, Gu L, Lin X, et al.",
+    authors: "Zheng Y, Wei Z, Wang T, et al.",
     journal: "Frontiers in Endocrinology",
     year: "2023",
     access: "Open Access",
