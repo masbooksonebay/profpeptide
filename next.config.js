@@ -40,6 +40,20 @@ const nextConfig = {
       "/coupons/**": ["./public/og/coupon-card-base.png", "./public/fonts/*.ttf"],
     },
   },
+  async headers() {
+    // Per-route OG/Twitter card-image endpoints are metadata assets, not pages.
+    // Google was "Discovering" them (via the og:image / twitter:image meta tags
+    // on every coupon/guide/about page) and surfacing them in the index, burning
+    // crawl/indexing quota. They're already excluded from the sitemap
+    // (next-sitemap.config.js); this emits X-Robots-Tag: noindex on the routes
+    // themselves so Google drops the ones it already found. :path* matches the
+    // route at any depth (/about/opengraph-image, /coupons/<vendor>/opengraph-image).
+    const noindex = [{ key: "X-Robots-Tag", value: "noindex" }];
+    return [
+      { source: "/:path*/opengraph-image", headers: noindex },
+      { source: "/:path*/twitter-image", headers: noindex },
+    ];
+  },
   async redirects() {
     return [
       {
