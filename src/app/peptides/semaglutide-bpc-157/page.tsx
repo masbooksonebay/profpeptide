@@ -84,12 +84,12 @@ const studies = [
   },
   {
     title:
-      "Lean Body Mass Changes with Semaglutide: Evidence from the STEP Trials and Real-World Data",
-    authors: "Ida S, Kaneko R, Murata K, et al.",
-    journal: "Diabetes, Obesity and Metabolism",
+      "Effects of Antidiabetic Drugs on Muscle Mass in Type 2 Diabetes Mellitus",
+    authors: "Ida S, Kaneko R, Imataka K, et al.",
+    journal: "Current Diabetes Reviews",
     year: "2021",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/34480530/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/32628589/",
     summary:
       "Analysis of lean-mass composition changes during GLP-1 agonist therapy. GLP-1 receptor agonist-driven weight loss consistently involves meaningful lean-mass reduction, estimated at 25–40% of total weight lost across trials. This lean-mass loss — encompassing skeletal muscle and connective tissue — is the mechanistic rationale for pairing a tissue-repair peptide like BPC-157 with semaglutide protocols. The paper underscores the importance of resistance training and protein intake as primary countermeasures.",
   },
@@ -108,7 +108,7 @@ const studies = [
     title:
       "Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review",
     authors: "Vasireddi N, Hahamyan H, Salata MJ, et al.",
-    journal: "Sports Health",
+    journal: "HSS Journal",
     year: "2025",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/",
@@ -122,7 +122,7 @@ const studies = [
     journal: "The Lancet",
     year: "2021",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/33812489/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/33667417/",
     summary:
       "STEP 2 evaluated once-weekly semaglutide 2.4 mg in adults with overweight/obesity and type 2 diabetes (n=1,210). Mean weight loss was 9.6% over 68 weeks. GI adverse events were again the primary tolerability concern, with nausea and diarrhea the most frequent reasons for dose reduction or study discontinuation. The consistent GI tolerability pattern across STEP 1 and STEP 2 reinforces the relevance of GI-protective adjuncts in research protocols.",
   },
@@ -567,15 +567,15 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Ida S, Kaneko R, Murata K, et al. Effects of GLP-1 receptor agonists on lean body mass.
-          Diabetes Obes Metab. 2021.{" "}
+          Ida S, Kaneko R, Imataka K, et al. Effects of antidiabetic drugs on muscle mass in type 2 diabetes mellitus.
+          Curr Diabetes Rev. 2021;17(3):293-303.{" "}
           <a
-            href="https://pubmed.ncbi.nlm.nih.gov/34480530/"
+            href="https://pubmed.ncbi.nlm.nih.gov/32628589/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#0891b2] hover:underline break-words"
           >
-            https://pubmed.ncbi.nlm.nih.gov/34480530/
+            https://pubmed.ncbi.nlm.nih.gov/32628589/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -592,7 +592,7 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vasireddi N, Hahamyan H, Salata MJ, et al. Emerging Use of BPC-157 in Orthopaedic Sports
-          Medicine: A Systematic Review. Sports Health. 2025.{" "}
+          Medicine: A Systematic Review. HSS J. 2025.{" "}
           <a
             href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/"
             target="_blank"
@@ -606,12 +606,12 @@ const sections = [
           Davies M, Faerch L, Jeppesen OK, et al. Semaglutide 2.4 mg once a week in adults with
           overweight or obesity, and type 2 diabetes (STEP 2). Lancet. 2021;397(10278):971-984.{" "}
           <a
-            href="https://pubmed.ncbi.nlm.nih.gov/33812489/"
+            href="https://pubmed.ncbi.nlm.nih.gov/33667417/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#0891b2] hover:underline break-words"
           >
-            https://pubmed.ncbi.nlm.nih.gov/33812489/
+            https://pubmed.ncbi.nlm.nih.gov/33667417/
           </a>
         </li>
       </ol>

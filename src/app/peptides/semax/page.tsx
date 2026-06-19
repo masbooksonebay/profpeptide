@@ -97,21 +97,12 @@ const studies = [
   },
   {
     title: "The Potential of the Peptide Drug Semax and Its Derivative for Correcting Pathological Impairments in an Animal Model of Alzheimer's Disease",
-    authors: "PMC Research Group",
-    journal: "PMC / PubMed",
+    authors: "Radchenko AI, Kuzubova EV, Apostol AA, et al.",
+    journal: "Acta Naturae",
     year: "2025",
     access: "Open Access",
     url: "https://pubmed.ncbi.nlm.nih.gov/41479572/",
     summary: "One of the most recent Semax studies, examining its potential in Alzheimer's disease using transgenic mice. Both Semax and a derivative improved cognitive function across multiple behavioral tests. Histological analysis showed reduced amyloid plaque burden in the cortex and hippocampus of treated animals — Semax not only improved cognition but appeared to directly reduce the pathological protein aggregation that defines Alzheimer's disease.",
-  },
-  {
-    title: "Semax Cognitive Vitality Report for Researchers",
-    authors: "Alzheimer's Drug Discovery Foundation (ADDF) — Cognitive Vitality Program",
-    journal: "Alzheimer's Drug Discovery Foundation",
-    year: "2018",
-    access: "Open Access",
-    url: "https://www.alzdiscovery.org/uploads/cognitive_vitality_media/Semax-Cognitive-Vitality-For-Researchers.pdf",
-    summary: "A balanced, independent evidence review of Semax from the Alzheimer's Drug Discovery Foundation. The report documents Semax's use in Russia for stroke, encephalopathy, Parkinson's disease, and newborns with neurological deficits. Notes that most high-quality human data remains published in Russian and English-language clinical evidence is limited.",
   },
 ];
 
@@ -453,14 +444,14 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dolotov OV, Karpenko EA, Inozemtseva LS, et al. Semax, an analog of adrenocorticotropin (4-10), binds specifically and increases levels of brain-derived neurotrophic factor protein in rat basal forebrain. J Neurochem. 2006;97(suppl 1):82-86.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16635258/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/16635258/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16635254/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/16635254/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Eremin KO, Kudrin VS, Saransaari P, et al. Semax, an ACTH(4-10) analogue with nootropic properties, activates dopaminergic and serotoninergic brain systems in rodents. Neurochem Res. 2005;30(12):1493-500.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16362770/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/16362770/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16362768/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/16362768/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -474,14 +465,14 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Gusev EI, Skvortsova VI, Miasoedov NF, et al. Effectiveness of Semax in the acute period of hemispheric ischemic stroke (a clinical and electrophysiological study). Zh Nevrol Psikhiatr Im S S Korsakova. 1997;97(6):26-34.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9244639/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/9244639/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11517472/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/11517472/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Romanova GA, Shakova FM, Barskov IV, et al. Disturbance of learning and memory in rats with photothrombotic infarcts in the prefrontal cortex; protective effect of Semax. Bull Exp Biol Med. 2006;142(6):746-9.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17603663/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/17603663/
+          Romanova GA, Silachev DN, Shakova FM, et al. Neuroprotective and antiamnesic effects of Semax during experimental ischemic infarction of the cerebral cortex. Bull Exp Biol Med. 2006;142(6):663-6.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17603664/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/17603664/
           </a>
         </li>
       </ol>

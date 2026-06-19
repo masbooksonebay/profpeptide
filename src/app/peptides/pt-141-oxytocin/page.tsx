@@ -72,25 +72,25 @@ const faqs = [
 
 const studies = [
   {
-    title: "Bremelanotide for Hypoactive Sexual Desire Disorder: The RECONNECT Studies",
-    authors: "Clayton AH, Kingsberg SA, Goldstein I",
-    journal: "Journal of Sexual Medicine",
+    title: "Bremelanotide for the Treatment of Hypoactive Sexual Desire Disorder: Two Randomized Phase 3 Trials",
+    authors: "Kingsberg SA, Clayton AH, Portman D, et al.",
+    journal: "Obstetrics & Gynecology",
     year: "2019",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31447380/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31599840/",
     summary: "The pivotal Phase 3 RECONNECT trials that supported FDA approval of bremelanotide (Vyleesi) for HSDD in premenopausal women. Two randomized, double-blind, placebo-controlled trials (n=1,247 total) demonstrated that bremelanotide 1.75 mg SC significantly increased the number of satisfying sexual events and reduced distress scores versus placebo. Nausea was the most common adverse event (~40% of subjects); transient blood pressure increases were noted. This is the highest-quality evidence base for PT-141&apos;s clinical efficacy and safety profile in a controlled human trial.",
   },
   {
-    title: "Safety and Efficacy of Bremelanotide: Pooled Analysis of Two Phase 3 Trials",
+    title: "Long-Term Safety and Efficacy of Bremelanotide for Hypoactive Sexual Desire Disorder",
     authors: "Simon JA, Kingsberg SA, Portman D, et al.",
     journal: "Obstetrics & Gynecology",
     year: "2019",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/31241582/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/31599847/",
     summary: "Pooled safety and efficacy analysis of the two RECONNECT trials covering 1,247 premenopausal women with HSDD. Confirmed that bremelanotide produced statistically significant improvements in desire and distress endpoints. Detailed safety data documented transient mean increases in blood pressure (8 mmHg systolic, 5 mmHg diastolic) peaking ~4 hours post-dose and resolving within 12 hours. Focal hyperpigmentation with repeated use was identified as a dose-frequency-dependent concern. This analysis provides the most detailed combined safety dataset for PT-141 in human subjects.",
   },
   {
-    title: "Effect of Intranasal Oxytocin on Human Sexual Function: A Review",
+    title: "The Orgasmic History of Oxytocin: Love, Lust, and Labor",
     authors: "Magon N, Kalra S",
     journal: "Indian Journal of Endocrinology and Metabolism",
     year: "2011",
@@ -99,21 +99,21 @@ const studies = [
     summary: "A review examining oxytocin&apos;s role in sexual physiology including orgasm, pair bonding, and arousal. Documents the surge in endogenous oxytocin at orgasm and explores the hypothesis that exogenous oxytocin may enhance sexual satisfaction and bonding. Covers the neuropeptide&apos;s central and peripheral mechanisms relevant to intimacy. This is the most-cited review supporting the rationale for oxytocin in a sexual-health blend context. PMID 22145130.",
   },
   {
-    title: "Oxytocin and Social Cognition: A Systematic Review and Meta-Analysis",
+    title: "The Social Salience Hypothesis of Oxytocin",
     authors: "Shamay-Tsoory SG, Abu-Akel A",
-    journal: "Neuroscience & Biobehavioral Reviews",
+    journal: "Biological Psychiatry",
     year: "2016",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27378673/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/26321019/",
     summary: "Meta-analysis examining intranasal oxytocin&apos;s effects on social cognition, trust, and empathy in humans. A key cautionary dataset: oxytocin effects are context-dependent and individual-variable &mdash; some studies show prosocial enhancement, others find no effect or even competitive/in-group bias amplification under certain conditions. This heterogeneity is critical to understanding the limitations of the PT-141 + Oxytocin combination thesis, which assumes oxytocin reliably promotes bonding and intimacy.",
   },
   {
-    title: "Bremelanotide: An Overview of Its Pharmacology, Efficacy, and Safety for the Treatment of HSDD",
+    title: "An Effect on the Subjective Sexual Response in Premenopausal Women with Sexual Arousal Disorder by Bremelanotide (PT-141)",
     authors: "Diamond LE, Earle DC, Heiman JR, et al.",
-    journal: "Expert Opinion on Investigational Drugs",
-    year: "2004",
+    journal: "Journal of Sexual Medicine",
+    year: "2006",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/15268638/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/16839319/",
     summary: "Early characterization of bremelanotide&apos;s pharmacology and human arousal data from pre-Phase 3 research. Documented centrally mediated sexual arousal in both male and female subjects, distinguishing PT-141&apos;s mechanism from peripheral PDE5 inhibitors. Established the MC3R/MC4R receptor pathway in hypothalamic regions as the likely anatomical site of action for the desire/arousal effect, which is the mechanistic foundation for pairing PT-141 with oxytocin&apos;s complementary hypothalamic bonding effects.",
   },
 ];
@@ -395,14 +395,14 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Clayton AH, Kingsberg SA, Goldstein I. Evaluation and Management of Hypoactive Sexual Desire Disorder. Sex Med. 2018;6(2):59-74. (RECONNECT trial context){" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31447380/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/31447380/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29523488/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/29523488/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Simon JA, Kingsberg SA, Portman D, et al. Long-term Safety and Efficacy of Bremelanotide for Hypoactive Sexual Desire Disorder. Obstet Gynecol. 2019;134(5):909-917.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31241582/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/31241582/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31599847/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/31599847/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -413,14 +413,14 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Shamay-Tsoory SG, Abu-Akel A. The Social Salience Hypothesis of Oxytocin. Biol Psychiatry. 2016;79(3):194-202.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27378673/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/27378673/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26321019/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/26321019/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Diamond LE, Earle DC, Heiman JR, et al. An Effect on the Subjective Sexual Response in Premenopausal Women with Sexual Arousal Disorder by Bremelanotide. J Sex Med. 2006;3(4):628-638.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/15268638/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/15268638/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16839319/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/16839319/
           </a>
         </li>
       </ol>

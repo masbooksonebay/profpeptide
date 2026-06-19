@@ -71,7 +71,7 @@ const studies = [
   {
     title: "Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review",
     authors: "Vasireddi N, Hahamyan H, Salata MJ, et al.",
-    journal: "Sports Health",
+    journal: "HSS Journal",
     year: "2025",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/",
@@ -88,9 +88,9 @@ const studies = [
   },
   {
     title: "Therapeutic Peptides in Orthopaedics: Applications, Challenges, and Future Directions",
-    authors: "PMC Research Group",
-    journal: "Journal of the American Academy of Orthopaedic Surgeons",
-    year: "2025",
+    authors: "Rahman OF, Lee SJ, Seeds WA, et al.",
+    journal: "JAAOS Global Research & Reviews",
+    year: "2026",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/",
     summary: "A 2025 orthopaedic review that specifically discusses BPC-157 and TB-500 together as wound-healing peptides acting on complementary molecular signaling networks. The paper notes BPC-157 acts on PI3K/Akt, MAPK, and VEGF pathways while TB-500 targets actin dynamics and integrin-mediated matrix remodeling — two parallel but distinct repair cascades. This is the closest published scientific justification for the Wolverine Stack as a combination, explicitly describing the two compounds' complementary mechanisms in the same research context.",
@@ -110,7 +110,7 @@ const studies = [
     journal: "Vitamins and Hormones",
     year: "2016",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/27450031/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27450738/",
     summary: "Focused review of TB-500's dermal-healing data. Across multiple animal wound-healing models, TB-500 demonstrated 42–61% improvement in healing rate versus controls. The paper documents the actin-sequestration mechanism (releasing G-actin from intracellular pools to enable rapid cytoskeletal remodeling at the wound front) and the anti-fibrotic Ac-SDKP fragment effect. This dermal-healing data is the empirical foundation for TB-500's contribution to the Wolverine Stack's wound and post-surgical applications.",
   },
 ];
@@ -364,7 +364,7 @@ const sections = [
     node: (
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Vasireddi N, Hahamyan H, Salata MJ, et al. Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review. Sports Health. 2025.{" "}
+          Vasireddi N, Hahamyan H, Salata MJ, et al. Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review. HSS J. 2025.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/
           </a>
@@ -389,12 +389,12 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kleinman HK, Sosne G. Thymosin β4 Promotes Dermal Healing. Vitam Horm. 2016;102:53-70.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27450031/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/27450031/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27450738/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/27450738/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Therapeutic Peptides in Orthopaedics: Applications, Challenges, and Future Directions. J Am Acad Orthop Surg. 2025.{" "}
+          Rahman OF, Lee SJ, Seeds WA, et al. Therapeutic Peptides in Orthopaedics: Applications, Challenges, and Future Directions. J Am Acad Orthop Surg Glob Res Rev. 2026.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/
           </a>

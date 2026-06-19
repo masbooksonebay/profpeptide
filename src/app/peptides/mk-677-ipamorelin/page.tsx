@@ -103,7 +103,7 @@ const studies = [
     journal: "Annals of Internal Medicine",
     year: "2008",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/19018347/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18981485/",
     summary: "A randomized controlled trial of MK-677 (25 mg orally once daily) in healthy adults over 60 years old. MK-677 significantly increased IGF-1 and GH levels, lean body mass, and improved functional measures over a 2-year period, with the most notable effect being sustained IGF-1 elevation comparable to young-adult physiological levels. The study also documented the primary side effects: water retention (transient, resolving within the first few weeks), increased fasting glucose, and fatigue. This is the landmark long-term MK-677 human study and the most-cited reference for the compound's GH/IGF-1 elevation profile in a research context.",
   },
   {
@@ -112,7 +112,7 @@ const studies = [
     journal: "Journal of Clinical Endocrinology & Metabolism",
     year: "1998",
     access: "Open Access",
-    url: "https://pubmed.ncbi.nlm.nih.gov/9688394/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/9467534/",
     summary: "A placebo-controlled crossover trial demonstrating that MK-677 (25 mg orally) reversed diet-induced protein catabolism in healthy volunteers by increasing GH pulsatility and sustained IGF-1 elevation. The study established MK-677's oral bioavailability, once-daily dosing adequacy, and dose-dependent GH/IGF-1 elevation profile. It confirmed that MK-677 acts through the ghrelin receptor (GHS-R1a) to amplify endogenous GH pulse frequency and amplitude without significantly elevating cortisol or prolactin at standard research doses, providing the mechanistic and pharmacokinetic foundation for its use in research stacks.",
   },
   {
@@ -139,7 +139,7 @@ const studies = [
     journal: "Journal of Clinical Endocrinology & Metabolism",
     year: "1998",
     access: "Open Access",
-    url: "https://pubmed.ncbi.nlm.nih.gov/9467549/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/9467542/",
     summary: "A short-term controlled trial of MK-677 in obese subjects documenting significant increases in GH secretion, fat-free mass, and basal metabolic rate over 8 weeks. The study demonstrated that MK-677&apos;s oral route does not compromise efficacy: GH secretion increased by 82% and IGF-1 by 52% vs placebo. The paper also documented MK-677&apos;s effect on insulin sensitivity: fasting insulin and glucose increased, consistent with GH counter-regulation of insulin action. This study underpins the metabolic side-effect warnings for MK-677 that apply equally in the MK-677 + Ipamorelin stack context.",
   },
 ];
@@ -543,16 +543,16 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nass R, Pezzoli SS, Oliveri MC, et al. Effects of an oral ghrelin mimetic on body composition and
           clinical outcomes in healthy older adults. Ann Intern Med. 2008;149(9):601-611.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/19018347/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/19018347/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18981485/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/18981485/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Murphy MG, Bach MA, Plotkin D, et al. Oral administration of the growth hormone secretagogue
           MK-677 increases markers of bone turnover in obese and functionally impaired elderly adults.
           J Clin Endocrinol Metab. 1998;84(3):946-952.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9688394/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/9688394/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/10404019/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/10404019/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -573,8 +573,8 @@ const sections = [
           Svensson J, L&ouml;nn L, Jansson JO, et al. Two-month treatment of obese subjects with the oral
           growth hormone (GH) secretagogue MK-677 increases GH secretion, fat-free mass, and energy
           expenditure. J Clin Endocrinol Metab. 1998;83(2):362-369.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9467549/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/9467549/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9467542/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/9467542/
           </a>
         </li>
       </ol>

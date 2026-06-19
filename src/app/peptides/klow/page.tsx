@@ -89,13 +89,13 @@ const studies = [
     summary: "Comprehensive review establishing GHK-Cu's gene-modulating action across thousands of human genes — over 4,000 affected, including reset of expression patterns associated with skin aging, wound healing, and tissue regeneration. The paper synthesizes decades of work demonstrating GHK-Cu's roles in collagen and elastin synthesis, copper transport, anti-inflammatory signaling, and stem-cell support. It is the foundational reference for GHK-Cu's contribution to combination blends like KLOW.",
   },
   {
-    title: "Stable Gastric Pentadecapeptide BPC 157: Robust Vascular Therapy in Ischemia/Reperfusion Injury",
-    authors: "Sikiric P, Hahm KB, Blagaic AB, et al.",
-    journal: "Frontiers in Pharmacology",
-    year: "2018",
-    access: "Open Access",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/",
-    summary: "Reviews BPC-157's mechanism centered on the nitric oxide / VEGFR2 / FAK-paxillin axis — driving angiogenesis, endothelial protection, and rapid vascular network reconstruction at injury sites. BPC-157's vascular action is the primary mechanism by which it complements TB-500's cellular-migration effect in tissue-repair blends like Wolverine, GLOW, and KLOW.",
+    title: "Therapeutic Potential of Pro-Angiogenic BPC157 is Associated with VEGFR2 Activation and Up-Regulation",
+    authors: "Hsieh MJ, Liu HT, Wang CN, et al.",
+    journal: "Journal of Molecular Medicine",
+    year: "2017",
+    access: "Paywalled",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27847966/",
+    summary: "Shows BPC-157's mechanism centered on the nitric oxide / VEGFR2 / FAK-paxillin axis — driving angiogenesis, endothelial protection, and rapid vascular network reconstruction at injury sites. BPC-157's vascular action is the primary mechanism by which it complements TB-500's cellular-migration effect in tissue-repair blends like Wolverine, GLOW, and KLOW.",
   },
   {
     title: "Thymosin β4: a Multi-Functional Regenerative Peptide",
@@ -108,9 +108,9 @@ const studies = [
   },
   {
     title: "α-MSH-Related Peptides: A New Class of Anti-Inflammatory and Immunomodulating Drugs",
-    authors: "Brzoska T, Luger TA, Maaser C, Abels C, Böhm M",
-    journal: "Endocrine Reviews",
-    year: "2008",
+    authors: "Luger TA, Brzoska T",
+    journal: "Annals of the Rheumatic Diseases",
+    year: "2007",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/",
     summary: "Comprehensive review of α-MSH and its C-terminal tripeptide KPV as anti-inflammatory agents. Establishes that most of α-MSH's anti-inflammatory activity is recapitulated by KPV alone — including suppression of pro-inflammatory cytokines, inhibition of NF-κB nuclear translocation, and modulation of adhesion molecule expression — but without the melanocortin-receptor-mediated effects (pigmentation, appetite, immunosuppression) of the full hormone. This decoupling is the rationale for using KPV rather than α-MSH itself in blends like KLOW.",
@@ -368,9 +368,9 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Sikiric P, Hahm KB, Blagaic AB, et al. Stable Gastric Pentadecapeptide BPC 157: Robust Vascular Therapy in Ischemia/Reperfusion Injury. Front Pharmacol. 2018;9:1383.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/
+          Hsieh MJ, Liu HT, Wang CN, et al. Therapeutic potential of pro-angiogenic BPC157 is associated with VEGFR2 activation and up-regulation. J Mol Med (Berl). 2017;95(3):323-333.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27847966/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/27847966/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -380,7 +380,7 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Brzoska T, Luger TA, Maaser C, Abels C, Böhm M. α-MSH-Related Peptides: A New Class of Anti-Inflammatory and Immunomodulating Drugs. Endocr Rev. 2008;29(5):581-602.{" "}
+          Luger TA, Brzoska T. alpha-MSH related peptides: a new class of anti-inflammatory and immunomodulating drugs. Ann Rheum Dis. 2007;66 Suppl 3:iii52-5.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/
           </a>

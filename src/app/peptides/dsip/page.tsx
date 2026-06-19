@@ -441,14 +441,14 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pollard BJ, Pomfrett CJ. Delta sleep-inducing peptide. Eur J Anaesthesiol. 2001;18(7):419-22.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11437868/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/11437868/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11437870/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/11437870/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Graf MV, Kastin AJ, Coy DH, Fischman AJ. Delta-sleep-inducing peptide reduces CRF-induced corticosterone release. Neuroendocrinology. 1985;41(5):353-6.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/2999626/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/2999626/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/2995861/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/2995861/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -471,8 +471,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Larbig W, Gerber WD, Kluck M, Schoenenberger GA. Therapeutic effects of delta-sleep-inducing peptide (DSIP) in patients with chronic, pronounced pain episodes. A clinical pilot study. Eur Neurol. 1984;23(5):372-85.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/6437793/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/6437793/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/6548970/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/6548970/
           </a>
         </li>
       </ol>

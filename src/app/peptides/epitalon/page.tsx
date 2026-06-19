@@ -86,21 +86,12 @@ const studies = [
   },
   {
     title: "Overview of Epitalon — Highly Bioactive Pineal Tetrapeptide with Promising Properties",
-    authors: "Kossoy G, et al.",
+    authors: "Araj SK, Brzezik J, et al.",
     journal: "International Journal of Molecular Sciences / PMC",
     year: "2025",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11943447/",
     summary: "A comprehensive 2025 review synthesizing the full body of Epitalon research across telomere biology, antioxidant activity, lifespan extension, cancer research, and circadian regulation. Key findings documented: Epitalon increased lifespan of Drosophila by up to 16%; increased antioxidant enzyme activities (SOD, glutathione peroxidase) in aging rats; reduced spontaneous tumor incidence and metastases in mice; increased telomere lengths in blood cells of elderly humans aged 60–65 and 75–80; and restored melatonin secretion in aged monkeys and humans. The review also covers Epitalon’s DNA-binding mechanism — specifically its interaction with ATTTC sequences in the promoter region of the telomerase gene — providing a molecular explanation for its telomerase-activating effect.",
-  },
-  {
-    title: "Epitalon: What Can This Peptide Do for Telomere Protection, Aging, and Longevity?",
-    authors: "de Wit H, PhD — Healthspan Research Review",
-    journal: "Healthspan / Gethealthspan.com",
-    year: "2025",
-    access: "Open Access",
-    url: "https://www.gethealthspan.com/research/article/epitalon",
-    summary: "A balanced independent evidence review from a PhD-led research team not affiliated with the Khavinson group. The review identifies Epitalon as a multi-pathway geroprotector that acts on five hallmarks of aging simultaneously: telomere maintenance, epigenetic regulation, oxidative stress resilience, immune recalibration, and circadian rhythm restoration — making it one of the broadest-reaching peptides studied in longevity science. The review is appropriately candid about limitations: most evidence comes from a single research group, large-scale independent clinical trials are absent, and the extraordinary claims (especially lifespan extension) require independent validation before strong conclusions can be drawn. An essential balanced read alongside the primary Khavinson literature.",
   },
 ];
 
@@ -448,7 +439,7 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Kossoy G, et al. Overview of Epitalon — Highly Bioactive Pineal Tetrapeptide with Promising Properties. Int J Mol Sci. 2025.{" "}
+          Araj SK, Brzezik J, et al. Overview of Epitalon — Highly Bioactive Pineal Tetrapeptide with Promising Properties. Int J Mol Sci. 2025.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11943447/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC11943447/
           </a>
@@ -461,8 +452,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khavinson VK. Peptides and Ageing. Neuro Endocrinol Lett. 2002;23(Suppl 3):11-144.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/12624164/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/12624164/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/12374906/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/12374906/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

@@ -64,14 +64,14 @@ const studies = [
     journal: "Gastroenterology",
     year: "2008",
     access: "Open Access",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18242208/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18061177/",
     summary: "Foundational study establishing the mechanism by which KPV exerts its gut anti-inflammatory effect. Demonstrates that KPV is transported into intestinal epithelial cells via the PepT1 (SLC15A1) di/tripeptide transporter and then inhibits NF-κB nuclear translocation intracellularly, reducing production of TNF-α, IL-6, and IL-1β. Critically shows that oral KPV reaches epithelial cells efficiently without needing systemic absorption, providing the mechanistic basis for oral delivery in gut-local inflammation research. This intracellular NF-κB blockade is complementary to BPC-157&apos;s downstream mucosal repair signaling.",
   },
   {
     title: "α-MSH-Related Peptides: A New Class of Anti-Inflammatory and Immunomodulating Drugs",
-    authors: "Brzoska T, Luger TA, Maaser C, Abels C, Böhm M",
-    journal: "Endocrine Reviews",
-    year: "2008",
+    authors: "Luger TA, Brzoska T",
+    journal: "Annals of the Rheumatic Diseases",
+    year: "2007",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/",
     summary: "Comprehensive review establishing that KPV (the C-terminal tripeptide of α-MSH, residues 11&ndash;13) recapitulates most of the anti-inflammatory activity of the full hormone without binding melanocortin receptors. Documents KPV&apos;s inhibition of pro-inflammatory cytokines, NF-κB signaling, and adhesion molecule expression across multiple tissue models including gut epithelium. The receptor-independence means KPV produces anti-inflammatory effects without the pigmentation, appetite, or immunosuppressive effects of α-MSH &mdash; a key practical advantage for combination protocols with BPC-157.",
@@ -86,21 +86,21 @@ const studies = [
     summary: "Comprehensive review of BPC-157&apos;s wound healing and cytoprotective evidence across GI, vascular, and soft-tissue contexts. Documents BPC-157&apos;s activation of the nitric oxide / VEGFR2 / FAK-paxillin axis driving angiogenesis and endothelial protection, alongside its gastric mucosal stabilization properties. For the KPV + BPC-157 pairing, this review establishes the regenerative and vascular half of the mechanism: while KPV suppresses the inflammatory cascade, BPC-157 simultaneously drives mucosal repair, vascular reconstruction, and growth factor upregulation &mdash; targeting the rebuild phase once inflammation is controlled.",
   },
   {
-    title: "BPC 157 Effects on Gut and Mucosal Healing: Ulcer, Fistula, and Inflammatory Models",
+    title: "Novel Cytoprotective Mediator, Stable Gastric Pentadecapeptide BPC 157: Vascular Recruitment and Gastrointestinal Tract Healing",
     authors: "Sikiric P, Seiwerth S, Rucman R, et al.",
     journal: "Current Pharmaceutical Design",
     year: "2018",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/29589522/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29879879/",
     summary: "Review covering BPC-157&apos;s preclinical GI evidence across models of peptic ulcer, Crohn&apos;s-like fistula, anastomotic healing, and inflammatory bowel disease. Documents consistent cytoprotection and mucosal regeneration across oral and parenteral administration routes, with effects on goblet cell recovery, tight junction protein expression, and submucosal vasculature. The breadth of GI healing evidence across different pathological contexts establishes BPC-157 as the regenerative counterpart to KPV&apos;s anti-inflammatory action in gut-focused combination research.",
   },
   {
-    title: "Anti-Inflammatory Properties of α-MSH Peptides and Their Use in Inflammatory Bowel Disease",
-    authors: "Kannengiesser K, Maaser C, Ressmeyer AR, et al.",
+    title: "Melanocortin-Derived Tripeptide KPV Has Anti-Inflammatory Potential in Murine Models of Inflammatory Bowel Disease",
+    authors: "Kannengiesser K, Maaser C, Heidemann J, et al.",
     journal: "Inflammatory Bowel Diseases",
     year: "2008",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18050299/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18092346/",
     summary: "IBD-focused study examining KPV and α-MSH-derived tripeptides in colitis models. Demonstrates that KPV reduces colonic inflammation scores, pro-inflammatory cytokine levels, and mucosal damage in murine colitis, with effects comparable to some pharmacological anti-inflammatory agents in the same model. Supports KPV as an active gut anti-inflammatory agent in its own right, independent of systemic melanocortin signaling &mdash; and provides the IBD-adjacent evidence base most commonly cited alongside BPC-157&apos;s GI healing data when discussing the two-peptide combination.",
   },
 ];
@@ -388,12 +388,12 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dalmasso G, Charrier-Hisamuddin L, Nguyen HT, et al. PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation. Gastroenterology. 2008;134(1):166&ndash;178.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18242208/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/18242208/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18061177/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/18061177/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Brzoska T, Luger TA, Maaser C, Abels C, B&ouml;hm M. &alpha;-MSH-related peptides: a new class of anti-inflammatory and immunomodulating drugs. Endocr Rev. 2008;29(5):581&ndash;602.{" "}
+          Luger TA, Brzoska T. &alpha;-MSH related peptides: a new class of anti-inflammatory and immunomodulating drugs. Ann Rheum Dis. 2007;66 Suppl 3:iii52&ndash;5.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/
           </a>
@@ -405,15 +405,15 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Sikiric P, Seiwerth S, Rucman R, et al. BPC 157: a review of the effects of the novel mediator. Curr Pharm Des. 2018;24(18):1929&ndash;1945.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29589522/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/29589522/
+          Sikiric P, Rucman R, Turkovic B, et al. Novel cytoprotective mediator, stable gastric pentadecapeptide BPC 157: vascular recruitment and gastrointestinal tract healing. Curr Pharm Des. 2018;24(18):1990&ndash;2001.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29879879/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/29879879/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Kannengiesser K, Maaser C, Ressmeyer AR, et al. Anti-inflammatory properties of &alpha;-MSH peptides and their use in inflammatory bowel disease. Inflamm Bowel Dis. 2008;14(10):1411&ndash;1420.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18050299/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/18050299/
+          Kannengiesser K, Maaser C, Heidemann J, et al. Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease. Inflamm Bowel Dis. 2008;14(3):324&ndash;331.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18092346/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/18092346/
           </a>
         </li>
       </ol>
