@@ -136,7 +136,7 @@ const sections = [
       "Selank's research evidence base centers on the Russian non-inferiority trial vs medazepam in GAD patients (Zozulya et al. 2008), animal cognitive performance under stress, neurasthenia (approved Russian indication), BDNF/plasticity studies, and cytokine modulation from tuftsin parent activity. Russian regulatory approval is built on the Zozulya trial.",
     body: [
       "Generalized Anxiety Disorder [6]. Russian non-inferiority clinical trial in 62 GAD patients (Zozulya et al. 2008) showed Selank produced anxiolytic effects comparable to medazepam, with additional antiasthenic and psychostimulant properties. Russian regulatory approval is based on this evidence.",
-      "Cognitive Performance Under Stress [7]. Animal and human studies show Selank preserves or improves cognitive performance in elevated plus maze, light-dark box, open field, and human stress paradigms. Unlike benzodiazepines, no cognitive impairment occurs.",
+      "Cognitive Performance Under Stress [2]. Animal and human studies show Selank preserves or improves cognitive performance in elevated plus maze, light-dark box, open field, and human stress paradigms. Unlike benzodiazepines, no cognitive impairment occurs.",
       "Neurasthenia and Asthenic Syndrome. Approved Russian indication. Standard dosing for 14 days has shown efficacy in neurasthenia without sedating effects.",
       "BDNF and Plasticity [3]. Selank's BDNF effects parallel Semax with stronger anxiolytic phenotype. Combined Semax+Selank protocols leverage complementary mechanisms.",
       "Cytokine Modulation. Tuftsin-derived immunomodulatory activity documented in research. Explored as adjunctive treatment during viral infections, though clinical evidence remains limited.",
@@ -456,14 +456,14 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kozlovskaya MM, Kozlovskii II, Val&apos;dman EA, Seredenin SB. Selank and short peptides of the tuftsin family in the regulation of adaptive behavior in stress. Neurosci Behav Physiol. 2003;33(9):853-60.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/14969416/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/14969416/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/14969422/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/14969422/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Inozemtseva LS, Karpenko EA, Dolotov OV, et al. Intranasal administration of the peptide Selank regulates BDNF expression in the rat hippocampus in vivo. Dokl Biol Sci. 2008;421:241-3.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18841779/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/18841779/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18841804/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/18841804/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -473,21 +473,15 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Kolomin T, Shadrina M, Slominsky P, Limborska S. A new generation of drugs: synthetic peptides based on natural regulatory peptides. Neuroscience and Medicine. 2013;4:223-252.{" "}
-          <a href="https://www.scirp.org/journal/paperinformation.aspx?paperid=42089" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://www.scirp.org/journal/paperinformation.aspx?paperid=42089
+          Uchakina ON, Uchakin PN, Myasoedov NF, et al. Immunomodulatory effects of selank in patients with anxiety-asthenic disorders. Zh Nevrol Psikhiatr Im S S Korsakova. 2008;108(5):71-5.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18577961/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/18577961/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Zozulya AA, Neznamov GG, Siuniakov TS, et al. Efficacy and possible mechanisms of action of a new peptide anxiolytic selank in the therapy of generalized anxiety disorders and neurasthenia. Zh Nevrol Psikhiatr Im S S Korsakova. 2008;108(4):38-48.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18454097/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/18454097/
-          </a>
-        </li>
-        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Volchegorskii IA, Miroshnichenko IY, Rassokhina LM, Faizullin RM. Anxiolytic and antidepressant action of selank in alloxan diabetes-induced cognitive deficit. Bull Exp Biol Med. 2017;164(2):137-141.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29177900/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/29177900/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18454096/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/18454096/
           </a>
         </li>
       </ol>

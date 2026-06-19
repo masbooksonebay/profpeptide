@@ -70,39 +70,30 @@ const faqs = [
 const studies = [
   {
     title: "Optimizing IGF-I for Skeletal Muscle Therapeutics",
-    authors: "Rodino-Klapac LR, Mendell JR, Sahenk Z",
-    journal: "PMC / Molecular Therapy",
-    year: "2015",
+    authors: "Philippou A, Barton ER",
+    journal: "PMC / Growth Hormone & IGF Research",
+    year: "2014",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4665094/",
     summary: "A comprehensive review of IGF-1 and its analogs for muscle therapeutic applications, directly relevant to understanding IGF-1 LR3’s research context. The paper examines how structural modifications to native IGF-1 — including those that produced IGF-1 LR3 — affect its biological activity, binding protein interactions, and therapeutic potential. It covers the PI3K/Akt/mTOR signaling cascade that drives muscle protein synthesis and explains why reduced binding to IGF-binding proteins (IGFBPs) — IGF-1 LR3’s key modification — produces more sustained and potent anabolic signaling than native IGF-1.",
   },
   {
-    title: "IGF-1 LR3 — Properties, Mechanisms, and Applications in Muscle Physiology",
-    authors: "The Peptide University Research Team",
-    journal: "The Peptide University",
-    year: "2026",
-    access: "Open Access",
-    url: "https://thepeptideuniversity.com/blogs/articles/igf-1-lr3-properties-mechanisms-and-applications-in-muscle-physiology",
-    summary: "A detailed mechanistic overview of IGF-1 LR3’s action in skeletal muscle. The paper explains how IGF-1 LR3 activates the IGF-1 receptor (IGF-1R), triggering two key downstream cascades — the PI3K/Akt/mTOR pathway (driving protein synthesis and hypertrophy) and the MAPK/ERK pathway (driving cell proliferation and differentiation). It also covers IGF-1 LR3’s nutrient partitioning effects — preferentially directing glucose and amino acids toward muscle tissue rather than fat — and its role in satellite cell activation critical for muscle repair.",
+    title: "Novel Recombinant Fusion Protein Analogues of IGF-I — Binding-Protein and Receptor Binding Determine Potency",
+    authors: "Francis GL, Ross M, Ballard FJ, et al.",
+    journal: "Journal of Molecular Endocrinology",
+    year: "1992",
+    access: "Paywalled",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1378742/",
+    summary: "The foundational characterization of recombinant IGF-I analogues, including Long R3 IGF-1. It shows that reducing IGF-1's affinity for its binding proteins (IGFBPs) — the defining modification in IGF-1 LR3 — markedly increases biological potency, because more peptide stays free to bind the IGF-1 receptor. This binding-protein evasion is the mechanistic basis for IGF-1 LR3's more sustained, potent anabolic signaling versus native IGF-1.",
   },
   {
-    title: "IGF-1 and Long Chain IGF (LR3IGF-1) — Doping Biology and Pharmacology",
-    authors: "Seppälä T — Finnish Center for Integrity in Sports (FINCIS)",
-    journal: "Dopinglinkki",
-    year: "2019",
-    access: "Open Access",
-    url: "https://dopinglinkki.fi/en/info-bank/doping-substances/insulin-like-growth-factor-1-igf-1-and-long-chain-igf-ir3igf-1/",
-    summary: "A clear-eyed analysis of IGF-1 LR3 from a sports medicine and anti-doping perspective. The paper explains how LR3IGF-1 is physiologically stronger and longer-lasting than native IGF-1, why it is banned in competitive sports, and what the known adverse effects include — particularly hypoglycemia (low blood sugar) from its insulin-like activity. It notes that the risk of adverse effects increases significantly with doses above 60–80 µg/kg/day, and that most adverse effects parallel those of native IGF-1. An important resource for understanding why WADA prohibits IGF-1 LR3.",
-  },
-  {
-    title: "Emerging Anabolic and Regenerative Peptides in Athletic Body Recomposition — IGF-1 LR3 Section",
-    authors: "Genesis Publications Research Group",
-    journal: "Journal of Strength and Conditioning Research",
-    year: "2025",
-    access: "Open Access",
-    url: "https://www.genesispub.org/jscr/emerging-anabolic-and-regenerative-peptides-in-athletic-body-re-composition-and-bodybuilding-mechanisms-of-action-dosing-strategies-and-evidence-review",
-    summary: "A 2025 evidence review covering IGF-1 LR3 in the context of performance peptides. The paper confirms IGF-1 LR3’s well-defined molecular mechanism — acting as a powerful anabolic agent through IGF-1R/IRS1/PI3K/Akt cascade activation — while being direct about the evidence gap: no human clinical trials exist, all efficacy data comes from preclinical models, and the compound carries real metabolic and proliferative risks. The review also discusses typical research protocols (20–100 µg/day, 4–6 week cycles with rest periods to prevent receptor desensitization) and notes that IGF-1 LR3 is prohibited by WADA and not FDA approved for human use.",
+    title: "Use of Growth Hormone, IGF-I, and Insulin for Anabolic Purposes — Pharmacological Basis, Detection, and Adverse Effects",
+    authors: "Anderson LJ, Tamayose JM, Garcia JM",
+    journal: "Molecular and Cellular Endocrinology",
+    year: "2018",
+    access: "Paywalled",
+    url: "https://pubmed.ncbi.nlm.nih.gov/28606865/",
+    summary: "A peer-reviewed pharmacological review of growth hormone, IGF-I, and insulin used as anabolic agents in sport. It explains why IGF-I — including long-acting analogues — is prohibited by anti-doping authorities, how it is detected, and its adverse-effect profile, notably hypoglycemia from IGF-I's insulin-like activity. Provides the evidence base for IGF-1 LR3's risk and regulatory status.",
   },
 ];
 
@@ -451,9 +442,9 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Florini JR, Ewton DZ, Coolican SA. Growth hormone and the insulin-like growth factor system in myogenesis. Annu Rev Physiol. 1991;53:201-16.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/2042959/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/2042959/
+          Florini JR, Ewton DZ, Coolican SA. Growth hormone and the insulin-like growth factor system in myogenesis. Endocr Rev. 1996;17(5):481-517.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/8897022/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/8897022/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -476,8 +467,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bikle DD, Tahimic C, Chang W, et al. Role of IGF-I signaling in muscle bone interactions. Bone. 2015;80:79-88.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4665094/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pmc.ncbi.nlm.nih.gov/articles/PMC4665094/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26453498/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/26453498/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

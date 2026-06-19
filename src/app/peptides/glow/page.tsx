@@ -93,13 +93,13 @@ const studies = [
     summary: "Skin-focused review of GHK and GHK-Cu mechanism. Establishes the copper tripeptide's primary role in dermal collagen and elastin synthesis, lysyl-oxidase cross-linking, extracellular matrix remodeling, and antioxidant defense. The key reference for GLOW's skin-quality and anti-aging use case.",
   },
   {
-    title: "Stable Gastric Pentadecapeptide BPC 157: Robust Vascular Therapy in Ischemia/Reperfusion Injury",
-    authors: "Sikiric P, Hahm KB, Blagaic AB, et al.",
-    journal: "Frontiers in Pharmacology",
-    year: "2018",
-    access: "Open Access",
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/",
-    summary: "Reviews BPC-157's mechanism centered on the nitric oxide / VEGFR2 / FAK-paxillin axis — driving angiogenesis, endothelial protection, and rapid vascular network reconstruction at injury sites. BPC-157's vascular action is the primary mechanism by which it complements TB-500's cellular-migration effect in GLOW.",
+    title: "Therapeutic Potential of Pro-Angiogenic BPC157 is Associated with VEGFR2 Activation and Up-Regulation",
+    authors: "Hsieh MJ, Liu HT, Wang CN, et al.",
+    journal: "Journal of Molecular Medicine",
+    year: "2017",
+    access: "Paywalled",
+    url: "https://pubmed.ncbi.nlm.nih.gov/27847966/",
+    summary: "Shows BPC-157's mechanism centered on the nitric oxide / VEGFR2 / FAK-paxillin axis — driving angiogenesis, endothelial protection, and rapid vascular network reconstruction at injury sites. BPC-157's vascular action is the primary mechanism by which it complements TB-500's cellular-migration effect in GLOW.",
   },
   {
     title: "Thymosin β4: a Multi-Functional Regenerative Peptide",
@@ -388,9 +388,9 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Sikiric P, Hahm KB, Blagaic AB, et al. Stable Gastric Pentadecapeptide BPC 157, Robust Vascular Therapy in Ischemia/Reperfusion Injury. Front Pharmacol. 2018;9:1383.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/
+          Hsieh MJ, Liu HT, Wang CN, et al. Therapeutic potential of pro-angiogenic BPC157 is associated with VEGFR2 activation and up-regulation. J Mol Med (Berl). 2017;95(3):323-333.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27847966/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/27847966/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -401,8 +401,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kleinman HK, Sosne G. Thymosin β4 Promotes Dermal Healing. Vitam Horm. 2016;102:53-70.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27450031/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/27450031/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27450738/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/27450738/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

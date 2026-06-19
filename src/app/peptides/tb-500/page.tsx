@@ -72,7 +72,7 @@ const studies = [
   {
     title: "Thymosin Beta4 Accelerates Wound Healing",
     authors: "Malinda KM, Goldstein AL, Kleinman HK",
-    journal: "FASEB Journal / PubMed",
+    journal: "Journal of Investigative Dermatology / PubMed",
     year: "1999",
     access: "Abstract open",
     url: "https://pubmed.ncbi.nlm.nih.gov/10469335/",
@@ -90,7 +90,7 @@ const studies = [
   {
     title: "Muscle Injury-Induced Thymosin Beta-4 Acts as a Chemoattractant for Myoblasts",
     authors: "Hara T, et al.",
-    journal: "Journal of Cell Science / PubMed",
+    journal: "Journal of Biochemistry / PubMed",
     year: "2011",
     access: "Open Access",
     url: "https://pubmed.ncbi.nlm.nih.gov/20880960/",
@@ -99,7 +99,7 @@ const studies = [
   {
     title: "Utilizing Developmentally Essential Secreted Peptides Such as Thymosin Beta-4 to Remind Adult Organs of Their Embryonic State — New Directions in Anti-Aging Regenerative Therapies",
     authors: "Maar K, et al.",
-    journal: "PMC / International Journal of Molecular Sciences",
+    journal: "PMC / Cells",
     year: "2021",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8228050/",
@@ -475,8 +475,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kleinman HK, Sosne G. Thymosin β4 Promotes Dermal Healing. Vitam Horm. 2016;102:53-70.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27450031/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/27450031/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27450738/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/27450738/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -487,8 +487,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sosne G, Qiu P, Kurpakus-Wheater M, Wheater M. Thymosin beta-4 and corneal wound healing: visions of the future. Ann N Y Acad Sci. 2010;1194:190-8.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20536470/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/20536470/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20536468/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/20536468/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

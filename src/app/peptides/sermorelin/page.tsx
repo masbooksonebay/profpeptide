@@ -81,7 +81,7 @@ const studies = [
     journal: "Journal of Clinical Endocrinology & Metabolism",
     year: "1992",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/1347601/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1379256/",
     summary: "One of the foundational human studies of sermorelin in elderly men ages 60–78. High-dose sermorelin elevated mean 24-hour GH levels, peak GH amplitude, and GH area under the curve. Strikingly, elderly men who had lower baseline IGF-1 levels than young controls saw IGF-1 rise toward youthful levels with sermorelin treatment — and these elevations persisted above baseline for two weeks after stopping treatment, suggesting lasting pituitary sensitization.",
   },
   {
@@ -95,9 +95,9 @@ const studies = [
   },
   {
     title: "Beyond the Androgen Receptor — Growth Hormone Secretagogues in the Management of Hypogonadal Males",
-    authors: "Sigalos JT, Pastuszak AW",
-    journal: "PMC / Sexual Medicine Reviews",
-    year: "2018",
+    authors: "Sinha DK, Balasubramanian A, Tatem AJ, et al.",
+    journal: "PMC / Translational Andrology and Urology",
+    year: "2020",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7108996/",
     summary: "A clinical review covering sermorelin's role in treating hypogonadal males with metabolic syndrome. The paper documents a unique finding from sermorelin research: unlike other GH secretagogues which work via the ghrelin pathway, sermorelin uniquely stimulates FSH and LH release — implying a potential role in supporting endogenous testosterone production alongside GH stimulation.",
@@ -124,9 +124,9 @@ const sections = [
     intro:
       "Sermorelin's research evidence base spans pediatric GH deficiency (original FDA-approval indication as Geref), adult GHRH replacement, cognitive effects in older adults, body composition, and sleep quality. Sermorelin has the longest FDA safety record of any GHRH analog discussed in research peptide contexts — most controlled human data predates the Geref discontinuation in 2008.",
     body: [
-      "Pediatric Growth Hormone Deficiency [4]. Original FDA approval indication. Geref (sermorelin) was used for both diagnosis and treatment of GH deficiency in children with idiopathic short stature. Demonstrated growth velocity improvements in pediatric trials.",
-      "Adult GHRH Replacement [5]. Studies in older adults show sermorelin restores pulsatile GH/IGF-1 patterns toward youthful levels. A randomized placebo-controlled trial in older men (Vittone et al., 1997) showed measurable improvements in body composition and lipid profile.",
-      "Cognitive Effects in Older Adults [5]. Baker et al. (2012) studied a related GHRH analog in older adults with mild cognitive impairment, with improvements in cognitive function reported.",
+      "Pediatric Growth Hormone Deficiency [2]. Original FDA approval indication. Geref (sermorelin) was used for both diagnosis and treatment of GH deficiency in children with idiopathic short stature. Demonstrated growth velocity improvements in pediatric trials.",
+      "Adult GHRH Replacement [4]. Studies in older adults show sermorelin restores pulsatile GH/IGF-1 patterns toward youthful levels. A randomized placebo-controlled trial in older men (Vittone et al., 1997) showed measurable improvements in body composition and lipid profile.",
+      "Cognitive Effects in Older Adults [4]. Baker et al. (2012) studied a related GHRH analog in older adults with mild cognitive impairment, with improvements in cognitive function reported.",
       "Body Composition. Sermorelin therapy in adults produces gradual increases in lean muscle mass and decreases in body fat over 4–6 month protocols. Effects are modest compared to direct HGH but with cleaner safety profile.",
       "Sleep Quality. Most subjective effects of sermorelin therapy involve improved sleep quality and recovery, likely tied to alignment of dosing with natural GH circadian peaks.",
     ],
@@ -446,8 +446,8 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Walker RF. Sermorelin: a better approach to management of adult-onset growth hormone insufficiency? Clin Interv Aging. 2006;1(4):307-8.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2682417/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pmc.ncbi.nlm.nih.gov/articles/PMC2682417/
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2699646/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pmc.ncbi.nlm.nih.gov/articles/PMC2699646/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -458,14 +458,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khorram O, Laughlin GA, Yen SS. Endocrine and metabolic effects of long-term administration of [Nle27]growth hormone-releasing hormone-(1-29)-NH2 in older men and women. J Clin Endocrinol Metab. 1997;82(5):1472-9.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9141537/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/9141537/
-          </a>
-        </li>
-        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Aimaretti G, Bellone S, Bellone J, et al. Short-term therapy with growth hormone (GH)-releasing hormone in children with partial GH insufficiency. Horm Res. 1995;43(3):113-20.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/7782059/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/7782059/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9141536/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/9141536/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

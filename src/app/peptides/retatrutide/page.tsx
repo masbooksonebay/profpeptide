@@ -511,12 +511,12 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Coskun T, Urva S, Roell WC, et al. LY3437943, a novel triple glucagon, GIP, and GLP-1 receptor agonist for glycemic control and weight loss. Cell Metab. 2022;34(9):1234-1247.{" "}
           <a
-            href="https://pubmed.ncbi.nlm.nih.gov/35987205/"
+            href="https://pubmed.ncbi.nlm.nih.gov/35985340/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#0891b2] hover:underline break-words"
           >
-            https://pubmed.ncbi.nlm.nih.gov/35987205/
+            https://pubmed.ncbi.nlm.nih.gov/35985340/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -547,12 +547,12 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sanyal AJ, Kaplan LM, Frías JP, et al. Retatrutide for adults with metabolic dysfunction-associated steatotic liver disease: a Phase 2 trial. Nat Med. 2024;30:1235-1244.{" "}
           <a
-            href="https://pubmed.ncbi.nlm.nih.gov/38509328/"
+            href="https://pubmed.ncbi.nlm.nih.gov/38858523/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#0891b2] hover:underline break-words"
           >
-            https://pubmed.ncbi.nlm.nih.gov/38509328/
+            https://pubmed.ncbi.nlm.nih.gov/38858523/
           </a>
         </li>
       </ol>
