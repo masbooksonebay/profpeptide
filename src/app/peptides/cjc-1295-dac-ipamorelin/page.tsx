@@ -97,7 +97,7 @@ const studies = [
     journal: "Journal of Clinical Endocrinology & Metabolism",
     year: "2006",
     access: "Open Access",
-    url: "https://pubmed.ncbi.nlm.nih.gov/16352683/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/17018654/",
     summary: "A companion analysis of the Teichman 2006 dataset examining GH pulsatility during sustained CJC-1295 DAC stimulation. The paper found that spontaneous GH pulses are detectable throughout the inter-dose interval, though the amplitude of basal GH is persistently elevated. This nuance is important for the DAC vs no-DAC comparison: the DAC form does not eliminate pulsatility entirely, but it raises the &ldquo;floor&rdquo; of baseline GH substantially, which changes the physiology of the GH axis compared to the discrete spikes produced by no-DAC / Modified GRF 1-29 dosing.",
   },
   {
@@ -119,12 +119,12 @@ const studies = [
     summary: "A comprehensive review of the GH secretagogue class providing clinical context for both DAC and no-DAC CJC-1295 + Ipamorelin protocols. The review covers the mechanistic evolution from native GHRH and ghrelin to long-acting analogs, documenting the rationale for dual-pathway stimulation and addressing why sustained versus pulsatile GH profiles produce different clinical trade-offs. It also contextualizes why the combination is considered safer than direct HGH administration — preserving endogenous feedback even with sustained stimulation.",
   },
   {
-    title: "GHRH + GHRP Synergy: Co-Administration of GHRH Analogs with GHSR Agonists",
-    authors: "Jørgensen JOL, et al.",
-    journal: "Growth Hormone & IGF Research",
-    year: "2001",
+    title: "GH-Releasing Peptide Stimulates GH Release in Normal Men and Acts Synergistically with GH-Releasing Hormone",
+    authors: "Bowers CY, Reynolds GA, Durham D, et al.",
+    journal: "Journal of Clinical Endocrinology & Metabolism",
+    year: "1990",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/11420165/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/2108187/",
     summary: "Mechanistic study demonstrating supra-additive GH release when GHRH analogs and GHSR (ghrelin receptor) agonists are co-administered — the scientific foundation for combining any GHRH analog with a GHRP like Ipamorelin. Co-administration produced 2&ndash;4&times; greater GH area under the curve compared to either compound alone. In the context of the DAC stack, this synergy persists even without half-life synchronization: the sustained GHRHR priming from CJC-1295 DAC potentiates each Ipamorelin pulse, while Ipamorelin&apos;s GHS-R1a activation adds to the elevated GH floor.",
   },
 ];
@@ -515,8 +515,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ionescu M, Frohman LA. Pulsatile secretion of growth hormone (GH) persists during continuous stimulation by CJC-1295, a long-acting GH-releasing hormone analog. J Clin Endocrinol Metab. 2006;91(12):4792-4797.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16352683/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/16352683/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17018654/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/17018654/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -532,9 +532,9 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Jørgensen JOL, et al. GHRH + GHRP Synergy: Co-Administration of GHRH Analogs with GHSR Agonists. Growth Horm IGF Res. 2001.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11420165/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/11420165/
+          Bowers CY, Reynolds GA, Durham D, et al. Growth hormone (GH)-releasing peptide stimulates GH release in normal men and acts synergistically with GH-releasing hormone. J Clin Endocrinol Metab. 1990;70(4):975-82.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/2108187/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/2108187/
           </a>
         </li>
       </ol>

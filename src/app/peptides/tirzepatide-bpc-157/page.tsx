@@ -106,7 +106,7 @@ const studies = [
   {
     title: "Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review",
     authors: "Vasireddi N, Hahamyan H, Salata MJ, et al.",
-    journal: "Sports Health",
+    journal: "HSS Journal",
     year: "2025",
     access: "Open Access",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/",
@@ -116,10 +116,10 @@ const studies = [
   {
     title: "Dual GIP and GLP-1 Receptor Agonism: Tirzepatide&apos;s Mechanism and Body Composition Effects",
     authors: "Nauck MA, D&apos;Alessio DA",
-    journal: "Cell Metabolism",
+    journal: "Cardiovascular Diabetology",
     year: "2022",
     access: "Open Access",
-    url: "https://pubmed.ncbi.nlm.nih.gov/35907393/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/36050763/",
     summary:
       "Review of tirzepatide&apos;s dual receptor mechanism, body composition effects, and differentiation from GLP-1 monotherapy. The paper details how GIP receptor agonism contributes to adipose-tissue insulin sensitization and possibly to direct adipocyte effects beyond what GLP-1 agonism alone achieves, explaining the superior weight loss observed with tirzepatide vs semaglutide. The lean-mass loss data and the context for combining tirzepatide with anabolic or tissue-protective co-peptides are discussed in terms of total body composition remodeling goals.",
   },
@@ -445,15 +445,15 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Vasireddi N, Hahamyan H, Salata MJ, et al. Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review. Sports Health. 2025.{" "}
+          Vasireddi N, Hahamyan H, Salata MJ, et al. Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review. HSS J. 2025.{" "}
           <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nauck MA, D&apos;Alessio DA. Tirzepatide, a dual GIP/GLP-1 receptor co-agonist for the treatment of type 2 diabetes with unmatched effectiveness regrading glycaemic control and body weight reduction. Cardiovasc Diabetol. 2022;21(1):169.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/35907393/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/35907393/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/36050763/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/36050763/
           </a>
         </li>
       </ol>

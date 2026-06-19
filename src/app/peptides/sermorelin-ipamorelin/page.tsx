@@ -81,12 +81,12 @@ const studies = [
     summary: "The landmark selectivity study for Ipamorelin — the GHRP component of this stack. Established that Ipamorelin produces robust GH release with approximately 90% less cortisol elevation and no meaningful ACTH or prolactin response compared to older GHRPs (GHRP-2, GHRP-6, Hexarelin). This clean hormonal profile is exactly why Ipamorelin was selected as the GHS-R1a partner for both Sermorelin and CJC-1295 stacks — it adds GH pulse triggering through the ghrelin receptor without the cortisol and appetite side effects of earlier GHRPs.",
   },
   {
-    title: "GHRH + GHRP Synergy: Co-Administration of GHRH Analogs with GHSR Agonists",
-    authors: "Jørgensen JOL, et al.",
-    journal: "Growth Hormone & IGF Research",
-    year: "2001",
+    title: "GH-Releasing Peptide Stimulates GH Release in Normal Men and Acts Synergistically with GH-Releasing Hormone",
+    authors: "Bowers CY, Reynolds GA, Durham D, et al.",
+    journal: "Journal of Clinical Endocrinology & Metabolism",
+    year: "1990",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/11420165/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/2108187/",
     summary: "Mechanistic study demonstrating supra-additive GH release when GHRH analogs and GHSR (ghrelin receptor) agonists are co-administered — the scientific foundation for the Sermorelin + Ipamorelin stack&apos;s design. Co-administration produced 2–4× greater GH area under the curve compared to either compound alone. The cAMP pathway (Sermorelin / GHRHR) and the calcium/PKC pathway (Ipamorelin / GHS-R1a) converge at the somatotroph, where simultaneous activation amplifies the secretory response beyond what either signal produces alone.",
   },
   {
@@ -99,21 +99,21 @@ const studies = [
     summary: "A comprehensive review of the GH secretagogue class providing clinical context for the Sermorelin + Ipamorelin combination. Covers the evolution from native GHRH to stable analogs like Sermorelin (GHRH 1-29), documenting how the dual-pathway approach became the preferred research protocol for GH axis optimization. Also addresses why secretagogue stacks are considered preferable to direct HGH — stimulating endogenous production preserves natural feedback mechanisms and avoids supraphysiological IGF-1 spikes.",
   },
   {
-    title: "Sermorelin: A Synthetic Analog of Growth Hormone–Releasing Factor",
+    title: "Sermorelin: A Better Approach to Management of Adult-Onset Growth Hormone Insufficiency",
     authors: "Walker RF",
     journal: "Clinical Interventions in Aging",
     year: "2006",
     access: "Open Access",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18046879/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18046908/",
     summary: "A clinical review of Sermorelin&apos;s mechanism, pharmacology, and historical use as Geref. Documents Sermorelin&apos;s FDA-recognized clinical history for GH deficiency diagnostics and pediatric GH deficiency treatment, and its availability through compounding pharmacies for adult use — the regulatory foundation for positioning it as the most accessible GHRH analog. The paper establishes the short half-life (~10–20 minutes), dose-dependent GH stimulation, and the preservation of pituitary feedback regulation that distinguishes Sermorelin from longer-acting GHRH analogs.",
   },
   {
-    title: "Effects of Growth Hormone-Releasing Hormone on Sleep and Brain Activity in Humans",
+    title: "Effects of Growth Hormone-Releasing Hormone and Somatostatin on Sleep EEG and Nocturnal Hormone Secretion in Humans",
     authors: "Steiger A, Guldner J, Hemmeter U, et al.",
-    journal: "American Journal of Physiology",
+    journal: "Neuroendocrinology",
     year: "1992",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/1415528/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/1361964/",
     summary: "Human study establishing the connection between GHRH administration and enhanced slow-wave sleep — the mechanistic basis for pre-bed dosing of GHRH analogs like Sermorelin. GHRH administration increased slow-wave sleep duration and reinforced the natural nocturnal GH pulse. This study underpins the pre-bed dosing protocol used across all GHRH analog research stacks: timing the injection to synchronize with the body&apos;s sleep-onset GH surge produces the largest amplitude GH pulse and drives the sleep-quality improvements that are among the earliest subjective effects reported by researchers.",
   },
 ];
@@ -485,9 +485,9 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Jørgensen JOL, et al. GHRH + GHRP Synergy: Co-Administration of GHRH Analogs with GHSR Agonists. Growth Horm IGF Res. 2001.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11420165/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/11420165/
+          Bowers CY, Reynolds GA, Durham D, et al. Growth hormone (GH)-releasing peptide stimulates GH release in normal men and acts synergistically with GH-releasing hormone. J Clin Endocrinol Metab. 1990;70(4):975-82.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/2108187/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/2108187/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -498,14 +498,14 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Walker RF. Sermorelin: a better approach to management of adult-onset growth hormone insufficiency? Clin Interv Aging. 2006;1(4):307-308.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18046879/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/18046879/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18046908/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/18046908/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Steiger A, Guldner J, Hemmeter U, et al. Effects of growth hormone-releasing hormone and somatostatin on sleep EEG and nocturnal hormone secretion in male controls. Neuroendocrinology. 1992;56(2):211-220.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/1415528/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/1415528/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/1361964/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/1361964/
           </a>
         </li>
       </ol>

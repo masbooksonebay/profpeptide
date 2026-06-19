@@ -75,7 +75,7 @@ const faqs = [
 const studies = [
   {
     title: "Prolonged Stimulation of Growth Hormone and IGF-I Secretion by CJC-1295, a Long-Acting Analog of GH-Releasing Hormone, in Healthy Adults",
-    authors: "Ionescu M, Frohman LA",
+    authors: "Teichman SL, Neale A, Lawrence B, et al.",
     journal: "Journal of Clinical Endocrinology & Metabolism / PubMed",
     year: "2006",
     access: "Abstract open",
@@ -84,9 +84,9 @@ const studies = [
   },
   {
     title: "Pulsatile Secretion of Growth Hormone Persists During Continuous Stimulation by CJC-1295",
-    authors: "Jetté L, Harvey L, Eugeni K, Levens N",
+    authors: "Ionescu M, Frohman LA",
     journal: "Journal of Clinical Endocrinology & Metabolism / PubMed",
-    year: "2005",
+    year: "2006",
     access: "Abstract open",
     url: "https://pubmed.ncbi.nlm.nih.gov/17018654/",
     summary: "A critical mechanistic study examining whether CJC-1295’s prolonged GHRH stimulation disrupts the natural pulsatile pattern of GH secretion — a key safety concern with continuous GH axis stimulation. The study found that CJC-1295 increased both trough and mean GH secretion and elevated IGF-1, while preserving natural GH pulsatility. The maintenance of pulsatile GH release is significant because pulsatile secretion is considered important for many of GH’s physiological effects.",
@@ -477,8 +477,8 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sackmann-Sala L, Ding J, Frohman LA, Kopchick JJ. Activation of the GH/IGF-1 axis by CJC-1295, a long-acting GHRH analog, results in serum protein profile changes in normal adult subjects. Growth Horm IGF Res. 2009;19(6):471-7.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/19467607/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/19467607/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/19386527/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/19386527/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

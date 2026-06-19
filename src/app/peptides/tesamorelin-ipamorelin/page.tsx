@@ -72,21 +72,21 @@ const faqs = [
 
 const studies = [
   {
-    title: "Effects of Tesamorelin on Visceral Fat and Liver Fat in HIV-Infected Patients with Abdominal Fat Accumulation",
+    title: "Metabolic Effects of a Growth Hormone-Releasing Factor in Patients with HIV",
     authors: "Falutz J, Allas S, Blot K, et al.",
     journal: "New England Journal of Medicine",
-    year: "2010",
+    year: "2007",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/20818854/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18057338/",
     summary: "One of the pivotal Phase 3 RCTs supporting Tesamorelin&apos;s FDA approval as Egrifta. Tesamorelin 2 mg SC once daily produced significant visceral adipose tissue (VAT) reduction vs placebo over 26 weeks, with accompanying IGF-1 elevation. Provides the strongest human RCT evidence base for Tesamorelin&apos;s VAT-reduction mechanism — the distinguishing clinical angle for this blend versus other GH secretagogue stacks. Reported adverse events included arthralgia, peripheral edema, and transient glucose effects, establishing the safety reference class for this component.",
   },
   {
     title: "Tesamorelin, a GHRH Analog, Reduces Visceral Fat and IGF-1 in HIV-Associated Lipodystrophy: Earlier Phase Data",
     authors: "Falutz J, Allas S, Mamputu J-C, et al.",
-    journal: "Journal of Acquired Immune Deficiency Syndromes",
+    journal: "AIDS",
     year: "2008",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/18317447/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/18690162/",
     summary: "Phase 2 data establishing Tesamorelin&apos;s dose-dependent VAT reduction and IGF-1 elevation in HIV-associated lipodystrophy — the mechanistic foundation for the FDA approval and the primary human evidence for Tesamorelin&apos;s GHRH-receptor-driven body-composition effect. Confirms that once-daily SC dosing produces pulsatile GH release with downstream metabolic effects on visceral fat distinct from direct HGH administration.",
   },
   {
@@ -108,12 +108,12 @@ const studies = [
     summary: "A comprehensive review of the GH secretagogue class providing clinical context for GHRH analog + GHRP combination strategies. The paper covers the mechanistic rationale for dual-pathway GH-axis activation, documenting how simultaneous GHRH receptor (cAMP/PKA) and GHS-R1a (calcium/PKC) activation produces supra-additive GH release and why this approach is preferred over direct HGH administration for preserving physiological feedback regulation. Tesamorelin is discussed as the most clinically validated GHRH analog for body-composition endpoints.",
   },
   {
-    title: "GHRH + GHRP Synergy: Co-Administration of GHRH Analogs with GHSR Agonists",
-    authors: "Jørgensen JOL, et al.",
-    journal: "Growth Hormone & IGF Research",
-    year: "2001",
+    title: "GH-Releasing Peptide Stimulates GH Release in Normal Men and Acts Synergistically with GH-Releasing Hormone",
+    authors: "Bowers CY, Reynolds GA, Durham D, et al.",
+    journal: "Journal of Clinical Endocrinology & Metabolism",
+    year: "1990",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/11420165/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/2108187/",
     summary: "Mechanistic study demonstrating supra-additive GH release when GHRH analogs and GHSR (ghrelin receptor) agonists are co-administered — the scientific foundation for any GHRH analog + GHRP blend including Tesamorelin + Ipamorelin. Co-administration produced 2–4× greater GH area under the curve compared to either compound alone. The cAMP pathway (Tesamorelin / GHRHR) and the calcium/PKC pathway (Ipamorelin / GHS-R1a) converge at the somatotroph, where simultaneous activation amplifies the secretory response beyond what either signal produces alone.",
   },
 ];
@@ -486,15 +486,15 @@ const sections = [
     node: (
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Falutz J, Allas S, Blot K, et al. Metabolic effects of a growth hormone-releasing factor in patients with HIV. N Engl J Med. 2010;363(8):714-725.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20818854/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/20818854/
+          Falutz J, Allas S, Blot K, et al. Metabolic effects of a growth hormone-releasing factor in patients with HIV. N Engl J Med. 2007;357(23):2359-70.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18057338/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/18057338/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Falutz J, Allas S, Mamputu J-C, et al. Long-term safety and effects of tesamorelin, a growth hormone-releasing factor analogue, in HIV patients with abdominal fat accumulation. AIDS. 2008;22(14):1719-1728.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18317447/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/18317447/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18690162/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/18690162/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -510,9 +510,9 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Jørgensen JOL, et al. GHRH + GHRP Synergy: Co-Administration of GHRH Analogs with GHSR Agonists. Growth Horm IGF Res. 2001.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11420165/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/11420165/
+          Bowers CY, Reynolds GA, Durham D, et al. Growth hormone (GH)-releasing peptide stimulates GH release in normal men and acts synergistically with GH-releasing hormone. J Clin Endocrinol Metab. 1990;70(4):975-82.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/2108187/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/2108187/
           </a>
         </li>
       </ol>

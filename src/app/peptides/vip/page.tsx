@@ -63,9 +63,9 @@ const studies = [
   },
   {
     title: "Immunomodulation of Innate Immune Responses by VIP: Therapeutic Potential in Inflammatory Disease",
-    authors: "PMID 19604262",
-    journal: "PubMed",
-    year: "Review",
+    authors: "Smalley SG, Barrow PA, Foster N, et al.",
+    journal: "Clinical & Experimental Immunology",
+    year: "2009",
     access: "Paywalled",
     url: "https://pubmed.ncbi.nlm.nih.gov/19604262/",
     summary: "A review of how VIP modulates innate immune responses and its proposed therapeutic potential in inflammatory disease. As with the rest of the immunology literature here, the therapeutic implications are largely preclinical.",
@@ -206,7 +206,7 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Immunomodulation of innate immune responses by VIP: its therapeutic potential in inflammatory disease. PMID 19604262.{" "}
+          Smalley SG, Barrow PA, Foster N, et al. Immunomodulation of innate immune responses by vasoactive intestinal peptide: its therapeutic potential in inflammatory disease. Clin Exp Immunol. 2009;157(2):225-34. PMID 19604262.{" "}
           <a href="https://pubmed.ncbi.nlm.nih.gov/19604262/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/19604262/
           </a>

@@ -92,7 +92,7 @@ const faqs = [
 const studies = [
   {
     title: "Prolonged Stimulation of GH and IGF-I Secretion by CJC-1295 in Healthy Adults",
-    authors: "Ionescu M, Frohman LA",
+    authors: "Teichman SL, Neale A, Lawrence B, et al.",
     journal: "Journal of Clinical Endocrinology & Metabolism",
     year: "2006",
     access: "Open Access",
@@ -109,12 +109,12 @@ const studies = [
     summary: "The landmark selectivity study for Ipamorelin. Established that Ipamorelin produces robust GH release with approximately 90% less cortisol elevation and no meaningful ACTH or prolactin response compared to older GHRPs (GHRP-2, GHRP-6, Hexarelin). This clean hormonal profile is why Ipamorelin became the default GHRP for stacking — it adds GH pulse triggering through the ghrelin receptor without the cortisol and appetite side effects of older GHRPs.",
   },
   {
-    title: "GHRH + GHRP Synergy: Co-Administration of GHRH Analogs with GHSR Agonists",
-    authors: "Jørgensen JOL, et al.",
-    journal: "Growth Hormone & IGF Research",
-    year: "2001",
+    title: "GH-Releasing Peptide Stimulates GH Release in Normal Men and Acts Synergistically with GH-Releasing Hormone",
+    authors: "Bowers CY, Reynolds GA, Durham D, et al.",
+    journal: "Journal of Clinical Endocrinology & Metabolism",
+    year: "1990",
     access: "Paywalled",
-    url: "https://pubmed.ncbi.nlm.nih.gov/11420165/",
+    url: "https://pubmed.ncbi.nlm.nih.gov/2108187/",
     summary: "Mechanistic study demonstrating supra-additive GH release when GHRH analogs and GHSR (ghrelin receptor) agonists are co-administered — the scientific foundation for the GH Stack's design. Co-administration produced 2–4× greater GH area under the curve compared to either compound alone, with the effect being additive to synergistic depending on timing. The cAMP pathway (CJC-1295 / GHRHR) and the calcium/PKC pathway (Ipamorelin / GHS-R1a) converge at the somatotroph, where simultaneous activation amplifies the secretory response beyond what either signal produces alone.",
   },
   {
@@ -519,8 +519,8 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ionescu M, Frohman LA. Pulsatile secretion of growth hormone (GH) persists during continuous stimulation by CJC-1295, a long-acting GH-releasing hormone analog. J Clin Endocrinol Metab. 2006;91(12):4792-4797.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16352683/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/16352683/
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17018654/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/17018654/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -530,9 +530,9 @@ const sections = [
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Jørgensen JOL, et al. GHRH + GHRP Synergy: Co-Administration of GHRH Analogs with GHSR Agonists. Growth Horm IGF Res. 2001.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11420165/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
-            https://pubmed.ncbi.nlm.nih.gov/11420165/
+          Bowers CY, Reynolds GA, Durham D, et al. Growth hormone (GH)-releasing peptide stimulates GH release in normal men and acts synergistically with GH-releasing hormone. J Clin Endocrinol Metab. 1990;70(4):975-82.{" "}
+          <a href="https://pubmed.ncbi.nlm.nih.gov/2108187/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+            https://pubmed.ncbi.nlm.nih.gov/2108187/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
