@@ -62,30 +62,33 @@ const nextConfig = {
         destination: "https://profpeptide.com/:path*",
         permanent: true,
       },
+      // Legacy peptide URL variants -> canonical /peptides/<slug>, with an
+      // explicit 301 (Moved Permanently). next-sitemap excludes the /research/*
+      // sources; the canonical /peptides/<slug> is what stays indexable.
       {
         source: "/research{/}?",
         destination: "/peptides",
-        permanent: true,
+        statusCode: 301,
       },
       ...studiesRedirectSlugs.map((slug) => ({
         source: `/research/${slug}{/}?`,
         destination: `/peptides/${slug}#studies`,
-        permanent: true,
+        statusCode: 301,
       })),
       {
         source: "/tirzepatideresearch",
         destination: "/peptides/tirzepatide",
-        permanent: true,
+        statusCode: 301,
       },
       {
         source: "/tesamorelin",
         destination: "/peptides/tesamorelin",
-        permanent: true,
+        statusCode: 301,
       },
       {
         source: "/retatrutide",
         destination: "/peptides/retatrutide",
-        permanent: true,
+        statusCode: 301,
       },
       {
         source: "/news/rfk-peptide-ban-2026-v2{/}?",
