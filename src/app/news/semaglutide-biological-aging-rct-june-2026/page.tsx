@@ -1,27 +1,18 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/news/semaglutide-biological-aging-rct-june-2026" },
+export const metadata = buildPageMetadata({
+  path: "/news/semaglutide-biological-aging-rct-june-2026",
   title: "Semaglutide Slowed Epigenetic Aging Markers in a Randomized Trial — In a Specific Population | Prof. Peptide",
   description:
     "A secondary epigenetic-clock analysis of a 32-week randomized, double-blind, placebo-controlled trial in adults with HIV-associated lipohypertrophy found semaglutide slowed multiple aging biomarkers (Nature Communications, June 2026). Biomarkers — not proven longevity outcomes.",
-  openGraph: {
-    title: "Semaglutide Slowed Epigenetic Aging Markers in a Randomized Trial",
-    description:
-      "A secondary epigenetic-clock analysis of a 32-week randomized, double-blind, placebo-controlled trial in adults with HIV-associated lipohypertrophy found semaglutide slowed multiple aging biomarkers (Nature Communications, June 2026).",
-    url: "https://profpeptide.com/news/semaglutide-biological-aging-rct-june-2026",
-    images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
-  },
-  twitter: {
-    card: "summary_large_image" as const,
-    title: "Semaglutide Slowed Epigenetic Aging Markers in a Randomized Trial",
-    description:
-      "A secondary epigenetic-clock analysis of a 32-week randomized, double-blind, placebo-controlled trial in adults with HIV-associated lipohypertrophy found semaglutide slowed multiple aging biomarkers (Nature Communications, June 2026).",
-    images: ["https://profpeptide.com/og-image.png"],
-  },
-};
+  ogTitle: "Semaglutide Slowed Epigenetic Aging Markers in a Randomized Trial",
+  ogDescription:
+    "A secondary epigenetic-clock analysis of a 32-week randomized, double-blind, placebo-controlled trial in adults with HIV-associated lipohypertrophy found semaglutide slowed multiple aging biomarkers (Nature Communications, June 2026).",
+  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+});
 
 export default function SemaglutideBiologicalAgingRctJune2026Page() {
   return (

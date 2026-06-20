@@ -1,27 +1,18 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/news/fda-pcac-meeting-agenda-july-2026" },
+export const metadata = buildPageMetadata({
+  path: "/news/fda-pcac-meeting-agenda-july-2026",
   title: "FDA Releases Official Agenda for July Peptide Compounding Meeting — What’s On It | Prof. Peptide",
   description:
     "The FDA published the official Federal Register notice for its July 23-24 Pharmacy Compounding Advisory Committee meeting on peptide compounding. Here are the seven peptides under review and the conditions each is being considered for.",
-  openGraph: {
-    title: "FDA Releases Official Agenda for July Peptide Compounding Meeting — What’s On It",
-    description:
-      "The FDA published the official Federal Register notice for its July 23-24 Pharmacy Compounding Advisory Committee meeting on peptide compounding.",
-    url: "https://profpeptide.com/news/fda-pcac-meeting-agenda-july-2026",
-    images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
-  },
-  twitter: {
-    card: "summary_large_image" as const,
-    title: "FDA Releases Official Agenda for July Peptide Compounding Meeting — What’s On It",
-    description:
-      "The FDA published the official Federal Register notice for its July 23-24 Pharmacy Compounding Advisory Committee meeting on peptide compounding.",
-    images: ["https://profpeptide.com/og-image.png"],
-  },
-};
+  ogTitle: "FDA Releases Official Agenda for July Peptide Compounding Meeting — What’s On It",
+  ogDescription:
+    "The FDA published the official Federal Register notice for its July 23-24 Pharmacy Compounding Advisory Committee meeting on peptide compounding.",
+  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+});
 
 export default function FDAPcacMeetingAgendaJuly2026Page() {
   return (

@@ -1,27 +1,18 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/news/retatrutide-phase-3-update-may-2026" },
+export const metadata = buildPageMetadata({
+  path: "/news/retatrutide-phase-3-update-may-2026",
   title: "Retatrutide FDA Approval: Phase 3 Status & Timeline (2026)",
   description:
     "Retatrutide isn't FDA-approved yet — it's in Phase 3 (TRIUMPH program). Where trials stand in 2026, latest results & when a filing may come (2026–2027).",
-  openGraph: {
-    title: "Retatrutide FDA Approval: Phase 3 Status & Timeline (2026)",
-    description:
-      "Retatrutide isn't FDA-approved yet — it's in Phase 3 (TRIUMPH program). Where trials stand in 2026, latest results & when a filing may come (2026–2027).",
-    url: "https://profpeptide.com/news/retatrutide-phase-3-update-may-2026",
-    images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
-  },
-  twitter: {
-    card: "summary_large_image" as const,
-    title: "Retatrutide FDA Approval: Phase 3 Status & Timeline (2026)",
-    description:
-      "Retatrutide isn't FDA-approved yet — it's in Phase 3 (TRIUMPH program). Where trials stand in 2026, latest results & when a filing may come (2026–2027).",
-    images: ["https://profpeptide.com/og-image.png"],
-  },
-};
+  ogTitle: "Retatrutide FDA Approval: Phase 3 Status & Timeline (2026)",
+  ogDescription:
+    "Retatrutide isn't FDA-approved yet — it's in Phase 3 (TRIUMPH program). Where trials stand in 2026, latest results & when a filing may come (2026–2027).",
+  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+});
 
 export default function RetatrutidePhase3UpdateMay2026Page() {
   return (

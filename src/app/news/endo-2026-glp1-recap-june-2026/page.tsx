@@ -1,27 +1,18 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/news/endo-2026-glp1-recap-june-2026" },
+export const metadata = buildPageMetadata({
+  path: "/news/endo-2026-glp1-recap-june-2026",
   title: "ENDO 2026 Recap — GLP-1 and Peptide Readouts from the Endocrine Society Meeting | Prof. Peptide",
   description:
     "Recap of ENDO 2026 (Chicago, June 13–16): GLP-1s and physical activity, male fertility data, a CagriSema meta-analysis, real-world adherence, and Entera Bio's preclinical oral peptides.",
-  openGraph: {
-    title: "ENDO 2026 Recap — GLP-1 and Peptide Readouts from the Endocrine Society Meeting",
-    description:
-      "Recap of ENDO 2026 (Chicago, June 13–16): GLP-1s and physical activity, male fertility data, a CagriSema meta-analysis, real-world adherence, and Entera Bio's preclinical oral peptides.",
-    url: "https://profpeptide.com/news/endo-2026-glp1-recap-june-2026",
-    images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
-  },
-  twitter: {
-    card: "summary_large_image" as const,
-    title: "ENDO 2026 Recap — GLP-1 and Peptide Readouts from the Endocrine Society Meeting",
-    description:
-      "Recap of ENDO 2026 (Chicago, June 13–16): GLP-1s and physical activity, male fertility data, a CagriSema meta-analysis, real-world adherence, and Entera Bio's preclinical oral peptides.",
-    images: ["https://profpeptide.com/og-image.png"],
-  },
-};
+  ogTitle: "ENDO 2026 Recap — GLP-1 and Peptide Readouts from the Endocrine Society Meeting",
+  ogDescription:
+    "Recap of ENDO 2026 (Chicago, June 13–16): GLP-1s and physical activity, male fertility data, a CagriSema meta-analysis, real-world adherence, and Entera Bio's preclinical oral peptides.",
+  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+});
 
 export default function Endo2026Glp1RecapJune2026Page() {
   return (

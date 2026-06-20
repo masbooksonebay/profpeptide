@@ -1,27 +1,18 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/news/retatrutide-triumph-1-phase-3-results" },
+export const metadata = buildPageMetadata({
+  path: "/news/retatrutide-triumph-1-phase-3-results",
   title: "Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial | Prof. Peptide",
   description:
     "Eli Lilly's investigational triple agonist retatrutide produced 30.3% average weight loss at 104 weeks in the TRIUMPH-1 Phase 3 trial — comparable to bariatric surgery outcomes. Analysts project 2027 FDA approval.",
-  openGraph: {
-    title: "Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial",
-    description:
-      "Eli Lilly's investigational triple agonist retatrutide produced 30.3% average weight loss at 104 weeks in the TRIUMPH-1 Phase 3 trial — comparable to bariatric surgery outcomes. Analysts project 2027 FDA approval.",
-    url: "https://profpeptide.com/news/retatrutide-triumph-1-phase-3-results",
-    images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
-  },
-  twitter: {
-    card: "summary_large_image" as const,
-    title: "Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial",
-    description:
-      "Eli Lilly's investigational triple agonist retatrutide produced 30.3% average weight loss at 104 weeks in the TRIUMPH-1 Phase 3 trial — comparable to bariatric surgery outcomes. Analysts project 2027 FDA approval.",
-    images: ["https://profpeptide.com/og-image.png"],
-  },
-};
+  ogTitle: "Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial",
+  ogDescription:
+    "Eli Lilly's investigational triple agonist retatrutide produced 30.3% average weight loss at 104 weeks in the TRIUMPH-1 Phase 3 trial — comparable to bariatric surgery outcomes. Analysts project 2027 FDA approval.",
+  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+});
 
 export default function RetatrutideTriumph1Phase3ResultsPage() {
   return (

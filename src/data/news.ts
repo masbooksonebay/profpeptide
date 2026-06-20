@@ -8,6 +8,11 @@ export interface NewsArticle {
 // Canonical, ordered list of news articles (newest first).
 // The /news index and the homepage "Latest News" block both read from this array,
 // so prepending a new entry here updates both automatically — no other edits needed.
+//
+// When adding an article, also create src/app/news/<slug>/page.tsx and build its
+// metadata with buildPageMetadata({ path: "/news/<slug>", ... }) from "@/lib/seo".
+// That helper requires `path` and always emits alternates.canonical, so a new
+// article can never ship without its self-canonical <link rel="canonical">.
 export const articles: NewsArticle[] = [
   {
     title: "ENDO 2026 Recap — GLP-1 and Peptide Readouts from the Endocrine Society Meeting",

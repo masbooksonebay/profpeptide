@@ -1,25 +1,18 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/news/rfk-peptide-update-april-2026" },
+export const metadata = buildPageMetadata({
+  path: "/news/rfk-peptide-update-april-2026",
   title: "RFK\u2019s Peptide Ruling: Where Things Stand in April 2026 | Prof. Peptide",
   description:
     "RFK Jr. announced 14 peptides would return to legal compounding status \u2014 but the FDA hasn\u2019t published the official list yet. Here\u2019s what we know, what\u2019s still pending, and what it means for researchers.",
-  openGraph: {
-    title: "RFK\u2019s Peptide Ruling: Where Things Stand in April 2026",
-    description: "RFK Jr. announced 14 peptides would return to legal compounding status \u2014 but the FDA hasn\u2019t published the official list yet.",
-    url: "https://profpeptide.com/news/rfk-peptide-update-april-2026",
-    images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
-  },
-  twitter: {
-    card: "summary_large_image" as const,
-    title: "RFK\u2019s Peptide Ruling: Where Things Stand in April 2026",
-    description: "RFK Jr. announced 14 peptides would return to legal compounding status \u2014 but the FDA hasn\u2019t published the official list yet.",
-    images: ["https://profpeptide.com/og-image.png"],
-  },
-};
+  ogTitle: "RFK\u2019s Peptide Ruling: Where Things Stand in April 2026",
+  ogDescription:
+    "RFK Jr. announced 14 peptides would return to legal compounding status \u2014 but the FDA hasn\u2019t published the official list yet.",
+  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+});
 
 export default function RFKPeptideUpdatePage() {
   return (

@@ -1,27 +1,18 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/news/fda-503b-glp1-bulk-compounding-2026" },
+export const metadata = buildPageMetadata({
+  path: "/news/fda-503b-glp1-bulk-compounding-2026",
   title: "FDA Moves to Bar Outsourcing Facilities From Bulk-Compounding Semaglutide, Tirzepatide, and Liraglutide | Prof. Peptide",
   description:
     "The agency found no clinical need to keep the three leading GLP-1 drugs available for large-scale 503B bulk compounding. A public comment window runs through June 29 — here's what the proposal does, and doesn't, cover.",
-  openGraph: {
-    title: "FDA Moves to Bar Outsourcing Facilities From Bulk-Compounding Semaglutide, Tirzepatide, and Liraglutide",
-    description:
-      "The agency found no clinical need to keep the three leading GLP-1 drugs available for large-scale 503B bulk compounding. A public comment window runs through June 29 — here's what the proposal does, and doesn't, cover.",
-    url: "https://profpeptide.com/news/fda-503b-glp1-bulk-compounding-2026",
-    images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
-  },
-  twitter: {
-    card: "summary_large_image" as const,
-    title: "FDA Moves to Bar Outsourcing Facilities From Bulk-Compounding Semaglutide, Tirzepatide, and Liraglutide",
-    description:
-      "The agency found no clinical need to keep the three leading GLP-1 drugs available for large-scale 503B bulk compounding. A public comment window runs through June 29 — here's what the proposal does, and doesn't, cover.",
-    images: ["https://profpeptide.com/og-image.png"],
-  },
-};
+  ogTitle: "FDA Moves to Bar Outsourcing Facilities From Bulk-Compounding Semaglutide, Tirzepatide, and Liraglutide",
+  ogDescription:
+    "The agency found no clinical need to keep the three leading GLP-1 drugs available for large-scale 503B bulk compounding. A public comment window runs through June 29 — here's what the proposal does, and doesn't, cover.",
+  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+});
 
 export default function FDA503BGLP1BulkCompounding2026Page() {
   return (

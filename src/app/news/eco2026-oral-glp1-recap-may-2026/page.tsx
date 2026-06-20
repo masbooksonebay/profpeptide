@@ -1,27 +1,18 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/news/eco2026-oral-glp1-recap-may-2026" },
+export const metadata = buildPageMetadata({
+  path: "/news/eco2026-oral-glp1-recap-may-2026",
   title: "ECO2026 Recap — Oral GLP-1 Data from Novo, Lilly, and Viking | Prof. Peptide",
   description:
     "Recap of ECO2026 oral GLP-1 readouts from Novo Nordisk, Eli Lilly, and Viking Therapeutics — Wegovy pill, Foundayo, and VK2735.",
-  openGraph: {
-    title: "ECO2026 Recap — Oral GLP-1 Data from Novo, Lilly, and Viking",
-    description:
-      "Recap of ECO2026 oral GLP-1 readouts from Novo Nordisk, Eli Lilly, and Viking Therapeutics — Wegovy pill, Foundayo, and VK2735.",
-    url: "https://profpeptide.com/news/eco2026-oral-glp1-recap-may-2026",
-    images: [{ url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" }],
-  },
-  twitter: {
-    card: "summary_large_image" as const,
-    title: "ECO2026 Recap — Oral GLP-1 Data from Novo, Lilly, and Viking",
-    description:
-      "Recap of ECO2026 oral GLP-1 readouts from Novo Nordisk, Eli Lilly, and Viking Therapeutics — Wegovy pill, Foundayo, and VK2735.",
-    images: ["https://profpeptide.com/og-image.png"],
-  },
-};
+  ogTitle: "ECO2026 Recap — Oral GLP-1 Data from Novo, Lilly, and Viking",
+  ogDescription:
+    "Recap of ECO2026 oral GLP-1 readouts from Novo Nordisk, Eli Lilly, and Viking Therapeutics — Wegovy pill, Foundayo, and VK2735.",
+  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+});
 
 export default function Eco2026OralGlp1RecapMay2026Page() {
   return (
