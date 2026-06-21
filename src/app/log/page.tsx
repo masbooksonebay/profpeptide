@@ -201,7 +201,7 @@ export default function LogPage() {
             className="text-3xl sm:text-4xl font-semibold mb-3 text-[#1e2d3d] dark:text-slate-100"
             style={{ letterSpacing: "-0.02em" }}
           >
-            Peptide Reconstitution Log
+            Peptide Protocol Log
           </h1>
           <p className="text-gray-500 dark:text-slate-400 text-base max-w-xl">
             Keep a running record of your reconstituted vials — compound, BAC water volume,
@@ -213,7 +213,7 @@ export default function LogPage() {
 
         {/* Privacy microcopy */}
         <div className="mb-8 rounded-lg px-4 py-3 bg-[#0891b2]/10 border border-[#0891b2]/20 text-sm text-[#1e2d3d] dark:text-slate-200">
-          Stored only on this device — nothing is sent to our servers. No account needed.
+          Your log is saved on this device only — no account needed, and nothing leaves your browser. Cross-device sync is coming soon. For now, use Export to back up your log or move it to another device.
         </div>
 
         {flash && (
