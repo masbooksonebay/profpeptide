@@ -27,6 +27,7 @@ const nav: { label: string; href: string; dropdown?: DropdownVariant }[] = [
   { label: "Supplements", href: "/supplements", dropdown: "categories" },
   { label: "News", href: "/news" },
   { label: "Calculator", href: "/calculator" },
+  { label: "Log", href: "/log" },
   { label: "Codes", href: "/coupons" },
   { label: "App", href: "/app" },
 ];

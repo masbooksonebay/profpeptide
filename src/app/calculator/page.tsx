@@ -1,6 +1,13 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import {
+  COMPOUNDS,
+  MG_DEFAULT_COMPOUNDS,
+  computeReconstitution,
+} from '@/lib/reconstitution';
+import { addEntry } from '@/lib/logStore';
 
 interface Results {
   concentration: number;
@@ -8,61 +15,67 @@ interface Results {
   syringeUnits: number;
 }
 
-const compounds = [
-  "Custom Peptide",
-  "AOD-9604", "BPC-157", "CJC-1295", "Epitalon", "Follistatin",
-  "GHK-Cu", "GLOW", "IGF-1 LR3", "Ipamorelin", "Melanotan II",
-  "MOTS-c", "NAD+", "PT-141", "Retatrutide", "Selank", "Semax",
-  "Semaglutide", "Sermorelin", "TB-500", "Tesamorelin",
-  "Thymosin Alpha-1", "Tirzepatide", "Wolverine Stack",
-];
-
-const mgDefaults = new Set(["Semaglutide", "Tirzepatide", "Retatrutide", "NAD+"]);
-
 export default function CalculatorPage() {
-  const [compound, setCompound] = useState(compounds[0]);
+  const [compound, setCompound] = useState(COMPOUNDS[0]);
   const [vialSize, setVialSize] = useState('');
   const [waterVolume, setWaterVolume] = useState('');
   const [dose, setDose] = useState('');
   const [doseUnit, setDoseUnit] = useState<'mcg' | 'mg'>('mcg');
   const [results, setResults] = useState<Results | null>(null);
   const [error, setError] = useState('');
+  const [savedMsg, setSavedMsg] = useState('');
 
   const selectCompound = (name: string) => {
     setCompound(name);
-    setDoseUnit(mgDefaults.has(name) ? 'mg' : 'mcg');
+    setDoseUnit(MG_DEFAULT_COMPOUNDS.has(name) ? 'mg' : 'mcg');
   };
 
   const calculate = () => {
     setError('');
     setResults(null);
+    setSavedMsg('');
 
-    const vial = parseFloat(vialSize);
-    const water = parseFloat(waterVolume);
-    const rawDose = parseFloat(dose);
+    const r = computeReconstitution({
+      vialMg: parseFloat(vialSize),
+      bacWaterMl: parseFloat(waterVolume),
+      dose: parseFloat(dose),
+      doseUnit,
+    });
 
-    if (!vial || !water || !rawDose || vial <= 0 || water <= 0 || rawDose <= 0) {
+    if (!r) {
       setError('Please enter valid positive numbers for all fields.');
       return;
     }
 
-    const doseInMcg = doseUnit === 'mg' ? rawDose * 1000 : rawDose;
-    const vialMcg = vial * 1000;
-    const concentration = vialMcg / water;
-    const drawVolume = doseInMcg / concentration;
-    const syringeUnits = drawVolume * 100;
+    setResults({
+      concentration: r.concentrationMcgPerMl,
+      drawVolume: r.drawVolumeMl,
+      syringeUnits: r.syringeUnits,
+    });
+  };
 
-    setResults({ concentration, drawVolume, syringeUnits });
+  const saveToLog = () => {
+    if (!results) return;
+    addEntry({
+      compound,
+      vialMg: parseFloat(vialSize),
+      bacWaterMl: parseFloat(waterVolume),
+      desiredDose: parseFloat(dose),
+      doseUnit,
+      reconstitutionDate: new Date().toISOString().slice(0, 10),
+    });
+    setSavedMsg('Saved to Log ✓');
   };
 
   const reset = () => {
-    setCompound(compounds[0]);
+    setCompound(COMPOUNDS[0]);
     setVialSize('');
     setWaterVolume('');
     setDose('');
     setDoseUnit('mcg');
     setResults(null);
     setError('');
+    setSavedMsg('');
   };
 
   return (
@@ -97,7 +110,7 @@ export default function CalculatorPage() {
                   onChange={(e) => selectCompound(e.target.value)}
                   className="w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#0891b2] transition appearance-none cursor-pointer"
                 >
-                  {compounds.map((c) => (
+                  {COMPOUNDS.map((c) => (
                     <option key={c} value={c}>{c}</option>
                   ))}
                 </select>
@@ -228,6 +241,18 @@ export default function CalculatorPage() {
                     {results.syringeUnits.toFixed(1)}{' '}
                     <span className="text-base font-normal text-gray-500 dark:text-slate-400">units</span>
                   </p>
+                </div>
+
+                <div className="pt-2 flex flex-wrap items-center gap-3">
+                  <button onClick={saveToLog} className="btn-primary">
+                    Save to Log
+                  </button>
+                  {savedMsg && (
+                    <span className="text-sm text-green-600 dark:text-green-400">
+                      {savedMsg}{' '}
+                      <Link href="/log" className="text-[#0891b2] hover:underline">View Log &rarr;</Link>
+                    </span>
+                  )}
                 </div>
               </div>
             )}
