@@ -36,6 +36,14 @@ export const vendors: Record<string, Vendor> = {
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
     detailPage: "/coupons/amino-club",
   },
+  "amino-x": {
+    name: "Amino X",
+    code: "PROF15",
+    discount: "15% off",
+    region: "US",
+    url: "https://aminox.net/?coupon=PROF15",
+    detailPage: "/coupons/amino-x",
+  },
   "ascension-peptides": {
     name: "Ascension Peptides",
     code: "PROFPEPTIDE",
