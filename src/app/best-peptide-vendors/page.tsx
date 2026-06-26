@@ -31,6 +31,16 @@ interface HubVendor {
 
 const vendors: HubVendor[] = [
   {
+    name: "Amino Club",
+    slug: "amino-club",
+    url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
+    code: "PROFPEPTIDE",
+    discount: "20% off",
+    description:
+      "US-based supplier with a broad catalog of more than two dozen research compounds. Every batch is third-party tested by an ISO/IEC 17025-accredited lab to a 99%+ HPLC purity standard, with additional heavy-metal (ICP-MS), sterility, and endotoxin screening. Each product links a batch-specific Certificate of Analysis that is downloadable and independently verifiable through the issuing lab’s portal.",
+    strengths: ["Third-party tested, 99%+ purity", "ISO/IEC 17025-accredited lab", "Per-batch verifiable COAs", "20% off with code"],
+  },
+  {
     name: "Ascension Peptides",
     slug: "ascension-peptides",
     url: "https://ascensionpeptides.com/ref/profpeptide/",
@@ -70,26 +80,6 @@ const vendors: HubVendor[] = [
       "US research peptide supplier that runs four independent test types per batch: purity, endotoxin, heavy metals, and sterility. Extensive transparency on test data and documentation.",
     strengths: ["Four independent batch tests", "Endotoxin + sterility tested", "Published COAs", "Transparent test data"],
   },
-  {
-    name: "Peptides.gg",
-    slug: "peptides-gg",
-    url: "https://peptides.gg/?coupon=prof15",
-    code: "PROF15",
-    discount: "15% off",
-    description:
-      "US-made supplier with a deep catalog of 90+ products available as vials, liquids, and capsules. Every batch is third-party tested with published COAs where each sample ID links to the full lab report, at 98\u201399%+ purity depending on product. Same-day shipping and free shipping over $200.",
-    strengths: ["Per-batch COAs, sample-ID linked", "98\u201399%+ purity", "90+ products: vials, liquids, capsules", "15% off with code"],
-  },
-  {
-    name: "Vital Core Research",
-    slug: "vital-core-research",
-    url: "https://vitalcoreresearch.com/?ref=nbwnvhnu",
-    code: "PROF20",
-    discount: "20% off",
-    description:
-      "US research compound supplier with 20% off via our code. Straightforward catalog with COA availability and responsive fulfillment.",
-    strengths: ["20% off with code", "COA availability", "Responsive fulfillment", "US-based"],
-  },
 ];
 
 export default function BestPeptideVendorsPage() {
@@ -101,7 +91,7 @@ export default function BestPeptideVendorsPage() {
         "headline": "Best Peptide Vendors for Research (June 2026)",
         "description": "Alphabetical list of the peptide vendors Prof. Peptide has vetted for third-party testing, COA transparency, purity standards, shipping reliability, and community reputation.",
         "datePublished": "2026-04-16",
-        "dateModified": "2026-06-03",
+        "dateModified": "2026-06-25",
         "url": "https://profpeptide.com/best-peptide-vendors",
         "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://profpeptide.com" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
