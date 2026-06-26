@@ -48,7 +48,7 @@ const faqs = [
     q: "Where can I buy Pinealon?",
     a: (
       <>
-        Pinealon is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Among the vetted vendors, Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
+        Pinealon is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
         <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
           Peptides.gg discount code (PROF15) &rarr;
         </Link>
@@ -149,7 +149,7 @@ const sections = [
     node: (
       <div className="space-y-4">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Among the vetted vendors, Peptides.gg carries the Khavinson bioregulator line. See the{" "}
+          The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
           <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
             Peptides.gg discount code (PROF15) &rarr;
           </Link>{" "}
@@ -296,7 +296,7 @@ export default function PinealonPage() {
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> No validated research-dose consensus exists. Pinealon is supplied for research use only as a lyophilized powder. The original commercial Khavinson oral preparation is approximately 10 mg per capsule; injectable research use has no standardized protocol. Prof. Peptide does not publish an injectable dosing schedule because none has been validated in controlled human research.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Pinealon is sold by specialty peptide vendors for laboratory use only. Among the vetted vendors, Peptides.gg carries the Khavinson bioregulator line. See the{" "}
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Pinealon is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
             <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
               Peptides.gg discount code (PROF15) &rarr;
             </Link>{" "}

@@ -48,7 +48,7 @@ const faqs = [
     q: "Where can I buy Thymogen?",
     a: (
       <>
-        Thymogen is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Among the vetted vendors, Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
+        Thymogen is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
         <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
           Peptides.gg discount code (PROF15) &rarr;
         </Link>
@@ -177,7 +177,7 @@ const sections = [
     node: (
       <div className="space-y-4">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Among the vetted vendors, Peptides.gg carries the Khavinson bioregulator line. See the{" "}
+          The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
           <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
             Peptides.gg discount code (PROF15) &rarr;
           </Link>{" "}
@@ -326,7 +326,7 @@ export default function ThymogenPage() {
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> No FDA-approved dose exists. Thymogen is registered as a medicine only in the Russian Federation, in three forms: an intramuscular solution (100 µg/mL), a metered nasal spray (25 µg/dose), and a 0.05% topical cream. Published trials used intranasal regimens (e.g., 5 mg every other day in the negative AIDS-KS Phase III; 20 mg three times daily in a renal-cell-carcinoma Phase II). Prof. Peptide does not publish an injectable dosing schedule because none has been validated in controlled research.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Thymogen is sold by specialty peptide vendors for laboratory use only. Among the vetted vendors, Peptides.gg carries the Khavinson bioregulator line. See the{" "}
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Thymogen is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
             <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
               Peptides.gg discount code (PROF15) &rarr;
             </Link>{" "}
