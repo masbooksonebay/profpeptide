@@ -26,6 +26,7 @@ export default function Footer() {
             <p className="text-xs font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-wider mb-3">Learn</p>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-slate-300">
               <li><Link href="/peptides" className="hover:text-[#0891b2]">Peptide Library</Link></li>
+              <li><Link href="/supplements" className="hover:text-[#0891b2]">Supplements</Link></li>
               <li><Link href="/bioregulators" className="hover:text-[#0891b2]">Bioregulators</Link></li>
               <li><Link href="/compare" className="hover:text-[#0891b2]">Comparisons</Link></li>
               <li><Link href="/faq" className="hover:text-[#0891b2]">FAQ</Link></li>

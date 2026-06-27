@@ -24,10 +24,8 @@ type DropdownVariant = "categories" | "research";
 
 const nav: { label: string; href: string; dropdown?: DropdownVariant }[] = [
   { label: "Peptides", href: "/peptides", dropdown: "categories" },
-  { label: "Supplements", href: "/supplements", dropdown: "categories" },
-  { label: "News", href: "/news" },
   { label: "Calculator", href: "/calculator" },
-  { label: "Log", href: "/log" },
+  { label: "Track", href: "/log" },
   { label: "Codes", href: "/coupons" },
   { label: "App", href: "/app" },
 ];
