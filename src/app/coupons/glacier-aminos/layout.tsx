@@ -2,12 +2,11 @@ import { buildPageMetadata } from "@/lib/seo";
 import { vendors } from "@/data/vendors";
 
 const v = vendors["glacier-aminos"];
-const pct = v.discount.replace(" off", "");
 
 export const metadata = buildPageMetadata({
   path: "/coupons/glacier-aminos",
-  title: `Glacier Aminos Discount Code — Save ${pct} (2026)`,
-  description: `Use code ${v.code} for ${v.discount} at Glacier Aminos (US) — verified 2026 promo. Cold-chain shipping, batch-traceable COAs, lowest tracked Retatrutide pricing.`,
+  title: "Glacier Aminos Coupon & Promo Code 2026 — Verified 10% Off",
+  description: `Verified, working Glacier Aminos coupon, promo & discount code: ${v.code} = 10% off — not a fake aggregator. Batch-traceable COAs + lowest-tracked Reta price.`,
 });
 
 export default function GlacierAminosLayout({ children }: { children: React.ReactNode }) {
