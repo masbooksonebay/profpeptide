@@ -403,6 +403,7 @@ const sections = [
       <div className="space-y-4">
         <VendorHighlightBlock
           highlights={[
+            { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "behemoth-labz", note: "Nasal format" },
             { slug: "purerawz", note: "Available in Youth Nasal Spray + Asleep blends" },
             { slug: "ascension-peptides" },

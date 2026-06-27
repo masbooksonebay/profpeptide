@@ -462,6 +462,7 @@ const sections = [
         <VendorHighlightBlock
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
+            { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners", note: "Sold as 'GLP-3 Retatrutide'" },
             { slug: "ascension-peptides", note: "Sold as R-10 / R-30" },
             { slug: "vital-core-research" },

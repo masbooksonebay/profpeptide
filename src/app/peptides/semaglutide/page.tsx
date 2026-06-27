@@ -463,6 +463,7 @@ const sections = [
       <div className="space-y-4">
         <VendorHighlightBlock
           highlights={[
+            { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners" },
             { slug: "ascension-peptides", note: "Sold as S-5" },
             { slug: "vital-core-research" },

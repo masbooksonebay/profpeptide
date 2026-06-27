@@ -449,6 +449,7 @@ const sections = [
       <div className="space-y-4">
         <VendorHighlightBlock
           highlights={[
+            { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners", note: "Sold as 'GLP-2 Tirzepatide'" },
             { slug: "ascension-peptides", note: "Sold as T-10 / T-30" },
             { slug: "vital-core-research" },

@@ -430,6 +430,7 @@ const sections = [
         <VendorHighlightBlock
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
+            { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "vital-core-research" },
             { slug: "spartan-peptides", note: "Included in Energizer Bunny blend" },
           ]}

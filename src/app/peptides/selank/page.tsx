@@ -413,6 +413,7 @@ const sections = [
         <VendorHighlightBlock
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
+            { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "behemoth-labz", note: "Nasal format" },
             { slug: "purerawz", note: "N-Acetyl Selank" },
             { slug: "vital-core-research" },

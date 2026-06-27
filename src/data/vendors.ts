@@ -94,6 +94,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
     detailPage: "/coupons/glacier-aminos",
+    editorsPick: true,
   },
   "ignite-peptides": {
     name: "Ignite Peptides",

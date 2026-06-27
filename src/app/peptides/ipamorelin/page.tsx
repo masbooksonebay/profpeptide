@@ -402,6 +402,7 @@ const sections = [
         <VendorHighlightBlock
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
+            { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
             { slug: "behemoth-labz", note: "Nasal + vial formats" },
           ]}
