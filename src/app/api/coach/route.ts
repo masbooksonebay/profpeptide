@@ -16,7 +16,7 @@ const ANTHROPIC_URL = "https://api.anthropic.com/v1/messages";
 const ANTHROPIC_VERSION = "2023-06-01";
 // Pinned to the same model the proven hybrid-rockstar-api relay uses. Swap this
 // single const to change models (a newer Sonnet can drop in here).
-const MODEL = "claude-sonnet-4-20250514";
+const MODEL = "claude-sonnet-4-6";
 const MAX_TOKENS = 1000;
 const MAX_BODY_BYTES = 50 * 1024;
 const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000;
