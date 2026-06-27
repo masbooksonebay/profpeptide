@@ -35,6 +35,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
     detailPage: "/coupons/amino-club",
+    editorsPick: true,
   },
   "amino-x": {
     name: "Amino X",
