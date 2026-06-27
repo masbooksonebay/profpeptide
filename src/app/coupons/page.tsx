@@ -30,6 +30,15 @@ const sections: VendorSection[] = [
     label: "Featured Vendors",
     vendors: [
       {
+        name: "Amino Club",
+        url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
+        code: "PROFPEPTIDE",
+        discount: "20% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        bestDeal: true,
+        detailPage: "/coupons/amino-club",
+      },
+      {
         name: "Peptide Partners",
         url: "https://peptide.partners/ref/48/",
         code: "PROFPEPTIDE",
@@ -44,13 +53,12 @@ const sections: VendorSection[] = [
     label: "Best Deals",
     vendors: [
       {
-        name: "Amino Club",
-        url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
+        name: "Ascension Peptides",
+        url: "https://ascensionpeptides.com/ref/profpeptide/",
         code: "PROFPEPTIDE",
-        discount: "20% off",
+        discount: "50% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        bestDeal: true,
-        detailPage: "/coupons/amino-club",
+        detailPage: "/coupons/ascension-peptides",
       },
     ],
   },
@@ -73,14 +81,6 @@ const sections: VendorSection[] = [
         discount: "15% off",
         region: "🇺🇸 US",
         detailPage: "/coupons/amino-x",
-      },
-      {
-        name: "Ascension Peptides",
-        url: "https://ascensionpeptides.com/ref/profpeptide/",
-        code: "PROFPEPTIDE",
-        discount: "50% off",
-        region: "🇺🇸 US",
-        detailPage: "/coupons/ascension-peptides",
       },
       {
         name: "Behemoth Labz",
