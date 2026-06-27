@@ -4,10 +4,6 @@
       "displayName": "AOD-9604",
       "vendors": [
         {
-          "slug": "amino-club",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": null
         },
@@ -34,10 +30,6 @@
       "vendors": [
         {
           "slug": "almighty-peptides",
-          "note": null
-        },
-        {
-          "slug": "amino-club",
           "note": null
         },
         {
@@ -97,10 +89,6 @@
     "cagrilintide": {
       "displayName": "Cagrilintide",
       "vendors": [
-        {
-          "slug": "amino-club",
-          "note": null
-        },
         {
           "slug": "ascension-peptides",
           "note": "Sold as C-10"
@@ -174,10 +162,6 @@
         {
           "slug": "almighty-peptides",
           "note": "DAC + no-DAC variants"
-        },
-        {
-          "slug": "amino-club",
-          "note": null
         },
         {
           "slug": "ascension-peptides",
@@ -254,10 +238,6 @@
           "note": null
         },
         {
-          "slug": "amino-club",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": null
         },
@@ -322,10 +302,6 @@
       "vendors": [
         {
           "slug": "almighty-peptides",
-          "note": null
-        },
-        {
-          "slug": "amino-club",
           "note": null
         },
         {
@@ -404,10 +380,6 @@
       "vendors": [
         {
           "slug": "almighty-peptides",
-          "note": null
-        },
-        {
-          "slug": "amino-club",
           "note": null
         },
         {
@@ -526,10 +498,6 @@
           "note": null
         },
         {
-          "slug": "amino-club",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": null
         },
@@ -560,10 +528,6 @@
       "vendors": [
         {
           "slug": "almighty-peptides",
-          "note": null
-        },
-        {
-          "slug": "amino-club",
           "note": null
         },
         {
@@ -641,10 +605,6 @@
           "note": null
         },
         {
-          "slug": "amino-club",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": "Sold as R-10 / R-30"
         },
@@ -697,10 +657,6 @@
     "selank": {
       "displayName": "Selank",
       "vendors": [
-        {
-          "slug": "amino-club",
-          "note": null
-        },
         {
           "slug": "ascension-peptides",
           "note": null
@@ -800,10 +756,6 @@
       "displayName": "Semax",
       "vendors": [
         {
-          "slug": "amino-club",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": null
         },
@@ -890,10 +842,6 @@
           "note": null
         },
         {
-          "slug": "amino-club",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": null
         },
@@ -944,10 +892,6 @@
       "vendors": [
         {
           "slug": "almighty-peptides",
-          "note": null
-        },
-        {
-          "slug": "amino-club",
           "note": null
         },
         {
@@ -1065,10 +1009,6 @@
     "wolverine-stack": {
       "displayName": "Wolverine Stack",
       "vendors": [
-        {
-          "slug": "amino-club",
-          "note": null
-        },
         {
           "slug": "ascension-peptides",
           "note": null

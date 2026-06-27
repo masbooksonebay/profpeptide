@@ -389,6 +389,7 @@ const sections = [
       <div className="space-y-4">
         <VendorHighlightBlock
           highlights={[
+            { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "ascension-peptides" },
             { slug: "behemoth-labz" },
             { slug: "spartan-peptides" },
