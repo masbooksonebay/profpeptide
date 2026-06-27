@@ -35,7 +35,7 @@ const sections: VendorSection[] = [
         code: "PROFPEPTIDE",
         discount: "20% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        bestDeal: true,
+        editorsPick: true,
         detailPage: "/coupons/amino-club",
       },
       {
@@ -58,6 +58,7 @@ const sections: VendorSection[] = [
         code: "PROFPEPTIDE",
         discount: "50% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        bestDeal: true,
         detailPage: "/coupons/ascension-peptides",
       },
     ],
