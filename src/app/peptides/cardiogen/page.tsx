@@ -7,9 +7,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/cardiogen",
-  title: "Cardiogen — AEDR Cardiovascular Tetrapeptide, Khavinson Bioregulator | Prof. Peptide",
+  title: "Cardiogen (AEDR): Cardiac Bioregulator Peptide Guide",
   description:
-    "Cardiogen (AEDR, Ala-Glu-Asp-Arg) research profile: proposed cardiomyocyte proliferation, anti-fibrotic and anti-apoptotic (p53) signaling, peptide–DNA gene-expression modulation, preclinical cardioprotection, and candid limitations. Research use only.",
+    "Cardiogen (AEDR) is a cardiac Khavinson bioregulator peptide. Research profile: mechanism, preclinical cardioprotection studies, dosing, and limits. RUO.",
 });
 
 const faqs = [
