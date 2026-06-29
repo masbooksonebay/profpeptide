@@ -172,14 +172,6 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/purerawz",
       },
       {
-        name: "Purity Peptides",
-        url: "https://puritypeptides.is/?sld=PROF15",
-        code: "PROF15",
-        discount: "15% off",
-        region: "🇨🇦 CA",
-        detailPage: "/coupons/purity-peptides",
-      },
-      {
         name: "Royal Peptides",
         url: "https://royal-peptides.com/?ref=urunwnog",
         code: "PROF10",
@@ -210,6 +202,19 @@ const sections: VendorSection[] = [
         discount: "20% off",
         region: "\uD83C\uDDFA\uD83C\uDDF8 US",
         detailPage: "/coupons/vital-core-research",
+      },
+    ],
+  },
+  {
+    label: "International",
+    vendors: [
+      {
+        name: "Purity Peptides",
+        url: "https://puritypeptides.is/?sld=PROF15",
+        code: "PROF15",
+        discount: "15% off",
+        region: "\uD83C\uDDE8\uD83C\uDDE6 CA",
+        detailPage: "/coupons/purity-peptides",
       },
     ],
   },

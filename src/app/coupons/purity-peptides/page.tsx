@@ -137,7 +137,7 @@ export default function PurityPeptidesCouponPage() {
             Every batch is tested by accredited third-party laboratories in North America. Purity is verified to a 99%+ standard by HPLC and mass spectrometry, with identity confirmation, and Purity Peptides states its raw materials are North American-sourced (not China) and manufactured in GMP-aligned facilities with full chain-of-custody documentation.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Each product links a Certificate of Analysis with traceable lab results, and the company describes itself as a CPRA-certified vendor (Canadian Peptide Research Alliance, an independent certification body for research-grade peptide vendors). That per-product, verifiable documentation &mdash; paired with the 99%+ purity threshold &mdash; gives researchers a traceable quality record for every order.
+            Each product links a Certificate of Analysis with traceable lab results. Purity Peptides states it is certified by the Canadian Peptide Research Alliance (CPRA), a Canadian organization that describes itself as an independent certification and registry body for research-grade peptide vendors. That per-product, verifiable documentation &mdash; paired with the 99%+ purity threshold &mdash; gives researchers a traceable quality record for every order.
           </p>
         </div>
 
