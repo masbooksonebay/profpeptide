@@ -2,7 +2,7 @@ export interface Vendor {
   name: string;
   code: string;
   discount: string;
-  region: "US" | "UK" | "EU" | "IS";
+  region: "US" | "CA" | "UK" | "EU" | "IS";
   url: string;
   detailPage: string;
   editorsPick?: boolean;
@@ -14,6 +14,7 @@ export interface Vendor {
 
 export const regionFlag: Record<Vendor["region"], string> = {
   US: "\uD83C\uDDFA\uD83C\uDDF8",
+  CA: "\uD83C\uDDE8\uD83C\uDDE6",
   UK: "\uD83C\uDDEC\uD83C\uDDE7",
   EU: "\uD83C\uDDEA\uD83C\uDDFA",
   IS: "\uD83C\uDDEE\uD83C\uDDF8",
@@ -170,6 +171,14 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://purerawz.co/?ref=1901",
     detailPage: "/coupons/purerawz",
+  },
+  "purity-peptides": {
+    name: "Purity Peptides",
+    code: "PROF15",
+    discount: "15% off",
+    region: "CA",
+    url: "https://puritypeptides.is/?sld=PROF15",
+    detailPage: "/coupons/purity-peptides",
   },
   "royal-peptides": {
     name: "Royal Peptides",

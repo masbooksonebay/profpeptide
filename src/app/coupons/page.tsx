@@ -172,6 +172,14 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/purerawz",
       },
       {
+        name: "Purity Peptides",
+        url: "https://puritypeptides.is/?sld=PROF15",
+        code: "PROF15",
+        discount: "15% off",
+        region: "🇨🇦 CA",
+        detailPage: "/coupons/purity-peptides",
+      },
+      {
         name: "Royal Peptides",
         url: "https://royal-peptides.com/?ref=urunwnog",
         code: "PROF10",
