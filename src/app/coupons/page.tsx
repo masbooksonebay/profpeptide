@@ -380,10 +380,6 @@ export default function CouponsPage() {
         </p>
         <span className="text-xs font-medium text-[#0891b2] group-hover:underline">See our full vetted vendor list &rarr;</span>
       </Link>
-
-      <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">
-        Prof. Peptide may earn a commission when you use our discount codes. This never influences our editorial content or research.
-      </p>
     </div>
   );
 }
