@@ -2,19 +2,10 @@
 // SINGLE SOURCE OF TRUTH — consumed by the Calculator (/calculator) and the Log (/log).
 // Do not duplicate these formulas elsewhere; import from here.
 
-export const COMPOUNDS = [
-  "Custom Peptide",
-  "AOD-9604", "BPC-157", "CJC-1295", "Epitalon", "Follistatin",
-  "GHK-Cu", "GLOW", "IGF-1 LR3", "Ipamorelin", "Melanotan II",
-  "MOTS-c", "NAD+", "PT-141", "Retatrutide", "Selank", "Semax",
-  "Semaglutide", "Sermorelin", "TB-500", "Tesamorelin",
-  "Thymosin Alpha-1", "Tirzepatide", "Wolverine Stack",
-];
-
-// Compounds conventionally dosed in mg rather than mcg.
-export const MG_DEFAULT_COMPOUNDS = new Set([
-  "Semaglutide", "Tirzepatide", "Retatrutide", "NAD+",
-]);
+// Compound library + mg-default set now live in the canonical data module
+// (src/data/compounds.ts), ported from the iOS app. Re-exported here so existing
+// importers keep working and there is a single source of truth.
+export { compounds as COMPOUNDS, mgDefaults as MG_DEFAULT_COMPOUNDS } from "@/data/compounds";
 
 export type DoseUnit = "mcg" | "mg";
 

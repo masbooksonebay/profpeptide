@@ -2,12 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import {
-  COMPOUNDS,
-  MG_DEFAULT_COMPOUNDS,
-  computeReconstitution,
-  type DoseUnit,
-} from "@/lib/reconstitution";
+import { computeReconstitution, type DoseUnit } from "@/lib/reconstitution";
+import { mgDefaultFor } from "@/data/compounds";
+import CompoundCombobox from "@/components/CompoundCombobox";
 import {
   type LogEntry,
   getEntries,
@@ -80,7 +77,7 @@ export default function LogPage() {
     setForm((f) => ({
       ...f,
       compound: v,
-      doseUnit: MG_DEFAULT_COMPOUNDS.has(v) ? "mg" : f.doseUnit,
+      doseUnit: mgDefaultFor(v) ? "mg" : f.doseUnit,
     }));
   };
 
@@ -233,20 +230,12 @@ export default function LogPage() {
             <div className="space-y-5">
               <div>
                 <label className={labelCls} htmlFor="compound">Compound</label>
-                <input
+                <CompoundCombobox
                   id="compound"
-                  list="pp-compounds"
-                  placeholder="e.g. BPC-157"
                   value={form.compound}
-                  onChange={(e) => onCompoundChange(e.target.value)}
-                  className={inputCls}
-                  autoComplete="off"
+                  onChange={onCompoundChange}
+                  placeholder="Search compounds — name or brand…"
                 />
-                <datalist id="pp-compounds">
-                  {COMPOUNDS.filter((c) => c !== "Custom Peptide").map((c) => (
-                    <option key={c} value={c} />
-                  ))}
-                </datalist>
               </div>
 
               <div className="grid grid-cols-2 gap-4">

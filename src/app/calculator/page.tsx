@@ -2,11 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import {
-  COMPOUNDS,
-  MG_DEFAULT_COMPOUNDS,
-  computeReconstitution,
-} from '@/lib/reconstitution';
+import { computeReconstitution } from '@/lib/reconstitution';
+import { compounds, mgDefaultFor } from '@/data/compounds';
+import CompoundCombobox from '@/components/CompoundCombobox';
 import { addEntry } from '@/lib/logStore';
 
 interface Results {
@@ -16,7 +14,7 @@ interface Results {
 }
 
 export default function CalculatorPage() {
-  const [compound, setCompound] = useState(COMPOUNDS[0]);
+  const [compound, setCompound] = useState(compounds[0]);
   const [vialSize, setVialSize] = useState('');
   const [waterVolume, setWaterVolume] = useState('');
   const [dose, setDose] = useState('');
@@ -27,7 +25,7 @@ export default function CalculatorPage() {
 
   const selectCompound = (name: string) => {
     setCompound(name);
-    setDoseUnit(MG_DEFAULT_COMPOUNDS.has(name) ? 'mg' : 'mcg');
+    setDoseUnit(mgDefaultFor(name) ? 'mg' : 'mcg');
   };
 
   const calculate = () => {
@@ -68,7 +66,7 @@ export default function CalculatorPage() {
   };
 
   const reset = () => {
-    setCompound(COMPOUNDS[0]);
+    setCompound(compounds[0]);
     setVialSize('');
     setWaterVolume('');
     setDose('');
@@ -105,15 +103,12 @@ export default function CalculatorPage() {
                 <label className="block text-sm font-medium mb-1.5 text-[#1e2d3d] dark:text-slate-200">
                   Select Compound
                 </label>
-                <select
+                <CompoundCombobox
                   value={compound}
-                  onChange={(e) => selectCompound(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#0891b2] transition appearance-none cursor-pointer"
-                >
-                  {COMPOUNDS.map((c) => (
-                    <option key={c} value={c}>{c}</option>
-                  ))}
-                </select>
+                  onChange={selectCompound}
+                  ariaLabel="Select compound"
+                  placeholder="Search compounds — name or brand…"
+                />
               </div>
 
               <div>
