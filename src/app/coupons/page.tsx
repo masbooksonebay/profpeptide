@@ -372,6 +372,15 @@ export default function CouponsPage() {
         ))}
       </div>
 
+      <Link href="/vendor-testing-index" className="card group block mb-4">
+        <span className="text-[#0891b2] mb-3 block"><Icon name="shield-block-outline" /></span>
+        <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1.5 group-hover:text-[#0891b2] transition-colors">Vendor COA &amp; Testing-Transparency Index</h3>
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
+          A side-by-side record of every vendor&rsquo;s documented third-party testing, COAs, purity standards, and testing methods — with honest &ldquo;pending&rdquo; where unconfirmed.
+        </p>
+        <span className="text-xs font-medium text-[#0891b2] group-hover:underline">Compare vendor testing &rarr;</span>
+      </Link>
+
       <Link href="/best-peptide-vendors" className="card group block mb-8">
         <span className="text-[#0891b2] mb-3 block"><Icon name="shield-block-outline" /></span>
         <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1.5 group-hover:text-[#0891b2] transition-colors">Best Peptide Vendors</h3>

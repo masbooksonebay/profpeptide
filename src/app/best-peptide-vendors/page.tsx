@@ -191,6 +191,9 @@ export default function BestPeptideVendorsPage() {
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Every vendor on this page is evaluated against the same criteria: third-party lab testing, published Certificates of Analysis, documented purity standards, catalog breadth, transparent shipping, responsive customer service, and reputation in the research community. Meeting all of them gets a vendor on the list &mdash; we don&rsquo;t score beyond that. We update this list regularly as the market changes.
           </p>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+            For a side-by-side breakdown of each vendor&rsquo;s documented testing, see our <Link href="/vendor-testing-index" className="text-[#0891b2] hover:underline">Vendor COA &amp; Testing-Transparency Index</Link>.
+          </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Looking for <Link href="/coupons" className="text-[#0891b2] hover:underline">active discount codes</Link> or our <Link href="/peptides" className="text-[#0891b2] hover:underline">peptide research library</Link>?
           </p>
