@@ -60,7 +60,7 @@ const features = [
   {
     icon: "phone-portrait-outline",
     title: "Get the App",
-    desc: "Prof. Peptide for iOS is live on the App Store. Calculate doses, browse compound profiles, and access research — anywhere.",
+    desc: "The all-in-one peptide tracker for iPhone — log doses, see estimated levels, run protocols, and search 60+ peptides by name or brand.",
     href: "/app",
     cta: "Download",
   },
@@ -200,9 +200,9 @@ export default function Home() {
             </div>
             <div className="bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl p-6 shadow-sm">
               <p className="text-xs font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-wider mb-4">Now on iOS</p>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Prof. Peptide for iPhone</h3>
+              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">The all-in-one peptide tracker</h3>
               <p className="text-sm text-gray-500 dark:text-slate-400 mb-5 leading-relaxed">
-                Calculate doses, browse the full peptide and supplement libraries, and access discount codes — all offline in a clean, private app.
+                Log doses, see estimated levels, calculate reconstitution, and search 60+ peptides by name or brand — all in one private iOS app.
               </p>
               <Link href="/app" className="btn-primary text-sm w-full text-center block">Get the App</Link>
             </div>
