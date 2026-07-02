@@ -11,9 +11,9 @@ export const metadata = buildPageMetadata({
   ogDescription:
     "Log doses, see estimated levels, calculate reconstitution, and search 60+ peptides by name or brand. Free on the App Store.",
   ogImage: {
-    url: "/og/app-thumbnail.png",
+    url: "/og/app-card.png",
     width: 1200,
-    height: 630,
+    height: 628,
     alt: "Prof. Peptide iOS App — All-in-One Peptide Tracker",
   },
 });
