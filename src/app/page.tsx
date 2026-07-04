@@ -76,7 +76,7 @@ const features = [
 const trust = [
   { value: "40+", label: "Peptide profiles" },
   { value: "50+", label: "Supplement profiles" },
-  { value: "10+", label: "Verified discount codes" },
+  { value: "20+", label: "Verified discount codes" },
   { value: "100%", label: "Independent research" },
 ];
 
@@ -107,10 +107,10 @@ export default function Home() {
       <section className="bg-white dark:bg-[#0f172a] border-b border-gray-100 dark:border-slate-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-[#1e2d3d] dark:text-slate-100 leading-tight mb-5">
-            Your research guide for<br className="hidden sm:block" /> peptides and natural supplements
+            Everything you need for<br className="hidden sm:block" /> peptide research, in one place
           </h1>
           <p className="text-lg text-gray-500 dark:text-slate-400 max-w-xl mx-auto mb-8 leading-relaxed">
-            Evidence-based research, precision dosage tools, and trusted supplier discount codes.
+            A research library, precision dosage calculator, protocol tracking, and a curated directory of trusted vendors with exclusive discount codes.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/peptides" className="btn-primary text-base px-8 py-3.5">Explore Peptides</Link>
