@@ -2,10 +2,10 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/royal-peptides",
-  title: "Royal Peptides Coupon & Promo Code 2026 — Verified 10% Off",
+  title: "Royal Peptides Discount Code — Save 10% (Verified 2026)",
   ogTitle: "Royal Peptides Coupon — Save 10% | Prof. Peptide",
   description:
-    "Verified, working Royal Peptides coupon, promo & discount code: PROF10 = 10% off — not a fake aggregator. cGMP/ISO-lab tested, 99%+ purity, batch COAs.",
+    "Royal Peptides discount code PROF10 saves 10% sitewide. Verified for 2026 — cGMP/ISO-lab tested to 99%+ purity with batch COAs and fast US same-day shipping.",
 });
 
 export default function RoyalPeptidesLayout({ children }: { children: React.ReactNode }) {

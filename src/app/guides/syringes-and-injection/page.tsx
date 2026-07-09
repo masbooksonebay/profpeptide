@@ -6,9 +6,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/guides/syringes-and-injection",
-  title: "Insulin Syringes and Injection Technique — A Practical Guide | Prof. Peptide",
+  title: "Insulin Syringe Units to mcg + How to Inject Peptides",
   description:
-    "Read insulin syringes, choose the right barrel size, convert units to mcg, and inject research peptides subcutaneously with the correct technique.",
+    "How to read insulin syringe units, convert units to mcg for any reconstitution, pick the right barrel size, and inject peptides subcutaneously step by step.",
   ogTitle: "Insulin Syringes & Injection",
   ogDescription:
     "A practical guide to reading insulin syringes, units vs mcg, and subcutaneous injection technique for peptide research.",

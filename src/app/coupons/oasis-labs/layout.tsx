@@ -2,9 +2,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/oasis-labs",
-  title: "Oasis Labs Coupon Code & Discount — Save 15% (2026) | Prof. Peptide",
+  title: "Oasis Labs Discount Code — Save 15% (Verified 2026)",
   description:
-    "Save 15% at Oasis Labs with discount code PROF15 \u2014 verified promo code for 2026. Veteran-owned, US-based, QR-verified COAs, -20\u00B0C storage, FedEx 2Day shipping.",
+    "Oasis Labs discount code PROF15 saves 15% sitewide. Verified for 2026 \u2014 veteran-owned, US-based, QR-verified COAs on every vial and FedEx 2Day shipping.",
 });
 
 export default function OasisLabsLayout({ children }: { children: React.ReactNode }) {

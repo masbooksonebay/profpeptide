@@ -8,9 +8,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/supplements/glucomannan",
-  title: "Glucomannan: Cholesterol Lowering (Moderate), Weight Loss (Contested), Choking Risk",
+  title: "Glucomannan: Does It Work? Benefits, Dosage & Safety",
   description:
-    "Glucomannan dosing (1–4 g) — Moderate LDL-cholesterol reduction (EFSA cholesterol-maintenance claim); weight loss CONTESTED (Onakpoya 2014 meta null vs EFSA 3 g/day claim); critical choking/esophageal obstruction safety with inadequate water.",
+    "What glucomannan actually does: modest cholesterol benefit, contested weight loss, how to dose it (1–4 g), and the choking risk you must avoid. Evidence-based.",
 });
 
 const faqs = [
