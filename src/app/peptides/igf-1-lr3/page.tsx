@@ -402,6 +402,8 @@ const sections = [
           highlights={[
             { slug: "behemoth-labz" },
             { slug: "spartan-peptides" },
+            { slug: "oasis-labs" },
+            { slug: "royal-peptides" },
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">

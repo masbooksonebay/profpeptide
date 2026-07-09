@@ -485,6 +485,7 @@ const sections = [
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners" },
             { slug: "spartan-peptides", note: "Spartan Strong pre-formulated blend" },
+            { slug: "midwest-peptide" },
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">

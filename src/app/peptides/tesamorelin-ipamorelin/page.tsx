@@ -452,6 +452,7 @@ const sections = [
             { slug: "peptide-partners" },
             { slug: "spartan-peptides", note: "Carries Tesamorelin and Ipamorelin" },
             { slug: "glacier-aminos" },
+            { slug: "oasis-labs" },
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
