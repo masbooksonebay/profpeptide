@@ -3,7 +3,14 @@ import { ImageResponse } from "next/og";
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
+// Coupon-tag icon (Ionicons pricetag) in deepened brand cyan #0E7490 — the same
+// tag used on the "Coupon Codes" homepage card. Rendered on an opaque white
+// square (iOS masks/rounds apple-touch-icons, so the background must be opaque).
+const TAG_SVG =
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><path fill="#0E7490" fill-rule="evenodd" clip-rule="evenodd" d="M435.25 48H312.35a14.46 14.46 0 0 0-10.2 4.2L56.45 297.9a28.85 28.85 0 0 0 0 40.7l117 117a28.85 28.85 0 0 0 40.7 0L459.75 210a14.46 14.46 0 0 0 4.2-10.2V76.8A28.66 28.66 0 0 0 435.25 48ZM384 160a32 32 0 1 1 32-32 32 32 0 0 1-32 32Z"/></svg>';
+
 export default function AppleIcon() {
+  const src = `data:image/svg+xml;base64,${Buffer.from(TAG_SVG).toString("base64")}`;
   return new ImageResponse(
     (
       <div
@@ -11,37 +18,13 @@ export default function AppleIcon() {
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#0f172a",
-          borderRadius: 24,
-          position: "relative",
+          background: "#ffffff",
         }}
       >
-        <div
-          style={{
-            position: "absolute",
-            top: 6,
-            left: 6,
-            right: 6,
-            bottom: 6,
-            border: "3px solid #0891b2",
-            borderRadius: 20,
-          }}
-        />
-<div
-          style={{
-            fontSize: 96,
-            fontWeight: 800,
-            color: "#f1f5f9",
-            fontFamily: "sans-serif",
-            marginTop: 10,
-            letterSpacing: -2,
-          }}
-        >
-          Pp
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img width={120} height={120} src={src} alt="" />
       </div>
     ),
     { ...size }
