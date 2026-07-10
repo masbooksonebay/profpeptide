@@ -5,8 +5,8 @@ const v = vendors["amino-club"];
 
 export const metadata = buildPageMetadata({
   path: "/coupons/amino-club",
-  title: "Amino Club Discount Code — Save 20% (Verified, 2026)",
-  description: `Amino Club discount code ${v.code} saves 20% sitewide. Verified & working for 2026 — third-party ISO-17025 tested peptides with a COA on every batch.`,
+  title: "Amino Club Discount Code — Save up to 30% (Verified 2026)",
+  description: `Amino Club discount code ${v.code} — save up to 30% sitewide. Verified & working for 2026, ISO-17025 tested peptides with a COA on every batch.`,
 });
 
 export default function AminoClubLayout({ children }: { children: React.ReactNode }) {
