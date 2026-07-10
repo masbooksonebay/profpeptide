@@ -5,6 +5,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/sermorelin-ipamorelin",
@@ -48,7 +49,7 @@ const faqs = [
   },
   {
     q: "Why is Ipamorelin the preferred GHRP partner for Sermorelin?",
-    a: "Ipamorelin is selective for the ghrelin / GHS-R1a receptor — it triggers GH release without meaningfully elevating cortisol, ACTH, prolactin, FSH, LH, or TSH. Older GHRPs (GHRP-2, GHRP-6, Hexarelin) produced GH release but also drove cortisol and appetite increases, which undercut the clean GH-axis profile that makes a GHRH+GHRP stack useful. Ipamorelin&apos;s selectivity means the combination avoids these side effects, producing a cleaner hormonal response.",
+    a: "Ipamorelin is selective for the ghrelin / GHS-R1a receptor — it triggers GH release without meaningfully elevating cortisol, ACTH, prolactin, FSH, LH, or TSH. Older GHRPs (GHRP-2, GHRP-6, Hexarelin) produced GH release but also drove cortisol and appetite increases, which undercut the clean GH-axis profile that makes a GHRH+GHRP stack useful. Ipamorelin's selectivity means the combination avoids these side effects, producing a cleaner hormonal response.",
   },
   {
     q: "When should I take Sermorelin + Ipamorelin?",
@@ -542,6 +543,7 @@ export default function SermorelinIpamorelinPage() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Sermorelin + Ipamorelin","description":"Sermorelin + Ipamorelin research profile: dual-pathway GH secretagogue blend, beginner-friendly with the strongest regulatory footing of the GHRH analog stacks. Mechanism, dosing, side effects, FAQ.","url":"https://profpeptide.com/peptides/sermorelin-ipamorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Sermorelin + Ipamorelin"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

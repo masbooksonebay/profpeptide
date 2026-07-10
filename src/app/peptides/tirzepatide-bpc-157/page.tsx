@@ -5,6 +5,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/tirzepatide-bpc-157",
@@ -45,7 +46,7 @@ const faqs = [
   },
   {
     q: "Why run BPC-157 separately rather than a pre-blended vial?",
-    a: "Tirzepatide is dosed once weekly, whereas BPC-157 is dosed daily (250–500 mcg). Their half-lives are incompatible with a single pre-blended vial &mdash; tirzepatide has a ~5-day half-life; BPC-157 is measured in minutes to hours. A pre-blended formulation would require daily injection of a product containing the full weekly tirzepatide dose, creating severe overdose risk. Always run tirzepatide and BPC-157 from separate vials on separate schedules.",
+    a: "Tirzepatide is dosed once weekly, whereas BPC-157 is dosed daily (250–500 mcg). Their half-lives are incompatible with a single pre-blended vial — tirzepatide has a ~5-day half-life; BPC-157 is measured in minutes to hours. A pre-blended formulation would require daily injection of a product containing the full weekly tirzepatide dose, creating severe overdose risk. Always run tirzepatide and BPC-157 from separate vials on separate schedules.",
   },
   {
     q: "Is tirzepatide FDA-approved? What about BPC-157?",
@@ -490,6 +491,7 @@ export default function TirzepatideBpc157Page() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tirzepatide + BPC-157","description":"Tirzepatide + BPC-157 research blend profile: dual GIP/GLP-1 agonist paired with BPC-157 for GI-side-effect mitigation and lean-mass protection. Mechanism, dosing, side effects, FAQ.","url":"https://profpeptide.com/peptides/tirzepatide-bpc-157","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Tirzepatide + BPC-157"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="section max-w-3xl">
         <Link
           href="/peptides"

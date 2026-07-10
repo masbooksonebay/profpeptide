@@ -6,6 +6,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/semaglutide",
@@ -633,6 +634,7 @@ export default function SemaglutidePage() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Semaglutide","description":"Semaglutide (Ozempic/Wegovy/Rybelsus) research profile: mechanism, STEP trial results, SELECT cardiovascular data, dosing protocol, side effects, and FAQ.","url":"https://profpeptide.com/peptides/semaglutide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Semaglutide"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

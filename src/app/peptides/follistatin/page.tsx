@@ -6,6 +6,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/follistatin",
@@ -525,6 +526,7 @@ export default function FollistatinPage() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Follistatin","description":"Follistatin (FS-344) research profile: myostatin inhibition mechanism, dosing protocol, gene therapy data, side effects, FAQ, and current regulatory status.","url":"https://profpeptide.com/peptides/follistatin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Follistatin"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

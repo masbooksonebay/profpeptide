@@ -5,6 +5,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/cjc-1295-dac-ipamorelin",
@@ -571,6 +572,7 @@ export default function CJC1295DACIpamorelinPage() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"CJC-1295 DAC + Ipamorelin","description":"CJC-1295 DAC + Ipamorelin research profile: once-weekly DAC variant of the GH secretagogue stack. DAC vs no-DAC mechanism, sustained GH bleed, dosing protocol, side effects, FAQ.","url":"https://profpeptide.com/peptides/cjc-1295-dac-ipamorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"CJC-1295 DAC + Ipamorelin"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

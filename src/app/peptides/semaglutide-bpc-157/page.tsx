@@ -5,6 +5,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/semaglutide-bpc-157",
@@ -710,6 +711,7 @@ export default function SemaglutideBpc157Page() {
           ],
         }}
       />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="section max-w-3xl">
         <Link
           href="/peptides"

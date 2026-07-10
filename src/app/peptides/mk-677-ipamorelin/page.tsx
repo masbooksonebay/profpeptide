@@ -5,6 +5,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/mk-677-ipamorelin",
@@ -615,6 +616,7 @@ export default function MK677IpamorelinPage() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"MK-677 + Ipamorelin","description":"MK-677 + Ipamorelin research profile: oral ghrelin-mimetic baseline plus injectable selective GHRP pulse trigger. Overlapping GHS-R1a mechanism, dosing protocol, side effects, FAQ.","url":"https://profpeptide.com/peptides/mk-677-ipamorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"MK-677 + Ipamorelin"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

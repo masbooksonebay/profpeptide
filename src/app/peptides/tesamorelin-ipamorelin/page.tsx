@@ -5,6 +5,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/tesamorelin-ipamorelin",
@@ -46,7 +47,7 @@ const faqs = [
   },
   {
     q: "Why is Ipamorelin the preferred GHRP partner for Tesamorelin?",
-    a: "Ipamorelin is selective for the ghrelin / GHS-R1a receptor — it triggers GH release without meaningfully elevating cortisol, ACTH, prolactin, FSH, LH, or TSH. Older GHRPs (GHRP-2, GHRP-6, Hexarelin) produced GH release but also drove cortisol and appetite increases, which undercut the clean hormonal profile that makes a GHRH+GHRP stack useful for metabolic research. Ipamorelin&apos;s selectivity means the combination preserves Tesamorelin&apos;s clinical hormonal profile — GH and IGF-1 elevation without confounding cortisol elevation — making it the appropriate GHS-R1a partner.",
+    a: "Ipamorelin is selective for the ghrelin / GHS-R1a receptor — it triggers GH release without meaningfully elevating cortisol, ACTH, prolactin, FSH, LH, or TSH. Older GHRPs (GHRP-2, GHRP-6, Hexarelin) produced GH release but also drove cortisol and appetite increases, which undercut the clean hormonal profile that makes a GHRH+GHRP stack useful for metabolic research. Ipamorelin's selectivity means the combination preserves Tesamorelin's clinical hormonal profile — GH and IGF-1 elevation without confounding cortisol elevation — making it the appropriate GHS-R1a partner.",
   },
   {
     q: "When should Tesamorelin + Ipamorelin be dosed?",
@@ -550,6 +551,7 @@ export default function TesaIpamorelinPage() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tesamorelin + Ipamorelin","description":"Tesamorelin + Ipamorelin research profile: FDA-referenced GHRH analog + selective GHRP dual-pathway blend, visceral-fat reduction angle, IGF-1 elevation, dosing protocol, side effects, FAQ.","url":"https://profpeptide.com/peptides/tesamorelin-ipamorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Tesamorelin + Ipamorelin"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

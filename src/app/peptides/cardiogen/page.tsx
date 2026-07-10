@@ -4,6 +4,7 @@ import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/cardiogen",
@@ -280,6 +281,7 @@ export default function CardiogenPage() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Cardiogen","description":"Cardiogen (AEDR, Ala-Glu-Asp-Arg) research profile: proposed cardiomyocyte proliferation, anti-fibrotic and anti-apoptotic (p53) signaling, peptide–DNA gene-expression modulation, preclinical cardioprotection, and candid limitations. Research use only.","url":"https://profpeptide.com/peptides/cardiogen","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Cardiogen"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

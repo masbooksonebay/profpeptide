@@ -5,6 +5,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/kpv-bpc-157",
@@ -37,11 +38,11 @@ const faqs = [
   },
   {
     q: "Can KPV and BPC-157 both be dosed orally?",
-    a: "Yes &mdash; both peptides demonstrate oral bioavailability that is relevant for gut-local effects. KPV is absorbed via the PepT1 nutrient transporter in intestinal epithelial cells, enabling gut-local NF-κB inhibition without needing to reach systemic circulation. BPC-157 has been studied extensively in oral form across GI ulcer, IBD, and fistula models with consistent cytoprotective effects. Oral dosing of both peptides is common in gut-focused research protocols; subcutaneous dosing is used when systemic anti-inflammatory or non-GI tissue repair effects are the goal. Both routes can be combined (oral KPV for gut-local action + SC BPC-157 for systemic coverage) but this is community-derived, not clinically validated.",
+    a: "Yes — both peptides demonstrate oral bioavailability that is relevant for gut-local effects. KPV is absorbed via the PepT1 nutrient transporter in intestinal epithelial cells, enabling gut-local NF-κB inhibition without needing to reach systemic circulation. BPC-157 has been studied extensively in oral form across GI ulcer, IBD, and fistula models with consistent cytoprotective effects. Oral dosing of both peptides is common in gut-focused research protocols; subcutaneous dosing is used when systemic anti-inflammatory or non-GI tissue repair effects are the goal. Both routes can be combined (oral KPV for gut-local action + SC BPC-157 for systemic coverage) but this is community-derived, not clinically validated.",
   },
   {
     q: "Is BPC-157 or KPV WADA-prohibited?",
-    a: "They differ on this point. BPC-157 is listed on the World Anti-Doping Agency prohibited list under Section S0 (non-approved substances) and is banned in tested sport. KPV is NOT currently listed as a WADA-prohibited substance &mdash; it does not engage anabolic or hormone-modulating pathways covered by existing prohibited classes. Tested athletes should not use any protocol containing BPC-157, regardless of KPV&apos;s permitted status.",
+    a: "They differ on this point. BPC-157 is listed on the World Anti-Doping Agency prohibited list under Section S0 (non-approved substances) and is banned in tested sport. KPV is NOT currently listed as a WADA-prohibited substance — it does not engage anabolic or hormone-modulating pathways covered by existing prohibited classes. Tested athletes should not use any protocol containing BPC-157, regardless of KPV's permitted status.",
   },
   {
     q: "Is the KPV + BPC-157 combination FDA-approved?",
@@ -49,11 +50,11 @@ const faqs = [
   },
   {
     q: "What side effects are reported with KPV + BPC-157?",
-    a: "The combination is generally well-tolerated in preclinical models. Most reported side effects in research-community use are mild: injection-site reactions (redness, mild irritation), transient fatigue, and transient GI changes (loose stool or appetite shifts, especially with oral BPC-157). Less common: mild headache, mild nausea during the first week. Serious effects are rare and theoretical &mdash; primarily the angiogenesis-stimulation concern with BPC-157 in oncology-adjacent contexts. KPV does not engage melanocortin receptors and does not produce the pigmentation or appetite side effects associated with full-length α-MSH.",
+    a: "The combination is generally well-tolerated in preclinical models. Most reported side effects in research-community use are mild: injection-site reactions (redness, mild irritation), transient fatigue, and transient GI changes (loose stool or appetite shifts, especially with oral BPC-157). Less common: mild headache, mild nausea during the first week. Serious effects are rare and theoretical — primarily the angiogenesis-stimulation concern with BPC-157 in oncology-adjacent contexts. KPV does not engage melanocortin receptors and does not produce the pigmentation or appetite side effects associated with full-length α-MSH.",
   },
   {
     q: "How long before KPV + BPC-157 shows effects for gut issues?",
-    a: "BPC-157&apos;s cytoprotective effects in animal GI models begin within the first week of dosing &mdash; mucosal protection markers shift rapidly. KPV&apos;s NF-κB inhibition is similarly fast-onset. Subjective gut symptom improvement in research-community reports typically appears in weeks 2&ndash;4. Structural mucosal healing (ulcer resolution, barrier integrity improvements) in preclinical models accumulates over 4&ndash;8 weeks. Standard research cycles run 6&ndash;8 weeks, with an optional rest period before repeating.",
+    a: "BPC-157's cytoprotective effects in animal GI models begin within the first week of dosing — mucosal protection markers shift rapidly. KPV's NF-κB inhibition is similarly fast-onset. Subjective gut symptom improvement in research-community reports typically appears in weeks 2–4. Structural mucosal healing (ulcer resolution, barrier integrity improvements) in preclinical models accumulates over 4–8 weeks. Standard research cycles run 6–8 weeks, with an optional rest period before repeating.",
   },
 ];
 
@@ -450,6 +451,7 @@ export default function KpvBpc157Page() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"KPV + BPC-157","description":"KPV + BPC-157 research profile: 2-component gut-healing stack combining NF-κB-blocking KPV with cytoprotective BPC-157 for IBD, mucosal repair, and systemic inflammation. Mechanism, dosing (oral & SC), side effects, FAQ.","url":"https://profpeptide.com/peptides/kpv-bpc-157","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"KPV + BPC-157"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

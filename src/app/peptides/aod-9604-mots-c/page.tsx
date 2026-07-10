@@ -4,6 +4,7 @@ import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/aod-9604-mots-c",
@@ -361,6 +362,7 @@ export default function AOD9604MOTScPage() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"AOD-9604 + MOTS-c","description":"AOD-9604 + MOTS-c is a 2-component metabolic stack pairing an hGH-fragment lipolytic peptide with a mitochondrial AMPK activator for fat-loss research. Mechanism, dosing, stacks, side effects, and what the evidence actually shows.","url":"https://profpeptide.com/peptides/aod-9604-mots-c","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"AOD-9604 + MOTS-c"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

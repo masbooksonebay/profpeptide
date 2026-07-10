@@ -4,6 +4,7 @@ import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/ss-31",
@@ -254,6 +255,7 @@ export default function SS31Page() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"SS-31 (Elamipretide)","description":"SS-31 / elamipretide research profile: cardiolipin-targeting mitochondrial mechanism, the FDA-approved drug Forzinity for Barth syndrome vs. research-use-only SS-31, preclinical bioenergetic and aging studies, dosing, references.","url":"https://profpeptide.com/peptides/ss-31","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"SS-31 (Elamipretide)"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

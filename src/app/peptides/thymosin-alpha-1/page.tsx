@@ -6,6 +6,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/thymosin-alpha-1",
@@ -509,6 +510,7 @@ export default function ThymosinAlpha1Page() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Thymosin Alpha-1","description":"Thymosin Alpha-1 (Zadaxin) research profile: T-cell maturation mechanism, hepatitis approval, dosing protocol, side effects, FAQ, and immune modulation.","url":"https://profpeptide.com/peptides/thymosin-alpha-1","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Thymosin Alpha-1"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

@@ -5,6 +5,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/nad-mots-c-5-amino-1mq",
@@ -39,11 +40,11 @@ const faqs = [
   },
   {
     q: "What does 5-Amino-1MQ add to the blend?",
-    a: "5-Amino-1MQ is a small-molecule inhibitor of NNMT (nicotinamide N-methyltransferase). NNMT consumes NAD+ precursors by methylating nicotinamide into 1-methylnicotinamide — a metabolic &ldquo;sink.&rdquo; By blocking NNMT, 5-Amino-1MQ raises intracellular NAD+ and SAM (S-adenosylmethionine) levels and has been studied for adipocyte metabolism and fat-mass reduction. It is often described as an NNMT inhibitor that boosts the efficiency of the NAD+ system the other two components are feeding. Human data are limited; most evidence is from preclinical adipocyte models.",
+    a: "5-Amino-1MQ is a small-molecule inhibitor of NNMT (nicotinamide N-methyltransferase). NNMT consumes NAD+ precursors by methylating nicotinamide into 1-methylnicotinamide — a metabolic “sink.” By blocking NNMT, 5-Amino-1MQ raises intracellular NAD+ and SAM (S-adenosylmethionine) levels and has been studied for adipocyte metabolism and fat-mass reduction. It is often described as an NNMT inhibitor that boosts the efficiency of the NAD+ system the other two components are feeding. Human data are limited; most evidence is from preclinical adipocyte models.",
   },
   {
     q: "How is 5-Amino-1MQ delivered in combined vial products?",
-    a: "5-Amino-1MQ is a small molecule rather than a peptide, and it is typically dosed orally (capsule or tablet) as a standalone compound. When included in combined single-vial research products, it is dissolved into the lyophilized powder alongside NAD+ and MOTS-c, and reconstituted for subcutaneous injection. This is a vendor formulation choice, not a standard clinical practice, and researchers should review the vendor&apos;s Certificate of Analysis for the actual delivery format of their specific product.",
+    a: "5-Amino-1MQ is a small molecule rather than a peptide, and it is typically dosed orally (capsule or tablet) as a standalone compound. When included in combined single-vial research products, it is dissolved into the lyophilized powder alongside NAD+ and MOTS-c, and reconstituted for subcutaneous injection. This is a vendor formulation choice, not a standard clinical practice, and researchers should review the vendor's Certificate of Analysis for the actual delivery format of their specific product.",
   },
   {
     q: "Is this blend FDA-approved?",
@@ -51,7 +52,7 @@ const faqs = [
   },
   {
     q: "How long does the Metabolic Blend take to show effects?",
-    a: "NAD+ replenishment effects on energy and cellular signaling can emerge within days of IV or SC administration in research contexts. MOTS-c&apos;s AMPK-activation and metabolic flexibility effects have been observed within 1&ndash;4 weeks in animal and limited human pharmacodynamic studies. 5-Amino-1MQ&apos;s adipocyte metabolic effects in preclinical models required sustained dosing over several weeks. Community-reported timelines for noticeable subjective effects from the combined blend range from 2&ndash;6 weeks, with metabolic biomarker changes (if tracked) appearing later. No controlled human trial has defined a timeline for the combination.",
+    a: "NAD+ replenishment effects on energy and cellular signaling can emerge within days of IV or SC administration in research contexts. MOTS-c's AMPK-activation and metabolic flexibility effects have been observed within 1–4 weeks in animal and limited human pharmacodynamic studies. 5-Amino-1MQ's adipocyte metabolic effects in preclinical models required sustained dosing over several weeks. Community-reported timelines for noticeable subjective effects from the combined blend range from 2–6 weeks, with metabolic biomarker changes (if tracked) appearing later. No controlled human trial has defined a timeline for the combination.",
   },
   {
     q: "Where can I buy the Metabolic Blend?",
@@ -424,6 +425,7 @@ export default function MetabolicBlendPage() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Metabolic Blend (NAD+ + MOTS-c + 5-Amino-1MQ)","description":"Metabolic Blend research profile: 3-component NAD+ + MOTS-c + 5-Amino-1MQ longevity and metabolic formulation. Mechanism, dosing, reconstitution, side effects, FAQ.","url":"https://profpeptide.com/peptides/nad-mots-c-5-amino-1mq","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Metabolic Blend (NAD+ + MOTS-c + 5-Amino-1MQ)"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

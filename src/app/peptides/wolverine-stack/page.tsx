@@ -4,6 +4,7 @@ import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/wolverine-stack",
@@ -51,7 +52,7 @@ const faqs = [
   },
   {
     q: "Can I cycle BPC-157 and TB-500 separately?",
-    a: "Yes — some users run BPC-157 continuously for chronic conditions and add TB-500 as a 4–6 week pulse for specific injuries. Others run a 6–8 week stack cycle and then take both off together. There is no clinically validated &ldquo;best&rdquo; approach. Cycling both off together is the most common protocol because it gives a clear washout period and matches typical TB-500 loading/maintenance schedules.",
+    a: "Yes — some users run BPC-157 continuously for chronic conditions and add TB-500 as a 4–6 week pulse for specific injuries. Others run a 6–8 week stack cycle and then take both off together. There is no clinically validated “best” approach. Cycling both off together is the most common protocol because it gives a clear washout period and matches typical TB-500 loading/maintenance schedules.",
   },
   {
     q: "Where can I buy the Wolverine Stack?",
@@ -433,6 +434,7 @@ export default function WolverineStackPage() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Wolverine Stack","description":"Wolverine Stack research profile: 2-component BPC-157 + TB-500 blend for tendon, ligament, and soft-tissue repair. Mechanism, dosing, side effects, FAQ.","url":"https://profpeptide.com/peptides/wolverine-stack","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Wolverine Stack"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"

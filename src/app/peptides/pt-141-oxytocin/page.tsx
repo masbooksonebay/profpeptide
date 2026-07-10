@@ -5,6 +5,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/pt-141-oxytocin",
@@ -40,7 +41,7 @@ const faqs = [
   },
   {
     q: "What delivery route does oxytocin use in this blend?",
-    a: "Oxytocin in research and compounded contexts is most commonly administered as a sublingual troche or intranasal spray &mdash; not by subcutaneous injection, which is the route used for PT-141. Intranasal oxytocin crosses the blood-brain barrier efficiently and is the route used in published human social-bonding research. Sublingual troches are often compounded for convenience. The practical implication for this blend is that the two peptides are administered by different routes: PT-141 is reconstituted from lyophilized powder and injected subcutaneously; oxytocin is typically used as a nasal spray or troche around the same time window.",
+    a: "Oxytocin in research and compounded contexts is most commonly administered as a sublingual troche or intranasal spray — not by subcutaneous injection, which is the route used for PT-141. Intranasal oxytocin crosses the blood-brain barrier efficiently and is the route used in published human social-bonding research. Sublingual troches are often compounded for convenience. The practical implication for this blend is that the two peptides are administered by different routes: PT-141 is reconstituted from lyophilized powder and injected subcutaneously; oxytocin is typically used as a nasal spray or troche around the same time window.",
   },
   {
     q: "Has the PT-141 + Oxytocin combination been studied in a controlled trial?",
@@ -457,6 +458,7 @@ export default function PT141OxytocinPage() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"PT-141 + Oxytocin","description":"PT-141 + Oxytocin research profile: melanocortin agonist + bonding neuropeptide blend for sexual desire, arousal, and intimacy. Mechanism, dosing, delivery routes, side effects, FAQ.","url":"https://profpeptide.com/peptides/pt-141-oxytocin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"PT-141 + Oxytocin"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
