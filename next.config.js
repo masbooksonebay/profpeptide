@@ -37,7 +37,7 @@ const nextConfig = {
   // without this the tracer can drop them and 500 the cards in production.
   experimental: {
     outputFileTracingIncludes: {
-      "/coupons/**": ["./public/og/coupon-card-base.png", "./public/fonts/*.ttf"],
+      "/coupons/**": ["./public/og/coupon-card-base.jpg", "./public/fonts/*.ttf"],
     },
   },
   async headers() {

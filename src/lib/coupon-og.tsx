@@ -15,13 +15,33 @@ function parseDiscountPercent(raw: string): number | null {
   return match ? parseInt(match[1], 10) : null;
 }
 
+// Per-vendor social-card copy overrides. Used where the page's marketing meta
+// intentionally differs from the shared vendors[].discount data — e.g. amino-club
+// advertises "up to 30%" on the page while the base discount datum stays "20% off".
+// Overriding here keeps the OG card in sync with the visible page WITHOUT mutating
+// vendor.discount (which also feeds listings and the Offer schema).
+interface OgCopyOverride {
+  percent: number;
+  prefix?: string; // small eyebrow above the big "N% OFF" (e.g. "UP TO")
+}
+const OG_COPY_OVERRIDES: Record<string, OgCopyOverride> = {
+  "amino-club": { percent: 30, prefix: "UP TO" },
+};
+
+// Resolve the discount figure + optional prefix shown on the card and in alt text.
+function resolveOgCopy(slug: string, discount: string): { percent: number | null; prefix?: string } {
+  const override = OG_COPY_OVERRIDES[slug];
+  if (override) return { percent: override.percent, prefix: override.prefix };
+  return { percent: parseDiscountPercent(discount) };
+}
+
 export function altFor(slug: string): string {
   const vendor = vendors[slug];
   if (!vendor) return "Prof. Peptide — verified research peptide discount codes";
-  const pct = parseDiscountPercent(vendor.discount);
-  return pct
-    ? `${vendor.name} discount code ${vendor.code} — Save ${pct}% on research peptides`
-    : `${vendor.name} discount code ${vendor.code}`;
+  const { percent, prefix } = resolveOgCopy(slug, vendor.discount);
+  if (percent === null) return `${vendor.name} discount code ${vendor.code}`;
+  const save = prefix ? `Save ${prefix.toLowerCase()} ${percent}%` : `Save ${percent}%`;
+  return `${vendor.name} discount code ${vendor.code} — ${save} on research peptides`;
 }
 
 // Auto-fit the coupon code so a long code (e.g. PROFPEPTIDE, 11 chars) stays in
@@ -42,9 +62,9 @@ interface Assets {
   fonts: { name: string; data: Buffer; weight: 400 | 500 | 700 | 800; style: "normal" }[];
 }
 
-// Assets live in public/ and are read from disk at render time. The base PNG
-// (~1.4MB) rules out the edge runtime, and fetch(new URL(...)) has no origin to
-// resolve against during Node prerender — so we read from process.cwd() and
+// Assets live in public/ and are read from disk at render time. The base image
+// (~94KB JPEG) rules out the edge runtime, and fetch(new URL(...)) has no origin
+// to resolve against during Node prerender — so we read from process.cwd() and
 // force Vercel's file tracer to bundle these via `outputFileTracingIncludes`
 // in next.config.js. That mapping is what keeps tracing from dropping them in
 // production (the cause of the 500); keep the two in sync.
@@ -55,14 +75,14 @@ function loadAssets(): Promise<Assets> {
     assetsPromise = (async () => {
       const root = process.cwd();
       const [bg, regular, medium, bold, extraBold] = await Promise.all([
-        readFile(join(root, "public/og/coupon-card-base.png")),
+        readFile(join(root, "public/og/coupon-card-base.jpg")),
         readFile(join(root, "public/fonts/Inter-Regular.ttf")),
         readFile(join(root, "public/fonts/Inter-Medium.ttf")),
         readFile(join(root, "public/fonts/Inter-Bold.ttf")),
         readFile(join(root, "public/fonts/Inter-ExtraBold.ttf")),
       ]);
       return {
-        bg: `data:image/png;base64,${bg.toString("base64")}`,
+        bg: `data:image/jpeg;base64,${bg.toString("base64")}`,
         fonts: [
           { name: "Inter", data: regular, weight: 400, style: "normal" },
           { name: "Inter", data: medium, weight: 500, style: "normal" },
@@ -200,12 +220,38 @@ function Shell({
   );
 }
 
-function VendorCard({ bg, name, percent, code }: { bg: string; name: string; percent: number; code: string }) {
+function VendorCard({
+  bg,
+  name,
+  percent,
+  code,
+  prefix,
+}: {
+  bg: string;
+  name: string;
+  percent: number;
+  code: string;
+  prefix?: string;
+}) {
   return (
     <Shell bg={bg} justify="center">
       <LogoLockup />
 
       <div style={{ display: "flex", flexDirection: "column", marginTop: 28 }}>
+        {prefix && (
+          <div
+            style={{
+              display: "flex",
+              fontSize: 40,
+              fontWeight: 700,
+              color: LIGHT,
+              letterSpacing: 2,
+              marginBottom: 4,
+            }}
+          >
+            {prefix}
+          </div>
+        )}
         <div
           style={{
             display: "flex",
@@ -258,13 +304,15 @@ function FallbackCard({ bg }: { bg: string }) {
 export async function generateCouponOg(slug: string): Promise<ImageResponse> {
   const { bg, fonts } = await loadAssets();
   const vendor = vendors[slug];
-  const pct = vendor ? parseDiscountPercent(vendor.discount) : null;
+  const { percent: pct, prefix } = vendor
+    ? resolveOgCopy(slug, vendor.discount)
+    : { percent: null, prefix: undefined };
 
   const element =
     !vendor || pct === null ? (
       <FallbackCard bg={bg} />
     ) : (
-      <VendorCard bg={bg} name={vendor.name} percent={pct} code={vendor.code} />
+      <VendorCard bg={bg} name={vendor.name} percent={pct} code={vendor.code} prefix={prefix} />
     );
 
   return new ImageResponse(element, { ...IMAGE_SIZE, fonts });
