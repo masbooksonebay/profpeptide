@@ -2,9 +2,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/peptides-gg",
-  title: "Peptides.gg Coupon Code & Discount — Save 15% (2026) | Prof. Peptide",
+  title: "Peptides.gg Discount Code: PROF15 — Save 15%",
   description:
-    "Peptides.gg coupon code PROF15 — verified discount code and promo code for 2026. Save 15% on US-made research peptides, third-party tested per batch with COAs.",
+    "Use code PROF15 at Peptides.gg to save 15% sitewide — verified and working for 2026. US-made, third-party tested per batch with COAs.",
 });
 
 export default function PeptidesGgLayout({ children }: { children: React.ReactNode }) {

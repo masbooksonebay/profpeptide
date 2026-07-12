@@ -2,10 +2,10 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons/midwest-peptide",
-  title: "Midwest Peptide Discount Code — Save 10% (Verified 2026)",
+  title: "Midwest Peptide Discount Code: PROF10 — Save 10%",
   ogTitle: "Midwest Peptide Coupon — Save 10% | Prof. Peptide",
   description:
-    "Midwest Peptide discount code PROF10 saves 10% sitewide. Verified for 2026 — 99%+ purity, third-party tested with a COA per product and free same-day US shipping.",
+    "Use code PROF10 at Midwest Peptide to save 10% sitewide — verified and working for 2026. 99%+ purity, third-party tested with a COA per product.",
 });
 
 export default function MidwestPeptideLayout({ children }: { children: React.ReactNode }) {
