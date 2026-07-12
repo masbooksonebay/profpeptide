@@ -5,9 +5,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/compare/epitalon-vs-nad-plus",
-  title: "Epitalon vs NAD+ — Mechanism, Evidence & Which to Pick | Prof. Peptide",
+  title: "Epitalon vs NAD+ for Longevity: Which to Choose (2026)",
   description:
-    "Epitalon vs NAD+ — how these two longevity compounds differ in mechanism, research evidence, and use, and which one fits your goal.",
+    "NAD+ has the stronger, replicated human evidence; epitalon (epithalon) targets telomeres. Compare mechanism, trials & which fits your anti-aging goal.",
 });
 
 const rows = [

@@ -5,9 +5,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
-  title: "Semaglutide vs Tirzepatide vs Retatrutide Compared (2026)",
+  title: "Semaglutide vs Tirzepatide vs Retatrutide: Which Wins?",
   description:
-    "Weight loss ~15% vs 22% vs 24%, plus mechanism, side effects & FDA status — semaglutide vs tirzepatide vs retatrutide compared, and which fits your goal.",
+    "Retatrutide leads weight loss (~24%), but tirzepatide (~22%) beats semaglutide/Ozempic (~15%) — the strongest approved option. Trial data & which to pick.",
 });
 
 const rows = [

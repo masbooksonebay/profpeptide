@@ -5,9 +5,9 @@ import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/compare/berberine-vs-metformin",
-  title: "Berberine vs Metformin — Same AMPK Activation? Mechanism Compared | Prof. Peptide",
+  title: "Berberine vs Metformin: Which Works Better? (2026)",
   description:
-    "Berberine vs metformin — both activate AMPK, but how similar are they really? Mechanism, blood-sugar efficacy, side effects, and what the research shows.",
+    "Both activate AMPK with comparable HbA1c drops, but metformin is the diabetes gold standard while berberine suits prediabetes & lipids. Which to choose.",
 });
 
 const rows = [
