@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 49 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 50 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 49 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 50 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -33,6 +33,7 @@ const categories = [
     slug: "recovery",
     peptides: [
       { name: "BPC-157", slug: "bpc-157" },
+      { name: "PDA (Pentadeca Arginate)", slug: "pda" },
       { name: "TB-500", slug: "tb-500" },
       { name: "Wolverine Stack", slug: "wolverine-stack" },
     ],
