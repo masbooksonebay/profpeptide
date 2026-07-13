@@ -31,7 +31,7 @@ export default function CreatineVsBetaAlaninePage() {
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Creatine vs Beta-Alanine &mdash; Performance Supplement Comparison</h1>
-      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Creatine and Beta-Alanine are two of the most evidence-backed performance supplements available. They&apos;re often compared but work through completely different mechanisms &mdash; making them complementary rather than interchangeable. Creatine is best for explosive strength. Beta-alanine is best for sustained high-intensity endurance lasting 1&ndash;4 minutes.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine</Link> and <Link href="/supplements/beta-alanine" className="text-[#0891b2] hover:underline">Beta-Alanine</Link> are two of the most evidence-backed performance supplements available. They&apos;re often compared but work through completely different mechanisms &mdash; making them complementary rather than interchangeable. Creatine is best for explosive strength. Beta-alanine is best for sustained high-intensity endurance lasting 1&ndash;4 minutes.</p>
 
       <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why these two address completely different muscle bottlenecks</h2>
@@ -111,7 +111,7 @@ export default function CreatineVsBetaAlaninePage() {
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-lg text-gray-600 dark:text-slate-300">These supplements are not competitors &mdash; they address different metabolic bottlenecks. <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine</Link> handles the ATP side (explosive power), <Link href="/supplements/beta-alanine" className="text-[#0891b2] hover:underline">Beta-Alanine</Link> handles the acid buffering side (endurance and repeated efforts). Combined use is well-supported by research and makes sense for most athletes. If you can only pick one: choose creatine for strength and power sports, beta-alanine for endurance and mixed sports.</p>
+        <p className="text-lg text-gray-600 dark:text-slate-300">These supplements are not competitors &mdash; they address different metabolic bottlenecks. Creatine handles the ATP side (explosive power), Beta-Alanine handles the acid buffering side (endurance and repeated efforts). Combined use is well-supported by research and makes sense for most athletes. If you can only pick one: choose creatine for strength and power sports, beta-alanine for endurance and mixed sports.</p>
       </div>
 
       <div className="mb-8">

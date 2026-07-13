@@ -32,7 +32,7 @@ export default function AshwagandhaVsRhodiolaPage() {
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Ashwagandha vs Rhodiola Rosea &mdash; Adaptogen Comparison</h1>
-      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Ashwagandha and Rhodiola Rosea are the two most evidence-backed adaptogens. Both reduce stress and improve performance &mdash; but they work through different mechanisms and are best suited to different situations. Ashwagandha primarily lowers cortisol and reduces anxiety. Rhodiola primarily enhances mental performance and physical endurance under stress.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link> and <Link href="/supplements/rhodiola-rosea" className="text-[#0891b2] hover:underline">Rhodiola Rosea</Link> are the two most evidence-backed adaptogens. Both reduce stress and improve performance &mdash; but they work through different mechanisms and are best suited to different situations. Ashwagandha primarily lowers cortisol and reduces anxiety. Rhodiola primarily enhances mental performance and physical endurance under stress.</p>
 
       <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why two adaptogens that both reduce stress aren&apos;t interchangeable</h2>
@@ -110,7 +110,7 @@ export default function AshwagandhaVsRhodiolaPage() {
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link> is better for chronic stress, anxiety reduction, and sleep quality. <Link href="/supplements/rhodiola-rosea" className="text-[#0891b2] hover:underline">Rhodiola</Link> is better for acute mental performance and endurance under stress. They complement each other well and are frequently combined in adaptogen stacks.</p>
+        <p className="text-lg text-gray-600 dark:text-slate-300">Ashwagandha is better for chronic stress, anxiety reduction, and sleep quality. Rhodiola is better for acute mental performance and endurance under stress. They complement each other well and are frequently combined in adaptogen stacks.</p>
       </div>
 
       <div className="mb-8">
