@@ -3,11 +3,11 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
   alternates: { canonical: "/best-peptide-vendors" },
-  title: "Best Peptide Vendors (June 2026) — Vetted Research Suppliers | Prof. Peptide",
+  title: "Best Peptide Vendors (July 2026) — Vetted Research Suppliers | Prof. Peptide",
   description:
     "Alphabetical list of the peptide vendors we've vetted for third-party testing, published COAs, purity standards, shipping reliability, and community reputation. Not a ranking.",
   openGraph: {
-    title: "Best Peptide Vendors (June 2026) — Vetted Research Suppliers",
+    title: "Best Peptide Vendors (July 2026) — Vetted Research Suppliers",
     description:
       "Alphabetical list of vetted peptide research suppliers — third-party tested, COA-backed, and reviewed by Prof. Peptide.",
     url: "https://profpeptide.com/best-peptide-vendors",
@@ -88,7 +88,7 @@ export default function BestPeptideVendorsPage() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Best Peptide Vendors for Research (June 2026)",
+        "headline": "Best Peptide Vendors for Research (July 2026)",
         "description": "Alphabetical list of the peptide vendors Prof. Peptide has vetted for third-party testing, COA transparency, purity standards, shipping reliability, and community reputation.",
         "datePublished": "2026-04-16",
         "dateModified": "2026-06-25",
@@ -106,9 +106,9 @@ export default function BestPeptideVendorsPage() {
       }} />
 
       <div className="section max-w-3xl">
-        <span className="tag mb-3 inline-block">Updated June 2026</span>
+        <span className="tag mb-3 inline-block">Updated July 2026</span>
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-4">
-          Best Peptide Vendors for Research (June 2026)
+          Best Peptide Vendors for Research (July 2026)
         </h1>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-6 max-w-xl">
           Below is a list of the research peptide vendors we&rsquo;ve vetted and recommend. To make our list, a vendor must provide third-party lab testing with published Certificates of Analysis, meet documented purity standards, offer transparent shipping, maintain responsive customer service, and hold a positive reputation in the research community.
