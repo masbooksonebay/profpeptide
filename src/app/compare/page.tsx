@@ -37,6 +37,12 @@ const sections: Section[] = [
         href: "/compare/bpc-157-vs-tb-500",
         tag: "Recovery",
       },
+      {
+        title: "TB-500 vs Thymosin Beta-4",
+        desc: "Fragment vs full protein — TB-500 is the synthetic active fragment of Thymosin Beta-4, not a rival compound.",
+        href: "/compare/tb-500-vs-thymosin-beta-4",
+        tag: "Recovery",
+      },
     ],
   },
   {
