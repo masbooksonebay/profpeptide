@@ -1,8 +1,8 @@
-import { activeVendorCount } from "@/data/vendors";
+import { activeVendorCount, CODES_VERIFIED_DATE } from "@/data/vendors";
 
 export const metadata = {
   alternates: { canonical: "/coupons" },
-  title: "Peptide Discount Codes (July 2026) — Verified Coupon & Promo Codes | Prof. Peptide",
+  title: `Peptide Discount Codes (${CODES_VERIFIED_DATE}) — Verified Coupon & Promo Codes | Prof. Peptide`,
   description:
     `Verified peptide discount codes, promo codes, and coupon codes for ${activeVendorCount} trusted vendors. Updated regularly. Save up to 50% on research peptides.`,
 };

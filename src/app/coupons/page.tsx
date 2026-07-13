@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Icon } from "@/components/CategoryIcon";
+import { CODES_VERIFIED_DATE } from "@/data/vendors";
 
 interface Vendor {
   name: string;
@@ -361,7 +362,7 @@ export default function CouponsPage() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <p className="text-base font-bold text-[#1e2d3d] dark:text-white tracking-tight">
-          Verified codes &mdash; July 2026
+          Verified codes &mdash; {CODES_VERIFIED_DATE}
         </p>
       </div>
 

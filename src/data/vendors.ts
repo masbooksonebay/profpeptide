@@ -228,3 +228,13 @@ export const vendors: Record<string, Vendor> = {
  * per-peptide "See all N verified vendors" links). Derive from this; never hardcode.
  */
 export const activeVendorCount = Object.values(vendors).filter((v) => !v.retired).length;
+
+/**
+ * Month/year the coupon codes + affiliate links were last verified. SINGLE SOURCE
+ * of truth for the "verified date" shown across coupon pages — update this ONE line
+ * each month after re-verifying codes. Pages that reference it (coupons hub title/
+ * meta + body stamp, and the behemoth-labz / glacier-aminos code-verification FAQ
+ * answers) auto-update. Freshness dates that are a different semantic (e.g. the
+ * best-peptide-vendors "Updated …" stamp) are intentionally NOT driven by this.
+ */
+export const CODES_VERIFIED_DATE = "July 2026";

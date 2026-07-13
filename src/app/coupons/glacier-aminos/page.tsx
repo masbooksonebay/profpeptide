@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { CODES_VERIFIED_DATE } from "@/data/vendors";
 
 function CodeBox({ code }: { code: string }) {
   const [copied, setCopied] = useState(false);
@@ -142,7 +143,7 @@ export default function GlacierAminosCouponPage() {
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What peptides does Glacier Aminos carry?" a="Glacier Aminos carries research compounds across several categories. Its metabolic GLP catalog includes Semaglutide, Tirzepatide, Retatrutide, and Cagrilintide, along with combination compounds such as a GLP-3/Cagrilintide blend and a GLP-2.5 tirzepatide/retatrutide hybrid. Recovery and repair peptides include BPC-157, TB-500, GHK-Cu, and a CJC-1295/Ipamorelin blend. Longevity and additional research compounds include Epithalon, FOXO4-DRI, 5-Amino-1MQ, AOD-9604, DSIP, Glutathione, and Cartalax. Glacier also carries KLOW 80, a proprietary blend of KPV, LL-37, Oxytocin, and its Wolverine blend." />
-            <FAQItem q="Does Glacier Aminos have a discount code?" a="Yes. Use code PROF10 at checkout to save 10% on your entire Glacier Aminos order. This code is verified and maintained by Prof. Peptide and valid as of July 2026." />
+            <FAQItem q="Does Glacier Aminos have a discount code?" a={`Yes. Use code PROF10 at checkout to save 10% on your entire Glacier Aminos order. This code is verified and maintained by Prof. Peptide and valid as of ${CODES_VERIFIED_DATE}.`} />
             <FAQItem q="How do I use the Glacier Aminos discount code?" a="Add your items to cart at glacieraminos.shop, proceed to checkout, and enter PROF10 in the discount code field. The 10% discount will be applied to your order total." />
             <FAQItem q="How does Glacier Aminos test its peptides?" a="Glacier Aminos describes a seven-step testing protocol for its compounds. Three categories of results are visible on the public Certificates of Analysis: identity, mass, and endotoxin testing. Testing is performed by independent USA-based laboratories." />
             <FAQItem q="How do I verify a Glacier Aminos Certificate of Analysis?" a="Every Glacier Aminos batch is traceable. Each Certificate of Analysis is tied to a batch number, and researchers can search that batch number directly on glacieraminos.shop to pull the matching COA — verifying documentation against the specific batch received rather than a generic product-page certificate." />
