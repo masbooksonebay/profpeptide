@@ -17,7 +17,7 @@ const rows = [
   ["Nickname", "GLP-1 agonist", "Dual agonist", "Triple agonist (sometimes called \u201CTriple G\u201D for the three receptors it targets)"],
   ["Brand Names", "Ozempic, Wegovy, Rybelsus", "Mounjaro, Zepbound", "None yet \u2014 not FDA approved"],
   ["FDA Status", "Approved (diabetes 2017, obesity 2021)", "Approved (diabetes 2022, obesity 2023)", "Phase 3 trials (TRIUMPH program) \u2014 approval expected 2027\u20132028"],
-  ["Average Weight Loss", "~14.9% over 68 weeks (STEP 1 trial)", "~22.5% over 72 weeks (SURMOUNT-1)", "~24.2% at 12mg dose (Phase 2/3 data)"],
+  ["Average Weight Loss", "~14.9% over 68 weeks (STEP 1 trial)", "~22.5% over 72 weeks (SURMOUNT-1)", "~24.2% at 48 weeks (Phase 2); up to ~28.7% at 68 weeks (TRIUMPH-4, Phase 3)"],
   ["Blood Sugar Control", "Reduces HbA1c (a 3-month blood sugar marker) ~1\u20132%", "Reduces HbA1c ~2\u20132.5%", "Early data shows superior glucose control"],
   ["Liver Fat Reduction", "Moderate", "Significant", "Up to 86% reduction (Phase 3 TRIUMPH-4 data)"],
   ["GI Side Effects", "Nausea, vomiting, diarrhea \u2014 common", "Similar \u2014 possibly slightly more at high doses", "Similar profile \u2014 still being characterized"],
@@ -117,7 +117,7 @@ export default function TripleGLP1ComparisonPage() {
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want maximum weight loss, willing to wait</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Retatrutide shows the most dramatic results in trials &mdash; about 24.2% weight loss at 12mg dose plus up to 86% liver fat reduction &mdash; but is not yet FDA-approved. Phase 3 TRIUMPH trials are running through 2026&ndash;2027, with approval expected in 2027 or 2028. Until then, retatrutide is only available through clinical trials.
+              Retatrutide shows the most dramatic results in trials &mdash; about 24.2% weight loss at 12mg over 48 weeks (Phase 2), rising to about 28.7% over 68 weeks in the Phase 3 TRIUMPH-4 trial (Dec 2025), plus up to 86% liver fat reduction &mdash; but is not yet FDA-approved. Phase 3 TRIUMPH trials are running through 2026&ndash;2027, with approval expected in 2027 or 2028. Until then, retatrutide is only available through clinical trials.
             </p>
           </div>
         </div>
