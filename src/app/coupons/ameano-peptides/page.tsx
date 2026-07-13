@@ -84,7 +84,7 @@ export default function AmeanoPeptidesCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, PDA
+                <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, <Link href="/peptides/pda" className="text-[#0891b2] hover:underline">PDA</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -108,13 +108,13 @@ export default function AmeanoPeptidesCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Gut Health &amp; Immunity</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/vip" className="text-[#0891b2] hover:underline">VIP</Link>, LL-37
+                <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/vip" className="text-[#0891b2] hover:underline">VIP</Link>, <Link href="/peptides/ll-37" className="text-[#0891b2] hover:underline">LL-37</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual Health</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>, Oxytocin, Kisspeptin
+                <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>, <Link href="/peptides/oxytocin" className="text-[#0891b2] hover:underline">Oxytocin</Link>, <Link href="/peptides/kisspeptin" className="text-[#0891b2] hover:underline">Kisspeptin</Link>
               </dd>
             </div>
           </dl>
