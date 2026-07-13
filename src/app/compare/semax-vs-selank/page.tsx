@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/compare/semax-vs-selank",
@@ -24,11 +25,21 @@ const rows = [
   ["Human Trial Data", "Limited English-language data \u2014 mostly Russian publications", "One RCT (62 patients, GAD) \u2014 comparable to medazepam"],
 ];
 
+const faqs = [
+  { q: "How are these legal in Russia but not the US?", a: <>Russia&apos;s regulatory framework approved both peptides through their pharmacological standards based on Russian-conducted clinical trials. The FDA requires its own trials for US approval, which neither peptide has undergone. This is a common pattern with Russian peptides &mdash; they&apos;re sold legally in Russia as approved medications, but in the US they&apos;re sold only as research compounds. No legal pathway currently exists to import either for human use in the US.</> },
+  { q: "How are they administered?", a: <>Both are intranasal sprays. The intranasal route is critical &mdash; it allows the peptides to cross the blood-brain barrier directly via nasal-to-CNS pathways, avoiding the digestive degradation that would happen with oral dosing. Effects begin within 15&ndash;60 minutes. Standard research dosing is 1&ndash;3 sprays per nostril per session, dosed 2&ndash;4 times daily.</> },
+  { q: "Are there side effects?", a: <>Both have unusually clean side effect profiles in research. Semax: rare mild irritation at the application site, occasional headache. Selank: rare drowsiness or mild dizziness, no dependence or withdrawal even after extended use. Neither causes the cognitive blunting, dependence, or rebound symptoms associated with conventional anxiolytics.</> },
+  { q: "Can I take Semax and Selank together?", a: <>Yes, no documented interactions. Mechanisms are different (BDNF vs GABA-A) so combined effects are likely additive. Some research protocols dose Semax in the morning (cognitive enhancement) and Selank in the evening or as needed (anxiety reduction).</> },
+  { q: "How does Selank compare to benzodiazepines?", a: <>One RCT (62 patients with GAD, Russian, 2008) compared Selank to medazepam: comparable anxiety reduction, but Selank produced no sedation, no memory impairment, no dependence, and no rebound anxiety on discontinuation. This trial is small and not independently replicated outside Russia. The mechanism (allosteric GABA-A modulation) is biologically plausible for explaining the cleaner effect profile.</> },
+  { q: "Will these show up on drug tests?", a: <>Neither is on standard drug screening panels (5-panel, 10-panel, expanded employment panels). They&apos;re not tested for in WADA athletic screening either, though policy may evolve as awareness grows. Custom mass-spectrometry testing could detect them, but no commercial tests target these peptides.</> },
+];
+
 export default function SemaxVsSelankPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Semax vs Selank — Cognitive Peptide Comparison","description":"Semax vs Selank comparison — mechanisms, cognitive effects, anxiety, neuroprotection, and how to choose between these two Russian nootropic peptides.","url":"https://profpeptide.com/compare/semax-vs-selank","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Semax vs Selank — Cognitive Peptide Comparison"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Semax vs Selank &mdash; Cognitive Peptide Comparison</h1>
@@ -107,42 +118,12 @@ export default function SemaxVsSelankPage() {
       <div className="mb-8">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How are these legal in Russia but not the US?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Russia&apos;s regulatory framework approved both peptides through their pharmacological standards based on Russian-conducted clinical trials. The FDA requires its own trials for US approval, which neither peptide has undergone. This is a common pattern with Russian peptides &mdash; they&apos;re sold legally in Russia as approved medications, but in the US they&apos;re sold only as research compounds. No legal pathway currently exists to import either for human use in the US.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How are they administered?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Both are intranasal sprays. The intranasal route is critical &mdash; it allows the peptides to cross the blood-brain barrier directly via nasal-to-CNS pathways, avoiding the digestive degradation that would happen with oral dosing. Effects begin within 15&ndash;60 minutes. Standard research dosing is 1&ndash;3 sprays per nostril per session, dosed 2&ndash;4 times daily.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are there side effects?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Both have unusually clean side effect profiles in research. Semax: rare mild irritation at the application site, occasional headache. Selank: rare drowsiness or mild dizziness, no dependence or withdrawal even after extended use. Neither causes the cognitive blunting, dependence, or rebound symptoms associated with conventional anxiolytics.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take Semax and Selank together?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Yes, no documented interactions. Mechanisms are different (BDNF vs GABA-A) so combined effects are likely additive. Some research protocols dose Semax in the morning (cognitive enhancement) and Selank in the evening or as needed (anxiety reduction).
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How does Selank compare to benzodiazepines?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              One RCT (62 patients with GAD, Russian, 2008) compared Selank to medazepam: comparable anxiety reduction, but Selank produced no sedation, no memory impairment, no dependence, and no rebound anxiety on discontinuation. This trial is small and not independently replicated outside Russia. The mechanism (allosteric GABA-A modulation) is biologically plausible for explaining the cleaner effect profile.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Will these show up on drug tests?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Neither is on standard drug screening panels (5-panel, 10-panel, expanded employment panels). They&apos;re not tested for in WADA athletic screening either, though policy may evolve as awareness grows. Custom mass-spectrometry testing could detect them, but no commercial tests target these peptides.
-            </p>
-          </div>
+          {faqs.map((f, i) => (
+            <div key={i}>
+              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
         </div>
       </div>
 

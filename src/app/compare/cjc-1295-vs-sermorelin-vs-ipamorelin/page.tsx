@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/compare/cjc-1295-vs-sermorelin-vs-ipamorelin",
@@ -22,11 +23,21 @@ const rows = [
   ["Best Used", "Standalone or stacked with Ipamorelin", "When natural GHRH analog preferred", "Always stacked \u2014 designed to complement GHRH"],
 ];
 
+const faqs = [
+  { q: "Why is Ipamorelin almost never used alone?", a: <>GHRP-only protocols produce weaker GH output than GHRH+GHRP combinations. Ipamorelin alone activates the GHS-R1a receptor but doesn&apos;t engage the GHRH pathway. Research consistently shows that combining a GHRH analog (CJC-1295 or Sermorelin) with a GHRP (Ipamorelin) produces synergistic &mdash; not just additive &mdash; GH release through dual receptor activation. This is why nearly all serious research uses Ipamorelin in combination, not alone.</> },
+  { q: "What's the difference between CJC-1295 with DAC and without?", a: <>DAC (drug affinity complex) is a chemical modification that binds CJC-1295 to albumin in the blood, extending the half-life from ~30 minutes to 6&ndash;8 days. CJC-1295 no-DAC produces sharp pulsatile GH release (more physiological). CJC-1295 with DAC produces sustained GHRH activation (more convenient dosing, potentially less physiological pulse pattern). Both are used in research; choice depends on whether pulsatility or convenience matters more.</> },
+  { q: "Are these used for legitimate medical purposes?", a: <>Sermorelin is FDA-recognized for compounded use in adult GH deficiency (rare condition diagnosed by endocrinologists). CJC-1295 and Ipamorelin have no FDA-approved medical use and are sold as research peptides only. Some functional medicine clinics offer CJC-1295/Ipamorelin protocols off-label, but this is not standard clinical practice.</> },
+  { q: "Are GH peptides on the WADA prohibited list?", a: <>Yes. All three peptides are on the WADA prohibited list under Section S2 (Hormones and Growth Factors &mdash; peptide hormones, growth factors, related substances and mimetics). Tested athletes in any WADA-affiliated sport should not use any of them. Detection methods exist.</> },
+  { q: "What's the typical research protocol?", a: <>Most research uses subcutaneous injection of CJC-1295 no-DAC (100&ndash;300 mcg) + Ipamorelin (100&ndash;300 mcg) together, 2&ndash;3 times daily. Bedtime dose is considered most important (aligns with natural overnight GH pulse). Sermorelin is dosed 100&ndash;500 mcg before bed. CJC-1295 with DAC is dosed weekly at higher doses.</> },
+  { q: "Will these increase my IGF-1 levels?", a: <>Indirectly, yes. Growth hormone released by these peptides triggers IGF-1 production in the liver. Research protocols typically show IGF-1 elevation within 2&ndash;4 weeks of consistent use. However, baseline IGF-1 response varies dramatically by individual, age, and protocol. Bloodwork is standard in research to confirm response.</> },
+];
+
 export default function CJCvsSermorelinvsIpamorelinPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"CJC-1295 vs Sermorelin vs Ipamorelin — Growth Hormone Peptide Comparison","description":"CJC-1295 vs Sermorelin vs Ipamorelin — mechanisms, half-lives, GH output, research evidence, and how to choose between these three growth hormone peptides.","url":"https://profpeptide.com/compare/cjc-1295-vs-sermorelin-vs-ipamorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"CJC-1295 vs Sermorelin vs Ipamorelin — Growth Hormone Peptide Comparison"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-5xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">CJC-1295 vs Sermorelin vs Ipamorelin &mdash; Growth Hormone Peptide Comparison</h1>
@@ -104,42 +115,12 @@ export default function CJCvsSermorelinvsIpamorelinPage() {
       <div className="mb-8">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why is Ipamorelin almost never used alone?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              GHRP-only protocols produce weaker GH output than GHRH+GHRP combinations. Ipamorelin alone activates the GHS-R1a receptor but doesn&apos;t engage the GHRH pathway. Research consistently shows that combining a GHRH analog (CJC-1295 or Sermorelin) with a GHRP (Ipamorelin) produces synergistic &mdash; not just additive &mdash; GH release through dual receptor activation. This is why nearly all serious research uses Ipamorelin in combination, not alone.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What&apos;s the difference between CJC-1295 with DAC and without?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              DAC (drug affinity complex) is a chemical modification that binds CJC-1295 to albumin in the blood, extending the half-life from ~30 minutes to 6&ndash;8 days. CJC-1295 no-DAC produces sharp pulsatile GH release (more physiological). CJC-1295 with DAC produces sustained GHRH activation (more convenient dosing, potentially less physiological pulse pattern). Both are used in research; choice depends on whether pulsatility or convenience matters more.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are these used for legitimate medical purposes?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Sermorelin is FDA-recognized for compounded use in adult GH deficiency (rare condition diagnosed by endocrinologists). CJC-1295 and Ipamorelin have no FDA-approved medical use and are sold as research peptides only. Some functional medicine clinics offer CJC-1295/Ipamorelin protocols off-label, but this is not standard clinical practice.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are GH peptides on the WADA prohibited list?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Yes. All three peptides are on the WADA prohibited list under Section S2 (Hormones and Growth Factors &mdash; peptide hormones, growth factors, related substances and mimetics). Tested athletes in any WADA-affiliated sport should not use any of them. Detection methods exist.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What&apos;s the typical research protocol?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Most research uses subcutaneous injection of CJC-1295 no-DAC (100&ndash;300 mcg) + Ipamorelin (100&ndash;300 mcg) together, 2&ndash;3 times daily. Bedtime dose is considered most important (aligns with natural overnight GH pulse). Sermorelin is dosed 100&ndash;500 mcg before bed. CJC-1295 with DAC is dosed weekly at higher doses.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Will these increase my IGF-1 levels?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Indirectly, yes. Growth hormone released by these peptides triggers IGF-1 production in the liver. Research protocols typically show IGF-1 elevation within 2&ndash;4 weeks of consistent use. However, baseline IGF-1 response varies dramatically by individual, age, and protocol. Bloodwork is standard in research to confirm response.
-            </p>
-          </div>
+          {faqs.map((f, i) => (
+            <div key={i}>
+              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
         </div>
       </div>
 

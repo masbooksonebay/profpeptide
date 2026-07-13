@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/compare/epitalon-vs-nad-plus",
@@ -24,11 +25,21 @@ const rows = [
   ["Cost", "$50\u2013200/course", "$30\u2013150/month ongoing"],
 ];
 
+const faqs = [
+  { q: "Is Epitalon actually proven to extend lifespan?", a: <>In humans, no. The lifespan claims come from Russian animal studies (Khavinson group) showing extended median lifespan in mice. Human studies have shown telomere lengthening in blood cells and improvements in some biomarkers, but no controlled long-term human trial of Epitalon&apos;s effect on lifespan exists. The 2025 UK study independently replicated some of the telomere findings, which is significant. NAD+ precursors have similarly limited direct lifespan evidence in humans, though the biological case for NAD+ restoration is stronger.</> },
+  { q: "Why is most Epitalon research in Russian?", a: <>Epitalon was developed by Vladimir Khavinson at the St. Petersburg Institute of Bioregulation and Gerontology starting in the 1980s. Russian gerontology research operated somewhat independently from Western research during this period, and most of Epitalon&apos;s foundational studies were published in Russian-language journals. Translation and Western replication are still catching up. The 2025 UK study is part of that catch-up.</> },
+  { q: "How is Epitalon dosed?", a: <>Research protocols use cyclic injection: 5&ndash;10mg per day subcutaneous for 10&ndash;20 days, repeated every 6&ndash;12 months. Oral forms exist but bioavailability is poor (peptide breakdown in digestion). Most serious research uses injection. Epitalon is not FDA-approved and is sold as a research peptide.</> },
+  { q: "Can I take Epitalon and NMN together?", a: <>Yes &mdash; they target different aging mechanisms with no documented interaction. Some longevity protocols use NMN daily (continuous) and Epitalon cyclically (10&ndash;20 days, twice yearly). Discuss with a knowledgeable practitioner before stacking research peptides with supplements.</> },
+  { q: "What's the risk profile of Epitalon?", a: <>Russian research reports minimal side effects across decades of use. Most serious adverse events are not documented in published trials. Long-term safety in Western populations is essentially uncharacterized. The theoretical concern with telomerase activation is cancer risk &mdash; some cancers reactivate telomerase to enable unlimited division &mdash; but no cancer signal has emerged in available Epitalon human data.</> },
+  { q: "Why not just take NMN if I want longevity benefits?", a: <>For most people, that IS the recommended approach. NMN has stronger evidence, more international research, easier oral dosing, and a clearer regulatory pathway. Epitalon is more interesting if telomere biology specifically appeals to you, or if you want to address aging from multiple angles. For a single-supplement longevity approach, NMN (or NR or niacin) is rational. For multi-mechanism protocols, both can fit.</> },
+];
+
 export default function EpitalonVsNADPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Epitalon vs NAD+ — Longevity Supplement Comparison","description":"Epitalon vs NAD+ comparison — how these two longevity compounds work, what the research shows, and how they differ in mechanism, evidence, and use.","url":"https://profpeptide.com/compare/epitalon-vs-nad-plus","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Epitalon vs NAD+ — Longevity Supplement Comparison"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Epitalon vs NAD+ &mdash; Longevity Compound Comparison</h1>
@@ -110,42 +121,12 @@ export default function EpitalonVsNADPage() {
       <div className="mb-8">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Is Epitalon actually proven to extend lifespan?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              In humans, no. The lifespan claims come from Russian animal studies (Khavinson group) showing extended median lifespan in mice. Human studies have shown telomere lengthening in blood cells and improvements in some biomarkers, but no controlled long-term human trial of Epitalon&apos;s effect on lifespan exists. The 2025 UK study independently replicated some of the telomere findings, which is significant. NAD+ precursors have similarly limited direct lifespan evidence in humans, though the biological case for NAD+ restoration is stronger.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why is most Epitalon research in Russian?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Epitalon was developed by Vladimir Khavinson at the St. Petersburg Institute of Bioregulation and Gerontology starting in the 1980s. Russian gerontology research operated somewhat independently from Western research during this period, and most of Epitalon&apos;s foundational studies were published in Russian-language journals. Translation and Western replication are still catching up. The 2025 UK study is part of that catch-up.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How is Epitalon dosed?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Research protocols use cyclic injection: 5&ndash;10mg per day subcutaneous for 10&ndash;20 days, repeated every 6&ndash;12 months. Oral forms exist but bioavailability is poor (peptide breakdown in digestion). Most serious research uses injection. Epitalon is not FDA-approved and is sold as a research peptide.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take Epitalon and NMN together?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Yes &mdash; they target different aging mechanisms with no documented interaction. Some longevity protocols use NMN daily (continuous) and Epitalon cyclically (10&ndash;20 days, twice yearly). Discuss with a knowledgeable practitioner before stacking research peptides with supplements.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What&apos;s the risk profile of Epitalon?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Russian research reports minimal side effects across decades of use. Most serious adverse events are not documented in published trials. Long-term safety in Western populations is essentially uncharacterized. The theoretical concern with telomerase activation is cancer risk &mdash; some cancers reactivate telomerase to enable unlimited division &mdash; but no cancer signal has emerged in available Epitalon human data.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why not just take NMN if I want longevity benefits?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              For most people, that IS the recommended approach. NMN has stronger evidence, more international research, easier oral dosing, and a clearer regulatory pathway. Epitalon is more interesting if telomere biology specifically appeals to you, or if you want to address aging from multiple angles. For a single-supplement longevity approach, NMN (or NR or niacin) is rational. For multi-mechanism protocols, both can fit.
-            </p>
-          </div>
+          {faqs.map((f, i) => (
+            <div key={i}>
+              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
         </div>
       </div>
 

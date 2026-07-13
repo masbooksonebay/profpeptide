@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/compare/nmn-vs-nr-vs-niacin",
@@ -23,11 +24,21 @@ const rows = [
   ["Best For", "Those prioritizing convenience, no flush", "Best-studied NAD+ precursor, no flush", "Budget-conscious, also want cholesterol benefits"],
 ];
 
+const faqs = [
+  { q: "Why don't I just supplement NAD+ directly?", a: <>NAD+ is too large to efficiently cross cell membranes when taken orally. Most oral NAD+ supplements break down in digestion or fail to raise intracellular NAD+ levels. IV NAD+ infusions bypass this but are expensive ($200&ndash;800 per session) and short-lived. Precursors like NMN, NR, and niacin are the practical way to raise cellular NAD+.</> },
+  { q: "How much does each raise NAD+ in humans?", a: <>All three produce significant elevation in whole-blood NAD+ &mdash; typically 40&ndash;100% increases in clinical trials. The 2026 Nature Metabolism head-to-head trial (n=65) compared NMN vs NR vs nicotinamide (NAM, a different B3 form): NMN and NR were comparable in raising blood NAD+; nicotinamide only produced transient effects. Niacin wasn&apos;t included in that specific trial, but separate studies confirm comparable potency per mg in n=1 self-experiments.</> },
+  { q: "What causes the niacin flush and is it safe?", a: <>Flushing happens because niacin activates GPR109A receptors on skin cells, releasing prostaglandins that dilate blood vessels. The result is warmth, redness, and tingling, usually starting 15&ndash;30 minutes after dose. It&apos;s benign, peaks at 30&ndash;60 minutes, and decreases dramatically with consistent dosing as the receptors desensitize. Taking niacin with food or starting at low doses (50&ndash;100mg) reduces severity.</> },
+  { q: "Are there side effects beyond the niacin flush?", a: <>NMN and NR have minimal documented side effects &mdash; typically mild GI complaints. Niacin at high doses (&gt;1.5g/day) can cause liver enzyme elevation, particularly with extended-release forms. All three are generally well-tolerated at typical supplement doses (250&ndash;500mg NMN, 250&ndash;1000mg NR, 500&ndash;1500mg niacin).</> },
+  { q: "How long until I see effects?", a: <>Blood NAD+ levels rise within days of starting any precursor. Subjective effects (energy, sleep quality, exercise recovery) are highly variable &mdash; some people report changes within 2 weeks, others see no subjective difference. The longevity-relevant downstream effects (mitochondrial function, sirtuin activation) are slow-building and likely require months to years of consistent supplementation.</> },
+  { q: "Should I get bloodwork?", a: <>For NMN and NR, bloodwork is mostly optional &mdash; they&apos;re generally safe and effects are subtle. For niacin at higher doses, baseline + 3-month liver enzyme panel (ALT, AST) is recommended. Cholesterol panels at baseline + 3 months also useful if cholesterol benefits matter to you.</> },
+];
+
 export default function NMNvsNRvsNiacinPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"NMN vs NR vs Niacin — NAD+ Precursor Comparison","description":"NMN vs NR vs Niacin — how each raises NAD+, what the research shows, cost differences, side effects, and which is best for longevity.","url":"https://profpeptide.com/compare/nmn-vs-nr-vs-niacin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"NMN vs NR vs Niacin — NAD+ Precursor Comparison"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-5xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">NMN vs NR vs Niacin &mdash; NAD+ Precursor Comparison</h1>
@@ -120,42 +131,12 @@ export default function NMNvsNRvsNiacinPage() {
       <div className="mb-8">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why don&apos;t I just supplement NAD+ directly?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              NAD+ is too large to efficiently cross cell membranes when taken orally. Most oral NAD+ supplements break down in digestion or fail to raise intracellular NAD+ levels. IV NAD+ infusions bypass this but are expensive ($200&ndash;800 per session) and short-lived. Precursors like NMN, NR, and niacin are the practical way to raise cellular NAD+.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How much does each raise NAD+ in humans?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              All three produce significant elevation in whole-blood NAD+ &mdash; typically 40&ndash;100% increases in clinical trials. The 2026 Nature Metabolism head-to-head trial (n=65) compared NMN vs NR vs nicotinamide (NAM, a different B3 form): NMN and NR were comparable in raising blood NAD+; nicotinamide only produced transient effects. Niacin wasn&apos;t included in that specific trial, but separate studies confirm comparable potency per mg in n=1 self-experiments.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What causes the niacin flush and is it safe?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Flushing happens because niacin activates GPR109A receptors on skin cells, releasing prostaglandins that dilate blood vessels. The result is warmth, redness, and tingling, usually starting 15&ndash;30 minutes after dose. It&apos;s benign, peaks at 30&ndash;60 minutes, and decreases dramatically with consistent dosing as the receptors desensitize. Taking niacin with food or starting at low doses (50&ndash;100mg) reduces severity.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are there side effects beyond the niacin flush?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              NMN and NR have minimal documented side effects &mdash; typically mild GI complaints. Niacin at high doses (&gt;1.5g/day) can cause liver enzyme elevation, particularly with extended-release forms. All three are generally well-tolerated at typical supplement doses (250&ndash;500mg NMN, 250&ndash;1000mg NR, 500&ndash;1500mg niacin).
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How long until I see effects?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Blood NAD+ levels rise within days of starting any precursor. Subjective effects (energy, sleep quality, exercise recovery) are highly variable &mdash; some people report changes within 2 weeks, others see no subjective difference. The longevity-relevant downstream effects (mitochondrial function, sirtuin activation) are slow-building and likely require months to years of consistent supplementation.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Should I get bloodwork?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              For NMN and NR, bloodwork is mostly optional &mdash; they&apos;re generally safe and effects are subtle. For niacin at higher doses, baseline + 3-month liver enzyme panel (ALT, AST) is recommended. Cholesterol panels at baseline + 3 months also useful if cholesterol benefits matter to you.
-            </p>
-          </div>
+          {faqs.map((f, i) => (
+            <div key={i}>
+              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
         </div>
       </div>
 

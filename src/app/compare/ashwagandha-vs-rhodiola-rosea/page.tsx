@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/compare/ashwagandha-vs-rhodiola-rosea",
@@ -24,11 +25,21 @@ const rows = [
   ["Side Effects", "Rare \u2014 mild GI upset; avoid in thyroid conditions", "Mild \u2014 occasional headache, dizziness at high doses"],
 ];
 
+const faqs = [
+  { q: "Are these safe to take long-term?", a: <>Both have strong long-term safety records. Ashwagandha has multiple long-duration RCTs (12+ months) without significant adverse signals &mdash; main caveats are mild GI effects and potential issues for people with autoimmune thyroid conditions (it can stimulate thyroid function). Rhodiola has multi-decade traditional-use data plus modern trials showing safety at standard doses. Both are well-tolerated by most users.</> },
+  { q: "Can I take them together?", a: <>Yes, no documented interactions. The combination targets different stress mechanisms (HPA axis for ashwagandha, Hsp70 for rhodiola) and is one of the more sensible adaptogen stacks. Typical dosing: ashwagandha at bedtime, rhodiola in the morning.</> },
+  { q: "How long until I see effects?", a: <>Rhodiola: noticeable effects within days to 2 weeks. Ashwagandha: full effect builds over 4&ndash;8 weeks. The different timelines reflect their different mechanisms &mdash; rhodiola activates fast-acting cellular stress proteins, ashwagandha slowly modulates the hormonal stress axis.</> },
+  { q: "What about thyroid concerns with ashwagandha?", a: <>Ashwagandha has been shown to mildly stimulate thyroid function. For most people this is neutral or beneficial (especially with subclinical hypothyroidism). For people with hyperthyroidism or autoimmune thyroid conditions (Graves&apos;, Hashimoto&apos;s), ashwagandha may worsen symptoms. Consult a physician before using if you have any thyroid condition.</> },
+  { q: "Are there standardized forms I should look for?", a: <>Yes. For ashwagandha: KSM-66 and Sensoril are the most-researched extracts, both standardized to specific withanolide percentages. For rhodiola: look for extracts standardized to 3% rosavins and 1% salidroside (the standard ratio used in most clinical trials). Avoid generic &ldquo;rhodiola root powder&rdquo; without standardization &mdash; efficacy varies dramatically.</> },
+  { q: "What are the side effects?", a: <>Both are well-tolerated. Ashwagandha: rare mild GI upset, drowsiness if taken in the morning (it&apos;s better at bedtime), possible thyroid effects. Rhodiola: rare headache or dizziness at higher doses, mild stimulation in sensitive individuals (avoid late-day dosing). No dependence or withdrawal effects with either herb.</> },
+];
+
 export default function AshwagandhaVsRhodiolaPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison","description":"Ashwagandha vs Rhodiola Rosea — stress response, cortisol, energy, anxiety, and which adaptogen is right for your goals based on the research.","url":"https://profpeptide.com/compare/ashwagandha-vs-rhodiola-rosea","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Ashwagandha vs Rhodiola Rosea &mdash; Adaptogen Comparison</h1>
@@ -116,42 +127,12 @@ export default function AshwagandhaVsRhodiolaPage() {
       <div className="mb-8">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are these safe to take long-term?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Both have strong long-term safety records. Ashwagandha has multiple long-duration RCTs (12+ months) without significant adverse signals &mdash; main caveats are mild GI effects and potential issues for people with autoimmune thyroid conditions (it can stimulate thyroid function). Rhodiola has multi-decade traditional-use data plus modern trials showing safety at standard doses. Both are well-tolerated by most users.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I take them together?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Yes, no documented interactions. The combination targets different stress mechanisms (HPA axis for ashwagandha, Hsp70 for rhodiola) and is one of the more sensible adaptogen stacks. Typical dosing: ashwagandha at bedtime, rhodiola in the morning.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How long until I see effects?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Rhodiola: noticeable effects within days to 2 weeks. Ashwagandha: full effect builds over 4&ndash;8 weeks. The different timelines reflect their different mechanisms &mdash; rhodiola activates fast-acting cellular stress proteins, ashwagandha slowly modulates the hormonal stress axis.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What about thyroid concerns with ashwagandha?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Ashwagandha has been shown to mildly stimulate thyroid function. For most people this is neutral or beneficial (especially with subclinical hypothyroidism). For people with hyperthyroidism or autoimmune thyroid conditions (Graves&apos;, Hashimoto&apos;s), ashwagandha may worsen symptoms. Consult a physician before using if you have any thyroid condition.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are there standardized forms I should look for?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Yes. For ashwagandha: KSM-66 and Sensoril are the most-researched extracts, both standardized to specific withanolide percentages. For rhodiola: look for extracts standardized to 3% rosavins and 1% salidroside (the standard ratio used in most clinical trials). Avoid generic &ldquo;rhodiola root powder&rdquo; without standardization &mdash; efficacy varies dramatically.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What are the side effects?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Both are well-tolerated. Ashwagandha: rare mild GI upset, drowsiness if taken in the morning (it&apos;s better at bedtime), possible thyroid effects. Rhodiola: rare headache or dizziness at higher doses, mild stimulation in sensitive individuals (avoid late-day dosing). No dependence or withdrawal effects with either herb.
-            </p>
-          </div>
+          {faqs.map((f, i) => (
+            <div key={i}>
+              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
         </div>
       </div>
 

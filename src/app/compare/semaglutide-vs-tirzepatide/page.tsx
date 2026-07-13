@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/compare/semaglutide-vs-tirzepatide",
@@ -23,11 +24,21 @@ const rows = [
   ["Research Status", "Most studied GLP-1 agonist \u2014 extensive long-term data", "Newer \u2014 strong Phase 3 data, long-term data still accumulating"],
 ];
 
+const faqs = [
+  { q: "Is there a generic version of either medication?", a: <>Not in the US. Both semaglutide and tirzepatide remain on-patent through Eli Lilly and Novo Nordisk respectively. Compounded versions are sold through some online pharmacies and weight-loss clinics, but the FDA has issued warnings about quality and safety of compounded GLP-1 products. For commercial brand-name medications, expect to pay full retail unless your insurance covers them.</> },
+  { q: "Why do they cause GI side effects?", a: <>GLP-1 receptors are present throughout the gut. Activating them slows gastric emptying &mdash; food sits in the stomach longer, which is how they make you feel full. The slowed emptying is also what causes nausea, vomiting, and constipation in many patients, especially during dose escalation. Side effects usually decrease as the body adjusts to each dose level over 4&ndash;8 weeks.</> },
+  { q: "How long do you have to take them?", a: <>For weight loss: indefinitely, in most cases. Studies show that stopping the medication leads to most of the lost weight returning over 1&ndash;2 years. For diabetes management: typically lifelong as part of comprehensive diabetes care, similar to how other diabetes medications are used. The &ldquo;weight loss medication&rdquo; framing implies a temporary intervention, but the clinical reality is more like ongoing therapy.</> },
+  { q: "How does insurance coverage compare?", a: <>Coverage varies dramatically by plan and indication. Most insurers cover both medications for type 2 diabetes (Ozempic, Mounjaro). Coverage for the obesity-specific brands (Wegovy, Zepbound) is more restricted &mdash; many plans deny coverage or require BMI &ge;30 plus a comorbidity. Patients with both diabetes and obesity often have an easier path to coverage. Cash prices are roughly $1,000&ndash;1,400/month without coverage.</> },
+  { q: "Can you switch between semaglutide and tirzepatide?", a: <>Yes, switching is common and safe under physician supervision. Most clinicians recommend a 1&ndash;2 week washout period when switching to avoid additive side effects, then starting the new medication at its lowest dose for re-titration. Patients should not switch on their own without medical guidance.</> },
+  { q: "What about the “research peptide” versions sold online?", a: <>Research-grade semaglutide and tirzepatide are sold as &ldquo;for research use only&rdquo; by some peptide vendors. These are not FDA-approved and are not legally for human use. Quality varies dramatically by source, and there&apos;s no clinical infrastructure for dose titration, side effect management, or safety monitoring. The FDA has issued warnings against using these for weight loss. PP does not recommend research-grade GLP-1s for human use.</> },
+];
+
 export default function SemaglutideVsTirzepatidePage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Semaglutide vs Tirzepatide — GLP-1 Comparison","description":"Semaglutide vs Tirzepatide comparison — mechanism, weight loss data, FDA approval status, side effects, and key clinical trial results.","url":"https://profpeptide.com/compare/semaglutide-vs-tirzepatide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Semaglutide vs Tirzepatide — GLP-1 Comparison"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Semaglutide vs Tirzepatide &mdash; GLP-1 Peptide Comparison</h1>
@@ -108,42 +119,12 @@ export default function SemaglutideVsTirzepatidePage() {
       <div className="mb-8">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Is there a generic version of either medication?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Not in the US. Both semaglutide and tirzepatide remain on-patent through Eli Lilly and Novo Nordisk respectively. Compounded versions are sold through some online pharmacies and weight-loss clinics, but the FDA has issued warnings about quality and safety of compounded GLP-1 products. For commercial brand-name medications, expect to pay full retail unless your insurance covers them.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why do they cause GI side effects?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              GLP-1 receptors are present throughout the gut. Activating them slows gastric emptying &mdash; food sits in the stomach longer, which is how they make you feel full. The slowed emptying is also what causes nausea, vomiting, and constipation in many patients, especially during dose escalation. Side effects usually decrease as the body adjusts to each dose level over 4&ndash;8 weeks.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How long do you have to take them?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              For weight loss: indefinitely, in most cases. Studies show that stopping the medication leads to most of the lost weight returning over 1&ndash;2 years. For diabetes management: typically lifelong as part of comprehensive diabetes care, similar to how other diabetes medications are used. The &ldquo;weight loss medication&rdquo; framing implies a temporary intervention, but the clinical reality is more like ongoing therapy.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How does insurance coverage compare?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Coverage varies dramatically by plan and indication. Most insurers cover both medications for type 2 diabetes (Ozempic, Mounjaro). Coverage for the obesity-specific brands (Wegovy, Zepbound) is more restricted &mdash; many plans deny coverage or require BMI &ge;30 plus a comorbidity. Patients with both diabetes and obesity often have an easier path to coverage. Cash prices are roughly $1,000&ndash;1,400/month without coverage.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can you switch between semaglutide and tirzepatide?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Yes, switching is common and safe under physician supervision. Most clinicians recommend a 1&ndash;2 week washout period when switching to avoid additive side effects, then starting the new medication at its lowest dose for re-titration. Patients should not switch on their own without medical guidance.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What about the &ldquo;research peptide&rdquo; versions sold online?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Research-grade semaglutide and tirzepatide are sold as &ldquo;for research use only&rdquo; by some peptide vendors. These are not FDA-approved and are not legally for human use. Quality varies dramatically by source, and there&apos;s no clinical infrastructure for dose titration, side effect management, or safety monitoring. The FDA has issued warnings against using these for weight loss. PP does not recommend research-grade GLP-1s for human use.
-            </p>
-          </div>
+          {faqs.map((f, i) => (
+            <div key={i}>
+              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
         </div>
       </div>
 

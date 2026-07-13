@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/compare/bpc-157-vs-ghk-cu",
@@ -24,11 +25,21 @@ const rows = [
   ["Human Trials", "Very limited", "Some \u2014 corneal healing trial, wound healing data"],
 ];
 
+const faqs = [
+  { q: "Can I use BPC-157 topically?", a: <>BPC-157 is poorly absorbed through skin in research models &mdash; its 15-amino-acid size and structure don&apos;t support transdermal delivery. Some commercial products market BPC-157 creams or sprays for topical use, but these have minimal supporting evidence. For BPC-157 research, subcutaneous injection is the standard route.</> },
+  { q: "Is GHK-Cu effective when injected, or only topical?", a: <>Both routes show effects in research, but topical is the more common application for skin-related research. Subcutaneous GHK-Cu has been studied for systemic effects (anti-inflammatory, organ repair) but the evidence base is much thinner than for topical applications. Most serious cosmeceutical research uses topical delivery.</> },
+  { q: "How does the copper in GHK-Cu actually matter?", a: <>Copper is an essential enzymatic cofactor for several remodeling enzymes (lysyl oxidase, superoxide dismutase). The GHK tripeptide binds copper and delivers it to cells where it&apos;s needed for collagen synthesis and tissue remodeling. Without copper, the GHK fragment alone has weaker activity. This is why commercial GHK-Cu products specifically include the copper complex rather than pure GHK.</> },
+  { q: "Can these be combined?", a: <>Yes, with no documented interactions. Mechanisms don&apos;t overlap (gastric biology + EGR-1 for BPC-157, gene expression modulation + collagen for GHK-Cu). Some research protocols use BPC-157 systemically and GHK-Cu topically for comprehensive tissue repair coverage.</> },
+  { q: "What's the FDA status of each?", a: <>Neither is FDA-approved for human use. The FDA classified BPC-157 as a bulk drug substance in late 2023, restricting compounding pharmacy use. GHK-Cu has different regulatory positioning &mdash; it&apos;s widely used in cosmeceutical products as a skincare ingredient (FDA regulates cosmetics differently than drugs). For peptide-form supplementation, both are sold as research peptides.</> },
+  { q: "Which has better human trial data?", a: <>GHK-Cu has more human evidence &mdash; corneal healing trials, wound healing studies, and skincare efficacy studies. BPC-157&apos;s evidence is overwhelmingly animal-based, with limited published human research. For an evidence-prioritizing researcher, GHK-Cu is the safer bet for skin applications; BPC-157 is the safer bet for internal tissue applications based on extensive animal models.</> },
+];
+
 export default function BPC157vsGHKCuPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"BPC-157 vs GHK-Cu — Healing Peptide Comparison","description":"BPC-157 vs GHK-Cu comparison — mechanisms, tissue targets, research evidence, and when to use each of these two tissue repair and anti-aging peptides.","url":"https://profpeptide.com/compare/bpc-157-vs-ghk-cu","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"BPC-157 vs GHK-Cu — Healing Peptide Comparison"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">BPC-157 vs GHK-Cu &mdash; Healing &amp; Tissue Repair Peptide Comparison</h1>
@@ -107,42 +118,12 @@ export default function BPC157vsGHKCuPage() {
       <div className="mb-8">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can I use BPC-157 topically?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              BPC-157 is poorly absorbed through skin in research models &mdash; its 15-amino-acid size and structure don&apos;t support transdermal delivery. Some commercial products market BPC-157 creams or sprays for topical use, but these have minimal supporting evidence. For BPC-157 research, subcutaneous injection is the standard route.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Is GHK-Cu effective when injected, or only topical?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Both routes show effects in research, but topical is the more common application for skin-related research. Subcutaneous GHK-Cu has been studied for systemic effects (anti-inflammatory, organ repair) but the evidence base is much thinner than for topical applications. Most serious cosmeceutical research uses topical delivery.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How does the copper in GHK-Cu actually matter?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Copper is an essential enzymatic cofactor for several remodeling enzymes (lysyl oxidase, superoxide dismutase). The GHK tripeptide binds copper and delivers it to cells where it&apos;s needed for collagen synthesis and tissue remodeling. Without copper, the GHK fragment alone has weaker activity. This is why commercial GHK-Cu products specifically include the copper complex rather than pure GHK.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Can these be combined?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Yes, with no documented interactions. Mechanisms don&apos;t overlap (gastric biology + EGR-1 for BPC-157, gene expression modulation + collagen for GHK-Cu). Some research protocols use BPC-157 systemically and GHK-Cu topically for comprehensive tissue repair coverage.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What&apos;s the FDA status of each?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Neither is FDA-approved for human use. The FDA classified BPC-157 as a bulk drug substance in late 2023, restricting compounding pharmacy use. GHK-Cu has different regulatory positioning &mdash; it&apos;s widely used in cosmeceutical products as a skincare ingredient (FDA regulates cosmetics differently than drugs). For peptide-form supplementation, both are sold as research peptides.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Which has better human trial data?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              GHK-Cu has more human evidence &mdash; corneal healing trials, wound healing studies, and skincare efficacy studies. BPC-157&apos;s evidence is overwhelmingly animal-based, with limited published human research. For an evidence-prioritizing researcher, GHK-Cu is the safer bet for skin applications; BPC-157 is the safer bet for internal tissue applications based on extensive animal models.
-            </p>
-          </div>
+          {faqs.map((f, i) => (
+            <div key={i}>
+              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
         </div>
       </div>
 

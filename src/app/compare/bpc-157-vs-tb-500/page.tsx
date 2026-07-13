@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/compare/bpc-157-vs-tb-500",
@@ -23,11 +24,21 @@ const rows = [
   ["Human Trials", "Limited \u2014 mostly animal models", "Limited \u2014 mostly animal models (corneal healing human trial exists)"],
 ];
 
+const faqs = [
+  { q: "Is BPC-157 or TB-500 FDA-approved?", a: <>Neither is FDA-approved. The FDA classified both as bulk drug substances in late 2023 &mdash; meaning licensed compounding pharmacies cannot legally compound them for human use. Both are sold as &ldquo;research peptides&rdquo; for laboratory use only. No legal pathway currently exists to use either one in humans in the US.</> },
+  { q: "Are they on the WADA prohibited list?", a: <>Both BPC-157 and TB-500 are on the WADA prohibited list under section S0 (Non-Approved Substances). Tested athletes in any WADA-affiliated sport should not use either peptide. Detection methods exist for both compounds.</> },
+  { q: "Why are they so often stacked together?", a: <>Their mechanisms don&apos;t overlap. BPC-157 amplifies repair AT injury sites through local growth factor signaling. TB-500 mobilizes repair cells TO injury sites through systemic cell migration. Together they address both sides of the healing process &mdash; supply and activation. Most research using both peptides uses them in combination.</> },
+  { q: "What dosing is typically used?", a: <>Research protocols vary. Common animal-model dosing translates to roughly 250&ndash;500 mcg of each peptide once or twice daily for BPC-157, and 2&ndash;2.5 mg of TB-500 once or twice weekly. Stack protocols typically use both at standard individual doses. Always verify Certificate of Analysis on any research peptide product.</> },
+  { q: "How long does each take to show effects?", a: <>BPC-157&apos;s effect onset is faster &mdash; local tissue repair begins within days of starting protocol in animal models. TB-500&apos;s systemic effect builds more gradually over 2&ndash;4 weeks. Stack protocols typically run 4&ndash;8 weeks for combined effect.</> },
+  { q: "Which one has more side effects?", a: <>Both have notably clean side effect profiles in research. BPC-157 has documented mild GI effects in some users. TB-500 has documented mild fatigue or &ldquo;flu-like&rdquo; symptoms during initial dosing. Neither has been associated with serious adverse events at standard research doses, though long-term safety is not formally characterized.</> },
+];
+
 export default function BPC157vsTB500Page() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"BPC-157 vs TB-500 — How These Recovery Peptides Differ","description":"BPC-157 vs TB-500 comparison — mechanism of action, research differences, tissue targets, and how to choose between these two recovery peptides.","url":"https://profpeptide.com/compare/bpc-157-vs-tb-500","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"BPC-157 vs TB-500 — How These Recovery Peptides Differ"}]}} />
+      <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">BPC-157 vs TB-500 &mdash; Recovery Peptide Comparison</h1>
@@ -117,42 +128,12 @@ export default function BPC157vsTB500Page() {
       <div className="mb-8">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Is BPC-157 or TB-500 FDA-approved?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Neither is FDA-approved. The FDA classified both as bulk drug substances in late 2023 &mdash; meaning licensed compounding pharmacies cannot legally compound them for human use. Both are sold as &ldquo;research peptides&rdquo; for laboratory use only. No legal pathway currently exists to use either one in humans in the US.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Are they on the WADA prohibited list?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Both BPC-157 and TB-500 are on the WADA prohibited list under section S0 (Non-Approved Substances). Tested athletes in any WADA-affiliated sport should not use either peptide. Detection methods exist for both compounds.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Why are they so often stacked together?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Their mechanisms don&apos;t overlap. BPC-157 amplifies repair AT injury sites through local growth factor signaling. TB-500 mobilizes repair cells TO injury sites through systemic cell migration. Together they address both sides of the healing process &mdash; supply and activation. Most research using both peptides uses them in combination.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">What dosing is typically used?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Research protocols vary. Common animal-model dosing translates to roughly 250&ndash;500 mcg of each peptide once or twice daily for BPC-157, and 2&ndash;2.5 mg of TB-500 once or twice weekly. Stack protocols typically use both at standard individual doses. Always verify Certificate of Analysis on any research peptide product.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">How long does each take to show effects?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              BPC-157&apos;s effect onset is faster &mdash; local tissue repair begins within days of starting protocol in animal models. TB-500&apos;s systemic effect builds more gradually over 2&ndash;4 weeks. Stack protocols typically run 4&ndash;8 weeks for combined effect.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Which one has more side effects?</h3>
-            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Both have notably clean side effect profiles in research. BPC-157 has documented mild GI effects in some users. TB-500 has documented mild fatigue or &ldquo;flu-like&rdquo; symptoms during initial dosing. Neither has been associated with serious adverse events at standard research doses, though long-term safety is not formally characterized.
-            </p>
-          </div>
+          {faqs.map((f, i) => (
+            <div key={i}>
+              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
         </div>
       </div>
 
