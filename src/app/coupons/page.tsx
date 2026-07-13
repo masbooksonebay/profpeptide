@@ -76,6 +76,14 @@ const sections: VendorSection[] = [
         detailPage: "/coupons/almighty-peptides",
       },
       {
+        name: "Ameano Peptides",
+        url: "https://ameanopeptides.com/?ref=hmvyvxhr",
+        code: "PROF10",
+        discount: "10% off",
+        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
+        detailPage: "/coupons/ameano-peptides",
+      },
+      {
         name: "Amino X",
         url: "https://aminox.net/?coupon=PROF15",
         code: "PROF15",

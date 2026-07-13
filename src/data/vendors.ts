@@ -29,6 +29,14 @@ export const vendors: Record<string, Vendor> = {
     url: "https://www.almightypeptides.com/?sld=profpeptide",
     detailPage: "/coupons/almighty-peptides",
   },
+  "ameano-peptides": {
+    name: "Ameano Peptides",
+    code: "PROF10",
+    discount: "10% off",
+    region: "US",
+    url: "https://ameanopeptides.com/?ref=hmvyvxhr",
+    detailPage: "/coupons/ameano-peptides",
+  },
   "amino-club": {
     name: "Amino Club",
     code: "PROFPEPTIDE",
