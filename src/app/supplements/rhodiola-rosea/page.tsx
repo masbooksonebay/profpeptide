@@ -225,7 +225,7 @@ const sections = [
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link>{" "}
-              — calming adaptogen with cortisol-blunting effects. Different timeframe than Rhodiola (calming vs mildly stimulating). Common Rhodiola-AM + Ashwagandha-PM stack for stress + sleep balance.
+              — calming adaptogen with cortisol-blunting effects. Different timeframe than Rhodiola (calming vs mildly stimulating). Common Rhodiola-AM + Ashwagandha-PM stack for stress + sleep balance. See the full <Link href="/compare/ashwagandha-vs-rhodiola-rosea" className="text-[#0891b2] hover:underline">Ashwagandha vs Rhodiola Rosea comparison</Link>.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-theanine</Link>{" "}

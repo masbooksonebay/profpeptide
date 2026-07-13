@@ -232,7 +232,7 @@ const sections = [
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/rhodiola-rosea" className="text-[#0891b2] hover:underline">Rhodiola rosea</Link>{" "}
-              — complementary adaptogen profile. Rhodiola is mildly stimulating (morning use); ashwagandha is calming (evening use). The AM + PM combination provides balanced stress modulation across the day.
+              — complementary adaptogen profile. Rhodiola is mildly stimulating (morning use); ashwagandha is calming (evening use). The AM + PM combination provides balanced stress modulation across the day. See the full <Link href="/compare/ashwagandha-vs-rhodiola-rosea" className="text-[#0891b2] hover:underline">Ashwagandha vs Rhodiola Rosea comparison</Link>.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/zma" className="text-[#0891b2] hover:underline">ZMA</Link>{" "}

@@ -60,6 +60,12 @@ const sections: Section[] = [
         href: "/compare/semaglutide-vs-tirzepatide-vs-retatrutide",
         tag: "Metabolic",
       },
+      {
+        title: "Retatrutide vs Tirzepatide",
+        desc: "Triple agonist vs dual agonist — weight loss data, mechanism, and FDA status head-to-head.",
+        href: "/compare/retatrutide-vs-tirzepatide",
+        tag: "Metabolic",
+      },
     ],
   },
   {

@@ -165,6 +165,7 @@ export default function TripleGLP1ComparisonPage() {
         <Link href="/peptides/semaglutide" className="btn-primary text-sm">Semaglutide Profile</Link>
         <Link href="/peptides/tirzepatide" className="btn-outline text-sm">Tirzepatide Profile</Link>
         <Link href="/peptides/retatrutide" className="btn-outline text-sm">Retatrutide Profile</Link>
+        <Link href="/compare/retatrutide-vs-tirzepatide" className="btn-outline text-sm">Retatrutide vs Tirzepatide</Link>
       </div>
 
       <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed">For educational and research purposes only. Not medical advice.</p>
