@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 50 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 51 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 50 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 51 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -124,6 +124,7 @@ const categories = [
     name: "Sexual Health",
     slug: "sexual-health",
     peptides: [
+      { name: "Kisspeptin", slug: "kisspeptin" },
       { name: "PT-141", slug: "pt-141" },
       { name: "PT-141 + Oxytocin", slug: "pt-141-oxytocin" },
     ],
