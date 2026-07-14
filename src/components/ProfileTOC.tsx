@@ -33,7 +33,7 @@ export default function ProfileTOC({
 }) {
   if (variant === "mobile") {
     return (
-      <details className="lg:hidden mb-8 rounded-xl border border-gray-200 dark:border-slate-700 border-l-4 border-l-brand bg-brand/5 dark:bg-brand/10 overflow-hidden">
+      <details className="panel-card lg:hidden mb-8 overflow-hidden">
         <summary className="cursor-pointer list-none px-4 py-3 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100">
           <span>On this page</span>
           <svg className="w-4 h-4 text-brand" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true">
@@ -49,7 +49,7 @@ export default function ProfileTOC({
 
   return (
     <nav aria-label="On this page" className="sticky top-24">
-      <div className="rounded-xl border border-gray-200 dark:border-slate-700 border-l-4 border-l-brand bg-brand/5 dark:bg-brand/10 p-5 shadow-sm">
+      <div className="panel-card p-5">
         <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 mb-3">
           On this page
         </h2>

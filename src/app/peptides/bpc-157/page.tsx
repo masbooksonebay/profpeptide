@@ -564,36 +564,38 @@ export default function BPC157Page() {
       </p>
 
       {/* Quick Facts — key facts already present on this page, in a scannable grid */}
-      <section aria-label="Quick Facts" className="mb-10 rounded-xl border border-gray-200 dark:border-slate-700 border-l-4 border-l-brand bg-white dark:bg-[#1e293b] overflow-hidden shadow-sm">
-        <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 px-5 pt-4 pb-3 border-b border-gray-200 dark:border-slate-700">
-          Quick Facts
-        </h2>
-        <dl className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 divide-gray-200 dark:divide-slate-700">
-          <div className="px-5 py-3 sm:col-span-2 border-b border-gray-200 dark:border-slate-700">
-            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
-            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">A lab-made 15-amino-acid peptide studied for wound healing, tendon and tissue repair, and gut protection.</dd>
-          </div>
-          <div className="px-5 py-3 sm:border-b border-gray-200 dark:border-slate-700">
-            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
-            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Subcutaneous injection, or oral for gut-related use</dd>
-          </div>
-          <div className="px-5 py-3 sm:border-b sm:border-l border-gray-200 dark:border-slate-700">
-            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
-            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Under 30 minutes (plasma)</dd>
-          </div>
-          <div className="px-5 py-3 sm:col-span-2 border-b border-gray-200 dark:border-slate-700">
-            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
-            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">250&ndash;500 mcg, once or twice daily, in 4&ndash;8 week cycles</dd>
-          </div>
-          <div className="px-5 py-3 sm:col-span-2 border-b border-gray-200 dark:border-slate-700">
-            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
-            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Not FDA-approved &mdash; for research use only. Restricted from US compounding pharmacies (FDA Category 2, 2023). Not currently banned by WADA.</dd>
-          </div>
-          <div className="px-5 py-3 sm:col-span-2">
-            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Also known as</dt>
-            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Body Protection Compound-157, BPC 15, Pentadecapeptide BPC 157, PL 14736</dd>
-          </div>
-        </dl>
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">A lab-made 15-amino-acid peptide studied for wound healing, tendon and tissue repair, and gut protection.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Subcutaneous injection, or oral for gut-related use</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Under 30 minutes (plasma)</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">250&ndash;500 mcg, once or twice daily, in 4&ndash;8 week cycles</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Not FDA-approved &mdash; for research use only. Restricted from US compounding pharmacies (FDA Category 2, 2023). Not currently banned by WADA.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Also known as</dt>
+              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Body Protection Compound-157, BPC 15, Pentadecapeptide BPC 157, PL 14736</dd>
+            </div>
+          </dl>
+        </div>
       </section>
 
       {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}

@@ -64,9 +64,19 @@
   .tag {
     @apply inline-block text-xs font-medium px-2.5 py-1 rounded-full bg-brand/15 text-brand;
   }
-  /* Scannable section heading tied to a TOC anchor: brand accent left-border
-     tab. Light + dark. Used on peptide-profile section headings. */
+  /* Section heading tied to a TOC anchor: high-contrast, plain (no accent bar). */
   .section-heading {
-    @apply text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pl-3 border-l-[3px] border-brand;
+    @apply text-lg font-semibold text-[#1e2d3d] dark:text-slate-100;
+  }
+  /* Bordered surface panel (Quick Facts, profile TOC) matching the homepage
+     grid cards: border + rounded + layered shadow + accent-border-on-hover,
+     light + dark. Same treatment as .card without p-6 (panels own their
+     padding). Keeps the live profile and the /prototype/profile sandbox in sync. */
+  .panel-card {
+    @apply bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl transition-all duration-200
+      hover:border-brand dark:hover:border-brand
+      shadow-[0_1px_3px_rgba(16,24,40,0.08),0_4px_12px_-2px_rgba(16,24,40,0.08)]
+      hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]
+      dark:shadow-sm dark:hover:shadow-md;
   }
 }
