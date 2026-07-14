@@ -8,7 +8,9 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-white text-gray-800 font-sans antialiased;
+    /* Soft off-white (not pure white) so white cards/surfaces layer above the
+       page with gentle depth. Dark mode keeps #0f172a below. */
+    @apply bg-[#FAFAFA] text-gray-800 font-sans antialiased;
     font-size: 18px;
     line-height: 1.65;
   }
@@ -48,7 +50,13 @@
     @apply max-w-5xl mx-auto px-4 sm:px-6 py-16;
   }
   .card {
-    @apply bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200;
+    /* Light: white card floats above the #FAFAFA page — softer warm-gray border
+       + a slightly richer (still subtle) layered shadow for depth.
+       Dark: border/shadow reasserted to the original values (unchanged). */
+    @apply bg-white dark:bg-[#1e293b] border border-gray-200/70 dark:border-slate-700 rounded-xl p-6 transition-shadow duration-200
+      shadow-[0_1px_2px_rgba(16,24,40,0.04),0_2px_6px_-1px_rgba(16,24,40,0.06)]
+      hover:shadow-[0_4px_16px_-4px_rgba(16,24,40,0.10)]
+      dark:shadow-sm dark:hover:shadow-md;
   }
   .tag {
     @apply inline-block text-xs font-medium px-2.5 py-1 rounded-full bg-brand/15 text-brand;
