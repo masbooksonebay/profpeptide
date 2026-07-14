@@ -4,9 +4,9 @@ import { CategoryIcon } from "@/components/CategoryIcon";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 53 Research Peptide Profiles | Prof. Peptide",
+  title: "Peptide Library — 54 Research Peptide Profiles | Prof. Peptide",
   description:
-    "Browse 53 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+    "Browse 54 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
 };
 
 const categories = [
@@ -105,6 +105,7 @@ const categories = [
     slug: "longevity",
     peptides: [
       { name: "Epitalon", slug: "epitalon" },
+      { name: "Glutathione (GSH)", slug: "glutathione" },
       { name: "NAD+", slug: "nad-plus" },
       { name: "SS-31 (Elamipretide)", slug: "ss-31" },
     ],
