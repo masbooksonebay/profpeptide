@@ -2,7 +2,7 @@ import Link from "next/link";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
@@ -546,7 +546,7 @@ export default function BPC157Page() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"BPC-157","description":"BPC-157 research profile: tendon healing mechanism, dosing protocol, side effects, FDA Category 2 status, FAQ, and current regulatory status.","url":"https://profpeptide.com/peptides/bpc-157","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"BPC-157"}]}} />
-    <div className="section max-w-3xl">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
@@ -555,27 +555,56 @@ export default function BPC157Page() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">BPC-157</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#1e2d3d] dark:text-slate-100 tracking-tight">BPC-157</h1>
         <span className="tag">Recovery &amp; Tissue Repair</span>
         <span className="tag">Research-Grade</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: May 23, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Body Protection Compound-157, BPC 15, Pentadecapeptide BPC 157, PL 14736
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Synthetic Pentadecapeptide &mdash; Gastric Protective Compound / Tissue Repair Agent
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved; FDA Category 2 bulk drug substance (2023) &mdash; cannot be compounded by US pharmacies. Not currently WADA-prohibited.
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is BPC-157?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="mb-10 rounded-xl border border-gray-200 dark:border-slate-700 border-l-4 border-l-brand bg-white dark:bg-[#1e293b] overflow-hidden shadow-sm">
+        <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 px-5 pt-4 pb-3 border-b border-gray-200 dark:border-slate-700">
+          Quick Facts
+        </h2>
+        <dl className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 divide-gray-200 dark:divide-slate-700">
+          <div className="px-5 py-3 sm:col-span-2 border-b border-gray-200 dark:border-slate-700">
+            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">A lab-made 15-amino-acid peptide studied for wound healing, tendon and tissue repair, and gut protection.</dd>
+          </div>
+          <div className="px-5 py-3 sm:border-b border-gray-200 dark:border-slate-700">
+            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Subcutaneous injection, or oral for gut-related use</dd>
+          </div>
+          <div className="px-5 py-3 sm:border-b sm:border-l border-gray-200 dark:border-slate-700">
+            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Under 30 minutes (plasma)</dd>
+          </div>
+          <div className="px-5 py-3 sm:col-span-2 border-b border-gray-200 dark:border-slate-700">
+            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">250&ndash;500 mcg, once or twice daily, in 4&ndash;8 week cycles</dd>
+          </div>
+          <div className="px-5 py-3 sm:col-span-2 border-b border-gray-200 dark:border-slate-700">
+            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Not FDA-approved &mdash; for research use only. Restricted from US compounding pharmacies (FDA Category 2, 2023). Not currently banned by WADA.</dd>
+          </div>
+          <div className="px-5 py-3 sm:col-span-2">
+            <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Also known as</dt>
+            <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Body Protection Compound-157, BPC 15, Pentadecapeptide BPC 157, PL 14736</dd>
+          </div>
+        </dl>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is BPC-157?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             BPC-157 is a 15-amino-acid synthetic peptide derived from a protective protein found in human gastric juice. Researchers have studied it for over 30 years for its remarkable wound healing, tendon repair, and gut protection effects in animal models. Despite 544+ published research articles between 1993 and 2024, no Phase 2 or Phase 3 human clinical trials have been completed. It remains one of the most popular research peptides for soft tissue recovery, with a notable safety profile and unusual stability across a wide pH range. Often paired with{" "}
@@ -613,12 +642,10 @@ export default function BPC157Page() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
+      <div className="space-y-12 mt-12">
         {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <div key={s.id} id={s.id} className="scroll-mt-24">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -698,7 +725,13 @@ export default function BPC157Page() {
 
       <PageDisclaimer />
     <ContactLink pageName="BPC-157" pagePath="/peptides/bpc-157" />
-    </div>
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
+      </div>
     </>
   );
 }
