@@ -21,6 +21,14 @@ export const regionFlag: Record<Vendor["region"], string> = {
 };
 
 export const vendors: Record<string, Vendor> = {
+  "aero-peptides": {
+    name: "Aero Peptides",
+    code: "PROFPEPTIDE15",
+    discount: "15% off",
+    region: "US",
+    url: "https://aeropeptides.com/?ref=PROF15",
+    detailPage: "/coupons/aero-peptides",
+  },
   "almighty-peptides": {
     name: "Almighty Peptides",
     code: "PROFPEPTIDE",

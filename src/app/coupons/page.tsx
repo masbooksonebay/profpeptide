@@ -69,6 +69,14 @@ const sections: VendorSection[] = [
     label: "US Vendors",
     vendors: [
       {
+        name: "Aero Peptides",
+        url: "https://aeropeptides.com/?ref=PROF15",
+        code: "PROFPEPTIDE15",
+        discount: "15% off",
+        region: "🇺🇸 US",
+        detailPage: "/coupons/aero-peptides",
+      },
+      {
         name: "Almighty Peptides",
         url: "https://www.almightypeptides.com/?sld=profpeptide",
         code: "PROFPEPTIDE",
