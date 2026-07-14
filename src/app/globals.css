@@ -64,4 +64,9 @@
   .tag {
     @apply inline-block text-xs font-medium px-2.5 py-1 rounded-full bg-brand/15 text-brand;
   }
+  /* Scannable section heading tied to a TOC anchor: brand accent left-border
+     tab. Light + dark. Used on peptide-profile section headings. */
+  .section-heading {
+    @apply text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pl-3 border-l-[3px] border-brand;
+  }
 }
