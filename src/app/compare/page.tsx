@@ -49,6 +49,12 @@ const sections: Section[] = [
     name: "Metabolic & Weight Loss",
     comparisons: [
       {
+        title: "AOD-9604 vs MOTS-C",
+        desc: "Two distinct metabolic peptides — an hGH fat-loss fragment vs a mitochondrial-derived peptide, and their different mechanisms.",
+        href: "/compare/aod-9604-vs-mots-c",
+        tag: "Metabolic",
+      },
+      {
         title: "Berberine vs Metformin",
         desc: "Blood sugar comparison — AMPK activation, clinical data, cost, and when to use each.",
         href: "/compare/berberine-vs-metformin",
