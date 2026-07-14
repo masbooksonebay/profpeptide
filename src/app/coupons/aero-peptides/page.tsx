@@ -72,7 +72,7 @@ export default function AeroPeptidesCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cellular Health &amp; Longevity</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/ss-31" className="text-[#0891b2] hover:underline">SS-31</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-C</Link>, Glutathione, <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>
+                <Link href="/peptides/ss-31" className="text-[#0891b2] hover:underline">SS-31</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-C</Link>, <Link href="/peptides/glutathione" className="text-[#0891b2] hover:underline">Glutathione</Link>, <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
