@@ -63,7 +63,10 @@ function sectionWrapClass(i: number, dividers: Dividers, spacing: Spacing, bg: B
 function panelClass(panel: Panel, accentTint: boolean): string {
   // accentbar = current design (brand left-bar). card = homepage-grid card style.
   if (panel === "card") {
-    return "rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-[#1e293b] shadow-sm hover:shadow-md hover:border-brand transition-all";
+    // Full .card treatment (identical to homepage grid cards) minus p-6, since
+    // these panels supply their own padding: same border, rounded, layered
+    // shadow, accent-border-on-hover + dark shadow reassert.
+    return "rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-[#1e293b] transition-all duration-200 hover:border-brand dark:hover:border-brand shadow-[0_1px_3px_rgba(16,24,40,0.08),0_4px_12px_-2px_rgba(16,24,40,0.08)] hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)] dark:shadow-sm dark:hover:shadow-md";
   }
   return `rounded-xl border border-gray-200 dark:border-slate-700 border-l-4 border-l-brand shadow-sm ${accentTint ? "bg-brand/5 dark:bg-brand/10" : "bg-white dark:bg-[#1e293b]"}`;
 }
