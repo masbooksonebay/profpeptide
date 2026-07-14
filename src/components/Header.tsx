@@ -20,17 +20,56 @@ const categories = [
   { label: "Sexual Health", slug: "sexual-health" },
 ];
 
-type DropdownVariant = "categories" | "research";
+type DropdownVariant = "categories" | "items";
 
-const nav: { label: string; href: string; dropdown?: DropdownVariant }[] = [
+type NavItem = { label: string; href: string };
+
+type NavEntry = {
+  label: string;
+  href: string;
+  dropdown?: DropdownVariant;
+  /** child links for the "items" dropdown variant */
+  items?: NavItem[];
+  /** pathname prefixes that mark this entry active; defaults to [href] */
+  matchHrefs?: string[];
+};
+
+const nav: NavEntry[] = [
   { label: "Peptides", href: "/peptides", dropdown: "categories" },
-  { label: "Calculator", href: "/calculator" },
-  { label: "Track", href: "/log" },
+  {
+    label: "Calculator & Tools",
+    href: "/calculator",
+    dropdown: "items",
+    items: [
+      { label: "Dosage Calculator", href: "/calculator" },
+      { label: "Track / Log", href: "/log" },
+      // Add tools here as they ship, e.g. { label: "Price Comparison", href: "/prices" }
+    ],
+    matchHrefs: ["/calculator", "/log"],
+  },
   { label: "Codes", href: "/coupons" },
   { label: "App", href: "/app" },
 ];
 
-function DropdownPanel({ baseHref, variant }: { baseHref: string; variant: DropdownVariant }) {
+function DropdownPanel({ entry }: { entry: NavEntry }) {
+  if (entry.dropdown === "items") {
+    return (
+      <div className="bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl shadow-lg py-2 w-56">
+        {entry.items?.map((it) => (
+          <Link
+            key={it.href}
+            href={it.href}
+            className="block px-4 py-2 text-sm text-gray-600 dark:text-slate-300 hover:bg-brand hover:text-white transition-colors"
+          >
+            {it.label}
+          </Link>
+        ))}
+      </div>
+    );
+  }
+
+  // "categories" variant (default): peptide category quick-links
+  const baseHref = entry.href;
   return (
     <div className="bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl shadow-lg py-2 w-64">
       {categories.map((cat) => (
@@ -85,6 +124,11 @@ export default function Header() {
   const closeTimeout = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
 
+  const isActive = (entry: NavEntry) => {
+    const hrefs = entry.matchHrefs ?? [entry.href];
+    return hrefs.some((h) => pathname === h || pathname.startsWith(h + "/"));
+  };
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
@@ -134,7 +178,7 @@ export default function Header() {
                   <Link
                     href={item.href}
                     className={`text-sm transition-all duration-150 hover:scale-105 inline-flex items-center gap-0.5 pb-1 ${
-                      pathname.startsWith(item.href)
+                      isActive(item)
                         ? "text-[#0891b2] font-medium"
                         : "text-gray-600 dark:text-slate-300 hover:text-[#0891b2]"
                     } ${activeDropdown === item.href ? "text-[#0891b2]" : ""}`}
@@ -148,7 +192,7 @@ export default function Header() {
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-0">
                       <div className="h-3 w-full" />
                       <div className="w-2 h-2 bg-[#0891b2] rotate-45 mx-auto -mb-1 relative z-10" />
-                      <DropdownPanel baseHref={item.href} variant={item.dropdown!} />
+                      <DropdownPanel entry={item} />
                     </div>
                   )}
                 </div>
@@ -194,18 +238,40 @@ export default function Header() {
       </div>
       {mobileOpen && (
         <div className="md:hidden border-t border-gray-100 dark:border-slate-800 bg-white dark:bg-[#0f172a] px-4 pb-4">
-          {nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setMobileOpen(false)}
-              className={`block py-3 text-sm border-b border-gray-50 dark:border-slate-800 ${
-                pathname.startsWith(item.href) ? "text-[#0891b2] font-medium" : "text-gray-600 dark:text-slate-300"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {nav.map((item) =>
+            item.dropdown === "items" && item.items ? (
+              // No mobile dropdown mechanism — flatten the tool links inline
+              // under a section label so they never vanish on mobile.
+              <div key={item.href}>
+                <p className="pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-slate-500">
+                  {item.label}
+                </p>
+                {item.items.map((it) => (
+                  <Link
+                    key={it.href}
+                    href={it.href}
+                    onClick={() => setMobileOpen(false)}
+                    className={`block py-3 pl-3 text-sm border-b border-gray-50 dark:border-slate-800 ${
+                      pathname === it.href ? "text-[#0891b2] font-medium" : "text-gray-600 dark:text-slate-300"
+                    }`}
+                  >
+                    {it.label}
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setMobileOpen(false)}
+                className={`block py-3 text-sm border-b border-gray-50 dark:border-slate-800 ${
+                  pathname.startsWith(item.href) ? "text-[#0891b2] font-medium" : "text-gray-600 dark:text-slate-300"
+                }`}
+              >
+                {item.label}
+              </Link>
+            )
+          )}
         </div>
       )}
       <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
