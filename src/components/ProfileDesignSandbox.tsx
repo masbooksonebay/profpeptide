@@ -12,7 +12,7 @@ import Link from "next/link";
 type Dividers = "none" | "light" | "accent" | "spaced";
 type Spacing = "current" | "roomy" | "double";
 type Bg = "slate" | "offwhite" | "white" | "bands";
-type Panel = "accentbar" | "card";
+type Panel = "card";
 
 type Section = { id: string; title: string; body: string };
 
@@ -60,16 +60,9 @@ function sectionWrapClass(i: number, dividers: Dividers, spacing: Spacing, bg: B
   return parts.join(" ");
 }
 
-function panelClass(panel: Panel, accentTint: boolean): string {
-  // accentbar = current design (brand left-bar). card = homepage-grid card style.
-  if (panel === "card") {
-    // Full .card treatment (identical to homepage grid cards) minus p-6, since
-    // these panels supply their own padding: same border, rounded, layered
-    // shadow, accent-border-on-hover + dark shadow reassert.
-    return "rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-[#1e293b] transition-all duration-200 hover:border-brand dark:hover:border-brand shadow-[0_1px_3px_rgba(16,24,40,0.08),0_4px_12px_-2px_rgba(16,24,40,0.08)] hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)] dark:shadow-sm dark:hover:shadow-md";
-  }
-  return `rounded-xl border border-gray-200 dark:border-slate-700 border-l-4 border-l-brand shadow-sm ${accentTint ? "bg-brand/5 dark:bg-brand/10" : "bg-white dark:bg-[#1e293b]"}`;
-}
+// Panel treatment for Quick Facts + TOC. Only one option remains ("Bordered
+// card" = the shared .panel-card, matching homepage grid cards). Accent-bar
+// option removed.
 
 /* ---------- dev toggle panel ---------- */
 
@@ -102,7 +95,7 @@ export default function ProfileDesignSandbox() {
   const [dividers, setDividers] = useState<Dividers>("none");
   const [spacing, setSpacing] = useState<Spacing>("current");
   const [bg, setBg] = useState<Bg>("slate");
-  const [panel, setPanel] = useState<Panel>("accentbar");
+  const [panel, setPanel] = useState<Panel>("card");
   const [open, setOpen] = useState(true);
 
   const toc = SECTIONS.map((s) => ({ id: s.id, title: s.title }));
@@ -126,7 +119,7 @@ export default function ProfileDesignSandbox() {
             <Group label="3 · Page background" value={bg} onChange={setBg}
               options={[{ v: "slate", label: "#F1F5F9" }, { v: "offwhite", label: "#FAFAFA" }, { v: "white", label: "White" }, { v: "bands", label: "White+bands" }]} />
             <Group label="4 · Quick Facts + TOC" value={panel} onChange={setPanel}
-              options={[{ v: "accentbar", label: "Accent bar" }, { v: "card", label: "Bordered card" }]} />
+              options={[{ v: "card", label: "Bordered card" }]} />
             <p className="text-[10px] text-gray-400 dark:text-slate-500 mt-1 leading-snug">React state only · not saved · toggles are independent</p>
           </div>
         )}
@@ -149,30 +142,30 @@ export default function ProfileDesignSandbox() {
         </div>
         <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">Last reviewed: May 23, 2026</p>
 
-        {/* Quick Facts */}
-        <section aria-label="Quick Facts" className={`mb-10 overflow-hidden ${panelClass(panel, false)}`}>
-          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 px-5 pt-4 pb-3 border-b border-gray-200 dark:border-slate-700">
-            Quick Facts
-          </h2>
-          <dl className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 divide-gray-200 dark:divide-slate-700">
-            {[
-              ["What it is", "A lab-made 15-amino-acid peptide studied for healing, tendon/tissue repair, and gut protection."],
-              ["How it's taken", "Subcutaneous injection, or oral for gut-related use"],
-              ["Half-life", "Under 30 minutes (plasma)"],
-              ["Typical research dose", "250–500 mcg, once or twice daily, in 4–8 week cycles"],
-              ["Research status", "Not FDA-approved — research use only. Restricted from US compounding pharmacies (FDA Category 2, 2023)."],
-              ["Also known as", "Body Protection Compound-157, BPC 15, Pentadecapeptide BPC 157, PL 14736"],
-            ].map(([k, v], i) => (
-              <div key={k} className={`px-5 py-3 ${i < 5 ? "border-b border-gray-200 dark:border-slate-700" : ""} ${i === 0 || i > 2 ? "sm:col-span-2" : i === 2 ? "sm:border-l" : ""} dark:border-slate-700`}>
-                <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">{k}</dt>
-                <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">{v}</dd>
-              </div>
-            ))}
-          </dl>
+        {/* Quick Facts — single column, no internal rules */}
+        <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+          <div className="px-5 py-4">
+            <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 mb-3">Quick Facts</h2>
+            <dl className="space-y-3">
+              {[
+                ["What it is", "A lab-made 15-amino-acid peptide studied for healing, tendon/tissue repair, and gut protection."],
+                ["How it's taken", "Subcutaneous injection, or oral for gut-related use"],
+                ["Half-life", "Under 30 minutes (plasma)"],
+                ["Typical research dose", "250–500 mcg, once or twice daily, in 4–8 week cycles"],
+                ["Research status", "Not FDA-approved — research use only. Restricted from US compounding pharmacies (FDA Category 2, 2023)."],
+                ["Also known as", "Body Protection Compound-157, BPC 15, Pentadecapeptide BPC 157, PL 14736"],
+              ].map(([k, v]) => (
+                <div key={k}>
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">{k}</dt>
+                  <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">{v}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </section>
 
         {/* Mobile TOC */}
-        <details className={`lg:hidden mb-8 overflow-hidden ${panelClass(panel, true)}`}>
+        <details className="panel-card lg:hidden mb-8 overflow-hidden">
           <summary className="cursor-pointer list-none px-4 py-3 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100">
             <span>On this page</span>
             <svg className="w-4 h-4 text-brand" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
@@ -195,7 +188,7 @@ export default function ProfileDesignSandbox() {
 
           <aside className="hidden lg:block">
             <nav aria-label="On this page" className="sticky top-24">
-              <div className={`p-5 ${panelClass(panel, true)}`}>
+              <div className="panel-card p-5">
                 <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 mb-3">On this page</h2>
                 <TocList toc={toc} />
               </div>
