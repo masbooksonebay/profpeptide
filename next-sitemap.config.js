@@ -17,6 +17,7 @@ const DROP_PATTERNS = [
 // Exact paths to drop: noindex pages (must match the page's robots metadata).
 const DROP_EXACT = new Set([
   "/contact", // src/app/contact -> metadata.robots { index: false }
+  "/prototype/profile", // design sandbox -> metadata.robots { index: false }
 ]);
 
 module.exports = {
@@ -35,6 +36,9 @@ module.exports = {
     // is kept on disk so the route stays in the build manifest; exclude it here.
     "/coupons/particle-peptides",
     "/coupons/fusion-peptide",
+    // Design sandbox (noindex, dev-only preview) — never in the sitemap.
+    "/prototype",
+    "/prototype/*",
   ],
   transform: async (config, path) => {
     if (DROP_EXACT.has(path)) return null;
