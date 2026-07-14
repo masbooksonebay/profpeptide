@@ -52,8 +52,11 @@
   .card {
     /* Light: white card clearly floats above the #F1F5F9 page — full gray-200
        border + a more present (still tasteful) layered shadow for depth.
-       Dark: border/shadow reasserted to the original values (unchanged). */
-    @apply bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl p-6 transition-shadow duration-200
+       On hover every card gets an accent border + shadow lift (matching the
+       homepage "Latest News" card), in both light and dark.
+       Dark: resting border/shadow reasserted to the original values. */
+    @apply bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl p-6 transition-all duration-200
+      hover:border-brand dark:hover:border-brand
       shadow-[0_1px_3px_rgba(16,24,40,0.08),0_4px_12px_-2px_rgba(16,24,40,0.08)]
       hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]
       dark:shadow-sm dark:hover:shadow-md;
