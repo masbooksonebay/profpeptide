@@ -33,13 +33,23 @@ export const metadata: Metadata = {
   },
 };
 
+// Runs before first paint (in <head>) so the saved theme is applied with no
+// flash-of-wrong-theme. Default is LIGHT: a saved "dark" choice is honored,
+// anything else (including no saved value) renders light. OS color-scheme is
+// intentionally NOT consulted, so first-time visitors get a consistent light
+// first impression. Must stay in sync with ThemeProvider's init logic.
+const themeScript = `(function(){try{var t=localStorage.getItem('theme');var d=document.documentElement;if(t==='dark'){d.classList.add('dark')}else{d.classList.remove('dark')}}catch(e){}})();`;
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="min-h-screen flex flex-col bg-[#FAFAFA] dark:bg-[#0f172a] text-gray-800 dark:text-slate-200">
         <ThemeProvider>
           <Header />
