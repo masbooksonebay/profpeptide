@@ -38,6 +38,12 @@ const sections: Section[] = [
         tag: "Recovery",
       },
       {
+        title: "KPV vs BPC-157",
+        desc: "Distinct gut/recovery peptides — an anti-inflammatory α-MSH fragment vs a tissue-repair pentadecapeptide, and their different mechanisms.",
+        href: "/compare/kpv-vs-bpc-157",
+        tag: "Recovery",
+      },
+      {
         title: "TB-500 vs Thymosin Beta-4",
         desc: "Fragment vs full protein — TB-500 is the synthetic active fragment of Thymosin Beta-4, not a rival compound.",
         href: "/compare/tb-500-vs-thymosin-beta-4",
