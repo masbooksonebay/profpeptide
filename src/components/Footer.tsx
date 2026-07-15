@@ -39,7 +39,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-600 dark:text-slate-300">
               <li><Link href="/calculator" className="hover:text-[#0891b2]">Dosage Calculator</Link></li>
               <li><Link href="/coupons" className="hover:text-[#0891b2]">Discount Codes</Link></li>
-              <li><Link href="/prices" className="hover:text-[#0891b2]">Price Comparison</Link></li>
+              {/* Price Comparison link gated until real vendor prices land (route is noindexed). */}
               <li><Link href="/best-peptide-vendors" className="hover:text-[#0891b2]">Best Peptide Vendors</Link></li>
               <li><Link href="/app" className="hover:text-[#0891b2]">Get the App</Link></li>
             </ul>

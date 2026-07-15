@@ -16,11 +16,15 @@ function lookup(slug: string) {
 export function generateMetadata({ params }: { params: { compound: string } }): Metadata {
   const c = lookup(params.compound);
   if (!c) return {};
-  return buildPageMetadata({
-    path: `/prices/${c.slug}`,
-    title: `${c.name} Price Comparison — Cheapest Vendors by $/mg | Prof. Peptide`,
-    description: `Compare ${c.name} prices across vetted vendors — post-code pricing, per-mg normalization across vial sizes, and cheapest-first sorting. Updated regularly.`,
-  });
+  return {
+    ...buildPageMetadata({
+      path: `/prices/${c.slug}`,
+      title: `${c.name} Price Comparison — Cheapest Vendors by $/mg | Prof. Peptide`,
+      description: `Compare ${c.name} prices across vetted vendors — post-code pricing, per-mg normalization across vial sizes, and cheapest-first sorting. Updated regularly.`,
+    }),
+    // GATED: placeholder prices — noindex until real data lands (see /prices).
+    robots: { index: false, follow: false },
+  };
 }
 
 export default function CompoundPricePage({ params }: { params: { compound: string } }) {

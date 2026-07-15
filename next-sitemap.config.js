@@ -19,6 +19,7 @@ const DROP_EXACT = new Set([
   "/contact", // src/app/contact -> metadata.robots { index: false }
   "/prototype/profile", // design sandbox -> metadata.robots { index: false }
   "/prototype/logo", // logo comparison (dev) -> metadata.robots { index: false }
+  "/prices", // gated: placeholder price data -> metadata.robots { index: false }
 ]);
 
 module.exports = {
@@ -40,6 +41,10 @@ module.exports = {
     // Design sandbox (noindex, dev-only preview) — never in the sitemap.
     "/prototype",
     "/prototype/*",
+    // Price comparison — gated on placeholder data (noindex). /prices and every
+    // /prices/<compound> page. Remove when real vendor prices land.
+    "/prices",
+    "/prices/*",
   ],
   transform: async (config, path) => {
     if (DROP_EXACT.has(path)) return null;

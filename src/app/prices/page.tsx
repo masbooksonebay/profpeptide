@@ -3,12 +3,18 @@ import { buildPageMetadata } from "@/lib/seo";
 import { PRICES_UPDATED_DATE } from "@/data/prices";
 import PricesMaster from "@/components/PricesMaster";
 
-export const metadata = buildPageMetadata({
-  path: "/prices",
-  title: "Peptide Price Comparison — Cheapest Vendors by $/mg | Prof. Peptide",
-  description:
-    "Compare research-peptide prices across vetted vendors — post-code pricing, per-mg normalization across vial sizes, and cheapest-first sorting. Updated regularly.",
-});
+export const metadata = {
+  ...buildPageMetadata({
+    path: "/prices",
+    title: "Peptide Price Comparison — Cheapest Vendors by $/mg | Prof. Peptide",
+    description:
+      "Compare research-peptide prices across vetted vendors — post-code pricing, per-mg normalization across vial sizes, and cheapest-first sorting. Updated regularly.",
+  }),
+  // GATED: prices.ts is still placeholder data. Keep the scaffold on main but
+  // never let placeholder prices be indexed. Remove this (+ the sitemap
+  // exclusion + restore the footer link) when real vendor prices land.
+  robots: { index: false, follow: false },
+};
 
 export default function PricesPage() {
   return (
