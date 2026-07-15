@@ -79,3 +79,26 @@
       dark:shadow-sm;
   }
 }
+
+/* Thin, unobtrusive scrollbar for the sticky TOC when its list overflows a
+   short viewport. Visible only while scrolling/overflowing; never hidden. */
+.toc-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(203 213 225) transparent; /* slate-300 thumb */
+}
+.toc-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.toc-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.toc-scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(203 213 225);
+  border-radius: 9999px;
+}
+:is(.dark) .toc-scroll {
+  scrollbar-color: rgb(71 85 105) transparent; /* slate-600 thumb */
+}
+:is(.dark) .toc-scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(71 85 105);
+}

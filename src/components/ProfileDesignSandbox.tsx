@@ -189,9 +189,11 @@ export default function ProfileDesignSandbox() {
             ))}
           </main>
 
-          <aside className="hidden lg:block">
-            <nav aria-label="On this page" className="sticky top-24">
-              <div className="panel-card p-5">
+          <aside className="hidden lg:block lg:sticky lg:top-24 lg:self-start">
+            <nav aria-label="On this page">
+              {/* Parent <aside> is the sticky grid item; this card caps its
+                  height to the viewport and overflows internally on a short one. */}
+              <div className="panel-card p-5 max-h-[calc(100vh-7rem)] overflow-y-auto toc-scroll">
                 <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 mb-3">On this page</h2>
                 <TocList toc={toc} />
               </div>

@@ -733,7 +733,7 @@ export default function BPC157Page() {
     <ContactLink pageName="BPC-157" pagePath="/peptides/bpc-157" />
         </main>
 
-        <aside className="hidden lg:block lg:mt-0">
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
           <ProfileTOC sections={tocSections} variant="rail" />
         </aside>
       </div>

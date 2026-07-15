@@ -48,8 +48,12 @@ export default function ProfileTOC({
   }
 
   return (
-    <nav aria-label="On this page" className="sticky top-24">
-      <div className="panel-card p-5">
+    <nav aria-label="On this page">
+      {/* The parent <aside> is the sticky grid item (sticky top-24 + self-start
+          so it stays content-height and can travel the tall grid row). This
+          card caps its height to the viewport (minus the 96px offset + breathing
+          room) and scrolls internally when the list overflows a short viewport. */}
+      <div className="panel-card p-5 max-h-[calc(100vh-7rem)] overflow-y-auto toc-scroll">
         <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 mb-3">
           On this page
         </h2>
