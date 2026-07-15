@@ -546,6 +546,9 @@ export default function BPC157Page() {
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"BPC-157","description":"BPC-157 research profile: tendon healing mechanism, dosing protocol, side effects, FDA Category 2 status, FAQ, and current regulatory status.","url":"https://profpeptide.com/peptides/bpc-157","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"BPC-157"}]}} />
+      {/* Scoped white page background (profile-page only; the global body bg
+          stays #F1F5F9). Enables the white + off-white banded sections. */}
+      <div className="min-h-screen bg-white dark:bg-[#0f172a]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
@@ -644,33 +647,38 @@ export default function BPC157Page() {
         </div>
       </div>
 
-      <div className="space-y-12 mt-12">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-24">
-            <h2 className="section-heading mb-3">
-              {s.title}
-            </h2>
-            {s.intro && (
-              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-                {s.intro}
-              </p>
-            )}
-            {s.node && s.node}
-            {s.content && (
-              <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
-            )}
-            {s.body && (
-              <ol className="list-decimal list-inside space-y-1">
-                {s.body.map((item, i) => (
-                  <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-                    {item}
-                  </li>
-                ))}
-              </ol>
-            )}
-          </div>
-        ))}
-      </div>
+      {/* White + off-white banded sections with an accent-rule divider between
+          each major (TOC-anchored) section. Overview above is section 0 (no
+          rule/band); odd overall sections get an off-white band. */}
+      {sections.map((s, mi) => (
+        <div
+          key={s.id}
+          id={s.id}
+          className={`scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12${mi % 2 === 0 ? " bg-[#F3F4F6] dark:bg-[#1e293b]/40 rounded-xl px-5 py-5" : ""}`}
+        >
+          <h2 className="section-heading mb-3">
+            {s.title}
+          </h2>
+          {s.intro && (
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+              {s.intro}
+            </p>
+          )}
+          {s.node && s.node}
+          {s.content && (
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
+          )}
+          {s.body && (
+            <ol className="list-decimal list-inside space-y-1">
+              {s.body.map((item, i) => (
+                <li key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+                  {item}
+                </li>
+              ))}
+            </ol>
+          )}
+        </div>
+      ))}
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Tissue Repair", "Tendon Healing", "Gut Protection", "Research-Grade"].map((tag) => (
@@ -732,6 +740,7 @@ export default function BPC157Page() {
         <aside className="hidden lg:block lg:mt-0">
           <ProfileTOC sections={tocSections} variant="rail" />
         </aside>
+      </div>
       </div>
       </div>
     </>
