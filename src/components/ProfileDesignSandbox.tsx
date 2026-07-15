@@ -155,12 +155,11 @@ export default function ProfileDesignSandbox() {
                 ["How it's taken", "Subcutaneous injection, or oral for gut-related use"],
                 ["Half-life", "Under 30 minutes (plasma)"],
                 ["Typical research dose", "250–500 mcg, once or twice daily, in 4–8 week cycles"],
-                ["Research status", "Not FDA-approved — research use only. Restricted from US compounding pharmacies (FDA Category 2, 2023)."],
-                ["Also known as", "Body Protection Compound-157, BPC 15, Pentadecapeptide BPC 157, PL 14736"],
-              ].map(([k, v]) => (
+                ["Research status", "Not FDA-approved — research use only."],
+              ].map(([k, v], i) => (
                 <div key={k}>
                   <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">{k}</dt>
-                  <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">{v}</dd>
+                  <dd className={`${i === 0 ? "text-base text-[#1e2d3d] dark:text-slate-100" : "text-sm text-[#1e2d3d] dark:text-slate-200"}`}>{v}</dd>
                 </div>
               ))}
             </dl>

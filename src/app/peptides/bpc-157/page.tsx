@@ -572,7 +572,7 @@ export default function BPC157Page() {
           <dl className="space-y-3">
             <div>
               <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
-              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">A lab-made 15-amino-acid peptide studied for wound healing, tendon and tissue repair, and gut protection.</dd>
+              <dd className="text-base text-[#1e2d3d] dark:text-slate-100">A lab-made 15-amino-acid peptide studied for wound healing, tendon and tissue repair, and gut protection.</dd>
             </div>
             <div>
               <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
@@ -588,11 +588,7 @@ export default function BPC157Page() {
             </div>
             <div>
               <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
-              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Not FDA-approved &mdash; for research use only. Restricted from US compounding pharmacies (FDA Category 2, 2023). Not currently banned by WADA.</dd>
-            </div>
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Also known as</dt>
-              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Body Protection Compound-157, BPC 15, Pentadecapeptide BPC 157, PL 14736</dd>
+              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Not FDA-approved &mdash; research use only.</dd>
             </div>
           </dl>
         </div>
@@ -609,7 +605,7 @@ export default function BPC157Page() {
         <h2 className="section-heading mb-3">What is BPC-157?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            BPC-157 is a 15-amino-acid synthetic peptide derived from a protective protein found in human gastric juice. Researchers have studied it for over 30 years for its remarkable wound healing, tendon repair, and gut protection effects in animal models. Despite 544+ published research articles between 1993 and 2024, no Phase 2 or Phase 3 human clinical trials have been completed. It remains one of the most popular research peptides for soft tissue recovery, with a notable safety profile and unusual stability across a wide pH range. Often paired with{" "}
+            BPC-157 is a 15-amino-acid synthetic peptide derived from a protective protein found in human gastric juice. It is also known as Body Protection Compound-157 (BPC 15, Pentadecapeptide BPC 157, PL 14736). Researchers have studied it for over 30 years for its remarkable wound healing, tendon repair, and gut protection effects in animal models. Despite 544+ published research articles between 1993 and 2024, no Phase 2 or Phase 3 human clinical trials have been completed. It remains one of the most popular research peptides for soft tissue recovery, with a notable safety profile and unusual stability across a wide pH range. Often paired with{" "}
             <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
             as the{" "}
             <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
