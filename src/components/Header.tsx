@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "./ThemeProvider";
 import { CategoryIcon } from "./CategoryIcon";
 import SearchOverlay from "./SearchOverlay";
+import PpMark from "./PpMark";
 
 const categories = [
   { label: "Metabolic & Weight Loss", slug: "metabolic" },
@@ -158,9 +159,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white dark:bg-[#0f172a] border-b border-gray-100 dark:border-slate-800">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 md:h-[72px] flex items-center justify-between">
         <Link href="/" className="flex items-end gap-2 md:gap-2.5">
-          <span className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-md border-[3px] border-brand bg-[#0f172a] dark:bg-[#1e2d3d] text-[#f0f4f8] font-bold text-4xl md:text-5xl leading-none select-none flex-shrink-0">
-            Pp
-          </span>
+          <PpMark className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0" />
           <span className="text-[#1e2d3d] dark:text-slate-100 font-extrabold text-xl md:text-2xl tracking-tight leading-none -translate-y-[3px]">
             Prof. Peptide
           </span>

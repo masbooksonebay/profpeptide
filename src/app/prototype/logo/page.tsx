@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import PpMark from "@/components/PpMark";
 
 // Noindexed dev comparison page for the header logo lockup — current centered
-// version vs. two baseline-alignment variants, at the new larger size, shown on
-// light and dark swatches. Not linked anywhere; excluded from the sitemap.
+// version vs. two baseline-alignment variants, using the traced SVG tile (not
+// CSS text), shown on light and dark swatches. Not linked; excluded from sitemap.
 export const metadata: Metadata = {
   title: "Logo lockup comparison (dev)",
   robots: { index: false, follow: false },
@@ -11,9 +12,9 @@ export const metadata: Metadata = {
 type Align = "center" | "baseline" | "lowink";
 
 function Lockup({
-  tile, pp, word, border, align, dark,
+  tile, word, align, dark,
 }: {
-  tile: number; pp: number; word: number; border: number; align: Align; dark: boolean;
+  tile: number; word: number; align: Align; dark: boolean;
 }) {
   const itemsClass = align === "center" ? "items-center" : "items-end";
   // items-end leaves Inter's descender ~3px below the tile edge. Nudge:
@@ -25,12 +26,7 @@ function Lockup({
     align === "lowink" ? `translateY(${-nudge}px)` : undefined;
   return (
     <div className={`flex gap-2.5 ${itemsClass}`}>
-      <span
-        className="flex items-center justify-center rounded-md border-brand bg-[#1e2d3d] text-white font-bold leading-none select-none flex-shrink-0"
-        style={{ width: tile, height: tile, borderWidth: border, fontSize: pp }}
-      >
-        Pp
-      </span>
+      <PpMark className="flex-shrink-0" style={{ width: tile, height: tile }} interior={dark ? "#1e2d3d" : "#0f172a"} />
       <span
         className="font-extrabold tracking-tight leading-none"
         style={{ fontSize: word, color: dark ? "#f1f5f9" : "#1e2d3d", transform: wordShift }}
@@ -41,16 +37,16 @@ function Lockup({
   );
 }
 
-function Row({ label, tile, pp, word, border, align }: { label: string; tile: number; pp: number; word: number; border: number; align: Align }) {
+function Row({ label, tile, word, align }: { label: string; tile: number; word: number; align: Align }) {
   return (
     <div className="mb-8">
       <p className="text-xs font-mono uppercase tracking-wider text-gray-500 mb-2">{label}</p>
       <div className="grid grid-cols-2 gap-4">
         <div className="rounded-lg bg-white ring-1 ring-gray-200 p-6 flex items-end min-h-[120px]">
-          <Lockup tile={tile} pp={pp} word={word} border={border} align={align} dark={false} />
+          <Lockup tile={tile} word={word} align={align} dark={false} />
         </div>
         <div className="rounded-lg bg-[#0f172a] ring-1 ring-slate-700 p-6 flex items-end min-h-[120px]">
-          <Lockup tile={tile} pp={pp} word={word} border={border} align={align} dark={true} />
+          <Lockup tile={tile} word={word} align={align} dark={true} />
         </div>
       </div>
     </div>
@@ -62,14 +58,14 @@ export default function LogoComparisonPage() {
     <div className="max-w-3xl mx-auto px-6 py-12">
       <h1 className="text-2xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-1">Logo lockup — comparison</h1>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-8">
-        Dev preview. Left = light surface, right = dark surface. Guide: each lockup sits on the box baseline.
+        Dev preview — traced SVG tile (paths, not CSS text). Left = light surface, right = dark surface.
       </p>
-      {/* Current: 36px tile, 16px Pp, 20px wordmark, 1.5px border, centered */}
-      <Row label="Current — centered (36px tile / 16px Pp / 20px word / 1.5px)" tile={36} pp={16} word={20} border={1.5} align="center" />
+      {/* Current: 36px tile, centered */}
+      <Row label="Current — centered (36px tile / 20px word)" tile={36} word={20} align="center" />
       {/* Variant A: baseline flush with tile bottom (descenders drop below) */}
-      <Row label="A — baseline flush w/ tile bottom (56px / 48px Pp / 24px word / 3px)" tile={56} pp={48} word={24} border={3} align="baseline" />
-      {/* Variant B: lowest-ink flush (descender bottom on tile edge, baseline above) */}
-      <Row label="B — lowest-ink flush (56px / 48px Pp / 24px word / 3px)" tile={56} pp={48} word={24} border={3} align="lowink" />
+      <Row label="A — baseline flush w/ tile bottom (56px tile / 24px word)" tile={56} word={24} align="baseline" />
+      {/* Variant B (shipped): lowest-ink flush (descender bottom on tile edge) */}
+      <Row label="B — lowest-ink flush, SHIPPED (56px tile / 24px word)" tile={56} word={24} align="lowink" />
     </div>
   );
 }
