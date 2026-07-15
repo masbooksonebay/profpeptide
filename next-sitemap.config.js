@@ -18,6 +18,7 @@ const DROP_PATTERNS = [
 const DROP_EXACT = new Set([
   "/contact", // src/app/contact -> metadata.robots { index: false }
   "/prototype/profile", // design sandbox -> metadata.robots { index: false }
+  "/prototype/logo", // logo comparison (dev) -> metadata.robots { index: false }
 ]);
 
 module.exports = {
