@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           <div className="col-span-2 md:col-span-1">
-            <p className="font-bold text-[#0891b2] text-base mb-2">Prof. Peptide</p>
+            <p className="font-bold text-[#1e2d3d] dark:text-slate-100 text-base mb-2">Prof. Peptide</p>
             <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
               Independent peptide and supplement research platform.
             </p>
