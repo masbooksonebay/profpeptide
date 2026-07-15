@@ -92,9 +92,11 @@ function Group<T extends string>({
 }
 
 export default function ProfileDesignSandbox() {
-  const [dividers, setDividers] = useState<Dividers>("none");
+  // Defaults match the combination ported to the live profile (white + bands,
+  // accent-rule dividers, current spacing) so the sandbox opens in sync.
+  const [dividers, setDividers] = useState<Dividers>("accent");
   const [spacing, setSpacing] = useState<Spacing>("current");
-  const [bg, setBg] = useState<Bg>("slate");
+  const [bg, setBg] = useState<Bg>("bands");
   const [panel, setPanel] = useState<Panel>("card");
   const [open, setOpen] = useState(true);
 
