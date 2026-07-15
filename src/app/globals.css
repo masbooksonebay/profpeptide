@@ -68,15 +68,14 @@
   .section-heading {
     @apply text-lg font-semibold text-[#1e2d3d] dark:text-slate-100;
   }
-  /* Bordered surface panel (Quick Facts, profile TOC) matching the homepage
-     grid cards: border + rounded + layered shadow + accent-border-on-hover,
-     light + dark. Same treatment as .card without p-6 (panels own their
-     padding). Keeps the live profile and the /prototype/profile sandbox in sync. */
+  /* Bordered surface panel (Quick Facts, profile TOC): border + rounded +
+     layered resting shadow, light + dark. Same resting treatment as .card
+     without p-6 (panels own their padding) and WITHOUT hover — these are static
+     info panels, not clickable, so no hover affordance. (.card keeps its hover.)
+     Keeps the live profile and the /prototype/profile sandbox in sync. */
   .panel-card {
-    @apply bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl transition-all duration-200
-      hover:border-brand dark:hover:border-brand
+    @apply bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl
       shadow-[0_1px_3px_rgba(16,24,40,0.08),0_4px_12px_-2px_rgba(16,24,40,0.08)]
-      hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]
-      dark:shadow-sm dark:hover:shadow-md;
+      dark:shadow-sm;
   }
 }
