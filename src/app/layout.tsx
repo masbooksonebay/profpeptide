@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   description:
     "Evidence-based research profiles for 40+ peptides and 50+ natural supplements. Dosage calculator, verified discount codes, and independent education. No ads.",
   metadataBase: new URL("https://profpeptide.com"),
+  manifest: "/site.webmanifest",
+  // Explicit, single source of favicon declarations (the App Router
+  // src/app/icon.* convention files were removed to avoid duplicate/competing
+  // rel="icon" tags). Ships an opaque 96px multiple-of-48 PNG for Google.
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96.png", type: "image/png", sizes: "96x96" },
+      { url: "/favicon-48.png", type: "image/png", sizes: "48x48" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   openGraph: {
     title: "Prof. Peptide",
     description: "Evidence-based peptide education and research tools.",
