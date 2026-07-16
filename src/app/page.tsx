@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Icon } from "@/components/CategoryIcon";
 import JsonLd from "@/components/JsonLd";
 import { articles } from "@/data/news";
+import { activeVendorCount } from "@/data/vendors";
+import HeroSearch from "@/components/HeroSearch";
 
 export const metadata = {
   alternates: { canonical: "/" },
@@ -11,7 +13,7 @@ const features = [
   {
     icon: "flask-outline",
     title: "Peptide Library",
-    desc: "Comprehensive profiles on 40+ research peptides — mechanisms, half-lives, stacking protocols, and more.",
+    desc: "Comprehensive profiles on 54 research peptides — mechanisms, half-lives, stacking protocols, and more.",
     href: "/peptides",
     cta: "Browse library",
   },
@@ -28,6 +30,13 @@ const features = [
     desc: "Evidence-based profiles for the most popular supplements — organized by category with research and buying guides.",
     href: "/supplements",
     cta: "Browse supplements",
+  },
+  {
+    icon: "compare-outline",
+    title: "Comparisons",
+    desc: "Side-by-side breakdowns of popular peptides and supplements — mechanisms, evidence, dosing, and how to choose between them.",
+    href: "/compare",
+    cta: "Compare compounds",
   },
   {
     icon: "clipboard-outline",
@@ -74,8 +83,8 @@ const features = [
 ];
 
 const trust = [
-  { value: "40+", label: "Peptide profiles" },
-  { value: "50+", label: "Supplement profiles" },
+  { value: "54", label: "Peptide profiles" },
+  { value: `${activeVendorCount}`, label: "Vetted vendors" },
   { value: "20+", label: "Verified discount codes" },
   { value: "100%", label: "Independent research" },
 ];
@@ -112,6 +121,7 @@ export default function Home() {
           <p className="text-lg text-gray-500 dark:text-slate-400 max-w-xl mx-auto mb-8 leading-relaxed">
             A research library, precision dosage calculator, protocol tracking, and a curated directory of trusted vendors with exclusive discount codes.
           </p>
+          <HeroSearch />
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/peptides" className="btn-primary text-base px-8 py-3.5">Explore Peptides</Link>
             <Link href="/calculator" className="btn-outline text-base px-8 py-3.5">Dosage Calculator</Link>

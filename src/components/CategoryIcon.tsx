@@ -2,6 +2,13 @@ const INLINE = "w-[1.1em] h-[1.1em] inline-block align-[-0.15em]";
 const BLOCK = "w-6 h-6";
 
 const icons: Record<string, React.ReactNode> = {
+  /* Two side-by-side panels — comparison. */
+  "compare-outline": (
+    <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={INLINE}>
+      <rect x="64" y="80" width="160" height="352" rx="28" />
+      <rect x="288" y="80" width="160" height="352" rx="28" />
+    </svg>
+  ),
   /* ── Category icons (Ionicons outline, viewBox 512) ── */
   "flame-outline": (
     <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={INLINE}>
