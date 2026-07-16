@@ -83,9 +83,10 @@ const features = [
 ];
 
 const trust = [
-  { value: "54", label: "Peptide profiles" },
-  { value: `${activeVendorCount}`, label: "Vetted vendors" },
-  { value: "20+", label: "Verified discount codes" },
+  { value: "54", label: "Peptide profiles" }, // /peptides route count
+  { value: "17", label: "Comparisons" }, // /compare/* page count
+  // One verified code per active (non-retired) vendor -> activeVendorCount.
+  { value: `${activeVendorCount}`, label: "Verified discount codes" },
   { value: "100%", label: "Independent research" },
 ];
 
