@@ -57,7 +57,7 @@ export default function PricesMaster() {
       {/* One card per compound */}
       <div className="space-y-8">
         {shown.map((c) => (
-          <div key={c.slug} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 bg-gray-50/50 dark:bg-[#1e293b]/40">
+          <div key={c.slug} className="panel-card p-5">
             <div className="flex items-center justify-between gap-3 mb-4">
               <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100">
                 <Link href={`/peptides/${c.slug}`} className="hover:text-[#0891b2] transition-colors">{c.name}</Link>

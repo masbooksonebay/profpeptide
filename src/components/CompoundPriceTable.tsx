@@ -68,7 +68,7 @@ export default function CompoundPriceTable({
           return (
             <div
               key={i}
-              className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border border-gray-100 dark:border-slate-700 rounded-xl p-4"
+              className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 panel-card p-4"
             >
               <div className="min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
