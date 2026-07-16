@@ -137,8 +137,14 @@ export default function Header() {
         setSearchOpen((s) => !s);
       }
     };
+    // Lets other components (e.g. the homepage HeroSearch) open the same overlay.
+    const onOpenSearch = () => setSearchOpen(true);
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    window.addEventListener("open-search", onOpenSearch);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("open-search", onOpenSearch);
+    };
   }, []);
 
   const handleEnter = useCallback((href: string) => {
