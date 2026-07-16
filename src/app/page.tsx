@@ -55,7 +55,7 @@ const features = [
   {
     icon: "pricetag-outline",
     title: "Coupon Codes",
-    desc: "Verified discount codes for trusted research-grade suppliers. Updated regularly.",
+    desc: "Verified discount codes for research-grade suppliers. Updated regularly.",
     href: "/coupons",
     cta: "See codes",
   },
@@ -120,7 +120,7 @@ export default function Home() {
             Everything you need for<br className="hidden sm:block" /> peptide research, in one place
           </h1>
           <p className="text-lg text-gray-500 dark:text-slate-400 max-w-xl mx-auto mb-8 leading-relaxed">
-            A research library, precision dosage calculator, protocol tracking, and a curated directory of trusted vendors with exclusive discount codes.
+            A research library, precision dosage calculator, protocol tracking, and discount codes for peptide vendors.
           </p>
           <HeroSearch />
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
