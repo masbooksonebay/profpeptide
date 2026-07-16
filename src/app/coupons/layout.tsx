@@ -4,7 +4,7 @@ export const metadata = {
   alternates: { canonical: "/coupons" },
   title: `Peptide Discount Codes (${CODES_VERIFIED_DATE}) — Verified Coupon & Promo Codes | Prof. Peptide`,
   description:
-    `Verified peptide discount codes, promo codes, and coupon codes for ${activeVendorCount} trusted vendors. Updated regularly. Save up to 50% on research peptides.`,
+    `Verified peptide discount codes, promo codes, and coupon codes for ${activeVendorCount} vendors. Updated regularly. Save up to 50% on research peptides.`,
 };
 
 export default function CouponsLayout({ children }: { children: React.ReactNode }) {

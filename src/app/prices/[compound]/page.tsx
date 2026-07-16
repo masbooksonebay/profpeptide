@@ -20,7 +20,7 @@ export function generateMetadata({ params }: { params: { compound: string } }): 
     ...buildPageMetadata({
       path: `/prices/${c.slug}`,
       title: `${c.name} Price Comparison — Cheapest Vendors by $/mg | Prof. Peptide`,
-      description: `Compare ${c.name} prices across vetted vendors — post-code pricing, per-mg normalization across vial sizes, and cheapest-first sorting. Updated regularly.`,
+      description: `Compare ${c.name} prices across vendors — post-code pricing, per-mg normalization across vial sizes, and cheapest-first sorting. Updated regularly.`,
     }),
     // GATED: placeholder prices — noindex until real data lands (see /prices).
     robots: { index: false, follow: false },
@@ -45,7 +45,7 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
 
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">{c.name} Price Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-2 max-w-2xl">
-        {c.name} prices across vetted vendors — post-code pricing (base struck-through), normalized to price-per-mg, sorted cheapest-first.
+        {c.name} prices across vendors — post-code pricing (base struck-through), normalized to price-per-mg, sorted cheapest-first.
       </p>
       <p className="text-sm text-gray-400 dark:text-slate-500 mb-4">Prices updated {PRICES_UPDATED_DATE}</p>
 

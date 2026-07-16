@@ -232,8 +232,10 @@ export const vendors: Record<string, Vendor> = {
 
 /**
  * Number of active (non-retired) vendors in the registry — the single source of
- * truth for "N trusted/verified vendors" copy across the site (coupons hub meta,
- * per-peptide "See all N verified vendors" links). Derive from this; never hardcode.
+ * truth for the vendor count used across the site (coupons hub meta, homepage
+ * stat, per-peptide vendor-count links). Plain count, no quality claim: /coupons
+ * and /prices list vendors without implying vetting (that lives on
+ * /best-peptide-vendors). Derive from this; never hardcode.
  */
 export const activeVendorCount = Object.values(vendors).filter((v) => !v.retired).length;
 

@@ -8,7 +8,7 @@ export const metadata = {
     path: "/prices",
     title: "Peptide Price Comparison — Cheapest Vendors by $/mg | Prof. Peptide",
     description:
-      "Compare research-peptide prices across vetted vendors — post-code pricing, per-mg normalization across vial sizes, and cheapest-first sorting. Updated regularly.",
+      "Compare research-peptide prices across vendors — post-code pricing, per-mg normalization across vial sizes, and cheapest-first sorting. Updated regularly.",
   }),
   // GATED: prices.ts is still placeholder data. Keep the scaffold on main but
   // never let placeholder prices be indexed. Remove this (+ the sitemap
@@ -27,7 +27,7 @@ export default function PricesPage() {
 
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Peptide Price Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-2 max-w-2xl">
-        Compare research-peptide prices across vetted vendors. Post-code pricing is shown first (base price struck-through), normalized to price-per-mg so you can compare across vial sizes, and sorted cheapest-first.
+        Compare research-peptide prices across vendors. Post-code pricing is shown first (base price struck-through), normalized to price-per-mg so you can compare across vial sizes, and sorted cheapest-first.
       </p>
       <p className="text-sm text-gray-400 dark:text-slate-500 mb-4">Prices updated {PRICES_UPDATED_DATE}</p>
 
