@@ -37,17 +37,7 @@ type NavEntry = {
 
 const nav: NavEntry[] = [
   { label: "Peptides", href: "/peptides", dropdown: "categories" },
-  {
-    label: "Calculator & Tools",
-    href: "/calculator",
-    dropdown: "items",
-    items: [
-      { label: "Dosage Calculator", href: "/calculator" },
-      { label: "Track / Log", href: "/log" },
-      // Add tools here as they ship, e.g. { label: "Price Comparison", href: "/prices" }
-    ],
-    matchHrefs: ["/calculator", "/log"],
-  },
+  { label: "Calculator", href: "/calculator" },
   { label: "Codes", href: "/coupons" },
   { label: "App", href: "/app" },
 ];

@@ -124,7 +124,7 @@ export default function Home() {
           </p>
           <HeroSearch />
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/peptides" className="btn-primary text-base px-8 py-3.5">Explore Peptides</Link>
+            <Link href="/peptides" className="btn-outline text-base px-8 py-3.5">Explore Peptides</Link>
             <Link href="/calculator" className="btn-outline text-base px-8 py-3.5">Dosage Calculator</Link>
             <Link href="/coupons" className="btn-outline text-base px-8 py-3.5">Discount Codes</Link>
           </div>

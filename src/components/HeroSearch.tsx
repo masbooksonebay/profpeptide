@@ -23,7 +23,7 @@ export default function HeroSearch() {
         <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-4.3-4.3M10.5 18a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
       </svg>
       <span className="flex-1 text-base text-gray-400 dark:text-slate-500">
-        Search peptides, supplements, comparisons&hellip;
+        Search peptides, vendors, comparisons&hellip;
       </span>
       <kbd className="hidden sm:inline-flex items-center rounded border border-gray-200 dark:border-slate-600 px-1.5 py-0.5 text-xs font-medium text-gray-400 dark:text-slate-500">
         &#8984;K
