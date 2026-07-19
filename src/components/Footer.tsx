@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-50 dark:bg-[#0b1120] border-t border-gray-100 dark:border-slate-800 mt-auto">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-10">
           <div className="col-span-2 md:col-span-1">
             <p className="font-bold text-[#1e2d3d] dark:text-slate-100 text-base mb-2">Prof. Peptide</p>
             <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
@@ -39,11 +39,17 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-600 dark:text-slate-300">
               <li><Link href="/calculator" className="hover:text-[#0891b2]">Dosage Calculator</Link></li>
               <li><Link href="/log" className="hover:text-[#0891b2]">Track / Log</Link></li>
+              <li><Link href="/app" className="hover:text-[#0891b2]">Get the App</Link></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-wider mb-3">Sourcing</p>
+            <ul className="space-y-2 text-sm text-gray-600 dark:text-slate-300">
               <li><Link href="/coupons" className="hover:text-[#0891b2]">Discount Codes</Link></li>
               {/* Price Comparison link gated until real vendor prices land (route is noindexed). */}
-              <li><Link href="/best-peptide-vendors" className="hover:text-[#0891b2]">Best Peptide Vendors</Link></li>
+              <li><Link href="/best-peptide-vendors" className="hover:text-[#0891b2]">Verified Peptide Vendors</Link></li>
               <li><Link href="/vendors" className="hover:text-[#0891b2]">Vendor Profiles</Link></li>
-              <li><Link href="/app" className="hover:text-[#0891b2]">Get the App</Link></li>
+              <li><Link href="/vendor-testing-index" className="hover:text-[#0891b2]">Vendor Testing Index</Link></li>
             </ul>
           </div>
           <div>
@@ -51,7 +57,6 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-600 dark:text-slate-300">
               <li><Link href="/about" className="hover:text-[#0891b2]">About</Link></li>
               <li><Link href="/methodology" className="hover:text-[#0891b2]">Methodology</Link></li>
-              <li><Link href="/vendor-testing-index" className="hover:text-[#0891b2]">Vendor Testing Index</Link></li>
               <li><Link href="/disclaimer" className="hover:text-[#0891b2]">Disclaimer</Link></li>
               <li><Link href="/privacy" className="hover:text-[#0891b2]">Privacy Policy</Link></li>
               <li><Link href="/contact" className="hover:text-[#0891b2]">Contact</Link></li>

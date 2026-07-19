@@ -6,6 +6,9 @@ export const metadata = {
   title: "Vendor Profiles — Research Peptide Suppliers | Prof. Peptide",
   description:
     "An alphabetical directory of the research-peptide vendors we profile, each with its discount code and savings. Select a vendor to open its full profile.",
+  // DIRECTIVE (Mark to confirm): keep this index out of search but let crawlers
+  // follow through to the individual vendor profile pages.
+  robots: { index: false, follow: true },
 };
 
 // Generated from vendors.ts so the list stays in sync as vendors change:
