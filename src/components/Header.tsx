@@ -21,18 +21,10 @@ const categories = [
   { label: "Sexual Health", slug: "sexual-health" },
 ];
 
-type DropdownVariant = "categories" | "items";
-
-type NavItem = { label: string; href: string };
-
 type NavEntry = {
   label: string;
   href: string;
-  dropdown?: DropdownVariant;
-  /** child links for the "items" dropdown variant */
-  items?: NavItem[];
-  /** pathname prefixes that mark this entry active; defaults to [href] */
-  matchHrefs?: string[];
+  dropdown?: "categories";
 };
 
 const nav: NavEntry[] = [
@@ -43,23 +35,7 @@ const nav: NavEntry[] = [
 ];
 
 function DropdownPanel({ entry }: { entry: NavEntry }) {
-  if (entry.dropdown === "items") {
-    return (
-      <div className="bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl shadow-lg py-2 w-56">
-        {entry.items?.map((it) => (
-          <Link
-            key={it.href}
-            href={it.href}
-            className="block px-4 py-2 text-sm text-gray-600 dark:text-slate-300 hover:bg-brand hover:text-white transition-colors"
-          >
-            {it.label}
-          </Link>
-        ))}
-      </div>
-    );
-  }
-
-  // "categories" variant (default): peptide category quick-links
+  // "categories" variant: peptide category quick-links
   const baseHref = entry.href;
   return (
     <div className="bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl shadow-lg py-2 w-64">
@@ -115,10 +91,8 @@ export default function Header() {
   const closeTimeout = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
 
-  const isActive = (entry: NavEntry) => {
-    const hrefs = entry.matchHrefs ?? [entry.href];
-    return hrefs.some((h) => pathname === h || pathname.startsWith(h + "/"));
-  };
+  const isActive = (entry: NavEntry) =>
+    pathname === entry.href || pathname.startsWith(entry.href + "/");
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -233,40 +207,18 @@ export default function Header() {
       </div>
       {mobileOpen && (
         <div className="md:hidden border-t border-gray-100 dark:border-slate-800 bg-white dark:bg-[#0f172a] px-4 pb-4">
-          {nav.map((item) =>
-            item.dropdown === "items" && item.items ? (
-              // No mobile dropdown mechanism — flatten the tool links inline
-              // under a section label so they never vanish on mobile.
-              <div key={item.href}>
-                <p className="pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-slate-500">
-                  {item.label}
-                </p>
-                {item.items.map((it) => (
-                  <Link
-                    key={it.href}
-                    href={it.href}
-                    onClick={() => setMobileOpen(false)}
-                    className={`block py-3 pl-3 text-sm border-b border-gray-50 dark:border-slate-800 ${
-                      pathname === it.href ? "text-[#0891b2] font-medium" : "text-gray-600 dark:text-slate-300"
-                    }`}
-                  >
-                    {it.label}
-                  </Link>
-                ))}
-              </div>
-            ) : (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setMobileOpen(false)}
-                className={`block py-3 text-sm border-b border-gray-50 dark:border-slate-800 ${
-                  pathname.startsWith(item.href) ? "text-[#0891b2] font-medium" : "text-gray-600 dark:text-slate-300"
-                }`}
-              >
-                {item.label}
-              </Link>
-            )
-          )}
+          {nav.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setMobileOpen(false)}
+              className={`block py-3 text-sm border-b border-gray-50 dark:border-slate-800 ${
+                pathname.startsWith(item.href) ? "text-[#0891b2] font-medium" : "text-gray-600 dark:text-slate-300"
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
         </div>
       )}
       <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />

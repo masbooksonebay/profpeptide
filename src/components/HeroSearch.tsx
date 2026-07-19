@@ -9,7 +9,7 @@ export default function HeroSearch() {
     <button
       type="button"
       onClick={() => window.dispatchEvent(new Event("open-search"))}
-      aria-label="Search peptides, supplements, and comparisons"
+      aria-label="Search peptides, vendors, and comparisons"
       className="group mx-auto mb-8 flex w-full max-w-xl items-center gap-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-[#1e293b] px-4 py-3.5 text-left shadow-[0_1px_3px_rgba(16,24,40,0.08),0_4px_12px_-2px_rgba(16,24,40,0.08)] dark:shadow-sm hover:border-brand transition-colors"
     >
       <svg
