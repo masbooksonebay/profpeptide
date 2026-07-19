@@ -208,6 +208,29 @@ export default function LogPage() {
           </p>
         </div>
 
+        {/* Full protocol tracking lives in the iOS app */}
+        <div className="mb-8 rounded-xl px-5 py-4 bg-[#3A759F]/10 border border-[#3A759F]/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100">
+              Full protocol tracking is in the Prof. Peptide iOS app
+            </p>
+            <p className="text-sm text-gray-600 dark:text-slate-300 mt-0.5">
+              Log doses, see estimated levels, and run protocols on the go. This web log keeps your reconstitution records on this device.
+            </p>
+          </div>
+          <div className="flex flex-shrink-0 gap-3">
+            <Link href="/app" className="btn-outline text-sm whitespace-nowrap">Learn more</Link>
+            <a
+              href="https://apps.apple.com/app/prof-peptide/id6761995269"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-sm whitespace-nowrap"
+            >
+              Download on the App Store
+            </a>
+          </div>
+        </div>
+
         {/* Privacy microcopy */}
         <div className="mb-8 rounded-lg px-4 py-3 bg-[#3A759F]/10 border border-[#3A759F]/20 text-sm text-[#1e2d3d] dark:text-slate-200">
           Your log is saved on this device only — no account needed, and nothing leaves your browser. Cross-device sync is coming soon. For now, use Export to back up your log or move it to another device.
