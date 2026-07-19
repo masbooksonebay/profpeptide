@@ -13,35 +13,39 @@ export const metadata = {
 
 // Generated from vendors.ts so the list stays in sync as vendors change:
 // active (non-retired) vendors only, sorted alphabetically by display name.
-// Each row links to that vendor's own profile page via its detailPage field.
+// Each card links to that vendor's own profile page via its detailPage field.
 const activeVendors = Object.values(vendors)
   .filter((v) => !v.retired)
   .sort((a, b) => a.name.localeCompare(b.name));
 
 export default function VendorProfilesPage() {
   return (
-    <div className="section max-w-3xl">
+    <div className="section">
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-4">Vendor Profiles</h1>
-      <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-8 max-w-xl">
-        An alphabetical directory of the research-peptide vendors we profile — each with its
-        discount code and savings. Select a vendor to open its full profile.
+      <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-8 max-w-2xl">
+        A directory of verified peptide vendors we profile — each with its discount code and
+        savings. Select a vendor to open its full profile.
       </p>
-      <ul className="divide-y divide-gray-100 dark:divide-slate-800">
+      {/* Clickable vendor cards — mirrors the homepage feature-grid .card
+          (accent border + shadow lift on hover). Whole card links to the
+          vendor's internal profile page; no outbound/affiliate links here. */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {activeVendors.map((v) => (
-          <li key={v.detailPage} className="py-3 flex flex-wrap items-baseline gap-x-2 gap-y-1">
-            <Link
-              href={v.detailPage}
-              className="text-sm font-medium text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors"
-            >
+          <Link href={v.detailPage} key={v.detailPage} className="card group flex flex-col">
+            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#0891b2] transition-colors">
               {v.name}
-            </Link>
-            <span className="text-gray-300 dark:text-slate-600" aria-hidden="true">&mdash;</span>
-            <span className="text-sm font-mono text-[#0891b2]">{v.code}</span>
-            <span className="text-gray-300 dark:text-slate-600" aria-hidden="true">&mdash;</span>
-            <span className="text-sm text-gray-500 dark:text-slate-400">{v.discount}</span>
-          </li>
+            </h2>
+            <span className="tag mt-3 self-start">{v.discount}</span>
+            <p className="mt-3 text-sm">
+              <span className="text-gray-400 dark:text-slate-500">Code </span>
+              <span className="font-mono text-gray-600 dark:text-slate-300">{v.code}</span>
+            </p>
+            <span className="mt-4 text-xs font-medium text-[#0891b2] group-hover:underline">
+              View profile &rarr;
+            </span>
+          </Link>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
