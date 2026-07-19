@@ -50,7 +50,6 @@ export default function Footer() {
               {/* Price Comparison link gated until real vendor prices land (route is noindexed). */}
               <li><Link href="/best-peptide-vendors" className="hover:text-[#0891b2]">Verified Peptide Vendors</Link></li>
               <li><Link href="/vendors" className="hover:text-[#0891b2]">Vendor Profiles</Link></li>
-              <li><Link href="/vendor-testing-index" className="hover:text-[#0891b2]">Vendor Testing Index</Link></li>
             </ul>
           </div>
           <div>
