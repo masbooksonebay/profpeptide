@@ -19,7 +19,7 @@ const faqs = [
     a: (
       <>
         Different doses for different goals. For joint pain and tendon support: 10–15 g/day, taken 30–60 minutes before exercise (Shaw 2017 vitamin-C-enriched gelatin protocol). For bone density and sarcopenia (older adults): 15 g/day with resistance training (Zdzieblik 2015). For skin elasticity and hydration: 2.5–10 g/day (the Proksch 2014 trial range — significantly lower than joint doses). For mixed recovery goals: 10–15 g/day covers most use cases. For the deep skin-focused profile (formulation choice, type I vs III, etc.), see the dedicated{" "}
-        <Link href="/supplements/collagen-peptides-skin" className="text-[#0891b2] hover:underline">collagen peptides for skin</Link>{" "}
+        <Link href="/supplements/collagen-peptides-skin" className="text-[#3A759F] hover:underline">collagen peptides for skin</Link>{" "}
         page.
       </>
     ),
@@ -33,7 +33,7 @@ const faqs = [
     a: (
       <>
         Because the body literally cannot make stable collagen without it.{" "}
-        <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">Vitamin C</Link>{" "}
+        <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">Vitamin C</Link>{" "}
         is the obligate cofactor for the hydroxylase enzymes (prolyl hydroxylase, lysyl hydroxylase) that hydroxylate proline and lysine residues in newly synthesized collagen chains — required for stable triple-helix structures. Without adequate vitamin C, fibroblasts produce structurally weak collagen that breaks down quickly (this is the mechanism behind scurvy). Pair collagen peptides with 500–1,000 mg vitamin C for synergistic effect. The Shaw 2017 protocol uses vitamin-C-enriched gelatin 30–60 minutes before exercise for tendon-focused outcomes.
       </>
     ),
@@ -47,11 +47,11 @@ const faqs = [
     a: (
       <>
         Yes — and this is one of the more mechanistically coherent natural-supplement-meets-peptide stacks for tissue recovery (audit pairing #4 — healing cluster).{" "}
-        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+        <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
         is a healing peptide that accelerates tissue repair through angiogenic and growth-factor signaling — particularly relevant for tendon, ligament, and gut injuries.{" "}
-        <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+        <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
         (thymosin beta-4 fragment) supports cell migration, wound healing, and tissue regeneration.{" "}
-        <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+        <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
         (α-MSH C-terminal tripeptide) is anti-inflammatory via melanocortin pathway. Collagen peptides supply the amino-acid substrate (glycine, proline, hydroxyproline) that the tissue regeneration mechanisms BPC-157 and TB-500 activate actually need. The peptides drive repair signaling; collagen provides the building blocks. Mechanistically complementary, no known negative interactions. The healing-cluster pairing (peptides + collagen + vitamin C + omega-3) is one of the more mechanistically natural multi-modal recovery protocols.
       </>
     ),
@@ -61,7 +61,7 @@ const faqs = [
     a: (
       <>
         Mostly the same supplement, different doses and contexts. Hydrolyzed Type I collagen (the dominant supplemental form) supports both skin and joint outcomes via different downstream mechanisms — fibroblast stimulation in skin (Pro-Hyp signaling), chondrocyte stimulation in cartilage. The dose range differs: skin protocols are 2.5–10 g/day (Proksch 2014 used 2.5 g); joint protocols are 10–15 g/day (Shaw 2017, Zdzieblik 2015). Some products are marketed specifically for skin or joints but typically use the same base hydrolyzed collagen. The use-case-specific page{" "}
-        <Link href="/supplements/collagen-peptides-skin" className="text-[#0891b2] hover:underline">collagen peptides for skin</Link>{" "}
+        <Link href="/supplements/collagen-peptides-skin" className="text-[#3A759F] hover:underline">collagen peptides for skin</Link>{" "}
         covers skin-specific dosing, fibroblast mechanism, and the GHK-Cu + KPV peptide pairings most relevant for skin protocols. This parent page covers the broader joint/tendon/bone/recovery applications.
       </>
     ),
@@ -167,7 +167,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Joint and tendon support.</span> 10–15 g/day hydrolyzed collagen peptides, taken 30–60 minutes before exercise. The Shaw 2017 pre-exercise protocol for tendon-focused outcomes. Pair with 500–1,000 mg vitamin C.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sarcopenia and older-adult resistance training.</span> 15 g/day with structured resistance training (Zdzieblik 2015 protocol). Resistance training stimulus is required for the muscle-mass effect; collagen is adjunct.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Bone mineral density (postmenopausal women).</span> 5 g/day chronic for 12+ months (König 2018 trial duration). Bone density changes slowly; expect 12+ months for measurable DXA improvements.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Skin-focused use.</span> 2.5–10 g/day (Proksch 2014 trial range). See <Link href="/supplements/collagen-peptides-skin" className="text-[#0891b2] hover:underline">collagen peptides for skin</Link> page for deep skin-specific dosing and formulation guidance.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Skin-focused use.</span> 2.5–10 g/day (Proksch 2014 trial range). See <Link href="/supplements/collagen-peptides-skin" className="text-[#3A759F] hover:underline">collagen peptides for skin</Link> page for deep skin-specific dosing and formulation guidance.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Undenatured Type II for joints (alternative protocol).</span> 40 mg/day UC-II collagen — distinct mechanism (oral tolerance / immunomodulation) at low dose. For users wanting joint-specific support without the high-volume hydrolyzed protocol.</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
@@ -236,15 +236,15 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Collagen peptides pair naturally with the healing peptide cluster — this is audit pairing #4, one of the more mechanistically coherent natural-supplement-meets-peptide combinations.{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             is a healing peptide that accelerates tissue repair through angiogenic and growth-factor signaling — particularly relevant for tendon, ligament, and gut injuries.{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
             (thymosin beta-4 fragment) supports cell migration, wound healing, and tissue regeneration.{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             (α-MSH C-terminal tripeptide) provides anti-inflammatory effects via the melanocortin pathway. The peptides drive the tissue repair signaling; collagen peptides provide the amino-acid substrate (glycine, proline, hydroxyproline) that the activated repair processes actually need. For skin-specific protocols, see also{" "}
-            <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>{" "}
+            <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>{" "}
             (copper peptide for skin remodeling) covered on the{" "}
-            <Link href="/supplements/collagen-peptides-skin" className="text-[#0891b2] hover:underline">collagen peptides for skin</Link>{" "}
+            <Link href="/supplements/collagen-peptides-skin" className="text-[#3A759F] hover:underline">collagen peptides for skin</Link>{" "}
             page. Mechanistically complementary across the healing cluster, no known negative interactions.
           </p>
         </div>
@@ -252,31 +252,31 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">Vitamin C</Link>{" "}
+              <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">Vitamin C</Link>{" "}
               — obligate cofactor for collagen hydroxylation. Pair 500–1,000 mg vitamin C with collagen dose; the combination is mechanistically essential, not optional.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">Glutamine</Link>{" "}
+              <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">Glutamine</Link>{" "}
               — gut healing and amino-acid substrate. Particularly relevant for gut-focused collagen protocols (BPC-157 + collagen + glutamine is a common gut-healing stack).
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fish-oil" className="text-[#0891b2] hover:underline">Omega-3 fish oil</Link>{" "}
+              <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Omega-3 fish oil</Link>{" "}
               — EPA/DHA support joint anti-inflammatory profile and bone health. Compatible joint/recovery stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/curcumin" className="text-[#0891b2] hover:underline">Curcumin</Link>{" "}
+              <Link href="/supplements/curcumin" className="text-[#3A759F] hover:underline">Curcumin</Link>{" "}
               — anti-inflammatory adjunct for joint pain. Common joint-protocol co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">Zinc carnosine</Link>{" "}
+              <Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">Zinc carnosine</Link>{" "}
               — gut lining support. Pairs with collagen for gut-focused healing protocols.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">Vitamin D3</Link>{" "}
+              <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">Vitamin D3</Link>{" "}
               — bone mineralization support. Compatible bone-health stack with collagen + König 2018-style chronic dosing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/protein-powder" className="text-[#0891b2] hover:underline">Whey protein powder</Link>{" "}
+              <Link href="/supplements/protein-powder" className="text-[#3A759F] hover:underline">Whey protein powder</Link>{" "}
               — complete protein for muscle. Collagen is incomplete protein (low leucine, missing tryptophan); whey/casein for muscle, collagen for connective tissue. Both, not either-or.
             </li>
           </ol>
@@ -415,37 +415,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           König D, Oesser S, Scharla S, Zdzieblik D, Gollhofer A. Specific collagen peptides improve bone mineral density and bone markers in postmenopausal women: a randomized controlled study. Nutrients. 2018;10(1):97.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29337906/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29337906/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29337906/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Zdzieblik D, Oesser S, Baumstark MW, Gollhofer A, König D. Collagen peptide supplementation in combination with resistance training improves body composition and increases muscle strength in elderly sarcopenic men. Br J Nutr. 2015;114(8):1237-1245.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26353786/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26353786/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26353786/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Shaw G, Lee-Barthel A, Ross ML, Wang B, Baar K. Vitamin C-enriched gelatin supplementation before intermittent activity augments collagen synthesis. Am J Clin Nutr. 2017;105(1):136-143.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27852613/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27852613/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27852613/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           de Miranda RB, Weimer P, Rossi RC. Effects of hydrolyzed collagen supplementation on skin aging: a systematic review and meta-analysis. Int J Dermatol. 2021;60(12):1449-1461.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33742704/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33742704/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33742704/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           García-Coronado JM, Martínez-Olvera L, Elizondo-Omaña RE, et al. Effect of collagen supplementation on osteoarthritis symptoms: a meta-analysis of randomized placebo-controlled trials. Int Orthop. 2019;43(3):531-538.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30368550/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30368550/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30368550/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Clark KL, Sebastianelli W, Flechsenhar KR, et al. 24-week study on the use of collagen hydrolysate as a dietary supplement in athletes with activity-related joint pain. Curr Med Res Opin. 2008;24(5):1485-1496.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18416885/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18416885/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18416885/
           </a>
         </li>
@@ -461,12 +461,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -591,7 +591,7 @@ export default function CollagenPeptidesPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Collagen Peptides</h1>
@@ -617,11 +617,11 @@ export default function CollagenPeptidesPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Collagen is the most abundant protein in the human body — approximately 30% of total protein — forming the structural scaffold of skin, bones, tendons, ligaments, cartilage, and blood vessels. Collagen peptides are hydrolyzed collagen, broken into small bioactive di- and tri-peptide fragments (notably Pro-Hyp, the proline-hydroxyproline dipeptide) that absorb intact through the gut and accumulate in connective tissues. Unlike whole collagen (poorly absorbed) or gelatin (un-hydrolyzed), hydrolyzed collagen peptides have demonstrated bioavailability and measurable effects on collagen synthesis in skin, joints, bone, and connective tissue. Endogenous collagen production declines ~1% per year from around age 25, accelerated by UV exposure, smoking, poor nutrition. This parent profile covers the broader connective-tissue use cases: joint pain reduction (García-Coronado 2019 meta-analysis), tendon collagen synthesis (Shaw 2017 pre-exercise protocol), bone mineral density in postmenopausal women (König 2018 12-month RCT), and sarcopenia/muscle in older adults (Zdzieblik 2015). For deep skin-focused coverage (formulation choice, Type I vs III, GHK-Cu peptide pairing), see the dedicated{" "}
-            <Link href="/supplements/collagen-peptides-skin" className="text-[#0891b2] hover:underline">collagen peptides for skin</Link>{" "}
+            <Link href="/supplements/collagen-peptides-skin" className="text-[#3A759F] hover:underline">collagen peptides for skin</Link>{" "}
             page. Collagen peptides pair naturally with{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">healing peptides like BPC-157 and TB-500</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">healing peptides like BPC-157 and TB-500</Link>{" "}
             and{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             — audit pairing #4 (healing cluster) — one of the more mechanistically coherent natural-supplement-meets-peptide combinations.
           </p>
           <div>
@@ -685,13 +685,13 @@ export default function CollagenPeptidesPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/collagen-peptides-skin" className="text-sm font-medium text-[#0891b2] hover:underline">Collagen Peptides for Skin</Link>
-          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin C</Link>
-          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#0891b2] hover:underline">Glutamine</Link>
-          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc Carnosine</Link>
-          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#0891b2] hover:underline">Fish Oil</Link>
-          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#0891b2] hover:underline">Curcumin</Link>
-          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin D3</Link>
+          <Link href="/supplements/collagen-peptides-skin" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides for Skin</Link>
+          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C</Link>
+          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">Glutamine</Link>
+          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc Carnosine</Link>
+          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
+          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#3A759F] hover:underline">Curcumin</Link>
+          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin D3</Link>
         </div>
       </div>
 

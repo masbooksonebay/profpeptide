@@ -300,11 +300,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Magnesium is foundational mineral support across peptide protocols rather than a mechanism-specific peptide partner. Sleep-related contexts (GH-secretagogue peptides like{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             and{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">ipamorelin</Link>{" "}
             dosed pre-bed for GH pulse alignment) benefit from adequate magnesium status supporting sleep quality. Healing peptides like{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             for tissue repair work alongside magnesium&apos;s metabolic foundational role.
           </p>
         </div>
@@ -312,38 +312,38 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">Vitamin D3</Link>{" "}
+              <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">Vitamin D3</Link>{" "}
               — magnesium is the cofactor for vitamin D activation enzymes. Adequate magnesium status is required for normal vitamin D response. Common foundational pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
               — both often deficient together. Foundational mineral pairing. Take separately or with food to manage competition for absorption sites.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Calcium — vitamin D-mediated calcium absorption requires magnesium cofactor. Caution: take separately by 2+ hours (compete for absorption); high-calcium intake can suppress magnesium absorption.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zma" className="text-[#0891b2] hover:underline">ZMA (Zinc + Magnesium + B6)</Link>{" "}
+              <Link href="/supplements/zma" className="text-[#3A759F] hover:underline">ZMA (Zinc + Magnesium + B6)</Link>{" "}
               — bedtime supplement formulation; combines magnesium with zinc and B6.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/melatonin" className="text-[#0891b2] hover:underline">Melatonin</Link>{" "}
+              <Link href="/supplements/melatonin" className="text-[#3A759F] hover:underline">Melatonin</Link>{" "}
               — sleep stacking; different mechanism (circadian) than magnesium (GABA). Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glycine" className="text-[#0891b2] hover:underline">Glycine</Link>{" "}
+              <Link href="/supplements/glycine" className="text-[#3A759F] hover:underline">Glycine</Link>{" "}
               — sleep and recovery; complementary to magnesium&apos;s GABA effects.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-theanine</Link>{" "}
+              <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-theanine</Link>{" "}
               — calming/anxiety support; complementary mechanism.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/electrolyte-powders" className="text-[#0891b2] hover:underline">Electrolyte powders</Link>{" "}
+              <Link href="/supplements/electrolyte-powders" className="text-[#3A759F] hover:underline">Electrolyte powders</Link>{" "}
               — most contain modest magnesium amounts. Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine</Link>{" "}
+              <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine</Link>{" "}
               — different mechanism, foundational athletic stacking.
             </li>
           </ol>
@@ -489,37 +489,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Schwalfenberg GK, Genuis SJ. The importance of magnesium in clinical healthcare. Scientifica. 2017;2017:4179326.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29093983/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29093983/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29093983/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Zhang X, Li Y, Del Gobbo LC, et al. Effects of magnesium supplementation on blood pressure: a meta-analysis of randomized double-blind placebo-controlled trials. Hypertension. 2016;68(2):324-333.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27402922/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27402922/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27402922/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Garrison SR, Korownyk CS, Kolber MR, et al. Magnesium for skeletal muscle cramps. Cochrane Database Syst Rev. 2020;9(9):CD009402.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/32956536/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/32956536/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/32956536/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pringsheim T, Davenport WJ, Mackie G, et al. Canadian Headache Society guideline for migraine prophylaxis. Can J Neurol Sci. 2012;39(2 Suppl 2):S1-59.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22529202/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22529202/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22529202/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Liu G, Weinger JG, Lu ZL, Xue F, Sadeghpour S. Efficacy and safety of MMFS-01, a synapse density enhancer, for treating cognitive impairment in older adults: a randomized, double-blind, placebo-controlled trial. J Alzheimers Dis. 2016;49(4):971-990.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26677804/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26677804/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26677804/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Abbasi B, Kimiagar M, Sadeghniiat K, et al. The effect of magnesium supplementation on primary insomnia in elderly: a double-blind placebo-controlled clinical trial. J Res Med Sci. 2012;17(12):1161-1169.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23853635/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23853635/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23853635/
           </a>
         </li>
@@ -535,12 +535,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -633,7 +633,7 @@ export default function MagnesiumPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Magnesium</h1>
@@ -659,9 +659,9 @@ export default function MagnesiumPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Magnesium is an essential mineral and the fourth most abundant cation in the human body, serving as cofactor for over 300 enzymatic reactions including ATP production (Mg-ATP is the active energy currency), DNA synthesis, protein synthesis, muscle contraction, nerve transmission, and blood glucose regulation. Approximately 50–60% of total body magnesium is stored in bone; the rest is intracellular (predominantly muscle) with a small tightly-regulated extracellular fraction. Magnesium deficiency is remarkably common — surveys suggest 45–68% of US adults fall short of the RDA from dietary intake alone — and chronic insufficient intake is associated with increased risk of hypertension, type 2 diabetes, cardiovascular disease, migraine, and impaired immune function. The evidence base for magnesium supplementation requires honest sub-tier breakdown — the same parent-pattern approach used in the{" "}
-            <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">vitamin C</Link>{" "}
+            <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">vitamin C</Link>{" "}
             and{" "}
-            <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">vitamin D3</Link>{" "}
+            <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">vitamin D3</Link>{" "}
             profiles. <span className="font-semibold">Strong evidence</span> covers deficiency correction (foundational essential mineral), constipation management via osmotic mechanism (citrate and oxide forms), migraine prophylaxis (AAN/AHS Level B recommendation at 400–600 mg/day per Pringsheim 2012), and IV magnesium sulfate for eclampsia/pre-eclampsia (obstetric specialty context). <span className="font-semibold">Moderate evidence</span> covers blood pressure reduction (Zhang 2016 meta of 34 RCTs: ~2 mmHg systolic reduction), glycemic control and insulin sensitivity (particularly in users with diabetes or deficiency), and pregnancy leg cramps. <span className="font-semibold">Emerging/Modest evidence with popular reputation exceeding RCT base</span> covers sleep quality (Abbasi 2012 small trial in 46 elderly insomniacs is the most-cited; subsequent RCT replication is limited; effect may be most pronounced in baseline-deficient users), magnesium L-threonate for cognition (Liu 2016 small trial; premium-priced form with thin human evidence). <span className="font-semibold">Negative evidence (popular claim debunked)</span> covers idiopathic muscle cramps in adults — Garrison 2020 Cochrane systematic review of 11 RCTs found magnesium did NOT significantly reduce cramp frequency, intensity, or duration in adults with idiopathic muscle cramps. This is the definitive evidence-based refutation of the popular &quot;magnesium for cramps&quot; claim in general adult populations (pregnancy leg cramps and exercise-deficiency contexts differ). The central practical decision in this category is <span className="font-semibold">form selection</span> — different magnesium forms have substantially different bioavailability, gut effects, and clinical applications. Glycinate (bisglycinate) is gentle on GI and the default for general supplementation, sleep, and anxiety; citrate is well-absorbed with mild osmotic laxative effect; oxide has poor bioavailability (~4% elemental Mg absorbed) but strong osmotic effect for constipation specifically; L-threonate is marketed for cognition based on Liu 2010 rodent brain-magnesium data with thin human evidence and premium pricing; malate combines with malic acid for fatigue contexts. Standard supplemental dose: 200–400 mg elemental magnesium daily. Supplemental tolerable upper intake level: 350 mg/day (set by laxative threshold, not toxicity — does NOT cap dietary intake). Migraine prophylaxis protocol at 400–600 mg/day intentionally exceeds the UL for that specific therapeutic indication, under neurology supervision.
           </p>
           <div>
@@ -726,12 +726,12 @@ export default function MagnesiumPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin D3</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/zma" className="text-sm font-medium text-[#0891b2] hover:underline">ZMA</Link>
-          <Link href="/supplements/melatonin" className="text-sm font-medium text-[#0891b2] hover:underline">Melatonin</Link>
-          <Link href="/supplements/glycine" className="text-sm font-medium text-[#0891b2] hover:underline">Glycine</Link>
-          <Link href="/supplements/electrolyte-powders" className="text-sm font-medium text-[#0891b2] hover:underline">Electrolyte Powders</Link>
+          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin D3</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/zma" className="text-sm font-medium text-[#3A759F] hover:underline">ZMA</Link>
+          <Link href="/supplements/melatonin" className="text-sm font-medium text-[#3A759F] hover:underline">Melatonin</Link>
+          <Link href="/supplements/glycine" className="text-sm font-medium text-[#3A759F] hover:underline">Glycine</Link>
+          <Link href="/supplements/electrolyte-powders" className="text-sm font-medium text-[#3A759F] hover:underline">Electrolyte Powders</Link>
         </div>
       </div>
 

@@ -21,7 +21,7 @@ const faqs = [
         Depends on goal. For pre-workout pump, resistance-training volume, and reduced post-exercise soreness:{" "}
         <span className="font-semibold">L-citrulline malate at 6–8 g</span>{" "}
         is the trial-validated pre-workout protocol (Pérez-Guisado 2010, Rhim 2020 meta-analysis). The malate component contributes Krebs-cycle support and acid-base buffering during high-intensity exercise — additive to citrulline&apos;s NO-mediated vasodilation. For chronic vascular health, erectile dysfunction, or blood pressure support: pure{" "}
-        <Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}
+        <Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}
         at 1.5–6 g/day is sufficient and more cost-efficient — the malate contribution is exercise-specific. Both reach the NO pathway through the same kidney conversion step. For ED specifically, Cormio 2011 used pure L-citrulline at 1.5 g/day; using citrulline malate adds malic acid you don&apos;t need for that pathway.
       </>
     ),
@@ -47,7 +47,7 @@ const faqs = [
     a: (
       <>
         Yes — this is the canonical &quot;evidenced pre-workout stack&quot; with three different mechanisms that combine well. Citrulline malate (6–8 g) handles blood flow and rep volume via NO. Caffeine (200–400 mg) handles central nervous system arousal and perceived effort. Beta-alanine (3–5 g daily, chronic dosing — not acute) handles muscle carnosine buffering for high-intensity work. None of these mechanisms overlap; the combination is mechanistically rational and well-studied.{" "}
-        <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine</Link>{" "}
+        <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine</Link>{" "}
         (5 g daily, chronic) is the fourth pillar — adds phosphocreatine substrate for high-intensity work. Citrulline malate + caffeine + beta-alanine + creatine is the most-evidenced four-component pre-workout stack.
       </>
     ),
@@ -154,7 +154,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-workout (resistance training).</span> 6–8 g L-citrulline malate (2:1 form) taken 30–60 minutes before training. 8 g is the Pérez-Guisado trial-validated dose; 6 g is the common commercial dose. Below 6 g, effects diminish.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-workout (endurance / cycling).</span> 6 g 30–60 minutes pre-exercise. Effect size smaller than resistance training but consistent in trials.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Daily dosing (training block).</span> Some users dose 6 g daily during high-volume training blocks rather than only on training days. Modest additional benefit; mostly a convenience preference.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">For non-exercise NO/vascular goals:</span> use pure{" "}<Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}at 1.5–3 g (ED) or 3–6 g (BP/endothelial function). The malate component is exercise-specific.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">For non-exercise NO/vascular goals:</span> use pure{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}at 1.5–3 g (ED) or 3–6 g (BP/endothelial function). The malate component is exercise-specific.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid pure L-citrulline for resistance training:</span> the malate-bonded form has the trial evidence. Pure L-citrulline at 3–4 g pre-workout is acceptable as a budget alternative but less-studied for ergogenic outcomes.</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
@@ -223,11 +223,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-citrulline malate's pre-workout context is mostly supplement-based, not peptide-based. The natural peptide pairings are with the GH-secretagogue cluster for users targeting training-driven hypertrophy:{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             and{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">ipamorelin</Link>{" "}
             (typically dosed pre-bed for GH pulse alignment) work on hormonal axis for recovery and tissue adaptation; citrulline malate works acutely on training volume during the workout itself. Mechanistically complementary without overlap.{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             for tendon/joint healing in heavy-training users — citrulline malate doesn't directly affect tendon healing but the improved training capacity it enables creates more recovery demand.
           </p>
         </div>
@@ -235,7 +235,7 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine monohydrate</Link>{" "}
+              <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine monohydrate</Link>{" "}
               — 5 g daily chronic dosing. Different mechanism (phosphocreatine ATP buffering vs NO-mediated blood flow). The foundational pairing — most-evidenced two-component performance stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -248,15 +248,15 @@ const sections = [
               Beetroot / dietary nitrate — additional NO pathway (nitrate → nitrite → NO) independent of the arginine pathway. Combination provides "double NO" stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/electrolyte-powders" className="text-[#0891b2] hover:underline">Electrolyte powders</Link>{" "}
+              <Link href="/supplements/electrolyte-powders" className="text-[#3A759F] hover:underline">Electrolyte powders</Link>{" "}
               — common pre-workout drink base. Compatible with citrulline malate dissolved in same drink.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/bcaas" className="text-[#0891b2] hover:underline">BCAAs</Link>{" "}
+              <Link href="/supplements/bcaas" className="text-[#3A759F] hover:underline">BCAAs</Link>{" "}
               or intra-workout EAA — protein synthesis substrate during long training sessions. Compatible but not synergistic in mechanism.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">Pure L-citrulline</Link>{" "}
+              <Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">Pure L-citrulline</Link>{" "}
               for chronic daily dosing alongside pre-workout citrulline malate is redundant — pick one.
             </li>
           </ol>
@@ -355,7 +355,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Third-party tested for purity</span> — heavy metals, microbial. USP, NSF, or ConsumerLab certifications.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Powder form for therapeutic doses</span> — 6–8 g is impractical as capsules (too many pills). Pre-workout mixing in water or pre-workout drink is the standard delivery.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reputable brands</span> — Now Foods, Thorne, Bulk Supplements, NutraBio, Nutricost. Brand premium is mostly QC transparency.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">For non-exercise NO/vascular goals:</span> use pure{" "}<Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}— malate adds cost and isn&apos;t needed for vascular/sexual health applications.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">For non-exercise NO/vascular goals:</span> use pure{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}— malate adds cost and isn&apos;t needed for vascular/sexual health applications.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid "NO booster" proprietary pre-workout blends</span> — they usually combine sub-therapeutic doses of citrulline, arginine, and beet powder with stim ingredients. Buy citrulline malate as a single ingredient and combine deliberately.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Read serving size carefully</span> — some products list "6 g per serving" where the serving is 2 scoops; check whether you'd need 1 or 2 scoops to reach 6–8 g.</li>
           </ul>
@@ -392,31 +392,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pérez-Guisado J, Jakeman PM. Citrulline malate enhances athletic anaerobic performance and relieves muscle soreness. J Strength Cond Res. 2010;24(5):1215-1222.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20386132/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20386132/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20386132/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Rhim HC, Kim SJ, Park J, Jang KM. Effect of citrulline on post-exercise rating of perceived exertion, muscle soreness, and blood lactate levels: a systematic review and meta-analysis. J Sport Health Sci. 2020;9(6):553-561.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33308806/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33308806/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33308806/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Schwedhelm E, Maas R, Freese R, et al. Pharmacokinetic and pharmacodynamic properties of oral L-citrulline and L-arginine: impact on nitric oxide metabolism. Br J Clin Pharmacol. 2008;65(1):51-59.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17919250/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17919250/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17919250/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bailey SJ, Blackwell JR, Williams E, et al. Acute L-citrulline supplementation increases nitric oxide bioavailability but not inspiratory muscle oxygenation and respiratory performance. Nitric Oxide. 2016;52:36-44.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26877070/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26877070/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26877070/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bendahan D, Mattei JP, Ghattas B, Confort-Gouny S, Le Guern ME, Cozzone PJ. Citrulline/malate promotes aerobic energy production in human exercising muscle. Br J Sports Med. 2002;36(4):282-289.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/12145119/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/12145119/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/12145119/
           </a>
         </li>
@@ -432,12 +432,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -530,7 +530,7 @@ export default function LCitrullineMalatePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">L-Citrulline Malate</h1>
@@ -541,7 +541,7 @@ export default function LCitrullineMalatePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Citrulline malate, CM, L-citrulline DL-malate (2:1); parent profile:{" "}<Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}for non-exercise NO/vascular applications
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Citrulline malate, CM, L-citrulline DL-malate (2:1); parent profile:{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}for non-exercise NO/vascular applications
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Pre-workout ergogenic / nitric oxide pathway precursor (citrulline arm) + Krebs-cycle intermediate and pH buffer (malate arm) / two-mechanism resistance-training performance compound
@@ -556,7 +556,7 @@ export default function LCitrullineMalatePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-citrulline malate is the amino acid L-citrulline bonded to malic acid in a 2:1 ratio — two parts citrulline to one part malate by mass. The citrulline arm reaches the nitric oxide pathway through the same kidney-conversion route covered in detail on the{" "}
-            <Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">parent L-citrulline profile</Link>{" "}
+            <Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">parent L-citrulline profile</Link>{" "}
             (oral citrulline escapes first-pass intestinal/hepatic arginase metabolism, reaches the kidneys, is converted to arginine, which serves as NOS substrate — producing NO that vasodilates working muscle). The malate arm contributes its own mechanism: malic acid is a Krebs-cycle intermediate that may support aerobic ATP production during high-intensity exercise and provides acid-base buffering against exercise-induced lactic acid accumulation. The trial evidence base for the malate-bonded form is concentrated in pre-workout resistance training contexts. Pérez-Guisado 2010 — the foundational trial — documented that 8 g L-citrulline malate before an upper-body resistance training session produced 52.92% more repetitions and 40% lower muscle soreness at 24 and 48 hours post-exercise. Rhim 2020 meta-analysis of 13 RCTs confirmed reduced rating of perceived exertion and reduced muscle soreness across the broader trial base. Bendahan 2002 used 31-phosphorus magnetic resonance spectroscopy to directly measure 34% higher oxidative ATP production rate and 20% faster phosphocreatine recovery with citrulline malate supplementation. This is one of the strongest pre-workout supplement evidence bases — citrulline malate stacks naturally with caffeine, creatine, and beta-alanine in evidenced pre-workout protocols. For non-exercise NO applications (erectile dysfunction, blood pressure, endothelial function), pure L-citrulline is sufficient and more cost-efficient.
           </p>
           <div>
@@ -575,7 +575,7 @@ export default function LCitrullineMalatePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 6–8 g L-citrulline malate (2:1 form) taken 30–60 minutes before training. 8 g is the Pérez-Guisado 2010 trial-validated dose. Pre-workout only — no chronic loading required. For non-exercise NO/vascular applications, use pure{" "}<Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}— the malate component is exercise-specific.
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 6–8 g L-citrulline malate (2:1 form) taken 30–60 minutes before training. 8 g is the Pérez-Guisado 2010 trial-validated dose. Pre-workout only — no chronic loading required. For non-exercise NO/vascular applications, use pure{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}— the malate component is exercise-specific.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Mild GI discomfort at single doses above 8 g (split dosing helps); modest acute blood pressure reduction during the pre-workout window (favorable but relevant with antihypertensives); do not combine with nitrate medications (additive cGMP/hypotension); no herpes outbreak risk like L-arginine.
@@ -620,12 +620,12 @@ export default function LCitrullineMalatePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/l-citrulline" className="text-sm font-medium text-[#0891b2] hover:underline">L-Citrulline</Link>
-          <Link href="/supplements/creatine" className="text-sm font-medium text-[#0891b2] hover:underline">Creatine</Link>
-          <Link href="/supplements/beta-alanine" className="text-sm font-medium text-[#0891b2] hover:underline">Beta-Alanine</Link>
-          <Link href="/supplements/bcaas" className="text-sm font-medium text-[#0891b2] hover:underline">BCAAs</Link>
-          <Link href="/supplements/electrolyte-powders" className="text-sm font-medium text-[#0891b2] hover:underline">Electrolyte Powders</Link>
-          <Link href="/supplements/l-arginine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Arginine</Link>
+          <Link href="/supplements/l-citrulline" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline</Link>
+          <Link href="/supplements/creatine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine</Link>
+          <Link href="/supplements/beta-alanine" className="text-sm font-medium text-[#3A759F] hover:underline">Beta-Alanine</Link>
+          <Link href="/supplements/bcaas" className="text-sm font-medium text-[#3A759F] hover:underline">BCAAs</Link>
+          <Link href="/supplements/electrolyte-powders" className="text-sm font-medium text-[#3A759F] hover:underline">Electrolyte Powders</Link>
+          <Link href="/supplements/l-arginine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Arginine</Link>
         </div>
       </div>
 

@@ -24,9 +24,9 @@ const faqs = [
     q: "What's the difference between CJC-1295 and Sermorelin?",
     a: (
       <>
-        <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+        <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
         is the natural GHRH(1-29) fragment with native amino acids. CJC-1295 (without DAC) is the same fragment with four amino acid substitutions (D-Ala2, Gln8, Ala15, Leu27) that resist DPP-IV degradation. CJC-1295 is therefore more stable and produces longer-lasting effects than sermorelin. The DAC version goes further with albumin binding. See the{" "}
-        <Link href="/compare/cjc-1295-vs-sermorelin-vs-ipamorelin" className="text-[#0891b2] hover:underline">CJC-1295 vs Sermorelin vs Ipamorelin comparison</Link>{" "}
+        <Link href="/compare/cjc-1295-vs-sermorelin-vs-ipamorelin" className="text-[#3A759F] hover:underline">CJC-1295 vs Sermorelin vs Ipamorelin comparison</Link>{" "}
         for a side-by-side breakdown.
       </>
     ),
@@ -36,9 +36,9 @@ const faqs = [
     a: (
       <>
         They activate different receptor pathways. CJC-1295 activates the GHRH receptor;{" "}
-        <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">ipamorelin</Link>{" "}
+        <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">ipamorelin</Link>{" "}
         activates the ghrelin (GHSR-1a) receptor. Both pathways converge on GH release but through different mechanisms. Combining produces greater GH release than either alone &mdash; the dual-pathway activation is synergistic, not additive. This pairing is the{" "}
-        <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>
+        <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack</Link>
         .
       </>
     ),
@@ -64,7 +64,7 @@ const faqs = [
     a: (
       <>
         CJC-1295 is sold by specialty research peptide vendors. Verify whether you&apos;re buying with DAC or without DAC &mdash; labeling is sometimes inconsistent. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -166,7 +166,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -177,7 +177,7 @@ const sections = [
     intro: (
       <>
         CJC-1295 is given as a subcutaneous injection &mdash; under the skin, not into muscle &mdash; using a small insulin syringe. Dosing frequency depends on whether you have the DAC version (1–2× weekly) or the no-DAC version (2–3× daily). Empty-stomach timing is unique to the GH-axis peptides: insulin spikes from food blunt GH release. For the practical mechanics of insulin syringes, units vs mcg conversion, and subcutaneous technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -284,7 +284,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 5 mg vial, each unit drawn delivers 50 mcg of CJC-1295 at 1 mL reconstitution, 25 mcg at 2 mL, and 16.7 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -298,26 +298,26 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Ipamorelin (GH Stack).</span> The most popular pairing.{" "}
-          <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+          <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
           (ghrelin receptor) + CJC-1295 (GHRH receptor) produces synergistic GH release through dual-pathway activation. See the{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>{" "}
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack</Link>{" "}
           page for the combined protocol.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">BPC-157 / TB-500.</span>{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>{" "}
           paired for recovery support during anabolic protocols. Different mechanisms, no contraindications.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">IGF-1 LR3.</span>{" "}
-          <Link href="/peptides/igf-1-lr3" className="text-[#0891b2] hover:underline">IGF-1 LR3</Link>{" "}
+          <Link href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3</Link>{" "}
           combined for direct IGF-1 receptor activation alongside endogenous GH stimulation. Different mechanisms, additive effects &mdash; space injections 2–3 hours apart to avoid receptor competition.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: Sermorelin or other GHRH analogs.</span>{" "}
-          <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+          <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
           and{" "}
-          <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">tesamorelin</Link>{" "}
+          <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">tesamorelin</Link>{" "}
           target the same GHRH receptor &mdash; combining with CJC-1295 is redundant. Choose one.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training.</span> Exercise-induced GH release amplified when paired with CJC-1295 &mdash; non-peptide intervention but mechanistically the cleanest amplifier.</li>
@@ -430,7 +430,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -462,31 +462,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. CJC-1295.{" "}
-          <a href="https://en.wikipedia.org/wiki/CJC-1295" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://en.wikipedia.org/wiki/CJC-1295" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://en.wikipedia.org/wiki/CJC-1295
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Teichman SL, Neale A, Lawrence B, et al. Prolonged stimulation of growth hormone (GH) and insulin-like growth factor I secretion by CJC-1295 in healthy adults. J Clin Endocrinol Metab. 2006;91(3):799-805.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16352683/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16352683/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16352683/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ionescu M, Frohman LA. Pulsatile secretion of growth hormone (GH) persists during continuous stimulation by CJC-1295, a long-acting GHRH analog. J Clin Endocrinol Metab. 2006;91(12):4792-7.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17018654/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17018654/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17018654/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sackmann-Sala L, Ding J, Frohman LA, Kopchick JJ. Activation of the GH/IGF-1 axis by CJC-1295, a long-acting GHRH analog, results in serum protein profile changes in normal adult subjects. Growth Horm IGF Res. 2009;19(6):471-7.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/19386527/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/19386527/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/19386527/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Alba M, Fintini D, Sagazio A, et al. Once-daily administration of CJC-1295, a long-acting growth hormone-releasing hormone (GHRH) analog, normalizes growth in the GHRH knockout mouse. Am J Physiol Endocrinol Metab. 2006;291(6):E1290-4.{" "}
-          <a href="https://journals.physiology.org/doi/full/10.1152/ajpendo.00201.2006" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://journals.physiology.org/doi/full/10.1152/ajpendo.00201.2006" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://journals.physiology.org/doi/full/10.1152/ajpendo.00201.2006
           </a>
         </li>
@@ -502,12 +502,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -528,7 +528,7 @@ export default function CJC1295Page() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -558,11 +558,11 @@ export default function CJC1295Page() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             CJC-1295 is a synthetic 30-amino-acid analog of growth hormone-releasing hormone (GHRH) developed by ConjuChem Biotechnologies. It exists in two forms: CJC-1295 with DAC (Drug Affinity Complex) and CJC-1295 without DAC (also called Modified GRF 1-29). The DAC modification binds the peptide to serum albumin, extending its half-life from ~30 minutes to 6–8 days. Both forms stimulate pulsatile GH release via the GHRH receptor on pituitary somatotroph cells. CJC-1295 reached Phase 2 clinical trials before development was discontinued. It remains one of the most-studied research peptides for GH-axis stimulation, especially when stacked with{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">ipamorelin</Link>{" "}
             as the{" "}
-            <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>
+            <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack</Link>
             . New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -582,7 +582,7 @@ export default function CJC1295Page() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -635,26 +635,26 @@ export default function CJC1295Page() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Ipamorelin</Link>
-        <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Sermorelin</Link>
-        <Link href="/peptides/tesamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Tesamorelin</Link>
-        <Link href="/peptides/mk-677" className="text-sm font-medium text-[#0891b2] hover:underline">MK-677</Link>
-        <Link href="/peptides/igf-1-lr3" className="text-sm font-medium text-[#0891b2] hover:underline">IGF-1 LR3</Link>
+        <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Ipamorelin</Link>
+        <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Sermorelin</Link>
+        <Link href="/peptides/tesamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Tesamorelin</Link>
+        <Link href="/peptides/mk-677" className="text-sm font-medium text-[#3A759F] hover:underline">MK-677</Link>
+        <Link href="/peptides/igf-1-lr3" className="text-sm font-medium text-[#3A759F] hover:underline">IGF-1 LR3</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#0891b2] hover:underline">GH Stack</Link>
-        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#0891b2] hover:underline">Wolverine Stack</Link>
+        <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#3A759F] hover:underline">GH Stack</Link>
+        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>
         </div>
       </div>
 
-      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/compare/cjc-1295-vs-sermorelin-vs-ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">CJC-1295 vs Sermorelin vs Ipamorelin &rarr;</Link>
+        <Link href="/compare/cjc-1295-vs-sermorelin-vs-ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">CJC-1295 vs Sermorelin vs Ipamorelin &rarr;</Link>
         </div>
       </div>
 

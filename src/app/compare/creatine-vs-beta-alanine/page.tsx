@@ -40,11 +40,11 @@ export default function CreatineVsBetaAlaninePage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Creatine vs Beta-Alanine — Performance Supplement Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Creatine vs Beta-Alanine &mdash; Performance Supplement Comparison</h1>
-      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine</Link> and <Link href="/supplements/beta-alanine" className="text-[#0891b2] hover:underline">Beta-Alanine</Link> are two of the most evidence-backed performance supplements available. They&apos;re often compared but work through completely different mechanisms &mdash; making them complementary rather than interchangeable. Creatine is best for explosive strength. Beta-alanine is best for sustained high-intensity endurance lasting 1&ndash;4 minutes.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine</Link> and <Link href="/supplements/beta-alanine" className="text-[#3A759F] hover:underline">Beta-Alanine</Link> are two of the most evidence-backed performance supplements available. They&apos;re often compared but work through completely different mechanisms &mdash; making them complementary rather than interchangeable. Creatine is best for explosive strength. Beta-alanine is best for sustained high-intensity endurance lasting 1&ndash;4 minutes.</p>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why these two address completely different muscle bottlenecks</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Creatine and beta-alanine are the two performance supplements with the most research evidence &mdash; but they&apos;re addressing completely different limits in muscle performance.
@@ -65,8 +65,8 @@ export default function CreatineVsBetaAlaninePage() {
           <thead>
             <tr className="bg-gray-50 dark:bg-[#1e293b]">
               <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Creatine</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Beta-Alanine</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Creatine</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Beta-Alanine</th>
             </tr>
           </thead>
           <tbody>

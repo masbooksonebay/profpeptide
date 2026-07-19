@@ -23,7 +23,7 @@ const faqs = [
     a: (
       <>
         Honest answer: not really for prevention in most healthy adults, but it does shorten duration modestly. The Hemilä Cochrane review (the most-cited single source) found regular vitamin C supplementation (200+ mg/day) reduced cold duration by approximately 8% in adults and 14% in children. Prevention effect in the general population was null — taking vitamin C daily doesn&apos;t reduce how often you catch colds. Two specific subpopulations did show prevention effects: people under extreme physical stress (marathon runners, soldiers, arctic expedition personnel) showed approximately 50% reduction in cold incidence with regular vitamin C. Starting vitamin C at first symptoms (rather than chronically) has mixed evidence — some trials show duration shortening, others show no effect. Practical framing: vitamin C is a worthwhile deficiency-prevention supplement; modest cold-duration benefit if you supplement regularly; not a panacea against colds. See the{" "}
-        <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc lozenge protocol</Link>{" "}
+        <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">zinc lozenge protocol</Link>{" "}
         for more potent cold-duration evidence.
       </>
     ),
@@ -33,7 +33,7 @@ const faqs = [
     a: (
       <>
         Probably worth trying, with realistic expectations. Once a cold has started, vitamin C&apos;s evidence is weaker than for chronic prevention. Some studies show modest symptom-severity reductions at therapeutic doses (1000+ mg/day) started at first symptoms; others show no effect. Mechanism is plausible — vitamin C is rapidly consumed by activated immune cells during infection, and supplementation may support cellular demands. Practical protocol if you want to try: 1000 mg every few hours during the first 24–48 hours of symptoms (total 3–4 g/day), then taper as symptoms resolve. GI tolerance is the limiting factor at this dose — split servings and back off if loose stools develop. For more potent cold-duration intervention, consider{" "}
-        <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc acetate lozenges</Link>{" "}
+        <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">zinc acetate lozenges</Link>{" "}
         — Singh Cochrane found ~33% duration reduction when started within 24 hours of symptoms.
       </>
     ),
@@ -59,7 +59,7 @@ const faqs = [
     a: (
       <>
         No — this page covers vitamin C&apos;s foundational essential-vitamin role: deficiency prevention, immune function, antioxidant defense, iron absorption, and cold duration. Vitamin C&apos;s cosmetic and skin-aging applications — topical formulations, photoaging, wrinkle reduction, the Shaw 2017 collagen synthesis trial, vitamin C serums, and skin-stack details — are covered separately on the{" "}
-        <Link href="/supplements/vitamin-c-skin" className="text-[#0891b2] hover:underline">vitamin C for skin profile</Link>. The Shaw 2017 collagen finding (vitamin C-enriched gelatin increased collagen synthesis markers) is mentioned briefly here but the broader cosmetic/anti-aging discussion belongs in the skin-specific profile.
+        <Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin C for skin profile</Link>. The Shaw 2017 collagen finding (vitamin C-enriched gelatin increased collagen synthesis markers) is mentioned briefly here but the broader cosmetic/anti-aging discussion belongs in the skin-specific profile.
       </>
     ),
   },
@@ -231,9 +231,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Vitamin C&apos;s collagen-cofactor role means it pairs naturally with tissue-healing peptides via the connective-tissue substrate pathway.{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             and{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
             drive tissue repair signaling; collagen synthesis requires vitamin C; vitamin C ensures the substrate-cofactor side of the equation isn&apos;t the limiting factor. GHK-Cu (tripeptide-copper complex) for skin and dermal extracellular matrix has vitamin C as a complementary cofactor. None of these combinations have formal RCT validation but the mechanistic rationale is direct.
           </p>
         </div>
@@ -244,38 +244,38 @@ const sections = [
               Iron supplements — take 100–250 mg vitamin C with iron for the 2–3 fold absorption enhancement (Lynch 1980). Particularly relevant for iron deficiency anemia treatment.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen peptides</Link>{" "}
+              <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
               — vitamin C is the irreplaceable cofactor for collagen hydroxylation; supplementing collagen substrate without adequate vitamin C limits collagen synthesis. Foundational pairing for skin, joint, and connective tissue protocols.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/hyaluronic-acid" className="text-[#0891b2] hover:underline">Hyaluronic acid</Link>{" "}
+              <Link href="/supplements/hyaluronic-acid" className="text-[#3A759F] hover:underline">Hyaluronic acid</Link>{" "}
               — completes the foundational skin-stack (collagen + HA + vitamin C).
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Vitamin E — complementary antioxidant; vitamin C regenerates oxidized vitamin E. Modest stacking benefit.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
               — common immune-support pairing. Cold-duration protocols often combine vitamin C + zinc lozenges.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Glutathione precursors (NAC, glycine, glutamine) — broader antioxidant network support.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/quercetin" className="text-[#0891b2] hover:underline">Quercetin</Link>{" "}
+              <Link href="/supplements/quercetin" className="text-[#3A759F] hover:underline">Quercetin</Link>{" "}
               — flavonoid with overlapping antioxidant and immune mechanism; common stacking partner.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">Vitamin D3</Link>{" "}
+              <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">Vitamin D3</Link>{" "}
               — foundational immune support; compatible co-supplementation.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Bioflavonoids (rose hips, citrus bioflavonoids) — sometimes combined with vitamin C in commercial products; modest mechanistic basis.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-arginine" className="text-[#0891b2] hover:underline">L-arginine</Link>{" "}
+              <Link href="/supplements/l-arginine" className="text-[#3A759F] hover:underline">L-arginine</Link>{" "}
               and{" "}
-              <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">glutamine</Link>{" "}
+              <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">glutamine</Link>{" "}
               — surgical immunonutrition co-supplements. Wound healing context.
             </li>
           </ol>
@@ -288,7 +288,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid coffee/tea with iron-containing meals.</span> Tannins reduce iron absorption; vitamin C cannot fully overcome the effect.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Smoking increases vitamin C requirements.</span> Smokers have ~35% higher RDA. Smoking also dramatically increases oxidative stress.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">High training volumes increase requirements.</span> Athletes often benefit from higher intake than RDA, particularly during intense training blocks or competition periods.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sun damage and oxidative stress contexts.</span> UV exposure depletes skin vitamin C — topical vitamin C serums address this directly (see{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#0891b2] hover:underline">vitamin-c-skin variant</Link>).</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sun damage and oxidative stress contexts.</span> UV exposure depletes skin vitamin C — topical vitamin C serums address this directly (see{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin-c-skin variant</Link>).</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Stress and illness recovery.</span> Vitamin C is rapidly depleted during active infection and severe stress.</li>
           </ol>
         </div>
@@ -387,7 +387,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Powder for high-dose users</span> — much more cost-efficient than capsules at 1+ g/day. Mixes in water or juice.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reputable brands</span> — Now Foods, Thorne, Pure Encapsulations, Doctor&apos;s Best, Solgar, Life Extension, NutraBio. Generic brand variation in this category is minimal — quality is dominated by manufacturing certification rather than brand name.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid &quot;immune blend&quot; sub-therapeutic products</span> — many multivitamins and immune blends include token vitamin C in trace amounts. Buy single-ingredient and combine deliberately.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Topical vitamin C serums</span> are a separate product category for skin applications — see the{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#0891b2] hover:underline">vitamin-c-skin variant</Link>{" "}for cosmetic/anti-aging context.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Topical vitamin C serums</span> are a separate product category for skin applications — see the{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin-c-skin variant</Link>{" "}for cosmetic/anti-aging context.</li>
           </ul>
         </div>
         <AmazonCTAButton href="https://www.amazon.com/s?k=vitamin+c+ascorbic+acid+pharmaceutical+grade&tag=profpeptide-20" label="Vitamin C" />
@@ -422,37 +422,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hemilä H, Chalker E. Vitamin C for preventing and treating the common cold. Cochrane Database Syst Rev. 2013;(1):CD000980.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23440782/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23440782/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23440782/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Padayatty SJ, Sun H, Wang Y, et al. Vitamin C pharmacokinetics: implications for oral and intravenous use. Ann Intern Med. 2004;140(7):533-537.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/15068981/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/15068981/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/15068981/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hemilä H. Vitamin C supplementation and common cold symptoms: problems with inaccurate reviews. Nutrition. 2017;33:357.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27613532/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27613532/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27613532/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Shaw G, Lee-Barthel A, Ross ML, Wang B, Baar K. Vitamin C-enriched gelatin supplementation before intermittent activity augments collagen synthesis. Am J Clin Nutr. 2017;105(1):136-143.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27852613/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27852613/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27852613/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lynch SR, Cook JD. Interaction of vitamin C and iron. Ann N Y Acad Sci. 1980;355:32-44.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/6940487/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/6940487/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/6940487/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Paulsen G, Cumming KT, Holden G, et al. Vitamin C and E supplementation hampers cellular adaptation to endurance training in humans: a double-blind, randomised, controlled trial. J Physiol. 2014;592(8):1887-1901.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24492839/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24492839/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24492839/
           </a>
         </li>
@@ -468,12 +468,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -566,7 +566,7 @@ export default function VitaminCPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Vitamin C</h1>
@@ -577,13 +577,13 @@ export default function VitaminCPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Ascorbic acid, ascorbate, L-ascorbic acid, sodium ascorbate (buffered form); related variant page:{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#0891b2] hover:underline">vitamin C for skin</Link>{" "}(cosmetic and skin-aging applications)
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Ascorbic acid, ascorbate, L-ascorbic acid, sodium ascorbate (buffered form); related variant page:{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin C for skin</Link>{" "}(cosmetic and skin-aging applications)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Essential water-soluble vitamin / enzyme cofactor (collagen hydroxylation, neurotransmitter synthesis) / antioxidant / immune cell support / non-heme iron absorption enhancer
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Multi-tier breakdown. <span className="font-semibold">Deficiency prevention</span>: Strong (foundational essential vitamin; RDA-based intake prevents scurvy). <span className="font-semibold">Cold duration in regular supplementation</span>: Moderate (Hemilä 2013 Cochrane — ~8% adult, ~14% child duration reduction at 200+ mg/day). <span className="font-semibold">General-population cold prevention</span>: Negative. <span className="font-semibold">Extreme physical stress cold prevention</span>: Moderate (~50% reduction in marathon runners, soldiers, arctic personnel). <span className="font-semibold">Iron absorption enhancement</span>: Strong (Lynch 1980 — 2–3x non-heme iron uptake with 100 mg). <span className="font-semibold">High-dose IV (oncology, sepsis)</span>: Mixed, specialized. <span className="font-semibold">Cardiovascular hard outcomes</span>: Weak. Cosmetic / skin-aging applications detailed separately on the{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#0891b2] hover:underline">vitamin-c-skin variant</Link>.
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Multi-tier breakdown. <span className="font-semibold">Deficiency prevention</span>: Strong (foundational essential vitamin; RDA-based intake prevents scurvy). <span className="font-semibold">Cold duration in regular supplementation</span>: Moderate (Hemilä 2013 Cochrane — ~8% adult, ~14% child duration reduction at 200+ mg/day). <span className="font-semibold">General-population cold prevention</span>: Negative. <span className="font-semibold">Extreme physical stress cold prevention</span>: Moderate (~50% reduction in marathon runners, soldiers, arctic personnel). <span className="font-semibold">Iron absorption enhancement</span>: Strong (Lynch 1980 — 2–3x non-heme iron uptake with 100 mg). <span className="font-semibold">High-dose IV (oncology, sepsis)</span>: Mixed, specialized. <span className="font-semibold">Cardiovascular hard outcomes</span>: Weak. Cosmetic / skin-aging applications detailed separately on the{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin-c-skin variant</Link>.
         </p>
       </div>
 
@@ -591,7 +591,7 @@ export default function VitaminCPage() {
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is vitamin C?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Vitamin C (ascorbic acid) is an essential water-soluble vitamin that humans — unlike most other mammals — cannot synthesize endogenously due to a non-functional GULO gene. Dietary or supplemental intake is therefore required to prevent deficiency (scurvy). Vitamin C&apos;s biological roles are multi-layered: it&apos;s the irreplaceable cofactor for prolyl and lysyl hydroxylases (collagen hydroxylation — the mechanism behind scurvy when deficient), a primary water-soluble antioxidant donating electrons to neutralize reactive oxygen species, an immune cell support molecule that accumulates in lymphocytes at 50–100x plasma concentration, and the most important enhancer of non-heme iron absorption (converting ferric to ferrous iron in the gut). This page covers the foundational essential-vitamin role — deficiency prevention, cold support (Hemilä 2013 Cochrane), iron absorption, antioxidant defense, and the specialized high-dose IV protocols. <span className="font-semibold">Cosmetic and skin-aging applications</span> — topical vitamin C serums, photoaging reversal, the Shaw 2017 collagen synthesis trial in detail, hyperpigmentation, and skin-stack pairings — are covered separately on the{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#0891b2] hover:underline">vitamin C for skin variant page</Link>. The honest framing for the foundational essential-vitamin role: RDA-level intake (75–90 mg/day non-smokers, 110–125 mg/day smokers) prevents scurvy. Regular 200–1000 mg/day modestly reduces cold duration (Hemilä Cochrane: ~8% adults, ~14% children) but does NOT prevent colds in the general population — except in extreme physical stress subpopulations (marathon runners, soldiers, arctic personnel) where ~50% incidence reductions are documented. 100 mg taken with iron-containing meals dramatically improves non-heme iron absorption (Lynch 1980 — 2–3 fold). Padayatty 2004 documents that oral plasma concentrations are tightly capped (~250 micromolar) due to saturable intestinal absorption and renal excretion — IV vitamin C bypasses these limits and reaches millimolar concentrations, where vitamin C has pro-oxidant effects relevant to specialized oncology and sepsis research. Practical implication: oral and IV vitamin C are pharmacokinetically distinct interventions; don&apos;t expect oral supplementation to substitute for IV protocols. Mega-doses (1000+ mg) around training may blunt mitochondrial biogenesis adaptations in competitive athletes (Paulsen 2014); modest supplementation outside training windows doesn&apos;t produce this effect.
+            Vitamin C (ascorbic acid) is an essential water-soluble vitamin that humans — unlike most other mammals — cannot synthesize endogenously due to a non-functional GULO gene. Dietary or supplemental intake is therefore required to prevent deficiency (scurvy). Vitamin C&apos;s biological roles are multi-layered: it&apos;s the irreplaceable cofactor for prolyl and lysyl hydroxylases (collagen hydroxylation — the mechanism behind scurvy when deficient), a primary water-soluble antioxidant donating electrons to neutralize reactive oxygen species, an immune cell support molecule that accumulates in lymphocytes at 50–100x plasma concentration, and the most important enhancer of non-heme iron absorption (converting ferric to ferrous iron in the gut). This page covers the foundational essential-vitamin role — deficiency prevention, cold support (Hemilä 2013 Cochrane), iron absorption, antioxidant defense, and the specialized high-dose IV protocols. <span className="font-semibold">Cosmetic and skin-aging applications</span> — topical vitamin C serums, photoaging reversal, the Shaw 2017 collagen synthesis trial in detail, hyperpigmentation, and skin-stack pairings — are covered separately on the{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin C for skin variant page</Link>. The honest framing for the foundational essential-vitamin role: RDA-level intake (75–90 mg/day non-smokers, 110–125 mg/day smokers) prevents scurvy. Regular 200–1000 mg/day modestly reduces cold duration (Hemilä Cochrane: ~8% adults, ~14% children) but does NOT prevent colds in the general population — except in extreme physical stress subpopulations (marathon runners, soldiers, arctic personnel) where ~50% incidence reductions are documented. 100 mg taken with iron-containing meals dramatically improves non-heme iron absorption (Lynch 1980 — 2–3 fold). Padayatty 2004 documents that oral plasma concentrations are tightly capped (~250 micromolar) due to saturable intestinal absorption and renal excretion — IV vitamin C bypasses these limits and reaches millimolar concentrations, where vitamin C has pro-oxidant effects relevant to specialized oncology and sepsis research. Practical implication: oral and IV vitamin C are pharmacokinetically distinct interventions; don&apos;t expect oral supplementation to substitute for IV protocols. Mega-doses (1000+ mg) around training may blunt mitochondrial biogenesis adaptations in competitive athletes (Paulsen 2014); modest supplementation outside training windows doesn&apos;t produce this effect.
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -604,7 +604,7 @@ export default function VitaminCPage() {
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">2–3 fold non-heme iron absorption enhancement (Lynch 1980)</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Antioxidant defense and vitamin E regeneration</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Immune cell support (lymphocyte accumulation, neutrophil function)</li>
-              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Collagen synthesis cofactor (Shaw 2017 — detailed cosmetic context on{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#0891b2] hover:underline">variant page</Link>)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Collagen synthesis cofactor (Shaw 2017 — detailed cosmetic context on{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">variant page</Link>)</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Specialized high-dose IV protocols (oncology adjunct, sepsis — under medical supervision)</li>
             </ul>
           </div>
@@ -654,12 +654,12 @@ export default function VitaminCPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/vitamin-c-skin" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin C for Skin</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin D3</Link>
-          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#0891b2] hover:underline">Collagen Peptides</Link>
-          <Link href="/supplements/hyaluronic-acid" className="text-sm font-medium text-[#0891b2] hover:underline">Hyaluronic Acid</Link>
-          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#0891b2] hover:underline">Quercetin</Link>
+          <Link href="/supplements/vitamin-c-skin" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C for Skin</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin D3</Link>
+          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>
+          <Link href="/supplements/hyaluronic-acid" className="text-sm font-medium text-[#3A759F] hover:underline">Hyaluronic Acid</Link>
+          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#3A759F] hover:underline">Quercetin</Link>
         </div>
       </div>
 

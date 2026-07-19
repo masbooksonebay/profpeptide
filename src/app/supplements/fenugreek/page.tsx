@@ -35,11 +35,11 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural for users targeting comprehensive hormonal support.{" "}
-        <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+        <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
         (GHRH analog) and{" "}
-        <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+        <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
         (ghrelin mimetic / selective GH secretagogue) directly stimulate pituitary GH release.{" "}
-        <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+        <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
         is a third GHRH-axis option. Fenugreek operates at a different layer: aromatase + 5-alpha reductase inhibition preserves testosterone availability, and the glycemic-improvement arm supports the broader metabolic environment GH operates in. The peptides directly stimulate GH; fenugreek supports the testosterone-axis adjunct + glycemic environment. Mechanistically complementary, no known negative interactions. Particularly useful for users on GH-axis peptide protocols who also have low-baseline-testosterone concerns or insulin resistance.
       </>
     ),
@@ -216,11 +216,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Fenugreek pairs naturally with the growth-hormone-axis peptide cluster.{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             (GHRH analog) and{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
             (ghrelin mimetic / selective GH secretagogue) directly stimulate pituitary GH release.{" "}
-            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+            <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
             is a third GHRH-axis option. Fenugreek operates at a different layer: aromatase + 5-alpha reductase inhibition preserves testosterone availability, and the glycemic-improvement arm supports the metabolic environment GH operates in. The peptides do direct GH stimulation; fenugreek supports the testosterone-axis adjunct + glycemic environment. Mechanistically complementary, no known negative interactions. Particularly useful for users on GH-peptide protocols who also have low-baseline-testosterone concerns or insulin resistance — fenugreek addresses both simultaneously.
           </p>
         </div>
@@ -228,27 +228,27 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link>{" "}
+              <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
               — adaptogenic cortisol-blunting plus testosterone evidence in stressed populations. Pairs cleanly with fenugreek&apos;s aromatase-inhibition arm.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/tongkat-ali" className="text-[#0891b2] hover:underline">Tongkat Ali</Link>{" "}
+              <Link href="/supplements/tongkat-ali" className="text-[#3A759F] hover:underline">Tongkat Ali</Link>{" "}
               — quassinoid-driven testosterone support via different mechanism (SHBG modulation, possible LH stimulation). Common testosterone-support stack co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
               — essential cofactor for testosterone synthesis enzymes. Deficiency correction supports the hormonal arm fenugreek influences.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/chromium" className="text-[#0891b2] hover:underline">Chromium</Link>{" "}
+              <Link href="/supplements/chromium" className="text-[#3A759F] hover:underline">Chromium</Link>{" "}
               — additional insulin-sensitization via different mechanism (insulin-receptor amplification). Pairs with fenugreek&apos;s glycemic arm.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/berberine" className="text-[#0891b2] hover:underline">Berberine</Link>{" "}
+              <Link href="/supplements/berberine" className="text-[#3A759F] hover:underline">Berberine</Link>{" "}
               — AMPK activator with metformin-comparable glycemic effects. Mechanistically distinct from fenugreek&apos;s fiber + insulin-secretagogue arm; commonly stacked for comprehensive glucose support.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/maca-root" className="text-[#0891b2] hover:underline">Maca Root</Link>{" "}
+              <Link href="/supplements/maca-root" className="text-[#3A759F] hover:underline">Maca Root</Link>{" "}
               — libido and sexual function adjunct via non-hormonal mechanism. Compatible co-occupant in sexual-health stacks.
             </li>
           </ol>
@@ -386,37 +386,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Steels E, Rao A, Vitetta L. Physiological aspects of male libido enhanced by standardized Trigonella foenum-graecum extract and mineral formulation. Phytother Res. 2011;25(9):1294-1300.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21312304/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21312304/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21312304/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Maheshwari A, Verma N, Swaroop A, et al. Efficacy of FurosapTM, a novel Trigonella foenum-graecum seed extract, in enhancing testosterone level and improving sperm profile in male volunteers. Int J Med Sci. 2017;14(1):58-66.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/28367079/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28367079/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/28367079/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Neelakantan N, Narayanan M, de Souza RJ, van Dam RM. Effect of fenugreek (Trigonella foenum-graecum L.) intake on glycemia: a meta-analysis of clinical trials. Nutr J. 2014;13:7.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24438170/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24438170/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24438170/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Poole C, Bushey B, Foster C, et al. The effects of a commercially available botanical supplement on strength, body composition, power output, and hormonal profiles in resistance-trained males. J Int Soc Sports Nutr. 2010;7:34.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20979623/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20979623/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20979623/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sharma RD, Raghuram TC, Rao NS. Effect of fenugreek seeds on blood glucose and serum lipids in type I diabetes. Eur J Clin Nutr. 1990;44(4):301-306.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/2194788/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/2194788/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/2194788/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wilborn C, Taylor L, Poole C, et al. Effects of a purported aromatase and 5α-reductase inhibitor on hormone profiles in college-age men. Int J Sport Nutr Exerc Metab. 2010;20(6):457-465.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21116018/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21116018/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21116018/
           </a>
         </li>
@@ -432,12 +432,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -562,7 +562,7 @@ export default function FenugreekPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Fenugreek</h1>
@@ -588,7 +588,7 @@ export default function FenugreekPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Fenugreek (Trigonella foenum-graecum) is an annual legume native to the Mediterranean, Middle East, and South Asia — used for millennia as both a culinary spice (Indian, Ethiopian, Middle Eastern cuisines) and a medicinal herb. Its supplement profile rests on two distinct mechanism arms: a hormonal arm (steroidal saponins inhibit aromatase and 5-alpha reductase, preserving testosterone availability) and a glycemic arm (soluble fiber galactomannan slows glucose absorption, and the unique amino acid 4-hydroxyisoleucine directly stimulates insulin secretion). The testosterone-and-libido evidence (Steels 2011 Testofen RCT, Maheshwari 2017 Furosap RCT) shows modest free-testosterone elevation and improved sexual function scores, but replication is mixed — similar to the ZMA evidence pattern. The glycemic evidence is actually stronger: Neelakantan 2014 meta-analysis of 10 RCTs documented consistent fasting glucose, postprandial glucose, and HbA1c reductions in T2D and prediabetic populations. Effect-tier honesty: Moderate for testosterone, Strong for glycemic — the marketing emphasizes the testosterone arm but the evidence base is reversed. Fenugreek pairs naturally with{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">GH-axis peptides like CJC-1295 and Ipamorelin</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">GH-axis peptides like CJC-1295 and Ipamorelin</Link>{" "}
             — the testosterone-axis and glycemic-environment effects complement direct GH stimulation.
           </p>
           <div>
@@ -651,12 +651,12 @@ export default function FenugreekPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#0891b2] hover:underline">Ashwagandha</Link>
-          <Link href="/supplements/tongkat-ali" className="text-sm font-medium text-[#0891b2] hover:underline">Tongkat Ali</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/maca-root" className="text-sm font-medium text-[#0891b2] hover:underline">Maca Root</Link>
-          <Link href="/supplements/chromium" className="text-sm font-medium text-[#0891b2] hover:underline">Chromium</Link>
-          <Link href="/supplements/berberine" className="text-sm font-medium text-[#0891b2] hover:underline">Berberine</Link>
+          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
+          <Link href="/supplements/tongkat-ali" className="text-sm font-medium text-[#3A759F] hover:underline">Tongkat Ali</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/maca-root" className="text-sm font-medium text-[#3A759F] hover:underline">Maca Root</Link>
+          <Link href="/supplements/chromium" className="text-sm font-medium text-[#3A759F] hover:underline">Chromium</Link>
+          <Link href="/supplements/berberine" className="text-sm font-medium text-[#3A759F] hover:underline">Berberine</Link>
         </div>
       </div>
 

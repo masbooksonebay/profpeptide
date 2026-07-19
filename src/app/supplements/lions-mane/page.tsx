@@ -35,9 +35,9 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural for users targeting comprehensive cognitive support.{" "}
-        <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+        <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
         (an ACTH(4-10) analog) modulates BDNF directly — same downstream pathway Lion&apos;s Mane upregulates via hericenones/erinacines. The two mechanisms converge on neurotrophic signaling from different layers: Semax does peptide-level direct BDNF modulation; Lion&apos;s Mane does mushroom-extract-mediated NGF + BDNF stimulation.{" "}
-        <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+        <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
         (a tuftsin analog) provides anxiolytic effects via GABA modulation — adds a distinct anxiolytic arm to the neurotrophic stack. Mechanistically complementary, no known negative interactions. The mushroom + peptide cognitive cluster (Lion&apos;s Mane + Bacopa + Alpha-GPC + Semax + Selank) is one of the more mechanistically coherent multi-modal cognitive protocols.
       </>
     ),
@@ -216,9 +216,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Lion&apos;s Mane pairs naturally with the cognitive peptide cluster — particularly via the BDNF axis.{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
             (an ACTH(4-10) analog) directly modulates BDNF — the same downstream neurotrophin that Lion&apos;s Mane upregulates via hericenones/erinacines-driven NGF stimulation. The two mechanisms converge on neurotrophic signaling from different layers: Semax does peptide-level direct BDNF modulation; Lion&apos;s Mane does mushroom-extract-mediated NGF + BDNF stimulation.{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             (a tuftsin analog) provides anxiolytic effects via GABA modulation — adds a distinct anxiolytic arm to the neurotrophic stack. Mechanistically complementary, no known negative interactions. The mushroom + peptide cognitive cluster (Lion&apos;s Mane + Bacopa + Alpha-GPC + Semax + Selank) is one of the more mechanistically coherent multi-modal cognitive protocols.
           </p>
         </div>
@@ -226,27 +226,27 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>{" "}
+              <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
               — acetylcholine substrate. Lion&apos;s Mane increases NGF (which supports cholinergic neurons); Alpha-GPC supplies the choline substrate those neurons use. Mechanistically natural pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/bacopa-monnieri" className="text-[#0891b2] hover:underline">Bacopa monnieri</Link>{" "}
+              <Link href="/supplements/bacopa-monnieri" className="text-[#3A759F] hover:underline">Bacopa monnieri</Link>{" "}
               — chronic synaptic remodeling and memory consolidation. Different mechanism (dendritic branching, AChE inhibition) but compatible chronic-use timescale.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-theanine</Link>{" "}
+              <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-theanine</Link>{" "}
               — acute calm-focus via alpha-wave induction and GABA modulation. Different timescale (acute vs chronic) but mechanistically compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/phosphatidylserine" className="text-[#0891b2] hover:underline">Phosphatidylserine</Link>{" "}
+              <Link href="/supplements/phosphatidylserine" className="text-[#3A759F] hover:underline">Phosphatidylserine</Link>{" "}
               — neuronal membrane phospholipid. Complements Lion&apos;s Mane&apos;s neurotrophic arm via structural membrane support.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fish-oil" className="text-[#0891b2] hover:underline">Omega-3 fish oil</Link>{" "}
+              <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Omega-3 fish oil</Link>{" "}
               — DHA supports neuronal membrane composition and modestly elevates BDNF. Compatible neurotrophic-support pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">Caffeine + L-theanine</Link>{" "}
+              <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">Caffeine + L-theanine</Link>{" "}
               — acute calm-focus stack. Different timescale; no mechanistic conflict.
             </li>
           </ol>
@@ -384,37 +384,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mori K, Inatomi S, Ouchi K, Azumi Y, Tuchida T. Improving effects of the mushroom Yamabushitake (Hericium erinaceus) on mild cognitive impairment: a double-blind placebo-controlled clinical trial. Phytother Res. 2009;23(3):367-372.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18844328/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18844328/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18844328/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Docherty S, Doughty FL, Smith EF. The acute and chronic effects of Lion&apos;s Mane mushroom supplementation on cognitive function, stress and mood in young adults: a double-blind, parallel groups, pilot study. Nutrients. 2023;15(22):4842.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/38004222/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/38004222/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/38004222/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nagano M, Shimizu K, Kondo R, et al. Reduction of depression and anxiety by 4 weeks Hericium erinaceus intake. Biomed Res. 2010;31(4):231-237.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20834180/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20834180/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20834180/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wong KH, Naidu M, David RP, Bakar R, Sabaratnam V. Neuroregenerative potential of Lion&apos;s Mane mushroom, Hericium erinaceus (Bull.: Fr.) Pers. (higher Basidiomycetes), in the treatment of peripheral nerve injury. Int J Med Mushrooms. 2012;14(5):427-446.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23510212/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23510212/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23510212/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vigna L, Morelli F, Agnelli GM, et al. Hericium erinaceus improves mood and sleep disorders in patients affected by overweight or obesity: could circulating pro-BDNF and BDNF be potential biomarkers? Evid Based Complement Alternat Med. 2019;2019:7861297.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31118969/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31118969/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/31118969/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mori K, Obara Y, Hirota M, et al. Nerve growth factor-inducing activity of Hericium erinaceus in 1321N1 human astrocytoma cells. Biol Pharm Bull. 2008;31(9):1727-1732.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18758067/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18758067/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18758067/
           </a>
         </li>
@@ -430,12 +430,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -560,7 +560,7 @@ export default function LionsManePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Lion&apos;s Mane</h1>
@@ -586,7 +586,7 @@ export default function LionsManePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Lion&apos;s Mane (Hericium erinaceus) is a medicinal mushroom native to North America, Europe, and Asia, characterized by its distinctive white cascading spines resembling a lion&apos;s mane. It occupies a genuinely unique position in the cognitive supplement space — most nootropics modulate existing neurotransmitter systems (acetylcholine via Alpha-GPC, GABA via L-theanine), while Lion&apos;s Mane may actually promote new neuronal growth via stimulation of nerve growth factor (NGF) and brain-derived neurotrophic factor (BDNF). The bioactive compounds — hericenones (concentrated in the fruiting body) and erinacines (concentrated in the mycelium) — cross the blood-brain barrier and stimulate NGF synthesis in astrocytes and neurons. The foundational human cognitive evidence is Mori 2009, a 16-week RCT in mild cognitive impairment patients showing significant cognitive improvement at 750 mg/day; benefits faded after supplementation stopped, suggesting ongoing use is required. Subsequent trials extend the evidence to acute cognitive effects in healthy young adults (Docherty 2023), anxiety and depression reduction (Nagano 2010, Vigna 2019), and emerging peripheral nerve regeneration applications (Wong 2012 animal models, with human translation in progress). The dominant practical challenge is product quality — many retail Lion&apos;s Mane products under-deliver due to grain-substrate contamination in mycelium-only products. Lion&apos;s Mane pairs naturally with{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">cognitive peptides like Semax and Selank</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">cognitive peptides like Semax and Selank</Link>{" "}
             via the BDNF axis Semax directly modulates.
           </p>
           <div>
@@ -650,11 +650,11 @@ export default function LionsManePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#0891b2] hover:underline">Alpha-GPC</Link>
-          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#0891b2] hover:underline">Bacopa Monnieri</Link>
-          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Theanine</Link>
-          <Link href="/supplements/phosphatidylserine" className="text-sm font-medium text-[#0891b2] hover:underline">Phosphatidylserine</Link>
-          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#0891b2] hover:underline">Fish Oil</Link>
+          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha-GPC</Link>
+          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#3A759F] hover:underline">Bacopa Monnieri</Link>
+          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>
+          <Link href="/supplements/phosphatidylserine" className="text-sm font-medium text-[#3A759F] hover:underline">Phosphatidylserine</Link>
+          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
         </div>
       </div>
 

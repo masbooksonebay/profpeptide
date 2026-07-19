@@ -16,7 +16,7 @@ export default function ContactLink({
         <span className="text-gray-700 dark:text-slate-300">{pageName}</span>?{" "}
         <Link
           href={href}
-          className="text-[#0891b2] dark:text-cyan-400 hover:underline underline-offset-2 ml-1"
+          className="text-[#3A759F] dark:text-cyan-400 hover:underline underline-offset-2 ml-1"
         >
           Send us an email &rarr;
         </Link>

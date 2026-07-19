@@ -86,7 +86,7 @@ export default function CompoundCombobox({ value, onChange, id, placeholder = "S
   };
 
   const triggerCls =
-    "w-full flex items-center justify-between gap-2 px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#0891b2] transition text-left";
+    "w-full flex items-center justify-between gap-2 px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#3A759F] transition text-left";
 
   return (
     <div className="relative w-full" ref={rootRef}>
@@ -125,7 +125,7 @@ export default function CompoundCombobox({ value, onChange, id, placeholder = "S
               onChange={(e) => { setQuery(e.target.value); setActive(0); }}
               onKeyDown={onKeyDown}
               autoComplete="off"
-              className="w-full px-3 py-2 rounded-md border border-gray-200 dark:border-slate-600 text-sm bg-gray-50 dark:bg-[#0f172a] text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#0891b2]"
+              className="w-full px-3 py-2 rounded-md border border-gray-200 dark:border-slate-600 text-sm bg-gray-50 dark:bg-[#0f172a] text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#3A759F]"
             />
           </div>
           <ul ref={listRef} id={listboxId} role="listbox" aria-label={ariaLabel} className="max-h-72 overflow-y-auto py-1">
@@ -145,12 +145,12 @@ export default function CompoundCombobox({ value, onChange, id, placeholder = "S
                     onMouseEnter={() => setActive(i)}
                     onMouseDown={(e) => { e.preventDefault(); choose(c); }}
                     className={`px-4 py-2.5 text-sm cursor-pointer leading-snug break-words flex items-center justify-between gap-2 ${
-                      isActive ? "bg-[#0891b2] text-white" : "text-gray-700 dark:text-slate-200"
+                      isActive ? "bg-[#3A759F] text-white" : "text-gray-700 dark:text-slate-200"
                     }`}
                   >
                     <span>{compoundDisplayLabel(c)}</span>
                     {selected && (
-                      <svg className={`w-4 h-4 flex-shrink-0 ${isActive ? "text-white" : "text-[#0891b2]"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <svg className={`w-4 h-4 flex-shrink-0 ${isActive ? "text-white" : "text-[#3A759F]"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     )}

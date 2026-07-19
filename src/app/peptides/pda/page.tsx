@@ -41,7 +41,7 @@ const faqs = [
     a: (
       <>
         PDA is sold by specialty research-peptide vendors as a research-use-only material. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -162,8 +162,8 @@ const sections = [
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate a dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>. For insulin-syringe mechanics and subcutaneous technique, see the{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link> guide.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>. For insulin-syringe mechanics and subcutaneous technique, see the{" "}
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link> guide.
         </p>
       </div>
     ),
@@ -219,7 +219,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -251,43 +251,43 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Seiwerth S, Rucman R, Turkovic B, et al. BPC 157 and standard angiogenic growth factors. Curr Pharm Des. 2018;24(18):1972-1989.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29998800/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29998800/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29998800/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tkalcevic VI, Cuzic S, Brajsa K, et al. Enhancement by PL 14736 of granulation and collagen organization in healing wounds and the potential role of egr-1 expression. Eur J Pharmacol. 2007;570(1-3):212-21.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17628536/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17628536/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17628536/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Chang CH, Tsai WC, Lin MS, et al. The promoting effect of pentadecapeptide BPC 157 on tendon healing involves tendon outgrowth, cell survival, and cell migration. J Appl Physiol. 2011;110(3):774-80.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21030672/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sikiric P, Seiwerth S, Rucman R, et al. Brain-gut Axis and Pentadecapeptide BPC 157: Theoretical and Practical Implications. Curr Neuropharmacol. 2016;14(8):857-865.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vasireddi N, Hahamyan H, Salata MJ, et al. Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review. HSS J. 2025.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Staresinic M, Petrovic I, Novinscak T, et al. Effective therapy of transected quadriceps muscle in rat: Gastric pentadecapeptide BPC 157. J Orthop Res. 2006;24(5):1109-17.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16609979/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16609979/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16609979/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           McGuire FP, Martinez R, Lenz A, et al. Regeneration or Risk? A Narrative Review of BPC-157 for Musculoskeletal Health. Curr Rev Musculoskelet Med. 2025.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12446177/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12446177/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12446177/
           </a>
         </li>
@@ -303,12 +303,12 @@ const sections = [
           There are no published studies on Pentadeca Arginate itself. The summaries below are the BPC-157 papers that define the evidence base PDA inherits — read them as parent-compound research, not as PDA data.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -329,7 +329,7 @@ export default function PDAPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -345,7 +345,7 @@ export default function PDAPage() {
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Pentadeca Arginate, PDA,{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           Arginate, Arginate-salt BPC-157
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
@@ -384,7 +384,7 @@ export default function PDAPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -433,17 +433,17 @@ export default function PDAPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#0891b2] hover:underline">TB-500</Link>
-        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu</Link>
-        <Link href="/peptides/kpv" className="text-sm font-medium text-[#0891b2] hover:underline">KPV</Link>
-        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#0891b2] hover:underline">Wolverine Stack</Link>
+        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#3A759F] hover:underline">TB-500</Link>
+        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
+        <Link href="/peptides/kpv" className="text-sm font-medium text-[#3A759F] hover:underline">KPV</Link>
+        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>
         </div>
       </div>
 
-      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Compare</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">See the full BPC-157 profile &rarr;</Link>
+        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">See the full BPC-157 profile &rarr;</Link>
         </div>
       </div>
 

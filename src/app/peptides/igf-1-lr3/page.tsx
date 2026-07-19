@@ -45,7 +45,7 @@ const faqs = [
     a: (
       <>
         Yes &mdash; this is one of the most mechanistically complementary stacks.{" "}
-        <Link href="/peptides/follistatin" className="text-[#0891b2] hover:underline">Follistatin</Link>{" "}
+        <Link href="/peptides/follistatin" className="text-[#3A759F] hover:underline">Follistatin</Link>{" "}
         removes the myostatin growth ceiling; IGF-1 LR3 provides the growth signal that pushes against it. Often combined in advanced muscle-building protocols, sometimes alongside GH secretagogues. Side-effect risk compounds &mdash; careful cycling and dose titration are essential.
       </>
     ),
@@ -59,7 +59,7 @@ const faqs = [
     a: (
       <>
         IGF-1 LR3 is sold by specialty research peptide vendors. Counterfeit and underdosed product is common &mdash; verify Certificate of Analysis before purchase. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -153,7 +153,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -164,7 +164,7 @@ const sections = [
     intro: (
       <>
         IGF-1 LR3 is given as a subcutaneous injection &mdash; or intramuscular for site-specific effect &mdash; once daily during the cycle, using a small insulin syringe. The single most important rule: always inject with food. IGF-1 LR3&apos;s insulin-like glucose uptake effect can cause significant hypoglycemia if injected fasted. For the practical mechanics of insulin syringes, units vs mcg conversion, and subcutaneous technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -268,7 +268,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 1 mg vial, each unit drawn delivers 10 mcg of IGF-1 LR3 at 1 mL reconstitution, 5 mcg at 2 mL, and 3.3 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For very small doses (20–30 mcg), 2 mL or 3 mL reconstitution gives more precise syringe draws. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -283,19 +283,19 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + 1.6–2.2 g/kg protein.</span> Essential. IGF-1 LR3 amplifies the response to mechanical loading; without training stimulus and adequate protein, results are minimal.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">GH secretagogues.</span>{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>{" "}
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack</Link>{" "}
           (CJC-1295 + Ipamorelin) or{" "}
-          <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677</Link>{" "}
+          <Link href="/peptides/mk-677" className="text-[#3A759F] hover:underline">MK-677</Link>{" "}
           drive endogenous IGF-1 production while IGF-1 LR3 provides direct receptor activation. Inject IGF-1 LR3 at least 2–3 hours apart from GH peptides to avoid receptor competition.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Follistatin.</span> Direct synergy.{" "}
-          <Link href="/peptides/follistatin" className="text-[#0891b2] hover:underline">Follistatin</Link>{" "}
+          <Link href="/peptides/follistatin" className="text-[#3A759F] hover:underline">Follistatin</Link>{" "}
           removes the myostatin growth ceiling; IGF-1 LR3 drives the growth signal that pushes against it. Often paired in advanced muscle-building protocols.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Recovery peptides during anabolic cycles.</span>{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>{" "}
           (BPC-157 + TB-500) accelerates tissue repair while IGF-1 LR3 drives hypertrophy &mdash; useful when heavier training loads put more strain on tendons and joints.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">MGF (Mechano Growth Factor).</span> Sometimes combined for theoretical synergistic effects on muscle growth, though controlled research is limited.</li>
@@ -408,7 +408,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -440,43 +440,43 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Long arginine 3-IGF-1 (IGF-1 LR3).{" "}
-          <a href="https://en.wikipedia.org/wiki/IGF-1_LR3" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://en.wikipedia.org/wiki/IGF-1_LR3" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://en.wikipedia.org/wiki/IGF-1_LR3
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Florini JR, Ewton DZ, Coolican SA. Growth hormone and the insulin-like growth factor system in myogenesis. Endocr Rev. 1996;17(5):481-517.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/8897022/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/8897022/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/8897022/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Yakar S, Pennisi P, Wu Y, et al. Circulating levels of IGF-1 directly regulate bone growth and density. J Clin Invest. 2002;110(6):771-81.{" "}
-          <a href="https://www.jci.org/articles/view/15463" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.jci.org/articles/view/15463" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.jci.org/articles/view/15463
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Adams GR, Haddad F. The relationships among IGF-1, DNA content, and protein accumulation during skeletal muscle hypertrophy. J Appl Physiol. 1996;81(6):2509-16.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9018499/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9018499/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9018499/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Philippou A, Maridaki M, Halapas A, Koutsilieris M. The role of the insulin-like growth factor 1 (IGF-1) in skeletal muscle physiology. In Vivo. 2007;21(1):45-54.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17354613/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17354613/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17354613/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bikle DD, Tahimic C, Chang W, et al. Role of IGF-I signaling in muscle bone interactions. Bone. 2015;80:79-88.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26453498/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26453498/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26453498/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Fernandez AM, Torres-Aleman I. The many faces of insulin-like peptide signalling in the brain. Nat Rev Neurosci. 2012;13(4):225-39.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22430016/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22430016/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22430016/
           </a>
         </li>
@@ -492,12 +492,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -518,7 +518,7 @@ export default function IGF1LR3Page() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -548,11 +548,11 @@ export default function IGF1LR3Page() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             IGF-1 LR3 is a synthetic 83-amino-acid analog of human insulin-like growth factor 1 (IGF-1). It contains two structural modifications: an arginine substitution at position 3 (&ldquo;Arg3&rdquo;) and a 13-amino-acid N-terminal extension (&ldquo;Long&rdquo;), producing a peptide with dramatically reduced binding to IGF binding proteins (IGFBPs) and a much longer half-life. Native IGF-1 has a half-life of minutes; IGF-1 LR3 has a half-life of 20–30 hours. The extended bioavailability and ~3x greater potency than native IGF-1 make it one of the most-studied research peptides for muscle hypertrophy, recovery, and metabolic research. Often stacked with{" "}
-            <Link href="/peptides/follistatin" className="text-[#0891b2] hover:underline">Follistatin</Link>{" "}
+            <Link href="/peptides/follistatin" className="text-[#3A759F] hover:underline">Follistatin</Link>{" "}
             or the{" "}
-            <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>{" "}
+            <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack</Link>{" "}
             for compounded anabolic effect. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -572,7 +572,7 @@ export default function IGF1LR3Page() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -625,20 +625,20 @@ export default function IGF1LR3Page() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/follistatin" className="text-sm font-medium text-[#0891b2] hover:underline">Follistatin</Link>
-        <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#0891b2] hover:underline">CJC-1295</Link>
-        <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Ipamorelin</Link>
-        <Link href="/peptides/mk-677" className="text-sm font-medium text-[#0891b2] hover:underline">MK-677</Link>
-        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
-        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#0891b2] hover:underline">TB-500</Link>
+        <Link href="/peptides/follistatin" className="text-sm font-medium text-[#3A759F] hover:underline">Follistatin</Link>
+        <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#3A759F] hover:underline">CJC-1295</Link>
+        <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Ipamorelin</Link>
+        <Link href="/peptides/mk-677" className="text-sm font-medium text-[#3A759F] hover:underline">MK-677</Link>
+        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
+        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#3A759F] hover:underline">TB-500</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#0891b2] hover:underline">GH Stack</Link>
-        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#0891b2] hover:underline">Wolverine Stack</Link>
+        <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#3A759F] hover:underline">GH Stack</Link>
+        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>
         </div>
       </div>
 

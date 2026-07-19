@@ -47,9 +47,9 @@ const faqs = [
     a: (
       <>
         Yes — and the combination is mechanistically more coherent than either alone for skin applications.{" "}
-        <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen peptides</Link>{" "}
+        <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
         provide amino acid substrate for new collagen synthesis (glycine, proline, hydroxyproline). HA provides the matrix-filling water-binding molecule that sits between collagen fibers. Functionally, collagen handles the structural protein layer; HA handles the hydration/matrix layer. Both decline with aging skin. The combination is well-tolerated and complementary.{" "}
-        <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">Vitamin C</Link>{" "}
+        <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">Vitamin C</Link>{" "}
         is the third skin-stack pillar — required cofactor for collagen hydroxylation; without adequate vitamin C, collagen synthesis is impaired regardless of substrate availability. Collagen + HA + vitamin C is the evidenced foundational skin-supplement stack.
       </>
     ),
@@ -219,9 +219,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Hyaluronic acid pairs naturally with skin and tissue-repair peptides. GHK-Cu (the tripeptide-copper complex) has documented effects on dermal extracellular matrix synthesis and remodeling — complementary mechanism layer to HA&apos;s hydration/water-binding contribution.{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             for joint and tendon healing applications — HA provides the synovial fluid component while BPC-157 drives tissue repair signaling.{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
             (thymosin beta-4 fragment) for broader tissue regeneration — adds cell migration and angiogenesis layer to HA&apos;s matrix support. None of these combinations have formal RCT validation but the mechanistic rationale is straightforward.
           </p>
         </div>
@@ -229,19 +229,19 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen peptides</Link>{" "}
+              <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
               — provides amino acid substrate for new collagen synthesis (glycine, proline, hydroxyproline). HA fills the matrix between collagen fibers. Foundational skin-stack pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">Vitamin C</Link>{" "}
+              <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">Vitamin C</Link>{" "}
               — required cofactor for collagen hydroxylation. Collagen + HA + vitamin C is the evidenced three-component skin-supplement stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/biotin" className="text-[#0891b2] hover:underline">Biotin</Link>{" "}
+              <Link href="/supplements/biotin" className="text-[#3A759F] hover:underline">Biotin</Link>{" "}
               — supports skin, hair, and nail health. Compatible co-supplementation for broader skin protocols.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
               — supports skin barrier and wound healing. Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -251,11 +251,11 @@ const sections = [
               MSM (methylsulfonylmethane) — sulfur substrate for connective tissue; common joint-stack co-supplement.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/curcumin" className="text-[#0891b2] hover:underline">Curcumin</Link>{" "}
+              <Link href="/supplements/curcumin" className="text-[#3A759F] hover:underline">Curcumin</Link>{" "}
               — anti-inflammatory; pairs with HA for joint comfort applications.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/resveratrol" className="text-[#0891b2] hover:underline">Resveratrol</Link>{" "}
+              <Link href="/supplements/resveratrol" className="text-[#3A759F] hover:underline">Resveratrol</Link>{" "}
               — antioxidant; compatible for anti-aging protocols.
             </li>
           </ol>
@@ -394,31 +394,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kawada C, Yoshida T, Yoshida H, et al. Ingested hyaluronan moisturizes dry skin. Nutr J. 2014;13:70.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25342082/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25342082/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25342082/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Oe M, Sakai S, Yoshida H, et al. Oral hyaluronan relieves wrinkles: a double-blinded, placebo-controlled study over a 12-week period. Clin Cosmet Investig Dermatol. 2017;10:267-273.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/28761365/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28761365/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/28761365/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nelson FR, Zvirbulis RA, Zonca B, et al. The effects of an oral preparation containing hyaluronic acid (Oralvisc®) on obese knee osteoarthritis patients determined by pain, function, bradykinin, leptin, inflammatory cytokines, and heavy water analyses. Rheumatol Int. 2015;35(1):43-52.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24711162/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24711162/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24711162/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sato T, Iwaso H. An effectiveness study of hyaluronic acid (Hyabest® J) in the treatment of human knee osteoarthritis. New Food Industry. 2009;51:17-30.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/19724088/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/19724088/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/19724088/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Toole BP. Hyaluronan: from extracellular glue to pericellular cue. Nat Rev Cancer. 2004;4(7):528-539.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/15229478/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/15229478/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/15229478/
           </a>
         </li>
@@ -434,12 +434,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -532,7 +532,7 @@ export default function HyaluronicAcidPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Hyaluronic Acid</h1>
@@ -558,9 +558,9 @@ export default function HyaluronicAcidPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Hyaluronic acid (HA) is a naturally occurring glycosaminoglycan — a long-chain sugar polymer — found throughout the body, with highest concentrations in skin, joints, eyes, and connective tissues. In the skin, HA is distributed throughout the dermis and epidermis where it binds water with extraordinary capacity (a single gram can hold up to 6 liters of water), maintaining skin volume, suppleness, and barrier function. In joints, HA is a primary component of synovial fluid — providing lubrication and shock absorption. Tissue HA levels decline with aging, contributing to dryness, loss of skin volume, joint stiffness, and the &quot;sunken&quot; appearance of aged skin. The supplemental hyaluronic acid landscape has historically been confusing because of a load-bearing biochemistry-vs-clinical-trial divergence that this profile takes seriously. Older skepticism was reasonable: native HA is very high molecular weight (1+ million Daltons) — far too large to cross intestinal epithelium intact, so &quot;hyaluronic acid pills shouldn&apos;t work.&quot; The reconciliation: commercially supplemented oral HA is low-molecular-weight (LMW) HA — typically 5,000 to 50,000 Daltons — produced by enzymatic fragmentation or controlled bacterial fermentation. LMW HA fragments are absorbed intact via intestinal epithelium and/or as digested oligosaccharides, retain CD44 receptor signaling activity, and reach systemic circulation. Multiple modern RCTs at 120–240 mg/day document clinically meaningful effects: Kawada 2014 (120 mg/day for 12 weeks documented skin moisture content increases and suppleness improvements); Oe 2017 (120 mg/day LMW HA documented wrinkle depth reduction); Nelson 2015 and Sato 2009 (80–200 mg/day documented modest knee osteoarthritis pain and function improvements). The successful oral HA trials specifically used low-MW forms — the molecular weight distinction is the central pharmacology. Toole 2004 review is the foundational reference for HA biology and the MW-dependent receptor signaling. Note distinction from injectable HA: dermal fillers (Juvederm, Restylane) and intra-articular HA injections (Synvisc, Orthovisc) are medical procedures, not supplements — they produce immediate localized effects that oral HA cannot match. Oral HA produces subtler, system-wide effects over weeks. Oral, topical, and injectable HA address different layers and can be used in combination. HA pairs naturally with{" "}
-            <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">collagen peptides</Link>{" "}
+            <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">collagen peptides</Link>{" "}
             (substrate for new collagen between which HA fills the matrix) and{" "}
-            <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">vitamin C</Link>{" "}
+            <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">vitamin C</Link>{" "}
             (collagen hydroxylation cofactor) in the foundational skin-supplement stack.
           </p>
           <div>
@@ -624,12 +624,12 @@ export default function HyaluronicAcidPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#0891b2] hover:underline">Collagen Peptides</Link>
-          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin C</Link>
-          <Link href="/supplements/biotin" className="text-sm font-medium text-[#0891b2] hover:underline">Biotin</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#0891b2] hover:underline">Curcumin</Link>
-          <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#0891b2] hover:underline">Resveratrol</Link>
+          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>
+          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C</Link>
+          <Link href="/supplements/biotin" className="text-sm font-medium text-[#3A759F] hover:underline">Biotin</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#3A759F] hover:underline">Curcumin</Link>
+          <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#3A759F] hover:underline">Resveratrol</Link>
         </div>
       </div>
 

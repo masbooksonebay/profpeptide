@@ -13,7 +13,7 @@ export default function HybridRockstarSupportPage() {
         <section>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Contact</h2>
           <p>For questions, bug reports, or feature requests for the Hybrid Rockstar iOS app, please reach out:</p>
-          <p className="mt-2"><strong className="text-gray-800 dark:text-slate-200">Email:</strong> <a href="mailto:support@hybridrockstar.app" className="text-[#0891b2] hover:underline">support@hybridrockstar.app</a></p>
+          <p className="mt-2"><strong className="text-gray-800 dark:text-slate-200">Email:</strong> <a href="mailto:support@hybridrockstar.app" className="text-[#3A759F] hover:underline">support@hybridrockstar.app</a></p>
           <p className="mt-2">We typically respond within 1&ndash;2 business days.</p>
         </section>
 
@@ -56,7 +56,7 @@ export default function HybridRockstarSupportPage() {
 
         <section>
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Feature Requests</h2>
-          <p>We welcome feature suggestions. Email us at <a href="mailto:support@hybridrockstar.app" className="text-[#0891b2] hover:underline">support@hybridrockstar.app</a> &mdash; we read everything, even if we can&apos;t always respond immediately.</p>
+          <p>We welcome feature suggestions. Email us at <a href="mailto:support@hybridrockstar.app" className="text-[#3A759F] hover:underline">support@hybridrockstar.app</a> &mdash; we read everything, even if we can&apos;t always respond immediately.</p>
         </section>
 
         <section>

@@ -55,7 +55,7 @@ const faqs = [
     a: (
       <>
         Magnesium is the cofactor for both the activation cascade and the binding step.{" "}
-        <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link>{" "}
+        <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium</Link>{" "}
         is required for the enzymes that convert vitamin D3 to 25-OH-D (in liver) and 25-OH-D to active 1,25-D (in kidney). Magnesium is also required for vitamin D binding protein function. Severe magnesium deficiency can impair vitamin D activation — explaining why some users don&apos;t respond to vitamin D supplementation as expected. Practical implication: ensure adequate magnesium status (200–400 mg/day from food + supplementation as needed) when taking vitamin D, particularly at higher doses. Magnesium deficiency is common (~50% of US adults below RDA) and is the more-frequent corrective intervention for non-responders to vitamin D supplementation.
       </>
     ),
@@ -240,13 +240,13 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Vitamin D3 is foundational micronutrient support that pairs with virtually any peptide protocol via immune and bone-health pathways. Healing peptides like{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             and{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
             for tissue repair benefit from adequate vitamin D status as foundational substrate. GH-secretagogue peptides like{" "}
-            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">sermorelin</Link>{" "}
+            <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">sermorelin</Link>{" "}
             and{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             for IGF-1 axis support work alongside vitamin D&apos;s bone-supporting effects. Thymosin alpha-1 (Tα1) for immune support has its own mechanism but compatible with vitamin D-mediated immune competence.
           </p>
         </div>
@@ -254,7 +254,7 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium</Link>{" "}
               — cofactor for vitamin D activation enzymes. Adequate magnesium status is required for normal vitamin D response. The most frequent corrective intervention for non-responders.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -264,23 +264,23 @@ const sections = [
               Vitamin K2 (MK-7 form) — the calcium-routing co-supplementation debate. 90–180 mcg/day at higher chronic vitamin D doses. Mechanistic plausibility; outcome evidence still developing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fish-oil" className="text-[#0891b2] hover:underline">Fish oil</Link>{" "}
+              <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Fish oil</Link>{" "}
               — both fat-soluble; take together with fat-containing meal. Complementary cardiovascular and immune support pairing. VITAL trial tested both — null on hard endpoints individually.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">Vitamin C</Link>{" "}
+              <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">Vitamin C</Link>{" "}
               — different mechanism but compatible immune support pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
               — complementary immune support; foundational mineral.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/probiotics" className="text-[#0891b2] hover:underline">Probiotics</Link>{" "}
+              <Link href="/supplements/probiotics" className="text-[#3A759F] hover:underline">Probiotics</Link>{" "}
               — gut-immune axis support; vitamin D&apos;s VDR signaling in intestinal epithelium complements probiotic microbiome support.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen peptides</Link>{" "}
+              <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
               — connective tissue support; compatible bone-and-joint stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -439,37 +439,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Holick MF. Vitamin D deficiency. N Engl J Med. 2007;357(3):266-281.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17634462/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17634462/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17634462/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Martineau AR, Jolliffe DA, Hooper RL, et al. Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data. BMJ. 2017;356:i6583.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/28202713/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28202713/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/28202713/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Manson JE, Cook NR, Lee IM, et al. Vitamin D supplements and prevention of cancer and cardiovascular disease. N Engl J Med. 2019;380(1):33-44.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30415629/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30415629/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30415629/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sanders KM, Stuart AL, Williamson EJ, et al. Annual high-dose oral vitamin D and falls and fractures in older women: a randomized controlled trial. JAMA. 2010;303(18):1815-1822.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20460620/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20460620/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20460620/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bolland MJ, Grey A, Avenell A. Effects of vitamin D supplementation on musculoskeletal health: a systematic review, meta-analysis, and trial sequential analysis. Lancet Diabetes Endocrinol. 2018;6(11):847-858.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30293909/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30293909/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30293909/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bouillon R, Marcocci C, Carmeliet G, et al. Skeletal and extraskeletal actions of vitamin D: current evidence and outstanding questions. Endocr Rev. 2019;40(4):1109-1151.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30321335/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30321335/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30321335/
           </a>
         </li>
@@ -485,12 +485,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -583,7 +583,7 @@ export default function VitaminD3Page() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Vitamin D3</h1>
@@ -609,7 +609,7 @@ export default function VitaminD3Page() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Vitamin D3 (cholecalciferol) is a fat-soluble essential vitamin that functions more like a hormone than a traditional vitamin — it binds nuclear vitamin D receptors (VDR) expressed in virtually every cell of the body, regulating expression of 200+ genes involved in calcium metabolism, immune function, inflammation, cell growth, and cardiovascular function. It is synthesized in skin from 7-dehydrocholesterol upon UVB exposure, or obtained from diet (fatty fish, egg yolks, fortified foods) and supplementation. The activation cascade: D3 is converted in the liver to 25-hydroxyvitamin D (25-OH-D, calcidiol — the circulating storage form measured by blood tests), then in the kidneys to 1,25-dihydroxyvitamin D (1,25-D, calcitriol — the active hormonal form). Vitamin D deficiency is one of the most common nutrient deficiencies globally — affecting approximately 40% of US adults and up to 80% in some populations (northern latitudes, darker skin pigmentation, sun avoidance, indoor lifestyles, advanced age). The evidence picture is best understood through a multi-tier sub-tier breakdown that mirrors the{" "}
-            <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">vitamin C parent pattern</Link>: <span className="font-semibold">Strong evidence</span> for deficiency correction (rickets/osteomalacia prevention) and bone health benefit with calcium in deficient/elderly populations — Bolland 2018 meta documented bone benefit emerges specifically with combined D + calcium in deficient elderly, making this the cleanest Strong endpoint. <span className="font-semibold">Modest evidence</span> for respiratory infection prevention — Martineau 2017 BMJ meta of 25 RCTs documented modest acute respiratory tract infection reduction, with larger effect in users baseline-deficient (25-OH-D below 25 nmol/L). <span className="font-semibold">Moderate/contested evidence</span> for fall reduction in older adults — USPSTF 2018 recommended AGAINST routine supplementation for fall prevention based on insufficient/inconsistent evidence; <span className="font-semibold">Sanders 2010 JAMA documented annual 500,000 IU high-bolus dosing paradoxically INCREASED falls (~15%) and fractures (~26%) compared to placebo</span> — this is the central nuance that reframed the older Bischoff-Ferrari fall-reduction enthusiasm. <span className="font-semibold">Negative primary endpoints for cancer and cardiovascular disease prevention</span> — the VITAL trial (Manson 2019 NEJM) randomized 25,871 adults to 2000 IU/day vitamin D3 vs placebo over 5 years and found NO significant reduction in invasive cancer, major cardiovascular events, or total mortality. Subgroup signals (cancer mortality, advanced cancer, autoimmune disease incidence) exist but the primary hypotheses weren&apos;t supported. The honest framing: observational associations between low vitamin D and multiple disease outcomes don&apos;t consistently translate to RCT supplementation benefit in already-replete populations. Supplementation in deficient users to correct deficiency has clear value; supplementation in already-replete users for primary disease prevention has weak support. Form: D3 (cholecalciferol) is approximately 87% more effective than D2 (ergocalciferol) at raising 25-OH-D — always choose D3. Magnesium is required as cofactor for vitamin D activation enzymes (deficient magnesium → impaired vitamin D response — common corrective intervention for non-responders). K2 (MK-7 form) co-supplementation has plausible mechanism (calcium routing to bone vs arteries) but outcome evidence isn&apos;t definitively established. Dosing should be individualized based on baseline 25-OH-D status — test before supplementing for accurate dose selection.
+            <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">vitamin C parent pattern</Link>: <span className="font-semibold">Strong evidence</span> for deficiency correction (rickets/osteomalacia prevention) and bone health benefit with calcium in deficient/elderly populations — Bolland 2018 meta documented bone benefit emerges specifically with combined D + calcium in deficient elderly, making this the cleanest Strong endpoint. <span className="font-semibold">Modest evidence</span> for respiratory infection prevention — Martineau 2017 BMJ meta of 25 RCTs documented modest acute respiratory tract infection reduction, with larger effect in users baseline-deficient (25-OH-D below 25 nmol/L). <span className="font-semibold">Moderate/contested evidence</span> for fall reduction in older adults — USPSTF 2018 recommended AGAINST routine supplementation for fall prevention based on insufficient/inconsistent evidence; <span className="font-semibold">Sanders 2010 JAMA documented annual 500,000 IU high-bolus dosing paradoxically INCREASED falls (~15%) and fractures (~26%) compared to placebo</span> — this is the central nuance that reframed the older Bischoff-Ferrari fall-reduction enthusiasm. <span className="font-semibold">Negative primary endpoints for cancer and cardiovascular disease prevention</span> — the VITAL trial (Manson 2019 NEJM) randomized 25,871 adults to 2000 IU/day vitamin D3 vs placebo over 5 years and found NO significant reduction in invasive cancer, major cardiovascular events, or total mortality. Subgroup signals (cancer mortality, advanced cancer, autoimmune disease incidence) exist but the primary hypotheses weren&apos;t supported. The honest framing: observational associations between low vitamin D and multiple disease outcomes don&apos;t consistently translate to RCT supplementation benefit in already-replete populations. Supplementation in deficient users to correct deficiency has clear value; supplementation in already-replete users for primary disease prevention has weak support. Form: D3 (cholecalciferol) is approximately 87% more effective than D2 (ergocalciferol) at raising 25-OH-D — always choose D3. Magnesium is required as cofactor for vitamin D activation enzymes (deficient magnesium → impaired vitamin D response — common corrective intervention for non-responders). K2 (MK-7 form) co-supplementation has plausible mechanism (calcium routing to bone vs arteries) but outcome evidence isn&apos;t definitively established. Dosing should be individualized based on baseline 25-OH-D status — test before supplementing for accurate dose selection.
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -672,12 +672,12 @@ export default function VitaminD3Page() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin C</Link>
-          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#0891b2] hover:underline">Fish Oil</Link>
-          <Link href="/supplements/probiotics" className="text-sm font-medium text-[#0891b2] hover:underline">Probiotics</Link>
-          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#0891b2] hover:underline">Collagen Peptides</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C</Link>
+          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
+          <Link href="/supplements/probiotics" className="text-sm font-medium text-[#3A759F] hover:underline">Probiotics</Link>
+          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>
         </div>
       </div>
 

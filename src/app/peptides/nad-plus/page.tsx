@@ -45,7 +45,7 @@ const faqs = [
     a: (
       <>
         Short-term safety is excellent at therapeutic doses. Long-term human safety data is growing but still limited compared to decades of clinical use peptides like{" "}
-        <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>
+        <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>
         . Most longevity protocols cycle 3 months on / 1 month off. At very high doses, methylation depletion can occur &mdash; methyl donors (TMG, B12) are sometimes added to counter this. Cancer patients should consult their oncologist; NAD+ supports both healthy AND theoretically cancer cells.
       </>
     ),
@@ -55,7 +55,7 @@ const faqs = [
     a: (
       <>
         Both are foundational longevity research compounds with different mechanisms. NAD+ restores cellular metabolism cofactor levels and sirtuin activity (energy + cellular repair). Epitalon activates telomerase (chromosome end maintenance + pineal melatonin restoration). The two are commonly stacked together because they target non-overlapping aging hallmarks. See the{" "}
-        <Link href="/compare/epitalon-vs-nad-plus" className="text-[#0891b2] hover:underline">Epitalon vs NAD+ comparison</Link>{" "}
+        <Link href="/compare/epitalon-vs-nad-plus" className="text-[#3A759F] hover:underline">Epitalon vs NAD+ comparison</Link>{" "}
         for a side-by-side breakdown.
       </>
     ),
@@ -65,7 +65,7 @@ const faqs = [
     a: (
       <>
         Subcutaneous and oral research-grade NAD+ is sold by specialty peptide and longevity vendors. IV infusion is offered in functional medicine clinics. Quality varies; verify Certificate of Analysis. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -177,7 +177,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -188,7 +188,7 @@ const sections = [
     intro: (
       <>
         NAD+ is administered through multiple routes: subcutaneous injection (most painful but accessible), IV infusion (clinical-setting, most tolerable), sublingual (moderate absorption), or oral precursors NMN/NR (avoids injection but indirect). The route choice has the biggest impact on tolerability and convenience &mdash; many users start oral and move to clinical IV if they want stronger effects. For the practical mechanics of subcutaneous injection technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -294,7 +294,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 500 mg vial, each unit drawn delivers 5 mg of NAD+ at 1 mL reconstitution, 2.5 mg at 2 mL, and 1 mg at 5 mL &mdash; the reconstitution volume determines the mg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -308,21 +308,21 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Epitalon.</span>{" "}
-          <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+          <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
           is the most common longevity stack pairing (cellular metabolism + telomere maintenance). See the{" "}
-          <Link href="/compare/epitalon-vs-nad-plus" className="text-[#0891b2] hover:underline">Epitalon vs NAD+ comparison</Link>{" "}
+          <Link href="/compare/epitalon-vs-nad-plus" className="text-[#3A759F] hover:underline">Epitalon vs NAD+ comparison</Link>{" "}
           for protocol differences.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">NMN or NR oral precursors.</span> Sometimes combined with injectable NAD+ for sustained levels between injections.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resveratrol.</span> Sirtuin activator that pairs mechanically with NAD+ &mdash; sirtuins require NAD+ as substrate, and resveratrol activates SIRT1.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">CoQ10 + MOTS-c.</span> Mitochondrial support pairing.{" "}
-          <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>{" "}
+          <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>{" "}
           activates AMPK through a non-overlapping pathway.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">GHK-Cu.</span>{" "}
-          <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>{" "}
+          <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>{" "}
           for combined gene expression modulation + NAD+ metabolism. Common longevity pairing.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Methyl donors (TMG, B12).</span> Counter NAD+ methylation depletion at high doses &mdash; particularly relevant for chronic high-dose protocols.</li>
@@ -437,7 +437,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -478,7 +478,7 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Camacho-Pereira J, Tarragó MG, Chini CCS, et al. CD38 Dictates Age-Related NAD Decline and Mitochondrial Dysfunction through an SIRT3-Dependent Mechanism. Cell Metab. 2016;23(6):1127-1139.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4911708/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4911708/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC4911708/
           </a>
         </li>
@@ -487,7 +487,7 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Nicotinamide adenine dinucleotide.{" "}
-          <a href="https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide
           </a>
         </li>
@@ -503,12 +503,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -529,7 +529,7 @@ export default function NADPlusPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -559,9 +559,9 @@ export default function NADPlusPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             NAD+ (nicotinamide adenine dinucleotide) is a coenzyme present in every cell of every living organism. It plays a central role in cellular metabolism, energy production, DNA repair, and gene expression regulation. Unlike most peptides on Prof. Peptide, NAD+ is technically a small-molecule cofactor rather than a peptide &mdash; but it&apos;s included because it&apos;s commonly stacked with peptides in longevity protocols and sold by the same vendors. NAD+ levels decline ~50% from age 20 to 60, and this decline is implicated in many hallmarks of aging including mitochondrial dysfunction, accumulated DNA damage, and reduced sirtuin activity. NAD+ supplementation has emerged as one of the most researched longevity interventions of the past decade. Often paired with{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
             for combined cellular metabolism + telomere maintenance. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -581,7 +581,7 @@ export default function NADPlusPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -634,17 +634,17 @@ export default function NADPlusPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
-        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu</Link>
-        <Link href="/peptides/mots-c" className="text-sm font-medium text-[#0891b2] hover:underline">MOTS-c</Link>
-        <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>
+        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
+        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
+        <Link href="/peptides/mots-c" className="text-sm font-medium text-[#3A759F] hover:underline">MOTS-c</Link>
+        <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>
         </div>
       </div>
 
-      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/compare/epitalon-vs-nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon vs NAD+ &rarr;</Link>
+        <Link href="/compare/epitalon-vs-nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon vs NAD+ &rarr;</Link>
         </div>
       </div>
 

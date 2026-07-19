@@ -171,12 +171,12 @@ export default function ComparePage() {
                 <Link
                   key={c.href}
                   href={c.href}
-                  className="block border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] hover:shadow-md transition-all group"
+                  className="block border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] hover:shadow-md transition-all group"
                 >
                   <div className="flex items-center gap-2 mb-1">
                     <span className="tag text-xs">{c.tag}</span>
                   </div>
-                  <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#0891b2] transition-colors mb-1">
+                  <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors mb-1">
                     {c.title}
                   </h3>
                   <p className="text-sm text-gray-500 dark:text-slate-400">{c.desc}</p>

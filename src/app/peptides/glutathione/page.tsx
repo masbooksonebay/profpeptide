@@ -41,7 +41,7 @@ const faqs = [
     a: (
       <>
         Research-grade glutathione is sold by specialty research-peptide vendors. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -176,8 +176,8 @@ const sections = [
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Because glutathione has no approved indication and its benefits are not well defined by regulators, dosing decisions should involve a knowledgeable clinician. For reconstitution mechanics of research materials, see the{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link> guide and the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link> guide and the{" "}
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -230,7 +230,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -262,37 +262,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Forman HJ, Zhang H, Rinna A. Glutathione: overview of its protective roles, measurement, and biosynthesis. Mol Aspects Med. 2009;30(1-2):1-12.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18796312/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18796312/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18796312/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sekhar RV, Patel SG, Guthikonda AP, et al. Deficient synthesis of glutathione underlies oxidative stress in aging and can be corrected by dietary cysteine and glycine supplementation. Am J Clin Nutr. 2011;94(3):847-853.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21795440/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21795440/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21795440/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Richie JP Jr, Nichenametla S, Neidig W, et al. Randomized controlled trial of oral glutathione supplementation on body stores of glutathione. Eur J Nutr. 2015;54(2):251-263.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24791752/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24791752/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24791752/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Allen J, Bradley RD. Effects of oral glutathione supplementation on systemic oxidative stress biomarkers in human volunteers. J Altern Complement Med. 2011;17(9):827-833.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21875351/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21875351/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21875351/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sonthalia S, Daulatabad D, Sarkar R. Glutathione as a skin whitening agent: Facts, myths, evidence and controversies. Indian J Dermatol Venereol Leprol. 2016;82(3):262-272.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27088927/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27088927/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27088927/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mischley LK, Lau RC, Shankland EG, et al. Phase IIb Study of Intranasal Glutathione in Parkinson&apos;s Disease. J Parkinsons Dis. 2017;7(2):289-299.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/28436395/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28436395/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/28436395/
           </a>
         </li>
@@ -308,12 +308,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above &mdash; spanning glutathione&apos;s established biology, the mixed oral-supplement evidence, the skin-whitening controversy, and a neurodegenerative trial. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -334,7 +334,7 @@ export default function GlutathionePage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -384,14 +384,14 @@ export default function GlutathionePage() {
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">A note on the longevity context:</span> glutathione sits alongside compounds like{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>{" "}
             and{" "}
-            <Link href="/peptides/ss-31" className="text-[#0891b2] hover:underline">SS-31</Link>{" "}
+            <Link href="/peptides/ss-31" className="text-[#3A759F] hover:underline">SS-31</Link>{" "}
             in cellular-health research &mdash; each targets a different arm of oxidative and mitochondrial resilience.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -440,9 +440,9 @@ export default function GlutathionePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
-        <Link href="/peptides/ss-31" className="text-sm font-medium text-[#0891b2] hover:underline">SS-31</Link>
-        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
+        <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
+        <Link href="/peptides/ss-31" className="text-sm font-medium text-[#3A759F] hover:underline">SS-31</Link>
+        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
         </div>
       </div>
 

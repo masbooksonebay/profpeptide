@@ -19,7 +19,7 @@ const faqs = [
     a: (
       <>
         Oral L-arginine is largely degraded by arginase in the intestine and liver before reaching systemic circulation — so a substantial proportion of an oral dose never makes it into the bloodstream. L-citrulline is not a substrate for arginase. It passes through gut and liver intact, reaches the kidneys, and is converted to arginine by argininosuccinate synthetase/lyase enzymes — outside the first-pass arginase exposure. The counterintuitive result: supplementing the precursor (citrulline) raises plasma arginine higher and longer than supplementing arginine itself. Schwedhelm 2008 and Moinard 2008 are the foundational pharmacokinetic comparisons. This is why contemporary nitric oxide research has largely shifted to L-citrulline. See the{" "}
-        <Link href="/supplements/l-arginine" className="text-[#0891b2] hover:underline">L-arginine profile</Link>{" "}
+        <Link href="/supplements/l-arginine" className="text-[#3A759F] hover:underline">L-arginine profile</Link>{" "}
         for the full bioavailability discussion.
       </>
     ),
@@ -31,7 +31,7 @@ const faqs = [
         Pure{" "}
         <span className="font-semibold">L-citrulline</span>{" "}
         is the standalone amino acid — best for vascular/sexual health applications where the NO/cGMP pathway is the target.{" "}
-        <Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate</Link>{" "}
+        <Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>{" "}
         bonds L-citrulline to malic acid (typically in a 2:1 ratio) — adding acid-base buffering, an additional Krebs-cycle substrate, and the strongest evidence base for pre-workout/resistance-training performance. For NO-mediated vascular goals (chronic vasodilation, ED, blood pressure), pure L-citrulline at 3 g produces equivalent effects to ~2 g of citrulline content from citrulline malate. For pre-workout pump and resistance training: citrulline malate at 6–8 g is the well-studied dose (Pérez-Guisado 2010). Both reach the NO pathway through the same kidney conversion step.
       </>
     ),
@@ -157,7 +157,7 @@ const sections = [
         <ol className="list-decimal list-inside space-y-1">
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Erectile dysfunction / sexual health.</span> 1.5–3 g daily. Cormio 2011 used 1.5 g/day for 1 month. 3 g/day is the upper range used in subsequent trials.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Blood pressure / chronic vascular support.</span> 3–6 g daily, often split AM/PM. Most consistent endothelial-function improvements emerge at 6 g/day in older or hypertensive populations.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-workout performance.</span> Use{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate</Link>{" "}at 6–8 g 30–60 minutes pre-training — the malate form has the Pérez-Guisado evidence base for resistance training. Pure L-citrulline at 3–4 g is acceptable but less-studied for ergogenic use.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-workout performance.</span> Use{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>{" "}at 6–8 g 30–60 minutes pre-training — the malate form has the Pérez-Guisado evidence base for resistance training. Pure L-citrulline at 3–4 g is acceptable but less-studied for ergogenic use.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Endurance performance.</span> 3–6 g pure L-citrulline pre-exercise. Modest cycling/running benefits in trials.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Combined with PDE5 inhibitors.</span> Standard daily citrulline dose (3 g) alongside as-needed PDE5 medication. Coordinate with prescriber.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pulmonary hypertension / clinical contexts.</span> Specialist-supervised dosing in cardiology contexts, typically 3–9 g/day in divided doses.</li>
@@ -201,7 +201,7 @@ const sections = [
               </tr>
               <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
                 <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Form</td>
-                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Pure L-citrulline for vascular/sexual health (cost-efficient, exact dose).{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate (2:1)</Link>{" "}for pre-workout performance — adds malic acid acid-base buffering with the Pérez-Guisado evidence base. Watermelon extract is a natural source but cost-inefficient at supplemental doses.</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">Pure L-citrulline for vascular/sexual health (cost-efficient, exact dose).{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate (2:1)</Link>{" "}for pre-workout performance — adds malic acid acid-base buffering with the Pérez-Guisado evidence base. Watermelon extract is a natural source but cost-inefficient at supplemental doses.</td>
               </tr>
               <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
                 <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Standardization marker</td>
@@ -228,9 +228,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-citrulline stacks with peptides that benefit from improved vascular function or tissue perfusion. Healing peptides like{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             and{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
             work in part through angiogenesis (new blood vessel formation); citrulline supports the function of existing vasculature through NO-mediated vasodilation — mechanistically complementary. PT-141 (bremelanotide) for sexual function works through melanocortin receptor signaling in the brain — citrulline operates downstream at the vascular level; the combination addresses both central and peripheral mechanisms. None of these combinations have formal RCT validation but the mechanistic rationale is straightforward.
           </p>
         </div>
@@ -238,7 +238,7 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate</Link>{" "}
+              <Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>{" "}
               — for pre-workout pump/performance, swap pure L-citrulline for the malate form. Adds the Pérez-Guisado ergogenic evidence base.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -248,17 +248,17 @@ const sections = [
               Pycnogenol (pine bark extract) — eNOS-enhancing flavonoid complex; combination products with arginine/citrulline are commercially common for sexual health applications.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/maca-root" className="text-[#0891b2] hover:underline">Maca root</Link>{" "}
+              <Link href="/supplements/maca-root" className="text-[#3A759F] hover:underline">Maca root</Link>{" "}
               and{" "}
-              <Link href="/supplements/tongkat-ali" className="text-[#0891b2] hover:underline">Tongkat Ali</Link>{" "}
+              <Link href="/supplements/tongkat-ali" className="text-[#3A759F] hover:underline">Tongkat Ali</Link>{" "}
               — different mechanisms for sexual health (libido/hormonal vs vascular). Citrulline addresses the physical erectile mechanism; maca and tongkat ali address libido and endocrine status. Complementary stacking for comprehensive sexual health support.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/coq10" className="text-[#0891b2] hover:underline">CoQ10</Link>{" "}
+              <Link href="/supplements/coq10" className="text-[#3A759F] hover:underline">CoQ10</Link>{" "}
               — endothelial-function complement. CoQ10 supports mitochondrial function in vascular smooth muscle and eNOS coupling.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium</Link>{" "}
               — cardiovascular foundational supplement; broad compatibility with citrulline.
             </li>
           </ol>
@@ -353,7 +353,7 @@ const sections = [
           <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-slate-400 mb-3">Quality markers to look for</p>
           <ul className="list-disc list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pure L-citrulline (free amino acid)</span> — clean dose for vascular/sexual health use. Read the label for grams of L-citrulline per serving.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">For pre-workout: L-citrulline malate (2:1 form)</span> — note that 8 g citrulline malate provides approximately 5.3 g pure citrulline + 2.7 g malic acid.{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">See the citrulline malate page</Link>{" "}for the ergogenic discussion.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">For pre-workout: L-citrulline malate (2:1 form)</span> — note that 8 g citrulline malate provides approximately 5.3 g pure citrulline + 2.7 g malic acid.{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">See the citrulline malate page</Link>{" "}for the ergogenic discussion.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">cGMP-certified manufacturing facility</span> — minimum bar.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Third-party tested for purity</span> — USP, NSF, or ConsumerLab certifications. Heavy metals and microbial testing.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Powder for therapeutic doses</span> — 3–6 g/day is cheaper from powder than from capsules. Mixes well in water or juice.</li>
@@ -395,37 +395,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cormio L, De Siati M, Lorusso F, et al. Oral L-citrulline supplementation improves erection hardness in men with mild erectile dysfunction. Urology. 2011;77(1):119-122.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21195829/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21195829/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21195829/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Schwedhelm E, Maas R, Freese R, et al. Pharmacokinetic and pharmacodynamic properties of oral L-citrulline and L-arginine: impact on nitric oxide metabolism. Br J Clin Pharmacol. 2008;65(1):51-59.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17919250/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17919250/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17919250/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mirenayat MS, Moradi S, Mohammadi H, Rouhani MH. Effect of L-citrulline supplementation on blood pressure: a systematic review and meta-analysis of randomized controlled trials. Curr Hypertens Rep. 2018;20(11):98.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29744600/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29744600/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29744600/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Figueroa A, Wong A, Jaime SJ, Gonzales JU. Influence of L-citrulline and watermelon supplementation on vascular function and exercise performance. Curr Opin Clin Nutr Metab Care. 2017;20(1):92-98.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27749691/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27749691/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27749691/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pérez-Guisado J, Jakeman PM. Citrulline malate enhances athletic anaerobic performance and relieves muscle soreness. J Strength Cond Res. 2010;24(5):1215-1222.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20386132/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20386132/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20386132/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Moinard C, Nicolis I, Neveux N, Darquy S, Bénazeth S, Cynober L. Dose-ranging effects of citrulline administration on plasma amino acids and hormonal patterns in healthy subjects: the Citrudose pharmacokinetic study. Br J Nutr. 2008;99(4):855-862.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17953788/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17953788/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17953788/
           </a>
         </li>
@@ -441,12 +441,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -539,7 +539,7 @@ export default function LCitrullinePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">L-Citrulline</h1>
@@ -550,7 +550,7 @@ export default function LCitrullinePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Citrulline, L-citrulline powder, watermelon extract (natural source); related variant:{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate</Link>
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Citrulline, L-citrulline powder, watermelon extract (natural source); related variant:{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Non-essential amino acid / nitric oxide pathway precursor / urea cycle intermediate / endothelial function support / first-pass arginase escape (preferred over L-arginine for NO applications)
@@ -565,7 +565,7 @@ export default function LCitrullinePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-citrulline is a non-essential amino acid found in high concentrations in watermelon — from which it takes its name (Citrullus lanatus) — and produced endogenously as part of the urea cycle. Its supplemental significance comes from an elegant counterintuitive pharmacology: oral citrulline raises plasma arginine higher and longer than oral L-arginine itself, because citrulline escapes the first-pass intestinal and hepatic arginase metabolism that degrades much of an oral arginine dose before it reaches circulation. Citrulline passes through gut and liver intact, reaches the kidneys, and is converted to arginine there — which then serves as substrate for nitric oxide synthase (NOS) throughout the vasculature, producing NO. NO activates guanylyl cyclase in vascular smooth muscle, raises cGMP, and drives vasodilation — the same downstream pathway that PDE5 inhibitors (sildenafil, tadalafil) target by preserving cGMP. This NO/cGMP mechanism is the physiology of erection and a foundational pathway of cardiovascular health. The Cormio 2011 RCT documented 1.5 g/day for 1 month improved erection hardness in 50% of mild-ED users vs 8.3% placebo. Mirenayat 2018 meta-analysis documents 4–8 mmHg systolic BP reductions at 3–6 g/day. For pre-workout pump and resistance-training performance, the malate-bonded variant —{" "}
-            <Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate</Link>{" "}
+            <Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>{" "}
             — adds acid-base buffering and Krebs-cycle substrate to the citrulline NO pathway, with the Pérez-Guisado 2010 evidence base.
           </p>
           <div>
@@ -577,7 +577,7 @@ export default function LCitrullinePage() {
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Modest blood pressure reduction (~4–8 mmHg systolic at 3–6 g/day; Mirenayat 2018 meta-analysis)</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Improves flow-mediated dilation (endothelial function marker; Figueroa 2017)</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Raises plasma arginine more effectively than oral L-arginine (Schwedhelm 2008)</li>
-              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pre-workout performance (use{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">citrulline malate form</Link>; Pérez-Guisado 2010)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pre-workout performance (use{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">citrulline malate form</Link>; Pérez-Guisado 2010)</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Adjunct in pulmonary hypertension (specialized cardiology context)</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cardiac surgery perioperative support (modest hemodynamic improvements)</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Modest improvements in male fertility / sperm motility</li>
@@ -629,12 +629,12 @@ export default function LCitrullinePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#0891b2] hover:underline">L-Citrulline Malate</Link>
-          <Link href="/supplements/l-arginine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Arginine</Link>
-          <Link href="/supplements/maca-root" className="text-sm font-medium text-[#0891b2] hover:underline">Maca Root</Link>
-          <Link href="/supplements/tongkat-ali" className="text-sm font-medium text-[#0891b2] hover:underline">Tongkat Ali</Link>
-          <Link href="/supplements/coq10" className="text-sm font-medium text-[#0891b2] hover:underline">CoQ10</Link>
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
+          <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline Malate</Link>
+          <Link href="/supplements/l-arginine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Arginine</Link>
+          <Link href="/supplements/maca-root" className="text-sm font-medium text-[#3A759F] hover:underline">Maca Root</Link>
+          <Link href="/supplements/tongkat-ali" className="text-sm font-medium text-[#3A759F] hover:underline">Tongkat Ali</Link>
+          <Link href="/supplements/coq10" className="text-sm font-medium text-[#3A759F] hover:underline">CoQ10</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
         </div>
       </div>
 

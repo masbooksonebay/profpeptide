@@ -24,9 +24,9 @@ const faqs = [
     q: "How does retatrutide compare to semaglutide and tirzepatide?",
     a: (
       <>
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>{" "}
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>{" "}
         activates one receptor (GLP-1).{" "}
-        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>{" "}
         activates two (GLP-1 + GIP). Retatrutide activates three (GLP-1 + GIP + glucagon). Trial weight loss has been progressively higher with each: semaglutide around 15%, tirzepatide around 22%, retatrutide around 28.7% at the highest doses. Retatrutide also has a unique side effect &mdash; dysesthesia (skin sensation changes) &mdash; that doesn&apos;t appear with the other two.
       </>
     ),
@@ -44,9 +44,9 @@ const faqs = [
     a: (
       <>
         Dysesthesia means abnormal skin sensations &mdash; tingling, burning, or pins-and-needles feeling. It was reported in about 21% of participants at the 12 mg dose in TRIUMPH-4. The effects were generally mild and rarely led to discontinuation. It&apos;s specific to retatrutide and not seen with{" "}
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
         or{" "}
-        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>. The mechanism is not fully understood but is thought to relate to glucagon-receptor activity.
+        <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>. The mechanism is not fully understood but is thought to relate to glucagon-receptor activity.
       </>
     ),
   },
@@ -63,7 +63,7 @@ const faqs = [
     a: (
       <>
         Retatrutide is investigational and not available by prescription. Research-grade product is sold by peptide vendors for laboratory use only. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -109,9 +109,9 @@ const sections = [
     intro: (
       <>
         Retatrutide hits three metabolic receptors at once &mdash; GLP-1, GIP, and glucagon &mdash; whereas{" "}
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
         hits just one and{" "}
-        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>{" "}
         hits two. The first two receptors slow the stomach and reduce appetite (the well-known GLP-1 effects); the third receptor &mdash; glucagon &mdash; adds a separate energy-expenditure boost on top, encouraging the body to burn more fat at rest. The triple-pathway design is the reason retatrutide produces the largest weight losses ever recorded in pharmacological trials, and it&rsquo;s also why it has a unique side-effect signature not seen with the dual or single agonists.
       </>
     ),
@@ -172,7 +172,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -315,7 +315,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> Each unit drawn delivers 100 mcg of Retatrutide at 1 mL reconstitution, 50 mcg at 2 mL, and 33 mcg at 3 mL — the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -332,30 +332,30 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + 1.2–1.6 g/kg protein.</span> Recommended to preserve lean muscle mass during rapid weight loss. Without this, GLP-1-class drugs can cause significant muscle loss alongside fat loss.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">GH-axis peptides for lean-mass preservation.</span>{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>{" "}
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack</Link>{" "}
           (CJC-1295 + Ipamorelin) or{" "}
-          <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677</Link>{" "}
+          <Link href="/peptides/mk-677" className="text-[#3A759F] hover:underline">MK-677</Link>{" "}
           are sometimes added during caloric restriction to support lean-mass retention via elevated IGF-1. Side-effect profiles do not overlap meaningfully with retatrutide.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Tissue-repair peptides during rapid weight loss.</span>{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>{" "}
           (BPC-157 + TB-500) or the broader{" "}
-          <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+          <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>{" "}
           /{" "}
-          <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+          <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
           blends are sometimes used for joint and connective-tissue support during the higher-strain phase of significant weight loss.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: other GLP-1 agonists.</span>{" "}
-          <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
-          <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>, or liraglutide should not be combined with retatrutide. Combining incretin-based drugs significantly increases GI side effects without proportional benefit.
+          <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>,{" "}
+          <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>, or liraglutide should not be combined with retatrutide. Combining incretin-based drugs significantly increases GI side effects without proportional benefit.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: CagriSema or standalone cagrilintide on top.</span>{" "}
-          <Link href="/peptides/cagrisema" className="text-[#0891b2] hover:underline">CagriSema</Link>{" "}
+          <Link href="/peptides/cagrisema" className="text-[#3A759F] hover:underline">CagriSema</Link>{" "}
           (semaglutide + cagrilintide) overlaps with retatrutide&apos;s GLP-1 arm.{" "}
-          <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">Cagrilintide</Link>{" "}
+          <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide</Link>{" "}
           alone is amylin-based and is less directly overlapping but has limited combination data with retatrutide.
         </li>
       </ol>
@@ -470,7 +470,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -506,7 +506,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2301972"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2301972
           </a>
@@ -517,7 +517,7 @@ const sections = [
             href="https://pubmed.ncbi.nlm.nih.gov/35985340/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://pubmed.ncbi.nlm.nih.gov/35985340/
           </a>
@@ -528,7 +528,7 @@ const sections = [
             href="https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-weight-loss-average"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-weight-loss-average
           </a>
@@ -542,7 +542,7 @@ const sections = [
             href="https://www.lilly.com/discovery/clinical-development"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.lilly.com/discovery/clinical-development
           </a>
@@ -553,7 +553,7 @@ const sections = [
             href="https://pubmed.ncbi.nlm.nih.gov/38858523/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://pubmed.ncbi.nlm.nih.gov/38858523/
           </a>
@@ -570,12 +570,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -596,7 +596,7 @@ export default function RetatrutidePage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -621,10 +621,10 @@ export default function RetatrutidePage() {
         </p>
       </div>
 
-      <div className="mb-8 p-4 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Latest research:</span> Phase 3 TRIUMPH-1 results released May 21, 2026 &mdash; 30.3% average weight loss at 104 weeks, comparable to bariatric surgery outcomes.{" "}
-          <Link href="/news/retatrutide-triumph-1-phase-3-results" className="text-[#0891b2] hover:underline">Read the full breakdown &rarr;</Link>
+          <Link href="/news/retatrutide-triumph-1-phase-3-results" className="text-[#3A759F] hover:underline">Read the full breakdown &rarr;</Link>
         </p>
       </div>
 
@@ -633,9 +633,9 @@ export default function RetatrutidePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Retatrutide (LY3437943) is a once-weekly injectable peptide developed by Eli Lilly that activates three different hormone receptors at once: GLP-1, GIP, and glucagon. The first two are the receptors targeted by existing weight-loss drugs &mdash;{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>{" "}
             (Ozempic, Wegovy) hits GLP-1;{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>{" "}
             (Mounjaro, Zepbound) hits both GLP-1 and GIP &mdash; but retatrutide adds a third, glucagon, which boosts resting energy expenditure on top of the appetite-suppression effects shared across the class. That third receptor is the reason retatrutide has produced the largest weight losses ever recorded in a pharmacological trial: roughly 24% of body weight at 48 weeks in Phase 2 obesity research, with the weight-loss curve still declining at trial end. As of mid-2026, the drug is in Phase 3 trials under Eli Lilly&rsquo;s TRIUMPH program, with regulatory submission targeted for late 2026 and potential approval in 2027 or 2028.
           </p>
           <div>
@@ -656,7 +656,7 @@ export default function RetatrutidePage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -709,30 +709,30 @@ export default function RetatrutidePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#0891b2] hover:underline">Tirzepatide</Link>
-        <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide</Link>
-        <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#0891b2] hover:underline">Cagrilintide</Link>
-        <Link href="/peptides/cagrisema" className="text-sm font-medium text-[#0891b2] hover:underline">CagriSema</Link>
-        <Link href="/peptides/mk-677" className="text-sm font-medium text-[#0891b2] hover:underline">MK-677</Link>
+        <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Tirzepatide</Link>
+        <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide</Link>
+        <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#3A759F] hover:underline">Cagrilintide</Link>
+        <Link href="/peptides/cagrisema" className="text-sm font-medium text-[#3A759F] hover:underline">CagriSema</Link>
+        <Link href="/peptides/mk-677" className="text-sm font-medium text-[#3A759F] hover:underline">MK-677</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#0891b2] hover:underline">Wolverine Stack</Link>
-        <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#0891b2] hover:underline">GH Stack</Link>
-        <Link href="/peptides/glow" className="text-sm font-medium text-[#0891b2] hover:underline">GLOW</Link>
-        <Link href="/peptides/klow" className="text-sm font-medium text-[#0891b2] hover:underline">KLOW</Link>
+        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>
+        <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#3A759F] hover:underline">GH Stack</Link>
+        <Link href="/peptides/glow" className="text-sm font-medium text-[#3A759F] hover:underline">GLOW</Link>
+        <Link href="/peptides/klow" className="text-sm font-medium text-[#3A759F] hover:underline">KLOW</Link>
         </div>
       </div>
 
-      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/compare/retatrutide-vs-tirzepatide" className="text-sm font-medium text-[#0891b2] hover:underline">Retatrutide vs Tirzepatide &rarr;</Link>
-        <Link href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#0891b2] hover:underline">Retatrutide vs Semaglutide &rarr;</Link>
-        <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
+        <Link href="/compare/retatrutide-vs-tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Tirzepatide &rarr;</Link>
+        <Link href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Semaglutide &rarr;</Link>
+        <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
         </div>
       </div>
 

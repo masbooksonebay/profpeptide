@@ -20,9 +20,9 @@ const faqs = [
     a: (
       <>
         The Metabolic Blend is a research-grade 3-component metabolic/longevity formulation combining{" "}
-        <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>{" "}
+        <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>{" "}
         (nicotinamide adenine dinucleotide),{" "}
-        <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>{" "}
+        <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>{" "}
         (a mitochondrial-derived peptide), and 5-Amino-1MQ (a small-molecule NNMT inhibitor). All three components converge on mitochondrial energy metabolism and NAD+ pathway signaling, making this one of the most targeted metabolic stacks available from research-grade vendors. It is a community- and vendor-formulated product with no controlled clinical trial of the combination.
       </>
     ),
@@ -31,9 +31,9 @@ const faqs = [
     q: "How does MOTS-c differ from NAD+ in this blend?",
     a: (
       <>
-        <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>{" "}
+        <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>{" "}
         is the direct coenzyme substrate — it replenishes the cellular pool of nicotinamide adenine dinucleotide that declines with age and metabolic stress.{" "}
-        <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>{" "}
+        <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>{" "}
         is a mitochondrial-derived signaling peptide that activates AMPK — the cell&apos;s master energy sensor — and promotes metabolic flexibility upstream of NAD+ utilization. NAD+ refills the tank; MOTS-c improves how efficiently the engine runs. The two mechanisms are additive on the same metabolic axis.
       </>
     ),
@@ -59,7 +59,7 @@ const faqs = [
     a: (
       <>
         This combination blend is sold by specialty research peptide vendors, typically as a lyophilized powder vial. Availability of the 3-component combined vial varies by vendor &mdash; some stock each component separately. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -181,7 +181,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -213,14 +213,14 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Epitalon (longevity/anti-aging addition).</span> Epitalon is a synthetic tetrapeptide studied for telomerase activation, pineal regulation, and anti-aging effects. In the longevity framing, Epitalon adds a different mechanistic angle (telomere/epigenetic) to this blend&apos;s mitochondrial/NAD+ focus. See{" "}
-          <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon &rarr;</Link>.
+          <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon &rarr;</Link>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time-restricted feeding or caloric restriction.</span> AMPK activation from MOTS-c is synergistic with the fasted metabolic state produced by time-restricted feeding. The NNMT inhibition from 5-Amino-1MQ was studied in the context of diet-induced obesity; a low-glycemic dietary context maximizes the relevance of its adipocyte effects.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid: redundant NAD+ precursors.</span> Stacking oral NMN or NR supplementation on top of direct injectable NAD+ creates potential for oversaturation of the NAD+ pathway and unnecessary PARP activation. Researchers tracking NAD+ levels should choose one primary replenishment strategy.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid: other GLP-1 agonists or metabolic injectables.</span> Compounds like semaglutide or tirzepatide act on a different metabolic axis (GLP-1/GIP receptor signaling, appetite and gastric motility) and can be stacked contextually, but their metabolic effects overlap in ways that make dosing harder to attribute. See the{" "}
-          <Link href="/peptides/semaglutide-bpc-157" className="text-[#0891b2] hover:underline">Semaglutide + BPC-157 blend &rarr;</Link>{" "}
+          <Link href="/peptides/semaglutide-bpc-157" className="text-[#3A759F] hover:underline">Semaglutide + BPC-157 blend &rarr;</Link>{" "}
           or{" "}
-          <Link href="/peptides/tirzepatide-bpc-157" className="text-[#0891b2] hover:underline">Tirzepatide + BPC-157 blend &rarr;</Link>{" "}
+          <Link href="/peptides/tirzepatide-bpc-157" className="text-[#3A759F] hover:underline">Tirzepatide + BPC-157 blend &rarr;</Link>{" "}
           if GLP-1-mediated weight loss is the primary goal.
         </li>
       </ol>
@@ -337,7 +337,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all verified vendors &rarr;
           </Link>
         </p>
@@ -369,25 +369,25 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lee C, Zeng J, Drew BG, et al. The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance. Cell Metab. 2015;21(3):443-454.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25738459/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25738459/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25738459/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Reynolds JC, Lai RW, Woodhead JST, et al. MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis. Nat Commun. 2021;12(1):470.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33473109/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33473109/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33473109/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Rajman L, Chwalek K, Sinclair DA. Therapeutic Potential of NAD-Boosting Molecules: The In Vivo Evidence. Cell Metab. 2018;27(3):529-547.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29514064/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29514064/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29514064/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Neelakantan H, Vance V, Wetzel MD, et al. Selective and membrane-permeable small molecule inhibitors of NNMT reverse high fat diet-induced obesity in mouse model of obesity. Biochem Pharmacol. 2018;147:27-34.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29155147/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29155147/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29155147/
           </a>
         </li>
@@ -403,12 +403,12 @@ const sections = [
           The Metabolic Blend has no controlled trial as a combination. The studies below are the key peer-reviewed sources for each individual component&apos;s mechanism &mdash; the empirical basis for the blend&apos;s mechanistic rationale.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -429,7 +429,7 @@ export default function MetabolicBlendPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -460,9 +460,9 @@ export default function MetabolicBlendPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The Metabolic Blend is a research-grade 3-component formulation combining{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>{" "}
             (nicotinamide adenine dinucleotide),{" "}
-            <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>{" "}
+            <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>{" "}
             (a mitochondrial-derived peptide), and 5-Amino-1MQ (a small-molecule NNMT inhibitor) in a single lyophilized vial. All three converge on the same metabolic axis &mdash; mitochondrial energy production and the NAD+ signaling network that powers cellular longevity, metabolic flexibility, and fat metabolism. NAD+ replenishes the coenzyme substrate that declines with age; MOTS-c activates AMPK to improve how cells use that substrate; 5-Amino-1MQ blocks a major NAD+ precursor consumption pathway to raise the steady-state intracellular NAD+ pool. It is a vendor- and community-formulated product with no controlled clinical trial as a combination.
           </p>
           <div>
@@ -483,7 +483,7 @@ export default function MetabolicBlendPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sold as a pre-blended lyophilized vial or as individual components by specialty research peptide vendors. None of the three components are FDA-approved as injectables. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -535,17 +535,17 @@ export default function MetabolicBlendPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
-          <Link href="/peptides/mots-c" className="text-sm font-medium text-[#0891b2] hover:underline">MOTS-c</Link>
-          <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
+          <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
+          <Link href="/peptides/mots-c" className="text-sm font-medium text-[#3A759F] hover:underline">MOTS-c</Link>
+          <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/semaglutide-bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide + BPC-157</Link>
-          <Link href="/peptides/tirzepatide-bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">Tirzepatide + BPC-157</Link>
+          <Link href="/peptides/semaglutide-bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide + BPC-157</Link>
+          <Link href="/peptides/tirzepatide-bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">Tirzepatide + BPC-157</Link>
         </div>
       </div>
 

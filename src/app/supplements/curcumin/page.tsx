@@ -35,11 +35,11 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural for users targeting tissue recovery and inflammation.{" "}
-        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+        <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
         is a healing peptide that accelerates tissue repair through angiogenic and growth-factor signaling — particularly relevant for tendon, ligament, and gut injuries.{" "}
-        <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+        <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
         (thymosin beta-4 fragment) supports cell migration, wound healing, and tissue regeneration. Curcumin operates at a different layer: NF-κB inhibition and COX/LOX reduction blunt the systemic inflammatory response that&apos;s often the limiting factor in injury healing. The peptides drive the repair signaling; curcumin reduces the inflammatory background. Mechanistically complementary, no known negative interactions.{" "}
-        <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+        <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
         (anti-inflammatory tripeptide) is a third option in this cluster — particularly for users targeting gut inflammation alongside joint or tissue concerns.
       </>
     ),
@@ -217,11 +217,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Curcumin pairs naturally with the healing peptide cluster.{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             is a healing peptide that accelerates tissue repair through angiogenic and growth-factor signaling — particularly relevant for tendon, ligament, and gut injuries.{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
             (thymosin beta-4 fragment) supports cell migration, wound healing, and tissue regeneration.{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             (anti-inflammatory tripeptide, C-terminal of α-MSH) reduces tissue inflammation via melanocortin pathway. Curcumin operates at a different layer: NF-κB inhibition and COX/LOX reduction blunt the systemic inflammatory background that&apos;s often the limiting factor in injury healing. The peptides drive repair signaling; curcumin reduces the inflammatory tide. Mechanistically complementary, no known negative interactions. The healing-cluster pairing (peptides + curcumin + collagen + omega-3) is one of the more mechanistically natural multi-modal recovery protocols.
           </p>
         </div>
@@ -229,23 +229,23 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fish-oil" className="text-[#0891b2] hover:underline">Omega-3 fish oil</Link>{" "}
+              <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Omega-3 fish oil</Link>{" "}
               — EPA/DHA modulate different inflammatory pathways (resolvins, protectins) than curcumin. Complementary anti-inflammatory arms; one of the more evidence-supported pairings in inflammation-modulation protocols.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen peptides</Link>{" "}
+              <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
               — structural support for joints and connective tissue. Complements curcumin&apos;s anti-inflammatory arm for joint health.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/quercetin" className="text-[#0891b2] hover:underline">Quercetin</Link>{" "}
+              <Link href="/supplements/quercetin" className="text-[#3A759F] hover:underline">Quercetin</Link>{" "}
               — additional anti-inflammatory flavonoid with senolytic effects. Compatible co-occupant in anti-inflammation stacks.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">Zinc carnosine</Link>{" "}
+              <Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">Zinc carnosine</Link>{" "}
               — gut-lining support. Pairs with curcumin for IBD or gut-inflammation contexts.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/tart-cherry" className="text-[#0891b2] hover:underline">Tart cherry</Link>{" "}
+              <Link href="/supplements/tart-cherry" className="text-[#3A759F] hover:underline">Tart cherry</Link>{" "}
               — anthocyanin anti-inflammatory and exercise-recovery effects. Compatible with curcumin in training-block recovery protocols.
             </li>
           </ol>
@@ -380,37 +380,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Paultre K, Cade W, Hernandez D, Reynolds J, Greif D, Best TM. Therapeutic effects of turmeric or curcumin extract on pain and function for individuals with knee osteoarthritis: a systematic review. BMJ Open Sport Exerc Med. 2021;7(1):e000935.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33500785/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33500785/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33500785/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hewlings SJ, Kalman DS. Curcumin: a review of its effects on human health. Foods. 2017;6(10):92.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29065496/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29065496/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29065496/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Fernández-Lázaro D, Mielgo-Ayuso J, Seco-Calvo J, et al. Effects of curcumin supplementation on inflammatory markers, muscle damage, and sports performance during acute physical exercise in sedentary individuals: a systematic review. Int J Environ Res Public Health. 2020;17(8):2891.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/32316576/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/32316576/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/32316576/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hanai H, Iida T, Takeuchi K, et al. Curcumin maintenance therapy for ulcerative colitis: randomized, multicenter, double-blind, placebo-controlled trial. Clin Gastroenterol Hepatol. 2006;4(12):1502-1506.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17101300/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17101300/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17101300/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Anand P, Kunnumakkara AB, Newman RA, Aggarwal BB. Bioavailability of curcumin: problems and promises. Mol Pharm. 2007;4(6):807-818.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17999464/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17999464/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17999464/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sanmukhani J, Satodia V, Trivedi J, et al. Efficacy and safety of curcumin in major depressive disorder: a randomized controlled trial. Phytother Res. 2014;28(4):579-585.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23832433/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23832433/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23832433/
           </a>
         </li>
@@ -426,12 +426,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -556,7 +556,7 @@ export default function CurcuminPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Curcumin</h1>
@@ -582,7 +582,7 @@ export default function CurcuminPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Curcumin is the primary bioactive polyphenol in turmeric (Curcuma longa) — the bright yellow spice used for thousands of years in Ayurvedic and traditional Chinese medicine, and now one of the most extensively studied natural compounds in modern supplement research (over 3,000 published studies). Its core mechanism is inhibition of NF-κB — the master transcription factor that activates inflammatory gene expression — with secondary inhibition of COX/LOX enzymes (the same pathways NSAIDs target). The result is broad anti-inflammatory effects with measurable clinical benefit: NSAID-comparable pain and functional improvement in knee osteoarthritis (Paultre 2021 meta-analysis, n=1,810), maintenance of ulcerative colitis remission (Hanai 2006, ~5× lower relapse vs placebo), reduced exercise-induced muscle damage and soreness, modest antidepressant effects, and emerging evidence in cardiovascular and metabolic contexts. The dominant practical challenge for curcumin is bioavailability — standard curcumin powder has near-zero oral absorption (single-digit nanomolar plasma concentrations), and clinical effect depends on formulation choice. Patented high-bioavailability formulations (Meriva, Theracurmin, BCM-95, Longvida) produce 7–30× higher plasma curcumin; piperine (BioPerine) co-administration produces ~20× via inhibiting hepatic glucuronidation. Curcumin pairs naturally with{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">healing peptides like BPC-157 and TB-500</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">healing peptides like BPC-157 and TB-500</Link>{" "}
             because the anti-inflammatory mechanism complements direct tissue-repair signaling.
           </p>
           <div>
@@ -645,11 +645,11 @@ export default function CurcuminPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#0891b2] hover:underline">Fish Oil</Link>
-          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#0891b2] hover:underline">Collagen Peptides</Link>
-          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#0891b2] hover:underline">Quercetin</Link>
-          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc Carnosine</Link>
-          <Link href="/supplements/tart-cherry" className="text-sm font-medium text-[#0891b2] hover:underline">Tart Cherry</Link>
+          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
+          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>
+          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#3A759F] hover:underline">Quercetin</Link>
+          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc Carnosine</Link>
+          <Link href="/supplements/tart-cherry" className="text-sm font-medium text-[#3A759F] hover:underline">Tart Cherry</Link>
         </div>
       </div>
 

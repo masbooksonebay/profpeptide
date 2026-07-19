@@ -21,9 +21,9 @@ const faqs = [
     a: (
       <>
         Cagrilintide is an investigational long-acting amylin analogue developed by Novo Nordisk for chronic weight management. Amylin is a hormone naturally co-released with insulin from pancreatic beta cells; cagrilintide mimics this hormone with a much longer duration of action. It is most often combined with{" "}
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
         as{" "}
-        <Link href="/peptides/cagrisema" className="text-[#0891b2] hover:underline">CagriSema</Link>
+        <Link href="/peptides/cagrisema" className="text-[#3A759F] hover:underline">CagriSema</Link>
         , which is currently under FDA review.
       </>
     ),
@@ -32,7 +32,7 @@ const faqs = [
     q: "How is cagrilintide different from semaglutide?",
     a: (
       <>
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>{" "}
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>{" "}
         activates GLP-1 receptors. Cagrilintide activates amylin and calcitonin receptors. The two work through different brain pathways to suppress appetite and slow gastric emptying. They are typically combined (CagriSema) because the mechanisms are additive — combination trials show greater weight loss than either component alone, with potentially better lean mass preservation.
       </>
     ),
@@ -42,9 +42,9 @@ const faqs = [
     a: (
       <>
         Possibly, in adherent users. REDEFINE 1 (NEJM 2025) showed CagriSema produced 20.4% average weight loss over 68 weeks, with up to 23% per-protocol — comparable to{" "}
-        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>
+        <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>
         &apos;s 20.2% in SURMOUNT-5 at the same timepoint. No head-to-head trial has been published. Both fall short of{" "}
-        <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>
+        <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>
         &apos;s 28.7% in TRIUMPH-4.
       </>
     ),
@@ -70,7 +70,7 @@ const faqs = [
     a: (
       <>
         Cagrilintide is not yet FDA-approved. Research-grade cagrilintide is sold by specialty peptide vendors. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -175,7 +175,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -186,7 +186,7 @@ const sections = [
     intro: (
       <>
         Cagrilintide is given as a subcutaneous injection &mdash; under the skin, not into muscle &mdash; once weekly, using a small insulin syringe. The dose escalates every 4 weeks across five steps to allow GI tolerance. For the practical mechanics of insulin syringes, units vs mcg conversion, and subcutaneous technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -331,7 +331,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 5 mg vial, each unit drawn delivers 50 mcg of Cagrilintide at 1 mL reconstitution, 25 mcg at 2 mL, and 16.7 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -345,18 +345,18 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">CagriSema combination.</span>{" "}
-          <Link href="/peptides/cagrisema" className="text-[#0891b2] hover:underline">CagriSema</Link>{" "}
+          <Link href="/peptides/cagrisema" className="text-[#3A759F] hover:underline">CagriSema</Link>{" "}
           (cagrilintide + semaglutide) as a fixed-dose combination is the validated stack. Phase 3 REDEFINE program produced 20.4% average weight loss with this combination.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cagrilintide monotherapy.</span> Historically tested in Phase 2 alone with 6–10% weight loss; less common in current research given combination efficacy advantage.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + 1.2–1.6 g/kg protein.</span> Recommended to preserve lean muscle during rapid weight loss. Amylin/GLP-1 combinations may preserve lean mass better than GLP-1 alone, but training and protein remain important.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: other GLP-class drugs separately.</span>{" "}
-          <Link href="/peptides/cagrisema" className="text-[#0891b2] hover:underline">CagriSema</Link>{" "}
+          <Link href="/peptides/cagrisema" className="text-[#3A759F] hover:underline">CagriSema</Link>{" "}
           already includes semaglutide; adding{" "}
-          <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+          <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>{" "}
           or{" "}
-          <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>{" "}
+          <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>{" "}
           on top would be redundant and increase side effects without proportional benefit.
         </li>
       </ol>
@@ -470,7 +470,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -502,25 +502,25 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lau DCW, Erichsen L, Francisco AM, et al. Once-weekly cagrilintide for weight management in people with overweight and obesity: a multicentre, randomised, double-blind, placebo-controlled and active-controlled, dose-finding phase 2 trial. Lancet. 2021;398(10317):2160-72.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/34798060/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/34798060/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/34798060/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Enebo LB, Berthelsen KK, Kankam M, et al. Safety, tolerability, pharmacokinetics, and pharmacodynamics of concomitant administration of multiple doses of cagrilintide with semaglutide 2·4 mg. Lancet. 2021;397(10286):1736-48.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33894838/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33894838/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33894838/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Garvey WT, Birkenfeld AL, Dicker D, et al. Once-Weekly CagriSema for the Treatment of Obesity (REDEFINE 1). N Engl J Med. 2025.{" "}
-          <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2502486" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2502486" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.nejm.org/doi/full/10.1056/NEJMoa2502486
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Frias JP, Dahl D, Aronne LJ, et al. Preclinical and clinical evidence for amylin/GLP-1 combination therapy advantages. The Innovation Medicine. 2025.{" "}
-          <a href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2025.100150" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2025.100150" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.the-innovation.org/article/doi/10.59717/j.xinn-med.2025.100150
           </a>
         </li>
@@ -539,12 +539,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -565,7 +565,7 @@ export default function CagrilintidePage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -590,10 +590,10 @@ export default function CagrilintidePage() {
         </p>
       </div>
 
-      <div className="mb-8 p-4 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Latest research:</span> REDEFINE 1 Phase 3 results published in NEJM (2025) showed CagriSema produced 20.4% average weight loss over 68 weeks (up to 23% per-protocol). Novo Nordisk filed the FDA NDA in December 2025; approval decision expected in 2026.{" "}
-          <Link href="/peptides/cagrisema" className="text-[#0891b2] hover:underline">See CagriSema profile &rarr;</Link>
+          <Link href="/peptides/cagrisema" className="text-[#3A759F] hover:underline">See CagriSema profile &rarr;</Link>
         </p>
       </div>
 
@@ -602,15 +602,15 @@ export default function CagrilintidePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Cagrilintide is an investigational long-acting amylin analogue developed by Novo Nordisk for chronic weight management. It works by mimicking amylin, a hormone the pancreas releases alongside insulin after meals. Combined with{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
             as{" "}
-            <Link href="/peptides/cagrisema" className="text-[#0891b2] hover:underline">CagriSema</Link>
+            <Link href="/peptides/cagrisema" className="text-[#3A759F] hover:underline">CagriSema</Link>
             , it produced 20.4% average weight loss in the Phase 3 REDEFINE 1 trial (NEJM 2025) &mdash; competitive with{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>{" "}
             and approaching{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>
             &apos;s efficacy. Novo Nordisk filed an FDA New Drug Application for CagriSema in December 2025. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -630,7 +630,7 @@ export default function CagrilintidePage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -683,16 +683,16 @@ export default function CagrilintidePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide</Link>
-        <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#0891b2] hover:underline">Tirzepatide</Link>
-        <Link href="/peptides/retatrutide" className="text-sm font-medium text-[#0891b2] hover:underline">Retatrutide</Link>
+        <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide</Link>
+        <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Tirzepatide</Link>
+        <Link href="/peptides/retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/cagrisema" className="text-sm font-medium text-[#0891b2] hover:underline">CagriSema</Link>
+        <Link href="/peptides/cagrisema" className="text-sm font-medium text-[#3A759F] hover:underline">CagriSema</Link>
         </div>
       </div>
 

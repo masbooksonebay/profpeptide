@@ -40,11 +40,11 @@ export default function NMNvsNiacinPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"NMN vs Niacin — NAD+ Precursor Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">NMN vs Niacin &mdash; NAD+ Precursor Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Both NMN (Nicotinamide Mononucleotide) and Niacin (Nicotinic Acid / Vitamin B3) raise NAD+ levels, but through different pathways, at vastly different costs, and with different side effect profiles. A 2026 head-to-head human clinical trial in Nature Metabolism found NMN and NR comparable in raising blood NAD+ levels, while nicotinamide (NAM) produced only a transient effect.</p>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why two precursors with one destination</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Both NMN and niacin raise NAD+ &mdash; the coenzyme your cells need for energy production, DNA repair, and sirtuin (a family of enzymes that regulate cellular aging and require NAD+ to function) activation. NAD+ levels decline with age, which is why both supplements are popular in the longevity space.
@@ -65,8 +65,8 @@ export default function NMNvsNiacinPage() {
           <thead>
             <tr className="bg-gray-50 dark:bg-[#1e293b]">
               <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">NMN</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Niacin</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">NMN</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Niacin</th>
             </tr>
           </thead>
           <tbody>
@@ -116,7 +116,7 @@ export default function NMNvsNiacinPage() {
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-lg text-gray-600 dark:text-slate-300">Niacin raises NAD+ at approximately 1% of the cost of NMN. The flush is manageable for most people and can be reduced with extended-release forms. <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link> has no flush and is simpler to use, but costs significantly more and the long-term human evidence is still developing. Both effectively raise <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link> &mdash; the choice often comes down to budget, tolerance for flushing, and whether the cholesterol benefits of niacin are relevant.</p>
+        <p className="text-lg text-gray-600 dark:text-slate-300">Niacin raises NAD+ at approximately 1% of the cost of NMN. The flush is manageable for most people and can be reduced with extended-release forms. <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link> has no flush and is simpler to use, but costs significantly more and the long-term human evidence is still developing. Both effectively raise <Link href="/supplements/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link> &mdash; the choice often comes down to budget, tolerance for flushing, and whether the cholesterol benefits of niacin are relevant.</p>
       </div>
 
       <div className="mb-8">

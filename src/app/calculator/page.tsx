@@ -122,7 +122,7 @@ export default function CalculatorPage() {
                   placeholder="e.g. 5"
                   value={vialSize}
                   onChange={(e) => setVialSize(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#0891b2] transition"
+                  className="w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#3A759F] transition"
                 />
               </div>
 
@@ -137,7 +137,7 @@ export default function CalculatorPage() {
                   placeholder="e.g. 2"
                   value={waterVolume}
                   onChange={(e) => setWaterVolume(e.target.value)}
-                  className="w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#0891b2] transition"
+                  className="w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#3A759F] transition"
                 />
               </div>
 
@@ -153,7 +153,7 @@ export default function CalculatorPage() {
                     placeholder={doseUnit === 'mcg' ? 'e.g. 250' : 'e.g. 0.25'}
                     value={dose}
                     onChange={(e) => setDose(e.target.value)}
-                    className="flex-1 px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#0891b2] transition"
+                    className="flex-1 px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#3A759F] transition"
                   />
                   <div className="flex rounded-md overflow-hidden border border-gray-300 dark:border-slate-600">
                     <button
@@ -161,7 +161,7 @@ export default function CalculatorPage() {
                       onClick={() => setDoseUnit('mcg')}
                       className={`px-3.5 py-2.5 text-sm font-medium transition-colors ${
                         doseUnit === 'mcg'
-                          ? 'bg-[#0891b2] text-white'
+                          ? 'bg-[#3A759F] text-white'
                           : 'bg-gray-50 dark:bg-[#0f172a] text-gray-500 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-700'
                       }`}
                     >
@@ -172,7 +172,7 @@ export default function CalculatorPage() {
                       onClick={() => setDoseUnit('mg')}
                       className={`px-3.5 py-2.5 text-sm font-medium transition-colors ${
                         doseUnit === 'mg'
-                          ? 'bg-[#0891b2] text-white'
+                          ? 'bg-[#3A759F] text-white'
                           : 'bg-gray-50 dark:bg-[#0f172a] text-gray-500 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-700'
                       }`}
                     >
@@ -208,8 +208,8 @@ export default function CalculatorPage() {
               </div>
             ) : (
               <div className="space-y-4">
-                <div className="rounded-lg p-4 bg-[#0891b2]/10 border border-[#0891b2]/20">
-                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#0891b2]">
+                <div className="rounded-lg p-4 bg-[#3A759F]/10 border border-[#3A759F]/20">
+                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">
                     Concentration
                   </p>
                   <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
@@ -218,8 +218,8 @@ export default function CalculatorPage() {
                   </p>
                 </div>
 
-                <div className="rounded-lg p-4 bg-[#0891b2]/10 border border-[#0891b2]/20">
-                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#0891b2]">
+                <div className="rounded-lg p-4 bg-[#3A759F]/10 border border-[#3A759F]/20">
+                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">
                     Draw Volume
                   </p>
                   <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
@@ -228,8 +228,8 @@ export default function CalculatorPage() {
                   </p>
                 </div>
 
-                <div className="rounded-lg p-4 bg-[#0891b2]/10 border border-[#0891b2]/20">
-                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#0891b2]">
+                <div className="rounded-lg p-4 bg-[#3A759F]/10 border border-[#3A759F]/20">
+                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">
                     Insulin Syringe Units (U-100)
                   </p>
                   <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
@@ -245,7 +245,7 @@ export default function CalculatorPage() {
                   {savedMsg && (
                     <span className="text-sm text-green-600 dark:text-green-400">
                       {savedMsg}{' '}
-                      <Link href="/log" className="text-[#0891b2] hover:underline">View Log &rarr;</Link>
+                      <Link href="/log" className="text-[#3A759F] hover:underline">View Log &rarr;</Link>
                     </span>
                   )}
                 </div>
@@ -260,21 +260,21 @@ export default function CalculatorPage() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-600 dark:text-slate-300">
             <div>
-              <p className="font-medium mb-1 text-[#0891b2]">Concentration</p>
+              <p className="font-medium mb-1 text-[#3A759F]">Concentration</p>
               <code className="text-xs bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-slate-600 rounded px-2 py-1 block text-gray-700 dark:text-slate-300">
                 (Vial mg &times; 1000) &divide; Water mL
               </code>
               <p className="mt-1 text-xs text-gray-400 dark:text-slate-500">Result in mcg/mL</p>
             </div>
             <div>
-              <p className="font-medium mb-1 text-[#0891b2]">Draw Volume</p>
+              <p className="font-medium mb-1 text-[#3A759F]">Draw Volume</p>
               <code className="text-xs bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-slate-600 rounded px-2 py-1 block text-gray-700 dark:text-slate-300">
                 Dose mcg &divide; Concentration
               </code>
               <p className="mt-1 text-xs text-gray-400 dark:text-slate-500">Result in mL</p>
             </div>
             <div>
-              <p className="font-medium mb-1 text-[#0891b2]">Syringe Units (U-100)</p>
+              <p className="font-medium mb-1 text-[#3A759F]">Syringe Units (U-100)</p>
               <code className="text-xs bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-slate-600 rounded px-2 py-1 block text-gray-700 dark:text-slate-300">
                 Draw Volume mL &times; 100
               </code>
@@ -284,10 +284,10 @@ export default function CalculatorPage() {
         </div>
 
         <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2">
-          <a href="/peptides" className="text-sm text-[#0891b2] hover:underline">Peptide Library</a>
-          <a href="/glossary" className="text-sm text-[#0891b2] hover:underline">Glossary</a>
-          <a href="/coupons" className="text-sm text-[#0891b2] hover:underline">Discount Codes</a>
-          <a href="/faq" className="text-sm text-[#0891b2] hover:underline">FAQ</a>
+          <a href="/peptides" className="text-sm text-[#3A759F] hover:underline">Peptide Library</a>
+          <a href="/glossary" className="text-sm text-[#3A759F] hover:underline">Glossary</a>
+          <a href="/coupons" className="text-sm text-[#3A759F] hover:underline">Discount Codes</a>
+          <a href="/faq" className="text-sm text-[#3A759F] hover:underline">FAQ</a>
         </div>
 
         <p className="mt-6 text-xs text-gray-400 dark:text-slate-500 text-center">

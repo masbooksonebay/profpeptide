@@ -25,31 +25,31 @@ const sections = [
       <div className="space-y-4">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The arbitrary cutoff between &ldquo;peptide&rdquo; and &ldquo;protein&rdquo; is around 50 amino acids, though it varies by convention. Insulin (51 amino acids) is usually classified as a protein; the GLP-1 receptor agonists ({" "}
-          <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>
+          <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>
           {" "}~31 residues,{" "}
-          <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>
+          <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>
           {" "}~39 residues) are firmly in peptide territory. What separates peptides from proteins functionally is structural complexity &mdash; peptides typically lack the elaborate folded tertiary structure that defines a protein.
         </p>
         <ol className="list-decimal list-inside space-y-1">
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">GH-axis secretagogues.</span> Stimulate endogenous growth hormone release.{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>,{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>,{" "}
-            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>,{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>,{" "}
+            <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
             are the most-studied examples.
           </li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">GLP-class metabolic peptides.</span> Incretin-receptor agonists for weight loss and glycemic control.{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>,{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>,{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>,{" "}
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link>{" "}
             are the canonical mono-, dual-, and triple-agonist examples.
           </li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Healing and repair peptides.</span> Tissue-recovery and anti-inflammatory effects.{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>,{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, and copper peptides like GHK-Cu are the headline compounds.
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>,{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>, and copper peptides like GHK-Cu are the headline compounds.
           </li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cognitive peptides.</span> Neurotrophic and cognitive-modulating compounds.{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>,{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>,{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             are the most-referenced.
           </li>
         </ol>
@@ -74,7 +74,7 @@ const sections = [
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Why this matters for dosing.</span> Because of cascade amplification, peptides produce systemic, measurable effects at nanogram-to-microgram quantities &mdash; orders of magnitude smaller than traditional small-molecule drugs, which usually have to occupy receptors in bulk (or block enzymes directly) and therefore need milligram-to-gram doses. A typical ibuprofen dose is 400 mg; a typical{" "}
-          <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+          <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
           dose is 200&ndash;300 mcg &mdash; roughly 2,000 times less mass, achieving its effect through receptor-mediated amplification rather than mass-action chemistry.
         </p>
       </div>
@@ -95,7 +95,7 @@ const sections = [
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           The practical dose math &mdash; how a 10 mg vial reconstituted to a given volume yields a specific mcg-per-unit conversion &mdash; lives in the{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique guide</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique guide</Link>.
         </p>
       </div>
     ),
@@ -186,7 +186,7 @@ const sections = [
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           For the actual reconstitution math &mdash; how the water volume you choose determines mcg-per-unit on the syringe &mdash; see the{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique guide</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique guide</Link>.
         </p>
       </div>
     ),
@@ -222,22 +222,22 @@ const sections = [
         <ol className="list-decimal list-inside space-y-1">
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold">GH-axis secretagogues</span> (
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>,{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>,{" "}
-            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>,{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>,{" "}
+            <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>
             ). Often researched in 5-on/2-off or 8-on/4-off patterns. The ghrelin and GHRH receptors desensitize meaningfully with continuous use, so periodic washouts are standard.
           </li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold">GLP-1 class metabolic peptides</span> (
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>,{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>,{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>,{" "}
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link>
             ). Continuous weekly dosing is the standard in published Phase 3 trials. Receptor desensitization at therapeutic doses is less of an issue than in the GH-axis class, and trial protocols run multi-year continuous administration without scheduled washouts.
           </li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold">Healing and repair peptides</span> (
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>,{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>,{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>
             ). Typically researched in 4&ndash;6 week active protocols followed by an off period of similar length. The cycle structure here is less about receptor desensitization (mechanism is incompletely characterized) and more about matching the duration of tissue-repair use cases.
           </li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Why patterns vary.</span> Cycling is receptor-biology-driven, not a universal rule. The right pattern depends on the specific receptor system, the peptide&rsquo;s half-life, and the goal of the protocol. Default to the cycling pattern referenced in the peptide&rsquo;s published research literature.</li>
@@ -273,21 +273,21 @@ const sections = [
         <ol className="list-decimal list-inside space-y-1">
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold">Hands-on dose math and injection mechanics.</span>{" "}
-            <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">Insulin syringes and injection technique</Link>{" "}
+            <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">Insulin syringes and injection technique</Link>{" "}
             &mdash; reading insulin syringes, choosing barrel sizes, converting units to mcg, subcutaneous technique, and site rotation.
           </li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold">Compound-specific research profiles.</span> Most-referenced profiles for protocol context:{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>,{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>,{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>,{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>,{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>.
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link>,{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>,{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>,{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>,{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>,{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>.
           </li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold">Vendor codes.</span>{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">Verified discount codes</Link>{" "}
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">Verified discount codes</Link>{" "}
             from vetted research peptide vendors with current pricing references.
           </li>
         </ol>
@@ -341,7 +341,7 @@ export default function PeptideResearchBasicsPage() {
         }}
       />
       <div className="section max-w-3xl">
-        <Link href="/guides" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/guides" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           Back to Guides
         </Link>
 

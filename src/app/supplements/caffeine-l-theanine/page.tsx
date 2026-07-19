@@ -43,13 +43,13 @@ const faqs = [
     a: (
       <>
         Yes — and{" "}
-        <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+        <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
         is mechanistically the natural peptide bridge from this stack. Caffeine raises arousal and dopamine availability; L-theanine smooths the curve via GABA and alpha-wave modulation; Semax adds BDNF-mediated neurotrophic signaling on top. The three operate on different pathways, so the combined effect tends to layer rather than overlap. Other supplement nootropics ({" "}
-        <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>{" "}
+        <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
         for cholinergic substrate,{" "}
-        <Link href="/supplements/lions-mane" className="text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>{" "}
+        <Link href="/supplements/lions-mane" className="text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>{" "}
         for BDNF/NGF,{" "}
-        <Link href="/supplements/bacopa-monnieri" className="text-[#0891b2] hover:underline">Bacopa</Link>{" "}
+        <Link href="/supplements/bacopa-monnieri" className="text-[#3A759F] hover:underline">Bacopa</Link>{" "}
         for long-term memory consolidation) also stack cleanly. Introduce one variable at a time so you can tell what&apos;s actually doing what.
       </>
     ),
@@ -210,7 +210,7 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The natural peptide bridge is{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
             — an ACTH(4-10) analog used as a cognitive nootropic in the Russian medical tradition. Mechanistically the three operate on different pathways: caffeine raises arousal and dopamine availability; L-theanine smooths the curve through GABA modulation and alpha-wave promotion; Semax adds BDNF-mediated neurotrophic signaling on top. The combined effect tends to layer rather than overlap. Practical protocol: take caffeine + L-theanine first thing on a focus day; layer Semax (intranasal) 30–60 minutes before deep work. Introduce one variable at a time so you can tell what&apos;s actually doing what.
           </p>
         </div>
@@ -218,25 +218,25 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>{" "}
+              <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
               — cholinergic substrate. Adds acetylcholine fuel to the alertness + alpha-wave focus the stack provides. The most natural cognitive stack addition.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/lions-mane" className="text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>{" "}
+              <Link href="/supplements/lions-mane" className="text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>{" "}
               — BDNF/NGF stimulation. Long-term cognitive support that complements the acute effect of caffeine + L-theanine.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/bacopa-monnieri" className="text-[#0891b2] hover:underline">Bacopa Monnieri</Link>{" "}
+              <Link href="/supplements/bacopa-monnieri" className="text-[#3A759F] hover:underline">Bacopa Monnieri</Link>{" "}
               — long-term memory consolidation. Effects build over weeks; different timescale from the stack but a natural daily companion for sustained cognitive work.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/rhodiola-rosea" className="text-[#0891b2] hover:underline">Rhodiola Rosea</Link>{" "}
+              <Link href="/supplements/rhodiola-rosea" className="text-[#3A759F] hover:underline">Rhodiola Rosea</Link>{" "}
               — adaptogen with mild stimulant properties. Pairs well with the stack for endurance cognitive work; reduces fatigue without compounding caffeine&apos;s autonomic load.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/caffeine" className="text-[#0891b2] hover:underline">Caffeine</Link>{" "}
+              <Link href="/supplements/caffeine" className="text-[#3A759F] hover:underline">Caffeine</Link>{" "}
               and{" "}
-              <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-Theanine</Link>{" "}
+              <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-Theanine</Link>{" "}
               — see the standalone profiles for solo dosing context, source notes, and individual side-effect profiles.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -384,37 +384,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Owen GN, Parnell H, De Bruin EA, Rycroft JA. The combined effects of L-theanine and caffeine on cognitive performance and mood. Nutr Neurosci. 2008;11(4):193-198.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18681988/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18681988/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18681988/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Haskell CF, Kennedy DO, Milne AL, Wesnes KA, Scholey AB. The effects of L-theanine, caffeine and their combination on cognition and mood. Biol Psychol. 2008;77(2):113-122.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18006208/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18006208/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18006208/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Giesbrecht T, Rycroft JA, Rowson MJ, De Bruin EA. The combination of L-theanine and caffeine improves cognitive performance and increases subjective alertness. Nutr Neurosci. 2010;13(6):283-290.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20546655/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20546655/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20546655/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Einöther SJ, Martens VE, Rycroft JA, De Bruin EA. L-theanine and caffeine improve task switching but not intersensory attention or subjective alertness. Appetite. 2010;54(2):406-409.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20079384/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20079384/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20079384/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nobre AC, Rao A, Owen GN. L-theanine, a natural constituent in tea, and its effect on mental state. Asia Pac J Clin Nutr. 2008;17 Suppl 1:167-168.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18296328/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18296328/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18296328/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Camfield DA, Stough C, Farrimond J, Scholey AB. Acute effects of tea constituents L-theanine, caffeine, and epigallocatechin gallate on cognitive function and mood: a systematic review and meta-analysis. Nutr Rev. 2014;72(8):507-522.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24946991/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24946991/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24946991/
           </a>
         </li>
@@ -430,12 +430,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -560,7 +560,7 @@ export default function CaffeineLTheaninePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Caffeine + L-Theanine</h1>
@@ -579,9 +579,9 @@ export default function CaffeineLTheaninePage() {
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Component supplements:</span>{" "}
-          <Link href="/supplements/caffeine" className="text-[#0891b2] hover:underline">Caffeine</Link>
+          <Link href="/supplements/caffeine" className="text-[#3A759F] hover:underline">Caffeine</Link>
           {" + "}
-          <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-Theanine</Link>{" "}
+          <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-Theanine</Link>{" "}
           (canonical 1:2 ratio, ~100 mg caffeine + 200 mg L-theanine)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
@@ -594,9 +594,9 @@ export default function CaffeineLTheaninePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Caffeine + L-Theanine is one of the most extensively researched cognitive supplement stacks in existence — and one of the few where the synergy between two compounds is demonstrably better than either compound alone in published RCTs.{" "}
-            <Link href="/supplements/caffeine" className="text-[#0891b2] hover:underline">Caffeine</Link>{" "}
+            <Link href="/supplements/caffeine" className="text-[#3A759F] hover:underline">Caffeine</Link>{" "}
             is the world&apos;s most-used psychoactive compound, an adenosine receptor antagonist that drives alertness, faster reaction times, and reduced perception of fatigue.{" "}
-            <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-theanine</Link>{" "}
+            <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-theanine</Link>{" "}
             is an amino acid found almost exclusively in tea leaves (Camellia sinensis) that promotes alpha-wave activity and modulates GABA, producing calm focus without sedation. Combined at the canonical 1:2 ratio (~100 mg caffeine + 200 mg L-theanine), they produce the alertness and executive-control benefit of caffeine, minus most of its anxiety, jitter, and cardiovascular edge. This is the neurochemical reason tea feels calmer than coffee — and the protocol most biohackers settle on once they&apos;ve experimented past coffee alone.
           </p>
           <div>
@@ -659,12 +659,12 @@ export default function CaffeineLTheaninePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/caffeine" className="text-sm font-medium text-[#0891b2] hover:underline">Caffeine</Link>
-          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Theanine</Link>
-          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#0891b2] hover:underline">Alpha-GPC</Link>
-          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>
-          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#0891b2] hover:underline">Bacopa Monnieri</Link>
-          <Link href="/supplements/rhodiola-rosea" className="text-sm font-medium text-[#0891b2] hover:underline">Rhodiola Rosea</Link>
+          <Link href="/supplements/caffeine" className="text-sm font-medium text-[#3A759F] hover:underline">Caffeine</Link>
+          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>
+          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha-GPC</Link>
+          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>
+          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#3A759F] hover:underline">Bacopa Monnieri</Link>
+          <Link href="/supplements/rhodiola-rosea" className="text-sm font-medium text-[#3A759F] hover:underline">Rhodiola Rosea</Link>
         </div>
       </div>
 

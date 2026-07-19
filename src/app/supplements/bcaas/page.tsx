@@ -145,7 +145,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Caloric restriction / cutting (modest).</span> 5–10 g/day around training. Adequate dietary protein (1.6+ g/kg) is the higher-impact intervention; BCAAs are supplementary.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hepatic encephalopathy (clinical).</span> Specialist-managed supportive nutrition in cirrhotic patients. Typically 12+ g/day in divided doses.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Post-exercise soreness mitigation.</span> 5–10 g around training (pre/intra/post). Khemtong 2021 meta — modest DOMS reduction.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">General resistance training in users with adequate protein.</span> NOT recommended — use{" "}<Link href="/supplements/protein-powder" className="text-[#0891b2] hover:underline">whey protein</Link>{" "}instead. More cost-efficient, produces better outcomes (Plotkin 2021).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">General resistance training in users with adequate protein.</span> NOT recommended — use{" "}<Link href="/supplements/protein-powder" className="text-[#3A759F] hover:underline">whey protein</Link>{" "}instead. More cost-efficient, produces better outcomes (Plotkin 2021).</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">If choosing isolated amino acid supplementation: EAAs &gt; BCAAs.</span> Essential amino acid blends (all 9 EAAs) outperform BCAAs alone at matched leucine content. Cost is higher but the outcome is closer to whole protein.</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
@@ -214,9 +214,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             BCAAs&apos; primary mechanism (mTOR activation) overlaps with GH/IGF-1 axis activation from peptides — but the mechanisms are complementary rather than redundant.{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             and{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">ipamorelin</Link>{" "}
             work through GH-mediated systemic anabolic signaling; BCAAs work through direct muscle-tissue mTOR triggering. No formal stack RCT validation, and the practical case for combining isolated BCAAs with GH peptides over whole protein is weak — whole protein delivers BCAAs plus the full EAA spectrum at lower cost.
           </p>
         </div>
@@ -224,30 +224,30 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/protein-powder" className="text-[#0891b2] hover:underline">Whey protein</Link>{" "}
+              <Link href="/supplements/protein-powder" className="text-[#3A759F] hover:underline">Whey protein</Link>{" "}
               — for users with adequate protein needs, whey IS the BCAA source (~25% BCAAs by weight). Adding isolated BCAAs on top is redundant and more expensive. Choose one, not both.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine</Link>{" "}
+              <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine</Link>{" "}
               — different mechanism (PCr-mediated ATP regeneration). No overlap with BCAAs; routinely stacked.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate</Link>{" "}
+              <Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>{" "}
               — different mechanism (NO/vasodilation, Krebs cycle). Compatible pre-workout pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/beta-alanine" className="text-[#0891b2] hover:underline">Beta-alanine</Link>{" "}
+              <Link href="/supplements/beta-alanine" className="text-[#3A759F] hover:underline">Beta-alanine</Link>{" "}
               — different mechanism (muscle carnosine pH buffering). No overlap.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Caffeine — different mechanism (CNS arousal). Common intra-workout pairing for endurance.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/electrolyte-powders" className="text-[#0891b2] hover:underline">Electrolyte powders</Link>{" "}
+              <Link href="/supplements/electrolyte-powders" className="text-[#3A759F] hover:underline">Electrolyte powders</Link>{" "}
               — common intra-workout pairing, particularly for endurance contexts.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">Glutamine</Link>{" "}
+              <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">Glutamine</Link>{" "}
               — modest gut/immune support in heavy-training contexts. Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -395,37 +395,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wolfe RR. Branched-chain amino acids and muscle protein synthesis in humans: myth or reality? J Int Soc Sports Nutr. 2017;14:30.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/28852372/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28852372/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/28852372/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Plotkin DL, Delcastillo K, Van Every DW, Tipton KD, Aragon AA, Schoenfeld BJ. Isolated leucine and branched-chain amino acid supplementation for enhancing muscular strength and hypertrophy: a narrative review. Int J Sport Nutr Exerc Metab. 2021;31(3):292-301.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/34375952/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/34375952/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/34375952/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Jackman SR, Witard OC, Philp A, Wallis GA, Baar K, Tipton KD. Branched-chain amino acid ingestion stimulates muscle myofibrillar protein synthesis following resistance exercise in humans. Front Physiol. 2017;8:390.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/28638350/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28638350/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/28638350/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Blomstrand E, Hassmen P, Ek S, Ekblom B, Newsholme EA. Influence of ingesting a solution of branched-chain amino acids on perceived exertion during exercise. Acta Physiol Scand. 1997;159(1):41-49.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9112052/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9112052/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9112052/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khemtong C, Kuo CH, Chen CY, Jaime SJ, Condello G. Does branched-chain amino acids (BCAAs) supplementation attenuate muscle damage markers and soreness after resistance exercise in trained males? A meta-analysis of randomized controlled trials. Nutrients. 2021;13(6):1880.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/34577063/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/34577063/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/34577063/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Churchward-Venne TA, Breen L, Phillips SM. Alterations in human muscle protein metabolism with aging: protein and exercise as countermeasures to offset sarcopenia. Biofactors. 2014;40(2):199-205.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24105883/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24105883/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24105883/
           </a>
         </li>
@@ -441,12 +441,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -539,7 +539,7 @@ export default function BCAAsPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">BCAAs</h1>
@@ -585,7 +585,7 @@ export default function BCAAsPage() {
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 5–10 g BCAAs per serving (delivering 2.5–5 g leucine, above the 2–3 g maximal-mTOR-triggering threshold). 2:1:1 leucine:isoleucine:valine ratio is standard. Acute use pre/intra/post training in legitimate niches — not chronic non-exercise dosing.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> For users with adequate dietary protein, isolated BCAAs are redundant —{" "}<Link href="/supplements/protein-powder" className="text-[#0891b2] hover:underline">whey protein</Link>{" "}delivers BCAAs at lower cost with better outcomes. Plasma BCAAs may correlate with insulin resistance (marker vs cause debate unresolved). Levodopa interaction (Parkinson&apos;s) — separate timing. Maple syrup urine disease is absolute contraindication. If choosing isolated amino acid supplementation, EAAs are mechanistically superior to BCAAs alone.
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> For users with adequate dietary protein, isolated BCAAs are redundant —{" "}<Link href="/supplements/protein-powder" className="text-[#3A759F] hover:underline">whey protein</Link>{" "}delivers BCAAs at lower cost with better outcomes. Plasma BCAAs may correlate with insulin resistance (marker vs cause debate unresolved). Levodopa interaction (Parkinson&apos;s) — separate timing. Maple syrup urine disease is absolute contraindication. If choosing isolated amino acid supplementation, EAAs are mechanistically superior to BCAAs alone.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=bcaa+powder+2%3A1%3A1+vegan&tag=profpeptide-20" label="BCAAs" />
         </div>
@@ -627,12 +627,12 @@ export default function BCAAsPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/protein-powder" className="text-sm font-medium text-[#0891b2] hover:underline">Protein Powder</Link>
-          <Link href="/supplements/creatine" className="text-sm font-medium text-[#0891b2] hover:underline">Creatine</Link>
-          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#0891b2] hover:underline">Glutamine</Link>
-          <Link href="/supplements/beta-alanine" className="text-sm font-medium text-[#0891b2] hover:underline">Beta-Alanine</Link>
-          <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#0891b2] hover:underline">L-Citrulline Malate</Link>
-          <Link href="/supplements/electrolyte-powders" className="text-sm font-medium text-[#0891b2] hover:underline">Electrolyte Powders</Link>
+          <Link href="/supplements/protein-powder" className="text-sm font-medium text-[#3A759F] hover:underline">Protein Powder</Link>
+          <Link href="/supplements/creatine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine</Link>
+          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">Glutamine</Link>
+          <Link href="/supplements/beta-alanine" className="text-sm font-medium text-[#3A759F] hover:underline">Beta-Alanine</Link>
+          <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline Malate</Link>
+          <Link href="/supplements/electrolyte-powders" className="text-sm font-medium text-[#3A759F] hover:underline">Electrolyte Powders</Link>
         </div>
       </div>
 

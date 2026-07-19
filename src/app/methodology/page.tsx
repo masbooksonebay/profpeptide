@@ -68,12 +68,12 @@ export default function MethodologyPage() {
             <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">How we evaluate vendors</h2>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Vendors earn a place in our{" "}
-              <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">vetted catalog</Link>{" "}
+              <Link href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">vetted catalog</Link>{" "}
               against the same verifiable criteria: third-party laboratory testing with published Certificates of Analysis, documented purity standards, transparent shipping, responsive customer service, and a positive reputation in the research community. We describe each vendor by its own verified differentiator rather than borrowing another supplier&rsquo;s credentials.
             </p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mt-3">
               Prof. Peptide may earn affiliate commissions when you use our discount codes or buy through our links. Those affiliate relationships do not determine vendor inclusion, ranking, or verification &mdash; see our full{" "}
-              <Link href="/disclaimer" className="text-[#0891b2] hover:underline">disclaimer</Link>.
+              <Link href="/disclaimer" className="text-[#3A759F] hover:underline">disclaimer</Link>.
             </p>
           </section>
 
@@ -88,7 +88,7 @@ export default function MethodologyPage() {
             <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">How we keep content current</h2>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               We review and update pages as new evidence emerges &mdash; new studies, FDA label changes, and regulatory shifts &mdash; rather than on a fixed calendar. Developments we consider material are tracked on our{" "}
-              <Link href="/news" className="text-[#0891b2] hover:underline">news beat</Link>, and the relevant profiles are revisited and re-dated when the underlying evidence changes.
+              <Link href="/news" className="text-[#3A759F] hover:underline">news beat</Link>, and the relevant profiles are revisited and re-dated when the underlying evidence changes.
             </p>
           </section>
         </div>

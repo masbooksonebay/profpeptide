@@ -39,7 +39,7 @@ export default function FDAPcacMeetingAgendaJuly2026Page() {
       }} />
 
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to News
         </Link>
 
@@ -64,36 +64,36 @@ export default function FDAPcacMeetingAgendaJuly2026Page() {
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Day 1 &mdash; July 23, 2026</h2>
           <p>
             <strong>BPC-157</strong> &mdash; being considered for ulcerative colitis. BPC-157 is a 15-amino-acid peptide derived from a protective protein in human gastric juice. Research has examined its role in tissue repair, particularly in the gut and connective tissue. See our{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157 profile</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157 profile</Link>{" "}
             for the full background.
           </p>
           <p>
             <strong>KPV</strong> &mdash; being considered for wound healing and inflammatory conditions. KPV is a tripeptide derived from alpha-melanocyte-stimulating hormone (&alpha;-MSH) with documented anti-inflammatory properties. See our{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV profile</Link>.
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV profile</Link>.
           </p>
           <p>
             <strong>TB-500</strong> &mdash; being considered for wound healing. TB-500 is the synthetic version of thymosin beta-4, a peptide involved in cell migration and tissue regeneration. See our{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500 profile</Link>{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500 profile</Link>{" "}
             and our{" "}
-            <Link href="/compare/bpc-157-vs-tb-500" className="text-[#0891b2] hover:underline">BPC-157 vs TB-500 comparison</Link>.
+            <Link href="/compare/bpc-157-vs-tb-500" className="text-[#3A759F] hover:underline">BPC-157 vs TB-500 comparison</Link>.
           </p>
           <p>
             <strong>MOTS-c</strong> &mdash; being considered for obesity and osteoporosis. MOTS-c is a mitochondrial-derived peptide that regulates metabolic homeostasis and insulin sensitivity in research models. See our{" "}
-            <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c profile</Link>.
+            <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c profile</Link>.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Day 2 &mdash; July 24, 2026</h2>
           <p>
             <strong>Emideltide (DSIP)</strong> &mdash; also referred to as delta sleep-inducing peptide. DSIP has been studied for sleep regulation and stress response. See our{" "}
-            <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP profile</Link>.
+            <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP profile</Link>.
           </p>
           <p>
             <strong>Semax</strong> &mdash; a synthetic heptapeptide derived from a fragment of ACTH (adrenocorticotropic hormone), studied extensively in Russia for cognitive function, neuroprotection, and stroke recovery. See our{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax profile</Link>.
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax profile</Link>.
           </p>
           <p>
             <strong>Epitalon</strong> &mdash; also known as epithalon, a synthetic tetrapeptide derived from research on the pineal gland peptide bioregulator program. Epitalon has been studied for sleep architecture and aging-related outcomes. See our{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon profile</Link>.
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon profile</Link>.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What About the Other Restricted Peptides?</h2>
@@ -155,9 +155,9 @@ export default function FDAPcacMeetingAgendaJuly2026Page() {
           </p>
           <p>
             We&rsquo;ll continue tracking the regulatory developments leading up to the July meeting. For up-to-date information on which compounds are available through which channels, see our{" "}
-            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">vendor guide</Link>{" "}
+            <Link href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">vendor guide</Link>{" "}
             and{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">discount codes</Link>.
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">discount codes</Link>.
           </p>
         </div>
 

@@ -31,9 +31,9 @@ const faqs = [
     a: (
       <>
         Modestly, mostly through testosterone-mediated mechanisms in users who respond. A 2021 RCT (Henkel et al., 12 weeks at 400 mg/day) documented significant increases in muscle strength and fat-free mass in active older adults. In younger eugonadal trainees, effect size is smaller — the cortisol-reduction mechanism may still provide modest training-stress recovery benefit. Not a primary performance-enhancement supplement on par with creatine. For users who respond with testosterone elevation (low-T baseline), training adaptations may improve modestly. For pre-workout pump or ergogenic effects specifically, look at{" "}
-        <Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate</Link>{" "}
+        <Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>{" "}
         or{" "}
-        <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">creatine</Link>.
+        <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">creatine</Link>.
       </>
     ),
   },
@@ -46,7 +46,7 @@ const faqs = [
     a: (
       <>
         Generally not recommended — Tongkat Ali has been studied primarily in men. Mechanisms (SHBG reduction, aromatase inhibition, modest testosterone elevation) are relevant for some women in specific contexts (postmenopausal libido, certain androgen-deficiency states) but most trials have not included women, so dosing and safety in female populations is less well-characterized. Postmenopausal women interested in libido support typically have better-evidenced options:{" "}
-        <Link href="/supplements/maca-root" className="text-[#0891b2] hover:underline">maca root</Link>{" "}
+        <Link href="/supplements/maca-root" className="text-[#3A759F] hover:underline">maca root</Link>{" "}
         (Brooks 2008 specifically in postmenopausal women) is the better choice. Women with PCOS or other androgen-excess conditions should specifically avoid Tongkat Ali due to the testosterone-elevating mechanism. Coordinate with healthcare provider.
       </>
     ),
@@ -60,11 +60,11 @@ const faqs = [
     a: (
       <>
         Yes — and the three are mechanistically complementary rather than redundant.{" "}
-        <Link href="/supplements/tongkat-ali" className="text-[#0891b2] hover:underline">Tongkat Ali</Link>{" "}
+        <Link href="/supplements/tongkat-ali" className="text-[#3A759F] hover:underline">Tongkat Ali</Link>{" "}
         handles hormonal testosterone support (SHBG, aromatase, cortisol).{" "}
-        <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link>{" "}
+        <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
         handles broader stress/HPA-axis adaptation and has its own testosterone evidence base in stressed/overtrained men (Wankhede 2015, Lopresti 2019).{" "}
-        <Link href="/supplements/maca-root" className="text-[#0891b2] hover:underline">Maca</Link>{" "}
+        <Link href="/supplements/maca-root" className="text-[#3A759F] hover:underline">Maca</Link>{" "}
         handles non-hormonal libido and dopaminergic motivation. For users with multiple complaints (low libido + stress + suboptimal testosterone), all three can be stacked. Start with one for 4–8 weeks to assess response, then add others if needed. Coordinate with healthcare provider — these affect endocrine and HPA axis systems and benefit from monitored introduction.
       </>
     ),
@@ -234,9 +234,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Tongkat Ali pairs with peptides addressing complementary mechanisms in male hormonal/sexual health. GH-secretagogue peptides like{" "}
-            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">sermorelin</Link>{" "}
+            <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">sermorelin</Link>{" "}
             and{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             address GH/IGF-1 axis decline that often co-occurs with testosterone decline in aging men — mechanistically distinct from Tongkat Ali&apos;s HPG-axis effects. For sexual function specifically, PT-141 (bremelanotide) addresses central melanocortin signaling while Tongkat Ali addresses peripheral hormonal milieu. No formal stack RCT evidence; mechanism-based combination. For users on testosterone replacement therapy, Tongkat Ali is generally avoided (redundant or potentially excessive testosterone signaling).
           </p>
         </div>
@@ -244,31 +244,31 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link>{" "}
+              <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
               — overlapping HPA-axis adaptogen mechanism with its own testosterone evidence base in stressed men (Wankhede 2015, Lopresti 2019). Mechanistically additive for stress-driven low-T contexts.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/maca-root" className="text-[#0891b2] hover:underline">Maca root</Link>{" "}
+              <Link href="/supplements/maca-root" className="text-[#3A759F] hover:underline">Maca root</Link>{" "}
               — non-hormonal libido mechanism complements Tongkat Ali&apos;s hormonal mechanism. Comprehensive sexual-health stacking for users with both libido and testosterone-low complaints.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
               — foundational mineral for testosterone synthesis; deficiency causes hypogonadism. Compatible co-supplementation.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">Vitamin D3</Link>{" "}
+              <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">Vitamin D3</Link>{" "}
               — testosterone-supporting in deficient men; broad foundational supplement that complements Tongkat Ali.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}
+              <Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}
               — vascular/erectile mechanism. Tongkat Ali addresses hormonal context; citrulline addresses physical erectile vasodilation. Comprehensive sexual-health stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fenugreek" className="text-[#0891b2] hover:underline">Fenugreek</Link>{" "}
+              <Link href="/supplements/fenugreek" className="text-[#3A759F] hover:underline">Fenugreek</Link>{" "}
               — alternative herbal testosterone support; some mechanism overlap. Generally pick one rather than stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium</Link>{" "}
               — testosterone-supporting cofactor; foundational mineral supporting sleep and stress recovery.
             </li>
           </ol>
@@ -416,31 +416,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tambi MI, Imran MK, Henkel RR. Standardised water-soluble extract of Eurycoma longifolia, Tongkat Ali, as testosterone booster for managing men with late-onset hypogonadism? Andrologia. 2012;44 Suppl 1:226-230.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21671978/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21671978/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21671978/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Talbott SM, Talbott JA, George A, Pugh M. Effect of Tongkat Ali on stress hormones and psychological mood state in moderately stressed subjects. J Int Soc Sports Nutr. 2013;10(1):28.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23705671/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23705671/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23705671/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Henkel RR, Wang R, Bassett SH, et al. Tongkat Ali as a potential herbal supplement for physically active male and female seniors—a pilot study. Phytother Res. 2014;28(4):544-550.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24435521/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24435521/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24435521/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tambi MI, Imran MK. Eurycoma longifolia Jack in managing idiopathic male infertility. Asian J Androl. 2010;12(3):376-380.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20473320/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20473320/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20473320/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hamzah S, Yusof A. The ergogenic effects of Eurycoma longifolia Jack: a pilot study. Br J Sports Med. 2003;37:464-470.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/12930088/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/12930088/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/12930088/
           </a>
         </li>
@@ -456,12 +456,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -554,7 +554,7 @@ export default function TongkatAliPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Tongkat Ali</h1>
@@ -580,7 +580,7 @@ export default function TongkatAliPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Tongkat Ali (Eurycoma longifolia) is a flowering plant native to the rainforests of Malaysia, Indonesia, Thailand, and Vietnam — used in traditional Southeast Asian medicine for centuries as a male tonic for libido, fertility, and vitality. Among modern herbal testosterone-supporting supplements, Tongkat Ali stands out for having a more substantial human RCT evidence base than most — but the honest framing requires attention to context. The testosterone-elevating effect is consistent and clinically meaningful in men with late-onset hypogonadism or below-normal baseline testosterone: Tambi 2012 documented serum testosterone rising from 5.66 ± 1.51 nmol/L to 8.40 ± 1.74 nmol/L over 1 month at 200 mg/day Physta-standardized extract — a substantial elevation toward normal range. In young eugonadal men with normal baseline testosterone, the effect is smaller and less consistent — some trials show modest free-testosterone improvement via SHBG reduction; others show no significant change in total testosterone. This context-dependent response pattern mirrors{" "}
-            <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">ashwagandha&apos;s testosterone evidence</Link>{" "}
+            <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">ashwagandha&apos;s testosterone evidence</Link>{" "}
             — real in stressed/overtrained/aging men; smaller in young healthy populations. The cortisol-reduction mechanism appears more consistently across populations (Talbott 2013 documented ~16% cortisol reduction in moderately stressed adults). Mechanism is multi-pronged: SHBG reduction (increasing free-testosterone fraction), aromatase inhibition (preserving testosterone-to-estradiol ratio), LH stimulation (signaling endogenous testosterone production through the HPG axis), and cortisol reduction (improving testosterone-cortisol ratio). The active compounds are quassinoids — particularly eurycomanone, the basis of standardization. Physta brand (Biotropics Malaysia) is the most-studied standardized extract in modern RCTs; generic non-standardized root powder has unreliable active content. Henkel 2021 documented significant muscle strength and fat-free mass increases in active older adults at 400 mg/day for 12 weeks. Mercury contamination has been documented in non-third-party-tested Southeast Asian-sourced products — quality matters more here than for many botanicals.
           </p>
           <div>
@@ -644,12 +644,12 @@ export default function TongkatAliPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#0891b2] hover:underline">Ashwagandha</Link>
-          <Link href="/supplements/maca-root" className="text-sm font-medium text-[#0891b2] hover:underline">Maca Root</Link>
-          <Link href="/supplements/l-citrulline" className="text-sm font-medium text-[#0891b2] hover:underline">L-Citrulline</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin D3</Link>
-          <Link href="/supplements/fenugreek" className="text-sm font-medium text-[#0891b2] hover:underline">Fenugreek</Link>
+          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
+          <Link href="/supplements/maca-root" className="text-sm font-medium text-[#3A759F] hover:underline">Maca Root</Link>
+          <Link href="/supplements/l-citrulline" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin D3</Link>
+          <Link href="/supplements/fenugreek" className="text-sm font-medium text-[#3A759F] hover:underline">Fenugreek</Link>
         </div>
       </div>
 

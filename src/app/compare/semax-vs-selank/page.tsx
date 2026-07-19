@@ -41,11 +41,11 @@ export default function SemaxVsSelankPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Semax vs Selank — Cognitive Peptide Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Semax vs Selank &mdash; Cognitive Peptide Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Semax and Selank are both synthetic nootropic peptides developed in Russia, both approved for clinical use there, and both studied for cognitive and anxiolytic effects. They work through different mechanisms and have distinct primary strengths &mdash; Semax is the cognitive enhancer and neuroprotector, Selank is the anxiolytic with cognitive benefits.</p>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why Russian peptide research diverged from Western</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Both Semax and Selank were developed in Soviet/Russian neuroscience institutes starting in the 1980s. Russian peptide research took a different path from Western pharmacology, focusing heavily on small synthetic peptides modeled on natural neuropeptides &mdash; a class largely overlooked in Western drug development.
@@ -65,8 +65,8 @@ export default function SemaxVsSelankPage() {
         <table className="w-full text-sm border-collapse">
           <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
             <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Semax</th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Selank</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Semax</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Selank</th>
           </tr></thead>
           <tbody>{rows.map(([label, a, b], i) => (
             <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
@@ -112,7 +112,7 @@ export default function SemaxVsSelankPage() {
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-lg text-gray-600 dark:text-slate-300">Choose <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link> if the primary research interest is cognitive enhancement, neuroprotection, or stroke-related outcomes. Choose <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link> if the primary interest is anxiety reduction without sedation or dependence risk. They complement each other well &mdash; Semax for cognition, Selank for stress &mdash; and are sometimes studied together.</p>
+        <p className="text-lg text-gray-600 dark:text-slate-300">Choose <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link> if the primary research interest is cognitive enhancement, neuroprotection, or stroke-related outcomes. Choose <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link> if the primary interest is anxiety reduction without sedation or dependence risk. They complement each other well &mdash; Semax for cognition, Selank for stress &mdash; and are sometimes studied together.</p>
       </div>
 
       <div className="mb-8">

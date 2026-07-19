@@ -35,7 +35,7 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural for users targeting comprehensive stress resilience and cognitive performance.{" "}
-        <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+        <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
         (an ACTH(4-10) analog) modulates BDNF and neurotrophic signaling — directly addressing stress-induced cognitive impairment via the neurotrophic pathway. Rhodiola operates at different layers: HPA axis modulation (normalizing cortisol during chronic stress), monoamine preservation via MAO inhibition (maintaining dopamine/norepinephrine for cognitive function under stress), and opioid receptor activation (stress-protective mood effects). The peptide does direct BDNF + neurotrophic signaling; Rhodiola does HPA-axis + monoamine + opioid-receptor stress modulation. Mechanistically complementary, no known negative interactions. Particularly useful for high-cognitive-demand-under-stress contexts (exams, demanding work blocks, competition).
       </>
     ),
@@ -214,9 +214,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Rhodiola pairs naturally with the cognitive peptide cluster — particularly via the stress-response and neurotrophic axes.{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
             (an ACTH(4-10) analog) modulates BDNF and neurotrophic signaling — directly addressing stress-induced cognitive impairment via the neurotrophic pathway. Rhodiola operates at complementary layers: HPA axis modulation (normalizing cortisol during chronic stress), MAO inhibition (preserving dopamine and norepinephrine for cognitive function under stress), opioid receptor activation (stress-protective mood effects), and modest serotonin reuptake inhibition. The peptide does direct BDNF and neurotrophic signaling; Rhodiola does HPA-axis + monoamine + opioid-receptor stress modulation. Mechanistically complementary, no known negative interactions. Particularly useful for high-cognitive-demand-under-stress contexts where both neurotrophic support (Semax) and stress-response normalization (Rhodiola) matter.{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             (tuftsin analog, GABAergic anxiolytic) can be added for users wanting an additional anxiolytic layer.
           </p>
         </div>
@@ -224,27 +224,27 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link>{" "}
-              — calming adaptogen with cortisol-blunting effects. Different timeframe than Rhodiola (calming vs mildly stimulating). Common Rhodiola-AM + Ashwagandha-PM stack for stress + sleep balance. See the full <Link href="/compare/ashwagandha-vs-rhodiola-rosea" className="text-[#0891b2] hover:underline">Ashwagandha vs Rhodiola Rosea comparison</Link>.
+              <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
+              — calming adaptogen with cortisol-blunting effects. Different timeframe than Rhodiola (calming vs mildly stimulating). Common Rhodiola-AM + Ashwagandha-PM stack for stress + sleep balance. See the full <Link href="/compare/ashwagandha-vs-rhodiola-rosea" className="text-[#3A759F] hover:underline">Ashwagandha vs Rhodiola Rosea comparison</Link>.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-theanine</Link>{" "}
+              <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-theanine</Link>{" "}
               — alpha-wave calm focus, GABAergic modulation. Pairs cleanly with Rhodiola&apos;s stimulating effect for smoother subjective experience.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/bacopa-monnieri" className="text-[#0891b2] hover:underline">Bacopa monnieri</Link>{" "}
+              <Link href="/supplements/bacopa-monnieri" className="text-[#3A759F] hover:underline">Bacopa monnieri</Link>{" "}
               — chronic synaptic remodeling and memory consolidation. Different timescale; mechanistically compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>{" "}
+              <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
               — acetylcholine substrate for cognitive performance. Common nootropic stack co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/lions-mane" className="text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>{" "}
+              <Link href="/supplements/lions-mane" className="text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>{" "}
               — NGF/BDNF support via different mechanism. Long-term neurotrophic adjunct to Rhodiola&apos;s acute stress-response modulation.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">Caffeine + L-theanine</Link>{" "}
+              <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">Caffeine + L-theanine</Link>{" "}
               — compatible acute cognitive stack. Rhodiola adds chronic adaptogen layer.
             </li>
           </ol>
@@ -385,37 +385,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Spasov AA, Wikman GK, Mandrikov VB, Mironova IA, Neumoin VV. A double-blind, placebo-controlled pilot study of the stimulating and adaptogenic effect of Rhodiola rosea SHR-5 extract on the fatigue of students caused by stress during an examination period with a repeated low-dose regimen. Phytomedicine. 2000;7(2):85-89.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/10839209/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/10839209/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/10839209/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Olsson EM, von Schéele B, Panossian AG. A randomised, double-blind, placebo-controlled, parallel-group study of the standardised extract SHR-5 of the roots of Rhodiola rosea in the treatment of subjects with stress-related fatigue. Planta Med. 2009;75(2):105-112.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/19016404/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/19016404/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/19016404/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mao JJ, Xie SX, Zee J, et al. Rhodiola rosea versus sertraline for major depressive disorder: a randomized placebo-controlled trial. Phytomedicine. 2015;22(3):394-399.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25837277/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25837277/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25837277/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hung SK, Perry R, Ernst E. The effectiveness and efficacy of Rhodiola rosea L.: a systematic review of randomized clinical trials. Phytomedicine. 2011;18(4):235-244.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21036578/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21036578/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21036578/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Anghelescu IG, Edwards D, Seifritz E, Kasper S. Stress management and the role of Rhodiola rosea: a review. Int J Psychiatry Clin Pract. 2018;22(4):242-252.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29325481/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29325481/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29325481/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Darbinyan V, Aslanyan G, Amroyan E, Gabrielyan E, Malmström C, Panossian A. Clinical trial of Rhodiola rosea L. extract SHR-5 in the treatment of mild to moderate depression. Nord J Psychiatry. 2007;61(5):343-348.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17990195/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17990195/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17990195/
           </a>
         </li>
@@ -431,12 +431,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -561,7 +561,7 @@ export default function RhodiolaRoseaPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Rhodiola Rosea</h1>
@@ -587,7 +587,7 @@ export default function RhodiolaRoseaPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Rhodiola rosea is a flowering plant from cold mountainous regions of Europe and Asia — particularly Siberia and Scandinavia — used in traditional Russian and Nordic medicine for centuries to increase endurance, reduce fatigue, and enhance resilience to physical and mental stress. It belongs to the adaptogen class — herbs that help the body adapt to stressors by normalizing physiological processes without causing excessive stimulation or sedation. The primary bioactive compounds are rosavins and salidroside, working through multiple mechanism layers: HPA axis modulation (normalizing cortisol during chronic stress), MAO inhibition (preserving dopamine, norepinephrine, serotonin under stress), opioid receptor activation (stress-protective mood effects), serotonin reuptake inhibition, and antioxidant effects. The evidence base is one of the cleaner in the adaptogen space — Spasov 2000 (SHR-5 in stressed medical students), Olsson 2009 (burnout in chronically stressed adults), Hung 2011 systematic review of 11 RCTs, and Mao 2015 head-to-head against sertraline showing antidepressant-comparable effects with better safety profile. The supplement supports both acute (pre-stressor) and chronic (daily burnout) protocols — unusual flexibility. Rhodiola pairs naturally with{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">cognitive peptide Semax</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">cognitive peptide Semax</Link>{" "}
             via the neurotrophic-stress axis. Distinct from Ashwagandha (mildly stimulating vs mildly calming) — the two adaptogens can be paired AM + PM for balanced stress management.
           </p>
           <div>
@@ -650,11 +650,11 @@ export default function RhodiolaRoseaPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#0891b2] hover:underline">Ashwagandha</Link>
-          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Theanine</Link>
-          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#0891b2] hover:underline">Bacopa Monnieri</Link>
-          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>
-          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#0891b2] hover:underline">Alpha-GPC</Link>
+          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
+          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>
+          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#3A759F] hover:underline">Bacopa Monnieri</Link>
+          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>
+          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha-GPC</Link>
         </div>
       </div>
 

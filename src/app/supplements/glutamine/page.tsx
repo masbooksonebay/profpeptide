@@ -47,7 +47,7 @@ const faqs = [
     a: (
       <>
         Yes — these are mechanistically complementary rather than redundant. Protein powder (whey, casein, plant proteins) provides the full amino acid spectrum including some glutamine.{" "}
-        <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine</Link>{" "}
+        <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine</Link>{" "}
         provides phosphocreatine substrate for high-intensity work — different mechanism. Glutamine adds gut barrier and immune cell substrate support — particularly relevant for high-volume training or illness-prone athletes. This is a reasonable foundational stack for serious athletes. For healthy athletes with adequate protein intake (1.6+ g/kg), the marginal contribution of glutamine to muscle protein synthesis is small — most of glutamine&apos;s value in this stack is in gut/immune support rather than direct hypertrophy.
       </>
     ),
@@ -220,11 +220,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Glutamine pairs naturally with the gut-healing peptide cluster — particularly{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             for gut healing applications. BPC-157 is a peptide derived from gastric protective protein that has documented healing effects on gut tissue, gastric ulcers, and intestinal injury; glutamine provides enterocyte fuel for the cells doing the healing. Mechanism-complementary — BPC-157 drives the healing signal; glutamine supplies the energy substrate.{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             (anti-inflammatory tripeptide) reduces gut inflammation through melanocortin pathway; can stack with glutamine for inflammatory bowel contexts.{" "}
-            <Link href="/peptides/larazotide" className="text-[#0891b2] hover:underline">Larazotide</Link>{" "}
+            <Link href="/peptides/larazotide" className="text-[#3A759F] hover:underline">Larazotide</Link>{" "}
             (zonulin antagonist for tight junction regulation in celiac disease) is being studied alongside glutamine for gut barrier applications. None of these combinations have formal RCT validation but the mechanistic rationale is straightforward.
           </p>
         </div>
@@ -232,29 +232,29 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen peptides</Link>{" "}
+              <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
               — connective tissue substrate including for the gut lining&apos;s structural matrix. Complementary gut-health pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">Zinc carnosine</Link>{" "}
+              <Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">Zinc carnosine</Link>{" "}
               — specifically for upper-GI mucosal healing (Helicobacter pylori, gastric ulcers, NSAID gastropathy). Complementary mechanism — zinc carnosine for upper GI; glutamine for whole gut.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/probiotics" className="text-[#0891b2] hover:underline">Probiotics</Link>{" "}
+              <Link href="/supplements/probiotics" className="text-[#3A759F] hover:underline">Probiotics</Link>{" "}
               — gut microbiome support. Different mechanism (microbial composition vs enterocyte fuel) but complementary for gut barrier protocols.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">Vitamin D3</Link>{" "}
+              <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">Vitamin D3</Link>{" "}
               — immune function foundational supplement. Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine</Link>{" "}
+              <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine</Link>{" "}
               — different mechanism, no overlap, fine to stack for athletic populations.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">Vitamin C</Link>{" "}
+              <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">Vitamin C</Link>{" "}
               and{" "}
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">zinc</Link>{" "}
               — surgical immunonutrition co-supplements. Standard clinical formulas combine these with glutamine.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -396,31 +396,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cruzat V, Macedo Rogero M, Noel Keane K, Curi R, Newsholme P. Glutamine: metabolism and immune function, supplementation and clinical translation. Nutrients. 2018;10(11):1564.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30360490/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30360490/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30360490/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Newsholme P. Why is L-glutamine metabolism important to cells of the immune system in health, post-injury, surgery or infection? J Nutr. 2001;131(9 Suppl):2515S-2522S.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11533319/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11533319/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11533319/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wang B, Wu G, Zhou Z, Dai Z, et al. Glutamine and intestinal barrier function. Amino Acids. 2015;47(10):2143-2154.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26072126/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26072126/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26072126/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Heyland D, Muscedere J, Wischmeyer PE, et al. A randomized trial of glutamine and antioxidants in critically ill patients. N Engl J Med. 2013;368(16):1489-1497.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23594003/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23594003/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23594003/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Candow DG, Chilibeck PD, Burke DG, Davison KS, Smith-Palmer T. Effect of glutamine supplementation combined with resistance training in young adults. Eur J Appl Physiol. 2001;86(2):142-149.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11822473/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11822473/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11822473/
           </a>
         </li>
@@ -436,12 +436,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -534,7 +534,7 @@ export default function GlutaminePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Glutamine</h1>
@@ -560,7 +560,7 @@ export default function GlutaminePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Glutamine is the most abundant amino acid in the human body and the primary fuel source for two cell populations that matter disproportionately for health and recovery: enterocytes (the cells lining the intestinal wall) and rapidly dividing immune cells (lymphocytes, macrophages, neutrophils). Under normal conditions, the body synthesizes adequate glutamine to meet these demands — making it &quot;non-essential.&quot; During catabolic stress (surgery, burns, sepsis, major injury, prolonged intense exercise), glutamine demand exceeds endogenous production capacity and plasma glutamine drops — making it conditionally essential. This biology shapes glutamine&apos;s practical evidence base, which is best understood as two distinct tiers rather than a single unified picture. The strong tier covers gut barrier integrity (Wang 2015 review documents consistent reductions in intestinal permeability markers with 10–20 g/day in athletes during heavy training and IBD patients) and critical-illness immunonutrition (older RCTs in surgical and ICU contexts — though the 2013 REDOXS trial complicated routine high-dose ICU glutamine by documenting increased mortality in shock/MOF patients, shifting current practice toward tailored rather than routine use). The modest tier covers healthy-athlete muscle protein synthesis, body composition, and hypertrophy outcomes — multiple RCTs (Candow 2001 and others) in resistance-trained men with adequate dietary protein show limited direct effects of supplemental glutamine on these endpoints. The practical implication for healthy users: glutamine is one of the better-evidenced supplements for gut barrier targeting, immune support during overtraining or illness, and post-surgical recovery contexts — but it is not a primary muscle-building or strength-building supplement in well-fed athletes. The Cruzat 2018 and Newsholme 2001 reviews are the foundational mechanism references. Glutamine pairs naturally with{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             for gut healing applications — BPC-157 drives the healing signal; glutamine supplies enterocyte fuel.
           </p>
           <div>
@@ -624,12 +624,12 @@ export default function GlutaminePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#0891b2] hover:underline">Collagen Peptides</Link>
-          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc Carnosine</Link>
-          <Link href="/supplements/probiotics" className="text-sm font-medium text-[#0891b2] hover:underline">Probiotics</Link>
-          <Link href="/supplements/hyaluronic-acid" className="text-sm font-medium text-[#0891b2] hover:underline">Hyaluronic Acid</Link>
-          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin C</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
+          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>
+          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc Carnosine</Link>
+          <Link href="/supplements/probiotics" className="text-sm font-medium text-[#3A759F] hover:underline">Probiotics</Link>
+          <Link href="/supplements/hyaluronic-acid" className="text-sm font-medium text-[#3A759F] hover:underline">Hyaluronic Acid</Link>
+          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
         </div>
       </div>
 

@@ -39,7 +39,7 @@ export default function Endo2026Glp1RecapJune2026Page() {
       }} />
 
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to News
         </Link>
 
@@ -50,14 +50,14 @@ export default function Endo2026Glp1RecapJune2026Page() {
 
         <div className="space-y-6 text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           <p>
-            ENDO 2026, the Endocrine Society&rsquo;s annual meeting, ran June 13&ndash;16, 2026, in Chicago, Illinois (<a href="https://endo2026.endocrine.org/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">ENDO 2026 program</a>). Several of the most discussed presentations centered on GLP-1 receptor agonists and next-generation metabolic peptides &mdash; spanning behavior, safety, combination efficacy, real-world adherence, and early-stage oral formulations. A note before the readouts: most of the items below are <strong>conference presentations, posters, and abstracts</strong>, many of which are <strong>not yet peer-reviewed or published in full</strong>. We label each item&rsquo;s evidence stage and report numbers exactly as the primary source states them.
+            ENDO 2026, the Endocrine Society&rsquo;s annual meeting, ran June 13&ndash;16, 2026, in Chicago, Illinois (<a href="https://endo2026.endocrine.org/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">ENDO 2026 program</a>). Several of the most discussed presentations centered on GLP-1 receptor agonists and next-generation metabolic peptides &mdash; spanning behavior, safety, combination efficacy, real-world adherence, and early-stage oral formulations. A note before the readouts: most of the items below are <strong>conference presentations, posters, and abstracts</strong>, many of which are <strong>not yet peer-reviewed or published in full</strong>. We label each item&rsquo;s evidence stage and report numbers exactly as the primary source states them.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Physical Activity Fell After Starting a GLP-1 &mdash; the Muscle-Preservation Angle</h2>
           <p>
             A retrospective cohort study found that adults with obesity moved <em>less</em>, not more, after starting a GLP-1 medication such as{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link> or{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>. The team, led by Sajana Maharjan, M.D., of HSHS St. John&rsquo;s Hospital (Springfield, Illinois), used the NIH&rsquo;s All of Us Research Program, which links electronic health records with participants&rsquo; Fitbit data.
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link> or{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>. The team, led by Sajana Maharjan, M.D., of HSHS St. John&rsquo;s Hospital (Springfield, Illinois), used the NIH&rsquo;s All of Us Research Program, which links electronic health records with participants&rsquo; Fitbit data.
           </p>
           <p>
             Of 1,950 adults with obesity who started a GLP-1, 753 had enough wearable-device data to analyze (78.6% female; mean age 52.7 years). Over the pre-vs-post comparison:
@@ -71,7 +71,7 @@ export default function Endo2026Glp1RecapJune2026Page() {
           </p>
           <p className="text-xs text-gray-500 dark:text-slate-400">
             <strong>Evidence stage:</strong> Observational, retrospective pre-post cohort &mdash; shows an <em>association</em>, not causation, and cannot prove the medication caused the activity drop. Presented at ENDO 2026; not yet peer-reviewed. Source:{" "}
-            <a href="https://www.endocrine.org/news-and-advocacy/news-room/2026/maharjan-press-release-endo-2026" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">Endocrine Society press release</a>.
+            <a href="https://www.endocrine.org/news-and-advocacy/news-room/2026/maharjan-press-release-endo-2026" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">Endocrine Society press release</a>.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">GLP-1s and Male Fertility &mdash; No Long-Term Harm, Possible Benefit</h2>
@@ -92,22 +92,22 @@ export default function Endo2026Glp1RecapJune2026Page() {
           </p>
           <p className="text-xs text-gray-500 dark:text-slate-400">
             <strong>Evidence stage:</strong> Systematic review of existing RCTs &mdash; only five trials, small and with varying results; the authors note benefits are likely <em>indirect</em> (via weight loss) and that GLP-1s were not evaluated as treatments for male infertility. Larger, better-designed studies are still needed. Presented at ENDO 2026. Source:{" "}
-            <a href="https://www.endocrine.org/news-and-advocacy/news-room/2026/natesh-press-release-endo-2026" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">Endocrine Society press release</a>.
+            <a href="https://www.endocrine.org/news-and-advocacy/news-room/2026/natesh-press-release-endo-2026" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">Endocrine Society press release</a>.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">CagriSema Meta-Analysis (Abstract SUN-726)</h2>
           <p>
             A systematic review and meta-analysis pooled randomized trial data on{" "}
-            <Link href="/peptides/cagrisema" className="text-[#0891b2] hover:underline">CagriSema</Link> &mdash; the once-weekly combination of the amylin analog{" "}
-            <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">cagrilintide</Link> and semaglutide &mdash; for obesity, evaluating both efficacy and safety. The poster (abstract SUN-726, Burkhardt da Silveira et al., Northwestern Medicine McHenry Hospital / Rosalind Franklin University) reported that, across the pooled RCTs, CagriSema produced greater weight loss than semaglutide alone, with a tolerability profile consistent with the GLP-1/amylin class (predominantly gastrointestinal side effects).
+            <Link href="/peptides/cagrisema" className="text-[#3A759F] hover:underline">CagriSema</Link> &mdash; the once-weekly combination of the amylin analog{" "}
+            <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">cagrilintide</Link> and semaglutide &mdash; for obesity, evaluating both efficacy and safety. The poster (abstract SUN-726, Burkhardt da Silveira et al., Northwestern Medicine McHenry Hospital / Rosalind Franklin University) reported that, across the pooled RCTs, CagriSema produced greater weight loss than semaglutide alone, with a tolerability profile consistent with the GLP-1/amylin class (predominantly gastrointestinal side effects).
           </p>
           <p>
             For the underlying trial magnitudes, the pivotal REDEFINE program data were published in the{" "}
-            <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2502081" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">New England Journal of Medicine</a>. We are not quoting a single pooled effect size here because we could not confirm SUN-726&rsquo;s specific pooled numbers against a primary source.
+            <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2502081" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">New England Journal of Medicine</a>. We are not quoting a single pooled effect size here because we could not confirm SUN-726&rsquo;s specific pooled numbers against a primary source.
           </p>
           <p className="text-xs text-gray-500 dark:text-slate-400">
             <strong>Evidence stage:</strong> Meta-analysis of <em>existing</em> randomized controlled trials &mdash; a secondary, pooled analysis, not new trial data. Presented as a poster at ENDO 2026. Source:{" "}
-            <a href="https://endo2026.endocrine.org/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">ENDO 2026 abstract program (SUN-726)</a>.
+            <a href="https://endo2026.endocrine.org/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">ENDO 2026 abstract program (SUN-726)</a>.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Real-World Adherence &mdash; GLP-1 Use Is More Start-and-Stop Than Assumed</h2>
@@ -124,7 +124,7 @@ export default function Endo2026Glp1RecapJune2026Page() {
           </p>
           <p className="text-xs text-gray-500 dark:text-slate-400">
             <strong>Evidence stage:</strong> Retrospective insurance-claims cohort &mdash; an <em>association</em> in administrative data, not a controlled trial. Presented at ENDO 2026. Source:{" "}
-            <a href="https://www.endocrine.org/news-and-advocacy/news-room/2026/sontha-press-release-endo-2026" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">Endocrine Society press release</a>.
+            <a href="https://www.endocrine.org/news-and-advocacy/news-room/2026/sontha-press-release-endo-2026" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">Endocrine Society press release</a>.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Entera Bio &mdash; Preclinical Oral Peptides (EB618 and EB612)</h2>
@@ -140,9 +140,9 @@ export default function Endo2026Glp1RecapJune2026Page() {
           </p>
           <p className="text-xs text-gray-500 dark:text-slate-400">
             <strong>Evidence stage:</strong> <em>Preclinical</em> &mdash; the EB618 and EB612 data are from animal/non-human-primate models, the earliest research stage, with no human efficacy data for these programs yet. Sources: Entera Bio{" "}
-            <a href="https://www.globenewswire.com/news-release/2026/05/08/3291323/0/en/Entera-Announces-First-Quarter-2026-Financial-Results-and-Updates-Across-its-Oral-Peptide-Programs.html" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">Q1 2026 update</a>{" "}
+            <a href="https://www.globenewswire.com/news-release/2026/05/08/3291323/0/en/Entera-Announces-First-Quarter-2026-Financial-Results-and-Updates-Across-its-Oral-Peptide-Programs.html" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">Q1 2026 update</a>{" "}
             and{" "}
-            <a href="https://www.manilatimes.net/2026/06/16/tmt-newswire/globenewswire/entera-reports-robust-preclinical-data-for-eb612-oral-la-pth1-34-for-hypoparathyroidism-and-eb618-oral-glp-1glucagon-for-obesity-at-endo-2026/2366598" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">ENDO 2026 data release (GlobeNewswire)</a>.
+            <a href="https://www.manilatimes.net/2026/06/16/tmt-newswire/globenewswire/entera-reports-robust-preclinical-data-for-eb612-oral-la-pth1-34-for-hypoparathyroidism-and-eb618-oral-glp-1glucagon-for-obesity-at-endo-2026/2366598" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">ENDO 2026 data release (GlobeNewswire)</a>.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What It Means</h2>
@@ -151,16 +151,16 @@ export default function Endo2026Glp1RecapJune2026Page() {
           </p>
           <p>
             <strong>Combination and triple-agonist momentum continues.</strong> The CagriSema meta-analysis adds pooled context to the amylin-plus-GLP-1 approach, while the broader field keeps moving toward multi-receptor agonists &mdash; see our coverage of{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>&rsquo;s{" "}
-            <Link href="/news/retatrutide-triumph-1-phase-3-results" className="text-[#0891b2] hover:underline">TRIUMPH-1 Phase 3 results</Link>.
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>&rsquo;s{" "}
+            <Link href="/news/retatrutide-triumph-1-phase-3-results" className="text-[#3A759F] hover:underline">TRIUMPH-1 Phase 3 results</Link>.
           </p>
           <p>
             <strong>Oral formulations are the next frontier &mdash; at very different maturities.</strong> The oral GLP-1 readouts from{" "}
-            <Link href="/news/eco2026-oral-glp1-recap-may-2026" className="text-[#0891b2] hover:underline">ECO2026</Link> were clinical-stage; Entera&rsquo;s oral peptides are still preclinical. Both point the same direction, but they are not at the same evidence level.
+            <Link href="/news/eco2026-oral-glp1-recap-may-2026" className="text-[#3A759F] hover:underline">ECO2026</Link> were clinical-stage; Entera&rsquo;s oral peptides are still preclinical. Both point the same direction, but they are not at the same evidence level.
           </p>
           <p>
             <strong>Access and policy remain the backdrop.</strong> Much of the U.S. debate this year has been regulatory rather than clinical &mdash; for example, the{" "}
-            <Link href="/news/fda-503b-glp1-bulk-compounding-2026" className="text-[#0891b2] hover:underline">FDA&rsquo;s move on 503B bulk-compounding of GLP-1s</Link>.
+            <Link href="/news/fda-503b-glp1-bulk-compounding-2026" className="text-[#3A759F] hover:underline">FDA&rsquo;s move on 503B bulk-compounding of GLP-1s</Link>.
           </p>
           <p>
             As always with conference data: abstracts and posters are early disclosures. Treat the findings above as provisional until they appear as peer-reviewed, full-length publications.

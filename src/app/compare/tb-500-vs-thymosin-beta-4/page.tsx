@@ -38,17 +38,17 @@ export default function TB500vsThymosinBeta4Page() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"TB-500 vs Thymosin Beta-4: Fragment vs Full Protein"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">TB-500 vs Thymosin Beta-4 &mdash; Fragment vs Full Protein</h1>
-      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link> and Thymosin Beta-4 are searched as if they&apos;re two compounds to choose between &mdash; but they&apos;re not rivals. TB-500 is the synthetic active fragment of the naturally occurring Thymosin Beta-4 (Tβ4) protein. This page explains the real relationship, the genuine differences, and what it means in practice.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link> and Thymosin Beta-4 are searched as if they&apos;re two compounds to choose between &mdash; but they&apos;re not rivals. TB-500 is the synthetic active fragment of the naturally occurring Thymosin Beta-4 (Tβ4) protein. This page explains the real relationship, the genuine differences, and what it means in practice.</p>
 
-      <div className="bg-[#0891b2]/10 border border-[#0891b2]/20 rounded-xl p-5 mb-8">
+      <div className="bg-[#3A759F]/10 border border-[#3A759F]/20 rounded-xl p-5 mb-8">
         <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>Thymosin Beta-4 (Tβ4):</strong> the full, naturally occurring 43-amino-acid protein &mdash; the parent molecule.</p>
         <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>TB-500:</strong> the synthetic active fragment of Tβ4 &mdash; shorter, easier to make, and the form nearly all vendors actually sell.</p>
         <p className="text-lg text-[#1e2d3d] dark:text-slate-100"><strong>Bottom line up front:</strong> same active molecule family, not a &ldquo;which is better&rdquo; contest &mdash; the practical differences are length, sourcing, and cost.</p>
       </div>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why people think these are two different compounds</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Vendors and forums use &ldquo;TB-500&rdquo; and &ldquo;Thymosin Beta-4&rdquo; as if they were competing products, so people assume they must pick one. In reality, Thymosin Beta-4 is a 43-amino-acid protein your cells already make, and TB-500 is a lab-synthesized fragment of it &mdash; specifically the active region (often described as the Tβ4 17-23 region) that carries the actin-binding and cell-migration activity.
@@ -66,8 +66,8 @@ export default function TB500vsThymosinBeta4Page() {
           <thead>
             <tr className="bg-gray-50 dark:bg-[#1e293b]">
               <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Thymosin Beta-4 (full protein)</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">TB-500 (fragment)</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Thymosin Beta-4 (full protein)</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">TB-500 (fragment)</th>
             </tr>
           </thead>
           <tbody>
@@ -111,7 +111,7 @@ export default function TB500vsThymosinBeta4Page() {
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link> and Thymosin Beta-4 are not competing compounds &mdash; TB-500 is the synthetic active fragment of the full 43-amino-acid Thymosin Beta-4 protein, and it is the form nearly all vendors sell. They share the same active region and the same core mechanism, so this is a fragment-vs-full-protein distinction, not a which-is-better contest. Most research uses the fragment; full-length Tβ4 is reserved for questions that specifically require the complete protein. Neither is FDA-approved, the evidence base is largely preclinical, and both are sold research-use-only &mdash; always verify the sequence on the Certificate of Analysis. Commonly stacked with <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link> in the <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>.</p>
+        <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link> and Thymosin Beta-4 are not competing compounds &mdash; TB-500 is the synthetic active fragment of the full 43-amino-acid Thymosin Beta-4 protein, and it is the form nearly all vendors sell. They share the same active region and the same core mechanism, so this is a fragment-vs-full-protein distinction, not a which-is-better contest. Most research uses the fragment; full-length Tβ4 is reserved for questions that specifically require the complete protein. Neither is FDA-approved, the evidence base is largely preclinical, and both are sold research-use-only &mdash; always verify the sequence on the Certificate of Analysis. Commonly stacked with <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link> in the <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>.</p>
       </div>
 
       <div className="mb-8">
@@ -131,23 +131,23 @@ export default function TB500vsThymosinBeta4Page() {
         <ol className="list-decimal list-inside space-y-2">
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Goldstein AL, Hannappel E, Sosne G, Kleinman HK. Thymosin β4: a multi-functional regenerative peptide. Basic properties and clinical applications. Expert Opin Biol Ther. 2012;12(1):37-51.{" "}
-            <a href="https://pubmed.ncbi.nlm.nih.gov/22074294/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/22074294/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/22074294/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/22074294/</a>
           </li>
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Malinda KM, et al. Thymosin beta4 accelerates wound healing. J Invest Dermatol. 1999;113(3):364-368.{" "}
-            <a href="https://pubmed.ncbi.nlm.nih.gov/10469335/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/10469335/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/10469335/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/10469335/</a>
           </li>
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Smart N, Risebro CA, Melville AA, et al. Thymosin beta4 induces adult epicardial progenitor mobilization and neovascularization. Nature. 2007;445(7124):177-182.{" "}
-            <a href="https://pubmed.ncbi.nlm.nih.gov/17108969/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/17108969/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/17108969/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/17108969/</a>
           </li>
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Sosne G, Qiu P, Kurpakus-Wheater M. Thymosin beta4 and corneal wound healing: visions of the future. Ann N Y Acad Sci. 2010;1194:190-198.{" "}
-            <a href="https://pubmed.ncbi.nlm.nih.gov/20536468/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/20536468/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/20536468/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/20536468/</a>
           </li>
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Therapeutic Peptides in Orthopaedics: Applications, Challenges, and Future Directions. 2025 (review; notes TB-500/Tβ4 human clinical evidence remains limited).{" "}
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/</a>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/</a>
           </li>
         </ol>
       </div>

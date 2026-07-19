@@ -76,19 +76,19 @@ export default function AboutPage() {
               </li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                 <span className="font-semibold">Hands-on{" "}
-                  <Link href="/guides" className="text-[#0891b2] hover:underline">guides</Link>
+                  <Link href="/guides" className="text-[#3A759F] hover:underline">guides</Link>
                 </span>{" "}
                 for the practical questions: dose math, injection technique, reconstitution, units (mg/mcg/IU), storage.
               </li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                 <span className="font-semibold">A verified{" "}
-                  <Link href="/coupons" className="text-[#0891b2] hover:underline">vendor catalog</Link>
+                  <Link href="/coupons" className="text-[#3A759F] hover:underline">vendor catalog</Link>
                 </span>{" "}
                 with affiliate codes &mdash; every vendor reviewed for COA transparency, third-party testing, and reliable fulfillment.
               </li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                 <span className="font-semibold">A native{" "}
-                  <Link href="/app" className="text-[#0891b2] hover:underline">iOS app</Link>
+                  <Link href="/app" className="text-[#3A759F] hover:underline">iOS app</Link>
                 </span>{" "}
                 for dose calculations and compound lookups on the go.
               </li>

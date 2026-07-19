@@ -42,7 +42,7 @@ export default function GuidesIndexPage() {
           <Link
             key={g.href}
             href={g.href}
-            className="block p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl hover:border-[#0891b2]/40 transition-colors"
+            className="block p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl hover:border-[#3A759F]/40 transition-colors"
           >
             <div className="flex items-baseline justify-between gap-3 flex-wrap">
               <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100">{g.title}</h2>

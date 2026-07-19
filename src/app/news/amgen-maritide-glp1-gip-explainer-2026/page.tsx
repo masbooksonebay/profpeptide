@@ -39,7 +39,7 @@ export default function AmgenMariTideGLP1GIPExplainer2026Page() {
       }} />
 
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to News
         </Link>
 
@@ -54,9 +54,9 @@ export default function AmgenMariTideGLP1GIPExplainer2026Page() {
         <div className="space-y-6 text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           <p>
             MariTide (maridebart cafraglutide, formerly AMG 133) is Amgen&rsquo;s entry into the obesity-drug race, and it&rsquo;s built differently from the Wegovy/Zepbound class. It&rsquo;s a long-acting peptide-antibody conjugate &mdash; two GLP-1 peptide analogs attached to a monoclonal antibody &mdash; given subcutaneously once monthly or less frequently, versus the weekly injections of{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
             and{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>.
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>.
           </p>
 
           <p>
@@ -82,7 +82,7 @@ export default function AmgenMariTideGLP1GIPExplainer2026Page() {
                 href="https://investors.amgen.com/news-releases/news-release-details/results-amgens-phase-2-obesity-study-monthly-maritide-presented"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#0891b2] hover:underline break-words"
+                className="text-[#3A759F] hover:underline break-words"
               >
                 Results From Amgen&rsquo;s Phase 2 Obesity Study of Monthly MariTide Presented at the ADA 85th Scientific Sessions (Amgen)
               </a>
@@ -92,7 +92,7 @@ export default function AmgenMariTideGLP1GIPExplainer2026Page() {
                 href="https://doi.org/10.1056/NEJMoa2504214"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#0891b2] hover:underline break-words"
+                className="text-[#3A759F] hover:underline break-words"
               >
                 Jastreboff AM, et al., &ldquo;Once-Monthly Maridebart Cafraglutide for the Treatment of Obesity &mdash; A Phase 2 Trial,&rdquo; New England Journal of Medicine
               </a>

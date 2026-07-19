@@ -49,7 +49,7 @@ const faqs = [
     a: (
       <>
         DSIP is not FDA-approved and is sold by specialty research peptide vendors. Quality varies and the FDA has flagged immunogenicity concerns &mdash; third-party testing is especially important. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -160,7 +160,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -171,7 +171,7 @@ const sections = [
     intro: (
       <>
         DSIP is administered as a subcutaneous injection at bedtime (the most common route). Intranasal alternative also used. The 30–60 minutes before sleep window is typical. Avoid combining with sedatives or alcohol &mdash; possible additive CNS depression. For SC technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -275,7 +275,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 5 mg vial, each unit drawn delivers 50 mcg of DSIP at 1 mL reconstitution, 25 mcg at 2 mL, and 16.7 mcg at 3 mL. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -291,12 +291,12 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">L-Theanine.</span> Additive calming effect; safe combination.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">BPC-157.</span>{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           &mdash; different mechanism (healing/gut). No direct interaction.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Selank.</span>{" "}
-          <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+          <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
           &mdash; anxiolytic effect may complement DSIP&apos;s stress-reduction; no published interaction data.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid: sedatives, benzodiazepines, alcohol.</span> Possible additive CNS depression risk.</li>
@@ -411,7 +411,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -443,37 +443,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pollard BJ, Pomfrett CJ. Delta sleep-inducing peptide. Eur J Anaesthesiol. 2001;18(7):419-22.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11437870/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11437870/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11437870/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Graf MV, Kastin AJ, Coy DH, Fischman AJ. Delta-sleep-inducing peptide reduces CRF-induced corticosterone release. Neuroendocrinology. 1985;41(5):353-6.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/2995861/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/2995861/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/2995861/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Delta-sleep-inducing peptide.{" "}
-          <a href="https://en.wikipedia.org/wiki/Delta-sleep-inducing_peptide" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://en.wikipedia.org/wiki/Delta-sleep-inducing_peptide" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://en.wikipedia.org/wiki/Delta-sleep-inducing_peptide
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Schneider-Helmert D. Acute and delayed effects of DSIP (delta sleep-inducing peptide) on human sleep behavior. Int J Clin Pharmacol Ther Toxicol. 1981;19(8):341-5.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/6895513/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/6895513/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/6895513/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khvatova EM, Belousova ID, Sazanova EI, et al. Delta Sleep-Inducing Peptide Recovers Motor Function in SD Rats after Focal Stroke. Molecules. 2021;26(17):5173.{" "}
-          <a href="https://www.mdpi.com/1420-3049/26/17/5173" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.mdpi.com/1420-3049/26/17/5173" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.mdpi.com/1420-3049/26/17/5173
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Larbig W, Gerber WD, Kluck M, Schoenenberger GA. Therapeutic effects of delta-sleep-inducing peptide (DSIP) in patients with chronic, pronounced pain episodes. A clinical pilot study. Eur Neurol. 1984;23(5):372-85.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/6548970/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/6548970/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/6548970/
           </a>
         </li>
@@ -489,12 +489,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -515,7 +515,7 @@ export default function DSIPPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -545,7 +545,7 @@ export default function DSIPPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             DSIP (Delta Sleep-Inducing Peptide) is a naturally occurring nonapeptide (Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu) first isolated in 1977 from the cerebral venous blood of rabbits exhibiting deep slow-wave (delta) sleep. It is found in human brain, plasma, and breast milk. Unlike typical peptides, DSIP can cross the blood-brain barrier and is partially absorbed via the gut. Despite its name and decades of research, DSIP&apos;s role as a primary sleep-regulating compound remains uncertain &mdash; modern research describes it more accurately as a sleep-modulating substance that improves disturbed sleep without significantly affecting healthy sleepers. It also has documented anti-stress, antioxidant, and possible neuroprotective effects. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -565,7 +565,7 @@ export default function DSIPPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -618,10 +618,10 @@ export default function DSIPPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/selank" className="text-sm font-medium text-[#0891b2] hover:underline">Selank</Link>
-        <Link href="/peptides/semax" className="text-sm font-medium text-[#0891b2] hover:underline">Semax</Link>
-        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
-        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
+        <Link href="/peptides/selank" className="text-sm font-medium text-[#3A759F] hover:underline">Selank</Link>
+        <Link href="/peptides/semax" className="text-sm font-medium text-[#3A759F] hover:underline">Semax</Link>
+        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
+        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
         </div>
       </div>
 

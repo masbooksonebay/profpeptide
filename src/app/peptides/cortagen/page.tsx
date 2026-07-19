@@ -23,8 +23,8 @@ const faqs = [
     a: (
       <>
         Cortagen is a synthetic neuro-cortex tetrapeptide with the sequence Ala-Glu-Asp-Pro (AEDP). It belongs to the family of Khavinson short-peptide bioregulators and was obtained by directed synthesis based on the amino-acid analysis of Cortexin, a brain-cortex peptide preparation. Note that its sequence, AEDP, is distinct from AEDG &mdash; the sequence of{" "}
-        <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>. It is studied in the same short-peptide tradition as{" "}
-        <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>.
+        <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>. It is studied in the same short-peptide tradition as{" "}
+        <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>.
       </>
     ),
   },
@@ -45,7 +45,7 @@ const faqs = [
     a: (
       <>
         Cortagen is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
-        <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
           Peptides.gg discount code (PROF15) &rarr;
         </Link>
         .
@@ -173,7 +173,7 @@ const sections = [
       <div className="space-y-4">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-          <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
             Peptides.gg discount code (PROF15) &rarr;
           </Link>{" "}
           for current options.
@@ -206,25 +206,25 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Anisimov SV, Boheler KR, Khavinson VKh, Anisimov VN. Modulatory effect of the tetrapeptide Cortagen on cardiac gene expression in mice (cDNA microarray). Neuro Endocrinol Lett. 2004;25(1-2):87-93. PMID 15159690.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/15159690/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/15159690/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/15159690/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khavinson VKh, Fedoreyeva LI, Vanyushin BF. Site-specific binding of short peptides with DNA modulates endonuclease activity. Bull Exp Biol Med. 2011;151(1):66-70. PMID 22442805.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22442805/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22442805/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22442805/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khavinson VK, et al. Peptide Regulation of Gene Expression: A Systematic Review. Molecules. 2021;26(22):7053. PMID 34834147. (Open Access){" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/34834147/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/34834147/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/34834147/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lezhava T, et al. Epigenetic Regulation of &ldquo;Aged&rdquo; Heterochromatin by Peptide Bioregulator Cortagen. Int J Pept Res Ther. 2015;21:157-163. DOI 10.1007/s10989-014-9443-7.{" "}
-          <a href="https://doi.org/10.1007/s10989-014-9443-7" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://doi.org/10.1007/s10989-014-9443-7" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://doi.org/10.1007/s10989-014-9443-7
           </a>
         </li>
@@ -240,12 +240,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper. The evidence is preclinical and largely from a single research lineage.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -266,7 +266,7 @@ export default function CortagenPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -302,11 +302,11 @@ export default function CortagenPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Cortagen is a synthetic neuro-cortex tetrapeptide (Ala-Glu-Asp-Pro, AEDP) developed within the Khavinson short-peptide bioregulator program. It was obtained by directed synthesis based on the amino-acid analysis of Cortexin, a brain-cortex peptide preparation. It is proposed to act primarily in the central nervous system &mdash; with secondary effects reported in cardiac and immune tissue &mdash; by modulating tissue-specific gene expression and chromatin/heterochromatin structure. In preclinical work it has been associated with balancing pro- versus anti-inflammatory signaling in neural tissue, oxidative-stress regulation, and nerve-tissue repair signaling; the proposed molecular basis is site-specific binding of short peptides to DNA. The evidence base is entirely preclinical (rodent and in-vitro) and comes largely from the Khavinson research lineage; there are no human randomized controlled trials. Note that its sequence, AEDP, is distinct from AEDG (the sequence of{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>). It sits in the same short-peptide family as{" "}
-            <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>{" "}
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>). It sits in the same short-peptide family as{" "}
+            <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>{" "}
             and{" "}
-            <Link href="/peptides/thymogen" className="text-[#0891b2] hover:underline">Thymogen</Link>. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -324,7 +324,7 @@ export default function CortagenPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Cortagen is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-            <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
               Peptides.gg discount code (PROF15) &rarr;
             </Link>{" "}
             for current options.
@@ -378,13 +378,13 @@ export default function CortagenPage() {
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         {/* TODO: add the Cardiogen Related link once that profile goes live (it completes the four-spoke bioregulator set). */}
-        <Link href="/peptides/pinealon" className="text-sm font-medium text-[#0891b2] hover:underline">Pinealon</Link>
-        <Link href="/peptides/thymogen" className="text-sm font-medium text-[#0891b2] hover:underline">Thymogen</Link>
-        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
-        <Link href="/peptides/semax" className="text-sm font-medium text-[#0891b2] hover:underline">Semax</Link>
-        <Link href="/peptides/selank" className="text-sm font-medium text-[#0891b2] hover:underline">Selank</Link>
+        <Link href="/peptides/pinealon" className="text-sm font-medium text-[#3A759F] hover:underline">Pinealon</Link>
+        <Link href="/peptides/thymogen" className="text-sm font-medium text-[#3A759F] hover:underline">Thymogen</Link>
+        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
+        <Link href="/peptides/semax" className="text-sm font-medium text-[#3A759F] hover:underline">Semax</Link>
+        <Link href="/peptides/selank" className="text-sm font-medium text-[#3A759F] hover:underline">Selank</Link>
         </div>
-        <Link href="/bioregulators" className="text-sm font-medium text-[#0891b2] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
+        <Link href="/bioregulators" className="text-sm font-medium text-[#3A759F] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
       </div>
 
       {/* TODO: add a Bioregulator Comparisons block (e.g. Cortagen vs Cardiogen / Pinealon) once those comparison pages are built and the four-spoke set (incl. Cardiogen) is live. */}

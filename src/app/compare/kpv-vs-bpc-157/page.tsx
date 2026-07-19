@@ -30,7 +30,7 @@ const faqs = [
   { q: "Can KPV and BPC-157 be studied together?", a: (
     <>
       Yes &mdash; their mechanisms are complementary (KPV calms inflammation while BPC-157 drives repair), which is the rationale behind the{" "}
-      <Link href="/peptides/kpv-bpc-157" className="text-[#0891b2] hover:underline">KPV + BPC-157 blend</Link>. That said, there is no established combination protocol and the human evidence for each is limited, so any combined use is exploratory and research-use only.
+      <Link href="/peptides/kpv-bpc-157" className="text-[#3A759F] hover:underline">KPV + BPC-157 blend</Link>. That said, there is no established combination protocol and the human evidence for each is limited, so any combined use is exploratory and research-use only.
     </>
   ) },
 ];
@@ -42,17 +42,17 @@ export default function KPVvsBPC157Page() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"KPV vs BPC-157: Anti-Inflammatory vs Tissue Repair"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">KPV vs BPC-157 &mdash; Anti-Inflammatory vs Tissue Repair</h1>
-      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link> and <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link> both show up in gut, immune, and recovery research, so they get compared &mdash; but they are two genuinely different compounds that work through different mechanisms. This page explains what each actually is, how they differ, and which research question each fits.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link> and <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link> both show up in gut, immune, and recovery research, so they get compared &mdash; but they are two genuinely different compounds that work through different mechanisms. This page explains what each actually is, how they differ, and which research question each fits.</p>
 
-      <div className="bg-[#0891b2]/10 border border-[#0891b2]/20 rounded-xl p-5 mb-8">
+      <div className="bg-[#3A759F]/10 border border-[#3A759F]/20 rounded-xl p-5 mb-8">
         <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>KPV:</strong> a three-amino-acid fragment of α-MSH, studied as an anti-inflammatory (dampens inflammatory signaling), especially in the gut.</p>
         <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>BPC-157:</strong> a fifteen-amino-acid gastric pentadecapeptide, studied for tissue repair (angiogenesis and growth-factor signaling).</p>
         <p className="text-lg text-[#1e2d3d] dark:text-slate-100"><strong>Bottom line up front:</strong> different compounds, different mechanisms &mdash; one calms inflammation, the other rebuilds tissue. Complementary rather than a &ldquo;which is better&rdquo; contest, and both are preclinical, research-use only.</p>
       </div>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why these two get compared</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Both are peptides researched in gut and recovery contexts, so they land on the same shortlists &mdash; and they are even sold as a combined blend. But they come from different places and do different jobs. KPV is the tail end (residues 11-13) of α-melanocyte-stimulating hormone, and it carries that hormone&apos;s anti-inflammatory activity in a tiny three-amino-acid package.
@@ -70,8 +70,8 @@ export default function KPVvsBPC157Page() {
           <thead>
             <tr className="bg-gray-50 dark:bg-[#1e293b]">
               <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">KPV</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">BPC-157</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">KPV</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">BPC-157</th>
             </tr>
           </thead>
           <tbody>
@@ -107,7 +107,7 @@ export default function KPVvsBPC157Page() {
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Both together</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Because one calms inflammation and the other drives repair, they are sometimes combined &mdash; sold as a <Link href="/peptides/kpv-bpc-157" className="text-[#0891b2] hover:underline">KPV + BPC-157 blend</Link> &mdash; particularly in gut research where reducing inflammation and rebuilding the mucosa are both goals. There is no established combination protocol and the human data is limited, so any combined use is exploratory and research-use only.
+              Because one calms inflammation and the other drives repair, they are sometimes combined &mdash; sold as a <Link href="/peptides/kpv-bpc-157" className="text-[#3A759F] hover:underline">KPV + BPC-157 blend</Link> &mdash; particularly in gut research where reducing inflammation and rebuilding the mucosa are both goals. There is no established combination protocol and the human data is limited, so any combined use is exploratory and research-use only.
             </p>
           </div>
         </div>
@@ -135,23 +135,23 @@ export default function KPVvsBPC157Page() {
         <ol className="list-decimal list-inside space-y-2">
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Brzoska T, Böhm M, Lügering A, et al. Alpha-melanocyte-stimulating hormone and related tripeptides: biochemistry, antiinflammatory and protective effects in vitro and in vivo, and future perspectives. Endocr Rev. 2008;29(5):581-602.{" "}
-            <a href="https://pubmed.ncbi.nlm.nih.gov/18612139/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/18612139/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/18612139/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/18612139/</a>
           </li>
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Dalmasso G, Charrier-Hisamuddin L, Nguyen HT, et al. PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation. Gastroenterology. 2008;134(1):166-178.{" "}
-            <a href="https://pubmed.ncbi.nlm.nih.gov/18061177/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/18061177/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/18061177/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/18061177/</a>
           </li>
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Kannengiesser K, Maaser C, Heidemann J, et al. Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease. Inflamm Bowel Dis. 2008;14(3):324-331.{" "}
-            <a href="https://pubmed.ncbi.nlm.nih.gov/18092346/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/18092346/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/18092346/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/18092346/</a>
           </li>
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Seiwerth S, Rucman R, Turkovic B, et al. BPC 157 and standard angiogenic growth factors. Gastrointestinal tract healing, lessons from tendon, ligament, muscle and bone healing. Curr Pharm Des. 2018;24(18):1972-1989.{" "}
-            <a href="https://pubmed.ncbi.nlm.nih.gov/29998800/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/29998800/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/29998800/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/29998800/</a>
           </li>
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Sikiric P, Seiwerth S, Rucman R, et al. Brain-gut Axis and Pentadecapeptide BPC 157: Theoretical and Practical Implications. Curr Neuropharmacol. 2016;14(8):857-865.{" "}
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/</a>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pmc.ncbi.nlm.nih.gov/articles/PMC5333585/</a>
           </li>
         </ol>
       </div>

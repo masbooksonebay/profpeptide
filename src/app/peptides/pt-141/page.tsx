@@ -48,7 +48,7 @@ const faqs = [
     q: "How is PT-141 different from Melanotan II?",
     a: (
       <>
-        <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>{" "}
+        <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>{" "}
         is the predecessor compound &mdash; PT-141 was derived from Melanotan II by removing the C-terminal amide group, which eliminates the strong tanning effect while preserving the sexual desire and arousal effects. Melanotan II is primarily used for skin pigmentation (off-label tanning); PT-141 is specifically optimized for sexual response without the pigmentation. Do NOT stack the two &mdash; additive melanocortin receptor effects increase nausea, blood pressure changes, and hyperpigmentation risk.
       </>
     ),
@@ -58,7 +58,7 @@ const faqs = [
     a: (
       <>
         The FDA-approved version (Vyleesi) is a prescription drug from specialty pharmacies &mdash; premenopausal women with HSDD only. Off-label and research-grade PT-141 is sold by specialty peptide vendors. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -169,7 +169,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -180,7 +180,7 @@ const sections = [
     intro: (
       <>
         PT-141 is given as a subcutaneous injection &mdash; under the skin, not into muscle &mdash; on-demand ~45 minutes before anticipated sexual activity. The Vyleesi autoinjector is pre-dosed at 1.75 mg. Research-grade material requires reconstitution. For the practical mechanics of insulin syringes for research-grade material, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -284,7 +284,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 10 mg vial, each unit drawn delivers 100 mcg of PT-141 at 1 mL reconstitution, 50 mcg at 2 mL, and 33 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -300,12 +300,12 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Oxytocin.</span> Anecdotally combined for emotional bonding aspect of intimacy. Limited research on combination but generally considered safe.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">BPC-157.</span>{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           &mdash; different mechanism (healing/gut). No direct interaction.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: Melanotan II.</span>{" "}
-          <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>{" "}
+          <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>{" "}
           &mdash; both act on melanocortin receptors. Stacking increases nausea, blood pressure changes, and hyperpigmentation risk.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anti-nausea protocol.</span> Some users take oral ondansetron 30 minutes before injection. Ginger tablets are a non-prescription alternative.</li>
@@ -421,7 +421,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -453,37 +453,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vyleesi (bremelanotide injection) FDA Prescribing Information. 2019.{" "}
-          <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Bremelanotide.{" "}
-          <a href="https://en.wikipedia.org/wiki/Bremelanotide" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://en.wikipedia.org/wiki/Bremelanotide" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://en.wikipedia.org/wiki/Bremelanotide
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kingsberg SA, Clayton AH, Portman D, et al. Bremelanotide for the treatment of hypoactive sexual desire disorder: two randomized phase 3 trials. Obstet Gynecol. 2019;134(5):899-908.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31599840/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31599840/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/31599840/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Diamond LE, Earle DC, Rosen RC, et al. Double-blind, placebo-controlled evaluation of the safety, pharmacokinetic properties and pharmacodynamic effects of intranasal PT-141. Int J Impot Res. 2004;16(1):51-9.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/14963471/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/14963471/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/14963471/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dhillon S, Keam SJ. Bremelanotide: First Approval. Drugs. 2019;79(14):1599-1606.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31429064/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31429064/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/31429064/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           LiverTox: Clinical and Research Information on Drug-Induced Liver Injury. Bremelanotide. NCBI Bookshelf.{" "}
-          <a href="https://www.ncbi.nlm.nih.gov/books/NBK573221/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.ncbi.nlm.nih.gov/books/NBK573221/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.ncbi.nlm.nih.gov/books/NBK573221/
           </a>
         </li>
@@ -499,12 +499,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -525,7 +525,7 @@ export default function PT141Page() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -555,9 +555,9 @@ export default function PT141Page() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             PT-141 (bremelanotide, brand name Vyleesi) is a synthetic cyclic heptapeptide melanocortin receptor agonist developed by Palatin Technologies. It was derived from{" "}
-            <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>{" "}
+            <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>{" "}
             by removing the C-terminal amide group, eliminating the strong tanning effect while preserving sexual desire and arousal effects. The FDA approved PT-141 as Vyleesi in June 2019 for treatment of acquired, generalized hypoactive sexual desire disorder (HSDD) in premenopausal women &mdash; making it the first FDA-approved peptide that targets sexual desire through brain pathways rather than peripheral vascular mechanisms. Off-label use in men with erectile dysfunction is also documented. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -577,7 +577,7 @@ export default function PT141Page() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -630,9 +630,9 @@ export default function PT141Page() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/melanotan-ii" className="text-sm font-medium text-[#0891b2] hover:underline">Melanotan II</Link>
-        <Link href="/peptides/kpv" className="text-sm font-medium text-[#0891b2] hover:underline">KPV</Link>
-        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
+        <Link href="/peptides/melanotan-ii" className="text-sm font-medium text-[#3A759F] hover:underline">Melanotan II</Link>
+        <Link href="/peptides/kpv" className="text-sm font-medium text-[#3A759F] hover:underline">KPV</Link>
+        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
         </div>
       </div>
 

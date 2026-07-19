@@ -41,14 +41,14 @@ export default function NewsPage() {
             <Link
               key={a.slug}
               href={`/news/${a.slug}`}
-              className="block border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] hover:shadow-md transition-all group"
+              className="block border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] hover:shadow-md transition-all group"
             >
               <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">{a.date}</p>
-              <h2 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#0891b2] transition-colors mb-2">
+              <h2 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors mb-2">
                 {a.title}
               </h2>
               <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed">{a.excerpt}</p>
-              <span className="text-xs font-medium text-[#0891b2] mt-3 inline-block">Read more &rarr;</span>
+              <span className="text-xs font-medium text-[#3A759F] mt-3 inline-block">Read more &rarr;</span>
             </Link>
           ))}
         </div>

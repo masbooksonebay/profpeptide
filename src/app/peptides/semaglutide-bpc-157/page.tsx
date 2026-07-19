@@ -20,11 +20,11 @@ const faqs = [
     a: (
       <>
         The Semaglutide + BPC-157 blend is a community-derived research protocol pairing{" "}
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">
           Semaglutide
         </Link>{" "}
         (a GLP-1 receptor agonist) with{" "}
-        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">
+        <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">
           BPC-157
         </Link>{" "}
         (Body Protection Compound). The rationale is mechanistic: Semaglutide drives meaningful weight
@@ -62,7 +62,7 @@ const faqs = [
         Both compounds are available separately from research peptide vendors. Because they are not
         pre-blended, researchers source two vials independently. PP maintains a list of vetted vendors
         with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -246,7 +246,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate reconstitution and draw volumes? Use the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">
             dosage calculator &rarr;
           </Link>
           .
@@ -286,7 +286,7 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">
-            <Link href="/peptides/tirzepatide-bpc-157" className="text-[#0891b2] hover:underline">
+            <Link href="/peptides/tirzepatide-bpc-157" className="text-[#3A759F] hover:underline">
               Tirzepatide + BPC-157
             </Link>{" "}
             (alternative GLP-1 backbone).
@@ -294,7 +294,7 @@ const sections = [
           Tirzepatide is a dual GIP/GLP-1 receptor agonist with superior weight-loss efficacy in
           trials (~20–22% vs ~15%). Researchers choosing tirzepatide over semaglutide for the GLP-1
           component apply the same BPC-157 rationale. See{" "}
-          <Link href="/peptides/tirzepatide-bpc-157" className="text-[#0891b2] hover:underline">
+          <Link href="/peptides/tirzepatide-bpc-157" className="text-[#3A759F] hover:underline">
             Tirzepatide + BPC-157 &rarr;
           </Link>
           .
@@ -307,7 +307,7 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">
-            <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">
+            <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">
               Wolverine Stack (BPC-157 + TB-500)
             </Link>{" "}
             for connective-tissue support.
@@ -315,7 +315,7 @@ const sections = [
           Adding TB-500 to the BPC-157 component broadens connective-tissue coverage via actin-mediated
           cellular migration. Relevant for researchers experiencing tendon or joint stress during rapid
           weight loss or who are adding progressive resistance training. See{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">
+          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">
             Wolverine Stack &rarr;
           </Link>
           .
@@ -482,7 +482,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all verified vendors &rarr;
           </Link>
         </p>
@@ -562,7 +562,7 @@ const sections = [
             href="https://pubmed.ncbi.nlm.nih.gov/33567185/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://pubmed.ncbi.nlm.nih.gov/33567185/
           </a>
@@ -574,7 +574,7 @@ const sections = [
             href="https://pubmed.ncbi.nlm.nih.gov/32628589/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://pubmed.ncbi.nlm.nih.gov/32628589/
           </a>
@@ -586,7 +586,7 @@ const sections = [
             href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full
           </a>
@@ -598,7 +598,7 @@ const sections = [
             href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/
           </a>
@@ -610,7 +610,7 @@ const sections = [
             href="https://pubmed.ncbi.nlm.nih.gov/33667417/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://pubmed.ncbi.nlm.nih.gov/33667417/
           </a>
@@ -631,7 +631,7 @@ const sections = [
         {studies.map((s, i) => (
           <div
             key={i}
-            className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors"
+            className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors"
           >
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">
@@ -651,7 +651,7 @@ const sections = [
               href={s.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1"
+              className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1"
             >
               {s.title} &rarr;
             </a>
@@ -715,7 +715,7 @@ export default function SemaglutideBpc157Page() {
       <div className="section max-w-3xl">
         <Link
           href="/peptides"
-          className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+          className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
         >
           Back to Peptide Library
         </Link>
@@ -758,7 +758,7 @@ export default function SemaglutideBpc157Page() {
               The Semaglutide + BPC-157 blend is a community-derived research protocol pairing{" "}
               <Link
                 href="/peptides/semaglutide"
-                className="text-[#0891b2] hover:underline"
+                className="text-[#3A759F] hover:underline"
               >
                 Semaglutide
               </Link>{" "}
@@ -766,7 +766,7 @@ export default function SemaglutideBpc157Page() {
               trials &mdash; with{" "}
               <Link
                 href="/peptides/bpc-157"
-                className="text-[#0891b2] hover:underline"
+                className="text-[#3A759F] hover:underline"
               >
                 BPC-157
               </Link>{" "}
@@ -817,7 +817,7 @@ export default function SemaglutideBpc157Page() {
               <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span>{" "}
               Both compounds are sold separately by research peptide vendors. Neither is available
               as a pre-blended vial. See{" "}
-              <Link href="/coupons" className="text-[#0891b2] hover:underline">
+              <Link href="/coupons" className="text-[#3A759F] hover:underline">
                 Verified Discount Codes &rarr;
               </Link>{" "}
               for current options.
@@ -886,25 +886,25 @@ export default function SemaglutideBpc157Page() {
           <div className="flex flex-wrap gap-4">
             <Link
               href="/peptides/semaglutide"
-              className="text-sm font-medium text-[#0891b2] hover:underline"
+              className="text-sm font-medium text-[#3A759F] hover:underline"
             >
               Semaglutide
             </Link>
             <Link
               href="/peptides/bpc-157"
-              className="text-sm font-medium text-[#0891b2] hover:underline"
+              className="text-sm font-medium text-[#3A759F] hover:underline"
             >
               BPC-157
             </Link>
             <Link
               href="/peptides/tirzepatide"
-              className="text-sm font-medium text-[#0891b2] hover:underline"
+              className="text-sm font-medium text-[#3A759F] hover:underline"
             >
               Tirzepatide
             </Link>
             <Link
               href="/peptides/cagrilintide"
-              className="text-sm font-medium text-[#0891b2] hover:underline"
+              className="text-sm font-medium text-[#3A759F] hover:underline"
             >
               Cagrilintide
             </Link>
@@ -918,13 +918,13 @@ export default function SemaglutideBpc157Page() {
           <div className="flex flex-wrap gap-4">
             <Link
               href="/peptides/tirzepatide-bpc-157"
-              className="text-sm font-medium text-[#0891b2] hover:underline"
+              className="text-sm font-medium text-[#3A759F] hover:underline"
             >
               Tirzepatide + BPC-157
             </Link>
             <Link
               href="/peptides/wolverine-stack"
-              className="text-sm font-medium text-[#0891b2] hover:underline"
+              className="text-sm font-medium text-[#3A759F] hover:underline"
             >
               Wolverine Stack
             </Link>

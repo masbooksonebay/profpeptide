@@ -35,11 +35,11 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural and represents one of the strongest cluster-cohesive combinations in the Russian sleep + longevity territory.{" "}
-        <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>{" "}
+        <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
         (delta sleep-inducing peptide) operates directly on slow-wave sleep architecture — peptide-level intervention on sleep depth.{" "}
-        <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+        <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
         (a tuftsin analog) provides anxiolytic effects via GABA-A receptor sensitivity modulation — same broad GABA-A target as apigenin but at a different mechanism layer (Selank modulates receptor sensitivity; apigenin is partial agonist at the benzodiazepine binding site).{" "}
-        <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+        <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
         adds the pineal-axis longevity arm — telomere maintenance and circadian regulation. The four-component stack (DSIP + Selank + Epitalon + apigenin) covers sleep architecture, anxiolytic GABA-A modulation, pineal-axis longevity, and benzodiazepine-site partial agonism + CD38/NAD+ preservation from four distinct mechanism layers. Mechanistically complementary, no known negative interactions.
       </>
     ),
@@ -49,9 +49,9 @@ const faqs = [
     a: (
       <>
         Yes, and the mechanism layering is biochemically coherent.{" "}
-        <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link>{" "}
+        <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
         and{" "}
-        <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+ precursors</Link>{" "}
+        <Link href="/supplements/nad-plus" className="text-[#3A759F] hover:underline">NAD+ precursors</Link>{" "}
         operate on the input side — feeding the salvage pathway to raise NAD+ levels. Apigenin operates on the consumption side — inhibiting CD38, the major NAD+-consuming enzyme that increases activity with aging and inflammation. Combining the two addresses both ends of the NAD+ balance equation: more substrate in (NMN/NR), less destruction (apigenin via CD38 inhibition). This is mechanistically natural for users building comprehensive NAD+ longevity protocols. The combination isn&apos;t rigorously RCT-validated as a combination, but the pharmacological rationale is mature.
       </>
     ),
@@ -225,13 +225,13 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Apigenin pairs naturally with the Russian-origin sleep + longevity peptide cluster — and is one of the few supplements that spans both Russian-sleep and NAD+/longevity peptide clusters via its dual mechanism.{" "}
-            <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>{" "}
+            <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
             (delta sleep-inducing peptide) operates directly on slow-wave sleep architecture — peptide-level intervention on sleep depth.{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             (a tuftsin analog) provides anxiolytic effects via GABA-A receptor sensitivity modulation — same broad target as apigenin but at a different mechanism layer.{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
             adds the pineal-axis longevity arm — telomere maintenance and circadian regulation, complementary to apigenin&apos;s CD38/NAD+ longevity arm. Add{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
             for users wanting direct NAD+ delivery alongside apigenin&apos;s consumption-side preservation. Mechanistically complementary across the cluster, no known negative interactions.
           </p>
         </div>
@@ -239,33 +239,33 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link>{" "}
+              <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
               or{" "}
-              <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+ precursors</Link>{" "}
+              <Link href="/supplements/nad-plus" className="text-[#3A759F] hover:underline">NAD+ precursors</Link>{" "}
               — apigenin&apos;s CD38 inhibition preserves the NAD+ that NMN/NR provide. Combining the two addresses both sides of the NAD+ balance equation (more substrate in, less destruction).
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium glycinate</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium glycinate</Link>{" "}
               — magnesium is a GABA-A positive allosteric modulator. Pairs cleanly with apigenin&apos;s benzodiazepine-site partial agonism at the same receptor.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glycine" className="text-[#0891b2] hover:underline">Glycine</Link>{" "}
+              <Link href="/supplements/glycine" className="text-[#3A759F] hover:underline">Glycine</Link>{" "}
               — body-temperature regulation for sleep onset + inhibitory neurotransmission. Different sleep mechanism; mechanistically complementary.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-theanine</Link>{" "}
+              <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-theanine</Link>{" "}
               — alpha-wave induction + GABAergic enhancement via different mechanism. Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/melatonin" className="text-[#0891b2] hover:underline">Melatonin</Link>{" "}
+              <Link href="/supplements/melatonin" className="text-[#3A759F] hover:underline">Melatonin</Link>{" "}
               — circadian signaling. Different mechanism (MT1/MT2 receptor) from apigenin&apos;s GABA-A target; fully compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/tart-cherry" className="text-[#0891b2] hover:underline">Tart cherry</Link>{" "}
+              <Link href="/supplements/tart-cherry" className="text-[#3A759F] hover:underline">Tart cherry</Link>{" "}
               — natural melatonin + tryptophan + anthocyanin botanical matrix. Compatible botanical sleep-stack pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/quercetin" className="text-[#0891b2] hover:underline">Quercetin</Link>{" "}
+              <Link href="/supplements/quercetin" className="text-[#3A759F] hover:underline">Quercetin</Link>{" "}
               — another flavonoid with anti-inflammatory and CD38-adjacent effects. Common longevity-stack co-occupant.
             </li>
           </ol>
@@ -405,37 +405,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Salehi B, Venditti A, Sharifi-Rad M, et al. The therapeutic potential of apigenin. Molecules. 2019;24(6):1129.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30901869/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30901869/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30901869/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mao JJ, Xie SX, Keefe JR, Soeller I, Li QS, Amsterdam JD. Long-term chamomile (Matricaria chamomilla L.) treatment for generalized anxiety disorder: a randomized clinical trial. Phytomedicine. 2016;23(14):1735-1742.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27912875/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27912875/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27912875/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Amsterdam JD, Shults J, Soeller I, Mao JJ, Rockwell K, Newberg AB. Chamomile (Matricaria recutita) may provide antidepressant activity in anxious, depressed humans: an exploratory study. Altern Ther Health Med. 2012;18(5):44-49.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22894890/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22894890/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22894890/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tarragó MG, Chini CCS, Kanamori KS, et al. A potent and specific CD38 inhibitor ameliorates age-related metabolic dysfunction by reversing tissue NAD+ decline. Cell Metab. 2018;27(5):1081-1095.e10.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29886346/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29886346/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29886346/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Adib-Hajbaghery M, Mousavi SN. The effects of chamomile extract on sleep quality among elderly people: a clinical trial. Complement Ther Med. 2017;35:109-114.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29154054/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29154054/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29154054/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Avallone R, Zanoli P, Puia G, Kleinschnitz M, Schreier P, Baraldi M. Pharmacological profile of apigenin, a flavonoid isolated from Matricaria chamomilla. Biochem Pharmacol. 2000;59(11):1387-1394.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/10751547/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/10751547/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/10751547/
           </a>
         </li>
@@ -451,12 +451,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -581,7 +581,7 @@ export default function ApigeninPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Apigenin</h1>
@@ -607,7 +607,7 @@ export default function ApigeninPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Apigenin is a plant flavonoid found highest in dried chamomile flowers (the source of chamomile tea), parsley, celery, and citrus peels. It is the principal active flavonoid driving chamomile&apos;s traditional calming and sleep-supporting effects, and has gained substantial recent popularity (largely via Andrew Huberman&apos;s recommendations) as a standalone supplement at 50 mg pre-bed. The primary mechanism is partial agonism at the benzodiazepine binding site of GABA-A receptors — same site targeted by Xanax, Valium, and alcohol, but with a ceiling on activation that theoretically prevents the deep receptor adaptation responsible for benzodiazepine dependence. Secondary mechanism: CD38 inhibition (Tarragó 2018), preserving NAD+ levels by reducing the major NAD+-consuming enzyme — a longevity-relevant arm that complements (rather than duplicates) NAD+ precursor supplements (NMN, NR). The strongest human evidence is from chamomile extract RCTs (Mao 2016 GAD trial, Amsterdam 2012, Adib-Hajbaghery 2017 elderly sleep) where apigenin is the principal active. Standalone pure-apigenin trials at the 50 mg supplemental dose are sparse — the popular protocol is extrapolated from animal data and chamomile dosing rather than directly RCT-validated. Apigenin pairs naturally with{" "}
-            <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">sleep peptides like DSIP, Selank, and Epitalon</Link>{" "}
+            <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">sleep peptides like DSIP, Selank, and Epitalon</Link>{" "}
             via complementary mechanism layers spanning both Russian-sleep and NAD+/longevity peptide clusters.
           </p>
           <div>
@@ -670,13 +670,13 @@ export default function ApigeninPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/nmn" className="text-sm font-medium text-[#0891b2] hover:underline">NMN</Link>
-          <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
-          <Link href="/supplements/glycine" className="text-sm font-medium text-[#0891b2] hover:underline">Glycine</Link>
-          <Link href="/supplements/melatonin" className="text-sm font-medium text-[#0891b2] hover:underline">Melatonin</Link>
-          <Link href="/supplements/tart-cherry" className="text-sm font-medium text-[#0891b2] hover:underline">Tart Cherry</Link>
-          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#0891b2] hover:underline">Quercetin</Link>
+          <Link href="/supplements/nmn" className="text-sm font-medium text-[#3A759F] hover:underline">NMN</Link>
+          <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
+          <Link href="/supplements/glycine" className="text-sm font-medium text-[#3A759F] hover:underline">Glycine</Link>
+          <Link href="/supplements/melatonin" className="text-sm font-medium text-[#3A759F] hover:underline">Melatonin</Link>
+          <Link href="/supplements/tart-cherry" className="text-sm font-medium text-[#3A759F] hover:underline">Tart Cherry</Link>
+          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#3A759F] hover:underline">Quercetin</Link>
         </div>
       </div>
 

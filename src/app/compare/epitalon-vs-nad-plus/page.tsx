@@ -41,11 +41,11 @@ export default function EpitalonVsNADPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Epitalon vs NAD+ — Longevity Supplement Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Epitalon vs NAD+ &mdash; Longevity Compound Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Epitalon and NAD+ are two of the most discussed compounds in longevity research &mdash; but they work through completely different mechanisms and have very different evidence bases. Epitalon is a research peptide targeting telomere biology. NAD+ (via NMN or NR) targets mitochondrial function and cellular energy metabolism.</p>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why these two compounds are not actually competitors</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Epitalon and NAD+ are both discussed in longevity research, but they target completely different aging mechanisms &mdash; making them complementary, not competing.
@@ -68,8 +68,8 @@ export default function EpitalonVsNADPage() {
         <table className="w-full text-sm border-collapse">
           <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
             <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Epitalon</th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">NAD+ (via NMN/NR)</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Epitalon</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">NAD+ (via NMN/NR)</th>
           </tr></thead>
           <tbody>{rows.map(([label, a, b], i) => (
             <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
@@ -115,7 +115,7 @@ export default function EpitalonVsNADPage() {
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-lg text-gray-600 dark:text-slate-300">NAD+ precursors have far more robust and independently replicated human evidence. <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link> has fascinating telomere biology but the evidence base is narrow and concentrated in a single research group. They target entirely different aging mechanisms and could theoretically be studied together as part of a comprehensive longevity protocol.</p>
+        <p className="text-lg text-gray-600 dark:text-slate-300">NAD+ precursors have far more robust and independently replicated human evidence. <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link> has fascinating telomere biology but the evidence base is narrow and concentrated in a single research group. They target entirely different aging mechanisms and could theoretically be studied together as part of a comprehensive longevity protocol.</p>
       </div>
 
       <div className="mb-8">

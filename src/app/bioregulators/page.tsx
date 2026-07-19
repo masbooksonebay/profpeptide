@@ -95,7 +95,7 @@ export default function BioregulatorsPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -115,12 +115,12 @@ export default function BioregulatorsPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             It is important to be plain about the state of the science. This is a research hypothesis, not an established mechanism. The evidence is largely preclinical (rodent and in-vitro) and concentrated in a single research lineage, with limited independent Western replication. None of these compounds is approved by the FDA or EMA for human use &mdash; they are sold strictly for research use only (RUO). Nothing in this guide is human-use guidance. For the individual compounds, see{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>,{" "}
-            <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>,{" "}
-            <Link href="/peptides/cortagen" className="text-[#0891b2] hover:underline">Cortagen</Link>,{" "}
-            <Link href="/peptides/thymogen" className="text-[#0891b2] hover:underline">Thymogen</Link>, and{" "}
-            <Link href="/peptides/cardiogen" className="text-[#0891b2] hover:underline">Cardiogen</Link>. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>,{" "}
+            <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>,{" "}
+            <Link href="/peptides/cortagen" className="text-[#3A759F] hover:underline">Cortagen</Link>,{" "}
+            <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>, and{" "}
+            <Link href="/peptides/cardiogen" className="text-[#3A759F] hover:underline">Cardiogen</Link>. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
         </div>
       </div>
@@ -138,13 +138,13 @@ export default function BioregulatorsPage() {
             </p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               The umbrella model is reviewed in a 2021 open-access systematic review &mdash; Khavinson VK et al., &ldquo;Peptide Regulation of Gene Expression: A Systematic Review,&rdquo; Molecules. 2021;26(22):7053. PMID 34834147.{" "}
-              <a href="https://pubmed.ncbi.nlm.nih.gov/34834147/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/34834147/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
                 https://pubmed.ncbi.nlm.nih.gov/34834147/
               </a>
             </p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               The proposed molecular basis &mdash; site-specific binding of short peptides to DNA, modulating endonuclease activity &mdash; was reported by Khavinson VKh, Fedoreyeva LI, Vanyushin BF. Bull Exp Biol Med. 2011;151(1):66-70. PMID 22442805.{" "}
-              <a href="https://pubmed.ncbi.nlm.nih.gov/22442805/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/22442805/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
                 https://pubmed.ncbi.nlm.nih.gov/22442805/
               </a>
             </p>
@@ -183,7 +183,7 @@ export default function BioregulatorsPage() {
                 {lineup.map((p) => (
                   <tr key={p.slug} className="even:bg-gray-50 dark:even:bg-[#1e293b]/50 align-top">
                     <td className="px-4 py-3 font-medium whitespace-nowrap">
-                      <Link href={`/peptides/${p.slug}`} className="text-[#0891b2] hover:underline">{p.name}</Link>
+                      <Link href={`/peptides/${p.slug}`} className="text-[#3A759F] hover:underline">{p.name}</Link>
                     </td>
                     <td className="px-4 py-3 text-gray-700 dark:text-slate-300 whitespace-nowrap">{p.sequence}</td>
                     <td className="px-4 py-3 text-gray-700 dark:text-slate-300">{p.tissue}</td>
@@ -219,9 +219,9 @@ export default function BioregulatorsPage() {
           <div className="space-y-4">
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the deep Khavinson bioregulator line &mdash; Epitalon, Pinealon, Cortagen, Thymogen, Cardiogen, and more. See the{" "}
-              <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">peptides.gg discount code (PROF15) &rarr;</Link>{" "}
+              <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">peptides.gg discount code (PROF15) &rarr;</Link>{" "}
               for current options, and verify a Certificate of Analysis before purchase. New to peptide research?{" "}
-              <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+              <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
             </p>
           </div>
         </div>
@@ -248,11 +248,11 @@ export default function BioregulatorsPage() {
       <div className="mt-8 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bioregulator Profiles</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
-          <Link href="/peptides/pinealon" className="text-sm font-medium text-[#0891b2] hover:underline">Pinealon</Link>
-          <Link href="/peptides/cortagen" className="text-sm font-medium text-[#0891b2] hover:underline">Cortagen</Link>
-          <Link href="/peptides/thymogen" className="text-sm font-medium text-[#0891b2] hover:underline">Thymogen</Link>
-          <Link href="/peptides/cardiogen" className="text-sm font-medium text-[#0891b2] hover:underline">Cardiogen</Link>
+          <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
+          <Link href="/peptides/pinealon" className="text-sm font-medium text-[#3A759F] hover:underline">Pinealon</Link>
+          <Link href="/peptides/cortagen" className="text-sm font-medium text-[#3A759F] hover:underline">Cortagen</Link>
+          <Link href="/peptides/thymogen" className="text-sm font-medium text-[#3A759F] hover:underline">Thymogen</Link>
+          <Link href="/peptides/cardiogen" className="text-sm font-medium text-[#3A759F] hover:underline">Cardiogen</Link>
         </div>
       </div>
 

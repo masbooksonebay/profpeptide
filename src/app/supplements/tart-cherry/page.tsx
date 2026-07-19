@@ -23,7 +23,7 @@ const faqs = [
     a: (
       <>
         Different tools, different use cases. A{" "}
-        <Link href="/supplements/melatonin" className="text-[#0891b2] hover:underline">melatonin supplement</Link>{" "}
+        <Link href="/supplements/melatonin" className="text-[#3A759F] hover:underline">melatonin supplement</Link>{" "}
         delivers a much higher direct dose of melatonin (0.5–5 mg per tablet) and is more useful for acute circadian disruptions like jet lag, shift work, or DSPD. Tart cherry provides a much smaller natural melatonin dose (~0.135 mcg per typical study dose — orders of magnitude lower) alongside tryptophan, anthocyanins, and other bioactive compounds. The combined botanical effect appears to gently nudge sleep parameters without the next-morning grogginess some users get from melatonin tablets. Tart cherry also has recovery benefits melatonin doesn&apos;t. For acute circadian issues: melatonin. For gentle daily sleep support plus exercise recovery: tart cherry.
       </>
     ),
@@ -45,7 +45,7 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural for users layering sleep interventions.{" "}
-        <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>{" "}
+        <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
         (delta sleep-inducing peptide) operates directly on slow-wave sleep architecture — peptide-level intervention on sleep depth. Tart cherry operates at a different layer: natural melatonin content nudges the circadian signal, tryptophan supports endogenous serotonin/melatonin pathways, and anthocyanins reduce inflammation that disrupts sleep quality. The peptide does direct sleep-architecture modulation; tart cherry handles the circadian-nudge and inflammation-driven sleep disruption arms. Mechanistically complementary, no known negative interactions. The Russian-origin sleep peptide cluster pairs naturally with the botanical sleep stack (tart cherry + apigenin + magnesium + glycine).
       </>
     ),
@@ -219,9 +219,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Tart cherry pairs naturally with the Russian-origin sleep + cognitive peptide cluster.{" "}
-            <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>{" "}
+            <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
             (delta sleep-inducing peptide) operates directly on slow-wave sleep architecture — peptide-level intervention on sleep depth.{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             (a tuftsin analog) provides anxiolytic effects via GABA modulation — useful when sleep is blocked by anxious arousal. Tart cherry operates at a different layer: natural melatonin nudges the circadian signal, tryptophan supports endogenous serotonin/melatonin pathways, and anthocyanins reduce inflammation that disrupts sleep quality. The peptides do direct sleep-architecture modulation; tart cherry handles the circadian-nudge and inflammation-driven arms. Mechanistically complementary, no known negative interactions. The full Russian sleep peptide cluster pairs naturally with the botanical sleep stack (tart cherry + apigenin + magnesium + glycine).
           </p>
         </div>
@@ -229,23 +229,23 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/apigenin" className="text-[#0891b2] hover:underline">Apigenin</Link>{" "}
+              <Link href="/supplements/apigenin" className="text-[#3A759F] hover:underline">Apigenin</Link>{" "}
               — GABA-A positive allosteric modulator with sleep and longevity arms. Pairs cleanly with tart cherry&apos;s melatonin-pathway and anti-inflammatory arms.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glycine" className="text-[#0891b2] hover:underline">Glycine</Link>{" "}
+              <Link href="/supplements/glycine" className="text-[#3A759F] hover:underline">Glycine</Link>{" "}
               — body-temperature regulation for sleep onset. Different sleep mechanism; mechanistically complementary.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/melatonin" className="text-[#0891b2] hover:underline">Melatonin (low-dose)</Link>{" "}
+              <Link href="/supplements/melatonin" className="text-[#3A759F] hover:underline">Melatonin (low-dose)</Link>{" "}
               — for acute circadian disruption layered on top of the chronic tart cherry baseline. Use cases differ; not redundant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium glycinate</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium glycinate</Link>{" "}
               — GABAergic and neuromuscular relaxation. Standard sleep-stack co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/curcumin" className="text-[#0891b2] hover:underline">Curcumin</Link>{" "}
+              <Link href="/supplements/curcumin" className="text-[#3A759F] hover:underline">Curcumin</Link>{" "}
               — additional anti-inflammatory arm for recovery and chronic inflammation contexts. Compatible with tart cherry&apos;s anthocyanin mechanism.
             </li>
           </ol>
@@ -384,37 +384,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Howatson G, Bell PG, Tallent J, Middleton B, McHugh MP, Ellis J. Effect of tart cherry juice (Prunus cerasus) on melatonin levels and enhanced sleep quality. Eur J Nutr. 2012;51(8):909-916.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22038497/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22038497/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22038497/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Howatson G, McHugh MP, Hill JA, et al. Influence of tart cherry juice on indices of recovery following marathon running. Scand J Med Sci Sports. 2010;20(6):843-852.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/19883392/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/19883392/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/19883392/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pigeon WR, Carr M, Gorman C, Perlis ML. Effects of a tart cherry juice beverage on the sleep of older adults with insomnia: a pilot study. J Med Food. 2010;13(3):579-583.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20438325/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20438325/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20438325/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hill JA, Keane KM, Quinlan R, Howatson G. Tart cherry supplementation and recovery from strenuous exercise: a systematic review and meta-analysis. Int J Sport Nutr Exerc Metab. 2021;31(2):154-167.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/34010816/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/34010816/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/34010816/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bell PG, Walshe IH, Davison GW, Stevenson E, Howatson G. Montmorency cherries reduce the oxidative stress and inflammatory responses to repeated days high-intensity stochastic cycling. Nutrients. 2014;6(2):829-843.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24859636/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24859636/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24859636/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Zhang Y, Neogi T, Chen C, Chaisson C, Hunter DJ, Choi HK. Cherry consumption and decreased risk of recurrent gout attacks. Arthritis Rheum. 2012;64(12):4004-4011.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23023818/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23023818/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23023818/
           </a>
         </li>
@@ -430,12 +430,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -560,7 +560,7 @@ export default function TartCherryPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Tart Cherry</h1>
@@ -586,11 +586,11 @@ export default function TartCherryPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Tart cherry — particularly the Montmorency cultivar (Prunus cerasus) — is a polyphenol-rich whole-fruit botanical with a combined bioactive matrix of natural melatonin, tryptophan, anthocyanins (cyanidin glycosides), and other antioxidant compounds. Its supplement profile rests on two distinct evidence arms: sleep (Howatson 2012 documented ~40 min extended sleep + elevated urinary melatonin metabolites; Pigeon 2010 documented ~84 min extension in older adults with insomnia) and exercise recovery (Hill 2021 meta-analysis of 14 RCTs showed reliable reduction in muscle soreness and improved strength recovery). The natural melatonin content is small (orders of magnitude below melatonin tablets), suggesting benefits come from the combined botanical matrix rather than melatonin alone. Tart cherry pairs naturally with{" "}
-            <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">sleep peptides like DSIP</Link>{" "}
+            <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">sleep peptides like DSIP</Link>{" "}
             and with the broader botanical sleep cluster ({" "}
-            <Link href="/supplements/apigenin" className="text-[#0891b2] hover:underline">apigenin</Link>,{" "}
-            <Link href="/supplements/glycine" className="text-[#0891b2] hover:underline">glycine</Link>,{" "}
-            <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">magnesium</Link>{" "}
+            <Link href="/supplements/apigenin" className="text-[#3A759F] hover:underline">apigenin</Link>,{" "}
+            <Link href="/supplements/glycine" className="text-[#3A759F] hover:underline">glycine</Link>,{" "}
+            <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">magnesium</Link>{" "}
             ).
           </p>
           <div>
@@ -653,11 +653,11 @@ export default function TartCherryPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/melatonin" className="text-sm font-medium text-[#0891b2] hover:underline">Melatonin</Link>
-          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#0891b2] hover:underline">Apigenin</Link>
-          <Link href="/supplements/glycine" className="text-sm font-medium text-[#0891b2] hover:underline">Glycine</Link>
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
-          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#0891b2] hover:underline">Curcumin</Link>
+          <Link href="/supplements/melatonin" className="text-sm font-medium text-[#3A759F] hover:underline">Melatonin</Link>
+          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#3A759F] hover:underline">Apigenin</Link>
+          <Link href="/supplements/glycine" className="text-sm font-medium text-[#3A759F] hover:underline">Glycine</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
+          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#3A759F] hover:underline">Curcumin</Link>
         </div>
       </div>
 

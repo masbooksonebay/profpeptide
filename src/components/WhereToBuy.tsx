@@ -11,15 +11,15 @@ function VendorCard({ slug, note }: VendorEntry) {
   const v = vendors[slug];
   if (!v) return null;
   return (
-    <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-slate-600 bg-white dark:bg-[#0f172a] hover:shadow-md hover:border-[#0891b2]/40 transition-all">
+    <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-slate-600 bg-white dark:bg-[#0f172a] hover:shadow-md hover:border-[#3A759F]/40 transition-all">
       <div className="px-4 py-3 flex items-center justify-between gap-2 border-b border-gray-100 dark:border-slate-700 bg-gray-50 dark:bg-[#1e293b]">
         <Link
           href={v.detailPage}
-          className="text-sm font-bold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-tight"
+          className="text-sm font-bold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-tight"
         >
           {v.name}
         </Link>
-        <span className="text-[11px] font-bold text-[#0891b2] bg-[#0891b2]/15 px-2 py-0.5 rounded-full whitespace-nowrap">
+        <span className="text-[11px] font-bold text-[#3A759F] bg-[#3A759F]/15 px-2 py-0.5 rounded-full whitespace-nowrap">
           {v.discount}
         </span>
       </div>
@@ -55,7 +55,7 @@ function VendorCard({ slug, note }: VendorEntry) {
         <div className="flex items-center gap-2 pt-1">
           <Link
             href={v.detailPage}
-            className="text-[11px] font-medium text-[#0891b2] hover:underline"
+            className="text-[11px] font-medium text-[#3A759F] hover:underline"
           >
             Learn more &rarr;
           </Link>
@@ -64,7 +64,7 @@ function VendorCard({ slug, note }: VendorEntry) {
               href={v.url}
               target="_blank"
               rel="sponsored noopener noreferrer"
-              className="text-[11px] font-medium text-[#0891b2] hover:underline ml-auto"
+              className="text-[11px] font-medium text-[#3A759F] hover:underline ml-auto"
             >
               Shop &rarr;
             </a>
@@ -114,7 +114,7 @@ export default function WhereToBuy({ peptide }: { peptide: string }) {
       </div>
       <Link
         href="/best-peptide-vendors"
-        className="text-sm font-medium text-[#0891b2] hover:underline"
+        className="text-sm font-medium text-[#3A759F] hover:underline"
       >
         Compare all vendors in our full guide &rarr;
       </Link>

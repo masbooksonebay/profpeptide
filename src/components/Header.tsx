@@ -34,6 +34,11 @@ const nav: NavEntry[] = [
   { label: "App", href: "/app" },
 ];
 
+// Dark mode is disabled: the site renders light-only. The ThemeToggle control
+// below is gated off (not deleted) so it can be re-enabled by flipping this flag
+// once the dark palette is finalized.
+const DARK_MODE_ENABLED = false;
+
 function DropdownPanel({ entry }: { entry: NavEntry }) {
   // "categories" variant: peptide category quick-links
   const baseHref = entry.href;
@@ -43,7 +48,7 @@ function DropdownPanel({ entry }: { entry: NavEntry }) {
         <Link
           key={cat.slug}
           href={`${baseHref}?category=${cat.slug}`}
-          className="flex items-center gap-2.5 px-4 py-2 text-sm text-gray-600 dark:text-slate-300 hover:bg-[#0891b2] hover:text-white transition-colors"
+          className="flex items-center gap-2.5 px-4 py-2 text-sm text-gray-600 dark:text-slate-300 hover:bg-[#3A759F] hover:text-white transition-colors"
         >
           <span className="flex-shrink-0 w-5 text-center"><CategoryIcon name={cat.label} /></span>
           {cat.label}
@@ -52,7 +57,7 @@ function DropdownPanel({ entry }: { entry: NavEntry }) {
       <div className="border-t border-gray-100 dark:border-slate-700 mt-1 pt-1">
         <Link
           href={baseHref}
-          className="flex items-center gap-2.5 px-4 py-2 text-sm font-medium text-[#0891b2] hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+          className="flex items-center gap-2.5 px-4 py-2 text-sm font-medium text-[#3A759F] hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
         >
           <span className="w-5 text-center text-xs">&rarr;</span>
           View All {baseHref === "/peptides" ? "Peptides" : "Supplements"}
@@ -148,9 +153,9 @@ export default function Header() {
                     href={item.href}
                     className={`text-sm transition-all duration-150 hover:scale-105 inline-flex items-center gap-0.5 pb-1 ${
                       isActive(item)
-                        ? "text-[#0891b2] font-medium"
-                        : "text-gray-600 dark:text-slate-300 hover:text-[#0891b2]"
-                    } ${activeDropdown === item.href ? "text-[#0891b2]" : ""}`}
+                        ? "text-[#3A759F] font-medium"
+                        : "text-gray-600 dark:text-slate-300 hover:text-[#3A759F]"
+                    } ${activeDropdown === item.href ? "text-[#3A759F]" : ""}`}
                   >
                     {item.label}
                     <svg className={`w-3 h-3 ml-0.5 transition-transform duration-150 ${activeDropdown === item.href ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -160,7 +165,7 @@ export default function Header() {
                   {activeDropdown === item.href && (
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-0">
                       <div className="h-3 w-full" />
-                      <div className="w-2 h-2 bg-[#0891b2] rotate-45 mx-auto -mb-1 relative z-10" />
+                      <div className="w-2 h-2 bg-[#3A759F] rotate-45 mx-auto -mb-1 relative z-10" />
                       <DropdownPanel entry={item} />
                     </div>
                   )}
@@ -171,8 +176,8 @@ export default function Header() {
                   href={item.href}
                   className={`text-sm transition-all duration-150 hover:scale-105 ${
                     pathname === item.href
-                      ? "text-[#0891b2] font-medium"
-                      : "text-gray-600 dark:text-slate-300 hover:text-[#0891b2]"
+                      ? "text-[#3A759F] font-medium"
+                      : "text-gray-600 dark:text-slate-300 hover:text-[#3A759F]"
                   }`}
                 >
                   {item.label}
@@ -189,7 +194,7 @@ export default function Header() {
               <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-4.3-4.3M10.5 18a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" />
             </svg>
           </button>
-          <ThemeToggle />
+          {DARK_MODE_ENABLED && <ThemeToggle />}
           <button
             className="md:hidden p-2 rounded-md text-gray-500 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-100"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -213,7 +218,7 @@ export default function Header() {
               href={item.href}
               onClick={() => setMobileOpen(false)}
               className={`block py-3 text-sm border-b border-gray-50 dark:border-slate-800 ${
-                pathname.startsWith(item.href) ? "text-[#0891b2] font-medium" : "text-gray-600 dark:text-slate-300"
+                pathname.startsWith(item.href) ? "text-[#3A759F] font-medium" : "text-gray-600 dark:text-slate-300"
               }`}
             >
               {item.label}

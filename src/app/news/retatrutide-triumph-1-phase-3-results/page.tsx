@@ -39,7 +39,7 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
       }} />
 
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to News
         </Link>
 
@@ -52,15 +52,15 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">TL;DR</h2>
           <p>
             Eli Lilly announced positive topline results from TRIUMPH-1, the pivotal Phase 3 trial of{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>, an investigational first-in-class triple hormone receptor agonist. At 80 weeks, the 12 mg dose produced average weight loss of 28.3% (70.3 lbs). In an extension among participants with BMI &ge;35, the same dose produced 30.3% average weight loss (85 lbs) at 104 weeks &mdash; a result Lilly compared to bariatric surgery outcomes. Analysts now project a 2027 FDA approval decision.
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>, an investigational first-in-class triple hormone receptor agonist. At 80 weeks, the 12 mg dose produced average weight loss of 28.3% (70.3 lbs). In an extension among participants with BMI &ge;35, the same dose produced 30.3% average weight loss (85 lbs) at 104 weeks &mdash; a result Lilly compared to bariatric surgery outcomes. Analysts now project a 2027 FDA approval decision.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What is retatrutide?</h2>
           <p>
             Retatrutide (LY3437943) is a first-in-class triple hormone receptor agonist targeting GIP, GLP-1, and glucagon receptors. Unlike single-agonist drugs like{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
             (GLP-1 only) or dual-agonist drugs like{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>{" "}
             (GIP + GLP-1), retatrutide&rsquo;s third receptor target &mdash; glucagon &mdash; drives additional fat metabolism and energy expenditure on top of appetite suppression and improved glucose handling.
           </p>
 
@@ -132,9 +132,9 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Implications for the research peptide community</h2>
           <p>
             Retatrutide remains an investigational compound &mdash; not approved for human therapeutic use anywhere in the world as of this writing. Within the research peptide community, retatrutide has been available from third-party vendors for several years preceding Lilly&rsquo;s anticipated commercial launch. The TRIUMPH-1 data formally validates the triple-agonist mechanism as a meaningful step beyond single and dual GLP-1 receptor agonism, and confirms the compound&rsquo;s place alongside{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
             and{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>{" "}
             as one of the three pivotal compounds in this rapidly evolving therapeutic space.
           </p>
 
@@ -145,7 +145,7 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
                 href="https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#0891b2] hover:underline break-words"
+                className="text-[#3A759F] hover:underline break-words"
               >
                 Eli Lilly investor release, May 21, 2026
               </a>
@@ -155,7 +155,7 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
                 href="https://www.cnbc.com/2026/05/21/eli-lilly-weight-loss-drug-retatrutide-clears-obesity-trial.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#0891b2] hover:underline break-words"
+                className="text-[#3A759F] hover:underline break-words"
               >
                 CNBC: Eli Lilly weight loss drug retatrutide clears obesity trial
               </a>
@@ -165,7 +165,7 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
                 href="https://www.biospace.com/drug-development/lillys-triple-agonist-shows-bariatric-surgery-like-weight-loss-results"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#0891b2] hover:underline break-words"
+                className="text-[#3A759F] hover:underline break-words"
               >
                 BioSpace: Lilly&rsquo;s triple agonist shows bariatric surgery&ndash;like weight loss results
               </a>

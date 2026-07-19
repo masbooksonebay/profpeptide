@@ -215,11 +215,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Creatine pairs naturally with GH-secretagogue and muscle-supporting peptide clusters for users targeting hypertrophy and recovery.{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             and{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">ipamorelin</Link>{" "}
             (typically dosed pre-bed for GH pulse alignment) work on the endocrine axis for recovery and tissue adaptation; creatine works on the ATP-buffering and cell-volumization mechanisms. Mechanistically complementary without overlap.{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             for tendon/joint healing in heavy-training users supports the increased mechanical stress that creatine-enabled higher training volumes create. No formal stack RCT validation but the mechanistic complementarity is direct.
           </p>
         </div>
@@ -227,34 +227,34 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/beta-alanine" className="text-[#0891b2] hover:underline">Beta-alanine</Link>{" "}
+              <Link href="/supplements/beta-alanine" className="text-[#3A759F] hover:underline">Beta-alanine</Link>{" "}
               — different mechanism (muscle carnosine pH buffering for ~60s–4min efforts vs PCr-mediated ATP for &lt;30s efforts). Foundational pairing for high-intensity training.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate</Link>{" "}
+              <Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>{" "}
               — acute pre-workout NO-mediated blood flow and rep volume. Different mechanism, additive in pre-workout context.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Caffeine — central nervous system arousal mechanism. Some older studies suggested caffeine might blunt creatine&apos;s effect (Vandenberghe 1996); more recent work hasn&apos;t replicated this. Practical reality: most evidenced pre-workouts combine both without issue.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/protein-powder" className="text-[#0891b2] hover:underline">Protein powder</Link>{" "}
+              <Link href="/supplements/protein-powder" className="text-[#3A759F] hover:underline">Protein powder</Link>{" "}
               (whey, casein) — amino acid substrate for muscle protein synthesis. Foundational stack for resistance training.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/electrolyte-powders" className="text-[#0891b2] hover:underline">Electrolyte powders</Link>{" "}
+              <Link href="/supplements/electrolyte-powders" className="text-[#3A759F] hover:underline">Electrolyte powders</Link>{" "}
               — hydration support, particularly relevant given creatine&apos;s intracellular water-binding mechanism.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/bcaas" className="text-[#0891b2] hover:underline">BCAAs</Link>{" "}
+              <Link href="/supplements/bcaas" className="text-[#3A759F] hover:underline">BCAAs</Link>{" "}
               — generally redundant with adequate dietary protein. Useful in fasted-training contexts only.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">Glutamine</Link>{" "}
+              <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">Glutamine</Link>{" "}
               — gut barrier and immune support during heavy training blocks. Different mechanism from creatine.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">Vitamin D3</Link>{" "}
+              <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">Vitamin D3</Link>{" "}
               — foundational mineral/hormone for muscle function. Compatible co-supplementation.
             </li>
           </ol>
@@ -401,37 +401,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kreider RB, Kalman DS, Antonio J, et al. International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine. J Int Soc Sports Nutr. 2017;14:18.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/28615996/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28615996/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/28615996/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Rawson ES, Volek JS. Effects of creatine supplementation and resistance training on muscle strength and weightlifting performance. J Strength Cond Res. 2003;17(4):822-831.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/12930169/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/12930169/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/12930169/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Avgerinos KI, Spyrou N, Bougioukas KI, Kapogiannis D. Effects of creatine supplementation on cognitive function of healthy individuals: a systematic review of randomized controlled trials. Exp Gerontol. 2018;108:166-173.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29704637/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29704637/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29704637/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Burke DG, Chilibeck PD, Parise G, Candow DG, Mahoney D, Tarnopolsky M. Effect of creatine and weight training on muscle creatine and performance in vegetarians. Med Sci Sports Exerc. 2003;35(11):1946-1955.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/14600563/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/14600563/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/14600563/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Chilibeck PD, Kaviani M, Candow DG, Zello GA. Effect of creatine supplementation during resistance training on lean tissue mass and muscular strength in older adults: a meta-analysis. Open Access J Sports Med. 2017;8:213-226.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29191764/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29191764/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29191764/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Antonio J, Ciccone V. The effects of pre versus post workout supplementation of creatine monohydrate on body composition and strength. J Int Soc Sports Nutr. 2013;10:36.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23919405/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23919405/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23919405/
           </a>
         </li>
@@ -447,12 +447,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -545,7 +545,7 @@ export default function CreatinePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Creatine</h1>
@@ -634,19 +634,19 @@ export default function CreatinePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/beta-alanine" className="text-sm font-medium text-[#0891b2] hover:underline">Beta-Alanine</Link>
-          <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#0891b2] hover:underline">L-Citrulline Malate</Link>
-          <Link href="/supplements/protein-powder" className="text-sm font-medium text-[#0891b2] hover:underline">Protein Powder</Link>
-          <Link href="/supplements/electrolyte-powders" className="text-sm font-medium text-[#0891b2] hover:underline">Electrolyte Powders</Link>
-          <Link href="/supplements/bcaas" className="text-sm font-medium text-[#0891b2] hover:underline">BCAAs</Link>
-          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#0891b2] hover:underline">Glutamine</Link>
+          <Link href="/supplements/beta-alanine" className="text-sm font-medium text-[#3A759F] hover:underline">Beta-Alanine</Link>
+          <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline Malate</Link>
+          <Link href="/supplements/protein-powder" className="text-sm font-medium text-[#3A759F] hover:underline">Protein Powder</Link>
+          <Link href="/supplements/electrolyte-powders" className="text-sm font-medium text-[#3A759F] hover:underline">Electrolyte Powders</Link>
+          <Link href="/supplements/bcaas" className="text-sm font-medium text-[#3A759F] hover:underline">BCAAs</Link>
+          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">Glutamine</Link>
         </div>
       </div>
 
-      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/compare/creatine-vs-beta-alanine" className="text-sm font-medium text-[#0891b2] hover:underline">Creatine vs Beta-Alanine &rarr;</Link>
+          <Link href="/compare/creatine-vs-beta-alanine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine vs Beta-Alanine &rarr;</Link>
         </div>
       </div>
 

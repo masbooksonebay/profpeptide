@@ -20,10 +20,10 @@ const faqs = [
     a: (
       <>
         The MK-677 + Ipamorelin stack is a 2-component growth hormone secretagogue blend combining{" "}
-        <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677 (Ibutamoren)</Link>{" "}
+        <Link href="/peptides/mk-677" className="text-[#3A759F] hover:underline">MK-677 (Ibutamoren)</Link>{" "}
         &mdash; a non-peptide, orally bioavailable ghrelin mimetic with an ~24-hour half-life that provides a
         sustained 24 h GH/IGF-1 baseline &mdash; with{" "}
-        <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+        <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
         (a selective injectable GHRP, ~2 h half-life, clean pulsatile trigger). The thesis is that MK-677
         delivers once-daily oral convenience and sustained IGF-1 elevation while Ipamorelin adds a sharper
         pre-bed GH pulse. Both compounds are prohibited by WADA (Section S2) and neither is FDA-approved.
@@ -36,7 +36,7 @@ const faqs = [
       <>
         Yes &mdash; this is the central mechanistic caveat of this stack. Both MK-677 and Ipamorelin are
         agonists at the <span className="font-semibold">GHS-R1a (ghrelin receptor)</span>. Unlike the{" "}
-        <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>{" "}
+        <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>{" "}
         which hits <span className="italic">two distinct</span> receptor pathways (GHRHR + GHS-R1a) for
         documented supra-additive synergy, MK-677 and Ipamorelin compete for the same receptor. Whether
         Ipamorelin adds meaningful incremental GH output on top of a saturating MK-677 dose is debated in
@@ -44,9 +44,9 @@ const faqs = [
         MK-677&apos;s long half-life provides a sustained 24 h baseline elevation, while Ipamorelin&apos;s
         short half-life generates a sharper, more physiologically pulsatile overnight spike. Researchers
         who prioritize dual-pathway synergy should consider{" "}
-        <Link href="/peptides/sermorelin-ipamorelin" className="text-[#0891b2] hover:underline">Sermorelin + Ipamorelin</Link>{" "}
+        <Link href="/peptides/sermorelin-ipamorelin" className="text-[#3A759F] hover:underline">Sermorelin + Ipamorelin</Link>{" "}
         or the{" "}
-        <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>{" "}
+        <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack</Link>{" "}
         instead.
       </>
     ),
@@ -63,7 +63,7 @@ const faqs = [
         that mimics ghrelin and activates the GHS-R1a receptor. It is orally bioavailable (capsule or liquid
         form, no reconstitution required) and does not require refrigeration in its stable dry form. This
         distinguishes it from{" "}
-        <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>,
+        <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>,
         which is a true peptide: lyophilized, reconstituted with bacteriostatic water, and administered
         by subcutaneous injection. In this stack, MK-677 is oral and Ipamorelin is injectable.
       </>
@@ -82,14 +82,14 @@ const faqs = [
     a: (
       <>
         The core difference is mechanistic. The{" "}
-        <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack (CJC-1295 no-DAC + Ipamorelin)</Link>{" "}
+        <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack (CJC-1295 no-DAC + Ipamorelin)</Link>{" "}
         activates two distinct receptor pathways &mdash; GHRHR (cAMP/PKA via CJC-1295) and GHS-R1a
         (calcium/PKC via Ipamorelin) &mdash; producing documented supra-additive GH release of 2&ndash;4&times;
         vs monotherapy. MK-677 + Ipamorelin both act on GHS-R1a, so dual-pathway synergy does not apply.
         The practical advantage of MK-677 + Ipamorelin is oral convenience for the baseline compound:
         MK-677 requires no reconstitution, no refrigeration, and no injection. Researchers who want
         dual-pathway synergy should use the GH Stack or{" "}
-        <Link href="/peptides/sermorelin-ipamorelin" className="text-[#0891b2] hover:underline">Sermorelin + Ipamorelin</Link>;
+        <Link href="/peptides/sermorelin-ipamorelin" className="text-[#3A759F] hover:underline">Sermorelin + Ipamorelin</Link>;
         researchers who want oral convenience + injectable pulse triggering may prefer MK-677 + Ipamorelin
         with the overlapping-mechanism caveat clearly in view.
       </>
@@ -255,7 +255,7 @@ const sections = [
         </div>
         <p className="text-sm text-gray-500 dark:text-slate-400 italic leading-relaxed">
           For 2 mg Ipamorelin vials or non-standard sizes, use the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator</Link>{" "}
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</Link>{" "}
           for accurate reconstitution math.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
@@ -265,7 +265,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your Ipamorelin dose? Use the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -352,9 +352,9 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Tissue-repair peptides.</span>{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           +{" "}
-          <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+          <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
           for combined local + systemic tissue repair. MK-677&apos;s sustained IGF-1 elevation provides a consistent anabolic repair substrate that amplifies the local effects of healing peptides.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -365,15 +365,15 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Consider switching to a dual-pathway alternative.</span> Researchers who want supra-additive dual-pathway GH synergy can substitute MK-677 with a GHRH analog: the{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>{" "}
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>{" "}
           or{" "}
-          <Link href="/peptides/sermorelin-ipamorelin" className="text-[#0891b2] hover:underline">Sermorelin + Ipamorelin</Link>{" "}
+          <Link href="/peptides/sermorelin-ipamorelin" className="text-[#3A759F] hover:underline">Sermorelin + Ipamorelin</Link>{" "}
           both hit GHRHR + GHS-R1a for documented supra-additive synergy. The trade-off is losing MK-677&apos;s oral route.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: additional GH secretagogues.</span> Adding{" "}
-          <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>,{" "}
-          <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>,{" "}
+          <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>,{" "}
+          <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>,{" "}
           or any GHRP on top of this stack compounds side effects (appetite, water retention, insulin resistance, IGF-1 overshoot) without a clear incremental benefit ceiling.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -427,9 +427,9 @@ const sections = [
           The appetite stimulation and insulin-resistance profile of MK-677 is the most important differentiator
           from injectable GHRH+GHRP stacks. Researchers who want GH-axis support with a cleaner metabolic
           profile should consider the{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>{" "}
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>{" "}
           or{" "}
-          <Link href="/peptides/sermorelin-ipamorelin" className="text-[#0891b2] hover:underline">Sermorelin + Ipamorelin</Link>{" "}
+          <Link href="/peptides/sermorelin-ipamorelin" className="text-[#3A759F] hover:underline">Sermorelin + Ipamorelin</Link>{" "}
           instead.
         </p>
       </div>
@@ -511,7 +511,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all verified vendors &rarr;
           </Link>
         </p>
@@ -544,7 +544,7 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nass R, Pezzoli SS, Oliveri MC, et al. Effects of an oral ghrelin mimetic on body composition and
           clinical outcomes in healthy older adults. Ann Intern Med. 2008;149(9):601-611.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18981485/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18981485/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18981485/
           </a>
         </li>
@@ -552,21 +552,21 @@ const sections = [
           Murphy MG, Bach MA, Plotkin D, et al. Oral administration of the growth hormone secretagogue
           MK-677 increases markers of bone turnover in obese and functionally impaired elderly adults.
           J Clin Endocrinol Metab. 1998;84(3):946-952.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/10404019/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/10404019/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/10404019/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Raun K, Hansen BS, Johansen NL, et al. Ipamorelin, the first selective growth hormone secretagogue.
           Eur J Endocrinol. 1998;139(5):552-561.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9849822/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9849822/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9849822/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ishida J, Saitoh M, Ebner N, et al. Growth hormone secretagogues: history, mechanism of action,
           and clinical development. JCSM Rapid Commun. 2020;3(1):25-37.{" "}
-          <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rco2.9" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rco2.9" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://onlinelibrary.wiley.com/doi/full/10.1002/rco2.9
           </a>
         </li>
@@ -574,7 +574,7 @@ const sections = [
           Svensson J, L&ouml;nn L, Jansson JO, et al. Two-month treatment of obese subjects with the oral
           growth hormone (GH) secretagogue MK-677 increases GH secretion, fat-free mass, and energy
           expenditure. J Clin Endocrinol Metab. 1998;83(2):362-369.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9467542/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9467542/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9467542/
           </a>
         </li>
@@ -594,12 +594,12 @@ const sections = [
           class mechanistic context.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -620,7 +620,7 @@ export default function MK677IpamorelinPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -651,18 +651,18 @@ export default function MK677IpamorelinPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             MK-677 + Ipamorelin is a GH secretagogue stack combining{" "}
-            <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677 (Ibutamoren)</Link>{" "}
+            <Link href="/peptides/mk-677" className="text-[#3A759F] hover:underline">MK-677 (Ibutamoren)</Link>{" "}
             &mdash; a non-peptide, orally bioavailable ghrelin mimetic with an ~24-hour half-life &mdash; and{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
             (a selective injectable GHRP, ~2-hour half-life). MK-677 provides a sustained 24 h baseline elevation of
             GH/IGF-1 via once-daily oral dosing; Ipamorelin adds a sharp, clean pre-bed pulsatile GH spike via
             subcutaneous injection. The stack&apos;s primary appeal is oral convenience for the baseline compound.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold">Key mechanistic caveat:</span> Unlike the{" "}
-            <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>{" "}
+            <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>{" "}
             or{" "}
-            <Link href="/peptides/sermorelin-ipamorelin" className="text-[#0891b2] hover:underline">Sermorelin + Ipamorelin</Link>{" "}
+            <Link href="/peptides/sermorelin-ipamorelin" className="text-[#3A759F] hover:underline">Sermorelin + Ipamorelin</Link>{" "}
             &mdash; which each combine a GHRH analog (GHRHR pathway) with a GHRP (GHS-R1a pathway) for documented
             supra-additive dual-pathway synergy &mdash; MK-677 and Ipamorelin both act on the <span className="font-semibold">same GHS-R1a receptor</span>.
             This means dual-pathway synergy does not apply; the two compounds compete at the ghrelin receptor rather than
@@ -672,7 +672,7 @@ export default function MK677IpamorelinPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -696,7 +696,7 @@ export default function MK677IpamorelinPage() {
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Typically sold as
             separate products &mdash; MK-677 as oral capsules or liquid, Ipamorelin as lyophilized injectable vial.
             Neither is FDA-approved. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -748,19 +748,19 @@ export default function MK677IpamorelinPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/mk-677" className="text-sm font-medium text-[#0891b2] hover:underline">MK-677</Link>
-          <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Ipamorelin</Link>
-          <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#0891b2] hover:underline">CJC-1295</Link>
-          <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Sermorelin</Link>
+          <Link href="/peptides/mk-677" className="text-sm font-medium text-[#3A759F] hover:underline">MK-677</Link>
+          <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Ipamorelin</Link>
+          <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#3A759F] hover:underline">CJC-1295</Link>
+          <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Sermorelin</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#0891b2] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>
-          <Link href="/peptides/sermorelin-ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Sermorelin + Ipamorelin</Link>
-          <Link href="/peptides/cjc-1295-dac-ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">CJC-1295 DAC + Ipamorelin</Link>
+          <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#3A759F] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>
+          <Link href="/peptides/sermorelin-ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Sermorelin + Ipamorelin</Link>
+          <Link href="/peptides/cjc-1295-dac-ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">CJC-1295 DAC + Ipamorelin</Link>
         </div>
       </div>
 

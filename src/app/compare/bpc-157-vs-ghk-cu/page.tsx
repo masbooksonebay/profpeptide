@@ -41,11 +41,11 @@ export default function BPC157vsGHKCuPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"BPC-157 vs GHK-Cu — Healing Peptide Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">BPC-157 vs GHK-Cu &mdash; Healing &amp; Tissue Repair Peptide Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">BPC-157 and GHK-Cu are both studied for tissue repair and healing, but they work through completely different mechanisms and have distinct primary applications. BPC-157 originates from gastric biology and excels in systemic tissue repair. GHK-Cu is a copper-binding tripeptide with extraordinary gene regulatory activity, primarily studied for skin, wound healing, and anti-aging.</p>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why these two are studied for completely different healing problems</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           BPC-157 and GHK-Cu are both research peptides studied for tissue repair, but they target almost entirely different problems. Confusing them as substitutes leads to mismatched expectations.
@@ -65,8 +65,8 @@ export default function BPC157vsGHKCuPage() {
         <table className="w-full text-sm border-collapse">
           <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
             <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">BPC-157</th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">GHK-Cu</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">BPC-157</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">GHK-Cu</th>
           </tr></thead>
           <tbody>{rows.map(([label, a, b], i) => (
             <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
@@ -112,7 +112,7 @@ export default function BPC157vsGHKCuPage() {
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link> is the broader systemic repair peptide &mdash; strongest for gut, tendons, and CNS. <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link> is the skin and wound healing specialist &mdash; particularly valuable for topical applications and anti-aging. They don&apos;t overlap significantly and can be studied together for comprehensive tissue repair protocols.</p>
+        <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link> is the broader systemic repair peptide &mdash; strongest for gut, tendons, and CNS. <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link> is the skin and wound healing specialist &mdash; particularly valuable for topical applications and anti-aging. They don&apos;t overlap significantly and can be studied together for comprehensive tissue repair protocols.</p>
       </div>
 
       <div className="mb-8">

@@ -35,11 +35,11 @@ const faqs = [
     a: (
       <>
         Yes — the Sinclair-protocol pairing is mechanistically natural and is one of the canonical longevity-stack combinations.{" "}
-        <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link>{" "}
+        <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
         (or other NAD+ precursors) supplies the NAD+ substrate that sirtuin enzymes require to function. Resveratrol activates sirtuins. Together, the pairing addresses both sides: substrate supply + enzymatic activation. For users building comprehensive longevity protocols:{" "}
-        <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+        <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
         (injectable) delivers NAD+ directly, bypassing oral bioavailability constraints of precursors.{" "}
-        <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+        <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
         adds the pineal-axis longevity arm via telomere maintenance. The four-component longevity stack (resveratrol + NMN + NAD+ peptide + Epitalon) covers SIRT1 activation, NAD+ substrate supply (oral + injectable routes), and pineal-axis regulation. Mechanistically coherent, no known negative interactions. The trial evidence for the combination specifically is thinner than for components individually.
       </>
     ),
@@ -218,9 +218,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Resveratrol pairs naturally with the longevity peptide cluster — particularly via the NAD+ / sirtuin axis.{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
             (injectable / subcutaneous) delivers NAD+ directly into circulation, bypassing oral bioavailability constraints. Resveratrol activates sirtuins; NAD+ peptide supplies the substrate sirtuins require to function. The two operate on different layers of the same pathway and are mechanistically complementary.{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
             adds the pineal-axis longevity arm — telomere maintenance and circadian regulation through a separate pathway. The three-peptide longevity stack (NAD+ peptide + Epitalon + resveratrol + NMN) covers SIRT1 activation, NAD+ substrate (oral + injectable routes), and pineal-axis regulation. Mechanistically coherent, no known negative interactions. The combination trial evidence is thinner than for individual components.
           </p>
         </div>
@@ -228,27 +228,27 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link>{" "}
+              <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
               — the canonical Sinclair-protocol pairing. NMN supplies NAD+ substrate; resveratrol activates the sirtuins that use it. Trial evidence for the combination is thinner than for individual components, but the mechanistic rationale is mature.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">Oral NAD+ supplements</Link>{" "}
+              <Link href="/supplements/nad-plus" className="text-[#3A759F] hover:underline">Oral NAD+ supplements</Link>{" "}
               — alternative NAD+ precursor stack. Same logic as NMN pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/spermidine" className="text-[#0891b2] hover:underline">Spermidine</Link>{" "}
+              <Link href="/supplements/spermidine" className="text-[#3A759F] hover:underline">Spermidine</Link>{" "}
               — autophagy activator via EP300 inhibition. Different aging-biology arm; common longevity-stack co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/quercetin" className="text-[#0891b2] hover:underline">Quercetin</Link>{" "}
+              <Link href="/supplements/quercetin" className="text-[#3A759F] hover:underline">Quercetin</Link>{" "}
               — senolytic flavonoid. Compatible longevity-stack co-occupant; mechanistically complementary (senolytic clearance + sirtuin activation).
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/apigenin" className="text-[#0891b2] hover:underline">Apigenin</Link>{" "}
+              <Link href="/supplements/apigenin" className="text-[#3A759F] hover:underline">Apigenin</Link>{" "}
               — CD38 inhibitor preserving NAD+. Mechanism complement to resveratrol&apos;s sirtuin activation by reducing NAD+ consumption.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/coq10" className="text-[#0891b2] hover:underline">CoQ10</Link>{" "}
+              <Link href="/supplements/coq10" className="text-[#3A759F] hover:underline">CoQ10</Link>{" "}
               — mitochondrial electron carrier and antioxidant. Compatible cardiovascular and mitochondrial pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -390,37 +390,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Baur JA, Sinclair DA. Therapeutic potential of resveratrol: the in vivo evidence. Nat Rev Drug Discov. 2006;5(6):493-506.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16732220/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16732220/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16732220/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Baur JA, Pearson KJ, Price NL, et al. Resveratrol improves health and survival of mice on a high-calorie diet. Nature. 2006;444(7117):337-342.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17086191/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17086191/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17086191/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hausenblas HA, Schoulda JA, Smoliga JM. Resveratrol treatment as an adjunct to pharmacological management in type 2 diabetes mellitus — systematic review and meta-analysis. Mol Nutr Food Res. 2015;59(1):147-159.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25164061/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25164061/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25164061/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Liu Y, Ma W, Zhang P, He S, Huang D. Effect of resveratrol on blood pressure: a meta-analysis of randomized controlled trials. Clin Nutr. 2015;34(1):27-34.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24731650/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24731650/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24731650/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Brasnyó P, Molnár GA, Mohás M, et al. Resveratrol improves insulin sensitivity, reduces oxidative stress and activates the Akt pathway in type 2 diabetic patients. Br J Nutr. 2011;106(3):383-389.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21450125/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21450125/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21450125/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bischoff-Ferrari HA, Vellas B, Rizzoli R, et al. Effect of vitamin D supplementation, omega-3 fatty acid supplementation, or a strength-training exercise program on clinical outcomes in older adults: the DO-HEALTH randomized clinical trial. JAMA. 2020;324(18):1855-1868.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33170239/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33170239/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33170239/
           </a>
         </li>
@@ -436,12 +436,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -566,7 +566,7 @@ export default function ResveratrolPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Resveratrol</h1>
@@ -592,9 +592,9 @@ export default function ResveratrolPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Resveratrol is a polyphenol stilbenoid found in red grape skins, blueberries, peanuts, and most famously red wine — sparking the &ldquo;French Paradox&rdquo; epidemiological interest in 1990s cardiovascular research. David Sinclair&apos;s laboratory identified resveratrol as a sirtuin-activating compound (STAC) in 2003, triggering the modern wave of longevity research. The mechanism case is mature — SIRT1 activation (directly or indirectly via PDE inhibition + AMPK), caloric-restriction mimicry, NF-κB inhibition, antioxidant effects. The biomarker evidence is moderate — Liu 2015 meta-analysis documents significant blood pressure reduction at ≥150 mg/day; Hausenblas 2015 documents HbA1c, fasting glucose, and HOMA-IR improvements in T2D; Brasnyó 2011 documents insulin sensitivity improvements at remarkably low doses (10 mg/day). But the hard clinical endpoint evidence is meaningfully more limited — DO-HEALTH 2020-era large trials in elderly populations have produced null results on physical function, cognitive decline, and major clinical outcomes for sirtuin-targeting interventions broadly. The central practical constraint is bioavailability — resveratrol is rapidly glucuronidated and sulfated, producing peak plasma concentrations 1000× below in-vitro effective concentrations. Honest framing: mechanism-strong, biomarker-moderate, hard-clinical-endpoint Mixed/Limited. Not the unequivocal longevity intervention some marketing suggests, but a reasonable Sinclair-protocol component for users building comprehensive longevity stacks. Pairs naturally with{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
             (substrate supply for sirtuin activation) and{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
             (pineal-axis longevity).
           </p>
           <div>
@@ -658,12 +658,12 @@ export default function ResveratrolPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/nmn" className="text-sm font-medium text-[#0891b2] hover:underline">NMN</Link>
-          <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
-          <Link href="/supplements/spermidine" className="text-sm font-medium text-[#0891b2] hover:underline">Spermidine</Link>
-          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#0891b2] hover:underline">Quercetin</Link>
-          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#0891b2] hover:underline">Apigenin</Link>
-          <Link href="/supplements/coq10" className="text-sm font-medium text-[#0891b2] hover:underline">CoQ10</Link>
+          <Link href="/supplements/nmn" className="text-sm font-medium text-[#3A759F] hover:underline">NMN</Link>
+          <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
+          <Link href="/supplements/spermidine" className="text-sm font-medium text-[#3A759F] hover:underline">Spermidine</Link>
+          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#3A759F] hover:underline">Quercetin</Link>
+          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#3A759F] hover:underline">Apigenin</Link>
+          <Link href="/supplements/coq10" className="text-sm font-medium text-[#3A759F] hover:underline">CoQ10</Link>
         </div>
       </div>
 

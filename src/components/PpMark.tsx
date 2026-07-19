@@ -2,7 +2,7 @@
 // PATHS, not CSS text, so they can never overflow). Inline (not an <img>) so the
 // tile interior can swap navy by theme: #0f172a in light (matches the app icon /
 // favicon) and #1e2d3d in dark, where the header itself is #0f172a and a #0f172a
-// tile would dissolve. Cyan #0891b2 border and #f0f4f8 letters stay constant.
+// tile would dissolve. Cyan #3A759F border and #f0f4f8 letters stay constant.
 export default function PpMark({
   className,
   style,
@@ -29,7 +29,7 @@ export default function PpMark({
         x="30" y="30" width="964" height="964" rx="145" ry="145"
         className={interior ? undefined : "fill-[#0f172a] dark:fill-[#1e2d3d]"}
         fill={interior}
-        stroke="#0891b2" strokeWidth="60"
+        stroke="#3A759F" strokeWidth="60"
       />
       {/* "Pp" letterforms (traced), off-white. */}
       <g transform="translate(512,512) scale(1.65644) translate(-519.5,-521.5)">

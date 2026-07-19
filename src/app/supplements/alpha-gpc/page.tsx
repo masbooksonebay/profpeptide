@@ -27,9 +27,9 @@ const faqs = [
     a: (
       <>
         Yes — but it&apos;s an acute, exercise-coupled effect, not a chronic GH protocol. Ziegenfuss 2008 found 600 mg taken 60–90 minutes before resistance exercise produced a 44% higher peak GH response versus placebo, with downstream improvements in lower-body force production. Without the exercise stimulus, the GH effect is small. Treat this as a workout-day adjunct, not a daily GH-axis intervention. For sustained GH support, peptides in the GH cluster ({" "}
-        <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>,{" "}
-        <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>,{" "}
-        <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>) do the actual work.
+        <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>,{" "}
+        <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>,{" "}
+        <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>) do the actual work.
       </>
     ),
   },
@@ -50,9 +50,9 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural.{" "}
-        <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+        <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
         is an ACTH(4-10) analog that modulates BDNF and neurotrophic signaling;{" "}
-        <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+        <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
         is a tuftsin analog with anxiolytic and mild nootropic effects via GABA modulation. Neither peptide directly increases acetylcholine — they work upstream and laterally. Alpha-GPC supplies the cholinergic substrate, so the combination addresses different layers of cognitive function: peptides for neurotrophic and emotional regulation, Alpha-GPC for the acetylcholine fuel. No known negative interactions, but introduce one variable at a time so you can tell what's actually doing what.
       </>
     ),
@@ -220,9 +220,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Alpha-GPC pairs naturally with the Russian-origin cognitive peptide cluster.{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
             (an ACTH(4-10) analog) modulates BDNF and neurotrophic signaling.{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             (a tuftsin analog) provides anxiolytic and mild nootropic effects through GABA modulation. Neither peptide directly increases acetylcholine — they work upstream and laterally. Alpha-GPC supplies the cholinergic fuel, so the combined stack addresses different layers: peptides for neurotrophic and emotional regulation, Alpha-GPC for the acetylcholine substrate. Introduce one variable at a time when starting a new stack so you can tell what&apos;s actually doing what.
           </p>
         </div>
@@ -230,20 +230,20 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/lions-mane" className="text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>{" "}
+              <Link href="/supplements/lions-mane" className="text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>{" "}
               — BDNF/NGF stimulation pairs with Alpha-GPC&apos;s acetylcholine supply; classic nootropic combination for sustained cognitive support.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-Theanine</Link>{" "}
+              <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-Theanine</Link>{" "}
               — alpha-wave focus state without the jittery edge of stimulants. Pairs especially well with Alpha-GPC +{" "}
-              <Link href="/supplements/caffeine" className="text-[#0891b2] hover:underline">caffeine</Link>.
+              <Link href="/supplements/caffeine" className="text-[#3A759F] hover:underline">caffeine</Link>.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/phosphatidylserine" className="text-[#0891b2] hover:underline">Phosphatidylserine</Link>{" "}
+              <Link href="/supplements/phosphatidylserine" className="text-[#3A759F] hover:underline">Phosphatidylserine</Link>{" "}
               — cortisol-blunting + cognitive support. Complementary to Alpha-GPC&apos;s membrane-support arm.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/bacopa-monnieri" className="text-[#0891b2] hover:underline">Bacopa Monnieri</Link>{" "}
+              <Link href="/supplements/bacopa-monnieri" className="text-[#3A759F] hover:underline">Bacopa Monnieri</Link>{" "}
               — long-term memory consolidation; effects build over weeks. Different timescale from Alpha-GPC but a natural daily companion.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -256,7 +256,7 @@ const sections = [
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mental-work timing.</span> Take 30–60 minutes before deep cognitive work; effects build within the first hour.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Training timing.</span> 60–90 minutes pre-workout for the GH and force-production effects. Pair with creatine if performance is the goal.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold"><Link href="/supplements/caffeine" className="text-[#0891b2] hover:underline">Caffeine</Link>.</span> Synergistic. Caffeine raises arousal and adenosine resistance; Alpha-GPC raises acetylcholine availability. Watch total stimulant load.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold"><Link href="/supplements/caffeine" className="text-[#3A759F] hover:underline">Caffeine</Link>.</span> Synergistic. Caffeine raises arousal and adenosine resistance; Alpha-GPC raises acetylcholine availability. Watch total stimulant load.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sleep timing.</span> Avoid evening dosing if you&apos;re sensitive — cholinergic activation can disrupt REM architecture in some users.</li>
           </ol>
         </div>
@@ -293,7 +293,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anticholinergic medications (some antihistamines, tricyclic antidepressants, certain bladder medications) — Alpha-GPC&apos;s pro-cholinergic effect may partially oppose these drugs. Consult a clinician if you&apos;re on chronic anticholinergic therapy.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cholinesterase inhibitors (donepezil, rivastigmine — Alzheimer&apos;s drugs) — additive cholinergic effect. Coordinate with the prescribing clinician.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Other high-choline supplements (CDP-choline, choline bitartrate, phosphatidylcholine, lecithin) — stacking is fine but watch total choline load. Most users don&apos;t need to combine sources.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stimulants (<Link href="/supplements/caffeine" className="text-[#0891b2] hover:underline">caffeine</Link>, modafinil, ADHD medications) — synergistic for focus, but watch total cognitive load. Reduce caffeine if you notice over-stimulation.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Stimulants (<Link href="/supplements/caffeine" className="text-[#3A759F] hover:underline">caffeine</Link>, modafinil, ADHD medications) — synergistic for focus, but watch total cognitive load. Reduce caffeine if you notice over-stimulation.</li>
           </ol>
         </div>
       </div>
@@ -390,37 +390,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Parnetti L, Abate G, Bartorelli L, et al. Multicentre study of l-alpha-glycerylphosphorylcholine vs ST200 among patients with probable senile dementia of Alzheimer&apos;s type. Drugs Aging. 1993;3(2):159-164.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/8443594/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/8443594/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/8443594/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           De Jesus Moreno Moreno M. Cognitive improvement in mild to moderate Alzheimer&apos;s dementia after treatment with the acetylcholine precursor choline alphoscerate: a multicenter, double-blind, randomized, placebo-controlled trial. Clin Ther. 2003;25(1):178-193.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/12637119/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/12637119/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/12637119/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ziegenfuss T, Landis J, Hofheins J. Acute supplementation with alpha-glycerylphosphorylcholine augments growth hormone response to, and peak force production during, resistance exercise. J Int Soc Sports Nutr. 2008;5(Suppl 1):P15.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/19660150/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/19660150/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/19660150/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bellar D, LeBlanc NR, Campbell B. The effect of 6 days of alpha glycerylphosphorylcholine on isometric strength. J Int Soc Sports Nutr. 2015;12:42.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26525096/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26525096/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26525096/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Marcus L, Soileau J, Judge LW, Bellar D. Evaluation of the effects of two doses of alpha glycerylphosphorylcholine on physical and psychomotor performance. J Int Soc Sports Nutr. 2017;14:39.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/28919842/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28919842/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/28919842/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kawamura T, Okubo T, Sato K, et al. Glycerophosphocholine enhances growth hormone secretion and fat oxidation in young adults. Nutrition. 2012;28(11-12):1122-1126.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22673596/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22673596/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22673596/
           </a>
         </li>
@@ -436,12 +436,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -566,7 +566,7 @@ export default function AlphaGPCPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Alpha-GPC</h1>
@@ -592,7 +592,7 @@ export default function AlphaGPCPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Alpha-GPC (alpha-glycerophosphocholine) is the most bioavailable, brain-penetrant choline source available as a supplement. It outperforms choline bitartrate and CDP-choline for raising plasma and brain choline — the substrate the brain needs to synthesize acetylcholine, the neurotransmitter central to attention, memory, and learning. Approximately 90% of adults don&apos;t consume adequate dietary choline, so the supplement bridges a real nutritional gap. In Italy, Alpha-GPC is sold as a prescription drug (Gliatilin) for cognitive impairment and dementia; in the rest of the world, it&apos;s available over-the-counter and widely used in nootropic stacks. The biohacker case is built on three things: a substantial dementia RCT base, acute exercise GH and force-production evidence, and a strong mechanistic rationale for stacking with{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">cognitive peptides</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">cognitive peptides</Link>{" "}
             that work via different pathways.
           </p>
           <div>
@@ -655,10 +655,10 @@ export default function AlphaGPCPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>
-          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#0891b2] hover:underline">Bacopa Monnieri</Link>
-          <Link href="/supplements/phosphatidylserine" className="text-sm font-medium text-[#0891b2] hover:underline">Phosphatidylserine</Link>
-          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Theanine</Link>
+          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>
+          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#3A759F] hover:underline">Bacopa Monnieri</Link>
+          <Link href="/supplements/phosphatidylserine" className="text-sm font-medium text-[#3A759F] hover:underline">Phosphatidylserine</Link>
+          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>
         </div>
       </div>
 

@@ -27,9 +27,9 @@ const faqs = [
     a: (
       <>
         Thymogen is a synthetic thymic dipeptide with the sequence L-Glu-L-Trp (the &ldquo;EW&rdquo; dipeptide). It belongs to the family of Khavinson short-peptide bioregulators and was identified as the principal active component of Thymalin &mdash; a thymic extract &mdash; isolated via reversed-phase HPLC. It is also known as Oglufanide and IM-862. It is studied in the same short-peptide tradition as{" "}
-        <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>{" "}
+        <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>{" "}
         and{" "}
-        <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>.
+        <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>.
       </>
     ),
   },
@@ -50,7 +50,7 @@ const faqs = [
     a: (
       <>
         Thymogen is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
-        <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
           Peptides.gg discount code (PROF15) &rarr;
         </Link>
         .
@@ -179,7 +179,7 @@ const sections = [
       <div className="space-y-4">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-          <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
             Peptides.gg discount code (PROF15) &rarr;
           </Link>{" "}
           for current options.
@@ -212,25 +212,25 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Smith DL, et al. L-Glu-L-Trp inhibits tumor growth in mice in an NK-cell– and perforin-dependent manner. Int J Cancer. 2003;106(4):528-533. PMID 12845648.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/12845648/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/12845648/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/12845648/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tulpule A, et al. Intranasal IM862 (oglufanide) in AIDS-related Kaposi&apos;s sarcoma — open-label Phase I/II. J Clin Oncol. 2000. PMID 10673512.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/10673512/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/10673512/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/10673512/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Noy A, et al. Randomized, double-blind, placebo-controlled Phase III of IM862 in AIDS-related Kaposi&apos;s sarcoma. J Clin Oncol. 2005;23(5):990-998. PMID 15598977.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/15598977/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/15598977/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/15598977/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Deplanque G, et al. Phase II of intranasal IM862 in metastatic renal cell carcinoma. Br J Cancer. 2004. PMID 15354209.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/15354209/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/15354209/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/15354209/
           </a>
         </li>
@@ -246,12 +246,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper. Note that the strongest controlled trial (Noy et al. 2005) was negative.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -272,7 +272,7 @@ export default function ThymogenPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -308,10 +308,10 @@ export default function ThymogenPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Thymogen is a synthetic thymic dipeptide (L-Glu-L-Trp, the &ldquo;EW&rdquo; dipeptide) developed within the Khavinson short-peptide bioregulator program. It was identified as the principal active component of Thymalin &mdash; a thymic extract &mdash; and isolated via reversed-phase HPLC. Functionally it is an immunomodulator that normalizes immune activity rather than purely stimulating it: it drives maturation of pre-T cells into mature T-lymphocytes, is reported to normalize the CD4/CD8 ratio, raises intracellular cAMP in T-lymphocytes, and enhances neutrophil chemotaxis and phagocytosis. Under the names IM-862 and Oglufanide it was also studied as a VEGF-inhibiting antiangiogenic agent in cancer. A structural curiosity defines its identity: its mirror-image enantiomer, D-Glu-D-Trp (Thymodepressin), is immunosuppressive &mdash; opposite activity from the same atoms. The evidence base is mixed &mdash; preclinical immunology plus oncology trials whose most rigorous controlled test was negative &mdash; and in the US it is research-use-only. It sits in the same short-peptide family as{" "}
-            <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>{" "}
+            <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>{" "}
             and{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -329,7 +329,7 @@ export default function ThymogenPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Thymogen is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-            <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
               Peptides.gg discount code (PROF15) &rarr;
             </Link>{" "}
             for current options.
@@ -383,14 +383,14 @@ export default function ThymogenPage() {
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         {/* TODO: add sibling Khavinson bioregulator links (Cardiogen, Cortagen) as those profiles go live. */}
-        <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>
-        <Link href="/peptides/pinealon" className="text-sm font-medium text-[#0891b2] hover:underline">Pinealon</Link>
-        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
-        <Link href="/peptides/semax" className="text-sm font-medium text-[#0891b2] hover:underline">Semax</Link>
-        <Link href="/peptides/selank" className="text-sm font-medium text-[#0891b2] hover:underline">Selank</Link>
-        <Link href="/peptides/dsip" className="text-sm font-medium text-[#0891b2] hover:underline">DSIP</Link>
+        <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>
+        <Link href="/peptides/pinealon" className="text-sm font-medium text-[#3A759F] hover:underline">Pinealon</Link>
+        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
+        <Link href="/peptides/semax" className="text-sm font-medium text-[#3A759F] hover:underline">Semax</Link>
+        <Link href="/peptides/selank" className="text-sm font-medium text-[#3A759F] hover:underline">Selank</Link>
+        <Link href="/peptides/dsip" className="text-sm font-medium text-[#3A759F] hover:underline">DSIP</Link>
         </div>
-        <Link href="/bioregulators" className="text-sm font-medium text-[#0891b2] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
+        <Link href="/bioregulators" className="text-sm font-medium text-[#3A759F] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
       </div>
 
       {/* TODO: add a Comparisons block (e.g. Thymogen vs Thymosin Alpha-1, or sibling-bioregulator comparisons) once those comparison pages are built. */}

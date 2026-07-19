@@ -35,11 +35,11 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural for users layering sleep interventions across mechanisms.{" "}
-        <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>{" "}
+        <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
         (delta sleep-inducing peptide) operates directly on slow-wave sleep architecture — peptide-level intervention on sleep depth.{" "}
-        <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+        <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
         (a tuftsin analog) provides anxiolytic effects via GABA modulation — same broad mechanism as supplemental GABA but at a different layer (Selank modulates GABA-A receptor sensitivity rather than supplying GABA substrate). The peptides do sleep-architecture and anxiolytic-GABA-modulation; supplemental GABA does substrate supply and (debated) direct receptor activation. Mechanistically complementary, no known negative interactions. For users on{" "}
-        <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295 / Ipamorelin GH-axis protocols</Link>{" "}
+        <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295 / Ipamorelin GH-axis protocols</Link>{" "}
         — GABA&apos;s GH-release effect (Powers 2008) overlaps mechanism layers; not a problem, but watch for over-stimulation of GH if combining high-dose GABA with GH secretagogue peptides.
       </>
     ),
@@ -217,13 +217,13 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             GABA pairs naturally with the Russian-origin sleep + cognitive peptide cluster.{" "}
-            <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>{" "}
+            <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
             (delta sleep-inducing peptide) operates directly on slow-wave sleep architecture — peptide-level intervention on sleep depth.{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             (a tuftsin analog) provides anxiolytic effects via GABA-A receptor sensitivity modulation — same broad system as supplemental GABA but at a different mechanistic layer (Selank modulates receptor sensitivity rather than supplying GABA substrate). The peptides do sleep-architecture and GABA-receptor-sensitivity modulation; supplemental GABA does substrate supply and (debated) direct peripheral receptor activation. Mechanistically complementary, no known negative interactions. Additionally, for GH-axis protocols:{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             and{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
             directly stimulate pituitary GH release; GABA&apos;s somatostatin-inhibition arm (Powers 2008) overlaps mechanism layers. Compatible but watch total GH-stimulation load.
           </p>
         </div>
@@ -231,31 +231,31 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium glycinate</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium glycinate</Link>{" "}
               — magnesium is a GABA-A positive allosteric modulator. Pairs cleanly with supplemental GABA via complementary receptor-level effects.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-theanine</Link>{" "}
+              <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-theanine</Link>{" "}
               — alpha-wave induction + GABAergic enhancement. Different mechanism layer; mechanistically compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glycine" className="text-[#0891b2] hover:underline">Glycine</Link>{" "}
+              <Link href="/supplements/glycine" className="text-[#3A759F] hover:underline">Glycine</Link>{" "}
               — body-temperature regulation for sleep onset + inhibitory neurotransmission. Different sleep mechanism; mechanistically complementary.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/apigenin" className="text-[#0891b2] hover:underline">Apigenin</Link>{" "}
+              <Link href="/supplements/apigenin" className="text-[#3A759F] hover:underline">Apigenin</Link>{" "}
               — direct GABA-A positive allosteric modulator. Complementary receptor-modulation arm to supplemental GABA substrate.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link>{" "}
+              <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
               — adaptogenic cortisol-blunting + emerging GH-axis effects. Common GH-stack co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zma" className="text-[#0891b2] hover:underline">ZMA</Link>{" "}
+              <Link href="/supplements/zma" className="text-[#3A759F] hover:underline">ZMA</Link>{" "}
               — magnesium + zinc + B6 for sleep architecture + mineral repletion. Standard GH-stack pre-bed pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-arginine" className="text-[#0891b2] hover:underline">L-arginine</Link>{" "}
+              <Link href="/supplements/l-arginine" className="text-[#3A759F] hover:underline">L-arginine</Link>{" "}
               — nitric oxide precursor with modest GH-secretagogue effects at high doses. Common GH-stack co-occupant.
             </li>
           </ol>
@@ -396,37 +396,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Powers ME, Yarrow JF, McCoy SC, Borst SE. Growth hormone isoform responses to GABA ingestion at rest and after exercise. Med Sci Sports Exerc. 2008;40(1):104-110.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18091016/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18091016/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18091016/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Abdou AM, Higashiguchi S, Horie K, Kim M, Hatta H, Yokogoshi H. Relaxation and immunity enhancement effects of gamma-aminobutyric acid (GABA) administration in humans. Biofactors. 2006;26(3):201-208.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16971751/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16971751/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16971751/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tian J, Lu Y, Zhang H, Chau CH, Dang HN, Kaufman DL. Gamma-aminobutyric acid inhibits T cell autoimmunity and the development of inflammatory responses in a mouse type 1 diabetes model. J Immunol. 2004;173(8):5298-5304.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/15068695/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/15068695/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/15068695/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Yamatsu A, Yamashita Y, Pandharipande T, Maru I, Kim M. Effect of oral γ-aminobutyric acid (GABA) administration on sleep and its absorption in humans. Food Sci Biotechnol. 2016;25(2):547-551.{" "}
-          <a href="https://link.springer.com/article/10.1007/s10068-016-0076-9" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://link.springer.com/article/10.1007/s10068-016-0076-9" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://link.springer.com/article/10.1007/s10068-016-0076-9
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kanehira T, Nakamura Y, Nakamura K, et al. Relieving occupational fatigue by consumption of a beverage containing γ-amino butyric acid. J Nutr Sci Vitaminol (Tokyo). 2011;57(1):9-15.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22330825/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22330825/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22330825/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Boonstra E, de Kleijn R, Colzato LS, Alkemade A, Forstmann BU, Nieuwenhuis S. Neurotransmitters as food supplements: the effects of GABA on brain and behavior. Front Psychol. 2015;6:1520.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26500584/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26500584/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26500584/
           </a>
         </li>
@@ -442,12 +442,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -572,7 +572,7 @@ export default function GABAPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">GABA</h1>
@@ -598,9 +598,9 @@ export default function GABAPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             GABA (gamma-aminobutyric acid) is the primary inhibitory neurotransmitter in the central nervous system, responsible for reducing neural excitability and promoting calm, relaxation, and sleep. Endogenous GABA is synthesized in the brain from glutamate via glutamic acid decarboxylase and binds GABA-A and GABA-B receptors throughout the nervous system — the same receptor system targeted by benzodiazepines, Z-drugs, and alcohol (with much milder effect from supplemental GABA and without dependence risk). The central mechanism debate is whether oral GABA can meaningfully cross the blood-brain barrier — traditional pharmacology says no, more recent evidence suggests peripheral GABA receptors in the gut/vagus + possible BBB penetration at high doses + general circulating GABA modulation may produce the documented clinical effects. Sleep evidence is moderate and polysomnography-confirmed at low doses (Yamatsu 2016 PharmaGABA 100 mg/day reducing sleep onset latency and increasing deep sleep). Stress reduction is moderate (Abdou 2006 chromogranin A biomarker confirmation; Kanehira 2011 EEG confirmation). The most striking finding is Powers 2008 — 3 g oral GABA elevated immunoreactive GH by ~400% at rest in resistance-trained men, with even larger increases following exercise. Small sample (n=11), biomarker outcome (not body composition), and limited independent replication at the same magnitude — but mechanistically plausible via somatostatin inhibition. The PharmaGABA form (Lactobacillus hilgardii fermentation) has better clinical evidence than synthetic GABA for sleep/anxiety applications. GABA pairs naturally with{" "}
-            <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">sleep peptides like DSIP and Selank</Link>{" "}
+            <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">sleep peptides like DSIP and Selank</Link>{" "}
             (Russian sleep cluster) and with{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">GH-axis peptides like CJC-1295 and Ipamorelin</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">GH-axis peptides like CJC-1295 and Ipamorelin</Link>{" "}
             for users targeting comprehensive GH support.
           </p>
           <div>
@@ -663,12 +663,12 @@ export default function GABAPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
-          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Theanine</Link>
-          <Link href="/supplements/glycine" className="text-sm font-medium text-[#0891b2] hover:underline">Glycine</Link>
-          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#0891b2] hover:underline">Apigenin</Link>
-          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#0891b2] hover:underline">Ashwagandha</Link>
-          <Link href="/supplements/zma" className="text-sm font-medium text-[#0891b2] hover:underline">ZMA</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
+          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>
+          <Link href="/supplements/glycine" className="text-sm font-medium text-[#3A759F] hover:underline">Glycine</Link>
+          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#3A759F] hover:underline">Apigenin</Link>
+          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
+          <Link href="/supplements/zma" className="text-sm font-medium text-[#3A759F] hover:underline">ZMA</Link>
         </div>
       </div>
 

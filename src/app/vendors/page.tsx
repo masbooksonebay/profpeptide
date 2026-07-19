@@ -32,7 +32,7 @@ export default function VendorProfilesPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {activeVendors.map((v) => (
           <Link href={v.detailPage} key={v.detailPage} className="card group flex flex-col">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#0891b2] transition-colors">
+            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors">
               {v.name}
             </h2>
             <span className="tag mt-3 self-start">{v.discount}</span>
@@ -40,7 +40,7 @@ export default function VendorProfilesPage() {
               <span className="text-gray-400 dark:text-slate-500">Code </span>
               <span className="font-mono text-gray-600 dark:text-slate-300">{v.code}</span>
             </p>
-            <span className="mt-4 text-xs font-medium text-[#0891b2] group-hover:underline">
+            <span className="mt-4 text-xs font-medium text-[#3A759F] group-hover:underline">
               View profile &rarr;
             </span>
           </Link>

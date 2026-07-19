@@ -140,7 +140,7 @@ export default function FAQPage() {
         {sections.map((section) => (
           <div key={section.title}>
             <h2 className="text-lg font-bold text-[#1e2d3d] dark:text-slate-100 mb-4 pb-2 border-b border-gray-100 dark:border-slate-800 flex items-center gap-2">
-              <span className="text-[#0891b2]"><Icon name={section.icon} /></span>
+              <span className="text-[#3A759F]"><Icon name={section.icon} /></span>
               {section.title}
             </h2>
             <div className="space-y-2">
@@ -153,7 +153,7 @@ export default function FAQPage() {
                       className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors"
                     >
                       <span className="text-sm font-medium text-[#1e2d3d] dark:text-slate-200 pr-4">{faq.q}</span>
-                      <span className="text-[#0891b2] flex-shrink-0 text-lg">{open === key ? "\u2212" : "+"}</span>
+                      <span className="text-[#3A759F] flex-shrink-0 text-lg">{open === key ? "\u2212" : "+"}</span>
                     </button>
                     {open === key && (
                       <div className="px-5 pb-4 text-sm text-gray-600 dark:text-slate-300 leading-relaxed border-t border-gray-50 dark:border-slate-700 pt-3">
@@ -170,8 +170,8 @@ export default function FAQPage() {
 
       <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">Still have questions?</p>
-        <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">Browse the <Link href="/peptides" className="text-[#0891b2] hover:underline">Peptide Library</Link> for detailed compound-specific information, check the <Link href="/supplements" className="text-[#0891b2] hover:underline">Supplement Library</Link> for evidence-based supplement profiles, or explore the <Link href="/peptides" className="text-[#0891b2] hover:underline">Research Hub</Link> for in-depth guides.</p>
-        <p className="text-xs text-gray-500 dark:text-slate-400">Need help with technical terms? Browse the <Link href="/glossary" className="text-[#0891b2] hover:underline">Research Glossary</Link> for plain-English definitions. Ready to calculate a dose? Try the <Link href="/calculator" className="text-[#0891b2] hover:underline">Dosage Calculator</Link>.</p>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mb-3">Browse the <Link href="/peptides" className="text-[#3A759F] hover:underline">Peptide Library</Link> for detailed compound-specific information, check the <Link href="/supplements" className="text-[#3A759F] hover:underline">Supplement Library</Link> for evidence-based supplement profiles, or explore the <Link href="/peptides" className="text-[#3A759F] hover:underline">Research Hub</Link> for in-depth guides.</p>
+        <p className="text-xs text-gray-500 dark:text-slate-400">Need help with technical terms? Browse the <Link href="/glossary" className="text-[#3A759F] hover:underline">Research Glossary</Link> for plain-English definitions. Ready to calculate a dose? Try the <Link href="/calculator" className="text-[#3A759F] hover:underline">Dosage Calculator</Link>.</p>
       </div>
     </div>
   );

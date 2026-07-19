@@ -25,11 +25,11 @@ const faqs = [
     a: (
       <>
         Both are Russian heptapeptides developed at the same institute with similar Pro-Gly-Pro stabilization. Semax is derived from ACTH(4-7) and primarily targets BDNF and dopaminergic systems &mdash; best for cognitive enhancement, focus, and stroke recovery.{" "}
-        <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+        <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
         is derived from tuftsin and primarily acts on GABA and serotonergic systems &mdash; best for anxiolysis without sedation. They are commonly stacked together as the{" "}
-        <Link href="/peptides/semax-selank" className="text-[#0891b2] hover:underline">Semax-Selank blend</Link>{" "}
+        <Link href="/peptides/semax-selank" className="text-[#3A759F] hover:underline">Semax-Selank blend</Link>{" "}
         or dosed separately. See the{" "}
-        <Link href="/compare/semax-vs-selank" className="text-[#0891b2] hover:underline">Semax vs Selank comparison</Link>{" "}
+        <Link href="/compare/semax-vs-selank" className="text-[#3A759F] hover:underline">Semax vs Selank comparison</Link>{" "}
         for protocol differences.
       </>
     ),
@@ -59,7 +59,7 @@ const faqs = [
     a: (
       <>
         Outside Russia/Ukraine, Semax is sold by specialty research peptide vendors as research-grade material. Quality varies &mdash; choose vendors that provide third-party testing certificates (HPLC purity, mass spectrometric identity confirmation). PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -161,7 +161,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -172,7 +172,7 @@ const sections = [
     intro: (
       <>
         Semax is administered intranasally (preferred &mdash; fastest CNS access via nose-to-brain transport) or by subcutaneous injection. The 0.1% solution is standard for cognitive enhancement; the 1% solution is used for stroke protocols. Avoid evening dosing &mdash; potential overstimulation and sleep disturbance. For SC technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -279,7 +279,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 5 mg vial, each unit drawn delivers 50 mcg of Semax at 1 mL reconstitution, 25 mcg at 2 mL, and 10 mcg at 5 mL. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -293,15 +293,15 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Selank (Semax-Selank Stack).</span> The gold standard pairing. Semax for cognitive enhancement (BDNF, dopamine) +{" "}
-          <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+          <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
           for anxiolysis (GABA, serotonin) creates balanced nootropic effect. Most experienced users dose Semax in morning, Selank in afternoon/evening. Available as a pre-blended{" "}
-          <Link href="/peptides/semax-selank" className="text-[#0891b2] hover:underline">Semax-Selank</Link>{" "}
+          <Link href="/peptides/semax-selank" className="text-[#3A759F] hover:underline">Semax-Selank</Link>{" "}
           product.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Caffeine.</span> Anecdotally combined for amplified focus, though no controlled studies on the combination.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">BPC-157.</span>{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           combined for general health/recovery support; no direct interaction.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">L-Theanine.</span> Added to take edge off any potential overstimulation.</li>
@@ -414,7 +414,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -446,19 +446,19 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dolotov OV, Karpenko EA, Inozemtseva LS, et al. Semax, an analog of adrenocorticotropin (4-10), binds specifically and increases levels of brain-derived neurotrophic factor protein in rat basal forebrain. J Neurochem. 2006;97(suppl 1):82-86.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16635254/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16635254/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16635254/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Eremin KO, Kudrin VS, Saransaari P, et al. Semax, an ACTH(4-10) analogue with nootropic properties, activates dopaminergic and serotoninergic brain systems in rodents. Neurochem Res. 2005;30(12):1493-500.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16362768/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16362768/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16362768/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Semax.{" "}
-          <a href="https://en.wikipedia.org/wiki/Semax" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://en.wikipedia.org/wiki/Semax" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://en.wikipedia.org/wiki/Semax
           </a>
         </li>
@@ -467,13 +467,13 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Gusev EI, Skvortsova VI, Miasoedov NF, et al. Effectiveness of Semax in the acute period of hemispheric ischemic stroke (a clinical and electrophysiological study). Zh Nevrol Psikhiatr Im S S Korsakova. 1997;97(6):26-34.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11517472/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11517472/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11517472/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Romanova GA, Silachev DN, Shakova FM, et al. Neuroprotective and antiamnesic effects of Semax during experimental ischemic infarction of the cerebral cortex. Bull Exp Biol Med. 2006;142(6):663-6.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17603664/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17603664/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17603664/
           </a>
         </li>
@@ -489,12 +489,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -515,7 +515,7 @@ export default function SemaxPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -545,11 +545,11 @@ export default function SemaxPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Semax is a synthetic heptapeptide (Met-Glu-His-Phe-Pro-Gly-Pro) developed in the 1980s at the Institute of Molecular Genetics of the Russian Academy of Sciences. It combines the ACTH(4-7) fragment of adrenocorticotropic hormone with a Pro-Gly-Pro stabilizing tail that protects against rapid enzymatic degradation. Despite its short plasma half-life (~2-3 minutes), Semax produces long-lasting nootropic and neuroprotective effects through upregulation of brain-derived neurotrophic factor (BDNF) and nerve growth factor (NGF) in the hippocampus and cortex. It is approved in Russia for ischemic stroke recovery and cognitive impairment but has no FDA or EMA approval. Semax does NOT activate the HPA axis or stimulate cortisol, distinguishing it pharmacologically from full-length ACTH. Often paired with{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             as the{" "}
-            <Link href="/peptides/semax-selank" className="text-[#0891b2] hover:underline">Semax-Selank blend</Link>{" "}
+            <Link href="/peptides/semax-selank" className="text-[#3A759F] hover:underline">Semax-Selank blend</Link>{" "}
             for balanced cognitive enhancement plus calm. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -569,7 +569,7 @@ export default function SemaxPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -622,23 +622,23 @@ export default function SemaxPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/selank" className="text-sm font-medium text-[#0891b2] hover:underline">Selank</Link>
-        <Link href="/peptides/dsip" className="text-sm font-medium text-[#0891b2] hover:underline">DSIP</Link>
-        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
+        <Link href="/peptides/selank" className="text-sm font-medium text-[#3A759F] hover:underline">Selank</Link>
+        <Link href="/peptides/dsip" className="text-sm font-medium text-[#3A759F] hover:underline">DSIP</Link>
+        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/semax-selank" className="text-sm font-medium text-[#0891b2] hover:underline">Semax-Selank</Link>
+        <Link href="/peptides/semax-selank" className="text-sm font-medium text-[#3A759F] hover:underline">Semax-Selank</Link>
         </div>
       </div>
 
-      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/compare/semax-vs-selank" className="text-sm font-medium text-[#0891b2] hover:underline">Semax vs Selank &rarr;</Link>
+        <Link href="/compare/semax-vs-selank" className="text-sm font-medium text-[#3A759F] hover:underline">Semax vs Selank &rarr;</Link>
         </div>
       </div>
 

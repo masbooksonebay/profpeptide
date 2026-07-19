@@ -19,7 +19,7 @@ const faqs = [
     a: (
       <>
         No — and this is what makes maca unique among libido supplements. Multiple human RCTs have measured serum testosterone, estrogen, LH, and FSH before and after maca supplementation and found no significant hormonal changes (Gonzales 2002 is the foundational study showing libido improvement without testosterone change). Maca&apos;s libido-enhancing effects operate through different mechanisms — likely involving dopaminergic and noradrenergic neurotransmitter pathways that regulate sexual motivation in the brain, plus adaptogenic effects on stress hormone balance. For some users this is a feature (no concerns about hormonal feedback or hormone-sensitive conditions); for others, it&apos;s a limitation (no anabolic muscle-building benefit like with testosterone-supporting compounds). If your goal is genuine testosterone elevation, look at{" "}
-        <Link href="/supplements/tongkat-ali" className="text-[#0891b2] hover:underline">Tongkat Ali</Link>{" "}
+        <Link href="/supplements/tongkat-ali" className="text-[#3A759F] hover:underline">Tongkat Ali</Link>{" "}
         — which does have testosterone-elevating evidence in eugonadal-low and late-onset-hypogonadal men.
       </>
     ),
@@ -57,11 +57,11 @@ const faqs = [
     a: (
       <>
         Yes — different mechanisms make these stackable rather than redundant.{" "}
-        <Link href="/supplements/tongkat-ali" className="text-[#0891b2] hover:underline">Tongkat Ali</Link>{" "}
+        <Link href="/supplements/tongkat-ali" className="text-[#3A759F] hover:underline">Tongkat Ali</Link>{" "}
         works through testosterone elevation (SHBG reduction, aromatase inhibition, cortisol modulation) — a hormonal mechanism.{" "}
-        <Link href="/supplements/maca-root" className="text-[#0891b2] hover:underline">Maca</Link>{" "}
+        <Link href="/supplements/maca-root" className="text-[#3A759F] hover:underline">Maca</Link>{" "}
         works through neurotransmitter modulation and adaptogenic stress reduction — a non-hormonal mechanism.{" "}
-        <Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}
+        <Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}
         works through NO-mediated vasodilation — a vascular mechanism. The three together address libido (maca), hormones (tongkat ali), and physical erectile mechanism (citrulline) — comprehensive non-prescription sexual health support. Coordinate with healthcare provider, particularly if you have hormone-sensitive conditions or are on prescription sexual health medications.
       </>
     ),
@@ -230,7 +230,7 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Maca&apos;s sexual-health application overlaps mechanistically with melanocortin-receptor peptides — particularly PT-141 (bremelanotide) for sexual function via central nervous system melanocortin signaling. Maca and PT-141 address different facets of the same problem (motivation vs central arousal), though direct combination evidence doesn&apos;t exist in trials. For libido contexts driven by stress / HPA dysregulation, maca&apos;s adaptogenic mechanism complements{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             healing applications where chronic stress is the limiting factor. No formal stack RCT evidence; mechanism-based combination.
           </p>
         </div>
@@ -238,27 +238,27 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/tongkat-ali" className="text-[#0891b2] hover:underline">Tongkat Ali</Link>{" "}
+              <Link href="/supplements/tongkat-ali" className="text-[#3A759F] hover:underline">Tongkat Ali</Link>{" "}
               — different mechanism (testosterone elevation via SHBG/aromatase/cortisol). Maca handles non-hormonal libido and mood; tongkat ali handles hormonal testosterone support. Complementary for men with both libido and testosterone-low complaints.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}
+              <Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}
               — vascular/erectile mechanism. Maca addresses libido motivation; citrulline addresses physical erectile vasodilation. Comprehensive sexual-health stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link>{" "}
+              <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
               — overlapping adaptogen mechanism (HPA axis cortisol modulation). Mechanistically additive for stress-driven libido issues. May produce more pronounced fatigue/sedation than maca alone — start with one, then add.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/rhodiola-rosea" className="text-[#0891b2] hover:underline">Rhodiola</Link>{" "}
+              <Link href="/supplements/rhodiola-rosea" className="text-[#3A759F] hover:underline">Rhodiola</Link>{" "}
               — adaptogen with stronger energy/cognitive profile than maca. Compatible stacking; some overlap in CNS dopaminergic effects.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
               — foundational mineral for testosterone synthesis (relevant for male fertility stack with black maca).
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fenugreek" className="text-[#0891b2] hover:underline">Fenugreek</Link>{" "}
+              <Link href="/supplements/fenugreek" className="text-[#3A759F] hover:underline">Fenugreek</Link>{" "}
               — alternative herbal libido/testosterone option; different bioactive profile. Pick one rather than stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -401,37 +401,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Gonzales GF, Cordova A, Vega K, et al. Effect of Lepidium meyenii (Maca) on sexual desire and its absent relationship with serum testosterone levels in adult healthy men. Andrologia. 2002;34(6):367-372.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/12472620/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/12472620/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/12472620/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Shin BC, Lee MS, Yang EJ, Lim HS, Ernst E. Maca (L. meyenii) for improving sexual function: a systematic review. BMC Complement Altern Med. 2010;10:44.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20691074/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20691074/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20691074/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dording CM, Fisher L, Papakostas G, et al. A double-blind, randomized, pilot dose-finding study of maca root (L. meyenii) for the management of SSRI-induced sexual dysfunction. CNS Neurosci Ther. 2008;14(3):182-191.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18801111/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18801111/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18801111/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Brooks NA, Wilcox G, Walker KZ, Ashton JF, Cox MB, Stojanovska L. Beneficial effects of Lepidium meyenii (Maca) on psychological symptoms and measures of sexual dysfunction in postmenopausal women are not related to estrogen or androgen content. Menopause. 2008;15(6):1157-1162.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18784609/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18784609/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18784609/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Gonzales C, Leiva-Revilla J, Rubio J, Gasco M, Gonzales GF. Effect of red maca (Lepidium meyenii) on prostate zinc levels in rats with testosterone-induced prostatic hyperplasia. Andrologia. 2012;44 Suppl 1:362-369.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22236001/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22236001/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22236001/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Melnikovova I, Fait T, Kolarova M, Fernandez EC, Milella L. Effect of Lepidium meyenii Walp. on semen parameters and serum hormone levels in healthy adult men: a double-blind, randomized, placebo-controlled pilot study. Evid Based Complement Alternat Med. 2015;2015:324369.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26421049/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26421049/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26421049/
           </a>
         </li>
@@ -447,12 +447,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -545,7 +545,7 @@ export default function MacaRootPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Maca Root</h1>
@@ -633,12 +633,12 @@ export default function MacaRootPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/tongkat-ali" className="text-sm font-medium text-[#0891b2] hover:underline">Tongkat Ali</Link>
-          <Link href="/supplements/l-citrulline" className="text-sm font-medium text-[#0891b2] hover:underline">L-Citrulline</Link>
-          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#0891b2] hover:underline">Ashwagandha</Link>
-          <Link href="/supplements/rhodiola-rosea" className="text-sm font-medium text-[#0891b2] hover:underline">Rhodiola Rosea</Link>
-          <Link href="/supplements/fenugreek" className="text-sm font-medium text-[#0891b2] hover:underline">Fenugreek</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
+          <Link href="/supplements/tongkat-ali" className="text-sm font-medium text-[#3A759F] hover:underline">Tongkat Ali</Link>
+          <Link href="/supplements/l-citrulline" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline</Link>
+          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
+          <Link href="/supplements/rhodiola-rosea" className="text-sm font-medium text-[#3A759F] hover:underline">Rhodiola Rosea</Link>
+          <Link href="/supplements/fenugreek" className="text-sm font-medium text-[#3A759F] hover:underline">Fenugreek</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
         </div>
       </div>
 

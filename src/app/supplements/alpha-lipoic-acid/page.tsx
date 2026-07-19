@@ -35,9 +35,9 @@ const faqs = [
     a: (
       <>
         Yes — the stack is mechanistically natural for users targeting mitochondrial function and metabolic health.{" "}
-        <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>{" "}
+        <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>{" "}
         is a mitochondrial-derived peptide that activates AMPK, improves insulin sensitivity, and supports mitochondrial biogenesis at the genetic/regulatory level.{" "}
-        <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+        <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
         delivers the essential cofactor for sirtuins and the electron donor for Complex I of the electron transport chain. ALA operates at multiple layers: AMPK activation (overlapping with MOTS-c mechanism), mitochondrial cofactor activity (pyruvate dehydrogenase and α-ketoglutarate dehydrogenase substrates), universal antioxidant protection of mitochondrial membranes, and regeneration of CoQ10, glutathione, and vitamins C/E. The three converge on mitochondrial bioenergetics from different angles — MOTS-c on biogenesis and AMPK signaling, NAD+ peptide on cofactor supply, ALA on cofactor activity + antioxidant protection. Mechanistically additive, no known negative interactions.
       </>
     ),
@@ -215,12 +215,12 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             ALA pairs naturally with the mitochondrial peptide cluster.{" "}
-            <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>{" "}
+            <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>{" "}
             is a mitochondrial-derived peptide that activates AMPK, improves insulin sensitivity, and supports mitochondrial biogenesis at the genetic/regulatory level — direct mechanism overlap with ALA&apos;s AMPK arm but at a different layer (peptide-level signaling vs small-molecule modulator).{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
             delivers NAD+ — the cofactor for sirtuins and the electron donor for Complex I of the electron transport chain. ALA operates at multiple layers: AMPK activation, mitochondrial enzyme cofactor activity (pyruvate dehydrogenase, α-ketoglutarate dehydrogenase), universal antioxidant protection of mitochondrial membranes, and regeneration of CoQ10/glutathione/vitamins C and E. The three converge on mitochondrial bioenergetics from different angles — MOTS-c on biogenesis signaling, NAD+ peptide on cofactor supply, ALA on cofactor activity + antioxidant protection. Mechanistically additive, no known negative interactions. For users on GLP-1 peptides ({" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>,{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>,{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>{" "}
             ), ALA is a compatible metabolic adjunct that adds AMPK-mediated insulin-sensitization to the GLP receptor-agonist mechanism.
           </p>
         </div>
@@ -228,27 +228,27 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/coq10" className="text-[#0891b2] hover:underline">CoQ10</Link>{" "}
+              <Link href="/supplements/coq10" className="text-[#3A759F] hover:underline">CoQ10</Link>{" "}
               — ALA regenerates oxidized CoQ10 back to its active form. Mechanistically natural pairing for mitochondrial protection.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/berberine" className="text-[#0891b2] hover:underline">Berberine</Link>{" "}
+              <Link href="/supplements/berberine" className="text-[#3A759F] hover:underline">Berberine</Link>{" "}
               — additional AMPK activator with metformin-comparable glycemic effects. Common metabolic-stack co-occupant; complementary AMPK activation.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/chromium" className="text-[#0891b2] hover:underline">Chromium</Link>{" "}
+              <Link href="/supplements/chromium" className="text-[#3A759F] hover:underline">Chromium</Link>{" "}
               — insulin-receptor amplification via chromodulin. Different mechanism from ALA&apos;s AMPK activation; complementary glycemic support.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium</Link>{" "}
               — cofactor for hundreds of enzymes including glucose metabolism. Deficiency correction supports the system ALA operates within.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">Vitamin C</Link>{" "}
+              <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">Vitamin C</Link>{" "}
               — ALA regenerates oxidized vitamin C; complementary antioxidant network.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/biotin" className="text-[#0891b2] hover:underline">Biotin</Link>{" "}
+              <Link href="/supplements/biotin" className="text-[#3A759F] hover:underline">Biotin</Link>{" "}
               (30–100 mcg daily) — offsets ALA&apos;s competitive biotin uptake over chronic long-term use. Add B-complex for comprehensive coverage.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -392,37 +392,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ziegler D, Hanefeld M, Ruhnau KJ, et al. Treatment of symptomatic diabetic peripheral neuropathy with the antioxidant alpha-lipoic acid. A 3-week multicentre randomized controlled trial (ALADIN Study). Diabetologia. 1995;38(12):1425-1433.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/8821658/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/8821658/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/8821658/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mijnhout GS, Kollen BJ, Alkhalaf A, Kleefstra N, Bilo HJ. Alpha lipoic acid for symptomatic peripheral neuropathy in patients with diabetes: a meta-analysis of randomized controlled trials. Int J Endocrinol. 2012;2012:456279.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22319396/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22319396/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22319396/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Namazi N, Larijani B, Azadbakht L. Alpha-lipoic acid supplement in obesity treatment: a systematic review and meta-analysis of clinical trials. Clin Nutr. 2018;37(2):419-428.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29438781/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29438781/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29438781/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Jacob S, Henriksen EJ, Schiemann AL, et al. Enhancement of glucose disposal in patients with type 2 diabetes by alpha-lipoic acid. Arzneimittelforschung. 1995;45(8):872-874.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9851461/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9851461/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9851461/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Zhang Y, Han P, Wu N, et al. Amelioration of lipid abnormalities by α-lipoic acid through antioxidative and anti-inflammatory effects. Obesity. 2011;19(8):1647-1653.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22159371/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22159371/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22159371/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Golbidi S, Badran M, Laher I. Diabetes and alpha lipoic acid. Front Pharmacol. 2011;2:69.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22125537/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22125537/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22125537/
           </a>
         </li>
@@ -438,12 +438,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -568,7 +568,7 @@ export default function AlphaLipoicAcidPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Alpha Lipoic Acid</h1>
@@ -594,7 +594,7 @@ export default function AlphaLipoicAcidPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Alpha lipoic acid (ALA) is a naturally occurring organosulfur compound produced in small amounts by the body and found in trace amounts in red meat, spinach, and broccoli. Its supplement profile is built on a unique combination: it&apos;s a universal antioxidant active in both fat-soluble and water-soluble environments (unusual — most antioxidants work in only one), it activates AMPK (the same metabolic master switch metformin and berberine target), it&apos;s a mitochondrial enzyme cofactor for pyruvate dehydrogenase and α-ketoglutarate dehydrogenase, and it regenerates other antioxidants (vitamins C, E, glutathione, CoQ10) back to their active forms. The most clinically validated application is diabetic peripheral neuropathy — ALA is approved as medical treatment in Germany and other European countries based on the ALADIN study (Ziegler 1995) and subsequent meta-analyses (Mijnhout 2012). Secondary evidence supports insulin sensitization (Jacob 1999 hyperinsulinemic-euglycemic clamp showed 27% glucose-disposal improvement), modest weight loss (Namazi 2018 meta-analysis), and anti-inflammatory effects in metabolic syndrome. The practical considerations are stereoisomer choice (R-ALA is ~12× more bioavailable than racemic S-ALA half) and empty-stomach timing (food reduces absorption by ~30%). ALA pairs naturally with{" "}
-            <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">mitochondrial peptides like MOTS-c and NAD+ peptide</Link>{" "}
+            <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">mitochondrial peptides like MOTS-c and NAD+ peptide</Link>{" "}
             — overlapping AMPK and cofactor mechanisms at different signaling layers.
           </p>
           <div>
@@ -658,12 +658,12 @@ export default function AlphaLipoicAcidPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/berberine" className="text-sm font-medium text-[#0891b2] hover:underline">Berberine</Link>
-          <Link href="/supplements/chromium" className="text-sm font-medium text-[#0891b2] hover:underline">Chromium</Link>
-          <Link href="/supplements/coq10" className="text-sm font-medium text-[#0891b2] hover:underline">CoQ10</Link>
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
-          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin C</Link>
-          <Link href="/supplements/biotin" className="text-sm font-medium text-[#0891b2] hover:underline">Biotin</Link>
+          <Link href="/supplements/berberine" className="text-sm font-medium text-[#3A759F] hover:underline">Berberine</Link>
+          <Link href="/supplements/chromium" className="text-sm font-medium text-[#3A759F] hover:underline">Chromium</Link>
+          <Link href="/supplements/coq10" className="text-sm font-medium text-[#3A759F] hover:underline">CoQ10</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
+          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C</Link>
+          <Link href="/supplements/biotin" className="text-sm font-medium text-[#3A759F] hover:underline">Biotin</Link>
         </div>
       </div>
 

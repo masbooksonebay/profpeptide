@@ -40,11 +40,11 @@ export default function NMNvsNRvsNiacinPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"NMN vs NR vs Niacin — NAD+ Precursor Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-5xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">NMN vs NR vs Niacin &mdash; NAD+ Precursor Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">All three raise NAD+ levels but through different pathways, at vastly different costs, and with different side effect profiles. A 2026 head-to-head human clinical trial in Nature Metabolism found NMN and NR comparable in raising blood NAD+, while nicotinamide (NAM) produced only a transient effect. Here&apos;s how all three compare.</p>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why three pathways to the same destination</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           NAD+ (nicotinamide adenine dinucleotide) is a coenzyme present in every cell. It declines with age &mdash; by some estimates 50% by age 50 &mdash; and falling NAD+ levels are linked to mitochondrial dysfunction, cellular energy decline, and DNA repair impairment.
@@ -70,9 +70,9 @@ export default function NMNvsNRvsNiacinPage() {
         <table className="w-full text-sm border-collapse">
           <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
             <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/5"></th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700">NMN</th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700">NR</th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700">Niacin</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700">NMN</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700">NR</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700">Niacin</th>
           </tr></thead>
           <tbody>{rows.map(([label, a, b, c], i) => (
             <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
@@ -125,7 +125,7 @@ export default function NMNvsNRvsNiacinPage() {
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-lg text-gray-600 dark:text-slate-300">NR has the strongest human trial base and is generally considered the best-studied option. <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link> is comparable in efficacy but costs more and has a more uncertain regulatory future. Niacin raises <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link> at ~1% of the cost but causes flushing and has different downstream effects. All three effectively raise NAD+ &mdash; the choice comes down to budget, flush tolerance, and secondary goals.</p>
+        <p className="text-lg text-gray-600 dark:text-slate-300">NR has the strongest human trial base and is generally considered the best-studied option. <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link> is comparable in efficacy but costs more and has a more uncertain regulatory future. Niacin raises <Link href="/supplements/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link> at ~1% of the cost but causes flushing and has different downstream effects. All three effectively raise NAD+ &mdash; the choice comes down to budget, flush tolerance, and secondary goals.</p>
       </div>
 
       <div className="mb-8">

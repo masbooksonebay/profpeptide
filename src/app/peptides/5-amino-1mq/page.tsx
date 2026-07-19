@@ -157,7 +157,7 @@ const sections = [
         {/* TODO: add a VendorHighlightBlock here once 5-Amino-1MQ vendors are wired into the vendor data. Do NOT add a fabricated carrier/note or invent a code in the meantime — use the inline /coupons link below until vendors are added. */}
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prof. Peptide maintains a vetted list of peptide and research-compound vendors with verified discount codes. See{" "}
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             Verified Discount Codes &rarr;
           </Link>{" "}
           for current options.
@@ -190,7 +190,7 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Babula JJ, Bui D, Stevenson HL, Watowich SJ, Neelakantan H. Nicotinamide N-methyltransferase inhibition mitigates obesity-related metabolic dysfunction. PMID 39161060.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/39161060/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/39161060/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/39161060/
           </a>
         </li>
@@ -218,13 +218,13 @@ const sections = [
           Plain-English summaries of the studies behind the claims above. Only the independently-verified citation is linked; the others are cited by name (no external links are added because no public URLs were independently verified). All evidence is preclinical.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
             {s.url ? (
-              <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+              <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             ) : (
               <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 leading-snug mb-1">{s.title}</p>
             )}
@@ -248,7 +248,7 @@ export default function FiveAmino1MQPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -284,11 +284,11 @@ export default function FiveAmino1MQPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             5-Amino-1MQ (5-amino-1-methylquinolinium) is a small-molecule, membrane-permeable, selective inhibitor of nicotinamide N-methyltransferase (NNMT) &mdash; a quinolinium compound, not a peptide. It was developed as a research-tool NNMT inhibitor (Watowich/Neelakantan, UT Medical Branch / Ridgeline Therapeutics). NNMT methylates nicotinamide using S-adenosylmethionine (SAM) to make 1-methylnicotinamide and S-adenosylhomocysteine; by inhibiting NNMT (IC50 ~1 µM), 5-Amino-1MQ relieves this SAM &lsquo;methyl sink&rsquo; and preserves nicotinamide for NAD+ salvage. In preclinical (rodent and cell) models this is associated with increased NAD+, higher energy expenditure, reduced lipogenesis and adiposity, and preserved lean mass &mdash; with weight and fat-mass reductions in diet-induced-obese mice occurring without reduced food intake. It is structurally a small molecule and has no amino-acid sequence. It is grouped here with metabolic research compounds such as{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>{" "}
             and{" "}
-            <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>, and it is one component of the{" "}
-            <Link href="/peptides/nad-mots-c-5-amino-1mq" className="text-[#0891b2] hover:underline">Metabolic Blend (NAD+ / MOTS-c / 5-Amino-1MQ)</Link>. All evidence is preclinical, and research-grade 5-Amino-1MQ is unapproved, Research Use Only material &mdash; not for human use. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>, and it is one component of the{" "}
+            <Link href="/peptides/nad-mots-c-5-amino-1mq" className="text-[#3A759F] hover:underline">Metabolic Blend (NAD+ / MOTS-c / 5-Amino-1MQ)</Link>. All evidence is preclinical, and research-grade 5-Amino-1MQ is unapproved, Research Use Only material &mdash; not for human use. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -306,7 +306,7 @@ export default function FiveAmino1MQPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> 5-Amino-1MQ is an unapproved research chemical sold by specialty vendors for laboratory use only. PP maintains a vetted list of vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -359,10 +359,10 @@ export default function FiveAmino1MQPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
-        <Link href="/peptides/mots-c" className="text-sm font-medium text-[#0891b2] hover:underline">MOTS-c</Link>
-        <Link href="/peptides/nad-mots-c-5-amino-1mq" className="text-sm font-medium text-[#0891b2] hover:underline">Metabolic Blend (NAD+ / MOTS-c / 5-Amino-1MQ)</Link>
-        <Link href="/peptides/aod-9604" className="text-sm font-medium text-[#0891b2] hover:underline">AOD-9604</Link>
+        <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
+        <Link href="/peptides/mots-c" className="text-sm font-medium text-[#3A759F] hover:underline">MOTS-c</Link>
+        <Link href="/peptides/nad-mots-c-5-amino-1mq" className="text-sm font-medium text-[#3A759F] hover:underline">Metabolic Blend (NAD+ / MOTS-c / 5-Amino-1MQ)</Link>
+        <Link href="/peptides/aod-9604" className="text-sm font-medium text-[#3A759F] hover:underline">AOD-9604</Link>
         </div>
       </div>
 

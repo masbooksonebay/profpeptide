@@ -35,9 +35,9 @@ const faqs = [
     a: (
       <>
         Yes — and the mechanism layering is mechanistically natural for users targeting mitochondrial function.{" "}
-        <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>{" "}
+        <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>{" "}
         is a mitochondrial-derived peptide that activates AMPK, increases insulin sensitivity, and supports mitochondrial biogenesis at the genetic/regulatory level.{" "}
-        <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+        <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
         delivers the essential cofactor for sirtuins and mitochondrial complex I activity. CoQ10 works at a different layer — it&apos;s the electron carrier between Complex I/II and Complex III in the electron transport chain, plus a fat-soluble antioxidant for mitochondrial membranes. The three converge on mitochondrial bioenergetics from different angles: MOTS-c on biogenesis and AMPK signaling, NAD+ on cofactor supply, CoQ10 on electron transport and membrane protection. Mechanistically additive, no known negative interactions.
       </>
     ),
@@ -212,9 +212,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             CoQ10 pairs naturally with the mitochondrial peptide cluster.{" "}
-            <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>{" "}
+            <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>{" "}
             is a mitochondrial-derived peptide that activates AMPK, improves insulin sensitivity, and supports mitochondrial biogenesis at the regulatory/genetic level.{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
             delivers NAD+ — the cofactor for sirtuins and the electron donor for Complex I of the electron transport chain. CoQ10 operates at a different layer: it&apos;s the electron carrier between Complex I/II and Complex III, plus a fat-soluble antioxidant for mitochondrial membranes. The three converge on mitochondrial function from different angles — MOTS-c on biogenesis and signaling, NAD+ on cofactor supply, CoQ10 on electron transport and membrane protection. Mechanistically additive, no known negative interactions. Introduce one variable at a time when starting a new stack so you can tell what&apos;s actually doing what.
           </p>
         </div>
@@ -222,26 +222,26 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link>{" "}
+              <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
               — oral NAD+ precursor. Pairs cleanly with CoQ10&apos;s electron-transport mechanism; both support mitochondrial ATP production from different angles.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/spermidine" className="text-[#0891b2] hover:underline">Spermidine</Link>{" "}
+              <Link href="/supplements/spermidine" className="text-[#3A759F] hover:underline">Spermidine</Link>{" "}
               — autophagy and mitophagy activator. Clears damaged mitochondria; CoQ10 supports the remaining functional ones. Mechanistically complementary.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fish-oil" className="text-[#0891b2] hover:underline">Omega-3 fish oil</Link>{" "}
+              <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Omega-3 fish oil</Link>{" "}
               — cardiovascular and membrane fluidity support. The KiSel-10 evidence is for CoQ10 + selenium specifically, but omega-3 is a common co-occupant in cardiovascular supplement protocols.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Selenium (200 mcg/day) — the KiSel-10 trial used CoQ10 + selenium combined. If you&apos;re using CoQ10 for cardiovascular outcomes, selenium is the evidence-paired adjunct.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/resveratrol" className="text-[#0891b2] hover:underline">Resveratrol</Link>{" "}
+              <Link href="/supplements/resveratrol" className="text-[#3A759F] hover:underline">Resveratrol</Link>{" "}
               — sirtuin activator and antioxidant. Compatible longevity-stack co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium</Link>{" "}
               — cofactor for over 300 enzymes including those in mitochondrial energy metabolism. Common deficiency; supports the system CoQ10 operates within.
             </li>
           </ol>
@@ -374,37 +374,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mortensen SA, Rosenfeldt F, Kumar A, et al. The effect of coenzyme Q10 on morbidity and mortality in chronic heart failure: results from Q-SYMBIO. JACC Heart Fail. 2014;2(6):641-649.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25282031/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25282031/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25282031/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Alehagen U, Johansson P, Björnstedt M, et al. Cardiovascular mortality and N-terminal-proBNP reduced after combined selenium and coenzyme Q10 supplementation: a 5-year prospective randomized double-blind placebo-controlled trial. Int J Cardiol. 2013;167(5):1860-1866.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22626835/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22626835/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22626835/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Banach M, Serban C, Sahebkar A, et al. Effects of coenzyme Q10 on statin-induced myopathy: a meta-analysis of randomized controlled trials. Mayo Clin Proc. 2015;90(1):24-34.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25636999/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25636999/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25636999/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lafuente R, González-Comadrán M, Solà I, et al. Coenzyme Q10 and male infertility: a meta-analysis. J Assist Reprod Genet. 2013;30(9):1147-1156.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23912751/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23912751/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23912751/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hernández-Camacho JD, Bernier M, López-Lluch G, Navas P. Coenzyme Q10 supplementation in aging and disease. Front Physiol. 2018;9:44.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29459830/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29459830/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29459830/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sandor PS, Di Clemente L, Coppola G, et al. Efficacy of coenzyme Q10 in migraine prophylaxis: a randomized controlled trial. Neurology. 2005;64(4):713-715.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/15728298/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/15728298/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/15728298/
           </a>
         </li>
@@ -420,12 +420,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -550,7 +550,7 @@ export default function CoQ10Page() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">CoQ10</h1>
@@ -576,7 +576,7 @@ export default function CoQ10Page() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Coenzyme Q10 (CoQ10) is a fat-soluble, vitamin-like compound present in virtually every cell of the human body — hence its alternate name, ubiquinone (from &ldquo;ubiquitous&rdquo;). It plays two irreplaceable roles: it&apos;s the essential mobile electron carrier in the mitochondrial electron transport chain (shuttling electrons between Complex I/II and Complex III to drive ATP synthesis), and in its reduced form (ubiquinol) it&apos;s one of the most important endogenous fat-soluble antioxidants. CoQ10 levels decline with age and are further reduced by statin medications — both via the shared HMG-CoA reductase / mevalonate pathway. The supplement evidence base is unusually strong: Q-SYMBIO (Mortensen 2014) demonstrated 2-year cardiovascular mortality reduction with 300 mg/day in heart failure patients, and KiSel-10 (Alehagen 2013) found CoQ10 + selenium reduced cardiovascular mortality by 54% in elderly adults over 4 years. Statin-myopathy evidence (Banach 2015 meta-analysis) is positive. CoQ10 pairs naturally with{" "}
-            <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">mitochondrial peptides like MOTS-c</Link>{" "}
+            <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">mitochondrial peptides like MOTS-c</Link>{" "}
             because the mechanisms operate on different layers of mitochondrial bioenergetics.
           </p>
           <div>
@@ -639,12 +639,12 @@ export default function CoQ10Page() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/nmn" className="text-sm font-medium text-[#0891b2] hover:underline">NMN</Link>
-          <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
-          <Link href="/supplements/spermidine" className="text-sm font-medium text-[#0891b2] hover:underline">Spermidine</Link>
-          <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#0891b2] hover:underline">Resveratrol</Link>
-          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#0891b2] hover:underline">Fish Oil</Link>
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
+          <Link href="/supplements/nmn" className="text-sm font-medium text-[#3A759F] hover:underline">NMN</Link>
+          <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
+          <Link href="/supplements/spermidine" className="text-sm font-medium text-[#3A759F] hover:underline">Spermidine</Link>
+          <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#3A759F] hover:underline">Resveratrol</Link>
+          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
         </div>
       </div>
 

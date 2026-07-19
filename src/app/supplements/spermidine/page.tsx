@@ -35,9 +35,9 @@ const faqs = [
     a: (
       <>
         Yes — and the longevity cluster pairs naturally because the mechanisms operate on different arms of the aging-biology stack.{" "}
-        <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+        <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
         (injectable) delivers NAD+ directly to circulation, activating sirtuin-mediated longevity pathways via increased NAD+ availability.{" "}
-        <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link>{" "}
+        <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
         is the oral NAD+ precursor — feeds the salvage pathway. Spermidine works through a different mechanism entirely: EP300 inhibition and direct autophagy activation, mimicking the fasting/caloric-restriction state. Sirtuins and autophagy converge on aging biology but enter from different angles. Mechanistically additive, no known negative interactions. The Sinclair-popularized longevity protocol stacks NMN + resveratrol + spermidine; the trial evidence for the combination is thin but the mechanistic rationale is reasonable.
       </>
     ),
@@ -47,7 +47,7 @@ const faqs = [
     a: (
       <>
         Yes — and the mechanism overlap is exactly why this stack makes sense. Caloric restriction and intermittent fasting are the most-validated longevity interventions in animals, primarily through autophagy activation via mTORC1 inhibition. Spermidine activates autophagy through a parallel pathway (EP300 inhibition + mTORC1 modulation). The combination may produce additive autophagy activation — though human trial evidence for the combination specifically is limited. Practical note: fasting protocols may temporarily reduce dietary spermidine intake (extended fasts cut out the wheat-germ-and-aged-cheese food sources), making supplementation more relevant during fasting windows. See also{" "}
-        <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+        <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
         for the pineal-axis arm of the longevity stack.
       </>
     ),
@@ -217,9 +217,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Spermidine pairs naturally with the longevity peptide cluster.{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
             (injectable or subcutaneous) delivers NAD+ directly to circulation, activating sirtuin-mediated longevity pathways via NAD+ availability. Spermidine works through a different mechanism: EP300 inhibition and direct autophagy activation, mimicking the fasting/caloric-restriction state.{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
             adds the pineal-axis longevity arm — telomere maintenance and circadian regulation. The three operate on different layers of aging biology: NAD+ on sirtuin signaling, spermidine on autophagy, Epitalon on pineal regulation. Mechanistically additive, no known negative interactions. Introduce one variable at a time when starting a new stack so you can tell what&apos;s actually doing what.
           </p>
         </div>
@@ -227,23 +227,23 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link>{" "}
+              <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
               — oral NAD+ precursor. Sirtuin substrate plus autophagy activation = complementary longevity pillars. The Sinclair-protocol pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/resveratrol" className="text-[#0891b2] hover:underline">Resveratrol</Link>{" "}
+              <Link href="/supplements/resveratrol" className="text-[#3A759F] hover:underline">Resveratrol</Link>{" "}
               — sirtuin activator. Mechanistically compatible with spermidine&apos;s autophagy arm; classic longevity-stack pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/apigenin" className="text-[#0891b2] hover:underline">Apigenin</Link>{" "}
+              <Link href="/supplements/apigenin" className="text-[#3A759F] hover:underline">Apigenin</Link>{" "}
               — CD38 inhibitor + senolytic. Preserves NAD+ pools and clears senescent cells; complements autophagy activation.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/quercetin" className="text-[#0891b2] hover:underline">Quercetin</Link>{" "}
+              <Link href="/supplements/quercetin" className="text-[#3A759F] hover:underline">Quercetin</Link>{" "}
               — senolytic (with fisetin). Different aging-biology arm; common longevity-stack co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/coq10" className="text-[#0891b2] hover:underline">CoQ10</Link>{" "}
+              <Link href="/supplements/coq10" className="text-[#3A759F] hover:underline">CoQ10</Link>{" "}
               — mitochondrial bioenergetics. Pairs with spermidine&apos;s mitophagy arm (clears damaged mitochondria; CoQ10 supports the remaining ones).
             </li>
           </ol>
@@ -373,37 +373,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kiechl S, Pechlaner R, Willeit P, et al. Higher spermidine intake is linked to lower mortality: a prospective population-based study. Am J Clin Nutr. 2018;108(2):371-380.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29955838/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29955838/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29955838/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wirth M, Benson G, Schwarz C, et al. The effect of spermidine on memory performance in older adults at risk for dementia: a randomized controlled trial. Cortex. 2018;109:181-188.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29438906/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29438906/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29438906/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Schwarz C, Benson GS, Horn N, et al. Effects of spermidine supplementation on cognition and biomarkers in older adults with subjective cognitive decline: a randomized clinical trial. JAMA Netw Open. 2022;5(5):e2213875.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/35275170/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/35275170/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/35275170/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Eisenberg T, Abdellatif M, Schroeder S, et al. Cardioprotection and lifespan extension by the natural polyamine spermidine. Nat Med. 2016;22(12):1428-1438.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27841876/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27841876/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27841876/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Madeo F, Bauer MA, Carmona-Gutierrez D, Kroemer G. Spermidine: a physiological autophagy inducer acting as an anti-aging vitamin in humans? Autophagy. 2019;15(1):165-168.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30306826/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30306826/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30306826/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Madeo F, Eisenberg T, Pietrocola F, Kroemer G. Spermidine in health and disease. Science. 2018;359(6374):eaan2788.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29371440/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29371440/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29371440/
           </a>
         </li>
@@ -419,12 +419,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -549,7 +549,7 @@ export default function SpermidinePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Spermidine</h1>
@@ -575,7 +575,7 @@ export default function SpermidinePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Spermidine is a naturally occurring polyamine — a small positively charged molecule involved in fundamental cellular processes including DNA stabilization, gene expression, and protein synthesis. It is found in virtually all living cells and concentrated in foods like wheat germ, soybeans, aged cheese, mushrooms, and peas. Its longevity-supplement profile is built on a striking mechanistic and preclinical case: spermidine is one of the most potent natural autophagy inducers, activating the cellular self-cleaning process through EP300 inhibition and partial mTORC1 modulation — mimicking the fasting/caloric-restriction state without requiring caloric reduction. The animal-model evidence is dramatic (yeast, flies, worms, and mice all show lifespan extension); the human evidence is more nuanced. The Bruneck Study (Kiechl 2018) documented strong mortality associations with higher dietary intake over 20 years. The Wirth 2018 pilot showed cognitive benefit; the larger 12-month SmartAge trial (Schwarz 2022) didn&apos;t replicate it at low dose. Spermidine pairs naturally with{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
             and other longevity supplements because the mechanisms operate on different arms of aging biology — autophagy is its lane.
           </p>
           <div>
@@ -638,12 +638,12 @@ export default function SpermidinePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/nmn" className="text-sm font-medium text-[#0891b2] hover:underline">NMN</Link>
-          <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
-          <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#0891b2] hover:underline">Resveratrol</Link>
-          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#0891b2] hover:underline">Quercetin</Link>
-          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#0891b2] hover:underline">Apigenin</Link>
-          <Link href="/supplements/coq10" className="text-sm font-medium text-[#0891b2] hover:underline">CoQ10</Link>
+          <Link href="/supplements/nmn" className="text-sm font-medium text-[#3A759F] hover:underline">NMN</Link>
+          <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
+          <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#3A759F] hover:underline">Resveratrol</Link>
+          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#3A759F] hover:underline">Quercetin</Link>
+          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#3A759F] hover:underline">Apigenin</Link>
+          <Link href="/supplements/coq10" className="text-sm font-medium text-[#3A759F] hover:underline">CoQ10</Link>
         </div>
       </div>
 

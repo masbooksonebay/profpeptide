@@ -31,9 +31,9 @@ const faqs = [
     a: (
       <>
         Yes — they target different layers of sleep biology.{" "}
-        <Link href="/supplements/melatonin" className="text-[#0891b2] hover:underline">Melatonin</Link>{" "}
+        <Link href="/supplements/melatonin" className="text-[#3A759F] hover:underline">Melatonin</Link>{" "}
         is a circadian signal (when to sleep);{" "}
-        <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">magnesium glycinate</Link>{" "}
+        <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">magnesium glycinate</Link>{" "}
         is GABAergic and neuromuscular relaxation; glycine is body-temperature regulation and inhibitory neurotransmission. No known interactions between the three. Worth knowing: magnesium glycinate already contains some glycine, but a typical 200 mg magnesium glycinate dose provides only ~1 g of glycine — well below the 3 g sleep dose. If you stack them, you still want the full 3 g glycine pre-bed.
       </>
     ),
@@ -43,9 +43,9 @@ const faqs = [
     a: (
       <>
         Yes — the stack is mechanistically natural and addresses different layers of sleep and recovery.{" "}
-        <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>{" "}
+        <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
         (delta sleep-inducing peptide) modulates slow-wave sleep architecture directly — peptide-level intervention on sleep depth.{" "}
-        <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+        <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
         is a tuftsin analog with anxiolytic effects via GABA modulation — useful when sleep is blocked by anxious arousal rather than circadian or thermal issues. Glycine handles the body-temperature drop and sleep-onset latency arm — RCT-validated in healthy adults with mild sleep complaints. Different mechanisms, mechanistically compatible. No known negative interactions.
       </>
     ),
@@ -218,9 +218,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Glycine pairs naturally with the Russian-origin sleep and cognitive peptide cluster.{" "}
-            <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>{" "}
+            <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
             (delta sleep-inducing peptide) operates directly on slow-wave sleep architecture — peptide-level intervention at a different layer than glycine&apos;s body-temperature mechanism.{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             (a tuftsin analog) provides anxiolytic effects via GABA modulation — useful when sleep is blocked by anxious arousal rather than circadian or thermal issues. Glycine handles the sleep-onset thermoregulation and inhibitory neurotransmission arms. Mechanistically complementary, no known negative interactions. Introduce one variable at a time when starting a new stack so you can tell what&apos;s actually doing what.
           </p>
         </div>
@@ -228,23 +228,23 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium glycinate</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium glycinate</Link>{" "}
               — GABAergic and neuromuscular relaxation. The glycinate form already contains some glycine but at sub-RCT doses; stack the full 3 g glycine separately.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/melatonin" className="text-[#0891b2] hover:underline">Melatonin</Link>{" "}
+              <Link href="/supplements/melatonin" className="text-[#3A759F] hover:underline">Melatonin</Link>{" "}
               — circadian signal (low-dose 0.3–0.5 mg). Different mechanism, fully compatible. Glycine helps you fall asleep; melatonin tells the body it&apos;s the right time to.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/apigenin" className="text-[#0891b2] hover:underline">Apigenin</Link>{" "}
+              <Link href="/supplements/apigenin" className="text-[#3A759F] hover:underline">Apigenin</Link>{" "}
               — GABA-A positive allosteric modulator. Complements glycine&apos;s inhibitory-neurotransmitter arm; both target sleep onset but via different receptor families.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-Theanine</Link>{" "}
+              <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-Theanine</Link>{" "}
               — alpha-wave relaxation. Useful pre-bed for users with mental chatter; complements the thermoregulation arm.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/tart-cherry" className="text-[#0891b2] hover:underline">Tart cherry</Link>{" "}
+              <Link href="/supplements/tart-cherry" className="text-[#3A759F] hover:underline">Tart cherry</Link>{" "}
               — endogenous melatonin precursor profile plus anti-inflammatory effects on sleep. Compatible chronic-use pairing.
             </li>
           </ol>
@@ -375,31 +375,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Inagawa K, Hiraoka T, Kohda T, et al. Subjective effects of glycine ingestion before bedtime on sleep quality. Sleep Biol Rhythms. 2006;4(1):75-77.{" "}
-          <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1479-8425.2006.00193.x" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1479-8425.2006.00193.x" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://onlinelibrary.wiley.com/doi/10.1111/j.1479-8425.2006.00193.x
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Yamadera W, Inagawa K, Chiba S, et al. Glycine ingestion improves subjective sleep quality in human volunteers, correlating with polysomnographic changes. Sleep Biol Rhythms. 2007;5(2):126-131.{" "}
-          <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1479-8425.2007.00262.x" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1479-8425.2007.00262.x" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://onlinelibrary.wiley.com/doi/10.1111/j.1479-8425.2007.00262.x
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bannai M, Kawai N, Ono K, et al. The effects of glycine on subjective daytime performance in partially sleep-restricted healthy volunteers. Front Neurol. 2012;3:61.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22529837/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22529837/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22529837/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bannai M, Kawai N. New therapeutic strategy for amino acid medicine: glycine improves the quality of sleep. J Pharmacol Sci. 2012;118(2):145-148.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22293292/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22293292/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22293292/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kawai N, Sakai N, Okuro M, et al. The sleep-promoting and hypothermic effects of glycine are mediated by NMDA receptors in the suprachiasmatic nucleus. Neuropsychopharmacology. 2015;40(6):1405-1416.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25533534/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25533534/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25533534/
           </a>
         </li>
@@ -415,12 +415,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -545,7 +545,7 @@ export default function GlycinePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Glycine</h1>
@@ -571,7 +571,7 @@ export default function GlycinePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Glycine is the smallest amino acid the human body uses — a simple, endogenous molecule that the body produces and uses for collagen synthesis, neurotransmitter regulation, and one-carbon metabolism. It is also one of the better-supported natural sleep supplements, with three independent human RCTs showing 3 g taken 30–60 minutes before bed reduces sleep onset latency, improves subjective sleep quality, and reduces next-day fatigue. The mechanism is unusual: glycine works primarily through body-temperature regulation rather than direct sedation. It acts at NMDA receptors in the suprachiasmatic nucleus, triggering peripheral vasodilation that lowers core body temperature — one of the strongest biological signals for sleep onset. Unlike antihistamines, benzodiazepines, or even most herbal sleep aids, glycine doesn&apos;t produce next-morning grogginess; the Bannai 2012 trial specifically documented improved next-day psychomotor vigilance after partial sleep restriction. It stacks naturally with{" "}
-            <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">sleep peptides like DSIP</Link>{" "}
+            <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">sleep peptides like DSIP</Link>{" "}
             because the mechanisms operate on different layers of sleep biology.
           </p>
           <div>
@@ -634,11 +634,11 @@ export default function GlycinePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
-          <Link href="/supplements/melatonin" className="text-sm font-medium text-[#0891b2] hover:underline">Melatonin</Link>
-          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#0891b2] hover:underline">Apigenin</Link>
-          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Theanine</Link>
-          <Link href="/supplements/tart-cherry" className="text-sm font-medium text-[#0891b2] hover:underline">Tart Cherry</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
+          <Link href="/supplements/melatonin" className="text-sm font-medium text-[#3A759F] hover:underline">Melatonin</Link>
+          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#3A759F] hover:underline">Apigenin</Link>
+          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>
+          <Link href="/supplements/tart-cherry" className="text-sm font-medium text-[#3A759F] hover:underline">Tart Cherry</Link>
         </div>
       </div>
 

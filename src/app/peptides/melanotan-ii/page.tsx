@@ -24,7 +24,7 @@ const faqs = [
     q: "How is MT-II different from PT-141?",
     a: (
       <>
-        <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>{" "}
+        <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>{" "}
         was derived from MT-II by removing the C-terminal amide group. This single structural change eliminates the strong melanocyte-stimulating effect (tanning) while preserving the sexual arousal effects. PT-141 is FDA-approved (Vyleesi, June 2019) for HSDD in premenopausal women; MT-II is not FDA-approved for any indication and carries multiple regulatory warnings. PT-141 represents the cleaner pharmacology that MT-II&apos;s non-selective melanocortin profile lacks.
       </>
     ),
@@ -54,7 +54,7 @@ const faqs = [
     a: (
       <>
         MT-II is sold by specialty research peptide vendors as research-grade material despite regulatory warnings from multiple health agencies. We strongly recommend reading the full Side Effects &amp; Safety section before considering use. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -156,7 +156,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -167,7 +167,7 @@ const sections = [
     intro: (
       <>
         MT-II is given as a subcutaneous injection &mdash; under the skin, not into muscle &mdash; using a small insulin syringe. ALWAYS start with a 0.1 mg test dose to assess tolerance. NEVER exceed 1 mg per dose. For the practical mechanics of insulin syringes, units vs mcg conversion, and subcutaneous technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -271,7 +271,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 10 mg vial, each unit drawn delivers 100 mcg of MT-II at 1 mL reconstitution, 50 mcg at 2 mL, and 33 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -286,7 +286,7 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standalone use.</span> Generally NOT recommended to stack &mdash; MT-II&apos;s risk profile favors caution as standalone.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: PT-141.</span> DO NOT stack with{" "}
-          <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>
+          <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>
           . Both are melanocortin agonists; combination produces additive cardiovascular and side-effect risk.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">PDE5 inhibitors (sildenafil).</span> Theoretical additive cardiovascular effect; monitor closely.</li>
@@ -383,7 +383,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Long-term safety data are limited and concerning for melanoma risk (though causation vs UV behavior remains debated).{" "}
-          <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141 (bremelanotide)</Link>{" "}
+          <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141 (bremelanotide)</Link>{" "}
           is the FDA-approved derivative for sexual arousal applications and represents the cleaner pharmacology that MT-II&apos;s non-selectivity lacks.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -408,7 +408,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -440,7 +440,7 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Melanotan II.{" "}
-          <a href="https://en.wikipedia.org/wiki/Melanotan_II" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://en.wikipedia.org/wiki/Melanotan_II" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://en.wikipedia.org/wiki/Melanotan_II
           </a>
         </li>
@@ -452,19 +452,19 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nelson ME, Bryant SM, Aks SE. Melanotan II injection resulting in systemic toxicity and rhabdomyolysis. Clin Toxicol. 2012;50(10):1169-73.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23121206/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23121206/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23121206/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           DermNet NZ. Melanotan II.{" "}
-          <a href="https://dermnetnz.org/topics/melanotan-ii" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://dermnetnz.org/topics/melanotan-ii" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://dermnetnz.org/topics/melanotan-ii
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Peters B, Hadimeri H, Wahlberg R, et al. Melanotan II: a possible cause of renal infarction: review of the literature. CEN Case Rep. 2020;9(4):361-365.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7148395/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7148395/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC7148395/
           </a>
         </li>
@@ -483,12 +483,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -509,7 +509,7 @@ export default function MelanotanIIPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -539,9 +539,9 @@ export default function MelanotanIIPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Melanotan II is a synthetic cyclic heptapeptide and non-selective agonist of the melanocortin receptors (MC1R, MC3R, MC4R, MC5R). It was developed in the 1980s at the University of Arizona as a successor to Melanotan I (afamelanotide, FDA-approved as Scenesse for erythropoietic protoporphyria). Originally developed as a sunless tanning agent, MT-II also produces strong sexual arousal effects (via MC4R) and appetite suppression. It is NOT FDA-approved for any indication, and health agencies in multiple countries have warned against its use.{" "}
-            <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141 (bremelanotide / Vyleesi)</Link>{" "}
+            <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141 (bremelanotide / Vyleesi)</Link>{" "}
             was specifically derived from MT-II by removing the C-terminal amide group &mdash; eliminating the strong tanning effect while preserving sexual arousal effects. MT-II is associated with documented serious adverse events including rhabdomyolysis, renal injury, and reversible darkening of moles. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -562,7 +562,7 @@ export default function MelanotanIIPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -615,9 +615,9 @@ export default function MelanotanIIPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/pt-141" className="text-sm font-medium text-[#0891b2] hover:underline">PT-141</Link>
-        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu</Link>
-        <Link href="/peptides/kpv" className="text-sm font-medium text-[#0891b2] hover:underline">KPV</Link>
+        <Link href="/peptides/pt-141" className="text-sm font-medium text-[#3A759F] hover:underline">PT-141</Link>
+        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
+        <Link href="/peptides/kpv" className="text-sm font-medium text-[#3A759F] hover:underline">KPV</Link>
         </div>
       </div>
 

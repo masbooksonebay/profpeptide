@@ -41,7 +41,7 @@ const faqs = [
     a: (
       <>
         Research-grade oxytocin is sold by specialty research-peptide vendors as a research-use-only material (distinct from the prescription obstetric drug). PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -152,14 +152,14 @@ const sections = [
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           A placebo-controlled study found that intranasal oxytocin produced measurable but modest, sex-differentiated changes in sexual experience and partner interaction in couples &mdash; a subtle effect on the emotional and relational side of intimacy, not a dramatic aphrodisiac result. It is sometimes combined anecdotally with{" "}
-          <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>{" "}
+          <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>{" "}
           for the bonding dimension of intimacy (the basis of the{" "}
-          <Link href="/peptides/pt-141-oxytocin" className="text-[#0891b2] hover:underline">PT-141 + Oxytocin</Link>{" "}
+          <Link href="/peptides/pt-141-oxytocin" className="text-[#3A759F] hover:underline">PT-141 + Oxytocin</Link>{" "}
           combination), though that pairing is not a proven or approved protocol.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mechanistically, oxytocin sits apart from the other Sexual Health compounds. PT-141 acts centrally on the melanocortin (MC4R) pathway to drive desire directly;{" "}
-          <Link href="/peptides/kisspeptin" className="text-[#0891b2] hover:underline">Kisspeptin</Link>{" "}
+          <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin</Link>{" "}
           acts upstream on the reproductive hormone axis. Oxytocin instead modulates the emotional and social-bonding circuitry around intimacy &mdash; a different target again, and the one with the softest efficacy evidence of the three for libido specifically.
         </p>
       </div>
@@ -179,8 +179,8 @@ const sections = [
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Stability caveat.</span> Reconstituted oxytocin is less stable than many research peptides &mdash; it degrades relatively quickly with heat and time. Keep it refrigerated and use it within a shorter window than a typical peptide; warm storage or prolonged holding can noticeably reduce potency. For general reconstitution mechanics see the{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link> guide and the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link> guide and the{" "}
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -233,7 +233,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -265,37 +265,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Gimpl G, Fahrenholz F. The oxytocin receptor system: structure, function, and regulation. Physiol Rev. 2001;81(2):629-683.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11274341/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11274341/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11274341/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Alfirevic Z, Kelly AJ, Dowswell T. Intravenous oxytocin alone for cervical ripening and induction of labour. Cochrane Database Syst Rev. 2009;(4):CD003246.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/19821304/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/19821304/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/19821304/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kosfeld M, Heinrichs M, Zak PJ, Fischbacher U, Fehr E. Oxytocin increases trust in humans. Nature. 2005;435(7042):673-676.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/15931222/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/15931222/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/15931222/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nave G, Camerer C, McCullough M. Does Oxytocin Increase Trust in Humans? A Critical Review of Research. Perspect Psychol Sci. 2015;10(6):772-789.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26581735/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26581735/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26581735/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Meyer-Lindenberg A, Domes G, Kirsch P, Heinrichs M. Oxytocin and vasopressin in the human brain: social neuropeptides for translational medicine. Nat Rev Neurosci. 2011;12(9):524-538.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21852800/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21852800/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21852800/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Behnia B, Heinrichs M, Bergmann W, et al. Differential effects of intranasal oxytocin on sexual experiences and partner interactions in couples. Horm Behav. 2014;65(3):308-318.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24503174/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24503174/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24503174/
           </a>
         </li>
@@ -311,12 +311,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above &mdash; deliberately spanning oxytocin&apos;s solid physiology, its approved obstetric use, the origin of the &ldquo;trust hormone&rdquo; claim, and the critical review that reins it in. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -337,7 +337,7 @@ export default function OxytocinPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -390,7 +390,7 @@ export default function OxytocinPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -439,9 +439,9 @@ export default function OxytocinPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/pt-141" className="text-sm font-medium text-[#0891b2] hover:underline">PT-141</Link>
-        <Link href="/peptides/kisspeptin" className="text-sm font-medium text-[#0891b2] hover:underline">Kisspeptin</Link>
-        <Link href="/peptides/pt-141-oxytocin" className="text-sm font-medium text-[#0891b2] hover:underline">PT-141 + Oxytocin</Link>
+        <Link href="/peptides/pt-141" className="text-sm font-medium text-[#3A759F] hover:underline">PT-141</Link>
+        <Link href="/peptides/kisspeptin" className="text-sm font-medium text-[#3A759F] hover:underline">Kisspeptin</Link>
+        <Link href="/peptides/pt-141-oxytocin" className="text-sm font-medium text-[#3A759F] hover:underline">PT-141 + Oxytocin</Link>
         </div>
       </div>
 

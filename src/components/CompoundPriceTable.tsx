@@ -46,13 +46,13 @@ export default function CompoundPriceTable({
           <div className="inline-flex rounded-lg border border-gray-200 dark:border-slate-600 overflow-hidden text-sm">
             <button
               onClick={() => setLocalUnit("total")}
-              className={`px-3 py-1 ${unit === "total" ? "bg-[#0891b2] text-white" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300"}`}
+              className={`px-3 py-1 ${unit === "total" ? "bg-[#3A759F] text-white" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300"}`}
             >
               Total price
             </button>
             <button
               onClick={() => setLocalUnit("permg")}
-              className={`px-3 py-1 ${unit === "permg" ? "bg-[#0891b2] text-white" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300"}`}
+              className={`px-3 py-1 ${unit === "permg" ? "bg-[#3A759F] text-white" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300"}`}
             >
               $ / mg
             </button>
@@ -72,7 +72,7 @@ export default function CompoundPriceTable({
             >
               <div className="min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <Link href={r.couponPage} className="text-sm font-semibold text-[#0891b2] hover:underline">
+                  <Link href={r.couponPage} className="text-sm font-semibold text-[#3A759F] hover:underline">
                     {r.vendorName}
                   </Link>
                   <span className="text-xs text-gray-400 dark:text-slate-500">{r.entry.sizeMg} mg</span>
@@ -82,7 +82,7 @@ export default function CompoundPriceTable({
                     <span className="text-xs bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400 border border-gray-200 dark:border-slate-600 px-2 py-0.5 rounded-full">Out of stock</span>
                   )}
                   {i === 0 && (
-                    <span className="text-xs bg-[#0891b2]/10 text-[#0891b2] border border-[#0891b2]/20 px-2 py-0.5 rounded-full font-medium">Cheapest</span>
+                    <span className="text-xs bg-[#3A759F]/10 text-[#3A759F] border border-[#3A759F]/20 px-2 py-0.5 rounded-full font-medium">Cheapest</span>
                   )}
                 </div>
                 <p className="text-xs text-gray-400 dark:text-slate-500 mt-0.5">{secondary}{r.code ? ` · code ${r.code}` : ""}</p>

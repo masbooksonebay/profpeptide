@@ -34,7 +34,7 @@ const faqs = [
     q: "Are there safer alternatives if I want a weight-loss supplement?",
     a: (
       <>
-        Most weight-loss supplements have weak evidence and varying safety profiles. The honest summary for the better-evidenced alternatives in the supplemental category: <Link href="/supplements/green-tea-extract" className="text-[#0891b2] hover:underline">green tea extract</Link>{" "}+ caffeine combination has Moderate evidence for modest effect (Hursel 2009 meta) — but carries its own hepatotoxicity caveat at high doses (EFSA 2018). <Link href="/supplements/glucomannan" className="text-[#0891b2] hover:underline">Glucomannan</Link>{" "}has Moderate cholesterol-lowering and modest satiety mechanism — weight loss is contested (Onakpoya 2014 meta null). <Link href="/supplements/caffeine" className="text-[#0891b2] hover:underline">Caffeine</Link>{" "}has Moderate evidence for modest thermogenic effect. For meaningful weight loss, pharmacological GLP-1 agonists (semaglutide, tirzepatide) under medical supervision produce dramatically larger effects than any supplement — but require prescription and have their own considerations. Practical reality: no supplement comes close to dietary intervention, exercise, sleep, and (in clinically appropriate cases) prescription medications for meaningful weight loss.
+        Most weight-loss supplements have weak evidence and varying safety profiles. The honest summary for the better-evidenced alternatives in the supplemental category: <Link href="/supplements/green-tea-extract" className="text-[#3A759F] hover:underline">green tea extract</Link>{" "}+ caffeine combination has Moderate evidence for modest effect (Hursel 2009 meta) — but carries its own hepatotoxicity caveat at high doses (EFSA 2018). <Link href="/supplements/glucomannan" className="text-[#3A759F] hover:underline">Glucomannan</Link>{" "}has Moderate cholesterol-lowering and modest satiety mechanism — weight loss is contested (Onakpoya 2014 meta null). <Link href="/supplements/caffeine" className="text-[#3A759F] hover:underline">Caffeine</Link>{" "}has Moderate evidence for modest thermogenic effect. For meaningful weight loss, pharmacological GLP-1 agonists (semaglutide, tirzepatide) under medical supervision produce dramatically larger effects than any supplement — but require prescription and have their own considerations. Practical reality: no supplement comes close to dietary intervention, exercise, sleep, and (in clinically appropriate cases) prescription medications for meaningful weight loss.
       </>
     ),
   },
@@ -222,29 +222,29 @@ const sections = [
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <span className="font-semibold">AVOID stacking with other hepatotoxicity-risk supplements</span> — high-dose{" "}
-              <Link href="/supplements/green-tea-extract" className="text-[#0891b2] hover:underline">green tea extract</Link>, kava, comfrey. Don&apos;t compound liver risk.
+              <Link href="/supplements/green-tea-extract" className="text-[#3A759F] hover:underline">green tea extract</Link>, kava, comfrey. Don&apos;t compound liver risk.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <span className="font-semibold">AVOID multi-ingredient weight-loss blends</span> — Hydroxycut and similar combination products have been associated with severe hepatotoxicity cases.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fish-oil" className="text-[#0891b2] hover:underline">Fish oil</Link>{" "}
+              <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Fish oil</Link>{" "}
               — cardiovascular foundational support. Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/probiotics" className="text-[#0891b2] hover:underline">Probiotics</Link>{" "}
+              <Link href="/supplements/probiotics" className="text-[#3A759F] hover:underline">Probiotics</Link>{" "}
               — gut health support. Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glucomannan" className="text-[#0891b2] hover:underline">Glucomannan</Link>{" "}
+              <Link href="/supplements/glucomannan" className="text-[#3A759F] hover:underline">Glucomannan</Link>{" "}
               — fiber supplement with own evidence/safety considerations. Modest combined effect plausible but not well-evidenced.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/chromium" className="text-[#0891b2] hover:underline">Chromium</Link>{" "}
+              <Link href="/supplements/chromium" className="text-[#3A759F] hover:underline">Chromium</Link>{" "}
               — metabolic supplement; compatible but neither has strong weight-loss evidence.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/berberine" className="text-[#0891b2] hover:underline">Berberine</Link>{" "}
+              <Link href="/supplements/berberine" className="text-[#3A759F] hover:underline">Berberine</Link>{" "}
               — metabolic supplement with stronger evidence base. If pursuing metabolic supplementation, berberine has better evidence than garcinia.
             </li>
           </ol>
@@ -354,9 +354,9 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Take with food.</span> Critical safety practice.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">AVOID Hydroxycut-class products</span> with multiple herbal ingredients and stimulants. Hepatotoxicity history.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Better-evidenced alternatives</span> — if pursuing supplemental weight management, modest evidence supports{" "}
-              <Link href="/supplements/green-tea-extract" className="text-[#0891b2] hover:underline">green tea extract</Link>{" "}
+              <Link href="/supplements/green-tea-extract" className="text-[#3A759F] hover:underline">green tea extract</Link>{" "}
               + caffeine combination (with its own hepatotoxicity caveat at high doses), or{" "}
-              <Link href="/supplements/glucomannan" className="text-[#0891b2] hover:underline">glucomannan</Link>{" "}
+              <Link href="/supplements/glucomannan" className="text-[#3A759F] hover:underline">glucomannan</Link>{" "}
               for satiety/cholesterol. For meaningful weight loss, GLP-1 agonists under medical supervision are the evidence-based pharmacological option.</li>
           </ul>
         </div>
@@ -392,31 +392,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Heymsfield SB, Allison DB, Vasselli JR, Pietrobelli A, Greenfield D, Nunez C. Garcinia cambogia (hydroxycitric acid) as a potential antiobesity agent: a randomized controlled trial. JAMA. 1998;280(18):1596-1600.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9820262/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9820262/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9820262/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Onakpoya I, Hung SK, Perry R, Wider B, Ernst E. The use of garcinia extract (hydroxycitric acid) as a weight loss supplement: a systematic review and meta-analysis of randomised clinical trials. J Obes. 2011;2011:509038.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21197150/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21197150/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21197150/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Crescioli G, Lombardi N, Bettiol A, et al. Acute liver injury following Garcinia cambogia weight-loss supplementation: case series and literature review. Intern Emerg Med. 2018;13(6):857-872.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30242883/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30242883/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30242883/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Fong TL, Klontz KC, Canas-Coto A, et al. Hepatotoxicity due to Hydroxycut: a case series. Am J Gastroenterol. 2010;105(7):1561-1566.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20389294/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20389294/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20389294/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sripradha R, Magadi SG. Efficacy of Garcinia cambogia on body weight, inflammation and glucose tolerance in high fat fed male Wistar rats. J Clin Diagn Res. 2015;9(2):BF01-BF04.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25738008/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25738008/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25738008/
           </a>
         </li>
@@ -432,12 +432,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -530,7 +530,7 @@ export default function GarciniaCambogiaPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Garcinia Cambogia</h1>
@@ -615,12 +615,12 @@ export default function GarciniaCambogiaPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/green-tea-extract" className="text-sm font-medium text-[#0891b2] hover:underline">Green Tea Extract</Link>
-          <Link href="/supplements/glucomannan" className="text-sm font-medium text-[#0891b2] hover:underline">Glucomannan</Link>
-          <Link href="/supplements/berberine" className="text-sm font-medium text-[#0891b2] hover:underline">Berberine</Link>
-          <Link href="/supplements/chromium" className="text-sm font-medium text-[#0891b2] hover:underline">Chromium</Link>
-          <Link href="/supplements/caffeine" className="text-sm font-medium text-[#0891b2] hover:underline">Caffeine</Link>
-          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#0891b2] hover:underline">Fish Oil</Link>
+          <Link href="/supplements/green-tea-extract" className="text-sm font-medium text-[#3A759F] hover:underline">Green Tea Extract</Link>
+          <Link href="/supplements/glucomannan" className="text-sm font-medium text-[#3A759F] hover:underline">Glucomannan</Link>
+          <Link href="/supplements/berberine" className="text-sm font-medium text-[#3A759F] hover:underline">Berberine</Link>
+          <Link href="/supplements/chromium" className="text-sm font-medium text-[#3A759F] hover:underline">Chromium</Link>
+          <Link href="/supplements/caffeine" className="text-sm font-medium text-[#3A759F] hover:underline">Caffeine</Link>
+          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
         </div>
       </div>
 

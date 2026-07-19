@@ -97,7 +97,7 @@ const sections = [
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The important caveat: every point above is grounded in <em>single-compound</em> research. There is no published study of the combination, and the strongest human signal for either peptide is limited (see{" "}
-          <a href="#limitations" className="text-[#0891b2] hover:underline">Limitations</a>).
+          <a href="#limitations" className="text-[#3A759F] hover:underline">Limitations</a>).
         </p>
       </div>
     ),
@@ -117,11 +117,11 @@ const sections = [
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           For appetite-driven weight research, GLP-1 compounds such as{" "}
-          <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
-          <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>, and{" "}
-          <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>{" "}
+          <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>,{" "}
+          <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>, and{" "}
+          <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link>{" "}
           act through a different (incretin) mechanism and have far stronger human outcome data; some protocols pair them with this metabolic stack (see{" "}
-          <a href="#stacks" className="text-[#0891b2] hover:underline">Stacks</a>).
+          <a href="#stacks" className="text-[#3A759F] hover:underline">Stacks</a>).
         </p>
       </div>
     ),
@@ -148,7 +148,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">MOTS-c.</span> ~5–10 mg per week, frequently split across 2–3 subcutaneous doses. Supplied as a lyophilized vial (commonly 10 mg total).</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle length.</span> 8–12 weeks active, with a break before re-cycling.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution.</span> Bacteriostatic water; use the{" "}
-            <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator</Link>{" "}
+            <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</Link>{" "}
             to convert mg/mcg to syringe units and plan reconstitution.</li>
         </ol>
         <div className="pt-4">
@@ -161,7 +161,7 @@ const sections = [
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate a dose? Convert mg/mcg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -193,7 +193,7 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + adequate protein.</span> The most evidence-based &ldquo;stack&rdquo; for body composition — preserves lean mass while fat is mobilized.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">
-            <Link href="/peptides/5-amino-1mq" className="text-[#0891b2] hover:underline">5-Amino-1MQ</Link>.
+            <Link href="/peptides/5-amino-1mq" className="text-[#3A759F] hover:underline">5-Amino-1MQ</Link>.
           </span>{" "}
           A separate metabolic mechanism (NNMT inhibition) sometimes layered into fat-loss research protocols.
         </li>
@@ -315,19 +315,19 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ng FM, Sun J, Sharma L, et al. Metabolic studies of a synthetic lipolytic domain (AOD9604) of human growth hormone. Horm Res. 2000;53(6):274-278.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11146367/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11146367/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11146367/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Heffernan M, Summers RJ, Thorburn A, et al. The effects of human GH and its lipolytic fragment (AOD9604) on lipid metabolism following chronic treatment in obese mice and beta3-AR knock-out mice. Endocrinology. 2001;142(12):5182-5189.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11713213/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11713213/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11713213/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lee C, Zeng J, Drew BG, et al. The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance. Cell Metab. 2015;21(3):443-454.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25738459/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25738459/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25738459/
           </a>
         </li>
@@ -340,12 +340,12 @@ const sections = [
     node: (
       <div className="space-y-6">
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -366,7 +366,7 @@ export default function AOD9604MOTScPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -395,7 +395,7 @@ export default function AOD9604MOTScPage() {
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is AOD-9604 + MOTS-c?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link> + <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link> is a research-grade 2-component metabolic stack that pairs AOD-9604 — a modified C-terminal fragment of human growth hormone — with MOTS-c, a mitochondrial-derived peptide. The pairing is built around two non-overlapping mechanisms: AOD-9604 acts at the adipocyte to mobilize stored fat (lipolysis and reduced fat storage), while MOTS-c acts upstream on cellular energy metabolism, activating AMPK to improve the body&apos;s capacity to oxidize that mobilized fat and to use glucose more efficiently. In short, one peptide is studied for releasing fat from storage; the other for improving the metabolic machinery that burns it.
+            <Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link> + <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link> is a research-grade 2-component metabolic stack that pairs AOD-9604 — a modified C-terminal fragment of human growth hormone — with MOTS-c, a mitochondrial-derived peptide. The pairing is built around two non-overlapping mechanisms: AOD-9604 acts at the adipocyte to mobilize stored fat (lipolysis and reduced fat storage), while MOTS-c acts upstream on cellular energy metabolism, activating AMPK to improve the body&apos;s capacity to oxidize that mobilized fat and to use glucose more efficiently. In short, one peptide is studied for releasing fat from storage; the other for improving the metabolic machinery that burns it.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             This is a community-derived combination rather than a clinically validated drug product. It appears in the research literature only as two separate, individually studied compounds — there are no controlled human trials of the combination, and (as detailed below) AOD-9604&apos;s own pivotal human weight-loss trial did not meet its endpoint. The stack&apos;s rationale is mechanistic and complementary, not outcome-proven.
@@ -414,21 +414,21 @@ export default function AOD9604MOTScPage() {
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Commonly reported protocols run the two compounds separately rather than as a fixed blend — AOD-9604 ~300 mcg/day subcutaneously and MOTS-c ~5–10 mg/week — on an 8–12 week cycle. No standardized or clinically validated blend ratio exists. See{" "}
-            <a href="#dosing" className="text-[#0891b2] hover:underline">
+            <a href="#dosing" className="text-[#3A759F] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sold by specialty research-peptide vendors as two separate compounds, and occasionally as a pre-combined &ldquo;fat-loss&rdquo; or &ldquo;metabolic&rdquo; blend. None of the components are FDA-approved as injectables. See{" "}
-            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">
+            <Link href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
-            <a href="https://www.amazon.com/s?k=metabolism+support+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">
+            <a href="https://www.amazon.com/s?k=metabolism+support+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">
               Find related metabolism-support supplements on Amazon.
             </a>
           </p>
@@ -480,16 +480,16 @@ export default function AOD9604MOTScPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/aod-9604" className="text-sm font-medium text-[#0891b2] hover:underline">AOD-9604</Link>
-        <Link href="/peptides/mots-c" className="text-sm font-medium text-[#0891b2] hover:underline">MOTS-c</Link>
-        <Link href="/peptides/5-amino-1mq" className="text-sm font-medium text-[#0891b2] hover:underline">5-Amino-1MQ</Link>
+        <Link href="/peptides/aod-9604" className="text-sm font-medium text-[#3A759F] hover:underline">AOD-9604</Link>
+        <Link href="/peptides/mots-c" className="text-sm font-medium text-[#3A759F] hover:underline">MOTS-c</Link>
+        <Link href="/peptides/5-amino-1mq" className="text-sm font-medium text-[#3A759F] hover:underline">5-Amino-1MQ</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/nad-mots-c-5-amino-1mq" className="text-sm font-medium text-[#0891b2] hover:underline">Metabolic Blend (NAD+ / MOTS-c / 5-Amino-1MQ)</Link>
+        <Link href="/peptides/nad-mots-c-5-amino-1mq" className="text-sm font-medium text-[#3A759F] hover:underline">Metabolic Blend (NAD+ / MOTS-c / 5-Amino-1MQ)</Link>
         </div>
       </div>
 

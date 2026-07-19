@@ -39,9 +39,9 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural for users targeting growth hormone optimization.{" "}
-        <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+        <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
         (GHRH analog) and{" "}
-        <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+        <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
         (ghrelin mimetic / GH secretagogue) directly stimulate pituitary GH release. ZMA operates at a different layer: zinc supports testosterone synthesis (which interacts with the GH axis), magnesium supports the slow-wave sleep architecture during which the majority of endogenous nightly GH is released, and B6 supports neurotransmitter synthesis for sleep quality. The peptides do the direct GH stimulation; ZMA supports the hormonal and sleep environment GH release depends on. Mechanistically complementary, no known negative interactions. Most GH-axis peptide protocols benefit from optimized sleep quality, which is where ZMA&apos;s real contribution sits.
       </>
     ),
@@ -211,11 +211,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             ZMA pairs naturally with the growth-hormone-axis peptide cluster.{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             (GHRH analog) and{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
             (ghrelin mimetic / selective GH secretagogue) directly stimulate pituitary GH release.{" "}
-            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+            <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
             offers a similar GHRH-axis approach. The majority of endogenous GH release occurs during slow-wave sleep — and ZMA&apos;s magnesium arm supports slow-wave sleep architecture, while the zinc arm supports the broader hormonal environment (testosterone, IGF-1). The peptides handle direct GH stimulation; ZMA optimizes the sleep and mineral background GH release depends on. Mechanistically complementary, no known negative interactions. Most GH peptide protocols benefit from sleep-quality optimization — which is ZMA&apos;s real contribution.
           </p>
         </div>
@@ -223,19 +223,19 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link>{" "}
+              <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
               — cortisol-blunting adaptogen with reasonable testosterone evidence in stressed populations. Pairs cleanly with ZMA&apos;s mineral-repletion arm.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glycine" className="text-[#0891b2] hover:underline">Glycine</Link>{" "}
+              <Link href="/supplements/glycine" className="text-[#3A759F] hover:underline">Glycine</Link>{" "}
               — body-temperature regulation for sleep onset. Different sleep mechanism from magnesium; mechanistically complementary.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/apigenin" className="text-[#0891b2] hover:underline">Apigenin</Link>{" "}
+              <Link href="/supplements/apigenin" className="text-[#3A759F] hover:underline">Apigenin</Link>{" "}
               — GABA-A positive allosteric modulator with sleep and longevity arms. Stacks naturally with ZMA&apos;s magnesium arm.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-arginine" className="text-[#0891b2] hover:underline">L-arginine</Link>{" "}
+              <Link href="/supplements/l-arginine" className="text-[#3A759F] hover:underline">L-arginine</Link>{" "}
               — nitric oxide precursor with mild GH-secretagogue effects at high doses. Common GH-stack co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -373,37 +373,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Brilla LR, Conte V. Effects of a novel zinc-magnesium formulation on hormones and strength. J Exerc Physiol Online. 2000;3(4):26-36.{" "}
-          <a href="https://www.asep.org/asep/asep/BrillaV2.PDF" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.asep.org/asep/asep/BrillaV2.PDF" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.asep.org/asep/asep/BrillaV2.PDF
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wilborn CD, Kerksick CM, Campbell BI, et al. Effects of zinc magnesium aspartate (ZMA) supplementation on training adaptations and markers of anabolism and catabolism. J Int Soc Sports Nutr. 2004;1(2):12-20.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18500966/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18500966/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18500966/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mah J, Pitre T. Oral magnesium supplementation for insomnia in older adults: a systematic review and meta-analysis. BMC Complement Med Ther. 2021;21(1):125.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33865356/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33865356/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33865356/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prasad AS. Zinc deficiency: has been known of for 40 years but ignored by global health organisations. BMJ. 2003;326(7386):409-410.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/12586673/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/12586673/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/12586673/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Barbagallo M, Veronese N, Dominguez LJ. Magnesium in aging, health and diseases. Nutrients. 2021;13(2):463.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33919471/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33919471/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33919471/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prasad AS, Mantzoros CS, Beck FW, et al. Zinc status and serum testosterone levels of healthy adults. Nutrition. 1996;12(5):344-348.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/8875519/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/8875519/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/8875519/
           </a>
         </li>
@@ -419,12 +419,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -549,7 +549,7 @@ export default function ZMAPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">ZMA</h1>
@@ -575,7 +575,7 @@ export default function ZMAPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             ZMA is a patented combination of zinc monomethionine aspartate (30 mg zinc), magnesium aspartate (450 mg magnesium), and vitamin B6 (10.5 mg pyridoxine), developed by Victor Conte (SNAC System) for athletic recovery and sleep support. It is one of the most marketed athletic supplements of the past 25 years — primarily on the strength of the original Brilla & Conte 2000 trial showing 32% free testosterone elevation in NCAA football players. But the testosterone claim has not held up under replication: Wilborn 2004 in resistance-trained men with adequate baseline minerals found no testosterone effect, and subsequent independent trials in replete athletes confirm the null result. The honest evidence picture: ZMA reliably improves sleep quality through magnesium&apos;s GABA-A modulation arm (Mah 2021 meta-analysis confirms magnesium for sleep), reliably corrects zinc/magnesium deficiencies in athletes with high sweat losses, and may restore testosterone toward normal in zinc-deficient men — but doesn&apos;t pharmacologically elevate testosterone in replete users. ZMA pairs naturally with{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">GH-axis peptides like CJC-1295 and Ipamorelin</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">GH-axis peptides like CJC-1295 and Ipamorelin</Link>{" "}
             because the majority of nightly GH release occurs during slow-wave sleep — which ZMA&apos;s magnesium arm supports.
           </p>
           <div>
@@ -638,12 +638,12 @@ export default function ZMAPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#0891b2] hover:underline">Ashwagandha</Link>
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/glycine" className="text-sm font-medium text-[#0891b2] hover:underline">Glycine</Link>
-          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#0891b2] hover:underline">Apigenin</Link>
-          <Link href="/supplements/l-arginine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Arginine</Link>
+          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/glycine" className="text-sm font-medium text-[#3A759F] hover:underline">Glycine</Link>
+          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#3A759F] hover:underline">Apigenin</Link>
+          <Link href="/supplements/l-arginine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Arginine</Link>
         </div>
       </div>
 

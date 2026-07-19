@@ -132,7 +132,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Afamelanotide is prohibited in sport by the World Anti-Doping Agency (melanocortin agonists). It must not be confused with{" "}
-          <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>, a different, smaller, unapproved peptide.
+          <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>, a different, smaller, unapproved peptide.
         </p>
       </div>
     ),
@@ -147,7 +147,7 @@ const sections = [
         {/* TODO: add a VendorHighlightBlock here once Melanotan I vendors are wired into the vendor data. Do NOT add a fabricated carrier/note or invent a code in the meantime — use the inline /coupons link below until vendors are added. */}
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prof. Peptide maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             Verified Discount Codes &rarr;
           </Link>{" "}
           for current options.
@@ -230,7 +230,7 @@ export default function MelanotanIPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -262,10 +262,10 @@ export default function MelanotanIPage() {
         </p>
       </div>
 
-      <div className="mb-8 p-4 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Important &mdash; approved drug vs. research material:</span> The drug afamelanotide (brand Scenesse, Clinuvel) is FDA-approved (October 2019) as a 16 mg subcutaneous implant given every 2 months to increase pain-free light exposure in adults with erythropoietic protoporphyria (EPP), and EMA-approved for the same EPP indication (2014); prescription-only. The &ldquo;Melanotan I&rdquo; / MT-1 sold by research vendors is unapproved, research-grade material &mdash; NOT the approved drug Scenesse &mdash; for Research Use Only, not for human use; it is also prohibited in sport by WADA. It is a different peptide from{" "}
-          <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>.
+          <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>.
         </p>
       </div>
 
@@ -274,11 +274,11 @@ export default function MelanotanIPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Melanotan I (afamelanotide) is a synthetic 13-amino-acid analogue of α-melanocyte-stimulating hormone (α-MSH) and a melanocortin-1 receptor (MC1R) agonist, developed from α-MSH research at the University of Arizona and commercialized as the drug afamelanotide by Clinuvel Pharmaceuticals. By agonizing MC1R it stimulates eumelanin synthesis in the epidermis; in erythropoietic protoporphyria (EPP) the increased eumelanin absorbs light and reduces the phototoxic reaction driven by protoporphyrin IX, increasing pain-free light exposure. As the drug Scenesse, it is FDA-approved (October 2019) and EMA-approved (2014) for EPP &mdash; a 16 mg subcutaneous implant given every 2 months under prescription. Importantly, the &ldquo;Melanotan I&rdquo; / MT-1 sold by research vendors is unapproved, research-grade material &mdash; not the approved drug Scenesse &mdash; for research use only, and it is prohibited in sport by WADA. It must not be confused with{" "}
-            <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>, a different, smaller, unapproved peptide. It is studied alongside skin and pigmentation compounds such as{" "}
-            <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>{" "}
+            <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>, a different, smaller, unapproved peptide. It is studied alongside skin and pigmentation compounds such as{" "}
+            <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>{" "}
             and{" "}
-            <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -296,7 +296,7 @@ export default function MelanotanIPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Scenesse is a prescription implant administered by a healthcare professional. Research-grade Melanotan I / MT-1 is sold by specialty peptide vendors for laboratory use only and is not the approved drug. PP maintains a vetted list of vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -349,9 +349,9 @@ export default function MelanotanIPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/melanotan-ii" className="text-sm font-medium text-[#0891b2] hover:underline">Melanotan II</Link>
-        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu</Link>
-        <Link href="/peptides/pt-141" className="text-sm font-medium text-[#0891b2] hover:underline">PT-141</Link>
+        <Link href="/peptides/melanotan-ii" className="text-sm font-medium text-[#3A759F] hover:underline">Melanotan II</Link>
+        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
+        <Link href="/peptides/pt-141" className="text-sm font-medium text-[#3A759F] hover:underline">PT-141</Link>
         </div>
       </div>
 

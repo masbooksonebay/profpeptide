@@ -39,7 +39,7 @@ export default function FDA503BGLP1BulkCompounding2026Page() {
       }} />
 
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to News
         </Link>
 
@@ -54,8 +54,8 @@ export default function FDA503BGLP1BulkCompounding2026Page() {
         <div className="space-y-6 text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           <p>
             On April 30, 2026, the FDA proposed to exclude{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>,{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>, and liraglutide from the 503B bulks list, the regulatory mechanism that governs which active ingredients FDA-registered outsourcing facilities may use in large-scale compounding. After reviewing the nominations for all three, the agency said it found no demonstrated clinical need for outsourcing facilities to compound them from bulk substances. The proposal was formalized in a May 1 Federal Register notice (91 Fed. Reg. 23431).
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>,{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>, and liraglutide from the 503B bulks list, the regulatory mechanism that governs which active ingredients FDA-registered outsourcing facilities may use in large-scale compounding. After reviewing the nominations for all three, the agency said it found no demonstrated clinical need for outsourcing facilities to compound them from bulk substances. The proposal was formalized in a May 1 Federal Register notice (91 Fed. Reg. 23431).
           </p>
 
           <p>
@@ -72,7 +72,7 @@ export default function FDA503BGLP1BulkCompounding2026Page() {
 
           <p>
             For the research community, two things are worth keeping straight. This is a distinct regulatory track from the Category 2 peptide compounding question headed to the FDA&rsquo;s July advisory committee, and separate again from the broader peptide-access shifts under discussion this year. And it has no bearing on{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>, which was never eligible for compounding in the first place &mdash; there&rsquo;s no approved version, so no shortage pathway ever applied.
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>, which was never eligible for compounding in the first place &mdash; there&rsquo;s no approved version, so no shortage pathway ever applied.
           </p>
 
           <p>
@@ -86,7 +86,7 @@ export default function FDA503BGLP1BulkCompounding2026Page() {
                 href="https://www.fda.gov/news-events/press-announcements/fda-proposes-exclude-semaglutide-tirzepatide-and-liraglutide-503b-bulks-list"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#0891b2] hover:underline break-words"
+                className="text-[#3A759F] hover:underline break-words"
               >
                 FDA Proposes to Exclude Semaglutide, Tirzepatide, and Liraglutide on 503B Bulks List (FDA, Apr 30, 2026)
               </a>
@@ -96,7 +96,7 @@ export default function FDA503BGLP1BulkCompounding2026Page() {
                 href="https://www.federalregister.gov/documents/2026/05/01/2026-08552/list-of-bulk-drug-substances-for-which-there-is-a-clinical-need-under-section-503b-of-the-federal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#0891b2] hover:underline break-words"
+                className="text-[#3A759F] hover:underline break-words"
               >
                 List of Bulk Drug Substances for Which There Is a Clinical Need Under Section 503B&hellip;, 91 Fed. Reg. 23431 (May 1, 2026)
               </a>

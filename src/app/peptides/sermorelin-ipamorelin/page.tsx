@@ -20,9 +20,9 @@ const faqs = [
     a: (
       <>
         The Sermorelin + Ipamorelin stack is a 2-component growth hormone secretagogue blend:{" "}
-        <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+        <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
         (a GHRH 1-29 analog, the GHRH-pathway partner) +{" "}
-        <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+        <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
         (a selective GHS-R1a / ghrelin receptor agonist, the pulse trigger). Together they stimulate growth hormone release through two distinct pituitary receptor pathways simultaneously, producing larger and more pulsatile GH output than either compound alone. Both have short half-lives (&sim;10&ndash;20 min for Sermorelin, &sim;2 h for Ipamorelin), preserving physiological pulsatile GH release. It&apos;s the recommended entry-point stack before stepping up to CJC-1295-based protocols.
       </>
     ),
@@ -32,9 +32,9 @@ const faqs = [
     a: (
       <>
         Sermorelin + Ipamorelin is the recommended starting point. Both stacks hit the same dual-pathway mechanism (GHRH receptor + GHS-R1a), and both use short-acting components that preserve pulsatile GH release. The key distinction is regulatory footing:{" "}
-        <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+        <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
         has FDA-recognized clinical history as Geref (approved for pediatric GH deficiency diagnostics; now available via compounding pharmacies for adult GH deficiency), giving it the strongest safety and regulatory pedigree of the GHRH analogs. The{" "}
-        <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack (CJC-1295 no-DAC + Ipamorelin)</Link>{" "}
+        <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack (CJC-1295 no-DAC + Ipamorelin)</Link>{" "}
         uses CJC-1295, which has a slightly longer half-life (&sim;30 min vs &sim;10&ndash;20 min) but no approved clinical analog. Researchers confident with GH secretagogue protocols and seeking slightly longer action per dose can step up to the GH Stack after establishing tolerability here.
       </>
     ),
@@ -60,7 +60,7 @@ const faqs = [
     a: (
       <>
         The main differences are half-life and dosing convenience. Sermorelin has a half-life of &sim;10&ndash;20 minutes; CJC-1295 no-DAC &sim;30 minutes; CJC-1295 with DAC &sim;6&ndash;8 days. The DAC variant (see{" "}
-        <Link href="/peptides/cjc-1295-dac-ipamorelin" className="text-[#0891b2] hover:underline">CJC-1295 DAC + Ipamorelin</Link>
+        <Link href="/peptides/cjc-1295-dac-ipamorelin" className="text-[#3A759F] hover:underline">CJC-1295 DAC + Ipamorelin</Link>
         ) only requires 1&ndash;2 mg subcutaneously once weekly, making it convenient for researchers who prefer minimal injection frequency. The trade-off is that the long-acting DAC form produces sustained, non-pulsatile GH elevation rather than physiological pulses, and it lacks the regulatory analog that Sermorelin&apos;s clinical history provides. The Sermorelin + Ipamorelin stack is the most beginner-friendly and physiologically conservative option; CJC-1295 DAC + Ipamorelin is the most convenient once tolerability is established.
       </>
     ),
@@ -222,7 +222,7 @@ const sections = [
         </div>
         <p className="text-sm text-gray-500 dark:text-slate-400 italic leading-relaxed">
           Table above applies to a 2 mg single-peptide vial. For different vial sizes or pre-blended vials, use the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator</Link>{" "}
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</Link>{" "}
           for ratio-specific math.
         </p>
 
@@ -231,7 +231,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -306,16 +306,16 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Tissue-repair peptides.</span> The most common pairing.{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           +{" "}
-          <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+          <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
           (or the{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>
+          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>
           ) for combined local + systemic tissue repair. Elevated IGF-1 amplifies the substrate for local healing peptides.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Stepping up to the GH Stack.</span> Researchers who have established tolerability with Sermorelin + Ipamorelin and want slightly longer GHRH action per dose can step up to{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack (CJC-1295 no-DAC + Ipamorelin)</Link>.{" "}
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack (CJC-1295 no-DAC + Ipamorelin)</Link>.{" "}
           The CJC-1295 no-DAC half-life of ~30 min allows slightly longer pituitary priming per injection versus Sermorelin&apos;s ~10&ndash;20 min.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -324,18 +324,18 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Tesamorelin substitution.</span>{" "}
-          <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>{" "}
+          <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link>{" "}
           (FDA-approved GHRH analog for HIV-associated lipodystrophy) is the other regulatory-clean GHRH analog. Researchers targeting visceral fat specifically sometimes substitute Tesamorelin for Sermorelin in this stack format.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + adequate protein.</span> Required for GH-mediated anabolic effect. GH and IGF-1 elevation without mechanical loading and protein substrate produces less lean-mass benefit. Recommended: 1.2&ndash;1.6 g protein/kg body weight throughout the research cycle.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: MK-677.</span>{" "}
-          <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677</Link>{" "}
+          <Link href="/peptides/mk-677" className="text-[#3A759F] hover:underline">MK-677</Link>{" "}
           (ibutamoren) is another GH secretagogue (ghrelin receptor agonist) — stacking with Ipamorelin doubles the GHS-R1a activation without proportional benefit and increases appetite and potential cortisol side effects.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: full-dose standalone CJC-1295 or Sermorelin.</span> Adding a standalone{" "}
-          <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+          <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
           or Sermorelin protocol on top of this stack doubles the GHRH-pathway activation without independent benefit. Choose one GHRH analog per protocol.
         </li>
       </ol>
@@ -449,7 +449,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all verified vendors &rarr;
           </Link>
         </p>
@@ -481,31 +481,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Raun K, Hansen BS, Johansen NL, et al. Ipamorelin, the first selective growth hormone secretagogue. Eur J Endocrinol. 1998;139(5):552-561.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9849822/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9849822/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9849822/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bowers CY, Reynolds GA, Durham D, et al. Growth hormone (GH)-releasing peptide stimulates GH release in normal men and acts synergistically with GH-releasing hormone. J Clin Endocrinol Metab. 1990;70(4):975-82.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/2108187/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/2108187/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/2108187/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ishida J, Saitoh M, Ebner N, et al. Growth Hormone Secretagogues: History, Mechanism of Action, and Clinical Development. JCSM Rapid Commun. 2020;3(1):25-37.{" "}
-          <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rco2.9" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rco2.9" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://onlinelibrary.wiley.com/doi/full/10.1002/rco2.9
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Walker RF. Sermorelin: a better approach to management of adult-onset growth hormone insufficiency? Clin Interv Aging. 2006;1(4):307-308.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18046908/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18046908/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18046908/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Steiger A, Guldner J, Hemmeter U, et al. Effects of growth hormone-releasing hormone and somatostatin on sleep EEG and nocturnal hormone secretion in male controls. Neuroendocrinology. 1992;56(2):211-220.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/1361964/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/1361964/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/1361964/
           </a>
         </li>
@@ -521,12 +521,12 @@ const sections = [
           The Sermorelin + Ipamorelin combination has no controlled trial as a single product. The studies below are the key peer-reviewed sources for each component and for the dual-pathway mechanistic rationale — the empirical basis for this blend.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -547,7 +547,7 @@ export default function SermorelinIpamorelinPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -578,23 +578,23 @@ export default function SermorelinIpamorelinPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Sermorelin + Ipamorelin is a 2-component growth hormone secretagogue blend combining{" "}
-            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+            <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
             (a GHRH 1-29 analog, ~10&ndash;20 min half-life) and{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
             (a selective GHS-R1a / ghrelin receptor agonist, ~2 h half-life). Like the{" "}
-            <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>,{" "}
+            <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>,{" "}
             it activates both the GHRH receptor and the ghrelin receptor on pituitary somatotrophs simultaneously, producing supra-additive growth hormone release (2&ndash;4&times; greater than either compound alone) in a pulsatile pattern that mirrors physiological GH secretion. What distinguishes this stack is its regulatory footing: Sermorelin was FDA-approved as Geref for pediatric GH deficiency and is available via compounding pharmacies for adult GH deficiency — giving it the strongest safety and regulatory pedigree of the GHRH analogs. Both components are short-acting, preserving physiological pulsatile GH release, and both are WADA S2 prohibited.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             This is the recommended starting point on the GH secretagogue stack progression: Sermorelin + Ipamorelin &rarr;{" "}
-            <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack (CJC-1295 no-DAC + Ipamorelin)</Link>{" "}
+            <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack (CJC-1295 no-DAC + Ipamorelin)</Link>{" "}
             &rarr;{" "}
-            <Link href="/peptides/cjc-1295-dac-ipamorelin" className="text-[#0891b2] hover:underline">CJC-1295 DAC + Ipamorelin</Link>{" "}
+            <Link href="/peptides/cjc-1295-dac-ipamorelin" className="text-[#3A759F] hover:underline">CJC-1295 DAC + Ipamorelin</Link>{" "}
             (once-weekly convenience, non-pulsatile).
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -614,7 +614,7 @@ export default function SermorelinIpamorelinPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Typically sold as separate vials; some vendors offer a pre-blended Sermorelin + Ipamorelin vial. Neither component is FDA-approved at research-grade doses. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -666,18 +666,18 @@ export default function SermorelinIpamorelinPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Sermorelin</Link>
-          <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Ipamorelin</Link>
-          <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#0891b2] hover:underline">CJC-1295</Link>
-          <Link href="/peptides/mk-677" className="text-sm font-medium text-[#0891b2] hover:underline">MK-677</Link>
+          <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Sermorelin</Link>
+          <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Ipamorelin</Link>
+          <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#3A759F] hover:underline">CJC-1295</Link>
+          <Link href="/peptides/mk-677" className="text-sm font-medium text-[#3A759F] hover:underline">MK-677</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#0891b2] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>
-          <Link href="/peptides/cjc-1295-dac-ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">CJC-1295 DAC + Ipamorelin</Link>
+          <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#3A759F] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>
+          <Link href="/peptides/cjc-1295-dac-ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">CJC-1295 DAC + Ipamorelin</Link>
         </div>
       </div>
 

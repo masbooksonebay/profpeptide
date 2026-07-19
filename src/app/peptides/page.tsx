@@ -149,7 +149,7 @@ export default function PeptidesPage({ searchParams }: { searchParams: { categor
           Research profiles organized by category. Click any peptide to read the full profile including mechanism of action, key research findings, and references.
         </p>
         {filter && (
-          <Link href="/peptides" className="text-xs text-[#0891b2] hover:underline mt-2 inline-block">
+          <Link href="/peptides" className="text-xs text-[#3A759F] hover:underline mt-2 inline-block">
             &larr; Show all categories
           </Link>
         )}
@@ -166,16 +166,16 @@ export default function PeptidesPage({ searchParams }: { searchParams: { categor
                 <li key={p.slug}>
                   <Link
                     href={`/peptides/${p.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-[#1e2d3d] dark:text-slate-200 hover:text-[#0891b2] transition-all duration-150 hover:scale-105 origin-left group"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-[#1e2d3d] dark:text-slate-200 hover:text-[#3A759F] transition-all duration-150 hover:scale-105 origin-left group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-gray-300 dark:bg-slate-600 group-hover:bg-[#0891b2] transition-colors flex-shrink-0" />
+                    <span className="w-1 h-1 rounded-full bg-gray-300 dark:bg-slate-600 group-hover:bg-[#3A759F] transition-colors flex-shrink-0" />
                     {p.name}
                   </Link>
                 </li>
               ))}
             </ul>
             {cat.slug === "bioregulators" && (
-              <Link href="/bioregulators" className="text-sm text-[#0891b2] hover:underline mt-3 inline-block">
+              <Link href="/bioregulators" className="text-sm text-[#3A759F] hover:underline mt-3 inline-block">
                 Read the bioregulator guide &rarr;
               </Link>
             )}

@@ -35,9 +35,9 @@ const faqs = [
     a: (
       <>
         Yes — the stack is mechanistically natural for users targeting comprehensive inflammation modulation.{" "}
-        <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+        <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
         (lysine-proline-valine, the C-terminal tripeptide of α-MSH) is an anti-inflammatory peptide that reduces tissue inflammation via melanocortin pathway and MC1R/MC5R receptor binding — particularly useful for gut inflammation, IBD adjunct support, and topical skin applications. Quercetin operates at a different layer: NF-κB and NLRP3 inflammasome inhibition reduce systemic inflammatory gene expression, plus senolytic clearance of pro-inflammatory senescent cells. The peptide does direct melanocortin-pathway anti-inflammation; quercetin handles the broader NF-κB/NLRP3 and senolytic arms. Mechanistically complementary, no known negative interactions. For users targeting longevity rather than acute inflammation,{" "}
-        <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+        <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
         is the natural longevity-cluster pairing instead — supports the sirtuin pathway quercetin&apos;s AMPK/mTOR mechanism overlaps with.
       </>
     ),
@@ -216,11 +216,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Quercetin spans two natural peptide-pairing clusters depending on goal.{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             (lysine-proline-valine, the C-terminal tripeptide of α-MSH) is an anti-inflammatory peptide that reduces tissue inflammation via melanocortin pathway — particularly useful for gut inflammation, IBD adjunct support, and topical skin applications. Quercetin operates at a different layer: NF-κB and NLRP3 inflammasome inhibition reduce systemic inflammatory gene expression, plus senolytic clearance of pro-inflammatory senescent cells. The peptide does direct melanocortin-pathway anti-inflammation; quercetin handles the broader NF-κB/NLRP3 and senolytic arms.{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
             is the natural longevity-cluster pairing — supports the sirtuin pathway quercetin&apos;s AMPK/mTOR mechanism overlaps with. For users pursuing the comprehensive longevity stack:{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
             adds the pineal-axis arm. Mechanistically complementary across all three peptide cross-links; no known negative interactions.
           </p>
         </div>
@@ -228,31 +228,31 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
               — leverages quercetin&apos;s zinc ionophore mechanism. Standard immune-support and antiviral pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Bromelain (100–500 mg) — enhances quercetin&apos;s oral absorption via proteolytic action. Standard quercetin + bromelain stack improves bioavailability of the cheaper form.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link>{" "}
+              <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
               and{" "}
-              <Link href="/supplements/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>{" "}
+              <Link href="/supplements/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>{" "}
               — longevity-stack co-occupants. Quercetin&apos;s senolytic + AMPK/mTOR arms complement NAD+ supply for sirtuin activation.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/resveratrol" className="text-[#0891b2] hover:underline">Resveratrol</Link>{" "}
+              <Link href="/supplements/resveratrol" className="text-[#3A759F] hover:underline">Resveratrol</Link>{" "}
               — sirtuin activator. Compatible longevity-stack co-occupant; Sinclair-protocol pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/spermidine" className="text-[#0891b2] hover:underline">Spermidine</Link>{" "}
+              <Link href="/supplements/spermidine" className="text-[#3A759F] hover:underline">Spermidine</Link>{" "}
               — autophagy activator. Different aging-biology arm; common longevity-stack co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Fisetin — closely-related senolytic flavonoid often paired with quercetin in pulsed senolytic protocols.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/curcumin" className="text-[#0891b2] hover:underline">Curcumin</Link>{" "}
+              <Link href="/supplements/curcumin" className="text-[#3A759F] hover:underline">Curcumin</Link>{" "}
               — additional NF-κB inhibitor with COX/LOX arms. Compatible anti-inflammatory pairing.
             </li>
           </ol>
@@ -389,37 +389,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Justice JN, Nambiar AM, Tchkonia T, et al. Senolytics in idiopathic pulmonary fibrosis: results from a first-in-human, open-label, pilot study. EBioMedicine. 2019;40:554-563.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30616998/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30616998/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30616998/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hickson LJ, Langhi Prata LGP, Bobart SA, et al. Senolytics decrease senescent cells in humans: preliminary report from a clinical trial of dasatinib plus quercetin in individuals with diabetic kidney disease. EBioMedicine. 2019;47:446-456.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31542391/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31542391/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/31542391/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Serban MC, Sahebkar A, Zanchetti A, et al. Effects of quercetin on blood pressure: a systematic review and meta-analysis of randomized controlled trials. J Am Heart Assoc. 2016;5(7):e002713.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27405810/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27405810/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27405810/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hussain SA, Sulaiman AA, Alhaddad H, Alhadidi Q. Quercetin: a promising flavonoid for therapeutic interventions in aging and age-related diseases. Curr Pharm Des. 2021;27(43):4392-4406.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33023444/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33023444/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33023444/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mlcek J, Jurikova T, Skrovankova S, Sochor J. Quercetin and its anti-allergic immune response. Molecules. 2016;21(5):623.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27187333/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27187333/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27187333/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kirkland JL, Tchkonia T. Senolytic drugs: from discovery to translation. J Intern Med. 2020;288(5):518-536.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/32686219/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/32686219/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/32686219/
           </a>
         </li>
@@ -435,12 +435,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -565,7 +565,7 @@ export default function QuercetinPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Quercetin</h1>
@@ -591,9 +591,9 @@ export default function QuercetinPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Quercetin is a flavonoid polyphenol found abundantly in onions, apples, capers, berries, leafy greens, and green tea — making it one of the most widely consumed dietary polyphenols. Its supplement profile spans multiple distinct mechanism arms: senolytic activity (selective clearance of senescent &ldquo;zombie&rdquo; cells, particularly potent when combined with the prescription drug dasatinib — the Mayo Clinic D+Q protocol), NF-κB and NLRP3 inflammasome inhibition (broad anti-inflammatory effect), mast cell stabilization (antihistamine), zinc ionophore activity (antiviral implications), and AMPK activation / mTOR inhibition (longevity-pathway modulation). The senolytic arm is the most mechanistically novel — Hickson 2019 documented actual senescent-cell clearance in human skin and adipose tissue biopsies after pulsed D+Q dosing, supporting the &ldquo;senolytic clearance&rdquo; framework that drives modern aging research. The cardiovascular/blood pressure arm has the cleanest meta-analytic support (Serban 2016, -3.04 mmHg SBP / -2.63 mmHg DBP). The central practical issue is bioavailability — standard quercetin has poor oral absorption (single-digit percent); Quercefit phytosome (~20× absorption) and isoquercetin (~3×) are the practical solutions. Quercetin pairs naturally with{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">anti-inflammatory peptides like KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">anti-inflammatory peptides like KPV</Link>{" "}
             for inflammation modulation, and with{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide / Epitalon</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide / Epitalon</Link>{" "}
             for longevity-cluster protocols.
           </p>
           <div>
@@ -657,12 +657,12 @@ export default function QuercetinPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#0891b2] hover:underline">Resveratrol</Link>
-          <Link href="/supplements/spermidine" className="text-sm font-medium text-[#0891b2] hover:underline">Spermidine</Link>
-          <Link href="/supplements/nmn" className="text-sm font-medium text-[#0891b2] hover:underline">NMN</Link>
-          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#0891b2] hover:underline">Curcumin</Link>
-          <Link href="/supplements/coq10" className="text-sm font-medium text-[#0891b2] hover:underline">CoQ10</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#3A759F] hover:underline">Resveratrol</Link>
+          <Link href="/supplements/spermidine" className="text-sm font-medium text-[#3A759F] hover:underline">Spermidine</Link>
+          <Link href="/supplements/nmn" className="text-sm font-medium text-[#3A759F] hover:underline">NMN</Link>
+          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#3A759F] hover:underline">Curcumin</Link>
+          <Link href="/supplements/coq10" className="text-sm font-medium text-[#3A759F] hover:underline">CoQ10</Link>
         </div>
       </div>
 

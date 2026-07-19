@@ -26,10 +26,10 @@ function CodeBox({ code }: { code: string }) {
     <button
       onClick={handleCopy}
       aria-label={`Copy code ${code}`}
-      className="block w-full bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-slate-600 px-3 py-2 rounded-lg text-sm font-mono font-bold text-[#1e2d3d] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:border-[#0891b2]/40 transition-colors"
+      className="block w-full bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-slate-600 px-3 py-2 rounded-lg text-sm font-mono font-bold text-[#1e2d3d] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:border-[#3A759F]/40 transition-colors"
     >
       {copied ? (
-        <span className="text-[#0891b2] font-sans font-medium tracking-normal">Copied!</span>
+        <span className="text-[#3A759F] font-sans font-medium tracking-normal">Copied!</span>
       ) : (
         code
       )}
@@ -51,11 +51,11 @@ export default function VendorHighlightBlock({ highlights }: VendorHighlightBloc
             <div className="flex items-center justify-between gap-2 px-4 py-3 border-b border-gray-100 dark:border-slate-700">
               <Link
                 href={v.detailPage}
-                className="text-sm font-bold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors"
+                className="text-sm font-bold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors"
               >
                 {v.name}
               </Link>
-              <span className="text-xs font-bold text-[#0891b2] bg-[#0891b2]/15 px-2 py-0.5 rounded-full whitespace-nowrap">
+              <span className="text-xs font-bold text-[#3A759F] bg-[#3A759F]/15 px-2 py-0.5 rounded-full whitespace-nowrap">
                 {v.discount}
               </span>
             </div>

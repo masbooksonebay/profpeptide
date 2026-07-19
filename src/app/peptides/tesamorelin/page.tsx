@@ -29,9 +29,9 @@ const faqs = [
     a: (
       <>
         Tesamorelin has the strongest evidence base — completed Phase 3 trials and FDA approval.{" "}
-        <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+        <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
         and{" "}
-        <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">sermorelin</Link>{" "}
+        <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">sermorelin</Link>{" "}
         lack equivalent controlled efficacy data. Mechanistically all three activate the GHRH receptor; tesamorelin has higher receptor binding affinity and resistance to DPP-IV degradation than sermorelin, but shorter half-life than CJC-1295 with DAC. The choice depends on whether you want FDA-approved evidence (tesamorelin), longer dosing intervals (CJC-1295 with DAC), or the most natural sequence (sermorelin).
       </>
     ),
@@ -57,7 +57,7 @@ const faqs = [
     a: (
       <>
         Egrifta WR and Egrifta SV are prescription medications distributed through specialty pharmacy channels in the US. Research-grade tesamorelin is sold by specialty peptide vendors. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -159,7 +159,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -170,7 +170,7 @@ const sections = [
     intro: (
       <>
         Tesamorelin is given as a subcutaneous injection in the abdomen &mdash; not thigh or upper arm. FDA labeling specifies abdominal injection only. The abdominal-only restriction is unique among research peptides and tied to the visceral-fat-targeting mechanism. For the practical mechanics of insulin syringes, units vs mcg conversion, and subcutaneous technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -278,7 +278,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 5 mg vial, each unit drawn delivers 50 mcg of Tesamorelin at 1 mL reconstitution, 25 mcg at 2 mL, and 16.7 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -293,20 +293,20 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standalone use.</span> The FDA-approved approach. Stacking is off-label and unsupported by controlled data.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Ipamorelin (off-label).</span>{" "}
-          <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+          <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
           sometimes combined for amplified GH release via dual-pathway activation (GHRH receptor + ghrelin receptor). No controlled human data on this combination.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">BPC-157 / TB-500.</span>{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>{" "}
           paired off-label for recovery support during anabolic protocols.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training.</span> Natural pairing for body composition research &mdash; mechanical loading is necessary for proper lean-mass adaptation.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: CJC-1295 or sermorelin.</span> Redundant GHRH-receptor mechanism, no proportional benefit.{" "}
-          <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+          <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
           and{" "}
-          <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">sermorelin</Link>{" "}
+          <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">sermorelin</Link>{" "}
           target the same receptor as tesamorelin.
         </li>
       </ol>
@@ -422,7 +422,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -454,37 +454,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Tesamorelin (Egrifta WR) FDA Prescribing Information. 2025.{" "}
-          <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Theratechnologies. EGRIFTA WR (tesamorelin) F8 formulation FDA approval announcement. March 25, 2025.{" "}
-          <a href="https://www.theratech.com/news-releases/news-release-details/theratechnologies-receives-fda-approval-egrifta-wrtm-tesamorelin/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.theratech.com/news-releases/news-release-details/theratechnologies-receives-fda-approval-egrifta-wrtm-tesamorelin/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.theratech.com/news-releases/news-release-details/theratechnologies-receives-fda-approval-egrifta-wrtm-tesamorelin/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Falutz J, Allas S, Blot K, et al. Metabolic effects of a growth hormone-releasing factor in patients with HIV. N Engl J Med. 2007;357(23):2359-70.{" "}
-          <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa072375" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa072375" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.nejm.org/doi/full/10.1056/NEJMoa072375
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Falutz J, Mamputu JC, Potvin D, et al. Effects of tesamorelin (TH9507), a growth hormone-releasing factor analog, in HIV-infected patients with excess abdominal fat: a pooled analysis of two multicenter, double-blind placebo-controlled phase 3 trials with safety extension data. J Clin Endocrinol Metab. 2010;95(9):4291-304.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20554713/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20554713/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20554713/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Stanley TL, Fourman LT, Feldpausch MN, et al. Effects of tesamorelin on non-alcoholic fatty liver disease in HIV: a randomised, double-blind, multicentre trial. Lancet HIV. 2019;6(12):e821-e830.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31611038/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31611038/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/31611038/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Baker LD, Barsness SM, Borson S, et al. Effects of growth hormone-releasing hormone on cognitive function in adults with mild cognitive impairment and healthy older adults. Arch Neurol. 2012;69(11):1420-9.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22869065/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22869065/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22869065/
           </a>
         </li>
@@ -500,12 +500,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -526,7 +526,7 @@ export default function TesamorelinPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -551,7 +551,7 @@ export default function TesamorelinPage() {
         </p>
       </div>
 
-      <div className="mb-8 p-4 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Latest research:</span> Egrifta WR (F8 formulation, 1.28 mg/day, weekly reconstitution) received FDA approval March 25, 2025 &mdash; replacing the older Egrifta SV for many patients. The new formulation reduces injection-site adverse events and improves stability of reconstituted solution.
         </p>
@@ -562,11 +562,11 @@ export default function TesamorelinPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Tesamorelin (brand names Egrifta, Egrifta SV, Egrifta WR) is a synthetic 44-amino-acid analog of human growth hormone-releasing hormone (GHRH) developed by Theratechnologies. It is the only GHRH analog with current FDA approval &mdash; approved in November 2010 for reduction of excess abdominal fat (visceral adipose tissue) in HIV-infected adults with lipodystrophy. Unlike{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             or{" "}
-            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">sermorelin</Link>
+            <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">sermorelin</Link>
             , tesamorelin has full Phase 3 clinical efficacy data: roughly 15–20% visceral fat reduction at 26 weeks. The N-terminal trans-3-hexenoic acid modification protects against DPP-IV degradation while preserving full GHRH activity. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -586,7 +586,7 @@ export default function TesamorelinPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Tesamorelin is the only FDA-approved GHRH analog. PP maintains a vetted list of peptide vendors with verified discount codes for research-grade material. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -639,11 +639,11 @@ export default function TesamorelinPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#0891b2] hover:underline">CJC-1295</Link>
-        <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Sermorelin</Link>
-        <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Ipamorelin</Link>
-        <Link href="/peptides/mk-677" className="text-sm font-medium text-[#0891b2] hover:underline">MK-677</Link>
-        <Link href="/peptides/igf-1-lr3" className="text-sm font-medium text-[#0891b2] hover:underline">IGF-1 LR3</Link>
+        <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#3A759F] hover:underline">CJC-1295</Link>
+        <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Sermorelin</Link>
+        <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Ipamorelin</Link>
+        <Link href="/peptides/mk-677" className="text-sm font-medium text-[#3A759F] hover:underline">MK-677</Link>
+        <Link href="/peptides/igf-1-lr3" className="text-sm font-medium text-[#3A759F] hover:underline">IGF-1 LR3</Link>
         </div>
       </div>
 

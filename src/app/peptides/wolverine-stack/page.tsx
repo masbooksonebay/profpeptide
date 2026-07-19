@@ -19,9 +19,9 @@ const faqs = [
     a: (
       <>
         The Wolverine Stack is a research-grade 2-component peptide blend:{" "}
-        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+        <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
         (Body Protection Compound) +{" "}
-        <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+        <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
         (Thymosin Beta-4 fragment). Named for its association with rapid healing, it&apos;s the most established and widely sold of the recovery-focused peptide blends. Common SKUs are 10 mg total (5 mg + 5 mg) or 20 mg total (10 mg + 10 mg) at a fixed 1:1 ratio.
       </>
     ),
@@ -31,9 +31,9 @@ const faqs = [
     a: (
       <>
         Wolverine Stack is the 2-component baseline (BPC-157 + TB-500) for pure injury and recovery work — tendon, ligament, muscle, post-surgical tissue.{" "}
-        <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+        <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>{" "}
         adds GHK-Cu for skin and collagen remodeling on top of the same backbone.{" "}
-        <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+        <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
         further adds KPV for inflammation control. Researchers step up: Wolverine → GLOW → KLOW as breadth of coverage expands beyond pure tissue repair.
       </>
     ),
@@ -59,7 +59,7 @@ const faqs = [
     a: (
       <>
         Sold pre-blended by some research peptide vendors (typically 10 mg or 20 mg total) and as two separate vials by others. Pre-blended is more convenient; separate vials let researchers run non-1:1 ratios. PP maintains a list of vetted vendors with verified discount codes — see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -186,9 +186,9 @@ const sections = [
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
             <span className="font-semibold">Stepping up to GLOW or KLOW.</span> Researchers adding skin or collagen work step up to{" "}
-            <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+            <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>{" "}
             (adds GHK-Cu). Those adding an inflammation-control layer step up to{" "}
-            <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+            <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
             (adds KPV on top of GLOW).
           </p>
         </div>
@@ -197,7 +197,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -226,26 +226,26 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">GLOW blend (+ GHK-Cu).</span> Adds copper tripeptide for collagen, skin, and gene-expression effects on top of the Wolverine repair backbone. Use when skin or dermal recovery is a goal alongside tissue repair. See{" "}
-          <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW &rarr;</Link>.
+          <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW &rarr;</Link>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">KLOW blend (+ GHK-Cu + KPV).</span> The most comprehensive recovery blend — adds GHK-Cu and KPV for skin remodeling and NF-κB-mediated inflammation control. Use when target tissue is chronically inflamed or post-procedure reactive. See{" "}
-          <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW &rarr;</Link>.
+          <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW &rarr;</Link>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">GH-class peptides (CJC-1295 + Ipamorelin, MK-677).</span> Adds growth hormone signaling for systemic anabolic and tissue-repair support. Theoretical synergy via increased IGF-1 levels. See{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack &rarr;</Link>.
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack &rarr;</Link>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">IGF-1 LR3.</span> Direct IGF-1 receptor activation paired with the local healing peptides. More aggressive systemic anabolic effect; combined cycles tend to be shorter (4–6 weeks). See{" "}
-          <Link href="/peptides/igf-1-lr3" className="text-[#0891b2] hover:underline">IGF-1 LR3 &rarr;</Link>.
+          <Link href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3 &rarr;</Link>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + 1.2–1.6 g/kg protein.</span> Recommended baseline for any musculoskeletal recovery protocol. Mechanical loading is required for proper tendon and muscle remodeling — peptides accelerate the substrate but do not replace the load signal.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: full-dose standalone BPC-157 or TB-500.</span> The Wolverine Stack already contains both at meaningful doses. Stacking with standalone{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           or{" "}
-          <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+          <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
           protocols doubles the dose without independent benefit.
         </li>
       </ol>
@@ -366,37 +366,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vasireddi N, Hahamyan H, Salata MJ, et al. Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review. HSS J. 2025.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Goldstein AL, Hannappel E, Sosne G, Kleinman HK. Thymosin β4: a multi-functional regenerative peptide. Expert Opin Biol Ther. 2012;12(1):37-51.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22074294/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22074294/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22074294/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Chang CH, Tsai WC, Lin MS, et al. The promoting effect of pentadecapeptide BPC 157 on tendon healing involves tendon outgrowth, cell survival, and cell migration. J Appl Physiol. 2011;110(3):774-80.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21030672/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sikiric P, Hahm KB, Blagaic AB, et al. Stable Gastric Pentadecapeptide BPC 157 and Wound Healing. Front Pharmacol. 2021.{" "}
-          <a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kleinman HK, Sosne G. Thymosin β4 Promotes Dermal Healing. Vitam Horm. 2016;102:53-70.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27450738/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27450738/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27450738/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Rahman OF, Lee SJ, Seeds WA, et al. Therapeutic Peptides in Orthopaedics: Applications, Challenges, and Future Directions. J Am Acad Orthop Surg Glob Res Rev. 2026.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12753158/
           </a>
         </li>
@@ -412,12 +412,12 @@ const sections = [
           The Wolverine Stack has no controlled trial as a combination. The studies below are the key peer-reviewed sources for each component's mechanism in musculoskeletal and wound-healing contexts — the empirical basis for the blend's mechanistic rationale.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -438,7 +438,7 @@ export default function WolverineStackPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -469,13 +469,13 @@ export default function WolverineStackPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The Wolverine Stack is a research-grade 2-component peptide blend combining{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             (Body Protection Compound) and{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
             (Thymosin Beta-4 fragment) in a single subcutaneous injection. Named for its association with rapid healing, it&apos;s the most established and widely sold of the recovery-focused peptide blends — pre-blended Wolverine has been on the research-grade market longer than any other combination product. The blend pairs BPC-157&apos;s vascular and growth-factor signaling with TB-500&apos;s actin-mediated cellular migration, targeting both the signaling that initiates tissue repair and the cellular mechanics that carry it out. Researchers stepping up to skin and inflammation coverage move to{" "}
-            <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+            <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>{" "}
             (+ GHK-Cu) and{" "}
-            <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+            <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
             (+ GHK-Cu + KPV).
           </p>
           <div>
@@ -496,7 +496,7 @@ export default function WolverineStackPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sold pre-blended by some research peptide vendors and as separate vials by others. Neither component is FDA-approved. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -549,18 +549,18 @@ export default function WolverineStackPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
-        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#0891b2] hover:underline">TB-500</Link>
-        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu</Link>
-        <Link href="/peptides/kpv" className="text-sm font-medium text-[#0891b2] hover:underline">KPV</Link>
+        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
+        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#3A759F] hover:underline">TB-500</Link>
+        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
+        <Link href="/peptides/kpv" className="text-sm font-medium text-[#3A759F] hover:underline">KPV</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/glow" className="text-sm font-medium text-[#0891b2] hover:underline">GLOW</Link>
-        <Link href="/peptides/klow" className="text-sm font-medium text-[#0891b2] hover:underline">KLOW</Link>
+        <Link href="/peptides/glow" className="text-sm font-medium text-[#3A759F] hover:underline">GLOW</Link>
+        <Link href="/peptides/klow" className="text-sm font-medium text-[#3A759F] hover:underline">KLOW</Link>
         </div>
       </div>
 

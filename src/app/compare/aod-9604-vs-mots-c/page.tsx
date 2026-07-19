@@ -30,7 +30,7 @@ const faqs = [
   { q: "Can they be studied together?", a: (
     <>
       They act through different pathways (lipolysis vs AMPK/metabolic homeostasis), so a researcher might study them for complementary metabolic questions &mdash; and they are sold together as a{" "}
-      <Link href="/peptides/aod-9604-mots-c" className="text-[#0891b2] hover:underline">combined AOD-9604 + MOTS-c blend</Link>. That said, there is no established combination protocol, and human evidence for either compound is limited. Research-use only.
+      <Link href="/peptides/aod-9604-mots-c" className="text-[#3A759F] hover:underline">combined AOD-9604 + MOTS-c blend</Link>. That said, there is no established combination protocol, and human evidence for either compound is limited. Research-use only.
     </>
   ) },
 ];
@@ -42,17 +42,17 @@ export default function AOD9604vsMOTScPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"AOD-9604 vs MOTS-C: Two Distinct Metabolic Peptides"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">AOD-9604 vs MOTS-C &mdash; Two Distinct Metabolic Peptides</h1>
-      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/aod-9604" className="text-[#0891b2] hover:underline">AOD-9604</Link> and <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-C</Link> both show up in fat-loss and metabolic research, so they get compared &mdash; but unlike some &ldquo;versus&rdquo; pairs, these are two genuinely different compounds that work through different mechanisms. This page lays out what each actually is, how they differ, and which research question each fits.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link> and <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link> both show up in fat-loss and metabolic research, so they get compared &mdash; but unlike some &ldquo;versus&rdquo; pairs, these are two genuinely different compounds that work through different mechanisms. This page lays out what each actually is, how they differ, and which research question each fits.</p>
 
-      <div className="bg-[#0891b2]/10 border border-[#0891b2]/20 rounded-xl p-5 mb-8">
+      <div className="bg-[#3A759F]/10 border border-[#3A759F]/20 rounded-xl p-5 mb-8">
         <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>AOD-9604:</strong> a synthetic fragment of growth hormone (hGH 176-191), studied for selective fat loss / lipolysis.</p>
         <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>MOTS-C:</strong> a mitochondrial-derived peptide (encoded in mtDNA), studied for insulin sensitivity and metabolic homeostasis as an &ldquo;exercise mimetic.&rdquo;</p>
         <p className="text-lg text-[#1e2d3d] dark:text-slate-100"><strong>Bottom line up front:</strong> different compounds, different mechanisms &mdash; not interchangeable, and not a rigged &ldquo;which is better&rdquo; contest. Both are preclinical-stage and research-use only.</p>
       </div>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why these two get compared</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Both are peptides that touch fat and energy metabolism, so they end up on the same shortlists. But they come from completely different places. AOD-9604 is a lab-made fragment of human growth hormone, engineered to isolate the hormone&apos;s fat-metabolism (lipolytic) action while leaving out its growth and blood-sugar effects.
@@ -70,8 +70,8 @@ export default function AOD9604vsMOTScPage() {
           <thead>
             <tr className="bg-gray-50 dark:bg-[#1e293b]">
               <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">AOD-9604</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">MOTS-C</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">AOD-9604</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">MOTS-C</th>
             </tr>
           </thead>
           <tbody>
@@ -107,7 +107,7 @@ export default function AOD9604vsMOTScPage() {
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
             <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Both together</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Because they hit different pathways, they are sometimes combined &mdash; sold as a <Link href="/peptides/aod-9604-mots-c" className="text-[#0891b2] hover:underline">AOD-9604 + MOTS-c blend</Link>. There is no established combination protocol and the human data for each is limited, so any combined use is exploratory and research-use only.
+              Because they hit different pathways, they are sometimes combined &mdash; sold as a <Link href="/peptides/aod-9604-mots-c" className="text-[#3A759F] hover:underline">AOD-9604 + MOTS-c blend</Link>. There is no established combination protocol and the human data for each is limited, so any combined use is exploratory and research-use only.
             </p>
           </div>
         </div>
@@ -135,19 +135,19 @@ export default function AOD9604vsMOTScPage() {
         <ol className="list-decimal list-inside space-y-2">
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Ng FM, Sun J, Sharma L, et al. Metabolic studies of a synthetic lipolytic domain (AOD9604) of human growth hormone. Horm Res. 2000;53(6):274-278.{" "}
-            <a href="https://pubmed.ncbi.nlm.nih.gov/11146367/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/11146367/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/11146367/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/11146367/</a>
           </li>
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Heffernan MA, Thorburn AW, Fam B, et al. Increase of fat oxidation and weight loss in obese mice caused by chronic treatment with human growth hormone or a modified C-terminal fragment. Int J Obes Relat Metab Disord. 2001;25(10):1442-1449.{" "}
-            <a href="https://pubmed.ncbi.nlm.nih.gov/11673763/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/11673763/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/11673763/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/11673763/</a>
           </li>
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Lee C, Zeng J, Drew BG, et al. The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance. Cell Metab. 2015;21(3):443-454.{" "}
-            <a href="https://pubmed.ncbi.nlm.nih.gov/25738459/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/25738459/</a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/25738459/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pubmed.ncbi.nlm.nih.gov/25738459/</a>
           </li>
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Zheng Y, Wei Z, Wang T. MOTS-c: A promising mitochondrial-derived peptide for therapeutic exploitation. Front Endocrinol (Lausanne). 2023.{" "}
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9905433/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">https://pmc.ncbi.nlm.nih.gov/articles/PMC9905433/</a>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9905433/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">https://pmc.ncbi.nlm.nih.gov/articles/PMC9905433/</a>
           </li>
         </ol>
       </div>

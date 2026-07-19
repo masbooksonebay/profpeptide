@@ -51,7 +51,7 @@ export default function RFKPeptideBanPage() {
         ],
       }} />
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to News
         </Link>
 
@@ -70,7 +70,7 @@ export default function RFKPeptideBanPage() {
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Background: The 2023 FDA Peptide Ban</h2>
           <p>
-            In late 2023, the FDA placed numerous research peptides on a restricted compounding list, citing safety concerns and lack of clinical trial data. The move affected some of the most widely researched compounds in the longevity, recovery, and metabolic health space &mdash; including <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>, <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>, and others.
+            In late 2023, the FDA placed numerous research peptides on a restricted compounding list, citing safety concerns and lack of clinical trial data. The move affected some of the most widely researched compounds in the longevity, recovery, and metabolic health space &mdash; including <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>, <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>, and others.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What RFK Jr. Announced</h2>
@@ -78,16 +78,16 @@ export default function RFKPeptideBanPage() {
             Kennedy indicated that approximately 14 of the 19 restricted peptides would move from Category 2 to Category 1, restoring their eligibility for licensed compounding pharmacies. Compounds expected to be affected include:
           </p>
           <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-slate-300">
-            <li><Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link></li>
-            <li><Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link></li>
-            <li><Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link></li>
-            <li><Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link></li>
-            <li><Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1</Link></li>
-            <li><Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link></li>
-            <li><Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link></li>
-            <li><Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link></li>
-            <li><Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link></li>
-            <li><Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link></li>
+            <li><Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link></li>
+            <li><Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link></li>
+            <li><Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link></li>
+            <li><Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link></li>
+            <li><Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link></li>
+            <li><Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link></li>
+            <li><Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link></li>
+            <li><Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link></li>
+            <li><Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link></li>
+            <li><Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link></li>
           </ul>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Important Caveats</h2>

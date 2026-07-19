@@ -107,16 +107,16 @@ export default function VendorTestingIndexPage() {
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
           <strong className="font-semibold text-[#1e2d3d] dark:text-slate-100">&ldquo;Pending verification&rdquo; means we have not yet confirmed that data point from a public source &mdash; it is not a negative judgment.</strong> Cells are filled only when verifiable. See{" "}
-          <Link href="/methodology" className="text-[#0891b2] hover:underline">how we compile and verify</Link>{" "}
+          <Link href="/methodology" className="text-[#3A759F] hover:underline">how we compile and verify</Link>{" "}
           this data. All entries are for research-use-only context and are not medical advice. Affiliate relationships do not determine vendor inclusion, ranking, or verification &mdash; see our{" "}
-          <Link href="/disclaimer" className="text-[#0891b2] hover:underline">disclaimer</Link>.
+          <Link href="/disclaimer" className="text-[#3A759F] hover:underline">disclaimer</Link>.
         </p>
 
         <div className="flex flex-wrap items-center gap-3 mb-8">
           <button onClick={downloadCsv} className="btn-primary text-sm px-4 py-2">
             Download as CSV
           </button>
-          <Link href="/contact" className="text-sm font-medium text-[#0891b2] hover:underline">
+          <Link href="/contact" className="text-sm font-medium text-[#3A759F] hover:underline">
             Submit a correction or a COA &rarr;
           </Link>
         </div>
@@ -137,7 +137,7 @@ export default function VendorTestingIndexPage() {
             {rows.map((r) => (
               <tr key={r.slug} className="border-t border-gray-100 dark:border-slate-800 align-top">
                 <th scope="row" className="px-3 py-3 text-left font-medium whitespace-nowrap sticky left-0 bg-white dark:bg-[#0f172a]">
-                  <Link href={`/coupons/${r.slug}`} className="text-[#0891b2] hover:underline">{r.name}</Link>
+                  <Link href={`/coupons/${r.slug}`} className="text-[#3A759F] hover:underline">{r.name}</Link>
                 </th>
                 {COLUMNS.map((c) => (
                   <td key={c.key} className="px-3 py-3"><Cell value={r[c.key]} /></td>

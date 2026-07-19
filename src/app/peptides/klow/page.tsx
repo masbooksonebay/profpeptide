@@ -19,9 +19,9 @@ const faqs = [
     a: (
       <>
         KLOW is a research-grade 4-component peptide blend: BPC-157 + TB-500 + GHK-Cu + KPV. It extends the{" "}
-        <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+        <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>{" "}
         blend (BPC-157 + TB-500 + GHK-Cu) by adding{" "}
-        <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>, a tripeptide derived from α-melanocyte-stimulating hormone (α-MSH). The standard vendor SKU is an 80 mg vial: 50 mg GHK-Cu + 10 mg BPC-157 + 10 mg TB-500 + 10 mg KPV.
+        <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>, a tripeptide derived from α-melanocyte-stimulating hormone (α-MSH). The standard vendor SKU is an 80 mg vial: 50 mg GHK-Cu + 10 mg BPC-157 + 10 mg TB-500 + 10 mg KPV.
       </>
     ),
   },
@@ -30,9 +30,9 @@ const faqs = [
     a: (
       <>
         KLOW is GLOW plus KPV. GLOW already covers tissue repair (BPC-157 + TB-500) and skin/collagen remodeling (GHK-Cu). KLOW adds an anti-inflammatory layer through KPV, which inhibits NF-κB and dampens the inflammatory environment that can interfere with the rebuilding signals from the other three components. Researchers typically step up:{" "}
-        <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+        <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>{" "}
         (pure injury recovery) →{" "}
-        <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+        <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>{" "}
         (recovery + skin) → KLOW (recovery + skin + inflammation control).
       </>
     ),
@@ -54,7 +54,7 @@ const faqs = [
     a: (
       <>
         KLOW is sold as a pre-blended 80 mg vial by specialty research peptide vendors. Quality varies dramatically by source — third-party HPLC testing of each component is essential. PP maintains a list of vetted vendors with verified discount codes — see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -66,9 +66,9 @@ const faqs = [
     a: (
       <>
         KLOW already contains the full BPC-157 + TB-500 + GHK-Cu + KPV set, so stacking with standalone versions of any of those four components risks double-dosing. The most common additions are resistance training and adequate protein for anabolic context, and topical GHK-Cu serum for layered skin effect. Avoid stacking with full-dose{" "}
-        <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+        <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>{" "}
         or{" "}
-        <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+        <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>{" "}
         — they overlap with KLOW's components.
       </>
     ),
@@ -202,7 +202,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -234,16 +234,16 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Topical retinoids.</span> Compatible with KLOW. The collagen-stimulating effects are additive.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: full-dose standalone components.</span> KLOW already contains{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>,{" "}
-          <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>,{" "}
-          <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>, and{" "}
-          <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link> at meaningful doses. Adding standalone protocols of any of these doubles the dose without independent benefit.
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>,{" "}
+          <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>,{" "}
+          <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>, and{" "}
+          <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link> at meaningful doses. Adding standalone protocols of any of these doubles the dose without independent benefit.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: GLOW and Wolverine Stack.</span> Both overlap with KLOW's components. See{" "}
-          <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+          <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>{" "}
           for the 3-component skin/recovery version (no KPV) or{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>{" "}
           for the 2-component pure-injury version (BPC-157 + TB-500 only).
         </li>
       </ol>
@@ -364,37 +364,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pickart L, Margolina A. Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data. Int J Mol Sci. 2018;19(7):1987.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6073405/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6073405/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC6073405/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hsieh MJ, Liu HT, Wang CN, et al. Therapeutic potential of pro-angiogenic BPC157 is associated with VEGFR2 activation and up-regulation. J Mol Med (Berl). 2017;95(3):323-333.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27847966/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27847966/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27847966/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Goldstein AL, Hannappel E, Sosne G, Kleinman HK. Thymosin β4: A Multi-Functional Regenerative Peptide. Expert Opin Biol Ther. 2012;12(1):37-51.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22074294/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22074294/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22074294/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Luger TA, Brzoska T. alpha-MSH related peptides: a new class of anti-inflammatory and immunomodulating drugs. Ann Rheum Dis. 2007;66 Suppl 3:iii52-5.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wadhwani SD, Catania A, Lipton JM, et al. Immobilized α-melanocyte stimulating hormone 10–13 (GKPV) inhibits tumor necrosis factor-α stimulated NF-κB activity. Neuropeptides. 2006.{" "}
-          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0196978105004560" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0196978105004560" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.sciencedirect.com/science/article/abs/pii/S0196978105004560
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Goldstein AL, Hannappel E, Kleinman HK. Thymosin β4: Actin Sequestering Protein Moonlights to Repair Injured Tissues. Trends Mol Med. 2005;11(9):421-9.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16099219/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16099219/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16099219/
           </a>
         </li>
@@ -410,12 +410,12 @@ const sections = [
           KLOW has no controlled trial as a combination. The studies below are the key peer-reviewed sources for each individual component's mechanism — the empirical basis for the four-peptide blend's mechanistic rationale.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -436,7 +436,7 @@ export default function KLOWPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -467,12 +467,12 @@ export default function KLOWPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             KLOW is a research-grade 4-component peptide blend combining{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>,{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>,{" "}
-            <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>, and{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>,{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>,{" "}
+            <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>, and{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             in a single injection. It extends the 3-component{" "}
-            <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link>{" "}
+            <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>{" "}
             blend by adding KPV, a tripeptide derived from α-melanocyte-stimulating hormone (α-MSH) that suppresses NF-κB-mediated inflammation. The result is the most comprehensive of the BPC/TB-based recovery blends: tissue repair from BPC-157 + TB-500, skin remodeling from GHK-Cu, and inflammation control from KPV — on a calmer tissue background.
           </p>
           <div>
@@ -493,7 +493,7 @@ export default function KLOWPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> KLOW is sold by specialty research peptide vendors as a compounded blend, typically as an 80 mg vial. None of the four components are FDA-approved as injectables. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -546,18 +546,18 @@ export default function KLOWPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
-        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#0891b2] hover:underline">TB-500</Link>
-        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu</Link>
-        <Link href="/peptides/kpv" className="text-sm font-medium text-[#0891b2] hover:underline">KPV</Link>
+        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
+        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#3A759F] hover:underline">TB-500</Link>
+        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
+        <Link href="/peptides/kpv" className="text-sm font-medium text-[#3A759F] hover:underline">KPV</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#0891b2] hover:underline">Wolverine Stack</Link>
-        <Link href="/peptides/glow" className="text-sm font-medium text-[#0891b2] hover:underline">GLOW</Link>
+        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>
+        <Link href="/peptides/glow" className="text-sm font-medium text-[#3A759F] hover:underline">GLOW</Link>
         </div>
       </div>
 

@@ -19,9 +19,9 @@ const faqs = [
     a: (
       <>
         Semax + Selank is a 2-component intranasal peptide blend pairing two synthetic heptapeptides:{" "}
-        <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+        <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
         (an ACTH(4-10) analog used for cognitive enhancement) and{" "}
-        <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+        <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
         (a tuftsin analog used as an anxiolytic). Both peptides were developed at the Institute of Molecular Genetics, Russian Academy of Sciences, and both are approved as pharmaceuticals in Russia for their respective indications (Semax for post-stroke neuroprotection, Selank for generalized anxiety). The blend pairs cognitive enhancement with anxiety reduction in a single nasal spray.
       </>
     ),
@@ -51,13 +51,13 @@ const faqs = [
     a: (
       <>
         Compatible additions include standard nootropic supplements (caffeine, L-theanine, racetams) and other neuroprotective peptides like{" "}
-        <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>{" "}
+        <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
         (for sleep) or{" "}
-        <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+        <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
         (for longevity-cognitive overlap). Avoid stacking with standalone full-dose{" "}
-        <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+        <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
         or{" "}
-        <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+        <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
         protocols — that doubles the dose. Limited safety data on combinations with benzodiazepines or SSRIs.
       </>
     ),
@@ -67,7 +67,7 @@ const faqs = [
     a: (
       <>
         Sold as a pre-blended nasal spray product by specialty research peptide vendors — common SKU is a 20 mg vial (10 mg each peptide) reconstituted into a nasal spray bottle. Quality varies dramatically by source; third-party HPLC testing is recommended. PP maintains a list of vetted vendors with verified discount codes — see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -151,7 +151,7 @@ const sections = [
       (
         <>
           Sleep-Related Cognitive Effects. Less established but referenced in research-community use. Semax may improve next-day cognitive performance after poor sleep; Selank may reduce sleep-onset anxiety. Researchers focused specifically on sleep often combine with{" "}
-          <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>{" "}
+          <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
           for the sleep architecture component.
         </>
       ),
@@ -206,7 +206,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate concentration and per-spray dose? Convert mg to spray volume with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -236,20 +236,20 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard nootropic supplements.</span> Caffeine, L-theanine, and racetams are compatible. Caffeine + L-theanine + Semax + Selank is a common protocol stack for cognitive performance under stress.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">DSIP for sleep.</span>{" "}
-          <Link href="/peptides/dsip" className="text-[#0891b2] hover:underline">DSIP</Link>{" "}
+          <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
           (delta-sleep-inducing peptide) addresses sleep architecture and is mechanistically independent of Semax + Selank's daytime cognitive and anxiolytic effects.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Epitalon for longevity-cognitive overlap.</span>{" "}
-          <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+          <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
           is a Russian-developed longevity peptide with cognitive and sleep-quality effects. Compatible with Semax + Selank for researchers tracking longer-term neurological aging metrics.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cardio and stress-resilience training.</span> Regular cardiovascular exercise and stress-resilience practices (meditation, breathwork) are baseline supports that amplify the blend's stress-modulating effects.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: full-dose standalone Semax or Selank.</span> The blend already contains both at meaningful doses. Stacking with standalone{" "}
-          <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+          <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
           or{" "}
-          <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+          <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
           protocols doubles the dose without independent benefit.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Use caution with: benzodiazepines or SSRIs.</span> Limited safety data on combinations. Selank's GABAergic effect is indirect and not believed to interact at the GABA-A receptor like benzodiazepines do — but the interaction profile is not well characterized. Researchers on prescribed psychiatric medication should consult a prescriber before adding the blend.</li>
@@ -372,37 +372,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ashmarin IP, Nezavibat'ko VN, Myasoedov NF, et al. A nootropic adrenocorticotropin analog 4-10 (Semax): 15 years of design and study. Zh Vyssh Nerv Deiat Im I P Pavlova. 1997;47(2):420-30.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9173745/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9173745/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9173745/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dolotov OV, Karpenko EA, Inozemtseva LS, et al. Semax, an analog of ACTH(4-10) with cognitive effects, regulates BDNF and trkB expression in the rat hippocampus. Brain Res. 2006;1117(1):54-60.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16996037/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16996037/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16996037/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sarkisova KY, Kozlovsky II, Kozlovskaya MM. Effects of heptapeptide selank on genetically-based and situation-provoked symptoms of depression in WAG/Rij and Wistar rats and BALB/c mice. Zh Vyssh Nerv Deiat Im I P Pavlova. 2008;58(2):226-37.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18661785/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18661785/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18661785/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vyunova TV, Andreeva LA, Shevchenko KV, Myasoedov NF. Peptide-based anxiolytics: the molecular aspects of heptapeptide selank biological activity. Protein Pept Lett. 2018;25(10):914-923.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30255741/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30255741/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30255741/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lochhead JJ, Thorne RG. Intranasal Delivery of Biologics to the Central Nervous System. Adv Drug Deliv Rev. 2012;64(7):614-628.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22119441/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22119441/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22119441/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Medvedev VE, Tereshchenko OY, Israelyan AY, et al. Optimization of therapy for generalized anxiety disorder with Selank. S.S. Korsakov Journal of Neurology and Psychiatry (Zh Nevrol Psikhiatr). 2015;115(6):33-40.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26356395/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26356395/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26356395/
           </a>
         </li>
@@ -418,12 +418,12 @@ const sections = [
           Semax + Selank has no controlled trial as a combination. The studies below are the key peer-reviewed sources for each component's mechanism and clinical effect — the empirical basis for the blend's design.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -444,7 +444,7 @@ export default function SemaxSelankPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -475,9 +475,9 @@ export default function SemaxSelankPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Semax + Selank is a 2-component intranasal peptide blend pairing two synthetic heptapeptides:{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
             (an ACTH(4-10) analog) and{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             (a tuftsin analog). Both were developed at the Institute of Molecular Genetics of the Russian Academy of Sciences and are approved as pharmaceuticals in Russia — Semax for post-stroke neuroprotection and cognitive applications, Selank for generalized anxiety disorder. The blend pairs cognitive enhancement (Semax: BDNF upregulation, dopaminergic and serotonergic modulation) with anxiolytic effects (Selank: indirect GABAergic modulation) in a single intranasal spray — producing sharper focus and reduced anxiety simultaneously, without sedation, dependence, or withdrawal.
           </p>
           <div>
@@ -498,7 +498,7 @@ export default function SemaxSelankPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sold as a pre-blended 20 mg vial by specialty research peptide vendors, typically reconstituted into a nasal spray bottle. Neither component is FDA-approved (both are approved in Russia). See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -551,10 +551,10 @@ export default function SemaxSelankPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/semax" className="text-sm font-medium text-[#0891b2] hover:underline">Semax</Link>
-        <Link href="/peptides/selank" className="text-sm font-medium text-[#0891b2] hover:underline">Selank</Link>
-        <Link href="/peptides/dsip" className="text-sm font-medium text-[#0891b2] hover:underline">DSIP</Link>
-        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
+        <Link href="/peptides/semax" className="text-sm font-medium text-[#3A759F] hover:underline">Semax</Link>
+        <Link href="/peptides/selank" className="text-sm font-medium text-[#3A759F] hover:underline">Selank</Link>
+        <Link href="/peptides/dsip" className="text-sm font-medium text-[#3A759F] hover:underline">DSIP</Link>
+        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
         </div>
       </div>
 

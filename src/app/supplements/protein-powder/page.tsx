@@ -39,7 +39,7 @@ const faqs = [
     a: (
       <>
         Protein powder contains complete protein with all essential amino acids in roughly food-protein ratios, providing both the leucine trigger for muscle protein synthesis and the full amino-acid substrate.{" "}
-        <Link href="/supplements/bcaas" className="text-[#0891b2] hover:underline">BCAA supplements</Link>{" "}
+        <Link href="/supplements/bcaas" className="text-[#3A759F] hover:underline">BCAA supplements</Link>{" "}
         contain only three amino acids (leucine, isoleucine, valine). BCAAs alone can transiently raise the MPS signal but don&apos;t provide the full amino-acid substrate needed to actually build muscle — they&apos;re mostly redundant when you&apos;re hitting adequate daily protein. The protein-powder evidence base is much stronger than the standalone-BCAA evidence base. Save your money: whole protein powder is more cost-effective than BCAAs for muscle support.
       </>
     ),
@@ -53,7 +53,7 @@ const faqs = [
     a: (
       <>
         No — collagen and conventional protein powder serve different purposes.{" "}
-        <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen peptides</Link>{" "}
+        <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
         are an incomplete protein (missing tryptophan, low in leucine) and shouldn&apos;t be counted toward your muscle-protein-synthesis-relevant intake. Collagen is for skin, joints, and connective tissue support, with different evidence and different use cases. If you&apos;re targeting muscle, use whey/casein/plant powder. If you&apos;re targeting skin or joints, use collagen. They aren&apos;t substitutes — they complement each other in many users&apos; stacks.
       </>
     ),
@@ -217,24 +217,24 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine</Link>{" "}
+              <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine</Link>{" "}
               — the most evidence-supported strength-and-power supplement. Creatine + adequate protein is the foundational hypertrophy stack. Both work; they target different mechanisms (creatine = ATP buffer; protein = amino-acid substrate).
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen peptides</Link>{" "}
+              <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
               — complementary, not substitute. Collagen targets connective tissue (skin, joints, tendons) with different amino-acid profile; whey targets muscle. Run both in the same daily intake if budget allows.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">Glutamine</Link>{" "}
+              <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">Glutamine</Link>{" "}
               — already abundant in whole-food protein and whey. Standalone glutamine supplementation is mostly redundant for users hitting adequate whole-protein intake.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">Vitamin D3</Link>{" "}
+              <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">Vitamin D3</Link>{" "}
               — vitamin D status correlates with muscle protein synthesis efficiency. Correction of deficiency is foundational; supports the system protein powder feeds.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc</Link>{" "}
-              and <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">magnesium</Link> — cofactors for protein synthesis enzymes. Deficiency correction matters; mega-dosing doesn&apos;t add value over adequacy.
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
+              and <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">magnesium</Link> — cofactors for protein synthesis enzymes. Deficiency correction matters; mega-dosing doesn&apos;t add value over adequacy.
             </li>
           </ol>
         </div>
@@ -368,37 +368,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Morton RW, Murphy KT, McKellar SR, et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults. Br J Sports Med. 2018;52(6):376-384.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28698222/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/28698222/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Stokes T, Hector AJ, Morton RW, McGlory C, Phillips SM. Recent perspectives regarding the role of dietary protein for the promotion of muscle hypertrophy with resistance exercise training. Nutrients. 2018;10(2):180.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29414855/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29414855/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29414855/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Schoenfeld BJ, Aragon AA, Krieger JW. The effect of protein timing on muscle strength and hypertrophy: a meta-analysis. J Int Soc Sports Nutr. 2013;10(1):53.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24299050/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24299050/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24299050/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Jäger R, Kerksick CM, Campbell BI, et al. International Society of Sports Nutrition position stand: protein and exercise. J Int Soc Sports Nutr. 2017;14:20.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28642676/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/28642676/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Naclerio F, Larumbe-Zabala E. Effects of whey protein alone or as part of a multi-ingredient formulation on strength, fat-free mass, or lean body mass in resistance-trained individuals: a meta-analysis. Sports Med. 2016;46(1):125-137.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26683060/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26683060/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26683060/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Devries MC, Phillips SM. Supplemental protein in support of muscle mass and health: advantage whey. J Food Sci. 2015;80 Suppl 1:A8-A15.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25757896/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25757896/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25757896/
           </a>
         </li>
@@ -414,12 +414,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -544,7 +544,7 @@ export default function ProteinPowderPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Protein Powder</h1>
@@ -631,11 +631,11 @@ export default function ProteinPowderPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/creatine" className="text-sm font-medium text-[#0891b2] hover:underline">Creatine</Link>
-          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#0891b2] hover:underline">Collagen Peptides</Link>
-          <Link href="/supplements/bcaas" className="text-sm font-medium text-[#0891b2] hover:underline">BCAAs</Link>
-          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#0891b2] hover:underline">Glutamine</Link>
-          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin D3</Link>
+          <Link href="/supplements/creatine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine</Link>
+          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>
+          <Link href="/supplements/bcaas" className="text-sm font-medium text-[#3A759F] hover:underline">BCAAs</Link>
+          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">Glutamine</Link>
+          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin D3</Link>
         </div>
       </div>
 

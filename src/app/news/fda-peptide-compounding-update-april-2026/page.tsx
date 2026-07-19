@@ -39,7 +39,7 @@ export default function FDAPeptideCompoundingUpdatePage() {
       }} />
 
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to News
         </Link>
 
@@ -86,14 +86,14 @@ export default function FDAPeptideCompoundingUpdatePage() {
           </p>
           <p>
             Quality still matters. Regardless of regulatory status, researchers should always source compounds from vendors with verified{" "}
-            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">third-party testing</Link>{" "}
+            <Link href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">third-party testing</Link>{" "}
             and published Certificates of Analysis. Regulatory change doesn&rsquo;t change the importance of compound quality and documentation.
           </p>
 
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Our Take</h2>
           <p>
             At Prof. Peptide, we&rsquo;ve always believed that access to rigorously tested, transparently documented research compounds is important for the scientific community. This FDA development is a meaningful step in the right direction &mdash; one that acknowledges years of research and legitimate scientific interest in these compounds. We&rsquo;ll continue tracking every regulatory development and updating our{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">vendor recommendations</Link>{" "}
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">vendor recommendations</Link>{" "}
             accordingly.
           </p>
         </div>

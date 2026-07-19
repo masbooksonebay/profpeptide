@@ -29,11 +29,11 @@ const faqs = [
     a: (
       <>
         Two main differences. (1) Route — MK-677 is oral;{" "}
-        <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">sermorelin</Link>
+        <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">sermorelin</Link>
         /
-        <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">ipamorelin</Link>
+        <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">ipamorelin</Link>
         /
-        <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">tesamorelin</Link>{" "}
+        <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">tesamorelin</Link>{" "}
         are injectable. (2) Duration — MK-677 produces 24-hour sustained GH/IGF-1 elevation per dose; injectable secretagogues produce sharper, shorter pulses tied to dose timing. The oral convenience is a major advantage; the trade-off is the more sustained (less pulsatile) GH environment, which some users find produces more side effects.
       </>
     ),
@@ -59,7 +59,7 @@ const faqs = [
     a: (
       <>
         MK-677 is sold as a research compound by specialty vendors. Quality varies dramatically &mdash; third-party HPLC and mass spectrometric testing is essential. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -207,9 +207,9 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Oral vs injectable.</span> MK-677&apos;s oral route is its primary practical advantage over injectable GH secretagogues. There&apos;s no reconstitution math, no syringe technique, no injection-site rotation. The trade-off is the more sustained (less pulsatile) GH environment, which some users find produces more side effects than the sharper pulses from{" "}
-          <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">ipamorelin</Link>{" "}
+          <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">ipamorelin</Link>{" "}
           or{" "}
-          <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>.
+          <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>.
         </p>
       </div>
     ),
@@ -224,14 +224,14 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standalone use.</span> MK-677&apos;s 24-hour sustained effect doesn&apos;t require pairing with other GH peptides for efficacy.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: injectable GH secretagogues.</span>{" "}
-          <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>,{" "}
-          <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">ipamorelin</Link>,{" "}
-          <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">tesamorelin</Link>{" "}
+          <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>,{" "}
+          <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">ipamorelin</Link>,{" "}
+          <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">tesamorelin</Link>{" "}
           &mdash; redundant ghrelin/GHRH pathway, no additive benefit.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">BPC-157.</span>{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           &mdash; different mechanism, generally compatible for recovery support.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Insulin sensitivity supports.</span> Berberine, metformin (if prescribed) &mdash; to counter MK-677&apos;s glucose-elevation effect.</li>
@@ -346,7 +346,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -378,19 +378,19 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Ibutamoren.{" "}
-          <a href="https://en.wikipedia.org/wiki/Ibutamoren" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://en.wikipedia.org/wiki/Ibutamoren" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://en.wikipedia.org/wiki/Ibutamoren
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nass R, Pezzoli SS, Oliveri MC, et al. Effects of an oral ghrelin mimetic on body composition and clinical outcomes in healthy older adults: a randomized trial. Ann Intern Med. 2008;149(9):601-11.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2757071/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2757071/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC2757071/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Chapman IM, Bach MA, Van Cauter E, et al. Stimulation of the growth hormone (GH)-insulin-like growth factor I axis by daily oral administration of a GH secretagogue (MK-677) in healthy elderly subjects. J Clin Endocrinol Metab. 1996;81(12):4249-57.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/8954023/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/8954023/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/8954023/
           </a>
         </li>
@@ -409,12 +409,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -435,7 +435,7 @@ export default function MK677Page() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -465,11 +465,11 @@ export default function MK677Page() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             MK-677 (ibutamoren) is an orally active, non-peptide ghrelin receptor agonist developed by Merck in the 1990s as a potential treatment for growth hormone deficiency, muscle wasting, and osteoporosis. Despite Phase 2 trial data showing 24-hour sustained elevation of GH and IGF-1, MK-677 was never FDA-approved and remains an investigational compound. Unlike injectable GH secretagogues ({" "}
-            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">sermorelin</Link>,{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">ipamorelin</Link>,{" "}
-            <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">tesamorelin</Link>
+            <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">sermorelin</Link>,{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">ipamorelin</Link>,{" "}
+            <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">tesamorelin</Link>
             ), MK-677 is taken orally &mdash; a major convenience advantage. It mimics ghrelin at the GHS-R1a receptor, triggering pulsatile GH release that preserves natural feedback loops, unlike exogenous GH injection which suppresses endogenous production. Note: MK-677 is technically NOT a peptide &mdash; it&apos;s a non-peptide small molecule ghrelin mimetic &mdash; but is included on Prof. Peptide because it acts on the same GH/IGF-1 axis as peptide secretagogues and is commonly compared to them. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -489,7 +489,7 @@ export default function MK677Page() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> MK-677 is not FDA-approved and is sold as a research compound. PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -542,11 +542,11 @@ export default function MK677Page() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Ipamorelin</Link>
-        <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#0891b2] hover:underline">CJC-1295</Link>
-        <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Sermorelin</Link>
-        <Link href="/peptides/tesamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Tesamorelin</Link>
-        <Link href="/peptides/igf-1-lr3" className="text-sm font-medium text-[#0891b2] hover:underline">IGF-1 LR3</Link>
+        <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Ipamorelin</Link>
+        <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#3A759F] hover:underline">CJC-1295</Link>
+        <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Sermorelin</Link>
+        <Link href="/peptides/tesamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Tesamorelin</Link>
+        <Link href="/peptides/igf-1-lr3" className="text-sm font-medium text-[#3A759F] hover:underline">IGF-1 LR3</Link>
         </div>
       </div>
 

@@ -9,12 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Site accent (cyan). Single source of truth for the accent color that
-        // was previously hard-coded as the arbitrary value [#0891b2] across the
-        // codebase. `brand-hover` is the darker hover shade (was [#0e7490]).
+        // Site accent (steel blue). Single source of truth for the accent color.
+        // Previously cyan [#0891b2]; retargeted site-wide to #3A759F (with the
+        // inline hardcoded hexes swept to match). `brand-hover` is the darker
+        // hover shade (was [#0e7490]).
         brand: {
-          DEFAULT: "#0891b2",
-          hover: "#0e7490",
+          DEFAULT: "#3A759F",
+          hover: "#2E5E7F",
         },
       },
       fontFamily: {

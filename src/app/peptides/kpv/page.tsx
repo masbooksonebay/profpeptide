@@ -25,7 +25,7 @@ const faqs = [
     a: (
       <>
         Different mechanisms and primary applications. KPV is a 3-amino-acid tripeptide derived from α-MSH that acts intracellularly to inhibit NF-κB and reduce inflammatory cytokines.{" "}
-        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+        <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
         is a 15-amino-acid peptide that drives angiogenesis and tissue repair through nitric oxide and growth factor pathways. KPV is primarily anti-inflammatory; BPC-157 is primarily regenerative. They&apos;re commonly stacked together for gut applications because their mechanisms are complementary, not redundant.
       </>
     ),
@@ -39,9 +39,9 @@ const faqs = [
     a: (
       <>
         No. Despite being derived from α-MSH (the same parent hormone as{" "}
-        <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>{" "}
+        <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>{" "}
         and bremelanotide /{" "}
-        <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>
+        <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>
         ), KPV does NOT activate melanocortin receptors. The 3-amino-acid fragment lacks the receptor-binding domain. KPV&apos;s anti-inflammatory effect is mediated intracellularly through NF-κB inhibition, completely separate from melanocortin signaling.
       </>
     ),
@@ -54,11 +54,11 @@ const faqs = [
     q: "How does KLOW differ from KPV alone?",
     a: (
       <>
-        <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+        <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
         is a compounded blend combining KPV with{" "}
-        <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>,{" "}
-        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, and{" "}
-        <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+        <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>,{" "}
+        <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, and{" "}
+        <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
         (typical 50/10/10/10 mg ratio). It pairs KPV&apos;s anti-inflammatory effect with GHK-Cu&apos;s gene expression / collagen modulation and BPC-157 + TB-500&apos;s tissue repair. KPV alone is a more targeted anti-inflammatory; KLOW is a broader regenerative protocol.
       </>
     ),
@@ -72,7 +72,7 @@ const faqs = [
     a: (
       <>
         KPV is sold by specialty research peptide vendors as oral capsules, injectable lyophilized powder, or topical formulations. Compounded preparations vary in quality &mdash; third-party HPLC testing recommended. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -172,12 +172,12 @@ const sections = [
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           The{" "}
-          <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+          <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
           blend (GHK-Cu + BPC-157 + TB-500 + KPV) is dosed at 0.25–0.5 mL of reconstituted blend, 5 days/week &mdash; see the KLOW page for blend protocol details.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -188,7 +188,7 @@ const sections = [
     intro: (
       <>
         KPV is given as an oral enteric-coated capsule (preferred for gut applications), a subcutaneous injection (for systemic effects), or a topical cream (for skin applications). The oral route is unique among research peptides because KPV&apos;s small tripeptide size and PepT1-mediated uptake make oral bioavailability practical for targeted intestinal action. For the practical mechanics of insulin syringes, units vs mcg conversion, and subcutaneous technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -292,7 +292,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 5 mg vial, each unit drawn delivers 50 mcg of KPV at 1 mL reconstitution, 25 mcg at 2 mL, and 16.7 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -306,17 +306,17 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">BPC-157.</span>{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           is the most common pairing for gut applications. KPV&apos;s anti-inflammatory + BPC-157&apos;s regenerative effects work through complementary mechanisms.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">KLOW Blend.</span> The compounded all-in-one regenerative blend &mdash;{" "}
-          <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+          <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
           (GHK-Cu + BPC-157 + TB-500 + KPV, typical 50/10/10/10 mg ratio) is the most popular commercial form.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">TB-500.</span>{" "}
-          <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+          <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
           combined with KPV for inflammation + tissue repair research.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard IBD-supportive protocols.</span> Probiotics, glutamine, omega-3 &mdash; compatible. Mechanisms are non-overlapping.</li>
@@ -426,7 +426,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -458,25 +458,25 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Brzoska T, Luger TA, Maaser C, et al. α-Melanocyte-Stimulating Hormone and Related Tripeptides: Biochemistry, Antiinflammatory and Protective Effects in Vitro and in Vivo. Endocr Rev. 2008;29(5):581-602.{" "}
-          <a href="https://academic.oup.com/edrv/article/29/5/581/2355153" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://academic.oup.com/edrv/article/29/5/581/2355153" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://academic.oup.com/edrv/article/29/5/581/2355153
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kannengiesser K, Maaser C, Heidemann J, et al. Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease. Inflamm Bowel Dis. 2008;14(3):324-31.{" "}
-          <a href="https://academic.oup.com/ibdjournal/article/14/3/324/4652783" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://academic.oup.com/ibdjournal/article/14/3/324/4652783" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://academic.oup.com/ibdjournal/article/14/3/324/4652783
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cutuli M, Cristiani S, Lipton JM, Catania A. Antimicrobial effects of alpha-MSH peptides. J Leukoc Biol. 2000;67(2):233-9.{" "}
-          <a href="https://academic.oup.com/jleukbio/article/67/2/233/4606432" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://academic.oup.com/jleukbio/article/67/2/233/4606432" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://academic.oup.com/jleukbio/article/67/2/233/4606432
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dalmasso G, Charrier-Hisamuddin L, Nguyen HT, et al. PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation. Gastroenterology. 2008;134(1):166-78.{" "}
-          <a href="https://www.gastrojournal.org/article/S0016-5085(07)01807-1/fulltext" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.gastrojournal.org/article/S0016-5085(07)01807-1/fulltext" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.gastrojournal.org/article/S0016-5085(07)01807-1/fulltext
           </a>
         </li>
@@ -485,7 +485,7 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Alpha-melanocyte-stimulating hormone.{" "}
-          <a href="https://en.wikipedia.org/wiki/Alpha-melanocyte-stimulating_hormone" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://en.wikipedia.org/wiki/Alpha-melanocyte-stimulating_hormone" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://en.wikipedia.org/wiki/Alpha-melanocyte-stimulating_hormone
           </a>
         </li>
@@ -501,12 +501,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -527,7 +527,7 @@ export default function KPVPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -557,11 +557,11 @@ export default function KPVPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             KPV is a small tripeptide (lysine-proline-valine) derived from the C-terminal sequence of α-melanocyte-stimulating hormone (α-MSH). Despite its size, KPV exhibits potent anti-inflammatory and antimicrobial activity through pathways distinct from larger immune peptides. It has emerged as a research compound of interest for inflammatory bowel disease (IBD), ulcerative colitis, atopic dermatitis, and other inflammation-driven conditions. KPV&apos;s small size allows it to penetrate cells and act intracellularly, where it inhibits NF-κB signaling and reduces pro-inflammatory cytokine production. Often paired with{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             for gut applications, or used as part of the{" "}
-            <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+            <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
             blend (KPV + GHK-Cu + BPC-157 + TB-500) for broader regenerative protocols. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -581,7 +581,7 @@ export default function KPVPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -634,18 +634,18 @@ export default function KPVPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
-        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#0891b2] hover:underline">TB-500</Link>
-        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu</Link>
-        <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>
+        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
+        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#3A759F] hover:underline">TB-500</Link>
+        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
+        <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/klow" className="text-sm font-medium text-[#0891b2] hover:underline">KLOW</Link>
-        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#0891b2] hover:underline">Wolverine Stack</Link>
+        <Link href="/peptides/klow" className="text-sm font-medium text-[#3A759F] hover:underline">KLOW</Link>
+        <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>
         </div>
       </div>
 

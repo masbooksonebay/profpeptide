@@ -26,7 +26,7 @@ const faqs = [
     a: (
       <>
         Because collagen synthesis requires hydroxylation of proline and lysine residues to form stable triple-helix structures —{" "}
-        <Link href="/supplements/vitamin-c-skin" className="text-[#0891b2] hover:underline">vitamin C</Link>{" "}
+        <Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin C</Link>{" "}
         is the obligate cofactor for the hydroxylase enzymes (prolyl hydroxylase, lysyl hydroxylase) that do this. Without adequate vitamin C, your fibroblasts can&apos;t turn the collagen peptide amino-acid substrate into structurally durable collagen. You get the signal but not the building infrastructure. Pair collagen peptides with 500–1,000 mg vitamin C for synergistic effect.
       </>
     ),
@@ -40,9 +40,9 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural for users wanting comprehensive skin remodeling.{" "}
-        <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>{" "}
+        <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>{" "}
         is a copper-peptide that modulates MMP (matrix metalloproteinase) activity, stimulates fibroblast collagen and elastin synthesis, and supports tissue remodeling at the signaling layer.{" "}
-        <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+        <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
         is an anti-inflammatory tripeptide (the C-terminal of α-MSH) that reduces tissue inflammation — useful when inflammation is interfering with skin healing or appearance. Collagen peptides provide the amino-acid substrate (proline, hydroxyproline, glycine) that fibroblasts use to build new collagen in response to the peptide signaling. The peptides do the signaling and inflammation modulation; collagen peptides + vitamin C provide the substrate and cofactor for actual collagen production. Mechanistically complementary, no known negative interactions.
       </>
     ),
@@ -138,7 +138,7 @@ export default function CollagenPeptidesSkinPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Collagen Peptides for Skin</h1>
@@ -164,7 +164,7 @@ export default function CollagenPeptidesSkinPage() {
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What do collagen peptides do for skin?</h2>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Collagen is the primary structural protein of skin — comprising approximately 75–80% of the dry weight of the dermis. It forms a dense network that provides firmness, elasticity, and resistance to wrinkling. From around age 25, endogenous collagen production declines at roughly 1% per year, accelerated by UV exposure, smoking, poor nutrition, and stress. The result is progressively thinner skin, reduced elasticity, deeper wrinkles, and loss of the youthful plumpness that comes from dense dermal collagen. Collagen peptides are hydrolyzed collagen — pre-digested into small bioactive peptide fragments (notably Pro-Hyp, the proline-hydroxyproline dipeptide) that are efficiently absorbed through the gut, travel through the bloodstream, and accumulate in skin tissue where they stimulate dermal fibroblasts to increase synthesis of collagen, elastin, and hyaluronic acid. The mechanism is not just substrate delivery — Pro-Hyp acts as a signaling molecule that directly activates fibroblast collagen production. For broader connective-tissue applications (joints, gut healing, bone density), see the{" "}
-            <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">parent collagen peptides page</Link>.
+            <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">parent collagen peptides page</Link>.
           </p>
           <div className="mt-4">
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -182,7 +182,7 @@ export default function CollagenPeptidesSkinPage() {
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mt-4">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 2.5–10 g/day hydrolyzed collagen peptides — the lower end (2.5–5 g) shows efficacy in most skin-focused trials. Always pair with{" "}
-            <Link href="/supplements/vitamin-c-skin" className="text-[#0891b2] hover:underline">500–1,000 mg vitamin C</Link>{" "}
+            <Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">500–1,000 mg vitamin C</Link>{" "}
             (obligate cofactor). Minimum 8–12 weeks for visible results.
           </p>
         </div>
@@ -235,7 +235,7 @@ export default function CollagenPeptidesSkinPage() {
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Quick safety notes for skin protocols</h2>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Collagen peptides have an excellent safety profile — extensive culinary history (bone broth) and clean trial safety record. Mild GI discomfort occasionally reported. The supplement is always animal-derived (bovine, marine, or porcine) — not suitable for vegans. Marine collagen is contraindicated for fish/shellfish allergies. Hypercalcemia is a theoretical risk with very high doses of marine collagen — stay within recommended ranges. For comprehensive safety, interactions, and clinical considerations, see the{" "}
-            <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">parent collagen peptides page</Link>.
+            <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">parent collagen peptides page</Link>.
           </p>
         </div>
 
@@ -296,11 +296,11 @@ export default function CollagenPeptidesSkinPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#0891b2] hover:underline">Collagen Peptides (full profile)</Link>
-          <Link href="/supplements/vitamin-c-skin" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin C for Skin</Link>
-          <Link href="/supplements/hyaluronic-acid" className="text-sm font-medium text-[#0891b2] hover:underline">Hyaluronic Acid</Link>
-          <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu peptide</Link>
-          <Link href="/peptides/kpv" className="text-sm font-medium text-[#0891b2] hover:underline">KPV peptide</Link>
+          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides (full profile)</Link>
+          <Link href="/supplements/vitamin-c-skin" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C for Skin</Link>
+          <Link href="/supplements/hyaluronic-acid" className="text-sm font-medium text-[#3A759F] hover:underline">Hyaluronic Acid</Link>
+          <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu peptide</Link>
+          <Link href="/peptides/kpv" className="text-sm font-medium text-[#3A759F] hover:underline">KPV peptide</Link>
         </div>
       </div>
 

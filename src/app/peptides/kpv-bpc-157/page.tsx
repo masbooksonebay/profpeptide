@@ -20,9 +20,9 @@ const faqs = [
     a: (
       <>
         KPV + BPC-157 is a research-grade 2-component peptide pairing:{" "}
-        <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+        <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
         (lysine&ndash;proline&ndash;valine, the C-terminal tripeptide of &alpha;-MSH) +{" "}
-        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+        <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
         (Body Protection Compound, a gastric pentadecapeptide). The pairing targets gut healing and systemic inflammation through complementary mechanisms: KPV blocks NF-&kappa;B-mediated inflammatory signaling, while BPC-157 drives mucosal repair and angiogenesis. Both peptides can be dosed orally for gut-local action or subcutaneously for systemic exposure, which is a key practical advantage of this combination over purely injectable blends.
       </>
     ),
@@ -31,7 +31,7 @@ const faqs = [
     q: "How does KPV + BPC-157 compare to KLOW?",
     a: (
       <>
-        <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+        <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
         is the broader 4-component blend that contains both KPV and BPC-157, plus TB-500 (cellular migration and actin remodeling) and GHK-Cu (collagen synthesis and gene modulation). KPV + BPC-157 is the focused 2-component gut and inflammation pairing &mdash; ideal when the research goal is enteric mucosal healing or systemic anti-inflammation without the skin-remodeling and tissue-repair coverage that TB-500 and GHK-Cu add. Researchers who want gut-healing coverage and also need wider tissue repair should consider stepping up to KLOW for a single injection that covers all four mechanisms.
       </>
     ),
@@ -185,7 +185,7 @@ const sections = [
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
             <span className="font-semibold">Stepping up to KLOW.</span> Researchers wanting to add GHK-Cu (collagen and gene modulation) and TB-500 (cellular migration and tissue repair) to their protocol step up to{" "}
-            <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+            <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
             &mdash; the 4-component blend containing all four peptides in a single injection.
           </p>
         </div>
@@ -194,7 +194,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -223,25 +223,25 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Step up: KLOW (+ GHK-Cu + TB-500).</span> The most logical upgrade for researchers who also need skin remodeling, collagen synthesis, or broader tissue repair alongside gut healing. KLOW already contains both KPV and BPC-157 at the core. See{" "}
-          <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW &rarr;</Link>.
+          <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW &rarr;</Link>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Thymosin Alpha-1 (TA1).</span> An immune-modulating peptide with independent gut-associated lymphoid tissue effects. Mechanistically complementary for IBD-adjacent research where immune dysregulation is a driver alongside inflammation. See{" "}
-          <Link href="/peptides/thymosin-alpha-1" className="text-[#0891b2] hover:underline">Thymosin Alpha-1 &rarr;</Link>.
+          <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1 &rarr;</Link>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Dietary and gut support (non-peptide).</span> Low-FODMAP or anti-inflammatory diet, glutamine supplementation, and probiotics are commonly used alongside KPV + BPC-157 in gut-repair protocols. These are complementary, not competing, with the peptide combination.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Wolverine Stack for tissue repair alongside gut work.</span> If the research goal includes both gut healing and soft-tissue musculoskeletal repair, researchers sometimes run{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>{" "}
           (BPC-157 + TB-500) separately from KPV. However, this overlaps BPC-157 &mdash; the cleaner path is stepping up to KLOW.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: standalone BPC-157 or KPV concurrent protocols.</span> The KPV + BPC-157 blend already contains both at research doses. Adding full-dose standalone{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           or{" "}
-          <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+          <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
           risks double-dosing without independent benefit.
         </li>
       </ol>
@@ -332,7 +332,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all verified vendors &rarr;
           </Link>
         </p>
@@ -389,31 +389,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dalmasso G, Charrier-Hisamuddin L, Nguyen HT, et al. PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation. Gastroenterology. 2008;134(1):166&ndash;178.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18061177/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18061177/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18061177/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Luger TA, Brzoska T. &alpha;-MSH related peptides: a new class of anti-inflammatory and immunomodulating drugs. Ann Rheum Dis. 2007;66 Suppl 3:iii52&ndash;5.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC2095288/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sikiric P, Hahm KB, Blagaic AB, et al. Stable Gastric Pentadecapeptide BPC 157 and Wound Healing. Front Pharmacol. 2021;12:627533.{" "}
-          <a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sikiric P, Rucman R, Turkovic B, et al. Novel cytoprotective mediator, stable gastric pentadecapeptide BPC 157: vascular recruitment and gastrointestinal tract healing. Curr Pharm Des. 2018;24(18):1990&ndash;2001.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29879879/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29879879/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29879879/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kannengiesser K, Maaser C, Heidemann J, et al. Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease. Inflamm Bowel Dis. 2008;14(3):324&ndash;331.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18092346/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18092346/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18092346/
           </a>
         </li>
@@ -429,12 +429,12 @@ const sections = [
           The KPV + BPC-157 blend has no controlled trial as a combination. The studies below are the key peer-reviewed sources for each component&apos;s mechanism in gut-healing and anti-inflammatory contexts &mdash; the empirical basis for the blend&apos;s mechanistic rationale.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -455,7 +455,7 @@ export default function KpvBpc157Page() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -487,11 +487,11 @@ export default function KpvBpc157Page() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             KPV + BPC-157 is a research-grade 2-component peptide combination pairing{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             (lysine&ndash;proline&ndash;valine, the C-terminal tripeptide of &alpha;-MSH) with{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             (Body Protection Compound, a stable gastric pentadecapeptide) for gut-healing and systemic anti-inflammatory research. KPV controls the inflammatory cascade by blocking NF-&kappa;B nuclear translocation intracellularly &mdash; suppressing TNF-&alpha;, IL-6, and IL-1&beta; production without engaging melanocortin receptors. BPC-157 simultaneously drives mucosal repair and angiogenesis through the nitric oxide / VEGFR2 / FAK-paxillin axis, restoring vascular integrity and tight-junction protein expression in damaged gut tissue. A key practical advantage of this pairing: both peptides can be dosed orally for gut-local effects, making it the most accessible combination for intestinal-mucosal research. Researchers wanting to add GHK-Cu and TB-500 for broader tissue repair and skin remodeling step up to{" "}
-            <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link>{" "}
+            <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
             &mdash; the 4-component blend that contains both KPV and BPC-157 at its core.
           </p>
           <div>
@@ -513,7 +513,7 @@ export default function KpvBpc157Page() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sold as separate research-grade vials (KPV and BPC-157) by specialty peptide vendors; some vendors carry oral KPV capsules. Neither is FDA-approved. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -565,18 +565,18 @@ export default function KpvBpc157Page() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/kpv" className="text-sm font-medium text-[#0891b2] hover:underline">KPV</Link>
-          <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
-          <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu</Link>
-          <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#0891b2] hover:underline">Thymosin Alpha-1</Link>
+          <Link href="/peptides/kpv" className="text-sm font-medium text-[#3A759F] hover:underline">KPV</Link>
+          <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
+          <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
+          <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/klow" className="text-sm font-medium text-[#0891b2] hover:underline">KLOW</Link>
-          <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#0891b2] hover:underline">Wolverine Stack</Link>
+          <Link href="/peptides/klow" className="text-sm font-medium text-[#3A759F] hover:underline">KLOW</Link>
+          <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>
         </div>
       </div>
 

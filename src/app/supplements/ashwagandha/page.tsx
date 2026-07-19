@@ -35,11 +35,11 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural for users targeting comprehensive GH-axis and recovery support. This is audit pairing #3 (highest-leverage GH-axis bidirectional cross-link).{" "}
-        <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+        <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
         (GHRH analog) and{" "}
-        <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+        <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
         (ghrelin mimetic / selective GH secretagogue) directly stimulate pituitary GH release.{" "}
-        <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+        <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
         is a third GHRH-axis option. Ashwagandha operates at a different layer: cortisol reduction (chronically elevated cortisol suppresses GH pulsatility and growth hormone release) + sleep quality improvement (the majority of nightly GH release occurs during slow-wave sleep — ashwagandha supports sleep architecture). The peptides do direct GH stimulation; ashwagandha optimizes the cortisol + sleep environment GH release depends on. Mechanistically complementary, no known negative interactions. One of the more mechanistically coherent natural-supplement-meets-peptide stacks.
       </>
     ),
@@ -219,11 +219,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Ashwagandha pairs naturally with the growth-hormone-axis peptide cluster — this is audit pairing #3, one of the highest-leverage bidirectional cross-links in the wave spec.{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             (GHRH analog) and{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
             (ghrelin mimetic / selective GH secretagogue) directly stimulate pituitary GH release.{" "}
-            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+            <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
             offers a third GHRH-axis option. Ashwagandha operates at complementary layers: cortisol reduction (chronically elevated cortisol suppresses endogenous GH pulsatility) + sleep quality improvement (majority of nightly GH release occurs during slow-wave sleep — ashwagandha supports sleep architecture). The peptides do direct GH stimulation; ashwagandha optimizes the cortisol + sleep environment GH release depends on. Mechanistically complementary, no known negative interactions. The natural-supplement-meets-peptide stack is mature: peptides drive acute GH release; ashwagandha makes endogenous GH pulsatility more efficient.
           </p>
         </div>
@@ -231,31 +231,31 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/rhodiola-rosea" className="text-[#0891b2] hover:underline">Rhodiola rosea</Link>{" "}
-              — complementary adaptogen profile. Rhodiola is mildly stimulating (morning use); ashwagandha is calming (evening use). The AM + PM combination provides balanced stress modulation across the day. See the full <Link href="/compare/ashwagandha-vs-rhodiola-rosea" className="text-[#0891b2] hover:underline">Ashwagandha vs Rhodiola Rosea comparison</Link>.
+              <Link href="/supplements/rhodiola-rosea" className="text-[#3A759F] hover:underline">Rhodiola rosea</Link>{" "}
+              — complementary adaptogen profile. Rhodiola is mildly stimulating (morning use); ashwagandha is calming (evening use). The AM + PM combination provides balanced stress modulation across the day. See the full <Link href="/compare/ashwagandha-vs-rhodiola-rosea" className="text-[#3A759F] hover:underline">Ashwagandha vs Rhodiola Rosea comparison</Link>.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zma" className="text-[#0891b2] hover:underline">ZMA</Link>{" "}
+              <Link href="/supplements/zma" className="text-[#3A759F] hover:underline">ZMA</Link>{" "}
               — zinc + magnesium + B6 for sleep architecture + mineral repletion. Standard GH-stack co-occupant; complementary mechanism arms.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-theanine" className="text-[#0891b2] hover:underline">L-theanine</Link>{" "}
+              <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-theanine</Link>{" "}
               — alpha-wave calm focus, GABAergic enhancement. Compatible cognitive-calming pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium glycinate</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium glycinate</Link>{" "}
               — GABAergic and neuromuscular relaxation. Complementary calming + recovery pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/gaba" className="text-[#0891b2] hover:underline">GABA</Link>{" "}
+              <Link href="/supplements/gaba" className="text-[#3A759F] hover:underline">GABA</Link>{" "}
               — direct GABAergic supplementation. Mechanism overlap with ashwagandha&apos;s GABA-mimetic activity; compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fenugreek" className="text-[#0891b2] hover:underline">Fenugreek</Link>{" "}
+              <Link href="/supplements/fenugreek" className="text-[#3A759F] hover:underline">Fenugreek</Link>{" "}
               — testosterone-axis adjunct via different mechanism (aromatase + 5-AR inhibition). Common testosterone-stack co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/phosphatidylserine" className="text-[#0891b2] hover:underline">Phosphatidylserine</Link>{" "}
+              <Link href="/supplements/phosphatidylserine" className="text-[#3A759F] hover:underline">Phosphatidylserine</Link>{" "}
               — acute cortisol-blunting around exercise. Pairs with ashwagandha&apos;s chronic cortisol modulation.
             </li>
           </ol>
@@ -398,37 +398,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Chandrasekhar K, Kapoor J, Anishetty S. A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of a high-concentration full-spectrum extract of ashwagandha root in reducing stress and anxiety in adults. Indian J Psychol Med. 2012;34(3):255-262.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23439798/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23439798/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23439798/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wankhede S, Langade D, Joshi K, Sinha SR, Bhattacharyya S. Examining the effect of Withania somnifera supplementation on muscle strength and recovery: a randomized controlled trial. J Int Soc Sports Nutr. 2015;12:43.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26609282/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26609282/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26609282/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lopresti AL, Smith SJ, Malvi H, Kodgule R. An investigation into the stress-relieving and pharmacological actions of an ashwagandha (Withania somnifera) extract: a randomized, double-blind, placebo-controlled study. Medicine (Baltimore). 2019;98(37):e17186.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31517876/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31517876/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/31517876/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ziegenfuss TN, Kedia AW, Sandrock JE, Raub BJ, Kerksick CM, Lopez HL. Effects of an aqueous extract of Withania somnifera on strength training adaptations and recovery: the STAR trial. Nutrients. 2018;10(11):1807.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30463324/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30463324/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30463324/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Salve J, Pate S, Debnath K, Langade D. Adaptogenic and anxiolytic effects of ashwagandha root extract in healthy adults: a double-blind, randomized, placebo-controlled clinical study. Cureus. 2019;11(12):e6466.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/32021735/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/32021735/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/32021735/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pratte MA, Nanavati KB, Young V, Morley CP. An alternative treatment for anxiety: a systematic review of human trial results reported for the Ayurvedic herb ashwagandha (Withania somnifera). J Altern Complement Med. 2014;20(12):901-908.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25405876/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25405876/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25405876/
           </a>
         </li>
@@ -444,12 +444,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -574,7 +574,7 @@ export default function AshwagandhaPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Ashwagandha</h1>
@@ -600,7 +600,7 @@ export default function AshwagandhaPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Ashwagandha (Withania somnifera) is one of the most important herbs in Ayurvedic medicine — used for 3,000+ years as a rasayana (rejuvenating tonic) for stress resilience, vitality, and longevity. It is classified as an adaptogen — a natural compound that helps the body normalize its response to stressors. The primary bioactive compounds, withanolides (triterpenoid lactones), modulate the HPA axis to reduce chronic cortisol elevation, with downstream effects on testosterone preservation (relieving cortisol-mediated suppression), sleep architecture (cortisol reduction + GABA-mimetic activity), strength and recovery (Wankhede 2015 KSM-66 +18.2 kg bench press vs +6.1 kg placebo), and anxiety. The evidence base is one of the deeper in the adaptogen space — 50+ human RCTs across stress, cortisol, testosterone, strength, sleep, anxiety, and thyroid endpoints. Foundational trials: Chandrasekhar 2012 (cortisol -27.9%, stress -44%), Wankhede 2015 (KSM-66 testosterone and strength), Lopresti 2019 (Shoden cortisol replication), Salve 2019 (sleep PSQI), Ziegenfuss 2018 STAR (Sensoril strength). The testosterone effect is real but context-dependent — works in stressed, training-loaded, sleep-disrupted, or hypogonadal populations where cortisol is the limiting factor; smaller in young replete untrained men. This is meaningfully different from ZMA, where the testosterone claim has been refuted in replete athletes. Ashwagandha pairs naturally with{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">GH-axis peptides like CJC-1295 and Ipamorelin</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">GH-axis peptides like CJC-1295 and Ipamorelin</Link>{" "}
             — audit pairing #3, one of the highest-leverage bidirectional cross-links in the wave spec.
           </p>
           <div>
@@ -664,12 +664,12 @@ export default function AshwagandhaPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/rhodiola-rosea" className="text-sm font-medium text-[#0891b2] hover:underline">Rhodiola Rosea</Link>
-          <Link href="/supplements/zma" className="text-sm font-medium text-[#0891b2] hover:underline">ZMA</Link>
-          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Theanine</Link>
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
-          <Link href="/supplements/fenugreek" className="text-sm font-medium text-[#0891b2] hover:underline">Fenugreek</Link>
-          <Link href="/supplements/phosphatidylserine" className="text-sm font-medium text-[#0891b2] hover:underline">Phosphatidylserine</Link>
+          <Link href="/supplements/rhodiola-rosea" className="text-sm font-medium text-[#3A759F] hover:underline">Rhodiola Rosea</Link>
+          <Link href="/supplements/zma" className="text-sm font-medium text-[#3A759F] hover:underline">ZMA</Link>
+          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
+          <Link href="/supplements/fenugreek" className="text-sm font-medium text-[#3A759F] hover:underline">Fenugreek</Link>
+          <Link href="/supplements/phosphatidylserine" className="text-sm font-medium text-[#3A759F] hover:underline">Phosphatidylserine</Link>
         </div>
       </div>
 

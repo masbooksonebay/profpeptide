@@ -12,7 +12,7 @@ export default function PageTOC({ sections }: { sections: TOCItem[] }) {
       <ol className="list-decimal list-inside space-y-1.5">
         {sections.map((s) => (
           <li key={s.id} className="text-sm leading-relaxed">
-            <a href={`#${s.id}`} className="text-[#0891b2] hover:underline">
+            <a href={`#${s.id}`} className="text-[#3A759F] hover:underline">
               {s.title}
             </a>
           </li>

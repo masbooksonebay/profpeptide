@@ -214,11 +214,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Beta-alanine&apos;s carnosine-buffering mechanism is supplement-supplement-focused rather than peptide-stacking territory. Mechanistic complement to GH-secretagogue peptides like{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             and{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">ipamorelin</Link>{" "}
             for users targeting high-intensity training adaptation — peptides handle systemic anabolic signaling; beta-alanine handles muscle-tissue acidosis buffering during the training itself. No formal stack RCT validation but the mechanistic complement is direct.{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             for joint/tendon healing in heavy-training contexts is a separate mechanism layer.
           </p>
         </div>
@@ -226,25 +226,25 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine monohydrate</Link>{" "}
+              <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine monohydrate</Link>{" "}
               — different energy system (PCr for &lt;30s vs glycolytic pH buffering for 60s–4min). Hoffman 2006 documented additive benefits. The canonical mixed-energy-system stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Sodium bicarbonate — extracellular pH buffering (carnosine handles intramuscular pH buffering). Different mechanism, additive for high-intensity efforts. GI tolerance is the limiting factor for bicarbonate.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate</Link>{" "}
+              <Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>{" "}
               — NO-mediated blood flow and Krebs-cycle support. Acute pre-workout context. Different mechanism, additive.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Caffeine — CNS arousal. No mechanism overlap. Common pre-workout pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/electrolyte-powders" className="text-[#0891b2] hover:underline">Electrolyte powders</Link>{" "}
+              <Link href="/supplements/electrolyte-powders" className="text-[#3A759F] hover:underline">Electrolyte powders</Link>{" "}
               — hydration support, particularly for intense training contexts where beta-alanine is relevant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/protein-powder" className="text-[#0891b2] hover:underline">Protein powder</Link>{" "}
+              <Link href="/supplements/protein-powder" className="text-[#3A759F] hover:underline">Protein powder</Link>{" "}
               — recovery substrate. Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -254,7 +254,7 @@ const sections = [
               Betaine (trimethylglycine, TMG) — separate ergogenic mechanism. Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/bcaas" className="text-[#0891b2] hover:underline">BCAAs</Link>{" "}
+              <Link href="/supplements/bcaas" className="text-[#3A759F] hover:underline">BCAAs</Link>{" "}
               — generally redundant with adequate protein but compatible if used in legitimate niches.
             </li>
           </ol>
@@ -398,31 +398,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Trexler ET, Smith-Ryan AE, Stout JR, et al. International Society of Sports Nutrition position stand: beta-alanine. J Int Soc Sports Nutr. 2015;12:30.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26175657/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26175657/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26175657/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Saunders B, Elliott-Sale K, Artioli GG, et al. β-alanine supplementation to improve exercise capacity and performance: a systematic review and meta-analysis. Br J Sports Med. 2017;51(8):658-669.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27797728/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27797728/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27797728/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hill CA, Harris RC, Kim HJ, et al. Influence of beta-alanine supplementation on skeletal muscle carnosine concentrations and high intensity cycling capacity. Amino Acids. 2007;32(2):225-233.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16868650/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16868650/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16868650/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hoffman J, Ratamess N, Kang J, Mangine G, Faigenbaum A, Stout J. Effect of creatine and beta-alanine supplementation on performance and endocrine responses in strength/power athletes. Int J Sport Nutr Exerc Metab. 2006;16(4):430-446.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17240780/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17240780/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17240780/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hobson RM, Saunders B, Ball G, Harris RC, Sale C. Effects of β-alanine supplementation on exercise performance: a meta-analysis. Amino Acids. 2012;43(1):25-37.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22270875/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22270875/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22270875/
           </a>
         </li>
@@ -438,12 +438,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -536,7 +536,7 @@ export default function BetaAlaninePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Beta-Alanine</h1>
@@ -625,19 +625,19 @@ export default function BetaAlaninePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/creatine" className="text-sm font-medium text-[#0891b2] hover:underline">Creatine</Link>
-          <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#0891b2] hover:underline">L-Citrulline Malate</Link>
-          <Link href="/supplements/bcaas" className="text-sm font-medium text-[#0891b2] hover:underline">BCAAs</Link>
-          <Link href="/supplements/electrolyte-powders" className="text-sm font-medium text-[#0891b2] hover:underline">Electrolyte Powders</Link>
-          <Link href="/supplements/protein-powder" className="text-sm font-medium text-[#0891b2] hover:underline">Protein Powder</Link>
-          <Link href="/supplements/caffeine-l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">Caffeine + L-Theanine</Link>
+          <Link href="/supplements/creatine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine</Link>
+          <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline Malate</Link>
+          <Link href="/supplements/bcaas" className="text-sm font-medium text-[#3A759F] hover:underline">BCAAs</Link>
+          <Link href="/supplements/electrolyte-powders" className="text-sm font-medium text-[#3A759F] hover:underline">Electrolyte Powders</Link>
+          <Link href="/supplements/protein-powder" className="text-sm font-medium text-[#3A759F] hover:underline">Protein Powder</Link>
+          <Link href="/supplements/caffeine-l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">Caffeine + L-Theanine</Link>
         </div>
       </div>
 
-      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/compare/creatine-vs-beta-alanine" className="text-sm font-medium text-[#0891b2] hover:underline">Creatine vs Beta-Alanine &rarr;</Link>
+          <Link href="/compare/creatine-vs-beta-alanine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine vs Beta-Alanine &rarr;</Link>
         </div>
       </div>
 

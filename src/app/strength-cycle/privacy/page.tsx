@@ -66,7 +66,7 @@ export default function StrengthCyclePrivacyPage() {
             Strength Cycle Studios, LLC<br />
             9712 Ashbourn Drive<br />
             Burke, VA 22015<br />
-            Email: <a href="mailto:strengthcyclestudios@gmail.com" className="text-[#0891b2] hover:underline">strengthcyclestudios@gmail.com</a>
+            Email: <a href="mailto:strengthcyclestudios@gmail.com" className="text-[#3A759F] hover:underline">strengthcyclestudios@gmail.com</a>
           </p>
         </section>
       </div>

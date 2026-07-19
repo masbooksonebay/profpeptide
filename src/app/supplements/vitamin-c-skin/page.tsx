@@ -34,7 +34,7 @@ const faqs = [
     a: (
       <>
         Yes — and the mechanism layering is mechanistically natural for skin-focused protocols.{" "}
-        <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>{" "}
+        <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>{" "}
         is a copper-peptide that modulates MMP (matrix metalloproteinase) activity, stimulates fibroblast collagen and elastin synthesis, and supports tissue remodeling. Vitamin C provides the obligate cofactor for collagen hydroxylation — without it, GHK-Cu&apos;s collagen-stimulation signal still fires but the collagen produced is structurally weak. The two operate on different layers: GHK-Cu is the signaling/remodeling arm; vitamin C is the substrate-cofactor arm. Most evidence-based skin protocols pair them (oral vitamin C 500–1,000 mg/day + topical GHK-Cu or systemic GHK-Cu). No known negative interactions.
       </>
     ),
@@ -130,7 +130,7 @@ export default function VitaminCSkinPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Vitamin C for Skin</h1>
@@ -156,7 +156,7 @@ export default function VitaminCSkinPage() {
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What does vitamin C do for skin?</h2>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Vitamin C plays a uniquely irreplaceable role in skin physiology — it is the obligate cofactor for the hydroxylase enzymes that build and stabilize collagen, the primary structural protein of the dermis. Without adequate vitamin C, fibroblasts produce collagen that can&apos;t fold properly into stable triple-helix structures, resulting in structurally weak skin tissue prone to wrinkling and breakdown. Beyond collagen, vitamin C is the dominant water-soluble antioxidant in skin, protecting against UV-induced oxidative damage, inhibiting melanin synthesis (the basis for its skin-brightening effect), and regenerating oxidized vitamin E back to its active form. Skin vitamin C concentrations are significantly higher than blood plasma — reflecting how critical it is to cutaneous function — and skin vitamin C declines measurably with age and UV exposure. For a full vitamin C profile (immune function, antioxidant network, dietary requirements), see the{" "}
-            <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">parent vitamin C page</Link>.
+            <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">parent vitamin C page</Link>.
           </p>
           <div className="mt-4">
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -225,7 +225,7 @@ export default function VitaminCSkinPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Topical L-ascorbic acid can cause irritation at high concentrations or in sensitive skin — start with 10% formulations before stepping up to 15–20%. Discontinue if persistent redness or burning. For comprehensive safety, interactions, and clinical considerations, see the{" "}
-            <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">parent vitamin C page</Link>.
+            <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">parent vitamin C page</Link>.
           </p>
         </div>
 
@@ -280,10 +280,10 @@ export default function VitaminCSkinPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin C (full profile)</Link>
-          <Link href="/supplements/collagen-peptides-skin" className="text-sm font-medium text-[#0891b2] hover:underline">Collagen Peptides for Skin</Link>
-          <Link href="/supplements/hyaluronic-acid" className="text-sm font-medium text-[#0891b2] hover:underline">Hyaluronic Acid</Link>
-          <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu peptide</Link>
+          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C (full profile)</Link>
+          <Link href="/supplements/collagen-peptides-skin" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides for Skin</Link>
+          <Link href="/supplements/hyaluronic-acid" className="text-sm font-medium text-[#3A759F] hover:underline">Hyaluronic Acid</Link>
+          <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu peptide</Link>
         </div>
       </div>
 

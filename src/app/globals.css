@@ -44,7 +44,7 @@
     @apply inline-flex items-center justify-center px-6 py-3 bg-brand text-white font-medium rounded-md hover:bg-brand-hover transition-colors duration-200 text-sm;
   }
   .btn-outline {
-    @apply inline-flex items-center justify-center px-6 py-3 border border-brand text-brand font-medium rounded-md hover:bg-[#f0fafa] dark:hover:bg-brand/10 transition-colors duration-200 text-sm;
+    @apply inline-flex items-center justify-center px-6 py-3 border border-brand text-brand font-medium rounded-md hover:bg-[#eef3f8] dark:hover:bg-brand/10 transition-colors duration-200 text-sm;
   }
   .section {
     @apply max-w-5xl mx-auto px-4 sm:px-6 py-16;

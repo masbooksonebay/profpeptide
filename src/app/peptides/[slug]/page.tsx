@@ -43,7 +43,7 @@ export default function PeptidePage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="section max-w-3xl">
-      <Link href="/peptides" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+      <Link href="/peptides" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
         Back to Peptide Library
       </Link>
       <div className="flex flex-wrap items-center gap-3 mb-8">

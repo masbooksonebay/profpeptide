@@ -23,7 +23,7 @@ const faqs = [
     a: (
       <>
         Pinealon is a synthetic tripeptide with the sequence Glu-Asp-Arg (EDR). It belongs to the family of Khavinson short-peptide bioregulators and was originally derived from the brain-cortex polypeptide complex Cortexin. Research interest centers on the central nervous system &mdash; neuroprotection under oxidative and hypoxic stress, neuronal viability, and age-related cognitive decline. It is studied in the same short-peptide tradition as{" "}
-        <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>.
+        <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>.
       </>
     ),
   },
@@ -32,7 +32,7 @@ const faqs = [
     a: (
       <>
         Cortexin is the brain-cortex polypeptide complex that Pinealon&apos;s tripeptide was derived from.{" "}
-        <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+        <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
         (AEDG) is a sibling Khavinson tetrapeptide associated with the pineal gland and telomerase/circadian research. Pinealon (EDR) is a tripeptide whose research focus is CNS neuroprotection. All three sit within the Khavinson short-peptide bioregulator program, but their sequences and reported targets differ.
       </>
     ),
@@ -50,7 +50,7 @@ const faqs = [
     a: (
       <>
         Pinealon is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
-        <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
           Peptides.gg discount code (PROF15) &rarr;
         </Link>
         .
@@ -151,7 +151,7 @@ const sections = [
       <div className="space-y-4">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-          <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
             Peptides.gg discount code (PROF15) &rarr;
           </Link>{" "}
           for current options.
@@ -184,7 +184,7 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Fedoreyeva LI, Kireev II, Khavinson VKh, Vanyushin BF. Penetration of short fluorescence-labeled peptides into the nucleus in HeLa cells and in vitro specific interaction with DNA. Biochemistry (Moscow). 2011;76(11):1210-9. PMID 22117547.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22117547/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22117547/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22117547/
           </a>
         </li>
@@ -218,12 +218,12 @@ const sections = [
           Plain-English summaries of select peer-reviewed studies behind the claims above. Click any title to read the source paper. The open-access Alzheimer&apos;s-context papers (Khavinson 2020, Molecules; Khavinson 2021, Pharmaceuticals) are listed in the References section above.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -244,7 +244,7 @@ export default function PinealonPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -280,8 +280,8 @@ export default function PinealonPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Pinealon is a synthetic tripeptide (Glu-Asp-Arg, EDR) developed within the Khavinson short-peptide bioregulator program and originally derived from the brain-cortex polypeptide complex Cortexin. Research interest centers on the central nervous system &mdash; neuroprotection under oxidative and hypoxic stress, support of neuronal viability, and age-related cognitive decline. Its proposed mechanism is unusual: rather than acting on a cell-surface receptor, EDR is reported to enter the cell and nucleus and interact directly with DNA to modulate gene expression. The evidence base is preclinical (cell culture and rodent) and comes predominantly from Khavinson-affiliated Russian laboratories; there are no human randomized controlled trials. It sits in the same short-peptide family as{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -299,7 +299,7 @@ export default function PinealonPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Pinealon is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-            <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
               Peptides.gg discount code (PROF15) &rarr;
             </Link>{" "}
             for current options.
@@ -353,12 +353,12 @@ export default function PinealonPage() {
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         {/* TODO: add sibling Khavinson bioregulator links (Cardiogen, Cortagen, Thymogen) as those profiles go live. */}
-        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
-        <Link href="/peptides/semax" className="text-sm font-medium text-[#0891b2] hover:underline">Semax</Link>
-        <Link href="/peptides/selank" className="text-sm font-medium text-[#0891b2] hover:underline">Selank</Link>
-        <Link href="/peptides/dsip" className="text-sm font-medium text-[#0891b2] hover:underline">DSIP</Link>
+        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
+        <Link href="/peptides/semax" className="text-sm font-medium text-[#3A759F] hover:underline">Semax</Link>
+        <Link href="/peptides/selank" className="text-sm font-medium text-[#3A759F] hover:underline">Selank</Link>
+        <Link href="/peptides/dsip" className="text-sm font-medium text-[#3A759F] hover:underline">DSIP</Link>
         </div>
-        <Link href="/bioregulators" className="text-sm font-medium text-[#0891b2] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
+        <Link href="/bioregulators" className="text-sm font-medium text-[#3A759F] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
       </div>
 
       {/* TODO: add a Comparisons block (e.g. Pinealon vs Epitalon) once sibling-bioregulator comparison pages are built. */}

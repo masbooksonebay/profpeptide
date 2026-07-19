@@ -35,9 +35,9 @@ const faqs = [
     a: (
       <>
         Yes — the stack is mechanistically natural for users targeting cognitive enhancement with stress modulation.{" "}
-        <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+        <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
         (an ACTH(4-10) analog) modulates BDNF and neurotrophic signaling — sustained focus, motivation, and stress resilience effects via different mechanism than L-theanine&apos;s GABAergic + glutamate-modulating arms.{" "}
-        <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+        <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
         (a tuftsin analog) provides anxiolytic effects via GABA modulation — overlapping but mechanistically distinct from L-theanine&apos;s GABA enhancement. The peptides do neurotrophic + tuftsin-mediated signaling; L-theanine does direct alpha-wave induction + glutamate/serotonin/dopamine modulation. Mechanistically complementary, no known negative interactions. Particularly useful for users on caffeine + L-theanine baseline who want to add a deeper cognitive arm via Semax.
       </>
     ),
@@ -47,7 +47,7 @@ const faqs = [
     a: (
       <>
         Different scopes. This standalone L-theanine profile covers the amino acid&apos;s biology, mechanism, dosing across acute anxiety / sleep / standalone use cases, and stacking options. The{" "}
-        <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">caffeine + L-theanine combo profile</Link>{" "}
+        <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">caffeine + L-theanine combo profile</Link>{" "}
         focuses specifically on the 2:1 ratio stack — the synergy mechanism, the Owen/Haskell/Giesbrecht/Einother RCT base for the combined cognitive effect, and stack-specific dosing protocols. If you&apos;re primarily interested in the combo for cognitive enhancement: read the combo page. If you&apos;re considering L-theanine standalone for anxiety/sleep or want to understand its broader biology: this page.
       </>
     ),
@@ -150,7 +150,7 @@ const sections = [
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Acute anxiety / relaxation.</span> 100–200 mg as needed, taken 30–60 minutes before the anxiogenic stimulus (presentation, social event, demanding task). Peak effect within 1 hour, duration 4–6 hours.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Caffeine synergy stack.</span> 200 mg L-theanine + 100 mg caffeine, the 2:1 RCT-validated ratio (Owen 2008, Haskell 2008). Also 100 mg L-theanine + 50 mg caffeine for lower stimulant load. See <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">caffeine + L-theanine combo profile</Link> for stack-specific dosing.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Caffeine synergy stack.</span> 200 mg L-theanine + 100 mg caffeine, the 2:1 RCT-validated ratio (Owen 2008, Haskell 2008). Also 100 mg L-theanine + 50 mg caffeine for lower stimulant load. See <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">caffeine + L-theanine combo profile</Link> for stack-specific dosing.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sleep support.</span> 200–400 mg taken 30–60 minutes before bed. Most useful for users whose sleep is blocked by mental arousal or anxiety rather than circadian disruption.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Daily anxiolytic baseline.</span> 100–200 mg once or twice daily for users with chronic mild anxiety. Safe for chronic use; no tolerance or dependence documented.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Upper bound.</span> 400 mg/day — above this, effects plateau and headache risk modestly increases. No safety concerns at higher doses but no additional benefit.</li>
@@ -221,11 +221,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-theanine pairs naturally with the Russian-origin cognitive peptide cluster.{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
             (an ACTH(4-10) analog) modulates BDNF and neurotrophic signaling — sustained focus, motivation, and stress resilience effects via different mechanism than L-theanine&apos;s GABAergic and glutamate-modulating arms.{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             (a tuftsin analog) provides anxiolytic effects via GABA modulation — mechanistically overlapping but distinct from L-theanine&apos;s GABA enhancement. The peptides do neurotrophic + tuftsin-mediated signaling; L-theanine does alpha-wave induction + glutamate/serotonin/dopamine modulation. Mechanistically complementary, no known negative interactions. Particularly useful for users on{" "}
-            <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">caffeine + L-theanine</Link>{" "}
+            <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">caffeine + L-theanine</Link>{" "}
             baseline who want to add a deeper cognitive arm via Semax — the four-component stack (caffeine + L-theanine + Semax + Selank) covers adenosine blockade, GABA enhancement, neurotrophic signaling, and tuftsin-mediated anxiolysis from four distinct mechanism layers.
           </p>
         </div>
@@ -233,27 +233,27 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/caffeine" className="text-[#0891b2] hover:underline">Caffeine</Link>{" "}
-              — the canonical synergy. 2:1 ratio (200 mg L-theanine + 100 mg caffeine) is the Owen/Haskell trial-validated stack. See <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">dedicated combo profile</Link>.
+              <Link href="/supplements/caffeine" className="text-[#3A759F] hover:underline">Caffeine</Link>{" "}
+              — the canonical synergy. 2:1 ratio (200 mg L-theanine + 100 mg caffeine) is the Owen/Haskell trial-validated stack. See <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">dedicated combo profile</Link>.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>{" "}
+              <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
               — acetylcholine substrate. L-theanine provides the calm-focus state; Alpha-GPC provides the cholinergic fuel. Classic complementary cognitive pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/lions-mane" className="text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>{" "}
+              <Link href="/supplements/lions-mane" className="text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>{" "}
               — NGF/BDNF stimulation. Different timescale (chronic neurotrophic vs acute anxiolytic) but mechanistically compatible. Common daily cognitive baseline pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/bacopa-monnieri" className="text-[#0891b2] hover:underline">Bacopa monnieri</Link>{" "}
+              <Link href="/supplements/bacopa-monnieri" className="text-[#3A759F] hover:underline">Bacopa monnieri</Link>{" "}
               — long-term memory consolidation via different mechanism. Compatible chronic-use pairing with L-theanine&apos;s acute anxiolytic arm.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium glycinate</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium glycinate</Link>{" "}
               — GABAergic and neuromuscular relaxation. Common sleep-stack co-occupant; complements L-theanine&apos;s anxiolytic effects.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link>{" "}
+              <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
               — adaptogenic cortisol-blunting. Different stress-modulation mechanism; common anxiolytic-stack co-occupant.
             </li>
           </ol>
@@ -385,37 +385,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nobre AC, Rao A, Owen GN. L-theanine, a natural constituent in tea, and its effect on mental state. Asia Pac J Clin Nutr. 2008;17 Suppl 1:167-168.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18296328/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18296328/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18296328/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Owen GN, Parnell H, De Bruin EA, Rycroft JA. The combined effects of L-theanine and caffeine on cognitive performance and mood. Nutr Neurosci. 2008;11(4):193-198.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18681988/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18681988/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18681988/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Haskell CF, Kennedy DO, Milne AL, Wesnes KA, Scholey AB. The effects of L-theanine, caffeine and their combination on cognition and mood. Biol Psychol. 2008;77(2):113-122.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18006208/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18006208/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18006208/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kimura K, Ozeki M, Juneja LR, Ohira H. L-theanine reduces psychological and physiological stress responses. Biol Psychol. 2007;74(1):39-45.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16930802/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16930802/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16930802/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hidese S, Ogawa S, Ota M, et al. Effects of L-theanine administration on stress-related symptoms and cognitive functions in healthy adults: a randomized controlled trial. Nutrients. 2019;11(10):2362.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31623400/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31623400/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/31623400/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Giesbrecht T, Rycroft JA, Rowson MJ, De Bruin EA. The combination of L-theanine and caffeine improves cognitive performance and increases subjective alertness. Nutr Neurosci. 2010;13(6):283-290.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21040626/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21040626/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21040626/
           </a>
         </li>
@@ -431,12 +431,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -561,7 +561,7 @@ export default function LTheaninePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">L-Theanine</h1>
@@ -587,7 +587,7 @@ export default function LTheaninePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-theanine is a non-protein amino acid found almost exclusively in tea leaves (Camellia sinensis) — the compound largely responsible for the distinctly calm yet focused mental state tea drinkers describe as different from coffee despite similar caffeine content. It crosses the blood-brain barrier readily and selectively increases alpha brain wave activity (8–14 Hz) within 40 minutes of ingestion — the neural pattern associated with relaxed alertness, creativity, and flow. Mechanism spans GABAergic enhancement, glutamate receptor modulation, and dopamine/serotonin signaling — producing anxiolytic effects without sedation, mechanistically distinct from benzodiazepines. The strongest evidence is for the caffeine + L-theanine cognitive synergy at the canonical 2:1 ratio (200 mg L-theanine + 100 mg caffeine) — Owen 2008, Haskell 2008, Giesbrecht 2010, and Einother 2010 RCTs independently replicate superior attention-switching, executive control, and reaction time vs caffeine alone. Standalone anxiolytic and sleep effects are real but more modest (Kimura 2007 cortisol/BP, Hidese 2019 sleep). Safety profile is exceptional — no serious adverse events documented in any clinical research, no tolerance or dependence, safe for chronic use. L-theanine pairs naturally with{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">cognitive peptides like Semax and Selank</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">cognitive peptides like Semax and Selank</Link>{" "}
             via complementary mechanisms (neurotrophic + tuftsin-mediated signaling) at distinct layers.
           </p>
           <div>
@@ -609,7 +609,7 @@ export default function LTheaninePage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">For the caffeine combo specifically:</span> see the dedicated{" "}
-            <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">caffeine + L-theanine combo profile</Link>{" "}
+            <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">caffeine + L-theanine combo profile</Link>{" "}
             for stack-specific dosing, ratio considerations, and the full Owen/Haskell/Giesbrecht/Einother RCT synthesis.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=l-theanine+suntheanine&tag=profpeptide-20" label="L-Theanine" />
@@ -652,12 +652,12 @@ export default function LTheaninePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/caffeine-l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">Caffeine + L-Theanine</Link>
-          <Link href="/supplements/caffeine" className="text-sm font-medium text-[#0891b2] hover:underline">Caffeine</Link>
-          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#0891b2] hover:underline">Alpha-GPC</Link>
-          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>
-          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#0891b2] hover:underline">Bacopa Monnieri</Link>
-          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#0891b2] hover:underline">Ashwagandha</Link>
+          <Link href="/supplements/caffeine-l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">Caffeine + L-Theanine</Link>
+          <Link href="/supplements/caffeine" className="text-sm font-medium text-[#3A759F] hover:underline">Caffeine</Link>
+          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha-GPC</Link>
+          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>
+          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#3A759F] hover:underline">Bacopa Monnieri</Link>
+          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
         </div>
       </div>
 

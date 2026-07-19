@@ -179,7 +179,7 @@ function ResultRow({ entry, onSelect }: { entry: SearchEntry; onSelect: (url: st
       className="w-full text-left px-4 py-2.5 hover:bg-gray-50 dark:hover:bg-slate-700/60 transition-colors flex items-center justify-between gap-3 group"
     >
       <div className="min-w-0">
-        <div className="text-sm text-gray-800 dark:text-slate-100 truncate group-hover:text-[#0891b2]">
+        <div className="text-sm text-gray-800 dark:text-slate-100 truncate group-hover:text-[#3A759F]">
           {entry.title}
         </div>
         {entry.description && (

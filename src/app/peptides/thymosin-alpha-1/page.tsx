@@ -25,7 +25,7 @@ const faqs = [
     a: (
       <>
         Different molecules with different mechanisms despite the related name. Thymosin Alpha-1 is a 28-amino-acid peptide that promotes T-cell maturation and activates innate immunity through TLR2/TLR9.{" "}
-        <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">Thymosin Beta-4 (TB-500)</Link>{" "}
+        <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">Thymosin Beta-4 (TB-500)</Link>{" "}
         is a 43-amino-acid actin-binding peptide that drives cellular migration and tissue repair. They share a name but address completely different biological problems &mdash; Thymosin Alpha-1 for immune support, TB-500 for tissue repair.
       </>
     ),
@@ -55,7 +55,7 @@ const faqs = [
     a: (
       <>
         Outside the US, Zadaxin is available by prescription in 35+ countries. In the US, Thymosin Alpha-1 is sold as a research-grade peptide by specialty vendors. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -166,7 +166,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -177,7 +177,7 @@ const sections = [
     intro: (
       <>
         Thymosin Alpha-1 is given as a subcutaneous injection &mdash; under the skin, not into muscle &mdash; using a small insulin syringe. The Zadaxin standard protocol is 1.6 mg twice weekly; cancer adjunct uses 1.6 mg daily 5-on/2-off. For the practical mechanics of insulin syringes, units vs mcg conversion, and subcutaneous technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -281,7 +281,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 10 mg vial, each unit drawn delivers 100 mcg of Thymosin Alpha-1 at 1 mL reconstitution, 50 mcg at 2 mL, and 33 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -296,17 +296,17 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Interferon (clinical hepatitis protocols).</span> Synergistic, evidence-based combination &mdash; the basis of the Zadaxin hepatitis B/C approved indication.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">BPC-157.</span>{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           for combined immune + tissue repair applications.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">KPV.</span>{" "}
-          <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+          <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
           for combined immune modulation + anti-inflammatory effects (gut-immune axis protocols).
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">NAD+.</span>{" "}
-          <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>{" "}
+          <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>{" "}
           sometimes paired in immune optimization protocols (limited evidence).
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid: combination with active immunosuppressant therapy.</span> Theoretical antagonism &mdash; Thymosin Alpha-1 promotes immune function while immunosuppressants suppress it.</li>
@@ -397,7 +397,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The peptide is also distinct from{" "}
-          <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">Thymosin Beta-4 (TB-500)</Link>
+          <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">Thymosin Beta-4 (TB-500)</Link>
           , which has different mechanisms and applications despite the related name. Patients commonly confuse the two.
         </p>
       </div>
@@ -419,7 +419,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -466,13 +466,13 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wu J, Zhou L, Liu J, et al. The efficacy of thymosin alpha 1 for severe sepsis (ETASS): a multicentre, single-blind, randomized and controlled trial. Crit Care. 2013;17(1):R8.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23327199/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23327199/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23327199/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Wikipedia. Thymalfasin.{" "}
-          <a href="https://en.wikipedia.org/wiki/Thymalfasin" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://en.wikipedia.org/wiki/Thymalfasin" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://en.wikipedia.org/wiki/Thymalfasin
           </a>
         </li>
@@ -488,12 +488,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -514,7 +514,7 @@ export default function ThymosinAlpha1Page() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -544,13 +544,13 @@ export default function ThymosinAlpha1Page() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Thymosin Alpha-1 is a 28-amino-acid peptide naturally produced by the thymus gland, where it plays a critical role in T-cell maturation and immune system development. Synthetic Thymosin Alpha-1 (thymalfasin, brand name Zadaxin) is approved as a prescription drug in over 35 countries for treating chronic hepatitis B and hepatitis C, often as an adjunct to interferon therapy. It is also used as an immune-supportive treatment in cancer patients undergoing chemotherapy. While NOT FDA-approved in the United States, Thymosin Alpha-1 has decades of clinical use abroad and one of the strongest evidence bases of any peptide on Prof. Peptide. Distinct from{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">Thymosin Beta-4 (TB-500)</Link>{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">Thymosin Beta-4 (TB-500)</Link>{" "}
             despite the shared name. Often paired with{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             or{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             for combined immune + tissue / anti-inflammatory protocols. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -570,7 +570,7 @@ export default function ThymosinAlpha1Page() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -623,11 +623,11 @@ export default function ThymosinAlpha1Page() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/kpv" className="text-sm font-medium text-[#0891b2] hover:underline">KPV</Link>
-        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
-        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#0891b2] hover:underline">TB-500</Link>
-        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#0891b2] hover:underline">GHK-Cu</Link>
-        <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
+        <Link href="/peptides/kpv" className="text-sm font-medium text-[#3A759F] hover:underline">KPV</Link>
+        <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
+        <Link href="/peptides/tb-500" className="text-sm font-medium text-[#3A759F] hover:underline">TB-500</Link>
+        <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
+        <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
         </div>
       </div>
 

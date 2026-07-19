@@ -56,17 +56,17 @@ export default function RetatrutideVsTirzepatidePage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Retatrutide vs Tirzepatide — GLP Triple Agonist vs Dual Agonist"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Retatrutide vs Tirzepatide &mdash; Triple Agonist vs Dual Agonist Comparison</h1>
-      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link> and <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link> are both injectable peptides for weight loss and metabolic health, but they work on different numbers of receptors. Tirzepatide is FDA-approved and activates two receptors (GLP-1 and GIP). Retatrutide is investigational and activates three (GLP-1, GIP, and glucagon), which appears to drive even greater weight loss in trials. Here&apos;s how they compare.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> and <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> are both injectable peptides for weight loss and metabolic health, but they work on different numbers of receptors. Tirzepatide is FDA-approved and activates two receptors (GLP-1 and GIP). Retatrutide is investigational and activates three (GLP-1, GIP, and glucagon), which appears to drive even greater weight loss in trials. Here&apos;s how they compare.</p>
 
       <div className="overflow-x-auto mb-8">
         <table className="w-full text-sm border-collapse">
           <thead>
             <tr className="bg-gray-50 dark:bg-[#1e293b]">
               <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Retatrutide</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Tirzepatide</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Retatrutide</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Tirzepatide</th>
             </tr>
           </thead>
           <tbody>
@@ -90,9 +90,9 @@ export default function RetatrutideVsTirzepatidePage() {
           <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Choose Tirzepatide if:</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300">You want an FDA-approved option backed by years of clinical use, prescription access, and slightly milder dysesthesia profile. Best when prescription path matters.</p>
         </div>
-        <div className="border border-[#0891b2]/20 rounded-xl p-5 bg-[#0891b2]/10">
+        <div className="border border-[#3A759F]/20 rounded-xl p-5 bg-[#3A759F]/10">
           <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Consider the bigger picture:</h2>
-          <p className="text-sm text-gray-600 dark:text-slate-300">For users tracking the GLP class as a whole, see the <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-[#0891b2] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide</Link> 3-way comparison.</p>
+          <p className="text-sm text-gray-600 dark:text-slate-300">For users tracking the GLP class as a whole, see the <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide</Link> 3-way comparison.</p>
         </div>
       </div>
 
@@ -141,9 +141,9 @@ export default function RetatrutideVsTirzepatidePage() {
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related comparisons</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
-          <Link href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#0891b2] hover:underline">Retatrutide vs Semaglutide &rarr;</Link>
-          <Link href="/compare/semaglutide-vs-tirzepatide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide vs Tirzepatide &rarr;</Link>
+          <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
+          <Link href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Semaglutide &rarr;</Link>
+          <Link href="/compare/semaglutide-vs-tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide &rarr;</Link>
         </div>
       </div>
 

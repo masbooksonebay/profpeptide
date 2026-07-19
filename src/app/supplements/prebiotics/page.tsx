@@ -51,7 +51,7 @@ const faqs = [
     a: (
       <>
         Yes — and this is the synbiotic approach.{" "}
-        <Link href="/supplements/probiotics" className="text-[#0891b2] hover:underline">Probiotics</Link>{" "}
+        <Link href="/supplements/probiotics" className="text-[#3A759F] hover:underline">Probiotics</Link>{" "}
         introduce live beneficial bacteria; prebiotics feed those bacteria (and the beneficial bacteria already present). Some synbiotic products combine both in a single formula; alternatively, you can stack separate probiotic and prebiotic supplements. Mechanistic synergy is reasonable. The practical considerations: (1) Start with one or the other and add the second after 2–4 weeks of tolerance; combining both at once produces more GI symptoms during adaptation. (2) For probiotics, the strain-specific evidence base matters more than for prebiotics (different probiotic strains have different indications). (3) For prebiotic + probiotic synbiotics, the prebiotic fiber feeds the introduced strain plus the general microbiome.
       </>
     ),
@@ -277,9 +277,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Prebiotics pair naturally with gut-healing peptides via the microbiome-and-mucosal axis.{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             for gut tissue healing operates at the mucosal level; prebiotics support the underlying microbiome that contributes to gut barrier integrity and inflammation modulation. Mechanistically complementary.{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             (anti-inflammatory tripeptide) for gut inflammation works at the cellular level; prebiotic-driven SCFA production has its own anti-inflammatory effects in the colon. No formal stack RCT validation but mechanistic complement is direct.
           </p>
         </div>
@@ -287,31 +287,31 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/probiotics" className="text-[#0891b2] hover:underline">Probiotics</Link>{" "}
+              <Link href="/supplements/probiotics" className="text-[#3A759F] hover:underline">Probiotics</Link>{" "}
               — the canonical synbiotic pairing. Prebiotic feeds the live bacteria. Start one then add the other after 2–4 weeks of adaptation.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">Glutamine</Link>{" "}
+              <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">Glutamine</Link>{" "}
               — enterocyte fuel for small intestine; prebiotics feed colon bacteria. Different anatomical focus, complementary for whole-gut support.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
               — tight junction support; complementary gut barrier mechanism.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">Zinc carnosine</Link>{" "}
+              <Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">Zinc carnosine</Link>{" "}
               — upper-GI mucosal healing (different anatomical focus from prebiotic colon effects).
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen peptides</Link>{" "}
+              <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
               — substrate for connective tissue including gut lining. Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/curcumin" className="text-[#0891b2] hover:underline">Curcumin</Link>{" "}
+              <Link href="/supplements/curcumin" className="text-[#3A759F] hover:underline">Curcumin</Link>{" "}
               — broad anti-inflammatory; compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fish-oil" className="text-[#0891b2] hover:underline">Fish oil</Link>{" "}
+              <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Fish oil</Link>{" "}
               — anti-inflammatory; complementary in gut-health protocols.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -467,31 +467,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Slavin J. Fiber and prebiotics: mechanisms and health benefits. Nutrients. 2013;5(4):1417-1435.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23609775/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23609775/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23609775/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Roberfroid M, Gibson GR, Hoyles L, et al. Prebiotic effects: metabolic and health benefits. Br J Nutr. 2010;104 Suppl 2:S1-63.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20920376/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20920376/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20920376/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vulevic J, Drakoularakou A, Yaqoob P, Tzortzis G, Gibson GR. Modulation of the fecal microflora profile and immune function by a novel trans-galactooligosaccharide mixture (B-GOS) in healthy elderly volunteers. Am J Clin Nutr. 2008;88(5):1438-1446.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18996865/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18996865/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18996865/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Abrams SA, Griffin IJ, Hawthorne KM, et al. A combination of prebiotic short- and long-chain inulin-type fructans enhances calcium absorption and bone mineralization in young adolescents. Am J Clin Nutr. 2005;82(2):471-476.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16210710/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16210710/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16210710/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Topping DL, Clifton PM. Short-chain fatty acids and human colonic function: roles of resistant starch and nonstarch polysaccharides. Physiol Rev. 2001;81(3):1031-1064.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11427691/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11427691/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11427691/
           </a>
         </li>
@@ -507,12 +507,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -605,7 +605,7 @@ export default function PrebioticsPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Prebiotics</h1>
@@ -631,8 +631,8 @@ export default function PrebioticsPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Prebiotics are selectively fermented non-digestible carbohydrates that support the growth and activity of beneficial microorganisms in the gut. Unlike{" "}
-            <Link href="/supplements/probiotics" className="text-[#0891b2] hover:underline">probiotics</Link>{" "}
-            (which introduce live bacteria), prebiotics provide the substrate that feeds the beneficial bacteria already in your microbiome plus any introduced strains. The most-studied prebiotic fibers are inulin (long-chain fructan from chicory or agave), FOS (fructooligosaccharides / oligofructose — shorter-chain fructan), GOS (galactooligosaccharides — galactose-based), and resistant starch (RS, from cooked-and-cooled rice/potatoes or modified supplemental forms). All resist digestion in the small intestine, pass through intact, and are fermented by specific bacterial populations in the colon — primarily Bifidobacterium and Lactobacillus species, which have the enzymatic machinery to break down these substrates. Bacterial fermentation produces <span className="font-semibold">short-chain fatty acids (SCFAs)</span> — butyrate, propionate, and acetate — that have multiple beneficial effects: butyrate is the primary fuel for colonocytes and supports gut barrier integrity (mechanism overlapping with{" "}<Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">glutamine&apos;s enterocyte support</Link>{" "}in the small intestine); propionate affects hepatic glucose and lipid metabolism; SCFA-mediated colonic acidification increases mineral absorption (calcium, magnesium). Fiber-type matters substantially: inulin (long-chain) is the most-studied, slower-fermenting, and generally well-tolerated; FOS (short-chain) ferments rapidly and produces more gas; GOS has the strongest single-prebiotic evidence for immune effects (Vulevic 2008 documented URTI reduction in elderly with 5.5 g/day for 10 weeks); resistant starch ferments most slowly and distally in the colon, produces proportionally more butyrate (Topping 2001), and is generally best-tolerated for users with GI sensitivity. The fiber-type forms-compared treatment is integrated into the dosing section rather than a sub-tier — these are different tools rather than different evidence tiers. The honest evidence summary: Strong for microbiome compositional shifts (Bifidobacterium increases at 5+ g/day per Roberfroid 2010); Moderate for specific clinical outcomes (GOS-URTI in elderly, calcium absorption in adolescents per Abrams 2005, bowel regularity, glucose response); Modest for broader claims (weight loss, mood, generalized immune enhancement). The dominant practical consideration is GI tolerance — bacterial fermentation produces gas as a byproduct alongside the SCFAs you want. Start low (2–3 g/day), build up over weeks (1–2 g/week to target 5–10 g/day), and choose slower-fermenting fibers if GI symptoms are problematic. Critical caveat: prebiotics ARE FODMAPs (Fermentable Oligo-, Di-, Monosaccharides And Polyols) — the dietary category that triggers IBS symptoms. Avoid during low-FODMAP elimination phase for IBS; resistant starch is somewhat lower-FODMAP and may be better tolerated in sensitive users. Combine with probiotics for the synbiotic approach, ideally starting one at a time with 2–4 weeks between to allow adaptation.
+            <Link href="/supplements/probiotics" className="text-[#3A759F] hover:underline">probiotics</Link>{" "}
+            (which introduce live bacteria), prebiotics provide the substrate that feeds the beneficial bacteria already in your microbiome plus any introduced strains. The most-studied prebiotic fibers are inulin (long-chain fructan from chicory or agave), FOS (fructooligosaccharides / oligofructose — shorter-chain fructan), GOS (galactooligosaccharides — galactose-based), and resistant starch (RS, from cooked-and-cooled rice/potatoes or modified supplemental forms). All resist digestion in the small intestine, pass through intact, and are fermented by specific bacterial populations in the colon — primarily Bifidobacterium and Lactobacillus species, which have the enzymatic machinery to break down these substrates. Bacterial fermentation produces <span className="font-semibold">short-chain fatty acids (SCFAs)</span> — butyrate, propionate, and acetate — that have multiple beneficial effects: butyrate is the primary fuel for colonocytes and supports gut barrier integrity (mechanism overlapping with{" "}<Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">glutamine&apos;s enterocyte support</Link>{" "}in the small intestine); propionate affects hepatic glucose and lipid metabolism; SCFA-mediated colonic acidification increases mineral absorption (calcium, magnesium). Fiber-type matters substantially: inulin (long-chain) is the most-studied, slower-fermenting, and generally well-tolerated; FOS (short-chain) ferments rapidly and produces more gas; GOS has the strongest single-prebiotic evidence for immune effects (Vulevic 2008 documented URTI reduction in elderly with 5.5 g/day for 10 weeks); resistant starch ferments most slowly and distally in the colon, produces proportionally more butyrate (Topping 2001), and is generally best-tolerated for users with GI sensitivity. The fiber-type forms-compared treatment is integrated into the dosing section rather than a sub-tier — these are different tools rather than different evidence tiers. The honest evidence summary: Strong for microbiome compositional shifts (Bifidobacterium increases at 5+ g/day per Roberfroid 2010); Moderate for specific clinical outcomes (GOS-URTI in elderly, calcium absorption in adolescents per Abrams 2005, bowel regularity, glucose response); Modest for broader claims (weight loss, mood, generalized immune enhancement). The dominant practical consideration is GI tolerance — bacterial fermentation produces gas as a byproduct alongside the SCFAs you want. Start low (2–3 g/day), build up over weeks (1–2 g/week to target 5–10 g/day), and choose slower-fermenting fibers if GI symptoms are problematic. Critical caveat: prebiotics ARE FODMAPs (Fermentable Oligo-, Di-, Monosaccharides And Polyols) — the dietary category that triggers IBS symptoms. Avoid during low-FODMAP elimination phase for IBS; resistant starch is somewhat lower-FODMAP and may be better tolerated in sensitive users. Combine with probiotics for the synbiotic approach, ideally starting one at a time with 2–4 weeks between to allow adaptation.
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -695,12 +695,12 @@ export default function PrebioticsPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/probiotics" className="text-sm font-medium text-[#0891b2] hover:underline">Probiotics</Link>
-          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#0891b2] hover:underline">Glutamine</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc Carnosine</Link>
-          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#0891b2] hover:underline">Fish Oil</Link>
-          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#0891b2] hover:underline">Curcumin</Link>
+          <Link href="/supplements/probiotics" className="text-sm font-medium text-[#3A759F] hover:underline">Probiotics</Link>
+          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">Glutamine</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc Carnosine</Link>
+          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
+          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#3A759F] hover:underline">Curcumin</Link>
         </div>
       </div>
 

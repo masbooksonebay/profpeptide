@@ -35,9 +35,9 @@ const faqs = [
     a: (
       <>
         Yes — the stack is mechanistically natural and addresses different layers of cognitive function.{" "}
-        <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+        <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
         (an ACTH(4-10) analog) modulates BDNF and neurotrophic signaling — acute focus and resilience effects.{" "}
-        <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+        <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
         (a tuftsin analog) provides anxiolytic effects via GABA modulation. Phosphatidylserine operates at a structural layer: it&apos;s a major neuronal membrane phospholipid (~15% of brain phospholipid content), and supplementation supports membrane fluidity, neurotransmitter release, and cortisol regulation. The peptides handle direct receptor-level signaling; PS handles the membrane substrate and HPA-axis modulation. Mechanistically complementary, no known negative interactions.
       </>
     ),
@@ -47,9 +47,9 @@ const faqs = [
     a: (
       <>
         Different mechanism, often stacked together.{" "}
-        <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>{" "}
+        <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
         is the acetylcholine substrate — fast-acting, attention and reaction-time effects, evidence in dementia and acute exercise GH.{" "}
-        <Link href="/supplements/bacopa-monnieri" className="text-[#0891b2] hover:underline">Bacopa monnieri</Link>{" "}
+        <Link href="/supplements/bacopa-monnieri" className="text-[#3A759F] hover:underline">Bacopa monnieri</Link>{" "}
         works through chronic synaptic remodeling — 8–12 weeks for full effect, evidence in healthy-adult memory retention. PS works at the neuronal membrane layer — structural phospholipid support, neurotransmitter release facilitation, cortisol blunting. The three address different layers of cognitive function and stack cleanly together. PS uniquely contributes the cortisol arm — distinguishing it from acetylcholine-substrate or synaptic-remodeling supplements.
       </>
     ),
@@ -219,9 +219,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             PS pairs naturally with the Russian-origin cognitive peptide cluster.{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
             (an ACTH(4-10) analog) modulates BDNF and neurotrophic signaling — acute focus and resilience effects.{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             (a tuftsin analog) provides anxiolytic and mild nootropic effects via GABA modulation. PS operates at a different layer — it&apos;s the structural neuronal membrane phospholipid (~15% of brain phospholipid content), and supplementation supports membrane fluidity, neurotransmitter release at synaptic terminals, and HPA-axis cortisol modulation. The peptides handle receptor-level signaling; PS handles membrane substrate and cortisol regulation. Mechanistically complementary, no known negative interactions. Introduce one variable at a time when starting a new stack so you can tell what&apos;s actually doing what.
           </p>
         </div>
@@ -229,23 +229,23 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>{" "}
+              <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
               — acetylcholine substrate. PS supports the membrane environment; Alpha-GPC supplies the cholinergic fuel. Classic complementary cognitive pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/bacopa-monnieri" className="text-[#0891b2] hover:underline">Bacopa monnieri</Link>{" "}
+              <Link href="/supplements/bacopa-monnieri" className="text-[#3A759F] hover:underline">Bacopa monnieri</Link>{" "}
               — chronic synaptic remodeling and memory consolidation. Different timescale (8–12 weeks); compatible with PS&apos;s membrane-structural arm.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/lions-mane" className="text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>{" "}
+              <Link href="/supplements/lions-mane" className="text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>{" "}
               — NGF/BDNF stimulation. Neurotrophic support complements PS&apos;s membrane-structural and cortisol arms.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fish-oil" className="text-[#0891b2] hover:underline">Omega-3 fish oil</Link>{" "}
+              <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Omega-3 fish oil</Link>{" "}
               — EPA/DHA are essential phospholipid fatty-acid components that incorporate alongside PS into neuronal membranes. The phospholipid + omega-3 combination is one of the more mechanistically natural pairings.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link>{" "}
+              <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
               — adaptogenic cortisol-blunting at a different mechanism layer. Stacks naturally with PS&apos;s acute cortisol-modulation arm for chronic stress management.
             </li>
           </ol>
@@ -380,37 +380,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Crook TH, Tinklenberg J, Yesavage J, et al. Effects of phosphatidylserine in age-associated memory impairment. Neurology. 1991;41(5):644-649.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/2011243/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/2011243/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/2011243/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cenacchi T, Bertoldin T, Farina C, et al. Cognitive decline in the elderly: a double-blind, placebo-controlled multicenter study on efficacy of phosphatidylserine administration. Aging (Milano). 1993;5(2):123-133.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/8323999/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/8323999/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/8323999/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Starks MA, Starks SL, Kingsley M, Purpura M, Jäger R. The effects of phosphatidylserine on endocrine response to moderate intensity exercise. J Int Soc Sports Nutr. 2008;5:11.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18662395/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18662395/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18662395/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Glade MJ, Smith K. Phosphatidylserine and the human brain. Nutrition. 2015;31(6):781-786.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25933483/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25933483/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25933483/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hirayama S, Terasawa K, Rabeler R, et al. The effect of phosphatidylserine administration on memory and symptoms of attention-deficit hyperactivity disorder: a randomised, double-blind, placebo-controlled clinical trial. J Hum Nutr Diet. 2014;27 Suppl 2:284-291.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24579822/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24579822/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24579822/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           U.S. Food and Drug Administration. Qualified health claim: phosphatidylserine and cognitive dysfunction and dementia (Letter of Enforcement Discretion). 2003.{" "}
-          <a href="https://www.fda.gov/food/qualified-health-claims/qualified-health-claims-letters-enforcement-discretion" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.fda.gov/food/qualified-health-claims/qualified-health-claims-letters-enforcement-discretion" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.fda.gov/food/qualified-health-claims/qualified-health-claims-letters-enforcement-discretion
           </a>
         </li>
@@ -426,12 +426,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -556,7 +556,7 @@ export default function PhosphatidylserinePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Phosphatidylserine</h1>
@@ -582,7 +582,7 @@ export default function PhosphatidylserinePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Phosphatidylserine (PS) is a phospholipid — a fat-soluble molecule that forms a critical structural component of neuronal cell membranes. It is particularly concentrated in the brain, comprising approximately 15% of total neural-tissue phospholipid content. PS supports neuronal membrane fluidity, facilitates synaptic neurotransmitter release, modulates HPA-axis cortisol response under stress, and participates in apoptosis signaling. Its supplement evidence base is unusually strong: PS is one of the few supplements to have earned an FDA qualified health claim for &ldquo;reducing the risk of dementia and cognitive dysfunction in the elderly&rdquo; — a higher regulatory tier than typical supplement marketing claims. The cognitive evidence (Crook 1991, Cenacchi 1993 multicenter trials, n=494 combined) is strongest in age-related cognitive decline; the cortisol-blunting effect (Starks 2008, ~20% post-exercise cortisol reduction at 600 mg) is well-documented; pediatric ADHD evidence is emerging. PS pairs naturally with{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">cognitive peptides like Semax and Selank</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">cognitive peptides like Semax and Selank</Link>{" "}
             because the membrane-structural and HPA-axis mechanisms operate on different layers than receptor-level peptide signaling.
           </p>
           <div>
@@ -645,11 +645,11 @@ export default function PhosphatidylserinePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#0891b2] hover:underline">Alpha-GPC</Link>
-          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#0891b2] hover:underline">Bacopa Monnieri</Link>
-          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>
-          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#0891b2] hover:underline">Fish Oil</Link>
-          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#0891b2] hover:underline">Ashwagandha</Link>
+          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha-GPC</Link>
+          <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#3A759F] hover:underline">Bacopa Monnieri</Link>
+          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>
+          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
+          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
         </div>
       </div>
 

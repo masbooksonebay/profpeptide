@@ -17,7 +17,7 @@ export default function PeptideSciencesAlternativesPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Peptide Sciences Has Closed — Vetted Research-Peptide Alternatives","description":"Peptide Sciences has voluntarily closed and discontinued sales. Here's what happened and established research-peptide vendors to consider instead, with current discount codes.","url":"https://profpeptide.com/peptide-sciences-alternatives","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptide Sciences Has Closed — Vetted Research-Peptide Alternatives"}]}} />
     <div className="section max-w-4xl">
-      <Link href="/coupons" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Vendor Coupons</Link>
+      <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Vendor Coupons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Peptide Sciences Has Closed &mdash; Vetted Research-Peptide Alternatives</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">
         Peptide Sciences (peptidesciences.com), one of the longest-running research-peptide suppliers, has announced it is voluntarily shutting down and discontinuing the sale of its research products. Its website no longer processes orders. If you previously sourced research peptides there, here are established vendors to consider instead.
@@ -48,7 +48,7 @@ export default function PeptideSciencesAlternativesPage() {
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mt-4">
-          See all vetted suppliers and current codes on the <Link href="/coupons" className="text-[#0891b2] hover:underline">vendor coupons</Link> page.
+          See all vetted suppliers and current codes on the <Link href="/coupons" className="text-[#3A759F] hover:underline">vendor coupons</Link> page.
         </p>
       </div>
 

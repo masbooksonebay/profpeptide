@@ -23,9 +23,9 @@ const faqs = [
     a: (
       <>
         Different mechanism class, different magnitude of effect.{" "}
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>{" "}
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>{" "}
         and{" "}
-        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>{" "}
         are GLP-1 (semaglutide) and GLP-1+GIP (tirzepatide) receptor agonists — they directly activate incretin receptors and produce 15–22% weight loss in Phase 3 trials. Berberine modestly induces endogenous GLP-1 secretion from intestinal L cells (one of its several mechanisms) and produces meaningful but smaller weight reduction in trials (typically 2–5 kg over 12 weeks). Berberine isn&apos;t a substitute for prescription GLP-1 therapy if someone genuinely needs that level of effect, but it&apos;s the closest natural compound that targets adjacent pathways. For users who don&apos;t qualify for or don&apos;t want injectable GLP-1 drugs, berberine is the highest-evidence natural metabolic intervention.
       </>
     ),
@@ -35,7 +35,7 @@ const faqs = [
     a: (
       <>
         Yes, with caveats. Berberine and{" "}
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
         work on overlapping but non-identical pathways: berberine via AMPK + modest endogenous GLP-1 induction; semaglutide via direct GLP-1 receptor agonism. Adding berberine to a semaglutide protocol can produce additive glucose-lowering and lipid effects, but the combined hypoglycemic effect is real — particularly in users on background insulin or sulfonylureas. Monitor blood glucose carefully when adding berberine to any GLP-1 protocol. The combined GI side-effect profile (nausea, constipation, GI upset) is also more burdensome than either alone. Coordinate with the prescribing clinician if you&apos;re on any GLP-class drug.
       </>
     ),
@@ -223,15 +223,15 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The natural peptide bridges for berberine are the GLP-class incretin agonists.{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>{" "}
             (GLP-1 receptor agonist) and{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>{" "}
             (GLP-1 + GIP dual agonist) work via direct receptor activation;{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>{" "}
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>{" "}
             extends to triple GLP-1 + GIP + glucagon agonism. Berberine modestly induces endogenous GLP-1 secretion and activates AMPK — different pathways targeting the same metabolic endpoints. Stacking berberine with any of the GLP peptides is mechanistically natural, but the combined hypoglycemic effect is real — monitor blood glucose carefully, particularly in users on background insulin or sulfonylureas. Also relevant:{" "}
-            <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">cagrilintide</Link>{" "}
+            <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">cagrilintide</Link>{" "}
             (amylin analog) and{" "}
-            <Link href="/peptides/cagrisema" className="text-[#0891b2] hover:underline">cagrisema</Link>{" "}
+            <Link href="/peptides/cagrisema" className="text-[#3A759F] hover:underline">cagrisema</Link>{" "}
             (cagrilintide + semaglutide fixed-dose combination) — the same monitoring caveats apply. Coordinate with the prescribing clinician for any GLP-class stack.
           </p>
         </div>
@@ -239,23 +239,23 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/alpha-lipoic-acid" className="text-[#0891b2] hover:underline">Alpha Lipoic Acid</Link>{" "}
+              <Link href="/supplements/alpha-lipoic-acid" className="text-[#3A759F] hover:underline">Alpha Lipoic Acid</Link>{" "}
               — synergistic on insulin sensitivity and oxidative stress. Classic metabolic-syndrome pairing — both work via different mechanisms but converge on glucose handling.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/chromium" className="text-[#0891b2] hover:underline">Chromium</Link>{" "}
+              <Link href="/supplements/chromium" className="text-[#3A759F] hover:underline">Chromium</Link>{" "}
               — cofactor for insulin receptor function. Modest standalone effect on insulin sensitivity; commonly stacked with berberine for users targeting metabolic syndrome endpoints.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium</Link>{" "}
               — insulin signaling cofactor; magnesium deficiency is widespread and contributes to insulin resistance. Foundational metabolic-health supplement.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/green-tea-extract" className="text-[#0891b2] hover:underline">Green Tea Extract</Link>{" "}
+              <Link href="/supplements/green-tea-extract" className="text-[#3A759F] hover:underline">Green Tea Extract</Link>{" "}
               — EGCG modestly activates AMPK on a different pathway than berberine; complementary AMPK stacking for metabolic goals.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fish-oil" className="text-[#0891b2] hover:underline">Fish Oil</Link>{" "}
+              <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Fish Oil</Link>{" "}
               — independent triglyceride-lowering pathway. Pairs naturally with berberine for dyslipidemia targets.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -406,37 +406,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Yin J, Xing H, Ye J. Efficacy of berberine in patients with type 2 diabetes mellitus. Metabolism. 2008;57(5):712-717.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18397984/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18397984/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18397984/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Zhang Y, Li X, Zou D, et al. Treatment of type 2 diabetes and dyslipidemia with the natural plant alkaloid berberine. J Clin Endocrinol Metab. 2008;93(7):2559-2565.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18397984/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18397984/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18397984/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dong H, Wang N, Zhao L, Lu F. The effect of berberine on blood glucose in patients with type 2 diabetes mellitus: a systematic review and meta-analysis. Evid Based Complement Alternat Med. 2012;2012:591654.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23118793/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23118793/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23118793/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Lan J, Zhao Y, Dong F, et al. Meta-analysis of the effect and safety of berberine in the treatment of type 2 diabetes mellitus, hyperlipemia and hypertension. J Ethnopharmacol. 2015;161:69-81.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25498346/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25498346/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25498346/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Habtemariam S. Berberine in the treatment of metabolism-related chronic diseases: a drug cloud toward clinical applications. Pharmaceuticals (Basel). 2020;13(4):76.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/32213877/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/32213877/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/32213877/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kong W, Wei J, Abidi P, et al. Berberine is a novel cholesterol-lowering drug working through a unique mechanism distinct from statins. Nat Med. 2004;10(12):1344-1351.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/15531889/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/15531889/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/15531889/
           </a>
         </li>
@@ -452,12 +452,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -582,7 +582,7 @@ export default function BerberinePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Berberine</h1>
@@ -609,9 +609,9 @@ export default function BerberinePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Berberine is a bioactive isoquinoline alkaloid extracted from several plants including Berberis vulgaris (barberry), Coptis chinensis (goldenseal), and Phellodendron amurense. Used in traditional Chinese medicine for thousands of years (originally for gastrointestinal infections), it has emerged as one of the most-researched natural compounds for metabolic health. Berberine activates AMPK — the master cellular energy switch metformin also targets — producing downstream effects on blood sugar regulation, hepatic gluconeogenesis, lipid metabolism, insulin sensitivity, and gut microbiome composition. The Yin 2008 head-to-head RCT against metformin established berberine&apos;s comparable glycemic effect at the 500 mg three-times-daily dose, and it&apos;s one of the few natural compounds with prescription-comparable RCT evidence behind it. The modern angle of interest: berberine modestly induces endogenous GLP-1 secretion, giving it overlap with the mechanism of injectable GLP-class peptides like{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
             and{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>.
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>.
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -673,18 +673,18 @@ export default function BerberinePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/alpha-lipoic-acid" className="text-sm font-medium text-[#0891b2] hover:underline">Alpha Lipoic Acid</Link>
-          <Link href="/supplements/chromium" className="text-sm font-medium text-[#0891b2] hover:underline">Chromium</Link>
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
-          <Link href="/supplements/green-tea-extract" className="text-sm font-medium text-[#0891b2] hover:underline">Green Tea Extract</Link>
-          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#0891b2] hover:underline">Fish Oil</Link>
+          <Link href="/supplements/alpha-lipoic-acid" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha Lipoic Acid</Link>
+          <Link href="/supplements/chromium" className="text-sm font-medium text-[#3A759F] hover:underline">Chromium</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
+          <Link href="/supplements/green-tea-extract" className="text-sm font-medium text-[#3A759F] hover:underline">Green Tea Extract</Link>
+          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
         </div>
       </div>
 
-      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/compare/berberine-vs-metformin" className="text-sm font-medium text-[#0891b2] hover:underline">Berberine vs Metformin &rarr;</Link>
+          <Link href="/compare/berberine-vs-metformin" className="text-sm font-medium text-[#3A759F] hover:underline">Berberine vs Metformin &rarr;</Link>
         </div>
       </div>
 

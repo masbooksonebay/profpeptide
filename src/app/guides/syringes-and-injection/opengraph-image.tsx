@@ -7,7 +7,7 @@ export const contentType = "image/png";
 
 const NAVY = "#0f172a";
 const PANEL = "#1e293b";
-const TEAL = "#0891b2";
+const TEAL = "#3A759F";
 const TEAL_SOFT = "rgba(8, 145, 178, 0.15)";
 const TEXT = "#f1f5f9";
 const MUTED = "#94a3b8";

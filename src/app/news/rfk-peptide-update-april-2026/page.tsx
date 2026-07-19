@@ -38,7 +38,7 @@ export default function RFKPeptideUpdatePage() {
         ],
       }} />
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to News
         </Link>
 
@@ -77,7 +77,7 @@ export default function RFKPeptideUpdatePage() {
           <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Why the Delay Matters</h2>
           <p>
             The gray market fills the gap. Since the 2023 restrictions, researchers have largely turned to vendors selling peptides labeled &ldquo;for research use only&rdquo; &mdash; the category that Prof. Peptide&rsquo;s{" "}
-            <Link href="/best-peptide-vendors" className="text-[#0891b2] hover:underline">vetted vendor network</Link>{" "}
+            <Link href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">vetted vendor network</Link>{" "}
             operates in. Demand has not decreased; it simply moved outside the compounding pharmacy system.
           </p>
           <p>
@@ -93,9 +93,9 @@ export default function RFKPeptideUpdatePage() {
           </p>
         </div>
 
-        <div className="mt-8 p-4 bg-[#0891b2]/10 border border-[#0891b2]/20 rounded-lg">
+        <div className="mt-8 p-4 bg-[#3A759F]/10 border border-[#3A759F]/20 rounded-lg">
           <p className="text-sm text-gray-600 dark:text-slate-300">
-            Read our original breakdown: <Link href="/news/rfk-peptide-ban-2026" className="text-[#0891b2] hover:underline font-medium">RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List &rarr;</Link>
+            Read our original breakdown: <Link href="/news/rfk-peptide-ban-2026" className="text-[#3A759F] hover:underline font-medium">RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List &rarr;</Link>
           </p>
         </div>
 

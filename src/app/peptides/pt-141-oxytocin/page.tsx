@@ -20,7 +20,7 @@ const faqs = [
     a: (
       <>
         The PT-141 + Oxytocin blend is a 2-component research-grade peptide combination pairing{" "}
-        <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>{" "}
+        <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>{" "}
         (bremelanotide, a melanocortin receptor agonist) with oxytocin (the prosocial bonding neuropeptide). PT-141 acts centrally in the brain to drive sexual desire and arousal through MC3R and MC4R receptor activation. Oxytocin modulates social bonding, trust, intimacy, and has been studied in the context of orgasm intensity and sexual satisfaction. The research thesis is that PT-141 addresses the desire/arousal axis while oxytocin adds the emotional-connection and bonding layer &mdash; a libido-plus-intimacy pairing.
       </>
     ),
@@ -34,7 +34,7 @@ const faqs = [
     a: (
       <>
         Yes &mdash; as Vyleesi (bremelanotide injection, 1.75 mg/0.3 mL autoinjector), approved by the FDA in June 2019 for hypoactive sexual desire disorder (HSDD) in premenopausal women. Research-grade{" "}
-        <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>{" "}
+        <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>{" "}
         is a distinct product from the approved pharmaceutical: it is sold as a lyophilized research peptide for laboratory use only and is not the approved drug. The existence of the FDA-approved product gives the compound one of the strongest regulatory analogs of any research peptide, but does not make research-grade material equivalent to or interchangeable with Vyleesi.
       </>
     ),
@@ -52,7 +52,7 @@ const faqs = [
     a: (
       <>
         For{" "}
-        <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>
+        <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>
         : nausea is the most common side effect (reported in approximately 40% of subjects in RECONNECT trials), followed by flushing, transient blood pressure increase (particularly diastolic), and headache. With repeated use, focal hyperpigmentation at injection sites has been reported. Serious cardiovascular events are rare but the transient BP increase means PT-141 is contraindicated with high-risk cardiovascular disease. For oxytocin (intranasal/sublingual): generally mild &mdash; nasal irritation with intranasal use, occasional headache, mild nausea. Oxytocin at typical research doses does not produce the uterotonic effects seen with IV clinical doses.
       </>
     ),
@@ -62,7 +62,7 @@ const faqs = [
     a: (
       <>
         PT-141 is available from several research peptide vendors as a lyophilized vial. Oxytocin availability varies &mdash; it is more commonly sourced through compounding pharmacies as a nasal spray or troche than as an injectable research peptide. See the{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>{" "}
         page for current vetted vendor options with verified codes.
@@ -192,7 +192,7 @@ const sections = [
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
             Need to calculate your dose? Use the{" "}
-            <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+            <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
           </p>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
@@ -228,7 +228,7 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Melanotan II context (related compound, not recommended for concurrent use).</span>{" "}
-          <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>{" "}
+          <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>{" "}
           is PT-141&apos;s parent compound &mdash; a broader melanocortin agonist also active at MC1R (tanning) and MC5R. PT-141 was developed specifically to reduce the off-target MC1R activity of Melanotan II. Using both simultaneously would double melanocortin receptor loading without independent benefit and would increase side-effect risk. Reference Melanotan II for comparative context, not concurrent use.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -339,7 +339,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all verified vendors &rarr;
           </Link>
         </p>
@@ -396,31 +396,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Clayton AH, Kingsberg SA, Goldstein I. Evaluation and Management of Hypoactive Sexual Desire Disorder. Sex Med. 2018;6(2):59-74. (RECONNECT trial context){" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29523488/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29523488/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29523488/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Simon JA, Kingsberg SA, Portman D, et al. Long-term Safety and Efficacy of Bremelanotide for Hypoactive Sexual Desire Disorder. Obstet Gynecol. 2019;134(5):909-917.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31599847/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31599847/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/31599847/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Magon N, Kalra S. The orgasmic history of oxytocin: Love, lust, and labor. Indian J Endocrinol Metab. 2011;15(Suppl 3):S156-S161. PMID 22145130.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3183515/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3183515/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC3183515/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Shamay-Tsoory SG, Abu-Akel A. The Social Salience Hypothesis of Oxytocin. Biol Psychiatry. 2016;79(3):194-202.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/26321019/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/26321019/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/26321019/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Diamond LE, Earle DC, Heiman JR, et al. An Effect on the Subjective Sexual Response in Premenopausal Women with Sexual Arousal Disorder by Bremelanotide. J Sex Med. 2006;3(4):628-638.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16839319/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16839319/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16839319/
           </a>
         </li>
@@ -436,12 +436,12 @@ const sections = [
           The PT-141 + Oxytocin blend has no controlled trial as a combination. The studies below are the key peer-reviewed sources for each component&apos;s mechanism and human evidence base &mdash; the empirical foundation for the blend&apos;s rationale.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -462,7 +462,7 @@ export default function PT141OxytocinPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -493,7 +493,7 @@ export default function PT141OxytocinPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The PT-141 + Oxytocin blend is a 2-component research peptide combination pairing{" "}
-            <Link href="/peptides/pt-141" className="text-[#0891b2] hover:underline">PT-141</Link>{" "}
+            <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>{" "}
             (bremelanotide, a cyclic heptapeptide melanocortin receptor agonist) with oxytocin (the hypothalamic neuropeptide governing bonding, trust, and intimacy). PT-141 acts centrally via MC3R and MC4R receptors in hypothalamic and limbic regions to generate sexual desire and arousal &mdash; the mechanism that led to FDA approval as Vyleesi for hypoactive sexual desire disorder (HSDD) in premenopausal women. Oxytocin is studied for its role in pair bonding, trust, emotional connection, and orgasm modulation. The combination addresses two distinct but complementary dimensions: the arousal/desire axis (PT-141) and the emotional-bonding/intimacy axis (oxytocin). This represents a new research vertical for the sexual-health space, distinct from recovery, body-composition, and metabolic peptide categories.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -518,7 +518,7 @@ export default function PT141OxytocinPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PT-141 is available from research peptide vendors. Oxytocin is typically sourced through compounding pharmacies. Neither research-grade PT-141 nor compounded oxytocin is equivalent to FDA-approved products. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current vetted vendor options.
@@ -570,8 +570,8 @@ export default function PT141OxytocinPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/pt-141" className="text-sm font-medium text-[#0891b2] hover:underline">PT-141 (Bremelanotide)</Link>
-          <Link href="/peptides/melanotan-ii" className="text-sm font-medium text-[#0891b2] hover:underline">Melanotan II</Link>
+          <Link href="/peptides/pt-141" className="text-sm font-medium text-[#3A759F] hover:underline">PT-141 (Bremelanotide)</Link>
+          <Link href="/peptides/melanotan-ii" className="text-sm font-medium text-[#3A759F] hover:underline">Melanotan II</Link>
         </div>
       </div>
 

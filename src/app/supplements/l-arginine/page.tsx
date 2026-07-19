@@ -19,7 +19,7 @@ const faqs = [
     a: (
       <>
         For raising plasma arginine and nitric oxide, take{" "}
-        <Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}
+        <Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}
         — not L-arginine. The reason is counterintuitive but well-documented: oral L-arginine undergoes extensive first-pass metabolism in the intestine (by arginase) and liver before reaching systemic circulation, so a large proportion of an oral dose never makes it to the bloodstream. L-citrulline is absorbed efficiently, escapes hepatic arginase, and is converted to arginine in the kidneys — producing higher and longer-lasting plasma arginine levels than equimolar L-arginine. Schwedhelm 2008 and Moinard 2008 are the foundational pharmacokinetic studies. Contemporary nitric oxide research has largely shifted to L-citrulline for this reason. L-arginine remains relevant for its growth hormone secretagogue effect, wound healing, and specific clinical contexts — but for pre-workout NO/pump or chronic vascular support, citrulline is the better tool.
       </>
     ),
@@ -49,9 +49,9 @@ const faqs = [
     a: (
       <>
         Yes — and the stack has a long history in GH-support protocols. GHRH-analog peptides like{" "}
-        <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">sermorelin</Link>{" "}
+        <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">sermorelin</Link>{" "}
         and{" "}
-        <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+        <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
         stimulate GH release by acting on the GHRH receptor; arginine works through a complementary mechanism by inhibiting somatostatin (the GH brake). The combination is the classical &quot;double-stimulus&quot; approach used in clinical GH stimulation testing. For at-home protocols targeting endogenous GH support, taking 3–9 g L-arginine pre-bed on empty stomach complements GHRH-class peptide injection timing. Note: this is for users specifically targeting GH/IGF-1 support; not relevant for general health users.
       </>
     ),
@@ -153,10 +153,10 @@ const sections = [
         <ol className="list-decimal list-inside space-y-1">
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">GH support at rest.</span> 3–9 g pre-bed on empty stomach. The somatostatin-inhibition mechanism works best when baseline somatostatin tone is high (rest/sleep). Do not take pre-exercise — it blunts the natural exercise GH spike.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cardiovascular / blood pressure.</span> 3–6 g daily in 2–3 divided doses. Effect on systolic BP is approximately 2–5 mmHg in hypertensive populations.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Erectile dysfunction.</span> 5 g/day historically — but{" "}<Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline at 1.5–3 g</Link>{" "}now produces equivalent or better results at lower doses. Most modern ED-via-NO protocols use citrulline.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Erectile dysfunction.</span> 5 g/day historically — but{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline at 1.5–3 g</Link>{" "}now produces equivalent or better results at lower doses. Most modern ED-via-NO protocols use citrulline.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Male fertility.</span> 5–10 g/day for 1–3 months for sperm parameter support. Most useful as adjunct in oligospermia workups.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Wound healing / surgical immunonutrition.</span> 6–20 g/day, typically in combination with vitamin C, zinc, and glutamine, under clinical supervision. Pre- and post-surgical immunonutrition formulas (Impact, Oxepa) deliver this.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Exercise / pump.</span> Not recommended — use{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate at 6–8 g</Link>{" "}instead. Pre-workout arginine at typical 1–3 g doses produces only modest plasma arginine elevations due to first-pass metabolism.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Exercise / pump.</span> Not recommended — use{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate at 6–8 g</Link>{" "}instead. Pre-workout arginine at typical 1–3 g doses produces only modest plasma arginine elevations due to first-pass metabolism.</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Timeline: GH-elevation effect is acute (1–3 hours post-dose). Blood pressure effect builds over 2–4 weeks. Wound healing and fertility effects require 4–12 weeks. Split high doses across 2–3 servings to reduce GI distress — single large doses approach the absorption ceiling and cause more diarrhea.
@@ -189,7 +189,7 @@ const sections = [
               </tr>
               <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
                 <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Best time of day</td>
-                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">For GH effect: pre-bed on empty stomach (somatostatin tone is high at rest, so arginine&apos;s somatostatin-inhibition has biggest effect). For BP: spread across day. Do NOT take pre-workout for performance — use{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate</Link>{" "}instead.</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">For GH effect: pre-bed on empty stomach (somatostatin tone is high at rest, so arginine&apos;s somatostatin-inhibition has biggest effect). For BP: spread across day. Do NOT take pre-workout for performance — use{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>{" "}instead.</td>
               </tr>
               <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
                 <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Food</td>
@@ -224,11 +224,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-arginine pairs naturally with the GH-secretagogue peptide cluster via the &quot;double-stimulus&quot; mechanism — arginine inhibits somatostatin (the GH brake) while GHRH-class peptides activate the GHRH receptor (the GH accelerator). The combination is the classical approach used in clinical GH stimulation testing.{" "}
-            <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+            <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
             (GHRH 1-29) and{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
             (long-acting GHRH analog) are commonly stacked with pre-bed arginine for endogenous GH support protocols.{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
             (GHRP/ghrelin-mimetic) is often added — the GHRP + GHRH + arginine triple stack produces the most robust GH response of these combinations. Note: this is a goal-specific stack for users targeting GH/IGF-1 support, not general health.
           </p>
         </div>
@@ -236,20 +236,20 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}
+              <Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}
               — for NO/vascular targeting, citrulline is the more efficient tool due to first-pass arginase escape. Most contemporary NO-research protocols use citrulline alone rather than arginine. If using both, citrulline does the NO-elevation work; arginine adds the GH-secretagogue effect.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               L-ornithine — partner amino acid in the urea cycle; ornithine + arginine pre-bed is a traditional GH-support combination with modest evidence for synergistic GH release.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">Glutamine</Link>{" "}
+              <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">Glutamine</Link>{" "}
               — surgical immunonutrition partner. Standard clinical immunonutrition formulas (Impact, Oxepa) combine arginine, glutamine, omega-3s, and antioxidant micronutrients.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">Vitamin C</Link>{" "}
+              <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">Vitamin C</Link>{" "}
               and{" "}
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">zinc</Link>{" "}
               — wound healing co-factors. Arginine drives collagen substrate availability; vitamin C is the collagen-hydroxylation cofactor; zinc supports tissue repair more broadly.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -264,7 +264,7 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Take pre-bed on empty stomach for GH support.</span> Somatostatin tone is high at rest, making this the window where arginine&apos;s mechanism produces the largest GH effect.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid pre-workout dosing for performance.</span> Arginine blunts rather than enhances the natural exercise GH spike. For pre-workout pump/NO, use{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#0891b2] hover:underline">L-citrulline malate</Link>.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid pre-workout dosing for performance.</span> Arginine blunts rather than enhances the natural exercise GH spike. For pre-workout pump/NO, use{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Split divided doses.</span> Single doses above 5–6 g often cause GI distress due to absorption ceiling overflow. 2–3 × 2–3 g across the day is better tolerated than 1 × 6–9 g.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Adequate dietary protein.</span> 0.8–1.2 g/kg dietary protein provides ~5–6 g endogenous arginine from food. Supplementation is additive to this baseline, not corrective for deficient diet.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-op washout.</span> Stop arginine 1–2 weeks before scheduled surgery — modest antihypertensive effect can complicate intraoperative management.</li>
@@ -357,7 +357,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Powder for therapeutic doses</span> — 3–9 g/day is much cheaper and more flexible from powder than from capsules. Pre-bed mixing with water is the standard delivery.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reputable brands</span> — Now Foods, Thorne, Pure Encapsulations, Bulk Supplements, NutraBio. Brand premium is mostly QC and testing transparency, not active ingredient differences.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reasonable serving size disclosure</span> — read the label for grams of L-arginine per scoop. Some products dilute with fillers or use small scoops.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">For NO/pump/ED goals: consider switching to{" "}<Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}instead</span> — much better pharmacokinetics for the NO pathway.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">For NO/pump/ED goals: consider switching to{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}instead</span> — much better pharmacokinetics for the NO pathway.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid &quot;NO booster&quot; proprietary blends</span> — these usually combine small doses of arginine, AAKG, beet powder, and stim ingredients without delivering trial-validated doses of any single component.</li>
           </ul>
         </div>
@@ -393,37 +393,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kanaley JA. Growth hormone, arginine and exercise. Curr Opin Clin Nutr Metab Care. 2008;11(1):50-54.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18090659/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18090659/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18090659/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Schwedhelm E, Maas R, Freese R, et al. Pharmacokinetic and pharmacodynamic properties of oral L-citrulline and L-arginine: impact on nitric oxide metabolism. Br J Clin Pharmacol. 2008;65(1):51-59.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17919250/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17919250/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17919250/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bode-Böger SM, Scalera F, Ignarro LJ. The L-arginine paradox: importance of the L-arginine/asymmetrical dimethylarginine ratio. Pharmacol Ther. 2007;114(3):295-306.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17482266/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17482266/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17482266/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Schulman SP, Becker LC, Kass DA, et al. L-arginine therapy in acute myocardial infarction: the Vascular Interaction with Age in Myocardial Infarction (VINTAGE-MI) randomized clinical trial. JAMA. 2006;295(1):58-64.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16403930/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16403930/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16403930/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cormio L, De Siati M, Lorusso F, et al. Oral L-citrulline supplementation improves erection hardness in men with mild erectile dysfunction. Urology. 2011;77(1):119-122.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21195829/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21195829/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/21195829/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Moinard C, Nicolis I, Neveux N, Darquy S, Bénazeth S, Cynober L. Dose-ranging effects of citrulline administration on plasma amino acids and hormonal patterns in healthy subjects: the Citrudose pharmacokinetic study. Br J Nutr. 2008;99(4):855-862.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17953788/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17953788/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17953788/
           </a>
         </li>
@@ -439,12 +439,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -537,7 +537,7 @@ export default function LArgininePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">L-Arginine</h1>
@@ -563,7 +563,7 @@ export default function LArgininePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-arginine is a semi-essential amino acid found in red meat, poultry, fish, dairy, nuts, and seeds — sufficient in healthy adults from dietary protein but conditionally essential during surgery, burns, sepsis, and major injury. It serves four biological roles relevant to supplementation: it is the direct substrate for nitric oxide synthase (the enzyme that produces NO, the signaling molecule driving vasodilation); it stimulates growth hormone release from the pituitary by inhibiting somatostatin (the GH brake); it is a urea cycle intermediate supporting nitrogen clearance; and it supplies rapidly dividing immune cells and healing tissue with substrate for proliferation and collagen synthesis. The central practical caveat: oral arginine encounters intestinal and hepatic arginase before reaching systemic circulation, so a substantial proportion of an oral dose is degraded on first pass.{" "}
-            <Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}
+            <Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}
             — which escapes first-pass arginase and is converted to arginine in the kidneys — raises plasma arginine more effectively than oral arginine itself (Schwedhelm 2008). Contemporary NO research has largely shifted to L-citrulline for this reason. L-arginine remains evidence-supported for GH stimulation at rest (Kanaley 2008), modest blood pressure reduction, surgical immunonutrition, and wound healing — but not for exercise performance or post-MI cardiovascular outcomes (VINTAGE-MI 2006 documented a mortality signal).
           </p>
           <div>
@@ -585,7 +585,7 @@ export default function LArgininePage() {
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 3–9 g pre-bed on empty stomach for GH support; 3–6 g daily in divided doses for cardiovascular/BP support; 5–10 g daily for fertility; 6–20 g daily under clinical supervision for wound healing. Split single doses above 5 g into 2–3 servings to reduce GI distress. L-arginine HCl is the standard form. Do NOT take pre-workout — it blunts exercise GH and underperforms L-citrulline for NO/pump.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Post-MI mortality signal (VINTAGE-MI — do not initiate within 30 days of heart attack without cardiology supervision); herpes outbreak risk in HSV-susceptible users (lysine competes with arginine); GI distress at higher doses (split dosing helps); additive blood-pressure reduction with antihypertensives; first-pass arginase metabolism ceiling — for NO/vascular goals,{" "}<Link href="/supplements/l-citrulline" className="text-[#0891b2] hover:underline">L-citrulline</Link>{" "}is the more efficient tool.
+            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Post-MI mortality signal (VINTAGE-MI — do not initiate within 30 days of heart attack without cardiology supervision); herpes outbreak risk in HSV-susceptible users (lysine competes with arginine); GI distress at higher doses (split dosing helps); additive blood-pressure reduction with antihypertensives; first-pass arginase metabolism ceiling — for NO/vascular goals,{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}is the more efficient tool.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=l-arginine+powder+pharmaceutical+grade&tag=profpeptide-20" label="L-Arginine" />
         </div>
@@ -627,12 +627,12 @@ export default function LArgininePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/l-citrulline" className="text-sm font-medium text-[#0891b2] hover:underline">L-Citrulline</Link>
-          <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#0891b2] hover:underline">L-Citrulline Malate</Link>
-          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#0891b2] hover:underline">Glutamine</Link>
-          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin C</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#0891b2] hover:underline">Ashwagandha</Link>
+          <Link href="/supplements/l-citrulline" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline</Link>
+          <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline Malate</Link>
+          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">Glutamine</Link>
+          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
         </div>
       </div>
 

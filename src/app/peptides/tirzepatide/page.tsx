@@ -21,7 +21,7 @@ const faqs = [
     a: (
       <>
         For weight loss, yes &mdash; head-to-head in SURMOUNT-5 (NEJM 2025), tirzepatide produced 20.2% average weight loss vs 13.7% with{" "}
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
         over 72 weeks at maximum doses. About 32% of tirzepatide users achieved at least 25% weight loss vs 16% on semaglutide. Tirzepatide also showed greater reductions in waist circumference, blood pressure, A1C, and triglycerides. Semaglutide has the longer safety record and more established cardiovascular benefit (SELECT trial).
       </>
     ),
@@ -55,7 +55,7 @@ const faqs = [
     a: (
       <>
         Brand-name Mounjaro and Zepbound require a prescription from a US-licensed provider. Some telehealth services prescribe and ship; some compounded versions are available through specialty pharmacies. Research-grade tirzepatide is also sold by specialty peptide vendors for laboratory use only &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -110,9 +110,9 @@ const sections = [
     intro: (
       <>
         Tirzepatide is a dual-receptor agonist that activates both GLP-1 and GIP receptors. The GLP-1 arm slows stomach emptying and suppresses appetite (the same pathway used by{" "}
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>
         ); the GIP arm adds enhanced insulin signaling and improved fat metabolism on top. The dual-pathway design is the reason head-to-head trials show tirzepatide producing more weight loss than semaglutide.{" "}
-        <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>{" "}
+        <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link>{" "}
         extends the same architecture with a third receptor (glucagon).
       </>
     ),
@@ -175,7 +175,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -186,7 +186,7 @@ const sections = [
     intro: (
       <>
         Tirzepatide is given as a subcutaneous injection &mdash; under the skin, not into muscle &mdash; once weekly, using a small insulin syringe or a pre-filled pen (Mounjaro/Zepbound). The injection routine, timing, and supporting habits (hydration, eating pattern, alcohol management) matter as much as the dose for tolerability. For the practical mechanics of insulin syringes, units vs mcg conversion, and subcutaneous technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -295,7 +295,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 15 mg vial, each unit drawn delivers 150 mcg of Tirzepatide at 1 mL reconstitution, 75 mcg at 2 mL, and 50 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a 10 mg vial, multiply those mcg-per-unit values by 2/3; for a 5 mg vial, multiply by 1/3. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -312,27 +312,27 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + 1.2–1.6 g/kg protein.</span> Recommended to preserve lean muscle mass during rapid weight loss. Without this, GLP-class drugs can cause significant muscle loss alongside fat loss.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">GH-axis peptides for lean-mass preservation.</span>{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>{" "}
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack</Link>{" "}
           (CJC-1295 + Ipamorelin) or{" "}
-          <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677</Link>{" "}
+          <Link href="/peptides/mk-677" className="text-[#3A759F] hover:underline">MK-677</Link>{" "}
           are sometimes added during caloric restriction to support lean-mass retention. Side-effect profiles do not overlap meaningfully with tirzepatide.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">SGLT2 inhibitors (empagliflozin, dapagliflozin).</span> Used together in some type 2 diabetes protocols for additive cardiovascular and weight benefits.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Tissue-repair peptides during rapid weight loss.</span>{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>{" "}
           (BPC-157 + TB-500) is sometimes used for joint and connective-tissue support during the higher-strain phase of significant weight loss.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: other GLP-class drugs.</span>{" "}
-          <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
-          <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>, and liraglutide should not be combined with tirzepatide. Combining incretin-based drugs significantly increases GI side effects without proportional benefit.
+          <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>,{" "}
+          <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>, and liraglutide should not be combined with tirzepatide. Combining incretin-based drugs significantly increases GI side effects without proportional benefit.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: standalone cagrilintide on top.</span>{" "}
-          <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">Cagrilintide</Link>{" "}
+          <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide</Link>{" "}
           (amylin agonist) was developed for combination with semaglutide as{" "}
-          <Link href="/peptides/cagrisema" className="text-[#0891b2] hover:underline">CagriSema</Link>{" "}
+          <Link href="/peptides/cagrisema" className="text-[#3A759F] hover:underline">CagriSema</Link>{" "}
           &mdash; combination data with tirzepatide is limited and adds another mechanism on top of an already strong dual-agonist effect.
         </li>
       </ol>
@@ -344,7 +344,7 @@ const sections = [
     intro: (
       <>
         Tirzepatide&rsquo;s side-effect profile resembles other GLP-class drugs &mdash; gastrointestinal effects dominate, especially during dose escalation &mdash; with notably lower discontinuation rates than{" "}
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
         in head-to-head SURMOUNT-5 (2.7% vs 5.6%). Most effects are mild to moderate and resolve as the body adapts. Serious adverse event rates in trials were comparable to placebo.
       </>
     ),
@@ -457,7 +457,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -493,7 +493,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2107519"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2107519
           </a>
@@ -504,7 +504,7 @@ const sections = [
             href="https://pubmed.ncbi.nlm.nih.gov/30473097/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://pubmed.ncbi.nlm.nih.gov/30473097/
           </a>
@@ -515,7 +515,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2206038"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2206038
           </a>
@@ -526,7 +526,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2502212"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2502212
           </a>
@@ -537,7 +537,7 @@ const sections = [
             href="https://pubmed.ncbi.nlm.nih.gov/34186022/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://pubmed.ncbi.nlm.nih.gov/34186022/
           </a>
@@ -548,7 +548,7 @@ const sections = [
             href="https://clinicaltrials.gov/study/NCT04255433"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://clinicaltrials.gov/study/NCT04255433
           </a>
@@ -559,7 +559,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2404881"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2404881
           </a>
@@ -570,7 +570,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2410027"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2410027
           </a>
@@ -581,7 +581,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2401943"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2401943
           </a>
@@ -598,12 +598,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -624,7 +624,7 @@ export default function TirzepatidePage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -654,11 +654,11 @@ export default function TirzepatidePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Tirzepatide (LY3298176) is an FDA-approved peptide that activates two metabolic receptors at once &mdash; GLP-1 and GIP &mdash; making it the first dual incretin agonist on market. It is the active ingredient in two branded medications: Mounjaro (type 2 diabetes, approved May 2022) and Zepbound (chronic weight management, approved November 2023; obstructive sleep apnea expansion December 2024). Unlike older GLP-1 drugs like{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
             that target one receptor, tirzepatide&rsquo;s dual mechanism produced significantly more weight loss in head-to-head SURMOUNT-5 (20.2% vs 13.7% over 72 weeks).{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>{" "}
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link>{" "}
             extends the same architecture with a third receptor (glucagon) and is in Phase 3 trials. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -679,7 +679,7 @@ export default function TirzepatidePage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Brand-name Mounjaro and Zepbound require a prescription. Research-grade tirzepatide is sold by specialty peptide vendors for laboratory use only. PP maintains a vetted list of vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -732,18 +732,18 @@ export default function TirzepatidePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/retatrutide" className="text-sm font-medium text-[#0891b2] hover:underline">Retatrutide</Link>
-        <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide</Link>
-        <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#0891b2] hover:underline">Cagrilintide</Link>
-        <Link href="/peptides/cagrisema" className="text-sm font-medium text-[#0891b2] hover:underline">CagriSema</Link>
+        <Link href="/peptides/retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide</Link>
+        <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide</Link>
+        <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#3A759F] hover:underline">Cagrilintide</Link>
+        <Link href="/peptides/cagrisema" className="text-sm font-medium text-[#3A759F] hover:underline">CagriSema</Link>
         </div>
       </div>
-      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/compare/retatrutide-vs-tirzepatide" className="text-sm font-medium text-[#0891b2] hover:underline">Retatrutide vs Tirzepatide &rarr;</Link>
-        <Link href="/compare/semaglutide-vs-tirzepatide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide vs Tirzepatide &rarr;</Link>
-        <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
+        <Link href="/compare/retatrutide-vs-tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Tirzepatide &rarr;</Link>
+        <Link href="/compare/semaglutide-vs-tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide &rarr;</Link>
+        <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
         </div>
       </div>
 

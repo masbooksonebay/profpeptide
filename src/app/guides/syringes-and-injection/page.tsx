@@ -150,7 +150,7 @@ const sections = [
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Always know your reconstitution before calculating a dose.</span> The same number of units delivers a different dose depending on how much water is in the vial. Write the reconstitution volume on the vial label as soon as you mix it, and double-check before every draw. The Prof. Peptide{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator</Link>{" "}
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</Link>{" "}
           handles this conversion automatically.
         </p>
       </div>
@@ -315,26 +315,26 @@ const sections = [
         <ol className="list-decimal list-inside space-y-1">
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold">Reconstitution & dose math.</span>{" "}
-            <Link href="/calculator" className="text-[#0891b2] hover:underline">Prof. Peptide dosage calculator</Link>{" "}
+            <Link href="/calculator" className="text-[#3A759F] hover:underline">Prof. Peptide dosage calculator</Link>{" "}
             &mdash; enter vial mg, BAC water volume, and target dose; get units to draw on a U-100 syringe.
           </li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold">Peptide research fundamentals.</span>{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Peptide research basics</Link>{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Peptide research basics</Link>{" "}
             &mdash; vial handling, bacteriostatic water, storage, vendor selection, and quality verification.
           </li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold">Common peptide profiles.</span> Most-referenced profiles for protocol context:{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>,{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>,{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>,{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>,{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>,{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>.
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link>,{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>,{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>,{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>,{" "}
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>,{" "}
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>.
           </li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold">Vendor and pricing references.</span>{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">Verified discount codes</Link>{" "}
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">Verified discount codes</Link>{" "}
             from vetted research peptide vendors.
           </li>
         </ol>
@@ -390,7 +390,7 @@ export default function SyringesAndInjectionPage() {
         }}
       />
       <div className="section max-w-3xl">
-        <Link href="/guides" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/guides" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           Back to Guides
         </Link>
 

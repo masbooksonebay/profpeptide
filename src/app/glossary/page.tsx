@@ -171,7 +171,7 @@ export default function GlossaryPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.letter}>
-            <h2 className="text-lg font-bold text-[#0891b2] mb-3 pb-2 border-b border-gray-100 dark:border-slate-800">
+            <h2 className="text-lg font-bold text-[#3A759F] mb-3 pb-2 border-b border-gray-100 dark:border-slate-800">
               {s.letter}
             </h2>
             <dl className="space-y-3">
@@ -193,11 +193,11 @@ export default function GlossaryPage() {
       <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">See Also</h2>
         <div className="flex flex-wrap gap-x-6 gap-y-2">
-          <Link href="/peptides" className="text-sm text-[#0891b2] hover:underline">Peptide Library</Link>
-          <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline">Supplement Library</Link>
-          <Link href="/calculator" className="text-sm text-[#0891b2] hover:underline">Dosage Calculator</Link>
-          <Link href="/faq" className="text-sm text-[#0891b2] hover:underline">FAQ</Link>
-          <Link href="/compare" className="text-sm text-[#0891b2] hover:underline">Comparisons</Link>
+          <Link href="/peptides" className="text-sm text-[#3A759F] hover:underline">Peptide Library</Link>
+          <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline">Supplement Library</Link>
+          <Link href="/calculator" className="text-sm text-[#3A759F] hover:underline">Dosage Calculator</Link>
+          <Link href="/faq" className="text-sm text-[#3A759F] hover:underline">FAQ</Link>
+          <Link href="/compare" className="text-sm text-[#3A759F] hover:underline">Comparisons</Link>
         </div>
       </div>
 

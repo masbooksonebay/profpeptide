@@ -39,7 +39,7 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
       }} />
 
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to News
         </Link>
 
@@ -51,9 +51,9 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
         <div className="space-y-6 text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           <p>
             On June 11, 2026, researchers at UC San Diego published an analysis in{" "}
-            <a href="https://www.nature.com/articles/s41467-026-72861-3" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline"><em>Nature Communications</em></a>{" "}
+            <a href="https://www.nature.com/articles/s41467-026-72861-3" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline"><em>Nature Communications</em></a>{" "}
             reporting that{" "}
-            <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+            <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
             slowed biological aging across multiple &ldquo;epigenetic clocks&rdquo; in a randomized, double-blind, placebo-controlled trial. It is among the first randomized-trial evidence that a GLP-1 drug can shift aging-related biomarkers &mdash; but the framing matters a great deal, so we&rsquo;ll be careful about what the data do and do not show.
           </p>
 
@@ -104,12 +104,12 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
           </p>
           <p>
             It also fits a broader pattern of researchers probing GLP-1 effects beyond weight and glucose &mdash; see our recap of the GLP-1 and peptide readouts at{" "}
-            <Link href="/news/endo-2026-glp1-recap-june-2026" className="text-[#0891b2] hover:underline">ENDO 2026</Link>. The appropriate takeaway is narrow and specific: in a small, randomized, population-specific analysis, semaglutide slowed several aging biomarkers. Confirmation will require larger, longer trials in broader populations with clinical endpoints.
+            <Link href="/news/endo-2026-glp1-recap-june-2026" className="text-[#3A759F] hover:underline">ENDO 2026</Link>. The appropriate takeaway is narrow and specific: in a small, randomized, population-specific analysis, semaglutide slowed several aging biomarkers. Confirmation will require larger, longer trials in broader populations with clinical endpoints.
           </p>
           <p>
             The open-access version of the analysis is available via{" "}
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12338914/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">PubMed Central</a>, and UC San Diego&rsquo;s plain-language summary is{" "}
-            <a href="https://today.ucsd.edu/story/study-popular-glp-1-drug-may-slow-down-biological-aging" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">here</a>.
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12338914/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">PubMed Central</a>, and UC San Diego&rsquo;s plain-language summary is{" "}
+            <a href="https://today.ucsd.edu/story/study-popular-glp-1-drug-may-slow-down-biological-aging" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">here</a>.
           </p>
         </div>
 

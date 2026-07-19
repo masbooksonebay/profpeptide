@@ -211,7 +211,7 @@ export function CategoryIcon({ name, className }: { name: string; className?: st
   const key = categoryMap[name];
   const icon = key ? icons[key] : null;
   if (!icon) return null;
-  return <span className={`text-[#0891b2] ${className ?? ""}`}>{icon}</span>;
+  return <span className={`text-[#3A759F] ${className ?? ""}`}>{icon}</span>;
 }
 
 export function Icon({ name, className }: { name: string; className?: string }) {

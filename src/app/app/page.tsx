@@ -80,8 +80,8 @@ export default function AppPage() {
           see estimated levels, run protocols and stacks, calculate reconstitution, and ask an AI
           research assistant. For informational and educational use only.
         </p>
-        <div className="bg-[#0891b2]/10 border border-[#0891b2]/20 rounded-2xl px-6 py-8 max-w-sm mx-auto">
-          <div className="w-16 h-16 bg-[#0891b2] rounded-2xl mx-auto mb-4 flex items-center justify-center">
+        <div className="bg-[#3A759F]/10 border border-[#3A759F]/20 rounded-2xl px-6 py-8 max-w-sm mx-auto">
+          <div className="w-16 h-16 bg-[#3A759F] rounded-2xl mx-auto mb-4 flex items-center justify-center">
             <span className="text-white text-2xl font-semibold">Pp</span>
           </div>
           <p className="font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Prof. Peptide</p>
@@ -122,7 +122,7 @@ export default function AppPage() {
                 className="w-full h-auto rounded-2xl border border-gray-100 dark:border-slate-700 shadow-sm"
               />
               <figcaption className="mt-3 flex items-start gap-2 text-xs text-gray-500 dark:text-slate-400 leading-relaxed">
-                <span className="text-[#0891b2] flex-shrink-0 mt-0.5"><Icon name={p.icon} /></span>
+                <span className="text-[#3A759F] flex-shrink-0 mt-0.5"><Icon name={p.icon} /></span>
                 <span>{p.caption}</span>
               </figcaption>
             </figure>
@@ -136,7 +136,7 @@ export default function AppPage() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
           {also.map((f) => (
             <div key={f.title} className="flex items-start gap-3 p-4 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-100 dark:border-slate-700">
-              <span className="text-[#0891b2] flex-shrink-0 mt-0.5"><Icon name={f.icon} /></span>
+              <span className="text-[#3A759F] flex-shrink-0 mt-0.5"><Icon name={f.icon} /></span>
               <div>
                 <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-0.5">{f.title}</p>
                 <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">{f.desc}</p>

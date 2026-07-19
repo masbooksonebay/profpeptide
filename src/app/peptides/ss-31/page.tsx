@@ -163,7 +163,7 @@ const sections = [
         {/* TODO: add a VendorHighlightBlock here once SS-31 vendors are wired into the vendor data. Do NOT add a fabricated carrier/note or invent a code in the meantime — use the inline /coupons link below until vendors are added. */}
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prof. Peptide maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             Verified Discount Codes &rarr;
           </Link>{" "}
           for current options.
@@ -196,25 +196,25 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Pharaoh G, et al. Elamipretide improves ADP sensitivity in aged mitochondria via the adenine nucleotide translocator. GeroScience. 2023;45:3529-3548. PMID 37462785.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/37462785/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/37462785/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/37462785/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Campbell MD, et al. Intermittent elamipretide preserves exercise tolerance in aged female mice. GeroScience. 2023;45:2245-2255. PMID 36840897.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/36840897/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/36840897/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/36840897/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Du X, et al. SS-31 in mitigating mitochondrial dysfunction (review). Mitochondrion. 2024;75:101846. PMID 38237649.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/38237649/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/38237649/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/38237649/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Zhang YM, et al. Elamipretide improves learning and memory impairment induced by chronic sleep deprivation in mice. Brain Behav. 2024;14:e3508. PMID 38688894.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/38688894/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/38688894/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/38688894/
           </a>
         </li>
@@ -233,12 +233,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper. These are preclinical; the FDA approval for Barth syndrome rests on the TAZPOWER trial program, cited in References.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -259,7 +259,7 @@ export default function SS31Page() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -291,7 +291,7 @@ export default function SS31Page() {
         </p>
       </div>
 
-      <div className="mb-8 p-4 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Important &mdash; approved drug vs. research material:</span> The drug elamipretide (brand Forzinity, elamipretide HCl) received FDA accelerated approval on September 19, 2025 for Barth syndrome (adult and pediatric patients weighing at least 30 kg), administered once-daily subcutaneous, prescription-only &mdash; the first FDA-approved mitochondria-targeted therapeutic; continued approval may be contingent on confirmatory trials. The &ldquo;SS-31&rdquo; sold by research vendors is unapproved, research-grade material &mdash; NOT the approved drug Forzinity &mdash; and is for Research Use Only, not for human use.
         </p>
@@ -302,10 +302,10 @@ export default function SS31Page() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             SS-31 (elamipretide) is a synthetic aromatic-cationic mitochondria-targeting tetrapeptide &mdash; a Szeto&ndash;Schiller peptide &mdash; discovered by Hazel Szeto and Peter Schiller at Weill Cornell and developed by Stealth BioTherapeutics. Its defining feature is selective accumulation in the inner mitochondrial membrane through affinity for the phospholipid cardiolipin; by binding and stabilizing cardiolipin it supports cristae structure and respiratory-chain supercomplexes, lowers mitochondrial reactive oxygen species, preserves membrane potential, and improves ATP production. As the drug elamipretide (brand Forzinity), it received FDA accelerated approval on September 19, 2025 for Barth syndrome &mdash; the first FDA-approved mitochondria-targeted therapeutic. Importantly, the &ldquo;SS-31&rdquo; sold by research vendors is unapproved, research-grade material &mdash; not the approved drug Forzinity &mdash; and is for research use only. It is studied alongside other bioenergetic and longevity compounds such as{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>{" "}
             and{" "}
-            <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-c</Link>. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -323,7 +323,7 @@ export default function SS31Page() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Forzinity is a prescription medication. Research-grade SS-31 is sold by specialty peptide vendors for laboratory use only and is not the approved drug. PP maintains a vetted list of vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -376,9 +376,9 @@ export default function SS31Page() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#0891b2] hover:underline">NAD+</Link>
-        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
-        <Link href="/peptides/mots-c" className="text-sm font-medium text-[#0891b2] hover:underline">MOTS-c</Link>
+        <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
+        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
+        <Link href="/peptides/mots-c" className="text-sm font-medium text-[#3A759F] hover:underline">MOTS-c</Link>
         </div>
       </div>
 

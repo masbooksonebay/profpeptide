@@ -19,7 +19,7 @@ const faqs = [
     a: (
       <>
         The chelated 1:1 molar complex behaves very differently from the two compounds taken separately. Zinc-carnosine physically adheres to damaged gastrointestinal mucosa — sticking to ulcer sites and inflamed tissue — and slowly releases zinc and carnosine locally rather than being rapidly absorbed into systemic circulation. The result is concentrated, targeted action at sites of mucosal injury, which is why the chelated form outperforms the separates for gut-healing endpoints. For systemic zinc supplementation (immune function, taste, hair/skin), regular{" "}
-        <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc</Link>{" "}
+        <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">zinc</Link>{" "}
         forms are equivalent and cheaper.
       </>
     ),
@@ -45,8 +45,8 @@ const faqs = [
     a: (
       <>
         Yes, and this matters. A standard 75 mg zinc-carnosine capsule contains ~17 mg elemental zinc. Two doses daily (150 mg total) = ~34 mg elemental zinc/day — close to the 40 mg/day tolerable upper limit (UL) for adults. Add any other zinc sources (multivitamin, separate{" "}
-        <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc</Link>,{" "}
-        <Link href="/supplements/zma" className="text-[#0891b2] hover:underline">ZMA</Link>, dietary intake from oysters/red meat) and you can easily exceed the UL. Long-term zinc above UL impairs copper absorption and can cause copper deficiency. If you&apos;re using zinc-carnosine for &gt;3 months, audit total zinc intake and consider adding 1–2 mg copper to balance.
+        <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">zinc</Link>,{" "}
+        <Link href="/supplements/zma" className="text-[#3A759F] hover:underline">ZMA</Link>, dietary intake from oysters/red meat) and you can easily exceed the UL. Long-term zinc above UL impairs copper absorption and can cause copper deficiency. If you&apos;re using zinc-carnosine for &gt;3 months, audit total zinc intake and consider adding 1–2 mg copper to balance.
       </>
     ),
   },
@@ -55,11 +55,11 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural for gut-healing protocols.{" "}
-        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+        <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
         is a synthetic pentadecapeptide derived from human gastric juice; it&apos;s extensively studied for tissue repair, vascular regrowth, and gut barrier protection (oral or subcutaneous routes). Zinc-carnosine works at the mucosal surface via direct adhesion and prostaglandin stimulation; BPC-157 works systemically via angiogenesis and tissue-repair signaling. Different mechanisms, both targeting the same endpoint. Common gut-healing protocol: zinc-carnosine 75 mg BID with meals + oral BPC-157 (250–500 mcg BID, with or before meals). Often paired with{" "}
-        <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">glutamine</Link>{" "}
+        <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">glutamine</Link>{" "}
         and{" "}
-        <Link href="/supplements/probiotics" className="text-[#0891b2] hover:underline">probiotics</Link>{" "}
+        <Link href="/supplements/probiotics" className="text-[#3A759F] hover:underline">probiotics</Link>{" "}
         for full-spectrum gut work.
       </>
     ),
@@ -216,12 +216,12 @@ const sections = [
     intro: (
       <>
         Zinc-carnosine is the foundational mucosal-protection layer of most gut-healing protocols. It stacks naturally with gut-healing peptides ({" "}
-        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+        <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
         and{" "}
-        <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>), with other gut-repair supplements ({" "}
-        <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">glutamine</Link>,{" "}
-        <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">collagen</Link>,{" "}
-        <Link href="/supplements/probiotics" className="text-[#0891b2] hover:underline">probiotics</Link>), and with lifestyle interventions that reduce gut stress (NSAID minimization, alcohol moderation, anti-inflammatory diet).
+        <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>), with other gut-repair supplements ({" "}
+        <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">glutamine</Link>,{" "}
+        <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">collagen</Link>,{" "}
+        <Link href="/supplements/probiotics" className="text-[#3A759F] hover:underline">probiotics</Link>), and with lifestyle interventions that reduce gut stress (NSAID minimization, alcohol moderation, anti-inflammatory diet).
       </>
     ),
     node: (
@@ -230,9 +230,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The natural peptide bridges for zinc-carnosine are{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             and{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             — both gut-healing peptides with mechanisms that complement zinc-carnosine&apos;s mucosal adhesion + prostaglandin support. BPC-157 is a synthetic pentadecapeptide derived from human gastric juice, extensively studied for tissue repair, vascular regrowth, and gut barrier integrity (oral or subcutaneous routes). KPV is a small anti-inflammatory tripeptide derived from alpha-MSH, used for inflammatory bowel conditions and gut mucosal inflammation. Common gut-healing stack: zinc-carnosine 75 mg BID with meals + oral BPC-157 (250–500 mcg BID) + KPV (oral or rectal route depending on inflammation location). The three operate on different layers — mucosal surface, systemic tissue repair, and inflammation modulation respectively. Introduce one variable at a time so you can tell what&apos;s actually doing what.
           </p>
         </div>
@@ -240,19 +240,19 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">L-Glutamine</Link>{" "}
+              <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">L-Glutamine</Link>{" "}
               — primary fuel for enterocytes (intestinal cells). Supports tight-junction integrity from the inside while zinc-carnosine supports the mucosal layer from the surface. Classic gut-healing pairing — 5–10 g/day glutamine alongside the standard zinc-carnosine protocol.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/probiotics" className="text-[#0891b2] hover:underline">Probiotics</Link>{" "}
+              <Link href="/supplements/probiotics" className="text-[#3A759F] hover:underline">Probiotics</Link>{" "}
               — microbiome restoration. Particularly relevant post-antibiotic, post-H. pylori eradication, or after long NSAID courses where the bacterial ecology takes hits alongside the mucosal damage.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen Peptides</Link>{" "}
+              <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen Peptides</Link>{" "}
               — provides glycine, proline, hydroxyproline — amino acids used in mucosal tissue rebuilding. Pairs naturally with zinc-carnosine for full-stack gut wall support.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc (solo)</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc (solo)</Link>{" "}
               — usually NOT a stacking partner. The zinc in zinc-carnosine already provides ~17 mg elemental zinc per 75 mg dose. Adding more zinc risks exceeding the 40 mg/day UL.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -294,7 +294,7 @@ const sections = [
         <div>
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Watch-list (cumulative zinc-related)</h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Total elemental zinc above 40 mg/day UL on multi-month use — audit all zinc sources (multivitamin, <Link href="/supplements/zma" className="text-[#0891b2] hover:underline">ZMA</Link>, standalone <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc</Link>, dietary).</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Total elemental zinc above 40 mg/day UL on multi-month use — audit all zinc sources (multivitamin, <Link href="/supplements/zma" className="text-[#3A759F] hover:underline">ZMA</Link>, standalone <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">zinc</Link>, dietary).</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Copper deficiency from prolonged high-zinc intake — impaired copper absorption is the mechanism; mild copper supplementation (1–2 mg/day) offsets it.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Suppressed iron absorption with very high zinc intake — relevant for users with low ferritin or iron deficiency.</li>
           </ol>
@@ -307,7 +307,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Bisphosphonates — zinc may reduce absorption. Separate dosing by at least 2 hours.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Iron supplements — competitive absorption with zinc. Separate dosing by 2+ hours.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Proton pump inhibitors (omeprazole, pantoprazole, etc.) — no negative interaction; PPIs and zinc-carnosine are often used together in clinical Japanese protocols for ulcer disease.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standalone <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">zinc</Link>, <Link href="/supplements/zma" className="text-[#0891b2] hover:underline">ZMA</Link>, multivitamins with zinc — additive total zinc intake. Audit total daily zinc; reduce other sources if zinc-carnosine pushes you near or above the 40 mg/day UL.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Standalone <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">zinc</Link>, <Link href="/supplements/zma" className="text-[#3A759F] hover:underline">ZMA</Link>, multivitamins with zinc — additive total zinc intake. Audit total daily zinc; reduce other sources if zinc-carnosine pushes you near or above the 40 mg/day UL.</li>
           </ol>
         </div>
       </div>
@@ -392,31 +392,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Mahmood A, FitzGerald AJ, Marchbank T, Ntatsaki E, Murray D, Ghosh S, Playford RJ. Zinc carnosine, a health food supplement that stabilises small bowel integrity and stimulates gut repair processes. Gut. 2007;56(2):168-175.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16777920/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16777920/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16777920/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Davison G, Marchbank T, March DS, Thatcher R, Playford RJ. Zinc carnosine works with bovine colostrum in truncating heavy exercise-induced increase in gut permeability in healthy volunteers. Am J Clin Nutr. 2016;104(2):526-536.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27357098/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27357098/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27357098/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hewlings S, Kalman D. A review of zinc-L-carnosine and its positive effects on oral mucositis, taste disorders, and gastrointestinal disorders. Nutrients. 2020;12(3):665.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/32121367/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/32121367/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/32121367/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Matsukura T, Tanaka H. Applicability of zinc complex of L-carnosine for medical use. Biochemistry (Moscow). 2000;65(7):817-823.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/10951094/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/10951094/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/10951094/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Watanabe T, Higuchi K, Tanigawa T, Tominaga K, Fujiwara Y, Arakawa T. Mechanisms of peptic ulcer recurrence: role of inflammation and rebamipide/polaprezinc. Inflammopharmacology. 2007;15(5):214-219.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17943249/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17943249/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17943249/
           </a>
         </li>
@@ -432,12 +432,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -562,7 +562,7 @@ export default function ZincCarnosinePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Zinc-Carnosine</h1>
@@ -589,8 +589,8 @@ export default function ZincCarnosinePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Zinc-carnosine (polaprezinc) is a chelated 1:1 molar complex of zinc and the dipeptide L-carnosine. The chelation is what matters: the complex physically adheres to damaged gastrointestinal mucosa rather than being rapidly absorbed, concentrating its protective and healing actions at sites of injury along the GI tract. The compound has been used as a prescription gastric ulcer drug in Japan since 1994 (brand name Promac) and has 30+ years of clinical use data behind it. Western functional medicine adopted it for leaky-gut and NSAID-protection protocols starting in the 2000s, with mechanism-grade RCT support from Mahmood 2007 (Gut journal) and athlete-application evidence from Davison 2016 (Am J Clin Nutr). It is one of the few gut-healing supplements with prescription-grade evidence behind it — and one of the most natural complementary pairings for the gut-healing peptide cluster (
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>,{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>).
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>,{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>).
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -652,11 +652,11 @@ export default function ZincCarnosinePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Glutamine</Link>
-          <Link href="/supplements/probiotics" className="text-sm font-medium text-[#0891b2] hover:underline">Probiotics</Link>
-          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#0891b2] hover:underline">Collagen Peptides</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#0891b2] hover:underline">Curcumin</Link>
+          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Glutamine</Link>
+          <Link href="/supplements/probiotics" className="text-sm font-medium text-[#3A759F] hover:underline">Probiotics</Link>
+          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#3A759F] hover:underline">Curcumin</Link>
         </div>
       </div>
 

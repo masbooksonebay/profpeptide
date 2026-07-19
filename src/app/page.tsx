@@ -53,6 +53,13 @@ const features = [
     cta: "Open calculator",
   },
   {
+    icon: "time-outline",
+    title: "Protocol Tracking",
+    desc: "Log your doses and reconstituted vials on the site — with full protocol tracking in the Prof. Peptide iOS app.",
+    href: "/log",
+    cta: "Open tracker",
+  },
+  {
     icon: "pricetag-outline",
     title: "Coupon Codes",
     desc: "Verified discount codes for research-grade suppliers. Updated regularly.",
@@ -131,12 +138,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gray-50 dark:bg-[#0b1120] border-b border-gray-100 dark:border-slate-800">
+      <section className="bg-[#F4F6F8] dark:bg-[#0b1120] border-b border-gray-100 dark:border-slate-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {trust.map((t) => (
               <div key={t.label}>
-                <p className="text-2xl font-bold text-[#0891b2]">{t.value}</p>
+                <p className="text-2xl font-bold text-[#3A759F]">{t.value}</p>
                 <p className="text-sm text-gray-500 dark:text-slate-400 mt-0.5">{t.label}</p>
               </div>
             ))}
@@ -144,8 +151,8 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="bg-[#0891b2]/10 border-b border-[#0891b2]/20 py-3 px-4 text-center">
-        <p className="text-xs text-[#0891b2] max-w-2xl mx-auto">
+      <div className="bg-[#3A759F]/10 border-b border-[#3A759F]/20 py-3 px-4 text-center">
+        <p className="text-xs text-[#3A759F] max-w-2xl mx-auto">
           Prof. Peptide provides peptide research for educational purposes only. Nothing on this site constitutes medical advice or endorses human use of research peptides.
         </p>
       </div>
@@ -154,20 +161,20 @@ export default function Home() {
         <div className="mb-12">
           <div className="flex items-end justify-between mb-4">
             <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100">Latest News</h2>
-            <Link href="/news" className="text-xs font-medium text-[#0891b2] hover:underline">View all news &rarr;</Link>
+            <Link href="/news" className="text-xs font-medium text-[#3A759F] hover:underline">View all news &rarr;</Link>
           </div>
           <Link
             href={`/news/${latest.slug}`}
             className="card group block"
           >
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">{latest.date}</p>
-            <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#0891b2] transition-colors mb-2">
+            <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors mb-2">
               {latest.title}
             </h3>
             <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
               {latest.excerpt}
             </p>
-            <span className="text-xs font-medium text-[#0891b2] mt-3 inline-block">Read more &rarr;</span>
+            <span className="text-xs font-medium text-[#3A759F] mt-3 inline-block">Read more &rarr;</span>
           </Link>
         </div>
         <h2 className="text-2xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2 text-center">Everything a researcher needs</h2>
@@ -177,16 +184,16 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((f) => (
             <Link href={f.href} key={f.href} className="card group">
-              <span className="text-[#0891b2] mb-3 block"><Icon name={f.icon} /></span>
-              <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1.5 group-hover:text-[#0891b2] transition-colors">{f.title}</h3>
+              <span className="text-[#3A759F] mb-3 block"><Icon name={f.icon} /></span>
+              <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1.5 group-hover:text-[#3A759F] transition-colors">{f.title}</h3>
               <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-4">{f.desc}</p>
-              <span className="text-xs font-medium text-[#0891b2] group-hover:underline">{f.cta} &rarr;</span>
+              <span className="text-xs font-medium text-[#3A759F] group-hover:underline">{f.cta} &rarr;</span>
             </Link>
           ))}
         </div>
       </section>
 
-      <section className="bg-gray-50 dark:bg-[#0b1120] border-t border-gray-100 dark:border-slate-800">
+      <section className="bg-[#F4F6F8] dark:bg-[#0b1120] border-t border-gray-100 dark:border-slate-800">
         <div className="section">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -203,7 +210,7 @@ export default function Home() {
                   "Discount codes are manually verified before publishing",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5">
-                    <span className="text-[#0891b2] mt-0.5 flex-shrink-0">&#10003;</span>
+                    <span className="text-[#3A759F] mt-0.5 flex-shrink-0">&#10003;</span>
                     {item}
                   </li>
                 ))}

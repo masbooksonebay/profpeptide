@@ -20,9 +20,9 @@ const faqs = [
     a: (
       <>
         A community-derived research-peptide combination pairing{" "}
-        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>{" "}
         &mdash; a dual GIP and GLP-1 receptor agonist &mdash; with{" "}
-        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+        <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
         (Body Protection Compound). BPC-157 is used to blunt the gastrointestinal side effects that commonly accompany GLP-1/GIP agonist therapy (nausea, vomiting, gastroparesis) and to mitigate lean-mass and connective-tissue loss that can occur with aggressive caloric restriction during a tirzepatide protocol. No controlled trial has evaluated this combination.
       </>
     ),
@@ -31,11 +31,11 @@ const faqs = [
     q: "How is tirzepatide different from semaglutide?",
     a: (
       <>
-        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>{" "}
         is a dual GIP (glucose-dependent insulinotropic polypeptide) and GLP-1 receptor agonist, whereas{" "}
-        <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">semaglutide</Link>{" "}
+        <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
         targets GLP-1 only. The additional GIP receptor agonism enhances insulin secretion, improves insulin sensitivity, and may contribute to greater adipose tissue reduction. SURMOUNT-1 data showed tirzepatide producing up to 22.5% mean body weight loss at the 15 mg dose &mdash; greater than semaglutide&apos;s STEP trial figures at comparable doses. GI side effect profiles are broadly similar between the two. For the BPC-157 variant using semaglutide as the base compound, see the{" "}
-        <Link href="/peptides/semaglutide-bpc-157" className="text-[#0891b2] hover:underline">Semaglutide + BPC-157</Link>{" "}
+        <Link href="/peptides/semaglutide-bpc-157" className="text-[#3A759F] hover:underline">Semaglutide + BPC-157</Link>{" "}
         page.
       </>
     ),
@@ -66,7 +66,7 @@ const faqs = [
     a: (
       <>
         The{" "}
-        <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+        <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>{" "}
         (BPC-157 + TB-500) is a recovery-focused blend for tendon, ligament, and soft-tissue repair. The Tirzepatide + BPC-157 combination is a metabolic/weight-management stack where BPC-157 serves a protective support role rather than a primary repair role. Both share BPC-157 as a component. Researchers using tirzepatide primarily for metabolic goals sometimes layer in Wolverine Stack components if they are also managing an active injury, though there is no published data on the three-way combination.
       </>
     ),
@@ -206,7 +206,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -238,11 +238,11 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Cagrilintide (+ tirzepatide = &ldquo;CagriSema&rdquo; analog / &ldquo;CagriZep&rdquo;).</span> Cagrilintide is a long-acting amylin analog that reduces appetite through a complementary satiety pathway (area postrema / nucleus tractus solitarius), independent of GLP-1/GIP. Early data suggest additive weight loss when combined with semaglutide; the tirzepatide + cagrilintide combination is an active research area. See{" "}
-          <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">Cagrilintide &rarr;</Link>.
+          <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide &rarr;</Link>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">TB-500 (for concurrent musculoskeletal injury).</span> Researchers who are managing an active tendon, ligament, or soft-tissue injury alongside a tirzepatide protocol sometimes add TB-500 to BPC-157&apos;s daily dose to access the full{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>{" "}
+          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>{" "}
           recovery protocol in parallel with the metabolic work.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -372,7 +372,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all verified vendors &rarr;
           </Link>
         </p>
@@ -429,31 +429,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Jastreboff AM, Aronne LJ, Ahmad NN, et al. Tirzepatide Once Weekly for the Treatment of Obesity. N Engl J Med. 2022;387(3):205-216.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/35658024/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/35658024/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/35658024/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Frias JP, Davies MJ, Rosenstock J, et al. Tirzepatide versus Semaglutide Once Weekly in Patients with Type 2 Diabetes. N Engl J Med. 2021;385(6):503-515.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/34170647/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/34170647/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/34170647/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Sikiric P, Hahm KB, Blagaic AB, et al. Stable Gastric Pentadecapeptide BPC 157 and Wound Healing. Front Pharmacol. 2021.{" "}
-          <a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.627533/full
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Vasireddi N, Hahamyan H, Salata MJ, et al. Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review. HSS J. 2025.{" "}
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nauck MA, D&apos;Alessio DA. Tirzepatide, a dual GIP/GLP-1 receptor co-agonist for the treatment of type 2 diabetes with unmatched effectiveness regrading glycaemic control and body weight reduction. Cardiovasc Diabetol. 2022;21(1):169.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/36050763/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/36050763/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/36050763/
           </a>
         </li>
@@ -469,12 +469,12 @@ const sections = [
           No controlled trial has tested the Tirzepatide + BPC-157 combination. The studies below are the key peer-reviewed sources for each component&apos;s mechanism &mdash; the evidence base for the blend&apos;s mechanistic rationale.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -495,7 +495,7 @@ export default function TirzepatideBpc157Page() {
       <div className="section max-w-3xl">
         <Link
           href="/peptides"
-          className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+          className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
         >
           Back to Peptide Library
         </Link>
@@ -526,11 +526,11 @@ export default function TirzepatideBpc157Page() {
           <div className="space-y-4">
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Tirzepatide + BPC-157 is a community-derived research-peptide blend pairing{" "}
-              <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>{" "}
+              <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>{" "}
               &mdash; a dual GIP and GLP-1 receptor agonist (&ldquo;twincretin&rdquo;) with superior weight-loss efficacy vs GLP-1-only agents &mdash; with{" "}
-              <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+              <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
               (Body Protection Compound) as a protective co-agent. BPC-157 addresses two primary liabilities of tirzepatide therapy: gastrointestinal side effects during dose titration, and lean-mass catabolism during aggressive caloric restriction. The two compounds run from separate vials on separate schedules (tirzepatide once weekly; BPC-157 daily) &mdash; no pre-blended formulation is appropriate given incompatible dosing frequencies. This is the tirzepatide-specific variant of the GLP-1+BPC-157 concept; for the GLP-1-only version, see{" "}
-              <Link href="/peptides/semaglutide-bpc-157" className="text-[#0891b2] hover:underline">Semaglutide + BPC-157</Link>.
+              <Link href="/peptides/semaglutide-bpc-157" className="text-[#3A759F] hover:underline">Semaglutide + BPC-157</Link>.
             </p>
             <div>
               <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -550,7 +550,7 @@ export default function TirzepatideBpc157Page() {
             </p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sold as two separate vials by research peptide vendors. Neither component is FDA-approved in research-grade form. See{" "}
-              <Link href="/coupons" className="text-[#0891b2] hover:underline">
+              <Link href="/coupons" className="text-[#3A759F] hover:underline">
                 Verified Discount Codes &rarr;
               </Link>{" "}
               for current vetted vendor options.
@@ -602,18 +602,18 @@ export default function TirzepatideBpc157Page() {
         <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
           <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
           <div className="flex flex-wrap gap-4">
-            <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#0891b2] hover:underline">Tirzepatide</Link>
-            <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">BPC-157</Link>
-            <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide</Link>
-            <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#0891b2] hover:underline">Cagrilintide</Link>
+            <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Tirzepatide</Link>
+            <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
+            <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide</Link>
+            <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#3A759F] hover:underline">Cagrilintide</Link>
           </div>
         </div>
 
         <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
           <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
           <div className="flex flex-wrap gap-4">
-            <Link href="/peptides/semaglutide-bpc-157" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide + BPC-157</Link>
-            <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#0891b2] hover:underline">Wolverine Stack</Link>
+            <Link href="/peptides/semaglutide-bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide + BPC-157</Link>
+            <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>
           </div>
         </div>
 

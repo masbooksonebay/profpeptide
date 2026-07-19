@@ -27,7 +27,7 @@ const faqs = [
     a: (
       <>
         Yes — and this is one of the better-evidenced cold protocols among nutraceuticals. The Singh Cochrane review (the foundational reference) found zinc acetate or gluconate lozenges reduced the duration of the common cold by approximately 33% when started within 24 hours of symptom onset. Key protocol details that matter for efficacy: (1) Start within 24 hours of symptoms — later starts don&apos;t produce the same effect. (2) Use lozenges containing 13+ mg ionic zinc (zinc acetate or gluconate; some formulations release more bioavailable ionic zinc than others). (3) Total daily zinc 75–92 mg in divided doses every 2–3 hours while awake. (4) Continue for the duration of cold symptoms (typically 3–7 days). Don&apos;t do this protocol chronically — chronic high-dose zinc causes copper depletion and immune suppression. This is the most-evidenced cold-duration intervention; more potent than the modest vitamin C cold effect (see{" "}
-        <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">vitamin C profile</Link>{" "}
+        <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">vitamin C profile</Link>{" "}
         for the Hemilä Cochrane comparison).
       </>
     ),
@@ -37,7 +37,7 @@ const faqs = [
     a: (
       <>
         Only in zinc-deficient men. Zinc is a cofactor for 5-alpha reductase and plays a direct role in testosterone synthesis — zinc deficiency causes hypogonadism, and zinc repletion in deficient men restores testosterone levels. The translation in non-deficient men is weaker: studies in adequately-zinc-replete eugonadal men do NOT show testosterone elevation with supplementation. Practical implications: (1) If you have low-T symptoms and possible zinc deficiency (vegetarian, athlete, IBD, alcohol use, GI surgery history), checking serum zinc and supplementing if low is reasonable. (2) If you have normal zinc status and normal-range testosterone, zinc supplementation won&apos;t meaningfully change testosterone. For genuine testosterone elevation in eugonadal men, look at{" "}
-        <Link href="/supplements/tongkat-ali" className="text-[#0891b2] hover:underline">Tongkat Ali</Link>{" "}
+        <Link href="/supplements/tongkat-ali" className="text-[#3A759F] hover:underline">Tongkat Ali</Link>{" "}
         — different mechanism, real but context-dependent evidence.
       </>
     ),
@@ -55,7 +55,7 @@ const faqs = [
     a: (
       <>
         Briefly mentioned but no — those topics are covered separately on the{" "}
-        <Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">zinc carnosine variant page</Link>. This page covers zinc&apos;s general supplementation profile: forms, absorption, immune function, cold duration, testosterone in deficient men, and copper management. Zinc carnosine — the chelate compound specifically studied for gastric mucosal healing, Helicobacter pylori adjunct therapy, and NSAID gastropathy — has its own evidence base and use cases that warrant separate coverage. Brief mention here for completeness; deep dive on the variant page.
+        <Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">zinc carnosine variant page</Link>. This page covers zinc&apos;s general supplementation profile: forms, absorption, immune function, cold duration, testosterone in deficient men, and copper management. Zinc carnosine — the chelate compound specifically studied for gastric mucosal healing, Helicobacter pylori adjunct therapy, and NSAID gastropathy — has its own evidence base and use cases that warrant separate coverage. Brief mention here for completeness; deep dive on the variant page.
       </>
     ),
   },
@@ -64,11 +64,11 @@ const faqs = [
     a: (
       <>
         Yes — zinc + vitamin C is the canonical immune-support pairing.{" "}
-        <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">Vitamin C</Link>{" "}
+        <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">Vitamin C</Link>{" "}
         supports neutrophil function and antioxidant defense; zinc supports immune cell development and rhinovirus replication inhibition. Different mechanisms, additive for cold prevention/duration. Add{" "}
-        <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">vitamin D3</Link>{" "}
+        <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">vitamin D3</Link>{" "}
         for foundational immune support — D3 deficiency is associated with increased respiratory infection rates.{" "}
-        <Link href="/supplements/quercetin" className="text-[#0891b2] hover:underline">Quercetin</Link>{" "}
+        <Link href="/supplements/quercetin" className="text-[#3A759F] hover:underline">Quercetin</Link>{" "}
         acts as a zinc ionophore (helps zinc enter cells) and has its own antiviral mechanism — mechanistically synergistic with zinc, though formal RCT validation is limited. Avoid simultaneously stacking with iron and calcium supplements that compete for absorption — take them at different times. For chronic stacking with zinc above 25 mg/day, add 1–2 mg copper.
       </>
     ),
@@ -243,9 +243,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Zinc pairs naturally with healing and immune-supporting peptides. Tissue-repair peptides like{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             and{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
             benefit from zinc as a foundational substrate for tissue repair — zinc deficiency limits the healing response even with optimal peptide signaling. Immune-support peptides like thymosin alpha-1 (Tα1) operate at a different mechanism layer from zinc but address similar immune system targets. None of these combinations have formal RCT validation but zinc is a foundational mineral that supports the cellular machinery these peptides activate.
           </p>
         </div>
@@ -256,27 +256,27 @@ const sections = [
               <span className="font-semibold">Copper</span> — 1–2 mg copper for every 25+ mg/day of chronic zinc. Prevents copper depletion that occurs with prolonged high-dose zinc supplementation.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-c" className="text-[#0891b2] hover:underline">Vitamin C</Link>{" "}
+              <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">Vitamin C</Link>{" "}
               — canonical immune-support pairing. Different mechanisms, additive for cold prevention/duration.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">Vitamin D3</Link>{" "}
+              <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">Vitamin D3</Link>{" "}
               — foundational immune support; deficiency associated with increased respiratory infections.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/quercetin" className="text-[#0891b2] hover:underline">Quercetin</Link>{" "}
+              <Link href="/supplements/quercetin" className="text-[#3A759F] hover:underline">Quercetin</Link>{" "}
               — acts as a zinc ionophore (helps zinc enter cells) and has its own antiviral mechanism. Mechanistically synergistic; formal RCT validation limited.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">Zinc carnosine</Link>{" "}
+              <Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">Zinc carnosine</Link>{" "}
               — specifically for gastric mucosal applications (H. pylori adjunct, NSAID gastropathy, gastric ulcers). Different evidence base from general zinc supplementation; covered separately.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium</Link>{" "}
               — foundational mineral; complementary co-supplementation.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">Glutamine</Link>{" "}
+              <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">Glutamine</Link>{" "}
               — gut barrier co-supplementation; overlapping tight-junction-support mechanism.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -397,7 +397,7 @@ const sections = [
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">cGMP-certified manufacturing facility</span> — minimum bar.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">USP / NSF / ConsumerLab certified</span> — third-party verification.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reputable brands</span> — Now Foods, Thorne, Pure Encapsulations, Doctor&apos;s Best, Life Extension, Solgar, Jarrow. Generic brand variation is minimal — quality is dominated by form selection and elemental zinc disclosure.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">For upper-GI applications (H. pylori, gastric ulcers, NSAID gastropathy)</span>: use{" "}<Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">zinc carnosine</Link>{" "}— specifically chelated form for gastric mucosal binding. Different evidence base and indication.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">For upper-GI applications (H. pylori, gastric ulcers, NSAID gastropathy)</span>: use{" "}<Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">zinc carnosine</Link>{" "}— specifically chelated form for gastric mucosal binding. Different evidence base and indication.</li>
           </ul>
         </div>
         <AmazonCTAButton href="https://www.amazon.com/s?k=zinc+picolinate+bisglycinate+elemental&tag=profpeptide-20" label="Zinc" />
@@ -432,31 +432,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Singh M, Das RR. Zinc for the common cold. Cochrane Database Syst Rev. 2013;(6):CD001364.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23775705/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23775705/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23775705/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prasad AS. Zinc in human health: effect of zinc on immune cells. Mol Med. 2008;14(5-6):353-357.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18385818/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18385818/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18385818/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prasad AS. Discovery of human zinc deficiency: its impact on human health and disease. Adv Nutr. 2013;4(2):176-190.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/23493534/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/23493534/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/23493534/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hemilä H. Zinc lozenges and the common cold: a meta-analysis comparing zinc acetate and zinc gluconate, and the role of zinc dosage. JRSM Open. 2017;8(5).{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/28515951/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/28515951/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/28515951/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prasad AS, Mantzoros CS, Beck FW, Hess JW, Brewer GJ. Zinc status and serum testosterone levels of healthy adults. Nutrition. 1996;12(5):344-348.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/8875519/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/8875519/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/8875519/
           </a>
         </li>
@@ -472,12 +472,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -570,7 +570,7 @@ export default function ZincPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Zinc</h1>
@@ -581,13 +581,13 @@ export default function ZincPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Zinc picolinate (high bioavailability), zinc bisglycinate (chelated, gentle), zinc citrate (cost-efficient), zinc gluconate (cold lozenge form), zinc acetate (cold lozenge form), zinc oxide (poor bioavailability, avoid internally), zinc sulfate; related variant page:{" "}<Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">zinc carnosine</Link>{" "}(gastric mucosal applications)
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Zinc picolinate (high bioavailability), zinc bisglycinate (chelated, gentle), zinc citrate (cost-efficient), zinc gluconate (cold lozenge form), zinc acetate (cold lozenge form), zinc oxide (poor bioavailability, avoid internally), zinc sulfate; related variant page:{" "}<Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">zinc carnosine</Link>{" "}(gastric mucosal applications)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
           <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Essential trace mineral / cofactor for 300+ enzymes and 1,000+ transcription factors / immune cell development requirement / rhinovirus 3C protease inhibitor (cold lozenges) / testosterone synthesis cofactor in deficient men
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong (cold duration reduction with lozenge protocol — Singh 2013 Cochrane: ~33% reduction with zinc acetate/gluconate, 75–92 mg/day started within 24 hours of symptoms; Hemilä 2017 meta-analysis confirms). Strong (immune cell function in deficient individuals; Prasad 2008). Strong (deficiency prevention — ~2 billion globally deficient; Prasad 2013). Moderate (testosterone in zinc-deficient men only — Prasad 1996; effect does NOT replicate in zinc-replete eugonadal men). Moderate (AREDS-style macular degeneration protocol at high dose). Modest (general supplementation in zinc-replete healthy users). Upper-GI / H. pylori / NSAID gastropathy applications covered separately on the{" "}<Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">zinc carnosine variant</Link>.
+          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong (cold duration reduction with lozenge protocol — Singh 2013 Cochrane: ~33% reduction with zinc acetate/gluconate, 75–92 mg/day started within 24 hours of symptoms; Hemilä 2017 meta-analysis confirms). Strong (immune cell function in deficient individuals; Prasad 2008). Strong (deficiency prevention — ~2 billion globally deficient; Prasad 2013). Moderate (testosterone in zinc-deficient men only — Prasad 1996; effect does NOT replicate in zinc-replete eugonadal men). Moderate (AREDS-style macular degeneration protocol at high dose). Modest (general supplementation in zinc-replete healthy users). Upper-GI / H. pylori / NSAID gastropathy applications covered separately on the{" "}<Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">zinc carnosine variant</Link>.
         </p>
       </div>
 
@@ -596,7 +596,7 @@ export default function ZincPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Zinc is an essential trace mineral that serves as a structural component or catalytic cofactor in over 300 enzymes and more than 1,000 transcription factors — making it second only to iron among trace minerals in biological importance. It&apos;s required for immune cell development, DNA synthesis, protein synthesis, wound healing, cell division, taste and smell sensation, and testosterone synthesis. Zinc is particularly concentrated in immune cells and the gut epithelium — two critical sites of action. Zinc deficiency impairs virtually every aspect of immune function, increases gut permeability, and is associated with increased susceptibility to infection, poor wound healing, and impaired growth. Global zinc deficiency affects approximately 2 billion people (Prasad 2013); even marginal deficiency is common in elderly, vegetarians, athletes, alcohol users, and individuals with gastrointestinal conditions affecting absorption. Unlike some minerals, zinc has no dedicated storage depot — daily intake is required to maintain status. This page covers zinc&apos;s general supplementation profile: <span className="font-semibold">forms compared</span> (picolinate, bisglycinate, citrate, gluconate, acetate, oxide — bioavailability differs substantially), <span className="font-semibold">cold lozenge protocol</span> (Singh 2013 Cochrane — ~33% cold duration reduction with zinc acetate or gluconate 75–92 mg/day started within 24 hours of symptoms), <span className="font-semibold">immune function</span> (Prasad 2008 — required for T-cell, NK cell, neutrophil, macrophage development and function), <span className="font-semibold">testosterone in deficient men</span> (Prasad 1996 — effective in zinc-deficient men; does NOT consistently replicate in zinc-replete eugonadal men), and <span className="font-semibold">copper depletion management</span> at chronic high doses. Upper-GI applications — specifically H. pylori adjunct therapy, NSAID gastropathy, gastric ulcer healing — use the chelated form{" "}
-            <Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">zinc carnosine</Link>{" "}
+            <Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">zinc carnosine</Link>{" "}
             and are covered separately on the variant page (the chelate has different evidence base and mucosal-binding properties from general zinc supplementation). Practical guidance: 15–30 mg elemental zinc daily for general supplementation (read labels for elemental content vs compound weight); cold lozenge protocol for acute cold treatment only (not chronic); add 1–2 mg copper for chronic doses above 25 mg/day to prevent depletion. Zinc + vitamin C is the canonical immune-support pairing.
           </p>
           <div>
@@ -610,7 +610,7 @@ export default function ZincPage() {
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Testosterone restoration in zinc-deficient men (Prasad 1996)</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Wound healing support in deficiency contexts</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Antioxidant defense (Cu,Zn-SOD structural component)</li>
-              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Tight junction protein support (gut barrier; detailed gastric applications on{" "}<Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">zinc carnosine variant</Link>)</li>
+              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Tight junction protein support (gut barrier; detailed gastric applications on{" "}<Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">zinc carnosine variant</Link>)</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Taste and smell preservation</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">AREDS-style macular degeneration progression slowing (high-dose specialized protocol)</li>
             </ul>
@@ -661,12 +661,12 @@ export default function ZincPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc Carnosine</Link>
-          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin C</Link>
-          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin D3</Link>
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
-          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#0891b2] hover:underline">Quercetin</Link>
-          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#0891b2] hover:underline">Glutamine</Link>
+          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc Carnosine</Link>
+          <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C</Link>
+          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin D3</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
+          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#3A759F] hover:underline">Quercetin</Link>
+          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">Glutamine</Link>
         </div>
       </div>
 

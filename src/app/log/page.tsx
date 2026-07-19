@@ -19,7 +19,7 @@ import {
 } from "@/lib/logStore";
 
 const inputCls =
-  "w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#0891b2] transition";
+  "w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#3A759F] transition";
 const labelCls = "block text-sm font-medium mb-1.5 text-[#1e2d3d] dark:text-slate-200";
 const cardCls =
   "bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl p-6 shadow-sm";
@@ -204,12 +204,12 @@ export default function LogPage() {
             Keep a running record of your reconstituted vials — compound, BAC water volume,
             concentration, draw volume, and syringe units — alongside source, lot, and
             discard-by dates. Uses the same math as the{" "}
-            <Link href="/calculator" className="text-[#0891b2] hover:underline">reconstitution calculator</Link>.
+            <Link href="/calculator" className="text-[#3A759F] hover:underline">reconstitution calculator</Link>.
           </p>
         </div>
 
         {/* Privacy microcopy */}
-        <div className="mb-8 rounded-lg px-4 py-3 bg-[#0891b2]/10 border border-[#0891b2]/20 text-sm text-[#1e2d3d] dark:text-slate-200">
+        <div className="mb-8 rounded-lg px-4 py-3 bg-[#3A759F]/10 border border-[#3A759F]/20 text-sm text-[#1e2d3d] dark:text-slate-200">
           Your log is saved on this device only — no account needed, and nothing leaves your browser. Cross-device sync is coming soon. For now, use Export to back up your log or move it to another device.
         </div>
 
@@ -263,7 +263,7 @@ export default function LogPage() {
                       <button key={u} type="button" onClick={() => set("doseUnit", u)}
                         className={`px-3.5 py-2.5 text-sm font-medium transition-colors ${
                           form.doseUnit === u
-                            ? "bg-[#0891b2] text-white"
+                            ? "bg-[#3A759F] text-white"
                             : "bg-gray-50 dark:bg-[#0f172a] text-gray-500 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-700"
                         }`}>
                         {u}
@@ -331,8 +331,8 @@ export default function LogPage() {
               </div>
             ) : (
               <div className="space-y-4">
-                <div className="rounded-lg p-4 bg-[#0891b2]/10 border border-[#0891b2]/20">
-                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#0891b2]">Concentration</p>
+                <div className="rounded-lg p-4 bg-[#3A759F]/10 border border-[#3A759F]/20">
+                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">Concentration</p>
                   <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
                     {live.concentrationMcgPerMl.toFixed(2)}{" "}
                     <span className="text-base font-normal text-gray-500 dark:text-slate-400">mcg / mL</span>
@@ -341,15 +341,15 @@ export default function LogPage() {
                     {live.concentrationMgPerMl.toFixed(3)} mg / mL
                   </p>
                 </div>
-                <div className="rounded-lg p-4 bg-[#0891b2]/10 border border-[#0891b2]/20">
-                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#0891b2]">Draw Volume</p>
+                <div className="rounded-lg p-4 bg-[#3A759F]/10 border border-[#3A759F]/20">
+                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">Draw Volume</p>
                   <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
                     {live.drawVolumeMl.toFixed(3)}{" "}
                     <span className="text-base font-normal text-gray-500 dark:text-slate-400">mL</span>
                   </p>
                 </div>
-                <div className="rounded-lg p-4 bg-[#0891b2]/10 border border-[#0891b2]/20">
-                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#0891b2]">Insulin Syringe Units (U-100)</p>
+                <div className="rounded-lg p-4 bg-[#3A759F]/10 border border-[#3A759F]/20">
+                  <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">Insulin Syringe Units (U-100)</p>
                   <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
                     {live.syringeUnits.toFixed(1)}{" "}
                     <span className="text-base font-normal text-gray-500 dark:text-slate-400">units</span>
@@ -368,15 +368,15 @@ export default function LogPage() {
             </h2>
             <div className="flex flex-wrap gap-2">
               <button onClick={handleExportJSON} disabled={entries.length === 0}
-                className="text-sm px-3 py-1.5 rounded-md border border-gray-300 dark:border-slate-600 text-gray-600 dark:text-slate-300 hover:border-[#0891b2] hover:text-[#0891b2] transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+                className="text-sm px-3 py-1.5 rounded-md border border-gray-300 dark:border-slate-600 text-gray-600 dark:text-slate-300 hover:border-[#3A759F] hover:text-[#3A759F] transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
                 Export JSON
               </button>
               <button onClick={handleExportCSV} disabled={entries.length === 0}
-                className="text-sm px-3 py-1.5 rounded-md border border-gray-300 dark:border-slate-600 text-gray-600 dark:text-slate-300 hover:border-[#0891b2] hover:text-[#0891b2] transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+                className="text-sm px-3 py-1.5 rounded-md border border-gray-300 dark:border-slate-600 text-gray-600 dark:text-slate-300 hover:border-[#3A759F] hover:text-[#3A759F] transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
                 Export CSV
               </button>
               <button onClick={() => fileRef.current?.click()}
-                className="text-sm px-3 py-1.5 rounded-md border border-gray-300 dark:border-slate-600 text-gray-600 dark:text-slate-300 hover:border-[#0891b2] hover:text-[#0891b2] transition-colors">
+                className="text-sm px-3 py-1.5 rounded-md border border-gray-300 dark:border-slate-600 text-gray-600 dark:text-slate-300 hover:border-[#3A759F] hover:text-[#3A759F] transition-colors">
                 Import JSON
               </button>
               <button onClick={handleClearAll} disabled={entries.length === 0}
@@ -410,7 +410,7 @@ export default function LogPage() {
                       </div>
                       <div className="flex gap-2 flex-shrink-0">
                         <button onClick={() => handleEdit(e)}
-                          className="text-sm px-3 py-1.5 rounded-md border border-gray-300 dark:border-slate-600 text-gray-600 dark:text-slate-300 hover:border-[#0891b2] hover:text-[#0891b2] transition-colors">
+                          className="text-sm px-3 py-1.5 rounded-md border border-gray-300 dark:border-slate-600 text-gray-600 dark:text-slate-300 hover:border-[#3A759F] hover:text-[#3A759F] transition-colors">
                           Edit
                         </button>
                         <button onClick={() => handleDelete(e)}
@@ -423,16 +423,16 @@ export default function LogPage() {
                     {r && (
                       <div className="grid grid-cols-3 gap-3 mt-4">
                         <div className="rounded-lg p-3 bg-gray-50 dark:bg-[#0f172a] border border-gray-100 dark:border-slate-700">
-                          <p className="text-[11px] font-medium uppercase tracking-wide text-[#0891b2]">Concentration</p>
+                          <p className="text-[11px] font-medium uppercase tracking-wide text-[#3A759F]">Concentration</p>
                           <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mt-0.5">{r.concentrationMcgPerMl.toFixed(2)} mcg/mL</p>
                           <p className="text-[11px] text-gray-400 dark:text-slate-500">{r.concentrationMgPerMl.toFixed(3)} mg/mL</p>
                         </div>
                         <div className="rounded-lg p-3 bg-gray-50 dark:bg-[#0f172a] border border-gray-100 dark:border-slate-700">
-                          <p className="text-[11px] font-medium uppercase tracking-wide text-[#0891b2]">Draw Volume</p>
+                          <p className="text-[11px] font-medium uppercase tracking-wide text-[#3A759F]">Draw Volume</p>
                           <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mt-0.5">{r.drawVolumeMl.toFixed(3)} mL</p>
                         </div>
                         <div className="rounded-lg p-3 bg-gray-50 dark:bg-[#0f172a] border border-gray-100 dark:border-slate-700">
-                          <p className="text-[11px] font-medium uppercase tracking-wide text-[#0891b2]">Syringe Units</p>
+                          <p className="text-[11px] font-medium uppercase tracking-wide text-[#3A759F]">Syringe Units</p>
                           <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mt-0.5">{r.syringeUnits.toFixed(1)} U-100</p>
                         </div>
                       </div>

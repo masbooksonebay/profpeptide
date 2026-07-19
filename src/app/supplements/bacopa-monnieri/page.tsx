@@ -39,9 +39,9 @@ const faqs = [
     a: (
       <>
         Yes — the stack is mechanistically natural and addresses different layers of cognitive function.{" "}
-        <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+        <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
         (an ACTH(4-10) analog) acutely modulates BDNF and neurotrophic signaling — fast-onset effects on focus and resilience.{" "}
-        <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+        <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
         (a tuftsin analog) provides anxiolytic and mild nootropic effects via GABA modulation — also acute. Bacopa is the chronic, structural arm: dendritic branching, antioxidant neuroprotection, acetylcholinesterase inhibition — effects that build over 8–12 weeks. The peptides handle today; Bacopa handles three months from now. No known negative interactions, but introduce one variable at a time so you can tell what&apos;s actually doing what.
       </>
     ),
@@ -55,9 +55,9 @@ const faqs = [
     a: (
       <>
         Different timescales, different mechanisms, often stacked together.{" "}
-        <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>{" "}
+        <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
         is the acetylcholine substrate — fast-acting, daily attention and reaction-time effects, evidence in dementia and acute exercise GH.{" "}
-        <Link href="/supplements/lions-mane" className="text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>{" "}
+        <Link href="/supplements/lions-mane" className="text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>{" "}
         works through NGF/BDNF stimulation — also chronic, weeks-to-months timescale, evidence in mild cognitive impairment and nerve recovery. Bacopa is the memory-consolidation and anxiolytic arm — chronic, 8–12 weeks, evidence in healthy-adult memory and anxiety RCTs. The three are mechanistically distinct enough that stacking is rational; many users run all three as a daily cognitive baseline.
       </>
     ),
@@ -154,8 +154,8 @@ const sections = [
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Timeline: nothing measurable in the first 2–4 weeks; subtle improvements emerge at 5–6 weeks; the clinical-trial effect size is reached at 8–12 weeks. If you&apos;re looking for an acute focus or attention lift, Bacopa is the wrong supplement —{" "}
-          <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>,{" "}
-          <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">caffeine + L-theanine</Link>,{" "}
+          <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>,{" "}
+          <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">caffeine + L-theanine</Link>,{" "}
           or a racetam stack is what you want for same-day effects.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
@@ -221,9 +221,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Bacopa pairs naturally with the Russian-origin cognitive peptide cluster.{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
             (an ACTH(4-10) analog) modulates BDNF and neurotrophic signaling — acute focus and resilience effects within minutes to hours.{" "}
-            <Link href="/peptides/selank" className="text-[#0891b2] hover:underline">Selank</Link>{" "}
+            <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
             (a tuftsin analog) provides anxiolytic and mild nootropic effects via GABA modulation — also acute. Bacopa is the slow, structural arm: dendritic branching, antioxidant neuroprotection, acetylcholinesterase inhibition — effects that build over 8–12 weeks. The peptides handle the same-day cognitive lift; Bacopa handles the three-months-from-now memory consolidation. Mechanistically complementary, no known negative interactions. Introduce one variable at a time when starting a new stack so you can tell what&apos;s actually doing what.
           </p>
         </div>
@@ -231,23 +231,23 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>{" "}
+              <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
               — acute acetylcholine substrate for daily attention; Bacopa is the chronic memory-consolidation layer. Classic complementary cognitive pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/lions-mane" className="text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>{" "}
+              <Link href="/supplements/lions-mane" className="text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>{" "}
               — NGF/BDNF stimulation on a similar weeks-to-months timescale. Different mechanism (neurotrophic) but compatible chronic-use pairing with Bacopa&apos;s synaptic remodeling.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/phosphatidylserine" className="text-[#0891b2] hover:underline">Phosphatidylserine</Link>{" "}
+              <Link href="/supplements/phosphatidylserine" className="text-[#3A759F] hover:underline">Phosphatidylserine</Link>{" "}
               — cortisol-blunting plus membrane support. Complements Bacopa&apos;s anxiolytic and neuroprotective arms.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/rhodiola-rosea" className="text-[#0891b2] hover:underline">Rhodiola Rosea</Link>{" "}
+              <Link href="/supplements/rhodiola-rosea" className="text-[#3A759F] hover:underline">Rhodiola Rosea</Link>{" "}
               — adaptogenic stress modulation. Both shift the stress response over chronic use; consistent with the Calabrese 2008 anxiety findings.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">Caffeine + L-theanine</Link>{" "}
+              <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">Caffeine + L-theanine</Link>{" "}
               — acute focus stack that pairs cleanly with Bacopa&apos;s chronic memory benefits. No mechanistic conflict.
             </li>
           </ol>
@@ -393,37 +393,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Stough C, Lloyd J, Clarke J, et al. The chronic effects of an extract of Bacopa monniera (Brahmi) on cognitive function in healthy human subjects. Psychopharmacology. 2001;156(4):481-484.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11498727/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/11498727/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/11498727/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Roodenrys S, Booth D, Bulzomi S, et al. Chronic effects of Brahmi (Bacopa monnieri) on human memory. Neuropsychopharmacology. 2002;27(2):279-281.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/12093601/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/12093601/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/12093601/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Calabrese C, Gregory WL, Leo M, et al. Effects of a standardized Bacopa monnieri extract on cognitive performance, anxiety, and depression in the elderly: a randomized, double-blind, placebo-controlled trial. J Altern Complement Med. 2008;14(6):707-713.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18611150/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18611150/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18611150/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Stough C, Downey LA, Lloyd J, et al. Examining the nootropic effects of a special extract of Bacopa monniera on human cognitive functioning: 90 day double-blind placebo-controlled randomized trial. Phytother Res. 2008;22(12):1629-1634.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18683852/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18683852/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18683852/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Kongkeaw C, Dilokthornsakul P, Thanarangsarit P, et al. Meta-analysis of randomized controlled trials on cognitive effects of Bacopa monnieri extract. J Ethnopharmacol. 2014;151(1):528-535.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24252493/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24252493/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24252493/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Morgan A, Stevens J. Does Bacopa monnieri improve memory performance in older persons? Results of a randomized, placebo-controlled, double-blind trial. J Altern Complement Med. 2010;16(7):753-759.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20590480/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20590480/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20590480/
           </a>
         </li>
@@ -439,12 +439,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -569,7 +569,7 @@ export default function BacopaMonnieriPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Bacopa Monnieri</h1>
@@ -595,7 +595,7 @@ export default function BacopaMonnieriPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Bacopa monnieri is a creeping aquatic herb native to South Asian wetlands and a cornerstone of Ayurvedic medicine, where it has been used for memory and cognitive support for centuries. Its active compounds — bacosides A and B (triterpenoid saponins) — drive the modern nootropic case. Unlike most cognitive supplements that produce acute, same-day effects, Bacopa works through structural neural remodeling: dendritic branching, synaptic protein synthesis, acetylcholinesterase inhibition, and antioxidant neuroprotection. The cognitive benefits are cumulative and build over 8–12 weeks of consistent use. It is one of the better-studied herbal nootropics in Western science — multiple independent 12-week RCTs (Stough, Roodenrys, Calabrese) and the Kongkeaw 2014 meta-analysis consistently show improvements in delayed recall and information retention in healthy adults. It pairs naturally with{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">cognitive peptides</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">cognitive peptides</Link>{" "}
             that work on a different timescale: peptides handle the acute focus and resilience; Bacopa handles the chronic memory consolidation.
           </p>
           <div>
@@ -658,11 +658,11 @@ export default function BacopaMonnieriPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#0891b2] hover:underline">Alpha-GPC</Link>
-          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#0891b2] hover:underline">Lion&apos;s Mane</Link>
-          <Link href="/supplements/phosphatidylserine" className="text-sm font-medium text-[#0891b2] hover:underline">Phosphatidylserine</Link>
-          <Link href="/supplements/rhodiola-rosea" className="text-sm font-medium text-[#0891b2] hover:underline">Rhodiola Rosea</Link>
-          <Link href="/supplements/caffeine-l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">Caffeine + L-Theanine</Link>
+          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha-GPC</Link>
+          <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>
+          <Link href="/supplements/phosphatidylserine" className="text-sm font-medium text-[#3A759F] hover:underline">Phosphatidylserine</Link>
+          <Link href="/supplements/rhodiola-rosea" className="text-sm font-medium text-[#3A759F] hover:underline">Rhodiola Rosea</Link>
+          <Link href="/supplements/caffeine-l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">Caffeine + L-Theanine</Link>
         </div>
       </div>
 

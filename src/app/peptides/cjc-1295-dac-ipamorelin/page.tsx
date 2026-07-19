@@ -20,11 +20,11 @@ const faqs = [
     a: (
       <>
         CJC-1295 DAC + Ipamorelin is a 2-component growth hormone secretagogue blend:{" "}
-        <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295 with DAC</Link>{" "}
+        <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295 with DAC</Link>{" "}
         (a long-acting GHRH analog, half-life ~6&ndash;8 days) +{" "}
-        <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+        <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
         (a selective GHS-R1a / ghrelin-receptor GHRP, half-life ~2 hours). CJC-1295 DAC binds serum albumin via a maleimide Drug Affinity Complex, producing sustained baseline GH and IGF-1 elevation from a single weekly injection. Ipamorelin is dosed separately 1&ndash;3&times; daily to add pulsatile GH signals on top of the long-acting foundation. Unlike the standard{" "}
-        <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack (no-DAC)</Link>
+        <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack (no-DAC)</Link>
         , the two components of this stack do NOT synchronize by half-life &mdash; the DAC provides the baseline, Ipamorelin provides the pulse.
       </>
     ),
@@ -34,7 +34,7 @@ const faqs = [
     a: (
       <>
         This is the most important distinction in GH secretagogue research. The{" "}
-        <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">standard GH Stack</Link>{" "}
+        <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">standard GH Stack</Link>{" "}
         uses CJC-1295 <span className="font-semibold">without DAC</span> (Modified GRF 1-29), which has a ~30-minute half-life, is dosed 100&ndash;300 mcg 2&ndash;3&times; daily, and synchronizes with Ipamorelin&apos;s ~2-hour half-life to produce discrete, physiologically pulsatile GH spikes.{" "}
         <span className="font-semibold">CJC-1295 with DAC</span> attaches a maleimide Drug Affinity Complex that binds the peptide to serum albumin, extending the half-life to ~6&ndash;8 days. This means a single 1&ndash;2 mg injection once weekly maintains persistently elevated baseline GH and IGF-1 &mdash; a &ldquo;GH bleed&rdquo; pattern rather than discrete pulses. The trade-off: dosing convenience (once weekly) at the cost of reduced pulsatility. Some researchers consider the loss of pulsatility a downside due to potential feedback dampening and GH-axis desensitization concerns.
       </>
@@ -45,7 +45,7 @@ const faqs = [
     a: (
       <>
         Ipamorelin&apos;s ~2-hour half-life means it clears within a few hours of each injection. It does not accumulate to match the week-long presence of CJC-1295 DAC. Researchers using this stack continue daily (or up to 3&times; daily) Ipamorelin dosing because it adds pulsatile GHS-R1a stimulation on top of the sustained GHRHR background from the DAC. This is a key dosing nuance compared to the{" "}
-        <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">no-DAC GH Stack</Link>
+        <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">no-DAC GH Stack</Link>
         , where both peptides are dosed at the same frequency and their half-lives roughly synchronize to produce a well-timed single pulse. In the DAC variant, there is a deliberate and persistent half-life mismatch &mdash; the DAC provides ongoing GHRH-receptor priming while Ipamorelin delivers the ghrelin-receptor pulse signal throughout the week.
       </>
     ),
@@ -55,7 +55,7 @@ const faqs = [
     a: (
       <>
         No. Neither CJC-1295 (with or without DAC) nor Ipamorelin is FDA-approved for human use. Both are research-use-only (RUO) compounds sold for laboratory research. The closest regulatory analog for the GHRH-pathway component is{" "}
-        <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>
+        <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>
         , a short-acting GHRH analog with approved clinical use through compounding pharmacies for adult GH deficiency. Both CJC-1295 and Ipamorelin are prohibited under WADA Section S2 (peptide hormones and growth factors). Tested athletes should not use this stack in any form.
       </>
     ),
@@ -73,7 +73,7 @@ const faqs = [
     a: (
       <>
         CJC-1295 DAC and Ipamorelin are sold by specialty research peptide vendors for laboratory research use only. They are typically purchased as two separate vials because the DAC&apos;s once-weekly dosing does not combine cleanly with a daily blend. Verify that the vendor explicitly labels the CJC-1295 product as &ldquo;with DAC&rdquo; &mdash; many vendors carry both forms and labeling can be ambiguous. Prof. Peptide maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -172,7 +172,7 @@ const sections = [
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           CJC-1295 DAC + Ipamorelin is administered as two separate subcutaneous injections on different schedules. The DAC&apos;s long half-life and Ipamorelin&apos;s short half-life are fundamentally incompatible with a fixed-ratio pre-blend &mdash; they are almost always purchased and dosed as separate vials. This is a key practical difference from the{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">no-DAC GH Stack</Link>
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">no-DAC GH Stack</Link>
           , which is commonly available as a pre-blended 1:1 vial.
         </p>
         <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
@@ -229,7 +229,7 @@ const sections = [
           </div>
           <p className="text-sm text-gray-500 dark:text-slate-400 italic leading-relaxed pt-2">
             Units are on a U-100 insulin syringe (100 units = 1 mL). For Ipamorelin reconstitution math or non-standard vial sizes, use the{" "}
-            <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator</Link>
+            <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</Link>
             .
           </p>
         </div>
@@ -238,7 +238,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -307,7 +307,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Comparing this to the{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">standard no-DAC GH Stack</Link>
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">standard no-DAC GH Stack</Link>
           : that protocol doses both CJC-1295 (no-DAC) and Ipamorelin at the same frequency (1&ndash;3&times; daily, co-administered), synchronizing their half-lives to produce a discrete pulsatile GH spike per injection. The DAC stack intentionally separates the two schedules &mdash; weekly CJC-1295 DAC for the sustained backbone, daily Ipamorelin for the pulsatile layer.
         </p>
       </div>
@@ -322,41 +322,41 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Tissue-repair peptides.</span> The most common pairing.{" "}
-          <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+          <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           +{" "}
-          <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+          <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
           (or the{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Stack</Link>
+          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>
           ) for combined local + systemic tissue repair. The sustained IGF-1 elevation from CJC-1295 DAC amplifies the substrate for local healing peptides throughout the week.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Metabolic / weight peptides.</span>{" "}
-          <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link>{" "}
+          <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>{" "}
           or{" "}
-          <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">cagrilintide</Link>{" "}
+          <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">cagrilintide</Link>{" "}
           for fat-loss protocols where GH-mediated lean-mass preservation is a goal during caloric restriction.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Considering the no-DAC alternative.</span> Researchers who prefer physiological pulsatility should consider the{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">standard GH Stack (no-DAC)</Link>{" "}
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">standard GH Stack (no-DAC)</Link>{" "}
           instead. The no-DAC form is dosed multiple times daily but preserves GH pulse patterns that more closely mirror natural secretion. The choice between DAC and no-DAC is the central decision point for GH-secretagogue stack design.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Beginner alternative.</span> Researchers new to GH secretagogues may prefer{" "}
-          <Link href="/peptides/sermorelin-ipamorelin" className="text-[#0891b2] hover:underline">Sermorelin + Ipamorelin</Link>
+          <Link href="/peptides/sermorelin-ipamorelin" className="text-[#3A759F] hover:underline">Sermorelin + Ipamorelin</Link>
           , where Sermorelin&apos;s FDA-compounding approval and short half-life provide a lower-risk introduction to the GHRH + GHRP combination concept.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + adequate protein.</span> Required for GH-mediated anabolic effect. GH and IGF-1 elevation without mechanical loading and protein substrate produces reduced lean-mass benefit.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: MK-677.</span>{" "}
-          <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677</Link>{" "}
+          <Link href="/peptides/mk-677" className="text-[#3A759F] hover:underline">MK-677</Link>{" "}
           (ibutamoren) is another GHS-R1a agonist &mdash; stacking with Ipamorelin doubles the ghrelin-receptor stimulation without proportional benefit and amplifies appetite and cortisol risk.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: standalone CJC-1295 DAC or Ipamorelin protocols in parallel.</span> This stack already contains both. Adding standalone{" "}
-          <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link>{" "}
+          <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
           or{" "}
-          <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>{" "}
+          <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
           doses doubles the GH axis stimulus without independent benefit.
         </li>
       </ol>
@@ -404,7 +404,7 @@ const sections = [
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Researchers sensitive to the GH-related water and fluid effects (water retention, numbness, glucose) may prefer the{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">standard no-DAC GH Stack</Link>
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">standard no-DAC GH Stack</Link>
           , where these effects are more transient and peak-dependent rather than sustained around the clock.
         </p>
       </div>
@@ -445,7 +445,7 @@ const sections = [
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           CJC-1295 DAC + Ipamorelin is NOT FDA-approved. Neither component has approved human use. The closest regulatory analogs are{" "}
-          <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>{" "}
+          <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
           (FDA-approved compounded GHRH analog, short-acting, no DAC) and Tesamorelin (FDA-approved GHRH analog for HIV-associated lipodystrophy). These approved forms are both short-acting; there is no regulatory precedent for a long-acting DAC-form GHRH analog in clinical use.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -478,7 +478,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all verified vendors &rarr;
           </Link>
         </p>
@@ -510,31 +510,31 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Teichman SL, Neale A, Lawrence B, et al. Prolonged stimulation of growth hormone (GH) and insulin-like growth factor I secretion by CJC-1295, a long-acting analog of GH-releasing hormone, in healthy adults. J Clin Endocrinol Metab. 2006;91(3):799-805.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16352683/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16352683/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16352683/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ionescu M, Frohman LA. Pulsatile secretion of growth hormone (GH) persists during continuous stimulation by CJC-1295, a long-acting GH-releasing hormone analog. J Clin Endocrinol Metab. 2006;91(12):4792-4797.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17018654/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17018654/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/17018654/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Raun K, Hansen BS, Johansen NL, et al. Ipamorelin, the first selective growth hormone secretagogue. Eur J Endocrinol. 1998;139(5):552-561.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9849822/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9849822/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/9849822/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ishida J, Saitoh M, Ebner N, et al. Growth Hormone Secretagogues: History, Mechanism of Action, and Clinical Development. JCSM Rapid Commun. 2020;3(1):25-37.{" "}
-          <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rco2.9" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rco2.9" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://onlinelibrary.wiley.com/doi/full/10.1002/rco2.9
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bowers CY, Reynolds GA, Durham D, et al. Growth hormone (GH)-releasing peptide stimulates GH release in normal men and acts synergistically with GH-releasing hormone. J Clin Endocrinol Metab. 1990;70(4):975-82.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/2108187/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/2108187/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/2108187/
           </a>
         </li>
@@ -550,12 +550,12 @@ const sections = [
           CJC-1295 DAC + Ipamorelin has no controlled trial as a combination. The studies below are the key peer-reviewed sources for each component and for the synergy rationale. The Teichman 2006 study is the foundational evidence for the DAC form specifically.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -576,7 +576,7 @@ export default function CJC1295DACIpamorelinPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -607,19 +607,19 @@ export default function CJC1295DACIpamorelinPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             CJC-1295 DAC + Ipamorelin is the long-acting variant of the GH secretagogue stack. It pairs{" "}
-            <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295 with Drug Affinity Complex (DAC)</Link>
+            <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295 with Drug Affinity Complex (DAC)</Link>
             {" "}&mdash; a GHRH analog whose maleimide group binds serum albumin to extend the half-life to approximately 6&ndash;8 days, enabling once-weekly dosing &mdash; with{" "}
-            <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>
+            <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>
             , a selective GHS-R1a / ghrelin-receptor GHRP dosed 1&ndash;3&times; daily. The result is a sustained &ldquo;GH bleed&rdquo; pattern: CJC-1295 DAC maintains persistently elevated baseline GH and IGF-1 throughout the week, while each Ipamorelin injection adds a pulsatile GH spike on top of that elevated floor.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The central distinction from the{" "}
-            <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">standard GH Stack (CJC-1295 no-DAC + Ipamorelin)</Link>
+            <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">standard GH Stack (CJC-1295 no-DAC + Ipamorelin)</Link>
             {" "}is the DAC modification. The no-DAC form (Modified GRF 1-29) has a ~30-minute half-life, is dosed at the same frequency as Ipamorelin (1&ndash;3&times; daily), and preserves physiologically pulsatile GH release. The DAC form sacrifices that pulsatility for dosing convenience: one weekly injection instead of multiple daily injections for the GHRH component. The trade-off is real &mdash; some researchers consider the loss of pulsatility a meaningful downside due to potential feedback dampening and desensitization concerns with continuous GHRH-receptor stimulation.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -639,7 +639,7 @@ export default function CJC1295DACIpamorelinPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sold as separate research-grade vials by specialty peptide vendors. Neither component is FDA-approved. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current vetted options.
@@ -691,18 +691,18 @@ export default function CJC1295DACIpamorelinPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#0891b2] hover:underline">CJC-1295</Link>
-          <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Ipamorelin</Link>
-          <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Sermorelin</Link>
-          <Link href="/peptides/mk-677" className="text-sm font-medium text-[#0891b2] hover:underline">MK-677</Link>
+          <Link href="/peptides/cjc-1295" className="text-sm font-medium text-[#3A759F] hover:underline">CJC-1295</Link>
+          <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Ipamorelin</Link>
+          <Link href="/peptides/sermorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Sermorelin</Link>
+          <Link href="/peptides/mk-677" className="text-sm font-medium text-[#3A759F] hover:underline">MK-677</Link>
         </div>
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#0891b2] hover:underline">GH Stack (no-DAC CJC-1295 + Ipamorelin)</Link>
-          <Link href="/peptides/sermorelin-ipamorelin" className="text-sm font-medium text-[#0891b2] hover:underline">Sermorelin + Ipamorelin</Link>
+          <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#3A759F] hover:underline">GH Stack (no-DAC CJC-1295 + Ipamorelin)</Link>
+          <Link href="/peptides/sermorelin-ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Sermorelin + Ipamorelin</Link>
         </div>
       </div>
 

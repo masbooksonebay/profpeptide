@@ -19,9 +19,9 @@ const faqs = [
     a: (
       <>
         Three different supplemental routes, each with trade-offs.{" "}
-        <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN</Link>{" "}
+        <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
         (nicotinamide mononucleotide) is one biochemical step from NAD+ and has more recent positive trial evidence (Yoshino 2021 insulin sensitivity, Igarashi 2022 muscle function, Yi 2023 dose-response) — but FDA notified sellers in November 2022 that NMN is no longer permitted as a dietary supplement, though enforcement has been minimal. NR (nicotinamide riboside, Niagen) has the longer track record and clean regulatory status; ChromaDex-funded trials (Martens 2018, Conze 2019) reliably document NAD+ elevation. Oral NAD+ itself (the molecule, not a precursor) has poor bioavailability and is the least efficient route. Practical default: NR if you want clean regulatory status and the longer evidence base; NMN if you prefer the more proximal precursor and accept the regulatory wrinkle. The{" "}
-        <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide (injectable)</Link>{" "}
+        <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide (injectable)</Link>{" "}
         delivers NAD+ directly and bypasses the oral-bioavailability problem entirely — most aggressive option for users wanting maximum NAD+ elevation.
       </>
     ),
@@ -43,9 +43,9 @@ const faqs = [
     a: (
       <>
         Yes — and this is one of the more common protocols in serious longevity practice.{" "}
-        <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+        <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
         (injectable / subcutaneous) delivers NAD+ directly into circulation, bypassing the salvage pathway and producing the most aggressive tissue NAD+ elevation. Oral NMN or NR feeds the salvage pathway continuously through the day — different kinetics, same overall direction. Common protocol: NMN or NR daily oral baseline + NAD+ peptide injections weekly or bi-weekly as periodic loading. The two routes are complementary, not redundant. Add{" "}
-        <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+        <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
         for the pineal-axis arm of longevity, and you have the canonical NAD+ / longevity cluster.
       </>
     ),
@@ -63,9 +63,9 @@ const faqs = [
     a: (
       <>
         Yes, and the mechanistic rationale is reasonable. Sirtuins (the longevity proteins) are NAD+-dependent enzymes;{" "}
-        <Link href="/supplements/resveratrol" className="text-[#0891b2] hover:underline">resveratrol</Link>{" "}
+        <Link href="/supplements/resveratrol" className="text-[#3A759F] hover:underline">resveratrol</Link>{" "}
         activates sirtuins; NAD+ precursors supply the substrate sirtuins need to function. The two work on the same pathway at different points. Sinclair&apos;s popularized protocol pairs them daily; the trial evidence for the combination specifically is thinner than for either alone, but the pharmacological rationale is mature.{" "}
-        <Link href="/supplements/spermidine" className="text-[#0891b2] hover:underline">Spermidine</Link>{" "}
+        <Link href="/supplements/spermidine" className="text-[#3A759F] hover:underline">Spermidine</Link>{" "}
         adds an autophagy-activation arm via a different mechanism (EP300 inhibition). The four-supplement longevity stack (NAD+ precursor + resveratrol + spermidine + a senolytic like fisetin/quercetin) is the dominant longevity-influencer protocol — coherent mechanistically, thin on combination-specific trial evidence.
       </>
     ),
@@ -205,7 +205,7 @@ const sections = [
               </tr>
               <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
                 <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Form</td>
-                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">NR (Niagen branded, clean regulatory status) or NMN (Uthever and other branded, FDA regulatory wrinkle) as capsule/powder; sublingual NMN for users wanting absorption-route hedge; oral NAD+ molecule itself is least efficient route. For maximum aggression: see <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide injectable</Link>.</td>
+                <td className="px-4 py-3 text-gray-700 dark:text-slate-300">NR (Niagen branded, clean regulatory status) or NMN (Uthever and other branded, FDA regulatory wrinkle) as capsule/powder; sublingual NMN for users wanting absorption-route hedge; oral NAD+ molecule itself is least efficient route. For maximum aggression: see <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide injectable</Link>.</td>
               </tr>
               <tr className="even:bg-gray-50 dark:even:bg-[#1e293b]/50">
                 <td className="px-4 py-3 text-gray-700 dark:text-slate-300 font-medium">Standardization marker</td>
@@ -232,9 +232,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Oral NAD+ precursor supplements pair naturally with the longevity peptide cluster.{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
             (injectable / subcutaneous) delivers NAD+ directly into circulation, bypassing the salvage pathway and producing the most aggressive tissue NAD+ elevation. Oral precursors (NMN, NR) feed the salvage pathway continuously through the day — different kinetics, same overall direction.{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
             adds the pineal-axis longevity arm — telomere maintenance and circadian regulation through a separate pathway. Common protocol: NMN or NR daily oral baseline + NAD+ peptide injections weekly or bi-weekly as periodic loading + Epitalon courses for the pineal arm. The three operate on different layers of longevity biology: oral NAD+ precursors on salvage pathway, injectable NAD+ on direct tissue delivery, Epitalon on pineal regulation. Mechanistically complementary, no known negative interactions.
           </p>
         </div>
@@ -242,27 +242,27 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/nmn" className="text-[#0891b2] hover:underline">NMN (dedicated profile)</Link>{" "}
+              <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN (dedicated profile)</Link>{" "}
               — the most-proximal NAD+ precursor with the most recent positive trial evidence. See dedicated profile for NMN-specific dosing and regulatory considerations.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/resveratrol" className="text-[#0891b2] hover:underline">Resveratrol</Link>{" "}
+              <Link href="/supplements/resveratrol" className="text-[#3A759F] hover:underline">Resveratrol</Link>{" "}
               — sirtuin activator. Sinclair-protocol pairing: NAD+ precursor provides substrate; resveratrol activates the sirtuins that use it. Mechanistically natural.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/spermidine" className="text-[#0891b2] hover:underline">Spermidine</Link>{" "}
+              <Link href="/supplements/spermidine" className="text-[#3A759F] hover:underline">Spermidine</Link>{" "}
               — autophagy activator via EP300 inhibition. Different aging-biology arm; complements NAD+ supply with cellular self-cleaning.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/quercetin" className="text-[#0891b2] hover:underline">Quercetin</Link>{" "}
+              <Link href="/supplements/quercetin" className="text-[#3A759F] hover:underline">Quercetin</Link>{" "}
               — senolytic (often paired with fisetin). Different aging-biology arm; common longevity-stack co-occupant.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/apigenin" className="text-[#0891b2] hover:underline">Apigenin</Link>{" "}
+              <Link href="/supplements/apigenin" className="text-[#3A759F] hover:underline">Apigenin</Link>{" "}
               — CD38 inhibitor. CD38 consumes NAD+; apigenin reduces this consumption, preserving NAD+ levels alongside precursor supplementation. Mechanistically synergistic with NMN/NR.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/coq10" className="text-[#0891b2] hover:underline">CoQ10</Link>{" "}
+              <Link href="/supplements/coq10" className="text-[#3A759F] hover:underline">CoQ10</Link>{" "}
               — mitochondrial electron transport. NAD+ feeds Complex I of the electron transport chain; CoQ10 carries the electrons forward. Mechanistically natural pairing.
             </li>
           </ol>
@@ -401,37 +401,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Martens CR, Denman BA, Mazzo MR, et al. Chronic nicotinamide riboside supplementation is well-tolerated and elevates NAD+ in healthy middle-aged and older adults. Nat Commun. 2018;9(1):1286.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29459604/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29459604/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29459604/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Igarashi M, Nakagawa-Nagahama Y, Miura M, et al. Chronic nicotinamide mononucleotide supplementation elevates blood NAD+ levels and alters muscle function in healthy older men. NPJ Aging. 2022;8(1):5.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/35927261/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/35927261/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/35927261/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Yoshino M, Yoshino J, Kayser BD, et al. Nicotinamide mononucleotide increases muscle insulin sensitivity in prediabetic women. Science. 2021;372(6547):1224-1229.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33888596/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33888596/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33888596/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Conze D, Brenner C, Kruger CL. Safety and metabolism of long-term administration of NIAGEN (nicotinamide riboside chloride) in a randomized, double-blind, placebo-controlled clinical trial of healthy overweight adults. Sci Rep. 2019;9(1):9772.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31221999/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/31221999/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/31221999/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Yi L, Maier AB, Tao R, et al. Efficacy and safety of β-nicotinamide mononucleotide (NMN) supplementation in healthy middle-aged adults: a randomized, multicenter, double-blind, placebo-controlled, parallel-group, dose-dependent clinical trial. GeroScience. 2023;45(1):29-43.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/36482258/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/36482258/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/36482258/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Yoshino J, Baur JA, Imai SI. NAD+ intermediates: the biology and therapeutic potential of NMN and NR. Cell Metab. 2018;27(3):513-528.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29249689/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29249689/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29249689/
           </a>
         </li>
@@ -447,12 +447,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -577,7 +577,7 @@ export default function NADPlusSupplementPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">NAD+</h1>
@@ -603,8 +603,8 @@ export default function NADPlusSupplementPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             NAD+ (nicotinamide adenine dinucleotide) is an essential pyridine nucleotide coenzyme present in every living cell — central to energy metabolism (electron carrier in cellular respiration), longevity biology (substrate for sirtuin enzymes SIRT1–SIRT7), and DNA repair (substrate for PARP enzymes). NAD+ levels decline measurably with age, by ~50% by midlife. Direct oral NAD+ supplementation has poor bioavailability, so practical supplementation uses precursor strategies: NMN (nicotinamide mononucleotide), one biochemical step from NAD+ with recent positive trial evidence (Yoshino 2021, Igarashi 2022, Yi 2023); or NR (nicotinamide riboside, branded as Niagen by ChromaDex), with the longer track record and clean regulatory status (Martens 2018, Conze 2019). Both reliably elevate blood NAD+. The most aggressive option is the{" "}
-            <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+ peptide (injectable / subcutaneous)</Link>, which delivers NAD+ directly and bypasses oral-bioavailability entirely. NAD+ supplementation pairs naturally with{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+            <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide (injectable / subcutaneous)</Link>, which delivers NAD+ directly and bypasses oral-bioavailability entirely. NAD+ supplementation pairs naturally with{" "}
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
             for the pineal-axis arm of longevity. NMN has an FDA regulatory wrinkle (November 2022 notification excluding it from dietary-supplement classification) — see Limitations.
           </p>
           <div>
@@ -667,12 +667,12 @@ export default function NADPlusSupplementPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/nmn" className="text-sm font-medium text-[#0891b2] hover:underline">NMN (dedicated profile)</Link>
-          <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#0891b2] hover:underline">Resveratrol</Link>
-          <Link href="/supplements/spermidine" className="text-sm font-medium text-[#0891b2] hover:underline">Spermidine</Link>
-          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#0891b2] hover:underline">Quercetin</Link>
-          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#0891b2] hover:underline">Apigenin</Link>
-          <Link href="/supplements/coq10" className="text-sm font-medium text-[#0891b2] hover:underline">CoQ10</Link>
+          <Link href="/supplements/nmn" className="text-sm font-medium text-[#3A759F] hover:underline">NMN (dedicated profile)</Link>
+          <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#3A759F] hover:underline">Resveratrol</Link>
+          <Link href="/supplements/spermidine" className="text-sm font-medium text-[#3A759F] hover:underline">Spermidine</Link>
+          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#3A759F] hover:underline">Quercetin</Link>
+          <Link href="/supplements/apigenin" className="text-sm font-medium text-[#3A759F] hover:underline">Apigenin</Link>
+          <Link href="/supplements/coq10" className="text-sm font-medium text-[#3A759F] hover:underline">CoQ10</Link>
         </div>
       </div>
 

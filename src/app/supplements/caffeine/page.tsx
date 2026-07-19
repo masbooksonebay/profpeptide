@@ -35,7 +35,7 @@ const faqs = [
     a: (
       <>
         Yes — the stack is mechanistically natural and addresses different layers of focus and cognitive function.{" "}
-        <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+        <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
         is an ACTH(4-10) analog that modulates BDNF and neurotrophic signaling — sustained focus, motivation, and stress resilience effects that don&apos;t produce the adrenergic edge caffeine does. Caffeine operates at adenosine receptors (alertness, fatigue suppression) and indirectly raises dopamine/norepinephrine — fast acting but with a stimulant tail. The peptides do neurotrophic and motivational signaling; caffeine does the acute adenosine-blockade arousal layer. The stack is particularly useful for users who like caffeine&apos;s acute lift but want the cognitive depth (sustained focus, complex-task performance) that pure adenosine blockade doesn&apos;t deliver. No known negative interactions.
       </>
     ),
@@ -45,7 +45,7 @@ const faqs = [
     a: (
       <>
         It&apos;s one of the better-studied nootropic stacks. The canonical 1:2 ratio —{" "}
-        <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">100 mg caffeine + 200 mg L-theanine</Link>{" "}
+        <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">100 mg caffeine + 200 mg L-theanine</Link>{" "}
         — produces measurably better attention switching, executive control, and reaction time than caffeine alone in multiple double-blind RCTs (Owen 2008, Haskell 2008, Giesbrecht 2010). The L-theanine appears to blunt caffeine&apos;s adrenergic side effects (anxiety, vasoconstriction, jitters) while preserving the cognitive benefits. The stack is also the closest pharmacological replication of brewed tea&apos;s &ldquo;clean focus&rdquo; profile — which makes sense given that tea contains both compounds naturally. If caffeine alone makes you anxious, this stack is the cleaner experience.
       </>
     ),
@@ -218,7 +218,7 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Caffeine pairs naturally with the cognitive peptide cluster.{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
             is an ACTH(4-10) analog that modulates BDNF and neurotrophic signaling — sustained focus, motivation, and stress resilience effects that operate at a different layer than caffeine&apos;s adenosine antagonism. Caffeine handles the acute adenosine-blockade alertness arm and the indirect catecholamine release; Semax handles the neurotrophic and BDNF signaling layer. The stack delivers acute alertness plus cognitive depth — particularly useful for complex-task work where caffeine alone produces wired-but-unfocused. No known negative interactions. Introduce one variable at a time when starting a new stack so you can tell what&apos;s actually doing what.
           </p>
         </div>
@@ -226,19 +226,19 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">L-theanine (1:2 ratio)</Link>{" "}
+              <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">L-theanine (1:2 ratio)</Link>{" "}
               — 100 mg caffeine + 200 mg L-theanine is the canonical &ldquo;clean focus&rdquo; stack with multiple RCT evidence (Owen 2008, Haskell 2008, Giesbrecht 2010). L-theanine blunts caffeine&apos;s adrenergic edge while preserving cognitive benefits.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/alpha-gpc" className="text-[#0891b2] hover:underline">Alpha-GPC</Link>{" "}
+              <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
               — acetylcholine substrate. Caffeine raises arousal; Alpha-GPC provides the cholinergic fuel. Synergistic for focus, particularly in racetam-stack contexts.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/green-tea-extract" className="text-[#0891b2] hover:underline">Green tea extract (EGCG)</Link>{" "}
+              <Link href="/supplements/green-tea-extract" className="text-[#3A759F] hover:underline">Green tea extract (EGCG)</Link>{" "}
               — synergistic fat oxidation. Caffeine + EGCG produces additive fat-burning effects beyond caffeine alone — core combination in evidence-based fat-loss protocols.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/creatine" className="text-[#0891b2] hover:underline">Creatine</Link>{" "}
+              <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine</Link>{" "}
               — classic pre-workout stack. Some early research suggested caffeine blunts creatine&apos;s effect; subsequent trials don&apos;t replicate this. Generally compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -384,37 +384,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Guest NS, VanDusseldorp TA, Nelson MT, et al. International society of sports nutrition position stand: caffeine and exercise performance. J Int Soc Sports Nutr. 2021;18(1):1.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33388079/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33388079/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33388079/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Astrup A, Toubro S, Cannon S, et al. Caffeine: a double-blind, placebo-controlled study of its thermogenic, metabolic, and cardiovascular effects in healthy volunteers. Am J Clin Nutr. 1990;51(5):759-767.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/2333832/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/2333832/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/2333832/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Poole R, Kennedy OJ, Roderick P, et al. Coffee consumption and health: umbrella review of meta-analyses of multiple health outcomes. BMJ. 2017;359:j5024.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29167102/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29167102/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29167102/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           McLellan TM, Caldwell JA, Lieberman HR. A review of caffeine&apos;s effects on cognitive, physical and occupational performance. Neurosci Biobehav Rev. 2016;71:294-312.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27612937/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/27612937/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/27612937/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Drake C, Roehrs T, Shambroom J, Roth T. Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed. J Clin Sleep Med. 2013;9(11):1195-1200.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24235903/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24235903/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24235903/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Cornelis MC, El-Sohemy A, Kabagambe EK, Campos H. Coffee, CYP1A2 genotype, and risk of myocardial infarction. JAMA. 2006;295(10):1135-1141.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16522833/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/16522833/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/16522833/
           </a>
         </li>
@@ -430,12 +430,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -560,7 +560,7 @@ export default function CaffeinePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Caffeine</h1>
@@ -586,9 +586,9 @@ export default function CaffeinePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Caffeine is a naturally occurring methylxanthine alkaloid found in coffee, tea, cacao, guarana, and many other plants — the most widely consumed psychoactive substance in the world (80%+ of adults consume it daily). It is also one of the most extensively researched compounds in human science: hundreds of double-blind trials, multiple ISSN position stands, and the Poole 2017 BMJ umbrella review of 218 meta-analyses on coffee/caffeine outcomes. Caffeine&apos;s primary mechanism is competitive antagonism at adenosine receptors — blocking the inhibitory neurotransmitter that signals sleepiness, producing alertness, reduced fatigue perception, and indirect catecholamine release. Secondary mechanisms include thermogenesis (3–11% resting metabolic rate increase per Astrup 1990), fat oxidation enhancement during exercise, and modest phosphodiesterase inhibition. Caffeine&apos;s effect-size profile is moderate but consistent — endurance performance improves 2–4%, strength 1–3%, cognition reliably in fatigued users. Genetic variation in CYP1A2 metabolism explains much of the interindividual variability in tolerance and response. Caffeine pairs naturally with{" "}
-            <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">cognitive peptides like Semax</Link>{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">cognitive peptides like Semax</Link>{" "}
             and with{" "}
-            <Link href="/supplements/caffeine-l-theanine" className="text-[#0891b2] hover:underline">L-theanine (1:2 ratio)</Link>{" "}
+            <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">L-theanine (1:2 ratio)</Link>{" "}
             for cleaner focus without the adrenergic edge.
           </p>
           <div>
@@ -651,11 +651,11 @@ export default function CaffeinePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/caffeine-l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">Caffeine + L-Theanine</Link>
-          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#0891b2] hover:underline">L-Theanine</Link>
-          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#0891b2] hover:underline">Alpha-GPC</Link>
-          <Link href="/supplements/green-tea-extract" className="text-sm font-medium text-[#0891b2] hover:underline">Green Tea Extract</Link>
-          <Link href="/supplements/creatine" className="text-sm font-medium text-[#0891b2] hover:underline">Creatine</Link>
+          <Link href="/supplements/caffeine-l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">Caffeine + L-Theanine</Link>
+          <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>
+          <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha-GPC</Link>
+          <Link href="/supplements/green-tea-extract" className="text-sm font-medium text-[#3A759F] hover:underline">Green Tea Extract</Link>
+          <Link href="/supplements/creatine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine</Link>
         </div>
       </div>
 

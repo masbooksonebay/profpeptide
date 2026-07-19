@@ -39,7 +39,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
       }} />
 
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to News
         </Link>
 
@@ -127,9 +127,9 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
           </p>
           <p>
             For the research community, retatrutide remains the most-discussed compound in the GLP-1 family right now and is widely available through research-use-only channels at varying purity and verification standards. For full mechanism background, current research applications, and discount codes for vetted vendors, see our{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide profile</Link>{" "}
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide profile</Link>{" "}
             and{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">Discount Codes</Link>{" "}
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">Discount Codes</Link>{" "}
             page.
           </p>
         </div>

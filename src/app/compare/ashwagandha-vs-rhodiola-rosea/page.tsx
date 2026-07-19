@@ -41,11 +41,11 @@ export default function AshwagandhaVsRhodiolaPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Ashwagandha vs Rhodiola Rosea &mdash; Adaptogen Comparison</h1>
-      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/supplements/ashwagandha" className="text-[#0891b2] hover:underline">Ashwagandha</Link> and <Link href="/supplements/rhodiola-rosea" className="text-[#0891b2] hover:underline">Rhodiola Rosea</Link> are the two most evidence-backed adaptogens. Both reduce stress and improve performance &mdash; but they work through different mechanisms and are best suited to different situations. Ashwagandha primarily lowers cortisol and reduces anxiety. Rhodiola primarily enhances mental performance and physical endurance under stress.</p>
+      <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link> and <Link href="/supplements/rhodiola-rosea" className="text-[#3A759F] hover:underline">Rhodiola Rosea</Link> are the two most evidence-backed adaptogens. Both reduce stress and improve performance &mdash; but they work through different mechanisms and are best suited to different situations. Ashwagandha primarily lowers cortisol and reduces anxiety. Rhodiola primarily enhances mental performance and physical endurance under stress.</p>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why two adaptogens that both reduce stress aren&apos;t interchangeable</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Both ashwagandha and rhodiola are classified as &ldquo;adaptogens&rdquo; &mdash; herbs traditionally used to help the body adapt to stress. But this category is loose, and the two herbs work through fundamentally different biological mechanisms.
@@ -68,8 +68,8 @@ export default function AshwagandhaVsRhodiolaPage() {
         <table className="w-full text-sm border-collapse">
           <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
             <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Ashwagandha</th>
-            <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Rhodiola Rosea</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Ashwagandha</th>
+            <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Rhodiola Rosea</th>
           </tr></thead>
           <tbody>{rows.map(([label, a, b], i) => (
             <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>

@@ -42,11 +42,11 @@ export default function TripleGLP1ComparisonPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Semaglutide vs Tirzepatide vs Retatrutide — GLP-1 Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-5xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Semaglutide vs Tirzepatide vs Retatrutide &mdash; GLP-1 Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Three generations of GLP-1 metabolic peptides &mdash; each adding another receptor to the mix. Semaglutide targets one receptor, Tirzepatide two, and Retatrutide three. Each generation has shown greater average weight loss than the last. Here&apos;s how they compare based on clinical trial data.</p>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why three receptors?</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           The &ldquo;generation&rdquo; framing isn&apos;t just marketing &mdash; each receptor adds a different metabolic mechanism.
@@ -72,9 +72,9 @@ export default function TripleGLP1ComparisonPage() {
           <thead>
             <tr className="bg-gray-50 dark:bg-[#1e293b]">
               <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/5"></th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[26.6%]">Semaglutide</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[26.6%]">Tirzepatide</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[26.6%]">Retatrutide</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[26.6%]">Semaglutide</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[26.6%]">Tirzepatide</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[26.6%]">Retatrutide</th>
             </tr>
           </thead>
           <tbody>
@@ -125,7 +125,7 @@ export default function TripleGLP1ComparisonPage() {
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-4">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-sm text-gray-600 dark:text-slate-300">Each generation shows greater efficacy than the last &mdash; but more receptors means more unknowns. <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link> has the longest safety record and broadest availability. <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link> has now beaten semaglutide head-to-head in the SURMOUNT-5 trial. <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link> shows the most dramatic weight loss data of all three, but is not yet FDA approved and long-term safety data is still accumulating.</p>
+        <p className="text-sm text-gray-600 dark:text-slate-300">Each generation shows greater efficacy than the last &mdash; but more receptors means more unknowns. <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> has the longest safety record and broadest availability. <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> has now beaten semaglutide head-to-head in the SURMOUNT-5 trial. <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> shows the most dramatic weight loss data of all three, but is not yet FDA approved and long-term safety data is still accumulating.</p>
       </div>
 
       <p className="text-xs text-gray-400 dark:text-slate-500 mb-8">Note: All three are prescription medications. Retatrutide is currently only available through clinical trials.</p>

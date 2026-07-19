@@ -35,9 +35,9 @@ const faqs = [
     a: (
       <>
         Yes — and the stack is mechanistically natural for users targeting tissue recovery and inflammation modulation.{" "}
-        <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+        <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
         is a healing peptide that accelerates tissue repair through angiogenic and growth-factor signaling — particularly relevant for tendon, ligament, and gut injuries. Fish oil operates at a different layer: EPA-derived resolvins and protectins actively resolve inflammation (rather than just blocking it like NSAIDs), and DHA supports membrane fluidity in healing tissues. The peptides drive tissue repair signaling; omega-3s reduce inflammatory background that limits healing. Mechanistically complementary, no known negative interactions. Particularly useful in tendon/ligament/gut healing contexts where chronic inflammation is the limiting factor for repair.{" "}
-        <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+        <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
         is a third compatible healing-cluster peptide.
       </>
     ),
@@ -218,11 +218,11 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Fish oil pairs naturally with the healing peptide cluster — particularly via the inflammation-resolution axis.{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             is a healing peptide that accelerates tissue repair through angiogenic and growth-factor signaling — particularly relevant for tendon, ligament, and gut injuries.{" "}
-            <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link>{" "}
+            <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>{" "}
             (thymosin beta-4 fragment) supports cell migration, wound healing, and tissue regeneration.{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             (anti-inflammatory tripeptide) reduces tissue inflammation via melanocortin pathway. Fish oil operates at a different mechanism layer: EPA-derived resolvins and protectins actively resolve inflammation (not just block it like NSAIDs); DHA supports membrane fluidity in healing tissues. The peptides drive tissue repair signaling; omega-3 reduces inflammatory background that limits healing. Mechanistically complementary, no known negative interactions. Particularly useful in tendon/ligament/gut healing contexts where chronic inflammation is the limiting factor for repair.
           </p>
         </div>
@@ -230,27 +230,27 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">Vitamin D3</Link>{" "}
+              <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">Vitamin D3</Link>{" "}
               — both are fat-soluble; take together with fat-containing meal. Compatible cardiovascular + immune support pairing. Note: VITAL trial (vitamin D + omega-3 + cancer + CV outcomes in primary prevention) was largely null on hard endpoints despite mechanism plausibility.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/curcumin" className="text-[#0891b2] hover:underline">Curcumin</Link>{" "}
+              <Link href="/supplements/curcumin" className="text-[#3A759F] hover:underline">Curcumin</Link>{" "}
               — NF-κB inhibition complements omega-3&apos;s eicosanoid-balance and SPM-production arms. Powerful combined anti-inflammatory stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen peptides</Link>{" "}
+              <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
               — connective tissue substrate. Pair with omega-3 anti-inflammatory environment for joint and tendon recovery protocols.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/coq10" className="text-[#0891b2] hover:underline">CoQ10</Link>{" "}
+              <Link href="/supplements/coq10" className="text-[#3A759F] hover:underline">CoQ10</Link>{" "}
               — mitochondrial cofactor and antioxidant. Compatible cardiovascular pairing (Q-SYMBIO heart failure trial used CoQ10; KiSel-10 used CoQ10 + selenium).
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/magnesium" className="text-[#0891b2] hover:underline">Magnesium</Link>{" "}
+              <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium</Link>{" "}
               — broad cardiovascular and metabolic support. Common foundational supplement pairing.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/quercetin" className="text-[#0891b2] hover:underline">Quercetin</Link>{" "}
+              <Link href="/supplements/quercetin" className="text-[#3A759F] hover:underline">Quercetin</Link>{" "}
               — additional anti-inflammatory flavonoid. Compatible for chronic inflammation contexts.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -396,37 +396,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Bhatt DL, Steg PG, Miller M, et al. Cardiovascular risk reduction with icosapent ethyl for hypertriglyceridemia. N Engl J Med. 2019;380(1):11-22.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30415628/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30415628/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30415628/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Nicholls SJ, Lincoff AM, Garcia M, et al. Effect of high-dose omega-3 fatty acids vs corn oil on major adverse cardiovascular events in patients at high cardiovascular risk: the STRENGTH randomized clinical trial. JAMA. 2020;324(22):2268-2280.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33190147/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/33190147/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/33190147/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Calder PC. Omega-3 fatty acids and inflammatory processes: from molecules to man. Biochem Soc Trans. 2017;45(5):1105-1115.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29150525/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29150525/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29150525/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Yurko-Mauro K, Alexander DD, Van Elswyk ME. Docosahexaenoic acid and adult memory: a systematic review and meta-analysis. PLoS One. 2015;10(3):e0120391.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25786262/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25786262/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25786262/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Eslick GD, Howe PR, Smith C, Priest R, Bensoussan A. Benefits of fish oil supplementation in hyperlipidemia: a systematic review and meta-analysis. Int J Cardiol. 2009;136(1):4-16.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18774613/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18774613/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18774613/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Manson JE, Cook NR, Lee IM, et al. Marine n-3 fatty acids and prevention of cardiovascular disease and cancer (VITAL trial). N Engl J Med. 2019;380(1):23-32.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30415637/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30415637/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30415637/
           </a>
         </li>
@@ -442,12 +442,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -572,7 +572,7 @@ export default function FishOilPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Fish Oil</h1>
@@ -598,7 +598,7 @@ export default function FishOilPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Fish oil is a rich source of long-chain omega-3 polyunsaturated fatty acids — primarily eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA). These essential fatty acids incorporate into cell membranes throughout the body — particularly brain, retina, heart, and immune cells — where they influence membrane fluidity, eicosanoid production, and the synthesis of specialized pro-resolving mediators (resolvins, protectins, maresins) that actively resolve inflammation. The Western diet is severely deficient in omega-3s relative to omega-6 fatty acids — typical ratios of 15:1 to 20:1 vs the ancestral ratio of approximately 4:1 — driving chronic low-grade inflammation that underlies cardiovascular disease, metabolic syndrome, and accelerated aging. Fish oil has one of the deepest supplement evidence bases in existence, but recent developments have made the picture more nuanced: REDUCE-IT (Bhatt 2019) showed 25% MACE reduction with 4 g/day pure EPA in high-CV-risk statin-treated patients, but STRENGTH (2020) showed NO benefit with 4 g/day EPA+DHA in similar population. Multiple trials document modest atrial fibrillation signal at 1+ g/day. Triglyceride reduction (25–30% at 4 g/day) and anti-inflammatory biomarker effects remain unambiguously strong. Fish oil pairs naturally with{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">healing peptides like BPC-157 and TB-500</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">healing peptides like BPC-157 and TB-500</Link>{" "}
             via the inflammation-resolution axis — particularly useful in tendon/ligament/gut healing contexts.
           </p>
           <div>
@@ -662,12 +662,12 @@ export default function FishOilPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin D3</Link>
-          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#0891b2] hover:underline">Curcumin</Link>
-          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#0891b2] hover:underline">Collagen Peptides</Link>
-          <Link href="/supplements/coq10" className="text-sm font-medium text-[#0891b2] hover:underline">CoQ10</Link>
-          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#0891b2] hover:underline">Magnesium</Link>
-          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#0891b2] hover:underline">Quercetin</Link>
+          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin D3</Link>
+          <Link href="/supplements/curcumin" className="text-sm font-medium text-[#3A759F] hover:underline">Curcumin</Link>
+          <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>
+          <Link href="/supplements/coq10" className="text-sm font-medium text-[#3A759F] hover:underline">CoQ10</Link>
+          <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
+          <Link href="/supplements/quercetin" className="text-sm font-medium text-[#3A759F] hover:underline">Quercetin</Link>
         </div>
       </div>
 

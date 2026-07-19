@@ -37,7 +37,7 @@ const faqs = [
     a: (
       <>
         For weight loss, no &mdash; head-to-head in SURMOUNT-5 (NEJM 2025),{" "}
-        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>{" "}
         produced 20.2% average weight loss vs 13.7% with semaglutide. However, semaglutide has the longer safety record (8+ years vs 4 years), proven cardiovascular benefit (SELECT trial reduced major cardiovascular events by 20%), and broader list of approved indications including kidney disease, HFpEF, and adolescent obesity.
       </>
     ),
@@ -55,7 +55,7 @@ const faqs = [
     a: (
       <>
         Brand-name Ozempic, Wegovy, and Rybelsus require a prescription from a US-licensed provider. Some telehealth services prescribe and ship; some compounded versions are available through specialty pharmacies (though FDA has restricted compounding as of 2024&ndash;2025 since the shortage ended). Research-grade semaglutide is also sold by specialty peptide vendors for laboratory use only &mdash; see{" "}
-        <Link href="/coupons" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
         .
@@ -119,9 +119,9 @@ const sections = [
     intro: (
       <>
         Semaglutide mimics GLP-1, a hormone the gut releases after eating, and activates the GLP-1 receptor to slow stomach emptying, suppress appetite, and improve insulin response.{" "}
-        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>{" "}
         adds a second receptor (GIP) and{" "}
-        <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link>{" "}
+        <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link>{" "}
         adds a third (glucagon) &mdash; but semaglutide&rsquo;s single-receptor design is the most-studied of the three, with over eight years of clinical use and the broadest list of approved indications.
       </>
     ),
@@ -190,7 +190,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#0891b2] hover:underline">dosage calculator &rarr;</Link>.
+          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
       </div>
     ),
@@ -201,7 +201,7 @@ const sections = [
     intro: (
       <>
         Semaglutide is given as a subcutaneous injection &mdash; under the skin, not into muscle &mdash; once weekly, using a small insulin syringe or a pre-filled pen (Wegovy/Ozempic). The injection routine, timing, and supporting habits (hydration, eating pattern, alcohol management) matter as much as the dose for tolerability. For the practical mechanics of insulin syringes, units vs mcg conversion, and subcutaneous technique, see the{" "}
-        <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>{" "}
+        <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>{" "}
         guide.
       </>
     ),
@@ -310,7 +310,7 @@ const sections = [
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           <span className="font-semibold">Units vs mcg.</span> At a 5 mg vial, each unit drawn delivers 50 mcg of Semaglutide at 1 mL reconstitution, 25 mcg at 2 mL, and 16.7 mcg at 3 mL &mdash; the reconstitution volume determines the mcg-per-unit conversion. For a 10 mg vial, double those mcg-per-unit values. For a primer on reading insulin syringes and choosing the right barrel size, see our guide on{" "}
-          <Link href="/guides/syringes-and-injection" className="text-[#0891b2] hover:underline">syringes and injection technique</Link>.
+          <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link>.
         </p>
       </div>
     ),
@@ -327,23 +327,23 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + 1.2–1.6 g/kg protein.</span> Recommended to preserve lean muscle mass during rapid weight loss. Without this, GLP-class drugs can cause significant muscle loss alongside fat loss.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">GH-axis peptides for lean-mass preservation.</span>{" "}
-          <Link href="/peptides/gh-stack" className="text-[#0891b2] hover:underline">GH Stack</Link>{" "}
+          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack</Link>{" "}
           (CJC-1295 + Ipamorelin) or{" "}
-          <Link href="/peptides/mk-677" className="text-[#0891b2] hover:underline">MK-677</Link>{" "}
+          <Link href="/peptides/mk-677" className="text-[#3A759F] hover:underline">MK-677</Link>{" "}
           are sometimes added during caloric restriction to support lean-mass retention. Side-effect profiles do not overlap meaningfully with semaglutide.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">SGLT2 inhibitors (empagliflozin, dapagliflozin).</span> Used together in some type 2 diabetes protocols for additive cardiovascular and weight benefits.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Statins.</span> Frequently co-prescribed for cardiovascular risk reduction in users on semaglutide for SELECT-indicated populations.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Avoid: other GLP-class drugs.</span>{" "}
-          <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link>,{" "}
-          <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>, and liraglutide should not be combined with semaglutide. Combining incretin-based drugs significantly increases GI side effects without proportional benefit.
+          <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link>,{" "}
+          <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>, and liraglutide should not be combined with semaglutide. Combining incretin-based drugs significantly increases GI side effects without proportional benefit.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">CagriSema as an alternative, not a stack.</span>{" "}
-          <Link href="/peptides/cagrisema" className="text-[#0891b2] hover:underline">CagriSema</Link>{" "}
+          <Link href="/peptides/cagrisema" className="text-[#3A759F] hover:underline">CagriSema</Link>{" "}
           (semaglutide + cagrilintide) is a single combination product, not something to add on top of standalone semaglutide. The amylin component ({" "}
-          <Link href="/peptides/cagrilintide" className="text-[#0891b2] hover:underline">cagrilintide</Link>
+          <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">cagrilintide</Link>
           ) adds an independent satiety mechanism.
         </li>
       </ol>
@@ -355,7 +355,7 @@ const sections = [
     intro: (
       <>
         Semaglutide&rsquo;s side-effect profile is well-characterized after eight years of clinical use and the largest GLP-1 trial population in the field. Gastrointestinal effects dominate &mdash; especially during dose escalation &mdash; and resolve in most users as the body adapts. The serious adverse event rate in trials is comparable to placebo. Notably, in head-to-head SURMOUNT-5, GI-related discontinuation was higher with semaglutide than{" "}
-        <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+        <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>{" "}
         (5.6% vs 2.7%).
       </>
     ),
@@ -471,7 +471,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>
         </p>
@@ -507,7 +507,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2032183"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2032183
           </a>
@@ -518,7 +518,7 @@ const sections = [
             href="https://pubmed.ncbi.nlm.nih.gov/33625476/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://pubmed.ncbi.nlm.nih.gov/33625476/
           </a>
@@ -529,7 +529,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2307563"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2307563
           </a>
@@ -540,7 +540,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2502212"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2502212
           </a>
@@ -551,7 +551,7 @@ const sections = [
             href="https://pubmed.ncbi.nlm.nih.gov/32441473/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://pubmed.ncbi.nlm.nih.gov/32441473/
           </a>
@@ -562,7 +562,7 @@ const sections = [
             href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11271413/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11271413/
           </a>
@@ -573,7 +573,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2208601"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2208601
           </a>
@@ -584,7 +584,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa2306963"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa2306963
           </a>
@@ -595,7 +595,7 @@ const sections = [
             href="https://www.nejm.org/doi/full/10.1056/NEJMoa1607141"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0891b2] hover:underline break-words"
+            className="text-[#3A759F] hover:underline break-words"
           >
             https://www.nejm.org/doi/full/10.1056/NEJMoa1607141
           </a>
@@ -612,12 +612,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -638,7 +638,7 @@ export default function SemaglutidePage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -668,11 +668,11 @@ export default function SemaglutidePage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Semaglutide is an FDA-approved peptide that mimics GLP-1, a hormone the gut releases after eating, to slow stomach emptying, suppress appetite, and improve insulin response. It is the active ingredient in three branded medications &mdash; Ozempic (type 2 diabetes, approved 2017), Wegovy (chronic weight management, approved 2021), and Rybelsus (oral type 2 diabetes, approved 2019). With eight-plus years of clinical use and seven FDA-approved indications, it has the longest safety record and largest body of clinical evidence of any GLP-class medication. Sibling compounds{" "}
-            <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">tirzepatide</Link>{" "}
+            <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>{" "}
             (dual GLP-1/GIP) and{" "}
-            <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">retatrutide</Link>{" "}
+            <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>{" "}
             (triple GLP-1/GIP/glucagon) build on the same receptor pathway with additional targets. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -693,7 +693,7 @@ export default function SemaglutidePage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Brand-name Ozempic, Wegovy, and Rybelsus require a prescription. Research-grade semaglutide is sold by specialty peptide vendors for laboratory use only. PP maintains a vetted list of vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
             for current options.
@@ -746,18 +746,18 @@ export default function SemaglutidePage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#0891b2] hover:underline">Tirzepatide</Link>
-        <Link href="/peptides/retatrutide" className="text-sm font-medium text-[#0891b2] hover:underline">Retatrutide</Link>
-        <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#0891b2] hover:underline">Cagrilintide</Link>
-        <Link href="/peptides/cagrisema" className="text-sm font-medium text-[#0891b2] hover:underline">CagriSema</Link>
+        <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Tirzepatide</Link>
+        <Link href="/peptides/retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide</Link>
+        <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#3A759F] hover:underline">Cagrilintide</Link>
+        <Link href="/peptides/cagrisema" className="text-sm font-medium text-[#3A759F] hover:underline">CagriSema</Link>
         </div>
       </div>
-      <div className="mt-6 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#0891b2] hover:underline">Retatrutide vs Semaglutide &rarr;</Link>
-        <Link href="/compare/semaglutide-vs-tirzepatide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide vs Tirzepatide &rarr;</Link>
-        <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#0891b2] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
+        <Link href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Semaglutide &rarr;</Link>
+        <Link href="/compare/semaglutide-vs-tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide &rarr;</Link>
+        <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
         </div>
       </div>
 

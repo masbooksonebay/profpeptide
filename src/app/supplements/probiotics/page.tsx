@@ -229,9 +229,9 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Probiotics pair naturally with gut-healing peptides for users targeting comprehensive gut support.{" "}
-            <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>{" "}
+            <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
             for gut tissue healing operates at the mucosal level; probiotics support the broader microbiome ecology. Mechanistically complementary for gut-restoration protocols.{" "}
-            <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>{" "}
+            <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             (anti-inflammatory tripeptide) for gut inflammation works at the immune-signaling level; probiotic-mediated immune modulation has its own anti-inflammatory effects. No formal stack RCT validation but mechanistic complement is direct.
           </p>
         </div>
@@ -239,35 +239,35 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/prebiotics" className="text-[#0891b2] hover:underline">Prebiotics</Link>{" "}
+              <Link href="/supplements/prebiotics" className="text-[#3A759F] hover:underline">Prebiotics</Link>{" "}
               — the canonical synbiotic pairing. Prebiotic feeds the live bacteria. Start one then add the other after 2–4 weeks for GI adaptation.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/glutamine" className="text-[#0891b2] hover:underline">Glutamine</Link>{" "}
+              <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">Glutamine</Link>{" "}
               — enterocyte fuel and gut barrier support. Complementary mechanism layer.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc" className="text-[#0891b2] hover:underline">Zinc</Link>{" "}
+              <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
               — tight junction support and immune cofactor. Compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/zinc-carnosine" className="text-[#0891b2] hover:underline">Zinc carnosine</Link>{" "}
+              <Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">Zinc carnosine</Link>{" "}
               — upper-GI mucosal healing. Different anatomical focus.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/collagen-peptides" className="text-[#0891b2] hover:underline">Collagen peptides</Link>{" "}
+              <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
               — connective tissue substrate. Compatible gut-support stack.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/fish-oil" className="text-[#0891b2] hover:underline">Fish oil</Link>{" "}
+              <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Fish oil</Link>{" "}
               — anti-inflammatory; compatible.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/vitamin-d3" className="text-[#0891b2] hover:underline">Vitamin D3</Link>{" "}
+              <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">Vitamin D3</Link>{" "}
               — immune function support. Complementary in gut-immune axis contexts.
             </li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <Link href="/supplements/curcumin" className="text-[#0891b2] hover:underline">Curcumin</Link>{" "}
+              <Link href="/supplements/curcumin" className="text-[#3A759F] hover:underline">Curcumin</Link>{" "}
               — anti-inflammatory; compatible.
             </li>
           </ol>
@@ -422,37 +422,37 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hill C, Guarner F, Reid G, et al. The International Scientific Association for Probiotics and Prebiotics consensus statement on the scope and appropriate use of the term probiotic. Nat Rev Gastroenterol Hepatol. 2014;11(8):506-514.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/24912386/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/24912386/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/24912386/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Hempel S, Newberry SJ, Maher AR, et al. Probiotics for the prevention and treatment of antibiotic-associated diarrhea: a systematic review and meta-analysis. JAMA. 2012;307(18):1959-1969.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22570464/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22570464/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22570464/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Suez J, Zmora N, Zilberman-Schapira G, et al. Post-antibiotic gut mucosal microbiome reconstitution is impaired by probiotics and improved by autologous FMT. Cell. 2018;174(6):1406-1423.e16.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/30193113/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30193113/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/30193113/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Ford AC, Quigley EM, Lacy BE, et al. Efficacy of prebiotics, probiotics, and synbiotics in irritable bowel syndrome and chronic idiopathic constipation: systematic review and meta-analysis. Am J Gastroenterol. 2014;109(10):1547-1561.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/25070054/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/25070054/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/25070054/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Goldenberg JZ, Yap C, Lytvyn L, et al. Probiotics for the prevention of Clostridium difficile-associated diarrhea in adults and children. Cochrane Database Syst Rev. 2017;12(12):CD006095.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29257353/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/29257353/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/29257353/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Besselink MG, van Santvoort HC, Buskens E, et al. Probiotic prophylaxis in predicted severe acute pancreatitis: a randomised, double-blind, placebo-controlled trial (PROPATRIA). Lancet. 2008;371(9613):651-659.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/18279948/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/18279948/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/18279948/
           </a>
         </li>
@@ -468,12 +468,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -566,7 +566,7 @@ export default function ProbioticsPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Probiotics</h1>
@@ -592,7 +592,7 @@ export default function ProbioticsPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Probiotics are live microorganisms that, when administered in adequate amounts, confer a health benefit on the host (Hill 2014 ISAPP consensus definition). They are primarily bacteria from Lactobacillus and Bifidobacterium genera, plus the yeast Saccharomyces boulardii. The central organizing principle of evidence-based probiotic use — and the load-bearing framing of this entire profile — is <span className="font-semibold">strain-specificity</span>: probiotic effects are per-strain, not categorical. No strain means no indication. Different strains have evidence for completely different applications, and generic probiotic products with proprietary blends or generic species names (without strain identifiers) have minimal specific evidence for any indication. The strongest probiotic evidence is for <span className="font-semibold">antibiotic-associated diarrhea (AAD) prevention</span> — Hempel 2012 JAMA meta-analysis of 82 RCTs documented ~42% AAD risk reduction with Lactobacillus rhamnosus GG (LGG) or Saccharomyces boulardii during antibiotic courses. <span className="font-semibold">C. difficile-associated diarrhea prevention</span> is similarly well-established (Goldenberg 2017 Cochrane — S. boulardii specifically). <span className="font-semibold">IBS symptom support</span> has moderate strain-specific evidence (Ford 2014 — Bifidobacterium infantis 35624 / Bifantis is the trial-validated strain; VSL#3 / Visbiome for severe IBS; specific Lactobacillus plantarum strains). <span className="font-semibold">Infant colic reduction</span> with L. reuteri DSM 17938 (BioGaia). <span className="font-semibold">Vaginal health</span> with L. rhamnosus GR-1 + L. reuteri RC-14. <span className="font-semibold">H. pylori eradication adjunct, atopic dermatitis prevention in infants, upper respiratory tract infection prevention, lactose digestion</span>, and <span className="font-semibold">emerging psychobiotic effects on mood</span> with L. helveticus + B. longum combinations — all have specific strain-evidence pairings that do not generalize. A critical and influential nuance: <span className="font-semibold">Suez 2018</span> documented that routine probiotic supplementation after antibiotic courses may DELAY native microbiome recovery compared to no intervention or autologous fecal microbiota transplant. The AAD-prevention indication is solid, but the broader &quot;take probiotics after antibiotics to restore your microbiome&quot; goal is complicated by this finding. A second critical safety nuance is research-context specific: severely immunocompromised users (post-organ-transplant on immunosuppressants, active chemotherapy, advanced HIV, ICU patients) have documented cases of probiotic-associated bacteremia and fungemia. The 2008 PROPATRIA trial in severe acute pancreatitis documented increased mortality in the probiotic arm. Critical-care guidelines generally do not recommend routine ICU probiotics. Outpatient users with normal immune function: standard probiotic supplementation is safe at standard doses; the immunocompromised concern is a specific clinical-context nuance, not a general safety issue. Practical guidance: identify your specific goal, find the trial-validated strain for that goal, select a product containing that strain at the trial-equivalent CFU dose, take with food, and look for &quot;CFU at expiration date&quot; on the label rather than &quot;CFU at manufacture.&quot; For the synbiotic approach, combine with{" "}
-            <Link href="/supplements/prebiotics" className="text-[#0891b2] hover:underline">prebiotics</Link>{" "}
+            <Link href="/supplements/prebiotics" className="text-[#3A759F] hover:underline">prebiotics</Link>{" "}
             (the fermentable fiber that feeds the live bacteria) — ideally sequentially with 2–4 weeks between to allow GI adaptation.
           </p>
           <div>
@@ -657,12 +657,12 @@ export default function ProbioticsPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/supplements/prebiotics" className="text-sm font-medium text-[#0891b2] hover:underline">Prebiotics</Link>
-          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#0891b2] hover:underline">Glutamine</Link>
-          <Link href="/supplements/zinc" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc</Link>
-          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#0891b2] hover:underline">Zinc Carnosine</Link>
-          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#0891b2] hover:underline">Vitamin D3</Link>
-          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#0891b2] hover:underline">Fish Oil</Link>
+          <Link href="/supplements/prebiotics" className="text-sm font-medium text-[#3A759F] hover:underline">Prebiotics</Link>
+          <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">Glutamine</Link>
+          <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
+          <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc Carnosine</Link>
+          <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin D3</Link>
+          <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
         </div>
       </div>
 

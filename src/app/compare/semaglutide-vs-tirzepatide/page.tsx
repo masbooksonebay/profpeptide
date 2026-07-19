@@ -40,11 +40,11 @@ export default function SemaglutideVsTirzepatidePage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Semaglutide vs Tirzepatide — GLP-1 Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Semaglutide vs Tirzepatide &mdash; GLP-1 Peptide Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Semaglutide and Tirzepatide are the two most clinically significant metabolic peptides of the past decade. Both are FDA-approved and backed by large-scale Phase 3 trials. Tirzepatide is newer and shows greater average weight loss, but semaglutide has a longer track record and broader approval history.</p>
 
-      <div className="mb-8 p-5 border border-[#0891b2]/20 bg-[#0891b2]/10 rounded-xl">
+      <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why GLP-1 receptor activation matters</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           GLP-1 (glucagon-like peptide-1) is a hormone naturally released from the gut after eating. It does three things at once: it slows gastric emptying so you feel full longer, it triggers insulin release to manage blood sugar, and it acts on the hypothalamus to reduce appetite.
@@ -62,8 +62,8 @@ export default function SemaglutideVsTirzepatidePage() {
           <thead>
             <tr className="bg-gray-50 dark:bg-[#1e293b]">
               <th className="text-left px-4 py-3 font-semibold text-gray-400 dark:text-slate-500 text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-1/4"></th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Semaglutide</th>
-              <th className="text-left px-4 py-3 font-semibold text-[#0891b2] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Tirzepatide</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Semaglutide</th>
+              <th className="text-left px-4 py-3 font-semibold text-[#3A759F] text-xs uppercase tracking-wider border-b border-gray-100 dark:border-slate-700 w-[37.5%]">Tirzepatide</th>
             </tr>
           </thead>
           <tbody>
@@ -113,7 +113,7 @@ export default function SemaglutideVsTirzepatidePage() {
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
-        <p className="text-lg text-gray-600 dark:text-slate-300">Tirzepatide produces greater average weight loss and better blood sugar control in head-to-head data. <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link> has a longer track record, broader approval history, and more long-term safety data. Both are prescription medications, but both are also widely available as research-grade peptides through specialty vendors. See <Link href="/coupons" className="text-[#0891b2] hover:underline">Verified Discount Codes</Link> for current options.</p>
+        <p className="text-lg text-gray-600 dark:text-slate-300">Tirzepatide produces greater average weight loss and better blood sugar control in head-to-head data. <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> has a longer track record, broader approval history, and more long-term safety data. Both are prescription medications, but both are also widely available as research-grade peptides through specialty vendors. See <Link href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</Link> for current options.</p>
       </div>
 
       <div className="mb-8">

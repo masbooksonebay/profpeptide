@@ -19,7 +19,7 @@ function CodeBox({ code }: { code: string }) {
       className="block w-full bg-gray-50 dark:bg-[#1e293b] border border-gray-200 dark:border-slate-600 px-4 py-3 rounded-lg text-lg font-mono font-bold text-[#1e2d3d] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:bg-gray-100 dark:bg-slate-700 transition-colors"
     >
       {copied ? (
-        <span className="text-[#0891b2] font-sans font-medium tracking-normal">Copied!</span>
+        <span className="text-[#3A759F] font-sans font-medium tracking-normal">Copied!</span>
       ) : (
         code
       )}
@@ -36,7 +36,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:bg-[#1e293b] transition-colors"
       >
         <span className="text-sm font-medium text-[#1e2d3d] dark:text-slate-100 pr-4">{q}</span>
-        <span className="text-[#0891b2] flex-shrink-0 text-lg">{open ? "−" : "+"}</span>
+        <span className="text-[#3A759F] flex-shrink-0 text-lg">{open ? "−" : "+"}</span>
       </button>
       {open && (
         <div className="px-5 pb-4 text-sm text-gray-600 dark:text-slate-300 leading-relaxed border-t border-gray-50 dark:border-slate-800 pt-3">
@@ -50,7 +50,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 export default function AeroPeptidesCouponPage() {
   return (
     <div className="section max-w-3xl">
-      <Link href="/coupons" className="text-sm text-[#0891b2] hover:underline mb-6 inline-block">
+      <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
         &larr; Back to Discount Codes
       </Link>
 
@@ -72,43 +72,43 @@ export default function AeroPeptidesCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cellular Health &amp; Longevity</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/ss-31" className="text-[#0891b2] hover:underline">SS-31</Link>, <Link href="/peptides/mots-c" className="text-[#0891b2] hover:underline">MOTS-C</Link>, <Link href="/peptides/glutathione" className="text-[#0891b2] hover:underline">Glutathione</Link>, <Link href="/peptides/nad-plus" className="text-[#0891b2] hover:underline">NAD+</Link>
+                <Link href="/peptides/ss-31" className="text-[#3A759F] hover:underline">SS-31</Link>, <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>, <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone Support</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/igf-1-lr3" className="text-[#0891b2] hover:underline">IGF-1 LR3</Link>, <Link href="/peptides/kisspeptin" className="text-[#0891b2] hover:underline">Kisspeptin-10</Link>, <Link href="/peptides/tesamorelin" className="text-[#0891b2] hover:underline">Tesamorelin</Link>, <Link href="/peptides/cjc-1295" className="text-[#0891b2] hover:underline">CJC-1295</Link> No DAC (10mg), CJC-1295 No DAC + <Link href="/peptides/ipamorelin" className="text-[#0891b2] hover:underline">Ipamorelin</Link>
+                <Link href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3</Link>, <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin-10</Link>, <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link>, <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link> No DAC (10mg), CJC-1295 No DAC + <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Immune &amp; Inflammatory</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                Adamax, <Link href="/peptides/semax" className="text-[#0891b2] hover:underline">Semax</Link>, <Link href="/peptides/kpv" className="text-[#0891b2] hover:underline">KPV</Link>
+                Adamax, <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolics &amp; Appetite</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/sermorelin" className="text-[#0891b2] hover:underline">Sermorelin</Link>, <Link href="/peptides/retatrutide" className="text-[#0891b2] hover:underline">Retatrutide</Link> (listed as GLP3 – Reta), <Link href="/peptides/tirzepatide" className="text-[#0891b2] hover:underline">Tirzepatide</Link> (listed as GLP1 – Tirz), <Link href="/peptides/semaglutide" className="text-[#0891b2] hover:underline">Semaglutide</Link> (listed as GLP1 – Semaglutide)
+                <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>, <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> (listed as GLP3 – Reta), <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> (listed as GLP1 – Tirz), <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> (listed as GLP1 – Semaglutide)
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin, Hair &amp; Cosmetic</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/melanotan-i" className="text-[#0891b2] hover:underline">Melanotan I</Link>, <Link href="/peptides/melanotan-ii" className="text-[#0891b2] hover:underline">Melanotan II</Link>, <Link href="/peptides/ghk-cu" className="text-[#0891b2] hover:underline">GHK-Cu</Link>
+                <Link href="/peptides/melanotan-i" className="text-[#3A759F] hover:underline">Melanotan I</Link>, <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>, <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Repair &amp; Recovery</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/bpc-157" className="text-[#0891b2] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#0891b2] hover:underline">TB-500</Link> (5–10mg), <Link href="/peptides/wolverine-stack" className="text-[#0891b2] hover:underline">Wolverine Blend</Link> (BPC-157 5mg + TB-500 5mg)
+                <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link> (5–10mg), <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Blend</Link> (BPC-157 5mg + TB-500 5mg)
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Multi-Peptide Blends</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/klow" className="text-[#0891b2] hover:underline">KLOW</Link> (BPC-157 + GHK-Cu + TB-500 + KPV), <Link href="/peptides/glow" className="text-[#0891b2] hover:underline">GLOW</Link> (BPC-157 + GHK-Cu + TB-500)
+                <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link> (BPC-157 + GHK-Cu + TB-500 + KPV), <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link> (BPC-157 + GHK-Cu + TB-500)
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -131,7 +131,7 @@ export default function AeroPeptidesCouponPage() {
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
           <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
           <CodeBox code={v.code} />
-          <p className="text-center text-sm text-[#0891b2] font-medium mt-2 mb-1">15% off your entire order</p>
+          <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-1">15% off your entire order</p>
           <p className="text-center text-xs text-gray-500 dark:text-slate-400 mb-4">Free domestic shipping over $150 &middot; 15-day cookie</p>
           <a
             href={v.url}

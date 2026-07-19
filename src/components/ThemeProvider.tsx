@@ -17,12 +17,10 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Default light; honor a saved choice only. Kept in sync with the
-    // pre-hydration script in layout.tsx (OS pref intentionally not consulted).
-    const saved = localStorage.getItem("theme") as Theme | null;
-    if (saved === "dark" || saved === "light") {
-      setTheme(saved);
-    }
+    // Dark mode is disabled site-wide: always render light, ignoring any saved
+    // choice (a previously-saved "dark" is overridden and healed to light by the
+    // effect below). Kept in sync with the pre-hydration script in layout.tsx.
+    setTheme("light");
     setMounted(true);
   }, []);
 

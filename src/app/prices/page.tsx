@@ -33,7 +33,7 @@ export default function PricesPage() {
 
       <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-8 border-l-2 border-gray-200 dark:border-slate-700 pl-3">
         Comparing on price alone isn&apos;t enough &mdash; for independent third-party purity testing of research peptides, see{" "}
-        <a href="https://finnrick.com" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline">Finnrick</a>{" "}
+        <a href="https://finnrick.com" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">Finnrick</a>{" "}
         as a purity resource. We link it as a reference; we do not republish their data.
       </p>
 

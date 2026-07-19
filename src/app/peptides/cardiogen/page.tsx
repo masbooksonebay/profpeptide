@@ -23,11 +23,11 @@ const faqs = [
     a: (
       <>
         Cardiogen is a synthetic cardiovascular tetrapeptide with the sequence Ala-Glu-Asp-Arg (AEDR). It belongs to the family of Khavinson short-peptide bioregulators and is studied as an organ-targeted bioregulator in cardiac systems. Its sequence, AEDR, is distinct from AEDP (the sequence of{" "}
-        <Link href="/peptides/cortagen" className="text-[#0891b2] hover:underline">Cortagen</Link>) and AEDG (the sequence of{" "}
-        <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>). It is studied in the same short-peptide tradition as{" "}
-        <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>{" "}
+        <Link href="/peptides/cortagen" className="text-[#3A759F] hover:underline">Cortagen</Link>) and AEDG (the sequence of{" "}
+        <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>). It is studied in the same short-peptide tradition as{" "}
+        <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>{" "}
         and{" "}
-        <Link href="/peptides/thymogen" className="text-[#0891b2] hover:underline">Thymogen</Link>.
+        <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>.
       </>
     ),
   },
@@ -36,13 +36,13 @@ const faqs = [
     a: (
       <>
         Cardiogen is one of the organ-targeted short peptides in the Khavinson program, differentiated by sequence and target tissue: Cardiogen (AEDR) is cardiac-focused,{" "}
-        <Link href="/peptides/cortagen" className="text-[#0891b2] hover:underline">Cortagen</Link>{" "}
+        <Link href="/peptides/cortagen" className="text-[#3A759F] hover:underline">Cortagen</Link>{" "}
         (AEDP) is neuro-cortex-focused,{" "}
-        <Link href="/peptides/thymogen" className="text-[#0891b2] hover:underline">Thymogen</Link>{" "}
+        <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>{" "}
         (Glu-Trp) is thymic/immune,{" "}
-        <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>{" "}
+        <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>{" "}
         (Glu-Asp-Arg) is CNS-focused, and{" "}
-        <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>{" "}
+        <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>{" "}
         (AEDG) is associated with the pineal gland. They share the short-peptide bioregulator framing but differ in sequence and the tissue each was studied in.
       </>
     ),
@@ -60,7 +60,7 @@ const faqs = [
     a: (
       <>
         Cardiogen is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
-        <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+        <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
           Peptides.gg discount code (PROF15) &rarr;
         </Link>
         .
@@ -189,7 +189,7 @@ const sections = [
       <div className="space-y-4">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-          <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+          <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
             Peptides.gg discount code (PROF15) &rarr;
           </Link>{" "}
           for current options.
@@ -222,25 +222,25 @@ const sections = [
       <ol className="list-decimal list-inside space-y-2">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Chalisova NI, et al. Effect of the Cardiogen peptide on proliferation in myocardial tissue culture from young and old rats. Adv Gerontol. 2009;22(3):409-13. PMID 20210190.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20210190/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20210190/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20210190/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Levdik NV, Knyazkin IV. Tumor-modifying effect of the Cardiogen peptide on M-1 sarcoma in senescent rats. Bull Exp Biol Med. 2009;148(3):433-6. PMID 20396706.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20396706/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20396706/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/20396706/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khavinson VKh, Fedoreyeva LI, Vanyushin BF. Site-specific binding of short peptides with DNA modulates endonuclease activity. Bull Exp Biol Med. 2011;151(1):66-70. PMID 22442805.{" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/22442805/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/22442805/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/22442805/
           </a>
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Khavinson VK, et al. Peptide Regulation of Gene Expression: A Systematic Review. Molecules. 2021;26(22):7053. PMID 34834147. (Open Access){" "}
-          <a href="https://pubmed.ncbi.nlm.nih.gov/34834147/" target="_blank" rel="noopener noreferrer" className="text-[#0891b2] hover:underline break-words">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/34834147/" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
             https://pubmed.ncbi.nlm.nih.gov/34834147/
           </a>
         </li>
@@ -259,12 +259,12 @@ const sections = [
           Plain-English summaries of the peer-reviewed studies behind the claims above. Click any title to read the source paper. The evidence is preclinical and largely from a single research lineage; the cardioprotection rodent-model data come from a US patent (cited in References), not a peer-reviewed trial.
         </p>
         {studies.map((s, i) => (
-          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#0891b2] transition-colors">
+          <div key={i} className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 hover:border-[#3A759F] transition-colors">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#0891b2] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -285,7 +285,7 @@ export default function CardiogenPage() {
     <div className="section max-w-3xl">
       <Link
         href="/peptides"
-        className="text-sm text-[#0891b2] hover:underline mb-6 inline-block"
+        className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
       >
         Back to Peptide Library
       </Link>
@@ -321,12 +321,12 @@ export default function CardiogenPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Cardiogen is a synthetic cardiovascular tetrapeptide (Ala-Glu-Asp-Arg, AEDR) developed within the Khavinson short-peptide bioregulator program as an organ-targeted bioregulator studied in cardiac systems. It is proposed to stimulate cardiomyocyte proliferation and to shift cardiac fibroblasts toward a less-fibrotic phenotype (less scar and collagen overdeposition), and in cultured cardiac tissue it was associated with reduced p53 expression &mdash; suggesting suppression of myocardial apoptosis. As a Khavinson short peptide, it is hypothesized to penetrate cells and modulate gene expression through site-specific DNA/chromatin interaction. The evidence base is entirely preclinical (rodent and in-vitro tissue culture), much of it in Russian-language journals and from a single research lineage; cardioprotective activity in rodent models is described in a US patent. There are no human clinical trials. Note that its sequence, AEDR, is distinct from AEDP (the sequence of{" "}
-            <Link href="/peptides/cortagen" className="text-[#0891b2] hover:underline">Cortagen</Link>) and AEDG (the sequence of{" "}
-            <Link href="/peptides/epitalon" className="text-[#0891b2] hover:underline">Epitalon</Link>). It sits in the same short-peptide family as{" "}
-            <Link href="/peptides/pinealon" className="text-[#0891b2] hover:underline">Pinealon</Link>{" "}
+            <Link href="/peptides/cortagen" className="text-[#3A759F] hover:underline">Cortagen</Link>) and AEDG (the sequence of{" "}
+            <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>). It sits in the same short-peptide family as{" "}
+            <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>{" "}
             and{" "}
-            <Link href="/peptides/thymogen" className="text-[#0891b2] hover:underline">Thymogen</Link>. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#0891b2] hover:underline">Start with the basics &rarr;</Link>
+            <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>. New to peptide research?{" "}
+            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
@@ -344,7 +344,7 @@ export default function CardiogenPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Cardiogen is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-            <Link href="/coupons/peptides-gg" className="text-[#0891b2] hover:underline">
+            <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
               Peptides.gg discount code (PROF15) &rarr;
             </Link>{" "}
             for current options.
@@ -397,12 +397,12 @@ export default function CardiogenPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/peptides/pinealon" className="text-sm font-medium text-[#0891b2] hover:underline">Pinealon</Link>
-        <Link href="/peptides/thymogen" className="text-sm font-medium text-[#0891b2] hover:underline">Thymogen</Link>
-        <Link href="/peptides/cortagen" className="text-sm font-medium text-[#0891b2] hover:underline">Cortagen</Link>
-        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#0891b2] hover:underline">Epitalon</Link>
+        <Link href="/peptides/pinealon" className="text-sm font-medium text-[#3A759F] hover:underline">Pinealon</Link>
+        <Link href="/peptides/thymogen" className="text-sm font-medium text-[#3A759F] hover:underline">Thymogen</Link>
+        <Link href="/peptides/cortagen" className="text-sm font-medium text-[#3A759F] hover:underline">Cortagen</Link>
+        <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
         </div>
-        <Link href="/bioregulators" className="text-sm font-medium text-[#0891b2] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
+        <Link href="/bioregulators" className="text-sm font-medium text-[#3A759F] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
       </div>
 
       {/* TODO: add a Bioregulator Comparisons block (e.g. Cardiogen vs Cortagen / Pinealon / Thymogen) once those comparison pages are built. The four-spoke set (Pinealon, Thymogen, Cortagen, Cardiogen) is now live. */}
