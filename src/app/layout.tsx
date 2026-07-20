@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   // Explicit, single source of favicon declarations (the App Router
   // src/app/icon.* convention files were removed to avoid duplicate/competing
-  // rel="icon" tags). Ships an opaque 96px multiple-of-48 PNG for Google.
+  // rel="icon" tags). Ships a transparent 96px multiple-of-48 PNG for Google.
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },

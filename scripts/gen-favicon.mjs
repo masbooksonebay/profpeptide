@@ -1,7 +1,8 @@
 // Regenerates the full favicon / app-icon set from public/icon.svg — the
-// Prof. Peptide "Pp" brand mark (opaque #0f172a tile, #0891b2 border, #f0f4f8
-// letters). Every raster is a square, fully-opaque PNG at a Google-friendly
-// size (favicon PNGs are multiples of 48px). The .ico bundles 16/32/48.
+// Prof. Peptide coupon-tag mark (single flat fill locked to #3A759F, transparent
+// background, transparent eyelet knockout). Every raster is a square PNG at a
+// Google-friendly size (favicon PNGs are multiples of 48px), transparency
+// preserved. The .ico bundles 16/32/48.
 //
 // Requires `rsvg-convert` (librsvg) on PATH:  brew install librsvg
 // Run from the repo root:  node scripts/gen-favicon.mjs
