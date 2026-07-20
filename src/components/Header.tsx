@@ -142,7 +142,7 @@ export default function Header() {
             className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 object-contain"
             priority
           />
-          <span className="text-[#1e2d3d] dark:text-slate-100 font-extrabold text-xl md:text-2xl tracking-tight leading-none -translate-y-[3px]">
+          <span className="text-[#16181B] dark:text-slate-100 font-extrabold text-xl md:text-2xl tracking-tight leading-none -translate-y-[3px]">
             Prof. Peptide
           </span>
         </Link>

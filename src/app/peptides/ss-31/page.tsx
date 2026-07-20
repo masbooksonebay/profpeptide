@@ -178,7 +178,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -238,7 +238,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -265,7 +265,7 @@ export default function SS31Page() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">SS-31 (Elamipretide)</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">SS-31 (Elamipretide)</h1>
         <span className="tag">Longevity</span>
         <span className="tag">FDA-Approved Drug</span>
         <span className="tag">Research-Grade RUO</span>
@@ -275,30 +275,30 @@ export default function SS31Page() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Elamipretide, MTP-131, Bendavia, RX-31; brand name Forzinity
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Elamipretide, MTP-131, Bendavia, RX-31; brand name Forzinity
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Synthetic aromatic-cationic mitochondria-targeting tetrapeptide (Szeto&ndash;Schiller peptide)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Synthetic aromatic-cationic mitochondria-targeting tetrapeptide (Szeto&ndash;Schiller peptide)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Molecular Profile:</span> D-Arg-Dmt-Lys-Phe-NH2 (D-Arg-2&prime;,6&prime;-dimethyl-Tyr-Lys-Phe-NH2) &middot; C32H49N9O5 &middot; ~639.8 g/mol &middot; PubChem CID 11764719 &middot; CAS 736992-21-5 (free base; the hydrochloride salt has a separate CAS) &middot; DrugBank DB11981
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> D-Arg-Dmt-Lys-Phe-NH2 (D-Arg-2&prime;,6&prime;-dimethyl-Tyr-Lys-Phe-NH2) &middot; C32H49N9O5 &middot; ~639.8 g/mol &middot; PubChem CID 11764719 &middot; CAS 736992-21-5 (free base; the hydrochloride salt has a separate CAS) &middot; DrugBank DB11981
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Origin:</span> Discovered by Hazel Szeto and Peter Schiller (Weill Cornell); developed by Stealth BioTherapeutics
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Origin:</span> Discovered by Hazel Szeto and Peter Schiller (Weill Cornell); developed by Stealth BioTherapeutics
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Dual status &mdash; FDA-approved drug Forzinity (elamipretide HCl) for Barth syndrome (accelerated approval, Sept 19, 2025; prescription-only); research-grade &ldquo;SS-31&rdquo; is unapproved and Research Use Only
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Dual status &mdash; FDA-approved drug Forzinity (elamipretide HCl) for Barth syndrome (accelerated approval, Sept 19, 2025; prescription-only); research-grade &ldquo;SS-31&rdquo; is unapproved and Research Use Only
         </p>
       </div>
 
       <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Important &mdash; approved drug vs. research material:</span> The drug elamipretide (brand Forzinity, elamipretide HCl) received FDA accelerated approval on September 19, 2025 for Barth syndrome (adult and pediatric patients weighing at least 30 kg), administered once-daily subcutaneous, prescription-only &mdash; the first FDA-approved mitochondria-targeted therapeutic; continued approval may be contingent on confirmatory trials. The &ldquo;SS-31&rdquo; sold by research vendors is unapproved, research-grade material &mdash; NOT the approved drug Forzinity &mdash; and is for Research Use Only, not for human use.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Important &mdash; approved drug vs. research material:</span> The drug elamipretide (brand Forzinity, elamipretide HCl) received FDA accelerated approval on September 19, 2025 for Barth syndrome (adult and pediatric patients weighing at least 30 kg), administered once-daily subcutaneous, prescription-only &mdash; the first FDA-approved mitochondria-targeted therapeutic; continued approval may be contingent on confirmatory trials. The &ldquo;SS-31&rdquo; sold by research vendors is unapproved, research-grade material &mdash; NOT the approved drug Forzinity &mdash; and is for Research Use Only, not for human use.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is SS-31 (Elamipretide)?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is SS-31 (Elamipretide)?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             SS-31 (elamipretide) is a synthetic aromatic-cationic mitochondria-targeting tetrapeptide &mdash; a Szeto&ndash;Schiller peptide &mdash; discovered by Hazel Szeto and Peter Schiller at Weill Cornell and developed by Stealth BioTherapeutics. Its defining feature is selective accumulation in the inner mitochondrial membrane through affinity for the phospholipid cardiolipin; by binding and stabilizing cardiolipin it supports cristae structure and respiratory-chain supercomplexes, lowers mitochondrial reactive oxygen species, preserves membrane potential, and improves ATP production. As the drug elamipretide (brand Forzinity), it received FDA accelerated approval on September 19, 2025 for Barth syndrome &mdash; the first FDA-approved mitochondria-targeted therapeutic. Importantly, the &ldquo;SS-31&rdquo; sold by research vendors is unapproved, research-grade material &mdash; not the approved drug Forzinity &mdash; and is for research use only. It is studied alongside other bioenergetic and longevity compounds such as{" "}
@@ -308,7 +308,7 @@ export default function SS31Page() {
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -319,10 +319,10 @@ export default function SS31Page() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> For the approved drug Forzinity, FDA-approved dosing for Barth syndrome is a weight-based once-daily subcutaneous injection (prescription-only, patients weighing at least 30 kg); the specific weight-based figures come from the prescribing information and a treating clinician. For research-grade SS-31 there is no validated research-use dose, and Prof. Peptide does not publish one &mdash; the research material is unapproved and is not the branded drug.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> For the approved drug Forzinity, FDA-approved dosing for Barth syndrome is a weight-based once-daily subcutaneous injection (prescription-only, patients weighing at least 30 kg); the specific weight-based figures come from the prescribing information and a treating clinician. For research-grade SS-31 there is no validated research-use dose, and Prof. Peptide does not publish one &mdash; the research material is unapproved and is not the branded drug.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Forzinity is a prescription medication. Research-grade SS-31 is sold by specialty peptide vendors for laboratory use only and is not the approved drug. PP maintains a vetted list of vendors with verified discount codes. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Forzinity is a prescription medication. Research-grade SS-31 is sold by specialty peptide vendors for laboratory use only and is not the approved drug. PP maintains a vetted list of vendors with verified discount codes. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -336,7 +336,7 @@ export default function SS31Page() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -374,7 +374,7 @@ export default function SS31Page() {
 
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
         <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>

@@ -98,7 +98,7 @@ export default function VendorTestingIndexPage() {
     <div className="section max-w-6xl">
       <div className="max-w-3xl">
         <div className="flex flex-wrap items-center gap-3 mb-2">
-          <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Vendor COA &amp; Testing-Transparency Index</h1>
+          <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Vendor COA &amp; Testing-Transparency Index</h1>
         </div>
         <p className="text-sm text-gray-500 dark:text-slate-400 mb-6">Last reviewed: June 2026</p>
 
@@ -106,7 +106,7 @@ export default function VendorTestingIndexPage() {
           A structured, side-by-side record of what each research-peptide vendor publicly documents about its lab testing &mdash; third-party testing, Certificates of Analysis, purity standards, and testing methods. Every cell is drawn from the vendor&rsquo;s own materials; nothing is inferred and no vendor&rsquo;s claim is applied to another.
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-          <strong className="font-semibold text-[#1e2d3d] dark:text-slate-100">&ldquo;Pending verification&rdquo; means we have not yet confirmed that data point from a public source &mdash; it is not a negative judgment.</strong> Cells are filled only when verifiable. See{" "}
+          <strong className="font-semibold text-[#16181B] dark:text-slate-100">&ldquo;Pending verification&rdquo; means we have not yet confirmed that data point from a public source &mdash; it is not a negative judgment.</strong> Cells are filled only when verifiable. See{" "}
           <Link href="/methodology" className="text-[#3A759F] hover:underline">how we compile and verify</Link>{" "}
           this data. All entries are for research-use-only context and are not medical advice. Affiliate relationships do not determine vendor inclusion, ranking, or verification &mdash; see our{" "}
           <Link href="/disclaimer" className="text-[#3A759F] hover:underline">disclaimer</Link>.
@@ -122,15 +122,15 @@ export default function VendorTestingIndexPage() {
         </div>
       </div>
 
-      <div className="overflow-x-auto border border-gray-200 dark:border-slate-700 rounded-xl">
+      <div className="overflow-x-auto border border-[#D9DEE4] dark:border-slate-700 rounded-xl">
         <table className="w-full text-xs sm:text-sm border-collapse">
           <thead>
             <tr className="bg-gray-50 dark:bg-[#1e293b] text-left">
-              <th className="px-3 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100 whitespace-nowrap sticky left-0 bg-gray-50 dark:bg-[#1e293b]">Vendor</th>
+              <th className="px-3 py-3 font-semibold text-[#16181B] dark:text-slate-100 whitespace-nowrap sticky left-0 bg-gray-50 dark:bg-[#1e293b]">Vendor</th>
               {COLUMNS.map((c) => (
-                <th key={c.key} className="px-3 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100 whitespace-nowrap">{c.label}</th>
+                <th key={c.key} className="px-3 py-3 font-semibold text-[#16181B] dark:text-slate-100 whitespace-nowrap">{c.label}</th>
               ))}
-              <th className="px-3 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100 whitespace-nowrap">Last verified</th>
+              <th className="px-3 py-3 font-semibold text-[#16181B] dark:text-slate-100 whitespace-nowrap">Last verified</th>
             </tr>
           </thead>
           <tbody>

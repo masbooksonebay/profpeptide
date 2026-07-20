@@ -162,11 +162,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -208,7 +208,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             ZMA pairs naturally with the growth-hormone-axis peptide cluster.{" "}
             <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
@@ -220,7 +220,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
@@ -244,7 +244,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Heavy training programs.</span> Athletes lose meaningful zinc and magnesium through sweat. ZMA is most valuable for high-training-volume users where dietary intake may not keep pace with loss.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid dairy near dose time.</span> Calcium impairs zinc and magnesium absorption. 1–2 hours after last dairy serving is the practical buffer.</li>
@@ -264,7 +264,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea on empty stomach — common with zinc. Resolves with small non-dairy snack.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Loose stools — magnesium-related; magnesium glycinate is gentler than other forms. Reduce dose if persistent.</li>
@@ -273,7 +273,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Copper depletion at sustained zinc &gt;40 mg/day.</span> Causes anemia and neurological symptoms in severe cases. ZMA at 30 mg/day plus other zinc sources can exceed this threshold over months. Audit total zinc intake or add 1–2 mg/day copper supplementation as buffer.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Immune suppression at very high zinc intake (50 mg+/day chronic) — paradoxical effect from excess zinc.</li>
@@ -281,7 +281,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Calcium-containing foods/supplements.</span> Impair zinc and magnesium absorption. Separate by 1–2 hours.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Antibiotics (tetracyclines, fluoroquinolones).</span> Zinc and magnesium chelate these antibiotics and reduce their absorption. Separate by 2–4 hours.</li>
@@ -355,7 +355,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -424,7 +424,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -552,7 +552,7 @@ export default function ZMAPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">ZMA</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">ZMA</h1>
         <span className="tag">Growth Hormone Support</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -560,18 +560,18 @@ export default function ZMAPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Zinc magnesium aspartate, ZMA-5, zinc monomethionine aspartate complex
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Zinc magnesium aspartate, ZMA-5, zinc monomethionine aspartate complex
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Patented mineral + B-vitamin formulation (zinc monomethionine aspartate + magnesium aspartate + B6) / sleep and recovery adjunct
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Patented mineral + B-vitamin formulation (zinc monomethionine aspartate + magnesium aspartate + B6) / sleep and recovery adjunct
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Mixed — Strong for the magnesium-sleep arm (Mah 2021 meta-analysis) and for zinc-deficiency-state testosterone restoration; Weak/refuted for testosterone elevation in zinc-replete athletes (Brilla 2000 positive trial NOT replicated by Wilborn 2004 and subsequent independent studies); package benefits depend heavily on baseline mineral status
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Mixed — Strong for the magnesium-sleep arm (Mah 2021 meta-analysis) and for zinc-deficiency-state testosterone restoration; Weak/refuted for testosterone elevation in zinc-replete athletes (Brilla 2000 positive trial NOT replicated by Wilborn 2004 and subsequent independent studies); package benefits depend heavily on baseline mineral status
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is ZMA?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is ZMA?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             ZMA is a patented combination of zinc monomethionine aspartate (30 mg zinc), magnesium aspartate (450 mg magnesium), and vitamin B6 (10.5 mg pyridoxine), developed by Victor Conte (SNAC System) for athletic recovery and sleep support. It is one of the most marketed athletic supplements of the past 25 years — primarily on the strength of the original Brilla & Conte 2000 trial showing 32% free testosterone elevation in NCAA football players. But the testosterone claim has not held up under replication: Wilborn 2004 in resistance-trained men with adequate baseline minerals found no testosterone effect, and subsequent independent trials in replete athletes confirm the null result. The honest evidence picture: ZMA reliably improves sleep quality through magnesium&apos;s GABA-A modulation arm (Mah 2021 meta-analysis confirms magnesium for sleep), reliably corrects zinc/magnesium deficiencies in athletes with high sweat losses, and may restore testosterone toward normal in zinc-deficient men — but doesn&apos;t pharmacologically elevate testosterone in replete users. ZMA pairs naturally with{" "}
@@ -579,7 +579,7 @@ export default function ZMAPage() {
             because the majority of nightly GH release occurs during slow-wave sleep — which ZMA&apos;s magnesium arm supports.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -593,10 +593,10 @@ export default function ZMAPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 30 mg zinc + 450 mg magnesium + 10.5 mg B6 (the patented ZMA formulation), taken 30–60 minutes before bed on a near-empty stomach (no dairy 1–2 hours prior — calcium impairs zinc/magnesium absorption). Separate zinc + magnesium glycinate at lower elemental doses can replicate the effect at significantly lower cost.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 30 mg zinc + 450 mg magnesium + 10.5 mg B6 (the patented ZMA formulation), taken 30–60 minutes before bed on a near-empty stomach (no dairy 1–2 hours prior — calcium impairs zinc/magnesium absorption). Separate zinc + magnesium glycinate at lower elemental doses can replicate the effect at significantly lower cost.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Total zinc audit:</span> 30 mg ZMA + multivitamin (typically 8–15 mg zinc) + diet can exceed the 40 mg/day Tolerable Upper Intake Level. Sustained excess depletes copper over months. Add 1–2 mg/day copper as a buffer for long-term use, or cycle ZMA.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Total zinc audit:</span> 30 mg ZMA + multivitamin (typically 8–15 mg zinc) + diet can exceed the 40 mg/day Tolerable Upper Intake Level. Sustained excess depletes copper over months. Add 1–2 mg/day copper as a buffer for long-term use, or cycle ZMA.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=ZMA+supplement&tag=profpeptide-20" label="ZMA" />
         </div>
@@ -607,7 +607,7 @@ export default function ZMAPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -636,7 +636,7 @@ export default function ZMAPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
           <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>

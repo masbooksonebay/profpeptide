@@ -172,11 +172,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -218,7 +218,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Bacopa pairs naturally with the Russian-origin cognitive peptide cluster.{" "}
             <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
@@ -228,7 +228,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
@@ -253,7 +253,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Daily consistency.</span> The chronic-effect mechanism only works if you actually take it every day. Pair with an existing daily habit (morning coffee, breakfast) to anchor adherence.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Take with fat-containing meal.</span> Bacosides are lipophilic — a meal with some fat improves bioavailability and reduces GI side effects in one move.</li>
@@ -272,7 +272,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">GI discomfort — nausea, cramping, loose stools or diarrhea, especially on empty stomach. Resolves with food, dose reduction, or split dosing.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Dry mouth — mild and inconsistent; reported in some users.</li>
@@ -281,7 +281,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Bradycardia (slow heart rate) — Calabrese 2008 documented a modest heart-rate reduction in the Bacopa group. Clinically irrelevant for most users but worth noting for users with pre-existing bradycardia.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild thyroid hormone elevation — animal data suggests Bacopa can raise T4; human relevance unclear. Watch if you&apos;re on thyroid medication.</li>
@@ -289,7 +289,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Thyroid medications (levothyroxine, etc.) — Bacopa may modestly elevate T4 in animal models. Coordinate with the prescribing clinician if you&apos;re on thyroid replacement.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anticholinergic medications (some antihistamines, tricyclic antidepressants, bladder medications) — Bacopa&apos;s acetylcholinesterase inhibition may partially oppose these drugs. Consult a clinician if you&apos;re on chronic anticholinergic therapy.</li>
@@ -375,7 +375,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -444,7 +444,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -572,7 +572,7 @@ export default function BacopaMonnieriPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Bacopa Monnieri</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Bacopa Monnieri</h1>
         <span className="tag">Cognitive &amp; Nootropic</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -580,18 +580,18 @@ export default function BacopaMonnieriPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Brahmi, water hyssop, thyme-leaved gratiola, herb of grace, BM, bacosides
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Brahmi, water hyssop, thyme-leaved gratiola, herb of grace, BM, bacosides
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Ayurvedic adaptogenic herb / cumulative nootropic (bacoside-standardized triterpenoid saponin extract)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Ayurvedic adaptogenic herb / cumulative nootropic (bacoside-standardized triterpenoid saponin extract)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — Kongkeaw 2014 meta-analysis of 9 RCTs; multiple independent 12-week RCTs (Stough 2001, Roodenrys 2002, Calabrese 2008, Stough 2008) consistently demonstrating chronic memory and anxiolytic effects; among the better-supported herbal nootropics in the Western literature
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — Kongkeaw 2014 meta-analysis of 9 RCTs; multiple independent 12-week RCTs (Stough 2001, Roodenrys 2002, Calabrese 2008, Stough 2008) consistently demonstrating chronic memory and anxiolytic effects; among the better-supported herbal nootropics in the Western literature
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Bacopa monnieri?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Bacopa monnieri?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Bacopa monnieri is a creeping aquatic herb native to South Asian wetlands and a cornerstone of Ayurvedic medicine, where it has been used for memory and cognitive support for centuries. Its active compounds — bacosides A and B (triterpenoid saponins) — drive the modern nootropic case. Unlike most cognitive supplements that produce acute, same-day effects, Bacopa works through structural neural remodeling: dendritic branching, synaptic protein synthesis, acetylcholinesterase inhibition, and antioxidant neuroprotection. The cognitive benefits are cumulative and build over 8–12 weeks of consistent use. It is one of the better-studied herbal nootropics in Western science — multiple independent 12-week RCTs (Stough, Roodenrys, Calabrese) and the Kongkeaw 2014 meta-analysis consistently show improvements in delayed recall and information retention in healthy adults. It pairs naturally with{" "}
@@ -599,7 +599,7 @@ export default function BacopaMonnieriPage() {
             that work on a different timescale: peptides handle the acute focus and resilience; Bacopa handles the chronic memory consolidation.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -613,10 +613,10 @@ export default function BacopaMonnieriPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 300 mg once daily of an extract standardized to 50–55% bacosides (the dose used in nearly all positive RCTs). Split dosing (150 mg twice daily with meals) is an option for GI tolerability. Higher doses (600 mg/day) are tolerated but don&apos;t clearly accelerate the 8–12 week timeline.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 300 mg once daily of an extract standardized to 50–55% bacosides (the dose used in nearly all positive RCTs). Split dosing (150 mg twice daily with meals) is an option for GI tolerability. Higher doses (600 mg/day) are tolerated but don&apos;t clearly accelerate the 8–12 week timeline.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — particularly around bacoside standardization. Review the quality-markers checklist in the Where to Buy section below before purchasing.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — particularly around bacoside standardization. Review the quality-markers checklist in the Where to Buy section below before purchasing.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=bacopa+monnieri&tag=profpeptide-20" label="Bacopa Monnieri" />
         </div>
@@ -627,7 +627,7 @@ export default function BacopaMonnieriPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -656,7 +656,7 @@ export default function BacopaMonnieriPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha-GPC</Link>
           <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>

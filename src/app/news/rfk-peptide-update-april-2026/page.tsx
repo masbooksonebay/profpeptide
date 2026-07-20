@@ -43,7 +43,7 @@ export default function RFKPeptideUpdatePage() {
         </Link>
 
         <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">April 12, 2026 &middot; Last updated: April 12, 2026</p>
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-6">
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-6">
           RFK&rsquo;s Peptide Ruling: Where Things Stand in April 2026
         </h1>
 
@@ -55,7 +55,7 @@ export default function RFKPeptideUpdatePage() {
             It was the biggest shift in peptide regulation in years. But as of April 2026, the formal FDA reclassification has not been published. Here&rsquo;s where things actually stand.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What RFK Announced</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What RFK Announced</h2>
           <p>
             On February 27, 2026, Kennedy stated that the FDA would move roughly 14 of the 19 restricted peptides back to Category 1 status &mdash; meaning compounding pharmacies could once again prepare them legally under physician prescription. The announcement generated widespread coverage and significant optimism across the peptide research community.
           </p>
@@ -63,7 +63,7 @@ export default function RFKPeptideUpdatePage() {
             The peptides widely expected to return to legal compounding status include BPC-157, TB-500, Thymosin Alpha-1, CJC-1295, Ipamorelin, AOD-9604, Semax, Selank, GHK-Cu, and several others that were pulled from compounding pharmacy shelves in 2023.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What Hasn&rsquo;t Happened Yet</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What Hasn&rsquo;t Happened Yet</h2>
           <p>
             The announcement was a statement of intent &mdash; not a regulatory action. For the reclassification to take effect, the FDA must formally publish an updated list of Category 1 bulk drug substances. That paperwork has not appeared.
           </p>
@@ -74,7 +74,7 @@ export default function RFKPeptideUpdatePage() {
             It is also important to understand what reclassification does and does not mean. Moving a peptide from Category 2 to Category 1 restores its eligibility for compounding under physician prescription &mdash; it does not constitute FDA approval. Compounded peptides would still require a valid prescription, still lack formal FDA approval as finished drug products, and still carry no standardized dosing guidelines.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Why the Delay Matters</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Why the Delay Matters</h2>
           <p>
             The gray market fills the gap. Since the 2023 restrictions, researchers have largely turned to vendors selling peptides labeled &ldquo;for research use only&rdquo; &mdash; the category that Prof. Peptide&rsquo;s{" "}
             <Link href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">vetted vendor network</Link>{" "}
@@ -84,7 +84,7 @@ export default function RFKPeptideUpdatePage() {
             When the formal reclassification does arrive, compounding pharmacies will need time to source pharmaceutical-grade ingredients and ramp up production. Industry groups have warned that even after a formal announcement, supply through compounding channels may take weeks or months to stabilize.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What to Watch For</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What to Watch For</h2>
           <p>
             The FDA&rsquo;s formal updated bulk drug substance list is the key document to watch. When it is published, it will confirm exactly which of the 19 peptides are moving to Category 1, the timeline for compounding pharmacies to begin preparations, and any conditions or requirements attached to the reclassification.
           </p>
@@ -106,7 +106,7 @@ export default function RFKPeptideUpdatePage() {
         </div>
 
         <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Explore More</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-3">Explore More</h2>
           <div className="flex flex-wrap gap-3">
             <Link href="/peptides" className="btn-primary text-sm">Explore Compound Profiles</Link>
             <Link href="/best-peptide-vendors" className="btn-outline text-sm">Best Peptide Vendors</Link>

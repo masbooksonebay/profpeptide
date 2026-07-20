@@ -173,7 +173,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Semax + Selank is administered as an intranasal spray. Dosing is in micrograms per spray per peptide; protocols range from a single spray per nostril once daily up to 2–3 sprays per nostril 2–3× daily, depending on the goal and individual response.
         </p>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           Standard research protocol (20 mg blend vial):
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -185,7 +185,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Timing.</span> Morning is the default. Pre-stressor dosing (30–60 minutes before a known stress trigger) is documented in research-community use.</li>
         </ol>
         <div className="pt-4">
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Pre-blended formulations (research-grade vials)
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -264,7 +264,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -275,7 +275,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -285,7 +285,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -354,7 +354,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -423,7 +423,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -450,7 +450,7 @@ export default function SemaxSelankPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Semax + Selank</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Semax + Selank</h1>
         <span className="tag">Cognitive &amp; Nootropic</span>
         <span className="tag">Research-Grade</span>
         <span className="tag">Combination Blend</span>
@@ -460,18 +460,18 @@ export default function SemaxSelankPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Semax/Selank Blend, Cognitive-Anxiolytic Stack
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Semax/Selank Blend, Cognitive-Anxiolytic Stack
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Cognitive &amp; Anxiolytic Peptide Blend (2-component)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Cognitive &amp; Anxiolytic Peptide Blend (2-component)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Research-grade only in US (both components approved as pharmaceuticals in Russia)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research-grade only in US (both components approved as pharmaceuticals in Russia)
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Semax + Selank?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Semax + Selank?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Semax + Selank is a 2-component intranasal peptide blend pairing two synthetic heptapeptides:{" "}
@@ -481,7 +481,7 @@ export default function SemaxSelankPage() {
             (a tuftsin analog). Both were developed at the Institute of Molecular Genetics of the Russian Academy of Sciences and are approved as pharmaceuticals in Russia — Semax for post-stroke neuroprotection and cognitive applications, Selank for generalized anxiety disorder. The blend pairs cognitive enhancement (Semax: BDNF upregulation, dopaminergic and serotonergic modulation) with anxiolytic effects (Selank: indirect GABAergic modulation) in a single intranasal spray — producing sharper focus and reduced anxiety simultaneously, without sedation, dependence, or withdrawal.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -494,10 +494,10 @@ export default function SemaxSelankPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> 1–3 sprays per nostril, 1–3× daily — typically ~100 mcg of each peptide per spray when a 20 mg vial (10 mg + 10 mg) is reconstituted into a 10 mL nasal spray bottle. Standard total daily dose: 300–600 mcg Semax + 300–900 mcg Selank, consistent with the per-component Russian clinical protocols.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> 1–3 sprays per nostril, 1–3× daily — typically ~100 mcg of each peptide per spray when a 20 mg vial (10 mg + 10 mg) is reconstituted into a 10 mL nasal spray bottle. Standard total daily dose: 300–600 mcg Semax + 300–900 mcg Selank, consistent with the per-component Russian clinical protocols.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sold as a pre-blended 20 mg vial by specialty research peptide vendors, typically reconstituted into a nasal spray bottle. Neither component is FDA-approved (both are approved in Russia). See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sold as a pre-blended 20 mg vial by specialty research peptide vendors, typically reconstituted into a nasal spray bottle. Neither component is FDA-approved (both are approved in Russia). See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -511,7 +511,7 @@ export default function SemaxSelankPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -549,7 +549,7 @@ export default function SemaxSelankPage() {
 
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/semax" className="text-sm font-medium text-[#3A759F] hover:underline">Semax</Link>
         <Link href="/peptides/selank" className="text-sm font-medium text-[#3A759F] hover:underline">Selank</Link>

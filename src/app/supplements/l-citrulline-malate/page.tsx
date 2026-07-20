@@ -174,11 +174,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -220,7 +220,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-citrulline malate's pre-workout context is mostly supplement-based, not peptide-based. The natural peptide pairings are with the GH-secretagogue cluster for users targeting training-driven hypertrophy:{" "}
             <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
@@ -232,7 +232,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine monohydrate</Link>{" "}
@@ -262,7 +262,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Match training type.</span> Citrulline malate has the strongest evidence in resistance training. For pure endurance (long-duration cycling, running), the malate component is less central — pure L-citrulline at 3–6 g is comparable.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Consistent training timing.</span> Citrulline malate effect is acute and dose-timed. Aim for consistent 30–60 min pre-workout dosing across training sessions.</li>
@@ -283,7 +283,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort at single doses above 8 g — splitting dose into 2 servings 30 min apart eliminates this.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Modest acute blood pressure reduction — generally favorable, relevant with antihypertensive medications.</li>
@@ -291,7 +291,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">No herpes outbreak risk.</span> Unlike L-arginine, citrulline doesn&apos;t compete with lysine for cellular transport.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">No post-MI mortality signal.</span> The VINTAGE-MI safety finding is specific to L-arginine. Citrulline has not shown an analogous adverse signal.</li>
@@ -300,7 +300,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Nitrate medications (nitroglycerin, isosorbide). DO NOT COMBINE.</span> Same NO/cGMP convergence as PDE5 inhibitors + nitrates — combination produces dangerous hypotension.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">PDE5 inhibitors (sildenafil, tadalafil).</span> Additive vasodilation — generally tolerated but coordinate with prescriber.</li>
@@ -374,7 +374,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -437,7 +437,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -533,7 +533,7 @@ export default function LCitrullineMalatePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">L-Citrulline Malate</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">L-Citrulline Malate</h1>
         <span className="tag">Performance &amp; Energy</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -541,18 +541,18 @@ export default function LCitrullineMalatePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Citrulline malate, CM, L-citrulline DL-malate (2:1); parent profile:{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}for non-exercise NO/vascular applications
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Citrulline malate, CM, L-citrulline DL-malate (2:1); parent profile:{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}for non-exercise NO/vascular applications
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Pre-workout ergogenic / nitric oxide pathway precursor (citrulline arm) + Krebs-cycle intermediate and pH buffer (malate arm) / two-mechanism resistance-training performance compound
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Pre-workout ergogenic / nitric oxide pathway precursor (citrulline arm) + Krebs-cycle intermediate and pH buffer (malate arm) / two-mechanism resistance-training performance compound
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong for resistance-training rep volume and post-exercise soreness reduction (Pérez-Guisado 2010 — 52.92% more reps, 40% less DOMS at 8 g pre-workout; Rhim 2020 meta-analysis of 13 RCTs confirms reduced RPE and soreness). Moderate for oxidative ATP production rate (Bendahan 2002 — 34% increase via 31-P MRS). Strong pharmacokinetic case for citrulline-based NO elevation vs L-arginine (Schwedhelm 2008). Endurance effect sizes smaller than resistance training.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong for resistance-training rep volume and post-exercise soreness reduction (Pérez-Guisado 2010 — 52.92% more reps, 40% less DOMS at 8 g pre-workout; Rhim 2020 meta-analysis of 13 RCTs confirms reduced RPE and soreness). Moderate for oxidative ATP production rate (Bendahan 2002 — 34% increase via 31-P MRS). Strong pharmacokinetic case for citrulline-based NO elevation vs L-arginine (Schwedhelm 2008). Endurance effect sizes smaller than resistance training.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is L-citrulline malate?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is L-citrulline malate?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-citrulline malate is the amino acid L-citrulline bonded to malic acid in a 2:1 ratio — two parts citrulline to one part malate by mass. The citrulline arm reaches the nitric oxide pathway through the same kidney-conversion route covered in detail on the{" "}
@@ -560,7 +560,7 @@ export default function LCitrullineMalatePage() {
             (oral citrulline escapes first-pass intestinal/hepatic arginase metabolism, reaches the kidneys, is converted to arginine, which serves as NOS substrate — producing NO that vasodilates working muscle). The malate arm contributes its own mechanism: malic acid is a Krebs-cycle intermediate that may support aerobic ATP production during high-intensity exercise and provides acid-base buffering against exercise-induced lactic acid accumulation. The trial evidence base for the malate-bonded form is concentrated in pre-workout resistance training contexts. Pérez-Guisado 2010 — the foundational trial — documented that 8 g L-citrulline malate before an upper-body resistance training session produced 52.92% more repetitions and 40% lower muscle soreness at 24 and 48 hours post-exercise. Rhim 2020 meta-analysis of 13 RCTs confirmed reduced rating of perceived exertion and reduced muscle soreness across the broader trial base. Bendahan 2002 used 31-phosphorus magnetic resonance spectroscopy to directly measure 34% higher oxidative ATP production rate and 20% faster phosphocreatine recovery with citrulline malate supplementation. This is one of the strongest pre-workout supplement evidence bases — citrulline malate stacks naturally with caffeine, creatine, and beta-alanine in evidenced pre-workout protocols. For non-exercise NO applications (erectile dysfunction, blood pressure, endothelial function), pure L-citrulline is sufficient and more cost-efficient.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -575,10 +575,10 @@ export default function LCitrullineMalatePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 6–8 g L-citrulline malate (2:1 form) taken 30–60 minutes before training. 8 g is the Pérez-Guisado 2010 trial-validated dose. Pre-workout only — no chronic loading required. For non-exercise NO/vascular applications, use pure{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}— the malate component is exercise-specific.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 6–8 g L-citrulline malate (2:1 form) taken 30–60 minutes before training. 8 g is the Pérez-Guisado 2010 trial-validated dose. Pre-workout only — no chronic loading required. For non-exercise NO/vascular applications, use pure{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}— the malate component is exercise-specific.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Mild GI discomfort at single doses above 8 g (split dosing helps); modest acute blood pressure reduction during the pre-workout window (favorable but relevant with antihypertensives); do not combine with nitrate medications (additive cGMP/hypotension); no herpes outbreak risk like L-arginine.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Mild GI discomfort at single doses above 8 g (split dosing helps); modest acute blood pressure reduction during the pre-workout window (favorable but relevant with antihypertensives); do not combine with nitrate medications (additive cGMP/hypotension); no herpes outbreak risk like L-arginine.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=l-citrulline+malate+2%3A1+powder&tag=profpeptide-20" label="L-Citrulline Malate" />
         </div>
@@ -589,7 +589,7 @@ export default function LCitrullineMalatePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -618,7 +618,7 @@ export default function LCitrullineMalatePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/l-citrulline" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline</Link>
           <Link href="/supplements/creatine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine</Link>

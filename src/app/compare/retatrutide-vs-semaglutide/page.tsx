@@ -33,7 +33,7 @@ export default function RetatrutideVsSemaglutidePage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Retatrutide vs Semaglutide — GLP Triple Agonist vs Single Agonist"}]}} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Retatrutide vs Semaglutide &mdash; Triple Agonist vs Single Agonist Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Retatrutide vs Semaglutide &mdash; Triple Agonist vs Single Agonist Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Semaglutide and Retatrutide sit at opposite ends of the GLP class. Semaglutide activates one receptor (GLP-1) and is FDA-approved with the longest safety record in the class. Retatrutide activates three (GLP-1, GIP, and glucagon) and is still investigational, but Phase 3 trials show it producing nearly twice the weight loss. Here&apos;s how they compare.</p>
 
       <div className="overflow-x-auto mb-8">
@@ -48,7 +48,7 @@ export default function RetatrutideVsSemaglutidePage() {
           <tbody>
             {rows.map(([label, a, b], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-                <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+                <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
               </tr>
@@ -59,21 +59,21 @@ export default function RetatrutideVsSemaglutidePage() {
 
       <div className="space-y-4 mb-8">
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Choose Retatrutide if:</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Choose Retatrutide if:</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300">Maximum weight loss is the priority and FDA approval / prescription access aren&apos;t required. Best for research settings exploring the cutting edge of the GLP class.</p>
         </div>
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Choose Semaglutide if:</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Choose Semaglutide if:</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300">You want the most established FDA-approved option with years of safety data, proven cardiovascular benefit, and the broadest list of approved indications. Best for users who want a long track record.</p>
         </div>
         <div className="border border-[#3A759F]/20 rounded-xl p-5 bg-[#3A759F]/10">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Consider the bigger picture:</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Consider the bigger picture:</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300">For the full picture of the GLP class evolution, see the <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide</Link> 3-way comparison.</p>
         </div>
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300">Retatrutide is the most powerful weight loss peptide in trials so far. <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> has the most established safety record, the only proven cardiovascular benefit in the class (SELECT trial), and the most approved indications. Retatrutide&apos;s dysesthesia signal (~21% at 12mg) is the most notable side-effect difference between the two.</p>
       </div>
 

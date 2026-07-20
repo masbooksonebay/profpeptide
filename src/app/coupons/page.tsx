@@ -249,7 +249,7 @@ function CodeBox({ code }: { code: string }) {
   return (
     <button
       onClick={handleCopy}
-      className="block w-full bg-gray-50 dark:bg-[#1e293b] border border-gray-200 dark:border-slate-600 px-4 py-2.5 rounded-lg text-sm font-mono font-bold text-[#1e2d3d] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:bg-gray-100 dark:bg-slate-700 transition-colors"
+      className="block w-full bg-gray-50 dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-600 px-4 py-2.5 rounded-lg text-sm font-mono font-bold text-[#16181B] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:bg-gray-100 dark:bg-slate-700 transition-colors"
     >
       {copied ? (
         <span className="text-[#3A759F] font-sans font-medium tracking-normal">Copied!</span>
@@ -265,7 +265,7 @@ function VendorCard({ v }: { v: Vendor }) {
     <div
       className={`rounded-xl overflow-hidden transition-all duration-200 ${
         v.detailPage
-            ? "border border-gray-200 dark:border-slate-600 shadow-sm hover:shadow-md hover:border-[#3A759F]/40 bg-white dark:bg-[#0f172a]"
+            ? "border border-[#D9DEE4] dark:border-slate-600 shadow-sm hover:shadow-md hover:border-[#3A759F]/40 bg-white dark:bg-[#0f172a]"
             : "border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-md bg-white dark:bg-[#0f172a]"
       }`}
     >
@@ -280,11 +280,11 @@ function VendorCard({ v }: { v: Vendor }) {
           }`}
         >
           {v.detailPage ? (
-            <Link href={v.detailPage} className="inline-block text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-all duration-150 hover:scale-105 origin-left">
+            <Link href={v.detailPage} className="inline-block text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-all duration-150 hover:scale-105 origin-left">
               {v.name}
             </Link>
           ) : (
-            <span className="text-[#1e2d3d] dark:text-slate-100">{v.name}</span>
+            <span className="text-[#16181B] dark:text-slate-100">{v.name}</span>
           )}
         </h2>
         <span className="text-xs font-bold text-[#3A759F] bg-[#3A759F]/15 px-2.5 py-1 rounded-full whitespace-nowrap">
@@ -318,7 +318,7 @@ function VendorCard({ v }: { v: Vendor }) {
             </span>
           )}
           {v.region && (
-            <span className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-500 dark:text-slate-400 border border-gray-200 dark:border-slate-600 px-2 py-0.5 rounded-full">
+            <span className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-500 dark:text-slate-400 border border-[#D9DEE4] dark:border-slate-600 px-2 py-0.5 rounded-full">
               {v.region}
             </span>
           )}
@@ -333,7 +333,7 @@ function VendorCard({ v }: { v: Vendor }) {
           {v.code ? (
             <CodeBox code={v.code} />
           ) : (
-            <div className="w-full bg-gray-50 dark:bg-[#1e293b] border border-gray-200 dark:border-slate-600 px-4 py-2.5 rounded-lg text-sm text-center text-gray-500 dark:text-slate-400 italic">Coming soon</div>
+            <div className="w-full bg-gray-50 dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-600 px-4 py-2.5 rounded-lg text-sm text-center text-gray-500 dark:text-slate-400 italic">Coming soon</div>
           )}
         </div>
 
@@ -363,13 +363,13 @@ export default function CouponsPage() {
   return (
     <div className="section max-w-3xl">
       <span className="tag mb-3 inline-block">Updated Regularly</span>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-8">Discount Codes</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-8">Discount Codes</h1>
 
       <div className="flex items-center justify-center gap-2.5 mb-8 py-3.5 px-4 bg-[#3A759F]/10 border border-[#3A759F]/30 rounded-lg">
         <svg className="w-5 h-5 text-[#3A759F] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
-        <p className="text-base font-bold text-[#1e2d3d] dark:text-white tracking-tight">
+        <p className="text-base font-bold text-[#16181B] dark:text-white tracking-tight">
           Verified codes &mdash; {CODES_VERIFIED_DATE}
         </p>
       </div>
@@ -391,7 +391,7 @@ export default function CouponsPage() {
 
       <Link href="/vendor-testing-index" className="card group block mb-4">
         <span className="text-[#3A759F] mb-3 block"><Icon name="shield-block-outline" /></span>
-        <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1.5 group-hover:text-[#3A759F] transition-colors">Vendor COA &amp; Testing-Transparency Index</h3>
+        <h3 className="text-base font-semibold text-[#16181B] dark:text-slate-100 mb-1.5 group-hover:text-[#3A759F] transition-colors">Vendor COA &amp; Testing-Transparency Index</h3>
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           A side-by-side record of every vendor&rsquo;s documented third-party testing, COAs, purity standards, and testing methods — with honest &ldquo;pending&rdquo; where unconfirmed.
         </p>
@@ -400,7 +400,7 @@ export default function CouponsPage() {
 
       <Link href="/best-peptide-vendors" className="card group block mb-8">
         <span className="text-[#3A759F] mb-3 block"><Icon name="shield-block-outline" /></span>
-        <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1.5 group-hover:text-[#3A759F] transition-colors">Best Peptide Vendors</h3>
+        <h3 className="text-base font-semibold text-[#16181B] dark:text-slate-100 mb-1.5 group-hover:text-[#3A759F] transition-colors">Best Peptide Vendors</h3>
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           Our vetted list of research peptide suppliers — with third-party testing, published COAs, and the quality criteria we use to include them.
         </p>

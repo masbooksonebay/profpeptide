@@ -20,9 +20,9 @@ import {
 
 const inputCls =
   "w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#3A759F] transition";
-const labelCls = "block text-sm font-medium mb-1.5 text-[#1e2d3d] dark:text-slate-200";
+const labelCls = "block text-sm font-medium mb-1.5 text-[#16181B] dark:text-slate-200";
 const cardCls =
-  "bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl p-6 shadow-sm";
+  "bg-white dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-700 rounded-xl p-6 shadow-sm";
 
 function todayStr(): string {
   return new Date().toISOString().slice(0, 10);
@@ -195,7 +195,7 @@ export default function LogPage() {
         <div className="mb-8">
           <span className="tag mb-4 inline-block">Tracker</span>
           <h1
-            className="text-3xl sm:text-4xl font-semibold mb-3 text-[#1e2d3d] dark:text-slate-100"
+            className="text-3xl sm:text-4xl font-semibold mb-3 text-[#16181B] dark:text-slate-100"
             style={{ letterSpacing: "-0.02em" }}
           >
             Peptide Protocol Log
@@ -211,7 +211,7 @@ export default function LogPage() {
         {/* Full protocol tracking lives in the iOS app */}
         <div className="mb-8 rounded-xl px-5 py-4 bg-[#3A759F]/10 border border-[#3A759F]/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100">
+            <p className="text-sm font-semibold text-[#16181B] dark:text-slate-100">
               Full protocol tracking is in the Prof. Peptide iOS app
             </p>
             <p className="text-sm text-gray-600 dark:text-slate-300 mt-0.5">
@@ -232,7 +232,7 @@ export default function LogPage() {
         </div>
 
         {/* Privacy microcopy */}
-        <div className="mb-8 rounded-lg px-4 py-3 bg-[#3A759F]/10 border border-[#3A759F]/20 text-sm text-[#1e2d3d] dark:text-slate-200">
+        <div className="mb-8 rounded-lg px-4 py-3 bg-[#3A759F]/10 border border-[#3A759F]/20 text-sm text-[#16181B] dark:text-slate-200">
           Your log is saved on this device only — no account needed, and nothing leaves your browser. Cross-device sync is coming soon. For now, use Export to back up your log or move it to another device.
         </div>
 
@@ -246,7 +246,7 @@ export default function LogPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Form */}
           <div className={cardCls}>
-            <h2 className="text-lg font-semibold mb-6 text-[#1e2d3d] dark:text-slate-100">
+            <h2 className="text-lg font-semibold mb-6 text-[#16181B] dark:text-slate-100">
               {editingId ? "Edit Entry" : "Add Entry"}
             </h2>
 
@@ -343,7 +343,7 @@ export default function LogPage() {
 
           {/* Live results */}
           <div className={`${cardCls} flex flex-col`}>
-            <h2 className="text-lg font-semibold mb-6 text-[#1e2d3d] dark:text-slate-100">
+            <h2 className="text-lg font-semibold mb-6 text-[#16181B] dark:text-slate-100">
               Calculated Results
             </h2>
             {!live ? (
@@ -356,7 +356,7 @@ export default function LogPage() {
               <div className="space-y-4">
                 <div className="rounded-lg p-4 bg-[#3A759F]/10 border border-[#3A759F]/20">
                   <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">Concentration</p>
-                  <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
+                  <p className="text-2xl font-semibold text-[#16181B] dark:text-slate-100">
                     {live.concentrationMcgPerMl.toFixed(2)}{" "}
                     <span className="text-base font-normal text-gray-500 dark:text-slate-400">mcg / mL</span>
                   </p>
@@ -366,14 +366,14 @@ export default function LogPage() {
                 </div>
                 <div className="rounded-lg p-4 bg-[#3A759F]/10 border border-[#3A759F]/20">
                   <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">Draw Volume</p>
-                  <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
+                  <p className="text-2xl font-semibold text-[#16181B] dark:text-slate-100">
                     {live.drawVolumeMl.toFixed(3)}{" "}
                     <span className="text-base font-normal text-gray-500 dark:text-slate-400">mL</span>
                   </p>
                 </div>
                 <div className="rounded-lg p-4 bg-[#3A759F]/10 border border-[#3A759F]/20">
                   <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">Insulin Syringe Units (U-100)</p>
-                  <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
+                  <p className="text-2xl font-semibold text-[#16181B] dark:text-slate-100">
                     {live.syringeUnits.toFixed(1)}{" "}
                     <span className="text-base font-normal text-gray-500 dark:text-slate-400">units</span>
                   </p>
@@ -386,7 +386,7 @@ export default function LogPage() {
         {/* Saved entries */}
         <div className="mt-12">
           <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100">
               Saved Entries{mounted && entries.length > 0 ? ` (${entries.length})` : ""}
             </h2>
             <div className="flex flex-wrap gap-2">
@@ -422,10 +422,10 @@ export default function LogPage() {
                   vialMg: e.vialMg, bacWaterMl: e.bacWaterMl, dose: e.desiredDose, doseUnit: e.doseUnit,
                 });
                 return (
-                  <div key={e.id} className="bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl p-5 shadow-sm">
+                  <div key={e.id} className="bg-white dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-700 rounded-xl p-5 shadow-sm">
                     <div className="flex flex-wrap items-start justify-between gap-3">
                       <div className="min-w-0">
-                        <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100">{e.compound}</h3>
+                        <h3 className="text-base font-semibold text-[#16181B] dark:text-slate-100">{e.compound}</h3>
                         <p className="text-sm text-gray-500 dark:text-slate-400 mt-0.5">
                           {e.vialMg} mg vial · {e.bacWaterMl} mL BAC · {e.desiredDose} {e.doseUnit} dose
                           {e.reconstitutionDate ? <> · reconstituted {e.reconstitutionDate}</> : null}
@@ -447,16 +447,16 @@ export default function LogPage() {
                       <div className="grid grid-cols-3 gap-3 mt-4">
                         <div className="rounded-lg p-3 bg-gray-50 dark:bg-[#0f172a] border border-gray-100 dark:border-slate-700">
                           <p className="text-[11px] font-medium uppercase tracking-wide text-[#3A759F]">Concentration</p>
-                          <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mt-0.5">{r.concentrationMcgPerMl.toFixed(2)} mcg/mL</p>
+                          <p className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mt-0.5">{r.concentrationMcgPerMl.toFixed(2)} mcg/mL</p>
                           <p className="text-[11px] text-gray-400 dark:text-slate-500">{r.concentrationMgPerMl.toFixed(3)} mg/mL</p>
                         </div>
                         <div className="rounded-lg p-3 bg-gray-50 dark:bg-[#0f172a] border border-gray-100 dark:border-slate-700">
                           <p className="text-[11px] font-medium uppercase tracking-wide text-[#3A759F]">Draw Volume</p>
-                          <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mt-0.5">{r.drawVolumeMl.toFixed(3)} mL</p>
+                          <p className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mt-0.5">{r.drawVolumeMl.toFixed(3)} mL</p>
                         </div>
                         <div className="rounded-lg p-3 bg-gray-50 dark:bg-[#0f172a] border border-gray-100 dark:border-slate-700">
                           <p className="text-[11px] font-medium uppercase tracking-wide text-[#3A759F]">Syringe Units</p>
-                          <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mt-0.5">{r.syringeUnits.toFixed(1)} U-100</p>
+                          <p className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mt-0.5">{r.syringeUnits.toFixed(1)} U-100</p>
                         </div>
                       </div>
                     )}

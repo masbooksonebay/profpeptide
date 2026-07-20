@@ -10,7 +10,7 @@ export default function HeroSearch() {
       type="button"
       onClick={() => window.dispatchEvent(new Event("open-search"))}
       aria-label="Search peptides, vendors, and comparisons"
-      className="group mx-auto mb-8 flex w-full max-w-xl items-center gap-3 rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-[#1e293b] px-4 py-3.5 text-left shadow-[0_1px_3px_rgba(16,24,40,0.08),0_4px_12px_-2px_rgba(16,24,40,0.08)] dark:shadow-sm hover:border-brand transition-colors"
+      className="group mx-auto mb-8 flex w-full max-w-xl items-center gap-3 rounded-xl border border-[#D9DEE4] dark:border-slate-700 bg-white dark:bg-[#1e293b] px-4 py-3.5 text-left shadow-[0_1px_3px_rgba(16,24,40,0.08),0_4px_12px_-2px_rgba(16,24,40,0.08)] dark:shadow-sm hover:border-brand transition-colors"
     >
       <svg
         className="w-5 h-5 text-gray-400 group-hover:text-brand transition-colors flex-shrink-0"
@@ -25,7 +25,7 @@ export default function HeroSearch() {
       <span className="flex-1 text-base text-gray-400 dark:text-slate-500">
         Search peptides, vendors, comparisons&hellip;
       </span>
-      <kbd className="hidden sm:inline-flex items-center rounded border border-gray-200 dark:border-slate-600 px-1.5 py-0.5 text-xs font-medium text-gray-400 dark:text-slate-500">
+      <kbd className="hidden sm:inline-flex items-center rounded border border-[#D9DEE4] dark:border-slate-600 px-1.5 py-0.5 text-xs font-medium text-gray-400 dark:text-slate-500">
         &#8984;K
       </kbd>
     </button>

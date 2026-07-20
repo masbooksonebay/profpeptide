@@ -44,7 +44,7 @@ export default function Eco2026OralGlp1RecapMay2026Page() {
         </Link>
 
         <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">May 17, 2026 &middot; Last updated: May 17, 2026</p>
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-6">
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-6">
           ECO2026 Recap &mdash; Oral GLP-1 Data from Novo, Lilly, and Viking
         </h1>
 
@@ -53,7 +53,7 @@ export default function Eco2026OralGlp1RecapMay2026Page() {
             The European Congress on Obesity (ECO2026) ran May 12-15, 2026, in Istanbul, T&uuml;rkiye. Three companies &mdash; Novo Nordisk, Eli Lilly, and Viking Therapeutics &mdash; presented new data on oral GLP-1 receptor agonists, advancing what has historically been an injectable-dominated category. Here&rsquo;s a breakdown of what each company showed and how the data fits into the broader landscape.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Novo Nordisk &mdash; Wegovy Pill (Oral Semaglutide 25mg)</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Novo Nordisk &mdash; Wegovy Pill (Oral Semaglutide 25mg)</h2>
           <p>
             Novo Nordisk presented sub-analyses from its Phase 3 OASIS 4 trial on May 13. The headline finding centered on early responders &mdash; patients who achieved at least 10% weight loss by week 16 of treatment.
           </p>
@@ -79,7 +79,7 @@ export default function Eco2026OralGlp1RecapMay2026Page() {
             Wegovy pill is currently the only FDA-approved oral GLP-1 receptor agonist for weight management.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Eli Lilly &mdash; ATTAIN-MAINTAIN and SURMOUNT-MAINTAIN</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Eli Lilly &mdash; ATTAIN-MAINTAIN and SURMOUNT-MAINTAIN</h2>
           <p>
             Lilly&rsquo;s ECO2026 presentations focused on a different clinical question: can oral GLP-1 drugs maintain weight loss after a patient stops taking injectable therapy?
           </p>
@@ -104,7 +104,7 @@ export default function Eco2026OralGlp1RecapMay2026Page() {
             The maintenance angle is clinically significant. One of the well-documented challenges of GLP-1 therapy is weight regain after discontinuation. These trials suggest oral GLP-1s could play a role as long-term maintenance drugs following an initial course of injectable treatment.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Viking Therapeutics &mdash; VK2735 Phase 2</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Viking Therapeutics &mdash; VK2735 Phase 2</h2>
           <p>
             Viking Therapeutics presented additional data from its Phase 2 VENTURE-Oral Dosing trial on May 12. VK2735 is a dual GLP-1/GIP receptor agonist &mdash; the same receptor combination as tirzepatide &mdash; with both subcutaneous and oral formulations in development.
           </p>
@@ -112,12 +112,12 @@ export default function Eco2026OralGlp1RecapMay2026Page() {
             The oral tablet formulation places Viking in direct competition with Novo&rsquo;s Wegovy pill and Lilly&rsquo;s Foundayo. The oral GLP-1 category is no longer a two-horse race. Viking has not yet announced Phase 3 timing for the oral formulation, but the program continues to advance as a credible third entrant.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">MFN Pricing Context</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">MFN Pricing Context</h2>
           <p>
             In parallel with the clinical readouts, Novo Nordisk and Eli Lilly both struck &ldquo;most favored nation&rdquo; (MFN) pricing deals with the Trump administration. Both companies agreed to lower prices for their GLP-1 medications for Medicare and Medicaid recipients via the TrumpRx platform, which launched in January 2026. The pricing structure affects both injectable and oral formulations across the category.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What It Means</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What It Means</h2>
           <p>
             Several themes emerge from ECO2026:
           </p>
@@ -145,7 +145,7 @@ export default function Eco2026OralGlp1RecapMay2026Page() {
         </div>
 
         <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Explore More</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-3">Explore More</h2>
           <div className="flex flex-wrap gap-3">
             <Link href="/peptides/semaglutide" className="btn-primary text-sm">Semaglutide Profile</Link>
             <Link href="/peptides/tirzepatide" className="btn-outline text-sm">Tirzepatide Profile</Link>

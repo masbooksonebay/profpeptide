@@ -10,7 +10,7 @@ export default function ContactLink({
   const subject = `Question about ${pageName}`;
   const href = `/contact?subject=${encodeURIComponent(subject)}&from=${encodeURIComponent(pagePath)}`;
   return (
-    <div className="mt-12 pt-8 border-t border-gray-200 dark:border-slate-700/50">
+    <div className="mt-12 pt-8 border-t border-[#D9DEE4] dark:border-slate-700/50">
       <p className="text-base text-gray-500 dark:text-slate-400 leading-relaxed">
         Have a question about{" "}
         <span className="text-gray-700 dark:text-slate-300">{pageName}</span>?{" "}

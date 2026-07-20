@@ -44,7 +44,7 @@ export default function AmgenMariTideGLP1GIPExplainer2026Page() {
         </Link>
 
         <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">June 5, 2026 &middot; Last updated: June 5, 2026</p>
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-4">
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">
           What Is MariTide? Amgen&rsquo;s Once-Monthly GLP-1/GIP Drug Heads Into a Six-Study Phase 3 Program
         </h1>
         <p className="text-base font-medium text-gray-600 dark:text-slate-300 leading-relaxed mb-6">
@@ -75,7 +75,7 @@ export default function AmgenMariTideGLP1GIPExplainer2026Page() {
             MariTide is not FDA-approved; it remains investigational, with access limited to its trials. But between the monthly dosing, the distinct GIP-antagonist mechanism, and a Phase 3 footprint reaching well beyond weight loss, it&rsquo;s one of the more closely watched peptide-based assets in the pipeline.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Sources</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Sources</h2>
           <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-slate-300">
             <li>
               <a
@@ -108,7 +108,7 @@ export default function AmgenMariTideGLP1GIPExplainer2026Page() {
         </div>
 
         <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Explore More</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-3">Explore More</h2>
           <div className="flex flex-wrap gap-3">
             <Link href="/peptides/tirzepatide" className="btn-primary text-sm">Tirzepatide Profile</Link>
             <Link href="/coupons" className="btn-outline text-sm">Browse Discount Codes</Link>

@@ -42,11 +42,11 @@ export default function AshwagandhaVsRhodiolaPage() {
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Ashwagandha vs Rhodiola Rosea &mdash; Adaptogen Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Ashwagandha vs Rhodiola Rosea &mdash; Adaptogen Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link> and <Link href="/supplements/rhodiola-rosea" className="text-[#3A759F] hover:underline">Rhodiola Rosea</Link> are the two most evidence-backed adaptogens. Both reduce stress and improve performance &mdash; but they work through different mechanisms and are best suited to different situations. Ashwagandha primarily lowers cortisol and reduces anxiety. Rhodiola primarily enhances mental performance and physical endurance under stress.</p>
 
       <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why two adaptogens that both reduce stress aren&apos;t interchangeable</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Why two adaptogens that both reduce stress aren&apos;t interchangeable</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Both ashwagandha and rhodiola are classified as &ldquo;adaptogens&rdquo; &mdash; herbs traditionally used to help the body adapt to stress. But this category is loose, and the two herbs work through fundamentally different biological mechanisms.
         </p>
@@ -73,7 +73,7 @@ export default function AshwagandhaVsRhodiolaPage() {
           </tr></thead>
           <tbody>{rows.map(([label, a, b], i) => (
             <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-              <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+              <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
               <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
               <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
             </tr>
@@ -81,37 +81,37 @@ export default function AshwagandhaVsRhodiolaPage() {
         </table>
       </div>
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which one is right for you?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Which one is right for you?</h2>
         <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           Both are well-evidenced adaptogens, but they target different stress problems. Match the herb to the symptom pattern.
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Chronic stress, anxiety, or sleep problems</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Chronic stress, anxiety, or sleep problems</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Ashwagandha is the more direct match. Multiple RCTs confirm ~20&ndash;30% cortisol reduction with 4&ndash;8 weeks of consistent dosing. Effects build gradually but are deeper. KSM-66 or Sensoril extracts (300&ndash;600mg daily) are the most-studied commercial forms. Improved sleep quality is a frequent reported effect.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Acute mental fatigue, focus under stress, or burnout</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Acute mental fatigue, focus under stress, or burnout</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Rhodiola is the more direct match. The Hsp70 mechanism is about helping cells handle stress in the moment rather than reducing long-term cortisol. Effects begin in days. Standard dosing is 200&ndash;400mg of standardized extract (3% rosavins, 1% salidroside) once or twice daily. Best for high-demand workdays, deadline weeks, or burnout recovery.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Athletic endurance or VO2max focus</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Athletic endurance or VO2max focus</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Rhodiola has the stronger sports-performance evidence. Multiple trials show improved endurance, reduced perceived exertion, and faster recovery between bouts. Ashwagandha has some athletic data (improved VO2max in untrained populations) but rhodiola is the more direct match for performance-oriented research. Best taken 30&ndash;60 min before training.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Testosterone or strength support (men)</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Testosterone or strength support (men)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Ashwagandha has modest evidence for testosterone elevation in men (10&ndash;15% increases in some studies). Effects are real but should not be overstated. Rhodiola does not show this effect. For men whose adaptogen interest includes hormonal support, ashwagandha is the right choice.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Stack approach (the most common protocol)</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Stack approach (the most common protocol)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Many adaptogen users take both. Typical stack: ashwagandha at night for chronic stress and sleep, rhodiola in the morning for daytime energy and focus. Mechanisms don&apos;t overlap and clinical interaction risk is minimal. This combination is one of the more rational adaptogen stacks because the herbs target genuinely different problems.
             </p>
@@ -120,16 +120,16 @@ export default function AshwagandhaVsRhodiolaPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300">Ashwagandha is better for chronic stress, anxiety reduction, and sleep quality. Rhodiola is better for acute mental performance and endurance under stress. They complement each other well and are frequently combined in adaptogen stacks.</p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i}>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
             </div>
           ))}

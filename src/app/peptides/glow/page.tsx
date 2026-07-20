@@ -171,7 +171,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           GLOW is administered as a subcutaneous injection. Standard preparations supply roughly 40 doses per 70 mg vial at the typical research protocol.
         </p>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           Standard research protocol (70 mg vial):
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -183,7 +183,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Alternate abdomen, thigh, and upper arm.</li>
         </ol>
         <div className="pt-4">
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Pre-blended formulations (research-grade vials)
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -263,7 +263,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -273,7 +273,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -283,7 +283,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -360,7 +360,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -429,7 +429,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -456,7 +456,7 @@ export default function GLOWPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">GLOW</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">GLOW</h1>
         <span className="tag">Skin Health &amp; Anti-Aging</span>
         <span className="tag">Stack</span>
       </div>
@@ -465,18 +465,18 @@ export default function GLOWPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> GLOW Blend, GLOW Stack, BPC-157/TB-500/GHK-Cu Blend, Pure Glow Fusion
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> GLOW Blend, GLOW Stack, BPC-157/TB-500/GHK-Cu Blend, Pure Glow Fusion
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Recovery &amp; Skin Repair Blend (3-component)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Recovery &amp; Skin Repair Blend (3-component)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Research-grade only
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research-grade only
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is GLOW?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is GLOW?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             GLOW is a research-grade 3-component peptide blend combining{" "}
@@ -490,7 +490,7 @@ export default function GLOWPage() {
             blend adds KPV on top of the GLOW backbone.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -503,21 +503,21 @@ export default function GLOWPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Standard protocol: 0.25–0.5 mL of reconstituted blend, 5 days/week (5-on, 2-off), at bedtime. Approximately 40 doses per 70 mg vial. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> Standard protocol: 0.25–0.5 mL of reconstituted blend, 5 days/week (5-on, 2-off), at bedtime. Approximately 40 doses per 70 mg vial. See{" "}
             <a href="#dosing" className="text-[#3A759F] hover:underline">
               Dosing &amp; Protocols
             </a>{" "}
             below for details.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> GLOW is sold by specialty research peptide vendors as a compounded blend. None of the three component peptides are FDA-approved as injectables. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> GLOW is sold by specialty research peptide vendors as a compounded blend. None of the three component peptides are FDA-approved as injectables. See{" "}
             <Link href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">
               Verified Peptide Vendors &rarr;
             </Link>{" "}
             for current options.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Related supplements:</span>{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=skin+anti+aging+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">
               Find related supplements on Amazon.
             </a>
@@ -530,7 +530,7 @@ export default function GLOWPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -568,7 +568,7 @@ export default function GLOWPage() {
 
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
         <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
@@ -577,7 +577,7 @@ export default function GLOWPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>
         <Link href="/peptides/klow" className="text-sm font-medium text-[#3A759F] hover:underline">KLOW</Link>

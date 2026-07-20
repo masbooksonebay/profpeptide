@@ -144,7 +144,7 @@ export default function PeptidesPage({ searchParams }: { searchParams: { categor
     <div className="section">
       <div className="mb-10">
         <span className="tag mb-3 inline-block">Research Profiles</span>
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Peptide Library</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Peptide Library</h1>
         <p className="text-gray-500 dark:text-slate-400 max-w-xl text-lg leading-relaxed">
           Research profiles organized by category. Click any peptide to read the full profile including mechanism of action, key research findings, and references.
         </p>
@@ -166,7 +166,7 @@ export default function PeptidesPage({ searchParams }: { searchParams: { categor
                 <li key={p.slug}>
                   <Link
                     href={`/peptides/${p.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-[#1e2d3d] dark:text-slate-200 hover:text-[#3A759F] transition-all duration-150 hover:scale-105 origin-left group"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-[#16181B] dark:text-slate-200 hover:text-[#3A759F] transition-all duration-150 hover:scale-105 origin-left group"
                   >
                     <span className="w-1 h-1 rounded-full bg-gray-300 dark:bg-slate-600 group-hover:bg-[#3A759F] transition-colors flex-shrink-0" />
                     {p.name}

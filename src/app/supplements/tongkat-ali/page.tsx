@@ -185,11 +185,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -231,7 +231,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Tongkat Ali pairs with peptides addressing complementary mechanisms in male hormonal/sexual health. GH-secretagogue peptides like{" "}
             <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">sermorelin</Link>{" "}
@@ -241,7 +241,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
@@ -274,7 +274,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training.</span> The Henkel 2021 muscle-strength outcomes were in active subjects. Tongkat Ali&apos;s training-adaptation amplification works only if training is actually happening.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sleep.</span> Testosterone is produced during deep sleep; chronic sleep deprivation dominates any supplement effect. Optimize sleep first.</li>
@@ -296,7 +296,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild restlessness or energizing effect — morning dosing resolves sleep impacts.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Insomnia if taken late in day — strict morning-only dosing prevents.</li>
@@ -306,7 +306,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mercury contamination in non-third-party-tested products.</span> Documented in some Southeast Asian-sourced products. Heavy-metal testing disclosure is critical for this supplement.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hormone-sensitive prostate condition contraindication.</span> BPH, prostate cancer history, or active prostate concerns — avoid Tongkat Ali (testosterone-elevating mechanism). Coordinate with urology.</li>
@@ -317,7 +317,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Testosterone replacement therapy.</span> Generally avoided — redundant or potentially excessive testosterone signaling. Coordinate with prescribing physician if combining.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">5-alpha reductase inhibitors (finasteride, dutasteride).</span> May interact via androgen pathway. Coordinate with prescriber.</li>
@@ -398,7 +398,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -461,7 +461,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -557,7 +557,7 @@ export default function TongkatAliPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Tongkat Ali</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Tongkat Ali</h1>
         <span className="tag">Sexual Health</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -565,18 +565,18 @@ export default function TongkatAliPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Eurycoma longifolia, longjack, Malaysian ginseng, pasak bumi, TA; standardized extract brand: Physta (Biotropics Malaysia)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Eurycoma longifolia, longjack, Malaysian ginseng, pasak bumi, TA; standardized extract brand: Physta (Biotropics Malaysia)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Southeast Asian botanical / male HPG-axis modulator (SHBG reduction, aromatase inhibition, LH stimulation) / cortisol-lowering adaptogen / quassinoid-bearing herb standardized to eurycomanone content
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Southeast Asian botanical / male HPG-axis modulator (SHBG reduction, aromatase inhibition, LH stimulation) / cortisol-lowering adaptogen / quassinoid-bearing herb standardized to eurycomanone content
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Context-dependent Moderate. <span className="font-semibold">Real testosterone elevation in late-onset hypogonadism</span> (Tambi 2012 — 200 mg/day produced 5.66 → 8.40 nmol/L testosterone elevation over 1 month). <span className="font-semibold">Smaller and less consistent in young eugonadal men</span> (modest free-T improvement via SHBG reduction; total-T effect variable). Moderate cortisol reduction (Talbott 2013 — ~16% in moderately stressed adults). Moderate muscle strength/composition in active older adults (Henkel 2021 — 400 mg/day, 12 weeks). Modest male fertility effects (Tambi 2010). Physta brand standardization critical for trial-equivalent dosing.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Context-dependent Moderate. <span className="font-semibold">Real testosterone elevation in late-onset hypogonadism</span> (Tambi 2012 — 200 mg/day produced 5.66 → 8.40 nmol/L testosterone elevation over 1 month). <span className="font-semibold">Smaller and less consistent in young eugonadal men</span> (modest free-T improvement via SHBG reduction; total-T effect variable). Moderate cortisol reduction (Talbott 2013 — ~16% in moderately stressed adults). Moderate muscle strength/composition in active older adults (Henkel 2021 — 400 mg/day, 12 weeks). Modest male fertility effects (Tambi 2010). Physta brand standardization critical for trial-equivalent dosing.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Tongkat Ali?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Tongkat Ali?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Tongkat Ali (Eurycoma longifolia) is a flowering plant native to the rainforests of Malaysia, Indonesia, Thailand, and Vietnam — used in traditional Southeast Asian medicine for centuries as a male tonic for libido, fertility, and vitality. Among modern herbal testosterone-supporting supplements, Tongkat Ali stands out for having a more substantial human RCT evidence base than most — but the honest framing requires attention to context. The testosterone-elevating effect is consistent and clinically meaningful in men with late-onset hypogonadism or below-normal baseline testosterone: Tambi 2012 documented serum testosterone rising from 5.66 ± 1.51 nmol/L to 8.40 ± 1.74 nmol/L over 1 month at 200 mg/day Physta-standardized extract — a substantial elevation toward normal range. In young eugonadal men with normal baseline testosterone, the effect is smaller and less consistent — some trials show modest free-testosterone improvement via SHBG reduction; others show no significant change in total testosterone. This context-dependent response pattern mirrors{" "}
@@ -584,7 +584,7 @@ export default function TongkatAliPage() {
             — real in stressed/overtrained/aging men; smaller in young healthy populations. The cortisol-reduction mechanism appears more consistently across populations (Talbott 2013 documented ~16% cortisol reduction in moderately stressed adults). Mechanism is multi-pronged: SHBG reduction (increasing free-testosterone fraction), aromatase inhibition (preserving testosterone-to-estradiol ratio), LH stimulation (signaling endogenous testosterone production through the HPG axis), and cortisol reduction (improving testosterone-cortisol ratio). The active compounds are quassinoids — particularly eurycomanone, the basis of standardization. Physta brand (Biotropics Malaysia) is the most-studied standardized extract in modern RCTs; generic non-standardized root powder has unreliable active content. Henkel 2021 documented significant muscle strength and fat-free mass increases in active older adults at 400 mg/day for 12 weeks. Mercury contamination has been documented in non-third-party-tested Southeast Asian-sourced products — quality matters more here than for many botanicals.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -599,10 +599,10 @@ export default function TongkatAliPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 200–400 mg/day of Physta-standardized water-soluble extract (or equivalent product standardized to 2%+ eurycomanone). 200 mg/day is the Tambi 2012 and Talbott 2013 dose; 400 mg/day is the Henkel 2021 muscle-strength dose. Morning dosing only — energizing effects can disrupt sleep. Effect emerges over 4–8 weeks for cortisol; 4–12 weeks for testosterone.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 200–400 mg/day of Physta-standardized water-soluble extract (or equivalent product standardized to 2%+ eurycomanone). 200 mg/day is the Tambi 2012 and Talbott 2013 dose; 400 mg/day is the Henkel 2021 muscle-strength dose. Morning dosing only — energizing effects can disrupt sleep. Effect emerges over 4–8 weeks for cortisol; 4–12 weeks for testosterone.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Sleep disruption from evening dosing (strict morning only); hormone-sensitive prostate condition contraindication (BPH, prostate cancer history — avoid); women of reproductive age caution; pregnancy and breastfeeding contraindication; mercury contamination in non-third-party-tested products (insist on heavy-metal testing disclosure); avoid combining with testosterone replacement therapy.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Sleep disruption from evening dosing (strict morning only); hormone-sensitive prostate condition contraindication (BPH, prostate cancer history — avoid); women of reproductive age caution; pregnancy and breastfeeding contraindication; mercury contamination in non-third-party-tested products (insist on heavy-metal testing disclosure); avoid combining with testosterone replacement therapy.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=tongkat+ali+physta+standardized&tag=profpeptide-20" label="Tongkat Ali" />
         </div>
@@ -613,7 +613,7 @@ export default function TongkatAliPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -642,7 +642,7 @@ export default function TongkatAliPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
           <Link href="/supplements/maca-root" className="text-sm font-medium text-[#3A759F] hover:underline">Maca Root</Link>

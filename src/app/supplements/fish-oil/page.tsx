@@ -169,11 +169,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -215,7 +215,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Fish oil pairs naturally with the healing peptide cluster — particularly via the inflammation-resolution axis.{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
@@ -227,7 +227,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/vitamin-d3" className="text-[#3A759F] hover:underline">Vitamin D3</Link>{" "}
@@ -259,7 +259,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Take with fat-containing meals.</span> Both improves absorption and reduces fishy reflux. Dinner is the practical default.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Refrigerate after opening.</span> Critical for preventing oxidation. Use within 3 months. Discard if strong fishy odor (rancidity indicator).</li>
@@ -280,7 +280,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Fishy burps / aftertaste — common, particularly with empty stomach or lower-quality products. Mitigated by food coadministration, refrigeration, enteric coating, smaller doses.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — nausea, loose stools at higher doses. Resolves with food coadministration or dose reduction.</li>
@@ -288,7 +288,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Atrial fibrillation signal at high doses.</span> Multiple large trials document modest increased AFib incidence at 1+ g/day EPA+DHA. Absolute risk increase small (~1% over years) but consistent. Most relevant for users with AFib history or strong family history.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Antiplatelet effect.</span> Mild but documented; relevant for surgical pre-op washout (1–2 weeks) and chronic anticoagulant users.</li>
@@ -298,7 +298,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anticoagulants (warfarin, apixaban, rivaroxaban) and antiplatelets (clopidogrel).</span> Additive antiplatelet effect. Monitor for unusual bruising; coordinate with prescribing clinician for chronic high-dose use.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">NSAIDs (chronic high-dose).</span> Additive bleeding risk. Generally tolerated but worth flagging.</li>
@@ -378,7 +378,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -447,7 +447,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -575,7 +575,7 @@ export default function FishOilPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Fish Oil</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Fish Oil</h1>
         <span className="tag">Gut Health &amp; Immunity</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -583,18 +583,18 @@ export default function FishOilPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Omega-3, EPA, DHA, omega-3 fatty acids, marine omega-3, icosapent ethyl (prescription pure EPA / Vascepa), omega-3 ethyl esters (Lovaza)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Omega-3, EPA, DHA, omega-3 fatty acids, marine omega-3, icosapent ethyl (prescription pure EPA / Vascepa), omega-3 ethyl esters (Lovaza)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Long-chain omega-3 polyunsaturated fatty acids (EPA + DHA) / membrane phospholipid component / resolvin and protectin precursor / triglyceride-lowering agent
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Long-chain omega-3 polyunsaturated fatty acids (EPA + DHA) / membrane phospholipid component / resolvin and protectin precursor / triglyceride-lowering agent
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong (triglyceride reduction, anti-inflammatory biomarkers) — Eslick 2009 meta-analysis (47 RCTs); Calder 2017 mechanism review. Mixed (cardiovascular outcomes) — REDUCE-IT 2019 (pure EPA) positive vs STRENGTH 2020 (EPA+DHA) null in similar populations. Modest atrial fibrillation signal at 1+ g/day across multiple trials. Modest cognitive evidence (Yurko-Mauro 2015 DHA in older adults). One of the deepest supplement evidence bases but more nuanced than marketing suggests.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong (triglyceride reduction, anti-inflammatory biomarkers) — Eslick 2009 meta-analysis (47 RCTs); Calder 2017 mechanism review. Mixed (cardiovascular outcomes) — REDUCE-IT 2019 (pure EPA) positive vs STRENGTH 2020 (EPA+DHA) null in similar populations. Modest atrial fibrillation signal at 1+ g/day across multiple trials. Modest cognitive evidence (Yurko-Mauro 2015 DHA in older adults). One of the deepest supplement evidence bases but more nuanced than marketing suggests.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is fish oil?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is fish oil?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Fish oil is a rich source of long-chain omega-3 polyunsaturated fatty acids — primarily eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA). These essential fatty acids incorporate into cell membranes throughout the body — particularly brain, retina, heart, and immune cells — where they influence membrane fluidity, eicosanoid production, and the synthesis of specialized pro-resolving mediators (resolvins, protectins, maresins) that actively resolve inflammation. The Western diet is severely deficient in omega-3s relative to omega-6 fatty acids — typical ratios of 15:1 to 20:1 vs the ancestral ratio of approximately 4:1 — driving chronic low-grade inflammation that underlies cardiovascular disease, metabolic syndrome, and accelerated aging. Fish oil has one of the deepest supplement evidence bases in existence, but recent developments have made the picture more nuanced: REDUCE-IT (Bhatt 2019) showed 25% MACE reduction with 4 g/day pure EPA in high-CV-risk statin-treated patients, but STRENGTH (2020) showed NO benefit with 4 g/day EPA+DHA in similar population. Multiple trials document modest atrial fibrillation signal at 1+ g/day. Triglyceride reduction (25–30% at 4 g/day) and anti-inflammatory biomarker effects remain unambiguously strong. Fish oil pairs naturally with{" "}
@@ -602,7 +602,7 @@ export default function FishOilPage() {
             via the inflammation-resolution axis — particularly useful in tendon/ligament/gut healing contexts.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -617,10 +617,10 @@ export default function FishOilPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 1–2 g combined EPA+DHA daily for general anti-inflammatory baseline; 2–4 g for active inflammatory conditions or triglyceride reduction; 4 g/day pure EPA (prescription Vascepa) for REDUCE-IT cardiovascular protocol. Read labels carefully — most fish oil products contain only 300–600 mg EPA+DHA per 1 g total oil. Always with fat-containing meals.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 1–2 g combined EPA+DHA daily for general anti-inflammatory baseline; 2–4 g for active inflammatory conditions or triglyceride reduction; 4 g/day pure EPA (prescription Vascepa) for REDUCE-IT cardiovascular protocol. Read labels carefully — most fish oil products contain only 300–600 mg EPA+DHA per 1 g total oil. Always with fat-containing meals.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Atrial fibrillation signal at 1+ g/day (modest but real; coordinate with cardiologist if AFib history); antiplatelet effect (1–2 week pre-op washout); oxidized fish oil (rancid products may be pro-inflammatory rather than anti-inflammatory — quality matters more here than most supplements); refrigerate after opening; use within 3 months.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Atrial fibrillation signal at 1+ g/day (modest but real; coordinate with cardiologist if AFib history); antiplatelet effect (1–2 week pre-op washout); oxidized fish oil (rancid products may be pro-inflammatory rather than anti-inflammatory — quality matters more here than most supplements); refrigerate after opening; use within 3 months.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=fish+oil+omega+3+concentrated&tag=profpeptide-20" label="Fish Oil" />
         </div>
@@ -631,7 +631,7 @@ export default function FishOilPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -660,7 +660,7 @@ export default function FishOilPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/vitamin-d3" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin D3</Link>
           <Link href="/supplements/curcumin" className="text-sm font-medium text-[#3A759F] hover:underline">Curcumin</Link>

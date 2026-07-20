@@ -166,11 +166,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -212,7 +212,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             ALA pairs naturally with the mitochondrial peptide cluster.{" "}
             <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>{" "}
@@ -225,7 +225,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/coq10" className="text-[#3A759F] hover:underline">CoQ10</Link>{" "}
@@ -257,7 +257,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">30 minutes before meals.</span> Empty-stomach absorption is meaningfully better. Plan dosing around meal timing.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Glucose monitoring during dose titration.</span> Particularly relevant if combining with metformin, sulfonylureas, insulin, berberine, or GLP peptides. Hypoglycemia risk during the first 4–6 weeks of combined use.</li>
@@ -277,7 +277,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — nausea, abdominal pain, particularly on empty stomach. Resolves with small low-protein snack if needed.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Garlic / sulfur-like body odor — ALA is an organosulfur compound; some users report mild distinctive odor.</li>
@@ -286,7 +286,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hypoglycemia — when combined with insulin, sulfonylureas, metformin, GLP peptides, or other glucose-lowering supplements. Monitor glucose during titration.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Biotin competition — chronic long-term ALA (6+ months at 600+ mg/day) may reduce biotin status via competitive transporter uptake. Add standard B-complex as buffer.</li>
@@ -296,7 +296,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Diabetes medications (metformin, sulfonylureas, insulin).</span> Additive glucose-lowering. Monitor glucose; clinician may adjust diabetes medication doses.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">GLP-1 peptides (semaglutide, tirzepatide).</span> Compatible; mechanistically additive on insulin sensitivity. Watch hypoglycemia if also on sulfonylureas/insulin.</li>
@@ -374,7 +374,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -443,7 +443,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -571,7 +571,7 @@ export default function AlphaLipoicAcidPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Alpha Lipoic Acid</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Alpha Lipoic Acid</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -579,18 +579,18 @@ export default function AlphaLipoicAcidPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> ALA, thioctic acid, lipoic acid, R-ALA (bioactive stereoisomer), Na-R-ALA / sodium R-lipoate (stabilized R-ALA)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> ALA, thioctic acid, lipoic acid, R-ALA (bioactive stereoisomer), Na-R-ALA / sodium R-lipoate (stabilized R-ALA)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Organosulfur compound / universal antioxidant (fat + water soluble) / AMPK activator / mitochondrial enzyme cofactor (pyruvate dehydrogenase, α-ketoglutarate dehydrogenase)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Organosulfur compound / universal antioxidant (fat + water soluble) / AMPK activator / mitochondrial enzyme cofactor (pyruvate dehydrogenase, α-ketoglutarate dehydrogenase)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — ALADIN study (Ziegler 1995, n=328) + Mijnhout 2012 meta-analysis (15 RCTs) for diabetic peripheral neuropathy (approved as medical treatment in Germany); Jacob 1999 hyperinsulinemic-euglycemic clamp for insulin sensitization; Namazi 2018 meta-analysis (12 RCTs) for modest weight loss; Zhang 2011 for metabolic syndrome biomarkers
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — ALADIN study (Ziegler 1995, n=328) + Mijnhout 2012 meta-analysis (15 RCTs) for diabetic peripheral neuropathy (approved as medical treatment in Germany); Jacob 1999 hyperinsulinemic-euglycemic clamp for insulin sensitization; Namazi 2018 meta-analysis (12 RCTs) for modest weight loss; Zhang 2011 for metabolic syndrome biomarkers
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is alpha lipoic acid?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is alpha lipoic acid?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Alpha lipoic acid (ALA) is a naturally occurring organosulfur compound produced in small amounts by the body and found in trace amounts in red meat, spinach, and broccoli. Its supplement profile is built on a unique combination: it&apos;s a universal antioxidant active in both fat-soluble and water-soluble environments (unusual — most antioxidants work in only one), it activates AMPK (the same metabolic master switch metformin and berberine target), it&apos;s a mitochondrial enzyme cofactor for pyruvate dehydrogenase and α-ketoglutarate dehydrogenase, and it regenerates other antioxidants (vitamins C, E, glutathione, CoQ10) back to their active forms. The most clinically validated application is diabetic peripheral neuropathy — ALA is approved as medical treatment in Germany and other European countries based on the ALADIN study (Ziegler 1995) and subsequent meta-analyses (Mijnhout 2012). Secondary evidence supports insulin sensitization (Jacob 1999 hyperinsulinemic-euglycemic clamp showed 27% glucose-disposal improvement), modest weight loss (Namazi 2018 meta-analysis), and anti-inflammatory effects in metabolic syndrome. The practical considerations are stereoisomer choice (R-ALA is ~12× more bioavailable than racemic S-ALA half) and empty-stomach timing (food reduces absorption by ~30%). ALA pairs naturally with{" "}
@@ -598,7 +598,7 @@ export default function AlphaLipoicAcidPage() {
             — overlapping AMPK and cofactor mechanisms at different signaling layers.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -613,10 +613,10 @@ export default function AlphaLipoicAcidPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 300–600 mg/day stabilized R-ALA (Na-R-ALA / sodium R-lipoate) for metabolic/antioxidant baseline; 600–1,200 mg/day racemic ALA as cheaper alternative. For diabetic neuropathy: 600–1,800 mg/day oral, split AM + PM + lunch, for 4–8 weeks minimum (coordinate with clinician). Take 30–60 minutes before meals — food reduces absorption by ~30%.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 300–600 mg/day stabilized R-ALA (Na-R-ALA / sodium R-lipoate) for metabolic/antioxidant baseline; 600–1,200 mg/day racemic ALA as cheaper alternative. For diabetic neuropathy: 600–1,800 mg/day oral, split AM + PM + lunch, for 4–8 weeks minimum (coordinate with clinician). Take 30–60 minutes before meals — food reduces absorption by ~30%.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Hypoglycemia when combined with metformin / sulfonylureas / insulin / GLP peptides — monitor glucose. Biotin competition over chronic long-term use (6+ months at 600+ mg/day) — add standard B-complex as buffer.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Hypoglycemia when combined with metformin / sulfonylureas / insulin / GLP peptides — monitor glucose. Biotin competition over chronic long-term use (6+ months at 600+ mg/day) — add standard B-complex as buffer.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=R-alpha+lipoic+acid&tag=profpeptide-20" label="Alpha Lipoic Acid" />
         </div>
@@ -627,7 +627,7 @@ export default function AlphaLipoicAcidPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -656,7 +656,7 @@ export default function AlphaLipoicAcidPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/berberine" className="text-sm font-medium text-[#3A759F] hover:underline">Berberine</Link>
           <Link href="/supplements/chromium" className="text-sm font-medium text-[#3A759F] hover:underline">Chromium</Link>

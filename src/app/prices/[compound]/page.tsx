@@ -43,7 +43,7 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
         </p>
       </div>
 
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">{c.name} Price Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-2">{c.name} Price Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-2 max-w-2xl">
         {c.name} prices across vendors — post-code pricing (base struck-through), normalized to price-per-mg, sorted cheapest-first.
       </p>

@@ -162,7 +162,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The PT-141 + Oxytocin blend has no clinically validated combination protocol. Research-community dosing layers each peptide&apos;s individual established protocol. PT-141 is dosed as a subcutaneous injection from a reconstituted lyophilized vial; oxytocin is typically administered as an intranasal spray or sublingual troche rather than by injection.
         </p>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           PT-141 (Bremelanotide) &mdash; SC injection protocol:
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -171,7 +171,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Frequency limits.</span> No more than once per 24-hour period; no more than approximately 8 times per month (aligned with Vyleesi prescribing guidance). Frequency limits are particularly important for avoiding focal hyperpigmentation with repeated injection-site use.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site.</span> Abdomen or upper thigh. Rotate sites to reduce hyperpigmentation risk at any one location.</li>
         </ol>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-3">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-3">
           Oxytocin &mdash; intranasal spray or sublingual troche:
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -181,7 +181,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Source note.</span> Oxytocin is more commonly sourced through compounding pharmacies as a nasal spray or troche than through research peptide vendors. Availability from peptide vendors varies; verify with the specific vendor before ordering.</li>
         </ol>
         <div className="pt-4">
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             PT-141 reconstitution &mdash; research-grade vials
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -251,7 +251,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Common (most users &mdash; PT-141)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -262,7 +262,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Less common (PT-141)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -272,7 +272,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Oxytocin (intranasal/sublingual) side effects
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -282,7 +282,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Serious (rare or theoretical)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -378,7 +378,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -441,7 +441,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -468,7 +468,7 @@ export default function PT141OxytocinPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">PT-141 + Oxytocin</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">PT-141 + Oxytocin</h1>
         <span className="tag">Sexual Health</span>
         <span className="tag">Research-Grade</span>
         <span className="tag">Combination Blend</span>
@@ -478,18 +478,18 @@ export default function PT141OxytocinPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Bremelanotide + Oxytocin, PT-141/OXT Blend, Libido &amp; Intimacy Stack
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Bremelanotide + Oxytocin, PT-141/OXT Blend, Libido &amp; Intimacy Stack
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Sexual Health Blend &mdash; Melanocortin Agonist + Neuropeptide (2-component)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Sexual Health Blend &mdash; Melanocortin Agonist + Neuropeptide (2-component)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> PT-141 FDA-approved as Vyleesi (HSDD, premenopausal women); research-grade material is a distinct product sold for laboratory use only. Oxytocin is a prescription compound in most jurisdictions; intranasal and sublingual forms available through compounding pharmacies.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> PT-141 FDA-approved as Vyleesi (HSDD, premenopausal women); research-grade material is a distinct product sold for laboratory use only. Oxytocin is a prescription compound in most jurisdictions; intranasal and sublingual forms available through compounding pharmacies.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is the PT-141 + Oxytocin blend?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is the PT-141 + Oxytocin blend?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The PT-141 + Oxytocin blend is a 2-component research peptide combination pairing{" "}
@@ -500,7 +500,7 @@ export default function PT141OxytocinPage() {
             A key practical note on delivery: PT-141 is administered by subcutaneous injection from a lyophilized research vial; oxytocin is typically used as an intranasal spray or sublingual troche. These are administered in sequence in the pre-activity window, not as a single co-injection.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -513,11 +513,11 @@ export default function PT141OxytocinPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span>{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span>{" "}
             PT-141 1&ndash;2 mg SC approximately 45 minutes before activity (max once per 24 hours, approximately 8 times per month) + oxytocin 20&ndash;40 IU sublingual or intranasal approximately 20&ndash;30 minutes before activity.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PT-141 is available from research peptide vendors. Oxytocin is typically sourced through compounding pharmacies. Neither research-grade PT-141 nor compounded oxytocin is equivalent to FDA-approved products. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PT-141 is available from research peptide vendors. Oxytocin is typically sourced through compounding pharmacies. Neither research-grade PT-141 nor compounded oxytocin is equivalent to FDA-approved products. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -531,7 +531,7 @@ export default function PT141OxytocinPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -568,7 +568,7 @@ export default function PT141OxytocinPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/peptides/pt-141" className="text-sm font-medium text-[#3A759F] hover:underline">PT-141 (Bremelanotide)</Link>
           <Link href="/peptides/melanotan-ii" className="text-sm font-medium text-[#3A759F] hover:underline">Melanotan II</Link>

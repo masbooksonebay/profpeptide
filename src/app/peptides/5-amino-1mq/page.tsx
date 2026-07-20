@@ -172,7 +172,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -224,9 +224,9 @@ const sections = [
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
             {s.url ? (
-              <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+              <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             ) : (
-              <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 leading-snug mb-1">{s.title}</p>
+              <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 leading-snug mb-1">{s.title}</p>
             )}
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
@@ -254,7 +254,7 @@ export default function FiveAmino1MQPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">5-Amino-1MQ</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">5-Amino-1MQ</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
         <span className="tag">Research Use Only</span>
       </div>
@@ -263,24 +263,24 @@ export default function FiveAmino1MQPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> 5-amino-1-methylquinolinium, 5A1MQ
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> 5-amino-1-methylquinolinium, 5A1MQ
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Compound Class:</span> Small-molecule, membrane-permeable, selective inhibitor of nicotinamide N-methyltransferase (NNMT); quinolinium scaffold &mdash; <span className="font-semibold">not a peptide</span>
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Compound Class:</span> Small-molecule, membrane-permeable, selective inhibitor of nicotinamide N-methyltransferase (NNMT); quinolinium scaffold &mdash; <span className="font-semibold">not a peptide</span>
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Molecular Profile:</span> Small molecule (not a peptide; no amino-acid sequence) &middot; cation formula C10H11N2(+) &middot; cation molecular weight ~159.21 g/mol &middot; commonly supplied as the iodide salt (higher salt mass, ~286 g/mol) &middot; PubChem CID 950107 &middot; CAS 42464-96-0 (iodide salt)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> Small molecule (not a peptide; no amino-acid sequence) &middot; cation formula C10H11N2(+) &middot; cation molecular weight ~159.21 g/mol &middot; commonly supplied as the iodide salt (higher salt mass, ~286 g/mol) &middot; PubChem CID 950107 &middot; CAS 42464-96-0 (iodide salt)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Origin:</span> Developed as a research-tool NNMT inhibitor (Watowich/Neelakantan, UT Medical Branch / Ridgeline Therapeutics)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Origin:</span> Developed as a research-tool NNMT inhibitor (Watowich/Neelakantan, UT Medical Branch / Ridgeline Therapeutics)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Research Use Only &mdash; unapproved research chemical; not FDA-approved; evidence is preclinical
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research Use Only &mdash; unapproved research chemical; not FDA-approved; evidence is preclinical
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is 5-Amino-1MQ?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is 5-Amino-1MQ?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             5-Amino-1MQ (5-amino-1-methylquinolinium) is a small-molecule, membrane-permeable, selective inhibitor of nicotinamide N-methyltransferase (NNMT) &mdash; a quinolinium compound, not a peptide. It was developed as a research-tool NNMT inhibitor (Watowich/Neelakantan, UT Medical Branch / Ridgeline Therapeutics). NNMT methylates nicotinamide using S-adenosylmethionine (SAM) to make 1-methylnicotinamide and S-adenosylhomocysteine; by inhibiting NNMT (IC50 ~1 µM), 5-Amino-1MQ relieves this SAM &lsquo;methyl sink&rsquo; and preserves nicotinamide for NAD+ salvage. In preclinical (rodent and cell) models this is associated with increased NAD+, higher energy expenditure, reduced lipogenesis and adiposity, and preserved lean mass &mdash; with weight and fat-mass reductions in diet-induced-obese mice occurring without reduced food intake. It is structurally a small molecule and has no amino-acid sequence. It is grouped here with metabolic research compounds such as{" "}
@@ -291,7 +291,7 @@ export default function FiveAmino1MQPage() {
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -302,10 +302,10 @@ export default function FiveAmino1MQPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> There is no validated or FDA-approved dose. Preclinical studies used rodent dosing schedules, but those do not translate into a human dose, and Prof. Peptide does not extrapolate one. It is supplied as a solid research chemical (commonly the iodide salt), so no reconstitution table applies, and no human mg or mg/kg schedule is published.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> There is no validated or FDA-approved dose. Preclinical studies used rodent dosing schedules, but those do not translate into a human dose, and Prof. Peptide does not extrapolate one. It is supplied as a solid research chemical (commonly the iodide salt), so no reconstitution table applies, and no human mg or mg/kg schedule is published.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> 5-Amino-1MQ is an unapproved research chemical sold by specialty vendors for laboratory use only. PP maintains a vetted list of vendors with verified discount codes. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> 5-Amino-1MQ is an unapproved research chemical sold by specialty vendors for laboratory use only. PP maintains a vetted list of vendors with verified discount codes. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -319,7 +319,7 @@ export default function FiveAmino1MQPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -357,7 +357,7 @@ export default function FiveAmino1MQPage() {
 
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
         <Link href="/peptides/mots-c" className="text-sm font-medium text-[#3A759F] hover:underline">MOTS-c</Link>

@@ -165,11 +165,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -211,7 +211,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             BCAAs&apos; primary mechanism (mTOR activation) overlaps with GH/IGF-1 axis activation from peptides — but the mechanisms are complementary rather than redundant.{" "}
             <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
@@ -221,7 +221,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/protein-powder" className="text-[#3A759F] hover:underline">Whey protein</Link>{" "}
@@ -259,7 +259,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Adequate dietary protein.</span> 1.6+ g/kg/day from complete protein sources is the highest-impact intervention. BCAAs are supplementary, not foundational.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Intermittent fasting protocol.</span> The fasted-training niche is one of the genuine BCAA use cases — preserves the fast more than whole protein would while providing some amino acid availability around training.</li>
@@ -281,7 +281,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort at high doses (15+ g) — split dosing resolves.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Bitter taste with unflavored BCAA powder — common; flavored products mask this.</li>
@@ -289,7 +289,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Elevated plasma BCAAs as a metabolic-syndrome marker.</span> Observational research associates chronically elevated plasma BCAAs with insulin resistance and metabolic syndrome. Whether this is causal (high BCAA intake worsens insulin resistance) or marker (insulin resistance impairs BCAA clearance) isn&apos;t resolved. Practical impact of supplemental BCAA use at typical doses unclear.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Ammonia clearance considerations in advanced kidney/liver disease.</span> BCAA metabolism produces ammonia. Compromised in liver/kidney disease. Coordinate with specialist.</li>
@@ -298,7 +298,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Levodopa (Parkinson&apos;s medication).</span> BCAAs compete with levodopa for amino acid transport across the blood-brain barrier and the small intestine. Reduces levodopa effectiveness. Separate timing by 2+ hours.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Diabetes medications.</span> Leucine modestly stimulates insulin release. Monitor glucose if on hypoglycemics.</li>
@@ -377,7 +377,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -446,7 +446,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -542,7 +542,7 @@ export default function BCAAsPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">BCAAs</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">BCAAs</h1>
         <span className="tag">Performance &amp; Energy</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -550,24 +550,24 @@ export default function BCAAsPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Branched-chain amino acids, leucine + isoleucine + valine (3 of 9 essential amino acids), BCAA powder, 2:1:1 BCAA ratio; mechanistically superior alternative: EAAs (all 9 essential amino acids)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Branched-chain amino acids, leucine + isoleucine + valine (3 of 9 essential amino acids), BCAA powder, 2:1:1 BCAA ratio; mechanistically superior alternative: EAAs (all 9 essential amino acids)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Three essential amino acids metabolized primarily in muscle / leucine-mediated mTORC1 activator (master MPS regulator) / partial muscle protein substrate (3 of 9 EAAs) / acute pre-workout and intra-workout ergogenic
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Three essential amino acids metabolized primarily in muscle / leucine-mediated mTORC1 activator (master MPS regulator) / partial muscle protein substrate (3 of 9 EAAs) / acute pre-workout and intra-workout ergogenic
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Context-dependent Moderate. <span className="font-semibold">Strong for mechanism</span> (leucine triggers mTORC1; Jackman 2017 documents robust signaling). <span className="font-semibold">Modest for actual hypertrophy/strength vs whole protein at equivalent leucine content</span> — load-bearing trial divergence handled centrally: Wolfe 2017 (&quot;myth or reality?&quot; critique) and Plotkin 2021 narrative review both conclude isolated BCAAs do not outperform whole protein. <span className="font-semibold">Moderate for post-exercise DOMS reduction</span> (Khemtong 2021 meta — significant DOMS reduction at 24/48/72 hours). <span className="font-semibold">Moderate for endurance central fatigue reduction</span> in 90+ min efforts (Blomstrand 1997/2006 mechanism). <span className="font-semibold">Moderate for hepatic encephalopathy adjunct</span> (clinical context). Real niches: fasted training, endurance, liver disease. Redundant with adequate dietary protein from complete sources.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Context-dependent Moderate. <span className="font-semibold">Strong for mechanism</span> (leucine triggers mTORC1; Jackman 2017 documents robust signaling). <span className="font-semibold">Modest for actual hypertrophy/strength vs whole protein at equivalent leucine content</span> — load-bearing trial divergence handled centrally: Wolfe 2017 (&quot;myth or reality?&quot; critique) and Plotkin 2021 narrative review both conclude isolated BCAAs do not outperform whole protein. <span className="font-semibold">Moderate for post-exercise DOMS reduction</span> (Khemtong 2021 meta — significant DOMS reduction at 24/48/72 hours). <span className="font-semibold">Moderate for endurance central fatigue reduction</span> in 90+ min efforts (Blomstrand 1997/2006 mechanism). <span className="font-semibold">Moderate for hepatic encephalopathy adjunct</span> (clinical context). Real niches: fasted training, endurance, liver disease. Redundant with adequate dietary protein from complete sources.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What are BCAAs?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What are BCAAs?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             BCAAs (branched-chain amino acids) are three of the nine essential amino acids — leucine, isoleucine, and valine — named for their branched chemical structure. They constitute approximately 35% of the essential amino acids in muscle protein and are metabolized primarily in muscle tissue (unlike most amino acids, which are processed in the liver), making them directly available as fuel and signaling substrate during exercise. Leucine is the most important of the three: it is the primary activator of mTORC1 (mechanistic target of rapamycin complex 1), the master regulator of muscle protein synthesis (MPS). About 2–3 g of leucine per dose maximally activates this pathway. BCAA supplements have been intensely marketed for decades on this real mechanism — but the practical case for isolated BCAA supplementation is one of the most contested in sports nutrition, and the trial divergence is load-bearing enough to surface centrally. <span className="font-semibold">Wolfe 2017</span> (&quot;Branched-chain amino acids and muscle protein synthesis in humans: myth or reality?&quot;) and <span className="font-semibold">Plotkin 2021</span> narrative review both concluded that isolated BCAA supplementation does not outperform whole protein at equivalent leucine content for muscle protein synthesis, strength, or hypertrophy outcomes. The mechanism explanation is the trigger-vs-substrate distinction: BCAAs (3 of 9 EAAs) trigger the MPS signal via leucine but lack the complete EAA substrate required to actually build new muscle protein — forcing the body to break down endogenous protein to supply the missing 6 EAAs. Jackman 2017 documented this mechanistically: BCAAs robustly activate mTORC1 signaling but produce only a modest and partial increase in muscle protein synthesis rate compared to whole protein at equivalent leucine. The practical implication: for users with adequate dietary protein (1.6+ g/kg/day) from complete sources, isolated BCAA supplementation is largely redundant — whey protein delivers more leucine per dollar with better outcomes. BCAAs do have legitimate niches: <span className="font-semibold">fasted training</span> (amino acid availability without disrupting fasted state as completely as whole protein would), <span className="font-semibold">prolonged endurance exercise</span> at 90+ min (Blomstrand 1997/2006 central fatigue reduction via competition with tryptophan for blood-brain barrier transport), <span className="font-semibold">hepatic encephalopathy adjunct</span> in advanced liver disease (clinician-managed supportive nutrition), and <span className="font-semibold">post-exercise DOMS reduction</span> (Khemtong 2021 meta-analysis documents significant 24/48/72 hour soreness reduction). If you&apos;re choosing isolated amino acid supplementation, EAAs (all 9 essential amino acids) are mechanistically superior to BCAAs alone. The hierarchy: whole-food protein &gt; whey/casein protein powder ≈ EAAs &gt; BCAAs &gt; leucine alone.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -582,10 +582,10 @@ export default function BCAAsPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 5–10 g BCAAs per serving (delivering 2.5–5 g leucine, above the 2–3 g maximal-mTOR-triggering threshold). 2:1:1 leucine:isoleucine:valine ratio is standard. Acute use pre/intra/post training in legitimate niches — not chronic non-exercise dosing.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 5–10 g BCAAs per serving (delivering 2.5–5 g leucine, above the 2–3 g maximal-mTOR-triggering threshold). 2:1:1 leucine:isoleucine:valine ratio is standard. Acute use pre/intra/post training in legitimate niches — not chronic non-exercise dosing.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> For users with adequate dietary protein, isolated BCAAs are redundant —{" "}<Link href="/supplements/protein-powder" className="text-[#3A759F] hover:underline">whey protein</Link>{" "}delivers BCAAs at lower cost with better outcomes. Plasma BCAAs may correlate with insulin resistance (marker vs cause debate unresolved). Levodopa interaction (Parkinson&apos;s) — separate timing. Maple syrup urine disease is absolute contraindication. If choosing isolated amino acid supplementation, EAAs are mechanistically superior to BCAAs alone.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> For users with adequate dietary protein, isolated BCAAs are redundant —{" "}<Link href="/supplements/protein-powder" className="text-[#3A759F] hover:underline">whey protein</Link>{" "}delivers BCAAs at lower cost with better outcomes. Plasma BCAAs may correlate with insulin resistance (marker vs cause debate unresolved). Levodopa interaction (Parkinson&apos;s) — separate timing. Maple syrup urine disease is absolute contraindication. If choosing isolated amino acid supplementation, EAAs are mechanistically superior to BCAAs alone.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=bcaa+powder+2%3A1%3A1+vegan&tag=profpeptide-20" label="BCAAs" />
         </div>
@@ -596,7 +596,7 @@ export default function BCAAsPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -625,7 +625,7 @@ export default function BCAAsPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/protein-powder" className="text-sm font-medium text-[#3A759F] hover:underline">Protein Powder</Link>
           <Link href="/supplements/creatine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine</Link>

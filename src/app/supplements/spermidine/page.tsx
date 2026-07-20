@@ -168,11 +168,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -214,7 +214,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Spermidine pairs naturally with the longevity peptide cluster.{" "}
             <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
@@ -224,7 +224,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
@@ -249,7 +249,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Intermittent fasting / time-restricted eating.</span> Autophagy is fasting-activated; spermidine activates the same pathway. Dosing during a fasting window is the protocol most longevity users converge on.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Caloric restriction.</span> Direct mechanism overlap. CR and spermidine produce overlapping autophagy activation; combining them mechanistically additive without conflict.</li>
@@ -268,7 +268,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — occasional nausea or soft stools, particularly with wheat-germ extract on empty stomach. Resolves with food or dose reduction.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Gluten exposure — wheat-germ extracts contain gluten. Problematic for celiac and gluten-sensitive users; use synthetic spermidine trihydrochloride instead.</li>
@@ -276,14 +276,14 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Active cancer — autophagy is context-dependent in cancer biology (tumor-suppressive in pre-cancer, sometimes tumor-supportive in established disease). Spermidine&apos;s autophagy activation may be helpful, neutral, or harmful depending on cancer type and stage. Coordinate with oncologist.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term high-dose safety — most trial data is at 1–3 mg/day for 3–12 months. Multi-year use at 5–10 mg/day is mechanistically reasonable but not characterized in controlled trials.</li>
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Chemotherapy and immunotherapy — autophagy interaction is complex and tumor-type-specific. Avoid supplemental autophagy activators (spermidine, NMN, resveratrol, fisetin) during active oncology treatment without specialist input.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Immunosuppressants (mTOR inhibitors like rapamycin/sirolimus) — both modulate mTORC1. Additive effects possible; coordinate with prescribing clinician.</li>
@@ -355,7 +355,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -424,7 +424,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -552,7 +552,7 @@ export default function SpermidinePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Spermidine</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Spermidine</h1>
         <span className="tag">Longevity</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -560,18 +560,18 @@ export default function SpermidinePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Spermidine trihydrochloride, SPD, polyamine, wheat germ extract spermidine
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Spermidine trihydrochloride, SPD, polyamine, wheat germ extract spermidine
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Polyamine / autophagy inducer / fasting mimetic
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Polyamine / autophagy inducer / fasting mimetic
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Moderate — strong preclinical (yeast, fly, worm, mouse lifespan extension; Eisenberg 2016 mouse cardioprotection); Bruneck cohort observational mortality association (Kiechl 2018); human RCT base mixed (Wirth 2018 positive cognitive pilot, SmartAge 2022 cognitive null at low dose); human lifespan evidence does not yet exist
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Moderate — strong preclinical (yeast, fly, worm, mouse lifespan extension; Eisenberg 2016 mouse cardioprotection); Bruneck cohort observational mortality association (Kiechl 2018); human RCT base mixed (Wirth 2018 positive cognitive pilot, SmartAge 2022 cognitive null at low dose); human lifespan evidence does not yet exist
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is spermidine?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is spermidine?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Spermidine is a naturally occurring polyamine — a small positively charged molecule involved in fundamental cellular processes including DNA stabilization, gene expression, and protein synthesis. It is found in virtually all living cells and concentrated in foods like wheat germ, soybeans, aged cheese, mushrooms, and peas. Its longevity-supplement profile is built on a striking mechanistic and preclinical case: spermidine is one of the most potent natural autophagy inducers, activating the cellular self-cleaning process through EP300 inhibition and partial mTORC1 modulation — mimicking the fasting/caloric-restriction state without requiring caloric reduction. The animal-model evidence is dramatic (yeast, flies, worms, and mice all show lifespan extension); the human evidence is more nuanced. The Bruneck Study (Kiechl 2018) documented strong mortality associations with higher dietary intake over 20 years. The Wirth 2018 pilot showed cognitive benefit; the larger 12-month SmartAge trial (Schwarz 2022) didn&apos;t replicate it at low dose. Spermidine pairs naturally with{" "}
@@ -579,7 +579,7 @@ export default function SpermidinePage() {
             and other longevity supplements because the mechanisms operate on different arms of aging biology — autophagy is its lane.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -593,10 +593,10 @@ export default function SpermidinePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 1–3 mg/day of concentrated wheat-germ extract — the trial-validated range used in Wirth 2018 and SmartAge. Higher longevity protocols target 5–10 mg/day to approach the Bruneck cohort&apos;s top-tertile dietary intake (~12 mg/day). Synthetic spermidine trihydrochloride is the gluten-free alternative.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 1–3 mg/day of concentrated wheat-germ extract — the trial-validated range used in Wirth 2018 and SmartAge. Higher longevity protocols target 5–10 mg/day to approach the Bruneck cohort&apos;s top-tertile dietary intake (~12 mg/day). Synthetic spermidine trihydrochloride is the gluten-free alternative.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from longevity-supplement vendors. Quality varies significantly — particularly around actual spermidine mg per serving. Review the quality-markers checklist in the Where to Buy section below.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Available over-the-counter from longevity-supplement vendors. Quality varies significantly — particularly around actual spermidine mg per serving. Review the quality-markers checklist in the Where to Buy section below.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=spermidine+supplement&tag=profpeptide-20" label="Spermidine" />
         </div>
@@ -607,7 +607,7 @@ export default function SpermidinePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -636,7 +636,7 @@ export default function SpermidinePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/nmn" className="text-sm font-medium text-[#3A759F] hover:underline">NMN</Link>
           <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>

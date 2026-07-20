@@ -168,11 +168,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -214,7 +214,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             GABA pairs naturally with the Russian-origin sleep + cognitive peptide cluster.{" "}
             <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
@@ -228,7 +228,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium glycinate</Link>{" "}
@@ -261,7 +261,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-bed timing for sleep.</span> 30–60 minutes before target bedtime to align with the inhibitory-neurotransmission window.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Post-workout GH protocol.</span> 3 g synthetic GABA on empty stomach 30–60 minutes after training for the Powers 2008 GH effect. Pair with resistance training for synergistic GH response.</li>
@@ -281,7 +281,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Tingling / flushing — common at higher doses (1+ g synthetic GABA). Particularly the GH protocol at 3 g. Harmless and transient (resolves within 15–30 min). Mechanism likely peripheral GABA receptor activation in skin and vasculature.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Drowsiness — intentional for sleep applications, undesirable if dosed daytime. Reduce dose if affected during daytime use.</li>
@@ -291,7 +291,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mood changes — rare reports of depression worsening; generally anecdotal.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pregnancy and breastfeeding — insufficient safety data; avoid supplemental GABA. Dietary GABA from fermented foods is fine.</li>
@@ -299,7 +299,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Additive CNS depression. Avoid combining; separate by 6+ hours minimum.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Benzodiazepines (Xanax, Valium, Ativan, Klonopin).</span> Same receptor system; additive CNS depression possible. Coordinate with prescribing clinician.</li>
@@ -378,7 +378,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -447,7 +447,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -575,7 +575,7 @@ export default function GABAPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">GABA</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">GABA</h1>
         <span className="tag">Growth Hormone Support</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -583,18 +583,18 @@ export default function GABAPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Gamma-aminobutyric acid, PharmaGABA (Pharma Foods International fermented form), GABA HCl
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Gamma-aminobutyric acid, PharmaGABA (Pharma Foods International fermented form), GABA HCl
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Inhibitory neurotransmitter / peripheral GABA-A receptor agonist / somatostatin inhibitor (GH protocol)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Inhibitory neurotransmitter / peripheral GABA-A receptor agonist / somatostatin inhibitor (GH protocol)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Mixed — Moderate for low-dose PharmaGABA sleep and stress (Yamatsu 2016 polysomnography, Abdou 2006, Kanehira 2011); Moderate but contested for the high-dose GH protocol (Powers 2008 dramatic n=11 finding, limited independent replication at same magnitude); mechanism debate over blood-brain barrier penetration remains active and unresolved
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Mixed — Moderate for low-dose PharmaGABA sleep and stress (Yamatsu 2016 polysomnography, Abdou 2006, Kanehira 2011); Moderate but contested for the high-dose GH protocol (Powers 2008 dramatic n=11 finding, limited independent replication at same magnitude); mechanism debate over blood-brain barrier penetration remains active and unresolved
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is GABA?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is GABA?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             GABA (gamma-aminobutyric acid) is the primary inhibitory neurotransmitter in the central nervous system, responsible for reducing neural excitability and promoting calm, relaxation, and sleep. Endogenous GABA is synthesized in the brain from glutamate via glutamic acid decarboxylase and binds GABA-A and GABA-B receptors throughout the nervous system — the same receptor system targeted by benzodiazepines, Z-drugs, and alcohol (with much milder effect from supplemental GABA and without dependence risk). The central mechanism debate is whether oral GABA can meaningfully cross the blood-brain barrier — traditional pharmacology says no, more recent evidence suggests peripheral GABA receptors in the gut/vagus + possible BBB penetration at high doses + general circulating GABA modulation may produce the documented clinical effects. Sleep evidence is moderate and polysomnography-confirmed at low doses (Yamatsu 2016 PharmaGABA 100 mg/day reducing sleep onset latency and increasing deep sleep). Stress reduction is moderate (Abdou 2006 chromogranin A biomarker confirmation; Kanehira 2011 EEG confirmation). The most striking finding is Powers 2008 — 3 g oral GABA elevated immunoreactive GH by ~400% at rest in resistance-trained men, with even larger increases following exercise. Small sample (n=11), biomarker outcome (not body composition), and limited independent replication at the same magnitude — but mechanistically plausible via somatostatin inhibition. The PharmaGABA form (Lactobacillus hilgardii fermentation) has better clinical evidence than synthetic GABA for sleep/anxiety applications. GABA pairs naturally with{" "}
@@ -604,7 +604,7 @@ export default function GABAPage() {
             for users targeting comprehensive GH support.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -618,10 +618,10 @@ export default function GABAPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 100–300 mg PharmaGABA pre-bed for sleep/anxiety (Yamatsu 2016 trial range); 3–5 g synthetic GABA on empty stomach pre-bed or post-workout for GH protocol (Powers 2008 dose). Expect tingling/flushing at the higher synthetic-GABA doses — harmless but uncomfortable.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 100–300 mg PharmaGABA pre-bed for sleep/anxiety (Yamatsu 2016 trial range); 3–5 g synthetic GABA on empty stomach pre-bed or post-workout for GH protocol (Powers 2008 dose). Expect tingling/flushing at the higher synthetic-GABA doses — harmless but uncomfortable.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Drug interaction caveat:</span> Avoid combining with alcohol, benzodiazepines (Xanax, Valium), Z-drugs (Ambien), or other CNS depressants — additive sedation risk. Don&apos;t drive after high doses until tolerability is known.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Drug interaction caveat:</span> Avoid combining with alcohol, benzodiazepines (Xanax, Valium), Z-drugs (Ambien), or other CNS depressants — additive sedation risk. Don&apos;t drive after high doses until tolerability is known.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=PharmaGABA+supplement&tag=profpeptide-20" label="GABA" />
         </div>
@@ -632,7 +632,7 @@ export default function GABAPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -661,7 +661,7 @@ export default function GABAPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
           <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>

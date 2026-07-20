@@ -123,7 +123,7 @@ export default function Home() {
       }} />
       <section className="bg-white dark:bg-[#0f172a] border-b border-gray-100 dark:border-slate-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-[#1e2d3d] dark:text-slate-100 leading-tight mb-5">
+          <h1 className="text-4xl sm:text-5xl font-bold text-[#16181B] dark:text-slate-100 leading-tight mb-5">
             Everything you need for<br className="hidden sm:block" /> peptide research, in one place
           </h1>
           <p className="text-lg text-gray-500 dark:text-slate-400 max-w-xl mx-auto mb-8 leading-relaxed">
@@ -160,7 +160,7 @@ export default function Home() {
       <section className="section">
         <div className="mb-12">
           <div className="flex items-end justify-between mb-4">
-            <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100">Latest News</h2>
+            <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100">Latest News</h2>
             <Link href="/news" className="text-xs font-medium text-[#3A759F] hover:underline">View all news &rarr;</Link>
           </div>
           <Link
@@ -168,7 +168,7 @@ export default function Home() {
             className="card group block"
           >
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-1">{latest.date}</p>
-            <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors mb-2">
+            <h3 className="text-base font-semibold text-[#16181B] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors mb-2">
               {latest.title}
             </h3>
             <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
@@ -177,7 +177,7 @@ export default function Home() {
             <span className="text-xs font-medium text-[#3A759F] mt-3 inline-block">Read more &rarr;</span>
           </Link>
         </div>
-        <h2 className="text-2xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2 text-center">Everything a researcher needs</h2>
+        <h2 className="text-2xl font-bold text-[#16181B] dark:text-slate-100 mb-2 text-center">Everything a researcher needs</h2>
         <p className="text-gray-500 dark:text-slate-400 text-center mb-10 text-sm max-w-lg mx-auto">
           From peptide mechanisms to reconstitution math — Prof. Peptide covers it all, clearly and credibly.
         </p>
@@ -185,7 +185,7 @@ export default function Home() {
           {features.map((f) => (
             <Link href={f.href} key={f.href} className="card group">
               <span className="text-[#3A759F] mb-3 block"><Icon name={f.icon} /></span>
-              <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1.5 group-hover:text-[#3A759F] transition-colors">{f.title}</h3>
+              <h3 className="text-base font-semibold text-[#16181B] dark:text-slate-100 mb-1.5 group-hover:text-[#3A759F] transition-colors">{f.title}</h3>
               <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-4">{f.desc}</p>
               <span className="text-xs font-medium text-[#3A759F] group-hover:underline">{f.cta} &rarr;</span>
             </Link>
@@ -198,7 +198,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <span className="tag mb-4 inline-block">Why Prof. Peptide</span>
-              <h2 className="text-2xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-4">Built for researchers</h2>
+              <h2 className="text-2xl font-bold text-[#16181B] dark:text-slate-100 mb-4">Built for researchers</h2>
               <p className="text-gray-500 dark:text-slate-400 text-sm leading-relaxed mb-5">
                 Most peptide sites exist to sell products. Prof. Peptide exists to educate. We&apos;re independent, ad-light, and committed to presenting research accurately — including limitations and unknowns.
               </p>
@@ -218,7 +218,7 @@ export default function Home() {
             </div>
             <div className="panel-card p-6">
               <p className="text-xs font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-wider mb-4">Now on iOS</p>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">The all-in-one peptide tracker</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">The all-in-one peptide tracker</h3>
               <p className="text-sm text-gray-500 dark:text-slate-400 mb-5 leading-relaxed">
                 Log doses, see estimated levels, calculate reconstitution, and search 60+ peptides by name or brand — all in one private iOS app.
               </p>

@@ -1,7 +1,7 @@
 // Prof. Peptide "Pp" brand mark — the potrace-traced app icon (letterforms as
 // PATHS, not CSS text, so they can never overflow). Inline (not an <img>) so the
 // tile interior can swap navy by theme: #0f172a in light (matches the app icon /
-// favicon) and #1e2d3d in dark, where the header itself is #0f172a and a #0f172a
+// favicon) and #16181B in dark, where the header itself is #0f172a and a #0f172a
 // tile would dissolve. Cyan #3A759F border and #f0f4f8 letters stay constant.
 export default function PpMark({
   className,
@@ -24,10 +24,10 @@ export default function PpMark({
       xmlns="http://www.w3.org/2000/svg"
     >
       {/* Rounded tile: themeable navy interior + brand-cyan border (~3px at 56px).
-          Interior swaps #0f172a (light) / #1e2d3d (dark) unless `interior` forces it. */}
+          Interior swaps #0f172a (light) / #16181B (dark) unless `interior` forces it. */}
       <rect
         x="30" y="30" width="964" height="964" rx="145" ry="145"
-        className={interior ? undefined : "fill-[#0f172a] dark:fill-[#1e2d3d]"}
+        className={interior ? undefined : "fill-[#0f172a] dark:fill-[#16181B]"}
         fill={interior}
         stroke="#3A759F" strokeWidth="60"
       />

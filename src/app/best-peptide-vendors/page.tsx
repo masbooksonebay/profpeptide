@@ -107,7 +107,7 @@ export default function BestPeptideVendorsPage() {
 
       <div className="section max-w-3xl">
         <span className="tag mb-3 inline-block">Updated July 2026</span>
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-4">
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">
           Best Peptide Vendors for Research (July 2026)
         </h1>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-6 max-w-xl">
@@ -130,10 +130,10 @@ export default function BestPeptideVendorsPage() {
           {vendors.map((v) => (
             <div
               key={v.slug}
-              className="border border-gray-200 dark:border-slate-700 rounded-xl p-6 bg-white dark:bg-[#0f172a] hover:shadow-md transition-shadow"
+              className="border border-[#D9DEE4] dark:border-slate-700 rounded-xl p-6 bg-white dark:bg-[#0f172a] hover:shadow-md transition-shadow"
             >
               <div className="flex items-start justify-between gap-4 mb-3 flex-wrap">
-                <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100">
+                <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100">
                   <Link href={`/coupons/${v.slug}`} className="hover:text-[#3A759F] transition-colors">
                     {v.name}
                   </Link>
@@ -151,7 +151,7 @@ export default function BestPeptideVendorsPage() {
                 {v.strengths.map((s) => (
                   <span
                     key={s}
-                    className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-600 dark:text-slate-300 border border-gray-200 dark:border-slate-600 px-2.5 py-0.5 rounded-full"
+                    className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-600 dark:text-slate-300 border border-[#D9DEE4] dark:border-slate-600 px-2.5 py-0.5 rounded-full"
                   >
                     {s}
                   </span>
@@ -161,7 +161,7 @@ export default function BestPeptideVendorsPage() {
               <div className="flex items-center justify-between gap-3 flex-wrap">
                 <div className="text-xs text-gray-500 dark:text-slate-400">
                   Code:{" "}
-                  <span className="font-mono font-semibold text-[#1e2d3d] dark:text-slate-100 tracking-wider">
+                  <span className="font-mono font-semibold text-[#16181B] dark:text-slate-100 tracking-wider">
                     {v.code}
                   </span>
                 </div>
@@ -187,7 +187,7 @@ export default function BestPeptideVendorsPage() {
         </div>
 
         <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">How We Vet Vendors</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">How We Vet Vendors</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Every vendor on this page is evaluated against the same criteria: third-party lab testing, published Certificates of Analysis, documented purity standards, catalog breadth, transparent shipping, responsive customer service, and reputation in the research community. Meeting all of them gets a vendor on the list &mdash; we don&rsquo;t score beyond that. We update this list regularly as the market changes.
           </p>

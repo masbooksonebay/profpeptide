@@ -183,11 +183,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -229,7 +229,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Oral NAD+ precursor supplements pair naturally with the longevity peptide cluster.{" "}
             <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
@@ -239,7 +239,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN (dedicated profile)</Link>{" "}
@@ -268,7 +268,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Intermittent fasting / time-restricted eating.</span> Fasting independently elevates NAD+ levels via SIRT1 activation. NAD+ precursor supplementation during fasting windows is mechanistically additive.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Endurance exercise.</span> Exercise raises NAD+ via NAMPT upregulation in muscle. Precursor supplementation supports the same pathway from a different angle.</li>
@@ -288,7 +288,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — occasional nausea or stomach upset, particularly with NR at higher doses or on empty stomach.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild flushing — uncommon with NMN/NR (which lack the niacin-flush component); more common if user combines with high-dose niacin.</li>
@@ -297,7 +297,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Active cancer — context-dependent. NAD+ supports DNA repair (potentially protective) and PARP activity (potentially helpful or harmful depending on cancer biology), but also supports cancer-cell metabolism. Coordinate with oncologist.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-term safety beyond 12 months — most trial data extends to 8–12 weeks; multi-year safety is reasonable based on mechanism and short-term data but not directly characterized.</li>
@@ -305,7 +305,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Chemotherapy — NAD+ precursors may affect both DNA-repair pathways and cancer-cell metabolism. Avoid during active oncology treatment without specialist input.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">PARP inhibitors (olaparib, niraparib, rucaparib) — NAD+ precursors may interact with PARP inhibitor activity. Avoid coadministration without oncologist guidance.</li>
@@ -383,7 +383,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -452,7 +452,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -580,7 +580,7 @@ export default function NADPlusSupplementPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">NAD+</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">NAD+</h1>
         <span className="tag">Longevity</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -588,18 +588,18 @@ export default function NADPlusSupplementPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Nicotinamide adenine dinucleotide, NAD, Coenzyme I. Precursors: NMN (nicotinamide mononucleotide), NR (nicotinamide riboside), Niagen
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Nicotinamide adenine dinucleotide, NAD, Coenzyme I. Precursors: NMN (nicotinamide mononucleotide), NR (nicotinamide riboside), Niagen
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Essential pyridine nucleotide coenzyme / oral NAD+ precursor (NMN, NR) / sirtuin substrate / electron carrier in cellular respiration
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Essential pyridine nucleotide coenzyme / oral NAD+ precursor (NMN, NR) / sirtuin substrate / electron carrier in cellular respiration
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Moderate — Strong for blood NAD+ elevation across NR and NMN trials (Martens 2018, Igarashi 2022, Conze 2019, Yi 2023); Moderate for functional/clinical outcomes (Yoshino 2021 insulin sensitivity, Igarashi 2022 muscle function); human lifespan evidence does not exist and won&apos;t for decades; FDA regulatory wrinkle on NMN (November 2022 notification)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Moderate — Strong for blood NAD+ elevation across NR and NMN trials (Martens 2018, Igarashi 2022, Conze 2019, Yi 2023); Moderate for functional/clinical outcomes (Yoshino 2021 insulin sensitivity, Igarashi 2022 muscle function); human lifespan evidence does not exist and won&apos;t for decades; FDA regulatory wrinkle on NMN (November 2022 notification)
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is NAD+ supplementation?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is NAD+ supplementation?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             NAD+ (nicotinamide adenine dinucleotide) is an essential pyridine nucleotide coenzyme present in every living cell — central to energy metabolism (electron carrier in cellular respiration), longevity biology (substrate for sirtuin enzymes SIRT1–SIRT7), and DNA repair (substrate for PARP enzymes). NAD+ levels decline measurably with age, by ~50% by midlife. Direct oral NAD+ supplementation has poor bioavailability, so practical supplementation uses precursor strategies: NMN (nicotinamide mononucleotide), one biochemical step from NAD+ with recent positive trial evidence (Yoshino 2021, Igarashi 2022, Yi 2023); or NR (nicotinamide riboside, branded as Niagen by ChromaDex), with the longer track record and clean regulatory status (Martens 2018, Conze 2019). Both reliably elevate blood NAD+. The most aggressive option is the{" "}
@@ -608,7 +608,7 @@ export default function NADPlusSupplementPage() {
             for the pineal-axis arm of longevity. NMN has an FDA regulatory wrinkle (November 2022 notification excluding it from dietary-supplement classification) — see Limitations.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -622,10 +622,10 @@ export default function NADPlusSupplementPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> NR (Niagen) 300–1,000 mg/day, split AM + midday. NMN 250–500 mg/day standard; 600–900 mg/day for users wanting larger NAD+ elevation per Yi 2023 dose-response. Take morning — some users report mild energizing effect; evening dosing occasionally interferes with sleep.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> NR (Niagen) 300–1,000 mg/day, split AM + midday. NMN 250–500 mg/day standard; 600–900 mg/day for users wanting larger NAD+ elevation per Yi 2023 dose-response. Take morning — some users report mild energizing effect; evening dosing occasionally interferes with sleep.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> NR (Niagen / Tru Niagen brand from ChromaDex) for clean regulatory status; branded β-NMN (Uthever and others) for the more proximal precursor with regulatory wrinkle. NMN purity matters (β-NMN bioactive vs α-NMN inactive) — branded products preferred. Review the quality-markers checklist in the Where to Buy section below.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> NR (Niagen / Tru Niagen brand from ChromaDex) for clean regulatory status; branded β-NMN (Uthever and others) for the more proximal precursor with regulatory wrinkle. NMN purity matters (β-NMN bioactive vs α-NMN inactive) — branded products preferred. Review the quality-markers checklist in the Where to Buy section below.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=NAD+supplement+NMN&tag=profpeptide-20" label="NAD+ Supplement" />
         </div>
@@ -636,7 +636,7 @@ export default function NADPlusSupplementPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -665,7 +665,7 @@ export default function NADPlusSupplementPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/nmn" className="text-sm font-medium text-[#3A759F] hover:underline">NMN (dedicated profile)</Link>
           <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#3A759F] hover:underline">Resveratrol</Link>

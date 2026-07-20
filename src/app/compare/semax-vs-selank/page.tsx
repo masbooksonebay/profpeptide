@@ -42,11 +42,11 @@ export default function SemaxVsSelankPage() {
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Semax vs Selank &mdash; Cognitive Peptide Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Semax vs Selank &mdash; Cognitive Peptide Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Semax and Selank are both synthetic nootropic peptides developed in Russia, both approved for clinical use there, and both studied for cognitive and anxiolytic effects. They work through different mechanisms and have distinct primary strengths &mdash; Semax is the cognitive enhancer and neuroprotector, Selank is the anxiolytic with cognitive benefits.</p>
 
       <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why Russian peptide research diverged from Western</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Why Russian peptide research diverged from Western</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Both Semax and Selank were developed in Soviet/Russian neuroscience institutes starting in the 1980s. Russian peptide research took a different path from Western pharmacology, focusing heavily on small synthetic peptides modeled on natural neuropeptides &mdash; a class largely overlooked in Western drug development.
         </p>
@@ -70,7 +70,7 @@ export default function SemaxVsSelankPage() {
           </tr></thead>
           <tbody>{rows.map(([label, a, b], i) => (
             <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-              <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+              <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
               <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
               <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
             </tr>
@@ -78,31 +78,31 @@ export default function SemaxVsSelankPage() {
         </table>
       </div>
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which one is right for you?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Which one is right for you?</h2>
         <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           Both peptides are research compounds in the US (FDA-unapproved) but clinically used in Russia. Application choice depends primarily on what you&apos;re researching: cognition or anxiety.
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cognitive enhancement, focus, mental performance</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Cognitive enhancement, focus, mental performance</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Semax is the more direct match. Russian clinical research approves it for stroke recovery, encephalopathy, ADHD, and cognitive impairment &mdash; all centered on its BDNF-elevating, neuroprotective mechanism. Self-reported effects in research-using populations include improved focus, mental clarity, and faster learning. Onset is fairly quick (within hours of intranasal dosing).
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Anxiety reduction without sedation or dependence</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Anxiety reduction without sedation or dependence</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Selank is the more direct match. Russia approves it for generalized anxiety disorder (GAD). The standout feature: in one RCT (62 patients with GAD), Selank was comparable to medazepam &mdash; a benzodiazepine &mdash; in anxiety reduction, but without sedation, memory impairment, or dependence risk. For research interested in anxiolysis without benzodiazepine downsides, this is an unusual peptide.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Stress recovery, neuroprotection, brain injury research</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Stress recovery, neuroprotection, brain injury research</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both have neuroprotective evidence, but Semax has stronger data for acute neuroprotection (stroke, traumatic brain injury, cognitive decline). Russian clinics use Semax post-stroke. Selank&apos;s neuroprotection is more about chronic stress resistance &mdash; protective against alcohol-induced cognitive decline in animal models.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Stack approach (cognitive + anxiety together)</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Stack approach (cognitive + anxiety together)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Some research protocols use both. Mechanisms don&apos;t overlap (BDNF/trkB for Semax, GABA-A allosteric modulation for Selank), so combined effects are theoretically additive. The combination is sometimes positioned as &ldquo;Semax for productivity, Selank for stress.&rdquo; No formal research has compared the stack to single-peptide protocols.
             </p>
@@ -111,16 +111,16 @@ export default function SemaxVsSelankPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300">Choose <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link> if the primary research interest is cognitive enhancement, neuroprotection, or stroke-related outcomes. Choose <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link> if the primary interest is anxiety reduction without sedation or dependence risk. They complement each other well &mdash; Semax for cognition, Selank for stress &mdash; and are sometimes studied together.</p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i}>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
             </div>
           ))}

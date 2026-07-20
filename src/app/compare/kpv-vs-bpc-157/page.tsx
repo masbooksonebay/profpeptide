@@ -43,17 +43,17 @@ export default function KPVvsBPC157Page() {
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">KPV vs BPC-157 &mdash; Anti-Inflammatory vs Tissue Repair</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">KPV vs BPC-157 &mdash; Anti-Inflammatory vs Tissue Repair</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link> and <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link> both show up in gut, immune, and recovery research, so they get compared &mdash; but they are two genuinely different compounds that work through different mechanisms. This page explains what each actually is, how they differ, and which research question each fits.</p>
 
       <div className="bg-[#3A759F]/10 border border-[#3A759F]/20 rounded-xl p-5 mb-8">
-        <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>KPV:</strong> a three-amino-acid fragment of α-MSH, studied as an anti-inflammatory (dampens inflammatory signaling), especially in the gut.</p>
-        <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>BPC-157:</strong> a fifteen-amino-acid gastric pentadecapeptide, studied for tissue repair (angiogenesis and growth-factor signaling).</p>
-        <p className="text-lg text-[#1e2d3d] dark:text-slate-100"><strong>Bottom line up front:</strong> different compounds, different mechanisms &mdash; one calms inflammation, the other rebuilds tissue. Complementary rather than a &ldquo;which is better&rdquo; contest, and both are preclinical, research-use only.</p>
+        <p className="text-lg text-[#16181B] dark:text-slate-100 mb-2"><strong>KPV:</strong> a three-amino-acid fragment of α-MSH, studied as an anti-inflammatory (dampens inflammatory signaling), especially in the gut.</p>
+        <p className="text-lg text-[#16181B] dark:text-slate-100 mb-2"><strong>BPC-157:</strong> a fifteen-amino-acid gastric pentadecapeptide, studied for tissue repair (angiogenesis and growth-factor signaling).</p>
+        <p className="text-lg text-[#16181B] dark:text-slate-100"><strong>Bottom line up front:</strong> different compounds, different mechanisms &mdash; one calms inflammation, the other rebuilds tissue. Complementary rather than a &ldquo;which is better&rdquo; contest, and both are preclinical, research-use only.</p>
       </div>
 
       <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why these two get compared</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Why these two get compared</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Both are peptides researched in gut and recovery contexts, so they land on the same shortlists &mdash; and they are even sold as a combined blend. But they come from different places and do different jobs. KPV is the tail end (residues 11-13) of α-melanocyte-stimulating hormone, and it carries that hormone&apos;s anti-inflammatory activity in a tiny three-amino-acid package.
         </p>
@@ -77,7 +77,7 @@ export default function KPVvsBPC157Page() {
           <tbody>
             {rows.map(([label, a, b], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-                <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+                <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
               </tr>
@@ -87,25 +87,25 @@ export default function KPVvsBPC157Page() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which fits which research question?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Which fits which research question?</h2>
         <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           Both are research-use-only and neither is FDA-approved. Because the mechanisms differ, the choice is about the question you&apos;re studying, not a ranking.
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Studying inflammation (IBD, gut or skin inflammation)</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Studying inflammation (IBD, gut or skin inflammation)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               KPV is the more direct match. Its anti-inflammatory activity &mdash; reducing NF-κB signaling and pro-inflammatory cytokines &mdash; has been studied specifically in intestinal-inflammation models, aided by uptake through the gut&apos;s PepT1 transporter. If the research question is about calming an inflammatory process, KPV is the mechanistic fit.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Studying tissue repair (gut mucosal healing, tendon, soft tissue)</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Studying tissue repair (gut mucosal healing, tendon, soft tissue)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               BPC-157 is the repair-oriented tool. Its angiogenic and growth-factor mechanisms target rebuilding damaged tissue &mdash; the strongest preclinical evidence spans gut healing and musculoskeletal (tendon/ligament) repair. If the question is about regeneration rather than inflammation, BPC-157 is the more relevant choice.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Both together</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Both together</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Because one calms inflammation and the other drives repair, they are sometimes combined &mdash; sold as a <Link href="/peptides/kpv-bpc-157" className="text-[#3A759F] hover:underline">KPV + BPC-157 blend</Link> &mdash; particularly in gut research where reducing inflammation and rebuilding the mucosa are both goals. There is no established combination protocol and the human data is limited, so any combined use is exploratory and research-use only.
             </p>
@@ -114,16 +114,16 @@ export default function KPVvsBPC157Page() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300">KPV and BPC-157 are two distinct peptides, not variants of one another. KPV is a small α-MSH fragment that calms inflammation (NF-κB and cytokine signaling), studied most in intestinal-inflammation models. BPC-157 is a larger gastric pentadecapeptide that drives tissue repair through angiogenesis and growth-factor signaling, studied most in gut healing and musculoskeletal repair. They address different halves of the same problem &mdash; inflammation vs regeneration &mdash; which is why they are sometimes combined. Pick by research question, not by a &ldquo;winner,&rdquo; and note both are preclinical, not FDA-approved, and research-use only.</p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i}>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
             </div>
           ))}
@@ -131,7 +131,7 @@ export default function KPVvsBPC157Page() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">References</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">References</h2>
         <ol className="list-decimal list-inside space-y-2">
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Brzoska T, Böhm M, Lügering A, et al. Alpha-melanocyte-stimulating hormone and related tripeptides: biochemistry, antiinflammatory and protective effects in vitro and in vivo, and future perspectives. Endocr Rev. 2008;29(5):581-602.{" "}

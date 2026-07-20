@@ -169,11 +169,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -215,7 +215,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Caffeine pairs naturally with the cognitive peptide cluster.{" "}
             <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
@@ -223,7 +223,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/caffeine-l-theanine" className="text-[#3A759F] hover:underline">L-theanine (1:2 ratio)</Link>{" "}
@@ -247,7 +247,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-workout timing.</span> 30–60 minutes before training at 3–6 mg/kg for performance-relevant effects.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cognitive-demand timing.</span> 30–45 minutes before deep work blocks. Avoid stacking with high-stress meetings if you&apos;re prone to anxiety on caffeine.</li>
@@ -267,7 +267,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Jitteriness, anxiety, restlessness — dose-related, more pronounced in slow CYP1A2 metabolizers and naive users.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Insomnia and sleep architecture disruption — particularly with afternoon dosing.</li>
@@ -278,7 +278,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Atrial fibrillation provocation — possible in users with existing arrhythmia tendency at high doses.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Worsening of panic disorder, GAD, or essential tremor.</li>
@@ -287,7 +287,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">SSRIs, MAOIs, and other psychiatric medications.</span> Variable interactions; some SSRIs slow caffeine metabolism. Coordinate with prescribing clinician for chronic use.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Stimulant medications (ADHD drugs, modafinil).</span> Additive stimulation; watch total stimulant load. Reduce caffeine if over-stimulated.</li>
@@ -366,7 +366,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -435,7 +435,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -563,7 +563,7 @@ export default function CaffeinePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Caffeine</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Caffeine</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -571,18 +571,18 @@ export default function CaffeinePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> 1,3,7-trimethylxanthine, caffeine anhydrous, methylxanthine alkaloid, &ldquo;coffee&apos;s active ingredient&rdquo;
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> 1,3,7-trimethylxanthine, caffeine anhydrous, methylxanthine alkaloid, &ldquo;coffee&apos;s active ingredient&rdquo;
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Methylxanthine alkaloid / adenosine receptor antagonist / CNS stimulant / thermogenic
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Methylxanthine alkaloid / adenosine receptor antagonist / CNS stimulant / thermogenic
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — one of the most-studied compounds in human research; ISSN 2021 position stand for performance (3–6 mg/kg); Astrup 1990 thermogenesis evidence; Poole 2017 BMJ umbrella review of 218 meta-analyses for general health outcomes; McLellan 2016 cognitive performance meta-analysis; FDA GRAS classification; effects are moderate but extraordinarily consistent
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — one of the most-studied compounds in human research; ISSN 2021 position stand for performance (3–6 mg/kg); Astrup 1990 thermogenesis evidence; Poole 2017 BMJ umbrella review of 218 meta-analyses for general health outcomes; McLellan 2016 cognitive performance meta-analysis; FDA GRAS classification; effects are moderate but extraordinarily consistent
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is caffeine?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is caffeine?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Caffeine is a naturally occurring methylxanthine alkaloid found in coffee, tea, cacao, guarana, and many other plants — the most widely consumed psychoactive substance in the world (80%+ of adults consume it daily). It is also one of the most extensively researched compounds in human science: hundreds of double-blind trials, multiple ISSN position stands, and the Poole 2017 BMJ umbrella review of 218 meta-analyses on coffee/caffeine outcomes. Caffeine&apos;s primary mechanism is competitive antagonism at adenosine receptors — blocking the inhibitory neurotransmitter that signals sleepiness, producing alertness, reduced fatigue perception, and indirect catecholamine release. Secondary mechanisms include thermogenesis (3–11% resting metabolic rate increase per Astrup 1990), fat oxidation enhancement during exercise, and modest phosphodiesterase inhibition. Caffeine&apos;s effect-size profile is moderate but consistent — endurance performance improves 2–4%, strength 1–3%, cognition reliably in fatigued users. Genetic variation in CYP1A2 metabolism explains much of the interindividual variability in tolerance and response. Caffeine pairs naturally with{" "}
@@ -592,7 +592,7 @@ export default function CaffeinePage() {
             for cleaner focus without the adrenergic edge.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -606,10 +606,10 @@ export default function CaffeinePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 3–6 mg/kg body weight 30–60 minutes pre-exercise for performance (ISSN protocol). 100–200 mg per dose for general cognitive/alertness use; total daily under 400 mg (FDA safety guidance for healthy adults). Slow CYP1A2 metabolizers may need 50–100 mg doses with morning-only timing.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 3–6 mg/kg body weight 30–60 minutes pre-exercise for performance (ISSN protocol). 100–200 mg per dose for general cognitive/alertness use; total daily under 400 mg (FDA safety guidance for healthy adults). Slow CYP1A2 metabolizers may need 50–100 mg doses with morning-only timing.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Sleep cutoff:</span> Noon for most users; 10 AM for slow metabolizers. Drake 2013 documented measurable sleep disruption even from caffeine taken 6 hours before bed. Half-life is 5–6 hours; afternoon dosing has next-night consequences.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Sleep cutoff:</span> Noon for most users; 10 AM for slow metabolizers. Drake 2013 documented measurable sleep disruption even from caffeine taken 6 hours before bed. Half-life is 5–6 hours; afternoon dosing has next-night consequences.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=caffeine+supplement&tag=profpeptide-20" label="Caffeine" />
         </div>
@@ -620,7 +620,7 @@ export default function CaffeinePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -649,7 +649,7 @@ export default function CaffeinePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/caffeine-l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">Caffeine + L-Theanine</Link>
           <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>

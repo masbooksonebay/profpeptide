@@ -165,11 +165,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -211,7 +211,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Beta-alanine&apos;s carnosine-buffering mechanism is supplement-supplement-focused rather than peptide-stacking territory. Mechanistic complement to GH-secretagogue peptides like{" "}
             <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
@@ -223,7 +223,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine monohydrate</Link>{" "}
@@ -260,7 +260,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sport-specific match.</span> Beta-alanine is most valuable when training/competing in the 1–4 min duration window. Pure marathoners and pure powerlifters may not get meaningful benefit.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">High-intensity interval training.</span> HIIT, CrossFit, MetCon work fits beta-alanine&apos;s effective window. Effect emerges over weeks of training + supplementation.</li>
@@ -281,7 +281,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Paresthesia (tingling/flushing).</span> Common with single doses above 1.6–2 g. Harmless. Resolves over 60–90 minutes. CNS adapts with continued use. Split dosing or sustained-release form eliminates in most users.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort at very high single doses — rare at split dosing.</li>
@@ -289,7 +289,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Taurine transporter competition (theoretical).</span> Beta-alanine and taurine share an intestinal transporter; chronic high-dose beta-alanine could theoretically lower taurine availability. Clinical significance at typical doses appears small; no documented taurine deficiency in beta-alanine users.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">No documented long-term organ effects.</span> Multi-year supplementation safety studies show no liver, kidney, or muscle dysfunction.</li>
@@ -298,7 +298,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No documented significant drug interactions at standard supplemental doses.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Compatible with creatine, caffeine, citrulline malate, and other standard pre-workout and performance supplements.</li>
@@ -380,7 +380,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -443,7 +443,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -539,7 +539,7 @@ export default function BetaAlaninePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Beta-Alanine</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Beta-Alanine</h1>
         <span className="tag">Performance &amp; Energy</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -547,24 +547,24 @@ export default function BetaAlaninePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> CarnoSyn (patented standardized form), CarnoSyn SR (sustained-release), beta-alanine anhydrous, BA, β-alanine
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> CarnoSyn (patented standardized form), CarnoSyn SR (sustained-release), beta-alanine anhydrous, BA, β-alanine
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Non-essential amino acid / rate-limiting precursor for muscle carnosine synthesis / intramuscular pH buffering agent for glycolytic exercise (60s–4min window) / chronic-loading supplement (no acute pre-workout effect)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Non-essential amino acid / rate-limiting precursor for muscle carnosine synthesis / intramuscular pH buffering agent for glycolytic exercise (60s–4min window) / chronic-loading supplement (no acute pre-workout effect)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong within the carnosine-buffering exercise duration window (~60 seconds to 4 minutes) — Saunders 2017 meta-analysis of 40 RCTs documents largest ergogenic effects in this range; ISSN position stand (Trexler 2015) is the foundational supplementation reference. Modest for very short (&lt;30s, creatine territory) or very long (&gt;10min steady-state aerobic) efforts. Moderate for combat sports, team sports with repeated sprints, rowing/swimming/middle-distance running, high-rep resistance training to failure. Creatine + beta-alanine combination produces additive benefits (Hoffman 2006).
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong within the carnosine-buffering exercise duration window (~60 seconds to 4 minutes) — Saunders 2017 meta-analysis of 40 RCTs documents largest ergogenic effects in this range; ISSN position stand (Trexler 2015) is the foundational supplementation reference. Modest for very short (&lt;30s, creatine territory) or very long (&gt;10min steady-state aerobic) efforts. Moderate for combat sports, team sports with repeated sprints, rowing/swimming/middle-distance running, high-rep resistance training to failure. Creatine + beta-alanine combination produces additive benefits (Hoffman 2006).
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is beta-alanine?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is beta-alanine?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Beta-alanine is a non-essential amino acid that serves a single, specific biological role relevant to supplementation: it is the rate-limiting precursor for muscle carnosine synthesis. Carnosine is a dipeptide (beta-alanine + histidine) that accumulates in muscle tissue and functions as an intramuscular pH buffer — accepting hydrogen ions (H+) produced during high-intensity glycolytic exercise that would otherwise drive intramuscular acidosis and fatigue. Beta-alanine supplementation increases muscle carnosine concentrations by 40–80% over 4–12 weeks of consistent daily dosing (Hill 2007), extending the time before acidosis-driven fatigue limits performance. The mechanism is most relevant in a specific exercise duration window — approximately 60 seconds to 4 minutes — where intramuscular acidosis dominates the fatigue limitation. <span className="font-semibold">Saunders 2017 meta-analysis</span> of 40 RCTs documented largest ergogenic effects in this duration window, including improvements in rowing 2 km, swimming 100–400 m, cycling time trials in 1–4 min range, repeated sprint ability, combat sports rounds, and high-rep resistance training to failure. The <span className="font-semibold">ISSN position stand (Trexler 2015)</span> is the foundational supplementation reference. Standard dose is 3.2–6.4 g/day, split into servings of 1.6 g or less to minimize paresthesia — the signature dose-dependent side effect (harmless tingling/flushing from MrgD receptor activation on cutaneous sensory neurons). Sustained-release formulations (CarnoSyn SR) allow single daily doses without paresthesia. The supplementation pattern is fundamentally different from most pre-workout supplements: beta-alanine has no acute pre-workout effect. Muscle carnosine accumulates slowly over weeks; performance benefits emerge in parallel over 4–12 weeks of chronic loading. After peak loading, maintenance dosing at 1.2–3.2 g/day sustains the effect. Beta-alanine pairs naturally with creatine as the canonical mixed-energy-system stack — creatine handles phosphocreatine-mediated ATP regeneration for efforts under 30 seconds (max lifts, jumps, sprints); beta-alanine handles glycolytic pH buffering for the 60-second-to-4-minute range. Hoffman 2006 documented additive benefits with combined creatine + beta-alanine vs either alone in football players. Outside the beta-alanine duration window: pure strength/power under 30 seconds is creatine&apos;s domain; steady-state endurance over 10 minutes is fuel-substrate and oxygen-delivery limited, where beta-alanine&apos;s effect is small. Practical implication: beta-alanine is a sport-specific supplement matched to specific exercise duration profiles, not a universal performance enhancer.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -580,10 +580,10 @@ export default function BetaAlaninePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 3.2–6.4 g/day for 4–12 weeks to reach peak muscle carnosine loading; 1.2–3.2 g/day maintenance thereafter. Split into 1.6 g servings (or smaller) every 3–4 hours to minimize paresthesia, OR use sustained-release form (CarnoSyn SR) for single daily dose. No acute pre-workout effect — this is chronic loading only.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 3.2–6.4 g/day for 4–12 weeks to reach peak muscle carnosine loading; 1.2–3.2 g/day maintenance thereafter. Split into 1.6 g servings (or smaller) every 3–4 hours to minimize paresthesia, OR use sustained-release form (CarnoSyn SR) for single daily dose. No acute pre-workout effect — this is chronic loading only.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Paresthesia (harmless tingling; mitigated by split dosing or sustained-release); no acute pre-workout effect (don&apos;t expect immediate performance change); 4–12 weeks to peak loading; effect smaller outside the 60s–4min exercise window; theoretical taurine transporter competition at chronic high doses (clinical significance small); rare beta-alaninemia genetic disorder is absolute contraindication.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Paresthesia (harmless tingling; mitigated by split dosing or sustained-release); no acute pre-workout effect (don&apos;t expect immediate performance change); 4–12 weeks to peak loading; effect smaller outside the 60s–4min exercise window; theoretical taurine transporter competition at chronic high doses (clinical significance small); rare beta-alaninemia genetic disorder is absolute contraindication.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=beta+alanine+carnosyn+powder&tag=profpeptide-20" label="Beta-Alanine" />
         </div>
@@ -594,7 +594,7 @@ export default function BetaAlaninePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -623,7 +623,7 @@ export default function BetaAlaninePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/creatine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine</Link>
           <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline Malate</Link>
@@ -635,7 +635,7 @@ export default function BetaAlaninePage() {
       </div>
 
       <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/compare/creatine-vs-beta-alanine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine vs Beta-Alanine &rarr;</Link>
         </div>

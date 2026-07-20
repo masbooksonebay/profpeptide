@@ -57,7 +57,7 @@ export default function RetatrutideVsTirzepatidePage() {
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Retatrutide vs Tirzepatide &mdash; Triple Agonist vs Dual Agonist Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Retatrutide vs Tirzepatide &mdash; Triple Agonist vs Dual Agonist Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> and <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> are both injectable peptides for weight loss and metabolic health, but they work on different numbers of receptors. Tirzepatide is FDA-approved and activates two receptors (GLP-1 and GIP). Retatrutide is investigational and activates three (GLP-1, GIP, and glucagon), which appears to drive even greater weight loss in trials. Here&apos;s how they compare.</p>
 
       <div className="overflow-x-auto mb-8">
@@ -72,7 +72,7 @@ export default function RetatrutideVsTirzepatidePage() {
           <tbody>
             {rows.map(([label, a, b], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-                <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+                <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
               </tr>
@@ -83,41 +83,41 @@ export default function RetatrutideVsTirzepatidePage() {
 
       <div className="space-y-4 mb-8">
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Choose Retatrutide if:</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Choose Retatrutide if:</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300">You&apos;re researching the highest-efficacy weight loss data available, can tolerate the dysesthesia risk, and don&apos;t need an FDA-approved or insurance-covered option. Best for research settings.</p>
         </div>
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Choose Tirzepatide if:</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Choose Tirzepatide if:</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300">You want an FDA-approved option backed by years of clinical use, prescription access, and slightly milder dysesthesia profile. Best when prescription path matters.</p>
         </div>
         <div className="border border-[#3A759F]/20 rounded-xl p-5 bg-[#3A759F]/10">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Consider the bigger picture:</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Consider the bigger picture:</h2>
           <p className="text-sm text-gray-600 dark:text-slate-300">For users tracking the GLP class as a whole, see the <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide</Link> 3-way comparison.</p>
         </div>
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Dosing</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Dosing</h2>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">Both are once-weekly subcutaneous injections titrated slowly upward to limit gastrointestinal side effects. These are the trial/label escalation schedules, provided for research context — retatrutide is research-use-only and neither should be dosed without medical oversight.</p>
         <ul className="list-disc list-inside space-y-1 text-sm text-gray-600 dark:text-slate-300">
-          <li><span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Retatrutide:</span> once weekly, titrating 2 → 4 → 6 → 9 → 12 mg over roughly 16+ weeks (12 mg is the top trial dose).</li>
-          <li><span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Tirzepatide:</span> once weekly, titrating 2.5 → 5 → 7.5 → 10 → 12.5 → 15 mg over roughly 20+ weeks (15 mg is the top label dose).</li>
+          <li><span className="font-semibold text-[#16181B] dark:text-slate-100">Retatrutide:</span> once weekly, titrating 2 → 4 → 6 → 9 → 12 mg over roughly 16+ weeks (12 mg is the top trial dose).</li>
+          <li><span className="font-semibold text-[#16181B] dark:text-slate-100">Tirzepatide:</span> once weekly, titrating 2.5 → 5 → 7.5 → 10 → 12.5 → 15 mg over roughly 20+ weeks (15 mg is the top label dose).</li>
         </ul>
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Side Effects</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Side Effects</h2>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">The two share a gastrointestinal profile; the clearest difference is retatrutide&apos;s dysesthesia signal.</p>
         <ul className="list-disc list-inside space-y-1 text-sm text-gray-600 dark:text-slate-300">
-          <li><span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Shared (both):</span> dose-dependent nausea, vomiting, and diarrhea — usually worst during dose escalation.</li>
-          <li><span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Retatrutide-specific:</span> dysesthesia (skin tingling or burning) in ~21% at 12 mg — not seen with tirzepatide — plus a heart-rate increase of ~5–10 bpm.</li>
-          <li><span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Tirzepatide:</span> GI profile broadly similar, possibly slightly milder at high doses; long-term safety established across years of clinical use.</li>
-          <li><span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Note:</span> retatrutide&apos;s longer-term safety is still being characterized in Phase 3 (cardiovascular outcome data pending).</li>
+          <li><span className="font-semibold text-[#16181B] dark:text-slate-100">Shared (both):</span> dose-dependent nausea, vomiting, and diarrhea — usually worst during dose escalation.</li>
+          <li><span className="font-semibold text-[#16181B] dark:text-slate-100">Retatrutide-specific:</span> dysesthesia (skin tingling or burning) in ~21% at 12 mg — not seen with tirzepatide — plus a heart-rate increase of ~5–10 bpm.</li>
+          <li><span className="font-semibold text-[#16181B] dark:text-slate-100">Tirzepatide:</span> GI profile broadly similar, possibly slightly milder at high doses; long-term safety established across years of clinical use.</li>
+          <li><span className="font-semibold text-[#16181B] dark:text-slate-100">Note:</span> retatrutide&apos;s longer-term safety is still being characterized in Phase 3 (cardiovascular outcome data pending).</li>
         </ul>
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300">Retatrutide produces the largest average weight loss seen in any obesity drug, but it&apos;s still investigational. Tirzepatide has FDA approval, prescription access, and an established safety record. The dysesthesia signal in retatrutide trials (~21% at 12mg) is the most notable difference in side effect profiles.</p>
       </div>
 
@@ -127,11 +127,11 @@ export default function RetatrutideVsTirzepatidePage() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i}>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
             </div>
           ))}
@@ -139,7 +139,7 @@ export default function RetatrutideVsTirzepatidePage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related comparisons</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related comparisons</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
           <Link href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Semaglutide &rarr;</Link>

@@ -163,11 +163,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -209,7 +209,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             CoQ10 pairs naturally with the mitochondrial peptide cluster.{" "}
             <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>{" "}
@@ -219,7 +219,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
@@ -247,7 +247,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Always with fat-containing meals.</span> CoQ10 absorption is meaningfully fat-dependent. Take with the largest fat-containing meal of the day. Empty-stomach dosing wastes most of the dose.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Regular endurance exercise.</span> Exercise increases CoQ10 demand and may amplify benefit; CoQ10 reduces exercise-induced oxidative stress in some trials.</li>
@@ -266,7 +266,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — occasional nausea or stomach upset, especially on empty stomach. Resolves with food coadministration.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Heartburn or reflux — uncommon, occasionally reported at higher doses (300 mg+).</li>
@@ -275,14 +275,14 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild blood-pressure reduction — relevant if you&apos;re on antihypertensive medications; modest additive effect. Monitor BP during the first 4–6 weeks of use.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Insomnia — occasionally reported with evening dosing; switch to morning dose if affected.</li>
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Warfarin.</span> CoQ10 has structural similarity to vitamin K and can mildly reduce warfarin&apos;s anticoagulant effect. Modest but documented interaction; monitor INR during the first 4–6 weeks of combined use. Newer anticoagulants (apixaban, rivaroxaban) don&apos;t have this interaction.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Statins.</span> No negative interaction — in fact, statins deplete CoQ10 and CoQ10 supplementation may mitigate statin myopathy. Generally a beneficial coadministration.</li>
@@ -356,7 +356,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -425,7 +425,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -553,7 +553,7 @@ export default function CoQ10Page() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">CoQ10</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">CoQ10</h1>
         <span className="tag">Longevity</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -561,18 +561,18 @@ export default function CoQ10Page() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Coenzyme Q10, ubiquinol (reduced form), ubiquinone (oxidized form), CoQ, mitoquinol
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Coenzyme Q10, ubiquinol (reduced form), ubiquinone (oxidized form), CoQ, mitoquinol
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Mitochondrial electron carrier / fat-soluble antioxidant / vitamin-like compound
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Mitochondrial electron carrier / fat-soluble antioxidant / vitamin-like compound
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — Q-SYMBIO heart failure RCT (Mortensen 2014, n=420, 2-year mortality reduction); KiSel-10 (Alehagen 2013, n=443, 54% CV mortality reduction over 4 years); Banach 2015 meta-analysis for statin myopathy; Lafuente 2013 meta-analysis for male fertility; hard cardiovascular-outcomes evidence unusually strong for a supplement
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — Q-SYMBIO heart failure RCT (Mortensen 2014, n=420, 2-year mortality reduction); KiSel-10 (Alehagen 2013, n=443, 54% CV mortality reduction over 4 years); Banach 2015 meta-analysis for statin myopathy; Lafuente 2013 meta-analysis for male fertility; hard cardiovascular-outcomes evidence unusually strong for a supplement
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is CoQ10?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is CoQ10?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Coenzyme Q10 (CoQ10) is a fat-soluble, vitamin-like compound present in virtually every cell of the human body — hence its alternate name, ubiquinone (from &ldquo;ubiquitous&rdquo;). It plays two irreplaceable roles: it&apos;s the essential mobile electron carrier in the mitochondrial electron transport chain (shuttling electrons between Complex I/II and Complex III to drive ATP synthesis), and in its reduced form (ubiquinol) it&apos;s one of the most important endogenous fat-soluble antioxidants. CoQ10 levels decline with age and are further reduced by statin medications — both via the shared HMG-CoA reductase / mevalonate pathway. The supplement evidence base is unusually strong: Q-SYMBIO (Mortensen 2014) demonstrated 2-year cardiovascular mortality reduction with 300 mg/day in heart failure patients, and KiSel-10 (Alehagen 2013) found CoQ10 + selenium reduced cardiovascular mortality by 54% in elderly adults over 4 years. Statin-myopathy evidence (Banach 2015 meta-analysis) is positive. CoQ10 pairs naturally with{" "}
@@ -580,7 +580,7 @@ export default function CoQ10Page() {
             because the mechanisms operate on different layers of mitochondrial bioenergetics.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -594,10 +594,10 @@ export default function CoQ10Page() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 100–200 mg/day ubiquinol (or 200–300 mg ubiquinone) for general health and age-related maintenance; 300 mg/day ubiquinone for clinical heart failure adjunct (Q-SYMBIO protocol); 100–200 mg/day for statin myopathy; 300–400 mg/day for fertility, migraine, mitochondrial disease. Always with fat-containing meals.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 100–200 mg/day ubiquinol (or 200–300 mg ubiquinone) for general health and age-related maintenance; 300 mg/day ubiquinone for clinical heart failure adjunct (Q-SYMBIO protocol); 100–200 mg/day for statin myopathy; 300–400 mg/day for fertility, migraine, mitochondrial disease. Always with fat-containing meals.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from supplement retailers. Quality varies — particularly around form (ubiquinol preferred for over-40 users) and oil-base softgel formulation. Review the quality-markers checklist in the Where to Buy section below.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Available over-the-counter from supplement retailers. Quality varies — particularly around form (ubiquinol preferred for over-40 users) and oil-base softgel formulation. Review the quality-markers checklist in the Where to Buy section below.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=CoQ10+ubiquinol&tag=profpeptide-20" label="CoQ10" />
         </div>
@@ -608,7 +608,7 @@ export default function CoQ10Page() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -637,7 +637,7 @@ export default function CoQ10Page() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/nmn" className="text-sm font-medium text-[#3A759F] hover:underline">NMN</Link>
           <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>

@@ -169,11 +169,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -215,7 +215,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Resveratrol pairs naturally with the longevity peptide cluster — particularly via the NAD+ / sirtuin axis.{" "}
             <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
@@ -225,7 +225,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
@@ -257,7 +257,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Take with fat-containing meals.</span> Bioavailability is meaningfully fat-dependent. Pair with dietary fat (nuts, olive oil, fatty fish, avocado).</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Intermittent fasting.</span> Caloric restriction and IF activate SIRT1 independently. Resveratrol may add modest mimetic effect during fasting windows. Mechanistically reasonable; not directly RCT-validated as combination.</li>
@@ -277,7 +277,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — nausea, abdominal pain, diarrhea, particularly at higher doses (500+ mg) or empty stomach. Resolves with food coadministration or dose reduction.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache — occasional, generally mild.</li>
@@ -285,7 +285,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pro-oxidant effects at very high doses (1+ g/day) — some research suggests flavonoids can flip from antioxidant to pro-oxidant at high concentrations. Stay within standard supplemental ranges.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild antiplatelet effect — relevant for surgical pre-op washout (1–2 weeks before scheduled surgery).</li>
@@ -294,7 +294,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">CYP3A4 and CYP2D6 substrates.</span> Resveratrol inhibits these cytochrome P450 enzymes. May affect metabolism of statins, calcium channel blockers, some antidepressants, certain anticoagulants. Coordinate with prescribing clinician for narrow-therapeutic-index drugs.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anticoagulants (warfarin, apixaban, rivaroxaban).</span> Mild additive antiplatelet effect + CYP interaction with warfarin. Monitor INR; coordinate with prescribing clinician.</li>
@@ -372,7 +372,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -441,7 +441,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -569,7 +569,7 @@ export default function ResveratrolPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Resveratrol</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Resveratrol</h1>
         <span className="tag">Longevity</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -577,18 +577,18 @@ export default function ResveratrolPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Trans-resveratrol, RSV, stilbenoid, Polygonum cuspidatum (Japanese knotweed source), &ldquo;French Paradox&rdquo; compound
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Trans-resveratrol, RSV, stilbenoid, Polygonum cuspidatum (Japanese knotweed source), &ldquo;French Paradox&rdquo; compound
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Polyphenol stilbenoid / SIRT1 activator (direct + indirect via AMPK) / NF-κB inhibitor / caloric restriction mimetic
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Polyphenol stilbenoid / SIRT1 activator (direct + indirect via AMPK) / NF-κB inhibitor / caloric restriction mimetic
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Mixed (key honesty deviation from typical marketing) — Strong mechanism (SIRT1, AMPK, NF-κB, caloric-restriction mimicry); Moderate biomarker effects (Liu 2015 BP meta-analysis, Hausenblas 2015 T2D meta-analysis, Brasnyó 2011 insulin sensitivity); Strong preclinical animal evidence (Baur 2006 Nature paper on high-calorie-diet mice); Limited/Null hard clinical endpoints in elderly (DO-HEALTH 2020 era); bioavailability constraint is the central practical challenge
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Mixed (key honesty deviation from typical marketing) — Strong mechanism (SIRT1, AMPK, NF-κB, caloric-restriction mimicry); Moderate biomarker effects (Liu 2015 BP meta-analysis, Hausenblas 2015 T2D meta-analysis, Brasnyó 2011 insulin sensitivity); Strong preclinical animal evidence (Baur 2006 Nature paper on high-calorie-diet mice); Limited/Null hard clinical endpoints in elderly (DO-HEALTH 2020 era); bioavailability constraint is the central practical challenge
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is resveratrol?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is resveratrol?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Resveratrol is a polyphenol stilbenoid found in red grape skins, blueberries, peanuts, and most famously red wine — sparking the &ldquo;French Paradox&rdquo; epidemiological interest in 1990s cardiovascular research. David Sinclair&apos;s laboratory identified resveratrol as a sirtuin-activating compound (STAC) in 2003, triggering the modern wave of longevity research. The mechanism case is mature — SIRT1 activation (directly or indirectly via PDE inhibition + AMPK), caloric-restriction mimicry, NF-κB inhibition, antioxidant effects. The biomarker evidence is moderate — Liu 2015 meta-analysis documents significant blood pressure reduction at ≥150 mg/day; Hausenblas 2015 documents HbA1c, fasting glucose, and HOMA-IR improvements in T2D; Brasnyó 2011 documents insulin sensitivity improvements at remarkably low doses (10 mg/day). But the hard clinical endpoint evidence is meaningfully more limited — DO-HEALTH 2020-era large trials in elderly populations have produced null results on physical function, cognitive decline, and major clinical outcomes for sirtuin-targeting interventions broadly. The central practical constraint is bioavailability — resveratrol is rapidly glucuronidated and sulfated, producing peak plasma concentrations 1000× below in-vitro effective concentrations. Honest framing: mechanism-strong, biomarker-moderate, hard-clinical-endpoint Mixed/Limited. Not the unequivocal longevity intervention some marketing suggests, but a reasonable Sinclair-protocol component for users building comprehensive longevity stacks. Pairs naturally with{" "}
@@ -598,7 +598,7 @@ export default function ResveratrolPage() {
             (pineal-axis longevity).
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -613,10 +613,10 @@ export default function ResveratrolPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 150–500 mg trans-resveratrol daily, taken with a fat-containing meal. Sinclair-protocol users often take 500–1,000 mg/day. Pterostilbene (methylated analog) at 50–100 mg/day is a higher-bioavailability alternative. Form (trans-resveratrol 98%+ purity, fat coadministration, micronized/liposomal) matters more than dose magnitude.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 150–500 mg trans-resveratrol daily, taken with a fat-containing meal. Sinclair-protocol users often take 500–1,000 mg/day. Pterostilbene (methylated analog) at 50–100 mg/day is a higher-bioavailability alternative. Form (trans-resveratrol 98%+ purity, fat coadministration, micronized/liposomal) matters more than dose magnitude.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> CYP3A4 and CYP2D6 inhibition (affects statins, calcium channel blockers, antidepressants — coordinate with prescribing clinician); mild antiplatelet effect (1–2 week pre-op washout); pro-oxidant signal at 1+ g/day doses; pregnancy contraindication; aromatase-inhibition effects for hormone-sensitive conditions.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> CYP3A4 and CYP2D6 inhibition (affects statins, calcium channel blockers, antidepressants — coordinate with prescribing clinician); mild antiplatelet effect (1–2 week pre-op washout); pro-oxidant signal at 1+ g/day doses; pregnancy contraindication; aromatase-inhibition effects for hormone-sensitive conditions.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=trans+resveratrol+supplement&tag=profpeptide-20" label="Resveratrol" />
         </div>
@@ -627,7 +627,7 @@ export default function ResveratrolPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -656,7 +656,7 @@ export default function ResveratrolPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/nmn" className="text-sm font-medium text-[#3A759F] hover:underline">NMN</Link>
           <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>

@@ -151,7 +151,7 @@ const sections = [
       "Retatrutide is administered as a once-weekly subcutaneous injection. Phase 3 TRIUMPH trials use a stepwise dose-escalation protocol — starting at 2 mg and increasing every 4 weeks — to give the body time to adapt and reduce gastrointestinal side effects. The slow titration is non-negotiable; Phase 2 data showed that starting at a higher dose (4 mg) significantly increased side-effect rates without improving outcomes.",
     node: (
       <div className="space-y-3">
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           Standard escalation schedule (Phase 3 TRIUMPH protocol):
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -200,11 +200,11 @@ const sections = [
         </p>
 
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -229,12 +229,12 @@ const sections = [
         </div>
 
         <div className="overflow-x-auto -mx-4 sm:mx-0 pt-2">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Week</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Typical dose</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Notes</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Week</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Typical dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Notes</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -270,15 +270,15 @@ const sections = [
         </p>
 
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">1 mg dose</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">2 mg dose</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">4 mg dose</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">8 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Concentration</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">1 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">2 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">4 mg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">8 mg dose</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -369,7 +369,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -382,7 +382,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -393,7 +393,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Serious (rare — call a doctor)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -484,7 +484,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -575,7 +575,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -602,7 +602,7 @@ export default function RetatrutidePage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Retatrutide</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Retatrutide</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
         <span className="tag">Investigational</span>
       </div>
@@ -611,25 +611,25 @@ export default function RetatrutidePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> LY3437943, Triple Hormone Receptor Agonist, GIP/GLP-1/Glucagon Triple Agonist
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> LY3437943, Triple Hormone Receptor Agonist, GIP/GLP-1/Glucagon Triple Agonist
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Triple Hormone Receptor Agonist (GLP-1 / GIP / Glucagon)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Triple Hormone Receptor Agonist (GLP-1 / GIP / Glucagon)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Investigational — Phase 3 trials, not FDA-approved
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Investigational — Phase 3 trials, not FDA-approved
         </p>
       </div>
 
       <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Latest research:</span> Phase 3 TRIUMPH-1 results released May 21, 2026 &mdash; 30.3% average weight loss at 104 weeks, comparable to bariatric surgery outcomes.{" "}
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Latest research:</span> Phase 3 TRIUMPH-1 results released May 21, 2026 &mdash; 30.3% average weight loss at 104 weeks, comparable to bariatric surgery outcomes.{" "}
           <Link href="/news/retatrutide-triumph-1-phase-3-results" className="text-[#3A759F] hover:underline">Read the full breakdown &rarr;</Link>
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Retatrutide?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Retatrutide?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Retatrutide (LY3437943) is a once-weekly injectable peptide developed by Eli Lilly that activates three different hormone receptors at once: GLP-1, GIP, and glucagon. The first two are the receptors targeted by existing weight-loss drugs &mdash;{" "}
@@ -639,7 +639,7 @@ export default function RetatrutidePage() {
             (Mounjaro, Zepbound) hits both GLP-1 and GIP &mdash; but retatrutide adds a third, glucagon, which boosts resting energy expenditure on top of the appetite-suppression effects shared across the class. That third receptor is the reason retatrutide has produced the largest weight losses ever recorded in a pharmacological trial: roughly 24% of body weight at 48 weeks in Phase 2 obesity research, with the weight-loss curve still declining at trial end. As of mid-2026, the drug is in Phase 3 trials under Eli Lilly&rsquo;s TRIUMPH program, with regulatory submission targeted for late 2026 and potential approval in 2027 or 2028.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -652,10 +652,10 @@ export default function RetatrutidePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Published Phase 2 protocols ranged from 2 mg to 12 mg subcutaneously once weekly, with the highest weight-loss figures observed at the 12 mg dose. Protocols followed in research and user communities draw from these published dose escalations and from animal research, not from finalized human clinical guidelines.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> Published Phase 2 protocols ranged from 2 mg to 12 mg subcutaneously once weekly, with the highest weight-loss figures observed at the 12 mg dose. Protocols followed in research and user communities draw from these published dose escalations and from animal research, not from finalized human clinical guidelines.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -669,7 +669,7 @@ export default function RetatrutidePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -707,7 +707,7 @@ export default function RetatrutidePage() {
 
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Tirzepatide</Link>
         <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide</Link>
@@ -718,7 +718,7 @@ export default function RetatrutidePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>
         <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#3A759F] hover:underline">GH Stack</Link>
@@ -728,7 +728,7 @@ export default function RetatrutidePage() {
       </div>
 
       <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/compare/retatrutide-vs-tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Tirzepatide &rarr;</Link>
         <Link href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Semaglutide &rarr;</Link>

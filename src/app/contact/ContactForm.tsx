@@ -74,7 +74,7 @@ export default function ContactForm() {
   if (status === "success") {
     return (
       <div className="rounded-xl border border-[#3A759F]/30 bg-[#3A759F]/5 p-6">
-        <p className="text-lg font-medium text-[#1e2d3d] dark:text-slate-100 mb-2">Got it.</p>
+        <p className="text-lg font-medium text-[#16181B] dark:text-slate-100 mb-2">Got it.</p>
         <p className="text-base text-gray-600 dark:text-slate-300 leading-relaxed">
           We&apos;ll respond within 1-2 business days. Check your inbox for a confirmation email.
         </p>
@@ -83,7 +83,7 @@ export default function ContactForm() {
   }
 
   const inputCls =
-    "w-full border border-gray-200 dark:border-slate-600 rounded-md px-4 py-2.5 text-base bg-white dark:bg-[#0f172a] text-gray-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-[#3A759F] focus:border-transparent";
+    "w-full border border-[#D9DEE4] dark:border-slate-600 rounded-md px-4 py-2.5 text-base bg-white dark:bg-[#0f172a] text-gray-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-[#3A759F] focus:border-transparent";
   const labelCls = "block text-base font-medium text-gray-700 dark:text-slate-200 mb-1.5";
   const errCls = "text-sm text-red-500 mt-1";
 

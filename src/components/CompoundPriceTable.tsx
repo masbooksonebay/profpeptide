@@ -43,7 +43,7 @@ export default function CompoundPriceTable({
       {showToggle && (
         <div className="flex items-center gap-2 mb-3">
           <span className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mr-1">Compare by</span>
-          <div className="inline-flex rounded-lg border border-gray-200 dark:border-slate-600 overflow-hidden text-sm">
+          <div className="inline-flex rounded-lg border border-[#D9DEE4] dark:border-slate-600 overflow-hidden text-sm">
             <button
               onClick={() => setLocalUnit("total")}
               className={`px-3 py-1 ${unit === "total" ? "bg-[#3A759F] text-white" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300"}`}
@@ -79,7 +79,7 @@ export default function CompoundPriceTable({
                   {r.inStock ? (
                     <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full">In stock</span>
                   ) : (
-                    <span className="text-xs bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400 border border-gray-200 dark:border-slate-600 px-2 py-0.5 rounded-full">Out of stock</span>
+                    <span className="text-xs bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400 border border-[#D9DEE4] dark:border-slate-600 px-2 py-0.5 rounded-full">Out of stock</span>
                   )}
                   {i === 0 && (
                     <span className="text-xs bg-[#3A759F]/10 text-[#3A759F] border border-[#3A759F]/20 px-2 py-0.5 rounded-full font-medium">Cheapest</span>
@@ -90,7 +90,7 @@ export default function CompoundPriceTable({
 
               <div className="flex items-center gap-3 sm:justify-end">
                 <div className="text-right">
-                  <span className="text-lg font-bold text-[#1e2d3d] dark:text-slate-100">{fmt(prominentCode)}</span>
+                  <span className="text-lg font-bold text-[#16181B] dark:text-slate-100">{fmt(prominentCode)}</span>
                   {r.discountPct > 0 && (
                     <span className="text-xs text-gray-400 dark:text-slate-500 line-through ml-2">{fmt(prominentBase)}</span>
                   )}

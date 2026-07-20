@@ -171,11 +171,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -217,7 +217,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Melatonin pairs naturally with the Russian-origin sleep and cognitive peptide cluster.{" "}
             <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
@@ -229,7 +229,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/apigenin" className="text-[#3A759F] hover:underline">Apigenin</Link>{" "}
@@ -258,7 +258,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Consistent sleep schedule.</span> Melatonin works best on top of consistent timing. Variable bedtimes undermine the circadian-signaling effect melatonin is designed to support.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Evening light reduction.</span> Dim/red light 1–2 hours before bed supports endogenous melatonin production; bright/blue light suppresses it. Light hygiene + supplemental melatonin is the standard circadian protocol.</li>
@@ -279,7 +279,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Morning grogginess — particularly with higher doses (5+ mg) and extended-release formulations. Resolves with lower dose or switch to immediate-release.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Vivid dreams or nightmares — relatively common, particularly at higher doses. Some users find this disturbing; others find it interesting. Lower dose typically reduces.</li>
@@ -288,7 +288,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Long-term cardiovascular signal (AHA 2025 preliminary).</span> The November 2025 American Heart Association preliminary observational analysis of &gt;130,000 adults raised concerns about elevated heart failure hospitalization and all-cause mortality in long-term (12+ months) melatonin users. Observational data, not peer-reviewed RCT evidence, cannot prove causation. But it adds material uncertainty to the prior "long-term safe" framing. Consider intermittent rather than nightly use for chronic protocols.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hormonal pathway concerns in children — melatonin is a hormone; chronic supplementation during development may affect puberty timing or related axes. Pediatric use should be under specialist supervision for clinical indications only.</li>
@@ -297,7 +297,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anticoagulants (warfarin, apixaban, rivaroxaban).</span> Mild additive anticoagulant effect possible. Monitor INR for warfarin users.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Immunosuppressants (cyclosporine, tacrolimus).</span> Melatonin can affect immune-modulator drug metabolism. Coordinate with prescribing clinician.</li>
@@ -372,7 +372,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -441,7 +441,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -569,7 +569,7 @@ export default function MelatoninPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Melatonin</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Melatonin</h1>
         <span className="tag">Sleep &amp; Recovery</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -577,18 +577,18 @@ export default function MelatoninPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> N-acetyl-5-methoxytryptamine, the &ldquo;sleep hormone,&rdquo; Circadin (EU/UK prescription brand), MEL
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> N-acetyl-5-methoxytryptamine, the &ldquo;sleep hormone,&rdquo; Circadin (EU/UK prescription brand), MEL
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Endogenous pineal hormone / MT1/MT2 receptor agonist / circadian phase shifter / mild antioxidant
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Endogenous pineal hormone / MT1/MT2 receptor agonist / circadian phase shifter / mild antioxidant
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Mixed — Strong for circadian disruption (Herxheimer 2002 jet lag, Liira 2014 shift work, delayed sleep phase disorder); Moderate for general primary insomnia (Ferracioli-Oda 2013 meta-analysis effect size modest); Fatemeh 2024 dose-response plateau at 4 mg/day; recent AHA November 2025 preliminary observational signal raises long-term safety concerns previously not surfaced
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Mixed — Strong for circadian disruption (Herxheimer 2002 jet lag, Liira 2014 shift work, delayed sleep phase disorder); Moderate for general primary insomnia (Ferracioli-Oda 2013 meta-analysis effect size modest); Fatemeh 2024 dose-response plateau at 4 mg/day; recent AHA November 2025 preliminary observational signal raises long-term safety concerns previously not surfaced
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is melatonin?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is melatonin?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Melatonin is an endogenous hormone produced by the pineal gland in response to darkness — peaking during night, falling toward morning, and serving as the master circadian signal coordinating the sleep-wake cycle. Supplemental melatonin binds the same MT1 and MT2 receptors in the suprachiasmatic nucleus (master circadian clock) as endogenous melatonin, acting as a circadian phase shifter rather than a true sedative. This is the key conceptual distinction: melatonin tells your brain &ldquo;it&apos;s nighttime&rdquo; rather than knocking you out. Strongest evidence is for circadian disruption use cases — jet lag (Herxheimer 2002 Cochrane review), shift work (Liira 2014 Cochrane review), and delayed sleep phase disorder. Effect on general primary insomnia is modest but reliable: ~7 minutes faster sleep onset, ~8 minutes additional total sleep time (Ferracioli-Oda 2013 meta-analysis of 19 RCTs). The 2024 Fatemeh dose-response meta-analysis mapped the sleep-effect curve and found it plateaus at 4 mg/day — meaning most retail products at 5–10 mg are dosed far above evidence-supported range. The most consequential recent development is the November 2025 American Heart Association preliminary observational analysis of &gt;130,000 adults raising concerns about elevated heart failure and all-cause mortality in long-term (12+ months) melatonin users. This is observational data, cannot prove causation, but adds material uncertainty to the prior &ldquo;long-term safe&rdquo; framing. Melatonin pairs naturally with{" "}
@@ -600,7 +600,7 @@ export default function MelatoninPage() {
             ).
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -614,10 +614,10 @@ export default function MelatoninPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 0.3–3 mg taken 30–60 minutes before bed. Lower is better — natural peak nighttime production is ~0.3 mg equivalent; 5–10 mg supermarket products are 10–30× higher and provide no additional sleep benefit beyond the 4 mg plateau (Fatemeh 2024). For jet lag: 0.5–5 mg at destination bedtime. For delayed sleep phase: 0.3–0.5 mg 4–6 hours before desired bedtime.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 0.3–3 mg taken 30–60 minutes before bed. Lower is better — natural peak nighttime production is ~0.3 mg equivalent; 5–10 mg supermarket products are 10–30× higher and provide no additional sleep benefit beyond the 4 mg plateau (Fatemeh 2024). For jet lag: 0.5–5 mg at destination bedtime. For delayed sleep phase: 0.3–0.5 mg 4–6 hours before desired bedtime.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Long-term use caveat (important):</span> November 2025 AHA preliminary observational analysis of &gt;130,000 adults raised concerns about elevated heart failure hospitalization and all-cause mortality in long-term (12+ months) melatonin users. Observational data, not peer-reviewed RCT evidence. Conservative interpretation: prefer intermittent/situational use over nightly multi-year use pending more rigorous evidence.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Long-term use caveat (important):</span> November 2025 AHA preliminary observational analysis of &gt;130,000 adults raised concerns about elevated heart failure hospitalization and all-cause mortality in long-term (12+ months) melatonin users. Observational data, not peer-reviewed RCT evidence. Conservative interpretation: prefer intermittent/situational use over nightly multi-year use pending more rigorous evidence.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=melatonin&tag=profpeptide-20" label="Melatonin" />
         </div>
@@ -628,7 +628,7 @@ export default function MelatoninPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -657,7 +657,7 @@ export default function MelatoninPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/apigenin" className="text-sm font-medium text-[#3A759F] hover:underline">Apigenin</Link>
           <Link href="/supplements/glycine" className="text-sm font-medium text-[#3A759F] hover:underline">Glycine</Link>

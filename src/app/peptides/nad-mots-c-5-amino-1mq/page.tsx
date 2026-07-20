@@ -151,7 +151,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Dosing for this blend is extrapolated from each component&apos;s individual research literature and vendor protocols. There is no clinically validated combination dosing standard. NAD+ and MOTS-c are administered by subcutaneous injection after reconstitution; 5-Amino-1MQ is a small molecule conventionally dosed orally but may be included in single-vial SC formulations.
         </p>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           Standard component research doses:
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -163,7 +163,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Abdomen, thigh, upper arm. Subcutaneous injections only &mdash; not intramuscular.</li>
         </ol>
         <div className="pt-4">
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Pre-blended combined vial formulations
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -234,7 +234,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -245,7 +245,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -255,7 +255,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Serious (rare or theoretical)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -351,7 +351,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -408,7 +408,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -435,7 +435,7 @@ export default function MetabolicBlendPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Metabolic Blend (NAD+ + MOTS-c + 5-Amino-1MQ)</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Metabolic Blend (NAD+ + MOTS-c + 5-Amino-1MQ)</h1>
         <span className="tag">Metabolic &amp; Longevity</span>
         <span className="tag">Research-Grade</span>
         <span className="tag">Combination Blend</span>
@@ -445,18 +445,18 @@ export default function MetabolicBlendPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> NAD+/MOTS-c/5-Amino-1MQ Blend, Metabolic Stack, NAD+ Metabolic Blend
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> NAD+/MOTS-c/5-Amino-1MQ Blend, Metabolic Stack, NAD+ Metabolic Blend
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Metabolic &amp; Longevity Blend (3-component)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Metabolic &amp; Longevity Blend (3-component)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Research-grade only (no clinical trial evidence on combination)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research-grade only (no clinical trial evidence on combination)
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is the Metabolic Blend?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is the Metabolic Blend?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The Metabolic Blend is a research-grade 3-component formulation combining{" "}
@@ -466,7 +466,7 @@ export default function MetabolicBlendPage() {
             (a mitochondrial-derived peptide), and 5-Amino-1MQ (a small-molecule NNMT inhibitor) in a single lyophilized vial. All three converge on the same metabolic axis &mdash; mitochondrial energy production and the NAD+ signaling network that powers cellular longevity, metabolic flexibility, and fat metabolism. NAD+ replenishes the coenzyme substrate that declines with age; MOTS-c activates AMPK to improve how cells use that substrate; 5-Amino-1MQ blocks a major NAD+ precursor consumption pathway to raise the steady-state intracellular NAD+ pool. It is a vendor- and community-formulated product with no controlled clinical trial as a combination.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -479,10 +479,10 @@ export default function MetabolicBlendPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> NAD+ 50&ndash;100 mg SC once daily + MOTS-c 5&ndash;10 mg/week SC (split daily or alternate-day) + 5-Amino-1MQ ~50 mg/day (oral as standalone, or per vial ratio if combined SC). Combined vial products vary by vendor &mdash; verify per-component breakdown on Certificate of Analysis.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> NAD+ 50&ndash;100 mg SC once daily + MOTS-c 5&ndash;10 mg/week SC (split daily or alternate-day) + 5-Amino-1MQ ~50 mg/day (oral as standalone, or per vial ratio if combined SC). Combined vial products vary by vendor &mdash; verify per-component breakdown on Certificate of Analysis.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sold as a pre-blended lyophilized vial or as individual components by specialty research peptide vendors. None of the three components are FDA-approved as injectables. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sold as a pre-blended lyophilized vial or as individual components by specialty research peptide vendors. None of the three components are FDA-approved as injectables. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -496,7 +496,7 @@ export default function MetabolicBlendPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -533,7 +533,7 @@ export default function MetabolicBlendPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/peptides/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
           <Link href="/peptides/mots-c" className="text-sm font-medium text-[#3A759F] hover:underline">MOTS-c</Link>
@@ -542,7 +542,7 @@ export default function MetabolicBlendPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/peptides/semaglutide-bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide + BPC-157</Link>
           <Link href="/peptides/tirzepatide-bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">Tirzepatide + BPC-157</Link>

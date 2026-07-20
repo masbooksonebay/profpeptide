@@ -111,7 +111,7 @@ export default function CompoundCombobox({ value, onChange, id, placeholder = "S
       </button>
 
       {open && (
-        <div className="absolute z-50 mt-1 w-full min-w-[18rem] rounded-xl border border-gray-200 dark:border-slate-600 bg-white dark:bg-[#1e293b] shadow-lg overflow-hidden">
+        <div className="absolute z-50 mt-1 w-full min-w-[18rem] rounded-xl border border-[#D9DEE4] dark:border-slate-600 bg-white dark:bg-[#1e293b] shadow-lg overflow-hidden">
           <div className="p-2 border-b border-gray-100 dark:border-slate-700">
             <input
               ref={inputRef}
@@ -125,7 +125,7 @@ export default function CompoundCombobox({ value, onChange, id, placeholder = "S
               onChange={(e) => { setQuery(e.target.value); setActive(0); }}
               onKeyDown={onKeyDown}
               autoComplete="off"
-              className="w-full px-3 py-2 rounded-md border border-gray-200 dark:border-slate-600 text-sm bg-gray-50 dark:bg-[#0f172a] text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#3A759F]"
+              className="w-full px-3 py-2 rounded-md border border-[#D9DEE4] dark:border-slate-600 text-sm bg-gray-50 dark:bg-[#0f172a] text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#3A759F]"
             />
           </div>
           <ul ref={listRef} id={listboxId} role="listbox" aria-label={ariaLabel} className="max-h-72 overflow-y-auto py-1">

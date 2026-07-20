@@ -165,11 +165,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -211,7 +211,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Rhodiola pairs naturally with the cognitive peptide cluster — particularly via the stress-response and neurotrophic axes.{" "}
             <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
@@ -221,7 +221,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/ashwagandha" className="text-[#3A759F] hover:underline">Ashwagandha</Link>{" "}
@@ -250,7 +250,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Morning dosing only.</span> Don&apos;t dose after early afternoon (2 PM cutoff). Late-day Rhodiola disrupts sleep onset for many users.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-stressor acute timing.</span> 30–60 minutes before known stressors (exams, presentations, competition, hard cognitive blocks). Single dose effects emerge within an hour.</li>
@@ -270,7 +270,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Insomnia or sleep disruption — primarily if dosed late in the day. Resolves with morning-only dosing.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild irritability or jitteriness — at higher doses or in caffeine-sensitive users. Resolves with dose reduction.</li>
@@ -280,7 +280,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild blood-pressure effects — modest BP modulation documented. Monitor during titration if on antihypertensives.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Bipolar mood instability — adaptogens with mild stimulation can theoretically destabilize mood in bipolar disorder. Avoid in bipolar contexts without specialist coordination.</li>
@@ -288,7 +288,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">SSRIs and other antidepressants.</span> Serotonergic effect overlap; theoretical risk of serotonin syndrome at high combined doses. Coordinate with prescribing clinician.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">MAO inhibitors (selegiline, phenelzine).</span> Mechanism overlap (Rhodiola has mild MAO inhibition). Avoid combining.</li>
@@ -367,7 +367,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -436,7 +436,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -564,7 +564,7 @@ export default function RhodiolaRoseaPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Rhodiola Rosea</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Rhodiola Rosea</h1>
         <span className="tag">Cognitive &amp; Nootropic</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -572,18 +572,18 @@ export default function RhodiolaRoseaPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Arctic root, golden root, roseroot, SHR-5 (Swedish-Russian extract), rhodiola, rosavins
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Arctic root, golden root, roseroot, SHR-5 (Swedish-Russian extract), rhodiola, rosavins
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Adaptogenic herb / HPA axis modulator / MAO inhibitor (mild) / monoamine preservation / opioid receptor agonist (mild)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Adaptogenic herb / HPA axis modulator / MAO inhibitor (mild) / monoamine preservation / opioid receptor agonist (mild)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong (mental fatigue under stress and chronic burnout) — Spasov 2000 student-stress RCT, Olsson 2009 burnout RCT, Hung 2011 systematic review of 11 RCTs, Anghelescu 2018 review. Moderate (antidepressant) — Mao 2015 head-to-head vs sertraline showing comparable depression-score reductions with better safety profile. One of the cleaner adaptogen evidence bases.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong (mental fatigue under stress and chronic burnout) — Spasov 2000 student-stress RCT, Olsson 2009 burnout RCT, Hung 2011 systematic review of 11 RCTs, Anghelescu 2018 review. Moderate (antidepressant) — Mao 2015 head-to-head vs sertraline showing comparable depression-score reductions with better safety profile. One of the cleaner adaptogen evidence bases.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Rhodiola rosea?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Rhodiola rosea?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Rhodiola rosea is a flowering plant from cold mountainous regions of Europe and Asia — particularly Siberia and Scandinavia — used in traditional Russian and Nordic medicine for centuries to increase endurance, reduce fatigue, and enhance resilience to physical and mental stress. It belongs to the adaptogen class — herbs that help the body adapt to stressors by normalizing physiological processes without causing excessive stimulation or sedation. The primary bioactive compounds are rosavins and salidroside, working through multiple mechanism layers: HPA axis modulation (normalizing cortisol during chronic stress), MAO inhibition (preserving dopamine, norepinephrine, serotonin under stress), opioid receptor activation (stress-protective mood effects), serotonin reuptake inhibition, and antioxidant effects. The evidence base is one of the cleaner in the adaptogen space — Spasov 2000 (SHR-5 in stressed medical students), Olsson 2009 (burnout in chronically stressed adults), Hung 2011 systematic review of 11 RCTs, and Mao 2015 head-to-head against sertraline showing antidepressant-comparable effects with better safety profile. The supplement supports both acute (pre-stressor) and chronic (daily burnout) protocols — unusual flexibility. Rhodiola pairs naturally with{" "}
@@ -591,7 +591,7 @@ export default function RhodiolaRoseaPage() {
             via the neurotrophic-stress axis. Distinct from Ashwagandha (mildly stimulating vs mildly calming) — the two adaptogens can be paired AM + PM for balanced stress management.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -605,10 +605,10 @@ export default function RhodiolaRoseaPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 200–600 mg/day of SHR-5 standardized extract (3% rosavins + 1% salidroside), taken in the morning or early afternoon. Acute pre-stressor dose: 200–400 mg 30–60 minutes before. Don&apos;t dose after 2 PM — mildly stimulating effect disrupts sleep onset for many users.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 200–600 mg/day of SHR-5 standardized extract (3% rosavins + 1% salidroside), taken in the morning or early afternoon. Acute pre-stressor dose: 200–400 mg 30–60 minutes before. Don&apos;t dose after 2 PM — mildly stimulating effect disrupts sleep onset for many users.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> SSRI interaction (serotonergic effect overlap — coordinate with prescribing clinician); species substitution (Rhodiola rosea vs R. crenulata / R. sachalinensis — verify species explicitly on label); morning-only dosing (insomnia risk if late).
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> SSRI interaction (serotonergic effect overlap — coordinate with prescribing clinician); species substitution (Rhodiola rosea vs R. crenulata / R. sachalinensis — verify species explicitly on label); morning-only dosing (insomnia risk if late).
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=rhodiola+rosea+rosavins&tag=profpeptide-20" label="Rhodiola Rosea" />
         </div>
@@ -619,7 +619,7 @@ export default function RhodiolaRoseaPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -648,7 +648,7 @@ export default function RhodiolaRoseaPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/ashwagandha" className="text-sm font-medium text-[#3A759F] hover:underline">Ashwagandha</Link>
           <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>

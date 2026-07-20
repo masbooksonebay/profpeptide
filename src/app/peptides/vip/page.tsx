@@ -178,7 +178,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -241,7 +241,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -268,7 +268,7 @@ export default function VIPPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">VIP (Vasoactive Intestinal Peptide)</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">VIP (Vasoactive Intestinal Peptide)</h1>
         <span className="tag">Gut Health &amp; Immunity</span>
         <span className="tag">Research Use Only</span>
       </div>
@@ -277,30 +277,30 @@ export default function VIPPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Vasoactive intestinal polypeptide; synthetic form Aviptadil
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Vasoactive intestinal polypeptide; synthetic form Aviptadil
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> 28-amino-acid neuropeptide hormone of the secretin/glucagon superfamily; agonist of the VPAC1 and VPAC2 G-protein-coupled receptors
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> 28-amino-acid neuropeptide hormone of the secretin/glucagon superfamily; agonist of the VPAC1 and VPAC2 G-protein-coupled receptors
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Molecular Profile:</span> His-Ser-Asp-Ala-Val-Phe-Thr-Asp-Asn-Tyr-Thr-Arg-Leu-Arg-Lys-Gln-Met-Ala-Val-Lys-Lys-Tyr-Leu-Asn-Ser-Ile-Leu-Asn-NH2 &middot; C147H238N44O42S &middot; ~3325 g/mol &middot; CAS 40077-57-4 (peptide; human, porcine, and rat sequences are identical)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> His-Ser-Asp-Ala-Val-Phe-Thr-Asp-Asn-Tyr-Thr-Arg-Leu-Arg-Lys-Gln-Met-Ala-Val-Lys-Lys-Tyr-Leu-Asn-Ser-Ile-Leu-Asn-NH2 &middot; C147H238N44O42S &middot; ~3325 g/mol &middot; CAS 40077-57-4 (peptide; human, porcine, and rat sequences are identical)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Origin:</span> First isolated from porcine small intestine by Said and Mutt, 1970
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Origin:</span> First isolated from porcine small intestine by Said and Mutt, 1970
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Research Use Only &mdash; endogenous human neuropeptide; the synthetic form aviptadil is investigational (e.g., ARDS/COVID-19) and not FDA-approved; research-grade VIP is unapproved and not for human use
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research Use Only &mdash; endogenous human neuropeptide; the synthetic form aviptadil is investigational (e.g., ARDS/COVID-19) and not FDA-approved; research-grade VIP is unapproved and not for human use
         </p>
       </div>
 
       <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Important &mdash; endogenous peptide vs. investigational drug vs. research material:</span> VIP is a natural human neuropeptide. Its synthetic form, aviptadil, has been investigational (for example, ARDS/COVID-19 in the ACTIV-3b/TESICO program) and is NOT FDA-approved; an aviptadil-plus-phentolamine erectile-dysfunction product (Invicorp) is approved in some European countries but is not a broadly US-approved VIP product. The &ldquo;VIP&rdquo; sold by research vendors is unapproved, research-grade material for Research Use Only, not for human use.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Important &mdash; endogenous peptide vs. investigational drug vs. research material:</span> VIP is a natural human neuropeptide. Its synthetic form, aviptadil, has been investigational (for example, ARDS/COVID-19 in the ACTIV-3b/TESICO program) and is NOT FDA-approved; an aviptadil-plus-phentolamine erectile-dysfunction product (Invicorp) is approved in some European countries but is not a broadly US-approved VIP product. The &ldquo;VIP&rdquo; sold by research vendors is unapproved, research-grade material for Research Use Only, not for human use.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is VIP (Vasoactive Intestinal Peptide)?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is VIP (Vasoactive Intestinal Peptide)?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             VIP (vasoactive intestinal peptide) is a 28-amino-acid neuropeptide hormone of the secretin/glucagon superfamily and an agonist of the VPAC1 and VPAC2 G-protein-coupled receptors. First isolated from porcine small intestine by Said and Mutt in 1970, it is an endogenous human peptide &mdash; the human, porcine, and rat sequences are identical. Through VPAC1/VPAC2 it generally raises intracellular cAMP, acting as a potent vasodilator, relaxing gastrointestinal and airway smooth muscle, and functioning as a broad immunomodulator and anti-inflammatory mediator; it is also a master circadian regulator in the suprachiasmatic nucleus and a neuroprotective neuropeptide. Its immune and therapeutic effects are characterized largely in preclinical models. The synthetic form, aviptadil, has been investigational (for example, in ARDS/COVID-19) but is not FDA-approved, and research-grade VIP sold by vendors is unapproved, Research Use Only material &mdash; not for human use. It is studied alongside gut and immune peptides such as{" "}
@@ -310,7 +310,7 @@ export default function VIPPage() {
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -321,10 +321,10 @@ export default function VIPPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> There is no validated research-use dose. The synthetic form aviptadil has been dosed in investigational trials by route-specific regimens (for example intravenous or inhaled), but those are investigational, not an approved standard. VIP has a very short half-life (about 30 minutes). Prof. Peptide does not publish an injectable dosing schedule for research-grade VIP because none has been validated, and the material is unapproved.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> There is no validated research-use dose. The synthetic form aviptadil has been dosed in investigational trials by route-specific regimens (for example intravenous or inhaled), but those are investigational, not an approved standard. VIP has a very short half-life (about 30 minutes). Prof. Peptide does not publish an injectable dosing schedule for research-grade VIP because none has been validated, and the material is unapproved.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> There is no broadly US-approved VIP product, and aviptadil is investigational. Research-grade VIP is sold by specialty peptide vendors for laboratory use only. PP maintains a vetted list of vendors with verified discount codes. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> There is no broadly US-approved VIP product, and aviptadil is investigational. Research-grade VIP is sold by specialty peptide vendors for laboratory use only. PP maintains a vetted list of vendors with verified discount codes. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -338,7 +338,7 @@ export default function VIPPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -376,7 +376,7 @@ export default function VIPPage() {
 
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/kpv" className="text-sm font-medium text-[#3A759F] hover:underline">KPV</Link>
         <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>

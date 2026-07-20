@@ -167,11 +167,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -213,7 +213,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Lion&apos;s Mane pairs naturally with the cognitive peptide cluster — particularly via the BDNF axis.{" "}
             <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
@@ -223,7 +223,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
@@ -252,7 +252,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Daily consistency over weeks.</span> Chronic neurotrophic effects require sustained dosing. Sporadic use undermines the mechanism Lion&apos;s Mane is designed to support.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Exercise (especially aerobic).</span> Exercise independently raises BDNF — Lion&apos;s Mane + exercise produces additive neurotrophic signal. Aerobic exercise has stronger BDNF effects than resistance training.</li>
@@ -272,7 +272,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — occasional, particularly at higher doses or on empty stomach. Resolves with food coadministration or dose reduction.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Skin rash or itching — rare; primarily in users with mushroom allergies. Discontinue if persistent.</li>
@@ -280,7 +280,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild antiplatelet effect — relevant for anticoagulant users. Beta-glucan content may modestly enhance bleeding risk; monitor for unusual bruising.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Modest glucose-lowering effect — relevant if combined with insulin or sulfonylureas. Beta-glucan may affect glucose absorption.</li>
@@ -288,7 +288,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anticoagulants (warfarin, apixaban, rivaroxaban).</span> Mild additive antiplatelet effect. Monitor for unusual bleeding; coordinate with prescribing clinician for chronic high-dose use.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Diabetes medications.</span> Beta-glucan modestly affects glucose absorption. Monitor glucose if combined with insulin, sulfonylureas, GLP peptides.</li>
@@ -366,7 +366,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -435,7 +435,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -563,7 +563,7 @@ export default function LionsManePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Lion&apos;s Mane</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Lion&apos;s Mane</h1>
         <span className="tag">Cognitive &amp; Nootropic</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -571,18 +571,18 @@ export default function LionsManePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Hericium erinaceus, Yamabushitake, monkey head mushroom, bearded tooth mushroom, hou tou gu
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Hericium erinaceus, Yamabushitake, monkey head mushroom, bearded tooth mushroom, hou tou gu
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Medicinal mushroom (Basidiomycota) / NGF and BDNF stimulator / neurotrophic adjunct
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Medicinal mushroom (Basidiomycota) / NGF and BDNF stimulator / neurotrophic adjunct
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Moderate — Mori 2009 foundational MCI trial (16 weeks, 750 mg/day); Docherty 2023 acute + chronic effects in healthy young adults; Nagano 2010 + Vigna 2019 anxiety/depression evidence; Wong 2012 nerve regeneration in animal models; novel NGF/BDNF mechanism but smaller human RCT base than established nootropics (Bacopa, Alpha-GPC)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Moderate — Mori 2009 foundational MCI trial (16 weeks, 750 mg/day); Docherty 2023 acute + chronic effects in healthy young adults; Nagano 2010 + Vigna 2019 anxiety/depression evidence; Wong 2012 nerve regeneration in animal models; novel NGF/BDNF mechanism but smaller human RCT base than established nootropics (Bacopa, Alpha-GPC)
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Lion&apos;s Mane?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Lion&apos;s Mane?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Lion&apos;s Mane (Hericium erinaceus) is a medicinal mushroom native to North America, Europe, and Asia, characterized by its distinctive white cascading spines resembling a lion&apos;s mane. It occupies a genuinely unique position in the cognitive supplement space — most nootropics modulate existing neurotransmitter systems (acetylcholine via Alpha-GPC, GABA via L-theanine), while Lion&apos;s Mane may actually promote new neuronal growth via stimulation of nerve growth factor (NGF) and brain-derived neurotrophic factor (BDNF). The bioactive compounds — hericenones (concentrated in the fruiting body) and erinacines (concentrated in the mycelium) — cross the blood-brain barrier and stimulate NGF synthesis in astrocytes and neurons. The foundational human cognitive evidence is Mori 2009, a 16-week RCT in mild cognitive impairment patients showing significant cognitive improvement at 750 mg/day; benefits faded after supplementation stopped, suggesting ongoing use is required. Subsequent trials extend the evidence to acute cognitive effects in healthy young adults (Docherty 2023), anxiety and depression reduction (Nagano 2010, Vigna 2019), and emerging peripheral nerve regeneration applications (Wong 2012 animal models, with human translation in progress). The dominant practical challenge is product quality — many retail Lion&apos;s Mane products under-deliver due to grain-substrate contamination in mycelium-only products. Lion&apos;s Mane pairs naturally with{" "}
@@ -590,7 +590,7 @@ export default function LionsManePage() {
             via the BDNF axis Semax directly modulates.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -605,10 +605,10 @@ export default function LionsManePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 500–1,500 mg/day for general cognitive maintenance; 1,500–3,000 mg/day for clinical-context use (MCI, mood support, nerve recovery). Mori 2009 used 750 mg/day; Docherty 2023 used 1,800 mg/day; Vigna 2019 used 1.5 g/day. Daily consistency over 8–12+ weeks for chronic effects.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 500–1,500 mg/day for general cognitive maintenance; 1,500–3,000 mg/day for clinical-context use (MCI, mood support, nerve recovery). Mori 2009 used 750 mg/day; Docherty 2023 used 1,800 mg/day; Vigna 2019 used 1.5 g/day. Daily consistency over 8–12+ weeks for chronic effects.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Quality varies dramatically — grain-substrate contamination is common in mycelium-only products. Look for dual-extract (fruiting body + mycelium) standardized to beta-glucans ≥30%. Reputable brands: Real Mushrooms, Host Defense, Nootropics Depot. Review the quality-markers checklist in the Where to Buy section below.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Quality varies dramatically — grain-substrate contamination is common in mycelium-only products. Look for dual-extract (fruiting body + mycelium) standardized to beta-glucans ≥30%. Reputable brands: Real Mushrooms, Host Defense, Nootropics Depot. Review the quality-markers checklist in the Where to Buy section below.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=lions+mane+dual+extract&tag=profpeptide-20" label="Lion's Mane" />
         </div>
@@ -619,7 +619,7 @@ export default function LionsManePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -648,7 +648,7 @@ export default function LionsManePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha-GPC</Link>
           <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#3A759F] hover:underline">Bacopa Monnieri</Link>

@@ -26,10 +26,10 @@ function Lockup({
     align === "lowink" ? `translateY(${-nudge}px)` : undefined;
   return (
     <div className={`flex gap-2.5 ${itemsClass}`}>
-      <PpMark className="flex-shrink-0" style={{ width: tile, height: tile }} interior={dark ? "#1e2d3d" : "#0f172a"} />
+      <PpMark className="flex-shrink-0" style={{ width: tile, height: tile }} interior={dark ? "#16181B" : "#0f172a"} />
       <span
         className="font-extrabold tracking-tight leading-none"
-        style={{ fontSize: word, color: dark ? "#f1f5f9" : "#1e2d3d", transform: wordShift }}
+        style={{ fontSize: word, color: dark ? "#f1f5f9" : "#16181B", transform: wordShift }}
       >
         Prof. Peptide
       </span>
@@ -56,7 +56,7 @@ function Row({ label, tile, word, align }: { label: string; tile: number; word: 
 export default function LogoComparisonPage() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-12">
-      <h1 className="text-2xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-1">Logo lockup — comparison</h1>
+      <h1 className="text-2xl font-bold text-[#16181B] dark:text-slate-100 mb-1">Logo lockup — comparison</h1>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-8">
         Dev preview — traced SVG tile (paths, not CSS text). Left = light surface, right = dark surface.
       </p>

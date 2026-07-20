@@ -135,13 +135,13 @@ const sections = [
           <span className="font-semibold">Reconstitution.</span> PDA research vials are typically 5 mg or 10 mg. Because doses are small (250–500 mcg), a 2 mL reconstitution is the common convention — it gives clean whole-number units across the typical range. All units below are measured on a U-100 insulin syringe (100 units = 1 mL); the table assumes a 5 mg vial.
         </p>
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">250 mcg dose</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">500 mcg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Concentration</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">250 mcg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">500 mcg dose</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -233,7 +233,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -308,7 +308,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -335,7 +335,7 @@ export default function PDAPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">PDA (Pentadeca Arginate)</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">PDA (Pentadeca Arginate)</h1>
         <span className="tag">Recovery &amp; Tissue Repair</span>
         <span className="tag">Research-Grade</span>
       </div>
@@ -344,20 +344,20 @@ export default function PDAPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Pentadeca Arginate, PDA,{" "}
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Pentadeca Arginate, PDA,{" "}
           <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
           Arginate, Arginate-salt BPC-157
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Arginate salt of BPC-157 &mdash; same 15-amino-acid pentadecapeptide (GEPPPGKPADDAGLV), arginine counterion
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Arginate salt of BPC-157 &mdash; same 15-amino-acid pentadecapeptide (GEPPPGKPADDAGLV), arginine counterion
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved; inherits BPC-157&apos;s FDA Category 2 bulk drug substance classification (Nov 2023) &mdash; research-use-only.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved; inherits BPC-157&apos;s FDA Category 2 bulk drug substance classification (Nov 2023) &mdash; research-use-only.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is PDA (Pentadeca Arginate)?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is PDA (Pentadeca Arginate)?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Pentadeca Arginate (PDA) is the arginate-salt form of BPC-157 &mdash; the same 15-amino-acid synthetic peptide (sequence GEPPPGKPADDAGLV), supplied with an arginine counterion instead of the acetate counterion used in conventional BPC-157. In plain terms, PDA is essentially a salt-form variant of BPC-157: the peptide that reaches tissue is the same molecule, so PDA has no independent research base of its own. It is marketed as a more stable, upgraded version, but as of 2026 no peer-reviewed study has investigated PDA as a distinct compound.
@@ -368,7 +368,7 @@ export default function PDAPage() {
             </p>
           </div>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               What is genuinely known:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -380,10 +380,10 @@ export default function PDAPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Extrapolated from BPC-157 protocols &mdash; typically 250–500 mcg subcutaneously once or twice daily in 4–8 week cycles. No PDA-specific pharmacokinetic data exists.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> Extrapolated from BPC-157 protocols &mdash; typically 250–500 mcg subcutaneously once or twice daily in 4–8 week cycles. No PDA-specific pharmacokinetic data exists.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -397,7 +397,7 @@ export default function PDAPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -431,7 +431,7 @@ export default function PDAPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/tb-500" className="text-sm font-medium text-[#3A759F] hover:underline">TB-500</Link>
         <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
@@ -441,7 +441,7 @@ export default function PDAPage() {
       </div>
 
       <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Compare</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Compare</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">See the full BPC-157 profile &rarr;</Link>
         </div>

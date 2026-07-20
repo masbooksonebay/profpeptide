@@ -162,11 +162,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -208,7 +208,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Chromium pairs naturally with the GLP-cluster metabolic peptides.{" "}
             <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>{" "}
@@ -220,7 +220,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/berberine" className="text-[#3A759F] hover:underline">Berberine</Link>{" "}
@@ -244,7 +244,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training and aerobic exercise.</span> Exercise activates GLUT4 translocation independently — chromium amplifies the insulin-signaling-mediated arm of glucose disposal. Stacks additively.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Whole-foods, lower-refined-carb diet.</span> Chromium can&apos;t out-supplement a high-glycemic diet. The trial evidence is built on chromium + standard care; the supplement supports the diet, not the other way around.</li>
@@ -263,7 +263,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — occasional nausea or stomach upset, especially on empty stomach. Resolves with food.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache — uncommon, dose-related at the higher end (1000 mcg+).</li>
@@ -271,7 +271,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Hypoglycemia risk — possible when combined with sulfonylureas, insulin, or aggressive GLP peptide titration. Monitor glucose more carefully during the first 4–6 weeks of combined use.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Kidney or liver disease — chromium is renally excreted; defer to clinician.</li>
@@ -279,7 +279,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Insulin and sulfonylureas.</span> Additive glucose-lowering effect. Monitor blood glucose during titration; clinician may adjust diabetes medication doses.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Metformin.</span> Additive insulin-sensitization. Generally well tolerated together; the combined effect on HbA1c is larger than either alone in the trial literature.</li>
@@ -352,7 +352,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -421,7 +421,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -549,7 +549,7 @@ export default function ChromiumPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Chromium</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Chromium</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -557,18 +557,18 @@ export default function ChromiumPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Chromium picolinate, chromium polynicotinate, GTF chromium, trivalent chromium, Cr(III)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Chromium picolinate, chromium polynicotinate, GTF chromium, trivalent chromium, Cr(III)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Essential trace mineral / insulin-receptor cofactor (via chromodulin) / glycemic adjunct
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Essential trace mineral / insulin-receptor cofactor (via chromodulin) / glycemic adjunct
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — Anderson 1997 dose-ranging RCT in T2D, Cefalu 2010 hyperinsulinemic-euglycemic clamp confirmation, Suksomboon 2014 meta-analysis (25 RCTs, n=1,690) demonstrating significant HbA1c and fasting glucose reductions in diabetic populations; Cochrane 2013 weight-loss meta-analysis confirms modest but real effect
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — Anderson 1997 dose-ranging RCT in T2D, Cefalu 2010 hyperinsulinemic-euglycemic clamp confirmation, Suksomboon 2014 meta-analysis (25 RCTs, n=1,690) demonstrating significant HbA1c and fasting glucose reductions in diabetic populations; Cochrane 2013 weight-loss meta-analysis confirms modest but real effect
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is chromium?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is chromium?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Chromium is an essential trace mineral required in microgram amounts that functions as a cofactor for insulin signaling. It is incorporated into chromodulin (also called glucose tolerance factor / GTF), a small oligopeptide that binds the activated insulin receptor and amplifies its tyrosine kinase activity — improving GLUT4 translocation, glucose uptake into muscle and fat cells, and overall insulin sensitivity. Chromium has one of the deeper RCT bases of any metabolic mineral, with Anderson 1997 and Suksomboon 2014 meta-analysis evidence demonstrating significant HbA1c and fasting glucose reductions in type 2 diabetes populations. The weight-loss evidence (Cochrane 2013) is modest but real. Chromium pairs naturally with{" "}
@@ -576,7 +576,7 @@ export default function ChromiumPage() {
             because the mechanisms operate on different layers of the same metabolic system — peptides upstream at GLP-1 receptors and gastric emptying, chromium downstream at insulin-receptor signaling.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -590,10 +590,10 @@ export default function ChromiumPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 200–400 mcg/day chromium picolinate with a meal for general metabolic baseline; 500–1000 mcg/day (often split AM/PM) for T2D / insulin resistance protocols (the Anderson 1997 high-dose arm). Always with food, ideally with the largest carbohydrate-containing meal.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 200–400 mcg/day chromium picolinate with a meal for general metabolic baseline; 500–1000 mcg/day (often split AM/PM) for T2D / insulin resistance protocols (the Anderson 1997 high-dose arm). Always with food, ideally with the largest carbohydrate-containing meal.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Widely available as low-cost chromium picolinate. Quality bar is moderate — picolinate form and clean mcg disclosure are the main markers. Review the quality-markers checklist in the Where to Buy section below.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Widely available as low-cost chromium picolinate. Quality bar is moderate — picolinate form and clean mcg disclosure are the main markers. Review the quality-markers checklist in the Where to Buy section below.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=chromium+picolinate&tag=profpeptide-20" label="Chromium" />
         </div>
@@ -604,7 +604,7 @@ export default function ChromiumPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -633,7 +633,7 @@ export default function ChromiumPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/berberine" className="text-sm font-medium text-[#3A759F] hover:underline">Berberine</Link>
           <Link href="/supplements/alpha-lipoic-acid" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha Lipoic Acid</Link>

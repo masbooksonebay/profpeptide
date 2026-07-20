@@ -166,11 +166,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -212,7 +212,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Creatine pairs naturally with GH-secretagogue and muscle-supporting peptide clusters for users targeting hypertrophy and recovery.{" "}
             <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
@@ -224,7 +224,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/beta-alanine" className="text-[#3A759F] hover:underline">Beta-alanine</Link>{" "}
@@ -260,7 +260,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training.</span> Creatine&apos;s strength/power/hypertrophy effects emerge when combined with progressive resistance training. Supplement without training produces minimal benefit.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Adequate dietary protein.</span> 1.6+ g/kg dietary protein supports the hypertrophic mechanism creatine enables.</li>
@@ -282,7 +282,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Intracellular water-weight gain — 1–2 kg in first 1–2 weeks. Desired (in muscle), not subcutaneous bloat.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort during 20 g/day loading — splitting into 4 × 5 g servings resolves in most users.</li>
@@ -290,7 +290,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Serum creatinine elevation on labs.</span> Creatine raises serum creatinine (a kidney function marker) by ~10–20% — but this reflects increased creatine turnover, NOT kidney damage. Inform your physician if labs are drawn during supplementation; consider holding for 1 week before kidney function testing to get a clean baseline.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-existing kidney disease.</span> Coordinate with nephrology before supplementing. Not a contraindication in well-controlled mild CKD per ISSN position stand, but specialist supervision appropriate.</li>
@@ -300,7 +300,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Nephrotoxic medications.</span> Chronic high-dose NSAIDs, certain antibiotics (aminoglycosides), and nephrotoxic chemotherapy — coordinate with prescriber. Creatine alone doesn&apos;t harm kidneys but combining with kidney-stressing medications needs supervision.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Caffeine — older Vandenberghe 1996 concern about interaction not consistently replicated. Combination is practically routine in pre-workouts and well-tolerated.</li>
@@ -383,7 +383,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -452,7 +452,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -548,7 +548,7 @@ export default function CreatinePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Creatine</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Creatine</h1>
         <span className="tag">Recovery &amp; Tissue Repair</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -556,24 +556,24 @@ export default function CreatinePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Creatine monohydrate (gold standard), Creapure (branded pharmaceutical-grade source), micronized creatine; marketing variants without head-to-head superiority: creatine HCl, buffered creatine (Kre-Alkalyn), creatine ethyl ester, creatine pyruvate, creatine malate
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Creatine monohydrate (gold standard), Creapure (branded pharmaceutical-grade source), micronized creatine; marketing variants without head-to-head superiority: creatine HCl, buffered creatine (Kre-Alkalyn), creatine ethyl ester, creatine pyruvate, creatine malate
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Endogenously synthesized amino acid derivative / phosphocreatine substrate for rapid ATP regeneration / cell volumization agent / satellite cell activation factor / brain energy substrate / the most-studied sports supplement in existence
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Endogenously synthesized amino acid derivative / phosphocreatine substrate for rapid ATP regeneration / cell volumization agent / satellite cell activation factor / brain energy substrate / the most-studied sports supplement in existence
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Multi-tier breakdown. <span className="font-semibold">Strength, power, and lean mass gains</span>: Strong (Rawson 2003 meta-analysis — ~8% greater strength gains, ~14% greater weightlifting performance vs placebo with resistance training; replicated across hundreds of trials). <span className="font-semibold">Sarcopenia / older adults</span>: Moderate (Chilibeck 2017 meta — meaningful lean mass and strength improvements with resistance training in &gt;50-year-olds). <span className="font-semibold">Cognitive function</span>: Emerging-Moderate (Avgerinos 2018 meta — short-term memory and reasoning improvements; effect larger in older adults, sleep-deprived, vegetarians/vegans; smaller in young omnivores). <span className="font-semibold">Vegetarian/vegan responder bonus</span>: Strong mechanism (Burke 2003 — lower baseline creatine, larger relative gains). ISSN position stand (Kreider 2017) is the foundational comprehensive reference.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Multi-tier breakdown. <span className="font-semibold">Strength, power, and lean mass gains</span>: Strong (Rawson 2003 meta-analysis — ~8% greater strength gains, ~14% greater weightlifting performance vs placebo with resistance training; replicated across hundreds of trials). <span className="font-semibold">Sarcopenia / older adults</span>: Moderate (Chilibeck 2017 meta — meaningful lean mass and strength improvements with resistance training in &gt;50-year-olds). <span className="font-semibold">Cognitive function</span>: Emerging-Moderate (Avgerinos 2018 meta — short-term memory and reasoning improvements; effect larger in older adults, sleep-deprived, vegetarians/vegans; smaller in young omnivores). <span className="font-semibold">Vegetarian/vegan responder bonus</span>: Strong mechanism (Burke 2003 — lower baseline creatine, larger relative gains). ISSN position stand (Kreider 2017) is the foundational comprehensive reference.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is creatine?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is creatine?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Creatine is a naturally occurring compound synthesized in the body from the amino acids arginine, glycine, and methionine, and obtained from red meat and fish in the diet (~1–2 g/day in typical omnivorous diets). It is stored primarily in skeletal muscle as phosphocreatine (PCr) — the rapid energy reserve that donates phosphate to ADP to regenerate ATP during high-intensity, short-duration efforts. Supplemental creatine is the most extensively researched sports supplement in existence: 500+ peer-reviewed studies, comprehensively summarized in the ISSN position stand (Kreider 2017). Supplementation increases muscle PCr stores by 20–40%, extending the duration of maximal effort before fatigue. The honest evidence summary follows a clear multi-tier breakdown: <span className="font-semibold">Strong evidence</span> for strength, power, and lean mass gains in resistance training contexts (Rawson 2003 meta-analysis documents ~8% strength gain and ~14% weightlifting performance gain vs placebo when combined with training; effect sizes among the largest documented for any sports supplement); <span className="font-semibold">Moderate evidence</span> for older-adult applications including sarcopenia prevention, muscle function preservation, and bone density support (Chilibeck 2017); <span className="font-semibold">Emerging-Moderate evidence</span> for cognitive function — Avgerinos 2018 meta-analysis documented memory and reasoning improvements, with effect sizes larger in older adults, sleep-deprived users, and vegetarians/vegans (smaller and less consistent in young healthy omnivores who already have adequate dietary creatine). A distinctive pharmacological feature: vegetarians and vegans have lower baseline muscle and brain creatine stores and show larger relative responses to supplementation than omnivores (Burke 2003 in muscle/performance; Rae 2003 in cognition) — this is the vegetarian responder bonus that makes creatine one of the highest-impact supplements for plant-based eaters. Form selection is one of the cleanest decisions in supplementation: creatine monohydrate is the gold standard with the entire evidence base behind it, and head-to-head trials have repeatedly failed to demonstrate superiority of HCl (Concret), buffered creatine (Kre-Alkalyn — directly tested vs monohydrate in Jagim 2012 with no advantage), ethyl ester (Spillane 2009 found it worse than monohydrate), pyruvate, malate, or other marketing variants. Micronized monohydrate mixes better in liquid but produces the same muscle saturation. The Creapure brand (German pharmaceutical-grade manufacturer AlzChem) is the most-studied source. Standard dose: 5 g/day, every day, indefinitely. Loading is optional. Safety is exceptional: long-term studies up to 5 years show no adverse effects on kidney or liver function in healthy users; the &quot;kidney damage&quot; concern is one of the most thoroughly debunked supplement myths.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -589,10 +589,10 @@ export default function CreatinePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 5 g/day creatine monohydrate, every day, indefinitely. Loading is optional (20 g/day for 5–7 days then 5 g/day maintenance — reaches saturation faster, same end state). Form: creatine monohydrate (Creapure-sourced ideally). Micronized variant mixes better. No timing window required — consistency beats time-of-day. Powder is dramatically more cost-efficient than capsules at 5 g/day.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 5 g/day creatine monohydrate, every day, indefinitely. Loading is optional (20 g/day for 5–7 days then 5 g/day maintenance — reaches saturation faster, same end state). Form: creatine monohydrate (Creapure-sourced ideally). Micronized variant mixes better. No timing window required — consistency beats time-of-day. Powder is dramatically more cost-efficient than capsules at 5 g/day.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Intracellular water-weight gain (1–2 kg in first 1–2 weeks — desired, not bloat); GI discomfort during loading (split into 4 × 5 g); pre-existing kidney disease coordination with nephrology; serum creatinine elevation on labs is expected and doesn&apos;t mean kidney damage; hair-loss concern not strongly evidenced (single 2009 trial, never replicated); skip the HCl/buffered/EE marketing variants — no head-to-head superiority over monohydrate.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Intracellular water-weight gain (1–2 kg in first 1–2 weeks — desired, not bloat); GI discomfort during loading (split into 4 × 5 g); pre-existing kidney disease coordination with nephrology; serum creatinine elevation on labs is expected and doesn&apos;t mean kidney damage; hair-loss concern not strongly evidenced (single 2009 trial, never replicated); skip the HCl/buffered/EE marketing variants — no head-to-head superiority over monohydrate.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=creatine+monohydrate+creapure+micronized&tag=profpeptide-20" label="Creatine Monohydrate" />
         </div>
@@ -603,7 +603,7 @@ export default function CreatinePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -632,7 +632,7 @@ export default function CreatinePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/beta-alanine" className="text-sm font-medium text-[#3A759F] hover:underline">Beta-Alanine</Link>
           <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline Malate</Link>
@@ -644,7 +644,7 @@ export default function CreatinePage() {
       </div>
 
       <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/compare/creatine-vs-beta-alanine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine vs Beta-Alanine &rarr;</Link>
         </div>

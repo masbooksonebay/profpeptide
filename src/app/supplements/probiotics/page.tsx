@@ -180,11 +180,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -226,7 +226,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Probiotics pair naturally with gut-healing peptides for users targeting comprehensive gut support.{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
@@ -236,7 +236,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/prebiotics" className="text-[#3A759F] hover:underline">Prebiotics</Link>{" "}
@@ -273,7 +273,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Fermented foods.</span> Yogurt, kefir, sauerkraut, kimchi, miso, kombucha. Foundational gut-health additions. Different delivery vehicle from supplements; complementary.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">High-fiber diet.</span> Provides prebiotic substrate for the supplemented and native bacteria. Vegetables, fruits, legumes, whole grains.</li>
@@ -296,7 +296,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild gas and bloating during first 1–2 weeks of supplementation. Typically resolves with adaptation.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Transient changes in stool frequency or consistency.</li>
@@ -304,7 +304,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">IBS symptom worsening in some users.</span> Particularly IBS-D with SIBO features. Highly individual. If probiotics worsen symptoms, discontinue and consult GI.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Severe immunocompromise bacteremia / fungemia risk.</span> Documented cases in post-transplant, active chemotherapy, advanced HIV, ICU contexts. The 2008 PROPATRIA trial documented increased mortality with probiotics in severe acute pancreatitis. Critical-care guidelines generally don&apos;t recommend routine probiotics in ICU. Outpatient users with normal immune function: standard probiotic supplementation is safe.</li>
@@ -316,7 +316,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Antibiotics.</span> Take 2+ hours apart from antibiotic doses to avoid antibiotic killing the probiotic bacteria. AAD-prevention protocol is specifically designed around antibiotic co-administration.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Antifungals.</span> S. boulardii is a yeast — antifungals (fluconazole, etc.) will kill it. Choose bacterial probiotic strains if on antifungal therapy.</li>
@@ -404,7 +404,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -473,7 +473,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -569,7 +569,7 @@ export default function ProbioticsPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Probiotics</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Probiotics</h1>
         <span className="tag">Gut Health &amp; Immunity</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -577,18 +577,18 @@ export default function ProbioticsPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Live microorganisms (ISAPP definition: live microorganisms that confer health benefit when administered in adequate amounts); strain-specific brand examples — Culturelle (L. rhamnosus GG), Florastor (S. boulardii CNCM I-745), Align (B. infantis 35624 / Bifantis), BioGaia (L. reuteri DSM 17938), VSL#3 / Visbiome (multi-strain)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Live microorganisms (ISAPP definition: live microorganisms that confer health benefit when administered in adequate amounts); strain-specific brand examples — Culturelle (L. rhamnosus GG), Florastor (S. boulardii CNCM I-745), Align (B. infantis 35624 / Bifantis), BioGaia (L. reuteri DSM 17938), VSL#3 / Visbiome (multi-strain)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Live microorganism supplement / strain-specific therapeutic / gut microbiome modulator / immune system interactor (gut-associated lymphoid tissue) / synbiotic partner with prebiotic substrates / category page with strain-specific evidence sub-tiers
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Live microorganism supplement / strain-specific therapeutic / gut microbiome modulator / immune system interactor (gut-associated lymphoid tissue) / synbiotic partner with prebiotic substrates / category page with strain-specific evidence sub-tiers
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Sub-tier breakdown by strain-specific endpoint. <span className="font-semibold">Strong: antibiotic-associated diarrhea prevention</span> (Hempel 2012 JAMA — L. rhamnosus GG, S. boulardii). <span className="font-semibold">Strong: C. difficile-associated diarrhea prevention</span> (Goldenberg 2017 Cochrane — S. boulardii). <span className="font-semibold">Moderate: IBS</span> (Ford 2014 — B. infantis 35624, VSL#3, specific L. plantarum). <span className="font-semibold">Moderate: infant colic</span> (L. reuteri DSM 17938). <span className="font-semibold">Moderate: H. pylori adjunct, vaginal health, URTI, atopic dermatitis</span> (strain-specific). <span className="font-semibold">Emerging: mood/psychobiotics</span>. Hill 2014 ISAPP consensus is the foundational strain-specificity framework. Critical Suez 2018 caveat: routine post-antibiotic probiotics may DELAY native microbiome recovery. Critical safety caveat: severely immunocompromised users have documented bacteremia/fungemia risk (PROPATRIA 2008 in severe acute pancreatitis) — coordinate with treating team.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Sub-tier breakdown by strain-specific endpoint. <span className="font-semibold">Strong: antibiotic-associated diarrhea prevention</span> (Hempel 2012 JAMA — L. rhamnosus GG, S. boulardii). <span className="font-semibold">Strong: C. difficile-associated diarrhea prevention</span> (Goldenberg 2017 Cochrane — S. boulardii). <span className="font-semibold">Moderate: IBS</span> (Ford 2014 — B. infantis 35624, VSL#3, specific L. plantarum). <span className="font-semibold">Moderate: infant colic</span> (L. reuteri DSM 17938). <span className="font-semibold">Moderate: H. pylori adjunct, vaginal health, URTI, atopic dermatitis</span> (strain-specific). <span className="font-semibold">Emerging: mood/psychobiotics</span>. Hill 2014 ISAPP consensus is the foundational strain-specificity framework. Critical Suez 2018 caveat: routine post-antibiotic probiotics may DELAY native microbiome recovery. Critical safety caveat: severely immunocompromised users have documented bacteremia/fungemia risk (PROPATRIA 2008 in severe acute pancreatitis) — coordinate with treating team.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What are probiotics?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What are probiotics?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Probiotics are live microorganisms that, when administered in adequate amounts, confer a health benefit on the host (Hill 2014 ISAPP consensus definition). They are primarily bacteria from Lactobacillus and Bifidobacterium genera, plus the yeast Saccharomyces boulardii. The central organizing principle of evidence-based probiotic use — and the load-bearing framing of this entire profile — is <span className="font-semibold">strain-specificity</span>: probiotic effects are per-strain, not categorical. No strain means no indication. Different strains have evidence for completely different applications, and generic probiotic products with proprietary blends or generic species names (without strain identifiers) have minimal specific evidence for any indication. The strongest probiotic evidence is for <span className="font-semibold">antibiotic-associated diarrhea (AAD) prevention</span> — Hempel 2012 JAMA meta-analysis of 82 RCTs documented ~42% AAD risk reduction with Lactobacillus rhamnosus GG (LGG) or Saccharomyces boulardii during antibiotic courses. <span className="font-semibold">C. difficile-associated diarrhea prevention</span> is similarly well-established (Goldenberg 2017 Cochrane — S. boulardii specifically). <span className="font-semibold">IBS symptom support</span> has moderate strain-specific evidence (Ford 2014 — Bifidobacterium infantis 35624 / Bifantis is the trial-validated strain; VSL#3 / Visbiome for severe IBS; specific Lactobacillus plantarum strains). <span className="font-semibold">Infant colic reduction</span> with L. reuteri DSM 17938 (BioGaia). <span className="font-semibold">Vaginal health</span> with L. rhamnosus GR-1 + L. reuteri RC-14. <span className="font-semibold">H. pylori eradication adjunct, atopic dermatitis prevention in infants, upper respiratory tract infection prevention, lactose digestion</span>, and <span className="font-semibold">emerging psychobiotic effects on mood</span> with L. helveticus + B. longum combinations — all have specific strain-evidence pairings that do not generalize. A critical and influential nuance: <span className="font-semibold">Suez 2018</span> documented that routine probiotic supplementation after antibiotic courses may DELAY native microbiome recovery compared to no intervention or autologous fecal microbiota transplant. The AAD-prevention indication is solid, but the broader &quot;take probiotics after antibiotics to restore your microbiome&quot; goal is complicated by this finding. A second critical safety nuance is research-context specific: severely immunocompromised users (post-organ-transplant on immunosuppressants, active chemotherapy, advanced HIV, ICU patients) have documented cases of probiotic-associated bacteremia and fungemia. The 2008 PROPATRIA trial in severe acute pancreatitis documented increased mortality in the probiotic arm. Critical-care guidelines generally do not recommend routine ICU probiotics. Outpatient users with normal immune function: standard probiotic supplementation is safe at standard doses; the immunocompromised concern is a specific clinical-context nuance, not a general safety issue. Practical guidance: identify your specific goal, find the trial-validated strain for that goal, select a product containing that strain at the trial-equivalent CFU dose, take with food, and look for &quot;CFU at expiration date&quot; on the label rather than &quot;CFU at manufacture.&quot; For the synbiotic approach, combine with{" "}
@@ -596,7 +596,7 @@ export default function ProbioticsPage() {
             (the fermentable fiber that feeds the live bacteria) — ideally sequentially with 2–4 weeks between to allow GI adaptation.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits (strain-specific):
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -612,10 +612,10 @@ export default function ProbioticsPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> Strain-specific. Most strains: 1–100 billion CFU/day at trial-validated dose. AAD prevention: 5–20 billion CFU of LGG or S. boulardii. IBS: 1 billion CFU of B. infantis 35624 (Bifantis). Infant colic: 100 million CFU L. reuteri DSM 17938. Take with food (buffers stomach acid). During antibiotic course: 2+ hours apart from antibiotic dose. Look for &quot;CFU at expiration date.&quot;
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> Strain-specific. Most strains: 1–100 billion CFU/day at trial-validated dose. AAD prevention: 5–20 billion CFU of LGG or S. boulardii. IBS: 1 billion CFU of B. infantis 35624 (Bifantis). Infant colic: 100 million CFU L. reuteri DSM 17938. Take with food (buffers stomach acid). During antibiotic course: 2+ hours apart from antibiotic dose. Look for &quot;CFU at expiration date.&quot;
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Severely immunocompromised users (post-transplant, active chemo, advanced HIV, ICU) — coordinate with treating team; documented bacteremia/fungemia risk in specific clinical contexts. Suez 2018 — routine post-antibiotic probiotics may delay native microbiome recovery. Some IBS users worsen with probiotics (particularly with SIBO features); discontinue if symptoms worsen. CFU at expiration date (not manufacture) is the meaningful number. Generic products without strain identifiers have no specific evidence for any indication.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Severely immunocompromised users (post-transplant, active chemo, advanced HIV, ICU) — coordinate with treating team; documented bacteremia/fungemia risk in specific clinical contexts. Suez 2018 — routine post-antibiotic probiotics may delay native microbiome recovery. Some IBS users worsen with probiotics (particularly with SIBO features); discontinue if symptoms worsen. CFU at expiration date (not manufacture) is the meaningful number. Generic products without strain identifiers have no specific evidence for any indication.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=probiotics+lactobacillus+rhamnosus+strain&tag=profpeptide-20" label="Probiotics" />
         </div>
@@ -626,7 +626,7 @@ export default function ProbioticsPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -655,7 +655,7 @@ export default function ProbioticsPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/prebiotics" className="text-sm font-medium text-[#3A759F] hover:underline">Prebiotics</Link>
           <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">Glutamine</Link>

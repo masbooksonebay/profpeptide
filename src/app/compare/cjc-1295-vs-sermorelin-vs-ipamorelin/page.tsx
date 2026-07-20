@@ -40,11 +40,11 @@ export default function CJCvsSermorelinvsIpamorelinPage() {
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-5xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">CJC-1295 vs Sermorelin vs Ipamorelin &mdash; Growth Hormone Peptide Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">CJC-1295 vs Sermorelin vs Ipamorelin &mdash; Growth Hormone Peptide Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">CJC-1295, Sermorelin, and Ipamorelin are the three most researched growth hormone secretagogue peptides. CJC-1295 and Sermorelin are both GHRH analogs &mdash; they mimic growth hormone releasing hormone. Ipamorelin is a GHRP &mdash; it works through a different receptor (GHS-R1a) to trigger GH pulses. Understanding their differences is key to understanding why they&apos;re often studied together.</p>
 
       <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why GHRH and GHRP work together</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Why GHRH and GHRP work together</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Your pituitary gland releases growth hormone in pulses, regulated by two opposing systems. The &ldquo;go&rdquo; signal comes from the hypothalamus via GHRH (growth hormone-releasing hormone). The &ldquo;stop&rdquo; signal comes from somatostatin. Natural GH peaks during deep sleep and intense exercise.
         </p>
@@ -66,7 +66,7 @@ export default function CJCvsSermorelinvsIpamorelinPage() {
           </tr></thead>
           <tbody>{rows.map(([label, a, b, c], i) => (
             <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-              <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+              <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
               <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
               <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
               <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{c}</td>
@@ -75,31 +75,31 @@ export default function CJCvsSermorelinvsIpamorelinPage() {
         </table>
       </div>
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which one is right for you?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Which one is right for you?</h2>
         <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           All three are research peptides &mdash; none are FDA-approved for human use except Sermorelin in compounded form for diagnosed GH deficiency. Stack vs single-peptide use depends on the research goal.
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Standard GH peptide research starting point</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Standard GH peptide research starting point</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               The CJC-1295 (no DAC) + Ipamorelin stack is the most-studied combination and the typical starting point. CJC-1295 no-DAC has a ~30 minute half-life (matching natural pulse pattern) and Ipamorelin is the cleanest GHRP (no cortisol or prolactin elevation). Usually dosed 2&ndash;3x daily, with bedtime dose being most important.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Convenience-focused (longer dosing intervals)</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Convenience-focused (longer dosing intervals)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               CJC-1295 with DAC has a 6&ndash;8 day half-life, allowing 1&ndash;2 weekly injections instead of daily. The trade-off is loss of pulsatile pattern &mdash; sustained GHRH activation rather than mimicking natural pulses. Some researchers consider this less physiological.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Mimicking natural GHRH most closely</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Mimicking natural GHRH most closely</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Sermorelin matches natural GHRH almost exactly (it&apos;s the first 29 amino acids of natural GHRH). Half-life is short (~10&ndash;15 min), pulse pattern is the most physiological of the three. Sermorelin is also the only one with FDA-recognized compounded use for GH deficiency. Best choice for research models prioritizing physiological fidelity.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Maximum GH output</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Maximum GH output</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               The CJC-1295 (with DAC) + Ipamorelin stack produces the strongest sustained GH elevation in research. The DAC version provides constant GHRH signal while Ipamorelin amplifies pulses. Used in research interested in maximum output rather than physiological pulse pattern.
             </p>
@@ -108,16 +108,16 @@ export default function CJCvsSermorelinvsIpamorelinPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link> is the most established with the longest clinical history. <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link> offers longer half-life and stronger GH output. <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link> is almost never used alone &mdash; its value is as a GHRP to complement a GHRH analog like CJC-1295 or Sermorelin, creating synergistic GH release through dual receptor activation. The CJC-1295 + Ipamorelin stack is the most commonly researched combination.</p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i}>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
             </div>
           ))}

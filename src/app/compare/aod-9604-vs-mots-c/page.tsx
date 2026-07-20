@@ -43,17 +43,17 @@ export default function AOD9604vsMOTScPage() {
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">AOD-9604 vs MOTS-C &mdash; Two Distinct Metabolic Peptides</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">AOD-9604 vs MOTS-C &mdash; Two Distinct Metabolic Peptides</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link> and <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link> both show up in fat-loss and metabolic research, so they get compared &mdash; but unlike some &ldquo;versus&rdquo; pairs, these are two genuinely different compounds that work through different mechanisms. This page lays out what each actually is, how they differ, and which research question each fits.</p>
 
       <div className="bg-[#3A759F]/10 border border-[#3A759F]/20 rounded-xl p-5 mb-8">
-        <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>AOD-9604:</strong> a synthetic fragment of growth hormone (hGH 176-191), studied for selective fat loss / lipolysis.</p>
-        <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>MOTS-C:</strong> a mitochondrial-derived peptide (encoded in mtDNA), studied for insulin sensitivity and metabolic homeostasis as an &ldquo;exercise mimetic.&rdquo;</p>
-        <p className="text-lg text-[#1e2d3d] dark:text-slate-100"><strong>Bottom line up front:</strong> different compounds, different mechanisms &mdash; not interchangeable, and not a rigged &ldquo;which is better&rdquo; contest. Both are preclinical-stage and research-use only.</p>
+        <p className="text-lg text-[#16181B] dark:text-slate-100 mb-2"><strong>AOD-9604:</strong> a synthetic fragment of growth hormone (hGH 176-191), studied for selective fat loss / lipolysis.</p>
+        <p className="text-lg text-[#16181B] dark:text-slate-100 mb-2"><strong>MOTS-C:</strong> a mitochondrial-derived peptide (encoded in mtDNA), studied for insulin sensitivity and metabolic homeostasis as an &ldquo;exercise mimetic.&rdquo;</p>
+        <p className="text-lg text-[#16181B] dark:text-slate-100"><strong>Bottom line up front:</strong> different compounds, different mechanisms &mdash; not interchangeable, and not a rigged &ldquo;which is better&rdquo; contest. Both are preclinical-stage and research-use only.</p>
       </div>
 
       <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why these two get compared</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Why these two get compared</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Both are peptides that touch fat and energy metabolism, so they end up on the same shortlists. But they come from completely different places. AOD-9604 is a lab-made fragment of human growth hormone, engineered to isolate the hormone&apos;s fat-metabolism (lipolytic) action while leaving out its growth and blood-sugar effects.
         </p>
@@ -77,7 +77,7 @@ export default function AOD9604vsMOTScPage() {
           <tbody>
             {rows.map(([label, a, b], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-                <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+                <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
               </tr>
@@ -87,25 +87,25 @@ export default function AOD9604vsMOTScPage() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which fits which research question?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Which fits which research question?</h2>
         <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           Both are research-use-only and neither is FDA-approved. Because the mechanisms differ, the choice is about the question you&apos;re studying, not a ranking.
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Studying selective fat loss / lipolysis</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Studying selective fat loss / lipolysis</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               AOD-9604 is the more direct mechanistic match &mdash; it was purpose-built as a lipolytic fragment of growth hormone. Temper expectations, though: its preclinical fat-oxidation results did not carry over into successful human weight-loss trials, and Phase 2 development was discontinued. It is a mechanism worth studying, not a proven fat-loss agent.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Studying insulin sensitivity, metabolic homeostasis, or exercise-mimetic biology</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Studying insulin sensitivity, metabolic homeostasis, or exercise-mimetic biology</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               MOTS-C is the relevant tool. Its landmark Cell Metabolism work showed it improves metabolic homeostasis and insulin sensitivity via AMPK, positioning it as an exercise-mimetic and mitochondrial/longevity research compound rather than a direct fat-burner. The human evidence is early, so treat findings as preliminary.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Both together</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Both together</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Because they hit different pathways, they are sometimes combined &mdash; sold as a <Link href="/peptides/aod-9604-mots-c" className="text-[#3A759F] hover:underline">AOD-9604 + MOTS-c blend</Link>. There is no established combination protocol and the human data for each is limited, so any combined use is exploratory and research-use only.
             </p>
@@ -114,16 +114,16 @@ export default function AOD9604vsMOTScPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300">AOD-9604 and MOTS-C are two distinct metabolic peptides, not variants of one another. AOD-9604 is a synthetic growth-hormone fragment aimed at lipolysis; its mechanism is direct but its human fat-loss evidence is weak (Phase 2 discontinued). MOTS-C is a mitochondrial-derived peptide aimed at AMPK-driven metabolic homeostasis and insulin sensitivity, with a strong preclinical base but only early human data. Pick by research question, not by a &ldquo;winner&rdquo; &mdash; and note both are preclinical-stage, not FDA-approved, and research-use only.</p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i}>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
             </div>
           ))}
@@ -131,7 +131,7 @@ export default function AOD9604vsMOTScPage() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">References</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">References</h2>
         <ol className="list-decimal list-inside space-y-2">
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Ng FM, Sun J, Sharma L, et al. Metabolic studies of a synthetic lipolytic domain (AOD9604) of human growth hormone. Horm Res. 2000;53(6):274-278.{" "}

@@ -216,7 +216,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -285,7 +285,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -312,7 +312,7 @@ export default function KisspeptinPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Kisspeptin</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Kisspeptin</h1>
         <span className="tag">Sexual Health</span>
         <span className="tag">Research-Grade</span>
       </div>
@@ -321,18 +321,18 @@ export default function KisspeptinPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Kisspeptin-54 (KP-54, metastin), Kisspeptin-10 (KP-10), KISS1-derived peptide
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Kisspeptin-54 (KP-54, metastin), Kisspeptin-10 (KP-10), KISS1-derived peptide
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> KISS1-gene-derived peptide &mdash; endogenous KISS1R (GPR54) agonist; upstream regulator of the hypothalamic-pituitary-gonadal (reproductive) axis
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> KISS1-gene-derived peptide &mdash; endogenous KISS1R (GPR54) agonist; upstream regulator of the hypothalamic-pituitary-gonadal (reproductive) axis
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved; research-use-only. Investigated in Phase 1/2 human trials (notably Imperial College London).
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved; research-use-only. Investigated in Phase 1/2 human trials (notably Imperial College London).
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is kisspeptin?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is kisspeptin?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Kisspeptin is a peptide encoded by the KISS1 gene and the master upstream regulator of the reproductive axis. It activates the KISS1R receptor (formerly GPR54) on hypothalamic GnRH neurons, triggering the pulsatile release of gonadotropin-releasing hormone that drives luteinizing hormone (LH) and follicle-stimulating hormone (FSH) from the pituitary — and, in turn, ovarian and testicular function. It circulates mainly as two isoforms studied in research: the longer kisspeptin-54 (KP-54, metastin) and the shorter kisspeptin-10 (KP-10).
@@ -343,7 +343,7 @@ export default function KisspeptinPage() {
             </p>
           </div>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Research areas:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -355,10 +355,10 @@ export default function KisspeptinPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Research dosing:</span> From clinical trials, not a consumer protocol &mdash; kisspeptin-54 has been given by subcutaneous bolus or IV infusion (e.g. ~6.4 nmol/kg twice weekly in amenorrhea studies; single boluses to trigger IVF oocyte maturation) under medical supervision.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Research dosing:</span> From clinical trials, not a consumer protocol &mdash; kisspeptin-54 has been given by subcutaneous bolus or IV infusion (e.g. ~6.4 nmol/kg twice weekly in amenorrhea studies; single boluses to trigger IVF oocyte maturation) under medical supervision.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -372,7 +372,7 @@ export default function KisspeptinPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -406,7 +406,7 @@ export default function KisspeptinPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/pt-141" className="text-sm font-medium text-[#3A759F] hover:underline">PT-141</Link>
         <Link href="/peptides/pt-141-oxytocin" className="text-sm font-medium text-[#3A759F] hover:underline">PT-141 + Oxytocin</Link>

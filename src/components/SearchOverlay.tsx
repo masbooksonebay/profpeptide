@@ -129,7 +129,7 @@ export default function SearchOverlay({ isOpen, onClose }: Props) {
           />
           <button
             onClick={onClose}
-            className="text-xs px-2 py-1 rounded border border-gray-200 dark:border-slate-600 text-gray-500 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-100"
+            className="text-xs px-2 py-1 rounded border border-[#D9DEE4] dark:border-slate-600 text-gray-500 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-100"
             aria-label="Close search"
           >
             ESC

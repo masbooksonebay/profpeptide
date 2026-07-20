@@ -34,13 +34,13 @@ export default function ProfileTOC({
   if (variant === "mobile") {
     return (
       <details className="panel-card lg:hidden mb-8 overflow-hidden">
-        <summary className="cursor-pointer list-none px-4 py-3 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100">
+        <summary className="cursor-pointer list-none px-4 py-3 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100">
           <span>On this page</span>
           <svg className="w-4 h-4 text-brand" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </summary>
-        <div className="px-4 pb-4 pt-1 border-t border-gray-200 dark:border-slate-700">
+        <div className="px-4 pb-4 pt-1 border-t border-[#D9DEE4] dark:border-slate-700">
           <TOCLinks sections={sections} />
         </div>
       </details>
@@ -54,7 +54,7 @@ export default function ProfileTOC({
           card caps its height to the viewport (minus the 96px offset + breathing
           room) and scrolls internally when the list overflows a short viewport. */}
       <div className="panel-card p-5 max-h-[calc(100vh-7rem)] overflow-y-auto toc-scroll">
-        <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 mb-3">
+        <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
           On this page
         </h2>
         <TOCLinks sections={sections} />

@@ -41,11 +41,11 @@ export default function SemaglutideVsTirzepatidePage() {
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Semaglutide vs Tirzepatide &mdash; GLP-1 Peptide Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Semaglutide vs Tirzepatide &mdash; GLP-1 Peptide Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Semaglutide and Tirzepatide are the two most clinically significant metabolic peptides of the past decade. Both are FDA-approved and backed by large-scale Phase 3 trials. Tirzepatide is newer and shows greater average weight loss, but semaglutide has a longer track record and broader approval history.</p>
 
       <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why GLP-1 receptor activation matters</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Why GLP-1 receptor activation matters</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           GLP-1 (glucagon-like peptide-1) is a hormone naturally released from the gut after eating. It does three things at once: it slows gastric emptying so you feel full longer, it triggers insulin release to manage blood sugar, and it acts on the hypothalamus to reduce appetite.
         </p>
@@ -69,7 +69,7 @@ export default function SemaglutideVsTirzepatidePage() {
           <tbody>
             {rows.map(([label, a, b], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-                <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+                <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
               </tr>
@@ -79,31 +79,31 @@ export default function SemaglutideVsTirzepatidePage() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which one is right for you?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Which one is right for you?</h2>
         <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           This is general framing for educational purposes &mdash; the actual decision should involve your prescribing physician. Insurance coverage, BMI thresholds, and individual health history all matter.
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">First time considering GLP-1 therapy</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">First time considering GLP-1 therapy</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Semaglutide is the most-studied option with the longest safety record (FDA-approved 2017 for diabetes, 2021 for obesity). It&apos;s the natural starting point for most patients new to this class. Available as Ozempic (diabetes), Wegovy (obesity), or Rybelsus (oral form).
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Currently on semaglutide and want stronger results</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Currently on semaglutide and want stronger results</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Tirzepatide showed about 47% greater weight loss than semaglutide in the SURMOUNT-5 head-to-head trial &mdash; roughly 22.5% body weight reduction vs 14.9% over 72 weeks. The dual GLP-1/GIP mechanism is responsible for the stronger output. Most patients who plateau on semaglutide find tirzepatide produces meaningful additional progress.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Have type 2 diabetes plus obesity</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Have type 2 diabetes plus obesity</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Both are FDA-approved for both conditions. Tirzepatide has slightly stronger HbA1c reduction (~2&ndash;2.5% vs ~1&ndash;2%) and stronger weight loss. Semaglutide may be preferred where insurance coverage favors Ozempic/Wegovy. The choice often comes down to insurance approval as much as clinical efficacy.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Prioritize long-term safety data</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Prioritize long-term safety data</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Semaglutide has 8+ years of post-market data (approved 2017). Tirzepatide has 4+ years (approved 2022). For patients prioritizing the longest established safety record, semaglutide remains the first choice. Tirzepatide&apos;s safety profile so far is favorable but the body of long-term real-world data is still building.
             </p>
@@ -112,16 +112,16 @@ export default function SemaglutideVsTirzepatidePage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300">Tirzepatide produces greater average weight loss and better blood sugar control in head-to-head data. <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> has a longer track record, broader approval history, and more long-term safety data. Both are prescription medications, but both are also widely available as research-grade peptides through specialty vendors. See <Link href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</Link> for current options.</p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i}>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
             </div>
           ))}

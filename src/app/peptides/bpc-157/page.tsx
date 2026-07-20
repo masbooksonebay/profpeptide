@@ -202,11 +202,11 @@ const sections = [
         </p>
 
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -243,15 +243,15 @@ const sections = [
         </p>
 
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">100 mcg dose</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">250 mcg dose</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">500 mcg dose</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">750 mcg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Concentration</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">100 mcg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">250 mcg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">500 mcg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">750 mcg dose</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -336,7 +336,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -346,7 +346,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -356,7 +356,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -448,7 +448,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -529,7 +529,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -555,7 +555,7 @@ export default function BPC157Page() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#1e2d3d] dark:text-slate-100 tracking-tight">BPC-157</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">BPC-157</h1>
         <span className="tag">Recovery &amp; Tissue Repair</span>
         <span className="tag">Research-Grade</span>
       </div>
@@ -566,29 +566,29 @@ export default function BPC157Page() {
       {/* Quick Facts — key facts already present on this page, in a scannable grid */}
       <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
         <div className="px-5 py-4">
-          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 mb-3">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
             Quick Facts
           </h2>
           <dl className="space-y-3">
             <div>
               <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
-              <dd className="text-base text-[#1e2d3d] dark:text-slate-100">A lab-made 15-amino-acid peptide studied for wound healing, tendon and tissue repair, and gut protection.</dd>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A lab-made 15-amino-acid peptide studied for wound healing, tendon and tissue repair, and gut protection.</dd>
             </div>
             <div>
               <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
-              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Subcutaneous injection, or oral for gut-related use</dd>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Subcutaneous injection, or oral for gut-related use</dd>
             </div>
             <div>
               <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
-              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Under 30 minutes (plasma)</dd>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Under 30 minutes (plasma)</dd>
             </div>
             <div>
               <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
-              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">250&ndash;500 mcg, once or twice daily, in 4&ndash;8 week cycles</dd>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">250&ndash;500 mcg, once or twice daily, in 4&ndash;8 week cycles</dd>
             </div>
             <div>
               <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
-              <dd className="text-sm text-[#1e2d3d] dark:text-slate-200">Not FDA-approved &mdash; research use only.</dd>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved &mdash; research use only.</dd>
             </div>
           </dl>
         </div>
@@ -615,7 +615,7 @@ export default function BPC157Page() {
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -628,10 +628,10 @@ export default function BPC157Page() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Most research protocols use 250–500 mcg subcutaneously once or twice daily. Typical cycle length is 4–8 weeks, sometimes extended to 12 weeks for chronic conditions. Oral formulations exist for gut-related research, though injectable produces stronger systemic effects.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> Most research protocols use 250–500 mcg subcutaneously once or twice daily. Typical cycle length is 4–8 weeks, sometimes extended to 12 weeks for chronic conditions. Oral formulations exist for gut-related research, though injectable produces stronger systemic effects.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -685,7 +685,7 @@ export default function BPC157Page() {
 
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/tb-500" className="text-sm font-medium text-[#3A759F] hover:underline">TB-500</Link>
         <Link href="/peptides/ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">GHK-Cu</Link>
@@ -697,7 +697,7 @@ export default function BPC157Page() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>
         <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#3A759F] hover:underline">GH Stack</Link>
@@ -705,7 +705,7 @@ export default function BPC157Page() {
       </div>
 
       <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/compare/bpc-157-vs-tb-500" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157 vs TB-500 &rarr;</Link>
         <Link href="/compare/bpc-157-vs-ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157 vs GHK-Cu &rarr;</Link>

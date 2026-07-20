@@ -11,11 +11,11 @@ function VendorCard({ slug, note }: VendorEntry) {
   const v = vendors[slug];
   if (!v) return null;
   return (
-    <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-slate-600 bg-white dark:bg-[#0f172a] hover:shadow-md hover:border-[#3A759F]/40 transition-all">
+    <div className="rounded-xl overflow-hidden border border-[#D9DEE4] dark:border-slate-600 bg-white dark:bg-[#0f172a] hover:shadow-md hover:border-[#3A759F]/40 transition-all">
       <div className="px-4 py-3 flex items-center justify-between gap-2 border-b border-gray-100 dark:border-slate-700 bg-gray-50 dark:bg-[#1e293b]">
         <Link
           href={v.detailPage}
-          className="text-sm font-bold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-tight"
+          className="text-sm font-bold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-tight"
         >
           {v.name}
         </Link>
@@ -35,7 +35,7 @@ function VendorCard({ slug, note }: VendorEntry) {
               Best Deal
             </span>
           )}
-          <span className="text-[10px] bg-gray-50 dark:bg-[#1e293b] text-gray-500 dark:text-slate-400 border border-gray-200 dark:border-slate-600 px-1.5 py-0.5 rounded-full">
+          <span className="text-[10px] bg-gray-50 dark:bg-[#1e293b] text-gray-500 dark:text-slate-400 border border-[#D9DEE4] dark:border-slate-600 px-1.5 py-0.5 rounded-full">
             {regionFlag[v.region]} {v.region}
           </span>
         </div>
@@ -45,7 +45,7 @@ function VendorCard({ slug, note }: VendorEntry) {
         {v.code ? (
           <p className="text-[11px] text-gray-400 dark:text-slate-500">
             Code:{" "}
-            <span className="font-mono font-semibold text-[#1e2d3d] dark:text-slate-100 tracking-wider">
+            <span className="font-mono font-semibold text-[#16181B] dark:text-slate-100 tracking-wider">
               {v.code}
             </span>
           </p>
@@ -101,7 +101,7 @@ export default function WhereToBuy({ peptide }: { peptide: string }) {
   return (
     <section className="mt-10">
       <JsonLd data={faqSchema} />
-      <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+      <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
         Where to buy {displayName}
       </h2>
       <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-5 max-w-xl">

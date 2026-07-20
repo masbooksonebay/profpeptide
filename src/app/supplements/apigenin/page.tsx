@@ -176,11 +176,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -222,7 +222,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Apigenin pairs naturally with the Russian-origin sleep + longevity peptide cluster — and is one of the few supplements that spans both Russian-sleep and NAD+/longevity peptide clusters via its dual mechanism.{" "}
             <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>{" "}
@@ -236,7 +236,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link>{" "}
@@ -271,7 +271,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-bed timing with dietary fat.</span> 30–60 minutes before target bedtime, taken with a small amount of fat (few nuts, olive oil) for absorption.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid combining with alcohol or sedatives.</span> Same GABA-A receptor system as benzodiazepines and alcohol; additive CNS depression risk. Separate dosing.</li>
@@ -291,7 +291,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild drowsiness — intentional for sleep applications; undesirable if dosed during waking hours.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — occasional, generally at higher doses or empty stomach.</li>
@@ -300,7 +300,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Asteraceae (daisy family) allergy reactions.</span> Users with allergies to ragweed, chrysanthemums, daisies, marigolds may react to chamomile-derived apigenin. Switch to synthetic source if available, or avoid.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pregnancy uterine activity concerns.</span> Concentrated apigenin theoretically may trigger uterine activity at high doses. Avoid supplemental apigenin during pregnancy; culinary chamomile tea generally considered safer.</li>
@@ -308,7 +308,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">CYP2C9 and CYP3A4 substrates.</span> Apigenin inhibits these cytochrome P450 enzymes; may affect metabolism of warfarin, statins, certain antidepressants (SSRIs metabolized by CYP3A4), and some calcium channel blockers. Clinically meaningful for narrow-therapeutic-index drugs. Coordinate with prescribing clinician.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anticoagulants (warfarin, apixaban, rivaroxaban).</span> Mild antiplatelet effect + CYP2C9 inhibition affecting warfarin metabolism. Monitor INR for warfarin users; coordinate with prescribing clinician.</li>
@@ -387,7 +387,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -456,7 +456,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -584,7 +584,7 @@ export default function ApigeninPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Apigenin</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Apigenin</h1>
         <span className="tag">Sleep &amp; Recovery</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -592,18 +592,18 @@ export default function ApigeninPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> 4&apos;,5,7-trihydroxyflavone, chamomile flavonoid, Matricaria chamomilla active flavonoid
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> 4&apos;,5,7-trihydroxyflavone, chamomile flavonoid, Matricaria chamomilla active flavonoid
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Plant flavonoid / GABA-A receptor partial agonist (benzodiazepine binding site) / CD38 inhibitor (NAD+ preservation)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Plant flavonoid / GABA-A receptor partial agonist (benzodiazepine binding site) / CD38 inhibitor (NAD+ preservation)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Moderate (chamomile extract) — Mao 2016 38-week GAD RCT (n=179) + Amsterdam 2012 + Adib-Hajbaghery 2017 elderly sleep trial — all using chamomile extract standardized to apigenin content. Limited (standalone pure apigenin) — animal evidence strong via Avallone 2000 + Tarragó 2018 CD38 mechanism work; direct human RCTs of standalone 50 mg apigenin are sparse and the popular dose is extrapolated rather than directly validated
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Moderate (chamomile extract) — Mao 2016 38-week GAD RCT (n=179) + Amsterdam 2012 + Adib-Hajbaghery 2017 elderly sleep trial — all using chamomile extract standardized to apigenin content. Limited (standalone pure apigenin) — animal evidence strong via Avallone 2000 + Tarragó 2018 CD38 mechanism work; direct human RCTs of standalone 50 mg apigenin are sparse and the popular dose is extrapolated rather than directly validated
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is apigenin?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is apigenin?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Apigenin is a plant flavonoid found highest in dried chamomile flowers (the source of chamomile tea), parsley, celery, and citrus peels. It is the principal active flavonoid driving chamomile&apos;s traditional calming and sleep-supporting effects, and has gained substantial recent popularity (largely via Andrew Huberman&apos;s recommendations) as a standalone supplement at 50 mg pre-bed. The primary mechanism is partial agonism at the benzodiazepine binding site of GABA-A receptors — same site targeted by Xanax, Valium, and alcohol, but with a ceiling on activation that theoretically prevents the deep receptor adaptation responsible for benzodiazepine dependence. Secondary mechanism: CD38 inhibition (Tarragó 2018), preserving NAD+ levels by reducing the major NAD+-consuming enzyme — a longevity-relevant arm that complements (rather than duplicates) NAD+ precursor supplements (NMN, NR). The strongest human evidence is from chamomile extract RCTs (Mao 2016 GAD trial, Amsterdam 2012, Adib-Hajbaghery 2017 elderly sleep) where apigenin is the principal active. Standalone pure-apigenin trials at the 50 mg supplemental dose are sparse — the popular protocol is extrapolated from animal data and chamomile dosing rather than directly RCT-validated. Apigenin pairs naturally with{" "}
@@ -611,7 +611,7 @@ export default function ApigeninPage() {
             via complementary mechanism layers spanning both Russian-sleep and NAD+/longevity peptide clusters.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -625,10 +625,10 @@ export default function ApigeninPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 50 mg pure apigenin taken 30–60 minutes before bed, with a small amount of dietary fat (poorly water-soluble — fat improves absorption). The Huberman-protocol dose; extrapolated from animal data and chamomile evidence rather than direct human RCT validation. Lower (25 mg) for sensitive users; higher (75–100 mg) occasionally used without additional evidence.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 50 mg pure apigenin taken 30–60 minutes before bed, with a small amount of dietary fat (poorly water-soluble — fat improves absorption). The Huberman-protocol dose; extrapolated from animal data and chamomile evidence rather than direct human RCT validation. Lower (25 mg) for sensitive users; higher (75–100 mg) occasionally used without additional evidence.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> CYP2C9 and CYP3A4 inhibition — affects metabolism of warfarin, statins, some antidepressants (coordinate with prescribing clinician). Asteraceae allergies (ragweed, daisies, chrysanthemums) — possible cross-reactivity with chamomile-derived apigenin. Pregnancy contraindication for concentrated supplements.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> CYP2C9 and CYP3A4 inhibition — affects metabolism of warfarin, statins, some antidepressants (coordinate with prescribing clinician). Asteraceae allergies (ragweed, daisies, chrysanthemums) — possible cross-reactivity with chamomile-derived apigenin. Pregnancy contraindication for concentrated supplements.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=apigenin&tag=profpeptide-20" label="Apigenin" />
         </div>
@@ -639,7 +639,7 @@ export default function ApigeninPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -668,7 +668,7 @@ export default function ApigeninPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/nmn" className="text-sm font-medium text-[#3A759F] hover:underline">NMN</Link>
           <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>

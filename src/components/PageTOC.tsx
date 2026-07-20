@@ -6,7 +6,7 @@ export default function PageTOC({ sections }: { sections: TOCItem[] }) {
       aria-label="On this page"
       className="bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8 mt-2"
     >
-      <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">
+      <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-3">
         On this page
       </h2>
       <ol className="list-decimal list-inside space-y-1.5">

@@ -175,11 +175,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -221,7 +221,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-arginine pairs naturally with the GH-secretagogue peptide cluster via the &quot;double-stimulus&quot; mechanism — arginine inhibits somatostatin (the GH brake) while GHRH-class peptides activate the GHRH receptor (the GH accelerator). The combination is the classical approach used in clinical GH stimulation testing.{" "}
             <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>{" "}
@@ -233,7 +233,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}
@@ -261,7 +261,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Take pre-bed on empty stomach for GH support.</span> Somatostatin tone is high at rest, making this the window where arginine&apos;s mechanism produces the largest GH effect.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid pre-workout dosing for performance.</span> Arginine blunts rather than enhances the natural exercise GH spike. For pre-workout pump/NO, use{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>.</li>
@@ -282,7 +282,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">GI distress — nausea, diarrhea, bloating at higher doses (5+ g single dose). Splitting doses resolves most cases.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild blood pressure reduction — generally favorable but relevant for users on antihypertensives.</li>
@@ -290,7 +290,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Herpes simplex outbreak risk.</span> HSV viral replication requires arginine; lysine competes with arginine for cellular transport. Arginine supplementation may precipitate or worsen outbreaks in users with HSV-1/HSV-2 history. Lysine co-supplementation is a partial mitigation if arginine is needed for other reasons.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Post-MI mortality signal (VINTAGE-MI).</span> Do not initiate arginine supplementation within 30 days of myocardial infarction without cardiology supervision.</li>
@@ -300,7 +300,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Antihypertensive medications.</span> Additive BP-lowering effect. Monitor during titration.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">PDE5 inhibitors (sildenafil, tadalafil).</span> Additive vasodilation. Generally well-tolerated but coordinate with prescriber for users on combination protocols.</li>
@@ -375,7 +375,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -444,7 +444,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -540,7 +540,7 @@ export default function LArgininePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">L-Arginine</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">L-Arginine</h1>
         <span className="tag">Growth Hormone Support</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -548,18 +548,18 @@ export default function LArgininePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Arginine, L-arginine HCl, arginine alpha-ketoglutarate (AAKG), arginine ethyl ester (AEE)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Arginine, L-arginine HCl, arginine alpha-ketoglutarate (AAKG), arginine ethyl ester (AEE)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Semi-essential amino acid / nitric oxide synthase substrate / growth hormone secretagogue (somatostatin-inhibition mechanism) / urea cycle intermediate / conditionally essential during surgical and metabolic stress
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Semi-essential amino acid / nitric oxide synthase substrate / growth hormone secretagogue (somatostatin-inhibition mechanism) / urea cycle intermediate / conditionally essential during surgical and metabolic stress
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Moderate (GH stimulation at rest — Kanaley 2008; blood pressure reduction; surgical immunonutrition). Modest (erectile dysfunction — L-citrulline now preferred per Cormio 2011; male fertility). Negative (post-MI cardiovascular outcomes — VINTAGE-MI 2006). Constrained throughout by first-pass intestinal/hepatic arginase that limits oral bioavailability — Schwedhelm 2008 documents L-citrulline raises plasma arginine more effectively than equimolar L-arginine. Contemporary NO research has largely shifted to L-citrulline.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Moderate (GH stimulation at rest — Kanaley 2008; blood pressure reduction; surgical immunonutrition). Modest (erectile dysfunction — L-citrulline now preferred per Cormio 2011; male fertility). Negative (post-MI cardiovascular outcomes — VINTAGE-MI 2006). Constrained throughout by first-pass intestinal/hepatic arginase that limits oral bioavailability — Schwedhelm 2008 documents L-citrulline raises plasma arginine more effectively than equimolar L-arginine. Contemporary NO research has largely shifted to L-citrulline.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is L-arginine?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is L-arginine?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-arginine is a semi-essential amino acid found in red meat, poultry, fish, dairy, nuts, and seeds — sufficient in healthy adults from dietary protein but conditionally essential during surgery, burns, sepsis, and major injury. It serves four biological roles relevant to supplementation: it is the direct substrate for nitric oxide synthase (the enzyme that produces NO, the signaling molecule driving vasodilation); it stimulates growth hormone release from the pituitary by inhibiting somatostatin (the GH brake); it is a urea cycle intermediate supporting nitrogen clearance; and it supplies rapidly dividing immune cells and healing tissue with substrate for proliferation and collagen synthesis. The central practical caveat: oral arginine encounters intestinal and hepatic arginase before reaching systemic circulation, so a substantial proportion of an oral dose is degraded on first pass.{" "}
@@ -567,7 +567,7 @@ export default function LArgininePage() {
             — which escapes first-pass arginase and is converted to arginine in the kidneys — raises plasma arginine more effectively than oral arginine itself (Schwedhelm 2008). Contemporary NO research has largely shifted to L-citrulline for this reason. L-arginine remains evidence-supported for GH stimulation at rest (Kanaley 2008), modest blood pressure reduction, surgical immunonutrition, and wound healing — but not for exercise performance or post-MI cardiovascular outcomes (VINTAGE-MI 2006 documented a mortality signal).
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -582,10 +582,10 @@ export default function LArgininePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 3–9 g pre-bed on empty stomach for GH support; 3–6 g daily in divided doses for cardiovascular/BP support; 5–10 g daily for fertility; 6–20 g daily under clinical supervision for wound healing. Split single doses above 5 g into 2–3 servings to reduce GI distress. L-arginine HCl is the standard form. Do NOT take pre-workout — it blunts exercise GH and underperforms L-citrulline for NO/pump.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 3–9 g pre-bed on empty stomach for GH support; 3–6 g daily in divided doses for cardiovascular/BP support; 5–10 g daily for fertility; 6–20 g daily under clinical supervision for wound healing. Split single doses above 5 g into 2–3 servings to reduce GI distress. L-arginine HCl is the standard form. Do NOT take pre-workout — it blunts exercise GH and underperforms L-citrulline for NO/pump.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Post-MI mortality signal (VINTAGE-MI — do not initiate within 30 days of heart attack without cardiology supervision); herpes outbreak risk in HSV-susceptible users (lysine competes with arginine); GI distress at higher doses (split dosing helps); additive blood-pressure reduction with antihypertensives; first-pass arginase metabolism ceiling — for NO/vascular goals,{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}is the more efficient tool.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Post-MI mortality signal (VINTAGE-MI — do not initiate within 30 days of heart attack without cardiology supervision); herpes outbreak risk in HSV-susceptible users (lysine competes with arginine); GI distress at higher doses (split dosing helps); additive blood-pressure reduction with antihypertensives; first-pass arginase metabolism ceiling — for NO/vascular goals,{" "}<Link href="/supplements/l-citrulline" className="text-[#3A759F] hover:underline">L-citrulline</Link>{" "}is the more efficient tool.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=l-arginine+powder+pharmaceutical+grade&tag=profpeptide-20" label="L-Arginine" />
         </div>
@@ -596,7 +596,7 @@ export default function LArgininePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -625,7 +625,7 @@ export default function LArgininePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/l-citrulline" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline</Link>
           <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline Malate</Link>

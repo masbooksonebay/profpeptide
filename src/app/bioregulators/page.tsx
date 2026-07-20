@@ -101,7 +101,7 @@ export default function BioregulatorsPage() {
       </Link>
 
       <span className="tag mb-3 inline-block">Research Guide</span>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-2">
         Bioregulator Peptides (Khavinson Peptides): A Research Guide
       </h1>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-6">
@@ -129,7 +129,7 @@ export default function BioregulatorsPage() {
 
       <div className="space-y-8">
         <div id="mechanism" className="scroll-mt-20">
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             The bioregulation hypothesis
           </h2>
           <div className="space-y-4">
@@ -152,7 +152,7 @@ export default function BioregulatorsPage() {
         </div>
 
         <div id="synthetic-vs-extracts" className="scroll-mt-20">
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Synthetic peptides vs. organ extracts
           </h2>
           <div className="space-y-4">
@@ -166,17 +166,17 @@ export default function BioregulatorsPage() {
         </div>
 
         <div id="lineup" className="scroll-mt-20">
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             The bioregulator line-up
           </h2>
           <div className="overflow-x-auto -mx-4 sm:mx-0 mb-4">
-            <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-              <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+            <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+              <thead className="bg-gray-100 dark:bg-[#16181B]">
                 <tr>
-                  <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide</th>
-                  <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Sequence</th>
-                  <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Tissue / system</th>
-                  <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Studied for</th>
+                  <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Peptide</th>
+                  <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Sequence</th>
+                  <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Tissue / system</th>
+                  <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Studied for</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -199,7 +199,7 @@ export default function BioregulatorsPage() {
         </div>
 
         <div id="evidence" className="scroll-mt-20">
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             What the evidence shows (and its limits)
           </h2>
           <div className="space-y-4">
@@ -213,7 +213,7 @@ export default function BioregulatorsPage() {
         </div>
 
         <div id="where-to-research" className="scroll-mt-20">
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Where to research these
           </h2>
           <div className="space-y-4">
@@ -227,13 +227,13 @@ export default function BioregulatorsPage() {
         </div>
 
         <div id="faq" className="scroll-mt-20">
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Frequently asked questions
           </h2>
           <div className="space-y-4">
             {faqs.map((f, i) => (
               <div key={i}>
-                <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+                <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
                   {f.q}
                 </h3>
                 <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -246,7 +246,7 @@ export default function BioregulatorsPage() {
       </div>
 
       <div className="mt-8 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Bioregulator Profiles</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Bioregulator Profiles</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>
           <Link href="/peptides/pinealon" className="text-sm font-medium text-[#3A759F] hover:underline">Pinealon</Link>

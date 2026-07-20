@@ -72,7 +72,7 @@ export default function AppPage() {
     <div className="section max-w-4xl">
       <div className="text-center mb-12 max-w-2xl mx-auto">
         <span className="tag mb-3 inline-block">Now on iOS</span>
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-4">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 mb-4">
           The All-in-One Peptide Tracker
         </h1>
         <p className="text-gray-500 dark:text-slate-400 text-base leading-relaxed max-w-xl mx-auto mb-8">
@@ -84,7 +84,7 @@ export default function AppPage() {
           <div className="w-16 h-16 bg-[#3A759F] rounded-2xl mx-auto mb-4 flex items-center justify-center">
             <span className="text-white text-2xl font-semibold">Pp</span>
           </div>
-          <p className="font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">Prof. Peptide</p>
+          <p className="font-semibold text-[#16181B] dark:text-slate-100 mb-1">Prof. Peptide</p>
           <p className="text-xs text-gray-500 dark:text-slate-400 mb-6">Research &amp; Education</p>
           <a
             href={APP_STORE_URL}
@@ -108,7 +108,7 @@ export default function AppPage() {
 
       {/* Screenshot gallery — horizontal scroll strip; each panel's headline is baked in */}
       <div className="mb-14">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-1 text-center">A closer look</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-1 text-center">A closer look</h2>
         <p className="text-sm text-gray-500 dark:text-slate-400 text-center mb-6">Swipe through what the app does.</p>
         <div className="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 -mx-4 px-4 sm:mx-0 sm:px-0">
           {panels.map((p) => (
@@ -132,13 +132,13 @@ export default function AppPage() {
 
       {/* Also included */}
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-6 text-center">Also included</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-6 text-center">Also included</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
           {also.map((f) => (
             <div key={f.title} className="flex items-start gap-3 p-4 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-100 dark:border-slate-700">
               <span className="text-[#3A759F] flex-shrink-0 mt-0.5"><Icon name={f.icon} /></span>
               <div>
-                <p className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-0.5">{f.title}</p>
+                <p className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-0.5">{f.title}</p>
                 <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">{f.desc}</p>
               </div>
             </div>

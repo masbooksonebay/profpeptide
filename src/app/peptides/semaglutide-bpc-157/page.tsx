@@ -174,7 +174,7 @@ const sections = [
           follows a weekly titration ramp; BPC-157 is dosed daily. They are both administered
           subcutaneously but are not combined in the same injection or vial.
         </p>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           Semaglutide titration schedule (standard research protocol):
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -196,7 +196,7 @@ const sections = [
             (maintenance). Some researchers hold at lower doses if GI tolerance is limiting.
           </li>
         </ol>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           BPC-157 dosing (concurrent):
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -217,7 +217,7 @@ const sections = [
           </li>
         </ol>
         <div className="pt-4">
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Reconstitution notes
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -341,7 +341,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Common (most users on semaglutide)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -371,7 +371,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Less common
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -396,7 +396,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Serious (rare or theoretical)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -541,7 +541,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
@@ -651,7 +651,7 @@ const sections = [
               href={s.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1"
+              className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1"
             >
               {s.title} &rarr;
             </a>
@@ -721,7 +721,7 @@ export default function SemaglutideBpc157Page() {
         </Link>
 
         <div className="flex flex-wrap items-center gap-3 mb-2">
-          <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">
+          <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">
             Semaglutide + BPC-157
           </h1>
           <span className="tag">Weight Loss &amp; GI Protection</span>
@@ -733,15 +733,15 @@ export default function SemaglutideBpc157Page() {
         </p>
         <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span>{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span>{" "}
             Sema + BPC, GLP-1/BPC Stack, Ozempic Research Blend
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span>{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span>{" "}
             GLP-1 Receptor Agonist + GI Cytoprotective Blend (2-component)
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">
               Regulatory Status:
             </span>{" "}
             Research-grade only. Semaglutide is FDA-approved as Wegovy/Ozempic but research-grade
@@ -750,7 +750,7 @@ export default function SemaglutideBpc157Page() {
         </div>
 
         <div id="overview" className="scroll-mt-20">
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             What is the Semaglutide + BPC-157 blend?
           </h2>
           <div className="space-y-4">
@@ -780,7 +780,7 @@ export default function SemaglutideBpc157Page() {
               available pre-blended due to incompatible dosing frequencies and half-lives.
             </p>
             <div>
-              <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+              <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
                 Reported benefits:
               </p>
               <ul className="list-disc list-inside space-y-1">
@@ -806,7 +806,7 @@ export default function SemaglutideBpc157Page() {
               </ul>
             </div>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">
+              <span className="font-semibold text-[#16181B] dark:text-slate-100">
                 Common research dose:
               </span>{" "}
               Semaglutide 0.25 mg subcutaneously once weekly (weeks 1–4) titrating to 2.4 mg once
@@ -814,7 +814,7 @@ export default function SemaglutideBpc157Page() {
               subcutaneously once daily (concurrent, throughout the semaglutide course).
             </p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span>{" "}
+              <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span>{" "}
               Both compounds are sold separately by research peptide vendors. Neither is available
               as a pre-blended vial. See{" "}
               <Link href="/coupons" className="text-[#3A759F] hover:underline">
@@ -830,7 +830,7 @@ export default function SemaglutideBpc157Page() {
         <div className="space-y-8">
           {sections.map((s) => (
             <div key={s.id} id={s.id} className="scroll-mt-20">
-              <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+              <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
                 {s.title}
               </h2>
               {s.intro && (
@@ -880,7 +880,7 @@ export default function SemaglutideBpc157Page() {
         </div>
 
         <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Related Peptides
           </h2>
           <div className="flex flex-wrap gap-4">
@@ -912,7 +912,7 @@ export default function SemaglutideBpc157Page() {
         </div>
 
         <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Related Blends
           </h2>
           <div className="flex flex-wrap gap-4">

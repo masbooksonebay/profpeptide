@@ -170,11 +170,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -216,13 +216,13 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Green tea extract is foundational metabolic support that doesn&apos;t directly interact with peptide pharmacology but provides modest thermogenic and cardiovascular adjunct effects. GLP-1 receptor agonists (semaglutide, tirzepatide) for weight management work at a different mechanism layer than catechin-caffeine thermogenesis — combination is mechanistically distinct, no direct interaction concern. Tesofensine and similar appetite-modulating compounds may have additive thermogenic effects with caffeine; coordinate with prescriber.
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/caffeine" className="text-[#3A759F] hover:underline">Caffeine</Link>{" "}
@@ -261,7 +261,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Brewed green tea daily.</span> 3–4 cups/day provides much of the catechin benefit with no hepatotoxicity at typical consumption. Foundational beverage choice.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Matcha for higher per-serving catechin.</span> Whole-leaf preparation delivers more catechins per serving than brewed tea while preserving food-matrix safety advantage.</li>
@@ -283,7 +283,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI upset, nausea — particularly on empty stomach. Take with food.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Caffeine-related effects (insomnia, anxiety, jitters) if extract contains caffeine.</li>
@@ -291,7 +291,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">HEPATOTOXICITY at high doses (EFSA 2018, Mazzanti 2009).</span> EGCG intake ≥800 mg/day from supplements associated with increased liver injury risk. Case reports of acute liver injury, occasionally severe. Always take with food. Avoid in pre-existing liver disease. Stop and check labs if jaundice, dark urine, abdominal pain, or unusual fatigue develop.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Iron absorption reduction.</span> Catechins bind non-heme iron, reducing absorption. Separate iron supplementation from green tea/extract by 2+ hours. Relevant for users with iron deficiency anemia.</li>
@@ -301,7 +301,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anticoagulants (warfarin).</span> Vitamin K content in green tea may reduce warfarin effectiveness. Consistent intake matters.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Iron supplements.</span> Catechins chelate non-heme iron — separate by 2+ hours.</li>
@@ -383,7 +383,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -452,7 +452,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -548,7 +548,7 @@ export default function GreenTeaExtractPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Green Tea Extract</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Green Tea Extract</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -556,24 +556,24 @@ export default function GreenTeaExtractPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> GTE, EGCG (epigallocatechin gallate, the dominant catechin), Camellia sinensis extract, standardized green tea polyphenols; food-matrix alternatives: brewed green tea, matcha (whole-leaf powdered)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> GTE, EGCG (epigallocatechin gallate, the dominant catechin), Camellia sinensis extract, standardized green tea polyphenols; food-matrix alternatives: brewed green tea, matcha (whole-leaf powdered)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Concentrated polyphenol extract / catechol-O-methyltransferase (COMT) inhibitor extending norepinephrine action / antioxidant / catechin-caffeine combination thermogenic / dose-dependent hepatotoxicity-risk supplement at high concentrated doses
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Concentrated polyphenol extract / catechol-O-methyltransferase (COMT) inhibitor extending norepinephrine action / antioxidant / catechin-caffeine combination thermogenic / dose-dependent hepatotoxicity-risk supplement at high concentrated doses
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Moderate efficacy with prominent safety caveat. <span className="font-semibold">Moderate</span>: modest fat oxidation and thermogenesis (catechin-caffeine combination per Hursel 2009 meta of 11 RCTs); modest weight loss and weight-maintenance benefit (Phung 2010 confirms); cardiovascular markers (LDL, BP); antioxidant biomarkers; anti-inflammatory effects. <span className="font-semibold">Modest</span>: cognitive function, glycemic control. <span className="font-semibold">Mixed</span>: cancer prevention (preclinical evidence robust; clinical translation limited). <span className="font-semibold">Critical SAFETY signal</span>: EFSA 2018 scientific opinion flagged EGCG intake ≥800 mg/day from supplements as associated with increased hepatotoxicity risk (Mazzanti 2009 case-report literature documents acute liver injury cases). <span className="font-semibold">Brewed green tea at typical consumption (3–4 cups/day): not associated with hepatotoxicity</span> — the food-matrix distinguishes safe daily consumption from concentrated extract risk.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Moderate efficacy with prominent safety caveat. <span className="font-semibold">Moderate</span>: modest fat oxidation and thermogenesis (catechin-caffeine combination per Hursel 2009 meta of 11 RCTs); modest weight loss and weight-maintenance benefit (Phung 2010 confirms); cardiovascular markers (LDL, BP); antioxidant biomarkers; anti-inflammatory effects. <span className="font-semibold">Modest</span>: cognitive function, glycemic control. <span className="font-semibold">Mixed</span>: cancer prevention (preclinical evidence robust; clinical translation limited). <span className="font-semibold">Critical SAFETY signal</span>: EFSA 2018 scientific opinion flagged EGCG intake ≥800 mg/day from supplements as associated with increased hepatotoxicity risk (Mazzanti 2009 case-report literature documents acute liver injury cases). <span className="font-semibold">Brewed green tea at typical consumption (3–4 cups/day): not associated with hepatotoxicity</span> — the food-matrix distinguishes safe daily consumption from concentrated extract risk.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is green tea extract?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is green tea extract?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Green tea extract is a concentrated form of bioactive polyphenols from Camellia sinensis leaves, typically standardized for epigallocatechin gallate (EGCG) — the dominant catechin and primary driver of green tea&apos;s metabolic and cardiovascular effects. Green tea has been consumed in Asia for over a thousand years; the past 30 years of research have documented modest metabolic, cardiovascular, antioxidant, and possible cognitive benefits. The honest evidence summary: <span className="font-semibold">Moderate effects</span> on fat oxidation, thermogenesis, and weight management as a catechin-caffeine combination per Hursel 2009 meta-analysis (modest effect sizes — typically &lt;1 kg weight loss over 12 weeks; not a meaningful weight-loss tool independent of diet and exercise); cardiovascular markers (LDL, BP); antioxidant biomarkers; anti-inflammatory effects. <span className="font-semibold">Modest</span> for cognitive function and glycemic control. <span className="font-semibold">Mixed</span> for cancer prevention (preclinical evidence is robust but clinical outcome translation is limited). The central safety issue distinguishing this supplement from most others — and the reason this page surfaces it prominently — is the <span className="font-semibold">dose-dependent hepatotoxicity signal at high concentrated doses</span>. <span className="font-semibold">EFSA 2018 scientific opinion flagged EGCG intake at or above 800 mg/day from supplements as associated with increased risk of liver injury</span> (Mazzanti 2009 review and subsequent updates document acute liver injury case reports). Risk is dose-dependent and elevated with empty-stomach dosing. Critical distinction: <span className="font-semibold">brewed green tea at typical consumption (3–4 cups/day delivers ~200–300 mg total catechins) has NOT been associated with hepatotoxicity</span>. The risk is specifically with concentrated supplemental extract at high doses. Practical safety guidance: (1) Cap supplemental EGCG well below 800 mg/day. (2) Take with food (never fasted). (3) Avoid combination weight-loss products with high-dose EGCG plus stimulants (compounded liver and cardiovascular risk). (4) Stop and consult clinician if jaundice, dark urine, abdominal pain, or unusual fatigue develops. (5) Pre-existing liver disease: avoid supplemental extract entirely. (6) Consider brewed green tea or matcha as safer delivery vehicles for daily catechin intake. The thermogenic mechanism is synergistic between EGCG (COMT inhibition, prolonging norepinephrine action) and caffeine (adenosine antagonism, increasing sympathetic activity) — basis for catechin-caffeine combinations outperforming either alone in Hursel 2009. Standard supplemental dose: 250–500 mg standardized extract (typically 45%+ EGCG) providing approximately 100–250 mg EGCG.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -588,10 +588,10 @@ export default function GreenTeaExtractPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 250–500 mg standardized green tea extract daily (45%+ EGCG; provides ~100–250 mg EGCG). Stay well below 800 mg EGCG/day per EFSA safety threshold. ALWAYS take with food. Alternative delivery: 3–4 cups brewed green tea daily (safer food-matrix vehicle, no documented hepatotoxicity).
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 250–500 mg standardized green tea extract daily (45%+ EGCG; provides ~100–250 mg EGCG). Stay well below 800 mg EGCG/day per EFSA safety threshold. ALWAYS take with food. Alternative delivery: 3–4 cups brewed green tea daily (safer food-matrix vehicle, no documented hepatotoxicity).
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> HEPATOTOXICITY at high doses (EFSA 2018 — EGCG ≥800 mg/day associated with liver injury); empty-stomach dosing increases risk; pre-existing liver disease (avoid extract entirely); iron absorption reduction (separate iron supplements by 2+ hours); caffeine-related effects (insomnia, anxiety) with caffeinated extract; avoid stim-heavy weight-loss blends combining EGCG + caffeine + synephrine + yohimbine; pregnancy/breastfeeding extract not recommended (brewed tea moderate consumption acceptable); CYP450 medication interactions; bortezomib chemotherapy interaction.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> HEPATOTOXICITY at high doses (EFSA 2018 — EGCG ≥800 mg/day associated with liver injury); empty-stomach dosing increases risk; pre-existing liver disease (avoid extract entirely); iron absorption reduction (separate iron supplements by 2+ hours); caffeine-related effects (insomnia, anxiety) with caffeinated extract; avoid stim-heavy weight-loss blends combining EGCG + caffeine + synephrine + yohimbine; pregnancy/breastfeeding extract not recommended (brewed tea moderate consumption acceptable); CYP450 medication interactions; bortezomib chemotherapy interaction.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=green+tea+extract+egcg+standardized&tag=profpeptide-20" label="Green Tea Extract" />
         </div>
@@ -602,7 +602,7 @@ export default function GreenTeaExtractPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -631,7 +631,7 @@ export default function GreenTeaExtractPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/caffeine" className="text-sm font-medium text-[#3A759F] hover:underline">Caffeine</Link>
           <Link href="/supplements/caffeine-l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">Caffeine + L-Theanine</Link>

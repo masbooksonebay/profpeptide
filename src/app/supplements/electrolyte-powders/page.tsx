@@ -178,11 +178,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -224,7 +224,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Electrolyte powders are foundational hydration support — they don&apos;t directly interact with peptide pharmacology but provide infrastructure that supports the training and recovery contexts where peptides are typically used. Endurance and heavy-training users on GH-secretagogue peptides like{" "}
             <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
@@ -234,7 +234,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine monohydrate</Link>{" "}
@@ -273,7 +273,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Match to sweat rate and conditions.</span> Cool weather short workout = plain water often fine. Hot weather endurance = electrolyte replacement matters.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Drink to thirst.</span> Hew-Butler 2015 guidance — overdrinking plain water during prolonged exercise is more dangerous than under-drinking. Trust thirst signals.</li>
@@ -296,7 +296,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort with high-magnesium products — magnesium can cause loose stools.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Salt taste with high-sodium products — affects palatability; flavored versions mask this.</li>
@@ -304,7 +304,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hypertension and chronic high-sodium intake.</span> Sedentary daily use of high-sodium electrolyte powders contributes to chronic sodium load. May worsen BP in salt-sensitive hypertensive users. Coordinate with cardiology.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Exercise-associated hyponatremia from overdrinking.</span> Drinking large volumes of plain water during prolonged exercise without sodium replacement is more dangerous than adequate sodium-containing fluid intake. Drink to thirst.</li>
@@ -315,7 +315,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Antihypertensive medications.</span> Sodium intake interacts with BP medication dosing. Coordinate with prescriber.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Diuretics.</span> Electrolyte losses from diuretics affect supplementation needs. Coordinate with prescriber.</li>
@@ -400,7 +400,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -463,7 +463,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -559,7 +559,7 @@ export default function ElectrolytePowdersPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Electrolyte Powders</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Electrolyte Powders</h1>
         <span className="tag">Performance &amp; Energy</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -567,24 +567,24 @@ export default function ElectrolytePowdersPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Electrolytes, hydration powders, sports drinks (with carbs), oral rehydration solutions (ORS), mineral supplements; brand philosophy categories: LMNT (high-sodium), Skratch Labs / Nuun (balanced), Liquid IV / Pedialyte (WHO ORS-style with glucose), Gatorade / Powerade (sports drinks with carbohydrate)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Electrolytes, hydration powders, sports drinks (with carbs), oral rehydration solutions (ORS), mineral supplements; brand philosophy categories: LMNT (high-sodium), Skratch Labs / Nuun (balanced), Liquid IV / Pedialyte (WHO ORS-style with glucose), Gatorade / Powerade (sports drinks with carbohydrate)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Multi-mineral hydration supplement / sodium-led plasma volume support / sweat-loss replacement / exercise-associated hyponatremia prevention / category page covering products from low-sodium balanced (Nuun) to high-sodium endurance (LMNT) philosophies
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Multi-mineral hydration supplement / sodium-led plasma volume support / sweat-loss replacement / exercise-associated hyponatremia prevention / category page covering products from low-sodium balanced (Nuun) to high-sodium endurance (LMNT) philosophies
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Context-dependent. <span className="font-semibold">Strong for endurance exercise (60+ min) and hot conditions</span> — Shirreffs 2011, Sawka 2007 ACSM position stand document plasma volume retention and performance maintenance with sodium replacement. <span className="font-semibold">Strong for exercise-associated hyponatremia prevention</span> in endurance contexts (Hew-Butler 2015 EAH consensus). <span className="font-semibold">Modest for muscle cramp prevention</span> — Schwellnus 2009 critique documents cramps are more strongly associated with neuromuscular fatigue than electrolyte status alone. <span className="font-semibold">Modest for low-carb / keto users</span> (LMNT-popularized high-sodium philosophy empirically supported). <span className="font-semibold">Weak for sedentary daily users</span> — dietary sodium typically adequate.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Context-dependent. <span className="font-semibold">Strong for endurance exercise (60+ min) and hot conditions</span> — Shirreffs 2011, Sawka 2007 ACSM position stand document plasma volume retention and performance maintenance with sodium replacement. <span className="font-semibold">Strong for exercise-associated hyponatremia prevention</span> in endurance contexts (Hew-Butler 2015 EAH consensus). <span className="font-semibold">Modest for muscle cramp prevention</span> — Schwellnus 2009 critique documents cramps are more strongly associated with neuromuscular fatigue than electrolyte status alone. <span className="font-semibold">Modest for low-carb / keto users</span> (LMNT-popularized high-sodium philosophy empirically supported). <span className="font-semibold">Weak for sedentary daily users</span> — dietary sodium typically adequate.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What are electrolyte powders?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What are electrolyte powders?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Electrolytes are electrically charged minerals dissolved in body fluids — sodium, potassium, magnesium, chloride, and others — essential for nerve conduction, muscle contraction, fluid balance, and pH regulation. Electrolyte powders are concentrated mineral supplements designed to replace the losses that occur through sweat during exercise, hot weather exposure, or illness. The category includes a wide range of products spanning meaningfully different philosophies: <span className="font-semibold">LMNT</span> (1000 mg sodium per stick, no sugar) pioneered the high-sodium philosophy aimed at endurance athletes, hot-weather workers, salty sweaters, and low-carb/keto users (who lose more sodium due to reduced insulin-mediated renal retention); <span className="font-semibold">Skratch Labs</span> (~380 mg sodium per serving) and <span className="font-semibold">Nuun Sport</span> (~300 mg sodium per tablet) represent the balanced lower-sodium philosophy suited for moderate-duration training and lighter sweat losses; <span className="font-semibold">Liquid IV and Pedialyte</span> use WHO ORS-style glucose-sodium co-transport for rapid rehydration in clinical and travel contexts; <span className="font-semibold">Gatorade and Powerade</span> are sports drinks adding 6–8% carbohydrate for endurance fueling. The single most important practical consideration is sodium: sodium drives plasma volume retention and triggers thirst, making it the cornerstone of effective hydration during exercise. Sweat losses vary dramatically between individuals: sweat sodium concentration ranges from 200 to 2000 mg/L; sweat rate from 0.5 to 2+ L/hour. The product of these two variables determines personal hourly sodium loss — a 10-fold range across users. &quot;Salty sweaters&quot; (often visible by white salt deposits on clothing after workouts) lose toward the upper end and have correspondingly higher replacement needs. The most consequential clinical concern is <span className="font-semibold">exercise-associated hyponatremia (EAH)</span> — dangerously low blood sodium during prolonged exercise caused by drinking large volumes of plain water without sodium replacement. Hew-Butler 2015 consensus documented EAH causes weakness, confusion, seizures, and in severe cases death from cerebral edema. The Hew-Butler &quot;drink to thirst&quot; guidance — rather than mandated volumes — is the foundational prevention principle. The honest evidence-tier summary: Strong evidence for electrolyte supplementation during sustained endurance exercise (60+ minutes), in hot conditions, and for EAH prevention; modest evidence for muscle cramp prevention (Schwellnus 2009 documents cramps are more strongly associated with neuromuscular fatigue than electrolyte status alone); modest support for daily low-carb/keto sodium intake; minimal evidence for routine sedentary daily use where dietary sodium intake is typically adequate.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -599,10 +599,10 @@ export default function ElectrolytePowdersPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 500–1000 mg sodium per hour during sustained sweat-producing exercise; potassium 200–400 mg/serving; magnesium 50–150 mg/serving. Salty sweaters or heavy-heat contexts: 1000–1500+ mg sodium per hour. Drink to thirst rather than mandated volumes. LMNT-style high-sodium for endurance/heat/salty sweaters/low-carb; balanced lower-sodium (Nuun, Skratch) for moderate use.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 500–1000 mg sodium per hour during sustained sweat-producing exercise; potassium 200–400 mg/serving; magnesium 50–150 mg/serving. Salty sweaters or heavy-heat contexts: 1000–1500+ mg sodium per hour. Drink to thirst rather than mandated volumes. LMNT-style high-sodium for endurance/heat/salty sweaters/low-carb; balanced lower-sodium (Nuun, Skratch) for moderate use.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Hypertension and chronic high-sodium intake (use during exercise, avoid daily sedentary high-sodium use); exercise-associated hyponatremia from overdrinking plain water; kidney disease coordination (electrolyte handling impaired); high-magnesium products can cause loose stools; ACE inhibitor / potassium-sparing diuretic interactions with potassium content; high-sugar sports drinks unnecessary for general hydration use.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Hypertension and chronic high-sodium intake (use during exercise, avoid daily sedentary high-sodium use); exercise-associated hyponatremia from overdrinking plain water; kidney disease coordination (electrolyte handling impaired); high-magnesium products can cause loose stools; ACE inhibitor / potassium-sparing diuretic interactions with potassium content; high-sugar sports drinks unnecessary for general hydration use.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=electrolyte+powder+lmnt+nuun+skratch&tag=profpeptide-20" label="Electrolyte Powders" />
         </div>
@@ -613,7 +613,7 @@ export default function ElectrolytePowdersPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -642,7 +642,7 @@ export default function ElectrolytePowdersPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
           <Link href="/supplements/creatine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine</Link>

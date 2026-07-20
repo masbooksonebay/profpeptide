@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-10">
           <div className="col-span-2 md:col-span-1">
-            <p className="font-bold text-[#1e2d3d] dark:text-slate-100 text-base mb-2">Prof. Peptide</p>
+            <p className="font-bold text-[#16181B] dark:text-slate-100 text-base mb-2">Prof. Peptide</p>
             <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
               Independent peptide and supplement research platform.
             </p>
@@ -63,7 +63,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-200 dark:border-slate-700 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="border-t border-[#D9DEE4] dark:border-slate-700 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-xs text-gray-400 dark:text-slate-500">
             <p>&copy; {new Date().getFullYear()} Strength Cycle Studios, LLC. All rights reserved.</p>
           </div>

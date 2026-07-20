@@ -41,11 +41,11 @@ export default function CreatineVsBetaAlaninePage() {
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Creatine vs Beta-Alanine &mdash; Performance Supplement Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Creatine vs Beta-Alanine &mdash; Performance Supplement Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine</Link> and <Link href="/supplements/beta-alanine" className="text-[#3A759F] hover:underline">Beta-Alanine</Link> are two of the most evidence-backed performance supplements available. They&apos;re often compared but work through completely different mechanisms &mdash; making them complementary rather than interchangeable. Creatine is best for explosive strength. Beta-alanine is best for sustained high-intensity endurance lasting 1&ndash;4 minutes.</p>
 
       <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why these two address completely different muscle bottlenecks</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Why these two address completely different muscle bottlenecks</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Creatine and beta-alanine are the two performance supplements with the most research evidence &mdash; but they&apos;re addressing completely different limits in muscle performance.
         </p>
@@ -72,7 +72,7 @@ export default function CreatineVsBetaAlaninePage() {
           <tbody>
             {rows.map(([label, a, b], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-                <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+                <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
               </tr>
@@ -82,37 +82,37 @@ export default function CreatineVsBetaAlaninePage() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which one is right for you?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Which one is right for you?</h2>
         <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           These supplements aren&apos;t competitors. Match them to the metabolic demand of your sport &mdash; and consider taking both, since the benefits stack additively.
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Strength training, powerlifting, explosive sports</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Strength training, powerlifting, explosive sports</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Creatine is the priority. Decades of RCT data confirm ~5&ndash;10% increases in 1RM, faster sprint times, and meaningful gains in lean muscle mass. The benefits are most visible in efforts lasting under 10 seconds &mdash; heavy lifts, sprints, jumps. Standard dose: 3&ndash;5g daily, no loading needed.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Endurance, mid-distance cardio, repeated high-intensity intervals</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Endurance, mid-distance cardio, repeated high-intensity intervals</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Beta-alanine becomes more relevant. Sports lasting 1&ndash;4 minutes (rowing, swimming sprints, CrossFit, soccer) benefit most. The carnosine elevation extends muscle&apos;s ability to buffer lactic acid. Standard dose: 2&ndash;5g daily, split into smaller doses to minimize tingling. Carnosine levels peak after 4&ndash;10 weeks of consistent dosing.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Mixed sports (most athletes)</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Mixed sports (most athletes)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Take both. The research consistently supports combined use producing additive performance benefits without interaction concerns. Most resistance-trained athletes do better with both than with either alone. Stack costs ~$30&ndash;50/month combined.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Aging adults focused on muscle and brain health</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Aging adults focused on muscle and brain health</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Creatine is the priority. Beyond the performance benefits, creatine has growing research support for brain health, cognitive function in older adults, and prevention of muscle loss with aging (sarcopenia). Beta-alanine has less aging-population research but is also safe and reasonable.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Vegetarians or vegans</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Vegetarians or vegans</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Creatine is especially valuable. Plant-based diets contain essentially zero dietary creatine (it&apos;s only in animal flesh). Vegetarians often start with significantly lower baseline muscle creatine stores and see proportionally larger gains from supplementation. Beta-alanine is also useful but the deficit is less dramatic.
             </p>
@@ -121,16 +121,16 @@ export default function CreatineVsBetaAlaninePage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300">These supplements are not competitors &mdash; they address different metabolic bottlenecks. Creatine handles the ATP side (explosive power), Beta-Alanine handles the acid buffering side (endurance and repeated efforts). Combined use is well-supported by research and makes sense for most athletes. If you can only pick one: choose creatine for strength and power sports, beta-alanine for endurance and mixed sports.</p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i}>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
             </div>
           ))}

@@ -44,18 +44,18 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
         </Link>
 
         <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">May 21, 2026 &middot; Last updated: May 21, 2026</p>
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-6">
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-6">
           Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial
         </h1>
 
         <div className="space-y-6 text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">TL;DR</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">TL;DR</h2>
           <p>
             Eli Lilly announced positive topline results from TRIUMPH-1, the pivotal Phase 3 trial of{" "}
             <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>, an investigational first-in-class triple hormone receptor agonist. At 80 weeks, the 12 mg dose produced average weight loss of 28.3% (70.3 lbs). In an extension among participants with BMI &ge;35, the same dose produced 30.3% average weight loss (85 lbs) at 104 weeks &mdash; a result Lilly compared to bariatric surgery outcomes. Analysts now project a 2027 FDA approval decision.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What is retatrutide?</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What is retatrutide?</h2>
           <p>
             Retatrutide (LY3437943) is a first-in-class triple hormone receptor agonist targeting GIP, GLP-1, and glucagon receptors. Unlike single-agonist drugs like{" "}
             <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
@@ -64,12 +64,12 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
             (GIP + GLP-1), retatrutide&rsquo;s third receptor target &mdash; glucagon &mdash; drives additional fat metabolism and energy expenditure on top of appetite suppression and improved glucose handling.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">TRIUMPH-1 study design</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">TRIUMPH-1 study design</h2>
           <p>
             TRIUMPH-1 enrolled 2,339 adults with obesity (BMI &ge;30) or overweight (BMI &ge;27) plus at least one weight-related comorbidity. Participants without diabetes received once-weekly injections of retatrutide at 4 mg, 9 mg, or 12 mg, or placebo. The primary phase ran 80 weeks. A pre-specified blinded extension continued select participants with baseline BMI &ge;35 through 104 weeks.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">80-week primary results</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">80-week primary results</h2>
           <p>Mean weight loss versus baseline:</p>
           <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-slate-300">
             <li><span className="font-semibold">12 mg dose:</span> 28.3% (70.3 lbs)</li>
@@ -81,17 +81,17 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
             In the 12 mg group, 45.3% of participants lost at least 30% of their body weight &mdash; a threshold long associated with bariatric surgery rather than pharmaceutical intervention. Additionally, 65.3% of participants in the 12 mg group reached a BMI below 30, dropping under the clinical obesity threshold by week 80. Among participants who started with class 3 obesity (BMI &ge;40), 37.5% reached a BMI below 30 by the end of the primary phase.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">104-week extension results</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">104-week extension results</h2>
           <p>
             The pre-specified extension continued participants with baseline BMI &ge;35 on the 12 mg dose through week 104. Average weight loss climbed to 30.3% (85.0 lbs). The curve had not yet plateaued at study end, suggesting additional weight loss would have continued with longer follow-up.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">How retatrutide compares to current GLP-1 leaders</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">How retatrutide compares to current GLP-1 leaders</h2>
           <p>
             In benchmark Phase 3 trials, semaglutide (marketed as Wegovy and Ozempic) produced approximately 15-17% weight loss over comparable durations, and tirzepatide (marketed as Zepbound and Mounjaro) produced approximately 21-25%. Retatrutide&rsquo;s 28.3% at 80 weeks &mdash; and 30.3% at 104 weeks &mdash; positions the triple agonist as the most effective weight-loss pharmaceutical in late-stage development. BMO Capital Markets called the profile &ldquo;supremely strong&rdquo; in a Thursday research note. Truist Securities described the numbers as &ldquo;a new benchmark for anti-obesity medications.&rdquo;
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Cardiometabolic benefits beyond weight loss</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Cardiometabolic benefits beyond weight loss</h2>
           <p>
             TRIUMPH-1 reported significant improvements from baseline across multiple cardiovascular risk markers in retatrutide-treated participants:
           </p>
@@ -106,7 +106,7 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
             These secondary endpoints suggest retatrutide&rsquo;s benefits extend beyond body weight to broader cardiometabolic health &mdash; consistent with mechanism-based expectations from the triple-agonist receptor profile.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Safety and tolerability</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Safety and tolerability</h2>
           <p>
             The safety profile mirrored earlier-phase data. Gastrointestinal events (nausea, vomiting, diarrhea) were the most common adverse events and more frequent than placebo. Some sensory and urinary events also occurred more frequently than placebo.
           </p>
@@ -121,7 +121,7 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
             Notably, the 4 mg dose &mdash; reached with only a single dose escalation step &mdash; achieved 19.0% weight loss with discontinuation rates comparable to placebo. This likely positions 4 mg as the entry-level option for patients prioritizing tolerability over maximum efficacy.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What&rsquo;s next</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What&rsquo;s next</h2>
           <p>
             Lilly has seven additional Phase 3 readouts expected through 2026, covering retatrutide across obesity, type 2 diabetes, and osteoarthritis populations. TRIUMPH-4 reported in December 2025, showing 28.7% weight loss plus substantial knee osteoarthritis pain relief in patients with both conditions.
           </p>
@@ -129,7 +129,7 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
             Analysts project an FDA approval decision in 2027, with retatrutide expected to launch as Lilly&rsquo;s flagship next-generation obesity therapy. Full TRIUMPH-1 results will be presented at a future medical conference and published in a peer-reviewed journal.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Implications for the research peptide community</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Implications for the research peptide community</h2>
           <p>
             Retatrutide remains an investigational compound &mdash; not approved for human therapeutic use anywhere in the world as of this writing. Within the research peptide community, retatrutide has been available from third-party vendors for several years preceding Lilly&rsquo;s anticipated commercial launch. The TRIUMPH-1 data formally validates the triple-agonist mechanism as a meaningful step beyond single and dual GLP-1 receptor agonism, and confirms the compound&rsquo;s place alongside{" "}
             <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>{" "}
@@ -138,7 +138,7 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
             as one of the three pivotal compounds in this rapidly evolving therapeutic space.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Sources</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Sources</h2>
           <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-slate-300">
             <li>
               <a
@@ -180,7 +180,7 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
         </div>
 
         <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Explore More</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-3">Explore More</h2>
           <div className="flex flex-wrap gap-3">
             <Link href="/peptides/retatrutide" className="btn-primary text-sm">Retatrutide Profile</Link>
             <Link href="/coupons" className="btn-outline text-sm">Browse Discount Codes</Link>

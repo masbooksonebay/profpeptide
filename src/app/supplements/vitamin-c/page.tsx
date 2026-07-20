@@ -182,11 +182,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -228,7 +228,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Vitamin C&apos;s collagen-cofactor role means it pairs naturally with tissue-healing peptides via the connective-tissue substrate pathway.{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
@@ -238,7 +238,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Iron supplements — take 100–250 mg vitamin C with iron for the 2–3 fold absorption enhancement (Lynch 1980). Particularly relevant for iron deficiency anemia treatment.
@@ -281,7 +281,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Dietary vitamin C from fruits and vegetables.</span> Citrus, bell peppers, kiwi, strawberries, broccoli. Supplementation is additive to dietary intake, not a substitute.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pair with iron-rich plant meals.</span> Beans, lentils, spinach, fortified grains — vitamin C with these meals dramatically improves iron uptake.</li>
@@ -303,7 +303,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">GI upset (loose stools, diarrhea, nausea) at high doses — typically above 2 g/day single dose or 4 g/day total. The tolerable upper limit from supplements is 2000 mg/day.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild stomach acidity with ascorbic acid form — sodium ascorbate (buffered) resolves this in sensitive users.</li>
@@ -311,7 +311,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Kidney stone risk in predisposed users.</span> Very high doses (3+ g/day) may increase oxalate stone formation in users with history of calcium oxalate kidney stones. Coordinate with nephrology if stone history.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hemochromatosis (iron overload).</span> Vitamin C&apos;s iron-absorption enhancement is harmful in users with hereditary hemochromatosis. Avoid or coordinate with hematology.</li>
@@ -321,7 +321,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Chemotherapy regimens.</span> Some chemo agents (bortezomib, methotrexate) have theoretical interactions with high-dose vitamin C — coordinate with oncology. Routine supplementation at typical doses is generally compatible.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Iron supplements and iron-containing meals.</span> Beneficial interaction — vitamin C dramatically enhances non-heme iron absorption.</li>
@@ -404,7 +404,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -473,7 +473,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -569,7 +569,7 @@ export default function VitaminCPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Vitamin C</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Vitamin C</h1>
         <span className="tag">Recovery &amp; Tissue Repair</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -577,24 +577,24 @@ export default function VitaminCPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Ascorbic acid, ascorbate, L-ascorbic acid, sodium ascorbate (buffered form); related variant page:{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin C for skin</Link>{" "}(cosmetic and skin-aging applications)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Ascorbic acid, ascorbate, L-ascorbic acid, sodium ascorbate (buffered form); related variant page:{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin C for skin</Link>{" "}(cosmetic and skin-aging applications)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Essential water-soluble vitamin / enzyme cofactor (collagen hydroxylation, neurotransmitter synthesis) / antioxidant / immune cell support / non-heme iron absorption enhancer
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Essential water-soluble vitamin / enzyme cofactor (collagen hydroxylation, neurotransmitter synthesis) / antioxidant / immune cell support / non-heme iron absorption enhancer
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Multi-tier breakdown. <span className="font-semibold">Deficiency prevention</span>: Strong (foundational essential vitamin; RDA-based intake prevents scurvy). <span className="font-semibold">Cold duration in regular supplementation</span>: Moderate (Hemilä 2013 Cochrane — ~8% adult, ~14% child duration reduction at 200+ mg/day). <span className="font-semibold">General-population cold prevention</span>: Negative. <span className="font-semibold">Extreme physical stress cold prevention</span>: Moderate (~50% reduction in marathon runners, soldiers, arctic personnel). <span className="font-semibold">Iron absorption enhancement</span>: Strong (Lynch 1980 — 2–3x non-heme iron uptake with 100 mg). <span className="font-semibold">High-dose IV (oncology, sepsis)</span>: Mixed, specialized. <span className="font-semibold">Cardiovascular hard outcomes</span>: Weak. Cosmetic / skin-aging applications detailed separately on the{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin-c-skin variant</Link>.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Multi-tier breakdown. <span className="font-semibold">Deficiency prevention</span>: Strong (foundational essential vitamin; RDA-based intake prevents scurvy). <span className="font-semibold">Cold duration in regular supplementation</span>: Moderate (Hemilä 2013 Cochrane — ~8% adult, ~14% child duration reduction at 200+ mg/day). <span className="font-semibold">General-population cold prevention</span>: Negative. <span className="font-semibold">Extreme physical stress cold prevention</span>: Moderate (~50% reduction in marathon runners, soldiers, arctic personnel). <span className="font-semibold">Iron absorption enhancement</span>: Strong (Lynch 1980 — 2–3x non-heme iron uptake with 100 mg). <span className="font-semibold">High-dose IV (oncology, sepsis)</span>: Mixed, specialized. <span className="font-semibold">Cardiovascular hard outcomes</span>: Weak. Cosmetic / skin-aging applications detailed separately on the{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin-c-skin variant</Link>.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is vitamin C?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is vitamin C?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Vitamin C (ascorbic acid) is an essential water-soluble vitamin that humans — unlike most other mammals — cannot synthesize endogenously due to a non-functional GULO gene. Dietary or supplemental intake is therefore required to prevent deficiency (scurvy). Vitamin C&apos;s biological roles are multi-layered: it&apos;s the irreplaceable cofactor for prolyl and lysyl hydroxylases (collagen hydroxylation — the mechanism behind scurvy when deficient), a primary water-soluble antioxidant donating electrons to neutralize reactive oxygen species, an immune cell support molecule that accumulates in lymphocytes at 50–100x plasma concentration, and the most important enhancer of non-heme iron absorption (converting ferric to ferrous iron in the gut). This page covers the foundational essential-vitamin role — deficiency prevention, cold support (Hemilä 2013 Cochrane), iron absorption, antioxidant defense, and the specialized high-dose IV protocols. <span className="font-semibold">Cosmetic and skin-aging applications</span> — topical vitamin C serums, photoaging reversal, the Shaw 2017 collagen synthesis trial in detail, hyperpigmentation, and skin-stack pairings — are covered separately on the{" "}<Link href="/supplements/vitamin-c-skin" className="text-[#3A759F] hover:underline">vitamin C for skin variant page</Link>. The honest framing for the foundational essential-vitamin role: RDA-level intake (75–90 mg/day non-smokers, 110–125 mg/day smokers) prevents scurvy. Regular 200–1000 mg/day modestly reduces cold duration (Hemilä Cochrane: ~8% adults, ~14% children) but does NOT prevent colds in the general population — except in extreme physical stress subpopulations (marathon runners, soldiers, arctic personnel) where ~50% incidence reductions are documented. 100 mg taken with iron-containing meals dramatically improves non-heme iron absorption (Lynch 1980 — 2–3 fold). Padayatty 2004 documents that oral plasma concentrations are tightly capped (~250 micromolar) due to saturable intestinal absorption and renal excretion — IV vitamin C bypasses these limits and reaches millimolar concentrations, where vitamin C has pro-oxidant effects relevant to specialized oncology and sepsis research. Practical implication: oral and IV vitamin C are pharmacokinetically distinct interventions; don&apos;t expect oral supplementation to substitute for IV protocols. Mega-doses (1000+ mg) around training may blunt mitochondrial biogenesis adaptations in competitive athletes (Paulsen 2014); modest supplementation outside training windows doesn&apos;t produce this effect.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -609,10 +609,10 @@ export default function VitaminCPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 200–500 mg/day for general health; 75–125 mg/day for RDA; 200–1000 mg/day for cold-duration support; 100–250 mg with iron-containing meals for absorption enhancement. Absorption plateaus around 200 mg single doses — split larger daily totals. Tolerable upper limit 2000 mg/day from supplements.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 200–500 mg/day for general health; 75–125 mg/day for RDA; 200–1000 mg/day for cold-duration support; 100–250 mg with iron-containing meals for absorption enhancement. Absorption plateaus around 200 mg single doses — split larger daily totals. Tolerable upper limit 2000 mg/day from supplements.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> GI upset at high doses (loose stools at 2+ g single dose); kidney stone risk in oxalate-stone-prone users at 3+ g/day; hemochromatosis contraindication (iron-absorption enhancement is harmful in iron overload); chemotherapy regimen coordination; training adaptation blunting at mega-doses around exercise (Paulsen 2014); lab test interference at very high doses.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> GI upset at high doses (loose stools at 2+ g single dose); kidney stone risk in oxalate-stone-prone users at 3+ g/day; hemochromatosis contraindication (iron-absorption enhancement is harmful in iron overload); chemotherapy regimen coordination; training adaptation blunting at mega-doses around exercise (Paulsen 2014); lab test interference at very high doses.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=vitamin+c+ascorbic+acid+pharmaceutical+grade&tag=profpeptide-20" label="Vitamin C" />
         </div>
@@ -623,7 +623,7 @@ export default function VitaminCPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -652,7 +652,7 @@ export default function VitaminCPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/vitamin-c-skin" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C for Skin</Link>
           <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>

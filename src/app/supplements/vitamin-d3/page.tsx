@@ -191,11 +191,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -237,7 +237,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Vitamin D3 is foundational micronutrient support that pairs with virtually any peptide protocol via immune and bone-health pathways. Healing peptides like{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
@@ -251,7 +251,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/magnesium" className="text-[#3A759F] hover:underline">Magnesium</Link>{" "}
@@ -289,7 +289,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sun exposure.</span> 10–30 minutes of midday sun on bare arms and legs 2–3 times per week produces meaningful endogenous vitamin D in users with lighter skin in summer at temperate latitudes. Northern latitudes, winter, darker skin pigmentation, and sun avoidance all reduce endogenous production. Sun + dietary + supplemental together optimize status.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Test, don&apos;t guess.</span> 25-OH-D blood testing is widely available ($30–100 retail or $0 with most insurance for medical indication). Individualization is much more reliable than generic dosing.</li>
@@ -312,7 +312,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No common side effects at standard supplemental doses in healthy adults.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI upset at very high doses — uncommon at typical maintenance doses.</li>
@@ -320,7 +320,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hypercalcemia at toxic doses.</span> Typically 10,000+ IU/day chronically without monitoring. Symptoms: nausea, weakness, frequent urination, kidney problems, hypercalciuria, kidney stones. Reversible with discontinuation.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sarcoidosis and granulomatous diseases.</span> These conditions can produce extra-renal 1,25-D, causing hypercalcemia at lower vitamin D intake than otherwise. Coordinate with treating team.</li>
@@ -332,7 +332,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Thiazide diuretics.</span> Reduce urinary calcium excretion; vitamin D + thiazide may cause hypercalcemia. Monitor.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Digoxin.</span> Vitamin D-induced hypercalcemia increases digoxin toxicity risk. Monitor.</li>
@@ -421,7 +421,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -490,7 +490,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -586,7 +586,7 @@ export default function VitaminD3Page() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Vitamin D3</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Vitamin D3</h1>
         <span className="tag">Recovery &amp; Tissue Repair</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -594,25 +594,25 @@ export default function VitaminD3Page() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Cholecalciferol (D3 — preferred supplemental form), ergocalciferol (D2 — less effective), 25-hydroxyvitamin D / calcidiol (storage form measured by blood tests), 1,25-dihydroxyvitamin D / calcitriol (active hormonal form), the &quot;sunshine vitamin&quot;
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Cholecalciferol (D3 — preferred supplemental form), ergocalciferol (D2 — less effective), 25-hydroxyvitamin D / calcidiol (storage form measured by blood tests), 1,25-dihydroxyvitamin D / calcitriol (active hormonal form), the &quot;sunshine vitamin&quot;
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Fat-soluble essential vitamin / hormonal nuclear receptor ligand (VDR — expressed in virtually every cell) / 200+ gene expression regulator / calcium absorption activator / immune modulator / synthesized in skin from UVB exposure
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Fat-soluble essential vitamin / hormonal nuclear receptor ligand (VDR — expressed in virtually every cell) / 200+ gene expression regulator / calcium absorption activator / immune modulator / synthesized in skin from UVB exposure
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Sub-tier breakdown (vitamin-C parent pattern). <span className="font-semibold">Strong for deficiency correction</span> (rickets/osteomalacia prevention). <span className="font-semibold">Strong for bone health WITH calcium in deficient/elderly</span> — Bolland 2018 meta documents combined D + calcium produces bone benefit in deficient elderly specifically (the cleanest endpoint). <span className="font-semibold">Modest for respiratory infection prevention</span> — Martineau 2017 BMJ meta of 25 RCTs; larger effect in baseline-deficient users. <span className="font-semibold">Moderate/contested for fall reduction</span> — USPSTF 2018 recommends AGAINST routine supplementation for fall prevention; Sanders 2010 JAMA documented annual high-bolus dosing paradoxically INCREASED falls (~15%) and fractures (~26%); older Bischoff-Ferrari meta supported moderate-dose effect. <span className="font-semibold">Negative for cancer / CV primary prevention</span> — VITAL trial (Manson 2019 NEJM) null on primary endpoints. <span className="font-semibold">Moderate for pregnancy outcomes, MS progression</span>. <span className="font-semibold">Mixed for mood, autoimmune, COVID-19</span>.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Sub-tier breakdown (vitamin-C parent pattern). <span className="font-semibold">Strong for deficiency correction</span> (rickets/osteomalacia prevention). <span className="font-semibold">Strong for bone health WITH calcium in deficient/elderly</span> — Bolland 2018 meta documents combined D + calcium produces bone benefit in deficient elderly specifically (the cleanest endpoint). <span className="font-semibold">Modest for respiratory infection prevention</span> — Martineau 2017 BMJ meta of 25 RCTs; larger effect in baseline-deficient users. <span className="font-semibold">Moderate/contested for fall reduction</span> — USPSTF 2018 recommends AGAINST routine supplementation for fall prevention; Sanders 2010 JAMA documented annual high-bolus dosing paradoxically INCREASED falls (~15%) and fractures (~26%); older Bischoff-Ferrari meta supported moderate-dose effect. <span className="font-semibold">Negative for cancer / CV primary prevention</span> — VITAL trial (Manson 2019 NEJM) null on primary endpoints. <span className="font-semibold">Moderate for pregnancy outcomes, MS progression</span>. <span className="font-semibold">Mixed for mood, autoimmune, COVID-19</span>.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is vitamin D3?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is vitamin D3?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Vitamin D3 (cholecalciferol) is a fat-soluble essential vitamin that functions more like a hormone than a traditional vitamin — it binds nuclear vitamin D receptors (VDR) expressed in virtually every cell of the body, regulating expression of 200+ genes involved in calcium metabolism, immune function, inflammation, cell growth, and cardiovascular function. It is synthesized in skin from 7-dehydrocholesterol upon UVB exposure, or obtained from diet (fatty fish, egg yolks, fortified foods) and supplementation. The activation cascade: D3 is converted in the liver to 25-hydroxyvitamin D (25-OH-D, calcidiol — the circulating storage form measured by blood tests), then in the kidneys to 1,25-dihydroxyvitamin D (1,25-D, calcitriol — the active hormonal form). Vitamin D deficiency is one of the most common nutrient deficiencies globally — affecting approximately 40% of US adults and up to 80% in some populations (northern latitudes, darker skin pigmentation, sun avoidance, indoor lifestyles, advanced age). The evidence picture is best understood through a multi-tier sub-tier breakdown that mirrors the{" "}
             <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">vitamin C parent pattern</Link>: <span className="font-semibold">Strong evidence</span> for deficiency correction (rickets/osteomalacia prevention) and bone health benefit with calcium in deficient/elderly populations — Bolland 2018 meta documented bone benefit emerges specifically with combined D + calcium in deficient elderly, making this the cleanest Strong endpoint. <span className="font-semibold">Modest evidence</span> for respiratory infection prevention — Martineau 2017 BMJ meta of 25 RCTs documented modest acute respiratory tract infection reduction, with larger effect in users baseline-deficient (25-OH-D below 25 nmol/L). <span className="font-semibold">Moderate/contested evidence</span> for fall reduction in older adults — USPSTF 2018 recommended AGAINST routine supplementation for fall prevention based on insufficient/inconsistent evidence; <span className="font-semibold">Sanders 2010 JAMA documented annual 500,000 IU high-bolus dosing paradoxically INCREASED falls (~15%) and fractures (~26%) compared to placebo</span> — this is the central nuance that reframed the older Bischoff-Ferrari fall-reduction enthusiasm. <span className="font-semibold">Negative primary endpoints for cancer and cardiovascular disease prevention</span> — the VITAL trial (Manson 2019 NEJM) randomized 25,871 adults to 2000 IU/day vitamin D3 vs placebo over 5 years and found NO significant reduction in invasive cancer, major cardiovascular events, or total mortality. Subgroup signals (cancer mortality, advanced cancer, autoimmune disease incidence) exist but the primary hypotheses weren&apos;t supported. The honest framing: observational associations between low vitamin D and multiple disease outcomes don&apos;t consistently translate to RCT supplementation benefit in already-replete populations. Supplementation in deficient users to correct deficiency has clear value; supplementation in already-replete users for primary disease prevention has weak support. Form: D3 (cholecalciferol) is approximately 87% more effective than D2 (ergocalciferol) at raising 25-OH-D — always choose D3. Magnesium is required as cofactor for vitamin D activation enzymes (deficient magnesium → impaired vitamin D response — common corrective intervention for non-responders). K2 (MK-7 form) co-supplementation has plausible mechanism (calcium routing to bone vs arteries) but outcome evidence isn&apos;t definitively established. Dosing should be individualized based on baseline 25-OH-D status — test before supplementing for accurate dose selection.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -627,10 +627,10 @@ export default function VitaminD3Page() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 1000–2000 IU/day general maintenance (Endocrine Society); 4000–10,000 IU/day for documented deficiency correction (6–12 weeks under provider guidance), then maintenance. Target 25-OH-D: 30–50 ng/mL. Form: D3 (cholecalciferol) — always preferred over D2. Take with fat-containing meal. Test 25-OH-D before starting and at 3 months for individualization.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 1000–2000 IU/day general maintenance (Endocrine Society); 4000–10,000 IU/day for documented deficiency correction (6–12 weeks under provider guidance), then maintenance. Target 25-OH-D: 30–50 ng/mL. Form: D3 (cholecalciferol) — always preferred over D2. Take with fat-containing meal. Test 25-OH-D before starting and at 3 months for individualization.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Avoid high-bolus dosing for fall prevention (Sanders 2010 paradox); don&apos;t expect cancer or CV primary prevention benefits (VITAL trial null); hypercalcemia at very high chronic doses (10,000+ IU/day without monitoring); sarcoidosis, primary hyperparathyroidism, certain lymphomas (altered vitamin D metabolism — clinician supervision); thiazide diuretic and digoxin interactions (hypercalcemia risk); ensure adequate magnesium status (cofactor for activation — common cause of non-response); obese users often need higher doses (vitamin D distributes into body fat).
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Avoid high-bolus dosing for fall prevention (Sanders 2010 paradox); don&apos;t expect cancer or CV primary prevention benefits (VITAL trial null); hypercalcemia at very high chronic doses (10,000+ IU/day without monitoring); sarcoidosis, primary hyperparathyroidism, certain lymphomas (altered vitamin D metabolism — clinician supervision); thiazide diuretic and digoxin interactions (hypercalcemia risk); ensure adequate magnesium status (cofactor for activation — common cause of non-response); obese users often need higher doses (vitamin D distributes into body fat).
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=vitamin+d3+cholecalciferol+softgel&tag=profpeptide-20" label="Vitamin D3" />
         </div>
@@ -641,7 +641,7 @@ export default function VitaminD3Page() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -670,7 +670,7 @@ export default function VitaminD3Page() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/magnesium" className="text-sm font-medium text-[#3A759F] hover:underline">Magnesium</Link>
           <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>

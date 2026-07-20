@@ -166,7 +166,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -223,7 +223,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -250,7 +250,7 @@ export default function PinealonPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Pinealon</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Pinealon</h1>
         <span className="tag">Bioregulators</span>
         <span className="tag">Research Use Only</span>
       </div>
@@ -259,24 +259,24 @@ export default function PinealonPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> EDR peptide; Glu-Asp-Arg; EDR tripeptide
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> EDR peptide; Glu-Asp-Arg; EDR tripeptide
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Khavinson short-peptide bioregulator (synthetic tripeptide)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Khavinson short-peptide bioregulator (synthetic tripeptide)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Molecular Profile:</span> Sequence Glu-Asp-Arg (EDR) &middot; molecular weight 418.4 Da &middot; CAS 175175-23-2
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> Sequence Glu-Asp-Arg (EDR) &middot; molecular weight 418.4 Da &middot; CAS 175175-23-2
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Form &amp; Origin:</span> Lyophilized powder; originally derived from the brain-cortex polypeptide complex Cortexin
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Form &amp; Origin:</span> Lyophilized powder; originally derived from the brain-cortex polypeptide complex Cortexin
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Research use only (RUO); not approved by the FDA/EMA for human use; not a dietary supplement or drug
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research use only (RUO); not approved by the FDA/EMA for human use; not a dietary supplement or drug
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Pinealon?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Pinealon?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Pinealon is a synthetic tripeptide (Glu-Asp-Arg, EDR) developed within the Khavinson short-peptide bioregulator program and originally derived from the brain-cortex polypeptide complex Cortexin. Research interest centers on the central nervous system &mdash; neuroprotection under oxidative and hypoxic stress, support of neuronal viability, and age-related cognitive decline. Its proposed mechanism is unusual: rather than acting on a cell-surface receptor, EDR is reported to enter the cell and nucleus and interact directly with DNA to modulate gene expression. The evidence base is preclinical (cell culture and rodent) and comes predominantly from Khavinson-affiliated Russian laboratories; there are no human randomized controlled trials. It sits in the same short-peptide family as{" "}
@@ -284,7 +284,7 @@ export default function PinealonPage() {
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -295,10 +295,10 @@ export default function PinealonPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> No validated research-dose consensus exists. Pinealon is supplied for research use only as a lyophilized powder. The original commercial Khavinson oral preparation is approximately 10 mg per capsule; injectable research use has no standardized protocol. Prof. Peptide does not publish an injectable dosing schedule because none has been validated in controlled human research.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> No validated research-dose consensus exists. Pinealon is supplied for research use only as a lyophilized powder. The original commercial Khavinson oral preparation is approximately 10 mg per capsule; injectable research use has no standardized protocol. Prof. Peptide does not publish an injectable dosing schedule because none has been validated in controlled human research.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Pinealon is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Pinealon is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
             <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
               Peptides.gg discount code (PROF15) &rarr;
             </Link>{" "}
@@ -312,7 +312,7 @@ export default function PinealonPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -350,7 +350,7 @@ export default function PinealonPage() {
 
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         {/* TODO: add sibling Khavinson bioregulator links (Cardiogen, Cortagen, Thymogen) as those profiles go live. */}
         <Link href="/peptides/epitalon" className="text-sm font-medium text-[#3A759F] hover:underline">Epitalon</Link>

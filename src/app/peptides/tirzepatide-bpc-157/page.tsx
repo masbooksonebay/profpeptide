@@ -170,7 +170,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Both peptides are administered by subcutaneous injection but on entirely separate schedules from separate vials. Combining them in one vial is not appropriate due to incompatible dosing frequencies and half-lives. Tirzepatide is once-weekly; BPC-157 is daily.
         </p>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           Standard research protocol:
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -188,7 +188,7 @@ const sections = [
           </li>
         </ol>
         <div className="pt-4">
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Reconstitution notes (lyophilized vials)
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -262,7 +262,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Common (most users &mdash; primarily from tirzepatide)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -284,7 +284,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Less common
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -303,7 +303,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Serious (rare or theoretical)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -411,7 +411,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -474,7 +474,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -501,7 +501,7 @@ export default function TirzepatideBpc157Page() {
         </Link>
 
         <div className="flex flex-wrap items-center gap-3 mb-2">
-          <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Tirzepatide + BPC-157</h1>
+          <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Tirzepatide + BPC-157</h1>
           <span className="tag">Metabolic &amp; GI Protection</span>
           <span className="tag">Research-Grade</span>
           <span className="tag">Combination Blend</span>
@@ -511,18 +511,18 @@ export default function TirzepatideBpc157Page() {
         </p>
         <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Tirzepatide/BPC-157 Blend, Twincretin + BPC Stack, GIP/GLP-1 + BPC Protocol
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Tirzepatide/BPC-157 Blend, Twincretin + BPC Stack, GIP/GLP-1 + BPC Protocol
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Metabolic &amp; GI Protection Blend (2-component)
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Metabolic &amp; GI Protection Blend (2-component)
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Research-grade only &mdash; Tirzepatide (research-grade, not FDA-approved product); BPC-157 (FDA Category 2 bulk drug substance, not approved injectable)
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research-grade only &mdash; Tirzepatide (research-grade, not FDA-approved product); BPC-157 (FDA Category 2 bulk drug substance, not approved injectable)
           </p>
         </div>
 
         <div id="overview" className="scroll-mt-20">
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is the Tirzepatide + BPC-157 blend?</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is the Tirzepatide + BPC-157 blend?</h2>
           <div className="space-y-4">
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Tirzepatide + BPC-157 is a community-derived research-peptide blend pairing{" "}
@@ -533,7 +533,7 @@ export default function TirzepatideBpc157Page() {
               <Link href="/peptides/semaglutide-bpc-157" className="text-[#3A759F] hover:underline">Semaglutide + BPC-157</Link>.
             </p>
             <div>
-              <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+              <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
                 Reported benefits:
               </p>
               <ul className="list-disc list-inside space-y-1">
@@ -546,10 +546,10 @@ export default function TirzepatideBpc157Page() {
               </ul>
             </div>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Tirzepatide 2.5 mg subcutaneously once weekly (titrating every 4 weeks: 2.5 &rarr; 5 &rarr; 7.5 &rarr; 10 &rarr; 12.5 &rarr; 15 mg) from a separate vial + BPC-157 250&ndash;500 mcg subcutaneously once daily from a separate vial. Never pre-blended.
+              <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> Tirzepatide 2.5 mg subcutaneously once weekly (titrating every 4 weeks: 2.5 &rarr; 5 &rarr; 7.5 &rarr; 10 &rarr; 12.5 &rarr; 15 mg) from a separate vial + BPC-157 250&ndash;500 mcg subcutaneously once daily from a separate vial. Never pre-blended.
             </p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sold as two separate vials by research peptide vendors. Neither component is FDA-approved in research-grade form. See{" "}
+              <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sold as two separate vials by research peptide vendors. Neither component is FDA-approved in research-grade form. See{" "}
               <Link href="/coupons" className="text-[#3A759F] hover:underline">
                 Verified Discount Codes &rarr;
               </Link>{" "}
@@ -563,7 +563,7 @@ export default function TirzepatideBpc157Page() {
         <div className="space-y-8">
           {sections.map((s) => (
             <div key={s.id} id={s.id} className="scroll-mt-20">
-              <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+              <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
                 {s.title}
               </h2>
               {s.intro && (
@@ -600,7 +600,7 @@ export default function TirzepatideBpc157Page() {
         </div>
 
         <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
           <div className="flex flex-wrap gap-4">
             <Link href="/peptides/tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Tirzepatide</Link>
             <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
@@ -610,7 +610,7 @@ export default function TirzepatideBpc157Page() {
         </div>
 
         <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Blends</h2>
           <div className="flex flex-wrap gap-4">
             <Link href="/peptides/semaglutide-bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide + BPC-157</Link>
             <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>

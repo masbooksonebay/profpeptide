@@ -62,7 +62,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="min-h-screen flex flex-col bg-[#F1F5F9] dark:bg-[#0f172a] text-gray-800 dark:text-slate-200">
+      <body className="min-h-screen flex flex-col bg-[#F4F6F8] dark:bg-[#0f172a] text-gray-800 dark:text-slate-200">
         <ThemeProvider>
           <Header />
           <main className="flex-1">{children}</main>

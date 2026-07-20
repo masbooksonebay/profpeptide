@@ -194,7 +194,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -251,7 +251,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -278,7 +278,7 @@ export default function ThymogenPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Thymogen</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Thymogen</h1>
         <span className="tag">Bioregulators</span>
         <span className="tag">Research Use Only</span>
       </div>
@@ -287,24 +287,24 @@ export default function ThymogenPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Oglufanide (INN Oglufanidum), IM-862, Thymagen, EW dipeptide, L-Glu-L-Trp
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Oglufanide (INN Oglufanidum), IM-862, Thymagen, EW dipeptide, L-Glu-L-Trp
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Khavinson short-peptide bioregulator (synthetic thymic dipeptide immunomodulator)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Khavinson short-peptide bioregulator (synthetic thymic dipeptide immunomodulator)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Molecular Profile:</span> L-Glu-L-Trp &middot; C16H19N3O5 &middot; 333.34 g/mol (free acid) &middot; CAS 38101-59-6 (free acid; the registered drug uses the monosodium salt, CAS 122933-59-9)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> L-Glu-L-Trp &middot; C16H19N3O5 &middot; 333.34 g/mol (free acid) &middot; CAS 38101-59-6 (free acid; the registered drug uses the monosodium salt, CAS 122933-59-9)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Form &amp; Origin:</span> Lyophilized; synthetic; identified as the principal active component of Thymalin (thymic extract), isolated via reversed-phase HPLC
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Form &amp; Origin:</span> Lyophilized; synthetic; identified as the principal active component of Thymalin (thymic extract), isolated via reversed-phase HPLC
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Research Use Only in the US; not FDA- or EMA-approved; registered as a medicine in the Russian Federation in three forms (intramuscular solution 100 µg/mL, metered nasal spray 25 µg/dose, 0.05% topical cream)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research Use Only in the US; not FDA- or EMA-approved; registered as a medicine in the Russian Federation in three forms (intramuscular solution 100 µg/mL, metered nasal spray 25 µg/dose, 0.05% topical cream)
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Thymogen?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Thymogen?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Thymogen is a synthetic thymic dipeptide (L-Glu-L-Trp, the &ldquo;EW&rdquo; dipeptide) developed within the Khavinson short-peptide bioregulator program. It was identified as the principal active component of Thymalin &mdash; a thymic extract &mdash; and isolated via reversed-phase HPLC. Functionally it is an immunomodulator that normalizes immune activity rather than purely stimulating it: it drives maturation of pre-T cells into mature T-lymphocytes, is reported to normalize the CD4/CD8 ratio, raises intracellular cAMP in T-lymphocytes, and enhances neutrophil chemotaxis and phagocytosis. Under the names IM-862 and Oglufanide it was also studied as a VEGF-inhibiting antiangiogenic agent in cancer. A structural curiosity defines its identity: its mirror-image enantiomer, D-Glu-D-Trp (Thymodepressin), is immunosuppressive &mdash; opposite activity from the same atoms. The evidence base is mixed &mdash; preclinical immunology plus oncology trials whose most rigorous controlled test was negative &mdash; and in the US it is research-use-only. It sits in the same short-peptide family as{" "}
@@ -314,7 +314,7 @@ export default function ThymogenPage() {
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -325,10 +325,10 @@ export default function ThymogenPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> No FDA-approved dose exists. Thymogen is registered as a medicine only in the Russian Federation, in three forms: an intramuscular solution (100 µg/mL), a metered nasal spray (25 µg/dose), and a 0.05% topical cream. Published trials used intranasal regimens (e.g., 5 mg every other day in the negative AIDS-KS Phase III; 20 mg three times daily in a renal-cell-carcinoma Phase II). Prof. Peptide does not publish an injectable dosing schedule because none has been validated in controlled research.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> No FDA-approved dose exists. Thymogen is registered as a medicine only in the Russian Federation, in three forms: an intramuscular solution (100 µg/mL), a metered nasal spray (25 µg/dose), and a 0.05% topical cream. Published trials used intranasal regimens (e.g., 5 mg every other day in the negative AIDS-KS Phase III; 20 mg three times daily in a renal-cell-carcinoma Phase II). Prof. Peptide does not publish an injectable dosing schedule because none has been validated in controlled research.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Thymogen is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Thymogen is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
             <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
               Peptides.gg discount code (PROF15) &rarr;
             </Link>{" "}
@@ -342,7 +342,7 @@ export default function ThymogenPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -380,7 +380,7 @@ export default function ThymogenPage() {
 
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         {/* TODO: add sibling Khavinson bioregulator links (Cardiogen, Cortagen) as those profiles go live. */}
         <Link href="/peptides/thymosin-alpha-1" className="text-sm font-medium text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>

@@ -154,11 +154,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -200,7 +200,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
@@ -225,7 +225,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Adequate protein intake.</span> Hair and nails are protein structures. No supplement can compensate for low total protein intake; biotin works on top of dietary protein adequacy.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Address underlying causes.</span> Most cosmetic hair/nail concerns have non-vitamin causes — thyroid dysfunction, iron deficiency, hormonal changes, medication side effects. Biotin can&apos;t fix what it didn&apos;t cause.</li>
@@ -244,7 +244,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No common side effects at typical doses — biotin is one of the better-tolerated B vitamins.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Occasional acne flare at very high doses (10 mg+) — likely via competition with pantothenic acid for absorption. Resolves on dose reduction.</li>
@@ -252,14 +252,14 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Lab-test interference (clinically critical).</span> High-dose biotin (5 mg+/day) interferes with streptavidin-biotin immunoassays — affects thyroid panels (TSH, free T3/T4), cardiac troponin, vitamin D, parathyroid hormone, cortisol, and many other tests. FDA issued a safety communication in 2017. Stop biotin 3–7 days before any scheduled labs and ALWAYS disclose to ER staff if you take biotin.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No documented serious toxicity at supplemental doses across the human literature — biotin is water-soluble and well-excreted.</li>
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anticonvulsants (phenytoin, valproic acid, carbamazepine).</span> These medications deplete biotin over chronic use; supplementation may be clinically appropriate. Coordinate with prescribing clinician.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Raw egg whites — contain avidin, a biotin-binding protein that prevents absorption. Routine consumption of raw eggs can produce biotin deficiency. Cooked eggs denature avidin; not a concern.</li>
@@ -332,7 +332,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -401,7 +401,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -529,7 +529,7 @@ export default function BiotinPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Biotin</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Biotin</h1>
         <span className="tag">Skin Health &amp; Anti-Aging</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -537,24 +537,24 @@ export default function BiotinPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Vitamin B7, vitamin H, coenzyme R, D-biotin
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Vitamin B7, vitamin H, coenzyme R, D-biotin
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Water-soluble B vitamin / carboxylase enzyme coenzyme
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Water-soluble B vitamin / carboxylase enzyme coenzyme
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Mixed — Strong for nail brittleness (Colombo 1990 + replications) and for deficiency-state hair/skin correction; Weak for cosmetic hair growth in healthy adults (Walth 2018 meta-analysis null; Patel 2017 review same); important clinical effect on lab-test interference (FDA 2017 safety communication, Trambas 2018) that affects how biotin should be used regardless of cosmetic intent
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Mixed — Strong for nail brittleness (Colombo 1990 + replications) and for deficiency-state hair/skin correction; Weak for cosmetic hair growth in healthy adults (Walth 2018 meta-analysis null; Patel 2017 review same); important clinical effect on lab-test interference (FDA 2017 safety communication, Trambas 2018) that affects how biotin should be used regardless of cosmetic intent
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is biotin?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is biotin?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Biotin (vitamin B7) is a water-soluble B vitamin that functions as an essential coenzyme for five carboxylase enzymes involved in fatty acid synthesis, amino acid metabolism, and gluconeogenesis. Its supplement profile is unusual: the deficiency-state evidence is rock-solid (severe biotin deficiency causes hair loss, brittle nails, and skin rash; supplementation reliably corrects these), but the cosmetic supplementation evidence in healthy adults is much weaker than the marketing claims. The cleanest cosmetic RCT is Colombo 1990, which documented improved nail plate thickness with 2.5 mg/day. The Walth 2018 meta-analysis and Patel 2017 review both conclude there is insufficient evidence for biotin in hair growth in replete (non-deficient) adults. The most important practical point about biotin isn&apos;t toxicity — it&apos;s the lab-test interference. The FDA issued a safety communication in 2017 noting that high-dose biotin systematically interferes with immunoassay-based blood tests including thyroid panels and cardiac troponin, with documented clinical errors including missed heart attacks. Biotin is a vitamin cofactor; the cosmetic supplementation case is real for nails and modest for hair only when underlying deficiency exists.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -568,10 +568,10 @@ export default function BiotinPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 2.5–5 mg/day (2,500–5,000 mcg) — the evidence-supported cosmetic range. Common commercial products at 10,000 mcg/day are 2–4× the RCT-validated dose and offer no demonstrated additional benefit. FDA Adequate Intake for adults is 30–35 mcg/day from food; most adults reach this from diet alone.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 2.5–5 mg/day (2,500–5,000 mcg) — the evidence-supported cosmetic range. Common commercial products at 10,000 mcg/day are 2–4× the RCT-validated dose and offer no demonstrated additional benefit. FDA Adequate Intake for adults is 30–35 mcg/day from food; most adults reach this from diet alone.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Critical lab-test note:</span> Stop biotin 3–7 days before any scheduled blood test (especially thyroid panels and cardiac troponin). Always disclose biotin use to ER staff if you take it. The FDA issued a 2017 safety communication on this — see the Side Effects section below.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Critical lab-test note:</span> Stop biotin 3–7 days before any scheduled blood test (especially thyroid panels and cardiac troponin). Always disclose biotin use to ER staff if you take it. The FDA issued a 2017 safety communication on this — see the Side Effects section below.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=biotin+supplement&tag=profpeptide-20" label="Biotin" />
         </div>
@@ -582,7 +582,7 @@ export default function BiotinPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -611,7 +611,7 @@ export default function BiotinPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>
           <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C</Link>

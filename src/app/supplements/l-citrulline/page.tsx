@@ -179,11 +179,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -225,7 +225,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-citrulline stacks with peptides that benefit from improved vascular function or tissue perfusion. Healing peptides like{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
@@ -235,7 +235,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>{" "}
@@ -264,7 +264,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Consistent daily timing.</span> Chronic vascular benefits build over weeks of daily supplementation — irregular use produces only the acute NO elevation, not the endothelial function improvements.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cardiovascular exercise.</span> Aerobic exercise is the strongest non-pharmacological enhancer of endothelial function — citrulline complements rather than replaces this.</li>
@@ -285,7 +285,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort at single doses above 6 g — split dosing eliminates this.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Modest blood pressure reduction — generally favorable, relevant with antihypertensive medications.</li>
@@ -293,7 +293,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">No herpes outbreak risk.</span> Unlike L-arginine, citrulline doesn&apos;t compete with lysine for cellular transport — HSV-susceptible users can use citrulline safely.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">No post-MI mortality signal.</span> The VINTAGE-MI safety signal is specific to L-arginine; citrulline has not shown an analogous adverse signal. Still, post-MI supplementation initiation should be coordinated with cardiology.</li>
@@ -302,7 +302,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Nitrate medications (nitroglycerin, isosorbide). DO NOT COMBINE.</span> Both pathways converge on cGMP elevation; combination produces dangerous hypotension. This is the same contraindication as PDE5 inhibitors with nitrates.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">PDE5 inhibitors (sildenafil, tadalafil).</span> Additive but generally well-tolerated — both target the same NO/cGMP pathway from different points. Coordinate with prescriber.</li>
@@ -377,7 +377,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -446,7 +446,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -542,7 +542,7 @@ export default function LCitrullinePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">L-Citrulline</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">L-Citrulline</h1>
         <span className="tag">Sexual Health</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -550,18 +550,18 @@ export default function LCitrullinePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Citrulline, L-citrulline powder, watermelon extract (natural source); related variant:{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Citrulline, L-citrulline powder, watermelon extract (natural source); related variant:{" "}<Link href="/supplements/l-citrulline-malate" className="text-[#3A759F] hover:underline">L-citrulline malate</Link>
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Non-essential amino acid / nitric oxide pathway precursor / urea cycle intermediate / endothelial function support / first-pass arginase escape (preferred over L-arginine for NO applications)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Non-essential amino acid / nitric oxide pathway precursor / urea cycle intermediate / endothelial function support / first-pass arginase escape (preferred over L-arginine for NO applications)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Moderate across erectile dysfunction (Cormio 2011 — 1.5 g/day for 1 month), blood pressure reduction (Mirenayat 2018 meta-analysis — 4–8 mmHg systolic at 3–6 g/day), endothelial function (Figueroa 2017 review — flow-mediated dilation improvements), and exercise performance in citrulline malate form (Pérez-Guisado 2010). Strong pharmacokinetic evidence for superiority over L-arginine (Schwedhelm 2008). Hard cardiovascular outcome trials at REDUCE-IT scale don&apos;t exist — surrogate-marker evidence base, not hard-endpoint base.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Moderate across erectile dysfunction (Cormio 2011 — 1.5 g/day for 1 month), blood pressure reduction (Mirenayat 2018 meta-analysis — 4–8 mmHg systolic at 3–6 g/day), endothelial function (Figueroa 2017 review — flow-mediated dilation improvements), and exercise performance in citrulline malate form (Pérez-Guisado 2010). Strong pharmacokinetic evidence for superiority over L-arginine (Schwedhelm 2008). Hard cardiovascular outcome trials at REDUCE-IT scale don&apos;t exist — surrogate-marker evidence base, not hard-endpoint base.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is L-citrulline?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is L-citrulline?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             L-citrulline is a non-essential amino acid found in high concentrations in watermelon — from which it takes its name (Citrullus lanatus) — and produced endogenously as part of the urea cycle. Its supplemental significance comes from an elegant counterintuitive pharmacology: oral citrulline raises plasma arginine higher and longer than oral L-arginine itself, because citrulline escapes the first-pass intestinal and hepatic arginase metabolism that degrades much of an oral arginine dose before it reaches circulation. Citrulline passes through gut and liver intact, reaches the kidneys, and is converted to arginine there — which then serves as substrate for nitric oxide synthase (NOS) throughout the vasculature, producing NO. NO activates guanylyl cyclase in vascular smooth muscle, raises cGMP, and drives vasodilation — the same downstream pathway that PDE5 inhibitors (sildenafil, tadalafil) target by preserving cGMP. This NO/cGMP mechanism is the physiology of erection and a foundational pathway of cardiovascular health. The Cormio 2011 RCT documented 1.5 g/day for 1 month improved erection hardness in 50% of mild-ED users vs 8.3% placebo. Mirenayat 2018 meta-analysis documents 4–8 mmHg systolic BP reductions at 3–6 g/day. For pre-workout pump and resistance-training performance, the malate-bonded variant —{" "}
@@ -569,7 +569,7 @@ export default function LCitrullinePage() {
             — adds acid-base buffering and Krebs-cycle substrate to the citrulline NO pathway, with the Pérez-Guisado 2010 evidence base.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -584,10 +584,10 @@ export default function LCitrullinePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 1.5–3 g daily for sexual health/ED; 3–6 g daily (often split AM/PM) for blood pressure and endothelial function; 3–4 g pure citrulline OR 6–8 g L-citrulline malate pre-workout for performance. GI tolerance is excellent across this range — no functional absorption ceiling like L-arginine.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 1.5–3 g daily for sexual health/ED; 3–6 g daily (often split AM/PM) for blood pressure and endothelial function; 3–4 g pure citrulline OR 6–8 g L-citrulline malate pre-workout for performance. GI tolerance is excellent across this range — no functional absorption ceiling like L-arginine.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Do not combine with nitrate medications (nitroglycerin, isosorbide) — additive cGMP elevation can produce dangerous hypotension; additive BP-lowering with antihypertensives (monitor during titration); pregnancy and breastfeeding safety not well-characterized; no herpes outbreak risk like L-arginine.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Do not combine with nitrate medications (nitroglycerin, isosorbide) — additive cGMP elevation can produce dangerous hypotension; additive BP-lowering with antihypertensives (monitor during titration); pregnancy and breastfeeding safety not well-characterized; no herpes outbreak risk like L-arginine.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=l-citrulline+pure+pharmaceutical+grade&tag=profpeptide-20" label="L-Citrulline" />
         </div>
@@ -598,7 +598,7 @@ export default function LCitrullinePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -627,7 +627,7 @@ export default function LCitrullinePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/l-citrulline-malate" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline Malate</Link>
           <Link href="/supplements/l-arginine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Arginine</Link>

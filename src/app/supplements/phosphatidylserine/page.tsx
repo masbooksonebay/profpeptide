@@ -170,11 +170,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -216,7 +216,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             PS pairs naturally with the Russian-origin cognitive peptide cluster.{" "}
             <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
@@ -226,7 +226,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
@@ -251,7 +251,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Always with fat-containing meals.</span> PS absorption is fat-dependent. Take with breakfast, lunch, or dinner — empty-stomach dosing wastes much of the dose.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-training cortisol-blunting timing.</span> For high-intensity training blocks or competition contexts, 400–800 mg 30–60 minutes before. The Starks 2008 protocol.</li>
@@ -270,7 +270,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — occasional nausea or stomach upset, particularly on empty stomach. Resolves with food coadministration.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Insomnia at high evening doses — uncommon, dose-related (600 mg+ in the evening). Switch to morning/midday dosing.</li>
@@ -278,7 +278,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild blood-thinning effect — relevant for anticoagulant users; modest additive effect. Documented but rarely clinically significant.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Soy allergy with soy-derived PS — switch to sunflower-derived (Sharp-PS).</li>
@@ -286,7 +286,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anticoagulants (warfarin, apixaban, rivaroxaban, dabigatran).</span> PS has mild blood-thinning effects; modest additive interaction. Monitor for unusual bruising or bleeding; coordinate with prescribing clinician.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">NSAIDs at high chronic doses — similar mild additive bleeding-risk consideration.</li>
@@ -362,7 +362,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -431,7 +431,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -559,7 +559,7 @@ export default function PhosphatidylserinePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Phosphatidylserine</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Phosphatidylserine</h1>
         <span className="tag">Cognitive &amp; Nootropic</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -567,18 +567,18 @@ export default function PhosphatidylserinePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> PS, Sharp-PS (sunflower-derived branded), phosphatidyl serine, soy-PS
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> PS, Sharp-PS (sunflower-derived branded), phosphatidyl serine, soy-PS
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Phospholipid / neuronal membrane structural component / HPA-axis modulator
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Phospholipid / neuronal membrane structural component / HPA-axis modulator
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — FDA qualified health claim for dementia and cognitive dysfunction risk reduction in elderly; Crook 1991 + Cenacchi 1993 multicenter trials (n=494 combined) for cognitive decline; Starks 2008 documented cortisol blunting in exercise; Hirayama 2014 pediatric ADHD trial; one of the few supplements at FDA qualified-claim regulatory tier
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — FDA qualified health claim for dementia and cognitive dysfunction risk reduction in elderly; Crook 1991 + Cenacchi 1993 multicenter trials (n=494 combined) for cognitive decline; Starks 2008 documented cortisol blunting in exercise; Hirayama 2014 pediatric ADHD trial; one of the few supplements at FDA qualified-claim regulatory tier
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is phosphatidylserine?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is phosphatidylserine?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Phosphatidylserine (PS) is a phospholipid — a fat-soluble molecule that forms a critical structural component of neuronal cell membranes. It is particularly concentrated in the brain, comprising approximately 15% of total neural-tissue phospholipid content. PS supports neuronal membrane fluidity, facilitates synaptic neurotransmitter release, modulates HPA-axis cortisol response under stress, and participates in apoptosis signaling. Its supplement evidence base is unusually strong: PS is one of the few supplements to have earned an FDA qualified health claim for &ldquo;reducing the risk of dementia and cognitive dysfunction in the elderly&rdquo; — a higher regulatory tier than typical supplement marketing claims. The cognitive evidence (Crook 1991, Cenacchi 1993 multicenter trials, n=494 combined) is strongest in age-related cognitive decline; the cortisol-blunting effect (Starks 2008, ~20% post-exercise cortisol reduction at 600 mg) is well-documented; pediatric ADHD evidence is emerging. PS pairs naturally with{" "}
@@ -586,7 +586,7 @@ export default function PhosphatidylserinePage() {
             because the membrane-structural and HPA-axis mechanisms operate on different layers than receptor-level peptide signaling.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -600,10 +600,10 @@ export default function PhosphatidylserinePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 100–300 mg/day total (often split 100 mg three times daily with meals) for cognitive support — the Crook/Cenacchi trial range. 400–800 mg taken 30–60 minutes pre-stress for acute cortisol blunting (Starks 2008 protocol). Always with fat-containing meals — PS is fat-soluble and absorption is fat-dependent.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 100–300 mg/day total (often split 100 mg three times daily with meals) for cognitive support — the Crook/Cenacchi trial range. 400–800 mg taken 30–60 minutes pre-stress for acute cortisol blunting (Starks 2008 protocol). Always with fat-containing meals — PS is fat-soluble and absorption is fat-dependent.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from supplement retailers as sunflower-derived (Sharp-PS) or soy-derived softgels. Quality varies — particularly around dose disclosure (read for actual PS mg, not &ldquo;PS complex&rdquo;). Review the quality-markers checklist in the Where to Buy section below.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Available over-the-counter from supplement retailers as sunflower-derived (Sharp-PS) or soy-derived softgels. Quality varies — particularly around dose disclosure (read for actual PS mg, not &ldquo;PS complex&rdquo;). Review the quality-markers checklist in the Where to Buy section below.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=phosphatidylserine&tag=profpeptide-20" label="Phosphatidylserine" />
         </div>
@@ -614,7 +614,7 @@ export default function PhosphatidylserinePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -643,7 +643,7 @@ export default function PhosphatidylserinePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/alpha-gpc" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha-GPC</Link>
           <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#3A759F] hover:underline">Bacopa Monnieri</Link>

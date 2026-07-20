@@ -56,7 +56,7 @@ export default function RFKPeptideBanPage() {
         </Link>
 
         <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">April 10, 2026</p>
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-6">
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-6">
           RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List
         </h1>
 
@@ -68,12 +68,12 @@ export default function RFKPeptideBanPage() {
             The announcement, made on the Joe Rogan Experience podcast, represents the single largest reversal of peptide restrictions in U.S. regulatory history.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Background: The 2023 FDA Peptide Ban</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Background: The 2023 FDA Peptide Ban</h2>
           <p>
             In late 2023, the FDA placed numerous research peptides on a restricted compounding list, citing safety concerns and lack of clinical trial data. The move affected some of the most widely researched compounds in the longevity, recovery, and metabolic health space &mdash; including <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>, <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>, and others.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What RFK Jr. Announced</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What RFK Jr. Announced</h2>
           <p>
             Kennedy indicated that approximately 14 of the 19 restricted peptides would move from Category 2 to Category 1, restoring their eligibility for licensed compounding pharmacies. Compounds expected to be affected include:
           </p>
@@ -90,7 +90,7 @@ export default function RFKPeptideBanPage() {
             <li><Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link></li>
           </ul>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Important Caveats</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Important Caveats</h2>
           <p>
             As of publication, no formal FDA rule change has been published in the Federal Register. Kennedy&rsquo;s announcement was made through a media appearance, not an official regulatory filing. Researchers should continue to monitor FDA official communications for formal guidance.
           </p>
@@ -103,7 +103,7 @@ export default function RFKPeptideBanPage() {
         </div>
 
         <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Explore More</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-3">Explore More</h2>
           <div className="flex flex-wrap gap-3">
             <Link href="/peptides" className="btn-primary text-sm">Explore Compound Profiles</Link>
             <Link href="/app" className="btn-outline text-sm">Download the App</Link>

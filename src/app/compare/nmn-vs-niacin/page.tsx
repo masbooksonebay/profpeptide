@@ -41,11 +41,11 @@ export default function NMNvsNiacinPage() {
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">NMN vs Niacin &mdash; NAD+ Precursor Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">NMN vs Niacin &mdash; NAD+ Precursor Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Both NMN (Nicotinamide Mononucleotide) and Niacin (Nicotinic Acid / Vitamin B3) raise NAD+ levels, but through different pathways, at vastly different costs, and with different side effect profiles. A 2026 head-to-head human clinical trial in Nature Metabolism found NMN and NR comparable in raising blood NAD+ levels, while nicotinamide (NAM) produced only a transient effect.</p>
 
       <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why two precursors with one destination</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Why two precursors with one destination</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Both NMN and niacin raise NAD+ &mdash; the coenzyme your cells need for energy production, DNA repair, and sirtuin (a family of enzymes that regulate cellular aging and require NAD+ to function) activation. NAD+ levels decline with age, which is why both supplements are popular in the longevity space.
         </p>
@@ -72,7 +72,7 @@ export default function NMNvsNiacinPage() {
           <tbody>
             {rows.map(([label, a, b], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-                <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+                <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
               </tr>
@@ -82,31 +82,31 @@ export default function NMNvsNiacinPage() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which one is right for you?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Which one is right for you?</h2>
         <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           Both effectively raise NAD+. The choice usually comes down to cost, flush tolerance, and whether the secondary benefits of niacin (cholesterol effects) are relevant to you.
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want NAD+ raising with no flush, cost is no concern</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Want NAD+ raising with no flush, cost is no concern</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               NMN is the cleaner option &mdash; no flushing, no obvious side effects, no liver-enzyme monitoring needed at standard doses. Cost runs $50&ndash;150/month for typical 250&ndash;500mg daily dosing. For people who can absorb the cost, the absence of side effects is the main draw.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Cost-conscious or want established supplement</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Cost-conscious or want established supplement</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Niacin runs $5&ndash;15/month &mdash; roughly 1% the cost of NMN. The flushing decreases dramatically after 1&ndash;2 weeks of consistent use as receptors desensitize. For most people this is manageable. Niacin also has the longest safety record (decades of use as a cholesterol medication and supplement).
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Have high cholesterol or unfavorable lipid profile</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Have high cholesterol or unfavorable lipid profile</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Only niacin lowers LDL and triglycerides while raising HDL. This is FDA-recognized and was the original use of niacin as a prescription medication before statins replaced it. If you&apos;re managing both NAD+ and lipids, niacin is the obvious choice.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Want the supplement with the most longevity-research attention</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Want the supplement with the most longevity-research attention</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               NMN gets dramatically more longevity-research coverage &mdash; David Sinclair&apos;s research and public advocacy made it the go-to longevity supplement for many people. Animal data on NMN is broad. Niacin has been studied for decades but mostly for cholesterol and pellagra prevention rather than longevity specifically.
             </p>
@@ -115,16 +115,16 @@ export default function NMNvsNiacinPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300">Niacin raises NAD+ at approximately 1% of the cost of NMN. The flush is manageable for most people and can be reduced with extended-release forms. <Link href="/supplements/nmn" className="text-[#3A759F] hover:underline">NMN</Link> has no flush and is simpler to use, but costs significantly more and the long-term human evidence is still developing. Both effectively raise <Link href="/supplements/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link> &mdash; the choice often comes down to budget, tolerance for flushing, and whether the cholesterol benefits of niacin are relevant.</p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i}>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
             </div>
           ))}

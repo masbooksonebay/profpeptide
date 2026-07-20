@@ -18,26 +18,26 @@ export default function PeptideSciencesAlternativesPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptide Sciences Has Closed — Vetted Research-Peptide Alternatives"}]}} />
     <div className="section max-w-4xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Vendor Coupons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Peptide Sciences Has Closed &mdash; Vetted Research-Peptide Alternatives</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Peptide Sciences Has Closed &mdash; Vetted Research-Peptide Alternatives</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">
         Peptide Sciences (peptidesciences.com), one of the longest-running research-peptide suppliers, has announced it is voluntarily shutting down and discontinuing the sale of its research products. Its website no longer processes orders. If you previously sourced research peptides there, here are established vendors to consider instead.
       </p>
 
       <div className="bg-[#eab308]/10 border border-[#eab308]/40 rounded-xl p-5 mb-8">
-        <p className="text-sm text-[#1e2d3d] dark:text-slate-200 leading-relaxed">
+        <p className="text-sm text-[#16181B] dark:text-slate-200 leading-relaxed">
           Prof. Peptide is an independent research-peptide information and comparison site. We are not affiliated with, endorsed by, or a successor to Peptide Sciences, and we do not sell or represent its products. &ldquo;Peptide Sciences&rdquo; is referenced here solely to report its publicly announced closure and to help researchers find other suppliers.
         </p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">What happened</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">What happened</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           In its own public notice, Peptide Sciences stated it has discontinued operations and will continue to protect its brand and trademarks. In practical terms, the site no longer fills orders &mdash; and, per the company&apos;s own statement, any third party claiming to be a successor or to sell &ldquo;Peptide Sciences&rdquo; products is not affiliated with the original company.
         </p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Where to look instead</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Where to look instead</h2>
         <VendorHighlightBlock
           highlights={[
             { slug: "ascension-peptides" },
@@ -53,7 +53,7 @@ export default function PeptideSciencesAlternativesPage() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">How we choose alternatives</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">How we choose alternatives</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           We prioritize vendors with third-party lab testing and published COAs, an established track record, and current verified discount codes.
         </p>

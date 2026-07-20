@@ -150,7 +150,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           KPV + BPC-157 can be administered via two routes: oral (gut-local action) or subcutaneous injection (systemic action). The route choice depends on research goals. Oral administration for gut-local IBD and mucosal repair work; subcutaneous for systemic anti-inflammatory coverage. Both routes can be combined but this adds complexity with no validated guidance. There is no approved dosing protocol for the blend &mdash; all parameters below are community-derived from each component&apos;s individual research literature.
         </p>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           Oral protocol (gut-local):
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -158,7 +158,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">BPC-157.</span> 250&ndash;500 mcg orally once daily, on an empty stomach. Oral BPC-157 is available as capsules or as a lyophilized powder dissolved in water. Both forms have been used in oral rodent studies.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle.</span> 6&ndash;8 weeks active, 4 weeks off.</li>
         </ol>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           Subcutaneous protocol (systemic):
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -168,7 +168,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle.</span> 6&ndash;8 weeks active, 4 weeks off.</li>
         </ol>
         <div className="pt-4">
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Reconstitution (subcutaneous use)
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -255,7 +255,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -265,7 +265,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -275,7 +275,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Serious (rare or theoretical)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -371,7 +371,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -434,7 +434,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -461,7 +461,7 @@ export default function KpvBpc157Page() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">KPV + BPC-157</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">KPV + BPC-157</h1>
         <span className="tag">Gut Healing &amp; IBD</span>
         <span className="tag">Anti-Inflammatory</span>
         <span className="tag">Research-Grade</span>
@@ -472,18 +472,18 @@ export default function KpvBpc157Page() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> KPV/BPC-157 Blend, Gut Stack, KPV + Body Protection Compound
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> KPV/BPC-157 Blend, Gut Stack, KPV + Body Protection Compound
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Gut-Healing &amp; Anti-Inflammatory Blend (2-component)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Gut-Healing &amp; Anti-Inflammatory Blend (2-component)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Research-grade only &mdash; BPC-157 FDA Category 2 bulk substance; KPV no FDA approval
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research-grade only &mdash; BPC-157 FDA Category 2 bulk substance; KPV no FDA approval
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is the KPV + BPC-157 blend?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is the KPV + BPC-157 blend?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             KPV + BPC-157 is a research-grade 2-component peptide combination pairing{" "}
@@ -495,7 +495,7 @@ export default function KpvBpc157Page() {
             &mdash; the 4-component blend that contains both KPV and BPC-157 at its core.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -509,10 +509,10 @@ export default function KpvBpc157Page() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> KPV 200&ndash;500 mcg/day (oral or SC) + BPC-157 250&ndash;500 mcg/day (oral or SC). Both on empty stomach for oral administration. Cycle 6&ndash;8 weeks active, 4 weeks off.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> KPV 200&ndash;500 mcg/day (oral or SC) + BPC-157 250&ndash;500 mcg/day (oral or SC). Both on empty stomach for oral administration. Cycle 6&ndash;8 weeks active, 4 weeks off.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Sold as separate research-grade vials (KPV and BPC-157) by specialty peptide vendors; some vendors carry oral KPV capsules. Neither is FDA-approved. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sold as separate research-grade vials (KPV and BPC-157) by specialty peptide vendors; some vendors carry oral KPV capsules. Neither is FDA-approved. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -526,7 +526,7 @@ export default function KpvBpc157Page() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -563,7 +563,7 @@ export default function KpvBpc157Page() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/peptides/kpv" className="text-sm font-medium text-[#3A759F] hover:underline">KPV</Link>
           <Link href="/peptides/bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157</Link>
@@ -573,7 +573,7 @@ export default function KpvBpc157Page() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/peptides/klow" className="text-sm font-medium text-[#3A759F] hover:underline">KLOW</Link>
           <Link href="/peptides/wolverine-stack" className="text-sm font-medium text-[#3A759F] hover:underline">Wolverine Stack</Link>

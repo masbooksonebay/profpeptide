@@ -46,12 +46,12 @@ const sections = [
           The confusion comes from how insulin is dosed. Insulin is sold at a fixed concentration (U-100 = 100 units of insulin activity per mL), so for an insulin user, &ldquo;units&rdquo; on the syringe equals &ldquo;units&rdquo; of insulin. The two are the same number on purpose. Peptides don&rsquo;t work that way: the concentration depends entirely on how much bacteriostatic water you used to reconstitute the vial, so the number of units you draw bears no fixed relationship to the milligrams or micrograms delivered until you specify the reconstitution.
         </p>
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Units drawn</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Volume (mL)</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Roughly</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Units drawn</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Volume (mL)</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Roughly</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -94,22 +94,22 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The relationship is simple once you internalize it: more water in the vial means lower concentration, which means more units (volume) needed to deliver the same mass dose. The formula:
         </p>
-        <div className="bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-lg p-4 font-mono text-sm text-[#1e2d3d] dark:text-slate-200">
+        <div className="bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-lg p-4 font-mono text-sm text-[#16181B] dark:text-slate-200">
           mcg per unit = (mg in vial &divide; mL of BAC water) &times; 10
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Worked example.</span> A 10 mg vial reconstituted three different ways, all targeting a 100 mcg dose:
         </p>
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">mcg per unit</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Units for 100 mcg</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Units for 500 mcg</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Units for 1 mg</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Concentration</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">mcg per unit</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Units for 100 mcg</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Units for 500 mcg</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Units for 1 mg</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -164,13 +164,13 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Barrel</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Capacity</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Tick spacing</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Best for</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Barrel</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Capacity</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Tick spacing</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Best for</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -395,7 +395,7 @@ export default function SyringesAndInjectionPage() {
         </Link>
 
         <div className="flex flex-wrap items-center gap-3 mb-2">
-          <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">
+          <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">
             Insulin Syringes and Injection Technique
           </h1>
           <span className="tag">Guide</span>
@@ -408,13 +408,13 @@ export default function SyringesAndInjectionPage() {
 
         <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Topic:</span> Practical injection technique
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Topic:</span> Practical injection technique
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Audience:</span> Researchers new to peptide injection
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Audience:</span> Researchers new to peptide injection
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Reading time:</span> 8–10 minutes
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Reading time:</span> 8–10 minutes
           </p>
         </div>
 
@@ -424,7 +424,7 @@ export default function SyringesAndInjectionPage() {
           {sections.map((s) => (
             <div key={s.id} id={s.id} className="scroll-mt-20">
               <h2
-                className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2"
+                className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2"
                 dangerouslySetInnerHTML={{ __html: s.title }}
               />
               {s.intro && (

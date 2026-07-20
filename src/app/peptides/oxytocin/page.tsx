@@ -247,7 +247,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -316,7 +316,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -343,7 +343,7 @@ export default function OxytocinPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Oxytocin</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Oxytocin</h1>
         <span className="tag">Sexual Health</span>
         <span className="tag">Research-Grade</span>
       </div>
@@ -352,18 +352,18 @@ export default function OxytocinPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Oxytocin (OT), &ldquo;love hormone&rdquo; / &ldquo;cuddle hormone&rdquo; (pop-science), Pitocin, Syntocinon (obstetric brand names)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Oxytocin (OT), &ldquo;love hormone&rdquo; / &ldquo;cuddle hormone&rdquo; (pop-science), Pitocin, Syntocinon (obstetric brand names)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Nonapeptide (9-amino-acid) neuropeptide/hormone &mdash; posterior-pituitary hormone; oxytocin-receptor (OXTR) agonist
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Nonapeptide (9-amino-acid) neuropeptide/hormone &mdash; posterior-pituitary hormone; oxytocin-receptor (OXTR) agonist
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> FDA-approved for obstetric use (labor induction, postpartum) as Pitocin/Syntocinon. Behavioral, social, and libido uses are NOT approved &mdash; research-grade oxytocin for those purposes is research-use-only.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> FDA-approved for obstetric use (labor induction, postpartum) as Pitocin/Syntocinon. Behavioral, social, and libido uses are NOT approved &mdash; research-grade oxytocin for those purposes is research-use-only.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is oxytocin?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is oxytocin?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Oxytocin is a nine-amino-acid neuropeptide and hormone made in the hypothalamus and released from the posterior pituitary. It has two very different lives. In one, it is a well-understood hormone of labor and lactation and a genuine, FDA-approved obstetric medicine. In the other, it is the famous &ldquo;love hormone&rdquo; or &ldquo;trust hormone&rdquo; of popular science &mdash; a reputation built on behavioral studies that turned out to be far messier and less reliable than the headlines implied. A serious profile has to hold both of these at once.
@@ -374,7 +374,7 @@ export default function OxytocinPage() {
             </p>
           </div>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               What it&apos;s known for:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -386,10 +386,10 @@ export default function OxytocinPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Handling note:</span> Reconstituted oxytocin is comparatively unstable &mdash; refrigerate it and use it within a shorter window than a typical peptide, since it degrades with heat and time.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Handling note:</span> Reconstituted oxytocin is comparatively unstable &mdash; refrigerate it and use it within a shorter window than a typical peptide, since it degrades with heat and time.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -403,7 +403,7 @@ export default function OxytocinPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -437,7 +437,7 @@ export default function OxytocinPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/pt-141" className="text-sm font-medium text-[#3A759F] hover:underline">PT-141</Link>
         <Link href="/peptides/kisspeptin" className="text-sm font-medium text-[#3A759F] hover:underline">Kisspeptin</Link>

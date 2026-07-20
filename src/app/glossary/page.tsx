@@ -161,7 +161,7 @@ export default function GlossaryPage() {
     }} />
     <div className="section max-w-3xl">
       <span className="tag mb-3 inline-block">Reference</span>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">
         Peptide &amp; Supplement Research Glossary
       </h1>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-10 leading-relaxed max-w-xl">
@@ -177,7 +177,7 @@ export default function GlossaryPage() {
             <dl className="space-y-3">
               {s.terms.map(([term, def]) => (
                 <div key={term}>
-                  <dt className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100">
+                  <dt className="text-sm font-semibold text-[#16181B] dark:text-slate-100">
                     {term}
                   </dt>
                   <dd className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mt-0.5">
@@ -191,7 +191,7 @@ export default function GlossaryPage() {
       </div>
 
       <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">See Also</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">See Also</h2>
         <div className="flex flex-wrap gap-x-6 gap-y-2">
           <Link href="/peptides" className="text-sm text-[#3A759F] hover:underline">Peptide Library</Link>
           <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline">Supplement Library</Link>

@@ -156,7 +156,7 @@ export default function ComparePage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons"}]}} />
     <div className="section max-w-3xl">
       <span className="tag mb-3 inline-block">Research Comparisons</span>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Comparisons</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Comparisons</h1>
       <p className="text-gray-500 dark:text-slate-400 max-w-xl text-lg leading-relaxed mb-10">
         Side-by-side research breakdowns to help you understand the differences between commonly compared peptides and supplements.
       </p>
@@ -176,7 +176,7 @@ export default function ComparePage() {
                   <div className="flex items-center gap-2 mb-1">
                     <span className="tag text-xs">{c.tag}</span>
                   </div>
-                  <h3 className="text-base font-semibold text-[#1e2d3d] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors mb-1">
+                  <h3 className="text-base font-semibold text-[#16181B] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors mb-1">
                     {c.title}
                   </h3>
                   <p className="text-sm text-gray-500 dark:text-slate-400">{c.desc}</p>

@@ -181,11 +181,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -227,7 +227,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Maca&apos;s sexual-health application overlaps mechanistically with melanocortin-receptor peptides — particularly PT-141 (bremelanotide) for sexual function via central nervous system melanocortin signaling. Maca and PT-141 address different facets of the same problem (motivation vs central arousal), though direct combination evidence doesn&apos;t exist in trials. For libido contexts driven by stress / HPA dysregulation, maca&apos;s adaptogenic mechanism complements{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
@@ -235,7 +235,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/tongkat-ali" className="text-[#3A759F] hover:underline">Tongkat Ali</Link>{" "}
@@ -267,7 +267,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Stress management.</span> Maca&apos;s adaptogenic mechanism works best alongside actual stress reduction — sleep, meditation, exercise. Maca isn&apos;t a substitute for addressing chronic stress drivers.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Iodine sufficiency.</span> Maca&apos;s glucosinolate content can theoretically affect thyroid function in iodine-deficient users. Ensure adequate iodine intake (seafood, iodized salt, dairy).</li>
@@ -288,7 +288,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort with raw maca — gelatinized form resolves this in most users.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild energizing effect — can interfere with sleep if taken late in the day. Morning dosing resolves this.</li>
@@ -296,7 +296,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Thyroid interaction at high doses in iodine-deficient users.</span> Maca contains glucosinolates (like other cruciferous plants). At very high doses (10+ g/day) in iodine-deficient individuals, theoretical thyroid function effects. Gelatinized maca has lower glucosinolate content and ensures most users don&apos;t hit this concern.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pregnancy and breastfeeding safety not well-characterized.</span> Avoid in pregnant or breastfeeding users; coordinate with obstetrician if otherwise.</li>
@@ -305,7 +305,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">SSRI / SNRI antidepressants.</span> Maca&apos;s indication for SSRI-induced sexual dysfunction (Dording 2008). Coordinate with prescriber. No clinically significant pharmacokinetic interactions documented.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Thyroid medications — no documented interaction at standard doses; theoretical concern at very high doses in iodine-deficient users.</li>
@@ -383,7 +383,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -452,7 +452,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -548,7 +548,7 @@ export default function MacaRootPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Maca Root</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Maca Root</h1>
         <span className="tag">Sexual Health</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -556,24 +556,24 @@ export default function MacaRootPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Lepidium meyenii, Peruvian ginseng, maca powder, gelatinized maca, black maca (fertility focus), red maca (prostate focus), yellow maca (general use)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Lepidium meyenii, Peruvian ginseng, maca powder, gelatinized maca, black maca (fertility focus), red maca (prostate focus), yellow maca (general use)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Andean cruciferous root vegetable / non-hormonal libido enhancer / adaptogen with HPA-axis modulation / dopaminergic and noradrenergic neurotransmitter modulator / male fertility support (black variety specifically)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Andean cruciferous root vegetable / non-hormonal libido enhancer / adaptogen with HPA-axis modulation / dopaminergic and noradrenergic neurotransmitter modulator / male fertility support (black variety specifically)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Moderate across multiple sub-tiers — <span className="font-semibold">Libido</span> (Gonzales 2002, Shin 2010 systematic review): consistent across men, postmenopausal women, and SSRI-induced sexual dysfunction populations. <span className="font-semibold">Testosterone</span>: negative — maca does NOT raise testosterone, estradiol, LH, or FSH; this is mechanistically distinctive. <span className="font-semibold">Mood</span> (Brooks 2008): reduced anxiety/depression scores in postmenopausal women. <span className="font-semibold">Male fertility</span> (Melnikovova 2015, Gonzales 2001 series): black maca specifically improves sperm parameters. <span className="font-semibold">BPH</span> (Gonzales 2012): red maca specifically. Color variety differential is real.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Moderate across multiple sub-tiers — <span className="font-semibold">Libido</span> (Gonzales 2002, Shin 2010 systematic review): consistent across men, postmenopausal women, and SSRI-induced sexual dysfunction populations. <span className="font-semibold">Testosterone</span>: negative — maca does NOT raise testosterone, estradiol, LH, or FSH; this is mechanistically distinctive. <span className="font-semibold">Mood</span> (Brooks 2008): reduced anxiety/depression scores in postmenopausal women. <span className="font-semibold">Male fertility</span> (Melnikovova 2015, Gonzales 2001 series): black maca specifically improves sperm parameters. <span className="font-semibold">BPH</span> (Gonzales 2012): red maca specifically. Color variety differential is real.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is maca root?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is maca root?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Maca (Lepidium meyenii) is a cruciferous root vegetable native to the high-altitude plateaus of the Peruvian Andes — cultivated and consumed for over 2,000 years as a food staple and traditional remedy for fertility, libido, and energy. Among modern libido supplements, maca&apos;s mechanism is uniquely defined by what it doesn&apos;t do: it doesn&apos;t raise testosterone, estradiol, LH, or FSH. Multiple human RCTs measuring serum hormones before and after maca supplementation have found no significant hormonal changes — and yet libido scores, sexual function scores, and (in postmenopausal women) mood scores consistently improve vs placebo. Maca&apos;s mechanism appears to operate through neurotransmitter modulation (likely dopaminergic and noradrenergic pathways), adaptogenic HPA-axis effects on cortisol, and possibly direct effects on reproductive tissue — without altering peripheral hormone levels. The bioactive compounds — macamides and macaenes (long-chain fatty acid amides unique to Lepidium meyenii) — are likely the active agents but receptor-level mechanism isn&apos;t fully characterized. Three color varieties are commercially available and have meaningfully different applications: yellow maca (general use, default choice) is the most-studied broadly; black maca (Gonzales 2001 series, Melnikovova 2015) specifically improves sperm parameters and is the variety for male fertility applications; red maca (Gonzales 2012) specifically affects prostate volume and has been studied for benign prostatic hyperplasia. Gonzales 2002 is the foundational mens&apos;-libido trial (12 weeks, 1.5–3 g/day, significant libido improvement without testosterone change). Brooks 2008 documented postmenopausal sexual and mood improvements at 3.5 g/day. Dording 2008 documented SSRI-induced sexual dysfunction improvement at 3 g/day in remitted depression patients — a clinically important niche because SSRI sexual side effects are common and have few established treatments. Shin 2010 is the systematic review covering the broader trial base.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -588,10 +588,10 @@ export default function MacaRootPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 1.5–3 g daily of gelatinized maca powder or extract. 3 g/day is the most commonly used trial dose. Effect emerges over 4–8 weeks; full effects 8–12 weeks. Morning dosing preferred (mildly energizing). Color variety: yellow (default), black (fertility), red (prostate).
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 1.5–3 g daily of gelatinized maca powder or extract. 3 g/day is the most commonly used trial dose. Effect emerges over 4–8 weeks; full effects 8–12 weeks. Morning dosing preferred (mildly energizing). Color variety: yellow (default), black (fertility), red (prostate).
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Mild energizing effect — avoid evening dosing; glucosinolate-thyroid interaction theoretical concern at very high doses in iodine-deficient users (gelatinized form lower in glucosinolates); pregnancy and breastfeeding safety not well-characterized (avoid); hormone-sensitive condition coordination appropriate even though maca doesn&apos;t alter hormones; heavy-metal accumulation risk in non-third-party-tested products.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Mild energizing effect — avoid evening dosing; glucosinolate-thyroid interaction theoretical concern at very high doses in iodine-deficient users (gelatinized form lower in glucosinolates); pregnancy and breastfeeding safety not well-characterized (avoid); hormone-sensitive condition coordination appropriate even though maca doesn&apos;t alter hormones; heavy-metal accumulation risk in non-third-party-tested products.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=gelatinized+maca+root+peruvian&tag=profpeptide-20" label="Maca Root" />
         </div>
@@ -602,7 +602,7 @@ export default function MacaRootPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -631,7 +631,7 @@ export default function MacaRootPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/tongkat-ali" className="text-sm font-medium text-[#3A759F] hover:underline">Tongkat Ali</Link>
           <Link href="/supplements/l-citrulline" className="text-sm font-medium text-[#3A759F] hover:underline">L-Citrulline</Link>

@@ -113,12 +113,12 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">IU (International Unit).</span> An activity-based unit, defined per-compound by the WHO. The conversion between IU and mg is compound-specific &mdash; there is no universal &ldquo;X mg = Y IU&rdquo; rule. HCG, HGH, and insulin are the peptides most commonly dosed in IU.</li>
         </ol>
         <div className="overflow-x-auto -mx-4 sm:mx-0 pt-2">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Typical dose unit</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Common research range</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Peptide</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Typical dose unit</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Common research range</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -346,7 +346,7 @@ export default function PeptideResearchBasicsPage() {
         </Link>
 
         <div className="flex flex-wrap items-center gap-3 mb-2">
-          <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">
+          <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">
             Peptide Research Basics
           </h1>
           <span className="tag">Guide</span>
@@ -359,13 +359,13 @@ export default function PeptideResearchBasicsPage() {
 
         <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Topic:</span> Foundational concepts in peptide research
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Topic:</span> Foundational concepts in peptide research
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Audience:</span> Researchers new to peptides
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Audience:</span> Researchers new to peptides
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Reading time:</span> 10–12 minutes
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Reading time:</span> 10–12 minutes
           </p>
         </div>
 
@@ -375,7 +375,7 @@ export default function PeptideResearchBasicsPage() {
           {sections.map((s) => (
             <div key={s.id} id={s.id} className="scroll-mt-20">
               <h2
-                className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2"
+                className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2"
                 dangerouslySetInnerHTML={{ __html: s.title }}
               />
               {s.intro && (

@@ -131,7 +131,7 @@ export default function FAQPage() {
   return (
     <div className="section max-w-3xl">
       <span className="tag mb-3 inline-block">Common Questions</span>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Frequently Asked Questions</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Frequently Asked Questions</h1>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-10 leading-relaxed max-w-lg">
         Answers to the most common questions about peptide research, supplements, reconstitution, and this platform.
       </p>
@@ -139,7 +139,7 @@ export default function FAQPage() {
       <div className="space-y-10">
         {sections.map((section) => (
           <div key={section.title}>
-            <h2 className="text-lg font-bold text-[#1e2d3d] dark:text-slate-100 mb-4 pb-2 border-b border-gray-100 dark:border-slate-800 flex items-center gap-2">
+            <h2 className="text-lg font-bold text-[#16181B] dark:text-slate-100 mb-4 pb-2 border-b border-gray-100 dark:border-slate-800 flex items-center gap-2">
               <span className="text-[#3A759F]"><Icon name={section.icon} /></span>
               {section.title}
             </h2>
@@ -152,7 +152,7 @@ export default function FAQPage() {
                       onClick={() => setOpen(open === key ? null : key)}
                       className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors"
                     >
-                      <span className="text-sm font-medium text-[#1e2d3d] dark:text-slate-200 pr-4">{faq.q}</span>
+                      <span className="text-sm font-medium text-[#16181B] dark:text-slate-200 pr-4">{faq.q}</span>
                       <span className="text-[#3A759F] flex-shrink-0 text-lg">{open === key ? "\u2212" : "+"}</span>
                     </button>
                     {open === key && (

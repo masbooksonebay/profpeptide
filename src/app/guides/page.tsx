@@ -31,7 +31,7 @@ export default function GuidesIndexPage() {
   return (
     <div className="section max-w-3xl">
       <div className="mb-10">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">Guides</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Guides</h1>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Practical reference guides for peptide research — covering injection technique, syringe sizing, reconstitution math, and the basics of working with research-grade peptides.
         </p>
@@ -45,7 +45,7 @@ export default function GuidesIndexPage() {
             className="block p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl hover:border-[#3A759F]/40 transition-colors"
           >
             <div className="flex items-baseline justify-between gap-3 flex-wrap">
-              <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100">{g.title}</h2>
+              <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100">{g.title}</h2>
               <span className="text-xs text-gray-500 dark:text-slate-400 whitespace-nowrap">{g.readingTime}</span>
             </div>
             <div className="flex flex-wrap items-center gap-2 mt-2">

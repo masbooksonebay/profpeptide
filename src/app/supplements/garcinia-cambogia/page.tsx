@@ -166,11 +166,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -212,13 +212,13 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             GLP-1 receptor agonists (semaglutide, tirzepatide) for weight management produce dramatically larger weight loss effects than any garcinia supplement could match. The clinical evidence base for these medications is at a completely different scale. If meaningful weight loss is the goal and medical supervision is available, GLP-1 agonists are the evidence-based choice; adding garcinia doesn&apos;t make sense from an efficacy or safety standpoint.
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <span className="font-semibold">AVOID stacking with other hepatotoxicity-risk supplements</span> — high-dose{" "}
@@ -250,7 +250,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Dietary intervention is the dominant lever.</span> Caloric deficit through dietary change produces dramatically larger weight loss than garcinia.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Exercise.</span> Independent benefits on body composition, cardiovascular health, mood. Garcinia doesn&apos;t replace any of these.</li>
@@ -273,7 +273,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort, nausea — particularly on empty stomach.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache in some users.</li>
@@ -281,7 +281,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">HEPATOTOXICITY (Crescioli 2018, Fong 2010, FDA warnings).</span> Case reports of acute liver injury, sometimes severe (including need for liver transplant). FDA warnings around Hydroxycut and other garcinia-containing products. Whether garcinia alone or combination products cause injury isn&apos;t always resolved. Practical mitigation: take with food, avoid combination blends, avoid in pre-existing liver disease, stop with liver symptoms.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical serotonin syndrome risk with SSRIs/MAOIs.</span> HCA's proposed serotonin effect raises theoretical concern. Not robustly documented but reasonable caution.</li>
@@ -293,7 +293,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">SSRIs, MAOIs, serotonergic medications.</span> Theoretical serotonin syndrome risk. Coordinate with prescriber; consider avoiding.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Diabetes medications.</span> Possible additive glucose-lowering. Monitor.</li>
@@ -374,7 +374,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -437,7 +437,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -533,7 +533,7 @@ export default function GarciniaCambogiaPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Garcinia Cambogia</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Garcinia Cambogia</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -541,24 +541,24 @@ export default function GarciniaCambogiaPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> HCA (hydroxycitric acid — the dominant bioactive), Malabar tamarind, brindle berry, Garcinia gummi-gutta
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> HCA (hydroxycitric acid — the dominant bioactive), Malabar tamarind, brindle berry, Garcinia gummi-gutta
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Tropical fruit extract / ATP citrate lyase inhibitor (de novo lipogenesis pathway) / proposed serotonin-mediated satiety supplement / hepatotoxicity-risk supplement per FDA-cited case reports / heavily marketed weight-loss category
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Tropical fruit extract / ATP citrate lyase inhibitor (de novo lipogenesis pathway) / proposed serotonin-mediated satiety supplement / hepatotoxicity-risk supplement per FDA-cited case reports / heavily marketed weight-loss category
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Weak/Contested. <span className="font-semibold">Heymsfield 1998 JAMA RCT</span> (n=135, 12 weeks, 1500 mg HCA/day) found <span className="font-semibold">NO significant weight loss vs placebo</span>. <span className="font-semibold">Onakpoya 2011 systematic review and meta-analysis</span> of 12 RCTs found a small effect (~0.88 kg) of questionable clinical relevance with poor trial quality. Multiple subsequent reviews confirm modest-to-null effects. Lipid/glucose effects are mixed and modest. <span className="font-semibold">Critical safety signal</span>: Crescioli 2018 systematic review and FDA-cited hepatotoxicity case reports (Fong 2010 case series; Hydroxycut 2009 recall) document acute liver injury, some requiring transplant. Whether garcinia alone or combination products cause injury isn&apos;t always resolved. The honest framing: the popular reputation significantly exceeds the trial evidence and the risk-benefit calculation is unfavorable.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Weak/Contested. <span className="font-semibold">Heymsfield 1998 JAMA RCT</span> (n=135, 12 weeks, 1500 mg HCA/day) found <span className="font-semibold">NO significant weight loss vs placebo</span>. <span className="font-semibold">Onakpoya 2011 systematic review and meta-analysis</span> of 12 RCTs found a small effect (~0.88 kg) of questionable clinical relevance with poor trial quality. Multiple subsequent reviews confirm modest-to-null effects. Lipid/glucose effects are mixed and modest. <span className="font-semibold">Critical safety signal</span>: Crescioli 2018 systematic review and FDA-cited hepatotoxicity case reports (Fong 2010 case series; Hydroxycut 2009 recall) document acute liver injury, some requiring transplant. Whether garcinia alone or combination products cause injury isn&apos;t always resolved. The honest framing: the popular reputation significantly exceeds the trial evidence and the risk-benefit calculation is unfavorable.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is garcinia cambogia?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is garcinia cambogia?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Garcinia cambogia (also Garcinia gummi-gutta) is a tropical fruit native to Southeast Asia and India, used traditionally in regional cuisine and folk medicine. Supplemental extracts are standardized for hydroxycitric acid (HCA) content — typically 50–60% HCA — and have been heavily marketed as a weight-loss supplement, particularly after celebrity endorsements in the 2010s drove consumer demand. The honest evidence summary requires confronting the gap between marketing and trial data. The proposed mechanism is biologically plausible: HCA inhibits ATP citrate lyase, the enzyme that converts citrate to acetyl-CoA — a step in de novo lipogenesis (the body&apos;s conversion of carbohydrate to fat). Theoretically, inhibiting this pathway could reduce fat storage and increase satiety via increased serotonin signaling. <span className="font-semibold">The clinical translation has been disappointing</span>. <span className="font-semibold">Heymsfield 1998 JAMA</span> published a rigorous 12-week double-blind RCT (n=135) of HCA at 1500 mg/day vs placebo in overweight subjects and found <span className="font-semibold">NO statistically significant weight loss</span> or body fat reduction vs placebo. This is one of the better-designed trials in the category, published in a top journal, and the result was negative. <span className="font-semibold">Onakpoya 2011 systematic review and meta-analysis</span> of 12 RCTs found a small mean weight loss of approximately 0.88 kg in the garcinia group vs placebo — but the authors specifically noted that trial quality was poor, effect magnitude was small, and clinical relevance was uncertain. Other reviews have reached similar conclusions. Practical implication: don&apos;t expect meaningful weight loss from garcinia cambogia. Whatever modest effect may exist is dwarfed by the impact of dietary intervention, exercise, sleep optimization, and (where clinically appropriate) prescription medications. The likely reason for the gap between mechanism and clinical effect: de novo lipogenesis is a relatively minor contributor to body fat accumulation in typical Western diets — dietary fat goes directly to storage; carbohydrate-to-fat conversion is a smaller fraction of total fat accumulation. Inhibiting a minor pathway produces minor real-world effects. <span className="font-semibold">The second important reality is the hepatotoxicity safety signal</span>. <span className="font-semibold">Crescioli 2018 systematic review</span> documents multiple case reports of acute liver injury associated with garcinia/HCA-containing supplements, some severe (including need for hospitalization or liver transplant). The FDA has issued warnings — Hydroxycut (which contained garcinia) was recalled in 2009 after hepatotoxicity reports (Fong 2010 case series). Whether garcinia alone or combination weight-loss products cause the injury isn&apos;t always clearly resolved, but the safety signal is real and documented. Practical guidance: the modest evidence for efficacy combined with documented hepatotoxicity case reports makes garcinia cambogia a poor risk-benefit choice. If choosing to use it anyway: take with food, avoid combination weight-loss blends (Hydroxycut historic pattern), avoid in pre-existing liver disease, limit trial duration to 4–8 weeks, and stop with any signs of liver injury (jaundice, dark urine, abdominal pain, unusual fatigue). The better practical choice for most users is to skip this category entirely and focus on evidence-based weight management approaches.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits (per honest evidence):
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -570,10 +570,10 @@ export default function GarciniaCambogiaPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> If using despite the honest evidence framing — 500 mg HCA (from ~1500 mg of 50%+ HCA-standardized extract) 30–60 minutes before each major meal, 3× daily. Total: ~1500 mg HCA/day. Matches Heymsfield 1998 dose. Take with food. Limit trial to 4–8 weeks.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> If using despite the honest evidence framing — 500 mg HCA (from ~1500 mg of 50%+ HCA-standardized extract) 30–60 minutes before each major meal, 3× daily. Total: ~1500 mg HCA/day. Matches Heymsfield 1998 dose. Take with food. Limit trial to 4–8 weeks.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> HEPATOTOXICITY (FDA-cited case reports; Crescioli 2018, Fong 2010 case series; Hydroxycut 2009 recall) — take with food, avoid combination weight-loss blends, avoid pre-existing liver disease, stop with jaundice/dark urine/abdominal pain; theoretical serotonin syndrome risk with SSRIs/MAOIs; diabetes medication additive glucose-lowering; pregnancy/breastfeeding avoid; rare mania case reports in bipolar users; weak/contested efficacy means risk-benefit is unfavorable for most users; better-evidenced alternatives exist; honest assessment is to consider skipping this category entirely.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> HEPATOTOXICITY (FDA-cited case reports; Crescioli 2018, Fong 2010 case series; Hydroxycut 2009 recall) — take with food, avoid combination weight-loss blends, avoid pre-existing liver disease, stop with jaundice/dark urine/abdominal pain; theoretical serotonin syndrome risk with SSRIs/MAOIs; diabetes medication additive glucose-lowering; pregnancy/breastfeeding avoid; rare mania case reports in bipolar users; weak/contested efficacy means risk-benefit is unfavorable for most users; better-evidenced alternatives exist; honest assessment is to consider skipping this category entirely.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=garcinia+cambogia+single+ingredient+hca&tag=profpeptide-20" label="Garcinia Cambogia" />
         </div>
@@ -584,7 +584,7 @@ export default function GarciniaCambogiaPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -613,7 +613,7 @@ export default function GarciniaCambogiaPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/green-tea-extract" className="text-sm font-medium text-[#3A759F] hover:underline">Green Tea Extract</Link>
           <Link href="/supplements/glucomannan" className="text-sm font-medium text-[#3A759F] hover:underline">Glucomannan</Link>

@@ -181,11 +181,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -227,7 +227,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The most direct peptide pairing is{" "}
             <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+ peptide</Link>{" "}
@@ -237,7 +237,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/resveratrol" className="text-[#3A759F] hover:underline">Resveratrol</Link>{" "}
@@ -269,7 +269,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Exercise.</span> Aerobic and resistance exercise independently raise NAD+ levels and activate sirtuin signaling. NMN + exercise is mechanistically synergistic; the per-supplement effect on NAD+ is likely larger in active populations.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Intermittent fasting / caloric restriction.</span> Both raise NAD+ levels via the same metabolic-stress pathways NMN supplementation feeds. Compounded effect on NAD+ availability.</li>
@@ -289,7 +289,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (uncommon and mild when they occur)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (uncommon and mild when they occur)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI symptoms — nausea or stomach upset at higher doses (600 mg+); typically transient and resolved by taking with food</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache — rare; reported by a minority of users in the first 1–2 weeks; typically resolves</li>
@@ -298,7 +298,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Watch-list (theoretical / long-term)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Watch-list (theoretical / long-term)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Active cancer populations — theoretical concern. Cancer cells often have elevated NAD+ metabolism and increased NAD+ availability could theoretically support proliferation. Animal and cell-culture data is mixed (some studies show NMN inhibits tumor growth; others raise concerns). The cautious default for users with active cancer or recent cancer history is to discuss with the treating oncologist before NMN supplementation.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Long-horizon safety in healthy users — most trial data covers 8–12 week treatment windows. Multi-year continuous use safety in healthy adults is not well-characterized. The trial signal is favorable; the long horizon is genuinely unknown.</li>
@@ -306,7 +306,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anticoagulants and antiplatelet drugs — limited interaction data; theoretical effect on NAD+-dependent platelet function. Discuss with clinician if on chronic anticoagulation.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cancer chemotherapy — NAD+ elevation could theoretically affect cellular responses to chemotherapy. Coordinate with treating oncologist.</li>
@@ -399,7 +399,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -468,7 +468,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -596,7 +596,7 @@ export default function NMNPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">NMN</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">NMN</h1>
         <span className="tag">Longevity</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -604,18 +604,18 @@ export default function NMNPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Nicotinamide mononucleotide, β-NMN, NMN powder, β-nicotinamide mononucleotide
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Nicotinamide mononucleotide, β-NMN, NMN powder, β-nicotinamide mononucleotide
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> NAD+ precursor (nucleotide, salvage pathway substrate)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> NAD+ precursor (nucleotide, salvage pathway substrate)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Moderate — multiple human RCTs in older adults (Yoshino 2021 insulin sensitivity in postmenopausal women; Igarashi 2022 muscle function in older men; Yi 2023 dose-response biomarkers; Liao 2021 aerobic capacity) plus extensive animal model evidence; human RCT base is smaller and shorter-duration than Strong-tier supplements; complicated by FDA&apos;s November 2022 "not a dietary supplement" classification (see What we don&apos;t know yet)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Moderate — multiple human RCTs in older adults (Yoshino 2021 insulin sensitivity in postmenopausal women; Igarashi 2022 muscle function in older men; Yi 2023 dose-response biomarkers; Liao 2021 aerobic capacity) plus extensive animal model evidence; human RCT base is smaller and shorter-duration than Strong-tier supplements; complicated by FDA&apos;s November 2022 "not a dietary supplement" classification (see What we don&apos;t know yet)
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is NMN?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is NMN?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Nicotinamide mononucleotide (NMN) is a nucleotide that occurs naturally in trace amounts in foods including edamame, broccoli, and avocado. It functions as a direct precursor to NAD+ (nicotinamide adenine dinucleotide) — the essential cofactor for sirtuin longevity proteins, PARP DNA-repair enzymes, and the mitochondrial electron transport chain. NAD+ levels decline measurably with age (estimates range from 30–50% reduction by midlife), and that decline is causally linked to multiple hallmarks of aging. NMN supplementation raises blood NAD+ levels in multiple human RCTs and produces meaningful biomarker improvements (insulin sensitivity, muscle function, aerobic capacity) in trial populations. The mechanism rationale is mature; the human outcomes data is mid-stage; and NMN occupies an unusual regulatory position in the US after the FDA&apos;s November 2022 notification that NMN does not qualify as a dietary supplement under current FD&amp;C Act interpretation. Strongest direct comparators:{" "}
@@ -625,7 +625,7 @@ export default function NMNPage() {
             (direct delivery, requires injection), and Nicotinamide Riboside / NR (one step earlier in the salvage pathway, longer cumulative RCT history).
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -639,10 +639,10 @@ export default function NMNPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 250–500 mg once daily in the morning (the standard protocol used in Yoshino 2021 and Igarashi 2022). Higher-dose protocols (600–900 mg/day) supported by Yi 2023 dose-response data for users wanting larger NAD+ elevation. Standard capsules have the deepest evidence base; sublingual and liposomal forms exist as theoretical-bioavailability alternatives with limited head-to-head data.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 250–500 mg once daily in the morning (the standard protocol used in Yoshino 2021 and Igarashi 2022). Higher-dose protocols (600–900 mg/day) supported by Yi 2023 dose-response data for users wanting larger NAD+ elevation. Standard capsules have the deepest evidence base; sublingual and liposomal forms exist as theoretical-bioavailability alternatives with limited head-to-head data.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Widely available over-the-counter from major supplement vendors despite the FDA regulatory wrinkle. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Widely available over-the-counter from major supplement vendors despite the FDA regulatory wrinkle. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=NMN+supplement&tag=profpeptide-20" label="NMN" />
         </div>
@@ -653,7 +653,7 @@ export default function NMNPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -682,7 +682,7 @@ export default function NMNPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/nad-plus" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+</Link>
           <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#3A759F] hover:underline">Resveratrol</Link>
@@ -694,7 +694,7 @@ export default function NMNPage() {
       </div>
 
       <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/compare/nmn-vs-niacin" className="text-sm font-medium text-[#3A759F] hover:underline">NMN vs Niacin &rarr;</Link>
           <Link href="/compare/nmn-vs-nr-vs-niacin" className="text-sm font-medium text-[#3A759F] hover:underline">NMN vs NR vs Niacin &rarr;</Link>

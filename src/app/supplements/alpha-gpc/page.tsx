@@ -171,11 +171,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -217,7 +217,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Alpha-GPC pairs naturally with the Russian-origin cognitive peptide cluster.{" "}
             <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
@@ -227,7 +227,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/lions-mane" className="text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>{" "}
@@ -252,7 +252,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Mental-work timing.</span> Take 30–60 minutes before deep cognitive work; effects build within the first hour.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Training timing.</span> 60–90 minutes pre-workout for the GH and force-production effects. Pair with creatine if performance is the goal.</li>
@@ -271,7 +271,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache — most common at higher single doses (600 mg+) or when stacking with other cholinergic agents</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — nausea or stomach upset, typically resolves with food or dose reduction</li>
@@ -280,7 +280,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Fishy body odor at sustained high choline intake (Alpha-GPC + other dietary choline sources combined) — caused by trimethylamine production. Lower the dose or total choline load.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Elevated TMAO (trimethylamine N-oxide) — observational link to cardiovascular risk. Mechanism in humans debated; dose-response unclear. Watch if you have known cardiovascular disease.</li>
@@ -288,7 +288,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Anticholinergic medications (some antihistamines, tricyclic antidepressants, certain bladder medications) — Alpha-GPC&apos;s pro-cholinergic effect may partially oppose these drugs. Consult a clinician if you&apos;re on chronic anticholinergic therapy.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cholinesterase inhibitors (donepezil, rivastigmine — Alzheimer&apos;s drugs) — additive cholinergic effect. Coordinate with the prescribing clinician.</li>
@@ -372,7 +372,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -441,7 +441,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -569,7 +569,7 @@ export default function AlphaGPCPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Alpha-GPC</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Alpha-GPC</h1>
         <span className="tag">Cognitive &amp; Nootropic</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -577,18 +577,18 @@ export default function AlphaGPCPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Alpha-glycerophosphocholine, L-alpha glycerylphosphorylcholine, choline alfoscerate, Gliatilin (Italian Rx brand)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Alpha-glycerophosphocholine, L-alpha glycerylphosphorylcholine, choline alfoscerate, Gliatilin (Italian Rx brand)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Choline-containing phospholipid / acetylcholine precursor
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Choline-containing phospholipid / acetylcholine precursor
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — multiple Italian RCTs in dementia (prescription in Italy as Gliatilin), Ziegenfuss 2008 GH/exercise RCT, multiple healthy-user reaction-time and force-production RCTs
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — multiple Italian RCTs in dementia (prescription in Italy as Gliatilin), Ziegenfuss 2008 GH/exercise RCT, multiple healthy-user reaction-time and force-production RCTs
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Alpha-GPC?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Alpha-GPC?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Alpha-GPC (alpha-glycerophosphocholine) is the most bioavailable, brain-penetrant choline source available as a supplement. It outperforms choline bitartrate and CDP-choline for raising plasma and brain choline — the substrate the brain needs to synthesize acetylcholine, the neurotransmitter central to attention, memory, and learning. Approximately 90% of adults don&apos;t consume adequate dietary choline, so the supplement bridges a real nutritional gap. In Italy, Alpha-GPC is sold as a prescription drug (Gliatilin) for cognitive impairment and dementia; in the rest of the world, it&apos;s available over-the-counter and widely used in nootropic stacks. The biohacker case is built on three things: a substantial dementia RCT base, acute exercise GH and force-production evidence, and a strong mechanistic rationale for stacking with{" "}
@@ -596,7 +596,7 @@ export default function AlphaGPCPage() {
             that work via different pathways.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -610,10 +610,10 @@ export default function AlphaGPCPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 300–600 mg once daily for cognitive baseline; 600 mg taken 60–90 minutes pre-workout for the acute GH and force-production effect; 1200 mg/day in divided doses for clinical dementia research (not a healthy-user starting point).
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 300–600 mg once daily for cognitive baseline; 600 mg taken 60–90 minutes pre-workout for the acute GH and force-production effect; 1200 mg/day in divided doses for clinical dementia research (not a healthy-user starting point).
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=alpha+gpc&tag=profpeptide-20" label="Alpha-GPC" />
         </div>
@@ -624,7 +624,7 @@ export default function AlphaGPCPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -653,7 +653,7 @@ export default function AlphaGPCPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/lions-mane" className="text-sm font-medium text-[#3A759F] hover:underline">Lion&apos;s Mane</Link>
           <Link href="/supplements/bacopa-monnieri" className="text-sm font-medium text-[#3A759F] hover:underline">Bacopa Monnieri</Link>

@@ -170,11 +170,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -216,7 +216,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Ashwagandha pairs naturally with the growth-hormone-axis peptide cluster — this is audit pairing #3, one of the highest-leverage bidirectional cross-links in the wave spec.{" "}
             <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>{" "}
@@ -228,7 +228,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/rhodiola-rosea" className="text-[#3A759F] hover:underline">Rhodiola rosea</Link>{" "}
@@ -261,7 +261,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training.</span> Ashwagandha&apos;s strength-training-adjunct effect (Wankhede 2015, Ziegenfuss 2018) requires consistent training stimulus. Pair with progressive resistance training for the documented gains.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Consistent sleep schedule.</span> Ashwagandha supports sleep quality; sleep optimization supports the GH-axis and cortisol-recovery contexts ashwagandha operates within. Both matter.</li>
@@ -282,7 +282,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — occasional, generally at higher doses or on empty stomach. Resolves with food coadministration.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Drowsiness — intentional for evening use; undesirable if dosed too early. Switch to evening-only dosing if affected during daytime.</li>
@@ -291,7 +291,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Thyroid hormone elevation.</span> Modestly raises T4 and T3 — beneficial in subclinical hypothyroidism but problematic in hyperthyroid or thyroid-medicated users. Monitor TSH/free T4 every 6–8 weeks if combined with thyroid medication.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Rare liver injury at very high doses.</span> Case reports in 2020–2023 medical literature flag occasional hepatotoxicity at 1,500+ mg/day chronic use. Stay within trial-validated 300–600 mg/day range; choose root-only KSM-66 over root + leaf Sensoril if liver concerns; avoid combining with hepatotoxic agents.</li>
@@ -302,7 +302,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Thyroid medication (levothyroxine, T3).</span> Ashwagandha modestly raises endogenous thyroid hormones; may require thyroid medication dose reduction. Monitor TSH/free T4 every 6–8 weeks; coordinate with prescribing clinician.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sedatives (benzodiazepines, Z-drugs).</span> Additive sedation via GABA-mimetic mechanism. Avoid combining; coordinate with prescribing clinician if needed.</li>
@@ -380,7 +380,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -449,7 +449,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -577,7 +577,7 @@ export default function AshwagandhaPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Ashwagandha</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Ashwagandha</h1>
         <span className="tag">Growth Hormone Support</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -585,18 +585,18 @@ export default function AshwagandhaPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Withania somnifera, Indian ginseng, winter cherry, KSM-66 (Ixoreal branded), Sensoril (Natreon branded), Shoden, ashwagandha
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Withania somnifera, Indian ginseng, winter cherry, KSM-66 (Ixoreal branded), Sensoril (Natreon branded), Shoden, ashwagandha
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Ayurvedic adaptogenic herb / HPA axis modulator / cortisol reducer / GABA-mimetic + thyroid-modulating triterpenoid lactones (withanolides)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Ayurvedic adaptogenic herb / HPA axis modulator / cortisol reducer / GABA-mimetic + thyroid-modulating triterpenoid lactones (withanolides)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong (cortisol reduction, stress, anxiety, sleep, resistance-training strength) — Chandrasekhar 2012, Lopresti 2019, Wankhede 2015, Ziegenfuss 2018 STAR trial, Salve 2019, Pratte 2014 systematic review. Moderate (testosterone elevation) — real in stressed/training/sleep-disrupted populations via cortisol-suppression relief; smaller effect in young replete untrained men. Deep evidence base (50+ human RCTs) — one of the better-supported adaptogens.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong (cortisol reduction, stress, anxiety, sleep, resistance-training strength) — Chandrasekhar 2012, Lopresti 2019, Wankhede 2015, Ziegenfuss 2018 STAR trial, Salve 2019, Pratte 2014 systematic review. Moderate (testosterone elevation) — real in stressed/training/sleep-disrupted populations via cortisol-suppression relief; smaller effect in young replete untrained men. Deep evidence base (50+ human RCTs) — one of the better-supported adaptogens.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is ashwagandha?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is ashwagandha?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Ashwagandha (Withania somnifera) is one of the most important herbs in Ayurvedic medicine — used for 3,000+ years as a rasayana (rejuvenating tonic) for stress resilience, vitality, and longevity. It is classified as an adaptogen — a natural compound that helps the body normalize its response to stressors. The primary bioactive compounds, withanolides (triterpenoid lactones), modulate the HPA axis to reduce chronic cortisol elevation, with downstream effects on testosterone preservation (relieving cortisol-mediated suppression), sleep architecture (cortisol reduction + GABA-mimetic activity), strength and recovery (Wankhede 2015 KSM-66 +18.2 kg bench press vs +6.1 kg placebo), and anxiety. The evidence base is one of the deeper in the adaptogen space — 50+ human RCTs across stress, cortisol, testosterone, strength, sleep, anxiety, and thyroid endpoints. Foundational trials: Chandrasekhar 2012 (cortisol -27.9%, stress -44%), Wankhede 2015 (KSM-66 testosterone and strength), Lopresti 2019 (Shoden cortisol replication), Salve 2019 (sleep PSQI), Ziegenfuss 2018 STAR (Sensoril strength). The testosterone effect is real but context-dependent — works in stressed, training-loaded, sleep-disrupted, or hypogonadal populations where cortisol is the limiting factor; smaller in young replete untrained men. This is meaningfully different from ZMA, where the testosterone claim has been refuted in replete athletes. Ashwagandha pairs naturally with{" "}
@@ -604,7 +604,7 @@ export default function AshwagandhaPage() {
             — audit pairing #3, one of the highest-leverage bidirectional cross-links in the wave spec.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -619,10 +619,10 @@ export default function AshwagandhaPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 600 mg/day total of KSM-66 or Sensoril standardized extract — typically 300 mg twice daily (AM + PM) or 600 mg evening for sleep-focused protocols. Wankhede 2015 testosterone/strength protocol: 300 mg KSM-66 twice daily. Salve 2019 sleep protocol: 600 mg KSM-66 evening. With food preferred for better tolerance.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 600 mg/day total of KSM-66 or Sensoril standardized extract — typically 300 mg twice daily (AM + PM) or 600 mg evening for sleep-focused protocols. Wankhede 2015 testosterone/strength protocol: 300 mg KSM-66 twice daily. Salve 2019 sleep protocol: 600 mg KSM-66 evening. With food preferred for better tolerance.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Thyroid hormone elevation (avoid in hyperthyroidism; coordinate with endocrinologist if on thyroid medication); rare liver injury reports at very high doses (1,500+ mg/day) — stay within 600 mg/day for chronic use; pregnancy contraindication (traditional uterine-stimulant use); nightshade-family allergy possible.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Thyroid hormone elevation (avoid in hyperthyroidism; coordinate with endocrinologist if on thyroid medication); rare liver injury reports at very high doses (1,500+ mg/day) — stay within 600 mg/day for chronic use; pregnancy contraindication (traditional uterine-stimulant use); nightshade-family allergy possible.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=ashwagandha+KSM-66&tag=profpeptide-20" label="Ashwagandha" />
         </div>
@@ -633,7 +633,7 @@ export default function AshwagandhaPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -662,7 +662,7 @@ export default function AshwagandhaPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/rhodiola-rosea" className="text-sm font-medium text-[#3A759F] hover:underline">Rhodiola Rosea</Link>
           <Link href="/supplements/zma" className="text-sm font-medium text-[#3A759F] hover:underline">ZMA</Link>

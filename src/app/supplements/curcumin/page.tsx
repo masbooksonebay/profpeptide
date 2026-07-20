@@ -168,11 +168,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -214,7 +214,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Curcumin pairs naturally with the healing peptide cluster.{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
@@ -226,7 +226,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Omega-3 fish oil</Link>{" "}
@@ -251,7 +251,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Take with fat-containing meals.</span> Curcumin absorption is meaningfully fat-dependent; meal coadministration improves bioavailability for all formulations.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anti-inflammatory dietary background.</span> Mediterranean diet, lower omega-6 intake, reduced ultra-processed food intake all reduce baseline inflammation. Curcumin works on top of dietary foundation, not as a substitute.</li>
@@ -271,7 +271,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — occasional nausea, diarrhea, or stomach upset at higher doses (1 g+). Resolves with food coadministration or dose reduction.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Yellow-orange staining of urine or stool — harmless cosmetic effect from curcumin pigment excretion.</li>
@@ -279,7 +279,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Antiplatelet effect (clinically relevant).</span> Mild but documented; matters for users on anticoagulants and for pre-surgical considerations. Stop curcumin 1–2 weeks before scheduled surgery.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Iron absorption interference — curcumin chelates iron in the gut and may reduce iron absorption. Relevant for iron-deficient or iron-supplementing users; separate iron supplement dosing by 2+ hours.</li>
@@ -287,7 +287,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anticoagulants (warfarin, apixaban, rivaroxaban, dabigatran, clopidogrel).</span> Additive antiplatelet/anticoagulant effect. Coordinate with prescribing clinician; INR monitoring for warfarin users.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">NSAIDs and aspirin.</span> Additive antiplatelet effect; modest additional bleeding risk. Generally tolerated but worth flagging for chronic high-dose NSAID users.</li>
@@ -362,7 +362,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -431,7 +431,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -559,7 +559,7 @@ export default function CurcuminPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Curcumin</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Curcumin</h1>
         <span className="tag">Recovery &amp; Tissue Repair</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -567,18 +567,18 @@ export default function CurcuminPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Turmeric extract, diferuloylmethane, curcuminoids, BCM-95, Meriva (phytosome), Theracurmin (nanoparticle), Longvida (lipid-coated)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Turmeric extract, diferuloylmethane, curcuminoids, BCM-95, Meriva (phytosome), Theracurmin (nanoparticle), Longvida (lipid-coated)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Polyphenol (turmeric-derived) / NF-κB inhibitor / COX-LOX inhibitor / anti-inflammatory adjunct
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Polyphenol (turmeric-derived) / NF-κB inhibitor / COX-LOX inhibitor / anti-inflammatory adjunct
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — Paultre 2021 meta-analysis of 16 RCTs (n=1,810) for knee osteoarthritis with NSAID-comparable effect sizes; Hanai 2006 for ulcerative colitis remission maintenance; Fernández-Lázaro 2020 for exercise recovery; Hewlings 2017 review covering the broader evidence landscape. Effect is strongly formulation-dependent (bioavailability gates outcomes).
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — Paultre 2021 meta-analysis of 16 RCTs (n=1,810) for knee osteoarthritis with NSAID-comparable effect sizes; Hanai 2006 for ulcerative colitis remission maintenance; Fernández-Lázaro 2020 for exercise recovery; Hewlings 2017 review covering the broader evidence landscape. Effect is strongly formulation-dependent (bioavailability gates outcomes).
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is curcumin?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is curcumin?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Curcumin is the primary bioactive polyphenol in turmeric (Curcuma longa) — the bright yellow spice used for thousands of years in Ayurvedic and traditional Chinese medicine, and now one of the most extensively studied natural compounds in modern supplement research (over 3,000 published studies). Its core mechanism is inhibition of NF-κB — the master transcription factor that activates inflammatory gene expression — with secondary inhibition of COX/LOX enzymes (the same pathways NSAIDs target). The result is broad anti-inflammatory effects with measurable clinical benefit: NSAID-comparable pain and functional improvement in knee osteoarthritis (Paultre 2021 meta-analysis, n=1,810), maintenance of ulcerative colitis remission (Hanai 2006, ~5× lower relapse vs placebo), reduced exercise-induced muscle damage and soreness, modest antidepressant effects, and emerging evidence in cardiovascular and metabolic contexts. The dominant practical challenge for curcumin is bioavailability — standard curcumin powder has near-zero oral absorption (single-digit nanomolar plasma concentrations), and clinical effect depends on formulation choice. Patented high-bioavailability formulations (Meriva, Theracurmin, BCM-95, Longvida) produce 7–30× higher plasma curcumin; piperine (BioPerine) co-administration produces ~20× via inhibiting hepatic glucuronidation. Curcumin pairs naturally with{" "}
@@ -586,7 +586,7 @@ export default function CurcuminPage() {
             because the anti-inflammatory mechanism complements direct tissue-repair signaling.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -600,10 +600,10 @@ export default function CurcuminPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> Formulation-dependent. Meriva 200–500 mg twice daily; Theracurmin 90–180 mg twice daily; BCM-95 500 mg twice daily; standard curcumin + piperine 1,000–2,000 mg + 5–20 mg piperine daily. Always with fat-containing meals. Anti-inflammatory effects emerge over 4–8 weeks of consistent dosing.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> Formulation-dependent. Meriva 200–500 mg twice daily; Theracurmin 90–180 mg twice daily; BCM-95 500 mg twice daily; standard curcumin + piperine 1,000–2,000 mg + 5–20 mg piperine daily. Always with fat-containing meals. Anti-inflammatory effects emerge over 4–8 weeks of consistent dosing.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Pre-surgical washout:</span> Stop curcumin 1–2 weeks before scheduled surgery — mild antiplatelet effect can increase bleeding risk. Coordinate with anticoagulation clinic if you&apos;re on chronic warfarin, apixaban, rivaroxaban, or clopidogrel.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Pre-surgical washout:</span> Stop curcumin 1–2 weeks before scheduled surgery — mild antiplatelet effect can increase bleeding risk. Coordinate with anticoagulation clinic if you&apos;re on chronic warfarin, apixaban, rivaroxaban, or clopidogrel.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=curcumin+meriva&tag=profpeptide-20" label="Curcumin" />
         </div>
@@ -614,7 +614,7 @@ export default function CurcuminPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -643,7 +643,7 @@ export default function CurcuminPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
           <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>

@@ -6,7 +6,7 @@ export const metadata = {
 export default function PrivacyPage() {
   return (
     <div className="section max-w-3xl">
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-6">Privacy Policy</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-6">Privacy Policy</h1>
       <div className="text-gray-600 dark:text-slate-300 space-y-4 text-sm">
         <p><strong className="text-gray-800 dark:text-slate-200">Data Collection.</strong> Prof. Peptide does not collect personal information beyond what is voluntarily submitted (e.g., waitlist email). We do not use tracking pixels or sell data to third parties.</p>
         <p><strong className="text-gray-800 dark:text-slate-200">Analytics.</strong> We may use privacy-respecting analytics (e.g., aggregate page view counts) to understand site usage. No individual-level tracking is used.</p>

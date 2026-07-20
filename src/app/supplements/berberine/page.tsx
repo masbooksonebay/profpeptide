@@ -174,11 +174,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -220,7 +220,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The natural peptide bridges for berberine are the GLP-class incretin agonists.{" "}
             <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>{" "}
@@ -236,7 +236,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/alpha-lipoic-acid" className="text-[#3A759F] hover:underline">Alpha Lipoic Acid</Link>{" "}
@@ -264,7 +264,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Meal-timed dosing.</span> Take with the three largest meals — postprandial glucose blunting is one of the largest acute effects.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Carb-reduction synergy.</span> Berberine&apos;s glycemic effect is dose-related to the carb load it&apos;s blunting; a lower-carb dietary pattern amplifies the per-mg effect.</li>
@@ -284,7 +284,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly first-month transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly first-month transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Diarrhea, loose stools, or constipation (paradoxically — either direction) — most common during the first 2–4 weeks; improves with continued use and food timing</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea or stomach upset, particularly on empty stomach — take with meals</li>
@@ -294,7 +294,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Watch-list (less common, longer-term)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Watch-list (less common, longer-term)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild elevation in liver enzymes (ALT, AST) in a minority of users on long-term high-dose protocols — periodically check liver panel if using &gt;6 months</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Possible hypotension in users on antihypertensive medication — combined BP effect can produce orthostatic symptoms</li>
@@ -302,7 +302,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Contraindications (do not use)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Contraindications (do not use)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Pregnancy and breastfeeding — berberine crosses the placenta and can cause kernicterus (bilirubin-related brain damage) in newborns; clear contraindication</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Infants — same kernicterus risk applies</li>
@@ -310,7 +310,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">CYP3A4 substrate drugs (statins, calcium channel blockers, many psychiatric drugs, some immunosuppressants, cyclosporine) — berberine inhibits CYP3A4, increasing plasma levels of these drugs. Separate dosing by 2+ hours; coordinate with prescribing clinician for chronic CYP3A4 substrate users.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Metformin — overlapping AMPK + hepatic gluconeogenesis suppression. Combined hypoglycemia risk; coordinate with prescribing clinician.</li>
@@ -388,7 +388,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -457,7 +457,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -585,7 +585,7 @@ export default function BerberinePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Berberine</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Berberine</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
         <span className="tag">Gut Health &amp; Immunity</span>
       </div>
@@ -594,18 +594,18 @@ export default function BerberinePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Berberine HCl, berberine hydrochloride, dihydroberberine (DHB — higher-bioavailability variant)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Berberine HCl, berberine hydrochloride, dihydroberberine (DHB — higher-bioavailability variant)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Isoquinoline alkaloid (plant-derived AMPK activator)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Isoquinoline alkaloid (plant-derived AMPK activator)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — Yin 2008 head-to-head RCT vs metformin in T2D (comparable HbA1c reduction); Dong 2012 + Lan 2015 meta-analyses (n=1,068 and n=2,569 respectively); 30+ human RCTs across metabolic syndrome endpoints; mature AMPK pathway mechanism evidence
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — Yin 2008 head-to-head RCT vs metformin in T2D (comparable HbA1c reduction); Dong 2012 + Lan 2015 meta-analyses (n=1,068 and n=2,569 respectively); 30+ human RCTs across metabolic syndrome endpoints; mature AMPK pathway mechanism evidence
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Berberine?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Berberine?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Berberine is a bioactive isoquinoline alkaloid extracted from several plants including Berberis vulgaris (barberry), Coptis chinensis (goldenseal), and Phellodendron amurense. Used in traditional Chinese medicine for thousands of years (originally for gastrointestinal infections), it has emerged as one of the most-researched natural compounds for metabolic health. Berberine activates AMPK — the master cellular energy switch metformin also targets — producing downstream effects on blood sugar regulation, hepatic gluconeogenesis, lipid metabolism, insulin sensitivity, and gut microbiome composition. The Yin 2008 head-to-head RCT against metformin established berberine&apos;s comparable glycemic effect at the 500 mg three-times-daily dose, and it&apos;s one of the few natural compounds with prescription-comparable RCT evidence behind it. The modern angle of interest: berberine modestly induces endogenous GLP-1 secretion, giving it overlap with the mechanism of injectable GLP-class peptides like{" "}
@@ -614,7 +614,7 @@ export default function BerberinePage() {
             <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -628,10 +628,10 @@ export default function BerberinePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 500 mg three times daily with meals (1,500 mg/day total) — the Yin 2008 reference protocol used in nearly all published positive RCTs. Twice-daily dosing (1,000 mg/day) is a reasonable tolerability compromise. Dihydroberberine alternative: 100–200 mg twice daily with claimed 5–10× plasma exposure at the lower dose. Short plasma half-life (3–4 hours) is why TID dosing is the standard.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 500 mg three times daily with meals (1,500 mg/day total) — the Yin 2008 reference protocol used in nearly all published positive RCTs. Twice-daily dosing (1,000 mg/day) is a reasonable tolerability compromise. Dihydroberberine alternative: 100–200 mg twice daily with claimed 5–10× plasma exposure at the lower dose. Short plasma half-life (3–4 hours) is why TID dosing is the standard.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Widely available over-the-counter. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Widely available over-the-counter. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=berberine&tag=profpeptide-20" label="Berberine" />
         </div>
@@ -642,7 +642,7 @@ export default function BerberinePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -671,7 +671,7 @@ export default function BerberinePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/alpha-lipoic-acid" className="text-sm font-medium text-[#3A759F] hover:underline">Alpha Lipoic Acid</Link>
           <Link href="/supplements/chromium" className="text-sm font-medium text-[#3A759F] hover:underline">Chromium</Link>
@@ -682,7 +682,7 @@ export default function BerberinePage() {
       </div>
 
       <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comparisons</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/compare/berberine-vs-metformin" className="text-sm font-medium text-[#3A759F] hover:underline">Berberine vs Metformin &rarr;</Link>
         </div>

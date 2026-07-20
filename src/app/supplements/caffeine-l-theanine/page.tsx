@@ -161,11 +161,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -207,7 +207,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The natural peptide bridge is{" "}
             <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
@@ -215,7 +215,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/alpha-gpc" className="text-[#3A759F] hover:underline">Alpha-GPC</Link>{" "}
@@ -245,7 +245,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Morning vs afternoon.</span> Most users front-load the stack in the morning. Afternoon use is fine for caffeine-fast-metabolizers but risks sleep impact for slow metabolizers.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Sleep cutoff.</span> 6 hours before bed is the standard rule. 8 hours if you&apos;re sensitive. Caffeine&apos;s half-life is the longest variable here.</li>
@@ -265,7 +265,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly caffeine-driven)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly caffeine-driven)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Jitter, restlessness, or hand tremor at higher caffeine doses (200+ mg) — L-theanine attenuates but does not eliminate this</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild sleep disruption with late dosing — caffeine half-life is 5–6 hours; afternoon doses still measurably present at bedtime</li>
@@ -275,7 +275,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">L-theanine-specific (minimal)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">L-theanine-specific (minimal)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Excellent safety profile — no documented toxicity at any reasonable supplement dose</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild sedation reported at very high doses (&gt;400 mg in caffeine-naive users)</li>
@@ -283,7 +283,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Affirmative mitigation — what L-theanine fixes</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Affirmative mitigation — what L-theanine fixes</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Caffeine-induced anxiety and subjective tension — significantly reduced in the combination versus caffeine alone (Owen 2008, Haskell 2008)</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Caffeine-induced blood-pressure and heart-rate bumps — partially attenuated in published trials</li>
@@ -292,7 +292,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Other stimulants (nicotine, ADHD medications, ephedrine, decongestants) — compounded sympathetic activation. Watch total stimulant load.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Antidepressants (especially MAOIs and SSRIs) — caffeine can interact with serotonergic drugs; consult a clinician if you&apos;re on chronic treatment.</li>
@@ -366,7 +366,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -435,7 +435,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -563,7 +563,7 @@ export default function CaffeineLTheaninePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Caffeine + L-Theanine</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Caffeine + L-Theanine</h1>
         <span className="tag">Cognitive &amp; Nootropic</span>
         <span className="tag">Performance &amp; Energy</span>
       </div>
@@ -572,25 +572,25 @@ export default function CaffeineLTheaninePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Smart caffeine, the focus stack, caffeine+theanine, &ldquo;tea-like&rdquo; stack
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Smart caffeine, the focus stack, caffeine+theanine, &ldquo;tea-like&rdquo; stack
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Stimulant + amino acid stack (adenosine receptor antagonist + alpha-wave / GABA modulator)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Stimulant + amino acid stack (adenosine receptor antagonist + alpha-wave / GABA modulator)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Component supplements:</span>{" "}
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Component supplements:</span>{" "}
           <Link href="/supplements/caffeine" className="text-[#3A759F] hover:underline">Caffeine</Link>
           {" + "}
           <Link href="/supplements/l-theanine" className="text-[#3A759F] hover:underline">L-Theanine</Link>{" "}
           (canonical 1:2 ratio, ~100 mg caffeine + 200 mg L-theanine)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — multiple double-blind crossover RCTs (Owen 2008, Haskell 2008, Giesbrecht 2010, Einother 2010) independently replicate the synergy on attention switching, executive control, reaction time, and anxiety mitigation; meta-analysis support (Camfield 2014)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — multiple double-blind crossover RCTs (Owen 2008, Haskell 2008, Giesbrecht 2010, Einother 2010) independently replicate the synergy on attention switching, executive control, reaction time, and anxiety mitigation; meta-analysis support (Camfield 2014)
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is the Caffeine + L-Theanine stack?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is the Caffeine + L-Theanine stack?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Caffeine + L-Theanine is one of the most extensively researched cognitive supplement stacks in existence — and one of the few where the synergy between two compounds is demonstrably better than either compound alone in published RCTs.{" "}
@@ -600,7 +600,7 @@ export default function CaffeineLTheaninePage() {
             is an amino acid found almost exclusively in tea leaves (Camellia sinensis) that promotes alpha-wave activity and modulates GABA, producing calm focus without sedation. Combined at the canonical 1:2 ratio (~100 mg caffeine + 200 mg L-theanine), they produce the alertness and executive-control benefit of caffeine, minus most of its anxiety, jitter, and cardiovascular edge. This is the neurochemical reason tea feels calmer than coffee — and the protocol most biohackers settle on once they&apos;ve experimented past coffee alone.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -614,10 +614,10 @@ export default function CaffeineLTheaninePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> Canonical 1:2 ratio — 100 mg caffeine + 200 mg L-theanine — taken 30–60 minutes before sustained-attention tasks. The published dose range spans 1:1 to 1:4; the 1:2 protocol is the most-replicated. Light starting dose: 50 mg caffeine + 100 mg L-theanine. High-tolerance: 200 mg caffeine + 400 mg L-theanine.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> Canonical 1:2 ratio — 100 mg caffeine + 200 mg L-theanine — taken 30–60 minutes before sustained-attention tasks. The published dose range spans 1:1 to 1:4; the 1:2 protocol is the most-replicated. Light starting dose: 50 mg caffeine + 100 mg L-theanine. High-tolerance: 200 mg caffeine + 400 mg L-theanine.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter as combined capsules or separate caffeine tablets + L-theanine capsules. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Available over-the-counter as combined capsules or separate caffeine tablets + L-theanine capsules. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=caffeine+l-theanine&tag=profpeptide-20" label="Caffeine + L-Theanine" />
         </div>
@@ -628,7 +628,7 @@ export default function CaffeineLTheaninePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -657,7 +657,7 @@ export default function CaffeineLTheaninePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/caffeine" className="text-sm font-medium text-[#3A759F] hover:underline">Caffeine</Link>
           <Link href="/supplements/l-theanine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Theanine</Link>

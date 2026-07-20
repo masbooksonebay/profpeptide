@@ -194,11 +194,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -240,7 +240,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Zinc pairs naturally with healing and immune-supporting peptides. Tissue-repair peptides like{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
@@ -250,7 +250,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <span className="font-semibold">Copper</span> — 1–2 mg copper for every 25+ mg/day of chronic zinc. Prevents copper depletion that occurs with prolonged high-dose zinc supplementation.
@@ -288,7 +288,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Dietary zinc sources.</span> Red meat, oysters, shellfish, poultry, beans, nuts, seeds. Vegetarians/vegans typically benefit more from supplementation due to lower dietary zinc availability and higher phytate intake reducing absorption.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Phytate-rich diet considerations.</span> Whole grains, legumes, nuts contain phytates that reduce zinc absorption. Sprouting/soaking grains and legumes reduces phytate content.</li>
@@ -310,7 +310,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Nausea — particularly on empty stomach. Most common reason users discontinue supplementation. Taking with food resolves in most cases.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Metallic taste with lozenges — expected from the cold-treatment protocol. Resolves when lozenges stop.</li>
@@ -318,7 +318,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Copper deficiency from chronic high-dose zinc.</span> Chronic supplementation above 25 mg/day for months can cause copper deficiency — causing anemia, neutropenia, immune suppression, neurological problems, and reduced HDL cholesterol. Mitigation: 1–2 mg copper for chronic doses above 25 mg/day.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reduced HDL cholesterol at chronic high doses.</span> Often actually copper-deficiency-mediated. Resolves with copper co-supplementation.</li>
@@ -328,7 +328,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Antibiotics (tetracyclines, fluoroquinolones).</span> Zinc reduces antibiotic absorption by chelation. Separate by 2+ hours.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Penicillamine.</span> Zinc reduces penicillamine absorption — relevant for Wilson disease treatment.</li>
@@ -414,7 +414,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -477,7 +477,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -573,7 +573,7 @@ export default function ZincPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Zinc</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Zinc</h1>
         <span className="tag">Gut Health &amp; Immunity</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -581,18 +581,18 @@ export default function ZincPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Zinc picolinate (high bioavailability), zinc bisglycinate (chelated, gentle), zinc citrate (cost-efficient), zinc gluconate (cold lozenge form), zinc acetate (cold lozenge form), zinc oxide (poor bioavailability, avoid internally), zinc sulfate; related variant page:{" "}<Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">zinc carnosine</Link>{" "}(gastric mucosal applications)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Zinc picolinate (high bioavailability), zinc bisglycinate (chelated, gentle), zinc citrate (cost-efficient), zinc gluconate (cold lozenge form), zinc acetate (cold lozenge form), zinc oxide (poor bioavailability, avoid internally), zinc sulfate; related variant page:{" "}<Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">zinc carnosine</Link>{" "}(gastric mucosal applications)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Essential trace mineral / cofactor for 300+ enzymes and 1,000+ transcription factors / immune cell development requirement / rhinovirus 3C protease inhibitor (cold lozenges) / testosterone synthesis cofactor in deficient men
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Essential trace mineral / cofactor for 300+ enzymes and 1,000+ transcription factors / immune cell development requirement / rhinovirus 3C protease inhibitor (cold lozenges) / testosterone synthesis cofactor in deficient men
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong (cold duration reduction with lozenge protocol — Singh 2013 Cochrane: ~33% reduction with zinc acetate/gluconate, 75–92 mg/day started within 24 hours of symptoms; Hemilä 2017 meta-analysis confirms). Strong (immune cell function in deficient individuals; Prasad 2008). Strong (deficiency prevention — ~2 billion globally deficient; Prasad 2013). Moderate (testosterone in zinc-deficient men only — Prasad 1996; effect does NOT replicate in zinc-replete eugonadal men). Moderate (AREDS-style macular degeneration protocol at high dose). Modest (general supplementation in zinc-replete healthy users). Upper-GI / H. pylori / NSAID gastropathy applications covered separately on the{" "}<Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">zinc carnosine variant</Link>.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong (cold duration reduction with lozenge protocol — Singh 2013 Cochrane: ~33% reduction with zinc acetate/gluconate, 75–92 mg/day started within 24 hours of symptoms; Hemilä 2017 meta-analysis confirms). Strong (immune cell function in deficient individuals; Prasad 2008). Strong (deficiency prevention — ~2 billion globally deficient; Prasad 2013). Moderate (testosterone in zinc-deficient men only — Prasad 1996; effect does NOT replicate in zinc-replete eugonadal men). Moderate (AREDS-style macular degeneration protocol at high dose). Modest (general supplementation in zinc-replete healthy users). Upper-GI / H. pylori / NSAID gastropathy applications covered separately on the{" "}<Link href="/supplements/zinc-carnosine" className="text-[#3A759F] hover:underline">zinc carnosine variant</Link>.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is zinc?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is zinc?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Zinc is an essential trace mineral that serves as a structural component or catalytic cofactor in over 300 enzymes and more than 1,000 transcription factors — making it second only to iron among trace minerals in biological importance. It&apos;s required for immune cell development, DNA synthesis, protein synthesis, wound healing, cell division, taste and smell sensation, and testosterone synthesis. Zinc is particularly concentrated in immune cells and the gut epithelium — two critical sites of action. Zinc deficiency impairs virtually every aspect of immune function, increases gut permeability, and is associated with increased susceptibility to infection, poor wound healing, and impaired growth. Global zinc deficiency affects approximately 2 billion people (Prasad 2013); even marginal deficiency is common in elderly, vegetarians, athletes, alcohol users, and individuals with gastrointestinal conditions affecting absorption. Unlike some minerals, zinc has no dedicated storage depot — daily intake is required to maintain status. This page covers zinc&apos;s general supplementation profile: <span className="font-semibold">forms compared</span> (picolinate, bisglycinate, citrate, gluconate, acetate, oxide — bioavailability differs substantially), <span className="font-semibold">cold lozenge protocol</span> (Singh 2013 Cochrane — ~33% cold duration reduction with zinc acetate or gluconate 75–92 mg/day started within 24 hours of symptoms), <span className="font-semibold">immune function</span> (Prasad 2008 — required for T-cell, NK cell, neutrophil, macrophage development and function), <span className="font-semibold">testosterone in deficient men</span> (Prasad 1996 — effective in zinc-deficient men; does NOT consistently replicate in zinc-replete eugonadal men), and <span className="font-semibold">copper depletion management</span> at chronic high doses. Upper-GI applications — specifically H. pylori adjunct therapy, NSAID gastropathy, gastric ulcer healing — use the chelated form{" "}
@@ -600,7 +600,7 @@ export default function ZincPage() {
             and are covered separately on the variant page (the chelate has different evidence base and mucosal-binding properties from general zinc supplementation). Practical guidance: 15–30 mg elemental zinc daily for general supplementation (read labels for elemental content vs compound weight); cold lozenge protocol for acute cold treatment only (not chronic); add 1–2 mg copper for chronic doses above 25 mg/day to prevent depletion. Zinc + vitamin C is the canonical immune-support pairing.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -616,10 +616,10 @@ export default function ZincPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 15–30 mg elemental zinc daily for general supplementation. Cold lozenges: 13+ mg ionic zinc per lozenge every 2–3 hours (75–92 mg/day total) within 24 hours of symptoms, for 3–7 days. Forms: zinc picolinate (highest bioavailability) or bisglycinate (gentle) for general use; acetate or gluconate for cold lozenges; AVOID zinc oxide for internal supplementation.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 15–30 mg elemental zinc daily for general supplementation. Cold lozenges: 13+ mg ionic zinc per lozenge every 2–3 hours (75–92 mg/day total) within 24 hours of symptoms, for 3–7 days. Forms: zinc picolinate (highest bioavailability) or bisglycinate (gentle) for general use; acetate or gluconate for cold lozenges; AVOID zinc oxide for internal supplementation.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Nausea on empty stomach (take with food); copper depletion at chronic doses 25+ mg/day (add 1–2 mg copper); upper tolerable limit 40 mg/day; competing absorption with iron and calcium (separate timing); antibiotic chelation (separate by 2+ hours); reduced HDL at chronic high doses (copper-deficiency-mediated); intranasal zinc products can cause anosmia — avoid.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Nausea on empty stomach (take with food); copper depletion at chronic doses 25+ mg/day (add 1–2 mg copper); upper tolerable limit 40 mg/day; competing absorption with iron and calcium (separate timing); antibiotic chelation (separate by 2+ hours); reduced HDL at chronic high doses (copper-deficiency-mediated); intranasal zinc products can cause anosmia — avoid.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=zinc+picolinate+bisglycinate+elemental&tag=profpeptide-20" label="Zinc" />
         </div>
@@ -630,7 +630,7 @@ export default function ZincPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -659,7 +659,7 @@ export default function ZincPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc Carnosine</Link>
           <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C</Link>

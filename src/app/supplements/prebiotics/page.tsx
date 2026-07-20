@@ -175,12 +175,12 @@ const sections = [
           <span className="font-semibold">Fiber-type integrated comparison.</span>
         </p>
         <div className="overflow-x-auto -mx-4 sm:mx-0 pt-2">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Fiber type</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Source / form</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Profile</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Fiber type</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Source / form</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Profile</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -228,11 +228,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -274,7 +274,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Prebiotics pair naturally with gut-healing peptides via the microbiome-and-mucosal axis.{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
@@ -284,7 +284,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/probiotics" className="text-[#3A759F] hover:underline">Probiotics</Link>{" "}
@@ -320,7 +320,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Dietary fiber diversity.</span> Whole-plant foods (vegetables, fruits, legumes, whole grains) provide diverse prebiotic substrates. Supplements add concentrated specific fibers; food provides the broader spectrum.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Specific high-prebiotic foods.</span> Garlic, onions, leeks, asparagus, Jerusalem artichoke, dandelion greens, chicory, oats, barley, green bananas, cooked-and-cooled rice/potatoes (RS3).</li>
@@ -343,7 +343,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Gas, bloating, abdominal distension.</span> Inherent to the bacterial fermentation mechanism. Reduces with gradual dose escalation and microbiome adaptation over 2–4 weeks.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild abdominal cramping — particularly with rapid dose escalation.</li>
@@ -352,7 +352,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">IBS, particularly low-FODMAP elimination phase.</span> Prebiotics ARE FODMAPs. Avoid during elimination; reintroduce slowly under dietitian guidance.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">SIBO (small intestinal bacterial overgrowth).</span> Prebiotics may worsen symptoms by feeding the overgrowth. Coordinate with GI before supplementing.</li>
@@ -364,7 +364,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Diabetes medications.</span> Modest glucose-response reduction may affect dosing. Monitor.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Antibiotics.</span> Antibiotics disrupt microbiome; prebiotics support recovery. Timing coordination matters — many protocols separate antibiotic doses from prebiotic doses by 2+ hours.</li>
@@ -449,7 +449,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -512,7 +512,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -608,7 +608,7 @@ export default function PrebioticsPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Prebiotics</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Prebiotics</h1>
         <span className="tag">Gut Health &amp; Immunity</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -616,18 +616,18 @@ export default function PrebioticsPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Inulin (long-chain fructan from chicory/agave), FOS / oligofructose / fructooligosaccharides (short-chain fructan), GOS / galactooligosaccharides, resistant starch (RS3 from cooked-and-cooled foods, RS4 modified supplement), dietary fiber, fermentable substrate
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Inulin (long-chain fructan from chicory/agave), FOS / oligofructose / fructooligosaccharides (short-chain fructan), GOS / galactooligosaccharides, resistant starch (RS3 from cooked-and-cooled foods, RS4 modified supplement), dietary fiber, fermentable substrate
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Non-digestible fermentable fiber / substrate for beneficial gut bacteria (primarily Bifidobacterium and Lactobacillus) / SCFA precursor (butyrate, propionate, acetate via bacterial fermentation) / category page covering inulin, FOS, GOS, and resistant starch with fiber-type forms-compared treatment
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Non-digestible fermentable fiber / substrate for beneficial gut bacteria (primarily Bifidobacterium and Lactobacillus) / SCFA precursor (butyrate, propionate, acetate via bacterial fermentation) / category page covering inulin, FOS, GOS, and resistant starch with fiber-type forms-compared treatment
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong for microbiome compositional shifts (Bifidobacterium increases at 5+ g/day per Roberfroid 2010) and SCFA production. Moderate for specific clinical applications: bowel regularity, GOS-mediated URTI reduction in elderly (Vulevic 2008), calcium absorption and bone mineralization in adolescents (Abrams 2005), postprandial glucose response reduction. Mixed for IBD (some benefit in UC remission; possible flare worsening). Modest for weight loss, mood, and broad immune claims. By definition FODMAPs — contraindicated during low-FODMAP elimination phase for IBS.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong for microbiome compositional shifts (Bifidobacterium increases at 5+ g/day per Roberfroid 2010) and SCFA production. Moderate for specific clinical applications: bowel regularity, GOS-mediated URTI reduction in elderly (Vulevic 2008), calcium absorption and bone mineralization in adolescents (Abrams 2005), postprandial glucose response reduction. Mixed for IBD (some benefit in UC remission; possible flare worsening). Modest for weight loss, mood, and broad immune claims. By definition FODMAPs — contraindicated during low-FODMAP elimination phase for IBS.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What are prebiotics?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What are prebiotics?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Prebiotics are selectively fermented non-digestible carbohydrates that support the growth and activity of beneficial microorganisms in the gut. Unlike{" "}
@@ -635,7 +635,7 @@ export default function PrebioticsPage() {
             (which introduce live bacteria), prebiotics provide the substrate that feeds the beneficial bacteria already in your microbiome plus any introduced strains. The most-studied prebiotic fibers are inulin (long-chain fructan from chicory or agave), FOS (fructooligosaccharides / oligofructose — shorter-chain fructan), GOS (galactooligosaccharides — galactose-based), and resistant starch (RS, from cooked-and-cooled rice/potatoes or modified supplemental forms). All resist digestion in the small intestine, pass through intact, and are fermented by specific bacterial populations in the colon — primarily Bifidobacterium and Lactobacillus species, which have the enzymatic machinery to break down these substrates. Bacterial fermentation produces <span className="font-semibold">short-chain fatty acids (SCFAs)</span> — butyrate, propionate, and acetate — that have multiple beneficial effects: butyrate is the primary fuel for colonocytes and supports gut barrier integrity (mechanism overlapping with{" "}<Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">glutamine&apos;s enterocyte support</Link>{" "}in the small intestine); propionate affects hepatic glucose and lipid metabolism; SCFA-mediated colonic acidification increases mineral absorption (calcium, magnesium). Fiber-type matters substantially: inulin (long-chain) is the most-studied, slower-fermenting, and generally well-tolerated; FOS (short-chain) ferments rapidly and produces more gas; GOS has the strongest single-prebiotic evidence for immune effects (Vulevic 2008 documented URTI reduction in elderly with 5.5 g/day for 10 weeks); resistant starch ferments most slowly and distally in the colon, produces proportionally more butyrate (Topping 2001), and is generally best-tolerated for users with GI sensitivity. The fiber-type forms-compared treatment is integrated into the dosing section rather than a sub-tier — these are different tools rather than different evidence tiers. The honest evidence summary: Strong for microbiome compositional shifts (Bifidobacterium increases at 5+ g/day per Roberfroid 2010); Moderate for specific clinical outcomes (GOS-URTI in elderly, calcium absorption in adolescents per Abrams 2005, bowel regularity, glucose response); Modest for broader claims (weight loss, mood, generalized immune enhancement). The dominant practical consideration is GI tolerance — bacterial fermentation produces gas as a byproduct alongside the SCFAs you want. Start low (2–3 g/day), build up over weeks (1–2 g/week to target 5–10 g/day), and choose slower-fermenting fibers if GI symptoms are problematic. Critical caveat: prebiotics ARE FODMAPs (Fermentable Oligo-, Di-, Monosaccharides And Polyols) — the dietary category that triggers IBS symptoms. Avoid during low-FODMAP elimination phase for IBS; resistant starch is somewhat lower-FODMAP and may be better tolerated in sensitive users. Combine with probiotics for the synbiotic approach, ideally starting one at a time with 2–4 weeks between to allow adaptation.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -650,10 +650,10 @@ export default function PrebioticsPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 3–10 g/day, starting low (2–3 g/day) and building up over 2–4 weeks. Inulin or GOS for general use; resistant starch for GI-sensitive users wanting butyrate focus; FOS for users targeting rapid Bifidobacterium response who tolerate it. Take with meals; split across day for higher doses.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 3–10 g/day, starting low (2–3 g/day) and building up over 2–4 weeks. Inulin or GOS for general use; resistant starch for GI-sensitive users wanting butyrate focus; FOS for users targeting rapid Bifidobacterium response who tolerate it. Take with meals; split across day for higher doses.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Gas and bloating (inherent to fermentation mechanism; reduces with adaptation); IBS / low-FODMAP elimination contraindication; SIBO worsening; IBD flare caution; severe immunocompromise coordination; diabetes medication interactions (modest glucose response changes); avoid &quot;proprietary blend&quot; products without disclosed fiber type.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Gas and bloating (inherent to fermentation mechanism; reduces with adaptation); IBS / low-FODMAP elimination contraindication; SIBO worsening; IBD flare caution; severe immunocompromise coordination; diabetes medication interactions (modest glucose response changes); avoid &quot;proprietary blend&quot; products without disclosed fiber type.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=prebiotic+inulin+gos+resistant+starch&tag=profpeptide-20" label="Prebiotics" />
         </div>
@@ -664,7 +664,7 @@ export default function PrebioticsPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -693,7 +693,7 @@ export default function PrebioticsPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/probiotics" className="text-sm font-medium text-[#3A759F] hover:underline">Probiotics</Link>
           <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">Glutamine</Link>

@@ -172,11 +172,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -227,7 +227,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The natural peptide bridges for zinc-carnosine are{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
@@ -237,7 +237,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/glutamine" className="text-[#3A759F] hover:underline">L-Glutamine</Link>{" "}
@@ -264,7 +264,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">NSAID minimization.</span> Zinc-carnosine protects against NSAID damage but doesn&apos;t eliminate it. Reduce NSAID use where possible; use the lowest effective dose for the shortest needed duration.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol moderation.</span> Alcohol is one of the most gut-stressful inputs. Heavy or chronic use disrupts the mucosal barrier directly; zinc-carnosine can&apos;t fully offset this. Reduce or eliminate during active gut-healing protocols.</li>
@@ -284,7 +284,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mild, infrequent)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mild, infrequent)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI symptoms — nausea, soft stools, or stomach upset, typically transient and resolved by taking with more food</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Constipation in a minority of users (less common than the loose-stool pattern)</li>
@@ -292,7 +292,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Watch-list (cumulative zinc-related)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Watch-list (cumulative zinc-related)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Total elemental zinc above 40 mg/day UL on multi-month use — audit all zinc sources (multivitamin, <Link href="/supplements/zma" className="text-[#3A759F] hover:underline">ZMA</Link>, standalone <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">zinc</Link>, dietary).</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Copper deficiency from prolonged high-zinc intake — impaired copper absorption is the mechanism; mild copper supplementation (1–2 mg/day) offsets it.</li>
@@ -300,7 +300,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Tetracycline and quinolone antibiotics — zinc binds these drugs, reducing their absorption. Separate dosing by at least 2 hours.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Penicillamine (used in Wilson&apos;s disease and rheumatoid arthritis) — zinc reduces its absorption. Separate dosing by at least 2 hours.</li>
@@ -374,7 +374,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -437,7 +437,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -565,7 +565,7 @@ export default function ZincCarnosinePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Zinc-Carnosine</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Zinc-Carnosine</h1>
         <span className="tag">Recovery &amp; Tissue Repair</span>
         <span className="tag">Gut Health &amp; Immunity</span>
       </div>
@@ -574,18 +574,18 @@ export default function ZincCarnosinePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Polaprezinc, zinc L-carnosine, ZnC, PepZin GI (US branded), Promac (Japan Rx brand)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Polaprezinc, zinc L-carnosine, ZnC, PepZin GI (US branded), Promac (Japan Rx brand)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Chelated mineral-dipeptide complex (zinc + L-carnosine, 1:1 molar ratio)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Chelated mineral-dipeptide complex (zinc + L-carnosine, 1:1 molar ratio)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — 30+ years of Japanese prescription use (polaprezinc/Promac, approved 1994) for gastric ulcer + H. pylori adjunct therapy; Mahmood 2007 (Gut) mechanism RCT in human volunteers; Davison 2016 (Am J Clin Nutr) athlete gut-permeability RCT; Hewlings & Kalman 2020 comprehensive review
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — 30+ years of Japanese prescription use (polaprezinc/Promac, approved 1994) for gastric ulcer + H. pylori adjunct therapy; Mahmood 2007 (Gut) mechanism RCT in human volunteers; Davison 2016 (Am J Clin Nutr) athlete gut-permeability RCT; Hewlings & Kalman 2020 comprehensive review
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Zinc-Carnosine?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Zinc-Carnosine?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Zinc-carnosine (polaprezinc) is a chelated 1:1 molar complex of zinc and the dipeptide L-carnosine. The chelation is what matters: the complex physically adheres to damaged gastrointestinal mucosa rather than being rapidly absorbed, concentrating its protective and healing actions at sites of injury along the GI tract. The compound has been used as a prescription gastric ulcer drug in Japan since 1994 (brand name Promac) and has 30+ years of clinical use data behind it. Western functional medicine adopted it for leaky-gut and NSAID-protection protocols starting in the 2000s, with mechanism-grade RCT support from Mahmood 2007 (Gut journal) and athlete-application evidence from Davison 2016 (Am J Clin Nutr). It is one of the few gut-healing supplements with prescription-grade evidence behind it — and one of the most natural complementary pairings for the gut-healing peptide cluster (
@@ -593,7 +593,7 @@ export default function ZincCarnosinePage() {
             <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>).
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -607,10 +607,10 @@ export default function ZincCarnosinePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 75 mg twice daily with meals (the Japanese Rx polaprezinc protocol) for general gut-healing and ulcer applications. The Davison 2016 athlete trial used 37.5 mg BID for 14 days pre-event and demonstrated efficacy at the lower dose. For NSAID adjunct use: 75 mg with each NSAID dose. Each 75 mg capsule contains ~17 mg elemental zinc — audit total zinc intake from all sources to stay below the 40 mg/day UL.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 75 mg twice daily with meals (the Japanese Rx polaprezinc protocol) for general gut-healing and ulcer applications. The Davison 2016 athlete trial used 37.5 mg BID for 14 days pre-event and demonstrated efficacy at the lower dose. For NSAID adjunct use: 75 mg with each NSAID dose. Each 75 mg capsule contains ~17 mg elemental zinc — audit total zinc intake from all sources to stay below the 40 mg/day UL.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Available over-the-counter from most supplement retailers. Quality varies — review the quality-markers checklist in the Where to Buy section below before purchasing.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=zinc+carnosine&tag=profpeptide-20" label="Zinc-Carnosine" />
         </div>
@@ -621,7 +621,7 @@ export default function ZincCarnosinePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -650,7 +650,7 @@ export default function ZincCarnosinePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/glutamine" className="text-sm font-medium text-[#3A759F] hover:underline">L-Glutamine</Link>
           <Link href="/supplements/probiotics" className="text-sm font-medium text-[#3A759F] hover:underline">Probiotics</Link>

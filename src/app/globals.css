@@ -10,7 +10,7 @@
   body {
     /* Soft slate-gray page (not pure white) so white cards/surfaces clearly
        layer above it. Dark mode keeps #0f172a below. */
-    @apply bg-[#F1F5F9] text-gray-800 font-sans antialiased;
+    @apply bg-[#F4F6F8] text-gray-800 font-sans antialiased;
     font-size: 18px;
     line-height: 1.65;
   }
@@ -22,7 +22,7 @@
     font-family: Inter, system-ui, sans-serif;
     font-weight: 600;
     letter-spacing: -0.02em;
-    color: #1e2d3d;
+    color: #16181B;
     line-height: 1.25;
   }
   h1 {
@@ -50,12 +50,12 @@
     @apply max-w-5xl mx-auto px-4 sm:px-6 py-16;
   }
   .card {
-    /* Light: white card clearly floats above the #F1F5F9 page — full gray-200
+    /* Light: white card clearly floats above the #F4F6F8 page — full gray-200
        border + a more present (still tasteful) layered shadow for depth.
        On hover every card gets an accent border + shadow lift (matching the
        homepage "Latest News" card), in both light and dark.
        Dark: resting border/shadow reasserted to the original values. */
-    @apply bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl p-6 transition-all duration-200
+    @apply bg-white dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-700 rounded-xl p-6 transition-all duration-200
       hover:border-brand dark:hover:border-brand
       shadow-[0_1px_3px_rgba(16,24,40,0.08),0_4px_12px_-2px_rgba(16,24,40,0.08)]
       hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]
@@ -66,7 +66,7 @@
   }
   /* Section heading tied to a TOC anchor: high-contrast, plain (no accent bar). */
   .section-heading {
-    @apply text-lg font-semibold text-[#1e2d3d] dark:text-slate-100;
+    @apply text-lg font-semibold text-[#16181B] dark:text-slate-100;
   }
   /* Bordered surface panel (Quick Facts, profile TOC): border + rounded +
      layered resting shadow, light + dark. Same resting treatment as .card
@@ -74,7 +74,7 @@
      info panels, not clickable, so no hover affordance. (.card keeps its hover.)
      Keeps the live profile and the /prototype/profile sandbox in sync. */
   .panel-card {
-    @apply bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl
+    @apply bg-white dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-700 rounded-xl
       shadow-[0_1px_3px_rgba(16,24,40,0.08),0_4px_12px_-2px_rgba(16,24,40,0.08)]
       dark:shadow-sm;
   }

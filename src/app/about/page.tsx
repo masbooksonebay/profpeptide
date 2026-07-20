@@ -45,17 +45,17 @@ export default function AboutPage() {
       />
       <div className="section max-w-3xl">
         <div className="flex flex-wrap items-center gap-3 mb-2">
-          <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">About Prof. Peptide</h1>
+          <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">About Prof. Peptide</h1>
         </div>
         <p className="text-sm text-gray-500 dark:text-slate-400 mb-4">Last reviewed: May 18, 2026</p>
 
-        <p className="text-xl font-medium text-[#1e2d3d] dark:text-slate-100 leading-relaxed mb-10">
+        <p className="text-xl font-medium text-[#16181B] dark:text-slate-100 leading-relaxed mb-10">
           Peptide research consolidated. One source, structured.
         </p>
 
         <div className="space-y-10">
           <section>
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">
               The problem we built this to fix
             </h2>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -67,7 +67,7 @@ export default function AboutPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">
               What you&rsquo;ll find here
             </h2>
             <ul className="list-disc list-inside space-y-2">
@@ -96,14 +96,14 @@ export default function AboutPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">How we work</h2>
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">How we work</h2>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Profiles are sourced from peer-reviewed research and primary vendor documentation. Citations are linked where applicable. Pages are dated and refreshed as new research lands. Where the data isn&rsquo;t clear, we say so &mdash; rather than padding with personal protocols dressed up as facts.
             </p>
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Affiliate disclosure</h2>
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Affiliate disclosure</h2>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Prof. Peptide is supported by affiliate commissions from the vendors we list. The codes on this site (PROFPEPTIDE, PROF10, and others) give you a discount and pay us a commission when used. Vendors are selected and ranked based on verified COA transparency, purity standards, and fulfillment reliability &mdash; independently of commission rates.
             </p>

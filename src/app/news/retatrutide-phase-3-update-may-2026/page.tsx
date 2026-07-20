@@ -44,7 +44,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
         </Link>
 
         <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">May 11, 2026 &middot; Last updated: May 11, 2026</p>
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-6">
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-6">
           Retatrutide Phase 3 Update &mdash; Diabetes and Osteoarthritis Trials Hit Primary Endpoints
         </h1>
 
@@ -56,7 +56,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
             Two recent Phase 3 readouts now begin to test whether the Phase 2 signal holds at the larger scale required for FDA submission. Here&rsquo;s what the TRANSCEND-T2D-1 and TRIUMPH-4 trials show &mdash; and what comes next.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">A Quick Refresher on Retatrutide</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">A Quick Refresher on Retatrutide</h2>
           <p>
             Retatrutide is a once-weekly subcutaneous peptide that activates three different receptors simultaneously: glucose-dependent insulinotropic polypeptide (GIP), glucagon-like peptide-1 (GLP-1), and glucagon. The triple-receptor design distinguishes it from tirzepatide, which is a dual GIP/GLP-1 agonist, and from semaglutide, which targets GLP-1 alone.
           </p>
@@ -67,7 +67,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
             The Phase 3 program for retatrutide is divided across two trial families. TRIUMPH covers obesity and obesity-adjacent indications. TRANSCEND-T2D evaluates retatrutide specifically in type 2 diabetes. Together, the programs span multiple sub-trials targeting weight, glycemic control, osteoarthritis pain, sleep apnea, cardiovascular and renal outcomes, and metabolic liver disease.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">TRANSCEND-T2D-1 &mdash; First Type 2 Diabetes Phase 3 Hits All Endpoints</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">TRANSCEND-T2D-1 &mdash; First Type 2 Diabetes Phase 3 Hits All Endpoints</h2>
           <p>
             In March 2026, Eli Lilly announced positive topline results from TRANSCEND-T2D-1, the first Phase 3 trial evaluating retatrutide specifically in adults with type 2 diabetes. The trial enrolled patients with a mean diabetes duration of 2.5 years who had not achieved adequate glycemic control through diet and exercise alone.
           </p>
@@ -83,7 +83,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
             The 17% weight loss figure is particularly notable in a T2D population. Earlier-generation GLP-1 therapies typically delivered 6-10% weight reduction in T2D trials, and tirzepatide&rsquo;s SURPASS program in T2D showed weight reductions in the 11-15% range. The retatrutide T2D data approaches the weight-loss magnitude previously seen only in obesity-specific trials.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">TRIUMPH-4 &mdash; Obesity Plus Knee Osteoarthritis</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">TRIUMPH-4 &mdash; Obesity Plus Knee Osteoarthritis</h2>
           <p>
             Earlier, in December 2025, Lilly reported topline results from TRIUMPH-4, which evaluated retatrutide in adults with obesity or overweight and knee osteoarthritis. The trial tested the two highest investigational doses (9 mg and 12 mg) over the trial duration and reported across both weight and pain endpoints.
           </p>
@@ -102,7 +102,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
             Knee osteoarthritis is a meaningful comorbidity in the obese population. Chronic mechanical loading of the joint accelerates cartilage degradation, and weight reduction is one of the few non-surgical interventions that consistently improves symptoms. The TRIUMPH-4 results suggest retatrutide&rsquo;s weight loss may translate into substantial functional improvement for patients with co-occurring obesity and osteoarthritis, potentially delaying or avoiding total joint replacement in some cases.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What&rsquo;s Next &mdash; Seven Additional Readouts Expected in 2026</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What&rsquo;s Next &mdash; Seven Additional Readouts Expected in 2026</h2>
           <p>
             The TRANSCEND-T2D-1 and TRIUMPH-4 readouts are early markers in a much larger Phase 3 program. Eli Lilly has stated that seven additional Phase 3 trial readouts are expected to complete in 2026, spanning:
           </p>
@@ -121,7 +121,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
             For regulatory timing, Lilly has not publicly committed to a Phase 3 to approval submission timeline. Industry analysts have speculated based on tirzepatide&rsquo;s precedent &mdash; which moved from Phase 3 to FDA approval in approximately 18 months &mdash; that a retatrutide submission could come in late 2026 or 2027 if the Phase 3 data continues to track the Phase 2 efficacy signal.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Our Take</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Our Take</h2>
           <p>
             The Phase 3 data so far supports the dramatic Phase 2 efficacy signal. A 17% weight loss in TRANSCEND-T2D-1 and 71.2 lbs in TRIUMPH-4 are both consistent with retatrutide retaining its leading position in weight-loss efficacy across the GLP-1 family. What&rsquo;s strategically more interesting is the multi-indication Phase 3 scope &mdash; Lilly is testing retatrutide against a clinical surface broader than typical for a metabolic compound, which would position it as a category-redefining therapeutic if the broader program continues to deliver.
           </p>
@@ -141,7 +141,7 @@ export default function RetatrutidePhase3UpdateMay2026Page() {
         </div>
 
         <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Explore More</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-3">Explore More</h2>
           <div className="flex flex-wrap gap-3">
             <Link href="/peptides/retatrutide" className="btn-primary text-sm">Retatrutide Profile</Link>
             <Link href="/coupons" className="btn-outline text-sm">Browse Discount Codes</Link>

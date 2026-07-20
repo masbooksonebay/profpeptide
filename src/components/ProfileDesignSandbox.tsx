@@ -40,7 +40,7 @@ const SECTIONS: Section[] = [
 function pageBgClass(bg: Bg): string {
   // Dark background is held constant so the toggle only probes light-mode page bg.
   switch (bg) {
-    case "slate": return "bg-[#F1F5F9] dark:bg-[#0f172a]";
+    case "slate": return "bg-[#F4F6F8] dark:bg-[#0f172a]";
     case "offwhite": return "bg-[#FAFAFA] dark:bg-[#0f172a]";
     case "white": return "bg-white dark:bg-[#0f172a]";
     case "bands": return "bg-white dark:bg-[#0f172a]";
@@ -51,9 +51,9 @@ function sectionWrapClass(i: number, dividers: Dividers, spacing: Spacing, bg: B
   const parts: string[] = ["scroll-mt-24"];
   if (i > 0) {
     parts.push(spacing === "current" ? "mt-12" : spacing === "roomy" ? "mt-[4.5rem]" : "mt-24");
-    if (dividers === "light") parts.push("border-t border-gray-200 dark:border-slate-700 pt-12");
+    if (dividers === "light") parts.push("border-t border-[#D9DEE4] dark:border-slate-700 pt-12");
     else if (dividers === "accent") parts.push("border-t-2 border-brand/30 pt-12");
-    else if (dividers === "spaced") parts.push("border-t border-gray-200 dark:border-slate-700 pt-16");
+    else if (dividers === "spaced") parts.push("border-t border-[#D9DEE4] dark:border-slate-700 pt-16");
   }
   // Off-white bands behind alternating sections (approximated within the column).
   if (bg === "bands" && i % 2 === 1) parts.push("bg-[#F3F4F6] dark:bg-[#1e293b]/40 rounded-xl px-5 py-5");
@@ -80,7 +80,7 @@ function Group<T extends string>({
             className={`text-[11px] px-2 py-1 rounded border transition-colors ${
               value === o.v
                 ? "bg-brand text-white border-brand"
-                : "bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border-gray-200 dark:border-slate-600 hover:border-brand"
+                : "bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border-[#D9DEE4] dark:border-slate-600 hover:border-brand"
             }`}
           >
             {o.label}
@@ -92,7 +92,7 @@ function Group<T extends string>({
 }
 
 export default function ProfileDesignSandbox() {
-  // Defaults match the combination shipped to the live profile: global #F1F5F9
+  // Defaults match the combination shipped to the live profile: global #F4F6F8
   // background (no page-scoped bg / bands), accent-rule dividers, current
   // spacing, bordered-card panels — so the sandbox opens in sync.
   const [dividers, setDividers] = useState<Dividers>("accent");
@@ -107,7 +107,7 @@ export default function ProfileDesignSandbox() {
     <div className={`min-h-screen ${pageBgClass(bg)}`}>
       {/* ===== Dev toggle panel (fixed corner) ===== */}
       <div className="fixed bottom-4 right-4 z-[100] w-[248px] rounded-xl border-2 border-dashed border-brand bg-white dark:bg-[#1e293b] shadow-2xl">
-        <div className="flex items-center justify-between px-3 py-2 border-b border-gray-200 dark:border-slate-700">
+        <div className="flex items-center justify-between px-3 py-2 border-b border-[#D9DEE4] dark:border-slate-700">
           <span className="text-[11px] font-mono font-semibold text-brand">🎛 DESIGN SANDBOX · dev</span>
           <button onClick={() => setOpen((o) => !o)} className="text-xs text-gray-400 hover:text-brand" aria-label="Toggle panel">
             {open ? "▾" : "▸"}
@@ -120,7 +120,7 @@ export default function ProfileDesignSandbox() {
             <Group label="2 · Section spacing" value={spacing} onChange={setSpacing}
               options={[{ v: "current", label: "Current" }, { v: "roomy", label: "+50%" }, { v: "double", label: "Double" }]} />
             <Group label="3 · Page background" value={bg} onChange={setBg}
-              options={[{ v: "slate", label: "#F1F5F9" }, { v: "offwhite", label: "#FAFAFA" }, { v: "white", label: "White" }, { v: "bands", label: "White+bands" }]} />
+              options={[{ v: "slate", label: "#F4F6F8" }, { v: "offwhite", label: "#FAFAFA" }, { v: "white", label: "White" }, { v: "bands", label: "White+bands" }]} />
             <Group label="4 · Quick Facts + TOC" value={panel} onChange={setPanel}
               options={[{ v: "card", label: "Bordered card" }]} />
             <p className="text-[10px] text-gray-400 dark:text-slate-500 mt-1 leading-snug">React state only · not saved · toggles are independent</p>
@@ -139,7 +139,7 @@ export default function ProfileDesignSandbox() {
         </div>
 
         <div className="flex flex-wrap items-center gap-3 mb-2">
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#1e2d3d] dark:text-slate-100 tracking-tight">BPC-157</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">BPC-157</h1>
           <span className="tag">Recovery &amp; Tissue Repair</span>
           <span className="tag">Research-Grade</span>
         </div>
@@ -148,7 +148,7 @@ export default function ProfileDesignSandbox() {
         {/* Quick Facts — single column, no internal rules */}
         <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
           <div className="px-5 py-4">
-            <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 mb-3">Quick Facts</h2>
+            <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">Quick Facts</h2>
             <dl className="space-y-3">
               {[
                 ["What it is", "A lab-made 15-amino-acid peptide studied for healing, tendon/tissue repair, and gut protection."],
@@ -159,7 +159,7 @@ export default function ProfileDesignSandbox() {
               ].map(([k, v], i) => (
                 <div key={k}>
                   <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">{k}</dt>
-                  <dd className={`${i === 0 ? "text-base text-[#1e2d3d] dark:text-slate-100" : "text-sm text-[#1e2d3d] dark:text-slate-200"}`}>{v}</dd>
+                  <dd className={`${i === 0 ? "text-base text-[#16181B] dark:text-slate-100" : "text-sm text-[#16181B] dark:text-slate-200"}`}>{v}</dd>
                 </div>
               ))}
             </dl>
@@ -168,11 +168,11 @@ export default function ProfileDesignSandbox() {
 
         {/* Mobile TOC */}
         <details className="panel-card lg:hidden mb-8 overflow-hidden">
-          <summary className="cursor-pointer list-none px-4 py-3 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100">
+          <summary className="cursor-pointer list-none px-4 py-3 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100">
             <span>On this page</span>
             <svg className="w-4 h-4 text-brand" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
           </summary>
-          <div className="px-4 pb-4 pt-1 border-t border-gray-200 dark:border-slate-700">
+          <div className="px-4 pb-4 pt-1 border-t border-[#D9DEE4] dark:border-slate-700">
             <TocList toc={toc} />
           </div>
         </details>
@@ -193,7 +193,7 @@ export default function ProfileDesignSandbox() {
               {/* Parent <aside> is the sticky grid item; this card caps its
                   height to the viewport and overflows internally on a short one. */}
               <div className="panel-card p-5 max-h-[calc(100vh-7rem)] overflow-y-auto toc-scroll">
-                <h2 className="text-xs font-semibold uppercase tracking-wide text-[#1e2d3d] dark:text-slate-100 mb-3">On this page</h2>
+                <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">On this page</h2>
                 <TocList toc={toc} />
               </div>
             </nav>

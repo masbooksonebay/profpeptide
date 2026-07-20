@@ -38,17 +38,17 @@ export default function MethodologyPage() {
       />
       <div className="section max-w-3xl">
         <div className="flex flex-wrap items-center gap-3 mb-2">
-          <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Editorial Standards &amp; Methodology</h1>
+          <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Editorial Standards &amp; Methodology</h1>
         </div>
         <p className="text-sm text-gray-500 dark:text-slate-400 mb-4">Last reviewed: June 2026</p>
 
-        <p className="text-xl font-medium text-[#1e2d3d] dark:text-slate-100 leading-relaxed mb-10">
+        <p className="text-xl font-medium text-[#16181B] dark:text-slate-100 leading-relaxed mb-10">
           How we research, review, and verify what we publish &mdash; described honestly, not aspirationally.
         </p>
 
         <div className="space-y-10">
           <section>
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">How we research</h2>
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">How we research</h2>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Our peptide profiles are built from primary sources &mdash; peer-reviewed literature indexed on PubMed and PMC, published clinical-trial data, and FDA drug labels &mdash; rather than secondhand summaries. Each profile carries its own citations: specific claims such as mechanism, half-life, and pharmacokinetics are attributed to named studies, and every profile ends with a linked References section pointing back to the original sources.
             </p>
@@ -58,14 +58,14 @@ export default function MethodologyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">How we verify</h2>
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">How we verify</h2>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Every page is reviewed by the Prof. Peptide editorial team before it is published &mdash; a human read for accuracy against the cited sources, not an automated pass. The &ldquo;Last reviewed&rdquo; date shown on our profiles and guides is literal: it marks when a person last checked that page against the current evidence, not merely when it first went live.
             </p>
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">How we evaluate vendors</h2>
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">How we evaluate vendors</h2>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Vendors earn a place in our{" "}
               <Link href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">vetted catalog</Link>{" "}
@@ -78,14 +78,14 @@ export default function MethodologyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Research-use-only stance</h2>
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Research-use-only stance</h2>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               All content on Prof. Peptide is provided for educational and research purposes only. The compounds we profile are described as research-use-only materials; nothing on this site is medical advice, diagnosis, or a treatment recommendation. We frame compounds in the context of the published research, not as products for human use.
             </p>
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">How we keep content current</h2>
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">How we keep content current</h2>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               We review and update pages as new evidence emerges &mdash; new studies, FDA label changes, and regulatory shifts &mdash; rather than on a fixed calendar. Developments we consider material are tracked on our{" "}
               <Link href="/news" className="text-[#3A759F] hover:underline">news beat</Link>, and the relevant profiles are revisited and re-dated when the underlying evidence changes.

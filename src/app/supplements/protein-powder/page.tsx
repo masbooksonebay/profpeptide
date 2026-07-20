@@ -168,11 +168,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -214,7 +214,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/creatine" className="text-[#3A759F] hover:underline">Creatine</Link>{" "}
@@ -239,7 +239,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training.</span> Protein matters most in the context of progressive resistance training. Without training stimulus, excess protein is just expensive food.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Per-meal distribution.</span> 0.25–0.4 g/kg every 3–4 hours optimizes MPS through the day. Powder is a tool for hitting per-meal targets between whole-food meals.</li>
@@ -259,7 +259,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">GI discomfort (bloating, gas, loose stools) — particularly with whey concentrate in lactose-intolerant users. Whey isolate (95%+ lactose-removed) or plant-based alternatives resolve this.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Dairy allergy reactions — with whey and casein. Plant protein alternatives required.</li>
@@ -268,7 +268,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Heavy-metal contamination (lead, cadmium, arsenic) — some plant proteins and lower-quality manufacturers have tested positive. ConsumerLab and Clean Label Project testing is the relevant screen.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Protein-spiking (cheap amino acids substituted for whey to inflate apparent protein content) — has been documented in low-cost commodity products. Third-party testing is the screen.</li>
@@ -276,7 +276,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Levodopa (Parkinson&apos;s medication) — protein competes with levodopa for intestinal absorption. Separate dosing by 2 hours; coordinate with prescribing neurologist.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Antibiotics (tetracyclines, fluoroquinolones) — calcium in whey/casein chelates these antibiotics. Separate by 2–4 hours.</li>
@@ -350,7 +350,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -419,7 +419,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -547,7 +547,7 @@ export default function ProteinPowderPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Protein Powder</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Protein Powder</h1>
         <span className="tag">Performance &amp; Energy</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -555,24 +555,24 @@ export default function ProteinPowderPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Whey protein, whey isolate, whey concentrate, casein, soy protein, pea protein, rice protein, hemp protein, protein blend
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Whey protein, whey isolate, whey concentrate, casein, soy protein, pea protein, rice protein, hemp protein, protein blend
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Concentrated dietary protein / amino-acid substrate for muscle protein synthesis / satiety-supporting macronutrient
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Concentrated dietary protein / amino-acid substrate for muscle protein synthesis / satiety-supporting macronutrient
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong — Morton 2018 meta-analysis of 49 RCTs (n=1,863) establishing the 1.62 g/kg/day plateau for resistance-training muscle gains; ISSN 2017 position stand consensus; Schoenfeld 2013 timing meta-analysis; one of the most-studied sports supplements; effects are real but modest at individual level
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong — Morton 2018 meta-analysis of 49 RCTs (n=1,863) establishing the 1.62 g/kg/day plateau for resistance-training muscle gains; ISSN 2017 position stand consensus; Schoenfeld 2013 timing meta-analysis; one of the most-studied sports supplements; effects are real but modest at individual level
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is protein powder?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is protein powder?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Protein powder is concentrated dietary protein derived from various food sources — most commonly whey (from dairy, rapid digestion, leucine-rich), casein (from dairy, slow digestion), soy, pea, rice, or hemp. It is the most widely used sports supplement in the world and one of the most thoroughly researched. The Morton 2018 meta-analysis of 49 RCTs established 1.62 g/kg/day as the protein intake plateau beyond which additional protein doesn&apos;t add muscle gains in resistance-trained adults. The ISSN 2017 position stand recommends 1.4–2.0 g/kg/day for most active populations. Protein powder doesn&apos;t do anything magical that whole-food protein doesn&apos;t — it&apos;s a convenience tool for hitting daily protein targets when whole-food intake falls short, for hitting per-meal 0.25–0.4 g/kg targets between meals, or for users with low appetite (e.g., on GLP-1 peptide weight-loss protocols where appetite suppression risks insufficient protein). The supplement is essentially food in concentrated form. Protein powder does not have a direct peptide analog — it&apos;s nutritional substrate, not a signaling molecule — so this page focuses on the dietary-protocol side rather than peptide stacking.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -586,10 +586,10 @@ export default function ProteinPowderPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> Total daily target 1.6–2.2 g/kg body weight for active adults pursuing muscle gain (Morton 2018 plateau at 1.62 g/kg). For weight loss with lean-mass preservation: 2.0–2.4 g/kg. Per-meal serving: 20–40 g protein (0.25–0.4 g/kg per meal). Use powder to fill gaps between whole-food meals — not as substitute for food.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> Total daily target 1.6–2.2 g/kg body weight for active adults pursuing muscle gain (Morton 2018 plateau at 1.62 g/kg). For weight loss with lean-mass preservation: 2.0–2.4 g/kg. Per-meal serving: 20–40 g protein (0.25–0.4 g/kg per meal). Use powder to fill gaps between whole-food meals — not as substitute for food.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Widely available. Quality varies significantly — protein-spiking with cheap amino acids and heavy-metal contamination (especially plant proteins) are documented industry issues. Third-party testing (Informed Sport, NSF, ConsumerLab, Clean Label Project) is the relevant screen. Review the quality-markers checklist in the Where to Buy section below.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Widely available. Quality varies significantly — protein-spiking with cheap amino acids and heavy-metal contamination (especially plant proteins) are documented industry issues. Third-party testing (Informed Sport, NSF, ConsumerLab, Clean Label Project) is the relevant screen. Review the quality-markers checklist in the Where to Buy section below.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=protein+powder&tag=profpeptide-20" label="Protein Powder" />
         </div>
@@ -600,7 +600,7 @@ export default function ProteinPowderPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -629,7 +629,7 @@ export default function ProteinPowderPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/creatine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine</Link>
           <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>

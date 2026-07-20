@@ -20,7 +20,7 @@ export default function PricesMaster() {
       <div className="flex flex-wrap items-center gap-2 mb-6">
         <button
           onClick={() => setFilter("all")}
-          className={`text-sm px-3 py-1 rounded-full border ${filter === "all" ? "bg-[#3A759F] text-white border-[#3A759F]" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300 border-gray-200 dark:border-slate-600"}`}
+          className={`text-sm px-3 py-1 rounded-full border ${filter === "all" ? "bg-[#3A759F] text-white border-[#3A759F]" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300 border-[#D9DEE4] dark:border-slate-600"}`}
         >
           All
         </button>
@@ -28,13 +28,13 @@ export default function PricesMaster() {
           <button
             key={c.slug}
             onClick={() => setFilter(c.slug)}
-            className={`text-sm px-3 py-1 rounded-full border ${filter === c.slug ? "bg-[#3A759F] text-white border-[#3A759F]" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300 border-gray-200 dark:border-slate-600"}`}
+            className={`text-sm px-3 py-1 rounded-full border ${filter === c.slug ? "bg-[#3A759F] text-white border-[#3A759F]" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300 border-[#D9DEE4] dark:border-slate-600"}`}
           >
             {c.name}
           </button>
         ))}
 
-        <div className="ml-auto inline-flex rounded-lg border border-gray-200 dark:border-slate-600 overflow-hidden text-sm">
+        <div className="ml-auto inline-flex rounded-lg border border-[#D9DEE4] dark:border-slate-600 overflow-hidden text-sm">
           <button
             onClick={() => setUnit("total")}
             className={`px-3 py-1 ${unit === "total" ? "bg-[#3A759F] text-white" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300"}`}
@@ -59,7 +59,7 @@ export default function PricesMaster() {
         {shown.map((c) => (
           <div key={c.slug} className="panel-card p-5">
             <div className="flex items-center justify-between gap-3 mb-4">
-              <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100">
+              <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100">
                 <Link href={`/peptides/${c.slug}`} className="hover:text-[#3A759F] transition-colors">{c.name}</Link>
               </h2>
               <Link href={`/prices/${c.slug}`} className="text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">

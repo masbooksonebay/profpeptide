@@ -176,17 +176,17 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           CagriSema is administered as a once-weekly subcutaneous injection of a fixed 1:1 ratio of cagrilintide and semaglutide. The Phase 3 protocol uses a 16-week synchronized titration to allow gastrointestinal adaptation, followed by a 2.4 mg / 2.4 mg weekly maintenance dose. Both compounds are dose-escalated together at every step.
         </p>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           Standard escalation schedule (REDEFINE Phase 3 protocol):
         </p>
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Week</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Cagrilintide</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Semaglutide</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Combined total</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Week</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Cagrilintide</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Semaglutide</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Combined total</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -230,7 +230,7 @@ const sections = [
           If side effects are difficult to tolerate at any step, holding at the current dose for an additional 4 weeks is the standard mitigation. In REDEFINE 2, 61.9% of participants reached the highest maintenance dose by week 68 under a flexible-dosing protocol — meaning a substantial minority held at a lower dose for the duration of the trial and still produced meaningful weight loss.
         </p>
         <div className="pt-4">
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Pre-blended formulations (research-grade vials)
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -272,11 +272,11 @@ const sections = [
         </ol>
 
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -313,15 +313,15 @@ const sections = [
         </p>
 
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC water</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Concentration</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">0.5 mg combined</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">2.0 mg combined</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">3.4 mg combined</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">4.8 mg combined</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">BAC water</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Concentration</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">0.5 mg combined</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">2.0 mg combined</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">3.4 mg combined</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">4.8 mg combined</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -395,7 +395,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Common (REDEFINE 1, CagriSema vs placebo)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -408,7 +408,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -418,7 +418,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Serious (rare — call a doctor)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -511,7 +511,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -621,7 +621,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -648,7 +648,7 @@ export default function CagriSemaPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">CagriSema</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">CagriSema</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
         <span className="tag">Investigational</span>
       </div>
@@ -657,16 +657,16 @@ export default function CagriSemaPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Cagri-Sema, CagriSema 2.4/2.4, Amylin-GLP-1 Combination
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Cagri-Sema, CagriSema 2.4/2.4, Amylin-GLP-1 Combination
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Fixed-dose GLP-1 receptor agonist + amylin analogue blend
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Fixed-dose GLP-1 receptor agonist + amylin analogue blend
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Investigational — Novo Nordisk NDA filed Dec 18, 2025; FDA decision pending 2026
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Investigational — Novo Nordisk NDA filed Dec 18, 2025; FDA decision pending 2026
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Component peptides:</span>{" "}
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Component peptides:</span>{" "}
           <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide</Link>
           {" + "}
           <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link>{" "}
@@ -676,12 +676,12 @@ export default function CagriSemaPage() {
 
       <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Latest research:</span> Novo Nordisk filed CagriSema&apos;s FDA NDA on December 18, 2025 based on REDEFINE 1 (NEJM 2025) — 22.7% mean weight loss at 68 weeks, the largest published result for an injectable GLP-1-class combination. FDA decision expected in 2026. REIMAGINE 2 (T2D, Feb 2026) added superior HbA1c reduction versus semaglutide alone.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Latest research:</span> Novo Nordisk filed CagriSema&apos;s FDA NDA on December 18, 2025 based on REDEFINE 1 (NEJM 2025) — 22.7% mean weight loss at 68 weeks, the largest published result for an injectable GLP-1-class combination. FDA decision expected in 2026. REIMAGINE 2 (T2D, Feb 2026) added superior HbA1c reduction versus semaglutide alone.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is CagriSema?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is CagriSema?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             CagriSema is a once-weekly injectable fixed-dose combination of{" "}
@@ -692,7 +692,7 @@ export default function CagriSemaPage() {
             <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">tirzepatide</Link>, CagriSema did not demonstrate superiority — both produced comparable weight reduction.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -705,10 +705,10 @@ export default function CagriSemaPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> The REDEFINE Phase 3 protocol uses a 16-week synchronized titration from 0.25 mg + 0.25 mg up to a 2.4 mg + 2.4 mg maintenance dose, once weekly subcutaneously. Research-grade pre-blended vials are typically sold in 5 mg, 10 mg, or 20 mg total combined-mg labels at a fixed 1:1 ratio.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> The REDEFINE Phase 3 protocol uses a 16-week synchronized titration from 0.25 mg + 0.25 mg up to a 2.4 mg + 2.4 mg maintenance dose, once weekly subcutaneously. Research-grade pre-blended vials are typically sold in 5 mg, 10 mg, or 20 mg total combined-mg labels at a fixed 1:1 ratio.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -722,7 +722,7 @@ export default function CagriSemaPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -760,7 +760,7 @@ export default function CagriSemaPage() {
 
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
         <Link href="/peptides/cagrilintide" className="text-sm font-medium text-[#3A759F] hover:underline">Cagrilintide</Link>
         <Link href="/peptides/semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide</Link>

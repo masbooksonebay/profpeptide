@@ -44,7 +44,7 @@ export default function FDAPeptideCompoundingUpdatePage() {
         </Link>
 
         <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">April 16, 2026 &middot; Last updated: April 16, 2026</p>
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-6">
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-6">
           FDA Moves to Restore Access to Key Peptides &mdash; Here&rsquo;s What It Means
         </h1>
 
@@ -53,7 +53,7 @@ export default function FDAPeptideCompoundingUpdatePage() {
             If you&rsquo;ve been following the peptide research space over the past few years, you know the regulatory landscape has been anything but stable. But as of April 2026, there&rsquo;s real reason for optimism &mdash; and it&rsquo;s worth breaking down exactly what&rsquo;s happening and what it means for the research community.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What the FDA Announced</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What the FDA Announced</h2>
           <p>
             On April 15, 2026, the FDA posted a notice in the Federal Register indicating it is considering lifting restrictions on certain peptide injections currently classified as Category 2 compounds &mdash; meaning they&rsquo;ve been restricted from compounding pharmacies since 2023. The FDA&rsquo;s expert advisory panel on pharmacy compounding is scheduled to meet in late July 2026 to formally discuss the approval of seven peptides for compounding.
           </p>
@@ -61,7 +61,7 @@ export default function FDAPeptideCompoundingUpdatePage() {
             This follows a broader policy shift that began in early 2026 when HHS Secretary Robert F. Kennedy Jr. &mdash; a self-described &ldquo;big fan&rdquo; of peptide therapies &mdash; announced plans to reverse a Biden-era decision that moved 19 peptides to Category 2 in 2023.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">A Quick Refresher on the Category System</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">A Quick Refresher on the Category System</h2>
           <p>
             The FDA uses a two-tier system for evaluating compounds that compounding pharmacies want to produce:
           </p>
@@ -75,12 +75,12 @@ export default function FDAPeptideCompoundingUpdatePage() {
             In 2023, 19 widely-used research peptides were moved to Category 2, effectively removing them from legal compounding access. The current FDA action is the first formal step toward reversing that decision.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Which Peptides Are Affected?</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Which Peptides Are Affected?</h2>
           <p>
             The FDA&rsquo;s current focus is on seven peptides being considered for compounding, targeting conditions including ulcerative colitis, wound healing, obesity, and insomnia. The broader RFK Jr. initiative has focused on 14 of the original 19 restricted peptides &mdash; including compounds like BPC-157, TB-500, CJC-1295, Ipamorelin, and Semax. As of April 2026, five of the original 19 peptides have already been removed from Category 2.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What This Means for the Research Community</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What This Means for the Research Community</h2>
           <p>
             This is not a done deal &mdash; yet. The July advisory panel meeting is a necessary step, not a final ruling. Formal rule changes could take until 2027 or beyond. But the direction is clear &mdash; between the RFK Jr. announcement in February, the five compounds already removed from Category 2, and now this Federal Register notice, the regulatory trajectory is unmistakably moving toward broader access.
           </p>
@@ -90,7 +90,7 @@ export default function FDAPeptideCompoundingUpdatePage() {
             and published Certificates of Analysis. Regulatory change doesn&rsquo;t change the importance of compound quality and documentation.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Our Take</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Our Take</h2>
           <p>
             At Prof. Peptide, we&rsquo;ve always believed that access to rigorously tested, transparently documented research compounds is important for the scientific community. This FDA development is a meaningful step in the right direction &mdash; one that acknowledges years of research and legitimate scientific interest in these compounds. We&rsquo;ll continue tracking every regulatory development and updating our{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">vendor recommendations</Link>{" "}
@@ -105,7 +105,7 @@ export default function FDAPeptideCompoundingUpdatePage() {
         </div>
 
         <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Explore More</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-3">Explore More</h2>
           <div className="flex flex-wrap gap-3">
             <Link href="/best-peptide-vendors" className="btn-primary text-sm">Best Peptide Vendors</Link>
             <Link href="/coupons" className="btn-outline text-sm">Discount Codes</Link>

@@ -133,7 +133,7 @@ export default function VitaminCSkinPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Vitamin C for Skin</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Vitamin C for Skin</h1>
         <span className="tag">Skin Health &amp; Anti-Aging</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -141,25 +141,25 @@ export default function VitaminCSkinPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Ascorbic acid, L-ascorbic acid (skin-active form), ascorbate
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Ascorbic acid, L-ascorbic acid (skin-active form), ascorbate
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Skin antioxidant cofactor / obligate collagen-synthesis enzyme cofactor / tyrosinase inhibitor (skin-brightening)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Skin antioxidant cofactor / obligate collagen-synthesis enzyme cofactor / tyrosinase inhibitor (skin-brightening)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Strong (skin use case) — biochemically essential for collagen hydroxylation; Pullar 2017 Nutrients review covers skin-physiology evidence; Shaw 2017 demonstrated vitamin C-enriched gelatin amplifies collagen synthesis; topical L-ascorbic acid serum has extensive dermatology evidence for photoaging, hyperpigmentation, fine lines
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Strong (skin use case) — biochemically essential for collagen hydroxylation; Pullar 2017 Nutrients review covers skin-physiology evidence; Shaw 2017 demonstrated vitamin C-enriched gelatin amplifies collagen synthesis; topical L-ascorbic acid serum has extensive dermatology evidence for photoaging, hyperpigmentation, fine lines
         </p>
       </div>
 
       <div className="space-y-8">
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What does vitamin C do for skin?</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What does vitamin C do for skin?</h2>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Vitamin C plays a uniquely irreplaceable role in skin physiology — it is the obligate cofactor for the hydroxylase enzymes that build and stabilize collagen, the primary structural protein of the dermis. Without adequate vitamin C, fibroblasts produce collagen that can&apos;t fold properly into stable triple-helix structures, resulting in structurally weak skin tissue prone to wrinkling and breakdown. Beyond collagen, vitamin C is the dominant water-soluble antioxidant in skin, protecting against UV-induced oxidative damage, inhibiting melanin synthesis (the basis for its skin-brightening effect), and regenerating oxidized vitamin E back to its active form. Skin vitamin C concentrations are significantly higher than blood plasma — reflecting how critical it is to cutaneous function — and skin vitamin C declines measurably with age and UV exposure. For a full vitamin C profile (immune function, antioxidant network, dietary requirements), see the{" "}
             <Link href="/supplements/vitamin-c" className="text-[#3A759F] hover:underline">parent vitamin C page</Link>.
           </p>
           <div className="mt-4">
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported skin benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -173,12 +173,12 @@ export default function VitaminCSkinPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mt-4">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 500–1,000 mg/day oral for skin support; split AM/PM to maintain steady-state tissue saturation. For topical: 10–20% L-ascorbic acid serum in a stable low-pH (&lt;3.5) formulation, applied AM under sunscreen.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 500–1,000 mg/day oral for skin support; split AM/PM to maintain steady-state tissue saturation. For topical: 10–20% L-ascorbic acid serum in a stable low-pH (&lt;3.5) formulation, applied AM under sunscreen.
           </p>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">How does vitamin C build skin collagen?</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">How does vitamin C build skin collagen?</h2>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Vitamin C is the essential cofactor for prolyl hydroxylase and lysyl hydroxylase — the enzymes that add hydroxyl groups to proline and lysine residues in newly synthesized collagen chains. These hydroxylations are required for the formation of stable collagen triple-helix structures and the cross-links that make collagen mechanically durable. The hydroxylated residues create hydrogen-bonding sites that hold the three collagen chains together; without them, the molecule falls apart before it can be exported from the fibroblast and woven into the extracellular matrix.
           </p>
@@ -191,23 +191,23 @@ export default function VitaminCSkinPage() {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What the research shows for skin</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What the research shows for skin</h2>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Collagen synthesis amplification.</span> Shaw 2017 (Am J Clin Nutr) demonstrated that vitamin C-enriched gelatin taken before intermittent exercise significantly increased serum collagen synthesis markers (PINP) — establishing that vitamin C status meaningfully gates active collagen production in vivo.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Collagen synthesis amplification.</span> Shaw 2017 (Am J Clin Nutr) demonstrated that vitamin C-enriched gelatin taken before intermittent exercise significantly increased serum collagen synthesis markers (PINP) — establishing that vitamin C status meaningfully gates active collagen production in vivo.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Photoaging and wrinkles.</span> Topical L-ascorbic acid is one of the most extensively studied dermatology actives. Multiple RCTs document significant improvements in wrinkle depth, skin tone, and dyschromia after 12+ weeks of consistent topical use. The Pinnell 2003 stability formulation (15% L-ascorbic acid + 1% α-tocopherol + 0.5% ferulic acid) is the reference protocol that most modern serums emulate.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Photoaging and wrinkles.</span> Topical L-ascorbic acid is one of the most extensively studied dermatology actives. Multiple RCTs document significant improvements in wrinkle depth, skin tone, and dyschromia after 12+ weeks of consistent topical use. The Pinnell 2003 stability formulation (15% L-ascorbic acid + 1% α-tocopherol + 0.5% ferulic acid) is the reference protocol that most modern serums emulate.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Oral vitamin C and skin elasticity.</span> Pullar 2017 (Nutrients) reviewed the population evidence — skin vitamin C levels correlate inversely with wrinkle depth in cross-sectional studies, and oral vitamin C supplementation has been documented to improve skin elasticity and reduce transepidermal water loss in controlled trials.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Oral vitamin C and skin elasticity.</span> Pullar 2017 (Nutrients) reviewed the population evidence — skin vitamin C levels correlate inversely with wrinkle depth in cross-sectional studies, and oral vitamin C supplementation has been documented to improve skin elasticity and reduce transepidermal water loss in controlled trials.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Synergy with collagen peptides.</span> Trials combining oral collagen peptides with vitamin C consistently outperform collagen alone for skin endpoints — consistent with the obligate-cofactor mechanism. The combination is the dominant evidence-based oral skin-supplement pairing.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Synergy with collagen peptides.</span> Trials combining oral collagen peptides with vitamin C consistently outperform collagen alone for skin endpoints — consistent with the obligate-cofactor mechanism. The combination is the dominant evidence-based oral skin-supplement pairing.
           </p>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">How to use vitamin C for skin</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">How to use vitamin C for skin</h2>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Oral dose:</span> 500–1,000 mg/day, ideally split AM + PM for steady-state tissue saturation.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Always pair with collagen peptides</span> (2.5–10 g/day) — the combination is synergistic for skin endpoints.</li>
@@ -219,7 +219,7 @@ export default function VitaminCSkinPage() {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Quick safety notes for skin protocols</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Quick safety notes for skin protocols</h2>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
             Oral vitamin C is exceptionally safe — water-soluble, excess excreted, no concerning signals at the skin-relevant 500–1,000 mg/day dose. The 2,000 mg/day Tolerable Upper Intake Level is set by GI tolerance (loose stools), not toxicity. Very high doses may modestly increase kidney stone risk in predisposed users.
           </p>
@@ -230,24 +230,24 @@ export default function VitaminCSkinPage() {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What we don't know yet about vitamin C for skin</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What we don't know yet about vitamin C for skin</h2>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Optimal oral dose-response.</span> The 500–1,000 mg/day range is biochemically rational (saturates plasma vitamin C, exceeds dietary recommendations, falls below the UL) but not precisely RCT-titrated for skin endpoints. Whether 250 mg/day produces meaningful skin benefit or whether 1,500 mg/day adds value over 1,000 mg isn&apos;t resolved.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Optimal oral dose-response.</span> The 500–1,000 mg/day range is biochemically rational (saturates plasma vitamin C, exceeds dietary recommendations, falls below the UL) but not precisely RCT-titrated for skin endpoints. Whether 250 mg/day produces meaningful skin benefit or whether 1,500 mg/day adds value over 1,000 mg isn&apos;t resolved.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Topical derivative bioequivalence.</span> Vitamin C derivatives (sodium ascorbyl phosphate, magnesium ascorbyl phosphate, ascorbyl glucoside, tetrahexyldecyl ascorbate) are more stable but less directly active than L-ascorbic acid. Whether they deliver equivalent skin outcomes is mechanistically uncertain — they require enzymatic conversion after penetration, with mixed evidence on conversion efficiency.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Topical derivative bioequivalence.</span> Vitamin C derivatives (sodium ascorbyl phosphate, magnesium ascorbyl phosphate, ascorbyl glucoside, tetrahexyldecyl ascorbate) are more stable but less directly active than L-ascorbic acid. Whether they deliver equivalent skin outcomes is mechanistically uncertain — they require enzymatic conversion after penetration, with mixed evidence on conversion efficiency.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Healthy young-adult skin transfer.</span> Most strong evidence is in photoaged or older skin. Whether oral vitamin C supplementation produces measurable skin benefit in already-healthy young adults eating adequate citrus/vegetable diets is less directly supported by trial data.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Healthy young-adult skin transfer.</span> Most strong evidence is in photoaged or older skin. Whether oral vitamin C supplementation produces measurable skin benefit in already-healthy young adults eating adequate citrus/vegetable diets is less directly supported by trial data.
           </p>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Vitamin C for Skin FAQ</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Vitamin C for Skin FAQ</h2>
           <div className="space-y-4">
             {faqs.map((f, i) => (
               <div key={i}>
-                <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+                <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
                 <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
               </div>
             ))}
@@ -278,7 +278,7 @@ export default function VitaminCSkinPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/vitamin-c" className="text-sm font-medium text-[#3A759F] hover:underline">Vitamin C (full profile)</Link>
           <Link href="/supplements/collagen-peptides-skin" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides for Skin</Link>

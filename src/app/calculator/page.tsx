@@ -82,7 +82,7 @@ export default function CalculatorPage() {
 
         <div className="mb-10">
           <span className="tag mb-4 inline-block">Dosing Tool</span>
-          <h1 className="text-3xl sm:text-4xl font-semibold mb-3 text-[#1e2d3d] dark:text-slate-100" style={{ letterSpacing: '-0.02em' }}>
+          <h1 className="text-3xl sm:text-4xl font-semibold mb-3 text-[#16181B] dark:text-slate-100" style={{ letterSpacing: '-0.02em' }}>
             Peptide Reconstitution Calculator
           </h1>
           <p className="text-gray-500 dark:text-slate-400 text-base max-w-xl">
@@ -93,14 +93,14 @@ export default function CalculatorPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-          <div className="bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl p-6 shadow-sm">
-            <h2 className="text-lg font-semibold mb-6 text-[#1e2d3d] dark:text-slate-100">
+          <div className="bg-white dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-700 rounded-xl p-6 shadow-sm">
+            <h2 className="text-lg font-semibold mb-6 text-[#16181B] dark:text-slate-100">
               Inputs
             </h2>
 
             <div className="space-y-5">
               <div>
-                <label className="block text-sm font-medium mb-1.5 text-[#1e2d3d] dark:text-slate-200">
+                <label className="block text-sm font-medium mb-1.5 text-[#16181B] dark:text-slate-200">
                   Select Compound
                 </label>
                 <CompoundCombobox
@@ -112,7 +112,7 @@ export default function CalculatorPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium mb-1.5 text-[#1e2d3d] dark:text-slate-200">
+                <label className="block text-sm font-medium mb-1.5 text-[#16181B] dark:text-slate-200">
                   Vial Size (mg)
                 </label>
                 <input
@@ -127,7 +127,7 @@ export default function CalculatorPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium mb-1.5 text-[#1e2d3d] dark:text-slate-200">
+                <label className="block text-sm font-medium mb-1.5 text-[#16181B] dark:text-slate-200">
                   Bacteriostatic Water (mL)
                 </label>
                 <input
@@ -142,7 +142,7 @@ export default function CalculatorPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium mb-1.5 text-[#1e2d3d] dark:text-slate-200">
+                <label className="block text-sm font-medium mb-1.5 text-[#16181B] dark:text-slate-200">
                   Desired Dose
                 </label>
                 <div className="flex gap-2 items-center">
@@ -195,8 +195,8 @@ export default function CalculatorPage() {
             </div>
           </div>
 
-          <div className="bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-slate-700 rounded-xl p-6 shadow-sm flex flex-col">
-            <h2 className="text-lg font-semibold mb-6 text-[#1e2d3d] dark:text-slate-100">
+          <div className="bg-white dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-700 rounded-xl p-6 shadow-sm flex flex-col">
+            <h2 className="text-lg font-semibold mb-6 text-[#16181B] dark:text-slate-100">
               Results
             </h2>
 
@@ -212,7 +212,7 @@ export default function CalculatorPage() {
                   <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">
                     Concentration
                   </p>
-                  <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
+                  <p className="text-2xl font-semibold text-[#16181B] dark:text-slate-100">
                     {results.concentration.toFixed(2)}{' '}
                     <span className="text-base font-normal text-gray-500 dark:text-slate-400">mcg / mL</span>
                   </p>
@@ -222,7 +222,7 @@ export default function CalculatorPage() {
                   <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">
                     Draw Volume
                   </p>
-                  <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
+                  <p className="text-2xl font-semibold text-[#16181B] dark:text-slate-100">
                     {results.drawVolume.toFixed(3)}{' '}
                     <span className="text-base font-normal text-gray-500 dark:text-slate-400">mL</span>
                   </p>
@@ -232,7 +232,7 @@ export default function CalculatorPage() {
                   <p className="text-xs font-medium uppercase tracking-wide mb-1 text-[#3A759F]">
                     Insulin Syringe Units (U-100)
                   </p>
-                  <p className="text-2xl font-semibold text-[#1e2d3d] dark:text-slate-100">
+                  <p className="text-2xl font-semibold text-[#16181B] dark:text-slate-100">
                     {results.syringeUnits.toFixed(1)}{' '}
                     <span className="text-base font-normal text-gray-500 dark:text-slate-400">units</span>
                   </p>
@@ -254,28 +254,28 @@ export default function CalculatorPage() {
           </div>
         </div>
 
-        <div className="mt-10 rounded-xl p-6 border bg-gray-50 dark:bg-[#1e293b] border-gray-200 dark:border-slate-700">
-          <h3 className="text-base font-semibold mb-4 text-[#1e2d3d] dark:text-slate-100">
+        <div className="mt-10 rounded-xl p-6 border bg-gray-50 dark:bg-[#1e293b] border-[#D9DEE4] dark:border-slate-700">
+          <h3 className="text-base font-semibold mb-4 text-[#16181B] dark:text-slate-100">
             Formulas Used
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-600 dark:text-slate-300">
             <div>
               <p className="font-medium mb-1 text-[#3A759F]">Concentration</p>
-              <code className="text-xs bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-slate-600 rounded px-2 py-1 block text-gray-700 dark:text-slate-300">
+              <code className="text-xs bg-white dark:bg-[#0f172a] border border-[#D9DEE4] dark:border-slate-600 rounded px-2 py-1 block text-gray-700 dark:text-slate-300">
                 (Vial mg &times; 1000) &divide; Water mL
               </code>
               <p className="mt-1 text-xs text-gray-400 dark:text-slate-500">Result in mcg/mL</p>
             </div>
             <div>
               <p className="font-medium mb-1 text-[#3A759F]">Draw Volume</p>
-              <code className="text-xs bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-slate-600 rounded px-2 py-1 block text-gray-700 dark:text-slate-300">
+              <code className="text-xs bg-white dark:bg-[#0f172a] border border-[#D9DEE4] dark:border-slate-600 rounded px-2 py-1 block text-gray-700 dark:text-slate-300">
                 Dose mcg &divide; Concentration
               </code>
               <p className="mt-1 text-xs text-gray-400 dark:text-slate-500">Result in mL</p>
             </div>
             <div>
               <p className="font-medium mb-1 text-[#3A759F]">Syringe Units (U-100)</p>
-              <code className="text-xs bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-slate-600 rounded px-2 py-1 block text-gray-700 dark:text-slate-300">
+              <code className="text-xs bg-white dark:bg-[#0f172a] border border-[#D9DEE4] dark:border-slate-600 rounded px-2 py-1 block text-gray-700 dark:text-slate-300">
                 Draw Volume mL &times; 100
               </code>
               <p className="mt-1 text-xs text-gray-400 dark:text-slate-500">Units on U-100 syringe</p>

@@ -13,7 +13,7 @@ function CodeBox({ code }: { code: string }) {
  return (
  <button
  onClick={handleCopy}
- className="block w-full bg-gray-50 dark:bg-[#1e293b] border border-gray-200 dark:border-slate-600 px-4 py-3 rounded-lg text-lg font-mono font-bold text-[#1e2d3d] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:bg-gray-100 dark:bg-slate-700 transition-colors"
+ className="block w-full bg-gray-50 dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-600 px-4 py-3 rounded-lg text-lg font-mono font-bold text-[#16181B] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:bg-gray-100 dark:bg-slate-700 transition-colors"
  >
  {copied ? (
  <span className="text-[#3A759F] font-sans font-medium tracking-normal">Copied!</span>
@@ -32,7 +32,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
  onClick={() => setOpen(!open)}
  className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:bg-[#1e293b] transition-colors"
  >
- <span className="text-sm font-medium text-[#1e2d3d] dark:text-slate-100 pr-4">{q}</span>
+ <span className="text-sm font-medium text-[#16181B] dark:text-slate-100 pr-4">{q}</span>
  <span className="text-[#3A759F] flex-shrink-0 text-lg">{open ? "\u2212" : "+"}</span>
  </button>
  {open && (
@@ -52,12 +52,12 @@ export default function IntegrativePeptidesCouponPage() {
  </Link>
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Integrative Peptides Discount Code &mdash; Save 10% with PROFPEPTIDE</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Integrative Peptides Discount Code &mdash; Save 10% with PROFPEPTIDE</h1>
  </div>
  <div className="flex flex-wrap items-center gap-2 mb-8">
  <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
  <span className="text-xs bg-indigo-50 text-indigo-700 border border-indigo-200 px-2 py-0.5 rounded-full font-medium">Oral Peptide Formulations</span>
- <span className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-500 dark:text-slate-400 border border-gray-200 dark:border-slate-600 px-2 py-0.5 rounded-full">{"\uD83C\uDDFA\uD83C\uDDF8"} US</span>
+ <span className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-500 dark:text-slate-400 border border-[#D9DEE4] dark:border-slate-600 px-2 py-0.5 rounded-full">{"\uD83C\uDDFA\uD83C\uDDF8"} US</span>
  </div>
 
  <div className="space-y-8">
@@ -67,19 +67,19 @@ export default function IntegrativePeptidesCouponPage() {
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
- <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Gut Health &amp; Immunity</dt>
+ <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Gut Health &amp; Immunity</dt>
  <dd className="text-gray-600 dark:text-slate-300">
  <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
  </dd>
  </div>
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
- <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
+ <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
  <dd className="text-gray-600 dark:text-slate-300">
  <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>
  </dd>
  </div>
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
- <dt className="font-semibold text-[#1e2d3d] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Bioregulators</dt>
+ <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Bioregulators</dt>
  <dd className="text-gray-600 dark:text-slate-300">
  <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>, <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>
  </dd>
@@ -106,7 +106,7 @@ export default function IntegrativePeptidesCouponPage() {
 
 
  <div>
- <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
+ <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
  <FAQItem
  q="What peptides does Integrative Peptides carry?"

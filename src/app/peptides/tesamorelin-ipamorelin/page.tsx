@@ -162,7 +162,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Both components are administered by subcutaneous injection. Both are short-acting, so daily dosing is required to maintain pulsatile GH stimulation. The protocol below is derived from Tesamorelin&apos;s clinical trial data (Egrifta prescribing information), Ipamorelin&apos;s pharmacodynamic literature, and research-community protocols.
         </p>
-        <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           Standard research protocol:
         </p>
         <ol className="list-decimal list-inside space-y-1">
@@ -174,7 +174,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle.</span> 8&ndash;16 weeks active, 4&ndash;8 week off-period before re-cycling. The Egrifta trials used 26-week active periods; standard research cycling is shorter to avoid receptor desensitization.</li>
         </ol>
         <div className="pt-4">
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Vial formats and reconstitution math
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -189,15 +189,15 @@ const sections = [
         </div>
 
         <div className="overflow-x-auto -mx-4 sm:mx-0 pt-2">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Vial</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">BAC Water</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Conc.</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">1 mg / 200 mcg dose</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">2 mg / 300 mcg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Peptide</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Vial</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">BAC Water</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Conc.</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">1 mg / 200 mcg dose</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">2 mg / 300 mcg dose</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -259,11 +259,11 @@ const sections = [
         </p>
 
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -351,7 +351,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Common (most users)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -362,7 +362,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Less common (moderate)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -374,7 +374,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
             Serious (rare or theoretical)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
@@ -471,7 +471,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -534,7 +534,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -561,7 +561,7 @@ export default function TesaIpamorelinPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Tesamorelin + Ipamorelin</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Tesamorelin + Ipamorelin</h1>
         <span className="tag">Growth Hormone</span>
         <span className="tag">Research-Grade</span>
         <span className="tag">Combination Blend</span>
@@ -571,18 +571,18 @@ export default function TesaIpamorelinPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Tesa + Ipa Blend, Tesamorelin / Ipamorelin Stack, VAT Reduction GH Stack
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Tesa + Ipa Blend, Tesamorelin / Ipamorelin Stack, VAT Reduction GH Stack
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Peptide Class:</span> Growth Hormone Secretagogue Blend (2-component: GHRH analog + selective GHRP)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Growth Hormone Secretagogue Blend (2-component: GHRH analog + selective GHRP)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Regulatory Status:</span> Tesamorelin FDA-approved as Egrifta (HIV lipodystrophy); research-grade Tesamorelin and Ipamorelin sold for laboratory use only; combination research-grade only; both WADA S2 prohibited
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Tesamorelin FDA-approved as Egrifta (HIV lipodystrophy); research-grade Tesamorelin and Ipamorelin sold for laboratory use only; combination research-grade only; both WADA S2 prohibited
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is Tesamorelin + Ipamorelin?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Tesamorelin + Ipamorelin?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Tesamorelin + Ipamorelin is a 2-component growth hormone secretagogue blend combining{" "}
@@ -600,7 +600,7 @@ export default function TesaIpamorelinPage() {
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -614,10 +614,10 @@ export default function TesaIpamorelinPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common research dose:</span> Tesamorelin 1&ndash;2 mg SC once daily + Ipamorelin 200&ndash;300 mcg SC daily (commonly pre-bed, empty stomach). Titrate Tesamorelin from 1 mg; monitor IGF-1 at baseline and every 4&ndash;8 weeks.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> Tesamorelin 1&ndash;2 mg SC once daily + Ipamorelin 200&ndash;300 mcg SC daily (commonly pre-bed, empty stomach). Titrate Tesamorelin from 1 mg; monitor IGF-1 at baseline and every 4&ndash;8 weeks.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Where to buy:</span> Typically sold as separate lyophilized vials by research peptide vendors. Neither research-grade Tesamorelin nor Ipamorelin is FDA-approved at research-grade doses. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Typically sold as separate lyophilized vials by research peptide vendors. Neither research-grade Tesamorelin nor Ipamorelin is FDA-approved at research-grade doses. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
@@ -631,7 +631,7 @@ export default function TesaIpamorelinPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -668,7 +668,7 @@ export default function TesaIpamorelinPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Peptides</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Peptides</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/peptides/tesamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Tesamorelin</Link>
           <Link href="/peptides/ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Ipamorelin</Link>
@@ -678,7 +678,7 @@ export default function TesaIpamorelinPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Blends</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/peptides/gh-stack" className="text-sm font-medium text-[#3A759F] hover:underline">GH Stack (CJC-1295 + Ipamorelin)</Link>
           <Link href="/peptides/sermorelin-ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">Sermorelin + Ipamorelin</Link>

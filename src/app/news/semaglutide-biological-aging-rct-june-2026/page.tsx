@@ -44,7 +44,7 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
         </Link>
 
         <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">June 16, 2026 &middot; Last updated: June 16, 2026</p>
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-6">
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-6">
           Semaglutide Slowed Epigenetic Aging Markers in a Randomized Trial &mdash; In a Specific Population
         </h1>
 
@@ -57,7 +57,7 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
             slowed biological aging across multiple &ldquo;epigenetic clocks&rdquo; in a randomized, double-blind, placebo-controlled trial. It is among the first randomized-trial evidence that a GLP-1 drug can shift aging-related biomarkers &mdash; but the framing matters a great deal, so we&rsquo;ll be careful about what the data do and do not show.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What the Study Actually Was</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What the Study Actually Was</h2>
           <p>
             This was <strong>not</strong> a new trial designed to test aging. It was a secondary, post-hoc analysis of DNA-methylation data from a previously completed Phase 2b trial in a <strong>specific population</strong>: adults with HIV-associated lipohypertrophy (a condition of excess abdominal fat). The parent trial was 32 weeks, randomized, double-blind, and placebo-controlled.
           </p>
@@ -70,7 +70,7 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
             The senior author was Michael Corley, Ph.D., of UC San Diego School of Medicine and the Stein Institute for Research on Aging.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What It Found</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What It Found</h2>
           <p>
             Relative to placebo, semaglutide was associated with slower epigenetic aging across several clocks (adjusted estimates):
           </p>
@@ -85,7 +85,7 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
             Per the UC San Diego summary, the strongest signals clustered in epigenetic measures tied to inflammation and to brain, heart, blood, kidney, liver, and metabolic health.
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">Why the Caveats Matter</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Why the Caveats Matter</h2>
           <p>
             Read in context, this is an encouraging early signal &mdash; not evidence that semaglutide is an &ldquo;anti-aging drug.&rdquo; Several constraints are central:
           </p>
@@ -98,7 +98,7 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
             Corley put it directly: &ldquo;We are not saying that semaglutide reverses aging or makes people younger. What we are seeing is a signal that it may slow some of the biological processes associated with aging.&rdquo;
           </p>
 
-          <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 pt-2">What It Means</h2>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What It Means</h2>
           <p>
             The value here is methodological as much as clinical: it is one of the first times a GLP-1&rsquo;s effect on aging biology has been measured inside a randomized, placebo-controlled design rather than an observational dataset. That makes the signal harder to dismiss as confounding &mdash; while still leaving the big questions (does it translate to healthspan or lifespan? in whom? at what dose?) unanswered.
           </p>
@@ -120,7 +120,7 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
         </div>
 
         <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Explore More</h2>
+          <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-3">Explore More</h2>
           <div className="flex flex-wrap gap-3">
             <Link href="/peptides/semaglutide" className="btn-primary text-sm">Semaglutide Profile</Link>
             <Link href="/news" className="btn-outline text-sm">More News</Link>

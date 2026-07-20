@@ -166,11 +166,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -212,13 +212,13 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Glucomannan is metabolic/cardiovascular foundational support that doesn&apos;t directly interact with peptide pharmacology. GLP-1 receptor agonists (semaglutide, tirzepatide) for weight management work through central appetite regulation — glucomannan&apos;s satiety mechanism is peripheral (gastric expansion). The combination is mechanistically distinct without strong evidence for additive benefit; GLP-1 agonists provide much larger effect sizes than glucomannan for weight management.
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/fish-oil" className="text-[#3A759F] hover:underline">Fish oil</Link>{" "}
@@ -253,7 +253,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Energy-restricted diet (if using for weight loss).</span> Per EFSA-approved 3 g/day claim and the most-positive trials — weight loss benefit is conditional on caloric deficit, not standalone.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Ample water intake throughout the day.</span> Beyond per-dose water — overall hydration supports fiber function and safety.</li>
@@ -275,7 +275,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Gas and bloating — particularly during initial weeks. Builds with gradual dose increase.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Loose stools or modest diarrhea at higher doses.</li>
@@ -283,7 +283,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">CHOKING / esophageal obstruction.</span> The central safety concern. FDA case reports; tablet forms restricted in some markets; Vanderbeek 2007 case-report literature. Prevention: ample water (8+ oz) with EVERY dose; avoid tablets; users with dysphagia avoid entirely; seek immediate medical attention for chest pain or difficulty swallowing after dosing.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Bowel obstruction.</span> Risk in users with pre-existing motility disorders, partial obstruction, or post-surgical bowel changes. Coordinate with GI.</li>
@@ -293,7 +293,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Oral medications generally.</span> Glucomannan binds oral medications and reduces absorption. Separate by 2+ hours.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Diabetes medications (insulin, sulfonylureas).</span> Additive glucose-lowering effect. Monitor blood glucose; may need dose adjustment.</li>
@@ -371,7 +371,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -434,7 +434,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -530,7 +530,7 @@ export default function GlucomannanPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Glucomannan</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Glucomannan</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -538,24 +538,24 @@ export default function GlucomannanPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Konjac glucomannan, konjac mannan, konjac root fiber (Amorphophallus konjac); food-form delivery: shirataki noodles, konjac flour, konjac gel
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Konjac glucomannan, konjac mannan, konjac root fiber (Amorphophallus konjac); food-form delivery: shirataki noodles, konjac flour, konjac gel
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Viscous soluble fiber / bile acid binder / appetite/satiety supplement via gastric expansion / 50x water-absorbing gel-forming polysaccharide / choking-risk supplement at inadequate water intake (tablet forms restricted in some markets)
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Viscous soluble fiber / bile acid binder / appetite/satiety supplement via gastric expansion / 50x water-absorbing gel-forming polysaccharide / choking-risk supplement at inadequate water intake (tablet forms restricted in some markets)
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Moderate cholesterol-lowering (Sood 2008 meta — ~16 mg/dL LDL reduction; EFSA-approved cholesterol-maintenance claim at 4 g/day). Moderate constipation relief. Moderate satiety/appetite suppression. <span className="font-semibold">CONTESTED weight loss</span> — EFSA approved 3 g/day weight-loss claim in energy-restricted diet, BUT Onakpoya 2014 systematic review and meta-analysis of 9 RCTs found NO statistically significant weight loss vs placebo. Modest glycemic control. <span className="font-semibold">Critical safety signal</span>: esophageal obstruction / choking risk if taken without ample water — particularly with tablet forms (FDA case reports; restricted in some markets; Vanderbeek 2007 representative case-report literature).
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Moderate cholesterol-lowering (Sood 2008 meta — ~16 mg/dL LDL reduction; EFSA-approved cholesterol-maintenance claim at 4 g/day). Moderate constipation relief. Moderate satiety/appetite suppression. <span className="font-semibold">CONTESTED weight loss</span> — EFSA approved 3 g/day weight-loss claim in energy-restricted diet, BUT Onakpoya 2014 systematic review and meta-analysis of 9 RCTs found NO statistically significant weight loss vs placebo. Modest glycemic control. <span className="font-semibold">Critical safety signal</span>: esophageal obstruction / choking risk if taken without ample water — particularly with tablet forms (FDA case reports; restricted in some markets; Vanderbeek 2007 representative case-report literature).
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is glucomannan?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is glucomannan?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Glucomannan is a viscous soluble fiber extracted from the root of the konjac plant (Amorphophallus konjac) — the dominant polysaccharide in konjac, used in East Asian cuisine for centuries as shirataki noodles, konjac flour, and konjac gel. Supplemental glucomannan is the concentrated and purified fiber, sold as powder, capsules, and (more problematically) tablets. The defining physical property is extraordinary water absorption: glucomannan can absorb up to 50 times its weight in water, forming a viscous gel. This property drives both the mechanism of action and the central safety concern. In the gastrointestinal tract, gel formation produces gastric expansion and satiety, binds bile acids reducing LDL cholesterol, and provides stool bulking for constipation relief. The honest evidence summary requires careful nuance because the popular reputation diverges from the meta-analytic evidence on several points. <span className="font-semibold">Moderate evidence</span> covers LDL and total cholesterol reduction (Sood 2008 meta of 14 RCTs documented ~16 mg/dL LDL reduction; EFSA approved a cholesterol-maintenance claim at 4 g/day), constipation relief, and modest satiety/appetite suppression. <span className="font-semibold">CONTESTED evidence</span> covers weight loss — and this nuance is load-bearing. EFSA approved a weight-loss claim for glucomannan at 3 g/day in an energy-restricted diet, but the subsequent <span className="font-semibold">Onakpoya 2014 systematic review and meta-analysis of 9 RCTs (n=391) found NO statistically significant weight loss vs placebo</span>. The regulatory claim and the subsequent meta-analytic evidence diverge. Practical implication: don&apos;t expect dramatic standalone weight loss from glucomannan; any benefit is modest, conditional on an energy-restricted diet, and not robustly supported by the meta-analytic evidence. <span className="font-semibold">The central safety concern is choking and esophageal obstruction</span>: the same water-absorbing gel-forming property that drives the mechanism creates real risk if glucomannan is taken without ample water OR if a tablet expands in the esophagus before reaching the stomach. FDA case reports exist; some markets restrict glucomannan tablet sales; Vanderbeek 2007 and similar case-report literature document esophageal obstruction events. Australia requires warning labels on glucomannan tablets. Critical safety practices: (1) ALWAYS take with 8+ oz water — non-negotiable. (2) Powder or capsule forms are preferred over tablets. (3) Take 30+ minutes before meals to allow gastric expansion before food. (4) Users with swallowing difficulties should avoid glucomannan entirely. (5) Stop and seek medical attention if chest pain or difficulty swallowing develops. Standard supplemental dose: 1–4 g/day split before meals with ample water. Whole-food konjac (shirataki noodles, konjac flour) provides glucomannan in food form with lower safety risk — a reasonable alternative for users who don&apos;t need concentrated supplemental doses.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -569,10 +569,10 @@ export default function GlucomannanPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 1–4 g/day, taken 30 minutes before meals with 8+ oz water. Cholesterol management: 4 g/day total split across meals (EFSA cholesterol claim). Weight management (contested): 3 g/day in energy-restricted diet. Powder form preferred for safety; capsules acceptable; AVOID tablets.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 1–4 g/day, taken 30 minutes before meals with 8+ oz water. Cholesterol management: 4 g/day total split across meals (EFSA cholesterol claim). Weight management (contested): 3 g/day in energy-restricted diet. Powder form preferred for safety; capsules acceptable; AVOID tablets.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> CHOKING / esophageal obstruction (always 8+ oz water; avoid tablets; users with dysphagia avoid entirely); gas and bloating during initial weeks; drug absorption interference (separate by 2+ hours); diabetes medication interaction (additive glucose-lowering — monitor); levothyroxine absorption reduction (separate by 4+ hours); pre-existing bowel obstruction or motility disorder; pregnancy/breastfeeding not well-characterized; weight-loss expectations should be modest (Onakpoya 2014 meta null vs EFSA claim).
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> CHOKING / esophageal obstruction (always 8+ oz water; avoid tablets; users with dysphagia avoid entirely); gas and bloating during initial weeks; drug absorption interference (separate by 2+ hours); diabetes medication interaction (additive glucose-lowering — monitor); levothyroxine absorption reduction (separate by 4+ hours); pre-existing bowel obstruction or motility disorder; pregnancy/breastfeeding not well-characterized; weight-loss expectations should be modest (Onakpoya 2014 meta null vs EFSA claim).
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=glucomannan+powder+konjac&tag=profpeptide-20" label="Glucomannan" />
         </div>
@@ -583,7 +583,7 @@ export default function GlucomannanPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -612,7 +612,7 @@ export default function GlucomannanPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/fish-oil" className="text-sm font-medium text-[#3A759F] hover:underline">Fish Oil</Link>
           <Link href="/supplements/berberine" className="text-sm font-medium text-[#3A759F] hover:underline">Berberine</Link>

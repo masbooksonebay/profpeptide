@@ -42,11 +42,11 @@ export default function BPC157vsGHKCuPage() {
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">BPC-157 vs GHK-Cu &mdash; Healing &amp; Tissue Repair Peptide Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">BPC-157 vs GHK-Cu &mdash; Healing &amp; Tissue Repair Peptide Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">BPC-157 and GHK-Cu are both studied for tissue repair and healing, but they work through completely different mechanisms and have distinct primary applications. BPC-157 originates from gastric biology and excels in systemic tissue repair. GHK-Cu is a copper-binding tripeptide with extraordinary gene regulatory activity, primarily studied for skin, wound healing, and anti-aging.</p>
 
       <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why these two are studied for completely different healing problems</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Why these two are studied for completely different healing problems</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           BPC-157 and GHK-Cu are both research peptides studied for tissue repair, but they target almost entirely different problems. Confusing them as substitutes leads to mismatched expectations.
         </p>
@@ -70,7 +70,7 @@ export default function BPC157vsGHKCuPage() {
           </tr></thead>
           <tbody>{rows.map(([label, a, b], i) => (
             <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-              <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+              <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
               <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
               <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
             </tr>
@@ -78,31 +78,31 @@ export default function BPC157vsGHKCuPage() {
         </table>
       </div>
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which one is right for you?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Which one is right for you?</h2>
         <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           Both are research peptides with different primary applications. Choice depends on whether the research target is internal tissue (BPC-157) or skin/external healing (GHK-Cu).
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Gut healing, tendon repair, or CNS research</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Gut healing, tendon repair, or CNS research</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               BPC-157 is the right peptide. Its strongest research base is in localized internal tissue damage. Animal studies on tendon healing, gut ulcers, and nerve recovery consistently show BPC-157&apos;s EGR-1-mediated mechanism delivers strong site-specific repair. GHK-Cu has minimal evidence for these applications.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Skin regeneration, anti-aging, or wound healing research</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Skin regeneration, anti-aging, or wound healing research</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               GHK-Cu is the right peptide. Its tripeptide structure allows topical absorption, making it the only research peptide with serious cosmeceutical applications. Documented effects on skin elasticity, collagen synthesis, and fine line reduction are stronger than any peptide except retinol-class compounds. Often delivered as topical serums in concentrations of 1&ndash;3%.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Comprehensive tissue repair (internal + external)</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Comprehensive tissue repair (internal + external)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Some research protocols use both. BPC-157 addresses internal/structural tissue damage; GHK-Cu handles skin/external healing. The combination is sometimes used for athletes recovering from surgery (internal tissue with BPC-157, scar tissue with topical GHK-Cu). Mechanisms don&apos;t overlap, so combined effects are likely additive.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Topical-only application</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Topical-only application</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               GHK-Cu is the only realistic option here. BPC-157 is poorly absorbed transdermally and is ineffective when applied topically. GHK-Cu is the only research peptide with established topical bioavailability and proven cosmeceutical effects. Standard form: copper peptide serum applied to clean skin daily.
             </p>
@@ -111,16 +111,16 @@ export default function BPC157vsGHKCuPage() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link> is the broader systemic repair peptide &mdash; strongest for gut, tendons, and CNS. <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link> is the skin and wound healing specialist &mdash; particularly valuable for topical applications and anti-aging. They don&apos;t overlap significantly and can be studied together for comprehensive tissue repair protocols.</p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i}>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
             </div>
           ))}

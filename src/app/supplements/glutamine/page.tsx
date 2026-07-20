@@ -171,11 +171,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -217,7 +217,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Glutamine pairs naturally with the gut-healing peptide cluster — particularly{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>{" "}
@@ -229,7 +229,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/collagen-peptides" className="text-[#3A759F] hover:underline">Collagen peptides</Link>{" "}
@@ -263,7 +263,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Adequate dietary protein.</span> 1.6+ g/kg dietary protein provides ~5–8 g endogenous glutamine from food. Supplementation is most useful when training stress exceeds this baseline.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Address gut barrier drivers.</span> Chronic NSAID use, high alcohol intake, ultra-processed diet, and chronic stress all compromise gut barrier — supplementation works alongside lifestyle factors, not instead of them.</li>
@@ -283,14 +283,14 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort at very high single doses (30+ g) — rare; splitting dose resolves.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No documented serious adverse events at standard supplemental doses in healthy adults.</li>
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Kidney disease.</span> High amino acid intake can affect renal nitrogen handling. Coordinate with nephrology if you have CKD or chronic kidney conditions.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Active cancer / cancer history.</span> Some tumors are glutamine-dependent — glutamine supplementation in active cancer should only happen under oncology supervision. The chemotherapy-side-effect protocols are clinician-managed.</li>
@@ -300,7 +300,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No documented significant pharmacokinetic interactions at typical doses.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Chemotherapy regimens — coordinate with oncology. Some specific oncology contexts use glutamine therapeutically (chemo side-effect management); others avoid it.</li>
@@ -378,7 +378,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -441,7 +441,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -537,7 +537,7 @@ export default function GlutaminePage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Glutamine</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Glutamine</h1>
         <span className="tag">Recovery &amp; Tissue Repair</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -545,18 +545,18 @@ export default function GlutaminePage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> L-glutamine, glutamine monohydrate; clinical dipeptide form: alanyl-glutamine
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> L-glutamine, glutamine monohydrate; clinical dipeptide form: alanyl-glutamine
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Conditionally essential amino acid / primary enterocyte fuel (gut barrier integrity) / primary immune cell fuel during proliferation / nitrogen transport molecule / glutathione precursor
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Conditionally essential amino acid / primary enterocyte fuel (gut barrier integrity) / primary immune cell fuel during proliferation / nitrogen transport molecule / glutathione precursor
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Two-tier evidence base. <span className="font-semibold">Gut barrier integrity</span> (Moderate-to-Strong; Wang 2015 review): consistent reductions in intestinal permeability markers in athletes and IBD patients at 10–20 g/day. <span className="font-semibold">Critical-illness / surgical immunonutrition</span> (Mixed; REDOXS 2013 documented harm from high-dose pharmaco-nutrition in shock/MOF — routine ICU use no longer recommended). <span className="font-semibold">Healthy-athlete muscle recovery</span> (Modest-to-Weak; Candow 2001 and related trials show limited direct effects in well-fed athletes; benefit emerges in overtraining/illness contexts). Mechanism review: Cruzat 2018, Newsholme 2001.
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Two-tier evidence base. <span className="font-semibold">Gut barrier integrity</span> (Moderate-to-Strong; Wang 2015 review): consistent reductions in intestinal permeability markers in athletes and IBD patients at 10–20 g/day. <span className="font-semibold">Critical-illness / surgical immunonutrition</span> (Mixed; REDOXS 2013 documented harm from high-dose pharmaco-nutrition in shock/MOF — routine ICU use no longer recommended). <span className="font-semibold">Healthy-athlete muscle recovery</span> (Modest-to-Weak; Candow 2001 and related trials show limited direct effects in well-fed athletes; benefit emerges in overtraining/illness contexts). Mechanism review: Cruzat 2018, Newsholme 2001.
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is glutamine?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is glutamine?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Glutamine is the most abundant amino acid in the human body and the primary fuel source for two cell populations that matter disproportionately for health and recovery: enterocytes (the cells lining the intestinal wall) and rapidly dividing immune cells (lymphocytes, macrophages, neutrophils). Under normal conditions, the body synthesizes adequate glutamine to meet these demands — making it &quot;non-essential.&quot; During catabolic stress (surgery, burns, sepsis, major injury, prolonged intense exercise), glutamine demand exceeds endogenous production capacity and plasma glutamine drops — making it conditionally essential. This biology shapes glutamine&apos;s practical evidence base, which is best understood as two distinct tiers rather than a single unified picture. The strong tier covers gut barrier integrity (Wang 2015 review documents consistent reductions in intestinal permeability markers with 10–20 g/day in athletes during heavy training and IBD patients) and critical-illness immunonutrition (older RCTs in surgical and ICU contexts — though the 2013 REDOXS trial complicated routine high-dose ICU glutamine by documenting increased mortality in shock/MOF patients, shifting current practice toward tailored rather than routine use). The modest tier covers healthy-athlete muscle protein synthesis, body composition, and hypertrophy outcomes — multiple RCTs (Candow 2001 and others) in resistance-trained men with adequate dietary protein show limited direct effects of supplemental glutamine on these endpoints. The practical implication for healthy users: glutamine is one of the better-evidenced supplements for gut barrier targeting, immune support during overtraining or illness, and post-surgical recovery contexts — but it is not a primary muscle-building or strength-building supplement in well-fed athletes. The Cruzat 2018 and Newsholme 2001 reviews are the foundational mechanism references. Glutamine pairs naturally with{" "}
@@ -564,7 +564,7 @@ export default function GlutaminePage() {
             for gut healing applications — BPC-157 drives the healing signal; glutamine supplies enterocyte fuel.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -579,10 +579,10 @@ export default function GlutaminePage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> 5–10 g daily for general use; 10–20 g daily in 2–3 divided doses for gut barrier support; 15–30+ g daily under clinical supervision for surgical recovery, IBD adjunct, or chemo side-effect support. Mix into cold water (heat-unstable in solution). No acute single-dose performance effect — chronic supplementation only.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> 5–10 g daily for general use; 10–20 g daily in 2–3 divided doses for gut barrier support; 15–30+ g daily under clinical supervision for surgical recovery, IBD adjunct, or chemo side-effect support. Mix into cold water (heat-unstable in solution). No acute single-dose performance effect — chronic supplementation only.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Watch for:</span> Cancer history (glutamine-dependent tumors — oncology supervision in active cancer); kidney disease (high amino acid intake — nephrology coordination); critical illness/ICU contexts (REDOXS findings; specialist-managed only); rare glutamine metabolism genetic conditions (absolute contraindication); generally exceptional safety profile in healthy adults.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Watch for:</span> Cancer history (glutamine-dependent tumors — oncology supervision in active cancer); kidney disease (high amino acid intake — nephrology coordination); critical illness/ICU contexts (REDOXS findings; specialist-managed only); rare glutamine metabolism genetic conditions (absolute contraindication); generally exceptional safety profile in healthy adults.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=l-glutamine+powder+pharmaceutical+grade&tag=profpeptide-20" label="Glutamine" />
         </div>
@@ -593,7 +593,7 @@ export default function GlutaminePage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -622,7 +622,7 @@ export default function GlutaminePage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/collagen-peptides" className="text-sm font-medium text-[#3A759F] hover:underline">Collagen Peptides</Link>
           <Link href="/supplements/zinc-carnosine" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc Carnosine</Link>

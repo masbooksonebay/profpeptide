@@ -167,11 +167,11 @@ const sections = [
     node: (
       <div className="space-y-4">
         <div className="overflow-x-auto -mx-4 sm:mx-0">
-          <table className="w-full text-base text-left border-collapse border border-gray-200 dark:border-slate-700 rounded-lg overflow-hidden">
-            <thead className="bg-gray-100 dark:bg-[#1e2d3d]">
+          <table className="w-full text-base text-left border-collapse border border-[#D9DEE4] dark:border-slate-700 rounded-lg overflow-hidden">
+            <thead className="bg-gray-100 dark:bg-[#16181B]">
               <tr>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Aspect</th>
-                <th className="px-4 py-3 font-semibold text-[#1e2d3d] dark:text-slate-100">Recommendation</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Aspect</th>
+                <th className="px-4 py-3 font-semibold text-[#16181B] dark:text-slate-100">Recommendation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
@@ -213,7 +213,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With peptides</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With peptides</h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Quercetin spans two natural peptide-pairing clusters depending on goal.{" "}
             <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
@@ -225,7 +225,7 @@ const sections = [
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With supplements</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With supplements</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <Link href="/supplements/zinc" className="text-[#3A759F] hover:underline">Zinc</Link>{" "}
@@ -258,7 +258,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">With lifestyle</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">With lifestyle</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Take with fat-containing meals.</span> Bioavailability is meaningfully fat-dependent for both standard and phytosome forms.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Intermittent fasting + senolytic protocol.</span> Senescent-cell clearance may be enhanced by fasting-state autophagy. Pulsed quercetin during fasting windows is mechanistically reasonable, though not directly RCT-validated.</li>
@@ -278,7 +278,7 @@ const sections = [
     node: (
       <div className="space-y-5">
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Common (mostly transient)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild GI discomfort — nausea, stomach upset, especially at higher doses or empty stomach. Resolves with food coadministration.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Headache — occasional, generally mild and dose-related.</li>
@@ -287,7 +287,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Less common (watch-list)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Kidney stress at high chronic doses (1,500+ mg/day for months) — modest signal in some studies. Stay within recommended ranges; users with kidney disease should defer to nephrologist.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Mild antiplatelet effect — relevant for surgery (1-2 week pre-op washout) and chronic anticoagulant users.</li>
@@ -295,7 +295,7 @@ const sections = [
           </ol>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
+          <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Drug and supplement interactions</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cyclosporine (immunosuppressant).</span> Quercetin inhibits cyclosporine metabolism — can elevate cyclosporine levels and increase toxicity risk. Coordinate with prescribing clinician.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anticoagulants (warfarin, apixaban, rivaroxaban).</span> Mild additive antiplatelet effect. Monitor for unusual bleeding.</li>
@@ -371,7 +371,7 @@ const sections = [
       <div className="space-y-4">
         {faqs.map((f, i) => (
           <div key={i}>
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">
               {f.q}
             </h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -440,7 +440,7 @@ const sections = [
               <span className="text-xs text-gray-400 dark:text-slate-500">{s.journal} &middot; {s.year}</span>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${s.access === "Open Access" ? "bg-green-50 text-green-700 border border-green-200" : "bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400"}`}>{s.access}</span>
             </div>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
+            <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors leading-snug block mb-1">{s.title} &rarr;</a>
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-3">{s.authors}</p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.summary}</p>
           </div>
@@ -568,7 +568,7 @@ export default function QuercetinPage() {
       <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100">Quercetin</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Quercetin</h1>
         <span className="tag">Longevity</span>
       </div>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
@@ -576,18 +576,18 @@ export default function QuercetinPage() {
       </p>
       <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Also Known As:</span> Quercetin dihydrate, Quercefit (phytosome), isoquercetin, quercetin glucoside
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Quercetin dihydrate, Quercefit (phytosome), isoquercetin, quercetin glucoside
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Supplement Class:</span> Flavonoid polyphenol / senolytic (selective clearance of senescent cells) / NF-κB + NLRP3 inflammasome inhibitor / zinc ionophore / mast cell stabilizer
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Supplement Class:</span> Flavonoid polyphenol / senolytic (selective clearance of senescent cells) / NF-κB + NLRP3 inflammasome inhibitor / zinc ionophore / mast cell stabilizer
         </p>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Evidence Tier:</span> Moderate — Serban 2016 meta-analysis (7 RCTs, n=587) for blood pressure reduction; Justice 2019 + Hickson 2019 first-in-human senolytic pilot trials (D+Q combination); Mlcek 2016 review for antihistamine mechanism. Senolytic and antiviral arms have strong mechanism + small/mixed clinical trial data. Strongly formulation-dependent (bioavailability gates outcomes).
+          <span className="font-semibold text-[#16181B] dark:text-slate-100">Evidence Tier:</span> Moderate — Serban 2016 meta-analysis (7 RCTs, n=587) for blood pressure reduction; Justice 2019 + Hickson 2019 first-in-human senolytic pilot trials (D+Q combination); Mlcek 2016 review for antihistamine mechanism. Senolytic and antiviral arms have strong mechanism + small/mixed clinical trial data. Strongly formulation-dependent (bioavailability gates outcomes).
         </p>
       </div>
 
       <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">What is quercetin?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is quercetin?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Quercetin is a flavonoid polyphenol found abundantly in onions, apples, capers, berries, leafy greens, and green tea — making it one of the most widely consumed dietary polyphenols. Its supplement profile spans multiple distinct mechanism arms: senolytic activity (selective clearance of senescent &ldquo;zombie&rdquo; cells, particularly potent when combined with the prescription drug dasatinib — the Mayo Clinic D+Q protocol), NF-κB and NLRP3 inflammasome inhibition (broad anti-inflammatory effect), mast cell stabilization (antihistamine), zinc ionophore activity (antiviral implications), and AMPK activation / mTOR inhibition (longevity-pathway modulation). The senolytic arm is the most mechanistically novel — Hickson 2019 documented actual senescent-cell clearance in human skin and adipose tissue biopsies after pulsed D+Q dosing, supporting the &ldquo;senolytic clearance&rdquo; framework that drives modern aging research. The cardiovascular/blood pressure arm has the cleanest meta-analytic support (Serban 2016, -3.04 mmHg SBP / -2.63 mmHg DBP). The central practical issue is bioavailability — standard quercetin has poor oral absorption (single-digit percent); Quercefit phytosome (~20× absorption) and isoquercetin (~3×) are the practical solutions. Quercetin pairs naturally with{" "}
@@ -597,7 +597,7 @@ export default function QuercetinPage() {
             for longevity-cluster protocols.
           </p>
           <div>
-            <p className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               Reported benefits:
             </p>
             <ul className="list-disc list-inside space-y-1">
@@ -612,10 +612,10 @@ export default function QuercetinPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Common dose:</span> Quercefit phytosome 250–500 mg twice daily (trial-validated for blood pressure and anti-inflammatory effects); isoquercetin 500–1,000 mg/day; standard quercetin + bromelain 1,000–2,000 mg + 100–500 mg bromelain daily. Always with fat-containing meals. Senolytic D+Q protocol is intermittent (pulsed 2–3 days every 2 weeks) and requires prescription dasatinib.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common dose:</span> Quercefit phytosome 250–500 mg twice daily (trial-validated for blood pressure and anti-inflammatory effects); isoquercetin 500–1,000 mg/day; standard quercetin + bromelain 1,000–2,000 mg + 100–500 mg bromelain daily. Always with fat-containing meals. Senolytic D+Q protocol is intermittent (pulsed 2–3 days every 2 weeks) and requires prescription dasatinib.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#1e2d3d] dark:text-slate-100">Pre-surgical washout:</span> Stop quercetin 1–2 weeks before scheduled surgery — mild antiplatelet effect plus cytochrome P450 enzyme interference affects other drug metabolism. Important for users on cyclosporine, warfarin, or narrow-therapeutic-index medications.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Pre-surgical washout:</span> Stop quercetin 1–2 weeks before scheduled surgery — mild antiplatelet effect plus cytochrome P450 enzyme interference affects other drug metabolism. Important for users on cyclosporine, warfarin, or narrow-therapeutic-index medications.
           </p>
           <AmazonCTAButton href="https://www.amazon.com/s?k=quercetin+phytosome&tag=profpeptide-20" label="Quercetin" />
         </div>
@@ -626,7 +626,7 @@ export default function QuercetinPage() {
       <div className="space-y-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
               {s.title}
             </h2>
             {s.intro && (
@@ -655,7 +655,7 @@ export default function QuercetinPage() {
       </div>
 
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <h2 className="text-sm font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Related Supplements</h2>
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Supplements</h2>
         <div className="flex flex-wrap gap-4">
           <Link href="/supplements/zinc" className="text-sm font-medium text-[#3A759F] hover:underline">Zinc</Link>
           <Link href="/supplements/resveratrol" className="text-sm font-medium text-[#3A759F] hover:underline">Resveratrol</Link>

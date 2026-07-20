@@ -39,17 +39,17 @@ export default function TB500vsThymosinBeta4Page() {
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
-      <h1 className="text-3xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-3">TB-500 vs Thymosin Beta-4 &mdash; Fragment vs Full Protein</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">TB-500 vs Thymosin Beta-4 &mdash; Fragment vs Full Protein</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link> and Thymosin Beta-4 are searched as if they&apos;re two compounds to choose between &mdash; but they&apos;re not rivals. TB-500 is the synthetic active fragment of the naturally occurring Thymosin Beta-4 (Tβ4) protein. This page explains the real relationship, the genuine differences, and what it means in practice.</p>
 
       <div className="bg-[#3A759F]/10 border border-[#3A759F]/20 rounded-xl p-5 mb-8">
-        <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>Thymosin Beta-4 (Tβ4):</strong> the full, naturally occurring 43-amino-acid protein &mdash; the parent molecule.</p>
-        <p className="text-lg text-[#1e2d3d] dark:text-slate-100 mb-2"><strong>TB-500:</strong> the synthetic active fragment of Tβ4 &mdash; shorter, easier to make, and the form nearly all vendors actually sell.</p>
-        <p className="text-lg text-[#1e2d3d] dark:text-slate-100"><strong>Bottom line up front:</strong> same active molecule family, not a &ldquo;which is better&rdquo; contest &mdash; the practical differences are length, sourcing, and cost.</p>
+        <p className="text-lg text-[#16181B] dark:text-slate-100 mb-2"><strong>Thymosin Beta-4 (Tβ4):</strong> the full, naturally occurring 43-amino-acid protein &mdash; the parent molecule.</p>
+        <p className="text-lg text-[#16181B] dark:text-slate-100 mb-2"><strong>TB-500:</strong> the synthetic active fragment of Tβ4 &mdash; shorter, easier to make, and the form nearly all vendors actually sell.</p>
+        <p className="text-lg text-[#16181B] dark:text-slate-100"><strong>Bottom line up front:</strong> same active molecule family, not a &ldquo;which is better&rdquo; contest &mdash; the practical differences are length, sourcing, and cost.</p>
       </div>
 
       <div className="mb-8 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">Why people think these are two different compounds</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Why people think these are two different compounds</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
           Vendors and forums use &ldquo;TB-500&rdquo; and &ldquo;Thymosin Beta-4&rdquo; as if they were competing products, so people assume they must pick one. In reality, Thymosin Beta-4 is a 43-amino-acid protein your cells already make, and TB-500 is a lab-synthesized fragment of it &mdash; specifically the active region (often described as the Tβ4 17-23 region) that carries the actin-binding and cell-migration activity.
         </p>
@@ -73,7 +73,7 @@ export default function TB500vsThymosinBeta4Page() {
           <tbody>
             {rows.map(([label, a, b], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-gray-50/50 dark:bg-slate-800/50"}>
-                <td className="px-4 py-3 font-medium text-[#1e2d3d] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
+                <td className="px-4 py-3 font-medium text-[#16181B] dark:text-slate-100 border-b border-gray-100 dark:border-slate-700">{label}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{a}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-slate-300 border-b border-gray-100 dark:border-slate-700">{b}</td>
               </tr>
@@ -83,25 +83,25 @@ export default function TB500vsThymosinBeta4Page() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Which one is right for you?</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Which one is right for you?</h2>
         <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           Both are research-use-only and neither is FDA-approved. Since they share the same active region, the choice is practical rather than an efficacy question.
         </p>
         <div className="space-y-4">
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Most research use — the fragment (TB-500)</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Most research use — the fragment (TB-500)</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               For the overwhelming majority of tissue-repair research questions, TB-500 is the default. It carries the active actin-binding region, it is what nearly every vendor stocks, and it is cheaper and more consistently available than the full-length protein. If a protocol just calls for &ldquo;Thymosin Beta-4 activity,&rdquo; the fragment is what is typically used.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">When the full-length protein specifically matters</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">When the full-length protein specifically matters</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Some research questions target properties of the complete 43-amino-acid protein (for example, regions outside the core active fragment, or work aligned with the named Thymosin Beta-4 clinical programs). In those cases full-length Tβ4 is the correct material &mdash; expect it to be rarer and more expensive, and verify the sequence/length on the Certificate of Analysis.
             </p>
           </div>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5">
-            <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-2">Verify what you are actually buying</h3>
+            <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Verify what you are actually buying</h3>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               Because the labels are used loosely, the most important step is checking the COA. A vial labeled &ldquo;Thymosin Beta-4&rdquo; is not guaranteed to be the full protein, and &ldquo;TB-500&rdquo; is the fragment. Confirm the stated amino-acid sequence/length and salt form so the material matches your protocol.
             </p>
@@ -110,16 +110,16 @@ export default function TB500vsThymosinBeta4Page() {
       </div>
 
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
-        <h2 className="text-xl font-bold text-[#1e2d3d] dark:text-slate-100 mb-2">Bottom Line</h2>
+        <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Bottom Line</h2>
         <p className="text-lg text-gray-600 dark:text-slate-300"><Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link> and Thymosin Beta-4 are not competing compounds &mdash; TB-500 is the synthetic active fragment of the full 43-amino-acid Thymosin Beta-4 protein, and it is the form nearly all vendors sell. They share the same active region and the same core mechanism, so this is a fragment-vs-full-protein distinction, not a which-is-better contest. Most research uses the fragment; full-length Tβ4 is reserved for questions that specifically require the complete protein. Neither is FDA-approved, the evidence base is largely preclinical, and both are sold research-use-only &mdash; always verify the sequence on the Certificate of Analysis. Commonly stacked with <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link> in the <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</Link>.</p>
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-4">FAQ</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">FAQ</h2>
         <div className="space-y-4">
           {faqs.map((f, i) => (
             <div key={i}>
-              <h3 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-1">{f.q}</h3>
+              <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">{f.q}</h3>
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{f.a}</p>
             </div>
           ))}
@@ -127,7 +127,7 @@ export default function TB500vsThymosinBeta4Page() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-[#1e2d3d] dark:text-slate-100 mb-3">References</h2>
+        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">References</h2>
         <ol className="list-decimal list-inside space-y-2">
           <li className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Goldstein AL, Hannappel E, Sosne G, Kleinman HK. Thymosin β4: a multi-functional regenerative peptide. Basic properties and clinical applications. Expert Opin Biol Ther. 2012;12(1):37-51.{" "}
