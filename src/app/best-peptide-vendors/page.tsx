@@ -90,6 +90,16 @@ const vendors: HubVendor[] = [
       "US research peptide supplier that runs four independent test types per batch: purity, endotoxin, heavy metals, and sterility. Extensive transparency on test data and documentation.",
     strengths: ["Four independent batch tests", "Endotoxin + sterility tested", "Published COAs", "Transparent test data"],
   },
+  {
+    name: "Swiss Chems",
+    slug: "swiss-chems",
+    url: "https://swisschems.is/?ref=PROF10",
+    code: "PROF10",
+    discount: "10% off",
+    description:
+      "US-based, peptide-forward supplier with a notably deep growth-hormone and peptide bench, plus recovery, longevity, cognitive, and reproductive-health compounds. Transparency runs on a public Independent Test Results page and a per-product verification system — third-party HPLC and mass-spectrometry testing at external labs to a stated 99%+ purity standard, with full batch Certificates of Analysis published rather than summarized.",
+    strengths: ["Public independent test-results page + COAs", "Third-party HPLC & mass-spec, 99%+ purity", "Deep growth-hormone & peptide bench", "10% off with code"],
+  },
 ];
 
 export default function BestPeptideVendorsPage() {
