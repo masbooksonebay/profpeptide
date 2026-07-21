@@ -61,6 +61,16 @@ const vendors: HubVendor[] = [
     strengths: ["Third-party tested, COA per batch", "Ships in 0\u20132 business days", "4.7/5 across 176+ reviews", "10% off with code"],
   },
   {
+    name: "Glacier Aminos",
+    slug: "glacier-aminos",
+    url: "https://glacieraminos.shop/?ref=cknlhxrm",
+    code: "PROF10",
+    discount: "10% off",
+    description:
+      "US-based, family-owned research-peptide supplier with same-day shipping (before 12PM MST) and US fulfillment. Every batch is third-party tested at independent American labs under a 7-point protocol \u2014 HPLC purity, identity, endotoxin, sterility, heavy metals, and multi-vial batch conformity. Each vial carries a unique batch code and a QR link to its COA, plus a purity guarantee (free replacement if independent testing shows purity below their stated threshold).",
+    strengths: ["7-point third-party testing", "Per-vial QR-code COAs", "US-based, family-owned", "10% off with code"],
+  },
+  {
     name: "Oasis Labs",
     slug: "oasis-labs",
     url: "https://myoasislabs.com/?sld=profpeptide",
