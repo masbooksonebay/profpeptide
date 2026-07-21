@@ -3,7 +3,7 @@ import { vendors } from "@/data/vendors";
 
 export const metadata = {
   alternates: { canonical: "/vendors" },
-  title: "Vendor Profiles — Research Peptide Suppliers | Prof. Peptide",
+  title: "Verified Vendors — Research Peptide Suppliers | Prof. Peptide",
   description:
     "An alphabetical directory of the research-peptide vendors we profile, each with its discount code and savings. Select a vendor to open its full profile.",
   // DIRECTIVE (Mark to confirm): keep this index out of search but let crawlers
