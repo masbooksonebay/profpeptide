@@ -142,7 +142,7 @@ export default function SwissChemsCouponPage() {
           <div className="space-y-2">
             <FAQItem
               q="What peptides does Swiss Chems carry?"
-              a="Swiss Chems is peptide-forward, with a particularly deep growth-hormone bench (CJC-1295 with and without DAC, Ipamorelin, Sermorelin, Tesamorelin, GHRP-2/6, Hexarelin, IGF-1 LR3 and DES, MGF/PEG-MGF, Follistatin-344, Myostatin, ACE-031). It also carries recovery compounds (BPC-157, TB-500), metabolic peptides (MOTS-C, 5-Amino-1MQ, FTPP), longevity and skin compounds (GHK-Cu, Epitalon, Glutathione), cognitive peptides (Semax, Selank), DSIP for sleep, and reproductive-health compounds (PT-141, Melanotan II, Oxytocin, Kisspeptin-10, and more)."
+              a="Swiss Chems is peptide-forward, with a particularly deep growth-hormone bench (CJC-1295 with and without DAC, Ipamorelin, Sermorelin, Tesamorelin, GHRP-2/6, Hexarelin, IGF-1 LR3 and DES, MGF/PEG-MGF, Follistatin-344). It also carries recovery compounds (BPC-157, TB-500), metabolic peptides (MOTS-C, 5-Amino-1MQ, FTPP), longevity and skin compounds (GHK-Cu, Epitalon, Glutathione), cognitive peptides (Semax, Selank), DSIP for sleep, and reproductive-health compounds (PT-141, Melanotan II, Oxytocin, Kisspeptin-10, and more)."
             />
             <FAQItem
               q="Does Swiss Chems have a discount code?"
