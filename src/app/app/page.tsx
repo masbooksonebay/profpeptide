@@ -80,29 +80,36 @@ export default function AppPage() {
           see estimated levels, run protocols and stacks, calculate reconstitution, and ask an AI
           research assistant. For informational and educational use only.
         </p>
-        <div className="bg-[#3A759F]/10 border border-[#3A759F]/20 rounded-2xl px-6 py-8 max-w-sm mx-auto">
-          <div className="w-16 h-16 bg-[#3A759F] rounded-2xl mx-auto mb-4 flex items-center justify-center">
-            <span className="text-white text-2xl font-semibold">Pp</span>
+        <div className="panel-card p-8 max-w-sm mx-auto text-center">
+          <Image
+            src="/pp-mark.png"
+            alt="Prof. Peptide app icon"
+            width={72}
+            height={72}
+            className="mx-auto rounded-[18px] shadow-[0_6px_16px_-4px_rgba(16,24,40,0.2)]"
+            priority
+          />
+          <p className="mt-5 text-lg font-semibold text-[#16181B] dark:text-slate-100">Prof. Peptide</p>
+          <p className="mt-1 text-sm text-gray-500 dark:text-slate-400">Research &amp; Education</p>
+          <div className="mt-6 pt-6 border-t border-[#D9DEE4] dark:border-slate-700">
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Prof. Peptide on the App Store"
+              className="inline-block hover:opacity-90 transition-opacity"
+            >
+              <Image
+                src="/app-store-badge.svg"
+                alt="Download Prof. Peptide on the App Store"
+                width={200}
+                height={66}
+                className="mx-auto"
+                priority
+              />
+            </a>
+            <p className="mt-4 text-xs text-gray-400 dark:text-slate-500">iOS 15.1 or later required</p>
           </div>
-          <p className="font-semibold text-[#16181B] dark:text-slate-100 mb-1">Prof. Peptide</p>
-          <p className="text-xs text-gray-500 dark:text-slate-400 mb-6">Research &amp; Education</p>
-          <a
-            href={APP_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Download Prof. Peptide on the App Store"
-            className="inline-block hover:opacity-90 transition-opacity"
-          >
-            <Image
-              src="/app-store-badge.svg"
-              alt="Download Prof. Peptide on the App Store"
-              width={180}
-              height={60}
-              className="mx-auto"
-              priority
-            />
-          </a>
-          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">iOS 15.1 or later required</p>
         </div>
       </div>
 
