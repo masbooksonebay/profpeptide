@@ -131,16 +131,16 @@ export default function Home() {
           </p>
           <HeroSearch />
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/peptides" className="btn-outline text-base px-8 py-3.5">Explore Peptides</Link>
-            <Link href="/calculator" className="btn-outline text-base px-8 py-3.5">Dosage Calculator</Link>
-            <Link href="/coupons" className="btn-outline text-base px-8 py-3.5">Discount Codes</Link>
+            <Link href="/peptides" className="btn-outline text-base px-8 py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Explore Peptides</Link>
+            <Link href="/calculator" className="btn-outline text-base px-8 py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Dosage Calculator</Link>
+            <Link href="/coupons" className="btn-outline text-base px-8 py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Discount Codes</Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#F4F6F8] dark:bg-[#0b1120] border-b border-gray-100 dark:border-slate-800">
+      <section className="bg-[#F4F6F8] dark:bg-[#0b1120] border-y border-[#D9DEE4] dark:border-slate-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center items-start">
             {trust.map((t) => (
               <div key={t.label}>
                 <p className="text-2xl font-bold text-[#3A759F]">{t.value}</p>
