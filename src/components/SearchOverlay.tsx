@@ -7,10 +7,10 @@ import { searchIndex, categoryLabels, type SearchCategory, type SearchEntry } fr
 
 const QUICK_LINKS: SearchEntry[] = [
   { title: "Peptide Library", url: "/peptides", category: "page", description: "Browse all peptide profiles", tags: [] },
-  { title: "Comparisons", url: "/compare", category: "page", description: "Side-by-side compound comparisons", tags: [] },
-  { title: "Discount Codes", url: "/coupons", category: "page", description: "Vendor codes & promos", tags: [] },
   { title: "Dosage Calculator", url: "/calculator", category: "page", description: "Reconstitution & dosing", tags: [] },
   { title: "Featured Vendors", url: "/best-peptide-vendors", category: "page", description: "Vetted research suppliers", tags: [] },
+  { title: "Discount Codes", url: "/coupons", category: "page", description: "Vendor codes & promos", tags: [] },
+  { title: "Comparisons", url: "/compare", category: "page", description: "Side-by-side compound comparisons", tags: [] },
 ];
 
 const CATEGORY_ORDER: SearchCategory[] = ["peptide", "supplement", "comparison", "news", "page"];
@@ -122,7 +122,7 @@ export default function SearchOverlay({ isOpen, onClose }: Props) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search peptides, supplements, comparisons…"
+            placeholder="Search peptides, comparisons, vendors…"
             className="flex-1 py-4 bg-transparent text-base text-gray-800 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-500 outline-none"
             autoComplete="off"
             spellCheck={false}
