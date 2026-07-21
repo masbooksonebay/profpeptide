@@ -24,14 +24,23 @@ const categories = [
 type NavEntry = {
   label: string;
   href: string;
-  dropdown?: "categories";
+  dropdown?: "categories" | "vendors";
 };
 
 const nav: NavEntry[] = [
   { label: "Peptides", href: "/peptides", dropdown: "categories" },
+  { label: "Vendors", href: "/vendors", dropdown: "vendors" },
   { label: "Calculator", href: "/calculator" },
   { label: "Codes", href: "/coupons" },
   { label: "App", href: "/app" },
+];
+
+// "Vendors" dropdown destinations. "Codes" also stays as a standalone nav item
+// (/coupons) — the overlap with "Vendor Discount Codes" here is intentional.
+const vendorLinks = [
+  { label: "Verified Vendors", href: "/vendors" },
+  { label: "Featured Vendors", href: "/best-peptide-vendors" },
+  { label: "Vendor Discount Codes", href: "/coupons" },
 ];
 
 // Dark mode is disabled: the site renders light-only. The ThemeToggle control
@@ -40,8 +49,26 @@ const nav: NavEntry[] = [
 const DARK_MODE_ENABLED = false;
 
 function DropdownPanel({ entry }: { entry: NavEntry }) {
-  // "categories" variant: peptide category quick-links
   const baseHref = entry.href;
+  // "vendors" variant: flat list of vendor destinations. Mirrors the categories
+  // panel exactly (same container + item classes), without category icons or a
+  // "View All" footer link.
+  if (entry.dropdown === "vendors") {
+    return (
+      <div className="bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl shadow-lg py-2 w-64">
+        {vendorLinks.map((v) => (
+          <Link
+            key={v.href}
+            href={v.href}
+            className="flex items-center gap-2.5 px-4 py-2 text-sm text-gray-600 dark:text-slate-300 hover:bg-[#3A759F] hover:text-white transition-colors"
+          >
+            {v.label}
+          </Link>
+        ))}
+      </div>
+    );
+  }
+  // "categories" variant: peptide category quick-links
   return (
     <div className="bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl shadow-lg py-2 w-64">
       {categories.map((cat) => (
