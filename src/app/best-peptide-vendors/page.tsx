@@ -128,7 +128,7 @@ export default function BestPeptideVendorsPage() {
       <div className="section max-w-3xl">
         <span className="tag mb-3 inline-block">Updated July 2026</span>
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">
-          Featured Peptide Vendors for Research (July 2026)
+          Featured Peptide Vendors (July 2026)
         </h1>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-6 max-w-xl">
           Below is a list of the research peptide vendors we&rsquo;ve vetted and recommend. To make our list, a vendor must provide third-party lab testing with published Certificates of Analysis, meet documented purity standards, offer transparent shipping, maintain responsive customer service, and hold a positive reputation in the research community.
