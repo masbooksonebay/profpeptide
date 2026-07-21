@@ -21,7 +21,7 @@ const activeVendors = Object.values(vendors)
 export default function VendorProfilesPage() {
   return (
     <div className="section">
-      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">Vendor Profiles</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">Verified Vendors</h1>
       <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-8 max-w-2xl">
         A directory of verified peptide vendors we profile — each with its discount code and
         savings. Select a vendor to open its full profile.
