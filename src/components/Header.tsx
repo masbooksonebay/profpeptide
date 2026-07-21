@@ -29,8 +29,8 @@ type NavEntry = {
 
 const nav: NavEntry[] = [
   { label: "Peptides", href: "/peptides", dropdown: "categories" },
-  { label: "Vendors", href: "/vendors", dropdown: "vendors" },
   { label: "Calculator", href: "/calculator" },
+  { label: "Vendors", href: "/vendors", dropdown: "vendors" },
   { label: "Codes", href: "/coupons" },
   { label: "App", href: "/app" },
 ];
