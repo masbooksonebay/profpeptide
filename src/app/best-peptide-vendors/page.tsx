@@ -108,7 +108,7 @@ export default function BestPeptideVendorsPage() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Featured Peptide Vendors for Research (July 2026)",
+        "headline": "Featured Peptide Vendors (July 2026)",
         "description": "Alphabetical list of the peptide vendors Prof. Peptide has vetted for third-party testing, COA transparency, purity standards, shipping reliability, and community reputation.",
         "datePublished": "2026-04-16",
         "dateModified": "2026-06-25",
