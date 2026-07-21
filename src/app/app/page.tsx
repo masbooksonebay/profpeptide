@@ -86,7 +86,7 @@ export default function AppPage() {
             alt="Prof. Peptide app icon"
             width={72}
             height={72}
-            className="mx-auto rounded-[18px] shadow-[0_6px_16px_-4px_rgba(16,24,40,0.2)]"
+            className="mx-auto object-contain"
             priority
           />
           <p className="mt-5 text-lg font-semibold text-[#16181B] dark:text-slate-100">Prof. Peptide</p>
