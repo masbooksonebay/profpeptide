@@ -90,7 +90,6 @@ export default function AppPage() {
             priority
           />
           <p className="mt-5 text-lg font-semibold text-[#16181B] dark:text-slate-100">Prof. Peptide</p>
-          <p className="mt-1 text-sm text-gray-500 dark:text-slate-400">Research &amp; Education</p>
           <div className="mt-6 pt-6 border-t border-[#D9DEE4] dark:border-slate-700">
             <a
               href={APP_STORE_URL}
