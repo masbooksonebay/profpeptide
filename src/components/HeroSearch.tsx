@@ -25,9 +25,6 @@ export default function HeroSearch() {
       <span className="flex-1 text-base text-gray-400 dark:text-slate-500">
         Search peptides, vendors, comparisons&hellip;
       </span>
-      <kbd className="hidden sm:inline-flex items-center rounded border border-[#D9DEE4] dark:border-slate-600 px-1.5 py-0.5 text-xs font-medium text-gray-400 dark:text-slate-500">
-        &#8984;K
-      </kbd>
     </button>
   );
 }
