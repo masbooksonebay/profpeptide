@@ -400,7 +400,7 @@ export default function CouponsPage() {
 
       <Link href="/best-peptide-vendors" className="card group block mb-8">
         <span className="text-[#3A759F] mb-3 block"><Icon name="shield-block-outline" /></span>
-        <h3 className="text-base font-semibold text-[#16181B] dark:text-slate-100 mb-1.5 group-hover:text-[#3A759F] transition-colors">Best Peptide Vendors</h3>
+        <h3 className="text-base font-semibold text-[#16181B] dark:text-slate-100 mb-1.5 group-hover:text-[#3A759F] transition-colors">Featured Vendors</h3>
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
           Our vetted list of research peptide suppliers — with third-party testing, published COAs, and the quality criteria we use to include them.
         </p>

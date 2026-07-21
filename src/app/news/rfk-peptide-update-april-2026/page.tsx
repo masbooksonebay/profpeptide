@@ -109,7 +109,7 @@ export default function RFKPeptideUpdatePage() {
           <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-3">Explore More</h2>
           <div className="flex flex-wrap gap-3">
             <Link href="/peptides" className="btn-primary text-sm">Explore Compound Profiles</Link>
-            <Link href="/best-peptide-vendors" className="btn-outline text-sm">Best Peptide Vendors</Link>
+            <Link href="/best-peptide-vendors" className="btn-outline text-sm">Featured Vendors</Link>
             <Link href="/coupons" className="btn-outline text-sm">Browse Discount Codes</Link>
           </div>
         </div>

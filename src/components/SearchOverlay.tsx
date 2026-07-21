@@ -10,7 +10,7 @@ const QUICK_LINKS: SearchEntry[] = [
   { title: "Comparisons", url: "/compare", category: "page", description: "Side-by-side compound comparisons", tags: [] },
   { title: "Discount Codes", url: "/coupons", category: "page", description: "Vendor codes & promos", tags: [] },
   { title: "Dosage Calculator", url: "/calculator", category: "page", description: "Reconstitution & dosing", tags: [] },
-  { title: "Best Peptide Vendors", url: "/best-peptide-vendors", category: "page", description: "Vetted research suppliers", tags: [] },
+  { title: "Featured Vendors", url: "/best-peptide-vendors", category: "page", description: "Vetted research suppliers", tags: [] },
 ];
 
 const CATEGORY_ORDER: SearchCategory[] = ["peptide", "supplement", "comparison", "news", "page"];

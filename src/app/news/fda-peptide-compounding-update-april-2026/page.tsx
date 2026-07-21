@@ -107,7 +107,7 @@ export default function FDAPeptideCompoundingUpdatePage() {
         <div className="mt-10 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
           <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-3">Explore More</h2>
           <div className="flex flex-wrap gap-3">
-            <Link href="/best-peptide-vendors" className="btn-primary text-sm">Best Peptide Vendors</Link>
+            <Link href="/best-peptide-vendors" className="btn-primary text-sm">Featured Vendors</Link>
             <Link href="/coupons" className="btn-outline text-sm">Discount Codes</Link>
             <Link href="/news" className="btn-outline text-sm">More News</Link>
           </div>
