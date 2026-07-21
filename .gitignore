@@ -10,6 +10,10 @@ npm-debug.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Generated at build from src/data/vendors.ts (scripts/gen-vendor-slugs.mjs).
+# Consumed by next-sitemap.config.js; regenerated every build, never hand-edited.
+/src/data/vendors.slugs.json
+
 # macOS Finder duplicates and resource forks
 * 2.*
 * [0-9].*
