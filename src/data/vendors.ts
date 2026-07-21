@@ -212,6 +212,14 @@ export const vendors: Record<string, Vendor> = {
     url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
     detailPage: "/coupons/spartan-peptides",
   },
+  "swiss-chems": {
+    name: "Swiss Chems",
+    code: "PROF10",
+    discount: "10% off",
+    region: "US",
+    url: "https://swisschems.is/?ref=PROF10",
+    detailPage: "/coupons/swiss-chems",
+  },
   "synthesis-peptides": {
     name: "Synthesis Peptides",
     code: "PROFPEPTIDE10",
