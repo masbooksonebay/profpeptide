@@ -127,7 +127,7 @@ export default function Home() {
             Everything you need for<br className="hidden sm:block" /> peptide research, in one place
           </h1>
           <p className="text-lg text-gray-500 dark:text-slate-400 max-w-xl mx-auto mb-8 leading-relaxed">
-            A research library, precision dosage calculator, protocol tracking, and discount codes for verified peptide vendors.
+            A research library, precision dosage calculator, peptide vendor reviews, and discount codes for verified vendors.
           </p>
           <HeroSearch />
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
