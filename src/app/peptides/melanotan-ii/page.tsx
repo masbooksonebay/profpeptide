@@ -2,7 +2,7 @@ import Link from "next/link";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
@@ -498,7 +498,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is Melanotan II?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function MelanotanIIPage() {
   return (
@@ -506,7 +509,7 @@ export default function MelanotanIIPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Melanotan II","description":"Melanotan II research profile: melanocortin receptor mechanism, tanning effect, documented serious risks (rhabdomyolysis, mole darkening), dosing, FAQ, regulatory warnings.","url":"https://profpeptide.com/peptides/melanotan-ii","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Melanotan II"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -515,30 +518,57 @@ export default function MelanotanIIPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Melanotan II</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">Melanotan II</h1>
         <span className="tag">Skin Health &amp; Anti-Aging</span>
         <span className="tag">Research-Grade</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: May 24, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> MT-II, MT2, Barbie Drug, Melanocyte-Stimulating Hormone Analog
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Cyclic Heptapeptide &mdash; Non-Selective Melanocortin Receptor Agonist (MC1R/MC3R/MC4R/MC5R)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> NOT FDA-approved. Health agency warnings in US, UK, Australia, EU. Documented serious adverse events. Not on WADA prohibited list.
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Melanotan II?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A lab-made melanocortin receptor agonist studied for skin tanning and pigmentation and for libido &mdash; non-selective across MC1R&ndash;MC5R, which drives both its effects and a broad side-effect burden.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Subcutaneous injection, starting from a 0.1 mg test dose</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">~hours in plasma; pigmentation effects accumulate over weeks</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">0.25&ndash;1 mg per dose; never exceed 1 mg per dose</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved &mdash; research use only; health agency warnings in the US, UK, Australia, and EU.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is Melanotan II?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Melanotan II is a synthetic cyclic heptapeptide and non-selective agonist of the melanocortin receptors (MC1R, MC3R, MC4R, MC5R). It was developed in the 1980s at the University of Arizona as a successor to Melanotan I (afamelanotide, FDA-approved as Scenesse for erythropoietic protoporphyria). Originally developed as a sunless tanning agent, MT-II also produces strong sexual arousal effects (via MC4R) and appetite suppression. It is NOT FDA-approved for any indication, and health agencies in multiple countries have warned against its use.{" "}
+            Melanotan II (also known as MT-II or MT2) is a synthetic cyclic heptapeptide &mdash; a melanocyte-stimulating hormone analog &mdash; that acts as a non-selective agonist of the melanocortin receptors (MC1R, MC3R, MC4R, MC5R). It was developed in the 1980s at the University of Arizona as a successor to Melanotan I (afamelanotide, FDA-approved as Scenesse for erythropoietic protoporphyria). Originally developed as a sunless tanning agent, MT-II also produces strong sexual arousal effects (via MC4R) and appetite suppression. It is NOT FDA-approved for any indication, and health agencies in multiple countries have warned against its use.{" "}
             <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141 (bremelanotide / Vyleesi)</Link>{" "}
             was specifically derived from MT-II by removing the C-terminal amide group &mdash; eliminating the strong tanning effect while preserving sexual arousal effects. MT-II is associated with documented serious adverse events including rhabdomyolysis, renal injury, and reversible darkening of moles. New to peptide research?{" "}
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
@@ -570,12 +600,9 @@ export default function MelanotanIIPage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -598,7 +625,6 @@ export default function MelanotanIIPage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Skin Health & Anti-Aging", "Melanocortin Agonist", "Tanning", "Research-Grade"].map((tag) => (
@@ -636,6 +662,12 @@ export default function MelanotanIIPage() {
 
       <PageDisclaimer />
     <ContactLink pageName="Melanotan II" pagePath="/peptides/melanotan-ii" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
