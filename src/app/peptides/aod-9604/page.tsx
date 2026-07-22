@@ -2,7 +2,7 @@ import Link from "next/link";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
@@ -488,7 +488,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is AOD-9604?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function AOD9604Page() {
   return (
@@ -496,7 +499,7 @@ export default function AOD9604Page() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"AOD-9604","description":"AOD-9604 (hGH Fragment 176-191) research profile: lipolysis mechanism, clinical trial history, dosing protocol, side effects, FAQ, and FDA regulatory status.","url":"https://profpeptide.com/peptides/aod-9604","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"AOD-9604"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -505,30 +508,57 @@ export default function AOD9604Page() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">AOD-9604</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">AOD-9604</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
         <span className="tag">Research-Grade</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: May 23, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Anti-Obesity Drug 9604, hGH Fragment 176-191, Tyr-hGH 177-191
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Synthetic Hexadecapeptide &mdash; hGH C-terminal Fragment / Selective Lipolytic Agent
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved; Phase 2 development discontinued 2007. FDA declined 503A Bulks List (Dec 2024). WADA-prohibited.
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is AOD-9604?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A modified fragment of the C-terminus of growth hormone (hGH 176-191), studied for fat loss without growth hormone&apos;s broader growth effects.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Subcutaneous injection, usually morning; historically also studied orally</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">~30 minutes (subcutaneous)</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">250&ndash;500 mcg subcutaneously once daily, in 8&ndash;12 week cycles</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved as a drug &mdash; research use only (holds limited GRAS food status).</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is AOD-9604?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            AOD-9604 is a synthetic peptide fragment of human growth hormone, specifically the 16-amino-acid C-terminal sequence (amino acids 176-191) with a stabilizing tyrosine added at the front. It was developed in Australia in the 1990s to capture growth hormone&apos;s fat-burning effects without the broader hormonal side effects of full-length growth hormone. Despite six clinical trials in over 900 participants, it failed to demonstrate consistent weight loss in larger Phase 2b studies and was discontinued as a drug candidate in 2007. It remains available as a research peptide and has renewed interest for cartilage repair applications. New to peptide research?{" "}
+            AOD-9604 &mdash; also written AOD9604 and known as Anti-Obesity Drug 9604, the hGH Fragment 176-191, or Tyr-hGH 177-191 &mdash; is a synthetic peptide fragment of human growth hormone, specifically the 16-amino-acid C-terminal sequence (amino acids 176-191) with a stabilizing tyrosine added at the front. It was developed in Australia in the 1990s to capture growth hormone&apos;s fat-burning effects without the broader hormonal side effects of full-length growth hormone. Despite six clinical trials in over 900 participants, it failed to demonstrate consistent weight loss in larger Phase 2b studies and was discontinued as a drug candidate in 2007. It remains available as a research peptide and has renewed interest for cartilage repair applications. New to peptide research?{" "}
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
@@ -557,12 +587,9 @@ export default function AOD9604Page() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -585,7 +612,6 @@ export default function AOD9604Page() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Lipolysis", "Fat Loss", "Research-Grade", "GH Fragment"].map((tag) => (
@@ -632,6 +658,12 @@ export default function AOD9604Page() {
 
       <PageDisclaimer />
     <ContactLink pageName="AOD-9604" pagePath="/peptides/aod-9604" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
