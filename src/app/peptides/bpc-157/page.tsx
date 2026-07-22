@@ -539,7 +539,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is BPC-157?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function BPC157Page() {
   return (
