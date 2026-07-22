@@ -496,7 +496,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is Ipamorelin?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function IpamorelinPage() {
   return (

@@ -527,7 +527,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is TB-500?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function TB500Page() {
   return (
