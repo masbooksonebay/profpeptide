@@ -3,7 +3,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Icon } from "@/components/CategoryIcon";
-import { CODES_VERIFIED_DATE } from "@/data/vendors";
+import {
+  vendors as registry,
+  regionFlag,
+  CODES_VERIFIED_DATE,
+  type Vendor as RegistryVendor,
+} from "@/data/vendors";
 
 interface Vendor {
   name: string;
@@ -26,216 +31,51 @@ interface VendorSection {
   vendors: Vendor[];
 }
 
-const sections: VendorSection[] = [
-  {
-    label: "Featured Vendors",
-    vendors: [
-      {
-        name: "Amino Club",
-        url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
-        code: "PROFPEPTIDE",
-        discount: "20% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        editorsPick: true,
-        detailPage: "/coupons/amino-club",
-      },
-      {
-        name: "Peptide Partners",
-        url: "https://peptide.partners/ref/48/",
-        code: "PROFPEPTIDE",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        editorsPick: true,
-        detailPage: "/coupons/peptide-partners",
-      },
-    ],
-  },
-  {
-    label: "Best Deals",
-    vendors: [
-      {
-        name: "Ascension Peptides",
-        url: "https://ascensionpeptides.com/ref/profpeptide/",
-        code: "PROFPEPTIDE",
-        discount: "50% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        bestDeal: true,
-        detailPage: "/coupons/ascension-peptides",
-      },
-    ],
-  },
-  {
-    // US Vendors — keep alphabetical order when adding new vendors
-    label: "US Vendors",
-    vendors: [
-      {
-        name: "Aero Peptides",
-        url: "https://aeropeptides.com/?ref=PROF15",
-        code: "PROFPEPTIDE15",
-        discount: "15% off",
-        region: "🇺🇸 US",
-        detailPage: "/coupons/aero-peptides",
-      },
-      {
-        name: "Almighty Peptides",
-        url: "https://www.almightypeptides.com/?sld=profpeptide",
-        code: "PROFPEPTIDE",
-        discount: "20% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/almighty-peptides",
-      },
-      {
-        name: "Ameano Peptides",
-        url: "https://ameanopeptides.com/?ref=hmvyvxhr",
-        code: "PROF10",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/ameano-peptides",
-      },
-      {
-        name: "Amino X",
-        url: "https://aminox.net/?coupon=PROF15",
-        code: "PROF15",
-        discount: "15% off",
-        region: "🇺🇸 US",
-        detailPage: "/coupons/amino-x",
-      },
-      {
-        name: "Behemoth Labz",
-        url: "https://behemothlabz.com/aff/208/",
-        code: "PROF10",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/behemoth-labz",
-      },
-      {
-        name: "BioCollex",
-        url: "https://biocollexresearch.com/?ref=profpeptidehq",
-        code: "PROFPEPTIDE",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/biocollex",
-      },
-      {
-        name: "EZ Peptides",
-        url: "https://ezpeptides.com/?ref=nldbbgvs",
-        code: "PROFPEPTIDE",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/ez-peptides",
-      },
-      {
-        name: "Glacier Aminos",
-        url: "https://glacieraminos.shop/?ref=cknlhxrm",
-        code: "PROF10",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/glacier-aminos",
-      },
-      {
-        name: "Ignite Peptides",
-        url: "https://ignitepeptides.com/ref/profpeptide/",
-        code: "PROF10",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/ignite-peptides",
-      },
-      {
-        name: "Integrative Peptides",
-        url: "https://integrativepeptides.com/affiliate/profpeptide/",
-        code: "PROFPEPTIDE",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/integrative-peptides",
-      },
-      {
-        name: "Limitless Biotech",
-        url: "https://www.limitlesslifenootropics.com/?_ef_transaction_id=&oid=1&affid=10477",
-        code: "PROFPEPTIDE",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/limitless-biotech",
-      },
-      {
-        name: "Midwest Peptide",
-        url: "https://midwestpeptide.com?ref=PROF10",
-        code: "PROF10",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/midwest-peptide",
-      },
-      {
-        name: "Oasis Labs",
-        url: "https://myoasislabs.com/?sld=profpeptide",
-        code: "PROF15",
-        discount: "15% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/oasis-labs",
-      },
-      {
-        name: "Peptides.gg",
-        url: "https://peptides.gg/?coupon=prof15",
-        code: "PROF15",
-        discount: "15% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/peptides-gg",
-      },
-      {
-        name: "PureRawz",
-        url: "https://purerawz.co/?ref=1901",
-        code: "PROF10",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/purerawz",
-      },
-      {
-        name: "Royal Peptides",
-        url: "https://royal-peptides.com/?ref=urunwnog",
-        code: "PROF10",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/royal-peptides",
-      },
-      {
-        name: "Spartan Peptides",
-        url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
-        code: "PROFPEPTIDE",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/spartan-peptides",
-      },
-      {
-        name: "Synthesis Peptides",
-        url: "https://synthesispeptides.io/?synthaff=105",
-        code: "PROFPEPTIDE10",
-        discount: "10% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/synthesis-peptides",
-      },
-      {
-        name: "Vital Core Research",
-        url: "https://vitalcoreresearch.com/?ref=nbwnvhnu",
-        code: "PROF20",
-        discount: "20% off",
-        region: "\uD83C\uDDFA\uD83C\uDDF8 US",
-        detailPage: "/coupons/vital-core-research",
-      },
-    ],
-  },
-  {
-    label: "International",
-    vendors: [
-      {
-        name: "Purity Peptides",
-        url: "https://puritypeptides.is/?sld=PROF15",
-        code: "PROF15",
-        discount: "15% off",
-        region: "\uD83C\uDDE8\uD83C\uDDE6 CA",
-        detailPage: "/coupons/purity-peptides",
-      },
-    ],
-  },
-];
+/**
+ * Vendor list is DERIVED from the registry (src/data/vendors.ts) — the single
+ * source of truth. Active (non-retired) vendors are partitioned into sections by
+ * their own registry flags, so a new vendor appears here automatically and can't
+ * be forgotten (mirrors the /vendors directory and the sitemap generation).
+ *   Featured Vendors → editorsPick
+ *   Best Deals       → bestDeal (and not already featured)
+ *   US Vendors       → US region, otherwise unflagged
+ *   International    → non-US region, otherwise unflagged
+ * The partition is complete and non-overlapping: every active vendor lands in
+ * exactly one section.
+ */
+function toCard(v: RegistryVendor): Vendor {
+  return {
+    name: v.name,
+    url: v.url,
+    code: v.code,
+    discount: v.discount,
+    region: `${regionFlag[v.region]} ${v.region}`,
+    editorsPick: v.editorsPick,
+    bestDeal: v.bestDeal,
+    comingSoon: v.comingSoon,
+    detailPage: v.detailPage,
+  };
+}
+
+const activeVendors = Object.values(registry).filter((v) => !v.retired);
+const byName = (a: RegistryVendor, b: RegistryVendor) => a.name.localeCompare(b.name);
+
+const sections: VendorSection[] = (
+  [
+    { label: "Featured Vendors", vendors: activeVendors.filter((v) => v.editorsPick) },
+    { label: "Best Deals", vendors: activeVendors.filter((v) => v.bestDeal && !v.editorsPick) },
+    {
+      label: "US Vendors",
+      vendors: activeVendors.filter((v) => v.region === "US" && !v.editorsPick && !v.bestDeal),
+    },
+    {
+      label: "International",
+      vendors: activeVendors.filter((v) => v.region !== "US" && !v.editorsPick && !v.bestDeal),
+    },
+  ] as const
+)
+  .map((s) => ({ label: s.label, vendors: [...s.vendors].sort(byName).map(toCard) }))
+  .filter((s) => s.vendors.length > 0);
 
 function CodeBox({ code }: { code: string }) {
   const [copied, setCopied] = useState(false);
