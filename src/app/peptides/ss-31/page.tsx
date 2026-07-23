@@ -1,7 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
@@ -248,7 +248,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is SS-31?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function SS31Page() {
   return (
@@ -256,7 +259,7 @@ export default function SS31Page() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"SS-31 (Elamipretide)","description":"SS-31 / elamipretide research profile: cardiolipin-targeting mitochondrial mechanism, the FDA-approved drug Forzinity for Barth syndrome vs. research-use-only SS-31, preclinical bioenergetic and aging studies, dosing, references.","url":"https://profpeptide.com/peptides/ss-31","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"SS-31 (Elamipretide)"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -265,31 +268,51 @@ export default function SS31Page() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">SS-31 (Elamipretide)</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">SS-31 (Elamipretide)</h1>
         <span className="tag">Longevity</span>
         <span className="tag">FDA-Approved Drug</span>
         <span className="tag">Research-Grade RUO</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: June 5, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Elamipretide, MTP-131, Bendavia, RX-31; brand name Forzinity
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Synthetic aromatic-cationic mitochondria-targeting tetrapeptide (Szeto&ndash;Schiller peptide)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> D-Arg-Dmt-Lys-Phe-NH2 (D-Arg-2&prime;,6&prime;-dimethyl-Tyr-Lys-Phe-NH2) &middot; C32H49N9O5 &middot; ~639.8 g/mol &middot; PubChem CID 11764719 &middot; CAS 736992-21-5 (free base; the hydrochloride salt has a separate CAS) &middot; DrugBank DB11981
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Origin:</span> Discovered by Hazel Szeto and Peter Schiller (Weill Cornell); developed by Stealth BioTherapeutics
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Dual status &mdash; FDA-approved drug Forzinity (elamipretide HCl) for Barth syndrome (accelerated approval, Sept 19, 2025; prescription-only); research-grade &ldquo;SS-31&rdquo; is unapproved and Research Use Only
-        </p>
-      </div>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A mitochondria-targeted tetrapeptide that binds cardiolipin on the inner mitochondrial membrane to stabilize energy production &mdash; studied for mitochondrial, cardiac, and renal protection. As the drug elamipretide (brand Forzinity) it is FDA-approved for Barth syndrome; the &ldquo;SS-31&rdquo; sold by research vendors is unapproved, research-use-only material.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Subcutaneous injection</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not established in the public research literature</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">No validated research-use dose &mdash; the approved drug Forzinity uses a weight-based, once-daily subcutaneous regimen set by its prescribing information</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Dual status &mdash; FDA-approved as the drug Forzinity (elamipretide) for Barth syndrome (accelerated approval, Sept 2025); research-grade SS-31 is unapproved, research use only.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
 
       <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -297,11 +320,11 @@ export default function SS31Page() {
         </p>
       </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is SS-31 (Elamipretide)?</h2>
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is SS-31?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            SS-31 (elamipretide) is a synthetic aromatic-cationic mitochondria-targeting tetrapeptide &mdash; a Szeto&ndash;Schiller peptide &mdash; discovered by Hazel Szeto and Peter Schiller at Weill Cornell and developed by Stealth BioTherapeutics. Its defining feature is selective accumulation in the inner mitochondrial membrane through affinity for the phospholipid cardiolipin; by binding and stabilizing cardiolipin it supports cristae structure and respiratory-chain supercomplexes, lowers mitochondrial reactive oxygen species, preserves membrane potential, and improves ATP production. As the drug elamipretide (brand Forzinity), it received FDA accelerated approval on September 19, 2025 for Barth syndrome &mdash; the first FDA-approved mitochondria-targeted therapeutic. Importantly, the &ldquo;SS-31&rdquo; sold by research vendors is unapproved, research-grade material &mdash; not the approved drug Forzinity &mdash; and is for research use only. It is studied alongside other bioenergetic and longevity compounds such as{" "}
+            SS-31 (elamipretide) is a synthetic aromatic-cationic mitochondria-targeting tetrapeptide &mdash; a Szeto&ndash;Schiller peptide &mdash; discovered by Hazel Szeto and Peter Schiller at Weill Cornell and developed by Stealth BioTherapeutics. It is also known by the research codes MTP-131, Bendavia, and RX-31, and has the sequence D-Arg-Dmt-Lys-Phe-NH2 (brand name Forzinity for the approved drug). Its defining feature is selective accumulation in the inner mitochondrial membrane through affinity for the phospholipid cardiolipin; by binding and stabilizing cardiolipin it supports cristae structure and respiratory-chain supercomplexes, lowers mitochondrial reactive oxygen species, preserves membrane potential, and improves ATP production. As the drug elamipretide (brand Forzinity), it received FDA accelerated approval on September 19, 2025 for Barth syndrome &mdash; the first FDA-approved mitochondria-targeted therapeutic. Importantly, the &ldquo;SS-31&rdquo; sold by research vendors is unapproved, research-grade material &mdash; not the approved drug Forzinity &mdash; and is for research use only. It is studied alongside other bioenergetic and longevity compounds such as{" "}
             <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>{" "}
             and{" "}
             <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>. New to peptide research?{" "}
@@ -331,12 +354,9 @@ export default function SS31Page() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -359,7 +379,6 @@ export default function SS31Page() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Longevity", "Mitochondrial", "Cardiolipin", "FDA-Approved Drug"].map((tag) => (
@@ -397,6 +416,12 @@ export default function SS31Page() {
 
       <PageDisclaimer />
     <ContactLink pageName="SS-31 (Elamipretide)" pagePath="/peptides/ss-31" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
