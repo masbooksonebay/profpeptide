@@ -1,7 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
@@ -219,7 +219,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is Melanotan I?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function MelanotanIPage() {
   return (
@@ -227,7 +230,7 @@ export default function MelanotanIPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Melanotan I (Afamelanotide)","description":"Melanotan I / afamelanotide research profile: MC1R agonism and eumelanin photoprotection, the FDA/EMA-approved drug Scenesse for erythropoietic protoporphyria (EPP) vs. research-use-only MT-1, dosing, references.","url":"https://profpeptide.com/peptides/melanotan-i","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Melanotan I (Afamelanotide)"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -236,31 +239,51 @@ export default function MelanotanIPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Melanotan I (Afamelanotide)</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">Melanotan I (Afamelanotide)</h1>
         <span className="tag">Skin Health &amp; Anti-Aging</span>
         <span className="tag">FDA-Approved Drug</span>
         <span className="tag">Research-Grade RUO</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: June 5, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Afamelanotide, MT-1, [Nle4,D-Phe7]-α-MSH, NDP-MSH / NDP-α-MSH, CUV1647; brand name Scenesse
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Synthetic 13-amino-acid α-melanocyte-stimulating-hormone (α-MSH) analogue; melanocortin-1 receptor (MC1R) agonist
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> Ac-Ser-Tyr-Ser-Nle-Glu-His-D-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH2 &middot; C78H111N21O19 &middot; ~1646.85 g/mol &middot; PubChem CID 16154396 &middot; CAS 75921-69-6 &middot; DrugBank DB04931 &middot; UNII QW68W3J66U
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Origin:</span> Developed from α-MSH research at the University of Arizona; afamelanotide developed and commercialized by Clinuvel Pharmaceuticals
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Dual status &mdash; FDA-approved (Oct 2019) and EMA-approved (2014) drug Scenesse (afamelanotide) for EPP (prescription 16 mg subcutaneous implant every 2 months); research-grade &ldquo;Melanotan I&rdquo; / MT-1 is unapproved and Research Use Only; WADA-prohibited
-        </p>
-      </div>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A lab-made analogue of the body&apos;s α-MSH hormone and a selective melanocortin-1 receptor (MC1R) agonist &mdash; the linear analogue that drives eumelanin (the skin&apos;s photoprotective pigment), studied for pigmentation and photoprotection.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Subcutaneous &mdash; the approved drug Scenesse is a subcutaneous implant; research-grade MT-1 is handled as a subcutaneous injection</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Short in plasma; the Scenesse implant is controlled-release over ~2 months</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">16 mg controlled-release SC implant every 2 months (Scenesse, prescription); no validated dose for research-grade MT-1</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Dual status &mdash; the drug afamelanotide (Scenesse) is FDA-approved (2019) and EMA-approved (2014) for EPP; research-grade &ldquo;Melanotan I&rdquo; / MT-1 is unapproved, research use only. WADA-prohibited.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
 
       <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -269,11 +292,11 @@ export default function MelanotanIPage() {
         </p>
       </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Melanotan I (Afamelanotide)?</h2>
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is Melanotan I?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Melanotan I (afamelanotide) is a synthetic 13-amino-acid analogue of α-melanocyte-stimulating hormone (α-MSH) and a melanocortin-1 receptor (MC1R) agonist, developed from α-MSH research at the University of Arizona and commercialized as the drug afamelanotide by Clinuvel Pharmaceuticals. By agonizing MC1R it stimulates eumelanin synthesis in the epidermis; in erythropoietic protoporphyria (EPP) the increased eumelanin absorbs light and reduces the phototoxic reaction driven by protoporphyrin IX, increasing pain-free light exposure. As the drug Scenesse, it is FDA-approved (October 2019) and EMA-approved (2014) for EPP &mdash; a 16 mg subcutaneous implant given every 2 months under prescription. Importantly, the &ldquo;Melanotan I&rdquo; / MT-1 sold by research vendors is unapproved, research-grade material &mdash; not the approved drug Scenesse &mdash; for research use only, and it is prohibited in sport by WADA. It must not be confused with{" "}
+            Melanotan I (afamelanotide; also designated MT-1, Melanotan 1, NDP-MSH / NDP-α-MSH, [Nle4,D-Phe7]-α-MSH, and the developmental code CUV1647) is a synthetic 13-amino-acid analogue of α-melanocyte-stimulating hormone (α-MSH) and a melanocortin-1 receptor (MC1R) agonist, developed from α-MSH research at the University of Arizona and commercialized as the drug afamelanotide by Clinuvel Pharmaceuticals. By agonizing MC1R it stimulates eumelanin synthesis in the epidermis; in erythropoietic protoporphyria (EPP) the increased eumelanin absorbs light and reduces the phototoxic reaction driven by protoporphyrin IX, increasing pain-free light exposure. As the drug Scenesse, it is FDA-approved (October 2019) and EMA-approved (2014) for EPP &mdash; a 16 mg subcutaneous implant given every 2 months under prescription. Importantly, the &ldquo;Melanotan I&rdquo; / MT-1 sold by research vendors is unapproved, research-grade material &mdash; not the approved drug Scenesse &mdash; for research use only, and it is prohibited in sport by WADA. It must not be confused with{" "}
             <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>, a different, smaller, unapproved peptide. It is studied alongside skin and pigmentation compounds such as{" "}
             <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>{" "}
             and{" "}
@@ -304,12 +327,9 @@ export default function MelanotanIPage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -332,7 +352,6 @@ export default function MelanotanIPage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Skin Health", "Photoprotection", "MC1R Agonist", "FDA-Approved Drug"].map((tag) => (
@@ -370,6 +389,12 @@ export default function MelanotanIPage() {
 
       <PageDisclaimer />
     <ContactLink pageName="Melanotan I (Afamelanotide)" pagePath="/peptides/melanotan-i" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
