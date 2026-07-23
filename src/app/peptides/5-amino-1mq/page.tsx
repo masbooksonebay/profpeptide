@@ -1,7 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
@@ -237,7 +237,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is 5-Amino-1MQ?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function FiveAmino1MQPage() {
   return (
@@ -245,7 +248,7 @@ export default function FiveAmino1MQPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"5-Amino-1MQ","description":"5-Amino-1MQ (5-amino-1-methylquinolinium) research profile: a small-molecule NNMT inhibitor (not a peptide), its SAM/NAD+ mechanism, preclinical diet-induced-obesity studies, molecular identifiers, and research-use-only framing.","url":"https://profpeptide.com/peptides/5-amino-1mq","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"5-Amino-1MQ"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -254,36 +257,57 @@ export default function FiveAmino1MQPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">5-Amino-1MQ</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">5-Amino-1MQ</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
         <span className="tag">Research Use Only</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: June 5, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> 5-amino-1-methylquinolinium, 5A1MQ
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Compound Class:</span> Small-molecule, membrane-permeable, selective inhibitor of nicotinamide N-methyltransferase (NNMT); quinolinium scaffold &mdash; <span className="font-semibold">not a peptide</span>
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> Small molecule (not a peptide; no amino-acid sequence) &middot; cation formula C10H11N2(+) &middot; cation molecular weight ~159.21 g/mol &middot; commonly supplied as the iodide salt (higher salt mass, ~286 g/mol) &middot; PubChem CID 950107 &middot; CAS 42464-96-0 (iodide salt)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Origin:</span> Developed as a research-tool NNMT inhibitor (Watowich/Neelakantan, UT Medical Branch / Ridgeline Therapeutics)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research Use Only &mdash; unapproved research chemical; not FDA-approved; evidence is preclinical
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is 5-Amino-1MQ?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A small-molecule NNMT (nicotinamide N-methyltransferase) inhibitor &mdash; a quinolinium compound, not a peptide &mdash; studied in preclinical models for fat loss and metabolism.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Oral (capsule) &mdash; a solid research chemical, not an injectable peptide</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not well characterized in humans</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">No validated human dose &mdash; only preclinical rodent dosing exists</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved &mdash; Research Use Only; unapproved research chemical (NNMT inhibitor)</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is 5-Amino-1MQ?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            5-Amino-1MQ (5-amino-1-methylquinolinium) is a small-molecule, membrane-permeable, selective inhibitor of nicotinamide N-methyltransferase (NNMT) &mdash; a quinolinium compound, not a peptide. It was developed as a research-tool NNMT inhibitor (Watowich/Neelakantan, UT Medical Branch / Ridgeline Therapeutics). NNMT methylates nicotinamide using S-adenosylmethionine (SAM) to make 1-methylnicotinamide and S-adenosylhomocysteine; by inhibiting NNMT (IC50 ~1 µM), 5-Amino-1MQ relieves this SAM &lsquo;methyl sink&rsquo; and preserves nicotinamide for NAD+ salvage. In preclinical (rodent and cell) models this is associated with increased NAD+, higher energy expenditure, reduced lipogenesis and adiposity, and preserved lean mass &mdash; with weight and fat-mass reductions in diet-induced-obese mice occurring without reduced food intake. It is structurally a small molecule and has no amino-acid sequence. It is grouped here with metabolic research compounds such as{" "}
+            5-Amino-1MQ (5-amino-1-methylquinolinium; also abbreviated 5A1MQ) is a small-molecule, membrane-permeable, selective inhibitor of nicotinamide N-methyltransferase (NNMT) &mdash; a quinolinium compound, not a peptide. It was developed as a research-tool NNMT inhibitor (Watowich/Neelakantan, UT Medical Branch / Ridgeline Therapeutics). NNMT methylates nicotinamide using S-adenosylmethionine (SAM) to make 1-methylnicotinamide and S-adenosylhomocysteine; by inhibiting NNMT (IC50 ~1 µM), 5-Amino-1MQ relieves this SAM &lsquo;methyl sink&rsquo; and preserves nicotinamide for NAD+ salvage. In preclinical (rodent and cell) models this is associated with increased NAD+, higher energy expenditure, reduced lipogenesis and adiposity, and preserved lean mass &mdash; with weight and fat-mass reductions in diet-induced-obese mice occurring without reduced food intake. It is structurally a small molecule and has no amino-acid sequence. It is grouped here with metabolic research compounds such as{" "}
             <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>{" "}
             and{" "}
             <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>, and it is one component of the{" "}
@@ -314,12 +338,9 @@ export default function FiveAmino1MQPage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -342,7 +363,6 @@ export default function FiveAmino1MQPage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Metabolic", "NNMT Inhibitor", "Small Molecule", "Research Use Only"].map((tag) => (
@@ -381,7 +401,13 @@ export default function FiveAmino1MQPage() {
 
       <PageDisclaimer />
     <ContactLink pageName="5-Amino-1MQ" pagePath="/peptides/5-amino-1mq" />
-    </div>
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
+      </div>
     </>
   );
 }
