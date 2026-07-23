@@ -1,7 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
@@ -251,7 +251,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is VIP?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function VIPPage() {
   return (
@@ -259,7 +262,7 @@ export default function VIPPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"VIP (Vasoactive Intestinal Peptide)","description":"VIP / vasoactive intestinal peptide research profile: VPAC1/VPAC2 mechanism, vasodilation and immunomodulation, the investigational synthetic form aviptadil (not FDA-approved), research-use-only framing, references.","url":"https://profpeptide.com/peptides/vip","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"VIP (Vasoactive Intestinal Peptide)"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -268,30 +271,50 @@ export default function VIPPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">VIP (Vasoactive Intestinal Peptide)</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">VIP (Vasoactive Intestinal Peptide)</h1>
         <span className="tag">Gut Health &amp; Immunity</span>
         <span className="tag">Research Use Only</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: June 5, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Vasoactive intestinal polypeptide; synthetic form Aviptadil
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> 28-amino-acid neuropeptide hormone of the secretin/glucagon superfamily; agonist of the VPAC1 and VPAC2 G-protein-coupled receptors
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> His-Ser-Asp-Ala-Val-Phe-Thr-Asp-Asn-Tyr-Thr-Arg-Leu-Arg-Lys-Gln-Met-Ala-Val-Lys-Lys-Tyr-Leu-Asn-Ser-Ile-Leu-Asn-NH2 &middot; C147H238N44O42S &middot; ~3325 g/mol &middot; CAS 40077-57-4 (peptide; human, porcine, and rat sequences are identical)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Origin:</span> First isolated from porcine small intestine by Said and Mutt, 1970
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research Use Only &mdash; endogenous human neuropeptide; the synthetic form aviptadil is investigational (e.g., ARDS/COVID-19) and not FDA-approved; research-grade VIP is unapproved and not for human use
-        </p>
-      </div>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">Vasoactive Intestinal Peptide &mdash; a 28-amino-acid neuropeptide studied for anti-inflammatory and immune effects, CIRS / mold-illness, and pulmonary applications.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Intranasal or IV &mdash; no validated route; the synthetic form aviptadil was given IV or by inhalation in trials</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">~30 minutes (very short)</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">No validated research-use dose</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved &mdash; research use only. The synthetic form aviptadil is investigational.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
 
       <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -299,11 +322,11 @@ export default function VIPPage() {
         </p>
       </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is VIP (Vasoactive Intestinal Peptide)?</h2>
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is VIP?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            VIP (vasoactive intestinal peptide) is a 28-amino-acid neuropeptide hormone of the secretin/glucagon superfamily and an agonist of the VPAC1 and VPAC2 G-protein-coupled receptors. First isolated from porcine small intestine by Said and Mutt in 1970, it is an endogenous human peptide &mdash; the human, porcine, and rat sequences are identical. Through VPAC1/VPAC2 it generally raises intracellular cAMP, acting as a potent vasodilator, relaxing gastrointestinal and airway smooth muscle, and functioning as a broad immunomodulator and anti-inflammatory mediator; it is also a master circadian regulator in the suprachiasmatic nucleus and a neuroprotective neuropeptide. Its immune and therapeutic effects are characterized largely in preclinical models. The synthetic form, aviptadil, has been investigational (for example, in ARDS/COVID-19) but is not FDA-approved, and research-grade VIP sold by vendors is unapproved, Research Use Only material &mdash; not for human use. It is studied alongside gut and immune peptides such as{" "}
+            VIP (vasoactive intestinal peptide, also called vasoactive intestinal polypeptide) is a 28-amino-acid neuropeptide hormone of the secretin/glucagon superfamily and an agonist of the VPAC1 and VPAC2 G-protein-coupled receptors. First isolated from porcine small intestine by Said and Mutt in 1970, it is an endogenous human peptide &mdash; the human, porcine, and rat sequences are identical (His-Ser-Asp-Ala-Val-Phe-Thr-Asp-Asn-Tyr-Thr-Arg-Leu-Arg-Lys-Gln-Met-Ala-Val-Lys-Lys-Tyr-Leu-Asn-Ser-Ile-Leu-Asn-NH2 &middot; C147H238N44O42S &middot; ~3325 g/mol &middot; CAS 40077-57-4). Through VPAC1/VPAC2 it generally raises intracellular cAMP, acting as a potent vasodilator, relaxing gastrointestinal and airway smooth muscle, and functioning as a broad immunomodulator and anti-inflammatory mediator; it is also a master circadian regulator in the suprachiasmatic nucleus and a neuroprotective neuropeptide. Its immune and therapeutic effects are characterized largely in preclinical models. The synthetic form, aviptadil, has been investigational (for example, in ARDS/COVID-19) but is not FDA-approved, and research-grade VIP sold by vendors is unapproved, Research Use Only material &mdash; not for human use. It is studied alongside gut and immune peptides such as{" "}
             <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>,{" "}
             <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, and{" "}
             <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>. New to peptide research?{" "}
@@ -333,12 +356,9 @@ export default function VIPPage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -361,7 +381,6 @@ export default function VIPPage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Gut Health", "Immunomodulator", "VPAC1/VPAC2", "Research Use Only"].map((tag) => (
@@ -399,7 +418,13 @@ export default function VIPPage() {
 
       <PageDisclaimer />
     <ContactLink pageName="VIP (Vasoactive Intestinal Peptide)" pagePath="/peptides/vip" />
-    </div>
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
+      </div>
     </>
   );
 }
