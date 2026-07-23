@@ -1,7 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
@@ -261,7 +261,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is Thymogen?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function ThymogenPage() {
   return (
@@ -269,7 +272,7 @@ export default function ThymogenPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Thymogen","description":"Thymogen (L-Glu-L-Trp, Oglufanide / IM-862) research profile: thymic-dipeptide immunomodulation, NK-cell–dependent antitumor data, AIDS-KS and renal-cell-carcinoma trials including a negative Phase III, and candid limitations. Research use only.","url":"https://profpeptide.com/peptides/thymogen","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Thymogen"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -278,36 +281,57 @@ export default function ThymogenPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Thymogen</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">Thymogen</h1>
         <span className="tag">Bioregulators</span>
         <span className="tag">Research Use Only</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: June 4, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Oglufanide (INN Oglufanidum), IM-862, Thymagen, EW dipeptide, L-Glu-L-Trp
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Khavinson short-peptide bioregulator (synthetic thymic dipeptide immunomodulator)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> L-Glu-L-Trp &middot; C16H19N3O5 &middot; 333.34 g/mol (free acid) &middot; CAS 38101-59-6 (free acid; the registered drug uses the monosodium salt, CAS 122933-59-9)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Form &amp; Origin:</span> Lyophilized; synthetic; identified as the principal active component of Thymalin (thymic extract), isolated via reversed-phase HPLC
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research Use Only in the US; not FDA- or EMA-approved; registered as a medicine in the Russian Federation in three forms (intramuscular solution 100 µg/mL, metered nasal spray 25 µg/dose, 0.05% topical cream)
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Thymogen?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A synthetic Glu-Trp (L-Glu-L-Trp) dipeptide immunomodulator &mdash; a Russian &ldquo;bioregulator&rdquo; from the Khavinson short-peptide program, also studied in oncology as IM-862 / Oglufanide.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Intramuscular, intranasal, or topical &mdash; not subcutaneous</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not well characterized</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">No validated human dose &mdash; Russian registrations use 100 µg/mL IM, 25 µg/dose nasal spray, and a 0.05% cream</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Registered as a medicine in Russia; not FDA- or EMA-approved &mdash; US research use only.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is Thymogen?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Thymogen is a synthetic thymic dipeptide (L-Glu-L-Trp, the &ldquo;EW&rdquo; dipeptide) developed within the Khavinson short-peptide bioregulator program. It was identified as the principal active component of Thymalin &mdash; a thymic extract &mdash; and isolated via reversed-phase HPLC. Functionally it is an immunomodulator that normalizes immune activity rather than purely stimulating it: it drives maturation of pre-T cells into mature T-lymphocytes, is reported to normalize the CD4/CD8 ratio, raises intracellular cAMP in T-lymphocytes, and enhances neutrophil chemotaxis and phagocytosis. Under the names IM-862 and Oglufanide it was also studied as a VEGF-inhibiting antiangiogenic agent in cancer. A structural curiosity defines its identity: its mirror-image enantiomer, D-Glu-D-Trp (Thymodepressin), is immunosuppressive &mdash; opposite activity from the same atoms. The evidence base is mixed &mdash; preclinical immunology plus oncology trials whose most rigorous controlled test was negative &mdash; and in the US it is research-use-only. It sits in the same short-peptide family as{" "}
+            Thymogen is a synthetic thymic dipeptide (L-Glu-L-Trp, the &ldquo;EW&rdquo; dipeptide) developed within the Khavinson short-peptide bioregulator program. It was identified as the principal active component of Thymalin &mdash; a thymic extract &mdash; and isolated via reversed-phase HPLC. Functionally it is an immunomodulator that normalizes immune activity rather than purely stimulating it: it drives maturation of pre-T cells into mature T-lymphocytes, is reported to normalize the CD4/CD8 ratio, raises intracellular cAMP in T-lymphocytes, and enhances neutrophil chemotaxis and phagocytosis. Under the names IM-862 and Oglufanide (INN Oglufanidum; also spelled Thymagen) it was also studied as a VEGF-inhibiting antiangiogenic agent in cancer. A structural curiosity defines its identity: its mirror-image enantiomer, D-Glu-D-Trp (Thymodepressin), is immunosuppressive &mdash; opposite activity from the same atoms. The evidence base is mixed &mdash; preclinical immunology plus oncology trials whose most rigorous controlled test was negative &mdash; and in the US it is research-use-only. It sits in the same short-peptide family as{" "}
             <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>{" "}
             and{" "}
             <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>. New to peptide research?{" "}
@@ -337,12 +361,9 @@ export default function ThymogenPage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -365,7 +386,6 @@ export default function ThymogenPage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Bioregulators", "Immunomodulator", "Khavinson Peptide", "Research Use Only"].map((tag) => (
@@ -410,6 +430,12 @@ export default function ThymogenPage() {
 
       <PageDisclaimer />
     <ContactLink pageName="Thymogen" pagePath="/peptides/thymogen" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
