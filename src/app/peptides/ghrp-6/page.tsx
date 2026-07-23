@@ -2,7 +2,7 @@ import Link from "next/link";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
@@ -430,7 +430,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is GHRP-6?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function GHRP6Page() {
   return (
@@ -438,34 +441,61 @@ export default function GHRP6Page() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GHRP-6","description":"GHRP-6 research profile: the first growth-hormone-releasing peptide, ghrelin-receptor mechanism, strong appetite effect, dosing, cortisol caveat, CJC-1295 stack, FAQ.","url":"https://profpeptide.com/peptides/ghrp-6","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"GHRP-6"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link href="/peptides" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
         Back to Peptide Library
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">GHRP-6</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">GHRP-6</h1>
         <span className="tag">Growth Hormone</span>
         <span className="tag">Research-Grade</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">Last reviewed: July 21, 2026</p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Growth Hormone Releasing Peptide-6, GHRP, SKF-110679, His-D-Trp-Ala-Trp-D-Phe-Lys-NH2
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Synthetic Hexapeptide &mdash; GHSR-1a (Ghrelin Receptor) Agonist / GH Secretagogue (the original GHRP)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved; research-use only. WADA-prohibited (Section S2).
-        </p>
-      </div>
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">Last reviewed: July 21, 2026</p>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is GHRP-6?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A lab-made peptide that signals the pituitary to release the body&apos;s own growth hormone &mdash; the original growth-hormone-releasing peptide, known for its signature intense hunger (via the ghrelin/NPY/AgRP appetite circuit) and a notable rise in cortisol and prolactin.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Subcutaneous injection or intranasal spray, on an empty stomach</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">~15&ndash;30 minutes (plasma)</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">100&ndash;300 mcg, one to three times daily, in 8&ndash;12 week cycles</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved &mdash; research use only.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is GHRP-6?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            GHRP-6 (His-D-Trp-Ala-Trp-D-Phe-Lys-NH2) is the original growth-hormone-releasing peptide, described by Bowers and colleagues in 1984 — the discovery that launched the entire GH-secretagogue field. It activates the ghrelin receptor (GHSR-1a) to release a pulse of growth hormone, and because it strongly engages the same appetite circuitry as ghrelin, it produces the most pronounced hunger of the common GHRPs. It is the least selective of the group, also raising cortisol and prolactin — which is why{" "}
+            GHRP-6 (Growth Hormone Releasing Peptide-6; developmental code SKF-110679; sequence His-D-Trp-Ala-Trp-D-Phe-Lys-NH2) is the original growth-hormone-releasing peptide, described by Bowers and colleagues in 1984 — the discovery that launched the entire GH-secretagogue field. It activates the ghrelin receptor (GHSR-1a) to release a pulse of growth hormone, and because it strongly engages the same appetite circuitry as ghrelin, it produces the most pronounced hunger of the common GHRPs. It is the least selective of the group, also raising cortisol and prolactin — which is why{" "}
             <Link href="/peptides/ghrp-2" className="text-[#3A759F] hover:underline">GHRP-2</Link>{" "}
             and{" "}
             <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>{" "}
@@ -494,12 +524,9 @@ export default function GHRP6Page() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">{s.title}</h2>
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">{s.title}</h2>
             {s.intro && (<p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">{s.intro}</p>)}
             {s.node && s.node}
             {s.content && (<p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>)}
@@ -510,7 +537,6 @@ export default function GHRP6Page() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Growth Hormone", "GHRP", "GHSR Agonist", "Research-Grade"].map((tag) => (
@@ -544,6 +570,12 @@ export default function GHRP6Page() {
 
       <PageDisclaimer />
     <ContactLink pageName="GHRP-6" pagePath="/peptides/ghrp-6" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
