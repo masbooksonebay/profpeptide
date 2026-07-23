@@ -2,7 +2,7 @@ import Link from "next/link";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
@@ -323,7 +323,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is Glutathione?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function GlutathionePage() {
   return (
@@ -331,7 +334,7 @@ export default function GlutathionePage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Glutathione (GSH)","description":"Glutathione (GSH) research profile: the body's master intracellular antioxidant — mechanism, the oral bioavailability problem, precursor (NAC) science, unproven skin-whitening claims, dosing, safety, and regulatory status.","url":"https://profpeptide.com/peptides/glutathione","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Glutathione (GSH)"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -340,30 +343,57 @@ export default function GlutathionePage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Glutathione (GSH)</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">Glutathione (GSH)</h1>
         <span className="tag">Longevity</span>
         <span className="tag">Research-Grade</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: July 13, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> GSH, L-Glutathione, reduced glutathione, γ-glutamylcysteinylglycine
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Endogenous tripeptide (glutamate-cysteine-glycine) &mdash; primary intracellular antioxidant / thiol
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved as a treatment; sold as a dietary supplement (benefits not well defined by regulators) and research-use-only. Skin-whitening use is not FDA-evaluated.
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is glutathione?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">The body&apos;s master intracellular antioxidant &mdash; a tripeptide (&gamma;-glutamyl-cysteinyl-glycine, GSH). A small-molecule cofactor made inside every cell, not a classic peptide drug; studied for redox balance and detoxification.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">IV infusion, intranasal, or oral (also inhaled/nebulized) &mdash; IV is the common clinical/research route</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not well characterized &mdash; rapidly metabolized, varies by route</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">No validated protocol &mdash; oral commonly 250&ndash;1,000 mg/day; precursor (NAC) route ~600&ndash;1,800 mg/day</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved &mdash; sold as a dietary supplement and research-use-only; skin-whitening use not FDA-evaluated.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is Glutathione?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Glutathione (GSH) is a tripeptide made of glutamate, cysteine, and glycine, and the body&apos;s primary intracellular antioxidant. Synthesized inside virtually every cell, it maintains redox balance, drives phase-II detoxification, and regenerates other antioxidants like vitamins C and E. Its antioxidant and detoxification biology is genuine and thoroughly studied &mdash; but the way it&apos;s commonly sold outruns that evidence.
+            Glutathione (GSH) &mdash; also called L-glutathione, reduced glutathione, or &gamma;-glutamylcysteinylglycine &mdash; is a tripeptide made of glutamate, cysteine, and glycine, and the body&apos;s primary intracellular antioxidant. Synthesized inside virtually every cell, it maintains redox balance, drives phase-II detoxification, and regenerates other antioxidants like vitamins C and E. Its antioxidant and detoxification biology is genuine and thoroughly studied &mdash; but the way it&apos;s commonly sold outruns that evidence.
           </p>
           <div className="rounded-xl border border-amber-200 bg-amber-50 dark:border-amber-900/40 dark:bg-amber-950/20 p-4">
             <p className="text-sm text-amber-900 dark:text-amber-200 leading-relaxed">
@@ -399,12 +429,9 @@ export default function GlutathionePage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -424,7 +451,6 @@ export default function GlutathionePage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Antioxidant", "Detoxification", "Tripeptide", "Research-Grade"].map((tag) => (
@@ -461,6 +487,12 @@ export default function GlutathionePage() {
 
       <PageDisclaimer />
     <ContactLink pageName="Glutathione (GSH)" pagePath="/peptides/glutathione" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
