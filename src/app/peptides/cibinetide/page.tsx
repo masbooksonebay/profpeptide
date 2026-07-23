@@ -2,7 +2,7 @@ import Link from "next/link";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
@@ -443,7 +443,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is Cibinetide?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function CibinetidePage() {
   return (
@@ -451,7 +454,7 @@ export default function CibinetidePage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Cibinetide (ARA-290)","description":"Cibinetide (ARA-290) research profile: innate repair receptor mechanism, human Phase 2 trial data, dosing used in studies, evidence status, and limitations.","url":"https://profpeptide.com/peptides/cibinetide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Cibinetide"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -460,30 +463,57 @@ export default function CibinetidePage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Cibinetide</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">Cibinetide</h1>
         <span className="tag">Tissue Repair</span>
         <span className="tag">Investigational</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: July 21, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> ARA-290, cibinetide, erythropoietin helix-B-derived peptide (HBSP-related)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Non-erythropoietic, EPO-derived tissue-protective peptide &mdash; innate repair receptor (IRR) agonist; 11-amino-acid peptide
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved; investigational. Reached Phase 2/2b; no Phase 3. Sponsor: Araim Pharmaceuticals. Received US Orphan Drug (and Fast Track) designation for sarcoidosis-associated neuropathic pain &mdash; a development incentive, NOT an efficacy approval.
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Cibinetide?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">ARA-290 &mdash; an 11-amino-acid, non-erythropoietic peptide derived from erythropoietin (EPO) that activates the innate repair receptor for tissue protection, without EPO&apos;s red-blood-cell effects.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Subcutaneous injection, once daily (as used in the trials)</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Short peptide half-life; no verified human PK value</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">4 mg/day subcutaneously for 28 days (the Phase 2 trial dose)</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved; investigational (Phase 2). Holds US Orphan Drug designations; no Phase 3.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is Cibinetide?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Cibinetide (ARA-290) is an 11-amino-acid peptide derived from the helix-B domain of erythropoietin (EPO). It activates the innate repair receptor (IRR) &mdash; a heterocomplex of the EPO receptor and the &beta;-common receptor (CD131) &mdash; driving anti-inflammatory, anti-apoptotic, tissue-repair signaling, while NOT engaging the EPOR homodimer that raises red-blood-cell counts. Unlike most research peptides, cibinetide has real human Phase 2 randomized controlled trial data in sarcoidosis-associated small-fiber neuropathy and type 2 diabetic neuropathy &mdash; though the trials were small, short (28 days), largely used surrogate nerve-fiber endpoints, and were never confirmed in Phase 3. New to peptide research?{" "}
+            Cibinetide (ARA-290, part of the erythropoietin helix-B surface peptide / HBSP lineage) is an 11-amino-acid peptide derived from the helix-B domain of erythropoietin (EPO). It activates the innate repair receptor (IRR) &mdash; a heterocomplex of the EPO receptor and the &beta;-common receptor (CD131) &mdash; driving anti-inflammatory, anti-apoptotic, tissue-repair signaling, while NOT engaging the EPOR homodimer that raises red-blood-cell counts. Unlike most research peptides, cibinetide has real human Phase 2 randomized controlled trial data in sarcoidosis-associated small-fiber neuropathy and type 2 diabetic neuropathy &mdash; though the trials were small, short (28 days), largely used surrogate nerve-fiber endpoints, and were never confirmed in Phase 3. New to peptide research?{" "}
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
@@ -511,12 +541,9 @@ export default function CibinetidePage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -539,7 +566,6 @@ export default function CibinetidePage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Tissue Repair", "Investigational", "Innate Repair Receptor", "Research-Grade"].map((tag) => (
@@ -579,6 +605,12 @@ export default function CibinetidePage() {
 
       <PageDisclaimer />
     <ContactLink pageName="Cibinetide" pagePath="/peptides/cibinetide" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
