@@ -1,7 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
@@ -355,7 +355,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is AOD-9604 + MOTS-c?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function AOD9604MOTScPage() {
   return (
@@ -363,7 +366,7 @@ export default function AOD9604MOTScPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"AOD-9604 + MOTS-c","description":"AOD-9604 + MOTS-c is a 2-component metabolic stack pairing an hGH-fragment lipolytic peptide with a mitochondrial AMPK activator for fat-loss research. Mechanism, dosing, stacks, side effects, and what the evidence actually shows.","url":"https://profpeptide.com/peptides/aod-9604-mots-c","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"AOD-9604 + MOTS-c"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -372,27 +375,54 @@ export default function AOD9604MOTScPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">AOD-9604 + MOTS-c</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">AOD-9604 + MOTS-c</h1>
         <span className="tag">Metabolic &amp; Weight Loss</span>
         <span className="tag">Stack</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: June 14, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> AOD-9604/MOTS-c Blend, Fat-Loss Peptide Stack, Metabolic Fat-Loss Stack, MOTS-c + AOD-9604
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Metabolic Fat-Loss Blend (2-component)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research-grade only
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is AOD-9604 + MOTS-c?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A two-component metabolic stack pairing AOD-9604 (a growth-hormone fragment studied for fat mobilization) and MOTS-c (a mitochondrial-derived peptide that activates AMPK), studied for fat loss and metabolic health.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Subcutaneous injection &mdash; AOD-9604 daily, MOTS-c 2&ndash;3&times; weekly</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not well characterized for either component</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">AOD-9604 ~300 mcg daily; MOTS-c ~5&ndash;10 mg weekly; 8&ndash;12 week cycles</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved &mdash; research use only.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is AOD-9604 + MOTS-c?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link> + <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link> is a research-grade 2-component metabolic stack that pairs AOD-9604 — a modified C-terminal fragment of human growth hormone — with MOTS-c, a mitochondrial-derived peptide. The pairing is built around two non-overlapping mechanisms: AOD-9604 acts at the adipocyte to mobilize stored fat (lipolysis and reduced fat storage), while MOTS-c acts upstream on cellular energy metabolism, activating AMPK to improve the body&apos;s capacity to oxidize that mobilized fat and to use glucose more efficiently. In short, one peptide is studied for releasing fat from storage; the other for improving the metabolic machinery that burns it.
@@ -435,12 +465,9 @@ export default function AOD9604MOTScPage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -463,7 +490,6 @@ export default function AOD9604MOTScPage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Metabolic & Weight Loss", "Stack", "Fat Loss", "Research-Grade"].map((tag) => (
@@ -508,6 +534,12 @@ export default function AOD9604MOTScPage() {
 
       <PageDisclaimer />
     <ContactLink pageName="AOD-9604 + MOTS-c" pagePath="/peptides/aod-9604-mots-c" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
