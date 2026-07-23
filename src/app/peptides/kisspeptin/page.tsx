@@ -2,7 +2,7 @@ import Link from "next/link";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
@@ -295,7 +295,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is kisspeptin?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function KisspeptinPage() {
   return (
@@ -303,7 +306,7 @@ export default function KisspeptinPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Kisspeptin","description":"Kisspeptin (KP-54/KP-10) research profile: KISS1R/GnRH mechanism, human trials in fertility, IVF egg-maturation triggering and low libido, dosing, safety, and regulatory status.","url":"https://profpeptide.com/peptides/kisspeptin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Kisspeptin"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -312,27 +315,54 @@ export default function KisspeptinPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Kisspeptin</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">Kisspeptin</h1>
         <span className="tag">Sexual Health</span>
         <span className="tag">Research-Grade</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: July 13, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Kisspeptin-54 (KP-54, metastin), Kisspeptin-10 (KP-10), KISS1-derived peptide
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> KISS1-gene-derived peptide &mdash; endogenous KISS1R (GPR54) agonist; upstream regulator of the hypothalamic-pituitary-gonadal (reproductive) axis
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved; research-use-only. Investigated in Phase 1/2 human trials (notably Imperial College London).
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is kisspeptin?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A hypothalamic peptide that triggers GnRH release &mdash; the master switch upstream of the reproductive (HPG) axis, driving LH and FSH. Studied in real human trials for fertility, IVF egg-maturation, and libido.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Subcutaneous injection or intravenous infusion, in supervised research settings</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">~28 minutes (KP-54); shorter for the KP-10 fragment</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Clinical-trial parameters only &mdash; e.g. ~6.4 nmol/kg SC twice weekly (amenorrhea); a single 1.6&ndash;12.8 nmol/kg bolus (IVF trigger); ~1 nmol/kg/hour IV (sexual-response studies)</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved &mdash; investigational (reproductive/fertility research). Research use only.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is kisspeptin?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Kisspeptin is a peptide encoded by the KISS1 gene and the master upstream regulator of the reproductive axis. It activates the KISS1R receptor (formerly GPR54) on hypothalamic GnRH neurons, triggering the pulsatile release of gonadotropin-releasing hormone that drives luteinizing hormone (LH) and follicle-stimulating hormone (FSH) from the pituitary — and, in turn, ovarian and testicular function. It circulates mainly as two isoforms studied in research: the longer kisspeptin-54 (KP-54, metastin) and the shorter kisspeptin-10 (KP-10).
@@ -367,12 +397,9 @@ export default function KisspeptinPage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -392,7 +419,6 @@ export default function KisspeptinPage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Reproductive Axis", "Fertility Research", "Libido", "Research-Grade"].map((tag) => (
@@ -428,6 +454,12 @@ export default function KisspeptinPage() {
 
       <PageDisclaimer />
     <ContactLink pageName="Kisspeptin" pagePath="/peptides/kisspeptin" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
