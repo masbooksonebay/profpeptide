@@ -1,7 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
@@ -451,7 +451,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is the PT-141 + Oxytocin blend?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function PT141OxytocinPage() {
   return (
@@ -459,7 +462,7 @@ export default function PT141OxytocinPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"PT-141 + Oxytocin","description":"PT-141 + Oxytocin research profile: melanocortin agonist + bonding neuropeptide blend for sexual desire, arousal, and intimacy. Mechanism, dosing, delivery routes, side effects, FAQ.","url":"https://profpeptide.com/peptides/pt-141-oxytocin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"PT-141 + Oxytocin"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -468,33 +471,61 @@ export default function PT141OxytocinPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">PT-141 + Oxytocin</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">PT-141 + Oxytocin</h1>
         <span className="tag">Sexual Health</span>
         <span className="tag">Research-Grade</span>
         <span className="tag">Combination Blend</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: May 29, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> Bremelanotide + Oxytocin, PT-141/OXT Blend, Libido &amp; Intimacy Stack
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Sexual Health Blend &mdash; Melanocortin Agonist + Neuropeptide (2-component)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> PT-141 FDA-approved as Vyleesi (HSDD, premenopausal women); research-grade material is a distinct product sold for laboratory use only. Oxytocin is a prescription compound in most jurisdictions; intranasal and sublingual forms available through compounding pharmacies.
-        </p>
-      </div>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A combination of PT-141 (bremelanotide, a melanocortin MC3R/MC4R agonist that raises sexual desire and arousal via the brain) and Oxytocin (the bonding/arousal neuropeptide), stacked for libido and intimacy research.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Two routes: PT-141 by subcutaneous injection; oxytocin by intranasal spray or sublingual troche</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">PT-141 active window ~6&ndash;12 hours; oxytocin ~3&ndash;5 minutes in plasma</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">PT-141 1&ndash;2 mg SC ~45 min before activity (max once/24h, ~8&times;/month) + oxytocin 20&ndash;40 IU intranasal or sublingual ~20&ndash;30 min before</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">PT-141 is FDA-approved as Vyleesi and oxytocin as an obstetric drug (Pitocin), but the combination for libido/intimacy is not an approved product &mdash; research use only.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is the PT-141 + Oxytocin blend?</h2>
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is the PT-141 + Oxytocin blend?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             The PT-141 + Oxytocin blend is a 2-component research peptide combination pairing{" "}
             <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>{" "}
-            (bremelanotide, a cyclic heptapeptide melanocortin receptor agonist) with oxytocin (the hypothalamic neuropeptide governing bonding, trust, and intimacy). PT-141 acts centrally via MC3R and MC4R receptors in hypothalamic and limbic regions to generate sexual desire and arousal &mdash; the mechanism that led to FDA approval as Vyleesi for hypoactive sexual desire disorder (HSDD) in premenopausal women. Oxytocin is studied for its role in pair bonding, trust, emotional connection, and orgasm modulation. The combination addresses two distinct but complementary dimensions: the arousal/desire axis (PT-141) and the emotional-bonding/intimacy axis (oxytocin). This represents a new research vertical for the sexual-health space, distinct from recovery, body-composition, and metabolic peptide categories.
+            (bremelanotide, a cyclic heptapeptide melanocortin receptor agonist) with{" "}
+            <Link href="/peptides/oxytocin" className="text-[#3A759F] hover:underline">oxytocin</Link>{" "}
+            (the hypothalamic neuropeptide governing bonding, trust, and intimacy). PT-141 acts centrally via MC3R and MC4R receptors in hypothalamic and limbic regions to generate sexual desire and arousal &mdash; the mechanism that led to FDA approval as Vyleesi for hypoactive sexual desire disorder (HSDD) in premenopausal women. Oxytocin is studied for its role in pair bonding, trust, emotional connection, and orgasm modulation. The combination addresses two distinct but complementary dimensions: the arousal/desire axis (PT-141) and the emotional-bonding/intimacy axis (oxytocin). This represents a new research vertical for the sexual-health space, distinct from recovery, body-composition, and metabolic peptide categories.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             A key practical note on delivery: PT-141 is administered by subcutaneous injection from a lyophilized research vial; oxytocin is typically used as an intranasal spray or sublingual troche. These are administered in sequence in the pre-activity window, not as a single co-injection.
@@ -526,12 +557,9 @@ export default function PT141OxytocinPage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -554,7 +582,6 @@ export default function PT141OxytocinPage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Sexual Health", "Melanocortin", "Neuropeptide", "Combination Blend", "On-Demand Dosing"].map((tag) => (
@@ -590,6 +617,12 @@ export default function PT141OxytocinPage() {
 
       <PageDisclaimer />
       <ContactLink pageName="PT-141 + Oxytocin" pagePath="/peptides/pt-141-oxytocin" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
