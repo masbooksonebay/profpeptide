@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { RegionPill } from "@/components/RegionPill";
 
 function CodeBox({ code }: { code: string }) {
  const [copied, setCopied] = useState(false);
@@ -57,7 +58,7 @@ export default function IntegrativePeptidesCouponPage() {
  <div className="flex flex-wrap items-center gap-2 mb-8">
  <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
  <span className="text-xs bg-indigo-50 text-indigo-700 border border-indigo-200 px-2 py-0.5 rounded-full font-medium">Oral Peptide Formulations</span>
- <span className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-500 dark:text-slate-400 border border-[#D9DEE4] dark:border-slate-600 px-2 py-0.5 rounded-full">{"\uD83C\uDDFA\uD83C\uDDF8"} US</span>
+ <RegionPill slug="integrative-peptides" />
  </div>
 
  <div className="space-y-8">

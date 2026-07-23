@@ -29,17 +29,16 @@ interface HubVendor {
   strengths: string[];
 }
 
+// CURATION STANDARD — this Featured Vendors list is a hand-curated subset, NOT
+// the full registry. A vendor is only featured here once we've verified it
+// properly attributes sales (affiliate tracking confirmed working end-to-end).
+// Newly approved / unverified vendors stay OFF this list until then, even while
+// they appear on /coupons and /vendors (which list the whole registry).
+//   - Alpha Peptides: newly approved, attribution not yet verified — intentionally
+//     excluded here (still present on /coupons, /vendors, /coupons/alpha-peptides).
+//   - Swiss Chems: deliberate exception — large, established vendor, higher
+//     confidence, so featured ahead of that verification.
 const vendors: HubVendor[] = [
-  {
-    name: "Alpha Peptides",
-    slug: "alpha-peptides",
-    url: "https://alpha-peptides.com/aff/850/",
-    code: "PROFPEPTIDE",
-    discount: "10% off",
-    description:
-      "US East Coast supplier with a 30+ compound, peptide-forward catalog and a deep growth-hormone bench. Every lot runs a five-test verification panel — qualitative identity, percent purity, quantitative assay, heavy metals, and conformity — at an independent, ISO 17025-aligned US laboratory, with identity confirmed by HPLC and mass spectrometry and a Certificate of Analysis filed against every lot on a public COA page. Stated 99% purity floor; lyophilized, foil-sealed, cold-chain shipping from the East Coast.",
-    strengths: ["Five-test panel per lot", "Public COA page, COA per lot", "ISO 17025-aligned US lab, HPLC & mass-spec", "10% off with code"],
-  },
   {
     name: "Amino Club",
     slug: "amino-club",

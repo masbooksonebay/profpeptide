@@ -3,6 +3,7 @@
 import { redirect } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
+import { RegionPill } from "@/components/RegionPill";
 
 function CodeBox({ code }: { code: string }) {
  const [copied, setCopied] = useState(false);
@@ -60,7 +61,7 @@ export default function ParticlePeptidesCouponPage() {
  </div>
  <div className="flex flex-wrap items-center gap-2 mb-8">
  <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
- <span className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-500 dark:text-slate-400 border border-[#D9DEE4] dark:border-slate-600 px-2 py-0.5 rounded-full">{"\uD83C\uDDEC\uD83C\uDDE7"} UK</span>
+ <RegionPill slug="particle-peptides" />
  </div>
 
  <div className="space-y-8">
