@@ -2,7 +2,7 @@ import Link from "next/link";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
@@ -432,7 +432,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is Adamax?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function AdamaxPage() {
   return (
@@ -440,7 +443,7 @@ export default function AdamaxPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Adamax","description":"Adamax research profile: a vendor-marketed N-acetyl-Semax adamantane analog with no peer-reviewed literature. What it is claimed to be, the real Semax family context, and an honest look at the evidence gap.","url":"https://profpeptide.com/peptides/adamax","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Adamax"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -449,34 +452,59 @@ export default function AdamaxPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Adamax</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">Adamax</h1>
         <span className="tag">Cognitive &amp; Nootropic</span>
         <span className="tag">Research-Grade</span>
         <span className="tag">No Peer-Reviewed Evidence</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: July 20, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> N-Acetyl Semax Adamantane, NA-Semax-Adamantane (vendor names). No official INN or code designation.
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Marketed as a doubly-modified{" "}
-          <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>{" "}
-          analog (ACTH(4-7)/ACTH(4-10) lineage) &mdash; proposed melanocortin / BDNF-modulating nootropic. Not independently characterized.
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Not approved by any regulator (FDA, EMA, or elsewhere). Research-use-only. No peer-reviewed preclinical or clinical literature exists on Adamax specifically.
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Adamax?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A vendor-marketed, doubly-modified analog of Semax (N-acetyl-Semax with an adamantane group), sold for cognition &mdash; but with essentially no peer-reviewed literature of its own. Nearly everything known comes from its parent peptide, Semax.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Marketed for intranasal use (primary) or subcutaneous injection &mdash; no route validated in any study</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Uncharacterized for Adamax; parent Semax is short (minutes)</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">No established dose &mdash; vendors suggest low-hundreds-of-mcg intranasally by analogy to Semax</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved &mdash; research use only. No peer-reviewed literature on Adamax.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is Adamax?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Adamax is a research compound sold by specialty peptide vendors and discussed in nootropic communities as a modified analog of{" "}
-            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>. Vendors describe it as N-acetyl-Semax bearing a C-terminal adamantane group &mdash; two chemical modifications intended to make it more lipophilic, more resistant to enzymatic breakdown, and longer-acting than Semax. That description is consistent across vendor sources but has not been confirmed in any peer-reviewed publication. Critically, there is no published scientific literature on Adamax itself: a PubMed search returns no studies on the compound, and every claim about its effects, potency, or pharmacokinetics traces to vendor marketing or anecdotal user reports rather than controlled research. What follows describes what Adamax is <em>marketed as</em>, places it in the context of its real, well-studied parent Semax (clearly labeled as Semax data), and is explicit about where evidence simply does not exist. New to peptide research?{" "}
+            <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>. Vendors describe it as N-acetyl-Semax bearing a C-terminal adamantane group &mdash; sold under vendor names such as N-Acetyl Semax Adamantane or NA-Semax-Adamantane, with no official INN or code designation &mdash; two chemical modifications intended to make it more lipophilic, more resistant to enzymatic breakdown, and longer-acting than Semax. That description is consistent across vendor sources but has not been confirmed in any peer-reviewed publication. Critically, there is no published scientific literature on Adamax itself: a PubMed search returns no studies on the compound, and every claim about its effects, potency, or pharmacokinetics traces to vendor marketing or anecdotal user reports rather than controlled research. What follows describes what Adamax is <em>marketed as</em>, places it in the context of its real, well-studied parent Semax (clearly labeled as Semax data), and is explicit about where evidence simply does not exist. New to peptide research?{" "}
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
           </p>
           <div>
@@ -507,12 +535,9 @@ export default function AdamaxPage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -535,7 +560,6 @@ export default function AdamaxPage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Cognitive & Nootropic", "Semax Analog", "Limited Evidence", "Research-Grade"].map((tag) => (
@@ -579,6 +603,12 @@ export default function AdamaxPage() {
 
       <PageDisclaimer />
     <ContactLink pageName="Adamax" pagePath="/peptides/adamax" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
