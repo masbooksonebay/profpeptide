@@ -1,7 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
@@ -666,7 +666,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is the Semaglutide + BPC-157 blend?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function SemaglutideBpc157Page() {
   return (
@@ -712,7 +715,7 @@ export default function SemaglutideBpc157Page() {
         }}
       />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-      <div className="section max-w-3xl">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         <Link
           href="/peptides"
           className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -721,36 +724,56 @@ export default function SemaglutideBpc157Page() {
         </Link>
 
         <div className="flex flex-wrap items-center gap-3 mb-2">
-          <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">
             Semaglutide + BPC-157
           </h1>
           <span className="tag">Weight Loss &amp; GI Protection</span>
           <span className="tag">Research-Grade</span>
           <span className="tag">Combination Blend</span>
         </div>
-        <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+        <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
           Last reviewed: May 28, 2026
         </p>
-        <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span>{" "}
-            Sema + BPC, GLP-1/BPC Stack, Ozempic Research Blend
-          </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-            <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span>{" "}
-            GLP-1 Receptor Agonist + GI Cytoprotective Blend (2-component)
-          </p>
-          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-            <span className="font-semibold text-[#16181B] dark:text-slate-100">
-              Regulatory Status:
-            </span>{" "}
-            Research-grade only. Semaglutide is FDA-approved as Wegovy/Ozempic but research-grade
-            semaglutide is not the approved product. BPC-157 is FDA Category 2; WADA S0 prohibited.
-          </p>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A combination of semaglutide (a GLP-1 agonist for weight loss) and BPC-157 (a gut-protective recovery peptide), paired to offset the GI side effects and lean-mass loss that accompany semaglutide-driven weight-loss research.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Two separate subcutaneous injections &mdash; semaglutide once weekly, BPC-157 once (or twice) daily</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Semaglutide ~7 days; BPC-157 under 30 minutes</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Semaglutide 0.25 mg weekly titrating to 2.4 mg; BPC-157 250&ndash;500 mcg daily, run concurrently</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Semaglutide is FDA-approved as Wegovy/Ozempic, but research-grade semaglutide and BPC-157 are research use only &mdash; the combination is not an approved product.</dd>
+            </div>
+          </dl>
         </div>
+      </section>
 
-        <div id="overview" className="scroll-mt-20">
-          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+        <div id="overview" className="scroll-mt-24">
+          <h2 className="section-heading mb-3">
             What is the Semaglutide + BPC-157 blend?
           </h2>
           <div className="space-y-4">
@@ -825,14 +848,11 @@ export default function SemaglutideBpc157Page() {
           </div>
         </div>
 
-        <PageTOC sections={tocSections} />
-
-        <div className="space-y-8">
-          {sections.map((s) => (
-            <div key={s.id} id={s.id} className="scroll-mt-20">
-              <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
-                {s.title}
-              </h2>
+        {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
+              {s.title}
+            </h2>
               {s.intro && (
                 <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
                   {s.intro}
@@ -858,7 +878,6 @@ export default function SemaglutideBpc157Page() {
               )}
             </div>
           ))}
-        </div>
 
         <div className="flex flex-wrap gap-2 mt-8">
           {[
@@ -948,6 +967,12 @@ export default function SemaglutideBpc157Page() {
           pageName="Semaglutide + BPC-157"
           pagePath="/peptides/semaglutide-bpc-157"
         />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
       </div>
     </>
   );
