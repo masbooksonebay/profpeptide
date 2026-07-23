@@ -1,7 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
@@ -274,7 +274,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is Cardiogen?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function CardiogenPage() {
   return (
@@ -282,7 +285,7 @@ export default function CardiogenPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Cardiogen","description":"Cardiogen (AEDR, Ala-Glu-Asp-Arg) research profile: proposed cardiomyocyte proliferation, anti-fibrotic and anti-apoptotic (p53) signaling, peptide–DNA gene-expression modulation, preclinical cardioprotection, and candid limitations. Research use only.","url":"https://profpeptide.com/peptides/cardiogen","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Cardiogen"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -291,36 +294,57 @@ export default function CardiogenPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Cardiogen</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">Cardiogen</h1>
         <span className="tag">Bioregulators</span>
         <span className="tag">Research Use Only</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: June 4, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> AEDR, H-Ala-Glu-Asp-Arg-OH, Ala-Glu-Asp-Arg
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Khavinson short-peptide bioregulator (synthetic cardiovascular tetrapeptide)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> H-Ala-Glu-Asp-Arg-OH (AEDR) &middot; C18H31N7O9 &middot; ~489.5 g/mol &middot; PubChem CID 11583989
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Form &amp; Origin:</span> Lyophilized synthetic tetrapeptide; a Khavinson organ-targeted bioregulator studied in cardiac systems
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research Use Only; not FDA- or EMA-approved; no approved human therapeutic use
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Cardiogen?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A lab-made peptide bioregulator for cardiac tissue &mdash; one of the Russian &ldquo;Khavinson&rdquo; short peptides, studied preclinically for cardiomyocyte proliferation and reduced myocardial apoptosis.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Reconstituted lyophilized powder for injection; no validated route or dose (research use only)</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not well characterized</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">No validated or FDA-approved dose; handled as a research-use-only lyophilized powder &mdash; no injectable schedule published</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA- or EMA-approved &mdash; research use only.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is Cardiogen?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Cardiogen is a synthetic cardiovascular tetrapeptide (Ala-Glu-Asp-Arg, AEDR) developed within the Khavinson short-peptide bioregulator program as an organ-targeted bioregulator studied in cardiac systems. It is proposed to stimulate cardiomyocyte proliferation and to shift cardiac fibroblasts toward a less-fibrotic phenotype (less scar and collagen overdeposition), and in cultured cardiac tissue it was associated with reduced p53 expression &mdash; suggesting suppression of myocardial apoptosis. As a Khavinson short peptide, it is hypothesized to penetrate cells and modulate gene expression through site-specific DNA/chromatin interaction. The evidence base is entirely preclinical (rodent and in-vitro tissue culture), much of it in Russian-language journals and from a single research lineage; cardioprotective activity in rodent models is described in a US patent. There are no human clinical trials. Note that its sequence, AEDR, is distinct from AEDP (the sequence of{" "}
+            Cardiogen is a synthetic cardiovascular tetrapeptide (Ala-Glu-Asp-Arg, AEDR; full form H-Ala-Glu-Asp-Arg-OH, C18H31N7O9, ~489.5 g/mol, PubChem CID 11583989) developed within the Khavinson short-peptide bioregulator program as an organ-targeted bioregulator studied in cardiac systems. It is proposed to stimulate cardiomyocyte proliferation and to shift cardiac fibroblasts toward a less-fibrotic phenotype (less scar and collagen overdeposition), and in cultured cardiac tissue it was associated with reduced p53 expression &mdash; suggesting suppression of myocardial apoptosis. As a Khavinson short peptide, it is hypothesized to penetrate cells and modulate gene expression through site-specific DNA/chromatin interaction. The evidence base is entirely preclinical (rodent and in-vitro tissue culture), much of it in Russian-language journals and from a single research lineage; cardioprotective activity in rodent models is described in a US patent. There are no human clinical trials. Note that its sequence, AEDR, is distinct from AEDP (the sequence of{" "}
             <Link href="/peptides/cortagen" className="text-[#3A759F] hover:underline">Cortagen</Link>) and AEDG (the sequence of{" "}
             <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>). It sits in the same short-peptide family as{" "}
             <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>{" "}
@@ -352,12 +376,9 @@ export default function CardiogenPage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -380,7 +401,6 @@ export default function CardiogenPage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Bioregulators", "Cardiovascular Peptide", "Khavinson Peptide", "Research Use Only"].map((tag) => (
@@ -422,6 +442,12 @@ export default function CardiogenPage() {
 
       <PageDisclaimer />
     <ContactLink pageName="Cardiogen" pagePath="/peptides/cardiogen" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
