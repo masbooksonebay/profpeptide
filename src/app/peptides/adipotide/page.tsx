@@ -2,7 +2,7 @@ import Link from "next/link";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
@@ -420,7 +420,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is Adipotide?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function AdipotidePage() {
   return (
@@ -428,7 +431,7 @@ export default function AdipotidePage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Adipotide (FTPP)","description":"Adipotide (FTPP) research profile: adipose-vascular homing mechanism, preclinical evidence, the terminated Phase 1 trial, evidence status, and why no validated human dose exists.","url":"https://profpeptide.com/peptides/adipotide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Adipotide"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -437,30 +440,57 @@ export default function AdipotidePage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Adipotide</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">Adipotide</h1>
         <span className="tag">Metabolic</span>
         <span className="tag">Investigational</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: July 21, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> FTPP (fat-targeted proapoptotic peptide), Prohibitin-TP01, CKGGRAKDC-GG-D(KLAKLAK)2
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Synthetic chimeric proapoptotic peptidomimetic &mdash; adipose-vascular homing peptide + apoptotic payload
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Not FDA-approved. Investigational only; the single first-in-human Phase 1 trial (NCT01262664, MD Anderson) was terminated early (4 of 39 patients enrolled, no results posted). No established human efficacy or safety.
-        </p>
-      </div>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Adipotide?</h2>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A fat-targeted proapoptotic peptidomimetic (FTPP) that homes to the blood vessels feeding white fat and kills that blood supply, causing the fat to be resorbed. Demonstrated in mice and monkeys only &mdash; no demonstrated human efficacy.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Subcutaneous injection (investigational &mdash; the route used in animal studies and the terminated Phase 1 trial)</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not characterized in humans</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">No validated human dose &mdash; the only reference figure is the terminated Phase 1 starting dose (0.03 mg/kg subcutaneously once daily, 28-day cycle)</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA-approved &mdash; investigational. The sole Phase 1 trial (NCT01262664) was terminated with no results; no human efficacy; renal-tox signal in primates.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is Adipotide?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Adipotide (also called FTPP, for fat-targeted proapoptotic peptide) is a synthetic chimeric peptidomimetic first described by Kolonin and colleagues in 2004. It fuses a homing sequence (CKGGRAKDC) that seeks the blood vessels feeding white fat to a proapoptotic payload, D(KLAKLAK)2, that kills those vessels &mdash; causing the surrounding fat to be resorbed. In obese mice and obese monkeys it produced striking fat and weight loss, but the single human trial ever opened was terminated early and never reported, and a kidney-toxicity signal appeared in primates. It is mechanistically unrelated to GLP-1 metabolic peptides such as{" "}
+            Adipotide (also called FTPP, for fat-targeted proapoptotic peptide, or by the code Prohibitin-TP01) is a synthetic chimeric proapoptotic peptidomimetic first described by Kolonin and colleagues in 2004. It fuses a homing sequence (CKGGRAKDC) that seeks the blood vessels feeding white fat to a proapoptotic payload, D(KLAKLAK)2 &mdash; written in full as the construct CKGGRAKDC-GG-D(KLAKLAK)2 &mdash; that kills those vessels, causing the surrounding fat to be resorbed. In obese mice and obese monkeys it produced striking fat and weight loss, but the single human trial ever opened was terminated early and never reported, and a kidney-toxicity signal appeared in primates. It is mechanistically unrelated to GLP-1 metabolic peptides such as{" "}
             <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>{" "}
             despite sometimes being discussed alongside them. New to peptide research?{" "}
             <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
@@ -491,12 +521,9 @@ export default function AdipotidePage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -519,7 +546,6 @@ export default function AdipotidePage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Metabolic", "Investigational", "Proapoptotic", "Research-Grade"].map((tag) => (
@@ -559,6 +585,12 @@ export default function AdipotidePage() {
 
       <PageDisclaimer />
     <ContactLink pageName="Adipotide" pagePath="/peptides/adipotide" />
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
     </div>
     </>
   );
