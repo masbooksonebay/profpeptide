@@ -1,7 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
-import PageTOC from "@/components/PageTOC";
+import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
@@ -255,7 +255,10 @@ const sections = [
   },
 ];
 
-const tocSections = sections.map((s) => ({ id: s.id, title: s.title }));
+const tocSections = [
+  { id: "overview", title: "What is Cortagen?" },
+  ...sections.map((s) => ({ id: s.id, title: s.title })),
+];
 
 export default function CortagenPage() {
   return (
@@ -263,7 +266,7 @@ export default function CortagenPage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Cortagen","description":"Cortagen (AEDP, Ala-Glu-Asp-Pro) research profile: proposed tissue-specific gene-expression and heterochromatin modulation, peptide–DNA binding, preclinical cardiac and neural findings, and candid limitations. Research use only.","url":"https://profpeptide.com/peptides/cortagen","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Cortagen"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
-    <div className="section max-w-3xl">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link
         href="/peptides"
         className="text-sm text-[#3A759F] hover:underline mb-6 inline-block"
@@ -272,36 +275,56 @@ export default function CortagenPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Cortagen</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#16181B] dark:text-slate-100 tracking-tight">Cortagen</h1>
         <span className="tag">Bioregulators</span>
         <span className="tag">Research Use Only</span>
       </div>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-2">
+      <p className="text-sm text-gray-500 dark:text-slate-500 mb-8">
         Last reviewed: June 4, 2026
       </p>
-      <div className="mb-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Also Known As:</span> AEDP, H-Ala-Glu-Asp-Pro-OH, Ala-Glu-Asp-Pro
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Peptide Class:</span> Khavinson short-peptide bioregulator (synthetic neuro-cortex tetrapeptide)
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Molecular Profile:</span> H-Ala-Glu-Asp-Pro-OH (AEDP) &middot; C17H26N4O9 &middot; ~430.41 g/mol &middot; PubChem CID 18439621
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Form &amp; Origin:</span> Lyophilized synthetic tetrapeptide; obtained by directed synthesis based on amino-acid analysis of the brain-cortex peptide preparation Cortexin
-        </p>
-        <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed pt-1">
-          <span className="font-semibold text-[#16181B] dark:text-slate-100">Regulatory Status:</span> Research Use Only; not FDA- or EMA-approved
-        </p>
-      </div>
+      {/* Quick Facts — key facts already present on this page, in a scannable grid */}
+      <section aria-label="Quick Facts" className="panel-card mb-10 overflow-hidden">
+        <div className="px-5 py-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#16181B] dark:text-slate-100 mb-3">
+            Quick Facts
+          </h2>
+          <dl className="space-y-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">What it is</dt>
+              <dd className="text-base text-[#16181B] dark:text-slate-100">A synthetic Khavinson short-peptide bioregulator &mdash; the neuro-cortex tetrapeptide Ala-Glu-Asp-Pro (AEDP), derived from the brain-cortex preparation Cortexin &mdash; studied preclinically for tissue-specific gene expression and regenerative effects.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">How it&apos;s taken</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Research-use lyophilized powder reconstituted for injection; no validated human route.</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Half-life</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not characterized</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Typical research dose</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">No validated or FDA-approved dose established</dd>
+            </div>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400 mb-0.5">Research status</dt>
+              <dd className="text-sm text-[#16181B] dark:text-slate-200">Not FDA- or EMA-approved &mdash; research use only.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
 
-      <div id="overview" className="scroll-mt-20">
-        <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">What is Cortagen?</h2>
+      {/* Mobile "Jump to section" (collapses cleanly; rail TOC is hidden on mobile) */}
+      <ProfileTOC sections={tocSections} variant="mobile" />
+
+      {/* Two-column: primary content + right rail */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
+        <main className="min-w-0">
+
+      <div id="overview" className="scroll-mt-24">
+        <h2 className="section-heading mb-3">What is Cortagen?</h2>
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Cortagen is a synthetic neuro-cortex tetrapeptide (Ala-Glu-Asp-Pro, AEDP) developed within the Khavinson short-peptide bioregulator program. It was obtained by directed synthesis based on the amino-acid analysis of Cortexin, a brain-cortex peptide preparation. It is proposed to act primarily in the central nervous system &mdash; with secondary effects reported in cardiac and immune tissue &mdash; by modulating tissue-specific gene expression and chromatin/heterochromatin structure. In preclinical work it has been associated with balancing pro- versus anti-inflammatory signaling in neural tissue, oxidative-stress regulation, and nerve-tissue repair signaling; the proposed molecular basis is site-specific binding of short peptides to DNA. The evidence base is entirely preclinical (rodent and in-vitro) and comes largely from the Khavinson research lineage; there are no human randomized controlled trials. Note that its sequence, AEDP, is distinct from AEDG (the sequence of{" "}
+            Cortagen is a synthetic neuro-cortex tetrapeptide (Ala-Glu-Asp-Pro, AEDP; free-acid form H-Ala-Glu-Asp-Pro-OH; C17H26N4O9, ~430.41 g/mol; PubChem CID 18439621) developed within the Khavinson short-peptide bioregulator program. It was obtained by directed synthesis based on the amino-acid analysis of Cortexin, a brain-cortex peptide preparation. It is proposed to act primarily in the central nervous system &mdash; with secondary effects reported in cardiac and immune tissue &mdash; by modulating tissue-specific gene expression and chromatin/heterochromatin structure. In preclinical work it has been associated with balancing pro- versus anti-inflammatory signaling in neural tissue, oxidative-stress regulation, and nerve-tissue repair signaling; the proposed molecular basis is site-specific binding of short peptides to DNA. The evidence base is entirely preclinical (rodent and in-vitro) and comes largely from the Khavinson research lineage; there are no human randomized controlled trials. Note that its sequence, AEDP, is distinct from AEDG (the sequence of{" "}
             <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>). It sits in the same short-peptide family as{" "}
             <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>{" "}
             and{" "}
@@ -332,12 +355,9 @@ export default function CortagenPage() {
         </div>
       </div>
 
-      <PageTOC sections={tocSections} />
-
-      <div className="space-y-8">
-        {sections.map((s) => (
-          <div key={s.id} id={s.id} className="scroll-mt-20">
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
+      {sections.map((s) => (
+          <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
+            <h2 className="section-heading mb-3">
               {s.title}
             </h2>
             {s.intro && (
@@ -360,7 +380,6 @@ export default function CortagenPage() {
             )}
           </div>
         ))}
-      </div>
 
       <div className="flex flex-wrap gap-2 mt-8">
         {["Bioregulators", "Neuro-Cortex Peptide", "Khavinson Peptide", "Research Use Only"].map((tag) => (
@@ -404,7 +423,13 @@ export default function CortagenPage() {
 
       <PageDisclaimer />
     <ContactLink pageName="Cortagen" pagePath="/peptides/cortagen" />
-    </div>
+        </main>
+
+        <aside className="hidden lg:block lg:mt-0 lg:sticky lg:top-24 lg:self-start">
+          <ProfileTOC sections={tocSections} variant="rail" />
+        </aside>
+      </div>
+      </div>
     </>
   );
 }
