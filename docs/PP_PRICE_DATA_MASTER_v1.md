@@ -1602,19 +1602,46 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Midwest Peptide
 - **slug:** midwest-peptide | **code:** PROF10 | **discount:** 10% off | **url:** midwestpeptide.com
-- **traffic:** (not pulled) | **pulled:** July 23 2026
-- **sale posture:** ⚠️ PARTIAL PULL — Next.js RSC flight data resisted reliable full extraction; only 2 of ~24 products (glp-3-rt, ghk-cu) parsed with per-size variants. Base=current 'price' (products anchor a higher compare_at_price; the current price is the true base). GLP-3 RT=Retatrutide CONFIRMED by product spec (39-aa triple GIP/GLP-1/glucagon agonist = uniquely retatrutide). Remaining catalog needs a dedicated RSC/CINC pull.
+- **traffic:** (not pulled) | **pulled:** July 24 2026
+- **sale posture:** No cart-level auto-coupon (custom Next.js store — no WooCommerce cart). Every product ANCHORS a higher `compare_at_price` as a strikethrough (e.g. GLP-3 RT $69.99 vs $89.99); the current `price` is the true base and is what's captured here — NOT compare_at. Full catalog pulled per-product-page (JSON-LD Offer for single-size, `variants[]` array for multi-size). GLP names confirmed by product spec, not convention: GLP-3 RT = Retatrutide (39-aa TRIPLE agonist, incl. glucagon), GLP-2 TZ = Tirzepatide (39-aa DUAL agonist GIP/GLP-1, no glucagon).
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Stock |
 | --- | --- | --- | --- | --- |
+| 5-Amino-1MQ | 20mg | $49.99 | $2.50 | ✗ |
+| BPC-157 | 10mg | $39.99 | $4.00 | ✓ |
+| Cagrilintide | 10mg | $69.99 | $7.00 | ✗ |
+| CJC-1295 (no-DAC) | 10mg | $69.99 | $7.00 | ✓ |
+| DSIP | ? | $29.99 | — | ✓ |
 | GHK-Cu | 50mg | $29.99 | $0.60 | ✓ |
 | GHK-Cu | 100mg | $57.99 | $0.58 | ✓ |
+| Glutathione | 1500mg | $59.99 | $0.04 | ✓ |
+| KPV | ? | $39.99 | — | ✓ |
+| Melanotan I | 10mg | $29.99 | $3.00 | ✓ |
+| Melanotan II | 10mg | $29.99 | $3.00 | ✓ |
+| MOTS-C | 10mg | $39.99 | $4.00 | ✓ |
+| NAD+ | 500mg | $69.99 | $0.14 | ✗ |
+| PT-141 | ? | $29.99 | — | ✓ |
 | Retatrutide (listed as GLP-3 RT) | 10mg | $69.99 | $7.00 | ✓ |
 | Retatrutide (listed as GLP-3 RT) | 20mg | $134.99 | $6.75 | ✗ |
+| Selank | 10mg | $29.99 | $3.00 | ✓ |
+| Semax | 10mg | $29.99 | $3.00 | ✓ |
+| SS-31 | 10mg | $59.99 | $6.00 | ✓ |
+| TB-500 | 10mg | $39.99 | $4.00 | ✓ |
+| Tesamorelin | 10mg | $69.99 | $7.00 | ✓ |
+| Tirzepatide (listed as GLP-2 TZ) | ? | $79.99 | — | ✗ |
+| VIP | 10mg | $64.99 | $6.50 | ✓ |
+
+### Blends (total mg; ratio where published — Midwest publishes none)
+| Blend | Components | Total mg | Base | Ratio | Stock |
+| --- | --- | --- | --- | --- | --- |
+| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $69.99 | not published | ✓ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $114.99 | not published | ✓ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $119.99 | not published | ✓ |
+| Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 10mg | $79.99 | not published | ✗ |
 
 ### Sprays: none
-### Excluded: none — bac water/supplies, SARMs, Rx, cosmetics, clinical hormones (HCG etc.), out of PP scope
+### Excluded: Bacteriostatic Water, Alcohol Pads (supplies); BPC-157 Capsules, GHK-Cu Capsules, SLU-PP-332 Capsules, Tesofensine Capsules (oral/capsule forms — out of scope); Peptide Case (accessory). NOTE: DSIP, KPV, PT-141, and GLP-2 TZ have no size in the structured data (JSON-LD/flight) — size shown "?" and $/mg omitted rather than guessed.
 
 ---
 
