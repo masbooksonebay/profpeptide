@@ -684,7 +684,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ## VENDOR: Glacier Aminos
 - **slug:** glacier-aminos | **code:** PROF10 | **discount:** 10% off | **url:** glacieraminos.shop
 - **traffic:** (not pulled) | **pulled:** July 23 2026
-- **sale posture:** Minimal product-level sale (1/70); no cart auto-coupon. Base=regular_price. GLP coded: GLA-1 SM=Semaglutide, GLA-2 TRZ=Tirzepatide, GLA-3 RT=Retatrutide.
+- **sale posture:** Minimal product-level sale (1/70); no cart auto-coupon. Base=regular_price. ⚠️ GLP coded names GLA-1 SM / GLA-2 TRZ / GLA-3 RT are UNVERIFIED — no COA, MW, formula, or compound name published on the product pages or /coa; listed under the coded name only (naming convention suggests Semaglutide/Tirzepatide/Retatrutide but not asserted).
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Stock |
@@ -722,14 +722,14 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Oxytocin | 10mg | $55.99 | $5.60 | ✓ |
 | Pinealon | 10mg | $49.99 | $5.00 | ✓ |
 | PT-141 | 10mg | $40.99 | $4.10 | ✓ |
-| Retatrutide (listed as GLA-3 RT) | 10mg | $61.99 | $6.20 | ✓ |
-| Retatrutide (listed as GLA-3 RT) | 20mg | $110.99 | $5.55 | ✓ |
-| Retatrutide (listed as GLA-3 RT) | 30mg | $149.99 | $5.00 | ✓ |
-| Retatrutide (listed as GLA-3 RT) | 50mg | $213.99 | $4.28 | ✓ |
-| Retatrutide (listed as GLA-3 RT) | 60mg | $248.99 | $4.15 | ✓ |
+| GLA-3 RT [coded, UNVERIFIED] | 10mg | $61.99 | $6.20 | ✓ |
+| GLA-3 RT [coded, UNVERIFIED] | 20mg | $110.99 | $5.55 | ✓ |
+| GLA-3 RT [coded, UNVERIFIED] | 30mg | $149.99 | $5.00 | ✓ |
+| GLA-3 RT [coded, UNVERIFIED] | 50mg | $213.99 | $4.28 | ✓ |
+| GLA-3 RT [coded, UNVERIFIED] | 60mg | $248.99 | $4.15 | ✓ |
 | Selank | 10mg | $40.99 | $4.10 | ✓ |
 | Selank | 20mg | $81.99 | $4.10 | ✓ |
-| Semaglutide (listed as GLA-1 SM) | 15mg | $71.99 | $4.80 | ✓ |
+| GLA-1 SM [coded, UNVERIFIED] | 15mg | $71.99 | $4.80 | ✓ |
 | Semax | 10mg | $40.99 | $4.10 | ✓ |
 | Sermorelin | 10mg | $62.99 | $6.30 | ✓ |
 | SLU-PP-332 [backlog] | 5mg | $49.99 | $10.00 | ✓ |
@@ -741,11 +741,11 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tesofensine [backlog] | 500mcg | $114.99 | $229.98 | ✓ |
 | Testagen [backlog] | 20mg | $67.99 | $3.40 | ✓ |
 | Thymosin Alpha-1 | 10mg | $63.99 | $6.40 | ✓ |
-| Tirzepatide (listed as GLA-2 TRZ) | 10mg | $62.99 | $6.30 | ✓ |
-| Tirzepatide (listed as GLA-2 TRZ) | 20mg | $77.99 | $3.90 | ✓ |
-| Tirzepatide (listed as GLA-2 TRZ) | 30mg | $97.99 | $3.27 | ✓ |
-| Tirzepatide (listed as GLA-2 TRZ) | 45mg | $131.99 | $2.93 | ✓ |
-| Tirzepatide (listed as GLA-2 TRZ) | 60mg | $164.99 | $2.75 | ✓ |
+| GLA-2 TRZ [coded, UNVERIFIED] | 10mg | $62.99 | $6.30 | ✓ |
+| GLA-2 TRZ [coded, UNVERIFIED] | 20mg | $77.99 | $3.90 | ✓ |
+| GLA-2 TRZ [coded, UNVERIFIED] | 30mg | $97.99 | $3.27 | ✓ |
+| GLA-2 TRZ [coded, UNVERIFIED] | 45mg | $131.99 | $2.93 | ✓ |
+| GLA-2 TRZ [coded, UNVERIFIED] | 60mg | $164.99 | $2.75 | ✓ |
 | VIP | 10mg | $65.99 | $6.60 | ✓ |
 
 ### Blends (total mg; ratio where published — none of these vendors publish component ratios)
