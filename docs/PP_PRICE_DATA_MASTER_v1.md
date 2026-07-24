@@ -1618,4 +1618,53 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ---
 
+## VENDOR: Aero Peptides
+- **slug:** aero-peptides | **code:** PROFPEPTIDE15 | **discount:** 15% off | **url:** aeropeptides.com
+- **traffic:** (not pulled) | **pulled:** July 24 2026 (CINC read-only)
+- **sale posture:** No sale running — `on_sale=false` across the catalog (these are standing prices). CINC pull: the WooCommerce Store API is Cloudflare-403'd, so prices come from each page's embedded product JSON. GLP names SELF-IDENTIFY the compound in the title (GLP3 – Reta = Retatrutide, GLP1 – Semaglutide, GLP1 – Tirz = Tirzepatide) — not coded; no verification/[UNVERIFIED] needed.
+
+### Single compounds
+| Compound | Size | Base | $/mg | Stock |
+| --- | --- | --- | --- | --- |
+| Adamax | 10mg | $59.99 | $6.00 | ✓ |
+| BPC-157 | 10mg | $44.99 | $4.50 | ✓ |
+| CJC-1295 (no-DAC) | 10mg | $69.99 | $7.00 | ✓ |
+| GHK-Cu | 100mg | $44.99 | $0.45 | ✓ |
+| Glutathione | 1500mg | $74.99 | $0.05 | ✓ |
+| IGF-1 LR3 | 1mg | $69.99 | $69.99 | ✓ |
+| Kisspeptin-10 | 10mg | $39.99 | $4.00 | ✓ |
+| KPV | 10mg | $39.99 | $4.00 | ✓ |
+| Melanotan I | 10mg | $24.99 | $2.50 | ✓ |
+| Melanotan II | 5mg | $29.99 | $6.00 | ✓ |
+| MOTS-C | 10mg | $39.99 | $4.00 | ✓ |
+| NAD+ | 100mg | $59.99 | $0.60 | ✓ |
+| Retatrutide (listed as GLP3 – Reta) | 10mg | $79.99 | $8.00 | ✓ |
+| Semaglutide (listed as GLP1 – Semaglutide) | 10mg | $69.99 | $7.00 | ✓ |
+| Tirzepatide (listed as GLP1 – Tirz) | 10mg | $74.99 | $7.50 | ✓ |
+| Semax | 10mg | $44.99 | $4.50 | ✓ |
+| SS-31 | 10mg | $64.99 | $6.50 | ✓ |
+| Tesamorelin | 10mg | $64.99 | $6.50 | ✓ |
+| Sermorelin | 5–10mg | from $64.99 | — | ✓ |
+| TB-500 | 5–10mg | price unavailable | — | ✓ |
+
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock |
+| --- | --- | --- | --- | --- | --- |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $89.99 | 5/5 (published) | ✓ |
+| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $69.99 | 5/5 (published) | ✓ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | — | $139.99 | not published | ✓ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | — | $149.99 | not published | ✓ |
+
+### Sprays: none
+### Excluded: Reconstitution BAC water (supply). NOTE: TB-500 and Sermorelin are variable products whose per-size prices load via AJAX that Cloudflare blocks — TB-500 price unavailable, Sermorelin shown as "from $64.99" (not fabricated). GLOW/KLOW have no mg in the title, so no total-mg/$/mg (honest —).
+
+---
+
+## ⛔ BLOCKED / NOT PRICE-PULLABLE (reference — do not keep retrying)
+- **Limitless Biotech** (limitlesslifenootropics.com) — **PERMANENTLY EXCLUDED from price comparison.** BigCommerce **B2B store**: every product's price is login-gated behind "Professional Pricing" (`data-product-price="Log In for Professional Pricing"`, empty public `price_range`). **No public retail price exists** — cannot be pulled read-only without an account. Catalog names/sizes are public; prices are not. (Not WooCommerce, despite an earlier assumption.)
+- **Spartan Peptides** (spartanpeptides.com) — **PARTIAL.** Fully client-rendered React storefront (no `/wp-json`, no static product data). 10 of ~30 products captured via the browser; the remainder sit behind a **21+ age gate** (a consent modal — not clicked). Prices display as **ranges** ("$99.00 – $336.60"): **low = smallest size, high = bulk/kit** — sizes must be matched to each end of the range before computing $/mg. GLPs self-identify ("GLP-2(Tirz)").
+- **aero-peptides** Store API is Cloudflare-403'd but the storefront JSON is readable (pulled above via CINC); its 2 variable products (TB-500, Sermorelin) have AJAX-only per-size prices.
+
+---
+
 ## VENDOR: [next vendor — append here in same format]
