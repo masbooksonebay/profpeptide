@@ -87,6 +87,14 @@ export const vendors: Record<string, Vendor> = {
     url: "https://behemothlabz.com/aff/208/",
     detailPage: "/coupons/behemoth-labz",
   },
+  "biolongevity-labs": {
+    name: "Biolongevity Labs",
+    code: "PROFPEPTIDE",
+    discount: "15% off",
+    region: "US",
+    url: "https://go.biolongevitylabs.com/aff_c?offer_id=1&aff_id=2702",
+    detailPage: "/coupons/biolongevity-labs",
+  },
   biocollex: {
     name: "BioCollex",
     code: "PROFPEPTIDE",
