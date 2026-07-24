@@ -1363,4 +1363,259 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ---
 
+## VENDOR: Synthesis Peptides
+- **slug:** synthesis-peptides | **code:** PROFPEPTIDE10 | **discount:** 10% off | **url:** synthesispeptides.io
+- **traffic:** (not pulled) | **pulled:** July 23 2026
+- **sale posture:** Product-level sale_price on 1/42; no cart auto-coupon. Base=regular_price; code STACKS. ⚠️ GLP-1S/2T/3R coded — UNVERIFIED (no COA/MW/identity; page mentions a name but no verifiable identity field; not asserted).
+
+### Single compounds
+| Compound | Size | Base | $/mg | Stock |
+| --- | --- | --- | --- | --- |
+| 5-Amino-1MQ | — | $129.99 | — | ✗ |
+| 5-Amino-1MQ | 10mg | $36.99 | $3.70 | ✓ |
+| 5-Amino-1MQ | 50mg | $74.99 | $1.50 | ✓ |
+| AOD-9604 | — | $59.99 | — | ✓ |
+| BPC-157 | — | $49.99 | — | ✓ |
+| Cagrilintide | — | $62.99 | — | ✗ |
+| CJC-1295 | 5mg | $36.99 | $7.40 | ✓ |
+| DSIP | 5mg | $36.99 | $7.40 | ✓ |
+| DSIP | 10mg | $47.99 | $4.80 | ✓ |
+| Epitalon | 10mg | $43.99 | $4.40 | ✓ |
+| Epitalon | 40mg | $119.99 | $3.00 | ✗ |
+| GHK-Cu | — | $34.99 | — | ✓ |
+| GHK-Cu | 50mg | $36.99 | $0.74 | ✓ |
+| GLP-1S [coded, UNVERIFIED] | 10mg | $72.99 | $7.30 | ✓ |
+| GLP-2T [coded, UNVERIFIED] | 5mg | $54.99 | $11.00 | ✓ |
+| GLP-2T [coded, UNVERIFIED] | 10mg | $59.99 | $6.00 | ✓ |
+| GLP-2T [coded, UNVERIFIED] | 15mg | $79.99 | $5.33 | ✓ |
+| GLP-3R [coded, UNVERIFIED] | 10mg | $89.99 | $9.00 | ✓ |
+| GLP-3R [coded, UNVERIFIED] | 15mg | $119.99 | $8.00 | ✓ |
+| GLP-3R [coded, UNVERIFIED] | 20mg | $139.99 | $7.00 | ✓ |
+| GLP-3R [coded, UNVERIFIED] | 30mg | $189.99 | $6.33 | ✗ |
+| GLP-3R [coded, UNVERIFIED] | 40mg | $229.99 | $5.75 | ✓ |
+| Glutathione | — | $73.99 | — | ✓ |
+| IGF-1 LR3 | — | $78.99 | — | ✓ |
+| Ipamorelin | 10mg | $64.99 | $6.50 | ✓ |
+| KPV | — | $57.99 | — | ✓ |
+| MOTS-C | 10mg | $49.99 | $5.00 | ✓ |
+| MOTS-C | 40mg | $149.99 | $3.75 | ✓ |
+| NAD+ | — | $63.99 | — | ✓ |
+| PT-141 | — | $52.99 | — | ✓ |
+| Selank | — | $73.99 | — | ✓ |
+| Selank | 10mg | $41.99 | $4.20 | ✓ |
+| Selank | 30mg | $74.99 | $2.50 | ✗ |
+| Semax | — | $74.99 | — | ✓ |
+| Semax | 10mg | $36.99 | $3.70 | ✗ |
+| Semax | 30mg | $74.99 | $2.50 | ✓ |
+| Sermorelin | 10mg | $74.99 | $7.50 | ✓ |
+| TB-500 | 10mg | $74.99 | $7.50 | ✓ |
+| Tesamorelin | 10mg | $79.99 | $8.00 | ✓ |
+| Thymosin Alpha-1 | 10mg | $74.99 | $7.50 | ✓ |
+
+### Blends (total mg; ratio where published — none of these vendors publish component ratios)
+| Blend | Components | Total mg | Base | Ratio | Stock |
+| --- | --- | --- | --- | --- | --- |
+| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | — | $63.99 | not published | ✓ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | — | $119.99 | not published | ✓ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | — | $129.99 | not published | ✓ |
+| Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | — | $114.99 | not published | ✗ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $64.99 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $99.99 | not published | ✓ |
+
+### Sprays: none
+### Excluded: oral/tablet/sublingual forms, out-of-scope (SARMs/Rx/cosmetics), supplies — bac water/supplies, SARMs, Rx, cosmetics, clinical hormones (HCG etc.), out of PP scope
+
+---
+
+## VENDOR: Vital Core Research
+- **slug:** vital-core-research | **code:** PROF20 | **discount:** 20% off | **url:** vitalcoreresearch.com
+- **traffic:** (not pulled) | **pulled:** July 23 2026
+- **sale posture:** No product-level sale (0/57); no cart auto-coupon. Base=regular_price. ⚠️ GLP-1/2/3 coded — UNVERIFIED (COAs label the vendor code 'GLP-3RT' with HPLC purity only; no MW/formula/named compound; not asserted).
+
+### Single compounds
+| Compound | Size | Base | $/mg | Stock |
+| --- | --- | --- | --- | --- |
+| 5-Amino-1MQ | 5mg | $40.99 | $8.20 | ✓ |
+| 5-Amino-1MQ | 10mg | $70.99 | $7.10 | ✓ |
+| AOD-9604 | 5mg | $44.99 | $9.00 | ✓ |
+| BPC-157 | 2mg | $29.99 | $14.99 | ✓ |
+| BPC-157 | 5mg | $34.99 | $7.00 | ✓ |
+| BPC-157 | 10mg | $63.99 | $6.40 | ✓ |
+| Cagrilintide | — | $232.99 | — | ✓ |
+| Cagrilintide | 5mg | $79.99 | $16.00 | ✓ |
+| Cagrilintide | 10mg | $159.99 | $16.00 | ✓ |
+| CJC-1295 | 2mg | $40.99 | $20.50 | ✓ |
+| CJC-1295 | 5mg | $49.99 | $10.00 | ✓ |
+| CJC-1295 | 10mg | $89.99 | $9.00 | ✓ |
+| DSIP | — | $29.99 | — | ✓ |
+| Epitalon | 10mg | $34.99 | $3.50 | ✓ |
+| Epitalon | 50mg | $99.99 | $2.00 | ✓ |
+| GHK-Cu | 50mg | $39.99 | $0.80 | ✓ |
+| GHK-Cu | 100mg | $69.99 | $0.70 | ✓ |
+| GHRP-2 | 5mg | $29.99 | $6.00 | ✓ |
+| GHRP-2 | 10mg | $58.99 | $5.90 | ✓ |
+| GHRP-6 | 5mg | $29.99 | $6.00 | ✓ |
+| GHRP-6 | 10mg | $58.99 | $5.90 | ✓ |
+| GLP-1 [coded, UNVERIFIED] | 5mg | $79.99 | $16.00 | ✓ |
+| GLP-1 [coded, UNVERIFIED] | 10mg | $119.99 | $12.00 | ✓ |
+| GLP-2 [coded, UNVERIFIED] | 10mg | $89.99 | $9.00 | ✓ |
+| GLP-2 [coded, UNVERIFIED] | 30mg | $169.99 | $5.67 | ✓ |
+| GLP-2 [coded, UNVERIFIED] | 60mg | $229.99 | $3.83 | ✓ |
+| GLP-3 [coded, UNVERIFIED] | 10mg | $128.99 | $12.90 | ✓ |
+| GLP-3 [coded, UNVERIFIED] | 30mg | $220.99 | $7.37 | ✓ |
+| GLP-3 [coded, UNVERIFIED] | 50mg | $298.99 | $5.98 | ✓ |
+| Hexarelin | — | $44.99 | — | ✓ |
+| HGH Fragment 176-191 [backlog] | — | $49.99 | — | ✓ |
+| IGF-1 LR3 | — | $99.99 | — | ✓ |
+| Ipamorelin | 5mg | $34.99 | $7.00 | ✓ |
+| Ipamorelin | 10mg | $68.99 | $6.90 | ✓ |
+| Mazdutide [backlog] | — | $109.99 | — | ✓ |
+| MK-677 | — | $69.99 | — | ✗ |
+| MOTS-C | — | $49.99 | — | ✓ |
+| NAD+ | 100mg | $39.99 | $0.40 | ✓ |
+| NAD+ | 500mg | $100.99 | $0.20 | ✓ |
+| NAD+ | 1000mg | $150.99 | $0.15 | ✓ |
+| PT-141 | — | $39.99 | — | ✓ |
+| Selank | — | $49.99 | — | ✓ |
+| Semax | — | $49.99 | — | ✓ |
+| Sermorelin | 5mg | $44.99 | $9.00 | ✓ |
+| SLU-PP-332 [backlog] | 100mcg | $74.99 | $749.90 | ✓ |
+| SLU-PP-332 [backlog] | 250mcg | $130.99 | $523.96 | ✓ |
+| SNAP-8 [backlog] | — | $49.99 | — | ✓ |
+| TB-500 | 2mg | $29.99 | $14.99 | ✓ |
+| TB-500 | 5mg | $39.99 | $8.00 | ✓ |
+| TB-500 | 10mg | $74.99 | $7.50 | ✓ |
+| Tesamorelin | 5mg | $41.99 | $8.40 | ✓ |
+| Tesamorelin | 10mg | $54.95 | $5.50 | ✓ |
+| Tesofensine [backlog] | 250mcg | $99.99 | $399.96 | ✓ |
+| Tesofensine [backlog] | 500mcg | $149.99 | $299.98 | ✓ |
+| Thymosin Alpha-1 | 5mg | $37.50 | $7.50 | ✓ |
+| Thymosin Alpha-1 | 10mg | $74.99 | $7.50 | ✓ |
+
+### Blends (total mg; ratio where published — none of these vendors publish component ratios)
+| Blend | Components | Total mg | Base | Ratio | Stock |
+| --- | --- | --- | --- | --- | --- |
+| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | — | $74.99 | not published | ✓ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | — | $119.99 | not published | ✓ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | — | $149.99 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 5mg | $74.99 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $140.99 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | — | $74.99 | not published | ✓ |
+
+### Sprays: none
+### Excluded: oral/tablet/sublingual forms, out-of-scope (SARMs/Rx/cosmetics), supplies — bac water/supplies, SARMs, Rx, cosmetics, clinical hormones (HCG etc.), out of PP scope
+
+---
+
+## VENDOR: Purity Peptides
+- **slug:** purity-peptides | **code:** PROF15 | **discount:** 15% off | **url:** puritypeptides.is
+- **traffic:** (not pulled) | **pulled:** July 23 2026
+- **sale posture:** No sitewide sale (API exposes one price per product; no sale/compare field). Base=price. Next.js custom /api/products. GLPs SELF-IDENTIFIED in product titles — GLP-1 (Semaglutide), GLP-2 (Tirzepatide), GLP-3 (Reta) — CONFIRMED by the vendor's own naming.
+
+### Single compounds
+| Compound | Size | Base | $/mg | Stock |
+| --- | --- | --- | --- | --- |
+| 5-Amino-1MQ | 10mg | $69.99 | $7.00 | ✗ |
+| AOD-9604 | 5mg | $69.99 | $14.00 | ✓ |
+| BPC-157 | 500mcg | $255.00 | $510.00 | ✓ |
+| BPC-157 | 5mg | $59.99 | $12.00 | ✓ |
+| BPC-157 | 10mg | $94.99 | $9.50 | ✓ |
+| BPC-157 | 20mg | $124.99 | $6.25 | ✓ |
+| CJC-1295 | 2mg | $49.99 | $25.00 | ✓ |
+| CJC-1295 | 5mg | $69.99 | $14.00 | ✓ |
+| CJC-1295 | 10mg | $99.99 | $10.00 | ✓ |
+| DSIP | 5mg | $49.99 | $10.00 | ✓ |
+| Epitalon | 10mg | $89.99 | $9.00 | ✓ |
+| GHK-Cu | 50mg | $79.99 | $1.60 | ✓ |
+| GHK-Cu | 100mg | $119.99 | $1.20 | ✓ |
+| GHRP-2 | 5mg | $60.49 | $12.10 | ✓ |
+| GHRP-6 | 5mg | $49.99 | $10.00 | ✓ |
+| Glutathione | 1500mg | $109.99 | $0.07 | ✓ |
+| Ipamorelin | 5mg | $59.99 | $12.00 | ✓ |
+| Ipamorelin | 10mg | $119.99 | $12.00 | ✓ |
+| Kisspeptin-10 | 5mg | $64.99 | $13.00 | ✓ |
+| Kisspeptin-10 | 10mg | $89.99 | $9.00 | ✓ |
+| KPV | 5mg | $40.99 | $8.20 | ✓ |
+| KPV | 10mg | $64.99 | $6.50 | ✓ |
+| Melanotan I | 10mg | $54.99 | $5.50 | ✓ |
+| Melanotan II | 10mg | $54.99 | $5.50 | ✓ |
+| MOTS-C | 10mg | $59.99 | $6.00 | ✓ |
+| MOTS-C | 20mg | $99.99 | $5.00 | ✓ |
+| MOTS-C | 40mg | $159.99 | $4.00 | ✓ |
+| NAD+ | 500mg | $126.49 | $0.25 | ✓ |
+| Pancragen [backlog] | 20mg | $99.99 | $5.00 | ✓ |
+| Pinealon | 10mg | $76.99 | $7.70 | ✓ |
+| PT-141 | 10mg | $82.49 | $8.25 | ✓ |
+| Retatrutide | 10mg | $104.99 | $10.50 | ✓ |
+| Retatrutide | 15mg | $159.99 | $10.67 | ✓ |
+| Retatrutide | 20mg | $199.00 | $9.95 | ✓ |
+| Retatrutide | 30mg | $299.99 | $10.00 | ✓ |
+| Selank | 5mg | $109.99 | $22.00 | ✓ |
+| Selank | 10mg | $84.99 | $8.50 | ✓ |
+| Semaglutide | 5mg | $89.99 | $18.00 | ✓ |
+| Semaglutide | 10mg | $119.99 | $12.00 | ✓ |
+| Semax | 10mg | $109.99 | $11.00 | ✓ |
+| Sermorelin | 5mg | $59.99 | $12.00 | ✓ |
+| Sermorelin | 10mg | $89.99 | $9.00 | ✓ |
+| SLU-PP-332 [backlog] | 500mcg | $114.99 | $229.98 | ✓ |
+| SS-31 | 10mg | $79.99 | $8.00 | ✓ |
+| TB-500 | 5mg | $72.59 | $14.52 | ✓ |
+| TB-500 | 10mg | $89.99 | $9.00 | ✓ |
+| Tesamorelin | 5mg | $79.99 | $16.00 | ✓ |
+| Tesamorelin | 10mg | $139.99 | $14.00 | ✓ |
+| Thymogen | 20mg | $69.99 | $3.50 | ✓ |
+| Thymosin Alpha-1 | 5mg | $72.59 | $14.52 | ✓ |
+| Thymosin Alpha-1 | 10mg | $89.99 | $9.00 | ✓ |
+| Tirzepatide | 10mg | $104.99 | $10.50 | ✓ |
+| Tirzepatide | 20mg | $159.99 | $8.00 | ✓ |
+| Vesugen [backlog] | 20mg | $99.99 | $5.00 | ✓ |
+| Vilon [backlog] | 20mg | $79.99 | $4.00 | ✓ |
+
+### Blends (total mg; ratio where published — none of these vendors publish component ratios)
+| Blend | Components | Total mg | Base | Ratio | Stock |
+| --- | --- | --- | --- | --- | --- |
+| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $89.99 | 5/5 (published) | ✓ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $179.99 | not published | ✓ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $144.99 | not published | ✓ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $199.99 | not published | ✓ |
+| Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 5mg | $159.99 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $124.99 | 10/5/5 (published) | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 40mg | $199.99 | 20/10/10 (published) | ✓ |
+
+### Sprays / strips (separate format, no $/mg)
+| Product | Size | Base | Stock |
+| --- | --- | --- | --- |
+| BPC-157 (spray) | 10mg | $99.99 | ✓ |
+| DSIP (spray) | 10mg | $99.99 | ✓ |
+| GHK-Cu (spray) | 50mg | $89.99 | ✓ |
+| Melanotan II (spray) | 10mg | $99.99 | ✓ |
+| NAD+ (spray) | 500mg | $139.99 | ✓ |
+| PT-141 (spray) | 10mg | $99.99 | ✓ |
+| Selank (spray) | 10mg | $109.99 | ✓ |
+| Semaglutide (spray) | 10mg | $139.99 | ✓ |
+| Semax (spray) | 10mg | $78.99 | ✓ |
+| TB-500 (spray) | 10mg | $109.99 | ✓ |
+
+### Excluded: out-of-scope (SARMs/Rx/cosmetics), supplies — bac water/supplies, SARMs, Rx, cosmetics, clinical hormones (HCG etc.), out of PP scope
+
+---
+
+## VENDOR: Midwest Peptide
+- **slug:** midwest-peptide | **code:** PROF10 | **discount:** 10% off | **url:** midwestpeptide.com
+- **traffic:** (not pulled) | **pulled:** July 23 2026
+- **sale posture:** ⚠️ PARTIAL PULL — Next.js RSC flight data resisted reliable full extraction; only 2 of ~24 products (glp-3-rt, ghk-cu) parsed with per-size variants. Base=current 'price' (products anchor a higher compare_at_price; the current price is the true base). GLP-3 RT=Retatrutide CONFIRMED by product spec (39-aa triple GIP/GLP-1/glucagon agonist = uniquely retatrutide). Remaining catalog needs a dedicated RSC/CINC pull.
+
+### Single compounds
+| Compound | Size | Base | $/mg | Stock |
+| --- | --- | --- | --- | --- |
+| GHK-Cu | 50mg | $29.99 | $0.60 | ✓ |
+| GHK-Cu | 100mg | $57.99 | $0.58 | ✓ |
+| Retatrutide (listed as GLP-3 RT) | 10mg | $69.99 | $7.00 | ✓ |
+| Retatrutide (listed as GLP-3 RT) | 20mg | $134.99 | $6.75 | ✗ |
+
+### Sprays: none
+### Excluded: none — bac water/supplies, SARMs, Rx, cosmetics, clinical hormones (HCG etc.), out of PP scope
+
+---
+
 ## VENDOR: [next vendor — append here in same format]
