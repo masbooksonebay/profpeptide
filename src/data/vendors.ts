@@ -212,6 +212,14 @@ export const vendors: Record<string, Vendor> = {
     url: "https://royal-peptides.com/?ref=urunwnog",
     detailPage: "/coupons/royal-peptides",
   },
+  "science-based-peptides": {
+    name: "Science Based Peptides",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    url: "https://www.sciencebasedpeptides.com/ref/PROFPEPTIDE",
+    detailPage: "/coupons/science-based-peptides",
+  },
   "spartan-peptides": {
     name: "Spartan Peptides",
     code: "PROFPEPTIDE",
