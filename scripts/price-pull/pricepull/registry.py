@@ -21,9 +21,17 @@ DOC = REPO / "docs" / "PP_PRICE_DATA_MASTER_v1.md"
 # slug -> {name, domain, adapter, variation_model, coded_decoder, sitemap?, sale_posture, notes}
 VENDORS = {
     # ---- pilot ----
-    "amino-club": dict(name="Amino Club", domain="aminoclub.com", adapter="woo",
+    "amino-club": dict(name="Amino Club", domain="www.aminoclub.com", adapter="cinc",
         variation_model="dosage", coded_decoder=False,
-        sale_posture="No sitewide sale; code stacks.", notes="Seed vendor (pre-existing section); GLPs named plainly."),
+        sale_posture="No sitewide sale; code stacks.",
+        notes="Seed vendor (hand-built section). MIGRATED off WooCommerce -> Next.js/Medusa on "
+              "Vercel: /wp-json/* now returns the SPA app-shell (200 HTML), so the woo adapter can't "
+              "pull it. Per-size variant prices render BROWSER-SIDE (client Medusa fetch); the server "
+              "HTML/flight carry no price, and no Medusa backend URL/publishable key is exposed in the "
+              "bundle. So there is no server-reachable per-size path -> cinc (manual/browser pull, like "
+              "aero). Manual-pull aids: /llms.txt (names + aliases + CAS + 'From $X' min price per "
+              "product) and sitemap.xml (33 /us/products/<slug>). Coded GLP: 'GLP-3 (RT)' = Retatrutide "
+              "(llms.txt synonym LY3437943; verify vs COA at /us/coa on the manual pull)."),
     "alpha-peptides": dict(name="Alpha Peptides", domain="alpha-peptides.com", adapter="woo",
         variation_model="dosage", coded_decoder=True,
         sale_posture="Product-level sale_price on ~25/59; code STACKS.",
