@@ -9,12 +9,25 @@
 
 ## 📋 DATA RULES (apply to every vendor)
 1. **Single compounds:** per-mg is honest → base $/mg = basePrice / sizeMg.
-2. **Blends (GLOW/KLOW/Wolverine/CJC-Ipa):** ⚠️ pending CINC standardization check — IF ratios are standard across vendors, compare blend-to-blend by total mg (+ show ratio e.g. "70mg = 50/10/10"); if ratios vary, separate. Show the ratio for transparency regardless.
-3. **Sprays:** separate format sub-category (different SKU) — don't merge with vials.
-4. **Bac water / supplies:** excluded from compound comparison (no per-mg).
-5. **With-code price:** base × (1 − vendorDiscount). Pull discount from vendors.ts, don't hardcode.
-6. **Stock:** note in-stock ✓ / OOS ✗ per size.
-7. **Only pull compounds PP has (or will have) profiles for** where possible → ecosystem linking.
+2. **Blends — RESOLVED (pilot of 4 vendors: Amino Club, Alpha, Science Based, Biolongevity):**
+   - **GLOW (70mg total) and KLOW (80mg total)** are **consistent across every vendor pulled** → compare blend-to-blend **by total mg**.
+   - **Wolverine totals VARY** (Biolongevity 10mg · Science Based 5mg/10mg · Alpha 20mg) → **keep size-explicit; do NOT compare Wolverine across vendors.** **CJC-Ipa** likewise size-explicit.
+   - **Show the component ratio wherever the vendor publishes it.** Only **Biolongevity** publishes component ratios (GLOW 50/10/10, KLOW 50/10/10/10, Wolverine 5/5, Tesa/Ipa 6/2, NAD/MOTS/5A 100/10/10) — treat these as the documented **de facto standard** and use them to seed a ratio column. No $/mg on blends.
+3. **Sprays / strips:** separate format sub-category (different SKU) — never merge with vials. No $/mg.
+4. **Bac water / supplies:** excluded from compound comparison (no per-mg); list inline on the Excluded line.
+5. **With-code price:** base × (1 − vendorDiscount). Pull discount from vendors.ts, don't hardcode. Do NOT store with-code in this doc — **base only**.
+6. **Stock:** note in-stock ✓ / OOS ✗ **per size**. Where a product has variations, use **PER-VARIATION stock** — the parent in-stock flag can read true while individual sizes are OOS (WooCommerce). Read stock at the variation level, not the parent.
+7. **Only pull compounds PP has (or will have) profiles for** where possible → ecosystem linking. Mark build-backlog compounds "[backlog]".
+8. **Units — $/mg must be UNIT-AWARE:** convert **mcg → mg** (÷1000) before dividing. A 500mcg vial is 0.5mg. *(Pilot bug: Tesofensine 500mcg computed as $0.22/mg instead of the correct $217.90/mg — always normalize the unit first.)*
+
+## 🧾 VENDOR-SECTION FIELDS (header)
+Each vendor header carries: **slug · code · discount · url**, **traffic · pulled** (date), and **sale posture**.
+
+- **sale posture** (revenue-relevant — determines whether the code earns anything during a promotion): does the vendor run sitewide sales? Are they **cart-level auto-coupons** or **product-level `sale_price`**? Is the sale **MUTUALLY EXCLUSIVE** with the affiliate code, or does the code **STACK** on top? Populate per vendor.
+
+## 🔎 METHOD — capturing the TRUE BASE price
+- WooCommerce Store API: use **`regular_price`**, never `sale_price`.
+- **Cart-level auto-coupons do NOT appear in product data at all** — a sitewide "N% off" can be invisible in the product API. **Check the cart** (add an item, inspect the totals/applied coupons) to detect the sale and confirm whether it's exclusive with the affiliate code.
 
 ---
 
@@ -78,7 +91,7 @@
 ## VENDOR: Biolongevity Labs
 - **slug:** biolongevity-labs | **code:** PROFPEPTIDE | **discount:** 15% off | **url:** biolongevitylabs.com
 - **traffic:** (not pulled) | **pulled:** July 23 2026
-- ⚠️ **SITEWIDE SALE ACTIVE:** "Christmas in July · 50% Off Sitewide" via auto-coupon `longevityvip`. It is applied at CART LEVEL (not as product sale_price), so the base prices below are the TRUE regular prices from the store API. `longevityvip` is **mutually exclusive** with the affiliate code PROFPEPTIDE (individual-use) — during the sale the 50% auto-coupon beats the 15% code, so PROFPEPTIDE is not the best offer while the sale runs.
+- **sale posture:** ⚠️ Sitewide sale ACTIVE — "Christmas in July · 50% Off Sitewide" via **cart-level auto-coupon** `longevityvip` (NOT product `sale_price`; invisible in the product API — base prices below are true `regular_price`). **MUTUALLY EXCLUSIVE** with PROFPEPTIDE (individual-use): the 50% auto-coupon beats the 15% code, so **the code is not the best offer while the sale runs**.
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Stock |
@@ -153,7 +166,7 @@
 ## VENDOR: Science Based Peptides
 - **slug:** science-based-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** sciencebasedpeptides.com
 - **traffic:** (not pulled) | **pulled:** July 23 2026
-- **No sitewide sale.** Store API `compareAt` null on every variant → prices below are true base. GLP carried: Retatrutide only (coded name GLP 3-(RT)).
+- **sale posture:** No sitewide sale — Store API `compareAt` null on every variant, so prices below are true base. The code applies normally at checkout. GLP carried: Retatrutide only (coded name GLP 3-(RT)).
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Stock |
@@ -207,7 +220,7 @@
 ## VENDOR: Alpha Peptides
 - **slug:** alpha-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** alpha-peptides.com
 - **traffic:** (not pulled) | **pulled:** July 23 2026
-- ⚠️ **PER-PRODUCT SALE PRICES:** 25 of 59 products carry a WooCommerce `sale_price` below `regular_price` (~6–17% off; not a sitewide coupon). Base below = `regular_price` (true base). No auto-coupon; the affiliate code PROFPEPTIDE is applied on top at checkout, so it is NOT mutually exclusive with the on-sale pricing. GLP carried under coded names: GLP-3 RT=Retatrutide, GLP-2 TZ=Tirzepatide, GLP-1 SM=Semaglutide.
+- **sale posture:** **Product-level `sale_price`** on 25 of 59 products (~6–17% off; no sitewide auto-coupon). Base below = `regular_price` (true base). The code **STACKS** — PROFPEPTIDE applies on top of the sale pricing at checkout (NOT mutually exclusive). GLP carried under coded names: GLP-3 RT=Retatrutide, GLP-2 TZ=Tirzepatide, GLP-1 SM=Semaglutide.
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Stock |
