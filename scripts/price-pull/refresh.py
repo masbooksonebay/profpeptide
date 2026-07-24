@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from pricepull import adapters, build, registry  # noqa: E402
+from pricepull import adapters, build, registry, detect  # noqa: E402
 
 
 def pulled_date():
@@ -61,7 +61,12 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--list", action="store_true")
+    ap.add_argument("--detect", metavar="DOMAIN", help="probe a domain and report which adapter applies")
     args = ap.parse_args()
+
+    if args.detect:
+        print(detect.format_report(args.detect, detect.detect(args.detect)))
+        return
 
     meta = registry.load_registry_meta()
 

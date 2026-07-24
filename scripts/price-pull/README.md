@@ -10,8 +10,10 @@ detection, scope filter). Standard-library Python only — no dependencies.
 
 ```
 scripts/price-pull/
-  refresh.py              CLI entry point (fetch → build → stamp date → write)
+  refresh.py              CLI entry point (detect / fetch → build → stamp date → write)
+  add-vendor.md           runbook: onboard a new vendor step-by-step
   pricepull/
+    detect.py             platform auto-detection (woo / shopify / bigcommerce / next.js)
     normalize.py          $/mg (mcg→mg, strip commas), blends (KLOW>GLOW>Wolverine), scope filter, display names
     decoders.py           compound matcher + per-vendor coded-GLP decoders + the VERIFICATION STANDARD
     variation_models.py   the five variation shapes, auto-detected per product
@@ -25,6 +27,7 @@ scripts/price-pull/
 ```bash
 cd scripts/price-pull
 python3 refresh.py --list                        # registry + blocked vendors
+python3 refresh.py --detect vendordomain.com     # which adapter applies to a new domain?
 python3 refresh.py --vendor swiss-chems --dry-run   # print the section, write nothing
 python3 refresh.py --vendor swiss-chems --write      # replace that section in the doc
 python3 refresh.py --all --write                     # every pullable vendor
@@ -35,14 +38,15 @@ before committing — prices drift, and a sale toggling on/off changes sale post
 
 ## Add a vendor
 
-1. Add its code/discount/url to `src/data/vendors.ts` (the suite reads them from there — **never hardcode a discount**, master-doc rule 5).
-2. Add an entry to `registry.VENDORS`:
-   - `adapter`: `woo` (WooCommerce Store API), `purity_api`, or `nextjs` (per-product-page JSON-LD/RSC).
-   - `variation_model`: documentation of the shape it uses (the detector auto-handles all five; see below).
-   - `coded_decoder`: `True` if you add a per-vendor decoder in `decoders.py`.
-   - `sale_posture`, `notes`.
-3. If it relabels GLP-1s with codes, add a decoder in `decoders.py` — but only after **verifying identity** (see below).
-4. `python3 refresh.py --vendor <slug> --dry-run`, eyeball it, then `--write`.
+Follow **[add-vendor.md](add-vendor.md)** — the full step-by-step runbook (detect platform →
+identify variation model → check & verify coded GLP names → registry entry → sale posture →
+dry-run → write). The short version:
+
+1. `python3 refresh.py --detect DOMAIN` to pick the adapter.
+2. Add code/discount/url to `src/data/vendors.ts` (**never hardcode a discount** — rule 5).
+3. Add a `registry.VENDORS` entry (adapter, variation_model, coded_decoder, sale_posture, notes).
+4. If it relabels GLP-1s, add a `decoders.py` decoder — **only after verifying identity** (COA/MW/formula/CAS/spec; else `[UNVERIFIED]`).
+5. `--dry-run`, eyeball, then `--write`.
 
 ## Variation models (auto-detected, not assumed)
 
@@ -57,6 +61,19 @@ before committing — prices drift, and a sale toggling on/off changes sale post
 `variation_models.extract_rows` detects all five from the attribute names/values plus
 the product name, and always drops kit/bulk variations in favor of the single-vial
 price so `$/mg` stays comparable across vendors.
+
+## Platforms encountered (and one that hasn't)
+
+Across **27 vendors** to date: WooCommerce (the majority), Next.js custom
+(`/api/products` — Purity; per-product JSON-LD/RSC — Midwest, Science Based),
+BigCommerce (Limitless — login-gated B2B, blocked), and WooCommerce-behind-Cloudflare
+(Aero — CINC read-only).
+
+**Shopify has not appeared yet.** If `--detect` reports Shopify, `/products.json?limit=1`
+is the likely endpoint (returns `{"products":[{variants:[{title, price, available}]}]}`)
+— but there is **no `shopify` adapter yet**; it's a new one to write in `adapters.py`
+(Shopify variant `title` carries the size, `price` is a string in major units, and
+`available` is the stock flag). `detect.py` already recognizes and flags it.
 
 ## Shared rules (applied to every vendor)
 
