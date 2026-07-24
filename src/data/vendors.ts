@@ -251,6 +251,14 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://synthesispeptides.io/?synthaff=105",
     detailPage: "/coupons/synthesis-peptides",
+    // HIDDEN 2026-07-24: affiliate program broken (portal redirects to homepage,
+    // mixed-up accounts) and they'd be the lone non-affiliate vendor on the price
+    // surface. Reuses the `retired` display-hide (off /vendors, /coupons hub, the
+    // count, and the sitemap; coupon page redirects). NOT a permanent retirement —
+    // data + price-suite re-onboard are preserved. Re-enable with the non-affiliate
+    // vendor set by removing this one flag (and the redirect in the coupon page.tsx
+    // + next.config.js). See also src/app/vendor-testing-index (row commented out).
+    retired: true,
   },
   "vital-core-research": {
     name: "Vital Core Research",

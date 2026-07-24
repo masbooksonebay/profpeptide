@@ -1,5 +1,6 @@
 "use client";
 
+import { redirect } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
 import { RegionPill } from "@/components/RegionPill";
@@ -46,6 +47,11 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function SynthesisPeptidesCouponPage() {
+  // HIDDEN 2026-07-24: affiliate broken — redirect to the coupons hub (belt-and-
+  // suspenders with the next.config.js redirect + vendors.ts `retired` flag). The
+  // full page is kept on disk below; re-enable by removing this redirect and the
+  // `retired` flag when the non-affiliate vendor set launches.
+  redirect("/coupons");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">

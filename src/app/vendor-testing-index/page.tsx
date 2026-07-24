@@ -42,7 +42,8 @@ const rows: Row[] = [
   { slug: "purity-peptides", name: "Purity Peptides", thirdParty: "Yes — accredited (N. America)", publishedCoa: "Yes", batchCoa: "Yes", methods: "HPLC, mass spec", contaminants: "Pending", purity: "99%+", coaUrl: "Pending", coldChain: "Pending" },
   { slug: "royal-peptides", name: "Royal Peptides", thirdParty: "Yes — cGMP/ISO labs", publishedCoa: "Yes", batchCoa: "Yes", methods: "Pending", contaminants: "Pending", purity: "99%+", coaUrl: "Pending", coldChain: "Pending" },
   { slug: "spartan-peptides", name: "Spartan Peptides", thirdParty: "Yes — independent", publishedCoa: "Pending", batchCoa: "Pending", methods: "HPLC, mass spec", contaminants: "Pending", purity: "≥98%", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "synthesis-peptides", name: "Synthesis Peptides", thirdParty: "Yes", publishedCoa: "On request", batchCoa: "Yes", methods: "HPLC", contaminants: "Pending", purity: "≥99%", coaUrl: "Pending", coldChain: "Pending" },
+  // HIDDEN 2026-07-24: affiliate broken — row preserved; re-add when Synthesis returns with the non-affiliate vendor set (see vendors.ts `retired`).
+  // { slug: "synthesis-peptides", name: "Synthesis Peptides", thirdParty: "Yes", publishedCoa: "On request", batchCoa: "Yes", methods: "HPLC", contaminants: "Pending", purity: "≥99%", coaUrl: "Pending", coldChain: "Pending" },
   { slug: "vital-core-research", name: "Vital Core Research", thirdParty: "Pending", publishedCoa: "Pending", batchCoa: "Pending", methods: "Pending", contaminants: "Pending", purity: "Pending", coaUrl: "Pending", coldChain: "Pending" },
 ];
 
