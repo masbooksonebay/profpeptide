@@ -134,19 +134,42 @@ def _sitemap_products(domain, sitemap="sitemap.xml", pattern=r'/products/[a-z0-9
     return sorted({u for u in locs if re.search(pattern, u)})
 
 
-def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$'):
-    """Per-product-page extraction. Handles BOTH the RSC variants[] array (multi-size)
-    and the JSON-LD Offer block (single-price). Base = current `price`, not compare_at."""
+def _catalog_products(domain):
+    """Discover /products/<slug> URLs on a Next.js/Medusa storefront that ships no XML
+    sitemap (Synthesis .co): read the catalog category slugs off the homepage flight
+    data, then harvest product slugs ("slug":"x","name":"y") from each /catalog/<cat>
+    page's flight data. Category pages that 404 are skipped."""
+    home = http_get(f"https://{domain}/")
+    cats = set(re.findall(r'/catalog/([a-z0-9-]+)', home)) | set(re.findall(r'"researchArea":"([a-z0-9-]+)"', home))
+    slugs = set()
+    for c in sorted(cats):
+        try:
+            blob = _flight_blob(http_get(f"https://{domain}/catalog/{c}"))
+        except Exception:
+            continue
+        slugs |= set(re.findall(r'"slug":"([a-zA-Z0-9._-]+)","name":"', blob))
+    return sorted(f"https://{domain}/products/{s}" for s in slugs)
+
+
+def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', discover="sitemap"):
+    """Per-product-page extraction. Handles the RSC variants[] array (multi-size), the
+    Science Based size/price/compareAt shape, the Medusa label/inStock/price shape, and
+    the JSON-LD Offer block (single-price). Base = current `price`, not compare_at.
+    discover: 'sitemap' (default) reads a sitemap; 'catalog' harvests from catalog pages."""
+    urls = _catalog_products(domain) if discover == "catalog" else _sitemap_products(domain, sitemap, url_pattern)
     out = []
-    for url in _sitemap_products(domain, sitemap, url_pattern):
+    for url in urls:
         try:
             html = http_get(url)
         except Exception:
             continue
         blob = _flight_blob(html)
-        # product display name (JSON-LD Product name, else <title>)
-        nm = re.search(r'"@type":"Product","name":"([^"]+)"', html) or re.search(r'"@type":"Product"[^}]*?"name":"([^"]+)"', blob)
-        name = nm.group(1) if nm else (re.search(r'<title>([^<|]+)', html).group(1).strip() if re.search(r'<title>', html) else url.rsplit('/', 1)[-1])
+        slug = url.rstrip('/').rsplit('/', 1)[-1]
+        # product display name (JSON-LD Product name, else flight product object, else <title>)
+        nm = (re.search(r'"@type":"Product","name":"([^"]+)"', html)
+              or re.search(r'"@type":"Product"[^}]*?"name":"([^"]+)"', blob)
+              or re.search(rf'"slug":"{re.escape(slug)}","name":"([^"]+)"', blob))
+        name = nm.group(1) if nm else (re.search(r'<title>([^<|]+)', html).group(1).strip() if re.search(r'<title>', html) else slug)
         desc = re.search(r'"description":"([^"]{0,400})"', blob)
         desc = desc.group(1) if desc else ''
 
@@ -159,6 +182,13 @@ def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$'):
             variants = re.findall(
                 r'"size":"([^"]+)","price":([0-9.]+),"compareAt":(?:null|[0-9.]+|"[^"]*"),"stockQty":([0-9]+)',
                 blob)
+        # shape 1c: Medusa catalog variant (Synthesis .co): label=size, inStock bool,
+        # price "$$NN.NN". Single-size products expose a one-entry variants[] too.
+        if not variants:
+            v3 = re.findall(
+                r'"label":"([^"]+)","inStock":(true|false),(?:"image":"[^"]*",)?"price":"\$*([0-9]+(?:\.[0-9]+)?)"',
+                blob)
+            variants = [(sz, pr, '1' if ins == 'true' else '0') for sz, ins, pr in v3]
         if variants:
             vs = [{'attrs': [('Size', sz)], 'regular': float(pr), 'in_stock': int(sq) > 0}
                   for sz, pr, sq in variants]

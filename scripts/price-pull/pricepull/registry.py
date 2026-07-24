@@ -88,9 +88,12 @@ VENDORS = {
         variation_model="vial-kit-axis", coded_decoder=False, sale_posture="Product sale 46/145; code stacks.",
         notes="Vial vs KIT(10 vials) axis — mg from NAME, single-vial base. GLPs named plainly."),
     # ---- batch 3 ----
-    "synthesis-peptides": dict(name="Synthesis Peptides", domain="synthesispeptides.io", adapter="woo",
-        variation_model="dosage", coded_decoder=True, sale_posture="Product sale 1/42; code stacks.",
-        notes="⚠️ GLP-1S/2T/3R codes UNVERIFIED (no COA/MW)."),
+    "synthesis-peptides": dict(name="Synthesis Peptides", domain="synthesispeptides.co", adapter="nextjs",
+        discover="catalog", variation_model="dosage", coded_decoder=True,
+        sale_posture="No product-level sale (single price per variant).",
+        notes="Migrated .io->.co: Next.js/Medusa storefront, no woo API and no XML sitemap. "
+              "Products discovered via /catalog/<area> flight data; variants are label/inStock/price ($$). "
+              "GLP-1S/2T/3R VERIFIED by product-page spec (CAS + MW/formula + Lilly dev code) -> Sema/Tirz/Reta."),
     "vital-core-research": dict(name="Vital Core Research", domain="vitalcoreresearch.com", adapter="woo",
         variation_model="dosage", coded_decoder=True, sale_posture="No sale.",
         notes="⚠️ GLP-1/2/3 UNVERIFIED (COA labels only the vendor code, HPLC purity, no MW/name)."),

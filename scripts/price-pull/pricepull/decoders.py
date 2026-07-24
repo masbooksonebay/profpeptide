@@ -170,10 +170,16 @@ def _purerawz(n):
     if re.match(r'GLP-1(\.[0-9])?$', n, re.I): return (n.upper() + ' [coded, UNVERIFIED]', None, 'single_bk')
 
 
-@_decoder('synthesis-peptides')  # UNVERIFIED: no COA; page name-mention only
+@_decoder('synthesis-peptides')  # verified: .co (synthesispeptides.co) product-page spec table.
+# GLP-3R: CAS 2381089-83-2 + synonym LY3437943 + "tri-agonist GLP-1/GIP/Glucagon" -> Retatrutide
+#         (vendor MW 5058.5 is anomalous vs Reta ~4731, but CAS + Lilly code are definitive).
+# GLP-2T: CAS 2023788-19-2 + synonym LY3298176 + MW 4813.5 (exact) + 39-res dual GIP/GLP-1 -> Tirzepatide.
+# GLP-1S: CAS 910463-68-2 + MW 4113.6 / C187H291N45O59 (both exact) + Aib+C18 diacid -> Semaglutide.
+# Evidence is the vendor's structured spec (CAS/MW/formula), not a 3rd-party COA (COA page is JS-gated).
 def _synthesis(n):
-    m = re.match(r'(GLP-[123][SRT])', n, re.I)
-    if m: return (m.group(1).upper() + ' [coded, UNVERIFIED]', None, 'single_bk')
+    if re.match(r'GLP-3R', n, re.I): return (_c('Retatrutide', 'GLP-3R'), 'retatrutide', 'single')
+    if re.match(r'GLP-2T', n, re.I): return (_c('Tirzepatide', 'GLP-2T'), 'tirzepatide', 'single')
+    if re.match(r'GLP-1S', n, re.I): return (_c('Semaglutide', 'GLP-1S'), 'semaglutide', 'single')
 
 
 @_decoder('vital-core-research')  # UNVERIFIED: COAs label only the vendor code 'GLP-3RT' (HPLC purity, no MW/name)
