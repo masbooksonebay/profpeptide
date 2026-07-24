@@ -50,7 +50,8 @@ ALIAS = {
     'mots c': 'mots-c', 'ss 31': 'ss-31', 'igf 1 lr3': 'igf-1-lr3', 'igf 1 des': 'igf-1-des',
     'igf 1': 'igf-1-lr3', 'aod 9604': 'aod-9604', 'mk 677': 'mk-677', 'ibutamoren': 'mk-677',
     'ghrp 2': 'ghrp-2', 'ghrp 6': 'ghrp-6', 'thymosin alpha 1': 'thymosin-alpha-1',
-    'tesamorelin': 'tesamorelin', 'nad': 'nad-plus', 'kisspeptin': 'kisspeptin',
+    'tesamorelin': 'tesamorelin', 'tesamorlin': 'tesamorelin',  # amino-club spells it "Tesamorlin"
+    'nad': 'nad-plus', 'kisspeptin': 'kisspeptin',
     'follistatin 344': 'follistatin', 'follistatin': 'follistatin', 'hexarelin': 'hexarelin',
     'sermorelin': 'sermorelin', 'ipamorelin': 'ipamorelin', 'oxytocin': 'oxytocin', 'vip': 'vip',
     'cagrilintide': 'cagrilintide', 'kpv': 'kpv', 'dsip': 'dsip', 'pinealon': 'pinealon',
@@ -125,6 +126,12 @@ def _ascension(n):
         return (_c(b, n.upper()), s, 'single')
     if re.match(r'FOX0?4-DRI', n, re.I): return ('FOXO4-DRI [backlog]', 'foxo4-dri', 'single_bk')
     if re.match(r'HCG', n, re.I): return ('EXCLUDE', None, None)
+
+
+@_decoder('amino-club')  # verified: product-page spec — synonym LY3437943 + "39-aa triple agonist
+# GIP/GLP-1/glucagon" (uniquely Retatrutide) + CAS 2381089-83-2 (same LY3437943 as synthesis GLP-3R).
+def _amino_club(n):
+    if re.match(r'GLP-3 ?\(RT\)', n, re.I): return (_c('Retatrutide', 'GLP-3 (RT)'), 'retatrutide', 'single')
 
 
 @_decoder('ez-peptides')  # verified: Janoshik identity COAs, batch EZP-1P/2P/3P; EZP-CG desc 'Cagrilintide'

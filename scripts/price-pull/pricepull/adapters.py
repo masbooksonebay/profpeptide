@@ -28,8 +28,11 @@ class Blocked(Exception):
     pass
 
 
-def http_get(url, timeout=25, retries=2):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+def http_get(url, timeout=25, retries=2, cookie=None):
+    hdrs = {"User-Agent": UA, "Accept": "*/*"}
+    if cookie:
+        hdrs["Cookie"] = cookie          # e.g. a consent-gate flag ("amino_age_verified=1")
+    req = urllib.request.Request(url, headers=hdrs)
     last = None
     for _ in range(retries + 1):
         try:
@@ -128,8 +131,8 @@ def purity_api(domain, path="/api/products"):
 
 # ----------------------------------------------------------------- Next.js
 
-def _sitemap_products(domain, sitemap="sitemap.xml", pattern=r'/products/[a-z0-9-]+$'):
-    xml = http_get(f"https://{domain}/{sitemap}")
+def _sitemap_products(domain, sitemap="sitemap.xml", pattern=r'/products/[a-z0-9-]+$', cookie=None):
+    xml = http_get(f"https://{domain}/{sitemap}", cookie=cookie)
     locs = re.findall(r'<loc>([^<]+)</loc>', xml)
     return sorted({u for u in locs if re.search(pattern, u)})
 
@@ -151,16 +154,18 @@ def _catalog_products(domain):
     return sorted(f"https://{domain}/products/{s}" for s in slugs)
 
 
-def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', discover="sitemap"):
+def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', discover="sitemap", cookie=None):
     """Per-product-page extraction. Handles the RSC variants[] array (multi-size), the
-    Science Based size/price/compareAt shape, the Medusa label/inStock/price shape, and
-    the JSON-LD Offer block (single-price). Base = current `price`, not compare_at.
-    discover: 'sitemap' (default) reads a sitemap; 'catalog' harvests from catalog pages."""
-    urls = _catalog_products(domain) if discover == "catalog" else _sitemap_products(domain, sitemap, url_pattern)
+    Science Based size/price/compareAt shape, the Medusa label/inStock/price shape, the
+    Amino Club Medusa variants[]/calculated_price shape, and the JSON-LD Offer block
+    (single-price). Base = current `price`, not compare_at.
+    discover: 'sitemap' (default) reads a sitemap; 'catalog' harvests from catalog pages.
+    cookie: sent on every request — used to clear a consent gate (amino_age_verified=1)."""
+    urls = _catalog_products(domain) if discover == "catalog" else _sitemap_products(domain, sitemap, url_pattern, cookie=cookie)
     out = []
     for url in urls:
         try:
-            html = http_get(url)
+            html = http_get(url, cookie=cookie)
         except Exception:
             continue
         blob = _flight_blob(html)
@@ -189,6 +194,24 @@ def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', 
                 r'"label":"([^"]+)","inStock":(true|false),(?:"image":"[^"]*",)?"price":"\$*([0-9]+(?:\.[0-9]+)?)"',
                 blob)
             variants = [(sz, pr, '1' if ins == 'true' else '0') for sz, ins, pr in v3]
+        # shape 1d: full Medusa product (Amino Club, behind a consent gate) — the main
+        # product's variants[] each nest a calculated_price. Base = original_amount (a
+        # sitewide COUPON, not a price-list markdown, is the only discount so it isn't in
+        # the product data). Scope to the MAIN product (handle == url slug) so the page's
+        # recommended-products carousel doesn't leak its variants into this product.
+        if not variants:
+            handles = [(m.start(), m.group(1)) for m in re.finditer(r'"handle":"([^"]+)"', blob)]
+            mo = next((o for o, h in handles if h == slug), handles[0][0] if handles else None)
+            vstart = next((m.start() for m in re.finditer(r'"variants":\[', blob)
+                           if mo is not None and m.start() > mo), None)
+            if vstart is not None:
+                vend = min([o for o, _ in handles if o > vstart] or [len(blob)])
+                for c in re.split(r'(?="id":"variant_)', blob[vstart:vend]):
+                    t = re.match(r'"id":"variant_[^"]+","title":"([^"]+)"', c)
+                    orig = re.search(r'"original_amount":([0-9.]+)', c)
+                    if t and orig:
+                        oos = re.search(r'"out_of_stock":(true|false)', c)
+                        variants.append((t.group(1), orig.group(1), '0' if (oos and oos.group(1) == 'true') else '1'))
         if variants:
             vs = [{'attrs': [('Size', sz)], 'regular': float(pr), 'in_stock': int(sq) > 0}
                   for sz, pr, sq in variants]

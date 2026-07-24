@@ -41,6 +41,8 @@ def build_vendor(slug, cfg, meta):
             opts["url_pattern"] = cfg["url_pattern"]
         if cfg.get("discover"):
             opts["discover"] = cfg["discover"]
+        if cfg.get("cookie"):
+            opts["cookie"] = cfg["cookie"]
     products = adapters.fetch(cfg["adapter"], cfg["domain"], **opts)
     m = {"name": cfg["name"], "code": meta.get("code") or "?", "discount": meta.get("discount") or "?",
          "url": re.sub(r"^https?://", "", meta.get("url") or cfg["domain"]).split("/")[0],

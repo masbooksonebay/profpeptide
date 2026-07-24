@@ -21,17 +21,19 @@ DOC = REPO / "docs" / "PP_PRICE_DATA_MASTER_v1.md"
 # slug -> {name, domain, adapter, variation_model, coded_decoder, sitemap?, sale_posture, notes}
 VENDORS = {
     # ---- pilot ----
-    "amino-club": dict(name="Amino Club", domain="www.aminoclub.com", adapter="cinc",
-        variation_model="dosage", coded_decoder=False,
-        sale_posture="No sitewide sale; code stacks.",
-        notes="Seed vendor (hand-built section). MIGRATED off WooCommerce -> Next.js/Medusa on "
-              "Vercel: /wp-json/* now returns the SPA app-shell (200 HTML), so the woo adapter can't "
-              "pull it. Per-size variant prices render BROWSER-SIDE (client Medusa fetch); the server "
-              "HTML/flight carry no price, and no Medusa backend URL/publishable key is exposed in the "
-              "bundle. So there is no server-reachable per-size path -> cinc (manual/browser pull, like "
-              "aero). Manual-pull aids: /llms.txt (names + aliases + CAS + 'From $X' min price per "
-              "product) and sitemap.xml (33 /us/products/<slug>). Coded GLP: 'GLP-3 (RT)' = Retatrutide "
-              "(llms.txt synonym LY3437943; verify vs COA at /us/coa on the manual pull)."),
+    "amino-club": dict(name="Amino Club", domain="www.aminoclub.com", adapter="nextjs",
+        discover="sitemap", sitemap="sitemap.xml", url_pattern=r"/us/products/[^/]+$",
+        cookie="amino_age_verified=1", variation_model="dosage", coded_decoder=True,
+        sale_posture="⚠️ Sitewide CART-LEVEL coupon (e.g. ENJOY30, 30% off) — invisible in product data; "
+                     "base=regular_price (original_amount). Re-check the live coupon each refresh.",
+        notes="Seed vendor, MIGRATED off WooCommerce -> Next.js/Medusa on Vercel (www.aminoclub.com). "
+              "Products behind a server-enforced /age-verify researcher-consent gate; the pull sends the "
+              "authorized accept flag as a cookie (amino_age_verified=1) so a scripted urllib request "
+              "reaches product content (Mark-authorized, every-pull). Per-size prices are server-rendered "
+              "in the RSC flight (adapter shape 1d: main-product variants[] + nested calculated_price, "
+              "scoped by handle==slug to drop the recommended-products carousel). GLP-3 (RT)=Retatrutide "
+              "(LY3437943 + 39-aa triple agonist GIP/GLP-1/glucagon; CAS 2381089-83-2). /us/coa is JS-gated "
+              "(no per-product COA PDF)."),
     "alpha-peptides": dict(name="Alpha Peptides", domain="alpha-peptides.com", adapter="woo",
         variation_model="dosage", coded_decoder=True,
         sale_posture="Product-level sale_price on ~25/59; code STACKS.",
