@@ -18,6 +18,7 @@ import json
 import re
 import time
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/140.0 Safari/537.36")
@@ -71,16 +72,30 @@ def woo(domain, per_page=100, max_pages=3):
         if len(page) < per_page:
             break
 
+    # Fetch every variation once, concurrently. Serial per-variation GETs made large
+    # catalogs (behemoth/purerawz) stall for minutes — a single hung request could burn
+    # its full timeout*retries before the next even started. Threading bounds wall-clock
+    # to the slowest single request; results are keyed by id so output is order-identical
+    # to the serial path (same URLs, same per-request timeout/retries).
+    def _fetch_var(vid):
+        try:
+            return vid, json.loads(http_get(f"{base}/products/{vid}"))
+        except Exception:
+            return vid, None
+
+    vids = [v['id'] for p in products for v in p.get('variations', [])]
+    vfmap = {}
+    if vids:
+        with ThreadPoolExecutor(max_workers=12) as ex:
+            for vid, vf in ex.map(_fetch_var, vids):
+                vfmap[vid] = vf
+
     out = []
     for p in products:
         pr = p.get('prices', {})
         variations = []
         for v in p.get('variations', []):
-            vid = v['id']
-            try:
-                vf = json.loads(http_get(f"{base}/products/{vid}"))
-            except Exception:
-                vf = None
+            vf = vfmap.get(v['id'])
             attrs = [(a.get('name', ''), a.get('value', '')) for a in v.get('attributes', [])]
             if vf:
                 variations.append({'attrs': attrs, 'regular': _cents(vf.get('prices', {}), 'regular_price'),
@@ -139,6 +154,11 @@ def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$'):
         variants = re.findall(
             r'"name":"([^"]+)","sku":"[^"]*","price":([0-9.]+),"compare_at_price":(?:[0-9.]*|null),"stock_quantity":([0-9]+)',
             blob)
+        # shape 1b: alt variant object (Science Based): size/price/compareAt/stockQty, no sku field
+        if not variants:
+            variants = re.findall(
+                r'"size":"([^"]+)","price":([0-9.]+),"compareAt":(?:null|[0-9.]+|"[^"]*"),"stockQty":([0-9]+)',
+                blob)
         if variants:
             vs = [{'attrs': [('Size', sz)], 'regular': float(pr), 'in_stock': int(sq) > 0}
                   for sz, pr, sq in variants]

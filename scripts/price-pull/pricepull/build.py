@@ -13,7 +13,7 @@ def _row(cells):
     return "| " + " | ".join(str(c) for c in cells) + " |"
 
 
-def classify(vendor, product):
+def classify(vendor, product, ten_vial_kit=False):
     """Yield classified rows for one product:
        ('single'|'blend'|'spray', display, size_label, base, in_stock, ratio, components)
     or ('exclude', reason)."""
@@ -43,7 +43,7 @@ def classify(vendor, product):
         else:
             kind, disp = ('single_bk' if backlog else 'single'), N.display_of(slug, backlog)
 
-    for size_label, base, ins, form in vm.extract_rows(product):
+    for size_label, base, ins, form in vm.extract_rows(product, ten_vial_kit=ten_vial_kit):
         if base is None or base <= 0:      # drop $0 / hidden-price rows
             continue
         if form == 'tablet':               # oral forms out of scope
@@ -65,11 +65,11 @@ def classify(vendor, product):
             yield ('single', disp, N.size_label(size_label), base, ins, None, None)
 
 
-def build_section(vendor, meta, products, pulled_date, extra_posture=""):
+def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_vial_kit=False):
     """meta: {name, code, discount, url}. Returns the markdown section text."""
     singles, blends, sprays, excl = {}, [], [], set()
     for p in products:
-        for r in classify(vendor, p):
+        for r in classify(vendor, p, ten_vial_kit=ten_vial_kit):
             if r[0] == 'exclude':
                 excl.add(r[1]); continue
             kind, disp, size, base, ins, ratio, comps = r

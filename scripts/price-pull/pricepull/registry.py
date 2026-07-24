@@ -29,9 +29,11 @@ VENDORS = {
         sale_posture="Product-level sale_price on ~25/59; code STACKS.",
         notes="GLP coded GLP-1 SM/GLP-2 TZ/GLP-3 RT — COA-verified."),
     "science-based-peptides": dict(name="Science Based Peptides", domain="sciencebasedpeptides.com",
-        adapter="nextjs", sitemap="shop", variation_model="dosage", coded_decoder=True,
+        adapter="nextjs", sitemap="sitemap.xml", url_pattern=r"/products/[^/]+$",
+        variation_model="dosage", coded_decoder=True,
         sale_posture="No sitewide sale (compareAt null).",
-        notes="Next.js custom; per-page variants. GLP 3-(RT)=Retatrutide COA-verified."),
+        notes="Next.js custom; products under /products/ (incl. uppercase/parens slugs like GLP3-(RT)). "
+              "Variant objects use size/price/compareAt/stockQty. GLP 3-(RT)=Retatrutide COA-verified."),
     "biolongevity-labs": dict(name="Biolongevity Labs", domain="biolongevitylabs.com", adapter="woo",
         variation_model="dosage", coded_decoder=False,
         sale_posture="⚠️ Sitewide CART-LEVEL auto-coupon 'longevityvip' (50% off), EXCLUSIVE with the code.",

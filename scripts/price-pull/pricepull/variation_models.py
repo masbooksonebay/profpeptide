@@ -27,10 +27,11 @@ from .normalize import mg_value
 
 
 def parse_size(s):
-    """mg size label from a string, or None."""
+    """mg size label from a string, or None. The unit may be hyphen-joined to the
+    number (Alpha's dosage attribute is '10-mg'); [\\s-]* absorbs that separator."""
     if not s:
         return None
-    m = re.search(r'(\d+(?:\.\d+)?)\s*(mcg|mg)\b', str(s).lower().replace(',', ''))
+    m = re.search(r'(\d+(?:\.\d+)?)[\s-]*(mcg|mg)\b', str(s).lower().replace(',', ''))
     return (m.group(1) + m.group(2)) if m else None
 
 
@@ -51,10 +52,22 @@ def is_kit(values):
 
 
 _KIT10 = re.compile(r'(\d+(?:\.\d+)?)\s*mg\s*x\s*10\s*vials', re.I)
+# Royal also sells 10-vial kits named "...Kit" (not "...x10vials"). "Kit" alone is NOT
+# proof of 10 vials — some "Kit" products describe a single vial. So gate the /10 on an
+# EXPLICIT ten-vial token in the name or description (evidence, never the "Kit" word):
+#   Pinealon desc "( 10 Vials)", Dihexa "10 Vial Kit- 100mg total" -> /10 (verified);
+#   Adamax/IGF-1 LR3/Thymalin/Vesugen say only "each 10mg vial" -> left at full price.
+_TEN_VIAL = re.compile(r'x\s*10\s*vials?|\b10\s*[-\s]?vials?\b|\(\s*10\s*vials?\s*\)', re.I)
 
 
-def extract_rows(product):
-    """Return [(size_label, base_price, in_stock, form)] for one normalized product."""
+def extract_rows(product, ten_vial_kit=False):
+    """Return [(size_label, base_price, in_stock, form)] for one normalized product.
+
+    `ten_vial_kit` (from the vendor's registry variation_model) enables the "...Kit"
+    per-vial division below. It is vendor-scoped on purpose: a global "10 vials" match
+    also fires on EZ Peptides' "(10 vials/Kit)" listings, where the doc reports the
+    single-vial price — so the broad rule stays limited to the ten-vial-kit vendor (Royal).
+    """
     name = product['name']
     variations = product.get('variations') or []
 
@@ -64,7 +77,13 @@ def extract_rows(product):
         m = _KIT10.search(name)
         if m and product.get('regular') is not None:
             return [(m.group(1) + 'mg', round(product['regular'] / 10, 2), product.get('in_stock'), 'vial')]
-        return [(parse_size(name) or name, product.get('regular'), product.get('in_stock'), 'vial')]
+        # "...Kit" priced as a 10-vial kit, but ONLY for the ten-vial-kit vendor AND only
+        # when name/description proves 10 vials (Pinealon "(10 Vials)", Dihexa "10 Vial Kit").
+        size = parse_size(name)
+        if ten_vial_kit and size and product.get('regular') is not None and \
+                _TEN_VIAL.search(name + ' ' + (product.get('description') or '')):
+            return [(size, round(product['regular'] / 10, 2), product.get('in_stock'), 'vial')]
+        return [(size or name, product.get('regular'), product.get('in_stock'), 'vial')]
 
     # --- variable products ---
     rows = []

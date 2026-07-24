@@ -31,13 +31,20 @@ def pulled_date():
 
 def build_vendor(slug, cfg, meta):
     opts = {}
-    if cfg.get("sitemap") and cfg["adapter"] == "nextjs":
-        opts["sitemap"] = "sitemap.xml"
+    if cfg["adapter"] == "nextjs":
+        # Pass the registry's sitemap path + product-URL pattern through to the adapter.
+        # (Previously this hardcoded "sitemap.xml" and ignored the registry value, which
+        # left Science Based — sitemap at /sitemap.xml, products under /products/ — empty.)
+        if cfg.get("sitemap"):
+            opts["sitemap"] = cfg["sitemap"]
+        if cfg.get("url_pattern"):
+            opts["url_pattern"] = cfg["url_pattern"]
     products = adapters.fetch(cfg["adapter"], cfg["domain"], **opts)
     m = {"name": cfg["name"], "code": meta.get("code") or "?", "discount": meta.get("discount") or "?",
          "url": re.sub(r"^https?://", "", meta.get("url") or cfg["domain"]).split("/")[0],
          "sale_posture": cfg.get("sale_posture", "")}
-    return build.build_section(slug, m, products, pulled_date())
+    return build.build_section(slug, m, products, pulled_date(),
+                               ten_vial_kit=cfg.get("variation_model") == "ten-vial-kit")
 
 
 def replace_section(doc_text, slug, name, section_md):
