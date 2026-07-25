@@ -202,8 +202,13 @@ def _peptide_partners(n):
         return (cn, cn.lower(), 'single')
 
 
-@_decoder('biocollex')
+@_decoder('biocollex')  # GLPs verified-by-SPEC on BioCollex's own product pages: GLP-3 RT desc
+# "triple agonist targeting GLP-1, GIP, and glucagon receptors" -> uniquely Retatrutide; GLP-2 TZ
+# desc "dual incretin receptor agonist" -> Tirzepatide (sole marketed dual GIP/GLP-1). No CAS/MW/
+# COA published machine-readably (COA referenced, not linkable) -> mechanism-tier, not COA-tier.
 def _biocollex(n):
+    if re.match(r'GLP-3 ?RT', n, re.I): return (_c('Retatrutide', 'GLP-3 RT'), 'retatrutide', 'single')
+    if re.match(r'GLP-2 ?TZ', n, re.I): return (_c('Tirzepatide', 'GLP-2 TZ'), 'tirzepatide', 'single')
     if re.match(r'CJC ?/ ?IPA', n, re.I): return ('CJC-1295/Ipamorelin', 'cjc-1295-dac-ipamorelin', 'blend')
 
 
