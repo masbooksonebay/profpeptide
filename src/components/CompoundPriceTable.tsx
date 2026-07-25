@@ -105,7 +105,7 @@ export default function CompoundPriceTable({
   return (
     <div>
       {showToggle && (
-        <div className="flex items-center gap-2 mb-3">
+        <div className="flex items-center gap-2 mb-5">
           <span className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mr-1">Compare by</span>
           <div className="inline-flex rounded-lg border border-[#D9DEE4] dark:border-slate-600 overflow-hidden text-sm">
             <button onClick={() => setLocalUnit("permg")} className={`px-3 py-1 ${unit === "permg" ? "bg-[#3A759F] text-white" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300"}`}>$ / mg</button>
@@ -168,11 +168,13 @@ export default function CompoundPriceTable({
           const secondary = unit === "permg" ? `${fmt(r.effectivePrice)} total` : `${fmt(r.effectivePerMg)} / mg`;
           return (
             <div key={i} className="panel-card p-3 tabular-nums">
-              {/* Price block holds the right edge (shrink-0 + reserved min width) and never
-                  wraps below; the left block (vendor·size·stock·badge) takes the rest and
-                  wraps within it — a badge dropping to a second line is fine. */}
-              <div className="flex items-start justify-between gap-2">
-                <div className="flex-1 min-w-0 flex items-center gap-2 flex-wrap">
+              {/* items-baseline: the vendor name and the headline price share one text
+                  baseline regardless of type size (a box top is not a baseline), with the
+                  secondary figure hanging beneath. Price block still holds the right edge
+                  (shrink-0 + reserved min width) and never wraps below; the left block
+                  (vendor·size·stock·badge) takes the rest and wraps within it. */}
+              <div className="flex items-baseline justify-between gap-2">
+                <div className="flex-1 min-w-0 flex items-baseline gap-2 flex-wrap">
                   {r.couponPage ? (
                     <Link href={r.couponPage} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.vendorName}</Link>
                   ) : (

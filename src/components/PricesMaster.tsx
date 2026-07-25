@@ -9,12 +9,13 @@ function fmt(n: number): string {
   return "$" + n.toFixed(2);
 }
 
-// ONE shared explicit column template applied identically to every card, mirroring the
-// compound-page grid discipline (same gap rhythm, same left-edge). No `auto` — only the
-// compound-name column flexes; vendor-count / from-price / Compare are fixed widths so
-// every card resolves to the same column x. Collapses to a single-column stack below sm.
+// Shared column template for every card. Desktop (≥ sm): the hard-won four-column grid
+// (name · vendor-count · from-price · Compare), fixed widths, only the name column flexes.
+// Mobile (< sm): two columns — name LEFT, from-price RIGHT on one line — with the Compare
+// link spanning a second row beneath, so the card fills the width instead of stacking flush
+// left. Same gap rhythm and left-edge across both.
 const CARD =
-  "panel-card px-4 py-3 grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_6rem_8rem_7.5rem] items-center gap-x-4 gap-y-1 text-left";
+  "panel-card px-4 py-3 grid grid-cols-[minmax(0,1fr)_auto] sm:grid-cols-[minmax(0,1fr)_6rem_8rem_7.5rem] items-center gap-x-4 gap-y-1 text-left";
 
 /**
  * Master compound INDEX (not a table of tables). Grouped by the /peptides library
@@ -97,8 +98,8 @@ export default function PricesMaster() {
                   <span className="hidden sm:block text-xs text-gray-500 dark:text-slate-400 whitespace-nowrap">
                     {c.vendorCount} vendor{c.vendorCount === 1 ? "" : "s"}
                   </span>
-                  {/* from-price */}
-                  <span className="text-sm text-gray-600 dark:text-slate-300 whitespace-nowrap">
+                  {/* from-price — right-aligned beside the name on mobile, left in its column on desktop */}
+                  <span className="text-sm text-gray-600 dark:text-slate-300 whitespace-nowrap justify-self-end sm:justify-self-start">
                     {c.cheapest != null && (
                       <>
                         <span className="text-gray-400 dark:text-slate-500 text-xs">from </span>
@@ -107,8 +108,9 @@ export default function PricesMaster() {
                       </>
                     )}
                   </span>
-                  {/* compare link — a single vendor has nothing to compare, so "View price" */}
-                  <Link href={`/prices/${c.slug}`} className="text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">
+                  {/* compare link — spans the second row on mobile; own column on desktop.
+                      A single vendor has nothing to compare, so "View price". */}
+                  <Link href={`/prices/${c.slug}`} className="col-span-2 sm:col-span-1 justify-self-start text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">
                     {c.vendorCount === 1 ? "View price" : `Compare ${c.vendorCount}`} &rarr;
                   </Link>
                 </div>
