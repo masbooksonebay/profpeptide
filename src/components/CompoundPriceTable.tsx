@@ -65,7 +65,13 @@ export default function CompoundPriceTable({
 
   const priceHeader = unit === "permg" ? "Price ($/mg)" : "Price (total)";
   const priceSub = unit === "permg" ? "total below" : "$/mg below";
-  const GRID = "grid grid-cols-[minmax(6rem,1.3fr)_auto_auto_auto_auto_auto] items-center gap-x-5";
+  // ONE shared, fully explicit column template applied identically to the header and
+  // every data row. All widths are fixed except the flexible Vendor column, so each
+  // independent per-row grid resolves to the SAME column widths — no content-based
+  // (auto) sizing anywhere. justify-items-start + text-left keeps every column (incl.
+  // the numeric ones) left-justified to a single x per column down the whole list.
+  const GRID =
+    "grid grid-cols-[minmax(0,1fr)_5rem_5rem_9rem_8rem_5rem] items-start justify-items-start gap-x-4 text-left";
 
   return (
     <div>
