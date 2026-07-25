@@ -54,14 +54,33 @@ export default function CompoundPriceTable({
   const fig = (r: PriceRow) => (unit === "permg" ? r.effectivePerMg : r.effectivePrice);
   const rows = compoundRows(compoundSlug).slice().sort((a, b) => fig(a) - fig(b));
 
-  const inStock = rows.filter((r) => r.inStock);
-  const bestPerMg = inStock.length
-    ? inStock.reduce((a, b) => (b.effectivePerMg < a.effectivePerMg ? b : a))
-    : null;
-
   if (rows.length === 0) {
     return <p className="text-sm text-gray-500 dark:text-slate-400">No price data yet for this compound.</p>;
   }
+
+  // Badges always track lowest $/mg (mode-independent). Two-badge logic:
+  //   A. cheapest row is OUT      -> it gets "Best $/mg"; cheapest in-stock gets "Best in stock"
+  //   B. cheapest row is IN STOCK -> it alone gets "Best" (no second badge — same row)
+  //   C. every row OUT            -> cheapest gets "Best $/mg" only
+  //   D. only one row             -> no badge
+  const byPerMg = (a: PriceRow, b: PriceRow) => (b.effectivePerMg < a.effectivePerMg ? b : a);
+  const cheapestOverall = rows.reduce(byPerMg);
+  const inStock = rows.filter((r) => r.inStock);
+  const cheapestInStock = inStock.length ? inStock.reduce(byPerMg) : null;
+
+  let bestRow: PriceRow | null = null, bestLabel = "";
+  let secondRow: PriceRow | null = null, secondLabel = "";
+  if (rows.length > 1) {
+    bestRow = cheapestOverall;
+    if (cheapestOverall.inStock) {
+      bestLabel = "Best";                                   // B
+    } else {
+      bestLabel = "Best $/mg";                              // A / C
+      if (cheapestInStock) { secondRow = cheapestInStock; secondLabel = "Best in stock"; }  // A
+    }
+  }
+  const badgeFor = (r: PriceRow) =>
+    r === bestRow ? bestLabel : r === secondRow ? secondLabel : null;
 
   const priceHeader = unit === "permg" ? "Price ($/mg)" : "Price (total)";
   const priceSub = unit === "permg" ? "total below" : "$/mg below";
@@ -107,8 +126,8 @@ export default function CompoundPriceTable({
                 ) : (
                   <span className="text-sm font-semibold text-[#16181B] dark:text-slate-100">{r.vendorName}</span>
                 )}
-                {r === bestPerMg && (
-                  <span className="ml-2 text-[10px] bg-[#3A759F]/10 text-[#3A759F] border border-[#3A759F]/20 px-1.5 py-0.5 rounded-full font-medium align-middle">Best $/mg</span>
+                {badgeFor(r) && (
+                  <span className="ml-2 text-[10px] bg-[#3A759F]/10 text-[#3A759F] border border-[#3A759F]/20 px-1.5 py-0.5 rounded-full font-medium align-middle">{badgeFor(r)}</span>
                 )}
                 {r.entry.listedAs && (
                   <span className="block text-xs text-gray-400 dark:text-slate-500 italic">listed as {r.entry.listedAs}</span>
@@ -147,7 +166,7 @@ export default function CompoundPriceTable({
                   )}
                   <span className="text-xs text-gray-400 dark:text-slate-500">{r.entry.sizeMg} mg</span>
                   <span className={`text-xs ${r.inStock ? "text-green-700" : "text-gray-400 dark:text-slate-500"}`}>{r.inStock ? "In stock" : "Out"}</span>
-                  {r === bestPerMg && <span className="text-[10px] bg-[#3A759F]/10 text-[#3A759F] border border-[#3A759F]/20 px-1.5 py-0.5 rounded-full font-medium">Best $/mg</span>}
+                  {badgeFor(r) && <span className="text-[10px] bg-[#3A759F]/10 text-[#3A759F] border border-[#3A759F]/20 px-1.5 py-0.5 rounded-full font-medium">{badgeFor(r)}</span>}
                 </div>
                 <div className="text-right">
                   <span className="text-sm font-bold text-[#16181B] dark:text-slate-100">{fmt(prom)}</span>
