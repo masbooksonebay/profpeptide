@@ -73,7 +73,7 @@ export default function CompoundPriceTable({
   if (rows.length > 1) {
     bestRow = cheapestOverall;
     if (cheapestOverall.inStock) {
-      bestLabel = "Best";                                   // B
+      bestLabel = "Best $/mg";                              // B — badge measures $/mg only, not "best overall"
     } else {
       bestLabel = "Best $/mg";                              // A / C
       if (cheapestInStock) { secondRow = cheapestInStock; secondLabel = "Best in stock"; }  // A
