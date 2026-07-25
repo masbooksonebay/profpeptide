@@ -109,9 +109,10 @@ export default function PricesMaster() {
                     )}
                   </span>
                   {/* compare link — spans the second row on mobile; own column on desktop.
-                      A single vendor has nothing to compare, so "View price". */}
+                      The number lives in the vendor-count column, so the link is action-only
+                      ("Compare →"); it reads correctly for any count, including 1 vendor. */}
                   <Link href={`/prices/${c.slug}`} className="col-span-2 sm:col-span-1 justify-self-start text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">
-                    {c.vendorCount === 1 ? "View price" : `Compare ${c.vendorCount}`} &rarr;
+                    Compare &rarr;
                   </Link>
                 </div>
               ))}

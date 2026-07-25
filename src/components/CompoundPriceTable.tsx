@@ -121,7 +121,7 @@ export default function CompoundPriceTable({
           <div>Size</div>
           <div>Stock</div>
           <div>{priceHeader}<span className="block font-normal normal-case tracking-normal text-[10px] text-gray-400 dark:text-slate-500">{priceSub}</span></div>
-          <div>Code</div>
+          <div className="justify-self-end">Code</div>
           <div />
         </div>
         {rows.map((r, i) => {
@@ -153,7 +153,10 @@ export default function CompoundPriceTable({
                 {r.onSale && <span className={SALE_TAG}>Sale</span>}
                 <span className="block text-xs text-gray-400 dark:text-slate-500">{fmt(secondary)}</span>
               </div>
-              <div>{r.isAffiliate && r.code ? <CopyCode code={r.code} /> : <span className="text-xs text-gray-300 dark:text-slate-600">—</span>}</div>
+              {/* Right-justify the Code cell within its 8rem track so the chip hugs the gap
+                  next to Shop — the pair reads as one grouped control (consistent gap
+                  regardless of code length). Grid template + track widths unchanged. */}
+              <div className="justify-self-end">{r.isAffiliate && r.code ? <CopyCode code={r.code} /> : <span className="text-xs text-gray-300 dark:text-slate-600">—</span>}</div>
               <div>{r.isAffiliate && r.affiliateUrl ? <a href={r.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm whitespace-nowrap h-9 py-0">Shop</a> : null}</div>
             </div>
           );
