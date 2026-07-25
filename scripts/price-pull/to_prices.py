@@ -37,6 +37,17 @@ DISP2SLUG = {v: k for k, v in N.DISPLAY.items()}
 #                component branded blend, not a single compound.
 NOT_A_COMPOUND = {"slimassist"}
 
+# Real, correctly-identified compounds that are OUTSIDE PP's editorial scope (distinct from
+# NOT_A_COMPOUND, which is for non-distinct branded blends). PP excludes clinical hormones,
+# biologics, fusion proteins, native growth-factor proteins, and oncology compounds — the
+# same basis that removed Gonadorelin/Triptorelin (clinical reproductive hormones) upstream
+# in the scope filter. These are singles that resolve to a valid slug but must not be priced
+# OR listed anywhere on PP (see the editorial-scope rule in scripts/price-pull/README.md).
+#   pnc-27 = p53-derived ANTICANCER research peptide — PP does not cover oncology.
+#   klotho = native a-Klotho PROTEIN (Biolongevity: "research-grade klotho protein") —
+#            native growth-factor/longevity protein, single-vendor only.
+OUT_OF_SCOPE = {"pnc-27", "klotho"}
+
 # Vendor coded GLP names — Mark-confirmed established mappings (not inferences).
 # Glacier's own labels corroborate (GLA-3 RT: CAS 2381089-83-2 / MW 4731.42;
 # GLA-2 TRZ: CAS 2023788-19-2 / MW 4813.45). A "[coded, UNVERIFIED]" single from
@@ -91,7 +102,8 @@ secs = [s for s in re.split(r"\n(?=## VENDOR: )", doc) if s.startswith("## VENDO
 
 rows = []                 # kept single-compound entries
 VENDOR_NAMES = {}         # slug -> doc display name (fallback for vendors absent from vendors.ts)
-excl = {"blends": 0, "sprays": 0, "unverified_single": 0, "nosize_single": 0, "noprice_single": 0, "not_a_compound": 0}
+excl = {"blends": 0, "sprays": 0, "unverified_single": 0, "nosize_single": 0, "noprice_single": 0,
+        "not_a_compound": 0, "editorial_scope": 0}
 doc_single_total = 0
 retired_row_count = 0
 unresolved = []           # STOP condition
@@ -167,6 +179,11 @@ for s in secs:
             if slug in NOT_A_COMPOUND:  # branded blend / vendor SKU, not a distinct compound
                 excl["not_a_compound"] += 1
                 continue
+
+        # real compound but outside PP's editorial scope (oncology / native protein / etc.)
+        if slug in OUT_OF_SCOPE:
+            excl["editorial_scope"] += 1
+            continue
 
         # no parseable mg size
         mg = N.mg_value(size_cell)
@@ -293,9 +310,12 @@ print(f"  excluded unverified-single: {excl['unverified_single']}")
 print(f"  excluded no-size single:    {excl['nosize_single']}")
 print(f"  excluded no-price single:   {excl['noprice_single']}")
 print(f"  excluded not-a-compound:    {excl['not_a_compound']}")
-_ss = len(rows) + excl['unverified_single'] + excl['nosize_single'] + excl['noprice_single'] + excl['not_a_compound']
+print(f"  excluded editorial-scope:   {excl['editorial_scope']}")
+_ss = (len(rows) + excl['unverified_single'] + excl['nosize_single'] + excl['noprice_single']
+       + excl['not_a_compound'] + excl['editorial_scope'])
 print(f"  singles arithmetic closes: {_ss==doc_single_total} "
-      f"({len(rows)}+{excl['unverified_single']}+{excl['nosize_single']}+{excl['noprice_single']}+{excl['not_a_compound']}={doc_single_total})")
+      f"({len(rows)}+{excl['unverified_single']}+{excl['nosize_single']}+{excl['noprice_single']}"
+      f"+{excl['not_a_compound']}+{excl['editorial_scope']}={doc_single_total})")
 print(f"non-single excluded (separate tracks): blends={excl['blends']} sprays={excl['sprays']}")
 
 # --- sale reporting ----------------------------------------------------------

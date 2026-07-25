@@ -6,8 +6,9 @@ import { categoryOrder, libraryCategoryOf, hasProfile } from "./peptideCategorie
  * Category assignment for price compounds NOT in the /peptides library taxonomy —
  * hand-maintained, using ONLY existing library category names (never a new one).
  * Covers profile pages outside the library nav (adamax, cibinetide, ghrp-2/6,
- * hexarelin, igf-1-des, mgf, adipotide) + profile-less compounds. Proposed for
- * Mark's review; pnc-27 is a weak fit (research anticancer peptide, no clean home).
+ * hexarelin, igf-1-des, mgf, adipotide) + profile-less compounds. Approved by Mark.
+ * pnc-27 (oncology) and klotho (native protein) were REMOVED as out of editorial
+ * scope — excluded upstream in to_prices.py (OUT_OF_SCOPE); see README scope rule.
  */
 export const PRICE_CATEGORY_OVERRIDES: Record<string, string> = {
   // Metabolic & Weight Loss
@@ -24,8 +25,8 @@ export const PRICE_CATEGORY_OVERRIDES: Record<string, string> = {
   adamax: "Cognitive & Nootropic", dihexa: "Cognitive & Nootropic",
   // Skin Health & Anti-Aging
   "snap-8": "Skin Health & Anti-Aging",
-  // Longevity
-  klotho: "Longevity", humanin: "Longevity", "foxo4-dri": "Longevity", "pnc-27": "Longevity",
+  // Longevity  (klotho + pnc-27 removed — out of editorial scope, see OUT_OF_SCOPE in to_prices.py)
+  humanin: "Longevity", "foxo4-dri": "Longevity",
   // Bioregulators (Khavinson short-peptide bioregulators)
   bronchogen: "Bioregulators", cartalax: "Bioregulators", chonluten: "Bioregulators",
   livagen: "Bioregulators", ovagen: "Bioregulators", pancragen: "Bioregulators",

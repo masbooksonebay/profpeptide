@@ -145,11 +145,6 @@
     "indexable": true
   },
   {
-    "slug": "klotho",
-    "vendors": 1,
-    "indexable": false
-  },
-  {
     "slug": "kpv",
     "vendors": 18,
     "indexable": true
@@ -222,11 +217,6 @@
   {
     "slug": "pinealon",
     "vendors": 11,
-    "indexable": true
-  },
-  {
-    "slug": "pnc-27",
-    "vendors": 4,
     "indexable": true
   },
   {
