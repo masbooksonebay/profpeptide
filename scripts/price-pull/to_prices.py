@@ -16,6 +16,7 @@ from pricepull import normalize as N   # canonical DISPLAY + mg_value (reuse, ne
 
 DOC = ROOT / "docs" / "PP_PRICE_DATA_MASTER_v1.md"
 OUT = ROOT / "src" / "data" / "prices.generated.ts"
+INDEX_OUT = ROOT / "src" / "data" / "prices.index.json"
 VENDORS_TS = ROOT / "src" / "data" / "vendors.ts"
 PEPTIDES_DIR = ROOT / "src" / "app" / "peptides"
 
@@ -58,14 +59,13 @@ def parse_base(cell):
 
 # --- load registries ---------------------------------------------------------
 vt = VENDORS_TS.read_text()
-VENDOR_SLUGS = set()
+# vendor keys are top-level 2-space-indented entries opening an object — keys may be
+# quoted ("ez-peptides") OR unquoted (biocollex, purerawz), so allow optional quotes.
+VENDOR_SLUGS = set(re.findall(r'^\s{2}"?([a-z0-9-]+)"?:\s*\{', vt, re.M))
 RETIRED = set()
-for slug, body in re.findall(r'"?([a-z0-9-]+)"?:\s*\{(.*?)\},', vt, re.S):
-    if "name:" not in body:
-        continue
-    VENDOR_SLUGS.add(slug)
-    if "retired: true" in body:
-        RETIRED.add(slug)
+for m in re.finditer(r'^\s{2}"?([a-z0-9-]+)"?:\s*\{(.*?)^\s{2}\},', vt, re.S | re.M):
+    if "retired: true" in m.group(2):
+        RETIRED.add(m.group(1))
 
 PROFILE_SLUGS = {d.name for d in PEPTIDES_DIR.iterdir() if d.is_dir() and not d.name.startswith("[")}
 from pricepull.decoders import PP_SLUGS, BACKLOG
@@ -79,6 +79,7 @@ PRICES_UPDATED = pu.group(1).strip() if pu else "unknown"
 secs = [s for s in re.split(r"\n(?=## VENDOR: )", doc) if s.startswith("## VENDOR:")]
 
 rows = []                 # kept single-compound entries
+VENDOR_NAMES = {}         # slug -> doc display name (fallback for vendors absent from vendors.ts)
 excl = {"blends": 0, "sprays": 0, "unverified_single": 0, "nosize_single": 0, "noprice_single": 0, "not_a_compound": 0}
 doc_single_total = 0
 retired_row_count = 0
@@ -91,6 +92,8 @@ for s in secs:
         continue
     sm = re.search(r"\*\*slug:\*\*\s*([a-z0-9-]+)", s)
     vslug = sm.group(1) if sm else None
+    if vslug:
+        VENDOR_NAMES[vslug] = name   # doc display name — fallback for vendors not in vendors.ts
 
     # count blend / spray data rows (excluded categories)
     for hdr, key in [("### Blends", "blends"), ("### Sprays / strips", "sprays")]:
@@ -193,7 +196,23 @@ for r in rows:
         parts.append(f'listedAs: {ts_val(r["listedAs"])}')
     lines.append("  { " + ", ".join(parts) + " },")
 lines.append("];")
+lines.append("")
+lines.append("/** Vendor display names from the master doc — fallback for vendors absent from vendors.ts. */")
+lines.append("export const generatedVendorNames: Record<string, string> = {")
+for vslug in sorted({r["vendor"] for r in rows}):
+    lines.append(f'  {ts_val(vslug)}: {ts_val(VENDOR_NAMES.get(vslug, vslug))},')
+lines.append("};")
 OUT.write_text("\n".join(lines) + "\n")
+
+# --- emit sitemap/ungating index (non-retired distinct vendor count per compound) ---
+import json
+from collections import defaultdict as _dd
+_cc = _dd(set)
+for r in rows:
+    if r["vendor"] not in RETIRED:
+        _cc[r["compound"]].add(r["vendor"])
+index = [{"slug": c, "vendors": len(vs), "indexable": len(vs) >= 3} for c, vs in sorted(_cc.items())]
+INDEX_OUT.write_text(json.dumps(index, indent=2) + "\n")
 
 # --- report ------------------------------------------------------------------
 print(f"PRICES_UPDATED (from doc): {PRICES_UPDATED}")
@@ -212,8 +231,9 @@ print(f"\nstray-paren artifacts remaining: {len(stray_paren)} (expect 0) {stray_
 print(f"rows belonging to RETIRED vendors ({sorted(RETIRED)}): {retired_row_count}")
 
 # validation
-bad_v = sorted({r['vendor'] for r in rows if r['vendor'] not in VENDOR_SLUGS})
-print(f"\nvendor slugs all in vendors.ts: {not bad_v}  bad={bad_v}")
+print(f"\nindex -> {INDEX_OUT.relative_to(ROOT)}  ({sum(1 for i in index if i['indexable'])} indexable / {sum(1 for i in index if not i['indexable'])} noindex)")
+non_aff = sorted({r['vendor'] for r in rows if r['vendor'] not in VENDOR_SLUGS})
+print(f"price vendors NOT in vendors.ts (render as non-affiliate, name from doc): {non_aff}")
 from collections import Counter, defaultdict
 cov = defaultdict(set)
 for r in rows: cov[r['compound']].add(r['vendor'])

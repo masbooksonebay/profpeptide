@@ -1,5 +1,54 @@
 import { vendors } from "./vendors";
-import { generatedPriceEntries, GENERATED_PRICES_UPDATED } from "./prices.generated";
+import { generatedPriceEntries, GENERATED_PRICES_UPDATED, generatedVendorNames } from "./prices.generated";
+import { categoryOrder, libraryCategoryOf, hasProfile } from "./peptideCategories";
+
+/**
+ * Category assignment for price compounds NOT in the /peptides library taxonomy —
+ * hand-maintained, using ONLY existing library category names (never a new one).
+ * Covers profile pages outside the library nav (adamax, cibinetide, ghrp-2/6,
+ * hexarelin, igf-1-des, mgf, adipotide) + profile-less compounds. Proposed for
+ * Mark's review; pnc-27 is a weak fit (research anticancer peptide, no clean home).
+ */
+export const PRICE_CATEGORY_OVERRIDES: Record<string, string> = {
+  // Metabolic & Weight Loss
+  adipotide: "Metabolic & Weight Loss", mazdutide: "Metabolic & Weight Loss",
+  survodutide: "Metabolic & Weight Loss", tesofensine: "Metabolic & Weight Loss",
+  "slu-pp-332": "Metabolic & Weight Loss", "hgh-fragment-176-191": "Metabolic & Weight Loss",
+  // Recovery & Tissue Repair
+  cibinetide: "Recovery & Tissue Repair",
+  // Performance & Energy
+  "igf-1-des": "Performance & Energy", mgf: "Performance & Energy",
+  // Growth Hormone
+  "ghrp-2": "Growth Hormone", "ghrp-6": "Growth Hormone", hexarelin: "Growth Hormone",
+  // Cognitive & Nootropic
+  adamax: "Cognitive & Nootropic", dihexa: "Cognitive & Nootropic",
+  // Skin Health & Anti-Aging
+  "snap-8": "Skin Health & Anti-Aging",
+  // Longevity
+  klotho: "Longevity", humanin: "Longevity", "foxo4-dri": "Longevity", "pnc-27": "Longevity",
+  // Bioregulators (Khavinson short-peptide bioregulators)
+  bronchogen: "Bioregulators", cartalax: "Bioregulators", chonluten: "Bioregulators",
+  livagen: "Bioregulators", ovagen: "Bioregulators", pancragen: "Bioregulators",
+  prostamax: "Bioregulators", testagen: "Bioregulators", thymalin: "Bioregulators",
+  thymulin: "Bioregulators", vesilute: "Bioregulators", vesugen: "Bioregulators",
+  vilon: "Bioregulators",
+};
+
+/** Library category name for a compound, or the price-specific override. */
+export function categoryForCompound(slug: string): string | null {
+  return libraryCategoryOf[slug] ?? PRICE_CATEGORY_OVERRIDES[slug] ?? null;
+}
+
+/** True when the vendor is retired in vendors.ts (excluded from render, kept in data). */
+function isRetired(vendorKey: string): boolean {
+  return vendors[vendorKey]?.retired === true;
+}
+
+/** Affiliate vendor = has a discount code we can apply. Non-affiliate → single price. */
+export function isAffiliateVendor(vendorKey: string): boolean {
+  const v = vendors[vendorKey];
+  return !!(v && v.code && vendorDiscountPct(vendorKey) > 0);
+}
 
 /**
  * Date the price data was last pulled. Emitted from the master doc's
@@ -42,45 +91,66 @@ export function vendorDiscountPct(vendorKey: string): number {
 export interface PriceRow {
   entry: PriceEntry;
   vendorName: string;
-  /** /coupons/<slug> — PP coupon page for this vendor (affiliate ecosystem tie-in) */
-  couponPage: string;
-  /** vendor's affiliate URL from vendors.ts */
-  affiliateUrl: string;
+  /** true when we have an affiliate code for this vendor (drives dual vs single pricing) */
+  isAffiliate: boolean;
+  /** /coupons/<slug> when the vendor has a PP coupon page, else null (non-affiliate) */
+  couponPage: string | null;
+  /** vendor's affiliate URL, else null (non-affiliate → no affiliate link) */
+  affiliateUrl: string | null;
   code: string;
   discountPct: number;
   basePrice: number;
-  /** price after applying the vendor's code (placeholder base × (1 − discount)) */
+  /** price after the vendor's code (affiliates only; == basePrice for non-affiliates) */
   codePrice: number;
   basePerMg: number;
   codePerMg: number;
+  /** the price we RANK on: with-code for affiliates, base for non-affiliates */
+  effectivePrice: number;
+  effectivePerMg: number;
   inStock: boolean;
 }
 
-/** Enrich + derive with-code price and per-mg for one compound's entries. */
+/**
+ * Enrich one compound's entries: derive with-code + per-mg, resolve vendor identity.
+ * Retired vendors (vendors.ts `retired: true`) are FILTERED OUT here — visibility is a
+ * render concern; the generated data stays complete. Non-affiliate vendors (absent from
+ * vendors.ts or no code) get a single price, no affiliate link, and rank on base price.
+ */
 export function compoundRows(compoundSlug: string): PriceRow[] {
   return priceEntries
-    .filter((e) => e.compound === compoundSlug)
+    .filter((e) => e.compound === compoundSlug && !isRetired(e.vendor))
     .map((entry) => {
       const v = vendors[entry.vendor];
-      const discountPct = vendorDiscountPct(entry.vendor);
+      const affiliate = isAffiliateVendor(entry.vendor);
+      const discountPct = affiliate ? vendorDiscountPct(entry.vendor) : 0;
       const codePrice = Math.round(entry.basePrice * (1 - discountPct / 100) * 100) / 100;
+      const basePerMg = Math.round((entry.basePrice / entry.sizeMg) * 100) / 100;
+      const codePerMg = Math.round((codePrice / entry.sizeMg) * 100) / 100;
       return {
         entry,
-        vendorName: v?.name ?? entry.vendor,
-        couponPage: v?.detailPage ?? "/coupons",
-        affiliateUrl: v?.url ?? "/coupons",
-        code: v?.code ?? "",
+        vendorName: v?.name ?? generatedVendorNames[entry.vendor] ?? entry.vendor,
+        isAffiliate: affiliate,
+        couponPage: affiliate ? (v?.detailPage ?? null) : null,
+        affiliateUrl: affiliate ? (v?.url ?? null) : null,
+        code: affiliate ? (v?.code ?? "") : "",
         discountPct,
         basePrice: entry.basePrice,
         codePrice,
-        basePerMg: Math.round((entry.basePrice / entry.sizeMg) * 100) / 100,
-        codePerMg: Math.round((codePrice / entry.sizeMg) * 100) / 100,
+        basePerMg,
+        codePerMg,
+        effectivePrice: affiliate ? codePrice : entry.basePrice,
+        effectivePerMg: affiliate ? codePerMg : basePerMg,
         inStock: entry.inStock,
       };
     });
 }
 
-/** Distinct compounds present in the price data (for the master list + static params). */
+/** Distinct non-retired vendors carrying a compound — the ungating count (≥3 → indexable). */
+export function compoundVendorCount(compoundSlug: string): number {
+  return new Set(compoundRows(compoundSlug).map((r) => r.entry.vendor)).size;
+}
+
+/** Distinct compounds present in the price data (for static params — covers ALL, no 404s). */
 export function priceCompounds(): { slug: string; name: string }[] {
   const out: { slug: string; name: string }[] = [];
   const seen = new Set<string>();
@@ -91,4 +161,51 @@ export function priceCompounds(): { slug: string; name: string }[] {
     }
   }
   return out;
+}
+
+export type Unit = "total" | "permg";
+
+export interface IndexCompound {
+  slug: string;
+  name: string;
+  vendorCount: number;
+  hasProfile: boolean;
+  /** cheapest post-code figure in the active unit (in-stock preferred), or null */
+  cheapest: number | null;
+}
+
+export interface IndexCategory {
+  category: string;
+  compounds: IndexCompound[];
+}
+
+/**
+ * The master compound index, grouped by the /peptides library taxonomy (exact names +
+ * display order) with price-specific overrides for compounds outside the library.
+ * Compounds sort ALPHABETICALLY within each category. `cheapest` is the lowest post-code
+ * figure in the active unit, preferring in-stock rows.
+ */
+export function priceIndexByCategory(unit: Unit): IndexCategory[] {
+  const byCat = new Map<string, IndexCompound[]>();
+  for (const { slug, name } of priceCompounds()) {
+    const rows = compoundRows(slug);
+    if (rows.length === 0) continue; // fully retired-out → not shown
+    const cat = categoryForCompound(slug) ?? "Bioregulators"; // every price compound is assigned
+    const pick = (rs: PriceRow[]) =>
+      Math.min(...rs.map((r) => (unit === "permg" ? r.effectivePerMg : r.effectivePrice)));
+    const inStock = rows.filter((r) => r.inStock);
+    const cheapest = inStock.length ? pick(inStock) : pick(rows);
+    const ic: IndexCompound = {
+      slug, name, vendorCount: new Set(rows.map((r) => r.entry.vendor)).size,
+      hasProfile: hasProfile(slug), cheapest,
+    };
+    if (!byCat.has(cat)) byCat.set(cat, []);
+    byCat.get(cat)!.push(ic);
+  }
+  return categoryOrder
+    .filter((c) => byCat.has(c))
+    .map((c) => ({
+      category: c,
+      compounds: byCat.get(c)!.sort((a, b) => a.name.localeCompare(b.name)),
+    }));
 }

@@ -1,0 +1,352 @@
+[
+  {
+    "slug": "5-amino-1mq",
+    "vendors": 16,
+    "indexable": true
+  },
+  {
+    "slug": "adamax",
+    "vendors": 7,
+    "indexable": true
+  },
+  {
+    "slug": "adipotide",
+    "vendors": 2,
+    "indexable": false
+  },
+  {
+    "slug": "aod-9604",
+    "vendors": 15,
+    "indexable": true
+  },
+  {
+    "slug": "bpc-157",
+    "vendors": 22,
+    "indexable": true
+  },
+  {
+    "slug": "bronchogen",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "cagrilintide",
+    "vendors": 14,
+    "indexable": true
+  },
+  {
+    "slug": "cardiogen",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "cartalax",
+    "vendors": 8,
+    "indexable": true
+  },
+  {
+    "slug": "chonluten",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "cibinetide",
+    "vendors": 10,
+    "indexable": true
+  },
+  {
+    "slug": "cjc-1295",
+    "vendors": 19,
+    "indexable": true
+  },
+  {
+    "slug": "cortagen",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "dihexa",
+    "vendors": 6,
+    "indexable": true
+  },
+  {
+    "slug": "dsip",
+    "vendors": 17,
+    "indexable": true
+  },
+  {
+    "slug": "epitalon",
+    "vendors": 18,
+    "indexable": true
+  },
+  {
+    "slug": "follistatin",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "foxo4-dri",
+    "vendors": 6,
+    "indexable": true
+  },
+  {
+    "slug": "ghk-cu",
+    "vendors": 21,
+    "indexable": true
+  },
+  {
+    "slug": "ghrp-2",
+    "vendors": 9,
+    "indexable": true
+  },
+  {
+    "slug": "ghrp-6",
+    "vendors": 7,
+    "indexable": true
+  },
+  {
+    "slug": "glutathione",
+    "vendors": 15,
+    "indexable": true
+  },
+  {
+    "slug": "hexarelin",
+    "vendors": 3,
+    "indexable": true
+  },
+  {
+    "slug": "hgh-fragment-176-191",
+    "vendors": 3,
+    "indexable": true
+  },
+  {
+    "slug": "humanin",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "igf-1-des",
+    "vendors": 2,
+    "indexable": false
+  },
+  {
+    "slug": "igf-1-lr3",
+    "vendors": 7,
+    "indexable": true
+  },
+  {
+    "slug": "ipamorelin",
+    "vendors": 18,
+    "indexable": true
+  },
+  {
+    "slug": "kisspeptin",
+    "vendors": 13,
+    "indexable": true
+  },
+  {
+    "slug": "klotho",
+    "vendors": 1,
+    "indexable": false
+  },
+  {
+    "slug": "kpv",
+    "vendors": 18,
+    "indexable": true
+  },
+  {
+    "slug": "livagen",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "ll-37",
+    "vendors": 10,
+    "indexable": true
+  },
+  {
+    "slug": "mazdutide",
+    "vendors": 4,
+    "indexable": true
+  },
+  {
+    "slug": "melanotan-i",
+    "vendors": 12,
+    "indexable": true
+  },
+  {
+    "slug": "melanotan-ii",
+    "vendors": 15,
+    "indexable": true
+  },
+  {
+    "slug": "mgf",
+    "vendors": 7,
+    "indexable": true
+  },
+  {
+    "slug": "mk-677",
+    "vendors": 1,
+    "indexable": false
+  },
+  {
+    "slug": "mots-c",
+    "vendors": 21,
+    "indexable": true
+  },
+  {
+    "slug": "nad-plus",
+    "vendors": 21,
+    "indexable": true
+  },
+  {
+    "slug": "ovagen",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "oxytocin",
+    "vendors": 12,
+    "indexable": true
+  },
+  {
+    "slug": "pancragen",
+    "vendors": 6,
+    "indexable": true
+  },
+  {
+    "slug": "pda",
+    "vendors": 2,
+    "indexable": false
+  },
+  {
+    "slug": "pinealon",
+    "vendors": 10,
+    "indexable": true
+  },
+  {
+    "slug": "pnc-27",
+    "vendors": 3,
+    "indexable": true
+  },
+  {
+    "slug": "prostamax",
+    "vendors": 3,
+    "indexable": true
+  },
+  {
+    "slug": "pt-141",
+    "vendors": 19,
+    "indexable": true
+  },
+  {
+    "slug": "retatrutide",
+    "vendors": 16,
+    "indexable": true
+  },
+  {
+    "slug": "selank",
+    "vendors": 20,
+    "indexable": true
+  },
+  {
+    "slug": "semaglutide",
+    "vendors": 9,
+    "indexable": true
+  },
+  {
+    "slug": "semax",
+    "vendors": 19,
+    "indexable": true
+  },
+  {
+    "slug": "sermorelin",
+    "vendors": 15,
+    "indexable": true
+  },
+  {
+    "slug": "slu-pp-332",
+    "vendors": 6,
+    "indexable": true
+  },
+  {
+    "slug": "snap-8",
+    "vendors": 11,
+    "indexable": true
+  },
+  {
+    "slug": "ss-31",
+    "vendors": 9,
+    "indexable": true
+  },
+  {
+    "slug": "survodutide",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "tb-500",
+    "vendors": 19,
+    "indexable": true
+  },
+  {
+    "slug": "tesamorelin",
+    "vendors": 21,
+    "indexable": true
+  },
+  {
+    "slug": "tesofensine",
+    "vendors": 4,
+    "indexable": true
+  },
+  {
+    "slug": "testagen",
+    "vendors": 6,
+    "indexable": true
+  },
+  {
+    "slug": "thymalin",
+    "vendors": 3,
+    "indexable": true
+  },
+  {
+    "slug": "thymogen",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "thymosin-alpha-1",
+    "vendors": 16,
+    "indexable": true
+  },
+  {
+    "slug": "thymulin",
+    "vendors": 2,
+    "indexable": false
+  },
+  {
+    "slug": "tirzepatide",
+    "vendors": 10,
+    "indexable": true
+  },
+  {
+    "slug": "vesilute",
+    "vendors": 4,
+    "indexable": true
+  },
+  {
+    "slug": "vesugen",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "vilon",
+    "vendors": 6,
+    "indexable": true
+  },
+  {
+    "slug": "vip",
+    "vendors": 12,
+    "indexable": true
+  }
+]

@@ -1055,3 +1055,31 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "tesamorelin", compoundName: "Tesamorelin", vendor: "aero-peptides", sizeMg: 10, basePrice: 64.99, inStock: true },
   { compound: "sermorelin", compoundName: "Sermorelin", vendor: "aero-peptides", sizeMg: 10, basePrice: 64.99, inStock: true },
 ];
+
+/** Vendor display names from the master doc — fallback for vendors absent from vendors.ts. */
+export const generatedVendorNames: Record<string, string> = {
+  "aero-peptides": "Aero Peptides",
+  "almighty-peptides": "Almighty Peptides",
+  "alpha-peptides": "Alpha Peptides",
+  "ameano-peptides": "Ameano Peptides",
+  "amino-club": "Amino Club",
+  "amino-x": "Amino X",
+  "ascension-peptides": "Ascension Peptides",
+  "behemoth-labz": "Behemoth Labz",
+  "biocollex": "BioCollex",
+  "biolongevity-labs": "Biolongevity Labs",
+  "ez-peptides": "EZ Peptides",
+  "glacier-aminos": "Glacier Aminos",
+  "ignite-peptides": "Ignite Peptides",
+  "midwest-peptide": "Midwest Peptide",
+  "oasis-labs": "Oasis Labs",
+  "peptide-partners": "Peptide Partners",
+  "peptides-gg": "Peptides.gg",
+  "purerawz": "PureRawz",
+  "purity-peptides": "Purity Peptides",
+  "royal-peptides": "Royal Peptides",
+  "science-based-peptides": "Science Based Peptides",
+  "swiss-chems": "Swiss Chems",
+  "synthesis-peptides": "Synthesis Peptides",
+  "vital-core-research": "Vital Core Research",
+};

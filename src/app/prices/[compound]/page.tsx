@@ -2,10 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
-import { PRICES_UPDATED_DATE, priceCompounds } from "@/data/prices";
+import { PRICES_UPDATED_DATE, priceCompounds, compoundRows, compoundVendorCount } from "@/data/prices";
+import { hasProfile } from "@/data/peptideCategories";
 import CompoundPriceTable from "@/components/CompoundPriceTable";
 
 export function generateStaticParams() {
+  // Cover ALL compounds so no URL 404s; only the robots directive is conditional.
   return priceCompounds().map((c) => ({ compound: c.slug }));
 }
 
@@ -16,20 +18,25 @@ function lookup(slug: string) {
 export function generateMetadata({ params }: { params: { compound: string } }): Metadata {
   const c = lookup(params.compound);
   if (!c) return {};
+  const vendorCount = compoundVendorCount(c.slug);
+  const rows = compoundRows(c.slug);
+  const cheapest = rows.length ? Math.min(...rows.map((r) => r.effectivePrice)) : null;
+  const range = cheapest != null ? ` Cheapest from $${cheapest.toFixed(2)}.` : "";
   return {
     ...buildPageMetadata({
       path: `/prices/${c.slug}`,
-      title: `${c.name} Price Comparison — Cheapest Vendors by $/mg | Prof. Peptide`,
-      description: `Compare ${c.name} prices across vendors — post-code pricing, per-mg normalization across vial sizes, and cheapest-first sorting. Updated regularly.`,
+      title: `Cheapest ${c.name} — Price Comparison Across Vendors | Prof. Peptide`,
+      description: `Compare ${c.name} prices across ${vendorCount} research-peptide vendor${vendorCount === 1 ? "" : "s"} — post-code pricing, per-mg normalization, cheapest-first.${range}`,
     }),
-    // GATED: placeholder prices — noindex until real data lands (see /prices).
-    robots: { index: false, follow: false },
+    // ≥3 vendors → indexable; thinner pages stay noindex,follow (still crawlable/linked).
+    robots: vendorCount >= 3 ? undefined : { index: false, follow: true },
   };
 }
 
 export default function CompoundPricePage({ params }: { params: { compound: string } }) {
   const c = lookup(params.compound);
   if (!c) notFound();
+  const profiled = hasProfile(c.slug);
 
   return (
     <div className="section max-w-3xl">
@@ -37,31 +44,27 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
         &larr; Back to Price Comparison
       </Link>
 
-      <div className="mb-4 rounded-xl border border-amber-200 bg-amber-50 dark:border-amber-900/40 dark:bg-amber-950/20 p-3">
-        <p className="text-sm text-amber-900 dark:text-amber-200">
-          <span className="font-semibold">Placeholder data:</span> these are not real prices &mdash; placeholders for layout review.
-        </p>
-      </div>
-
-      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-2">{c.name} Price Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Cheapest {c.name} — Price Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-2 max-w-2xl">
-        {c.name} prices across vendors — post-code pricing (base struck-through), normalized to price-per-mg, sorted cheapest-first.
+        {c.name} prices across vendors — post-code pricing (base struck through where a code applies), normalized to price-per-mg, sorted cheapest-first.
       </p>
       <p className="text-sm text-gray-400 dark:text-slate-500 mb-4">Prices updated {PRICES_UPDATED_DATE}</p>
 
       <div className="flex flex-wrap items-center gap-4 mb-6 text-sm">
-        <Link href={`/peptides/${c.slug}`} className="text-[#3A759F] hover:underline font-medium">
-          Read the {c.name} research profile &rarr;
-        </Link>
+        {profiled && (
+          <Link href={`/peptides/${c.slug}`} className="text-[#3A759F] hover:underline font-medium">
+            Read the {c.name} research profile &rarr;
+          </Link>
+        )}
         <a href="https://finnrick.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-slate-400 hover:text-[#3A759F]">
           Purity testing: Finnrick &rarr;
         </a>
       </div>
 
-      <CompoundPriceTable compoundSlug={c.slug} />
+      <CompoundPriceTable compoundSlug={c.slug} compoundName={c.name} />
 
-      <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed mt-10">
-        For educational and research purposes only. Prices and availability change frequently; always confirm on the vendor&apos;s site. We may earn affiliate commissions through vendor links at no additional cost to you.
+      <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed mt-10 border-t border-gray-100 dark:border-slate-800 pt-6">
+        <strong className="font-semibold text-gray-500 dark:text-slate-400">Affiliate disclosure:</strong> Prof. Peptide is independently operated and may earn affiliate commissions when you use our discount codes or buy through our links, at no additional cost to you. Affiliate relationships never determine vendor inclusion, ranking, verification, or our editorial conclusions. Prices and availability change frequently; always confirm on the vendor&apos;s site.
       </p>
     </div>
   );
