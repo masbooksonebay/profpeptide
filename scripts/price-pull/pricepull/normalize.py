@@ -151,6 +151,8 @@ def scope(name):
     """Classify a raw product name: 'peptide' (in scope) or an exclusion reason."""
     if _SUPPLY.search(name):
         return 'supply'
+    if re.search(r'\btopical\b|transdermal', name, re.I):   # topical/transdermal not $/mg-comparable
+        return 'topical/transdermal'
     if _ORAL.search(name):
         return 'oral/capsule'
     if _OUT_OF_SCOPE.search(name):

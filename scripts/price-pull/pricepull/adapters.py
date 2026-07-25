@@ -63,7 +63,10 @@ def _flight_blob(html):
 
 # ---------------------------------------------------------------- WooCommerce
 
-def woo(domain, per_page=100, max_pages=3):
+def woo(domain, per_page=100, max_pages=12):
+    # max_pages is a ceiling, not a target: the loop breaks as soon as a page returns
+    # < per_page items, so small catalogs still stop early. Raised from 3 (a hard 300-item
+    # cap that silently truncated behemoth-labz and purerawz, both of which fill 3 pages).
     base = f"https://{domain}/wp-json/wc/store/v1"
     products = []
     for pg in range(1, max_pages + 1):

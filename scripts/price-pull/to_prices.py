@@ -191,6 +191,29 @@ if unresolved:
         print(f"  {v}: {cell!r} (cleaned {clean!r})")
     sys.exit(2)
 
+# --- dedupe: one vendor selling the same compound+size under two names --------
+# (e.g. PureRawz GLP-1.3 and LY3437943 both = Retatrutide). Same price -> emit ONE
+# row, keeping the store-facing listing name (a dev code like LY3437943 ranks lower).
+# Different price at the same size -> DO NOT merge; keep both and report the conflict.
+from collections import defaultdict as _ddl
+_grp = _ddl(list)
+for r in rows:
+    _grp[(r["vendor"], r["compound"], r["sizeMg"])].append(r)
+dedupe_merged, dedupe_conflict = [], []
+_deduped = []
+for key, grp in _grp.items():
+    if len(grp) == 1:
+        _deduped.append(grp[0]); continue
+    if len({round(g["basePrice"], 2) for g in grp}) > 1:      # different price -> keep both
+        dedupe_conflict.append((key, [(g.get("listedAs"), g["basePrice"]) for g in grp]))
+        _deduped.extend(grp); continue
+    dev_code = lambda g: 1 if re.match(r"^LY\d", g.get("listedAs") or "") else 0  # dev code ranks lower
+    keep = dict(sorted(grp, key=dev_code)[0])
+    keep["inStock"] = any(g["inStock"] for g in grp)
+    _deduped.append(keep)
+    dedupe_merged.append((key, [g.get("listedAs") for g in grp], keep.get("listedAs")))
+rows = _deduped
+
 # --- emit generated TS -------------------------------------------------------
 def ts_val(v):
     if v is None: return "undefined"
@@ -254,6 +277,11 @@ _ss = len(rows) + excl['unverified_single'] + excl['nosize_single'] + excl['nopr
 print(f"  singles arithmetic closes: {_ss==doc_single_total} "
       f"({len(rows)}+{excl['unverified_single']}+{excl['nosize_single']}+{excl['noprice_single']}+{excl['not_a_compound']}={doc_single_total})")
 print(f"non-single excluded (separate tracks): blends={excl['blends']} sprays={excl['sprays']}")
+print(f"\ndedupe (same vendor+compound+size under two names): merged {len(dedupe_merged)}, price-conflicts kept-both {len(dedupe_conflict)}")
+for key, names, kept in dedupe_merged:
+    print(f"   merged {key[0]} {key[1]} {key[2]}mg: {names} -> kept listedAs={kept!r}")
+for key, pn in dedupe_conflict:
+    print(f"   ⚠️ conflict {key[0]} {key[1]} {key[2]}mg (different prices, kept both): {pn}")
 print(f"\nstray-paren artifacts remaining: {len(stray_paren)} (expect 0) {stray_paren[:3]}")
 print(f"rows belonging to RETIRED vendors ({sorted(RETIRED)}): {retired_row_count}")
 

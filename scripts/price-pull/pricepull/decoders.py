@@ -61,6 +61,14 @@ ALIAS = {
     'survodutide': 'survodutide', 'tesofensine': 'tesofensine', 'slu pp 332': 'slu-pp-332',
     'thymalin': 'thymalin', 'retatrutide': 'retatrutide', 'tirzepatide': 'tirzepatide',
     'semaglutide': 'semaglutide',
+    # alias near-misses (vendor spelling/abbreviation variants that missed the slug):
+    'aod9604': 'aod-9604',                                  # peptides-gg (no hyphen)
+    'ss31': 'ss-31', 'elamipretide': 'ss-31',              # swiss "SS31 (Elamipretide)"
+    'hgh frag': 'hgh-fragment-176-191', 'hgh fragment': 'hgh-fragment-176-191',  # vital-core
+    'sermorlin': 'sermorelin',                             # oasis misspelling
+    'igf1 lr3': 'igf-1-lr3', 'igf1lr3': 'igf-1-lr3',      # almighty/oasis (no separators)
+    'smax': 'semax', 'tesa': 'tesamorelin', 'mt2': 'melanotan-ii',  # ignite abbreviations
+    'oxyt': 'oxytocin',                                    # royal abbreviation
 }
 
 
@@ -118,12 +126,15 @@ def _amino_x(n):
 
 @_decoder('ascension-peptides')  # verified: COA filename 'Retatrutide' (R); molecular descriptions (T=dual GIP/GLP-1, S=MW4114, C=amylin)
 def _ascension(n):
+    # Ascension codes encode mg in the trailing number (R-30 = 30mg). These arrive as
+    # simple products with no size variant, so the 4th tuple element supplies the mg —
+    # otherwise the row is dropped as no-size. (R-10/R-30/T-10/T-30/S-5/C-10 -> 10/30/... mg)
     m = re.match(r'([RTCS])-(\d+)$', n, re.I)
     if m:
         mp = {'R': ('Retatrutide', 'retatrutide'), 'T': ('Tirzepatide', 'tirzepatide'),
               'C': ('Cagrilintide', 'cagrilintide'), 'S': ('Semaglutide', 'semaglutide')}
         b, s = mp[m.group(1).upper()]
-        return (_c(b, n.upper()), s, 'single')
+        return (_c(b, n.upper()), s, 'single', int(m.group(2)))
     if re.match(r'FOX0?4-DRI', n, re.I): return ('FOXO4-DRI [backlog]', 'foxo4-dri', 'single_bk')
     if re.match(r'HCG', n, re.I): return ('EXCLUDE', None, None)
 
@@ -144,6 +155,18 @@ def _ez(n):
     if re.match(r'TB4\b', n, re.I): return ('TB-500', 'tb-500', 'single')
     if re.match(r'Deadpool', n, re.I): return ('Deadpool (BPC-157/TB-500/Cartalax) [backlog]', None, 'blend_bk')
     if re.match(r'Beauty Blend', n, re.I): return ('Beauty (GHK-Cu/KPV) [backlog]', None, 'blend_bk')
+
+
+@_decoder('ameano-peptides')  # verified-by-MECHANISM on ameano's own product pages (title + body):
+#   AMP-1P "GLP-1 Receptor Research Peptide"  -> Semaglutide (mono GLP-1 tier)
+#   AMP-2P "Dual-Receptor Research Peptide"   -> Tirzepatide (sole marketed dual GIP/GLP-1)
+#   AMP-3P "Triple-Agonist Research Peptide"  -> Retatrutide (sole triple GLP-1/GIP/glucagon)
+# Mechanism-tier (like BioCollex), not COA-tier. AMP-2P/3P are mechanistically unique; AMP-1P
+# is the mono-GLP-1 tier of the vendor's own coherent 1P/2P/3P scheme.
+def _ameano(n):
+    if re.match(r'AMP-1P', n, re.I): return (_c('Semaglutide', 'AMP-1P'), 'semaglutide', 'single')
+    if re.match(r'AMP-2P', n, re.I): return (_c('Tirzepatide', 'AMP-2P'), 'tirzepatide', 'single')
+    if re.match(r'AMP-3P', n, re.I): return (_c('Retatrutide', 'AMP-3P'), 'retatrutide', 'single')
 
 
 @_decoder('glacier-aminos')  # UNVERIFIED: no COA/MW/formula/name on product pages or /coa -> coded name only
@@ -171,8 +194,10 @@ def _oasis(n):
     if re.match(r'GLP3\(R\)', n, re.I): return (_c('Retatrutide', 'GLP3(R)'), 'retatrutide', 'single')
 
 
-@_decoder('purerawz')  # UNVERIFIED: no COA/MW/identity; permalinks only suggestive
+@_decoder('purerawz')  # GLP-1.x: UNVERIFIED (no COA/MW/identity; permalinks only). LY3437943:
+# VERIFIED — Eli Lilly's published clinical development code for Retatrutide (hard identity).
 def _purerawz(n):
+    if re.match(r'LY ?3437943', n, re.I): return (_c('Retatrutide', 'LY3437943'), 'retatrutide', 'single')
     if re.match(r'GLP-1\.[23] ?\+ ?GLP-1 Blend|GLP-1\.3 ?\+', n, re.I): return ('GLP-1.x blend [coded, UNVERIFIED]', None, 'blend_bk')
     if re.match(r'GLP-1(\.[0-9])?$', n, re.I): return (n.upper() + ' [coded, UNVERIFIED]', None, 'single_bk')
 

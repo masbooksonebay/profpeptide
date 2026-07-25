@@ -11,12 +11,12 @@
   },
   {
     "slug": "adipotide",
-    "vendors": 2,
-    "indexable": false
+    "vendors": 3,
+    "indexable": true
   },
   {
     "slug": "aod-9604",
-    "vendors": 15,
+    "vendors": 16,
     "indexable": true
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "slug": "cagrilintide",
-    "vendors": 14,
+    "vendors": 15,
     "indexable": true
   },
   {
@@ -51,12 +51,12 @@
   },
   {
     "slug": "cibinetide",
-    "vendors": 10,
+    "vendors": 11,
     "indexable": true
   },
   {
     "slug": "cjc-1295",
-    "vendors": 19,
+    "vendors": 20,
     "indexable": true
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "slug": "foxo4-dri",
-    "vendors": 6,
+    "vendors": 7,
     "indexable": true
   },
   {
@@ -101,7 +101,7 @@
   },
   {
     "slug": "ghrp-6",
-    "vendors": 7,
+    "vendors": 9,
     "indexable": true
   },
   {
@@ -111,7 +111,7 @@
   },
   {
     "slug": "hexarelin",
-    "vendors": 3,
+    "vendors": 5,
     "indexable": true
   },
   {
@@ -126,22 +126,22 @@
   },
   {
     "slug": "igf-1-des",
-    "vendors": 2,
-    "indexable": false
+    "vendors": 4,
+    "indexable": true
   },
   {
     "slug": "igf-1-lr3",
-    "vendors": 7,
+    "vendors": 11,
     "indexable": true
   },
   {
     "slug": "ipamorelin",
-    "vendors": 18,
+    "vendors": 19,
     "indexable": true
   },
   {
     "slug": "kisspeptin",
-    "vendors": 13,
+    "vendors": 14,
     "indexable": true
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "slug": "ll-37",
-    "vendors": 10,
+    "vendors": 11,
     "indexable": true
   },
   {
@@ -176,7 +176,7 @@
   },
   {
     "slug": "melanotan-ii",
-    "vendors": 15,
+    "vendors": 17,
     "indexable": true
   },
   {
@@ -186,12 +186,12 @@
   },
   {
     "slug": "mk-677",
-    "vendors": 1,
-    "indexable": false
+    "vendors": 3,
+    "indexable": true
   },
   {
     "slug": "mots-c",
-    "vendors": 21,
+    "vendors": 22,
     "indexable": true
   },
   {
@@ -221,12 +221,12 @@
   },
   {
     "slug": "pinealon",
-    "vendors": 10,
+    "vendors": 11,
     "indexable": true
   },
   {
     "slug": "pnc-27",
-    "vendors": 3,
+    "vendors": 4,
     "indexable": true
   },
   {
@@ -241,7 +241,7 @@
   },
   {
     "slug": "retatrutide",
-    "vendors": 18,
+    "vendors": 20,
     "indexable": true
   },
   {
@@ -251,17 +251,17 @@
   },
   {
     "slug": "semaglutide",
-    "vendors": 12,
+    "vendors": 14,
     "indexable": true
   },
   {
     "slug": "semax",
-    "vendors": 19,
+    "vendors": 20,
     "indexable": true
   },
   {
     "slug": "sermorelin",
-    "vendors": 15,
+    "vendors": 17,
     "indexable": true
   },
   {
@@ -271,12 +271,12 @@
   },
   {
     "slug": "snap-8",
-    "vendors": 11,
+    "vendors": 10,
     "indexable": true
   },
   {
     "slug": "ss-31",
-    "vendors": 9,
+    "vendors": 12,
     "indexable": true
   },
   {
@@ -291,7 +291,7 @@
   },
   {
     "slug": "tesamorelin",
-    "vendors": 21,
+    "vendors": 23,
     "indexable": true
   },
   {
@@ -306,7 +306,7 @@
   },
   {
     "slug": "thymalin",
-    "vendors": 3,
+    "vendors": 4,
     "indexable": true
   },
   {
@@ -316,7 +316,7 @@
   },
   {
     "slug": "thymosin-alpha-1",
-    "vendors": 16,
+    "vendors": 17,
     "indexable": true
   },
   {
@@ -326,7 +326,7 @@
   },
   {
     "slug": "tirzepatide",
-    "vendors": 13,
+    "vendors": 15,
     "indexable": true
   },
   {

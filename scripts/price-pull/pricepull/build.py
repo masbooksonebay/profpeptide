@@ -20,8 +20,12 @@ def classify(vendor, product, ten_vial_kit=False):
     name = product['name']
 
     dec = decoders.decode(vendor, name)
+    dec_size = None                         # decoder-supplied mg (e.g. Ascension R-30 -> 30)
     if dec:
-        disp, slug, kind = dec
+        if len(dec) == 4:
+            disp, slug, kind, dec_size = dec
+        else:
+            disp, slug, kind = dec
         if disp == 'EXCLUDE':
             yield ('exclude', 'clinical/other'); return
         backlog = '[backlog]' in disp
@@ -46,6 +50,8 @@ def classify(vendor, product, ten_vial_kit=False):
     for size_label, base, ins, form in vm.extract_rows(product, ten_vial_kit=ten_vial_kit):
         if base is None or base <= 0:      # drop $0 / hidden-price rows
             continue
+        if dec_size and N.mg_value(size_label) is None:   # code encodes mg (Ascension)
+            size_label = f"{dec_size}mg"
         if form == 'tablet':               # oral forms out of scope
             yield ('exclude', 'oral/tablet/sublingual'); continue
         rowkind = 'spray' if (form == 'spray' and kind not in ('blend', 'blend_bk')) else kind
