@@ -18,14 +18,38 @@ REPO = Path(__file__).resolve().parents[3]
 VENDORS_TS = REPO / "src" / "data" / "vendors.ts"
 DOC = REPO / "docs" / "PP_PRICE_DATA_MASTER_v1.md"
 
+# =====================================================================================
+# WHAT COUNTS AS A PRICE (the sale-vs-coupon rule — settled, do not relitigate)
+# -------------------------------------------------------------------------------------
+# A price shown on PP is what a buyer pays WITHOUT ENTERING ANY CODE.
+#   • Automatic discounts ARE priced — both product-level sale_price AND cart-level
+#     auto-discounts that apply with no code entry. Reference INCLUDE: Biolongevity's
+#     sitewide 50% (automatic, no code; storefront renders it as a sale, regular struck).
+#   • Coupon-gated promotions are NEVER modelled — anything that requires typing a code
+#     is excluded regardless of size. Reference EXCLUDE: Amino Club's ENJOY30 (30%, code
+#     required) — evaluated this cycle and deliberately NOT applied (see its entry).
+#   • PP's OWN affiliate code is the only code represented, applied on top of the no-code
+#     price (see prices.ts effectivePrice). We do NOT track, detect, or model any vendor's
+#     own coupon codes — do not build anything that tries to.
+#
+# `sitewide_sale` (float 0..1): a vendor-wide markdown that is applied AUTOMATICALLY at
+#   checkout with NO code entry and is invisible in product data (a cart-level auto-coupon).
+#   base = current price x (1 - sitewide_sale). ONLY for no-code automatic discounts —
+#   NEVER for coupon-gated promotions (those are excluded per the rule above). Re-verify
+#   the live cart each refresh: the %, and that it still requires no code.
+# =====================================================================================
+
 # slug -> {name, domain, adapter, variation_model, coded_decoder, sitemap?, sale_posture, notes}
 VENDORS = {
     # ---- pilot ----
     "amino-club": dict(name="Amino Club", domain="www.aminoclub.com", adapter="nextjs",
         discover="sitemap", sitemap="sitemap.xml", url_pattern=r"/us/products/[^/]+$",
         cookie="amino_age_verified=1", variation_model="dosage", coded_decoder=True,
-        sale_posture="⚠️ Sitewide CART-LEVEL coupon (e.g. ENJOY30, 30% off) — invisible in product data; "
-                     "base=regular_price (original_amount). Re-check the live coupon each refresh.",
+        sale_posture="ENJOY30 (30% off) is COUPON-GATED — requires typing the code, so it is EXCLUDED under "
+                     "the sale-vs-coupon rule (see top of file). Evaluated 2026-07 and deliberately NOT applied "
+                     "(no sitewide_sale) — do NOT 'rediscover' it as an oversight. base = no-code price "
+                     "(original_amount). If ENJOY30 ever becomes an automatic no-code cart discount, only then set "
+                     "sitewide_sale.",
         notes="Seed vendor, MIGRATED off WooCommerce -> Next.js/Medusa on Vercel (www.aminoclub.com). "
               "Products behind a server-enforced /age-verify researcher-consent gate; the pull sends the "
               "authorized accept flag as a cookie (amino_age_verified=1) so a scripted urllib request "

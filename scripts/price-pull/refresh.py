@@ -10,9 +10,11 @@ Usage:
 The `pulled:` date is stamped automatically (today) on every build. `code`/`discount`
 come from src/data/vendors.ts (master-doc rule 5), never hardcoded here.
 
-NOTE — cart-level sale check: adapters read product data only. Cart-level auto-coupons
-(e.g. Biolongevity's 'longevityvip') are invisible there; the registry `sale_posture`
-carries that note and must be re-verified against the live cart each refresh.
+NOTE — cart-level sale check: adapters read product data only. Cart-level AUTOMATIC
+discounts (Biolongevity's no-code 'longevityvip', 50%) are invisible there and are modelled
+via the registry `sitewide_sale` field; re-verify the live cart each refresh. COUPON-GATED
+promotions (a code the buyer types, e.g. Amino Club's ENJOY30) are NEVER modelled — see the
+sale-vs-coupon rule at the top of pricepull/registry.py.
 """
 import argparse
 import datetime

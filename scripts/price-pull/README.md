@@ -77,16 +77,62 @@ is the likely endpoint (returns `{"products":[{variants:[{title, price, availabl
 
 ## Shared rules (applied to every vendor)
 
-- **Base = `regular_price` / current price, never `sale_price`.** For sites that anchor a
-  higher `compare_at_price` (Midwest), the current price is the base.
+- **Base = the current no-code price** (woo `prices.price` = `sale_price` when on sale,
+  else `regular_price`; Next.js current `price`, not `compare_at`). `regular` (the anchor)
+  is captured too, and `onSale = base < regular`. See **"What counts as a price"** below.
 - **$/mg is unit-aware:** mcg→mg, commas stripped. Missing size ⇒ `—` (never guessed).
 - **Per-variation stock**, not the parent flag.
 - **$0 / hidden-price rows dropped.**
 - **Blends:** keyed on components (KLOW > GLOW > Wolverine precedence); published ratios captured.
-- **Scope filter (rule 7):** peptides / peptide-adjacent only — SARMs, Rx, cosmetics, capsules/oral, supplies excluded inline.
-- **Cart-level sales are invisible in product data.** A sitewide auto-coupon (e.g.
-  Biolongevity's `longevityvip`) must be checked against the live cart each refresh; the
-  registry `sale_posture` note records the last finding.
+- **Scope filter (rule 7):** peptides / peptide-adjacent only — SARMs, Rx, cosmetics, capsules/oral, topical/transdermal, supplies excluded inline.
+- **Cart-level AUTOMATIC discounts are invisible in product data.** A sitewide auto-coupon
+  applied with no code entry (Biolongevity's `longevityvip`, 50%) is modelled via the
+  registry `sitewide_sale` field and re-verified against the live cart each refresh.
+  **Coupon-gated** promotions (a code the buyer types — Amino Club's ENJOY30) are NEVER
+  modelled. See the rule below.
+- **The woo `on_sale` flag is unreliable** — some products flag `on_sale: true` with no
+  actual markdown (Biolongevity Klotho: `price == regular == sale`). Never trust the flag;
+  `onSale` is derived from `base < regular`.
+
+## What counts as a price (the sale-vs-coupon rule — settled)
+
+**A price on PP is what a buyer pays WITHOUT ENTERING ANY CODE.**
+
+- **Automatic discounts ARE priced** — product-level `sale_price` *and* cart-level
+  auto-discounts that apply with no code entry.
+  **Reference INCLUDE — Biolongevity:** sitewide 50%, automatic, no code; the storefront
+  renders it as a sale with the regular price struck through. Modelled via
+  `sitewide_sale=0.50` (the markdown is invisible in product data).
+- **Coupon-gated promotions are NEVER modelled** — anything requiring the buyer to type a
+  code is excluded, regardless of size.
+  **Reference EXCLUDE — Amino Club:** ENJOY30 (30%, code required). Evaluated 2026-07 and
+  deliberately excluded; its registry entry says so, to stop a future session
+  "rediscovering" it as an oversight.
+- **PP's own affiliate code is the only code represented**, applied on top of the no-code
+  price (`prices.ts` `effectivePrice = base × (1 − ppDiscount)`).
+- **We do not track, detect, or model any vendor's own coupon codes.** Do not build
+  anything that tries to.
+
+The `sitewide_sale` registry field (documented at the top of `registry.py`) is **only**
+for no-code automatic discounts — never for coupon-gated ones.
+
+## Refresh-cycle findings (2026-07 — don't rediscover these)
+
+- **Manual identity verification each refresh** (text scrape can't confirm these):
+  - **Glacier** publishes compound identifiers (CAS, MW) in product **label IMAGES**, not
+    page text — so its GLP codes stay `[coded, UNVERIFIED]` in the pull and must be
+    eyeballed on the live label images.
+  - **PureRawz** and **Vital Core** GLP-1.x / GLP-1/2/3 codes are also `UNVERIFIED` (no
+    COA/MW/identity in machine-readable data) — verify by hand or leave coded. PureRawz's
+    `LY3437943` IS verified (Lilly's published Retatrutide dev code).
+- **woo `on_sale` flag is unreliable** — flagged true with no markdown (Klotho). `onSale`
+  is computed as `base < regular`, never from the flag. (Also in Shared rules.)
+- **woo `max_pages`**: the old 3-page cap (300 products) silently truncated **behemoth-labz**
+  and **purerawz** (both fill 3 pages). Raised to 12 in `adapters.woo`; the loop still
+  breaks early for small catalogs. Re-confirm large catalogs aren't hitting the new ceiling.
+- **Not auto-pullable — do not re-investigate** (see `registry.BLOCKED` + adapter `cinc`):
+  **Aero** is CINC-only (Store API Cloudflare-403'd; pulled manually from embedded JSON),
+  and **Limitless Biotech** is permanently excluded (BigCommerce B2B, all prices login-gated).
 
 ## Coded GLP names — VERIFICATION STANDARD (never infer from convention)
 
