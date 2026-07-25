@@ -13,8 +13,13 @@ function fmt(n: number): string {
 const SALE_TAG =
   "ml-1.5 text-[10px] bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-300 px-1.5 py-0.5 rounded-full font-medium align-middle";
 
-/** Click-to-copy code pill. Code text always rendered (readable/selectable if JS fails). */
-function CopyCode({ code }: { code: string }) {
+// Shared control height so the code chip and the Shop button render at equal height and
+// sit on the same baseline (h-9 = 2.25rem), in both the desktop grid and the mobile stack.
+const ACTION_H = "h-9 inline-flex items-center justify-center";
+
+/** Click-to-copy code pill. Code text always rendered (readable/selectable if JS fails).
+ *  `className` lets a call site add layout (e.g. flex-[2] in the mobile share row). */
+function CopyCode({ code, className = "" }: { code: string; className?: string }) {
   const [copied, setCopied] = useState(false);
   return (
     <button
@@ -26,7 +31,7 @@ function CopyCode({ code }: { code: string }) {
       }}
       aria-label={`Copy discount code ${code}`}
       title="Click to copy"
-      className="font-mono text-xs font-semibold tracking-wide px-2.5 py-1.5 rounded-md border border-[#3A759F]/40 bg-[#3A759F]/10 text-[#3A759F] hover:bg-[#3A759F]/20 transition-colors whitespace-nowrap"
+      className={`${ACTION_H} font-mono text-xs font-semibold tracking-wide px-2.5 rounded-md border border-[#3A759F]/40 bg-[#3A759F]/10 text-[#3A759F] hover:bg-[#3A759F]/20 transition-colors whitespace-nowrap ${className}`}
     >
       {copied ? "Copied ✓" : code}
     </button>
@@ -149,7 +154,7 @@ export default function CompoundPriceTable({
                 <span className="block text-xs text-gray-400 dark:text-slate-500">{fmt(secondary)}</span>
               </div>
               <div>{r.isAffiliate && r.code ? <CopyCode code={r.code} /> : <span className="text-xs text-gray-300 dark:text-slate-600">—</span>}</div>
-              <div>{r.isAffiliate && r.affiliateUrl ? <a href={r.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm whitespace-nowrap">Shop</a> : null}</div>
+              <div>{r.isAffiliate && r.affiliateUrl ? <a href={r.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm whitespace-nowrap h-9 py-0">Shop</a> : null}</div>
             </div>
           );
         })}
@@ -163,8 +168,11 @@ export default function CompoundPriceTable({
           const secondary = unit === "permg" ? `${fmt(r.effectivePrice)} total` : `${fmt(r.effectivePerMg)} / mg`;
           return (
             <div key={i} className="panel-card p-3 tabular-nums">
-              <div className="flex items-center justify-between gap-2 flex-wrap">
-                <div className="flex items-center gap-2 flex-wrap">
+              {/* Price block holds the right edge (shrink-0 + reserved min width) and never
+                  wraps below; the left block (vendor·size·stock·badge) takes the rest and
+                  wraps within it — a badge dropping to a second line is fine. */}
+              <div className="flex items-start justify-between gap-2">
+                <div className="flex-1 min-w-0 flex items-center gap-2 flex-wrap">
                   {r.couponPage ? (
                     <Link href={r.couponPage} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.vendorName}</Link>
                   ) : (
@@ -174,7 +182,7 @@ export default function CompoundPriceTable({
                   <span className={`text-xs ${r.inStock ? "text-green-700" : "text-gray-400 dark:text-slate-500"}`}>{r.inStock ? "In stock" : "Out"}</span>
                   {badgeFor(r) && <span className="text-[10px] bg-[#3A759F]/10 text-[#3A759F] border border-[#3A759F]/20 px-1.5 py-0.5 rounded-full font-medium">{badgeFor(r)}</span>}
                 </div>
-                <div className="text-right">
+                <div className="shrink-0 min-w-[5rem] text-right">
                   <span className="text-sm font-bold text-[#16181B] dark:text-slate-100">{fmt(prom)}</span>
                   {r.isAffiliate && r.discountPct > 0 && <span className="ml-1.5 text-xs text-gray-400 dark:text-slate-500 line-through">{fmt(base)}</span>}
                   {r.onSale && <span className={SALE_TAG}>Sale</span>}
@@ -182,9 +190,10 @@ export default function CompoundPriceTable({
                 </div>
               </div>
               {r.entry.listedAs && <p className="text-xs text-gray-400 dark:text-slate-500 italic mt-1">listed as {r.entry.listedAs}</p>}
+              {/* Chip + Shop share the row (40/60, favoring the Shop CTA), no dead space. */}
               <div className="flex items-center gap-3 mt-2">
-                {r.isAffiliate && r.code && <CopyCode code={r.code} />}
-                {r.isAffiliate && r.affiliateUrl && <a href={r.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm">Shop</a>}
+                {r.isAffiliate && r.code && <CopyCode code={r.code} className="flex-[2]" />}
+                {r.isAffiliate && r.affiliateUrl && <a href={r.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm h-9 py-0 flex-[3]">Shop</a>}
               </div>
             </div>
           );
