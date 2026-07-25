@@ -116,6 +116,27 @@ is the likely endpoint (returns `{"products":[{variants:[{title, price, availabl
 The `sitewide_sale` registry field (documented at the top of `registry.py`) is **only**
 for no-code automatic discounts — never for coupon-gated ones.
 
+## Editorial scope boundary (what PP covers — settled)
+
+**PP excludes: clinical hormones, biologics, fusion proteins, native growth-factor
+proteins, and oncology compounds.** These are enforced in two places depending on how the
+name presents:
+
+- **Name-level** (obvious from the product name) → `normalize.py` `scope()` `_OUT_OF_SCOPE`.
+- **Slug-level** (a real, correctly-identified compound that resolves to a valid slug but
+  is out of scope) → `to_prices.py` `OUT_OF_SCOPE`. Distinct from `NOT_A_COMPOUND` (which is
+  for non-distinct branded blends). These must not be priced OR listed anywhere on PP
+  ("listed = linkable").
+
+Four worked examples (do **not** re-add these as an oversight):
+
+| Compound | Basis for exclusion | Enforced in |
+|---|---|---|
+| **Gonadorelin** | clinical reproductive hormone | `scope()` name-level |
+| **Triptorelin** | clinical reproductive hormone (GnRH agonist) | `scope()` name-level |
+| **PNC-27** | oncology (p53-derived anticancer peptide) — PP has no oncology category | `to_prices` `OUT_OF_SCOPE` |
+| **Klotho** | native α-Klotho growth-factor/longevity protein ("research-grade klotho protein") | `to_prices` `OUT_OF_SCOPE` |
+
 ## Refresh-cycle findings (2026-07 — don't rediscover these)
 
 - **Manual identity verification each refresh** (text scrape can't confirm these):

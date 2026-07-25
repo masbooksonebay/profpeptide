@@ -103,9 +103,9 @@ export default function PricesMaster() {
                       </>
                     )}
                   </span>
-                  {/* compare link */}
+                  {/* compare link — a single vendor has nothing to compare, so "View price" */}
                   <Link href={`/prices/${c.slug}`} className="text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">
-                    Compare {c.vendorCount} &rarr;
+                    {c.vendorCount === 1 ? "View price" : `Compare ${c.vendorCount}`} &rarr;
                   </Link>
                 </div>
               ))}
