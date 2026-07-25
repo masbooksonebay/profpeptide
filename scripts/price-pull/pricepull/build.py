@@ -13,10 +13,17 @@ def _row(cells):
     return "| " + " | ".join(str(c) for c in cells) + " |"
 
 
-def classify(vendor, product, ten_vial_kit=False):
+def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
     """Yield classified rows for one product:
-       ('single'|'blend'|'spray', display, size_label, base, in_stock, ratio, components)
-    or ('exclude', reason)."""
+       ('single'|'blend'|'spray', display, size_label, base, in_stock, ratio, components,
+        regular_or_None, on_sale)
+    or ('exclude', reason).
+
+    base = current effective price a buyer pays PRE-PP-code = the product's current price
+    (sale_price when on sale) x (1 - sitewide_sale). `sitewide_sale` covers cart-level
+    auto-coupons that never appear in product data (Biolongevity's 'longevityvip' 50%).
+    on_sale is computed as base < regular (the woo `on_sale` flag is unreliable — some
+    vendors flag it with no actual markdown)."""
     name = product['name']
 
     dec = decoders.decode(vendor, name)
@@ -47,9 +54,13 @@ def classify(vendor, product, ten_vial_kit=False):
         else:
             kind, disp = ('single_bk' if backlog else 'single'), N.display_of(slug, backlog)
 
-    for size_label, base, ins, form in vm.extract_rows(product, ten_vial_kit=ten_vial_kit):
-        if base is None or base <= 0:      # drop $0 / hidden-price rows
+    for size_label, price, regular, ins, form in vm.extract_rows(product, ten_vial_kit=ten_vial_kit):
+        if price is None or price <= 0:    # drop $0 / hidden-price rows
             continue
+        base = round(price * (1 - sitewide_sale), 2)       # apply sitewide cart-coupon
+        reg = regular if regular is not None else base
+        on_sale = base < reg - 0.005                        # cent tolerance
+        reg_out = reg if on_sale else None                  # only carry the anchor when it's a real markdown
         if dec_size and N.mg_value(size_label) is None:   # code encodes mg (Ascension)
             size_label = f"{dec_size}mg"
         if form == 'tablet':               # oral forms out of scope
@@ -64,26 +75,27 @@ def classify(vendor, product, ten_vial_kit=False):
                 mgs = re.findall(r'(\d+(?:\.\d+)?)\s*mg', name, re.I)
                 ratio = 'not published'
                 tm = sum(float(x) for x in mgs) if len(mgs) >= 2 else N.mg_value(size_label)
-            yield ('blend', disp, (f"{tm:g}mg" if tm else N.size_label(size_label)), base, ins, ratio, comps)
+            yield ('blend', disp, (f"{tm:g}mg" if tm else N.size_label(size_label)), base, ins, ratio, comps, reg_out, on_sale)
         elif rowkind == 'spray':
-            yield ('spray', disp, N.size_label(size_label), base, ins, None, None)
+            yield ('spray', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale)
         else:
-            yield ('single', disp, N.size_label(size_label), base, ins, None, None)
+            yield ('single', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale)
 
 
-def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_vial_kit=False):
+def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_vial_kit=False, sitewide_sale=0.0):
     """meta: {name, code, discount, url}. Returns the markdown section text."""
     singles, blends, sprays, excl = {}, [], [], set()
     for p in products:
-        for r in classify(vendor, p, ten_vial_kit=ten_vial_kit):
+        for r in classify(vendor, p, ten_vial_kit=ten_vial_kit, sitewide_sale=sitewide_sale):
             if r[0] == 'exclude':
                 excl.add(r[1]); continue
-            kind, disp, size, base, ins, ratio, comps = r
+            kind, disp, size, base, ins, ratio, comps, reg, on_sale = r
             st = "✓" if ins else "✗"
+            reg_str = f"${reg:,.2f}" if on_sale and reg else "—"    # Regular column: anchor only when on sale
             if kind == 'single':
                 mg = N.mg_value(size)
                 key = (disp, size)
-                cand = (base, (disp, size, f"${base:,.2f}", N.per_mg(base, mg), st))
+                cand = (base, (disp, size, f"${base:,.2f}", N.per_mg(base, mg), reg_str, st))
                 if key not in singles or base < singles[key][0]:   # min base per (compound,size)
                     singles[key] = cand
             elif kind == 'blend':
@@ -104,7 +116,7 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
     L.append(f"- **sale posture:** {posture}")
     L.append("")
     L.append("### Single compounds")
-    L.append(_row(["Compound", "Size", "Base", "$/mg", "Stock"])); L.append(_row(["---"] * 5))
+    L.append(_row(["Compound", "Size", "Base", "$/mg", "Regular", "Stock"])); L.append(_row(["---"] * 6))
     for r in sorted(singles, key=lambda x: (x[0].lower(), N.mg_value(x[1]) or 0)):
         L.append(_row(list(r)))
     L.append("")

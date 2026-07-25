@@ -45,9 +45,12 @@ VENDORS = {
         notes="Next.js custom; products under /products/ (incl. uppercase/parens slugs like GLP3-(RT)). "
               "Variant objects use size/price/compareAt/stockQty. GLP 3-(RT)=Retatrutide COA-verified."),
     "biolongevity-labs": dict(name="Biolongevity Labs", domain="biolongevitylabs.com", adapter="woo",
-        variation_model="dosage", coded_decoder=False,
-        sale_posture="⚠️ Sitewide CART-LEVEL auto-coupon 'longevityvip' (50% off), EXCLUSIVE with the code.",
-        notes="Check the cart each refresh — the auto-coupon is invisible in product data. Publishes blend ratios."),
+        variation_model="dosage", coded_decoder=False, sitewide_sale=0.50,
+        sale_posture="⚠️ Sitewide CART-LEVEL auto-coupon 'longevityvip' (50% off) — invisible in product data, "
+                     "so applied here via sitewide_sale=0.50 (base = list x 0.50). Registry previously noted the "
+                     "coupon as EXCLUSIVE with the PP code; per Mark (2026-07) PP codes STACK, so the code applies on "
+                     "top. Re-check the live cart each refresh (coupon %, and whether stacking still holds).",
+        notes="Sitewide 50% is a cart auto-coupon; product prices show no markdown (on_sale flag is unreliable). Publishes blend ratios."),
     # ---- batch 1 ----
     "almighty-peptides": dict(name="Almighty Peptides", domain="www.almightypeptides.com", adapter="woo",
         variation_model="dosage", coded_decoder=False, sale_posture="Product sale 2/61; code stacks.",

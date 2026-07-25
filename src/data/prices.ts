@@ -66,9 +66,14 @@ export interface PriceEntry {
   vendor: string;
   /** vial size in mg (500mcg = 0.5) */
   sizeMg: number;
-  /** list price in USD, BEFORE the affiliate code */
+  /** current EFFECTIVE price in USD a buyer pays BEFORE the PP code — i.e. the vendor's
+   *  sale price (incl. sitewide cart-coupons like Biolongevity's) when on sale, else list. */
   basePrice: number;
   inStock: boolean;
+  /** the standing list price, present ONLY when this row is on sale (basePrice < regularPrice). */
+  regularPrice?: number;
+  /** true when basePrice reflects a markdown off regularPrice. */
+  onSale?: boolean;
   /** vendor's coded product name, when a decoded compound is sold under a code
    *  (e.g. "GLP-3 RT" → Retatrutide). Renders as "Retatrutide (listed as GLP-3 RT)". */
   listedAs?: string;
@@ -108,6 +113,8 @@ export interface PriceRow {
   effectivePrice: number;
   effectivePerMg: number;
   inStock: boolean;
+  /** true when basePrice is a sale price (a deeper markdown off the vendor's list price). */
+  onSale: boolean;
 }
 
 /**
@@ -141,6 +148,7 @@ export function compoundRows(compoundSlug: string): PriceRow[] {
         effectivePrice: affiliate ? codePrice : entry.basePrice,
         effectivePerMg: affiliate ? codePerMg : basePerMg,
         inStock: entry.inStock,
+        onSale: entry.onSale ?? false,
       };
     });
 }

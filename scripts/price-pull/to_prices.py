@@ -98,6 +98,7 @@ unresolved = []           # STOP condition
 unmapped_coded = []       # coded SKUs from the 3 GLP vendors with no confirmed mapping (report)
 decoded_count = 0         # coded rows successfully decoded (Part A)
 stray_paren = []          # verify the artifact is gone
+anomalies = []            # suspicious sale values (sale>=regular, >90% off) — report, never silently accept
 
 for s in secs:
     name = re.match(r"## VENDOR: (.+)", s).group(1).strip()
@@ -130,7 +131,13 @@ for s in secs:
         if len(c) < 5 or "compound" in c[0].lower():
             continue
         doc_single_total += 1
-        comp_cell, size_cell, base_cell, permg_cell, stock_cell = c[0], c[1], c[2], c[3], c[4]
+        comp_cell, size_cell, base_cell, permg_cell = c[0], c[1], c[2], c[3]
+        # Single-compounds table gained a "Regular" column: | Compound | Size | Base | $/mg | Regular | Stock |
+        # (older 5-col rows, if any, have no Regular). Base = current effective price pre-code.
+        if len(c) >= 6:
+            regular_cell, stock_cell = c[4], c[5]
+        else:
+            regular_cell, stock_cell = "—", c[4]
 
         listed_as = None
 
@@ -173,11 +180,21 @@ for s in secs:
             excl["noprice_single"] += 1
             continue
 
+        # sale anchor (regular list price) — present in the doc only when the row is on sale
+        regular = None if regular_cell in ("—", "-", "") else parse_base(regular_cell)
+        on_sale = regular is not None and regular > base + 0.005
+        if regular is not None and not on_sale:
+            anomalies.append((name, comp_cell, f"regular ${regular} <= base ${base} (not a markdown)"))
+        elif on_sale and (1 - base / regular) > 0.90:
+            anomalies.append((name, comp_cell, f">90% off: base ${base} vs regular ${regular}"))
+
         rows.append({
             "compound": slug, "compoundName": N.DISPLAY.get(slug, slug), "vendor": vslug,
             "sizeMg": mg, "basePrice": base,
             "inStock": stock_cell == "✓",
             "listedAs": listed_as,
+            "regularPrice": regular if on_sale else None,
+            "onSale": on_sale,
         })
         if vslug in RETIRED:
             retired_row_count += 1
@@ -239,6 +256,9 @@ for r in rows:
              f'basePrice: {ts_val(r["basePrice"])}', f'inStock: {ts_val(r["inStock"])}']
     if r["listedAs"]:
         parts.append(f'listedAs: {ts_val(r["listedAs"])}')
+    if r.get("onSale"):
+        parts.append(f'regularPrice: {ts_val(r["regularPrice"])}')
+        parts.append('onSale: true')
     lines.append("  { " + ", ".join(parts) + " },")
 lines.append("];")
 lines.append("")
@@ -277,6 +297,22 @@ _ss = len(rows) + excl['unverified_single'] + excl['nosize_single'] + excl['nopr
 print(f"  singles arithmetic closes: {_ss==doc_single_total} "
       f"({len(rows)}+{excl['unverified_single']}+{excl['nosize_single']}+{excl['noprice_single']}+{excl['not_a_compound']}={doc_single_total})")
 print(f"non-single excluded (separate tracks): blends={excl['blends']} sprays={excl['sprays']}")
+
+# --- sale reporting ----------------------------------------------------------
+sale_rows = [r for r in rows if r.get("onSale")]
+from collections import defaultdict as _dds
+_sv = _dds(int)
+for r in sale_rows:
+    _sv[r["vendor"]] += 1
+print(f"\nsale rows (base < regular): {len(sale_rows)} / {len(rows)}")
+print("  on-sale rows per vendor:", dict(sorted(_sv.items(), key=lambda x: -x[1])))
+if anomalies:
+    print(f"  ⚠️ price anomalies ({len(anomalies)}):")
+    for v, cell, why in anomalies[:20]:
+        print(f"     {v}: {cell} — {why}")
+else:
+    print("  price anomalies: none")
+
 print(f"\ndedupe (same vendor+compound+size under two names): merged {len(dedupe_merged)}, price-conflicts kept-both {len(dedupe_conflict)}")
 for key, names, kept in dedupe_merged:
     print(f"   merged {key[0]} {key[1]} {key[2]}mg: {names} -> kept listedAs={kept!r}")

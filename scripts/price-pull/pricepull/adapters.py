@@ -1,10 +1,11 @@
 """Platform adapters — fetch a vendor's catalog and normalize it.
 
 Every adapter returns a list of NormProduct dicts:
-    {'name', 'regular', 'in_stock', 'variations':[{'attrs':[(name,val)], 'regular', 'in_stock'}],
-     'description'}
-`regular` is the STANDING base price (regular_price / current price), never a sale
-price. Adapters expose the four data shapes discovered across the vendor set:
+    {'name', 'price', 'regular', 'in_stock',
+     'variations':[{'attrs':[(name,val)], 'price', 'regular', 'in_stock'}], 'description'}
+`price` is the CURRENT effective price a buyer pays (sale_price when on sale, else
+regular_price); `regular` is the standing list price. Downstream, base = `price`, and a
+row is on-sale when price < regular. Adapters expose the four data shapes below:
 
   woo            WooCommerce Store API (/wp-json/wc/store/v1/products + /products/<id>)
   purity_api     Purity's custom Next.js /api/products endpoint
@@ -103,13 +104,14 @@ def woo(domain, per_page=100, max_pages=12):
         for v in p.get('variations', []):
             vf = vfmap.get(v['id'])
             attrs = [(a.get('name', ''), a.get('value', '')) for a in v.get('attributes', [])]
-            if vf:
-                variations.append({'attrs': attrs, 'regular': _cents(vf.get('prices', {}), 'regular_price'),
-                                   'in_stock': vf.get('is_in_stock')})
-            else:
-                variations.append({'attrs': attrs, 'regular': _cents(pr, 'regular_price'),
-                                   'in_stock': p.get('is_in_stock')})
-        out.append({'name': p['name'], 'regular': _cents(pr, 'regular_price'),
+            vpr = vf.get('prices', {}) if vf else pr
+            # `price` is the CURRENT price (sale_price when on sale, else regular_price);
+            # `regular` is the standing list price. Both come straight from the Store API.
+            variations.append({'attrs': attrs,
+                               'price': _cents(vpr, 'price'), 'regular': _cents(vpr, 'regular_price'),
+                               'in_stock': (vf.get('is_in_stock') if vf else p.get('is_in_stock'))})
+        out.append({'name': p['name'],
+                    'price': _cents(pr, 'price'), 'regular': _cents(pr, 'regular_price'),
                     'in_stock': p.get('is_in_stock'), 'variations': variations,
                     'description': (p.get('description', '') + ' ' + p.get('short_description', ''))})
     return out
@@ -126,7 +128,13 @@ def purity_api(domain, path="/api/products"):
             price = float(p.get('price') or 0)
         except Exception:
             price = None
-        out.append({'name': p['name'], 'regular': price,
+        # Purity's API exposes a single price per product (no sale/compare field), so
+        # current price == regular. If a sale/regular field ever appears, read it here.
+        try:
+            regular = float(p.get('regular_price') or p.get('compare_at_price') or 0) or price
+        except Exception:
+            regular = price
+        out.append({'name': p['name'], 'price': price, 'regular': regular,
                     'in_stock': p.get('stock_status') == 'instock', 'variations': [],
                     'description': (p.get('description', '') or '') + ' ' + (p.get('short_description', '') or '')})
     return out
@@ -181,14 +189,15 @@ def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', 
         desc = re.search(r'"description":"([^"]{0,400})"', blob)
         desc = desc.group(1) if desc else ''
 
-        # shape 1: RSC variants[] array  (name=size, price=current, compare_at=anchor)
+        # shape 1: RSC variants[] array  (name=size, price=current, compare_at=anchor).
+        # 4-tuple (size, current_price, compare_at_anchor, stock); anchor '' when null.
         variants = re.findall(
-            r'"name":"([^"]+)","sku":"[^"]*","price":([0-9.]+),"compare_at_price":(?:[0-9.]*|null),"stock_quantity":([0-9]+)',
+            r'"name":"([^"]+)","sku":"[^"]*","price":([0-9.]+),"compare_at_price":([0-9.]*|null),"stock_quantity":([0-9]+)',
             blob)
         # shape 1b: alt variant object (Science Based): size/price/compareAt/stockQty, no sku field
         if not variants:
             variants = re.findall(
-                r'"size":"([^"]+)","price":([0-9.]+),"compareAt":(?:null|[0-9.]+|"[^"]*"),"stockQty":([0-9]+)',
+                r'"size":"([^"]+)","price":([0-9.]+),"compareAt":(null|[0-9.]+|"[^"]*"),"stockQty":([0-9]+)',
                 blob)
         # shape 1c: Medusa catalog variant (Synthesis .co): label=size, inStock bool,
         # price "$$NN.NN". Single-size products expose a one-entry variants[] too.
@@ -196,7 +205,7 @@ def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', 
             v3 = re.findall(
                 r'"label":"([^"]+)","inStock":(true|false),(?:"image":"[^"]*",)?"price":"\$*([0-9]+(?:\.[0-9]+)?)"',
                 blob)
-            variants = [(sz, pr, '1' if ins == 'true' else '0') for sz, ins, pr in v3]
+            variants = [(sz, pr, '', '1' if ins == 'true' else '0') for sz, ins, pr in v3]  # no anchor field
         # shape 1d: full Medusa product (Amino Club, behind a consent gate) — the main
         # product's variants[] each nest a calculated_price. Base = original_amount (a
         # sitewide COUPON, not a price-list markdown, is the only discount so it isn't in
@@ -214,18 +223,25 @@ def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', 
                     orig = re.search(r'"original_amount":([0-9.]+)', c)
                     if t and orig:
                         oos = re.search(r'"out_of_stock":(true|false)', c)
-                        variants.append((t.group(1), orig.group(1), '0' if (oos and oos.group(1) == 'true') else '1'))
+                        # amino-club: original_amount is the base (sitewide coupon isn't in data), no anchor
+                        variants.append((t.group(1), orig.group(1), '', '0' if (oos and oos.group(1) == 'true') else '1'))
         if variants:
-            vs = [{'attrs': [('Size', sz)], 'regular': float(pr), 'in_stock': int(sq) > 0}
-                  for sz, pr, sq in variants]
-            out.append({'name': name, 'regular': vs[0]['regular'], 'in_stock': any(v['in_stock'] for v in vs),
-                        'variations': vs, 'description': desc})
+            def _anchor(cmp_str, price):
+                try:
+                    a = float(str(cmp_str).strip('"'))
+                except (ValueError, TypeError):
+                    return price
+                return a if a > price else price   # anchor only when it exceeds current price
+            vs = [{'attrs': [('Size', sz)], 'price': float(pr), 'regular': _anchor(cmp, float(pr)),
+                   'in_stock': int(sq) > 0} for sz, pr, cmp, sq in variants]
+            out.append({'name': name, 'price': vs[0]['price'], 'regular': vs[0]['regular'],
+                        'in_stock': any(v['in_stock'] for v in vs), 'variations': vs, 'description': desc})
             continue
 
-        # shape 2: JSON-LD Offer  (single price + availability)
+        # shape 2: JSON-LD Offer  (single price + availability) — one price, no anchor
         off = re.search(r'"price":([0-9.]+),"priceValidUntil"[^}]*?"availability":"https://schema.org/(InStock|OutOfStock)"', blob)
         if off:
-            out.append({'name': name, 'regular': float(off.group(1)),
+            out.append({'name': name, 'price': float(off.group(1)), 'regular': float(off.group(1)),
                         'in_stock': off.group(2) == 'InStock', 'variations': [], 'description': desc})
     return out
 

@@ -48,7 +48,8 @@ def build_vendor(slug, cfg, meta):
          "url": re.sub(r"^https?://", "", meta.get("url") or cfg["domain"]).split("/")[0],
          "sale_posture": cfg.get("sale_posture", "")}
     return build.build_section(slug, m, products, pulled_date(),
-                               ten_vial_kit=cfg.get("variation_model") == "ten-vial-kit")
+                               ten_vial_kit=cfg.get("variation_model") == "ten-vial-kit",
+                               sitewide_sale=cfg.get("sitewide_sale", 0.0))
 
 
 def replace_section(doc_text, slug, name, section_md):

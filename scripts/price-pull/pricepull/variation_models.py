@@ -60,8 +60,19 @@ _KIT10 = re.compile(r'(\d+(?:\.\d+)?)\s*mg\s*x\s*10\s*vials', re.I)
 _TEN_VIAL = re.compile(r'x\s*10\s*vials?|\b10\s*[-\s]?vials?\b|\(\s*10\s*vials?\s*\)', re.I)
 
 
+def _pr(o):
+    """(current_price, regular_price) for a product/variation dict; regular falls back to
+    price when an adapter didn't supply a distinct anchor."""
+    price = o.get('price', o.get('regular'))
+    regular = o.get('regular')
+    if regular is None:
+        regular = price
+    return price, regular
+
+
 def extract_rows(product, ten_vial_kit=False):
-    """Return [(size_label, base_price, in_stock, form)] for one normalized product.
+    """Return [(size_label, price, regular, in_stock, form)] for one normalized product.
+    `price` is the current effective price (sale-aware); `regular` is the list anchor.
 
     `ten_vial_kit` (from the vendor's registry variation_model) enables the "...Kit"
     per-vial division below. It is vendor-scoped on purpose: a global "10 vials" match
@@ -73,17 +84,20 @@ def extract_rows(product, ten_vial_kit=False):
 
     # --- simple products (no variation axis) ---
     if not variations:
-        # ten-vial-kit (Royal): "Nmgx10vials" -> per-vial price = kit / 10
+        pprice, pregular = _pr(product)
+        # ten-vial-kit (Royal): "Nmgx10vials" -> per-vial price = kit / 10 (both price & regular)
         m = _KIT10.search(name)
-        if m and product.get('regular') is not None:
-            return [(m.group(1) + 'mg', round(product['regular'] / 10, 2), product.get('in_stock'), 'vial')]
+        if m and pprice is not None:
+            return [(m.group(1) + 'mg', round(pprice / 10, 2),
+                     round(pregular / 10, 2) if pregular is not None else None, product.get('in_stock'), 'vial')]
         # "...Kit" priced as a 10-vial kit, but ONLY for the ten-vial-kit vendor AND only
         # when name/description proves 10 vials (Pinealon "(10 Vials)", Dihexa "10 Vial Kit").
         size = parse_size(name)
-        if ten_vial_kit and size and product.get('regular') is not None and \
+        if ten_vial_kit and size and pprice is not None and \
                 _TEN_VIAL.search(name + ' ' + (product.get('description') or '')):
-            return [(size, round(product['regular'] / 10, 2), product.get('in_stock'), 'vial')]
-        return [(size or name, product.get('regular'), product.get('in_stock'), 'vial')]
+            return [(size, round(pprice / 10, 2),
+                     round(pregular / 10, 2) if pregular is not None else None, product.get('in_stock'), 'vial')]
+        return [(size or name, pprice, pregular, product.get('in_stock'), 'vial')]
 
     # --- variable products ---
     rows = []
@@ -97,9 +111,10 @@ def extract_rows(product, ten_vial_kit=False):
                 break
         if not size:
             size = parse_size(name)
-        rows.append((size or name, v.get('regular'), v.get('in_stock'), form_of(values), is_kit(values)))
+        vprice, vregular = _pr(v)
+        rows.append((size or name, vprice, vregular, v.get('in_stock'), form_of(values), is_kit(values)))
 
     # drop kit/bulk variations when a single-unit variation exists (keep single-vial base)
-    non_kit = [r for r in rows if not r[4]]
+    non_kit = [r for r in rows if not r[5]]
     use = non_kit if non_kit else rows
-    return [(r[0], r[1], r[2], r[3]) for r in use]
+    return [(r[0], r[1], r[2], r[3], r[4]) for r in use]

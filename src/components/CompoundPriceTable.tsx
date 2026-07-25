@@ -8,6 +8,11 @@ function fmt(n: number): string {
   return "$" + n.toFixed(2);
 }
 
+// Neutral pill (existing gray tokens — no new colour) marking that the struck figure is a
+// sale price with a deeper markdown off list. Kept distinct from the accent "Best" badges.
+const SALE_TAG =
+  "ml-1.5 text-[10px] bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-300 px-1.5 py-0.5 rounded-full font-medium align-middle";
+
 /** Click-to-copy code pill. Code text always rendered (readable/selectable if JS fails). */
 function CopyCode({ code }: { code: string }) {
   const [copied, setCopied] = useState(false);
@@ -140,6 +145,7 @@ export default function CompoundPriceTable({
                 {r.isAffiliate && r.discountPct > 0 && (
                   <span className="ml-1.5 text-xs text-gray-400 dark:text-slate-500 line-through">{fmt(base)}</span>
                 )}
+                {r.onSale && <span className={SALE_TAG}>Sale</span>}
                 <span className="block text-xs text-gray-400 dark:text-slate-500">{fmt(secondary)}</span>
               </div>
               <div>{r.isAffiliate && r.code ? <CopyCode code={r.code} /> : <span className="text-xs text-gray-300 dark:text-slate-600">—</span>}</div>
@@ -171,6 +177,7 @@ export default function CompoundPriceTable({
                 <div className="text-right">
                   <span className="text-sm font-bold text-[#16181B] dark:text-slate-100">{fmt(prom)}</span>
                   {r.isAffiliate && r.discountPct > 0 && <span className="ml-1.5 text-xs text-gray-400 dark:text-slate-500 line-through">{fmt(base)}</span>}
+                  {r.onSale && <span className={SALE_TAG}>Sale</span>}
                   <span className="block text-xs text-gray-400 dark:text-slate-500">{secondary}</span>
                 </div>
               </div>
