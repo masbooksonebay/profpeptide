@@ -50,16 +50,13 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
       </p>
       <p className="text-sm text-gray-400 dark:text-slate-500 mb-4">Prices updated {PRICES_UPDATED_DATE}</p>
 
-      <div className="flex flex-wrap items-center gap-4 mb-6 text-sm">
-        {profiled && (
+      {profiled && (
+        <div className="flex flex-wrap items-center gap-4 mb-6 text-sm">
           <Link href={`/peptides/${c.slug}`} className="text-[#3A759F] hover:underline font-medium">
             Read the {c.name} research profile &rarr;
           </Link>
-        )}
-        <a href="https://finnrick.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-slate-400 hover:text-[#3A759F]">
-          Purity testing: Finnrick &rarr;
-        </a>
-      </div>
+        </div>
+      )}
 
       <CompoundPriceTable compoundSlug={c.slug} compoundName={c.name} />
 

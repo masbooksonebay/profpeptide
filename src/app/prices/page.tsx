@@ -18,13 +18,7 @@ export default function PricesPage() {
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-2 max-w-2xl">
         Compare research-peptide prices across vendors. Prices are shown post-code (after each vendor&apos;s discount, where one applies), normalized to price-per-mg so you can compare across vial sizes, and sorted cheapest-first.
       </p>
-      <p className="text-sm text-gray-400 dark:text-slate-500 mb-4">Prices updated {PRICES_UPDATED_DATE}</p>
-
-      <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-8 border-l-2 border-[#D9DEE4] dark:border-slate-700 pl-3">
-        Comparing on price alone isn&apos;t enough &mdash; for independent third-party purity testing of research peptides, see{" "}
-        <a href="https://finnrick.com" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">Finnrick</a>{" "}
-        as a purity resource. We link it as a reference; we do not republish their data.
-      </p>
+      <p className="text-sm text-gray-400 dark:text-slate-500 mb-6">Prices updated {PRICES_UPDATED_DATE}</p>
 
       <PricesMaster />
 
