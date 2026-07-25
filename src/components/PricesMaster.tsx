@@ -9,6 +9,13 @@ function fmt(n: number): string {
   return "$" + n.toFixed(2);
 }
 
+// ONE shared explicit column template applied identically to every card, mirroring the
+// compound-page grid discipline (same gap rhythm, same left-edge). No `auto` — only the
+// compound-name column flexes; vendor-count / from-price / Compare are fixed widths so
+// every card resolves to the same column x. Collapses to a single-column stack below sm.
+const CARD =
+  "panel-card px-4 py-3 grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_6rem_8rem_7.5rem] items-center gap-x-4 gap-y-1 text-left";
+
 /**
  * Master compound INDEX (not a table of tables). Grouped by the /peptides library
  * taxonomy in its display order; compounds alphabetical within each category. Each row
@@ -73,10 +80,7 @@ export default function PricesMaster() {
             </h2>
             <div className="space-y-2">
               {g.compounds.map((c) => (
-                <div
-                  key={c.slug}
-                  className="panel-card px-4 py-3 grid grid-cols-[minmax(0,1fr)_auto] sm:grid-cols-[minmax(0,1.6fr)_auto_auto_auto] items-center gap-x-5 gap-y-1"
-                >
+                <div key={c.slug} className={CARD}>
                   {/* compound name */}
                   {c.hasProfile ? (
                     <Link href={`/peptides/${c.slug}`} className="text-sm font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors min-w-0 truncate">
@@ -90,7 +94,7 @@ export default function PricesMaster() {
                     {c.vendorCount} vendor{c.vendorCount === 1 ? "" : "s"}
                   </span>
                   {/* from-price */}
-                  <span className="text-sm text-gray-600 dark:text-slate-300 whitespace-nowrap justify-self-end sm:justify-self-start">
+                  <span className="text-sm text-gray-600 dark:text-slate-300 whitespace-nowrap">
                     {c.cheapest != null && (
                       <>
                         <span className="text-gray-400 dark:text-slate-500 text-xs">from </span>
@@ -100,7 +104,7 @@ export default function PricesMaster() {
                     )}
                   </span>
                   {/* compare link */}
-                  <Link href={`/prices/${c.slug}`} className="col-span-2 sm:col-span-1 text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap justify-self-end">
+                  <Link href={`/prices/${c.slug}`} className="text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">
                     Compare {c.vendorCount} &rarr;
                   </Link>
                 </div>
