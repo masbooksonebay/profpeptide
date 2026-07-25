@@ -150,6 +150,11 @@ export function compoundVendorCount(compoundSlug: string): number {
   return new Set(compoundRows(compoundSlug).map((r) => r.entry.vendor)).size;
 }
 
+/** Distinct non-retired vendors across the whole price dataset (for the master title). */
+export function priceVendorCount(): number {
+  return new Set(priceEntries.filter((e) => !isRetired(e.vendor)).map((e) => e.vendor)).size;
+}
+
 /** Distinct compounds present in the price data (for static params — covers ALL, no 404s). */
 export function priceCompounds(): { slug: string; name: string }[] {
   const out: { slug: string; name: string }[] = [];

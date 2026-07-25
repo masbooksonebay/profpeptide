@@ -19,14 +19,19 @@ export function generateMetadata({ params }: { params: { compound: string } }): 
   const c = lookup(params.compound);
   if (!c) return {};
   const vendorCount = compoundVendorCount(c.slug);
+  const v = vendorCount === 1 ? "vendor" : "vendors";
   const rows = compoundRows(c.slug);
-  const cheapest = rows.length ? Math.min(...rows.map((r) => r.effectivePrice)) : null;
-  const range = cheapest != null ? ` Cheapest from $${cheapest.toFixed(2)}.` : "";
+  const prices = rows.map((r) => r.effectivePrice);
+  const low = prices.length ? Math.min(...prices) : null;
+  const high = prices.length ? Math.max(...prices) : null;
+  const range =
+    low != null ? (low === high ? ` Priced at $${low.toFixed(2)}.` : ` Prices from $${low!.toFixed(2)} to $${high!.toFixed(2)}.`) : "";
   return {
     ...buildPageMetadata({
       path: `/prices/${c.slug}`,
-      title: `Cheapest ${c.name} — Price Comparison Across Vendors | Prof. Peptide`,
-      description: `Compare ${c.name} prices across ${vendorCount} research-peptide vendor${vendorCount === 1 ? "" : "s"} — post-code pricing, per-mg normalization, cheapest-first.${range}`,
+      // Title leads neutral but keeps "Cheapest" for search matching; H1 (below) drops it.
+      title: `${c.name} Price Comparison — Cheapest Prices from ${vendorCount} Vendor${vendorCount === 1 ? "" : "s"} | Prof. Peptide`,
+      description: `Compare ${c.name} prices from ${vendorCount} research-peptide ${v} — find the lowest price and cost per mg, normalized across vial sizes.${range}`,
     }),
     // ≥3 vendors → indexable; thinner pages stay noindex,follow (still crawlable/linked).
     robots: vendorCount >= 3 ? undefined : { index: false, follow: true },
@@ -44,9 +49,9 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
         &larr; Back to Price Comparison
       </Link>
 
-      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Cheapest {c.name} — Price Comparison</h1>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-2">{c.name} Price Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-2 max-w-2xl">
-        {c.name} prices across vendors — post-code pricing (base struck through where a code applies), normalized to price-per-mg, sorted cheapest-first.
+        {c.name} prices across vendors — post-code pricing (base struck through where a code applies), normalized to price-per-mg, sorted by lowest price.
       </p>
       <p className="text-sm text-gray-400 dark:text-slate-500 mb-4">Prices updated {PRICES_UPDATED_DATE}</p>
 
