@@ -44,7 +44,7 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
   const profiled = hasProfile(c.slug);
 
   return (
-    <div className="section max-w-3xl">
+    <div className="section max-w-4xl">
       <Link href="/prices" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
         &larr; Back to Price Comparison
       </Link>

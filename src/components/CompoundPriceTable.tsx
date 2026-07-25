@@ -2,14 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { compoundRows, type Unit } from "@/data/prices";
+import { compoundRows, type Unit, type PriceRow } from "@/data/prices";
 
 function fmt(n: number): string {
   return "$" + n.toFixed(2);
 }
 
-/** Click-to-copy discount-code pill. The code text is always rendered (readable +
- *  selectable even if JS fails); the click-to-copy is a progressive enhancement. */
+/** Click-to-copy code pill. Code text always rendered (readable/selectable if JS fails). */
 function CopyCode({ code }: { code: string }) {
   const [copied, setCopied] = useState(false);
   return (
@@ -22,7 +21,7 @@ function CopyCode({ code }: { code: string }) {
       }}
       aria-label={`Copy discount code ${code}`}
       title="Click to copy"
-      className="font-mono text-sm font-semibold tracking-wide px-3 py-2 rounded-lg border border-[#3A759F]/40 bg-[#3A759F]/10 text-[#3A759F] hover:bg-[#3A759F]/20 transition-colors whitespace-nowrap"
+      className="font-mono text-xs font-semibold tracking-wide px-2.5 py-1.5 rounded-md border border-[#3A759F]/40 bg-[#3A759F]/10 text-[#3A759F] hover:bg-[#3A759F]/20 transition-colors whitespace-nowrap"
     >
       {copied ? "Copied ✓" : code}
     </button>
@@ -30,15 +29,14 @@ function CopyCode({ code }: { code: string }) {
 }
 
 /**
- * One compound's vendor price table.
- *  - Total ↔ $/mg toggle, default $/mg (vial sizes span 2mg–1500mg, so a total-price
- *    ranking across them is meaningless). Drives both the figures and the sort.
- *  - RIGHT of each row, in reading order: price (headline + struck base + secondary
- *    metric beneath, both labeled) → click-to-copy code → Shop.
- *  - "Best $/mg" badge: exactly one per compound, on the lowest $/mg IN-STOCK row,
- *    independent of the active toggle (lowest total is just the smallest vial).
- *  - Affiliate rows: dual pricing + code + Shop. Non-affiliate: single price, no code
- *    chip, no Shop link — ranked honestly on that price.
+ * One compound's vendor prices as a scannable columnar grid.
+ *  - Default $/mg (vials span 2mg–1500mg). Toggle drives figures + sort.
+ *  - Desktop (≥ sm / 640px): labeled header row (Vendor · Size · Stock · Price · Code · —);
+ *    labels live in the header, never repeated per row. Numeric columns use tabular-nums
+ *    with aligned decimals. Thin dividers, continuous list, left-aligned column system.
+ *  - Mobile (< sm): collapses to a stacked per-vendor block.
+ *  - ALL rows sorted by price in the active mode; out-of-stock stays inline with an "Out"
+ *    indicator (not pushed to the bottom). "Best $/mg" badge only on an in-stock row.
  */
 export default function CompoundPriceTable({
   compoundSlug,
@@ -53,23 +51,21 @@ export default function CompoundPriceTable({
   const unit = controlledUnit ?? localUnit;
   const showToggle = controlledUnit === undefined;
 
-  const figure = (r: ReturnType<typeof compoundRows>[number]) =>
-    unit === "permg" ? r.effectivePerMg : r.effectivePrice;
+  const fig = (r: PriceRow) => (unit === "permg" ? r.effectivePerMg : r.effectivePrice);
+  const rows = compoundRows(compoundSlug).slice().sort((a, b) => fig(a) - fig(b));
 
-  const rows = compoundRows(compoundSlug)
-    .slice()
-    // in-stock first, then cheapest post-code in the active unit
-    .sort((a, b) => (a.inStock === b.inStock ? figure(a) - figure(b) : a.inStock ? -1 : 1));
-
-  // Best value = lowest $/mg among in-stock rows, regardless of the active toggle.
-  const inStockRows = rows.filter((r) => r.inStock);
-  const bestPerMg = inStockRows.length
-    ? inStockRows.reduce((a, b) => (b.effectivePerMg < a.effectivePerMg ? b : a))
+  const inStock = rows.filter((r) => r.inStock);
+  const bestPerMg = inStock.length
+    ? inStock.reduce((a, b) => (b.effectivePerMg < a.effectivePerMg ? b : a))
     : null;
 
   if (rows.length === 0) {
     return <p className="text-sm text-gray-500 dark:text-slate-400">No price data yet for this compound.</p>;
   }
+
+  const priceHeader = unit === "permg" ? "Price ($/mg)" : "Price (total)";
+  const priceSub = unit === "permg" ? "total below" : "$/mg below";
+  const GRID = "grid grid-cols-[minmax(6rem,1.3fr)_auto_auto_auto_auto_auto] items-center gap-x-5";
 
   return (
     <div>
@@ -77,84 +73,86 @@ export default function CompoundPriceTable({
         <div className="flex items-center gap-2 mb-3">
           <span className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mr-1">Compare by</span>
           <div className="inline-flex rounded-lg border border-[#D9DEE4] dark:border-slate-600 overflow-hidden text-sm">
-            <button
-              onClick={() => setLocalUnit("permg")}
-              className={`px-3 py-1 ${unit === "permg" ? "bg-[#3A759F] text-white" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300"}`}
-            >
-              $ / mg
-            </button>
-            <button
-              onClick={() => setLocalUnit("total")}
-              className={`px-3 py-1 ${unit === "total" ? "bg-[#3A759F] text-white" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300"}`}
-            >
-              Total price
-            </button>
+            <button onClick={() => setLocalUnit("permg")} className={`px-3 py-1 ${unit === "permg" ? "bg-[#3A759F] text-white" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300"}`}>$ / mg</button>
+            <button onClick={() => setLocalUnit("total")} className={`px-3 py-1 ${unit === "total" ? "bg-[#3A759F] text-white" : "bg-white dark:bg-[#1e293b] text-gray-600 dark:text-slate-300"}`}>Total price</button>
           </div>
         </div>
       )}
 
-      <div className="space-y-2">
+      {/* ── Desktop grid (≥ sm) ── */}
+      <div className="hidden sm:block tabular-nums">
+        <div className={`${GRID} pb-2 border-b border-[#D9DEE4] dark:border-slate-700 text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-slate-500`}>
+          <div>Vendor</div>
+          <div>Size</div>
+          <div>Stock</div>
+          <div>{priceHeader}<span className="block font-normal normal-case tracking-normal text-[10px] text-gray-400 dark:text-slate-500">{priceSub}</span></div>
+          <div>Code</div>
+          <div />
+        </div>
         {rows.map((r, i) => {
-          const prominent = unit === "permg" ? r.effectivePerMg : r.effectivePrice;
-          const baseFig = unit === "permg" ? r.basePerMg : r.basePrice;
-          const headlineLabel = unit === "permg" ? "/ mg" : "total";
-          const secondary =
-            unit === "permg" ? `${fmt(r.effectivePrice)} total` : `${fmt(r.effectivePerMg)} per mg`;
+          const prom = unit === "permg" ? r.effectivePerMg : r.effectivePrice;
+          const base = unit === "permg" ? r.basePerMg : r.basePrice;
+          const secondary = unit === "permg" ? r.effectivePrice : r.effectivePerMg;
           return (
-            <div
-              key={i}
-              className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 panel-card p-4"
-            >
-              {/* LEFT: vendor identity */}
+            <div key={i} className={`${GRID} py-2.5 border-b border-gray-100 dark:border-slate-800`}>
               <div className="min-w-0">
+                {r.couponPage ? (
+                  <Link href={r.couponPage} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.vendorName}</Link>
+                ) : (
+                  <span className="text-sm font-semibold text-[#16181B] dark:text-slate-100">{r.vendorName}</span>
+                )}
+                {r === bestPerMg && (
+                  <span className="ml-2 text-[10px] bg-[#3A759F]/10 text-[#3A759F] border border-[#3A759F]/20 px-1.5 py-0.5 rounded-full font-medium align-middle">Best $/mg</span>
+                )}
+                {r.entry.listedAs && (
+                  <span className="block text-xs text-gray-400 dark:text-slate-500 italic">listed as {r.entry.listedAs}</span>
+                )}
+              </div>
+              <div className="text-sm text-gray-600 dark:text-slate-300">{r.entry.sizeMg} mg</div>
+              <div className={`text-xs ${r.inStock ? "text-green-700" : "text-gray-400 dark:text-slate-500"}`}>{r.inStock ? "In stock" : "Out"}</div>
+              <div>
+                <span className="text-sm font-bold text-[#16181B] dark:text-slate-100">{fmt(prom)}</span>
+                {r.isAffiliate && r.discountPct > 0 && (
+                  <span className="ml-1.5 text-xs text-gray-400 dark:text-slate-500 line-through">{fmt(base)}</span>
+                )}
+                <span className="block text-xs text-gray-400 dark:text-slate-500">{fmt(secondary)}</span>
+              </div>
+              <div>{r.isAffiliate && r.code ? <CopyCode code={r.code} /> : <span className="text-xs text-gray-300 dark:text-slate-600">—</span>}</div>
+              <div>{r.isAffiliate && r.affiliateUrl ? <a href={r.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm whitespace-nowrap">Shop</a> : null}</div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* ── Mobile stacked (< sm) ── */}
+      <div className="sm:hidden space-y-2">
+        {rows.map((r, i) => {
+          const prom = unit === "permg" ? r.effectivePerMg : r.effectivePrice;
+          const base = unit === "permg" ? r.basePerMg : r.basePrice;
+          const secondary = unit === "permg" ? `${fmt(r.effectivePrice)} total` : `${fmt(r.effectivePerMg)} / mg`;
+          return (
+            <div key={i} className="panel-card p-3 tabular-nums">
+              <div className="flex items-center justify-between gap-2 flex-wrap">
                 <div className="flex items-center gap-2 flex-wrap">
                   {r.couponPage ? (
-                    <Link href={r.couponPage} className="text-sm font-semibold text-[#3A759F] hover:underline">
-                      {r.vendorName}
-                    </Link>
+                    <Link href={r.couponPage} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.vendorName}</Link>
                   ) : (
                     <span className="text-sm font-semibold text-[#16181B] dark:text-slate-100">{r.vendorName}</span>
                   )}
                   <span className="text-xs text-gray-400 dark:text-slate-500">{r.entry.sizeMg} mg</span>
-                  {r.inStock ? (
-                    <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full">In stock</span>
-                  ) : (
-                    <span className="text-xs bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-400 border border-[#D9DEE4] dark:border-slate-600 px-2 py-0.5 rounded-full">Out of stock</span>
-                  )}
-                  {r === bestPerMg && (
-                    <span className="text-xs bg-[#3A759F]/10 text-[#3A759F] border border-[#3A759F]/20 px-2 py-0.5 rounded-full font-medium">Best $/mg</span>
-                  )}
+                  <span className={`text-xs ${r.inStock ? "text-green-700" : "text-gray-400 dark:text-slate-500"}`}>{r.inStock ? "In stock" : "Out"}</span>
+                  {r === bestPerMg && <span className="text-[10px] bg-[#3A759F]/10 text-[#3A759F] border border-[#3A759F]/20 px-1.5 py-0.5 rounded-full font-medium">Best $/mg</span>}
                 </div>
-                {r.entry.listedAs && (
-                  <p className="text-xs text-gray-400 dark:text-slate-500 mt-0.5 italic">
-                    {compoundName} (listed as {r.entry.listedAs})
-                  </p>
-                )}
-              </div>
-
-              {/* RIGHT: price → code → Shop */}
-              <div className="flex items-center gap-3 sm:justify-end flex-shrink-0">
                 <div className="text-right">
-                  <div className="flex items-baseline justify-end gap-1.5">
-                    <span className="text-lg font-bold text-[#16181B] dark:text-slate-100">{fmt(prominent)}</span>
-                    <span className="text-xs text-gray-400 dark:text-slate-500">{headlineLabel}</span>
-                    {r.isAffiliate && r.discountPct > 0 && (
-                      <span className="text-xs text-gray-400 dark:text-slate-500 line-through">{fmt(baseFig)}</span>
-                    )}
-                  </div>
-                  <div className="text-xs text-gray-400 dark:text-slate-500 mt-0.5">{secondary}</div>
+                  <span className="text-sm font-bold text-[#16181B] dark:text-slate-100">{fmt(prom)}</span>
+                  {r.isAffiliate && r.discountPct > 0 && <span className="ml-1.5 text-xs text-gray-400 dark:text-slate-500 line-through">{fmt(base)}</span>}
+                  <span className="block text-xs text-gray-400 dark:text-slate-500">{secondary}</span>
                 </div>
+              </div>
+              {r.entry.listedAs && <p className="text-xs text-gray-400 dark:text-slate-500 italic mt-1">listed as {r.entry.listedAs}</p>}
+              <div className="flex items-center gap-3 mt-2">
                 {r.isAffiliate && r.code && <CopyCode code={r.code} />}
-                {r.isAffiliate && r.affiliateUrl && (
-                  <a
-                    href={r.affiliateUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary text-sm whitespace-nowrap"
-                  >
-                    Shop
-                  </a>
-                )}
+                {r.isAffiliate && r.affiliateUrl && <a href={r.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm">Shop</a>}
               </div>
             </div>
           );

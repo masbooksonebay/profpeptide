@@ -64,39 +64,45 @@ export default function PricesMaster() {
         <p className="text-sm text-gray-500 dark:text-slate-400">No compounds match &ldquo;{q}&rdquo;.</p>
       )}
 
-      <div className="space-y-8">
+      <div className="space-y-8 tabular-nums">
         {shown.map((g) => (
           <div key={g.category}>
-            <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-3 pb-2 border-b border-gray-100 dark:border-slate-800 flex items-center gap-2">
+            {/* Bolder, darker section header — primary structure, not de-emphasised */}
+            <h2 className="text-lg font-bold text-[#16181B] dark:text-slate-100 mb-3 pb-2 border-b-2 border-[#D9DEE4] dark:border-slate-700 flex items-center gap-2">
               <CategoryIcon name={g.category} /> {g.category}
             </h2>
-            <div className="divide-y divide-gray-100 dark:divide-slate-800">
+            <div className="space-y-2">
               {g.compounds.map((c) => (
-                <div key={c.slug} className="flex items-center justify-between gap-3 py-2.5">
-                  <div className="min-w-0">
-                    {c.hasProfile ? (
-                      <Link href={`/peptides/${c.slug}`} className="text-sm font-medium text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors">
-                        {c.name}
-                      </Link>
-                    ) : (
-                      <span className="text-sm font-medium text-[#16181B] dark:text-slate-100">{c.name}</span>
-                    )}
-                    <span className="text-xs text-gray-400 dark:text-slate-500 ml-2">
-                      {c.vendorCount} vendor{c.vendorCount === 1 ? "" : "s"}
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-4 flex-shrink-0">
+                <div
+                  key={c.slug}
+                  className="panel-card px-4 py-3 grid grid-cols-[minmax(0,1fr)_auto] sm:grid-cols-[minmax(0,1.6fr)_auto_auto_auto] items-center gap-x-5 gap-y-1"
+                >
+                  {/* compound name */}
+                  {c.hasProfile ? (
+                    <Link href={`/peptides/${c.slug}`} className="text-sm font-semibold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors min-w-0 truncate">
+                      {c.name}
+                    </Link>
+                  ) : (
+                    <span className="text-sm font-semibold text-[#16181B] dark:text-slate-100 min-w-0 truncate">{c.name}</span>
+                  )}
+                  {/* vendor count */}
+                  <span className="hidden sm:block text-xs text-gray-500 dark:text-slate-400 whitespace-nowrap">
+                    {c.vendorCount} vendor{c.vendorCount === 1 ? "" : "s"}
+                  </span>
+                  {/* from-price */}
+                  <span className="text-sm text-gray-600 dark:text-slate-300 whitespace-nowrap justify-self-end sm:justify-self-start">
                     {c.cheapest != null && (
-                      <span className="text-sm text-gray-600 dark:text-slate-300">
+                      <>
                         <span className="text-gray-400 dark:text-slate-500 text-xs">from </span>
                         <span className="font-semibold text-[#16181B] dark:text-slate-100">{fmt(c.cheapest)}</span>
                         {unit === "permg" && <span className="text-xs text-gray-400 dark:text-slate-500">/mg</span>}
-                      </span>
+                      </>
                     )}
-                    <Link href={`/prices/${c.slug}`} className="text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">
-                      Compare {c.vendorCount} &rarr;
-                    </Link>
-                  </div>
+                  </span>
+                  {/* compare link */}
+                  <Link href={`/prices/${c.slug}`} className="col-span-2 sm:col-span-1 text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap justify-self-end">
+                    Compare {c.vendorCount} &rarr;
+                  </Link>
                 </div>
               ))}
             </div>
