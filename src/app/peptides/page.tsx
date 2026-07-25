@@ -36,15 +36,17 @@ export default function PeptidesPage({ searchParams }: { searchParams: { categor
       <div className="space-y-10">
         {filtered.map((cat) => (
           <div key={cat.name}>
-            <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-slate-500 mb-4 pb-2 border-b border-gray-100 dark:border-slate-800 flex items-center gap-2">
+            {/* Bolder, darker section header — shares the /prices header system */}
+            <h2 className="text-lg font-bold text-[#16181B] dark:text-slate-100 mb-3 pb-2 border-b-2 border-[#D9DEE4] dark:border-slate-700 flex items-center gap-2">
               <CategoryIcon name={cat.name} /> {cat.name}
             </h2>
-            <ul className="space-y-2">
+            {/* One separation style: a thin rule between each entry (divide-y). */}
+            <ul className="divide-y divide-gray-100 dark:divide-slate-800">
               {cat.peptides.map((p) => (
                 <li key={p.slug}>
                   <Link
                     href={`/peptides/${p.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-[#16181B] dark:text-slate-200 hover:text-[#3A759F] transition-all duration-150 hover:scale-105 origin-left group"
+                    className="flex items-center gap-2 py-2.5 text-sm font-medium text-[#16181B] dark:text-slate-200 hover:text-[#3A759F] transition-colors group"
                   >
                     <span className="w-1 h-1 rounded-full bg-gray-300 dark:bg-slate-600 group-hover:bg-[#3A759F] transition-colors flex-shrink-0" />
                     {p.name}
