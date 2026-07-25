@@ -39,7 +39,11 @@ export default function PricesMaster() {
 
   return (
     <div>
-      <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
+      {/* items-start on mobile: the stacked (flex-col) column would otherwise stretch the
+          inline-flex toggle to full width (default align-items:stretch) and run it to the
+          edge. Start-align keeps the toggle at its intrinsic width, like the compound page's
+          `flex items-center` row. The w-full search keeps its explicit width regardless. */}
+      <div className="flex flex-col items-start sm:flex-row sm:items-center gap-3 mb-3">
         <input
           type="search"
           value={q}
