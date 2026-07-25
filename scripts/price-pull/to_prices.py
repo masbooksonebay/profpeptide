@@ -37,6 +37,17 @@ DISP2SLUG = {v: k for k, v in N.DISPLAY.items()}
 #                component branded blend, not a single compound.
 NOT_A_COMPOUND = {"slimassist"}
 
+# Vendor coded GLP names — Mark-confirmed established mappings (not inferences).
+# Glacier's own labels corroborate (GLA-3 RT: CAS 2381089-83-2 / MW 4731.42;
+# GLA-2 TRZ: CAS 2023788-19-2 / MW 4813.45). A "[coded, UNVERIFIED]" single from
+# these vendors whose code isn't here is reported (not force-mapped), never dropped
+# silently. Keyed by vendor slug -> exact code -> compound slug; listedAs = the code.
+CODED_DECODE = {
+    "glacier-aminos":      {"GLA-1 SM": "semaglutide", "GLA-2 TRZ": "tirzepatide", "GLA-3 RT": "retatrutide"},
+    "purerawz":            {"GLP-1": "semaglutide", "GLP-1.2": "tirzepatide", "GLP-1.3": "retatrutide"},
+    "vital-core-research": {"GLP-1": "semaglutide", "GLP-2": "tirzepatide", "GLP-3": "retatrutide"},
+}
+
 def slugify(name):
     s = name.lower().replace("+", "-plus")
     s = re.sub(r"[()/]", " ", s)
@@ -84,6 +95,8 @@ excl = {"blends": 0, "sprays": 0, "unverified_single": 0, "nosize_single": 0, "n
 doc_single_total = 0
 retired_row_count = 0
 unresolved = []           # STOP condition
+unmapped_coded = []       # coded SKUs from the 3 GLP vendors with no confirmed mapping (report)
+decoded_count = 0         # coded rows successfully decoded (Part A)
 stray_paren = []          # verify the artifact is gone
 
 for s in secs:
@@ -119,10 +132,34 @@ for s in secs:
         doc_single_total += 1
         comp_cell, size_cell, base_cell, permg_cell, stock_cell = c[0], c[1], c[2], c[3], c[4]
 
-        # [coded, UNVERIFIED] -> no compound identity
+        listed_as = None
+
+        # [coded, UNVERIFIED]: decode via the vendor's confirmed code map, else report.
         if "UNVERIFIED" in comp_cell:
-            excl["unverified_single"] += 1
-            continue
+            code = re.sub(r"\s*\[coded.*$", "", comp_cell).strip()
+            mapped = CODED_DECODE.get(vslug, {}).get(code)
+            if mapped is None:
+                if vslug in CODED_DECODE:
+                    unmapped_coded.append((name, comp_cell))  # report; never force a mapping
+                else:
+                    excl["unverified_single"] += 1
+                continue
+            slug, listed_as = mapped, code
+        else:
+            # split off "(listed as CODE)" (greedy to last paren -> handles nested "GLP-3 (RT)")
+            listed = re.search(r"\(listed as (.*)\)\s*$", comp_cell)
+            listed_as = listed.group(1) if listed else None
+            clean = re.sub(r"\s*\(listed as .*\)\s*$", "", comp_cell)
+            clean = re.sub(r"\s*\[backlog\]\s*$", "", clean).strip()
+            if clean.endswith(")") and "(" not in clean:
+                stray_paren.append((name, comp_cell))
+            slug = resolve_slug(clean, KNOWN)
+            if slug is None:
+                unresolved.append((name, comp_cell, clean))
+                continue
+            if slug in NOT_A_COMPOUND:  # branded blend / vendor SKU, not a distinct compound
+                excl["not_a_compound"] += 1
+                continue
 
         # no parseable mg size
         mg = N.mg_value(size_cell)
@@ -136,31 +173,16 @@ for s in secs:
             excl["noprice_single"] += 1
             continue
 
-        # split off "(listed as CODE)" (greedy to last paren -> handles nested "GLP-3 (RT)")
-        listed = re.search(r"\(listed as (.*)\)\s*$", comp_cell)
-        listed_as = listed.group(1) if listed else None
-        clean = re.sub(r"\s*\(listed as .*\)\s*$", "", comp_cell)
-        clean = re.sub(r"\s*\[backlog\]\s*$", "", clean).strip()
-        if clean.endswith(")") and "(" not in clean:
-            stray_paren.append((name, comp_cell))
-
-        slug = resolve_slug(clean, KNOWN)
-        if slug is None:
-            unresolved.append((name, comp_cell, clean))
-            continue
-        if slug in NOT_A_COMPOUND:      # branded blend / vendor SKU, not a distinct compound
-            excl["not_a_compound"] += 1
-            continue
-
-        disp = N.DISPLAY.get(slug, clean)
         rows.append({
-            "compound": slug, "compoundName": disp, "vendor": vslug,
+            "compound": slug, "compoundName": N.DISPLAY.get(slug, slug), "vendor": vslug,
             "sizeMg": mg, "basePrice": base,
             "inStock": stock_cell == "✓",
             "listedAs": listed_as,
         })
         if vslug in RETIRED:
             retired_row_count += 1
+        if "UNVERIFIED" in comp_cell:   # a decoded coded row (Part A)
+            decoded_count += 1
 
 # --- STOP conditions ---------------------------------------------------------
 if unresolved:
@@ -217,6 +239,11 @@ INDEX_OUT.write_text(json.dumps(index, indent=2) + "\n")
 # --- report ------------------------------------------------------------------
 print(f"PRICES_UPDATED (from doc): {PRICES_UPDATED}")
 print(f"generated rows: {len(rows)}  -> {OUT.relative_to(ROOT)}")
+print(f"\ndecoded coded rows (Part A): {decoded_count}")
+if unmapped_coded:
+    print(f"  ⚠️ UNMAPPED coded SKUs from GLP vendors (reported, NOT force-mapped): {len(unmapped_coded)}")
+    for v, cell in unmapped_coded:
+        print(f"     {v}: {cell}")
 print(f"\ndoc single-compound rows: {doc_single_total}")
 print(f"  kept: {len(rows)}")
 print(f"  excluded unverified-single: {excl['unverified_single']}")

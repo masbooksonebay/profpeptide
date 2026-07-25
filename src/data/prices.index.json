@@ -241,7 +241,7 @@
   },
   {
     "slug": "retatrutide",
-    "vendors": 16,
+    "vendors": 18,
     "indexable": true
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "slug": "semaglutide",
-    "vendors": 9,
+    "vendors": 12,
     "indexable": true
   },
   {
@@ -326,7 +326,7 @@
   },
   {
     "slug": "tirzepatide",
-    "vendors": 10,
+    "vendors": 13,
     "indexable": true
   },
   {
