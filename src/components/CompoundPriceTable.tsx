@@ -130,7 +130,7 @@ export default function CompoundPriceTable({
           const secondary = unit === "permg" ? r.effectivePrice : r.effectivePerMg;
           return (
             <div key={i} className={`${GRID} py-2.5 border-b border-gray-100 dark:border-slate-800`}>
-              <div className="min-w-0">
+              <div className="min-w-0 self-baseline">
                 {r.couponPage ? (
                   <Link href={r.couponPage} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.vendorName}</Link>
                 ) : (
@@ -143,9 +143,9 @@ export default function CompoundPriceTable({
                   <span className="block text-xs text-gray-400 dark:text-slate-500 italic">listed as {r.entry.listedAs}</span>
                 )}
               </div>
-              <div className="text-sm text-gray-600 dark:text-slate-300">{r.entry.sizeMg} mg</div>
-              <div className={`text-xs ${r.inStock ? "text-green-700" : "text-gray-400 dark:text-slate-500"}`}>{r.inStock ? "In stock" : "Out"}</div>
-              <div>
+              <div className="self-baseline text-sm text-gray-600 dark:text-slate-300">{r.entry.sizeMg} mg</div>
+              <div className={`self-baseline text-xs ${r.inStock ? "text-green-700" : "text-gray-400 dark:text-slate-500"}`}>{r.inStock ? "In stock" : "Out"}</div>
+              <div className="self-baseline">
                 <span className="text-sm font-bold text-[#16181B] dark:text-slate-100">{fmt(prom)}</span>
                 {r.isAffiliate && r.discountPct > 0 && (
                   <span className="ml-1.5 text-xs text-gray-400 dark:text-slate-500 line-through">{fmt(base)}</span>
