@@ -16,6 +16,7 @@ export const peptideCategories: PeptideCategory[] = [
     slug: "metabolic",
     peptides: [
       { name: "5-Amino-1MQ", slug: "5-amino-1mq" },
+      { name: "Adipotide", slug: "adipotide" },
       { name: "AOD-9604", slug: "aod-9604" },
       { name: "AOD-9604 + MOTS-c", slug: "aod-9604-mots-c" },
       { name: "Cagrilintide", slug: "cagrilintide" },
@@ -34,6 +35,7 @@ export const peptideCategories: PeptideCategory[] = [
     slug: "recovery",
     peptides: [
       { name: "BPC-157", slug: "bpc-157" },
+      { name: "Cibinetide (ARA-290)", slug: "cibinetide" },
       { name: "PDA (Pentadeca Arginate)", slug: "pda" },
       { name: "TB-500", slug: "tb-500" },
       { name: "Wolverine Stack", slug: "wolverine-stack" },
@@ -43,7 +45,9 @@ export const peptideCategories: PeptideCategory[] = [
     name: "Performance & Energy",
     slug: "performance",
     peptides: [
+      { name: "IGF-1 DES", slug: "igf-1-des" },
       { name: "IGF-1 LR3", slug: "igf-1-lr3" },
+      { name: "MGF", slug: "mgf" },
       { name: "Follistatin", slug: "follistatin" },
     ],
   },
@@ -54,6 +58,9 @@ export const peptideCategories: PeptideCategory[] = [
       { name: "CJC-1295", slug: "cjc-1295" },
       { name: "CJC-1295 DAC + Ipamorelin", slug: "cjc-1295-dac-ipamorelin" },
       { name: "CJC-1295 + Ipamorelin (GH Stack)", slug: "gh-stack" },
+      { name: "GHRP-2", slug: "ghrp-2" },
+      { name: "GHRP-6", slug: "ghrp-6" },
+      { name: "Hexarelin", slug: "hexarelin" },
       { name: "Ipamorelin", slug: "ipamorelin" },
       { name: "MK-677", slug: "mk-677" },
       { name: "MK-677 + Ipamorelin", slug: "mk-677-ipamorelin" },
@@ -67,6 +74,7 @@ export const peptideCategories: PeptideCategory[] = [
     name: "Cognitive & Nootropic",
     slug: "cognitive",
     peptides: [
+      { name: "Adamax", slug: "adamax" },
       { name: "Selank", slug: "selank" },
       { name: "Semax", slug: "semax" },
       { name: "Semax + Selank", slug: "semax-selank" },
@@ -147,12 +155,10 @@ export const libraryCategoryOf: Record<string, string> = Object.fromEntries(
  * Routable /peptides/<slug> profile pages. The library taxonomy above covers the
  * displayed profiles; EXTRA_PROFILE_SLUGS are profile pages that exist on disk but
  * aren't surfaced in the library nav (so a price row still links to a real page,
- * never a dead link). Keep in sync if a /peptides/<slug> dir is added outside the
- * library.
+ * never a dead link). Currently empty — every profile page on disk is surfaced in
+ * the library. Add here only if a /peptides/<slug> dir is created outside it.
  */
-const EXTRA_PROFILE_SLUGS = [
-  "adamax", "adipotide", "cibinetide", "ghrp-2", "ghrp-6", "hexarelin", "igf-1-des", "mgf",
-];
+const EXTRA_PROFILE_SLUGS: string[] = [];
 
 export const PROFILE_SLUGS: Set<string> = new Set([
   ...peptideCategories.flatMap((c) => c.peptides.map((p) => p.slug)),
