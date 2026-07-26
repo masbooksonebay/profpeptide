@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import { vendors, regionFlag } from "@/data/vendors";
 import peptideVendorsData from "@/data/peptide-vendors.json";
+import { CopyCode } from "@/components/CopyCode";
 
 type VendorEntry = { slug: string; note: string | null };
 type PeptideEntry = { displayName: string; vendors: VendorEntry[] };
@@ -43,12 +44,7 @@ function VendorCard({ slug, note }: VendorEntry) {
           <p className="text-xs text-gray-500 dark:text-slate-400 leading-snug">{note}</p>
         )}
         {v.code ? (
-          <p className="text-[11px] text-gray-400 dark:text-slate-500">
-            Code:{" "}
-            <span className="font-mono font-semibold text-[#16181B] dark:text-slate-100 tracking-wider">
-              {v.code}
-            </span>
-          </p>
+          <CopyCode code={v.code} />
         ) : (
           <p className="text-[11px] text-gray-400 dark:text-slate-500 italic">Code coming soon</p>
         )}

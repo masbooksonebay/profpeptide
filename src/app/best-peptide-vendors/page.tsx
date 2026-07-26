@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import { CopyCode } from "@/components/CopyCode";
 
 export const metadata = {
   alternates: { canonical: "/best-peptide-vendors" },
@@ -187,13 +188,8 @@ export default function BestPeptideVendorsPage() {
                 ))}
               </div>
 
-              <div className="flex items-center justify-between gap-3 flex-wrap">
-                <div className="text-xs text-gray-500 dark:text-slate-400">
-                  Code:{" "}
-                  <span className="font-mono font-semibold text-[#16181B] dark:text-slate-100 tracking-wider">
-                    {v.code}
-                  </span>
-                </div>
+              <div className="space-y-3">
+                <CopyCode code={v.code} size="large" />
                 <div className="flex items-center gap-3">
                   <Link
                     href={`/coupons/${v.slug}`}
