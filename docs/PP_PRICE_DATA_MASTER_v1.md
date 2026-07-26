@@ -1977,6 +1977,13 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | DSIP | — | $29.99 | — | — | ✓ |
 | Epitalon | — | $79.99 | — | — | ✓ |
 | GHK-Cu | — | $39.99 | — | — | ✓ |
+| GLP – 1 (S) [coded, UNVERIFIED] | 5mg | $64.99 | $13.00 | — | ✓ |
+| GLP – 1 (S) [coded, UNVERIFIED] | 10mg | $89.99 | $9.00 | — | ✓ |
+| GLP – 2 (T) [coded, UNVERIFIED] | 15mg | $99.99 | $6.67 | — | ✓ |
+| GLP – 2 (T) [coded, UNVERIFIED] | 30mg | $169.99 | $5.67 | — | ✓ |
+| GLP – 3 (R) [coded, UNVERIFIED] | 10mg | $94.99 | $9.50 | — | ✓ |
+| GLP – 3 (R) [coded, UNVERIFIED] | 20mg | $169.99 | $8.50 | — | ✓ |
+| GLP – 3 (R) [coded, UNVERIFIED] | 30mg | $229.99 | $7.67 | — | ✓ |
 | Glutathione | — | $59.99 | — | — | ✓ |
 | IGF-1 LR3 | — | $59.99 | — | — | ✓ |
 | Ipamorelin | — | $49.99 | — | — | ✓ |
