@@ -163,6 +163,34 @@ Four worked examples (do **not** re-add these as an oversight):
   **Aero** is CINC-only (Store API Cloudflare-403'd; pulled manually from embedded JSON),
   and **Limitless Biotech** is permanently excluded (BigCommerce B2B, all prices login-gated).
 
+## Pending onboarding — 4 vendors added 2026-07 (profiles live, price-pull TODO)
+
+Profiles + registry (vendors.ts) + /coupons pages shipped; NOT yet in the price-pull
+registry. Platform detection captured during profile research so tomorrow's onboarding
+doesn't repeat discovery. All four are **WooCommerce with a reachable public Store API**
+(`/wp-json/wc/store/v1/products`) — the standard `woo` adapter should apply directly. The
+"gates" below are soft (modals / Cloudflare headers); homepage HTML and the Store API were
+both readable during research, so none is blocked like Aero/Limitless.
+
+| Vendor | slug | Domain | Platform | Store API | Gate (soft) | ~Products |
+|---|---|---|---|---|---|---|
+| LA Peptides | la-peptides | lapeptides.net | WooCommerce | reachable | age-verify modal | 73 |
+| Peptidology | peptidology | peptidology.co | WooCommerce | reachable | registration/login modal + Cloudflare | 76 |
+| Mile High Compounds | mile-high-compounds | milehighcompounds.is | WooCommerce | reachable | Cloudflare | 64 |
+| NextGen Peptides | nextgen-peptides | ngpeptide.com | WooCommerce | reachable | 21+ age gate | 82 |
+
+Coded GLP names to VERIFY before decoding (do not infer from the scheme alone):
+- **LA Peptides**: `GLP – 1 (S)` / `GLP – 2 (T)` / `GLP – 3 (R)` — apparent Sema/Tirz/Reta.
+- **Mile High**: `MHC-1 SM` / `MHC-2 TRZ` / `MHC-3 RT` — apparent Sema/Tirz/Reta.
+- **Peptidology**: `GLP1 (PGL-G1)` / `GLP2 (PGL-GI1)` / `GLP3 (PGL-GIC1)`, plus `Survodutide (PGL-GC1)` — PGL code scheme.
+- **NextGen**: `GLP-3`, `TRZ`, `Cagri` (partly plain-named).
+
+Scope / catalog cautions for tomorrow:
+- **Peptidology** carries OUT-OF-SCOPE items to exclude: **PNC-27** (oncology), **Klotho-derived peptide** (native protein), **ACE-031** (myostatin), **Gonadorelin** (clinical hormone). Excluded from the profile per the editorial-scope rule; keep excluded in the pull.
+- **NextGen** has a large oral-dropper / capsule-cream / skincare + merch catalog — heavy scope filtering expected (orals/topicals/cosmetics excluded).
+- **Mile High** lists a branded Tee (merch) and Cerebrolysin (borderline peptide mixture).
+- All four sell spray/capsule formats (split out / excluded per the usual rules).
+
 ## Coded GLP names — VERIFICATION STANDARD (never infer from convention)
 
 Vendors relabel GLP-1 compounds (`GLP-3 RT`, `R-30`, `AX-RT`, `EZP-3P`, `GLA-3 RT`,
