@@ -116,6 +116,14 @@ is the likely endpoint (returns `{"products":[{variants:[{title, price, availabl
 The `sitewide_sale` registry field (documented at the top of `registry.py`) is **only**
 for no-code automatic discounts — never for coupon-gated ones.
 
+**Ascension's 50% PROFPEPTIDE code — VERIFIED, do not "fix" it.** 50% is far above the
+usual 10–15% affiliate code and Ascension also runs a near-sitewide product-level sale, so
+it *looks* like an outlier or a double-count. It isn't: Mark tested it at checkout (2026-07)
+— PROFPEPTIDE gives 50% off and it **stacks on top of Ascension's already-discounted sale
+prices**. So `vendors.ts` (`ascension-peptides: 50% off`) is correct and the pipeline's
+stacking model (`effectivePrice = sale_base × (1 − 0.50)`) is correct. A future session
+should NOT flag this as stale or reclassify it as a `sitewide_sale`.
+
 ## Editorial scope boundary (what PP covers — settled)
 
 **PP excludes: clinical hormones, biologics, fusion proteins, native growth-factor

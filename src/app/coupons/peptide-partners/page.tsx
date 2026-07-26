@@ -112,7 +112,7 @@ export default function PeptidePartnersCouponPage() {
 
  <div className="border-l-4 border-l-amber-400 border border-amber-200 dark:border-amber-700/50 rounded-xl p-6 bg-[#FFFBEB]">
  <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
- <CopyCode code="PROFPEPTIDE" />
+ <CopyCode code="PROFPEPTIDE" size="large" />
  <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">10% off your entire order</p>
  <a
  href="https://peptide.partners/"

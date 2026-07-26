@@ -108,7 +108,7 @@ export default function AlphaPeptidesCouponPage() {
 
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
           <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-          <CopyCode code="PROFPEPTIDE" />
+          <CopyCode code="PROFPEPTIDE" size="large" />
           <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">10% off your entire order</p>
           <a
             href="https://alpha-peptides.com/aff/850/"

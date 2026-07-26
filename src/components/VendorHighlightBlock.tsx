@@ -62,7 +62,7 @@ export default function VendorHighlightBlock({ highlights }: VendorHighlightBloc
                 <p className="text-[10px] text-gray-400 dark:text-slate-500 uppercase tracking-wider font-medium">
                   Click to copy code
                 </p>
-                <CopyCode code={v.code} />
+                <CopyCode code={v.code} size="large" />
                 <a
                   href={v.url}
                   target="_blank"
