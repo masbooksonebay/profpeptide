@@ -131,13 +131,15 @@ export default function Home() {
           </p>
           <HeroSearch />
           {/* Order mirrors the header nav (Peptides · Vendors · Prices · Codes · Calculator).
-              Mobile: flex-col stacks one button per line; sm+ wraps in a row. */}
+              Mobile (flex-col): unchanged — each button stretches full width, one per line.
+              sm+ : sm:w-44 gives all five an identical fixed width (sized to the longest
+              label, "Dosage Calculator") instead of content-based sizing, in one row. */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
-            <Link href="/peptides" className="btn-outline text-base px-8 py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Explore Peptides</Link>
-            <Link href="/vendors" className="btn-outline text-base px-8 py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Verified Vendors</Link>
-            <Link href="/prices" className="btn-outline text-base px-8 py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Compare Prices</Link>
-            <Link href="/coupons" className="btn-outline text-base px-8 py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Discount Codes</Link>
-            <Link href="/calculator" className="btn-outline text-base px-8 py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Calculator</Link>
+            <Link href="/peptides" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Explore Peptides</Link>
+            <Link href="/vendors" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Verified Vendors</Link>
+            <Link href="/prices" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Compare Prices</Link>
+            <Link href="/coupons" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Discount Codes</Link>
+            <Link href="/calculator" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Dosage Calculator</Link>
           </div>
         </div>
       </section>
