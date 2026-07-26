@@ -146,7 +146,6 @@ function VendorCard({ v }: { v: Vendor }) {
         )}
 
         <div className="mb-4">
-          <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-medium mb-1">{v.code ? "Click to copy code" : "Discount code"}</p>
           {v.code ? (
             <CopyCode code={v.code} size="large" />
           ) : (

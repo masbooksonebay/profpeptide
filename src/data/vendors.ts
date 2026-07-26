@@ -168,6 +168,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://myoasislabs.com/?sld=profpeptide",
     detailPage: "/coupons/oasis-labs",
+    editorsPick: true,
   },
   "particle-peptides": {
     name: "Particle Peptides",
@@ -194,7 +195,6 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptides.gg/?coupon=prof15",
     detailPage: "/coupons/peptides-gg",
-    editorsPick: true,
   },
   purerawz: {
     name: "PureRawz",

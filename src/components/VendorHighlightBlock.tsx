@@ -59,9 +59,6 @@ export default function VendorHighlightBlock({ highlights }: VendorHighlightBloc
               )}
 
               <div className="mt-auto space-y-2 pt-2">
-                <p className="text-[10px] text-gray-400 dark:text-slate-500 uppercase tracking-wider font-medium">
-                  Click to copy code
-                </p>
                 <CopyCode code={v.code} size="large" />
                 <a
                   href={v.url}
