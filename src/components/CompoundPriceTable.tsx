@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { compoundRows, type Unit, type PriceRow } from "@/data/prices";
+import { CopyCode } from "@/components/CopyCode";
 
 function fmt(n: number): string {
   return "$" + n.toFixed(2);
@@ -12,31 +13,6 @@ function fmt(n: number): string {
 // sale price with a deeper markdown off list. Kept distinct from the accent "Best" badges.
 const SALE_TAG =
   "ml-1.5 text-[10px] bg-gray-100 dark:bg-slate-700 text-gray-500 dark:text-slate-300 px-1.5 py-0.5 rounded-full font-medium align-middle";
-
-// Shared control height so the code chip and the Shop button render at equal height and
-// sit on the same baseline (h-9 = 2.25rem), in both the desktop grid and the mobile stack.
-const ACTION_H = "h-9 inline-flex items-center justify-center";
-
-/** Click-to-copy code pill. Code text always rendered (readable/selectable if JS fails).
- *  `className` lets a call site add layout (e.g. flex-[2] in the mobile share row). */
-function CopyCode({ code, className = "" }: { code: string; className?: string }) {
-  const [copied, setCopied] = useState(false);
-  return (
-    <button
-      type="button"
-      onClick={() => {
-        navigator.clipboard?.writeText(code).catch(() => {});
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-      }}
-      aria-label={`Copy discount code ${code}`}
-      title="Click to copy"
-      className={`${ACTION_H} font-mono text-xs font-semibold tracking-wide px-2.5 rounded-md border border-[#3A759F]/40 bg-[#3A759F]/10 text-[#3A759F] hover:bg-[#3A759F]/20 transition-colors whitespace-nowrap ${className}`}
-    >
-      {copied ? "Copied ✓" : code}
-    </button>
-  );
-}
 
 /**
  * One compound's vendor prices as a scannable columnar grid.

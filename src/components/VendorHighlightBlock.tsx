@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { vendors } from "@/data/vendors";
+import { CopyCode } from "@/components/CopyCode";
 
 export interface VendorHighlight {
   slug: string;
@@ -11,30 +11,6 @@ export interface VendorHighlight {
 
 export interface VendorHighlightBlockProps {
   highlights: VendorHighlight[];
-}
-
-function CodeBox({ code }: { code: string }) {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
-  };
-
-  return (
-    <button
-      onClick={handleCopy}
-      aria-label={`Copy code ${code}`}
-      className="block w-full bg-white dark:bg-[#0f172a] border border-[#D9DEE4] dark:border-slate-600 px-3 py-2 rounded-lg text-sm font-mono font-bold text-[#16181B] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:border-[#3A759F]/40 transition-colors"
-    >
-      {copied ? (
-        <span className="text-[#3A759F] font-sans font-medium tracking-normal">Copied!</span>
-      ) : (
-        code
-      )}
-    </button>
-  );
 }
 
 export default function VendorHighlightBlock({ highlights }: VendorHighlightBlockProps) {
@@ -86,7 +62,7 @@ export default function VendorHighlightBlock({ highlights }: VendorHighlightBloc
                 <p className="text-[10px] text-gray-400 dark:text-slate-500 uppercase tracking-wider font-medium">
                   Click to copy code
                 </p>
-                <CodeBox code={v.code} />
+                <CopyCode code={v.code} />
                 <a
                   href={v.url}
                   target="_blank"

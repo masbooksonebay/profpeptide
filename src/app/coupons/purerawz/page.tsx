@@ -1,30 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { CopyCode } from "@/components/CopyCode";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import { RegionPill } from "@/components/RegionPill";
-
-function CodeBox({ code }: { code: string }) {
-  const [copied, setCopied] = useState(false);
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
-  };
-  return (
-    <button
-      onClick={handleCopy}
-      className="block w-full bg-gray-50 dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-600 px-4 py-3 rounded-lg text-lg font-mono font-bold text-[#16181B] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors"
-    >
-      {copied ? (
-        <span className="text-[#3A759F] font-sans font-medium tracking-normal">Copied!</span>
-      ) : (
-        code
-      )}
-    </button>
-  );
-}
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -149,7 +129,7 @@ export default function PureRawzCouponPage() {
 
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
             <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-            <CodeBox code="PROF10" />
+            <CopyCode code="PROF10" />
             <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">10% off your entire order</p>
             <a href="https://purerawz.co/?ref=1901" target="_blank" rel="noopener noreferrer" className="btn-primary w-full text-center block">
               Shop PureRawz &rarr;

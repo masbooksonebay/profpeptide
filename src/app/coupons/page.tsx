@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { Icon } from "@/components/CategoryIcon";
+import { CopyCode } from "@/components/CopyCode";
 import {
   vendors as registry,
   regionFlag,
@@ -77,29 +77,6 @@ const sections: VendorSection[] = (
   .map((s) => ({ label: s.label, vendors: [...s.vendors].sort(byName).map(toCard) }))
   .filter((s) => s.vendors.length > 0);
 
-function CodeBox({ code }: { code: string }) {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
-  };
-
-  return (
-    <button
-      onClick={handleCopy}
-      className="block w-full bg-gray-50 dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-600 px-4 py-2.5 rounded-lg text-sm font-mono font-bold text-[#16181B] dark:text-slate-100 tracking-widest text-center cursor-pointer hover:bg-gray-100 dark:bg-slate-700 transition-colors"
-    >
-      {copied ? (
-        <span className="text-[#3A759F] font-sans font-medium tracking-normal">Copied!</span>
-      ) : (
-        code
-      )}
-    </button>
-  );
-}
-
 function VendorCard({ v }: { v: Vendor }) {
   return (
     <div
@@ -171,7 +148,7 @@ function VendorCard({ v }: { v: Vendor }) {
         <div className="mb-4">
           <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-medium mb-1">{v.code ? "Click to copy code" : "Discount code"}</p>
           {v.code ? (
-            <CodeBox code={v.code} />
+            <CopyCode code={v.code} />
           ) : (
             <div className="w-full bg-gray-50 dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-600 px-4 py-2.5 rounded-lg text-sm text-center text-gray-500 dark:text-slate-400 italic">Coming soon</div>
           )}

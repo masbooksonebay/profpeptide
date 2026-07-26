@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { vendors } from "@/data/vendors";
+import { CopyCode } from "@/components/CopyCode";
 
 export const metadata = {
   alternates: { canonical: "/vendors" },
@@ -27,23 +28,24 @@ export default function VendorProfilesPage() {
         savings. Select a vendor to open its full profile.
       </p>
       {/* Clickable vendor cards — mirrors the homepage feature-grid .card
-          (accent border + shadow lift on hover). Whole card links to the
-          vendor's internal profile page; no outbound/affiliate links here. */}
+          (accent border + shadow lift on hover). Whole card links to the vendor's
+          internal profile via a full-bleed overlay Link, so the copy-code chip can be a
+          real <button> sibling (not nested in an anchor) and still be clicked directly. */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {activeVendors.map((v) => (
-          <Link href={v.detailPage} key={v.detailPage} className="card group flex flex-col">
+          <div key={v.detailPage} className="card group relative flex flex-col">
+            <Link href={v.detailPage} aria-label={`View ${v.name} profile`} className="absolute inset-0 z-0" />
             <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors">
               {v.name}
             </h2>
             <span className="tag mt-3 self-start">{v.discount}</span>
-            <p className="mt-3 text-sm">
-              <span className="text-gray-400 dark:text-slate-500">Code </span>
-              <span className="font-mono text-gray-600 dark:text-slate-300">{v.code}</span>
-            </p>
+            <div className="relative z-10 mt-3 self-start">
+              <CopyCode code={v.code} />
+            </div>
             <span className="mt-4 text-xs font-medium text-[#3A759F] group-hover:underline">
               View profile &rarr;
             </span>
-          </Link>
+          </div>
         ))}
       </div>
     </div>
