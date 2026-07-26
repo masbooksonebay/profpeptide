@@ -102,12 +102,19 @@ def extract_rows(product, ten_vial_kit=False):
     # --- variable products ---
     rows = []
     for v in variations:
-        values = [val for (_, val) in v.get('attrs', [])]
-        # size: first attr value that parses as mg (dosage/strength), else from the product name
+        attrs = v.get('attrs', [])
+        values = [val for (_, val) in attrs]
+        # size: first attr value that parses as mg (dosage/strength). If the value is a bare
+        # number and the UNIT is in the attr NAME (NextGen: attr "MG" = "20"), use that. Else
+        # fall back to the product name.
         size = None
-        for val in values:
+        for aname, val in attrs:
             size = parse_size(val)
             if size:
+                break
+            if re.fullmatch(r'\d+(?:\.\d+)?', str(val).strip()) and re.search(r'\b(mg|mcg)\b', str(aname), re.I):
+                unit = 'mcg' if re.search(r'mcg', str(aname), re.I) else 'mg'
+                size = f"{str(val).strip()}{unit}"
                 break
         if not size:
             size = parse_size(name)

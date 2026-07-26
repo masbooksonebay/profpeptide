@@ -104,6 +104,28 @@ VENDORS = {
     "ignite-peptides": dict(name="Ignite Peptides", domain="ignitepeptides.com", adapter="woo",
         variation_model="dosage", coded_decoder=True, sale_posture="Product sale 5/34; code stacks.",
         notes="GLP-3(RT) COA-verified; GLP-2(TZ)/GLP-1(S) product-page identity."),
+    "la-peptides": dict(name="LA Peptides", domain="lapeptides.net", adapter="woo",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="Check product-level sale_price each refresh; PP code stacks.",
+        notes="Onboarded 2026-07. GLP-(S/T/R) codes UNVERIFIED — product pages carry no "
+              "mechanism/CAS/name. Age-verify modal is soft (Store API + HTML readable)."),
+    "mile-high-compounds": dict(name="Mile High Compounds", domain="milehighcompounds.is", adapter="woo",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="Check product-level sale_price each refresh; PP code stacks.",
+        notes="Onboarded 2026-07. MHC-N SM/TRZ/RT codes UNVERIFIED — descriptions are generic "
+              "(testing specs only, no mechanism/CAS/name). Cloudflare soft-gate. Merch (Tee) filtered."),
+    "nextgen-peptides": dict(name="NextGen Peptides", domain="ngpeptide.com", adapter="woo",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="Check product-level sale_price each refresh; PP code stacks.",
+        notes="Onboarded 2026-07. TRZ-2 = Tirzepatide (VERIFIED: CAS 2023788-19-2 / C225H348N48O68 / "
+              "MW ~4813). Bulk '(N vials)' packs EXCLUDED (not single-vial; kit price is not a clean 10x — "
+              "GLP-3 kit $300 vs single $42). GLP-3 single UNVERIFIED. Orals/droppers/creams/merch scope-filtered. 21+ soft gate."),
+    "peptidology": dict(name="Peptidology", domain="peptidology.co", adapter="woo",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="Check product-level sale_price each refresh; PP code stacks.",
+        notes="Onboarded 2026-07. GLP1/2/3 (PGL codes) UNVERIFIED — empty product descriptions. "
+              "Out-of-scope carried: PNC-27 + Klotho (OUT_OF_SCOPE), ACE-031 + Gonadorelin (scope filter). "
+              "Login + Cloudflare soft-gate (Store API readable)."),
     "integrative-peptides": dict(name="Integrative Peptides", domain="integrativepeptides.com", adapter="woo",
         variation_model="dosage", coded_decoder=False, sale_posture="Product sale 1/73.",
         notes="Mostly oral/topical wellness — small peptide overlap."),

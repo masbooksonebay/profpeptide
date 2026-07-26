@@ -69,6 +69,11 @@ ALIAS = {
     'igf1 lr3': 'igf-1-lr3', 'igf1lr3': 'igf-1-lr3',      # almighty/oasis (no separators)
     'smax': 'semax', 'tesa': 'tesamorelin', 'mt2': 'melanotan-ii',  # ignite abbreviations
     'oxyt': 'oxytocin',                                    # royal abbreviation
+    # 2026-07 onboarding near-misses (LA / Peptidology / NextGen):
+    'cagri': 'cagrilintide', 'cagrilinitide': 'cagrilintide',  # NextGen "Cagri" (CAS-confirmed); LA typo
+    'gh fragment': 'hgh-fragment-176-191',                # Peptidology "GH Fragment 176-191"
+    'fox04 dri': 'foxo4-dri',                             # Peptidology "FOX04-DRI" (zero-for-O typo)
+    'aod': 'aod-9604',                                    # NextGen bare "AOD"
 }
 
 
@@ -273,6 +278,34 @@ def _purity(n):
               'reta': ('Retatrutide', 'retatrutide')}[m.group(1).lower()]
         return (cn[0], cn[1], 'single')
     if re.match(r'GLP-1 Nasal Spray', n, re.I): return ('Semaglutide (spray)', 'semaglutide', 'spray')
+
+
+@_decoder('nextgen-peptides')  # TRZ-2 VERIFIED = Tirzepatide (product-page spec: CAS 2023788-19-2,
+# C225H348N48O68, MW ~4813). Cagri = Cagrilintide (CAS-confirmed; handled via alias). Bulk "(N vials)"
+# packs EXCLUDED — not single-vial, and the kit price is not a clean 10x (GLP-3 kit $300 vs single $42),
+# so no evidence-based per-vial divisor. GLP-3 single UNVERIFIED (disclaimer-only description).
+def _nextgen(n):
+    if re.search(r'\d+\s*vials?', n, re.I): return ('EXCLUDE', None, None)
+    if re.match(r'TRZ-2\b', n, re.I): return (_c('Tirzepatide', 'TRZ-2'), 'tirzepatide', 'single')
+    if re.match(r'GLP-3\b', n, re.I): return ('GLP-3 [coded, UNVERIFIED]', None, 'single_bk')
+
+
+@_decoder('la-peptides')  # UNVERIFIED: product pages carry no description/mechanism/CAS/name for the GLP codes.
+def _la_peptides(n):
+    if re.match(r'GLP\s*[–-]\s*[123]\s*\([STR]\)\s*$', n, re.I):
+        return (re.sub(r'\s+', ' ', n.strip()) + ' [coded, UNVERIFIED]', None, 'single_bk')
+
+
+@_decoder('mile-high-compounds')  # UNVERIFIED: descriptions are generic (testing specs only; no mechanism/CAS/name).
+def _mile_high(n):
+    if re.match(r'MHC-[123]\s+(SM|TRZ|RT)\s*$', n, re.I):
+        return (n.strip() + ' [coded, UNVERIFIED]', None, 'single_bk')
+
+
+@_decoder('peptidology')  # UNVERIFIED: empty product descriptions; PGL code scheme, no stated mechanism.
+def _peptidology(n):
+    if re.match(r'GLP[123]\s*\(PGL-[A-Z0-9]+\)\s*$', n, re.I):
+        return (n.strip() + ' [coded, UNVERIFIED]', None, 'single_bk')
 
 
 def decode(vendor, name):

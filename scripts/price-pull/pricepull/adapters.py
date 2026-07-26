@@ -110,6 +110,18 @@ def woo(domain, per_page=100, max_pages=12):
             variations.append({'attrs': attrs,
                                'price': _cents(vpr, 'price'), 'regular': _cents(vpr, 'regular_price'),
                                'in_stock': (vf.get('is_in_stock') if vf else p.get('is_in_stock'))})
+        # Simple product (no variations) whose mg lives in a defining "Size" attribute rather
+        # than the name (LA Peptides: Size = "10MG"). Synthesize one variation per size term so
+        # the dosage size is captured; the single product price applies to each.
+        if not variations:
+            for a in p.get('attributes', []):
+                if re.search(r'\bsize\b|^mg$|^mcg$', a.get('name', ''), re.I):
+                    terms = [t.get('name') for t in (a.get('terms') or []) if t.get('name')]
+                    if terms:
+                        variations = [{'attrs': [(a.get('name', ''), t)],
+                                       'price': _cents(pr, 'price'), 'regular': _cents(pr, 'regular_price'),
+                                       'in_stock': p.get('is_in_stock')} for t in terms]
+                        break
         out.append({'name': p['name'],
                     'price': _cents(pr, 'price'), 'regular': _cents(pr, 'regular_price'),
                     'in_stock': p.get('is_in_stock'), 'variations': variations,
