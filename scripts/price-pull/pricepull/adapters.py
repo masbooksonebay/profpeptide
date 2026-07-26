@@ -15,6 +15,7 @@ row is on-sale when price < regular. Adapters expose the four data shapes below:
 Network is read-only GET with a browser UA. On Cloudflare 403 (aero) the adapter
 raises Blocked; such vendors are marked in the registry and skipped.
 """
+import html
 import json
 import re
 import time
@@ -122,10 +123,12 @@ def woo(domain, per_page=100, max_pages=12):
                                        'price': _cents(pr, 'price'), 'regular': _cents(pr, 'regular_price'),
                                        'in_stock': p.get('is_in_stock')} for t in terms]
                         break
-        out.append({'name': p['name'],
+        # Names arrive HTML-entity-encoded (LA Peptides: "GLP &#8211; 3 (R)"). Unescape so
+        # downstream matching (decoders, aliases) and rendered listedAs see clean text.
+        out.append({'name': html.unescape(p['name']),
                     'price': _cents(pr, 'price'), 'regular': _cents(pr, 'regular_price'),
                     'in_stock': p.get('is_in_stock'), 'variations': variations,
-                    'description': (p.get('description', '') + ' ' + p.get('short_description', ''))})
+                    'description': html.unescape(p.get('description', '') + ' ' + p.get('short_description', ''))})
     return out
 
 

@@ -57,6 +57,13 @@ CODED_DECODE = {
     "glacier-aminos":      {"GLA-1 SM": "semaglutide", "GLA-2 TRZ": "tirzepatide", "GLA-3 RT": "retatrutide"},
     "purerawz":            {"GLP-1": "semaglutide", "GLP-1.2": "tirzepatide", "GLP-1.3": "retatrutide"},
     "vital-core-research": {"GLP-1": "semaglutide", "GLP-2": "tirzepatide", "GLP-3": "retatrutide"},
+    # 2026-07 batch — Mark-confirmed (same standard). LA's key uses an en-dash "–" (the
+    # source name, unescaped from "GLP &#8211; 3 (R)"). NextGen TRZ-2/Cagri are decoded in
+    # decoders.py (verified); only its GLP-3 is mapped here.
+    "la-peptides":         {"GLP – 1 (S)": "semaglutide", "GLP – 2 (T)": "tirzepatide", "GLP – 3 (R)": "retatrutide"},
+    "mile-high-compounds": {"MHC-1 SM": "semaglutide", "MHC-2 TRZ": "tirzepatide", "MHC-3 RT": "retatrutide"},
+    "peptidology":         {"GLP1 (PGL-G1)": "semaglutide", "GLP2 (PGL-GI1)": "tirzepatide", "GLP3 (PGL-GIC1)": "retatrutide"},
+    "nextgen-peptides":    {"GLP-3": "retatrutide"},
 }
 
 def slugify(name):
