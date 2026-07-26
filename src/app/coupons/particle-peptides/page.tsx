@@ -123,8 +123,7 @@ export default function ParticlePeptidesCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Particle Peptides &rarr;
- </a>
+ Shop Particle Peptides</a>
  </div>
 
 

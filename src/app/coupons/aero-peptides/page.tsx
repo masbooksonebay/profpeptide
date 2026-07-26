@@ -120,8 +120,7 @@ export default function AeroPeptidesCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop Aero Peptides &rarr;
-          </a>
+            Shop Aero Peptides</a>
         </div>
 
         <div>

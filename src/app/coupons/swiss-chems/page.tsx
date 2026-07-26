@@ -113,8 +113,7 @@ export default function SwissChemsCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop Swiss Chems &rarr;
-          </a>
+            Shop Swiss Chems</a>
         </div>
 
 

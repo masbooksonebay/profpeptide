@@ -160,8 +160,7 @@ function VendorCard({ v }: { v: Vendor }) {
           rel="noopener noreferrer"
           className="btn-primary w-full text-center block"
         >
-          Shop Now &rarr;
-        </a>
+          Shop Now</a>
 
         {v.detailPage && (
           <Link

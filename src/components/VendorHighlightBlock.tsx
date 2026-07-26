@@ -69,8 +69,7 @@ export default function VendorHighlightBlock({ highlights }: VendorHighlightBloc
                   rel="noopener noreferrer"
                   className="btn-primary w-full text-center block text-xs py-2"
                 >
-                  Shop {v.name} &rarr;
-                </a>
+                  Shop {v.name}</a>
               </div>
             </div>
           </div>

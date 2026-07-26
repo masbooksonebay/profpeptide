@@ -133,8 +133,7 @@ export default function FusionPeptideCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Fusion Peptide &rarr;
- </a>
+ Shop Fusion Peptide</a>
  </div>
 
 

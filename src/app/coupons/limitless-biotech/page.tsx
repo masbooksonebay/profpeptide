@@ -107,8 +107,7 @@ export default function LimitlessBiotechCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Limitless Biotech &rarr;
- </a>
+ Shop Limitless Biotech</a>
  </div>
 
 

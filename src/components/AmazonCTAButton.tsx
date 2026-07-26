@@ -13,7 +13,6 @@ export default function AmazonCTAButton({ href, label }: AmazonCTAButtonProps) {
       rel="sponsored nofollow noopener noreferrer"
       className="btn-primary text-sm inline-block"
     >
-      Shop {label} on Amazon &rarr;
-    </a>
+      Shop {label} on Amazon</a>
   );
 }

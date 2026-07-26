@@ -127,8 +127,7 @@ export default function BehemothLabzCouponPage() {
           <CopyCode code="PROF10" size="large" />
           <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">10% off your entire order</p>
           <a href="https://behemothlabz.com/aff/208/" target="_blank" rel="noopener noreferrer" className="btn-primary w-full text-center block">
-            Shop Behemoth Labz &rarr;
-          </a>
+            Shop Behemoth Labz</a>
         </div>
 
         <div>

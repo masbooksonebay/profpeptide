@@ -125,8 +125,7 @@ export default function VitalCoreResearchCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Vital Core Research &rarr;
- </a>
+ Shop Vital Core Research</a>
  </div>
 
 

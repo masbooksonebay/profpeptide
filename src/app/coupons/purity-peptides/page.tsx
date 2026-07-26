@@ -132,8 +132,7 @@ export default function PurityPeptidesCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop Purity Peptides &rarr;
-          </a>
+            Shop Purity Peptides</a>
         </div>
 
 

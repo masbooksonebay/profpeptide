@@ -113,8 +113,7 @@ export default function AlmightyPeptidesCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Almighty Peptides &rarr;
- </a>
+ Shop Almighty Peptides</a>
  </div>
 
 

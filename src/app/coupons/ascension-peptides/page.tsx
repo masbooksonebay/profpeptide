@@ -126,8 +126,7 @@ export default function AscensionPeptidesCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Ascension Peptides &rarr;
- </a>
+ Shop Ascension Peptides</a>
  </div>
 
 

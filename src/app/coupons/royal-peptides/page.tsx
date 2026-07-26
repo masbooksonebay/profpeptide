@@ -128,8 +128,7 @@ export default function RoyalPeptidesCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Royal Peptides &rarr;
- </a>
+ Shop Royal Peptides</a>
  </div>
 
 

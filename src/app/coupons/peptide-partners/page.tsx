@@ -120,8 +120,7 @@ export default function PeptidePartnersCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Peptide Partners &rarr;
- </a>
+ Shop Peptide Partners</a>
  </div>
 
 

@@ -116,8 +116,7 @@ export default function ScienceBasedPeptidesCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop Science Based Peptides &rarr;
-          </a>
+            Shop Science Based Peptides</a>
         </div>
 
 

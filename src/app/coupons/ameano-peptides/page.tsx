@@ -119,8 +119,7 @@ export default function AmeanoPeptidesCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop Ameano Peptides &rarr;
-          </a>
+            Shop Ameano Peptides</a>
         </div>
 
         <div>

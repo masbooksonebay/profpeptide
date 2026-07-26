@@ -129,8 +129,7 @@ export default function SynthesisPeptidesCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop Synthesis Peptides &rarr;
-          </a>
+            Shop Synthesis Peptides</a>
         </div>
 
 

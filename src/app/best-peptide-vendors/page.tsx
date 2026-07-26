@@ -189,23 +189,25 @@ export default function BestPeptideVendorsPage() {
               </div>
 
               <div className="space-y-3">
-                <CopyCode code={v.code} size="large" />
-                <div className="flex items-center gap-3">
-                  <Link
-                    href={`/coupons/${v.slug}`}
-                    className="text-xs font-medium text-[#3A759F] hover:underline"
-                  >
-                    Read full review &rarr;
-                  </Link>
+                {/* Code (chip) + Shop (filled CTA, no arrow) on one row, equal height —
+                    same pattern as the price-table rows. Review link is its own line below. */}
+                <div className="flex items-center justify-between gap-3">
+                  <CopyCode code={v.code} />
                   <a
                     href={v.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-primary text-xs px-4 py-2"
+                    className="btn-primary text-xs px-4 h-9 py-0 whitespace-nowrap"
                   >
-                    Shop {v.name} &rarr;
+                    Shop {v.name}
                   </a>
                 </div>
+                <Link
+                  href={`/coupons/${v.slug}`}
+                  className="inline-block text-xs font-medium text-[#3A759F] hover:underline"
+                >
+                  Read full review &rarr;
+                </Link>
               </div>
             </div>
           ))}

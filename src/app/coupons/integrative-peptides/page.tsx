@@ -81,8 +81,7 @@ export default function IntegrativePeptidesCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Integrative Peptides &rarr;
- </a>
+ Shop Integrative Peptides</a>
  </div>
 
 

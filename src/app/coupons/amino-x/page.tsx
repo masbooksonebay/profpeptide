@@ -96,8 +96,7 @@ export default function AminoXCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop Amino X &rarr;
-          </a>
+            Shop Amino X</a>
         </div>
 
 

@@ -126,8 +126,7 @@ export default function AminoClubCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop Amino Club &rarr;
-          </a>
+            Shop Amino Club</a>
         </div>
 
 

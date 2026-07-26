@@ -122,8 +122,7 @@ export default function BiolongevityLabsCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop Biolongevity Labs &rarr;
-          </a>
+            Shop Biolongevity Labs</a>
         </div>
 
 

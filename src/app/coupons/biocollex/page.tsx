@@ -110,8 +110,7 @@ export default function BioCollexCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop BioCollex &rarr;
-          </a>
+            Shop BioCollex</a>
         </div>
 
 

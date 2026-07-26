@@ -128,8 +128,7 @@ export default function PeptidesGgCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Peptides.gg &rarr;
- </a>
+ Shop Peptides.gg</a>
  </div>
 
 

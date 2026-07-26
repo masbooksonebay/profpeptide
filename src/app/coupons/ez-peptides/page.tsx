@@ -119,8 +119,7 @@ export default function EZPeptidesCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop EZ Peptides &rarr;
- </a>
+ Shop EZ Peptides</a>
  </div>
 
 

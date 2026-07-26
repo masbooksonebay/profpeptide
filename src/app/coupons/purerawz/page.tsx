@@ -132,8 +132,7 @@ export default function PureRawzCouponPage() {
             <CopyCode code="PROF10" size="large" />
             <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">10% off your entire order</p>
             <a href="https://purerawz.co/?ref=1901" target="_blank" rel="noopener noreferrer" className="btn-primary w-full text-center block">
-              Shop PureRawz &rarr;
-            </a>
+              Shop PureRawz</a>
           </div>
 
 

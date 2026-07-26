@@ -116,8 +116,7 @@ export default function IgnitePeptidesCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Ignite Peptides &rarr;
- </a>
+ Shop Ignite Peptides</a>
  </div>
 
 

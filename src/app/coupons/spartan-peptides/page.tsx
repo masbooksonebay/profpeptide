@@ -114,8 +114,7 @@ export default function SpartanPeptidesCouponPage() {
  rel="noopener noreferrer"
  className="btn-primary w-full text-center block"
  >
- Shop Spartan Peptides &rarr;
- </a>
+ Shop Spartan Peptides</a>
  </div>
 
 

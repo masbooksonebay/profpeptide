@@ -116,8 +116,7 @@ export default function AlphaPeptidesCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop Alpha Peptides &rarr;
-          </a>
+            Shop Alpha Peptides</a>
         </div>
 
 

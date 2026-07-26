@@ -120,8 +120,7 @@ export default function MidwestPeptideCouponPage() {
             rel="noopener noreferrer"
             className="btn-primary w-full text-center block"
           >
-            Shop Midwest Peptide &rarr;
-          </a>
+            Shop Midwest Peptide</a>
         </div>
 
 
