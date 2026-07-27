@@ -301,6 +301,22 @@ function FallbackCard({ bg }: { bg: string }) {
   );
 }
 
+// Evergreen alt for the /coupons hub card. Deliberately NO numbers (no vendor
+// count, no percentage): X caches OG images aggressively and can't be forced to
+// refresh, so any figure baked in here would become permanently stale.
+export const COUPON_HUB_ALT = "Prof. Peptide — verified research peptide discount codes";
+
+// Generic card for the /coupons hub — the vendorless FallbackCard the generator
+// already falls back to, exported explicitly so the hub route uses it by intent
+// (not by passing a fake slug). Same Shell / LogoLockup / palette / fonts as the
+// per-vendor cards, so it reads as a sibling. Purpose + brand only, no figures —
+// linkable from a post about any vendor or any (time-limited) rate without ever
+// contradicting the post.
+export async function generateCouponHubOg(): Promise<ImageResponse> {
+  const { bg, fonts } = await loadAssets();
+  return new ImageResponse(<FallbackCard bg={bg} />, { ...IMAGE_SIZE, fonts });
+}
+
 export async function generateCouponOg(slug: string): Promise<ImageResponse> {
   const { bg, fonts } = await loadAssets();
   const vendor = vendors[slug];
