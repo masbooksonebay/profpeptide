@@ -4,9 +4,18 @@ import JsonLd from "@/components/JsonLd";
 import { articles } from "@/data/news";
 import { activeVendorCount } from "@/data/vendors";
 import pricesIndex from "@/data/prices.index.json";
+import { peptideCategories } from "@/data/peptideCategories";
 import HeroSearch from "@/components/HeroSearch";
 
+// Homepage meta description. Counts are DERIVED (never hardcoded) so the tag
+// can't drift: profileCount from the library taxonomy, vendors from the active
+// (non-retired) vendor list. Describes the SITE (independent research), not the
+// iOS app — the previous copy was the site-wide root-layout default that still
+// cited stale "40+ / 50+" numbers and omitted price comparison.
+const profileCount = peptideCategories.reduce((n, c) => n + c.peptides.length, 0);
+
 export const metadata = {
+  description: `Independent peptide research: ${profileCount} compound profiles with cited studies, price comparison across ${activeVendorCount} vendors, a reconstitution calculator, and verified vendor discount codes.`,
   alternates: { canonical: "/" },
 };
 
