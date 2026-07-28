@@ -4,6 +4,9 @@ import { useState } from "react";
 import { CopyCode } from "@/components/CopyCode";
 import Link from "next/link";
 import { RegionPill } from "@/components/RegionPill";
+import { VendorProductCard } from "@/components/VendorProductCard";
+import { vendorProductCards, PRICES_UPDATED_DATE } from "@/data/prices";
+import { vendors } from "@/data/vendors";
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -26,6 +29,11 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function AminoClubCouponPage() {
+  // Product cards driven by the captured price data (one card per priced compound).
+  const cards = vendorProductCards("amino-club");
+  const code = vendors["amino-club"].code;
+  const shopUrl = (vendorSlug?: string) =>
+    `https://www.aminoclub.com/us/products/${vendorSlug ?? ""}?utm_source=affiliate_marketing&code=${code}`;
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -33,7 +41,7 @@ export default function AminoClubCouponPage() {
       </Link>
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Amino Club Discount Code &mdash; Save up to 30%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Amino Club Discount Code &mdash; Save 20%</h1>
       </div>
       <div className="flex flex-wrap items-center gap-2 mb-8">
         <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
@@ -116,10 +124,32 @@ export default function AminoClubCouponPage() {
           </p>
         </div>
 
+        {/* Product cards — the conversion layer. Editorial above, code card below. Each card's
+            compound name links INTERNALLY into PP's library; the Shop link is a deep affiliate
+            link into the vendor's product page (attribution carries via amino_affiliate_code). */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">Amino Club catalog &amp; prices</h2>
+          <p className="text-xs text-gray-400 dark:text-slate-500 mb-4">
+            Prices are pre-discount (before code <span className="font-medium text-gray-500 dark:text-slate-400">{code}</span>) and current as of {PRICES_UPDATED_DATE}. Apply the code at checkout for 20% off.
+          </p>
+          <div className="space-y-2">
+            {cards.map((c) => (
+              <VendorProductCard
+                key={c.compound}
+                compound={c.compound}
+                compoundName={c.compoundName}
+                hasProfile={c.hasProfile}
+                sizes={c.sizes}
+                shopUrl={shopUrl(c.vendorSlug)}
+              />
+            ))}
+          </div>
+        </div>
+
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
           <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
           <CopyCode code="PROFPEPTIDE" size="large" />
-          <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">up to 30% off your entire order</p>
+          <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">20% off your entire order</p>
           <a
             href="https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE"
             target="_blank"
@@ -139,7 +169,7 @@ export default function AminoClubCouponPage() {
             />
             <FAQItem
               q="Does Amino Club have a discount code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save up to 30% on any Amino Club order. This code is verified and maintained by Prof. Peptide."
+              a="Yes. Use code PROFPEPTIDE at checkout to save 20% on any Amino Club order. This code is verified and maintained by Prof. Peptide."
             />
             <FAQItem
               q="How do I use the Amino Club discount code?"

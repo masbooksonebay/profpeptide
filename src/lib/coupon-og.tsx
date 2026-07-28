@@ -15,18 +15,16 @@ function parseDiscountPercent(raw: string): number | null {
   return match ? parseInt(match[1], 10) : null;
 }
 
-// Per-vendor social-card copy overrides. Used where the page's marketing meta
-// intentionally differs from the shared vendors[].discount data — e.g. amino-club
-// advertises "up to 30%" on the page while the base discount datum stays "20% off".
-// Overriding here keeps the OG card in sync with the visible page WITHOUT mutating
-// vendor.discount (which also feeds listings and the Offer schema).
+// Per-vendor social-card copy overrides. Used where a page's marketing meta
+// intentionally differs from the shared vendors[].discount datum, WITHOUT mutating
+// vendor.discount (which also feeds listings and the Offer schema). Currently empty:
+// amino-club's old "UP TO 30%" override was removed so its OG card matches the page's
+// definite 20% (the standing rate) — no page should contradict itself on the discount.
 interface OgCopyOverride {
   percent: number;
   prefix?: string; // small eyebrow above the big "N% OFF" (e.g. "UP TO")
 }
-const OG_COPY_OVERRIDES: Record<string, OgCopyOverride> = {
-  "amino-club": { percent: 30, prefix: "UP TO" },
-};
+const OG_COPY_OVERRIDES: Record<string, OgCopyOverride> = {};
 
 // Resolve the discount figure + optional prefix shown on the card and in alt text.
 function resolveOgCopy(slug: string, discount: string): { percent: number | null; prefix?: string } {

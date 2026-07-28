@@ -90,6 +90,40 @@ export interface PriceEntry {
  */
 export const priceEntries: PriceEntry[] = generatedPriceEntries;
 
+/** One vendor product = one compound with its purchasable sizes (for product-card grids). */
+export interface VendorCardCompound {
+  /** PP compound slug — the internal /peptides/<compound> link target. */
+  compound: string;
+  compoundName: string;
+  /** true when a /peptides/<compound> profile exists (else render the name as plain text). */
+  hasProfile: boolean;
+  /** the vendor's OWN product slug (for the deep-link shop URL); may be absent. */
+  vendorSlug?: string;
+  sizes: { sizeMg: number; basePrice: number; inStock: boolean }[];
+}
+
+/**
+ * Group a vendor's single-compound price rows into per-compound cards — one card per
+ * compound, sizes ascending, compounds alphabetical by display name. Reusable for any
+ * vendor's product-card grid; the caller builds the shop URL from `vendorSlug`.
+ */
+export function vendorProductCards(vendorKey: string): VendorCardCompound[] {
+  const byCompound = new Map<string, VendorCardCompound>();
+  for (const e of priceEntries) {
+    if (e.vendor !== vendorKey) continue;
+    let card = byCompound.get(e.compound);
+    if (!card) {
+      card = { compound: e.compound, compoundName: e.compoundName, hasProfile: hasProfile(e.compound), vendorSlug: e.vendorSlug, sizes: [] };
+      byCompound.set(e.compound, card);
+    }
+    card.sizes.push({ sizeMg: e.sizeMg, basePrice: e.basePrice, inStock: e.inStock });
+  }
+  const cards = Array.from(byCompound.values());
+  for (const c of cards) c.sizes.sort((a, b) => a.sizeMg - b.sizeMg);
+  cards.sort((a, b) => a.compoundName.localeCompare(b.compoundName));
+  return cards;
+}
+
 /** Parse the integer discount percent from a vendor's `discount` string ("15% off" → 15). */
 export function vendorDiscountPct(vendorKey: string): number {
   const v = vendors[vendorKey];
