@@ -33,39 +33,44 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Amino Club
 - **slug:** amino-club | **code:** PROFPEPTIDE | **discount:** 20% off | **url:** aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE
-- **traffic:** (not pulled) | **pulled:** July 25 2026
-- **sale posture:** ⚠️ Sitewide CART-LEVEL coupon (e.g. ENJOY30, 30% off) — invisible in product data; base=regular_price (original_amount). Re-check the live coupon each refresh.
+- **traffic:** (not pulled) | **pulled:** July 28 2026
+- **sale posture:** ENJOY30 (30% off) is COUPON-GATED — requires typing the code, so it is EXCLUDED under the sale-vs-coupon rule (see top of file). Evaluated 2026-07 and deliberately NOT applied (no sitewide_sale) — do NOT 'rediscover' it as an oversight. base = no-code price (original_amount). If ENJOY30 ever becomes an automatic no-code cart discount, only then set sitewide_sale.
 
 ### Single compounds
-| Compound | Size | Base | $/mg | Regular | Stock |
-| --- | --- | --- | --- | --- | --- |
-| 5-Amino-1MQ | 50mg | $49.99 | $1.00 | — | ✓ |
-| AOD-9604 | 5mg | $49.99 | $10.00 | — | ✓ |
-| BPC-157 | 10mg | $39.99 | $4.00 | — | ✓ |
-| Cagrilintide | 10mg | $69.99 | $7.00 | — | ✓ |
-| DSIP | 5mg | $29.99 | $6.00 | — | ✓ |
-| Epitalon | 10mg | $29.99 | $3.00 | — | ✓ |
-| GHK-Cu | 50mg | $29.99 | $0.60 | — | ✓ |
-| GHK-Cu | 100mg | $57.99 | $0.58 | — | ✓ |
-| Glutathione | 1500mg | $59.99 | $0.04 | — | ✓ |
-| IGF-1 LR3 | 1mg | $69.99 | $69.99 | — | ✓ |
-| Ipamorelin | 10mg | $49.99 | $5.00 | — | ✓ |
-| KPV | 10mg | $39.99 | $4.00 | — | ✓ |
-| Melanotan I | 10mg | $29.95 | $3.00 | — | ✓ |
-| Melanotan II | 10mg | $29.95 | $3.00 | — | ✓ |
-| MOTS-C | 10mg | $39.99 | $4.00 | — | ✓ |
-| MOTS-C | 40mg | $134.99 | $3.37 | — | ✓ |
-| NAD+ | 500mg | $69.99 | $0.14 | — | ✓ |
-| PT-141 | 10mg | $29.99 | $3.00 | — | ✓ |
-| Retatrutide (listed as GLP-3 (RT)) | 10mg | $69.99 | $7.00 | — | ✓ |
-| Retatrutide (listed as GLP-3 (RT)) | 20mg | $134.99 | $6.75 | — | ✓ |
-| Retatrutide (listed as GLP-3 (RT)) | 30mg | $199.99 | $6.67 | — | ✓ |
-| Selank | 10mg | $29.95 | $3.00 | — | ✓ |
-| Semax | 10mg | $29.95 | $3.00 | — | ✓ |
-| SNAP-8 [backlog] | 10mg | $29.99 | $3.00 | — | ✓ |
-| TB-500 | 10mg | $39.99 | $4.00 | — | ✓ |
-| Tesamorelin | 10mg | $69.99 | $7.00 | — | ✓ |
-| Thymosin Alpha-1 | 10mg | $39.99 | $4.00 | — | ✓ |
+| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| 5-Amino-1MQ | 50mg | $49.99 | $1.00 | — | ✓ | 5-amino-1mq |
+| AOD-9604 | 5mg | $49.99 | $10.00 | — | ✓ | aod-9604 |
+| BPC-157 | 10mg | $39.99 | $4.00 | — | ✓ | bpc-157 |
+| Cagrilintide | 10mg | $69.99 | $7.00 | — | ✓ | cagrilintide |
+| Cibinetide | 10mg | $49.99 | $5.00 | — | ✓ | ara-290 |
+| Dihexa [backlog] | 10mg | $59.99 | $6.00 | — | ✓ | dihexa |
+| DSIP | 5mg | $29.99 | $6.00 | — | ✓ | dsip |
+| Epitalon | 10mg | $29.99 | $3.00 | — | ✓ | epithalon |
+| GHK-Cu | 50mg | $29.99 | $0.60 | — | ✓ | ghk-cu |
+| GHK-Cu | 100mg | $57.99 | $0.58 | — | ✓ | ghk-cu |
+| Glutathione | 1500mg | $59.99 | $0.04 | — | ✓ | glutathione |
+| IGF-1 LR3 | 1mg | $69.99 | $69.99 | — | ✓ | igf-1-lr3 |
+| Ipamorelin | 10mg | $49.99 | $5.00 | — | ✓ | ipamorelin |
+| Kisspeptin-10 | 10mg | $49.99 | $5.00 | — | ✓ | kisspeptin |
+| KPV | 10mg | $39.99 | $4.00 | — | ✓ | kpv |
+| Melanotan I | 10mg | $29.95 | $3.00 | — | ✓ | melanotan-i |
+| Melanotan II | 10mg | $29.95 | $3.00 | — | ✓ | melanotan-ii |
+| MOTS-C | 10mg | $39.99 | $4.00 | — | ✓ | mots-c |
+| MOTS-C | 40mg | $134.99 | $3.37 | — | ✓ | mots-c |
+| NAD+ | 500mg | $69.99 | $0.14 | — | ✓ | nad-plus |
+| PT-141 | 10mg | $29.99 | $3.00 | — | ✓ | pt-141 |
+| Retatrutide (listed as GLP-3 (RT)) | 10mg | $69.99 | $7.00 | — | ✓ | glp-3 |
+| Retatrutide (listed as GLP-3 (RT)) | 20mg | $134.99 | $6.75 | — | ✓ | glp-3 |
+| Retatrutide (listed as GLP-3 (RT)) | 30mg | $199.99 | $6.67 | — | ✓ | glp-3 |
+| Selank | 10mg | $29.95 | $3.00 | — | ✓ | selank |
+| Semax | 10mg | $29.95 | $3.00 | — | ✓ | semax |
+| Sermorelin | 10mg | $59.99 | $6.00 | — | ✓ | sermorelin |
+| SNAP-8 [backlog] | 10mg | $29.99 | $3.00 | — | ✓ | snap-8 |
+| TB-500 | 10mg | $39.99 | $4.00 | — | ✓ | tb-500 |
+| Tesamorelin | 10mg | $69.99 | $7.00 | — | ✓ | tesamorlin |
+| Thymosin Alpha-1 | 10mg | $39.99 | $4.00 | — | ✓ | thymosin-alpha-1 |
+| VIP | 10mg | $49.99 | $5.00 | — | ✓ | vip |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |

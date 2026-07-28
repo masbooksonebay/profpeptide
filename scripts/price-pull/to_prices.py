@@ -157,6 +157,9 @@ for s in secs:
             regular_cell, stock_cell = c[4], c[5]
         else:
             regular_cell, stock_cell = "—", c[4]
+        # 7th column (Vendor Slug) — the vendor's own product slug, present only in
+        # sections re-pulled since the column was added (nextjs/Medusa adapters). "—" = none.
+        vendor_slug_cell = c[6] if len(c) >= 7 else None
 
         listed_as = None
 
@@ -216,6 +219,7 @@ for s in secs:
             "compound": slug, "compoundName": N.DISPLAY.get(slug, slug), "vendor": vslug,
             "sizeMg": mg, "basePrice": base,
             "inStock": stock_cell == "✓",
+            "vendorSlug": (vendor_slug_cell if vendor_slug_cell and vendor_slug_cell not in ("—", "-") else None),
             "listedAs": listed_as,
             "regularPrice": regular if on_sale else None,
             "onSale": on_sale,
@@ -278,6 +282,8 @@ for r in rows:
     parts = [f'compound: {ts_val(r["compound"])}', f'compoundName: {ts_val(r["compoundName"])}',
              f'vendor: {ts_val(r["vendor"])}', f'sizeMg: {ts_val(r["sizeMg"])}',
              f'basePrice: {ts_val(r["basePrice"])}', f'inStock: {ts_val(r["inStock"])}']
+    if r.get("vendorSlug"):
+        parts.append(f'vendorSlug: {ts_val(r["vendorSlug"])}')
     if r["listedAs"]:
         parts.append(f'listedAs: {ts_val(r["listedAs"])}')
     if r.get("onSale"):

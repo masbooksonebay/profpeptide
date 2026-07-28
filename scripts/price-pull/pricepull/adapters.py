@@ -250,14 +250,16 @@ def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', 
             vs = [{'attrs': [('Size', sz)], 'price': float(pr), 'regular': _anchor(cmp, float(pr)),
                    'in_stock': int(sq) > 0} for sz, pr, cmp, sq in variants]
             out.append({'name': name, 'price': vs[0]['price'], 'regular': vs[0]['regular'],
-                        'in_stock': any(v['in_stock'] for v in vs), 'variations': vs, 'description': desc})
+                        'in_stock': any(v['in_stock'] for v in vs), 'variations': vs, 'description': desc,
+                        'slug': slug})
             continue
 
         # shape 2: JSON-LD Offer  (single price + availability) — one price, no anchor
         off = re.search(r'"price":([0-9.]+),"priceValidUntil"[^}]*?"availability":"https://schema.org/(InStock|OutOfStock)"', blob)
         if off:
             out.append({'name': name, 'price': float(off.group(1)), 'regular': float(off.group(1)),
-                        'in_stock': off.group(2) == 'InStock', 'variations': [], 'description': desc})
+                        'in_stock': off.group(2) == 'InStock', 'variations': [], 'description': desc,
+                        'slug': slug})
     return out
 
 

@@ -51,7 +51,7 @@
   },
   {
     "slug": "cibinetide",
-    "vendors": 12,
+    "vendors": 13,
     "indexable": true
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "slug": "dihexa",
-    "vendors": 7,
+    "vendors": 8,
     "indexable": true
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "slug": "kisspeptin",
-    "vendors": 15,
+    "vendors": 16,
     "indexable": true
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "slug": "sermorelin",
-    "vendors": 19,
+    "vendors": 20,
     "indexable": true
   },
   {
@@ -336,7 +336,7 @@
   },
   {
     "slug": "vip",
-    "vendors": 14,
+    "vendors": 15,
     "indexable": true
   }
 ]

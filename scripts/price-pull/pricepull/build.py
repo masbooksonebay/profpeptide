@@ -25,6 +25,7 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
     on_sale is computed as base < regular (the woo `on_sale` flag is unreliable — some
     vendors flag it with no actual markdown)."""
     name = product['name']
+    vslug = product.get('slug', '')          # the vendor's own product slug (nextjs/Medusa); '' for adapters that don't expose one
 
     dec = decoders.decode(vendor, name)
     dec_size = None                         # decoder-supplied mg (e.g. Ascension R-30 -> 30)
@@ -75,11 +76,11 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
                 mgs = re.findall(r'(\d+(?:\.\d+)?)\s*mg', name, re.I)
                 ratio = 'not published'
                 tm = sum(float(x) for x in mgs) if len(mgs) >= 2 else N.mg_value(size_label)
-            yield ('blend', disp, (f"{tm:g}mg" if tm else N.size_label(size_label)), base, ins, ratio, comps, reg_out, on_sale)
+            yield ('blend', disp, (f"{tm:g}mg" if tm else N.size_label(size_label)), base, ins, ratio, comps, reg_out, on_sale, vslug)
         elif rowkind == 'spray':
-            yield ('spray', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale)
+            yield ('spray', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale, vslug)
         else:
-            yield ('single', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale)
+            yield ('single', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale, vslug)
 
 
 def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_vial_kit=False, sitewide_sale=0.0):
@@ -89,13 +90,13 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
         for r in classify(vendor, p, ten_vial_kit=ten_vial_kit, sitewide_sale=sitewide_sale):
             if r[0] == 'exclude':
                 excl.add(r[1]); continue
-            kind, disp, size, base, ins, ratio, comps, reg, on_sale = r
+            kind, disp, size, base, ins, ratio, comps, reg, on_sale, vslug = r
             st = "✓" if ins else "✗"
             reg_str = f"${reg:,.2f}" if on_sale and reg else "—"    # Regular column: anchor only when on sale
             if kind == 'single':
                 mg = N.mg_value(size)
                 key = (disp, size)
-                cand = (base, (disp, size, f"${base:,.2f}", N.per_mg(base, mg), reg_str, st))
+                cand = (base, (disp, size, f"${base:,.2f}", N.per_mg(base, mg), reg_str, st, vslug or "—"))
                 if key not in singles or base < singles[key][0]:   # min base per (compound,size)
                     singles[key] = cand
             elif kind == 'blend':
@@ -116,7 +117,7 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
     L.append(f"- **sale posture:** {posture}")
     L.append("")
     L.append("### Single compounds")
-    L.append(_row(["Compound", "Size", "Base", "$/mg", "Regular", "Stock"])); L.append(_row(["---"] * 6))
+    L.append(_row(["Compound", "Size", "Base", "$/mg", "Regular", "Stock", "Vendor Slug"])); L.append(_row(["---"] * 7))
     for r in sorted(singles, key=lambda x: (x[0].lower(), N.mg_value(x[1]) or 0)):
         L.append(_row(list(r)))
     L.append("")

@@ -78,6 +78,10 @@ export interface PriceEntry {
   /** vendor's coded product name, when a decoded compound is sold under a code
    *  (e.g. "GLP-3 RT" → Retatrutide). Renders as "Retatrutide (listed as GLP-3 RT)". */
   listedAs?: string;
+  /** the vendor's OWN product slug (not PP's), captured by the pull for deep links —
+   *  e.g. amino-club's "ara-290" for cibinetide. Present only for vendors/adapters that
+   *  expose it (Medusa/nextjs). Used to build `/us/products/<vendorSlug>` shop links. */
+  vendorSlug?: string;
 }
 
 /**
