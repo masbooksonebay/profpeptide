@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "node scripts/gen-vendor-slugs.mjs && next build && next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:vendors": "node scripts/check-vendors.mjs"
   },
   "dependencies": {
     "fuse.js": "^7.3.0",
