@@ -4,8 +4,8 @@ import { useState } from "react";
 import { CopyCode } from "@/components/CopyCode";
 import Link from "next/link";
 import { RegionPill } from "@/components/RegionPill";
-import { VendorProductCard } from "@/components/VendorProductCard";
-import { vendorProductCards, PRICES_UPDATED_DATE } from "@/data/prices";
+import { VendorProductGrid } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
 
 function FAQItem({ q, a }: { q: string; a: string }) {
@@ -29,8 +29,9 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function AminoClubCouponPage() {
-  // Product cards driven by the captured price data (one card per priced compound).
-  const cards = vendorProductCards("amino-club");
+  // Product rows driven by the captured price data (one row per compound+size).
+  const rows = vendorProductRows("amino-club");
+  const discountPct = vendorDiscountPct("amino-club");
   const code = vendors["amino-club"].code;
   const shopUrl = (vendorSlug?: string) =>
     `https://www.aminoclub.com/us/products/${vendorSlug ?? ""}?utm_source=affiliate_marketing&code=${code}`;
@@ -124,39 +125,33 @@ export default function AminoClubCouponPage() {
           </p>
         </div>
 
-        {/* Product cards — the conversion layer. Editorial above, code card below. Each card's
-            compound name links INTERNALLY into PP's library; the Shop link is a deep affiliate
-            link into the vendor's product page (attribution carries via amino_affiliate_code). */}
+        {/* Catalog — the conversion layer. Get the code first (card), then browse the grid.
+            One row per compound+size, matching the /prices columnar treatment. Each compound
+            name links INTERNALLY into PP's library; each Shop link is a deep affiliate link
+            into the vendor's product page (attribution carries via amino_affiliate_code). */}
         <div>
-          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-1">Amino Club catalog &amp; prices</h2>
-          <p className="text-xs text-gray-400 dark:text-slate-500 mb-4">
-            Prices are pre-discount (before code <span className="font-medium text-gray-500 dark:text-slate-400">{code}</span>) and current as of {PRICES_UPDATED_DATE}. Apply the code at checkout for 20% off.
-          </p>
-          <div className="space-y-2">
-            {cards.map((c) => (
-              <VendorProductCard
-                key={c.compound}
-                compound={c.compound}
-                compoundName={c.compoundName}
-                hasProfile={c.hasProfile}
-                sizes={c.sizes}
-                shopUrl={shopUrl(c.vendorSlug)}
-              />
-            ))}
-          </div>
-        </div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Amino Club catalog &amp; prices</h2>
 
-        <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
-          <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-          <CopyCode code="PROFPEPTIDE" size="large" />
-          <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">20% off your entire order</p>
-          <a
-            href="https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary w-full text-center block"
-          >
-            Shop Amino Club</a>
+          {/* Code card, moved above the grid: grab the code, then shop. */}
+          <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b] mb-6">
+            <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
+            <CopyCode code="PROFPEPTIDE" size="large" />
+            <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">{discountPct}% off your entire order</p>
+            <a
+              href="https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary w-full text-center block"
+            >
+              Shop Amino Club</a>
+          </div>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          {/* Freshness stamp beneath the grid — a documented ranking signal on coupon queries. */}
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are Amino Club&apos;s list price; the bold figure is your price after the {discountPct}% code. Prices current as of {PRICES_UPDATED_DATE}.
+          </p>
         </div>
 
 

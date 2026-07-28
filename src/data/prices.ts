@@ -90,8 +90,8 @@ export interface PriceEntry {
  */
 export const priceEntries: PriceEntry[] = generatedPriceEntries;
 
-/** One vendor product = one compound with its purchasable sizes (for product-card grids). */
-export interface VendorCardCompound {
+/** One purchasable line = a vendor's compound at a specific size (for a product-row grid). */
+export interface VendorProductRow {
   /** PP compound slug — the internal /peptides/<compound> link target. */
   compound: string;
   compoundName: string;
@@ -99,29 +99,31 @@ export interface VendorCardCompound {
   hasProfile: boolean;
   /** the vendor's OWN product slug (for the deep-link shop URL); may be absent. */
   vendorSlug?: string;
-  sizes: { sizeMg: number; basePrice: number; inStock: boolean }[];
+  sizeMg: number;
+  /** list price BEFORE the vendor's code — the post-code figure is derived at render. */
+  basePrice: number;
+  inStock: boolean;
 }
 
 /**
- * Group a vendor's single-compound price rows into per-compound cards — one card per
- * compound, sizes ascending, compounds alphabetical by display name. Reusable for any
- * vendor's product-card grid; the caller builds the shop URL from `vendorSlug`.
+ * A vendor's single-compound price rows, one row PER compound+size (1:1 with the price
+ * data — no grouping), sorted by compound display name then size ascending. Reusable for
+ * any vendor's product-row grid; the caller derives the post-code price (base × discount)
+ * and builds the shop URL from `vendorSlug`.
  */
-export function vendorProductCards(vendorKey: string): VendorCardCompound[] {
-  const byCompound = new Map<string, VendorCardCompound>();
-  for (const e of priceEntries) {
-    if (e.vendor !== vendorKey) continue;
-    let card = byCompound.get(e.compound);
-    if (!card) {
-      card = { compound: e.compound, compoundName: e.compoundName, hasProfile: hasProfile(e.compound), vendorSlug: e.vendorSlug, sizes: [] };
-      byCompound.set(e.compound, card);
-    }
-    card.sizes.push({ sizeMg: e.sizeMg, basePrice: e.basePrice, inStock: e.inStock });
-  }
-  const cards = Array.from(byCompound.values());
-  for (const c of cards) c.sizes.sort((a, b) => a.sizeMg - b.sizeMg);
-  cards.sort((a, b) => a.compoundName.localeCompare(b.compoundName));
-  return cards;
+export function vendorProductRows(vendorKey: string): VendorProductRow[] {
+  return priceEntries
+    .filter((e) => e.vendor === vendorKey)
+    .map((e) => ({
+      compound: e.compound,
+      compoundName: e.compoundName,
+      hasProfile: hasProfile(e.compound),
+      vendorSlug: e.vendorSlug,
+      sizeMg: e.sizeMg,
+      basePrice: e.basePrice,
+      inStock: e.inStock,
+    }))
+    .sort((a, b) => a.compoundName.localeCompare(b.compoundName) || a.sizeMg - b.sizeMg);
 }
 
 /** Parse the integer discount percent from a vendor's `discount` string ("15% off" → 15). */
