@@ -1,7 +1,8 @@
-import { buildPageMetadata } from "@/lib/seo";
+import { buildCouponMetadata, couponOffer } from "@/lib/coupon-page";
+import JsonLd from "@/components/JsonLd";
 
-export const metadata = buildPageMetadata({
-  path: "/coupons/swiss-chems",
+export const metadata = buildCouponMetadata({
+  slug: "swiss-chems",
   title: "Swiss Chems Coupon Code & Discount — Save 10% with PROF10 (2026) | Prof. Peptide",
   ogTitle: "Swiss Chems Coupon — Save 10% | Prof. Peptide",
   description:
@@ -11,7 +12,7 @@ export const metadata = buildPageMetadata({
 export default function SwissChemsLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Swiss Chems Discount Code - Save 10%\",\"description\":\"Use code PROF10 for 10% off at Swiss Chems\",\"url\":\"https://profpeptide.com/coupons/swiss-chems\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Swiss Chems\"}}" }} />
+      <JsonLd data={couponOffer("swiss-chems")} />
       {children}
     </>
   );

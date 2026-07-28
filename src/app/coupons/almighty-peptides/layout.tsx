@@ -1,7 +1,8 @@
-import { buildPageMetadata } from "@/lib/seo";
+import { buildCouponMetadata, couponOffer } from "@/lib/coupon-page";
+import JsonLd from "@/components/JsonLd";
 
-export const metadata = buildPageMetadata({
-  path: "/coupons/almighty-peptides",
+export const metadata = buildCouponMetadata({
+  slug: "almighty-peptides",
   title: "Almighty Peptides Coupon Code & Discount — Save 20% (2026) | Prof. Peptide",
   ogTitle: "Almighty Peptides Coupon — Save 20% | Prof. Peptide",
   description:
@@ -11,7 +12,7 @@ export const metadata = buildPageMetadata({
 export default function AlmightyPeptidesLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Almighty Peptides Discount Code - Save 20%\",\"description\":\"Use code PROFPEPTIDE for 20% off at Almighty Peptides\",\"url\":\"https://profpeptide.com/coupons/almighty-peptides\",\"validFrom\":\"2026-05-01\",\"priceValidUntil\":\"2026-05-31\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Almighty Peptides\"}}" }} />
+      <JsonLd data={couponOffer("almighty-peptides")} />
       {children}
     </>
   );

@@ -1,7 +1,8 @@
-import { buildPageMetadata } from "@/lib/seo";
+import { buildCouponMetadata, couponOffer } from "@/lib/coupon-page";
+import JsonLd from "@/components/JsonLd";
 
-export const metadata = buildPageMetadata({
-  path: "/coupons/peptidology",
+export const metadata = buildCouponMetadata({
+  slug: "peptidology",
   title: "Peptidology Coupon Code & Discount — Save 10% (2026) | Prof. Peptide",
   ogTitle: "Peptidology Coupon — Save 10% | Prof. Peptide",
   description:
@@ -11,7 +12,7 @@ export const metadata = buildPageMetadata({
 export default function PeptidologyLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Peptidology Discount Code - Save 10%\",\"description\":\"Use code PROFPEPTIDE for 10% off at Peptidology\",\"url\":\"https://profpeptide.com/coupons/peptidology\",\"validFrom\":\"2026-07-01\",\"priceValidUntil\":\"2026-12-31\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Peptidology\"}}" }} />
+      <JsonLd data={couponOffer("peptidology")} />
       {children}
     </>
   );

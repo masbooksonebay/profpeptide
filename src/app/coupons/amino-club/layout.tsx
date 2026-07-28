@@ -1,10 +1,11 @@
-import { buildPageMetadata } from "@/lib/seo";
+import { buildCouponMetadata, couponOffer } from "@/lib/coupon-page";
+import JsonLd from "@/components/JsonLd";
 import { vendors } from "@/data/vendors";
 
 const v = vendors["amino-club"];
 
-export const metadata = buildPageMetadata({
-  path: "/coupons/amino-club",
+export const metadata = buildCouponMetadata({
+  slug: "amino-club",
   title: `Amino Club Discount Code: ${v.code} — Save 20%`,
   description: `Use code ${v.code} at Amino Club to save 20% sitewide — verified and working for 2026. ISO-17025 tested peptides with a COA on every batch.`,
 });
@@ -12,7 +13,7 @@ export const metadata = buildPageMetadata({
 export default function AminoClubLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Amino Club Discount Code - Save 20%\",\"description\":\"Use code PROFPEPTIDE for 20% off at Amino Club\",\"url\":\"https://profpeptide.com/coupons/amino-club\",\"validFrom\":\"2026-06-01\",\"priceValidUntil\":\"2026-06-30\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Amino Club\"}}" }} />
+      <JsonLd data={couponOffer("amino-club")} />
       {children}
     </>
   );

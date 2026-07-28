@@ -1,7 +1,8 @@
-import { buildPageMetadata } from "@/lib/seo";
+import { buildCouponMetadata, couponOffer } from "@/lib/coupon-page";
+import JsonLd from "@/components/JsonLd";
 
-export const metadata = buildPageMetadata({
-  path: "/coupons/biolongevity-labs",
+export const metadata = buildCouponMetadata({
+  slug: "biolongevity-labs",
   title: "Biolongevity Labs Coupon Code & Discount — Save 15% with PROFPEPTIDE (2026) | Prof. Peptide",
   ogTitle: "Biolongevity Labs Coupon — Save 15% | Prof. Peptide",
   description:
@@ -11,7 +12,7 @@ export const metadata = buildPageMetadata({
 export default function BiolongevityLabsLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Biolongevity Labs Discount Code - Save 15%\",\"description\":\"Use code PROFPEPTIDE for 15% off at Biolongevity Labs\",\"url\":\"https://profpeptide.com/coupons/biolongevity-labs\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Biolongevity Labs\"}}" }} />
+      <JsonLd data={couponOffer("biolongevity-labs")} />
       {children}
     </>
   );

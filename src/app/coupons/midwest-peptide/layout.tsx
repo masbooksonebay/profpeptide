@@ -1,7 +1,8 @@
-import { buildPageMetadata } from "@/lib/seo";
+import { buildCouponMetadata, couponOffer } from "@/lib/coupon-page";
+import JsonLd from "@/components/JsonLd";
 
-export const metadata = buildPageMetadata({
-  path: "/coupons/midwest-peptide",
+export const metadata = buildCouponMetadata({
+  slug: "midwest-peptide",
   title: "Midwest Peptide Discount Code: PROF10 — Save 10%",
   ogTitle: "Midwest Peptide Coupon — Save 10% | Prof. Peptide",
   description:
@@ -11,7 +12,7 @@ export const metadata = buildPageMetadata({
 export default function MidwestPeptideLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Offer\",\"name\":\"Midwest Peptide Discount Code - Save 10%\",\"description\":\"Use code PROF10 for 10% off at Midwest Peptide\",\"url\":\"https://profpeptide.com/coupons/midwest-peptide\",\"validFrom\":\"2026-06-01\",\"priceValidUntil\":\"2026-06-30\",\"seller\":{\"@type\":\"Organization\",\"name\":\"Midwest Peptide\"}}" }} />
+      <JsonLd data={couponOffer("midwest-peptide")} />
       {children}
     </>
   );
