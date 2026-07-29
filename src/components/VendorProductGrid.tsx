@@ -51,8 +51,74 @@ export interface VendorProductGridProps {
 const GRID =
   "grid grid-cols-[minmax(0,1fr)_4.5rem_9rem_5rem_5rem] items-start justify-items-start gap-x-4 text-left";
 
+// Visible-row cap. Mark judged 32 rows / ~2,190px a good length; longer catalogs (16
+// vendors, up to 134 rows) collapse the overflow behind a show-more. A vendor at or under
+// the cap renders EXACTLY as before — the non-overflow branch below maps the original rows
+// array with no wrapper, so the pilot (amino-club, 32) is byte-identical.
+const ROW_CAP = 32;
+
 export function VendorProductGrid({ rows, discountPct, shopUrlFor }: VendorProductGridProps) {
   const postCode = (base: number) => Math.round(base * (1 - discountPct / 100) * 100) / 100;
+
+  const visible = rows.slice(0, ROW_CAP);
+  const hidden = rows.slice(ROW_CAP);
+  const overflow = hidden.length > 0;
+
+  const deskRow = (r: VendorProductRow, i: number) => (
+    <div key={i} className={`${GRID} py-2.5 border-b border-gray-100 dark:border-slate-800`}>
+      <div className="min-w-0 self-baseline">
+        {r.hasProfile ? (
+          <Link href={`/peptides/${r.compound}`} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.compoundName}</Link>
+        ) : (
+          <span className="text-sm font-semibold text-[#16181B] dark:text-slate-100">{r.compoundName}</span>
+        )}
+      </div>
+      <div className="self-baseline text-sm text-gray-600 dark:text-slate-300">{r.sizeMg} mg</div>
+      <div className="self-baseline">
+        <span className="text-sm font-bold text-[#16181B] dark:text-slate-100">{fmt(postCode(r.basePrice))}</span>
+        <span className="ml-1.5 text-xs text-gray-400 dark:text-slate-500 line-through">{fmt(r.basePrice)}</span>
+      </div>
+      <div className={`self-baseline text-xs ${r.inStock ? "text-green-700" : "text-gray-400 dark:text-slate-500"}`}>{r.inStock ? "In stock" : "Out"}</div>
+      <div>
+        <a href={shopUrlFor(r.vendorSlug)} target="_blank" rel="noopener noreferrer sponsored" className="btn-primary text-sm whitespace-nowrap h-9 py-0">Shop</a>
+      </div>
+    </div>
+  );
+
+  const mobRow = (r: VendorProductRow, i: number) => (
+    <div key={i} className="panel-card p-3 tabular-nums">
+      {/* items-baseline: name and headline price share one text baseline; the struck
+          list price hangs beside the bold post-code figure on the right. */}
+      <div className="flex items-baseline justify-between gap-2">
+        <div className="flex-1 min-w-0 flex items-baseline gap-2 flex-wrap">
+          {r.hasProfile ? (
+            <Link href={`/peptides/${r.compound}`} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.compoundName}</Link>
+          ) : (
+            <span className="text-sm font-semibold text-[#16181B] dark:text-slate-100">{r.compoundName}</span>
+          )}
+          <span className="text-xs text-gray-400 dark:text-slate-500">{r.sizeMg} mg</span>
+          <span className={`text-xs ${r.inStock ? "text-green-700" : "text-gray-400 dark:text-slate-500"}`}>{r.inStock ? "In stock" : "Out"}</span>
+        </div>
+        <div className="shrink-0 min-w-[5rem] text-right">
+          <span className="text-sm font-bold text-[#16181B] dark:text-slate-100">{fmt(postCode(r.basePrice))}</span>
+          <span className="ml-1.5 text-xs text-gray-400 dark:text-slate-500 line-through">{fmt(r.basePrice)}</span>
+        </div>
+      </div>
+      <div className="mt-2">
+        <a href={shopUrlFor(r.vendorSlug)} target="_blank" rel="noopener noreferrer sponsored" className="btn-primary text-sm h-9 py-0 w-full">Shop</a>
+      </div>
+    </div>
+  );
+
+  // Native <details> disclosure — no client JS, so the grid stays a plain component and a
+  // ≤cap vendor introduces no client boundary. group-open toggles the label + chevron.
+  const summary = (
+    <summary className="flex cursor-pointer list-none items-center justify-center gap-1.5 py-3 text-sm font-medium text-[#3A759F] hover:underline [&::-webkit-details-marker]:hidden">
+      <span className="group-open:hidden">Show all {rows.length} products</span>
+      <span className="hidden group-open:inline">Show fewer</span>
+      <span aria-hidden className="text-xs transition-transform group-open:rotate-180">&darr;</span>
+    </summary>
+  );
 
   return (
     <div>
@@ -68,54 +134,32 @@ export function VendorProductGrid({ rows, discountPct, shopUrlFor }: VendorProdu
           <div>Stock</div>
           <div />
         </div>
-        {rows.map((r, i) => (
-          <div key={i} className={`${GRID} py-2.5 border-b border-gray-100 dark:border-slate-800`}>
-            <div className="min-w-0 self-baseline">
-              {r.hasProfile ? (
-                <Link href={`/peptides/${r.compound}`} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.compoundName}</Link>
-              ) : (
-                <span className="text-sm font-semibold text-[#16181B] dark:text-slate-100">{r.compoundName}</span>
-              )}
-            </div>
-            <div className="self-baseline text-sm text-gray-600 dark:text-slate-300">{r.sizeMg} mg</div>
-            <div className="self-baseline">
-              <span className="text-sm font-bold text-[#16181B] dark:text-slate-100">{fmt(postCode(r.basePrice))}</span>
-              <span className="ml-1.5 text-xs text-gray-400 dark:text-slate-500 line-through">{fmt(r.basePrice)}</span>
-            </div>
-            <div className={`self-baseline text-xs ${r.inStock ? "text-green-700" : "text-gray-400 dark:text-slate-500"}`}>{r.inStock ? "In stock" : "Out"}</div>
-            <div>
-              <a href={shopUrlFor(r.vendorSlug)} target="_blank" rel="noopener noreferrer sponsored" className="btn-primary text-sm whitespace-nowrap h-9 py-0">Shop</a>
-            </div>
-          </div>
-        ))}
+        {overflow ? (
+          <>
+            {visible.map(deskRow)}
+            <details className="group">
+              {summary}
+              {hidden.map((r, i) => deskRow(r, i + ROW_CAP))}
+            </details>
+          </>
+        ) : (
+          rows.map(deskRow)
+        )}
       </div>
 
       {/* ── Mobile stacked (< sm) ── */}
       <div className="sm:hidden space-y-2">
-        {rows.map((r, i) => (
-          <div key={i} className="panel-card p-3 tabular-nums">
-            {/* items-baseline: name and headline price share one text baseline; the struck
-                list price hangs beside the bold post-code figure on the right. */}
-            <div className="flex items-baseline justify-between gap-2">
-              <div className="flex-1 min-w-0 flex items-baseline gap-2 flex-wrap">
-                {r.hasProfile ? (
-                  <Link href={`/peptides/${r.compound}`} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.compoundName}</Link>
-                ) : (
-                  <span className="text-sm font-semibold text-[#16181B] dark:text-slate-100">{r.compoundName}</span>
-                )}
-                <span className="text-xs text-gray-400 dark:text-slate-500">{r.sizeMg} mg</span>
-                <span className={`text-xs ${r.inStock ? "text-green-700" : "text-gray-400 dark:text-slate-500"}`}>{r.inStock ? "In stock" : "Out"}</span>
-              </div>
-              <div className="shrink-0 min-w-[5rem] text-right">
-                <span className="text-sm font-bold text-[#16181B] dark:text-slate-100">{fmt(postCode(r.basePrice))}</span>
-                <span className="ml-1.5 text-xs text-gray-400 dark:text-slate-500 line-through">{fmt(r.basePrice)}</span>
-              </div>
-            </div>
-            <div className="mt-2">
-              <a href={shopUrlFor(r.vendorSlug)} target="_blank" rel="noopener noreferrer sponsored" className="btn-primary text-sm h-9 py-0 w-full">Shop</a>
-            </div>
-          </div>
-        ))}
+        {overflow ? (
+          <>
+            {visible.map(mobRow)}
+            <details className="group">
+              {summary}
+              <div className="space-y-2 mt-2">{hidden.map((r, i) => mobRow(r, i + ROW_CAP))}</div>
+            </details>
+          </>
+        ) : (
+          rows.map(mobRow)
+        )}
       </div>
     </div>
   );
