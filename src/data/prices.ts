@@ -126,6 +126,27 @@ export function vendorProductRows(vendorKey: string): VendorProductRow[] {
     .sort((a, b) => a.compoundName.localeCompare(b.compoundName) || a.sizeMg - b.sizeMg);
 }
 
+/**
+ * True when the vendor's affiliate URL carries an explicit discount parameter
+ * (`coupon=` or `code=`) that the cart applies AUTOMATICALLY — so the post-code figure
+ * the grid shows is genuinely pre-applied and "your price after the code" is accurate.
+ * Every other vendor's link is attribution-only (`ref`/`sld`/`aff`/…): the discount is
+ * real but the buyer must type the code at checkout, so the copy must say so.
+ *
+ * Derived from the URL itself (not a hand-set field) so the flag can never drift from
+ * the actual link. Today only amino-club (`code=`), amino-x and peptides-gg (`coupon=`)
+ * qualify; see the Phase-1 recon for the full param audit.
+ */
+export function codeAutoApplies(vendorKey: string): boolean {
+  const url = vendors[vendorKey]?.url ?? "";
+  try {
+    const params = new URL(url).searchParams;
+    return params.has("coupon") || params.has("code");
+  } catch {
+    return false;
+  }
+}
+
 /** Parse the integer discount percent from a vendor's `discount` string ("15% off" → 15). */
 export function vendorDiscountPct(vendorKey: string): number {
   const v = vendors[vendorKey];
