@@ -103,6 +103,14 @@ export const vendors: Record<string, Vendor> = {
     url: "https://biocollexresearch.com/?ref=profpeptidehq",
     detailPage: "/coupons/biocollex",
   },
+  "crush-research": {
+    name: "Crush Research",
+    code: "profpeptide",
+    discount: "10% off",
+    region: "US",
+    url: "https://crushresearch.shop/?ref=PROFPEPTIDE",
+    detailPage: "/coupons/crush-research",
+  },
   "ez-peptides": {
     name: "EZ Peptides",
     code: "PROFPEPTIDE",
@@ -291,6 +299,14 @@ export const vendors: Record<string, Vendor> = {
     // vendor set by removing this one flag (and the redirect in the coupon page.tsx
     // + next.config.js). See also src/app/vendor-testing-index (row commented out).
     retired: true,
+  },
+  "treasure-coast-peptides": {
+    name: "Treasure Coast Peptides",
+    code: "profpeptide",
+    discount: "15% off",
+    region: "US",
+    url: "https://treasurecoastpeptides.com/?ref=MARKSHURTLIFF",
+    detailPage: "/coupons/treasure-coast-peptides",
   },
   "vital-core-research": {
     name: "Vital Core Research",

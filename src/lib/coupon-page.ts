@@ -63,6 +63,7 @@ export const couponDifferentiator: Record<string, string> = {
   "behemoth-labz": "Third-party tested by Colmaric Analyticals; peptides & SARMs.",
   "biocollex": "U.S.-based, 99% purity, same-day shipping, cGMP certified.",
   "biolongevity-labs": "Triple per-batch lab verification; HPLC + LC-MS; COAs.",
+  "crush-research": "Per-batch COAs, multi-vial tested; veteran-owned, US.",
   "ez-peptides": "Same-day shipping; 4.7/5 over 176+ reviews; lab-tested.",
   "fusion-peptide": "Topical and nasal-spray peptide formats available.",
   "glacier-aminos": "Batch-traceable COAs and cold-chain shipping.",
@@ -85,6 +86,7 @@ export const couponDifferentiator: Record<string, string> = {
   "spartan-peptides": "HPLC + mass-spec verified to ≥98% purity.",
   "swiss-chems": "Public test-results page; third-party HPLC/mass-spec to 99%+.",
   "synthesis-peptides": "Per-batch HPLC testing, ≥99% purity.",
+  "treasure-coast-peptides": "Florida-based; purity and concentration tested.",
   "vital-core-research": "56 compounds incl. GLP-1/2/3, SARMs, blends, capsules.",
 };
 
