@@ -73,7 +73,7 @@ export const couponDifferentiator: Record<string, string> = {
   "limitless-biotech": "90+ compounds; HPLC + LC-MS tested; 30-day guarantee.",
   "midwest-peptide": "99%+ purity, third-party tested with a COA per product.",
   "mile-high-compounds": "8x independent US third-party testing; public COAs.",
-  "modern-aminos": "USA; multi-vial tested for purity, identity, quantity.",
+  "modern-aminos": "US; public per-batch COA library; ISO 17025 lab.",
   "nextgen-peptides": "≥99% HPLC purity, US third-party tested, COA library.",
   "oasis-labs": "Veteran-owned with QR-verified COAs on every vial.",
   "particle-peptides": "Comprehensive EU testing, Ph. Eur. compliant.",
