@@ -45,26 +45,68 @@ export function couponOffer(slug: string): Record<string, unknown> {
 }
 
 /**
- * Coupon-page metadata — buildPageMetadata with the standing-rate month folded into each
- * description's "verified and working for <month year>" phrase, sourced from the single
- * CODES_VERIFIED_DATE constant Mark maintains (so every page follows from one line, never
- * a per-page hardcode). No "Verified <date>." prefix: the snippet audit showed the code
- * already sits before char 150 on every coupon page, so a prefix buys no truncation
- * safety and only pushes the code later and the description over the ~155-char cutoff.
+ * Per-vendor differentiator — the unique trailing clause of each coupon meta description.
+ * This is the ONLY text that differs across 33 otherwise-identical descriptions, so it is
+ * kept specific and true per vendor (sourced from that vendor's own coupon-page body) to
+ * avoid the templated-similarity suppression that got a third of the supplement pages
+ * declined. Each is budgeted so the full composed description stays ≤155 chars (the SERP
+ * cutoff). Update a vendor's clause here, not in its layout.
+ */
+export const couponDifferentiator: Record<string, string> = {
+  "aero-peptides": "≥98% purity, third-party ISO-lab tested; COA on request.",
+  "almighty-peptides": "HPLC/mass-spec tested; Buy 1 Get 1 FREE on most items.",
+  "alpha-peptides": "Per-lot 5-test panel, ISO 17025-aligned lab, public COAs.",
+  "ameano-peptides": "Lab-tested to 99%+ purity with a published COA per product.",
+  "amino-club": "ISO-17025 tested peptides with a COA on every batch.",
+  "amino-x": "US-based, third-party tested research peptides; COA on request.",
+  "ascension-peptides": "99%+ multi-stage tested; large blend & stack catalog.",
+  "behemoth-labz": "Third-party tested by Colmaric Analyticals; peptides & SARMs.",
+  "biocollex": "U.S.-based, 99% purity, same-day shipping, cGMP certified.",
+  "biolongevity-labs": "Triple per-batch lab verification; HPLC + LC-MS; COAs.",
+  "ez-peptides": "Same-day shipping; 4.7/5 over 176+ reviews; lab-tested.",
+  "fusion-peptide": "Topical and nasal-spray peptide formats available.",
+  "glacier-aminos": "Batch-traceable COAs and cold-chain shipping.",
+  "ignite-peptides": "99%+ purity, two-stage independent testing, COA per product.",
+  "integrative-peptides": "Physician-trusted oral peptide supplements.",
+  "la-peptides": "≥99% purity, every batch third-party tested, made in USA.",
+  "limitless-biotech": "90+ compounds; HPLC + LC-MS tested; 30-day guarantee.",
+  "midwest-peptide": "99%+ purity, third-party tested with a COA per product.",
+  "mile-high-compounds": "8x independent US third-party testing; public COAs.",
+  "nextgen-peptides": "≥99% HPLC purity, US third-party tested, COA library.",
+  "oasis-labs": "Veteran-owned with QR-verified COAs on every vial.",
+  "particle-peptides": "Comprehensive EU testing, Ph. Eur. compliant.",
+  "peptide-partners": "4 independent batch tests with published COAs.",
+  "peptides-gg": "US-made, third-party tested per batch with COAs.",
+  "peptidology": "14-point per-batch testing under ISO/IEC 17025.",
+  "purerawz": "US-based; third-party tested peptides, SARMs & nootropics.",
+  "purity-peptides": "99%+ HPLC/mass-spec tested with third-party COAs.",
+  "royal-peptides": "cGMP/ISO-lab tested to 99%+ purity with batch COAs.",
+  "science-based-peptides": "Per-lot COAs with batch number and test date.",
+  "spartan-peptides": "HPLC + mass-spec verified to ≥98% purity.",
+  "swiss-chems": "Public test-results page; third-party HPLC/mass-spec to 99%+.",
+  "synthesis-peptides": "Per-batch HPLC testing, ≥99% purity.",
+  "vital-core-research": "56 compounds incl. GLP-1/2/3, SARMs, blends, capsules.",
+};
+
+/**
+ * Coupon-page metadata. The description is COMPOSED here in the proven Style-A shape —
+ * "Use code {CODE} at {Vendor} to save {X}% sitewide — verified and working for {month}.
+ * {differentiator}" — so the code always leads (char 9), the month derives from the single
+ * CODES_VERIFIED_DATE constant, and the vendor/code/discount derive from vendors.ts. The
+ * only per-vendor text is couponDifferentiator[slug]. A `description` is intentionally NOT
+ * accepted from callers (the layouts): one composer, no per-page drift, no hardcoded year.
  */
 export function buildCouponMetadata({
   slug,
   title,
-  description,
   ...rest
-}: { slug: string } & Omit<Parameters<typeof buildPageMetadata>[0], "path">): Metadata {
-  return buildPageMetadata({
-    path: `/coupons/${slug}`,
-    title,
-    description: description.replace(
-      "verified and working for 2026",
-      `verified and working for ${CODES_VERIFIED_DATE}`
-    ),
-    ...rest,
-  });
+}: { slug: string; title: string } & Omit<Parameters<typeof buildPageMetadata>[0], "path" | "title" | "description">): Metadata {
+  const v = vendors[slug];
+  const pct = discountPct(slug);
+  const diff = couponDifferentiator[slug];
+  const description =
+    `Use code ${v.code} at ${v.name} to save ${pct}% sitewide — ` +
+    `verified and working for ${CODES_VERIFIED_DATE}.` +
+    (diff ? ` ${diff}` : "");
+  return buildPageMetadata({ path: `/coupons/${slug}`, title, description, ...rest });
 }

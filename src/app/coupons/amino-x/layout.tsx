@@ -7,7 +7,6 @@ const v = vendors["amino-x"];
 export const metadata = buildCouponMetadata({
   slug: "amino-x",
   title: `Amino X Discount Code: ${v.code} — Save 15%`,
-  description: `Use code ${v.code} at Amino X to save 15% sitewide — verified and working for 2026. US-based, third-party tested research peptides with a COA on request.`,
 });
 
 export default function AminoXLayout({ children }: { children: React.ReactNode }) {
