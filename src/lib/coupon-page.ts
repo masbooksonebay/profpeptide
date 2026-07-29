@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
-import { vendors } from "@/data/vendors";
-import { VENDORS_VERIFIED_ISO, VENDORS_VERIFIED_DATE } from "@/data/vendors-verified.generated";
+import { vendors, CODES_VERIFIED_DATE } from "@/data/vendors";
+import { VENDORS_VERIFIED_ISO } from "@/data/vendors-verified.generated";
 
 const SITE_URL = "https://profpeptide.com";
 
@@ -45,11 +45,12 @@ export function couponOffer(slug: string): Record<string, unknown> {
 }
 
 /**
- * Coupon-page metadata — buildPageMetadata plus the machine-written "Verified <date>."
- * freshness stamp on the description (a documented CTR lever on coupon SERPs). The stamp
- * is PREPENDED, not appended: coupon descriptions already run past Google's ~160-char
- * truncation, so a trailing stamp would be cut off and never render — leading with it
- * keeps it visible. Date comes from check:vendors, never hardcoded.
+ * Coupon-page metadata — buildPageMetadata with the standing-rate month folded into each
+ * description's "verified and working for <month year>" phrase, sourced from the single
+ * CODES_VERIFIED_DATE constant Mark maintains (so every page follows from one line, never
+ * a per-page hardcode). No "Verified <date>." prefix: the snippet audit showed the code
+ * already sits before char 150 on every coupon page, so a prefix buys no truncation
+ * safety and only pushes the code later and the description over the ~155-char cutoff.
  */
 export function buildCouponMetadata({
   slug,
@@ -60,7 +61,10 @@ export function buildCouponMetadata({
   return buildPageMetadata({
     path: `/coupons/${slug}`,
     title,
-    description: `Verified ${VENDORS_VERIFIED_DATE}. ${description}`,
+    description: description.replace(
+      "verified and working for 2026",
+      `verified and working for ${CODES_VERIFIED_DATE}`
+    ),
     ...rest,
   });
 }
