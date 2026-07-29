@@ -437,7 +437,7 @@ const tocSections = [
 export default function HexarelinPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Hexarelin","description":"Hexarelin research profile: potent ghrelin-receptor GH secretagogue, CD36-mediated cardiac effects independent of GH, receptor desensitization, dosing, FAQ.","url":"https://profpeptide.com/peptides/hexarelin","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Hexarelin","description":"Hexarelin research profile: potent ghrelin-receptor GH secretagogue, CD36-mediated cardiac effects independent of GH, receptor desensitization, dosing, FAQ.","url":"https://profpeptide.com/peptides/hexarelin","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Hexarelin"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

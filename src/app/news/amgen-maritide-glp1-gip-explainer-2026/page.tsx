@@ -25,7 +25,7 @@ export default function AmgenMariTideGLP1GIPExplainer2026Page() {
         "datePublished": "2026-06-05T00:00:00Z",
         "dateModified": "2026-06-05T00:00:00Z",
         "url": "https://profpeptide.com/news/amgen-maritide-glp1-gip-explainer-2026",
-        "publisher": { "@id": "https://profpeptide.com/#organization" },
+        "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
       <JsonLd data={{

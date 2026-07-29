@@ -322,11 +322,7 @@ export default function PeptideResearchBasicsPage() {
           url: "https://profpeptide.com/guides/peptide-research-basics",
           datePublished: "2026-05-18",
           dateModified: "2026-05-18",
-          publisher: {
-            "@type": "Organization",
-            name: "Prof. Peptide",
-            url: "https://profpeptide.com",
-          },
+          publisher: { "@type": "Organization", "@id": "https://profpeptide.com/#organization", name: "Prof. Peptide", url: "https://profpeptide.com", logo: "https://profpeptide.com/icon.png" },
         }}
       />
       <JsonLd

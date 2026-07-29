@@ -682,11 +682,7 @@ export default function SemaglutideBpc157Page() {
           description:
             "Semaglutide + BPC-157 research profile: GLP-1 receptor agonist paired with BPC-157 for GI side-effect mitigation and lean-mass protection during weight loss. Mechanism, dosing, side effects, FAQ.",
           url: "https://profpeptide.com/peptides/semaglutide-bpc-157",
-          publisher: {
-            "@type": "Organization",
-            name: "Prof. Peptide",
-            url: "https://profpeptide.com",
-          },
+          publisher: { "@type": "Organization", "@id": "https://profpeptide.com/#organization", name: "Prof. Peptide", url: "https://profpeptide.com", logo: "https://profpeptide.com/icon.png" },
         }}
       />
       <JsonLd

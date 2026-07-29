@@ -334,7 +334,7 @@ const tocSections = [
 export default function OxytocinPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Oxytocin","description":"Oxytocin research profile: nonapeptide neuropeptide/hormone — FDA-approved obstetric use (Pitocin/Syntocinon), the oversold 'trust hormone' behavioral narrative, libido research, mechanism, dosing, stability, safety, and regulatory status.","url":"https://profpeptide.com/peptides/oxytocin","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Oxytocin","description":"Oxytocin research profile: nonapeptide neuropeptide/hormone — FDA-approved obstetric use (Pitocin/Syntocinon), the oversold 'trust hormone' behavioral narrative, libido research, mechanism, dosing, stability, safety, and regulatory status.","url":"https://profpeptide.com/peptides/oxytocin","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Oxytocin"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

@@ -515,7 +515,7 @@ const tocSections = [
 export default function IGF1LR3Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"IGF-1 LR3","description":"IGF-1 LR3 research profile: PI3K/Akt mechanism, dosing protocol, hypoglycemia risk, satellite cell activation, FAQ, and current regulatory status.","url":"https://profpeptide.com/peptides/igf-1-lr3","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"IGF-1 LR3","description":"IGF-1 LR3 research profile: PI3K/Akt mechanism, dosing protocol, hypoglycemia risk, satellite cell activation, FAQ, and current regulatory status.","url":"https://profpeptide.com/peptides/igf-1-lr3","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"IGF-1 LR3"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

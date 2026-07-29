@@ -506,7 +506,7 @@ const articleSchema = {
     "name": "Prof. Peptide Editorial Team",
     "url": "https://profpeptide.com/about"
   },
-  "publisher": { "@id": "https://profpeptide.com/#organization" }
+  "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }
 };
 
 const breadcrumbSchema = {

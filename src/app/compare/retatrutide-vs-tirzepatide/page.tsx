@@ -52,7 +52,7 @@ const faqs = [
 export default function RetatrutideVsTirzepatidePage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Retatrutide vs Tirzepatide — GLP Triple Agonist vs Dual Agonist","description":"Retatrutide vs Tirzepatide research comparison: weight loss data, FDA status, side effect profiles, dosing, and which to choose.","url":"https://profpeptide.com/compare/retatrutide-vs-tirzepatide","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Retatrutide vs Tirzepatide — GLP Triple Agonist vs Dual Agonist","description":"Retatrutide vs Tirzepatide research comparison: weight loss data, FDA status, side effect profiles, dosing, and which to choose.","url":"https://profpeptide.com/compare/retatrutide-vs-tirzepatide","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Retatrutide vs Tirzepatide — GLP Triple Agonist vs Dual Agonist"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">

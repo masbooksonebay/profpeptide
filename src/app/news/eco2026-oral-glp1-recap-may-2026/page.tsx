@@ -25,7 +25,7 @@ export default function Eco2026OralGlp1RecapMay2026Page() {
         "datePublished": "2026-05-17T00:00:00Z",
         "dateModified": "2026-05-17T00:00:00Z",
         "url": "https://profpeptide.com/news/eco2026-oral-glp1-recap-may-2026",
-        "publisher": { "@id": "https://profpeptide.com/#organization" },
+        "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
       <JsonLd data={{

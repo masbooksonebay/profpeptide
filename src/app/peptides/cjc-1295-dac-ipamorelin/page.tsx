@@ -573,7 +573,7 @@ const tocSections = [
 export default function CJC1295DACIpamorelinPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"CJC-1295 DAC + Ipamorelin","description":"CJC-1295 DAC + Ipamorelin research profile: once-weekly DAC variant of the GH secretagogue stack. DAC vs no-DAC mechanism, sustained GH bleed, dosing protocol, side effects, FAQ.","url":"https://profpeptide.com/peptides/cjc-1295-dac-ipamorelin","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"CJC-1295 DAC + Ipamorelin","description":"CJC-1295 DAC + Ipamorelin research profile: once-weekly DAC variant of the GH secretagogue stack. DAC vs no-DAC mechanism, sustained GH bleed, dosing protocol, side effects, FAQ.","url":"https://profpeptide.com/peptides/cjc-1295-dac-ipamorelin","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"CJC-1295 DAC + Ipamorelin"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

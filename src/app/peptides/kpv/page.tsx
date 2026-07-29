@@ -524,7 +524,7 @@ const tocSections = [
 export default function KPVPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"KPV","description":"KPV research profile: anti-inflammatory tripeptide derived from α-MSH. NF-κB inhibition, IBD applications, dosing protocols, side effects, FAQ, and regulatory status.","url":"https://profpeptide.com/peptides/kpv","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"KPV","description":"KPV research profile: anti-inflammatory tripeptide derived from α-MSH. NF-κB inhibition, IBD applications, dosing protocols, side effects, FAQ, and regulatory status.","url":"https://profpeptide.com/peptides/kpv","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"KPV"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

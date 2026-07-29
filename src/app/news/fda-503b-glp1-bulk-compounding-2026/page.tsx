@@ -25,7 +25,7 @@ export default function FDA503BGLP1BulkCompounding2026Page() {
         "datePublished": "2026-06-05T00:00:00Z",
         "dateModified": "2026-06-05T00:00:00Z",
         "url": "https://profpeptide.com/news/fda-503b-glp1-bulk-compounding-2026",
-        "publisher": { "@id": "https://profpeptide.com/#organization" },
+        "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
       <JsonLd data={{

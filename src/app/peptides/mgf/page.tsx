@@ -504,7 +504,7 @@ const tocSections = [
 export default function MGFPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"MGF (Mechano Growth Factor) & PEG-MGF","description":"MGF and PEG-MGF research profile: the IGF-1Ec E-domain splice variant, the contested pro-proliferation mechanism, the failed independent replication (Fornaro 2014), evidence status, and regulatory standing.","url":"https://profpeptide.com/peptides/mgf","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"MGF (Mechano Growth Factor) & PEG-MGF","description":"MGF and PEG-MGF research profile: the IGF-1Ec E-domain splice variant, the contested pro-proliferation mechanism, the failed independent replication (Fornaro 2014), evidence status, and regulatory standing.","url":"https://profpeptide.com/peptides/mgf","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"MGF"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

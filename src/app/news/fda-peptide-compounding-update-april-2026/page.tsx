@@ -25,7 +25,7 @@ export default function FDAPeptideCompoundingUpdatePage() {
         "datePublished": "2026-04-16",
         "dateModified": "2026-04-16",
         "url": "https://profpeptide.com/news/fda-peptide-compounding-update-april-2026",
-        "publisher": { "@id": "https://profpeptide.com/#organization" },
+        "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
       <JsonLd data={{

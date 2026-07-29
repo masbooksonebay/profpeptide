@@ -282,7 +282,7 @@ const tocSections = [
 export default function CardiogenPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Cardiogen","description":"Cardiogen (AEDR, Ala-Glu-Asp-Arg) research profile: proposed cardiomyocyte proliferation, anti-fibrotic and anti-apoptotic (p53) signaling, peptide–DNA gene-expression modulation, preclinical cardioprotection, and candid limitations. Research use only.","url":"https://profpeptide.com/peptides/cardiogen","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Cardiogen","description":"Cardiogen (AEDR, Ala-Glu-Asp-Arg) research profile: proposed cardiomyocyte proliferation, anti-fibrotic and anti-apoptotic (p53) signaling, peptide–DNA gene-expression modulation, preclinical cardioprotection, and candid limitations. Research use only.","url":"https://profpeptide.com/peptides/cardiogen","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Cardiogen"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

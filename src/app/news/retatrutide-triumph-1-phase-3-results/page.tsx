@@ -25,7 +25,7 @@ export default function RetatrutideTriumph1Phase3ResultsPage() {
         "datePublished": "2026-05-21T00:00:00Z",
         "dateModified": "2026-05-21T00:00:00Z",
         "url": "https://profpeptide.com/news/retatrutide-triumph-1-phase-3-results",
-        "publisher": { "@id": "https://profpeptide.com/#organization" },
+        "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
       <JsonLd data={{

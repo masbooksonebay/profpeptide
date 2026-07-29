@@ -438,7 +438,7 @@ const tocSections = [
 export default function GHRP6Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GHRP-6","description":"GHRP-6 research profile: the first growth-hormone-releasing peptide, ghrelin-receptor mechanism, strong appetite effect, dosing, cortisol caveat, CJC-1295 stack, FAQ.","url":"https://profpeptide.com/peptides/ghrp-6","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GHRP-6","description":"GHRP-6 research profile: the first growth-hormone-releasing peptide, ghrelin-receptor mechanism, strong appetite effect, dosing, cortisol caveat, CJC-1295 stack, FAQ.","url":"https://profpeptide.com/peptides/ghrp-6","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"GHRP-6"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

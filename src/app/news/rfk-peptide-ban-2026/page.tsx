@@ -31,7 +31,7 @@ export default function RFKPeptideBanPage() {
         "description": "HHS Secretary Robert F. Kennedy Jr. announced that 14 of 19 previously restricted peptides will be moved off the FDA\u2019s \u201Cdo not compound\u201D list.",
         "datePublished": "2026-04-10",
         "url": "https://profpeptide.com/news/rfk-peptide-ban-2026",
-        "publisher": { "@id": "https://profpeptide.com/#organization" },
+        "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" },
         "author": {
           "@type": "Organization",
           "name": "Prof. Peptide",

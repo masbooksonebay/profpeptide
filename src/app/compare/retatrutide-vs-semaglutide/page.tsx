@@ -29,7 +29,7 @@ const rows = [
 export default function RetatrutideVsSemaglutidePage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Retatrutide vs Semaglutide — GLP Triple Agonist vs Single Agonist","description":"Retatrutide vs Semaglutide research comparison: weight loss data, FDA status, cardiovascular evidence, dosing, and which to choose.","url":"https://profpeptide.com/compare/retatrutide-vs-semaglutide","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Retatrutide vs Semaglutide — GLP Triple Agonist vs Single Agonist","description":"Retatrutide vs Semaglutide research comparison: weight loss data, FDA status, cardiovascular evidence, dosing, and which to choose.","url":"https://profpeptide.com/compare/retatrutide-vs-semaglutide","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Retatrutide vs Semaglutide — GLP Triple Agonist vs Single Agonist"}]}} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>

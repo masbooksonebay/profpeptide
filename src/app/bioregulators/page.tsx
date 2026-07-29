@@ -89,7 +89,7 @@ const tocSections = [
 export default function BioregulatorsPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Bioregulator Peptides (Khavinson Peptides): A Research Guide","description":"A research guide to short-peptide bioregulators (Khavinson peptides): the proposed gene-regulation mechanism, synthetic analogs vs. organ extracts, and the individual compounds. Research use only.","url":"https://profpeptide.com/bioregulators","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Bioregulator Peptides (Khavinson Peptides): A Research Guide","description":"A research guide to short-peptide bioregulators (Khavinson peptides): the proposed gene-regulation mechanism, synthetic analogs vs. organ extracts, and the individual compounds. Research use only.","url":"https://profpeptide.com/bioregulators","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Bioregulator Peptides"}]}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs.map((f) => ({"@type":"Question","name":f.q,"acceptedAnswer":{"@type":"Answer","text":f.a}}))}} />
     <div className="section max-w-3xl">

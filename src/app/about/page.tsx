@@ -26,11 +26,7 @@ export default function AboutPage() {
           url: "https://profpeptide.com/about",
           datePublished: "2026-05-18",
           dateModified: "2026-05-18",
-          publisher: {
-            "@type": "Organization",
-            name: "Prof. Peptide",
-            url: "https://profpeptide.com",
-          },
+          publisher: { "@type": "Organization", "@id": "https://profpeptide.com/#organization", name: "Prof. Peptide", url: "https://profpeptide.com", logo: "https://profpeptide.com/icon.png" },
         }}
       />
       <JsonLd

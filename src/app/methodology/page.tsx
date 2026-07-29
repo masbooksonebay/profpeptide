@@ -23,7 +23,7 @@ export default function MethodologyPage() {
           description:
             "How Prof. Peptide researches, reviews, and verifies its peptide profiles, guides, and vendor evaluations.",
           url: "https://profpeptide.com/methodology",
-          publisher: { "@type": "Organization", name: "Prof. Peptide", url: "https://profpeptide.com" },
+          publisher: { "@type": "Organization", "@id": "https://profpeptide.com/#organization", name: "Prof. Peptide", url: "https://profpeptide.com", logo: "https://profpeptide.com/icon.png" },
         }}
       />
       <JsonLd

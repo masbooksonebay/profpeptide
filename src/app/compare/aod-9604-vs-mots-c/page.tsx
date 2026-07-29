@@ -38,7 +38,7 @@ const faqs = [
 export default function AOD9604vsMOTScPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"AOD-9604 vs MOTS-C: Two Distinct Metabolic Peptides","description":"AOD-9604 (a synthetic hGH fat-loss fragment) and MOTS-C (a mitochondrial-derived peptide) are two distinct metabolic peptides with different mechanisms — how they compare and what each is studied for.","url":"https://profpeptide.com/compare/aod-9604-vs-mots-c","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"AOD-9604 vs MOTS-C: Two Distinct Metabolic Peptides","description":"AOD-9604 (a synthetic hGH fat-loss fragment) and MOTS-C (a mitochondrial-derived peptide) are two distinct metabolic peptides with different mechanisms — how they compare and what each is studied for.","url":"https://profpeptide.com/compare/aod-9604-vs-mots-c","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"AOD-9604 vs MOTS-C: Two Distinct Metabolic Peptides"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
