@@ -25,7 +25,7 @@ export default function SemaglutideBiologicalAgingRctJune2026Page() {
         "datePublished": "2026-06-16T00:00:00Z",
         "dateModified": "2026-06-16T00:00:00Z",
         "url": "https://profpeptide.com/news/semaglutide-biological-aging-rct-june-2026",
-        "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://profpeptide.com" },
+        "publisher": { "@id": "https://profpeptide.com/#organization" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
       <JsonLd data={{

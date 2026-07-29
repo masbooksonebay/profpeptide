@@ -492,7 +492,7 @@ const tocSections = [
 export default function TirzepatideBpc157Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tirzepatide + BPC-157","description":"Tirzepatide + BPC-157 research blend profile: dual GIP/GLP-1 agonist paired with BPC-157 for GI-side-effect mitigation and lean-mass protection. Mechanism, dosing, side effects, FAQ.","url":"https://profpeptide.com/peptides/tirzepatide-bpc-157","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tirzepatide + BPC-157","description":"Tirzepatide + BPC-157 research blend profile: dual GIP/GLP-1 agonist paired with BPC-157 for GI-side-effect mitigation and lean-mass protection. Mechanism, dosing, side effects, FAQ.","url":"https://profpeptide.com/peptides/tirzepatide-bpc-157","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Tirzepatide + BPC-157"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

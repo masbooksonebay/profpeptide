@@ -38,7 +38,7 @@ const faqs = [
 export default function KPVvsBPC157Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"KPV vs BPC-157: Anti-Inflammatory vs Tissue Repair","description":"KPV (an anti-inflammatory α-MSH tripeptide) and BPC-157 (a tissue-repair pentadecapeptide) are two distinct gut/immune/recovery peptides with different mechanisms — how they compare and what each is studied for.","url":"https://profpeptide.com/compare/kpv-vs-bpc-157","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"KPV vs BPC-157: Anti-Inflammatory vs Tissue Repair","description":"KPV (an anti-inflammatory α-MSH tripeptide) and BPC-157 (a tissue-repair pentadecapeptide) are two distinct gut/immune/recovery peptides with different mechanisms — how they compare and what each is studied for.","url":"https://profpeptide.com/compare/kpv-vs-bpc-157","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"KPV vs BPC-157: Anti-Inflammatory vs Tissue Repair"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">

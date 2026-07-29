@@ -37,7 +37,7 @@ const faqs = [
 export default function AshwagandhaVsRhodiolaPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison","description":"Ashwagandha vs Rhodiola Rosea — stress response, cortisol, energy, anxiety, and which adaptogen is right for your goals based on the research.","url":"https://profpeptide.com/compare/ashwagandha-vs-rhodiola-rosea","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison","description":"Ashwagandha vs Rhodiola Rosea — stress response, cortisol, energy, anxiety, and which adaptogen is right for your goals based on the research.","url":"https://profpeptide.com/compare/ashwagandha-vs-rhodiola-rosea","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Ashwagandha vs Rhodiola Rosea — Adaptogen Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">

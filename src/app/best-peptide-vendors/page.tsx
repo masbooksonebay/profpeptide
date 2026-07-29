@@ -123,7 +123,7 @@ export default function BestPeptideVendorsPage() {
         "datePublished": "2026-04-16",
         "dateModified": "2026-06-25",
         "url": "https://profpeptide.com/best-peptide-vendors",
-        "publisher": { "@type": "Organization", "name": "Prof. Peptide", "url": "https://profpeptide.com" },
+        "publisher": { "@id": "https://profpeptide.com/#organization" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
       <JsonLd data={{

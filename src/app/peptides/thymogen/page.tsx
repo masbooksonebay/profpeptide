@@ -269,7 +269,7 @@ const tocSections = [
 export default function ThymogenPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Thymogen","description":"Thymogen (L-Glu-L-Trp, Oglufanide / IM-862) research profile: thymic-dipeptide immunomodulation, NK-cell–dependent antitumor data, AIDS-KS and renal-cell-carcinoma trials including a negative Phase III, and candid limitations. Research use only.","url":"https://profpeptide.com/peptides/thymogen","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Thymogen","description":"Thymogen (L-Glu-L-Trp, Oglufanide / IM-862) research profile: thymic-dipeptide immunomodulation, NK-cell–dependent antitumor data, AIDS-KS and renal-cell-carcinoma trials including a negative Phase III, and candid limitations. Research use only.","url":"https://profpeptide.com/peptides/thymogen","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Thymogen"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

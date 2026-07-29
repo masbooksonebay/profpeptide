@@ -535,7 +535,7 @@ const tocSections = [
 export default function TB500Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"TB-500","description":"TB-500 (Thymosin Beta-4 fragment) research profile: actin/cellular migration mechanism, dosing protocol, wound healing research, side effects, FAQ, and regulatory status.","url":"https://profpeptide.com/peptides/tb-500","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"TB-500","description":"TB-500 (Thymosin Beta-4 fragment) research profile: actin/cellular migration mechanism, dosing protocol, wound healing research, side effects, FAQ, and regulatory status.","url":"https://profpeptide.com/peptides/tb-500","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"TB-500"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

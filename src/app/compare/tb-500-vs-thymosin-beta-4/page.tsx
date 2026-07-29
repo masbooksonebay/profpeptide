@@ -34,7 +34,7 @@ const faqs = [
 export default function TB500vsThymosinBeta4Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"TB-500 vs Thymosin Beta-4: Fragment vs Full Protein","description":"TB-500 is the synthetic active fragment of the 43-amino-acid Thymosin Beta-4 protein — how the fragment and the full protein differ in structure, sourcing, and research.","url":"https://profpeptide.com/compare/tb-500-vs-thymosin-beta-4","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"TB-500 vs Thymosin Beta-4: Fragment vs Full Protein","description":"TB-500 is the synthetic active fragment of the 43-amino-acid Thymosin Beta-4 protein — how the fragment and the full protein differ in structure, sourcing, and research.","url":"https://profpeptide.com/compare/tb-500-vs-thymosin-beta-4","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"TB-500 vs Thymosin Beta-4: Fragment vs Full Protein"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">

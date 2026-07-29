@@ -544,7 +544,7 @@ const tocSections = [
 export default function SermorelinIpamorelinPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Sermorelin + Ipamorelin","description":"Sermorelin + Ipamorelin research profile: dual-pathway GH secretagogue blend, beginner-friendly with the strongest regulatory footing of the GHRH analog stacks. Mechanism, dosing, side effects, FAQ.","url":"https://profpeptide.com/peptides/sermorelin-ipamorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Sermorelin + Ipamorelin","description":"Sermorelin + Ipamorelin research profile: dual-pathway GH secretagogue blend, beginner-friendly with the strongest regulatory footing of the GHRH analog stacks. Mechanism, dosing, side effects, FAQ.","url":"https://profpeptide.com/peptides/sermorelin-ipamorelin","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Sermorelin + Ipamorelin"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

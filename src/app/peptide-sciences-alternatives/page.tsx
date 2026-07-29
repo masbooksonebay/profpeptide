@@ -14,7 +14,7 @@ export const metadata = buildPageMetadata({
 export default function PeptideSciencesAlternativesPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Peptide Sciences Has Closed — Vetted Research-Peptide Alternatives","description":"Peptide Sciences has voluntarily closed and discontinued sales. Here's what happened and established research-peptide vendors to consider instead, with current discount codes.","url":"https://profpeptide.com/peptide-sciences-alternatives","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Peptide Sciences Has Closed — Vetted Research-Peptide Alternatives","description":"Peptide Sciences has voluntarily closed and discontinued sales. Here's what happened and established research-peptide vendors to consider instead, with current discount codes.","url":"https://profpeptide.com/peptide-sciences-alternatives","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptide Sciences Has Closed — Vetted Research-Peptide Alternatives"}]}} />
     <div className="section max-w-4xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Vendor Coupons</Link>

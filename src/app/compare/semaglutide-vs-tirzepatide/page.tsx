@@ -36,7 +36,7 @@ const faqs = [
 export default function SemaglutideVsTirzepatidePage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Semaglutide vs Tirzepatide — GLP-1 Comparison","description":"Semaglutide vs Tirzepatide comparison — mechanism, weight loss data, FDA approval status, side effects, and key clinical trial results.","url":"https://profpeptide.com/compare/semaglutide-vs-tirzepatide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Semaglutide vs Tirzepatide — GLP-1 Comparison","description":"Semaglutide vs Tirzepatide comparison — mechanism, weight loss data, FDA approval status, side effects, and key clinical trial results.","url":"https://profpeptide.com/compare/semaglutide-vs-tirzepatide","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Semaglutide vs Tirzepatide — GLP-1 Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">

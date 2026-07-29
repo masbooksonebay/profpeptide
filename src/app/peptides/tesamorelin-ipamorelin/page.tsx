@@ -552,7 +552,7 @@ const tocSections = [
 export default function TesaIpamorelinPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tesamorelin + Ipamorelin","description":"Tesamorelin + Ipamorelin research profile: FDA-referenced GHRH analog + selective GHRP dual-pathway blend, visceral-fat reduction angle, IGF-1 elevation, dosing protocol, side effects, FAQ.","url":"https://profpeptide.com/peptides/tesamorelin-ipamorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tesamorelin + Ipamorelin","description":"Tesamorelin + Ipamorelin research profile: FDA-referenced GHRH analog + selective GHRP dual-pathway blend, visceral-fat reduction angle, IGF-1 elevation, dosing protocol, side effects, FAQ.","url":"https://profpeptide.com/peptides/tesamorelin-ipamorelin","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Tesamorelin + Ipamorelin"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

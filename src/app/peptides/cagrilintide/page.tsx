@@ -562,7 +562,7 @@ const tocSections = [
 export default function CagrilintidePage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Cagrilintide","description":"Cagrilintide research profile: amylin/calcitonin receptor mechanism, REDEFINE trial results, CagriSema combination, dosing, side effects, FAQ.","url":"https://profpeptide.com/peptides/cagrilintide","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Cagrilintide","description":"Cagrilintide research profile: amylin/calcitonin receptor mechanism, REDEFINE trial results, CagriSema combination, dosing, side effects, FAQ.","url":"https://profpeptide.com/peptides/cagrilintide","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Cagrilintide"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

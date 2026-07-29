@@ -37,7 +37,7 @@ const faqs = [
 export default function BerberineVsMetforminPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Berberine vs Metformin — Blood Sugar Comparison","description":"Berberine vs Metformin comparison — mechanism, blood sugar efficacy, side effects, availability, and what the research actually shows.","url":"https://profpeptide.com/compare/berberine-vs-metformin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Berberine vs Metformin — Blood Sugar Comparison","description":"Berberine vs Metformin comparison — mechanism, blood sugar efficacy, side effects, availability, and what the research actually shows.","url":"https://profpeptide.com/compare/berberine-vs-metformin","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Berberine vs Metformin — Blood Sugar Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">

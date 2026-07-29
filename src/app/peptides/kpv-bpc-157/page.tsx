@@ -452,7 +452,7 @@ const tocSections = [
 export default function KpvBpc157Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"KPV + BPC-157","description":"KPV + BPC-157 research profile: 2-component gut-healing stack combining NF-κB-blocking KPV with cytoprotective BPC-157 for IBD, mucosal repair, and systemic inflammation. Mechanism, dosing (oral & SC), side effects, FAQ.","url":"https://profpeptide.com/peptides/kpv-bpc-157","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"KPV + BPC-157","description":"KPV + BPC-157 research profile: 2-component gut-healing stack combining NF-κB-blocking KPV with cytoprotective BPC-157 for IBD, mucosal repair, and systemic inflammation. Mechanism, dosing (oral & SC), side effects, FAQ.","url":"https://profpeptide.com/peptides/kpv-bpc-157","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"KPV + BPC-157"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

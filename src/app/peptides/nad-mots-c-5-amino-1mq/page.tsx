@@ -426,7 +426,7 @@ const tocSections = [
 export default function MetabolicBlendPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Metabolic Blend (NAD+ + MOTS-c + 5-Amino-1MQ)","description":"Metabolic Blend research profile: 3-component NAD+ + MOTS-c + 5-Amino-1MQ longevity and metabolic formulation. Mechanism, dosing, reconstitution, side effects, FAQ.","url":"https://profpeptide.com/peptides/nad-mots-c-5-amino-1mq","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Metabolic Blend (NAD+ + MOTS-c + 5-Amino-1MQ)","description":"Metabolic Blend research profile: 3-component NAD+ + MOTS-c + 5-Amino-1MQ longevity and metabolic formulation. Mechanism, dosing, reconstitution, side effects, FAQ.","url":"https://profpeptide.com/peptides/nad-mots-c-5-amino-1mq","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Metabolic Blend (NAD+ + MOTS-c + 5-Amino-1MQ)"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

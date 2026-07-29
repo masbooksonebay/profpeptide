@@ -435,7 +435,7 @@ const tocSections = [
 export default function WolverineStackPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Wolverine Stack","description":"Wolverine Stack research profile: 2-component BPC-157 + TB-500 blend for tendon, ligament, and soft-tissue repair. Mechanism, dosing, side effects, FAQ.","url":"https://profpeptide.com/peptides/wolverine-stack","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Wolverine Stack","description":"Wolverine Stack research profile: 2-component BPC-157 + TB-500 blend for tendon, ligament, and soft-tissue repair. Mechanism, dosing, side effects, FAQ.","url":"https://profpeptide.com/peptides/wolverine-stack","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Wolverine Stack"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

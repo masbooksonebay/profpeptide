@@ -617,7 +617,7 @@ const tocSections = [
 export default function MK677IpamorelinPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"MK-677 + Ipamorelin","description":"MK-677 + Ipamorelin research profile: oral ghrelin-mimetic baseline plus injectable selective GHRP pulse trigger. Overlapping GHS-R1a mechanism, dosing protocol, side effects, FAQ.","url":"https://profpeptide.com/peptides/mk-677-ipamorelin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"MK-677 + Ipamorelin","description":"MK-677 + Ipamorelin research profile: oral ghrelin-mimetic baseline plus injectable selective GHRP pulse trigger. Overlapping GHS-R1a mechanism, dosing protocol, side effects, FAQ.","url":"https://profpeptide.com/peptides/mk-677-ipamorelin","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"MK-677 + Ipamorelin"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

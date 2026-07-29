@@ -36,7 +36,7 @@ const faqs = [
 export default function CreatineVsBetaAlaninePage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Creatine vs Beta-Alanine — Performance Supplement Comparison","description":"Creatine vs Beta-Alanine comparison — mechanisms, evidence, best use cases, side effects, and whether you should take one or both.","url":"https://profpeptide.com/compare/creatine-vs-beta-alanine","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Creatine vs Beta-Alanine — Performance Supplement Comparison","description":"Creatine vs Beta-Alanine comparison — mechanisms, evidence, best use cases, side effects, and whether you should take one or both.","url":"https://profpeptide.com/compare/creatine-vs-beta-alanine","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Creatine vs Beta-Alanine — Performance Supplement Comparison"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">

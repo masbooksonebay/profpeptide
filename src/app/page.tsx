@@ -132,10 +132,16 @@ export default function Home() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://profpeptide.com/#organization",
         "name": "Prof. Peptide",
         "url": "https://profpeptide.com",
         "description": "Independent peptide and supplement research education platform.",
         "logo": "https://profpeptide.com/icon.png",
+        "sameAs": [
+          "https://x.com/ProfPeptideHQ",
+          "https://www.facebook.com/profile.php?id=61570750762108",
+          "https://www.instagram.com/profpeptidehq/",
+        ],
       }} />
       <section className="bg-white dark:bg-[#0f172a] border-b border-gray-100 dark:border-slate-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center">

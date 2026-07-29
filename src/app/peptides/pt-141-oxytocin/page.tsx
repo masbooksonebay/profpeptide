@@ -459,7 +459,7 @@ const tocSections = [
 export default function PT141OxytocinPage() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"PT-141 + Oxytocin","description":"PT-141 + Oxytocin research profile: melanocortin agonist + bonding neuropeptide blend for sexual desire, arousal, and intimacy. Mechanism, dosing, delivery routes, side effects, FAQ.","url":"https://profpeptide.com/peptides/pt-141-oxytocin","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"PT-141 + Oxytocin","description":"PT-141 + Oxytocin research profile: melanocortin agonist + bonding neuropeptide blend for sexual desire, arousal, and intimacy. Mechanism, dosing, delivery routes, side effects, FAQ.","url":"https://profpeptide.com/peptides/pt-141-oxytocin","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"PT-141 + Oxytocin"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

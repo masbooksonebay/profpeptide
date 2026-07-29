@@ -450,7 +450,7 @@ const tocSections = [
 export default function GHRP2Page() {
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GHRP-2","description":"GHRP-2 (pralmorelin) research profile: ghrelin-receptor agonist mechanism, GH-stimulation and appetite effects, dosing, cortisol/prolactin caveat, CJC-1295 stack, FAQ.","url":"https://profpeptide.com/peptides/ghrp-2","publisher":{"@type":"Organization","name":"Prof. Peptide","url":"https://profpeptide.com"}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GHRP-2","description":"GHRP-2 (pralmorelin) research profile: ghrelin-receptor agonist mechanism, GH-stimulation and appetite effects, dosing, cortisol/prolactin caveat, CJC-1295 stack, FAQ.","url":"https://profpeptide.com/peptides/ghrp-2","publisher": { "@id": "https://profpeptide.com/#organization" }}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"GHRP-2"}]}} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
