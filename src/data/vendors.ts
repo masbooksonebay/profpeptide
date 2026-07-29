@@ -105,7 +105,7 @@ export const vendors: Record<string, Vendor> = {
   },
   "crush-research": {
     name: "Crush Research",
-    code: "profpeptide",
+    code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
     url: "https://crushresearch.shop/?ref=PROFPEPTIDE",
@@ -160,6 +160,14 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://milehighcompounds.is/?ref=profpeptide",
     detailPage: "/coupons/mile-high-compounds",
+  },
+  "modern-aminos": {
+    name: "Modern Aminos",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    url: "https://modernaminos.com/?ref=profpeptide",
+    detailPage: "/coupons/modern-aminos",
   },
   "nextgen-peptides": {
     name: "NextGen Peptides",
@@ -301,8 +309,8 @@ export const vendors: Record<string, Vendor> = {
     retired: true,
   },
   "treasure-coast-peptides": {
-    name: "Treasure Coast Peptides",
-    code: "profpeptide",
+    name: "Treasure Coast",
+    code: "PROFPEPTIDE",
     discount: "15% off",
     region: "US",
     url: "https://treasurecoastpeptides.com/?ref=MARKSHURTLIFF",

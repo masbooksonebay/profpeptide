@@ -106,7 +106,7 @@ export default function CrushResearchCouponPage() {
 
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
           <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-          <CopyCode code="profpeptide" size="large" />
+          <CopyCode code="PROFPEPTIDE" size="large" />
           <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">10% off your entire order</p>
           <a href="https://crushresearch.shop/?ref=PROFPEPTIDE" target="_blank" rel="noopener noreferrer sponsored" className="btn-primary w-full text-center block">
             Shop Crush Research</a>
@@ -116,8 +116,8 @@ export default function CrushResearchCouponPage() {
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What peptides does Crush Research carry?" a="Crush Research carries research compounds across several categories. Its metabolic GLP catalog includes Retatrutide and Tirzepatide (listed on-site as Triple Agonist and Double Agonist), Cagrilintide, MOTS-c, and AOD-9604. Recovery and repair peptides include BPC-157, TB-500, KPV, and a BPC-157/TB-500 blend. Growth-hormone secretagogues include CJC-1295, Ipamorelin, Sermorelin, and Tesamorelin. The catalog also spans cognitive compounds (Semax, Selank, Adamax, Pinealon), skin peptides (GHK-Cu, Melanotan-1, Melanotan-2, KLOW), and longevity compounds (NAD+, Epitalon, Glutathione)." />
-            <FAQItem q="Does Crush Research have a discount code?" a={`Yes. Use code profpeptide at checkout to save 10% on your entire Crush Research order. This code is verified and maintained by Prof. Peptide and valid as of ${CODES_VERIFIED_DATE}.`} />
-            <FAQItem q="How do I use the Crush Research discount code?" a="Add your items to cart at crushresearch.shop, proceed to checkout, and enter profpeptide in the discount code field. The 10% discount will be applied to your order total." />
+            <FAQItem q="Does Crush Research have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save 10% on your entire Crush Research order. This code is verified and maintained by Prof. Peptide and valid as of ${CODES_VERIFIED_DATE}.`} />
+            <FAQItem q="How do I use the Crush Research discount code?" a="Add your items to cart at crushresearch.shop, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
             <FAQItem q="How does Crush Research test its peptides?" a="Crush Research publishes a per-batch Certificate of Analysis library on its testing page. Every batch is independently tested, and each COA reports purity, net peptide content, endotoxins, heavy metals, and sterility, along with the number of vials tested for that batch. Crush tests multiple vials per batch rather than a single spot check." />
             <FAQItem q="How do I verify a Crush Research COA?" a="Visit the public testing page at crushresearch.shop, where every batch is listed with its Certificate of Analysis. You can match the batch number on your vial to its report and review the full purity, net-content, endotoxin, heavy-metal, and sterility results for that specific batch." />
             <FAQItem q="Is Crush Research US-based?" a="Yes. Crush Research Supply Company is a veteran-owned, U.S.-based supplier that ships nationwide across the United States, including US territories, with orders processed within 1–2 business days." />
