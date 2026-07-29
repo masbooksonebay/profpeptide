@@ -4,7 +4,7 @@ import { useState } from "react";
 import { CopyCode } from "@/components/CopyCode";
 import Link from "next/link";
 import { RegionPill } from "@/components/RegionPill";
-import { VendorProductGrid } from "@/components/VendorProductGrid";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
 
@@ -33,8 +33,12 @@ export default function AminoClubCouponPage() {
   const rows = vendorProductRows("amino-club");
   const discountPct = vendorDiscountPct("amino-club");
   const code = vendors["amino-club"].code;
-  const shopUrl = (vendorSlug?: string) =>
-    `https://www.aminoclub.com/us/products/${vendorSlug ?? ""}?utm_source=affiliate_marketing&code=${code}`;
+  // Deep-link when the row carries the vendor's product slug (all amino-club rows do);
+  // makeShopUrlFor falls back to the vendor homepage for any slugless row.
+  const shopUrl = makeShopUrlFor(
+    "amino-club",
+    (vendorSlug) => `https://www.aminoclub.com/us/products/${vendorSlug}?utm_source=affiliate_marketing&code=${code}`,
+  );
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">

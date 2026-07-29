@@ -1,8 +1,26 @@
 import Link from "next/link";
 import type { VendorProductRow } from "@/data/prices";
+import { vendors } from "@/data/vendors";
 
 function fmt(n: number): string {
   return "$" + n.toFixed(2);
+}
+
+/**
+ * Builds a row's Shop-URL function for one vendor, with a SAFE fallback baked in so
+ * every rollout gets it for free (never re-implemented per page):
+ *   • vendorSlug present AND a deepLink builder given → the exact product deep link
+ *   • otherwise → the vendor's plain affiliate URL (its homepage) from vendors.ts
+ * It never emits a bare product path (e.g. `/us/products/`), which is worse than no
+ * deep link. Woo/CINC vendors (no captured slug) simply pass no deepLink, or pass one
+ * that is only used on the rows that actually carry a slug.
+ */
+export function makeShopUrlFor(
+  vendorKey: string,
+  deepLink?: (vendorSlug: string) => string,
+): (vendorSlug?: string) => string {
+  const homepage = vendors[vendorKey]?.url ?? "";
+  return (vendorSlug) => (vendorSlug && deepLink ? deepLink(vendorSlug) : homepage);
 }
 
 /**
