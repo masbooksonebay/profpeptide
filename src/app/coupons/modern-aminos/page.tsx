@@ -44,13 +44,60 @@ export default function ModernAminosCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Modern Aminos is a US-based research-chemical supplier that positions itself around testing rigor and responsive service. Its full catalog sits behind a free research-account login &mdash; researchers register and log in to view the product selection &mdash; a compliance-oriented gate the company applies to its entire store. Because the catalog is account-gated, the specific compound list is not enumerated here; create a free account on modernaminos.com to browse current products.
+            Modern Aminos is a US-based research-peptide supplier based in Garden City, Idaho (9169 W State St #1451, Garden City, ID 83714). Its catalog spans GLP-1 and metabolic compounds, growth-hormone secretagogues, recovery and repair peptides, skin, cognitive, longevity, and Khavinson short-peptide bioregulators. The full store sits behind a free research-account login, and orders over $200 ship free within the US. Popular compounds by research area:
+          </p>
+          <dl className="space-y-2 mb-4">
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide</Link>, <Link href="/peptides/cagrisema" className="text-[#3A759F] hover:underline">Cagrisema</Link>, <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>, <Link href="/peptides/5-amino-1mq" className="text-[#3A759F] hover:underline">5-Amino-1MQ</Link>, <Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link>, Mazdutide, Petrelintide (MA-1P), plus coded GLP-1 SKUs MA-3RT, MA-2TZ, MA-1S
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link>, <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>, <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>, <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>, <Link href="/peptides/tesamorelin-ipamorelin" className="text-[#3A759F] hover:underline">Tesamorelin + Ipamorelin</Link>, <Link href="/peptides/hexarelin" className="text-[#3A759F] hover:underline">Hexarelin</Link>, <Link href="/peptides/ghrp-2" className="text-[#3A759F] hover:underline">GHRP-2</Link>, <Link href="/peptides/mgf" className="text-[#3A759F] hover:underline">MGF</Link>, <Link href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3</Link>, PEG-MGF, HGH Fragment 176-191
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>, <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">BPC-157 + TB-500</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>, <Link href="/peptides/ll-37" className="text-[#3A759F] hover:underline">LL-37</Link>, <Link href="/peptides/cibinetide" className="text-[#3A759F] hover:underline">ARA-290 (Cibinetide)</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin Health &amp; Anti-Aging</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>, <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>, <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>, <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>, <Link href="/peptides/semax-selank" className="text-[#3A759F] hover:underline">Semax + Selank</Link>, P-21, PE-22-28
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity &amp; Bioregulators</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>, <Link href="/peptides/cardiogen" className="text-[#3A759F] hover:underline">Cardiogen</Link>, <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>, Cartalax, Prostamax, Testagen, Livagen, Vesugen, Bronchogen, Vilon, Ovagen, Chonluten
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Sexual Health</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>, <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>, <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin</Link>, <Link href="/peptides/oxytocin" className="text-[#3A759F] hover:underline">Oxytocin</Link>
+              </dd>
+            </div>
+          </dl>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+            MA-3RT, MA-2TZ, and MA-1S are Modern Aminos&apos; own coded GLP-1 SKUs; they are listed here under those codes and are not decoded, because no compound identifier (CAS number, formula, or explicit name) is stated for them on the accessible pages. MA-1P is the one coded SKU stated on-site &mdash; its product title identifies it as Petrelintide (ZP8396).
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             The Modern Aminos guarantee centers on third-party, multi-vial batch testing: each product is tested across multiple vials per batch to verify purity, compound identity, quantity, and endotoxin levels. Rather than a single spot check, testing draws from several vials of the same batch. Every vial carries a unique batch number, letting a researcher match the exact product received to its corresponding laboratory testing report rather than relying on a generic product-page certificate.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Beyond testing, the company emphasizes customer service and fast fulfillment, with support and shipping teams positioned as a core part of the experience. Modern Aminos operates a US store at modernaminos.com; this Prof. Peptide code applies to that US store.
+            Beyond testing, the company emphasizes customer service and fast fulfillment, with support and shipping teams positioned as a core part of the experience. The full catalog is viewable after a free account registration on modernaminos.com; this Prof. Peptide code applies to the US store.
           </p>
         </div>
 
@@ -65,12 +112,13 @@ export default function ModernAminosCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
+            <FAQItem q="What peptides does Modern Aminos carry?" a="Modern Aminos carries research compounds across metabolic (Cagrilintide, Cagrisema, MOTS-c, 5-Amino-1MQ, AOD-9604, Mazdutide, Petrelintide), growth-hormone (Tesamorelin, Sermorelin, Ipamorelin, CJC-1295, Hexarelin, GHRP-2, MGF, IGF-1 LR3), recovery (BPC-157, TB-500, KPV, LL-37, ARA-290), skin (GHK-Cu, GLOW, KLOW, Melanotan-2), cognitive (Semax, Selank, P-21, PE-22-28), longevity and Khavinson bioregulator (Epitalon, Glutathione, Thymosin Alpha-1, Pinealon, Cardiogen, Thymogen) and sleep/sexual-health (DSIP, PT-141, Kisspeptin, Oxytocin) categories. Several GLP-1 items are listed under Modern Aminos' own coded SKUs (MA-3RT, MA-2TZ, MA-1S). SARMs and non-peptide products are excluded from the list above." />
             <FAQItem q="Does Modern Aminos have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save 10% on your entire Modern Aminos order. This code is verified and maintained by Prof. Peptide and valid as of ${CODES_VERIFIED_DATE}.`} />
             <FAQItem q="How do I use the Modern Aminos discount code?" a="Log in to your Modern Aminos account at modernaminos.com, add your items to cart, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
             <FAQItem q="How does Modern Aminos test its peptides?" a="Modern Aminos states that each product undergoes third-party, multi-vial batch testing to verify purity, compound identity, quantity, and endotoxin levels — drawing from multiple vials of the same batch rather than a single spot check." />
             <FAQItem q="How do I verify a Modern Aminos batch?" a="Every Modern Aminos vial carries a unique batch number. That number lets you match the specific product you received to its corresponding third-party laboratory testing report, rather than relying on a generic product-page certificate." />
             <FAQItem q="Why does Modern Aminos require an account to view products?" a="Modern Aminos gates its full catalog behind a free research-account login as part of a compliance-oriented, research-only purchasing model. Registering an account on modernaminos.com is free and lets you view the current product selection and pricing." />
-            <FAQItem q="Is Modern Aminos US-based?" a="Yes. Modern Aminos operates a US store at modernaminos.com, and this Prof. Peptide discount code applies to that US store." />
+            <FAQItem q="Is Modern Aminos US-based?" a="Yes. Modern Aminos is based in Garden City, Idaho (9169 W State St #1451, Garden City, ID 83714) and ships within the United States, with free shipping on orders over $200. This Prof. Peptide discount code applies to the US store at modernaminos.com." />
           </div>
         </div>
 
