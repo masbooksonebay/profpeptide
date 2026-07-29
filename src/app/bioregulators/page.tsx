@@ -194,7 +194,7 @@ export default function BioregulatorsPage() {
             </table>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            The Khavinson family includes additional organ-specific bioregulators beyond the five above that are not yet individually profiled here.
+            The Khavinson family includes additional organ-specific bioregulators beyond the five above &mdash; Cartalax, Prostamax, Testagen, Livagen, Vesugen, Bronchogen, Vilon, Ovagen, and Chonluten &mdash; that are not yet individually profiled here.
           </p>
         </div>
 
