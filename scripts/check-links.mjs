@@ -16,6 +16,8 @@
 //   /compare/<slug>     — real page dir
 //   /guides/<slug>      — real page dir
 //   /news/<slug>        — real page dir  OR  in the news.ts registry  OR  redirect
+//   /<top>              — single-segment top-level route (e.g. /bioregulators,
+//                         /calculator, /faq): real src/app/<top>/page.tsx  OR redirect
 //
 // DELIBERATELY OUT OF SCOPE: /prices/<slug>. It has zero literal links (they are
 // built dynamically as /prices/${slug} from the price dataset), and validating it
@@ -122,21 +124,25 @@ function loadPeptideDataSlugs() {
   return slugs;
 }
 
-// Two-segment /<family>/<slug> paths that an explicit next.config.js redirect resolves.
+// Paths that an explicit next.config.js redirect resolves, split by shape:
+//   .two — /<family>/<slug>   (e.g. a retired vendor 301'd to /coupons)
+//   .one — /<segment>         (e.g. /retatrutide → /peptides/retatrutide)
 // Executing the real config keeps this in lockstep with the deployed rules.
 async function loadRedirectPaths() {
   const cfg = require(join(root, "next.config.js"));
   const rules = typeof cfg.redirects === "function" ? await cfg.redirects() : [];
-  const paths = new Set();
+  const two = new Set();
+  const one = new Set();
   for (const r of rules) {
     if (typeof r.source !== "string") continue;
     // Normalize Next source syntax: drop an optional-trailing-slash marker, then a
-    // trailing slash, and only accept an EXACT /<family>/<slug> rule (not the generic
-    // /:path+/ trailing-slash normalizer, which doesn't make a 404 slug valid).
+    // trailing slash. Accept an EXACT /<family>/<slug> or /<segment> rule — never the
+    // generic /:path+/ or /:path* wildcards, which don't make a 404 target valid.
     const src = r.source.replace(/\{\/\}\??$/, "").replace(/\/$/, "");
-    if (/^\/[a-z0-9-]+\/[a-z0-9-]+$/.test(src)) paths.add(src);
+    if (/^\/[a-z0-9-]+\/[a-z0-9-]+$/.test(src)) two.add(src);
+    else if (/^\/[a-z0-9-]+$/.test(src)) one.add(src);
   }
-  return paths;
+  return { two, one };
 }
 
 // ── scanning ────────────────────────────────────────────────────────────────
@@ -165,6 +171,10 @@ function walk(dir, out = []) {
 }
 
 const hasPageDir = (family, slug) => existsSync(join(root, "src/app", family, slug, "page.tsx"));
+// A single-segment route /<seg> is real iff src/app/<seg>/page.tsx exists. Landing
+// pages whose only children are subroutes (e.g. src/app/strength-cycle/{privacy,support}
+// with no top page.tsx) correctly DON'T resolve as /strength-cycle — that bare link 404s.
+const hasTopPage = (seg) => existsSync(join(root, "src/app", seg, "page.tsx"));
 
 // ── run ─────────────────────────────────────────────────────────────────────
 const vendors = loadVendors();
@@ -193,7 +203,7 @@ const FAMILIES = [
     // vendor (its page dir kept on disk but 301'd to /coupons) resolves via redirect,
     // not via the dir that never gets served.
     resolve: (slug) =>
-      redirectPaths.has(`/coupons/${slug}`) ? "redirect" : hasPageDir("coupons", slug) ? "dir" : null,
+      redirectPaths.two.has(`/coupons/${slug}`) ? "redirect" : hasPageDir("coupons", slug) ? "dir" : null,
     // Keep the coupons dead-link detail exactly as before: vendors.ts context.
     detail: (slug) =>
       [
@@ -230,7 +240,7 @@ const FAMILIES = [
     // Redirect first (same precedence reason as coupons), then a real page dir, then
     // the news.ts registry.
     resolve: (slug) =>
-      redirectPaths.has(`/news/${slug}`)
+      redirectPaths.two.has(`/news/${slug}`)
         ? "redirect"
         : hasPageDir("news", slug)
         ? "dir"
@@ -239,17 +249,44 @@ const FAMILIES = [
         : null,
     detail: (slug) => "no page dir, not in news.ts registry, no redirect rule",
   },
+  {
+    // Single-segment top-level routes: /bioregulators, /calculator, /faq, /glossary,
+    // /vendors, /about, … Before this family, a bare /<segment> link (a pillar page, a
+    // tool page, a legal page) was validated by NOTHING — the same silent-404 class the
+    // two-segment families already guard, one level up.
+    //
+    // A one-segment /<word> is far more ambiguous than /<family>/<slug>: Tailwind opacity
+    // (bg-[#333]/40), regex literals (/\s+/g), and prose all contain a slash+word. So this
+    // pattern matches ONLY the two shapes a real internal single-segment link ever takes,
+    // and requires a path terminator on the right:
+    //   A) relative, quoted   — "/about"     (?<=["'`])          before the slash
+    //   B) self-absolute      — https://profpeptide.com/about    host captured in m[1]
+    // The right-side (?=["'`#?\s)]|$) accepts only a quote / #anchor / ?query / space / )
+    // / EOL after the segment, which rejects /<a>/<b> (two-segment, owned above) and
+    // /<seg>.<ext> (a /public asset like og-image.png). m[1]=host (absolute branch only,
+    // filtered by INTERNAL_HOST below), m[2]=slug — same group convention as linkPattern.
+    name: "top-level",
+    pattern: new RegExp(
+      String.raw`(?:(?<=["'` + "`" + String.raw`])|https?://([^/\s"'` + "`" + String.raw`)]+))/([a-z0-9-]+)(?=["'` + "`" + String.raw`#?\s)]|$)`,
+      "g"
+    ),
+    resolve: (seg) =>
+      hasTopPage(seg) ? "dir" : redirectPaths.one.has(`/${seg}`) ? "redirect" : null,
+    detail: (seg) => "no src/app/" + seg + "/page.tsx, no redirect rule",
+  },
 ];
 
 const files = walk(SCAN_DIR);
 const REASON_LABEL = { redirect: "via redirect", map: "via peptideData map", registry: "via news registry" };
+// The href a slug renders to: /<seg> for the single-segment family, /<family>/<slug> otherwise.
+const linkOf = (fam, slug) => (fam.name === "top-level" ? `/${slug}` : `/${fam.name}/${slug}`);
 
 let anyDead = false;
 const summaries = [];
 const failures = [];
 
 for (const fam of FAMILIES) {
-  const pattern = linkPattern(fam.name);
+  const pattern = fam.pattern ?? linkPattern(fam.name);
   const links = [];
   for (const file of files) {
     const lines = stripComments(readFileSync(file, "utf8")).split("\n");
@@ -293,7 +330,7 @@ if (anyDead) {
   for (const { fam, dead } of failures) {
     console.error(`── ${fam.name} (${dead.length}) ──`);
     for (const d of dead) {
-      console.error(`  ✗ ${d.file}:${d.line}  →  /${fam.name}/${d.slug}`);
+      console.error(`  ✗ ${d.file}:${d.line}  →  ${linkOf(fam, d.slug)}`);
       console.error(`      ${fam.detail(d.slug)} — resolves to nothing (would 404)`);
     }
   }
