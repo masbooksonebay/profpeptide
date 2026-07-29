@@ -224,7 +224,7 @@ const sections = [
             for gut healing applications. BPC-157 is a peptide derived from gastric protective protein that has documented healing effects on gut tissue, gastric ulcers, and intestinal injury; glutamine provides enterocyte fuel for the cells doing the healing. Mechanism-complementary — BPC-157 drives the healing signal; glutamine supplies the energy substrate.{" "}
             <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>{" "}
             (anti-inflammatory tripeptide) reduces gut inflammation through melanocortin pathway; can stack with glutamine for inflammatory bowel contexts.{" "}
-            <Link href="/peptides/larazotide" className="text-[#3A759F] hover:underline">Larazotide</Link>{" "}
+            Larazotide{" "}
             (zonulin antagonist for tight junction regulation in celiac disease) is being studied alongside glutamine for gut barrier applications. None of these combinations have formal RCT validation but the mechanistic rationale is straightforward.
           </p>
         </div>
