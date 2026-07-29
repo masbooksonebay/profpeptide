@@ -89,21 +89,26 @@ export const couponDifferentiator: Record<string, string> = {
 };
 
 /**
- * Coupon-page metadata. The description is COMPOSED here in the proven Style-A shape —
- * "Use code {CODE} at {Vendor} to save {X}% sitewide — verified and working for {month}.
- * {differentiator}" — so the code always leads (char 9), the month derives from the single
- * CODES_VERIFIED_DATE constant, and the vendor/code/discount derive from vendors.ts. The
- * only per-vendor text is couponDifferentiator[slug]. A `description` is intentionally NOT
- * accepted from callers (the layouts): one composer, no per-page drift, no hardcoded year.
+ * Coupon-page metadata. Both the <title> and the description are COMPOSED here from
+ * vendors.ts — layouts pass only a slug (a `title` or `description` is intentionally NOT
+ * accepted), so there is no per-page drift and no hardcoded string to go stale.
+ *
+ * Title:  "{Vendor} Discount Code: {CODE} — Save {X}%" — the code-visible format proven by
+ *   the two pages Google accepts (amino-club, glacier-aminos). No "| Prof. Peptide" (the
+ *   domain already shows above the title) and no date (can't fit alongside the code at the
+ *   ~60-char SERP cutoff; it lives in the description). Code beats freshness when one fits.
+ * Description: the Style-A shape — "Use code {CODE} at {Vendor} to save {X}% sitewide —
+ *   verified and working for {month}. {differentiator}" — code first (char 9), month from
+ *   the single CODES_VERIFIED_DATE constant, only couponDifferentiator[slug] varies.
  */
 export function buildCouponMetadata({
   slug,
-  title,
   ...rest
-}: { slug: string; title: string } & Omit<Parameters<typeof buildPageMetadata>[0], "path" | "title" | "description">): Metadata {
+}: { slug: string } & Omit<Parameters<typeof buildPageMetadata>[0], "path" | "title" | "description">): Metadata {
   const v = vendors[slug];
   const pct = discountPct(slug);
   const diff = couponDifferentiator[slug];
+  const title = `${v.name} Discount Code: ${v.code} — Save ${pct}%`;
   const description =
     `Use code ${v.code} at ${v.name} to save ${pct}% sitewide — ` +
     `verified and working for ${CODES_VERIFIED_DATE}.` +

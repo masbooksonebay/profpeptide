@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "royal-peptides",
-  title: "Royal Peptides Discount Code: PROF10 — Save 10%",
   ogTitle: "Royal Peptides Coupon — Save 10% | Prof. Peptide",
 });
 

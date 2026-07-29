@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "oasis-labs",
-  title: "Oasis Labs Discount Code: PROF15 — Save 15%",
 });
 
 export default function OasisLabsLayout({ children }: { children: React.ReactNode }) {
