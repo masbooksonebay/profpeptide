@@ -13,7 +13,7 @@ export default function PrivacyPage() {
         <p><strong className="text-gray-800 dark:text-slate-200">Cookies.</strong> We use minimal cookies required for site function. We do not use advertising cookies.</p>
         <p><strong className="text-gray-800 dark:text-slate-200">Third Parties.</strong> We use Vercel for hosting, which may log standard server request data (IP address, user agent) per their own privacy policy.</p>
         <p><strong className="text-gray-800 dark:text-slate-200">Contact.</strong> Questions about privacy can be directed through the site contact page.</p>
-        <p className="text-xs text-gray-400 dark:text-slate-500 pt-4">Last updated: 2025</p>
+        <p className="text-xs text-gray-400 dark:text-slate-500 pt-4">Last updated: April 3, 2026</p>
       </div>
     </div>
   );
