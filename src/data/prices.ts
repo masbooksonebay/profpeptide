@@ -147,6 +147,31 @@ export function codeAutoApplies(vendorKey: string): boolean {
   }
 }
 
+/**
+ * True when the vendor's affiliate attribution can ride ON a product deep link — i.e. it's
+ * a QUERY param on the store root (`?ref=`/`?coupon=`/`?sld=`…), so appending it to any
+ * product URL keeps the referral. FALSE for PATH-based affiliate links (`/aff/208/`,
+ * `/ref/48/`, `/affiliate/…`, or a `go.<host>/aff_c` redirect): those are redirect entry
+ * points a product deep link bypasses, so the link would land on the right product with NO
+ * attribution — worse than a homepage link. Such vendors must use the homepage fallback
+ * EVEN WHEN a product slug exists.
+ *
+ * Derived from the URL shape — root path AND a query string — exactly like codeAutoApplies:
+ * the shape IS the mechanism. Switching a vendor's url to a query form later auto-enables
+ * deep-linking with no code change. (A non-root path such as `/aff_c` or `/en/` → false,
+ * even if it carries tracker query params, because those don't compose onto a product URL.)
+ */
+export function affiliateDeepLinkable(vendorKey: string): boolean {
+  const raw = vendors[vendorKey]?.url ?? "";
+  try {
+    const u = new URL(raw);
+    const rootPath = u.pathname === "/" || u.pathname === "";
+    return rootPath && u.search !== "";
+  } catch {
+    return false;
+  }
+}
+
 /** Parse the integer discount percent from a vendor's `discount` string ("15% off" → 15). */
 export function vendorDiscountPct(vendorKey: string): number {
   const v = vendors[vendorKey];

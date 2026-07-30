@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { VendorProductRow } from "@/data/prices";
+import { affiliateDeepLinkable } from "@/data/prices";
 import { vendors } from "@/data/vendors";
 
 function fmt(n: number): string {
@@ -14,13 +15,20 @@ function fmt(n: number): string {
  * It never emits a bare product path (e.g. `/us/products/`), which is worse than no
  * deep link. Woo/CINC vendors (no captured slug) simply pass no deepLink, or pass one
  * that is only used on the rows that actually carry a slug.
+ *
+ * Attribution guard: vendors whose affiliate link is PATH-based (a `/aff/…`, `/ref/…`
+ * redirect that can't ride on a product URL) are forced to the homepage fallback even
+ * when a slug AND a deepLink are supplied — a deep link would otherwise land on the
+ * product with NO affiliate attribution. Derived from the URL shape via
+ * affiliateDeepLinkable, so the exclusion follows the link, never a hardcoded list.
  */
 export function makeShopUrlFor(
   vendorKey: string,
   deepLink?: (vendorSlug: string) => string,
 ): (vendorSlug?: string) => string {
   const homepage = vendors[vendorKey]?.url ?? "";
-  return (vendorSlug) => (vendorSlug && deepLink ? deepLink(vendorSlug) : homepage);
+  const canDeepLink = affiliateDeepLinkable(vendorKey);
+  return (vendorSlug) => (vendorSlug && deepLink && canDeepLink ? deepLink(vendorSlug) : homepage);
 }
 
 /**
