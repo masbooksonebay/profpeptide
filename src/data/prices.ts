@@ -148,28 +148,50 @@ export function codeAutoApplies(vendorKey: string): boolean {
 }
 
 /**
- * True when the vendor's affiliate attribution can ride ON a product deep link — i.e. it's
- * a QUERY param on the store root (`?ref=`/`?coupon=`/`?sld=`…), so appending it to any
- * product URL keeps the referral. FALSE for PATH-based affiliate links (`/aff/208/`,
- * `/ref/48/`, `/affiliate/…`, or a `go.<host>/aff_c` redirect): those are redirect entry
- * points a product deep link bypasses, so the link would land on the right product with NO
- * attribution — worse than a homepage link. Such vendors must use the homepage fallback
- * EVEN WHEN a product slug exists.
+ * Compose a product DEEP LINK for a vendor from its affiliate URL + the product's permalink
+ * path (vendorSlug, captured by the pull). Returns null when the affiliate URL is on a
+ * different host than the store and can't carry a product path — the caller then falls back
+ * to the affiliate homepage. Derived entirely from the stored URL — no hardcoded vendor list.
  *
- * Derived from the URL shape — root path AND a query string — exactly like codeAutoApplies:
- * the shape IS the mechanism. Switching a vendor's url to a query form later auto-enables
- * deep-linking with no code change. (A non-root path such as `/aff_c` or `/en/` → false,
- * even if it carries tracker query params, because those don't compose onto a product URL.)
+ * CINC verified (2026-07-29) that BOTH affiliate shapes compose onto a product URL — the
+ * referral appends AFTER the product path — so there is no "path-based → exclude" rule:
+ *   query-param:  https://<host>/<vendorSlug>?<query>        e.g. .../product/glp-3/?ref=x
+ *   path-based:   https://<host>/<vendorSlug>/<affPath>/     e.g. .../product/bpc-157/ref/48/
+ * (verbatim match to Peptide Partners' own AffiliateWP generator output.)
+ *
+ * Trailing slash: the path-based form always ends in "/" (CINC's working URLs all did). The
+ * query form keeps whatever trailing slash vendorSlug carries — woo permalinks keep it
+ * (product/glp-3/), Medusa/nextjs (amino-club) has none (us/products/mots-c) — so each
+ * vendor's canonical form is preserved.
+ *
+ * The one real exclusion — biolongevity: go.biolongevitylabs.com/aff_c?… is a redirect
+ * endpoint on a DIFFERENT HOST than the store (biolongevitylabs.com), not a suffix on it, so
+ * it can't compose. Detected from the URL: after stripping a leading "www.", the affiliate
+ * host still has an extra subdomain label (go.) → not the store host → null. (Every current
+ * vendor sits on a single-label TLD, so "> 2 labels after www" cleanly isolates this case.)
  */
-export function affiliateDeepLinkable(vendorKey: string): boolean {
-  const raw = vendors[vendorKey]?.url ?? "";
+export function vendorDeepLink(vendorKey: string, vendorSlug: string): string | null {
+  const v = vendors[vendorKey];
+  if (!v || !vendorSlug) return null;
+  let u: URL;
   try {
-    const u = new URL(raw);
-    const rootPath = u.pathname === "/" || u.pathname === "";
-    return rootPath && u.search !== "";
+    u = new URL(v.url);
   } catch {
-    return false;
+    return null;
   }
+  // Cross-host redirect endpoint (go.<domain>/aff_c) → can't carry a product path.
+  if (u.host.replace(/^www\./, "").split(".").length > 2) return null;
+
+  const base = `${u.protocol}//${u.host}`;
+  const slug = vendorSlug.replace(/^\/+/, ""); // never a leading slash
+  const rootPath = u.pathname === "/" || u.pathname === "";
+  if (rootPath) {
+    // query-param shape: attribution rides as the query on the product URL
+    return `${base}/${slug}${u.search}`;
+  }
+  // path-based shape: the affiliate path segment appends AFTER the product path, trailing "/"
+  const affPath = u.pathname.replace(/^\/+|\/+$/g, "");
+  return `${base}/${slug.replace(/\/+$/, "")}/${affPath}/`;
 }
 
 /** Parse the integer discount percent from a vendor's `discount` string ("15% off" → 15). */

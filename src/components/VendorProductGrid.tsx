@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { VendorProductRow } from "@/data/prices";
-import { affiliateDeepLinkable } from "@/data/prices";
+import { vendorDeepLink } from "@/data/prices";
 import { vendors } from "@/data/vendors";
 
 function fmt(n: number): string {
@@ -13,22 +13,24 @@ function fmt(n: number): string {
  *   • vendorSlug present AND a deepLink builder given → the exact product deep link
  *   • otherwise → the vendor's plain affiliate URL (its homepage) from vendors.ts
  * It never emits a bare product path (e.g. `/us/products/`), which is worse than no
- * deep link. Woo/CINC vendors (no captured slug) simply pass no deepLink, or pass one
- * that is only used on the rows that actually carry a slug.
+ * deep link.
  *
- * Attribution guard: vendors whose affiliate link is PATH-based (a `/aff/…`, `/ref/…`
- * redirect that can't ride on a product URL) are forced to the homepage fallback even
- * when a slug AND a deepLink are supplied — a deep link would otherwise land on the
- * product with NO affiliate attribution. Derived from the URL shape via
- * affiliateDeepLinkable, so the exclusion follows the link, never a hardcoded list.
+ * Resolution order for a row: (1) no slug → homepage; (2) an explicit per-page deepLink
+ * builder wins — amino-club uses one because its canonical store host (www.aminoclub.com)
+ * differs from the apex host in vendors.ts, which the URL-derived composer can't know;
+ * (3) otherwise the universal vendorDeepLink composer (both affiliate shapes), which
+ * returns null for a cross-host redirect affiliate (biolongevity) → homepage fallback.
  */
 export function makeShopUrlFor(
   vendorKey: string,
   deepLink?: (vendorSlug: string) => string,
 ): (vendorSlug?: string) => string {
   const homepage = vendors[vendorKey]?.url ?? "";
-  const canDeepLink = affiliateDeepLinkable(vendorKey);
-  return (vendorSlug) => (vendorSlug && deepLink && canDeepLink ? deepLink(vendorSlug) : homepage);
+  return (vendorSlug) => {
+    if (!vendorSlug) return homepage;
+    if (deepLink) return deepLink(vendorSlug);
+    return vendorDeepLink(vendorKey, vendorSlug) ?? homepage;
+  };
 }
 
 /**
