@@ -1,12 +1,12 @@
 [
   {
     "slug": "5-amino-1mq",
-    "vendors": 17,
+    "vendors": 18,
     "indexable": true
   },
   {
     "slug": "adamax",
-    "vendors": 8,
+    "vendors": 9,
     "indexable": true
   },
   {
@@ -26,12 +26,12 @@
   },
   {
     "slug": "bronchogen",
-    "vendors": 5,
+    "vendors": 7,
     "indexable": true
   },
   {
     "slug": "cagrilintide",
-    "vendors": 16,
+    "vendors": 15,
     "indexable": true
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "slug": "foxo4-dri",
-    "vendors": 8,
+    "vendors": 9,
     "indexable": true
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "slug": "kisspeptin",
-    "vendors": 16,
+    "vendors": 17,
     "indexable": true
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "slug": "mazdutide",
-    "vendors": 5,
+    "vendors": 3,
     "indexable": true
   },
   {
@@ -231,7 +231,7 @@
   },
   {
     "slug": "retatrutide",
-    "vendors": 24,
+    "vendors": 22,
     "indexable": true
   },
   {
@@ -241,7 +241,7 @@
   },
   {
     "slug": "semaglutide",
-    "vendors": 17,
+    "vendors": 15,
     "indexable": true
   },
   {
@@ -271,7 +271,7 @@
   },
   {
     "slug": "survodutide",
-    "vendors": 6,
+    "vendors": 5,
     "indexable": true
   },
   {
@@ -316,12 +316,12 @@
   },
   {
     "slug": "tirzepatide",
-    "vendors": 19,
+    "vendors": 18,
     "indexable": true
   },
   {
     "slug": "vesilute",
-    "vendors": 4,
+    "vendors": 3,
     "indexable": true
   },
   {
