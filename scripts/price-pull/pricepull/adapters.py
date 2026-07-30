@@ -21,6 +21,7 @@ import re
 import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import urlparse
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/140.0 Safari/537.36")
@@ -61,6 +62,17 @@ def _flight_blob(html):
     """Concatenate + unescape a Next.js RSC flight stream."""
     chunks = re.findall(r'self\.__next_f\.push\(\[1,"(.*?)"\]\)', html, re.S)
     return ''.join(chunks).encode().decode('unicode_escape', errors='ignore')
+
+
+def _url_path(u):
+    """Path portion of a product URL with NO leading slash — stored as vendorSlug so a
+    single deep-link builder `https://<domain>/<vendorSlug>?<aff>` works for every vendor
+    regardless of its permalink base (/product/, /shop/, or root — which diverges across
+    woo stores). Derived from the store's own URL, so no hand-kept base map can go stale.
+    The source's trailing slash is preserved: woo permalinks keep it (canonical, no 301);
+    nextjs discovery URLs are rstripped by the caller, so amino-club stays no-trailing and
+    its Shop URL is unchanged."""
+    return urlparse(u).path.lstrip('/') if u else None
 
 
 # ---------------------------------------------------------------- WooCommerce
@@ -125,9 +137,16 @@ def woo(domain, per_page=100, max_pages=12):
                         break
         # Names arrive HTML-entity-encoded (LA Peptides: "GLP &#8211; 3 (R)"). Unescape so
         # downstream matching (decoders, aliases) and rendered listedAs see clean text.
+        # `slug` is emitted as the permalink PATH (e.g. "product/glp-3/", "shop/vesugen-20mg/",
+        # or a root "humanin/") — NOT the bare handle — so one universal deep-link builder
+        # works across every vendor without a per-vendor base map (bases diverge: /product/,
+        # /shop/, root). Derived from the store's own permalink (already in the fetched list),
+        # so it can't drift and a new vendor needs no discovery. Per-PRODUCT: variations share
+        # the parent permalink, matching the grid's per-row model.
         out.append({'name': html.unescape(p['name']),
                     'price': _cents(pr, 'price'), 'regular': _cents(pr, 'regular_price'),
                     'in_stock': p.get('is_in_stock'), 'variations': variations,
+                    'slug': _url_path(p.get('permalink')) or p.get('slug'),
                     'description': html.unescape(p.get('description', '') + ' ' + p.get('short_description', ''))})
     return out
 
@@ -196,6 +215,11 @@ def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', 
             continue
         blob = _flight_blob(html)
         slug = url.rstrip('/').rsplit('/', 1)[-1]
+        # `slug` (bare last segment) is kept for the internal name/Medusa-handle matching
+        # below. `path` is the permalink PATH emitted as vendorSlug (parity with woo) so one
+        # universal builder works everywhere. rstrip('/') keeps amino-club's canonical
+        # no-trailing-slash path (us/products/<handle>), so the pilot's Shop URL is unchanged.
+        path = _url_path(url.rstrip('/'))
         # product display name (JSON-LD Product name, else flight product object, else <title>)
         nm = (re.search(r'"@type":"Product","name":"([^"]+)"', html)
               or re.search(r'"@type":"Product"[^}]*?"name":"([^"]+)"', blob)
@@ -251,7 +275,7 @@ def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', 
                    'in_stock': int(sq) > 0} for sz, pr, cmp, sq in variants]
             out.append({'name': name, 'price': vs[0]['price'], 'regular': vs[0]['regular'],
                         'in_stock': any(v['in_stock'] for v in vs), 'variations': vs, 'description': desc,
-                        'slug': slug})
+                        'slug': path})
             continue
 
         # shape 2: JSON-LD Offer  (single price + availability) — one price, no anchor
@@ -259,7 +283,7 @@ def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', 
         if off:
             out.append({'name': name, 'price': float(off.group(1)), 'regular': float(off.group(1)),
                         'in_stock': off.group(2) == 'InStock', 'variations': [], 'description': desc,
-                        'slug': slug})
+                        'slug': path})
     return out
 
 

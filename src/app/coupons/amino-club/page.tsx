@@ -33,11 +33,13 @@ export default function AminoClubCouponPage() {
   const rows = vendorProductRows("amino-club");
   const discountPct = vendorDiscountPct("amino-club");
   const code = vendors["amino-club"].code;
-  // Deep-link when the row carries the vendor's product slug (all amino-club rows do);
-  // makeShopUrlFor falls back to the vendor homepage for any slugless row.
+  // Universal deep-link builder: vendorSlug is now the full permalink PATH
+  // (us/products/<handle>), so the URL is just domain + path + affiliate query — no
+  // per-vendor base baked into the template. makeShopUrlFor falls back to the vendor
+  // homepage for any slugless row.
   const shopUrl = makeShopUrlFor(
     "amino-club",
-    (vendorSlug) => `https://www.aminoclub.com/us/products/${vendorSlug}?utm_source=affiliate_marketing&code=${code}`,
+    (vendorSlug) => `https://www.aminoclub.com/${vendorSlug}?utm_source=affiliate_marketing&code=${code}`,
   );
   return (
     <div className="section max-w-3xl">
