@@ -23,3 +23,6 @@ next-env.d.ts
 # script) and served fresh from every Vercel deploy — the committed copies were
 # only stale build artifacts that churned on every local build. Not tracked.
 /public/sitemap*.xml
+# Session-auth cookie for login-gated vendors (Modern Aminos). A LIVE CREDENTIAL —
+# supplied out-of-band and read at pull time by refresh.py; never committed.
+/scripts/price-pull/.session-cookie
