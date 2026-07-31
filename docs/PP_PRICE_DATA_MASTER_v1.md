@@ -2445,4 +2445,55 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ---
 
+## VENDOR: Crush Research
+- **slug:** crush-research | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** crushresearch.shop
+- **traffic:** (not pulled) | **pulled:** July 31 2026
+- **sale posture:** No product-level sale (originalPrice null across the catalog); PP code is a query-param affiliate ref (?ref=), applied at checkout, not an automatic markdown — so base = lowestPrice.
+
+### Single compounds
+| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| Adamax | 10mg | $59.00 | $5.90 | — | ✗ | product/adamax-1032-grade-10mg |
+| BPC-157 | 5mg | $29.00 | $5.80 | — | ✓ | product/bpc-157-5mg |
+| BPC-157 | 10mg | $39.00 | $3.90 | — | ✗ | product/bpc-157-10mg |
+| GHK-Cu | 50mg | $29.00 | $0.58 | — | ✓ | product/ghk-cu-50mg |
+| GHK-Cu | 100mg | $39.00 | $0.39 | — | ✗ | product/ghk-cu-100mg |
+| Glutathione | 1500mg | $59.00 | $0.04 | — | ✗ | product/glutathione-1500mg |
+| Ipamorelin | 10mg | $39.00 | $3.90 | — | ✗ | product/ipamorelin-10mg-vial |
+| KPV | 10mg | $39.00 | $3.90 | — | ✗ | product/kpv-10mg |
+| Melanotan I | 10mg | $39.00 | $3.90 | — | ✓ | product/melanotan-1-10mg-vial |
+| Melanotan II | 10mg | $39.00 | $3.90 | — | ✓ | product/melanotan-2-10mg-vial |
+| MOTS-C | 10mg | $39.00 | $3.90 | — | ✗ | product/mots-c-10mg |
+| MOTS-C | 40mg | $79.00 | $1.98 | — | ✗ | product/mots-c-40mg |
+| NAD+ | 500mg | $49.00 | $0.10 | — | ✗ | product/nad-500mg-buffered |
+| NAD+ | 1000mg | $79.00 | $0.08 | — | ✓ | product/nad-plus-1000mg |
+| Pinealon | 10mg | $39.00 | $3.90 | — | ✗ | product/pinealon-10mg-vial |
+| PT-141 | 10mg | $39.00 | $3.90 | — | ✗ | product/pt-141-10mg |
+| Retatrutide (listed as Triple Agonist) | 10mg | $49.00 | $4.90 | — | ✓ | product/triple-agonist-10mg |
+| Retatrutide (listed as Triple Agonist) | 15mg | $59.00 | $3.93 | — | ✓ | product/triple-agonist-15mg |
+| Retatrutide (listed as Triple Agonist) | 20mg | $69.00 | $3.45 | — | ✓ | product/triple-agonist-20mg |
+| Retatrutide (listed as Triple Agonist) | 30mg | $89.00 | $2.97 | — | ✗ | product/triple-agonist-30mg |
+| Retatrutide (listed as Triple Agonist) | 50mg | $129.00 | $2.58 | — | ✗ | product/triple-agonist-50mg |
+| Selank | 5mg | $29.00 | $5.80 | — | ✓ | product/selank-5mg-vial |
+| Sermorelin | 10mg | $39.00 | $3.90 | — | ✗ | product/sermorelin-10mg-vial |
+| Tesamorelin | 20mg | $89.00 | $4.45 | — | ✗ | product/tesamorelin-20mg |
+| Tirzepatide (listed as Double Agonist) | 20mg | $59.00 | $2.95 | — | ✗ | product/double-agonist-20mg |
+| Tirzepatide (listed as Double Agonist) | 30mg | $69.00 | $2.30 | — | ✗ | product/double-agonist-30mg |
+| Tirzepatide (listed as Double Agonist) | 40mg | $79.00 | $1.98 | — | ✓ | product/double-agonist-40mg |
+| Tirzepatide (listed as Double Agonist) | 50mg | $89.00 | $1.78 | — | ✓ | product/double-agonist-50mg |
+| VIP | 10mg | $39.00 | $3.90 | — | ✗ | product/vip-10mg |
+
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock |
+| --- | --- | --- | --- | --- | --- |
+| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 5mg | $49.00 | not published | ✓ |
+| GHK-Cu/KPV | GHK-Cu/KPV | 60mg | $59.00 | not published | ✗ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $69.00 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $69.00 | not published | ✗ |
+
+### Sprays: none
+### Excluded: out-of-scope (SARMs/Rx/cosmetics) — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+
+---
+
 ## VENDOR: [next vendor — append here in same format]

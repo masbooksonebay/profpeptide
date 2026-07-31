@@ -322,6 +322,15 @@ def _peptidology(n):
         return (n.strip() + ' [coded, UNVERIFIED]', None, 'single_bk')
 
 
+@_decoder('crush-research')  # verified-by-MECHANISM on Crush's own product pages (title + body):
+# "Double Agonist" = Tirzepatide (the sole marketed dual GIP/GLP-1 agonist);
+# "Triple Agonist" = Retatrutide (the sole triple GLP-1/GIP/glucagon agonist). Mechanism-tier
+# (like BioCollex/Ameano) — unique class per compound, stated on the page, not a code convention.
+def _crush(n):
+    if re.match(r'Double Agonist', n, re.I): return (_c('Tirzepatide', 'Double Agonist'), 'tirzepatide', 'single')
+    if re.match(r'Triple Agonist', n, re.I): return (_c('Retatrutide', 'Triple Agonist'), 'retatrutide', 'single')
+
+
 def decode(vendor, name):
     fn = DECODERS.get(vendor)
     return fn(name.strip()) if fn else None

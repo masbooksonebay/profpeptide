@@ -351,7 +351,92 @@ def nextjs(domain, sitemap="sitemap.xml", url_pattern=r'/products/[a-z0-9-]+$', 
     return out
 
 
-ADAPTERS = {'woo': woo, 'purity_api': purity_api, 'nextjs': nextjs}
+# ----------------------------------------------------- Next.js single-flight feed
+
+def _balanced_array(blob, start_key):
+    """Substring of the JSON array value for `start_key` (its opening '[' to the matching
+    ']'), walked string- and escape-aware so brackets inside string values don't miscount.
+    RAISES if the key or a balanced close isn't found — a single-flight feed adapter must
+    fail LOUD when the flight shape changed, never silently narrow to nothing."""
+    i = blob.find(start_key)
+    if i < 0:
+        raise RuntimeError(f"nextjs_feed: '{start_key}' not found in flight")
+    i = blob.index('[', i)
+    depth = 0
+    in_str = esc = False
+    for j in range(i, len(blob)):
+        c = blob[j]
+        if in_str:
+            if esc:
+                esc = False
+            elif c == '\\':
+                esc = True
+            elif c == '"':
+                in_str = False
+        elif c == '"':
+            in_str = True
+        elif c == '[':
+            depth += 1
+        elif c == ']':
+            depth -= 1
+            if depth == 0:
+                return blob[i:j + 1]
+    raise RuntimeError(f"nextjs_feed: unbalanced array for '{start_key}' — flight shape changed")
+
+
+def nextjs_feed(domain, feed_path="/shop", array_key="initialProducts", product_base="product"):
+    """Whole-catalog Next.js storefronts that server-render the ENTIRE product list into ONE
+    page's RSC flight as a JSON array (Crush Research: /shop -> "initialProducts":[...]) rather
+    than one page per product (the `nextjs` adapter's model) or a Woo Store API. One GET, no
+    per-product fetch, no sitemap, no database access (Supabase is server-side only here).
+
+    Flight fields mapped: name, slug, mgPerVial (explicit size — no name parsing), lowestPrice
+    (cents -> current price), originalPrice (cents|null -> `regular` only when on sale), inStock.
+    Out-of-stock items carry lowestPrice:0; they pass through here and are dropped downstream by
+    the price<=0 guard (same class as no-size rows). `slug` is emitted as the canonical permalink
+    PATH "<product_base>/<slug>" so the shared deep-link builder composes
+    https://<domain>/<product_base>/<slug>?<aff> (parity with woo/nextjs vendorSlug).
+
+    FAILS LOUD: the flight structure is a frontend implementation detail. A vendor redeploy with
+    a different shape won't parse — _balanced_array raises, and a parse yielding 0 products raises
+    below, rather than returning [] (which would look like a clean empty catalog). --write's >50%
+    row-drop floor also catches regressions, but only against a baseline; the raise catches a
+    first-pull/redeploy break too."""
+    blob = _flight_blob(http_get(f"https://{domain}{feed_path}"))
+    arr = _balanced_array(blob, f'"{array_key}":')
+    chunks = re.split(r'(?=\{"id":")', arr)
+
+    def field(c, key, quoted):
+        pat = rf'"{key}":"([^"]*)"' if quoted else rf'"{key}":([0-9.]+|null|true|false)'
+        m = re.search(pat, c)
+        return m.group(1) if m else None
+
+    out = []
+    for c in chunks:
+        slug = field(c, "slug", True)
+        lp = field(c, "lowestPrice", False)
+        if not slug or lp is None:          # skip the array's non-product preamble/tail
+            continue
+        name = field(c, "name", True) or slug
+        op = field(c, "originalPrice", False)
+        mg = field(c, "mgPerVial", False)
+        in_stock = field(c, "inStock", False) == "true"
+        price = int(lp) / 100
+        regular = float(op) / 100 if (op and op != "null") else None
+        variations = []
+        if mg and mg != "null":             # explicit size -> one Size variation (no name parsing)
+            variations = [{'attrs': [('Size', f'{float(mg):g}mg')],
+                           'price': price, 'regular': regular, 'in_stock': in_stock}]
+        out.append({'name': html.unescape(name), 'price': price, 'regular': regular,
+                    'in_stock': in_stock, 'variations': variations, 'description': '',
+                    'slug': f'{product_base}/{slug}'})
+    if not out:
+        raise RuntimeError(f"nextjs_feed: parsed 0 products from https://{domain}{feed_path} "
+                           f"('{array_key}' flight shape may have changed) — refusing to return empty")
+    return out
+
+
+ADAPTERS = {'woo': woo, 'purity_api': purity_api, 'nextjs': nextjs, 'nextjs_feed': nextjs_feed}
 
 
 def fetch(adapter, domain, **opts):

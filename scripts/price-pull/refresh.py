@@ -73,6 +73,12 @@ def build_vendor(slug, cfg, meta):
             opts["discover"] = cfg["discover"]
         if cfg.get("cookie"):
             opts["cookie"] = cfg["cookie"]
+    elif cfg["adapter"] == "nextjs_feed":
+        # Single-flight feed (Crush): pass the /shop path, the flight array key, and the
+        # product-URL base through so the adapter isn't hardcoded to one vendor's shape.
+        for k in ("feed_path", "array_key", "product_base"):
+            if cfg.get(k):
+                opts[k] = cfg[k]
     # Login-gated vendors (Modern Aminos): read the session cookie from the gitignored file
     # and pass it through (woo now forwards a Cookie header). Fail loud if it's missing.
     if cfg.get("session_auth"):

@@ -6,7 +6,7 @@
   },
   {
     "slug": "adamax",
-    "vendors": 9,
+    "vendors": 10,
     "indexable": true
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "slug": "bpc-157",
-    "vendors": 27,
+    "vendors": 28,
     "indexable": true
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "slug": "ghk-cu",
-    "vendors": 25,
+    "vendors": 26,
     "indexable": true
   },
   {
@@ -106,7 +106,7 @@
   },
   {
     "slug": "glutathione",
-    "vendors": 18,
+    "vendors": 19,
     "indexable": true
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "slug": "ipamorelin",
-    "vendors": 22,
+    "vendors": 23,
     "indexable": true
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "slug": "kpv",
-    "vendors": 22,
+    "vendors": 23,
     "indexable": true
   },
   {
@@ -166,12 +166,12 @@
   },
   {
     "slug": "melanotan-i",
-    "vendors": 13,
+    "vendors": 14,
     "indexable": true
   },
   {
     "slug": "melanotan-ii",
-    "vendors": 21,
+    "vendors": 22,
     "indexable": true
   },
   {
@@ -186,12 +186,12 @@
   },
   {
     "slug": "mots-c",
-    "vendors": 28,
+    "vendors": 29,
     "indexable": true
   },
   {
     "slug": "nad-plus",
-    "vendors": 25,
+    "vendors": 26,
     "indexable": true
   },
   {
@@ -221,7 +221,7 @@
   },
   {
     "slug": "pinealon",
-    "vendors": 13,
+    "vendors": 14,
     "indexable": true
   },
   {
@@ -231,17 +231,17 @@
   },
   {
     "slug": "pt-141",
-    "vendors": 22,
+    "vendors": 23,
     "indexable": true
   },
   {
     "slug": "retatrutide",
-    "vendors": 23,
+    "vendors": 24,
     "indexable": true
   },
   {
     "slug": "selank",
-    "vendors": 23,
+    "vendors": 24,
     "indexable": true
   },
   {
@@ -256,7 +256,7 @@
   },
   {
     "slug": "sermorelin",
-    "vendors": 22,
+    "vendors": 23,
     "indexable": true
   },
   {
@@ -286,7 +286,7 @@
   },
   {
     "slug": "tesamorelin",
-    "vendors": 28,
+    "vendors": 29,
     "indexable": true
   },
   {
@@ -321,7 +321,7 @@
   },
   {
     "slug": "tirzepatide",
-    "vendors": 18,
+    "vendors": 19,
     "indexable": true
   },
   {
@@ -341,7 +341,7 @@
   },
   {
     "slug": "vip",
-    "vendors": 16,
+    "vendors": 17,
     "indexable": true
   }
 ]

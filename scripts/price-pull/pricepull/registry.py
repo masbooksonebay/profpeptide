@@ -187,6 +187,24 @@ VENDORS = {
         notes="Onboarded 2026-07. WooCommerce, Store API readable (47 products, 1 page); mg in NAME. "
               "21+ age gate is a SOFT overlay — does not block the Store API. GLPs named plainly (no "
               "coded SKUs). AHK-Cu/Research Solution filtered by scope."),
+    # ---- Next.js single-flight feed (whole catalog in one /shop RSC flight) ----
+    "crush-research": dict(name="Crush Research", domain="crushresearch.shop", adapter="nextjs_feed",
+        feed_path="/shop", array_key="initialProducts", product_base="product",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="No product-level sale (originalPrice null across the catalog); PP code is a query-param "
+                     "affiliate ref (?ref=), applied at checkout, not an automatic markdown — so base = lowestPrice.",
+        notes="Onboarded 2026-07 (previously BLOCKED — reversed once Mark confirmed via the site's own network "
+              "requests that Supabase is SERVER-SIDE ONLY, no browser REST calls). The FULL catalog is "
+              "server-rendered into /shop's RSC flight as a single 'initialProducts' JSON array — adapter "
+              "nextjs_feed reads it in one GET, no per-product fetch, no sitemap, no database access. Fields: "
+              "name (mg in name), slug, mgPerVial (explicit size), lowestPrice/originalPrice (cents), inStock+"
+              "stockCount. pricePerMg in the data == our price/mg (verified 0 mismatches at recon). Out-of-stock "
+              "items carry lowestPrice:0 -> dropped by the price<=0 guard. Deep links at /product/<slug> (200). "
+              "Coded SKUs: 'Double Agonist'=Tirzepatide, 'Triple Agonist'=Retatrutide — stated on their own "
+              "product pages (mechanism-tier: dual GIP/GLP-1 vs triple GLP-1/GIP/glucagon). Blends (BPC-157/"
+              "TB-500, GHK-Cu/KPV, KLOW, CJC-1295/Ipamorelin) route to the blend track; Antimicrobial Dilution "
+              "Solution filtered by scope. Flight shape is a frontend detail — adapter FAILS LOUD (raises) on a "
+              "redeploy that changes it rather than returning an empty catalog; >50% row-drop floor also guards."),
     # ---- CINC read-only (Cloudflare-blocked Store API; storefront JSON usable) ----
     "aero-peptides": dict(name="Aero Peptides", domain="aeropeptides.com", adapter="cinc",
         variation_model="dosage", coded_decoder=True,
@@ -202,14 +220,6 @@ BLOCKED = {
     "spartan-peptides": "PARTIAL — client-rendered React storefront (no /wp-json); ~10/30 captured, "
                         "remainder behind a 21+ age gate (a consent modal — not to be clicked). Prices are RANGES "
                         "(low=smallest size, high=bulk kit) — match sizes to each end before $/mg.",
-    "crush-research": "BLOCKED — Next.js storefront on a Supabase backend (xujzdgkdxmelqaldrdfb.supabase.co); "
-                      "not WooCommerce (the /wp-json 403 is Cloudflare, not woo). The `products` table is "
-                      "RLS-protected (public anon key -> permission denied), /shop is client-rendered, and the "
-                      "sitemap lists no product URLs — no existing adapter fits. The catalog endpoint isn't "
-                      "discoverable without enumerating their database, which we won't do. ONBOARDABLE if we get "
-                      "the exact anon-readable view/RPC from the site's own /shop network requests (browser "
-                      "Network tab -> supabase.co/rest/v1/<view>): then a small supabase adapter can query only "
-                      "that. Codes Retatrutide='Triple Agonist', Tirzepatide='Double Agonist' on product pages.",
 }
 
 
