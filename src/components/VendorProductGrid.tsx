@@ -61,19 +61,12 @@ export interface VendorProductGridProps {
 const GRID =
   "grid grid-cols-[minmax(0,1fr)_4.5rem_9rem_5rem_5rem] items-start justify-items-start gap-x-4 text-left";
 
-// Visible-row cap. Mark judged 32 rows / ~2,190px a good length; longer catalogs (16
-// vendors, up to 134 rows) collapse the overflow behind a show-more. A vendor at or under
-// the cap renders EXACTLY as before — the non-overflow branch below maps the original rows
-// array with no wrapper, so the pilot (amino-club, 32) is byte-identical.
-const ROW_CAP = 32;
-
 export function VendorProductGrid({ rows, discountPct, shopUrlFor }: VendorProductGridProps) {
   const postCode = (base: number) => Math.round(base * (1 - discountPct / 100) * 100) / 100;
 
-  const visible = rows.slice(0, ROW_CAP);
-  const hidden = rows.slice(ROW_CAP);
-  const overflow = hidden.length > 0;
-
+  // Every row renders directly — no cap/show-more. Rows are alphabetical, so a cap would hide
+  // by letter (everything past ~J), not by relevance; hiding Tesamorelin/TB-500/Wolverine
+  // behind a click filters on nothing meaningful. Full list, always.
   const deskRow = (r: VendorProductRow, i: number) => (
     <div key={i} className={`${GRID} py-2.5 border-b border-gray-100 dark:border-slate-800`}>
       <div className="min-w-0 self-baseline">
@@ -120,16 +113,6 @@ export function VendorProductGrid({ rows, discountPct, shopUrlFor }: VendorProdu
     </div>
   );
 
-  // Native <details> disclosure — no client JS, so the grid stays a plain component and a
-  // ≤cap vendor introduces no client boundary. group-open toggles the label + chevron.
-  const summary = (
-    <summary className="flex cursor-pointer list-none items-center justify-center gap-1.5 py-3 text-sm font-medium text-[#3A759F] hover:underline [&::-webkit-details-marker]:hidden">
-      <span className="group-open:hidden">Show all {rows.length} products</span>
-      <span className="hidden group-open:inline">Show fewer</span>
-      <span aria-hidden className="text-xs transition-transform group-open:rotate-180">&darr;</span>
-    </summary>
-  );
-
   return (
     <div>
       {/* ── Desktop grid (≥ sm) ── */}
@@ -144,32 +127,12 @@ export function VendorProductGrid({ rows, discountPct, shopUrlFor }: VendorProdu
           <div>Stock</div>
           <div />
         </div>
-        {overflow ? (
-          <>
-            {visible.map(deskRow)}
-            <details className="group">
-              {summary}
-              {hidden.map((r, i) => deskRow(r, i + ROW_CAP))}
-            </details>
-          </>
-        ) : (
-          rows.map(deskRow)
-        )}
+        {rows.map(deskRow)}
       </div>
 
       {/* ── Mobile stacked (< sm) ── */}
       <div className="sm:hidden space-y-2">
-        {overflow ? (
-          <>
-            {visible.map(mobRow)}
-            <details className="group">
-              {summary}
-              <div className="space-y-2 mt-2">{hidden.map((r, i) => mobRow(r, i + ROW_CAP))}</div>
-            </details>
-          </>
-        ) : (
-          rows.map(mobRow)
-        )}
+        {rows.map(mobRow)}
       </div>
     </div>
   );
