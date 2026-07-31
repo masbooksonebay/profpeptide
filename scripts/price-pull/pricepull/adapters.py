@@ -18,10 +18,11 @@ raises Blocked; such vendors are marked in the registry and skipped.
 import html
 import json
 import re
+import sys
 import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/140.0 Safari/537.36")
@@ -75,6 +76,46 @@ def _url_path(u):
     return urlparse(u).path.lstrip('/') if u else None
 
 
+# Product permalinks reported by the Store API can be STALE — a vendor that migrated its slug
+# (biocollex: /product/ghk-cu/ 302s to /ghk-cu-50mg/) leaves the API pointing at a URL that
+# redirects and DROPS the affiliate query on the way. Resolving the permalink at pull time —
+# follow redirects, keep the FINAL canonical path — makes vendorSlug self-healing, so no
+# hand-maintained per-vendor exception list is ever needed (the pattern that produced stale
+# hardcoded dates/codes). It NEVER raises: any failure keeps the Store-API path so one bad
+# product can't fail the whole pull.
+_GATE_PARAMS = {"redirect_to", "return", "return_to", "return_url", "redirect", "next"}
+
+
+def _resolve_permalink(permalink):
+    """(canonical_path, note). HEAD-follows redirects on a product permalink and returns the
+    final SAME-HOST product path (leading slash stripped, trailing slash kept). Falls back to
+    the Store-API path — with an explanatory note — on: a 403 (Cloudflare) or any other error;
+    a redirect to a consent/interstitial gate (it carries a redirect-back param, so the gate
+    returns to the original URL); or a redirect to a different host (a separate problem). note
+    is None when the permalink already resolves cleanly (no change)."""
+    orig = _url_path(permalink)
+    if not permalink:
+        return (orig, None)
+    orig_host = urlparse(permalink).netloc.replace("www.", "")
+    try:
+        req = urllib.request.Request(permalink, headers={"User-Agent": UA, "Accept": "*/*"}, method="HEAD")
+        with urllib.request.urlopen(req, timeout=15) as r:
+            final = r.geturl()
+    except urllib.error.HTTPError as e:
+        return (orig, f"HTTP {e.code} on resolve — kept Store-API permalink")
+    except Exception as e:
+        return (orig, f"{type(e).__name__} on resolve — kept Store-API permalink")
+    fu = urlparse(final)
+    if any(k in parse_qs(fu.query) for k in _GATE_PARAMS):
+        return (orig, "consent/interstitial gate — kept original (gate returns to it)")
+    if fu.netloc.replace("www.", "") != orig_host:
+        return (orig, f"cross-host redirect {orig_host}->{fu.netloc} — kept original")
+    fpath = fu.path.lstrip("/")
+    if fpath and fpath != orig:
+        return (fpath, f"resolved {orig} -> {fpath}")
+    return (orig, None)
+
+
 # ---------------------------------------------------------------- WooCommerce
 
 def woo(domain, per_page=100, max_pages=12):
@@ -110,6 +151,20 @@ def woo(domain, per_page=100, max_pages=12):
             for vid, vf in ex.map(_fetch_var, vids):
                 vfmap[vid] = vf
 
+    # Resolve each product's permalink to its canonical path (one HEAD per product, threaded
+    # to bound wall-clock like the variation fetch). resmap[permalink] = (canonical_path, note).
+    perms = sorted({p.get('permalink') for p in products if p.get('permalink')})
+    resmap = {}
+    if perms:
+        with ThreadPoolExecutor(max_workers=12) as ex:
+            for pl, res in ex.map(lambda u: (u, _resolve_permalink(u)), perms):
+                resmap[pl] = res
+    notes = [(_url_path(pl), n) for pl, (_p, n) in resmap.items() if n]
+    if notes:
+        print(f"[resolve] {domain}: {len(notes)} permalink note(s) of {len(perms)} product(s):", file=sys.stderr)
+        for path, n in sorted(notes):
+            print(f"    {path}: {n}", file=sys.stderr)
+
     out = []
     for p in products:
         pr = p.get('prices', {})
@@ -137,16 +192,17 @@ def woo(domain, per_page=100, max_pages=12):
                         break
         # Names arrive HTML-entity-encoded (LA Peptides: "GLP &#8211; 3 (R)"). Unescape so
         # downstream matching (decoders, aliases) and rendered listedAs see clean text.
-        # `slug` is emitted as the permalink PATH (e.g. "product/glp-3/", "shop/vesugen-20mg/",
-        # or a root "humanin/") — NOT the bare handle — so one universal deep-link builder
-        # works across every vendor without a per-vendor base map (bases diverge: /product/,
-        # /shop/, root). Derived from the store's own permalink (already in the fetched list),
-        # so it can't drift and a new vendor needs no discovery. Per-PRODUCT: variations share
-        # the parent permalink, matching the grid's per-row model.
+        # `slug` is emitted as the CANONICAL permalink PATH (resolved above; e.g. "product/glp-3/",
+        # "shop/vesugen-20mg/", root "humanin/", or biocollex's redirect-resolved "ghk-cu-50mg/")
+        # — NOT the bare handle — so one universal deep-link builder works across every vendor
+        # without a per-vendor base map (bases diverge: /product/, /shop/, root). Per-PRODUCT:
+        # variations share the parent permalink, matching the grid's per-row model.
+        pl = p.get('permalink')
+        resolved = resmap.get(pl, (_url_path(pl), None))[0]
         out.append({'name': html.unescape(p['name']),
                     'price': _cents(pr, 'price'), 'regular': _cents(pr, 'regular_price'),
                     'in_stock': p.get('is_in_stock'), 'variations': variations,
-                    'slug': _url_path(p.get('permalink')) or p.get('slug'),
+                    'slug': resolved or p.get('slug'),
                     'description': html.unescape(p.get('description', '') + ' ' + p.get('short_description', ''))})
     return out
 

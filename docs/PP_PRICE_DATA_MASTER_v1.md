@@ -679,18 +679,18 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
-| GHK-Cu | 50mg | $25.00 | $0.50 | — | ✓ | product/ghk-cu/ |
-| MOTS-C | 10mg | $65.00 | $6.50 | — | ✓ | product/mots-c/ |
-| NAD+ | 500mg | $65.00 | $0.13 | — | ✓ | product/nad/ |
-| PT-141 | 10mg | $45.00 | $4.50 | — | ✓ | product/pt-141/ |
-| Retatrutide (listed as GLP-3 RT) | 10mg | $90.00 | $9.00 | — | ✓ | product/glp-3/ |
-| Retatrutide (listed as GLP-3 RT) | 20mg | $155.00 | $7.75 | — | ✓ | product/glp-3/ |
-| Retatrutide (listed as GLP-3 RT) | 30mg | $185.00 | $6.17 | — | ✓ | product/glp-3/ |
-| Selank | 10mg | $55.00 | $5.50 | — | ✓ | product/selank/ |
-| Semax | 10mg | $55.00 | $5.50 | — | ✓ | product/semax/ |
-| SS-31 | 10mg | $60.00 | $6.00 | — | ✓ | product/ss-31/ |
-| Tesamorelin | 10mg | $85.00 | $8.50 | — | ✓ | product/tesamorelin/ |
-| Tirzepatide (listed as GLP-2 TZ) | 25mg | $115.00 | $4.60 | — | ✓ | product/glp-2/ |
+| GHK-Cu | 50mg | $25.00 | $0.50 | — | ✓ | ghk-cu-50mg/ |
+| MOTS-C | 10mg | $65.00 | $6.50 | — | ✓ | mots-c-10mg/ |
+| NAD+ | 500mg | $65.00 | $0.13 | — | ✓ | nad-500mg/ |
+| PT-141 | 10mg | $45.00 | $4.50 | — | ✓ | pt-141-10mg/ |
+| Retatrutide (listed as GLP-3 RT) | 10mg | $90.00 | $9.00 | — | ✓ | glp3-bundle/ |
+| Retatrutide (listed as GLP-3 RT) | 20mg | $155.00 | $7.75 | — | ✓ | glp3-bundle/ |
+| Retatrutide (listed as GLP-3 RT) | 30mg | $185.00 | $6.17 | — | ✓ | glp3-bundle/ |
+| Selank | 10mg | $55.00 | $5.50 | — | ✓ | selank-10mg/ |
+| Semax | 10mg | $55.00 | $5.50 | — | ✓ | semax-10mg/ |
+| SS-31 | 10mg | $60.00 | $6.00 | — | ✓ | ss-31-10mg/ |
+| Tesamorelin | 10mg | $85.00 | $8.50 | — | ✓ | tesamorelin-10mg/ |
+| Tirzepatide (listed as GLP-2 TZ) | 25mg | $115.00 | $4.60 | — | ✓ | glp-2-25mg/ |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
