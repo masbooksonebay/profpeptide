@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { CopyCode } from "@/components/CopyCode";
 import Link from "next/link";
-import { CODES_VERIFIED_DATE } from "@/data/vendors";
+import { CODES_VERIFIED_DATE, vendors } from "@/data/vendors";
 import { RegionPill } from "@/components/RegionPill";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -27,6 +29,13 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function TreasureCoastPeptidesCouponPage() {
+  // woo vendor with path-form vendorSlug; makeShopUrlFor composes the deep link via the
+  // universal composer. ref-only affiliate URL → code entered at checkout.
+  const v = vendors["treasure-coast-peptides"];
+  const rows = vendorProductRows("treasure-coast-peptides");
+  const discountPct = vendorDiscountPct("treasure-coast-peptides");
+  const autoApply = codeAutoApplies("treasure-coast-peptides");
+  const shopUrl = makeShopUrlFor("treasure-coast-peptides");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -104,12 +113,28 @@ export default function TreasureCoastPeptidesCouponPage() {
           </p>
         </div>
 
-        <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
-          <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-          <CopyCode code="PROFPEPTIDE" size="large" />
-          <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">15% off your entire order</p>
-          <a href="https://treasurecoastpeptides.com/?ref=MARKSHURTLIFF" target="_blank" rel="noopener noreferrer sponsored" className="btn-primary w-full text-center block">
-            Shop Treasure Coast Peptides</a>
+        {/* Catalog — code card, then the product grid (one row per compound+size). */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Treasure Coast catalog &amp; prices</h2>
+
+          <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b] mb-6">
+            <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
+            <CopyCode code={v.code} size="large" />
+            <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">{discountPct}% off your entire order</p>
+            <a href={v.url} target="_blank" rel="noopener noreferrer sponsored" className="btn-primary w-full text-center block">
+              Shop Treasure Coast Peptides</a>
+          </div>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are Treasure Coast&apos;s list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
+          </p>
         </div>
 
         <div>

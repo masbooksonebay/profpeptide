@@ -180,6 +180,13 @@ VENDORS = {
               "are VERIFIED; MA-2TZ/MA-1S stay coded (no CAS/formula/MW/name on their pages). Singles only per "
               "Locked Rule 4 — MA's blends (Cartalax Blend, GHK-Cu/KPV, Glow, KLOW, 4x, MOTS-C/5-Amino) route to the "
               "blend track; SARMs/nootropics/supplements/topicals/insurance drop via the scope filter."),
+    # ---- batch 4 ----
+    "treasure-coast-peptides": dict(name="Treasure Coast", domain="treasurecoastpeptides.com", adapter="woo",
+        variation_model="dosage", coded_decoder=False,
+        sale_posture="Check product-level sale_price each refresh; PP code stacks.",
+        notes="Onboarded 2026-07. WooCommerce, Store API readable (47 products, 1 page); mg in NAME. "
+              "21+ age gate is a SOFT overlay — does not block the Store API. GLPs named plainly (no "
+              "coded SKUs). AHK-Cu/Research Solution filtered by scope."),
     # ---- CINC read-only (Cloudflare-blocked Store API; storefront JSON usable) ----
     "aero-peptides": dict(name="Aero Peptides", domain="aeropeptides.com", adapter="cinc",
         variation_model="dosage", coded_decoder=True,
@@ -195,6 +202,14 @@ BLOCKED = {
     "spartan-peptides": "PARTIAL — client-rendered React storefront (no /wp-json); ~10/30 captured, "
                         "remainder behind a 21+ age gate (a consent modal — not to be clicked). Prices are RANGES "
                         "(low=smallest size, high=bulk kit) — match sizes to each end before $/mg.",
+    "crush-research": "BLOCKED — Next.js storefront on a Supabase backend (xujzdgkdxmelqaldrdfb.supabase.co); "
+                      "not WooCommerce (the /wp-json 403 is Cloudflare, not woo). The `products` table is "
+                      "RLS-protected (public anon key -> permission denied), /shop is client-rendered, and the "
+                      "sitemap lists no product URLs — no existing adapter fits. The catalog endpoint isn't "
+                      "discoverable without enumerating their database, which we won't do. ONBOARDABLE if we get "
+                      "the exact anon-readable view/RPC from the site's own /shop network requests (browser "
+                      "Network tab -> supabase.co/rest/v1/<view>): then a small supabase adapter can query only "
+                      "that. Codes Retatrutide='Triple Agonist', Tirzepatide='Double Agonist' on product pages.",
 }
 
 

@@ -69,6 +69,7 @@ ALIAS = {
     'hgh frag': 'hgh-fragment-176-191', 'hgh fragment': 'hgh-fragment-176-191',  # vital-core
     'sermorlin': 'sermorelin',                             # oasis misspelling
     'igf1 lr3': 'igf-1-lr3', 'igf1lr3': 'igf-1-lr3',      # almighty/oasis (no separators)
+    'igf 1lr3': 'igf-1-lr3',                              # treasure-coast "IGF-1LR3" (no hyphen before LR3)
     'smax': 'semax', 'tesa': 'tesamorelin', 'mt2': 'melanotan-ii',  # ignite abbreviations
     'oxyt': 'oxytocin',                                    # royal abbreviation
     # 2026-07 onboarding near-misses (LA / Peptidology / NextGen):
