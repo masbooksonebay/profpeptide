@@ -15,6 +15,7 @@ export const PRICE_CATEGORY_OVERRIDES: Record<string, string> = {
   adipotide: "Metabolic & Weight Loss", mazdutide: "Metabolic & Weight Loss",
   survodutide: "Metabolic & Weight Loss", tesofensine: "Metabolic & Weight Loss",
   "slu-pp-332": "Metabolic & Weight Loss", "hgh-fragment-176-191": "Metabolic & Weight Loss",
+  orforglipron: "Metabolic & Weight Loss", "slu-pp-915": "Metabolic & Weight Loss",
   // Recovery & Tissue Repair
   cibinetide: "Recovery & Tissue Repair",
   // Performance & Energy

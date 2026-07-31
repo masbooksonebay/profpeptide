@@ -86,19 +86,23 @@ def _url_path(u):
 _GATE_PARAMS = {"redirect_to", "return", "return_to", "return_url", "redirect", "next"}
 
 
-def _resolve_permalink(permalink):
+def _resolve_permalink(permalink, cookie=None):
     """(canonical_path, note). HEAD-follows redirects on a product permalink and returns the
     final SAME-HOST product path (leading slash stripped, trailing slash kept). Falls back to
     the Store-API path — with an explanatory note — on: a 403 (Cloudflare) or any other error;
     a redirect to a consent/interstitial gate (it carries a redirect-back param, so the gate
     returns to the original URL); or a redirect to a different host (a separate problem). note
-    is None when the permalink already resolves cleanly (no change)."""
+    is None when the permalink already resolves cleanly (no change). `cookie` is sent so a
+    login-gated storefront (Modern Aminos) resolves to the real product page, not a login gate."""
     orig = _url_path(permalink)
     if not permalink:
         return (orig, None)
     orig_host = urlparse(permalink).netloc.replace("www.", "")
+    hdrs = {"User-Agent": UA, "Accept": "*/*"}
+    if cookie:
+        hdrs["Cookie"] = cookie
     try:
-        req = urllib.request.Request(permalink, headers={"User-Agent": UA, "Accept": "*/*"}, method="HEAD")
+        req = urllib.request.Request(permalink, headers=hdrs, method="HEAD")
         with urllib.request.urlopen(req, timeout=15) as r:
             final = r.geturl()
     except urllib.error.HTTPError as e:
@@ -118,14 +122,18 @@ def _resolve_permalink(permalink):
 
 # ---------------------------------------------------------------- WooCommerce
 
-def woo(domain, per_page=100, max_pages=12):
+def woo(domain, per_page=100, max_pages=12, cookie=None):
     # max_pages is a ceiling, not a target: the loop breaks as soon as a page returns
     # < per_page items, so small catalogs still stop early. Raised from 3 (a hard 300-item
     # cap that silently truncated behemoth-labz and purerawz, both of which fill 3 pages).
+    # `cookie` carries a login session for gated catalogs (Modern Aminos: the Store API is
+    # only reachable authenticated). Same http_get Cookie-header mechanism as amino-club's
+    # consent flag — but the value is a real credential, so it's read from a gitignored file
+    # at pull time (see refresh.py), never stored in the registry.
     base = f"https://{domain}/wp-json/wc/store/v1"
     products = []
     for pg in range(1, max_pages + 1):
-        txt = http_get(f"{base}/products?per_page={per_page}&page={pg}")
+        txt = http_get(f"{base}/products?per_page={per_page}&page={pg}", cookie=cookie)
         page = json.loads(txt)
         if not isinstance(page, list) or not page:
             break
@@ -140,7 +148,7 @@ def woo(domain, per_page=100, max_pages=12):
     # to the serial path (same URLs, same per-request timeout/retries).
     def _fetch_var(vid):
         try:
-            return vid, json.loads(http_get(f"{base}/products/{vid}"))
+            return vid, json.loads(http_get(f"{base}/products/{vid}", cookie=cookie))
         except Exception:
             return vid, None
 
@@ -157,7 +165,7 @@ def woo(domain, per_page=100, max_pages=12):
     resmap = {}
     if perms:
         with ThreadPoolExecutor(max_workers=12) as ex:
-            for pl, res in ex.map(lambda u: (u, _resolve_permalink(u)), perms):
+            for pl, res in ex.map(lambda u: (u, _resolve_permalink(u, cookie=cookie)), perms):
                 resmap[pl] = res
     notes = [(_url_path(pl), n) for pl, (_p, n) in resmap.items() if n]
     if notes:

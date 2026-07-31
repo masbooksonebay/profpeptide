@@ -53,11 +53,14 @@ DISPLAY = {
     'adamax': 'Adamax', 'adipotide': 'Adipotide', 'pda': 'PDA', 'snap-8': 'SNAP-8',
     'foxo4-dri': 'FOXO4-DRI', 'klotho': 'Klotho', 'humanin': 'Humanin', 'mazdutide': 'Mazdutide',
     'survodutide': 'Survodutide', 'tesofensine': 'Tesofensine', 'dihexa': 'Dihexa',
-    'thymalin': 'Thymalin', 'slu-pp-332': 'SLU-PP-332', 'hgh-fragment-176-191': 'HGH Fragment 176-191',
+    'orforglipron': 'Orforglipron',
+    'thymalin': 'Thymalin', 'slu-pp-332': 'SLU-PP-332', 'slu-pp-915': 'SLU-PP-915',
+    'hgh-fragment-176-191': 'HGH Fragment 176-191',
     'cell-factors': 'Cell Factors', 'slimassist': 'SlimAssist', 'pnc-27': 'PNC-27',
     'bronchogen': 'Bronchogen', 'cartalax': 'Cartalax', 'chonluten': 'Chonluten', 'livagen': 'Livagen',
     'ovagen': 'Ovagen', 'pancragen': 'Pancragen', 'prostamax': 'Prostamax', 'testagen': 'Testagen',
     'vesilute': 'Vesilute', 'vesugen': 'Vesugen', 'vilon': 'Vilon', 'thymulin': 'Thymulin',
+    'petrelintide': 'Petrelintide',
 }
 
 
@@ -78,12 +81,14 @@ BLEND_COMPONENTS = {
     'cjc-1295-dac-ipamorelin': 'CJC-1295/Ipamorelin',
     'tesamorelin-ipamorelin': 'Tesamorelin/Ipamorelin',
     'nad-mots-c-5-amino-1mq': 'NAD+/MOTS-C/5-Amino-1MQ',
+    'ghk-cu-kpv': 'GHK-Cu/KPV',
 }
 BLEND_DISPLAY = {
     'glow': 'GLOW', 'klow': 'KLOW', 'wolverine-stack': 'Wolverine (BPC-157/TB-500)',
     'cjc-1295-dac-ipamorelin': 'CJC-1295/Ipamorelin',
     'tesamorelin-ipamorelin': 'Tesamorelin/Ipamorelin',
     'nad-mots-c-5-amino-1mq': 'NAD+/MOTS-C/5-Amino-1MQ',
+    'ghk-cu-kpv': 'GHK-Cu/KPV',
 }
 
 
@@ -102,6 +107,8 @@ def blend_of(name):
         slug = 'klow'
     elif has('ghk') and has('bpc') and tb:
         slug = 'glow'
+    elif has('ghk') and has('kpv'):          # 2-component GHK-Cu/KPV (after KLOW, which also has both)
+        slug = 'ghk-cu-kpv'
     elif ('cjc' in n) and ('ipa' in n or 'ipamorelin' in n):
         slug = 'cjc-1295-dac-ipamorelin'
     elif ('tesa' in n) and ('ipa' in n or 'ipamorelin' in n):
@@ -131,7 +138,8 @@ _SUPPLY = re.compile(
     r'syringe|needle|alcohol\s*(pad|swab|prep)|cold\s*pack|shipping|overnight|'
     r'peptide\s*case|gift\s*card|sample\s*pack|test\s*kit|glassware|\bmg\s*scale\b',
     re.I)
-_ORAL = re.compile(r'\bcapsule|\btablet|sublingual|troche|lozenge|\boral\b', re.I)
+_ORAL = re.compile(r'\bcapsule|\btablet|sublingual|troche|lozenge|\boral\b|'
+                   r'dissolving|\bstrips?\b|\bmelts?\b', re.I)
 _OUT_OF_SCOPE = re.compile(
     r'ligandrol|lgd-?4033|ostarine|mk-?2866|rad-?140|gw-?501516|cardarine|s-?23|s-?4|'
     r'yk-?11|sr-?9009|andarine|\bsarm\b|'

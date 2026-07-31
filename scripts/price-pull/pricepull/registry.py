@@ -162,6 +162,24 @@ VENDORS = {
     "midwest-peptide": dict(name="Midwest Peptide", domain="midwestpeptide.com", adapter="nextjs",
         variation_model="dosage", coded_decoder=True, sale_posture="No cart auto-coupon; anchors compare_at — base = current price.",
         notes="Two shapes: JSON-LD Offer (single) + RSC variants[] (multi-size). GLP-3 RT/GLP-2 TZ verified by SPEC. DSIP/KPV/PT-141/GLP-2 TZ have no size in structured data."),
+    # ---- session-auth (login-gated Store API) ----
+    "modern-aminos": dict(name="Modern Aminos", domain="modernaminos.com", adapter="woo",
+        session_auth=True, variation_model="dosage", coded_decoder=True,
+        sale_posture="Product-level markdown: the 20% GLP-1/Amylin discount populates "
+                     "on_sale/sale_price/regular_price in the Store API (visible without a code), so per "
+                     "PP_PRICES v2 Locked Rule 1 that IS the price and regular_price is the struck list. "
+                     "⚠️ The banner also advertises 40% off GW-501516/MK-2866, but those show on_sale=false "
+                     "with no markdown in the data — the banner overstates; both are SARMs and out of scope anyway.",
+        notes="LOGIN-GATED — the Store API is only reachable with a WordPress session cookie "
+              "(session_auth=True; the cookie is read from the gitignored scripts/price-pull/.session-cookie, "
+              "NEVER the registry — it's a live credential, ~14-day expiry, protected by the >50% row-drop floor). "
+              "153 products across 2 pages; canonical /product/<slug>/ URLs with no redirect. Slugs often differ "
+              "from names (BPC-157/PDA at /product/pentadecapeptide/, NAD+ at /product/nad-20ml/). Coded SKUs: "
+              "MA-1P=Petrelintide (ZP8396; CAS 2766385-23-1, C185H305N49O61, MW 4191.69 — stated on the page) and "
+              "MA-3RT=Retatrutide (their /product/retatrutide/ redirects to the MA-3RT page; image 'GLP/GIP/GLUCAGON') "
+              "are VERIFIED; MA-2TZ/MA-1S stay coded (no CAS/formula/MW/name on their pages). Singles only per "
+              "Locked Rule 4 — MA's blends (Cartalax Blend, GHK-Cu/KPV, Glow, KLOW, 4x, MOTS-C/5-Amino) route to the "
+              "blend track; SARMs/nootropics/supplements/topicals/insurance drop via the scope filter."),
     # ---- CINC read-only (Cloudflare-blocked Store API; storefront JSON usable) ----
     "aero-peptides": dict(name="Aero Peptides", domain="aeropeptides.com", adapter="cinc",
         variation_model="dosage", coded_decoder=True,

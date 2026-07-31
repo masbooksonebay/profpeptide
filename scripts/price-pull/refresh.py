@@ -25,6 +25,34 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from pricepull import adapters, build, registry, detect  # noqa: E402
 
+SESSION_COOKIE_FILE = Path(__file__).resolve().parent / ".session-cookie"
+
+
+def load_session_cookie():
+    """Login session cookie for gated vendors, read from a GITIGNORED file (never the
+    registry — it's a live credential). One line: 'name=value; name=value'. None if absent."""
+    if SESSION_COOKIE_FILE.exists():
+        return SESSION_COOKIE_FILE.read_text().strip() or None
+    return None
+
+
+def existing_singles_count(doc_text, name):
+    """Rows currently in a vendor's '### Single compounds' table — the baseline for the
+    row-drop floor. 0 when the vendor isn't in the doc yet (first onboard → floor inert)."""
+    marker = f"## VENDOR: {name}"
+    start = doc_text.find(marker)
+    if start == -1:
+        return 0
+    seg = doc_text[start:]
+    end = re.search(r"\n## (VENDOR:|⛔)", seg[len(marker):])
+    if end:
+        seg = seg[:len(marker) + end.start()]
+    sm = re.search(r"### Single compounds\n(.*?)(?:\n### |\Z)", seg, re.S)
+    if not sm:
+        return 0
+    return sum(1 for ln in sm.group(1).splitlines()
+               if ln.startswith("| ") and not ln.startswith("| ---") and "| Compound " not in ln)
+
 
 def pulled_date():
     d = datetime.date.today()
@@ -45,6 +73,14 @@ def build_vendor(slug, cfg, meta):
             opts["discover"] = cfg["discover"]
         if cfg.get("cookie"):
             opts["cookie"] = cfg["cookie"]
+    # Login-gated vendors (Modern Aminos): read the session cookie from the gitignored file
+    # and pass it through (woo now forwards a Cookie header). Fail loud if it's missing.
+    if cfg.get("session_auth"):
+        cookie = load_session_cookie()
+        if not cookie:
+            raise RuntimeError(f"session_auth vendor but no cookie in {SESSION_COOKIE_FILE.name} "
+                               "— supply the WordPress login session cookie")
+        opts["cookie"] = cookie
     products = adapters.fetch(cfg["adapter"], cfg["domain"], **opts)
     m = {"name": cfg["name"], "code": meta.get("code") or "?", "discount": meta.get("discount") or "?",
          "url": re.sub(r"^https?://", "", meta.get("url") or cfg["domain"]).split("/")[0],
@@ -115,10 +151,21 @@ def main():
         except Exception as e:
             print(f"[err ] {slug}: {type(e).__name__}: {e}"); continue
         print(f"[ok  ] {slug}: {counts['singles']} singles, {counts['blends']} blends, {counts['sprays']} sprays")
+        # Row-drop floor: a re-pull returning <50% of the singles already on file is almost
+        # certainly an auth failure (expired session cookie) or an accidental delisting, not a
+        # real catalog change — refuse to overwrite good data with it. Inert on first onboard.
+        old = existing_singles_count(text, cfg["name"])
+        floor_hit = old > 0 and counts["singles"] < old * 0.5
+        if floor_hit:
+            print(f"[FLOOR] {slug}: {counts['singles']} singles < 50% of existing {old} — "
+                  f"expired session cookie or delisting? Will NOT overwrite on --write.")
         if args.dry_run:
             print("\n" + section)
         if args.write:
-            text = replace_section(text, slug, cfg["name"], section)
+            if floor_hit:
+                print(f"[skip-write] {slug}: row-drop floor tripped — kept existing section")
+            else:
+                text = replace_section(text, slug, cfg["name"], section)
     if args.write and text:
         doc.write_text(text)
         print(f"\nwrote {doc}")

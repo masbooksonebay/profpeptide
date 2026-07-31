@@ -37,7 +37,6 @@ const registryPath = join(root, "scripts/price-pull/pricepull/registry.py");
 // Kept in lockstep with reality by the stale-entry check at the end.
 const KNOWN_ZERO_ROW = new Set([
   "crush-research",           // not yet in the price-pull registry
-  "modern-aminos",            // not yet onboarded (price ranges + sitewide sale to resolve)
   "treasure-coast-peptides",  // not yet in the price-pull registry
   "integrative-peptides",     // in registry (woo) but scope filter yields 0 peptide rows
 ]);

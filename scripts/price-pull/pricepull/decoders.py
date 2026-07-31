@@ -34,7 +34,8 @@ thymosin-alpha-1 tirzepatide tirzepatide-bpc-157 vip wolverine-stack
 
 BACKLOG = set("""mazdutide survodutide tesofensine slu-pp-332 snap-8 hgh-fragment-176-191
 foxo4-dri humanin thymalin dihexa bronchogen cartalax chonluten livagen ovagen pancragen
-prostamax testagen vesilute vesugen vilon thymulin klotho pnc-27 cell-factors slimassist""".split())
+prostamax testagen vesilute vesugen vilon thymulin klotho pnc-27 cell-factors slimassist
+petrelintide slu-pp-915 orforglipron""".split())
 
 # alias substring -> canonical slug
 ALIAS = {
@@ -59,6 +60,7 @@ ALIAS = {
     'glutathione': 'glutathione', 'glow': 'glow', 'klow': 'klow', 'snap 8': 'snap-8',
     'foxo4 dri': 'foxo4-dri', 'humanin': 'humanin', 'dihexa': 'dihexa', 'mazdutide': 'mazdutide',
     'survodutide': 'survodutide', 'tesofensine': 'tesofensine', 'slu pp 332': 'slu-pp-332',
+    'orforglipron': 'orforglipron', 'orforgliperon': 'orforglipron',  # MA misspells it "Orforgliperon"
     'thymalin': 'thymalin', 'retatrutide': 'retatrutide', 'tirzepatide': 'tirzepatide',
     'semaglutide': 'semaglutide',
     # alias near-misses (vendor spelling/abbreviation variants that missed the slug):
@@ -148,6 +150,17 @@ def _ascension(n):
 # GIP/GLP-1/glucagon" (uniquely Retatrutide) + CAS 2381089-83-2 (same LY3437943 as synthesis GLP-3R).
 def _amino_club(n):
     if re.match(r'GLP-3 ?\(RT\)', n, re.I): return (_c('Retatrutide', 'GLP-3 (RT)'), 'retatrutide', 'single')
+
+
+@_decoder('modern-aminos')  # MA-1P/MA-3RT VERIFIED; MA-2TZ/MA-1S UNVERIFIED (no CAS/formula/MW/name on page)
+# MA-1P = Petrelintide (ZP8396; product page states CAS 2766385-23-1 / C185H305N49O61 / MW 4191.69).
+# MA-3RT = Retatrutide (their /product/retatrutide/ redirects to the MA-3RT page; image 'GLP/GIP/GLUCAGON').
+def _modern_aminos(n):
+    if re.search(r'MA-?1P\b', n, re.I): return (_c('Petrelintide', 'MA-1P'), 'petrelintide', 'single_bk')
+    if re.search(r'MA-?3RT.*cagri', n, re.I): return ('Retatrutide/Cagrilintide blend [backlog]', None, 'blend_bk')  # combo, not a single
+    if re.search(r'MA-?3RT\b', n, re.I): return (_c('Retatrutide', 'MA-3RT'), 'retatrutide', 'single')
+    if re.search(r'MA-?2TZ\b', n, re.I): return ('MA-2TZ [coded, UNVERIFIED]', None, 'single_bk')
+    if re.search(r'MA-?1S\b', n, re.I): return ('MA-1S [coded, UNVERIFIED]', None, 'single_bk')
 
 
 @_decoder('ez-peptides')  # verified: Janoshik identity COAs, batch EZP-1P/2P/3P; EZP-CG desc 'Cagrilintide'

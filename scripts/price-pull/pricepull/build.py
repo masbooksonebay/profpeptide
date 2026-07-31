@@ -80,6 +80,10 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
         elif rowkind == 'spray':
             yield ('spray', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale, vslug)
         else:
+            # PP_PRICES Rule 4: a single with no parseable mg can't be priced $/mg — exclude it
+            # here (to_prices drops it anyway) so the section never shows a misleading no-size row.
+            if N.mg_value(size_label) is None:
+                yield ('exclude', 'no parseable size (Rule 4)'); continue
             yield ('single', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale, vslug)
 
 

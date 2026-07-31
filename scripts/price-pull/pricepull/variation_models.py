@@ -93,6 +93,16 @@ def extract_rows(product, ten_vial_kit=False):
         # "...Kit" priced as a 10-vial kit, but ONLY for the ten-vial-kit vendor AND only
         # when name/description proves 10 vials (Pinealon "(10 Vials)", Dihexa "10 Vial Kit").
         size = parse_size(name)
+        if not size:
+            # Dose not in the name: for a simple product, fall back to a SINGLE unambiguous mg
+            # stated in the description (Modern Aminos lists Petrelintide as "10mg" and Thymogen
+            # "20MG" only in the body). ONLY when the description names exactly one distinct dose —
+            # never infer (PP_PRICES Rule 4: a genuinely no-size row stays no-size and is excluded).
+            vals = set()
+            for num, unit in re.findall(r'(\d+(?:\.\d+)?)\s*(mcg|mg)\b', product.get('description') or '', re.I):
+                vals.add(float(num) / 1000 if unit.lower() == 'mcg' else float(num))
+            if len(vals) == 1:
+                size = f'{next(iter(vals)):g}mg'
         if ten_vial_kit and size and pprice is not None and \
                 _TEN_VIAL.search(name + ' ' + (product.get('description') or '')):
             return [(size, round(pprice / 10, 2),
