@@ -4,6 +4,9 @@ import { useState } from "react";
 import { CopyCode } from "@/components/CopyCode";
 import Link from "next/link";
 import { RegionPill } from "@/components/RegionPill";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
+import { vendors } from "@/data/vendors";
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -26,6 +29,14 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function BiolongevityLabsCouponPage() {
+  // Cross-host affiliate (go.biolongevitylabs.com redirect), so the composer can't deep-link —
+  // makeShopUrlFor correctly falls back to the vendor's affiliate URL for every row. ref-only
+  // (no coupon param) → code entered at checkout.
+  const v = vendors["biolongevity-labs"];
+  const rows = vendorProductRows("biolongevity-labs");
+  const discountPct = vendorDiscountPct("biolongevity-labs");
+  const autoApply = codeAutoApplies("biolongevity-labs");
+  const shopUrl = makeShopUrlFor("biolongevity-labs");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -112,17 +123,28 @@ export default function BiolongevityLabsCouponPage() {
           </p>
         </div>
 
-        <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
-          <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-          <CopyCode code="PROFPEPTIDE" size="large" />
-          <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">15% off your entire order</p>
-          <a
-            href="https://go.biolongevitylabs.com/aff_c?offer_id=1&aff_id=2702"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary w-full text-center block"
-          >
-            Shop Biolongevity Labs</a>
+        {/* Catalog — code card, then the product grid (one row per compound+size). */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Biolongevity Labs catalog &amp; prices</h2>
+
+          <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b] mb-6">
+            <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
+            <CopyCode code={v.code} size="large" />
+            <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">{discountPct}% off your entire order</p>
+            <a href={v.url} target="_blank" rel="noopener noreferrer sponsored" className="btn-primary w-full text-center block">
+              Shop Biolongevity Labs</a>
+          </div>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are Biolongevity Labs&apos; list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
+          </p>
         </div>
 
 

@@ -5,6 +5,8 @@ import { CopyCode } from "@/components/CopyCode";
 import Link from "next/link";
 import { vendors } from "@/data/vendors";
 import { RegionPill } from "@/components/RegionPill";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 
 const v = vendors["aero-peptides"];
 
@@ -29,6 +31,12 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function AeroPeptidesCouponPage() {
+  // CINC vendor with no captured product slug, so makeShopUrlFor falls back to the vendor's
+  // affiliate URL for every row. ref-only (no coupon param) → code entered at checkout.
+  const rows = vendorProductRows("aero-peptides");
+  const discountPct = vendorDiscountPct("aero-peptides");
+  const autoApply = codeAutoApplies("aero-peptides");
+  const shopUrl = makeShopUrlFor("aero-peptides");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -109,18 +117,29 @@ export default function AeroPeptidesCouponPage() {
           </p>
         </div>
 
-        <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
-          <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-          <CopyCode code={v.code} size="large" />
-          <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-1">15% off your entire order</p>
-          <p className="text-center text-xs text-gray-500 dark:text-slate-400 mb-4">Free domestic shipping over $150 &middot; 15-day cookie</p>
-          <a
-            href={v.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary w-full text-center block"
-          >
-            Shop Aero Peptides</a>
+        {/* Catalog — code card, then the product grid (one row per compound+size). */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Aero Peptides catalog &amp; prices</h2>
+
+          <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b] mb-6">
+            <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
+            <CopyCode code={v.code} size="large" />
+            <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-1">{discountPct}% off your entire order</p>
+            <p className="text-center text-xs text-gray-500 dark:text-slate-400 mb-4">Free domestic shipping over $150 &middot; 15-day cookie</p>
+            <a href={v.url} target="_blank" rel="noopener noreferrer sponsored" className="btn-primary w-full text-center block">
+              Shop Aero Peptides</a>
+          </div>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are Aero Peptides&apos; list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
+          </p>
         </div>
 
         <div>
