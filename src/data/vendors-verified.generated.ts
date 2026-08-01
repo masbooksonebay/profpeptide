@@ -7,10 +7,10 @@
 // own affiliate dashboard), so "verified and working" is what we can honestly claim.
 
 /** ISO date of the last check:vendors run that cleared the floor. */
-export const VENDORS_VERIFIED_ISO = "2026-07-15";
+export const VENDORS_VERIFIED_ISO = "2026-08-01";
 
 /** Human-readable form of {@link VENDORS_VERIFIED_ISO} for SERP-facing copy. */
-export const VENDORS_VERIFIED_DATE = "July 15, 2026";
+export const VENDORS_VERIFIED_DATE = "August 1, 2026";
 
 /** Vendor slugs actually verified (reachable, not DEAD) in that run. A coupon page must
  *  render its "verified" date ONLY if its slug is in this set — a vendor excluded from
