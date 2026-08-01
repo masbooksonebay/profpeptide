@@ -79,6 +79,11 @@ def build_vendor(slug, cfg, meta):
         for k in ("feed_path", "array_key", "product_base"):
             if cfg.get(k):
                 opts[k] = cfg[k]
+    elif cfg["adapter"] == "gatsby_pagedata":
+        # Gatsby page-data catalog (Spartan): pass the listing page-data path + product-URL base.
+        for k in ("page_path", "product_base"):
+            if cfg.get(k):
+                opts[k] = cfg[k]
     # Login-gated vendors (Modern Aminos): read the session cookie from the gitignored file
     # and pass it through (woo now forwards a Cookie header). Fail loud if it's missing.
     if cfg.get("session_auth"):

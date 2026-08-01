@@ -331,6 +331,15 @@ def _crush(n):
     if re.match(r'Triple Agonist', n, re.I): return (_c('Retatrutide', 'Triple Agonist'), 'retatrutide', 'single')
 
 
+@_decoder('spartan-peptides')  # self-identifying: the compound is named in-title as GLP-N(Compound).
+# Same GLP-1/2/3 = Sema/Tirz/Reta numbering already confirmed across alpha/amino-x/ez/ignite from
+# their own sources; Spartan states it in the product title itself.
+def _spartan(n):
+    if re.match(r'GLP-1\s*\(\s*Sema', n, re.I): return (_c('Semaglutide', 'GLP-1(Sema)'), 'semaglutide', 'single')
+    if re.match(r'GLP-2\s*\(\s*Tirz', n, re.I): return (_c('Tirzepatide', 'GLP-2(Tirz)'), 'tirzepatide', 'single')
+    if re.match(r'GLP-3\s*\(\s*Reta', n, re.I): return (_c('Retatrutide', 'GLP-3(Reta)'), 'retatrutide', 'single')
+
+
 def decode(vendor, name):
     fn = DECODERS.get(vendor)
     return fn(name.strip()) if fn else None

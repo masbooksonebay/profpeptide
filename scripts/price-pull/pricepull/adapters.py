@@ -436,7 +436,111 @@ def nextjs_feed(domain, feed_path="/shop", array_key="initialProducts", product_
     return out
 
 
-ADAPTERS = {'woo': woo, 'purity_api': purity_api, 'nextjs': nextjs, 'nextjs_feed': nextjs_feed}
+# --------------------------------------------------- Gatsby page-data catalog
+
+def _num(x):
+    """float from a JSON value that may be a numeric string ('199', '636.80') or an empty
+    string (Spartan leaves regular_price '' when not on sale) -> None."""
+    try:
+        return float(x)
+    except (TypeError, ValueError):
+        return None
+
+
+def gatsby_pagedata(domain, page_path="/page-data/all-peptides/page-data.json", product_base="products"):
+    """Gatsby storefronts that render a listing page whose page-data JSON carries the WHOLE
+    catalog with per-variant prices (Spartan Peptides: /page-data/all-peptides/page-data.json,
+    27 products). One GET of a public static asset — no per-product fetch, no login, no DB. A
+    client-side 21+ overlay does not gate the JSON.
+
+    Each top-level product (a dict with `slug` + `product_variations[]`) yields one row per
+    SINGLE-VIAL variation. Variations are named "<size>, <vials>" (e.g. "10mg, 1"); size + vial
+    count are read from that structured pair. Only vials=1 is a single — 2/4-vial entries are
+    bulk kits and are DROPPED (count logged to stderr). Quirk: a size-group with no explicit
+    vial count (Spartan's MOTS-c lists three "10mg" variants at the 1/2/4-vial price ladder) —
+    the lowest total price is the single vial; the rest are dropped as kits. `price`/`regular_price`
+    map to current/list (on-sale when regular>price); `stock_status` is per-variant. slug ->
+    "<product_base>/<slug>/" so the shared deep-link builder composes the affiliate product URL.
+
+    The product NAME is taken as the part BEFORE the first "|" — Spartan titles are
+    "<Compound> <size> | <marketing subtitle>", and the subtitle would mis-trigger the compound
+    matcher (e.g. "AOD-9604 | HGH Fragment ..." would match hgh-fragment). Coded/blend identity
+    lives in that clean prefix (GLP-2(Tirz), CJC-1295 / Ipamorelin Blend, Wolverine Stack).
+
+    FAILS LOUD: Gatsby page-data paths can change on a rebuild. If the path 404s, the body isn't
+    JSON, or no product (slug + product_variations[]) is found, this raises rather than returning
+    [] (which would read as a clean empty catalog)."""
+    try:
+        raw = http_get(f"https://{domain}{page_path}")
+        data = json.loads(raw)
+    except Blocked:
+        raise
+    except Exception as e:
+        raise RuntimeError(f"gatsby_pagedata: https://{domain}{page_path} did not return usable JSON "
+                           f"({type(e).__name__}: {e}) — page-data path may have changed on rebuild")
+
+    products = {}
+    def walk(o):
+        if isinstance(o, dict):
+            if o.get('slug') and isinstance(o.get('product_variations'), list):
+                products.setdefault(o['slug'], o)
+            for val in o.values():
+                walk(val)
+        elif isinstance(o, list):
+            for val in o:
+                walk(val)
+    walk(data)
+    if not products:
+        raise RuntimeError(f"gatsby_pagedata: no products (slug + product_variations[]) in "
+                           f"https://{domain}{page_path} — expected keys missing (Gatsby rebuild changed the shape?)")
+
+    dropped_kits = 0
+    out = []
+    for slug, p in products.items():
+        name = html.unescape(p.get('name') or slug).split('|')[0].strip()
+        # parse each variation: size (first mg/mcg token) + trailing ", <vials>" count
+        parsed = []
+        for v in p.get('product_variations', []):
+            vn = html.unescape(v.get('name') or '')
+            ms = re.search(r'(\d+(?:\.\d+)?)\s*(mg|mcg)', vn, re.I)
+            mv = re.search(r',\s*(\d+)\s*$', vn)          # "10mg, 4" -> vials 4; "10mg" -> None
+            parsed.append({'size': (ms.group(1) + ms.group(2).lower()) if ms else None,
+                           'vials': int(mv.group(1)) if mv else None,
+                           'price': _num(v.get('price')), 'regular': _num(v.get('regular_price')),
+                           'in_stock': v.get('stock_status') == 'instock'})
+        # keep single-vial only, per (product,size) group; drop multi-vial kits (count them)
+        kept = []
+        by_size = {}
+        for c in parsed:
+            by_size.setdefault(c['size'], []).append(c)
+        for _size, cs in by_size.items():
+            singles = [c for c in cs if c['vials'] == 1]
+            if singles:
+                kept += singles + [c for c in cs if c['vials'] is None]   # keep explicit 1-vial (+ any countless)
+                dropped_kits += sum(1 for c in cs if c['vials'] not in (None, 1))
+            else:
+                # no explicit single in this size-group (MOTS-c) -> cheapest total = the single vial
+                priced = [c for c in cs if c['price'] is not None]
+                if priced:
+                    lo = min(priced, key=lambda c: c['price'])
+                    kept.append(lo)
+                    dropped_kits += len(priced) - 1
+                else:
+                    kept += cs
+        variations = [{'attrs': [('Size', c['size'] or '')], 'price': c['price'],
+                       'regular': c['regular'], 'in_stock': c['in_stock']} for c in kept]
+        out.append({'name': name,
+                    'price': variations[0]['price'] if variations else _num(p.get('price')),
+                    'regular': variations[0]['regular'] if variations else _num(p.get('regular_price')),
+                    'in_stock': p.get('stock_status') == 'instock',
+                    'variations': variations, 'description': '',
+                    'slug': f"{product_base}/{slug}/"})
+    print(f"[gatsby] {domain}: {len(out)} products, dropped {dropped_kits} multi-vial kit variation(s)", file=sys.stderr)
+    return out
+
+
+ADAPTERS = {'woo': woo, 'purity_api': purity_api, 'nextjs': nextjs,
+            'nextjs_feed': nextjs_feed, 'gatsby_pagedata': gatsby_pagedata}
 
 
 def fetch(adapter, domain, **opts):

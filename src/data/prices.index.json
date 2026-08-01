@@ -16,12 +16,12 @@
   },
   {
     "slug": "aod-9604",
-    "vendors": 20,
+    "vendors": 21,
     "indexable": true
   },
   {
     "slug": "bpc-157",
-    "vendors": 28,
+    "vendors": 29,
     "indexable": true
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "slug": "epitalon",
-    "vendors": 22,
+    "vendors": 23,
     "indexable": true
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "slug": "ghk-cu",
-    "vendors": 26,
+    "vendors": 27,
     "indexable": true
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "slug": "kisspeptin",
-    "vendors": 18,
+    "vendors": 19,
     "indexable": true
   },
   {
@@ -186,12 +186,12 @@
   },
   {
     "slug": "mots-c",
-    "vendors": 29,
+    "vendors": 30,
     "indexable": true
   },
   {
     "slug": "nad-plus",
-    "vendors": 26,
+    "vendors": 27,
     "indexable": true
   },
   {
@@ -221,7 +221,7 @@
   },
   {
     "slug": "pinealon",
-    "vendors": 14,
+    "vendors": 15,
     "indexable": true
   },
   {
@@ -231,12 +231,12 @@
   },
   {
     "slug": "pt-141",
-    "vendors": 23,
+    "vendors": 24,
     "indexable": true
   },
   {
     "slug": "retatrutide",
-    "vendors": 24,
+    "vendors": 25,
     "indexable": true
   },
   {
@@ -246,12 +246,12 @@
   },
   {
     "slug": "semaglutide",
-    "vendors": 15,
+    "vendors": 16,
     "indexable": true
   },
   {
     "slug": "semax",
-    "vendors": 24,
+    "vendors": 25,
     "indexable": true
   },
   {
@@ -281,12 +281,12 @@
   },
   {
     "slug": "tb-500",
-    "vendors": 23,
+    "vendors": 24,
     "indexable": true
   },
   {
     "slug": "tesamorelin",
-    "vendors": 29,
+    "vendors": 30,
     "indexable": true
   },
   {
@@ -311,7 +311,7 @@
   },
   {
     "slug": "thymosin-alpha-1",
-    "vendors": 20,
+    "vendors": 21,
     "indexable": true
   },
   {
@@ -321,7 +321,7 @@
   },
   {
     "slug": "tirzepatide",
-    "vendors": 19,
+    "vendors": 20,
     "indexable": true
   },
   {

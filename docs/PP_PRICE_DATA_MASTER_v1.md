@@ -2496,4 +2496,44 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ---
 
+## VENDOR: Spartan Peptides
+- **slug:** spartan-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** spartanpeptides.com
+- **traffic:** (not pulled) | **pulled:** July 31 2026
+- **sale posture:** Per-variant regular_price is in the data (base = single-vial current price; on-sale when regular>price). Multi-vial (2/4) kits dropped. PP code applied at checkout (a_aid affiliate query param, not an automatic markdown). NOTE — MOTS-c is the one row in this pull classified by PATTERN not field: its three variants are all named '10mg' with no vial count, priced at the 1 / 1.8 / 3.2x ladder (= 1/2/4 vials), so the single vial was inferred as the lowest ($149); every other row's single-vial was read from an explicit ', 1' vial count.
+
+### Single compounds
+| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| AOD-9604 | 5mg | $99.00 | $19.80 | — | ✓ | products/aod-9604/ |
+| BPC-157 | 5mg | $119.00 | $23.80 | — | ✓ | products/bpc-157/ |
+| BPC-157 | 10mg | $199.00 | $19.90 | — | ✓ | products/bpc-157/ |
+| Epitalon | 25mg | $199.00 | $7.96 | — | ✓ | products/epithalon-20mg/ |
+| GHK-Cu | 50mg | $179.00 | $3.58 | — | ✓ | products/ghk-cu-copper-peptide-50mg/ |
+| Kisspeptin-10 | 10mg | $149.00 | $14.90 | — | ✓ | products/kisspeptin/ |
+| MOTS-C | 10mg | $149.00 | $14.90 | — | ✓ | products/mots-c/ |
+| NAD+ | 750mg | $279.00 | $0.37 | — | ✓ | products/nad/ |
+| Pinealon | 20mg | $159.00 | $7.95 | — | ✓ | products/pinealon/ |
+| PT-141 | 10mg | $139.00 | $13.90 | — | ✓ | products/pt-141/ |
+| Retatrutide (listed as GLP-3(Reta)) | 6mg | $180.00 | $30.00 | — | ✓ | products/glp-3reta/ |
+| Retatrutide (listed as GLP-3(Reta)) | 8mg | $205.00 | $25.62 | — | ✓ | products/glp-3reta/ |
+| Semaglutide (listed as GLP-1(Sema)) | 3mg | $179.00 | $59.67 | — | ✓ | products/glp-1sema/ |
+| Semaglutide (listed as GLP-1(Sema)) | 5mg | $225.00 | $45.00 | — | ✓ | products/glp-1sema/ |
+| Semax | 30mg | $159.00 | $5.30 | — | ✓ | products/semax/ |
+| TB-500 | 5mg | $169.00 | $33.80 | — | ✓ | products/tb-500/ |
+| TB-500 | 10mg | $335.00 | $33.50 | — | ✓ | products/tb-500/ |
+| Tesamorelin | 5mg | $159.00 | $31.80 | — | ✓ | products/tesamorelin-5-mg/ |
+| Thymosin Alpha-1 | 5mg | $99.00 | $19.80 | — | ✓ | products/thymosin-alpha/ |
+| Tirzepatide (listed as GLP-2(Tirz)) | 10mg | $250.00 | $25.00 | — | ✓ | products/glp-2tirz/ |
+
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock |
+| --- | --- | --- | --- | --- | --- |
+| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $199.00 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | — | $178.20 | not published | ✓ |
+
+### Sprays: none
+### Excluded: out-of-scope (SARMs/Rx/cosmetics) — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+
+---
+
 ## VENDOR: [next vendor — append here in same format]

@@ -205,6 +205,31 @@ VENDORS = {
               "TB-500, GHK-Cu/KPV, KLOW, CJC-1295/Ipamorelin) route to the blend track; Antimicrobial Dilution "
               "Solution filtered by scope. Flight shape is a frontend detail — adapter FAILS LOUD (raises) on a "
               "redeploy that changes it rather than returning an empty catalog; >50% row-drop floor also guards."),
+    # ---- Gatsby page-data catalog (whole catalog in one listing-page JSON) ----
+    "spartan-peptides": dict(name="Spartan Peptides", domain="spartanpeptides.com", adapter="gatsby_pagedata",
+        page_path="/page-data/all-peptides/page-data.json", product_base="products",
+        variation_model="vial-kit-axis", coded_decoder=True,
+        sale_posture="Per-variant regular_price is in the data (base = single-vial current price; on-sale when "
+                     "regular>price). Multi-vial (2/4) kits dropped. PP code applied at checkout (a_aid affiliate "
+                     "query param, not an automatic markdown). NOTE — MOTS-c is the one row in this pull classified "
+                     "by PATTERN not field: its three variants are all named '10mg' with no vial count, priced at the "
+                     "1 / 1.8 / 3.2x ladder (= 1/2/4 vials), so the single vial was inferred as the lowest ($149); "
+                     "every other row's single-vial was read from an explicit ', 1' vial count.",
+        notes="Onboarded 2026-07 (previously BLOCKED — the 'prices are RANGES' reason was a UI artifact: the ranges "
+              "are only the client-side variant selector; per-variant prices were PUBLIC all along). Gatsby storefront "
+              "(headless WordPress backend). The FULL 27-product catalog with per-variant price/regular_price/stock is "
+              "in ONE public static file, /page-data/all-peptides/page-data.json — adapter gatsby_pagedata reads it in "
+              "one GET (no per-product fetch, no DB access). The 21+ overlay is client-side only and does not gate the "
+              "JSON (like Treasure Coast). Each product_variations[] entry is named '<size>, <vials>'; only vials=1 is a "
+              "single, 2/4-vial entries are bulk kits (dropped — same class as MA packs / Crush bundles). MOTS-c is a "
+              "data quirk: three '10mg' variants with no vial count at the 1/1.8/3.2x (=1/2/4-vial) price ladder — the "
+              "lowest total is the single vial. Coded GLPs self-identify in-title: GLP-1(Sema)=Semaglutide, "
+              "GLP-2(Tirz)=Tirzepatide, GLP-3(Reta)=Retatrutide. Product NAME is taken before the first '|' (titles are "
+              "'<Compound> <size> | <marketing subtitle>'; the subtitle would mis-match, e.g. 'AOD-9604 | HGH Fragment'). "
+              "Named stacks (Wolverine, Skinny Fit, Energizer Bunny, Spartan Strong, etc.) have no variation axis and "
+              "route to the blend track / Rule-4 exclusion. Deep links at /products/<slug>/. Gatsby page-data paths can "
+              "change on rebuild — adapter FAILS LOUD (raises) on a 404 / non-JSON body / missing slug+product_variations "
+              "keys rather than returning an empty catalog."),
     # ---- CINC read-only (Cloudflare-blocked Store API; storefront JSON usable) ----
     "aero-peptides": dict(name="Aero Peptides", domain="aeropeptides.com", adapter="cinc",
         variation_model="dosage", coded_decoder=True,
@@ -217,9 +242,6 @@ VENDORS = {
 BLOCKED = {
     "limitless-biotech": "PERMANENTLY EXCLUDED — BigCommerce B2B store; all prices login-gated behind "
                          "'Professional Pricing', no public retail price. Cannot be pulled read-only.",
-    "spartan-peptides": "PARTIAL — client-rendered React storefront (no /wp-json); ~10/30 captured, "
-                        "remainder behind a 21+ age gate (a consent modal — not to be clicked). Prices are RANGES "
-                        "(low=smallest size, high=bulk kit) — match sizes to each end before $/mg.",
 }
 
 
