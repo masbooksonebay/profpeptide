@@ -6,7 +6,7 @@
 // tested at checkout (check-vendors cannot place an order).
 
 /** ISO date of the last clean check:vendors run (affiliate links reachable). */
-export const VENDORS_VERIFIED_ISO = "2026-07-28";
+export const VENDORS_VERIFIED_ISO = "2026-08-01";
 
 /** Human-readable form of {@link VENDORS_VERIFIED_ISO} for SERP-facing copy. */
-export const VENDORS_VERIFIED_DATE = "July 28, 2026";
+export const VENDORS_VERIFIED_DATE = "August 1, 2026";

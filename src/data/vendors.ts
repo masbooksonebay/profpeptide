@@ -343,4 +343,4 @@ export const activeVendorCount = Object.values(vendors).filter((v) => !v.retired
  * answers) auto-update. Freshness dates that are a different semantic (e.g. the
  * best-peptide-vendors "Updated …" stamp) are intentionally NOT driven by this.
  */
-export const CODES_VERIFIED_DATE = "July 2026";
+export const CODES_VERIFIED_DATE = "August 2026";

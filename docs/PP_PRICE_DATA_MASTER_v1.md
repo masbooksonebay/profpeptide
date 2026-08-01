@@ -2,7 +2,7 @@
 
 **Status:** ACTIVE data source for the price-comparison page. ONE doc for ALL vendors (don't split per-vendor).
 **Version:** v1
-**PRICES_UPDATED:** July 24, 2026
+**PRICES_UPDATED:** July 31, 2026
 **How to use:** Each vendor = one section below. New vendor pulls APPEND a new section in the same format. CC reads this to populate src/data/prices.ts. Base prices pulled by CINC (read-only from vendor sites); with-code = base × (1 − discount) from vendors.ts; per-mg computed.
 
 ---

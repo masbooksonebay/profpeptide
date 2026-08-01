@@ -136,7 +136,7 @@ export default function BestPeptideVendorsPage() {
       }} />
 
       <div className="section max-w-3xl">
-        <span className="tag mb-3 inline-block">Updated July 2026</span>
+        <span className="tag mb-3 inline-block">Updated August 2026</span>
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">
           Featured Peptide Vendors (July 2026)
         </h1>
