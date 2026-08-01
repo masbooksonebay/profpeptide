@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { CopyCode } from "@/components/CopyCode";
+import { VerifiedBadge } from "@/components/VerifiedBadge";
 import { RegionPill } from "@/components/RegionPill";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
@@ -93,6 +94,7 @@ export default function MileHighCompoundsCouponPage() {
             <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
             <CopyCode code={v.code} size="large" />
             <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">{discountPct}% off your entire order</p>
+            <VerifiedBadge slug="mile-high-compounds" />
             <a href={v.url} target="_blank" rel="noopener noreferrer" className="btn-primary w-full text-center block">
               Shop Mile High Compounds</a>
           </div>

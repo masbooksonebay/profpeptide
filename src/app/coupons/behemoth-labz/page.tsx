@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CopyCode } from "@/components/CopyCode";
+import { VerifiedBadge } from "@/components/VerifiedBadge";
 import Link from "next/link";
 import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
 import { RegionPill } from "@/components/RegionPill";
@@ -138,6 +139,7 @@ export default function BehemothLabzCouponPage() {
             <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
             <CopyCode code={v.code} size="large" />
             <p className="text-center text-sm text-[#3A759F] font-medium mt-2 mb-4">{discountPct}% off your entire order</p>
+            <VerifiedBadge slug="behemoth-labz" />
             <a href={v.url} target="_blank" rel="noopener noreferrer" className="btn-primary w-full text-center block">
               Shop Behemoth Labz</a>
           </div>
