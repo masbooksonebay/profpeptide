@@ -22,6 +22,13 @@ export const CODES_VERIFIED_DATE = (() => {
   return `${MONTHS[m - 1]} ${y}`;
 })();
 
+/** Abbreviated form ("Aug 2026") for the compact verified pill on the code card, where a
+ *  full month name would push the two side-by-side pills past 375px. Same derivation. */
+export const CODES_VERIFIED_DATE_SHORT = (() => {
+  const [y, m] = VENDORS_VERIFIED_ISO.split("-").map(Number);
+  return `${MONTHS[m - 1].slice(0, 3)} ${y}`;
+})();
+
 const VERIFIED_SET = new Set(VENDORS_VERIFIED_SLUGS);
 
 /**
