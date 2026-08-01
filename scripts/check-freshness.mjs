@@ -1,17 +1,17 @@
-// scripts/check-freshness.mjs — build-gating freshness + SEO-budget guard.
+// scripts/check-freshness.mjs — build-time freshness/SEO guard, SPLIT BY SEVERITY.
 //
-// Two invariants, both fail-loud (non-zero exit) so a stale site can't ship silently:
+//   BUDGET (HARD FAIL, exit 1). Every composed coupon meta description must fit ≤155 chars
+//     (the SERP cutoff) under the LONGEST month name — "September" (9 chars). July was the
+//     shortest month, so a description budgeted against the current month breaks at the next
+//     longer month. Over-155 ships a TRUNCATED description — an output bug — so this fails the
+//     build; the fix (trim a differentiator in src/data/coupon-copy.ts) is immediate.
 //
-//   1. STAMP AGE. The machine link-check stamp (VENDORS_VERIFIED_ISO, written by a clean
-//      scripts/check-vendors.mjs run) must be no older than MAX_AGE_DAYS. The coupon
-//      "verified <month>" now derives from this stamp, so an old stamp = a stale claim.
-//      If it trips: run `npm run check:vendors` and commit the refreshed stamp.
-//
-//   2. DESCRIPTION BUDGET. Every composed coupon meta description must fit ≤155 chars (the
-//      SERP cutoff) under the LONGEST month name — "September" (9 chars). July was the
-//      shortest month of the year, so a description budgeted against the current month
-//      breaks at the next longer month. Budgeting against September once makes every month
-//      fit forever; this guard proves it stayed that way after any differentiator edit.
+//   STAMP AGE (WARN ONLY, exit 0). The machine link-check stamp (VENDORS_VERIFIED_ISO) drives
+//     the cosmetic coupon "verified <month>". It only advances on a clean check:vendors run,
+//     which depends on 33 third-party sites being reachable — so a single genuinely-dead
+//     vendor can stall it. A stale month is cosmetic; an undeployable site is not. We must NOT
+//     couple them: an old stamp prints a loud, impossible-to-miss warning but never blocks a
+//     deploy (e.g. an urgent fix unrelated to vendors).
 //
 // Both read the SAME sources the site renders (vendors.ts, coupon-copy.ts, the generated
 // stamp) via transpile+execute, so the guard can't drift from what ships.
@@ -25,7 +25,7 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-const MAX_AGE_DAYS = 35; // ~a month + a few days of slack; a monthly check:vendors keeps it green
+const MAX_AGE_DAYS = 35; // ~a month + a few days of slack; a monthly check:vendors keeps it fresh
 const SERP_MAX = 155; // coupon meta description cutoff
 const LONGEST_MONTH = "September"; // 9 chars — the worst case; budget against it, not the current month
 
@@ -44,24 +44,22 @@ function execModule(relPath, label) {
   return moduleObj.exports;
 }
 
-const failures = [];
+const failures = []; // HARD — gate the build (exit 1)
 
-// ── 1. stamp age ────────────────────────────────────────────────────────────────
+// ── STAMP AGE — WARN ONLY, never gates the build ─────────────────────────────────
 const { VENDORS_VERIFIED_ISO } = execModule("src/data/vendors-verified.generated.ts", "vendors-verified.generated.ts");
+let ageWarning = null;
 if (!VENDORS_VERIFIED_ISO || !/^\d{4}-\d{2}-\d{2}$/.test(VENDORS_VERIFIED_ISO)) {
-  failures.push(`stamp: VENDORS_VERIFIED_ISO missing/malformed ("${VENDORS_VERIFIED_ISO}")`);
+  ageWarning = `VENDORS_VERIFIED_ISO missing/malformed ("${VENDORS_VERIFIED_ISO}") — run check:vendors`;
 } else {
   const ageDays = Math.floor((Date.now() - Date.parse(`${VENDORS_VERIFIED_ISO}T00:00:00Z`)) / 86_400_000);
-  console.log(`stamp VENDORS_VERIFIED_ISO = ${VENDORS_VERIFIED_ISO} (age ${ageDays}d, limit ${MAX_AGE_DAYS}d)`);
+  console.log(`stamp VENDORS_VERIFIED_ISO = ${VENDORS_VERIFIED_ISO} (age ${ageDays}d, warn > ${MAX_AGE_DAYS}d)`);
   if (ageDays > MAX_AGE_DAYS) {
-    failures.push(
-      `stamp is ${ageDays} days old (> ${MAX_AGE_DAYS}) — the coupon "verified" month is stale. ` +
-      `Run: npm run check:vendors  (then commit src/data/vendors-verified.generated.ts)`
-    );
+    ageWarning = `stamp is ${ageDays} days old (${VENDORS_VERIFIED_ISO}), over the ${MAX_AGE_DAYS}-day mark — the coupon "verified" month is drifting`;
   }
 }
 
-// ── 2. description budget under the longest month ────────────────────────────────
+// ── DESCRIPTION BUDGET — HARD FAIL under the longest month ────────────────────────
 const { vendors } = execModule("src/data/vendors.ts", "vendors.ts");
 const { couponDescription } = execModule("src/data/coupon-copy.ts", "coupon-copy.ts");
 const year = (VENDORS_VERIFIED_ISO || "2026-01-01").split("-")[0];
@@ -76,15 +74,25 @@ for (const [slug, v] of Object.entries(vendors)) {
   const desc = couponDescription(slug, v.name, v.code, pctOf(v), worstMonth);
   if (desc.length > tightest.len) tightest = { slug, len: desc.length };
   if (desc.length > SERP_MAX) {
-    failures.push(`desc: ${slug} = ${desc.length} chars under "${LONGEST_MONTH}" (> ${SERP_MAX}) — trim its differentiator in src/data/coupon-copy.ts`);
+    failures.push(`${slug} = ${desc.length} chars under "${LONGEST_MONTH}" (> ${SERP_MAX}) — trim its differentiator in src/data/coupon-copy.ts`);
   }
 }
 console.log(`descriptions: ${checked} checked under worst-case "${worstMonth}"; longest = ${tightest.slug} at ${tightest.len}/${SERP_MAX}`);
 
 // ── result ───────────────────────────────────────────────────────────────────────
+// Age warning prints LAST and loud (so it can't scroll away) but never sets exit code.
+if (ageWarning) {
+  const bar = "!".repeat(74);
+  console.warn(`\n${bar}`);
+  console.warn(`!!  STALE VERIFIED-DATE STAMP (warning — build continues, deploys not blocked)`);
+  console.warn(`!!  ${ageWarning}.`);
+  console.warn(`!!  Fix: npm run check:vendors, then commit src/data/vendors-verified.generated.ts`);
+  console.warn(`${bar}\n`);
+}
+
 if (failures.length) {
-  console.error(`\ncheck:freshness FAILED — ${failures.length} issue(s):`);
+  console.error(`check:freshness FAILED — ${failures.length} description(s) over the SERP budget:`);
   for (const f of failures) console.error(`  ✗ ${f}`);
   process.exit(1);
 }
-console.log("check:freshness OK — stamp fresh and every coupon description fits under the longest month.");
+console.log(`check:freshness OK — every coupon description fits under the longest month${ageWarning ? " (see stamp warning above)" : ""}.`);
