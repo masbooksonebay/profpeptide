@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { CopyCode } from "@/components/CopyCode";
 import Link from "next/link";
-import { CODES_VERIFIED_DATE, vendors } from "@/data/vendors";
+import { vendors } from "@/data/vendors";
+import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
 import { RegionPill } from "@/components/RegionPill";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";

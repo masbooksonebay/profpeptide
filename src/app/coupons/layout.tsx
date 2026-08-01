@@ -1,4 +1,5 @@
-import { activeVendorCount, CODES_VERIFIED_DATE } from "@/data/vendors";
+import { activeVendorCount } from "@/data/vendors";
+import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
 
 export const metadata = {
   alternates: { canonical: "/coupons" },

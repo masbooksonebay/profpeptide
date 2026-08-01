@@ -335,12 +335,8 @@ export const vendors: Record<string, Vendor> = {
  */
 export const activeVendorCount = Object.values(vendors).filter((v) => !v.retired).length;
 
-/**
- * Month/year the coupon codes + affiliate links were last verified. SINGLE SOURCE
- * of truth for the "verified date" shown across coupon pages — update this ONE line
- * each month after re-verifying codes. Pages that reference it (coupons hub title/
- * meta + body stamp, and the behemoth-labz / glacier-aminos code-verification FAQ
- * answers) auto-update. Freshness dates that are a different semantic (e.g. the
- * best-peptide-vendors "Updated …" stamp) are intentionally NOT driven by this.
- */
-export const CODES_VERIFIED_DATE = "August 2026";
+// NOTE: CODES_VERIFIED_DATE moved to @/data/codes-verified — it is now DERIVED from the
+// machine link-check stamp (VENDORS_VERIFIED_ISO), not a hand-set constant here, so the
+// "verified" month can never silently go stale at a month boundary. Import it from there.
+// (vendors.ts must stay import-free — the check:vendors/check:grids guards execute it via a
+// transpile that throws on any require — so the derivation can't live in this file.)

@@ -6,9 +6,9 @@ import { CopyCode } from "@/components/CopyCode";
 import {
   vendors as registry,
   regionFlag,
-  CODES_VERIFIED_DATE,
   type Vendor as RegistryVendor,
 } from "@/data/vendors";
+import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
 
 interface Vendor {
   name: string;

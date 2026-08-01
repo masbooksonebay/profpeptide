@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/check-links.mjs && node scripts/check-grids.mjs && node scripts/gen-vendor-slugs.mjs && next build && next-sitemap",
+    "build": "node scripts/check-links.mjs && node scripts/check-grids.mjs && node scripts/check-freshness.mjs && node scripts/gen-vendor-slugs.mjs && next build && next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "check:vendors": "node scripts/check-vendors.mjs",
     "check:links": "node scripts/check-links.mjs",
-    "check:grids": "node scripts/check-grids.mjs"
+    "check:grids": "node scripts/check-grids.mjs",
+    "check:freshness": "node scripts/check-freshness.mjs"
   },
   "dependencies": {
     "fuse.js": "^7.3.0",
