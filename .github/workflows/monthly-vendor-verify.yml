@@ -1,0 +1,88 @@
+name: monthly-vendor-verify
+
+on:
+  schedule:
+    - cron: "0 16 1 * *"    # 16:00 UTC on the 1st (09:00 Pacific — lands at start of Mark's day; GitHub cron may lag a few min)
+  workflow_dispatch: {}       # manual "Run workflow" button, on demand
+
+permissions:
+  contents: write             # commit + push the refreshed stamp
+
+concurrency:
+  group: monthly-vendor-verify
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # Run the check but DON'T fail the step yet — capture its exit code (and tee its output
+      # for the job summary) so we can advance the stamp before surfacing any failure.
+      - name: Run check:vendors
+        id: check
+        run: |
+          set +e
+          node scripts/check-vendors.mjs 2>&1 | tee /tmp/cv.log
+          code=${PIPESTATUS[0]}
+          set -e
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+
+      # Commit + push the refreshed stamp FIRST (for the reachable set), so the month advances
+      # and Vercel deploys — even when a dead vendor made the check exit non-zero. On a
+      # floor-abort the stamp is unchanged, so there is simply nothing to commit.
+      - name: Commit & push refreshed stamp
+        id: commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/vendors-verified.generated.ts
+          if git diff --cached --quiet; then
+            echo "No stamp change to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: monthly vendor verification stamp (automated)"
+            git pull --rebase --autostash origin main
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Pushed refreshed stamp -> Vercel deploy triggered."
+          fi
+
+      # Always report what the run actually attested — not just pass/fail — so an unattended
+      # run's log says how many vendors verified and which were excluded.
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "## Monthly vendor verification"
+            echo ""
+            echo "- Stamp changed & pushed: **${{ steps.commit.outputs.changed || 'n/a' }}**"
+            echo "- check:vendors exit code: **${{ steps.check.outputs.code }}**"
+            echo ""
+            echo "### What it attested"
+            echo '```'
+            grep -E "Verified set:|Wrote verification stamp:|Clean run|ABORTED" /tmp/cv.log 2>/dev/null || echo "(no summary line captured)"
+            echo '```'
+            if grep -qE "^[[:space:]]*✗ " /tmp/cv.log 2>/dev/null; then
+              echo "### Excluded this run (DEAD from CI's IP — no verified badge until fixed/retired or re-run)"
+              echo '```'
+              grep -E "^[[:space:]]*✗ " /tmp/cv.log
+              echo '```'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # THEN fail the run if the check reported a problem, so it isn't swallowed and Mark is notified.
+      - name: Surface check:vendors failure
+        if: steps.check.outputs.code != '0'
+        run: |
+          echo "::error::check:vendors exited ${{ steps.check.outputs.code }} — a DEAD affiliate link, or the >50% floor tripped. The stamp advanced for the reachable set (dead vendors excluded, now showing no verified badge); fix the link or retire the vendor, then re-run. See the job summary."
+          exit 1
