@@ -236,6 +236,22 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/peptide-partners",
     editorsPick: true,
   },
+  "peptide-giants": {
+    name: "Peptide Giants",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    url: "https://peptidegiants.com/?ref=urunwnog",
+    detailPage: "/coupons/peptide-giants",
+  },
+  "purerx-peptides": {
+    name: "PureRx Peptides",
+    code: "PROFPEPTIDE",
+    discount: "15% off",
+    region: "US",
+    url: "https://purerxpeptides.com/?ref=urunwnog",
+    detailPage: "/coupons/purerx-peptides",
+  },
   "peptides-gg": {
     name: "Peptides.gg",
     code: "PROF15",
