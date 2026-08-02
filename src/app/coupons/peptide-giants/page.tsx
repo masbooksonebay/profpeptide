@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { CopyCode } from "@/components/CopyCode";
-import { CouponPills } from "@/components/CouponPills";
 import Link from "next/link";
-import { RegionPill } from "@/components/RegionPill";
+import { CouponCodeCard } from "@/components/CouponCodeCard";
+import { CouponFacts } from "@/components/CouponFacts";
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -36,10 +35,8 @@ export default function PeptideGiantsCouponPage() {
       <div className="flex flex-wrap items-center gap-3 mb-1">
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptide Giants Discount Code &mdash; Save 10%</h1>
       </div>
-      <div className="flex flex-wrap items-center gap-2 mb-8">
-        <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
-        <RegionPill slug="peptide-giants" />
-      </div>
+      <CouponFacts slug="peptide-giants" />
+      <CouponCodeCard slug="peptide-giants" className="mb-8" />
 
       <div className="space-y-8">
         <div>
@@ -96,19 +93,6 @@ export default function PeptideGiantsCouponPage() {
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Peptide Giants ships from the USA with same-day US dispatch on most orders and free priority shipping on domestic orders over $200. Products are available as single vials and multi-vial kits, and are sold for laboratory and research use only.
           </p>
-        </div>
-
-        <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
-          <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-          <CopyCode code="PROFPEPTIDE" size="large" />
-          <CouponPills slug="peptide-giants" />
-          <a
-            href="https://peptidegiants.com/?ref=urunwnog"
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            className="btn-primary w-full text-center block"
-          >
-            Shop Peptide Giants</a>
         </div>
 
         <div>

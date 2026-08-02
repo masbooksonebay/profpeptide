@@ -1,3 +1,17 @@
+/**
+ * Structured facts that compose the coupon page's subtitle (see vendorFactsLine). Populated
+ * per vendor from that vendor's OWN site. Absent fields simply drop their segment.
+ */
+export interface VendorFacts {
+  /** The vendor's PUBLISHED purity standard, e.g. "≥99%". Rendered as "{x} purity standard" —
+   *  ALWAYS the vendor's stated standard, NEVER a PP-measured figure (PP tests nothing). */
+  purityStandard?: string;
+  /** How the vendor exposes Certificates of Analysis. */
+  coa?: "per-batch" | "per-product" | "library" | "on-request" | "login-gated";
+  /** Lab accreditation the vendor states, e.g. "ISO/IEC 17025". */
+  labAccreditation?: string;
+}
+
 export interface Vendor {
   name: string;
   code: string;
@@ -10,6 +24,8 @@ export interface Vendor {
   comingSoon?: boolean;
   /** Retired vendor: page redirects to /coupons, not shown on the hub or counted. */
   retired?: boolean;
+  /** Structured facts for the coupon-page subtitle (vendorFactsLine). Absent → region only. */
+  facts?: VendorFacts;
 }
 
 export const regionFlag: Record<Vendor["region"], string> = {
@@ -28,6 +44,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://aeropeptides.com/?ref=PROF15",
     detailPage: "/coupons/aero-peptides",
+    facts: { coa: "on-request" },
   },
   "almighty-peptides": {
     name: "Almighty Peptides",
@@ -44,6 +61,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://alpha-peptides.com/aff/850/",
     detailPage: "/coupons/alpha-peptides",
+    facts: { coa: "library", labAccreditation: "ISO/IEC 17025" },
   },
   "ameano-peptides": {
     name: "Ameano Peptides",
@@ -52,6 +70,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ameanopeptides.com/?ref=hmvyvxhr",
     detailPage: "/coupons/ameano-peptides",
+    facts: { purityStandard: "≥99%", coa: "per-product" },
   },
   "amino-club": {
     name: "Amino Club",
@@ -60,6 +79,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
     detailPage: "/coupons/amino-club",
+    facts: { purityStandard: "≥99%", coa: "per-batch", labAccreditation: "ISO/IEC 17025" },
     editorsPick: true,
   },
   "amino-x": {
@@ -69,6 +89,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://aminox.net/?coupon=PROF15",
     detailPage: "/coupons/amino-x",
+    facts: { coa: "on-request" },
   },
   "ascension-peptides": {
     name: "Ascension Peptides",
@@ -77,6 +98,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ascensionpeptides.com/ref/profpeptide/",
     detailPage: "/coupons/ascension-peptides",
+    facts: { coa: "per-batch" },
     bestDeal: true,
   },
   "behemoth-labz": {
@@ -86,6 +108,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://behemothlabz.com/aff/208/",
     detailPage: "/coupons/behemoth-labz",
+    facts: { coa: "per-batch" },
   },
   "biolongevity-labs": {
     name: "Biolongevity Labs",
@@ -94,6 +117,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://go.biolongevitylabs.com/aff_c?offer_id=1&aff_id=2702",
     detailPage: "/coupons/biolongevity-labs",
+    facts: { coa: "per-batch" },
   },
   biocollex: {
     name: "BioCollex",
@@ -102,6 +126,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://biocollexresearch.com/?ref=profpeptidehq",
     detailPage: "/coupons/biocollex",
+    facts: { coa: "per-batch" },
   },
   "crush-research": {
     name: "Crush Research",
@@ -110,6 +135,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://crushresearch.shop/?ref=PROFPEPTIDE",
     detailPage: "/coupons/crush-research",
+    facts: { coa: "library" },
   },
   "ez-peptides": {
     name: "EZ Peptides",
@@ -118,6 +144,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ezpeptides.com/?ref=nldbbgvs",
     detailPage: "/coupons/ez-peptides",
+    facts: { coa: "per-batch" },
   },
   "fusion-peptide": {
     name: "Fusion Peptide",
@@ -135,6 +162,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
     detailPage: "/coupons/glacier-aminos",
+    facts: { coa: "per-batch" },
     editorsPick: true,
   },
   "ignite-peptides": {
@@ -144,6 +172,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ignitepeptides.com/ref/profpeptide/",
     detailPage: "/coupons/ignite-peptides",
+    facts: { coa: "per-product" },
   },
   "la-peptides": {
     name: "LA Peptides",
@@ -152,6 +181,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://lapeptides.net/?ref=xocwamxz",
     detailPage: "/coupons/la-peptides",
+    facts: { coa: "per-batch" },
   },
   "mile-high-compounds": {
     name: "Mile High Compounds",
@@ -160,6 +190,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://milehighcompounds.is/?ref=profpeptide",
     detailPage: "/coupons/mile-high-compounds",
+    facts: { coa: "library" },
   },
   "modern-aminos": {
     name: "Modern Aminos",
@@ -168,6 +199,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://modernaminos.com/?ref=profpeptide",
     detailPage: "/coupons/modern-aminos",
+    facts: { coa: "login-gated", labAccreditation: "ISO/IEC 17025" },
   },
   "nextgen-peptides": {
     name: "NextGen Peptides",
@@ -176,6 +208,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ngpeptide.com/?ref=fysuzocl",
     detailPage: "/coupons/nextgen-peptides",
+    facts: { coa: "library" },
   },
   "peptidology": {
     name: "Peptidology",
@@ -184,6 +217,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptidology.co/?ref=mkmhgxqi",
     detailPage: "/coupons/peptidology",
+    facts: { coa: "per-batch", labAccreditation: "ISO/IEC 17025" },
   },
   "integrative-peptides": {
     name: "Integrative Peptides",
@@ -200,6 +234,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.limitlesslifenootropics.com/?_ef_transaction_id=&oid=1&affid=10477",
     detailPage: "/coupons/limitless-biotech",
+    facts: { coa: "per-product" },
   },
   "midwest-peptide": {
     name: "Midwest Peptide",
@@ -208,6 +243,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://midwestpeptide.com?ref=PROF10",
     detailPage: "/coupons/midwest-peptide",
+    facts: { purityStandard: "≥99%", coa: "per-product" },
   },
   "oasis-labs": {
     name: "Oasis Labs",
@@ -216,6 +252,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://myoasislabs.com/?sld=profpeptide",
     detailPage: "/coupons/oasis-labs",
+    facts: { coa: "per-product" },
     editorsPick: true,
   },
   "particle-peptides": {
@@ -234,6 +271,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptide.partners/ref/48/",
     detailPage: "/coupons/peptide-partners",
+    facts: { coa: "per-batch" },
     editorsPick: true,
   },
   "peptide-giants": {
@@ -243,6 +281,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptidegiants.com/?ref=urunwnog",
     detailPage: "/coupons/peptide-giants",
+    facts: { coa: "library" },
   },
   "purerx-peptides": {
     name: "PureRx Peptides",
@@ -251,6 +290,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://purerxpeptides.com/?ref=urunwnog",
     detailPage: "/coupons/purerx-peptides",
+    facts: { coa: "per-batch" },
   },
   "peptides-gg": {
     name: "Peptides.gg",
@@ -259,6 +299,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptides.gg/?coupon=prof15",
     detailPage: "/coupons/peptides-gg",
+    facts: { coa: "per-batch" },
   },
   purerawz: {
     name: "PureRawz",
@@ -267,6 +308,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://purerawz.co/?ref=1901",
     detailPage: "/coupons/purerawz",
+    facts: { coa: "per-batch" },
   },
   "purity-peptides": {
     name: "Purity Peptides",
@@ -275,6 +317,7 @@ export const vendors: Record<string, Vendor> = {
     region: "CA",
     url: "https://puritypeptides.is/?sld=PROF15",
     detailPage: "/coupons/purity-peptides",
+    facts: { coa: "per-batch" },
   },
   "royal-peptides": {
     name: "Royal Peptides",
@@ -283,6 +326,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://royal-peptides.com/?ref=urunwnog",
     detailPage: "/coupons/royal-peptides",
+    facts: { coa: "per-batch" },
   },
   "science-based-peptides": {
     name: "Science Based Peptides",
@@ -291,6 +335,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.sciencebasedpeptides.com/ref/PROFPEPTIDE",
     detailPage: "/coupons/science-based-peptides",
+    facts: { coa: "per-batch" },
   },
   "spartan-peptides": {
     name: "Spartan Peptides",
@@ -299,6 +344,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
     detailPage: "/coupons/spartan-peptides",
+    facts: { purityStandard: "≥98%", coa: "per-batch" },
   },
   "swiss-chems": {
     name: "Swiss Chems",
@@ -307,6 +353,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://swisschems.is/?ref=PROF10",
     detailPage: "/coupons/swiss-chems",
+    facts: { coa: "library" },
   },
   "synthesis-peptides": {
     name: "Synthesis Peptides",
@@ -331,6 +378,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://treasurecoastpeptides.com/?ref=MARKSHURTLIFF",
     detailPage: "/coupons/treasure-coast-peptides",
+    facts: { coa: "per-batch" },
   },
   "vital-core-research": {
     name: "Vital Core Research",
@@ -339,6 +387,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://vitalcoreresearch.com/?ref=nbwnvhnu",
     detailPage: "/coupons/vital-core-research",
+    facts: { coa: "per-product" },
   },
 };
 
@@ -350,6 +399,42 @@ export const vendors: Record<string, Vendor> = {
  * /best-peptide-vendors). Derive from this; never hardcode.
  */
 export const activeVendorCount = Object.values(vendors).filter((v) => !v.retired).length;
+
+const REGION_WORD: Record<Vendor["region"], string> = {
+  US: "US-based",
+  CA: "Canada-based",
+  UK: "UK-based",
+  EU: "EU-based",
+  IS: "Iceland-based",
+};
+
+const COA_PHRASE: Record<NonNullable<VendorFacts["coa"]>, string> = {
+  "per-batch": "per-batch COAs",
+  "per-product": "a COA on each product page",
+  library: "a public COA library",
+  "on-request": "COAs on request",
+  "login-gated": "COAs behind a research-account login",
+};
+
+/**
+ * The coupon page's facts subtitle, composed from structured registry data (region + the
+ * vendor's PUBLISHED purity standard + COA/lab testing), joining ONLY present segments with
+ * " · ". A vendor with no `facts` degrades cleanly to its region word alone. Purity is ALWAYS
+ * phrased as the vendor's standard — never a PP-measured claim. Data-driven on purpose: writing
+ * this per page is what produced the hardcoded-value rot (cookie lines, stale months, pills).
+ */
+export function vendorFactsLine(slug: string): string {
+  const v = vendors[slug];
+  if (!v) return "";
+  const f = v.facts ?? {};
+  const segs: string[] = [REGION_WORD[v.region]];
+  if (f.purityStandard) segs.push(`${f.purityStandard} purity standard`);
+  const coa = f.coa ? COA_PHRASE[f.coa] : "";
+  if (coa && f.labAccreditation) segs.push(`${coa} from an ${f.labAccreditation}-accredited lab`);
+  else if (coa) segs.push(coa);
+  else if (f.labAccreditation) segs.push(`${f.labAccreditation}-accredited lab testing`);
+  return segs.join(" · ");
+}
 
 // NOTE: CODES_VERIFIED_DATE moved to @/data/codes-verified — it is now DERIVED from the
 // machine link-check stamp (VENDORS_VERIFIED_ISO), not a hand-set constant here, so the

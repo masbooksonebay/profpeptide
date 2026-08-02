@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { CopyCode } from "@/components/CopyCode";
-import { CouponPills } from "@/components/CouponPills";
 import Link from "next/link";
-import { RegionPill } from "@/components/RegionPill";
+import { CouponCodeCard } from "@/components/CouponCodeCard";
+import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -44,10 +43,8 @@ export default function VitalCoreResearchCouponPage() {
  <div className="flex flex-wrap items-center gap-3 mb-1">
  <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Vital Core Research Discount Code &mdash; Save 20%</h1>
  </div>
- <div className="flex flex-wrap items-center gap-2 mb-8">
- <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
- <RegionPill slug="vital-core-research" />
- </div>
+ <CouponFacts slug="vital-core-research" />
+ <CouponCodeCard slug="vital-core-research" className="mb-8" />
 
  <div className="space-y-8">
  <div>
@@ -126,15 +123,7 @@ export default function VitalCoreResearchCouponPage() {
 
  {/* Catalog — code card, then the product grid (one row per compound+size). */}
  <div>
-   <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Vital Core Research catalog &amp; prices</h2>
-
-   <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b] mb-6">
-     <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-     <CopyCode code={v.code} size="large" />
-     <CouponPills slug="vital-core-research" />
-     <a href={v.url} target="_blank" rel="noopener noreferrer" className="btn-primary w-full text-center block">
-       Shop Vital Core Research</a>
-   </div>
+   <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">Vital Core Research catalog &amp; prices</h2>
 
    <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
 

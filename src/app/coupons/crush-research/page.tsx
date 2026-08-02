@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { CopyCode } from "@/components/CopyCode";
-import { CouponPills } from "@/components/CouponPills";
 import Link from "next/link";
+import { CouponCodeCard } from "@/components/CouponCodeCard";
+import { CouponFacts } from "@/components/CouponFacts";
 import { vendors } from "@/data/vendors";
 import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
-import { RegionPill } from "@/components/RegionPill";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 
@@ -48,10 +47,8 @@ export default function CrushResearchCouponPage() {
       <div className="flex flex-wrap items-center gap-3 mb-1">
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Crush Research Discount Code &mdash; Save 10%</h1>
       </div>
-      <div className="flex flex-wrap items-center gap-2 mb-8">
-        <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
-        <RegionPill slug="crush-research" />
-      </div>
+      <CouponFacts slug="crush-research" />
+      <CouponCodeCard slug="crush-research" className="mb-8" />
 
       <div className="space-y-8">
         <div>
@@ -118,15 +115,7 @@ export default function CrushResearchCouponPage() {
 
         {/* Catalog — code card, then the product grid (one row per compound+size). */}
         <div>
-          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Crush Research catalog &amp; prices</h2>
-
-          <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b] mb-6">
-            <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-            <CopyCode code={v.code} size="large" />
-            <CouponPills slug="crush-research" />
-            <a href={v.url} target="_blank" rel="noopener noreferrer sponsored" className="btn-primary w-full text-center block">
-              Shop Crush Research</a>
-          </div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">Crush Research catalog &amp; prices</h2>
 
           <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
 

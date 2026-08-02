@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { CopyCode } from "@/components/CopyCode";
-import { CouponPills } from "@/components/CouponPills";
 import Link from "next/link";
-import { RegionPill } from "@/components/RegionPill";
+import { CouponCodeCard } from "@/components/CouponCodeCard";
+import { CouponFacts } from "@/components/CouponFacts";
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -36,10 +35,8 @@ export default function PureRxPeptidesCouponPage() {
       <div className="flex flex-wrap items-center gap-3 mb-1">
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">PureRx Peptides Discount Code &mdash; Save 15%</h1>
       </div>
-      <div className="flex flex-wrap items-center gap-2 mb-8">
-        <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
-        <RegionPill slug="purerx-peptides" />
-      </div>
+      <CouponFacts slug="purerx-peptides" />
+      <CouponCodeCard slug="purerx-peptides" className="mb-8" />
 
       <div className="space-y-8">
         <div>
@@ -96,19 +93,6 @@ export default function PureRxPeptidesCouponPage() {
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             PureRx Peptides is US-based and ships domestically, with same-day dispatch on orders placed before 2:30pm CST and 2-day shipping. All products are sold for laboratory and research use only.
           </p>
-        </div>
-
-        <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
-          <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-          <CopyCode code="PROFPEPTIDE" size="large" />
-          <CouponPills slug="purerx-peptides" />
-          <a
-            href="https://purerxpeptides.com/?ref=urunwnog"
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            className="btn-primary w-full text-center block"
-          >
-            Shop PureRx Peptides</a>
         </div>
 
         <div>

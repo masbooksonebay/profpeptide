@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { CopyCode } from "@/components/CopyCode";
-import { CouponPills } from "@/components/CouponPills";
 import Link from "next/link";
-import { RegionPill } from "@/components/RegionPill";
+import { CouponCodeCard } from "@/components/CouponCodeCard";
+import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -51,11 +50,8 @@ export default function AminoClubCouponPage() {
       <div className="flex flex-wrap items-center gap-3 mb-1">
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Amino Club Discount Code &mdash; Save 20%</h1>
       </div>
-      <div className="flex flex-wrap items-center gap-2 mb-8">
-        <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
-        <span className="text-xs bg-slate-100 text-slate-700 border border-slate-300 px-2 py-0.5 rounded-full font-medium">&ge;99% Purity Verified</span>
-        <RegionPill slug="amino-club" />
-      </div>
+      <CouponFacts slug="amino-club" />
+      <CouponCodeCard slug="amino-club" className="mb-8" />
 
       <div className="space-y-8">
         <div>
@@ -132,26 +128,8 @@ export default function AminoClubCouponPage() {
           </p>
         </div>
 
-        {/* Catalog — the conversion layer. Get the code first (card), then browse the grid.
-            One row per compound+size, matching the /prices columnar treatment. Each compound
-            name links INTERNALLY into PP's library; each Shop link is a deep affiliate link
-            into the vendor's product page (attribution carries via amino_affiliate_code). */}
         <div>
-          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Amino Club catalog &amp; prices</h2>
-
-          {/* Code card, moved above the grid: grab the code, then shop. */}
-          <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b] mb-6">
-            <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-            <CopyCode code="PROFPEPTIDE" size="large" />
-            <CouponPills slug="amino-club" />
-            <a
-              href="https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary w-full text-center block"
-            >
-              Shop Amino Club</a>
-          </div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">Amino Club catalog &amp; prices</h2>
 
           <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
 

@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { CopyCode } from "@/components/CopyCode";
-import { CouponPills } from "@/components/CouponPills";
 import Link from "next/link";
-import { RegionPill } from "@/components/RegionPill";
+import { CouponCodeCard } from "@/components/CouponCodeCard";
+import { CouponFacts } from "@/components/CouponFacts";
 
 function FAQItem({ q, a }: { q: string; a: string }) {
  const [open, setOpen] = useState(false);
@@ -36,11 +35,8 @@ export default function IntegrativePeptidesCouponPage() {
  <div className="flex flex-wrap items-center gap-3 mb-1">
  <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Integrative Peptides Discount Code &mdash; Save 10% with PROFPEPTIDE</h1>
  </div>
- <div className="flex flex-wrap items-center gap-2 mb-8">
- <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
- <span className="text-xs bg-indigo-50 text-indigo-700 border border-indigo-200 px-2 py-0.5 rounded-full font-medium">Oral Peptide Formulations</span>
- <RegionPill slug="integrative-peptides" />
- </div>
+ <CouponFacts slug="integrative-peptides" />
+ <CouponCodeCard slug="integrative-peptides" className="mb-8" />
 
  <div className="space-y-8">
  <div>
@@ -70,19 +66,6 @@ export default function IntegrativePeptidesCouponPage() {
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
  Their product catalog includes <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, TB4-Frag, <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, KPV, Thymogen Alpha-1, CerebroPrep, CogniPep, PinealPep, and other peptide complexes &mdash; all in oral and convenient formats. Every batch undergoes independent third-party laboratory testing and is screened for heavy metals, residual solvents, and endotoxins. This oral-first approach makes Integrative Peptides particularly relevant for practitioners and patients who prefer non-injectable administration routes.
  </p>
- </div>
-
- <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
- <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
- <CopyCode code="PROFPEPTIDE" size="large" />
- <CouponPills slug="integrative-peptides" />
- <a
- href="https://integrativepeptides.com/affiliate/profpeptide/"
- target="_blank"
- rel="noopener noreferrer"
- className="btn-primary w-full text-center block"
- >
- Shop Integrative Peptides</a>
  </div>
 
 
