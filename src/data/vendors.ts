@@ -44,7 +44,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://aeropeptides.com/?ref=PROF15",
     detailPage: "/coupons/aero-peptides",
-    facts: { coa: "on-request" },
+    facts: { purityStandard: "≥98%", coa: "on-request" },
   },
   "almighty-peptides": {
     name: "Almighty Peptides",
