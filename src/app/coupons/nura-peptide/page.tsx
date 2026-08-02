@@ -1,0 +1,113 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import { CouponCodeCard } from "@/components/CouponCodeCard";
+import { CouponFacts } from "@/components/CouponFacts";
+
+function FAQItem({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border border-gray-100 dark:border-slate-700 rounded-xl overflow-hidden">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors"
+      >
+        <span className="text-sm font-medium text-[#16181B] dark:text-slate-100 pr-4">{q}</span>
+        <span className="text-[#3A759F] flex-shrink-0 text-lg">{open ? "−" : "+"}</span>
+      </button>
+      {open && (
+        <div className="px-5 pb-4 text-sm text-gray-600 dark:text-slate-300 leading-relaxed border-t border-gray-50 dark:border-slate-800 pt-3">
+          {a}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function NuraPeptideCouponPage() {
+  return (
+    <div className="section max-w-3xl">
+      <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
+        &larr; Back to Discount Codes
+      </Link>
+
+      <div className="flex flex-wrap items-center gap-3 mb-1">
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Nura Peptide Discount Code &mdash; Save 15%</h1>
+      </div>
+      <CouponFacts slug="nura-peptide" />
+      <CouponCodeCard slug="nura-peptide" className="mb-8" />
+
+      <div className="space-y-8">
+        <div>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+            Nura Peptide is a US-based research-peptide supplier that ships domestically and publishes a Certificate of Analysis for every batch through a public COA library. Its catalog spans metabolic and GLP-class compounds, recovery and repair peptides, growth-hormone secretagogues, longevity and bioregulator compounds, skin research peptides, and cognitive compounds. Popular compounds by research area:
+          </p>
+          <dl className="space-y-2 mb-4">
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>, <Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link>, <Link href="/peptides/5-amino-1mq" className="text-[#3A759F] hover:underline">5-Amino-1MQ</Link>, plus their GLP-class metabolic line
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>, <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Blend</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>, <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>, <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link>, <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>, <Link href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity &amp; Bioregulators</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>, <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>, <Link href="/peptides/ss-31" className="text-[#3A759F] hover:underline">SS-31</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin Health &amp; Anti-Aging</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>, <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>, <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Sleep</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>, <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual &amp; Gut Health</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
+              </dd>
+            </div>
+          </dl>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+            Nura Peptide states that every batch undergoes third-party testing to confirm purity and potency, and that every product includes a Certificate of Analysis with HPLC results. COAs are published in a public COA library, so researchers can review the documentation for a given batch before purchase. Nura does not publish a single headline purity percentage; it points instead to the per-batch COA as the record of each lot's results.
+          </p>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            Nura Peptide is US-based and ships domestically. All products are sold for laboratory and research use only.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
+          <div className="space-y-2">
+            <FAQItem q="What peptides does Nura Peptide carry?" a="Nura carries research compounds across several categories: metabolic and GLP-class compounds including MOTS-C, AOD-9604, and 5-Amino-1MQ; recovery peptides such as BPC-157, TB-500, and a BPC-157/TB-500 blend; growth-hormone secretagogues including CJC-1295, Ipamorelin, Tesamorelin, Sermorelin, and IGF-1 LR3; longevity and bioregulator compounds including Epitalon, NAD+, SS-31, and Glutathione; plus GHK-Cu, the GLOW and KLOW blends, Semax, Selank, DSIP, PT-141, and KPV." />
+            <FAQItem q="Does Nura Peptide have a discount code?" a="Yes. Use code PROFPEPTIDE15 at checkout to save 15% on your entire Nura Peptide order. This code is verified and maintained by Prof. Peptide." />
+            <FAQItem q="How do I use the Nura Peptide discount code?" a="Add your items to cart at nurapeptide.com, proceed to checkout, and enter PROFPEPTIDE15 in the discount code field. The 15% discount will be applied to your order total." />
+            <FAQItem q="How does Nura Peptide test its peptides?" a="Nura states that every batch undergoes third-party testing to confirm purity and potency, and that each product ships with a Certificate of Analysis that includes HPLC results. Nura does not publish a single headline purity figure; the per-batch COA is the record of each lot's results." />
+            <FAQItem q="Are Certificates of Analysis available for Nura products?" a="Yes. Nura publishes a COA library where researchers can view the Certificate of Analysis, with HPLC results, for each batch." />
+            <FAQItem q="Is Nura Peptide US-based?" a="Yes — Nura Peptide is US-based and ships domestically. All products are for laboratory and research use only." />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+}

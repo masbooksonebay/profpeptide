@@ -389,6 +389,28 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/vital-core-research",
     facts: { coa: "per-product" },
   },
+  "nura-peptide": {
+    name: "Nura Peptide",
+    code: "PROFPEPTIDE15",
+    discount: "15% off",
+    region: "US",
+    url: "https://nurapeptide.com/?ref=profpeptide",
+    detailPage: "/coupons/nura-peptide",
+    facts: { coa: "library" },
+  },
+  // 99 Purity's sources disagree on the discount: the welcome email says 10% off, the
+  // affiliate dashboard header says 15% OFF (same code, PROFPEPTIDE10). Mark's call is to
+  // publish 10% — understating is safe, overstating is a broken promise. Do NOT "correct"
+  // this to 15% without new evidence. Affiliate URL is PATH-BASED (/ref/profpeptide).
+  "99-purity-peptides": {
+    name: "99 Purity Peptides",
+    code: "PROFPEPTIDE10",
+    discount: "10% off",
+    region: "US",
+    url: "https://99puritypeptides.com/ref/profpeptide",
+    detailPage: "/coupons/99-purity-peptides",
+    facts: { purityStandard: "≥99%", coa: "library" },
+  },
 };
 
 /**
