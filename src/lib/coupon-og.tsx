@@ -315,6 +315,35 @@ export async function generateCouponHubOg(): Promise<ImageResponse> {
   return new ImageResponse(<FallbackCard bg={bg} />, { ...IMAGE_SIZE, fonts });
 }
 
+// Homepage / site-root brand card. Brand + purpose only — deliberately NO numbers
+// (no peptide count, no vendor count): X caches OG images per URL and can't be forced to
+// refresh, so any figure baked here would become permanently stale. Same Shell / LogoLockup
+// (the CURRENT vector mark) / palette / fonts as the vendor cards, so social cards read as a
+// consistent family and the homepage stops falling back to the outdated 1024² raster.
+function HomeCard({ bg }: { bg: string }) {
+  return (
+    <Shell bg={bg} justify="center">
+      <LogoLockup />
+      <div style={{ display: "flex", flexDirection: "column", marginTop: 30 }}>
+        <div style={{ display: "flex", fontSize: 64, fontWeight: 700, color: WHITE, lineHeight: 1.06, letterSpacing: -2 }}>
+          Independent Peptide Research
+        </div>
+        <div style={{ display: "flex", marginTop: 18, fontSize: 31, fontWeight: 500, color: LIGHT, lineHeight: 1.3 }}>
+          Compound profiles, price comparison &amp; verified vendor codes
+        </div>
+      </div>
+    </Shell>
+  );
+}
+
+// Evergreen alt for the homepage card — NO numbers, for the same cache-staleness reason.
+export const HOME_OG_ALT = "Prof. Peptide — independent peptide research library";
+
+export async function generateHomeOg(): Promise<ImageResponse> {
+  const { bg, fonts } = await loadAssets();
+  return new ImageResponse(<HomeCard bg={bg} />, { ...IMAGE_SIZE, fonts });
+}
+
 export async function generateCouponOg(slug: string): Promise<ImageResponse> {
   const { bg, fonts } = await loadAssets();
   const vendor = vendors[slug];

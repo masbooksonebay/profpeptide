@@ -23,26 +23,21 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
+  // No `images` here: the homepage/root OG image is provided by the file convention
+  // (app/opengraph-image.tsx + app/twitter-image.tsx → 1200×630 brand card via the same
+  // generator as the vendor cards). The old 1024² og-image.png was removed so there is no
+  // conflicting declaration. Content pages set their own images via buildPageMetadata (seo.ts).
   openGraph: {
     title: "Prof. Peptide",
     description: "Evidence-based peptide education and research tools.",
     url: "https://profpeptide.com",
     siteName: "Prof. Peptide",
     type: "website",
-    images: [
-      {
-        url: "https://profpeptide.com/og-image.png",
-        width: 1024,
-        height: 1024,
-        alt: "Prof. Peptide",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Prof. Peptide",
     description: "Evidence-based peptide education and research tools.",
-    images: ["https://profpeptide.com/og-image.png"],
   },
 };
 
