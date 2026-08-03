@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
@@ -36,7 +37,7 @@ export default function CJCvsSermorelinvsIpamorelinPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"CJC-1295 vs Sermorelin vs Ipamorelin — Growth Hormone Peptide Comparison","description":"CJC-1295 vs Sermorelin vs Ipamorelin — mechanisms, half-lives, GH output, research evidence, and how to choose between these three growth hormone peptides.","url":"https://profpeptide.com/compare/cjc-1295-vs-sermorelin-vs-ipamorelin","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"CJC-1295 vs Sermorelin vs Ipamorelin — Growth Hormone Peptide Comparison"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Comparisons", path: "/compare" }, { name: "CJC-1295 vs Sermorelin vs Ipamorelin — Growth Hormone Peptide Comparison" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-5xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>

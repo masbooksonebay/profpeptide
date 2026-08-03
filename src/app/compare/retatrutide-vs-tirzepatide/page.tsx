@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
@@ -53,7 +54,7 @@ export default function RetatrutideVsTirzepatidePage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Retatrutide vs Tirzepatide — GLP Triple Agonist vs Dual Agonist","description":"Retatrutide vs Tirzepatide research comparison: weight loss data, FDA status, side effect profiles, dosing, and which to choose.","url":"https://profpeptide.com/compare/retatrutide-vs-tirzepatide","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Retatrutide vs Tirzepatide — GLP Triple Agonist vs Dual Agonist"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Comparisons", path: "/compare" }, { name: "Retatrutide vs Tirzepatide — GLP Triple Agonist vs Dual Agonist" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>

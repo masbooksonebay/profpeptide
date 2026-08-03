@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { CopyCode } from "@/components/CopyCode";
 
@@ -126,14 +127,7 @@ export default function BestPeptideVendorsPage() {
         "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
-      <JsonLd data={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://profpeptide.com" },
-          { "@type": "ListItem", "position": 2, "name": "Featured Vendors" },
-        ],
-      }} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Featured Vendors" }])} />
 
       <div className="section max-w-3xl">
         <span className="tag mb-3 inline-block">Updated August 2026</span>

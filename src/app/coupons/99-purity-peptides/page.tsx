@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
 
@@ -31,6 +32,7 @@ export default function NinetyNinePurityPeptidesCouponPage() {
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
         &larr; Back to Discount Codes
       </Link>
+      <CouponBreadcrumb slug="99-purity-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">99 Purity Peptides Discount Code &mdash; Save 10%</h1>

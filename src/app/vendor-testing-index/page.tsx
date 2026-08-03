@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { vendors, type Vendor } from "@/data/vendors";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 
 // Rows are DERIVED from the vendor registry (src/data/vendors.ts) — every active vendor
 // auto-appears, so this surface can never silently drift out of completeness. Each cell maps
@@ -113,6 +115,7 @@ function downloadCsv() {
 export default function VendorTestingIndexPage() {
   return (
     <div className="section max-w-6xl">
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Vendor Testing Index" }])} />
       <div className="max-w-3xl">
         <div className="flex flex-wrap items-center gap-3 mb-2">
           <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Vendor COA &amp; Testing-Transparency Index</h1>

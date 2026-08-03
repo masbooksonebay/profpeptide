@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ProfileTOC from "@/components/ProfileTOC";
@@ -448,7 +449,7 @@ export default function GLOWPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"GLOW","description":"GLOW peptide stack research profile: GHK-Cu + BPC-157 + TB-500 synergy for skin, hair, and tissue repair. Mechanism, dosing, side effects.","url":"https://profpeptide.com/peptides/glow","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"GLOW"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Peptides", path: "/peptides" }, { name: "GLOW" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link

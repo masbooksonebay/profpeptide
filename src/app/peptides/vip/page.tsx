@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ProfileTOC from "@/components/ProfileTOC";
@@ -269,7 +270,7 @@ export default function VIPPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"VIP (Vasoactive Intestinal Peptide)","description":"VIP / vasoactive intestinal peptide research profile: VPAC1/VPAC2 mechanism, vasodilation and immunomodulation, the investigational synthetic form aviptadil (not FDA-approved), research-use-only framing, references.","url":"https://profpeptide.com/peptides/vip","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"VIP (Vasoactive Intestinal Peptide)"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Peptides", path: "/peptides" }, { name: "VIP (Vasoactive Intestinal Peptide)" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link

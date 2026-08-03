@@ -5,6 +5,8 @@ import { buildPageMetadata } from "@/lib/seo";
 import { PRICES_UPDATED_DATE, priceCompounds, compoundRows, compoundVendorCount } from "@/data/prices";
 import { hasProfile } from "@/data/peptideCategories";
 import CompoundPriceTable from "@/components/CompoundPriceTable";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 
 export function generateStaticParams() {
   // Cover ALL compounds so no URL 404s; only the robots directive is conditional.
@@ -45,6 +47,7 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
 
   return (
     <div className="section max-w-4xl">
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Prices", path: "/prices" }, { name: c.name }])} />
       <Link href="/prices" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
         &larr; Back to Price Comparison
       </Link>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 
@@ -37,15 +38,7 @@ export default function RFKPeptideBanPage() {
           "name": "Prof. Peptide",
         },
       }} />
-      <JsonLd data={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://profpeptide.com" },
-          { "@type": "ListItem", "position": 2, "name": "News", "item": "https://profpeptide.com/news" },
-          { "@type": "ListItem", "position": 3, "name": "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List" },
-        ],
-      }} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "News", path: "/news" }, { name: "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List" }])} />
       <div className="section max-w-3xl">
         <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to News

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
@@ -37,7 +38,7 @@ export default function BPC157vsTB500Page() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"BPC-157 vs TB-500 — How These Recovery Peptides Differ","description":"BPC-157 vs TB-500 comparison — mechanism of action, research differences, tissue targets, and how to choose between these two recovery peptides.","url":"https://profpeptide.com/compare/bpc-157-vs-tb-500","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"BPC-157 vs TB-500 — How These Recovery Peptides Differ"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Comparisons", path: "/compare" }, { name: "BPC-157 vs TB-500 — How These Recovery Peptides Differ" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>

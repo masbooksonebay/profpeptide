@@ -1,6 +1,8 @@
 import { buildPageMetadata } from "@/lib/seo";
 import { PRICES_UPDATED_DATE, priceVendorCount } from "@/data/prices";
 import PricesMaster from "@/components/PricesMaster";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 
 const VENDOR_N = priceVendorCount();
 
@@ -16,6 +18,7 @@ export const metadata = {
 export default function PricesPage() {
   return (
     <div className="section max-w-4xl">
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Prices" }])} />
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Peptide Price Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-2 max-w-2xl">
         Compare research-peptide prices across vendors. Prices are shown post-code (after each vendor&apos;s discount, where one applies), normalized to price-per-mg so you can compare across vial sizes, and sorted by lowest price.

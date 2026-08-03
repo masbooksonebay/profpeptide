@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
@@ -549,15 +550,7 @@ const articleSchema = {
   "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }
 };
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://profpeptide.com" },
-    { "@type": "ListItem", "position": 2, "name": "Supplements", "item": "https://profpeptide.com/supplements" },
-    { "@type": "ListItem", "position": 3, "name": "Zinc" }
-  ]
-};
+const breadcrumbSchema = breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Supplements", path: "/supplements" }, { name: "Zinc" }]);
 
 export default function ZincPage() {
   return (

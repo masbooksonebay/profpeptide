@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
@@ -505,7 +506,7 @@ export default function IpamorelinPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Ipamorelin","description":"Ipamorelin research profile: selective GHSR-1a agonist mechanism, dosing protocol, CJC-1295 stack, side effects, FAQ, and regulatory status.","url":"https://profpeptide.com/peptides/ipamorelin","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Ipamorelin"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Peptides", path: "/peptides" }, { name: "Ipamorelin" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link

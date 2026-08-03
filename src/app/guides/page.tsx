@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { buildPageMetadata } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 
 export const metadata = buildPageMetadata({
   path: "/guides",
@@ -30,6 +32,7 @@ const guides = [
 export default function GuidesIndexPage() {
   return (
     <div className="section max-w-3xl">
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Guides" }])} />
       <div className="mb-10">
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Guides</h1>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
@@ -312,7 +313,7 @@ export default function LL37Page() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"LL-37","description":"LL-37 research profile: the sole human cathelicidin antimicrobial peptide — mechanism, in-vitro antimicrobial and immunomodulatory activity, wound-healing evidence, double-edged inflammatory biology, safety, and regulatory status.","url":"https://profpeptide.com/peptides/ll-37","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"LL-37"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Peptides", path: "/peptides" }, { name: "LL-37" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link

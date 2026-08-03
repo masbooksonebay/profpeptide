@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ProfileTOC from "@/components/ProfileTOC";
@@ -237,7 +238,7 @@ export default function MelanotanIPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Melanotan I (Afamelanotide)","description":"Melanotan I / afamelanotide research profile: MC1R agonism and eumelanin photoprotection, the FDA/EMA-approved drug Scenesse for erythropoietic protoporphyria (EPP) vs. research-use-only MT-1, dosing, references.","url":"https://profpeptide.com/peptides/melanotan-i","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Melanotan I (Afamelanotide)"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Peptides", path: "/peptides" }, { name: "Melanotan I (Afamelanotide)" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
@@ -375,15 +376,7 @@ export default function SyringesAndInjectionPage() {
         }}
       />
       <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://profpeptide.com" },
-            { "@type": "ListItem", position: 2, name: "Guides", item: "https://profpeptide.com/guides" },
-            { "@type": "ListItem", position: 3, name: "Insulin Syringes and Injection Technique" },
-          ],
-        }}
+        data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Guides", path: "/guides" }, { name: "Insulin Syringes and Injection Technique" }])}
       />
       <div className="section max-w-3xl">
         <Link href="/guides" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">

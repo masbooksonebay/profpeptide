@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ProfileTOC from "@/components/ProfileTOC";
@@ -460,7 +461,7 @@ export default function PT141OxytocinPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"PT-141 + Oxytocin","description":"PT-141 + Oxytocin research profile: melanocortin agonist + bonding neuropeptide blend for sexual desire, arousal, and intimacy. Mechanism, dosing, delivery routes, side effects, FAQ.","url":"https://profpeptide.com/peptides/pt-141-oxytocin","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"PT-141 + Oxytocin"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Peptides", path: "/peptides" }, { name: "PT-141 + Oxytocin" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link

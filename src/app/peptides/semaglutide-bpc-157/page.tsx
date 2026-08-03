@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ProfileTOC from "@/components/ProfileTOC";
@@ -686,29 +687,7 @@ export default function SemaglutideBpc157Page() {
         }}
       />
       <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://profpeptide.com",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Peptides",
-              item: "https://profpeptide.com/peptides",
-            },
-            {
-              "@type": "ListItem",
-              position: 3,
-              name: "Semaglutide + BPC-157",
-            },
-          ],
-        }}
+        data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Peptides", path: "/peptides" }, { name: "Semaglutide + BPC-157" }])}
       />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 
 type PeptideData = {
   name: string;
@@ -43,6 +45,7 @@ export default function PeptidePage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="section max-w-3xl">
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Peptides", path: "/peptides" }, { name: data.name }])} />
       <Link href="/peptides" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
         Back to Peptide Library
       </Link>

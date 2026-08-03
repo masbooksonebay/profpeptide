@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -27,14 +28,7 @@ export default function MethodologyPage() {
         }}
       />
       <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://profpeptide.com" },
-            { "@type": "ListItem", position: 2, name: "Methodology" },
-          ],
-        }}
+        data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Methodology" }])}
       />
       <div className="section max-w-3xl">
         <div className="flex flex-wrap items-center gap-3 mb-2">

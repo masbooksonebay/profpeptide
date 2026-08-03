@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
 import JsonLd from "@/components/JsonLd";
@@ -51,6 +52,7 @@ export default function PureRawzCouponPage() {
         <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to Discount Codes
         </Link>
+      <CouponBreadcrumb slug="purerawz" />
 
         <div className="flex flex-wrap items-center gap-3 mb-1">
           <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">PureRawz Discount Code &mdash; Save 10%</h1>

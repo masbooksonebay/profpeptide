@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import { Icon } from "@/components/CategoryIcon";
 import { CopyCode } from "@/components/CopyCode";
 import {
@@ -177,6 +179,7 @@ function VendorCard({ v }: { v: Vendor }) {
 export default function CouponsPage() {
   return (
     <div className="section max-w-3xl">
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Discount Codes" }])} />
       <span className="tag mb-3 inline-block">Updated Regularly</span>
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-8">Discount Codes</h1>
 

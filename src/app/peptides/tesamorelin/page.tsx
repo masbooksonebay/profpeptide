@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
@@ -524,7 +525,7 @@ export default function TesamorelinPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Tesamorelin","description":"Tesamorelin (Egrifta WR / Egrifta SV) research profile: FDA-approved for HIV lipodystrophy, GHRH receptor mechanism, Phase 3 visceral fat data, dosing, FAQ.","url":"https://profpeptide.com/peptides/tesamorelin","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides","item":"https://profpeptide.com/peptides"},{"@type":"ListItem","position":3,"name":"Tesamorelin"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Peptides", path: "/peptides" }, { name: "Tesamorelin" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <Link

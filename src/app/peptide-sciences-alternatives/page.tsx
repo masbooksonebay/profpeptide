@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
@@ -15,7 +16,7 @@ export default function PeptideSciencesAlternativesPage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Peptide Sciences Has Closed — Vetted Research-Peptide Alternatives","description":"Peptide Sciences has voluntarily closed and discontinued sales. Here's what happened and established research-peptide vendors to consider instead, with current discount codes.","url":"https://profpeptide.com/peptide-sciences-alternatives","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptide Sciences Has Closed — Vetted Research-Peptide Alternatives"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Peptide Sciences Has Closed — Vetted Research-Peptide Alternatives" }])} />
     <div className="section max-w-4xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Vendor Coupons</Link>
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Peptide Sciences Has Closed &mdash; Vetted Research-Peptide Alternatives</h1>

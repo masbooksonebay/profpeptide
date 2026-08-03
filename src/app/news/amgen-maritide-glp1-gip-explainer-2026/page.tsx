@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
@@ -28,15 +29,7 @@ export default function AmgenMariTideGLP1GIPExplainer2026Page() {
         "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
       }} />
-      <JsonLd data={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://profpeptide.com" },
-          { "@type": "ListItem", "position": 2, "name": "News", "item": "https://profpeptide.com/news" },
-          { "@type": "ListItem", "position": 3, "name": "What Is MariTide? Amgen's Once-Monthly GLP-1/GIP Drug Heads Into a Six-Study Phase 3 Program" },
-        ],
-      }} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "News", path: "/news" }, { name: "What Is MariTide? Amgen's Once-Monthly GLP-1/GIP Drug Heads Into a Six-Study Phase 3 Program" }])} />
 
       <div className="section max-w-3xl">
         <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { articles } from "@/data/news";
 
@@ -21,14 +22,7 @@ export const metadata = {
 export default function NewsPage() {
   return (
     <>
-      <JsonLd data={{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://profpeptide.com" },
-          { "@type": "ListItem", "position": 2, "name": "News" },
-        ],
-      }} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "News" }])} />
       <div className="section max-w-3xl">
         <span className="tag mb-3 inline-block">Latest Updates</span>
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">News</h1>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
@@ -30,7 +31,7 @@ export default function RetatrutideVsSemaglutidePage() {
   return (
     <>
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Retatrutide vs Semaglutide — GLP Triple Agonist vs Single Agonist","description":"Retatrutide vs Semaglutide research comparison: weight loss data, FDA status, cardiovascular evidence, dosing, and which to choose.","url":"https://profpeptide.com/compare/retatrutide-vs-semaglutide","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Comparisons","item":"https://profpeptide.com/compare"},{"@type":"ListItem","position":3,"name":"Retatrutide vs Semaglutide — GLP Triple Agonist vs Single Agonist"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Comparisons", path: "/compare" }, { name: "Retatrutide vs Semaglutide — GLP Triple Agonist vs Single Agonist" }])} />
     <div className="section max-w-4xl">
       <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Retatrutide vs Semaglutide &mdash; Triple Agonist vs Single Agonist Comparison</h1>

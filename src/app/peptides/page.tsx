@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { CategoryIcon } from "@/components/CategoryIcon";
 import { peptideCategories } from "@/data/peptideCategories";
@@ -18,7 +19,7 @@ export default function PeptidesPage({ searchParams }: { searchParams: { categor
 
   return (
     <>
-      <JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://profpeptide.com"},{"@type":"ListItem","position":2,"name":"Peptides"}]}} />
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Peptides" }])} />
     <div className="section">
       <div className="mb-10">
         <span className="tag mb-3 inline-block">Research Profiles</span>
