@@ -10,6 +10,16 @@ export interface VendorFacts {
   coa?: "per-batch" | "per-product" | "library" | "on-request" | "login-gated";
   /** Lab accreditation the vendor states, e.g. "ISO/IEC 17025". */
   labAccreditation?: string;
+  /** The third-party lab the vendor names (e.g. "Kovera Labs", "Janoshik"), or a short
+   *  third-party descriptor when the vendor states independent testing but names no single
+   *  lab (e.g. "three independent labs"). Rendered after "Yes — " in the testing index. */
+  labName?: string;
+  /** Analytical methods the vendor states it runs, e.g. "HPLC, mass spec". Free text. */
+  testMethods?: string;
+  /** Contaminant/safety panels the vendor states it runs, e.g. "Heavy metals, endotoxin". */
+  contaminants?: string;
+  /** True when the vendor states cold-chain / temperature-controlled shipping. */
+  coldChain?: boolean;
 }
 
 export interface Vendor {
@@ -53,6 +63,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.almightypeptides.com/?sld=profpeptide",
     detailPage: "/coupons/almighty-peptides",
+    facts: { testMethods: "HPLC, mass spec" },
   },
   "alpha-peptides": {
     name: "Alpha Peptides",
@@ -79,7 +90,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
     detailPage: "/coupons/amino-club",
-    facts: { purityStandard: "≥99%", coa: "per-batch", labAccreditation: "ISO/IEC 17025" },
+    facts: { purityStandard: "≥99%", coa: "per-batch", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals, sterility, endotoxin" },
     editorsPick: true,
   },
   "amino-x": {
@@ -89,7 +100,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://aminox.net/?coupon=PROF15",
     detailPage: "/coupons/amino-x",
-    facts: { coa: "on-request" },
+    facts: { coa: "on-request", purityStandard: "99%+", labName: "Kovera Labs", testMethods: "RP-HPLC, LC-MS" },
   },
   "ascension-peptides": {
     name: "Ascension Peptides",
@@ -98,7 +109,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ascensionpeptides.com/ref/profpeptide/",
     detailPage: "/coupons/ascension-peptides",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labName: "multi-stage" },
     bestDeal: true,
   },
   "behemoth-labz": {
@@ -108,7 +119,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://behemothlabz.com/aff/208/",
     detailPage: "/coupons/behemoth-labz",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", labName: "Colmaric Analyticals" },
   },
   "biolongevity-labs": {
     name: "Biolongevity Labs",
@@ -126,7 +137,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://biocollexresearch.com/?ref=profpeptidehq",
     detailPage: "/coupons/biocollex",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", purityStandard: "99%" },
   },
   "crush-research": {
     name: "Crush Research",
@@ -162,7 +173,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
     detailPage: "/coupons/glacier-aminos",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", labName: "independent US labs", testMethods: "Identity, mass, endotoxin", contaminants: "Endotoxin", coldChain: true },
     editorsPick: true,
   },
   "ignite-peptides": {
@@ -172,7 +183,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ignitepeptides.com/ref/profpeptide/",
     detailPage: "/coupons/ignite-peptides",
-    facts: { coa: "per-product" },
+    facts: { coa: "per-product", purityStandard: "99%+", labName: "US independent (ISO/GMP)" },
   },
   "la-peptides": {
     name: "LA Peptides",
@@ -226,6 +237,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://integrativepeptides.com/affiliate/profpeptide/",
     detailPage: "/coupons/integrative-peptides",
+    facts: { purityStandard: "≥99%", contaminants: "Heavy metals, endotoxin, residual solvents" },
   },
   "limitless-biotech": {
     name: "Limitless Biotech",
@@ -234,7 +246,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.limitlesslifenootropics.com/?_ef_transaction_id=&oid=1&affid=10477",
     detailPage: "/coupons/limitless-biotech",
-    facts: { coa: "per-product" },
+    facts: { coa: "per-product", purityStandard: "≥98.5%", labName: "three independent labs", testMethods: "HPLC, LC-MS", contaminants: "Sterility, endotoxin, contaminants" },
   },
   "midwest-peptide": {
     name: "Midwest Peptide",
@@ -252,7 +264,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://myoasislabs.com/?sld=profpeptide",
     detailPage: "/coupons/oasis-labs",
-    facts: { coa: "per-product" },
+    facts: { coa: "per-product", purityStandard: "99%", labName: "US labs", coldChain: true },
     editorsPick: true,
   },
   "particle-peptides": {
@@ -271,7 +283,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptide.partners/ref/48/",
     detailPage: "/coupons/peptide-partners",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labName: "TrustPointe, Kovera, BioRegen, Chromate", testMethods: "HPLC, USP <85>", contaminants: "Heavy metals, endotoxin, sterility" },
     editorsPick: true,
   },
   "peptide-giants": {
@@ -317,7 +329,7 @@ export const vendors: Record<string, Vendor> = {
     region: "CA",
     url: "https://puritypeptides.is/?sld=PROF15",
     detailPage: "/coupons/purity-peptides",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labName: "accredited (N. America)", testMethods: "HPLC, mass spec" },
   },
   "royal-peptides": {
     name: "Royal Peptides",
@@ -326,7 +338,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://royal-peptides.com/?ref=urunwnog",
     detailPage: "/coupons/royal-peptides",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labName: "cGMP/ISO labs" },
   },
   "science-based-peptides": {
     name: "Science Based Peptides",
@@ -344,7 +356,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
     detailPage: "/coupons/spartan-peptides",
-    facts: { purityStandard: "≥98%", coa: "per-batch" },
+    facts: { purityStandard: "≥98%", coa: "per-batch", labName: "independent", testMethods: "HPLC, mass spec" },
   },
   "swiss-chems": {
     name: "Swiss Chems",

@@ -41,9 +41,19 @@ const SURFACES = [
   { label: "/vendor-testing-index", path: "src/app/vendor-testing-index/page.tsx" },
 ];
 
+// A surface that DERIVES its rows from the registry (imports `vendors` and iterates it) is
+// complete by construction and can never drift — treat it as always in sync.
+function isRegistryDerived(src) {
+  return /from ["']@\/data\/vendors["']/.test(src) && /Object\.(entries|values|keys)\(vendors\)/.test(src);
+}
+
 let warned = false;
 for (const s of SURFACES) {
   const src = readFileSync(join(root, s.path), "utf8");
+  if (isRegistryDerived(src)) {
+    console.log(`check:surfaces OK — ${s.label} derives from the registry (all ${active.size} active vendors, complete by construction).`);
+    continue;
+  }
   const listed = new Set([...src.matchAll(/slug:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]));
   const missing = [...active].filter((slug) => !listed.has(slug)).sort();
   const stale = [...listed].filter((slug) => retired.has(slug) || !vendors[slug]).sort();

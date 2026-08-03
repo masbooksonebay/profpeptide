@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { vendors, type Vendor } from "@/data/vendors";
 
-// Every cell below is sourced from the vendor's own /coupons/<slug> page or
-// vendors.ts as of the "verified" date. "Pending" = not yet confirmed from a
-// public source (not a negative judgment). No cell is guessed or borrowed from
-// another vendor. Public COA URL is "Pending" for all rows because no vendor
-// currently publishes a direct, linkable COA-library URL on its page.
+// Rows are DERIVED from the vendor registry (src/data/vendors.ts) — every active vendor
+// auto-appears, so this surface can never silently drift out of completeness. Each cell maps
+// from that vendor's structured `facts`; "Pending" renders wherever a fact is absent, which is
+// honest (not a negative judgment) and matches the page's long-standing convention. Nothing is
+// inferred across vendors. Testing detail (methods, contaminants, cold-chain, named lab) was
+// migrated into facts from this page's former hand-typed table; see VendorFacts in vendors.ts.
 const VERIFIED = "Jul 1, 2026";
 
 interface Row {
@@ -22,30 +24,44 @@ interface Row {
   coldChain: string;
 }
 
-const rows: Row[] = [
-  { slug: "almighty-peptides", name: "Almighty Peptides", thirdParty: "Pending", publishedCoa: "Pending", batchCoa: "Pending", methods: "HPLC, mass spec", contaminants: "Pending", purity: "Pending", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "amino-club", name: "Amino Club", thirdParty: "Yes — ISO/IEC 17025 lab", publishedCoa: "Yes", batchCoa: "Yes", methods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals, sterility, endotoxin", purity: "99%+", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "amino-x", name: "Amino X", thirdParty: "Yes — Kovera Labs", publishedCoa: "Yes", batchCoa: "Yes", methods: "RP-HPLC, LC-MS", contaminants: "Pending", purity: "99%+", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "ascension-peptides", name: "Ascension Peptides", thirdParty: "Yes — multi-stage", publishedCoa: "Pending", batchCoa: "Pending", methods: "Pending", contaminants: "Pending", purity: "99%+", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "behemoth-labz", name: "Behemoth Labz", thirdParty: "Yes — Colmaric Analyticals", publishedCoa: "Pending", batchCoa: "Pending", methods: "Pending", contaminants: "Pending", purity: "Pending", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "biocollex", name: "BioCollex", thirdParty: "Pending", publishedCoa: "Pending", batchCoa: "Pending", methods: "Pending", contaminants: "Pending", purity: "99%", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "ez-peptides", name: "EZ Peptides", thirdParty: "Yes", publishedCoa: "Yes", batchCoa: "Yes", methods: "Pending", contaminants: "Pending", purity: "Pending", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "glacier-aminos", name: "Glacier Aminos", thirdParty: "Yes — independent US labs", publishedCoa: "Yes", batchCoa: "Yes", methods: "Identity, mass, endotoxin", contaminants: "Endotoxin", purity: "Pending", coaUrl: "Pending", coldChain: "Yes" },
-  { slug: "ignite-peptides", name: "Ignite Peptides", thirdParty: "Yes — US independent (ISO/GMP)", publishedCoa: "Yes", batchCoa: "Pending", methods: "Pending", contaminants: "Pending", purity: "99%+", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "integrative-peptides", name: "Integrative Peptides", thirdParty: "Yes", publishedCoa: "Pending", batchCoa: "Pending", methods: "Pending", contaminants: "Heavy metals, endotoxin, residual solvents", purity: "≥99%", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "limitless-biotech", name: "Limitless Biotech", thirdParty: "Yes — three independent labs", publishedCoa: "Yes", batchCoa: "Yes", methods: "HPLC, LC-MS", contaminants: "Sterility, endotoxin, contaminants", purity: "≥98.5%", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "midwest-peptide", name: "Midwest Peptide", thirdParty: "Yes", publishedCoa: "Yes", batchCoa: "Pending", methods: "Pending", contaminants: "Pending", purity: "99%+", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "oasis-labs", name: "Oasis Labs", thirdParty: "Yes — US labs", publishedCoa: "Yes", batchCoa: "Yes — per-vial QR", methods: "Pending", contaminants: "Pending", purity: "99%", coaUrl: "Pending", coldChain: "Yes" },
-  { slug: "peptide-partners", name: "Peptide Partners", thirdParty: "Yes — TrustPointe, Kovera, BioRegen, Chromate", publishedCoa: "Yes", batchCoa: "Yes", methods: "HPLC, USP <85>", contaminants: "Heavy metals, endotoxin, sterility", purity: "99%+", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "peptides-gg", name: "Peptides.gg", thirdParty: "Yes", publishedCoa: "Yes", batchCoa: "Yes", methods: "Pending", contaminants: "Pending", purity: "Pending", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "purerawz", name: "PureRawz", thirdParty: "Yes", publishedCoa: "Pending", batchCoa: "Pending", methods: "Pending", contaminants: "Pending", purity: "Pending", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "purity-peptides", name: "Purity Peptides", thirdParty: "Yes — accredited (N. America)", publishedCoa: "Yes", batchCoa: "Yes", methods: "HPLC, mass spec", contaminants: "Pending", purity: "99%+", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "royal-peptides", name: "Royal Peptides", thirdParty: "Yes — cGMP/ISO labs", publishedCoa: "Yes", batchCoa: "Yes", methods: "Pending", contaminants: "Pending", purity: "99%+", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "spartan-peptides", name: "Spartan Peptides", thirdParty: "Yes — independent", publishedCoa: "Pending", batchCoa: "Pending", methods: "HPLC, mass spec", contaminants: "Pending", purity: "≥98%", coaUrl: "Pending", coldChain: "Pending" },
-  // HIDDEN 2026-07-24: affiliate broken — row preserved; re-add when Synthesis returns with the non-affiliate vendor set (see vendors.ts `retired`).
-  // { slug: "synthesis-peptides", name: "Synthesis Peptides", thirdParty: "Yes", publishedCoa: "On request", batchCoa: "Yes", methods: "HPLC", contaminants: "Pending", purity: "≥99%", coaUrl: "Pending", coldChain: "Pending" },
-  { slug: "vital-core-research", name: "Vital Core Research", thirdParty: "Pending", publishedCoa: "Pending", batchCoa: "Pending", methods: "Pending", contaminants: "Pending", purity: "Pending", coaUrl: "Pending", coldChain: "Pending" },
-];
+// facts → row cells. publishedCoa and batchCoa both derive from the single `coa` access field:
+// any COA availability → published "Yes" (or "On request" / "Yes (login)"); only per-batch and
+// library COAs are treated as batch-specific. thirdParty shows the named lab / accreditation, or
+// "Pending" when the vendor states testing but names no lab on file.
+function deriveRow(slug: string, v: Vendor): Row {
+  const f = v.facts ?? {};
+  const thirdParty = f.labName
+    ? `Yes — ${f.labName}`
+    : f.labAccreditation
+    ? `Yes — ${f.labAccreditation}-accredited lab`
+    : "Pending";
+  const publishedCoa =
+    f.coa === "on-request"
+      ? "On request"
+      : f.coa === "login-gated"
+      ? "Yes (login)"
+      : f.coa
+      ? "Yes"
+      : "Pending";
+  const batchCoa = f.coa === "per-batch" || f.coa === "library" ? "Yes" : "Pending";
+  return {
+    slug,
+    name: v.name,
+    thirdParty,
+    publishedCoa,
+    batchCoa,
+    methods: f.testMethods ?? "Pending",
+    contaminants: f.contaminants ?? "Pending",
+    purity: f.purityStandard ?? "Pending",
+    coaUrl: "Pending", // no vendor currently publishes a direct, linkable COA-library URL
+    coldChain: f.coldChain ? "Yes" : "Pending",
+  };
+}
+
+const rows: Row[] = Object.entries(vendors)
+  .filter(([, v]) => !v.retired)
+  .map(([slug, v]) => deriveRow(slug, v))
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 const COLUMNS: { key: keyof Row; label: string }[] = [
   { key: "thirdParty", label: "Third-party testing" },
