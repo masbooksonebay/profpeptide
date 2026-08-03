@@ -41,6 +41,7 @@ export const couponDifferentiator: Record<string, string> = {
   "mile-high-compounds": "8x US third-party testing; public COAs.",
   "modern-aminos": "US; public per-batch COA library; ISO 17025 lab.",
   "nextgen-peptides": "≥99% HPLC, US third-party tested, COA library.",
+  "nova-labs": "≥99% HPLC/MS purity; per-batch COAs; GCC cold-chain.",
   "nura-peptide": "Every batch third-party tested; public COA library.",
   "99-purity-peptides": "≥99% purity, HPLC/MS verified; public COAs.",
   "oasis-labs": "Veteran-owned with QR-verified COAs on every vial.",

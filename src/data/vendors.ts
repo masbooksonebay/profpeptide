@@ -26,7 +26,7 @@ export interface Vendor {
   name: string;
   code: string;
   discount: string;
-  region: "US" | "CA" | "UK" | "EU" | "IS";
+  region: "US" | "CA" | "UK" | "EU" | "IS" | "AE";
   url: string;
   detailPage: string;
   editorsPick?: boolean;
@@ -44,6 +44,7 @@ export const regionFlag: Record<Vendor["region"], string> = {
   UK: "\uD83C\uDDEC\uD83C\uDDE7",
   EU: "\uD83C\uDDEA\uD83C\uDDFA",
   IS: "\uD83C\uDDEE\uD83C\uDDF8",
+  AE: "\uD83C\uDDE6\uD83C\uDDEA", // \uD83C\uDDE6\uD83C\uDDEA UAE \u2014 first Middle East / GCC vendor (NOVA Labs)
 };
 
 export const vendors: Record<string, Vendor> = {
@@ -427,6 +428,20 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/vital-core-research",
     facts: { coa: "per-product" },
   },
+  // Brand is "NOVA Labs"; storefront domain is nova-biolabs.com — both intentional, do NOT
+  // "fix" the name to match the domain. First Middle East / GCC vendor: region "AE" (UAE-based),
+  // which required adding AE to the region union + regionFlag + REGION_WORD. Affiliate commission
+  // is denominated in AED on their dashboard — a payout/FX consideration unique to this vendor;
+  // NEVER put commission or its currency on the page.
+  "nova-labs": {
+    name: "NOVA Labs",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "AE",
+    url: "https://www.nova-biolabs.com/?ref=kbandvut",
+    detailPage: "/coupons/nova-labs",
+    facts: { purityStandard: "≥99%", coa: "per-batch", labName: "Janoshik", testMethods: "HPLC, mass spec", coldChain: true },
+  },
   "nura-peptide": {
     name: "Nura Peptide",
     code: "PROFPEPTIDE15",
@@ -466,6 +481,7 @@ const REGION_WORD: Record<Vendor["region"], string> = {
   UK: "UK-based",
   EU: "EU-based",
   IS: "Iceland-based",
+  AE: "UAE-based",
 };
 
 const COA_PHRASE: Record<NonNullable<VendorFacts["coa"]>, string> = {

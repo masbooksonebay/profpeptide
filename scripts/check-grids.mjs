@@ -41,6 +41,7 @@ const KNOWN_ZERO_ROW = new Set([
   "99-purity-peptides",       // new coupon page; not yet onboarded to the price pull
   "legendary-peptides",       // new coupon page; not yet onboarded to the price pull
   "biopure-peptides",         // new coupon page; not yet onboarded to the price pull
+  "nova-labs",                // new coupon page; not yet onboarded to the price pull
 ]);
 
 // ── loaders ─────────────────────────────────────────────────────────────────
