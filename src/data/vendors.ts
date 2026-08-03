@@ -130,6 +130,19 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/biolongevity-labs",
     facts: { coa: "per-batch" },
   },
+  // BioPure's discount is 5% off — the LOWEST on the roster. That IS the discount; do NOT
+  // round it up anywhere. Site states ">99%" purity (homepage, stated consistently) and a COA
+  // with each product. Its WHO/GMP + ISO 9001 certification is for the MANUFACTURING facility,
+  // not a named testing lab — so labAccreditation is intentionally absent.
+  "biopure-peptides": {
+    name: "BioPure Peptides",
+    code: "PROFPEPTIDE",
+    discount: "5% off",
+    region: "US",
+    url: "https://biopurepeptides.com/?sld=profpeptide",
+    detailPage: "/coupons/biopure-peptides",
+    facts: { purityStandard: "≥99%", coa: "per-product" },
+  },
   biocollex: {
     name: "BioCollex",
     code: "PROFPEPTIDE",
@@ -238,6 +251,19 @@ export const vendors: Record<string, Vendor> = {
     url: "https://integrativepeptides.com/affiliate/profpeptide/",
     detailPage: "/coupons/integrative-peptides",
     facts: { purityStandard: "≥99%", contaminants: "Heavy metals, endotoxin, residual solvents" },
+  },
+  // Legendary publishes ONLY a generic "every product is third-party tested" claim — no COA
+  // library, no named/accredited lab, and no vendor-stated purity standard (the "99% pure" on
+  // their site is a customer review, not a company spec). Mark has an email describing a six-
+  // point panel + fentanyl screening, but NONE of that is public — do NOT add it to facts or
+  // copy. Facts intentionally omitted. Note the www host and the ?affiliate= param.
+  "legendary-peptides": {
+    name: "Legendary Peptides",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    url: "https://www.legendarypeptides.com/?affiliate=PROFPEPTIDE",
+    detailPage: "/coupons/legendary-peptides",
   },
   "limitless-biotech": {
     name: "Limitless Biotech",
