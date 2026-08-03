@@ -70,6 +70,7 @@ ALIAS = {
     'sermorlin': 'sermorelin',                             # oasis misspelling
     'igf1 lr3': 'igf-1-lr3', 'igf1lr3': 'igf-1-lr3',      # almighty/oasis (no separators)
     'igf 1lr3': 'igf-1-lr3',                              # treasure-coast "IGF-1LR3" (no hyphen before LR3)
+    'igf1 ir3': 'igf-1-lr3',                              # PureRx "IGF1-IR3" typo (I-for-L) — real IGF-1 LR3
     'smax': 'semax', 'tesa': 'tesamorelin', 'mt2': 'melanotan-ii',  # ignite abbreviations
     'oxyt': 'oxytocin',                                    # royal abbreviation
     # 2026-07 onboarding near-misses (LA / Peptidology / NextGen):
@@ -338,6 +339,24 @@ def _spartan(n):
     if re.match(r'GLP-1\s*\(\s*Sema', n, re.I): return (_c('Semaglutide', 'GLP-1(Sema)'), 'semaglutide', 'single')
     if re.match(r'GLP-2\s*\(\s*Tirz', n, re.I): return (_c('Tirzepatide', 'GLP-2(Tirz)'), 'tirzepatide', 'single')
     if re.match(r'GLP-3\s*\(\s*Reta', n, re.I): return (_c('Retatrutide', 'GLP-3(Reta)'), 'retatrutide', 'single')
+
+
+@_decoder('purerx-peptides')  # self-identifying: PureRx's OWN product descriptions name the compound
+# ("Reta 60mg" desc says Retatrutide, "Tirz" -> Tirzepatide, "Sema" -> Semaglutide). Verified from the
+# page, not decoded by analogy — the abbreviation is a truncation the description spells out in full.
+def _purerx(n):
+    if re.match(r'Reta\b', n, re.I): return (_c('Retatrutide', 'Reta'), 'retatrutide', 'single')
+    if re.match(r'Tirz\b', n, re.I): return (_c('Tirzepatide', 'Tirz'), 'tirzepatide', 'single')
+    if re.match(r'Sema\b', n, re.I): return (_c('Semaglutide', 'Sema'), 'semaglutide', 'single')
+
+
+@_decoder('peptide-giants')  # Kits excluded (bulk, not single-vial). Coded GLP SKUs UNVERIFIED: the
+# product pages state NO identity (no CAS/formula/name), so they are NOT decoded by analogy (Mark's rule).
+def _peptide_giants(n):
+    if re.search(r'\(\s*\d+\s*vials?|\d+\s*vials?\s*/?\s*kit', n, re.I): return ('EXCLUDE', None, None)  # 10-vial kits
+    if re.match(r'PG-3RT\s*\+\s*C', n, re.I): return ('PG-3RT+C [coded, UNVERIFIED]', None, 'blend_bk')
+    if re.match(r'PG-[0-9][A-Z]{2}\b', n, re.I): return (n.strip() + ' [coded, UNVERIFIED]', None, 'single_bk')
+    if re.match(r'GLP-3R\b', n, re.I): return ('GLP-3R [coded, UNVERIFIED]', None, 'single_bk')
 
 
 def decode(vendor, name):

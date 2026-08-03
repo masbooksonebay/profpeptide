@@ -37,8 +37,6 @@ const registryPath = join(root, "scripts/price-pull/pricepull/registry.py");
 // Kept in lockstep with reality by the stale-entry check at the end.
 const KNOWN_ZERO_ROW = new Set([
   "integrative-peptides",     // in registry (woo) but scope filter yields 0 peptide rows
-  "peptide-giants",           // new coupon page; not yet onboarded to the price pull
-  "purerx-peptides",          // new coupon page; not yet onboarded to the price pull
   "nura-peptide",             // new coupon page; not yet onboarded to the price pull
   "99-purity-peptides",       // new coupon page; not yet onboarded to the price pull
 ]);
