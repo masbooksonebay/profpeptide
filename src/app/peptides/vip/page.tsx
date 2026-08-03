@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
@@ -160,7 +161,15 @@ const sections = [
       "There is no broadly US-approved VIP product, and the synthetic form aviptadil is investigational. The 'VIP' sold by specialty peptide vendors is unapproved, research-grade material for laboratory use only. Quality varies across vendors; verify a Certificate of Analysis before purchase.",
     node: (
       <div className="space-y-4">
-        {/* TODO: add a VendorHighlightBlock here once VIP vendors are wired into the vendor data. Do NOT add a fabricated carrier/note or invent a code in the meantime — use the inline /coupons link below until vendors are added. */}
+        <VendorHighlightBlock
+          highlights={[
+            { slug: "amino-club", note: "ISO 17025 lab · batch COAs" },
+            { slug: "peptide-partners", note: "Multi-lab tested · batch COAs" },
+            { slug: "glacier-aminos", note: "Batch COAs · cold-chain shipping" },
+            { slug: "ascension-peptides", note: "99%+ purity · batch COAs" },
+            { slug: "peptide-giants", note: "Third-party tested by Janoshik" },
+          ]}
+        />
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prof. Peptide maintains a vetted list of peptide vendors with verified discount codes. See{" "}
           <Link href="/coupons" className="text-[#3A759F] hover:underline">

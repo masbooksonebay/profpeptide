@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
@@ -171,10 +172,19 @@ const sections = [
       "Cortagen is not approved for human use and is sold by specialty research peptide vendors for laboratory use only. Quality varies across vendors — verify a Certificate of Analysis before purchase.",
     node: (
       <div className="space-y-4">
+        <VendorHighlightBlock
+          highlights={[
+            { slug: "peptides-gg", note: "Per-batch COAs" },
+            { slug: "purerx-peptides", note: "Same-day dispatch (order by 2:30pm CST)" },
+            { slug: "peptidology", note: "ISO 17025 lab · batch COAs" },
+            { slug: "behemoth-labz", note: "Colmaric Analyticals COAs" },
+            { slug: "biolongevity-labs", note: "Per-batch COAs" },
+          ]}
+        />
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-          <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
-            Peptides.gg discount code (PROF15) &rarr;
+          The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. See{" "}
+          <Link href="/coupons" className="text-[#3A759F] hover:underline">
+            all verified discount codes &rarr;
           </Link>{" "}
           for current options.
         </p>
