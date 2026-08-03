@@ -13,6 +13,10 @@ import HeroSearch from "@/components/HeroSearch";
 // iOS app — the previous copy was the site-wide root-layout default that still
 // cited stale "40+ / 50+" numbers and omitted price comparison.
 const profileCount = peptideCategories.reduce((n, c) => n + c.peptides.length, 0);
+// App-surface count uses a floor-to-ten of the exact profile count: keeps the "60+" phrasing
+// but derived from profileCount, so it never overstates and auto-advances (→ "70+") as the
+// library grows. Exact profileCount is used where precision reads better (library card + stat).
+const appPeptideFloor = Math.floor(profileCount / 10) * 10;
 
 export const metadata = {
   description: `Independent peptide research: ${profileCount} compound profiles with cited studies, price comparison across ${activeVendorCount} vendors, a reconstitution calculator, and verified vendor discount codes.`,
@@ -23,7 +27,7 @@ const features = [
   {
     icon: "flask-outline",
     title: "Peptide Library",
-    desc: "Comprehensive profiles on 54 research peptides — mechanisms, half-lives, stacking protocols, and more.",
+    desc: `Comprehensive profiles on ${profileCount} research peptides — mechanisms, half-lives, stacking protocols, and more.`,
     href: "/peptides",
     cta: "Browse library",
   },
@@ -86,7 +90,7 @@ const features = [
   {
     icon: "phone-portrait-outline",
     title: "Get the App",
-    desc: "The all-in-one peptide tracker for iPhone — log doses, see estimated levels, run protocols, and search 60+ peptides by name or brand.",
+    desc: `The all-in-one peptide tracker for iPhone — log doses, see estimated levels, run protocols, and search ${appPeptideFloor}+ peptides by name or brand.`,
     href: "/app",
     cta: "Download",
   },
@@ -106,7 +110,7 @@ const features = [
 const priceComparisonCount = pricesIndex.filter((c) => c.indexable).length;
 
 const trust = [
-  { value: "62", label: "Peptide profiles" }, // /peptides route count
+  { value: `${profileCount}`, label: "Peptide profiles" }, // derived /peptides route count
   { value: `${priceComparisonCount}`, label: "Price comparisons" }, // indexable /prices/* pages
   // One verified code per active (non-retired) vendor -> activeVendorCount.
   { value: `${activeVendorCount}`, label: "Verified discount codes" },
@@ -148,8 +152,11 @@ export default function Home() {
           <h1 className="text-4xl sm:text-5xl font-bold text-[#16181B] dark:text-slate-100 leading-tight mb-5">
             Everything you need for<br className="hidden sm:block" /> peptide research, in one place
           </h1>
+          <p className="text-lg text-gray-500 dark:text-slate-400 max-w-2xl mx-auto mb-3 leading-relaxed">
+            Prof. Peptide is an independent research library covering {profileCount} peptides, with price comparison across {activeVendorCount} vendors and verified discount codes.
+          </p>
           <p className="text-lg text-gray-500 dark:text-slate-400 max-w-xl mx-auto mb-8 leading-relaxed">
-            A research library, verified vendor reviews, price comparison, discount codes, and a precision dosage calculator.
+            Plus verified vendor reviews and a precision dosage calculator.
           </p>
           <HeroSearch />
           {/* Order mirrors the header nav (Peptides · Vendors · Prices · Codes · Calculator).
@@ -248,7 +255,7 @@ export default function Home() {
               <p className="text-xs font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-wider mb-4">Now on iOS</p>
               <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">The all-in-one peptide tracker</h3>
               <p className="text-sm text-gray-500 dark:text-slate-400 mb-5 leading-relaxed">
-                Log doses, see estimated levels, calculate reconstitution, and search 60+ peptides by name or brand — all in one private iOS app.
+                Log doses, see estimated levels, calculate reconstitution, and search {appPeptideFloor}+ peptides by name or brand — all in one private iOS app.
               </p>
               <Link href="/app" className="btn-primary text-sm w-full text-center block">Get the App</Link>
             </div>
