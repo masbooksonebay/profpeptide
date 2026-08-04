@@ -34,6 +34,12 @@ MANUAL_EXCLUDE = {
                    "10mg vial ($9.18 = $0.92/mg). Not a vial price. (MK-777 is the same class — reported, "
                    "not yet excluded.)"),
     ],
+    "biopure-peptides": [
+        ("wolverine", "'BPC Wolverine + KPV - 14.5mg' is a 3-component blend (Wolverine BPC-157/TB-500 + KPV) "
+                      "that the shared classifier mis-reads as a KPV 14.5mg SINGLE ($129.99 = $8.97/mg of "
+                      "'KPV', wrong). Not in the blend registry, so excluded here rather than shipped as a bad "
+                      "single. (TSM = Tesamorelin by its th9507 slug is separately left undecoded/excluded.)"),
+    ],
 }
 
 

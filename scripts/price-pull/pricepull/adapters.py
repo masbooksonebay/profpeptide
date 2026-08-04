@@ -249,6 +249,110 @@ def purity_api(domain, path="/api/products"):
     return out
 
 
+# ----------------------------------------------------------------- Payload CMS (99 Purity)
+
+def _pp99_size_from_sku(sku):
+    """Size from a 99-Purity variant SKU. Grammar: <PREFIX>-<SIZE>[-K<vials>] — SIZE is a bare
+    number = mg (sprays carry an explicit 'mcg'); the -K5/-K10 kit suffix is stripped first.
+    Returns e.g. '10mg' / '100mcg', or None (blends GLOW/KLOW, IGF-1-LR3-S, BAC-WATER-3ML)."""
+    if not sku:
+        return None
+    _z = lambda n: (n.lstrip('0') or '0') if n.isdigit() else n   # "05" -> "5" (leading-zero fix)
+    m = re.search(r'(\d+(?:\.\d+)?)\s*(mg|mcg)\b', sku, re.I)     # explicit unit (TIRZ-10MG, ...-100mcg)
+    if m:
+        return _z(m.group(1)) + m.group(2).lower()
+    core = re.sub(r'-K\d+$', '', sku, flags=re.I)                 # strip the kit suffix
+    m = re.search(r'-(\d+(?:\.\d+)?)$', core)                     # trailing bare number = mg
+    return (_z(m.group(1)) + 'mg') if m else None
+
+
+# 99 Purity's variant-less products carry no size in SKU or name. For NON-SPRAY vials only, we
+# size from the description IFF it states exactly ONE mg/mcg figure that is NOT in a per-ml /
+# per-dose / per-serving / reconstitution / dilution context (a concentration or protocol number
+# is not a vial size). This mirrors the accepted Modern-Aminos single-dose rule but adds the
+# stricter context guard, and is SCOPED TO THIS ADAPTER: the shared extract_rows generic desc
+# fallback is untouched and no other vendor inherits this stricter variant.
+_PP99_BADCTX = re.compile(r'per\s*ml|/\s*ml|mg\s*/\s*ml|per\s*dose|per\s*serving|reconstitut|dilut', re.I)
+
+
+def _pp99_size_from_desc(desc):
+    if not desc:
+        return None
+    text = re.sub(r'<[^>]+>', ' ', desc)
+    figs = re.findall(r'\d+(?:\.\d+)?\s*(?:mg|mcg)\b', text, re.I)
+    distinct = {f.lower().replace(' ', '') for f in figs}
+    if len(distinct) != 1:
+        return None                                              # zero or >1 figure -> not a vial size
+    for m in re.finditer(r'\d+(?:\.\d+)?\s*(?:mg|mcg)\b', text, re.I):
+        if _PP99_BADCTX.search(text[max(0, m.start() - 25):m.end() + 25]):
+            return None                                          # concentration / protocol number
+    return next(iter(distinct))
+
+
+def payload_99purity(domain, path="/api/products", limit=100):
+    """99 Purity Peptides — Next.js + Payload CMS on Vercel (NOT WooCommerce/CINC; the old
+    'wc/store 403' note pointed at an API that doesn't exist here). The storefront's own public
+    REST endpoint /api/products returns the whole catalog as {"docs":[...]} with no key/auth.
+
+    CURRENCY: the API has NO currency field and there are no Payload globals, but the storefront
+    states verbatim 'All prices are in USD' (the ETH/USDT selector is a checkout payment rail, not
+    the list currency). USD is therefore carried EXPLICITLY here as a recorded basis, not inherited
+    from the silent per-adapter default. PRICES are whole DOLLARS (not cents) — emitted as-is.
+
+    SIZE: variant SKU (_pp99_size_from_sku); variant-less NON-spray vials via the guarded
+    description rule (_pp99_size_from_desc). KITS: variant.isKit (== the -K5/-K10 suffix, verified
+    0 mismatches; K5/K10 priced exactly 5x/10x the single) -> marked '<n>-vial kit' so extract_rows
+    drops them in favor of the single. SPRAYS: sized ones (SKU) flow to the spray section; variant-
+    less sprays carry no size and are DROPPED here (never name/desc-guessed — a format we exclude)."""
+    data = json.loads(http_get(f"https://{domain}{path}?limit={limit}"))
+    docs = data.get('docs', data if isinstance(data, list) else [])
+    out, dropped_sprays = [], []
+    for p in docs:
+        name = (p.get('name') or '').strip()
+        slug = p.get('slug') or ''
+        desc = p.get('description') or ''
+        is_spray = 'spray' in name.lower()
+        # Multi-compound blends (name has "/" or "+") carry a CONCATENATED component-dose code in the
+        # SKU (TIPA-0603 = 6mg+3mg, BPCTB-0505 = 5mg+5mg) that is NOT a vial size — suppress it so the
+        # blend track shows total-mg-from-name (or "—") instead of a garbage "0603mg".
+        is_blend = ('/' in name) or ('+' in name)
+        variants = p.get('variants') or []
+        rows = []
+        if variants:
+            for v in variants:
+                sku = v.get('sku') or ''
+                size = None if is_blend else _pp99_size_from_sku(sku)
+                attrs = [("Size", size or "")]
+                if v.get('isKit') or re.search(r'-K\d+$', sku, re.I):
+                    kc = re.search(r'-K(\d+)$', sku, re.I)
+                    attrs.append(("Pack", f"{kc.group(1) if kc else ''}-vial kit"))
+                vprice, vsale = v.get('price'), v.get('salePrice')
+                cur = vsale if (vsale is not None and vprice is not None and vsale < vprice) else vprice
+                rows.append({'attrs': attrs, 'price': cur, 'regular': vprice,
+                             'in_stock': (v.get('stock') or 0) > 0})
+        else:
+            if is_spray:                                          # variant-less spray = no size -> drop
+                dropped_sprays.append(name)
+                continue
+            nm = re.search(r'(\d+(?:\.\d+)?)\s*(mg|mcg)\b', name, re.I)
+            # blends: no name/desc size (route to blend track by name); else name-mg, then guarded desc.
+            size = "" if is_blend else ((nm.group(1) + nm.group(2).lower()) if nm else _pp99_size_from_desc(desc))
+            pprice, psale = p.get('price'), p.get('salePrice')
+            cur = psale if (psale is not None and pprice is not None and psale < pprice) else pprice
+            rows.append({'attrs': [("Size", size or "")], 'price': cur, 'regular': pprice,
+                         'in_stock': (p.get('stock') or 0) > 0})
+        if not rows:
+            continue
+        out.append({'name': name, 'slug': f"products/{slug}", 'description': desc,
+                    'currency': 'USD',   # explicit basis: storefront states "All prices are in USD"
+                    'price': rows[0]['price'], 'regular': rows[0]['regular'],
+                    'in_stock': any(r['in_stock'] for r in rows), 'variations': rows})
+    if dropped_sprays:
+        print(f"[payload_99purity] {domain}: dropped {len(dropped_sprays)} variant-less spray(s) "
+              f"(no SKU/name size, never desc-guessed): {', '.join(dropped_sprays)}", file=sys.stderr)
+    return out
+
+
 # ----------------------------------------------------------------- Next.js
 
 def _sitemap_products(domain, sitemap="sitemap.xml", pattern=r'/products/[a-z0-9-]+$', cookie=None):
@@ -551,7 +655,8 @@ def gatsby_pagedata(domain, page_path="/page-data/all-peptides/page-data.json", 
 
 
 ADAPTERS = {'woo': woo, 'purity_api': purity_api, 'nextjs': nextjs,
-            'nextjs_feed': nextjs_feed, 'gatsby_pagedata': gatsby_pagedata}
+            'nextjs_feed': nextjs_feed, 'gatsby_pagedata': gatsby_pagedata,
+            'payload_99purity': payload_99purity}
 
 
 def fetch(adapter, domain, **opts):

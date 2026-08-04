@@ -2778,3 +2778,142 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ### Sprays: none
 ### Excluded: clinical/other, no parseable size (Rule 4), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+
+
+## VENDOR: 99 Purity Peptides
+- **slug:** 99-purity-peptides | **code:** PROFPEPTIDE10 | **discount:** 10% off | **url:** 99puritypeptides.com
+- **traffic:** (not pulled) | **pulled:** August 4 2026
+- **sale posture:** No product-level sale in the API (salePrice null across the catalog); re-verify at write.
+
+### Single compounds
+| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| 5-Amino-1MQ | 50mg | $70.00 | $1.40 | — | ✓ | products/5-amino-1mq |
+| 5-Amino-1MQ | 150mg | $90.00 | $0.60 | — | ✓ | products/5-amino-1mq |
+| AOD-9604 | 5mg | $70.00 | $14.00 | — | ✓ | products/aod-9604-5mg-10mg |
+| AOD-9604 | 10mg | $105.00 | $10.50 | — | ✓ | products/aod-9604-5mg-10mg |
+| BPC-157 | 5mg | $55.00 | $11.00 | — | ✓ | products/bpc-157 |
+| BPC-157 | 10mg | $75.00 | $7.50 | — | ✓ | products/bpc-157 |
+| Cagrilintide | 10mg | $90.00 | $9.00 | — | ✓ | products/cagrilintide |
+| Cibinetide | 10mg | $70.00 | $7.00 | — | ✓ | products/ara-290-10mg |
+| CJC-1295 | 5mg | $75.00 | $15.00 | — | ✓ | products/cjc-1295-dac-5mg |
+| CJC-1295 | 10mg | $75.00 | $7.50 | — | ✓ | products/cjc-1295-no-dac-10mg |
+| DSIP | 10mg | $60.00 | $6.00 | — | ✓ | products/dsip-delta-sleep-inducing-peptide |
+| Epitalon | 10mg | $60.00 | $6.00 | — | ✓ | products/epithalon |
+| Epitalon | 50mg | $85.00 | $1.70 | — | ✓ | products/epithalon |
+| GHK-Cu | 50mg | $60.00 | $1.20 | — | ✓ | products/ghk-cu |
+| GHK-Cu | 100mg | $80.00 | $0.80 | — | ✓ | products/ghk-cu |
+| GHRP-2 | 10mg | $65.00 | $6.50 | — | ✓ | products/ghrp-2-10mg |
+| GHRP-6 | 10mg | $65.00 | $6.50 | — | ✓ | products/ghrp-6-10mg |
+| Glutathione | 600mg | $65.00 | $0.11 | — | ✓ | products/glutathione-600-1500 |
+| Glutathione | 1500mg | $85.00 | $0.06 | — | ✓ | products/glutathione-600-1500 |
+| Ipamorelin | 5mg | $65.00 | $13.00 | — | ✓ | products/ipamorelin |
+| Ipamorelin | 10mg | $85.00 | $8.50 | — | ✓ | products/ipamorelin |
+| Kisspeptin-10 | 10mg | $75.00 | $7.50 | — | ✓ | products/kisspeptin |
+| KPV | 10mg | $70.00 | $7.00 | — | ✓ | products/kpv |
+| Melanotan I | 10mg | $55.00 | $5.50 | — | ✓ | products/mt-1-10mg |
+| Melanotan II | 10mg | $55.00 | $5.50 | — | ✓ | products/mt-2-melanotan-ii |
+| MOTS-C | 10mg | $70.00 | $7.00 | — | ✓ | products/mots-c |
+| MOTS-C | 40mg | $115.00 | $2.88 | — | ✓ | products/mots-c |
+| PT-141 | 10mg | $70.00 | $7.00 | — | ✓ | products/pt-141-bremelanotide |
+| Retatrutide | 10mg | $105.00 | $10.50 | — | ✓ | products/retatrutide |
+| Retatrutide | 20mg | $145.00 | $7.25 | — | ✓ | products/retatrutide |
+| Retatrutide | 30mg | $185.00 | $6.17 | — | ✓ | products/retatrutide |
+| Retatrutide | 60mg | $285.00 | $4.75 | — | ✓ | products/retatrutide |
+| Selank | 10mg | $65.00 | $6.50 | — | ✓ | products/selank |
+| Semaglutide | 5mg | $65.00 | $13.00 | — | ✓ | products/semaglutide |
+| Semaglutide | 10mg | $85.00 | $8.50 | — | ✓ | products/semaglutide |
+| Semaglutide | 20mg | $125.00 | $6.25 | — | ✓ | products/semaglutide |
+| Semaglutide | 30mg | $165.00 | $5.50 | — | ✓ | products/semaglutide |
+| Semax | 10mg | $65.00 | $6.50 | — | ✓ | products/semax |
+| Semax | 30mg | $95.00 | $3.17 | — | ✓ | products/semax |
+| Sermorelin | 10mg | $80.00 | $8.00 | — | ✓ | products/sermorelin |
+| Sermorelin | 20mg | $115.00 | $5.75 | — | ✓ | products/sermorelin |
+| SNAP-8 [backlog] | 10mg | $70.00 | $7.00 | — | ✓ | products/snap-8 |
+| SNAP-8 [backlog] | 20mg | $90.00 | $4.50 | — | ✓ | products/snap-8 |
+| SS-31 | 10mg | $85.00 | $8.50 | — | ✓ | products/ss-31-elamipretide |
+| SS-31 | 50mg | $175.00 | $3.50 | — | ✓ | products/ss-31-elamipretide |
+| TB-500 | 5mg | $65.00 | $13.00 | — | ✓ | products/tb-500 |
+| TB-500 | 10mg | $100.00 | $10.00 | — | ✓ | products/tb-500 |
+| Tesamorelin | 10mg | $95.00 | $9.50 | — | ✓ | products/tesamorelin |
+| Tesamorelin | 20mg | $135.00 | $6.75 | — | ✓ | products/tesamorelin |
+| Thymosin Alpha-1 | 10mg | $80.00 | $8.00 | — | ✓ | products/thymosin-alpha-1 |
+| Tirzepatide | 10mg | $75.00 | $7.50 | — | ✓ | products/tirzepatide |
+| Tirzepatide | 20mg | $100.00 | $5.00 | — | ✓ | products/tirzepatide |
+| Tirzepatide | 30mg | $150.00 | $5.00 | — | ✓ | products/tirzepatide |
+| Tirzepatide | 60mg | $225.00 | $3.75 | — | ✓ | products/tirzepatide |
+| VIP | 10mg | $85.00 | $8.50 | — | ✓ | products/vip-vasoactive-intestinal-peptide |
+
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock |
+| --- | --- | --- | --- | --- | --- |
+| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | — | $80.00 | not published | ✓ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | — | $115.00 | not published | ✓ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | — | $135.00 | not published | ✓ |
+| Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | — | $95.00 | not published | ✓ |
+| Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | — | $165.00 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | — | $80.00 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | — | $115.00 | not published | ✓ |
+
+### Sprays / strips (separate format, no $/mg)
+| Product | Size | Base | Stock |
+| --- | --- | --- | --- |
+| BPC-157 (spray) | 5mg | $75.00 | ✓ |
+| BPC-157 (spray) | 10mg | $85.00 | ✓ |
+| Epitalon (spray) | 10mg | $75.00 | ✓ |
+| Epitalon (spray) | 50mg | $85.00 | ✓ |
+| GHK-Cu (spray) | 50mg | $75.00 | ✓ |
+| GHK-Cu (spray) | 100mg | $85.00 | ✓ |
+| NAD+ (spray) | — | $75.00 | ✓ |
+| NAD+ (spray) | — | $85.00 | ✓ |
+| Selank (spray) | 100mcg | $75.00 | ✓ |
+| Selank (spray) | 300mcg | $85.00 | ✓ |
+
+### Excluded: no parseable size (Rule 4), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+
+---
+
+
+
+## VENDOR: BioPure Peptides
+- **slug:** biopure-peptides | **code:** PROFPEPTIDE | **discount:** 5% off | **url:** biopurepeptides.com
+- **traffic:** (not pulled) | **pulled:** August 4 2026
+- **sale posture:** No product-level sale (on_sale=false across all 38); re-verify at write.
+
+### Single compounds
+| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| AOD-9604 | 10mg | $74.99 | $7.50 | — | ✓ | product/aod-9604-10/ |
+| BPC-157 | 10mg | $79.99 | $8.00 | — | ✓ | product/bpc-157-10mg/ |
+| Cibinetide | 20mg | $89.99 | $4.50 | — | ✓ | product/ara-290-20mg/ |
+| DSIP | 5mg | $59.99 | $12.00 | — | ✗ | product/dsip/ |
+| DSIP | 10mg | $99.99 | $10.00 | — | ✓ | product/dsip-10mg/ |
+| Epitalon | 50mg | $149.99 | $3.00 | — | ✓ | product/epithalon-epitalon/ |
+| GHK-Cu | 50mg | $74.99 | $1.50 | — | ✓ | product/ghk-cu-lyophilized/ |
+| Glutathione | 600mg | $99.99 | $0.17 | — | ✗ | product/l-glutathione-600mg/ |
+| Glutathione | 6000mg | $119.99 | $0.02 | — | ✓ | product/l-glutathione-6000mg/ |
+| Ipamorelin | 5mg | $94.99 | $19.00 | — | ✓ | product/th9507-ipamorelin-blend/ |
+| KPV | 10mg | $79.99 | $8.00 | — | ✓ | product/kpv-10mg/ |
+| Melanotan II | 10mg | $79.99 | $8.00 | — | ✓ | product/melanotan-ii/ |
+| MOTS-C | 10mg | $79.99 | $8.00 | — | ✓ | product/mots-c/ |
+| NAD+ | 1000mg | $169.99 | $0.17 | — | ✓ | product/nad/ |
+| PT-141 | 10mg | $64.99 | $6.50 | — | ✓ | product/pt-141/ |
+| Selank | 5mg | $49.99 | $10.00 | — | ✓ | product/selank-5mg/ |
+| Selank | 20mg | $74.99 | $3.75 | — | ✓ | product/selank-20mg/ |
+| Semax | 20mg | $84.99 | $4.25 | — | ✓ | product/semax-20mg/ |
+| SS-31 | 10mg | $99.99 | $10.00 | — | ✓ | product/ss-31/ |
+| TB-500 | 10mg | $104.99 | $10.50 | — | ✓ | product/tb500-thymosin-beta-4-10mg/ |
+| Thymalin [backlog] | 5mg | $84.99 | $17.00 | — | ✓ | product/thymosin-alpha-1/ |
+| Thymalin [backlog] | 10mg | $109.99 | $11.00 | — | ✓ | product/ta1-complex-thymalin/ |
+
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock |
+| --- | --- | --- | --- | --- | --- |
+| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $109.99 | not published | ✓ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | — | $139.99 | not published | ✓ |
+
+### Sprays: none
+### Excluded: manually excluded — 'BPC Wolverine + KPV - 14.5mg' is a 3-component blend (Wolverine BPC-157/TB-500 + KPV) that the shared classifier mis-reads as a KPV 14.5mg SINGLE ($129.99 = $8.97/mg of 'KPV', wrong). Not in the blend registry, so excluded here rather than shipped as a bad single. (TSM = Tesamorelin by its th9507 slug is separately left undecoded/excluded.), no parseable size (Rule 4), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+
+---
+

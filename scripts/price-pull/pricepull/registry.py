@@ -289,22 +289,35 @@ VENDORS = {
               "'Tirzepatide' is self-named (no decode). Also sells Pen (pre-filled) and nasal-spray forms alongside "
               "vials — see dry-run for how the variation detector groups them. Publishes public per-batch COAs "
               "(Janoshik/Uzorak). Query-param ?ref= URL (TS-side at grid-wire)."),
-    # ---- CINC (Cloudflare-blocks the Store API) — refresh.py SKIPS these; pull manually (aero pattern) ----
-    "99-purity-peptides": dict(name="99 Purity Peptides", domain="99puritypeptides.com", adapter="cinc",
+    # ---- Payload CMS storefront (public /api/products) ----
+    "99-purity-peptides": dict(name="99 Purity Peptides", domain="99puritypeptides.com", adapter="payload_99purity",
         variation_model="dosage", coded_decoder=False,
-        sale_posture="Re-verify at manual pull.",
-        notes="⚠️ Store API Cloudflare-403'd — CINC read-only from embedded storefront JSON (aero pattern); refresh.py "
-              "cannot pull it. Affiliate URL is PATH-BASED (/ref/profpeptide). GRID DISCOUNT NOTE: prices are computed "
-              "'after 10%' per Mark's published figure even though their dashboard shows 15% — if the real rate is 15%, "
-              "99 Purity displays HIGH and ranks worse than deserved on /prices. Deliberate (understating is safe); do "
-              "NOT 'correct' without new evidence."),
-    "biopure-peptides": dict(name="BioPure Peptides", domain="biopurepeptides.com", adapter="cinc",
+        sale_posture="No product-level sale in the API (salePrice null across the catalog); re-verify at write.",
+        notes="Onboarded 2026-08 (previously mislabeled 'cinc/Cloudflare-403' — WRONG: it is NOT WooCommerce. Platform is "
+              "Next.js + Payload CMS on Vercel; the wc/store 403 was a non-existent API, not a wall). Full 62-product "
+              "catalog is public at /api/products as {\"docs\":[...]}, no key/auth (adapter payload_99purity). "
+              "CURRENCY: API has NO currency field and no Payload globals, but the storefront states 'All prices are in USD' "
+              "(ETH/USDT are checkout payment rails, not list currency) — carried explicitly as USD, prices are whole DOLLARS "
+              "(not cents). SIZE: variant SKU '<PREFIX>-<mg>[-K5/-K10]' (sprays -<n>mcg); variant-less NON-spray vials via a "
+              "guarded single-description-mg rule (rejects >1 figure or per-ml/dose/serving/recon/dilute context) — SCOPED to "
+              "this adapter, not the shared fallback. KITS: variant.isKit == the -K5/-K10 suffix (0 mismatches; K5/K10 priced "
+              "exactly 5x/10x the single) -> dropped. SPRAYS: 5 SKU-sized -> spray section; 8 variant-less sprays dropped (no "
+              "size guessing). Affiliate URL is PATH-BASED (/ref/profpeptide). GRID DISCOUNT NOTE: prices computed 'after 10%' "
+              "per Mark's published figure even though their dashboard shows 15% — deliberate (understating is safe); do NOT "
+              "'correct' without new evidence."),
+    "biopure-peptides": dict(name="BioPure Peptides", domain="biopurepeptides.com", adapter="woo",
         variation_model="dosage", coded_decoder=False,
-        sale_posture="Re-verify at manual pull.",
-        notes="⚠️ Store API Cloudflare-403'd (server: cloudflare, HTTP 403) — CINC read-only from embedded storefront "
-              "JSON (aero pattern); refresh.py cannot pull it (platform-detect optimistically said woo, but the wc/store "
-              "API is walled). Coded GLPs: BioLean GLP-1 / GLP-2 GIP / GLP-3 GGG — VERIFY identity from BioPure's own "
-              "product pages/COAs at manual pull; do NOT decode by the GIP/GGG suffix. Affiliate URL uses ?sld=."),
+        sale_posture="No product-level sale (on_sale=false across all 38); re-verify at write.",
+        notes="Onboarded 2026-08 (previously 'cinc/Cloudflare-403' — the wc/store Store API is actually REACHABLE with a "
+              "browser UA: 200 x4 consecutive, standard woo shape, 38 simple products, all USD; the earlier 403 was a "
+              "transient Cloudflare bot-challenge, not a permanent wall). Standard woo adapter, no new code. "
+              "⚠️ IP-DEPENDENCE: the pass may be IP- as well as UA-dependent (Cloudflare weights ASN/IP reputation; GitHub "
+              "Actions runs on Azure datacenter IPs that are challenged harder than residential). The PULL runs locally so "
+              "onboarding is fine, but if check:vendors (monthly CI) 403s the biopure link, treat it as a possible "
+              "Cloudflare-vs-datacenter block, NOT a vendor outage — re-verify from another IP before concluding it's down. "
+              "⚠️ Coded GLPs (BioLean GLP-1, GLP-2 GIP, GLP-3 GGG) stay [coded, UNVERIFIED] and OUT of the grid: their Store-API "
+              "descriptions are generic boilerplate with no CAS/formula/mechanism/name — that does NOT clear the decode "
+              "hierarchy. Do NOT decode by the GIP/GGG suffix; a per-page + COA check happens separately. Affiliate URL uses ?sld=."),
 }
 
 # permanently or partially unpullable — do NOT keep retrying (see doc's blocked section)

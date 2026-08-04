@@ -54,11 +54,10 @@ const UNREACHABLE = new Set([
 ]);
 
 // Not onboarded YET — slug -> { reason, since: "YYYY-MM-DD" }. Loud + dated, never a silent pass.
-// The three woo vendors onboarded 2026-08-03 (Nura, Legendary, NOVA) came out the moment their
-// rows landed; only the two CINC vendors remain, pending a manual aero-pattern pull.
+// 99-purity + biopure onboarded 2026-08-04 (the "cinc/Cloudflare-403" labels were both wrong:
+// 99-purity is Next.js+Payload with a public /api/products, and biopure's woo Store API is
+// reachable with a browser UA) — removed the moment their rows landed.
 const ONBOARDING_BACKLOG = {
-  "99-purity-peptides": { reason: "CINC — Cloudflare-blocks the Store API; needs a manual aero-pattern pull", since: "2026-08-03" },
-  "biopure-peptides":   { reason: "CINC — Cloudflare-blocks the Store API + homepage; needs a manual aero-pattern pull", since: "2026-08-03" },
   // NOVA reports prices in AED; the pull stored them as USD (~3.67x inflated). Pulled its rows
   // from price data as immediate mitigation. Blocked pending a currency decision (refuse non-USD
   // at pull / convert / render native) — see the currency-handling report.
