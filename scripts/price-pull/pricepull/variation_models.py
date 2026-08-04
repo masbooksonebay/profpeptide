@@ -37,7 +37,9 @@ def parse_size(s):
 
 def form_of(values):
     """Delivery form from variation attribute values."""
-    j = ' '.join(values).lower()
+    # Guard against null attribute values — some catalogs (e.g. Nura) ship a variation with a
+    # missing/None attribute value, which would crash the join. Treat None as an empty token.
+    j = ' '.join(v for v in values if v).lower()
     if re.search(r'spray|nasal', j):
         return 'spray'
     if re.search(r'tablet|sublingual|capsule|troche|\boral\b|cream|\bgel\b|lozenge', j):
@@ -47,8 +49,10 @@ def form_of(values):
 
 def is_kit(values):
     """True if a variation is a multi-vial kit / bulk pack (not a single unit)."""
-    j = ' '.join(values).lower()
-    return bool(re.search(r'\bkit\b|x ?10 ?vials|\b(?:[2-9]|1[0-9]) ?vials\b|bulk', j))
+    j = ' '.join(v for v in values if v).lower()  # None-safe (see form_of)
+    # [\s-]? so hyphenated pack labels match too — Nura writes "10-vials"/"3-vials" (not "10 vials"),
+    # which the space-only pattern missed, leaking multi-vial kits (e.g. a $945 10-vial pack).
+    return bool(re.search(r'\bkit\b|x[\s-]?10[\s-]?vials|\b(?:[2-9]|1[0-9])[\s-]?vials?\b|bulk', j))
 
 
 _KIT10 = re.compile(r'(\d+(?:\.\d+)?)\s*mg\s*x\s*10\s*vials', re.I)
