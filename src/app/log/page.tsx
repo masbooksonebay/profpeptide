@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { computeReconstitution, type DoseUnit } from "@/lib/reconstitution";
+import { APP_STORE_URL } from "@/lib/app-store";
 import { mgDefaultFor } from "@/data/compounds";
 import CompoundCombobox from "@/components/CompoundCombobox";
 import {
@@ -221,7 +222,7 @@ export default function LogPage() {
           <div className="flex flex-shrink-0 gap-3">
             <Link href="/app" className="btn-outline text-sm whitespace-nowrap">Learn more</Link>
             <a
-              href="https://apps.apple.com/app/prof-peptide/id6761995269"
+              href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-sm whitespace-nowrap"

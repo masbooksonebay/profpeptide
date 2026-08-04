@@ -2,10 +2,11 @@ import Image from "next/image";
 import { Icon } from "@/components/CategoryIcon";
 import { buildPageMetadata } from "@/lib/seo";
 import { appPeptideFloor } from "@/data/peptideCategories";
+import { APP_STORE_URL } from "@/lib/app-store";
 
 export const metadata = buildPageMetadata({
   path: "/app",
-  title: "Prof. Peptide — All-in-One Peptide Tracker for iOS",
+  title: "Peptide Tracker App for iOS | Prof. Peptide",
   description: `The all-in-one peptide tracker for iPhone: log doses, see estimated levels, calculate reconstitution, and search ${appPeptideFloor}+ peptides by name or brand.`,
   ogTitle: "Prof. Peptide — All-in-One Peptide Tracker",
   ogDescription: `Log doses, see estimated levels, calculate reconstitution, and search ${appPeptideFloor}+ peptides by name or brand. Free on the App Store.`,
@@ -16,8 +17,6 @@ export const metadata = buildPageMetadata({
     alt: "Prof. Peptide iOS App — All-in-One Peptide Tracker",
   },
 });
-
-const APP_STORE_URL = "https://apps.apple.com/app/prof-peptide/id6761995269";
 
 // Each panel is a full App Store slide with its headline baked in (700x1517).
 // `caption` is the supporting sentence only — never a duplicate of the headline.
