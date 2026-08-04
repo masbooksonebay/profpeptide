@@ -63,6 +63,9 @@ const ONBOARDING_BACKLOG = {
   // from price data as immediate mitigation. Blocked pending a currency decision (refuse non-USD
   // at pull / convert / render native) — see the currency-handling report.
   "nova-labs":          { reason: "non-USD (AED) — excluded from price data pending currency handling", since: "2026-08-04" },
+  // woo store detected, but the Store API surfaces supplies (cold packs, crates, diluent) ahead of
+  // the peptide catalog (1 product on page 1) — needs a pull pass that reaches the real compounds.
+  "licensed-peptides":  { reason: "woo Store API returns supplies before peptides — needs a pull that surfaces the compound catalog", since: "2026-08-04" },
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────

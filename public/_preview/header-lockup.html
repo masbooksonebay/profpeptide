@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Header lockup — glasses (raster) + wordmark</title>
+<style>
+ @font-face{font-family:'Inter';src:url('/fonts/Inter-ExtraBold.ttf');font-weight:800;font-display:block;}
+ body{font-family:Inter,-apple-system,sans-serif;margin:0;background:#fff;color:#16181B}
+ .wrap{max-width:900px;margin:0 auto;padding:36px 28px 80px}
+ h2{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#6b7280;margin:30px 0 10px}
+ .src{color:#9aa4b2;font-size:12px;margin:0 0 8px}
+ .bar{display:flex;align-items:center;height:72px;padding:0 22px;border-bottom:1px solid #eee}
+ .bar.dark{background:#0f172a;border-color:#1e293b}
+ .lock{display:flex;align-items:center;gap:10px}
+ .mark{display:block;flex:0 0 auto}        /* raster placed as-is: no tile wrapper, no radius, no padding */
+ .word{font-weight:800;letter-spacing:-.02em;color:#16181B;line-height:1}
+ .dark .word{color:#f1f5f9}
+ .cap{font-size:12px;color:#9aa4b2;margin-top:6px}
+</style></head><body><div class="wrap">
+ <p class="src">Glasses raster placed and scaled only — no tile wrapper, no padding, no inset (the PNG carries its own #3A759F background).</p>
+
+ <h2>Header lockup — glasses mark + wordmark (nav bar, 72px tall), mark = 44px</h2>
+ <div class="bar"><div class="lock"><img class="mark" src="favicon-b.png" width="44" height="44"><span class="word" style="font-size:24px">Prof. Peptide</span></div></div>
+ <div class="bar dark"><div class="lock"><img class="mark" src="favicon-b.png" width="44" height="44"><span class="word" style="font-size:24px">Prof. Peptide</span></div></div>
+
+ <h2>Mark size sweep next to wordmark — 28 / 36 / 44 px</h2>
+ <div class="bar">
+   <div class="lock" style="gap:8px"><img class="mark" src="favicon-b.png" width="28" height="28"><span class="word" style="font-size:18px">Prof. Peptide</span></div>
+   <div class="lock" style="margin-left:40px"><img class="mark" src="favicon-b.png" width="36" height="36"><span class="word" style="font-size:20px">Prof. Peptide</span></div>
+   <div class="lock" style="margin-left:40px"><img class="mark" src="favicon-b.png" width="44" height="44"><span class="word" style="font-size:24px">Prof. Peptide</span></div>
+ </div>
+
+ <h2>Coupon-tag mark (Variant A raster) in the lockup, for comparison — 44px</h2>
+ <div class="bar"><div class="lock"><img class="mark" src="favicon-a.png" width="44" height="44"><span class="word" style="font-size:24px">Prof. Peptide</span></div></div>
+ <p class="cap">Not wired into the header. Static preview only.</p>
+</div></body></html>

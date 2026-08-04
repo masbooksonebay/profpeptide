@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prof. Peptide lockup — preview</title>
+<style>
+  /* Load real Inter (ExtraBold = 800) so this preview matches the site, not a
+     system fallback. */
+  @font-face { font-family: 'Inter'; src: url('/fonts/Inter-ExtraBold.ttf'); font-weight: 800; font-display: block; }
+  body { font-family: Inter, system-ui, sans-serif; margin: 0; background: #F4F6F8; color: #16181B; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 48px 32px 80px; }
+  h1 { font-size: 15px; letter-spacing: .04em; text-transform: uppercase; color: #6b7280; font-weight: 600; }
+  .panel { padding: 44px 40px; border-radius: 14px; margin: 18px 0; border: 1px solid #D9DEE4; position: relative; }
+  .light { background: #ffffff; }
+  .dark  { background: #0f172a; border-color: #1e293b; }
+  .row { display: flex; align-items: flex-end; gap: 40px; flex-wrap: wrap; }
+  .cap { font-size: 12px; color: #9aa4b2; margin-top: 28px; font-weight: 500; }
+  .readout { font-family: ui-monospace, Menlo, monospace; font-size: 12px; white-space: pre; background:#0b1120; color:#a7f3d0; padding:16px 20px; border-radius:10px; margin-top:24px; }
+
+  /* ---- the lockup: identical to <ProfPeptideLockup> ---- */
+  .lockup {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: #16181B;
+    padding: 0.16em 0;   /* wrapper: keep top breathing room from clipping */
+    position: relative;
+  }
+  .lockup .tile {
+    display: inline-block;
+    width: 1.33em; height: 1.33em;  /* fixed SQUARE, same size for both tiles */
+    line-height: 1.33em;            /* == height -> letters centre vertically */
+    text-align: center;             /* letters centre horizontally */
+    vertical-align: baseline;       /* inner text baseline on the run baseline */
+    background-color: #3A759F;      /* brand blue (reference art samples ~#326C96) */
+    color: #ffffff;
+    border-radius: 0;
+  }
+  .dark .lockup { color: #f1f5f9; }
+
+  /* JS draws this hairline exactly on the measured text baseline. */
+  .baseline-ruler { position: absolute; height: 1px; background: #e03163; left: -14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Prof. Peptide — single-line tile lockup (dev preview)</h1>
+
+  <div class="panel light">
+    <div class="row">
+      <span class="lockup" style="font-size:64px"><span class="tile">Pr</span><span>of. </span><span class="tile">Pe</span><span>ptide</span></span>
+    </div>
+    <div class="row" style="margin-top:36px">
+      <span class="lockup" style="font-size:40px"><span class="tile">Pr</span><span>of. </span><span class="tile">Pe</span><span>ptide</span></span>
+      <span class="lockup" style="font-size:28px"><span class="tile">Pr</span><span>of. </span><span class="tile">Pe</span><span>ptide</span></span>
+      <span class="lockup" style="font-size:20px"><span class="tile">Pr</span><span>of. </span><span class="tile">Pe</span><span>ptide</span></span>
+    </div>
+    <div class="cap">Light — #16181B ink, #3A759F tiles, white letters. Tiles are span backgrounds trimmed to the baseline.</div>
+  </div>
+
+  <div class="panel dark">
+    <div class="row">
+      <span class="lockup" style="font-size:64px"><span class="tile">Pr</span><span>of. </span><span class="tile">Pe</span><span>ptide</span></span>
+    </div>
+    <div class="cap" style="color:#64748b">Dark — letters go #f1f5f9; tiles + white tile-letters constant.</div>
+  </div>
+
+  <div class="panel light" id="probe-panel">
+    <div class="row">
+      <span class="lockup" id="probe" style="font-size:120px"><span class="tile">Pr</span><span>of. </span><span class="tile">Pe</span><span>ptide</span></span>
+    </div>
+    <div class="cap">Baseline check — pink hairline is the JS-measured text baseline; it should touch both tile bottoms and the black letter bottoms.</div>
+    <div class="readout" id="readout">measuring…</div>
+  </div>
+</div>
+
+<script>
+  function measure() {
+    const lk = document.getElementById('probe');
+    const panel = document.getElementById('probe-panel');
+    const tiles = lk.querySelectorAll('.tile');
+    const blacks = lk.querySelectorAll('span:not(.tile)');
+    // baseline via zero-size inline-block aligned to baseline
+    const probe = document.createElement('span');
+    probe.style.cssText = 'display:inline-block;width:0;height:0;vertical-align:baseline';
+    lk.appendChild(probe);
+    const baseY = probe.getBoundingClientRect().top;
+    probe.remove();
+
+    const pr = panel.getBoundingClientRect();
+    // draw ruler at baseline
+    const ruler = document.createElement('div');
+    ruler.className = 'baseline-ruler';
+    ruler.style.top = (baseY - pr.top) + 'px';
+    ruler.style.width = (lk.getBoundingClientRect().width + 28) + 'px';
+    panel.appendChild(ruler);
+
+    const fs = parseFloat(getComputedStyle(lk).fontSize);
+    // cap height (ink) via canvas, at this font/size/weight
+    const cvs = document.createElement('canvas').getContext('2d');
+    cvs.font = getComputedStyle(lk).fontWeight + ' ' + fs + 'px Inter, system-ui, sans-serif';
+    const capPx = cvs.measureText('P').actualBoundingBoxAscent;   // baseline -> cap top (px)
+    const lines = [];
+    lines.push('font-size: ' + fs + 'px   baselineY: ' + baseY.toFixed(2) + '   capHeight: ' + capPx.toFixed(2) + 'px (' + (capPx/fs).toFixed(3) + 'em)');
+    tiles.forEach((t, i) => {
+      const r = t.getBoundingClientRect();
+      const belowPx = r.bottom - baseY;                 // tile extent below baseline
+      const capTopY = baseY - capPx;                    // y of the cap top
+      const abovePx = capTopY - r.top;                  // tile extent above cap
+      // glyph-baseline check: a zero-size baseline probe INSIDE the tile reports
+      // the tile's inner text baseline; compare to the run baseline (baseY).
+      const gp = document.createElement('span');
+      gp.style.cssText = 'display:inline-block;width:0;height:0;vertical-align:baseline';
+      t.appendChild(gp);
+      const glyphBaseY = gp.getBoundingClientRect().top;
+      gp.remove();
+      lines.push('tile[' + i + '] "' + t.textContent + '"  h=' + r.height.toFixed(1) + 'px (' + (r.height/fs).toFixed(3) + 'em)' +
+        '  aboveCap=' + abovePx.toFixed(2) + 'px (' + (abovePx/fs).toFixed(3) + 'em)' +
+        '  belowBase=' + belowPx.toFixed(2) + 'px (' + (belowPx/fs).toFixed(3) + 'em)' +
+        '  glyphBaselineOffset=' + (glyphBaseY - baseY).toFixed(2) + 'px');
+    });
+    blacks.forEach((s) => {
+      const b = s.getBoundingClientRect().bottom;
+      lines.push('ink  "' + s.textContent + '"   bottom-baseline = ' + (b - baseY).toFixed(2) + 'px  (descenders/overshoot expected +)');
+    });
+    document.getElementById('readout').textContent = lines.join('\n');
+  }
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(measure); } else { window.addEventListener('load', measure); }
+  setTimeout(measure, 400);
+</script>
+</body>
+</html>

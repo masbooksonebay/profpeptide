@@ -464,6 +464,21 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/99-purity-peptides",
     facts: { purityStandard: "≥99%", coa: "library" },
   },
+  // Licensed Peptides originally issued a SHARED code (Affiliate5) handed to EVERY affiliate;
+  // they swapped it to the unique PROFPEPTIDE on request. If it ever reverts to a shared code,
+  // code-based attribution breaks completely for this vendor (every affiliate's buyers collide
+  // on one code) — only the path-based /ref/60815/ link would still attribute. Discount is 5%
+  // (ties BioPure as the lowest on the roster) — do NOT round it up. Affiliate URL is
+  // PATH-BASED (/ref/60815/), same shape as 99-purity and peptide-partners.
+  "licensed-peptides": {
+    name: "Licensed Peptides",
+    code: "PROFPEPTIDE",
+    discount: "5% off",
+    region: "US",
+    url: "https://licensedpeptides.com/ref/60815/",
+    detailPage: "/coupons/licensed-peptides",
+    facts: { purityStandard: "99%+", coa: "library", testMethods: "HPLC, mass spec", contaminants: "Endotoxin (LAL), sterility, residual solvents" },
+  },
 };
 
 /**
