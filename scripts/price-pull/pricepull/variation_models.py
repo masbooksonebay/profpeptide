@@ -49,7 +49,13 @@ def form_of(values):
     # matches only liquids/oils/SARMs, never a peptide vial.
     if re.search(r'per\s*ml|m?c?g\s*/\s*ml|/\s*ml\b', j):
         return 'liquid'
-    if re.search(r'tablet|sublingual|capsule|troche|\boral\b|cream|\bgel\b|lozenge', j):
+    # Tablets/capsules and count-pack formats (per cap, N ct, N tabs) — oral, non-vial, same
+    # $/mg-per-vial-out-of-scope logic as liquids. Per-VARIATION (form_of runs on each variation's
+    # values), so a product that also has a real vial variant keeps it. Catches e.g. modern-aminos'
+    # "250mcg per cap" rendering as $312/mg (a 1000x unit error). Keyed on the strength/size value,
+    # never free text — a description that mentions tablets must not trigger it.
+    if re.search(r'tablet|sublingual|capsule|troche|\boral\b|cream|\bgel\b|lozenge'
+                 r'|\bcaps?\b|\btabs?\b|\d+\s*ct\b|per\s*cap|per\s*tab', j):
         return 'tablet'
     return 'vial'
 
