@@ -153,10 +153,10 @@ export default function Home() {
             Everything you need for<br className="hidden sm:block" /> peptide research, in one place
           </h1>
           <p className="text-lg text-gray-500 dark:text-slate-400 max-w-2xl mx-auto mb-3 leading-relaxed">
-            Prof. Peptide is an independent research library covering {profileCount} peptides, with price comparison across {activeVendorCount} vendors and verified discount codes.
+            Prof. Peptide is an independent research library covering {profileCount} peptide profiles, {activeVendorCount} vendor reviews, price comparisons across all vendors, and verified discount codes.
           </p>
           <p className="text-lg text-gray-500 dark:text-slate-400 max-w-xl mx-auto mb-8 leading-relaxed">
-            Plus verified vendor reviews and a precision dosage calculator.
+            Plus a precision dosage calculator and an all-in-one protocol tracker app.
           </p>
           <HeroSearch />
           {/* Order mirrors the header nav (Peptides · Vendors · Prices · Codes · Calculator).
