@@ -13,12 +13,12 @@
 //   1. a coupon page renders <VendorProductGrid> but the vendor has 0 price rows
 //      (an empty table would render) — ALWAYS a hard fail, never allowlisted; OR
 //   2. an active (non-retired, non-BLOCKED) vendor has a coupon page and 0 price rows
-//      and is NOT on the KNOWN_ZERO_ROW baseline below.
+//      and is in NEITHER of the two lists below (UNREACHABLE / ONBOARDING_BACKLOG).
 //
-// KNOWN_ZERO_ROW is the current onboarding backlog — vendors with a coupon page but no
-// price pull yet. Baselined so the build stays green while the gap stays visible; a NEW
-// zero-row vendor (a fifth) still fails. Remove a slug here to force onboard-or-remove;
-// onboard a vendor (rows appear) and the stale-entry check below will tell you to drop it.
+// Zero-row intent is split (see the two lists below) so "unpullable forever" and "not onboarded
+// yet" are no longer the same silent exemption: UNREACHABLE is permanent + silent; ONBOARDING_
+// BACKLOG is a dated, per-build WARNING (with age) that gets louder past the grace window but
+// never fails the build on age alone — an overdue TODO must not block an unrelated deploy.
 //
 // Run:  npm run check:grids
 // Exit: 0 = clean (backlog only); 1 = at least one real violation.
@@ -33,16 +33,33 @@ const vendorsPath = join(root, "src/data/vendors.ts");
 const pricesGenPath = join(root, "src/data/prices.generated.ts");
 const registryPath = join(root, "scripts/price-pull/pricepull/registry.py");
 
-// The onboarding backlog — a coupon page exists but the price pull hasn't run yet.
-// Kept in lockstep with reality by the stale-entry check at the end.
-const KNOWN_ZERO_ROW = new Set([
-  "integrative-peptides",     // in registry (woo) but scope filter yields 0 peptide rows
-  "nura-peptide",             // new coupon page; not yet onboarded to the price pull
-  "99-purity-peptides",       // new coupon page; not yet onboarded to the price pull
-  "legendary-peptides",       // new coupon page; not yet onboarded to the price pull
-  "biopure-peptides",         // new coupon page; not yet onboarded to the price pull
-  "nova-labs",                // new coupon page; not yet onboarded to the price pull
+// Zero-row vendors fall into two intents — the fix for the silent-exemption defect (a flat
+// allowlist couldn't tell "unpullable forever" from "shipped Tuesday, not onboarded yet", so
+// every new vendor got a permanent silent pass by routine):
+//
+//   UNREACHABLE        — structurally never has rows (unpullable). Permanent, SILENT.
+//   ONBOARDING_BACKLOG — has products but isn't pulled yet. WARNS every build with a reason and
+//                        an age in days; the warning gets LOUDER past the grace window. It never
+//                        FAILS the build on age alone — same severity rule as check:freshness's
+//                        stamp-age warning: an overdue TODO must not block an unrelated deploy.
+//
+// A brand-new zero-row vendor in NEITHER list still HARD-FAILS (an unaccounted thin page). Once a
+// backlog vendor's rows land, the stale-entry check flags it for removal.
+const GRACE_DAYS = 30;
+
+// Structurally unpullable → silent, permanent. (Vendors in the price-pull registry BLOCKED set —
+// e.g. limitless — are exempted separately below and need no entry here.)
+const UNREACHABLE = new Set([
+  "integrative-peptides", // in the registry (woo) but the peptide scope filter yields 0 rows
 ]);
+
+// Not onboarded YET — slug -> { reason, since: "YYYY-MM-DD" }. Loud + dated, never a silent pass.
+// The three woo vendors onboarded 2026-08-03 (Nura, Legendary, NOVA) came out the moment their
+// rows landed; only the two CINC vendors remain, pending a manual aero-pattern pull.
+const ONBOARDING_BACKLOG = {
+  "99-purity-peptides": { reason: "CINC — Cloudflare-blocks the Store API; needs a manual aero-pattern pull", since: "2026-08-03" },
+  "biopure-peptides":   { reason: "CINC — Cloudflare-blocks the Store API + homepage; needs a manual aero-pattern pull", since: "2026-08-03" },
+};
 
 // ── loaders ─────────────────────────────────────────────────────────────────
 // Execute an import-light TS data module (transpile → CJS → run), same pattern as
@@ -101,16 +118,17 @@ for (const slug of Object.keys(vendors)) {
     continue;
   }
 
-  // (2) active vendor + coupon page + 0 rows → thin page (unless BLOCKED or baselined).
+  // (2) active vendor + coupon page + 0 rows → thin page (unless BLOCKED).
   if (hasPage && rows === 0 && !v.retired && !blocked.has(slug)) {
-    if (KNOWN_ZERO_ROW.has(slug)) backlog.push(slug);
-    else failures.push(`${slug} — active vendor with a coupon page but 0 price rows (not allowlisted)`);
+    if (UNREACHABLE.has(slug)) continue;                     // structurally zero-row — silent, permanent
+    else if (ONBOARDING_BACKLOG[slug]) backlog.push(slug);   // not-yet-onboarded — warned (with age) below
+    else failures.push(`${slug} — active vendor with a coupon page but 0 price rows (in neither UNREACHABLE nor ONBOARDING_BACKLOG)`);
   }
 }
 
-// stale baseline: a KNOWN_ZERO_ROW slug that now has rows, is retired, is BLOCKED, or lost
-// its page — the allowlist entry is no longer needed and should be removed.
-for (const slug of KNOWN_ZERO_ROW) {
+// stale entries: a listed slug (either list) that now has rows, is retired, is BLOCKED, or lost
+// its page — the entry is no longer needed and should be removed.
+for (const slug of [...UNREACHABLE, ...Object.keys(ONBOARDING_BACKLOG)]) {
   const v = vendors[slug];
   const rows = rowsByVendor[slug] || 0;
   if (!v || rows > 0 || v.retired || blocked.has(slug) || !existsSync(couponPage(slug))) {
@@ -121,18 +139,34 @@ for (const slug of KNOWN_ZERO_ROW) {
 if (failures.length) {
   console.error("check:grids FAILED — empty grid / thin page:\n");
   for (const f of failures) console.error(`  ✗ ${f}`);
-  console.error("\nFix: onboard the vendor to the price pull (add rows), remove the grid /");
-  console.error("coupon page, mark it retired, or (backlog only) add it to KNOWN_ZERO_ROW.");
+  console.error("\nFix: onboard the vendor to the price pull (add rows), remove the grid / coupon");
+  console.error("page, mark it retired, add it to UNREACHABLE (structurally zero), or to");
+  console.error("ONBOARDING_BACKLOG with a reason + since-date (a dated, warned TODO — not silent).");
   process.exit(1);
 }
 
 console.log("check:grids OK — no empty grids or unaccounted thin pages.");
+
+// ONBOARDING_BACKLOG: WARN every build with age; louder past the grace window. Never fails here.
 if (backlog.length) {
-  console.log(`  known thin pages (baselined, awaiting price pull): ${backlog.sort().join(", ")}`);
+  const today = new Date();
+  const overdue = [];
+  console.warn("\n  ONBOARDING BACKLOG — coupon page live, price pull not run (WARN, not a failure):");
+  for (const slug of backlog.sort()) {
+    const { reason, since } = ONBOARDING_BACKLOG[slug];
+    const age = Math.max(0, Math.floor((today - new Date(since)) / 86_400_000));
+    const flag = age > GRACE_DAYS ? "  ⚠ OVERDUE" : "";
+    console.warn(`    • ${slug} — ${age}d old (since ${since}) — ${reason}${flag}`);
+    if (age > GRACE_DAYS) overdue.push(`${slug} (${age}d)`);
+  }
+  if (overdue.length) {
+    console.warn(`  ⚠⚠ ${overdue.length} past the ${GRACE_DAYS}-day grace window: ${overdue.join(", ")} — onboard or reclassify.`);
+    console.warn(`     (Warning only, exit 0 — an overdue onboarding TODO must never block an unrelated deploy.)`);
+  }
 }
 if (blocked.size) {
   console.log(`  blocked vendors (unpullable, exempt): ${[...blocked].sort().join(", ")}`);
 }
 if (staleAllowlist.length) {
-  console.log(`  ⚠ stale KNOWN_ZERO_ROW entries (now onboarded/retired/blocked — remove them): ${staleAllowlist.sort().join(", ")}`);
+  console.log(`  ⚠ stale entries (now onboarded/retired/blocked — remove from UNREACHABLE/ONBOARDING_BACKLOG): ${staleAllowlist.sort().join(", ")}`);
 }
