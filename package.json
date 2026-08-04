@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/check-links.mjs && node scripts/check-grids.mjs && node scripts/check-freshness.mjs && node scripts/check-surfaces.mjs && node scripts/gen-vendor-slugs.mjs && next build && next-sitemap",
+    "build": "node scripts/check-links.mjs && node scripts/check-grids.mjs && node scripts/check-freshness.mjs && node scripts/check-surfaces.mjs && node scripts/check-prices.mjs && node scripts/gen-vendor-slugs.mjs && next build && next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "check:vendors": "node scripts/check-vendors.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:grids": "node scripts/check-grids.mjs",
     "check:freshness": "node scripts/check-freshness.mjs",
-    "check:surfaces": "node scripts/check-surfaces.mjs"
+    "check:surfaces": "node scripts/check-surfaces.mjs",
+    "check:prices": "node scripts/check-prices.mjs"
   },
   "dependencies": {
     "fuse.js": "^7.3.0",
