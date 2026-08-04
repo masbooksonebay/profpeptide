@@ -181,8 +181,8 @@
   },
   {
     "slug": "mk-677",
-    "vendors": 4,
-    "indexable": true
+    "vendors": 2,
+    "indexable": false
   },
   {
     "slug": "mots-c",
@@ -266,7 +266,7 @@
   },
   {
     "slug": "slu-pp-332",
-    "vendors": 8,
+    "vendors": 7,
     "indexable": true
   },
   {

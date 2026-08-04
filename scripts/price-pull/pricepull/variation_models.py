@@ -42,6 +42,13 @@ def form_of(values):
     j = ' '.join(v for v in values if v).lower()
     if re.search(r'spray|nasal', j):
         return 'spray'
+    # Concentration formats (a liquid's mg-per-ml), NOT a vial size — "10mg per ml" / "300mg/ml"
+    # would otherwise mis-parse as a 10mg / 300mg vial. PP compares $/mg per vial, so these are out
+    # of scope. Keyed on the STRENGTH/SIZE attribute value here (never on free text / descriptions,
+    # which mention ml for bac-water content and reconstitution). FP scan across all vendors: this
+    # matches only liquids/oils/SARMs, never a peptide vial.
+    if re.search(r'per\s*ml|m?c?g\s*/\s*ml|/\s*ml\b', j):
+        return 'liquid'
     if re.search(r'tablet|sublingual|capsule|troche|\boral\b|cream|\bgel\b|lozenge', j):
         return 'tablet'
     return 'vial'

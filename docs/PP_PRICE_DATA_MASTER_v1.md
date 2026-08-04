@@ -576,9 +576,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | LL-37 | 5mg | $108.66 | $21.73 | — | ✓ | product/ll-37-cap-18-peptide/ |
 | Melanotan II | 10mg | $66.24 | $6.62 | — | ✓ | product/melanotan-2/ |
 | MGF | 10mg | $143.09 | $14.31 | — | ✓ | product/mgf-peptide/ |
-| MK-677 | 17mg | $32.86 | $1.93 | — | ✓ | product/mk-677-ibutamoren-liquid/ |
-| MK-677 | 33mg | $131.42 | $3.98 | — | ✓ | product/mk-677-ibutamoren-liquid/ |
-| MK-677 | 67mg | $262.84 | $3.92 | — | ✓ | product/mk-677-ibutamoren-liquid/ |
 | MOTS-C | 10mg | $78.69 | $7.87 | — | ✓ | product/mots-c-peptide/ |
 | MOTS-C | 20mg | $157.39 | $7.87 | — | ✓ | product/mots-c-peptide/ |
 | NAD+ | 100mg | $65.94 | $0.66 | — | ✓ | product/nad-peptide/ |
@@ -666,7 +663,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tesamorelin (spray) | 1mg | $1,122.22 | ✓ |
 | Tesamorelin (spray) | 200mcg | $325.71 | ✓ |
 
-### Excluded: manually excluded — form-strength product (powder/liquid/tabs); its '10mg per ml' liquid mis-parses as a 10mg vial ($9.18 = $0.92/mg). Not a vial price. (MK-777 is the same class — reported, not yet excluded.), multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: liquid/concentration (per-ml, not a vial), manually excluded — form-strength product (powder/liquid/tabs); its '10mg per ml' liquid mis-parses as a 10mg vial ($9.18 = $0.92/mg). Not a vial price. (MK-777 is the same class — reported, not yet excluded.), multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
@@ -1140,7 +1137,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Peptides.gg
 - **slug:** peptides-gg | **code:** PROF15 | **discount:** 15% off | **url:** peptides.gg
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 3 2026
 - **sale posture:** No sale.
 
 ### Single compounds
@@ -1213,8 +1210,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Semax | 30mg | $69.00 | $2.30 | — | ✓ | n-acetyl-semax-amidate/ |
 | Sermorelin | 2mg | $25.00 | $12.50 | — | ✓ | sermorelin/ |
 | Sermorelin | 5mg | $43.00 | $8.60 | — | ✓ | sermorelin/ |
-| SLU-PP-332 [backlog] | 1mg | $105.00 | $105.00 | — | ✓ | slu-pp-332/ |
-| SLU-PP-332 [backlog] | 5mg | $89.99 | $18.00 | — | ✓ | slu-pp-332/ |
 | SNAP-8 [backlog] | 20mg | $37.99 | $1.90 | — | ✓ | snap-8/ |
 | SS-31 | 10mg | $75.00 | $7.50 | — | ✓ | ss-31/ |
 | SS-31 | 50mg | $200.00 | $4.00 | — | ✓ | ss-31/ |
@@ -1246,13 +1241,13 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $140.00 | not published | ✓ |
 
 ### Sprays: none
-### Excluded: oral/capsule, oral/tablet/sublingual, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: liquid/concentration (per-ml, not a vial), oral/capsule, oral/tablet/sublingual, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
 ## VENDOR: PureRawz
 - **slug:** purerawz | **code:** PROF10 | **discount:** 10% off | **url:** purerawz.co
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 3 2026
 - **sale posture:** Product sale 28/200; code stacks.
 
 ### Single compounds
@@ -1294,8 +1289,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GHRP-2 | 10mg | $42.50 | $4.25 | — | ✓ | product/ghrp-2-pralmorelin-10mg/ |
 | GHRP-6 | 5mg | $37.28 | $7.46 | — | ✓ | product/skf-110679/ |
 | GHRP-6 | 10mg | $48.20 | $4.82 | — | ✓ | product/skf-110679/ |
-| Glutathione | — | $32.22 | — | — | ✓ | product/s-acetyl-l-glutathione/ |
-| Glutathione | 33mg | $40.98 | $1.24 | — | ✓ | product/s-acetyl-l-glutathione/ |
 | Glutathione | 600mg | $76.30 | $0.13 | — | ✓ | product/reduced-glutathione/ |
 | Glutathione | 1200mg | $132.55 | $0.11 | — | ✓ | product/reduced-glutathione/ |
 | Glutathione | 1500mg | $166.40 | $0.11 | — | ✓ | product/reduced-glutathione/ |
@@ -1307,7 +1300,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Humanin [backlog] | 5mg | $92.92 | $18.58 | — | ✓ | product/humanin/ |
 | Humanin [backlog] | 10mg | $168.87 | $16.89 | — | ✓ | product/humanin/ |
 | IGF-1 DES | 1mg | $109.93 | $109.93 | — | ✓ | product/igf-1-des/ |
-| IGF-1 LR3 | 0.1mg | $6.90 | $69.00 | — | ✓ | product/igf-1-lr3/ |
 | IGF-1 LR3 | 200mcg | $17.32 | $86.60 | — | ✓ | product/igf-1-lr3/ |
 | IGF-1 LR3 | 1mg | $68.95 | $68.95 | — | ✓ | product/igf-1-lr3/ |
 | Ipamorelin | 2mg | $29.23 | $14.62 | — | ✓ | product/ipamorelin/ |
@@ -1323,11 +1315,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | MGF | 2mg | $33.31 | $16.66 | — | ✓ | product/mgf/ |
 | MGF | 5mg | $82.51 | $16.50 | — | ✓ | product/mgf/ |
 | MGF | 10mg | $136.06 | $13.61 | — | ✓ | product/mgf/ |
-| MK-677 | — | $134.34 | — | — | ✓ | product/ibutamoren-mk-677/ |
-| MK-677 | 17mg | $33.59 | $1.98 | — | ✓ | product/ibutamoren-mk-677/ |
-| MK-677 | 33mg | $134.34 | $4.07 | — | ✓ | product/ibutamoren-mk-677/ |
-| MK-677 | 64mg | $85.97 | $1.34 | — | ✗ | product/ibutamoren-mk-677/ |
-| MK-677 | 67mg | $268.69 | $4.01 | — | ✓ | product/ibutamoren-mk-677/ |
 | MOTS-C | 5mg | $50.59 | $10.12 | — | ✓ | product/mots-c/ |
 | MOTS-C | 10mg | $101.18 | $10.12 | — | ✓ | product/mots-c/ |
 | MOTS-C | 20mg | $202.36 | $10.12 | — | ✓ | product/mots-c/ |
@@ -1437,7 +1424,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tesamorelin | 200mcg | $320.50 | ✓ |
 | Tesamorelin | 1mg | $1,392.51 | ✓ |
 
-### Excluded: oral/capsule, oral/tablet/sublingual, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: liquid/concentration (per-ml, not a vial), multi-vial kit / pack (by name), no parseable size (Rule 4), oral/capsule, oral/tablet/sublingual, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
@@ -2248,7 +2235,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Modern Aminos
 - **slug:** modern-aminos | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** modernaminos.com
-- **traffic:** (not pulled) | **pulled:** July 31 2026
+- **traffic:** (not pulled) | **pulled:** August 3 2026
 - **sale posture:** Product-level markdown: the 20% GLP-1/Amylin discount populates on_sale/sale_price/regular_price in the Store API (visible without a code), so per PP_PRICES v2 Locked Rule 1 that IS the price and regular_price is the struck list. ⚠️ The banner also advertises 40% off GW-501516/MK-2866, but those show on_sale=false with no markdown in the data — the banner overstates; both are SARMs and out of scope anyway.
 
 ### Single compounds
@@ -2302,10 +2289,8 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Melanotan II | 10mg | $38.00 | $3.80 | — | ✓ | product/melanotan-2-10mg/ |
 | MGF | 2mg | $39.00 | $19.50 | — | ✗ | product/peg-mgf-2mg/ |
 | MK-677 | 25mg | $89.00 | $3.56 | — | ✓ | product/mk-677/ |
-| MK-677 | 30mg | $68.00 | $2.27 | — | ✓ | product/mk-677/ |
 | MOTS-C | 10mg | $42.00 | $4.20 | — | ✓ | product/mots-c/ |
 | MOTS-C | 40mg | $115.00 | $2.88 | — | ✓ | product/mots-c/ |
-| NAD+ | 200mg | $79.00 | $0.40 | — | ✓ | product/nad-20ml/ |
 | NAD+ | 500mg | $58.00 | $0.12 | — | ✓ | product/nad-20ml/ |
 | Ovagen [backlog] | 20mg | $54.00 | $2.70 | — | ✓ | product/ovagen-20mg/ |
 | Oxytocin | 5mg | $34.00 | $6.80 | — | ✓ | product/oxytocin-5mg/ |
@@ -2333,13 +2318,12 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Sermorelin | 2mg | $46.00 | $23.00 | — | ✓ | product/sermorelin-5mg/ |
 | Sermorelin | 5mg | $46.00 | $9.20 | — | ✓ | product/sermorelin-5mg/ |
 | SLU-PP-332 [backlog] | 250mcg | $78.00 | $312.00 | — | ✓ | product/slu-pp-332/ |
-| SLU-PP-332 [backlog] | 300mcg | $54.00 | $180.00 | — | ✓ | product/slu-pp-332/ |
 | SLU-PP-332 [backlog] | 500mcg | $149.00 | $298.00 | — | ✓ | product/slu-pp-332/ |
 | SLU-PP-332 [backlog] | 15mg | $278.00 | $18.53 | — | ✗ | product/slu-pp-332/ |
 | TB-500 | 5mg | $34.00 | $6.80 | — | ✓ | product/tb-500-thymosin-beta-4/ |
 | TB-500 | 10mg | $59.00 | $5.90 | — | ✓ | product/tb-500-thymosin-beta-4/ |
-| Tesamorelin | 5mg | $45.00 | $9.00 | — | ✗ | product/tesamorelin/ |
-| Tesamorelin | 10mg | $92.00 | $9.20 | — | ✓ | product/tesamorelin/ |
+| Tesamorelin | 5mg | $71.00 | $14.20 | — | ✓ | product/tesamorelin/ |
+| Tesamorelin | 10mg | $71.00 | $7.10 | — | ✓ | product/tesamorelin/ |
 | Tesofensine [backlog] | 250mcg | $99.00 | $396.00 | — | ✓ | product/tesofensine-powder/ |
 | Tesofensine [backlog] | 500mcg | $159.00 | $318.00 | — | ✓ | product/tesofensine-powder/ |
 | Testagen [backlog] | 20mg | $54.00 | $2.70 | — | ✓ | product/testagen-20mg/ |
@@ -2366,7 +2350,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | — | $134.00 | not published | ✓ |
 
 ### Sprays: none
-### Excluded: no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: liquid/concentration (per-ml, not a vial), no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 

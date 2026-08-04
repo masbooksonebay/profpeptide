@@ -109,6 +109,8 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
             size_label = f"{dec_size}mg"
         if form == 'tablet':               # oral forms out of scope
             yield ('exclude', 'oral/tablet/sublingual'); continue
+        if form == 'liquid':               # per-ml concentration, not a vial ($/mg-per-vial out of scope)
+            yield ('exclude', 'liquid/concentration (per-ml, not a vial)'); continue
         rowkind = 'spray' if (form == 'spray' and kind not in ('blend', 'blend_bk')) else kind
         if rowkind in ('blend', 'blend_bk'):
             bo = N.blend_of(name)
