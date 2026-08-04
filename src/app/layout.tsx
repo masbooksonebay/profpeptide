@@ -4,11 +4,18 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Disclaimer from "@/components/Disclaimer";
 import ThemeProvider from "@/components/ThemeProvider";
+import { appPeptideFloor } from "@/data/peptideCategories";
+import { supplementCount } from "@/data/supplements";
+
+// This is the DEFAULT description inherited by every page without its own, so its counts must
+// never rot (they previously read a stale "40+" while the library held 62). Both are DERIVED and
+// floored to a ten for the approximate "N+" phrasing: peptides from the taxonomy, supplements
+// from the supplement list. They auto-advance (→ "70+") as the libraries grow.
+const supplementFloor = Math.floor(supplementCount / 10) * 10;
 
 export const metadata: Metadata = {
   title: "Prof. Peptide — Research Guide for Peptides and Natural Supplements",
-  description:
-    "Evidence-based research profiles for 40+ peptides and 50+ natural supplements. Dosage calculator, verified discount codes, and independent education. No ads.",
+  description: `Evidence-based research profiles for ${appPeptideFloor}+ peptides and ${supplementFloor}+ natural supplements. Dosage calculator, verified discount codes, and independent education. No ads.`,
   metadataBase: new URL("https://profpeptide.com"),
   manifest: "/site.webmanifest",
   // Explicit, single source of favicon declarations (the App Router

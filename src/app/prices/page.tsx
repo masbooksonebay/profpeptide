@@ -9,9 +9,9 @@ const VENDOR_N = priceVendorCount();
 export const metadata = {
   ...buildPageMetadata({
     path: "/prices",
-    title: `Peptide Price Comparison — Compare Prices Across ${VENDOR_N} Vendors | Prof. Peptide`,
+    title: `Peptide Price Comparison — Compare Prices Across ${VENDOR_N} Vendors With Published Pricing | Prof. Peptide`,
     description:
-      `Compare research-peptide prices across ${VENDOR_N} vendors — post-code pricing, per-mg normalization across vial sizes, and lowest-price-first sorting. Updated regularly.`,
+      `Compare research-peptide prices across ${VENDOR_N} vendors with published pricing — post-code pricing, per-mg normalization across vial sizes, and lowest-price-first sorting. Updated regularly.`,
   }),
 };
 

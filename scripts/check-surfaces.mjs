@@ -15,7 +15,7 @@
 // Run:  npm run check:surfaces   (also runs in the build chain; never fails it)
 
 import ts from "typescript";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -72,4 +72,39 @@ for (const s of SURFACES) {
 }
 
 if (!warned) console.log("check:surfaces OK — all completeness surfaces in sync.");
+
+// ── Derived-count drift (WARN) ───────────────────────────────────────────────
+// The canonical count constants must equal the number of static routes actually on disk. If a
+// /peptides/<slug> or /supplements/<slug> dir is added without the taxonomy entry (or vice-versa),
+// the constant silently under/over-counts while the source and the routes disagree. This asserts
+// they match. WARN only: a mismatch is a data-sync bug to fix at the source, not a deploy blocker
+// (and check-counts.mjs already fails the build on the hardcoded-literal side of the problem).
+function staticRouteCount(relDir) {
+  return readdirSync(join(root, relDir), { withFileTypes: true }).filter(
+    (d) =>
+      d.isDirectory() &&
+      !d.name.startsWith("[") &&
+      !d.name.startsWith("_") &&
+      existsSync(join(root, relDir, d.name, "page.tsx")),
+  ).length;
+}
+
+const { profileCount } = execModule("src/data/peptideCategories.ts", "peptideCategories.ts");
+const { supplementCount } = execModule("src/data/supplements.ts", "supplements.ts");
+
+const driftChecks = [
+  { label: "profileCount", constant: profileCount, dir: "src/app/peptides", routes: staticRouteCount("src/app/peptides") },
+  { label: "supplementCount", constant: supplementCount, dir: "src/app/supplements", routes: staticRouteCount("src/app/supplements") },
+];
+for (const c of driftChecks) {
+  if (c.constant === c.routes) {
+    console.log(`check:surfaces OK — ${c.label} (${c.constant}) matches ${c.dir} route count (${c.routes}).`);
+  } else {
+    const bar = "-".repeat(74);
+    console.warn(`\n${bar}`);
+    console.warn(`check:surfaces WARNING — ${c.label} drift: constant=${c.constant} but ${c.dir} has ${c.routes} route(s).`);
+    console.warn(`  Fix the SOURCE (the data module or the missing/extra page dir), not the number. (warning only — build continues.)`);
+    console.warn(bar);
+  }
+}
 // Always succeed — warn, never fail.

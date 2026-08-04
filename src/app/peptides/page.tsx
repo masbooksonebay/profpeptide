@@ -2,13 +2,12 @@ import Link from "next/link";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { CategoryIcon } from "@/components/CategoryIcon";
-import { peptideCategories } from "@/data/peptideCategories";
+import { peptideCategories, profileCount } from "@/data/peptideCategories";
 
 export const metadata = {
   alternates: { canonical: "/peptides" },
-  title: "Peptide Library — 54 Research Peptide Profiles | Prof. Peptide",
-  description:
-    "Browse 54 research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.",
+  title: `Peptide Library — ${profileCount} Research Peptide Profiles | Prof. Peptide`,
+  description: `Browse ${profileCount} research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.`,
 };
 
 const categories = peptideCategories;

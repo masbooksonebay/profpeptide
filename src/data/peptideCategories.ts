@@ -169,3 +169,24 @@ export const PROFILE_SLUGS: Set<string> = new Set([
 export function hasProfile(slug: string): boolean {
   return PROFILE_SLUGS.has(slug);
 }
+
+/**
+ * Canonical peptide-profile count — the number of /peptides/<slug> profile pages,
+ * derived from the library taxonomy. SINGLE SOURCE OF TRUTH: every surface that cites
+ * the peptide count (homepage, /peptides meta, root-layout default description, /app)
+ * imports this instead of hardcoding a literal that rots. check-counts.mjs fails the
+ * build if a literal appears where this should; check-surfaces asserts it against the
+ * /peptides route count on disk.
+ */
+export const profileCount: number = peptideCategories.reduce(
+  (n, c) => n + c.peptides.length,
+  0,
+);
+
+/**
+ * App-surface "60+" floor — profileCount rounded down to the nearest ten. Keeps the
+ * approximate "N+" phrasing (used where an exact number reads oddly, e.g. the app's
+ * "search 60+ peptides" copy) but DERIVED, so it never overstates and auto-advances
+ * (→ "70+") as the library grows. Use profileCount where an exact number reads better.
+ */
+export const appPeptideFloor: number = Math.floor(profileCount / 10) * 10;

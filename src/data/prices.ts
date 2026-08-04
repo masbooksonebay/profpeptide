@@ -1,6 +1,7 @@
 import { vendors } from "./vendors";
 import { generatedPriceEntries, GENERATED_PRICES_UPDATED, generatedVendorNames } from "./prices.generated";
 import { categoryOrder, libraryCategoryOf, hasProfile } from "./peptideCategories";
+import pricesIndex from "./prices.index.json";
 
 /**
  * Category assignment for price compounds NOT in the /peptides library taxonomy —
@@ -271,6 +272,17 @@ export function compoundVendorCount(compoundSlug: string): number {
 /** Distinct non-retired vendors across the whole price dataset (for the master title). */
 export function priceVendorCount(): number {
   return new Set(priceEntries.filter((e) => !isRetired(e.vendor)).map((e) => e.vendor)).size;
+}
+
+/**
+ * Number of compounds with an indexable /prices/<slug> page — i.e. compounds a visitor can
+ * actually comparison-shop (≥3 vendors carry them; the `indexable` flag in prices.index.json).
+ * The canonical "compounds compared" count. Every surface that cites it calls this rather than
+ * re-filtering the index inline, so the number has one definition. NOTE: this is a count of
+ * COMPOUNDS, not price rows (there are ~1,580 rows) — the homepage stat is labelled accordingly.
+ */
+export function indexablePriceCount(): number {
+  return (pricesIndex as { indexable: boolean }[]).filter((c) => c.indexable).length;
 }
 
 /** Distinct compounds present in the price data (for static params — covers ALL, no 404s). */

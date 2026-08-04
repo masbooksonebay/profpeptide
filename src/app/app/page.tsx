@@ -1,15 +1,14 @@
 import Image from "next/image";
 import { Icon } from "@/components/CategoryIcon";
 import { buildPageMetadata } from "@/lib/seo";
+import { appPeptideFloor } from "@/data/peptideCategories";
 
 export const metadata = buildPageMetadata({
   path: "/app",
   title: "Prof. Peptide — All-in-One Peptide Tracker for iOS",
-  description:
-    "The all-in-one peptide tracker for iPhone: log doses, see estimated levels, calculate reconstitution, and search 60+ peptides by name or brand.",
+  description: `The all-in-one peptide tracker for iPhone: log doses, see estimated levels, calculate reconstitution, and search ${appPeptideFloor}+ peptides by name or brand.`,
   ogTitle: "Prof. Peptide — All-in-One Peptide Tracker",
-  ogDescription:
-    "Log doses, see estimated levels, calculate reconstitution, and search 60+ peptides by name or brand. Free on the App Store.",
+  ogDescription: `Log doses, see estimated levels, calculate reconstitution, and search ${appPeptideFloor}+ peptides by name or brand. Free on the App Store.`,
   ogImage: {
     url: "/og/app-card.png",
     width: 1200,
@@ -33,7 +32,7 @@ const panels = [
     src: "/app-screenshots/panel2.png",
     icon: "search-outline",
     alt: "Peptide library searchable by name or brand",
-    caption: "Search 60+ peptides by name or brand — Wegovy, Ozempic, Mounjaro, Zepbound, and more — with blends and stacks included.",
+    caption: `Search ${appPeptideFloor}+ peptides by name or brand — Wegovy, Ozempic, Mounjaro, Zepbound, and more — with blends and stacks included.`,
   },
   {
     src: "/app-screenshots/panel3.png",
