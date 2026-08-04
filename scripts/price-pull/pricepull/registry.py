@@ -55,9 +55,18 @@ VENDORS = {
               "authorized accept flag as a cookie (amino_age_verified=1) so a scripted urllib request "
               "reaches product content (Mark-authorized, every-pull). Per-size prices are server-rendered "
               "in the RSC flight (adapter shape 1d: main-product variants[] + nested calculated_price, "
-              "scoped by handle==slug to drop the recommended-products carousel). GLP-3 (RT)=Retatrutide "
-              "(LY3437943 + 39-aa triple agonist GIP/GLP-1/glucagon; CAS 2381089-83-2). /us/coa is JS-gated "
-              "(no per-product COA PDF)."),
+              "scoped by handle==slug to drop the recommended-products carousel). Coded GLPs, all decoded "
+              "from their OWN product-page spec blocks (CAS/formula/MW — suffix is NOT evidence): "
+              "GLP-3 (RT)=Retatrutide (LY3437943 + 39-aa triple agonist GIP/GLP-1/glucagon; CAS 2381089-83-2); "
+              "GLP-2 (TR)=Tirzepatide (CAS 2023788-19-2 + C225H348N48O68; matches our amino-x AX-TR); "
+              "GLP-1 (SM)=Semaglutide (CAS 910463-68-2 + C187H291N45O59 + MW 4113.58). /us/coa is JS-gated "
+              "(no per-product COA PDF). "
+              "RE-PULL CADENCE: this vendor adds products FASTER than the roster default — GLP-2/GLP-1 "
+              "appeared within days of the 2026-07-31 pull, and its banner advertises rolling weekly "
+              "additions. As PP's highest-value page (~32% of impressions), re-pull it more often than "
+              "others so new coded GLPs are decoded (or held UNVERIFIED) promptly rather than silently "
+              "excluded. Also present but out of current PP scope: AHK-Cu (copper hair peptide, no profile), "
+              "amino-h2o (0.9% saline supply)."),
     "alpha-peptides": dict(name="Alpha Peptides", domain="alpha-peptides.com", adapter="woo",
         variation_model="dosage", coded_decoder=True,
         sale_posture="Product-level sale_price on ~25/59; code STACKS.",

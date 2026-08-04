@@ -148,10 +148,17 @@ def _ascension(n):
     if re.match(r'HCG', n, re.I): return ('EXCLUDE', None, None)
 
 
-@_decoder('amino-club')  # verified: product-page spec — synonym LY3437943 + "39-aa triple agonist
-# GIP/GLP-1/glucagon" (uniquely Retatrutide) + CAS 2381089-83-2 (same LY3437943 as synthesis GLP-3R).
+@_decoder('amino-club')  # ALL verified from Amino Club's OWN product-page spec blocks (label/value):
+# GLP-3 (RT) = Retatrutide — synonym LY3437943 + "39-aa triple agonist GIP/GLP-1/glucagon" + CAS 2381089-83-2.
+# GLP-2 (TR) = Tirzepatide — CAS 2023788-19-2 + formula C225H348N48O68 + 39 aa (exact match; identical to our
+#              independently-verified amino-x AX-TR spec). Added 2026-08-04.
+# GLP-1 (SM) = Semaglutide — CAS 910463-68-2 + formula C187H291N45O59 + MW 4113.58 g/mol + 31-aa backbone
+#              (three exact canonical identifiers). Added 2026-08-04.
+# Suffix (RT/TR/SM) is NOT the evidence — the CAS/formula/MW in each page's spec table is.
 def _amino_club(n):
     if re.match(r'GLP-3 ?\(RT\)', n, re.I): return (_c('Retatrutide', 'GLP-3 (RT)'), 'retatrutide', 'single')
+    if re.match(r'GLP-2 ?\(TR\)', n, re.I): return (_c('Tirzepatide', 'GLP-2 (TR)'), 'tirzepatide', 'single')
+    if re.match(r'GLP-1 ?\(SM\)', n, re.I): return (_c('Semaglutide', 'GLP-1 (SM)'), 'semaglutide', 'single')
 
 
 @_decoder('modern-aminos')  # MA-1P/MA-3RT VERIFIED; MA-2TZ/MA-1S UNVERIFIED (no CAS/formula/MW/name on page)

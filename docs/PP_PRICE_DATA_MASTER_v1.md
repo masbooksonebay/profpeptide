@@ -33,7 +33,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Amino Club
 - **slug:** amino-club | **code:** PROFPEPTIDE | **discount:** 20% off | **url:** aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 4 2026
 - **sale posture:** ENJOY30 (30% off) is COUPON-GATED — requires typing the code, so it is EXCLUDED under the sale-vs-coupon rule (see top of file). Evaluated 2026-07 and deliberately NOT applied (no sitewide_sale) — do NOT 'rediscover' it as an oversight. base = no-code price (original_amount). If ENJOY30 ever becomes an automatic no-code cart discount, only then set sitewide_sale.
 
 ### Single compounds
@@ -59,17 +59,21 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | MOTS-C | 10mg | $39.99 | $4.00 | — | ✓ | us/products/mots-c |
 | MOTS-C | 40mg | $134.99 | $3.37 | — | ✓ | us/products/mots-c |
 | NAD+ | 500mg | $69.99 | $0.14 | — | ✓ | us/products/nad-plus |
+| Pinealon | 10mg | $49.99 | $5.00 | — | ✓ | us/products/pinealon |
 | PT-141 | 10mg | $29.99 | $3.00 | — | ✓ | us/products/pt-141 |
 | Retatrutide (listed as GLP-3 (RT)) | 10mg | $69.99 | $7.00 | — | ✓ | us/products/glp-3 |
 | Retatrutide (listed as GLP-3 (RT)) | 20mg | $134.99 | $6.75 | — | ✓ | us/products/glp-3 |
 | Retatrutide (listed as GLP-3 (RT)) | 30mg | $199.99 | $6.67 | — | ✓ | us/products/glp-3 |
 | Selank | 10mg | $29.95 | $3.00 | — | ✓ | us/products/selank |
+| Semaglutide (listed as GLP-1 (SM)) | 10mg | $49.99 | $5.00 | — | ✓ | us/products/glp-1 |
 | Semax | 10mg | $29.95 | $3.00 | — | ✓ | us/products/semax |
 | Sermorelin | 10mg | $59.99 | $6.00 | — | ✓ | us/products/sermorelin |
 | SNAP-8 [backlog] | 10mg | $29.99 | $3.00 | — | ✓ | us/products/snap-8 |
 | TB-500 | 10mg | $39.99 | $4.00 | — | ✓ | us/products/tb-500 |
 | Tesamorelin | 10mg | $69.99 | $7.00 | — | ✓ | us/products/tesamorlin |
 | Thymosin Alpha-1 | 10mg | $39.99 | $4.00 | — | ✓ | us/products/thymosin-alpha-1 |
+| Tirzepatide (listed as GLP-2 (TR)) | 30mg | $59.99 | $2.00 | — | ✓ | us/products/glp-2 |
+| Tirzepatide (listed as GLP-2 (TR)) | 60mg | $109.99 | $1.83 | — | ✓ | us/products/glp-2 |
 | VIP | 10mg | $49.99 | $5.00 | — | ✓ | us/products/vip |
 
 ### Blends (total mg; ratio where published)
