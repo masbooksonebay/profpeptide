@@ -5,6 +5,11 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
+import { vendors } from "@/data/vendors";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
+
+const v = vendors["legendary-peptides"];
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -27,6 +32,10 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function LegendaryPeptidesCouponPage() {
+  const rows = vendorProductRows("legendary-peptides");
+  const discountPct = vendorDiscountPct("legendary-peptides");
+  const autoApply = codeAutoApplies("legendary-peptides");
+  const shopUrl = makeShopUrlFor("legendary-peptides");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -94,6 +103,21 @@ export default function LegendaryPeptidesCouponPage() {
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Legendary Peptides lists a US phone number and prices in US dollars, and offers free shipping on orders over $200. All products are sold for laboratory and research use only.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">Legendary Peptides catalog &amp; prices</h2>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are Legendary Peptides&apos; list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
           </p>
         </div>
 

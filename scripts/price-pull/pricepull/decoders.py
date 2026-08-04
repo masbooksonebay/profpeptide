@@ -359,6 +359,34 @@ def _peptide_giants(n):
     if re.match(r'GLP-3R\b', n, re.I): return ('GLP-3R [coded, UNVERIFIED]', None, 'single_bk')
 
 
+@_decoder('legendary-peptides')  # Reta/Tirz VERIFIED by unique mechanistic spec in the vendor's own
+# product descriptions: "Reta" = triple agonist GLP-1/GIP/glucagon (uniquely Retatrutide); "Tirz" =
+# dual agonist GIP/GLP-1 (uniquely Tirzepatide). Decoded from the spec, NOT the abbreviation. KIT
+# variants EXCLUDED (multi-vial, not single).
+def _legendary(n):
+    if re.search(r'\bKIT\b', n, re.I): return ('EXCLUDE', None, None)
+    if re.match(r'Reta\b', n, re.I): return (_c('Retatrutide', 'Reta'), 'retatrutide', 'single')
+    if re.match(r'Tirz\b', n, re.I): return (_c('Tirzepatide', 'Tirz'), 'tirzepatide', 'single')
+
+
+@_decoder('nova-labs')  # GLP-3 (RT) VERIFIED = Retatrutide (product desc: "triple agonist" — uniquely
+# Reta; NOVA also publishes per-batch COAs). "Tirzepatide" is self-named (no decode needed). Pen +
+# nasal-spray forms are left to the variation detector (sprays -> spray kind); vials are the grid rows.
+def _nova(n):
+    if re.match(r'GLP-3\s*\(\s*RT\s*\)', n, re.I):
+        return (_c('Retatrutide', 'GLP-3 (RT)'), 'retatrutide', 'single')
+
+
+@_decoder('nura-peptide')  # Coded GLP SKUs left [coded, UNVERIFIED]: the product descriptions are generic
+# boilerplate with NO mechanistic identity (no triple/dual-agonist spec, no CAS/formula/name), so they are
+# NOT decoded by analogy (Mark's rule). GLP-3R/CAG is a coded blend.
+def _nura(n):
+    if re.match(r'GLP-3R\s*/\s*CAG', n, re.I):
+        return (n.split('(')[0].strip() + ' [coded, UNVERIFIED]', None, 'blend_bk')
+    if re.match(r'GLP-[0-9][A-Z]{1,3}', n, re.I):
+        return (n.split('(')[0].strip() + ' [coded, UNVERIFIED]', None, 'single_bk')
+
+
 def decode(vendor, name):
     fn = DECODERS.get(vendor)
     return fn(name.strip()) if fn else None

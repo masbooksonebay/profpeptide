@@ -257,6 +257,45 @@ VENDORS = {
         sale_posture="No sale (on_sale=false / standing prices).",
         notes="⚠️ Store API Cloudflare-403'd — CINC read-only from embedded product JSON on each page. "
               "TB-500/Sermorelin variable prices are AJAX-only. GLPs self-identify ('GLP3 – Reta')."),
+    # ---- batch: recent coupon-page vendors (onboarding to the price pull) ----
+    "nura-peptide": dict(name="Nura Peptide", domain="nurapeptide.com", adapter="woo",
+        variation_model="pack-size", coded_decoder=True,  # Quantity attr (1-vial/3-vials/...); mg from the name.
+        # NB: 3 products carry a misspelled "Quanity" attribute; the detector still treats them as pack-size.
+        sale_posture="No known cart-level auto-coupon; product-level sale_price priced if present (re-verify at write).",
+        notes="Coded GLP SKUs (GLP-3R, GLP-2T, GLP-1SG-10) left [coded, UNVERIFIED]: product descriptions are "
+              "generic boilerplate with NO mechanistic identity (no triple/dual-agonist spec, no CAS/formula/name), "
+              "so NOT decoded by analogy (Mark's rule). GLP-3R/CAG is a coded blend. Affiliate URL is query-param "
+              "(?ref=profpeptide) — handled TS-side at grid-wire time."),
+    "legendary-peptides": dict(name="Legendary Peptides", domain="www.legendarypeptides.com", adapter="woo",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="No known cart-level auto-coupon; free shipping over $200 (not a price discount). Re-verify at write.",
+        notes="Reta=Retatrutide, Tirz=Tirzepatide — VERIFIED by unique mechanistic spec in the vendor's own product "
+              "descriptions ('triple agonist GLP-1/GIP/glucagon' is uniquely Reta; 'dual agonist GIP/GLP-1' is uniquely "
+              "Tirz), NOT by the abbreviation. KIT variants EXCLUDED (multi-vial, not single). Note www host + "
+              "?affiliate= URL param (TS-side at grid-wire)."),
+    "nova-labs": dict(name="NOVA Labs", domain="nova-biolabs.com", adapter="woo",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="No known cart-level auto-coupon; re-verify at write.",
+        notes="First UAE/GCC vendor. GLP-3 (RT)=Retatrutide VERIFIED (product desc 'triple agonist' — uniquely Reta); "
+              "'Tirzepatide' is self-named (no decode). Also sells Pen (pre-filled) and nasal-spray forms alongside "
+              "vials — see dry-run for how the variation detector groups them. Publishes public per-batch COAs "
+              "(Janoshik/Uzorak). Query-param ?ref= URL (TS-side at grid-wire)."),
+    # ---- CINC (Cloudflare-blocks the Store API) — refresh.py SKIPS these; pull manually (aero pattern) ----
+    "99-purity-peptides": dict(name="99 Purity Peptides", domain="99puritypeptides.com", adapter="cinc",
+        variation_model="dosage", coded_decoder=False,
+        sale_posture="Re-verify at manual pull.",
+        notes="⚠️ Store API Cloudflare-403'd — CINC read-only from embedded storefront JSON (aero pattern); refresh.py "
+              "cannot pull it. Affiliate URL is PATH-BASED (/ref/profpeptide). GRID DISCOUNT NOTE: prices are computed "
+              "'after 10%' per Mark's published figure even though their dashboard shows 15% — if the real rate is 15%, "
+              "99 Purity displays HIGH and ranks worse than deserved on /prices. Deliberate (understating is safe); do "
+              "NOT 'correct' without new evidence."),
+    "biopure-peptides": dict(name="BioPure Peptides", domain="biopurepeptides.com", adapter="cinc",
+        variation_model="dosage", coded_decoder=False,
+        sale_posture="Re-verify at manual pull.",
+        notes="⚠️ Store API Cloudflare-403'd (server: cloudflare, HTTP 403) — CINC read-only from embedded storefront "
+              "JSON (aero pattern); refresh.py cannot pull it (platform-detect optimistically said woo, but the wc/store "
+              "API is walled). Coded GLPs: BioLean GLP-1 / GLP-2 GIP / GLP-3 GGG — VERIFY identity from BioPure's own "
+              "product pages/COAs at manual pull; do NOT decode by the GIP/GGG suffix. Affiliate URL uses ?sld=."),
 }
 
 # permanently or partially unpullable — do NOT keep retrying (see doc's blocked section)
