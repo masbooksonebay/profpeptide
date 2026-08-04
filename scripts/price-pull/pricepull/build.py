@@ -27,6 +27,13 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
     name = product['name']
     vslug = product.get('slug', '')          # the vendor's own product slug (nextjs/Medusa); '' for adapters that don't expose one
 
+    # Kit/pack/bundle in the NAME of a product with no variations for is_kit() to inspect — e.g.
+    # Royal's simple "IGF-1 LR3 1mg Kit". Exclude it: a kit price must never ship as a single-vial
+    # row (that mis-ranks the vendor ~Nx on /prices). Variable products fall through — their
+    # variant-level is_kit drops kit variants and keeps the vial (so "Vial/ Kit" products survive).
+    if not product.get('variations') and vm.is_kit_name(name):
+        yield ('exclude', 'multi-vial kit / pack (by name)'); return
+
     dec = decoders.decode(vendor, name)
     dec_size = None                         # decoder-supplied mg (e.g. Ascension R-30 -> 30)
     if dec:

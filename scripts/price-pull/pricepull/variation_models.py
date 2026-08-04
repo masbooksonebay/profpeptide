@@ -47,12 +47,30 @@ def form_of(values):
     return 'vial'
 
 
+# Multi-vial kit / bulk / pack markers, hyphen- and space-tolerant. Covers: kit, bulk, bundle,
+# bare pack/pk, "pack of N", "set of N", vial COUNTS 2..99 (so 20+ is caught, not just 2–19 —
+# the old pattern stopped at 19), and "xN". Shared by is_kit (variation attribute values) and
+# is_kit_name (the product name) so both stay in lockstep.
+_KIT_RE = re.compile(
+    r'\bkit\b|\bbulk\b|\bbundle\b|\bpack\b|\bpk\b'
+    r'|\bpack\s+of\s+\d+\b|\bset\s+of\s+\d+\b'
+    r'|\b(?:[2-9]|[1-9]\d)[\s-]?vials?\b'
+    r'|\bx[\s-]?\d+\b'
+    r'|\d+\s*mg\s*x\s*\d+',   # glued "Nmg x M" multiplier, e.g. "10mgx10vials"/"5mgx3" — no word
+                              # boundary around the x, so the \bx\d+ form above misses it (Royal)
+    re.I,
+)
+
+
 def is_kit(values):
-    """True if a variation is a multi-vial kit / bulk pack (not a single unit)."""
-    j = ' '.join(v for v in values if v).lower()  # None-safe (see form_of)
-    # [\s-]? so hyphenated pack labels match too — Nura writes "10-vials"/"3-vials" (not "10 vials"),
-    # which the space-only pattern missed, leaking multi-vial kits (e.g. a $945 10-vial pack).
-    return bool(re.search(r'\bkit\b|x[\s-]?10[\s-]?vials|\b(?:[2-9]|1[0-9])[\s-]?vials?\b|bulk', j))
+    """True if a variation's attribute values mark it as a multi-vial kit / bulk pack."""
+    return bool(_KIT_RE.search(' '.join(v for v in values if v)))  # None-safe (see form_of)
+
+
+def is_kit_name(name):
+    """Same kit/pack detection applied to a PRODUCT NAME — catches SIMPLE products titled e.g.
+    'IGF-1 LR3 1mg Kit' that carry no variation attributes for is_kit() to inspect (Royal's leak)."""
+    return bool(_KIT_RE.search(name or ""))
 
 
 _KIT10 = re.compile(r'(\d+(?:\.\d+)?)\s*mg\s*x\s*10\s*vials', re.I)
