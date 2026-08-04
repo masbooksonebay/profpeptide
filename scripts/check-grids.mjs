@@ -59,6 +59,10 @@ const UNREACHABLE = new Set([
 const ONBOARDING_BACKLOG = {
   "99-purity-peptides": { reason: "CINC — Cloudflare-blocks the Store API; needs a manual aero-pattern pull", since: "2026-08-03" },
   "biopure-peptides":   { reason: "CINC — Cloudflare-blocks the Store API + homepage; needs a manual aero-pattern pull", since: "2026-08-03" },
+  // NOVA reports prices in AED; the pull stored them as USD (~3.67x inflated). Pulled its rows
+  // from price data as immediate mitigation. Blocked pending a currency decision (refuse non-USD
+  // at pull / convert / render native) — see the currency-handling report.
+  "nova-labs":          { reason: "non-USD (AED) — excluded from price data pending currency handling", since: "2026-08-04" },
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────

@@ -1444,103 +1444,85 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Royal Peptides
 - **slug:** royal-peptides | **code:** PROF10 | **discount:** 10% off | **url:** royal-peptides.com
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 3 2026
 - **sale posture:** No sale.
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
 | 5-Amino-1MQ | 50mg | $90.00 | $1.80 | — | ✗ | shop/5-amino-1mq/ |
-| Adamax | 10mg | $485.00 | $48.50 | — | ✓ | shop/adamax-1032-10mg/ |
-| AOD-9604 | 5mg | $43.00 | $8.60 | — | ✓ | shop/aod-9604-5mgx10vials/ |
-| BPC-157 | 10mg | $36.00 | $3.60 | — | ✓ | shop/bpc-157-10mgx10vials/ |
+| AOD-9604 | 5mg | $65.00 | $13.00 | — | ✗ | shop/aod-5mg-kit/ |
+| BPC-157 | 10mg | $55.00 | $5.50 | — | ✓ | shop/bpc-157-10mg-vial-kit/ |
 | BPC-157 | 20mg | $80.00 | $4.00 | — | ✗ | shop/bpc-157-10mg-vial-kit/ |
-| Cagrilintide | 5mg | $30.00 | $6.00 | — | ✓ | shop/cagrilintide-5mgx10vials/ |
-| Cagrilintide | 10mg | $46.50 | $4.65 | — | ✓ | shop/cagrilintide-10mgx10vials/ |
+| Cagrilintide | 5mg | $360.00 | $72.00 | — | ✓ | shop/cagrilintide-kit/ |
+| Cagrilintide | 10mg | $90.00 | $9.00 | — | ✓ | shop/cagrilintide-5mg-vial/ |
 | Cibinetide | 10mg | $65.00 | $6.50 | — | ✓ | shop/ara-290-peptide-cibinetide/ |
-| Cibinetide | 30mg | $55.00 | $1.83 | — | ✓ | shop/ara-290-30mgx10vials/ |
-| CJC-1295 | 5mg | $34.50 | $6.90 | — | ✓ | shop/cjc-1295-no-dac-5mgx10vials/ |
-| CJC-1295 | 10mg | $56.00 | $5.60 | — | ✓ | shop/cjc-1295-no-dac-10mgx10vials/ |
-| Dihexa [backlog] | 10mg | $47.50 | $4.75 | — | ✓ | shop/buy-dihexa-peptide/ |
+| CJC-1295 | 5mg | $430.00 | $86.00 | — | ✓ | shop/cjc-1295-no-dac-5mg-kit/ |
 | DSIP | 5mg | $45.00 | $9.00 | — | ✓ | shop/dsip-5mg-vial/ |
-| DSIP | 10mg | $35.00 | $3.50 | — | ✓ | shop/dsip-10mg-x-10-vials/ |
 | Epitalon | 10mg | $55.00 | $5.50 | — | ✓ | shop/epitalon-kit/ |
-| GHK-Cu | 50mg | $32.00 | $0.64 | — | ✓ | shop/ghk-cu-50mgx10vials/ |
-| GHK-Cu | 100mg | $48.00 | $0.48 | — | ✓ | shop/ghk-cu-100mgx10vials/ |
-| Glutathione | 1500mg | $47.50 | $0.03 | — | ✓ | shop/glutathione-1500mgx10vials/ |
-| IGF-1 LR3 | 1mg | $570.00 | $570.00 | — | ✓ | shop/igf-1-lr3-1mg-kit/ |
+| GHK-Cu | 50mg | $50.00 | $1.00 | — | ✓ | shop/ghk-cu-peptide/ |
+| GHK-Cu | 100mg | $75.00 | $0.75 | — | ✓ | shop/ghk-cu-peptide/ |
+| Glutathione | 1500mg | $65.00 | $0.04 | — | ✓ | shop/buy-glutathione/ |
 | Ipamorelin | 5mg | $45.00 | $9.00 | — | ✗ | shop/ipamorelin-10mg-kit10-vials/ |
-| Ipamorelin | 10mg | $40.00 | $4.00 | — | ✓ | shop/ipamorelin-10mgx10vials/ |
-| Kisspeptin-10 | 10mg | $42.00 | $4.20 | — | ✗ | shop/kisspeptin-10mgx10vials/ |
-| KPV | 10mg | $37.00 | $3.70 | — | ✓ | shop/kpv-10mgx10vials/ |
-| MOTS-C | 10mg | $37.50 | $3.75 | — | ✓ | shop/mots-c-10mgx10vials/ |
-| MOTS-C | 40mg | $60.00 | $1.50 | — | ✓ | shop/mots-c-40mgx10vials/ |
+| Ipamorelin | 10mg | $65.00 | $6.50 | — | ✓ | shop/ipamorelin-10mg-kit10-vials/ |
+| KPV | 10mg | $55.00 | $5.50 | — | ✓ | shop/kpv-10mg-vial/ |
+| MOTS-C | 10mg | $60.00 | $6.00 | — | ✓ | shop/mots-c-peptide/ |
+| MOTS-C | 40mg | $130.00 | $3.25 | — | ✓ | shop/mots-c-peptide/ |
 | NAD+ | 100mg | $35.00 | $0.35 | — | ✓ | shop/nad-500mg-vial-kit-buffered/ |
-| NAD+ | 500mg | $38.50 | $0.08 | — | ✗ | shop/nad500mgx10vials/ |
-| NAD+ | 1000mg | $56.00 | $0.06 | — | ✓ | shop/nad1000mgx10vials/ |
-| Oxytocin | 10mg | $40.00 | $4.00 | — | ✓ | shop/oxytocin-10mgx10vials/ |
-| Pinealon | 10mg | $39.00 | $3.90 | — | ✓ | shop/pinealon-10mg-peptide/ |
-| PT-141 | 10mg | $36.50 | $3.65 | — | ✓ | shop/pt-141-10mgx10vials/ |
-| Retatrutide | 5mg | $32.00 | $6.40 | — | ✓ | shop/retatrutide-5mgx10vials/ |
-| Retatrutide | 10mg | $40.00 | $4.00 | — | ✓ | shop/retatrutide-10mgx10vials/ |
-| Retatrutide | 15mg | $47.00 | $3.13 | — | ✓ | shop/retatrutide-15mgx10vials/ |
-| Retatrutide | 20mg | $54.00 | $2.70 | — | ✓ | shop/retatrutide-20mgx10vials/ |
-| Retatrutide | 30mg | $65.00 | $2.17 | — | ✓ | shop/retatrutide-30mgx10vials/ |
-| Retatrutide | 40mg | $75.00 | $1.88 | — | ✓ | shop/retatrutide-40mgx10vials/ |
-| Retatrutide | 50mg | $80.00 | $1.60 | — | ✓ | shop/retatrutide-50mgx10vials/ |
-| Retatrutide | 60mg | $87.00 | $1.45 | — | ✓ | shop/retatrutide-60mgx10vials/ |
-| Selank | 10mg | $35.00 | $3.50 | — | ✓ | shop/selank-10mgx10vials/ |
-| Selank | 20mg | $50.00 | $2.50 | — | ✓ | shop/semax-selank-blend-20mg-x-10-vials/ |
-| Semaglutide | 5mg | $20.00 | $4.00 | — | ✓ | shop/semaglutide-5mgx10vials/ |
-| Semaglutide | 10mg | $26.00 | $2.60 | — | ✓ | shop/semaglutide-10mgx10vials/ |
-| Semaglutide | 15mg | $32.00 | $2.13 | — | ✓ | shop/semaglutide-15mgx10vials/ |
-| Semaglutide | 20mg | $40.00 | $2.00 | — | ✓ | shop/semaglutide-20mgx10vials/ |
-| Semaglutide | 30mg | $50.00 | $1.67 | — | ✓ | shop/semaglutide-30mgx10vials/ |
-| Semax | 10mg | $35.00 | $3.50 | — | ✓ | shop/semax-10mgx10vials/ |
-| Sermorelin | 10mg | $40.00 | $4.00 | — | ✓ | shop/sermorelin-10mgx10vials/ |
+| NAD+ | 500mg | $60.00 | $0.12 | — | ✓ | shop/nad-500mg-vial-kit-buffered/ |
+| NAD+ | 1000mg | $85.00 | $0.09 | — | ✓ | shop/nad-500mg-vial-kit-buffered/ |
+| Oxytocin | 10mg | $70.00 | $7.00 | — | ✓ | shop/oxyt-10mg/ |
+| PT-141 | 10mg | $50.00 | $5.00 | — | ✓ | shop/pt-141-10mg-vial/ |
+| Retatrutide | 5mg | $55.00 | $11.00 | — | ✗ | shop/retatrutide-vial/ |
+| Retatrutide | 10mg | $80.00 | $8.00 | — | ✓ | shop/retatrutide-vial/ |
+| Retatrutide | 15mg | $105.00 | $7.00 | — | ✓ | shop/retatrutide-vial/ |
+| Retatrutide | 20mg | $135.00 | $6.75 | — | ✓ | shop/retatrutide-vial/ |
+| Retatrutide | 30mg | $185.00 | $6.17 | — | ✓ | shop/retatrutide-vial/ |
+| Retatrutide | 50mg | $285.00 | $5.70 | — | ✓ | shop/retatrutide-vial/ |
+| Retatrutide | 60mg | $330.00 | $5.50 | — | ✓ | shop/retatrutide-vial/ |
+| Selank | 10mg | $65.00 | $6.50 | — | ✓ | shop/selank-10mg-vial/ |
+| Selank | 20mg | $90.00 | $4.50 | — | ✓ | shop/selank-semax-blend/ |
+| Semaglutide | 5mg | $45.00 | $9.00 | — | ✓ | shop/semaglutide/ |
+| Semaglutide | 10mg | $75.00 | $7.50 | — | ✓ | shop/semaglutide/ |
+| Semaglutide | 15mg | $110.00 | $7.33 | — | ✗ | shop/semaglutide/ |
+| Semaglutide | 20mg | $155.00 | $7.75 | — | ✓ | shop/semaglutide/ |
+| Semax | 10mg | $65.00 | $6.50 | — | ✓ | shop/semax-10mg/ |
+| Sermorelin | 10mg | $65.00 | $6.50 | — | ✓ | shop/sermorelin-10mg-kit/ |
 | SLU-PP-332 [backlog] | 250mcg | $140.00 | $560.00 | — | ✓ | shop/discover-slu-pp-332-peptide-in-50-100-count-bottles/ |
 | SLU-PP-332 [backlog] | 500mcg | $140.00 | $280.00 | — | ✓ | shop/discover-slu-pp-332-peptide-in-50-100-count-bottles/ |
 | SLU-PP-332 [backlog] | 2mg | $190.00 | $95.00 | — | ✓ | shop/discover-slu-pp-332-peptide-in-50-100-count-bottles/ |
 | SLU-PP-332 [backlog] | 5mg | $245.00 | $49.00 | — | ✓ | shop/discover-slu-pp-332-peptide-in-50-100-count-bottles/ |
 | SLU-PP-332 [backlog] | 10mg | $320.00 | $32.00 | — | ✓ | shop/discover-slu-pp-332-peptide-in-50-100-count-bottles/ |
-| SS-31 | 10mg | $42.50 | $4.25 | — | ✓ | shop/ss-31-10mgx10vials/ |
-| SS-31 | 50mg | $60.00 | $1.20 | — | ✗ | shop/ss-31-50mgx10vials/ |
-| TB-500 | 10mg | $42.00 | $4.20 | — | ✓ | shop/tb-500-10mgx10vials/ |
-| Tesamorelin | 10mg | $43.50 | $4.35 | — | ✓ | shop/tesamorelin-10mgx10vials/ |
+| SS-31 | 10mg | $65.00 | $6.50 | — | ✓ | shop/31pv/ |
+| TB-500 | 10mg | $70.00 | $7.00 | — | ✓ | shop/tb-500-10mg-kit/ |
+| Tesamorelin | 10mg | $75.00 | $7.50 | — | ✓ | shop/tesamorelin-10mg/ |
 | Tesamorelin | 20mg | $120.00 | $6.00 | — | ✓ | shop/tesamorelin-10mg/ |
 | Tesofensine [backlog] | 500mcg | $90.00 | $180.00 | — | ✓ | shop/tesofensine-500mcg-100-bottle/ |
-| Thymalin [backlog] | 10mg | $390.00 | $39.00 | — | ✓ | shop/thymalin-10mg-kit/ |
 | Thymosin Alpha-1 | 5mg | $55.00 | $11.00 | — | ✓ | shop/thymosin-alpha-1-ta-1-10mg-kit/ |
-| Tirzepatide | 5mg | $25.00 | $5.00 | — | ✓ | shop/tirzepatide-5mgx10vials/ |
-| Tirzepatide | 10mg | $26.50 | $2.65 | — | ✓ | shop/tirzepatide-10mgx10vials/ |
-| Tirzepatide | 15mg | $32.00 | $2.13 | — | ✓ | shop/tirzepatide-15mgx10vials/ |
-| Tirzepatide | 20mg | $38.00 | $1.90 | — | ✓ | shop/tirzepatide-20mgx10vials/ |
-| Tirzepatide | 30mg | $45.00 | $1.50 | — | ✓ | shop/tirzepatide-30mgx10vials/ |
-| Tirzepatide | 40mg | $55.00 | $1.38 | — | ✓ | shop/tirzepatide-40mgx10vials/ |
-| Tirzepatide | 50mg | $60.00 | $1.20 | — | ✓ | shop/tirzepatide-50mgx10vials/ |
-| Tirzepatide | 60mg | $65.00 | $1.08 | — | ✓ | shop/tirzepatide-60mgx10vials/ |
-| Tirzepatide | 100mg | $87.50 | $0.88 | — | ✗ | shop/tirzepatide-100mgx10vials/ |
-| VIP | 10mg | $33.00 | $3.30 | — | ✓ | shop/vip-10mgx10vials/ |
+| Tirzepatide | 5mg | $36.00 | $7.20 | — | ✓ | shop/tirzepatide-vials/ |
+| Tirzepatide | 10mg | $50.00 | $5.00 | — | ✓ | shop/tirzepatide-vials/ |
+| Tirzepatide | 15mg | $75.00 | $5.00 | — | ✓ | shop/tirzepatide-vials/ |
+| Tirzepatide | 20mg | $110.00 | $5.50 | — | ✓ | shop/tirzepatide-vials/ |
+| Tirzepatide | 30mg | $150.00 | $5.00 | — | ✓ | shop/tirzepatide-vials/ |
+| Tirzepatide | 40mg | $190.00 | $4.75 | — | ✓ | shop/tirzepatide-vials/ |
+| Tirzepatide | 60mg | $255.00 | $4.25 | — | ✓ | shop/tirzepatide-vials/ |
+| Tirzepatide | 100mg | $380.00 | $3.80 | — | ✗ | shop/tirzepatide-vials/ |
+| VIP | 10mg | $465.00 | $46.50 | — | ✓ | shop/vip-vasoactive-intestinal-peptide-10mg/ |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
 | --- | --- | --- | --- | --- | --- |
-| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 40mg | $60.00 | 10/10/20 (published) | ✓ |
-| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 20mg | $45.00 | 5/5/10 (published) | ✓ |
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 20mg | $95.00 | not published | ✓ |
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $70.00 | not published | ✓ |
-| GLOW | GHK-Cu/BPC-157/TB-500 | 140mg | $45.00 | 10/10/50/70 (published) | ✓ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $530.00 | not published | ✓ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $70.00 | not published | ✓ |
-| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 160mg | $55.00 | 50/10/10/10/80 (published) | ✓ |
 | KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $90.00 | not published | ✓ |
-| Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 25mg | $51.00 | 10/5/10 (published) | ✓ |
 | Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | — | $90.00 | not published | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $115.00 | not published | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $75.00 | not published | ✗ |
 
 ### Sprays: none
-### Excluded: oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
@@ -2812,74 +2794,3 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ### Sprays: none
 ### Excluded: clinical/other, no parseable size (Rule 4), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
-
----
-
-## VENDOR: NOVA Labs
-- **slug:** nova-labs | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** www.nova-biolabs.com
-- **traffic:** (not pulled) | **pulled:** August 3 2026
-- **sale posture:** No known cart-level auto-coupon; re-verify at write.
-
-### Single compounds
-| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
-| --- | --- | --- | --- | --- | --- | --- |
-| 5-Amino-1MQ | 10mg | $170.00 | $17.00 | — | ✓ | shop/peptide-vials/5-amino-1mq/ |
-| 5-Amino-1MQ | 50mg | $590.00 | $11.80 | — | ✓ | shop/peptide-vials/5-amino-1mq/ |
-| BPC-157 | 10mg | $240.00 | $24.00 | — | ✓ | shop/peptide-vials/bpc-157/ |
-| Cagrilintide | 10mg | $390.00 | $39.00 | — | ✓ | shop/peptide-vials/cagrilintide/ |
-| CJC-1295 | 10mg | $270.00 | $27.00 | — | ✓ | shop/peptide-vials/cjc-1295-no-dac/ |
-| DSIP | 10mg | $380.00 | $38.00 | — | ✓ | shop/peptide-vials/dsip/ |
-| Epitalon | 10mg | $170.00 | $17.00 | — | ✓ | shop/peptide-vials/epithalon/ |
-| GHK-Cu | 50mg | $190.00 | $3.80 | — | ✓ | shop/peptide-vials/ghk-cu/ |
-| Ipamorelin | 10mg | $250.00 | $25.00 | — | ✓ | shop/peptide-vials/ipamorelin/ |
-| Kisspeptin-10 | 10mg | $210.00 | $21.00 | — | ✓ | shop/peptide-vials/kisspeptin/ |
-| KPV | 10mg | $290.00 | $29.00 | — | ✓ | shop/peptide-vials/kpv/ |
-| Melanotan II | 10mg | $250.00 | $25.00 | — | ✓ | shop/peptide-vials/mt-2/ |
-| MOTS-C | 10mg | $220.00 | $22.00 | — | ✓ | shop/peptide-vials/mots-c/ |
-| MOTS-C | 40mg | $740.00 | $18.50 | — | ✓ | shop/peptide-vials/mots-c/ |
-| NAD+ | 500mg | $460.00 | $0.92 | — | ✓ | shop/peptide-vials/nad-plus/ |
-| PT-141 | 10mg | $210.00 | $21.00 | — | ✓ | shop/peptide-vials/pt-141/ |
-| Retatrutide (listed as GLP-3 (RT)) | 10mg | $390.00 | $39.00 | — | ✓ | shop/peptide-vials/glp-3-reta/ |
-| Retatrutide (listed as GLP-3 (RT)) | 30mg | $1,090.00 | $36.33 | — | ✓ | shop/peptide-vials/glp-3-reta/ |
-| Selank | 10mg | $215.00 | $21.50 | — | ✓ | shop/peptide-vials/selank/ |
-| Semax | 10mg | $215.00 | $21.50 | — | ✓ | shop/peptide-vials/semax/ |
-| Sermorelin | 5mg | $170.00 | $34.00 | — | ✓ | shop/peptide-vials/sermorelin/ |
-| Sermorelin | 10mg | $320.00 | $32.00 | — | ✓ | shop/peptide-vials/sermorelin/ |
-| SNAP-8 [backlog] | 10mg | $170.00 | $17.00 | — | ✗ | shop/peptide-vials/snap-8/ |
-| SS-31 | 10mg | $350.00 | $35.00 | — | ✓ | shop/peptide-vials/ss-31/ |
-| SS-31 | 50mg | $1,090.00 | $21.80 | — | ✓ | shop/peptide-vials/ss-31/ |
-| TB-500 | 10mg | $340.00 | $34.00 | — | ✓ | shop/peptide-vials/tb-500/ |
-| Tesamorelin | 10mg | $460.00 | $46.00 | — | ✓ | shop/peptide-vials/tesamorelin/ |
-| Tesamorelin | 20mg | $830.00 | $41.50 | — | ✓ | shop/peptide-vials/tesamorelin/ |
-| Thymosin Alpha-1 | 10mg | $290.00 | $29.00 | — | ✓ | shop/peptide-vials/thymosin-alpha-1/ |
-| Tirzepatide | 60mg | $800.00 | $13.33 | — | ✓ | shop/uncategorized/tirzepatide/ |
-
-### Blends (total mg; ratio where published)
-| Blend | Components | Total mg | Base | Ratio | Stock |
-| --- | --- | --- | --- | --- | --- |
-| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $800.00 | not published | ✓ |
-| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $470.00 | not published | ✓ |
-| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $890.00 | not published | ✓ |
-| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $560.00 | not published | ✓ |
-
-### Sprays / strips (separate format, no $/mg)
-| Product | Size | Base | Stock |
-| --- | --- | --- | --- |
-| DSIP (spray) | 10mg | $710.00 | ✓ |
-| Epitalon (spray) | 10mg | $500.00 | ✓ |
-| KPV (spray) | 10mg | $620.00 | ✓ |
-| Melanotan II (spray) | 10mg | $580.00 | ✓ |
-| NAD+ (spray) | 500mg | $790.00 | ✓ |
-| PT-141 (spray) | 10mg | $540.00 | ✓ |
-| Selank (spray) | 20mg | $1,017.00 | ✓ |
-| Selank (spray) | 10mg | $565.00 | ✓ |
-| Selank (spray) | 20mg | $981.00 | ✓ |
-| Selank (spray) | 10mg | $545.00 | ✓ |
-| Semax (spray) | 10mg | $565.00 | ✓ |
-| Semax (spray) | 10mg | $545.00 | ✓ |
-
-### Excluded: out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
-
----
-
-## VENDOR: [next vendor — append here in same format]

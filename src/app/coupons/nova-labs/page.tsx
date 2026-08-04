@@ -5,11 +5,6 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
-import { vendors } from "@/data/vendors";
-import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
-import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
-
-const v = vendors["nova-labs"];
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
@@ -32,10 +27,6 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function NovaLabsCouponPage() {
-  const rows = vendorProductRows("nova-labs");
-  const discountPct = vendorDiscountPct("nova-labs");
-  const autoApply = codeAutoApplies("nova-labs");
-  const shopUrl = makeShopUrlFor("nova-labs");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -97,21 +88,6 @@ export default function NovaLabsCouponPage() {
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             NOVA Labs is UAE-based and ships express, cold-chain across the UAE and the wider GCC. All products are sold for laboratory and research use only.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">NOVA Labs catalog &amp; prices</h2>
-
-          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
-
-          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
-            Struck-through prices are NOVA Labs&apos; list price; the bold figure is{" "}
-            {autoApply ? (
-              <>your price after the {discountPct}% code</>
-            ) : (
-              <>your price once you apply code {v.code} at checkout</>
-            )}. Prices current as of {PRICES_UPDATED_DATE}.
           </p>
         </div>
 
