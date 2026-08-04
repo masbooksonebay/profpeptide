@@ -32,6 +32,14 @@ class Blocked(Exception):
     pass
 
 
+class NonUSD(Exception):
+    """Raised when a vendor's Store API reports a non-USD currency_code. The pull prices in USD
+    only; storing another currency's numbers as USD would silently mis-scale every row (NOVA in
+    AED shipped ~3.67x inflated). Refuse loudly and write no price section — absent beats wrong,
+    with no FX rate to go stale (option a). Forward-compatible with a future native-currency render."""
+    pass
+
+
 def http_get(url, timeout=25, retries=2, cookie=None):
     hdrs = {"User-Agent": UA, "Accept": "*/*"}
     if cookie:
@@ -211,6 +219,9 @@ def woo(domain, per_page=100, max_pages=12, cookie=None):
                     'price': _cents(pr, 'price'), 'regular': _cents(pr, 'regular_price'),
                     'in_stock': p.get('is_in_stock'), 'variations': variations,
                     'slug': resolved or p.get('slug'),
+                    # currency_code from the Store API — carried through so the build_vendor currency
+                    # guard can refuse non-USD vendors (priced in USD only). Absent → treated as USD.
+                    'currency': (pr.get('currency_code') or '').upper(),
                     'description': html.unescape(p.get('description', '') + ' ' + p.get('short_description', ''))})
     return out
 

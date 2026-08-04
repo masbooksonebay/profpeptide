@@ -93,6 +93,18 @@ def build_vendor(slug, cfg, meta):
                                "— supply the WordPress login session cookie")
         opts["cookie"] = cookie
     products = adapters.fetch(cfg["adapter"], cfg["domain"], **opts)
+    # Currency guard (option a): the pull prices in USD only. If the Store API reports a non-USD
+    # currency_code, storing those numbers as USD silently mis-scales every row (NOVA in AED was
+    # ~3.67x inflated). Refuse loudly and write nothing rather than ship wrong prices — no FX rate
+    # to rot, and forward-compatible with a future native-currency renderer. Adapters that don't
+    # surface currency_code (no key) are treated as USD (the default), unchanged.
+    currencies = {c.upper() for p in products if (c := p.get("currency"))}
+    non_usd = currencies - {"USD"}
+    if non_usd:
+        raise adapters.NonUSD(
+            f"Store API reports {', '.join(sorted(non_usd))}, not USD — priced in USD only, so "
+            f"this vendor is excluded from price data (keep the coupon page, no grid). "
+            f"See the currency-handling report.")
     m = {"name": cfg["name"], "code": meta.get("code") or "?", "discount": meta.get("discount") or "?",
          "url": re.sub(r"^https?://", "", meta.get("url") or cfg["domain"]).split("/")[0],
          "sale_posture": cfg.get("sale_posture", "")}
@@ -157,6 +169,8 @@ def main():
             print(f"[skip] {slug}: CINC read-only vendor (Cloudflare-blocked API) — refresh manually"); continue
         try:
             section, counts = build_vendor(slug, cfg, meta.get(slug, {}))
+        except adapters.NonUSD as e:
+            print(f"[CURRENCY] {slug}: {e}"); continue
         except adapters.Blocked as e:
             print(f"[block] {slug}: {e}"); continue
         except Exception as e:
