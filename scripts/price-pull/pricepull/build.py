@@ -8,6 +8,34 @@ from . import normalize as N
 
 _SPRAY = re.compile(r'spray|nasal', re.I)
 
+# Wholesale-only SKUs — a real price no retail buyer can access (would rank the vendor cheapest
+# on /prices for a price nobody can buy at). The "Wholesale ONLY" label is explicit, so this is
+# safe as a GENERAL rule — unlike a blanket "kit" slug check, which flagged 16 legitimate rows to
+# catch 2 (see MANUAL_EXCLUDE). Currently the only match is Swiss Chems' AOD-9604 2mg.
+_WHOLESALE = re.compile(r'wholesale[\s-]*only', re.I)
+
+# Manually excluded SKUs the automatic classifiers can't correctly drop — matched against the
+# resolved slug OR the name (substring, case-insensitive), each with its reason. Deliberately a
+# short, NAMED list rather than a general slug rule: a blanket slug "kit" match was rejected
+# because it flagged 16 correctly-priced rows (biocollex glp3-bundle, peptide-partners tb4-kit,
+# and 10 royal single-vials whose slugs merely contain "-kit") to catch these 2 real leaks.
+MANUAL_EXCLUDE = {
+    "royal-peptides": [
+        ("cagrilintide-kit", "10-vial kit whose NAME carries no kit marker (only the slug does), so "
+                             "is_kit_name misses it — $360 = $72/mg vs a ~$11/mg median."),
+        ("cjc-1295-no-dac-5mg-kit", "10-vial kit whose NAME carries no kit marker — $430 = $86/mg vs "
+                                    "a ~$10/mg median."),
+        ("vip-vasoactive-intestinal-peptide-10mg", "pricing error: this single 10mg is listed at $465, "
+                                                   "ABOVE the same vendor's 10-vial kit ($330) — internally "
+                                                   "impossible, so removed as an error, not a premium."),
+    ],
+    "behemoth-labz": [
+        ("dihexa", "form-strength product (powder/liquid/tabs); its '10mg per ml' liquid mis-parses as a "
+                   "10mg vial ($9.18 = $0.92/mg). Not a vial price. (MK-777 is the same class — reported, "
+                   "not yet excluded.)"),
+    ],
+}
+
 
 def _row(cells):
     return "| " + " | ".join(str(c) for c in cells) + " |"
@@ -26,6 +54,14 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
     vendors flag it with no actual markdown)."""
     name = product['name']
     vslug = product.get('slug', '')          # the vendor's own product slug (nextjs/Medusa); '' for adapters that don't expose one
+
+    # Wholesale-only SKUs (general, explicit-label rule) and the short NAMED manual-exclude list.
+    if _WHOLESALE.search(name):
+        yield ('exclude', 'wholesale-only SKU (not a retail price)'); return
+    hay = f"{vslug} {name}".lower()
+    for frag, reason in MANUAL_EXCLUDE.get(vendor, ()):
+        if frag in hay:
+            yield ('exclude', f'manually excluded — {reason}'); return
 
     # Kit/pack/bundle in the NAME of a product with no variations for is_kit() to inspect — e.g.
     # Royal's simple "IGF-1 LR3 1mg Kit". Exclude it: a kit price must never ship as a single-vial

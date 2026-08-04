@@ -16,7 +16,7 @@
   },
   {
     "slug": "aod-9604",
-    "vendors": 24,
+    "vendors": 23,
     "indexable": true
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "slug": "cjc-1295",
-    "vendors": 25,
+    "vendors": 24,
     "indexable": true
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "slug": "dihexa",
-    "vendors": 9,
+    "vendors": 8,
     "indexable": true
   },
   {
@@ -131,7 +131,7 @@
   },
   {
     "slug": "igf-1-lr3",
-    "vendors": 16,
+    "vendors": 17,
     "indexable": true
   },
   {
@@ -193,6 +193,11 @@
     "slug": "nad-plus",
     "vendors": 31,
     "indexable": true
+  },
+  {
+    "slug": "orforglipron",
+    "vendors": 1,
+    "indexable": false
   },
   {
     "slug": "ovagen",
@@ -341,7 +346,7 @@
   },
   {
     "slug": "vip",
-    "vendors": 19,
+    "vendors": 18,
     "indexable": true
   }
 ]

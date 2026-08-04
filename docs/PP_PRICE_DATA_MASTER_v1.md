@@ -525,7 +525,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Behemoth Labz
 - **slug:** behemoth-labz | **code:** PROF10 | **discount:** 10% off | **url:** behemothlabz.com
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 3 2026
 - **sale posture:** Product sale 20/100; code stacks.
 
 ### Single compounds
@@ -552,7 +552,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | CJC-1295 | 2mg | $41.45 | $20.73 | — | ✓ | product/cjc-1295-with-dac/ |
 | CJC-1295 | 5mg | $58.13 | $11.63 | — | ✓ | product/cjc-1295-with-dac/ |
 | Cortagen | 20mg | $54.48 | $2.72 | — | ✓ | product/cortagen/ |
-| Dihexa [backlog] | 10mg | $9.18 | $0.92 | — | ✓ | product/dihexa/ |
 | DSIP | 2mg | $49.48 | $24.74 | — | ✓ | product/dsip-delta-sleep-inducing-peptide/ |
 | DSIP | 5mg | $56.48 | $11.30 | — | ✓ | product/dsip-delta-sleep-inducing-peptide/ |
 | Epitalon | 20mg | $96.57 | $4.83 | — | ✓ | product/epithalon/ |
@@ -667,7 +666,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tesamorelin (spray) | 1mg | $1,122.22 | ✓ |
 | Tesamorelin (spray) | 200mcg | $325.71 | ✓ |
 
-### Excluded: oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: manually excluded — form-strength product (powder/liquid/tabs); its '10mg per ml' liquid mis-parses as a 10mg vial ($9.18 = $0.92/mg). Not a vial price. (MK-777 is the same class — reported, not yet excluded.), multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
@@ -1450,19 +1449,18 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
-| 5-Amino-1MQ | 50mg | $90.00 | $1.80 | — | ✗ | shop/5-amino-1mq/ |
+| 5-Amino-1MQ | 50mg | $80.00 | $1.60 | — | ✓ | shop/5-amino-1mq/ |
 | AOD-9604 | 5mg | $65.00 | $13.00 | — | ✗ | shop/aod-5mg-kit/ |
 | BPC-157 | 10mg | $55.00 | $5.50 | — | ✓ | shop/bpc-157-10mg-vial-kit/ |
 | BPC-157 | 20mg | $80.00 | $4.00 | — | ✗ | shop/bpc-157-10mg-vial-kit/ |
-| Cagrilintide | 5mg | $360.00 | $72.00 | — | ✓ | shop/cagrilintide-kit/ |
 | Cagrilintide | 10mg | $90.00 | $9.00 | — | ✓ | shop/cagrilintide-5mg-vial/ |
 | Cibinetide | 10mg | $65.00 | $6.50 | — | ✓ | shop/ara-290-peptide-cibinetide/ |
-| CJC-1295 | 5mg | $430.00 | $86.00 | — | ✓ | shop/cjc-1295-no-dac-5mg-kit/ |
 | DSIP | 5mg | $45.00 | $9.00 | — | ✓ | shop/dsip-5mg-vial/ |
 | Epitalon | 10mg | $55.00 | $5.50 | — | ✓ | shop/epitalon-kit/ |
 | GHK-Cu | 50mg | $50.00 | $1.00 | — | ✓ | shop/ghk-cu-peptide/ |
 | GHK-Cu | 100mg | $75.00 | $0.75 | — | ✓ | shop/ghk-cu-peptide/ |
 | Glutathione | 1500mg | $65.00 | $0.04 | — | ✓ | shop/buy-glutathione/ |
+| IGF-1 LR3 | 1mg | $78.00 | $78.00 | — | ✓ | shop/igf-1-lr3-1mg-kit/ |
 | Ipamorelin | 5mg | $45.00 | $9.00 | — | ✗ | shop/ipamorelin-10mg-kit10-vials/ |
 | Ipamorelin | 10mg | $65.00 | $6.50 | — | ✓ | shop/ipamorelin-10mg-kit10-vials/ |
 | KPV | 10mg | $55.00 | $5.50 | — | ✓ | shop/kpv-10mg-vial/ |
@@ -1507,7 +1505,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tirzepatide | 40mg | $190.00 | $4.75 | — | ✓ | shop/tirzepatide-vials/ |
 | Tirzepatide | 60mg | $255.00 | $4.25 | — | ✓ | shop/tirzepatide-vials/ |
 | Tirzepatide | 100mg | $380.00 | $3.80 | — | ✗ | shop/tirzepatide-vials/ |
-| VIP | 10mg | $465.00 | $46.50 | — | ✓ | shop/vip-vasoactive-intestinal-peptide-10mg/ |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
@@ -1522,19 +1519,18 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $75.00 | not published | ✗ |
 
 ### Sprays: none
-### Excluded: multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: manually excluded — 10-vial kit whose NAME carries no kit marker (only the slug does), so is_kit_name misses it — $360 = $72/mg vs a ~$11/mg median., manually excluded — 10-vial kit whose NAME carries no kit marker — $430 = $86/mg vs a ~$10/mg median., manually excluded — pricing error: this single 10mg is listed at $465, ABOVE the same vendor's 10-vial kit ($330) — internally impossible, so removed as an error, not a premium., multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
 ## VENDOR: Swiss Chems
 - **slug:** swiss-chems | **code:** PROF10 | **discount:** 10% off | **url:** swisschems.is
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 3 2026
 - **sale posture:** Product sale 46/145; code stacks.
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
-| AOD-9604 | 2mg | $6.00 | $3.00 | — | ✗ | product/aod-9604-2mg-wholesale-only/ |
 | BPC-157 | 5mg | $39.99 | $8.00 | $49.99 | ✓ | product/bpc157-with-arginine-salt/ |
 | BPC-157 | 10mg | $59.95 | $6.00 | — | ✓ | product/bpc157-with-arginine-salt/ |
 | Bronchogen [backlog] | 20mg | $64.95 | $3.25 | $70.00 | ✓ | product/bronchogen-20mg/ |
@@ -1564,8 +1560,8 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Melanotan II | 10mg | $27.96 | $2.80 | $34.95 | ✓ | product/melanotan-ii-10mg/ |
 | MGF | 2mg | $29.99 | $14.99 | $37.94 | ✓ | product/mgf-without-peg-2-mg/ |
 | MOTS-C | 10mg | $69.95 | $7.00 | — | ✓ | product/mots-c-10mg/ |
-| NAD+ | — | $24.99 | — | $39.99 | ✓ | product/nad-nicotinamide-adenine-dinucleotide-powder-10-grams/ |
 | NAD+ | 100mg | $47.95 | $0.48 | — | ✓ | product/nad-nicotinamide-adenine-dinucleotide-100-mg/ |
+| Orforglipron [backlog] | 6mg | $198.95 | $33.16 | — | ✓ | product/orforglipron-6mg-90caps/ |
 | Ovagen [backlog] | 20mg | $57.50 | $2.88 | $65.00 | ✓ | product/ovagen-20mg/ |
 | Oxytocin | 2mg | $21.95 | $10.97 | — | ✓ | product/oxytocin/ |
 | Oxytocin | 5mg | $31.95 | $6.39 | — | ✓ | product/oxytocin/ |
@@ -1585,7 +1581,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Testagen [backlog] | 20mg | $59.95 | $3.00 | — | ✓ | product/testagen-20mg/ |
 | Thymogen | 20mg | $67.95 | $3.40 | $80.95 | ✓ | product/thymogen-20mg/ |
 | Thymosin Alpha-1 | 5mg | $63.99 | $12.80 | — | ✓ | product/thymosin-alpha-1/ |
-| Vilon [backlog] | 20mg | $63.00 | $3.15 | $74.00 | ✓ | product/vilon-20mg/ |
+| Vilon [backlog] | 20mg | $63.00 | $3.15 | $74.00 | ✗ | product/vilon-20mg/ |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
@@ -1594,7 +1590,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $134.95 | not published | ✓ |
 
 ### Sprays: none
-### Excluded: oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: multi-vial kit / pack (by name), no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply, wholesale-only SKU (not a retail price) — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
