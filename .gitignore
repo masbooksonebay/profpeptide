@@ -26,3 +26,7 @@ next-env.d.ts
 # Session-auth cookie for login-gated vendors (Modern Aminos). A LIVE CREDENTIAL —
 # supplied out-of-band and read at pull time by refresh.py; never committed.
 /scripts/price-pull/.session-cookie
+
+# Python bytecode caches (were tracked by mistake; never commit)
+__pycache__/
+*.pyc

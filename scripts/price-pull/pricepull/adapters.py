@@ -182,12 +182,35 @@ def woo(domain, per_page=100, max_pages=12, cookie=None):
             print(f"    {path}: {n}", file=sys.stderr)
 
     out = []
+    slug_misses = []   # variation size values that fell back to an unresolved slugified-decimal (Rule C)
     for p in products:
         pr = p.get('prices', {})
+        # RULE C: WooCommerce stores a variation's attribute as the term SLUG — "552.18 mg | Batch
+        # 1708 | 99.8% Purity" becomes "552-18-mg-batch-1708-99-8-purity", which destroys the decimal
+        # so parse_size later reads "18mg". The decimal-preserving DISPLAY lives in the product's
+        # attributes[].terms[].name; build a (attr-name, term-slug) -> term-name map and resolve each
+        # variation value through it BEFORE it reaches parse_size.
+        term_name = {}
+        for a in p.get('attributes', []):
+            an = a.get('name', '')
+            for t in (a.get('terms') or []):
+                if t.get('slug') and t.get('name'):
+                    term_name[(an, t['slug'])] = t['name']
         variations = []
         for v in p.get('variations', []):
             vf = vfmap.get(v['id'])
-            attrs = [(a.get('name', ''), a.get('value', '')) for a in v.get('attributes', [])]
+            attrs = []
+            for a in v.get('attributes', []):
+                an, val = a.get('name', ''), a.get('value', '')
+                disp = term_name.get((an, val))
+                if disp is None:
+                    # MISS: no matching term — fall back to the raw value, but NEVER silently when it
+                    # is a slugified decimal ("552-18-mg"), which would reintroduce the mis-parse. The
+                    # slug is unrecoverable (parse_size can only grab a wrong fragment), so surface it.
+                    if val and re.search(r'\d-\d.*?(mg|mcg)\b', val, re.I):
+                        slug_misses.append((p.get('slug', ''), an, val))
+                    disp = val
+                attrs.append((an, disp))
             vpr = vf.get('prices', {}) if vf else pr
             # `price` is the CURRENT price (sale_price when on sale, else regular_price);
             # `regular` is the standing list price. Both come straight from the Store API.
@@ -223,6 +246,11 @@ def woo(domain, per_page=100, max_pages=12, cookie=None):
                     # guard can refuse non-USD vendors (priced in USD only). Absent → treated as USD.
                     'currency': (pr.get('currency_code') or '').upper(),
                     'description': html.unescape(p.get('description', '') + ' ' + p.get('short_description', ''))})
+    if slug_misses:
+        print(f"[woo:{domain}] ⚠ {len(slug_misses)} variation size(s) fell back to an UNRESOLVED "
+              f"slugified-decimal value (a term lookup missed; parse_size will mis-read these):", file=sys.stderr)
+        for slug, an, val in slug_misses[:12]:
+            print(f"    {slug} [{an}] = {val!r}", file=sys.stderr)
     return out
 
 
