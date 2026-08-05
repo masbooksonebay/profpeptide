@@ -2059,32 +2059,32 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 ## VENDOR: Mile High Compounds
 - **slug:** mile-high-compounds | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** milehighcompounds.is
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 5 2026
 - **sale posture:** Check product-level sale_price each refresh; PP code stacks.
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
-| 5-Amino-1MQ | — | $109.99 | — | $129.99 | ✓ | product/5-amino-1mq/ |
-| Adamax | — | $79.99 | — | $89.99 | ✓ | product/adamax/ |
-| AOD-9604 | — | $59.99 | — | $69.99 | ✓ | product/aod-9604/ |
-| BPC-157 | — | $49.99 | — | $59.99 | ✓ | product/bpc-157/ |
-| Cagrilintide | — | $119.99 | — | $129.99 | ✓ | product/cagri-10/ |
-| Cardiogen | — | $49.99 | — | $59.99 | ✓ | product/cardiogen/ |
-| Cartalax [backlog] | — | $69.99 | — | $79.99 | ✗ | product/cartalax/ |
-| Cibinetide | — | $49.99 | — | $59.99 | ✓ | product/ara-290/ |
-| CJC-1295 | — | $59.99 | — | $69.99 | ✓ | product/cjc-1295-w-dac/ |
-| DSIP | — | $49.99 | — | $59.99 | ✓ | product/dsip/ |
+| 5-Amino-1MQ | 50mg | $109.99 | $2.20 | $129.99 | ✓ | product/5-amino-1mq/ |
+| Adamax | 10mg | $79.99 | $8.00 | $89.99 | ✓ | product/adamax/ |
+| AOD-9604 | 5mg | $59.99 | $12.00 | $69.99 | ✓ | product/aod-9604/ |
+| BPC-157 | 10mg | $49.99 | $5.00 | $59.99 | ✓ | product/bpc-157/ |
+| Cagrilintide | 10mg | $119.99 | $12.00 | $129.99 | ✓ | product/cagri-10/ |
+| Cardiogen | 20mg | $49.99 | $2.50 | $59.99 | ✓ | product/cardiogen/ |
+| Cartalax [backlog] | 20mg | $69.99 | $3.50 | $79.99 | ✗ | product/cartalax/ |
+| Cibinetide | 10mg | $49.99 | $5.00 | $59.99 | ✓ | product/ara-290/ |
+| CJC-1295 | 5mg | $59.99 | $12.00 | $69.99 | ✓ | product/cjc-1295-w-dac/ |
+| DSIP | 10mg | $49.99 | $5.00 | $59.99 | ✓ | product/dsip/ |
 | Epitalon | 50mg | $119.99 | $2.40 | $129.99 | ✓ | product/epithalon/ |
-| GHK-Cu | — | $49.99 | — | $59.99 | ✓ | product/ghk-cu/ |
-| Glutathione | — | $79.99 | — | $89.99 | ✓ | product/glutathione/ |
-| IGF-1 LR3 | — | $79.99 | — | $99.99 | ✓ | product/igf-1-lr3/ |
-| Ipamorelin | — | $59.99 | — | $69.99 | ✓ | product/ipamorelin/ |
-| Kisspeptin-10 | — | $44.99 | — | $59.99 | ✓ | product/kisspeptin/ |
-| KPV | — | $49.99 | — | $59.99 | ✓ | product/kpv/ |
-| LL-37 | — | $39.99 | — | $49.99 | ✓ | product/ll-37/ |
-| Melanotan I | — | $39.99 | — | $49.99 | ✓ | product/mt-1/ |
-| Melanotan II | — | $39.99 | — | $49.99 | ✓ | product/mt-2/ |
+| GHK-Cu | 50mg | $49.99 | $1.00 | $59.99 | ✓ | product/ghk-cu/ |
+| Glutathione | 1500mg | $79.99 | $0.05 | $89.99 | ✓ | product/glutathione/ |
+| IGF-1 LR3 | 1mg | $79.99 | $79.99 | $99.99 | ✓ | product/igf-1-lr3/ |
+| Ipamorelin | 10mg | $59.99 | $6.00 | $69.99 | ✓ | product/ipamorelin/ |
+| Kisspeptin-10 | 10mg | $44.99 | $4.50 | $59.99 | ✓ | product/kisspeptin/ |
+| KPV | 10mg | $49.99 | $5.00 | $59.99 | ✓ | product/kpv/ |
+| LL-37 | 5mg | $39.99 | $8.00 | $49.99 | ✓ | product/ll-37/ |
+| Melanotan I | 10mg | $39.99 | $4.00 | $49.99 | ✓ | product/mt-1/ |
+| Melanotan II | 10mg | $39.99 | $4.00 | $49.99 | ✓ | product/mt-2/ |
 | MHC-1 SM [coded, UNVERIFIED] | 10mg | $69.99 | $7.00 | $89.99 | ✓ | product/mhc-1-sm/ |
 | MHC-2 TRZ [coded, UNVERIFIED] | 10mg | $89.99 | $9.00 | $119.99 | ✓ | product/mhc-2-trz/ |
 | MHC-2 TRZ [coded, UNVERIFIED] | 30mg | $149.99 | $5.00 | $179.99 | ✓ | product/mhc-2-trz/ |
@@ -2096,24 +2096,22 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | MHC-3 RT [coded, UNVERIFIED] | 50mg | $279.99 | $5.60 | $299.99 | ✓ | product/mhc-3-rt/ |
 | MOTS-C | 10mg | $49.99 | $5.00 | $59.99 | ✓ | product/mots-c/ |
 | MOTS-C | 40mg | $139.99 | $3.50 | $159.99 | ✓ | product/mots-c/ |
-| NAD+ | — | $59.99 | — | $69.99 | ✓ | product/nad500mg/ |
-| Oxytocin | — | $59.99 | — | $69.99 | ✓ | product/oxytocin/ |
-| Pinealon | — | $49.99 | — | $59.99 | ✓ | product/pinealon/ |
-| Prostamax [backlog] | — | $69.99 | — | $79.99 | ✓ | product/prostamax/ |
-| PT-141 | — | $44.99 | — | $49.99 | ✓ | product/pt-141/ |
-| Selank | — | $39.99 | — | $49.99 | ✓ | product/selank/ |
-| Semax | — | $39.99 | — | $49.99 | ✓ | product/semax/ |
-| Sermorelin | — | $69.99 | — | $79.99 | ✓ | product/sermorelin/ |
-| SLU-PP-332 [backlog] | — | $159.99 | — | $179.99 | ✓ | product/slu-pp-332/ |
-| SNAP-8 [backlog] | — | $39.99 | — | $49.99 | ✓ | product/snap-8/ |
-| SS-31 | — | $69.99 | — | $79.99 | ✓ | product/mtp-31/ |
-| TB-500 | — | $59.99 | — | $69.99 | ✓ | product/tb-500/ |
-| Tesamorelin | — | $79.99 | — | $99.99 | ✓ | product/tesamorlin/ |
-| Tesofensine [backlog] | — | $119.99 | — | $149.99 | ✓ | product/tesofensine/ |
-| Testagen [backlog] | — | $69.99 | — | $79.99 | ✓ | product/testagen/ |
-| Thymogen | — | $49.99 | — | $59.99 | ✓ | product/thymagen/ |
-| Thymosin Alpha-1 | — | $69.99 | — | $79.99 | ✓ | product/thymosin-alpha-1/ |
-| VIP | — | $59.99 | — | $79.99 | ✓ | product/vip/ |
+| NAD+ | 500mg | $59.99 | $0.12 | $69.99 | ✓ | product/nad500mg/ |
+| Oxytocin | 10mg | $59.99 | $6.00 | $69.99 | ✓ | product/oxytocin/ |
+| Pinealon | 10mg | $49.99 | $5.00 | $59.99 | ✓ | product/pinealon/ |
+| Prostamax [backlog] | 20mg | $69.99 | $3.50 | $79.99 | ✓ | product/prostamax/ |
+| PT-141 | 10mg | $44.99 | $4.50 | $49.99 | ✓ | product/pt-141/ |
+| Selank | 10mg | $39.99 | $4.00 | $49.99 | ✓ | product/selank/ |
+| Semax | 10mg | $39.99 | $4.00 | $49.99 | ✓ | product/semax/ |
+| Sermorelin | 10mg | $69.99 | $7.00 | $79.99 | ✓ | product/sermorelin/ |
+| SNAP-8 [backlog] | 10mg | $39.99 | $4.00 | $49.99 | ✓ | product/snap-8/ |
+| SS-31 | 10mg | $69.99 | $7.00 | $79.99 | ✓ | product/mtp-31/ |
+| TB-500 | 10mg | $59.99 | $6.00 | $69.99 | ✓ | product/tb-500/ |
+| Tesamorelin | 10mg | $79.99 | $8.00 | $99.99 | ✓ | product/tesamorlin/ |
+| Testagen [backlog] | 20mg | $69.99 | $3.50 | $79.99 | ✓ | product/testagen/ |
+| Thymogen | 20mg | $49.99 | $2.50 | $59.99 | ✓ | product/thymagen/ |
+| Thymosin Alpha-1 | 10mg | $69.99 | $7.00 | $79.99 | ✓ | product/thymosin-alpha-1/ |
+| VIP | 10mg | $59.99 | $6.00 | $79.99 | ✓ | product/vip/ |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
@@ -2125,11 +2123,10 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Sprays / strips (separate format, no $/mg)
 | Product | Size | Base | Stock |
 | --- | --- | --- | --- |
-| Pinealon (spray) | — | $169.99 | ✓ |
-| Selank (spray) | — | $149.99 | ✓ |
-| Semax (spray) | — | $159.99 | ✓ |
+| Selank (spray) | 40mg | $149.99 | ✓ |
+| Semax (spray) | 50mg | $159.99 | ✓ |
 
-### Excluded: oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend leak (Rule A): pinealon + selank + semax — blend-registry candidate, blend leak (Rule A): selank + semax — blend-registry candidate, no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
