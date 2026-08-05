@@ -2163,7 +2163,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | KPV | — | $35.00 | — | — | ✓ | product/kpv/ |
 | Melanotan II | 10mg | $24.99 | $2.50 | — | ✓ | product/mt-2-10mg/ |
 | MOTS-C | 40mg | $80.00 | $2.00 | — | ✓ | product/mots-c/ |
-| NAD+ | 50mg | $135.00 | $2.70 | — | ✓ | product/nad5-amino-mq-50mg-each/ |
 | NAD+ | 500mg | $50.00 | $0.10 | — | ✓ | product/nad-500mg/ |
 | Prostamax [backlog] | — | $60.00 | — | — | ✗ | product/prostamax/ |
 | PT-141 | 10mg | $24.99 | $2.50 | — | ✗ | product/pt-141-10mg/ |
@@ -2213,9 +2212,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | 5-Amino-1MQ | 10mg | $49.00 | $4.90 | — | ✓ | product/5-amino-1mq/ |
 | 5-Amino-1MQ | 50mg | $99.00 | $1.98 | — | ✓ | product/5-amino-1mq/ |
 | AOD-9604 | 5mg | $39.00 | $7.80 | — | ✓ | product/aod-9604-5mg/ |
-| BPC-157 | 500mcg | $89.00 | $178.00 | — | ✓ | product/pentadecapeptide/ |
-| BPC-157 | 5mg | $38.00 | $7.60 | — | ✓ | product/pentadecapeptide/ |
-| BPC-157 | 10mg | $68.00 | $6.80 | — | ✓ | product/pentadecapeptide/ |
 | Bronchogen [backlog] | 20mg | $54.00 | $2.70 | — | ✓ | product/bronchogen-20mg/ |
 | Cagrilintide | 10mg | $95.20 | $9.52 | $119.00 | ✓ | product/cagrilintide-10mg/ |
 | Cardiogen | 20mg | $54.00 | $2.70 | — | ✓ | product/cardiogen-20mg/ |

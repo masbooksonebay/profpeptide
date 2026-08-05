@@ -79,6 +79,11 @@ MANUAL_EXCLUDE = {
         ("semax-selank", "blend leak: Semax/Selank blend mis-classified as Selank 5/12/20/30mg. modern ALSO "
                          "sells a real Selank 10mg single (product/selank-10mg) which is UNAFFECTED and stays on "
                          "/prices — only the blend rows are removed."),
+        ("pentadecapeptide", "blend/combo leak (≥10x): 'BPC-157 (Pentadecapeptide) & PDA (Pentadeca Arginate)' "
+                             "is a BPC-157+PDA combo whose 3 size variants ALL render as BPC-157 — the 500mcg "
+                             "dry-fill at $178/mg = 32.4x median. modern has NO pure-BPC-157 single, so this "
+                             "removes modern from /prices/bpc-157 entirely (correct: it doesn't sell clean BPC-157). "
+                             "NOTE the slug 'pentadecapeptide' contains 'cap' — a Rule-A word-boundary FP case (below)."),
     ],
     "peptidology": [
         ("semax-selank", "blend leak: Semax/Selank blend -> Selank 27mg ($4.81/mg)."),
@@ -88,7 +93,17 @@ MANUAL_EXCLUDE = {
     "nextgen-peptides": [
         ("semax-selank-pinealon", "blend leak: Semax/Selank/Pinealon 3-way blend -> Pinealon 60mg ($2.42/mg) "
                                   "(match() picked Pinealon as the LONGEST alias, not the first-named)."),
+        ("nad5-amino-mq", "blend leak (≥10x): 'NAD+5-AMINO-MQ 50MG each' is a NAD+/5-Amino-1MQ blend rendering "
+                          "as NAD+ 50mg ($2.70/mg = 20.8x median). Frag is 'nad5-amino-mq' (NOT bare 'nad+' — "
+                          "the compound name itself contains '+', so a careless frag would catch real NAD+ rows; "
+                          "FP-scanned: hits only this blend, leaves nextgen's real product/nad-500mg untouched)."),
     ],
+    # ── Rule A (count-multiplication) WORD-BOUNDARY FP CASES — build the fix against these ──
+    # These slugs/names contain a count-format substring but are NOT count products; Rule A's regex
+    # MUST use word boundaries so it does not resize/exclude them:
+    #   • product/pentadecapeptide  — "cap" is inside BPC-157's scientific name "pentadecapeptide".
+    #   • any "...capeptide" / "peptide" token — never a "capsule".
+    # (LL-37 "CAP-18" caps ARE oral products but were kept as legitimate; Rule A must not touch them either.)
     # ── ORAL/COUNT RE-EXAMINATION (2026-08-04) ────────────────────────────────────────────────
     # The first pass over-excluded. For NATIVELY-ORAL small molecules (orforglipron, tesofensine,
     # slu-pp-332) there is no injectable comparator, so "oral format" is not evidence of a leak —
