@@ -37,8 +37,16 @@ def load_session_cookie():
 
 
 def existing_singles_count(doc_text, name):
-    """Rows currently in a vendor's '### Single compounds' table — the baseline for the
-    row-drop floor. 0 when the vendor isn't in the doc yet (first onboard → floor inert)."""
+    """PRICEABLE rows currently in a vendor's '### Single compounds' table — the baseline for the
+    row-drop floor. 0 when the vendor isn't in the doc yet (first onboard → floor inert).
+
+    Counts only rows with a real size, SKIPPING '—' (no-size) placeholders. The floor compares this
+    baseline against the fresh pull's counts['singles'], which — since 7b8d3f6 — excludes no-size
+    products (Rule 4). Counting '—' rows here made the comparison asymmetric: doc rows written before
+    7b8d3f6 carried '—' placeholders that a fresh pull no longer emits, so a re-pull looked like a
+    ~47% drop (la-peptides 43->23) and tripped the floor on rows that never rendered. Compare
+    priceable-vs-priceable. The threshold (80%) is unchanged and correct; only the baseline was wrong.
+    The '—' rows STAY in the doc (they are the inventory of products we saw but couldn't size)."""
     marker = f"## VENDOR: {name}"
     start = doc_text.find(marker)
     if start == -1:
@@ -50,8 +58,16 @@ def existing_singles_count(doc_text, name):
     sm = re.search(r"### Single compounds\n(.*?)(?:\n### |\Z)", seg, re.S)
     if not sm:
         return 0
-    return sum(1 for ln in sm.group(1).splitlines()
-               if ln.startswith("| ") and not ln.startswith("| ---") and "| Compound " not in ln)
+    n = 0
+    for ln in sm.group(1).splitlines():
+        if not ln.startswith("| ") or ln.startswith("| ---") or "| Compound " in ln:
+            continue
+        cells = [c.strip() for c in ln.strip("|").split("|")]
+        size = cells[1] if len(cells) > 1 else ""
+        if size in ("—", "-", ""):   # no-size placeholder: never priceable, never rendered, and no
+            continue                 # longer emitted by the build — exclude so the compare is fair
+        n += 1
+    return n
 
 
 def pulled_date():
