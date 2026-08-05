@@ -136,7 +136,7 @@
   },
   {
     "slug": "ipamorelin",
-    "vendors": 28,
+    "vendors": 27,
     "indexable": true
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "slug": "kpv",
-    "vendors": 29,
+    "vendors": 28,
     "indexable": true
   },
   {
@@ -195,11 +195,6 @@
     "indexable": true
   },
   {
-    "slug": "orforglipron",
-    "vendors": 1,
-    "indexable": false
-  },
-  {
     "slug": "ovagen",
     "vendors": 7,
     "indexable": true
@@ -226,7 +221,7 @@
   },
   {
     "slug": "pinealon",
-    "vendors": 16,
+    "vendors": 15,
     "indexable": true
   },
   {
@@ -261,12 +256,12 @@
   },
   {
     "slug": "sermorelin",
-    "vendors": 28,
+    "vendors": 27,
     "indexable": true
   },
   {
     "slug": "slu-pp-332",
-    "vendors": 7,
+    "vendors": 5,
     "indexable": true
   },
   {
@@ -296,8 +291,8 @@
   },
   {
     "slug": "tesofensine",
-    "vendors": 5,
-    "indexable": true
+    "vendors": 2,
+    "indexable": false
   },
   {
     "slug": "testagen",
@@ -346,7 +341,7 @@
   },
   {
     "slug": "vip",
-    "vendors": 19,
+    "vendors": 18,
     "indexable": true
   }
 ]

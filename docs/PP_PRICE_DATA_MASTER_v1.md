@@ -372,7 +372,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Bronchogen [backlog] | 10mg | $58.00 | $5.80 | $88.00 | ✓ | product/bronchogen-10mg/ |
 | Cagrilintide | 5mg | $49.00 | $9.80 | — | ✓ | product/cagrilintide-5mg/ |
 | Cagrilintide | 10mg | $88.00 | $8.80 | — | ✓ | product/cagrilintide-10mg/ |
-| Cagrilintide | 12.5mg | $135.00 | $10.80 | — | ✓ | product/reta-cagri-blend/ |
 | Cartalax [backlog] | 10mg | $58.00 | $5.80 | — | ✓ | product/cartalax-10mg/ |
 | Cibinetide | 10mg | $48.00 | $4.80 | — | ✓ | product/ara-290-10mg/ |
 | CJC-1295 | 5mg | $38.00 | $7.60 | — | ✓ | product/cjc-1295-no-dac-5mg/ |
@@ -430,7 +429,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
 ## VENDOR: Amino X
 - **slug:** amino-x | **code:** PROF15 | **discount:** 15% off | **url:** aminox.net
 - **traffic:** (not pulled) | **pulled:** July 30 2026
@@ -541,13 +539,8 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Adipotide | 10mg | $102.62 | $10.26 | — | ✓ | product/adipotide-peptide/ |
 | AOD-9604 | 5mg | $76.76 | $15.35 | — | ✓ | product/aod-9064-peptide/ |
 | AOD-9604 | 10mg | $114.09 | $11.41 | — | ✓ | product/aod-9064-peptide/ |
-| BPC-157 | 4mg | $59.83 | $14.96 | — | ✓ | product/bpc-157-tb-500/ |
 | BPC-157 | 5mg | $62.27 | $12.45 | — | ✓ | product/bpc-157/ |
-| BPC-157 | 6mg | $163.97 | $27.33 | — | ✓ | product/igf-lr3-bpc-157-peptide-blend/ |
 | BPC-157 | 10mg | $124.54 | $12.45 | — | ✓ | product/bpc-157/ |
-| BPC-157 | 11mg | $349.95 | $31.81 | — | ✓ | product/igf-lr3-bpc-157-tb-500-peptide-blend/ |
-| BPC-157 | 15mg | $207.06 | $13.80 | — | ✓ | product/bpc-157-tb-500/ |
-| BPC-157 | 30mg | $274.95 | $9.16 | — | ✓ | product/bpc-157-arg-tb-500-ghk-cu-blend/ |
 | Bronchogen [backlog] | 20mg | $69.47 | $3.47 | — | ✓ | product/bronchogen/ |
 | Cardiogen | 20mg | $61.48 | $3.07 | — | ✓ | product/cardiogen/ |
 | Cartalax [backlog] | 20mg | $66.48 | $3.32 | — | ✗ | product/cartalax/ |
@@ -571,7 +564,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | IGF-1 LR3 | 0.2mg | $13.49 | $67.45 | — | ✓ | product/igf1-lr3-receptor-grade/ |
 | IGF-1 LR3 | 1mg | $67.46 | $67.46 | — | ✓ | product/igf1-lr3-media/ |
 | Ipamorelin | 5mg | $80.62 | $16.12 | — | ✓ | product/ipamorelin/ |
-| Ipamorelin | 20mg | $151.47 | $7.57 | — | ✓ | product/ipamorelin-ghrp-2-blend/ |
 | Kisspeptin-10 | 5mg | $72.23 | $14.45 | — | ✓ | product/kisspeptin-10-peptide/ |
 | Kisspeptin-10 | 10mg | $149.26 | $14.93 | — | ✓ | product/kisspeptin-10-peptide/ |
 | KPV | 5mg | $57.28 | $11.46 | — | ✓ | product/kpv-lysine-proline-valine-peptide/ |
@@ -601,8 +593,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Semax | 10mg | $56.48 | $5.65 | — | ✓ | product/semax-peptide/ |
 | Semax | 30mg | $83.22 | $2.77 | — | ✓ | product/semax-peptide/ |
 | Semax | 60mg | $200.69 | $3.34 | — | ✓ | product/n-acetyl-semax-amidate/ |
-| Sermorelin | 10mg | $101.56 | $10.16 | — | ✓ | product/sermorelin-ghrp-2-blend-peptide/ |
-| Sermorelin | 20mg | $236.60 | $11.83 | — | ✓ | product/sermorelin-ipamorelin-blend-peptide/ |
 | SNAP-8 [backlog] | 10mg | $41.79 | $4.18 | — | ✓ | product/buy-snap-8-acetyl-octapeptide-3/ |
 | SNAP-8 [backlog] | 100mg | $258.41 | $2.58 | — | ✓ | product/buy-snap-8-acetyl-octapeptide-3/ |
 | SS-31 | 5mg | $40.15 | $8.03 | — | ✓ | product/ss31-elamipretide/ |
@@ -670,7 +660,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: liquid/concentration (per-ml, not a vial), manually excluded — form-strength product (powder/liquid/tabs); its '10mg per ml' liquid mis-parses as a 10mg vial ($9.18 = $0.92/mg). Not a vial price. (MK-777 is the same class — reported, not yet excluded.), multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
 ## VENDOR: BioCollex
 - **slug:** biocollex | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** biocollexresearch.com
 - **traffic:** (not pulled) | **pulled:** July 30 2026
@@ -716,7 +705,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Adamax | 10mg | $108.00 | $10.80 | $158.00 | ✓ | product/adamax-10mg/ |
 | AOD-9604 | 2mg | $38.00 | $19.00 | — | ✓ | product/aod-9604-2mg-research-grade-compound/ |
 | AOD-9604 | 5mg | $53.00 | $10.60 | — | ✗ | product/aod-9604-5mg/ |
-| BPC-157 | 500mcg | $225.00 | $450.00 | — | ✓ | product/bpc-157-500mcg-100-tabs-bottle/ |
 | BPC-157 | 10mg | $44.00 | $4.40 | — | ✓ | product/bpc-157-10mg/ |
 | Bronchogen [backlog] | 10mg | $58.00 | $5.80 | $88.00 | ✓ | product/bronchogen-10mg/ |
 | Cagrilintide (listed as EZP-CG) | 5mg | $44.00 | $8.80 | — | ✓ | product/cagrilintide-5mg/ |
@@ -751,12 +739,10 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Semaglutide (listed as EZP-1P) | 10mg | $48.00 | $4.80 | — | ✓ | product/ezp-1p-10mg/ |
 | Semax | 10mg | $44.00 | $4.40 | — | ✓ | product/semax-10mg/ |
 | Sermorelin | 5mg | $44.00 | $8.80 | — | ✓ | product/sermorelin-5mg/ |
-| SLU-PP-332 [backlog] | 50mg | $368.00 | $7.36 | — | ✗ | product/slu-pp-332-50mg-100-tabs-bottle/ |
 | SNAP-8 [backlog] | 10mg | $35.00 | $3.50 | — | ✓ | product/snap-8-10mg/ |
 | Survodutide [backlog] | 10mg | $78.00 | $7.80 | — | ✓ | product/survodutide-10mg/ |
 | TB-500 | 10mg | $48.00 | $4.80 | — | ✓ | product/tb-500-frag-17-23-10mg/ |
 | Tesamorelin | 10mg | $68.00 | $6.80 | — | ✓ | product/tesamorelin-10mg/ |
-| Tesofensine [backlog] | 500mcg | $168.00 | $336.00 | — | ✓ | product/tesofensine-500mcg-100-tabs-bottle/ |
 | Thymosin Alpha-1 | 10mg | $58.00 | $5.80 | — | ✓ | product/thymosin-alpha-1-10mg/ |
 | Tirzepatide (listed as EZP-2P) | 10mg | $53.00 | $5.30 | — | ✓ | product/ezp-2p-10mg/ |
 | Tirzepatide (listed as EZP-2P) | 15mg | $71.00 | $4.73 | — | ✓ | product/ezp-2p-15mg/ |
@@ -782,7 +768,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
 ## VENDOR: Glacier Aminos
 - **slug:** glacier-aminos | **code:** PROF10 | **discount:** 10% off | **url:** glacieraminos.shop
 - **traffic:** (not pulled) | **pulled:** July 30 2026
@@ -833,7 +818,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Pinealon | 10mg | $49.99 | $5.00 | — | ✓ | product/pn10/ |
 | PT-141 | 10mg | $40.99 | $4.10 | — | ✓ | product/pt-141/ |
 | Selank | 10mg | $40.99 | $4.10 | — | ✓ | product/selank-10/ |
-| Selank | 20mg | $81.99 | $4.10 | — | ✓ | product/semaxselank/ |
 | Semax | 10mg | $40.99 | $4.10 | — | ✓ | product/s3max-10/ |
 | Sermorelin | 10mg | $62.99 | $6.30 | — | ✓ | product/sermorelin/ |
 | Sermorelin | 20mg | $62.99 | $3.15 | — | ✓ | product/sermorelin/ |
@@ -874,7 +858,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: clinical/other, oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
 ## VENDOR: Ignite Peptides
 - **slug:** ignite-peptides | **code:** PROF10 | **discount:** 10% off | **url:** ignitepeptides.com
 - **traffic:** (not pulled) | **pulled:** July 30 2026
@@ -983,12 +966,10 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Selank | 10mg | $48.00 | $4.80 | — | ✓ | product/selank-10mg/ |
 | Semax | 10mg | $45.00 | $4.50 | — | ✓ | product/semax-10mg/ |
 | Sermorelin | 5mg | $49.00 | $9.80 | — | ✓ | product/sermorlin-5mg/ |
-| SLU-PP-332 [backlog] | 250mcg | $139.00 | $556.00 | — | ✓ | product/slu-pp-332-250mcg-100ct/ |
 | SLU-PP-332 [backlog] | 5mg | $74.50 | $14.90 | — | ✓ | product/slu-pp-332-5mg/ |
 | SNAP-8 [backlog] | 10mg | $47.00 | $4.70 | — | ✓ | product/snap-8-10mg/ |
 | TB-500 | 10mg | $57.00 | $5.70 | — | ✓ | product/tb-500-10mg/ |
 | Tesamorelin | 10mg | $74.00 | $7.40 | — | ✓ | product/th9507-tesa-10mg/ |
-| Tesofensine [backlog] | 500mcg | $223.50 | $447.00 | — | ✓ | product/tesofensine-500mcg-capsules-60ct/ |
 | Thymosin Alpha-1 | 10mg | $65.00 | $6.50 | — | ✓ | product/thymosin-alpha-10mg/ |
 
 ### Blends (total mg; ratio where published)
@@ -1004,7 +985,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
 ## VENDOR: Peptide Partners
 - **slug:** peptide-partners | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** peptide.partners
 - **traffic:** (not pulled) | **pulled:** July 30 2026
@@ -1265,10 +1245,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | AOD-9604 | 5mg | $77.49 | $15.50 | — | ✓ | product/tyr-hgh-177-191/ |
 | AOD-9604 | 10mg | $109.02 | $10.90 | — | ✓ | product/tyr-hgh-177-191/ |
 | BPC-157 | 5mg | $70.35 | $14.07 | — | ✓ | product/bpc-157/ |
-| BPC-157 | 6mg | $164.47 | $27.41 | — | ✓ | product/the-alpha-blend/ |
 | BPC-157 | 10mg | $140.59 | $14.06 | — | ✓ | product/bpc-157/ |
-| BPC-157 | 15mg | $125.98 | $8.40 | — | ✓ | product/kpv-bpc-157-arg-blend/ |
-| BPC-157 | 30mg | $272.96 | $9.10 | — | ✓ | product/bpc-157-tb-500-ghk-cu-blend/ |
 | Bronchogen [backlog] | 20mg | $69.98 | $3.50 | — | ✓ | product/bronchogen/ |
 | Cagrilintide | 5mg | $77.76 | $15.55 | — | ✓ | product/am833/ |
 | Cagrilintide | 10mg | $155.54 | $15.55 | — | ✓ | product/am833/ |
@@ -1344,9 +1321,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Semax | 30mg | $100.94 | $3.36 | — | ✓ | product/acth-4-7-pro-gly-pro/ |
 | Semax | 60mg | $205.15 | $3.42 | — | ✓ | product/n-acetyl-semax-amidate/ |
 | Sermorelin | 2mg | $27.60 | $13.80 | — | ✓ | product/ghrh-1-29/ |
-| Sermorelin | 5mg | $97.81 | $19.56 | — | ✓ | product/sermorelin-ghrp-2-blend/ |
-| Sermorelin | 10mg | $97.81 | $9.78 | — | ✓ | product/sermorelin-ghrp-6-blend/ |
-| Sermorelin | 20mg | $241.86 | $12.09 | — | ✓ | product/sermorelin-ipamorelin-blend/ |
 | SNAP-8 [backlog] | 10mg | $42.00 | $4.20 | — | ✓ | product/snap-8/ |
 | SNAP-8 [backlog] | 100mg | $260.00 | $2.60 | — | ✓ | product/snap-8/ |
 | SS-31 | 5mg | $45.62 | $9.12 | — | ✓ | product/ss31-elamipretide/ |
@@ -1431,7 +1405,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: liquid/concentration (per-ml, not a vial), multi-vial kit / pack (by name), no parseable size (Rule 4), oral/capsule, oral/tablet/sublingual, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
 ## VENDOR: Royal Peptides
 - **slug:** royal-peptides | **code:** PROF10 | **discount:** 10% off | **url:** royal-peptides.com
 - **traffic:** (not pulled) | **pulled:** August 3 2026
@@ -1470,23 +1443,16 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Retatrutide | 50mg | $285.00 | $5.70 | — | ✓ | shop/retatrutide-vial/ |
 | Retatrutide | 60mg | $330.00 | $5.50 | — | ✓ | shop/retatrutide-vial/ |
 | Selank | 10mg | $65.00 | $6.50 | — | ✓ | shop/selank-10mg-vial/ |
-| Selank | 20mg | $90.00 | $4.50 | — | ✓ | shop/selank-semax-blend/ |
 | Semaglutide | 5mg | $45.00 | $9.00 | — | ✓ | shop/semaglutide/ |
 | Semaglutide | 10mg | $75.00 | $7.50 | — | ✓ | shop/semaglutide/ |
 | Semaglutide | 15mg | $110.00 | $7.33 | — | ✗ | shop/semaglutide/ |
 | Semaglutide | 20mg | $155.00 | $7.75 | — | ✓ | shop/semaglutide/ |
 | Semax | 10mg | $65.00 | $6.50 | — | ✓ | shop/semax-10mg/ |
 | Sermorelin | 10mg | $65.00 | $6.50 | — | ✓ | shop/sermorelin-10mg-kit/ |
-| SLU-PP-332 [backlog] | 250mcg | $140.00 | $560.00 | — | ✓ | shop/discover-slu-pp-332-peptide-in-50-100-count-bottles/ |
-| SLU-PP-332 [backlog] | 500mcg | $140.00 | $280.00 | — | ✓ | shop/discover-slu-pp-332-peptide-in-50-100-count-bottles/ |
-| SLU-PP-332 [backlog] | 2mg | $190.00 | $95.00 | — | ✓ | shop/discover-slu-pp-332-peptide-in-50-100-count-bottles/ |
-| SLU-PP-332 [backlog] | 5mg | $245.00 | $49.00 | — | ✓ | shop/discover-slu-pp-332-peptide-in-50-100-count-bottles/ |
-| SLU-PP-332 [backlog] | 10mg | $320.00 | $32.00 | — | ✓ | shop/discover-slu-pp-332-peptide-in-50-100-count-bottles/ |
 | SS-31 | 10mg | $65.00 | $6.50 | — | ✓ | shop/31pv/ |
 | TB-500 | 10mg | $70.00 | $7.00 | — | ✓ | shop/tb-500-10mg-kit/ |
 | Tesamorelin | 10mg | $75.00 | $7.50 | — | ✓ | shop/tesamorelin-10mg/ |
 | Tesamorelin | 20mg | $120.00 | $6.00 | — | ✓ | shop/tesamorelin-10mg/ |
-| Tesofensine [backlog] | 500mcg | $90.00 | $180.00 | — | ✓ | shop/tesofensine-500mcg-100-bottle/ |
 | Thymosin Alpha-1 | 5mg | $55.00 | $11.00 | — | ✓ | shop/thymosin-alpha-1-ta-1-10mg-kit/ |
 | Tirzepatide | 5mg | $36.00 | $7.20 | — | ✓ | shop/tirzepatide-vials/ |
 | Tirzepatide | 10mg | $50.00 | $5.00 | — | ✓ | shop/tirzepatide-vials/ |
@@ -1513,7 +1479,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: manually excluded — 10-vial kit whose NAME carries no kit marker (only the slug does), so is_kit_name misses it — $360 = $72/mg vs a ~$11/mg median., manually excluded — 10-vial kit whose NAME carries no kit marker — $430 = $86/mg vs a ~$10/mg median., manually excluded — pricing error: this single 10mg is listed at $465, ABOVE the same vendor's 10-vial kit ($330) — internally impossible, so removed as an error, not a premium., multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
 ## VENDOR: Swiss Chems
 - **slug:** swiss-chems | **code:** PROF10 | **discount:** 10% off | **url:** swisschems.is
 - **traffic:** (not pulled) | **pulled:** August 3 2026
@@ -1545,14 +1510,12 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | IGF-1 LR3 | 1mg | $59.96 | $59.96 | $104.98 | ✓ | product/igf-1-lr3-1mg/ |
 | Ipamorelin | 2mg | $17.56 | $8.78 | $21.95 | ✓ | product/ipamorelin-2-mg/ |
 | Kisspeptin-10 | 10mg | $59.99 | $6.00 | — | ✓ | product/kisspeptin-10-10mg/ |
-| KPV | 250mcg | $139.95 | $559.80 | — | ✓ | product/kpv-lysine-proline-valine-250mcg-60caps/ |
 | Livagen [backlog] | 20mg | $62.95 | $3.15 | — | ✓ | product/livagen-20mg/ |
 | LL-37 | 5mg | $71.99 | $14.40 | — | ✓ | product/ll-37-cap-18-5-mg/ |
 | Melanotan II | 10mg | $27.96 | $2.80 | $34.95 | ✓ | product/melanotan-ii-10mg/ |
 | MGF | 2mg | $29.99 | $14.99 | $37.94 | ✓ | product/mgf-without-peg-2-mg/ |
 | MOTS-C | 10mg | $69.95 | $7.00 | — | ✓ | product/mots-c-10mg/ |
 | NAD+ | 100mg | $47.95 | $0.48 | — | ✓ | product/nad-nicotinamide-adenine-dinucleotide-100-mg/ |
-| Orforglipron [backlog] | 6mg | $198.95 | $33.16 | — | ✓ | product/orforglipron-6mg-90caps/ |
 | Ovagen [backlog] | 20mg | $57.50 | $2.88 | $65.00 | ✓ | product/ovagen-20mg/ |
 | Oxytocin | 2mg | $21.95 | $10.97 | — | ✓ | product/oxytocin/ |
 | Oxytocin | 5mg | $31.95 | $6.39 | — | ✓ | product/oxytocin/ |
@@ -1584,7 +1547,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: multi-vial kit / pack (by name), no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply, wholesale-only SKU (not a retail price) — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
 ## VENDOR: Synthesis Peptides
 - **slug:** synthesis-peptides | **code:** PROFPEPTIDE10 | **discount:** 10% off | **url:** synthesispeptides.io
 - **traffic:** (not pulled) | **pulled:** July 25 2026
@@ -2060,7 +2022,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | PT-141 | 10mg | $43.00 | $4.30 | — | ✓ | product/pt-141/ |
 | Selank | 10mg | $41.00 | $4.10 | — | ✓ | product/selank/ |
 | Selank | 12mg | $45.00 | $3.75 | — | ✓ | product/nac/ |
-| Selank | 27mg | $129.99 | $4.81 | — | ✓ | product/semax-selank/ |
 | Semax | 10mg | $38.00 | $3.80 | — | ✗ | product/semax/ |
 | Sermorelin | 10mg | $79.95 | $8.00 | — | ✓ | product/grf-129/ |
 | SNAP-8 [backlog] | 10mg | $42.99 | $4.30 | — | ✓ | product/snap8/ |
@@ -2071,7 +2032,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Thymosin Alpha-1 | 10mg | $69.99 | $7.00 | — | ✓ | product/thymosin-alpha-1/ |
 | Vesugen [backlog] | 20mg | $54.99 | $2.75 | — | ✓ | product/vesugen/ |
 | Vilon [backlog] | 20mg | $54.99 | $2.75 | — | ✓ | product/vilon/ |
-| VIP | 11.27mg | $71.99 | $6.39 | — | ✓ | product/vip/ |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
@@ -2089,7 +2049,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
 ## VENDOR: Mile High Compounds
 - **slug:** mile-high-compounds | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** milehighcompounds.is
 - **traffic:** (not pulled) | **pulled:** July 30 2026
@@ -2198,7 +2157,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | MOTS-C | 40mg | $80.00 | $2.00 | — | ✓ | product/mots-c/ |
 | NAD+ | 50mg | $135.00 | $2.70 | — | ✓ | product/nad5-amino-mq-50mg-each/ |
 | NAD+ | 500mg | $50.00 | $0.10 | — | ✓ | product/nad-500mg/ |
-| Pinealon | 60mg | $145.00 | $2.42 | — | ✗ | product/semax-selank-pinealon-blend/ |
 | Prostamax [backlog] | — | $60.00 | — | — | ✗ | product/prostamax/ |
 | PT-141 | 10mg | $24.99 | $2.50 | — | ✗ | product/pt-141-10mg/ |
 | Selank | — | $30.00 | — | — | ✓ | product/selank/ |
@@ -2236,7 +2194,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: clinical/other, oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
 ## VENDOR: Modern Aminos
 - **slug:** modern-aminos | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** modernaminos.com
 - **traffic:** (not pulled) | **pulled:** August 3 2026
@@ -2313,11 +2270,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Retatrutide (listed as MA-3RT) | 30mg | $187.20 | $6.24 | $234.00 | ✓ | product/ma-3rt/ |
 | Retatrutide (listed as MA-3RT) | 50mg | $239.20 | $4.78 | $299.00 | ✗ | product/ma-3rt/ |
 | Retatrutide (listed as MA-3RT) | 60mg | $279.20 | $4.65 | $349.00 | ✓ | product/ma-3rt/ |
-| Selank | 5mg | $78.00 | $15.60 | — | ✓ | product/semax-selank/ |
 | Selank | 10mg | $45.00 | $4.50 | — | ✓ | product/selank-10mg/ |
-| Selank | 12mg | $78.00 | $6.50 | — | ✓ | product/semax-selank/ |
-| Selank | 20mg | $78.00 | $3.90 | — | ✓ | product/semax-selank/ |
-| Selank | 30mg | $78.00 | $2.60 | — | ✓ | product/semax-selank/ |
 | Semax | 10mg | $42.00 | $4.20 | — | ✓ | product/semax-10mg/ |
 | Sermorelin | 2mg | $46.00 | $23.00 | — | ✓ | product/sermorelin-5mg/ |
 | Sermorelin | 5mg | $46.00 | $9.20 | — | ✓ | product/sermorelin-5mg/ |
@@ -2357,7 +2310,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: liquid/concentration (per-ml, not a vial), no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
 ## VENDOR: Treasure Coast
 - **slug:** treasure-coast-peptides | **code:** PROFPEPTIDE | **discount:** 15% off | **url:** treasurecoastpeptides.com
 - **traffic:** (not pulled) | **pulled:** July 31 2026
@@ -2892,7 +2844,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GHK-Cu | 50mg | $74.99 | $1.50 | — | ✓ | product/ghk-cu-lyophilized/ |
 | Glutathione | 600mg | $99.99 | $0.17 | — | ✗ | product/l-glutathione-600mg/ |
 | Glutathione | 6000mg | $119.99 | $0.02 | — | ✓ | product/l-glutathione-6000mg/ |
-| Ipamorelin | 5mg | $94.99 | $19.00 | — | ✓ | product/th9507-ipamorelin-blend/ |
 | KPV | 10mg | $79.99 | $8.00 | — | ✓ | product/kpv-10mg/ |
 | Melanotan II | 10mg | $79.99 | $8.00 | — | ✓ | product/melanotan-ii/ |
 | MOTS-C | 10mg | $79.99 | $8.00 | — | ✓ | product/mots-c/ |
@@ -2916,4 +2867,3 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: manually excluded — 'BPC Wolverine + KPV - 14.5mg' is a 3-component blend (Wolverine BPC-157/TB-500 + KPV) that the shared classifier mis-reads as a KPV 14.5mg SINGLE ($129.99 = $8.97/mg of 'KPV', wrong). Not in the blend registry, so excluded here rather than shipped as a bad single. (TSM = Tesamorelin by its th9507 slug is separately left undecoded/excluded.), no parseable size (Rule 4), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-

@@ -19,6 +19,14 @@ _WHOLESALE = re.compile(r'wholesale[\s-]*only', re.I)
 # short, NAMED list rather than a general slug rule: a blanket slug "kit" match was rejected
 # because it flagged 16 correctly-priced rows (biocollex glp3-bundle, peptide-partners tb4-kit,
 # and 10 royal single-vials whose slugs merely contain "-kit") to catch these 2 real leaks.
+# STOPGAP (2026-08-04): the corpus-wide scan found 24 blend leaks + oral/count leaks rendering
+# wrong $/mg live. These are per-entry excludes to pull the wrong rows NOW; the permanent fix is a
+# shared classifier guard (built as a separate job) that detects "≥2 distinct compound aliases match"
+# BEFORE decoders.match() collapses to one — match() picks the LONGEST-alias compound, not the first,
+# so a blend lands on an unpredictable component (bpc-157-tb-500 -> BPC-157; semax-selank-pinealon ->
+# Pinealon). Every frag below was FP-scanned against the generated corpus: catches only the leak, no
+# legitimate single. LL-37 caps ($14-30/mg, ~2-3x the vial median across 4 vendors) were reviewed and
+# KEPT — a real oral product, not a leak.
 MANUAL_EXCLUDE = {
     "royal-peptides": [
         ("cagrilintide-kit", "10-vial kit whose NAME carries no kit marker (only the slug does), so "
@@ -28,17 +36,72 @@ MANUAL_EXCLUDE = {
         ("vip-vasoactive-intestinal-peptide-10mg", "pricing error: this single 10mg is listed at $465, "
                                                    "ABOVE the same vendor's 10-vial kit ($330) — internally "
                                                    "impossible, so removed as an error, not a premium."),
+        ("selank-semax-blend", "blend leak: Semax/Selank blend mis-classified as Selank 20mg ($4.50/mg). "
+                               "check:prices passed it (near the corrupted Selank-20mg median)."),
+        ("discover-slu-pp-332", "oral/count leak: SLU-PP-332 in 50/100-count bottles; per-unit dose read "
+                                "as the vial size against the whole-bottle price -> $32-560/mg (100x class)."),
+        ("tesofensine-500mcg-100-bottle", "oral/count leak: 100-count bottle, 500mcg/unit read as a 0.5mg "
+                                          "vial at the bottle price -> $180/mg."),
     ],
     "behemoth-labz": [
         ("dihexa", "form-strength product (powder/liquid/tabs); its '10mg per ml' liquid mis-parses as a "
                    "10mg vial ($9.18 = $0.92/mg). Not a vial price. (MK-777 is the same class — reported, "
                    "not yet excluded.)"),
+        ("bpc-157-tb-500", "blend leak: BPC-157/TB-500 blend -> BPC-157 (4/15mg). Also catches the "
+                           "igf-lr3-bpc-157-tb-500 blend (11mg)."),
+        ("igf-lr3-bpc-157", "blend leak: IGF-1 LR3/BPC-157 (+TB-500) blends -> BPC-157 (6/11mg)."),
+        ("bpc-157-arg-tb-500", "blend leak: BPC-157/Arg/TB-500/GHK-Cu 4-way blend -> BPC-157 30mg."),
+        ("ipamorelin-ghrp-2", "blend leak: Ipamorelin/GHRP-2 blend -> Ipamorelin 20mg."),
+        ("sermorelin-ghrp-2", "blend leak: Sermorelin/GHRP-2 blend -> Sermorelin 10mg."),
+        ("sermorelin-ipamorelin", "blend leak: Sermorelin/Ipamorelin blend -> Sermorelin 20mg."),
     ],
     "biopure-peptides": [
         ("wolverine", "'BPC Wolverine + KPV - 14.5mg' is a 3-component blend (Wolverine BPC-157/TB-500 + KPV) "
                       "that the shared classifier mis-reads as a KPV 14.5mg SINGLE ($129.99 = $8.97/mg of "
-                      "'KPV', wrong). Not in the blend registry, so excluded here rather than shipped as a bad "
-                      "single. (TSM = Tesamorelin by its th9507 slug is separately left undecoded/excluded.)"),
+                      "'KPV', wrong). Not in the blend registry, so excluded here rather than shipped as a bad single."),
+        ("th9507-ipamorelin", "blend leak: TSM(Tesamorelin=TH9507)/Ipamorelin blend -> Ipamorelin 5mg ($19.00/mg)."),
+    ],
+    "purerawz": [
+        ("the-alpha-blend", "blend leak: multi-component 'Alpha Blend' -> BPC-157 6mg ($27.41/mg)."),
+        ("kpv-bpc-157-arg", "blend leak: KPV/BPC-157/Arg blend -> BPC-157 15mg."),
+        ("bpc-157-tb-500-ghk-cu", "blend leak: BPC-157/TB-500/GHK-Cu blend -> BPC-157 30mg."),
+        ("sermorelin-ghrp-2", "blend leak: Sermorelin/GHRP-2 blend -> Sermorelin 5mg."),
+        ("sermorelin-ghrp-6", "blend leak: Sermorelin/GHRP-6 blend -> Sermorelin 10mg."),
+        ("sermorelin-ipamorelin", "blend leak: Sermorelin/Ipamorelin blend -> Sermorelin 20mg."),
+    ],
+    "ameano-peptides": [
+        ("reta-cagri-blend", "blend leak: Retatrutide/Cagrilintide blend -> Cagrilintide 12.5mg ($10.80/mg)."),
+    ],
+    "glacier-aminos": [
+        ("semaxselank", "blend leak: Semax/Selank blend -> Selank 20mg ($4.10/mg). Was the Selank-20mg MEDIAN."),
+    ],
+    "modern-aminos": [
+        ("semax-selank", "blend leak: Semax/Selank blend -> Selank 5/12/20/30mg. modern's ONLY Selank rows "
+                         "are this blend (no single-Selank product), so /prices loses modern for Selank."),
+    ],
+    "peptidology": [
+        ("semax-selank", "blend leak: Semax/Selank blend -> Selank 27mg ($4.81/mg)."),
+        ("product/vip", "UNCERTAIN, pending verification (not confirmed bad): VIP 11.27mg — clean slug, anomalous "
+                        "size (VIP singles are 10mg), unresolved from generated data. Absent beats wrong; re-add if verified."),
+    ],
+    "nextgen-peptides": [
+        ("semax-selank-pinealon", "blend leak: Semax/Selank/Pinealon 3-way blend -> Pinealon 60mg ($2.42/mg) "
+                                  "(match() picked Pinealon as the LONGEST alias, not the first-named)."),
+    ],
+    "ez-peptides": [
+        ("tabs-bottle", "oral/count leak: 100-tab bottles (BPC-157, Tesofensine, SLU-PP-332); per-tab dose read "
+                        "as the vial size at the whole-bottle price -> $336-450/mg (100x class)."),
+    ],
+    "oasis-labs": [
+        ("slu-pp-332-250mcg", "oral/count leak: 100-count bottle, 250mcg/unit read as a 0.25mg vial -> $556/mg."),
+        ("tesofensine-500mcg-capsules", "oral/count leak: 60-count capsules, 500mcg/unit read as 0.5mg vial -> $447/mg."),
+    ],
+    "swiss-chems": [
+        ("250mcg-60caps", "oral/count leak: KPV 60-capsule bottle, 250mcg/unit read as 0.25mg vial -> $559.80/mg."),
+        ("orforglipron-6mg-90caps", "oral/count leak, UNCERTAIN: 90-capsule bottle, 6mg/cap read as a 6mg vial at the "
+                                    "bottle price -> $33.16/mg. Orforglipron is inherently oral and UNCHECKED (no median "
+                                    "catches it); may be the only orforglipron row -> /prices may lose the compound. Absent "
+                                    "beats a ~90x-wrong row; re-add via the real oral-format fix."),
     ],
 }
 
