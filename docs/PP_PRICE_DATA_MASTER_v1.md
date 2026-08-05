@@ -773,7 +773,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Glacier Aminos
 - **slug:** glacier-aminos | **code:** PROF10 | **discount:** 10% off | **url:** glacieraminos.shop
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 5 2026
 - **sale posture:** Product sale 1/70.
 
 ### Single compounds
@@ -794,12 +794,11 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | DSIP | 10mg | $59.99 | $6.00 | — | ✓ | product/dsip-10/ |
 | Epitalon | 10mg | $32.99 | $3.30 | — | ✓ | product/epi10/ |
 | FOXO4-DRI [backlog] | 10mg | $134.99 | $13.50 | — | ✓ | product/foxo4-dri/ |
-| GHK-Cu | — | $39.99 | — | — | ✓ | product/ghk-cu-raw/ |
 | GHK-Cu | 50mg | $41.99 | $0.84 | — | ✓ | product/ghk-cu/ |
 | GHK-Cu | 100mg | $62.99 | $0.63 | — | ✓ | product/ghk-cu/ |
 | GLA-1 SM [coded, UNVERIFIED] | 15mg | $71.99 | $4.80 | — | ✓ | product/gla1-s/ |
 | GLA-2 TRZ [coded, UNVERIFIED] | 10mg | $62.99 | $6.30 | — | ✓ | product/gla2-trz/ |
-| GLA-2 TRZ [coded, UNVERIFIED] | 20mg | $77.99 | $3.90 | — | ✓ | product/gla2-trz/ |
+| GLA-2 TRZ [coded, UNVERIFIED] | 20mg | $77.99 | $3.90 | — | ✗ | product/gla2-trz/ |
 | GLA-2 TRZ [coded, UNVERIFIED] | 30mg | $97.99 | $3.27 | — | ✓ | product/gla2-trz/ |
 | GLA-2 TRZ [coded, UNVERIFIED] | 45mg | $131.99 | $2.93 | — | ✓ | product/gla2-trz/ |
 | GLA-2 TRZ [coded, UNVERIFIED] | 60mg | $164.99 | $2.75 | — | ✓ | product/gla2-trz/ |
@@ -825,7 +824,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Sermorelin | 10mg | $62.99 | $6.30 | — | ✓ | product/sermorelin/ |
 | Sermorelin | 20mg | $62.99 | $3.15 | — | ✓ | product/sermorelin/ |
 | SLU-PP-332 [backlog] | 5mg | $49.99 | $10.00 | — | ✓ | product/slupp-5mg/ |
-| SNAP-8 [backlog] | — | $148.99 | — | — | ✓ | product/snap-8-raw/ |
 | TB-500 | 10mg | $58.99 | $5.90 | — | ✓ | product/tb500/ |
 | Tesamorelin | 10mg | $67.99 | $6.80 | — | ✓ | product/tesamorelin/ |
 | Tesamorelin | 20mg | $117.99 | $5.90 | — | ✓ | product/tesamorelin/ |
@@ -837,30 +835,30 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Blend | Components | Total mg | Base | Ratio | Stock |
 | --- | --- | --- | --- | --- | --- |
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $56.99 | not published | ✓ |
-| GHK-Cu/KPV blend [backlog] |  | — | $72.99 | not published | ✗ |
+| GHK-Cu/KPV blend [backlog] | GHK-Cu/KPV | — | $72.99 | not published | ✗ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $96.99 | not published | ✓ |
 | KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $118.99 | not published | ✓ |
-| Reta/Cagri blend [backlog] |  | 24mg | $129.99 | not published | ✗ |
+| Reta/Cagri blend [backlog] |  | 24mg | $129.99 | not published | ✓ |
 | Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 16mg | $104.99 | 13/3 (published) | ✓ |
 | Tirz/Reta blend [backlog] |  | 20mg | $109.99 | not published | ✓ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 60mg | $131.39 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 60mg | $145.99 | not published | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $59.99 | not published | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $99.99 | not published | ✓ |
 
 ### Sprays / strips (separate format, no $/mg)
 | Product | Size | Base | Stock |
 | --- | --- | --- | --- |
-| Adamax (spray) | 15mg | $143.99 | ✓ |
-| NAD+ (spray) | 1500mg | $103.49 | ✓ |
-| PT-141 (spray) | 30mg | $107.99 | ✓ |
-| Selank (spray) | 50mg | $116.99 | ✓ |
-| Selank (spray) | 40mg | $130.49 | ✓ |
-| Semax (spray) | 50mg | $134.99 | ✓ |
+| Adamax (spray) | 15mg | $159.99 | ✓ |
+| NAD+ (spray) | 1500mg | $114.99 | ✓ |
+| PT-141 (spray) | 30mg | $119.99 | ✓ |
+| Selank (spray) | 40mg | $144.99 | ✓ |
+| Semax (spray) | 50mg | $149.99 | ✓ |
 | SS-31 (spray) | 10mg | $49.99 | ✓ |
 
-### Excluded: clinical/other, oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend leak (Rule A): dsip + selank — blend-registry candidate, clinical/other, manually excluded — blend leak: Semax/Selank blend -> Selank 20mg ($4.10/mg). Was the Selank-20mg MEDIAN., multi-vial kit / pack (by name), no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
+
 ## VENDOR: Ignite Peptides
 - **slug:** ignite-peptides | **code:** PROF10 | **discount:** 10% off | **url:** ignitepeptides.com
 - **traffic:** (not pulled) | **pulled:** July 30 2026

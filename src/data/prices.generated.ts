@@ -466,7 +466,7 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "ghk-cu", compoundName: "GHK-Cu", vendor: "glacier-aminos", sizeMg: 100, basePrice: 62.99, inStock: true, vendorSlug: "product/ghk-cu/" },
   { compound: "semaglutide", compoundName: "Semaglutide", vendor: "glacier-aminos", sizeMg: 15, basePrice: 71.99, inStock: true, vendorSlug: "product/gla1-s/", listedAs: "GLA-1 SM" },
   { compound: "tirzepatide", compoundName: "Tirzepatide", vendor: "glacier-aminos", sizeMg: 10, basePrice: 62.99, inStock: true, vendorSlug: "product/gla2-trz/", listedAs: "GLA-2 TRZ" },
-  { compound: "tirzepatide", compoundName: "Tirzepatide", vendor: "glacier-aminos", sizeMg: 20, basePrice: 77.99, inStock: true, vendorSlug: "product/gla2-trz/", listedAs: "GLA-2 TRZ" },
+  { compound: "tirzepatide", compoundName: "Tirzepatide", vendor: "glacier-aminos", sizeMg: 20, basePrice: 77.99, inStock: false, vendorSlug: "product/gla2-trz/", listedAs: "GLA-2 TRZ" },
   { compound: "tirzepatide", compoundName: "Tirzepatide", vendor: "glacier-aminos", sizeMg: 30, basePrice: 97.99, inStock: true, vendorSlug: "product/gla2-trz/", listedAs: "GLA-2 TRZ" },
   { compound: "tirzepatide", compoundName: "Tirzepatide", vendor: "glacier-aminos", sizeMg: 45, basePrice: 131.99, inStock: true, vendorSlug: "product/gla2-trz/", listedAs: "GLA-2 TRZ" },
   { compound: "tirzepatide", compoundName: "Tirzepatide", vendor: "glacier-aminos", sizeMg: 60, basePrice: 164.99, inStock: true, vendorSlug: "product/gla2-trz/", listedAs: "GLA-2 TRZ" },
