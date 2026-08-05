@@ -146,7 +146,7 @@
   },
   {
     "slug": "kpv",
-    "vendors": 28,
+    "vendors": 29,
     "indexable": true
   },
   {
@@ -193,6 +193,11 @@
     "slug": "nad-plus",
     "vendors": 32,
     "indexable": true
+  },
+  {
+    "slug": "orforglipron",
+    "vendors": 1,
+    "indexable": false
   },
   {
     "slug": "ovagen",
@@ -261,7 +266,7 @@
   },
   {
     "slug": "slu-pp-332",
-    "vendors": 5,
+    "vendors": 6,
     "indexable": true
   },
   {
@@ -291,8 +296,8 @@
   },
   {
     "slug": "tesofensine",
-    "vendors": 2,
-    "indexable": false
+    "vendors": 5,
+    "indexable": true
   },
   {
     "slug": "testagen",

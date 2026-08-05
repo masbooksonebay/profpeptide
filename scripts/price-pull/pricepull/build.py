@@ -38,10 +38,10 @@ MANUAL_EXCLUDE = {
                                                    "impossible, so removed as an error, not a premium."),
         ("selank-semax-blend", "blend leak: Semax/Selank blend mis-classified as Selank 20mg ($4.50/mg). "
                                "check:prices passed it (near the corrupted Selank-20mg median)."),
-        ("discover-slu-pp-332", "oral/count leak: SLU-PP-332 in 50/100-count bottles; per-unit dose read "
-                                "as the vial size against the whole-bottle price -> $32-560/mg (100x class)."),
-        ("tesofensine-500mcg-100-bottle", "oral/count leak: 100-count bottle, 500mcg/unit read as a 0.5mg "
-                                          "vial at the bottle price -> $180/mg."),
+        ("discover-slu-pp-332", "oral/count — UNRESOLVABLE: variable product 'SLU-PP-332 50/100 count bottles' "
+                                "(5 variants). Count is stated as '50/100' with no reliable per-variant mapping, so "
+                                "the package total can't be computed from public data. Stays excluded (absent beats a "
+                                "guessed total). Re-add per-variant once the count is confirmed."),
     ],
     "behemoth-labz": [
         ("dihexa", "form-strength product (powder/liquid/tabs); its '10mg per ml' liquid mis-parses as a "
@@ -76,8 +76,9 @@ MANUAL_EXCLUDE = {
         ("semaxselank", "blend leak: Semax/Selank blend -> Selank 20mg ($4.10/mg). Was the Selank-20mg MEDIAN."),
     ],
     "modern-aminos": [
-        ("semax-selank", "blend leak: Semax/Selank blend -> Selank 5/12/20/30mg. modern's ONLY Selank rows "
-                         "are this blend (no single-Selank product), so /prices loses modern for Selank."),
+        ("semax-selank", "blend leak: Semax/Selank blend mis-classified as Selank 5/12/20/30mg. modern ALSO "
+                         "sells a real Selank 10mg single (product/selank-10mg) which is UNAFFECTED and stays on "
+                         "/prices — only the blend rows are removed."),
     ],
     "peptidology": [
         ("semax-selank", "blend leak: Semax/Selank blend -> Selank 27mg ($4.81/mg)."),
@@ -88,21 +89,18 @@ MANUAL_EXCLUDE = {
         ("semax-selank-pinealon", "blend leak: Semax/Selank/Pinealon 3-way blend -> Pinealon 60mg ($2.42/mg) "
                                   "(match() picked Pinealon as the LONGEST alias, not the first-named)."),
     ],
-    "ez-peptides": [
-        ("tabs-bottle", "oral/count leak: 100-tab bottles (BPC-157, Tesofensine, SLU-PP-332); per-tab dose read "
-                        "as the vial size at the whole-bottle price -> $336-450/mg (100x class)."),
-    ],
-    "oasis-labs": [
-        ("slu-pp-332-250mcg", "oral/count leak: 100-count bottle, 250mcg/unit read as a 0.25mg vial -> $556/mg."),
-        ("tesofensine-500mcg-capsules", "oral/count leak: 60-count capsules, 500mcg/unit read as 0.5mg vial -> $447/mg."),
-    ],
-    "swiss-chems": [
-        ("250mcg-60caps", "oral/count leak: KPV 60-capsule bottle, 250mcg/unit read as 0.25mg vial -> $559.80/mg."),
-        ("orforglipron-6mg-90caps", "oral/count leak, UNCERTAIN: 90-capsule bottle, 6mg/cap read as a 6mg vial at the "
-                                    "bottle price -> $33.16/mg. Orforglipron is inherently oral and UNCHECKED (no median "
-                                    "catches it); may be the only orforglipron row -> /prices may lose the compound. Absent "
-                                    "beats a ~90x-wrong row; re-add via the real oral-format fix."),
-    ],
+    # ── ORAL/COUNT RE-EXAMINATION (2026-08-04) ────────────────────────────────────────────────
+    # The first pass over-excluded. For NATIVELY-ORAL small molecules (orforglipron, tesofensine,
+    # slu-pp-332) there is no injectable comparator, so "oral format" is not evidence of a leak —
+    # the real defect was a SIZE PARSE (per-unit dose read as package size). Recomputing the package
+    # total (per-unit dose x count) made 8 of 13 rows RECOVERABLE at a plausible $/mg; they were
+    # RESTORED to the master doc at their CORRECT total size and their excludes REMOVED (ez-peptides
+    # all, oasis-labs all, swiss-chems all, royal tesofensine-500mcg-100-bottle).
+    # ⚠️ RE-PULL HAZARD: the woo adapter still parses the PER-UNIT dose as size (count-multiplication
+    # is not implemented yet — the recommended shared fix, same layer as the blend guard). Until that
+    # lands, re-pulling ez-peptides / oasis-labs / swiss-chems / royal will REINTRODUCE these rows at
+    # the wrong per-unit size. Build count-multiplication BEFORE the next re-pull of those vendors.
+    # Only royal 'discover-slu-pp-332' stays excluded (UNRESOLVABLE count) — see its note above.
 }
 
 

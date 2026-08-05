@@ -701,6 +701,9 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
+| BPC-157 | 50mg | $225.00 | $4.50 | — | ✓ | product/bpc-157-500mcg-100-tabs-bottle/ |
+| SLU-PP-332 [backlog] | 5000mg | $368.00 | $0.07 | — | ✓ | product/slu-pp-332-50mg-100-tabs-bottle/ |
+| Tesofensine [backlog] | 50mg | $168.00 | $3.36 | — | ✓ | product/tesofensine-500mcg-100-tabs-bottle/ |
 | 5-Amino-1MQ | 50mg | $68.00 | $1.36 | — | ✓ | product/5-amino-1mq-50mg/ |
 | Adamax | 10mg | $108.00 | $10.80 | $158.00 | ✓ | product/adamax-10mg/ |
 | AOD-9604 | 2mg | $38.00 | $19.00 | — | ✓ | product/aod-9604-2mg-research-grade-compound/ |
@@ -931,6 +934,8 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
+| SLU-PP-332 [backlog] | 25mg | $139.00 | $5.56 | — | ✓ | product/slu-pp-332-250mcg-100ct/ |
+| Tesofensine [backlog] | 30mg | $223.50 | $7.45 | — | ✓ | product/tesofensine-500mcg-capsules-60ct/ |
 | 5-Amino-1MQ | 10mg | $60.00 | $6.00 | $69.00 | ✓ | product/5-amino-1mq-10-mg/ |
 | AOD-9604 | 5mg | $47.00 | $9.40 | — | ✓ | product/aod-9604-5mg/ |
 | BPC-157 | 5mg | $30.00 | $6.00 | — | ✓ | product/bpc-157/ |
@@ -1413,6 +1418,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
+| Tesofensine [backlog] | 50mg | $90.00 | $1.80 | — | ✓ | shop/tesofensine-500mcg-100-bottle/ |
 | 5-Amino-1MQ | 50mg | $80.00 | $1.60 | — | ✓ | shop/5-amino-1mq/ |
 | AOD-9604 | 5mg | $65.00 | $13.00 | — | ✗ | shop/aod-5mg-kit/ |
 | BPC-157 | 10mg | $55.00 | $5.50 | — | ✓ | shop/bpc-157-10mg-vial-kit/ |
@@ -1487,6 +1493,8 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
+| KPV | 15mg | $139.95 | $9.33 | — | ✓ | product/kpv-lysine-proline-valine-250mcg-60caps/ |
+| Orforglipron [backlog] | 540mg | $198.95 | $0.37 | — | ✓ | product/orforglipron-6mg-90caps/ |
 | BPC-157 | 5mg | $39.99 | $8.00 | $49.99 | ✓ | product/bpc157-with-arginine-salt/ |
 | BPC-157 | 10mg | $59.95 | $6.00 | — | ✓ | product/bpc157-with-arginine-salt/ |
 | Bronchogen [backlog] | 20mg | $64.95 | $3.25 | $70.00 | ✓ | product/bronchogen-20mg/ |
