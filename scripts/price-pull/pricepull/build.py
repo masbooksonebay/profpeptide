@@ -37,6 +37,13 @@ MANUAL_EXCLUDE = {
          "comparability is decided (Rule D territory). ez's injectable 5-amino-1mq-50mg vial is UNAFFECTED "
          "(frag is the FULL count-pack slug; FP-scanned: 1 hit, the vial untouched). Re-include if oral "
          "forms get their own lane on /prices."),
+        ("retacagri-blend", "blend leak: 'Reta/Cagri Blend - 12.5mg/2.5mg' (Retatrutide/Cagrilintide "
+                            "combo) resolves to Cagrilintide 12.5mg. Same blend ameano excludes as "
+                            "'reta-cagri-blend'. ⚠️ check:prices CANNOT catch this: at $9.44/mg vs a "
+                            "$9.60 cagrilintide median it is 0.98x — a NEAR-MEDIAN leak, not an outlier. "
+                            "Caught only by hand-reading the rows. Frag FP-scanned: 1 hit, ez's real "
+                            "cagrilintide-5mg / cagrilintide-10mg vials untouched. Retire when Rule A "
+                            "(blend guard) lands."),
     ],
     "royal-peptides": [
         ("cagrilintide-kit", "10-vial kit whose NAME carries no kit marker (only the slug does), so "

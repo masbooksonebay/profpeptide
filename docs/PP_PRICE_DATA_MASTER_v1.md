@@ -695,23 +695,21 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: EZ Peptides
 - **slug:** ez-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** ezpeptides.com
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 5 2026
 - **sale posture:** No sale.
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
-| BPC-157 | 50mg | $225.00 | $4.50 | — | ✓ | product/bpc-157-500mcg-100-tabs-bottle/ |
-| SLU-PP-332 [backlog] | 5000mg | $368.00 | $0.07 | — | ✓ | product/slu-pp-332-50mg-100-tabs-bottle/ |
-| Tesofensine [backlog] | 50mg | $168.00 | $3.36 | — | ✓ | product/tesofensine-500mcg-100-tabs-bottle/ |
 | 5-Amino-1MQ | 50mg | $68.00 | $1.36 | — | ✓ | product/5-amino-1mq-50mg/ |
 | Adamax | 10mg | $108.00 | $10.80 | $158.00 | ✓ | product/adamax-10mg/ |
 | AOD-9604 | 2mg | $38.00 | $19.00 | — | ✓ | product/aod-9604-2mg-research-grade-compound/ |
 | AOD-9604 | 5mg | $53.00 | $10.60 | — | ✗ | product/aod-9604-5mg/ |
 | BPC-157 | 10mg | $44.00 | $4.40 | — | ✓ | product/bpc-157-10mg/ |
+| BPC-157 | 50mg | $225.00 | $4.50 | — | ✓ | product/bpc-157-500mcg-100-tabs-bottle/ |
 | Bronchogen [backlog] | 10mg | $58.00 | $5.80 | $88.00 | ✓ | product/bronchogen-10mg/ |
-| Cagrilintide (listed as EZP-CG) | 5mg | $44.00 | $8.80 | — | ✓ | product/cagrilintide-5mg/ |
-| Cagrilintide (listed as EZP-CG) | 10mg | $88.00 | $8.80 | — | ✓ | product/cagrilintide-10mg/ |
+| Cagrilintide | 5mg | $44.00 | $8.80 | — | ✓ | product/cagrilintide-5mg/ |
+| Cagrilintide | 10mg | $88.00 | $8.80 | — | ✓ | product/cagrilintide-10mg/ |
 | Cartalax [backlog] | 10mg | $58.00 | $5.80 | — | ✓ | product/cartalax-10mg/ |
 | Cibinetide | 10mg | $48.00 | $4.80 | — | ✓ | product/ara-290-10mg/ |
 | CJC-1295 | 5mg | $38.00 | $7.60 | — | ✓ | product/cjc-1295-no-dac-5mg/ |
@@ -742,10 +740,12 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Semaglutide (listed as EZP-1P) | 10mg | $48.00 | $4.80 | — | ✓ | product/ezp-1p-10mg/ |
 | Semax | 10mg | $44.00 | $4.40 | — | ✓ | product/semax-10mg/ |
 | Sermorelin | 5mg | $44.00 | $8.80 | — | ✓ | product/sermorelin-5mg/ |
+| SLU-PP-332 [backlog] | 5000mg | $368.00 | $0.07 | — | ✗ | product/slu-pp-332-50mg-100-tabs-bottle/ |
 | SNAP-8 [backlog] | 10mg | $35.00 | $3.50 | — | ✓ | product/snap-8-10mg/ |
 | Survodutide [backlog] | 10mg | $78.00 | $7.80 | — | ✓ | product/survodutide-10mg/ |
 | TB-500 | 10mg | $48.00 | $4.80 | — | ✓ | product/tb-500-frag-17-23-10mg/ |
 | Tesamorelin | 10mg | $68.00 | $6.80 | — | ✓ | product/tesamorelin-10mg/ |
+| Tesofensine [backlog] | 50mg | $168.00 | $3.36 | — | ✓ | product/tesofensine-500mcg-100-tabs-bottle/ |
 | Thymosin Alpha-1 | 10mg | $58.00 | $5.80 | — | ✓ | product/thymosin-alpha-1-10mg/ |
 | Tirzepatide (listed as EZP-2P) | 10mg | $53.00 | $5.30 | — | ✓ | product/ezp-2p-10mg/ |
 | Tirzepatide (listed as EZP-2P) | 15mg | $71.00 | $4.73 | — | ✓ | product/ezp-2p-15mg/ |
@@ -757,20 +757,20 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
 | --- | --- | --- | --- | --- | --- |
-| Beauty (GHK-Cu/KPV) [backlog] | GHK-Cu/KPV | 70mg | $85.00 | not published | ✓ |
+| Beauty (GHK-Cu/KPV) [backlog] | GHK-Cu/KPV | 70mg | $85.00 | 50/20 (published) | ✓ |
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $53.00 | 5/5 (published) | ✓ |
 | Deadpool (BPC-157/TB-500/Cartalax) [backlog] | BPC-157/TB-500 | 30mg | $138.00 | 10/10/10 (published) | ✓ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $88.00 | not published | ✓ |
 | KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $98.00 | not published | ✓ |
-| Reta/Cagri blend [backlog] |  | 15mg | $118.00 | not published | ✓ |
 | Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 13mg | $88.00 | 10/3 (published) | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $88.00 | 10/10 (published) | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $53.00 | 5/5 (published) | ✓ |
 
 ### Sprays: none
-### Excluded: out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: manually excluded — CORRECT DATA held pending the FORMAT-COMPARABILITY decision — NOT a leak, do not 'fix' the data. Rule B correctly computes 50mg x 25 tabs = 1250mg ($0.10/mg). But this ORAL BULK pack would rank against INJECTABLE vials on /prices/5-amino-1mq and take Best-$/mg at ~1/50 the vial rate — oral tabs and an injectable vial are not the same product form. Held here until oral-vs-injectable comparability is decided (Rule D territory). ez's injectable 5-amino-1mq-50mg vial is UNAFFECTED (frag is the FULL count-pack slug; FP-scanned: 1 hit, the vial untouched). Re-include if oral forms get their own lane on /prices., manually excluded — blend leak: 'Reta/Cagri Blend - 12.5mg/2.5mg' (Retatrutide/Cagrilintide combo) resolves to Cagrilintide 12.5mg. Same blend ameano excludes as 'reta-cagri-blend'. ⚠️ check:prices CANNOT catch this: at $9.44/mg vs a $9.60 cagrilintide median it is 0.98x — a NEAR-MEDIAN leak, not an outlier. Caught only by hand-reading the rows. Frag FP-scanned: 1 hit, ez's real cagrilintide-5mg / cagrilintide-10mg vials untouched. Retire when Rule A (blend guard) lands., multi-vial kit / pack (by name), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
+
 ## VENDOR: Glacier Aminos
 - **slug:** glacier-aminos | **code:** PROF10 | **discount:** 10% off | **url:** glacieraminos.shop
 - **traffic:** (not pulled) | **pulled:** July 30 2026
