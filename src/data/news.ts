@@ -15,6 +15,13 @@ export interface NewsArticle {
 // article can never ship without its self-canonical <link rel="canonical">.
 export const articles: NewsArticle[] = [
   {
+    title: "FDA Advisory Panel Recommends Six Peptides for Compounding — What the Vote Does and Doesn’t Do",
+    slug: "fda-pcac-peptide-vote-july-2026",
+    date: "August 5, 2026",
+    excerpt:
+      "The FDA’s Pharmacy Compounding Advisory Committee voted July 23–24 to recommend BPC-157, KPV, TB-500, MOTS-c, Epitalon, and Semax for the 503A Bulks List (8–6 and 7–5 splits) and rejected DSIP. But these are non-binding recommendations, not approvals — the FDA must still act through rulemaking, into 2027, with HHS sign-off. Nothing is legal to compound that wasn’t yesterday. Inside: the tallies, why the panel overruled its own scientists, the conflict-of-interest questions, and how Category 2, a PCAC vote, and the 503A list differ.",
+  },
+  {
     title: "ENDO 2026 Recap — GLP-1 and Peptide Readouts from the Endocrine Society Meeting",
     slug: "endo-2026-glp1-recap-june-2026",
     date: "June 16, 2026",
