@@ -297,7 +297,7 @@ lines.append("export const generatedVendorNames: Record<string, string> = {")
 for vslug in sorted({r["vendor"] for r in rows}):
     lines.append(f'  {ts_val(vslug)}: {ts_val(VENDOR_NAMES.get(vslug, vslug))},')
 lines.append("};")
-OUT.write_text("\n".join(lines) + "\n")
+prices_text = "\n".join(lines) + "\n"
 
 # --- emit sitemap/ungating index (non-retired distinct vendor count per compound) ---
 import json
@@ -307,7 +307,18 @@ for r in rows:
     if r["vendor"] not in RETIRED:
         _cc[r["compound"]].add(r["vendor"])
 index = [{"slug": c, "vendors": len(vs), "indexable": len(vs) >= 3} for c, vs in sorted(_cc.items())]
-INDEX_OUT.write_text(json.dumps(index, indent=2) + "\n")
+index_text = json.dumps(index, indent=2) + "\n"
+
+# --emit MODE (for check:prices-sync): print the artifact to stdout, write NOTHING, no report.
+# The transform is deterministic (PRICES_UPDATED comes from the doc, not today's date), so the
+# guard can diff this stdout against the committed file for an exact drift check.
+if "--emit" in sys.argv:
+    what = sys.argv[sys.argv.index("--emit") + 1] if sys.argv.index("--emit") + 1 < len(sys.argv) else "prices"
+    sys.stdout.write(prices_text if what == "prices" else index_text)
+    sys.exit(0)
+
+OUT.write_text(prices_text)
+INDEX_OUT.write_text(index_text)
 
 # --- report ------------------------------------------------------------------
 print(f"PRICES_UPDATED (from doc): {PRICES_UPDATED}")

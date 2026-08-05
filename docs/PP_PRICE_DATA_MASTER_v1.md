@@ -1984,7 +1984,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Cartalax [backlog] | 20mg | $65.00 | $3.25 | — | ✗ | product/cartalax/ |
 | Cibinetide | 11mg | $54.99 | $5.00 | — | ✓ | product/ara-290/ |
 | CJC-1295 | 5mg | $44.99 | $9.00 | — | ✓ | product/cjc-nodac/ |
-| CJC-1295 | 98mg | $44.99 | $0.46 | — | ✗ | product/cjc-nodac/ |
+| CJC-1295 | 4.98mg | $44.99 | $9.03 | — | ✗ | product/cjc-nodac/ |
 | Cortagen | 20mg | $54.99 | $2.75 | — | ✓ | product/cortagen/ |
 | Dihexa [backlog] | 10mg | $69.99 | $7.00 | — | ✗ | product/dihexa/ |
 | DSIP | 15mg | $58.99 | $3.93 | — | ✓ | product/dsip-delta-sleep-inducing-peptide/ |
@@ -1992,7 +1992,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Epitalon | 60mg | $129.95 | $2.17 | — | ✓ | product/epitalon-epithalon/ |
 | Follistatin | 1mg | $179.99 | $179.99 | — | ✓ | product/follistatin-344/ |
 | FOXO4-DRI [backlog] | 10mg | $154.99 | $15.50 | — | ✓ | product/fox04-dri/ |
-| GHK-Cu | 61mg | $39.00 | $0.64 | — | ✓ | product/gk-cu/ |
+| GHK-Cu | 51.61mg | $39.00 | $0.76 | — | ✓ | product/gk-cu/ |
 | GHRP-2 | 10mg | $42.99 | $4.30 | — | ✓ | product/ghrp-2/ |
 | GLP1 (PGL-G1) [coded, UNVERIFIED] | 10mg | $69.99 | $7.00 | — | ✗ | product/g-one/ |
 | GLP1 (PGL-G1) [coded, UNVERIFIED] | 20mg | $119.00 | $5.95 | — | ✓ | product/g-one/ |
@@ -2005,7 +2005,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 11mg | $74.99 | $6.82 | — | ✓ | product/g3/ |
 | GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 20mg | $119.00 | $5.95 | — | ✓ | product/g3/ |
 | GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 30mg | $179.00 | $5.97 | — | ✓ | product/g3/ |
-| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 41mg | $279.00 | $6.80 | — | ✓ | product/g3/ |
+| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 62.41mg | $279.00 | $4.47 | — | ✓ | product/g3/ |
 | GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 60mg | $279.00 | $4.65 | — | ✗ | product/g3/ |
 | Glutathione | 1500mg | $59.99 | $0.04 | — | ✓ | product/l-glutathione/ |
 | HGH Fragment 176-191 [backlog] | 9mg | $69.99 | $7.78 | — | ✓ | product/gh-fragment-176-191/ |
@@ -2020,8 +2020,8 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | MGF | 5mg | $87.00 | $17.40 | — | ✓ | product/peg-mgf/ |
 | MOTS-C | 10mg | $45.99 | $4.60 | — | ✗ | product/mtsc/ |
 | MOTS-C | 40mg | $129.99 | $3.25 | — | ✗ | product/mtsc/ |
-| MOTS-C | 61mg | $43.99 | $0.72 | — | ✗ | product/mtsc/ |
-| NAD+ | 18mg | $59.99 | $3.33 | — | ✓ | product/nad/ |
+| MOTS-C | 10.61mg | $43.99 | $4.15 | — | ✗ | product/mtsc/ |
+| NAD+ | 552.18mg | $59.99 | $0.11 | — | ✓ | product/nad/ |
 | NAD+ | 500mg | $59.99 | $0.12 | — | ✗ | product/nad/ |
 | NAD+ | 1000mg | $82.99 | $0.08 | $89.99 | ✓ | product/nad/ |
 | Oxytocin | 10mg | $42.99 | $4.30 | — | ✗ | product/oxyt/ |
@@ -2029,7 +2029,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | PNC-27 [backlog] | 10mg | $119.99 | $12.00 | — | ✓ | product/pnc-27/ |
 | PT-141 | 10mg | $43.00 | $4.30 | — | ✓ | product/pt-141/ |
 | Selank | 10mg | $41.00 | $4.10 | — | ✓ | product/selank/ |
-| Selank | 12mg | $45.00 | $3.75 | — | ✓ | product/nac/ |
+| Selank | 11.12mg | $45.00 | $4.05 | — | ✓ | product/nac/ |
 | Semax | 10mg | $38.00 | $3.80 | — | ✗ | product/semax/ |
 | Sermorelin | 10mg | $79.95 | $8.00 | — | ✓ | product/grf-129/ |
 | SNAP-8 [backlog] | 10mg | $42.99 | $4.30 | — | ✓ | product/snap8/ |
