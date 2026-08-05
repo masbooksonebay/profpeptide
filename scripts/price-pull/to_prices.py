@@ -101,14 +101,18 @@ from pricepull.decoders import PP_SLUGS, BACKLOG
 KNOWN = PROFILE_SLUGS | PP_SLUGS | BACKLOG
 
 # --- parse doc ---------------------------------------------------------------
+import datetime
 doc = DOC.read_text()
 pu = re.search(r"\*\*PRICES_UPDATED:\*\*\s*(.+)", doc)
-PRICES_UPDATED = pu.group(1).strip() if pu else "unknown"
+PRICES_UPDATED = pu.group(1).strip() if pu else "unknown"   # fallback only; overridden by the
+# honest MIN of per-vendor pull dates below (a single frozen header claimed data was fresher than
+# it was — Aero, pulled July 24, rendered as the header's July 31).
 
 secs = [s for s in re.split(r"\n(?=## VENDOR: )", doc) if s.startswith("## VENDOR:")]
 
 rows = []                 # kept single-compound entries
 VENDOR_NAMES = {}         # slug -> doc display name (fallback for vendors absent from vendors.ts)
+VENDOR_PULLED = {}        # slug -> per-vendor pull date (for the honest MIN stamp)
 excl = {"blends": 0, "sprays": 0, "unverified_single": 0, "nosize_single": 0, "noprice_single": 0,
         "not_a_compound": 0, "editorial_scope": 0}
 doc_single_total = 0
@@ -127,6 +131,12 @@ for s in secs:
     vslug = sm.group(1) if sm else None
     if vslug:
         VENDOR_NAMES[vslug] = name   # doc display name — fallback for vendors not in vendors.ts
+        pm = re.search(r"pulled:\*\*\s*([A-Za-z]+ \d+ \d+)", s)
+        if pm:
+            try:
+                VENDOR_PULLED[vslug] = datetime.datetime.strptime(pm.group(1), "%B %d %Y").date()
+            except ValueError:
+                pass
 
     # count blend / spray data rows (excluded categories)
     for hdr, key in [("### Blends", "blends"), ("### Sprays / strips", "sprays")]:
@@ -259,6 +269,17 @@ for key, grp in _grp.items():
     dedupe_merged.append((key, [g.get("listedAs") for g in grp], keep.get("listedAs")))
 rows = _deduped
 
+# Honest freshness stamp: the OLDEST pull date among vendors that actually render a row — so the
+# stamp can never claim data is fresher than the stalest thing on the grid. (A single frozen
+# PRICES_UPDATED header showed Aero's July-24 prices as July 31.) Deterministic: derived from the
+# doc's per-vendor `pulled:` dates, never from today's date, so check:prices-sync stays exact.
+# Per-vendor stamps are the better eventual answer (scoped separately); this is the global floor.
+_rendered = {r["vendor"] for r in rows}
+_dates = [d for v, d in VENDOR_PULLED.items() if v in _rendered]
+if _dates:
+    _min = min(_dates)
+    PRICES_UPDATED = _min.strftime("%B ") + str(_min.day) + _min.strftime(", %Y")
+
 # --- emit generated TS -------------------------------------------------------
 def ts_val(v):
     if v is None: return "undefined"
@@ -321,7 +342,7 @@ OUT.write_text(prices_text)
 INDEX_OUT.write_text(index_text)
 
 # --- report ------------------------------------------------------------------
-print(f"PRICES_UPDATED (from doc): {PRICES_UPDATED}")
+print(f"PRICES_UPDATED (oldest rendering vendor's pull date): {PRICES_UPDATED}")
 print(f"generated rows: {len(rows)}  -> {OUT.relative_to(ROOT)}")
 print(f"\ndecoded coded rows (Part A): {decoded_count}")
 if unmapped_coded:

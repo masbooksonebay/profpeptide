@@ -40,7 +40,25 @@ class NonUSD(Exception):
     pass
 
 
+class IncompletePull(Exception):
+    """Raised when a pull KNOWS it fetched less than the full catalog — a degraded/cached HTTP 200
+    products page that returned fewer items than the API's own X-WP-Total header claims, or a
+    variation page that failed all retries. This is the truncation that silently shipped: a short
+    200 is indistinguishable from 'last page' to the len(page) < per_page loop, and the old 50%
+    row-drop floor let a 43->23 (~47%) truncation through. A pull that knows it's incomplete must
+    write NOTHING at ANY percentage — the fix is to RETRY, not to overwrite good data with a stub.
+    Distinct from a genuine delisting (fetched == X-WP-Total, catalog really smaller) which trips
+    only the row-drop floor and IS writable with --allow-shrink."""
+    pass
+
+
 def http_get(url, timeout=25, retries=2, cookie=None):
+    return http_get2(url, timeout=timeout, retries=retries, cookie=cookie)[0]
+
+
+def http_get2(url, timeout=25, retries=2, cookie=None):
+    """Like http_get but returns (body, headers) so callers can read integrity headers such as
+    WooCommerce's X-WP-Total / X-WP-TotalPages. Same retry/timeout/403->Blocked semantics."""
     hdrs = {"User-Agent": UA, "Accept": "*/*"}
     if cookie:
         hdrs["Cookie"] = cookie          # e.g. a consent-gate flag ("amino_age_verified=1")
@@ -49,7 +67,7 @@ def http_get(url, timeout=25, retries=2, cookie=None):
     for _ in range(retries + 1):
         try:
             with urllib.request.urlopen(req, timeout=timeout) as r:
-                return r.read().decode("utf-8", "ignore")
+                return r.read().decode("utf-8", "ignore"), r.headers
         except urllib.error.HTTPError as e:
             if e.code == 403:
                 raise Blocked(f"{url} -> 403 (Cloudflare / auth wall)")
@@ -140,14 +158,27 @@ def woo(domain, per_page=100, max_pages=12, cookie=None):
     # at pull time (see refresh.py), never stored in the registry.
     base = f"https://{domain}/wp-json/wc/store/v1"
     products = []
+    expected_total = None   # X-WP-Total: the catalog size the API itself claims (integrity check)
     for pg in range(1, max_pages + 1):
-        txt = http_get(f"{base}/products?per_page={per_page}&page={pg}", cookie=cookie)
+        txt, resp_hdrs = http_get2(f"{base}/products?per_page={per_page}&page={pg}", cookie=cookie)
+        if pg == 1:
+            t = resp_hdrs.get("X-WP-Total")
+            expected_total = int(t) if t and str(t).isdigit() else None
         page = json.loads(txt)
         if not isinstance(page, list) or not page:
             break
         products += page
         if len(page) < per_page:
             break
+    # ROOT-CAUSE GUARD (truncation): the loop above treats any short page as the last page, so a
+    # degraded/cached HTTP 200 returning fewer items than really exist looks identical to a small
+    # catalog — no error, and the pull silently truncates (la-peptides 75->23, nextgen 79->27 both
+    # reproduced live). The API states its own size in X-WP-Total; if we fetched fewer, we KNOW the
+    # pull is incomplete. Refuse at any percentage — a real, smaller catalog reports a smaller
+    # X-WP-Total too, so this fires only on truncation, never on a genuine delisting.
+    if expected_total is not None and len(products) < expected_total:
+        raise IncompletePull(f"[woo:{domain}] fetched {len(products)} of {expected_total} products "
+                             f"(X-WP-Total) — incomplete pull (degraded page / rate-limit). Retry; not written.")
 
     # Fetch every variation once, concurrently. Serial per-variation GETs made large
     # catalogs (behemoth/purerawz) stall for minutes — a single hung request could burn
@@ -166,6 +197,13 @@ def woo(domain, per_page=100, max_pages=12, cookie=None):
         with ThreadPoolExecutor(max_workers=12) as ex:
             for vid, vf in ex.map(_fetch_var, vids):
                 vfmap[vid] = vf
+    # ROOT-CAUSE GUARD (per-page failure): _fetch_var swallows a failed variation fetch to None,
+    # after which the product loop silently falls back to the PARENT price — a wrong per-size price
+    # that no row count would reveal. A pull that failed to fetch a page it needed must not write.
+    var_failures = sum(1 for vf in vfmap.values() if vf is None)
+    if var_failures:
+        raise IncompletePull(f"[woo:{domain}] {var_failures} of {len(vids)} variation page fetch(es) "
+                             f"failed all retries — per-size prices would fall back to parent. Retry; not written.")
 
     # Resolve each product's permalink to its canonical path (one HEAD per product, threaded
     # to bound wall-clock like the variation fetch). resmap[permalink] = (canonical_path, note).

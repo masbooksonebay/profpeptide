@@ -133,6 +133,9 @@ def main():
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--allow-shrink", action="store_true",
+                    help="accept a COMPLETE pull that returns materially fewer singles than the doc "
+                         "(a genuine delisting). Does NOT override an IncompletePull — that must be retried.")
     ap.add_argument("--list", action="store_true")
     ap.add_argument("--detect", metavar="DOMAIN", help="probe a domain and report which adapter applies")
     args = ap.parse_args()
@@ -173,22 +176,33 @@ def main():
             print(f"[CURRENCY] {slug}: {e}"); continue
         except adapters.Blocked as e:
             print(f"[block] {slug}: {e}"); continue
+        except adapters.IncompletePull as e:
+            # A KNOWN-incomplete pull (fetched < X-WP-Total, or a variation page failed all retries).
+            # This is a broken fetch, not a catalog change — the fix is to retry, so it is NEVER
+            # writable and --allow-shrink does NOT override it (that flag is only for a genuine,
+            # COMPLETE-but-smaller pull; see the floor below).
+            print(f"[INCOMPLETE] {slug}: {e}"); continue
         except Exception as e:
             print(f"[err ] {slug}: {type(e).__name__}: {e}"); continue
         print(f"[ok  ] {slug}: {counts['singles']} singles, {counts['blends']} blends, {counts['sprays']} sprays")
-        # Row-drop floor: a re-pull returning <50% of the singles already on file is almost
-        # certainly an auth failure (expired session cookie) or an accidental delisting, not a
-        # real catalog change — refuse to overwrite good data with it. Inert on first onboard.
+        # Row-drop floor (backstop): with truncation now caught upstream by the X-WP-Total /
+        # variation-fetch guards (IncompletePull), a COMPLETE pull that still returns materially
+        # fewer singles than the doc is either a real delisting or a non-woo adapter regression
+        # (nextjs/gatsby/purity_api have no stated total). Tightened 50%->80% because the old floor
+        # let a ~47% truncation through (23 < 21.5 was False). A genuine delisting is intentional,
+        # so it is writable — but only with an EXPLICIT --allow-shrink, never a silent pass.
         old = existing_singles_count(text, cfg["name"])
-        floor_hit = old > 0 and counts["singles"] < old * 0.5
+        floor_hit = old > 0 and counts["singles"] < old * 0.8
         if floor_hit:
-            print(f"[FLOOR] {slug}: {counts['singles']} singles < 50% of existing {old} — "
-                  f"expired session cookie or delisting? Will NOT overwrite on --write.")
+            verb = "overriding (--allow-shrink)" if args.allow_shrink else "will NOT overwrite"
+            print(f"[FLOOR] {slug}: {counts['singles']} singles < 80% of existing {old} — "
+                  f"delisting or regression? {verb} on --write.")
         if args.dry_run:
             print("\n" + section)
         if args.write:
-            if floor_hit:
-                print(f"[skip-write] {slug}: row-drop floor tripped — kept existing section")
+            if floor_hit and not args.allow_shrink:
+                print(f"[skip-write] {slug}: row-drop floor tripped — kept existing section "
+                      f"(pass --allow-shrink to accept a genuine delisting)")
             else:
                 text = replace_section(text, slug, cfg["name"], section)
     if args.write and text:

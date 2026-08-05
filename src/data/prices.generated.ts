@@ -4,7 +4,7 @@
 // helpers live in ./prices.ts — this file carries only doc-derived data.
 import type { PriceEntry } from "./prices";
 
-export const GENERATED_PRICES_UPDATED = "July 31, 2026";
+export const GENERATED_PRICES_UPDATED = "July 24, 2026";
 
 export const generatedPriceEntries: PriceEntry[] = [
   { compound: "5-amino-1mq", compoundName: "5-Amino-1MQ", vendor: "amino-club", sizeMg: 50, basePrice: 49.99, inStock: true, vendorSlug: "us/products/5-amino-1mq" },
