@@ -28,6 +28,16 @@ _WHOLESALE = re.compile(r'wholesale[\s-]*only', re.I)
 # legitimate single. LL-37 caps ($14-30/mg, ~2-3x the vial median across 4 vendors) were reviewed and
 # KEPT — a real oral product, not a leak.
 MANUAL_EXCLUDE = {
+    "ez-peptides": [
+        ("5-amino-1mq-50mg-25-tabs-bottle",
+         "CORRECT DATA held pending the FORMAT-COMPARABILITY decision — NOT a leak, do not 'fix' the data. "
+         "Rule B correctly computes 50mg x 25 tabs = 1250mg ($0.10/mg). But this ORAL BULK pack would rank "
+         "against INJECTABLE vials on /prices/5-amino-1mq and take Best-$/mg at ~1/50 the vial rate — oral "
+         "tabs and an injectable vial are not the same product form. Held here until oral-vs-injectable "
+         "comparability is decided (Rule D territory). ez's injectable 5-amino-1mq-50mg vial is UNAFFECTED "
+         "(frag is the FULL count-pack slug; FP-scanned: 1 hit, the vial untouched). Re-include if oral "
+         "forms get their own lane on /prices."),
+    ],
     "royal-peptides": [
         ("cagrilintide-kit", "10-vial kit whose NAME carries no kit marker (only the slug does), so "
                              "is_kit_name misses it — $360 = $72/mg vs a ~$11/mg median."),
