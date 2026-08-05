@@ -78,6 +78,9 @@ ALIAS = {
     'gh fragment': 'hgh-fragment-176-191',                # Peptidology "GH Fragment 176-191"
     'fox04 dri': 'foxo4-dri',                             # Peptidology "FOX04-DRI" (zero-for-O typo)
     'aod': 'aod-9604',                                    # NextGen bare "AOD"
+    # Rule A (Part 1) safe additions — audited clean across the cached catalogs (2026-08):
+    'reta': 'retatrutide',        # standalone "Reta Nmg" singles (purerx) + the Reta/Cagri blend's 1st part
+    '5 amino mq': '5-amino-1mq',  # "5-Amino-MQ" spelling variant (nextgen) — NAD+5-AMINO-MQ blend's 2nd part
 }
 
 
@@ -105,6 +108,44 @@ def match(name):
     if tok in BACKLOG:
         return ('BACKLOG', tok)
     return ('UNMAPPED', tok)
+
+
+# RULE A (Part 1): detect a multi-compound blend by resolving the name against the full compound
+# vocabulary — ALIAS keys PLUS the exact single-compound slugs that have no alias (pda, cartalax,
+# petrelintide, …) — and counting DISTINCT single compounds. >=2 -> the name is a blend, not a single.
+# Registered blends (normalize.BLEND_COMPONENTS: GLOW/KLOW/wolverine-stack/…) are handled by
+# normalize.blend_of BEFORE this runs, so this fires only on UNREGISTERED multi-compound names.
+# Part 1 uses NO short abbreviations (bpc/tb/cjc/ipa/cag/pt141/nad5 are Part 2) — so it adds no new
+# FP surface beyond the two audited aliases (reta, 5 amino mq).
+_BLEND_FALLBACK = None
+
+def _blend_fallback():
+    """Single-compound slugs with no ALIAS entry, resolvable only as whole tokens. Excludes the
+    registered-blend slugs (those route via blend_of) so counts stay per-single-compound."""
+    global _BLEND_FALLBACK
+    if _BLEND_FALLBACK is None:
+        from pricepull import normalize as N
+        pool = (PP_SLUGS | BACKLOG) - set(ALIAS.values()) - set(N.BLEND_COMPONENTS)
+        _BLEND_FALLBACK = sorted(pool, key=len, reverse=True)
+    return _BLEND_FALLBACK
+
+
+def blend_slugs(name):
+    """Set of DISTINCT single-compound slugs referenced in `name`. len >= 2 means a blend leak."""
+    n = _norm(name)
+    found = {}
+    for k in sorted(ALIAS, key=len, reverse=True):
+        if re.search(r'\b' + re.escape(k) + r'\b', n):
+            found[ALIAS[k]] = k
+            n = re.sub(r'\b' + re.escape(k) + r'\b', ' ', n)
+    for s in _blend_fallback():
+        st = s.replace('-', ' ')
+        if re.search(r'\b' + re.escape(st) + r'\b', n):
+            found[s] = s
+            n = re.sub(r'\b' + re.escape(st) + r'\b', ' ', n)
+    keys = set(found)
+    # drop any composite slug whose components are also present (e.g. semax-selank when semax+selank hit)
+    return {s for s in keys if not any(o != s and o in s.split('-') for o in keys)}
 
 
 # ---- per-vendor coded-name decoders ----------------------------------------

@@ -192,10 +192,21 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
             kind, slug, disp = 'blend', bo[0], N.BLEND_DISPLAY.get(bo[0], name)
         elif slug in N.BLEND_COMPONENTS:      # bare slug match to a known blend (e.g. "GLOW 70mg")
             kind, disp = 'blend', N.BLEND_DISPLAY[slug]
-        elif _SPRAY.search(name):
-            kind, disp = 'spray', N.display_of(slug, backlog) + ' (spray)'
         else:
-            kind, disp = ('single_bk' if backlog else 'single'), N.display_of(slug, backlog)
+            # RULE A (Part 1): a name resolving to >=2 DISTINCT single compounds is an UNREGISTERED
+            # multi-compound blend leaking as a single (match() above collapsed it to the longest
+            # alias). Registered blends were handled by blend_of / BLEND_COMPONENTS just above, so this
+            # only fires on the unregistered ones (semax-selank, retacagri, BPC+PDA, NAD+5-amino-mq, …).
+            # Exclude from singles — never ship a blend as a single. Reason names both compounds; the
+            # product is a blend-registry candidate (promote to BLEND_COMPONENTS if worth showing).
+            bslugs = decoders.blend_slugs(name)
+            if len(bslugs) >= 2:
+                yield ('exclude', f'blend leak (Rule A): {" + ".join(sorted(bslugs))} — '
+                                  f'blend-registry candidate'); return
+            if _SPRAY.search(name):
+                kind, disp = 'spray', N.display_of(slug, backlog) + ' (spray)'
+            else:
+                kind, disp = ('single_bk' if backlog else 'single'), N.display_of(slug, backlog)
 
     for size_label, price, regular, ins, form in vm.extract_rows(product, ten_vial_kit=ten_vial_kit):
         if price is None or price <= 0:    # drop $0 / hidden-price rows
