@@ -35,6 +35,45 @@ def parse_size(s):
     return (m.group(1) + m.group(2)) if m else None
 
 
+# ── RULE B: count-multiplication ─────────────────────────────────────────────────────────────
+# An oral count-pack states a PER-UNIT dose and a UNIT COUNT in the name — "Tesofensine 500mcg 100
+# Tabs Bottle" = 500mcg x 100 = 50mg. The adapter otherwise parses the per-unit dose (500mcg) as the
+# size, so $/mg comes out ~100x too high; count_mult recovers the PACKAGE TOTAL. Applied to the
+# product NAME only (never a description). Returns the total-mg size string, or None to ABSTAIN.
+#
+# Word-boundary / FP discipline (all on record, tested):
+#   • The count NUMBER must come BEFORE the count word: "90caps", "100 tabs", "60ct". A count word
+#     FOLLOWED by a digit is rejected via (?!-?\d) — so "LL-37 ... CAP-18" ('cap' then '-18', and the
+#     leading '37' from LL-37) does NOT read as "37 caps". LL-37 caps keep their real size (untouched).
+#   • "vials" is deliberately NOT a count word — vial kits are handled by is_kit, not here.
+#   • Ambiguous counts ("50/100 count bottles", royal discover-slu-pp-332) ABSTAIN — return None.
+#   • Conflicting distinct counts in one name ABSTAIN. Count must be >= 2 (a "1 bottle" is no pack).
+#   • No count word, or no per-unit dose -> None (leaves parse_size / normal handling in place, so
+#     'pentadecapeptide' and plain vials are untouched).
+_COUNT_WORD = r'(?:tabs?|tablets?|caps?|capsules?|softgels?|pills?|ct|count|bottles?)'
+_COUNT_RE = re.compile(r'(\d+)[\s-]*' + _COUNT_WORD + r'\b(?!-?\d)', re.I)
+_COUNT_AMBIG = re.compile(r'\d+\s*/\s*\d+[\s-]*' + _COUNT_WORD, re.I)
+_DOSE_RE = re.compile(r'(\d+(?:\.\d+)?)\s*(mcg|mg)\b', re.I)
+
+
+def count_mult(name):
+    """Package-total mg size string for an oral count-pack NAME, or None to abstain (see above)."""
+    if not name:
+        return None
+    if _COUNT_AMBIG.search(name):                      # "50/100 count" — no single reliable count
+        return None
+    counts = [int(m.group(1)) for m in _COUNT_RE.finditer(name)]
+    counts = [c for c in counts if c >= 2]
+    if len(set(counts)) != 1:                          # none, or conflicting counts -> abstain
+        return None
+    count = counts[0]
+    dm = _DOSE_RE.search(name)
+    if not dm:                                         # count but no per-unit dose -> can't multiply
+        return None
+    dose = float(dm.group(1)) / 1000 if dm.group(2).lower() == 'mcg' else float(dm.group(1))
+    return f'{dose * count:g}mg'
+
+
 def form_of(values):
     """Delivery form from variation attribute values."""
     # Guard against null attribute values — some catalogs (e.g. Nura) ship a variation with a
@@ -128,6 +167,13 @@ def extract_rows(product, ten_vial_kit=False):
         # "...Kit" priced as a 10-vial kit, but ONLY for the ten-vial-kit vendor AND only
         # when name/description proves 10 vials (Pinealon "(10 Vials)", Dihexa "10 Vial Kit").
         size = parse_size(name)
+        # RULE B: an oral count-pack ("500mcg 100 tabs bottle") states a per-unit dose that parse_size
+        # reads as the size; override it with the PACKAGE TOTAL (dose x count). Try the NAME first,
+        # then the vendor SLUG — some vendors shorten the display name but keep the count in the slug
+        # (royal 'Tesofensine' / shop/tesofensine-500mcg-100-bottle). Abstains -> size unchanged.
+        cm = count_mult(name) or count_mult(product.get('slug') or '')
+        if cm:
+            size = cm
         if not size:
             # Dose not in the name: for a simple product, fall back to a SINGLE unambiguous mg
             # stated in the description (Modern Aminos lists Petrelintide as "10mg" and Thymogen
