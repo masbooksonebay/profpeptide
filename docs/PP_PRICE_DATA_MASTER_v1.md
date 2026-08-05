@@ -431,7 +431,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 ## VENDOR: Amino X
 - **slug:** amino-x | **code:** PROF15 | **discount:** 15% off | **url:** aminox.net
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 5 2026
 - **sale posture:** No sale.
 
 ### Single compounds
@@ -442,24 +442,24 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | CJC-1295 | 2mg | $39.99 | $20.00 | — | ✗ | product/cjc-1295-with-dac/ |
 | CJC-1295 | 5mg | $59.99 | $12.00 | — | ✗ | product/cjc-1295-with-dac/ |
 | CJC-1295 | 10mg | $79.99 | $8.00 | — | ✗ | product/cjc-1295-with-dac/ |
-| GHK-Cu | 50mg | $29.99 | $0.60 | — | ✓ | product/ghk-cu/ |
+| GHK-Cu | 50mg | $23.99 | $0.48 | $29.99 | ✓ | product/ghk-cu/ |
 | MOTS-C | 20mg | $49.99 | $2.50 | — | ✗ | product/mots-c/ |
 | MOTS-C | 40mg | $69.99 | $1.75 | — | ✗ | product/mots-c/ |
 | Retatrutide (listed as AX-RT) | 10mg | $49.99 | $5.00 | — | ✗ | product/ax-rt/ |
-| Retatrutide (listed as AX-RT) | 20mg | $69.99 | $3.50 | — | ✓ | product/ax-rt/ |
+| Retatrutide (listed as AX-RT) | 20mg | $55.99 | $2.80 | $69.99 | ✓ | product/ax-rt/ |
 | Selank | 5mg | $29.99 | $6.00 | — | ✗ | product/selank/ |
 | Selank | 10mg | $39.99 | $4.00 | — | ✗ | product/selank/ |
 | TB-500 | 5mg | $49.99 | $10.00 | — | ✗ | product/tb-500/ |
 | TB-500 | 10mg | $69.99 | $7.00 | — | ✗ | product/tb-500/ |
 | TB-500 | 20mg | $89.99 | $4.50 | — | ✗ | product/tb-500/ |
-| Tesamorelin | 10mg | $64.99 | $6.50 | — | ✓ | product/tesamorelin/ |
+| Tesamorelin | 10mg | $51.99 | $5.20 | $64.99 | ✓ | product/tesamorelin/ |
 | Tirzepatide (listed as AX-TR) | 10mg | $34.99 | $3.50 | — | ✗ | product/ax-tr/ |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
 | --- | --- | --- | --- | --- | --- |
 | KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $79.99 | not published | ✗ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $64.99 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $51.99 | not published | ✓ |
 
 ### Sprays: none
 ### Excluded: supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
