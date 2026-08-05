@@ -662,13 +662,13 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 ## VENDOR: BioCollex
 - **slug:** biocollex | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** biocollexresearch.com
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 5 2026
 - **sale posture:** No sale.
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
-| GHK-Cu | 50mg | $25.00 | $0.50 | — | ✓ | ghk-cu-50mg/ |
+| GHK-Cu | 50mg | $40.00 | $0.80 | — | ✓ | ghk-cu-50mg/ |
 | MOTS-C | 10mg | $65.00 | $6.50 | — | ✓ | mots-c-10mg/ |
 | NAD+ | 500mg | $65.00 | $0.13 | — | ✓ | nad-500mg/ |
 | PT-141 | 10mg | $45.00 | $4.50 | — | ✓ | pt-141-10mg/ |

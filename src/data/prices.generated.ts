@@ -383,7 +383,7 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "vip", compoundName: "VIP", vendor: "behemoth-labz", sizeMg: 5, basePrice: 41.98, inStock: true, vendorSlug: "product/vip-vasoactive-intestinal-peptide/" },
   { compound: "vip", compoundName: "VIP", vendor: "behemoth-labz", sizeMg: 10, basePrice: 77.39, inStock: false, vendorSlug: "product/vip-vasoactive-intestinal-peptide/" },
   { compound: "vip", compoundName: "VIP", vendor: "behemoth-labz", sizeMg: 12, basePrice: 94.22, inStock: true, vendorSlug: "product/vip-vasoactive-intestinal-peptide/" },
-  { compound: "ghk-cu", compoundName: "GHK-Cu", vendor: "biocollex", sizeMg: 50, basePrice: 25, inStock: true, vendorSlug: "ghk-cu-50mg/" },
+  { compound: "ghk-cu", compoundName: "GHK-Cu", vendor: "biocollex", sizeMg: 50, basePrice: 40, inStock: true, vendorSlug: "ghk-cu-50mg/" },
   { compound: "mots-c", compoundName: "MOTS-C", vendor: "biocollex", sizeMg: 10, basePrice: 65, inStock: true, vendorSlug: "mots-c-10mg/" },
   { compound: "nad-plus", compoundName: "NAD+", vendor: "biocollex", sizeMg: 500, basePrice: 65, inStock: true, vendorSlug: "nad-500mg/" },
   { compound: "pt-141", compoundName: "PT-141", vendor: "biocollex", sizeMg: 10, basePrice: 45, inStock: true, vendorSlug: "pt-141-10mg/" },
