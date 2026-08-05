@@ -1968,7 +1968,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Peptidology
 - **slug:** peptidology | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** peptidology.co
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 5 2026
 - **sale posture:** Check product-level sale_price each refresh; PP code stacks.
 
 ### Single compounds
@@ -1978,13 +1978,14 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | AOD-9604 | 5mg | $44.99 | $9.00 | — | ✗ | product/aod-9604/ |
 | AOD-9604 | 7mg | $60.99 | $8.71 | — | ✓ | product/aod-9604/ |
 | AOD-9604 | 10mg | $59.99 | $6.00 | $69.99 | ✓ | product/aod-9604/ |
+| BPC-157 | 10mg | $49.99 | $5.00 | — | ✓ | product/bc17/ |
 | BPC-157 | 11mg | $44.99 | $4.09 | — | ✓ | product/bc17/ |
 | BPC-157 | 20mg | $74.99 | $3.75 | — | ✓ | product/bc17/ |
 | Cardiogen | 20mg | $54.99 | $2.75 | — | ✓ | product/cardiogen/ |
 | Cartalax [backlog] | 20mg | $65.00 | $3.25 | — | ✗ | product/cartalax/ |
 | Cibinetide | 11mg | $54.99 | $5.00 | — | ✓ | product/ara-290/ |
+| CJC-1295 | 4.98mg | $44.99 | $9.03 | — | ✓ | product/cjc-nodac/ |
 | CJC-1295 | 5mg | $44.99 | $9.00 | — | ✓ | product/cjc-nodac/ |
-| CJC-1295 | 4.98mg | $44.99 | $9.03 | — | ✗ | product/cjc-nodac/ |
 | Cortagen | 20mg | $54.99 | $2.75 | — | ✓ | product/cortagen/ |
 | Dihexa [backlog] | 10mg | $69.99 | $7.00 | — | ✗ | product/dihexa/ |
 | DSIP | 15mg | $58.99 | $3.93 | — | ✓ | product/dsip-delta-sleep-inducing-peptide/ |
@@ -1994,6 +1995,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | FOXO4-DRI [backlog] | 10mg | $154.99 | $15.50 | — | ✓ | product/fox04-dri/ |
 | GHK-Cu | 51.61mg | $39.00 | $0.76 | — | ✓ | product/gk-cu/ |
 | GHRP-2 | 10mg | $42.99 | $4.30 | — | ✓ | product/ghrp-2/ |
+| GLP1 (PGL-G1) [coded, UNVERIFIED] | 5.01mg | $55.00 | $10.98 | — | ✗ | product/g-one/ |
 | GLP1 (PGL-G1) [coded, UNVERIFIED] | 10mg | $69.99 | $7.00 | — | ✗ | product/g-one/ |
 | GLP1 (PGL-G1) [coded, UNVERIFIED] | 20mg | $119.00 | $5.95 | — | ✓ | product/g-one/ |
 | GLP1 (PGL-G1) [coded, UNVERIFIED] | 30mg | $165.00 | $5.50 | — | ✓ | product/g-one/ |
@@ -2001,12 +2003,11 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GLP2 (PGL-GI1) [coded, UNVERIFIED] | 30mg | $115.99 | $3.87 | — | ✓ | product/g-two/ |
 | GLP2 (PGL-GI1) [coded, UNVERIFIED] | 60mg | $199.99 | $3.33 | — | ✓ | product/g-two/ |
 | GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 5mg | $54.99 | $11.00 | — | ✗ | product/g3/ |
-| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 10mg | $74.00 | $7.40 | — | ✓ | product/g3/ |
-| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 11mg | $74.99 | $6.82 | — | ✓ | product/g3/ |
-| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 20mg | $119.00 | $5.95 | — | ✓ | product/g3/ |
+| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 10mg | $79.00 | $7.90 | — | ✓ | product/g3/ |
+| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 11mg | $79.99 | $7.27 | — | ✓ | product/g3/ |
+| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 20mg | $129.99 | $6.50 | — | ✓ | product/g3/ |
 | GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 30mg | $179.00 | $5.97 | — | ✓ | product/g3/ |
 | GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 62.41mg | $279.00 | $4.47 | — | ✓ | product/g3/ |
-| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 60mg | $279.00 | $4.65 | — | ✗ | product/g3/ |
 | Glutathione | 1500mg | $59.99 | $0.04 | — | ✓ | product/l-glutathione/ |
 | HGH Fragment 176-191 [backlog] | 9mg | $69.99 | $7.78 | — | ✓ | product/gh-fragment-176-191/ |
 | IGF-1 LR3 | 1mg | $86.00 | $86.00 | — | ✗ | product/igf1lr3/ |
@@ -2019,10 +2020,10 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Melanotan II | 11mg | $42.99 | $3.91 | — | ✓ | product/mt2/ |
 | MGF | 5mg | $87.00 | $17.40 | — | ✓ | product/peg-mgf/ |
 | MOTS-C | 10mg | $45.99 | $4.60 | — | ✗ | product/mtsc/ |
+| MOTS-C | 10.61mg | $43.99 | $4.15 | — | ✓ | product/mtsc/ |
 | MOTS-C | 40mg | $129.99 | $3.25 | — | ✗ | product/mtsc/ |
-| MOTS-C | 10.61mg | $43.99 | $4.15 | — | ✗ | product/mtsc/ |
-| NAD+ | 552.18mg | $59.99 | $0.11 | — | ✓ | product/nad/ |
 | NAD+ | 500mg | $59.99 | $0.12 | — | ✗ | product/nad/ |
+| NAD+ | 552.18mg | $59.99 | $0.11 | — | ✓ | product/nad/ |
 | NAD+ | 1000mg | $82.99 | $0.08 | $89.99 | ✓ | product/nad/ |
 | Oxytocin | 10mg | $42.99 | $4.30 | — | ✗ | product/oxyt/ |
 | Pancragen [backlog] | 23mg | $58.99 | $2.56 | — | ✓ | product/pancragen/ |
@@ -2030,12 +2031,13 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | PT-141 | 10mg | $43.00 | $4.30 | — | ✓ | product/pt-141/ |
 | Selank | 10mg | $41.00 | $4.10 | — | ✓ | product/selank/ |
 | Selank | 11.12mg | $45.00 | $4.05 | — | ✓ | product/nac/ |
+| Semax | 9.50mg | $42.00 | $4.42 | — | ✓ | product/n-acetyl-semax/ |
 | Semax | 10mg | $38.00 | $3.80 | — | ✗ | product/semax/ |
 | Sermorelin | 10mg | $79.95 | $8.00 | — | ✓ | product/grf-129/ |
 | SNAP-8 [backlog] | 10mg | $42.99 | $4.30 | — | ✓ | product/snap8/ |
 | Survodutide [backlog] | 10mg | $79.99 | $8.00 | — | ✓ | product/survodutide/ |
 | TB-500 | 10mg | $56.99 | $5.70 | — | ✓ | product/t-500/ |
-| Tesamorelin | 10mg | $69.00 | $6.90 | — | ✓ | product/tesa/ |
+| Tesamorelin | 10mg | $74.99 | $7.50 | — | ✓ | product/tesa/ |
 | Thymalin [backlog] | 10mg | $54.00 | $5.40 | — | ✓ | product/thymalin/ |
 | Thymosin Alpha-1 | 10mg | $69.99 | $7.00 | — | ✓ | product/thymosin-alpha-1/ |
 | Vesugen [backlog] | 20mg | $54.99 | $2.75 | — | ✓ | product/vesugen/ |
@@ -2051,12 +2053,13 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 12mg | $149.99 | not published | ✗ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $89.95 | not published | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 40mg | $144.95 | not published | ✗ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 63mg | $144.95 | not published | ✗ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 45.63mg | $144.95 | not published | ✓ |
 
 ### Sprays: none
-### Excluded: oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend leak (Rule A): thymosin-alpha-1 + thymulin — blend-registry candidate, manually excluded — UNCERTAIN, pending verification (not confirmed bad): VIP 11.27mg — clean slug, anomalous size (VIP singles are 10mg), unresolved from generated data. Absent beats wrong; re-add if verified., manually excluded — blend leak: Semax/Selank blend -> Selank 27mg ($4.81/mg)., oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
+
 ## VENDOR: Mile High Compounds
 - **slug:** mile-high-compounds | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** milehighcompounds.is
 - **traffic:** (not pulled) | **pulled:** August 5 2026
