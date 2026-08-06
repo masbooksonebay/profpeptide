@@ -200,13 +200,24 @@ const icons: Record<string, React.ReactNode> = {
 // between and nudges lucide's more-inset forms (they fill ~67–75% of the box vs Ionicons' ~90%)
 // toward matching visual weight. One-line tunable.
 const LUCIDE_STROKE = 1.75;
-// Adding a key here re-backs that glyph with lucide; the inline SVG in `icons` above is KEPT as
-// the fallback, so DELETING a single line here reverts that one glyph to Ionicons with no other
-// change. All homepage-card glyphs are BLOCK-sized.
+// ICON POLICY — lucide-react by default.
+//  • New or changed glyphs come from lucide-react. Do NOT hand-transcribe SVG paths (from
+//    Ionicons or anywhere). The two glyphs that ever looked wrong were the two that were
+//    AUTHORED, not transcribed (a swap path at 37% box width; compare-outline drawing two bare
+//    rectangles despite its name). The transcriptions were fine — which is why this migration is
+//    visually near-invisible. The value is that sizing can't drift and a glyph can't be named one
+//    thing and draw another.
+//  • Existing hand-built glyphs STAY. No bulk migration — migrate one only when there's a reason
+//    to touch it. (Deliberately kept: lucide `smartphone` is a rounded rect + dot, less true to a
+//    phone than the hand-built phone-portrait-outline was; consistency was chosen over it on
+//    purpose — do not "fix" it back.)
+//  • Fallback stays: a lucide map entry here wins, the inline SVG in `icons` above is the fallback.
+//    DELETING a single line here reverts that one glyph to Ionicons with no other change.
+//  • Sizes preserve each glyph's ORIGINAL class (BLOCK/INLINE) so a migration is style-only.
 const lucideIcons: Record<string, { Comp: LucideIcon; size: string }> = {
   "compare-outline": { Comp: Columns2, size: BLOCK },
   "swap-horizontal-outline": { Comp: ArrowLeftRight, size: BLOCK },
-  // The remaining eight homepage cards:
+  // The eight homepage cards:
   "flask-outline": { Comp: FlaskConical, size: BLOCK },
   "book-outline": { Comp: BookOpen, size: BLOCK },
   "shield-block-outline": { Comp: ShieldCheck, size: BLOCK },
@@ -215,8 +226,9 @@ const lucideIcons: Record<string, { Comp: LucideIcon; size: string }> = {
   "calculator-outline": { Comp: Calculator, size: BLOCK },
   "phone-portrait-outline": { Comp: Smartphone, size: BLOCK },
   "clipboard-outline": { Comp: Clipboard, size: BLOCK },
-  // NOTE: shield-checkmark-outline (Gut Health category glyph) is byte-identical to
-  // shield-block-outline but intentionally NOT migrated — see the card-migration report.
+  // shield-checkmark == shield-block target: both were byte-identical Ionicons glyphs, so mapping
+  // the category twin to the same lucide component keeps them identical. INLINE preserves its size.
+  "shield-checkmark-outline": { Comp: ShieldCheck, size: INLINE },
 };
 
 function renderIcon(name: string): React.ReactNode {
