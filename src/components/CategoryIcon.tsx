@@ -1,27 +1,12 @@
+import { ArrowLeftRight, Columns2, type LucideIcon } from "lucide-react";
+
 const INLINE = "w-[1.1em] h-[1.1em] inline-block align-[-0.15em]";
 const BLOCK = "w-6 h-6";
 
 const icons: Record<string, React.ReactNode> = {
-  /* Two side-by-side panels — comparison. (Retained; no longer used on any card as of
-     the swap to swap-horizontal-outline for the Comparisons card — reads as a pause glyph
-     at card size. Kept for reuse.) */
-  "compare-outline": (
-    <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={INLINE}>
-      <rect x="64" y="80" width="160" height="352" rx="28" />
-      <rect x="288" y="80" width="160" height="352" rx="28" />
-    </svg>
-  ),
-  /* Two opposing horizontal arrows — swap / side-by-side comparison. Path fills the 512 box
-     (x≈44–468, y≈72–440) to match the visual weight of the other card glyphs; the first draft
-     spanned only x 160–352 (~37% width) and rendered visibly small. */
-  "swap-horizontal-outline": (
-    <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={INLINE}>
-      <polyline points="420 72 468 120 420 168" />
-      <line x1="468" y1="120" x2="44" y2="120" />
-      <polyline points="92 344 44 392 92 440" />
-      <line x1="44" y1="392" x2="468" y2="392" />
-    </svg>
-  ),
+  /* compare-outline and swap-horizontal-outline are now backed by lucide-react components
+     (see lucideIcons below) — the first two glyphs of the incremental migration. Their string
+     names are unchanged, so every <Icon name="…"> / categoryMap reference keeps working. */
   /* ── Category icons (Ionicons outline, viewBox 512) ── */
   "flame-outline": (
     <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={INLINE}>
@@ -204,6 +189,25 @@ const icons: Record<string, React.ReactNode> = {
   ),
 };
 
+// ── lucide-backed glyphs (incremental migration; two glyphs so far) ──────────────────────────
+// A glyph may be an inline SVG (the `icons` record above) OR a lucide component (here), keyed by
+// the SAME string name. Sizing (BLOCK/INLINE) and stroke are applied ONCE here in the wrapper —
+// not baked per glyph — so a lucide glyph sits at the card grid size of its neighbours. Stroke
+// is set to 1.75: Ionicons draw ~1.5px at w-6 (32/512·24), lucide's default is 2px, so 1.75 sits
+// between and nudges lucide's more-inset forms (they fill ~67–75% of the box vs Ionicons' ~90%)
+// toward matching visual weight. One-line tunable.
+const LUCIDE_STROKE = 1.75;
+const lucideIcons: Record<string, { Comp: LucideIcon; size: string }> = {
+  "compare-outline": { Comp: Columns2, size: BLOCK },
+  "swap-horizontal-outline": { Comp: ArrowLeftRight, size: BLOCK },
+};
+
+function renderIcon(name: string): React.ReactNode {
+  const lucide = lucideIcons[name];
+  if (lucide) return <lucide.Comp className={lucide.size} strokeWidth={LUCIDE_STROKE} />;
+  return icons[name] ?? null;
+}
+
 // Map category names to icon keys
 const categoryMap: Record<string, string> = {
   "Metabolic & Weight Loss": "flame-outline",
@@ -222,13 +226,13 @@ const categoryMap: Record<string, string> = {
 
 export function CategoryIcon({ name, className }: { name: string; className?: string }) {
   const key = categoryMap[name];
-  const icon = key ? icons[key] : null;
+  const icon = key ? renderIcon(key) : null;
   if (!icon) return null;
   return <span className={`text-[#3A759F] ${className ?? ""}`}>{icon}</span>;
 }
 
 export function Icon({ name, className }: { name: string; className?: string }) {
-  const icon = icons[name];
+  const icon = renderIcon(name);
   if (!icon) return null;
   return <span className={className}>{icon}</span>;
 }
