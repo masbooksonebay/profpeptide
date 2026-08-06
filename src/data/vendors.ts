@@ -270,7 +270,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.legendarypeptides.com/?affiliate=PROFPEPTIDE",
     detailPage: "/coupons/legendary-peptides",
-    facts: { coa: "per-product", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin" },
+    facts: { coa: "per-product", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>); recent lots: microbial (PCR), fentanyl" },
   },
   "limitless-biotech": {
     name: "Limitless Biotech",

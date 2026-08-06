@@ -35,7 +35,7 @@ export const couponDifferentiator: Record<string, string> = {
   "ignite-peptides": "99%+ purity, two-stage independent testing, COA/product.",
   "integrative-peptides": "Physician-trusted oral peptide supplements.",
   "la-peptides": "≥99% purity, batch third-party tested, made in USA.",
-  "legendary-peptides": "Third-party tested; peptides, blends, diluents.",
+  "legendary-peptides": "Freedom Diagnostics COAs on every product page.",
   "licensed-peptides": "US-made; HPLC/MS to 99%+, public COA library.",
   "limitless-biotech": "90+ compounds; HPLC/LC-MS tested; 30-day refund.",
   "midwest-peptide": "99%+ purity, third-party tested with a COA per product.",
