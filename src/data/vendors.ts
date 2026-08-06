@@ -147,7 +147,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://biopurepeptides.com/?sld=profpeptide",
     detailPage: "/coupons/biopure-peptides",
-    facts: { purityStandard: "≥99%", coa: "per-product" },
+    facts: { purityStandard: "≥99%", coa: "per-product", labName: "AxisPharm" },
   },
   biocollex: {
     name: "BioCollex",
@@ -211,7 +211,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://lapeptides.net/?ref=xocwamxz",
     detailPage: "/coupons/la-peptides",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", labName: "Bioviridian", purityStandard: "99%+" },
   },
   "mile-high-compounds": {
     name: "Mile High Compounds",
@@ -426,7 +426,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://treasurecoastpeptides.com/?ref=MARKSHURTLIFF",
     detailPage: "/coupons/treasure-coast-peptides",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", labName: "Janoshik, Freedom Diagnostics", purityStandard: "99%+" },
   },
   "vital-core-research": {
     name: "Vital Core Research",
