@@ -471,7 +471,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://99puritypeptides.com/ref/profpeptide",
     detailPage: "/coupons/99-purity-peptides",
-    facts: { purityStandard: "≥99%", coa: "library" },
+    facts: { purityStandard: "≥99%", coa: "per-batch", labName: "Eagle Analytical Services", testMethods: "USP <621> potency", contaminants: "Sterility (ScanRDI), endotoxin (USP <85>)" },
   },
   // Licensed Peptides originally issued a SHARED code (Affiliate5) handed to EVERY affiliate;
   // they swapped it to the unique PROFPEPTIDE on request. If it ever reverts to a shared code,
