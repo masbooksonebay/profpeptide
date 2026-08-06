@@ -107,7 +107,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://aminox.net/?coupon=PROF15",
     detailPage: "/coupons/amino-x",
-    facts: { coa: "on-request", purityStandard: "99%+", labName: "Kovera Labs", testMethods: "RP-HPLC, LC-MS" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labName: "Kovera Labs", testMethods: "RP-HPLC, LC-MS" },
   },
   "ascension-peptides": {
     name: "Ascension Peptides",
@@ -270,7 +270,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.legendarypeptides.com/?affiliate=PROFPEPTIDE",
     detailPage: "/coupons/legendary-peptides",
-    facts: { coa: "per-product", labName: "Freedom Diagnostics", contaminants: "Endotoxin" },
+    facts: { coa: "per-product", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin" },
   },
   "limitless-biotech": {
     name: "Limitless Biotech",

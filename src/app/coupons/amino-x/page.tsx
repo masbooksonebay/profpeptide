@@ -89,7 +89,7 @@ export default function AminoXCouponPage() {
             Every batch is third-party tested by Kovera Labs, an independent analytical laboratory. Identity and purity are confirmed by RP-HPLC and LC-MS against a published 99%+ purity standard, so each compound is characterized by both a chromatographic purity measurement and mass-spectrometry identity confirmation rather than purity alone.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Each product carries a batch-matched Certificate of Analysis &mdash; published and independently verifiable online &mdash; documenting the lot number, purity percentage, identity confirmation, and test date. That lot-level, externally verifiable documentation, paired with the 99%+ purity threshold and Kovera Labs&apos; RP-HPLC and LC-MS panel, gives researchers a traceable quality record for every order. All Amino X compounds are sold for research use only (RUO).
+            Each product carries a batch-matched Certificate of Analysis &mdash; published on the product page and independently verifiable at koveralabs.com/verify using the per-record access code printed on each certificate &mdash; documenting the lot number, purity percentage, identity confirmation, and test date. That lot-level, externally verifiable documentation, paired with the 99%+ purity threshold and Kovera Labs&apos; RP-HPLC and LC-MS panel, gives researchers a traceable quality record for every order. All Amino X compounds are sold for research use only (RUO).
           </p>
         </div>
 
@@ -135,7 +135,7 @@ export default function AminoXCouponPage() {
             />
             <FAQItem
               q="Does Amino X provide Certificates of Analysis?"
-              a="Yes. Every batch has a batch-matched Certificate of Analysis, published and independently verifiable online, documenting purity (RP-HPLC) and identity (LC-MS) for the specific lot."
+              a="Yes. Every batch has a batch-matched Certificate of Analysis, published on the product page and independently verifiable at koveralabs.com/verify using the per-record access code on each certificate, documenting purity (RP-HPLC) and identity (LC-MS) for the specific lot."
             />
           </div>
         </div>
