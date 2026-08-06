@@ -80,7 +80,7 @@ export default function LAPeptidesCouponPage() {
             <Cat label="Sexual Health"><P slug="pt-141">PT-141</P>, <P slug="vip">VIP</P></Cat>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            LA Peptides states that every batch undergoes third-party testing to a minimum purity of ≥99%, and that its peptides are sourced and manufactured within the United States under strict quality standards for research use.
+            LA Peptides states that every batch undergoes third-party testing to a minimum purity of ≥99%, and publishes a full batch-specific Certificate of Analysis library (at lapeptides.net/product-certificates/) issued by the third-party lab Bioviridian &mdash; covering purity (RP-HPLC), identity (LC-MS), endotoxin, heavy metals, and sterility. Its peptides are sourced and manufactured within the United States under strict quality standards for research use.
           </p>
         </div>
 
