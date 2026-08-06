@@ -14,7 +14,7 @@ import { supplementCount } from "@/data/supplements";
 const supplementFloor = Math.floor(supplementCount / 10) * 10;
 
 export const metadata: Metadata = {
-  title: "Prof. Peptide — Research Guide for Peptides and Natural Supplements",
+  title: "Prof. Peptide — Peptide Research, Prices & Discount Codes",
   description: `Evidence-based research profiles for ${appPeptideFloor}+ peptides and ${supplementFloor}+ natural supplements. Dosage calculator, verified discount codes, and independent education. No ads.`,
   metadataBase: new URL("https://profpeptide.com"),
   manifest: "/site.webmanifest",
