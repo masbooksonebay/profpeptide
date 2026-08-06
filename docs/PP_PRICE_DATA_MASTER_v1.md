@@ -2734,7 +2734,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 
 ## VENDOR: 99 Purity Peptides
-- **slug:** 99-purity-peptides | **code:** PROFPEPTIDE10 | **discount:** 10% off | **url:** 99puritypeptides.com
+- **slug:** 99-purity-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** 99puritypeptides.com
 - **traffic:** (not pulled) | **pulled:** August 4 2026
 - **sale posture:** No product-level sale in the API (salePrice null across the catalog); re-verify at write.
 

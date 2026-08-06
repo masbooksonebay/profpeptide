@@ -461,12 +461,12 @@ export const vendors: Record<string, Vendor> = {
     facts: { coa: "library" },
   },
   // 99 Purity's sources disagree on the discount: the welcome email says 10% off, the
-  // affiliate dashboard header says 15% OFF (same code, PROFPEPTIDE10). Mark's call is to
+  // affiliate dashboard header says 15% OFF (same code, now PROFPEPTIDE — was PROFPEPTIDE10). Mark's call is to
   // publish 10% — understating is safe, overstating is a broken promise. Do NOT "correct"
   // this to 15% without new evidence. Affiliate URL is PATH-BASED (/ref/profpeptide).
   "99-purity-peptides": {
     name: "99 Purity Peptides",
-    code: "PROFPEPTIDE10",
+    code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
     url: "https://99puritypeptides.com/ref/profpeptide",
