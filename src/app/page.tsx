@@ -5,6 +5,7 @@ import { articles } from "@/data/news";
 import { activeVendorCount } from "@/data/vendors";
 import { indexablePriceCount } from "@/data/prices";
 import { profileCount, appPeptideFloor } from "@/data/peptideCategories";
+import { routes } from "@/data/routes";
 import HeroSearch from "@/components/HeroSearch";
 
 // Every count on this page is DERIVED from its single source of truth so it can't drift:
@@ -24,9 +25,9 @@ const features = [
   // Row 1 — the Peptides dropdown
   {
     icon: "flask-outline",
-    title: "Peptide Library",
+    title: routes.peptides.longLabel,
     desc: `Comprehensive profiles on ${profileCount} research peptides — mechanisms, half-lives, stacking protocols, and more.`,
-    href: "/peptides",
+    href: routes.peptides.href,
     cta: "Browse library",
   },
   {
@@ -46,31 +47,35 @@ const features = [
   // Row 2 — Vendors → Prices → Codes
   {
     icon: "shield-block-outline",
-    title: "Featured Vendors",
+    title: routes.featuredVendors.longLabel,
     desc: "Our vetted alphabetical list of research peptide suppliers — with third-party testing, published COAs, and the quality criteria we use to include them.",
-    href: "/best-peptide-vendors",
+    href: routes.featuredVendors.href,
     cta: "See vetted vendors",
   },
   {
     icon: "trending-up-outline",
-    title: "Prices",
+    // Card uses the SHORT navLabel ("Prices"), not longLabel ("Price Comparison") — kept as-is
+    // to avoid an unrequested visible change; flagged in the label-drift report.
+    title: routes.prices.navLabel,
     desc: `Compare research-peptide prices across ${activeVendorCount} vendors — normalized to $/mg by vial size, post-code, and sorted lowest-first.`,
-    href: "/prices",
+    href: routes.prices.href,
     cta: "Compare prices",
   },
   {
     icon: "pricetag-outline",
+    // "Coupon Codes" is a card-specific third form (≠ navLabel "Codes", ≠ longLabel
+    // "Vendor Discount Codes") — left INLINE per the label-drift report; href still canonical.
     title: "Coupon Codes",
     desc: "Verified discount codes for research-grade suppliers. Updated regularly.",
-    href: "/coupons",
+    href: routes.coupons.href,
     cta: "See codes",
   },
   // Row 3 — Calculator → App, News appended
   {
     icon: "calculator-outline",
-    title: "Peptide Reconstitution & Dosage Calculator",
+    title: routes.calculator.longLabel,
     desc: "Accurately reconstitute and dose any peptide with our step-by-step research calculator.",
-    href: "/calculator",
+    href: routes.calculator.href,
     cta: "Open calculator",
   },
   {
@@ -154,11 +159,11 @@ export default function Home() {
               reached by the card + Quick Links. Not collapsed to "Vendors" on purpose — see the
               label-drift report. */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
-            <Link href="/peptides" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Peptides</Link>
-            <Link href="/vendors" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Verified Vendors</Link>
-            <Link href="/prices" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Prices</Link>
-            <Link href="/coupons" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Codes</Link>
-            <Link href="/calculator" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Calculator</Link>
+            {/* Labels/hrefs from the canonical route registry (nav vocab). The 2nd CTA is the
+                Verified Vendors directory (/vendors), distinct from Featured (/best-peptide-vendors). */}
+            {[routes.peptides, routes.verifiedVendors, routes.prices, routes.coupons, routes.calculator].map((r) => (
+              <Link key={r.href} href={r.href} className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">{r.navLabel}</Link>
+            ))}
           </div>
         </div>
       </section>

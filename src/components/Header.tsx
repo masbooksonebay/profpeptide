@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "./ThemeProvider";
 import { CategoryIcon } from "./CategoryIcon";
 import SearchOverlay from "./SearchOverlay";
+import { routes } from "@/data/routes";
 import Image from "next/image";
 
 const categories = [
@@ -27,21 +28,24 @@ type NavEntry = {
   dropdown?: "categories" | "vendors";
 };
 
+// Labels/hrefs from the canonical route registry (src/data/routes.ts). "Vendors" is the ONLY
+// bare-"Vendors" label on the site — it's the dropdown PARENT (href = the Verified directory),
+// never a link label to a specific vendor page. App is not a canonical route entry (inline).
 const nav: NavEntry[] = [
-  { label: "Peptides", href: "/peptides", dropdown: "categories" },
-  { label: "Vendors", href: "/vendors", dropdown: "vendors" },
-  { label: "Prices", href: "/prices" },
-  { label: "Codes", href: "/coupons" },
-  { label: "Calculator", href: "/calculator" },
+  { label: routes.peptides.navLabel, href: routes.peptides.href, dropdown: "categories" },
+  { label: "Vendors", href: routes.verifiedVendors.href, dropdown: "vendors" },
+  { label: routes.prices.navLabel, href: routes.prices.href },
+  { label: routes.coupons.navLabel, href: routes.coupons.href },
+  { label: routes.calculator.navLabel, href: routes.calculator.href },
   { label: "App", href: "/app" },
 ];
 
-// "Vendors" dropdown destinations. "Codes" also stays as a standalone nav item
-// (/coupons) — the overlap with "Vendor Discount Codes" here is intentional.
+// "Vendors" dropdown destinations — the two distinct vendor pages + Codes. "Codes" also stays a
+// standalone nav item (/coupons); the overlap with "Vendor Discount Codes" here is intentional.
 const vendorLinks = [
-  { label: "Verified Vendors", href: "/vendors" },
-  { label: "Featured Vendors", href: "/best-peptide-vendors" },
-  { label: "Vendor Discount Codes", href: "/coupons" },
+  { label: routes.verifiedVendors.navLabel, href: routes.verifiedVendors.href },
+  { label: routes.featuredVendors.navLabel, href: routes.featuredVendors.href },
+  { label: routes.coupons.longLabel, href: routes.coupons.href },
 ];
 
 // Dark mode is disabled: the site renders light-only. The ThemeToggle control

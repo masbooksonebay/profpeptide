@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { routes } from "@/data/routes";
 
 export default function Footer() {
   return (
@@ -25,7 +26,7 @@ export default function Footer() {
           <div>
             <p className="text-xs font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-wider mb-3">Learn</p>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-slate-300">
-              <li><Link href="/peptides" className="hover:text-[#3A759F]">Peptide Library</Link></li>
+              <li><Link href={routes.peptides.href} className="hover:text-[#3A759F]">{routes.peptides.longLabel}</Link></li>
               <li><Link href="/supplements" className="hover:text-[#3A759F]">Supplements</Link></li>
               <li><Link href="/bioregulators" className="hover:text-[#3A759F]">Bioregulators</Link></li>
               <li><Link href="/compare" className="hover:text-[#3A759F]">Comparisons</Link></li>
@@ -38,7 +39,9 @@ export default function Footer() {
           <div>
             <p className="text-xs font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-wider mb-3">Tools</p>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-slate-300">
-              <li><Link href="/calculator" className="hover:text-[#3A759F]">Dosage Calculator</Link></li>
+              {/* "Dosage Calculator" is a footer-specific third form (≠ navLabel "Calculator",
+                  ≠ longLabel, the SEO card title) — left INLINE per the label-drift report. */}
+              <li><Link href={routes.calculator.href} className="hover:text-[#3A759F]">Dosage Calculator</Link></li>
               <li><Link href="/log" className="hover:text-[#3A759F]">Track / Log</Link></li>
               <li><Link href="/app" className="hover:text-[#3A759F]">Get the App</Link></li>
             </ul>
@@ -46,10 +49,10 @@ export default function Footer() {
           <div>
             <p className="text-xs font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-wider mb-3">Vendors</p>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-slate-300">
-              <li><Link href="/prices" className="hover:text-[#3A759F]">Price Comparison</Link></li>
-              <li><Link href="/vendors" className="hover:text-[#3A759F]">Verified Vendors</Link></li>
-              <li><Link href="/best-peptide-vendors" className="hover:text-[#3A759F]">Featured Vendors</Link></li>
-              <li><Link href="/coupons" className="hover:text-[#3A759F]">Vendor Discount Codes</Link></li>
+              <li><Link href={routes.prices.href} className="hover:text-[#3A759F]">{routes.prices.longLabel}</Link></li>
+              <li><Link href={routes.verifiedVendors.href} className="hover:text-[#3A759F]">{routes.verifiedVendors.longLabel}</Link></li>
+              <li><Link href={routes.featuredVendors.href} className="hover:text-[#3A759F]">{routes.featuredVendors.longLabel}</Link></li>
+              <li><Link href={routes.coupons.href} className="hover:text-[#3A759F]">{routes.coupons.longLabel}</Link></li>
             </ul>
           </div>
           <div>
