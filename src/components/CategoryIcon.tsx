@@ -1,4 +1,7 @@
-import { ArrowLeftRight, Columns2, type LucideIcon } from "lucide-react";
+import {
+  ArrowLeftRight, Columns2, FlaskConical, BookOpen, ShieldCheck, ShoppingBag,
+  Tag, Calculator, Smartphone, Clipboard, type LucideIcon,
+} from "lucide-react";
 
 const INLINE = "w-[1.1em] h-[1.1em] inline-block align-[-0.15em]";
 const BLOCK = "w-6 h-6";
@@ -197,9 +200,23 @@ const icons: Record<string, React.ReactNode> = {
 // between and nudges lucide's more-inset forms (they fill ~67–75% of the box vs Ionicons' ~90%)
 // toward matching visual weight. One-line tunable.
 const LUCIDE_STROKE = 1.75;
+// Adding a key here re-backs that glyph with lucide; the inline SVG in `icons` above is KEPT as
+// the fallback, so DELETING a single line here reverts that one glyph to Ionicons with no other
+// change. All homepage-card glyphs are BLOCK-sized.
 const lucideIcons: Record<string, { Comp: LucideIcon; size: string }> = {
   "compare-outline": { Comp: Columns2, size: BLOCK },
   "swap-horizontal-outline": { Comp: ArrowLeftRight, size: BLOCK },
+  // The remaining eight homepage cards:
+  "flask-outline": { Comp: FlaskConical, size: BLOCK },
+  "book-outline": { Comp: BookOpen, size: BLOCK },
+  "shield-block-outline": { Comp: ShieldCheck, size: BLOCK },
+  "bag-outline": { Comp: ShoppingBag, size: BLOCK },
+  "pricetag-outline": { Comp: Tag, size: BLOCK },
+  "calculator-outline": { Comp: Calculator, size: BLOCK },
+  "phone-portrait-outline": { Comp: Smartphone, size: BLOCK },
+  "clipboard-outline": { Comp: Clipboard, size: BLOCK },
+  // NOTE: shield-checkmark-outline (Gut Health category glyph) is byte-identical to
+  // shield-block-outline but intentionally NOT migrated — see the card-migration report.
 };
 
 function renderIcon(name: string): React.ReactNode {
