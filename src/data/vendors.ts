@@ -392,7 +392,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
     detailPage: "/coupons/spartan-peptides",
-    facts: { purityStandard: "≥98%", coa: "per-batch", labName: "MZ Biolabs", testMethods: "HPLC, mass spec" },
+    facts: { purityStandard: "≥98%", coa: "per-batch", labName: "MZ BioLabs", testMethods: "HPLC, mass spec" },
   },
   "swiss-chems": {
     name: "Swiss Chems",
@@ -486,7 +486,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://licensedpeptides.com/ref/60815/",
     detailPage: "/coupons/licensed-peptides",
-    facts: { purityStandard: "99%+", coa: "library", testMethods: "HPLC, mass spec", contaminants: "Endotoxin (LAL), sterility, residual solvents" },
+    facts: { coa: "per-batch", labName: "Vanguard Laboratory", labAccreditation: "ISO/IEC 17025:2017", purityStandard: "99%+", testMethods: "HPLC-UV/VIS", contaminants: "Heavy metals (ICP-MS), endotoxin (LAL), sterility (USP <71>)" },
   },
 };
 

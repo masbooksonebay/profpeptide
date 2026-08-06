@@ -78,7 +78,7 @@ export default function LicensedPeptidesCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Licensed Peptides states a 99%+ purity standard verified by HPLC and mass spectrometry, with Certificates of Analysis published in a public reports library. It also states that sterility and endotoxin (LAL) verification is performed by an ISO/IEC 17025:2017-accredited laboratory. Its public site does not name the third-party lab that runs its HPLC purity testing, so researchers who need to know the testing facility should request that detail before purchase.
+            Licensed Peptides states a 99%+ purity standard, and publishes batch-specific Certificates of Analysis issued by Vanguard Laboratory (A2LA Certificate #6377.01.01, ISO/IEC 17025:2017-accredited). Each report verifies chromatographic purity by HPLC-UV/VIS along with endotoxin (LAL), sterility (USP &lt;71&gt;), and heavy-metal (ICP-MS) screening, and a COA is published on each product page.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Licensed Peptides describes its compounds as synthesized in GMP-certified US facilities, prices in US dollars, and offers free FedEx shipping on orders over $200 with same-day US fulfillment. All products are sold for laboratory and research use only.
@@ -91,7 +91,7 @@ export default function LicensedPeptidesCouponPage() {
             <FAQItem q="What peptides does Licensed Peptides carry?" a="Licensed Peptides carries single-compound peptides, peptide blends, and peptide capsules across metabolic, healing, growth-hormone, longevity, and pigmentation research areas. Its catalog includes MOTS-C, BPC-157, TB-500, Tesamorelin, Ipamorelin, Sermorelin, IGF-1 LR3, Epitalon, NAD+, and GHK-Cu, alongside its own branded blends." />
             <FAQItem q="Does Licensed Peptides have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 5% on your Licensed Peptides order. This code is verified and maintained by Prof. Peptide." />
             <FAQItem q="How do I use the Licensed Peptides discount code?" a="Add your items to cart at licensedpeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 5% discount will be applied to your order total." />
-            <FAQItem q="How does Licensed Peptides test its peptides?" a="Licensed Peptides states a 99%+ purity standard verified by HPLC and mass spectrometry, and publishes Certificates of Analysis in a public reports library. It states that sterility and endotoxin (LAL) testing is performed by an ISO/IEC 17025:2017-accredited laboratory. The public site does not name the lab that runs its HPLC purity testing; researchers who need the testing facility named should request it before purchase." />
+            <FAQItem q="How does Licensed Peptides test its peptides?" a="Licensed Peptides publishes batch-specific Certificates of Analysis issued by Vanguard Laboratory (A2LA Certificate #6377.01.01, ISO/IEC 17025:2017-accredited). Each COA verifies chromatographic purity by HPLC-UV/VIS (99%+ stated) plus endotoxin (LAL), sterility (USP <71>), and heavy metals (ICP-MS); the reports are linked on each product page." />
             <FAQItem q="Does Licensed Peptides offer free shipping?" a="Yes. Licensed Peptides offers free FedEx shipping on orders over $200, with same-day US fulfillment. All products are for laboratory and research use only." />
           </div>
         </div>
