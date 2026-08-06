@@ -17,10 +17,12 @@ raises Blocked; such vendors are marked in the registry and skipped.
 """
 import html
 import json
+import math
 import re
 import sys
 import time
 import urllib.request
+from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlparse, parse_qs
 
@@ -146,6 +148,35 @@ def _resolve_permalink(permalink, cookie=None):
     return (orig, None)
 
 
+def _detect_gate_collapse(resmap, n_products):
+    """Detect a GATE COLLAPSE in a built resmap: many DISTINCT product permalinks redirecting onto
+    ONE shared destination — the fingerprint of an account-gated catalog. Vital Core did exactly
+    this: every /product/<x>/ 302s to vital-core-researcher-access/, so 27 distinct products
+    collapsed onto one path. Every collapsed row would then inherit that single gate slug,
+    permanently erasing product identity from the data — and X-WP-Total, the variation guard, and
+    the row-drop floor all pass, so it reads as ordinary churn (31 removed / 27 added).
+
+    Threshold — separate a gate from LEGITIMATE canonicalization. A slug migration, or a
+    discontinued item redirecting to its replacement, merges a SMALL number of URLs (2-3); a gate
+    collapses a large SHARE of the catalog. So a destination is a gate iff it is the resolution
+    target of MORE THAN ONE distinct source AND its group is >= max(3, ceil(0.30 * n_products)).
+    That fires on Vital Core (27 of 27 -> 100%) and any wholly/largely gated catalog, while a 2-3
+    URL legitimate merge on a catalog of any size stays clear (and a 3-way merge only trips on a
+    tiny <=10-product catalog, where 3 of <=10 collapsing to one URL is itself worth a look). A
+    partial gate absorbing <30% would slip — but a gate redirects ALL product URLs, so partial
+    collapse is not the observed failure mode. n_products=0 -> floor of 3 (never divide into empty).
+
+    Returns {gate_destination: [source_permalinks...]} — empty dict when there is no gate. Pure and
+    side-effect-free so it can be unit-tested against Vital Core's known behavior without a re-pull."""
+    if not resmap:
+        return {}
+    groups = defaultdict(list)
+    for pl, (path, _note) in resmap.items():
+        groups[path].append(pl)
+    threshold = max(3, math.ceil(0.30 * n_products)) if n_products else 3
+    return {dest: pls for dest, pls in groups.items() if len(pls) >= threshold}
+
+
 # ---------------------------------------------------------------- WooCommerce
 
 def woo(domain, per_page=100, max_pages=12, cookie=None):
@@ -218,6 +249,27 @@ def woo(domain, per_page=100, max_pages=12, cookie=None):
         print(f"[resolve] {domain}: {len(notes)} permalink note(s) of {len(perms)} product(s):", file=sys.stderr)
         for path, n in sorted(notes):
             print(f"    {path}: {n}", file=sys.stderr)
+
+    # COLLAPSE GUARD (gated catalog) — see _detect_gate_collapse. When a vendor gates its catalog,
+    # every product URL redirects onto one destination and every row would inherit that gate slug;
+    # the other guards all pass, so it reads as ordinary churn. For each collapsed product, keep the
+    # RAW Store-API `product/<name>/` path (which still names the product and is recoverable later —
+    # a slug that names the gate is not) instead of the collapsed destination, and warn LOUDLY in the
+    # IncompletePull style. This does NOT refuse the write: a gated catalog still returns valid
+    # prices, only the deep-links break, so keeping raw paths and warning beats discarding good price
+    # data. The loud warning lets a human hold the --write if the churn also looks wrong.
+    gate_groups = _detect_gate_collapse(resmap, len(products))
+    if gate_groups:
+        collapsed = sum(len(pls) for pls in gate_groups.values())
+        print(f"[collapse] {domain}: GATE COLLAPSE — {collapsed} distinct product URL(s) redirect onto "
+              f"{len(gate_groups)} shared destination(s) (account-gated catalog?). Resolution FAILED for "
+              f"these; keeping raw Store-API paths so product identity survives. Prices ARE written — "
+              f"review the churn before trusting the write:", file=sys.stderr)
+        for dest, pls in sorted(gate_groups.items(), key=lambda kv: -len(kv[1])):
+            print(f"    {len(pls)} products -> /{dest}", file=sys.stderr)
+            for pl in pls:
+                raw = _url_path(pl)
+                resmap[pl] = (raw, f"gate collapse ({len(pls)} URLs -> {dest}) — kept raw {raw}")
 
     out = []
     slug_misses = []   # variation size values that fell back to an unresolved slugified-decimal (Rule C)
