@@ -772,7 +772,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 
 ## VENDOR: Glacier Aminos
-- **slug:** glacier-aminos | **code:** PROF10 | **discount:** 10% off | **url:** glacieraminos.shop
+- **slug:** glacier-aminos | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** glacieraminos.shop
 - **traffic:** (not pulled) | **pulled:** August 5 2026
 - **sale posture:** Product sale 1/70.
 

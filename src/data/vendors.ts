@@ -187,7 +187,7 @@ export const vendors: Record<string, Vendor> = {
   },
   "glacier-aminos": {
     name: "Glacier Aminos",
-    code: "PROF10",
+    code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
