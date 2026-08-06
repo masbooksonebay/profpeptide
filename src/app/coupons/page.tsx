@@ -38,12 +38,15 @@ interface VendorSection {
  * source of truth. Active (non-retired) vendors are partitioned into sections by
  * their own registry flags, so a new vendor appears here automatically and can't
  * be forgotten (mirrors the /vendors directory and the sitemap generation).
- *   Featured Vendors → editorsPick
- *   Best Deals       → bestDeal (and not already featured)
- *   US Vendors       → US region, otherwise unflagged
- *   International    → non-US region, otherwise unflagged
- * The partition is complete and non-overlapping: every active vendor lands in
- * exactly one section.
+ *   Professor's Picks → editorsPick   (heading label DIVERGES from the field name on purpose:
+ *                       the registry field is `editorsPick`, the section reads "Professor's Picks".
+ *                       Do NOT rename one to match the other.)
+ *   US Vendors        → US region, otherwise unflagged
+ *   International     → non-US region, otherwise unflagged
+ * `bestDeal` is retained on the Vendor type but DORMANT — the "Best Deals" section was removed and
+ * the region filters no longer exclude it, so a bestDeal vendor still lands in US/International.
+ * Re-add the section + the filter exclusions to bring it back.
+ * The partition is complete and non-overlapping: every active vendor lands in exactly one section.
  */
 function toCard(v: RegistryVendor): Vendor {
   return {
@@ -64,15 +67,15 @@ const byName = (a: RegistryVendor, b: RegistryVendor) => a.name.localeCompare(b.
 
 const sections: VendorSection[] = (
   [
-    { label: "Featured Vendors", vendors: activeVendors.filter((v) => v.editorsPick) },
-    { label: "Best Deals", vendors: activeVendors.filter((v) => v.bestDeal && !v.editorsPick) },
+    // "Professor's Picks" heading intentionally diverges from the `editorsPick` field name (see above).
+    { label: "Professor's Picks", vendors: activeVendors.filter((v) => v.editorsPick) },
     {
       label: "US Vendors",
-      vendors: activeVendors.filter((v) => v.region === "US" && !v.editorsPick && !v.bestDeal),
+      vendors: activeVendors.filter((v) => v.region === "US" && !v.editorsPick),
     },
     {
       label: "International",
-      vendors: activeVendors.filter((v) => v.region !== "US" && !v.editorsPick && !v.bestDeal),
+      vendors: activeVendors.filter((v) => v.region !== "US" && !v.editorsPick),
     },
   ] as const
 )
@@ -116,11 +119,7 @@ function VendorCard({ v }: { v: Vendor }) {
           <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">
             Verified
           </span>
-          {v.editorsPick && (
-            <span className="text-xs bg-[#eab308] text-[#1c1917] border border-[#ca8a04] px-2 py-0.5 rounded-full font-semibold">
-              Editor&apos;s Pick
-            </span>
-          )}
+          {/* "Editor's Pick" pill removed — Professor's Picks section membership carries the signal. */}
           {v.bestDeal && (
             <span className="text-xs bg-green-100 text-green-800 border border-green-300 px-2 py-0.5 rounded-full font-medium">
               Best Deal

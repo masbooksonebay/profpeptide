@@ -5,11 +5,11 @@ import { CopyCode } from "@/components/CopyCode";
 
 export const metadata = {
   alternates: { canonical: "/best-peptide-vendors" },
-  title: "Featured Vendors (July 2026) — Vetted Research Suppliers | Prof. Peptide",
+  title: "Featured Vendors — Vetted Research Suppliers | Prof. Peptide",
   description:
     "Alphabetical list of the peptide vendors we've vetted for third-party testing, published COAs, purity standards, shipping reliability, and community reputation. Not a ranking.",
   openGraph: {
-    title: "Featured Vendors (July 2026) — Vetted Research Suppliers",
+    title: "Featured Vendors — Vetted Research Suppliers",
     description:
       "Alphabetical list of vetted peptide research suppliers — third-party tested, COA-backed, and reviewed by Prof. Peptide.",
     url: "https://profpeptide.com/best-peptide-vendors",
@@ -119,7 +119,7 @@ export default function BestPeptideVendorsPage() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Featured Peptide Vendors (July 2026)",
+        "headline": "Featured Peptide Vendors",
         "description": "Alphabetical list of the peptide vendors Prof. Peptide has vetted for third-party testing, COA transparency, purity standards, shipping reliability, and community reputation.",
         "datePublished": "2026-04-16",
         "dateModified": "2026-06-25",
@@ -130,9 +130,12 @@ export default function BestPeptideVendorsPage() {
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Featured Vendors" }])} />
 
       <div className="section max-w-3xl">
+        {/* Hand-set review stamp (a human-review date is correctly hand-maintained, not derived). The
+            H1 no longer carries its own date — that produced two months on one screen (H1 "July" vs
+            this badge "August"). The badge is the single source of the "when" for this page. */}
         <span className="tag mb-3 inline-block">Updated August 2026</span>
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">
-          Featured Peptide Vendors (July 2026)
+          Featured Peptide Vendors
         </h1>
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-6 max-w-xl">
           Below is a list of the research peptide vendors we&rsquo;ve vetted and recommend. To make our list, a vendor must provide third-party lab testing with published Certificates of Analysis, meet documented purity standards, offer transparent shipping, maintain responsive customer service, and hold a positive reputation in the research community.

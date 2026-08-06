@@ -111,7 +111,6 @@ export const vendors: Record<string, Vendor> = {
     url: "https://ascensionpeptides.com/ref/profpeptide/",
     detailPage: "/coupons/ascension-peptides",
     facts: { coa: "per-batch", purityStandard: "99%+", labName: "multi-stage" },
-    bestDeal: true,
   },
   "behemoth-labz": {
     name: "Behemoth Labz",
@@ -292,7 +291,6 @@ export const vendors: Record<string, Vendor> = {
     url: "https://myoasislabs.com/?sld=profpeptide",
     detailPage: "/coupons/oasis-labs",
     facts: { coa: "per-product", purityStandard: "99%", labName: "US labs", coldChain: true },
-    editorsPick: true,
   },
   // Restored 2026-08 after Particle issued a working code. Prices are in EUR — verified at
   // checkout: €30.89 with the PROFPEPTIDE 10% discount of €3.09, so the code works end to end.
