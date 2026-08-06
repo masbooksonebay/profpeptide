@@ -28,14 +28,21 @@ interface Row {
 
 // facts → row cells. publishedCoa and batchCoa both derive from the single `coa` access field:
 // any COA availability → published "Yes" (or "On request" / "Yes (login)"); only per-batch and
-// library COAs are treated as batch-specific. thirdParty shows the named lab / accreditation, or
-// "Pending" when the vendor states testing but names no lab on file.
+// library COAs are treated as batch-specific.
+//
+// thirdParty distinguishes a COA-VERIFIED lab from a vendor's own unverified assertion — the two
+// must never read alike (that was the old defect). A verified `labName` renders as a plain fact
+// ("Tested by X"); a `labClaim` — or a bare `labAccreditation` claim, which is also just the
+// vendor's assertion — renders ATTRIBUTED ('Vendor states: "…"') and is muted in <Cell>. Nothing
+// here is a PP finding; PP tests nothing.
 function deriveRow(slug: string, v: Vendor): Row {
   const f = v.facts ?? {};
   const thirdParty = f.labName
-    ? `Yes — ${f.labName}`
+    ? `Tested by ${f.labName}`
+    : f.labClaim
+    ? `Vendor states: “${f.labClaim}”`
     : f.labAccreditation
-    ? `Yes — ${f.labAccreditation}-accredited lab`
+    ? `Vendor states: “${f.labAccreditation}-accredited lab”`
     : "Pending";
   const publishedCoa =
     f.coa === "on-request"
@@ -77,7 +84,7 @@ const COLUMNS: { key: keyof Row; label: string }[] = [
 ];
 
 function Cell({ value }: { value: string }) {
-  const muted = value === "Pending" || value === "On request";
+  const muted = value === "Pending" || value === "On request" || value.startsWith("Vendor states:");
   return (
     <span className={muted ? "text-gray-400 dark:text-slate-500 italic" : "text-gray-700 dark:text-slate-200"}>
       {value === "Pending" ? "Pending verification" : value}

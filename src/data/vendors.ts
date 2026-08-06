@@ -10,10 +10,16 @@ export interface VendorFacts {
   coa?: "per-batch" | "per-product" | "library" | "on-request" | "login-gated";
   /** Lab accreditation the vendor states, e.g. "ISO/IEC 17025". */
   labAccreditation?: string;
-  /** The third-party lab the vendor names (e.g. "Kovera Labs", "Janoshik"), or a short
-   *  third-party descriptor when the vendor states independent testing but names no single
-   *  lab (e.g. "three independent labs"). Rendered after "Yes — " in the testing index. */
+  /** A specific third-party lab VERIFIED from the vendor's own COA — a proper noun
+   *  (e.g. "Kovera Labs", "Janoshik"). NEVER a vague descriptor: a vendor's own
+   *  unverified account of its testing goes in `labClaim`, not here. Rendered as a
+   *  stated fact ("Tested by {labName}") in the testing index. */
   labName?: string;
+  /** The vendor's OWN unverified description of its testing, used when no specific
+   *  lab is confirmable from a COA (e.g. "independent US labs", "cGMP/ISO labs").
+   *  Rendered ATTRIBUTED ('Vendor states: "{labClaim}"') so a reader can tell a
+   *  vendor's assertion apart from a COA-verified lab at a glance. */
+  labClaim?: string;
   /** Analytical methods the vendor states it runs, e.g. "HPLC, mass spec". Free text. */
   testMethods?: string;
   /** Contaminant/safety panels the vendor states it runs, e.g. "Heavy metals, endotoxin". */
@@ -91,7 +97,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
     detailPage: "/coupons/amino-club",
-    facts: { purityStandard: "≥99%", coa: "per-batch", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals, sterility, endotoxin" },
+    facts: { purityStandard: "≥99%", coa: "per-batch", labClaim: "ISO 17025 accredited laboratories", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals, sterility, endotoxin" },
     editorsPick: true,
   },
   "amino-x": {
@@ -110,7 +116,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ascensionpeptides.com/ref/profpeptide/",
     detailPage: "/coupons/ascension-peptides",
-    facts: { coa: "per-batch", purityStandard: "99%+", labName: "multi-stage" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labName: "MZ BioLabs" },
   },
   "behemoth-labz": {
     name: "Behemoth Labz",
@@ -168,7 +174,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ezpeptides.com/?ref=nldbbgvs",
     detailPage: "/coupons/ez-peptides",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", labName: "Janoshik" },
   },
   "fusion-peptide": {
     name: "Fusion Peptide",
@@ -186,7 +192,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
     detailPage: "/coupons/glacier-aminos",
-    facts: { coa: "per-batch", labName: "independent US labs", testMethods: "Identity, mass, endotoxin", contaminants: "Endotoxin", coldChain: true },
+    facts: { coa: "login-gated", labClaim: "independent US labs", testMethods: "Identity, mass, endotoxin", contaminants: "Endotoxin", coldChain: true },
     editorsPick: true,
   },
   "ignite-peptides": {
@@ -196,7 +202,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ignitepeptides.com/ref/profpeptide/",
     detailPage: "/coupons/ignite-peptides",
-    facts: { coa: "per-product", purityStandard: "99%+", labName: "US independent (ISO/GMP)" },
+    facts: { coa: "per-product", purityStandard: "99%+", labName: "Janoshik" },
   },
   "la-peptides": {
     name: "LA Peptides",
@@ -214,7 +220,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://milehighcompounds.is/?ref=profpeptide",
     detailPage: "/coupons/mile-high-compounds",
-    facts: { coa: "library" },
+    facts: { coa: "library", labName: "Chromate, Vanguard Laboratory" },
   },
   "modern-aminos": {
     name: "Modern Aminos",
@@ -264,6 +270,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.legendarypeptides.com/?affiliate=PROFPEPTIDE",
     detailPage: "/coupons/legendary-peptides",
+    facts: { coa: "per-product", labName: "Freedom Diagnostics", contaminants: "Fentanyl screening" },
   },
   "limitless-biotech": {
     name: "Limitless Biotech",
@@ -272,7 +279,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.limitlesslifenootropics.com/?_ef_transaction_id=&oid=1&affid=10477",
     detailPage: "/coupons/limitless-biotech",
-    facts: { coa: "per-product", purityStandard: "≥98.5%", labName: "three independent labs", testMethods: "HPLC, LC-MS", contaminants: "Sterility, endotoxin, contaminants" },
+    facts: { coa: "on-request", purityStandard: "≥98.5%", labClaim: "three independent labs", testMethods: "HPLC, LC-MS", contaminants: "Sterility, endotoxin, contaminants" },
   },
   "midwest-peptide": {
     name: "Midwest Peptide",
@@ -290,7 +297,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://myoasislabs.com/?sld=profpeptide",
     detailPage: "/coupons/oasis-labs",
-    facts: { coa: "per-product", purityStandard: "99%", labName: "US labs", coldChain: true },
+    facts: { coa: "per-product", purityStandard: "99%", labName: "Bioviridian", coldChain: true },
   },
   // Restored 2026-08 after Particle issued a working code. Prices are in EUR — verified at
   // checkout: €30.89 with the PROFPEPTIDE 10% discount of €3.09, so the code works end to end.
@@ -358,7 +365,7 @@ export const vendors: Record<string, Vendor> = {
     region: "CA",
     url: "https://puritypeptides.is/?sld=PROF15",
     detailPage: "/coupons/purity-peptides",
-    facts: { coa: "per-batch", purityStandard: "99%+", labName: "accredited (N. America)", testMethods: "HPLC, mass spec" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labName: "MDX Biolabs", testMethods: "HPLC, mass spec" },
   },
   "royal-peptides": {
     name: "Royal Peptides",
@@ -367,7 +374,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://royal-peptides.com/?ref=urunwnog",
     detailPage: "/coupons/royal-peptides",
-    facts: { coa: "per-batch", purityStandard: "99%+", labName: "cGMP/ISO labs" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labClaim: "cGMP/ISO labs" },
   },
   "science-based-peptides": {
     name: "Science Based Peptides",
@@ -385,7 +392,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
     detailPage: "/coupons/spartan-peptides",
-    facts: { purityStandard: "≥98%", coa: "per-batch", labName: "independent", testMethods: "HPLC, mass spec" },
+    facts: { purityStandard: "≥98%", coa: "per-batch", labName: "MZ Biolabs", testMethods: "HPLC, mass spec" },
   },
   "swiss-chems": {
     name: "Swiss Chems",
