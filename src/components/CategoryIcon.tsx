@@ -2,11 +2,22 @@ const INLINE = "w-[1.1em] h-[1.1em] inline-block align-[-0.15em]";
 const BLOCK = "w-6 h-6";
 
 const icons: Record<string, React.ReactNode> = {
-  /* Two side-by-side panels — comparison. */
+  /* Two side-by-side panels — comparison. (Retained; no longer used on any card as of
+     the swap to swap-horizontal-outline for the Comparisons card — reads as a pause glyph
+     at card size. Kept for reuse.) */
   "compare-outline": (
     <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={INLINE}>
       <rect x="64" y="80" width="160" height="352" rx="28" />
       <rect x="288" y="80" width="160" height="352" rx="28" />
+    </svg>
+  ),
+  /* Two opposing horizontal arrows — swap / side-by-side comparison. */
+  "swap-horizontal-outline": (
+    <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={INLINE}>
+      <polyline points="304 48 352 96 304 144" />
+      <line x1="352" y1="96" x2="160" y2="96" />
+      <polyline points="208 464 160 416 208 368" />
+      <line x1="160" y1="416" x2="352" y2="416" />
     </svg>
   ),
   /* ── Category icons (Ionicons outline, viewBox 512) ── */

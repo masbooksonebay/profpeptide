@@ -5,12 +5,16 @@ import { useRouter } from "next/navigation";
 import Fuse from "fuse.js";
 import { searchIndex, categoryLabels, type SearchCategory, type SearchEntry } from "@/lib/search-index";
 
+// Order + vocabulary mirror the top nav (Peptides · Vendors · Prices · Codes · Calculator).
+// NOTE: "Vendors" here points to /best-peptide-vendors (the Featured/vetted list), which is a
+// DIFFERENT page from the nav's top-level "Vendors" → /vendors (the Verified Vendors directory).
+// That divergence is intentional-pending-review, not an oversight — see the label-drift report.
 const QUICK_LINKS: SearchEntry[] = [
-  { title: "Peptide Library", url: "/peptides", category: "page", description: "Browse all peptide profiles", tags: [] },
-  { title: "Dosage Calculator", url: "/calculator", category: "page", description: "Reconstitution & dosing", tags: [] },
-  { title: "Featured Vendors", url: "/best-peptide-vendors", category: "page", description: "Vetted research suppliers", tags: [] },
-  { title: "Discount Codes", url: "/coupons", category: "page", description: "Vendor codes & promos", tags: [] },
-  { title: "Comparisons", url: "/compare", category: "page", description: "Side-by-side compound comparisons", tags: [] },
+  { title: "Peptides", url: "/peptides", category: "page", description: "Browse all peptide profiles", tags: [] },
+  { title: "Vendors", url: "/best-peptide-vendors", category: "page", description: "Vetted research suppliers", tags: [] },
+  { title: "Prices", url: "/prices", category: "page", description: "Compare $/mg across vendors", tags: [] },
+  { title: "Codes", url: "/coupons", category: "page", description: "Vendor codes & promos", tags: [] },
+  { title: "Calculator", url: "/calculator", category: "page", description: "Reconstitution & dosing", tags: [] },
 ];
 
 const CATEGORY_ORDER: SearchCategory[] = ["peptide", "supplement", "comparison", "news", "page"];

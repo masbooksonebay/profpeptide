@@ -37,7 +37,7 @@ const features = [
     cta: "Read the guide",
   },
   {
-    icon: "compare-outline",
+    icon: "swap-horizontal-outline",
     title: "Comparisons",
     desc: "Side-by-side breakdowns of popular peptides and supplements — mechanisms, evidence, dosing, and how to choose between them.",
     href: "/compare",
@@ -52,7 +52,7 @@ const features = [
     cta: "See vetted vendors",
   },
   {
-    icon: "bag-outline",
+    icon: "trending-up-outline",
     title: "Prices",
     desc: `Compare research-peptide prices across ${activeVendorCount} vendors — normalized to $/mg by vial size, post-code, and sorted lowest-first.`,
     href: "/prices",
@@ -147,13 +147,18 @@ export default function Home() {
           {/* Order mirrors the header nav (Peptides · Vendors · Prices · Codes · Calculator).
               Mobile (flex-col): unchanged — each button stretches full width, one per line.
               sm+ : sm:w-44 gives all five an identical fixed width (sized to the longest
-              label, "Dosage Calculator") instead of content-based sizing, in one row. */}
+              label, now "Verified Vendors") instead of content-based sizing, in one row.
+              Labels mirror the top nav (Peptides · Vendors · Prices · Codes · Calculator),
+              EXCEPT the 2nd CTA stays "Verified Vendors" → /vendors: it targets the Verified
+              Vendors directory, a DIFFERENT page from the Featured list (/best-peptide-vendors)
+              reached by the card + Quick Links. Not collapsed to "Vendors" on purpose — see the
+              label-drift report. */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
-            <Link href="/peptides" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Explore Peptides</Link>
+            <Link href="/peptides" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Peptides</Link>
             <Link href="/vendors" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Verified Vendors</Link>
-            <Link href="/prices" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Compare Prices</Link>
-            <Link href="/coupons" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Discount Codes</Link>
-            <Link href="/calculator" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Dosage Calculator</Link>
+            <Link href="/prices" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Prices</Link>
+            <Link href="/coupons" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Codes</Link>
+            <Link href="/calculator" className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">Calculator</Link>
           </div>
         </div>
       </section>
