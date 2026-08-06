@@ -104,11 +104,24 @@ module.exports = {
       lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
     };
   },
-  additionalPaths: async (config) =>
-    activeCouponSlugs.map((slug) => ({
+  additionalPaths: async (config) => [
+    // /peptides and /supplements read `?category` off searchParams, which opts
+    // them into DYNAMIC (ƒ) rendering. next-sitemap only discovers static (○)
+    // routes from the prerender manifest, so these two content hubs are silently
+    // absent. Re-add them explicitly (same escape hatch as the coupon pages
+    // below). If the category filter is ever refactored off searchParams so they
+    // build ○, they'll enter the manifest and these two lines become redundant.
+    ...["/peptides", "/supplements"].map((loc) => ({
+      loc,
+      changefreq: config.changefreq,
+      priority: config.priority,
+      lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
+    })),
+    ...activeCouponSlugs.map((slug) => ({
       loc: `/coupons/${slug}`,
       changefreq: config.changefreq,
       priority: config.priority,
       lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
     })),
+  ],
 };
