@@ -206,15 +206,9 @@ export default function CouponsPage() {
         ))}
       </div>
 
-      <Link href="/vendor-testing-index" className="card group block mb-4">
-        <span className="text-[#3A759F] mb-3 block"><Icon name="shield-block-outline" /></span>
-        <h3 className="text-base font-semibold text-[#16181B] dark:text-slate-100 mb-1.5 group-hover:text-[#3A759F] transition-colors">Vendor COA &amp; Testing-Transparency Index</h3>
-        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mb-4">
-          A side-by-side record of every vendor&rsquo;s documented third-party testing, COAs, purity standards, and testing methods — with honest &ldquo;pending&rdquo; where unconfirmed.
-        </p>
-        <span className="text-xs font-medium text-[#3A759F] group-hover:underline">Compare vendor testing &rarr;</span>
-      </Link>
-
+      {/* "Vendor COA & Testing-Transparency Index" card removed — /vendor-testing-index is
+          under construction and currently renders data known to be wrong. The route stays live;
+          only this /coupons entry point is pulled. Restore this <Link> when the page is ready. */}
       <Link href="/best-peptide-vendors" className="card group block mb-8">
         <span className="text-[#3A759F] mb-3 block"><Icon name="shield-block-outline" /></span>
         <h3 className="text-base font-semibold text-[#16181B] dark:text-slate-100 mb-1.5 group-hover:text-[#3A759F] transition-colors">Featured Vendors</h3>

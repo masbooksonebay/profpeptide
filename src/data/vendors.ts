@@ -192,7 +192,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
     detailPage: "/coupons/glacier-aminos",
-    facts: { coa: "login-gated", labClaim: "independent US labs", testMethods: "Identity, mass, endotoxin", contaminants: "Endotoxin", coldChain: true },
+    facts: { coa: "per-batch", labName: "Kovera Labs", testMethods: "Identity, mass, endotoxin", contaminants: "Endotoxin", coldChain: true },
     editorsPick: true,
   },
   "ignite-peptides": {
@@ -247,7 +247,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptidology.co/?ref=mkmhgxqi",
     detailPage: "/coupons/peptidology",
-    facts: { coa: "per-batch", labAccreditation: "ISO/IEC 17025" },
+    facts: { coa: "per-batch", labName: "Vanguard Laboratory, Eagle Analytical Services", labAccreditation: "ISO/IEC 17025" },
   },
   "integrative-peptides": {
     name: "Integrative Peptides",
