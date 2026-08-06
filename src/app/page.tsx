@@ -53,7 +53,7 @@ const features = [
     cta: "See vetted vendors",
   },
   {
-    icon: "trending-up-outline",
+    icon: "bag-outline",
     // Card uses the SHORT navLabel ("Prices"), not longLabel ("Price Comparison") — kept as-is
     // to avoid an unrequested visible change; flagged in the label-drift report.
     title: routes.prices.navLabel,

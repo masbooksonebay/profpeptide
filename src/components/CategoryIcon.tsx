@@ -11,13 +11,15 @@ const icons: Record<string, React.ReactNode> = {
       <rect x="288" y="80" width="160" height="352" rx="28" />
     </svg>
   ),
-  /* Two opposing horizontal arrows — swap / side-by-side comparison. */
+  /* Two opposing horizontal arrows — swap / side-by-side comparison. Path fills the 512 box
+     (x≈44–468, y≈72–440) to match the visual weight of the other card glyphs; the first draft
+     spanned only x 160–352 (~37% width) and rendered visibly small. */
   "swap-horizontal-outline": (
     <svg viewBox="0 0 512 512" fill="none" stroke="currentColor" strokeWidth={32} strokeLinecap="round" strokeLinejoin="round" className={INLINE}>
-      <polyline points="304 48 352 96 304 144" />
-      <line x1="352" y1="96" x2="160" y2="96" />
-      <polyline points="208 464 160 416 208 368" />
-      <line x1="160" y1="416" x2="352" y2="416" />
+      <polyline points="420 72 468 120 420 168" />
+      <line x1="468" y1="120" x2="44" y2="120" />
+      <polyline points="92 344 44 392 92 440" />
+      <line x1="44" y1="392" x2="468" y2="392" />
     </svg>
   ),
   /* ── Category icons (Ionicons outline, viewBox 512) ── */
