@@ -1,6 +1,6 @@
 export const metadata = {
   alternates: { canonical: "/calculator" },
-  title: "Peptide Dosage Calculator — Reconstitution & BAC Water Tool | Prof. Peptide",
+  title: "Peptide Reconstitution & Dosage Calculator — BAC Water Tool | Prof. Peptide",
   description:
     "Free peptide dosage calculator. Calculate reconstitution volumes, BAC water ratios, and injection amounts for research peptides. Simple and accurate.",
 };

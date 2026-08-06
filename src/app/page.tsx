@@ -17,7 +17,11 @@ export const metadata = {
   alternates: { canonical: "/" },
 };
 
+// 9-card grid, 3 rows of 3, mirroring the nav order (Peptides dropdown; then Vendors → Prices →
+// Codes; then Calculator → App, with News appended). Supplement Library, Protocol Tracking, and FAQ
+// were removed as cards (routes + footer links + sitemap entries all retained).
 const features = [
+  // Row 1 — the Peptides dropdown
   {
     icon: "flask-outline",
     title: "Peptide Library",
@@ -33,39 +37,26 @@ const features = [
     cta: "Read the guide",
   },
   {
-    icon: "capsule-outline",
-    title: "Supplement Library",
-    desc: "Evidence-based profiles for the most popular supplements — organized by category with research and buying guides.",
-    href: "/supplements",
-    cta: "Browse supplements",
-  },
-  {
     icon: "compare-outline",
     title: "Comparisons",
     desc: "Side-by-side breakdowns of popular peptides and supplements — mechanisms, evidence, dosing, and how to choose between them.",
     href: "/compare",
     cta: "Compare compounds",
   },
+  // Row 2 — Vendors → Prices → Codes
   {
-    icon: "clipboard-outline",
-    title: "News",
-    desc: "The latest peptide research news, regulatory updates, and developments.",
-    href: "/news",
-    cta: "View news",
+    icon: "shield-block-outline",
+    title: "Featured Vendors",
+    desc: "Our vetted alphabetical list of research peptide suppliers — with third-party testing, published COAs, and the quality criteria we use to include them.",
+    href: "/best-peptide-vendors",
+    cta: "See vetted vendors",
   },
   {
-    icon: "calculator-outline",
-    title: "Dosage Calculator",
-    desc: "Accurately reconstitute and dose any peptide with our step-by-step research calculator.",
-    href: "/calculator",
-    cta: "Open calculator",
-  },
-  {
-    icon: "time-outline",
-    title: "Protocol Tracking",
-    desc: "Log your doses and reconstituted vials on the site — with full protocol tracking in the Prof. Peptide iOS app.",
-    href: "/log",
-    cta: "Open tracker",
+    icon: "bag-outline",
+    title: "Prices",
+    desc: `Compare research-peptide prices across ${activeVendorCount} vendors — normalized to $/mg by vial size, post-code, and sorted lowest-first.`,
+    href: "/prices",
+    cta: "Compare prices",
   },
   {
     icon: "pricetag-outline",
@@ -74,12 +65,13 @@ const features = [
     href: "/coupons",
     cta: "See codes",
   },
+  // Row 3 — Calculator → App, News appended
   {
-    icon: "shield-block-outline",
-    title: "Featured Vendors",
-    desc: "Our vetted alphabetical list of research peptide suppliers — with third-party testing, published COAs, and the quality criteria we use to include them.",
-    href: "/best-peptide-vendors",
-    cta: "See vetted vendors",
+    icon: "calculator-outline",
+    title: "Peptide Reconstitution & Dosage Calculator",
+    desc: "Accurately reconstitute and dose any peptide with our step-by-step research calculator.",
+    href: "/calculator",
+    cta: "Open calculator",
   },
   {
     icon: "phone-portrait-outline",
@@ -89,11 +81,11 @@ const features = [
     cta: "Download",
   },
   {
-    icon: "help-circle-outline",
-    title: "FAQ",
-    desc: "Straight answers to the most common questions about peptide research.",
-    href: "/faq",
-    cta: "View FAQ",
+    icon: "clipboard-outline",
+    title: "News",
+    desc: "The latest peptide research news, regulatory updates, and developments.",
+    href: "/news",
+    cta: "View news",
   },
 ];
 

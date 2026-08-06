@@ -83,7 +83,7 @@ export default function CalculatorPage() {
         <div className="mb-10">
           <span className="tag mb-4 inline-block">Dosing Tool</span>
           <h1 className="text-3xl sm:text-4xl font-semibold mb-3 text-[#16181B] dark:text-slate-100" style={{ letterSpacing: '-0.02em' }}>
-            Peptide Reconstitution Calculator
+            Peptide Reconstitution &amp; Dosage Calculator
           </h1>
           <p className="text-gray-500 dark:text-slate-400 text-base max-w-xl">
             Enter your vial size, bacteriostatic water volume, and desired dose
