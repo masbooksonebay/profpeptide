@@ -11,6 +11,10 @@ export const metadata = buildPageMetadata({
   title: "Bioregulator Peptides (Khavinson Peptides) — Research Guide | Prof. Peptide",
   description:
     "A research guide to short-peptide bioregulators (Khavinson peptides): the proposed gene-regulation mechanism, synthetic analogs vs. organ extracts, and the individual compounds (Epitalon, Pinealon, Cortagen, Thymogen, Cardiogen). Research use only.",
+  // Defer the OG image to the file-based opengraph-image.tsx / twitter-image.tsx in this segment
+  // (the content-generic vial card). Without this, seo.ts's default og-image.png wins the <head>
+  // and the file route is ignored — proven on this page before rolling out to the other segments.
+  useDefaultOgImage: false,
 });
 
 const lineup = [

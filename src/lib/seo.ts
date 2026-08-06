@@ -44,7 +44,7 @@ export function buildPageMetadata({
     ogImage ??
     (useDefaultOgImage === false
       ? null
-      : { url: OG_IMAGE, width: 1024, height: 1024, alt: "Prof. Peptide" });
+      : { url: OG_IMAGE, width: 1200, height: 630, alt: "Prof. Peptide" });
 
   return {
     alternates: { canonical: path },

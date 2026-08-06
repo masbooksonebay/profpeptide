@@ -344,6 +344,37 @@ export async function generateHomeOg(): Promise<ImageResponse> {
   return new ImageResponse(<HomeCard bg={bg} />, { ...IMAGE_SIZE, fonts });
 }
 
+// Content-generic card for the shared content pages (peptide profiles, supplements,
+// comparisons, news, the hubs, and the indexable stragglers). Brand-level, page-agnostic
+// copy so one card reads fine under any of them. NO numbers — X/iMessage cache per URL and
+// can't be force-refreshed, so any count would be permanently wrong. Same Shell / vial bg /
+// LogoLockup / fonts as the home + vendor cards, so it belongs to the same family. Headline is
+// 48px (vs the homepage's 64) because the broader wording wraps in the 720px-wide text column.
+export const CONTENT_OG_HEADLINE = "Independent Peptide & Supplement Research";
+export const CONTENT_OG_TAGLINE = "Evidence-based profiles, comparisons & price data";
+export const CONTENT_OG_ALT = "Prof. Peptide — independent peptide & supplement research";
+
+function ContentCard({ bg }: { bg: string }) {
+  return (
+    <Shell bg={bg} justify="center">
+      <LogoLockup />
+      <div style={{ display: "flex", flexDirection: "column", marginTop: 30 }}>
+        <div style={{ display: "flex", fontSize: 48, fontWeight: 700, color: WHITE, lineHeight: 1.12, letterSpacing: -1.5 }}>
+          {CONTENT_OG_HEADLINE}
+        </div>
+        <div style={{ display: "flex", marginTop: 18, fontSize: 31, fontWeight: 500, color: LIGHT, lineHeight: 1.3 }}>
+          {CONTENT_OG_TAGLINE}
+        </div>
+      </div>
+    </Shell>
+  );
+}
+
+export async function generateContentOg(): Promise<ImageResponse> {
+  const { bg, fonts } = await loadAssets();
+  return new ImageResponse(<ContentCard bg={bg} />, { ...IMAGE_SIZE, fonts });
+}
+
 export async function generateCouponOg(slug: string): Promise<ImageResponse> {
   const { bg, fonts } = await loadAssets();
   const vendor = vendors[slug];
