@@ -97,11 +97,7 @@ const nextConfig = {
       },
       // Retired vendors: permanently redirect their coupon pages to the hub.
       // page.tsx kept on disk; excluded from the sitemap in next-sitemap.config.js.
-      {
-        source: "/coupons/particle-peptides{/}?",
-        destination: "/coupons",
-        permanent: true,
-      },
+      // (Particle Peptides restored 2026-08 — redirect removed; page resolves again.)
       {
         source: "/coupons/fusion-peptide{/}?",
         destination: "/coupons",

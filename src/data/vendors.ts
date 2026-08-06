@@ -294,14 +294,18 @@ export const vendors: Record<string, Vendor> = {
     facts: { coa: "per-product", purityStandard: "99%", labName: "US labs", coldChain: true },
     editorsPick: true,
   },
+  // Restored 2026-08 after Particle issued a working code. Prices are in EUR — verified at
+  // checkout: €30.89 with the PROFPEPTIDE 10% discount of €3.09, so the code works end to end.
+  // Same non-USD currency class as NOVA (AED). Coupon-page-only for TWO independent reasons:
+  // PrestaShop with no price-pull adapter, AND non-USD pricing that blocks /prices rows until the
+  // currency decision is made. Region is EU: ships from Slovakia (verified on their shipping page).
   "particle-peptides": {
     name: "Particle Peptides",
     code: "PROFPEPTIDE",
     discount: "10% off",
-    region: "UK",
+    region: "EU",
     url: "https://particlepeptides.com/en/?refs=18075",
     detailPage: "/coupons/particle-peptides",
-    retired: true,
   },
   "peptide-partners": {
     name: "Peptide Partners",

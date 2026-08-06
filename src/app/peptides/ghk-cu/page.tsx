@@ -407,7 +407,7 @@ const sections = [
     id: "where-to-buy",
     title: "Where to source GHK-Cu",
     intro:
-      "Topical GHK-Cu is widely available in cosmetic skincare products at 1–3% concentrations. Injectable research-grade GHK-Cu is sold by specialty peptide vendors (note FDA restriction on compounded injectable as of 2023). The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — including a UK/EU shipping option for international research.",
+      "Topical GHK-Cu is widely available in cosmetic skincare products at 1–3% concentrations. Injectable research-grade GHK-Cu is sold by specialty peptide vendors (note FDA restriction on compounded injectable as of 2023). The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — including an EU shipping option for international research.",
     node: (
       <div className="space-y-4">
         <VendorHighlightBlock
@@ -416,6 +416,7 @@ const sections = [
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
             { slug: "ascension-peptides" },
+            { slug: "particle-peptides", note: "EU shipping" },
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
