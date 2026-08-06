@@ -10,6 +10,8 @@ export const metadata = buildPageMetadata({
   title: "Peptide Sciences Has Shut Down — Vetted Alternatives (2026) | Prof. Peptide",
   description:
     "Peptide Sciences has voluntarily closed and discontinued sales. Here's what happened and established research-peptide vendors to consider instead, with current discount codes.",
+  // Defer OG to this segment's opengraph-image.tsx (content-generic vial card).
+  useDefaultOgImage: false,
 });
 
 export default function PeptideSciencesAlternativesPage() {

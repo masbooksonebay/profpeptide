@@ -12,6 +12,8 @@ export const metadata = {
     title: `Peptide Price Comparison — Compare Prices Across ${VENDOR_N} Vendors With Published Pricing | Prof. Peptide`,
     description:
       `Compare research-peptide prices across ${VENDOR_N} vendors with published pricing — post-code pricing, per-mg normalization across vial sizes, and lowest-price-first sorting. Updated regularly.`,
+    // Defer OG to this segment's opengraph-image.tsx (content-generic vial card).
+    useDefaultOgImage: false,
   }),
 };
 

@@ -8,14 +8,16 @@ export const metadata = {
   title: "News — Peptide Research & Regulatory Updates | Prof. Peptide",
   description:
     "Latest news on peptide research, FDA regulatory changes, and supplement industry developments. Independent reporting from Prof. Peptide.",
+  // No images here: the /news hub's OG image is supplied by this segment's opengraph-image.tsx /
+  // twitter-image.tsx (the content-generic vial card). An explicit image here would win over the
+  // file route (and this one was also wrongly declared 1024x1024). The news ARTICLES keep their
+  // own og-image.png overrides — they stay on the tile under the chosen scope.
   openGraph: {
     title: "News — Peptide Research & Regulatory Updates",
     description: "Latest news on peptide research, FDA regulatory changes, and supplement industry developments.",
-    images: [{ url: "https://profpeptide.com/og-image.png", width: 1024, height: 1024, alt: "Prof. Peptide" }],
   },
   twitter: {
     card: "summary_large_image" as const,
-    images: ["https://profpeptide.com/og-image.png"],
   },
 };
 

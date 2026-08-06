@@ -34,6 +34,8 @@ export function generateMetadata({ params }: { params: { compound: string } }): 
       // Title leads neutral but keeps "Cheapest" for search matching; H1 (below) drops it.
       title: `${c.name} Price Comparison — Cheapest Prices from ${vendorCount} Vendor${vendorCount === 1 ? "" : "s"} | Prof. Peptide`,
       description: `Compare ${c.name} prices from ${vendorCount} research-peptide ${v} — find the lowest price and cost per mg, normalized across vial sizes.${range}`,
+      // Defer OG to this segment's opengraph-image.tsx (content-generic vial card).
+      useDefaultOgImage: false,
     }),
     // ≥3 vendors → indexable; thinner pages stay noindex,follow (still crawlable/linked).
     robots: vendorCount >= 3 ? undefined : { index: false, follow: true },
