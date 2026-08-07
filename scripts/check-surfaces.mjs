@@ -73,6 +73,34 @@ for (const s of SURFACES) {
 
 if (!warned) console.log("check:surfaces OK — all completeness surfaces in sync.");
 
+// ── Verified-stamp completeness (WARN) ───────────────────────────────────────
+// Every active coupon page's code card renders "✓ Verified <month>" ONLY when its slug is in
+// VENDORS_VERIFIED_SLUGS (the machine set written by a clean check:vendors run). A vendor
+// onboarded AFTER the last check:vendors run ships a coupon page with NO verified pill while its
+// meta still says "verified and working" — that's how real-peptides shipped stampless. The build
+// chain does not run check:vendors (it hits live sites), so nothing caught it. This does: flag any
+// active vendor with a live coupon page that is absent from the verified set → re-run check:vendors.
+// WARN only (matches this file's discipline); a genuinely dead link is excluded from the set AND
+// fails check:vendors (exit 1), so the honest fix there is to retire the vendor, not silence this.
+{
+  const { VENDORS_VERIFIED_SLUGS } = execModule("src/data/vendors-verified.generated.ts", "vendors-verified.generated.ts");
+  const verified = new Set(VENDORS_VERIFIED_SLUGS);
+  const unstamped = [...active]
+    .filter((slug) => existsSync(join(root, `src/app/coupons/${slug}/page.tsx`)) && !verified.has(slug))
+    .sort();
+  if (unstamped.length) {
+    const bar = "-".repeat(74);
+    console.warn(`\n${bar}`);
+    console.warn(`check:surfaces WARNING — ${unstamped.length} active coupon page(s) missing the verified stamp:`);
+    console.warn(`  ${unstamped.join(", ")}`);
+    console.warn(`  Their code card renders no "✓ Verified" pill (absent from VENDORS_VERIFIED_SLUGS).`);
+    console.warn(`  Fix: run \`npm run check:vendors\` to re-verify links and regenerate the stamp. (warning only.)`);
+    console.warn(bar);
+  } else {
+    console.log(`check:surfaces OK — all ${active.size} active coupon pages carry the verified stamp.`);
+  }
+}
+
 // ── Derived-count drift (WARN) ───────────────────────────────────────────────
 // The canonical count constants must equal the number of static routes actually on disk. If a
 // /peptides/<slug> or /supplements/<slug> dir is added without the taxonomy entry (or vice-versa),
