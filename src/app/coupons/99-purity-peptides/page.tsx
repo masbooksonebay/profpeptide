@@ -105,7 +105,7 @@ export default function NinetyNinePurityPeptidesCouponPage() {
             <FAQItem q="How do I use the 99 Purity Peptides discount code?" a="Add your items to cart at 99puritypeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
             <FAQItem q="How does 99 Purity Peptides test its peptides?" a="99 Purity publishes a batch-matched Certificate of Analysis for each product, issued by the third-party lab Eagle Analytical Services (Houston, TX). The reports cover sterility (ScanRDI) and bacterial endotoxin (USP <85>), with a potency/content assay (USP <621>) on applicable products. 99 Purity states a minimum ≥99% purity standard for its peptides." />
             <FAQItem q="Are Certificates of Analysis available for 99 Purity products?" a="Yes. 99 Purity publishes a batch-matched Certificate of Analysis on each product page, issued by Eagle Analytical Services and tied to a specific lot number, documenting the sterility, endotoxin, and (where applicable) potency results for that batch." />
-            <FAQItem q="Is 99 Purity Peptides US-based?" a="Yes — 99 Purity Peptides states it is USA-manufactured. All products are for laboratory and research use only." />
+            <FAQItem q="Is 99 Purity Peptides US-based?" a="Yes — 99 Purity Peptides is USA-manufactured. All products are for laboratory and research use only." />
           </div>
         </div>
 

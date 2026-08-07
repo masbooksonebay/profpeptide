@@ -81,7 +81,7 @@ export default function LicensedPeptidesCouponPage() {
             Licensed Peptides states a 99%+ purity standard, and publishes batch-specific Certificates of Analysis issued by Vanguard Laboratory (A2LA Certificate #6377.01.01, ISO/IEC 17025:2017-accredited). Each report verifies chromatographic purity by HPLC-UV/VIS along with endotoxin (LAL), sterility (USP &lt;71&gt;), and heavy-metal (ICP-MS) screening, and a COA is published on each product page.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Licensed Peptides describes its compounds as synthesized in GMP-certified US facilities, prices in US dollars, and offers free FedEx shipping on orders over $200 with same-day US fulfillment. All products are sold for laboratory and research use only.
+            Licensed Peptides synthesizes its compounds in GMP-certified US facilities, prices in US dollars, and offers free FedEx shipping on orders over $200 with same-day US fulfillment. All products are sold for laboratory and research use only.
           </p>
         </div>
 

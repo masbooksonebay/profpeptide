@@ -54,7 +54,7 @@ export default function BiolongevityLabsCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Biolongevity Labs is a U.S.-based manufacturer of research-grade peptides and bioregulators with a broad catalog &mdash; a growth-hormone bench, recovery blends, skin and longevity compounds, cognitive peptides, reproductive and immune-signaling research, and a deep line of Khavinson short-peptide bioregulators. What it leads on is documentation: the company states every batch is independently verified by three certified laboratories, and ships a Certificate of Analysis, an HPLC purity report, and LC-MS molecular confirmation with every order, backed by a public COA library. Popular compounds by research area:
+            Biolongevity Labs is a U.S.-based manufacturer of research-grade peptides and bioregulators with a broad catalog &mdash; a growth-hormone bench, recovery blends, skin and longevity compounds, cognitive peptides, reproductive and immune-signaling research, and a deep line of Khavinson short-peptide bioregulators. What it leads on is documentation: every batch is independently verified by three certified laboratories, and every order ships with a Certificate of Analysis, an HPLC purity report, and LC-MS molecular confirmation, backed by a public COA library. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -113,7 +113,7 @@ export default function BiolongevityLabsCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Biolongevity Labs describes its standard as &ldquo;triple third-party testing&rdquo; &mdash; every batch independently verified by three certified laboratories before release. Each order ships with full analytical documentation: a Certificate of Analysis, an HPLC purity report, and LC-MS molecular confirmation of identity. The company manufactures in the U.S. under Good Manufacturing Practices, and its stated standard is 99%+ purity, independently confirmed.
+            Biolongevity Labs applies &ldquo;triple third-party testing&rdquo; &mdash; every batch is independently verified by three certified laboratories before release. Each order ships with full analytical documentation: a Certificate of Analysis, an HPLC purity report, and LC-MS molecular confirmation of identity. The company manufactures in the U.S. under Good Manufacturing Practices, and its stated standard is 99%+ purity, independently confirmed.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             The distinguishing feature is verifiability at the batch level: a public COA library at biolongevitylabs.com/all-coas/ lets a researcher review documentation before purchase and match the specific batch received to its identity and purity records. Fulfillment is U.S.-based, with international orders shipped alongside customs documentation.
@@ -157,7 +157,7 @@ export default function BiolongevityLabsCouponPage() {
             />
             <FAQItem
               q="Is Biolongevity Labs third-party tested?"
-              a="Biolongevity Labs states that every batch is independently verified by three certified laboratories (&ldquo;triple third-party testing&rdquo;), and ships full analytical documentation with every order — a Certificate of Analysis, an HPLC purity report, and LC-MS molecular confirmation of identity. The company manufactures in the U.S. under Good Manufacturing Practices, and its stated standard is 99%+ purity, independently confirmed."
+              a="Biolongevity Labs independently verifies every batch through three certified laboratories (&ldquo;triple third-party testing&rdquo;), and ships full analytical documentation with every order — a Certificate of Analysis, an HPLC purity report, and LC-MS molecular confirmation of identity. The company manufactures in the U.S. under Good Manufacturing Practices, and its stated standard is 99%+ purity, independently confirmed."
             />
             <FAQItem
               q="How can I verify a Biolongevity Labs product?"

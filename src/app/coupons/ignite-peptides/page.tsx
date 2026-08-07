@@ -110,7 +110,7 @@ export default function IgnitePeptidesCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Ignite Peptides conducts two-stage independent third-party testing on every batch &mdash; testing occurs both before and after a product is added to their catalog, providing an additional verification step beyond the single-test standard common in the industry. All testing is performed by US-based independent laboratories meeting strict ISO and GMP standards. Every product is guaranteed to meet 99%+ purity, and a Certificate of Analysis is provided for every product in their catalog. COAs are publicly accessible on their website.
+ Ignite Peptides conducts two-stage independent third-party testing on every batch &mdash; testing occurs both before and after a product is added to their catalog, providing an additional verification step beyond the single-test standard common in the industry. All testing is performed by US-based independent laboratories meeting strict ISO and GMP standards. Every product is tested to 99%+ purity, and a Certificate of Analysis is provided for every product in their catalog. COAs are publicly accessible on their website.
  </p>
  </div>
 
@@ -148,11 +148,11 @@ export default function IgnitePeptidesCouponPage() {
  />
  <FAQItem
  q="Is Ignite Peptides third-party tested?"
- a="Yes. Ignite Peptides uses US-based independent laboratories meeting ISO and GMP standards. Every batch undergoes two-stage testing — before and after being listed for sale — and a Certificate of Analysis is provided for every product. All testing guarantees 99%+ purity."
+ a="Yes. Ignite Peptides uses US-based independent laboratories meeting ISO and GMP standards. Every batch undergoes two-stage testing — before and after being listed for sale — and a Certificate of Analysis is provided for every product. All batches are tested to 99%+ purity."
  />
  <FAQItem
  q="What is Ignite Peptides' purity standard?"
- a="Ignite Peptides guarantees 99%+ purity on all research peptides, verified through independent third-party laboratory testing. COAs for all products are publicly available on their website."
+ a="Ignite Peptides tests all research peptides to 99%+ purity, verified through independent third-party laboratory testing. COAs for all products are publicly available on their website."
  />
  <FAQItem
  q="How many peptides does Ignite Peptides carry?"

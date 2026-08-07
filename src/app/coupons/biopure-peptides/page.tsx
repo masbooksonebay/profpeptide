@@ -96,7 +96,7 @@ export default function BioPurePeptidesCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            BioPure Peptides states that every batch undergoes rigorous third-party testing for purity, potency, and quality, and that each product comes with a Certificate of Analysis confirming its purity and consistency. The site describes purity levels exceeding 99% and says its manufacturing facility is WHO/GMP and ISO 9001 certified. Its product pages publish Certificates of Analysis; the third-party test reports are issued by AxisPharm (identity by mass spec, purity by HPLC-UV, endotoxin).
+            Every BioPure Peptides batch undergoes third-party testing for purity, potency, and quality, and each product comes with a Certificate of Analysis. Purity levels exceed 99%, and its manufacturing facility is WHO/GMP and ISO 9001 certified. Its product pages publish Certificates of Analysis; the third-party test reports are issued by AxisPharm (identity by mass spec, purity by HPLC-UV, endotoxin).
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             BioPure Peptides is US-based and made in the USA. All products are sold for laboratory and research use only.
@@ -109,8 +109,8 @@ export default function BioPurePeptidesCouponPage() {
             <FAQItem q="What peptides does BioPure Peptides carry?" a="BioPure carries research compounds across several categories: metabolic and GLP-class compounds including AOD-9604, MOTS-C, and its BioLean GLP line; recovery peptides such as BPC-157, TB-500, and the GLOW blend; growth-hormone secretagogues including CJC-1295 and Ipamorelin; longevity compounds including Epitalon, NAD+, SS-31, and Glutathione; skin compounds GHK-Cu and Melanotan II; cognitive compounds Semax, Selank, and DSIP; immune and repair peptides LL-37, KPV, Thymosin Alpha-1, and ARA-290; plus PT-141, Kisspeptin, and VIP." />
             <FAQItem q="Does BioPure Peptides have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 5% on your entire BioPure Peptides order. This code is verified and maintained by Prof. Peptide." />
             <FAQItem q="How do I use the BioPure Peptides discount code?" a="Add your items to cart at biopurepeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 5% discount will be applied to your order total." />
-            <FAQItem q="How does BioPure Peptides test its peptides?" a="BioPure states that every batch undergoes rigorous third-party testing for purity, potency, and quality, and that each product comes with a Certificate of Analysis confirming its purity and consistency, with purity levels exceeding 99%. Its manufacturing facility is described as WHO/GMP and ISO 9001 certified. Its product-page Certificates of Analysis include third-party test reports from AxisPharm." />
-            <FAQItem q="Are Certificates of Analysis available for BioPure products?" a="Yes. BioPure states that each product comes with a Certificate of Analysis confirming its purity and consistency." />
+            <FAQItem q="How does BioPure Peptides test its peptides?" a="Every BioPure batch undergoes third-party testing for purity, potency, and quality, and each product comes with a Certificate of Analysis, with purity levels exceeding 99%. Its manufacturing facility is WHO/GMP and ISO 9001 certified. Its product-page Certificates of Analysis include third-party test reports from AxisPharm." />
+            <FAQItem q="Are Certificates of Analysis available for BioPure products?" a="Yes. Each BioPure product comes with a Certificate of Analysis." />
             <FAQItem q="Is BioPure Peptides US-based?" a="Yes — BioPure Peptides is US-based and made in the USA. All products are for laboratory and research use only." />
           </div>
         </div>

@@ -104,7 +104,7 @@ export default function ScienceBasedPeptidesCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Science Based Peptides states that every batch is third-party tested at an independent U.S. laboratory before it ships, with each product page linking a downloadable Certificate of Analysis tied to a specific batch number and tested date. The company describes its focus as traceability &mdash; independent COAs, batch-level documentation, and conservative handling standards &mdash; so a researcher can match the lot received to its test record before use. Its stated specification is a 99% minimum purity per the active batch&rsquo;s COA.
+            Every Science Based Peptides batch is third-party tested at an independent U.S. laboratory before it ships, with each product page linking a downloadable Certificate of Analysis tied to a specific batch number and tested date. The company describes its focus as traceability &mdash; independent COAs, batch-level documentation, and conservative handling standards &mdash; so a researcher can match the lot received to its test record before use. Its stated specification is a 99% minimum purity per the active batch&rsquo;s COA.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             The COAs the store publishes report compound identity and chromatographic purity at the batch level; the certificates are issued by an independent U.S. laboratory (Freedom Diagnostics) using HPLC with UV detection coupled with mass spectrometry, which confirms the compound&rsquo;s identity and its purity figure against the specific lot. Compounds that the store lists under coded names &mdash; for example the GLP-class metabolic compound labeled GLP&nbsp;3-(RT) &mdash; are identified on their published COAs by the underlying compound name (in that case, Retatrutide). Material is supplied as lyophilized powder with refrigerated storage recommended, and fulfillment is U.S.-based.
@@ -148,7 +148,7 @@ export default function ScienceBasedPeptidesCouponPage() {
             />
             <FAQItem
               q="Is Science Based Peptides third-party tested?"
-              a="Science Based Peptides states that every batch is third-party tested at an independent U.S. laboratory, and each product page links a downloadable Certificate of Analysis showing the batch number and tested date for the active lot. The certificates reviewed are issued by an independent U.S. lab using HPLC with UV detection coupled with mass spectrometry. The company's stated specification is a 99% minimum purity per the batch's COA."
+              a="Every Science Based Peptides batch is third-party tested at an independent U.S. laboratory, and each product page links a downloadable Certificate of Analysis showing the batch number and tested date for the active lot. The certificates reviewed are issued by an independent U.S. lab using HPLC with UV detection coupled with mass spectrometry. The company's stated specification is a 99% minimum purity per the batch's COA."
             />
             <FAQItem
               q="How can I verify a Science Based Peptides product?"

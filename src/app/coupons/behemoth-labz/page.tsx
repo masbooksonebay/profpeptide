@@ -123,7 +123,7 @@ export default function BehemothLabzCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Behemoth Labz conducts third-party testing on every product through Colmaric Analyticals LLC, an accredited analytical laboratory in Goodlettsville, Tennessee. All test results are published publicly, with Certificates of Analysis consistently returning purity results above 99% across their compound catalog. This commitment to independent verification and public transparency establishes Behemoth Labz as one of the more rigorously documented suppliers in the research compound space.
+            Behemoth Labz conducts third-party testing on every product through Colmaric Analyticals LLC, an accredited analytical laboratory in Goodlettsville, Tennessee. All test results are published publicly, with Certificates of Analysis consistently returning purity results above 99% across their compound catalog.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Behemoth Labz products are available in multiple forms including liquid solution, capsules, and powder. Their catalog spans SARMs, peptide blends, nootropics, prohormones, and post-cycle therapy compounds &mdash; offering researchers a broad selection across biological research areas. The company also offers a subscription program with recurring discounts for regular researchers.

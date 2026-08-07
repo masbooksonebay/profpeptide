@@ -122,7 +122,7 @@ export default function FusionPeptideCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- On quality assurance, Fusion Peptide states that every batch undergoes purity testing with a verified threshold of 99% &mdash; the highest stated purity standard among Prof. Peptide&apos;s featured vendor network. Certificates of Analysis are available for their products, documenting batch-specific purity and compound identity. The company&apos;s catalog spans key areas of research including cognitive enhancement compounds and metabolic peptides, supplied as injectables, topicals, and nasal sprays.
+ On quality assurance, every Fusion Peptide batch undergoes purity testing with a verified threshold of 99%. Certificates of Analysis are available for their products, documenting batch-specific purity and compound identity. The company&apos;s catalog spans key areas of research including cognitive enhancement compounds and metabolic peptides, supplied as injectables, topicals, and nasal sprays.
  </p>
  </div>
 
@@ -161,7 +161,7 @@ export default function FusionPeptideCouponPage() {
  />
  <FAQItem
  q="Is Fusion Peptide third-party tested?"
- a="Fusion Peptide states that every batch is tested to a purity threshold of 99%. Certificates of Analysis are available for their products documenting purity and compound identity. At 99%, Fusion Peptide's stated purity threshold is the highest among Prof. Peptide's featured vendor network."
+ a="Every Fusion Peptide batch is tested to a purity threshold of 99%. Certificates of Analysis are available for their products documenting purity and compound identity."
  />
  </div>
  </div>

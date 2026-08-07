@@ -81,7 +81,7 @@ export default function MileHighCompoundsCouponPage() {
             <Cat label="Sexual Health"><P slug="pt-141">PT-141</P>, <P slug="oxytocin">Oxytocin</P>, <P slug="vip">VIP</P>, <P slug="kisspeptin">Kisspeptin-10</P></Cat>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Mile High Compounds states that its products are produced in cGMP-certified, FDA-audited facilities and independently tested by American third-party labs, describing itself as the first to deploy &ldquo;8x&rdquo; testing. It states a 99%+ purity guarantee, provides a Certificate of Analysis with every compound, and publishes test reports on its site.
+            Mile High Compounds&apos; products are produced in cGMP-certified, FDA-audited facilities and independently tested by American third-party labs, and it describes itself as the first to deploy &ldquo;8x&rdquo; testing. It tests to a 99%+ purity standard, provides a Certificate of Analysis with every compound, and publishes test reports on its site.
           </p>
         </div>
 
@@ -106,8 +106,8 @@ export default function MileHighCompoundsCouponPage() {
           <div className="space-y-2">
             <FAQItem q="Does Mile High Compounds have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Mile High Compounds order. This code is verified and maintained by Prof. Peptide." />
             <FAQItem q="How do I use the Mile High Compounds discount code?" a="Add your items to cart at milehighcompounds.is, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
-            <FAQItem q="Is Mile High Compounds third-party tested?" a="Mile High Compounds states its products are produced in cGMP-certified, FDA-audited facilities and independently tested by American third-party labs, and that it deploys '8x' testing with a Certificate of Analysis for every compound and public test reports. Confirm the current COA for any specific compound on the vendor's site." />
-            <FAQItem q="What is Mile High Compounds' purity standard?" a="Mile High Compounds states a 99%+ purity guarantee, verified through independent American third-party laboratory testing, with COAs published on its site." />
+            <FAQItem q="Is Mile High Compounds third-party tested?" a="Mile High Compounds' products are produced in cGMP-certified, FDA-audited facilities and independently tested by American third-party labs, and it deploys '8x' testing with a Certificate of Analysis for every compound and public test reports." />
+            <FAQItem q="What is Mile High Compounds' purity standard?" a="Mile High Compounds tests to a 99%+ purity standard, verified through independent American third-party laboratory testing, with COAs published on its site." />
             <FAQItem q="What does Mile High Compounds carry?" a="A catalog of 60+ research compounds across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator categories, in vial and capsule formats." />
           </div>
         </div>

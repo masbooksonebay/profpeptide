@@ -99,7 +99,7 @@ export default function NuraPeptideCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Nura Peptide states that every batch undergoes third-party testing to confirm purity and potency, and that every product includes a Certificate of Analysis with HPLC results. COAs are published in a public COA library, so researchers can review the documentation for a given batch before purchase. Nura does not publish a single headline purity percentage; it points instead to the per-batch COA as the record of each lot's results.
+            Every Nura Peptide batch undergoes third-party testing to confirm purity and potency, and every product includes a Certificate of Analysis with HPLC results. COAs are published in a public COA library, so researchers can review the documentation for a given batch before purchase. Nura does not publish a single headline purity percentage; it points instead to the per-batch COA as the record of each lot's results.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Nura Peptide is US-based and ships domestically. All products are sold for laboratory and research use only.
@@ -127,7 +127,7 @@ export default function NuraPeptideCouponPage() {
             <FAQItem q="What peptides does Nura Peptide carry?" a="Nura carries research compounds across several categories: metabolic and GLP-class compounds including MOTS-C, AOD-9604, and 5-Amino-1MQ; recovery peptides such as BPC-157, TB-500, and a BPC-157/TB-500 blend; growth-hormone secretagogues including CJC-1295, Ipamorelin, Tesamorelin, Sermorelin, and IGF-1 LR3; longevity and bioregulator compounds including Epitalon, NAD+, SS-31, and Glutathione; plus GHK-Cu, the GLOW and KLOW blends, Semax, Selank, DSIP, PT-141, and KPV." />
             <FAQItem q="Does Nura Peptide have a discount code?" a="Yes. Use code PROFPEPTIDE15 at checkout to save 15% on your entire Nura Peptide order. This code is verified and maintained by Prof. Peptide." />
             <FAQItem q="How do I use the Nura Peptide discount code?" a="Add your items to cart at nurapeptide.com, proceed to checkout, and enter PROFPEPTIDE15 in the discount code field. The 15% discount will be applied to your order total." />
-            <FAQItem q="How does Nura Peptide test its peptides?" a="Nura states that every batch undergoes third-party testing to confirm purity and potency, and that each product ships with a Certificate of Analysis that includes HPLC results. Nura does not publish a single headline purity figure; the per-batch COA is the record of each lot's results." />
+            <FAQItem q="How does Nura Peptide test its peptides?" a="Every Nura batch undergoes third-party testing to confirm purity and potency, and each product ships with a Certificate of Analysis that includes HPLC results. Nura does not publish a single headline purity figure; the per-batch COA is the record of each lot's results." />
             <FAQItem q="Are Certificates of Analysis available for Nura products?" a="Yes. Nura publishes a COA library where researchers can view the Certificate of Analysis, with HPLC results, for each batch." />
             <FAQItem q="Is Nura Peptide US-based?" a="Yes — Nura Peptide is US-based and ships domestically. All products are for laboratory and research use only." />
           </div>

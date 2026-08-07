@@ -104,7 +104,7 @@ export default function SwissChemsCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Swiss Chems states that every product is independently third-party tested at external laboratories by HPLC (to confirm identity and concentration) and mass spectrometry (to confirm molecular structure), against a 99%+ purity standard &mdash; batches that fall short are rejected. The distinguishing feature is verifiability: full batch Certificates of Analysis are published on a public Independent Test Results page and linked from product pages, and a product-verification system lets a researcher confirm the specific item they received.
+            Every Swiss Chems product is independently third-party tested at external laboratories by HPLC (to confirm identity and concentration) and mass spectrometry (to confirm molecular structure), against a 99%+ purity standard &mdash; batches that fall short are rejected. The distinguishing feature is verifiability: full batch Certificates of Analysis are published on a public Independent Test Results page and linked from product pages, and a product-verification system lets a researcher confirm the specific item they received.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Because the analysis is performed by outside laboratories and the COAs are published in full rather than summarized, researchers can check identity and purity at the batch level before use. One transparency caveat worth noting: Swiss Chems does not always name the specific testing laboratories, so the published COAs &mdash; rather than a named lab accreditation &mdash; are the primary verification artifact.
@@ -145,7 +145,7 @@ export default function SwissChemsCouponPage() {
             />
             <FAQItem
               q="Is Swiss Chems third-party tested?"
-              a="Yes. Swiss Chems states that products are independently third-party tested at external laboratories by HPLC and mass spectrometry against a 99%+ purity standard, with batches below that standard rejected. Full batch Certificates of Analysis are published on a public Independent Test Results page rather than summarized."
+              a="Yes. Swiss Chems products are independently third-party tested at external laboratories by HPLC and mass spectrometry against a 99%+ purity standard, with batches below that standard rejected. Full batch Certificates of Analysis are published on a public Independent Test Results page rather than summarized."
             />
             <FAQItem
               q="How can I verify a Swiss Chems product?"

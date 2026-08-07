@@ -124,8 +124,9 @@ export default function PurityPeptidesCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Every batch is tested by accredited third-party laboratories in North America. Purity is verified to a 99%+ standard by HPLC and mass spectrometry, with identity confirmation, and Purity Peptides states its raw materials are North American-sourced (not China) and manufactured in GMP-aligned facilities with full chain-of-custody documentation.
+            Every batch is tested by accredited third-party laboratories in North America. Purity is verified to a 99%+ standard by HPLC and mass spectrometry, with identity confirmation. Purity Peptides&apos; raw materials are North American-sourced (not China) and manufactured in GMP-aligned facilities with full chain-of-custody documentation.
           </p>
+          {/* §D3: CPRA claim intentionally kept ATTRIBUTED ("states it is certified by") — a third-party certification asserts an outside body vouched for the vendor; CPRA is obscure and vendor-adjacent, so PP must not state it as flat fact. Do not de-hedge. */}
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Each product links a Certificate of Analysis with traceable lab results. Purity Peptides states it is certified by the Canadian Peptide Research Alliance (CPRA), a Canadian organization that describes itself as an independent certification and registry body for research-grade peptide vendors. That per-product, verifiable documentation &mdash; paired with the 99%+ purity threshold &mdash; gives researchers a traceable quality record for every order.
           </p>
