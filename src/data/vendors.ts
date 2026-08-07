@@ -116,7 +116,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ascensionpeptides.com/ref/profpeptide/",
     detailPage: "/coupons/ascension-peptides",
-    facts: { coa: "per-batch", purityStandard: "99%+", labName: "MZ BioLabs" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labName: "MZ BioLabs", testMethods: "HPLC-UV, HPLC-MS" },
   },
   "behemoth-labz": {
     name: "Behemoth Labz",

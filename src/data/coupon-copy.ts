@@ -23,7 +23,7 @@ export const couponDifferentiator: Record<string, string> = {
   "ameano-peptides": "Janoshik-tested to 99%+; COA on every product.",
   "amino-club": "ISO-17025 tested peptides with a COA on every batch.",
   "amino-x": "US-based, third-party tested research peptides; COA on request.",
-  "ascension-peptides": "99%+ multi-stage tested; blend & stack range.",
+  "ascension-peptides": "MZ Biolabs per-batch COAs; blends & stacks.",
   "behemoth-labz": "Third-party tested by Colmaric; peptides & SARMs.",
   "biocollex": "US-based, 99% purity, same-day shipping, cGMP cert.",
   "biolongevity-labs": "Triple per-batch verification; HPLC/LC-MS; COAs.",
