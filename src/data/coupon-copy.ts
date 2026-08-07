@@ -28,7 +28,7 @@ export const couponDifferentiator: Record<string, string> = {
   "biocollex": "Freedom Diagnostics per-batch COAs; same-day ship.",
   "biolongevity-labs": "Triple per-batch verification; HPLC/LC-MS; COAs.",
   "biopure-peptides": "US-made; 99%+ purity, batch third-party tested.",
-  "crush-research": "Per-batch COAs, multi-vial tested; veteran-owned.",
+  "crush-research": "ISO-17025 lab; multi-vial per-batch COAs.",
   "ez-peptides": "Same-day shipping; 4.7/5 over 176+ reviews; lab-tested.",
   "fusion-peptide": "Topical and nasal-spray peptide formats available.",
   "glacier-aminos": "Batch-traceable COAs and cold-chain shipping.",

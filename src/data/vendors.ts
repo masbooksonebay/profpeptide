@@ -165,7 +165,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://crushresearch.shop/?ref=PROFPEPTIDE",
     detailPage: "/coupons/crush-research",
-    facts: { coa: "library" },
+    facts: { coa: "per-batch", labName: "ILS Laboratories", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals (ICP-MS), sterility (PCR), endotoxin (USP <85>)" },
   },
   "ez-peptides": {
     name: "EZ Peptides",
