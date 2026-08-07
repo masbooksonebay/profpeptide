@@ -367,6 +367,15 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/purity-peptides",
     facts: { coa: "per-batch", purityStandard: "99%+", labName: "MDX Biolabs", testMethods: "HPLC, mass spec" },
   },
+  "real-peptides": {
+    name: "Real Peptides",
+    code: "PROFPEPTIDE",
+    discount: "20% off",
+    region: "US",
+    url: "https://www.realpeptides.co/ref/688/",
+    detailPage: "/coupons/real-peptides",
+    facts: { coa: "per-product", labName: "Freedom Diagnostics", purityStandard: "≥99%", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>)" },
+  },
   "royal-peptides": {
     name: "Royal Peptides",
     code: "PROF10",

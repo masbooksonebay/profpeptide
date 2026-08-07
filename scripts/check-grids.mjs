@@ -69,6 +69,9 @@ const ONBOARDING_BACKLOG = {
   // woo store detected, but the Store API surfaces supplies (cold packs, crates, diluent) ahead of
   // the peptide catalog (1 product on page 1) — needs a pull pass that reaches the real compounds.
   "licensed-peptides":  { reason: "woo Store API returns supplies before peptides — needs a pull that surfaces the compound catalog", since: "2026-08-04" },
+  // Onboarded 2026-08-07 (coupon page + registry live). WooCommerce; no price-pull pass run yet.
+  // Coupon page renders NO <VendorProductGrid> until rows land, so this is a thin-page WARN only.
+  "real-peptides":      { reason: "onboarded 2026-08; WooCommerce catalog not yet price-pulled", since: "2026-08-07" },
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────

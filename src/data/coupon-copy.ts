@@ -54,6 +54,7 @@ export const couponDifferentiator: Record<string, string> = {
   "purerawz": "US-based; third-party tested peptides, SARMs & nootropics.",
   "purerx-peptides": "Per-batch HPLC/MS COAs from an ISO-certified lab.",
   "purity-peptides": "99%+ HPLC/mass-spec tested with third-party COAs.",
+  "real-peptides": "Freedom Diagnostics per-product COAs; US-stocked.",
   "royal-peptides": "cGMP/ISO-lab tested to 99%+ purity with batch COAs.",
   "science-based-peptides": "Per-lot COAs with batch number & test date.",
   "spartan-peptides": "HPLC + mass-spec verified to ≥98% purity.",
