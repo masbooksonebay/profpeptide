@@ -80,7 +80,7 @@ export default function LAPeptidesCouponPage() {
             <Cat label="Sexual Health"><P slug="pt-141">PT-141</P>, <P slug="vip">VIP</P></Cat>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Every LA Peptides batch undergoes third-party testing to a minimum purity of ≥99%, and LA Peptides publishes a full batch-specific Certificate of Analysis library (at lapeptides.net/product-certificates/) issued by the third-party lab Bioviridian &mdash; covering purity (RP-HPLC), identity (LC-MS), endotoxin, heavy metals, and sterility. Its peptides are sourced and manufactured within the United States under strict quality standards for research use.
+            Every LA Peptides batch undergoes third-party testing to a minimum purity of ≥99%, and LA Peptides publishes a full batch-specific Certificate of Analysis library (at lapeptides.net/product-certificates/) issued by the third-party lab Bioviridian &mdash; covering identity (LC-MS), purity (RP-HPLC at 214 nm), net content, endotoxin (USP &lt;85&gt;), heavy metals (USP &lt;232&gt;), and sterility (USP &lt;71&gt;), each result signed by the lab&apos;s principal chemist. Every certificate carries a per-record web verification code checkable at bioviridians.com/coa-search.html. Its peptides are sourced and manufactured within the United States under strict quality standards for research use.
           </p>
         </div>
 
@@ -105,7 +105,7 @@ export default function LAPeptidesCouponPage() {
           <div className="space-y-2">
             <FAQItem q="Does LA Peptides have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any LA Peptides order. This code is verified and maintained by Prof. Peptide." />
             <FAQItem q="How do I use the LA Peptides discount code?" a="Add your items to cart at lapeptides.net, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
-            <FAQItem q="Is LA Peptides third-party tested?" a="Yes. Every LA Peptides batch undergoes third-party testing to a minimum purity of ≥99%, and LA Peptides publishes a full batch-specific Certificate of Analysis library at lapeptides.net/product-certificates/, issued by the third-party lab Bioviridian — covering purity (RP-HPLC), identity (LC-MS), endotoxin, heavy metals, and sterility." />
+            <FAQItem q="Is LA Peptides third-party tested?" a="Yes. Every LA Peptides batch undergoes third-party testing to a minimum purity of ≥99%, and LA Peptides publishes a full batch-specific Certificate of Analysis library at lapeptides.net/product-certificates/, issued by the third-party lab Bioviridian — covering identity (LC-MS), purity (RP-HPLC), endotoxin (USP <85>), heavy metals (USP <232>), and sterility (USP <71>), each with a per-record web verification code checkable at bioviridians.com/coa-search.html." />
             <FAQItem q="Where does LA Peptides ship from?" a="LA Peptides sources and manufactures its peptides within the United States and ships domestically with fast, discreet, trackable shipping." />
             <FAQItem q="What does LA Peptides carry?" a="A catalog of 70+ research peptides across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator categories, in vial, spray, and capsule formats." />
           </div>

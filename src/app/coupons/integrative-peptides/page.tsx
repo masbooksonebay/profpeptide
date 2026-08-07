@@ -43,7 +43,7 @@ export default function IntegrativePeptidesCouponPage() {
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Integrative Peptides was founded in 2018 with a mission to make advanced peptide therapies accessible without needles or high costs. They specialize in oral peptide formulations designed for physician use and patient access &mdash; a key differentiator from most research peptide vendors who sell injectable lyophilized powders. They use FDA-compliant manufacturing and independent third-party lab testing to verify &ge;99% purity on every batch, screening for heavy metals, microbials, and other contaminants. Popular compounds by research area:
+ Integrative Peptides was founded in 2018 with a mission to make advanced peptide therapies accessible without needles or high costs. They specialize in oral peptide formulations designed for physician use and patient access &mdash; a key differentiator from most research peptide vendors who sell injectable lyophilized powders. Integrative states that it uses FDA-compliant manufacturing and independent third-party lab testing to a &ge;99% purity standard on every batch, screening for heavy metals, microbials, and other contaminants. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -88,7 +88,7 @@ export default function IntegrativePeptidesCouponPage() {
  />
  <FAQItem
  q="Are Integrative Peptides products third-party tested?"
- a="Yes, every batch is independently tested to ≥99% purity and screened for heavy metals, residual solvents, and endotoxins. Manufacturing is FDA-compliant."
+ a="Integrative states that every batch is independently third-party tested to ≥99% purity and screened for heavy metals, residual solvents, and endotoxins, and that its manufacturing is FDA-compliant."
  />
  <FAQItem
  q="Where does Integrative Peptides ship?"

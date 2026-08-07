@@ -211,7 +211,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://lapeptides.net/?ref=xocwamxz",
     detailPage: "/coupons/la-peptides",
-    facts: { coa: "per-batch", labName: "Bioviridian", purityStandard: "99%+" },
+    facts: { coa: "per-batch", labName: "Bioviridian", purityStandard: "99%+", testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin (USP <85>), heavy metals (USP <232>), sterility (USP <71>)" },
   },
   "mile-high-compounds": {
     name: "Mile High Compounds",

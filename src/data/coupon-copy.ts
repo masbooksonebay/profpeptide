@@ -34,7 +34,7 @@ export const couponDifferentiator: Record<string, string> = {
   "glacier-aminos": "Batch-traceable COAs and cold-chain shipping.",
   "ignite-peptides": "Janoshik & Freedom Diagnostics COAs; 99%+ purity.",
   "integrative-peptides": "Physician-trusted oral peptide supplements.",
-  "la-peptides": "≥99% purity, batch third-party tested, made in USA.",
+  "la-peptides": "≥99% purity, Bioviridian batch COAs, made in USA.",
   "legendary-peptides": "Freedom Diagnostics COAs on every product page.",
   "licensed-peptides": "US-made; HPLC/MS to 99%+, public COA library.",
   "limitless-biotech": "90+ compounds; HPLC/LC-MS tested; 30-day refund.",
