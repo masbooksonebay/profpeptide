@@ -192,7 +192,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
     detailPage: "/coupons/glacier-aminos",
-    facts: { coa: "per-batch", labName: "Forever Young Pharmacy, Freedom Diagnostics", testMethods: "RP-HPLC, HPLC-UV/MS", contaminants: "Endotoxin", coldChain: true },
+    facts: { coa: "per-batch", labName: "Forever Young Pharmacy, Freedom Diagnostics, Kovera Labs", testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin; sterility + heavy metals on Kovera lots", coldChain: true },
     editorsPick: true,
   },
   "ignite-peptides": {
