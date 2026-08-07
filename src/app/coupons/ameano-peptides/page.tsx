@@ -110,7 +110,7 @@ export default function AmeanoPeptidesCouponPage() {
             </p>
           </div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Ameano Peptides is third-party lab tested to a published 99%+ purity standard, and every product carries its own published Certificate of Analysis. Each product listing links an individual &ldquo;View COA&rdquo; document, independently third-party verified, so researchers can confirm purity and identity on a per-product basis before ordering rather than relying on a single representative certificate.
+            Every Ameano Peptides product links its own Certificate of Analysis &mdash; a batch-numbered Test Report from Janoshik, an independent analytical lab (janoshik.com). Each report quantifies peptide content across multiple vials and reports purity by HPLC, and every report is independently checkable at janoshik.com/verify/ using a unique key printed on it (alongside a QR code). Ameano states a &ge;99% purity standard for its catalog, and because each COA is a lot-numbered Janoshik report carrying its own verification key, researchers can confirm it directly with the lab rather than relying on a single representative certificate.
           </p>
         </div>
 
@@ -151,11 +151,11 @@ export default function AmeanoPeptidesCouponPage() {
             />
             <FAQItem
               q="What testing does Ameano Peptides do?"
-              a="Ameano Peptides is third-party lab tested to a published 99%+ purity standard, with an individual, published Certificate of Analysis for every product. Each product listing links its own independently third-party-verified COA."
+              a="Ameano's products are tested by Janoshik, an independent analytical lab. Each product links a batch-numbered Janoshik Test Report that quantifies peptide content across multiple vials and reports purity by HPLC, verifiable at janoshik.com/verify/ with a unique key printed on the report. Ameano states a ≥99% purity standard for its catalog."
             />
             <FAQItem
               q="Does Ameano Peptides provide Certificates of Analysis?"
-              a="Yes. Every product has its own published Certificate of Analysis, linked directly on the product listing as a 'View COA' document, independently third-party verified for purity and identity."
+              a="Yes. Every product links its own Certificate of Analysis — a batch-numbered Test Report from Janoshik — as a 'View COA' document. Each report carries a unique key and QR code and is independently verifiable at janoshik.com/verify/."
             />
           </div>
         </div>

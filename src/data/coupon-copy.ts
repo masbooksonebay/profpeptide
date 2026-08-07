@@ -18,9 +18,9 @@
  */
 export const couponDifferentiator: Record<string, string> = {
   "aero-peptides": "≥98% purity, ISO-lab tested; COA on request.",
-  "almighty-peptides": "HPLC/mass-spec tested; Buy 1 Get 1 FREE on most.",
+  "almighty-peptides": "Bioviridian-tested; Buy 1 Get 1 FREE on most.",
   "alpha-peptides": "Per-lot 5-test panel, ISO 17025 lab, public COAs.",
-  "ameano-peptides": "Lab-tested to 99%+ purity; published COA/product.",
+  "ameano-peptides": "Janoshik-tested to 99%+; COA on every product.",
   "amino-club": "ISO-17025 tested peptides with a COA on every batch.",
   "amino-x": "US-based, third-party tested research peptides; COA on request.",
   "ascension-peptides": "99%+ multi-stage tested; blend & stack range.",

@@ -104,7 +104,7 @@ export default function AlmightyPeptidesCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- All Almighty Peptides products are independently tested via third-party laboratories using both HPLC (High-Performance Liquid Chromatography) for purity verification and Mass Spectrometry for molecular identity confirmation. This dual-method approach verifies both the purity and the exact identity of each compound. Certificates of Analysis are available for products.
+ Almighty Peptides publishes Certificates of Analysis from Bioviridian, an independent HPLC-MS lab (bioviridians.com). Each certificate confirms identity by MALDI-MS, purity by RP-HPLC at 214 nm, and peptide content by HPLC quantitation, reproduces the HPLC chromatogram and MALDI-MS mass spectrum, and carries a web verification code checkable at bioviridians.com/coa-search.html. The published certificates are representative Bioviridian documents &mdash; issued for compounds such as Tirzepatide, BPC-157, and TB-500, with the lot field marked NA &mdash; rather than a batch-matched COA tied to each order.
  </p>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
  Almighty Peptides distinguishes itself from most research peptide suppliers by offering compounds across three distinct delivery formats: lyophilized injectable peptides, capsules, and research liquids. Their capsule catalog includes BPC-157, GHK-Cu, Methylene Blue, MK-677, LGD-4033, and SLU-PP-332. Their liquids catalog spans SARMs in liquid form, hormone modulators including aromatase inhibitors and SERMs, sexual health compounds, and metabolic research chemicals &mdash; making Almighty Peptides one of the most format-diverse research compound suppliers available.
@@ -149,7 +149,7 @@ export default function AlmightyPeptidesCouponPage() {
  />
  <FAQItem
  q="Is Almighty Peptides third-party tested?"
- a="Yes. All Almighty Peptides products are independently tested using both HPLC for purity verification and Mass Spectrometry for molecular identity confirmation. COA reports are available for products."
+ a="Yes — by Bioviridian, an independent HPLC-MS lab. Its certificates confirm identity by MALDI-MS, purity by RP-HPLC (214 nm), and content by HPLC quantitation, and carry a web verification code checkable at bioviridians.com/coa-search.html. The published certificates are representative Bioviridian COAs (for compounds such as Tirzepatide, BPC-157, and TB-500, with the lot field marked NA) rather than a batch-matched document for each order."
  />
  <FAQItem
  q="What delivery formats does Almighty Peptides offer?"

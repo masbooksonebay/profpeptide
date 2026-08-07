@@ -70,7 +70,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.almightypeptides.com/?sld=profpeptide",
     detailPage: "/coupons/almighty-peptides",
-    facts: { testMethods: "HPLC, mass spec" },
+    facts: { labName: "Bioviridian", testMethods: "RP-HPLC, MALDI-MS" },
   },
   "alpha-peptides": {
     name: "Alpha Peptides",
@@ -88,7 +88,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ameanopeptides.com/?ref=hmvyvxhr",
     detailPage: "/coupons/ameano-peptides",
-    facts: { purityStandard: "≥99%", coa: "per-product" },
+    facts: { purityStandard: "≥99%", coa: "per-product", labName: "Janoshik", testMethods: "HPLC, LC-MS" },
   },
   "amino-club": {
     name: "Amino Club",
