@@ -121,7 +121,7 @@ export function VendorProductGrid({ rows, discountPct, shopUrlFor }: VendorProdu
           <div>Compound</div>
           <div>Size</div>
           <div>
-            Price
+            Price{" "}
             <span className="block font-normal normal-case tracking-normal text-[10px] text-gray-400 dark:text-slate-500">after {discountPct}% code</span>
           </div>
           <div>Stock</div>

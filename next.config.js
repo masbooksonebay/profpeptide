@@ -110,6 +110,21 @@ const nextConfig = {
         destination: "/coupons",
         permanent: true,
       },
+      // REMOVED vendors (entry deleted, not `retired`): a126305 dropped Nordic Peptides and
+      // ec23364 dropped Apollo Peptide Sciences (dead website), leaving no page — so their
+      // still-indexed URLs 404'd. Redirect them to the hub to consolidate the residual link
+      // equity, matching the retired-pair handling above. No page.tsx exists, so nothing to
+      // exclude from the sitemap/index (both derive from the registry, which no longer lists them).
+      {
+        source: "/coupons/nordic-peptides{/}?",
+        destination: "/coupons",
+        permanent: true,
+      },
+      {
+        source: "/coupons/apollo-peptide-sciences{/}?",
+        destination: "/coupons",
+        permanent: true,
+      },
       // Normalize ANY trailing-slash URL to its canonical no-trailing-slash form
       // with a single clean 301. Kept LAST so the specific redirects above match
       // first; pairs with skipTrailingSlashRedirect above.
