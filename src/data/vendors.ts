@@ -134,7 +134,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://go.biolongevitylabs.com/aff_c?offer_id=1&aff_id=2702",
     detailPage: "/coupons/biolongevity-labs",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", labName: "BioRegen", purityStandard: "99%+", testMethods: "LC-MS with UV" },
   },
   // BioPure's discount is 5% off — the LOWEST on the roster. That IS the discount; do NOT
   // round it up anywhere. Site states ">99%" purity (homepage, stated consistently) and a COA
@@ -174,7 +174,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ezpeptides.com/?ref=nldbbgvs",
     detailPage: "/coupons/ez-peptides",
-    facts: { coa: "per-batch", labName: "Janoshik" },
+    facts: { coa: "per-batch", labName: "Janoshik", testMethods: "HPLC, LC-MS" },
   },
   "fusion-peptide": {
     name: "Fusion Peptide",

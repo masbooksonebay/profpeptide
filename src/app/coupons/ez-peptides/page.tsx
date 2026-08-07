@@ -110,7 +110,7 @@ export default function EZPeptidesCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Every EZ Peptides batch is third-party tested by Janoshik, an independent analytical laboratory, and ships lyophilized from a U.S.-based facility in Albuquerque under standardized, sterile conditions. Each compound is analyzed for identity and purity, and a Certificate of Analysis accompanies every batch so researchers can confirm what they are working with before use.
+ Every EZ Peptides batch is third-party tested by Janoshik, an independent analytical laboratory, and ships lyophilized from a U.S.-based facility in Albuquerque under standardized, sterile conditions. Each batch-numbered Janoshik Test Report quantifies peptide content across multiple vials and reports purity by HPLC, and every report is independently checkable at janoshik.com/verify/ using a unique key printed on it (alongside a QR code), so researchers can confirm the specific lot before use.
  </p>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
  Because the analysis is performed by an outside laboratory rather than in-house, the results carry independent, conflict-free verification. Each COA documents the identity and purity of its specific lot, giving researchers a lot-level record that supports consistency and reproducibility across research settings.
@@ -151,7 +151,7 @@ export default function EZPeptidesCouponPage() {
  />
  <FAQItem
  q="Is EZ Peptides third-party tested?"
- a="Yes. Every EZ Peptides batch is independently third-party tested. A Certificate of Analysis is available for every batch, allowing researchers to verify purity and consistency."
+ a="Yes — by Janoshik, an independent analytical laboratory. Each batch-numbered Janoshik Test Report quantifies peptide content across multiple vials and reports purity by HPLC, and carries a unique key and QR code that independently verify it at janoshik.com/verify/."
  />
  <FAQItem
  q="How fast does EZ Peptides ship?"
