@@ -110,7 +110,7 @@ export default function MidwestPeptideCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Every product is research-use-only and verified to 99%+ purity, independently third-party lab-tested, with a Certificate of Analysis included for each product.
+            Every product ships research-use-only with a batch-specific Certificate of Analysis published on its product page. Current batches are tested by ILS Laboratories (San Diego, CA; ISO/IEC 17025-accredited) under a full QC panel &mdash; identity by mass spectrometry, purity by RP-HPLC with UV detection (99%+), quantity, sterility (PCR), endotoxins (LAL), heavy metals (ICP-MS, USP &lt;233&gt;), and a fentanyl screen &mdash; and each COA carries a QR code and access code that verify it at portal.ils-lab.com. Some earlier batches were tested by Freedom Diagnostics (identity by LC-MS, purity by HPLC-UV), verifiable by search code at FreedomDiagnosticsTesting.com.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Midwest Peptide ships free on every order, with same-day UPS shipping from a US facility &mdash; most domestic deliveries arrive within 2&ndash;3 business days. Flexible payment options include Zelle and Apple Cash (an extra 5% off when you pay with either), and bulk pricing discounts run up to 18% off. Questions can be directed to info@midwestpeptide.com.
@@ -151,7 +151,7 @@ export default function MidwestPeptideCouponPage() {
             />
             <FAQItem
               q="Is Midwest Peptide third-party tested?"
-              a="Yes. Midwest Peptide's research-use-only peptides are verified to 99%+ purity and independently third-party lab-tested, with a Certificate of Analysis included for every product."
+              a="Yes. Each product ships with a batch-specific Certificate of Analysis published on its product page. Current batches are tested by ILS Laboratories (San Diego, CA; ISO/IEC 17025-accredited) under a full QC panel — identity by mass spectrometry, purity by RP-HPLC/UV (99%+), quantity, sterility (PCR), endotoxins (LAL), heavy metals (ICP-MS, USP <233>), and a fentanyl screen — with each COA QR-verifiable at portal.ils-lab.com. Some earlier batches were tested by Freedom Diagnostics (HPLC-UV purity, LC-MS identity), verifiable by search code at FreedomDiagnosticsTesting.com."
             />
             <FAQItem
               q="How does Midwest Peptide ship?"

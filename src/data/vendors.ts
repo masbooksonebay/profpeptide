@@ -288,7 +288,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://midwestpeptide.com?ref=PROF10",
     detailPage: "/coupons/midwest-peptide",
-    facts: { purityStandard: "≥99%", coa: "per-product" },
+    facts: { coa: "per-batch", labName: "ILS Laboratories, Freedom Diagnostics", labAccreditation: "ISO/IEC 17025", purityStandard: "≥99%", testMethods: "RP-HPLC-UV, mass spectrometry", contaminants: "Heavy metals (ICP-MS, USP <233>), endotoxin (LAL), sterility (PCR), fentanyl screen" },
   },
   "oasis-labs": {
     name: "Oasis Labs",
@@ -495,7 +495,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://licensedpeptides.com/ref/60815/",
     detailPage: "/coupons/licensed-peptides",
-    facts: { coa: "per-batch", labName: "Vanguard Laboratory", labAccreditation: "ISO/IEC 17025:2017", purityStandard: "99%+", testMethods: "HPLC-UV/VIS", contaminants: "Heavy metals (ICP-MS), endotoxin (LAL), sterility (USP <71>)" },
+    facts: { coa: "per-batch", labName: "Vanguard Laboratory", labAccreditation: "ISO/IEC 17025:2017", purityStandard: "99%+", testMethods: "HPLC-UV/VIS", contaminants: "Heavy metals (ICP-MS), endotoxin (LAL), sterility (USP <71>), residual solvents (GC-MS), TFA (ion chromatography)" },
   },
 };
 
