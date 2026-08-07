@@ -192,7 +192,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
     detailPage: "/coupons/glacier-aminos",
-    facts: { coa: "per-batch", labName: "Kovera Labs", testMethods: "Identity, mass, endotoxin", contaminants: "Endotoxin", coldChain: true },
+    facts: { coa: "per-batch", labName: "Forever Young Pharmacy, Freedom Diagnostics", testMethods: "RP-HPLC, HPLC-UV/MS", contaminants: "Endotoxin", coldChain: true },
     editorsPick: true,
   },
   "ignite-peptides": {
@@ -202,7 +202,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ignitepeptides.com/ref/profpeptide/",
     detailPage: "/coupons/ignite-peptides",
-    facts: { coa: "per-product", purityStandard: "99%+", labName: "Janoshik" },
+    facts: { coa: "per-product", purityStandard: "99%+", labName: "Janoshik, Freedom Diagnostics", testMethods: "HPLC, LC-MS" },
   },
   "la-peptides": {
     name: "LA Peptides",

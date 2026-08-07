@@ -32,7 +32,7 @@ export const couponDifferentiator: Record<string, string> = {
   "ez-peptides": "Janoshik-tested per batch; same-day shipping; 4.7/5.",
   "fusion-peptide": "Topical and nasal-spray peptide formats available.",
   "glacier-aminos": "Batch-traceable COAs and cold-chain shipping.",
-  "ignite-peptides": "99%+ purity, two-stage independent testing, COA/product.",
+  "ignite-peptides": "Janoshik & Freedom Diagnostics COAs; 99%+ purity.",
   "integrative-peptides": "Physician-trusted oral peptide supplements.",
   "la-peptides": "≥99% purity, batch third-party tested, made in USA.",
   "legendary-peptides": "Freedom Diagnostics COAs on every product page.",
