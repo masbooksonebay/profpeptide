@@ -256,7 +256,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://integrativepeptides.com/affiliate/profpeptide/",
     detailPage: "/coupons/integrative-peptides",
-    facts: { purityStandard: "≥99%", contaminants: "Heavy metals, endotoxin, residual solvents" },
+    facts: { purityStandard: "≥99%" },
   },
   // Legendary publishes ONLY a generic "every product is third-party tested" claim — no COA
   // library, no named/accredited lab, and no vendor-stated purity standard (the "99% pure" on
