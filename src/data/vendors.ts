@@ -125,7 +125,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://behemothlabz.com/aff/208/",
     detailPage: "/coupons/behemoth-labz",
-    facts: { coa: "per-batch", labName: "Colmaric Analyticals" },
+    facts: { coa: "per-batch", labName: "Colmaric Analyticals", testMethods: "HPLC" },
   },
   "biolongevity-labs": {
     name: "Biolongevity Labs",
@@ -156,7 +156,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://biocollexresearch.com/?ref=profpeptidehq",
     detailPage: "/coupons/biocollex",
-    facts: { coa: "per-batch", purityStandard: "99%" },
+    facts: { coa: "per-batch", purityStandard: "99%", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
   },
   "crush-research": {
     name: "Crush Research",

@@ -53,7 +53,7 @@ export default function BioCollexCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            BioCollex is a U.S.-based peptide supplier headquartered in Oakland, Maryland, focused on providing research-grade compounds for laboratory use. All products are synthesized by a C-GMP certified manufacturer and required to meet 99% purity through independent third-party lab testing. Every batch ships with a Certificate of Analysis for full traceability and reproducibility.
+            BioCollex is a U.S.-based peptide supplier headquartered in Oakland, Maryland, focused on providing research-grade compounds for laboratory use. All products are synthesized by a C-GMP certified manufacturer and independently tested to a 99% purity standard by Freedom Diagnostics (FreedomDiagnosticsTesting.com). Every batch ships with a batch-matched Certificate of Analysis &mdash; reporting purity by HPLC-UV, identity by LC-MS, and net peptide content, with a per-lot accession and search code searchable at FreedomDiagnosticsTesting.com &mdash; for full traceability and reproducibility.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             BioCollex is known for fast fulfillment &mdash; all orders placed before 3 PM EST ship same day, with delivery in 2&ndash;3 business days. Free shipping is available on U.S. orders over $200. The company emphasizes competitive pricing and responsive 24/7 customer support.
@@ -144,7 +144,7 @@ export default function BioCollexCouponPage() {
             />
             <FAQItem
               q="Is BioCollex third-party tested?"
-              a="Yes. All BioCollex products are required to meet 99% purity through independent third-party lab testing. Every batch ships with a Certificate of Analysis."
+              a="Yes — by Freedom Diagnostics, an independent US lab. Every batch ships with a batch-matched Certificate of Analysis reporting purity by HPLC-UV (≥99%), identity by LC-MS, and net peptide content, each carrying a per-lot search code searchable at FreedomDiagnosticsTesting.com."
             />
             <FAQItem
               q="How fast does BioCollex ship?"

@@ -123,7 +123,7 @@ export default function BehemothLabzCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Behemoth Labz conducts third-party testing on every product through Colmaric Analyticals LLC, an accredited analytical laboratory in Goodlettsville, Tennessee. All test results are published publicly, with Certificates of Analysis consistently returning purity results above 99% across their compound catalog.
+            Behemoth Labz conducts third-party testing on every product through Colmaric Analyticals LLC, an independent analytical laboratory in Goodlettsville, Tennessee. Its published Certificates of Analysis confirm identity and assay by HPLC, are signed by the laboratory manager, and are posted publicly, with purity results above 99% across the compound catalog.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Behemoth Labz products are available in multiple forms including liquid solution, capsules, and powder. Their catalog spans SARMs, peptide blends, nootropics, prohormones, and post-cycle therapy compounds &mdash; offering researchers a broad selection across biological research areas. The company also offers a subscription program with recurring discounts for regular researchers.
@@ -149,10 +149,10 @@ export default function BehemothLabzCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="What products does Behemoth Labz carry?" a="Behemoth Labz carries research products across SARMs, peptides, nootropics, prohormones, and PCT categories. Their SARMs catalog includes RAD-140, MK-677, LGD-4033, Ostarine, YK-11, S-23, GW-501516, and SR-9009. Nootropics include Noopept, Phenibut, and racetam-class compounds. Their peptide selection includes individual compounds and pre-formulated research blends. Products are available in liquid, capsule, and powder forms. All products are third-party tested by Colmaric Analyticals with published COAs." />
+            <FAQItem q="What products does Behemoth Labz carry?" a="Behemoth Labz carries research products across SARMs, peptides, nootropics, prohormones, and PCT categories. Their SARMs catalog includes RAD-140, MK-677, LGD-4033, Ostarine, YK-11, S-23, GW-501516, and SR-9009. Nootropics include Noopept, Phenibut, and racetam-class compounds. Their peptide selection includes individual compounds and pre-formulated research blends. Products are available in liquid, capsule, and powder forms. All products are third-party tested by Colmaric Analyticals (Goodlettsville, TN), with published COAs confirming identity and assay by HPLC." />
             <FAQItem q="Does Behemoth Labz have a discount code?" a={`Yes. Use code PROF10 at checkout to save 10% on your entire Behemoth Labz order. This code is verified and maintained by Prof. Peptide and valid as of ${CODES_VERIFIED_DATE}.`} />
             <FAQItem q="How do I use the Behemoth Labz discount code?" a="Add your items to cart at behemothlabz.com, proceed to checkout, and enter PROF10 in the discount code field. The 10% discount will be applied to your order total." />
-            <FAQItem q="How is Behemoth Labz third-party tested?" a="Every Behemoth Labz product is tested by Colmaric Analyticals LLC, an accredited laboratory in Goodlettsville, Tennessee. Certificates of Analysis are published publicly and consistently show purity results above 99%." />
+            <FAQItem q="How is Behemoth Labz third-party tested?" a="Every Behemoth Labz product is third-party tested by Colmaric Analyticals LLC, an independent laboratory in Goodlettsville, Tennessee. Its published Certificates of Analysis confirm identity and assay by HPLC and show purity results above 99%." />
             <FAQItem q="Does Behemoth Labz offer free shipping?" a="Yes. Behemoth Labz offers free domestic shipping on US orders over $100. International shipping is available worldwide at additional rates." />
             <FAQItem q="How long has Behemoth Labz been in business?" a="Behemoth Labz was founded in 2014, giving them over a decade of experience in the research compound supply industry." />
           </div>
