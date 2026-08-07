@@ -66,7 +66,7 @@ export default function IntegrativePeptidesCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Their product catalog includes <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, TB4-Frag, <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, KPV, Thymogen Alpha-1, CerebroPrep, CogniPep, PinealPep, and other peptide complexes &mdash; all in oral and convenient formats. Every batch undergoes independent third-party laboratory testing and is screened for heavy metals, residual solvents, and endotoxins. This oral-first approach makes Integrative Peptides particularly relevant for practitioners and patients who prefer non-injectable administration routes.
+ Their product catalog includes <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, TB4-Frag, <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, KPV, Thymogen Alpha-1, CerebroPrep, CogniPep, PinealPep, and other peptide complexes &mdash; all in oral and convenient formats. Integrative states that every batch undergoes independent third-party laboratory testing and is screened for heavy metals, residual solvents, and endotoxins. This oral-first approach makes Integrative Peptides particularly relevant for practitioners and patients who prefer non-injectable administration routes.
  </p>
  </div>
 
