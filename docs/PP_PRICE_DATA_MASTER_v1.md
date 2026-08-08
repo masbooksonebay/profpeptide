@@ -2809,7 +2809,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: BioPure Peptides
 - **slug:** biopure-peptides | **code:** PROFPEPTIDE | **discount:** 5% off | **url:** biopurepeptides.com
-- **traffic:** (not pulled) | **pulled:** August 4 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** No product-level sale (on_sale=false across all 38); re-verify at write.
 
 ### Single compounds
@@ -2829,11 +2829,15 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | MOTS-C | 10mg | $79.99 | $8.00 | — | ✓ | product/mots-c/ |
 | NAD+ | 1000mg | $169.99 | $0.17 | — | ✓ | product/nad/ |
 | PT-141 | 10mg | $64.99 | $6.50 | — | ✓ | product/pt-141/ |
+| Retatrutide | 10mg | $179.99 | $18.00 | — | ✓ | product/reta-10mg/ |
+| Retatrutide | 30mg | $279.99 | $9.33 | — | ✓ | product/reta-30mg/ |
 | Selank | 5mg | $49.99 | $10.00 | — | ✓ | product/selank-5mg/ |
 | Selank | 20mg | $74.99 | $3.75 | — | ✓ | product/selank-20mg/ |
 | Semax | 20mg | $84.99 | $4.25 | — | ✓ | product/semax-20mg/ |
 | SS-31 | 10mg | $99.99 | $10.00 | — | ✓ | product/ss-31/ |
 | TB-500 | 10mg | $104.99 | $10.50 | — | ✓ | product/tb500-thymosin-beta-4-10mg/ |
+| Tesamorelin | 6mg | $74.99 | $12.50 | — | ✗ | product/tesamorelin-6mg/ |
+| Tesamorelin | 10mg | $99.99 | $10.00 | — | ✓ | product/tesamorelin-10mg/ |
 | Thymalin [backlog] | 5mg | $84.99 | $17.00 | — | ✓ | product/thymosin-alpha-1/ |
 | Thymalin [backlog] | 10mg | $109.99 | $11.00 | — | ✓ | product/ta1-complex-thymalin/ |
 
@@ -2842,8 +2846,10 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | --- | --- | --- | --- | --- | --- |
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $109.99 | not published | ✓ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | — | $139.99 | not published | ✓ |
+| Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 10mg | $94.99 | 5/5 (published) | ✓ |
 
 ### Sprays: none
-### Excluded: manually excluded — 'BPC Wolverine + KPV - 14.5mg' is a 3-component blend (Wolverine BPC-157/TB-500 + KPV) that the shared classifier mis-reads as a KPV 14.5mg SINGLE ($129.99 = $8.97/mg of 'KPV', wrong). Not in the blend registry, so excluded here rather than shipped as a bad single. (TSM = Tesamorelin by its th9507 slug is separately left undecoded/excluded.), no parseable size (Rule 4), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: manually excluded — 'BPC Wolverine + KPV - 14.5mg' is a 3-component blend (Wolverine BPC-157/TB-500 + KPV) that the shared classifier mis-reads as a KPV 14.5mg SINGLE ($129.99 = $8.97/mg of 'KPV', wrong). Not in the blend registry, so excluded here rather than shipped as a bad single., no parseable size (Rule 4), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
+
