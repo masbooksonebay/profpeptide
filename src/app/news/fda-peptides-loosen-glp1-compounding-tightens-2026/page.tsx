@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
+import RelatedLinks from "@/components/RelatedLinks";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
@@ -116,6 +117,13 @@ export default function FDAPeptidesLoosenGLP1TightensPage() {
             Prof. Peptide&rsquo;s position is unchanged. We report on these compounds as research chemicals; a compounding recommendation or a bulk-list proposal is a regulatory-process event, not a safety, efficacy, or approval determination. Nothing here should be read as a statement that any of these substances is safe, effective, or approved for human use. We&rsquo;ll update this article as the FDA acts on either track.
           </p>
         </div>
+
+        <RelatedLinks items={[
+          { href: "/peptides/bpc-157", label: "BPC-157" },
+          { href: "/peptides/tb-500", label: "TB-500" },
+          { href: "/peptides/mots-c", label: "MOTS-C" },
+          { href: "/news/fda-pcac-peptide-vote-july-2026", label: "The FDA panel’s July vote, in detail" },
+        ]} />
       </div>
     </>
   );
