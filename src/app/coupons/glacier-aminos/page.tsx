@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
@@ -10,25 +10,6 @@ import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGri
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
 
-function FAQItem({ q, a }: { q: string; a: string }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="border border-gray-100 dark:border-slate-700 rounded-xl overflow-hidden">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-slate-800 transition-colors"
-      >
-        <span className="text-sm font-medium text-[#16181B] dark:text-slate-100 pr-4">{q}</span>
-        <span className="text-[#3A759F] flex-shrink-0 text-lg">{open ? "−" : "+"}</span>
-      </button>
-      {open && (
-        <div className="px-5 pb-4 text-sm text-gray-600 dark:text-slate-300 leading-relaxed border-t border-gray-50 dark:border-slate-800 pt-3">
-          {a}
-        </div>
-      )}
-    </div>
-  );
-}
 
 export default function GlacierAminosCouponPage() {
   const v = vendors["glacier-aminos"];

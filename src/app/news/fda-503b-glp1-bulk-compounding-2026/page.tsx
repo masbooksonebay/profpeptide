@@ -40,17 +40,17 @@ export default function FDA503BGLP1BulkCompounding2026Page() {
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">
           FDA Moves to Bar Outsourcing Facilities From Bulk-Compounding Semaglutide, Tirzepatide, and Liraglutide
         </h1>
+        <div className="border-l-4 border-[#3A759F] pl-4 py-1 mb-6 text-sm leading-relaxed">
+          <p className="text-[#16181B] dark:text-slate-100">
+            <strong>Update &mdash; August 8, 2026:</strong> The comment window described below was extended after this article ran. The original end-of-June deadline was pushed to <strong>July 30, 2026</strong> by a June 26 extension notice (FR 2026-12937), and that window has since closed. The action remains a <strong>proposal</strong> &mdash; the FDA has not issued a final rule. For the fuller picture, see{" "}
+            <Link href="/news/fda-peptides-loosen-glp1-compounding-tightens-2026" className="text-[#3A759F] hover:underline">Peptides Loosen, GLP-1 Compounding Tightens</Link>.
+          </p>
+        </div>
         <p className="text-base font-medium text-gray-600 dark:text-slate-300 leading-relaxed mb-6">
           The agency found no clinical need to keep the three leading GLP-1 drugs available for large-scale 503B bulk compounding. A public comment window runs through June 29 &mdash; here&rsquo;s what the proposal does, and doesn&rsquo;t, cover.
         </p>
 
         <div className="space-y-6 text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-          <div className="border-l-4 border-[#3A759F] pl-4 py-1">
-            <p className="text-[#16181B] dark:text-slate-100">
-              <strong>Update &mdash; August 8, 2026:</strong> The comment window described below was extended after this article ran. The original end-of-June deadline was pushed to <strong>July 30, 2026</strong> by a June 26 extension notice (FR 2026-12937), and that window has since closed. The action remains a <strong>proposal</strong> &mdash; the FDA has not issued a final rule. For the fuller picture, see{" "}
-              <Link href="/news/fda-peptides-loosen-glp1-compounding-tightens-2026" className="text-[#3A759F] hover:underline">Peptides Loosen, GLP-1 Compounding Tightens</Link>.
-            </p>
-          </div>
           <p>
             On April 30, 2026, the FDA proposed to exclude{" "}
             <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">semaglutide</Link>,{" "}

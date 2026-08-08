@@ -17,7 +17,8 @@
     "check:counts": "node scripts/check-counts.mjs",
     "check:prices": "node scripts/check-prices.mjs",
     "check:doc-integrity": "node scripts/check-doc-integrity.mjs",
-    "check:prices-sync": "node scripts/check-prices-sync.mjs"
+    "check:prices-sync": "node scripts/check-prices-sync.mjs",
+    "check:news-tags": "node scripts/check-news-tags.mjs"
   },
   "dependencies": {
     "fuse.js": "^7.3.0",

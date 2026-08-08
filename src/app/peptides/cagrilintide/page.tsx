@@ -1,4 +1,6 @@
 import Link from "next/link";
+import ProfileNews from "@/components/ProfileNews";
+import { articlesForPeptide } from "@/data/news";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
@@ -554,6 +556,9 @@ const sections = [
     ),
   },
 ];
+
+const peptideNews = articlesForPeptide("cagrilintide");
+if (peptideNews.length) sections.push({ id: "news", title: "In the News", node: <ProfileNews articles={peptideNews} /> });
 
 const tocSections = [
   { id: "overview", title: "What is Cagrilintide?" },
