@@ -2510,7 +2510,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Peptide Giants
 - **slug:** peptide-giants | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** peptidegiants.com
-- **traffic:** (not pulled) | **pulled:** August 2 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** Check product-level sale_price each refresh; PP code stacks.
 
 ### Single compounds
@@ -2567,6 +2567,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | PG-2TZ [coded, UNVERIFIED] | 120mg | $236.49 | $1.97 | $473.00 | ✓ | product/pg-2tz/ |
 | PG-3RT [coded, UNVERIFIED] | 5mg | $65.99 | $13.20 | $132.00 | ✓ | product/pg-3rt/ |
 | PG-3RT [coded, UNVERIFIED] | 10mg | $76.99 | $7.70 | $154.00 | ✓ | product/pg-3rt/ |
+| PG-3RT [coded, UNVERIFIED] | 20mg | $129.99 | $6.50 | $260.00 | ✓ | product/pg-3rt/ |
 | PG-3RT [coded, UNVERIFIED] | 30mg | $219.99 | $7.33 | $440.00 | ✓ | product/pg-3rt/ |
 | PG-3RT [coded, UNVERIFIED] | 40mg | $247.49 | $6.19 | $495.00 | ✓ | product/pg-3rt/ |
 | PG-3RT [coded, UNVERIFIED] | 60mg | $302.49 | $5.04 | $605.00 | ✓ | product/pg-3rt/ |
@@ -2594,14 +2595,14 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $60.49 | 5/5 (published) | ✓ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $82.49 | not published | ✓ |
 | KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $131.99 | not published | ✓ |
-| PG-3RT+C [coded, UNVERIFIED] |  | 10mg | $114.99 | not published | ✗ |
-| PG-3RT+C [coded, UNVERIFIED] |  | 20mg | $180.00 | not published | ✗ |
-| PG-3RT+C [coded, UNVERIFIED] |  | 30mg | $249.99 | not published | ✗ |
+| PG-3RT+C [coded, UNVERIFIED] |  | 10mg | $114.99 | not published | ✓ |
+| PG-3RT+C [coded, UNVERIFIED] |  | 20mg | $180.00 | not published | ✓ |
+| PG-3RT+C [coded, UNVERIFIED] |  | 30mg | $249.99 | not published | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $82.49 | not published | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 5mg | $49.49 | not published | ✓ |
 
 ### Sprays: none
-### Excluded: clinical/other, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: multi-vial kit / pack (by name), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
