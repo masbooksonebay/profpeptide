@@ -923,7 +923,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Oasis Labs
 - **slug:** oasis-labs | **code:** PROF15 | **discount:** 15% off | **url:** myoasislabs.com
-- **traffic:** (not pulled) | **pulled:** August 7 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** Product sale 7/54; code stacks.
 
 ### Single compounds
@@ -965,11 +965,9 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Semax | 10mg | $45.00 | $4.50 | — | ✓ | product/semax-10mg/ |
 | Sermorelin | 5mg | $49.00 | $9.80 | — | ✓ | product/sermorelin-5mg/ |
 | SLU-PP-332 [backlog] | 5mg | $74.50 | $14.90 | — | ✓ | product/slu-pp-332-5mg/ |
-| SLU-PP-332 [backlog] | 25mg | $139.00 | $5.56 | — | ✓ | product/slu-pp-332-250mcg-100ct/ |
 | SNAP-8 [backlog] | 10mg | $47.00 | $4.70 | — | ✓ | product/snap-8-10mg/ |
 | TB-500 | 10mg | $57.00 | $5.70 | — | ✓ | product/tb-500-10mg/ |
 | Tesamorelin | 10mg | $74.00 | $7.40 | — | ✓ | product/th9507-tesa-10mg/ |
-| Tesofensine [backlog] | 30mg | $223.50 | $7.45 | — | ✓ | product/tesofensine-500mcg-capsules-60ct/ |
 | Thymosin Alpha-1 | 10mg | $65.00 | $6.50 | — | ✓ | product/thymosin-alpha-10mg/ |
 
 ### Blends (total mg; ratio where published)
