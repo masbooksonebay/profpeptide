@@ -2546,13 +2546,13 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | PG-2TZ [coded, UNVERIFIED] | 30mg | $82.49 | $2.75 | $165.00 | ✓ | product/pg-2tz/ |
 | PG-2TZ [coded, UNVERIFIED] | 60mg | $126.49 | $2.11 | $253.00 | ✓ | product/pg-2tz/ |
 | PG-2TZ [coded, UNVERIFIED] | 120mg | $236.49 | $1.97 | $473.00 | ✓ | product/pg-2tz/ |
-| PG-3RT [coded, UNVERIFIED] | 5mg | $65.99 | $13.20 | $132.00 | ✓ | product/pg-3rt/ |
-| PG-3RT [coded, UNVERIFIED] | 10mg | $76.99 | $7.70 | $154.00 | ✓ | product/pg-3rt/ |
-| PG-3RT [coded, UNVERIFIED] | 20mg | $129.99 | $6.50 | $260.00 | ✓ | product/pg-3rt/ |
-| PG-3RT [coded, UNVERIFIED] | 30mg | $219.99 | $7.33 | $440.00 | ✓ | product/pg-3rt/ |
-| PG-3RT [coded, UNVERIFIED] | 40mg | $247.49 | $6.19 | $495.00 | ✓ | product/pg-3rt/ |
-| PG-3RT [coded, UNVERIFIED] | 60mg | $302.49 | $5.04 | $605.00 | ✓ | product/pg-3rt/ |
 | PT-141 | 10mg | $32.99 | $3.30 | $66.00 | ✓ | product/pt-141-10mg/ |
+| Retatrutide (listed as PG-3RT) | 5mg | $65.99 | $13.20 | $132.00 | ✓ | product/pg-3rt/ |
+| Retatrutide (listed as PG-3RT) | 10mg | $76.99 | $7.70 | $154.00 | ✓ | product/pg-3rt/ |
+| Retatrutide (listed as PG-3RT) | 20mg | $129.99 | $6.50 | $260.00 | ✓ | product/pg-3rt/ |
+| Retatrutide (listed as PG-3RT) | 30mg | $219.99 | $7.33 | $440.00 | ✓ | product/pg-3rt/ |
+| Retatrutide (listed as PG-3RT) | 40mg | $247.49 | $6.19 | $495.00 | ✓ | product/pg-3rt/ |
+| Retatrutide (listed as PG-3RT) | 60mg | $302.49 | $5.04 | $605.00 | ✓ | product/pg-3rt/ |
 | Selank | 5mg | $32.99 | $6.60 | $66.00 | ✓ | product/selank/ |
 | Selank | 10mg | $59.99 | $6.00 | $120.00 | ✓ | product/selank/ |
 | Semax | 5mg | $27.49 | $5.50 | $55.00 | ✓ | product/semax/ |

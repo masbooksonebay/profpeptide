@@ -398,11 +398,14 @@ def _purerx(n):
     if re.match(r'Sema\b', n, re.I): return (_c('Semaglutide', 'Sema'), 'semaglutide', 'single')
 
 
-@_decoder('peptide-giants')  # Kits excluded (bulk, not single-vial). Coded GLP SKUs UNVERIFIED: the
-# product pages state NO identity (no CAS/formula/name), so they are NOT decoded by analogy (Mark's rule).
+@_decoder('peptide-giants')  # PG-3RT VERIFIED = Retatrutide — the Janoshik identity report names
+# Retatrutide in its results. PG-3RT+C stays UNVERIFIED: a Reta/Cagrilintide blend with NO Cagrilintide
+# certificate. Other PG-N / GLP-3R codes remain UNVERIFIED (pages state no CAS/formula/name). Kits excluded.
+# Order matters: the +C blend and the specific PG-3RT branch must precede the generic PG-[0-9][A-Z]{2}.
 def _peptide_giants(n):
     if re.search(r'\(\s*\d+\s*vials?|\d+\s*vials?\s*/?\s*kit', n, re.I): return ('EXCLUDE', None, None)  # 10-vial kits
-    if re.match(r'PG-3RT\s*\+\s*C', n, re.I): return ('PG-3RT+C [coded, UNVERIFIED]', None, 'blend_bk')
+    if re.match(r'PG-3RT\s*\+\s*C', n, re.I): return ('PG-3RT+C [coded, UNVERIFIED]', None, 'blend_bk')  # Reta/Cagri — no Cagri cert
+    if re.match(r'PG-3RT\b', n, re.I): return (_c('Retatrutide', 'PG-3RT'), 'retatrutide', 'single')  # Janoshik COA: Retatrutide
     if re.match(r'PG-[0-9][A-Z]{2}\b', n, re.I): return (n.strip() + ' [coded, UNVERIFIED]', None, 'single_bk')
     if re.match(r'GLP-3R\b', n, re.I): return ('GLP-3R [coded, UNVERIFIED]', None, 'single_bk')
 
