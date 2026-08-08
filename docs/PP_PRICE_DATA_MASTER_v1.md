@@ -2342,7 +2342,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Crush Research
 - **slug:** crush-research | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** crushresearch.shop
-- **traffic:** (not pulled) | **pulled:** August 5 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** No product-level sale (originalPrice null across the catalog); PP code is a query-param affiliate ref (?ref=), applied at checkout, not an automatic markdown — so base = lowestPrice.
 
 ### Single compounds
@@ -2350,7 +2350,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | --- | --- | --- | --- | --- | --- | --- |
 | Adamax | 10mg | $53.10 | $5.31 | — | ✗ | product/adamax-1032-grade-10mg |
 | BPC-157 | 5mg | $26.10 | $5.22 | — | ✗ | product/bpc-157-5mg |
-| BPC-157 | 10mg | $35.10 | $3.51 | — | ✗ | product/bpc-157-10mg |
+| BPC-157 | 10mg | $35.10 | $3.51 | — | ✓ | product/bpc-157-10mg |
 | DSIP | 10mg | $35.10 | $3.51 | — | ✓ | product/dsip-10mg |
 | GHK-Cu | 50mg | $26.10 | $0.52 | — | ✓ | product/ghk-cu-50mg |
 | GHK-Cu | 100mg | $35.10 | $0.35 | — | ✓ | product/ghk-cu-100mg |
@@ -2372,6 +2372,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Retatrutide (listed as Triple Agonist) | 50mg | $108.00 | $2.16 | — | ✓ | product/triple-agonist-50mg |
 | Selank | 5mg | $26.10 | $5.22 | — | ✓ | product/selank-5mg-vial |
 | Sermorelin | 10mg | $35.10 | $3.51 | — | ✗ | product/sermorelin-10mg-vial |
+| Tesamorelin | 10mg | $49.00 | $4.90 | — | ✗ | product/tesamorelin-10mg |
 | Tesamorelin | 20mg | $80.10 | $4.00 | — | ✗ | product/tesamorelin-20mg |
 | Tirzepatide (listed as Double Agonist) | 20mg | $53.10 | $2.66 | — | ✗ | product/double-agonist-20mg |
 | Tirzepatide (listed as Double Agonist) | 30mg | $62.10 | $2.07 | — | ✗ | product/double-agonist-30mg |
