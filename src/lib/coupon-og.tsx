@@ -471,7 +471,15 @@ function NewsCard({ mark, title }: { mark: string; title: string }) {
             <img src={mark} width={84} height={84} alt="" style={{ width: 84, height: 84, borderRadius: 12 }} />
             <div style={{ display: "flex", flexDirection: "column", marginLeft: 22 }}>
               <div style={{ display: "flex", fontSize: 40, fontWeight: 800, color: NEWS_INK, letterSpacing: -1 }}>Prof. Peptide</div>
-              <div style={{ display: "flex", fontSize: 20, fontWeight: 700, color: NEWS_ACCENT, letterSpacing: 8, marginTop: 6 }}>NEWS</div>
+              {/* NEWS is the masthead's second line — ~82% of the wordmark (33 vs 40). Rendered as
+                  individual glyphs with per-letter marginRight (not string letter-spacing, which
+                  offsets the FIRST glyph): the "N" left edge lands at the same x as the "P" above,
+                  while keeping the ~7px tracking look. */}
+              <div style={{ display: "flex", flexDirection: "row", marginTop: 6 }}>
+                {["N", "E", "W", "S"].map((c, i) => (
+                  <div key={i} style={{ display: "flex", fontSize: 33, fontWeight: 700, color: NEWS_ACCENT, marginRight: i < 3 ? 7 : 0 }}>{c}</div>
+                ))}
+              </div>
             </div>
           </div>
           <div style={{ display: "flex", marginTop: 48, maxWidth: 1056, fontSize: headlineFontSize(title.length), fontWeight: 800, color: NEWS_INK, lineHeight: 1.12, letterSpacing: -1.5 }}>
