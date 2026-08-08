@@ -528,7 +528,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Behemoth Labz
 - **slug:** behemoth-labz | **code:** PROF10 | **discount:** 10% off | **url:** behemothlabz.com
-- **traffic:** (not pulled) | **pulled:** August 3 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** Product sale 20/100; code stacks.
 
 ### Single compounds
@@ -594,6 +594,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Semax | 10mg | $56.48 | $5.65 | — | ✓ | product/semax-peptide/ |
 | Semax | 30mg | $83.22 | $2.77 | — | ✓ | product/semax-peptide/ |
 | Semax | 60mg | $200.69 | $3.34 | — | ✓ | product/n-acetyl-semax-amidate/ |
+| Sermorelin | 10mg | $128.87 | $12.89 | — | ✓ | product/sermorelin/ |
 | SNAP-8 [backlog] | 10mg | $41.79 | $4.18 | — | ✓ | product/buy-snap-8-acetyl-octapeptide-3/ |
 | SNAP-8 [backlog] | 100mg | $258.41 | $2.58 | — | ✓ | product/buy-snap-8-acetyl-octapeptide-3/ |
 | SS-31 | 5mg | $40.15 | $8.03 | — | ✓ | product/ss31-elamipretide/ |
@@ -617,10 +618,8 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
 | --- | --- | --- | --- | --- | --- |
-| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 6mg | $83.90 | not published | ✓ |
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 8mg | $199.96 | not published | ✓ |
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 4mg | $102.97 | not published | ✓ |
-| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 6mg | $86.57 | not published | ✓ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $168.49 | not published | ✓ |
 | KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $216.05 | not published | ✓ |
 
@@ -630,7 +629,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Adipotide (spray) | 100mcg | $105.55 | ✓ |
 | AOD-9604 (spray) | 100mcg | $122.66 | ✓ |
 | BPC-157 (spray) | 100mcg | $124.54 | ✓ |
-| BPC-157 (spray) | 200mcg | $287.28 | ✓ |
 | CJC-1295 (spray) | 20mcg | $44.74 | ✓ |
 | CJC-1295 (spray) | 50mcg | $112.01 | ✓ |
 | DSIP (spray) | 50mcg | $90.01 | ✓ |
@@ -658,9 +656,10 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tesamorelin (spray) | 1mg | $1,122.22 | ✓ |
 | Tesamorelin (spray) | 200mcg | $325.71 | ✓ |
 
-### Excluded: liquid/concentration (per-ml, not a vial), manually excluded — form-strength product (powder/liquid/tabs); its '10mg per ml' liquid mis-parses as a 10mg vial ($9.18 = $0.92/mg). Not a vial price. (MK-777 is the same class — reported, not yet excluded.), multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend leak (Rule A): ghrp-6 + sermorelin — blend-registry candidate, liquid/concentration (per-ml, not a vial), manually excluded — blend leak: BPC-157/Arg/TB-500/GHK-Cu 4-way blend -> BPC-157 30mg., manually excluded — blend leak: BPC-157/TB-500 blend -> BPC-157 (4/15mg). Also catches the igf-lr3-bpc-157-tb-500 blend (11mg)., manually excluded — blend leak: IGF-1 LR3/BPC-157 (+TB-500) blends -> BPC-157 (6/11mg)., manually excluded — blend leak: Ipamorelin/GHRP-2 blend -> Ipamorelin 20mg., manually excluded — blend leak: Sermorelin/GHRP-2 blend -> Sermorelin 10mg., manually excluded — blend leak: Sermorelin/Ipamorelin blend -> Sermorelin 20mg., manually excluded — form-strength product (powder/liquid/tabs); its '10mg per ml' liquid mis-parses as a 10mg vial ($9.18 = $0.92/mg). Not a vial price. (MK-777 is the same class — reported, not yet excluded.), multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
+
 ## VENDOR: BioCollex
 - **slug:** biocollex | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** biocollexresearch.com
 - **traffic:** (not pulled) | **pulled:** August 5 2026

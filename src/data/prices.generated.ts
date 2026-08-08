@@ -364,6 +364,7 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "semax", compoundName: "Semax", vendor: "behemoth-labz", sizeMg: 10, basePrice: 56.48, inStock: true, vendorSlug: "product/semax-peptide/" },
   { compound: "semax", compoundName: "Semax", vendor: "behemoth-labz", sizeMg: 30, basePrice: 83.22, inStock: true, vendorSlug: "product/semax-peptide/" },
   { compound: "semax", compoundName: "Semax", vendor: "behemoth-labz", sizeMg: 60, basePrice: 200.69, inStock: true, vendorSlug: "product/n-acetyl-semax-amidate/" },
+  { compound: "sermorelin", compoundName: "Sermorelin", vendor: "behemoth-labz", sizeMg: 10, basePrice: 128.87, inStock: true, vendorSlug: "product/sermorelin/" },
   { compound: "snap-8", compoundName: "SNAP-8", vendor: "behemoth-labz", sizeMg: 10, basePrice: 41.79, inStock: true, vendorSlug: "product/buy-snap-8-acetyl-octapeptide-3/" },
   { compound: "snap-8", compoundName: "SNAP-8", vendor: "behemoth-labz", sizeMg: 100, basePrice: 258.41, inStock: true, vendorSlug: "product/buy-snap-8-acetyl-octapeptide-3/" },
   { compound: "ss-31", compoundName: "SS-31", vendor: "behemoth-labz", sizeMg: 5, basePrice: 40.15, inStock: true, vendorSlug: "product/ss31-elamipretide/" },
