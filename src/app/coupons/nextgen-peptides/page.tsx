@@ -83,7 +83,7 @@ export default function NextGenPeptidesCouponPage() {
             <Cat label="Sexual Health"><P slug="pt-141">PT-141</P>, <P slug="vip">VIP</P>, <P slug="kisspeptin">Kisspeptin-10</P></Cat>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            NextGen Peptides&apos; compounds are third-party tested in America, with testing that includes HPLC purity analysis, mass-spectrometry identity confirmation, and heavy-metals, endotoxin, and sterility screening. Purity is verified to ≥99% by HPLC, with a manufacturer Certificate of Analysis on every product plus a public COA Library, and &ldquo;6X testing for all batches after April 2026.&rdquo;
+            NextGen Peptides&apos; compounds are third-party tested by ILS Laboratories (San Diego, CA; ISO/IEC 17025-accredited); the vendor notes that batches before March 2026 were tested by Freedom Diagnostics. Each ILS certificate runs a full QC panel &mdash; peptide purity and net content by HPLC, identity by HPLC retention-time matching, heavy metals (ICP-MS, USP &lt;233&gt;), sterility (PCR), endotoxin (USP &lt;85&gt;), and a fentanyl screen &mdash; and carries a QR code and access code that verify it at portal.ils-lab.com. Purity is stated at ≥99% by HPLC, and NextGen publishes a public, searchable COA Library at ngpeptide.com/coa-library/ that lists per-batch certificates by product, batch number, and test date.
           </p>
         </div>
 
@@ -108,7 +108,7 @@ export default function NextGenPeptidesCouponPage() {
           <div className="space-y-2">
             <FAQItem q="Does NextGen Peptides have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any NextGen Peptides order. This code is verified and maintained by Prof. Peptide." />
             <FAQItem q="How do I use the NextGen Peptides discount code?" a="Add your items to cart at ngpeptide.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
-            <FAQItem q="Is NextGen Peptides third-party tested?" a="NextGen Peptides' compounds are third-party tested in America, including HPLC purity, mass-spectrometry identity, and heavy-metals, endotoxin, and sterility screening, with a manufacturer COA on every product and a public COA Library." />
+            <FAQItem q="Is NextGen Peptides third-party tested?" a="Yes — by ILS Laboratories (San Diego, CA; ISO/IEC 17025-accredited), with earlier (pre-March 2026) batches tested by Freedom Diagnostics. Each ILS COA runs peptide purity and content by HPLC, identity by HPLC retention-time matching, heavy metals (ICP-MS), sterility (PCR), endotoxin (USP <85>), and a fentanyl screen, and is individually QR-verifiable at portal.ils-lab.com. NextGen publishes a public, searchable COA Library at ngpeptide.com/coa-library/." />
             <FAQItem q="What is NextGen Peptides' purity standard?" a="NextGen Peptides states ≥99% purity verified by HPLC, with a Certificate of Analysis available for every product." />
             <FAQItem q="What does NextGen Peptides carry?" a="Research compounds across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator categories, in vial, spray, and capsule formats." />
           </div>

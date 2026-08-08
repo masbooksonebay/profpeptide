@@ -229,7 +229,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://modernaminos.com/?ref=profpeptide",
     detailPage: "/coupons/modern-aminos",
-    facts: { coa: "login-gated", labAccreditation: "ISO/IEC 17025" },
+    facts: { coa: "login-gated", labName: "Vanguard Laboratory, Freedom Diagnostics, TrustPointe Analytics", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC-UV/VIS, LC-MS/MS", contaminants: "Endotoxin (USP <85>)" },
   },
   "nextgen-peptides": {
     name: "NextGen Peptides",
@@ -238,7 +238,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ngpeptide.com/?ref=fysuzocl",
     detailPage: "/coupons/nextgen-peptides",
-    facts: { coa: "library" },
+    facts: { coa: "library", labName: "ILS Laboratories", labAccreditation: "ISO/IEC 17025", purityStandard: "≥99%", testMethods: "HPLC, ICP-MS", contaminants: "Heavy metals (ICP-MS, USP <233>), endotoxin (USP <85>), sterility (PCR), fentanyl screen" },
   },
   "peptidology": {
     name: "Peptidology",
