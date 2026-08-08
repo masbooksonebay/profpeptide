@@ -458,7 +458,7 @@ export const vendors: Record<string, Vendor> = {
     region: "AE",
     url: "https://www.nova-biolabs.com/?ref=kbandvut",
     detailPage: "/coupons/nova-labs",
-    facts: { purityStandard: "≥99%", coa: "per-batch", labName: "Janoshik", testMethods: "HPLC, mass spec", coldChain: true },
+    facts: { purityStandard: "≥99%", coa: "per-batch", labName: "Janoshik", testMethods: "HPLC", coldChain: true },
   },
   "nura-peptide": {
     name: "Nura Peptide",
@@ -467,7 +467,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://nurapeptide.com/?ref=profpeptide",
     detailPage: "/coupons/nura-peptide",
-    facts: { coa: "library" },
+    facts: { coa: "library", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>), microbial (PCR)" },
   },
   // 99 Purity's sources disagree on the discount: the welcome email says 10% off, the
   // affiliate dashboard header says 15% OFF (same code, now PROFPEPTIDE — was PROFPEPTIDE10). Mark's call is to
