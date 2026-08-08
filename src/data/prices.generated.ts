@@ -835,6 +835,7 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "semax", compoundName: "Semax", vendor: "purerawz", sizeMg: 30, basePrice: 100.94, inStock: true, vendorSlug: "product/acth-4-7-pro-gly-pro/" },
   { compound: "semax", compoundName: "Semax", vendor: "purerawz", sizeMg: 60, basePrice: 205.15, inStock: true, vendorSlug: "product/n-acetyl-semax-amidate/" },
   { compound: "sermorelin", compoundName: "Sermorelin", vendor: "purerawz", sizeMg: 2, basePrice: 27.6, inStock: true, vendorSlug: "product/ghrh-1-29/" },
+  { compound: "sermorelin", compoundName: "Sermorelin", vendor: "purerawz", sizeMg: 10, basePrice: 115.23, inStock: true, vendorSlug: "product/ghrh-1-29/" },
   { compound: "snap-8", compoundName: "SNAP-8", vendor: "purerawz", sizeMg: 10, basePrice: 42, inStock: true, vendorSlug: "product/snap-8/" },
   { compound: "snap-8", compoundName: "SNAP-8", vendor: "purerawz", sizeMg: 100, basePrice: 260, inStock: true, vendorSlug: "product/snap-8/" },
   { compound: "ss-31", compoundName: "SS-31", vendor: "purerawz", sizeMg: 5, basePrice: 45.62, inStock: true, vendorSlug: "product/ss31-elamipretide/" },

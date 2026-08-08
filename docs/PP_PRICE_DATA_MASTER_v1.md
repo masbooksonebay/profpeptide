@@ -1235,7 +1235,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: PureRawz
 - **slug:** purerawz | **code:** PROF10 | **discount:** 10% off | **url:** purerawz.co
-- **traffic:** (not pulled) | **pulled:** August 3 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** Product sale 28/200; code stacks.
 
 ### Single compounds
@@ -1325,6 +1325,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Semax | 30mg | $100.94 | $3.36 | — | ✓ | product/acth-4-7-pro-gly-pro/ |
 | Semax | 60mg | $205.15 | $3.42 | — | ✓ | product/n-acetyl-semax-amidate/ |
 | Sermorelin | 2mg | $27.60 | $13.80 | — | ✓ | product/ghrh-1-29/ |
+| Sermorelin | 10mg | $115.23 | $11.52 | — | ✓ | product/ghrh-1-29/ |
 | SNAP-8 [backlog] | 10mg | $42.00 | $4.20 | — | ✓ | product/snap-8/ |
 | SNAP-8 [backlog] | 100mg | $260.00 | $2.60 | — | ✓ | product/snap-8/ |
 | SS-31 | 5mg | $45.62 | $9.12 | — | ✓ | product/ss31-elamipretide/ |
@@ -1361,11 +1362,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | --- | --- | --- | --- |
 | Adipotide | 100mcg | $119.07 | ✓ |
 | AOD-9604 | 100mcg | $138.87 | ✓ |
-| BPC-157 | 2.2mg | $268.28 | ✓ |
-| BPC-157 | 2.2mg | $270.85 | ✓ |
-| BPC-157 | 220mcg | $464.44 | ✓ |
-| BPC-157 | 220mcg | $442.84 | ✓ |
-| BPC-157 | 600mcg | $370.48 | ✓ |
 | BPC-157 | 100mcg | $140.59 | ✓ |
 | BPC-157 | 100mcg | $178.39 | ✓ |
 | BPC-157 (spray) | 385mcg | $573.88 | ✗ |
@@ -1380,7 +1376,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Glutathione | 24mg | $109.84 | ✓ |
 | Glutathione | 1200mg | $150.91 | ✓ |
 | Glutathione | 600mg | $88.37 | ✓ |
-| Glutathione (spray) | 28.8mg | $332.13 | ✓ |
 | Hexarelin | 50mcg | $60.83 | ✓ |
 | HGH Fragment 176-191 [backlog] | 50mcg | $80.16 | ✓ |
 | IGF-1 DES | 10mcg | $138.42 | ✓ |
@@ -1392,7 +1387,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | MGF | 20mcg | $84.37 | ✓ |
 | MOTS-C | 200mcg | $257.22 | ✓ |
 | Oxytocin | 100mcg | $147.02 | ✓ |
-| Oxytocin | 100mcg | $151.67 | ✓ |
 | PT-141 | 100mcg | $115.33 | ✓ |
 | Selank | 400mcg | $183.70 | ✓ |
 | Selank | 200mcg | $110.98 | ✓ |
@@ -1402,13 +1396,13 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Semax | 120mg | $410.30 | ✓ |
 | Semax | 300mcg | $100.94 | ✓ |
 | Sermorelin | 100mcg | $115.23 | ✓ |
-| Sermorelin | 200mcg | $241.86 | ✓ |
 | Tesamorelin | 200mcg | $320.50 | ✓ |
 | Tesamorelin | 1mg | $1,392.51 | ✓ |
 
-### Excluded: liquid/concentration (per-ml, not a vial), multi-vial kit / pack (by name), no parseable size (Rule 4), oral/capsule, oral/tablet/sublingual, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend leak (Rule A): bpc-157 + ghk-cu — blend-registry candidate, blend leak (Rule A): glutathione + nad-plus — blend-registry candidate, blend leak (Rule A): oxytocin + pt-141 — blend-registry candidate, liquid/concentration (per-ml, not a vial), manually excluded — blend leak: BPC-157/TB-500/GHK-Cu blend -> BPC-157 30mg., manually excluded — blend leak: KPV/BPC-157/Arg blend -> BPC-157 15mg., manually excluded — blend leak: Sermorelin/GHRP-2 blend -> Sermorelin 5mg., manually excluded — blend leak: Sermorelin/GHRP-6 blend -> Sermorelin 10mg., manually excluded — blend leak: Sermorelin/Ipamorelin blend -> Sermorelin 20mg., manually excluded — blend leak: multi-component 'Alpha Blend' -> BPC-157 6mg ($27.41/mg)., multi-vial kit / pack (by name), no parseable size (Rule 4), oral/capsule, oral/tablet/sublingual, out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
+
 ## VENDOR: Royal Peptides
 - **slug:** royal-peptides | **code:** PROF10 | **discount:** 10% off | **url:** royal-peptides.com
 - **traffic:** (not pulled) | **pulled:** August 3 2026
