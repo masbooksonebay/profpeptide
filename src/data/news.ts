@@ -15,6 +15,13 @@ export interface NewsArticle {
 // article can never ship without its self-canonical <link rel="canonical">.
 export const articles: NewsArticle[] = [
   {
+    title: "Peptides Loosen, GLP-1 Compounding Tightens — The FDA’s Two Opposite Tracks",
+    slug: "fda-peptides-loosen-glp1-compounding-tightens-2026",
+    date: "August 8, 2026",
+    excerpt:
+      "Hearing that the FDA is loosening peptide rules and banning compounded GLP-1s in the same week isn’t a contradiction — they’re two separate regulatory tracks moving in opposite directions. Track 1: twelve peptides came off Category 2 and a panel recommended six for the 503A list (recommendations, not approvals). Track 2: the FDA proposed — not finalized — to exclude semaglutide, tirzepatide, and liraglutide from the 503B bulks list. Plus a third layer, the states, which have moved on GLP-1s specifically. The unmissable point: removal from Category 2 is not authorization to compound, and nothing is legal to compound today that wasn’t yesterday.",
+  },
+  {
     title: "FDA Advisory Panel Recommends Six Peptides for Compounding — What the Vote Does and Doesn’t Do",
     slug: "fda-pcac-peptide-vote-july-2026",
     date: "August 5, 2026",
