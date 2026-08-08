@@ -991,7 +991,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Peptide Partners
 - **slug:** peptide-partners | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** peptide.partners
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 7 2026
 - **sale posture:** Product sale 16/38; code stacks.
 
 ### Single compounds
@@ -1035,10 +1035,10 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | KPV | 20mg | $88.00 | $4.40 | — | ✓ | product/kpv-20mg-100mg/ |
 | KPV | 50mg | $190.00 | $3.80 | — | ✓ | product/kpv-20mg-100mg/ |
 | KPV | 100mg | $320.00 | $3.20 | — | ✓ | product/kpv-20mg-100mg/ |
-| MOTS-C | 20mg | $79.00 | $3.95 | $240.00 | ✓ | product/mots-c/ |
-| MOTS-C | 50mg | $188.00 | $3.76 | $605.00 | ✓ | product/mots-c/ |
+| MOTS-C | 20mg | $79.00 | $3.95 | $240.00 | ✗ | product/mots-c/ |
+| MOTS-C | 50mg | $188.00 | $3.76 | $605.00 | ✗ | product/mots-c/ |
 | MOTS-C | 80mg | $252.00 | $3.15 | — | ✗ | product/mots-c-40mg-vials/ |
-| MOTS-C | 100mg | $338.00 | $3.38 | $1,210.00 | ✓ | product/mots-c/ |
+| MOTS-C | 100mg | $338.00 | $3.38 | $1,210.00 | ✗ | product/mots-c/ |
 | MOTS-C | 200mg | $525.00 | $2.62 | — | ✗ | product/mots-c-40mg-vials/ |
 | MOTS-C | 400mg | $800.00 | $2.00 | — | ✗ | product/mots-c-40mg-vials/ |
 | NAD+ | 1500mg | $220.00 | $0.15 | $600.00 | ✗ | product/nad-unbuffered/ |
@@ -1074,11 +1074,11 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Sermorelin | 50mg | $212.00 | $4.24 | — | ✓ | product/sermorelin/ |
 | Sermorelin | 100mg | $411.00 | $4.11 | — | ✓ | product/sermorelin/ |
 | Sermorelin | 200mg | $797.00 | $3.98 | — | ✓ | product/sermorelin/ |
-| SS-31 | 20mg | $110.00 | $5.50 | $145.00 | ✓ | product/ss-31/ |
-| SS-31 | 50mg | $253.00 | $5.06 | $363.00 | ✓ | product/ss-31/ |
-| SS-31 | 100mg | $320.00 | $3.20 | — | ✓ | product/ss-31-50mg-vials/ |
-| SS-31 | 250mg | $687.00 | $2.75 | — | ✓ | product/ss-31-50mg-vials/ |
-| SS-31 | 500mg | $1,125.00 | $2.25 | — | ✓ | product/ss-31-50mg-vials/ |
+| SS-31 | 20mg | $110.00 | $5.50 | $145.00 | ✗ | product/ss-31/ |
+| SS-31 | 50mg | $253.00 | $5.06 | $363.00 | ✗ | product/ss-31/ |
+| SS-31 | 100mg | $320.00 | $3.20 | — | ✗ | product/ss-31-50mg-vials/ |
+| SS-31 | 250mg | $687.00 | $2.75 | — | ✗ | product/ss-31-50mg-vials/ |
+| SS-31 | 500mg | $1,125.00 | $2.25 | — | ✗ | product/ss-31-50mg-vials/ |
 | TB-500 | 20mg | $130.00 | $6.50 | $230.00 | ✓ | product/tb-500-tb4-kit-20mg-100mg/ |
 | TB-500 | 50mg | $290.00 | $5.80 | $450.00 | ✓ | product/tb-500-tb4-kit-20mg-100mg/ |
 | TB-500 | 100mg | $490.00 | $4.90 | $630.00 | ✓ | product/tb-500-tb4-kit-20mg-100mg/ |
@@ -1119,7 +1119,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $880.00 | not published | ✓ |
 
 ### Sprays: none
-### Excluded: out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: multi-vial kit / pack (by name), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
