@@ -151,18 +151,20 @@ export default function Home() {
           <HeroSearch />
           {/* Order mirrors the header nav (Peptides · Vendors · Prices · Codes · Calculator).
               Mobile (flex-col): unchanged — each button stretches full width, one per line.
-              sm+ : sm:w-44 gives all five an identical fixed width (sized to the longest
-              label, now "Verified Vendors") instead of content-based sizing, in one row.
-              Labels mirror the top nav (Peptides · Vendors · Prices · Codes · Calculator),
-              EXCEPT the 2nd CTA stays "Verified Vendors" → /vendors: it targets the Verified
-              Vendors directory, a DIFFERENT page from the Featured list (/best-peptide-vendors)
-              reached by the card + Quick Links. Not collapsed to "Vendors" on purpose — see the
-              label-drift report. */}
+              sm+ : sm:w-44 gives all five an identical fixed width, in one row.
+              CALL-SITE EXCEPTION: the 2nd CTA renders "Vendors" (not the registry's canonical
+              "Verified Vendors" navLabel) so the row is five one-word labels and reads with a
+              consistent rhythm. The href stays /vendors (the Verified Vendors directory, distinct
+              from Featured /best-peptide-vendors) and routes.ts is unchanged — label only. */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
-            {/* Labels/hrefs from the canonical route registry (nav vocab). The 2nd CTA is the
-                Verified Vendors directory (/vendors), distinct from Featured (/best-peptide-vendors). */}
-            {[routes.peptides, routes.verifiedVendors, routes.prices, routes.coupons, routes.calculator].map((r) => (
-              <Link key={r.href} href={r.href} className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">{r.navLabel}</Link>
+            {[
+              { r: routes.peptides },
+              { r: routes.verifiedVendors, label: "Vendors" },
+              { r: routes.prices },
+              { r: routes.coupons },
+              { r: routes.calculator },
+            ].map(({ r, label }) => (
+              <Link key={r.href} href={r.href} className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">{label ?? r.navLabel}</Link>
             ))}
           </div>
         </div>
