@@ -358,7 +358,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Ameano Peptides
 - **slug:** ameano-peptides | **code:** PROF10 | **discount:** 10% off | **url:** ameanopeptides.com
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** No sale.
 
 ### Single compounds
@@ -380,7 +380,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GHK-Cu | 50mg | $35.00 | $0.70 | — | ✓ | product/ghk-cu-50mg/ |
 | GHK-Cu | 100mg | $53.00 | $0.53 | — | ✓ | product/ghk-cu-100mg/ |
 | Ipamorelin | 10mg | $44.00 | $4.40 | — | ✓ | product/ipamorelin-10mg/ |
-| Kisspeptin-10 | 10mg | $48.00 | $4.80 | — | ✓ | product/kisspeptin-10mg/ |
+| Kisspeptin-10 | 10mg | $48.00 | $4.80 | — | ✗ | product/kisspeptin-10mg/ |
 | KPV | 10mg | $44.00 | $4.40 | — | ✓ | product/kpv-10mg/ |
 | LL-37 | 10mg | $80.00 | $8.00 | — | ✓ | product/ll-37-10mg/ |
 | Melanotan I | 10mg | $44.00 | $4.40 | — | ✓ | product/melanotan-i-10mg/ |
@@ -426,9 +426,10 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $53.00 | 5/5 (published) | ✓ |
 
 ### Sprays: none
-### Excluded: out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend leak (Rule A): selank + semax — blend-registry candidate, manually excluded — blend leak: Retatrutide/Cagrilintide blend -> Cagrilintide 12.5mg ($10.80/mg)., out-of-scope (SARMs/Rx/cosmetics), supply, topical/transdermal — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
+
 ## VENDOR: Amino X
 - **slug:** amino-x | **code:** PROF15 | **discount:** 15% off | **url:** aminox.net
 - **traffic:** (not pulled) | **pulled:** August 5 2026

@@ -219,7 +219,7 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "ghk-cu", compoundName: "GHK-Cu", vendor: "ameano-peptides", sizeMg: 50, basePrice: 35, inStock: true, vendorSlug: "product/ghk-cu-50mg/" },
   { compound: "ghk-cu", compoundName: "GHK-Cu", vendor: "ameano-peptides", sizeMg: 100, basePrice: 53, inStock: true, vendorSlug: "product/ghk-cu-100mg/" },
   { compound: "ipamorelin", compoundName: "Ipamorelin", vendor: "ameano-peptides", sizeMg: 10, basePrice: 44, inStock: true, vendorSlug: "product/ipamorelin-10mg/" },
-  { compound: "kisspeptin", compoundName: "Kisspeptin-10", vendor: "ameano-peptides", sizeMg: 10, basePrice: 48, inStock: true, vendorSlug: "product/kisspeptin-10mg/" },
+  { compound: "kisspeptin", compoundName: "Kisspeptin-10", vendor: "ameano-peptides", sizeMg: 10, basePrice: 48, inStock: false, vendorSlug: "product/kisspeptin-10mg/" },
   { compound: "kpv", compoundName: "KPV", vendor: "ameano-peptides", sizeMg: 10, basePrice: 44, inStock: true, vendorSlug: "product/kpv-10mg/" },
   { compound: "ll-37", compoundName: "LL-37", vendor: "ameano-peptides", sizeMg: 10, basePrice: 80, inStock: true, vendorSlug: "product/ll-37-10mg/" },
   { compound: "melanotan-i", compoundName: "Melanotan I", vendor: "ameano-peptides", sizeMg: 10, basePrice: 44, inStock: true, vendorSlug: "product/melanotan-i-10mg/" },
