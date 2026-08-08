@@ -247,7 +247,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptidology.co/?ref=mkmhgxqi",
     detailPage: "/coupons/peptidology",
-    facts: { coa: "per-batch", labName: "Vanguard Laboratory, Eagle Analytical Services", labAccreditation: "ISO/IEC 17025" },
+    facts: { coa: "per-batch", labName: "Vanguard Laboratory, Eagle Analytical Services", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC-UV/VIS, ICP-MS, GC-MS", contaminants: "Heavy metals (ICP-MS), endotoxin (LAL), sterility (USP <71> + ScanRDI), residual solvents (GC-MS), TFA" },
   },
   "integrative-peptides": {
     name: "Integrative Peptides",
@@ -356,7 +356,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://purerawz.co/?ref=1901",
     detailPage: "/coupons/purerawz",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", labName: "MZ Biolabs", purityStandard: "99%", testMethods: "HPLC-UV, mass spec" },
   },
   "purity-peptides": {
     name: "Purity Peptides",

@@ -128,7 +128,7 @@ export default function PureRawzCouponPage() {
               </div>
             </dl>
             <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-              PureRawz conducts both first-party and third-party testing on all products. Every batch is accompanied by a Certificate of Analysis (COA) from independent third-party analytical laboratories, confirming purity, molecular identity, batch number, and testing methodology &mdash; typically HPLC or Mass Spectrometry. PureRawz maintains a minimum purity standard of 99% across its peptide catalog, with COAs published directly on product pages so researchers can verify results before purchase.
+              PureRawz conducts both first-party and third-party testing on all products. Its published Certificates of Analysis are issued by MZ Biolabs (Tucson, AZ), an independent analytical lab, and confirm purity by HPLC-UV and molecular identity by mass spectrometry, with the lot number and analysis date on each report. PureRawz states a minimum purity standard of 99% across its peptide catalog, with per-lot COAs published directly on product pages so researchers can verify results before purchase.
             </p>
             <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
               PureRawz offers research compounds in multiple forms &mdash; lyophilized powder, liquid solution, nasal spray, tablets, and capsules &mdash; allowing researchers to select the format best suited to their experimental protocols. Their catalog spans peptides, SARMs, nootropics, and post-cycle therapy compounds.
@@ -158,7 +158,7 @@ export default function PureRawzCouponPage() {
               <FAQItem q="What products does PureRawz carry?" a="PureRawz carries a broad catalog including peptides (BPC-157, TB-500, IGF-1 LR3, Ipamorelin, CJC-1295, GHK-Cu, NAD+, Epitalon, PT-141, Selank, Semax), SARMs (RAD-140, MK-677, LGD-4033, Ostarine, Cardarine), nootropics, and PCT compounds. Available in liquid, powder, nasal spray, tablet, and capsule forms with third-party COAs published on each product page." />
               <FAQItem q="Does PureRawz have a discount code?" a="Yes. Use code PROF10 at checkout for 10% off your entire order at PureRawz. This code is verified by Prof. Peptide and updated regularly." />
               <FAQItem q="How do I use the PureRawz discount code?" a="Add compounds to your cart at purerawz.co, proceed to checkout, and enter PROF10 in the discount code field. The 10% discount applies to your order total before payment." />
-              <FAQItem q="What types of third-party testing does PureRawz provide?" a="PureRawz conducts first-party and independent third-party testing using HPLC and Mass Spectrometry. COAs are published on each product page confirming purity, batch number, testing date, and methodology." />
+              <FAQItem q="What types of third-party testing does PureRawz provide?" a="PureRawz conducts first-party and independent third-party testing; its published COAs are issued by MZ Biolabs (Tucson, AZ), confirming purity by HPLC-UV and molecular identity by mass spectrometry, with the lot number and analysis date on each report published on the product page." />
               <FAQItem q="Is PureRawz pricing competitive?" a="PureRawz offers competitive pricing with free US shipping over $100. Use code PROF10 for an additional 10% off." />
             </div>
           </div>

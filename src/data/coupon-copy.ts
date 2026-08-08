@@ -50,7 +50,7 @@ export const couponDifferentiator: Record<string, string> = {
   "peptide-giants": "Every batch Janoshik-tested; public lab reports.",
   "peptide-partners": "4 independent batch tests with published COAs.",
   "peptides-gg": "US-made, third-party tested per batch with COAs.",
-  "peptidology": "14-point per-batch testing under ISO/IEC 17025.",
+  "peptidology": "Vanguard + Eagle two-lab COAs; ISO-17025 accredited.",
   "purerawz": "US-based; third-party tested peptides, SARMs & nootropics.",
   "purerx-peptides": "Per-batch HPLC/MS COAs from an ISO-certified lab.",
   "purity-peptides": "99%+ HPLC/mass-spec tested with third-party COAs.",

@@ -80,7 +80,7 @@ export default function PeptidologyCouponPage() {
             <Cat label="Sexual Health"><P slug="pt-141">PT-141</P>, <P slug="oxytocin">Oxytocin</P>, <P slug="vip">VIP</P>, <P slug="kisspeptin">Kisspeptin-10</P></Cat>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Every Peptidology batch passes 14-point analytical testing &mdash; purity, identity, net peptide content, endotoxins, and two-lab sterility (USP &lt;71&gt; + ScanRDI) &mdash; performed under ISO/IEC 17025:2017 accreditation, with cGMP-aligned production, up to 23 vials tested per batch, and a Certificate of Analysis with every order.
+            Every Peptidology batch is tested by Vanguard Laboratory (Olympia, WA; A2LA #6377.01.01, ISO/IEC 17025:2017-accredited) &mdash; identity, chromatographic purity, and assay by HPLC-UV/VIS, heavy metals by ICP-MS, endotoxins by LAL, and sterility by USP &lt;71&gt;, with recent batches adding residual solvents (GC-MS), container-closure integrity, solubility, and trifluoroacetic-acid checks &mdash; and a second lab, Eagle Analytical Services (Houston, TX), runs a ScanRDI rapid sterility test, so each certificate carries two independent sterility results. Peptidology describes this as 14-point testing and states cGMP-aligned production with up to 23 vials tested per batch; a Certificate of Analysis is issued with every order.
           </p>
         </div>
 
@@ -105,8 +105,8 @@ export default function PeptidologyCouponPage() {
           <div className="space-y-2">
             <FAQItem q="Does Peptidology have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Peptidology order. This code is verified and maintained by Prof. Peptide." />
             <FAQItem q="How do I use the Peptidology discount code?" a="Add your items to cart at peptidology.co, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
-            <FAQItem q="Is Peptidology third-party tested?" a="Every Peptidology batch passes 14-point analytical testing — purity, identity, net peptide content, endotoxins, and two-lab sterility (USP <71> + ScanRDI) — under ISO/IEC 17025:2017 accreditation, with a Certificate of Analysis with every order." />
-            <FAQItem q="What is Peptidology's testing standard?" a="Peptidology states cGMP-aligned production with up to 23 vials tested per batch and 14-point analytical testing performed under ISO/IEC 17025:2017 accreditation, including two-lab sterility testing (USP <71> plus ScanRDI)." />
+            <FAQItem q="Is Peptidology third-party tested?" a="Yes. Every batch is tested by Vanguard Laboratory (A2LA #6377.01.01, ISO/IEC 17025:2017) — identity, purity, and assay by HPLC-UV/VIS, heavy metals (ICP-MS), endotoxins (LAL), and sterility (USP <71>), with recent batches adding residual solvents (GC-MS), container-closure, and solubility checks — and Eagle Analytical Services runs a ScanRDI rapid sterility test, so each certificate carries two independent sterility results." />
+            <FAQItem q="What is Peptidology's testing standard?" a="Peptidology describes its program as 14-point testing and states cGMP-aligned production with up to 23 vials tested per batch. Testing runs under Vanguard Laboratory's A2LA / ISO 17025:2017 accreditation, with a second-lab ScanRDI sterility test by Eagle Analytical Services." />
             <FAQItem q="What does Peptidology carry?" a="A catalog of 70+ research compounds across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator categories, in vial, capsule, and blend formats." />
           </div>
         </div>
