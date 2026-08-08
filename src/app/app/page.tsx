@@ -80,7 +80,7 @@ export default function AppPage() {
         </p>
         <div className="panel-card p-8 max-w-sm mx-auto text-center">
           <Image
-            src="/pp-mark-thick.png"
+            src="/pp-mark.png"
             alt="Prof. Peptide app icon"
             width={72}
             height={72}
