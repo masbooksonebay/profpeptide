@@ -1580,7 +1580,7 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "sermorelin", compoundName: "Sermorelin", vendor: "nura-peptide", sizeMg: 5, basePrice: 45, inStock: true, vendorSlug: "product/sermorelin-5mg/" },
   { compound: "ss-31", compoundName: "SS-31", vendor: "nura-peptide", sizeMg: 50, basePrice: 145, inStock: true, vendorSlug: "product/ss-31-50mg/" },
   { compound: "tb-500", compoundName: "TB-500", vendor: "nura-peptide", sizeMg: 10, basePrice: 63, inStock: true, vendorSlug: "product/tb-500-10mg/" },
-  { compound: "tesamorelin", compoundName: "Tesamorelin", vendor: "nura-peptide", sizeMg: 10, basePrice: 70, inStock: true, vendorSlug: "product/tesamorelin/", regularPrice: 80, onSale: true },
+  { compound: "tesamorelin", compoundName: "Tesamorelin", vendor: "nura-peptide", sizeMg: 10, basePrice: 80, inStock: true, vendorSlug: "product/tesamorelin/" },
   { compound: "tesamorelin", compoundName: "Tesamorelin", vendor: "nura-peptide", sizeMg: 20, basePrice: 140, inStock: true, vendorSlug: "product/tesamorelin/" },
   { compound: "5-amino-1mq", compoundName: "5-Amino-1MQ", vendor: "legendary-peptides", sizeMg: 10, basePrice: 60, inStock: true, vendorSlug: "product/5-amino-1mq/" },
   { compound: "bpc-157", compoundName: "BPC-157", vendor: "legendary-peptides", sizeMg: 10, basePrice: 45, inStock: true, vendorSlug: "product/bpc-157-10-mg/" },

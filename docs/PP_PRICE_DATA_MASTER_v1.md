@@ -2608,7 +2608,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Nura Peptide
 - **slug:** nura-peptide | **code:** PROFPEPTIDE15 | **discount:** 15% off | **url:** nurapeptide.com
-- **traffic:** (not pulled) | **pulled:** August 3 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** No known cart-level auto-coupon; product-level sale_price priced if present (re-verify at write).
 
 ### Single compounds
@@ -2641,16 +2641,16 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Sermorelin | 5mg | $45.00 | $9.00 | — | ✓ | product/sermorelin-5mg/ |
 | SS-31 | 50mg | $145.00 | $2.90 | — | ✓ | product/ss-31-50mg/ |
 | TB-500 | 10mg | $63.00 | $6.30 | — | ✓ | product/tb-500-10mg/ |
-| Tesamorelin | 10mg | $70.00 | $7.00 | $80.00 | ✓ | product/tesamorelin/ |
+| Tesamorelin | 10mg | $80.00 | $8.00 | — | ✓ | product/tesamorelin/ |
 | Tesamorelin | 20mg | $140.00 | $7.00 | — | ✓ | product/tesamorelin/ |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
 | --- | --- | --- | --- | --- | --- |
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 5mg | $55.00 | not published | ✓ |
-| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $112.00 | not published | ✓ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $100.00 | not published | ✓ |
 | GLP-3R / CAG 12.5MG / 2.5MG [coded, UNVERIFIED] |  | 15mg | $105.00 | not published | ✓ |
-| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $125.00 | not published | ✓ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $110.00 | not published | ✓ |
 | Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 3mg | $109.00 | not published | ✓ |
 
 ### Sprays / strips (separate format, no $/mg)
@@ -2661,7 +2661,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Selank (spray) | 10mg | $75.00 | ✓ |
 | Semax (spray) | 10mg | $75.00 | ✓ |
 
-### Excluded: oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
