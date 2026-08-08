@@ -1936,7 +1936,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Peptidology
 - **slug:** peptidology | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** peptidology.co
-- **traffic:** (not pulled) | **pulled:** August 5 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** Check product-level sale_price each refresh; PP code stacks.
 
 ### Single compounds
@@ -1963,7 +1963,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | FOXO4-DRI [backlog] | 10mg | $154.99 | $15.50 | — | ✓ | product/fox04-dri/ |
 | GHK-Cu | 51.61mg | $39.00 | $0.76 | — | ✓ | product/gk-cu/ |
 | GHRP-2 | 10mg | $42.99 | $4.30 | — | ✓ | product/ghrp-2/ |
-| GLP1 (PGL-G1) [coded, UNVERIFIED] | 5.01mg | $55.00 | $10.98 | — | ✗ | product/g-one/ |
+| GLP1 (PGL-G1) [coded, UNVERIFIED] | 5.01mg | $49.99 | $9.98 | — | ✓ | product/g-one/ |
 | GLP1 (PGL-G1) [coded, UNVERIFIED] | 10mg | $69.99 | $7.00 | — | ✗ | product/g-one/ |
 | GLP1 (PGL-G1) [coded, UNVERIFIED] | 20mg | $119.00 | $5.95 | — | ✓ | product/g-one/ |
 | GLP1 (PGL-G1) [coded, UNVERIFIED] | 30mg | $165.00 | $5.50 | — | ✓ | product/g-one/ |
@@ -1971,8 +1971,8 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GLP2 (PGL-GI1) [coded, UNVERIFIED] | 30mg | $115.99 | $3.87 | — | ✓ | product/g-two/ |
 | GLP2 (PGL-GI1) [coded, UNVERIFIED] | 60mg | $199.99 | $3.33 | — | ✓ | product/g-two/ |
 | GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 5mg | $54.99 | $11.00 | — | ✗ | product/g3/ |
-| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 10mg | $79.00 | $7.90 | — | ✓ | product/g3/ |
-| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 11mg | $79.99 | $7.27 | — | ✓ | product/g3/ |
+| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 10mg | $69.99 | $7.00 | $79.00 | ✓ | product/g3/ |
+| GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 11mg | $69.99 | $6.36 | $79.99 | ✓ | product/g3/ |
 | GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 20mg | $129.99 | $6.50 | — | ✓ | product/g3/ |
 | GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 30mg | $179.00 | $5.97 | — | ✓ | product/g3/ |
 | GLP3 (PGL-GIC1) [coded, UNVERIFIED] | 62.41mg | $279.00 | $4.47 | — | ✓ | product/g3/ |
