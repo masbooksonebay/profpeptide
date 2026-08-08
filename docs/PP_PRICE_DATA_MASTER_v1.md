@@ -468,7 +468,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Ascension Peptides
 - **slug:** ascension-peptides | **code:** PROFPEPTIDE | **discount:** 50% off | **url:** ascensionpeptides.com
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 7 2026
 - **sale posture:** ⚠️ Near-sitewide product-level sale_price (39/42); base=regular_price; code STACKS.
 
 ### Single compounds
@@ -479,36 +479,36 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | BPC-157 | 5mg | $55.00 | $11.00 | $59.99 | ✗ | product/bpc-157-5mg/ |
 | BPC-157 | 10mg | $49.00 | $4.90 | $74.99 | ✓ | product/bpc-157-10mg/ |
 | Cagrilintide (listed as C-10) | 10mg | $105.00 | $10.50 | $199.99 | ✓ | product/c-10/ |
-| Cibinetide | 10mg | $64.00 | $6.40 | $79.99 | ✓ | product/ara-290-10mg/ |
+| Cibinetide | 10mg | $70.00 | $7.00 | $79.99 | ✓ | product/ara-290-10mg/ |
 | CJC-1295 | 5mg | $50.00 | $10.00 | $64.99 | ✓ | product/cjc-1295-5mg/ |
-| CJC-1295 | 10mg | $73.00 | $7.30 | $109.99 | ✓ | product/cjc-1295-no-dac-10mg/ |
-| DSIP | 10mg | $60.00 | $6.00 | $94.99 | ✓ | product/dsip-10mg/ |
-| Epitalon | 10mg | $44.00 | $4.40 | $69.99 | ✓ | product/epithalon-10mg/ |
-| FOXO4-DRI [backlog] | 10mg | $150.00 | $15.00 | $199.99 | ✓ | product/fox04-dri/ |
+| CJC-1295 | 10mg | $80.00 | $8.00 | $109.99 | ✓ | product/cjc-1295-no-dac-10mg/ |
+| DSIP | 10mg | $65.00 | $6.50 | $94.99 | ✓ | product/dsip-10mg/ |
+| Epitalon | 10mg | $50.00 | $5.00 | $69.99 | ✓ | product/epithalon-10mg/ |
+| FOXO4-DRI [backlog] | 10mg | $160.00 | $16.00 | $199.99 | ✓ | product/fox04-dri/ |
 | GHK-Cu | 100mg | $65.00 | $0.65 | $84.99 | ✓ | product/ghk-cu-100mg-3ml/ |
-| Ipamorelin | 5mg | $44.00 | $8.80 | $64.99 | ✓ | product/ipamorelin-5mg/ |
-| Kisspeptin-10 | 10mg | $65.00 | $6.50 | $74.99 | ✓ | product/kisspeptin-10mg/ |
+| Ipamorelin | 5mg | $50.00 | $10.00 | $64.99 | ✓ | product/ipamorelin-5mg/ |
+| Kisspeptin-10 | 10mg | $70.00 | $7.00 | $74.99 | ✓ | product/kisspeptin-10mg/ |
 | KPV | 10mg | $50.00 | $5.00 | $79.99 | ✓ | product/kpv-10mg/ |
 | LL-37 | 10mg | $89.00 | $8.90 | $119.99 | ✓ | product/ll37-10mg/ |
 | Melanotan I | 10mg | $50.00 | $5.00 | $59.99 | ✓ | product/melanotan-i-10mg/ |
 | Melanotan II | 10mg | $43.00 | $4.30 | $59.99 | ✓ | product/melanotan-ii-10mg/ |
-| MOTS-C | 10mg | $49.00 | $4.90 | $89.99 | ✓ | product/mots-c-10mg/ |
+| MOTS-C | 10mg | $75.00 | $7.50 | $89.99 | ✓ | product/mots-c-10mg/ |
 | NAD+ | 1000mg | $104.00 | $0.10 | $179.99 | ✓ | product/nad-1000mg/ |
 | Oxytocin | 2mg | $49.99 | $25.00 | — | ✓ | product/oxytocin-2mg/ |
-| Pinealon | 10mg | $53.00 | $5.30 | $89.99 | ✓ | product/pinealon-10mg/ |
+| Pinealon | 10mg | $58.00 | $5.80 | $89.99 | ✓ | product/pinealon-10mg/ |
 | PT-141 | 10mg | $49.00 | $4.90 | $59.99 | ✓ | product/pt-141-10mg/ |
-| Retatrutide (listed as R-10) | 10mg | $125.00 | $12.50 | $149.99 | ✓ | product/r-10/ |
-| Retatrutide (listed as R-30) | 30mg | $250.00 | $8.33 | $269.99 | ✓ | product/r-30/ |
+| Retatrutide (listed as R-10) | 10mg | $125.00 | $12.50 | $149.99 | ✗ | product/r-10/ |
+| Retatrutide (listed as R-30) | 30mg | $290.00 | $9.67 | $299.99 | ✓ | product/r-30/ |
 | Selank | 10mg | $47.50 | $4.75 | $60.00 | ✓ | product/selank-10mg/ |
 | Semaglutide (listed as S-5) | 5mg | $40.00 | $8.00 | $99.99 | ✓ | product/s-5/ |
 | Semax | 10mg | $59.99 | $6.00 | — | ✓ | product/semax-10mg/ |
 | Sermorelin | 10mg | $72.00 | $7.20 | $99.99 | ✓ | product/sermorelin-10mg/ |
-| SS-31 | 10mg | $60.00 | $6.00 | $79.99 | ✗ | product/ss-31-10mg/ |
+| SS-31 | 10mg | $60.00 | $6.00 | $79.99 | ✓ | product/ss-31-10mg/ |
 | TB-500 | 5mg | $54.00 | $10.80 | $60.00 | ✓ | product/tb-500-5mg/ |
 | Tesamorelin | 5mg | $50.00 | $10.00 | $89.99 | ✓ | product/tesamorelin-5mg/ |
 | Thymosin Alpha-1 | 10mg | $71.00 | $7.10 | $99.99 | ✓ | product/thymosin-alpha-1-10mg/ |
-| Tirzepatide (listed as T-10) | 10mg | $50.00 | $5.00 | $124.99 | ✓ | product/t-10/ |
-| Tirzepatide (listed as T-30) | 30mg | $110.00 | $3.67 | $199.99 | ✓ | product/t-30/ |
+| Tirzepatide (listed as T-10) | 10mg | $75.00 | $7.50 | $124.99 | ✓ | product/t-10/ |
+| Tirzepatide (listed as T-30) | 30mg | $170.00 | $5.67 | $199.99 | ✓ | product/t-30/ |
 | VIP | 10mg | $80.00 | $8.00 | $149.99 | ✓ | product/vip-10mg/ |
 
 ### Blends (total mg; ratio where published)
@@ -517,7 +517,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 40mg | $118.00 | 10/10/20 (published) | ✗ |
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 20mg | $70.00 | 5/5/10 (published) | ✓ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 140mg | $125.00 | 50/10/10/70 (published) | ✓ |
-| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 160mg | $125.00 | 50/10/10/10/80 (published) | ✓ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 160mg | $150.00 | 50/10/10/10/80 (published) | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 40mg | $90.00 | 10/10/20 (published) | ✓ |
 
 ### Sprays: none
