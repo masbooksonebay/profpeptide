@@ -297,7 +297,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://myoasislabs.com/?sld=profpeptide",
     detailPage: "/coupons/oasis-labs",
-    facts: { coa: "per-product", purityStandard: "99%", labName: "Bioviridian", coldChain: true },
+    facts: { coa: "per-batch", purityStandard: "99%", labName: "Bioviridian, BioRegen", testMethods: "RP-HPLC, MALDI-MS, LC-MS", coldChain: true },
   },
   // Restored 2026-08 after Particle issued a working code. Prices are in EUR — verified at
   // checkout: €30.89 with the PROFPEPTIDE 10% discount of €3.09, so the code works end to end.
@@ -329,7 +329,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptidegiants.com/?ref=urunwnog",
     detailPage: "/coupons/peptide-giants",
-    facts: { coa: "library" },
+    facts: { coa: "library", labName: "Janoshik", testMethods: "HPLC" },
   },
   "purerx-peptides": {
     name: "PureRx Peptides",

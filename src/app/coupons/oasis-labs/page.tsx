@@ -119,7 +119,7 @@ export default function OasisLabsCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Oasis Labs conducts independent third-party testing on every batch at US-based laboratories, to a 99% purity standard on all research peptides in accordance with industry-standard testing methodology. Testing is performed to standards exceeding GMP (Good Manufacturing Practice) requirements. Certificates of Analysis are publicly accessible through a dedicated COA Library on the Oasis Labs website, with a separate COA Process page detailing their testing methodology. Notably, each Oasis Labs peptide vial features a unique QR code providing instant, point-of-use access to the Certificate of Analysis for that specific product &mdash; enabling immediate purity and dosage verification without navigating to a separate website.
+ Oasis Labs states a 99% purity standard and publishes a Certificate of Analysis for every batch through a public COA Library, with a separate COA Process page describing its methodology. Recent batches are tested by Bioviridian &mdash; identity by MALDI-MS, purity by RP-HPLC (214 nm), and content by HPLC quantitation &mdash; each COA carrying a per-record Web Verification Code (verifiable at bioviridians.com/coa-search.html) and a QR code; earlier batches were tested by BioRegen (identity, purity, and content by LC-MS, verifiable by a shared security key at bioregen.com/verify). Each vial also carries a QR code that opens that batch&apos;s COA at the point of use. Oasis describes its testing as exceeding GMP requirements &mdash; the certificates are third-party analytical reports and do not carry a GMP or accreditation mark.
  </p>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
  Oasis Labs stores all peptides in medical-grade conditions at -20&deg;C to maintain potency and integrity from production through to shipment. All orders are shipped with cold-shield packaging to preserve temperature stability during transit. Order processing is same-day for orders placed before 12 PM PST Monday through Friday, with FedEx 2Day delivery as standard. Free shipping is available on orders of $150 or more.
@@ -164,7 +164,7 @@ export default function OasisLabsCouponPage() {
  />
  <FAQItem
  q="Is Oasis Labs third-party tested?"
- a="Yes. Oasis Labs independently tests every batch at US-based third-party laboratories to a 99% purity standard, with testing standards that exceed GMP requirements. A public COA Library and dedicated COA Process page are available on their website. Each product also features a QR code for instant COA access at point of use."
+ a="Yes. Recent batches are tested by Bioviridian (identity by MALDI-MS, purity by RP-HPLC, content by HPLC), each COA carrying a per-record Web Verification Code and QR; earlier batches were tested by BioRegen (LC-MS, shared security key). Oasis states a 99% purity standard and describes its testing as exceeding GMP requirements — the certificates are third-party analytical reports and do not carry a GMP or accreditation mark. A public COA Library and COA Process page are on the site, and each vial has a QR code for point-of-use COA access."
  />
  <FAQItem
  q="How does Oasis Labs store and ship their peptides?"

@@ -58,7 +58,7 @@ export default function PeptideGiantsCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide</Link>, <Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link>, <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>, <Link href="/peptides/5-amino-1mq" className="text-[#3A759F] hover:underline">5-Amino-1MQ</Link>, plus their GLP-class metabolic line
+                <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide</Link>, <Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link>, <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>, <Link href="/peptides/5-amino-1mq" className="text-[#3A759F] hover:underline">5-Amino-1MQ</Link>, plus <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> (sold under the coded name GLP-3R, confirmed on its Janoshik report) and other GLP-class SKUs
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -99,7 +99,7 @@ export default function PeptideGiantsCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Every Peptide Giants product is third-party tested by Janoshik &mdash; an independent analytical lab widely used in the research-peptide space &mdash; with compounds verified by HPLC and mass spectrometry and each batch quality-tested. The site publishes a Lab Reports section where researchers can review the testing documentation for its products.
+            Every Peptide Giants product is third-party tested by Janoshik, an independent analytical lab widely used in the research-peptide space. Its per-batch Janoshik reports state purity (typically 99%+) and measured peptide content, and each is individually verifiable at janoshik.com/verify with a unique key and QR code, carrying a Janoshik task number and a PG batch code; the reports do not print the analytical method. The site publishes a Lab Reports section where researchers can review the documentation for its products.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Peptide Giants ships from the USA with same-day US dispatch on most orders and free priority shipping on domestic orders over $200. Products are available as single vials and multi-vial kits, and are sold for laboratory and research use only.
@@ -127,7 +127,7 @@ export default function PeptideGiantsCouponPage() {
             <FAQItem q="What peptides does Peptide Giants carry?" a="Peptide Giants carries research compounds as both single vials and multi-vial kits, spanning metabolic and GLP-class compounds (including Cagrilintide, AOD-9604, MOTS-C, and 5-Amino-1MQ), recovery peptides such as BPC-157 and TB-500, growth-hormone secretagogues including CJC-1295, Ipamorelin, and IGF-1 LR3, skin compounds such as GHK-Cu and Melanotan II, the GLOW and KLOW blends, longevity compounds including Epitalon, NAD+, and Glutathione, plus KPV, Kisspeptin-10, and Oxytocin." />
             <FAQItem q="Does Peptide Giants have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 10% on your entire Peptide Giants order. This code is verified and maintained by Prof. Peptide." />
             <FAQItem q="How do I use the Peptide Giants discount code?" a="Add your items to cart at peptidegiants.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
-            <FAQItem q="How does Peptide Giants test its peptides?" a="Every Peptide Giants product is third-party tested by Janoshik — an independent analytical lab widely used in the research-peptide space — with compounds verified by HPLC and mass spectrometry and each batch quality-tested." />
+            <FAQItem q="How does Peptide Giants test its peptides?" a="Every Peptide Giants product is third-party tested by Janoshik, an independent analytical lab widely used in the research-peptide space. The per-batch Janoshik reports state purity (typically 99%+) and peptide content and are individually verifiable at janoshik.com/verify with a unique key and QR code; the reports do not print the analytical method." />
             <FAQItem q="Are lab reports available for Peptide Giants products?" a="Yes. Peptide Giants publishes a Lab Reports section on its site where researchers can review the third-party (Janoshik) testing documentation for its products." />
             <FAQItem q="Is Peptide Giants US-based, and how fast does it ship?" a="Yes — Peptide Giants ships from the USA with same-day US dispatch on most orders and free priority shipping on domestic orders over $200. Products are for laboratory and research use only." />
           </div>
