@@ -96,8 +96,8 @@ function loadAssets(): Promise<Assets> {
 // ---- shared building blocks ------------------------------------------------
 
 function LogoLockup() {
-  // Vector logo — drawn directly so it stays crisp at any resample (the raster
-  // pp-icon.png aliased on Satori downscale). Rounded-rect outline + "Pp".
+  // Vector logo — drawn directly so it stays crisp at any resample (a raster
+  // mark aliased on Satori downscale). Rounded-rect outline + "Pp".
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
       <div
