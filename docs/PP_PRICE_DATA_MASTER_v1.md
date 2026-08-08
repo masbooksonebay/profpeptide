@@ -926,14 +926,12 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Oasis Labs
 - **slug:** oasis-labs | **code:** PROF15 | **discount:** 15% off | **url:** myoasislabs.com
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 7 2026
 - **sale posture:** Product sale 7/54; code stacks.
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
-| SLU-PP-332 [backlog] | 25mg | $139.00 | $5.56 | — | ✓ | product/slu-pp-332-250mcg-100ct/ |
-| Tesofensine [backlog] | 30mg | $223.50 | $7.45 | — | ✓ | product/tesofensine-500mcg-capsules-60ct/ |
 | 5-Amino-1MQ | 10mg | $60.00 | $6.00 | $69.00 | ✓ | product/5-amino-1mq-10-mg/ |
 | AOD-9604 | 5mg | $47.00 | $9.40 | — | ✓ | product/aod-9604-5mg/ |
 | BPC-157 | 5mg | $30.00 | $6.00 | — | ✓ | product/bpc-157/ |
@@ -951,7 +949,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | IGF-1 LR3 | 1mg | $67.00 | $67.00 | — | ✓ | product/igf1-lr3-1mg/ |
 | Ipamorelin | 5mg | $34.50 | $6.90 | — | ✓ | product/ipamorelin-5-mg/ |
 | Kisspeptin-10 | 5mg | $52.50 | $10.50 | — | ✓ | product/kisspeptin-10-5mg/ |
-| KPV | 10mg | $47.00 | $4.70 | — | ✓ | product/kpv-10mg/ |
+| KPV | 10mg | $47.00 | $4.70 | — | ✗ | product/kpv-10mg/ |
 | LL-37 | 10mg | $65.00 | $6.50 | — | ✓ | product/ll-37-10mg/ |
 | Melanotan II | 10mg | $34.50 | $3.45 | — | ✓ | product/mt-2-10mg/ |
 | MOTS-C | 10mg | $48.50 | $4.85 | — | ✓ | product/mots-c/ |
@@ -968,11 +966,13 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Retatrutide (listed as GLP3(R)) | 60mg | $335.00 | $5.58 | $411.70 | ✓ | product/glp3r/ |
 | Selank | 10mg | $48.00 | $4.80 | — | ✓ | product/selank-10mg/ |
 | Semax | 10mg | $45.00 | $4.50 | — | ✓ | product/semax-10mg/ |
-| Sermorelin | 5mg | $49.00 | $9.80 | — | ✓ | product/sermorlin-5mg/ |
+| Sermorelin | 5mg | $49.00 | $9.80 | — | ✓ | product/sermorelin-5mg/ |
 | SLU-PP-332 [backlog] | 5mg | $74.50 | $14.90 | — | ✓ | product/slu-pp-332-5mg/ |
+| SLU-PP-332 [backlog] | 25mg | $139.00 | $5.56 | — | ✓ | product/slu-pp-332-250mcg-100ct/ |
 | SNAP-8 [backlog] | 10mg | $47.00 | $4.70 | — | ✓ | product/snap-8-10mg/ |
 | TB-500 | 10mg | $57.00 | $5.70 | — | ✓ | product/tb-500-10mg/ |
 | Tesamorelin | 10mg | $74.00 | $7.40 | — | ✓ | product/th9507-tesa-10mg/ |
+| Tesofensine [backlog] | 30mg | $223.50 | $7.45 | — | ✓ | product/tesofensine-500mcg-capsules-60ct/ |
 | Thymosin Alpha-1 | 10mg | $65.00 | $6.50 | — | ✓ | product/thymosin-alpha-10mg/ |
 
 ### Blends (total mg; ratio where published)
@@ -985,9 +985,10 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $94.00 | not published | ✓ |
 
 ### Sprays: none
-### Excluded: oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend leak (Rule A): selank + semax — blend-registry candidate, oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
+
 ## VENDOR: Peptide Partners
 - **slug:** peptide-partners | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** peptide.partners
 - **traffic:** (not pulled) | **pulled:** July 30 2026
