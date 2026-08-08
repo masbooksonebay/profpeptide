@@ -122,7 +122,7 @@ export default function PeptidesGgCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Every batch is third-party tested with published COAs, where each sample ID links directly to its full lab report &mdash; so you can verify the exact lot you receive rather than a generic reference document. Purity runs 98&ndash;99%+ depending on the product. The catalog spans GLP/metabolic compounds (Retatrutide, Semaglutide, Tirzepatide, Cagrilintide, Mazdutide, Survodutide, Orforglipron), growth-hormone secretagogues (CJC-1295, Ipamorelin, Sermorelin, Tesamorelin, IGF-1 LR3), recovery peptides (BPC-157, TB-500, GHK-Cu, KPV, plus KLOW and GLOW blends), longevity and bioregulators (Epitalon and a deep Khavinson bioregulator line), and nootropics (Semax, Selank, Noopept).
+ Every batch is third-party tested by Freedom Diagnostics, with published COAs where each sample ID links directly to its full lab report &mdash; so you can verify the exact lot you receive rather than a generic reference document. The certificates confirm identity by mass spectrometry and purity by HPLC-UV, and each is individually verifiable by its search code at FreedomDiagnosticsTesting.com. Purity runs 98&ndash;99%+ depending on the product. The catalog spans GLP/metabolic compounds (Retatrutide, Semaglutide, Tirzepatide, Cagrilintide, Mazdutide, Survodutide, Orforglipron), growth-hormone secretagogues (CJC-1295, Ipamorelin, Sermorelin, Tesamorelin, IGF-1 LR3), recovery peptides (BPC-157, TB-500, GHK-Cu, KPV, plus KLOW and GLOW blends), longevity and bioregulators (Epitalon and a deep Khavinson bioregulator line), and nootropics (Semax, Selank, Noopept).
  </p>
  </div>
 
@@ -160,7 +160,7 @@ export default function PeptidesGgCouponPage() {
  />
  <FAQItem
  q="What testing does Peptides.gg conduct?"
- a="Peptides.gg third-party tests every batch and publishes COAs where each sample ID links to the full lab report, so you can verify the exact lot you receive. Purity runs 98–99%+ depending on the product."
+ a="Peptides.gg third-party tests every batch through Freedom Diagnostics and publishes COAs where each sample ID links to the full lab report; the certificates confirm identity by mass spectrometry and purity by HPLC-UV, each verifiable by its search code at FreedomDiagnosticsTesting.com. Purity runs 98–99%+ depending on the product."
  />
  <FAQItem
  q="How does Peptides.gg ship, and what does it cost?"

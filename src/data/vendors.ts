@@ -319,7 +319,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptide.partners/ref/48/",
     detailPage: "/coupons/peptide-partners",
-    facts: { coa: "per-batch", purityStandard: "99%+", labName: "TrustPointe, Kovera, BioRegen, Chromate", testMethods: "HPLC, USP <85>", contaminants: "Heavy metals, endotoxin, sterility" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labName: "TrustPointe, Kovera, BioRegen", testMethods: "RP-HPLC, LC-MS, ICP, USP <85>", contaminants: "Heavy metals (ICP), endotoxin (USP <85>), sterility (PCR)" },
     editorsPick: true,
   },
   "peptide-giants": {
@@ -347,7 +347,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptides.gg/?coupon=prof15",
     detailPage: "/coupons/peptides-gg",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
   },
   purerawz: {
     name: "PureRawz",

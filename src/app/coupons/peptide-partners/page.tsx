@@ -110,7 +110,7 @@ export default function PeptidePartnersCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Peptide Partners conducts four categories of independent third-party testing on their batches &mdash; purity, endotoxin, heavy metals, and sterility &mdash; using multiple accredited laboratories including TrustPointe Analytics, Kovera, BioRegen, and Chromate. Purity is verified via HPLC (High-Performance Liquid Chromatography), with recent batch results consistently exceeding 99% across compounds including BPC-157 (99.99%), Thymosin Alpha-1 (99.95%), Ipamorelin/CJC-1295 (99.92%), and NAD+ (99.92%). Endotoxin testing follows USP &lt;85&gt; Bacterial Endotoxin Test methodology using the Charles River Endosafe PTS system, with full suitability data &mdash; including coefficient of variation and spike recovery &mdash; published alongside results for complete transparency. Heavy metals certifications and sterility testing on reconstitution products round out the quality documentation package.
+ Peptide Partners tests its batches across four categories &mdash; purity, endotoxin, heavy metals, and sterility &mdash; using two independent labs that currently run in parallel, TrustPointe Analytics (Dorr, MI) and Kovera Labs, with BioRegen on earlier (late-2025) batches. Many batches carry certificates from both current labs: a Kovera certificate reports purity, net content, identity by LC-MS, endotoxin (USP &lt;85&gt;, &le;0.5 EU/mL), rapid sterility screening, and a heavy-metals screen (arsenic, cadmium, lead, mercury); TrustPointe reports per-vial assay, purity, and identity, plus a separate elemental-impurities panel by ICP (EPA 208/245 methods). Purity by RP-HPLC ran 99.7&ndash;99.99% across the certificates reviewed. The certificates are independently verifiable on each lab&apos;s website but do not carry a laboratory accreditation mark.
  </p>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
  Every certificate of analysis provided by Peptide Partners is independently verifiable on the issuing laboratory&apos;s own website &mdash; not merely a downloadable PDF. Each product page lists a Manufacturer ID and Batch ID enabling direct cross-reference with the third-party lab&apos;s records. Peptide Partners explicitly addresses certificate fraud in the research peptide industry, noting that doctored images and stolen certificates are common, and provides verification guidance so researchers can authenticate documentation themselves.
@@ -151,11 +151,11 @@ export default function PeptidePartnersCouponPage() {
  />
  <FAQItem
  q="What types of third-party testing does Peptide Partners provide?"
- a="Peptide Partners conducts four independent test types per batch: HPLC purity testing, USP <85> bacterial endotoxin testing, heavy metals testing, and sterility testing on reconstitution products. Testing is performed by multiple independent laboratories including TrustPointe Analytics, Kovera, BioRegen, and Chromate. All certificates are verifiable directly on the issuing laboratory's website."
+ a="Peptide Partners conducts four independent test types per batch: HPLC purity, USP <85> bacterial endotoxin, heavy-metals (ICP), and rapid sterility screening. Testing is performed by two independent labs running in parallel — TrustPointe Analytics and Kovera Labs — with BioRegen on earlier batches. Every certificate is verifiable directly on the issuing laboratory's website (a TrustPointe LIMS key, a Kovera report number and access code, or a BioRegen security key)."
  />
  <FAQItem
  q="How do I verify a Peptide Partners Certificate of Analysis?"
- a="Each Peptide Partners product page lists a Manufacturer ID and Batch ID. You can cross-reference these against the certificate on the third-party laboratory's own website — TrustPointe, Kovera, BioRegen, or Chromate — to confirm the certificate is genuine and the values have not been altered."
+ a="Each Peptide Partners product page lists a Manufacturer ID and Batch ID. You can cross-reference these against the certificate on the third-party laboratory's own website — TrustPointe (TrustPointeLIMS.com), Kovera (koveralabs.com/verify), or BioRegen (bioregen.com/verify) — to confirm the certificate is genuine and the values have not been altered."
  />
  <FAQItem
  q="Is Peptide Partners pricing competitive?"
