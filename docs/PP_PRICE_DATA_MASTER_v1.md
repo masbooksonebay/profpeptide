@@ -231,7 +231,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Alpha Peptides
 - **slug:** alpha-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** alpha-peptides.com
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** Product-level sale_price on ~25/59; code STACKS.
 
 ### Single compounds
@@ -241,7 +241,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Adamax | 10mg | $71.58 | $7.16 | — | ✗ | product/adamax/ |
 | AOD-9604 | 5mg | $32.99 | $6.60 | $39.59 | ✗ | product/aod-9604/ |
 | AOD-9604 | 10mg | $45.75 | $4.58 | $54.90 | ✗ | product/aod-9604/ |
-| BPC-157 | 10mg | $25.99 | $2.60 | $27.59 | ✓ | product/bpc-157/ |
+| BPC-157 | 10mg | $25.99 | $2.60 | $27.59 | ✗ | product/bpc-157/ |
 | Cagrilintide | 5mg | $56.99 | $11.40 | $68.39 | ✗ | product/cagrilintide/ |
 | Cagrilintide | 10mg | $95.99 | $9.60 | $115.19 | ✗ | product/cagrilintide/ |
 | Cibinetide | 10mg | $36.00 | $3.60 | — | ✗ | product/ara-290/ |
@@ -280,7 +280,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Retatrutide (listed as GLP-3 RT) | 10mg | $41.99 | $4.20 | $49.25 | ✓ | product/glp-3-rt/ |
 | Retatrutide (listed as GLP-3 RT) | 15mg | $67.99 | $4.53 | $77.99 | ✓ | product/glp-3-rt/ |
 | Retatrutide (listed as GLP-3 RT) | 30mg | $88.99 | $2.97 | $107.99 | ✓ | product/glp-3-rt/ |
-| Retatrutide (listed as GLP-3 RT) | 50mg | $169.99 | $3.40 | $198.00 | ✗ | product/glp-3-rt/ |
+| Retatrutide (listed as GLP-3 RT) | 50mg | $169.99 | $3.40 | $198.00 | ✓ | product/glp-3-rt/ |
 | Selank | 10mg | $23.15 | $2.31 | $27.78 | ✗ | product/selank/ |
 | Semaglutide (listed as GLP-1 SM) | 5mg | $44.99 | $9.00 | $53.99 | ✗ | product/glp-1-sm/ |
 | Semaglutide (listed as GLP-1 SM) | 10mg | $64.99 | $6.50 | $77.99 | ✗ | product/glp-1-sm/ |
@@ -288,10 +288,10 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Sermorelin | 10mg | $44.53 | $4.45 | — | ✗ | product/sermorelin/ |
 | SLU-PP-332 [backlog] | 5mg | $84.21 | $16.84 | — | ✗ | product/slu-pp-332/ |
 | SNAP-8 [backlog] | 10mg | $22.11 | $2.21 | — | ✗ | product/snap-8/ |
-| SS-31 | 10mg | $35.79 | $3.58 | $42.95 | ✗ | product/ss-31/ |
+| SS-31 | 10mg | $35.79 | $3.58 | $42.95 | ✓ | product/ss-31/ |
 | Survodutide [backlog] | 10mg | $73.89 | $7.39 | — | ✗ | product/survodutide/ |
 | TB-500 | 10mg | $31.32 | $3.13 | $37.58 | ✗ | product/tb-500/ |
-| Tesamorelin | 10mg | $43.22 | $4.32 | $51.86 | ✗ | product/tesamorelin/ |
+| Tesamorelin | 10mg | $43.22 | $4.32 | $51.86 | ✓ | product/tesamorelin/ |
 | Tesofensine [backlog] | 500mcg | $108.95 | $217.90 | — | ✗ | product/tesofensine/ |
 | Thymalin [backlog] | 10mg | $50.53 | $5.05 | — | ✗ | product/thymalin/ |
 | Thymosin Alpha-1 | 10mg | $41.44 | $4.14 | — | ✗ | product/thymosin-alpha-1/ |
@@ -303,7 +303,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Blend | Components | Total mg | Base | Ratio | Stock |
 | --- | --- | --- | --- | --- | --- |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $48.41 | not published | ✓ |
-| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $67.42 | not published | ✗ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $67.42 | not published | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $49.22 | not published | ✗ |
 
 ### Sprays: none
