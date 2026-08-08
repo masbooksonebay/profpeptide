@@ -1877,7 +1877,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: LA Peptides
 - **slug:** la-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** lapeptides.net
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 7 2026
 - **sale posture:** Check product-level sale_price each refresh; PP code stacks.
 
 ### Single compounds
@@ -1887,13 +1887,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | 5-Amino-1MQ | 50mg | $99.99 | $2.00 | — | ✓ | product/5-amino-1mq/ |
 | AOD-9604 | 10mg | $49.99 | $5.00 | — | ✓ | product/aod-9604/ |
 | BPC-157 | 10mg | $59.99 | $6.00 | — | ✓ | product/bpc-157/ |
-| Cagrilintide | — | $99.99 | — | — | ✓ | product/cagrilinitide/ |
-| Cardiogen | — | $59.99 | — | — | ✓ | product/cardiogen/ |
-| Cartalax [backlog] | — | $59.99 | — | — | ✓ | product/cartalax/ |
-| Cibinetide | — | $69.99 | — | — | ✓ | product/ara-290/ |
-| DSIP | — | $29.99 | — | — | ✓ | product/dsip/ |
-| Epitalon | — | $79.99 | — | — | ✓ | product/epithalon/ |
-| GHK-Cu | — | $39.99 | — | — | ✓ | product/ghk-cu/ |
+| Cagrilintide | 10mg | $99.99 | $10.00 | — | ✓ | product/cagrilinitide/ |
 | GLP – 1 (S) [coded, UNVERIFIED] | 5mg | $64.99 | $13.00 | — | ✓ | product/g-1-s/ |
 | GLP – 1 (S) [coded, UNVERIFIED] | 10mg | $89.99 | $9.00 | — | ✓ | product/g-1-s/ |
 | GLP – 2 (T) [coded, UNVERIFIED] | 15mg | $99.99 | $6.67 | — | ✓ | product/g-2/ |
@@ -1901,31 +1895,17 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GLP – 3 (R) [coded, UNVERIFIED] | 10mg | $94.99 | $9.50 | — | ✓ | product/g-3/ |
 | GLP – 3 (R) [coded, UNVERIFIED] | 20mg | $169.99 | $8.50 | — | ✓ | product/g-3/ |
 | GLP – 3 (R) [coded, UNVERIFIED] | 30mg | $229.99 | $7.67 | — | ✓ | product/g-3/ |
-| Glutathione | — | $59.99 | — | — | ✓ | product/glutathione/ |
-| IGF-1 LR3 | — | $59.99 | — | — | ✓ | product/igf1-lr3/ |
-| Ipamorelin | — | $49.99 | — | — | ✓ | product/ipamorelin/ |
 | Kisspeptin-10 | 10mg | $59.99 | $6.00 | — | ✓ | product/kisspeptin/ |
 | KPV | 10mg | $59.99 | $6.00 | — | ✓ | product/kpv/ |
 | Melanotan II | 10mg | $44.99 | $4.50 | — | ✓ | product/melanotan-2/ |
 | MOTS-C | 10mg | $69.99 | $7.00 | — | ✓ | product/mots-c/ |
 | NAD+ | 500mg | $74.99 | $0.15 | — | ✓ | product/nad/ |
 | NAD+ | 1000mg | $119.99 | $0.12 | — | ✓ | product/nad/ |
-| Ovagen [backlog] | — | $59.99 | — | — | ✓ | product/ovagen/ |
-| Pancragen [backlog] | — | $59.99 | — | — | ✓ | product/pancragen/ |
-| Pinealon | — | $59.99 | — | — | ✓ | product/pinealon/ |
-| PT-141 | — | $69.99 | — | — | ✓ | product/pt-141/ |
-| Selank | — | $39.99 | — | — | ✓ | product/selank/ |
-| Semax | — | $39.99 | — | — | ✓ | product/semax/ |
+| PT-141 | 10mg | $69.99 | $7.00 | — | ✓ | product/pt-141/ |
 | Sermorelin | 10mg | $69.99 | $7.00 | — | ✓ | product/sermorelin/ |
-| SNAP-8 [backlog] | — | $34.99 | — | — | ✓ | product/snap-8/ |
-| TB-500 | — | $79.99 | — | — | ✓ | product/tb500/ |
 | Tesamorelin | 10mg | $74.99 | $7.50 | — | ✓ | product/tesamorelin/ |
-| Testagen [backlog] | — | $59.99 | — | — | ✓ | product/testagen/ |
+| Testagen [backlog] | 20mg | $59.99 | $3.00 | — | ✓ | product/testagen/ |
 | Thymalin [backlog] | 10mg | $69.99 | $7.00 | — | ✓ | product/thymalin/ |
-| Thymosin Alpha-1 | — | $59.99 | — | — | ✓ | product/thymosin-alpha-1/ |
-| Vesugen [backlog] | — | $59.99 | — | — | ✓ | product/vesugen/ |
-| Vilon [backlog] | — | $59.99 | — | — | ✓ | product/vilon/ |
-| VIP | — | $59.99 | — | — | ✓ | product/vip/ |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
@@ -1936,7 +1916,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GLOW | GHK-Cu/BPC-157/TB-500 | 50mg | $89.99 | not published | ✓ |
 | KLOW | GHK-Cu/BPC-157/TB-500/KPV | 25mg | $129.99 | not published | ✓ |
 | KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $129.99 | not published | ✓ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | — | $79.99 | not published | ✓ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 5mg | $79.99 | not published | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $69.99 | not published | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $129.99 | not published | ✓ |
 
@@ -1946,18 +1926,16 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Adamax (spray) | 10mg | $99.99 | ✓ |
 | Adamax (spray) | 40mg | $189.99 | ✓ |
 | BPC-157 (spray) | — | $59.99 | ✓ |
-| Dihexa [backlog] (spray) | — | $59.99 | ✓ |
+| Dihexa [backlog] (spray) | 5mg | $59.99 | ✓ |
 | Melanotan II (spray) | — | $59.99 | ✓ |
 | NAD+ (spray) | — | $64.99 | ✓ |
-| Oxytocin (spray) | — | $69.99 | ✓ |
+| Oxytocin (spray) | 5mg | $69.99 | ✓ |
 | PT-141 (spray) | — | $59.99 | ✓ |
-| Selank (spray) | — | $79.99 | ✓ |
-| Selank (spray) | — | $89.99 | ✓ |
 | Selank (spray) | — | $59.99 | ✓ |
 | Semax (spray) | — | $59.99 | ✓ |
 | TB-500 (spray) | — | $59.99 | ✓ |
 
-### Excluded: oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend leak (Rule A): dihexa + selank + semax — blend-registry candidate, blend leak (Rule A): selank + semax — blend-registry candidate, no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
