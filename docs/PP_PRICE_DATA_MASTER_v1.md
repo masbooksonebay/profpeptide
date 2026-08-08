@@ -696,7 +696,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: EZ Peptides
 - **slug:** ez-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** ezpeptides.com
-- **traffic:** (not pulled) | **pulled:** August 5 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** No sale.
 
 ### Single compounds
@@ -746,7 +746,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Survodutide [backlog] | 10mg | $78.00 | $7.80 | — | ✓ | product/survodutide-10mg/ |
 | TB-500 | 10mg | $48.00 | $4.80 | — | ✓ | product/tb-500-frag-17-23-10mg/ |
 | Tesamorelin | 10mg | $68.00 | $6.80 | — | ✓ | product/tesamorelin-10mg/ |
-| Tesofensine [backlog] | 50mg | $168.00 | $3.36 | — | ✓ | product/tesofensine-500mcg-100-tabs-bottle/ |
+| Tesofensine [backlog] | 50mg | $168.00 | $3.36 | — | ✗ | product/tesofensine-500mcg-100-tabs-bottle/ |
 | Thymosin Alpha-1 | 10mg | $58.00 | $5.80 | — | ✓ | product/thymosin-alpha-1-10mg/ |
 | Tirzepatide (listed as EZP-2P) | 10mg | $53.00 | $5.30 | — | ✓ | product/ezp-2p-10mg/ |
 | Tirzepatide (listed as EZP-2P) | 15mg | $71.00 | $4.73 | — | ✓ | product/ezp-2p-15mg/ |
@@ -768,7 +768,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $53.00 | 5/5 (published) | ✓ |
 
 ### Sprays: none
-### Excluded: manually excluded — CORRECT DATA held pending the FORMAT-COMPARABILITY decision — NOT a leak, do not 'fix' the data. Rule B correctly computes 50mg x 25 tabs = 1250mg ($0.10/mg). But this ORAL BULK pack would rank against INJECTABLE vials on /prices/5-amino-1mq and take Best-$/mg at ~1/50 the vial rate — oral tabs and an injectable vial are not the same product form. Held here until oral-vs-injectable comparability is decided (Rule D territory). ez's injectable 5-amino-1mq-50mg vial is UNAFFECTED (frag is the FULL count-pack slug; FP-scanned: 1 hit, the vial untouched). Re-include if oral forms get their own lane on /prices., manually excluded — blend leak: 'Reta/Cagri Blend - 12.5mg/2.5mg' (Retatrutide/Cagrilintide combo) resolves to Cagrilintide 12.5mg. Same blend ameano excludes as 'reta-cagri-blend'. ⚠️ check:prices CANNOT catch this: at $9.44/mg vs a $9.60 cagrilintide median it is 0.98x — a NEAR-MEDIAN leak, not an outlier. Caught only by hand-reading the rows. Frag FP-scanned: 1 hit, ez's real cagrilintide-5mg / cagrilintide-10mg vials untouched. Retire when Rule A (blend guard) lands., multi-vial kit / pack (by name), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend leak (Rule A): selank + semax — blend-registry candidate, manually excluded — CORRECT DATA held pending the FORMAT-COMPARABILITY decision — NOT a leak, do not 'fix' the data. Rule B correctly computes 50mg x 25 tabs = 1250mg ($0.10/mg). But this ORAL BULK pack would rank against INJECTABLE vials on /prices/5-amino-1mq and take Best-$/mg at ~1/50 the vial rate — oral tabs and an injectable vial are not the same product form. Held here until oral-vs-injectable comparability is decided (Rule D territory). ez's injectable 5-amino-1mq-50mg vial is UNAFFECTED (frag is the FULL count-pack slug; FP-scanned: 1 hit, the vial untouched). Re-include if oral forms get their own lane on /prices., manually excluded — blend leak: 'Reta/Cagri Blend - 12.5mg/2.5mg' (Retatrutide/Cagrilintide combo) resolves to Cagrilintide 12.5mg. Same blend ameano excludes as 'reta-cagri-blend'. ⚠️ check:prices CANNOT catch this: at $9.44/mg vs a $9.60 cagrilintide median it is 0.98x — a NEAR-MEDIAN leak, not an outlier. Caught only by hand-reading the rows. Frag FP-scanned: 1 hit, ez's real cagrilintide-5mg / cagrilintide-10mg vials untouched. Retire when Rule A (blend guard) lands., multi-vial kit / pack (by name), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 

@@ -439,7 +439,7 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "survodutide", compoundName: "Survodutide", vendor: "ez-peptides", sizeMg: 10, basePrice: 78, inStock: true, vendorSlug: "product/survodutide-10mg/" },
   { compound: "tb-500", compoundName: "TB-500", vendor: "ez-peptides", sizeMg: 10, basePrice: 48, inStock: true, vendorSlug: "product/tb-500-frag-17-23-10mg/" },
   { compound: "tesamorelin", compoundName: "Tesamorelin", vendor: "ez-peptides", sizeMg: 10, basePrice: 68, inStock: true, vendorSlug: "product/tesamorelin-10mg/" },
-  { compound: "tesofensine", compoundName: "Tesofensine", vendor: "ez-peptides", sizeMg: 50, basePrice: 168, inStock: true, vendorSlug: "product/tesofensine-500mcg-100-tabs-bottle/" },
+  { compound: "tesofensine", compoundName: "Tesofensine", vendor: "ez-peptides", sizeMg: 50, basePrice: 168, inStock: false, vendorSlug: "product/tesofensine-500mcg-100-tabs-bottle/" },
   { compound: "thymosin-alpha-1", compoundName: "Thymosin Alpha-1", vendor: "ez-peptides", sizeMg: 10, basePrice: 58, inStock: true, vendorSlug: "product/thymosin-alpha-1-10mg/" },
   { compound: "tirzepatide", compoundName: "Tirzepatide", vendor: "ez-peptides", sizeMg: 10, basePrice: 53, inStock: true, vendorSlug: "product/ezp-2p-10mg/", listedAs: "EZP-2P" },
   { compound: "tirzepatide", compoundName: "Tirzepatide", vendor: "ez-peptides", sizeMg: 15, basePrice: 71, inStock: true, vendorSlug: "product/ezp-2p-15mg/", listedAs: "EZP-2P" },
