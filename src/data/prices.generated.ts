@@ -853,7 +853,6 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "vip", compoundName: "VIP", vendor: "purerawz", sizeMg: 5, basePrice: 42.48, inStock: true, vendorSlug: "product/vip/" },
   { compound: "vip", compoundName: "VIP", vendor: "purerawz", sizeMg: 10, basePrice: 79.06, inStock: true, vendorSlug: "product/vip/" },
   { compound: "vip", compoundName: "VIP", vendor: "purerawz", sizeMg: 12, basePrice: 95.35, inStock: true, vendorSlug: "product/vip/" },
-  { compound: "tesofensine", compoundName: "Tesofensine", vendor: "royal-peptides", sizeMg: 50, basePrice: 90, inStock: true, vendorSlug: "shop/tesofensine-500mcg-100-bottle/" },
   { compound: "5-amino-1mq", compoundName: "5-Amino-1MQ", vendor: "royal-peptides", sizeMg: 50, basePrice: 80, inStock: true, vendorSlug: "shop/5-amino-1mq/" },
   { compound: "aod-9604", compoundName: "AOD-9604", vendor: "royal-peptides", sizeMg: 5, basePrice: 65, inStock: false, vendorSlug: "shop/aod-5mg-kit/" },
   { compound: "bpc-157", compoundName: "BPC-157", vendor: "royal-peptides", sizeMg: 10, basePrice: 55, inStock: true, vendorSlug: "shop/bpc-157-10mg-vial-kit/" },

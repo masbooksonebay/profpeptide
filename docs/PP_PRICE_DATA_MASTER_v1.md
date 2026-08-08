@@ -1400,13 +1400,12 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Royal Peptides
 - **slug:** royal-peptides | **code:** PROF10 | **discount:** 10% off | **url:** royal-peptides.com
-- **traffic:** (not pulled) | **pulled:** August 3 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** No sale.
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
-| Tesofensine [backlog] | 50mg | $90.00 | $1.80 | — | ✓ | shop/tesofensine-500mcg-100-bottle/ |
 | 5-Amino-1MQ | 50mg | $80.00 | $1.60 | — | ✓ | shop/5-amino-1mq/ |
 | AOD-9604 | 5mg | $65.00 | $13.00 | — | ✗ | shop/aod-5mg-kit/ |
 | BPC-157 | 10mg | $55.00 | $5.50 | — | ✓ | shop/bpc-157-10mg-vial-kit/ |
@@ -1462,17 +1461,16 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | --- | --- | --- | --- | --- | --- |
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 20mg | $95.00 | not published | ✓ |
 | CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $70.00 | not published | ✓ |
-| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $530.00 | not published | ✓ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $70.00 | not published | ✓ |
-| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $90.00 | not published | ✓ |
 | Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | — | $90.00 | not published | ✓ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $115.00 | not published | ✓ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $75.00 | not published | ✗ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $75.00 | not published | ✓ |
 
 ### Sprays: none
-### Excluded: manually excluded — 10-vial kit whose NAME carries no kit marker (only the slug does), so is_kit_name misses it — $360 = $72/mg vs a ~$11/mg median., manually excluded — 10-vial kit whose NAME carries no kit marker — $430 = $86/mg vs a ~$10/mg median., manually excluded — pricing error: this single 10mg is listed at $465, ABOVE the same vendor's 10-vial kit ($330) — internally impossible, so removed as an error, not a premium., multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: manually excluded — 10-vial kit whose NAME carries no kit marker (only the slug does), so is_kit_name misses it — $360 = $72/mg vs a ~$11/mg median., manually excluded — 10-vial kit whose NAME carries no kit marker — $430 = $86/mg vs a ~$10/mg median., manually excluded — blend leak: Semax/Selank blend mis-classified as Selank 20mg ($4.50/mg). check:prices passed it (near the corrupted Selank-20mg median)., manually excluded — oral/count — UNRESOLVABLE: variable product 'SLU-PP-332 50/100 count bottles' (5 variants). Count is stated as '50/100' with no reliable per-variant mapping, so the package total can't be computed from public data. Stays excluded (absent beats a guessed total). Re-add per-variant once the count is confirmed., manually excluded — pricing error: this single 10mg is listed at $465, ABOVE the same vendor's 10-vial kit ($330) — internally impossible, so removed as an error, not a premium., multi-vial kit / pack (by name), multi-vial kit landing page (by slug), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
+
 ## VENDOR: Swiss Chems
 - **slug:** swiss-chems | **code:** PROF10 | **discount:** 10% off | **url:** swisschems.is
 - **traffic:** (not pulled) | **pulled:** August 3 2026
