@@ -1766,7 +1766,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 
 ## VENDOR: Midwest Peptide
-- **slug:** midwest-peptide | **code:** PROF10 | **discount:** 10% off | **url:** midwestpeptide.com?ref=PROF10
+- **slug:** midwest-peptide | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** midwestpeptide.com?ref=PROF10
 - **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** No cart auto-coupon; anchors compare_at — base = current price.
 

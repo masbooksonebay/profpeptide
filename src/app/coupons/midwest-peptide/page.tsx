@@ -143,11 +143,11 @@ export default function MidwestPeptideCouponPage() {
             />
             <FAQItem
               q="Does Midwest Peptide have a discount code?"
-              a="Yes. Use code PROF10 at checkout to save 10% on any Midwest Peptide order. This code is verified and maintained by Prof. Peptide."
+              a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Midwest Peptide order. This code is verified and maintained by Prof. Peptide."
             />
             <FAQItem
               q="How do I use the Midwest Peptide discount code?"
-              a="Add your items to cart at midwestpeptide.com, proceed to checkout, and enter PROF10 in the discount code field. The 10% discount will be applied to your order total."
+              a="Add your items to cart at midwestpeptide.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total."
             />
             <FAQItem
               q="Is Midwest Peptide third-party tested?"

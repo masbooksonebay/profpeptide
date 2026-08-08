@@ -283,7 +283,7 @@ export const vendors: Record<string, Vendor> = {
   },
   "midwest-peptide": {
     name: "Midwest Peptide",
-    code: "PROF10",
+    code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
     url: "https://midwestpeptide.com?ref=PROF10",
