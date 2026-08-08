@@ -2031,7 +2031,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Mile High Compounds
 - **slug:** mile-high-compounds | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** milehighcompounds.is
-- **traffic:** (not pulled) | **pulled:** August 5 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** Check product-level sale_price each refresh; PP code stacks.
 
 ### Single compounds
@@ -2081,9 +2081,9 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | TB-500 | 10mg | $59.99 | $6.00 | $69.99 | ✓ | product/tb-500/ |
 | Tesamorelin | 10mg | $79.99 | $8.00 | $99.99 | ✓ | product/tesamorlin/ |
 | Testagen [backlog] | 20mg | $69.99 | $3.50 | $79.99 | ✓ | product/testagen/ |
-| Thymogen | 20mg | $49.99 | $2.50 | $59.99 | ✓ | product/thymagen/ |
+| Thymogen | 20mg | $39.99 | $2.00 | $49.99 | ✓ | product/thymagen/ |
 | Thymosin Alpha-1 | 10mg | $69.99 | $7.00 | $79.99 | ✓ | product/thymosin-alpha-1/ |
-| VIP | 10mg | $59.99 | $6.00 | $79.99 | ✓ | product/vip/ |
+| VIP | 10mg | $49.99 | $5.00 | $59.99 | ✓ | product/vip/ |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
@@ -2095,7 +2095,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Sprays / strips (separate format, no $/mg)
 | Product | Size | Base | Stock |
 | --- | --- | --- | --- |
-| Selank (spray) | 40mg | $149.99 | ✓ |
+| Selank (spray) | 40mg | $159.99 | ✓ |
 | Semax (spray) | 50mg | $159.99 | ✓ |
 
 ### Excluded: blend leak (Rule A): pinealon + selank + semax — blend-registry candidate, blend leak (Rule A): selank + semax — blend-registry candidate, no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
