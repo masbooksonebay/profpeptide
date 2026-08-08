@@ -861,7 +861,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Ignite Peptides
 - **slug:** ignite-peptides | **code:** PROF10 | **discount:** 10% off | **url:** ignitepeptides.com
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 7 2026
 - **sale posture:** Product sale 5/34; code stacks.
 
 ### Single compounds
@@ -874,13 +874,13 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GHK-Cu | 100mg | $60.00 | $0.60 | $75.00 | ✓ | product/ghk-cu-100mg/ |
 | Glutathione | 750mg | $45.00 | $0.06 | — | ✓ | product/glutathione-750mg/ |
 | Ipamorelin | 10mg | $50.00 | $5.00 | — | ✓ | product/ipamorelin-10mg/ |
-| KPV | 10mg | $30.00 | $3.00 | $45.00 | ✓ | product/kpv-10mg/ |
+| KPV | 10mg | $30.00 | $3.00 | $45.00 | ✗ | product/kpv-10mg/ |
 | Melanotan II | 10mg | $40.00 | $4.00 | — | ✓ | product/mt2-10mg/ |
-| MOTS-C | 10mg | $48.00 | $4.80 | — | ✗ | product/mots-c-10mg/ |
+| MOTS-C | 10mg | $48.00 | $4.80 | — | ✓ | product/mots-c-10mg/ |
 | NAD+ | 500mg | $100.00 | $0.20 | — | ✓ | product/nad-500mg/ |
 | PT-141 | 10mg | $45.00 | $4.50 | — | ✓ | product/pt-141-10mg/ |
-| Retatrutide (listed as GLP-3 (RT)) | 10mg | $75.00 | $7.50 | — | ✓ | product/glp-3-rt-10mg/ |
-| Retatrutide (listed as GLP-3 (RT)) | 20mg | $140.00 | $7.00 | — | ✗ | product/glp-3-rt-20mg/ |
+| Retatrutide (listed as GLP-3 (RT)) | 10mg | $68.99 | $6.90 | — | ✓ | product/glp-3-rt-10mg/ |
+| Retatrutide (listed as GLP-3 (RT)) | 20mg | $140.00 | $7.00 | — | ✓ | product/glp-3-rt-20mg/ |
 | Selank | 10mg | $30.00 | $3.00 | — | ✓ | product/selank-10mg/ |
 | Semaglutide (listed as GLP-1 (S)) | 5mg | $60.00 | $12.00 | $68.50 | ✓ | product/glp-1-s-5mg/ |
 | Semaglutide (listed as GLP-1 (S)) | 20mg | $170.00 | $8.50 | — | ✓ | product/glp-1-s-20mg/ |
