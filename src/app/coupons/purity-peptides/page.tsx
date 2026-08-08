@@ -124,7 +124,7 @@ export default function PurityPeptidesCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Every batch is tested by accredited third-party laboratories in North America. Purity is verified to a 99%+ standard by HPLC and mass spectrometry, with identity confirmation. Purity Peptides&apos; raw materials are North American-sourced (not China) and manufactured in GMP-aligned facilities with full chain-of-custody documentation.
+            Every batch is tested by independent third-party labs: MDx BioAnalytical Laboratory (which reports purity and identity by HPLC and mass spectrometry, plus endotoxin on some products, each certificate verifiable by its code at mdxbiolabs.com) and Vanguard Laboratory (Olympia, WA; A2LA #6377.01.01, ISO/IEC 17025:2017-accredited, HPLC-UV/VIS). Purity is verified to a 99%+ standard with identity confirmation. Purity Peptides&apos; raw materials are North American-sourced (not China) and manufactured in GMP-aligned facilities with full chain-of-custody documentation.
           </p>
           {/* §D3: CPRA claim intentionally kept ATTRIBUTED ("states it is certified by") — a third-party certification asserts an outside body vouched for the vendor; CPRA is obscure and vendor-adjacent, so PP must not state it as flat fact. Do not de-hedge. */}
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -166,11 +166,11 @@ export default function PurityPeptidesCouponPage() {
             />
             <FAQItem
               q="What testing does Purity Peptides do?"
-              a="Every batch is tested by accredited third-party laboratories in North America. Testing covers HPLC purity (99%+) and mass-spectrometry identity confirmation, with a Certificate of Analysis on every product."
+              a="Every batch is tested by independent labs — MDx BioAnalytical Laboratory (HPLC + mass spectrometry, plus endotoxin on some products, verifiable at mdxbiolabs.com) and Vanguard Laboratory (A2LA #6377.01.01, ISO/IEC 17025:2017) — covering HPLC purity (99%+) and mass-spectrometry identity, with a Certificate of Analysis on every product."
             />
             <FAQItem
               q="What is the minimum purity standard at Purity Peptides?"
-              a="Purity Peptides verifies a minimum of 99%+ purity, confirmed through HPLC and mass spectrometry analysis by accredited third-party laboratories before a batch is offered for sale."
+              a="Purity Peptides verifies a minimum 99%+ purity, confirmed by HPLC and mass spectrometry, through independent labs — MDx BioAnalytical Laboratory and Vanguard Laboratory (A2LA / ISO 17025-accredited) — before a batch is offered for sale."
             />
             <FAQItem
               q="Does Purity Peptides provide Certificates of Analysis?"

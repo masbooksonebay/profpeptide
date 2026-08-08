@@ -338,7 +338,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://purerxpeptides.com/?ref=urunwnog",
     detailPage: "/coupons/purerx-peptides",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", labName: "Accumark Labs, Forever Young Analytics", testMethods: "HPLC" },
   },
   "peptides-gg": {
     name: "Peptides.gg",
@@ -365,7 +365,7 @@ export const vendors: Record<string, Vendor> = {
     region: "CA",
     url: "https://puritypeptides.is/?sld=PROF15",
     detailPage: "/coupons/purity-peptides",
-    facts: { coa: "per-batch", purityStandard: "99%+", labName: "MDX Biolabs", testMethods: "HPLC, mass spec" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labName: "MDX Biolabs, Vanguard Laboratory", testMethods: "HPLC, mass spec", contaminants: "Endotoxin (LAL)" },
   },
   "real-peptides": {
     name: "Real Peptides",

@@ -52,7 +52,7 @@ export const couponDifferentiator: Record<string, string> = {
   "peptides-gg": "US-made, third-party tested per batch with COAs.",
   "peptidology": "Vanguard + Eagle two-lab COAs; ISO-17025 accredited.",
   "purerawz": "US-based; third-party tested peptides, SARMs & nootropics.",
-  "purerx-peptides": "Per-batch HPLC/MS COAs from an ISO-certified lab.",
+  "purerx-peptides": "Per-batch HPLC COAs; QR-verifiable (Accumark).",
   "purity-peptides": "99%+ HPLC/mass-spec tested with third-party COAs.",
   "real-peptides": "Freedom Diagnostics per-product COAs; US-stocked.",
   "royal-peptides": "cGMP/ISO-lab tested to 99%+ purity with batch COAs.",
