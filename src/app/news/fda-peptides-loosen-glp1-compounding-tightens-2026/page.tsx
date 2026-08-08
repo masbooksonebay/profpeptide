@@ -14,7 +14,7 @@ export const metadata = buildPageMetadata({
     "Peptides Loosen, GLP-1 Compounding Tightens — The FDA’s Two Opposite Tracks",
   ogDescription:
     "Two federal regulatory tracks are moving in opposite directions: twelve peptides came off the Category 2 list while the FDA proposed to bar bulk compounding of semaglutide, tirzepatide, and liraglutide. Neither has changed what is legal to compound today.",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function FDAPeptidesLoosenGLP1TightensPage() {

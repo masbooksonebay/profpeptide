@@ -12,7 +12,7 @@ export const metadata = buildPageMetadata({
   ogTitle: "FDA Moves to Restore Peptide Access \u2014 What Researchers Need to Know (April 2026)",
   ogDescription:
     "The FDA posted a Federal Register notice in April 2026 considering lifting restrictions on seven Category 2 peptides.",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function FDAPeptideCompoundingUpdatePage() {

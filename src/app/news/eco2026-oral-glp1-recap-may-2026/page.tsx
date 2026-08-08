@@ -12,7 +12,7 @@ export const metadata = buildPageMetadata({
   ogTitle: "ECO2026 Recap — Oral GLP-1 Data from Novo, Lilly, and Viking",
   ogDescription:
     "Recap of ECO2026 oral GLP-1 readouts from Novo Nordisk, Eli Lilly, and Viking Therapeutics — Wegovy pill, Foundayo, and VK2735.",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function Eco2026OralGlp1RecapMay2026Page() {

@@ -12,7 +12,7 @@ export const metadata = buildPageMetadata({
   ogTitle: "FDA Moves to Bar Outsourcing Facilities From Bulk-Compounding Semaglutide, Tirzepatide, and Liraglutide",
   ogDescription:
     "The agency found no clinical need to keep the three leading GLP-1 drugs available for large-scale 503B bulk compounding. The comment period, extended to July 30, 2026, has closed; the proposal is not yet a final rule — here's what it does, and doesn't, cover.",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function FDA503BGLP1BulkCompounding2026Page() {

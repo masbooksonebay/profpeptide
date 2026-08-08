@@ -12,7 +12,7 @@ export const metadata = buildPageMetadata({
   ogTitle: "Retatrutide FDA Approval: Phase 3 Status & Timeline (2026)",
   ogDescription:
     "Retatrutide isn't FDA-approved yet — it's in Phase 3 (TRIUMPH program). Where trials stand in 2026, latest results & when a filing may come (2026–2027).",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function RetatrutidePhase3UpdateMay2026Page() {

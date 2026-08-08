@@ -12,7 +12,7 @@ export const metadata = buildPageMetadata({
   ogTitle: "Retatrutide Hits 30.3% Average Weight Loss in TRIUMPH-1 Phase 3 Trial",
   ogDescription:
     "Eli Lilly's investigational triple agonist retatrutide produced 30.3% average weight loss at 104 weeks in the TRIUMPH-1 Phase 3 trial — comparable to bariatric surgery outcomes. Analysts project 2027 FDA approval.",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function RetatrutideTriumph1Phase3ResultsPage() {

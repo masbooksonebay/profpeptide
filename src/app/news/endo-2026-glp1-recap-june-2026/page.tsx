@@ -12,7 +12,7 @@ export const metadata = buildPageMetadata({
   ogTitle: "ENDO 2026 Recap — GLP-1 and Peptide Readouts from the Endocrine Society Meeting",
   ogDescription:
     "Recap of ENDO 2026 (Chicago, June 13–16): GLP-1s and physical activity, male fertility data, a CagriSema meta-analysis, real-world adherence, and Entera Bio's preclinical oral peptides.",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function Endo2026Glp1RecapJune2026Page() {

@@ -12,7 +12,7 @@ export const metadata = buildPageMetadata({
   ogTitle: "FDA Releases Official Agenda for July Peptide Compounding Meeting — What’s On It",
   ogDescription:
     "The FDA published the official Federal Register notice for its July 23-24 Pharmacy Compounding Advisory Committee meeting on peptide compounding.",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function FDAPcacMeetingAgendaJuly2026Page() {

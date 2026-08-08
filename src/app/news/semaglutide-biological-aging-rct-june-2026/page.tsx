@@ -12,7 +12,7 @@ export const metadata = buildPageMetadata({
   ogTitle: "Semaglutide Slowed Epigenetic Aging Markers in a Randomized Trial",
   ogDescription:
     "A secondary epigenetic-clock analysis of a 32-week randomized, double-blind, placebo-controlled trial in adults with HIV-associated lipohypertrophy found semaglutide slowed multiple aging biomarkers (Nature Communications, June 2026).",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function SemaglutideBiologicalAgingRctJune2026Page() {

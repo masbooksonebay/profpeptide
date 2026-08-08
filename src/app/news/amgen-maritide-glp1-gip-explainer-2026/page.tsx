@@ -12,7 +12,7 @@ export const metadata = buildPageMetadata({
   ogTitle: "What Is MariTide? Amgen's Once-Monthly GLP-1/GIP Drug Heads Into a Six-Study Phase 3 Program",
   ogDescription:
     "A peptide-antibody conjugate that activates GLP-1 while blocking GIP — the mirror image of tirzepatide — MariTide is now in an expanding Phase 3 program, including a trial switching patients off weekly GLP-1s.",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function AmgenMariTideGLP1GIPExplainer2026Page() {

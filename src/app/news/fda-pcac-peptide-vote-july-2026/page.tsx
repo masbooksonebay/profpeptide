@@ -14,7 +14,7 @@ export const metadata = buildPageMetadata({
     "FDA Panel Recommends Six Peptides for Compounding — What the Vote Actually Means",
   ogDescription:
     "An FDA advisory committee recommended six peptides for the 503A compounding list and rejected DSIP — but the votes are non-binding recommendations, not approvals.",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function FDAPcacPeptideVoteJuly2026Page() {

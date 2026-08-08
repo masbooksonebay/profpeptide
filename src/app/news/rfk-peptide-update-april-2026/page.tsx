@@ -12,7 +12,7 @@ export const metadata = buildPageMetadata({
   ogTitle: "RFK\u2019s Peptide Ruling: Where Things Stand in April 2026",
   ogDescription:
     "RFK Jr. announced 14 peptides would return to legal compounding status \u2014 but the FDA hasn\u2019t published the official list yet.",
-  ogImage: { url: "https://profpeptide.com/og-image.png", width: 1200, height: 630, alt: "Prof. Peptide" },
+  useDefaultOgImage: false,
 });
 
 export default function RFKPeptideUpdatePage() {
