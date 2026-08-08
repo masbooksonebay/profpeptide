@@ -24,7 +24,7 @@ export default function FDAPeptideCompoundingUpdatePage() {
         "headline": "FDA Moves to Restore Access to Key Peptides \u2014 Here\u2019s What It Means",
         "description": "The FDA posted a Federal Register notice in April 2026 considering lifting restrictions on seven Category 2 peptides. What researchers need to know.",
         "datePublished": "2026-04-16",
-        "dateModified": "2026-04-16",
+        "dateModified": "2026-08-08",
         "url": "https://profpeptide.com/news/fda-peptide-compounding-update-april-2026",
         "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },
@@ -36,12 +36,18 @@ export default function FDAPeptideCompoundingUpdatePage() {
           &larr; Back to News
         </Link>
 
-        <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">April 16, 2026 &middot; Last updated: April 16, 2026</p>
+        <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">April 16, 2026 &middot; Last updated: August 8, 2026</p>
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-6">
           FDA Moves to Restore Access to Key Peptides &mdash; Here&rsquo;s What It Means
         </h1>
 
         <div className="space-y-6 text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <div className="border-l-4 border-[#3A759F] pl-4 py-1">
+            <p className="text-[#16181B] dark:text-slate-100">
+              <strong>Update &mdash; August 8, 2026:</strong> Published the day the FDA scheduled its July advisory-committee meeting, this article described the agency &ldquo;considering&rdquo; seven peptides and noted that five had been removed from Category 2 as of that point. The fuller picture is now settled: the FDA&rsquo;s April 2026 action removed <strong>twelve</strong> peptide bulk substances from Category 2 (Docket FDA-2025-N-6895) &mdash; the seven reviewed at the July 23&ndash;24 PCAC (BPC-157, KPV, TB-500, MOTS-c, Epitalon, Semax, DSIP) plus five slated for a second meeting expected by the end of February 2027 (GHK-Cu, Melanotan II, LL-37, Dihexa, PEG-MGF). Removal from Category 2 is not authorization to compound. For the full picture, see{" "}
+              <Link href="/news/fda-peptides-loosen-glp1-compounding-tightens-2026" className="text-[#3A759F] hover:underline">Peptides Loosen, GLP-1 Compounding Tightens</Link>.
+            </p>
+          </div>
           <p>
             If you&rsquo;ve been following the peptide research space over the past few years, you know the regulatory landscape has been anything but stable. But as of April 2026, there&rsquo;s real reason for optimism &mdash; and it&rsquo;s worth breaking down exactly what&rsquo;s happening and what it means for the research community.
           </p>
