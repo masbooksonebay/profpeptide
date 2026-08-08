@@ -175,7 +175,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Science Based Peptides
 - **slug:** science-based-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** www.sciencebasedpeptides.com
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** No sitewide sale (compareAt null).
 
 ### Single compounds
@@ -183,18 +183,18 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | --- | --- | --- | --- | --- | --- | --- |
 | 5-Amino-1MQ | 10mg | $39.99 | $4.00 | — | ✗ | products/5-amino-1mq |
 | AOD-9604 | 10mg | $39.99 | $4.00 | — | ✓ | products/aod-9604 |
-| BPC-157 | 10mg | $39.99 | $4.00 | — | ✓ | products/bpc-157 |
+| BPC-157 | 10mg | $39.99 | $4.00 | $48.99 | ✗ | products/bpc-157 |
 | CJC-1295 | 10mg | $39.99 | $4.00 | — | ✓ | products/cjc-1295-no-dac |
 | DSIP | 5mg | $29.99 | $6.00 | — | ✓ | products/dsip |
 | Epitalon | 10mg | $29.99 | $3.00 | — | ✓ | products/epitalon |
 | GHK-Cu | 50mg | $29.99 | $0.60 | — | ✓ | products/ghk-cu |
-| GHK-Cu | 100mg | $57.99 | $0.58 | — | ✓ | products/ghk-cu |
+| GHK-Cu | 100mg | $57.99 | $0.58 | — | ✗ | products/ghk-cu |
 | Glutathione | 600mg | $37.99 | $0.06 | — | ✓ | products/glutathione |
 | Glutathione | 1500mg | $59.99 | $0.04 | — | ✓ | products/glutathione |
 | IGF-1 LR3 | 1mg | $69.99 | $69.99 | — | ✓ | products/igf-1 |
 | Ipamorelin | 5mg | $37.99 | $7.60 | — | ✓ | products/ipamorelin |
 | Ipamorelin | 10mg | $49.99 | $5.00 | — | ✓ | products/ipamorelin |
-| KPV | 10mg | $39.99 | $4.00 | — | ✓ | products/kpv |
+| KPV | 10mg | $39.99 | $4.00 | — | ✗ | products/kpv |
 | Melanotan I | 10mg | $34.99 | $3.50 | — | ✓ | products/melanotan-i |
 | Melanotan II | 10mg | $34.99 | $3.50 | — | ✓ | products/melanotan-ii |
 | MOTS-C | 10mg | $32.99 | $3.30 | — | ✓ | products/mots-c |
@@ -202,7 +202,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | NAD+ | 500mg | $69.99 | $0.14 | — | ✓ | products/nad-plus |
 | NAD+ | 1000mg | $74.99 | $0.07 | — | ✓ | products/nad-plus |
 | PT-141 | 10mg | $29.99 | $3.00 | — | ✓ | products/pt-141 |
-| Retatrutide (listed as GLP 3-(RT)) | 10mg | $69.99 | $7.00 | — | ✓ | products/GLP3-(RT) |
+| Retatrutide (listed as GLP 3-(RT)) | 10mg | $69.99 | $7.00 | — | ✗ | products/GLP3-(RT) |
 | Retatrutide (listed as GLP 3-(RT)) | 30mg | $199.99 | $6.67 | — | ✓ | products/GLP3-(RT) |
 | Selank | 5mg | $24.99 | $5.00 | — | ✓ | products/selank |
 | Selank | 10mg | $34.99 | $3.50 | — | ✓ | products/selank |
@@ -217,7 +217,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock |
 | --- | --- | --- | --- | --- | --- |
-| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $59.99 | not published | ✓ |
+| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $59.99 | not published | ✗ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $114.99 | not published | ✓ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 50mg | $97.99 | not published | ✓ |
 | KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $129.99 | not published | ✓ |
