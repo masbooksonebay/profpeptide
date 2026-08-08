@@ -1376,7 +1376,7 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "dsip", compoundName: "DSIP", vendor: "treasure-coast-peptides", sizeMg: 10, basePrice: 44.75, inStock: true, vendorSlug: "product/dsip-peptide/", regularPrice: 89, onSale: true },
   { compound: "epitalon", compoundName: "Epitalon", vendor: "treasure-coast-peptides", sizeMg: 10, basePrice: 32.75, inStock: true, vendorSlug: "product/epitalon/", regularPrice: 49.99, onSale: true },
   { compound: "epitalon", compoundName: "Epitalon", vendor: "treasure-coast-peptides", sizeMg: 50, basePrice: 93.99, inStock: true, vendorSlug: "product/epitalon/", regularPrice: 165, onSale: true },
-  { compound: "ghk-cu", compoundName: "GHK-Cu", vendor: "treasure-coast-peptides", sizeMg: 100, basePrice: 42, inStock: true, vendorSlug: "product/ghk-cu-peptide/", regularPrice: 69.99, onSale: true },
+  { compound: "ghk-cu", compoundName: "GHK-Cu", vendor: "treasure-coast-peptides", sizeMg: 100, basePrice: 42, inStock: false, vendorSlug: "product/ghk-cu-peptide/", regularPrice: 69.99, onSale: true },
   { compound: "ghrp-6", compoundName: "GHRP-6", vendor: "treasure-coast-peptides", sizeMg: 10, basePrice: 58, inStock: true, vendorSlug: "product/ghrp-6-10mg/", regularPrice: 79.99, onSale: true },
   { compound: "glutathione", compoundName: "Glutathione", vendor: "treasure-coast-peptides", sizeMg: 1500, basePrice: 40, inStock: true, vendorSlug: "product/glutathione-1500mg/", regularPrice: 89, onSale: true },
   { compound: "igf-1-lr3", compoundName: "IGF-1 LR3", vendor: "treasure-coast-peptides", sizeMg: 1, basePrice: 45.25, inStock: true, vendorSlug: "product/igf-1lr3-1mg/", regularPrice: 99, onSale: true },

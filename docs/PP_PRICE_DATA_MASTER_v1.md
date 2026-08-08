@@ -2288,7 +2288,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 ## VENDOR: Treasure Coast
 - **slug:** treasure-coast-peptides | **code:** PROFPEPTIDE | **discount:** 15% off | **url:** treasurecoastpeptides.com
-- **traffic:** (not pulled) | **pulled:** July 31 2026
+- **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** Check product-level sale_price each refresh; PP code stacks.
 
 ### Single compounds
@@ -2304,7 +2304,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | DSIP | 10mg | $44.75 | $4.47 | $89.00 | ✓ | product/dsip-peptide/ |
 | Epitalon | 10mg | $32.75 | $3.27 | $49.99 | ✓ | product/epitalon/ |
 | Epitalon | 50mg | $93.99 | $1.88 | $165.00 | ✓ | product/epitalon/ |
-| GHK-Cu | 100mg | $42.00 | $0.42 | $69.99 | ✓ | product/ghk-cu-peptide/ |
+| GHK-Cu | 100mg | $42.00 | $0.42 | $69.99 | ✗ | product/ghk-cu-peptide/ |
 | GHRP-6 | 10mg | $58.00 | $5.80 | $79.99 | ✓ | product/ghrp-6-10mg/ |
 | Glutathione | 1500mg | $40.00 | $0.03 | $89.00 | ✓ | product/glutathione-1500mg/ |
 | IGF-1 LR3 | 1mg | $45.25 | $45.25 | $99.00 | ✓ | product/igf-1lr3-1mg/ |
