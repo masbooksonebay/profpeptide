@@ -5,7 +5,6 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
-import JsonLd from "@/components/JsonLd";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -37,17 +36,6 @@ export default function PureRawzCouponPage() {
   const autoApply = codeAutoApplies("purerawz");
   const shopUrl = makeShopUrlFor("purerawz");
   return (
-    <>
-      <JsonLd data={{
-        "@context": "https://schema.org",
-        "@type": "Offer",
-        "name": "PureRawz Discount Code - Save 10%",
-        "description": "Use code PROF10 for 10% off at PureRawz",
-        "url": "https://profpeptide.com/coupons/purerawz",
-        "validFrom": "2026-05-01",
-        "priceValidUntil": "2026-05-31",
-        "seller": { "@type": "Organization", "name": "PureRawz" },
-      }} />
       <div className="section max-w-3xl">
         <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
           &larr; Back to Discount Codes
@@ -165,6 +153,5 @@ export default function PureRawzCouponPage() {
 
         </div>
       </div>
-    </>
   );
 }

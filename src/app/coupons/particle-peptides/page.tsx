@@ -6,6 +6,7 @@ import { CouponPills } from "@/components/CouponPills";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { RegionPill } from "@/components/RegionPill";
+import { vendors } from "@/data/vendors";
 
 function FAQItem({ q, a }: { q: string; a: string }) {
  const [open, setOpen] = useState(false);
@@ -28,6 +29,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function ParticlePeptidesCouponPage() {
+ const v = vendors["particle-peptides"];
  return (
  <div className="section max-w-3xl">
  <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -117,9 +119,9 @@ export default function ParticlePeptidesCouponPage() {
  <CopyCode code="PROFPEPTIDE" size="large" />
  <CouponPills slug="particle-peptides" />
  <a
- href="https://particlepeptides.com/en/"
+ href={v.url}
  target="_blank"
- rel="noopener noreferrer"
+ rel="noopener noreferrer sponsored"
  className="btn-primary w-full text-center block"
  >
  Shop Particle Peptides</a>
