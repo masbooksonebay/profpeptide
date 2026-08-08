@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { vendors } from "@/data/vendors";
+import { articles } from "@/data/news";
 
 const IMAGE_SIZE = { width: 1200, height: 630 };
 
@@ -390,4 +391,104 @@ export async function generateCouponOg(slug: string): Promise<ImageResponse> {
     );
 
   return new ImageResponse(element, { ...IMAGE_SIZE, fonts });
+}
+
+// ============================================================================
+// News-article OG card — the article's OWN headline on a white card, the way a
+// coupon card shows the vendor name. Same ImageResponse + Inter-from-disk font
+// loading + per-page-route pattern as generateCouponOg above; only the layout and
+// palette differ (approved white / #3A759F design). Wired by each article's
+// opengraph-image.tsx + twitter-image.tsx. NEVER render a date/number/anything
+// time-sensitive here — OG images cache per URL permanently on X and iMessage.
+// ============================================================================
+
+const NEWS_INK = "#16181B";
+const NEWS_ACCENT = "#3A759F";
+const NEWS_HAIRLINE = "#D9DEE4";
+const NEWS_MUTED = "#6B7280";
+
+// Fonts + the Pp mark tile (public/pp-mark.png — the approved 1254² opaque dark
+// square; a dark tile is exactly what the white card wants). Read from disk and
+// bundled for /news/** via outputFileTracingIncludes in next.config.js — keep in sync.
+interface NewsAssets {
+  mark: string;
+  fonts: Assets["fonts"];
+}
+let newsAssetsPromise: Promise<NewsAssets> | null = null;
+function loadNewsAssets(): Promise<NewsAssets> {
+  if (!newsAssetsPromise) {
+    newsAssetsPromise = (async () => {
+      const root = process.cwd();
+      const [mark, regular, medium, bold, extraBold] = await Promise.all([
+        readFile(join(root, "public/pp-mark.png")),
+        readFile(join(root, "public/fonts/Inter-Regular.ttf")),
+        readFile(join(root, "public/fonts/Inter-Medium.ttf")),
+        readFile(join(root, "public/fonts/Inter-Bold.ttf")),
+        readFile(join(root, "public/fonts/Inter-ExtraBold.ttf")),
+      ]);
+      return {
+        mark: `data:image/png;base64,${mark.toString("base64")}`,
+        fonts: [
+          { name: "Inter", data: regular, weight: 400, style: "normal" },
+          { name: "Inter", data: medium, weight: 500, style: "normal" },
+          { name: "Inter", data: bold, weight: 700, style: "normal" },
+          { name: "Inter", data: extraBold, weight: 800, style: "normal" },
+        ],
+      };
+    })();
+  }
+  return newsAssetsPromise;
+}
+
+function newsTitleFor(slug: string): string {
+  return articles.find((a) => a.slug === slug)?.title ?? "Peptide Research News";
+}
+
+export function newsAltFor(slug: string): string {
+  return `${newsTitleFor(slug)} — Prof. Peptide News`;
+}
+
+// Adaptive headline size so the longest title (~103 chars, the 503B piece) stays
+// 3–4 lines in the 1056px content column without overrunning 630px, while short
+// titles still read large. Buckets, not content-measured — same spirit as codeFontSize.
+function headlineFontSize(len: number): number {
+  if (len <= 55) return 66;
+  if (len <= 78) return 60;
+  if (len <= 95) return 54;
+  return 48; // up to ~103
+}
+
+function NewsCard({ mark, title }: { mark: string; title: string }) {
+  return (
+    <div style={{ width: 1200, height: 630, display: "flex", flexDirection: "column", backgroundColor: WHITE, fontFamily: "Inter" }}>
+      {/* accent rule across the very top */}
+      <div style={{ display: "flex", width: 1200, height: 8, backgroundColor: NEWS_ACCENT }} />
+      <div style={{ display: "flex", flexDirection: "column", flexGrow: 1, justifyContent: "space-between", padding: "56px 72px" }}>
+        {/* lockup + headline */}
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={mark} width={84} height={84} alt="" style={{ width: 84, height: 84, borderRadius: 12 }} />
+            <div style={{ display: "flex", flexDirection: "column", marginLeft: 22 }}>
+              <div style={{ display: "flex", fontSize: 40, fontWeight: 800, color: NEWS_INK, letterSpacing: -1 }}>Prof. Peptide</div>
+              <div style={{ display: "flex", fontSize: 20, fontWeight: 700, color: NEWS_ACCENT, letterSpacing: 8, marginTop: 6 }}>NEWS</div>
+            </div>
+          </div>
+          <div style={{ display: "flex", marginTop: 48, maxWidth: 1056, fontSize: headlineFontSize(title.length), fontWeight: 800, color: NEWS_INK, lineHeight: 1.12, letterSpacing: -1.5 }}>
+            {title}
+          </div>
+        </div>
+        {/* foot: hairline + url */}
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex", width: 1056, height: 1, backgroundColor: NEWS_HAIRLINE }} />
+          <div style={{ display: "flex", marginTop: 22, fontSize: 26, fontWeight: 500, color: NEWS_MUTED }}>profpeptide.com/news</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export async function generateNewsOg(slug: string): Promise<ImageResponse> {
+  const { mark, fonts } = await loadNewsAssets();
+  return new ImageResponse(<NewsCard mark={mark} title={newsTitleFor(slug)} />, { ...IMAGE_SIZE, fonts });
 }

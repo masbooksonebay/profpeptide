@@ -25,32 +25,43 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const couponsDir = join(root, "src/app/coupons");
 
 const REQUIRED = ["opengraph-image.tsx", "twitter-image.tsx"];
 
-const slugs = readdirSync(couponsDir).filter((name) => {
-  const dir = join(couponsDir, name);
-  return statSync(dir).isDirectory() && existsSync(join(dir, "page.tsx"));
-});
+// Every per-item page that wants its OWN card needs both route files. Coupon pages
+// (generateCouponOg) and news ARTICLE pages (generateNewsOg) both qualify — each is a
+// slug directory with a page.tsx. The /news hub's page.tsx sits directly in src/app/news
+// (not a subdirectory), so it isn't scanned here; it ships its own routes separately.
+const BASES = [
+  { label: "coupon page", dir: join(root, "src/app/coupons"), gen: "generateCouponOg" },
+  { label: "news article", dir: join(root, "src/app/news"), gen: "generateNewsOg" },
+];
 
 const offenders = [];
-for (const slug of slugs.sort()) {
-  const missing = REQUIRED.filter((f) => !existsSync(join(couponsDir, slug, f)));
-  if (missing.length) offenders.push({ slug, missing });
+let total = 0;
+for (const { label, dir, gen } of BASES) {
+  const slugs = readdirSync(dir).filter((name) => {
+    const d = join(dir, name);
+    return statSync(d).isDirectory() && existsSync(join(d, "page.tsx"));
+  });
+  for (const slug of slugs.sort()) {
+    total++;
+    const missing = REQUIRED.filter((f) => !existsSync(join(dir, slug, f)));
+    if (missing.length) offenders.push({ slug: `${label} ${slug}`, missing, gen });
+  }
 }
 
 if (offenders.length) {
-  console.error(`\ncheck:og-routes FAILED — ${offenders.length} coupon page(s) missing an OG/Twitter route.`);
-  for (const { slug, missing } of offenders) {
-    console.error(`    • ${slug} — missing ${missing.join(" + ")}`);
+  console.error(`\ncheck:og-routes FAILED — ${offenders.length} page(s) missing an OG/Twitter route.`);
+  for (const { slug, missing, gen } of offenders) {
+    console.error(`    • ${slug} — missing ${missing.join(" + ")} (wrap ${gen}("<slug>"))`);
   }
   console.error(
-    `  Each coupon page needs opengraph-image.tsx AND twitter-image.tsx (one-line wrappers around\n` +
-    `  generateCouponOg("<slug>")). Without them the page falls back to the site-wide og-image.png\n` +
-    `  default instead of its own per-vendor card. Copy the routes from any existing coupon page.`,
+    `  Each item page needs opengraph-image.tsx AND twitter-image.tsx (one-line wrappers around\n` +
+    `  generateCouponOg / generateNewsOg). Without them the page falls back to the site-wide\n` +
+    `  og-image.png default instead of its own card. Copy the routes from any sibling page.`,
   );
   process.exit(1);
 }
 
-console.log(`check:og-routes OK — all ${slugs.length} coupon pages ship their own OpenGraph + Twitter card routes.`);
+console.log(`check:og-routes OK — all ${total} coupon + news-article pages ship their own OpenGraph + Twitter card routes.`);
