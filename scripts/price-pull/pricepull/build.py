@@ -169,6 +169,16 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
     if not product.get('variations') and vm.is_kit_name(name):
         yield ('exclude', 'multi-vial kit / pack (by name)'); return
 
+    # Ten-vial-kit vendor (Royal) landing-page products — "buy-X-online" / "X-kits" slugs that carry
+    # NO provable 'Nmg x 10 vials' token, so the per-vial /10 in extract_rows never fires and the full
+    # kit price leaks as a single (Retatrutide 40mg $860 vs the real 30mg $185 / 50mg $285 curve).
+    # NARROW, vendor-scoped, SLUG-only — deliberately NOT bare 'kit' (that word is on Royal's LEGIT
+    # '…-Nmg-vial-kit' curve, correctly divided) and 'buy-X-online' is also Behemoth's normal slug
+    # format, so this only fires for the ten-vial-kit vendor. Excluded, not divided: the divisor
+    # isn't provable from a landing page (÷10 undershoots the curve, so exclusion is the safe call).
+    if ten_vial_kit and vm.is_kit_landing(vslug):
+        yield ('exclude', 'multi-vial kit landing page (by slug)'); return
+
     dec = decoders.decode(vendor, name)
     dec_size = None                         # decoder-supplied mg (e.g. Ascension R-30 -> 30)
     if dec:
@@ -180,7 +190,7 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
             yield ('exclude', 'clinical/other'); return
         backlog = '[backlog]' in disp
     else:
-        sc = N.scope(name)
+        sc = N.scope(name, vslug)
         if sc != 'peptide':
             yield ('exclude', sc); return
         k, slug = decoders.match(name)

@@ -138,8 +138,14 @@ _SUPPLY = re.compile(
     r'syringe|needle|alcohol\s*(pad|swab|prep)|cold\s*pack|shipping|overnight|'
     r'peptide\s*case|gift\s*card|sample\s*pack|test\s*kit|glassware|\bmg\s*scale\b',
     re.I)
-_ORAL = re.compile(r'\bcapsule|\btablet|sublingual|troche|lozenge|\boral\b|'
+_ORAL = re.compile(r'\bcapsules?\b|\btablets?\b|\btabs?\b|\bcaps?\b(?!-?\d)|\bsoftgels?\b|'
+                   r'\bpills?\b|\bdroppers?\b|sublingual|troche|lozenge|\boral\b|'
                    r'dissolving|\bstrips?\b|\bmelts?\b', re.I)
+# Oral count-pack in the NAME or SLUG — "500mcg 100 tabs bottle" / "…-100ct" / "…-60caps". A
+# number-then-count-word is the reliable capsule/tablet marker; the (?!-?\d) tail rejects a code
+# like LL-37 "CAP-18" (a count word followed by a digit is not a count), and the required leading
+# \d rejects "pentadecapeptide" (BPC-157's scientific name — has "cap" but no digit).
+_COUNT_PACK = re.compile(r'\d+[\s-]*(?:tabs?|tablets?|caps?|capsules?|softgels?|pills?|ct|count|bottles?)\b(?!-?\d)', re.I)
 _OUT_OF_SCOPE = re.compile(
     r'ligandrol|lgd-?4033|ostarine|mk-?2866|rad-?140|gw-?501516|cardarine|s-?23|s-?4|'
     r'yk-?11|sr-?9009|andarine|\bsarm\b|'
@@ -155,13 +161,17 @@ _OUT_OF_SCOPE = re.compile(
     re.I)
 
 
-def scope(name):
-    """Classify a raw product name: 'peptide' (in scope) or an exclusion reason."""
+def scope(name, slug=''):
+    """Classify a raw product (name + optional slug): 'peptide' (in scope) or an exclusion reason.
+    Oral-form detection tests the SLUG as well as the NAME — vendors put the delivery form only in
+    the URL while the display name stays clean (mots-c-30mg-oral-dropper, bpc-157-…-100-tabs-bottle),
+    so a name-only test lets tablets / droppers / capsule bottles leak in as single vials."""
+    hay = f"{slug} {name}"
     if _SUPPLY.search(name):
         return 'supply'
     if re.search(r'\btopical\b|transdermal', name, re.I):   # topical/transdermal not $/mg-comparable
         return 'topical/transdermal'
-    if _ORAL.search(name):
+    if _ORAL.search(hay) or _COUNT_PACK.search(hay):
         return 'oral/capsule'
     if _OUT_OF_SCOPE.search(name):
         return 'out-of-scope (SARMs/Rx/cosmetics)'

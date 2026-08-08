@@ -125,6 +125,20 @@ def is_kit_name(name):
     return bool(_KIT_RE.search(name or ""))
 
 
+# Ten-vial-kit landing pages: "buy-X-online" / "X-kits" slugs whose name/description carries no
+# provable ten-vial token, so extract_rows' /10 never fires and the full kit price would leak as a
+# single. NARROW + slug-only ON PURPOSE — bare 'kit' is on Royal's legit '…-Nmg-vial-kit' curve
+# (correctly divided) and 'buy-X-online' is Behemoth's normal slug, so classify() consults this ONLY
+# for the ten-vial-kit vendor. FP-scanned: matches the 3 Royal landing pages, no legit row.
+_KIT_LANDING = re.compile(r'buy-[a-z0-9-]*-online|-kits\b', re.I)
+
+
+def is_kit_landing(slug):
+    """True if a SLUG is a ten-vial-kit landing page (buy-X-online / X-kits). Slug-only; caller gates
+    it behind the ten-vial-kit registry flag."""
+    return bool(_KIT_LANDING.search(slug or ""))
+
+
 _KIT10 = re.compile(r'(\d+(?:\.\d+)?)\s*mg\s*x\s*10\s*vials', re.I)
 # Royal also sells 10-vial kits named "...Kit" (not "...x10vials"). "Kit" alone is NOT
 # proof of 10 vials — some "Kit" products describe a single vial. So gate the /10 on an
