@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/check-links.mjs && node scripts/check-doc-integrity.mjs && node scripts/check-prices-sync.mjs && node scripts/check-grids.mjs && node scripts/check-freshness.mjs && node scripts/check-surfaces.mjs && node scripts/check-og-routes.mjs && node scripts/check-coupon-prose.mjs && node scripts/check-counts.mjs && node scripts/check-prices.mjs && node scripts/gen-vendor-slugs.mjs && next build && next-sitemap",
+    "build": "node scripts/check-links.mjs && node scripts/check-doc-integrity.mjs && node scripts/check-prices-sync.mjs && node scripts/check-grids.mjs && node scripts/check-freshness.mjs && node scripts/check-surfaces.mjs && node scripts/check-og-routes.mjs && node scripts/check-coupon-prose.mjs && node scripts/check-counts.mjs && node scripts/check-prices.mjs && node scripts/gen-vendor-slugs.mjs && next build && next-sitemap && node scripts/check-sitemap-noindex.mjs",
     "start": "next start",
     "lint": "next lint",
     "check:vendors": "node scripts/check-vendors.mjs",
@@ -18,7 +18,8 @@
     "check:prices": "node scripts/check-prices.mjs",
     "check:doc-integrity": "node scripts/check-doc-integrity.mjs",
     "check:prices-sync": "node scripts/check-prices-sync.mjs",
-    "check:news-tags": "node scripts/check-news-tags.mjs"
+    "check:news-tags": "node scripts/check-news-tags.mjs",
+    "check:sitemap-noindex": "node scripts/check-sitemap-noindex.mjs"
   },
   "dependencies": {
     "fuse.js": "^7.3.0",
