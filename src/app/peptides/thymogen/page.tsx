@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { VendorCode } from "@/components/VendorCode";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
@@ -52,7 +53,7 @@ const faqs = [
       <>
         Thymogen is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
         <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
-          Peptides.gg discount code (PROF15) &rarr;
+          Peptides.gg discount code (<VendorCode slug="peptides-gg" />) &rarr;
         </Link>
         .
       </>
@@ -181,7 +182,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
           <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
-            Peptides.gg discount code (PROF15) &rarr;
+            Peptides.gg discount code (<VendorCode slug="peptides-gg" />) &rarr;
           </Link>{" "}
           for current options.
         </p>
@@ -355,7 +356,7 @@ export default function ThymogenPage() {
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Thymogen is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
             <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
-              Peptides.gg discount code (PROF15) &rarr;
+              Peptides.gg discount code (<VendorCode slug="peptides-gg" />) &rarr;
             </Link>{" "}
             for current options.
           </p>

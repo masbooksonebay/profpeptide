@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { VendorCode } from "@/components/VendorCode";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
@@ -224,7 +225,7 @@ export default function BioregulatorsPage() {
           <div className="space-y-4">
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the deep Khavinson bioregulator line &mdash; Epitalon, Pinealon, Cortagen, Thymogen, Cardiogen, and more. See the{" "}
-              <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">peptides.gg discount code (PROF15) &rarr;</Link>{" "}
+              <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">peptides.gg discount code (<VendorCode slug="peptides-gg" />) &rarr;</Link>{" "}
               for current options, and verify a Certificate of Analysis before purchase. New to peptide research?{" "}
               <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
             </p>

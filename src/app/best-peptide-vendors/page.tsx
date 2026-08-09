@@ -3,7 +3,7 @@ import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { CopyCode } from "@/components/CopyCode";
 import { vendors as vendorRegistry } from "@/data/vendors";
-import { FEATURED_VENDORS_REVIEWED_DATE } from "@/data/reviewed-dates";
+import { FEATURED_VENDORS_REVIEWED_DATE, FEATURED_VENDORS_REVIEWED_DATE_ISO } from "@/data/reviewed-dates";
 
 export const metadata = {
   alternates: { canonical: "/best-peptide-vendors" },
@@ -129,7 +129,7 @@ export default function BestPeptideVendorsPage() {
         "headline": "Featured Peptide Vendors",
         "description": "Alphabetical list of the peptide vendors Prof. Peptide has vetted for third-party testing, COA transparency, purity standards, shipping reliability, and community reputation.",
         "datePublished": "2026-04-16",
-        "dateModified": "2026-06-25",
+        "dateModified": FEATURED_VENDORS_REVIEWED_DATE_ISO,
         "url": "https://profpeptide.com/best-peptide-vendors",
         "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" },
         "author": { "@type": "Organization", "name": "Prof. Peptide" },

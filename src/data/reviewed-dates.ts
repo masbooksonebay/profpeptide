@@ -28,3 +28,9 @@ export const FEATURED_VENDORS_REVIEWED_ISO = "2026-08";
 /** "Month Year" the /best-peptide-vendors "Updated …" badge renders — derived from the ISO
  *  above so the badge, and any other on-page "when", can't silently go stale month to month. */
 export const FEATURED_VENDORS_REVIEWED_DATE = monthYear(FEATURED_VENDORS_REVIEWED_ISO);
+
+/** Full ISO date (first of the review month) for the JSON-LD `dateModified`, which wants a
+ *  YYYY-MM-DD value. Same single source as the badge, so structured data and the visible
+ *  stamp can't disagree (they did: dateModified sat at a hardcoded 2026-06-25 while the badge
+ *  read August). */
+export const FEATURED_VENDORS_REVIEWED_DATE_ISO = `${FEATURED_VENDORS_REVIEWED_ISO}-01`;
