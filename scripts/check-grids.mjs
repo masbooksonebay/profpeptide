@@ -72,6 +72,11 @@ const ONBOARDING_BACKLOG = {
   // Onboarded 2026-08-07 (coupon page + registry live). WooCommerce; no price-pull pass run yet.
   // Coupon page renders NO <VendorProductGrid> until rows land, so this is a thin-page WARN only.
   "real-peptides":      { reason: "onboarded 2026-08; WooCommerce catalog not yet price-pulled", since: "2026-08-07" },
+  // Onboarded 2026-08-09 (coupon page + registry live). WooCommerce; no price-pull pass yet.
+  // Coupon page renders NO product grid until rows land — thin-page WARN only. NOTE: AMP runs
+  // recurring "Supply" SKUs (bi-monthly/quarterly/biannual) on some GLP items; a future pull must
+  // exclude those so subscription rows don't pollute the one-time grid.
+  "amp-peptides":       { reason: "onboarded 2026-08; WooCommerce catalog not yet price-pulled (exclude subscription Supply SKUs)", since: "2026-08-09" },
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────

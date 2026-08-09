@@ -109,6 +109,22 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/amino-x",
     facts: { coa: "per-batch", purityStandard: "99%+", labName: "Kovera Labs", testMethods: "RP-HPLC, LC-MS" },
   },
+  // Onboarded 2026-08 (GoAffPro; PROFPEPTIDE bound to the affiliate account, 15% verified in-cart).
+  // Janoshik is VENDOR-STATED only: the sole public "cert" is a labelled "Sample CoA" (an on-page
+  // table — BPC-157, lot AMP-2026-001, 99.42%, HPLC/ESI-MS — "actual results vary by lot"), not a
+  // real Janoshik document; lot-specific COAs are email-request only. So Janoshik goes in labClaim
+  // (attributed), NOT labName (which requires a verified COA). purityStandard/testMethods are the
+  // vendor's stated figures. coa: on-request. WooCommerce checkout is case-insensitive (uppercase
+  // PROFPEPTIDE applied cleanly in-cart).
+  "amp-peptides": {
+    name: "AMP Peptides",
+    code: "PROFPEPTIDE",
+    discount: "15% off",
+    region: "US",
+    url: "https://amp-peptides.com/?ref=PROFPEPTIDE",
+    detailPage: "/coupons/amp-peptides",
+    facts: { purityStandard: "99%+", coa: "on-request", labClaim: "Janoshik Analytical, independent third-party lab", testMethods: "HPLC, ESI-MS" },
+  },
   "ascension-peptides": {
     name: "Ascension Peptides",
     code: "PROFPEPTIDE",

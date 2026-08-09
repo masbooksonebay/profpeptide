@@ -35,6 +35,7 @@
 export const couponLead: Record<string, string> = {
   "aero-peptides": "≥98% purity, third-party tested; COA on request", // C
   "almighty-peptides": "Bioviridian-tested, BOGO on most", // A
+  "amp-peptides": "99%+ purity; lot-specific Janoshik COAs on request", // C (sample COA only — no batch-matched claim)
   "alpha-peptides": "ISO-17025 lab, per-lot 5-test panel", // B
   "ameano-peptides": "Janoshik-tested to ≥99%", // A
   "amino-club": "ISO-17025 lab, ≥99% purity, per-batch COAs", // B
