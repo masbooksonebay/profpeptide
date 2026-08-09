@@ -49,6 +49,13 @@
     "url": "https://aminox.net/?coupon=PROF15"
   },
   {
+    "slug": "amp-peptides",
+    "name": "AMP Peptides",
+    "code": "PROFPEPTIDE",
+    "discount": "15% off",
+    "url": "https://amp-peptides.com/?ref=PROFPEPTIDE"
+  },
+  {
     "slug": "ascension-peptides",
     "name": "Ascension Peptides",
     "code": "PROFPEPTIDE",
