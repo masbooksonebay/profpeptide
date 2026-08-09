@@ -99,6 +99,14 @@ const nextConfig = {
         destination: "/news/rfk-peptide-ban-2026",
         permanent: true,
       },
+      // "nad" is the natural shorthand for NAD+, whose price page is routed at nad-plus.
+      // /prices/nad 404s (not a generateStaticParams slug); catch the guess. Nothing links
+      // to it internally — this is purely for typed/guessed URLs.
+      {
+        source: "/prices/nad{/}?",
+        destination: "/prices/nad-plus",
+        permanent: true,
+      },
       // Retired vendors: permanently redirect their coupon pages to the hub.
       // page.tsx kept on disk; excluded from the sitemap in next-sitemap.config.js.
       // (Particle Peptides restored 2026-08 — redirect removed; page resolves again.)

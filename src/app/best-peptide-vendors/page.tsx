@@ -3,6 +3,7 @@ import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { CopyCode } from "@/components/CopyCode";
 import { vendors as vendorRegistry } from "@/data/vendors";
+import { FEATURED_VENDORS_REVIEWED_DATE } from "@/data/reviewed-dates";
 
 export const metadata = {
   alternates: { canonical: "/best-peptide-vendors" },
@@ -136,10 +137,12 @@ export default function BestPeptideVendorsPage() {
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Featured Vendors" }])} />
 
       <div className="section max-w-3xl">
-        {/* Hand-set review stamp (a human-review date is correctly hand-maintained, not derived). The
-            H1 no longer carries its own date — that produced two months on one screen (H1 "July" vs
-            this badge "August"). The badge is the single source of the "when" for this page. */}
-        <span className="tag mb-3 inline-block">Updated August 2026</span>
+        {/* Editorial review stamp — DERIVED from FEATURED_VENDORS_REVIEWED_ISO (a hand-set
+            human-review date, bumped when the curated list is re-vetted), not typed inline.
+            The H1 no longer carries its own date — that produced two months on one screen
+            (H1 "July" vs this badge "August") and put a stale "(July 2026)" in the title.
+            The constant is now the single source of this page's "when," so it can't drift. */}
+        <span className="tag mb-3 inline-block">Updated {FEATURED_VENDORS_REVIEWED_DATE}</span>
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">
           Featured Peptide Vendors
         </h1>
