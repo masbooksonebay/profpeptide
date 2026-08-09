@@ -103,7 +103,7 @@ export default function RoyalPeptidesCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Royal Peptides manufactures all compounds in cGMP and ISO-certified laboratories, with every product independently third-party tested to 99%+ purity standards. Each batch undergoes three pre-shipment verification steps: purity testing, pH testing, and vacuum-integrity testing &mdash; ensuring compound integrity not just in terms of chemical purity, but physical packaging integrity prior to dispatch. Full traceability and documentation is maintained for every batch as part of their stated &quot;radical transparency&quot; commitment. Royal Peptides also proactively alerts customers about scam and copycat websites using similar domain names, reflecting their focus on supply chain integrity.
+ Royal Peptides publishes independent third-party test reports from Janoshik Analytical, each carrying a batch number and individually verifiable by task number and code at verify.janoshik.com; the published set spans Retatrutide, Tirzepatide, MOTS-c, GHK-Cu, TB-500, BPC-157, Cagrilintide, KPV, NAD+ and blends, and the reports document compound identity and HPLC purity against the tested batch. Royal states it manufactures in cGMP and ISO-certified laboratories and runs pre-shipment purity, pH, and vacuum-integrity checks under a stated &quot;radical transparency&quot; commitment; those manufacturing and packaging claims are Royal&rsquo;s own and are not part of the Janoshik reports, which cover identity and purity. Royal cites a 99%+ purity standard. It also proactively alerts customers about scam and copycat websites using similar domain names.
  </p>
  </div>
 
@@ -141,7 +141,7 @@ export default function RoyalPeptidesCouponPage() {
  />
  <FAQItem
  q="What testing does Royal Peptides conduct?"
- a="Royal Peptides manufactures in cGMP and ISO-certified labs and independently third-party tests every product to 99%+ purity. Each batch undergoes purity testing, pH testing, and vacuum-integrity testing before dispatch. Full traceability documentation is maintained for every batch."
+ a="Royal Peptides publishes independent Janoshik Analytical test reports, each tied to a batch number and individually verifiable by task number and code at verify.janoshik.com; the reports document compound identity and HPLC purity for the tested batch. Royal separately states that it manufactures in cGMP/ISO-certified labs and runs purity, pH, and vacuum-integrity checks before dispatch — those are the vendor's manufacturing and packaging claims, not part of the Janoshik reports. Its stated purity standard is 99%+."
  />
  <FAQItem
  q="Where does Royal Peptides ship from?"
