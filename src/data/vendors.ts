@@ -286,7 +286,7 @@ export const vendors: Record<string, Vendor> = {
     code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
-    url: "https://midwestpeptide.com?ref=PROF10",
+    url: "https://midwestpeptide.com?ref=PROFPEPTIDE",
     detailPage: "/coupons/midwest-peptide",
     facts: { coa: "per-batch", labName: "ILS Laboratories, Freedom Diagnostics", labAccreditation: "ISO/IEC 17025", purityStandard: "≥99%", testMethods: "RP-HPLC-UV, mass spectrometry", contaminants: "Heavy metals (ICP-MS, USP <233>), endotoxin (LAL), sterility (PCR), fentanyl screen" },
   },
