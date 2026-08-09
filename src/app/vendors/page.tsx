@@ -7,8 +7,15 @@ export const metadata = {
   title: "Verified Vendors — Research Peptide Suppliers | Prof. Peptide",
   description:
     "An alphabetical directory of the research-peptide vendors we profile, each with its discount code and savings. Select a vendor to open its full profile.",
-  // DIRECTIVE (Mark to confirm): keep this index out of search but let crawlers
-  // follow through to the individual vendor profile pages.
+  // CONFIRMED (Aug 2026): noindex, follow — deliberate and settled.
+  // /vendors is a thin directory that duplicates /coupons on vendors, codes,
+  // discounts, and link targets (every card links to /coupons/<slug>) but carries
+  // less content. Indexing it would create a thin competitor to /coupons for the
+  // same queries. noindex keeps it out of search; follow: true lets crawlers reach
+  // every vendor profile through it. The nav/footer "Verified Vendors" link stays —
+  // this page exists to serve READERS a scannable all-43 directory, not Google.
+  // It must also stay OUT of the sitemap (next-sitemap.config.js DROP_EXACT) so the
+  // noindex-in-sitemap contradiction can't return.
   robots: { index: false, follow: true },
 };
 

@@ -53,8 +53,15 @@ const DROP_PATTERNS = [
 ];
 
 // Exact paths to drop: noindex pages (must match the page's robots metadata).
+// EVERY page carrying `robots: { index: false }` must be listed here — a noindex
+// page in the sitemap is a mixed signal (crawl+index via sitemap, don't-index on
+// arrival) and wastes crawl budget. /vendors + /vendor-testing-index were noindex
+// but leaked into the sitemap until Aug 2026; keep this set in lockstep with the
+// pages' robots metadata.
 const DROP_EXACT = new Set([
   "/contact", // src/app/contact -> metadata.robots { index: false }
+  "/vendors", // src/app/vendors -> metadata.robots { index: false } (thin directory duplicating /coupons)
+  "/vendor-testing-index", // src/app/vendor-testing-index/layout -> { index: false } (under construction)
   "/prototype/profile", // design sandbox -> metadata.robots { index: false }
   "/prototype/logo", // logo comparison (dev) -> metadata.robots { index: false }
 ]);
