@@ -99,12 +99,27 @@ const nextConfig = {
         destination: "/news/rfk-peptide-ban-2026",
         permanent: true,
       },
-      // "nad" is the natural shorthand for NAD+, whose price page is routed at nad-plus.
-      // /prices/nad 404s (not a generateStaticParams slug); catch the guess. Nothing links
-      // to it internally — this is purely for typed/guessed URLs.
+      // Price-page shorthand redirects: the common name differs from the routed slug, so the
+      // natural guess 404s. Catch each (permanent 308). Purely for typed/guessed URLs —
+      // nothing links to these internally.
       {
-        source: "/prices/nad{/}?",
+        source: "/prices/nad{/}?", // NAD+ routed at nad-plus
         destination: "/prices/nad-plus",
+        permanent: true,
+      },
+      {
+        source: "/prices/kisspeptin-10{/}?", // display name "Kisspeptin-10", routed at kisspeptin
+        destination: "/prices/kisspeptin",
+        permanent: true,
+      },
+      {
+        source: "/prices/melanotan-2{/}?", // digit form; routed at melanotan-ii (roman numeral)
+        destination: "/prices/melanotan-ii",
+        permanent: true,
+      },
+      {
+        source: "/prices/melanotan-1{/}?", // digit form; routed at melanotan-i (roman numeral)
+        destination: "/prices/melanotan-i",
         permanent: true,
       },
       // Retired vendors: permanently redirect their coupon pages to the hub.
