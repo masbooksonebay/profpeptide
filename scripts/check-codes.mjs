@@ -94,10 +94,22 @@ function walk(dir, out = []) {
   }
   return out;
 }
+// --- Tier 3: STRAY code literals in prose — anything outside a coupon page (Tier 1) and
+// outside a highlight note (Tier 2). A code in free prose has no slug to bind to, so it can't
+// be verified; the fix is to render it via <VendorCode slug> (derived, no literal). A genuinely
+// generic mention (the affiliate disclosure) is exempted with an inline {/* codes:disclosure */}
+// marker on the same line — a marker, not a line number, so it survives edits.
+const strays = [];
+let tier3Scanned = 0;
 for (const file of walk(APP)) {
   const rel = relative(root, file).split(sep).join("/");
   const text = readFileSync(file, "utf8");
+  const lines = text.split("\n");
+
+  // Tier 2: highlight-note codes (checked in every file). Record their spans so Tier 3 skips them.
+  const noteSpans = [];
   for (const nm of text.matchAll(NOTE_RE)) {
+    noteSpans.push([nm.index, nm.index + nm[0].length]);
     const slug = nm[1], note = nm[2];
     const expected = vendors[slug]?.code;
     for (const cm of note.matchAll(CODE_RE)) {
@@ -106,13 +118,41 @@ for (const file of walk(APP)) {
       if (cm[0] !== expected) offenders.push({ file: rel, line: lineOf(text, nm.index), found: cm[0], expected, tier: 2, slug });
     }
   }
+
+  // Tier 3: skip coupon pages (Tier 1 owns their literals).
+  if (rel.startsWith("src/app/coupons/")) continue;
+  tier3Scanned++;
+  // Block-comment spans (/* … */) to skip — documentation, not rendered.
+  const commentSpans = [...text.matchAll(/\/\*[\s\S]*?\*\//g)].map((m) => [m.index, m.index + m[0].length]);
+  for (const cm of text.matchAll(CODE_RE)) {
+    const idx = cm.index;
+    if (noteSpans.some(([a, b]) => idx >= a && idx < b)) continue; // Tier 2 owns it
+    if (commentSpans.some(([a, b]) => idx >= a && idx < b)) continue; // block comment
+    const lineStart = text.lastIndexOf("\n", idx - 1) + 1;
+    const before = text.slice(lineStart, idx);
+    if (before.includes("//")) continue; // line comment
+    // Affiliate-URL query param (?ref=CODE, &code=CODE, /coupon=CODE…), not displayed prose —
+    // a separate concern (stale affiliate ref) that this tier deliberately doesn't own.
+    if (/https?:\/\/[^\s"'`]*$|[?&/](?:ref|code|coupon|sld|affiliate|aff|utm_[a-z]+)=[^\s"'`]*$/i.test(before)) continue;
+    const ln = lineOf(text, idx);
+    if ((lines[ln - 1] || "").includes("codes:disclosure")) continue; // marked exception
+    strays.push({ file: rel, line: ln, found: cm[0] });
+  }
 }
 
-if (offenders.length) {
-  console.error(`\ncheck:codes FAILED — ${offenders.length} code(s) disagree with src/data/vendors.ts:`);
-  for (const o of offenders) console.error(`    • ${o.file}:${o.line}  found ${o.found}, expected ${o.expected}${o.slug ? `  (${o.slug})` : ""}`);
-  console.error(`\n  Fix the page to match the registry (or fix vendors.ts if the registry is wrong).\n  Then walk the CODE-CHANGE SOP at the top of this file — surfaces 2–4 don't self-heal.`);
+if (offenders.length || strays.length) {
+  if (offenders.length) {
+    console.error(`\ncheck:codes FAILED — ${offenders.length} code(s) disagree with src/data/vendors.ts:`);
+    for (const o of offenders) console.error(`    • ${o.file}:${o.line}  found ${o.found}, expected ${o.expected}${o.slug ? `  (${o.slug})` : ""}`);
+    console.error(`  Fix the page to match the registry (or fix vendors.ts if the registry is wrong).`);
+  }
+  if (strays.length) {
+    console.error(`\ncheck:codes FAILED — ${strays.length} stray code literal(s) in prose (Tier 3):`);
+    for (const s of strays) console.error(`    • ${s.file}:${s.line}  ${s.found}`);
+    console.error(`  Render the code via <VendorCode slug="…"> (derived) instead of a literal.\n  If it is a genuinely generic mention, add an inline {/* codes:disclosure */} marker.`);
+  }
+  console.error(`\n  On a real code change, walk the CODE-CHANGE SOP at the top of this file — surfaces 2–4 don't self-heal.`);
   process.exit(1);
 }
 
-console.log(`check:codes OK — Tier 1: ${tier1Codes} codes across ${tier1Pages} coupon pages; Tier 2: ${tier2Codes} in ${tier2Notes} highlight notes; all match the registry.`);
+console.log(`check:codes OK — Tier 1: ${tier1Codes} codes / ${tier1Pages} coupon pages; Tier 2: ${tier2Codes} / ${tier2Notes} highlight notes; Tier 3: ${tier3Scanned} prose files, 0 stray literals; all match the registry.`);

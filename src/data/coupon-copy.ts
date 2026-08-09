@@ -5,71 +5,90 @@
 // both that guard and the transpile-exec, so keep this file free of imports.
 
 /**
- * Per-vendor differentiator — the unique trailing clause of each coupon meta description.
- * This is the ONLY text that differs across 33 otherwise-identical descriptions, so it is
- * kept specific and true per vendor (sourced from that vendor's own coupon-page body) to
- * avoid the templated-similarity suppression that got a third of the supplement pages
- * declined.
+ * Per-vendor LEADING clause — the distinguishing fact each coupon description opens with.
  *
- * BUDGET: each clause is sized so the full composed description stays ≤155 chars (the SERP
- * cutoff) under the WORST-CASE month — "September" (9 chars), the longest month name. July
- * was the shortest, so budgeting against the current month broke every longer month; budget
- * against September once and every month fits forever. Verified by check:freshness on build.
+ * WHY THIS LEADS (not trails): all 45 descriptions once shared one identical opening —
+ * "Use code {CODE} at {Vendor} to save {X}% sitewide — verified …" — with only a trailing
+ * differentiator varying. Google treats a templated meta description as boilerplate and
+ * commonly suppresses it (Glacier's snippet was dropped despite every surface reconciling).
+ * The fix is to VARY THE LEAD: open with the vendor's own strongest established fact, then
+ * append the compact code/discount/month tail. The first ~120 chars — what Google weighs —
+ * are now unique per vendor.
+ *
+ * SOURCING (100% derived, nothing invented): each lead is composed from that vendor's
+ * VERIFIED facts in src/data/vendors.ts (labName / labAccreditation / purityStandard / coa /
+ * testMethods / coldChain / catalog) and matches how its own page characterizes them. A
+ * lead NEVER implies a claim the page doesn't make — it won't name an accreditation a vendor
+ * only informally claims, or attach a method the facts don't record (Job 2 corrected nine
+ * such overstatements; do not reintroduce one here).
+ *
+ * TIER WATERFALL (first match wins), tagged per line:
+ *   A — a single, concisely-named third-party lab → lead with that lab.
+ *   B — no single lab, but a stated ISO/IEC 17025 accreditation → lead with the accreditation.
+ *   C — no lab/ISO lead, but a published purity standard → lead with purity.
+ *   D — none of the above cleanly (multi-lab that can't compress honestly, or only a
+ *       catalog/format/region fact) → lead with the vendor's established differentiator.
+ *
+ * BUDGET: sized so the full composed description stays ≤155 chars under the WORST-CASE month
+ * "September" (the longest). Verified by check:freshness on every build — a hard fail.
  */
-export const couponDifferentiator: Record<string, string> = {
-  "aero-peptides": "≥98% purity, ISO-lab tested; COA on request.",
-  "almighty-peptides": "Bioviridian-tested; Buy 1 Get 1 FREE on most.",
-  "alpha-peptides": "Per-lot 5-test panel, ISO 17025 lab, public COAs.",
-  "ameano-peptides": "Janoshik-tested to 99%+; COA on every product.",
-  "amino-club": "ISO-17025 tested peptides with a COA on every batch.",
-  "amino-x": "US-based, third-party tested research peptides; COA on request.",
-  "ascension-peptides": "MZ Biolabs per-batch COAs; blends & stacks.",
-  "behemoth-labz": "Third-party tested by Colmaric; peptides & SARMs.",
-  "biocollex": "Freedom Diagnostics per-batch COAs; same-day ship.",
-  "biolongevity-labs": "BioRegen LC-MS per-batch COAs; public library.",
-  "biopure-peptides": "US-made; 99%+ purity, batch third-party tested.",
-  "crush-research": "ISO-17025 lab; multi-vial per-batch COAs.",
-  "ez-peptides": "Janoshik-tested per batch; same-day shipping; 4.7/5.",
-  "fusion-peptide": "Topical and nasal-spray peptide formats available.",
-  "glacier-aminos": "Batch-traceable COAs and cold-chain shipping.",
-  "ignite-peptides": "Janoshik & Freedom Diagnostics COAs; 99%+ purity.",
-  "integrative-peptides": "Physician-trusted oral peptide supplements.",
-  "la-peptides": "≥99% purity, Bioviridian batch COAs, made in USA.",
-  "legendary-peptides": "Freedom Diagnostics COAs on every product page.",
-  "licensed-peptides": "US-made; Vanguard per-batch COAs, 99%+ HPLC.",
-  "limitless-biotech": "90+ compounds; HPLC/LC-MS tested; 30-day refund.",
-  "midwest-peptide": "99%+ HPLC purity; verifiable per-batch COAs.",
-  "mile-high-compounds": "8x US third-party testing; public COAs.",
-  "modern-aminos": "US; per-batch COAs (Vanguard/Freedom); ISO-17025.",
-  "nextgen-peptides": "≥99% HPLC; ILS-Labs COAs, public batch library.",
-  "nova-labs": "≥99% HPLC; Janoshik per-batch COAs; GCC cold-chain.",
-  "nura-peptide": "Freedom Diagnostics COAs; public batch library.",
-  "99-purity-peptides": "≥99% purity, HPLC/MS verified; public COAs.",
-  "oasis-labs": "Veteran-owned with QR-verified COAs on every vial.",
-  "particle-peptides": "Comprehensive EU testing, Ph. Eur. compliant.",
-  "peptide-giants": "Every batch Janoshik-tested; public lab reports.",
-  "peptide-partners": "4 independent batch tests with published COAs.",
-  "peptides-gg": "US-made, third-party tested per batch with COAs.",
-  "peptidology": "Vanguard + Eagle two-lab COAs; ISO-17025 accredited.",
-  "purerawz": "US-based; third-party tested peptides, SARMs & nootropics.",
-  "purerx-peptides": "HPLC COAs; Accumark lot verifiable, rest samples.",
-  "purity-peptides": "99%+ HPLC/mass-spec tested with third-party COAs.",
-  "real-peptides": "Freedom Diagnostics per-product COAs; US-stocked.",
-  "royal-peptides": "Independent Janoshik batch reports, verifiable online.",
-  "science-based-peptides": "Per-lot COAs with batch number & test date.",
-  "spartan-peptides": "HPLC + mass-spec verified to ≥98% purity.",
-  "swiss-chems": "Public results page; third-party HPLC/mass-spec to 99%+.",
-  "synthesis-peptides": "Per-batch HPLC testing, ≥99% purity.",
-  "treasure-coast-peptides": "Florida-based; purity and concentration tested.",
-  "vital-core-research": "56 compounds incl. GLP-1/2/3, SARMs, blends.",
+export const couponLead: Record<string, string> = {
+  "aero-peptides": "≥98% purity, third-party tested; COA on request", // C
+  "almighty-peptides": "Bioviridian-tested, BOGO on most", // A
+  "alpha-peptides": "ISO-17025 lab, per-lot 5-test panel", // B
+  "ameano-peptides": "Janoshik-tested to ≥99%", // A
+  "amino-club": "ISO-17025 lab, ≥99% purity, per-batch COAs", // B
+  "amino-x": "Kovera Labs-tested, 99%+ purity", // A
+  "ascension-peptides": "MZ BioLabs per-batch COAs; blends & stacks", // A
+  "behemoth-labz": "Colmaric-tested; peptides & SARMs", // A
+  "biolongevity-labs": "BioRegen LC-MS per-batch COAs", // A
+  "biopure-peptides": "US-made, ≥99% purity, batch-tested", // C
+  "biocollex": "Freedom Diagnostics per-batch COAs, same-day ship", // A
+  "crush-research": "ILS Laboratories per-batch COAs, ISO-17025", // A
+  "ez-peptides": "Janoshik-tested per batch; same-day, 4.7/5", // A
+  "fusion-peptide": "Topical & nasal-spray peptide formats", // D (retired)
+  "glacier-aminos": "Batch-traceable COAs, cold-chain shipping", // D (multi-lab)
+  "ignite-peptides": "99%+ purity, per-product COAs", // C
+  "la-peptides": "Bioviridian batch COAs, ≥99%, made in USA", // A
+  "mile-high-compounds": "8x US third-party testing, public COAs", // D (multi-lab)
+  "modern-aminos": "ISO-17025 accredited, per-batch COAs", // B (multi-lab + ISO)
+  "nextgen-peptides": "ILS-Labs COAs, ≥99% HPLC, public library", // A
+  "peptidology": "ISO-17025, two-lab (Vanguard + Eagle) COAs", // B (multi-lab + ISO)
+  "integrative-peptides": "Physician-trusted oral peptides, ≥99%", // C
+  "legendary-peptides": "Freedom Diagnostics COAs on every product", // A
+  "limitless-biotech": "90+ compounds, HPLC/LC-MS tested, 30-day refund", // D
+  "midwest-peptide": "ISO-17025, ≥99% HPLC, verifiable per-batch COAs", // B (multi-lab + ISO)
+  "oasis-labs": "Veteran-owned, QR-verified COAs on every vial", // D (multi-lab)
+  "particle-peptides": "Comprehensive EU testing, Ph. Eur. compliant", // D
+  "peptide-partners": "Four independent batch tests, published COAs", // D (multi-lab)
+  "peptide-giants": "Every batch Janoshik-tested, public reports", // A
+  "purerx-peptides": "HPLC COAs; Accumark lot verifiable", // D (multi-lab)
+  "peptides-gg": "Freedom Diagnostics per-batch COAs, US-made", // A
+  "purerawz": "MZ Biolabs per-batch COAs; peptides, SARMs & more", // A
+  "purity-peptides": "99%+ HPLC/mass-spec, third-party COAs", // C
+  "real-peptides": "Freedom Diagnostics per-product COAs, ≥99%", // A
+  "royal-peptides": "Independent Janoshik batch reports, 99%+", // A
+  "science-based-peptides": "Per-lot COAs with batch number & test date", // D
+  "spartan-peptides": "MZ BioLabs HPLC + mass-spec, ≥98%", // A
+  "swiss-chems": "Public results page; HPLC/mass-spec to 99%+", // D
+  "synthesis-peptides": "Per-batch HPLC testing, ≥99% purity", // D (retired)
+  "treasure-coast-peptides": "99%+ purity, batch-tested, Florida-based", // C
+  "vital-core-research": "56 compounds incl. GLP-1/2/3, SARMs & blends", // D
+  "nova-labs": "Janoshik per-batch COAs, ≥99%, GCC cold-chain", // A
+  "nura-peptide": "Freedom Diagnostics COAs, public library", // A
+  "99-purity-peptides": "Eagle Analytical per-batch COAs, ≥99%", // A
+  "licensed-peptides": "Vanguard per-batch COAs, ISO-17025, 99%+", // A
 };
 
 /**
- * Compose the coupon meta description — the Style-A shape:
- *   "Use code {CODE} at {Vendor} to save {X}% sitewide — verified and working for {month}. {diff}"
- * Code first (char 9), then the differentiator. `monthYear` is injected (not read here) so
- * the budget guard can substitute the longest month; buildCouponMetadata passes the real
- * CODES_VERIFIED_DATE. This is the single source of the description shape — do not inline it.
+ * Compose the coupon meta description — FACT-FIRST shape:
+ *   "{lead} — code {CODE} saves {X}% at {Vendor}, verified {month}."
+ * The lead (unique per vendor) comes first; the code, discount, and DERIVED month follow in
+ * the compact tail. Code + discount are non-negotiable — the code is what a reader copies from
+ * the SERP and the attribution is the revenue mechanism; the month is the freshness signal.
+ * `monthYear` is injected (not read here) so the budget guard can substitute the longest month;
+ * buildCouponMetadata passes the real CODES_VERIFIED_DATE. Single source of the shape — do not
+ * inline it.
  */
 export function couponDescription(
   slug: string,
@@ -78,10 +97,7 @@ export function couponDescription(
   pct: number,
   monthYear: string,
 ): string {
-  const diff = couponDifferentiator[slug];
-  return (
-    `Use code ${code} at ${vendorName} to save ${pct}% sitewide — ` +
-    `verified and working for ${monthYear}.` +
-    (diff ? ` ${diff}` : "")
-  );
+  const tail = `code ${code} saves ${pct}% at ${vendorName}, verified ${monthYear}.`;
+  const lead = couponLead[slug];
+  return lead ? `${lead} — ${tail}` : `${tail[0].toUpperCase()}${tail.slice(1)}`;
 }
