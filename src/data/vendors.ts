@@ -311,6 +311,13 @@ export const vendors: Record<string, Vendor> = {
     region: "EU",
     url: "https://particlepeptides.com/en/?refs=18075",
     detailPage: "/coupons/particle-peptides",
+    // Job-2 cert pass: public COA Vault (~86 docs). Every reviewed COA (batches 2026302 May,
+    // 2026314 Jun, 2026336 Jul 2026) issued by Liquilabs s.r.o., Zlatníky-Hodkovice, Czechia —
+    // a SINGLE named third-party lab, not the "multiple laboratories" the page claimed. 12-page
+    // per-batch certs w/ QR verify (base.liquilabs.cz). No accreditation printed on the COA (the
+    // ISO 9001/13485 the page cites is the MANUFACTURER's, so labAccreditation stays absent).
+    // Detection is HPLC-UV with spectral + RT identity — NOT mass spec; don't claim MS.
+    facts: { coa: "library", labName: "Liquilabs", testMethods: "RP-HPLC-UV; identity by UV spectrum + retention time", contaminants: "Microbial (USP <61>/Ph. Eur. 2.6.12), endotoxin (USP <85>/Ph. Eur. 2.6.14), heavy metals (7 elements, USP <232>/Ph. Eur. 5.20)" },
   },
   "peptide-partners": {
     name: "Peptide Partners",

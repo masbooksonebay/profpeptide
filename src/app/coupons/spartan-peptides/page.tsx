@@ -88,7 +88,7 @@ export default function SpartanPeptidesCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Every Spartan Peptides batch is independently verified to &ge;98% purity by HPLC and mass spectrometry, and the original third-party lab reports &mdash; signed by the analytical chemist &mdash; are published for each compound. A Certificate of Analysis is available so researchers can confirm identity and purity before use.
+ Every Spartan Peptides batch is verified to a &ge;98% purity standard by HPLC (with mass spectrometry confirming molecular identity), and the original lab reports are published for each compound in a public COA library. The reports we reviewed were issued by MZ Biolabs, an independent analytical laboratory at 2102 N Country Club Rd, Tucson, AZ, and signed by analytical chemist Ken Pendarvis &mdash; observed purity ran 99.4&ndash;99.97% across the compounds checked. No accreditation is printed on the certificates. A Certificate of Analysis lets researchers confirm identity and purity before use.
  </p>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
  Compounds are manufactured and shipped domestically from within the United States, with same-day dispatch on US orders placed before 2 PM Pacific and discreet packaging.
@@ -129,7 +129,7 @@ export default function SpartanPeptidesCouponPage() {
  />
  <FAQItem
  q="What testing methods does Spartan Peptides use?"
- a="Spartan Peptides conducts HPLC analysis to verify purity (minimum ≥98% required for batch release) and mass spectrometry to confirm molecular identity. This dual-method approach confirms both purity and compound identity — HPLC alone cannot verify that a compound is what it claims to be. All batches are also independently verified by accredited third-party laboratories."
+ a="Spartan Peptides conducts HPLC analysis to verify purity (minimum ≥98% required for batch release) and mass spectrometry to confirm molecular identity. This dual-method approach confirms both purity and compound identity — HPLC alone cannot verify that a compound is what it claims to be. The lab reports are issued by MZ Biolabs, an independent analytical laboratory in Tucson, AZ; no accreditation is printed on the certificates."
  />
  <FAQItem
  q="What is the minimum purity standard at Spartan Peptides?"
@@ -137,7 +137,7 @@ export default function SpartanPeptidesCouponPage() {
  />
  <FAQItem
  q="Does Spartan Peptides provide Certificates of Analysis?"
- a="Yes. Every batch comes with a comprehensive Certificate of Analysis detailing purity percentage, molecular weight confirmation, and the testing methodology used. COAs are available upon request."
+ a="Yes. Every compound has a Certificate of Analysis detailing purity percentage, molecular weight confirmation, and the testing methodology used — published in Spartan Peptides' public COA library rather than only on request."
  />
  </div>
  </div>

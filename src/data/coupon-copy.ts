@@ -59,7 +59,7 @@ export const couponLead: Record<string, string> = {
   "limitless-biotech": "90+ compounds, HPLC/LC-MS tested, 30-day refund", // D
   "midwest-peptide": "ISO-17025, ≥99% HPLC, verifiable per-batch COAs", // B (multi-lab + ISO)
   "oasis-labs": "Veteran-owned, QR-verified COAs on every vial", // D (multi-lab)
-  "particle-peptides": "Comprehensive EU testing, Ph. Eur. compliant", // D
+  "particle-peptides": "Liquilabs full-panel COAs, Ph. Eur. limits", // A
   "peptide-partners": "Four independent batch tests, published COAs", // D (multi-lab)
   "peptide-giants": "Every batch Janoshik-tested, public reports", // A
   "purerx-peptides": "HPLC COAs; Accumark lot verifiable", // D (multi-lab)
