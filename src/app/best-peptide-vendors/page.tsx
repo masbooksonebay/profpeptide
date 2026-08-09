@@ -2,6 +2,7 @@ import Link from "next/link";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { CopyCode } from "@/components/CopyCode";
+import { vendors as vendorRegistry } from "@/data/vendors";
 
 export const metadata = {
   alternates: { canonical: "/best-peptide-vendors" },
@@ -25,7 +26,7 @@ interface HubVendor {
   name: string;
   slug: string;
   url: string;
-  code: string;
+  code: string; // DERIVED from src/data/vendors.ts at build — never hand-set here
   discount: string;
   description: string;
   strengths: string[];
@@ -40,12 +41,15 @@ interface HubVendor {
 //     excluded here (still present on /coupons, /vendors, /coupons/alpha-peptides).
 //   - Swiss Chems: deliberate exception — large, established vendor, higher
 //     confidence, so featured ahead of that verification.
-const vendors: HubVendor[] = [
+// Curated copy for the featured subset. Every field EXCEPT `code` is hand-set for
+// this page; `code` is omitted on purpose and pulled from the registry below, so a
+// code change (e.g. Glacier PROF10→PROFPEPTIDE, Aug 2026) can never go stale here
+// again — a hardcoded code is invisible to every registry-level check.
+const featured: Omit<HubVendor, "code">[] = [
   {
     name: "Amino Club",
     slug: "amino-club",
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
-    code: "PROFPEPTIDE",
     discount: "20% off",
     description:
       "US-based supplier with a broad catalog of more than two dozen research compounds. Every batch is third-party tested by an ISO/IEC 17025-accredited lab to a 99%+ HPLC purity standard, with additional heavy-metal (ICP-MS), sterility, and endotoxin screening. Each product links a batch-specific Certificate of Analysis that is downloadable and independently verifiable through the issuing lab’s portal.",
@@ -55,7 +59,6 @@ const vendors: HubVendor[] = [
     name: "Ascension Peptides",
     slug: "ascension-peptides",
     url: "https://ascensionpeptides.com/ref/profpeptide/",
-    code: "PROFPEPTIDE",
     discount: "50% off",
     description:
       "US-based, third-party tested supplier with aggressive bulk pricing. 50% off storewide with our code.",
@@ -65,7 +68,6 @@ const vendors: HubVendor[] = [
     name: "EZ Peptides",
     slug: "ez-peptides",
     url: "https://ezpeptides.com/?ref=nldbbgvs",
-    code: "PROFPEPTIDE",
     discount: "10% off",
     description:
       "US-based supplier in Albuquerque, New Mexico, known for fast fulfillment \u2014 orders ship within 0\u20132 business days with same-day shipping available. Every batch is independently third-party tested with a Certificate of Analysis, and the company holds a 4.7/5 rating across 176+ reviews.",
@@ -75,7 +77,6 @@ const vendors: HubVendor[] = [
     name: "Glacier Aminos",
     slug: "glacier-aminos",
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
-    code: "PROF10",
     discount: "10% off",
     description:
       "US-based, family-owned research-peptide supplier with same-day shipping (before 12PM MST) and US fulfillment. Every batch is third-party tested at independent American labs under a 7-point protocol \u2014 HPLC purity, identity, endotoxin, sterility, heavy metals, and multi-vial batch conformity. Each vial carries a unique batch code and a QR link to its COA, plus a purity guarantee (free replacement if independent testing shows purity below their stated threshold).",
@@ -85,7 +86,6 @@ const vendors: HubVendor[] = [
     name: "Oasis Labs",
     slug: "oasis-labs",
     url: "https://myoasislabs.com/?sld=profpeptide",
-    code: "PROF15",
     discount: "15% off",
     description:
       "Veteran-owned, Las Vegas-based supplier with in-house fulfillment. Every batch is third-party tested at US labs to a guaranteed 99% purity, with a public COA Library plus a unique QR code on each vial for point-of-use COA access. Cold-shield shipping with same-day processing.",
@@ -95,7 +95,6 @@ const vendors: HubVendor[] = [
     name: "Peptide Partners",
     slug: "peptide-partners",
     url: "https://peptide.partners/ref/48/",
-    code: "PROFPEPTIDE",
     discount: "10% off",
     description:
       "US research peptide supplier that runs four independent test types per batch: purity, endotoxin, heavy metals, and sterility. Extensive transparency on test data and documentation.",
@@ -105,13 +104,20 @@ const vendors: HubVendor[] = [
     name: "Swiss Chems",
     slug: "swiss-chems",
     url: "https://swisschems.is/?ref=PROF10",
-    code: "PROF10",
     discount: "10% off",
     description:
       "US-based, peptide-forward supplier with a notably deep growth-hormone and peptide bench, plus recovery, longevity, cognitive, and reproductive-health compounds. Transparency runs on a public Independent Test Results page and a per-product verification system — third-party HPLC and mass-spectrometry testing at external labs to a stated 99%+ purity standard, with full batch Certificates of Analysis published rather than summarized.",
     strengths: ["Public independent test-results page + COAs", "Third-party HPLC & mass-spec, 99%+ purity", "Deep growth-hormone & peptide bench", "10% off with code"],
   },
 ];
+
+// Merge each featured vendor's live discount code in from the registry (single source of
+// truth). Unknown slug ⇒ build error, so this list can never silently drift from vendors.ts.
+const vendors: HubVendor[] = featured.map((f) => {
+  const reg = vendorRegistry[f.slug];
+  if (!reg) throw new Error(`best-peptide-vendors: "${f.slug}" is not in the vendor registry`);
+  return { ...f, code: reg.code };
+});
 
 export default function BestPeptideVendorsPage() {
   return (
