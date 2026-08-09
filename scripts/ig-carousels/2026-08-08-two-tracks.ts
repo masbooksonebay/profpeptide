@@ -6,10 +6,11 @@ const carousel: Carousel = {
   date: "2026-08-08",
   name: "two-tracks",
   slides: [
-    // 1 — cover
+    // 1 — cover (dark field)
     {
+      dark: true,
       headline: [{ text: "Peptides are loosening. GLP-1 compounding is tightening." }],
-      headlineSize: 74,
+      headlineSize: 92,
       accentBar: true,
       subhead: "Both are true. They’re two separate FDA tracks.",
     },
@@ -43,8 +44,9 @@ const carousel: Carousel = {
       afterCallout:
         "And a recommendation isn’t a rule. Formal rulemaking follows — historically twelve to twenty-four months.",
     },
-    // 5 — CTA
+    // 5 — CTA (dark bookend — pairs with the dark cover to frame the light interiors)
     {
+      dark: true,
       headline: [{ text: "The full breakdown, with primary sources." }],
       headlineSize: 60,
       accentBar: true,
