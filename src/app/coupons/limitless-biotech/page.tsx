@@ -24,7 +24,7 @@ export default function LimitlessBiotechCouponPage() {
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Limitless Biotech is a US-based research peptide supplier founded in Florida, formerly known as Limitless Life Nootropics. The company offers one of the largest research peptide catalogs available &mdash; over 90 compounds spanning peptides, nootropics, and advanced longevity compounds. Limitless Biotech ships worldwide and offers a 30-day money-back guarantee. Their products are used by physicians, biohackers, and research laboratories. Products contain no fillers such as mannitol or lactose. Popular compounds by research area:
+ Limitless Biotech is a US-based research peptide supplier founded in Florida, formerly known as Limitless Life Nootropics. The company states it offers one of the largest research-peptide catalogs available &mdash; 90+ compounds (the vendor&rsquo;s figure) spanning peptides, nootropics, and advanced longevity compounds. Limitless Biotech ships worldwide and offers a 30-day money-back guarantee. Their products are used by physicians, biohackers, and research laboratories. Products contain no fillers such as mannitol or lactose. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -84,7 +84,7 @@ export default function LimitlessBiotechCouponPage() {
  <div className="space-y-2">
  <FAQItem
  q="What peptides does Limitless Biotech carry?"
- a="Limitless Biotech carries 90+ research-grade compounds &mdash; one of the largest catalogs in the research peptide space. Their catalog includes recovery peptides such as BPC-157 and TB-500, growth hormone secretagogues including Sermorelin, Ipamorelin, and CJC-1295, metabolic compounds including AOD-9604 and Semaglutide, cognitive and nootropic compounds including Selank and Semax, longevity compounds including Epitalon, MOTS-c, and NAD+, and sexual health compounds including PT-141. Peptide capsule and spray formats are also available alongside standard lyophilized compounds."
+ a="Limitless Biotech states it carries 90+ research-grade compounds &mdash; one of the largest catalogs in the research-peptide space, per the vendor. Their catalog includes recovery peptides such as BPC-157 and TB-500, growth hormone secretagogues including Sermorelin, Ipamorelin, and CJC-1295, metabolic compounds including AOD-9604 and Semaglutide, cognitive and nootropic compounds including Selank and Semax, longevity compounds including Epitalon, MOTS-c, and NAD+, and sexual health compounds including PT-141. Peptide capsule and spray formats are also available alongside standard lyophilized compounds."
  />
  <FAQItem
  q="Does Limitless Biotech have a discount code?"

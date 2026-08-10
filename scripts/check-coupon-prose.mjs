@@ -65,17 +65,71 @@ for (const slug of dirs) {
   }
 }
 
-if (violations.length) {
-  console.error(`check:coupon-prose FAILED — ${violations.length} withholding claim(s) on coupon pages:`);
-  for (const v of violations) {
-    console.error(`  ✗ ${v.slug} [${v.label}]: …${v.snippet}…`);
+// ── UNATTRIBUTED-CLAIM guard (narrow) ───────────────────────────────────────────────────────
+// A vendor's star RATING or customer/order/researcher TOTAL, stated as fact rather than as the
+// vendor's own figure, is an uncorroborated number PP cannot stand behind — EZ (4.7/176+) and
+// Particle (4.9/323, 10,000 researchers) both shipped that way. Any sentence carrying one of
+// these two claim shapes must contain an attribution MARKER in the SAME sentence.
+//
+// SCOPE IS DELIBERATELY NARROW — only these two shapes. NOT facility (GMP/ISO/cleanroom),
+// superlatives, purity figures, or shipping speed: those need a cert-backed allowlist (a purity
+// figure on a cert-passed vendor is fine) and would produce ~30 false positives — a guard nobody
+// trusts. Add a class here only with an allowlist + an FP scan.
+const RATING = /\b\d(?:\.\d)?\s*(?:\/\s*5\b|\s+out of 5\b)/i; // "4.7/5", "4.7 out of 5"
+const TOTAL = /\b\d[\d,]{2,}\+?\s+(?:customers|orders|researchers|clients)\b/i; // "10,000 researchers", "1,300+ orders"
+const MARKER = /\b(?:states?|reports?|describes?|claims?|self-reported|according to|its own|vendor-stated)\b/i;
+// Strip className + JSX tags (Tailwind noise), then recover FAQItem q=/a= attribute text — the
+// FAQ answers live inside JSX tags, so tag-stripping alone would blind the guard to them.
+const prose = (line) => {
+  const stripped = line.replace(/className="[^"]*"/g, " ").replace(/<[^>]+>/g, " ");
+  const attrs = [...line.matchAll(/\b[aq]="([^"]*)"/g)].map((m) => m[1]).join("  ");
+  return `${stripped}  ${attrs}`;
+};
+const claimFiles = dirs
+  .map((slug) => join(couponsDir, slug, "page.tsx"))
+  .concat([join(root, "src", "app", "best-peptide-vendors", "page.tsx")]);
+const claims = [];
+for (const file of claimFiles) {
+  let src;
+  try {
+    src = readFileSync(file, "utf8");
+  } catch {
+    continue;
   }
-  console.error(
-    "\n  A vendor that publishes COAs must not be described as withholding them. Verified -> name the\n" +
-    "  lab. Not verified -> say nothing about testing. If a match is genuinely benign, narrow the\n" +
-    "  pattern in scripts/check-coupon-prose.mjs (and FP-scan it) — do not reword good prose to pass.",
-  );
+  const rel = file.slice(root.length + 1);
+  src.split("\n").forEach((line, i) => {
+    for (const sentence of prose(line).split(/(?<=[.!?])\s+/)) {
+      for (const [label, re] of [["rating", RATING], ["total", TOTAL]]) {
+        const m = re.exec(sentence);
+        if (m && !MARKER.test(sentence)) {
+          claims.push({ file: rel, line: i + 1, label, snippet: sentence.trim().replace(/\s+/g, " ").slice(0, 100) });
+        }
+      }
+    }
+  });
+}
+
+if (violations.length || claims.length) {
+  if (violations.length) {
+    console.error(`check:coupon-prose FAILED — ${violations.length} withholding claim(s) on coupon pages:`);
+    for (const v of violations) console.error(`  ✗ ${v.slug} [${v.label}]: …${v.snippet}…`);
+    console.error(
+      "\n  A vendor that publishes COAs must not be described as withholding them. Verified -> name the\n" +
+      "  lab. Not verified -> say nothing about testing. If a match is benign, narrow the pattern (and FP-scan).",
+    );
+  }
+  if (claims.length) {
+    console.error(`\ncheck:coupon-prose FAILED — ${claims.length} unattributed rating/total claim(s):`);
+    for (const c of claims) console.error(`  ✗ ${c.file}:${c.line} [${c.label}]  …${c.snippet}…`);
+    console.error(
+      "\n  A vendor rating (N/5, N out of 5) or customer/order total stated as fact needs a same-sentence\n" +
+      "  attribution marker (states / reports / self-reported / describes / its own …). PP can't corroborate\n" +
+      "  these — frame the number as the vendor's own.",
+    );
+  }
   process.exit(1);
 }
 
-console.log(`check:coupon-prose OK — ${dirs.length} coupon pages, no withholding claims.`);
+console.log(
+  `check:coupon-prose OK — ${dirs.length} coupon pages, no withholding claims; no unattributed rating/total claims.`,
+);

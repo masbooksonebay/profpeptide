@@ -85,7 +85,7 @@ export default function AlphaPeptidesCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Every Alpha Peptides lot is independently third-party tested at an ISO&nbsp;17025-aligned U.S. laboratory before it ships, running a five-test panel &mdash; qualitative identity, percent purity, quantitative assay, heavy metals, and conformity. Bulk material is sourced from cGMP-aligned manufacturing partners, with identity confirmed by HPLC and mass spectrometry before a lot is accepted into inventory. The stated standard is a 99.0% purity floor, with lots that fall short rejected outright rather than discounted or relabeled.
+            Alpha Peptides states that every lot is independently third-party tested at an ISO&nbsp;17025-aligned U.S. laboratory before it ships, running a five-test panel &mdash; qualitative identity, percent purity, quantitative assay, heavy metals, and conformity &mdash; and that bulk material is sourced from cGMP-aligned manufacturing partners, with identity confirmed by HPLC and mass spectrometry before a lot is accepted into inventory. The stated standard is a 99.0% purity floor, with lots that fall short rejected outright rather than discounted or relabeled.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             The distinguishing feature is verifiability: Certificates of Analysis are published on a public COA page and filed against every lot, so a researcher can check identity and purity at the batch level before use. Vials are lyophilized, foil-sealed, and shipped cold-chain from the East Coast; fulfillment is U.S.-only, typically same or next business day.
@@ -129,7 +129,7 @@ export default function AlphaPeptidesCouponPage() {
             />
             <FAQItem
               q="Is Alpha Peptides third-party tested?"
-              a="Yes. Every Alpha Peptides lot is independently third-party tested at an ISO 17025-aligned U.S. laboratory, running a five-test panel — qualitative identity, percent purity, quantitative assay, heavy metals, and conformity — with identity confirmed by HPLC and mass spectrometry, against a stated 99.0% purity floor. Lots below that floor are rejected rather than shipped."
+              a="Yes. Alpha Peptides states that every lot is independently third-party tested at an ISO 17025-aligned U.S. laboratory, running a five-test panel — qualitative identity, percent purity, quantitative assay, heavy metals, and conformity — with identity confirmed by HPLC and mass spectrometry, against a stated 99.0% purity floor. Lots below that floor are rejected rather than shipped."
             />
             <FAQItem
               q="How can I verify an Alpha Peptides product?"
