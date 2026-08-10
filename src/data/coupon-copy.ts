@@ -50,6 +50,7 @@ export const couponLead: Record<string, string> = {
   "fusion-peptide": "Topical & nasal-spray peptide formats", // D (retired)
   "glacier-aminos": "Batch-traceable COAs, cold-chain shipping", // D (multi-lab)
   "ignite-peptides": "99%+ purity, per-product COAs", // C
+  "improved-peptides": "Freedom Diagnostics & Krause LC-MS COAs; public library", // A (two named labs + rare public COA library)
   "la-peptides": "Bioviridian batch COAs, ≥99%, made in USA", // A
   "mile-high-compounds": "8x US third-party testing, public COAs", // D (multi-lab)
   "modern-aminos": "ISO-17025 accredited, per-batch COAs", // B (multi-lab + ISO)

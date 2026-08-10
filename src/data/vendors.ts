@@ -220,6 +220,23 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/ignite-peptides",
     facts: { coa: "per-product", purityStandard: "99%+", labName: "Janoshik, Freedom Diagnostics", testMethods: "HPLC, LC-MS" },
   },
+  // Onboarded 2026-08 (GoAffPro; PROFPEPTIDE bound, 15% verified in-cart — 20% is the commission,
+  // NOT the customer discount). Public COA library (10 of 24 have a published COA; rest "in
+  // verification"/request). Split across TWO named labs, verified from the certs: Freedom
+  // Diagnostics (BPC/GHK/GLP-2T/GLP-3R/MOTS-C/TB-500/Tesamorelin; signed Alex Johnson; searchable
+  // code) and Krause Analytical LLC, Austin TX (GLP-1S=Semaglutide, MT-1, MT-2; signed Mark C.
+  // Krause). Certs print ONLY purity (RP-HPLC-UV) + identity (LC-MS) + net content — NOT the
+  // endotoxin/microbial/sterility/ISO-7 the homepage claims, so those stay attributed (no
+  // facts.contaminants). No accreditation printed. coa: library.
+  "improved-peptides": {
+    name: "Improved Peptides",
+    code: "PROFPEPTIDE",
+    discount: "15% off",
+    region: "US",
+    url: "https://improvedpeptides.com/?ref=PROFPEPTIDE",
+    detailPage: "/coupons/improved-peptides",
+    facts: { purityStandard: "≥99%", coa: "library", labName: "Freedom Diagnostics, Krause Analytical", testMethods: "RP-HPLC-UV, LC-MS" },
+  },
   "la-peptides": {
     name: "LA Peptides",
     code: "PROFPEPTIDE",

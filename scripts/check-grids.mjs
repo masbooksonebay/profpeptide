@@ -77,6 +77,11 @@ const ONBOARDING_BACKLOG = {
   // recurring "Supply" SKUs (bi-monthly/quarterly/biannual) on some GLP items; a future pull must
   // exclude those so subscription rows don't pollute the one-time grid.
   "amp-peptides":       { reason: "onboarded 2026-08; WooCommerce catalog not yet price-pulled (exclude subscription Supply SKUs)", since: "2026-08-09" },
+  // Onboarded 2026-08-09 (coupon page + registry live). WordPress catalog with a CUSTOM checkout
+  // (not standard WooCommerce cart); no price-pull adapter yet. Coupon page renders NO grid until
+  // rows land — thin-page WARN only. NOTE: bundle ("buy two get one free") pricing does not combine
+  // with codes; a future pull should capture single-vial pricing, not the BOGO tiers.
+  "improved-peptides":  { reason: "onboarded 2026-08; custom checkout, no price-pull adapter yet (pull single-vial prices, not BOGO tiers)", since: "2026-08-09" },
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────
