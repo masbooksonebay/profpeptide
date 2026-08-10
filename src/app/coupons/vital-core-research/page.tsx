@@ -97,8 +97,8 @@ export default function VitalCoreResearchCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Every Vital Core Research batch is independently third-party tested, with a Certificate of Analysis available directly on each product page &mdash; COA documentation is displayed per product rather than maintained in a separate library. Competitive pricing is combined with a loyalty rewards structure that reduces cost for returning researchers.
- </p>
+ Vital Core Research publishes a Certificate of Analysis on each product page. The certificates we reviewed were issued by Vanguard Laboratory of Olympia, Washington &mdash; an ISO/IEC 17025:2017 accredited laboratory (A2LA Certificate #6377.01.01, printed on each report) &mdash; and signed by laboratory director Dustin Newman and operations manager Tori Johnson. Each report covers two panels, both by HPLC-UV/VIS: chromatographic purity and quantity; observed purity ran 99.19&ndash;99.66% across the three certificates reviewed, each tied to a specific lot (for example FP25-0025). HPLC-UV/VIS measures purity, not molecular identity, and the reports we reviewed do not add an endotoxin, heavy-metals, sterility, or microbial panel. On the two CJC-1295 lots the measured quantity ran above the vial label (5.36 mg against a 5 mg label; 10.88 mg against 10 mg). Each certificate also records that Vanguard did not observe the sample-selection process and cannot confirm the sample&rsquo;s authenticity or that it represents the lot a buyer receives; the three certificates we reviewed are dated 2025.
+</p>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
  The Vital Core Research catalog spans an unusually broad range of research categories. Their metabolic compound lineup covers the full GLP generation spectrum including GLP-1 (Semaglutide), GLP-2 (Tirzepatide), GLP-3 (Retatrutide), Cagrilintide, and combination blends. Recovery compounds include BPC-157, TB-500, and the BPC-157/TB-500 blend. Growth hormone secretagogues include CJC-1295 (both DAC and No DAC variants), Ipamorelin, Sermorelin, Tesamorelin, Hexarelin, GHRP-2, and GHRP-6. The catalog also includes novel compounds not widely carried by other vendors, including SLU-PP-332 (an exercise mimetic compound) and Tesofensine, both available in capsule format. A SARMs catalog of 13 compounds runs alongside the peptide lineup. Pre-formulated blends include GLOW (GHK-Cu + BPC-157 + TB-500) and KLOW (KPV + GHK-Cu + BPC-157 + TB-500).
  </p>
@@ -138,7 +138,7 @@ export default function VitalCoreResearchCouponPage() {
  />
  <FAQItem
  q="Is Vital Core Research third-party tested?"
- a="Yes. Every Vital Core Research batch is independently third-party tested. A Certificate of Analysis is available directly on each product page, allowing researchers to review documentation for the specific compound before ordering."
+ a="Yes. The certificates we reviewed were issued by Vanguard Laboratory of Olympia, Washington — an ISO/IEC 17025:2017 accredited laboratory (A2LA #6377.01.01) — and report two panels by HPLC-UV/VIS: chromatographic purity (99.19–99.66% across the certificates reviewed) and quantity, each tied to a specific lot. A Certificate of Analysis is published on each product page. The reports we reviewed are dated 2025; HPLC-UV/VIS confirms purity rather than molecular identity, and they do not add an endotoxin, heavy-metals, sterility, or microbial panel."
  />
  <FAQItem
  q="Does Vital Core Research carry SARMs as well as peptides?"

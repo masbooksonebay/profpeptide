@@ -75,7 +75,7 @@ export const couponLead: Record<string, string> = {
   "swiss-chems": "Public results page; HPLC/mass-spec to 99%+", // D
   "synthesis-peptides": "Per-batch HPLC testing, ≥99% purity", // D (retired)
   "treasure-coast-peptides": "Florida-based; third-party tested for identity, purity & concentration", // D (no COA/lab published — vendor-stated)
-  "vital-core-research": "56 compounds incl. GLP-1/2/3, SARMs & blends", // D
+  "vital-core-research": "ISO-17025 Vanguard per-lot COAs; HPLC purity + quantity", // A (named ISO-accredited lab, per-lot certs; two panels only)
   "nova-labs": "Janoshik per-batch COAs, ≥99%, GCC cold-chain", // A
   "nura-peptide": "Freedom Diagnostics COAs, public library", // A
   "99-purity-peptides": "Eagle Analytical per-batch COAs, ≥99%", // A

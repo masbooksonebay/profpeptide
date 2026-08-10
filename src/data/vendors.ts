@@ -501,7 +501,12 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://vitalcoreresearch.com/?ref=nbwnvhnu",
     detailPage: "/coupons/vital-core-research",
-    facts: { coa: "per-product" },
+    // Cert pass (Aug 2026): 3 real per-lot certs from Vanguard Laboratory, Olympia WA — ISO 17025:2017 /
+    // A2LA #6377.01.01 PRINTED; signed Dustin Newman (Lab Director) + Tori Johnson (Ops Mgr). TWO panels
+    // only, both HPLC-UV/VIS: chromatographic purity (99.19–99.66% observed) + quantity. NOT identity/MS,
+    // endotoxin, heavy-metals, sterility, or microbial — do not imply them. Certs self-limit (Vanguard did
+    // not observe sampling, cannot confirm authenticity/lot representativeness). All 3 dated 2025.
+    facts: { coa: "per-product", labName: "Vanguard Laboratory", labAccreditation: "ISO/IEC 17025:2017 (A2LA #6377.01.01)", testMethods: "HPLC-UV/VIS" },
   },
   // Brand is "NOVA Labs"; storefront domain is nova-biolabs.com — both intentional, do NOT
   // "fix" the name to match the domain. First Middle East / GCC vendor: region "AE" (UAE-based),
