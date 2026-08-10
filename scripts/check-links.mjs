@@ -11,7 +11,7 @@
 //
 // Per-family resolvers (a link resolves if ANY path holds):
 //   /coupons/<slug>     — real page dir  OR  explicit next.config.js redirect
-//   /peptides/<slug>    — real page dir  OR  present in the [slug] peptideData map
+//   /peptides/<slug>    — real page dir
 //   /supplements/<slug> — real page dir
 //   /compare/<slug>     — real page dir
 //   /guides/<slug>      — real page dir
@@ -50,7 +50,6 @@ import { createRequire } from "node:module";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const vendorsPath = join(root, "src/data/vendors.ts");
 const newsPath = join(root, "src/data/news.ts");
-const peptideDynamicPath = join(root, "src/app/peptides/[slug]/page.tsx");
 const require = createRequire(import.meta.url);
 
 const SCAN_DIR = join(root, "src");
@@ -97,31 +96,6 @@ function loadNewsSlugs() {
     throw new Error("check:links: could not read `articles` export from news.ts");
   }
   return new Set(articles.map((a) => a.slug));
-}
-
-// Top-level keys of the `peptideData` map in the /peptides/[slug] dynamic route.
-// That file imports next/*, so it can't be executed — read the object literal via AST.
-function loadPeptideDataSlugs() {
-  const src = readFileSync(peptideDynamicPath, "utf8");
-  const sf = ts.createSourceFile(peptideDynamicPath, src, ts.ScriptTarget.Latest, true);
-  const slugs = new Set();
-  function visit(node) {
-    if (
-      ts.isVariableDeclaration(node) &&
-      ts.isIdentifier(node.name) &&
-      node.name.text === "peptideData" &&
-      node.initializer &&
-      ts.isObjectLiteralExpression(node.initializer)
-    ) {
-      for (const prop of node.initializer.properties) {
-        const name = prop.name;
-        if (name && (ts.isStringLiteral(name) || ts.isIdentifier(name))) slugs.add(name.text);
-      }
-    }
-    ts.forEachChild(node, visit);
-  }
-  visit(sf);
-  return slugs;
 }
 
 // Paths that an explicit next.config.js redirect resolves, split by shape:
@@ -179,11 +153,10 @@ const hasTopPage = (seg) => existsSync(join(root, "src/app", seg, "page.tsx"));
 // ── run ─────────────────────────────────────────────────────────────────────
 const vendors = loadVendors();
 const newsSlugs = loadNewsSlugs();
-const peptideDataSlugs = loadPeptideDataSlugs();
 const redirectPaths = await loadRedirectPaths();
 
 // Per-family { linkPattern, resolver } table. resolve() returns how the link resolved
-// ("dir" | "redirect" | "map" | "registry") or null when it is dead.
+// ("dir" | "redirect" | "registry") or null when it is dead.
 // Match an INTERNAL /<family>/<slug> link. Two internal forms count:
 //   - site-relative   href="/news/foo"
 //   - self-absolute   https://profpeptide.com/news/foo   (canonical/og/JSON-LD url)
@@ -215,10 +188,8 @@ const FAMILIES = [
   },
   {
     name: "peptides",
-    resolve: (slug) =>
-      hasPageDir("peptides", slug) ? "dir" : peptideDataSlugs.has(slug) ? "map" : null,
-    detail: (slug) =>
-      `no page dir, not in peptideData map (${peptideDataSlugs.size} slug${peptideDataSlugs.size === 1 ? "" : "s"})`,
+    resolve: (slug) => (hasPageDir("peptides", slug) ? "dir" : null),
+    detail: () => "no page dir under src/app/peptides/",
   },
   {
     name: "supplements",
@@ -277,7 +248,7 @@ const FAMILIES = [
 ];
 
 const files = walk(SCAN_DIR);
-const REASON_LABEL = { redirect: "via redirect", map: "via peptideData map", registry: "via news registry" };
+const REASON_LABEL = { redirect: "via redirect", registry: "via news registry" };
 // The href a slug renders to: /<seg> for the single-segment family, /<family>/<slug> otherwise.
 const linkOf = (fam, slug) => (fam.name === "top-level" ? `/${slug}` : `/${fam.name}/${slug}`);
 
