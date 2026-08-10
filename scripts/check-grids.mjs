@@ -70,6 +70,11 @@ const ONBOARDING_BACKLOG = {
   // the peptide catalog (1 product on page 1) — needs a pull pass that reaches the real compounds.
   "licensed-peptides":  { reason: "woo Store API returns supplies before peptides — needs a pull that surfaces the compound catalog", since: "2026-08-04" },
   // real-peptides / amp-peptides / improved-peptides — price-pulled 2026-08-10 (grids live); entries removed.
+  // Onboarded 2026-08-10 from real per-lot certs (coupon page + registry live). Store went hard
+  // login-walled 2026-08-09: no read-only price pull possible, and the pre-wall homepage snapshot
+  // showed contradictory prices (GLP-3 RT 10mg $70 vs $75; GLOW $150 vs $155) — so NO price is
+  // published and the coupon page renders NO grid. Thin-page WARN only until a reachable price source.
+  "valkyrie-peptides":  { reason: "store hard login-walled 2026-08-09; no read-only price source + pre-wall prices self-contradicted — coupon-page-only, no grid", since: "2026-08-10" },
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────

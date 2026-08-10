@@ -494,6 +494,23 @@ export const vendors: Record<string, Vendor> = {
     // treasure-coast does NOT belong to the Freedom concentration.) coa: on-request.
     facts: { coa: "on-request" },
   },
+  "valkyrie-peptides": {
+    name: "Valkyrie Peptides",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    url: "https://valkyriepeps.com/?ref=PROFPEPTIDE",
+    detailPage: "/coupons/valkyrie-peptides",
+    // Onboarded Aug 2026 from TWO real per-lot certs (Horizon Analytical, US) for ONE lot (VP-7672189)
+    // of ONE compound (Retatrutide): purity 99.33% by UPLC/MS (mass-spec identity, CAS 2381089-83-2 /
+    // C221H342N46O68 / PubChem 171390338) + endotoxin <0.05 EU/mL on the matched -E lot. Signed Aleksey
+    // Yevtodiyenko PhD. NO accreditation printed (do NOT set labAccreditation). Heavy-metals + microbial
+    // are site-claimed but NOT on the certs — attributed in prose, NOT in facts.contaminants. Store went
+    // hard login-walled 2026-08-09: no price pull, no cart test, COAs login-gated. Payments Zelle/Cash
+    // App/Venmo only (no cards). coupon bound to the account. Cert Identity field reads valkyriepeptides.com
+    // vs the valkyriepeps.com store — a second same-operation signal (Trustpilot was the first); not proof.
+    facts: { coa: "login-gated", labName: "Horizon Analytical", testMethods: "UPLC-MS", contaminants: "Endotoxin (<0.05 EU/mL)" },
+  },
   "vital-core-research": {
     name: "Vital Core Research",
     code: "PROF20",

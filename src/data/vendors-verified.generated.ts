@@ -7,12 +7,12 @@
 // own affiliate dashboard), so "verified and working" is what we can honestly claim.
 
 /** ISO date of the last check:vendors run that cleared the floor. */
-export const VENDORS_VERIFIED_ISO = "2026-08-09";
+export const VENDORS_VERIFIED_ISO = "2026-08-10";
 
 /** Human-readable form of {@link VENDORS_VERIFIED_ISO} for SERP-facing copy. */
-export const VENDORS_VERIFIED_DATE = "August 9, 2026";
+export const VENDORS_VERIFIED_DATE = "August 10, 2026";
 
 /** Vendor slugs actually verified (reachable, not DEAD) in that run. A coupon page must
  *  render its "verified" date ONLY if its slug is in this set — a vendor excluded from
  *  the last run (dead link) must not claim a verification it didn't get. */
-export const VENDORS_VERIFIED_SLUGS = ["99-purity-peptides","aero-peptides","almighty-peptides","alpha-peptides","ameano-peptides","amino-club","amino-x","amp-peptides","ascension-peptides","behemoth-labz","biocollex","biolongevity-labs","biopure-peptides","crush-research","ez-peptides","glacier-aminos","ignite-peptides","improved-peptides","integrative-peptides","la-peptides","legendary-peptides","licensed-peptides","limitless-biotech","midwest-peptide","mile-high-compounds","modern-aminos","nextgen-peptides","nova-labs","nura-peptide","oasis-labs","particle-peptides","peptide-giants","peptide-partners","peptides-gg","peptidology","purerawz","purerx-peptides","purity-peptides","real-peptides","royal-peptides","science-based-peptides","spartan-peptides","swiss-chems","treasure-coast-peptides","vital-core-research"];
+export const VENDORS_VERIFIED_SLUGS = ["99-purity-peptides","aero-peptides","almighty-peptides","alpha-peptides","ameano-peptides","amino-club","amino-x","amp-peptides","ascension-peptides","behemoth-labz","biocollex","biolongevity-labs","biopure-peptides","crush-research","ez-peptides","glacier-aminos","ignite-peptides","improved-peptides","integrative-peptides","la-peptides","legendary-peptides","licensed-peptides","limitless-biotech","midwest-peptide","mile-high-compounds","modern-aminos","nextgen-peptides","nova-labs","nura-peptide","oasis-labs","particle-peptides","peptide-giants","peptide-partners","peptides-gg","peptidology","purerawz","purerx-peptides","purity-peptides","real-peptides","royal-peptides","science-based-peptides","spartan-peptides","swiss-chems","treasure-coast-peptides","valkyrie-peptides","vital-core-research"];
