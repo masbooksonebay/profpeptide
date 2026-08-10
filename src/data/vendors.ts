@@ -587,6 +587,18 @@ export const vendors: Record<string, Vendor> = {
  */
 export const activeVendorCount = Object.values(vendors).filter((v) => !v.retired).length;
 
+/**
+ * Active vendors with a COMPLETED certificate pass — a named third-party lab recorded in
+ * `facts.labName` (PP read an actual certificate). Distinct from `facts.labClaim`, which is a
+ * lab the vendor NAMES but whose certificate PP has not seen (attributed, not counted here).
+ * Derived, never hardcoded — the /methodology page cites this so the figure can't rot as passes
+ * are added. A conservative floor: a few vendors had a COA read during coded-name decoding
+ * without a `facts.labName`, so the true number of certificates opened is at least this.
+ */
+export const certVerifiedVendorCount = Object.values(vendors).filter(
+  (v) => !v.retired && v.facts?.labName,
+).length;
+
 const REGION_WORD: Record<Vendor["region"], string> = {
   US: "US-based",
   CA: "Canada-based",

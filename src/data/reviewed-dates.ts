@@ -34,3 +34,15 @@ export const FEATURED_VENDORS_REVIEWED_DATE = monthYear(FEATURED_VENDORS_REVIEWE
  *  stamp can't disagree (they did: dateModified sat at a hardcoded 2026-06-25 while the badge
  *  read August). */
 export const FEATURED_VENDORS_REVIEWED_DATE_ISO = `${FEATURED_VENDORS_REVIEWED_ISO}-01`;
+
+/** ISO month /methodology was last editorially reviewed. Bump when the standards page is
+ *  re-read against current practice. Same pattern as FEATURED_VENDORS_REVIEWED_ISO: the visible
+ *  "Last reviewed" stamp and the JSON-LD dateModified both derive from this one constant, so they
+ *  can't drift (the page previously carried a hand-typed, stale "Last reviewed: June 2026"). */
+export const METHODOLOGY_REVIEWED_ISO = "2026-08";
+
+/** "Month Year" the /methodology "Last reviewed" line renders — derived from the ISO above. */
+export const METHODOLOGY_REVIEWED_DATE = monthYear(METHODOLOGY_REVIEWED_ISO);
+
+/** Full ISO date (first of the review month) for the /methodology JSON-LD `dateModified`. */
+export const METHODOLOGY_REVIEWED_DATE_ISO = `${METHODOLOGY_REVIEWED_ISO}-01`;
