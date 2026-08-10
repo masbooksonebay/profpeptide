@@ -2863,9 +2863,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GHRP-2 | 10mg | $50.00 | $5.00 | — | ✓ | products/ghrp-2/ |
 | GHRP-6 | 10mg | $50.00 | $5.00 | — | ✓ | products/ghrp-6/ |
 | Glutathione | 600mg | $85.00 | $0.14 | — | ✗ | products/glutathione/ |
-| GLYCON-X [coded, UNVERIFIED] | 15mg | $150.00 | $10.00 | — | ✓ | products/glycon-x/ |
-| GLYCON-X [coded, UNVERIFIED] | 30mg | $270.00 | $9.00 | — | ✓ | products/glycon-x/ |
-| GLYCON-X [coded, UNVERIFIED] | 60mg | $500.00 | $8.33 | — | ✓ | products/glycon-x/ |
 | Hexarelin | 5mg | $60.00 | $12.00 | — | ✓ | products/hexarelin/ |
 | IGF-1 LR3 | 0.1mg | $40.00 | $400.00 | — | ✓ | products/igf-1-lr3/ |
 | IGF-1 LR3 | 1mg | $90.00 | $90.00 | — | ✓ | products/igf-1-lr3/ |
@@ -2900,6 +2897,9 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tesamorelin | 10mg | $95.00 | $9.50 | — | ✓ | products/tesamorelin-peptide/ |
 | Thymalin [backlog] | 10mg | $60.00 | $6.00 | — | ✓ | products/thymalin/ |
 | Thymosin Alpha-1 | 10mg | $115.00 | $11.50 | — | ✓ | products/thymosin-alpha-1-peptide/ |
+| Tirzepatide (listed as GLYCON-X) | 15mg | $150.00 | $10.00 | — | ✓ | products/glycon-x/ |
+| Tirzepatide (listed as GLYCON-X) | 30mg | $270.00 | $9.00 | — | ✓ | products/glycon-x/ |
+| Tirzepatide (listed as GLYCON-X) | 60mg | $500.00 | $8.33 | — | ✓ | products/glycon-x/ |
 | VIP | 5mg | $65.00 | $13.00 | — | ✓ | products/vip/ |
 
 ### Blends (total mg; ratio where published)

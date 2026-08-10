@@ -17,6 +17,22 @@ when identity is confirmed from EVIDENCE:
 NEVER from the code/permalink convention alone. If it cannot be confirmed, the
 row is written under the coded name with a "[coded, UNVERIFIED]" marker and NOT
 asserted as a mapping. Each decoder entry below records how it was confirmed.
+
+THE GLP-1/2/3 TIER KEY (observed, CONSISTENT — corroboration only, never proof)
+--------------------------------------------------------
+Across every vendor that both uses the tier scheme AND has been independently
+confirmed, the tier maps the same way, with ZERO contradictions:
+    GLP-1  ->  Semaglutide
+    GLP-2  ->  Tirzepatide
+    GLP-3  ->  Retatrutide
+Confirmed users: amino-club, ignite-peptides, synthesis-peptides, alpha-peptides,
+spartan-peptides, improved-peptides (all three tiers); biocollex, midwest-peptide
+(GLP-2/3); oasis-labs, science-based-peptides, nova-labs (GLP-3); real-peptides
+(GLYCON-X = vial-labelled "GLP-2 T" = Tirzepatide, 2026-08). The key is a reusable
+CORROBORATOR — it must still ride alongside real evidence (COA / spec / vial label),
+never stand alone. Vendors using the same naming but held [coded, UNVERIFIED] for
+lack of that evidence: purerawz, vital-core-research, nextgen-peptides, la-peptides,
+peptidology, peptide-giants, nura-peptide, amp-peptides (GLP3RT), biopure-peptides.
 """
 import re
 
@@ -438,17 +454,17 @@ def _nura(n):
         return (n.split('(')[0].strip() + ' [coded, UNVERIFIED]', None, 'single_bk')
 
 
-@_decoder('real-peptides')  # GLYCON-X left [coded, UNVERIFIED] — off-grid, not mapped. Its page describes a
-# "dual-agonist GLP-1 + GIP", the mechanism biocollex/amino-club/midwest DO decode to Tirzepatide at
-# mechanism-tier; BUT the Real coupon page's own (freshly-authored) prose deliberately declines to identify
-# it ("no CAS/formula/MW, so the specific compound is not identified here"). Respect that editorial stance
-# rather than ship a grid row that contradicts the page — conservative, consistent with AMP's GLP3RT this
-# batch. (Promote to tirzepatide + reconcile the prose if the mechanism-tier read is preferred.) Trinity-X
-# needs no decode: the title self-names it "Retatrutide (Trinity-X™)" so match() maps it. SHB (Endure) /
-# HHB (Radiance) / LC-526 (Lipo-MIC) are multi-compound amino / B-complex / lipotropic research BLENDS
-# (vendor desc: "9-compound" / "7-compound" blends; LC-526 ships a ten-vial kit) — not single peptides.
+@_decoder('real-peptides')  # GLYCON-X = Tirzepatide — VERIFIED by the VIAL LABEL "GLP-2 T" (Mark has one in
+# hand, 2026-08). GLP-2 is the tier that decodes to Tirzepatide across the roster's GLP-1/2/3 convention
+# (GLP-1=Sema, GLP-2=Tirz, GLP-3=Reta), and it corroborates the dual GLP-1/GIP agonist mechanism Real's own
+# product page states (uniquely Tirzepatide). First-hand vial evidence OUTRANKS the page copy, which had said
+# "not identified" — the coupon-page prose was reconciled to match (Tirzepatide, listed as GLYCON-X). Was
+# previously held [coded, UNVERIFIED] on mechanism alone; the vial label is what promoted it. Trinity-X needs
+# no decode: the title self-names it "Retatrutide (Trinity-X™)" so match() maps it. SHB (Endure) / HHB
+# (Radiance) / LC-526 (Lipo-MIC) are multi-compound amino / B-complex / lipotropic research BLENDS (vendor
+# desc: "9-compound" / "7-compound" blends; LC-526 ships a ten-vial kit) — not single peptides.
 def _real(n):
-    if re.match(r'GLYCON-?X', n, re.I): return ('GLYCON-X [coded, UNVERIFIED]', None, 'single_bk')
+    if re.match(r'GLYCON-?X', n, re.I): return (_c('Tirzepatide', 'GLYCON-X'), 'tirzepatide', 'single')
     if re.match(r'(SHB|HHB|LC ?526)\b', n, re.I): return ('EXCLUDE', None, None)
 
 
