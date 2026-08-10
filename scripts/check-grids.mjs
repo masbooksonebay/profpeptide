@@ -69,19 +69,7 @@ const ONBOARDING_BACKLOG = {
   // woo store detected, but the Store API surfaces supplies (cold packs, crates, diluent) ahead of
   // the peptide catalog (1 product on page 1) — needs a pull pass that reaches the real compounds.
   "licensed-peptides":  { reason: "woo Store API returns supplies before peptides — needs a pull that surfaces the compound catalog", since: "2026-08-04" },
-  // Onboarded 2026-08-07 (coupon page + registry live). WooCommerce; no price-pull pass run yet.
-  // Coupon page renders NO <VendorProductGrid> until rows land, so this is a thin-page WARN only.
-  "real-peptides":      { reason: "onboarded 2026-08; WooCommerce catalog not yet price-pulled", since: "2026-08-07" },
-  // Onboarded 2026-08-09 (coupon page + registry live). WooCommerce; no price-pull pass yet.
-  // Coupon page renders NO product grid until rows land — thin-page WARN only. NOTE: AMP runs
-  // recurring "Supply" SKUs (bi-monthly/quarterly/biannual) on some GLP items; a future pull must
-  // exclude those so subscription rows don't pollute the one-time grid.
-  "amp-peptides":       { reason: "onboarded 2026-08; WooCommerce catalog not yet price-pulled (exclude subscription Supply SKUs)", since: "2026-08-09" },
-  // Onboarded 2026-08-09 (coupon page + registry live). WordPress catalog with a CUSTOM checkout
-  // (not standard WooCommerce cart); no price-pull adapter yet. Coupon page renders NO grid until
-  // rows land — thin-page WARN only. NOTE: bundle ("buy two get one free") pricing does not combine
-  // with codes; a future pull should capture single-vial pricing, not the BOGO tiers.
-  "improved-peptides":  { reason: "onboarded 2026-08; custom checkout, no price-pull adapter yet (pull single-vial prices, not BOGO tiers)", since: "2026-08-09" },
+  // real-peptides / amp-peptides / improved-peptides — price-pulled 2026-08-10 (grids live); entries removed.
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────

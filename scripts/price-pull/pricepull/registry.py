@@ -318,6 +318,32 @@ VENDORS = {
               "⚠️ Coded GLPs (BioLean GLP-1, GLP-2 GIP, GLP-3 GGG) stay [coded, UNVERIFIED] and OUT of the grid: their Store-API "
               "descriptions are generic boilerplate with no CAS/formula/mechanism/name — that does NOT clear the decode "
               "hierarchy. Do NOT decode by the GIP/GGG suffix; a per-page + COA check happens separately. Affiliate URL uses ?sld=."),
+    # ---- 2026-08 price-grid backlog clear (real / amp / improved) ----
+    "real-peptides": dict(name="Real Peptides", domain="realpeptides.co", adapter="woo",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="No cart-level auto-discount; base = current price (product sale_price auto-applied per rule). Re-verify at write.",
+        notes="Onboarded 2026-08 (price-grid backlog). Standard woo Store API, 75 products, all USD. Coded/blend handling in "
+              "decoders._real: GLYCON-X = Tirzepatide (product page: 'dual-agonist GLP-1 + GIP' — uniquely Tirz, mechanism-tier); "
+              "Trinity-X self-names 'Retatrutide' in-title (match() maps it, no decode). SHB/HHB/LC-526 are multi-compound "
+              "amino/B-complex/lipotropic blends -> excluded. Serums/'Cosmetic'/LIPO-C -> scope out-of-scope; Bundles/Stacks -> "
+              "is_kit_name; Tablets/Capsules -> oral form excluded; Liquid Sprays -> spray kind. P21/PE-22-28 have no PP profile "
+              "-> UNMAPPED/excluded."),
+    "amp-peptides": dict(name="AMP Peptides", domain="amp-peptides.com", adapter="woo",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="No product sale_price / no auto cart discount observed; base = list. Re-verify at write.",
+        notes="Onboarded 2026-08 (price-grid backlog). Standard woo Store API, 19 products, all USD. decoders._amp EXCLUDES the "
+              "three 'GLP3RT — … Supply' multi-vial supply packs (6/3/2 vials — a supply price is not a per-vial price). "
+              "One-time GLP3RT = [coded, UNVERIFIED] (page has no CAS/formula/MW/mechanism/name; 'RT' suffix is not evidence) — "
+              "NOT mapped to Retatrutide, stays off the grid."),
+    "improved-peptides": dict(name="Improved Peptides", domain="improvedpeptides.com", adapter="woo",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="BOGO 'buy 2 get 1 free' is CODE-EXCLUSIVE (does not stack with promo codes) and is a cart quantity offer, "
+                     "NOT a per-vial markdown — so it is NOT modeled; base = single-vial LIST (the code-eligible price). No "
+                     "product sale_price. The Store API returns single-vial list prices (BOGO is cart-level, no separate SKUs).",
+        notes="Onboarded 2026-08 (price-grid backlog). Standard woo Store API, 27 simple products, all USD. decoders._improved "
+              "verifies the coded GLPs by unique mechanism in the vendor's OWN descriptions: GLP-3R=Retatrutide (triple "
+              "GLP-1/GIP/glucagon), GLP-2T=Tirzepatide (dual GIP/GLP-1), GLP-1S=Semaglutide (mono-GLP-1 tier of the coherent "
+              "1S/2T/3R scheme). Cooler + Bacteriostatic Water -> scope supply/out-of-scope."),
 }
 
 # permanently or partially unpullable — do NOT keep retrying (see doc's blocked section)

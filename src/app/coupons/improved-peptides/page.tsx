@@ -5,6 +5,9 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
+import { vendors } from "@/data/vendors";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -19,6 +22,11 @@ function P({ slug, children }: { slug: string; children: React.ReactNode }) {
 }
 
 export default function ImprovedPeptidesCouponPage() {
+  const v = vendors["improved-peptides"];
+  const rows = vendorProductRows("improved-peptides");
+  const discountPct = vendorDiscountPct("improved-peptides");
+  const autoApply = codeAutoApplies("improved-peptides");
+  const shopUrl = makeShopUrlFor("improved-peptides");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -47,6 +55,22 @@ export default function ImprovedPeptidesCouponPage() {
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Improved Peptides publishes a public COA Library, and each product page links its own Certificate of Analysis &mdash; a genuinely public, per-product library that most vendors don&rsquo;t offer. Of its 24 catalog items, 10 currently have a published COA; the rest are marked &ldquo;in verification,&rdquo; available on request. The certificates we reviewed were split across two independent US labs: Freedom Diagnostics (signed by principal chemist Alex Johnson, each report carrying a search code verifiable at FreedomDiagnosticsTesting.com) and Krause Analytical of Austin, TX (signed by laboratory director Mark C. Krause). Each report confirms identity by LC-MS and purity by RP-HPLC-UV &mdash; 99.02&ndash;99.9% across the certificates reviewed &mdash; plus net peptide content, and each carries a product-specific lot (e.g. IP-BPC-2026-001, an April 2026 batch). Improved&rsquo;s coded GLP names map to known compounds &mdash; its &ldquo;GLP-1S&rdquo; certificate is issued for Semaglutide. Improved additionally states that it runs endotoxin (under 0.25 EU/mg), microbial and sterility testing to USP standards, and fills in an ISO 7 cleanroom; those panels are not printed on the certificates we reviewed, so they are reported here as the vendor states them, not as independently verified. No lab accreditation is printed on the certificates.
+          </p>
+        </div>
+
+        {/* Catalog — code card, then the product grid (one row per compound+size). */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">Improved Peptides catalog &amp; prices</h2>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are Improved Peptides&apos; list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
           </p>
         </div>
 

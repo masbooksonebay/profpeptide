@@ -438,6 +438,41 @@ def _nura(n):
         return (n.split('(')[0].strip() + ' [coded, UNVERIFIED]', None, 'single_bk')
 
 
+@_decoder('real-peptides')  # GLYCON-X left [coded, UNVERIFIED] — off-grid, not mapped. Its page describes a
+# "dual-agonist GLP-1 + GIP", the mechanism biocollex/amino-club/midwest DO decode to Tirzepatide at
+# mechanism-tier; BUT the Real coupon page's own (freshly-authored) prose deliberately declines to identify
+# it ("no CAS/formula/MW, so the specific compound is not identified here"). Respect that editorial stance
+# rather than ship a grid row that contradicts the page — conservative, consistent with AMP's GLP3RT this
+# batch. (Promote to tirzepatide + reconcile the prose if the mechanism-tier read is preferred.) Trinity-X
+# needs no decode: the title self-names it "Retatrutide (Trinity-X™)" so match() maps it. SHB (Endure) /
+# HHB (Radiance) / LC-526 (Lipo-MIC) are multi-compound amino / B-complex / lipotropic research BLENDS
+# (vendor desc: "9-compound" / "7-compound" blends; LC-526 ships a ten-vial kit) — not single peptides.
+def _real(n):
+    if re.match(r'GLYCON-?X', n, re.I): return ('GLYCON-X [coded, UNVERIFIED]', None, 'single_bk')
+    if re.match(r'(SHB|HHB|LC ?526)\b', n, re.I): return ('EXCLUDE', None, None)
+
+
+@_decoder('amp-peptides')  # GLP3RT = [coded, UNVERIFIED]: the product page carries NO CAS/formula/MW/
+# mechanism/name (desc is only "What is GLP3RT?") and the "RT" suffix is not evidence -> coded name only,
+# NOT mapped to Retatrutide. The three "— … Supply" SKUs are multi-vial supply packs (6 / 3 / 2 vials per
+# their own descriptions), not single-vial prices -> excluded (a supply price must never ship as a per-vial
+# row). Supply branch precedes the GLP3RT branch because those SKU names start "GLP3RT — … Supply".
+def _amp(n):
+    if re.search(r'\bSupply\b', n, re.I): return ('EXCLUDE', None, None)
+    if re.match(r'GLP3RT\b', n, re.I): return ('GLP3RT [coded, UNVERIFIED]', None, 'single_bk')
+
+
+@_decoder('improved-peptides')  # GLP-3R / GLP-2T VERIFIED by unique mechanism in Improved's OWN product
+# descriptions: GLP-3R = "triple-receptor agonist targeting GLP-1, GIP and glucagon" (uniquely Retatrutide);
+# GLP-2T = "dual agonist of GIP and GLP-1 receptors" (uniquely Tirzepatide). GLP-1S = "mono GLP-1 receptor
+# agonist" -> Semaglutide, the mono tier of the vendor's coherent GLP-1S/2T/3R (mono/dual/triple) scheme
+# (same standard as ameano AMP-1P). Matches both GLP-1S sizes (5mg/10mg simple SKUs).
+def _improved(n):
+    if re.match(r'GLP-3R', n, re.I): return (_c('Retatrutide', 'GLP-3R'), 'retatrutide', 'single')
+    if re.match(r'GLP-2T', n, re.I): return (_c('Tirzepatide', 'GLP-2T'), 'tirzepatide', 'single')
+    if re.match(r'GLP-1S', n, re.I): return (_c('Semaglutide', 'GLP-1S'), 'semaglutide', 'single')
+
+
 def decode(vendor, name):
     fn = DECODERS.get(vendor)
     return fn(name.strip()) if fn else None

@@ -5,6 +5,9 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
+import { vendors } from "@/data/vendors";
 
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
@@ -20,6 +23,11 @@ function P({ slug, children }: { slug: string; children: React.ReactNode }) {
 }
 
 export default function RealPeptidesCouponPage() {
+  const v = vendors["real-peptides"];
+  const rows = vendorProductRows("real-peptides");
+  const discountPct = vendorDiscountPct("real-peptides");
+  const autoApply = codeAutoApplies("real-peptides");
+  const shopUrl = makeShopUrlFor("real-peptides");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -47,6 +55,22 @@ export default function RealPeptidesCouponPage() {
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Every Real Peptides product links its own Certificate of Analysis from Freedom Diagnostics, an independent US lab (FreedomDiagnosticsTesting.com). Each report confirms identity by LC-MS, purity by HPLC-UV (99.5&ndash;99.9% across the certificates reviewed), and net peptide content, and pairs with an endotoxin report run in duplicate under USP &lt;85&gt;; every certificate is signed by the lab&apos;s principal chemist (Alex Johnson) and carries a per-record search code (formatted Real&#123;accession&#125;) verifiable at FreedomDiagnosticsTesting.com. Those certificates are per-product rather than batch-matched &mdash; the lot field reads N/A. Real Peptides also states that its batches undergo heavy-metals and sterility testing and that it works with a second lab, Kovera.
+          </p>
+        </div>
+
+        {/* Catalog — code card, then the product grid (one row per compound+size). */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">Real Peptides catalog &amp; prices</h2>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are Real Peptides&apos; list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
           </p>
         </div>
 

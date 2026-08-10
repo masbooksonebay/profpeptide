@@ -5,6 +5,9 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
+import { vendors } from "@/data/vendors";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -19,6 +22,11 @@ function P({ slug, children }: { slug: string; children: React.ReactNode }) {
 }
 
 export default function AmpPeptidesCouponPage() {
+  const v = vendors["amp-peptides"];
+  const rows = vendorProductRows("amp-peptides");
+  const discountPct = vendorDiscountPct("amp-peptides");
+  const autoApply = codeAutoApplies("amp-peptides");
+  const shopUrl = makeShopUrlFor("amp-peptides");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -46,6 +54,22 @@ export default function AmpPeptidesCouponPage() {
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             AMP Peptides states that its compounds are analyzed by an independent third-party laboratory &mdash; Janoshik Analytical &mdash; before release, with no in-house testing, to a stated 99%+ purity by HPLC and ESI-MS. One important caveat: the only Certificate of Analysis shown publicly is explicitly labelled a &ldquo;Sample CoA &mdash; actual results vary by lot.&rdquo; It is an illustrative example (BPC-157, lot AMP-2026-001) rather than a batch-matched report, and carries no signatory or accreditation. Real, lot-specific Certificates of Analysis are available on request by email (info@amp-peptides.com) rather than in a public library. Because Prof. Peptide has not reviewed an actual lot certificate, AMP&rsquo;s Janoshik testing is reported here as the vendor states it, not as independently verified.
+          </p>
+        </div>
+
+        {/* Catalog — code card, then the product grid (one row per compound+size). */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">AMP Peptides catalog &amp; prices</h2>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are AMP Peptides&apos; list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
           </p>
         </div>
 
