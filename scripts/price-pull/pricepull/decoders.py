@@ -468,14 +468,18 @@ def _real(n):
     if re.match(r'(SHB|HHB|LC ?526)\b', n, re.I): return ('EXCLUDE', None, None)
 
 
-@_decoder('amp-peptides')  # GLP3RT = [coded, UNVERIFIED]: the product page carries NO CAS/formula/MW/
-# mechanism/name (desc is only "What is GLP3RT?") and the "RT" suffix is not evidence -> coded name only,
-# NOT mapped to Retatrutide. The three "— … Supply" SKUs are multi-vial supply packs (6 / 3 / 2 vials per
-# their own descriptions), not single-vial prices -> excluded (a supply price must never ship as a per-vial
-# row). Supply branch precedes the GLP3RT branch because those SKU names start "GLP3RT — … Supply".
+@_decoder('amp-peptides')  # GLP3RT = Retatrutide — NAMING EVIDENCE (not a certificate; no CAS/MW/COA on the
+# page, desc is only "What is GLP3RT?"). Reassessed 2026-08: 'RT' is a COMPOUND ABBREVIATION, not tier
+# notation — the same form as ignite GLP-2 (TZ) and mile-high MHC-1 SM, both decoded on PP — so the name
+# carries BOTH the GLP-3 tier AND the compound. AMP stocks exactly ONE GLP product across its 19 SKUs (no
+# Semaglutide, no Tirzepatide), so the "3" isn't disambiguating a sibling; it can only be tracking the
+# external GLP-1/2/3 tier key (GLP-3 = Retatrutide). Mark confirmed the VIAL label reads GLP3RT. This is
+# naming/label evidence, weaker than a COA — recorded as such. The three "— … Supply" SKUs (bi-monthly /
+# quarterly / biannual multi-vial packs) stay excluded — Supply branch precedes the GLP3RT branch because
+# those SKU names start "GLP3RT — … Supply".
 def _amp(n):
     if re.search(r'\bSupply\b', n, re.I): return ('EXCLUDE', None, None)
-    if re.match(r'GLP3RT\b', n, re.I): return ('GLP3RT [coded, UNVERIFIED]', None, 'single_bk')
+    if re.match(r'GLP3RT\b', n, re.I): return (_c('Retatrutide', 'GLP3RT'), 'retatrutide', 'single')
 
 
 @_decoder('improved-peptides')  # GLP-3R / GLP-2T VERIFIED by unique mechanism in Improved's OWN product

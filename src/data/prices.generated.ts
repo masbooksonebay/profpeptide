@@ -1759,6 +1759,8 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "mots-c", compoundName: "MOTS-C", vendor: "amp-peptides", sizeMg: 40, basePrice: 80, inStock: true, vendorSlug: "product/mots-c/", regularPrice: 100, onSale: true },
   { compound: "nad-plus", compoundName: "NAD+", vendor: "amp-peptides", sizeMg: 500, basePrice: 70, inStock: true, vendorSlug: "product/nad/", regularPrice: 85, onSale: true },
   { compound: "nad-plus", compoundName: "NAD+", vendor: "amp-peptides", sizeMg: 1000, basePrice: 80, inStock: true, vendorSlug: "product/nad/", regularPrice: 100, onSale: true },
+  { compound: "retatrutide", compoundName: "Retatrutide", vendor: "amp-peptides", sizeMg: 10, basePrice: 125, inStock: true, vendorSlug: "product/glp3rt/", listedAs: "GLP3RT" },
+  { compound: "retatrutide", compoundName: "Retatrutide", vendor: "amp-peptides", sizeMg: 20, basePrice: 145, inStock: true, vendorSlug: "product/glp3rt/", listedAs: "GLP3RT" },
   { compound: "tb-500", compoundName: "TB-500", vendor: "amp-peptides", sizeMg: 5, basePrice: 40, inStock: true, vendorSlug: "product/tb-500/", regularPrice: 50, onSale: true },
   { compound: "tb-500", compoundName: "TB-500", vendor: "amp-peptides", sizeMg: 10, basePrice: 90, inStock: true, vendorSlug: "product/tb-500/", regularPrice: 95, onSale: true },
   { compound: "tesamorelin", compoundName: "Tesamorelin", vendor: "amp-peptides", sizeMg: 10, basePrice: 100, inStock: true, vendorSlug: "product/tesamorelin/", regularPrice: 120, onSale: true },

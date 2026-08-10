@@ -2938,12 +2938,12 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | BPC-157 | 20mg | $90.00 | $4.50 | $110.00 | ✓ | product/bpc-157-10mg/ |
 | GHK-Cu | 100mg | $65.00 | $0.65 | $80.00 | ✓ | product/ghk-cu/ |
 | GHK-Cu | 200mg | $120.00 | $0.60 | $150.00 | ✓ | product/ghk-cu/ |
-| GLP3RT [coded, UNVERIFIED] | 10mg | $125.00 | $12.50 | — | ✓ | product/glp3rt/ |
-| GLP3RT [coded, UNVERIFIED] | 20mg | $145.00 | $7.25 | — | ✓ | product/glp3rt/ |
 | MOTS-C | 10mg | $50.00 | $5.00 | $65.00 | ✓ | product/mots-c/ |
 | MOTS-C | 40mg | $80.00 | $2.00 | $100.00 | ✓ | product/mots-c/ |
 | NAD+ | 500mg | $70.00 | $0.14 | $85.00 | ✓ | product/nad/ |
 | NAD+ | 1000mg | $80.00 | $0.08 | $100.00 | ✓ | product/nad/ |
+| Retatrutide (listed as GLP3RT) | 10mg | $125.00 | $12.50 | — | ✓ | product/glp3rt/ |
+| Retatrutide (listed as GLP3RT) | 20mg | $145.00 | $7.25 | — | ✓ | product/glp3rt/ |
 | TB-500 | 5mg | $40.00 | $8.00 | $50.00 | ✓ | product/tb-500/ |
 | TB-500 | 10mg | $90.00 | $9.00 | $95.00 | ✓ | product/tb-500/ |
 | Tesamorelin | 10mg | $100.00 | $10.00 | $120.00 | ✓ | product/tesamorelin/ |
@@ -2963,8 +2963,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Excluded: clinical/other, no parseable size (Rule 4) — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
-
-
 
 ## VENDOR: Improved Peptides
 - **slug:** improved-peptides | **code:** PROFPEPTIDE | **discount:** 15% off | **url:** improvedpeptides.com
