@@ -43,7 +43,7 @@ export const couponLead: Record<string, string> = {
   "ascension-peptides": "MZ BioLabs per-batch COAs; blends & stacks", // A
   "behemoth-labz": "Colmaric-tested; peptides & SARMs", // A
   "biolongevity-labs": "BioRegen LC-MS per-batch COAs", // A
-  "biopure-peptides": "US-made, ≥99% purity, batch-tested", // C
+  "biopure-peptides": "US-made; ≥99% purity standard, COA with each order", // C (no COA published online — vendor-stated)
   "biocollex": "Freedom Diagnostics per-batch COAs, same-day ship", // A
   "crush-research": "ILS Laboratories per-batch COAs, ISO-17025", // A
   "ez-peptides": "Janoshik-tested per batch; same-day, 4.7/5", // A
@@ -52,7 +52,7 @@ export const couponLead: Record<string, string> = {
   "ignite-peptides": "99%+ purity, per-product COAs", // C
   "improved-peptides": "Freedom Diagnostics & Krause LC-MS COAs; public library", // A (two named labs + rare public COA library)
   "la-peptides": "Bioviridian batch COAs, ≥99%, made in USA", // A
-  "mile-high-compounds": "8x US third-party testing, public COAs", // D (multi-lab)
+  "mile-high-compounds": "Public batch-matched COA library; Chromate + ISO-17025 Vanguard", // A (two named labs, one ISO-accredited)
   "modern-aminos": "ISO-17025 accredited, per-batch COAs", // B (multi-lab + ISO)
   "nextgen-peptides": "ILS-Labs COAs, ≥99% HPLC, public library", // A
   "peptidology": "ISO-17025, two-lab (Vanguard + Eagle) COAs", // B (multi-lab + ISO)
@@ -74,7 +74,7 @@ export const couponLead: Record<string, string> = {
   "spartan-peptides": "MZ BioLabs HPLC + mass-spec, ≥98%", // A
   "swiss-chems": "Public results page; HPLC/mass-spec to 99%+", // D
   "synthesis-peptides": "Per-batch HPLC testing, ≥99% purity", // D (retired)
-  "treasure-coast-peptides": "99%+ purity, batch-tested, Florida-based", // C
+  "treasure-coast-peptides": "Florida-based; third-party tested for identity, purity & concentration", // D (no COA/lab published — vendor-stated)
   "vital-core-research": "56 compounds incl. GLP-1/2/3, SARMs & blends", // D
   "nova-labs": "Janoshik per-batch COAs, ≥99%, GCC cold-chain", // A
   "nura-peptide": "Freedom Diagnostics COAs, public library", // A

@@ -163,7 +163,11 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://biopurepeptides.com/?sld=profpeptide",
     detailPage: "/coupons/biopure-peptides",
-    facts: { purityStandard: "≥99%", coa: "per-product", labName: "AxisPharm" },
+    // Job-2 cert pass (Aug 2026): NO COAs published online — product pages carry only a
+    // "Third Party Tested" badge and say a COA "comes with the product"; no lab is named
+    // anywhere on the site and none is downloadable. The prior labName "AxisPharm" was a
+    // phantom (unverifiable; not on the site) — removed. coa: on-request.
+    facts: { purityStandard: "≥99%", coa: "on-request" },
   },
   biocollex: {
     name: "BioCollex",
@@ -253,7 +257,15 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://milehighcompounds.is/?ref=profpeptide",
     detailPage: "/coupons/mile-high-compounds",
-    facts: { coa: "library", labName: "Chromate, Vanguard Laboratory" },
+    // Job-2 cert pass (Aug 2026): real, public, batch-versioned COA library (70+ products, each
+    // "View COA" + N previous batches). Two named labs, verified from certs — Chromate (most;
+    // RP-HPLC-UV identity/quantity/purity; QR verify at chromate.org/verify; signed Lucas Weber;
+    // NO accreditation) and Vanguard Laboratory, Olympia WA (e.g. Sermorelin; HPLC-UV/VIS purity +
+    // quantity; ISO 17025:2017 / A2LA #6377.01.01 PRINTED; signed Dustin Newman). Certs print
+    // identity + purity + content only — NOT the endotoxin/sterility/heavy-metals the "8x" claim
+    // implies (attributed, not in facts). Identity is HPLC spec-match, not MS. Coded GLP names
+    // decode from CAS: MHC-2 TRZ=Tirzepatide, MHC-3 RT=Retatrutide, MHC-1 SM=Semaglutide.
+    facts: { coa: "library", labName: "Chromate, Vanguard Laboratory", purityStandard: "99%+", testMethods: "RP-HPLC-UV" },
   },
   "modern-aminos": {
     name: "Modern Aminos",
@@ -475,7 +487,12 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://treasurecoastpeptides.com/?ref=MARKSHURTLIFF",
     detailPage: "/coupons/treasure-coast-peptides",
-    facts: { coa: "per-batch", labName: "Janoshik, Freedom Diagnostics", purityStandard: "99%+" },
+    // Job-2 cert pass (Aug 2026): NO COAs published online — product pages carry only a
+    // "Third Party Tested" badge, name no lab, and publish no certificate. The prior labName
+    // "Janoshik, Freedom Diagnostics" and purityStandard "99%+" appear NOWHERE on the site —
+    // both phantoms, removed. (Freedom Diagnostics ledger: this was an unsupported claim, so
+    // treasure-coast does NOT belong to the Freedom concentration.) coa: on-request.
+    facts: { coa: "on-request" },
   },
   "vital-core-research": {
     name: "Vital Core Research",
