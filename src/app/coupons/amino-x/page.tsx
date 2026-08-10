@@ -32,7 +32,7 @@ export default function AminoXCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Amino X is a US-based research-peptide vendor with a focused catalog of research compounds spanning metabolic, recovery, growth-hormone, cognitive, and skin-health research. Profile-backed compounds by research area:
+            Amino X (AMINO X LLC) is a US-based research-peptide vendor with a focused catalog spanning metabolic, recovery, growth-hormone, cognitive, and skin-health research &mdash; 17 listings, shown with live prices below. It offers free shipping on orders over $200, and the vendor also circulates a public AMINO15 discount code. Profile-backed compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">

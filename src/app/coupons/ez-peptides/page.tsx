@@ -32,7 +32,7 @@ export default function EZPeptidesCouponPage() {
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- EZ Peptides is a U.S.-based research-peptide supplier headquartered in Albuquerque, New Mexico, known for fast fulfillment (0&ndash;2 business-day shipping) and a 4.7/5 rating across 176+ reviews, with an independent Certificate of Analysis on every batch. Their catalog spans metabolic, recovery, growth-hormone, cognitive, skin, immunity, longevity, and sexual-health research compounds. Popular compounds by research area:
+ EZ Peptides is a U.S.-based research-peptide supplier headquartered in Albuquerque, New Mexico, known for fast fulfillment (0&ndash;2 business-day shipping), with an independent Certificate of Analysis on every batch and a self-reported 4.7/5 rating across 176+ reviews (EZ&apos;s own figure; no independent Trustpilot profile exists to corroborate it). Their catalog spans metabolic, recovery, growth-hormone, cognitive, skin, immunity, longevity, and sexual-health research compounds. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -140,7 +140,7 @@ export default function EZPeptidesCouponPage() {
  />
  <FAQItem
  q="What is the EZ Peptides customer rating?"
- a="EZ Peptides has a 4.7 out of 5 rating across 176+ customer reviews, reflecting consistent quality and reliable service."
+ a="EZ Peptides reports a 4.7 out of 5 rating across 176+ customer reviews on its own site. That is a self-reported figure — EZ has no independent Trustpilot profile, so Prof. Peptide could not corroborate it against a third-party review platform."
  />
  </div>
  </div>

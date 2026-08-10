@@ -71,8 +71,8 @@ const featured: Omit<HubVendor, "code">[] = [
     url: "https://ezpeptides.com/?ref=nldbbgvs",
     discount: "10% off",
     description:
-      "US-based supplier in Albuquerque, New Mexico, known for fast fulfillment \u2014 orders ship within 0\u20132 business days with same-day shipping available. Every batch is independently third-party tested with a Certificate of Analysis, and the company holds a 4.7/5 rating across 176+ reviews.",
-    strengths: ["Third-party tested, COA per batch", "Ships in 0\u20132 business days", "4.7/5 across 176+ reviews", "10% off with code"],
+      "US-based supplier in Albuquerque, New Mexico, known for fast fulfillment \u2014 orders ship within 0\u20132 business days with same-day shipping available. Every batch is independently third-party tested with a Certificate of Analysis, and EZ reports a self-reported 4.7/5 rating across 176+ reviews (its own figure; no independent Trustpilot profile).",
+    strengths: ["Third-party tested, COA per batch", "Ships in 0\u20132 business days", "Self-reported 4.7/5 (176+ reviews)", "10% off with code"],
   },
   {
     name: "Glacier Aminos",

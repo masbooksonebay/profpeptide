@@ -46,7 +46,7 @@ export const couponLead: Record<string, string> = {
   "biopure-peptides": "US-made; ≥99% purity standard, COA with each order", // C (no COA published online — vendor-stated)
   "biocollex": "Freedom Diagnostics per-batch COAs, same-day ship", // A
   "crush-research": "ILS Laboratories per-batch COAs, ISO-17025", // A
-  "ez-peptides": "Janoshik-tested per batch; same-day, 4.7/5", // A
+  "ez-peptides": "Janoshik-tested per batch, HPLC & LC-MS; same-day", // A (replaced self-reported 4.7/5 with cert facts)
   "fusion-peptide": "Topical & nasal-spray peptide formats", // D (retired)
   "glacier-aminos": "Batch-traceable COAs, cold-chain shipping", // D (multi-lab)
   "ignite-peptides": "99%+ purity, per-product COAs", // C
