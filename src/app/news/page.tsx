@@ -15,6 +15,7 @@ export const metadata = {
   openGraph: {
     title: "News — Peptide Research & Regulatory Updates",
     description: "Latest news on peptide research, FDA regulatory changes, and supplement industry developments.",
+    url: "https://profpeptide.com/news",
   },
   twitter: {
     card: "summary_large_image" as const,

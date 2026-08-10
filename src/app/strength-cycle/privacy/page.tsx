@@ -1,8 +1,11 @@
-export const metadata = {
-  alternates: { canonical: "/strength-cycle/privacy" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/strength-cycle/privacy",
   title: "Strength Cycle — Privacy Policy",
   description: "Privacy policy for the Strength Cycle iOS app — a 5/3/1 powerlifting tracker.",
-};
+  useDefaultOgImage: false,
+});
 
 export default function StrengthCyclePrivacyPage() {
   return (

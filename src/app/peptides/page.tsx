@@ -3,12 +3,15 @@ import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { CategoryIcon } from "@/components/CategoryIcon";
 import { peptideCategories, profileCount } from "@/data/peptideCategories";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/peptides" },
+export const metadata = buildPageMetadata({
+  path: "/peptides",
   title: `Peptide Library — ${profileCount} Research Peptide Profiles | Prof. Peptide`,
   description: `Browse ${profileCount} research peptide profiles organized by category. Mechanisms, research summaries, dosage guidance, and safety information for each compound.`,
-};
+  // Defer OG image to this segment's opengraph-image.tsx (page-specific card).
+  useDefaultOgImage: false,
+});
 
 const categories = peptideCategories;
 

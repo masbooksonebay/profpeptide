@@ -1,8 +1,11 @@
-export const metadata = {
-  alternates: { canonical: "/hybrid-rockstar/privacy" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/hybrid-rockstar/privacy",
   title: "Hybrid Rockstar — Privacy Policy",
   description: "Privacy policy for the Hybrid Rockstar iOS app — a Hyrox-style 12-week hybrid training tracker.",
-};
+  useDefaultOgImage: false,
+});
 
 export default function HybridRockstarPrivacyPage() {
   return (

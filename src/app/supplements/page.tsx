@@ -7,12 +7,15 @@ import {
   supplementsForCategory,
   supplementCount,
 } from "@/data/supplements";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/supplements" },
+export const metadata = buildPageMetadata({
+  path: "/supplements",
   title: `Supplement Library — ${supplementCount} Natural Supplement Profiles | Prof. Peptide`,
   description: `Browse ${supplementCount} natural supplement profiles covering metabolic health, recovery, cognition, longevity, sleep, and more. Evidence-based and independently researched.`,
-};
+  // No own opengraph-image.tsx — defer to the inherited root card (no explicit images here).
+  useDefaultOgImage: false,
+});
 
 export default function SupplementsPage({ searchParams }: { searchParams: { category?: string } }) {
   const filter = searchParams.category;

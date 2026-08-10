@@ -2,13 +2,16 @@ import Link from "next/link";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { CategoryIcon } from "@/components/CategoryIcon";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/compare" },
+export const metadata = buildPageMetadata({
+  path: "/compare",
   title: "Peptide & Supplement Comparisons | Prof. Peptide",
   description:
     "Side-by-side research comparisons for peptides and supplements, organized by category. Metabolic & weight loss, recovery, growth hormone, cognitive, longevity, and more.",
-};
+  // Defer OG image to this segment's opengraph-image.tsx (page-specific card).
+  useDefaultOgImage: false,
+});
 
 type Comparison = {
   title: string;

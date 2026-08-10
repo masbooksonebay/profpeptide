@@ -1,7 +1,13 @@
-export const metadata = {
-  alternates: { canonical: "/privacy" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/privacy",
   title: "Privacy Policy | Prof. Peptide",
-};
+  description:
+    "Prof. Peptide privacy policy — what data is collected, how it is used, cookies and analytics, and your choices.",
+  // No own opengraph-image.tsx — defer to the inherited root card.
+  useDefaultOgImage: false,
+});
 
 export default function PrivacyPage() {
   return (

@@ -1,9 +1,13 @@
-export const metadata = {
-  alternates: { canonical: "/faq" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/faq",
   title: "Peptide FAQ — Common Questions About Research Peptides Answered | Prof. Peptide",
   description:
     "Answers to the most common questions about research peptides — what they are, how they work, storage, reconstitution, sourcing, and safety considerations.",
-};
+  // Defer OG image to this segment's opengraph-image.tsx (page-specific card).
+  useDefaultOgImage: false,
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

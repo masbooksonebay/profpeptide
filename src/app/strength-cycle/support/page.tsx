@@ -1,8 +1,11 @@
-export const metadata = {
-  alternates: { canonical: "/strength-cycle/support" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/strength-cycle/support",
   title: "Strength Cycle — Support",
   description: "Support and contact for the Strength Cycle iOS app.",
-};
+  useDefaultOgImage: false,
+});
 
 export default function StrengthCycleSupportPage() {
   return (

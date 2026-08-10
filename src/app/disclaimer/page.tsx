@@ -1,7 +1,13 @@
-export const metadata = {
-  alternates: { canonical: "/disclaimer" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/disclaimer",
   title: "Disclaimer | Prof. Peptide",
-};
+  description:
+    "Prof. Peptide disclaimer — all content is for research and educational purposes only, is not medical advice, and includes our affiliate disclosure.",
+  // No own opengraph-image.tsx — defer to the inherited root card.
+  useDefaultOgImage: false,
+});
 
 export default function DisclaimerPage() {
   return (

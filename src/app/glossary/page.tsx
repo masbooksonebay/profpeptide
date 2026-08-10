@@ -1,12 +1,15 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  alternates: { canonical: "/glossary" },
+export const metadata = buildPageMetadata({
+  path: "/glossary",
   title: "Peptide & Supplement Research Glossary | Prof. Peptide",
   description:
     "Key terms and definitions for researchers exploring peptides and natural supplements. Alphabetical glossary covering reconstitution, dosing, peptide science, and more.",
-};
+  // Defer OG image to this segment's opengraph-image.tsx (page-specific card).
+  useDefaultOgImage: false,
+});
 
 const sections: { letter: string; terms: [string, string][] }[] = [
   {

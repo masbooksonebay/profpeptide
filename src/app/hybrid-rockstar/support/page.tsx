@@ -1,8 +1,11 @@
-export const metadata = {
-  alternates: { canonical: "/hybrid-rockstar/support" },
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  path: "/hybrid-rockstar/support",
   title: "Hybrid Rockstar — Support",
   description: "Support and contact for the Hybrid Rockstar iOS app.",
-};
+  useDefaultOgImage: false,
+});
 
 export default function HybridRockstarSupportPage() {
   return (
