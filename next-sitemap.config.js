@@ -2,6 +2,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { execSync } = require("child_process");
 
 // next-sitemap discovers URLs from the Next.js build manifest (every prerendered
 // route). That correctly picks up all real content pages — /peptides/*,
@@ -75,10 +76,96 @@ const noindexPricePaths = new Set(
 );
 const PRICE_DETAIL = /^\/prices\/[a-z0-9-]+$/;
 
+// ── content-based lastmod ─────────────────────────────────────────────────────
+// next-sitemap's default lastmod is BUILD TIME, so every URL's lastmod bumps on every deploy
+// even when the page didn't change — a noisy signal Google learns to discount, which slows
+// recrawl of pages that actually did change. Instead, derive each route's lastmod from the git
+// last-commit date of the file(s) that actually produce its content.
+//
+// REQUIRES full git history at build time. Vercel clones shallow (~depth 10), so vercel.json's
+// buildCommand runs `git fetch --unshallow` first. If history is still missing (shallow) or a file
+// is untracked, gitDate() returns null and the route gets NO <lastmod> — we NEVER fall back to
+// build time (that would reintroduce the exact noise this removes). Every skipped route is logged
+// loudly at process exit, so an inert un-shallow is impossible to miss.
+const SRC = path.join(__dirname, "src");
+const _gitDateCache = new Map();
+function gitDate(absFile) {
+  if (_gitDateCache.has(absFile)) return _gitDateCache.get(absFile);
+  let iso = null;
+  if (fs.existsSync(absFile)) {
+    try {
+      const out = execSync(`git log -1 --format=%cI -- "${absFile}"`, {
+        cwd: __dirname,
+        stdio: ["ignore", "pipe", "ignore"],
+      })
+        .toString()
+        .trim();
+      if (out) iso = out; // empty when the file's last commit is beyond a shallow clone
+    } catch {
+      /* git absent / no history — leave null */
+    }
+  }
+  _gitDateCache.set(absFile, iso);
+  return iso;
+}
+
+// Route -> the source/data files whose git dates define when its content last changed.
+function depsFor(routePath) {
+  const s = (rel) => path.join(SRC, rel);
+  let m;
+  // Coupon detail: facts come from vendors.ts, the price grid from prices.generated.ts.
+  if ((m = routePath.match(/^\/coupons\/([a-z0-9-]+)$/)))
+    return [s(`app/coupons/${m[1]}/page.tsx`), s("data/vendors.ts"), s("data/prices.generated.ts")];
+  if (routePath === "/coupons") return [s("app/coupons/page.tsx"), s("app/coupons/layout.tsx"), s("data/vendors.ts")];
+  // Price detail pages share one template + one data file; they all change together on a pull.
+  if (PRICE_DETAIL.test(routePath)) return [s("data/prices.generated.ts")];
+  if (routePath === "/prices") return [s("app/prices/page.tsx"), s("data/prices.generated.ts")];
+  // Hubs: the list changes when the category data (or the page shell) changes.
+  if (routePath === "/peptides") return [s("app/peptides/page.tsx"), s("data/peptideCategories.ts")];
+  if (routePath === "/supplements") return [s("app/supplements/page.tsx"), s("data/supplements.ts")];
+  if (routePath === "/news") return [s("app/news/page.tsx"), s("data/news.ts")];
+  if (routePath === "/best-peptide-vendors") return [s("app/best-peptide-vendors/page.tsx"), s("data/vendors.ts")];
+  // Self-contained detail pages: content lives in the page's own file.
+  if ((m = routePath.match(/^\/(peptides|supplements|guides|news|compare)\/([a-z0-9-]+)$/)))
+    return [s(`app/${m[1]}/${m[2]}/page.tsx`)];
+  if (routePath === "/") return [s("app/page.tsx")];
+  // Generic top-level / nested static page: its own page.tsx (and layout.tsx where metadata lives).
+  const seg = routePath.replace(/^\//, "");
+  return [s(`app/${seg}/page.tsx`), s(`app/${seg}/layout.tsx`)];
+}
+
+const _lastmodSkipped = [];
+let _lastmodResolved = 0;
+function lastmodFor(routePath) {
+  const dates = depsFor(routePath).map(gitDate).filter(Boolean);
+  if (!dates.length) {
+    _lastmodSkipped.push(routePath);
+    return undefined; // loud gap, never build time
+  }
+  _lastmodResolved += 1;
+  return dates.sort().at(-1); // ISO-8601 sorts chronologically; newest = the page's real last change
+}
+
+process.on("exit", () => {
+  if (_lastmodSkipped.length) {
+    console.warn(
+      `\n[next-sitemap] content-lastmod: ${_lastmodResolved} route(s) got a real git date; ` +
+        `${_lastmodSkipped.length} emitted NONE (no history / untracked):`,
+    );
+    console.warn("  " + _lastmodSkipped.sort().join("\n  "));
+    console.warn("  If this is (nearly) EVERY route, the build's git clone is still shallow — check the un-shallow.");
+  } else {
+    console.log(`[next-sitemap] content-lastmod: all ${_lastmodResolved} route(s) resolved to a git date.`);
+  }
+});
+
 module.exports = {
   siteUrl: "https://profpeptide.com",
   generateRobotsTxt: true,
   trailingSlash: false,
+  // We supply lastmod ourselves from git history (see lastmodFor); disable the build-time default
+  // so a route we can't date carries NO lastmod rather than today's date.
+  autoLastmod: false,
   exclude: [
     // Legacy /research and /research/* -> 301 redirect to /peptides/* (next.config.js).
     // Canonical lives at /peptides/<slug>, which IS included.
@@ -108,7 +195,7 @@ module.exports = {
       loc: path,
       changefreq: config.changefreq,
       priority: config.priority,
-      lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
+      lastmod: lastmodFor(path), // git date of the page's content sources (undefined if undatable)
     };
   },
   additionalPaths: async (config) => [
@@ -120,7 +207,7 @@ module.exports = {
       loc: `/coupons/${slug}`,
       changefreq: config.changefreq,
       priority: config.priority,
-      lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
+      lastmod: lastmodFor(`/coupons/${slug}`),
     })),
   ],
 };
