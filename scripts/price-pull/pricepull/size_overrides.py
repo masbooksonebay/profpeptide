@@ -12,46 +12,6 @@ through the normal pricing + plausibility path; the value is trusted exactly lik
 """
 
 SIZE_OVERRIDE = {
-    # la-peptides — 20 size-less (⚠ HIGH)
-    "la-peptides": {
-        "Cibinetide": None,  # profile
-        "Cardiogen": None,  # profile
-        "Vilon [backlog]": None,  # no profile (backlog/hub)
-        "Vesugen [backlog]": None,  # no profile (backlog/hub)
-        "Pinealon": None,  # profile
-        "Pancragen [backlog]": None,  # no profile (backlog/hub)
-        "Ovagen [backlog]": None,  # no profile (backlog/hub)
-        "Cartalax [backlog]": None,  # no profile (backlog/hub)
-        "Epitalon": None,  # profile
-        "Glutathione": None,  # profile
-        "Thymosin Alpha-1": None,  # profile
-        "Ipamorelin": None,  # profile
-        "IGF-1 LR3": None,  # profile
-        "SNAP-8 [backlog]": None,  # no profile (backlog/hub)
-        "DSIP": None,  # profile
-        "VIP": None,  # profile
-        "GHK-Cu": None,  # profile
-        "TB-500": None,  # profile
-        "Selank": None,  # profile
-        "Semax": None,  # profile
-    },
-    # nextgen-peptides — 14 size-less (⚠ HIGH)
-    "nextgen-peptides": {
-        "Selank": None,  # profile
-        "KPV": None,  # profile
-        "AOD-9604": None,  # profile
-        "Epitalon": None,  # profile
-        "Glutathione": None,  # profile
-        "Sermorelin": None,  # profile
-        "Thymosin Alpha-1": None,  # profile
-        "Kisspeptin-10": None,  # profile
-        "DSIP": None,  # profile
-        "GHK-Cu": None,  # profile
-        "Prostamax [backlog]": None,  # no profile (backlog/hub)
-        "Testagen [backlog]": None,  # no profile (backlog/hub)
-        "Cartalax [backlog]": None,  # no profile (backlog/hub)
-        "Adamax": None,  # profile
-    },
     # treasure-coast-peptides — 7 size-less (⚠ HIGH)
     "treasure-coast-peptides": {
         "CJC-1295": None,  # profile

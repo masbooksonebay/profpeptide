@@ -37,11 +37,38 @@ for (const src of routeSources) {
   }
 }
 
+// ── per-slug integrity ──────────────────────────────────────────────────────────────────────
+// The source check above proves the hub renders every price SOURCE. It does NOT catch a page that
+// is indexable but has NO backing rows: <PricesMaster> only renders a compound that has rows
+// (compoundRows.length > 0), so an indexable slug absent from the generated data would ship a
+// crawlable, indexed page that the hub silently drops — reachable only via the sitemap, i.e.
+// orphaned. (The 20 profile-less compounds were NOT this case: they all have rows, so PricesMaster
+// links them — which is why the source-level guard correctly passed on them.) Assert every
+// indexable slug (singles + blends) has data behind it.
+const genCompounds = new Set(
+  [...readFileSync(join(root, "src/data/prices.generated.ts"), "utf8").matchAll(/compound: "([^"]+)"/g)].map((m) => m[1]),
+);
+const genBlends = new Set(
+  [...readFileSync(join(root, "src/data/prices.blends.generated.ts"), "utf8").matchAll(/blend: "([^"]+)"/g)].map((m) => m[1]),
+);
+const idxSingles = JSON.parse(readFileSync(join(root, "src/data/prices.index.json"), "utf8"));
+const idxBlends = JSON.parse(readFileSync(join(root, "src/data/blends.index.json"), "utf8"));
+for (const c of idxSingles) {
+  if (c.indexable && !genCompounds.has(c.slug))
+    failures.push(`/prices/${c.slug} is indexable but has NO rows in prices.generated.ts — it renders an empty page the hub can't surface (orphaned)`);
+}
+for (const b of idxBlends) {
+  if (b.indexable && !genBlends.has(b.slug))
+    failures.push(`/prices/${b.slug} is an indexable blend but has NO rows in prices.blends.generated.ts (orphaned empty page)`);
+}
+
 if (failures.length) {
   console.error("check:prices-orphan FAILED — an indexable price page is orphaned:\n");
   for (const f of failures) console.error(`  ✗ ${f}`);
-  console.error("\nFix: link the source on the /prices hub (src/app/prices/page.tsx).");
+  console.error("\nFix: link the source on the /prices hub (src/app/prices/page.tsx), or make the");
+  console.error("indexable slug carry real rows (an indexable page with no data must not ship).");
   process.exit(1);
 }
 
-console.log(`check:prices-orphan OK — all ${routeSources.size} price source(s) surfaced on the /prices hub (${[...routeSources].join(", ")}).`);
+const idxCount = idxSingles.filter((c) => c.indexable).length + idxBlends.filter((b) => b.indexable).length;
+console.log(`check:prices-orphan OK — ${routeSources.size} price source(s) surfaced on the hub; all ${idxCount} indexable page(s) have backing rows (${[...routeSources].join(", ")}).`);

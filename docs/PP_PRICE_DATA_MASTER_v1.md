@@ -2087,7 +2087,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: NextGen Peptides
 - **slug:** nextgen-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** ngpeptide.com
-- **traffic:** (not pulled) | **pulled:** August 8 2026
+- **traffic:** (not pulled) | **pulled:** August 11 2026
 - **sale posture:** Check product-level sale_price each refresh; PP code stacks.
 
 ### Single compounds
@@ -2095,26 +2095,39 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | --- | --- | --- | --- | --- | --- | --- |
 | 5-Amino-1MQ | 5mg | $20.00 | $4.00 | — | ✗ | product/5-amino-mq/ |
 | 5-Amino-1MQ | 50mg | $50.00 | $1.00 | — | ✓ | product/5-amino-mq/ |
+| Adamax | 10mg | $55.00 | $5.50 | — | ✓ | product/adamax/ |
+| AOD-9604 | 5mg | $35.00 | $7.00 | — | ✓ | product/aod/ |
 | BPC-157 | 10mg | $30.00 | $3.00 | — | ✓ | product/bpc-157/ |
 | BPC-157 | 20mg | $55.00 | $2.75 | — | ✓ | product/bpc-157/ |
 | Cagrilintide | 5mg | $40.00 | $8.00 | — | ✓ | product/cagri/ |
 | Cagrilintide | 10mg | $65.00 | $6.50 | — | ✓ | product/cagri/ |
-| GHK-Cu | 50mg | $20.00 | $0.40 | — | ✓ | product/ghk-cu/ |
+| Cartalax [backlog] | 25mg | $70.00 | $2.80 | — | ✗ | product/cartalax/ |
+| DSIP | 10mg | $35.00 | $3.50 | — | ✓ | product/dsip/ |
+| Epitalon | 50mg | $75.00 | $1.50 | — | ✓ | product/epithalon/ |
+| GHK-Cu | 50mg | $20.00 | $0.40 | — | ✗ | product/ghk-cu/ |
 | GLP-3 [coded, UNVERIFIED] | 10mg | $42.00 | $4.20 | — | ✓ | product/glp-3/ |
 | GLP-3 [coded, UNVERIFIED] | 20mg | $68.00 | $3.40 | — | ✓ | product/glp-3/ |
 | GLP-3 [coded, UNVERIFIED] | 30mg | $95.00 | $3.17 | — | ✓ | product/glp-3/ |
 | GLP-3 [coded, UNVERIFIED] | 50mg | $165.00 | $3.30 | — | ✓ | product/glp-3/ |
-| Ipamorelin | 5mg | $28.00 | $5.60 | — | ✓ | product/ipamorelin/ |
+| Glutathione | 1500mg | $45.00 | $0.03 | — | ✓ | product/glutathione/ |
+| Ipamorelin | 5mg | $28.00 | $5.60 | — | ✗ | product/ipamorelin/ |
 | Ipamorelin | 10mg | $42.00 | $4.20 | — | ✓ | product/ipamorelin/ |
+| Kisspeptin-10 | 10mg | $35.00 | $3.50 | — | ✓ | product/kisspeptin/ |
+| KPV | 10mg | $35.00 | $3.50 | — | ✓ | product/kpv/ |
 | Melanotan II | 10mg | $24.99 | $2.50 | — | ✓ | product/mt-2-10mg/ |
 | MOTS-C | 40mg | $80.00 | $2.00 | — | ✓ | product/mots-c/ |
 | NAD+ | 500mg | $50.00 | $0.10 | — | ✓ | product/nad-500mg/ |
+| Prostamax [backlog] | 20mg | $60.00 | $3.00 | — | ✗ | product/prostamax/ |
 | PT-141 | 10mg | $24.99 | $2.50 | — | ✓ | product/pt-141-10mg/ |
+| Selank | 10mg | $30.00 | $3.00 | — | ✓ | product/selank/ |
 | Semax | 10mg | $35.00 | $3.50 | — | ✓ | product/semax-10mg/ |
+| Sermorelin | 10mg | $45.00 | $4.50 | — | ✓ | product/sermorelin/ |
 | TB-500 | 10mg | $35.00 | $3.50 | — | ✓ | product/tb-500/ |
 | TB-500 | 20mg | $64.00 | $3.20 | — | ✓ | product/tb-500/ |
 | Tesamorelin | 10mg | $50.00 | $5.00 | — | ✓ | product/tesamorelin/ |
 | Tesamorelin | 20mg | $90.00 | $4.50 | — | ✓ | product/tesamorelin/ |
+| Testagen [backlog] | 30mg | $80.00 | $2.67 | — | ✗ | product/testagen/ |
+| Thymosin Alpha-1 | 10mg | $45.00 | $4.50 | — | ✓ | product/thymosin-alpha-1-2/ |
 | Tirzepatide (listed as TRZ-2) | 20mg | $65.00 | $3.25 | — | ✓ | product/trz-2/ |
 | Tirzepatide (listed as TRZ-2) | 30mg | $90.00 | $3.00 | — | ✓ | product/trz-2/ |
 | Tirzepatide (listed as TRZ-2) | 40mg | $100.00 | $2.50 | — | ✓ | product/trz-2/ |
@@ -2140,7 +2153,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Selank (spray) | — | $160.00 | ✓ |
 | Semax (spray) | — | $140.00 | ✓ |
 
-### Excluded: clinical/other, manually excluded — blend leak (≥10x): 'NAD+5-AMINO-MQ 50MG each' is a NAD+/5-Amino-1MQ blend rendering as NAD+ 50mg ($2.70/mg = 20.8x median). Frag is 'nad5-amino-mq' (NOT bare 'nad+' — the compound name itself contains '+', so a careless frag would catch real NAD+ rows; FP-scanned: hits only this blend, leaves nextgen's real product/nad-500mg untouched)., manually excluded — blend leak: Semax/Selank/Pinealon 3-way blend -> Pinealon 60mg ($2.42/mg) (match() picked Pinealon as the LONGEST alias, not the first-named)., multi-vial kit / pack (by name), no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: clinical/other, manually excluded — blend leak (≥10x): 'NAD+5-AMINO-MQ 50MG each' is a NAD+/5-Amino-1MQ blend rendering as NAD+ 50mg ($2.70/mg = 20.8x median). Frag is 'nad5-amino-mq' (NOT bare 'nad+' — the compound name itself contains '+', so a careless frag would catch real NAD+ rows; FP-scanned: hits only this blend, leaves nextgen's real product/nad-500mg untouched)., manually excluded — blend leak: Semax/Selank/Pinealon 3-way blend -> Pinealon 60mg ($2.42/mg) (match() picked Pinealon as the LONGEST alias, not the first-named)., multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 

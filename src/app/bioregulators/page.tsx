@@ -200,7 +200,18 @@ export default function BioregulatorsPage() {
             </table>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            The Khavinson family includes additional organ-specific bioregulators beyond the five above &mdash; Cartalax, Prostamax, Testagen, Livagen, Vesugen, Bronchogen, Vilon, Ovagen, and Chonluten &mdash; that are not yet individually profiled here.
+            The Khavinson family includes additional organ-specific bioregulators beyond the five above &mdash;{" "}
+            <Link href="/prices/cartalax" className="text-[#3A759F] hover:underline">Cartalax</Link>,{" "}
+            <Link href="/prices/prostamax" className="text-[#3A759F] hover:underline">Prostamax</Link>,{" "}
+            <Link href="/prices/testagen" className="text-[#3A759F] hover:underline">Testagen</Link>,{" "}
+            <Link href="/prices/livagen" className="text-[#3A759F] hover:underline">Livagen</Link>,{" "}
+            <Link href="/prices/vesugen" className="text-[#3A759F] hover:underline">Vesugen</Link>,{" "}
+            <Link href="/prices/bronchogen" className="text-[#3A759F] hover:underline">Bronchogen</Link>,{" "}
+            <Link href="/prices/vilon" className="text-[#3A759F] hover:underline">Vilon</Link>,{" "}
+            <Link href="/prices/ovagen" className="text-[#3A759F] hover:underline">Ovagen</Link>,{" "}
+            <Link href="/prices/chonluten" className="text-[#3A759F] hover:underline">Chonluten</Link>, and{" "}
+            <Link href="/prices/pancragen" className="text-[#3A759F] hover:underline">Pancragen</Link>{" "}
+            &mdash; not yet individually profiled here, but you can compare current vendor pricing for each.
           </p>
         </div>
 

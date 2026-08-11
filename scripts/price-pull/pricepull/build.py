@@ -19,7 +19,7 @@ _WHOLESALE = re.compile(r'wholesale[\s-]*only', re.I)
 # "<compound>_<mg>mg.jpg") — a structured field the size parser doesn't read. OPT-IN per vendor
 # because the convention does NOT generalize: AMP's images carry no mg, treasure-coast's carry two
 # (a blend). Recovered rows flow through the normal pricing + plausibility path like any other size.
-SIZE_FROM_IMAGE = {"la-peptides"}
+SIZE_FROM_IMAGE = {"la-peptides", "nextgen-peptides"}
 
 def size_from_image(product):
     """The single mg encoded across a product's image filenames, or None. GUARDED: returns a value

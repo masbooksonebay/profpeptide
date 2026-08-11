@@ -6,7 +6,7 @@
   },
   {
     "slug": "adamax",
-    "vendors": 11,
+    "vendors": 12,
     "indexable": true
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "slug": "aod-9604",
-    "vendors": 27,
+    "vendors": 28,
     "indexable": true
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "slug": "cartalax",
-    "vendors": 14,
+    "vendors": 15,
     "indexable": true
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "slug": "dsip",
-    "vendors": 31,
+    "vendors": 32,
     "indexable": true
   },
   {
     "slug": "epitalon",
-    "vendors": 32,
+    "vendors": 33,
     "indexable": true
   },
   {
@@ -106,7 +106,7 @@
   },
   {
     "slug": "glutathione",
-    "vendors": 27,
+    "vendors": 28,
     "indexable": true
   },
   {
@@ -141,12 +141,12 @@
   },
   {
     "slug": "kisspeptin",
-    "vendors": 23,
+    "vendors": 24,
     "indexable": true
   },
   {
     "slug": "kpv",
-    "vendors": 32,
+    "vendors": 33,
     "indexable": true
   },
   {
@@ -231,7 +231,7 @@
   },
   {
     "slug": "prostamax",
-    "vendors": 5,
+    "vendors": 6,
     "indexable": true
   },
   {
@@ -246,7 +246,7 @@
   },
   {
     "slug": "selank",
-    "vendors": 34,
+    "vendors": 35,
     "indexable": true
   },
   {
@@ -261,7 +261,7 @@
   },
   {
     "slug": "sermorelin",
-    "vendors": 30,
+    "vendors": 31,
     "indexable": true
   },
   {
@@ -301,7 +301,7 @@
   },
   {
     "slug": "testagen",
-    "vendors": 10,
+    "vendors": 11,
     "indexable": true
   },
   {
@@ -316,7 +316,7 @@
   },
   {
     "slug": "thymosin-alpha-1",
-    "vendors": 28,
+    "vendors": 29,
     "indexable": true
   },
   {
