@@ -335,6 +335,24 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/midwest-peptide",
     facts: { coa: "per-batch", labName: "ILS Laboratories, Freedom Diagnostics", labAccreditation: "ISO/IEC 17025", purityStandard: "≥99%", testMethods: "RP-HPLC-UV, mass spectrometry", contaminants: "Heavy metals (ICP-MS, USP <233>), endotoxin (LAL), sterility (PCR), fentanyl screen" },
   },
+  "ion-peptide": {
+    name: "Ion Peptide",
+    code: "PROFPEPTIDE",
+    discount: "15% off",
+    region: "US",
+    url: "https://ionpeptide.com/?ref=PROFPEPTIDE",
+    detailPage: "/coupons/ion-peptide",
+    // Onboarded 2026-08 (VETTED PASS): domain 2025-08-11 (~1yr), public catalog + prices (woo Store
+    // API), public 195-item per-lot COA LIBRARY at /lab-results/ from Kovera Labs — verified from a read
+    // cert (KVR-2026-BA8308): purity RP-HPLC + identity LC-MS + endotoxin + microbial + heavy metals +
+    // 3-vial conformity, QR -> koveralabs.com/verify (the LAB, not ionpeptide) + per-record access code.
+    // No ISO/A2LA accreditation printed -> none stated. Kovera not new to PP (amino-x, glacier-aminos).
+    // ⚠️ Cart/checkout is behind a "Wholesale Research Supply Portal" account login, so the in-cart code
+    // AND the combined ?apply-promo=profpeptide&ref= URL are UNVERIFIED — using the plain ?ref= link
+    // until Mark confirms logged-in (see ONBOARDING_BACKLOG). Coded GLPs = ION-1S/2T/3R (tier convention
+    // Sema/Tirz/Reta), NOT decoded pending a Kovera COA read.
+    facts: { coa: "library", purityStandard: "99%+", labName: "Kovera Labs", testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin (LAL, ≤0.5 EU/mL), microbial sterility, heavy metals (As/Cd/Pb/Hg)" },
+  },
   "oasis-labs": {
     name: "Oasis Labs",
     code: "PROFPEPTIDE",
