@@ -82,18 +82,25 @@ const PRICE_DETAIL = /^\/prices\/[a-z0-9-]+$/;
 // always-fresh one is worse.
 //
 // A content-based lastmod (git last-commit date of each route's source/data files) was BUILT and
-// REVERTED in Aug 2026 (see git history around this file + vercel.json). Two independent reasons it
-// didn't work — do NOT rebuild it without solving both:
-//   1. It deployed INERT. It needs full git history, but Vercel clones SHALLOW and has no depth
-//      toggle; the only lever is a `git fetch --unshallow` in vercel.json's buildCommand, which
-//      failed silently in CI (a shallow `git log` then returns the HEAD date for every file, so all
-//      282 URLs carried ONE date — no better than build-time noise). Un-shallowing on Vercel is not
-//      reliable enough to depend on.
-//   2. Even with full history LOCALLY the signal was FLAT. Sitewide sweeps (prose/formatting passes)
-//      touch many files at once, and the ~111 coupon + price pages all derive from the SHARED files
-//      src/data/vendors.ts and src/data/prices.generated.ts, so they block-date together on any pull.
-//      Two dates across 245 pages isn't granularity. It only helps the self-contained pages
-//      (profiles/guides/news/compare), which wasn't worth the fragile CI prerequisite.
+// REVERTED in Aug 2026 (see git history around this file + vercel.json). The reason it was dropped —
+// do NOT rebuild it without solving this:
+//
+//   The un-shallow WORKED and the resolver RAN CORRECTLY. Verified from Vercel's build logs for
+//   commit f83259a: the buildCommand's `git fetch --unshallow` succeeded, full git history was
+//   available in CI, and the build emitted "content-lastmod: all 282 route(s) resolved to a git
+//   date" — every route got a REAL git date, none fell back.
+//
+//   The dates were just FLAT. 282 lastmods resolved to only ~5 distinct timestamps, because the
+//   dates block-date together two ways: (a) the ~111 coupon + price pages all derive from the SHARED
+//   files src/data/vendors.ts and src/data/prices.generated.ts, so a single pull re-dates all of
+//   them at once; and (b) git can't distinguish a substantive rewrite from a formatting pass, so any
+//   sitewide sweep (prose/description passes) resets the date on every file it touches. ~5 dates
+//   across 282 routes isn't granularity — it's an always-fresh signal that only meaningfully varies
+//   for the self-contained pages (profiles/guides/news/compare). Not worth the CI prerequisite.
+//
+//   NOTE: earlier notes on this (and commit 4cf76bd's message) wrongly blamed a silently-failed
+//   un-shallow / shallow `git log` returning the HEAD date. That was a misdiagnosis — the build logs
+//   show the un-shallow worked. The real, and only, problem is the flatness above.
 
 module.exports = {
   siteUrl: "https://profpeptide.com",
