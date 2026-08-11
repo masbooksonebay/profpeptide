@@ -351,13 +351,14 @@ export interface BlendPriceEntry {
 
 export const blendEntries: BlendPriceEntry[] = generatedBlendEntries;
 
-interface BlendIndexRow { slug: string; config: string; vendors: number; indexable: boolean }
+export interface BlendConfig { config: string; vendors: number }
+interface BlendIndexRow { slug: string; configs: BlendConfig[]; vendors: number; indexable: boolean }
 const blendIndexRows = blendsIndex as BlendIndexRow[];
 
-/** Rows for one blend at its modal config, non-retired, sorted by total price ascending. */
-export function blendRows(blendSlug: string): BlendPriceEntry[] {
+/** Rows for one blend, non-retired, sorted by total price ascending. Optionally filter to one config. */
+export function blendRows(blendSlug: string, config?: string): BlendPriceEntry[] {
   return blendEntries
-    .filter((e) => e.blend === blendSlug && !isRetired(e.vendor))
+    .filter((e) => e.blend === blendSlug && !isRetired(e.vendor) && (config === undefined || e.config === config))
     .sort((a, b) => a.totalPrice - b.totalPrice);
 }
 
@@ -377,9 +378,9 @@ export interface BlendRow {
   inStock: boolean;
 }
 
-/** Enriched blend rows (vendor identity + with-code price) for the blend price table. */
-export function blendPriceRows(blendSlug: string): BlendRow[] {
-  return blendRows(blendSlug)
+/** Enriched blend rows (vendor identity + with-code price) for one config's blend price table. */
+export function blendPriceRows(blendSlug: string, config?: string): BlendRow[] {
+  return blendRows(blendSlug, config)
     .map((entry) => {
       const v = vendors[entry.vendor];
       const affiliate = isAffiliateVendor(entry.vendor);
@@ -412,17 +413,18 @@ export function isBlendSlug(slug: string): boolean {
   return blendIndexRows.some((b) => b.slug === slug);
 }
 
-/** The modal config string for a blend (e.g. "70mg"), or null if the slug isn't a blend. */
-export function blendConfig(slug: string): string | null {
-  return blendIndexRows.find((b) => b.slug === slug)?.config ?? null;
+/** The qualifying configs for a blend (each with >=3 vendors), largest first; [] if not a blend. */
+export function blendConfigs(slug: string): BlendConfig[] {
+  return blendIndexRows.find((b) => b.slug === slug)?.configs ?? [];
 }
 
-/** All blends that have a price surface — for /prices routing + the CTA gate. */
-export function priceBlends(): { slug: string; name: string; config: string; indexable: boolean }[] {
+/** All blends that have a price surface — for /prices routing, the hub, + the CTA gate. */
+export function priceBlends(): { slug: string; name: string; configs: BlendConfig[]; vendors: number; indexable: boolean }[] {
   return blendIndexRows.map((b) => ({
     slug: b.slug,
     name: (blendEntries.find((e) => e.blend === b.slug)?.blendName ?? b.slug),
-    config: b.config,
+    configs: b.configs,
+    vendors: b.vendors,
     indexable: b.indexable,
   }));
 }

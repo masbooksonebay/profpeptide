@@ -2,14 +2,16 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
-import { PRICES_UPDATED_DATE, priceCompounds, compoundRows, compoundVendorCount, priceBlends, blendPriceRows, blendVendorCount } from "@/data/prices";
+import { PRICES_UPDATED_DATE, priceCompounds, compoundRows, compoundVendorCount, priceBlends, blendPriceRows, blendVendorCount, type BlendConfig } from "@/data/prices";
 import { hasProfile } from "@/data/peptideCategories";
 import CompoundPriceTable from "@/components/CompoundPriceTable";
 import BlendPriceTable from "@/components/BlendPriceTable";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 
-type Entry = { slug: string; name: string; kind: "compound" } | { slug: string; name: string; kind: "blend"; config: string };
+type Entry =
+  | { slug: string; name: string; kind: "compound" }
+  | { slug: string; name: string; kind: "blend"; configs: BlendConfig[] };
 
 export function generateStaticParams() {
   // Cover ALL compounds AND blends so no URL 404s; only the robots directive is conditional.
@@ -20,7 +22,7 @@ function lookup(slug: string): Entry | null {
   const c = priceCompounds().find((x) => x.slug === slug);
   if (c) return { ...c, kind: "compound" };
   const b = priceBlends().find((x) => x.slug === slug);
-  if (b) return { slug: b.slug, name: b.name, kind: "blend", config: b.config };
+  if (b) return { slug: b.slug, name: b.name, kind: "blend", configs: b.configs };
   return null;
 }
 
@@ -34,9 +36,10 @@ export function generateMetadata({ params }: { params: { compound: string } }): 
   const high = prices.length ? Math.max(...prices) : null;
   const range =
     low != null ? (low === high ? ` Priced at $${low.toFixed(2)}.` : ` Prices from $${low!.toFixed(2)} to $${high!.toFixed(2)}.`) : "";
+  const configLabel = c.kind === "blend" ? c.configs.map((cf) => cf.config).join(", ") : "";
   const description =
     c.kind === "blend"
-      ? `Compare ${c.name} blend prices from ${vendorCount} research-peptide ${v} — total price at the standard ${c.config} configuration.${range}`
+      ? `Compare ${c.name} blend prices from ${vendorCount} research-peptide ${v} — total price at each standard configuration (${configLabel}).${range}`
       : `Compare ${c.name} prices from ${vendorCount} research-peptide ${v} — find the lowest price and cost per mg, normalized across vial sizes.${range}`;
   return {
     ...buildPageMetadata({
@@ -67,7 +70,7 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-2">{c.name} Price Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-2 max-w-2xl">
         {c.kind === "blend"
-          ? `${c.name} prices across vendors — post-code pricing (base struck through where a code applies), compared as total price at the standard ${c.config} configuration, sorted by lowest price.`
+          ? `${c.name} prices across vendors — post-code pricing (base struck through where a code applies), compared as total price within each standard configuration${c.configs.length > 1 ? ` (${c.configs.map((cf) => cf.config).join(", ")})` : ""}, sorted by lowest price.`
           : `${c.name} prices across vendors — post-code pricing (base struck through where a code applies), normalized to price-per-mg, sorted by lowest price.`}
       </p>
       <p className="text-sm text-gray-400 dark:text-slate-500 mb-4">Prices updated {PRICES_UPDATED_DATE}</p>
@@ -81,7 +84,18 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
       )}
 
       {c.kind === "blend" ? (
-        <BlendPriceTable blendSlug={c.slug} config={c.config} />
+        <div className="space-y-10">
+          {c.configs.map((cf) => (
+            <section key={cf.config}>
+              {c.configs.length > 1 && (
+                <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100 mb-3">
+                  {cf.config} configuration <span className="text-sm font-normal text-gray-400 dark:text-slate-500">· {cf.vendors} vendor{cf.vendors === 1 ? "" : "s"}</span>
+                </h2>
+              )}
+              <BlendPriceTable blendSlug={c.slug} config={cf.config} />
+            </section>
+          ))}
+        </div>
       ) : (
         <CompoundPriceTable compoundSlug={c.slug} compoundName={c.name} />
       )}

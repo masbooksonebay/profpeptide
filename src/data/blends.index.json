@@ -1,26 +1,70 @@
 [
   {
     "slug": "glow",
-    "config": "70mg",
-    "vendors": 19,
+    "configs": [
+      {
+        "config": "70mg",
+        "vendors": 19
+      },
+      {
+        "config": "10mg",
+        "vendors": 3
+      },
+      {
+        "config": "50mg",
+        "vendors": 3
+      }
+    ],
+    "vendors": 23,
     "indexable": true
   },
   {
     "slug": "klow",
-    "config": "80mg",
+    "configs": [
+      {
+        "config": "80mg",
+        "vendors": 23
+      }
+    ],
     "vendors": 23,
     "indexable": true
   },
   {
     "slug": "tesamorelin-ipamorelin",
-    "config": "10mg",
-    "vendors": 5,
+    "configs": [
+      {
+        "config": "10mg",
+        "vendors": 5
+      },
+      {
+        "config": "13mg",
+        "vendors": 3
+      }
+    ],
+    "vendors": 8,
     "indexable": true
   },
   {
     "slug": "wolverine-stack",
-    "config": "10mg",
-    "vendors": 20,
+    "configs": [
+      {
+        "config": "10mg",
+        "vendors": 20
+      },
+      {
+        "config": "20mg",
+        "vendors": 15
+      },
+      {
+        "config": "5mg",
+        "vendors": 10
+      },
+      {
+        "config": "40mg",
+        "vendors": 3
+      }
+    ],
+    "vendors": 29,
     "indexable": true
   }
 ]

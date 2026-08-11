@@ -387,33 +387,39 @@ for br in blend_data_rows:
         "inStock": "no" not in br["stock_cell"].lower(),
     })
 
-blend_rows_out = []                 # emitted BlendPriceEntry rows (at modal config)
-blend_index = []                    # {slug, config, vendors, indexable}
-blend_no_modal = []                 # slugs skipped for lack of a modal config (reported)
-blend_config_report = []            # (slug, config, n_vendors, total_at_slug) for the report
+BLEND_MIN_VENDORS = 3               # a config needs >=3 vendors to publish a comparison table
+blend_rows_out = []                 # emitted BlendPriceEntry rows (one block per qualifying config)
+blend_index = []                    # {slug, configs:[{config,vendors}], vendors(union), indexable}
+blend_no_modal = []                 # slugs with NO config reaching >=3 vendors (reported, not emitted)
+blend_config_report = []            # (slug, [(config, n)], union) for the report
 for slug, items in sorted(_blend_groups.items()):
-    mg_counts = _Counter(round(i["mg"], 4) for i in items)
-    top_mg, top_n = mg_counts.most_common(1)[0]
-    # A modal config needs >=2 vendors sharing it; otherwise every vendor is a different
-    # configuration and a total-price comparison would be apples-to-oranges — skip + report.
-    if top_n < 2:
-        blend_no_modal.append((slug, dict(mg_counts)))
+    # group by configuration (Total mg); keep the lowest total price per vendor within each config
+    by_cfg = _dd(dict)              # mg -> {vendor: item}
+    for i in items:
+        mg = round(i["mg"], 4)
+        bv = by_cfg[mg]
+        if i["vendor"] not in bv or i["price"] < bv[i["vendor"]]["price"]:
+            bv[i["vendor"]] = i
+    # A config is comparable only with >=3 vendors sharing it; publish EVERY qualifying config
+    # (e.g. Wolverine 10mg AND 20mg), largest first. Below the threshold -> not a comparison.
+    qualifying = sorted(((mg, bv) for mg, bv in by_cfg.items() if len(bv) >= BLEND_MIN_VENDORS),
+                        key=lambda x: (-len(x[1]), x[0]))
+    if not qualifying:
+        blend_no_modal.append((slug, {mg: len(bv) for mg, bv in by_cfg.items()}))
         continue
-    at_modal = [i for i in items if round(i["mg"], 4) == top_mg]
-    # lowest total price per vendor at the modal config
-    by_vendor = {}
-    for i in at_modal:
-        if i["vendor"] not in by_vendor or i["price"] < by_vendor[i["vendor"]]["price"]:
-            by_vendor[i["vendor"]] = i
-    cfg = (str(int(top_mg)) if float(top_mg).is_integer() else str(top_mg)) + "mg"
-    for v, i in sorted(by_vendor.items()):
-        blend_rows_out.append({
-            "blend": slug, "blendName": slug.replace("-", " ").title(),
-            "vendor": v, "config": cfg, "totalPrice": i["price"], "inStock": i["inStock"],
-        })
-    n = len(by_vendor)
-    blend_index.append({"slug": slug, "config": cfg, "vendors": n, "indexable": n >= 3})
-    blend_config_report.append((slug, cfg, n, len(items)))
+    cfg_list, union = [], set()
+    for mg, bv in qualifying:
+        cfg = (str(int(mg)) if float(mg).is_integer() else str(mg)) + "mg"
+        for v, i in sorted(bv.items()):
+            blend_rows_out.append({
+                "blend": slug, "blendName": slug.replace("-", " ").title(),
+                "vendor": v, "config": cfg, "totalPrice": i["price"], "inStock": i["inStock"],
+            })
+        cfg_list.append({"config": cfg, "vendors": len(bv)})
+        union |= set(bv.keys())
+    blend_index.append({"slug": slug, "configs": cfg_list, "vendors": len(union),
+                        "indexable": len(union) >= 3})
+    blend_config_report.append((slug, [(c["config"], c["vendors"]) for c in cfg_list], len(union)))
 
 _bl = ["// ⚠️ GENERATED FILE — DO NOT EDIT BY HAND.",
        "// Produced by scripts/price-pull/to_prices.py from docs/PP_PRICE_DATA_MASTER_v1.md.",

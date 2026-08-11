@@ -15,7 +15,7 @@ function fmt(n: number): string {
  * CompoundPriceTable's layout minus the unit toggle (there is only one meaningful figure).
  */
 export default function BlendPriceTable({ blendSlug, config }: { blendSlug: string; config: string }) {
-  const rows = blendPriceRows(blendSlug);
+  const rows = blendPriceRows(blendSlug, config);
   if (rows.length === 0) {
     return <p className="text-sm text-gray-500 dark:text-slate-400">No blend price data yet.</p>;
   }
