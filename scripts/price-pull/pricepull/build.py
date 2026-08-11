@@ -5,6 +5,7 @@ Sprays, Excluded), applying every shared rule.
 import re
 from . import decoders, variation_models as vm
 from . import normalize as N
+from .size_overrides import SIZE_OVERRIDE
 
 _SPRAY = re.compile(r'spray|nasal', re.I)
 
@@ -13,6 +14,22 @@ _SPRAY = re.compile(r'spray|nasal', re.I)
 # safe as a GENERAL rule — unlike a blanket "kit" slug check, which flagged 16 legitimate rows to
 # catch 2 (see MANUAL_EXCLUDE). Currently the only match is Swiss Chems' AOD-9604 2mg.
 _WHOLESALE = re.compile(r'wholesale[\s-]*only', re.I)
+
+# Vendors whose vial mg lives ONLY in the product IMAGE filename (la-peptides names images
+# "<compound>_<mg>mg.jpg") — a structured field the size parser doesn't read. OPT-IN per vendor
+# because the convention does NOT generalize: AMP's images carry no mg, treasure-coast's carry two
+# (a blend). Recovered rows flow through the normal pricing + plausibility path like any other size.
+SIZE_FROM_IMAGE = {"la-peptides"}
+
+def size_from_image(product):
+    """The single mg encoded across a product's image filenames, or None. GUARDED: returns a value
+    ONLY when EXACTLY ONE distinct mg appears across all images — multiple values (a blend/related
+    grid, treasure-coast style) refuse and fall through to the no-size drop. Never guesses."""
+    vals = set()
+    for src in (product.get('images') or []):
+        for m in re.findall(r'(\d+(?:\.\d+)?)\s*mg', src, re.I):
+            vals.add(float(m))
+    return next(iter(vals)) if len(vals) == 1 else None
 
 # Manually excluded SKUs the automatic classifiers can't correctly drop — matched against the
 # resolved slug OR the name (substring, case-insensitive), each with its reason. Deliberately a
@@ -250,7 +267,16 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
             # Emit a per-SKU 'nosize' record (name/id/url/type) instead of a generic reason so the
             # drop is COUNTED, not silent — build_section aggregates it into the returned counts.
             if N.mg_value(size_label) is None:
-                yield ('nosize', disp, product.get('id'), product.get('permalink', ''), product.get('type', '')); continue
+                # Per-vendor recovery: read the vial mg from the image filename (SIZE_FROM_IMAGE
+                # vendors only). Guarded: a SINGLE distinct image mg, AND it must not disagree with an
+                # mg already present in the product name (cross-check). Anything else stays dropped.
+                rec = size_from_image(product) if vendor in SIZE_FROM_IMAGE else None
+                if rec is not None:
+                    name_mg = N.mg_value(name)
+                    if name_mg is None or abs(name_mg - rec) < 1e-6:
+                        size_label = f"{rec:g}mg"
+                if N.mg_value(size_label) is None:
+                    yield ('nosize', disp, product.get('id'), product.get('permalink', ''), product.get('type', '')); continue
             yield ('single', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale, vslug)
 
 
@@ -317,6 +343,12 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
     # Class A = no-size drops (never emitted). Class B = emitted singles whose size still won't
     # parse to mg (should be 0 — build excludes them above; a non-zero here means a leak).
     emitted_sizeless = [r for r in singles if N.mg_value(r[1]) is None]
+    # Stale SIZE_OVERRIDE keys: an override name that matches NO product in this pull (the product
+    # was renamed or removed — vendor+name is not a stable key, so a rename would silently miss).
+    def _norm(s): return re.sub(r'\s*\[backlog\]|\s*\(listed as.*\)', '', s).strip().lower()
+    prod_norms = [_norm(p['name']) for p in products]
+    stale_overrides = [k for k in SIZE_OVERRIDE.get(vendor, {})
+                       if not any(_norm(k) in pn or pn in _norm(k) for pn in prod_norms)]
     return "\n".join(L), {"singles": len(singles), "blends": len(blends), "sprays": len(sprays),
-                          "catalog": len(products),
+                          "catalog": len(products), "stale_overrides": stale_overrides,
                           "nosize_dropped": nosize_dropped, "emitted_sizeless": emitted_sizeless}

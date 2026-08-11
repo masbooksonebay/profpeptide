@@ -335,6 +335,9 @@ def woo(domain, per_page=100, max_pages=12, cookie=None):
                     # currency_code from the Store API — carried through so the build_vendor currency
                     # guard can refuse non-USD vendors (priced in USD only). Absent → treated as USD.
                     'currency': (pr.get('currency_code') or '').upper(),
+                    # image src URLs — the ONLY place some vendors (la-peptides) encode the vial mg
+                    # (cardiogen_20mg.jpg). Carried so a per-vendor size-from-image rule can read it.
+                    'images': [im.get('src', '') for im in (p.get('images') or [])],
                     'description': html.unescape(p.get('description', '') + ' ' + p.get('short_description', ''))})
     if slug_misses:
         print(f"[woo:{domain}] ⚠ {len(slug_misses)} variation size(s) fell back to an UNRESOLVED "

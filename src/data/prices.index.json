@@ -36,12 +36,12 @@
   },
   {
     "slug": "cardiogen",
-    "vendors": 9,
+    "vendors": 10,
     "indexable": true
   },
   {
     "slug": "cartalax",
-    "vendors": 13,
+    "vendors": 14,
     "indexable": true
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "slug": "cibinetide",
-    "vendors": 21,
+    "vendors": 22,
     "indexable": true
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "slug": "dsip",
-    "vendors": 30,
+    "vendors": 31,
     "indexable": true
   },
   {
     "slug": "epitalon",
-    "vendors": 31,
+    "vendors": 32,
     "indexable": true
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "slug": "ghk-cu",
-    "vendors": 36,
+    "vendors": 37,
     "indexable": true
   },
   {
@@ -131,12 +131,12 @@
   },
   {
     "slug": "igf-1-lr3",
-    "vendors": 19,
+    "vendors": 20,
     "indexable": true
   },
   {
     "slug": "ipamorelin",
-    "vendors": 29,
+    "vendors": 30,
     "indexable": true
   },
   {
@@ -201,7 +201,7 @@
   },
   {
     "slug": "ovagen",
-    "vendors": 7,
+    "vendors": 8,
     "indexable": true
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "slug": "pancragen",
-    "vendors": 7,
+    "vendors": 8,
     "indexable": true
   },
   {
@@ -226,7 +226,7 @@
   },
   {
     "slug": "pinealon",
-    "vendors": 17,
+    "vendors": 18,
     "indexable": true
   },
   {
@@ -246,7 +246,7 @@
   },
   {
     "slug": "selank",
-    "vendors": 33,
+    "vendors": 34,
     "indexable": true
   },
   {
@@ -256,7 +256,7 @@
   },
   {
     "slug": "semax",
-    "vendors": 34,
+    "vendors": 35,
     "indexable": true
   },
   {
@@ -271,7 +271,7 @@
   },
   {
     "slug": "snap-8",
-    "vendors": 15,
+    "vendors": 16,
     "indexable": true
   },
   {
@@ -286,7 +286,7 @@
   },
   {
     "slug": "tb-500",
-    "vendors": 34,
+    "vendors": 35,
     "indexable": true
   },
   {
@@ -316,7 +316,7 @@
   },
   {
     "slug": "thymosin-alpha-1",
-    "vendors": 27,
+    "vendors": 28,
     "indexable": true
   },
   {
@@ -336,17 +336,17 @@
   },
   {
     "slug": "vesugen",
-    "vendors": 7,
+    "vendors": 8,
     "indexable": true
   },
   {
     "slug": "vilon",
-    "vendors": 9,
+    "vendors": 10,
     "indexable": true
   },
   {
     "slug": "vip",
-    "vendors": 20,
+    "vendors": 21,
     "indexable": true
   }
 ]

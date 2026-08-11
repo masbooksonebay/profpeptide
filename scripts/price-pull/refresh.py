@@ -218,6 +218,12 @@ def main():
             if loud:
                 print(f"       ⚠ {slug}: {len(dropped)} SKUs have no parseable size — a whole product "
                       f"line may be missing from PP. Add mg to the SIZE_OVERRIDE map or confirm they're out of scope.")
+        # Stale-override guard: a SIZE_OVERRIDE key matching zero products in this pull is a rename or
+        # removal — the override would silently miss (vendor+name is not a stable key). WARN-only.
+        stale = counts.get("stale_overrides", [])
+        if stale:
+            print(f"       ⚠ {slug}: {len(stale)} SIZE_OVERRIDE key(s) match NO product in this pull "
+                  f"(renamed/removed — the override will silently miss): {', '.join(stale)}")
         # Row-drop floor (backstop): with truncation now caught upstream by the X-WP-Total /
         # variation-fetch guards (IncompletePull), a COMPLETE pull that still returns materially
         # fewer singles than the doc is either a real delisting or a non-woo adapter regression
