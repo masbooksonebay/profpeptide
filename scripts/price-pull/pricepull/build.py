@@ -247,18 +247,25 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
         else:
             # PP_PRICES Rule 4: a single with no parseable mg can't be priced $/mg — exclude it
             # here (to_prices drops it anyway) so the section never shows a misleading no-size row.
+            # Emit a per-SKU 'nosize' record (name/id/url/type) instead of a generic reason so the
+            # drop is COUNTED, not silent — build_section aggregates it into the returned counts.
             if N.mg_value(size_label) is None:
-                yield ('exclude', 'no parseable size (Rule 4)'); continue
+                yield ('nosize', disp, product.get('id'), product.get('permalink', ''), product.get('type', '')); continue
             yield ('single', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale, vslug)
 
 
 def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_vial_kit=False, sitewide_sale=0.0):
     """meta: {name, code, discount, url}. Returns the markdown section text."""
     singles, blends, sprays, excl = {}, [], [], set()
+    nosize_dropped = []   # per-SKU record of Rule-4 no-size drops (Class A) — counted, not silent
     for p in products:
         for r in classify(vendor, p, ten_vial_kit=ten_vial_kit, sitewide_sale=sitewide_sale):
             if r[0] == 'exclude':
                 excl.add(r[1]); continue
+            if r[0] == 'nosize':
+                _, nm, pid, purl, ptype = r
+                nosize_dropped.append({"name": nm, "id": pid, "url": purl, "type": ptype})
+                excl.add('no parseable size (Rule 4)'); continue
             kind, disp, size, base, ins, ratio, comps, reg, on_sale, vslug = r
             st = "✓" if ins else "✗"
             reg_str = f"${reg:,.2f}" if on_sale and reg else "—"    # Regular column: anchor only when on sale
@@ -307,4 +314,8 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
     L.append(f"### Excluded: {', '.join(sorted(excl)) or 'none'} — bac water/supplies, capsules/oral forms, "
              f"SARMs, Rx, cosmetics, clinical hormones (out of PP scope).")
     L.append("")
-    return "\n".join(L), {"singles": len(singles), "blends": len(blends), "sprays": len(sprays)}
+    # Class A = no-size drops (never emitted). Class B = emitted singles whose size still won't
+    # parse to mg (should be 0 — build excludes them above; a non-zero here means a leak).
+    emitted_sizeless = [r for r in singles if N.mg_value(r[1]) is None]
+    return "\n".join(L), {"singles": len(singles), "blends": len(blends), "sprays": len(sprays),
+                          "nosize_dropped": nosize_dropped, "emitted_sizeless": emitted_sizeless}
