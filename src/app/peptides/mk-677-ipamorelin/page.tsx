@@ -504,7 +504,7 @@ const sections = [
       "Neither MK-677 nor Ipamorelin is FDA-approved and both are sold for laboratory research use only. MK-677 is typically sold as oral capsules or liquid; Ipamorelin as lyophilized vials. The vendors highlighted below carry both compounds and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="mk-677-ipamorelin"
           highlights={[
             { slug: "peptide-partners" },
             { slug: "spartan-peptides", note: "Carries MK-677 and Ipamorelin" },

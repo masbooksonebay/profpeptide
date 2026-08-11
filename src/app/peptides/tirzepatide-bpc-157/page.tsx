@@ -365,7 +365,7 @@ const sections = [
       "Neither compound is FDA-approved in research-grade form. Both are sold for laboratory use only by specialty peptide vendors. Because the two peptides must be run on different schedules, researchers source them as separate vials — no legitimate pre-blended Tirzepatide+BPC-157 formulation exists (incompatible dosing frequencies make a pre-blend dangerous). The vendors below carry both research-grade tirzepatide and BPC-157 separately.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="tirzepatide-bpc-157"
           highlights={[
             { slug: "ez-peptides", note: "Stocks research-grade tirzepatide and BPC-157 separately" },
             { slug: "glacier-aminos" },

@@ -449,7 +449,7 @@ const sections = [
       "Research-grade Tesamorelin and Ipamorelin are sold by specialty peptide vendors for laboratory use only — typically as separate lyophilized vials. Neither is FDA-approved at research-grade doses (Egrifta is the approved pharmaceutical Tesamorelin product). The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="tesamorelin-ipamorelin"
           highlights={[
             { slug: "peptide-partners" },
             { slug: "spartan-peptides", note: "Carries Tesamorelin and Ipamorelin" },

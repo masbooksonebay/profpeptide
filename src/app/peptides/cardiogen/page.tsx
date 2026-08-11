@@ -190,7 +190,7 @@ const sections = [
       "Cardiogen is not approved for human use and is sold by specialty research peptide vendors for laboratory use only. Quality varies across vendors — verify a Certificate of Analysis before purchase.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="cardiogen"
           highlights={[
             { slug: "peptides-gg", note: "Per-batch COAs" },
             { slug: "purerx-peptides", note: "Same-day dispatch (order by 2:30pm CST)" },

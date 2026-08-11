@@ -390,7 +390,7 @@ const sections = [
       "IGF-1 DES is not FDA-approved for any human use and is sold only as a research-grade peptide. It is a niche compound with limited vendor coverage. In PP's vetted directory it is currently listed by the vendor highlighted below, which publishes batch certificates of analysis.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="igf-1-des"
           highlights={[
             { slug: "swiss-chems", note: "Lists IGF-1 DES · published batch COAs · code PROF10" },
           ]}

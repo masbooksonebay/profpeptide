@@ -146,7 +146,7 @@ const sections = [
       "Scenesse (afamelanotide) is a prescription implant administered by a healthcare professional for EPP. The 'Melanotan I' / MT-1 sold by specialty peptide vendors is unapproved, research-grade material for laboratory use only — not the approved drug. Quality varies across vendors; verify a Certificate of Analysis before purchase.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="melanotan-i"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 lab · batch COAs" },
             { slug: "glacier-aminos", note: "Batch COAs · cold-chain shipping" },

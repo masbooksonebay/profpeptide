@@ -492,7 +492,7 @@ const sections = [
       "CagriSema is not available by prescription as of May 2026 — Novo Nordisk's NDA is under FDA review. Research-grade pre-blended product is sold by specialty peptide vendors for laboratory use only. The three vendors highlighted below carry CagriSema as a pre-blended 1:1 product and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="cagrisema"
           highlights={[
             { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
             { slug: "ascension-peptides", note: "Sold as C-10/S-5 blend" },

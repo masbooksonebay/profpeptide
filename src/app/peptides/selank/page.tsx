@@ -412,7 +412,7 @@ const sections = [
       "Outside Russia, Selank is sold by specialty research peptide vendors as research-grade material. Choose vendors that provide third-party testing (HPLC purity, mass spectrometric identity confirmation). The vendors highlighted below have been vetted — including N-Acetyl Selank variants and nasal format options.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="selank"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },

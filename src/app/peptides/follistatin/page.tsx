@@ -419,7 +419,7 @@ const sections = [
       "Follistatin is not FDA-approved and is sold only as a research-grade peptide. It is one of the most expensive research peptides per milligram due to recombinant production complexity, and counterfeit or underdosed product is common — verify Certificate of Analysis before purchase. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="follistatin"
           highlights={[
             { slug: "behemoth-labz", note: "Widest research catalog" },
             { slug: "purerawz" },

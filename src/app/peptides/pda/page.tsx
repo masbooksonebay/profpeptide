@@ -210,7 +210,7 @@ const sections = [
       "PDA is not FDA-approved and, as a BPC-157 variant, cannot be used in compounded medications (Category 2 bulk drug substance, 2023). Research-grade material is sold by specialty peptide vendors for laboratory use only. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="pda"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },

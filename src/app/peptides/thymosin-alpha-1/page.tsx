@@ -411,7 +411,7 @@ const sections = [
       "Outside the US, Zadaxin is available by prescription in 35+ countries. In the US, Thymosin Alpha-1 is sold as a research-grade peptide by specialty vendors. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — including an oral-format option for users who prefer to avoid injection.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="thymosin-alpha-1"
           highlights={[
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },

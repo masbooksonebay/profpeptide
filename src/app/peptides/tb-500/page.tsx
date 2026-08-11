@@ -421,7 +421,7 @@ const sections = [
       "TB-500 is not FDA-approved and is sold by specialty research peptide vendors. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="tb-500"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },

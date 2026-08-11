@@ -408,7 +408,7 @@ const sections = [
       "Outside Russia/Ukraine, Semax is sold by specialty research peptide vendors as research-grade material. Quality varies — choose vendors that provide third-party testing certificates (HPLC purity, mass spectrometric identity confirmation). The vendors highlighted below have been vetted — including N-Acetyl Semax variants and nasal format options.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="semax"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "behemoth-labz", note: "Nasal format" },

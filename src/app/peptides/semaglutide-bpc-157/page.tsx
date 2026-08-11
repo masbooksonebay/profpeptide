@@ -472,7 +472,7 @@ const sections = [
       "Neither compound is FDA-approved in research-grade form, and they are not available as a pre-blended vial. Researchers source two separate vials from specialty peptide vendors. The vendors highlighted below carry research-grade semaglutide and BPC-157 and have been vetted for transparent third-party testing and traceable documentation.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="semaglutide-bpc-157"
           highlights={[
             {
               slug: "ez-peptides",

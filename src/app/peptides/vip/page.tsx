@@ -162,7 +162,7 @@ const sections = [
       "There is no broadly US-approved VIP product, and the synthetic form aviptadil is investigational. The 'VIP' sold by specialty peptide vendors is unapproved, research-grade material for laboratory use only. Quality varies across vendors; verify a Certificate of Analysis before purchase.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="vip"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 lab · batch COAs" },
             { slug: "peptide-partners", note: "Multi-lab tested · batch COAs" },

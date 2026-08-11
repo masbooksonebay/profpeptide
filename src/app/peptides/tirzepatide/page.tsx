@@ -451,7 +451,7 @@ const sections = [
       "Tirzepatide is sold by prescription as Mounjaro and Zepbound. Research-grade product is also sold by specialty peptide vendors for laboratory use only. The three vendors highlighted below carry Tirzepatide and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="tirzepatide"
           highlights={[
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners", note: "Sold as 'GLP-2 Tirzepatide'" },

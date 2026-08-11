@@ -423,7 +423,7 @@ const sections = [
       "CJC-1295 is not FDA-approved and is sold only as a research-grade peptide. Verify whether you're buying with DAC or without DAC — labeling is sometimes inconsistent. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — with explicit DAC/no-DAC variant labeling noted.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="cjc-1295"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },

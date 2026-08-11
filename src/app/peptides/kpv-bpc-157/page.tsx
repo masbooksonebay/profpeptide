@@ -325,7 +325,7 @@ const sections = [
       "KPV + BPC-157 is not FDA-approved. Both peptides are sold as research compounds by specialty peptide vendors, either as individual vials or in some cases as a pre-blended formulation. Vendors below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="kpv-bpc-157"
           highlights={[
             { slug: "ez-peptides", note: "Stocks KPV and BPC-157 (oral and injectable forms)" },
             { slug: "glacier-aminos" },

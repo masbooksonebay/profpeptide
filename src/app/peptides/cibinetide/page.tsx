@@ -357,7 +357,7 @@ const sections = [
       "Cibinetide (ARA-290) is not FDA-approved for any human use and is sold only as a research-grade peptide. In PP's vetted vendor directory it is currently listed by Swiss Chems. Vendors highlighted here have been evaluated for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="cibinetide"
           highlights={[
             { slug: "swiss-chems", note: "Lists Cibinetide (ARA-290) · published batch COAs · code PROF10" },
           ]}

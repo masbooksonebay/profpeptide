@@ -152,7 +152,7 @@ const sections = [
       "Pinealon is not approved for human use and is sold by specialty research peptide vendors for laboratory use only. Quality varies across vendors — verify a Certificate of Analysis before purchase.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="pinealon"
           highlights={[
             { slug: "peptide-partners", note: "Multi-lab tested · batch COAs" },
             { slug: "glacier-aminos", note: "Batch COAs · cold-chain shipping" },

@@ -330,7 +330,7 @@ const sections = [
       "This blend is not FDA-approved and is sold by specialty research peptide vendors for laboratory research use only &mdash; as a combined single vial or as individual components. The vendors highlighted below carry NAD+, MOTS-c, and metabolic blend products and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="nad-mots-c-5-amino-1mq"
           highlights={[
             { slug: "ez-peptides", note: "Stocks NAD+, MOTS-c, and metabolic blends" },
             { slug: "glacier-aminos" },

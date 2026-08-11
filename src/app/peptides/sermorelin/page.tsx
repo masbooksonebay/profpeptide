@@ -408,7 +408,7 @@ const sections = [
       "Sermorelin's brand product (Geref) was discontinued in 2008 (not for safety/efficacy reasons). It is currently available through licensed US compounding pharmacies with a prescription, or as research-grade peptide. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="sermorelin"
           highlights={[
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },

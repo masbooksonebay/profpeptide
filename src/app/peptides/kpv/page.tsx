@@ -420,7 +420,7 @@ const sections = [
       "KPV is not FDA-approved and is sold by specialty research peptide vendors as oral capsules, injectable lyophilized powder, or topical formulations. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — including an oral-capsule option that's unusually well-suited to KPV's gut applications.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="kpv"
           highlights={[
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },

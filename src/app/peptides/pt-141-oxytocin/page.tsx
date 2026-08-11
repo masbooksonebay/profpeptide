@@ -332,7 +332,7 @@ const sections = [
       "PT-141 is available from research peptide vendors as a lyophilized vial. Oxytocin is more commonly sourced through compounding pharmacies as an intranasal spray or sublingual troche than through research peptide vendors &mdash; availability varies by vendor. The vendors highlighted below carry PT-141 and have been vetted for third-party testing documentation and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="pt-141-oxytocin"
           highlights={[
             { slug: "ez-peptides", note: "Stocks PT-141; oxytocin availability varies by vendor" },
             { slug: "glacier-aminos" },

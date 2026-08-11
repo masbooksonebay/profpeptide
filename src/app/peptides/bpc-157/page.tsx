@@ -427,7 +427,7 @@ const sections = [
       "BPC-157 is not FDA-approved and cannot be compounded by commercial pharmacies in the US (Category 2 bulk drug substance, 2023). Research-grade material is sold by specialty peptide vendors. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — and span both injectable and oral format options for the GI research use case.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="bpc-157"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },

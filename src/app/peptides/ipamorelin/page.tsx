@@ -401,7 +401,7 @@ const sections = [
       "Ipamorelin is not FDA-approved for any human use and is sold only as a research-grade peptide. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — including pre-mixed CJC-1295/Ipamorelin combo options for the canonical GH Stack pairing.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="ipamorelin"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },

@@ -19,11 +19,9 @@
 //   /<top>              — single-segment top-level route (e.g. /bioregulators,
 //                         /calculator, /faq): real src/app/<top>/page.tsx  OR redirect
 //
-// DELIBERATELY OUT OF SCOPE: /prices/<slug>. It has zero literal links (they are
-// built dynamically as /prices/${slug} from the price dataset), and validating it
-// would need a different resolver — dataset membership in prices.generated.ts, not
-// directory existence (a dataset-absent slug 404s via notFound()). Not forgotten;
-// add it as its own resolver if literal /prices links ever appear.
+// /prices/<slug> IS validated (see the "prices" family): a literal link resolves only for a compound
+// with an INDEXABLE price page (>=3 vendors, per prices.index.json). The dynamic /prices/${slug} links
+// the app builds from the dataset carry no literal slug and aren't scanned; only hardcoded literals are.
 //
 // Distinctions encoded (from the 2026-07 audit):
 //   - A link to a RETIRED vendor whose route 301s to /coupons is NOT dead — it's a
@@ -153,6 +151,13 @@ const hasTopPage = (seg) => existsSync(join(root, "src/app", seg, "page.tsx"));
 // ── run ─────────────────────────────────────────────────────────────────────
 const vendors = loadVendors();
 const newsSlugs = loadNewsSlugs();
+// Compounds with an INDEXABLE /prices/<slug> page (>=3 vendors) — the set a literal /prices link may
+// point at. Derived from prices.index.json, the same source the render + sitemap gate on.
+const indexablePriceSlugs = new Set(
+  JSON.parse(readFileSync(join(root, "src/data/prices.index.json"), "utf8"))
+    .filter((c) => c.indexable)
+    .map((c) => c.slug),
+);
 const redirectPaths = await loadRedirectPaths();
 
 // Per-family { linkPattern, resolver } table. resolve() returns how the link resolved
@@ -202,6 +207,16 @@ const FAMILIES = [
     detail: () => "no page dir",
   },
   {
+    name: "prices",
+    // /prices/<slug> resolves only for a compound with an INDEXABLE price page (>=3 vendors); a link
+    // to a noindex (<3-vendor) or absent compound is a dead / mixed-signal link. The dynamic
+    // /prices/${slug} links the app builds from the dataset carry no literal slug and never reach
+    // here — only HARDCODED /prices/<slug> literals do (e.g. the profile price-comparison CTA is
+    // dynamic + gated on the same >=3 threshold, so it can't produce a dead link).
+    resolve: (slug) => (indexablePriceSlugs.has(slug) ? "index" : null),
+    detail: () => "no indexable /prices page (compound is <3 vendors or absent from the price index)",
+  },
+  {
     name: "guides",
     resolve: (slug) => (hasPageDir("guides", slug) ? "dir" : null),
     detail: () => "no page dir",
@@ -248,7 +263,7 @@ const FAMILIES = [
 ];
 
 const files = walk(SCAN_DIR);
-const REASON_LABEL = { redirect: "via redirect", registry: "via news registry" };
+const REASON_LABEL = { redirect: "via redirect", registry: "via news registry", index: "via price index" };
 // The href a slug renders to: /<seg> for the single-segment family, /<family>/<slug> otherwise.
 const linkOf = (fam, slug) => (fam.name === "top-level" ? `/${slug}` : `/${fam.name}/${slug}`);
 

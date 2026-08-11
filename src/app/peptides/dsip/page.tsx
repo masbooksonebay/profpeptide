@@ -405,7 +405,7 @@ const sections = [
       "DSIP is not FDA-approved and is sold by specialty research peptide vendors. Quality varies and the FDA has flagged immunogenicity concerns — third-party testing is especially important. The vendors highlighted below have been vetted — including nasal and pre-blended (Asleep) format options.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="dsip"
           highlights={[
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "behemoth-labz", note: "Nasal format" },

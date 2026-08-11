@@ -224,7 +224,7 @@ const sections = [
       "Research-grade oxytocin (distinct from the prescription obstetric drug) is sold as a research-use-only material by specialty peptide vendors. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="oxytocin"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "ameano-peptides", note: "Published per-product COAs · third-party verified" },

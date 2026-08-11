@@ -162,7 +162,7 @@ const sections = [
       "Forzinity (elamipretide) is a prescription medication for Barth syndrome, distributed through specialty pharmacy channels. The 'SS-31' sold by specialty peptide vendors is unapproved, research-grade material for laboratory use only — not the approved drug. Quality varies across vendors; verify a Certificate of Analysis before purchase.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="ss-31"
           highlights={[
             { slug: "peptide-partners", note: "Multi-lab tested · batch COAs" },
             { slug: "ascension-peptides", note: "99%+ purity · batch COAs" },

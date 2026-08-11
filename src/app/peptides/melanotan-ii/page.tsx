@@ -400,7 +400,7 @@ const sections = [
       "MT-II is sold by specialty research peptide vendors as research-grade material despite regulatory warnings from multiple health agencies. We strongly recommend reading the full Side Effects & Safety section before considering use. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="melanotan-ii"
           highlights={[
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "ascension-peptides" },

@@ -413,7 +413,7 @@ const sections = [
       "PT-141 is FDA-approved as Vyleesi — prescription, premenopausal women with HSDD only — distributed through specialty pharmacies. Off-label and research-grade PT-141 is sold by specialty peptide vendors. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — including a nasal-format option (the original PT-141 delivery route in early clinical trials).",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="pt-141"
           highlights={[
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },

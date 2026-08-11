@@ -339,7 +339,7 @@ const sections = [
       "MK-677 is not FDA-approved and is sold as a research compound by specialty vendors. Quality varies dramatically — third-party HPLC and mass spectrometric testing is essential. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="mk-677"
           highlights={[
             { slug: "peptide-partners" },
             { slug: "ascension-peptides" },

@@ -404,7 +404,7 @@ const sections = [
       "MGF and PEG-MGF are not FDA-approved and are sold only as research-grade peptides. In PP's vetted directory, they are currently listed by the vendor highlighted below, which publishes batch documentation and carries both the native and pegylated forms.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="mgf"
           highlights={[
             { slug: "swiss-chems", note: "Lists MGF & PEG-MGF · published batch COAs · code PROF10" },
           ]}

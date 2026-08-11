@@ -442,7 +442,7 @@ const sections = [
       "Neither Sermorelin (as research-grade injectable) nor Ipamorelin is FDA-approved for over-the-counter retail sale. Both are sold by specialty research peptide vendors for laboratory use only — typically as separate vials (allowing independent dose titration) or occasionally as a pre-blended combination vial. The vendors highlighted below carry both components and have been vetted for transparent third-party testing and traceable batch documentation.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="sermorelin-ipamorelin"
           highlights={[
             { slug: "peptide-partners" },
             { slug: "spartan-peptides", note: "Carries Sermorelin and Ipamorelin" },

@@ -392,7 +392,7 @@ const sections = [
       "Epitalon is not FDA-approved and is sold by specialty research peptide vendors. Quality varies dramatically across vendors — verify Certificate of Analysis before purchase. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="epitalon"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },

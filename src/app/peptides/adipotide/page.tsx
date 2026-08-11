@@ -340,7 +340,7 @@ const sections = [
       "Adipotide is not FDA-approved and is sold only as a research-grade peptide, by a limited number of research suppliers. In PP's vetted directory it is currently listed by Swiss Chems. As with any unvalidated research compound, published batch documentation and third-party testing matter more, not less.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="adipotide"
           highlights={[
             { slug: "swiss-chems", note: "Lists Adipotide (FTPP) · published batch COAs · code PROF10" },
           ]}

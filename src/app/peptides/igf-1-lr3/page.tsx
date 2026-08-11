@@ -400,7 +400,7 @@ const sections = [
       "IGF-1 LR3 is not FDA-approved for performance enhancement and is sold only as a research-grade peptide. Counterfeit and underdosed product is common in the gray market — verify Certificate of Analysis before purchase. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="igf-1-lr3"
           highlights={[
             { slug: "behemoth-labz" },
             { slug: "spartan-peptides" },

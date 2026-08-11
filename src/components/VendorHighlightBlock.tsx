@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { vendors } from "@/data/vendors";
 import { CopyCode } from "@/components/CopyCode";
+import { compoundVendorCount } from "@/data/prices";
 
 export interface VendorHighlight {
   slug: string;
@@ -11,10 +12,19 @@ export interface VendorHighlight {
 
 export interface VendorHighlightBlockProps {
   highlights: VendorHighlight[];
+  /** The compound this profile is about. When set AND the compound has an indexable /prices page
+   *  (>=3 vendors), a server-rendered "Compare prices across N vendors" CTA is shown beside the vendor
+   *  cards. Passed explicitly (not derived from the route) so the link is in the STATIC HTML — a
+   *  client-only usePathname link doesn't render server-side and wouldn't be crawlable. Omitted on
+   *  non-profile hosts (e.g. /peptide-sciences-alternatives); the ~17 blend/stack profiles below the
+   *  threshold render no CTA, so the link is never dead. */
+  compoundSlug?: string;
 }
 
-export default function VendorHighlightBlock({ highlights }: VendorHighlightBlockProps) {
+export default function VendorHighlightBlock({ highlights, compoundSlug }: VendorHighlightBlockProps) {
+  const vendorCount = compoundSlug ? compoundVendorCount(compoundSlug) : 0;
   return (
+    <>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {highlights.map((h) => {
         const v = vendors[h.slug];
@@ -73,5 +83,14 @@ export default function VendorHighlightBlock({ highlights }: VendorHighlightBloc
         );
       })}
     </div>
+    {compoundSlug && vendorCount >= 3 && (
+      <Link
+        href={`/prices/${compoundSlug}`}
+        className="mt-4 flex items-center justify-center gap-2 rounded-xl border border-[#3A759F]/40 bg-[#3A759F]/10 px-4 py-3 text-sm font-semibold text-[#3A759F] hover:bg-[#3A759F]/15 transition-colors"
+      >
+        Compare prices across {vendorCount} vendors &rarr;
+      </Link>
+    )}
+    </>
   );
 }

@@ -413,7 +413,7 @@ const sections = [
       "Egrifta WR and Egrifta SV are prescription medications distributed through specialty pharmacy channels in the US. Research-grade tesamorelin is sold by specialty peptide vendors. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
     node: (
       <div className="space-y-4">
-        <VendorHighlightBlock
+        <VendorHighlightBlock compoundSlug="tesamorelin"
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
