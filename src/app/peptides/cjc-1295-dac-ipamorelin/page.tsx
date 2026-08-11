@@ -474,7 +474,6 @@ const sections = [
         <VendorHighlightBlock compoundSlug="cjc-1295-dac-ipamorelin"
           highlights={[
             { slug: "peptide-partners" },
-            { slug: "spartan-peptides", note: "Carries CJC-1295 DAC and Ipamorelin" },
             { slug: "glacier-aminos" },
           ]}
         />

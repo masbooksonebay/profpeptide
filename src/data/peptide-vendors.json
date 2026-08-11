@@ -8,19 +8,7 @@
           "note": null
         },
         {
-          "slug": "behemoth-labz",
-          "note": null
-        },
-        {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         }
       ]
@@ -29,15 +17,7 @@
       "displayName": "BPC-157",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
-          "note": null
-        },
-        {
-          "slug": "behemoth-labz",
           "note": null
         },
         {
@@ -49,12 +29,8 @@
           "note": null
         },
         {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "integrative-peptides",
-          "note": "Oral capsules & spray — no injection needed"
+          "note": "Oral capsules & spray \u2014 no injection needed"
         },
         {
           "slug": "limitless-biotech",
@@ -65,23 +41,11 @@
           "note": null
         },
         {
-          "slug": "particle-peptides",
-          "note": "EU shipping"
-        },
-        {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
-        },
-        {
-          "slug": "purerawz",
-          "note": null
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         },
         {
@@ -98,27 +62,15 @@
           "note": "Sold as C-10"
         },
         {
-          "slug": "behemoth-labz",
-          "note": null
-        },
-        {
           "slug": "limitless-biotech",
-          "note": "VIP-gated catalog — login required"
+          "note": "VIP-gated catalog \u2014 login required"
         },
         {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
-        },
-        {
-          "slug": "purerawz",
-          "note": "Sold as 'AM833'"
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         },
         {
@@ -135,20 +87,12 @@
           "note": "Sold as C-10/S-5 blend"
         },
         {
-          "slug": "behemoth-labz",
-          "note": "Pre-blended 1:1 ratio"
-        },
-        {
           "slug": "limitless-biotech",
-          "note": "VIP-gated catalog — login required"
+          "note": "VIP-gated catalog \u2014 login required"
         },
         {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
-        },
-        {
-          "slug": "purerawz",
-          "note": "Pre-blended product"
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
@@ -164,16 +108,8 @@
       "displayName": "CJC-1295",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": "DAC + no-DAC variants"
-        },
-        {
           "slug": "ascension-peptides",
           "note": "No-DAC variant"
-        },
-        {
-          "slug": "behemoth-labz",
-          "note": "DAC + no-DAC variants"
         },
         {
           "slug": "biocollex",
@@ -184,31 +120,15 @@
           "note": null
         },
         {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "oasis-labs",
           "note": null
         },
         {
-          "slug": "particle-peptides",
-          "note": "EU shipping"
-        },
-        {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
-        },
-        {
-          "slug": "purerawz",
-          "note": "Revive Nasal blend (CJC-1295 + Ipamorelin)"
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         },
         {
@@ -221,20 +141,8 @@
       "displayName": "DSIP",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": null
-        },
-        {
-          "slug": "behemoth-labz",
-          "note": "Nasal format"
-        },
-        {
-          "slug": "purerawz",
-          "note": "Available in Youth Nasal Spray + Asleep blends"
         }
       ]
     },
@@ -242,31 +150,11 @@
       "displayName": "Epitalon",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": null
         },
         {
-          "slug": "behemoth-labz",
-          "note": null
-        },
-        {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
-          "slug": "purerawz",
-          "note": "In Youth Nasal Spray blend"
-        },
-        {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         },
         {
@@ -279,14 +167,6 @@
       "displayName": "Follistatin",
       "vendors": [
         {
-          "slug": "behemoth-labz",
-          "note": "Widest research catalog"
-        },
-        {
-          "slug": "purerawz",
-          "note": null
-        },
-        {
           "slug": "royal-peptides",
           "note": null
         }
@@ -297,11 +177,7 @@
       "vendors": [
         {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
-        },
-        {
-          "slug": "spartan-peptides",
-          "note": "Spartan Strong pre-formulated blend"
+          "note": "Editor's Pick \u2014 4-test purity program"
         }
       ]
     },
@@ -309,15 +185,7 @@
       "displayName": "GHK-Cu",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
-          "note": null
-        },
-        {
-          "slug": "behemoth-labz",
           "note": null
         },
         {
@@ -325,31 +193,15 @@
           "note": null
         },
         {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "oasis-labs",
           "note": null
         },
         {
-          "slug": "particle-peptides",
-          "note": "EU shipping"
-        },
-        {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
-        },
-        {
-          "slug": "purerawz",
-          "note": null
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         }
       ]
@@ -358,31 +210,11 @@
       "displayName": "IGF-1 LR3",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
-          "slug": "behemoth-labz",
-          "note": null
-        },
-        {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "oasis-labs",
           "note": null
         },
         {
-          "slug": "purerawz",
-          "note": null
-        },
-        {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         }
       ]
@@ -391,47 +223,23 @@
       "displayName": "Ipamorelin",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": null
-        },
-        {
-          "slug": "behemoth-labz",
-          "note": "Nasal + vial formats"
         },
         {
           "slug": "biocollex",
           "note": "CJC-1295 / Ipamorelin combo"
         },
         {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "oasis-labs",
           "note": null
         },
         {
-          "slug": "particle-peptides",
-          "note": "EU shipping"
-        },
-        {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
-        },
-        {
-          "slug": "purerawz",
-          "note": "Revive Nasal blend (CJC-1295 + Ipamorelin)"
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         },
         {
@@ -448,20 +256,16 @@
           "note": null
         },
         {
-          "slug": "behemoth-labz",
-          "note": null
-        },
-        {
           "slug": "biocollex",
           "note": null
         },
         {
           "slug": "integrative-peptides",
-          "note": "Oral capsules & spray — no injection needed"
+          "note": "Oral capsules & spray \u2014 no injection needed"
         },
         {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
+          "note": "Editor's Pick \u2014 4-test purity program"
         }
       ]
     },
@@ -469,15 +273,7 @@
       "displayName": "Melanotan II",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
-          "note": null
-        },
-        {
-          "slug": "behemoth-labz",
           "note": null
         },
         {
@@ -485,23 +281,11 @@
           "note": null
         },
         {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "oasis-labs",
           "note": null
         },
         {
-          "slug": "purerawz",
-          "note": null
-        },
-        {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         }
       ]
@@ -510,31 +294,11 @@
       "displayName": "MOTS-c",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": null
         },
         {
-          "slug": "behemoth-labz",
-          "note": null
-        },
-        {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
-          "slug": "purerawz",
-          "note": "Nasal spray format"
-        },
-        {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         }
       ]
@@ -543,28 +307,12 @@
       "displayName": "NAD+",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "biocollex",
-          "note": null
-        },
-        {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
-          "slug": "purerawz",
           "note": null
         },
         {
           "slug": "royal-peptides",
           "note": null
-        },
-        {
-          "slug": "spartan-peptides",
-          "note": "Included in Energizer Bunny blend"
         },
         {
           "slug": "vital-core-research",
@@ -576,23 +324,11 @@
       "displayName": "PT-141",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": null
         },
         {
-          "slug": "behemoth-labz",
-          "note": "Nasal + vial formats"
-        },
-        {
           "slug": "biocollex",
-          "note": null
-        },
-        {
-          "slug": "ignite-peptides",
           "note": null
         },
         {
@@ -601,14 +337,10 @@
         },
         {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         }
       ]
@@ -617,16 +349,8 @@
       "displayName": "Retatrutide",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": "Sold as R-10 / R-30"
-        },
-        {
-          "slug": "behemoth-labz",
-          "note": null
         },
         {
           "slug": "biocollex",
@@ -637,12 +361,8 @@
           "note": null
         },
         {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "limitless-biotech",
-          "note": "VIP-gated catalog — login required"
+          "note": "VIP-gated catalog \u2014 login required"
         },
         {
           "slug": "oasis-labs",
@@ -653,15 +373,7 @@
           "note": "Sold as 'GLP-3 Retatrutide'"
         },
         {
-          "slug": "purerawz",
-          "note": null
-        },
-        {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         },
         {
@@ -678,15 +390,7 @@
           "note": null
         },
         {
-          "slug": "behemoth-labz",
-          "note": "Nasal format"
-        },
-        {
           "slug": "biocollex",
-          "note": null
-        },
-        {
-          "slug": "ignite-peptides",
           "note": null
         },
         {
@@ -694,15 +398,7 @@
           "note": "N-Acetyl Selank"
         },
         {
-          "slug": "purerawz",
-          "note": "N-Acetyl Selank"
-        },
-        {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         },
         {
@@ -715,16 +411,8 @@
       "displayName": "Semaglutide",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": "Sold as S-5"
-        },
-        {
-          "slug": "behemoth-labz",
-          "note": null
         },
         {
           "slug": "biocollex",
@@ -735,12 +423,8 @@
           "note": null
         },
         {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "limitless-biotech",
-          "note": "VIP-gated catalog — login required"
+          "note": "VIP-gated catalog \u2014 login required"
         },
         {
           "slug": "oasis-labs",
@@ -751,15 +435,7 @@
           "note": null
         },
         {
-          "slug": "purerawz",
-          "note": null
-        },
-        {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         },
         {
@@ -776,15 +452,7 @@
           "note": null
         },
         {
-          "slug": "behemoth-labz",
-          "note": "Nasal format"
-        },
-        {
           "slug": "biocollex",
-          "note": null
-        },
-        {
-          "slug": "ignite-peptides",
           "note": null
         },
         {
@@ -793,14 +461,6 @@
         },
         {
           "slug": "oasis-labs",
-          "note": null
-        },
-        {
-          "slug": "purerawz",
-          "note": "N-Acetyl Semax"
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         },
         {
@@ -813,15 +473,7 @@
       "displayName": "Sermorelin",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
-          "note": null
-        },
-        {
-          "slug": "behemoth-labz",
           "note": null
         },
         {
@@ -829,23 +481,11 @@
           "note": null
         },
         {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
-        },
-        {
-          "slug": "purerawz",
-          "note": "Sermorelin + GHRP-2 blend"
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         }
       ]
@@ -854,15 +494,7 @@
       "displayName": "TB-500",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
-          "note": null
-        },
-        {
-          "slug": "behemoth-labz",
           "note": null
         },
         {
@@ -874,31 +506,15 @@
           "note": null
         },
         {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "oasis-labs",
           "note": null
         },
         {
-          "slug": "particle-peptides",
-          "note": "EU shipping"
-        },
-        {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
-        },
-        {
-          "slug": "purerawz",
-          "note": null
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         },
         {
@@ -911,10 +527,6 @@
       "displayName": "Tesamorelin",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": null
         },
@@ -923,20 +535,12 @@
           "note": null
         },
         {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
           "note": null
-        },
-        {
-          "slug": "spartan-peptides",
-          "note": "Included in Spartan Strong blend"
         }
       ]
     },
@@ -948,23 +552,15 @@
           "note": null
         },
         {
-          "slug": "behemoth-labz",
-          "note": null
-        },
-        {
           "slug": "integrative-peptides",
-          "note": "Oral format — no injection needed"
+          "note": "Oral format \u2014 no injection needed"
         },
         {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         }
       ]
@@ -973,16 +569,8 @@
       "displayName": "Tirzepatide",
       "vendors": [
         {
-          "slug": "almighty-peptides",
-          "note": null
-        },
-        {
           "slug": "ascension-peptides",
           "note": "Sold as T-10 / T-30"
-        },
-        {
-          "slug": "behemoth-labz",
-          "note": null
         },
         {
           "slug": "biocollex",
@@ -993,12 +581,8 @@
           "note": null
         },
         {
-          "slug": "ignite-peptides",
-          "note": null
-        },
-        {
           "slug": "limitless-biotech",
-          "note": "VIP-gated catalog — login required"
+          "note": "VIP-gated catalog \u2014 login required"
         },
         {
           "slug": "oasis-labs",
@@ -1009,15 +593,7 @@
           "note": "Sold as 'GLP-2 Tirzepatide'"
         },
         {
-          "slug": "purerawz",
-          "note": null
-        },
-        {
           "slug": "royal-peptides",
-          "note": null
-        },
-        {
-          "slug": "spartan-peptides",
           "note": null
         },
         {
@@ -1034,24 +610,16 @@
           "note": null
         },
         {
-          "slug": "behemoth-labz",
-          "note": null
-        },
-        {
           "slug": "biocollex",
           "note": null
         },
         {
           "slug": "peptide-partners",
-          "note": "Editor's Pick — 4-test purity program"
+          "note": "Editor's Pick \u2014 4-test purity program"
         },
         {
           "slug": "royal-peptides",
           "note": null
-        },
-        {
-          "slug": "spartan-peptides",
-          "note": "Pre-formulated research blend"
         }
       ]
     }

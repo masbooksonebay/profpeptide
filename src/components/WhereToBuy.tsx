@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import { vendors, regionFlag } from "@/data/vendors";
 import peptideVendorsData from "@/data/peptide-vendors.json";
 import { CopyCode } from "@/components/CopyCode";
+import { LISTED } from "@/data/attribution";
 
 type VendorEntry = { slug: string; note: string | null };
 type PeptideEntry = { displayName: string; vendors: VendorEntry[] };
@@ -74,7 +75,14 @@ function VendorCard({ slug, note }: VendorEntry) {
 export default function WhereToBuy({ peptide }: { peptide: string }) {
   const entry = peptides[peptide];
   if (!entry) return null;
-  const { displayName, vendors: entries } = entry;
+  const { displayName } = entry;
+  // Promote only attribution-proven / graced-in vendors (see src/data/attribution.ts). Source
+  // is already pruned to LISTED and check:attribution enforces it — this is the render-layer
+  // guarantee. Floor rule: if nothing survives, hide the whole section rather than render a
+  // heading + FAQ schema claiming "0 research suppliers carry X" over an empty grid — a wrong
+  // factual claim in structured data.
+  const entries = entry.vendors.filter((e) => LISTED.has(e.slug));
+  if (entries.length === 0) return null;
   const vendorNames = entries.map((e) => vendors[e.slug]?.name).filter(Boolean);
   const topThree = vendorNames.slice(0, 3).join(", ");
 

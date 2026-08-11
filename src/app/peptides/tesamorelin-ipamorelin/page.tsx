@@ -452,7 +452,6 @@ const sections = [
         <VendorHighlightBlock compoundSlug="tesamorelin-ipamorelin"
           highlights={[
             { slug: "peptide-partners" },
-            { slug: "spartan-peptides", note: "Carries Tesamorelin and Ipamorelin" },
             { slug: "glacier-aminos" },
             { slug: "oasis-labs" },
           ]}

@@ -416,7 +416,6 @@ const sections = [
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
             { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
             { slug: "ascension-peptides" },
-            { slug: "particle-peptides", note: "EU shipping" },
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">

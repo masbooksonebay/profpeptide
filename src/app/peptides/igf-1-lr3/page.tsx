@@ -402,8 +402,6 @@ const sections = [
       <div className="space-y-4">
         <VendorHighlightBlock compoundSlug="igf-1-lr3"
           highlights={[
-            { slug: "behemoth-labz" },
-            { slug: "spartan-peptides" },
             { slug: "oasis-labs" },
             { slug: "royal-peptides" },
           ]}

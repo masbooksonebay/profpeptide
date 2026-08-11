@@ -406,7 +406,6 @@ const sections = [
       <div className="space-y-4">
         <VendorHighlightBlock compoundSlug="mgf"
           highlights={[
-            { slug: "swiss-chems", note: "Lists MGF & PEG-MGF · published batch COAs · code PROF10" },
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">

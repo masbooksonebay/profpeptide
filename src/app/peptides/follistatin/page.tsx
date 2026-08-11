@@ -421,8 +421,6 @@ const sections = [
       <div className="space-y-4">
         <VendorHighlightBlock compoundSlug="follistatin"
           highlights={[
-            { slug: "behemoth-labz", note: "Widest research catalog" },
-            { slug: "purerawz" },
             { slug: "royal-peptides" },
           ]}
         />

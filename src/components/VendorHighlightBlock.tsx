@@ -4,6 +4,7 @@ import Link from "next/link";
 import { vendors } from "@/data/vendors";
 import { CopyCode } from "@/components/CopyCode";
 import { compoundVendorCount } from "@/data/prices";
+import { LISTED } from "@/data/attribution";
 
 export interface VendorHighlight {
   slug: string;
@@ -22,11 +23,17 @@ export interface VendorHighlightBlockProps {
 }
 
 export default function VendorHighlightBlock({ highlights, compoundSlug }: VendorHighlightBlockProps) {
+  // Promote only attribution-proven / graced-in vendors (see src/data/attribution.ts). A code
+  // that works at checkout but credits nobody earns nothing and costs the click. Source lists
+  // are already pruned to LISTED and check:attribution enforces it — this is the render-layer
+  // guarantee. Floor rule: if nothing survives, hide the block entirely (never an empty grid).
+  const listed = highlights.filter((h) => LISTED.has(h.slug));
+  if (listed.length === 0) return null;
   const vendorCount = compoundSlug ? compoundVendorCount(compoundSlug) : 0;
   return (
     <>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      {highlights.map((h) => {
+      {listed.map((h) => {
         const v = vendors[h.slug];
         if (!v) return null;
         return (

@@ -445,7 +445,6 @@ const sections = [
         <VendorHighlightBlock compoundSlug="sermorelin-ipamorelin"
           highlights={[
             { slug: "peptide-partners" },
-            { slug: "spartan-peptides", note: "Carries Sermorelin and Ipamorelin" },
             { slug: "glacier-aminos" },
           ]}
         />
