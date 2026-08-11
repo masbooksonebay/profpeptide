@@ -320,7 +320,7 @@ export const vendors: Record<string, Vendor> = {
   "limitless-biotech": {
     name: "Limitless Biotech",
     code: "PROFPEPTIDE",
-    discount: "10% off",
+    discount: "15% off",
     region: "US",
     url: "https://www.limitlesslifenootropics.com/?_ef_transaction_id=&oid=1&affid=10477",
     detailPage: "/coupons/limitless-biotech",

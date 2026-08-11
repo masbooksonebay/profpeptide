@@ -27,8 +27,11 @@
 // glacier-aminos $614.81 · oasis-labs $467.88 · ez-peptides $424.08 · peptides-gg $252.63 ·
 // midwest-peptide $183.61 · royal-peptides $143.19 · ascension-peptides $134.99 ·
 // biocollex $94.00 · vital-core-research $87.89 · integrative-peptides $44.70.
-// limitless-biotech has no lifetime figure (Everflow) but logged a real credited conversion
-// last period ($59.61) — attribution works, so it is proven, not graced.
+// limitless-biotech — PROVEN from portal config AND conversion data (Everflow, code ID 1294 bound
+//   to offer 1; 4 of 5 lifetime conversions code-attributed). Verified 2026-08-11.
+// biolongevity-labs — PROVEN from portal config AND conversion data (TUNE, PROFPEPTIDE in Offer
+//   Details → Promo Codes; 4 of 4 conversions code-attributed). Verified 2026-08-11; moved up
+//   from GRACED once its binding + attribution were confirmed.
 const PROVEN_LIST = [
   "peptide-partners",
   "amino-club",
@@ -43,6 +46,7 @@ const PROVEN_LIST = [
   "biocollex",
   "integrative-peptides",
   "limitless-biotech",
+  "biolongevity-labs",
 ];
 export const PROVEN = new Set<string>(PROVEN_LIST);
 
@@ -58,7 +62,6 @@ const GRACED_LIST = [
   "peptide-giants",
   "purerx-peptides",
   "peptidology",
-  "biolongevity-labs",
   "aero-peptides",
   "treasure-coast-peptides",
   "modern-aminos",

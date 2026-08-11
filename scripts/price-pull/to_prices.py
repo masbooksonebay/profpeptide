@@ -85,6 +85,18 @@ BLEND_MAP = {
     "NAD+/MOTS-C/5-Amino-1MQ": "nad-mots-c-5-amino-1mq",
 }
 
+# Canonical DISPLAY name per blend slug — the single source for every user-visible surface
+# (H1, page title, meta/OG/twitter descriptions, OG image, breadcrumbs, /prices hub, JSON-LD).
+# Title-casing the slug is WRONG here: it renders "Glow"/"Klow", contradicting PP's coupon pages
+# (GLOW/KLOW uppercase) and dropping the "+"/"/" the blends are actually written with.
+BLEND_DISPLAY = {
+    "glow": "GLOW",
+    "klow": "KLOW",
+    "wolverine-stack": "Wolverine",
+    "tesamorelin-ipamorelin": "Tesamorelin/Ipamorelin",
+    "nad-mots-c-5-amino-1mq": "NAD+/MOTS-C/5-Amino-1MQ",
+}
+
 def blend_base_name(raw):
     """Strip parenthetical components + [tags] from a doc blend name -> the BLEND_MAP key."""
     n = re.sub(r"\s*\(.*?\)", "", raw)
@@ -412,7 +424,7 @@ for slug, items in sorted(_blend_groups.items()):
         cfg = (str(int(mg)) if float(mg).is_integer() else str(mg)) + "mg"
         for v, i in sorted(bv.items()):
             blend_rows_out.append({
-                "blend": slug, "blendName": slug.replace("-", " ").title(),
+                "blend": slug, "blendName": BLEND_DISPLAY.get(slug, slug.replace("-", " ").title()),
                 "vendor": v, "config": cfg, "totalPrice": i["price"], "inStock": i["inStock"],
             })
         cfg_list.append({"config": cfg, "vendors": len(bv)})

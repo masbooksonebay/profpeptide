@@ -16,7 +16,7 @@ export default function LimitlessBiotechCouponPage() {
       <CouponBreadcrumb slug="limitless-biotech" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Limitless Biotech Discount Code &mdash; Save 10%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Limitless Biotech Discount Code &mdash; Save 15%</h1>
  </div>
  <CouponFacts slug="limitless-biotech" />
  <CouponCodeCard slug="limitless-biotech" className="mb-8" />
@@ -88,11 +88,11 @@ export default function LimitlessBiotechCouponPage() {
  />
  <FAQItem
  q="Does Limitless Biotech have a discount code?"
- a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Limitless Biotech order. This code is verified and maintained by Prof. Peptide."
+ a="Yes. Use code PROFPEPTIDE at checkout to save 15% on any Limitless Biotech order. This code is verified and maintained by Prof. Peptide."
  />
  <FAQItem
  q="How do I use the Limitless Biotech discount code?"
- a="Add your items to cart at limitlessbiotech.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total."
+ a="Add your items to cart at limitlessbiotech.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 15% discount will be applied to your order total."
  />
  <FAQItem
  q="What testing does Limitless Biotech conduct?"
