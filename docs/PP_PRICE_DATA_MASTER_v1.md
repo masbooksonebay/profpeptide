@@ -922,7 +922,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 
 ## VENDOR: Oasis Labs
-- **slug:** oasis-labs | **code:** PROF15 | **discount:** 15% off | **url:** myoasislabs.com
+- **slug:** oasis-labs | **code:** PROFPEPTIDE | **discount:** 15% off | **url:** myoasislabs.com
 - **traffic:** (not pulled) | **pulled:** August 8 2026
 - **sale posture:** Product sale 7/54; code stacks.
 
