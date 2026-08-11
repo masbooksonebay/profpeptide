@@ -1,4 +1,5 @@
 import Link from "next/link";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { VendorCode } from "@/components/VendorCode";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
@@ -179,6 +180,7 @@ const sections = [
       "Thymogen is not approved for human use in the US and is sold by specialty research peptide vendors for laboratory use only. Quality varies across vendors — verify a Certificate of Analysis before purchase.",
     node: (
       <div className="space-y-4">
+        <VendorHighlightBlock compoundSlug="thymogen" />
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
           <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">

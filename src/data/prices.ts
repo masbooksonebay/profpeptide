@@ -2,6 +2,7 @@ import { vendors } from "./vendors";
 import { generatedPriceEntries, GENERATED_PRICES_UPDATED, generatedVendorNames } from "./prices.generated";
 import { categoryOrder, libraryCategoryOf, hasProfile } from "./peptideCategories";
 import pricesIndex from "./prices.index.json";
+import { LISTED, PROVEN } from "./attribution";
 
 /**
  * Category assignment for price compounds NOT in the /peptides library taxonomy —
@@ -267,6 +268,36 @@ export function compoundRows(compoundSlug: string): PriceRow[] {
 /** Distinct non-retired vendors carrying a compound — the ungating count (≥3 → indexable). */
 export function compoundVendorCount(compoundSlug: string): number {
   return new Set(compoundRows(compoundSlug).map((r) => r.entry.vendor)).size;
+}
+
+/**
+ * The profile vendor block, DERIVED from price rows instead of hand-curated: the LISTED
+ * (attribution-proven/graced) vendors that demonstrably carry `compoundSlug` — i.e. have a
+ * real price row — ranked proven-tier → editor's pick → best deal → stable alpha, capped at
+ * `limit`. A price row proves the vendor stocks the compound, so this can never invent a
+ * pairing. Returns [] when the grid holds no LISTED vendor for the compound (notably blends /
+ * combos, which the per-compound grid doesn't track): the caller then falls back to any
+ * hand-curated highlights, and blends without curation render nothing.
+ */
+export function deriveHighlightVendors(compoundSlug: string, limit = 3): string[] {
+  const slugs = Array.from(new Set(compoundRows(compoundSlug).map((r) => r.entry.vendor))).filter(
+    (s) => LISTED.has(s),
+  );
+  slugs.sort((a, b) => {
+    const va = vendors[a];
+    const vb = vendors[b];
+    const provA = PROVEN.has(a) ? 0 : 1;
+    const provB = PROVEN.has(b) ? 0 : 1;
+    if (provA !== provB) return provA - provB;
+    const epA = va?.editorsPick ? 0 : 1;
+    const epB = vb?.editorsPick ? 0 : 1;
+    if (epA !== epB) return epA - epB;
+    const bdA = va?.bestDeal ? 0 : 1;
+    const bdB = vb?.bestDeal ? 0 : 1;
+    if (bdA !== bdB) return bdA - bdB;
+    return a.localeCompare(b);
+  });
+  return slugs.slice(0, limit);
 }
 
 /** Distinct non-retired vendors across the whole price dataset (for the master title). */

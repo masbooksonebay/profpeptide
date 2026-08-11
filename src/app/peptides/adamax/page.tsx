@@ -1,4 +1,5 @@
 import Link from "next/link";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import { activeVendorCount } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
@@ -338,6 +339,7 @@ const sections = [
       "Adamax is a niche compound sold by a small number of specialty research-peptide vendors as research-use-only material. Given the complete absence of published characterization, third-party testing (HPLC purity and mass-spectrometric identity) matters even more than usual — you are relying entirely on the vendor's documentation to know what the material is.",
     node: (
       <div className="space-y-4">
+        <VendorHighlightBlock compoundSlug="adamax" />
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prefer vendors that publish batch-specific Certificates of Analysis with both purity and identity data. Because there is no reference literature for Adamax, an identity confirmation (mass spectrometry) is the only way a vendor can substantiate what the compound actually is.
         </p>

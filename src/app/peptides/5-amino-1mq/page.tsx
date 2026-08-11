@@ -1,4 +1,5 @@
 import Link from "next/link";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
@@ -155,7 +156,7 @@ const sections = [
       "5-Amino-1MQ is an unapproved research chemical sold by specialty research vendors for laboratory use only. Quality varies across vendors; verify a Certificate of Analysis before purchase.",
     node: (
       <div className="space-y-4">
-        {/* TODO: add a VendorHighlightBlock here once 5-Amino-1MQ vendors are wired into the vendor data. Do NOT add a fabricated carrier/note or invent a code in the meantime — use the inline /coupons link below until vendors are added. */}
+        <VendorHighlightBlock compoundSlug="5-amino-1mq" />
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prof. Peptide maintains a vetted list of peptide and research-compound vendors with verified discount codes. See{" "}
           <Link href="/coupons" className="text-[#3A759F] hover:underline">

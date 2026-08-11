@@ -44,8 +44,24 @@ if (!(LISTED instanceof Set) || LISTED.size === 0) {
   process.exit(1);
 }
 
+// Price data: which LISTED vendors demonstrably carry each compound (a price row), and which
+// compounds are indexable (>=3 price vendors → a /prices page + CTA). Drives the research list.
+const listedPriceVendors = {}; // compound -> Set of LISTED vendors with a price row
+{
+  const gen = readFileSync(join(root, "src/data/prices.generated.ts"), "utf8");
+  for (const m of gen.matchAll(/\{ compound: "([^"]+)",[^}]*? vendor: "([^"]+)"/g)) {
+    if (!LISTED.has(m[2])) continue;
+    (listedPriceVendors[m[1]] ??= new Set()).add(m[2]);
+  }
+}
+const indexable = new Set(
+  JSON.parse(readFileSync(join(root, "src/data/prices.index.json"), "utf8"))
+    .filter((c) => c.indexable)
+    .map((c) => c.slug),
+);
+const priceBacked = (slug) => (listedPriceVendors[slug]?.size ?? 0);
+
 const violations = [];
-const emptyProfiles = new Set();
 
 // ── surface 1: WhereToBuy (peptide-vendors.json) ────────────────────────────────
 const wtbPath = "src/data/peptide-vendors.json";
@@ -77,12 +93,26 @@ for (const slug of readdirSync(pepDir)) {
   }
 }
 
-// ── tracked backfill: profiles whose every vendor surface is empty ──────────────
-const allProfiles = new Set([...Object.keys(wtb), ...hasHb]);
-for (const p of allProfiles) {
-  const w = wtbSurvivors[p] ?? 0;
-  const h = hbSurvivors[p] ?? 0;
-  if (w + h === 0) emptyProfiles.add(p);
+// ── research list: profiles the price grid can't stock a vendor block for ────────
+// The vendor block is DERIVED from price rows. A compound with no LISTED price-row vendor
+// (notably blends/combos the per-compound grid doesn't track) renders either: its hand-curated
+// fallback (curation-only), a bare price CTA (cta-only, if indexable), or nothing at all. All
+// three are content gaps needing single-SKU vendor research (or the parked blend-price surface).
+const BLENDS = new Set([
+  "glow", "klow", "wolverine-stack", "aod-9604-mots-c", "semax-selank", "cagrisema",
+  "gh-stack", "kpv-bpc-157", "nad-mots-c-5-amino-1mq", "pt-141-oxytocin",
+  "semaglutide-bpc-157", "tesamorelin-ipamorelin", "tirzepatide-bpc-157",
+  "cjc-1295-dac-ipamorelin", "mk-677-ipamorelin", "sermorelin-ipamorelin",
+]);
+const research = { nothing: [], cta: [], curation: [] };
+for (const slug of readdirSync(pepDir)) {
+  if (!existsSync(join(pepDir, slug, "page.tsx"))) continue;
+  if (priceBacked(slug) > 0) continue; // derivation stocks the block — healthy
+  const curated = hbSurvivors[slug] ?? 0;
+  const tag = BLENDS.has(slug) ? " [blend/combo — parked price surface]" : "";
+  if (curated > 0) research.curation.push(`${slug}${tag}`);
+  else if (indexable.has(slug)) research.cta.push(`${slug}${tag}`);
+  else research.nothing.push(`${slug}${tag}`);
 }
 
 if (violations.length) {
@@ -95,8 +125,13 @@ if (violations.length) {
 
 console.log(`check:attribution OK — every promoted vendor is in LISTED (${LISTED.size} allowed).`);
 
-if (emptyProfiles.size) {
-  console.warn(`\n  ⚠ TRACKED BACKFILL — ${emptyProfiles.size} profile(s) have no attributed vendor to promote`);
-  console.warn(`    (block hidden by the floor rule; add a proven vendor to restore it):`);
-  console.warn(`    ${[...emptyProfiles].sort().join(", ")}`);
+const researchTotal = research.nothing.length + research.cta.length + research.curation.length;
+if (researchTotal) {
+  console.warn(`\n  ⚠ RESEARCH LIST — ${researchTotal} profile(s) have no price-row vendor to derive a block from:`);
+  if (research.nothing.length)
+    console.warn(`    renders nothing (needs vendor research): ${research.nothing.sort().join(", ")}`);
+  if (research.cta.length)
+    console.warn(`    price CTA only, no vendor cards: ${research.cta.sort().join(", ")}`);
+  if (research.curation.length)
+    console.warn(`    hand-curated fallback (not price-backed): ${research.curation.sort().join(", ")}`);
 }

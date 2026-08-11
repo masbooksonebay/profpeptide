@@ -387,7 +387,7 @@ const sections = [
     id: "where-to-buy",
     title: "Where to source IGF-1 DES",
     intro:
-      "IGF-1 DES is not FDA-approved for any human use and is sold only as a research-grade peptide. It is a niche compound with limited vendor coverage. In PP's vetted directory it is currently listed by the vendor highlighted below, which publishes batch certificates of analysis.",
+      "IGF-1 DES is not FDA-approved for any human use and is sold only as a research-grade peptide. It is a niche compound with limited vendor coverage — no vendor on PP's attribution-verified list is currently confirmed to carry it, so the panel below links to live price comparison across every vendor that stocks it rather than featuring a specific vendor.",
     node: (
       <div className="space-y-4">
         <VendorHighlightBlock compoundSlug="igf-1-des"
@@ -571,7 +571,7 @@ export default function Igf1DesPage() {
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> No validated human dosing protocol is established. The only quantified doses in the literature are animal (rodent subcutaneous infusion, ~1&ndash;2 mg/kg/day) and cell-culture nanomolar concentrations. Any human microgram figure circulating in community sources is not derived from published clinical evidence.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> IGF-1 DES is a niche research-grade compound. In PP&apos;s vetted directory it is currently listed by Swiss Chems. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> IGF-1 DES is a niche research-grade compound with limited coverage among vetted vendors. Compare current prices across the vendors that stock it, or see{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}
