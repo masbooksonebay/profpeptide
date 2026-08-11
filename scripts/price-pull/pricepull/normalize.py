@@ -40,7 +40,9 @@ def per_mg(base, mg):
 DISPLAY = {
     '5-amino-1mq': '5-Amino-1MQ', 'aod-9604': 'AOD-9604', 'bpc-157': 'BPC-157',
     'cagrilintide': 'Cagrilintide', 'cardiogen': 'Cardiogen', 'cibinetide': 'Cibinetide',
-    'cjc-1295': 'CJC-1295', 'cortagen': 'Cortagen', 'dsip': 'DSIP', 'epitalon': 'Epitalon',
+    'cjc-1295': 'CJC-1295',
+    'cjc-1295-dac': 'CJC-1295 (DAC)', 'cjc-1295-no-dac': 'CJC-1295 (no DAC) / Mod GRF 1-29',
+    'cortagen': 'Cortagen', 'dsip': 'DSIP', 'epitalon': 'Epitalon',
     'follistatin': 'Follistatin', 'ghk-cu': 'GHK-Cu', 'ghrp-2': 'GHRP-2', 'ghrp-6': 'GHRP-6',
     'glutathione': 'Glutathione', 'hexarelin': 'Hexarelin', 'igf-1-des': 'IGF-1 DES',
     'igf-1-lr3': 'IGF-1 LR3', 'ipamorelin': 'Ipamorelin', 'kisspeptin': 'Kisspeptin-10',
@@ -79,13 +81,15 @@ BLEND_COMPONENTS = {
     'klow': 'GHK-Cu/BPC-157/TB-500/KPV',
     'wolverine-stack': 'BPC-157/TB-500',
     'cjc-1295-dac-ipamorelin': 'CJC-1295/Ipamorelin',
+    'cjc-1295-no-dac-ipamorelin': 'CJC-1295/Ipamorelin',
     'tesamorelin-ipamorelin': 'Tesamorelin/Ipamorelin',
     'nad-mots-c-5-amino-1mq': 'NAD+/MOTS-C/5-Amino-1MQ',
     'ghk-cu-kpv': 'GHK-Cu/KPV',
 }
 BLEND_DISPLAY = {
     'glow': 'GLOW', 'klow': 'KLOW', 'wolverine-stack': 'Wolverine (BPC-157/TB-500)',
-    'cjc-1295-dac-ipamorelin': 'CJC-1295/Ipamorelin',
+    'cjc-1295-dac-ipamorelin': 'CJC-1295 (DAC)/Ipamorelin',
+    'cjc-1295-no-dac-ipamorelin': 'CJC-1295 (no DAC)/Ipamorelin',
     'tesamorelin-ipamorelin': 'Tesamorelin/Ipamorelin',
     'nad-mots-c-5-amino-1mq': 'NAD+/MOTS-C/5-Amino-1MQ',
     'ghk-cu-kpv': 'GHK-Cu/KPV',

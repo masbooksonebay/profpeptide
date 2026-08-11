@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
-import { PRICES_UPDATED_DATE, priceCompounds, compoundRows, compoundVendorCount, priceBlends, blendPriceRows, blendVendorCount, type BlendConfig } from "@/data/prices";
+import { PRICES_UPDATED_DATE, priceCompounds, compoundRows, compoundVendorCount, priceBlends, blendPriceRows, blendVendorCount, disambiguationForForm, type BlendConfig } from "@/data/prices";
 import { hasProfile } from "@/data/peptideCategories";
 import CompoundPriceTable from "@/components/CompoundPriceTable";
 import BlendPriceTable from "@/components/BlendPriceTable";
@@ -59,6 +59,7 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
   const c = lookup(params.compound);
   if (!c) notFound();
   const profiled = hasProfile(c.slug);
+  const family = disambiguationForForm(c.slug); // e.g. a CJC-1295 form → back to the /prices/cjc-1295 hub
 
   return (
     <div className="section max-w-4xl">
@@ -75,11 +76,18 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
       </p>
       <p className="text-sm text-gray-400 dark:text-slate-500 mb-4">Prices updated {PRICES_UPDATED_DATE}</p>
 
-      {profiled && (
+      {(profiled || family) && (
         <div className="flex flex-wrap items-center gap-4 mb-6 text-sm">
-          <Link href={`/peptides/${c.slug}`} className="text-[#3A759F] hover:underline font-medium">
-            Read the {c.name} research profile &rarr;
-          </Link>
+          {profiled && (
+            <Link href={`/peptides/${c.slug}`} className="text-[#3A759F] hover:underline font-medium">
+              Read the {c.name} research profile &rarr;
+            </Link>
+          )}
+          {family && (
+            <Link href={`/prices/${family.slug}`} className="text-[#3A759F] hover:underline font-medium">
+              {family.name}: compare all forms &rarr;
+            </Link>
+          )}
         </div>
       )}
 

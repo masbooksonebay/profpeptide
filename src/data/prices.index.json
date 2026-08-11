@@ -55,8 +55,13 @@
     "indexable": true
   },
   {
-    "slug": "cjc-1295",
-    "vendors": 27,
+    "slug": "cjc-1295-dac",
+    "vendors": 10,
+    "indexable": true
+  },
+  {
+    "slug": "cjc-1295-no-dac",
+    "vendors": 20,
     "indexable": true
   },
   {

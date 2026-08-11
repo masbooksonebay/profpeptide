@@ -161,6 +161,13 @@ const indexablePriceSlugs = new Set(
     .filter((c) => c.indexable)
     .map((c) => c.slug),
 );
+// Hardcoded static /prices/<slug> routes (e.g. the CJC-1295 disambiguation hub) are NOT in the
+// price index — they carry no rows — but they DO prerender an indexable page. Accept any
+// src/app/prices/<slug>/page.tsx dir (excluding the [compound] dynamic segment) as a valid target.
+for (const d of readdirSync(join(root, "src/app/prices"), { withFileTypes: true })) {
+  if (d.isDirectory() && !d.name.startsWith("[") && existsSync(join(root, "src/app/prices", d.name, "page.tsx")))
+    indexablePriceSlugs.add(d.name);
+}
 const redirectPaths = await loadRedirectPaths();
 
 // Per-family { linkPattern, resolver } table. resolve() returns how the link resolved

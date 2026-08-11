@@ -49,7 +49,8 @@ import re
 # PP profile slugs (the live /peptides/ profiles) + build backlog.
 PP_SLUGS = set("""
 5-amino-1mq adamax adipotide aod-9604 aod-9604-mots-c bpc-157 cagrilintide cagrisema
-cardiogen cibinetide cjc-1295 cjc-1295-dac-ipamorelin cortagen dsip epitalon follistatin
+cardiogen cibinetide cjc-1295 cjc-1295-dac cjc-1295-no-dac
+cjc-1295-dac-ipamorelin cjc-1295-no-dac-ipamorelin cortagen dsip epitalon follistatin
 gh-stack ghk-cu ghrp-2 ghrp-6 glow glutathione hexarelin igf-1-des igf-1-lr3 ipamorelin
 kisspeptin klow kpv kpv-bpc-157 ll-37 melanotan-i melanotan-ii mgf mk-677 mk-677-ipamorelin
 mots-c nad-mots-c-5-amino-1mq nad-plus oxytocin pda pinealon pt-141 pt-141-oxytocin

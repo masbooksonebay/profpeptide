@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
 import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
-import VendorHighlightBlock from "@/components/VendorHighlightBlock";
+import { priceDisambiguation, compoundVendorCount } from "@/data/prices";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 
@@ -422,15 +422,34 @@ const sections = [
     intro:
       "CJC-1295 is not FDA-approved and is sold only as a research-grade peptide. Verify whether you're buying with DAC or without DAC — labeling is sometimes inconsistent. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — with explicit DAC/no-DAC variant labeling noted.",
     node: (
+      // CJC-1295 is split into two DISTINCT priced compounds (DAC vs no-DAC / Mod GRF 1-29). This
+      // umbrella profile routes to the form-specific price comparison rather than asserting one form.
+      // NOTE (flagged for a content pass): the intro copy above still says "highlighted below" and the
+      // per-vendor curation was retired here — re-curate per form or reword when the copy is revisited.
       <div className="space-y-4">
-        <VendorHighlightBlock compoundSlug="cjc-1295"
-          highlights={[
-            { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
-            { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
-            { slug: "peptide-partners" },
-            { slug: "ascension-peptides", note: "No-DAC variant" },
-          ]}
-        />
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          Because the two forms are different molecules, compare vendors within the specific form you want:
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {priceDisambiguation("cjc-1295")!.forms.map((f) => {
+            const n = compoundVendorCount(f.slug);
+            return (
+              <Link
+                key={f.slug}
+                href={`/prices/${f.slug}`}
+                className="block rounded-xl border border-gray-200 dark:border-slate-700 p-4 hover:border-[#3A759F] transition"
+              >
+                <div className="flex items-baseline justify-between gap-2">
+                  <span className="font-semibold text-[#16181B] dark:text-slate-100">{f.label}</span>
+                  <span className="text-sm text-gray-400 dark:text-slate-500 whitespace-nowrap">
+                    {n} vendor{n === 1 ? "" : "s"}
+                  </span>
+                </div>
+                <span className="text-sm text-[#3A759F] font-medium mt-2 inline-block">Compare prices &rarr;</span>
+              </Link>
+            );
+          })}
+        </div>
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
           <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
