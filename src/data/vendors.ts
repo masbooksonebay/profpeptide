@@ -349,8 +349,10 @@ export const vendors: Record<string, Vendor> = {
     // No ISO/A2LA accreditation printed -> none stated. Kovera not new to PP (amino-x, glacier-aminos).
     // ⚠️ Cart/checkout is behind a "Wholesale Research Supply Portal" account login, so the in-cart code
     // AND the combined ?apply-promo=profpeptide&ref= URL are UNVERIFIED — using the plain ?ref= link
-    // until Mark confirms logged-in (see ONBOARDING_BACKLOG). Coded GLPs = ION-1S/2T/3R (tier convention
-    // Sema/Tirz/Reta), NOT decoded pending a Kovera COA read.
+    // until Mark confirms logged-in (see ONBOARDING_BACKLOG). Coded GLPs DECODED via Mark's first-hand
+    // confirmation (2026-08): ION-1S=Semaglutide, ION-2T=Tirzepatide, ION-3R=Retatrutide. Evidence tier =
+    // first-hand confirmation, NOT a certificate (same treatment as Real's GLYCON-X vial label); a future
+    // price-pull decoder should carry this forward.
     facts: { coa: "library", purityStandard: "99%+", labName: "Kovera Labs", testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin (LAL, ≤0.5 EU/mL), microbial sterility, heavy metals (As/Cd/Pb/Hg)" },
   },
   "oasis-labs": {

@@ -77,8 +77,8 @@ const ONBOARDING_BACKLOG = {
   "valkyrie-peptides":  { reason: "store hard login-walled 2026-08-09; no read-only price source + pre-wall prices self-contradicted — coupon-page-only, no grid", since: "2026-08-10" },
   // Onboarded 2026-08-10 (VETTED PASS; coupon page + registry live). Catalog + prices + 195-COA library
   // are PUBLIC (woo Store API works), so a price pull IS possible later. Held card-top for now. WHEN the
-  // grid lands: (1) decode the coded GLPs ION-1S/2T/3R (tier convention Sema/Tirz/Reta) from a Kovera COA
-  // before mapping — do not assert on the tier alone; (2) checkout is behind a "Wholesale Research Supply
+  // grid lands: (1) coded GLPs ION-1S=Semaglutide / ION-2T=Tirzepatide / ION-3R=Retatrutide — DECODED via
+  // Mark's first-hand confirmation (2026-08), so a decoder can map them directly; (2) checkout is behind a "Wholesale Research Supply
   // Portal" account login, so the in-cart code AND the combined ?apply-promo=profpeptide&ref= URL are
   // unproven — vendor.url is the plain ?ref= link until Mark confirms logged-in, then swap to combined;
   // (3) ⚠️ if the combined URL is adopted, note that VendorProductGrid's vendorDeepLink reconstructs

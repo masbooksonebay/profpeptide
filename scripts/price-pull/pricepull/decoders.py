@@ -18,6 +18,16 @@ NEVER from the code/permalink convention alone. If it cannot be confirmed, the
 row is written under the coded name with a "[coded, UNVERIFIED]" marker and NOT
 asserted as a mapping. Each decoder entry below records how it was confirmed.
 
+STANDING RULE — ASK MARK BEFORE LEAVING A CODE UNMAPPED (non-negotiable)
+--------------------------------------------------------
+When a coded compound can't be decoded from the evidence on hand, ASK MARK before
+writing it "[coded, UNVERIFIED]". He frequently knows first-hand — he has vials,
+has ordered from these vendors, and talks to them — and GLYCON-X, GLP3RT, and
+ION-1S/2T/3R all decoded immediately once he was asked. Leaving a code unmapped
+is correct ONLY after asking. Mark's first-hand confirmation (a vial label he's
+holding, a compound he's ordered) is a VALID evidence tier — record it as such
+(distinct from a certificate), the same way a read COA is recorded.
+
 THE GLP-1/2/3 TIER KEY (observed, CONSISTENT — corroboration only, never proof)
 --------------------------------------------------------
 Across every vendor that both uses the tier scheme AND has been independently
