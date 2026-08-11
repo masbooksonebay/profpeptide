@@ -227,7 +227,7 @@ const sections = [
             { slug: "aero-peptides", note: "Third-party ISO-lab tested · COA on request" },
             { slug: "ameano-peptides", note: "Published per-product COAs · third-party verified" },
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
-            { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
+            { slug: "peptide-partners" },
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">

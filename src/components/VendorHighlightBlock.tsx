@@ -104,8 +104,8 @@ export default function VendorHighlightBlock({ highlights, compoundSlug }: Vendo
                 {(v.editorsPick || v.bestDeal) && (
                   <div className="flex flex-wrap gap-1.5">
                     {v.editorsPick && (
-                      <span className="text-xs bg-[#eab308] text-[#1c1917] border border-[#ca8a04] px-2 py-0.5 rounded-full font-semibold">
-                        Editor&apos;s Pick
+                      <span className="text-xs bg-brand-pickBg text-brand-pickText border border-brand-pickBorder px-2 py-0.5 rounded-full font-semibold">
+                        Professor&apos;s Pick
                       </span>
                     )}
                     {v.bestDeal && (

@@ -494,7 +494,7 @@ const sections = [
       <div className="space-y-4">
         <VendorHighlightBlock compoundSlug="cagrisema"
           highlights={[
-            { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
+            { slug: "peptide-partners" },
             { slug: "ascension-peptides", note: "Sold as C-10/S-5 blend" },
             { slug: "vital-core-research", note: "Pre-blended 1:1 ratio" },
           ]}

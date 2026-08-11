@@ -206,7 +206,7 @@ const sections = [
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "ameano-peptides", note: "Published per-product COAs · third-party verified" },
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
-            { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
+            { slug: "peptide-partners" },
             { slug: "ascension-peptides" },
           ]}
         />

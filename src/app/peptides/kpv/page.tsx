@@ -423,7 +423,7 @@ const sections = [
         <VendorHighlightBlock compoundSlug="kpv"
           highlights={[
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
-            { slug: "peptide-partners", note: "Editor's Pick — 4-test purity program" },
+            { slug: "peptide-partners" },
             { slug: "integrative-peptides", note: "Oral capsules & spray — no injection needed" },
             { slug: "ascension-peptides" },
           ]}

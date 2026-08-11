@@ -16,6 +16,13 @@ module.exports = {
         brand: {
           DEFAULT: "#3A759F",
           hover: "#2E5E7F",
+          // "Professor's Pick" pill — a LIGHT TINT of the accent (fill) with DARK accent text,
+          // deliberately NOT a saturated fill: it must not compete with the saturated #3A759F
+          // discount pill on the same card. Derived from the #3A759F accent family (not a new
+          // hue). Text-on-fill contrast is 6.73:1 (WCAG AA ✓).
+          pickBg: "#EAF2F7",
+          pickText: "#2A5876",
+          pickBorder: "#C5DBE8",
         },
       },
       fontFamily: {
