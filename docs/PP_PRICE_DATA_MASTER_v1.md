@@ -107,26 +107,21 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
 | 5-Amino-1MQ | 10mg | $37.48 | $3.75 | $74.97 | ✓ | product/5-amino-1mq-10mg/ |
-| BPC-157 | — | $124.98 | — | $249.97 | ✗ | product/bpc-157-strips/ |
 | BPC-157 | 10mg | $49.98 | $5.00 | $99.97 | ✓ | product/bpc157-10mg/ |
 | Bronchogen [backlog] | 20mg | $34.98 | $1.75 | $69.97 | ✓ | product/bronchogen-20mg/ |
 | Cagrilintide | 5mg | $85.00 | $17.00 | $170.00 | ✓ | product/cagrilintide-amylin-analog/ |
 | Cardiogen | 20mg | $34.98 | $1.75 | $69.97 | ✓ | product/cardiogen-20mg/ |
 | Cartalax [backlog] | 20mg | $34.98 | $1.75 | $69.97 | ✓ | product/cartalax-20mg/ |
-| Cell Factors [backlog] | — | $449.50 | — | $899.00 | ✓ | product/cell-factors/ |
 | Chonluten [backlog] | 20mg | $34.98 | $1.75 | $69.97 | ✓ | product/chonluten-20mg/ |
 | Cibinetide | 15mg | $47.50 | $3.17 | $95.00 | ✓ | product/ara-290-15mg/ |
-| CJC-1295 | — | $99.98 | — | $199.97 | ✗ | product/cjc-1295-strips/ |
 | Cortagen | 20mg | $34.98 | $1.75 | $69.97 | ✓ | product/cortagen-20mg/ |
 | DSIP | 5mg | $27.98 | $5.60 | $55.97 | ✓ | product/dsip-5mg/ |
 | Epitalon | 20mg | $47.48 | $2.37 | $94.97 | ✓ | product/epithalon-20mg/ |
 | Follistatin | 10mg | $224.55 | $22.46 | $449.10 | ✗ | product/follistatin-subscription/ |
 | FOXO4-DRI [backlog] | 10mg | $137.49 | $13.75 | $274.97 | ✓ | product/foxo4-dri-10-mg/ |
-| GHK-Cu | — | $99.98 | — | $199.97 | ✗ | product/ghk-cu-strips/ |
 | GHK-Cu | 50mg | $42.48 | $0.85 | $84.97 | ✓ | product/ghk-cu-50mg/ |
 | Ipamorelin | 10mg | $39.98 | $4.00 | $79.97 | ✓ | product/ipamorelin-10mg/ |
 | Kisspeptin-10 | 10mg | $32.48 | $3.25 | $64.97 | ✓ | product/kisspeptin-10mg/ |
-| Klotho [backlog] | — | $125.00 | — | $250.00 | ✗ | product/klotho-single/ |
 | Klotho [backlog] | 20mcg | $249.50 | $12,475.00 | $499.00 | ✓ | product/klotho/ |
 | KPV | 10mg | $49.98 | $5.00 | $99.97 | ✓ | product/kpv-10mg/ |
 | Livagen [backlog] | 20mg | $39.98 | $2.00 | $79.97 | ✓ | product/livagen-20mg/ |
@@ -141,7 +136,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Pinealon | 20mg | $34.98 | $1.75 | $69.97 | ✓ | product/pinealon-20mg/ |
 | PNC-27 [backlog] | 10mg | $139.99 | $14.00 | $279.97 | ✓ | product/pnc-27-10mg/ |
 | Prostamax [backlog] | 20mg | $39.98 | $2.00 | $79.97 | ✓ | product/prostamax-20mg/ |
-| PT-141 | — | $99.98 | — | $199.97 | ✗ | product/pt-141-strips/ |
 | PT-141 | 5mg | $23.98 | $4.80 | $47.97 | ✓ | product/pt141-5mg/ |
 | Selank | 20mg | $67.48 | $3.37 | $134.97 | ✓ | product/n-acetyl-selank-amidate-20mg/ |
 | Semax | 20mg | $32.48 | $1.62 | $64.97 | ✓ | product/n-acetyl-semax-amidate-20mg/ |
@@ -150,7 +144,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tesamorelin | 10mg | $74.98 | $7.50 | $149.97 | ✓ | product/tesamorelin-10mg/ |
 | Testagen [backlog] | 20mg | $39.98 | $2.00 | $79.97 | ✓ | product/testagen-20mg/ |
 | Thymogen | 20mg | $39.98 | $2.00 | $79.97 | ✓ | product/thymagen-20mg/ |
-| Thymosin Alpha-1 | — | $124.98 | — | $249.97 | ✗ | product/thymosin-alpha-1-strips/ |
 | Thymosin Alpha-1 | 10mg | $64.98 | $6.50 | $129.97 | ✓ | product/thymosin-alpha-1-10mg/ |
 | Thymulin [backlog] | 10mg | $32.48 | $3.25 | $64.97 | ✓ | product/thymulin-peptide-10mg/ |
 | Vesilute [backlog] | 20mg | $42.48 | $2.12 | $84.97 | ✓ | product/vesilute-20mg/ |
@@ -912,9 +905,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
-| Epitalon | — | $150.00 | — | — | ✓ | product/epitalon-pinealon/ |
-| KPV | — | $150.00 | — | — | ✓ | product/kpv/ |
-| Thymogen | — | $150.00 | — | — | ✓ | product/thymogen-alpha-1/ |
 
 ### Sprays: none
 ### Excluded: oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
@@ -1614,13 +1604,11 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | BPC-157 | 2mg | $29.99 | $14.99 | — | ✓ | product/bpc-157/ |
 | BPC-157 | 5mg | $34.99 | $7.00 | — | ✓ | product/bpc-157/ |
 | BPC-157 | 10mg | $63.99 | $6.40 | — | ✓ | product/bpc-157/ |
-| Cagrilintide | — | $232.99 | — | — | ✓ | product/cagrilintide-glp3-blend/ |
 | Cagrilintide | 5mg | $79.99 | $16.00 | — | ✓ | product/cagrilintide/ |
 | Cagrilintide | 10mg | $159.99 | $16.00 | — | ✓ | product/cagrilintide/ |
 | CJC-1295 | 2mg | $40.99 | $20.50 | — | ✓ | product/cjc-1295-with-dac/ |
 | CJC-1295 | 5mg | $49.99 | $10.00 | — | ✓ | product/cjc-1295-no-dac/ |
 | CJC-1295 | 10mg | $89.99 | $9.00 | — | ✓ | product/cjc-1295-no-dac/ |
-| DSIP | — | $29.99 | — | — | ✓ | product/dsip/ |
 | Epitalon | 10mg | $34.99 | $3.50 | — | ✓ | product/epithalon/ |
 | Epitalon | 50mg | $99.99 | $2.00 | — | ✓ | product/epithalon/ |
 | GHK-Cu | 50mg | $39.99 | $0.80 | — | ✓ | product/ghk-cu/ |
@@ -1637,22 +1625,12 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GLP-3 [coded, UNVERIFIED] | 10mg | $128.99 | $12.90 | — | ✓ | product/glp-3/ |
 | GLP-3 [coded, UNVERIFIED] | 30mg | $220.99 | $7.37 | — | ✓ | product/glp-3/ |
 | GLP-3 [coded, UNVERIFIED] | 50mg | $298.99 | $5.98 | — | ✓ | product/glp-3/ |
-| Hexarelin | — | $44.99 | — | — | ✓ | product/hexarelin/ |
-| HGH Fragment 176-191 [backlog] | — | $49.99 | — | — | ✓ | product/hgh-frag-176-191/ |
-| IGF-1 LR3 | — | $99.99 | — | — | ✗ | product/igf-1-lr3/ |
 | Ipamorelin | 5mg | $34.99 | $7.00 | — | ✓ | product/ipamorelin/ |
 | Ipamorelin | 10mg | $68.99 | $6.90 | — | ✓ | product/ipamorelin/ |
-| Mazdutide [backlog] | — | $109.99 | — | — | ✓ | product/mazdutide/ |
-| MK-677 | — | $69.99 | — | — | ✓ | product/mk-677/ |
-| MOTS-C | — | $49.99 | — | — | ✓ | product/mots-c/ |
 | NAD+ | 100mg | $39.99 | $0.40 | — | ✓ | product/nad/ |
 | NAD+ | 500mg | $100.99 | $0.20 | — | ✓ | product/nad/ |
 | NAD+ | 1000mg | $150.99 | $0.15 | — | ✓ | product/nad/ |
-| PT-141 | — | $39.99 | — | — | ✓ | product/pt-141/ |
-| Selank | — | $49.99 | — | — | ✓ | product/selank/ |
-| Semax | — | $49.99 | — | — | ✓ | product/semax/ |
 | Sermorelin | 5mg | $44.99 | $9.00 | — | ✓ | product/sermorelin/ |
-| SNAP-8 [backlog] | — | $49.99 | — | — | ✓ | product/snap-8/ |
 | TB-500 | 2mg | $29.99 | $14.99 | — | ✓ | product/tb-500/ |
 | TB-500 | 5mg | $39.99 | $8.00 | — | ✓ | product/tb-500/ |
 | TB-500 | 10mg | $74.99 | $7.50 | — | ✓ | product/tb-500/ |

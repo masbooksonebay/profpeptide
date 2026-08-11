@@ -318,4 +318,5 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
     # parse to mg (should be 0 — build excludes them above; a non-zero here means a leak).
     emitted_sizeless = [r for r in singles if N.mg_value(r[1]) is None]
     return "\n".join(L), {"singles": len(singles), "blends": len(blends), "sprays": len(sprays),
+                          "catalog": len(products),
                           "nosize_dropped": nosize_dropped, "emitted_sizeless": emitted_sizeless}

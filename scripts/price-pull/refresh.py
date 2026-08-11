@@ -201,6 +201,23 @@ def main():
         except Exception as e:
             print(f"[err ] {slug}: {type(e).__name__}: {e}"); continue
         print(f"[ok  ] {slug}: {counts['singles']} singles, {counts['blends']} blends, {counts['sprays']} sprays")
+        # No-size drop report (Rule 4): every pull surfaces WHICH SKUs it dropped for lack of a
+        # parseable mg, so a size-less gap can't stay silent again (that is how la-peptides' whole
+        # bioregulator line — 20 SKUs — went uncounted). WARN-only, never blocks the pull (same
+        # severity model as check-grids' backlog warning). Threshold: > 3 SKUs OR > 15% of the
+        # vendor's catalog, whichever trips first.
+        dropped = counts.get("nosize_dropped", [])
+        if dropped:
+            catalog = counts.get("catalog", 0) or 1
+            frac = len(dropped) / catalog
+            loud = len(dropped) > 3 or frac > 0.15
+            flag = "  ⚠ HIGH no-size drop" if loud else ""
+            print(f"       no-size dropped: {len(dropped)} ({frac:.0%} of {catalog} products){flag}")
+            for d in dropped:
+                print(f"         - {d['name']}")
+            if loud:
+                print(f"       ⚠ {slug}: {len(dropped)} SKUs have no parseable size — a whole product "
+                      f"line may be missing from PP. Add mg to the SIZE_OVERRIDE map or confirm they're out of scope.")
         # Row-drop floor (backstop): with truncation now caught upstream by the X-WP-Total /
         # variation-fetch guards (IncompletePull), a COMPLETE pull that still returns materially
         # fewer singles than the doc is either a real delisting or a non-woo adapter regression
