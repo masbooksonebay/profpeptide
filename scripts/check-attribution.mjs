@@ -1,13 +1,15 @@
 // scripts/check-attribution.mjs — the profile-listing attribution guard.
 //
-// Peptide profiles promote vendors via two surfaces: WhereToBuy (src/data/peptide-vendors.json)
-// and VendorHighlightBlock (inline `highlights={[...]}` in each profile page). Both must promote
-// ONLY vendors in the attribution allowlist (src/data/attribution.ts → LISTED): a vendor whose
-// discount code works at checkout but credits nobody earns nothing and costs the click.
+// Peptide profiles promote vendors through VendorHighlightBlock. Its featured vendors are DERIVED
+// from price rows, but each page may still carry an inline `highlights={[...]}` prop as a note
+// source (and as the fallback vendor list for blends/combos the price grid can't track). Every
+// slug in that prop must be in the attribution allowlist (src/data/attribution.ts → LISTED): a
+// vendor whose discount code works at checkout but credits nobody earns nothing and costs the click.
 //
-// The components filter through LISTED at render, but that is invisible — a cut slug left in the
-// source lists would render nothing yet silently rot. This guard makes the SOURCE honest: it
-// FAILS (exit 1) if either surface lists a slug outside LISTED, naming the file and the slug.
+// The component filters through LISTED at render, but that is invisible — a cut slug left in a prop
+// would render nothing yet silently rot. This guard makes the SOURCE honest: it FAILS (exit 1) if
+// a profile's highlights prop lists a slug outside LISTED, naming the file and the slug.
+// (The dead WhereToBuy / peptide-vendors.json surface was removed; only inline highlights remain.)
 //
 // It also prints the TRACKED BACKFILL list: profiles whose vendor surfaces are now empty (block
 // hidden by the floor rule) and need a proven vendor added. That is a report, never a failure —
@@ -59,23 +61,18 @@ const indexable = new Set(
     .filter((c) => c.indexable)
     .map((c) => c.slug),
 );
+// Blends price on a separate total-price surface (blends.index.json). A blend with an indexable
+// price page renders a price CTA, so it is no longer a research-list content gap.
+const blendIndexable = new Set(
+  JSON.parse(readFileSync(join(root, "src/data/blends.index.json"), "utf8"))
+    .filter((b) => b.indexable)
+    .map((b) => b.slug),
+);
 const priceBacked = (slug) => (listedPriceVendors[slug]?.size ?? 0);
 
 const violations = [];
 
-// ── surface 1: WhereToBuy (peptide-vendors.json) ────────────────────────────────
-const wtbPath = "src/data/peptide-vendors.json";
-const wtb = JSON.parse(readFileSync(join(root, wtbPath), "utf8")).peptides;
-const wtbSurvivors = {};
-for (const [pep, entry] of Object.entries(wtb)) {
-  const slugs = (entry.vendors || []).map((e) => e.slug);
-  wtbSurvivors[pep] = slugs.filter((s) => LISTED.has(s)).length;
-  for (const s of slugs) {
-    if (!LISTED.has(s)) violations.push(`${wtbPath} — peptide "${pep}" lists non-attributed vendor "${s}"`);
-  }
-}
-
-// ── surface 2: VendorHighlightBlock (inline highlights in each profile page) ─────
+// ── VendorHighlightBlock: inline highlights (note source + blend/combo fallback) ─
 const pepDir = join(root, "src/app/peptides");
 const hbSurvivors = {};
 const hasHb = new Set();
@@ -108,6 +105,7 @@ const research = { nothing: [], cta: [], curation: [] };
 for (const slug of readdirSync(pepDir)) {
   if (!existsSync(join(pepDir, slug, "page.tsx"))) continue;
   if (priceBacked(slug) > 0) continue; // derivation stocks the block — healthy
+  if (blendIndexable.has(slug)) continue; // blend price surface resolves it (CTA renders)
   const curated = hbSurvivors[slug] ?? 0;
   const tag = BLENDS.has(slug) ? " [blend/combo — parked price surface]" : "";
   if (curated > 0) research.curation.push(`${slug}${tag}`);

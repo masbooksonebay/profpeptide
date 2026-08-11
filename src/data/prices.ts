@@ -3,6 +3,8 @@ import { generatedPriceEntries, GENERATED_PRICES_UPDATED, generatedVendorNames }
 import { categoryOrder, libraryCategoryOf, hasProfile } from "./peptideCategories";
 import pricesIndex from "./prices.index.json";
 import { LISTED, PROVEN } from "./attribution";
+import { generatedBlendEntries } from "./prices.blends.generated";
+import blendsIndex from "./blends.index.json";
 
 /**
  * Category assignment for price compounds NOT in the /peptides library taxonomy —
@@ -327,6 +329,102 @@ export function priceCompounds(): { slug: string; name: string }[] {
     }
   }
   return out;
+}
+
+// ── BLEND price surface (total price at a standard config; NOT $/mg) ─────────────────────────
+// Blends are multi-compound products; $/mg is meaningless across different ratios, so they are
+// priced on a SEPARATE track: the total price at the blend's modal configuration. Structurally
+// distinct from PriceEntry so no $/mg grid or guard misreads them. Data: prices.blends.generated.ts.
+export interface BlendPriceEntry {
+  /** blend slug — matches a /peptides/<blend> profile (glow, klow, wolverine-stack, …) */
+  blend: string;
+  /** display name for the blend */
+  blendName: string;
+  /** vendor key — must match a key in vendors.ts */
+  vendor: string;
+  /** the modal configuration this row is priced at, e.g. "70mg" (total mg across components) */
+  config: string;
+  /** total price in USD at `config`, before the PP code */
+  totalPrice: number;
+  inStock: boolean;
+}
+
+export const blendEntries: BlendPriceEntry[] = generatedBlendEntries;
+
+interface BlendIndexRow { slug: string; config: string; vendors: number; indexable: boolean }
+const blendIndexRows = blendsIndex as BlendIndexRow[];
+
+/** Rows for one blend at its modal config, non-retired, sorted by total price ascending. */
+export function blendRows(blendSlug: string): BlendPriceEntry[] {
+  return blendEntries
+    .filter((e) => e.blend === blendSlug && !isRetired(e.vendor))
+    .sort((a, b) => a.totalPrice - b.totalPrice);
+}
+
+export interface BlendRow {
+  entry: BlendPriceEntry;
+  vendorName: string;
+  isAffiliate: boolean;
+  couponPage: string | null;
+  affiliateUrl: string | null;
+  code: string;
+  discountPct: number;
+  totalPrice: number;
+  /** total price after the vendor's code (affiliates only; == totalPrice for non-affiliates) */
+  codePrice: number;
+  /** the price we rank on: with-code for affiliates, total for non-affiliates */
+  effectivePrice: number;
+  inStock: boolean;
+}
+
+/** Enriched blend rows (vendor identity + with-code price) for the blend price table. */
+export function blendPriceRows(blendSlug: string): BlendRow[] {
+  return blendRows(blendSlug)
+    .map((entry) => {
+      const v = vendors[entry.vendor];
+      const affiliate = isAffiliateVendor(entry.vendor);
+      const discountPct = affiliate ? vendorDiscountPct(entry.vendor) : 0;
+      const codePrice = Math.round(entry.totalPrice * (1 - discountPct / 100) * 100) / 100;
+      return {
+        entry,
+        vendorName: v?.name ?? generatedVendorNames[entry.vendor] ?? entry.vendor,
+        isAffiliate: affiliate,
+        couponPage: affiliate ? (v?.detailPage ?? null) : null,
+        affiliateUrl: affiliate ? (v?.url ?? null) : null,
+        code: affiliate ? (v?.code ?? "") : "",
+        discountPct,
+        totalPrice: entry.totalPrice,
+        codePrice,
+        effectivePrice: affiliate ? codePrice : entry.totalPrice,
+        inStock: entry.inStock,
+      };
+    })
+    .sort((a, b) => a.effectivePrice - b.effectivePrice);
+}
+
+/** Distinct non-retired vendors pricing a blend at its modal config (≥3 → indexable /prices page). */
+export function blendVendorCount(blendSlug: string): number {
+  return new Set(blendRows(blendSlug).map((r) => r.vendor)).size;
+}
+
+/** True if the slug is a blend with its own price surface. */
+export function isBlendSlug(slug: string): boolean {
+  return blendIndexRows.some((b) => b.slug === slug);
+}
+
+/** The modal config string for a blend (e.g. "70mg"), or null if the slug isn't a blend. */
+export function blendConfig(slug: string): string | null {
+  return blendIndexRows.find((b) => b.slug === slug)?.config ?? null;
+}
+
+/** All blends that have a price surface — for /prices routing + the CTA gate. */
+export function priceBlends(): { slug: string; name: string; config: string; indexable: boolean }[] {
+  return blendIndexRows.map((b) => ({
+    slug: b.slug,
+    name: (blendEntries.find((e) => e.blend === b.slug)?.blendName ?? b.slug),
+    config: b.config,
+    indexable: b.indexable,
+  }));
 }
 
 export type Unit = "total" | "permg";

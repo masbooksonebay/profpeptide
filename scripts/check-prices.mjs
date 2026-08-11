@@ -122,4 +122,34 @@ if (uncheckedCompounds.length) {
   console.warn(`\n  UNCHECKED — no size reaches ${MIN_VENDORS} vendors, so no usable median (guard is blind here;`);
   console.warn(`  name-based kit detection is the only net): ${show}${more}`);
 }
+// ── BLEND plausibility — total price at the modal config (same N-x-median discipline) ─────────
+// Blend rows are all priced at one modal configuration, so total price is directly comparable
+// across vendors (no $/mg needed). Flag any total ≥ N× or ≤ 1/N× the same-blend median.
+const blendEntries = execModule("src/data/prices.blends.generated.ts").generatedBlendEntries;
+const blendGroups = new Map();
+for (const e of blendEntries) {
+  (blendGroups.get(e.blend) || blendGroups.set(e.blend, []).get(e.blend)).push(e);
+}
+const blendFlags = [];
+for (const [blend, rows] of blendGroups) {
+  if (new Set(rows.map((r) => r.vendor)).size < MIN_VENDORS) continue;
+  const med = median(rows.map((r) => r.totalPrice));
+  for (const r of rows) {
+    const ratio = r.totalPrice / med;
+    if (ratio >= N || ratio <= 1 / N) {
+      blendFlags.push({
+        vendor: r.vendor, blend, config: r.config, price: r.totalPrice, med,
+        ratio: ratio >= N ? `${ratio.toFixed(1)}x` : `1/${(1 / ratio).toFixed(1)}x`,
+      });
+    }
+  }
+}
+console.log(`  blends: ${blendFlags.length} implausible total-price row(s) across ${blendGroups.size} blend(s).`);
+if (blendFlags.length) {
+  console.warn(`\n  ⚠ BLEND price outliers (total price vs same-config peers — likely a wrong size/leak):`);
+  for (const f of blendFlags) {
+    console.warn(`    • ${f.vendor} ${f.blend} ${f.config} $${f.price} = ${f.ratio} the median $${f.med.toFixed(2)}`);
+  }
+}
+
 // Always succeed — warn, never fail.

@@ -60,7 +60,6 @@ const EXCLUDE = new Set(
     "src/data/vendors.slugs.json",
     "src/data/prices.generated.ts",
     "src/data/prices.index.json",
-    "src/data/peptide-vendors.json",
   ].map((p) => join(root, p))
 );
 
@@ -152,9 +151,13 @@ const hasTopPage = (seg) => existsSync(join(root, "src/app", seg, "page.tsx"));
 const vendors = loadVendors();
 const newsSlugs = loadNewsSlugs();
 // Compounds with an INDEXABLE /prices/<slug> page (>=3 vendors) — the set a literal /prices link may
-// point at. Derived from prices.index.json, the same source the render + sitemap gate on.
+// point at. Derived from prices.index.json + blends.index.json — the same sources the render +
+// sitemap gate on (blends price on a separate total-price surface but share the /prices/<slug> route).
 const indexablePriceSlugs = new Set(
-  JSON.parse(readFileSync(join(root, "src/data/prices.index.json"), "utf8"))
+  [
+    ...JSON.parse(readFileSync(join(root, "src/data/prices.index.json"), "utf8")),
+    ...JSON.parse(readFileSync(join(root, "src/data/blends.index.json"), "utf8")),
+  ]
     .filter((c) => c.indexable)
     .map((c) => c.slug),
 );

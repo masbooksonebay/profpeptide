@@ -1,4 +1,5 @@
 import Link from "next/link";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
@@ -532,6 +533,7 @@ export default function WolverineStackPage() {
             </Link>{" "}
             for current options.
           </p>
+          <VendorHighlightBlock compoundSlug="wolverine-stack" />
         </div>
       </div>
 

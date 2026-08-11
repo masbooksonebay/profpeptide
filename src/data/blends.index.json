@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "glow",
+    "config": "70mg",
+    "vendors": 19,
+    "indexable": true
+  },
+  {
+    "slug": "klow",
+    "config": "80mg",
+    "vendors": 23,
+    "indexable": true
+  },
+  {
+    "slug": "tesamorelin-ipamorelin",
+    "config": "10mg",
+    "vendors": 5,
+    "indexable": true
+  },
+  {
+    "slug": "wolverine-stack",
+    "config": "10mg",
+    "vendors": 20,
+    "indexable": true
+  }
+]

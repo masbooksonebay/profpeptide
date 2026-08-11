@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { vendors } from "@/data/vendors";
 import { CopyCode } from "@/components/CopyCode";
-import { compoundVendorCount, deriveHighlightVendors } from "@/data/prices";
+import { compoundVendorCount, deriveHighlightVendors, isBlendSlug, blendVendorCount } from "@/data/prices";
 import { LISTED } from "@/data/attribution";
 
 export interface VendorHighlight {
@@ -41,8 +41,14 @@ export default function VendorHighlightBlock({ highlights, compoundSlug }: Vendo
       ? derived.map((slug) => ({ slug, note: highlights?.find((h) => h.slug === slug)?.note }))
       : (highlights ?? []).filter((h) => LISTED.has(h.slug));
 
-  // CTA is decoupled from the block: it depends only on the compound being indexable.
-  const vendorCount = compoundSlug ? compoundVendorCount(compoundSlug) : 0;
+  // CTA is decoupled from the block: it depends only on the compound being indexable. Blends
+  // price on a separate total-price surface (blendVendorCount), single compounds on $/mg.
+  const isBlend = compoundSlug ? isBlendSlug(compoundSlug) : false;
+  const vendorCount = compoundSlug
+    ? isBlend
+      ? blendVendorCount(compoundSlug)
+      : compoundVendorCount(compoundSlug)
+    : 0;
   const showCta = !!compoundSlug && vendorCount >= 3;
 
   // Nothing to say: no vendors and not indexable → render nothing (blends with no curation).

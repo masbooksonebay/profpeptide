@@ -1,4 +1,5 @@
 import Link from "next/link";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
@@ -529,6 +530,7 @@ export default function KLOWPage() {
             </Link>{" "}
             for current options.
           </p>
+          <VendorHighlightBlock compoundSlug="klow" />
         </div>
       </div>
 

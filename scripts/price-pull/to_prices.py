@@ -66,6 +66,31 @@ CODED_DECODE = {
     "nextgen-peptides":    {"GLP-3": "retatrutide"},
 }
 
+# --- BLEND price surface (total price at a standard config, NOT $/mg) ---------
+# Blends are multi-compound products; $/mg is meaningless across different ratios, so they are
+# excluded from the single-compound track and priced separately: compare the TOTAL price at the
+# blend's MODAL configuration (the most common Total-mg across vendors). Maps a doc blend base
+# name (parenthetical components stripped) -> the profile slug it backs. Only blends that map to a
+# real profile AND have a clear modal config with >=3 vendors become an indexable /prices page.
+#   Deliberately UNMAPPED (reported, never force-mapped):
+#     "CJC-1295/Ipamorelin"  — the doc doesn't distinguish DAC vs no-DAC; the profile is
+#                              cjc-1295-dac-ipamorelin. DAC-specificity UNVERIFIED -> excluded.
+#     backlog/coded/1-row blends (Beauty, Deadpool, PG-3RT+C, Reta/Cagri, Tirz/Reta, GLP-3R…) —
+#                              single-vendor or unverified; not a comparison surface.
+BLEND_MAP = {
+    "GLOW": "glow",
+    "KLOW": "klow",
+    "Wolverine": "wolverine-stack",
+    "Tesamorelin/Ipamorelin": "tesamorelin-ipamorelin",
+    "NAD+/MOTS-C/5-Amino-1MQ": "nad-mots-c-5-amino-1mq",
+}
+
+def blend_base_name(raw):
+    """Strip parenthetical components + [tags] from a doc blend name -> the BLEND_MAP key."""
+    n = re.sub(r"\s*\(.*?\)", "", raw)
+    n = re.sub(r"\s*\[.*?\]", "", n)
+    return n.strip()
+
 def slugify(name):
     s = name.lower().replace("+", "-plus")
     s = re.sub(r"[()/]", " ", s)
@@ -111,6 +136,7 @@ PRICES_UPDATED = pu.group(1).strip() if pu else "unknown"   # fallback only; ove
 secs = [s for s in re.split(r"\n(?=## VENDOR: )", doc) if s.startswith("## VENDOR:")]
 
 rows = []                 # kept single-compound entries
+blend_data_rows = []      # raw blend rows captured from every vendor's ### Blends table
 VENDOR_NAMES = {}         # slug -> doc display name (fallback for vendors absent from vendors.ts)
 VENDOR_PULLED = {}        # slug -> per-vendor pull date (for the honest MIN stamp)
 excl = {"blends": 0, "sprays": 0, "unverified_single": 0, "nosize_single": 0, "noprice_single": 0,
@@ -138,7 +164,8 @@ for s in secs:
             except ValueError:
                 pass
 
-    # count blend / spray data rows (excluded categories)
+    # count blend / spray data rows (excluded from the $/mg single-compound track), and
+    # CAPTURE blend rows for the separate total-price blend surface (see BLEND_MAP below).
     for hdr, key in [("### Blends", "blends"), ("### Sprays / strips", "sprays")]:
         block = re.search(re.escape(hdr) + r".*?(?=\n### |\n## |\Z)", s, re.S)
         if block:
@@ -148,6 +175,13 @@ for s in secs:
                     if any(x in c[0].lower() for x in ("blend", "product")):
                         continue
                     excl[key] += 1
+                    # Blends table: | Blend | Components | Total mg | Base | Ratio | Stock |
+                    if key == "blends" and vslug and len(c) >= 4:
+                        blend_data_rows.append({
+                            "vendor": vslug, "raw_name": c[0], "components": c[1],
+                            "size_cell": c[2], "base_cell": c[3],
+                            "stock_cell": c[5] if len(c) >= 6 else "",
+                        })
 
     # singles block
     blk = re.search(r"### Single compounds.*?(?=\n### |\n## |\Z)", s, re.S)
@@ -330,16 +364,83 @@ for r in rows:
 index = [{"slug": c, "vendors": len(vs), "indexable": len(vs) >= 3} for c, vs in sorted(_cc.items())]
 index_text = json.dumps(index, indent=2) + "\n"
 
+# --- BLEND surface: total price at the modal config (kept separate from $/mg rows) -----------
+from collections import Counter as _Counter
+BLEND_OUT = ROOT / "src" / "data" / "prices.blends.generated.ts"
+BLEND_INDEX_OUT = ROOT / "src" / "data" / "blends.index.json"
+_blend_groups = _dd(list)          # profile slug -> [{vendor, mg, price, inStock}]
+blend_unmapped = _Counter()        # doc blend base name -> count (reported, not emitted)
+for br in blend_data_rows:
+    base_name = blend_base_name(br["raw_name"])
+    slug = BLEND_MAP.get(base_name)
+    if slug is None:
+        blend_unmapped[base_name] += 1
+        continue
+    if br["vendor"] in RETIRED:
+        continue
+    mg = N.mg_value(br["size_cell"])
+    price = parse_base(br["base_cell"])
+    if mg is None or price is None:        # no comparable config/price
+        continue
+    _blend_groups[slug].append({
+        "vendor": br["vendor"], "mg": mg, "price": price,
+        "inStock": "no" not in br["stock_cell"].lower(),
+    })
+
+blend_rows_out = []                 # emitted BlendPriceEntry rows (at modal config)
+blend_index = []                    # {slug, config, vendors, indexable}
+blend_no_modal = []                 # slugs skipped for lack of a modal config (reported)
+blend_config_report = []            # (slug, config, n_vendors, total_at_slug) for the report
+for slug, items in sorted(_blend_groups.items()):
+    mg_counts = _Counter(round(i["mg"], 4) for i in items)
+    top_mg, top_n = mg_counts.most_common(1)[0]
+    # A modal config needs >=2 vendors sharing it; otherwise every vendor is a different
+    # configuration and a total-price comparison would be apples-to-oranges — skip + report.
+    if top_n < 2:
+        blend_no_modal.append((slug, dict(mg_counts)))
+        continue
+    at_modal = [i for i in items if round(i["mg"], 4) == top_mg]
+    # lowest total price per vendor at the modal config
+    by_vendor = {}
+    for i in at_modal:
+        if i["vendor"] not in by_vendor or i["price"] < by_vendor[i["vendor"]]["price"]:
+            by_vendor[i["vendor"]] = i
+    cfg = (str(int(top_mg)) if float(top_mg).is_integer() else str(top_mg)) + "mg"
+    for v, i in sorted(by_vendor.items()):
+        blend_rows_out.append({
+            "blend": slug, "blendName": slug.replace("-", " ").title(),
+            "vendor": v, "config": cfg, "totalPrice": i["price"], "inStock": i["inStock"],
+        })
+    n = len(by_vendor)
+    blend_index.append({"slug": slug, "config": cfg, "vendors": n, "indexable": n >= 3})
+    blend_config_report.append((slug, cfg, n, len(items)))
+
+_bl = ["// ⚠️ GENERATED FILE — DO NOT EDIT BY HAND.",
+       "// Produced by scripts/price-pull/to_prices.py from docs/PP_PRICE_DATA_MASTER_v1.md.",
+       "// The BLEND price surface: total price at each blend's modal configuration. Kept in a",
+       "// SEPARATE file/type from the $/mg single-compound rows so no grid or guard misreads them.",
+       'import type { BlendPriceEntry } from "./prices";', "",
+       "export const generatedBlendEntries: BlendPriceEntry[] = ["]
+for r in blend_rows_out:
+    _bl.append("  { " + ", ".join(f"{k}: {ts_val(r[k])}" for k in
+               ("blend", "blendName", "vendor", "config", "totalPrice", "inStock")) + " },")
+_bl += ["];", ""]
+blends_text = "\n".join(_bl) + "\n"
+blends_index_text = json.dumps(blend_index, indent=2) + "\n"
+
 # --emit MODE (for check:prices-sync): print the artifact to stdout, write NOTHING, no report.
 # The transform is deterministic (PRICES_UPDATED comes from the doc, not today's date), so the
 # guard can diff this stdout against the committed file for an exact drift check.
 if "--emit" in sys.argv:
     what = sys.argv[sys.argv.index("--emit") + 1] if sys.argv.index("--emit") + 1 < len(sys.argv) else "prices"
-    sys.stdout.write(prices_text if what == "prices" else index_text)
+    sys.stdout.write({"prices": prices_text, "index": index_text,
+                      "blends": blends_text, "blends-index": blends_index_text}.get(what, prices_text))
     sys.exit(0)
 
 OUT.write_text(prices_text)
 INDEX_OUT.write_text(index_text)
+BLEND_OUT.write_text(blends_text)
+BLEND_INDEX_OUT.write_text(blends_index_text)
 
 # --- report ------------------------------------------------------------------
 print(f"PRICES_UPDATED (oldest rendering vendor's pull date): {PRICES_UPDATED}")

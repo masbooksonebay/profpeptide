@@ -1,4 +1,5 @@
 import Link from "next/link";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
@@ -547,6 +548,7 @@ export default function GLOWPage() {
             </Link>{" "}
             for current options.
           </p>
+          <VendorHighlightBlock compoundSlug="glow" />
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Related supplements:</span>{" "}
             <a href="https://www.amazon.com/s?k=skin+anti+aging+supplements&tag=profpeptide-20" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">

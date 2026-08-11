@@ -24,6 +24,8 @@ const toPrices = join(root, "scripts/price-pull/to_prices.py");
 const targets = [
   { emit: "prices", file: "src/data/prices.generated.ts" },
   { emit: "index", file: "src/data/prices.index.json" },
+  { emit: "blends", file: "src/data/prices.blends.generated.ts" },
+  { emit: "blends-index", file: "src/data/blends.index.json" },
 ];
 
 let drift = false;
