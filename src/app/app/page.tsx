@@ -80,7 +80,7 @@ export default function AppPage() {
         </p>
         <div className="panel-card p-8 max-w-sm mx-auto text-center">
           <Image
-            src="/icon-512.png"
+            src="/logo-glasses.png"
             alt="Prof. Peptide"
             width={72}
             height={72}
