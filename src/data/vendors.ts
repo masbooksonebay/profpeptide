@@ -561,8 +561,8 @@ export const vendors: Record<string, Vendor> = {
   },
   "nura-peptide": {
     name: "Nura Peptide",
-    code: "PROFPEPTIDE15",
-    discount: "15% off",
+    code: "PROFPEPTIDE",
+    discount: "20% off",
     region: "US",
     url: "https://nurapeptide.com/?ref=profpeptide",
     detailPage: "/coupons/nura-peptide",
