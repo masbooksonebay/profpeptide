@@ -97,23 +97,27 @@ function loadAssets(): Promise<Assets> {
 // ---- shared building blocks ------------------------------------------------
 
 function LogoLockup() {
-  // Vector logo — drawn directly so it stays crisp at any resample (a raster
-  // mark aliased on Satori downscale). Rounded-rect outline + "Pp".
+  // Vector logo — drawn directly so it stays crisp at any resample (a raster mark
+  // aliases on Satori downscale). The arms-glasses brand mark (temple bars to the
+  // edges, angular bridge), recolored to the card's cyan accent, + the wordmark.
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          width: 66,
-          height: 66,
-          borderRadius: 18,
-          border: `3px solid ${ACCENT}`,
-        }}
+      <svg
+        width={82}
+        height={36}
+        viewBox="0 0 100 44"
+        fill="none"
+        stroke={ACCENT}
+        strokeWidth={5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
-        <div style={{ display: "flex", fontSize: 40, fontWeight: 800, color: ACCENT, letterSpacing: -1.5 }}>Pp</div>
-      </div>
+        <circle cx="26" cy="24" r="16.5" />
+        <circle cx="74" cy="24" r="16.5" />
+        <path d="M9.5 18 L1 20.5" />
+        <path d="M90.5 18 L99 20.5" />
+        <path d="M43 21 L48 13.5 L52 13.5 L57 21" />
+      </svg>
       <div
         style={{
           marginLeft: 16,
@@ -407,9 +411,10 @@ const NEWS_ACCENT = "#3A759F";
 const NEWS_HAIRLINE = "#D9DEE4";
 const NEWS_MUTED = "#6B7280";
 
-// Fonts + the Pp mark tile (public/pp-mark.png — the approved 1254² opaque dark
-// square; a dark tile is exactly what the white card wants). Read from disk and
-// bundled for /news/** via outputFileTracingIncludes in next.config.js — keep in sync.
+// Fonts + the brand mark tile (public/logo-glasses.png — the arms-glasses mark,
+// 1254² opaque, flattened to #3A759F; a solid tile is exactly what the white card
+// wants). Read from disk and bundled for /news/** via outputFileTracingIncludes in
+// next.config.js — keep in sync.
 interface NewsAssets {
   mark: string;
   fonts: Assets["fonts"];
@@ -420,7 +425,7 @@ function loadNewsAssets(): Promise<NewsAssets> {
     newsAssetsPromise = (async () => {
       const root = process.cwd();
       const [mark, regular, medium, bold, extraBold] = await Promise.all([
-        readFile(join(root, "public/pp-mark.png")),
+        readFile(join(root, "public/logo-glasses.png")),
         readFile(join(root, "public/fonts/Inter-Regular.ttf")),
         readFile(join(root, "public/fonts/Inter-Medium.ttf")),
         readFile(join(root, "public/fonts/Inter-Bold.ttf")),
