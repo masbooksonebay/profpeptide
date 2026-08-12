@@ -30,7 +30,7 @@
   {
     "slug": "ameano-peptides",
     "name": "Ameano Peptides",
-    "code": "PROF10",
+    "code": "PROFPEPTIDE",
     "discount": "10% off",
     "url": "https://ameanopeptides.com/?ref=hmvyvxhr"
   },
@@ -44,9 +44,9 @@
   {
     "slug": "amino-x",
     "name": "Amino X",
-    "code": "PROF15",
+    "code": "PROFPEPTIDE",
     "discount": "15% off",
-    "url": "https://aminox.net/?coupon=PROF15"
+    "url": "https://aminox.net/?coupon=PROFPEPTIDE"
   },
   {
     "slug": "amp-peptides",

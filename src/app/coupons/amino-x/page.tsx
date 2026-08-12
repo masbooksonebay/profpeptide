@@ -100,11 +100,11 @@ export default function AminoXCouponPage() {
             />
             <FAQItem
               q="Does Amino X have a discount code?"
-              a="Yes. Use code PROF15 at checkout to save 15% on any Amino X order. This code is verified and maintained by Prof. Peptide."
+              a="Yes. Use code PROFPEPTIDE at checkout to save 15% on any Amino X order. This code is verified and maintained by Prof. Peptide."
             />
             <FAQItem
               q="How do I use the Amino X discount code?"
-              a="Add your items to cart at aminox.net, proceed to checkout, and enter PROF15 in the discount code field. The 15% discount will be applied to your order total."
+              a="Add your items to cart at aminox.net, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 15% discount will be applied to your order total."
             />
             <FAQItem
               q="What testing does Amino X do?"
