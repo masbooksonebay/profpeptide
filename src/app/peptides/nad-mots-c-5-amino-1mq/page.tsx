@@ -515,7 +515,7 @@ export default function MetabolicBlendPage() {
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> NAD+ 50&ndash;100 mg SC once daily + MOTS-c 5&ndash;10 mg/week SC (split daily or alternate-day) + 5-Amino-1MQ ~50 mg/day (oral as standalone, or per vial ratio if combined SC). Combined vial products vary by vendor &mdash; verify per-component breakdown on Certificate of Analysis.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sold as a pre-blended lyophilized vial or as individual components by specialty research peptide vendors. None of the three components are FDA-approved as injectables. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> The three components (NAD+, MOTS-c, 5-Amino-1MQ) are sold by specialty research peptide vendors; our data does not confirm a pre-blended vial. None of the three components are FDA-approved as injectables. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}

@@ -291,15 +291,15 @@ const sections = [
     id: "stacks",
     title: "What does Semax stack well with?",
     intro:
-      "Semax's canonical pairing is Selank — the gold-standard cognitive-anxiolytic combination. BDNF/dopamine (Semax) + GABA/serotonin (Selank) creates balanced nootropic effect. Available as a pre-blended Semax-Selank product or dosed separately. Caffeine pairs anecdotally for amplified focus. BPC-157 and L-Theanine are compatible. Adequate sleep is essential — Semax effects are weakened by sleep deprivation.",
+      "Semax's canonical pairing is Selank — the gold-standard cognitive-anxiolytic combination. BDNF/dopamine (Semax) + GABA/serotonin (Selank) creates balanced nootropic effect — run as a Semax-Selank combination or dosed separately. Caffeine pairs anecdotally for amplified focus. BPC-157 and L-Theanine are compatible. Adequate sleep is essential — Semax effects are weakened by sleep deprivation.",
     node: (
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Selank (Semax-Selank Stack).</span> The gold standard pairing. Semax for cognitive enhancement (BDNF, dopamine) +{" "}
           <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>{" "}
-          for anxiolysis (GABA, serotonin) creates balanced nootropic effect. Most experienced users dose Semax in morning, Selank in afternoon/evening. Available as a pre-blended{" "}
+          for anxiolysis (GABA, serotonin) creates balanced nootropic effect. Most experienced users dose Semax in morning, Selank in afternoon/evening, or combined as the{" "}
           <Link href="/peptides/semax-selank" className="text-[#3A759F] hover:underline">Semax-Selank</Link>{" "}
-          product.
+          stack.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Caffeine.</span> Anecdotally combined for amplified focus, though no controlled studies on the combination.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

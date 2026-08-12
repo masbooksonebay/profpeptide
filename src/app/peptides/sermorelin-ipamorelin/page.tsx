@@ -179,7 +179,7 @@ const sections = [
             Vial formats and reconstitution math
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold">Common SKUs.</span> Sermorelin is typically sold in 2 mg or 5 mg lyophilized vials; Ipamorelin in 2 mg or 5 mg lyophilized vials. Some vendors offer a pre-blended Sermorelin + Ipamorelin vial (e.g., 5 mg total: 2 mg Sermorelin + 3 mg Ipamorelin, or equal-weight formulations). Check the vendor&apos;s label carefully for component weights.
+            <span className="font-semibold">Common SKUs.</span> Sermorelin comes in 2 mg or 5 mg lyophilized vials; Ipamorelin in 2 mg or 5 mg lyophilized vials. Our data does not confirm a pre-blended Sermorelin + Ipamorelin vial; if you use one, check the vendor&apos;s label carefully for component weights, as the ratio is not standardized.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
             <span className="font-semibold">Reconstitution.</span> Use bacteriostatic water for injection (BAC water). A standard approach: add 2 mL BAC water to a 2 mg Sermorelin vial (1 mg/mL = 1,000 mcg/mL), giving 10 units per 100 mcg dose on a U-100 insulin syringe. Add 2 mL BAC water to a 2 mg Ipamorelin vial (1 mg/mL), giving 20 units per 200 mcg dose. Swirl gently &mdash; do not shake &mdash; to avoid damaging the peptides.
@@ -643,7 +643,7 @@ export default function SermorelinIpamorelinPage() {
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> Sermorelin 100&ndash;300 mcg + Ipamorelin 200&ndash;300 mcg subcutaneously, pre-bed on an empty stomach, once daily (optional second dose post-workout). Titrate up from lower doses over weeks 1&ndash;2.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Typically sold as separate vials; some vendors offer a pre-blended Sermorelin + Ipamorelin vial. Neither component is FDA-approved at research-grade doses. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sermorelin and Ipamorelin are sold as separate vials by research peptide vendors; our data does not confirm a pre-blended combination. Neither component is FDA-approved at research-grade doses. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}

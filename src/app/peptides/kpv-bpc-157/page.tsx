@@ -182,7 +182,7 @@ const sections = [
             <span className="font-semibold">Example math for BPC-157 (5 mg vial).</span> Add 2.5 mL BAC water &rarr; 2 mg/mL (2,000 mcg/mL). Drawing 0.125 mL delivers 250 mcg; 0.25 mL delivers 500 mcg.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-            <span className="font-semibold">Pre-blended vials.</span> Some vendors sell KPV + BPC-157 as a pre-blended lyophilized vial. Check the per-component breakdown on the Certificate of Analysis before scaling doses &mdash; ratio varies by vendor.
+            <span className="font-semibold">Pre-blended vials.</span> If you use a pre-blended KPV + BPC-157 vial rather than separate vials, check the per-component breakdown on the Certificate of Analysis before scaling doses &mdash; the ratio is not standardized.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
             <span className="font-semibold">Stepping up to KLOW.</span> Researchers wanting to add GHK-Cu (collagen and gene modulation) and TB-500 (cellular migration and tissue repair) to their protocol step up to{" "}

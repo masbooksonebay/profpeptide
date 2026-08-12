@@ -295,7 +295,7 @@ const sections = [
     id: "stacks",
     title: "What does Selank stack well with?",
     intro:
-      "Selank's canonical pairing is Semax — the gold-standard cognitive-anxiolytic combination targeting complementary BDNF/dopamine + GABA/serotonin pathways. Available as a pre-blended Semax-Selank product or dosed separately (Semax morning, Selank later). L-Theanine adds further calm; BPC-157 and adaptogenic herbs are compatible. Caffeine pairs well — Selank counterbalances the jitter.",
+      "Selank's canonical pairing is Semax — the gold-standard cognitive-anxiolytic combination targeting complementary BDNF/dopamine + GABA/serotonin pathways — run as a Semax-Selank combination or dosed separately (Semax morning, Selank later). L-Theanine adds further calm; BPC-157 and adaptogenic herbs are compatible. Caffeine pairs well — Selank counterbalances the jitter.",
     node: (
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

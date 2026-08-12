@@ -174,7 +174,7 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           CJC-1295 DAC + Ipamorelin is administered as two separate subcutaneous injections on different schedules. The DAC&apos;s long half-life and Ipamorelin&apos;s short half-life are fundamentally incompatible with a fixed-ratio pre-blend &mdash; they are almost always purchased and dosed as separate vials. This is a key practical difference from the{" "}
           <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">no-DAC GH Stack</Link>
-          , which is commonly available as a pre-blended 1:1 vial.
+          , whose ~30-minute and ~2-hour component half-lives are compatible with a single-vial pre-blend.
         </p>
         <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
           CJC-1295 with DAC protocol:

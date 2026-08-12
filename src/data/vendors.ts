@@ -83,7 +83,7 @@ export const vendors: Record<string, Vendor> = {
   },
   "ameano-peptides": {
     name: "Ameano Peptides",
-    code: "PROF10",
+    code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
     url: "https://ameanopeptides.com/?ref=hmvyvxhr",
@@ -102,10 +102,10 @@ export const vendors: Record<string, Vendor> = {
   },
   "amino-x": {
     name: "Amino X",
-    code: "PROF15",
+    code: "PROFPEPTIDE",
     discount: "15% off",
     region: "US",
-    url: "https://aminox.net/?coupon=PROF15",
+    url: "https://aminox.net/?coupon=PROFPEPTIDE",
     detailPage: "/coupons/amino-x",
     facts: { coa: "per-batch", purityStandard: "99%+", labName: "Kovera Labs", testMethods: "RP-HPLC, LC-MS" },
   },
@@ -561,8 +561,8 @@ export const vendors: Record<string, Vendor> = {
   },
   "nura-peptide": {
     name: "Nura Peptide",
-    code: "PROFPEPTIDE15",
-    discount: "15% off",
+    code: "PROFPEPTIDE",
+    discount: "20% off",
     region: "US",
     url: "https://nurapeptide.com/?ref=profpeptide",
     detailPage: "/coupons/nura-peptide",
