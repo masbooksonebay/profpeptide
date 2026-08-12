@@ -26,6 +26,9 @@ export const PRICE_CATEGORY_OVERRIDES: Record<string, string> = {
   "igf-1-des": "Performance & Energy", mgf: "Performance & Energy",
   // Growth Hormone
   "ghrp-2": "Growth Hormone", "ghrp-6": "Growth Hormone", hexarelin: "Growth Hormone",
+  // CJC-1295 split into two DISTINCT molecules (different half-lives); profile-less priced
+  // compounds under the /peptides/cjc-1295 umbrella. /prices/cjc-1295 is a disambiguation hub.
+  "cjc-1295-dac": "Growth Hormone", "cjc-1295-no-dac": "Growth Hormone",
   // Cognitive & Nootropic
   adamax: "Cognitive & Nootropic", dihexa: "Cognitive & Nootropic",
   // Skin Health & Anti-Aging
@@ -39,6 +42,47 @@ export const PRICE_CATEGORY_OVERRIDES: Record<string, string> = {
   thymulin: "Bioregulators", vesilute: "Bioregulators", vesugen: "Bioregulators",
   vilon: "Bioregulators",
 };
+
+/**
+ * Price-surface disambiguation hubs: a generic slug (e.g. "cjc-1295") that resolves to
+ * two or more DISTINCT priced forms rather than a single price table. The site's own
+ * sources disagree about what bare "CJC-1295" means (compounds.ts aliases it to DAC; the
+ * price data puts 20/30 vendors on no-DAC), so /prices/cjc-1295 asserts neither — it stays
+ * an indexable page answering the generic query by showing BOTH forms. It never renders a
+ * merged price table (the forms are different molecules with different half-lives).
+ * Vendor counts are derived live from each form's rows, never hardcoded.
+ */
+export type PriceDisambiguationForm = { slug: string; label: string; blurb: string };
+export type PriceDisambiguation = { slug: string; name: string; note: string; forms: PriceDisambiguationForm[] };
+export const PRICE_DISAMBIGUATIONS: PriceDisambiguation[] = [
+  {
+    slug: "cjc-1295",
+    name: "CJC-1295",
+    note: "“CJC-1295” is sold in two forms that are different molecules with different half-lives — not two names for one thing. Compare prices within the form you actually want:",
+    forms: [
+      {
+        slug: "cjc-1295-no-dac",
+        label: "CJC-1295 (no DAC) / Mod GRF 1-29",
+        blurb: "Short-acting (~30-minute half-life). The form most research vendors carry.",
+      },
+      {
+        slug: "cjc-1295-dac",
+        label: "CJC-1295 (DAC)",
+        blurb: "The Drug Affinity Complex extends the half-life to roughly 6–8 days.",
+      },
+    ],
+  },
+];
+export function priceDisambiguations(): PriceDisambiguation[] {
+  return PRICE_DISAMBIGUATIONS;
+}
+export function priceDisambiguation(slug: string): PriceDisambiguation | null {
+  return PRICE_DISAMBIGUATIONS.find((d) => d.slug === slug) ?? null;
+}
+/** If `slug` is a form under a disambiguation hub, return that hub (for a "family" back-link). */
+export function disambiguationForForm(slug: string): PriceDisambiguation | null {
+  return PRICE_DISAMBIGUATIONS.find((d) => d.forms.some((f) => f.slug === slug)) ?? null;
+}
 
 /** Library category name for a compound, or the price-specific override. */
 export function categoryForCompound(slug: string): string | null {

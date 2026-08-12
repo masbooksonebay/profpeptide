@@ -123,6 +123,20 @@ def parse_base(cell):
     m = re.search(r"([0-9][0-9,]*\.?[0-9]*)", cell.replace(",", ""))
     return float(m.group(1)) if m else None
 
+def cjc_form(slug_cell):
+    """CJC-1295 DAC vs no-DAC (Mod GRF 1-29) are DIFFERENT molecules the doc lists under one
+    "CJC-1295" name; the form survives only in the vendor's product slug. Return 'no-dac' /
+    'dac' / None. no-DAC is checked FIRST (its slug also contains 'dac'). None -> the caller
+    DROPS the row (never guess a form)."""
+    s = (slug_cell or "").lower()
+    if not s or s in ("—", "-"):
+        return None
+    if re.search(r"no-?dac|w-?out-?dac|w-?o-?dac|without-?dac|mod-?grf", s):
+        return "no-dac"
+    if re.search(r"with-?dac|w-?dac|-dac", s):
+        return "dac"
+    return None
+
 # --- load registries ---------------------------------------------------------
 vt = VENDORS_TS.read_text()
 # vendor keys are top-level 2-space-indented entries opening an object — keys may be
@@ -152,10 +166,11 @@ blend_data_rows = []      # raw blend rows captured from every vendor's ### Blen
 VENDOR_NAMES = {}         # slug -> doc display name (fallback for vendors absent from vendors.ts)
 VENDOR_PULLED = {}        # slug -> per-vendor pull date (for the honest MIN stamp)
 excl = {"blends": 0, "sprays": 0, "unverified_single": 0, "nosize_single": 0, "noprice_single": 0,
-        "not_a_compound": 0, "editorial_scope": 0}
+        "not_a_compound": 0, "editorial_scope": 0, "cjc_unresolved": 0}
 doc_single_total = 0
 retired_row_count = 0
 unresolved = []           # STOP condition
+cjc_unresolved = []       # CJC-1295 rows whose slug doesn't state DAC/no-DAC — DROPPED, not guessed (report)
 unmapped_coded = []       # coded SKUs from the 3 GLP vendors with no confirmed mapping (report)
 decoded_count = 0         # coded rows successfully decoded (Part A)
 stray_paren = []          # verify the artifact is gone
@@ -187,12 +202,18 @@ for s in secs:
                     if any(x in c[0].lower() for x in ("blend", "product")):
                         continue
                     excl[key] += 1
-                    # Blends table: | Blend | Components | Total mg | Base | Ratio | Stock |
+                    # Blends table: | Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+                    # The 7th (Vendor Slug) column is NEW — present only in sections re-pulled since
+                    # build.py started emitting it. It's what lets the CJC-1295/Ipamorelin blend split
+                    # by DAC vs no-DAC (parity with the singles split); absent -> the row can't be
+                    # resolved and is dropped, never guessed. Committed rows predate it, so today this
+                    # is None everywhere and the blend split emits nothing until a re-pull.
                     if key == "blends" and vslug and len(c) >= 4:
                         blend_data_rows.append({
                             "vendor": vslug, "raw_name": c[0], "components": c[1],
                             "size_cell": c[2], "base_cell": c[3],
                             "stock_cell": c[5] if len(c) >= 6 else "",
+                            "vendor_slug": c[6] if len(c) >= 7 and c[6] not in ("—", "-") else None,
                         })
 
     # singles block
@@ -250,6 +271,18 @@ for s in secs:
         if slug in OUT_OF_SCOPE:
             excl["editorial_scope"] += 1
             continue
+
+        # CJC-1295: split the merged "cjc-1295" bucket into two DISTINCT compounds by the
+        # vendor's product slug (DAC vs no-DAC / Mod GRF 1-29 are different molecules with
+        # different half-lives). A row whose slug doesn't state the form is DROPPED, never
+        # defaulted. /prices/cjc-1295 stays as a disambiguation hub over the two.
+        if slug == "cjc-1295":
+            form = cjc_form(vendor_slug_cell)
+            if form is None:
+                cjc_unresolved.append((name, vendor_slug_cell or "—"))
+                excl["cjc_unresolved"] += 1
+                continue
+            slug = "cjc-1295-" + form   # cjc-1295-dac | cjc-1295-no-dac
 
         # no parseable mg size
         mg = N.mg_value(size_cell)
@@ -382,12 +415,24 @@ BLEND_OUT = ROOT / "src" / "data" / "prices.blends.generated.ts"
 BLEND_INDEX_OUT = ROOT / "src" / "data" / "blends.index.json"
 _blend_groups = _dd(list)          # profile slug -> [{vendor, mg, price, inStock}]
 blend_unmapped = _Counter()        # doc blend base name -> count (reported, not emitted)
+blend_cjc_unresolved = []          # CJC-1295/Ipamorelin rows whose slug doesn't state DAC/no-DAC — DROPPED
 for br in blend_data_rows:
     base_name = blend_base_name(br["raw_name"])
-    slug = BLEND_MAP.get(base_name)
-    if slug is None:
-        blend_unmapped[base_name] += 1
-        continue
+    # CJC-1295/Ipamorelin: DAC and no-DAC are different molecules (see the singles split). Resolve
+    # each row to a DISTINCT blend by the vendor's product slug; drop (never guess) rows whose slug
+    # doesn't state the form. Until the pull preserves the blend slug (build.py), vendor_slug is None
+    # everywhere -> every row drops -> no CJC/Ipa blend emits (no silently-merged two-molecule page).
+    if base_name == "CJC-1295/Ipamorelin":
+        form = cjc_form(br.get("vendor_slug"))
+        if form is None:
+            blend_cjc_unresolved.append((br["vendor"], br.get("vendor_slug") or "—"))
+            continue
+        slug = "cjc-1295-no-dac-ipamorelin" if form == "no-dac" else "cjc-1295-dac-ipamorelin"
+    else:
+        slug = BLEND_MAP.get(base_name)
+        if slug is None:
+            blend_unmapped[base_name] += 1
+            continue
     if br["vendor"] in RETIRED:
         continue
     mg = N.mg_value(br["size_cell"])
@@ -475,12 +520,20 @@ print(f"  excluded no-size single:    {excl['nosize_single']}")
 print(f"  excluded no-price single:   {excl['noprice_single']}")
 print(f"  excluded not-a-compound:    {excl['not_a_compound']}")
 print(f"  excluded editorial-scope:   {excl['editorial_scope']}")
+print(f"  excluded cjc-1295 unresolved (slug states no form — DROPPED, not guessed): {excl['cjc_unresolved']}")
+for v, sl in cjc_unresolved:
+    print(f"     {v}: slug {sl!r}")
 _ss = (len(rows) + excl['unverified_single'] + excl['nosize_single'] + excl['noprice_single']
-       + excl['not_a_compound'] + excl['editorial_scope'])
+       + excl['not_a_compound'] + excl['editorial_scope'] + excl['cjc_unresolved'])
 print(f"  singles arithmetic closes: {_ss==doc_single_total} "
       f"({len(rows)}+{excl['unverified_single']}+{excl['nosize_single']}+{excl['noprice_single']}"
-      f"+{excl['not_a_compound']}+{excl['editorial_scope']}={doc_single_total})")
+      f"+{excl['not_a_compound']}+{excl['editorial_scope']}+{excl['cjc_unresolved']}={doc_single_total})")
 print(f"non-single excluded (separate tracks): blends={excl['blends']} sprays={excl['sprays']}")
+if blend_cjc_unresolved:
+    print(f"CJC-1295/Ipamorelin blend rows DROPPED (slug doesn't state DAC/no-DAC — parked until the pull "
+          f"preserves the blend slug): {len(blend_cjc_unresolved)}")
+elif any(blend_base_name(br["raw_name"]) == "CJC-1295/Ipamorelin" for br in blend_data_rows):
+    print("CJC-1295/Ipamorelin blend: 0 rows carry a slug yet — split resolver live, emits nothing until a re-pull.")
 
 # --- sale reporting ----------------------------------------------------------
 sale_rows = [r for r in rows if r.get("onSale")]

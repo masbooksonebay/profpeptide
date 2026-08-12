@@ -302,7 +302,9 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
                 if key not in singles or base < singles[key][0]:   # min base per (compound,size)
                     singles[key] = cand
             elif kind == 'blend':
-                blends.append((disp, comps or '', size, f"${base:,.2f}", ratio, st))
+                # 7th col (Vendor Slug) — parity with singles; lets to_prices.py split the
+                # CJC-1295/Ipamorelin blend by DAC vs no-DAC. "—" when the adapter exposes no slug.
+                blends.append((disp, comps or '', size, f"${base:,.2f}", ratio, st, vslug or "—"))
             elif kind == 'spray':
                 sprays.append((disp, size, f"${base:,.2f}", st))
 
@@ -325,7 +327,7 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
     L.append("")
     if blends:
         L.append("### Blends (total mg; ratio where published)")
-        L.append(_row(["Blend", "Components", "Total mg", "Base", "Ratio", "Stock"])); L.append(_row(["---"] * 6))
+        L.append(_row(["Blend", "Components", "Total mg", "Base", "Ratio", "Stock", "Vendor Slug"])); L.append(_row(["---"] * 7))
         for b in sorted(blends, key=lambda x: x[0].lower()):
             L.append(_row(list(b)))
         L.append("")
