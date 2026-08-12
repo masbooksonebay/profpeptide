@@ -420,15 +420,13 @@ const sections = [
     id: "where-to-buy",
     title: "Where to source CJC-1295",
     intro:
-      "CJC-1295 is not FDA-approved and is sold only as a research-grade peptide. Verify whether you're buying with DAC or without DAC — labeling is sometimes inconsistent. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — with explicit DAC/no-DAC variant labeling noted.",
+      "CJC-1295 is not FDA-approved and is sold only as a research-grade peptide. It is sold in two distinct forms — with DAC and without DAC (Modified GRF 1-29) — that a vendor's labeling does not always make clear, so we compare prices within each form separately rather than mixing them. Pick the form you are sourcing to see every vetted vendor that carries it, ranked by price.",
     node: (
       // CJC-1295 is split into two DISTINCT priced compounds (DAC vs no-DAC / Mod GRF 1-29). This
       // umbrella profile routes to the form-specific price comparison rather than asserting one form.
-      // NOTE (flagged for a content pass): the intro copy above still says "highlighted below" and the
-      // per-vendor curation was retired here — re-curate per form or reword when the copy is revisited.
       <div className="space-y-4">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Because the two forms are different molecules, compare vendors within the specific form you want:
+          Choose the form you are sourcing — each links to its own price comparison:
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
           {priceDisambiguation("cjc-1295")!.forms.map((f) => {
