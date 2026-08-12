@@ -66,13 +66,15 @@ export default async function Image() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              color: "white",
-              fontSize: 60,
-              fontWeight: 700,
-              letterSpacing: "-0.04em",
             }}
           >
-            Pp
+            <svg width={90} height={40} viewBox="0 0 100 44" fill="none" stroke="white" strokeWidth={5} strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="26" cy="24" r="16.5" />
+              <circle cx="74" cy="24" r="16.5" />
+              <path d="M9.5 18 L1 20.5" />
+              <path d="M90.5 18 L99 20.5" />
+              <path d="M43 21 L48 13.5 L52 13.5 L57 21" />
+            </svg>
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div

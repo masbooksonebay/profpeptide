@@ -38,10 +38,10 @@ const nextConfig = {
   experimental: {
     outputFileTracingIncludes: {
       "/coupons/**": ["./public/og/coupon-card-base.jpg", "./public/fonts/*.ttf"],
-      // News OG cards: article routes render the Pp tile (generateNewsOg → pp-mark.png);
+      // News OG cards: article routes render the brand tile (generateNewsOg → logo-glasses.png);
       // the /news hub still uses the content card (generateContentOg → coupon-card-base.jpg).
       // Both need the Inter fonts. Without this, the tracer drops the assets in prod → 500.
-      "/news/**": ["./public/pp-mark.png", "./public/og/coupon-card-base.jpg", "./public/fonts/*.ttf"],
+      "/news/**": ["./public/logo-glasses.png", "./public/og/coupon-card-base.jpg", "./public/fonts/*.ttf"],
     },
   },
   async headers() {

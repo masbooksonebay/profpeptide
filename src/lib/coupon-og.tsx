@@ -411,9 +411,10 @@ const NEWS_ACCENT = "#3A759F";
 const NEWS_HAIRLINE = "#D9DEE4";
 const NEWS_MUTED = "#6B7280";
 
-// Fonts + the Pp mark tile (public/pp-mark.png — the approved 1254² opaque dark
-// square; a dark tile is exactly what the white card wants). Read from disk and
-// bundled for /news/** via outputFileTracingIncludes in next.config.js — keep in sync.
+// Fonts + the brand mark tile (public/logo-glasses.png — the arms-glasses mark,
+// 1254² opaque, flattened to #3A759F; a solid tile is exactly what the white card
+// wants). Read from disk and bundled for /news/** via outputFileTracingIncludes in
+// next.config.js — keep in sync.
 interface NewsAssets {
   mark: string;
   fonts: Assets["fonts"];
@@ -424,7 +425,7 @@ function loadNewsAssets(): Promise<NewsAssets> {
     newsAssetsPromise = (async () => {
       const root = process.cwd();
       const [mark, regular, medium, bold, extraBold] = await Promise.all([
-        readFile(join(root, "public/pp-mark.png")),
+        readFile(join(root, "public/logo-glasses.png")),
         readFile(join(root, "public/fonts/Inter-Regular.ttf")),
         readFile(join(root, "public/fonts/Inter-Medium.ttf")),
         readFile(join(root, "public/fonts/Inter-Bold.ttf")),
