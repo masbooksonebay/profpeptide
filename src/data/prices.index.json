@@ -56,12 +56,12 @@
   },
   {
     "slug": "cjc-1295-dac",
-    "vendors": 10,
+    "vendors": 11,
     "indexable": true
   },
   {
     "slug": "cjc-1295-no-dac",
-    "vendors": 20,
+    "vendors": 21,
     "indexable": true
   },
   {

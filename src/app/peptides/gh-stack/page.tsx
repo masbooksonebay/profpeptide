@@ -479,7 +479,7 @@ const sections = [
     id: "where-to-buy",
     title: "Where to source GH Stack",
     intro:
-      "The GH Stack is not FDA-approved and is sold by specialty peptide vendors for laboratory research use only — pre-blended as a fixed CJC-1295 + Ipamorelin vial, or as separate components. The vendors highlighted below carry a pre-blended GH Stack and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
+      "The GH Stack is not FDA-approved and is sold by specialty peptide vendors for laboratory research use only. Researchers typically source CJC-1295 and Ipamorelin as separate vials; some vendors also list a pre-blended CJC-1295/Ipamorelin vial, though our data does not confirm the specific formulation. The vendors below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes, and carry both components.",
     node: (
       <div className="space-y-4">
         <VendorHighlightBlock compoundSlug="gh-stack"

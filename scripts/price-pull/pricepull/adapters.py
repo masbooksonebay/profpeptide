@@ -364,8 +364,14 @@ def purity_api(domain, path="/api/products"):
             regular = float(p.get('regular_price') or p.get('compare_at_price') or 0) or price
         except Exception:
             regular = price
+        # Purity's /api/products already returns a per-product `slug` (e.g. "5-amino-1mq-50mg");
+        # emit it as the canonical permalink PATH (product/<slug>) so the universal deep-link
+        # builder lands the Shop button on the product page, not the homepage. Product URLs are
+        # /product/<slug> (verified: /products/<slug> 404s). "" -> no slug -> homepage fallback.
+        sl = (p.get('slug') or '').strip().strip('/')
         out.append({'name': p['name'], 'price': price, 'regular': regular,
                     'in_stock': p.get('stock_status') == 'instock', 'variations': [],
+                    'slug': f"product/{sl}" if sl else '',
                     'description': (p.get('description', '') or '') + ' ' + (p.get('short_description', '') or '')})
     return out
 

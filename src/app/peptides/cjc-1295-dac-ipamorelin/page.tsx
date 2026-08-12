@@ -468,7 +468,7 @@ const sections = [
     id: "where-to-buy",
     title: "Where to source CJC-1295 DAC and Ipamorelin",
     intro:
-      "Neither CJC-1295 DAC nor Ipamorelin is FDA-approved. Both are sold by specialty peptide vendors for laboratory research use only, almost always as separate vials (due to their incompatible dosing schedules). When sourcing CJC-1295, confirm with the vendor explicitly that the product is the with-DAC form — many vendors carry both variants and labeling can be ambiguous. The vendors highlighted below carry CJC-1295 DAC and Ipamorelin and have been vetted for transparent third-party testing and traceable batch documentation.",
+      "Neither CJC-1295 DAC nor Ipamorelin is FDA-approved. Both are sold by specialty peptide vendors for laboratory research use only, almost always as separate vials (due to their incompatible dosing schedules). When sourcing CJC-1295, confirm with the vendor explicitly that the product is the with-DAC form — many vendors carry both variants, labeling can be ambiguous, and our data does not establish which form a given vendor's blend uses. The vendors below have been vetted for transparent third-party testing and traceable batch documentation, and carry CJC-1295 and Ipamorelin.",
     node: (
       <div className="space-y-4">
         <VendorHighlightBlock compoundSlug="cjc-1295-dac-ipamorelin"
