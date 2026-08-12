@@ -237,7 +237,7 @@ const sections = [
             Pre-blended formulations (research-grade vials)
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            Research-grade CagriSema is sold by specialty peptide vendors as pre-blended vials in a 1:1 ratio of cagrilintide to semaglutide. Common label sizes are 5 mg total (2.5 mg + 2.5 mg), 10 mg total (5 mg + 5 mg), and 20 mg total (10 mg + 10 mg). The label always shows the combined total milligrams of both compounds.
+            CagriSema is a fixed 1:1 combination of cagrilintide and semaglutide, so any pre-blended vial holds equal milligrams of each. A combined-mg label states the total milligrams of both compounds together — for example, a 20 mg total label is 10 mg cagrilintide + 10 mg semaglutide. When reconstituting a pre-blend, use that combined total as the vial size in the dosing calculator.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
             When reconstituting, use the combined total label as the vial size in the dosing calculator. Because the ratio is fixed at 1:1, every drawn dose contains equal amounts of each compound. For example, a 20 mg vial (10 mg cagrilintide + 10 mg semaglutide) drawn for a 4.8 mg combined weekly dose delivers 2.4 mg of each compound — the maintenance dose used in REDEFINE 1.
@@ -489,14 +489,14 @@ const sections = [
     id: "where-to-buy",
     title: "Where to source CagriSema",
     intro:
-      "CagriSema is not available by prescription as of May 2026 — Novo Nordisk's NDA is under FDA review. Research-grade pre-blended product is sold by specialty peptide vendors for laboratory use only. The three vendors highlighted below carry CagriSema as a pre-blended 1:1 product and have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes.",
+      "CagriSema is not available by prescription as of May 2026 — Novo Nordisk's NDA is under FDA review. It is sold only as a research-grade compound by specialty peptide vendors for laboratory use only. Our data does not confirm a pre-blended CagriSema SKU; the vendors below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes, and carry the component peptides Cagrilintide and Semaglutide.",
     node: (
       <div className="space-y-4">
         <VendorHighlightBlock compoundSlug="cagrisema"
           highlights={[
             { slug: "peptide-partners" },
-            { slug: "ascension-peptides", note: "Sold as C-10/S-5 blend" },
-            { slug: "vital-core-research", note: "Pre-blended 1:1 ratio" },
+            { slug: "ascension-peptides" },
+            { slug: "vital-core-research" },
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
@@ -733,7 +733,7 @@ export default function CagriSemaPage() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> The REDEFINE Phase 3 protocol uses a 16-week synchronized titration from 0.25 mg + 0.25 mg up to a 2.4 mg + 2.4 mg maintenance dose, once weekly subcutaneously. Research-grade pre-blended vials are typically sold in 5 mg, 10 mg, or 20 mg total combined-mg labels at a fixed 1:1 ratio.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> The REDEFINE Phase 3 protocol uses a 16-week synchronized titration from 0.25 mg + 0.25 mg up to a 2.4 mg + 2.4 mg maintenance dose, once weekly subcutaneously. Because CagriSema is a fixed 1:1 combination, a pre-blended vial&apos;s label states the combined total milligrams of both compounds.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}

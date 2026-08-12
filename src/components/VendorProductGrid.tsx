@@ -21,15 +21,22 @@ function fmt(n: number): string {
  * (3) otherwise the universal vendorDeepLink composer (both affiliate shapes), which
  * returns null for a cross-host redirect affiliate (biolongevity) → homepage fallback.
  */
+export type ShopLink = { url: string; isProduct: boolean };
+
 export function makeShopUrlFor(
   vendorKey: string,
   deepLink?: (vendorSlug: string) => string,
-): (vendorSlug?: string) => string {
+): (vendorSlug?: string) => ShopLink {
   const homepage = vendors[vendorKey]?.url ?? "";
   return (vendorSlug) => {
-    if (!vendorSlug) return homepage;
-    if (deepLink) return deepLink(vendorSlug);
-    return vendorDeepLink(vendorKey, vendorSlug) ?? homepage;
+    // isProduct=false means the link lands on the vendor's STORE HOME, not this product —
+    // no slug, or a cross-host affiliate redirect that can't carry a product path. The button
+    // then honestly reads "Visit store" instead of "Shop" (a "Shop" button that dumps the
+    // reader on the homepage after they clicked a specific price is a silent broken promise).
+    if (!vendorSlug) return { url: homepage, isProduct: false };
+    if (deepLink) return { url: deepLink(vendorSlug), isProduct: true };
+    const dl = vendorDeepLink(vendorKey, vendorSlug);
+    return dl ? { url: dl, isProduct: true } : { url: homepage, isProduct: false };
   };
 }
 
@@ -50,8 +57,9 @@ export interface VendorProductGridProps {
   rows: VendorProductRow[];
   /** whole-number discount percent applied at checkout (e.g. 20). */
   discountPct: number;
-  /** builds the fully-formed vendor product URL (incl. affiliate params) from the slug. */
-  shopUrlFor: (vendorSlug?: string) => string;
+  /** builds the vendor product link (incl. affiliate params) + whether it lands on the product
+   *  (vs the store home) from the slug. See makeShopUrlFor. */
+  shopUrlFor: (vendorSlug?: string) => ShopLink;
 }
 
 // ONE shared, fully explicit column template applied identically to the header and every
@@ -67,7 +75,9 @@ export function VendorProductGrid({ rows, discountPct, shopUrlFor }: VendorProdu
   // Every row renders directly — no cap/show-more. Rows are alphabetical, so a cap would hide
   // by letter (everything past ~J), not by relevance; hiding Tesamorelin/TB-500/Wolverine
   // behind a click filters on nothing meaningful. Full list, always.
-  const deskRow = (r: VendorProductRow, i: number) => (
+  const deskRow = (r: VendorProductRow, i: number) => {
+   const shop = shopUrlFor(r.vendorSlug);
+   return (
     <div key={i} className={`${GRID} py-2.5 border-b border-gray-100 dark:border-slate-800`}>
       <div className="min-w-0 self-baseline">
         {r.hasProfile ? (
@@ -83,12 +93,15 @@ export function VendorProductGrid({ rows, discountPct, shopUrlFor }: VendorProdu
       </div>
       <div className={`self-baseline text-xs ${r.inStock ? "text-green-700" : "text-gray-400 dark:text-slate-500"}`}>{r.inStock ? "In stock" : "Out"}</div>
       <div>
-        <a href={shopUrlFor(r.vendorSlug)} target="_blank" rel="noopener noreferrer sponsored" className="btn-primary text-sm whitespace-nowrap h-9 py-0">Shop</a>
+        <a href={shop.url} target="_blank" rel="noopener noreferrer sponsored" title={shop.isProduct ? undefined : "Opens the vendor's store home — no direct product link"} className="btn-primary text-sm whitespace-nowrap h-9 py-0">{shop.isProduct ? "Shop" : "Visit store"}</a>
       </div>
     </div>
-  );
+   );
+  };
 
-  const mobRow = (r: VendorProductRow, i: number) => (
+  const mobRow = (r: VendorProductRow, i: number) => {
+   const shop = shopUrlFor(r.vendorSlug);
+   return (
     <div key={i} className="panel-card p-3 tabular-nums">
       {/* items-baseline: name and headline price share one text baseline; the struck
           list price hangs beside the bold post-code figure on the right. */}
@@ -108,10 +121,11 @@ export function VendorProductGrid({ rows, discountPct, shopUrlFor }: VendorProdu
         </div>
       </div>
       <div className="mt-2">
-        <a href={shopUrlFor(r.vendorSlug)} target="_blank" rel="noopener noreferrer sponsored" className="btn-primary text-sm h-9 py-0 w-full">Shop</a>
+        <a href={shop.url} target="_blank" rel="noopener noreferrer sponsored" title={shop.isProduct ? undefined : "Opens the vendor's store home — no direct product link"} className="btn-primary text-sm h-9 py-0 w-full">{shop.isProduct ? "Shop" : "Visit store"}</a>
       </div>
     </div>
-  );
+   );
+  };
 
   return (
     <div>
