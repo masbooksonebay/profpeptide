@@ -67,7 +67,7 @@ const faqs = [
     q: "Where can I buy Semax + Selank?",
     a: (
       <>
-        Sold as a pre-blended nasal spray product by specialty research peptide vendors — common SKU is a 20 mg vial (10 mg each peptide) reconstituted into a nasal spray bottle. Quality varies dramatically by source; third-party HPLC testing is recommended. PP maintains a list of vetted vendors with verified discount codes — see{" "}
+        Semax and Selank are sold by specialty research peptide vendors; our data does not confirm a pre-blended Semax-Selank vial. Where a combined preparation is used, it is typically reconstituted into a nasal spray (a 20 mg total vial holds 10 mg of each peptide). Quality varies dramatically by source; third-party HPLC testing is recommended. PP maintains a list of vetted vendors with verified discount codes — see{" "}
         <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
@@ -528,7 +528,7 @@ export default function SemaxSelankPage() {
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> 1–3 sprays per nostril, 1–3× daily — typically ~100 mcg of each peptide per spray when a 20 mg vial (10 mg + 10 mg) is reconstituted into a 10 mL nasal spray bottle. Standard total daily dose: 300–600 mcg Semax + 300–900 mcg Selank, consistent with the per-component Russian clinical protocols.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sold as a pre-blended 20 mg vial by specialty research peptide vendors, typically reconstituted into a nasal spray bottle. Neither component is FDA-approved (both are approved in Russia). See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Semax and Selank are sold by specialty research peptide vendors; a combined preparation, where used, is typically reconstituted into a nasal spray. Neither component is FDA-approved (both are approved in Russia). See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}

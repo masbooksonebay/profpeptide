@@ -81,7 +81,7 @@ const faqs = [
     q: "Where can I buy the GH Stack?",
     a: (
       <>
-        Some vendors list a pre-blended CJC-1295/Ipamorelin vial; many researchers buy CJC-1295 and Ipamorelin separately. Our data does not confirm the formulation of any given pre-blend, so confirm the CJC-1295 form with the vendor. PP maintains a list of vetted vendors with verified discount codes — see{" "}
+        Many researchers buy CJC-1295 and Ipamorelin as separate vials; our data does not confirm or price a pre-blended CJC-1295/Ipamorelin vial, so if you use one, confirm the CJC-1295 form with the vendor. PP maintains a list of vetted vendors with verified discount codes — see{" "}
         <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
@@ -674,7 +674,7 @@ export default function GHStackPage() {
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> 100–300 mcg CJC-1295 (without DAC) + 100–300 mcg Ipamorelin per injection, 1–3× daily subcutaneously, pre-bed and empty stomach. Pre-blended vials typically 10 mg total (5 mg + 5 mg) at fixed 1:1 ratio. CJC-1295 with DAC follows a different protocol (1–2 mg once weekly).
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sold pre-blended by some research peptide vendors; many researchers buy CJC-1295 and Ipamorelin separately. Neither component is FDA-approved. See{" "}
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Many researchers buy CJC-1295 and Ipamorelin as separate vials; our data does not confirm a pre-blended SKU. Neither component is FDA-approved. See{" "}
             <Link href="/coupons" className="text-[#3A759F] hover:underline">
               Verified Discount Codes &rarr;
             </Link>{" "}

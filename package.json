@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/check-links.mjs && node scripts/check-prices-orphan.mjs && node scripts/check-doc-integrity.mjs && node scripts/check-prices-sync.mjs && node scripts/check-grids.mjs && node scripts/check-attribution.mjs && node scripts/check-freshness.mjs && node scripts/check-surfaces.mjs && node scripts/check-og-routes.mjs && node scripts/check-coupon-prose.mjs && node scripts/check-counts.mjs && node scripts/check-prices.mjs && node scripts/check-codes.mjs && node scripts/gen-vendor-slugs.mjs && node scripts/gen-codes-manifest.mjs && next build && next-sitemap && node scripts/check-sitemap-noindex.mjs && node scripts/check-og-metadata.mjs && node scripts/check-sitemap-coverage.mjs",
+    "build": "node scripts/check-links.mjs && node scripts/check-prices-orphan.mjs && node scripts/check-doc-integrity.mjs && node scripts/check-prices-sync.mjs && node scripts/check-grids.mjs && node scripts/check-attribution.mjs && node scripts/check-freshness.mjs && node scripts/check-surfaces.mjs && node scripts/check-og-routes.mjs && node scripts/check-coupon-prose.mjs && node scripts/check-market-claims.mjs && node scripts/check-counts.mjs && node scripts/check-prices.mjs && node scripts/check-codes.mjs && node scripts/gen-vendor-slugs.mjs && node scripts/gen-codes-manifest.mjs && next build && next-sitemap && node scripts/check-sitemap-noindex.mjs && node scripts/check-og-metadata.mjs && node scripts/check-sitemap-coverage.mjs",
     "start": "next start",
     "lint": "next lint",
     "check:vendors": "node scripts/check-vendors.mjs",
@@ -25,6 +25,7 @@
     "check:og-metadata": "node scripts/check-og-metadata.mjs",
     "check:sitemap-coverage": "node scripts/check-sitemap-coverage.mjs",
     "check:codes": "node scripts/check-codes.mjs",
+    "check:market-claims": "node scripts/check-market-claims.mjs",
     "gen:codes-manifest": "node scripts/gen-codes-manifest.mjs"
   },
   "dependencies": {
