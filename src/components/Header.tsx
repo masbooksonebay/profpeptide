@@ -167,7 +167,7 @@ export default function Header() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 md:h-[72px] flex items-center justify-between">
         <Link href="/" className="flex items-end gap-2 md:gap-2.5">
           <Image
-            src="/pp-mark.png"
+            src="/icon-512.png"
             alt="Prof. Peptide"
             width={56}
             height={56}
