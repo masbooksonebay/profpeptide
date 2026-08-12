@@ -81,7 +81,7 @@ const faqs = [
     q: "Where can I buy the GH Stack?",
     a: (
       <>
-        Sold pre-blended (typically as a 10 mg vial containing 5 mg CJC-1295 no-DAC + 5 mg Ipamorelin) by some research peptide vendors. Many users buy CJC-1295 and Ipamorelin separately. PP maintains a list of vetted vendors with verified discount codes — see{" "}
+        Some vendors list a pre-blended CJC-1295/Ipamorelin vial; many researchers buy CJC-1295 and Ipamorelin separately. Our data does not confirm the formulation of any given pre-blend, so confirm the CJC-1295 form with the vendor. PP maintains a list of vetted vendors with verified discount codes — see{" "}
         <Link href="/coupons" className="text-[#3A759F] hover:underline">
           Verified Discount Codes &rarr;
         </Link>
@@ -196,10 +196,10 @@ const sections = [
             Pre-blended formulations (research-grade vials)
           </h3>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold">Standard SKU.</span> Most pre-blended GH Stack vials are 10 mg total: 5 mg CJC-1295 (without DAC) + 5 mg Ipamorelin. The vial label always shows the combined milligrams of both components.
+            <span className="font-semibold">Reference configuration.</span> The reconstitution math in this section uses a reference GH Stack pre-blend of 10 mg total — 5 mg CJC-1295 + 5 mg Ipamorelin at a 1:1 ratio. A combined-mg vial label shows the total milligrams of both components together.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-            <span className="font-semibold">CJC-1295 form matters.</span> Pre-blended GH Stack products almost always contain CJC-1295 <span className="font-semibold">without DAC</span>. The reason: CJC-1295 with DAC has a 6–8 day half-life that doesn&apos;t fit a daily-blend pattern, while no-DAC&apos;s 30-minute half-life synchronizes well with Ipamorelin&apos;s ~2-hour half-life for daily pulsatile dosing. If a pre-blend label says &ldquo;CJC-1295 DAC,&rdquo; verify with the vendor — most are no-DAC despite ambiguous labeling.
+            <span className="font-semibold">CJC-1295 form matters.</span> The two CJC-1295 forms behave very differently in a daily stack: with-DAC has a 6–8 day half-life that doesn&apos;t fit a daily-blend pattern, while no-DAC&apos;s 30-minute half-life synchronizes well with Ipamorelin&apos;s ~2-hour half-life for daily pulsatile dosing — that pharmacology is the rationale for pairing the no-DAC form with Ipamorelin. Because a &ldquo;CJC-1295/Ipamorelin&rdquo; label does not reliably state the form, confirm with the vendor which form a given pre-blend uses; our price data does not establish it.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
             <span className="font-semibold">Ratio variants.</span> Some vendors offer non-1:1 blends (for example, 5 mg CJC-1295 + 2 mg Ipamorelin). The 1:1 ratio is the most common and is the default for daily pulsatile dosing.
