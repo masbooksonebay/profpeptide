@@ -39,7 +39,7 @@ export default function NuraPeptideCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>, <Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link>, <Link href="/peptides/5-amino-1mq" className="text-[#3A759F] hover:underline">5-Amino-1MQ</Link>, plus their GLP-class metabolic line
+                <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> (listed as GLP-3R), <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> (listed as GLP-2T), <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> (listed as GLP-1SG), <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide</Link> (in the GLP-3R/CAG blend), <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>, <Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link>, <Link href="/peptides/5-amino-1mq" className="text-[#3A759F] hover:underline">5-Amino-1MQ</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -79,6 +79,11 @@ export default function NuraPeptideCouponPage() {
               </dd>
             </div>
           </dl>
+          <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-4 bg-gray-50 dark:bg-[#1e293b] mb-4">
+            <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+              <span className="font-semibold text-[#16181B] dark:text-slate-100">Finding the GLP compounds on Nura&apos;s site:</span> Nura lists its metabolic/GLP peptides under proprietary code names. Retatrutide is listed as GLP-3R, Tirzepatide as GLP-2T, and Semaglutide as GLP-1SG; the GLP-3R/CAG blend is Retatrutide + Cagrilintide &mdash; search those codes in the Nura catalog to reach the corresponding product page.
+            </p>
+          </div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Every Nura Peptide batch is third-party tested by Freedom Diagnostics, whose per-batch certificates confirm identity by LC-MS, purity by HPLC-UV, and net peptide content; recent reports also add endotoxin (LAL, USP &lt;85&gt;) and microbial (PCR) screening. Each COA is individually verifiable by its search code at FreedomDiagnosticsTesting.com, and the certificates are published in a public COA library so researchers can review a given batch before purchase. Nura does not publish a single headline purity percentage; it points instead to the per-batch COA as the record of each lot's results.
           </p>
@@ -105,7 +110,8 @@ export default function NuraPeptideCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="What peptides does Nura Peptide carry?" a="Nura carries research compounds across several categories: metabolic and GLP-class compounds including MOTS-C, AOD-9604, and 5-Amino-1MQ; recovery peptides such as BPC-157, TB-500, and a BPC-157/TB-500 blend; growth-hormone secretagogues including CJC-1295, Ipamorelin, Tesamorelin, Sermorelin, and IGF-1 LR3; longevity and bioregulator compounds including Epitalon, NAD+, SS-31, and Glutathione; plus GHK-Cu, the GLOW and KLOW blends, Semax, Selank, DSIP, PT-141, and KPV." />
+            <FAQItem q="What peptides does Nura Peptide carry?" a="Nura carries research compounds across several categories. Its metabolic/GLP line is sold under proprietary code names — Retatrutide (listed as GLP-3R), Tirzepatide (listed as GLP-2T), Semaglutide (listed as GLP-1SG), and a Retatrutide/Cagrilintide blend (listed as GLP-3R/CAG) — alongside MOTS-C, AOD-9604, and 5-Amino-1MQ; recovery peptides such as BPC-157, TB-500, and a BPC-157/TB-500 blend; growth-hormone secretagogues including CJC-1295, Ipamorelin, Tesamorelin, Sermorelin, and IGF-1 LR3; longevity and bioregulator compounds including Epitalon, NAD+, SS-31, and Glutathione; plus GHK-Cu, the GLOW and KLOW blends, Semax, Selank, DSIP, PT-141, and KPV." />
+            <FAQItem q="Where do I find Retatrutide (GLP-3R), Tirzepatide (GLP-2T), and Semaglutide (GLP-1SG) on Nura's site?" a="Nura lists its GLP/metabolic peptides under proprietary code names. Retatrutide is listed as GLP-3R, Tirzepatide as GLP-2T, and Semaglutide as GLP-1SG; the GLP-3R/CAG blend is Retatrutide + Cagrilintide. Search those codes in the Nura catalog to reach the matching product page and its published Certificate of Analysis." />
             <FAQItem q="Does Nura Peptide have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 25% on your entire Nura Peptide order. This code is verified and maintained by Prof. Peptide." />
             <FAQItem q="How do I use the Nura Peptide discount code?" a="Add your items to cart at nurapeptide.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 25% discount will be applied to your order total." />
             <FAQItem q="How does Nura Peptide test its peptides?" a="Every Nura batch is third-party tested by Freedom Diagnostics, whose certificates confirm identity by LC-MS, purity by HPLC-UV, and net content, with recent reports adding endotoxin (USP <85>) and microbial (PCR) screening; each COA is verifiable by its search code at FreedomDiagnosticsTesting.com. Nura does not publish a single headline purity figure; the per-batch COA is the record of each lot's results." />

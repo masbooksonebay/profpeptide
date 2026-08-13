@@ -32,11 +32,36 @@ function execModule(path, label) {
 const { VENDOR_PINS } = execModule(join(root, "src/data/vendor-pins.ts"), "vendor-pins.ts");
 const { LISTED } = execModule(join(root, "src/data/attribution.ts"), "attribution.ts");
 const { generatedPriceEntries } = execModule(join(root, "src/data/prices.generated.ts"), "prices.generated.ts");
-const { generatedBlendEntries } = execModule(join(root, "src/data/prices.blends.generated.ts"), "prices.blends.generated.ts");
 
 const singleRow = new Set(generatedPriceEntries.map((e) => `${e.compound}|${e.vendor}`));
-const blendRow = new Set(generatedBlendEntries.map((e) => `${e.blend}|${e.vendor}`));
-const carries = (slug, vendor) => singleRow.has(`${slug}|${vendor}`) || blendRow.has(`${slug}|${vendor}`);
+
+// A vendor CARRIES a compound if it stocks it directly OR inside a blend — the pin shows who carries
+// the compound, not what has a standalone SKU today (Nura sells Cagrilintide only inside its
+// Retatrutide/Cagrilintide blend). blend-carries.generated.json lists every blend slug -> vendors
+// PRE-GATE (single-vendor blends never emit a comparison row, so the emitted blend surface can't be
+// used here). Expand each blend to its components via normalize.BLEND_COMPONENTS (slug -> "A/B/C",
+// slugified) so a component the vendor carries only inside a blend still counts.
+const blendCarries = JSON.parse(readFileSync(join(root, "src/data/blend-carries.generated.json"), "utf8"));
+const slugify = (s) =>
+  s.toLowerCase().replace(/\+/g, "-plus").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const normSrc = readFileSync(join(root, "scripts/price-pull/pricepull/normalize.py"), "utf8");
+const blendComponents = {};
+const bcBlock = normSrc.match(/^BLEND_COMPONENTS\s*=\s*\{([\s\S]*?)^\}/m);
+if (bcBlock) {
+  for (const m of bcBlock[1].matchAll(/'([a-z0-9-]+)':\s*'([^']+)'/g)) {
+    blendComponents[m[1]] = m[2].split("/").map((x) => slugify(x.trim()));
+  }
+}
+const carriesViaBlend = new Set();
+for (const [blendSlug, vendors] of Object.entries(blendCarries)) {
+  for (const comp of blendComponents[blendSlug] || []) {
+    for (const v of vendors) carriesViaBlend.add(`${comp}|${v}`);
+  }
+}
+const carries = (slug, vendor) =>
+  singleRow.has(`${slug}|${vendor}`) ||               // standalone single row
+  (blendCarries[slug] || []).includes(vendor) ||      // the pinned compound IS a blend the vendor carries
+  carriesViaBlend.has(`${slug}|${vendor}`);           // a blend the vendor carries whose components include it
 
 const errors = [];
 let pinCount = 0;
@@ -52,7 +77,7 @@ for (const [slug, set] of Object.entries(VENDOR_PINS)) {
   for (const vendor of set) {
     pinCount++;
     if (!LISTED.has(vendor)) errors.push(`  ${slug}: "${vendor}" is not in LISTED (attribution.ts)`);
-    if (!carries(slug, vendor)) errors.push(`  ${slug}: "${vendor}" has no price row for this compound`);
+    if (!carries(slug, vendor)) errors.push(`  ${slug}: "${vendor}" carries no row for this compound (no single, and no blend containing it)`);
   }
 }
 
@@ -63,5 +88,5 @@ if (errors.length) {
 }
 console.log(
   `check:vendor-pins OK — ${Object.keys(VENDOR_PINS).length} pinned profile(s), ${pinCount} vendor-slot(s); ` +
-    `every pinned vendor is LISTED and carries a price row.`,
+    `every pinned vendor is LISTED and carries the compound (single row or a blend containing it).`,
 );

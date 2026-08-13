@@ -456,14 +456,19 @@ def _nova(n):
         return (_c('Retatrutide', 'GLP-3 (RT)'), 'retatrutide', 'single')
 
 
-@_decoder('nura-peptide')  # Coded GLP SKUs left [coded, UNVERIFIED]: the product descriptions are generic
-# boilerplate with NO mechanistic identity (no triple/dual-agonist spec, no CAS/formula/name), so they are
-# NOT decoded by analogy (Mark's rule). GLP-3R/CAG is a coded blend.
+@_decoder('nura-peptide')  # GLP codes DECODED — Mark, first-hand (has vials / has ordered / talks to the
+# vendor), the SAME BASIS as GLYCON-X, GLP3RT and ION-1S/2T/3R. This is a FIRST-HAND VENDOR DECODE, NOT the
+# GLP-1/2/3 tier key applied by naming convention — the tier key only CORROBORATES (GLP-1=Sema, GLP-2=Tirz,
+# GLP-3=Reta). Recorded explicitly so nobody later reads it as decoding-by-convention:
+#   GLP-3R = Retatrutide · GLP-2T = Tirzepatide · GLP-1SG = Semaglutide
+#   GLP-3R/CAG = Retatrutide + Cagrilintide blend (CAG = Cagrilintide, also sold standalone elsewhere)
+# Order: the /CAG blend branch MUST precede the GLP-3R single branch (GLP-3R\b also matches "GLP-3R / CAG").
 def _nura(n):
     if re.match(r'GLP-3R\s*/\s*CAG', n, re.I):
-        return (n.split('(')[0].strip() + ' [coded, UNVERIFIED]', None, 'blend_bk')
-    if re.match(r'GLP-[0-9][A-Z]{1,3}', n, re.I):
-        return (n.split('(')[0].strip() + ' [coded, UNVERIFIED]', None, 'single_bk')
+        return ('Retatrutide/Cagrilintide', 'retatrutide-cagrilintide', 'blend')
+    if re.match(r'GLP-3R\b', n, re.I): return (_c('Retatrutide', 'GLP-3R'), 'retatrutide', 'single')
+    if re.match(r'GLP-2T\b', n, re.I): return (_c('Tirzepatide', 'GLP-2T'), 'tirzepatide', 'single')
+    if re.match(r'GLP-1SG', n, re.I): return (_c('Semaglutide', 'GLP-1SG'), 'semaglutide', 'single')
 
 
 @_decoder('real-peptides')  # GLYCON-X = Tirzepatide — VERIFIED by the VIAL LABEL "GLP-2 T" (Mark has one in

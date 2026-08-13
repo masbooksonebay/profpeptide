@@ -2598,12 +2598,6 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | DSIP | 5mg | $33.00 | $6.60 | — | ✓ | product/dsip-5mg/ |
 | Epitalon | 10mg | $49.00 | $4.90 | — | ✓ | product/epitalon-10mg/ |
 | GHK-Cu | 100mg | $55.00 | $0.55 | $60.00 | ✓ | product/ghk-cu-100mg/ |
-| GLP-1SG-10 [coded, UNVERIFIED] | 10mg | $69.00 | $6.90 | — | ✓ | product/glp-1sg-10mg/ |
-| GLP-2T [coded, UNVERIFIED] | 10mg | $69.00 | $6.90 | $79.00 | ✓ | product/glp-2t-2/ |
-| GLP-2T [coded, UNVERIFIED] | 30mg | $170.00 | $5.67 | — | ✓ | product/glp-2t-2/ |
-| GLP-2T [coded, UNVERIFIED] | 60mg | $250.00 | $4.17 | — | ✓ | product/glp-2t-2/ |
-| GLP-3R [coded, UNVERIFIED] | 10mg | $65.00 | $6.50 | — | ✓ | product/glp-3r/ |
-| GLP-3R [coded, UNVERIFIED] | 30mg | $180.00 | $6.00 | — | ✓ | product/glp-3r/ |
 | Glutathione | 1500mg | $73.00 | $0.05 | — | ✓ | product/glutathione-peptide-1500mg/ |
 | IGF-1 LR3 | 1mg | $65.00 | $65.00 | — | ✓ | product/igf1-lr3-1mg/ |
 | Ipamorelin | 10mg | $63.00 | $6.30 | — | ✓ | product/ipamorelin-10mg/ |
@@ -2612,21 +2606,27 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | MOTS-C | 10mg | $45.00 | $4.50 | — | ✓ | product/mots-c-10mg/ |
 | NAD+ | 500mg | $65.00 | $0.13 | — | ✓ | product/nad-500mg/ |
 | PT-141 | 10mg | $40.00 | $4.00 | — | ✓ | product/pt-141-peptide-10mg/ |
+| Retatrutide (listed as GLP-3R) | 10mg | $65.00 | $6.50 | — | ✓ | product/glp-3r/ |
+| Retatrutide (listed as GLP-3R) | 30mg | $180.00 | $6.00 | — | ✓ | product/glp-3r/ |
 | Selank | 10mg | $45.00 | $4.50 | — | ✓ | product/selank-peptide-10mg/ |
+| Semaglutide (listed as GLP-1SG) | 10mg | $69.00 | $6.90 | — | ✓ | product/glp-1sg-10mg/ |
 | Semax | 10mg | $45.00 | $4.50 | — | ✓ | product/semax-peptide-10mg/ |
 | Sermorelin | 5mg | $45.00 | $9.00 | — | ✓ | product/sermorelin-5mg/ |
 | SS-31 | 50mg | $145.00 | $2.90 | — | ✓ | product/ss-31-50mg/ |
 | TB-500 | 10mg | $63.00 | $6.30 | — | ✓ | product/tb-500-10mg/ |
 | Tesamorelin | 10mg | $80.00 | $8.00 | — | ✓ | product/tesamorelin/ |
 | Tesamorelin | 20mg | $140.00 | $7.00 | — | ✓ | product/tesamorelin/ |
+| Tirzepatide (listed as GLP-2T) | 10mg | $69.00 | $6.90 | $79.00 | ✓ | product/glp-2t-2/ |
+| Tirzepatide (listed as GLP-2T) | 30mg | $170.00 | $5.67 | — | ✓ | product/glp-2t-2/ |
+| Tirzepatide (listed as GLP-2T) | 60mg | $250.00 | $4.17 | — | ✓ | product/glp-2t-2/ |
 
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
 | CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $55.00 | not published | ✓ | product/ipamorelin-cjc-1295-no-dac-5-5mg/ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $100.00 | not published | ✓ | product/glow-bpc-157-ghk-cu-tb-500-blend/ |
-| GLP-3R / CAG 12.5MG / 2.5MG [coded, UNVERIFIED] |  | 15mg | $105.00 | not published | ✓ | product/glp-3r-cag-12-5mg-2-5mg/ |
 | KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $110.00 | not published | ✓ | product/klow-bpc-157-ghk-cu-tb-500-kpv-blend/ |
+| Retatrutide/Cagrilintide | Retatrutide/Cagrilintide | 15mg | $105.00 | not published | ✓ | product/glp-3r-cag-12-5mg-2-5mg/ |
 | Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 16mg | $109.00 | not published | ✓ | product/tesamorelin-ipamorelin-13-3-mg/ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $106.00 | not published | ✓ | product/bpc-157-tb-500-5-5mg/ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $53.00 | not published | ✓ | product/bpc-157-tb-500-5-5mg/ |
