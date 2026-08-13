@@ -89,6 +89,9 @@ BLEND_MAP = {
     "BPC-157/TB-500/Cartalax": "bpc-157-tb-500-cartalax",
     "Tesamorelin/Ipamorelin/CJC-1295": "tesamorelin-ipamorelin-cjc-1295",
     "GHRP-2/Tesamorelin/MGF/Ipamorelin": "ghrp-2-tesamorelin-mgf-ipamorelin",
+    # Nura GLP-3R/CAG decoded to Retatrutide+Cagrilintide (Mark, first-hand). Single-vendor emitting
+    # today; other vendors carry it as [backlog] (no Cagri cert) so it stays below the 3-vendor gate.
+    "Retatrutide/Cagrilintide": "retatrutide-cagrilintide",
 }
 
 # Canonical DISPLAY name per blend slug — the single source for every user-visible surface
@@ -104,6 +107,7 @@ BLEND_DISPLAY = {
     "bpc-157-tb-500-cartalax": "BPC-157/TB-500/Cartalax",
     "tesamorelin-ipamorelin-cjc-1295": "Tesamorelin/Ipamorelin/CJC-1295",
     "ghrp-2-tesamorelin-mgf-ipamorelin": "GHRP-2/Tesamorelin/MGF/Ipamorelin",
+    "retatrutide-cagrilintide": "Retatrutide/Cagrilintide",
 }
 
 def blend_base_name(raw):
@@ -500,6 +504,13 @@ _bl += ["];", ""]
 blends_text = "\n".join(_bl) + "\n"
 blends_index_text = json.dumps(blend_index, indent=2) + "\n"
 
+# ALL resolved blend slug -> [vendors], PRE-GATE — so check:vendor-pins can credit a vendor for a
+# compound it carries ONLY inside a blend (Nura sells Cagrilintide only in retatrutide-cagrilintide, a
+# single-vendor blend that never emits a comparison row). Component -> compound expansion is in the guard.
+BLEND_CARRIES_OUT = ROOT / "src" / "data" / "blend-carries.generated.json"
+blend_carries = {slug: sorted({i["vendor"] for i in items}) for slug, items in sorted(_blend_groups.items())}
+blend_carries_text = json.dumps(blend_carries, indent=2) + "\n"
+
 # --emit MODE (for check:prices-sync): print the artifact to stdout, write NOTHING, no report.
 # The transform is deterministic (PRICES_UPDATED comes from the doc, not today's date), so the
 # guard can diff this stdout against the committed file for an exact drift check.
@@ -513,6 +524,7 @@ OUT.write_text(prices_text)
 INDEX_OUT.write_text(index_text)
 BLEND_OUT.write_text(blends_text)
 BLEND_INDEX_OUT.write_text(blends_index_text)
+BLEND_CARRIES_OUT.write_text(blend_carries_text)
 
 # --- report ------------------------------------------------------------------
 print(f"PRICES_UPDATED (oldest rendering vendor's pull date): {PRICES_UPDATED}")

@@ -88,6 +88,7 @@ BLEND_COMPONENTS = {
     'bpc-157-tb-500-cartalax': 'BPC-157/TB-500/Cartalax',
     'tesamorelin-ipamorelin-cjc-1295': 'Tesamorelin/Ipamorelin/CJC-1295',
     'ghrp-2-tesamorelin-mgf-ipamorelin': 'GHRP-2/Tesamorelin/MGF/Ipamorelin',
+    'retatrutide-cagrilintide': 'Retatrutide/Cagrilintide',
 }
 BLEND_DISPLAY = {
     'glow': 'GLOW', 'klow': 'KLOW', 'wolverine-stack': 'Wolverine (BPC-157/TB-500)',
@@ -99,6 +100,7 @@ BLEND_DISPLAY = {
     'bpc-157-tb-500-cartalax': 'BPC-157/TB-500/Cartalax',
     'tesamorelin-ipamorelin-cjc-1295': 'Tesamorelin/Ipamorelin/CJC-1295',
     'ghrp-2-tesamorelin-mgf-ipamorelin': 'GHRP-2/Tesamorelin/MGF/Ipamorelin',
+    'retatrutide-cagrilintide': 'Retatrutide/Cagrilintide',
 }
 
 # Blend signatures: slug -> required components, each a tuple of substring aliases (ANY matches).

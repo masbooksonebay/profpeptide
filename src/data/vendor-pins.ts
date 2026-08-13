@@ -41,4 +41,14 @@ export const VENDOR_PINS: Record<string, string[]> = {
   // wolverine-stack — added 2026-08-13 once Nura's Wolverine blend was captured (the pull now sums
   // the "5/5MG"/"10/10MG" component-dose code). All three carry a wolverine-stack row.
   "wolverine-stack": ["nura-peptide", "amino-club", "peptide-partners"],
+  // Added 2026-08-13 after Nura's GLP codes were decoded first-hand (GLP-3R=Retatrutide, GLP-2T=
+  // Tirzepatide). All three carry a row for each. cagrilintide was ALSO requested but is NOT here:
+  // Nura carries it only inside the GLP-3R/CAG blend (no standalone row), so check:vendor-pins — which
+  // gates on a price row — would fail. That gap is the row-requirement issue flagged for a guard fix.
+  retatrutide: ["nura-peptide", "amino-club", "peptide-partners"],
+  tirzepatide: ["nura-peptide", "amino-club", "peptide-partners"],
+  semaglutide: ["nura-peptide", "amino-club", "peptide-partners"],
+  ipamorelin: ["nura-peptide", "amino-club", "peptide-partners"],
+  "bpc-157": ["nura-peptide", "amino-club", "peptide-partners"],
+  "tb-500": ["nura-peptide", "amino-club", "peptide-partners"],
 };
