@@ -9,7 +9,7 @@
   {
     "slug": "aero-peptides",
     "name": "Aero Peptides",
-    "code": "PROFPEPTIDE15",
+    "code": "PROFPEPTIDE",
     "discount": "15% off",
     "url": "https://aeropeptides.com/?ref=PROF15"
   },
@@ -206,7 +206,7 @@
     "slug": "nura-peptide",
     "name": "Nura Peptide",
     "code": "PROFPEPTIDE",
-    "discount": "20% off",
+    "discount": "25% off",
     "url": "https://nurapeptide.com/?ref=profpeptide"
   },
   {
