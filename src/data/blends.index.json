@@ -1,21 +1,35 @@
 [
   {
+    "slug": "bpc-157-tb-500-cartalax",
+    "configs": [
+      {
+        "config": "30mg",
+        "vendors": 3
+      }
+    ],
+    "vendors": 3,
+    "indexable": true
+  },
+  {
+    "slug": "cjc-1295-no-dac-ipamorelin",
+    "configs": [
+      {
+        "config": "10mg",
+        "vendors": 6
+      }
+    ],
+    "vendors": 6,
+    "indexable": true
+  },
+  {
     "slug": "glow",
     "configs": [
       {
         "config": "70mg",
-        "vendors": 19
-      },
-      {
-        "config": "10mg",
-        "vendors": 3
-      },
-      {
-        "config": "50mg",
-        "vendors": 3
+        "vendors": 21
       }
     ],
-    "vendors": 23,
+    "vendors": 21,
     "indexable": true
   },
   {
@@ -23,10 +37,10 @@
     "configs": [
       {
         "config": "80mg",
-        "vendors": 23
+        "vendors": 22
       }
     ],
-    "vendors": 23,
+    "vendors": 22,
     "indexable": true
   },
   {
@@ -34,14 +48,18 @@
     "configs": [
       {
         "config": "10mg",
-        "vendors": 5
+        "vendors": 4
       },
       {
         "config": "13mg",
+        "vendors": 4
+      },
+      {
+        "config": "16mg",
         "vendors": 3
       }
     ],
-    "vendors": 8,
+    "vendors": 11,
     "indexable": true
   },
   {
@@ -49,22 +67,18 @@
     "configs": [
       {
         "config": "10mg",
-        "vendors": 20
+        "vendors": 21
       },
       {
         "config": "20mg",
-        "vendors": 15
+        "vendors": 16
       },
       {
         "config": "5mg",
-        "vendors": 10
-      },
-      {
-        "config": "40mg",
-        "vendors": 3
+        "vendors": 9
       }
     ],
-    "vendors": 29,
+    "vendors": 28,
     "indexable": true
   }
 ]

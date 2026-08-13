@@ -85,6 +85,9 @@ BLEND_COMPONENTS = {
     'tesamorelin-ipamorelin': 'Tesamorelin/Ipamorelin',
     'nad-mots-c-5-amino-1mq': 'NAD+/MOTS-C/5-Amino-1MQ',
     'ghk-cu-kpv': 'GHK-Cu/KPV',
+    'bpc-157-tb-500-cartalax': 'BPC-157/TB-500/Cartalax',
+    'tesamorelin-ipamorelin-cjc-1295': 'Tesamorelin/Ipamorelin/CJC-1295',
+    'ghrp-2-tesamorelin-mgf-ipamorelin': 'GHRP-2/Tesamorelin/MGF/Ipamorelin',
 }
 BLEND_DISPLAY = {
     'glow': 'GLOW', 'klow': 'KLOW', 'wolverine-stack': 'Wolverine (BPC-157/TB-500)',
@@ -93,36 +96,44 @@ BLEND_DISPLAY = {
     'tesamorelin-ipamorelin': 'Tesamorelin/Ipamorelin',
     'nad-mots-c-5-amino-1mq': 'NAD+/MOTS-C/5-Amino-1MQ',
     'ghk-cu-kpv': 'GHK-Cu/KPV',
+    'bpc-157-tb-500-cartalax': 'BPC-157/TB-500/Cartalax',
+    'tesamorelin-ipamorelin-cjc-1295': 'Tesamorelin/Ipamorelin/CJC-1295',
+    'ghrp-2-tesamorelin-mgf-ipamorelin': 'GHRP-2/Tesamorelin/MGF/Ipamorelin',
 }
+
+# Blend signatures: slug -> required components, each a tuple of substring aliases (ANY matches).
+# Selection is LONGEST MATCH (most components all present), NOT first-in-list — so a 3-way
+# (BPC/TB/Cartalax) beats its 2-way subset (BPC/TB) instead of collapsing to it. That is the fix
+# for the precedence bug: a new multi-component blend can never again be eaten by a shorter subset.
+# ('tb' matches tb-500/tb500/tb4; 'ipa' matches ipamorelin.)
+_BLEND_SIGS = [
+    ('klow',                              [('kpv',), ('ghk',), ('bpc',), ('tb',)]),
+    ('ghrp-2-tesamorelin-mgf-ipamorelin', [('ghrp',), ('tesa',), ('mgf',), ('ipa',)]),
+    ('glow',                              [('ghk',), ('bpc',), ('tb',)]),
+    ('bpc-157-tb-500-cartalax',           [('bpc',), ('tb',), ('cartalax',)]),
+    ('tesamorelin-ipamorelin-cjc-1295',   [('tesa',), ('ipa',), ('cjc',)]),
+    ('ghk-cu-kpv',                        [('ghk',), ('kpv',)]),
+    ('cjc-1295-dac-ipamorelin',           [('cjc',), ('ipa',)]),
+    ('tesamorelin-ipamorelin',            [('tesa',), ('ipa',)]),
+    ('nad-mots-c-5-amino-1mq',            [('nad',), ('mots',)]),
+    ('wolverine-stack',                   [('bpc',), ('tb',)]),
+]
 
 
 def blend_of(name):
     """Return (slug, components, ratio, total_mg) if `name` is a recognized blend, else None.
 
-    Precedence matters: check 4-component KLOW before 3-component GLOW before
-    2-component Wolverine. Ratio is captured only when the name publishes it
-    (e.g. '5mg/5mg' or '50/10/10'); otherwise 'not published'.
+    LONGEST MATCH wins (see _BLEND_SIGS): the blend with the most components all present is
+    chosen, so KLOW(4) beats GLOW(3) beats Wolverine(2), and a 3-/4-way never collapses to a
+    2-way subset. Ratio is captured only when the name publishes it; otherwise 'not published'.
     """
     n = name.lower()
-    has = lambda *ks: all(k in n for k in ks)
-    tb = ('tb' in n or 'tb-500' in n or 'tb500' in n)
-    slug = None
-    if has('kpv') and has('ghk') and has('bpc') and tb:
-        slug = 'klow'
-    elif has('ghk') and has('bpc') and tb:
-        slug = 'glow'
-    elif has('ghk') and has('kpv'):          # 2-component GHK-Cu/KPV (after KLOW, which also has both)
-        slug = 'ghk-cu-kpv'
-    elif ('cjc' in n) and ('ipa' in n or 'ipamorelin' in n):
-        slug = 'cjc-1295-dac-ipamorelin'
-    elif ('tesa' in n) and ('ipa' in n or 'ipamorelin' in n):
-        slug = 'tesamorelin-ipamorelin'
-    elif ('nad' in n) and ('mots' in n):
-        slug = 'nad-mots-c-5-amino-1mq'
-    elif ('bpc' in n) and tb:
-        slug = 'wolverine-stack'
-    if not slug:
+    candidates = [(len(sig), slug) for slug, sig in _BLEND_SIGS
+                  if all(any(a in n for a in group) for group in sig)]
+    if not candidates:
         return None
+    slug = max(candidates)[1]   # most components wins; a same-length tie (no real product hits one)
+                                # breaks deterministically by slug — every registered set has a unique size
     comps = re.findall(r'(\d+(?:\.\d+)?)\s*mg', name, re.I)
     if len(comps) >= 2:
         ratio = '/'.join(f'{float(c):g}' for c in comps) + ' (published)'

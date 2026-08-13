@@ -248,7 +248,8 @@ def _ez(n):
     if re.match(r'EZP-3P', n, re.I): return (_c('Retatrutide', 'EZP-3P'), 'retatrutide', 'single')
     if re.match(r'EZP-CG', n, re.I): return (_c('Cagrilintide', 'EZP-CG'), 'cagrilintide', 'single')
     if re.match(r'TB4\b', n, re.I): return ('TB-500', 'tb-500', 'single')
-    if re.match(r'Deadpool', n, re.I): return ('Deadpool (BPC-157/TB-500/Cartalax) [backlog]', None, 'blend_bk')
+    # Deadpool is now a registered blend (blend_of -> bpc-157-tb-500-cartalax); the old backlog
+    # stopgap here pre-empted it (decode runs before blend_of) and left ez's copy unmapped. Removed.
     if re.match(r'Beauty Blend', n, re.I): return ('Beauty (GHK-Cu/KPV) [backlog]', None, 'blend_bk')
 
 

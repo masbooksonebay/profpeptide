@@ -157,6 +157,56 @@ def _row(cells):
     return "| " + " | ".join(str(c) for c in cells) + " |"
 
 
+def _strip_summary_total(doses):
+    """Drop a STATED TOTAL that sits alongside its component doses, so only the components are
+    counted. A total is a value equal to the sum of the rest — e.g. '(Wolverine Stack 20mg)' in
+    'BPC-157 10mg + TB-500 10mg (Wolverine Stack 20mg)' -> [10,10,20], strip 20 -> [10,10]. The
+    >=2-remaining guard leaves an equal component PAIR like [5,5] (two 5mg components, no total)
+    intact — there, one 5 equals 'the other 5', but stripping it would fabricate a single."""
+    for i, t in enumerate(doses):
+        rest = doses[:i] + doses[i + 1:]
+        if len(rest) >= 2 and abs(t - sum(rest)) < 1e-6:
+            return rest
+    return doses
+
+
+def blend_total(name, size_label, slug, comps):
+    """Total mg for a blend row, from a PUBLISHED value only — name, the MG-attr size_label, or the
+    slug. Returns (total_mg, reason):
+      • An explicit component-dose CODE (>=2 doses: '5/5MG', '13/3MG', '30mg-10mg-10mg') is summed
+        — after dropping any stated total (_strip_summary_total) — but ONLY if the remaining dose
+        count equals the component count blend_of identified (`comps`). A mismatch (a genuine 3-dose
+        code under a 2-way 'Wolverine' label — Deadpool/Regeno) returns (None, 'mismatch'): DROP +
+        COUNT. Never partial-sum, never infer a missing component.
+      • A lone total already in the name (GLOW '70mg', KLOW '80mg') is taken as-is.
+      • Otherwise (None, 'nototal'): DROP + COUNT.
+    `comps` is blend_of's 'A/B[/C]' string; None for coded/unregistered blends (no count known, so a
+    code is summed unguarded — unchanged behaviour, e.g. GLP-3R/CAG)."""
+    n = (comps.count('/') + 1) if comps else None
+    for src in (name, size_label, slug):
+        doses = vm.dose_list(src)
+        if not doses:
+            continue
+        if n is None:
+            return sum(doses), 'ok'                  # coded/unregistered: no count to check against
+        if len(doses) == n:
+            return sum(doses), 'ok'
+        if len(doses) == n + 1:
+            # One value may be a STATED TOTAL sitting next to its components — "…(Wolverine 20mg)",
+            # "10MG (5mg/5mg)", the Regeno slug "30mg-10mg-10mg-10mg". Strip it ONLY if that makes the
+            # count match blend_of EXACTLY (count-aware). A bare list whose length already matches (the
+            # nextgen "6/3/3" 3-way) is never touched, so a value that coincidentally equals the sum of
+            # the others isn't eaten — that ambiguity is resolved by blend_of's (now-correct) count.
+            stripped = _strip_summary_total(doses)
+            if len(stripped) == n:
+                return sum(stripped), 'ok'
+        return None, 'mismatch'                       # genuine count disagreement -> DROP + COUNT
+    singles = re.findall(r'(\d+(?:\.\d+)?)\s*mg\b', name or '', re.I)
+    if len(singles) == 1:
+        return float(singles[0]), 'ok'
+    return None, 'nototal'
+
+
 def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
     """Yield classified rows for one product:
        ('single'|'blend'|'spray', display, size_label, base, in_stock, ratio, components,
@@ -211,12 +261,17 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
         if sc != 'peptide':
             yield ('exclude', sc); return
         k, slug = decoders.match(name)
-        if k == 'UNMAPPED':
-            yield ('exclude', 'out-of-scope (SARMs/Rx/cosmetics)'); return
         backlog = (k == 'BACKLOG')
         bo = N.blend_of(name)
         if bo:
+            # Route a registered blend to the blend track FIRST — before the UNMAPPED out-of-scope
+            # drop below. blend_of keys on the component pair, so it catches "Wolverine Blend
+            # (BPC-157/TB-500)" even though match() collapses that name to the UNMAPPED alias
+            # "wolverine". (Consulting blend_of only AFTER the UNMAPPED drop is exactly what silently
+            # excluded that blend as out-of-scope.)
             kind, slug, disp = 'blend', bo[0], N.BLEND_DISPLAY.get(bo[0], name)
+        elif k == 'UNMAPPED':
+            yield ('exclude', 'out-of-scope (SARMs/Rx/cosmetics)'); return
         elif slug in N.BLEND_COMPONENTS:      # bare slug match to a known blend (e.g. "GLOW 70mg")
             kind, disp = 'blend', N.BLEND_DISPLAY[slug]
         else:
@@ -251,14 +306,22 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
         rowkind = 'spray' if (form == 'spray' and kind not in ('blend', 'blend_bk')) else kind
         if rowkind in ('blend', 'blend_bk'):
             bo = N.blend_of(name)
-            if bo:
-                comps, ratio, tm = bo[1], bo[2], bo[3]
-            else:
-                comps = N.BLEND_COMPONENTS.get(slug) or (re.sub(r'.*\((.*?)\).*', r'\1', disp) if '(' in disp else '')
-                mgs = re.findall(r'(\d+(?:\.\d+)?)\s*mg', name, re.I)
-                ratio = 'not published'
-                tm = sum(float(x) for x in mgs) if len(mgs) >= 2 else N.mg_value(size_label)
-            yield ('blend', disp, (f"{tm:g}mg" if tm else N.size_label(size_label)), base, ins, ratio, comps, reg_out, on_sale, vslug)
+            comps = (bo[1] if bo else N.BLEND_COMPONENTS.get(slug)) or (re.sub(r'.*\((.*?)\).*', r'\1', disp) if '(' in disp else '')
+            ratio = bo[2] if bo else 'not published'
+            # PUBLISHED-value total: sum an explicit component-dose code (guarded by component count)
+            # or take a lone name total. This takes PRECEDENCE over blend_of's own tm, which mis-parses
+            # a slash-dose name (it reads "13/3MG" as 3mg — the exact bug that shipped Tesa/Ipa and
+            # CJC/Ipa at the wrong size). blend_of's total is used only as a fallback when no code or
+            # total is present in the fields at all.
+            tm, why = blend_total(name, size_label, vslug, comps)
+            if tm is None and why == 'nototal' and bo and bo[3]:
+                tm, why = bo[3], 'ok'
+            if tm is None:
+                # REFUSE rather than guess. 'nototal' = no published total anywhere; 'mismatch' =
+                # dose-code count != blend_of component count (the mislabel guard). Both drop + COUNT
+                # so they can't hide the way the Wolverine blend did (excluded as out-of-scope).
+                yield ('blend_drop', disp, product.get('id'), product.get('permalink', ''), product.get('type', ''), why); continue
+            yield ('blend', disp, f"{tm:g}mg", base, ins, ratio, comps, reg_out, on_sale, vslug)
         elif rowkind == 'spray':
             yield ('spray', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale, vslug)
         else:
@@ -284,6 +347,7 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
     """meta: {name, code, discount, url}. Returns the markdown section text."""
     singles, blends, sprays, excl = {}, [], [], set()
     nosize_dropped = []   # per-SKU record of Rule-4 no-size drops (Class A) — counted, not silent
+    blend_dropped = []    # blends dropped for unresolved total mg (nototal | mismatch) — counted, not silent
     for p in products:
         for r in classify(vendor, p, ten_vial_kit=ten_vial_kit, sitewide_sale=sitewide_sale):
             if r[0] == 'exclude':
@@ -292,6 +356,12 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
                 _, nm, pid, purl, ptype = r
                 nosize_dropped.append({"name": nm, "id": pid, "url": purl, "type": ptype})
                 excl.add('no parseable size (Rule 4)'); continue
+            if r[0] == 'blend_drop':
+                _, nm, pid, purl, ptype, why = r
+                blend_dropped.append({"name": nm, "id": pid, "url": purl, "type": ptype, "why": why})
+                excl.add('blend total unresolved (Rule 4): ' +
+                         ('component-count mismatch' if why == 'mismatch' else 'no total in name'))
+                continue
             kind, disp, size, base, ins, ratio, comps, reg, on_sale, vslug = r
             st = "✓" if ins else "✗"
             reg_str = f"${reg:,.2f}" if on_sale and reg else "—"    # Regular column: anchor only when on sale
@@ -353,4 +423,5 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
                        if not any(_norm(k) in pn or pn in _norm(k) for pn in prod_norms)]
     return "\n".join(L), {"singles": len(singles), "blends": len(blends), "sprays": len(sprays),
                           "catalog": len(products), "stale_overrides": stale_overrides,
-                          "nosize_dropped": nosize_dropped, "emitted_sizeless": emitted_sizeless}
+                          "nosize_dropped": nosize_dropped, "emitted_sizeless": emitted_sizeless,
+                          "blend_dropped": blend_dropped}
