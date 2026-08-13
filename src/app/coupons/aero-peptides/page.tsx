@@ -122,11 +122,11 @@ export default function AeroPeptidesCouponPage() {
             />
             <FAQItem
               q="Does Aero Peptides have a discount code?"
-              a="Yes. Use code PROFPEPTIDE15 at checkout to save 15% on any Aero Peptides order. This code is verified and maintained by Prof. Peptide."
+              a="Yes. Use code PROFPEPTIDE at checkout to save 15% on any Aero Peptides order. This code is verified and maintained by Prof. Peptide."
             />
             <FAQItem
               q="How do I use the Aero Peptides discount code?"
-              a="Add your items to cart at aeropeptides.com, proceed to checkout, and enter PROFPEPTIDE15 in the discount code field. The discount will be applied to your order total. Domestic shipping is free over $150."
+              a="Add your items to cart at aeropeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The discount will be applied to your order total. Domestic shipping is free over $150."
             />
             <FAQItem
               q="Where do I find Semaglutide (GLP1 – Semaglutide), Tirzepatide (GLP1 – Tirz), and Retatrutide (GLP3 – Reta) on Aero's site?"

@@ -56,9 +56,11 @@ export const regionFlag: Record<Vendor["region"], string> = {
 export const vendors: Record<string, Vendor> = {
   "aero-peptides": {
     name: "Aero Peptides",
-    code: "PROFPEPTIDE15",
+    code: "PROFPEPTIDE",
     discount: "15% off",
     region: "US",
+    // ⚠️ ?ref=PROF15 is Aero's GoAffPro affiliate IDENTIFIER, not the coupon code —
+    // it stays as-is even though the checkout code changed PROFPEPTIDE15 → PROFPEPTIDE.
     url: "https://aeropeptides.com/?ref=PROF15",
     detailPage: "/coupons/aero-peptides",
     facts: { purityStandard: "≥98%", coa: "on-request" },
@@ -562,8 +564,9 @@ export const vendors: Record<string, Vendor> = {
   "nura-peptide": {
     name: "Nura Peptide",
     code: "PROFPEPTIDE",
-    discount: "20% off",
+    discount: "25% off",
     region: "US",
+    // ?ref=profpeptide is Nura's GoAffPro affiliate identifier — leave untouched.
     url: "https://nurapeptide.com/?ref=profpeptide",
     detailPage: "/coupons/nura-peptide",
     facts: { coa: "library", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>), microbial (PCR)" },

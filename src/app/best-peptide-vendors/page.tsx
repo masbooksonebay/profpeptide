@@ -40,8 +40,11 @@ interface HubVendor {
 // they appear on /coupons and /vendors (which list the whole registry).
 //   - Alpha Peptides: newly approved, attribution not yet verified — intentionally
 //     excluded here (still present on /coupons, /vendors, /coupons/alpha-peptides).
-//   - Swiss Chems: deliberate exception — large, established vendor, higher
-//     confidence, so featured ahead of that verification.
+//   - Nura Peptide: added Aug 2026 once attribution was confirmed (Freedom Diagnostics
+//     testing; 25% off with PROFPEPTIDE).
+//   - Ascension Peptides + Swiss Chems: removed from this featured subset Aug 2026.
+//     (Ascension remains PROVEN in attribution.ts and still surfaces on profiles;
+//     Swiss Chems is CUT — see attribution.ts — so it was already off every profile.)
 // Curated copy for the featured subset. Every field EXCEPT `code` is hand-set for
 // this page; `code` is omitted on purpose and pulled from the registry below, so a
 // code change (e.g. Glacier PROF10→PROFPEPTIDE, Aug 2026) can never go stale here
@@ -55,15 +58,6 @@ const featured: Omit<HubVendor, "code">[] = [
     description:
       "US-based supplier with a broad catalog of more than two dozen research compounds. Every batch is third-party tested by an ISO/IEC 17025-accredited lab to a 99%+ HPLC purity standard, with additional heavy-metal (ICP-MS), sterility, and endotoxin screening. Each product links a batch-specific Certificate of Analysis that is downloadable and independently verifiable through the issuing lab’s portal.",
     strengths: ["Third-party tested, 99%+ purity", "ISO/IEC 17025-accredited lab", "Per-batch verifiable COAs", "20% off with code"],
-  },
-  {
-    name: "Ascension Peptides",
-    slug: "ascension-peptides",
-    url: "https://ascensionpeptides.com/ref/profpeptide/",
-    discount: "50% off",
-    description:
-      "US-based, third-party tested supplier with aggressive bulk pricing. 50% off storewide with our code.",
-    strengths: ["50% off storewide", "Third-party tested", "Competitive bulk pricing", "US-based"],
   },
   {
     name: "EZ Peptides",
@@ -84,6 +78,15 @@ const featured: Omit<HubVendor, "code">[] = [
     strengths: ["7-point third-party testing", "Per-vial QR-code COAs", "US-based, family-owned", "10% off with code"],
   },
   {
+    name: "Nura Peptide",
+    slug: "nura-peptide",
+    url: "https://nurapeptide.com/?ref=profpeptide",
+    discount: "25% off",
+    description:
+      "US-based supplier with a public COA library. Every batch is third-party tested by Freedom Diagnostics, whose certificates confirm identity by LC-MS and purity by HPLC-UV, with recent reports adding endotoxin (USP <85>) and microbial (PCR) screening; each COA is verifiable by its search code at FreedomDiagnosticsTesting.com. Catalog spans metabolic, recovery, growth-hormone, and longevity compounds, plus the GLOW and KLOW blends.",
+    strengths: ["Third-party tested (Freedom Diagnostics)", "LC-MS identity + HPLC-UV purity", "Verifiable per-batch COA library", "25% off with code"],
+  },
+  {
     name: "Oasis Labs",
     slug: "oasis-labs",
     url: "https://myoasislabs.com/?sld=profpeptide",
@@ -100,15 +103,6 @@ const featured: Omit<HubVendor, "code">[] = [
     description:
       "US research peptide supplier that runs four independent test types per batch: purity, endotoxin, heavy metals, and sterility. Extensive transparency on test data and documentation.",
     strengths: ["Four independent batch tests", "Endotoxin + sterility tested", "Published COAs", "Transparent test data"],
-  },
-  {
-    name: "Swiss Chems",
-    slug: "swiss-chems",
-    url: "https://swisschems.is/?ref=PROF10",
-    discount: "10% off",
-    description:
-      "US-based, peptide-forward supplier with a notably deep growth-hormone and peptide bench, plus recovery, longevity, cognitive, and reproductive-health compounds. Transparency runs on a public Independent Test Results page and a per-product verification system — third-party HPLC and mass-spectrometry testing at external labs to a stated 99%+ purity standard, with full batch Certificates of Analysis published rather than summarized.",
-    strengths: ["Public independent test-results page + COAs", "Third-party HPLC & mass-spec, 99%+ purity", "Deep growth-hormone & peptide bench", "10% off with code"],
   },
 ];
 

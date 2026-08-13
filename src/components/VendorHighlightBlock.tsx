@@ -5,6 +5,7 @@ import { vendors } from "@/data/vendors";
 import { CopyCode } from "@/components/CopyCode";
 import { compoundVendorCount, deriveHighlightVendors, isBlendSlug, blendVendorCount } from "@/data/prices";
 import { LISTED } from "@/data/attribution";
+import { VENDOR_PINS } from "@/data/vendor-pins";
 
 export interface VendorHighlight {
   slug: string;
@@ -31,13 +32,21 @@ export interface VendorHighlightBlockProps {
 }
 
 export default function VendorHighlightBlock({ highlights, compoundSlug }: VendorHighlightBlockProps) {
-  // Selection: derive from price rows (demonstrable stock, ranked). Only where the grid tracks
-  // nothing (blends/combos) fall back to the hand-curated list — always filtered to LISTED so a
-  // cut vendor can never render. No invented pairings: a vendor appears only with a price row or
-  // an explicit curated entry.
-  const derived = compoundSlug ? deriveHighlightVendors(compoundSlug) : [];
-  const selected: VendorHighlight[] =
-    derived.length > 0
+  // Selection order of precedence:
+  //   1. EXPLICIT PIN (src/data/vendor-pins.ts) — render exactly this ordered set, overriding
+  //      derivation. Filtered to LISTED as a safety net; check:vendor-pins guarantees every
+  //      pinned vendor is LISTED and carries a price row for this compound, so the set is intact.
+  //   2. DERIVED from price rows (demonstrable stock, ranked proven → editor → deal → alpha).
+  //   3. Hand-curated fallback — only where the grid tracks nothing (blends/combos), filtered to
+  //      LISTED so a cut vendor can never render.
+  // No invented pairings: a vendor appears only via a pin+row, a price row, or a curated entry.
+  const pinned = compoundSlug ? VENDOR_PINS[compoundSlug] : undefined;
+  const derived = compoundSlug && !pinned ? deriveHighlightVendors(compoundSlug) : [];
+  const selected: VendorHighlight[] = pinned
+    ? pinned
+        .filter((slug) => LISTED.has(slug))
+        .map((slug) => ({ slug, note: highlights?.find((h) => h.slug === slug)?.note }))
+    : derived.length > 0
       ? derived.map((slug) => ({ slug, note: highlights?.find((h) => h.slug === slug)?.note }))
       : (highlights ?? []).filter((h) => LISTED.has(h.slug));
 

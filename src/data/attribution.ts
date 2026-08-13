@@ -65,6 +65,11 @@ const GRACED_LIST = [
   "aero-peptides",
   "treasure-coast-peptides",
   "modern-aminos",
+  // nura-peptide — code (PROFPEPTIDE) bound in the GoAffPro portal, Referrals 0 at last
+  // check: working code, no recorded conversion = GRACED by definition (PROVEN needs
+  // ledger conversions, cf. biolongevity-labs). Added 2026-08-13. Being LISTED is also
+  // what lets it render on profiles (it was already on the Featured Vendors page).
+  "nura-peptide",
 ];
 export const GRACED = new Set<string>(GRACED_LIST);
 
