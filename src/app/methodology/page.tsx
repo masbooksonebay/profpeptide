@@ -110,7 +110,8 @@ export default function MethodologyPage() {
             <p>
               We do not assign vendors a score or a numeric rank of our own. A rank implies a precision we can&rsquo;t honestly claim across suppliers we assess on different evidence, and it invites exactly the affiliate-driven ordering this site exists to avoid. Instead we describe each vendor by what is verifiable about it, and let a reader weigh those facts. The one place we curate a list &mdash; our{" "}
               <Link href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">Featured Vendors</Link>{" "}
-              &mdash; is an editorial selection, dated and re-vetted, not a computed ranking.
+              &mdash; is an editorial selection, dated and re-vetted, not a computed ranking. The same judgment informs our{" "}
+              <Link href="/coupons" className="text-[#3A759F] hover:underline">Professor&rsquo;s Picks</Link>: an editorial call shaped by everything above, not a standard a vendor is measured against.
             </p>
           </Section>
 
