@@ -26,6 +26,30 @@ import re
 from .normalize import mg_value
 
 
+_SLASH_CODE = re.compile(r'(\d+(?:\.\d+)?(?:\s*/\s*\d+(?:\.\d+)?)+)\s*(mg|mcg)\b', re.I)
+_DOSE_UNIT = re.compile(r'(\d+(?:\.\d+)?)\s*(mg|mcg)\b', re.I)
+
+
+def _to_mg(num, unit):
+    """Normalize one dose to mg. mcg -> mg (/1000) so a mixed-unit blend (modern-aminos 4x lists
+    MGF as 500mcg alongside mg peptides) sums correctly instead of treating 500mcg as 500mg."""
+    return float(num) / 1000.0 if unit and unit.lower() == 'mcg' else float(num)
+
+
+def dose_list(s):
+    """The explicit component-dose list from a code in `s`, NORMALIZED TO mg, else []. A *code* is
+    >=2 doses: a slash group sharing one unit ('5/5MG', '13/3MG'), or >=2 separately-united doses
+    ('12.5MG / 2.5MG', 'GHRP-2 5mg / MGF 500mcg'). Reads a PUBLISHED value — it does not infer.
+    Summing + a component-count guard live in build.blend_total."""
+    s = str(s or '')
+    m = _SLASH_CODE.search(s)
+    if m:
+        unit = m.group(2)   # a slash group shares one trailing unit
+        return [_to_mg(x, unit) for x in re.split(r'\s*/\s*', m.group(1))]
+    parts = _DOSE_UNIT.findall(s)
+    return [_to_mg(num, unit) for num, unit in parts] if len(parts) >= 2 else []
+
+
 def parse_size(s):
     """mg size label from a string, or None. The unit may be hyphen-joined to the
     number (Alpha's dosage attribute is '10-mg'); [\\s-]* absorbs that separator."""
@@ -214,6 +238,9 @@ def extract_rows(product, ten_vial_kit=False):
         # fall back to the product name.
         size = None
         for aname, val in attrs:
+            if len(dose_list(val)) >= 2:      # blend component-dose code (e.g. "5/5MG") — keep the
+                size = str(val).strip()       # WHOLE code so build.blend_total can sum it (guarded);
+                break                         # parse_size would grab a single dose and halve the total
             size = parse_size(val)
             if size:
                 break

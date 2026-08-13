@@ -38,4 +38,7 @@ export const VENDOR_PINS: Record<string, string[]> = {
   "pt-141": ["nura-peptide", "amino-club", "peptide-partners"],
   glow: ["nura-peptide", "amino-club", "peptide-partners"],
   klow: ["nura-peptide", "amino-club", "peptide-partners"],
+  // wolverine-stack — added 2026-08-13 once Nura's Wolverine blend was captured (the pull now sums
+  // the "5/5MG"/"10/10MG" component-dose code). All three carry a wolverine-stack row.
+  "wolverine-stack": ["nura-peptide", "amino-club", "peptide-partners"],
 };

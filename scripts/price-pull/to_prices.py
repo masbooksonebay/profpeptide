@@ -83,6 +83,12 @@ BLEND_MAP = {
     "Wolverine": "wolverine-stack",
     "Tesamorelin/Ipamorelin": "tesamorelin-ipamorelin",
     "NAD+/MOTS-C/5-Amino-1MQ": "nad-mots-c-5-amino-1mq",
+    # Multi-component blends taught to blend_of 2026-08-13 (longest-match). Price rows only — no
+    # profile page. Deadpool (ameano, ez) and Regeno (biolongevity) are the SAME components under
+    # different marketing names -> ONE component-derived slug (convention: nad-mots-c-5-amino-1mq).
+    "BPC-157/TB-500/Cartalax": "bpc-157-tb-500-cartalax",
+    "Tesamorelin/Ipamorelin/CJC-1295": "tesamorelin-ipamorelin-cjc-1295",
+    "GHRP-2/Tesamorelin/MGF/Ipamorelin": "ghrp-2-tesamorelin-mgf-ipamorelin",
 }
 
 # Canonical DISPLAY name per blend slug — the single source for every user-visible surface
@@ -95,6 +101,9 @@ BLEND_DISPLAY = {
     "wolverine-stack": "Wolverine",
     "tesamorelin-ipamorelin": "Tesamorelin/Ipamorelin",
     "nad-mots-c-5-amino-1mq": "NAD+/MOTS-C/5-Amino-1MQ",
+    "bpc-157-tb-500-cartalax": "BPC-157/TB-500/Cartalax",
+    "tesamorelin-ipamorelin-cjc-1295": "Tesamorelin/Ipamorelin/CJC-1295",
+    "ghrp-2-tesamorelin-mgf-ipamorelin": "GHRP-2/Tesamorelin/MGF/Ipamorelin",
 }
 
 def blend_base_name(raw):

@@ -218,6 +218,21 @@ def main():
             if loud:
                 print(f"       ⚠ {slug}: {len(dropped)} SKUs have no parseable size — a whole product "
                       f"line may be missing from PP. Add mg to the SIZE_OVERRIDE map or confirm they're out of scope.")
+        # Blend drop report (Rule 4, blend track): a blend routed to the blend track but whose total
+        # mg couldn't be resolved from a PUBLISHED value is dropped and surfaced here — never guessed.
+        # 'mismatch' = the dose-code count disagrees with blend_of's component count (the mislabel
+        # guard — a 3-dose code under a 2-way label); 'nototal' = no published total anywhere. This is
+        # the warning that would have caught the Wolverine blend. WARN-only.
+        bdropped = counts.get("blend_dropped", [])
+        if bdropped:
+            mism = [d for d in bdropped if d.get("why") == "mismatch"]
+            noto = [d for d in bdropped if d.get("why") != "mismatch"]
+            print(f"       blend dropped: {len(bdropped)} ({len(mism)} component-count mismatch, {len(noto)} no total)")
+            for d in bdropped:
+                print(f"         - [{d.get('why','')}] {d['name']}  {d.get('url','')}")
+            if mism:
+                print(f"       ⚠ {slug}: {len(mism)} blend(s) have a dose-code count != blend_of's component "
+                      f"count (possible mislabel — see item 2). NOT written; fix blend_of or the label first.")
         # Stale-override guard: a SIZE_OVERRIDE key matching zero products in this pull is a rename or
         # removal — the override would silently miss (vendor+name is not a stable key). WARN-only.
         stale = counts.get("stale_overrides", [])
