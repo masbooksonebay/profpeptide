@@ -58,6 +58,7 @@ function codeFontSize(code: string): number {
 
 interface Assets {
   bg: string;
+  mark: string;
   fonts: { name: string; data: Buffer; weight: 400 | 500 | 700 | 800; style: "normal" }[];
 }
 
@@ -66,15 +67,20 @@ interface Assets {
 // to resolve against during Node prerender — so we read from process.cwd() and
 // force Vercel's file tracer to bundle these via `outputFileTracingIncludes`
 // in next.config.js. That mapping is what keeps tracing from dropping them in
-// production (the cause of the 500); keep the two in sync.
+// production (the cause of the 500); keep the two in sync. `mark` is the OFFICIAL
+// brand file (public/logo-glasses.png, the same raster the news cards use) — the
+// LogoLockup renders it directly instead of a redrawn vector, so every OG card now
+// carries Mark's own mark. Its route groups must include logo-glasses.png in the
+// tracer config alongside coupon-card-base.jpg.
 let assetsPromise: Promise<Assets> | null = null;
 
 function loadAssets(): Promise<Assets> {
   if (!assetsPromise) {
     assetsPromise = (async () => {
       const root = process.cwd();
-      const [bg, regular, medium, bold, extraBold] = await Promise.all([
+      const [bg, mark, regular, medium, bold, extraBold] = await Promise.all([
         readFile(join(root, "public/og/coupon-card-base.jpg")),
+        readFile(join(root, "public/logo-glasses.png")),
         readFile(join(root, "public/fonts/Inter-Regular.ttf")),
         readFile(join(root, "public/fonts/Inter-Medium.ttf")),
         readFile(join(root, "public/fonts/Inter-Bold.ttf")),
@@ -82,6 +88,7 @@ function loadAssets(): Promise<Assets> {
       ]);
       return {
         bg: `data:image/jpeg;base64,${bg.toString("base64")}`,
+        mark: `data:image/png;base64,${mark.toString("base64")}`,
         fonts: [
           { name: "Inter", data: regular, weight: 400, style: "normal" },
           { name: "Inter", data: medium, weight: 500, style: "normal" },
@@ -96,28 +103,17 @@ function loadAssets(): Promise<Assets> {
 
 // ---- shared building blocks ------------------------------------------------
 
-function LogoLockup() {
-  // Vector logo — drawn directly so it stays crisp at any resample (a raster mark
-  // aliases on Satori downscale). The arms-glasses brand mark (temple bars to the
-  // edges, angular bridge), recolored to the card's cyan accent, + the wordmark.
+function LogoLockup({ mark }: { mark: string }) {
+  // OFFICIAL brand mark — public/logo-glasses.png rendered as a raster (Mark's own
+  // file, the same asset the news cards use), NOT a redrawn vector. The only change
+  // permitted to the asset is resizing; it is never recolored, redrawn, or simplified.
+  // The mark is the arms-glasses tile (white on #3A759F). The wordmark keeps the card's
+  // cyan accent — the two-blue treatment (blue tile vs cyan wordmark) is Mark's call and
+  // is shipped as-is, a separate decision from removing the drawing.
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
-      <svg
-        width={82}
-        height={36}
-        viewBox="0 0 100 44"
-        fill="none"
-        stroke={ACCENT}
-        strokeWidth={5}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <circle cx="26" cy="24" r="16.5" />
-        <circle cx="74" cy="24" r="16.5" />
-        <path d="M9.5 18 L1 20.5" />
-        <path d="M90.5 18 L99 20.5" />
-        <path d="M43 21 L48 13.5 L52 13.5 L57 21" />
-      </svg>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={mark} width={72} height={72} alt="" style={{ width: 72, height: 72, borderRadius: 12 }} />
       <div
         style={{
           marginLeft: 16,
@@ -225,12 +221,14 @@ function Shell({
 
 function VendorCard({
   bg,
+  mark,
   name,
   percent,
   code,
   prefix,
 }: {
   bg: string;
+  mark: string;
   name: string;
   percent: number;
   code: string;
@@ -238,7 +236,7 @@ function VendorCard({
 }) {
   return (
     <Shell bg={bg} justify="center">
-      <LogoLockup />
+      <LogoLockup mark={mark} />
 
       <div style={{ display: "flex", flexDirection: "column", marginTop: 28 }}>
         {prefix && (
@@ -287,10 +285,10 @@ function VendorCard({
   );
 }
 
-function FallbackCard({ bg }: { bg: string }) {
+function FallbackCard({ bg, mark }: { bg: string; mark: string }) {
   return (
     <Shell bg={bg}>
-      <LogoLockup />
+      <LogoLockup mark={mark} />
       <div style={{ display: "flex", flexDirection: "column" }}>
         <div style={{ display: "flex", fontSize: 72, fontWeight: 700, color: WHITE, lineHeight: 1.05, letterSpacing: -2 }}>
           Verified Discount Codes
@@ -316,8 +314,8 @@ export const COUPON_HUB_ALT = "Prof. Peptide — verified research peptide disco
 // linkable from a post about any vendor or any (time-limited) rate without ever
 // contradicting the post.
 export async function generateCouponHubOg(): Promise<ImageResponse> {
-  const { bg, fonts } = await loadAssets();
-  return new ImageResponse(<FallbackCard bg={bg} />, { ...IMAGE_SIZE, fonts });
+  const { bg, mark, fonts } = await loadAssets();
+  return new ImageResponse(<FallbackCard bg={bg} mark={mark} />, { ...IMAGE_SIZE, fonts });
 }
 
 // Homepage / site-root brand card. Brand + purpose only — deliberately NO numbers
@@ -325,10 +323,10 @@ export async function generateCouponHubOg(): Promise<ImageResponse> {
 // refresh, so any figure baked here would become permanently stale. Same Shell / LogoLockup
 // (the CURRENT vector mark) / palette / fonts as the vendor cards, so social cards read as a
 // consistent family and the homepage stops falling back to the outdated 1024² raster.
-function HomeCard({ bg }: { bg: string }) {
+function HomeCard({ bg, mark }: { bg: string; mark: string }) {
   return (
     <Shell bg={bg} justify="center">
-      <LogoLockup />
+      <LogoLockup mark={mark} />
       <div style={{ display: "flex", flexDirection: "column", marginTop: 30 }}>
         <div style={{ display: "flex", fontSize: 64, fontWeight: 700, color: WHITE, lineHeight: 1.06, letterSpacing: -2 }}>
           Independent Peptide Research
@@ -345,8 +343,8 @@ function HomeCard({ bg }: { bg: string }) {
 export const HOME_OG_ALT = "Prof. Peptide — independent peptide research library";
 
 export async function generateHomeOg(): Promise<ImageResponse> {
-  const { bg, fonts } = await loadAssets();
-  return new ImageResponse(<HomeCard bg={bg} />, { ...IMAGE_SIZE, fonts });
+  const { bg, mark, fonts } = await loadAssets();
+  return new ImageResponse(<HomeCard bg={bg} mark={mark} />, { ...IMAGE_SIZE, fonts });
 }
 
 // Content-generic card for the shared content pages (peptide profiles, supplements,
@@ -359,10 +357,10 @@ export const CONTENT_OG_HEADLINE = "Independent Peptide & Supplement Research";
 export const CONTENT_OG_TAGLINE = "Evidence-based profiles, comparisons & price data";
 export const CONTENT_OG_ALT = "Prof. Peptide — independent peptide & supplement research";
 
-function ContentCard({ bg }: { bg: string }) {
+function ContentCard({ bg, mark }: { bg: string; mark: string }) {
   return (
     <Shell bg={bg} justify="center">
-      <LogoLockup />
+      <LogoLockup mark={mark} />
       <div style={{ display: "flex", flexDirection: "column", marginTop: 30 }}>
         <div style={{ display: "flex", fontSize: 48, fontWeight: 700, color: WHITE, lineHeight: 1.12, letterSpacing: -1.5 }}>
           {CONTENT_OG_HEADLINE}
@@ -376,12 +374,12 @@ function ContentCard({ bg }: { bg: string }) {
 }
 
 export async function generateContentOg(): Promise<ImageResponse> {
-  const { bg, fonts } = await loadAssets();
-  return new ImageResponse(<ContentCard bg={bg} />, { ...IMAGE_SIZE, fonts });
+  const { bg, mark, fonts } = await loadAssets();
+  return new ImageResponse(<ContentCard bg={bg} mark={mark} />, { ...IMAGE_SIZE, fonts });
 }
 
 export async function generateCouponOg(slug: string): Promise<ImageResponse> {
-  const { bg, fonts } = await loadAssets();
+  const { bg, mark, fonts } = await loadAssets();
   const vendor = vendors[slug];
   const { percent: pct, prefix } = vendor
     ? resolveOgCopy(slug, vendor.discount)
@@ -389,9 +387,9 @@ export async function generateCouponOg(slug: string): Promise<ImageResponse> {
 
   const element =
     !vendor || pct === null ? (
-      <FallbackCard bg={bg} />
+      <FallbackCard bg={bg} mark={mark} />
     ) : (
-      <VendorCard bg={bg} name={vendor.name} percent={pct} code={vendor.code} prefix={prefix} />
+      <VendorCard bg={bg} mark={mark} name={vendor.name} percent={pct} code={vendor.code} prefix={prefix} />
     );
 
   return new ImageResponse(element, { ...IMAGE_SIZE, fonts });
