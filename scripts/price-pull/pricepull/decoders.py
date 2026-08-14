@@ -40,9 +40,13 @@ spartan-peptides, improved-peptides (all three tiers); biocollex, midwest-peptid
 (GLP-2/3); oasis-labs, science-based-peptides, nova-labs (GLP-3); real-peptides
 (GLYCON-X = vial-labelled "GLP-2 T" = Tirzepatide, 2026-08). The key is a reusable
 CORROBORATOR — it must still ride alongside real evidence (COA / spec / vial label),
-never stand alone. Vendors using the same naming but held [coded, UNVERIFIED] for
-lack of that evidence: purerawz, vital-core-research, nextgen-peptides, la-peptides,
-peptidology, peptide-giants, nura-peptide, amp-peptides (GLP3RT), biopure-peptides.
+never stand alone. Vendors that still hold >=1 GLP code as [coded, UNVERIFIED] for lack
+of that evidence: purerawz, vital-core-research, nextgen-peptides, la-peptides,
+peptidology, peptide-giants, biopure-peptides. NOTE — purerawz, nextgen-peptides, and
+peptide-giants VERIFY a subset while still holding others: purerawz LY3437943->Reta (holds
+GLP-1.x), nextgen TRZ-2->Tirz (holds GLP-3), peptide-giants PG-3RT->Reta (holds 3). Removed
+2026-08 (now FULLY decoded, 0 held): nura-peptide (GLP-3R/2T/1SG, Mark first-hand) and
+amp-peptides (GLP3RT, naming + Mark confirmation).
 """
 import re
 
@@ -115,6 +119,14 @@ ALIAS = {
     'ipamo': 'ipamorelin',        # ion "Ipamo" (5/10mg)
     'sermo': 'sermorelin',        # ion "Sermo" (5/10/15mg)
     'igf lr3': 'igf-1-lr3',       # ion "IGF-LR3" (1mg) — normalizes to "igf lr3" (no "1"), missed by the igf-1-lr3 aliases
+    # 2026-08 class-wide silent-drop recovery (name variants whose intended token sits in parens that
+    # _norm strips, or a no-space spelling). Verified unambiguous: across every raw catalog scanned in
+    # the class cross-check, each token appeared ONLY as the intended compound. Whole-word matched.
+    'thymosin beta 4': 'tb-500',            # "Thymosin Beta 4 Peptide (TB500)" — (TB500) stripped by _norm; almighty
+    'ta1': 'thymosin-alpha-1',              # "TA1" standalone — nura; \bta1\b won't match inside meta1/beta1 (no word boundary)
+    'thymosin alpha': 'thymosin-alpha-1',   # "Thymosin Alpha (TA1)" — (TA1) stripped → "thymosin alpha"; biopure. No thymosin-alpha-2 in roster
+    'vasoactive intestinal peptide': 'vip', # "Vasoactive Intestinal Peptide (VIP)" — (VIP) stripped; biopure
+    'll37': 'll-37',                        # "LL37" no-space — biopure, peptide-giants; "LL-37" already covered by 'll 37'
 }
 
 
