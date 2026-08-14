@@ -142,7 +142,7 @@ function LogoLockup({ mark, tone = "dark" }: { mark: string; tone?: Tone }) {
           letterSpacing: -1,
         }}
       >
-        Prof.Peptide
+        Prof. Peptide
       </div>
     </div>
   );
