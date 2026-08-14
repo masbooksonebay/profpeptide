@@ -37,11 +37,17 @@ const nextConfig = {
   // without this the tracer can drop them and 500 the cards in production.
   experimental: {
     outputFileTracingIncludes: {
-      "/coupons/**": ["./public/og/coupon-card-base.jpg", "./public/fonts/*.ttf"],
+      // Coupon cards now render the OFFICIAL brand mark (LogoLockup → public/logo-glasses.png)
+      // in addition to the vial base — both must be traced or the cards 500 in prod.
+      "/coupons/**": ["./public/og/coupon-card-base.jpg", "./public/logo-glasses.png", "./public/fonts/*.ttf"],
       // News OG cards: article routes render the brand tile (generateNewsOg → logo-glasses.png);
       // the /news hub still uses the content card (generateContentOg → coupon-card-base.jpg).
       // Both need the Inter fonts. Without this, the tracer drops the assets in prod → 500.
       "/news/**": ["./public/logo-glasses.png", "./public/og/coupon-card-base.jpg", "./public/fonts/*.ttf"],
+      // /about + /guides OG cards were edge-runtime redraws; converted to the Node runtime so they
+      // render the official public/logo-glasses.png (edge can't readFile from disk). Trace the mark.
+      "/about/**": ["./public/logo-glasses.png"],
+      "/guides/**": ["./public/logo-glasses.png"],
     },
   },
   async headers() {

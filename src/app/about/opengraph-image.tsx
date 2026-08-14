@@ -1,6 +1,10 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
-export const runtime = "edge";
+// Node runtime (not edge): the OFFICIAL brand mark (public/logo-glasses.png) is read from
+// disk at render time, replacing the old hand-drawn glasses SVG. Edge can't readFile, so this
+// route was converted off edge; the mark is traced for /about/** via outputFileTracingIncludes.
 export const alt = "About Prof. Peptide";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -20,6 +24,8 @@ const PILLARS = [
 ];
 
 export default async function Image() {
+  const markData = await readFile(join(process.cwd(), "public/logo-glasses.png"));
+  const mark = `data:image/png;base64,${markData.toString("base64")}`;
   return new ImageResponse(
     (
       <div
@@ -57,25 +63,10 @@ export default async function Image() {
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: 28, marginTop: 56 }}>
-          <div
-            style={{
-              width: 112,
-              height: 112,
-              borderRadius: 26,
-              background: TEAL,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <svg width={90} height={40} viewBox="0 0 100 44" fill="none" stroke="white" strokeWidth={5} strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="26" cy="24" r="16.5" />
-              <circle cx="74" cy="24" r="16.5" />
-              <path d="M9.5 18 L1 20.5" />
-              <path d="M90.5 18 L99 20.5" />
-              <path d="M43 21 L48 13.5 L52 13.5 L57 21" />
-            </svg>
-          </div>
+          {/* Official brand mark (public/logo-glasses.png) — white glasses on #3A759F, so the
+              tile background is baked into the asset; no separate colored wrapper. Resized only. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={mark} width={112} height={112} alt="" style={{ width: 112, height: 112, borderRadius: 26 }} />
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div
               style={{
