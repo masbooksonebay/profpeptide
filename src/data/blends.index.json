@@ -26,17 +26,6 @@
     "configs": [
       {
         "config": "70mg",
-        "vendors": 21
-      }
-    ],
-    "vendors": 21,
-    "indexable": true
-  },
-  {
-    "slug": "klow",
-    "configs": [
-      {
-        "config": "80mg",
         "vendors": 22
       }
     ],
@@ -44,14 +33,25 @@
     "indexable": true
   },
   {
+    "slug": "klow",
+    "configs": [
+      {
+        "config": "80mg",
+        "vendors": 23
+      }
+    ],
+    "vendors": 23,
+    "indexable": true
+  },
+  {
     "slug": "tesamorelin-ipamorelin",
     "configs": [
       {
-        "config": "10mg",
-        "vendors": 4
+        "config": "13mg",
+        "vendors": 5
       },
       {
-        "config": "13mg",
+        "config": "10mg",
         "vendors": 4
       },
       {
@@ -59,7 +59,7 @@
         "vendors": 3
       }
     ],
-    "vendors": 11,
+    "vendors": 12,
     "indexable": true
   },
   {

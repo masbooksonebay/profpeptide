@@ -108,6 +108,13 @@ ALIAS = {
     # Rule A (Part 1) safe additions — audited clean across the cached catalogs (2026-08):
     'reta': 'retatrutide',        # standalone "Reta Nmg" singles (purerx) + the Reta/Cagri blend's 1st part
     '5 amino mq': '5-amino-1mq',  # "5-Amino-MQ" spelling variant (nextgen) — NAD+5-AMINO-MQ blend's 2nd part
+    # 2026-08 abbreviation near-misses (ion-peptide names, likely shared by other vendors). Whole-word
+    # matched (\bkey\b), so each hits only the standalone abbreviation — the full names (cagrilintide,
+    # ipamorelin, sermorelin, igf-1-lr3) already resolve via their own aliases and are unaffected:
+    'cag': 'cagrilintide',        # ion "Cag" (5/10mg) — standalone; \bcag\b never matches inside "cagrilintide"/"cagri"
+    'ipamo': 'ipamorelin',        # ion "Ipamo" (5/10mg)
+    'sermo': 'sermorelin',        # ion "Sermo" (5/10/15mg)
+    'igf lr3': 'igf-1-lr3',       # ion "IGF-LR3" (1mg) — normalizes to "igf lr3" (no "1"), missed by the igf-1-lr3 aliases
 }
 
 
@@ -469,6 +476,18 @@ def _nura(n):
     if re.match(r'GLP-3R\b', n, re.I): return (_c('Retatrutide', 'GLP-3R'), 'retatrutide', 'single')
     if re.match(r'GLP-2T\b', n, re.I): return (_c('Tirzepatide', 'GLP-2T'), 'tirzepatide', 'single')
     if re.match(r'GLP-1SG', n, re.I): return (_c('Semaglutide', 'GLP-1SG'), 'semaglutide', 'single')
+
+
+@_decoder('ion-peptide')  # ION-1S/2T/3R DECODED — Mark, first-hand (2026-08; has vials / has ordered), the SAME
+# BASIS as Nura's GLP line and GLYCON-X: a FIRST-HAND VENDOR DECODE, NOT a certificate and NOT decoding-by-
+# convention (the 1S/2T/3R suffixes only CORROBORATE the roster's GLP-1=Sema / GLP-2=Tirz / GLP-3=Reta key).
+# Recorded explicitly per the coded-name verification standard so nobody later reads it as decode-by-convention:
+#   ION-1S = Semaglutide · ION-2T = Tirzepatide · ION-3R = Retatrutide
+# Size comes from the product's dosage variant (10mg/20mg/...), so no embedded-mg tuple element is needed.
+def _ion(n):
+    if re.match(r'ION-1S\b', n, re.I): return (_c('Semaglutide', 'ION-1S'), 'semaglutide', 'single')
+    if re.match(r'ION-2T\b', n, re.I): return (_c('Tirzepatide', 'ION-2T'), 'tirzepatide', 'single')
+    if re.match(r'ION-3R\b', n, re.I): return (_c('Retatrutide', 'ION-3R'), 'retatrutide', 'single')
 
 
 @_decoder('real-peptides')  # GLYCON-X = Tirzepatide — VERIFIED by the VIAL LABEL "GLP-2 T" (Mark has one in
