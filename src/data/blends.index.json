@@ -15,10 +15,10 @@
     "configs": [
       {
         "config": "10mg",
-        "vendors": 6
+        "vendors": 7
       }
     ],
-    "vendors": 6,
+    "vendors": 7,
     "indexable": true
   },
   {
@@ -71,11 +71,11 @@
       },
       {
         "config": "20mg",
-        "vendors": 16
+        "vendors": 17
       },
       {
         "config": "5mg",
-        "vendors": 9
+        "vendors": 8
       }
     ],
     "vendors": 28,
