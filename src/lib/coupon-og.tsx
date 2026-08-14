@@ -11,6 +11,22 @@ const ACCENT = "#22d3ee"; // bright cyan accent (code + pill + wordmark) — pop
 const WHITE = "#ffffff";
 const LIGHT = "#cbd5e1"; // muted slate for sub-line / label
 
+// Light-tone palette — for the coupon/hub cards that sit on Mark's near-white vial photo.
+// The dark background text (white/cbd5e1/cyan) is illegible on near-white, so these cards
+// switch to ink/muted/brand-blue. Only VendorCard + FallbackCard opt in (tone="light");
+// every other card keeps the dark treatment (tone defaults to "dark"), so they render
+// byte-identically.
+const INK = "#16181B";          // light-card headline
+const MUTED = "#516B7D";        // light-card secondary — approved, 5.60:1 on the vial canvas
+const LIGHT_ACCENT = "#3A759F"; // light-card code / pill / wordmark (the brand blue)
+
+type Tone = "dark" | "light";
+function palette(tone: Tone) {
+  return tone === "light"
+    ? { headline: INK, secondary: MUTED, accent: LIGHT_ACCENT }
+    : { headline: WHITE, secondary: LIGHT, accent: ACCENT };
+}
+
 function parseDiscountPercent(raw: string): number | null {
   const match = raw.match(/(\d+)\s*%/);
   return match ? parseInt(match[1], 10) : null;
@@ -58,6 +74,7 @@ function codeFontSize(code: string): number {
 
 interface Assets {
   bg: string;
+  bgLight: string;
   mark: string;
   fonts: { name: string; data: Buffer; weight: 400 | 500 | 700 | 800; style: "normal" }[];
 }
@@ -78,8 +95,9 @@ function loadAssets(): Promise<Assets> {
   if (!assetsPromise) {
     assetsPromise = (async () => {
       const root = process.cwd();
-      const [bg, mark, regular, medium, bold, extraBold] = await Promise.all([
+      const [bg, bgLight, mark, regular, medium, bold, extraBold] = await Promise.all([
         readFile(join(root, "public/og/coupon-card-base.jpg")),
+        readFile(join(root, "public/og/coupon-card-light.jpg")),
         readFile(join(root, "public/logo-glasses.png")),
         readFile(join(root, "public/fonts/Inter-Regular.ttf")),
         readFile(join(root, "public/fonts/Inter-Medium.ttf")),
@@ -88,6 +106,7 @@ function loadAssets(): Promise<Assets> {
       ]);
       return {
         bg: `data:image/jpeg;base64,${bg.toString("base64")}`,
+        bgLight: `data:image/jpeg;base64,${bgLight.toString("base64")}`,
         mark: `data:image/png;base64,${mark.toString("base64")}`,
         fonts: [
           { name: "Inter", data: regular, weight: 400, style: "normal" },
@@ -103,13 +122,13 @@ function loadAssets(): Promise<Assets> {
 
 // ---- shared building blocks ------------------------------------------------
 
-function LogoLockup({ mark }: { mark: string }) {
+function LogoLockup({ mark, tone = "dark" }: { mark: string; tone?: Tone }) {
   // OFFICIAL brand mark — public/logo-glasses.png rendered as a raster (Mark's own
   // file, the same asset the news cards use), NOT a redrawn vector. The only change
   // permitted to the asset is resizing; it is never recolored, redrawn, or simplified.
-  // The mark is the arms-glasses tile (white on #3A759F). The wordmark keeps the card's
-  // cyan accent — the two-blue treatment (blue tile vs cyan wordmark) is Mark's call and
-  // is shipped as-is, a separate decision from removing the drawing.
+  // The mark is the arms-glasses tile (white on #3A759F). The wordmark takes the tone's
+  // accent — cyan on the dark cards, brand-blue on the light vial cards. tone defaults to
+  // "dark", so the home/content/news lockups are unchanged.
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -119,7 +138,7 @@ function LogoLockup({ mark }: { mark: string }) {
           marginLeft: 16,
           fontSize: 44,
           fontWeight: 700,
-          color: ACCENT,
+          color: palette(tone).accent,
           letterSpacing: -1,
         }}
       >
@@ -129,14 +148,14 @@ function LogoLockup({ mark }: { mark: string }) {
   );
 }
 
-function PriceTagIcon() {
+function PriceTagIcon({ tone = "dark" }: { tone?: Tone }) {
   return (
     <svg
       width={44}
       height={44}
       viewBox="0 0 24 24"
       fill="none"
-      stroke={ACCENT}
+      stroke={palette(tone).accent}
       strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -147,19 +166,20 @@ function PriceTagIcon() {
   );
 }
 
-function ViewDealsPill() {
+function ViewDealsPill({ tone = "dark" }: { tone?: Tone }) {
+  const pal = palette(tone);
   return (
     <div
       style={{
         display: "flex",
         alignSelf: "flex-start",
         alignItems: "center",
-        border: `2px solid ${ACCENT}`,
+        border: `2px solid ${pal.accent}`,
         borderRadius: 999,
         padding: "16px 40px",
       }}
     >
-      <div style={{ fontSize: 32, fontWeight: 600, color: WHITE }}>View Deals</div>
+      <div style={{ fontSize: 32, fontWeight: 600, color: pal.headline }}>View Deals</div>
       {/* SVG arrow — a Unicode → renders thin regardless of font-size, so draw it
           with a stroke weight matched to the bold label and sized to its cap-height. */}
       <svg
@@ -167,7 +187,7 @@ function ViewDealsPill() {
         height={23}
         viewBox="0 0 30 23"
         fill="none"
-        stroke={ACCENT}
+        stroke={pal.accent}
         strokeWidth={3.4}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -226,6 +246,7 @@ function VendorCard({
   percent,
   code,
   prefix,
+  tone = "dark",
 }: {
   bg: string;
   mark: string;
@@ -233,10 +254,12 @@ function VendorCard({
   percent: number;
   code: string;
   prefix?: string;
+  tone?: Tone;
 }) {
+  const pal = palette(tone);
   return (
     <Shell bg={bg} justify="center">
-      <LogoLockup mark={mark} />
+      <LogoLockup mark={mark} tone={tone} />
 
       <div style={{ display: "flex", flexDirection: "column", marginTop: 28 }}>
         {prefix && (
@@ -245,7 +268,7 @@ function VendorCard({
               display: "flex",
               fontSize: 40,
               fontWeight: 700,
-              color: LIGHT,
+              color: pal.secondary,
               letterSpacing: 2,
               marginBottom: 4,
             }}
@@ -259,45 +282,46 @@ function VendorCard({
             whiteSpace: "nowrap",
             fontSize: 140,
             fontWeight: 800,
-            color: WHITE,
+            color: pal.headline,
             lineHeight: 1,
             letterSpacing: -4,
           }}
         >
           {`${percent}% OFF`}
         </div>
-        <div style={{ display: "flex", marginTop: 10, fontSize: 48, fontWeight: 500, color: LIGHT, letterSpacing: -0.5 }}>
+        <div style={{ display: "flex", marginTop: 10, fontSize: 48, fontWeight: 500, color: pal.secondary, letterSpacing: -0.5 }}>
           {name}
         </div>
         <div style={{ display: "flex", alignItems: "center", marginTop: 26 }}>
-          <PriceTagIcon />
+          <PriceTagIcon tone={tone} />
           <div style={{ display: "flex", alignItems: "center", marginLeft: 16 }}>
-            <div style={{ fontSize: 36, fontWeight: 500, color: LIGHT, marginRight: 14 }}>Use code</div>
-            <div style={{ fontSize: codeFontSize(code), fontWeight: 700, color: ACCENT, letterSpacing: 1 }}>{code}</div>
+            <div style={{ fontSize: 36, fontWeight: 500, color: pal.secondary, marginRight: 14 }}>Use code</div>
+            <div style={{ fontSize: codeFontSize(code), fontWeight: 700, color: pal.accent, letterSpacing: 1 }}>{code}</div>
           </div>
         </div>
       </div>
 
       <div style={{ display: "flex", marginTop: 40 }}>
-        <ViewDealsPill />
+        <ViewDealsPill tone={tone} />
       </div>
     </Shell>
   );
 }
 
-function FallbackCard({ bg, mark }: { bg: string; mark: string }) {
+function FallbackCard({ bg, mark, tone = "dark" }: { bg: string; mark: string; tone?: Tone }) {
+  const pal = palette(tone);
   return (
     <Shell bg={bg}>
-      <LogoLockup mark={mark} />
+      <LogoLockup mark={mark} tone={tone} />
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <div style={{ display: "flex", fontSize: 72, fontWeight: 700, color: WHITE, lineHeight: 1.05, letterSpacing: -2 }}>
+        <div style={{ display: "flex", fontSize: 72, fontWeight: 700, color: pal.headline, lineHeight: 1.05, letterSpacing: -2 }}>
           Verified Discount Codes
         </div>
-        <div style={{ display: "flex", marginTop: 16, fontSize: 32, fontWeight: 500, color: LIGHT }}>
+        <div style={{ display: "flex", marginTop: 16, fontSize: 32, fontWeight: 500, color: pal.secondary }}>
           For trusted research peptide vendors
         </div>
       </div>
-      <ViewDealsPill />
+      <ViewDealsPill tone={tone} />
     </Shell>
   );
 }
@@ -314,8 +338,8 @@ export const COUPON_HUB_ALT = "Prof. Peptide — verified research peptide disco
 // linkable from a post about any vendor or any (time-limited) rate without ever
 // contradicting the post.
 export async function generateCouponHubOg(): Promise<ImageResponse> {
-  const { bg, mark, fonts } = await loadAssets();
-  return new ImageResponse(<FallbackCard bg={bg} mark={mark} />, { ...IMAGE_SIZE, fonts });
+  const { bgLight, mark, fonts } = await loadAssets();
+  return new ImageResponse(<FallbackCard bg={bgLight} mark={mark} tone="light" />, { ...IMAGE_SIZE, fonts });
 }
 
 // Homepage / site-root brand card. Brand + purpose only — deliberately NO numbers
@@ -379,7 +403,7 @@ export async function generateContentOg(): Promise<ImageResponse> {
 }
 
 export async function generateCouponOg(slug: string): Promise<ImageResponse> {
-  const { bg, mark, fonts } = await loadAssets();
+  const { bgLight, mark, fonts } = await loadAssets();
   const vendor = vendors[slug];
   const { percent: pct, prefix } = vendor
     ? resolveOgCopy(slug, vendor.discount)
@@ -387,9 +411,9 @@ export async function generateCouponOg(slug: string): Promise<ImageResponse> {
 
   const element =
     !vendor || pct === null ? (
-      <FallbackCard bg={bg} mark={mark} />
+      <FallbackCard bg={bgLight} mark={mark} tone="light" />
     ) : (
-      <VendorCard bg={bg} mark={mark} name={vendor.name} percent={pct} code={vendor.code} prefix={prefix} />
+      <VendorCard bg={bgLight} mark={mark} tone="light" name={vendor.name} percent={pct} code={vendor.code} prefix={prefix} />
     );
 
   return new ImageResponse(element, { ...IMAGE_SIZE, fonts });
