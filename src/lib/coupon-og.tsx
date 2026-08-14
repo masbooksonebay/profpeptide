@@ -347,15 +347,16 @@ export async function generateCouponHubOg(): Promise<ImageResponse> {
 // refresh, so any figure baked here would become permanently stale. Same Shell / LogoLockup
 // (the CURRENT vector mark) / palette / fonts as the vendor cards, so social cards read as a
 // consistent family and the homepage stops falling back to the outdated 1024² raster.
-function HomeCard({ bg, mark }: { bg: string; mark: string }) {
+function HomeCard({ bg, mark, tone = "dark" }: { bg: string; mark: string; tone?: Tone }) {
+  const pal = palette(tone);
   return (
     <Shell bg={bg} justify="center">
-      <LogoLockup mark={mark} />
+      <LogoLockup mark={mark} tone={tone} />
       <div style={{ display: "flex", flexDirection: "column", marginTop: 30 }}>
-        <div style={{ display: "flex", fontSize: 64, fontWeight: 700, color: WHITE, lineHeight: 1.06, letterSpacing: -2 }}>
+        <div style={{ display: "flex", fontSize: 64, fontWeight: 700, color: pal.headline, lineHeight: 1.06, letterSpacing: -2 }}>
           Independent Peptide Research
         </div>
-        <div style={{ display: "flex", marginTop: 18, fontSize: 31, fontWeight: 500, color: LIGHT, lineHeight: 1.3 }}>
+        <div style={{ display: "flex", marginTop: 18, fontSize: 31, fontWeight: 500, color: pal.secondary, lineHeight: 1.3 }}>
           Compound profiles, price comparison &amp; verified vendor codes
         </div>
       </div>
@@ -367,8 +368,8 @@ function HomeCard({ bg, mark }: { bg: string; mark: string }) {
 export const HOME_OG_ALT = "Prof. Peptide — independent peptide research library";
 
 export async function generateHomeOg(): Promise<ImageResponse> {
-  const { bg, mark, fonts } = await loadAssets();
-  return new ImageResponse(<HomeCard bg={bg} mark={mark} />, { ...IMAGE_SIZE, fonts });
+  const { bgLight, mark, fonts } = await loadAssets();
+  return new ImageResponse(<HomeCard bg={bgLight} mark={mark} tone="light" />, { ...IMAGE_SIZE, fonts });
 }
 
 // Content-generic card for the shared content pages (peptide profiles, supplements,
@@ -381,15 +382,16 @@ export const CONTENT_OG_HEADLINE = "Independent Peptide & Supplement Research";
 export const CONTENT_OG_TAGLINE = "Evidence-based profiles, comparisons & price data";
 export const CONTENT_OG_ALT = "Prof. Peptide — independent peptide & supplement research";
 
-function ContentCard({ bg, mark }: { bg: string; mark: string }) {
+function ContentCard({ bg, mark, tone = "dark" }: { bg: string; mark: string; tone?: Tone }) {
+  const pal = palette(tone);
   return (
     <Shell bg={bg} justify="center">
-      <LogoLockup mark={mark} />
+      <LogoLockup mark={mark} tone={tone} />
       <div style={{ display: "flex", flexDirection: "column", marginTop: 30 }}>
-        <div style={{ display: "flex", fontSize: 48, fontWeight: 700, color: WHITE, lineHeight: 1.12, letterSpacing: -1.5 }}>
+        <div style={{ display: "flex", fontSize: 48, fontWeight: 700, color: pal.headline, lineHeight: 1.12, letterSpacing: -1.5 }}>
           {CONTENT_OG_HEADLINE}
         </div>
-        <div style={{ display: "flex", marginTop: 18, fontSize: 31, fontWeight: 500, color: LIGHT, lineHeight: 1.3 }}>
+        <div style={{ display: "flex", marginTop: 18, fontSize: 31, fontWeight: 500, color: pal.secondary, lineHeight: 1.3 }}>
           {CONTENT_OG_TAGLINE}
         </div>
       </div>
@@ -398,8 +400,8 @@ function ContentCard({ bg, mark }: { bg: string; mark: string }) {
 }
 
 export async function generateContentOg(): Promise<ImageResponse> {
-  const { bg, mark, fonts } = await loadAssets();
-  return new ImageResponse(<ContentCard bg={bg} mark={mark} />, { ...IMAGE_SIZE, fonts });
+  const { bgLight, mark, fonts } = await loadAssets();
+  return new ImageResponse(<ContentCard bg={bgLight} mark={mark} tone="light" />, { ...IMAGE_SIZE, fonts });
 }
 
 export async function generateCouponOg(slug: string): Promise<ImageResponse> {
