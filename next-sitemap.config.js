@@ -74,41 +74,64 @@ const noindexPricePaths = new Set(
   priceIndex.filter((p) => !p.indexable).map((p) => `/prices/${p.slug}`),
 );
 const PRICE_DETAIL = /^\/prices\/[a-z0-9-]+$/;
+const NEWS_DETAIL = /^\/news\/[a-z0-9-]+$/;
 
-// ── lastmod: DELIBERATELY ABSENT (do not re-add build-time or git-date lastmod) ──────────────
-// next-sitemap's DEFAULT lastmod is BUILD TIME (autoLastmod: true) — every URL's lastmod bumps on
-// every deploy even when the page didn't change, a noisy signal Google learns to discount. So we
-// set `autoLastmod: false` and emit NO <lastmod> at all: an absent lastmod is neutral; a fake,
-// always-fresh one is worse.
+// ── lastmod: PARTIAL, per-ENTITY data dates only (never a build-time or per-file git date) ──────
+// autoLastmod stays FALSE. next-sitemap's autoLastmod:true stamps `new Date().toISOString()` — the
+// BUILD TIME, identical on every URL, bumping on every deploy even when nothing changed. That trains
+// Google to discount the signal and is strictly worse than nothing.
 //
-// A content-based lastmod (git last-commit date of each route's source/data files) was BUILT and
-// REVERTED in Aug 2026 (see git history around this file + vercel.json). The reason it was dropped —
-// do NOT rebuild it without solving this:
+// A prior (Aug 2026) attempt used the git last-commit date of each route's source/data files. It was
+// reverted because the dates were FLAT: the ~111 coupon+price pages all derive from the SHARED files
+// vendors.ts / prices.generated.ts, so one pull re-dates them all at once, and any sitewide prose
+// sweep re-dates every file it touches — ~5 distinct dates across 282 routes. Do NOT reintroduce a
+// per-file git date.
 //
-//   The un-shallow WORKED and the resolver RAN CORRECTLY. Verified from Vercel's build logs for
-//   commit f83259a: the buildCommand's `git fetch --unshallow` succeeded, full git history was
-//   available in CI, and the build emitted "content-lastmod: all 282 route(s) resolved to a git
-//   date" — every route got a REAL git date, none fell back.
+// What we emit instead — ONLY where the date reflects a REAL change to that entity, sourced from
+// build-visible data, so different pages carry genuinely different dates:
+//   • /coupons/<vendor>   -> lastmodData.vendorPulled[vendor]   (that vendor's own price-pull date)
+//   • /prices/<compound>  -> lastmodData.compoundPulled[compound] (MAX pull date over the vendors that
+//                            render a row for it — the compound's freshest data)
+//   • /news/<slug>        -> the article's publish date, parsed from news.ts
+// Both maps come from docs/PP_PRICE_DATA_MASTER_v1.md via scripts/price-pull/to_prices.py (the doc's
+// per-vendor `pulled:` dates), regenerated deterministically and drift-checked by check:prices-sync.
 //
-//   The dates were just FLAT. 282 lastmods resolved to only ~5 distinct timestamps, because the
-//   dates block-date together two ways: (a) the ~111 coupon + price pages all derive from the SHARED
-//   files src/data/vendors.ts and src/data/prices.generated.ts, so a single pull re-dates all of
-//   them at once; and (b) git can't distinguish a substantive rewrite from a formatting pass, so any
-//   sitewide sweep (prose/description passes) resets the date on every file it touches. ~5 dates
-//   across 282 routes isn't granularity — it's an always-fresh signal that only meaningfully varies
-//   for the self-contained pages (profiles/guides/news/compare). Not worth the CI prerequisite.
-//
-//   NOTE: earlier notes on this (and commit 4cf76bd's message) wrongly blamed a silently-failed
-//   un-shallow / shallow `git log` returning the HEAD date. That was a misdiagnosis — the build logs
-//   show the un-shallow worked. The real, and only, problem is the flatness above.
+// EVERYTHING ELSE gets NO <lastmod>. Self-contained editorial pages (profiles/compare/guides) were
+// intentionally left out: their only date source is the per-file git date, which the measurement above
+// showed collapses under sweeps and needs a CI `git fetch --unshallow`. An absent lastmod is neutral;
+// a fabricated one is corrosive. Partial coverage is the design, not a gap.
+const lastmodData = require("./src/data/lastmod.generated.json");
+const { vendorPulled = {}, compoundPulled = {} } = lastmodData;
+
+// News publish dates: parsed from src/data/news.ts (the source of truth; no generated JSON). Each
+// article's `date` is a human string ("August 8, 2026"); convert to ISO with an explicit month map so
+// the value is timezone-independent (never Date.parse, which shifts across the UTC boundary). The regex
+// pairs each `slug:` with the `date:` in the SAME object by refusing to cross another `slug:`.
+const NEWS_TS = path.join(__dirname, "src", "data", "news.ts");
+const MONTHS = { January: "01", February: "02", March: "03", April: "04", May: "05", June: "06",
+  July: "07", August: "08", September: "09", October: "10", November: "11", December: "12" };
+const newsDates = (() => {
+  const src = fs.readFileSync(NEWS_TS, "utf8");
+  const re = /slug:\s*"([^"]+)"(?:(?!slug:)[\s\S])*?date:\s*"([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})"/g;
+  const map = {};
+  let m;
+  while ((m = re.exec(src))) {
+    const [, slug, mon, day, year] = m;
+    if (MONTHS[mon]) map[slug] = `${year}-${MONTHS[mon]}-${String(day).padStart(2, "0")}`;
+  }
+  return map;
+})();
 
 module.exports = {
   siteUrl: "https://profpeptide.com",
   generateRobotsTxt: true,
   trailingSlash: false,
-  // Emit NO <lastmod> — see the note above module.exports. autoLastmod: false stops next-sitemap
-  // from injecting the build-time default; nothing here re-adds one.
+  // autoLastmod: false stops next-sitemap injecting the build-time default. lastmod is added
+  // per-entity in transform()/additionalPaths() — see the note above module.exports.
   autoLastmod: false,
+  // changefreq + priority are DROPPED entirely (not set here, not returned below). Google ignores
+  // both, and a uniform changefreq=daily is a false "everything changes daily" signal — same class
+  // of noise as a build-time lastmod. Omitting the keys makes next-sitemap emit neither tag.
   exclude: [
     // Legacy /research and /research/* -> 301 redirect to /peptides/* (next.config.js).
     // Canonical lives at /peptides/<slug>, which IS included.
@@ -134,23 +157,22 @@ module.exports = {
     // the manifest — drop the manifest copy so inclusion is deterministic and
     // never duplicated.
     if (COUPON_DETAIL.test(path)) return null;
-    return {
-      loc: path,
-      changefreq: config.changefreq,
-      priority: config.priority,
-      // No lastmod (autoLastmod: false) — see the note above module.exports.
-    };
+    // Per-entity lastmod (partial). Price pages -> the compound's freshest pull date; news -> publish
+    // date. Absent from the map -> no <lastmod> (never a build-time date). No changefreq/priority.
+    let lastmod;
+    if (PRICE_DETAIL.test(path)) lastmod = compoundPulled[path.slice("/prices/".length)];
+    else if (NEWS_DETAIL.test(path)) lastmod = newsDates[path.slice("/news/".length)];
+    return { loc: path, ...(lastmod ? { lastmod } : {}) };
   },
   additionalPaths: async (config) => [
     // /peptides and /supplements USED to be re-added here: reading `?category` off searchParams
     // opted them into DYNAMIC (ƒ) rendering, so next-sitemap's manifest crawl (static ○ routes
     // only) missed them. The category filter is now client-side (HubCategoryBrowser), so both
     // hubs prerender ○ and enter the manifest on their own — the explicit re-add is gone.
-    ...activeCouponSlugs.map((slug) => ({
-      loc: `/coupons/${slug}`,
-      changefreq: config.changefreq,
-      priority: config.priority,
-      // No lastmod (autoLastmod: false) — see the note above module.exports.
-    })),
+    ...activeCouponSlugs.map((slug) => {
+      // Coupon lastmod = that vendor's own price-pull date (absent -> no <lastmod>). No changefreq/priority.
+      const lastmod = vendorPulled[slug];
+      return { loc: `/coupons/${slug}`, ...(lastmod ? { lastmod } : {}) };
+    }),
   ],
 };

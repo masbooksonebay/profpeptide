@@ -511,13 +511,41 @@ BLEND_CARRIES_OUT = ROOT / "src" / "data" / "blend-carries.generated.json"
 blend_carries = {slug: sorted({i["vendor"] for i in items}) for slug, items in sorted(_blend_groups.items())}
 blend_carries_text = json.dumps(blend_carries, indent=2) + "\n"
 
+# --- sitemap lastmod: REAL per-entity change dates from the doc's per-vendor `pulled:` dates -------
+# next-sitemap reads this to stamp <lastmod> on ONLY the two URL classes whose change date we truly
+# record: /coupons/<vendor> (that vendor's own pull date) and /prices/<compound> (the MAX pull date
+# over the vendors that render a row for it — the compound's freshest data). Absent from this map ->
+# no lastmod for that URL (partial coverage is deliberate; never a fake/build-time date). Deterministic
+# from the doc, so check:prices-sync diffs it exactly like the other emitted artifacts.
+LASTMOD_OUT = ROOT / "src" / "data" / "lastmod.generated.json"
+_vendor_pulled = {v: d.isoformat() for v, d in VENDOR_PULLED.items()}
+_compound_pulled = {}
+# single compounds: MAX pull date over the non-retired vendors that render a row (mirrors the index's _cc)
+for c, vs in _cc.items():
+    ds = [VENDOR_PULLED[v] for v in vs if v in VENDOR_PULLED]
+    if ds:
+        _compound_pulled[c] = max(ds).isoformat()
+# blend price pages (/prices/<blend-slug>): MAX pull date over the blend's non-retired vendors
+for slug, items in _blend_groups.items():
+    ds = [VENDOR_PULLED[i["vendor"]] for i in items
+          if i["vendor"] in VENDOR_PULLED and i["vendor"] not in RETIRED]
+    if ds:
+        d = max(ds).isoformat()
+        _compound_pulled[slug] = max(d, _compound_pulled.get(slug, d))
+lastmod_obj = {
+    "vendorPulled": dict(sorted(_vendor_pulled.items())),
+    "compoundPulled": dict(sorted(_compound_pulled.items())),
+}
+lastmod_text = json.dumps(lastmod_obj, indent=2) + "\n"
+
 # --emit MODE (for check:prices-sync): print the artifact to stdout, write NOTHING, no report.
 # The transform is deterministic (PRICES_UPDATED comes from the doc, not today's date), so the
 # guard can diff this stdout against the committed file for an exact drift check.
 if "--emit" in sys.argv:
     what = sys.argv[sys.argv.index("--emit") + 1] if sys.argv.index("--emit") + 1 < len(sys.argv) else "prices"
     sys.stdout.write({"prices": prices_text, "index": index_text,
-                      "blends": blends_text, "blends-index": blends_index_text}.get(what, prices_text))
+                      "blends": blends_text, "blends-index": blends_index_text,
+                      "lastmod": lastmod_text}.get(what, prices_text))
     sys.exit(0)
 
 OUT.write_text(prices_text)
@@ -525,6 +553,7 @@ INDEX_OUT.write_text(index_text)
 BLEND_OUT.write_text(blends_text)
 BLEND_INDEX_OUT.write_text(blends_index_text)
 BLEND_CARRIES_OUT.write_text(blend_carries_text)
+LASTMOD_OUT.write_text(lastmod_text)
 
 # --- report ------------------------------------------------------------------
 print(f"PRICES_UPDATED (oldest rendering vendor's pull date): {PRICES_UPDATED}")
