@@ -37,9 +37,10 @@ const nextConfig = {
   // without this the tracer can drop them and 500 the cards in production.
   experimental: {
     outputFileTracingIncludes: {
-      // Coupon cards now render the OFFICIAL brand mark (LogoLockup → public/logo-glasses.png)
-      // in addition to the vial base — both must be traced or the cards 500 in prod.
-      "/coupons/**": ["./public/og/coupon-card-base.jpg", "./public/logo-glasses.png", "./public/fonts/*.ttf"],
+      // Coupon cards render the OFFICIAL brand mark (LogoLockup → public/logo-glasses.png) on the
+      // LIGHT vial base (coupon-card-light.jpg); the dark base is still loaded by loadAssets (shared
+      // with home/content) so it stays traced too. All must be bundled or the cards 500 in prod.
+      "/coupons/**": ["./public/og/coupon-card-base.jpg", "./public/og/coupon-card-light.jpg", "./public/logo-glasses.png", "./public/fonts/*.ttf"],
       // News OG cards: article routes render the brand tile (generateNewsOg → logo-glasses.png);
       // the /news hub still uses the content card (generateContentOg → coupon-card-base.jpg).
       // Both need the Inter fonts. Without this, the tracer drops the assets in prod → 500.
