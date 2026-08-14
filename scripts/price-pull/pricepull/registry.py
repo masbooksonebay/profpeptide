@@ -275,6 +275,14 @@ VENDORS = {
               "generic boilerplate with NO mechanistic identity (no triple/dual-agonist spec, no CAS/formula/name), "
               "so NOT decoded by analogy (Mark's rule). GLP-3R/CAG is a coded blend. Affiliate URL is query-param "
               "(?ref=profpeptide) — handled TS-side at grid-wire time."),
+    "ion-peptide": dict(name="Ion Peptide", domain="ionpeptide.com", adapter="woo",
+        variation_model="dosage", coded_decoder=True,  # size from the Variant/Variation/Size attr ("10mg" etc.)
+        sale_posture="Confirm at write — product-level sale_price priced if present.",
+        notes="Woo Store API is PUBLIC (catalog + prices); the 'Wholesale Research Supply Portal' login gates "
+              "CHECKOUT only, not the catalog — the pull is unauthenticated (plain ?ref= link). USD only. Coded "
+              "GLPs DECODED via Mark's first-hand confirmation (2026-08): ION-1S=Semaglutide, ION-2T=Tirzepatide, "
+              "ION-3R=Retatrutide (same basis as Nura's GLP line). Accessories/supplies (vial caps, vial cases, "
+              "acetic acid, BAC/saline, raw 1g powders) fall out via the scope filter."),
     "legendary-peptides": dict(name="Legendary Peptides", domain="www.legendarypeptides.com", adapter="woo",
         variation_model="dosage", coded_decoder=True,
         sale_posture="No known cart-level auto-coupon; free shipping over $200 (not a price discount). Re-verify at write.",

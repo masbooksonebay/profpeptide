@@ -3004,3 +3004,94 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ---
 
+
+
+## VENDOR: Ion Peptide
+- **slug:** ion-peptide | **code:** PROFPEPTIDE | **discount:** 15% off | **url:** ionpeptide.com
+- **traffic:** (not pulled) | **pulled:** August 14 2026
+- **sale posture:** Confirm at write — product-level sale_price priced if present.
+
+### Single compounds
+| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| 5-Amino-1MQ | 10mg | $49.00 | $4.90 | — | ✓ | product/5a1mq/ |
+| 5-Amino-1MQ | 20mg | $79.00 | $3.95 | — | ✓ | product/5a1mq/ |
+| 5-Amino-1MQ | 50mg | $115.00 | $2.30 | — | ✗ | product/5a1mq/ |
+| Adamax | 10mg | $69.00 | $6.90 | — | ✗ | product/adx10/ |
+| Bronchogen [backlog] | 20mg | $79.00 | $3.95 | — | ✗ | product/bron20/ |
+| Cagrilintide | 5mg | $59.00 | $11.80 | — | ✓ | product/cag/ |
+| Cagrilintide | 10mg | $99.00 | $9.90 | — | ✓ | product/cag/ |
+| Cardiogen | 25mg | $59.00 | $2.36 | — | ✗ | product/cdgn/ |
+| Cartalax [backlog] | 20mg | $79.00 | $3.95 | — | ✓ | product/cart20/ |
+| Cibinetide | 10mg | $59.00 | $5.90 | — | ✓ | product/ara290/ |
+| Cibinetide | 16mg | $75.00 | $4.69 | — | ✓ | product/ara290/ |
+| Cibinetide | 50mg | $179.00 | $3.58 | — | ✗ | product/ara290/ |
+| DSIP | 10mg | $45.00 | $4.50 | — | ✗ | product/dsip/ |
+| Epitalon | 10mg | $35.00 | $3.50 | — | ✓ | product/epi/ |
+| Epitalon | 50mg | $119.00 | $2.38 | — | ✓ | product/epi/ |
+| FOXO4-DRI [backlog] | 10mg | $119.00 | $11.90 | — | ✓ | product/fdri10/ |
+| GHRP-2 | 5mg | $29.00 | $5.80 | — | ✗ | product/ghrp25/ |
+| GHRP-6 | 5mg | $29.00 | $5.80 | — | ✗ | product/ghp65/ |
+| Glutathione | 600mg | $29.00 | $0.05 | — | ✓ | product/glu/ |
+| Glutathione | 750mg | $35.00 | $0.05 | — | ✗ | product/glu/ |
+| Glutathione | 1500mg | $55.00 | $0.04 | — | ✓ | product/glu/ |
+| IGF-1 LR3 | 1mg | $90.00 | $90.00 | — | ✓ | product/iglr1/ |
+| Ipamorelin | 5mg | $35.00 | $7.00 | — | ✓ | product/ipamo/ |
+| Ipamorelin | 10mg | $42.00 | $4.20 | — | ✓ | product/ipamo/ |
+| KPV | 10mg | $49.00 | $4.90 | — | ✓ | product/kpv10/ |
+| KPV | 20mg | $69.00 | $3.45 | — | ✗ | product/kpv10/ |
+| LL-37 | 5mg | $45.00 | $9.00 | — | ✓ | product/ll375/ |
+| MGF | 2mg | $39.00 | $19.50 | — | ✗ | product/pegmgf2/ |
+| MOTS-C | 10mg | $42.00 | $4.20 | — | ✓ | product/mtsc/ |
+| MOTS-C | 40mg | $115.00 | $2.88 | — | ✓ | product/mtsc/ |
+| NAD+ | 500mg | $44.00 | $0.09 | — | ✓ | product/nadp/ |
+| NAD+ | 1000mg | $85.00 | $0.09 | — | ✓ | product/nadp/ |
+| PDA | 10mg | $49.00 | $4.90 | — | ✓ | product/pda10/ |
+| Pinealon | 10mg | $45.00 | $4.50 | — | ✗ | product/pin10/ |
+| PNC-27 [backlog] | 10mg | $119.00 | $11.90 | — | ✓ | product/pnc10/ |
+| Retatrutide (listed as ION-3R) | 5mg | $39.00 | $7.80 | — | ✓ | product/ion3r/ |
+| Retatrutide (listed as ION-3R) | 7mg | $49.00 | $7.00 | — | ✓ | product/ion3r/ |
+| Retatrutide (listed as ION-3R) | 10mg | $58.50 | $5.85 | — | ✓ | product/ion3r/ |
+| Retatrutide (listed as ION-3R) | 20mg | $99.95 | $5.00 | — | ✓ | product/ion3r/ |
+| Retatrutide (listed as ION-3R) | 30mg | $139.00 | $4.63 | — | ✓ | product/ion3r/ |
+| Retatrutide (listed as ION-3R) | 40mg | $165.00 | $4.12 | — | ✗ | product/ion3r/ |
+| Retatrutide (listed as ION-3R) | 50mg | $189.00 | $3.78 | — | ✓ | product/ion3r/ |
+| Retatrutide (listed as ION-3R) | 60mg | $219.00 | $3.65 | — | ✓ | product/ion3r/ |
+| Selank | 5mg | $25.00 | $5.00 | — | ✗ | product/slk/ |
+| Selank | 10mg | $34.65 | $3.46 | — | ✓ | product/slk/ |
+| Semaglutide (listed as ION-1S) | 5mg | $39.00 | $7.80 | — | ✓ | product/ion1s/ |
+| Semaglutide (listed as ION-1S) | 10mg | $55.00 | $5.50 | — | ✓ | product/ion1s/ |
+| Semaglutide (listed as ION-1S) | 20mg | $69.00 | $3.45 | — | ✓ | product/ion1s/ |
+| Semaglutide (listed as ION-1S) | 30mg | $99.00 | $3.30 | — | ✓ | product/ion1s/ |
+| Semax | 10mg | $49.00 | $4.90 | — | ✓ | product/smxa/ |
+| Semax | 30mg | $99.00 | $3.30 | — | ✓ | product/smxa/ |
+| Sermorelin | 5mg | $39.00 | $7.80 | — | ✓ | product/smo/ |
+| Sermorelin | 10mg | $65.00 | $6.50 | — | ✓ | product/smo/ |
+| SNAP-8 [backlog] | 10mg | $39.00 | $3.90 | — | ✓ | product/sn810/ |
+| Tesamorelin | 5mg | $45.00 | $9.00 | — | ✗ | product/tesa/ |
+| Tesamorelin | 10mg | $69.95 | $7.00 | — | ✓ | product/tesa/ |
+| Tesamorelin | 20mg | $109.00 | $5.45 | — | ✓ | product/tesa/ |
+| Thymalin [backlog] | 10mg | $59.00 | $5.90 | — | ✓ | product/thy10/ |
+| Thymosin Alpha-1 | 5mg | $42.00 | $8.40 | — | ✓ | product/ta1/ |
+| Thymosin Alpha-1 | 10mg | $65.00 | $6.50 | — | ✓ | product/ta1/ |
+| Tirzepatide (listed as ION-2T) | 10mg | $49.00 | $4.90 | — | ✓ | product/ion2t/ |
+| Tirzepatide (listed as ION-2T) | 20mg | $85.00 | $4.25 | — | ✓ | product/ion2t/ |
+| Tirzepatide (listed as ION-2T) | 30mg | $108.50 | $3.62 | — | ✓ | product/ion2t/ |
+| Tirzepatide (listed as ION-2T) | 40mg | $129.00 | $3.23 | — | ✓ | product/ion2t/ |
+| Tirzepatide (listed as ION-2T) | 60mg | $149.00 | $2.48 | — | ✓ | product/ion2t/ |
+| Tirzepatide (listed as ION-2T) | 100mg | $199.00 | $1.99 | — | ✓ | product/ion2t/ |
+| VIP | 10mg | $79.00 | $7.90 | — | ✓ | product/vip10/ |
+| VIP | 20mg | $79.00 | $3.95 | — | ✓ | product/vip10/ |
+
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $89.00 | not published | ✓ | product/glow70/ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $109.00 | not published | ✓ | product/klow80/ |
+| Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 13mg | $99.00 | not published | ✓ | product/tipa/ |
+
+### Sprays: none
+### Excluded: blend leak (Rule A): selank + semax — blend-registry candidate, multi-vial kit / pack (by name), no parseable size (Rule 4), out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+
+---
+
