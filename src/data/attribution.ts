@@ -70,6 +70,10 @@ const GRACED_LIST = [
   // ledger conversions, cf. biolongevity-labs). Added 2026-08-13. Being LISTED is also
   // what lets it render on profiles (it was already on the Featured Vendors page).
   "nura-peptide",
+  // capstone-peptides — code (PROFPEPTIDE, 10%) newly issued, no recorded conversions yet: a
+  // working code with $0 recorded is UNTESTED, not broken = GRACED by definition, same basis as
+  // nura-peptide (PROVEN needs ledger conversions, cf. biolongevity-labs). Added 2026-08-15.
+  "capstone-peptides",
 ];
 export const GRACED = new Set<string>(GRACED_LIST);
 

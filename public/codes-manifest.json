@@ -91,6 +91,13 @@
     "url": "https://biopurepeptides.com/?sld=profpeptide"
   },
   {
+    "slug": "capstone-peptides",
+    "name": "Capstone Peptides",
+    "code": "PROFPEPTIDE",
+    "discount": "10% off",
+    "url": "https://capstonepeptides.com/"
+  },
+  {
     "slug": "crush-research",
     "name": "Crush Research",
     "code": "PROFPEPTIDE",

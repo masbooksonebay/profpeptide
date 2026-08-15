@@ -180,6 +180,26 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/biocollex",
     facts: { coa: "per-batch", purityStandard: "99%", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
   },
+  // Onboarded Aug 2026. WooCommerce; catalog + per-vial prices public (no account gate). COAs are
+  // published PRE-PURCHASE in a per-lot library (/lab-testing-coas/) by Accumark Labs (a DBA of
+  // Valence Analytical LLC; Anaheim CA; Lab ID ACL-001), independently verifiable by an AccuVerify
+  // code on the LAB's own domain (accumarklabs.com/accuverify) — verified first-hand (Semaglutide
+  // lot 1045 = 99.56%; Retatrutide 30 mg lot 1051 = 99.52%). labName is COA-VERIFIED, so it goes in
+  // labName (not labClaim). Accumark prints NO laboratory accreditation on its certificates, so
+  // labAccreditation stays EMPTY — do NOT state one. The Accumark CORE PANEL covers identity, purity
+  // and quantity only (no endotoxin / heavy-metal / sterility), so contaminants stays EMPTY.
+  // purityStandard is the certificate's spec line; measured lots span 98.2%–99.92%. coa: library.
+  // Code PROFPEPTIDE (10% off) is newly issued with no recorded conversions yet → GRACED tier
+  // (attribution.ts) by the same standard as nura-peptide, but NOT set here pending Mark's call.
+  "capstone-peptides": {
+    name: "Capstone Peptides",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    url: "https://capstonepeptides.com/",
+    detailPage: "/coupons/capstone-peptides",
+    facts: { purityStandard: "≥98% by HPLC", coa: "library", labName: "Accumark Labs", testMethods: "HPLC" },
+  },
   "crush-research": {
     name: "Crush Research",
     code: "PROFPEPTIDE",
