@@ -84,6 +84,34 @@ export const BLEND_COMPONENTS: Record<string, string> = {
   CagriSema: "Cagrilintide + Semaglutide",
 };
 
+/**
+ * Blend slug → the compound-profile slugs it is composed of. Single source of truth for the
+ * "Related Blends" back-links on component profiles (each component profile links every blend it
+ * appears in). ⚠️ Those links are HAND-WRITTEN JSX in each profile — this map does NOT render them.
+ * So adding a blend here does not auto-add the back-links: scripts/check-orphan-pages.mjs reads this
+ * map and WARNS when a component profile is missing a link to a blend it's in, so the gap surfaces
+ * at build time instead of the back-link silently going missing (the silent-drop pattern).
+ * Keyed/valued by SLUG (not display name, unlike BLEND_COMPONENTS above, which is display-only).
+ */
+export const BLEND_COMPONENT_SLUGS: Record<string, string[]> = {
+  glow: ["ghk-cu", "bpc-157", "tb-500"],
+  klow: ["bpc-157", "tb-500", "ghk-cu", "kpv"],
+  "wolverine-stack": ["bpc-157", "tb-500"],
+  cagrisema: ["cagrilintide", "semaglutide"],
+  "aod-9604-mots-c": ["aod-9604", "mots-c"],
+  "semax-selank": ["semax", "selank"],
+  "gh-stack": ["cjc-1295", "ipamorelin"],
+  "kpv-bpc-157": ["kpv", "bpc-157"],
+  "nad-mots-c-5-amino-1mq": ["nad-plus", "mots-c", "5-amino-1mq"],
+  "pt-141-oxytocin": ["pt-141", "oxytocin"],
+  "semaglutide-bpc-157": ["semaglutide", "bpc-157"],
+  "tesamorelin-ipamorelin": ["tesamorelin", "ipamorelin"],
+  "tirzepatide-bpc-157": ["tirzepatide", "bpc-157"],
+  "cjc-1295-dac-ipamorelin": ["cjc-1295", "ipamorelin"],
+  "mk-677-ipamorelin": ["mk-677", "ipamorelin"],
+  "sermorelin-ipamorelin": ["sermorelin", "ipamorelin"],
+};
+
 /** Picker-row label: `Name (Components)` for listed blends, else the name as-is.
  *  DISPLAY ONLY — never use where the compound is stored, saved, or looked up. */
 export function compoundDisplayLabel(name: string): string {

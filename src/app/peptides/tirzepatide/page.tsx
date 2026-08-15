@@ -770,6 +770,13 @@ export default function TirzepatidePage() {
         <Link href="/peptides/cagrisema" className="text-sm font-medium text-[#3A759F] hover:underline">CagriSema</Link>
         </div>
       </div>
+
+      <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Blends</h2>
+        <div className="flex flex-wrap gap-4">
+        <Link href="/peptides/tirzepatide-bpc-157" className="text-sm font-medium text-[#3A759F] hover:underline">Tirzepatide + BPC-157</Link>
+        </div>
+      </div>
       <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
