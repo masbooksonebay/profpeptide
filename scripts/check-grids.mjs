@@ -84,6 +84,12 @@ const ONBOARDING_BACKLOG = {
   // (3) ⚠️ if the combined URL is adopted, note that VendorProductGrid's vendorDeepLink reconstructs
   // per-product URLs and may DROP the apply-promo param — verify grid Shop links still auto-apply.
   "ion-peptide":        { reason: "onboarded 2026-08; public woo catalog — card-top pending a price pull (decode ION-1S/2T/3R from a Kovera COA first)", since: "2026-08-10" },
+  // Onboarded 2026-08-15 (coupon page + registry live). Public woo Store API — catalog + per-vial
+  // prices readable with no account — so a price pull IS possible later; held coupon-page-only
+  // pending Mark's decision on whether Capstone enters the price grid. Coded GLPs (GLP-1S=Semaglutide
+  // / GLP-2T=Tirzepatide / GLP-3R=Retatrutide) decode straight from the product names. COAs are a
+  // public Accumark Labs library (per-lot, AccuVerify-checkable on the lab's own domain).
+  "capstone-peptides":  { reason: "onboarded 2026-08; public woo catalog — coupon-page-only pending Mark's price-grid decision", since: "2026-08-15" },
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────
