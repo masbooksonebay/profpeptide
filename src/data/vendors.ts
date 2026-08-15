@@ -198,6 +198,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://capstonepeptides.com/",
     detailPage: "/coupons/capstone-peptides",
+    editorsPick: true,
     facts: { purityStandard: "≥98% by HPLC", coa: "library", labName: "Accumark Labs", testMethods: "HPLC" },
   },
   "crush-research": {
@@ -589,7 +590,6 @@ export const vendors: Record<string, Vendor> = {
     // ?ref=profpeptide is Nura's GoAffPro affiliate identifier — leave untouched.
     url: "https://nurapeptide.com/?ref=profpeptide",
     detailPage: "/coupons/nura-peptide",
-    editorsPick: true,
     facts: { coa: "library", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>), microbial (PCR)" },
   },
   // 99 Purity's sources disagree on the discount: the welcome email says 10% off, the
