@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "ascension-peptides",
-  ogTitle: "Ascension Peptides Coupon — Save 50% | Prof. Peptide",
 });
 
 export default function AscensionPeptidesLayout({ children }: { children: React.ReactNode }) {

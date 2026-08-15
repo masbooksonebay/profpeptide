@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "ignite-peptides",
-  ogTitle: "Ignite Peptides Coupon — Save 10% | Prof. Peptide",
 });
 
 export default function IgnitePeptidesLayout({ children }: { children: React.ReactNode }) {

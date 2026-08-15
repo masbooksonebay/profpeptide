@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "almighty-peptides",
-  ogTitle: "Almighty Peptides Coupon — Save 20% | Prof. Peptide",
 });
 
 export default function AlmightyPeptidesLayout({ children }: { children: React.ReactNode }) {

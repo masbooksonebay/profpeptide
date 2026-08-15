@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "fusion-peptide",
-  ogTitle: "Fusion Peptide Coupon — Save 15% | Prof. Peptide",
 });
 
 export default function FusionPeptideLayout({ children }: { children: React.ReactNode }) {
