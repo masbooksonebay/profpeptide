@@ -87,7 +87,7 @@ export default function AppPage() {
             className="mx-auto object-contain"
             priority
           />
-          <p className="mt-5 text-lg font-semibold text-[#16181B] dark:text-slate-100">Prof. Peptide</p>
+          <p className="mt-5 text-3xl font-semibold text-[#16181B] dark:text-slate-100">Prof. Peptide</p>
           <div className="mt-6 pt-6 border-t border-[#D9DEE4] dark:border-slate-700">
             <a
               href={APP_STORE_URL}

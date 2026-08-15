@@ -165,7 +165,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-[#0f172a] border-b border-gray-100 dark:border-slate-800">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 md:h-[72px] flex items-center justify-between">
-        <Link href="/" className="flex items-end gap-2 md:gap-2.5">
+        <Link href="/" className="flex items-baseline gap-2 md:gap-2.5">
           <Image
             src="/logo-glasses.png"
             alt="Prof. Peptide"
@@ -174,7 +174,7 @@ export default function Header() {
             className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 object-contain"
             priority
           />
-          <span className="text-[#16181B] dark:text-slate-100 font-extrabold text-xl md:text-2xl tracking-tight leading-none -translate-y-[3px]">
+          <span className="text-[#16181B] dark:text-slate-100 font-extrabold text-xl md:text-2xl tracking-tight leading-none">
             Prof. Peptide
           </span>
         </Link>
