@@ -14,7 +14,7 @@ import HeroSearch from "@/components/HeroSearch";
 // SITE (independent research), not the iOS app.
 
 export const metadata = {
-  description: `Independent peptide research: ${profileCount} compound profiles with cited studies, price comparison across ${activeVendorCount} vendors, a reconstitution calculator, and verified vendor discount codes.`,
+  description: `Independent peptide research: ${profileCount} compound profiles, ${activeVendorCount} vendor reviews and price comparisons, verified discount codes, and a dosage calculator.`,
   alternates: { canonical: "/" },
 };
 
