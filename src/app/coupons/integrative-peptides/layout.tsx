@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "integrative-peptides",
-  ogTitle: "Integrative Peptides Coupon — Save 10% | Prof. Peptide",
 });
 
 export default function IntegrativePeptidesLayout({ children }: { children: React.ReactNode }) {

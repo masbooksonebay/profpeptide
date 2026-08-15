@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "nextgen-peptides",
-  ogTitle: "NextGen Peptides Coupon — Save 10% | Prof. Peptide",
 });
 
 export default function NextGenPeptidesLayout({ children }: { children: React.ReactNode }) {

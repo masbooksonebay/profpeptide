@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "swiss-chems",
-  ogTitle: "Swiss Chems Coupon — Save 10% | Prof. Peptide",
 });
 
 export default function SwissChemsLayout({ children }: { children: React.ReactNode }) {

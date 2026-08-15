@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "biolongevity-labs",
-  ogTitle: "Biolongevity Labs Coupon — Save 15% | Prof. Peptide",
 });
 
 export default function BiolongevityLabsLayout({ children }: { children: React.ReactNode }) {

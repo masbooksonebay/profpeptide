@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "particle-peptides",
-  ogTitle: "Particle Peptides Coupon — Save 10% | Prof. Peptide",
 });
 
 export default function ParticlePeptidesLayout({ children }: { children: React.ReactNode }) {

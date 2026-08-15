@@ -3,7 +3,6 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata = buildCouponMetadata({
   slug: "limitless-biotech",
-  ogTitle: "Limitless Biotech Coupon — Save 15% | Prof. Peptide",
 });
 
 export default function LimitlessBiotechLayout({ children }: { children: React.ReactNode }) {
