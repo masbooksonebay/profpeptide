@@ -357,7 +357,7 @@ function HomeCard({ bg, mark, tone = "dark" }: { bg: string; mark: string; tone?
           Independent Peptide Research
         </div>
         <div style={{ display: "flex", marginTop: 18, fontSize: 31, fontWeight: 500, color: pal.secondary, lineHeight: 1.3 }}>
-          Compound profiles, price comparison &amp; verified vendor codes
+          Compound profiles, vendor reviews &amp; verified discount codes
         </div>
       </div>
     </Shell>
