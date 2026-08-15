@@ -577,6 +577,13 @@ export default function MK677Page() {
         </div>
       </div>
 
+      <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+        <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Blends</h2>
+        <div className="flex flex-wrap gap-4">
+        <Link href="/peptides/mk-677-ipamorelin" className="text-sm font-medium text-[#3A759F] hover:underline">MK-677 + Ipamorelin</Link>
+        </div>
+      </div>
+
 <div className="mt-12 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <p className="text-sm font-medium text-gray-700 dark:text-slate-200 mb-1">
           Need to calculate a dose?

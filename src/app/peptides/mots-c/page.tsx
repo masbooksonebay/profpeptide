@@ -647,6 +647,7 @@ export default function MOTScPage() {
       <div className="mt-6 p-5 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
         <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related Blends</h2>
         <div className="flex flex-wrap gap-4">
+        <Link href="/peptides/nad-mots-c-5-amino-1mq" className="text-sm font-medium text-[#3A759F] hover:underline">NAD+ + MOTS-c + 5-Amino-1MQ</Link>
         <Link href="/peptides/aod-9604-mots-c" className="text-sm font-medium text-[#3A759F] hover:underline">AOD-9604 + MOTS-c</Link>
         </div>
       </div>

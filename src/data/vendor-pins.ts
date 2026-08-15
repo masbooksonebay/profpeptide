@@ -23,6 +23,15 @@
 // fixed set can't be honored there (held pending a decision). The 6 no-row profiles
 // (retatrutide, tirzepatide, wolverine-stack, tesamorelin-ipamorelin, and the two
 // non-existent slugs) are left on derivation, unchanged.
+//
+// ⚠️ PINS REDISTRIBUTE — THEY DO NOT ADD. A pin REPLACES the derived top-3 on that profile, so
+// every slot it hands to a pinned vendor is a slot TAKEN from whoever derivation would have shown.
+// Measured for the Nura rollout across these 16 profiles: nura +16 profile referrers, amino-club
+// +3, peptide-partners +3 — but glacier-aminos LOST 12 and ascension-peptides LOST 1 (they were
+// the derived top-3 vendors the pins displaced). This was framed at the time as "giving Nura 16
+// profiles," not as "taking 12 from Glacier" — but it was both. Before adding any pin, check the
+// derived top-3 it displaces: every pin on a compound a PROVEN vendor would have won is a silent
+// −1 to that vendor's profile link-equity.
 export const VENDOR_PINS: Record<string, string[]> = {
   // ss-31 uses a DIFFERENT trio ON PURPOSE — this is not an inconsistency. Amino Club
   // has NO ss-31 price row, so the standard { nura, amino-club, peptide-partners } set
