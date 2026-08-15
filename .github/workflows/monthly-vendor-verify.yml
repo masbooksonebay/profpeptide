@@ -1,5 +1,27 @@
 name: monthly-vendor-verify
 
+# ─────────────────────────────────────────────────────────────────────────────────────────────
+# ⚠️ PREREQUISITE FOR ANY INCREASE IN CADENCE (daily/weekly) — READ BEFORE CHANGING THE CRON.
+# Do NOT tighten this schedule until a FLAP-DAMPENER is added to scripts/check-vendors.mjs.
+#
+# WHY: check:vendors classifies each link OK / BLOCKED / DEAD. BLOCKED ({401,403,406,429,503} —
+# Cloudflare/WAF) stays in the verified set, but a DEAD (timeout / hard block / 5xx) EXCLUDES the
+# vendor, and its coupon page loses the "✓ Verified" pill until the next clean run. Classification
+# is not stable run-to-run: from GitHub's cloud IPs, WAF-fronted vendors flip OK↔BLOCKED↔DEAD on
+# UNCHANGED URLs (observed directly — a local run minutes apart moved ion-peptide OK→BLOCKED and
+# peptides-gg/purerawz BLOCKED→OK; CI IPs are blocked far more). At MONTHLY cadence this is masked
+# (one low-churn run/month). At daily cadence each run commits + deploys, so a vendor that flaps to
+# DEAD for one run would have its pill APPEAR AND DISAPPEAR day to day — worse than a stale stamp.
+#
+# THE DAMPENER (both parts required before going daily/weekly):
+#   1. HYSTERESIS — only DROP a vendor from the set after N CONSECUTIVE DEAD runs (e.g. 2–3), not
+#      one. A single transient DEAD must not remove a pill.
+#   2. LAST-KNOWN-GOOD CARRY-FORWARD — persist the prior verified set and union it forward, so a
+#      vendor absent from one run keeps its pill until it's confirmed dead N times.
+# The build-time warn guard (scripts/check-verified-membership.mjs) covers the NEW-vendor gap that
+# tightening the cadence was meant to solve, so there is no pressure to go daily without the above.
+# ─────────────────────────────────────────────────────────────────────────────────────────────
+
 on:
   schedule:
     - cron: "0 16 1 * *"    # 16:00 UTC on the 1st (09:00 Pacific — lands at start of Mark's day; GitHub cron may lag a few min)
