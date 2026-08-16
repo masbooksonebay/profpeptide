@@ -3095,3 +3095,70 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ---
 
+
+
+## VENDOR: Licensed Peptides
+- **slug:** licensed-peptides | **code:** PROFPEPTIDE | **discount:** 5% off | **url:** licensedpeptides.com
+- **traffic:** (not pulled) | **pulled:** August 15 2026
+- **sale posture:** Check product-level sale_price each refresh; PP code (5%) stacks.
+
+### Single compounds
+| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| 5-Amino-1MQ | 5mg | $68.99 | $13.80 | $76.66 | ✓ | product/5-amino-1mq-5mg/ |
+| Cagrilintide | 5mg | $107.99 | $21.60 | $119.99 | ✓ | product/cagrilintide/ |
+| Cagrilintide | 10mg | $122.99 | $12.30 | $136.66 | ✓ | product/cagrilintide/ |
+| Cibinetide | 16mg | $94.99 | $5.94 | $104.49 | ✓ | product/ara-290/ |
+| CJC-1295 | 5mg | $38.99 | $7.80 | $43.33 | ✓ | product/cjc-1295-no-dac/ |
+| CJC-1295 | 5mg | $91.99 | $18.40 | $102.22 | ✓ | product/cjc-1295-dac-5mg/ |
+| CJC-1295 | 10mg | $57.99 | $5.80 | $64.44 | ✓ | product/cjc-1295-no-dac/ |
+| DSIP | 5mg | $53.99 | $10.80 | $59.99 | ✓ | product/dsip-5mg/ |
+| Epitalon | 10mg | $91.99 | $9.20 | $102.22 | ✓ | product/epithalon/ |
+| Epitalon | 50mg | $191.99 | $3.84 | $213.33 | ✓ | product/epithalon/ |
+| GHK-Cu | 50mg | $61.99 | $1.24 | $68.88 | ✓ | product/ghk-cu/ |
+| GHK-Cu | 100mg | $114.99 | $1.15 | $127.77 | ✓ | product/ghk-cu/ |
+| IGF-1 LR3 | 100mcg | $45.99 | $459.90 | $51.10 | ✓ | product/igf-1-lr3/ |
+| IGF-1 LR3 | 1mg | $124.99 | $124.99 | $138.88 | ✓ | product/igf-1-lr3/ |
+| Ipamorelin | 5mg | $43.32 | $8.66 | $48.14 | ✓ | product/ipamorelin/ |
+| Ipamorelin | 10mg | $68.99 | $6.90 | $76.66 | ✓ | product/ipamorelin/ |
+| Kisspeptin-10 | 5mg | $68.99 | $13.80 | $76.66 | ✓ | product/kisspeptin-10/ |
+| Kisspeptin-10 | 10mg | $107.99 | $10.80 | $119.99 | ✓ | product/kisspeptin-10/ |
+| KPV | 10mg | $76.99 | $7.70 | $85.55 | ✓ | product/kpv-10mg/ |
+| MOTS-C | 10mg | $76.99 | $7.70 | $85.54 | ✓ | product/mots-c/ |
+| MOTS-C | 40mg | $139.99 | $3.50 | $158.88 | ✓ | product/mots-c/ |
+| NAD+ | 500mg | $129.99 | $0.26 | $144.44 | ✓ | product/nad/ |
+| Oxytocin | 10mg | $76.99 | $7.70 | $85.55 | ✓ | product/oxytocin-10mg/ |
+| Pinealon | 10mg | $76.99 | $7.70 | $85.55 | ✓ | product/pinealon-10mg/ |
+| PT-141 | 10mg | $87.99 | $8.80 | $97.77 | ✓ | product/pt-141-10mg/ |
+| Retatrutide (listed as LP3-R) | 5mg | $57.99 | $11.60 | $64.44 | ✓ | product/lp3-r/ |
+| Retatrutide (listed as LP3-R) | 10mg | $124.99 | $12.50 | $138.88 | ✓ | product/lp3-r/ |
+| Retatrutide (listed as LP3-R) | 15mg | $129.99 | $8.67 | $144.44 | ✓ | product/lp3-r/ |
+| Retatrutide (listed as LP3-R) | 20mg | $154.99 | $7.75 | $172.22 | ✓ | product/lp3-r/ |
+| Retatrutide (listed as LP3-R) | 30mg | $189.99 | $6.33 | $211.10 | ✓ | product/lp3-r/ |
+| Retatrutide (listed as LP3-R) | 40mg | $239.99 | $6.00 | $266.66 | ✓ | product/lp3-r/ |
+| Retatrutide (listed as LP3-R) | 50mg | $274.99 | $5.50 | $305.55 | ✓ | product/lp3-r/ |
+| Retatrutide (listed as LP3-R) | 60mg | $309.99 | $5.17 | $344.44 | ✓ | product/lp3-r/ |
+| Selank | 10mg | $61.99 | $6.20 | $68.88 | ✓ | product/selank-10mg/ |
+| Semax | 30mg | $76.99 | $2.57 | $85.55 | ✓ | product/semax-30mg/ |
+| Sermorelin | 5mg | $68.99 | $13.80 | $76.66 | ✓ | product/sermorelin/ |
+| Sermorelin | 10mg | $114.99 | $11.50 | $127.77 | ✓ | product/sermorelin/ |
+| SS-31 | 10mg | $99.99 | $10.00 | $111.10 | ✓ | product/ss-31/ |
+| SS-31 | 50mg | $244.99 | $4.90 | $272.21 | ✓ | product/ss-31/ |
+| TB-500 | 10mg | $99.99 | $10.00 | $111.10 | ✓ | product/tb-500-thymosin-beta-4-10mg/ |
+| Tesamorelin | 10mg | $130.99 | $13.10 | $145.55 | ✓ | product/tesamorelin-10mg/ |
+| Thymosin Alpha-1 | 5mg | $61.99 | $12.40 | $68.88 | ✓ | product/thymosin-alpha-1-5mg/ |
+| Tirzepatide (listed as LP2-T) | 5mg | $53.99 | $10.80 | $59.99 | ✓ | product/lp2-t/ |
+| Tirzepatide (listed as LP2-T) | 10mg | $71.99 | $7.20 | $79.99 | ✓ | product/lp2-t/ |
+| Tirzepatide (listed as LP2-T) | 15mg | $94.49 | $6.30 | $104.99 | ✓ | product/lp2-t/ |
+| Tirzepatide (listed as LP2-T) | 20mg | $114.99 | $5.75 | $127.77 | ✓ | product/lp2-t/ |
+| Tirzepatide (listed as LP2-T) | 30mg | $145.99 | $4.87 | $162.21 | ✓ | product/lp2-t/ |
+| Tirzepatide (listed as LP2-T) | 40mg | $183.99 | $4.60 | $204.43 | ✓ | product/lp2-t/ |
+| Tirzepatide (listed as LP2-T) | 45mg | $206.99 | $4.60 | $229.99 | ✓ | product/lp2-t/ |
+| Tirzepatide (listed as LP2-T) | 50mg | $244.99 | $4.90 | $272.21 | ✓ | product/lp2-t/ |
+| Tirzepatide (listed as LP2-T) | 60mg | $290.99 | $4.85 | $323.33 | ✓ | product/lp2-t/ |
+
+### Sprays: none
+### Excluded: blend leak (Rule A): bpc-157 + klow + mots-c — blend-registry candidate, manually excluded — PACK-ONLY, no single vial: the base 'BPC-157' variable product's VARIATIONS are 3/5/10-pack only (no 1-pack), so the dosage model read the 3-pack price as a single-vial mg — $137.64/5mg and $235.14/10mg are ~3x inflated $/mg (bulk-pack leak, same class as the blend bulk inflation; check:prices flagged 4.7x). Licensed sells NO single BPC-157 vial (every other BPC SKU is an explicit 2/4/10-vial pack). Held until pack-count division lands in the dosage model, or the single-vial-from-smallest-pack policy is decided. FP-scan: 'product/bpc-157/' (trailing slash) matches ONLY the base product — blends carry 'bpc-157-tb-...' with a dash after 157, and licensed blends are SINGLES_ONLY-suppressed anyway., multi-vial kit / pack (by name), no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+
+---
+

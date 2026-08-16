@@ -45,6 +45,18 @@ def size_from_image(product):
 # legitimate single. LL-37 caps ($14-30/mg, ~2-3x the vial median across 4 vendors) were reviewed and
 # KEPT — a real oral product, not a leak.
 MANUAL_EXCLUDE = {
+    "licensed-peptides": [
+        ("product/bpc-157/",
+         "PACK-ONLY, no single vial — STANDING EXCLUSION (Mark, 2026-08-15, do not re-litigate). The base "
+         "'BPC-157' variable product's VARIATIONS are 3/5/10-pack only (no 1-pack), so the dosage model read "
+         "the 3-pack price as a single-vial mg — $137.64/5mg and $235.14/10mg were ~3x inflated $/mg (bulk "
+         "leak, same class as the blend bulk inflation; check:prices flagged 4.7x). Licensed sells NO single "
+         "BPC-157 vial (every other BPC SKU is an explicit 2/4/10-vial pack), so ANY per-vial price would be "
+         "DERIVED, not real. Pack-division needs a policy call on which pack represents a single purchase — "
+         "a bigger decision than this row — so BPC-157 stays out for licensed until that policy exists. "
+         "FP-scan: 'product/bpc-157/' (trailing slash) matches ONLY the base product — blends carry "
+         "'bpc-157-tb-...' with a dash after 157, and licensed blends are SINGLES_ONLY-suppressed anyway."),
+    ],
     "ez-peptides": [
         ("5-amino-1mq-50mg-25-tabs-bottle",
          "CORRECT DATA held pending the FORMAT-COMPARABILITY decision — NOT a leak, do not 'fix' the data. "
@@ -343,11 +355,18 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
             yield ('single', disp, N.size_label(size_label), base, ins, None, None, reg_out, on_sale, vslug)
 
 
+# Vendors whose blend + spray sections are HELD out of the doc (singles only). licensed-peptides:
+# blend routing has open anomalies (nasal→Wolverine, capsule/10-vial bulk leaking into blend rows,
+# CJC/Ipa DAC mislabel) — write the clean singles now, hold blends until the routing fix is scoped.
+SINGLES_ONLY = {"licensed-peptides"}
+
+
 def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_vial_kit=False, sitewide_sale=0.0):
     """meta: {name, code, discount, url}. Returns the markdown section text."""
     singles, blends, sprays, excl = {}, [], [], set()
     nosize_dropped = []   # per-SKU record of Rule-4 no-size drops (Class A) — counted, not silent
     blend_dropped = []    # blends dropped for unresolved total mg (nototal | mismatch) — counted, not silent
+    collisions = []       # distinct SKUs collapsing onto one (compound, size, form) key — counted, not silent
     for p in products:
         for r in classify(vendor, p, ten_vial_kit=ten_vial_kit, sitewide_sale=sitewide_sale):
             if r[0] == 'exclude':
@@ -367,10 +386,31 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
             reg_str = f"${reg:,.2f}" if on_sale and reg else "—"    # Regular column: anchor only when on sale
             if kind == 'single':
                 mg = N.mg_value(size)
-                key = (disp, size)
+                # CJC-1295 DAC and no-DAC (Mod GRF 1-29) are DIFFERENT compounds that share the
+                # "CJC-1295" display; the form survives only in the vendor's product slug. Without it in
+                # the key, one silently shadows the other at any overlapping size (min-base wins) — the
+                # licensed-peptides DAC single vanished this way, uncounted. Keep the form in the key so
+                # both survive to to_prices.py, which splits them by the same slug marker (cjc_form).
+                form = ('no-dac' if re.search(r'no-?dac|w-?o-?dac|without-?dac|mod-?grf', vslug, re.I)
+                        else 'dac' if re.search(r'(?<!no-)-dac|with-?dac', vslug, re.I) else '')
+                key = (disp, size, form)
                 cand = (base, (disp, size, f"${base:,.2f}", N.per_mg(base, mg), reg_str, st, vslug or "—"))
-                if key not in singles or base < singles[key][0]:   # min base per (compound,size)
+                prev = singles.get(key)
+                if prev is None:
                     singles[key] = cand
+                elif (vslug or "—") != prev[1][6] and (vslug or "—") != "—":
+                    # A DISTINCT vendor SKU collapsing onto the same (compound, size, form) — one row is
+                    # discarded. This is how the CJC-1295 DAC single vanished before the form key; the
+                    # standing rule is refuse-but-COUNT, so record every collision (keep the cheaper).
+                    # Two DIFFERENT compounds colliding here means their display+form isn't distinctive
+                    # enough — a DAC/no-DAC-class gap to widen the key for, surfaced by this counter.
+                    keep, drop = (cand, prev) if base < prev[0] else (prev, cand)
+                    collisions.append({"disp": disp, "size": size, "form": form,
+                                       "kept": keep[1][6], "kept_price": keep[0],
+                                       "dropped": drop[1][6], "dropped_price": drop[0]})
+                    singles[key] = keep
+                elif base < prev[0]:
+                    singles[key] = cand   # same SKU, cheaper variant row — ordinary min-base dedup
             elif kind == 'blend':
                 # 7th col (Vendor Slug) — parity with singles; lets to_prices.py split the
                 # CJC-1295/Ipamorelin blend by DAC vs no-DAC. "—" when the adapter exposes no slug.
@@ -395,13 +435,13 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
     for r in sorted(singles, key=lambda x: (x[0].lower(), N.mg_value(x[1]) or 0)):
         L.append(_row(list(r)))
     L.append("")
-    if blends:
+    if blends and vendor not in SINGLES_ONLY:
         L.append("### Blends (total mg; ratio where published)")
         L.append(_row(["Blend", "Components", "Total mg", "Base", "Ratio", "Stock", "Vendor Slug"])); L.append(_row(["---"] * 7))
         for b in sorted(blends, key=lambda x: x[0].lower()):
             L.append(_row(list(b)))
         L.append("")
-    if sprays:
+    if sprays and vendor not in SINGLES_ONLY:
         L.append("### Sprays / strips (separate format, no $/mg)")
         L.append(_row(["Product", "Size", "Base", "Stock"])); L.append(_row(["---"] * 4))
         for s in sorted(sprays, key=lambda x: x[0].lower()):
@@ -424,4 +464,4 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
     return "\n".join(L), {"singles": len(singles), "blends": len(blends), "sprays": len(sprays),
                           "catalog": len(products), "stale_overrides": stale_overrides,
                           "nosize_dropped": nosize_dropped, "emitted_sizeless": emitted_sizeless,
-                          "blend_dropped": blend_dropped}
+                          "blend_dropped": blend_dropped, "collisions": collisions}

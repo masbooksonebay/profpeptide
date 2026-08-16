@@ -233,6 +233,19 @@ def main():
             if mism:
                 print(f"       ⚠ {slug}: {len(mism)} blend(s) have a dose-code count != blend_of's component "
                       f"count (possible mislabel — see item 2). NOT written; fix blend_of or the label first.")
+        # Collision report (singles dedup): two DISTINCT vendor SKUs collapsed onto one
+        # (compound, size, form) key — one row discarded. This is the counter for the silent overwrite
+        # that dropped the CJC-1295 DAC single. WARN-only. A collision between two DIFFERENT compounds
+        # (not two listings of one) means the key isn't distinctive enough — a DAC/no-DAC-class gap.
+        coll = counts.get("collisions", [])
+        if coll:
+            print(f"       single collisions: {len(coll)} (distinct SKU discarded on same compound+size+form)")
+            for c in coll:
+                f = f"/{c['form']}" if c['form'] else ""
+                print(f"         - {c['disp']} {c['size']}{f}: kept {c['kept']} ${c['kept_price']:.2f}, "
+                      f"DROPPED {c['dropped']} ${c['dropped_price']:.2f}")
+            print(f"       ⚠ {slug}: verify each is two listings of ONE compound (safe) and not two "
+                  f"DIFFERENT compounds sharing a display (a DAC/no-DAC-class drop — widen the key).")
         # Stale-override guard: a SIZE_OVERRIDE key matching zero products in this pull is a rename or
         # removal — the override would silently miss (vendor+name is not a stable key). WARN-only.
         stale = counts.get("stale_overrides", [])
