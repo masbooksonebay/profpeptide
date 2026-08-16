@@ -71,12 +71,30 @@ petrelintide slu-pp-915 orforglipron""".split())
 # alias substring -> canonical slug
 ALIAS = {
     'ara 290': 'cibinetide', 'ara290': 'cibinetide', 'cibinetide': 'cibinetide',
-    'peg mgf': 'mgf', 'mgf': 'mgf', 'mechano growth factor': 'mgf',
-    'n acetyl semax': 'semax', 'semax': 'semax', 'n acetyl selank': 'selank', 'selank': 'selank',
+    # PEG-MGF split off /mgf 2026-08-16 (6 vendors, cta-only price page): pegylated MGF is a
+    # distinct molecule and was distorting /mgf's cheapest-$/mg (a PEG row led the true-MGF grid).
+    # 'mgf'/'mechano growth factor' stay = true MGF; 'mgf without peg' (swiss) has no adjacent
+    # "peg mgf" so it stays /mgf too. Longest-match: "peg mgf" (7) beats "mgf" (3).
+    'peg mgf': 'peg-mgf', 'mgf': 'mgf', 'mechano growth factor': 'mgf',
+    # NA-Selank split off /selank 2026-08-16 (6 vendors, cta-only): the N-acetyl amidate analog was
+    # skewing /selank (sizes to 600mg vs 5-10mg, and it held the two cheapest-$/mg slots). TWO name
+    # families only — 'n acetyl selank' (peptidology/ameano/biolongevity/purerawz) and 'na selank'
+    # (peptide-partners/peptides-gg). BARE 'nac' IS DELIBERATELY NOT ALIASED: "NAC" is the standard
+    # abbreviation for N-acetylcysteine (a different compound); no product needs it (peptidology's
+    # "N-Acetyl Selank", slug /nac/, matches on its NAME 'n acetyl selank'). Keep it dropped.
+    'n acetyl semax': 'semax', 'semax': 'semax',
+    'n acetyl selank': 'na-selank', 'na selank': 'na-selank', 'selank': 'selank',
+    # LEAVE-DECISION 2026-08-16: NA-Epitalon (N-acetyl epithalon amidate) considered for its own
+    # split and LEFT collapsed into /epitalon — only 3 vendors (behemoth-labz/peptides-gg/purerawz)
+    # and no standalone literature for a profile. Do not re-propose without new vendor coverage.
     'epithalon': 'epitalon', 'epitalon': 'epitalon', 'thymagen': 'thymogen', 'thymogen': 'thymogen',
     'mod grf 1 29': 'cjc-1295', 'cjc 1295': 'cjc-1295', 'cjc1295': 'cjc-1295',
     'melanotan 1': 'melanotan-i', 'melanotan i': 'melanotan-i', 'mt 1': 'melanotan-i',
     'melanotan 2': 'melanotan-ii', 'melanotan ii': 'melanotan-ii', 'mt 2': 'melanotan-ii',
+    # LEAVE-DECISION 2026-08-16: TB-500 fragment 17-23 considered for its own split and LEFT
+    # collapsed into /tb-500 — only 2 vendors (ameano/ez-peptides), below the 3-vendor indexable
+    # gate. ('tb4' below = full Thymosin β-4 = TB-500, correct; only the 17-23 FRAGMENT is distinct
+    # and it stays folded.) Do not re-propose unless it clears 3 vendors.
     '5 amino 1mq': '5-amino-1mq', 'tb 500': 'tb-500', 'tb500': 'tb-500', 'tb4': 'tb-500',
     'bpc 157': 'bpc-157', 'ghk cu': 'ghk-cu', 'll 37': 'll-37', 'pt 141': 'pt-141',
     'mots c': 'mots-c', 'ss 31': 'ss-31', 'igf 1 lr3': 'igf-1-lr3', 'igf 1 des': 'igf-1-des',

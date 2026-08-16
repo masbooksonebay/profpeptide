@@ -67,18 +67,18 @@
     "configs": [
       {
         "config": "10mg",
-        "vendors": 21
+        "vendors": 20
       },
       {
         "config": "20mg",
-        "vendors": 17
+        "vendors": 18
       },
       {
         "config": "5mg",
-        "vendors": 8
+        "vendors": 6
       }
     ],
-    "vendors": 28,
+    "vendors": 27,
     "indexable": true
   }
 ]
