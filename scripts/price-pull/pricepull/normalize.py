@@ -35,6 +35,36 @@ def per_mg(base, mg):
     return f"${base / mg:,.2f}" if (base and mg) else '—'
 
 
+# ---- CJC-1295 DAC vs no-DAC form -------------------------------------------
+# CJC-1295 (DAC) and CJC-1295 no-DAC / Mod GRF 1-29 are DIFFERENT molecules that
+# vendors list under one "CJC-1295" display; the form survives ONLY in the product
+# slug. Two callers must agree byte-for-byte or a row kept under one form gets
+# re-bucketed under the other:
+#   - build.py adds the form to the singles dedup key (so DAC & no-DAC both survive)
+#   - to_prices.py splits the doc's single "CJC-1295" cell into cjc-1295-dac /
+#     cjc-1295-no-dac by the same slug marker.
+# ONE source of truth, hence this shared function. Returns 'dac' | 'no-dac' | None.
+#
+# The roster spells this ~20 ways. Separators are normalized first (/, spaces, and
+# parens -> '-') so name-form spellings collapse onto the slug forms:
+#   no-DAC : no-dac · nodac · (no dac) · w/o dac (w-o-dac) · w/out dac (w-out-dac)
+#            · without-dac · mod-grf / modgrf / Mod GRF 1-29 · *-no-dac / *-nodac
+#   DAC    : -dac (bare) · with-dac · with dac · w/dac (w-dac) · mg-with-dac
+# no-DAC is tested FIRST because every no-DAC spelling also contains the substring
+# 'dac'. None means "no form marker in the slug" — the caller decides (build.py: '',
+# a valid non-CJC key; to_prices.py: DROP the row, never guess a molecule).
+def dac_form(text):
+    s = (text or "").lower()
+    if not s or s in ("—", "-"):
+        return None
+    s = re.sub(r"[\s/()]+", "-", s)            # /, spaces, parens -> hyphen
+    if re.search(r"no-?dac|w-?o-?dac|w-?out-?dac|without-?dac|mod-?grf", s):
+        return "no-dac"
+    if re.search(r"with-?dac|w-?dac|-dac|\bdac\b", s):
+        return "dac"
+    return None
+
+
 # ---- display names ---------------------------------------------------------
 
 DISPLAY = {

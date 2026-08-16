@@ -406,8 +406,7 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
                 # the key, one silently shadows the other at any overlapping size (min-base wins) — the
                 # licensed-peptides DAC single vanished this way, uncounted. Keep the form in the key so
                 # both survive to to_prices.py, which splits them by the same slug marker (cjc_form).
-                form = ('no-dac' if re.search(r'no-?dac|w-?o-?dac|without-?dac|mod-?grf', vslug, re.I)
-                        else 'dac' if re.search(r'(?<!no-)-dac|with-?dac', vslug, re.I) else '')
+                form = N.dac_form(vslug) or ''   # shared with to_prices.cjc_form; see normalize.dac_form
                 key = (disp, size, form)
                 cand = (base, (disp, size, f"${base:,.2f}", N.per_mg(base, mg), reg_str, st, vslug or "—"))
                 prev = singles.get(key)
