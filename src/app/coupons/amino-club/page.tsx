@@ -31,7 +31,7 @@ export default function AminoClubCouponPage() {
       <CouponBreadcrumb slug="amino-club" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Amino Club Discount Code &mdash; Save 20%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Amino Club Discount Code: PROFPEPTIDE &mdash; Save 20%</h1>
       </div>
       <CouponFacts slug="amino-club" />
       <CouponCodeCard slug="amino-club" className="mb-8" />
@@ -131,7 +131,7 @@ export default function AminoClubCouponPage() {
               a="Amino Club carries research compounds across tissue repair, dermal, metabolic, GH-secretagogue, cellular, neuro, and circadian categories. Flagship compounds include Retatrutide, Cagrilintide, BPC-157, TB-500, GHK-Cu, CJC-1295/Ipamorelin, and NAD+, along with the GLOW and KLOW blends."
             />
             <FAQItem
-              q="Does Amino Club have a discount code?"
+              q="Does Amino Club have a coupon code?"
               a="Yes. Use code PROFPEPTIDE at checkout to save 20% on any Amino Club order. This code is verified and maintained by Prof. Peptide."
             />
             <FAQItem

@@ -24,7 +24,7 @@ export default function EZPeptidesCouponPage() {
       <CouponBreadcrumb slug="ez-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">EZ Peptides Discount Code &mdash; Save 10%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">EZ Peptides Discount Code: PROFPEPTIDE &mdash; Save 10%</h1>
  </div>
  <CouponFacts slug="ez-peptides" />
  <CouponCodeCard slug="ez-peptides" className="mb-8" />
@@ -123,7 +123,7 @@ export default function EZPeptidesCouponPage() {
  a="The EZ Peptides catalog covers a wide range of research compounds including metabolic and GLP peptides such as Semaglutide, Tirzepatide, and Retatrutide, recovery compounds including BPC-157 and TB-500, cognitive peptides such as Semax and Selank, and longevity compounds including NAD+. PT-141 and additional compounds round out their catalog."
  />
  <FAQItem
- q="Does EZ Peptides have a discount code?"
+ q="Does EZ Peptides have a coupon code?"
  a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any EZ Peptides order. This code is verified and maintained by Prof. Peptide."
  />
  <FAQItem

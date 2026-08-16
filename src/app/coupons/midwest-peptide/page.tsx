@@ -24,7 +24,7 @@ export default function MidwestPeptideCouponPage() {
       <CouponBreadcrumb slug="midwest-peptide" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Midwest Peptide Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Midwest Peptide Discount Code: PROFPEPTIDE &mdash; Save 10%</h1>
       </div>
       <CouponFacts slug="midwest-peptide" />
       <CouponCodeCard slug="midwest-peptide" className="mb-8" />
@@ -123,7 +123,7 @@ export default function MidwestPeptideCouponPage() {
               a="Midwest Peptide carries research compounds across metabolic, recovery, growth-hormone, skin, cognitive, sleep, longevity, and sexual-health research. Carried compounds include Retatrutide, Tirzepatide, Semaglutide, Cagrilintide, MOTS-C, BPC-157, TB-500, CJC-1295 (No DAC), Tesamorelin, GHK-Cu, Melanotan I and II, the GLOW and KLOW blends, Semax, Selank, DSIP, NAD+, Glutathione, and PT-141, among others."
             />
             <FAQItem
-              q="Does Midwest Peptide have a discount code?"
+              q="Does Midwest Peptide have a coupon code?"
               a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Midwest Peptide order. This code is verified and maintained by Prof. Peptide."
             />
             <FAQItem
