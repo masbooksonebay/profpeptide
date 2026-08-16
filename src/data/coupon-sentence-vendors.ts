@@ -19,9 +19,13 @@
 // title-holding, snippet-winning peers (ameano-peptides, modern-aminos, peptide-partners,
 // purerawz) are the CONTROL GROUP — deliberately excluded from BOTH variables; do not add them.
 export const COUPON_SENTENCE_VENDORS = new Set<string>([
+  // Stripped cohort (rewritten-title / no-snippet baseline)
   "amino-club",
   "glacier-aminos",
   "ez-peptides",
   "midwest-peptide",
   "mile-high-compounds",
+  // Added 2026-08-16 as SEPARATE cohorts (see docs/PP_COUPON_SALIENCE_EXPERIMENT.md):
+  "nura-peptide",       // vendor page never ranked (the /coupons hub did) — tests if it surfaces at all
+  "capstone-peptides",  // never crawled — indexed WITH the treatment from the start, no baseline
 ]);

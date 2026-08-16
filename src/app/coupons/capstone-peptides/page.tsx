@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -27,9 +26,8 @@ export default function CapstonePeptidesCouponPage() {
       <CouponBreadcrumb slug="capstone-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Capstone Peptides Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Capstone Peptides Discount Code: PROFPEPTIDE &mdash; Save 10%</h1>
       </div>
-      <CouponFacts slug="capstone-peptides" />
       <CouponCodeCard slug="capstone-peptides" className="mb-8" />
 
       <div className="space-y-8">
@@ -67,7 +65,7 @@ export default function CapstonePeptidesCouponPage() {
               a="Capstone carries a research catalog spanning metabolic and GLP-class compounds (Semaglutide, Tirzepatide, and Retatrutide — listed under the coded names GLP-1S, GLP-2T, and GLP-3R — plus a Cagrilintide/Semaglutide blend and MOTS-C), recovery peptides (BPC-157, TB-500, a BPC-157/TB-500 blend, and GLOW), growth-hormone secretagogues (CJC-1295, Ipamorelin, Tesamorelin, Sermorelin), longevity and immune compounds (Epithalon, NAD+, Thymosin Alpha-1), Semax, Selank, Melanotan 2, and PT-141. Its catalog and per-vial prices are openly browsable without an account."
             />
             <FAQItem
-              q="Does Capstone Peptides have a discount code?"
+              q="Does Capstone Peptides have a coupon code?"
               a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Capstone Peptides order. This code is verified and maintained by Prof. Peptide."
             />
             <FAQItem
