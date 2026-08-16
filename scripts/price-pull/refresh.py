@@ -246,6 +246,15 @@ def main():
                       f"DROPPED {c['dropped']} ${c['dropped_price']:.2f}")
             print(f"       ⚠ {slug}: verify each is two listings of ONE compound (safe) and not two "
                   f"DIFFERENT compounds sharing a display (a DAC/no-DAC-class drop — widen the key).")
+        # Subscription guard: WC-Subscriptions products carry a RECURRING price that would win the
+        # min-price pick and pose as a fake "cheapest" one-time row (biolongevity Follistatin). Dropped
+        # and counted here; the vendor's one-time SKU still flows through. WARN-only.
+        subs = counts.get("subscription_dropped", [])
+        if subs:
+            print(f"       subscription products dropped: {len(subs)} (recurring price — not a one-time headline)")
+            for s in subs:
+                ty = f" [type={s['ptype']}]" if s.get('ptype') else ""
+                print(f"         - {s['name']} ({s['slug']}){ty}")
         # Stale-override guard: a SIZE_OVERRIDE key matching zero products in this pull is a rename or
         # removal — the override would silently miss (vendor+name is not a stable key). WARN-only.
         stale = counts.get("stale_overrides", [])

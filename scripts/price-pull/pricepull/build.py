@@ -367,7 +367,22 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
     nosize_dropped = []   # per-SKU record of Rule-4 no-size drops (Class A) — counted, not silent
     blend_dropped = []    # blends dropped for unresolved total mg (nototal | mismatch) — counted, not silent
     collisions = []       # distinct SKUs collapsing onto one (compound, size, form) key — counted, not silent
+    subscription_dropped = []  # WC-Subscriptions products — RECURRING price, never a one-time headline
     for p in products:
+        # SUBSCRIPTION GUARD: a WC-Subscriptions product's price is a recurring/subscribe-and-save
+        # rate, not a one-time purchase price. Left in, it wins the min-price pick and becomes a fake
+        # "cheapest" row (biolongevity Follistatin: $224.55 subscription shown as the best 10mg price
+        # against $84-180/mg one-time rows). The authoritative signal is the WooCommerce product TYPE
+        # ('subscription' / 'variable-subscription'); the slug/name token is a backstop for vendors
+        # whose Store API omits type. Drop the whole product, counted — the vendor's one-time product
+        # (a separate SKU) still flows through normally. NOTE: this is a per-PULL guard; a row already
+        # in the doc is only cleared by re-pulling that vendor.
+        if (re.search(r'subscription', p.get('ptype', ''), re.I)
+                or re.search(r'\bsubscription\b|\bsubscribe\b|auto-?ship', p.get('slug', '') + ' ' + p.get('name', ''), re.I)):
+            subscription_dropped.append({"name": p.get('name', ''), "slug": p.get('slug', ''),
+                                         "ptype": p.get('ptype', '')})
+            excl.add('subscription product (recurring price — not a one-time headline)')
+            continue
         for r in classify(vendor, p, ten_vial_kit=ten_vial_kit, sitewide_sale=sitewide_sale):
             if r[0] == 'exclude':
                 excl.add(r[1]); continue
@@ -464,4 +479,5 @@ def build_section(vendor, meta, products, pulled_date, extra_posture="", ten_via
     return "\n".join(L), {"singles": len(singles), "blends": len(blends), "sprays": len(sprays),
                           "catalog": len(products), "stale_overrides": stale_overrides,
                           "nosize_dropped": nosize_dropped, "emitted_sizeless": emitted_sizeless,
-                          "blend_dropped": blend_dropped, "collisions": collisions}
+                          "blend_dropped": blend_dropped, "collisions": collisions,
+                          "subscription_dropped": subscription_dropped}

@@ -100,7 +100,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Biolongevity Labs
 - **slug:** biolongevity-labs | **code:** PROFPEPTIDE | **discount:** 15% off | **url:** go.biolongevitylabs.com
-- **traffic:** (not pulled) | **pulled:** August 13 2026
+- **traffic:** (not pulled) | **pulled:** August 16 2026
 - **sale posture:** ⚠️ Sitewide CART-LEVEL auto-coupon 'longevityvip' (50% off) — invisible in product data, so applied here via sitewide_sale=0.50 (base = list x 0.50). Registry previously noted the coupon as EXCLUSIVE with the PP code; per Mark (2026-07) PP codes STACK, so the code applies on top. Re-check the live cart each refresh (coupon %, and whether stacking still holds).
 
 ### Single compounds
@@ -117,7 +117,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Cortagen | 20mg | $34.98 | $1.75 | $69.97 | ✓ | product/cortagen-20mg/ |
 | DSIP | 5mg | $27.98 | $5.60 | $55.97 | ✓ | product/dsip-5mg/ |
 | Epitalon | 20mg | $47.48 | $2.37 | $94.97 | ✓ | product/epithalon-20mg/ |
-| Follistatin | 10mg | $224.55 | $22.46 | $449.10 | ✓ | product/follistatin-subscription/ |
+| Follistatin | 10mg | $249.50 | $24.95 | $499.00 | ✓ | product/follistatin/ |
 | FOXO4-DRI [backlog] | 10mg | $137.49 | $13.75 | $274.97 | ✓ | product/foxo4-dri-10-mg/ |
 | GHK-Cu | 50mg | $42.48 | $0.85 | $84.97 | ✓ | product/ghk-cu-50mg/ |
 | Ipamorelin | 10mg | $39.98 | $4.00 | $79.97 | ✓ | product/ipamorelin-10mg/ |
@@ -163,7 +163,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $59.98 | not published | ✓ | product/blend-bpc157-tb500-10mg-blend/ |
 
 ### Sprays: none
-### Excluded: multi-vial kit / pack (by name), no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: multi-vial kit / pack (by name), no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), subscription product (recurring price — not a one-time headline), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
