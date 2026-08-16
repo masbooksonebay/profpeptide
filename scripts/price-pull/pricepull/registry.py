@@ -118,6 +118,16 @@ VENDORS = {
         sale_posture="Check product-level sale_price each refresh; PP code stacks.",
         notes="Onboarded 2026-07. GLP-(S/T/R) codes UNVERIFIED — product pages carry no "
               "mechanism/CAS/name. Age-verify modal is soft (Store API + HTML readable)."),
+    "licensed-peptides": dict(name="Licensed Peptides", domain="licensedpeptides.com", adapter="woo",
+        variation_model="dosage", coded_decoder=True,  # size from the variation Size attr ("10mg" etc.)
+        sale_posture="Check product-level sale_price each refresh; PP code (5%) stacks.",
+        notes="Woo Store API PUBLIC (catalog + prices; per_page=100 surfaces all 91 products — the "
+              "supplies-first ordering the backlog note flagged is a default-sort artifact, not a gate). "
+              "USD only. Coded GLPs LP3-R=Retatrutide (vial CAS 2381089-83-2) and LP2-T=Tirzepatide "
+              "(vial CAS 2023788-19-2) — the SAME CAS already COA-verified for amino-x AX-RT/AX-TR. Nasal "
+              "sprays, capsules (MK677/5-Amino-1MQ/SLU-PP-332/Glow caps), '(10 vials)'/'(10 btls.)' bulk "
+              "multipacks, BAC water, and add-ons (cold packs, tips, VIP, shipping protection) fall out via "
+              "the scope + oral-form + count-pack filters."),
     "mile-high-compounds": dict(name="Mile High Compounds", domain="milehighcompounds.is", adapter="woo",
         variation_model="dosage", coded_decoder=True,
         sale_posture="Check product-level sale_price each refresh; PP code stacks.",

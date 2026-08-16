@@ -220,6 +220,12 @@ def _amino_x(n):
     if re.match(r'AX-RT', n, re.I): return (_c('Retatrutide', 'AX-RT'), 'retatrutide', 'single')
 
 
+@_decoder('licensed-peptides')  # verified: vial CAS — LP3-R = Retatrutide (CAS 2381089-83-2), LP2-T = Tirzepatide (CAS 2023788-19-2); same CAS as amino-x AX-RT/AX-TR
+def _licensed(n):
+    if re.match(r'LP2[\s-]*T', n, re.I): return (_c('Tirzepatide', 'LP2-T'), 'tirzepatide', 'single')
+    if re.match(r'LP3[\s-]*R', n, re.I): return (_c('Retatrutide', 'LP3-R'), 'retatrutide', 'single')
+
+
 @_decoder('ascension-peptides')  # verified: COA filename 'Retatrutide' (R); molecular descriptions (T=dual GIP/GLP-1, S=MW4114, C=amylin)
 def _ascension(n):
     # Ascension codes encode mg in the trailing number (R-30 = 30mg). These arrive as

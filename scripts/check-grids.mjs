@@ -66,9 +66,9 @@ const ONBOARDING_BACKLOG = {
   // EUR (currency decision pending) AND it's PrestaShop with no price-pull adapter. Coupon page +
   // registry listing are live; no /prices rows by design until the currency decision lands.
   "particle-peptides":  { reason: "non-USD (EUR) + PrestaShop (no price-pull adapter) — coupon-page-only, no /prices rows pending currency handling", since: "2026-08-05" },
-  // woo store detected, but the Store API surfaces supplies (cold packs, crates, diluent) ahead of
-  // the peptide catalog (1 product on page 1) — needs a pull pass that reaches the real compounds.
-  "licensed-peptides":  { reason: "woo Store API returns supplies before peptides — needs a pull that surfaces the compound catalog", since: "2026-08-04" },
+  // licensed-peptides — price-pulled 2026-08-15 (SINGLES only; 27 compounds / 53 rows; grid live).
+  // The "supplies-first" concern was a default-sort artifact — per_page=100 surfaces all 91 products.
+  // Blends + sprays HELD (build.SINGLES_ONLY) pending a routing fix; entry removed now that singles ship.
   // real-peptides / amp-peptides / improved-peptides — price-pulled 2026-08-10 (grids live); entries removed.
   // Onboarded 2026-08-10 from real per-lot certs (coupon page + registry live). Store went hard
   // login-walled 2026-08-09: no read-only price pull possible, and the pre-wall homepage snapshot
