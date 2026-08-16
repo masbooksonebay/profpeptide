@@ -54,7 +54,7 @@ export const generatedPriceEntries: PriceEntry[] = [
   { compound: "cortagen", compoundName: "Cortagen", vendor: "biolongevity-labs", sizeMg: 20, basePrice: 34.98, inStock: true, vendorSlug: "product/cortagen-20mg/", regularPrice: 69.97, onSale: true },
   { compound: "dsip", compoundName: "DSIP", vendor: "biolongevity-labs", sizeMg: 5, basePrice: 27.98, inStock: true, vendorSlug: "product/dsip-5mg/", regularPrice: 55.97, onSale: true },
   { compound: "epitalon", compoundName: "Epitalon", vendor: "biolongevity-labs", sizeMg: 20, basePrice: 47.48, inStock: true, vendorSlug: "product/epithalon-20mg/", regularPrice: 94.97, onSale: true },
-  { compound: "follistatin", compoundName: "Follistatin", vendor: "biolongevity-labs", sizeMg: 10, basePrice: 224.55, inStock: true, vendorSlug: "product/follistatin-subscription/", regularPrice: 449.1, onSale: true },
+  { compound: "follistatin", compoundName: "Follistatin", vendor: "biolongevity-labs", sizeMg: 10, basePrice: 249.5, inStock: true, vendorSlug: "product/follistatin/", regularPrice: 499, onSale: true },
   { compound: "foxo4-dri", compoundName: "FOXO4-DRI", vendor: "biolongevity-labs", sizeMg: 10, basePrice: 137.49, inStock: true, vendorSlug: "product/foxo4-dri-10-mg/", regularPrice: 274.97, onSale: true },
   { compound: "ghk-cu", compoundName: "GHK-Cu", vendor: "biolongevity-labs", sizeMg: 50, basePrice: 42.48, inStock: true, vendorSlug: "product/ghk-cu-50mg/", regularPrice: 84.97, onSale: true },
   { compound: "ipamorelin", compoundName: "Ipamorelin", vendor: "biolongevity-labs", sizeMg: 10, basePrice: 39.98, inStock: true, vendorSlug: "product/ipamorelin-10mg/", regularPrice: 79.97, onSale: true },

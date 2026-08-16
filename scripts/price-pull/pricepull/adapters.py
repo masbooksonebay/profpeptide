@@ -332,6 +332,10 @@ def woo(domain, per_page=100, max_pages=12, cookie=None):
                     'price': _cents(pr, 'price'), 'regular': _cents(pr, 'regular_price'),
                     'in_stock': p.get('is_in_stock'), 'variations': variations,
                     'slug': resolved or p.get('slug'),
+                    # WooCommerce product type. 'subscription' / 'variable-subscription' are
+                    # WC-Subscriptions products whose price is a RECURRING rate — build.py drops
+                    # them so a subscribe-and-save price never becomes the headline (Follistatin).
+                    'ptype': p.get('type', ''),
                     # currency_code from the Store API — carried through so the build_vendor currency
                     # guard can refuse non-USD vendors (priced in USD only). Absent → treated as USD.
                     'currency': (pr.get('currency_code') or '').upper(),
