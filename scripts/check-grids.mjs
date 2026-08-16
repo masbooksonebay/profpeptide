@@ -75,15 +75,6 @@ const ONBOARDING_BACKLOG = {
   // showed contradictory prices (GLP-3 RT 10mg $70 vs $75; GLOW $150 vs $155) — so NO price is
   // published and the coupon page renders NO grid. Thin-page WARN only until a reachable price source.
   "valkyrie-peptides":  { reason: "store hard login-walled 2026-08-09; no read-only price source + pre-wall prices self-contradicted — coupon-page-only, no grid", since: "2026-08-10" },
-  // Onboarded 2026-08-10 (VETTED PASS; coupon page + registry live). Catalog + prices + 195-COA library
-  // are PUBLIC (woo Store API works), so a price pull IS possible later. Held card-top for now. WHEN the
-  // grid lands: (1) coded GLPs ION-1S=Semaglutide / ION-2T=Tirzepatide / ION-3R=Retatrutide — DECODED via
-  // Mark's first-hand confirmation (2026-08), so a decoder can map them directly; (2) checkout is behind a "Wholesale Research Supply
-  // Portal" account login, so the in-cart code AND the combined ?apply-promo=profpeptide&ref= URL are
-  // unproven — vendor.url is the plain ?ref= link until Mark confirms logged-in, then swap to combined;
-  // (3) ⚠️ if the combined URL is adopted, note that VendorProductGrid's vendorDeepLink reconstructs
-  // per-product URLs and may DROP the apply-promo param — verify grid Shop links still auto-apply.
-  "ion-peptide":        { reason: "onboarded 2026-08; public woo catalog — card-top pending a price pull (decode ION-1S/2T/3R from a Kovera COA first)", since: "2026-08-10" },
   // Onboarded 2026-08-15 (coupon page + registry live). Public woo Store API — catalog + per-vial
   // prices readable with no account — so a price pull IS possible later; held coupon-page-only
   // pending Mark's decision on whether Capstone enters the price grid. Coded GLPs (GLP-1S=Semaglutide

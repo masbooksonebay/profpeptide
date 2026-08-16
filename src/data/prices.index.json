@@ -56,12 +56,12 @@
   },
   {
     "slug": "cjc-1295-dac",
-    "vendors": 12,
+    "vendors": 16,
     "indexable": true
   },
   {
     "slug": "cjc-1295-no-dac",
-    "vendors": 22,
+    "vendors": 23,
     "indexable": true
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "slug": "humanin",
-    "vendors": 5,
+    "vendors": 6,
     "indexable": true
   },
   {
@@ -181,7 +181,7 @@
   },
   {
     "slug": "mgf",
-    "vendors": 11,
+    "vendors": 5,
     "indexable": true
   },
   {
@@ -192,6 +192,11 @@
   {
     "slug": "mots-c",
     "vendors": 41,
+    "indexable": true
+  },
+  {
+    "slug": "na-selank",
+    "vendors": 6,
     "indexable": true
   },
   {
@@ -225,6 +230,11 @@
     "indexable": true
   },
   {
+    "slug": "peg-mgf",
+    "vendors": 7,
+    "indexable": true
+  },
+  {
     "slug": "petrelintide",
     "vendors": 1,
     "indexable": false
@@ -251,7 +261,7 @@
   },
   {
     "slug": "selank",
-    "vendors": 37,
+    "vendors": 34,
     "indexable": true
   },
   {
