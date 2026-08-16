@@ -141,14 +141,7 @@ def cjc_form(slug_cell):
     "CJC-1295" name; the form survives only in the vendor's product slug. Return 'no-dac' /
     'dac' / None. no-DAC is checked FIRST (its slug also contains 'dac'). None -> the caller
     DROPS the row (never guess a form)."""
-    s = (slug_cell or "").lower()
-    if not s or s in ("—", "-"):
-        return None
-    if re.search(r"no-?dac|w-?out-?dac|w-?o-?dac|without-?dac|mod-?grf", s):
-        return "no-dac"
-    if re.search(r"with-?dac|w-?dac|-dac", s):
-        return "dac"
-    return None
+    return N.dac_form(slug_cell)   # single source of truth — must match build.py's dedup-key form
 
 # --- load registries ---------------------------------------------------------
 vt = VENDORS_TS.read_text()
