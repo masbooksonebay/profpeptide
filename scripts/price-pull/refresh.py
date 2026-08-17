@@ -27,6 +27,14 @@ from pricepull import adapters, build, registry, detect  # noqa: E402
 
 SESSION_COOKIE_FILE = Path(__file__).resolve().parent / ".session-cookie"
 
+# Row-drop floor: a COMPLETE pull whose singles fall below this fraction of the doc REFUSES to write
+# (keeps the existing section) unless --allow-shrink. 0.80 == "refuse a drop of more than 20%".
+# Normal per-vendor churn tops out ~19% (ignite 2026-08-16), so 20% has just enough headroom while
+# over-refusing on anything larger — the right side to err on for price data (a genuine 25% collapse
+# must NOT write silently). Catches purerawz 0.17 (broken $0 catalog that still printed [ok]) and the
+# historical la-peptides 47% truncation (0.53). Raise toward 1.0 to refuse smaller drops.
+ROW_DROP_FLOOR = 0.80
+
 
 def load_session_cookie():
     """Login session cookie for gated vendors, read from a GITIGNORED file (never the
@@ -178,6 +186,7 @@ def main():
 
     doc = registry.DOC
     text = doc.read_text() if doc.exists() else ""
+    refused = []   # vendors the row-drop floor REFUSED to write — surfaced as a loud end-of-run block
     for slug in targets:
         if slug in registry.BLOCKED:
             print(f"[skip] {slug}: BLOCKED — {registry.BLOCKED[slug][:70]}"); continue
@@ -261,29 +270,42 @@ def main():
         if stale:
             print(f"       ⚠ {slug}: {len(stale)} SIZE_OVERRIDE key(s) match NO product in this pull "
                   f"(renamed/removed — the override will silently miss): {', '.join(stale)}")
-        # Row-drop floor (backstop): with truncation now caught upstream by the X-WP-Total /
-        # variation-fetch guards (IncompletePull), a COMPLETE pull that still returns materially
-        # fewer singles than the doc is either a real delisting or a non-woo adapter regression
-        # (nextjs/gatsby/purity_api have no stated total). Tightened 50%->80% because the old floor
-        # let a ~47% truncation through (23 < 21.5 was False). A genuine delisting is intentional,
-        # so it is writable — but only with an EXPLICIT --allow-shrink, never a silent pass.
+        # Row-drop floor (backstop, threshold = ROW_DROP_FLOOR): with truncation caught upstream by
+        # the X-WP-Total / variation-fetch guards (IncompletePull), a COMPLETE pull that still returns
+        # materially fewer singles than the doc is a real delisting, a vendor-side catalog break, or a
+        # non-woo adapter regression (nextjs/gatsby/purity_api have no stated total). PER-VENDOR and
+        # BEFORE the write, so one shrinking vendor is skipped while the rest of the run proceeds. A
+        # genuine delisting is writable — but only with an EXPLICIT --allow-shrink, never a silent pass.
+        # (History: purerawz 2026-08-16 collapsed 145->18 singles when its catalog went $0/no-variation
+        # and STILL printed [ok]; the la-peptides 47% truncation 43->23 slipped an earlier 50% floor.)
         old = existing_singles_count(text, cfg["name"])
-        floor_hit = old > 0 and counts["singles"] < old * 0.8
+        floor_hit = old > 0 and counts["singles"] < old * ROW_DROP_FLOOR
         if floor_hit:
-            verb = "overriding (--allow-shrink)" if args.allow_shrink else "will NOT overwrite"
-            print(f"[FLOOR] {slug}: {counts['singles']} singles < 80% of existing {old} — "
-                  f"delisting or regression? {verb} on --write.")
+            drop = (1 - counts["singles"] / old)
+            verb = "overriding (--allow-shrink)" if args.allow_shrink else "REFUSING to overwrite"
+            print(f"[FLOOR] {slug}: {counts['singles']} singles = a {drop:.0%} drop from {old} "
+                  f"(> {1 - ROW_DROP_FLOOR:.0%} floor) — delisting or a broken pull? {verb} on --write.")
         if args.dry_run:
             print("\n" + section)
         if args.write:
             if floor_hit and not args.allow_shrink:
-                print(f"[skip-write] {slug}: row-drop floor tripped — kept existing section "
-                      f"(pass --allow-shrink to accept a genuine delisting)")
+                print(f"[REFUSED] {slug}: row-drop floor tripped — REFUSING the write, kept the "
+                      f"existing section (pass --allow-shrink to accept a genuine delisting)")
+                refused.append((slug, old, counts["singles"], 1 - counts["singles"] / old))
             else:
                 text = replace_section(text, slug, cfg["name"], section)
     if args.write and text:
         doc.write_text(text)
         print(f"\nwrote {doc}")
+    # LOUD end-of-run block: refusals are easy to miss in a 45-vendor per-vendor stream (the inline
+    # [FLOOR] line went unread once). Re-print them together at the very end so a shrink is impossible
+    # to overlook — each with the drop % and the previous row count. Written data excludes these.
+    if refused:
+        print(f"\n{'='*70}\n🔴 REFUSED {len(refused)} vendor(s) — row-drop floor tripped, NOT written "
+              f"(> {1 - ROW_DROP_FLOOR:.0%} drop; pass --allow-shrink to accept):")
+        for slug, old, new, drop in sorted(refused, key=lambda r: -r[3]):
+            print(f"     {slug:24} {old:>4} → {new:<4} singles  ({drop:.0%} drop)")
+        print('='*70)
 
 
 if __name__ == "__main__":

@@ -33,27 +33,29 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Amino Club
 - **slug:** amino-club | **code:** PROFPEPTIDE | **discount:** 20% off | **url:** aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE
-- **traffic:** (not pulled) | **pulled:** August 4 2026
+- **traffic:** (not pulled) | **pulled:** August 16 2026
 - **sale posture:** ENJOY30 (30% off) is COUPON-GATED — requires typing the code, so it is EXCLUDED under the sale-vs-coupon rule (see top of file). Evaluated 2026-07 and deliberately NOT applied (no sitewide_sale) — do NOT 'rediscover' it as an oversight. base = no-code price (original_amount). If ENJOY30 ever becomes an automatic no-code cart discount, only then set sitewide_sale.
 
 ### Single compounds
 | Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
-| 5-Amino-1MQ | 50mg | $49.99 | $1.00 | — | ✓ | us/products/5-amino-1mq |
+| 5-Amino-1MQ | 50mg | $49.99 | $1.00 | — | ✗ | us/products/5-amino-1mq |
 | AOD-9604 | 5mg | $49.99 | $10.00 | — | ✓ | us/products/aod-9604 |
 | BPC-157 | 10mg | $39.99 | $4.00 | — | ✓ | us/products/bpc-157 |
 | Cagrilintide | 10mg | $69.99 | $7.00 | — | ✓ | us/products/cagrilintide |
+| Cartalax [backlog] | 20mg | $69.99 | $3.50 | — | ✓ | us/products/cartalax |
 | Cibinetide | 10mg | $49.99 | $5.00 | — | ✓ | us/products/ara-290 |
 | Dihexa [backlog] | 10mg | $59.99 | $6.00 | — | ✓ | us/products/dihexa |
 | DSIP | 5mg | $29.99 | $6.00 | — | ✓ | us/products/dsip |
 | Epitalon | 10mg | $29.99 | $3.00 | — | ✓ | us/products/epithalon |
-| GHK-Cu | 50mg | $29.99 | $0.60 | — | ✓ | us/products/ghk-cu |
+| GHK-Cu | 50mg | $29.99 | $0.60 | — | ✗ | us/products/ghk-cu |
 | GHK-Cu | 100mg | $57.99 | $0.58 | — | ✓ | us/products/ghk-cu |
 | Glutathione | 1500mg | $59.99 | $0.04 | — | ✓ | us/products/glutathione |
 | IGF-1 LR3 | 1mg | $69.99 | $69.99 | — | ✓ | us/products/igf-1-lr3 |
 | Ipamorelin | 10mg | $49.99 | $5.00 | — | ✓ | us/products/ipamorelin |
 | Kisspeptin-10 | 10mg | $49.99 | $5.00 | — | ✓ | us/products/kisspeptin |
 | KPV | 10mg | $39.99 | $4.00 | — | ✓ | us/products/kpv |
+| LL-37 | 5mg | $34.99 | $7.00 | — | ✓ | us/products/ll-37 |
 | Melanotan I | 10mg | $29.95 | $3.00 | — | ✓ | us/products/melanotan-i |
 | Melanotan II | 10mg | $29.95 | $3.00 | — | ✓ | us/products/melanotan-ii |
 | MOTS-C | 10mg | $39.99 | $4.00 | — | ✓ | us/products/mots-c |
@@ -67,7 +69,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Selank | 10mg | $29.95 | $3.00 | — | ✓ | us/products/selank |
 | Semaglutide (listed as GLP-1 (SM)) | 10mg | $49.99 | $5.00 | — | ✓ | us/products/glp-1 |
 | Semax | 10mg | $29.95 | $3.00 | — | ✓ | us/products/semax |
-| Sermorelin | 10mg | $59.99 | $6.00 | — | ✓ | us/products/sermorelin |
+| Sermorelin | 10mg | $59.99 | $6.00 | — | ✗ | us/products/sermorelin |
 | SNAP-8 [backlog] | 10mg | $29.99 | $3.00 | — | ✓ | us/products/snap-8 |
 | TB-500 | 10mg | $39.99 | $4.00 | — | ✓ | us/products/tb-500 |
 | Tesamorelin | 10mg | $69.99 | $7.00 | — | ✓ | us/products/tesamorlin |
@@ -77,18 +79,23 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | VIP | 10mg | $49.99 | $5.00 | — | ✓ | us/products/vip |
 
 ### Blends (total mg; ratio where published)
-| Blend | Components | Total mg | Base | Ratio | Stock |
-| --- | --- | --- | --- | --- | --- |
-| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $59.99 | not published | ✓ |
-| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $89.99 | not published | ✓ |
-| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $99.99 | not published | ✓ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $149.99 | not published | ✓ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $79.99 | not published | ✓ |
+| Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $59.99 | not published | ✓ | us/products/cjc-ipa-no-dac |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $89.99 | not published | ✓ | us/products/glow |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $99.99 | not published | ✓ | us/products/klow |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 30mg | $99.99 | not published | ✓ | us/products/bpc-tb-spray |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $149.99 | not published | ✓ | us/products/wolverine-stack |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $79.99 | not published | ✓ | us/products/wolverine-stack |
 
 ### Sprays / strips (separate format, no $/mg)
 | Product | Size | Base | Stock |
 | --- | --- | --- | --- |
+| Adamax (spray) | 15mg | $89.99 | ✓ |
+| BPC-157 (spray) | 15mg | $59.99 | ✓ |
+| DSIP (spray) | 15mg | $59.99 | ✓ |
 | GHK-Cu (spray) | 25mg | $49.99 | ✓ |
+| Melanotan II (spray) | 15mg | $59.99 | ✓ |
 | NAD+ (spray) | 750mg | $49.99 | ✓ |
 | PT-141 (spray) | 15mg | $54.99 | ✓ |
 | Selank (spray) | 20mg | $59.99 | ✓ |
