@@ -15,14 +15,14 @@
     "configs": [
       {
         "config": "10mg",
-        "vendors": 12
+        "vendors": 13
       },
       {
         "config": "20mg",
         "vendors": 5
       }
     ],
-    "vendors": 14,
+    "vendors": 15,
     "indexable": true
   },
   {

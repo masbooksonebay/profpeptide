@@ -1,0 +1,33 @@
+{
+  "_README": "MANUAL CINC read of aeropeptides.com/products (Cloudflare-walled Store API; storefront read in-browser). Aero is adapter:cinc — refresh.py SKIPS it, so it is ingested via load_cinc.py from THIS fixture. Re-runnable: next weekend re-read the storefront in-browser, overwrite `products` below, and run `python3 load_cinc.py --vendor aero-peptides --write [--allow-shrink]`. Format per product: name (as the storefront shows it, size in the name for singles so parse_size gets it), size_mg (for reference/blend totals; null when the storefront doesn't publish one), price_usd, in_stock. Read 2026-08-17: 25 compounds, all in stock.",
+  "vendor": "aero-peptides",
+  "read_date": "2026-08-17",
+  "source": "in-browser read of https://aeropeptides.com/products (25 COMPOUNDS)",
+  "products": [
+    {"name": "SS-31 10mg", "size_mg": 10, "price_usd": 64.99, "in_stock": true},
+    {"name": "Adamax 10mg", "size_mg": 10, "price_usd": 59.99, "in_stock": true},
+    {"name": "IGF1-LR3 1mg", "size_mg": 1, "price_usd": 69.99, "in_stock": true},
+    {"name": "Sermorelin", "size_mg": null, "price_usd": 64.99, "in_stock": true, "_note": "no mg on the listing (variable, slug sermorelin-5-10mg); needs a size to price"},
+    {"name": "KISSPEPTIN-10 10mg", "size_mg": 10, "price_usd": 39.99, "in_stock": true},
+    {"name": "Semax 10mg", "size_mg": 10, "price_usd": 44.99, "in_stock": true},
+    {"name": "KPV 10mg", "size_mg": 10, "price_usd": 39.99, "in_stock": true},
+    {"name": "MOTS-C 10mg", "size_mg": 10, "price_usd": 39.99, "in_stock": true},
+    {"name": "Glutathione 1500mg", "size_mg": 1500, "price_usd": 74.99, "in_stock": true},
+    {"name": "NAD+ 100mg", "size_mg": 100, "price_usd": 59.99, "in_stock": true},
+    {"name": "Melanotan I 10mg", "size_mg": 10, "price_usd": 24.99, "in_stock": true},
+    {"name": "Melanotan II 5mg", "size_mg": 5, "price_usd": 29.99, "in_stock": true},
+    {"name": "GHK-Cu 100mg", "size_mg": 100, "price_usd": 44.99, "in_stock": true},
+    {"name": "Tesamorelin 10mg", "size_mg": 10, "price_usd": 64.99, "in_stock": true},
+    {"name": "CJC-1295 no-DAC 10mg", "size_mg": 10, "price_usd": 69.99, "in_stock": true},
+    {"name": "TB500 5mg", "size_mg": 5, "price_usd": 39.99, "in_stock": true, "_note": "listing 'TB500 (5-10mg)' has 2 dosages; only the 5mg from-price ($39.99) is public — the 10mg price is AJAX-only on the product page"},
+    {"name": "BPC-157 10mg", "size_mg": 10, "price_usd": 44.99, "in_stock": true},
+    {"name": "GLP3 – Reta 10mg", "size_mg": 10, "price_usd": 79.99, "in_stock": true, "_maps_to": "retatrutide (via _aero decoder, self-identifying suffix)"},
+    {"name": "GLP1 – Tirz 10mg", "size_mg": 10, "price_usd": 74.99, "in_stock": true, "_maps_to": "tirzepatide (Aero mislabels GLP1; decoder keys on 'Tirz')"},
+    {"name": "GLP1 – Semaglutide 10mg", "size_mg": 10, "price_usd": 69.99, "in_stock": true, "_maps_to": "semaglutide"},
+    {"name": "CJC-1295 no-DAC (5mg) + IPA 5mg", "size_mg": 10, "price_usd": 69.99, "in_stock": true, "_blend": "total 10mg summed from the 5mg+5mg component doses in the name"},
+    {"name": "BPC (5mg) + TB (5mg) Wolverine Blend", "size_mg": 10, "price_usd": 89.99, "in_stock": true, "_blend": "total 10mg from the 5mg+5mg in the name — NB Mark noted 30mg; the storefront name says 5+5. Reconcile before trusting."},
+    {"name": "GLOW (BPC-157 + GHK-Cu + TB500)", "size_mg": null, "price_usd": 139.99, "in_stock": true, "_blend": "no total on the storefront listing; Mark noted 70mg but it is not verifiable from the read. Left null -> blend_total drops it as nototal until confirmed."},
+    {"name": "KLOW (BPC-157 + GHK-Cu + TB500 + KPV)", "size_mg": null, "price_usd": 149.99, "in_stock": true, "_blend": "no total on the storefront listing; drops as nototal until a total is confirmed."},
+    {"name": "Reconstitution BAC 10ml", "size_mg": null, "price_usd": 7.99, "in_stock": true, "_supply": "bacteriostatic water — out of PP scope; excluded by the scope filter"}
+  ]
+}

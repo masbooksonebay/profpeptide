@@ -45,10 +45,10 @@
       "recheck": false
     },
     "aero-peptides": {
-      "category": "walled",
-      "reason": "CINC platform, read-only (Cloudflare-blocked API). The refresh skips CINC adapters automatically — refresh manually. Long-standing, not new this run.",
+      "category": "manual-cinc",
+      "reason": "Store API Cloudflare-walled (adapter:cinc — refresh.py SKIPS it), but the storefront is browsable. REFRESHES VIA CINC BROWSER-READ, not auto-pull: read aeropeptides.com/products in-browser, overwrite scripts/price-pull/fixtures/aero-peptides.cinc.json, run `python3 scripts/price-pull/load_cinc.py --vendor aero-peptides --write [--allow-shrink]`. Last read 2026-08-17 (25 compounds). Next weekend's run must route Aero here, not to refresh.py.",
       "first_seen": "2026-08-16",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-08-17",
       "recheck": false
     },
     "limitless-biotech": {

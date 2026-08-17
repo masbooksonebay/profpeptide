@@ -8,6 +8,7 @@ export const generatedBlendEntries: BlendPriceEntry[] = [
   { blend: "bpc-157-tb-500-cartalax", blendName: "BPC-157/TB-500/Cartalax", vendor: "ameano-peptides", config: "30mg", totalPrice: 138, inStock: true },
   { blend: "bpc-157-tb-500-cartalax", blendName: "BPC-157/TB-500/Cartalax", vendor: "biolongevity-labs", config: "30mg", totalPrice: 139.99, inStock: true },
   { blend: "bpc-157-tb-500-cartalax", blendName: "BPC-157/TB-500/Cartalax", vendor: "ez-peptides", config: "30mg", totalPrice: 138, inStock: true },
+  { blend: "cjc-1295-no-dac-ipamorelin", blendName: "Cjc 1295 No Dac Ipamorelin", vendor: "aero-peptides", config: "10mg", totalPrice: 69.99, inStock: true },
   { blend: "cjc-1295-no-dac-ipamorelin", blendName: "Cjc 1295 No Dac Ipamorelin", vendor: "ameano-peptides", config: "10mg", totalPrice: 53, inStock: true },
   { blend: "cjc-1295-no-dac-ipamorelin", blendName: "Cjc 1295 No Dac Ipamorelin", vendor: "amino-club", config: "10mg", totalPrice: 59.99, inStock: true },
   { blend: "cjc-1295-no-dac-ipamorelin", blendName: "Cjc 1295 No Dac Ipamorelin", vendor: "biolongevity-labs", config: "10mg", totalPrice: 49.98, inStock: true },
