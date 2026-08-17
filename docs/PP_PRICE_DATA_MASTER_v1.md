@@ -1797,44 +1797,41 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 
 ## VENDOR: Aero Peptides
-- **slug:** aero-peptides | **code:** PROFPEPTIDE15 | **discount:** 15% off | **url:** aeropeptides.com
-- **traffic:** (not pulled) | **pulled:** July 24 2026 (CINC read-only)
-- **sale posture:** No sale running — `on_sale=false` across the catalog (these are standing prices). CINC pull: the WooCommerce Store API is Cloudflare-403'd, so prices come from each page's embedded product JSON. GLP names SELF-IDENTIFY the compound in the title (GLP3 – Reta = Retatrutide, GLP1 – Semaglutide, GLP1 – Tirz = Tirzepatide) — not coded; no verification/[UNVERIFIED] needed.
+- **slug:** aero-peptides | **code:** PROFPEPTIDE | **discount:** 15% off | **url:** https://aeropeptides.com/?ref=PROF15
+- **traffic:** (not pulled) | **pulled:** August 17 2026
+- **sale posture:** 
 
 ### Single compounds
-| Compound | Size | Base | $/mg | Stock |
-| --- | --- | --- | --- | --- |
-| Adamax | 10mg | $59.99 | $6.00 | ✓ |
-| BPC-157 | 10mg | $44.99 | $4.50 | ✓ |
-| CJC-1295 (no-DAC) | 10mg | $69.99 | $7.00 | ✓ |
-| GHK-Cu | 100mg | $44.99 | $0.45 | ✓ |
-| Glutathione | 1500mg | $74.99 | $0.05 | ✓ |
-| IGF-1 LR3 | 1mg | $69.99 | $69.99 | ✓ |
-| Kisspeptin-10 | 10mg | $39.99 | $4.00 | ✓ |
-| KPV | 10mg | $39.99 | $4.00 | ✓ |
-| Melanotan I | 10mg | $24.99 | $2.50 | ✓ |
-| Melanotan II | 5mg | $29.99 | $6.00 | ✓ |
-| MOTS-C | 10mg | $39.99 | $4.00 | ✓ |
-| NAD+ | 100mg | $59.99 | $0.60 | ✓ |
-| Retatrutide (listed as GLP3 – Reta) | 10mg | $79.99 | $8.00 | ✓ |
-| Semaglutide (listed as GLP1 – Semaglutide) | 10mg | $69.99 | $7.00 | ✓ |
-| Tirzepatide (listed as GLP1 – Tirz) | 10mg | $74.99 | $7.50 | ✓ |
-| Semax | 10mg | $44.99 | $4.50 | ✓ |
-| SS-31 | 10mg | $64.99 | $6.50 | ✓ |
-| Tesamorelin | 10mg | $64.99 | $6.50 | ✓ |
-| Sermorelin | 5–10mg | from $64.99 | — | ✓ |
-| TB-500 | 5–10mg | price unavailable | — | ✓ |
+| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| Adamax | 10mg | $59.99 | $6.00 | — | ✓ | adamax-10mg |
+| BPC-157 | 10mg | $44.99 | $4.50 | — | ✓ | bpc-157-10mg |
+| CJC-1295 | 10mg | $69.99 | $7.00 | — | ✓ | cjc-1295-no-dac-10mg |
+| GHK-Cu | 100mg | $44.99 | $0.45 | — | ✓ | ghk-cu-100mg |
+| Glutathione | 1500mg | $74.99 | $0.05 | — | ✓ | glutathione-1500mg |
+| IGF-1 LR3 | 1mg | $69.99 | $69.99 | — | ✓ | igf1-lr3-1mg |
+| Kisspeptin-10 | 10mg | $39.99 | $4.00 | — | ✓ | kisspeptin-10-10mg |
+| KPV | 10mg | $39.99 | $4.00 | — | ✓ | kpv-10mg |
+| Melanotan I | 10mg | $24.99 | $2.50 | — | ✓ | melanotan-i-10mg |
+| Melanotan II | 5mg | $29.99 | $6.00 | — | ✓ | melanotan-ii-5mg |
+| MOTS-C | 10mg | $39.99 | $4.00 | — | ✓ | mots-c-10mg |
+| NAD+ | 100mg | $59.99 | $0.60 | — | ✓ | nad-100mg |
+| Retatrutide (listed as GLP3 – Reta) | 10mg | $79.99 | $8.00 | — | ✓ | glp3-reta-10mg |
+| Semaglutide (listed as GLP1 – Semaglutide) | 10mg | $69.99 | $7.00 | — | ✓ | glp1-semaglutide-10mg |
+| Semax | 10mg | $44.99 | $4.50 | — | ✓ | semax-10mg |
+| SS-31 | 10mg | $64.99 | $6.50 | — | ✓ | ss-31-10mg |
+| TB-500 | 5mg | $39.99 | $8.00 | — | ✓ | tb500-5mg |
+| Tesamorelin | 10mg | $64.99 | $6.50 | — | ✓ | tesamorelin-10mg |
+| Tirzepatide (listed as GLP1 – Tirz) | 10mg | $74.99 | $7.50 | — | ✓ | glp1-tirz-10mg |
 
 ### Blends (total mg; ratio where published)
-| Blend | Components | Total mg | Base | Ratio | Stock |
-| --- | --- | --- | --- | --- | --- |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $89.99 | 5/5 (published) | ✓ |
-| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $69.99 | 5/5 (published) | ✓ |
-| GLOW | GHK-Cu/BPC-157/TB-500 | — | $139.99 | not published | ✓ |
-| KLOW | GHK-Cu/BPC-157/TB-500/KPV | — | $149.99 | not published | ✓ |
+| Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $69.99 | 5/5 (published) | ✓ | cjc-1295-no-dac-5mg-ipa-5mg |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $89.99 | 5/5 (published) | ✓ | bpc-5mg-tb-5mg-wolverine-blend |
 
 ### Sprays: none
-### Excluded: Reconstitution BAC water (supply). NOTE: TB-500 and Sermorelin are variable products whose per-size prices load via AJAX that Cloudflare blocks — TB-500 price unavailable, Sermorelin shown as "from $64.99" (not fabricated). GLOW/KLOW have no mg in the title, so no total-mg/$/mg (honest —).
+### Excluded: blend total unresolved (Rule 4): no total in name, no parseable size (Rule 4), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
