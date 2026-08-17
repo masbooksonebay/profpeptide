@@ -121,10 +121,31 @@ function ThemeToggle() {
   );
 }
 
+// Mobile-menu submenu items for a dropdown entry — the SAME destinations the desktop
+// DropdownPanel renders, flattened for the accordion. Categories carry an icon key (mirrors
+// the desktop panel); vendor links do not. Peptides also gets a "View All" row for parity.
+function mobileSubItems(entry: NavEntry): { label: string; href: string; icon?: string }[] {
+  if (entry.dropdown === "vendors") return vendorLinks;
+  if (entry.dropdown === "categories") {
+    return [
+      ...categories.map((c) => ({
+        label: c.label,
+        href: `${entry.href}?category=${c.slug}`,
+        icon: c.label,
+      })),
+      { label: `View All ${entry.href === "/peptides" ? "Peptides" : "Supplements"}`, href: entry.href },
+    ];
+  }
+  return [];
+}
+
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  // Mobile accordion: which dropdown entry is expanded (single-open). Distinct from
+  // activeDropdown (desktop hover state) — the two menus never coexist (md breakpoint).
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const closeTimeout = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
 
@@ -251,18 +272,70 @@ export default function Header() {
       </div>
       {mobileOpen && (
         <div className="md:hidden border-t border-gray-100 dark:border-slate-800 bg-white dark:bg-[#0f172a] px-4 pb-4">
-          {nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setMobileOpen(false)}
-              className={`block py-3 text-sm border-b border-gray-50 dark:border-slate-800 ${
-                pathname.startsWith(item.href) ? "text-[#3A759F] font-medium" : "text-gray-600 dark:text-slate-300"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {nav.map((item) =>
+            item.dropdown ? (
+              // Split tap target: the LABEL is a Link (navigates), the CHEVRON is a separate
+              // button (expands the submenu). A single row must never both navigate and expand.
+              <div key={item.href} className="border-b border-gray-50 dark:border-slate-800">
+                <div className="flex items-center justify-between">
+                  <Link
+                    href={item.href}
+                    onClick={() => setMobileOpen(false)}
+                    className={`flex-1 py-3 text-sm ${
+                      pathname.startsWith(item.href) ? "text-[#3A759F] font-medium" : "text-gray-600 dark:text-slate-300"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={() => setMobileExpanded((cur) => (cur === item.href ? null : item.href))}
+                    aria-expanded={mobileExpanded === item.href}
+                    aria-controls={`mobile-sub-${item.dropdown}`}
+                    aria-label={`${mobileExpanded === item.href ? "Collapse" : "Expand"} ${item.label} submenu`}
+                    className="p-3 -mr-1 text-gray-400 dark:text-slate-500 hover:text-[#3A759F] transition-colors"
+                  >
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-150 ${mobileExpanded === item.href ? "rotate-180" : ""}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+                {mobileExpanded === item.href && (
+                  <div id={`mobile-sub-${item.dropdown}`} className="pb-2 pl-3">
+                    {mobileSubItems(item).map((s) => (
+                      <Link
+                        key={s.href}
+                        href={s.href}
+                        onClick={() => setMobileOpen(false)}
+                        className="flex items-center gap-2.5 py-2 text-sm text-gray-500 dark:text-slate-400 hover:text-[#3A759F] transition-colors"
+                      >
+                        {s.icon && (
+                          <span className="flex-shrink-0 w-5 text-center"><CategoryIcon name={s.icon} /></span>
+                        )}
+                        {s.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setMobileOpen(false)}
+                className={`block py-3 text-sm border-b border-gray-50 dark:border-slate-800 ${
+                  pathname.startsWith(item.href) ? "text-[#3A759F] font-medium" : "text-gray-600 dark:text-slate-300"
+                }`}
+              >
+                {item.label}
+              </Link>
+            )
+          )}
         </div>
       )}
       <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
