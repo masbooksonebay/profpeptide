@@ -42,9 +42,14 @@ Its **vendor page never ranked** in observation — the `/coupons` hub ranked fo
 **surface at all**. Same five changes; structure confirmed identical (facts line + FAQ Q1 present).
 
 ### Cohort C — capstone-peptides (added 2026-08-16, separate cohort)
-**Never crawled by Google — no baseline.** Shipped ~2026-08-15. Will be **indexed WITH the treatment
-from the start**, so there is no before/after; it measures the treated state's cold-start behavior.
-Same five changes; structure confirmed identical to the five.
+**Crawled Aug 15 2026 3:08 PM ET and INDEXED** (CINC GSC baseline pass) — that crawl **predates the
+treatment push**, so Capstone has a genuine pre-treatment crawl/index baseline like the other six.
+What it lacks is a **SERP baseline**: it was NOT in CINC's 14-page longitudinal observation set, so
+nobody has observed its title/snippet state before treatment. That is the real gap — different from
+"never crawled." So there is no before/after on the *observed SERP* dimension, though the crawl
+baseline exists. Same five changes; structure confirmed identical to the five.
+(Correction 2026-08-16: an earlier version said "never crawled, no baseline" — wrong; it was crawled
+and indexed. The absent thing is the observed-SERP baseline, not the crawl.)
 
 ## CONTROL — four pages, untouched (the valid control)
 **almighty-peptides · spartan-peptides · royal-peptides · amino-x**
@@ -57,6 +62,37 @@ Already hold their own titles and render full snippets every round — they cann
 measure nothing as controls. Held out only as **caution around an unproven change**. peptide-partners
 in particular is the **top earner** — nothing to gain, something to lose. (An earlier version of this
 experiment wrongly named these four as the control group; corrected 2026-08-16.)
+
+## GSC SUBMISSION RUN & BASELINES
+
+**Index/canonical status:** all eleven pages (7 treated + 4 controls) are **indexed with a
+self-selected canonical**. None is in a duplicate or excluded bucket.
+
+**GSC daily quota = 10** (not 11). Observed: nine submissions plus one accidental duplicate hit the
+ceiling — which is why the last two controls slipped a day (below).
+
+**Submission dates (ET):**
+- **Aug 16 2026** — the seven treated (amino-club, glacier-aminos, ez-peptides, midwest-peptide,
+  mile-high-compounds, nura-peptide, capstone-peptides) plus controls **almighty** and **spartan**.
+- **Aug 17 2026** — controls **royal** and **amino-x** — a **one-day offset on half the control
+  group**, caused by the daily quota running out on Aug 16. Note this offset when reading control
+  timing; it is a submission-date artifact, not a treatment effect.
+
+**Pre-submission last-crawl baselines (ET):**
+
+| page | role | last crawl (ET) |
+|---|---|---|
+| amino-club | treated (A) | Aug 10 12:53 AM |
+| glacier-aminos | treated (A) | Aug 7 9:00 PM |
+| ez-peptides | treated (A) | Aug 7 9:09 PM |
+| midwest-peptide | treated (A) | Aug 10 9:29 PM |
+| mile-high-compounds | treated (A) | Jul 26 10:17 AM |
+| nura-peptide | treated (B) | Aug 13 3:59 PM |
+| capstone-peptides | treated (C) | Aug 15 3:08 PM |
+| almighty-peptides | control | Aug 7 9:27 PM |
+| spartan-peptides | control | Aug 13 8:07 PM |
+| royal-peptides | control | Aug 10 3:04 AM |
+| amino-x | control | Aug 13 7:43 PM |
 
 ## Scope invariant
 Seven treated (A: 5, B: 1, C: 1); **43 of 50 coupon pages byte-identical**. Any future rollout must
