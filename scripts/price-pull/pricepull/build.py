@@ -190,7 +190,7 @@ def blend_total(name, size_label, slug, comps):
         count equals the component count blend_of identified (`comps`). A mismatch (a genuine 3-dose
         code under a 2-way 'Wolverine' label — Deadpool/Regeno) returns (None, 'mismatch'): DROP +
         COUNT. Never partial-sum, never infer a missing component.
-      • A lone total already in the name (GLOW '70mg', KLOW '80mg') is taken as-is.
+      • A lone total in the NAME (GLOW '70mg') or the SIZE_LABEL (a Size attr '70MG') is taken as-is.
       • Otherwise (None, 'nototal'): DROP + COUNT.
     `comps` is blend_of's 'A/B[/C]' string; None for coded/unregistered blends (no count known, so a
     code is summed unguarded — unchanged behaviour, e.g. GLP-3R/CAG)."""
@@ -213,9 +213,15 @@ def blend_total(name, size_label, slug, comps):
             if len(stripped) == n:
                 return sum(stripped), 'ok'
         return None, 'mismatch'                       # genuine count disagreement -> DROP + COUNT
-    singles = re.findall(r'(\d+(?:\.\d+)?)\s*mg\b', name or '', re.I)
-    if len(singles) == 1:
-        return float(singles[0]), 'ok'
+    # Lone published total (no multi-dose code): a single "Nmg" taken as-is. Check the NAME and the
+    # SIZE_LABEL — a vendor may carry the blend total in the name ("GLOW 70mg") or in a Size variation
+    # attribute ("70MG"); both are published values, equally valid. (amino-club moved its blend totals
+    # out of the name into a Size attr 2026-08, and a name-only fallback silently dropped GLOW/KLOW/
+    # Wolverine as 'nototal'.) Name is checked first so it keeps precedence where both are present.
+    for src in (name, size_label):
+        singles = re.findall(r'(\d+(?:\.\d+)?)\s*mg\b', src or '', re.I)
+        if len(singles) == 1:
+            return float(singles[0]), 'ok'
     return None, 'nototal'
 
 

@@ -1,0 +1,62 @@
+{
+  "_README": "Persistent record of vendors a price-pull run could NOT write, so a later run reports 'skipped last week, still broken' instead of rediscovering it. Keyed by vendor slug. category ∈ {vendor-broken, walled, incomplete-pull, transient, currency, permanent, pin-loss}. first_seen/last_seen are ISO dates (ET). recheck = whether the next run should retry (transient/walled) or leave it (permanent/currency until the vendor changes). Update last_seen each run the skip persists; remove an entry the run the vendor writes cleanly again. NOTE: amino-club is deliberately NOT here — its blend [nototal] drop was OURS (blend_total name-only fallback), fixed 2026-08-16, not a vendor skip. HOW IT WAS FOUND (record 2026-08-16): the blend_total gap had been silently dropping ~35 blend rows across 10 vendors for an unknown time. It surfaced ONLY because amino-club was PINNED (vendor-pins) on GLOW/KLOW/Wolverine — its re-pull dropped those blends and check:vendor-pins FAILED loudly. Without that pin the drop stays silent (a WARN-only blend counter). Takeaway: a vendor pin has DIAGNOSTIC value beyond placement — it turns a silent per-vendor data loss into a hard build failure. Worth keeping pins on compounds we care about partly for that trip-wire effect.",
+  "_updated": "2026-08-16",
+  "skips": {
+    "purerawz": {
+      "category": "vendor-broken",
+      "reason": "Live catalog degraded: 42 of 53 products show price $0 with zero variations (kept empty Form/Strength attribute shells); only 11 priced. Row-drop floor REFUSED the write (145 → 18 singles, -83%).",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "recheck": true
+    },
+    "behemoth-labz": {
+      "category": "walled",
+      "reason": "Cloudflare bot-challenge turned on — API and homepage both 403 (cf-mitigated: challenge); 'Just a moment…' even in a JS browser. Storefront browsable by a human, not by tooling. Needs a browser pull or a paste. Was pullable before 2026-08-16.",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "recheck": true
+    },
+    "la-peptides": {
+      "category": "walled",
+      "reason": "Cloudflare WAF on the /wp-json path only (401); domain lapeptides.net homepage returns 200 and is browsable. API-walled, storefront public. Needs a browser pull or a paste. Was pullable before 2026-08-16.",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "recheck": true
+    },
+    "swiss-chems": {
+      "category": "incomplete-pull",
+      "reason": "IncompletePull guard refused: 9 of 117 variation-page fetches failed all retries. A broken fetch, not a catalog change — retry next run; --allow-shrink does NOT override this.",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "recheck": true
+    },
+    "purerx-peptides": {
+      "category": "transient",
+      "reason": "HTTP 503 Service Unavailable on the Store API. Likely transient — retry next run.",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "recheck": true
+    },
+    "nova-labs": {
+      "category": "currency",
+      "reason": "Store API reports AED, not USD. PP prices in USD only, so this vendor is unpriceable without an FX policy. Structural, not transient — leave until the vendor sells in USD.",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "recheck": false
+    },
+    "aero-peptides": {
+      "category": "walled",
+      "reason": "CINC platform, read-only (Cloudflare-blocked API). The refresh skips CINC adapters automatically — refresh manually. Long-standing, not new this run.",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "recheck": false
+    },
+    "limitless-biotech": {
+      "category": "permanent",
+      "reason": "BigCommerce B2B store; all prices login-gated behind a 'Pro' account. Permanently excluded in registry.BLOCKED.",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "recheck": false
+    }
+  }
+}
