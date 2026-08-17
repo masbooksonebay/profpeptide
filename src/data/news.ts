@@ -21,6 +21,14 @@ export interface NewsArticle {
 // article can never ship without its self-canonical <link rel="canonical">.
 export const articles: NewsArticle[] = [
   {
+    title: "The 503B Exclusion of Semaglutide, Tirzepatide, and Liraglutide — and the Three Lanes of Peptide Access",
+    slug: "glp1-compounding-503a-503b-three-lanes-2026",
+    peptides: ["semaglutide", "tirzepatide"],
+    date: "August 17, 2026",
+    excerpt:
+      "The FDA has proposed to bar outsourcing facilities from bulk-compounding semaglutide, tirzepatide, and liraglutide — the concrete current news. But “the rules changed” is too coarse: compounding runs through two separate federal channels, 503A (a pharmacy compounding for one patient) and 503B (bulk outsourcing), and they moved differently. Sort it into three lanes — FDA-approved drugs, compoundable peptides (503A/Category 1), and research-use-only peptides — and it’s clear which channel each rule touches. The count to keep straight: zero peptides are confirmed in Category 1; twelve were removed from Category 2, six were recommended, and removal isn’t authorization. Prof. Peptide’s lane — research peptides — is separate and unaffected by these specific actions.",
+  },
+  {
     title: "Peptides Loosen, GLP-1 Compounding Tightens — The FDA’s Two Opposite Tracks",
     slug: "fda-peptides-loosen-glp1-compounding-tightens-2026",
     peptides: ["bpc-157", "tb-500", "mots-c", "semaglutide", "tirzepatide"],
