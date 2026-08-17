@@ -48,6 +48,21 @@ NOT_A_COMPOUND = {"slimassist"}
 #            native growth-factor/longevity protein, single-vendor only.
 OUT_OF_SCOPE = {"pnc-27", "klotho"}
 
+# Deliberate per-vendor compound suppression: a (vendor_slug, compound_slug) pair is dropped from
+# the single-compound track NO MATTER how the vendor names the product. Applied AFTER the slug is
+# resolved, so it is name-agnostic — a rename that makes the product re-resolve correctly still
+# cannot bring it back onto the page. An EXPLICIT exclusion, not an accident of a code map going stale.
+#   peptidology 2026-08-17: vendor requested removal from the three incretin GLP pages
+#   (semaglutide / tirzepatide / retatrutide). RETAINED on /prices/survodutide (it reaches that page
+#   via the 'survodutide' ALIAS in decoders.py, NOT via CODED_DECODE, so survodutide is deliberately
+#   NOT listed here). Previously the removal held only because a vendor rename left the peptidology
+#   CODED_DECODE entry unmatched — a fragile accident; this makes it durable.
+VENDOR_COMPOUND_SUPPRESS = {
+    ("peptidology", "semaglutide"),
+    ("peptidology", "tirzepatide"),
+    ("peptidology", "retatrutide"),
+}
+
 # Vendor coded GLP names — Mark-confirmed established mappings (not inferences).
 # Glacier's own labels corroborate (GLA-3 RT: CAS 2381089-83-2 / MW 4731.42;
 # GLA-2 TRZ: CAS 2023788-19-2 / MW 4813.45). A "[coded, UNVERIFIED]" single from
@@ -62,7 +77,9 @@ CODED_DECODE = {
     # decoders.py (verified); only its GLP-3 is mapped here.
     "la-peptides":         {"GLP – 1 (S)": "semaglutide", "GLP – 2 (T)": "tirzepatide", "GLP – 3 (R)": "retatrutide"},
     "mile-high-compounds": {"MHC-1 SM": "semaglutide", "MHC-2 TRZ": "tirzepatide", "MHC-3 RT": "retatrutide"},
-    "peptidology":         {"GLP1 (PGL-G1)": "semaglutide", "GLP2 (PGL-GI1)": "tirzepatide", "GLP3 (PGL-GIC1)": "retatrutide"},
+    # peptidology's GLP codes are intentionally absent: the vendor is suppressed from the three
+    # incretin pages by VENDOR_COMPOUND_SUPPRESS (name-agnostic), so decoding them here would be
+    # dead weight. Do NOT re-add — suppression happens post-resolve regardless of the code.
     "nextgen-peptides":    {"GLP-3": "retatrutide"},
 }
 
@@ -172,7 +189,7 @@ blend_data_rows = []      # raw blend rows captured from every vendor's ### Blen
 VENDOR_NAMES = {}         # slug -> doc display name (fallback for vendors absent from vendors.ts)
 VENDOR_PULLED = {}        # slug -> per-vendor pull date (for the honest MIN stamp)
 excl = {"blends": 0, "sprays": 0, "unverified_single": 0, "nosize_single": 0, "noprice_single": 0,
-        "not_a_compound": 0, "editorial_scope": 0, "cjc_unresolved": 0}
+        "not_a_compound": 0, "editorial_scope": 0, "cjc_unresolved": 0, "vendor_suppressed": 0}
 doc_single_total = 0
 retired_row_count = 0
 unresolved = []           # STOP condition
@@ -276,6 +293,13 @@ for s in secs:
         # real compound but outside PP's editorial scope (oncology / native protein / etc.)
         if slug in OUT_OF_SCOPE:
             excl["editorial_scope"] += 1
+            continue
+
+        # deliberate per-vendor compound suppression (name-agnostic; see VENDOR_COMPOUND_SUPPRESS).
+        # Runs AFTER the slug resolves, so it catches any product that resolves to the compound
+        # regardless of how the vendor names it — a rename can't re-surface it.
+        if (vslug, slug) in VENDOR_COMPOUND_SUPPRESS:
+            excl["vendor_suppressed"] += 1
             continue
 
         # CJC-1295: split the merged "cjc-1295" bucket into two DISTINCT compounds by the
@@ -564,13 +588,16 @@ print(f"  excluded no-price single:   {excl['noprice_single']}")
 print(f"  excluded not-a-compound:    {excl['not_a_compound']}")
 print(f"  excluded editorial-scope:   {excl['editorial_scope']}")
 print(f"  excluded cjc-1295 unresolved (slug states no form — DROPPED, not guessed): {excl['cjc_unresolved']}")
+print(f"  excluded vendor-suppressed (deliberate per-vendor removal): {excl['vendor_suppressed']}")
 for v, sl in cjc_unresolved:
     print(f"     {v}: slug {sl!r}")
 _ss = (len(rows) + excl['unverified_single'] + excl['nosize_single'] + excl['noprice_single']
-       + excl['not_a_compound'] + excl['editorial_scope'] + excl['cjc_unresolved'])
+       + excl['not_a_compound'] + excl['editorial_scope'] + excl['cjc_unresolved']
+       + excl['vendor_suppressed'])
 print(f"  singles arithmetic closes: {_ss==doc_single_total} "
       f"({len(rows)}+{excl['unverified_single']}+{excl['nosize_single']}+{excl['noprice_single']}"
-      f"+{excl['not_a_compound']}+{excl['editorial_scope']}+{excl['cjc_unresolved']}={doc_single_total})")
+      f"+{excl['not_a_compound']}+{excl['editorial_scope']}+{excl['cjc_unresolved']}"
+      f"+{excl['vendor_suppressed']}={doc_single_total})")
 print(f"non-single excluded (separate tracks): blends={excl['blends']} sprays={excl['sprays']}")
 if blend_cjc_unresolved:
     print(f"CJC-1295/Ipamorelin blend rows DROPPED (slug doesn't state DAC/no-DAC — parked until the pull "
