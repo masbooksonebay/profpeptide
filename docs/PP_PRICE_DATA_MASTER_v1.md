@@ -215,8 +215,18 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tesamorelin | 20mg | $110.00 | $5.50 | — | ✓ | products/tesamorelin |
 | Thymosin Alpha-1 | 10mg | $39.99 | $4.00 | — | ✓ | products/thymosin-alpha-1 |
 
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $59.99 | not published | ✓ | products/cjc-1295-ipamorelin-blend |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $114.99 | not published | ✓ | products/glow |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 50mg | $97.99 | not published | ✓ | products/glow |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $129.99 | not published | ✓ | products/klow |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $109.99 | not published | ✓ | products/bpc-157-tb-500-blend |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 5mg | $71.98 | not published | ✓ | products/bpc-157-tb-500-blend |
+
 ### Sprays: none
-### Excluded: blend total unresolved (Rule 4): no total in name, supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
@@ -453,8 +463,14 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tesamorelin | 10mg | $64.99 | $6.50 | — | ✓ | product/tesamorelin/ |
 | Tirzepatide (listed as AX-TR) | 10mg | $34.99 | $3.50 | — | ✗ | product/ax-tr/ |
 
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $79.99 | not published | ✗ | product/klow/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $64.99 | not published | ✓ | product/bpc-157-tb-500-blend/ |
+
 ### Sprays: none
-### Excluded: blend total unresolved (Rule 4): no total in name, supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
@@ -830,6 +846,8 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 16mg | $104.99 | 13/3 (published) | ✓ | product/tesa-ipa-peptide-blend-13mg-3mg/ |
 | Tirz/Reta blend [backlog] |  | 20mg | $109.99 | not published | ✓ | product/gla2-5-t-r-20mg/ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 60mg | $145.99 | not published | ✓ | product/bpc-tb-500-research-spray-60mg/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $59.99 | not published | ✓ | product/bpc-tb-500-wolverine/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $99.99 | not published | ✓ | product/bpc-tb-500-wolverine/ |
 
 ### Sprays / strips (separate format, no $/mg)
 | Product | Size | Base | Stock |
@@ -1198,12 +1216,14 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | --- | --- | --- | --- | --- | --- | --- |
 | CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $75.00 | not published | ✓ | ipamorelin-cjc-1295-blend/ |
 | CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 20mg | $150.00 | not published | ✓ | ipamorelin-cjc-1295-blend/ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $110.00 | not published | ✓ | glow-ghk-cu-bpc-157-tb-500-blend/ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $120.00 | not published | ✓ | ghk-cu-bpc-157-tb-500-kpv-klow-blend/ |
 | Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 15mg | $90.00 | not published | ✓ | ipa-tesa-blend/ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $80.00 | not published | ✓ | bpc-157-tb-500-blend/ |
 | Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $140.00 | not published | ✓ | bpc-157-tb-500-blend/ |
 
 ### Sprays: none
-### Excluded: blend leak (Rule A): selank + semax — blend-registry candidate, blend total unresolved (Rule 4): no total in name, liquid/concentration (per-ml, not a vial), oral/capsule, oral/tablet/sublingual, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend leak (Rule A): selank + semax — blend-registry candidate, liquid/concentration (per-ml, not a vial), oral/capsule, oral/tablet/sublingual, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
@@ -1439,7 +1459,11 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ### Blends (total mg; ratio where published)
 | Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
 | --- | --- | --- | --- | --- | --- | --- |
+| CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 20mg | $95.00 | not published | ✓ | shop/cjcno-dac-ipamorelin-10mg-kit/ |
+| CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $70.00 | not published | ✓ | shop/cjcno-dac-ipamorelin-10mg-kit/ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $70.00 | not published | ✓ | shop/glow-blend-vial-kit/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $115.00 | not published | ✓ | shop/wolverine-bpc-157-tb-500-blend/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $75.00 | not published | ✓ | shop/wolverine-bpc-157-tb-500-blend/ |
 
 ### Sprays: none
 ### Excluded: blend total unresolved (Rule 4): no total in name, manually excluded — 10-vial kit whose NAME carries no kit marker (only the slug does), so is_kit_name misses it — $360 = $72/mg vs a ~$11/mg median., manually excluded — 10-vial kit whose NAME carries no kit marker — $430 = $86/mg vs a ~$10/mg median., manually excluded — blend leak: Semax/Selank blend mis-classified as Selank 20mg ($4.50/mg). check:prices passed it (near the corrupted Selank-20mg median)., manually excluded — oral/count — UNRESOLVABLE: variable product 'SLU-PP-332 50/100 count bottles' (5 variants). Count is stated as '50/100' with no reliable per-variant mapping, so the package total can't be computed from public data. Stays excluded (absent beats a guessed total). Re-add per-variant once the count is confirmed., manually excluded — pricing error: this single 10mg is listed at $465, ABOVE the same vendor's 10-vial kit ($330) — internally impossible, so removed as an error, not a premium., multi-vial kit / pack (by name), multi-vial kit landing page (by slug), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
@@ -1518,7 +1542,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 ## VENDOR: Synthesis Peptides
 - **slug:** synthesis-peptides | **code:** PROFPEPTIDE10 | **discount:** 10% off | **url:** synthesispeptides.io
-- **traffic:** (not pulled) | **pulled:** August 5 2026
+- **traffic:** (not pulled) | **pulled:** August 16 2026
 - **sale posture:** No product-level sale (single price per variant).
 
 ### Single compounds
@@ -1544,7 +1568,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | NAD+ | 500mg | $63.99 | $0.13 | — | ✓ | products/nad |
 | PT-141 | 10mg | $52.99 | $5.30 | — | ✓ | products/pt-141 |
 | Retatrutide (listed as GLP-3R) | 10mg | $89.99 | $9.00 | — | ✓ | products/glp-3r |
-| Retatrutide (listed as GLP-3R) | 15mg | $119.99 | $8.00 | — | ✓ | products/glp-3r |
+| Retatrutide (listed as GLP-3R) | 15mg | $119.99 | $8.00 | — | ✗ | products/glp-3r |
 | Retatrutide (listed as GLP-3R) | 20mg | $139.99 | $7.00 | — | ✓ | products/glp-3r |
 | Retatrutide (listed as GLP-3R) | 30mg | $189.99 | $6.33 | — | ✗ | products/glp-3r |
 | Retatrutide (listed as GLP-3R) | 40mg | $229.99 | $5.75 | — | ✓ | products/glp-3r |
@@ -1552,7 +1576,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Selank | 30mg | $74.99 | $2.50 | — | ✓ | products/selank |
 | Semaglutide (listed as GLP-1S) | 10mg | $72.99 | $7.30 | — | ✓ | products/glp-1s |
 | Semax | 10mg | $36.99 | $3.70 | — | ✓ | products/semax |
-| Semax | 30mg | $74.99 | $2.50 | — | ✓ | products/semax |
+| Semax | 30mg | $74.99 | $2.50 | — | ✗ | products/semax |
 | Sermorelin | 10mg | $74.99 | $7.50 | — | ✓ | products/sermorelin-10mg |
 | TB-500 | 10mg | $74.99 | $7.50 | — | ✓ | products/tb-500 |
 | Tesamorelin | 10mg | $79.99 | $8.00 | — | ✓ | products/tesamorelin |
@@ -1561,14 +1585,14 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tirzepatide (listed as GLP-2T) | 15mg | $79.99 | $5.33 | — | ✓ | products/glp-2t |
 
 ### Blends (total mg; ratio where published)
-| Blend | Components | Total mg | Base | Ratio | Stock |
-| --- | --- | --- | --- | --- | --- |
-| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $63.99 | not published | ✓ |
-| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $119.99 | not published | ✓ |
-| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $129.99 | not published | ✓ |
-| NAD+/MOTS-C/5-Amino-1MQ | NAD+/MOTS-C/5-Amino-1MQ | 120mg | $119.99 | not published | ✓ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $64.99 | not published | ✓ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $99.99 | not published | ✓ |
+| Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $63.99 | not published | ✓ | products/cjc-1295-no-dac-ipamorelin |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $119.99 | not published | ✓ | products/glow-70-blend |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $129.99 | not published | ✓ | products/klow-80 |
+| NAD+/MOTS-C/5-Amino-1MQ | NAD+/MOTS-C/5-Amino-1MQ | 120mg | $119.99 | not published | ✓ | products/5-amino-1mq-mots-c-nad |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $64.99 | not published | ✓ | products/bpc-157-tb-500 |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $99.99 | not published | ✓ | products/bpc-157-tb-500 |
 
 ### Sprays: none
 ### Excluded: no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
@@ -1577,7 +1601,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ## VENDOR: Vital Core Research
 - **slug:** vital-core-research | **code:** PROF20 | **discount:** 20% off | **url:** vitalcoreresearch.com
-- **traffic:** (not pulled) | **pulled:** July 30 2026
+- **traffic:** (not pulled) | **pulled:** August 16 2026
 - **sale posture:** No sale.
 
 ### Single compounds
@@ -1585,15 +1609,18 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | --- | --- | --- | --- | --- | --- | --- |
 | 5-Amino-1MQ | 5mg | $40.99 | $8.20 | — | ✓ | product/5-amino-1mq/ |
 | 5-Amino-1MQ | 10mg | $70.99 | $7.10 | — | ✓ | product/5-amino-1mq/ |
-| AOD-9604 | 5mg | $44.99 | $9.00 | — | ✗ | product/aod-9604/ |
+| AOD-9604 | 5mg | $44.99 | $9.00 | — | ✓ | product/aod-9604/ |
 | BPC-157 | 2mg | $29.99 | $14.99 | — | ✓ | product/bpc-157/ |
 | BPC-157 | 5mg | $34.99 | $7.00 | — | ✓ | product/bpc-157/ |
 | BPC-157 | 10mg | $63.99 | $6.40 | — | ✓ | product/bpc-157/ |
 | Cagrilintide | 5mg | $79.99 | $16.00 | — | ✓ | product/cagrilintide/ |
 | Cagrilintide | 10mg | $159.99 | $16.00 | — | ✓ | product/cagrilintide/ |
 | CJC-1295 | 2mg | $40.99 | $20.50 | — | ✓ | product/cjc-1295-with-dac/ |
+| CJC-1295 | 2mg | $40.99 | $20.50 | — | ✓ | product/cjc-1295-no-dac/ |
+| CJC-1295 | 5mg | $59.99 | $12.00 | — | ✓ | product/cjc-1295-with-dac/ |
 | CJC-1295 | 5mg | $49.99 | $10.00 | — | ✓ | product/cjc-1295-no-dac/ |
 | CJC-1295 | 10mg | $89.99 | $9.00 | — | ✓ | product/cjc-1295-no-dac/ |
+| DSIP | 5mg | $29.99 | $6.00 | — | ✓ | product/dsip/ |
 | Epitalon | 10mg | $34.99 | $3.50 | — | ✓ | product/epithalon/ |
 | Epitalon | 50mg | $99.99 | $2.00 | — | ✓ | product/epithalon/ |
 | GHK-Cu | 50mg | $39.99 | $0.80 | — | ✓ | product/ghk-cu/ |
@@ -1602,20 +1629,20 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | GHRP-2 | 10mg | $58.99 | $5.90 | — | ✓ | product/ghrp-2/ |
 | GHRP-6 | 5mg | $29.99 | $6.00 | — | ✓ | product/ghrp-6/ |
 | GHRP-6 | 10mg | $58.99 | $5.90 | — | ✓ | product/ghrp-6/ |
-| GLP-1 [coded, UNVERIFIED] | 5mg | $79.99 | $16.00 | — | ✓ | product/glp-1sg/ |
-| GLP-1 [coded, UNVERIFIED] | 10mg | $119.99 | $12.00 | — | ✓ | product/glp-1sg/ |
-| GLP-2 [coded, UNVERIFIED] | 10mg | $89.99 | $9.00 | — | ✓ | product/glp-2/ |
-| GLP-2 [coded, UNVERIFIED] | 30mg | $169.99 | $5.67 | — | ✓ | product/glp-2/ |
-| GLP-2 [coded, UNVERIFIED] | 60mg | $229.99 | $3.83 | — | ✓ | product/glp-2/ |
-| GLP-3 [coded, UNVERIFIED] | 10mg | $128.99 | $12.90 | — | ✓ | product/glp-3/ |
-| GLP-3 [coded, UNVERIFIED] | 30mg | $220.99 | $7.37 | — | ✓ | product/glp-3/ |
-| GLP-3 [coded, UNVERIFIED] | 50mg | $298.99 | $5.98 | — | ✓ | product/glp-3/ |
+| Hexarelin | 5mg | $44.99 | $9.00 | — | ✓ | product/hexarelin/ |
+| HGH Fragment 176-191 [backlog] | 6mg | $49.99 | $8.33 | — | ✓ | product/hgh-frag-176-191/ |
+| IGF-1 LR3 | 1mg | $99.99 | $99.99 | — | ✓ | product/igf-1-lr3/ |
 | Ipamorelin | 5mg | $34.99 | $7.00 | — | ✓ | product/ipamorelin/ |
 | Ipamorelin | 10mg | $68.99 | $6.90 | — | ✓ | product/ipamorelin/ |
+| Mazdutide [backlog] | 10mg | $109.99 | $11.00 | — | ✓ | product/mazdutide/ |
+| MK-677 | 12.5mg | $69.99 | $5.60 | — | ✓ | product/mk-677/ |
 | NAD+ | 100mg | $39.99 | $0.40 | — | ✓ | product/nad/ |
 | NAD+ | 500mg | $100.99 | $0.20 | — | ✓ | product/nad/ |
 | NAD+ | 1000mg | $150.99 | $0.15 | — | ✓ | product/nad/ |
+| Selank | 10mg | $49.99 | $5.00 | — | ✓ | product/selank/ |
+| Semax | 10mg | $49.99 | $5.00 | — | ✓ | product/semax/ |
 | Sermorelin | 5mg | $44.99 | $9.00 | — | ✓ | product/sermorelin/ |
+| SNAP-8 [backlog] | 10mg | $49.99 | $5.00 | — | ✓ | product/snap-8/ |
 | TB-500 | 2mg | $29.99 | $14.99 | — | ✓ | product/tb-500/ |
 | TB-500 | 5mg | $39.99 | $8.00 | — | ✓ | product/tb-500/ |
 | TB-500 | 10mg | $74.99 | $7.50 | — | ✓ | product/tb-500/ |
@@ -1625,17 +1652,14 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Thymosin Alpha-1 | 10mg | $74.99 | $7.50 | — | ✓ | product/thymosin-alpha-1/ |
 
 ### Blends (total mg; ratio where published)
-| Blend | Components | Total mg | Base | Ratio | Stock |
-| --- | --- | --- | --- | --- | --- |
-| CJC-1295/Ipamorelin | CJC-1295/Ipamorelin | — | $74.99 | not published | ✓ |
-| GLOW | GHK-Cu/BPC-157/TB-500 | — | $119.99 | not published | ✓ |
-| KLOW | GHK-Cu/BPC-157/TB-500/KPV | — | $149.99 | not published | ✓ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 5mg | $74.99 | not published | ✓ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $140.99 | not published | ✓ |
-| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | — | $74.99 | not published | ✓ |
+| Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 5mg | $74.99 | not published | ✓ | product/cjc-1295-no-dac-ipamorelin-blend/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $74.99 | not published | ✓ | product/bpc-157-tb-500-blend/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $140.99 | not published | ✓ | product/bpc-157-tb-500-blend/ |
 
 ### Sprays: none
-### Excluded: oral/capsule, oral/tablet/sublingual, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend total unresolved (Rule 4): no total in name, no parseable size (Rule 4), oral/capsule, oral/tablet/sublingual, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
@@ -1976,10 +2000,15 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 15mg | $64.00 | not published | ✓ | product/cjc1295-no-dac-ipamorlin/ |
 | CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 30mg | $115.99 | not published | ✓ | product/cjc1295-no-dac-ipamorlin/ |
 | GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $109.00 | not published | ✓ | product/glw/ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $119.99 | not published | ✓ | product/klow/ |
 | Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 13mg | $89.99 | not published | ✓ | product/tesa-ipa-blend/ |
+| Tesamorelin/Ipamorelin/CJC-1295 | Tesamorelin/Ipamorelin/CJC-1295 | 12mg | $82.99 | not published | ✗ | product/tesa-cjc-ipa-blend/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $89.95 | not published | ✓ | product/bp-tb-bl/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 40mg | $144.95 | not published | ✗ | product/bp-tb-bl/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 45.63mg | $144.95 | not published | ✓ | product/bp-tb-bl/ |
 
 ### Sprays: none
-### Excluded: blend leak (Rule A): thymosin-alpha-1 + thymulin — blend-registry candidate, blend total unresolved (Rule 4): no total in name, manually excluded — UNCERTAIN, pending verification (not confirmed bad): VIP 11.27mg — clean slug, anomalous size (VIP singles are 10mg), unresolved from generated data. Absent beats wrong; re-add if verified., manually excluded — blend leak: Semax/Selank blend -> Selank 27mg ($4.81/mg)., oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+### Excluded: blend leak (Rule A): thymosin-alpha-1 + thymulin — blend-registry candidate, manually excluded — UNCERTAIN, pending verification (not confirmed bad): VIP 11.27mg — clean slug, anomalous size (VIP singles are 10mg), unresolved from generated data. Absent beats wrong; re-add if verified., manually excluded — blend leak: Semax/Selank blend -> Selank 27mg ($4.81/mg)., oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
 
 ---
 
@@ -2370,6 +2399,11 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 | Tesamorelin | 5mg | $159.00 | $31.80 | — | ✓ | products/tesamorelin-5-mg/ |
 | Thymosin Alpha-1 | 5mg | $99.00 | $19.80 | — | ✓ | products/thymosin-alpha/ |
 | Tirzepatide (listed as GLP-2(Tirz)) | 10mg | $250.00 | $25.00 | — | ✓ | products/glp-2tirz/ |
+
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $199.00 | not published | ✓ | products/cjc-ipa-10-mg-blend/ |
 
 ### Sprays: none
 ### Excluded: blend total unresolved (Rule 4): no total in name, out-of-scope (SARMs/Rx/cosmetics) — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).

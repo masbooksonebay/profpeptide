@@ -15,14 +15,14 @@
     "configs": [
       {
         "config": "10mg",
-        "vendors": 11
+        "vendors": 12
       },
       {
         "config": "20mg",
-        "vendors": 4
+        "vendors": 5
       }
     ],
-    "vendors": 13,
+    "vendors": 14,
     "indexable": true
   },
   {
@@ -30,10 +30,10 @@
     "configs": [
       {
         "config": "70mg",
-        "vendors": 22
+        "vendors": 24
       }
     ],
-    "vendors": 22,
+    "vendors": 24,
     "indexable": true
   },
   {
@@ -41,10 +41,10 @@
     "configs": [
       {
         "config": "80mg",
-        "vendors": 23
+        "vendors": 27
       }
     ],
-    "vendors": 23,
+    "vendors": 27,
     "indexable": true
   },
   {
@@ -74,19 +74,23 @@
     "slug": "wolverine-stack",
     "configs": [
       {
-        "config": "10mg",
-        "vendors": 20
+        "config": "20mg",
+        "vendors": 24
       },
       {
-        "config": "20mg",
-        "vendors": 19
+        "config": "10mg",
+        "vendors": 23
       },
       {
         "config": "5mg",
         "vendors": 3
+      },
+      {
+        "config": "40mg",
+        "vendors": 3
       }
     ],
-    "vendors": 27,
+    "vendors": 32,
     "indexable": true
   }
 ]

@@ -76,7 +76,7 @@
   },
   {
     "slug": "dsip",
-    "vendors": 34,
+    "vendors": 35,
     "indexable": true
   },
   {
@@ -116,12 +116,12 @@
   },
   {
     "slug": "hexarelin",
-    "vendors": 9,
+    "vendors": 10,
     "indexable": true
   },
   {
     "slug": "hgh-fragment-176-191",
-    "vendors": 5,
+    "vendors": 6,
     "indexable": true
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "slug": "igf-1-lr3",
-    "vendors": 23,
+    "vendors": 24,
     "indexable": true
   },
   {
@@ -166,7 +166,7 @@
   },
   {
     "slug": "mazdutide",
-    "vendors": 5,
+    "vendors": 6,
     "indexable": true
   },
   {
@@ -186,7 +186,7 @@
   },
   {
     "slug": "mk-677",
-    "vendors": 3,
+    "vendors": 4,
     "indexable": true
   },
   {
@@ -256,22 +256,22 @@
   },
   {
     "slug": "retatrutide",
-    "vendors": 33,
-    "indexable": true
-  },
-  {
-    "slug": "selank",
     "vendors": 32,
     "indexable": true
   },
   {
+    "slug": "selank",
+    "vendors": 33,
+    "indexable": true
+  },
+  {
     "slug": "semaglutide",
-    "vendors": 20,
+    "vendors": 19,
     "indexable": true
   },
   {
     "slug": "semax",
-    "vendors": 38,
+    "vendors": 39,
     "indexable": true
   },
   {
@@ -286,7 +286,7 @@
   },
   {
     "slug": "snap-8",
-    "vendors": 17,
+    "vendors": 18,
     "indexable": true
   },
   {
@@ -341,7 +341,7 @@
   },
   {
     "slug": "tirzepatide",
-    "vendors": 24,
+    "vendors": 23,
     "indexable": true
   },
   {
