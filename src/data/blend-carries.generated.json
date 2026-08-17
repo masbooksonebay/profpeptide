@@ -7,12 +7,17 @@
   ],
   "cjc-1295-no-dac-ipamorelin": [
     "ameano-peptides",
+    "ascension-peptides",
     "biolongevity-labs",
     "ez-peptides",
+    "glacier-aminos",
+    "improved-peptides",
+    "legendary-peptides",
     "modern-aminos",
     "nextgen-peptides",
     "nura-peptide",
     "peptide-giants",
+    "peptide-partners",
     "peptidology"
   ],
   "ghrp-2-tesamorelin-mgf-ipamorelin": [
@@ -41,14 +46,12 @@
     "purerawz",
     "purerx-peptides",
     "purity-peptides",
-    "royal-peptides",
-    "science-based-peptides"
+    "royal-peptides"
   ],
   "klow": [
     "alpha-peptides",
     "ameano-peptides",
     "amino-club",
-    "amino-x",
     "ascension-peptides",
     "behemoth-labz",
     "biocollex",
@@ -68,7 +71,6 @@
     "purerawz",
     "purerx-peptides",
     "purity-peptides",
-    "science-based-peptides",
     "treasure-coast-peptides"
   ],
   "nad-mots-c-5-amino-1mq": [
@@ -105,7 +107,6 @@
     "alpha-peptides",
     "ameano-peptides",
     "amino-club",
-    "amino-x",
     "amp-peptides",
     "ascension-peptides",
     "biocollex",
@@ -114,6 +115,7 @@
     "ez-peptides",
     "glacier-aminos",
     "ignite-peptides",
+    "improved-peptides",
     "la-peptides",
     "legendary-peptides",
     "modern-aminos",
@@ -126,8 +128,8 @@
     "purerx-peptides",
     "purity-peptides",
     "real-peptides",
-    "science-based-peptides",
     "swiss-chems",
+    "treasure-coast-peptides",
     "vital-core-research"
   ]
 }

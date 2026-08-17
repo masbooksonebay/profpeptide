@@ -6,7 +6,7 @@
   },
   {
     "slug": "adamax",
-    "vendors": 13,
+    "vendors": 15,
     "indexable": true
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "slug": "aod-9604",
-    "vendors": 28,
+    "vendors": 29,
     "indexable": true
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "slug": "cjc-1295-dac",
-    "vendors": 16,
+    "vendors": 17,
     "indexable": true
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "slug": "follistatin",
-    "vendors": 6,
+    "vendors": 7,
     "indexable": true
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "slug": "igf-1-lr3",
-    "vendors": 22,
+    "vendors": 23,
     "indexable": true
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "slug": "na-selank",
-    "vendors": 6,
+    "vendors": 9,
     "indexable": true
   },
   {
@@ -251,27 +251,27 @@
   },
   {
     "slug": "pt-141",
-    "vendors": 34,
+    "vendors": 36,
     "indexable": true
   },
   {
     "slug": "retatrutide",
-    "vendors": 35,
+    "vendors": 33,
     "indexable": true
   },
   {
     "slug": "selank",
-    "vendors": 34,
+    "vendors": 32,
     "indexable": true
   },
   {
     "slug": "semaglutide",
-    "vendors": 22,
+    "vendors": 20,
     "indexable": true
   },
   {
     "slug": "semax",
-    "vendors": 37,
+    "vendors": 38,
     "indexable": true
   },
   {
@@ -281,7 +281,7 @@
   },
   {
     "slug": "slu-pp-332",
-    "vendors": 5,
+    "vendors": 6,
     "indexable": true
   },
   {
@@ -301,7 +301,7 @@
   },
   {
     "slug": "tb-500",
-    "vendors": 36,
+    "vendors": 38,
     "indexable": true
   },
   {
@@ -341,7 +341,7 @@
   },
   {
     "slug": "tirzepatide",
-    "vendors": 27,
+    "vendors": 24,
     "indexable": true
   },
   {
