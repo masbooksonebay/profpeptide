@@ -125,10 +125,10 @@ export default function PureRawzCouponPage() {
             <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
             <div className="space-y-2">
               <FAQItem q="What products does PureRawz carry?" a="PureRawz carries a broad catalog including peptides (BPC-157, TB-500, IGF-1 LR3, Ipamorelin, CJC-1295, GHK-Cu, NAD+, Epitalon, PT-141, Selank, Semax), SARMs (RAD-140, MK-677, LGD-4033, Ostarine, Cardarine), nootropics, and PCT compounds. Available in liquid, powder, nasal spray, tablet, and capsule forms with third-party COAs published on each product page." />
-              <FAQItem q="Does PureRawz have a discount code?" a="Yes. Use code PROF10 at checkout for 10% off your entire order at PureRawz. This code is verified by Prof. Peptide and updated regularly." />
-              <FAQItem q="How do I use the PureRawz discount code?" a="Add compounds to your cart at purerawz.co, proceed to checkout, and enter PROF10 in the discount code field. The 10% discount applies to your order total before payment." />
+              <FAQItem q="Does PureRawz have a discount code?" a={`Yes. Use code PROF10 at checkout for ${discountPct}% off your entire order at PureRawz. This code is verified by Prof. Peptide and updated regularly.`} />
+              <FAQItem q="How do I use the PureRawz discount code?" a={`Add compounds to your cart at purerawz.co, proceed to checkout, and enter PROF10 in the discount code field. The ${discountPct}% discount applies to your order total before payment.`} />
               <FAQItem q="What types of third-party testing does PureRawz provide?" a="PureRawz conducts first-party and independent third-party testing; its published COAs are issued by MZ Biolabs (Tucson, AZ), confirming purity by HPLC-UV and molecular identity by mass spectrometry, with the lot number and analysis date on each report published on the product page." />
-              <FAQItem q="Is PureRawz pricing competitive?" a="PureRawz offers competitive pricing with free US shipping over $100. Use code PROF10 for an additional 10% off." />
+              <FAQItem q="Is PureRawz pricing competitive?" a={`PureRawz offers competitive pricing with free US shipping over $100. Use code PROF10 for an additional ${discountPct}% off.`} />
             </div>
           </div>
 

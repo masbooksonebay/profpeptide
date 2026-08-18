@@ -5,9 +5,11 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
+import { vendorDiscountPct } from "@/data/prices";
 
 
 export default function IntegrativePeptidesCouponPage() {
+ const discountPct = vendorDiscountPct("integrative-peptides");
  return (
  <div className="section max-w-3xl">
  <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -16,7 +18,7 @@ export default function IntegrativePeptidesCouponPage() {
       <CouponBreadcrumb slug="integrative-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Integrative Peptides Discount Code &mdash; Save 10% with PROFPEPTIDE</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Integrative Peptides Discount Code &mdash; Save {discountPct}% with PROFPEPTIDE</h1>
  </div>
  <CouponFacts slug="integrative-peptides" />
  <CouponCodeCard slug="integrative-peptides" className="mb-8" />
@@ -61,7 +63,7 @@ export default function IntegrativePeptidesCouponPage() {
  />
  <FAQItem
  q="Does Integrative Peptides have a discount code?"
- a="Yes, use code PROFPEPTIDE for 10% off your order. This code is verified and maintained by Prof. Peptide."
+ a={`Yes, use code PROFPEPTIDE for ${discountPct}% off your order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
  q="What makes Integrative Peptides different?"

@@ -175,7 +175,7 @@ export const vendors: Record<string, Vendor> = {
     // phantom (unverifiable; not on the site) — removed. coa: on-request.
     facts: { purityStandard: "≥99%", coa: "on-request" },
   },
-  biocollex: {
+  "biocollex": {
     name: "BioCollex",
     code: "PROFPEPTIDE",
     discount: "10% off",
@@ -448,7 +448,7 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/peptides-gg",
     facts: { coa: "per-batch", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
   },
-  purerawz: {
+  "purerawz": {
     name: "PureRawz",
     code: "PROF10",
     discount: "10% off",
