@@ -42,6 +42,11 @@ export interface Vendor {
   retired?: boolean;
   /** Structured facts for the coupon-page subtitle (vendorFactsLine). Absent → region only. */
   facts?: VendorFacts;
+  /** One-line testing/COA note shown under the vendor's card in the profile VendorHighlightBlock.
+   *  Single source (was hardcoded per-profile in each `highlights` array, which drifted). Keep it
+   *  card-width-safe (~2 short lines) and factual — no accreditation Capstone doesn't hold, no
+   *  purity figure Nura doesn't publish. */
+  blockNote?: string;
 }
 
 export const regionFlag: Record<Vendor["region"], string> = {
@@ -104,6 +109,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
     detailPage: "/coupons/amino-club",
     facts: { purityStandard: "≥99%", coa: "per-batch", labClaim: "ISO 17025 accredited laboratories", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals, sterility, endotoxin" },
+    blockNote: "ISO 17025 tested · batch COAs",
     editorsPick: true,
   },
   "amino-x": {
@@ -204,6 +210,7 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/capstone-peptides",
     editorsPick: true,
     facts: { purityStandard: "≥98% by HPLC", coa: "library", labName: "Accumark Labs", testMethods: "HPLC" },
+    blockNote: "Accumark Labs · digital COAs",
   },
   "crush-research": {
     name: "Crush Research",
@@ -240,7 +247,6 @@ export const vendors: Record<string, Vendor> = {
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
     detailPage: "/coupons/glacier-aminos",
     facts: { coa: "per-batch", labName: "Forever Young Pharmacy, Freedom Diagnostics, Kovera Labs", testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin; sterility + heavy metals on Kovera lots", coldChain: true },
-    editorsPick: true,
   },
   "ignite-peptides": {
     name: "Ignite Peptides",
@@ -595,6 +601,8 @@ export const vendors: Record<string, Vendor> = {
     url: "https://nurapeptide.com/?ref=profpeptide",
     detailPage: "/coupons/nura-peptide",
     facts: { coa: "library", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>), microbial (PCR)" },
+    blockNote: "Freedom Diagnostics · verifiable COAs",
+    editorsPick: true,
   },
   // 99 Purity's sources disagree on the discount: the welcome email says 10% off, the
   // affiliate dashboard header says 15% OFF (same code, now PROFPEPTIDE — was PROFPEPTIDE10). Mark's call is to
