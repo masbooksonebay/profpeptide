@@ -376,6 +376,29 @@ def _biocollex(n):
     if re.match(r'CJC ?/ ?IPA', n, re.I): return ('CJC-1295/Ipamorelin', 'cjc-1295-dac-ipamorelin', 'blend')
 
 
+@_decoder('capstone-peptides')  # self-identifying: the coded metabolic names carry the compound WORD
+# after the GLP-#X code (GLP-1S Semaglutide, GLP-2T Tirzepatide, GLP-3R Retatrutide) — key on the WORD,
+# not the code, same pattern as _aero. The C-Amylin product is CagriSema (Cagrilintide + Semaglutide) —
+# route to cagrisema, never a standalone cagrilintide (Capstone does not sell cagrilintide alone).
+def _capstone(n):
+    if re.search(r'Cagrilintide.*Semaglutide', n, re.I):
+        # "5/5 mg" = 5 mg cagrilintide + 5 mg semaglutide -> 10 mg TOTAL peptide; supply it so $/mg
+        # is over the combined dose (matches how the blends read their total), not the 5 mg first-dose.
+        return (_c('CagriSema', 'C-Amylin / GLP-1S'), 'cagrisema', 'single', 10)
+    # CJC-1295 + Ipamorelin blend is NO-DAC per Capstone's own molecular formula ("CJC-1295 (no DAC)");
+    # the name omits the form, so blend_of would default it to the DAC surface. Route to no-DAC explicitly.
+    if re.search(r'CJC-1295 \+ Ipamorelin', n, re.I):
+        return ('CJC-1295 (no DAC)/Ipamorelin', 'cjc-1295-no-dac-ipamorelin', 'blend')
+    m = re.match(r'GLP-[123][A-Z]\s+(Semaglutide|Tirzepatide|Retatrutide)\b', n, re.I)
+    if m:
+        code = re.match(r'(GLP-[123][A-Z])', n, re.I).group(1)
+        cn = {'semaglutide': ('Semaglutide', 'semaglutide'),
+              'tirzepatide': ('Tirzepatide', 'tirzepatide'),
+              'retatrutide': ('Retatrutide', 'retatrutide')}[m.group(1).lower()]
+        return (_c(cn[0], code), cn[1], 'single')
+    return None
+
+
 @_decoder('alpha-peptides')  # verified: same GLP-N scheme, COA-confirmed in the pilot (GLP-3 RT -> Retatrutide)
 def _alpha(n):
     if re.match(r'GLP-1 ?SM', n, re.I): return (_c('Semaglutide', 'GLP-1 SM'), 'semaglutide', 'single')

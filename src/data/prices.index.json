@@ -21,7 +21,7 @@
   },
   {
     "slug": "bpc-157",
-    "vendors": 39,
+    "vendors": 40,
     "indexable": true
   },
   {
@@ -33,6 +33,11 @@
     "slug": "cagrilintide",
     "vendors": 26,
     "indexable": true
+  },
+  {
+    "slug": "cagrisema",
+    "vendors": 1,
+    "indexable": false
   },
   {
     "slug": "cardiogen",
@@ -81,7 +86,7 @@
   },
   {
     "slug": "epitalon",
-    "vendors": 35,
+    "vendors": 36,
     "indexable": true
   },
   {
@@ -141,7 +146,7 @@
   },
   {
     "slug": "ipamorelin",
-    "vendors": 32,
+    "vendors": 33,
     "indexable": true
   },
   {
@@ -176,7 +181,7 @@
   },
   {
     "slug": "melanotan-ii",
-    "vendors": 31,
+    "vendors": 32,
     "indexable": true
   },
   {
@@ -191,7 +196,7 @@
   },
   {
     "slug": "mots-c",
-    "vendors": 41,
+    "vendors": 42,
     "indexable": true
   },
   {
@@ -201,7 +206,7 @@
   },
   {
     "slug": "nad-plus",
-    "vendors": 38,
+    "vendors": 39,
     "indexable": true
   },
   {
@@ -251,32 +256,32 @@
   },
   {
     "slug": "pt-141",
-    "vendors": 36,
+    "vendors": 37,
     "indexable": true
   },
   {
     "slug": "retatrutide",
-    "vendors": 32,
-    "indexable": true
-  },
-  {
-    "slug": "selank",
     "vendors": 33,
     "indexable": true
   },
   {
+    "slug": "selank",
+    "vendors": 34,
+    "indexable": true
+  },
+  {
     "slug": "semaglutide",
-    "vendors": 19,
+    "vendors": 20,
     "indexable": true
   },
   {
     "slug": "semax",
-    "vendors": 39,
+    "vendors": 40,
     "indexable": true
   },
   {
     "slug": "sermorelin",
-    "vendors": 32,
+    "vendors": 33,
     "indexable": true
   },
   {
@@ -301,12 +306,12 @@
   },
   {
     "slug": "tb-500",
-    "vendors": 39,
+    "vendors": 40,
     "indexable": true
   },
   {
     "slug": "tesamorelin",
-    "vendors": 42,
+    "vendors": 43,
     "indexable": true
   },
   {
@@ -331,7 +336,7 @@
   },
   {
     "slug": "thymosin-alpha-1",
-    "vendors": 33,
+    "vendors": 34,
     "indexable": true
   },
   {
@@ -341,7 +346,7 @@
   },
   {
     "slug": "tirzepatide",
-    "vendors": 23,
+    "vendors": 24,
     "indexable": true
   },
   {

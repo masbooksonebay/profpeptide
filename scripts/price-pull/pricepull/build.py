@@ -315,8 +315,8 @@ def classify(vendor, product, ten_vial_kit=False, sitewide_sale=0.0):
         reg = regular if regular is not None else base
         on_sale = base < reg - 0.005                        # cent tolerance
         reg_out = reg if on_sale else None                  # only carry the anchor when it's a real markdown
-        if dec_size and N.mg_value(size_label) is None:   # code encodes mg (Ascension)
-            size_label = f"{dec_size}mg"
+        if dec_size:   # a decoder that explicitly supplies mg is authoritative — over a code-only name
+            size_label = f"{dec_size}mg"   # (Ascension R-30: name has no size; Capstone CagriSema: 5/5 -> 10 total)
         if form == 'tablet':               # oral forms out of scope
             yield ('exclude', 'oral/tablet/sublingual'); continue
         if form == 'liquid':               # per-ml concentration, not a vial ($/mg-per-vial out of scope)

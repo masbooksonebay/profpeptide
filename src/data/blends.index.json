@@ -15,14 +15,14 @@
     "configs": [
       {
         "config": "10mg",
-        "vendors": 13
+        "vendors": 14
       },
       {
         "config": "20mg",
         "vendors": 5
       }
     ],
-    "vendors": 15,
+    "vendors": 16,
     "indexable": true
   },
   {
@@ -30,10 +30,10 @@
     "configs": [
       {
         "config": "70mg",
-        "vendors": 24
+        "vendors": 25
       }
     ],
-    "vendors": 24,
+    "vendors": 25,
     "indexable": true
   },
   {
@@ -75,11 +75,11 @@
     "configs": [
       {
         "config": "20mg",
-        "vendors": 24
+        "vendors": 25
       },
       {
         "config": "10mg",
-        "vendors": 23
+        "vendors": 24
       },
       {
         "config": "5mg",
@@ -90,7 +90,7 @@
         "vendors": 3
       }
     ],
-    "vendors": 32,
+    "vendors": 33,
     "indexable": true
   }
 ]

@@ -80,7 +80,6 @@ const ONBOARDING_BACKLOG = {
   // pending Mark's decision on whether Capstone enters the price grid. Coded GLPs (GLP-1S=Semaglutide
   // / GLP-2T=Tirzepatide / GLP-3R=Retatrutide) decode straight from the product names. COAs are a
   // public Accumark Labs library (per-lot, AccuVerify-checkable on the lab's own domain).
-  "capstone-peptides":  { reason: "onboarded 2026-08; public woo catalog — coupon-page-only pending Mark's price-grid decision", since: "2026-08-15" },
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────
