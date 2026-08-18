@@ -96,17 +96,21 @@ const featured: Omit<HubVendor, "code" | "discount">[] = [
 // Merge each featured vendor's live discount CODE and RATE in from the registry (single
 // source of truth). Unknown slug ⇒ build error, so this list can never silently drift from
 // vendors.ts. The discount pill (v.discount) and the RATE_CHIP strength both derive here.
-const vendors: HubVendor[] = featured.map((f) => {
-  const reg = vendorRegistry[f.slug];
-  if (!reg) throw new Error(`best-peptide-vendors: "${f.slug}" is not in the vendor registry`);
-  const pct = reg.discount.match(/\d+/)?.[0] ?? reg.discount;
-  return {
-    ...f,
-    code: reg.code,
-    discount: reg.discount,
-    strengths: f.strengths.map((s) => (s === RATE_CHIP ? `${pct}% off with code` : s)),
-  };
-});
+// Sorted by DISPLAY NAME at render (like /vendors and the /coupons hub) so a hand-ordered
+// `featured` array can't ship out of alphabetical order — a new vendor lands in place, not appended.
+const vendors: HubVendor[] = featured
+  .map((f) => {
+    const reg = vendorRegistry[f.slug];
+    if (!reg) throw new Error(`best-peptide-vendors: "${f.slug}" is not in the vendor registry`);
+    const pct = reg.discount.match(/\d+/)?.[0] ?? reg.discount;
+    return {
+      ...f,
+      code: reg.code,
+      discount: reg.discount,
+      strengths: f.strengths.map((s) => (s === RATE_CHIP ? `${pct}% off with code` : s)),
+    };
+  })
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 export default function BestPeptideVendorsPage() {
   return (
