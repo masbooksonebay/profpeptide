@@ -41,25 +41,37 @@ export const VENDOR_PINS: Record<string, string[]> = {
   // multiple times; see scripts/price-pull/README.md. The earlier "flagged unverified in the
   // rate audit" note here was WRONG and is removed.) All three below carry an ss-31 row.
   "ss-31": ["nura-peptide", "peptide-partners", "biocollex"],
-  tesamorelin: ["nura-peptide", "amino-club", "peptide-partners"],
-  "nad-plus": ["nura-peptide", "amino-club", "peptide-partners"],
-  "mots-c": ["nura-peptide", "amino-club", "peptide-partners"],
+  // ── CAPSTONE SWAP 2026-08-18 ──────────────────────────────────────────────────
+  // Once Capstone's price rows landed, the third pin slot moves from Peptide Partners to Capstone on
+  // the 18 profiles Capstone STOCKS -> { nura-peptide, capstone-peptides, amino-club }. That is 11
+  // single swaps + glow + wolverine-stack (2 blends) = 13 slots taken from peptide-partners, plus 5
+  // NEW pins (epitalon, melanotan-ii, selank, semax, thymosin-alpha-1) that were previously derived.
+  // peptide-partners keeps its coupon page, Professor's-Picks membership, and /vendors — only the
+  // profile block slot moves. cagrisema is deliberately NOT pinned: nura and amino-club carry no
+  // cagrisema row (Capstone is its only vendor), so no valid trio exists — it stays derived. kpv,
+  // klow and ss-31 are unchanged (Capstone doesn't stock them). Every vendor in each set below
+  // carries a price row for that compound (single or blend), so check:vendor-pins holds.
+  //   Historical (pre-swap, preserved in git): the Nura rollout added these 2026-08-13; cagrilintide
+  //   was excluded because Nura carries it only inside its GLP-3R/CAG blend (no standalone row).
+  tesamorelin: ["nura-peptide", "capstone-peptides", "amino-club"],
+  "nad-plus": ["nura-peptide", "capstone-peptides", "amino-club"],
+  "mots-c": ["nura-peptide", "capstone-peptides", "amino-club"],
   kpv: ["nura-peptide", "amino-club", "peptide-partners"],
-  sermorelin: ["nura-peptide", "amino-club", "peptide-partners"],
-  "pt-141": ["nura-peptide", "amino-club", "peptide-partners"],
-  glow: ["nura-peptide", "amino-club", "peptide-partners"],
+  sermorelin: ["nura-peptide", "capstone-peptides", "amino-club"],
+  "pt-141": ["nura-peptide", "capstone-peptides", "amino-club"],
+  glow: ["nura-peptide", "capstone-peptides", "amino-club"],
   klow: ["nura-peptide", "amino-club", "peptide-partners"],
-  // wolverine-stack — added 2026-08-13 once Nura's Wolverine blend was captured (the pull now sums
-  // the "5/5MG"/"10/10MG" component-dose code). All three carry a wolverine-stack row.
-  "wolverine-stack": ["nura-peptide", "amino-club", "peptide-partners"],
-  // Added 2026-08-13 after Nura's GLP codes were decoded first-hand (GLP-3R=Retatrutide, GLP-2T=
-  // Tirzepatide). All three carry a row for each. cagrilintide was ALSO requested but is NOT here:
-  // Nura carries it only inside the GLP-3R/CAG blend (no standalone row), so check:vendor-pins — which
-  // gates on a price row — would fail. That gap is the row-requirement issue flagged for a guard fix.
-  retatrutide: ["nura-peptide", "amino-club", "peptide-partners"],
-  tirzepatide: ["nura-peptide", "amino-club", "peptide-partners"],
-  semaglutide: ["nura-peptide", "amino-club", "peptide-partners"],
-  ipamorelin: ["nura-peptide", "amino-club", "peptide-partners"],
-  "bpc-157": ["nura-peptide", "amino-club", "peptide-partners"],
-  "tb-500": ["nura-peptide", "amino-club", "peptide-partners"],
+  "wolverine-stack": ["nura-peptide", "capstone-peptides", "amino-club"],
+  retatrutide: ["nura-peptide", "capstone-peptides", "amino-club"],
+  tirzepatide: ["nura-peptide", "capstone-peptides", "amino-club"],
+  semaglutide: ["nura-peptide", "capstone-peptides", "amino-club"],
+  ipamorelin: ["nura-peptide", "capstone-peptides", "amino-club"],
+  "bpc-157": ["nura-peptide", "capstone-peptides", "amino-club"],
+  "tb-500": ["nura-peptide", "capstone-peptides", "amino-club"],
+  // 5 new pins — Capstone provides the third proven slot on profiles that were deriving before:
+  epitalon: ["nura-peptide", "capstone-peptides", "amino-club"],
+  "melanotan-ii": ["nura-peptide", "capstone-peptides", "amino-club"],
+  selank: ["nura-peptide", "capstone-peptides", "amino-club"],
+  semax: ["nura-peptide", "capstone-peptides", "amino-club"],
+  "thymosin-alpha-1": ["nura-peptide", "capstone-peptides", "amino-club"],
 };
