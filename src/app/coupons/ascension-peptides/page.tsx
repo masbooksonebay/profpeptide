@@ -100,7 +100,7 @@ export default function AscensionPeptidesCouponPage() {
  Every Ascension Peptides product links a batch-matched Certificate of Analysis from MZ Biolabs, an independent lab in Tucson, AZ (mzbiolabs.com). Each certificate is tied to a lot number and analysis date and reports purity by HPLC-UV (area %), identity by HPLC-MS (monoisotopic mass confirmation), and &mdash; on many lots &mdash; measured content by HPLC-UV in mg per vial; each carries a &ldquo;Proof of Authenticity&rdquo; QR code and is signed by the analyzing chemist. Ascension states a 99%+ purity standard for its catalog, and every COA is downloadable from the product page and a dedicated Lab Testing / COAs page.
  </p>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Using code PROFPEPTIDE at checkout applies a 50% storewide discount at Ascension Peptides &mdash; deep savings without compromising on the vendor&rsquo;s documented quality standards.
+ Using code PROFPEPTIDE at checkout applies a {discountPct}% storewide discount at Ascension Peptides &mdash; deep savings without compromising on the vendor&rsquo;s documented quality standards.
  </p>
  </div>
 
