@@ -49,34 +49,36 @@ interface HubVendor {
 //     All three remain PROVEN in attribution.ts, so they still surface on /coupons, /vendors,
 //     and every profile block (price-row derivation) — this removal is the /best-peptide-vendors
 //     page only. Capstone Peptides added the same day (registry entry + public Accumark COA library).
-// Curated copy for the featured subset. Every field EXCEPT `code` is hand-set for
-// this page; `code` is omitted on purpose and pulled from the registry below, so a
-// code change (e.g. Glacier PROF10→PROFPEPTIDE, Aug 2026) can never go stale here
-// again — a hardcoded code is invisible to every registry-level check.
-const featured: Omit<HubVendor, "code">[] = [
+// Curated copy for the featured subset. Every field EXCEPT `code` and `discount` is
+// hand-set for this page; `code` and the discount RATE are omitted on purpose and
+// pulled from the registry below, so a code change (e.g. Glacier PROF10→PROFPEPTIDE) or
+// a rate change (e.g. Amino Club 20→35% boost, Aug 2026) can never go stale here again —
+// a hardcoded rate is invisible to every registry-level check. The one place a rate also
+// appears — the "N% off with code" strength chip — is written as the RATE_CHIP sentinel
+// and filled from vendors.ts in the map; a card with no rate chip (Peptide Partners) has
+// no sentinel and is left exactly as-is. Only the RATE derives; all other copy is hand-set.
+const RATE_CHIP = "{RATE}";
+const featured: Omit<HubVendor, "code" | "discount">[] = [
   {
     name: "Amino Club",
     slug: "amino-club",
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
-    discount: "20% off",
     description:
       "US-based supplier with a broad catalog of more than two dozen research compounds. Every batch is third-party tested by an ISO/IEC 17025-accredited lab to a 99%+ HPLC purity standard, with additional heavy-metal (ICP-MS), sterility, and endotoxin screening. Each product links a batch-specific Certificate of Analysis that is downloadable and independently verifiable through the issuing lab’s portal.",
-    strengths: ["Third-party tested, 99%+ purity", "ISO/IEC 17025-accredited lab", "Per-batch verifiable COAs", "20% off with code"],
+    strengths: ["Third-party tested, 99%+ purity", "ISO/IEC 17025-accredited lab", "Per-batch verifiable COAs", RATE_CHIP],
   },
   {
     name: "Nura Peptide",
     slug: "nura-peptide",
     url: "https://nurapeptide.com/?ref=profpeptide",
-    discount: "25% off",
     description:
       "US-based supplier with a public COA library. Every batch is third-party tested by Freedom Diagnostics, whose certificates confirm identity by LC-MS and purity by HPLC-UV, with recent reports adding endotoxin (USP <85>) and microbial (PCR) screening; each COA is verifiable by its search code at FreedomDiagnosticsTesting.com. Catalog spans metabolic, recovery, growth-hormone, and longevity compounds, plus the GLOW and KLOW blends.",
-    strengths: ["Third-party tested (Freedom Diagnostics)", "LC-MS identity + HPLC-UV purity", "Verifiable per-batch COA library", "25% off with code"],
+    strengths: ["Third-party tested (Freedom Diagnostics)", "LC-MS identity + HPLC-UV purity", "Verifiable per-batch COA library", RATE_CHIP],
   },
   {
     name: "Peptide Partners",
     slug: "peptide-partners",
     url: "https://peptide.partners/ref/48/",
-    discount: "10% off",
     description:
       "US research peptide supplier that runs four independent test types per batch: purity, endotoxin, heavy metals, and sterility. Extensive transparency on test data and documentation.",
     strengths: ["Four independent batch tests", "Endotoxin + sterility tested", "Published COAs", "Transparent test data"],
@@ -85,19 +87,25 @@ const featured: Omit<HubVendor, "code">[] = [
     name: "Capstone Peptides",
     slug: "capstone-peptides",
     url: "https://capstonepeptides.com/",
-    discount: "10% off",
     description:
       "US-based research-compound supplier with an openly browsable catalog and per-vial pricing (no account required). Every one of its 25 catalog compounds carries a batch certificate from Accumark Labs in a public COA library; 24 link the certificate from the product page, and the Retatrutide 30 mg lot is verifiable by its AccuVerify code. The certificate we reviewed — a 30 mg Retatrutide lot — is a core panel confirming identity, purity (99.52% against a >98.0% spec), and quantity; it does not include endotoxin, heavy-metal, or sterility testing, and Accumark prints no lab accreditation.",
-    strengths: ["Public Accumark Labs COA library", "Identity + HPLC purity + quantity", "Browsable catalog & per-vial prices", "10% off with code"],
+    strengths: ["Public Accumark Labs COA library", "Identity + HPLC purity + quantity", "Browsable catalog & per-vial prices", RATE_CHIP],
   },
 ];
 
-// Merge each featured vendor's live discount code in from the registry (single source of
-// truth). Unknown slug ⇒ build error, so this list can never silently drift from vendors.ts.
+// Merge each featured vendor's live discount CODE and RATE in from the registry (single
+// source of truth). Unknown slug ⇒ build error, so this list can never silently drift from
+// vendors.ts. The discount pill (v.discount) and the RATE_CHIP strength both derive here.
 const vendors: HubVendor[] = featured.map((f) => {
   const reg = vendorRegistry[f.slug];
   if (!reg) throw new Error(`best-peptide-vendors: "${f.slug}" is not in the vendor registry`);
-  return { ...f, code: reg.code };
+  const pct = reg.discount.match(/\d+/)?.[0] ?? reg.discount;
+  return {
+    ...f,
+    code: reg.code,
+    discount: reg.discount,
+    strengths: f.strengths.map((s) => (s === RATE_CHIP ? `${pct}% off with code` : s)),
+  };
 });
 
 export default function BestPeptideVendorsPage() {
