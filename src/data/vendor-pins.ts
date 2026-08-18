@@ -36,8 +36,10 @@ export const VENDOR_PINS: Record<string, string[]> = {
   // ss-31 uses a DIFFERENT trio ON PURPOSE — this is not an inconsistency. Amino Club
   // has NO ss-31 price row, so the standard { nura, amino-club, peptide-partners } set
   // can't be honored here. BioCollex (PROVEN, and carries ss-31) takes Amino Club's
-  // slot; Peptide Partners is retained. This drops Ascension, whose published 50% is
-  // flagged unverified in the rate audit. All three below carry an ss-31 row.
+  // slot; Peptide Partners is retained — that fills the trio, so Ascension is not pinned
+  // here. (Ascension's 50% PROFPEPTIDE rate is VERIFIED — Mark cart-tested it at checkout
+  // multiple times; see scripts/price-pull/README.md. The earlier "flagged unverified in the
+  // rate audit" note here was WRONG and is removed.) All three below carry an ss-31 row.
   "ss-31": ["nura-peptide", "peptide-partners", "biocollex"],
   tesamorelin: ["nura-peptide", "amino-club", "peptide-partners"],
   "nad-plus": ["nura-peptide", "amino-club", "peptide-partners"],
