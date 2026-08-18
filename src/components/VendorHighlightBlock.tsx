@@ -42,13 +42,17 @@ export default function VendorHighlightBlock({ highlights, compoundSlug }: Vendo
   // No invented pairings: a vendor appears only via a pin+row, a price row, or a curated entry.
   const pinned = compoundSlug ? VENDOR_PINS[compoundSlug] : undefined;
   const derived = compoundSlug && !pinned ? deriveHighlightVendors(compoundSlug) : [];
+  // Card note: the vendor's registry `blockNote` is the single source (so a note can't drift or go
+  // missing per-profile the way the hardcoded `highlights` notes did); the per-profile `highlights`
+  // note is only a fallback for vendors that carry no blockNote yet.
+  const noteFor = (slug: string) => vendors[slug]?.blockNote ?? highlights?.find((h) => h.slug === slug)?.note;
   const selected: VendorHighlight[] = pinned
     ? pinned
         .filter((slug) => LISTED.has(slug))
-        .map((slug) => ({ slug, note: highlights?.find((h) => h.slug === slug)?.note }))
+        .map((slug) => ({ slug, note: noteFor(slug) }))
     : derived.length > 0
-      ? derived.map((slug) => ({ slug, note: highlights?.find((h) => h.slug === slug)?.note }))
-      : (highlights ?? []).filter((h) => LISTED.has(h.slug));
+      ? derived.map((slug) => ({ slug, note: noteFor(slug) }))
+      : (highlights ?? []).filter((h) => LISTED.has(h.slug)).map((h) => ({ slug: h.slug, note: noteFor(h.slug) }));
 
   // CTA is decoupled from the block: it depends only on the compound being indexable. Blends
   // price on a separate total-price surface (blendVendorCount), single compounds on $/mg.
