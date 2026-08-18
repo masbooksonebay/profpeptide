@@ -24,7 +24,7 @@ export default function SwissChemsCouponPage() {
       <CouponBreadcrumb slug="swiss-chems" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Swiss Chems Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Swiss Chems Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="swiss-chems" />
       <CouponCodeCard slug="swiss-chems" className="mb-8" />
@@ -118,7 +118,7 @@ export default function SwissChemsCouponPage() {
             />
             <FAQItem
               q="Does Swiss Chems have a discount code?"
-              a="Yes. Use code PROF10 at checkout to save 10% on your Swiss Chems order. This code is verified and maintained by Prof. Peptide."
+              a={`Yes. Use code PROF10 at checkout to save ${discountPct}% on your Swiss Chems order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
               q="How do I use the Swiss Chems discount code?"

@@ -636,6 +636,17 @@ export const vendors: Record<string, Vendor> = {
 export const activeVendorCount = Object.values(vendors).filter((v) => !v.retired).length;
 
 /**
+ * Highest discount rate (percent) among ACTIVE vendors — powers the "up to N%" claim on the
+ * /coupons hub so it can never advertise a rate no live vendor offers. Derived from the same
+ * `discount` strings every surface reads, never typed by hand.
+ */
+export const maxActiveDiscountPct = Math.max(
+  ...Object.values(vendors)
+    .filter((v) => !v.retired)
+    .map((v) => parseInt(v.discount.match(/(\d+)/)?.[1] ?? "0", 10)),
+);
+
+/**
  * Active vendors with a COMPLETED certificate pass — a named third-party lab recorded in
  * `facts.labName` (PP read an actual certificate). Distinct from `facts.labClaim`, which is a
  * lab the vendor NAMES but whose certificate PP has not seen (attributed, not counted here).

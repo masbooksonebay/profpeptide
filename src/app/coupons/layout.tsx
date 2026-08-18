@@ -1,11 +1,11 @@
-import { activeVendorCount } from "@/data/vendors";
+import { activeVendorCount, maxActiveDiscountPct } from "@/data/vendors";
 import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   path: "/coupons",
   title: `Peptide Discount Codes (${CODES_VERIFIED_DATE}) — Verified Coupon & Promo Codes | Prof. Peptide`,
-  description: `Verified peptide discount codes, promo codes, and coupon codes for ${activeVendorCount} vendors. Updated regularly. Save up to 50% on research peptides.`,
+  description: `Verified peptide discount codes, promo codes, and coupon codes for ${activeVendorCount} vendors. Updated regularly. Save up to ${maxActiveDiscountPct}% on research peptides.`,
   // Defer OG image to this segment's opengraph-image.tsx (page-specific card).
   useDefaultOgImage: false,
 });

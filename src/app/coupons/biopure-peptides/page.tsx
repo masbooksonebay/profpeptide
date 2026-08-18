@@ -5,9 +5,11 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
+import { vendorDiscountPct } from "@/data/prices";
 
 
 export default function BioPurePeptidesCouponPage() {
+  const discountPct = vendorDiscountPct("biopure-peptides");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -16,7 +18,7 @@ export default function BioPurePeptidesCouponPage() {
       <CouponBreadcrumb slug="biopure-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">BioPure Peptides Discount Code &mdash; Save 5%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">BioPure Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="biopure-peptides" />
       <CouponCodeCard slug="biopure-peptides" className="mb-8" />
@@ -88,8 +90,8 @@ export default function BioPurePeptidesCouponPage() {
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What peptides does BioPure Peptides carry?" a="BioPure carries research compounds across several categories: metabolic and GLP-class compounds including AOD-9604, MOTS-C, and its BioLean GLP line; recovery peptides such as BPC-157, TB-500, and the GLOW blend; growth-hormone secretagogues including CJC-1295 and Ipamorelin; longevity compounds including Epitalon, NAD+, SS-31, and Glutathione; skin compounds GHK-Cu and Melanotan II; cognitive compounds Semax, Selank, and DSIP; immune and repair peptides LL-37, KPV, Thymosin Alpha-1, and ARA-290; plus PT-141, Kisspeptin, and VIP." />
-            <FAQItem q="Does BioPure Peptides have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 5% on your entire BioPure Peptides order. This code is verified and maintained by Prof. Peptide." />
-            <FAQItem q="How do I use the BioPure Peptides discount code?" a="Add your items to cart at biopurepeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 5% discount will be applied to your order total." />
+            <FAQItem q="Does BioPure Peptides have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire BioPure Peptides order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="How do I use the BioPure Peptides discount code?" a={`Add your items to cart at biopurepeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How does BioPure Peptides test its peptides?" a="BioPure states every batch is third-party tested for purity, potency, and quality to a >99% purity standard, with a Certificate of Analysis provided with each product, and that its manufacturing facility is WHO/GMP and ISO 9001 certified. This reflects the vendor's stated process, reported as the vendor states it, not as independently verified — Prof. Peptide reviewed no BioPure certificate." />
             <FAQItem q="Are Certificates of Analysis available for BioPure products?" a="Yes. Each BioPure product comes with a Certificate of Analysis." />
             <FAQItem q="Is BioPure Peptides US-based?" a="Yes — BioPure Peptides is US-based and made in the USA. All products are for laboratory and research use only." />

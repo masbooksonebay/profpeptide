@@ -23,7 +23,7 @@ export default function MidwestPeptideCouponPage() {
       <CouponBreadcrumb slug="midwest-peptide" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Midwest Peptide Discount Code: PROFPEPTIDE &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Midwest Peptide Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
       <CouponCodeCard slug="midwest-peptide" className="mb-8" />
 
@@ -122,11 +122,11 @@ export default function MidwestPeptideCouponPage() {
             />
             <FAQItem
               q="Does Midwest Peptide have a coupon code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Midwest Peptide order. This code is verified and maintained by Prof. Peptide."
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Midwest Peptide order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
               q="How do I use the Midwest Peptide discount code?"
-              a="Add your items to cart at midwestpeptide.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total."
+              a={`Add your items to cart at midwestpeptide.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem
               q="Is Midwest Peptide third-party tested?"

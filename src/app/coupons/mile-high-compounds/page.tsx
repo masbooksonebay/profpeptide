@@ -37,7 +37,7 @@ export default function MileHighCompoundsCouponPage() {
       <CouponBreadcrumb slug="mile-high-compounds" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Mile High Compounds Discount Code: PROFPEPTIDE &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Mile High Compounds Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
       <CouponCodeCard slug="mile-high-compounds" className="mb-8" />
 
@@ -83,8 +83,8 @@ export default function MileHighCompoundsCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="Does Mile High Compounds have a coupon code?" a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Mile High Compounds order. This code is verified and maintained by Prof. Peptide." />
-            <FAQItem q="How do I use the Mile High Compounds discount code?" a="Add your items to cart at milehighcompounds.is, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
+            <FAQItem q="Does Mile High Compounds have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Mile High Compounds order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="How do I use the Mile High Compounds discount code?" a={`Add your items to cart at milehighcompounds.is, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="Is Mile High Compounds third-party tested?" a="Yes — it publishes a public, batch-versioned COA library. The certificates we reviewed come from two named US labs: Chromate (RP-HPLC-UV for identity, quantity, and purity; QR-verifiable at chromate.org/verify) and Vanguard Laboratory of Olympia, WA, which is ISO/IEC 17025:2017 accredited (A2LA #6377.01.01). Mile High describes its program as '8x' testing including endotoxins, sterility, and heavy metals; those panels are not printed on the certificates we reviewed, so they reflect the vendor's stated process." />
             <FAQItem q="What is Mile High Compounds' purity standard?" a="Mile High Compounds states a 99%+ purity standard; the certificates we reviewed ran 99.1–99.7% by RP-HPLC-UV, published on its site as a batch-versioned COA library from Chromate and Vanguard Laboratory." />
             <FAQItem q="What does Mile High Compounds carry?" a="A catalog of 60+ research compounds across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator categories, in vial and capsule formats." />

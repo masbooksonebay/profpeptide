@@ -5,9 +5,11 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
+import { vendorDiscountPct } from "@/data/prices";
 
 
 export default function NovaLabsCouponPage() {
+  const discountPct = vendorDiscountPct("nova-labs");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -16,7 +18,7 @@ export default function NovaLabsCouponPage() {
       <CouponBreadcrumb slug="nova-labs" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">NOVA Labs Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">NOVA Labs Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="nova-labs" />
       <CouponCodeCard slug="nova-labs" className="mb-8" />
@@ -76,8 +78,8 @@ export default function NovaLabsCouponPage() {
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What peptides does NOVA Labs carry?" a="NOVA Labs organizes its catalog by research area: recovery and repair (including BPC-157, TB-500, and KPV); metabolic and weight (including Retatrutide and MOTS-C); longevity and immune (including Epitalon); skin and beauty (including GHK-Cu); growth and body (including CJC-1295, Ipamorelin, and Tesamorelin); and cognitive and neuro (including Semax, Selank, and DSIP)." />
-            <FAQItem q="Does NOVA Labs have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 10% on your entire NOVA Labs order. This code is verified and maintained by Prof. Peptide." />
-            <FAQItem q="How do I use the NOVA Labs discount code?" a="Add your items to cart at nova-biolabs.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
+            <FAQItem q="Does NOVA Labs have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire NOVA Labs order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="How do I use the NOVA Labs discount code?" a={`Add your items to cart at nova-biolabs.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How does NOVA Labs test its peptides?" a="Every NOVA Labs batch is independently tested by Janoshik, whose per-batch reports state purity (typically ≥99%) and peptide content and are verifiable at janoshik.com/verify with a unique key and QR code. NOVA describes its testing as third-party HPLC and mass-spec to ≥99% purity by accredited labs; the Janoshik reports reviewed confirm purity and content but do not print the analytical method or an accreditation mark." />
             <FAQItem q="Are Certificates of Analysis available for NOVA Labs products?" a="Yes. NOVA Labs publishes a Batch Testing Results table where each peptide's per-batch Certificate of Analysis and third-party lab verification (for example, Janoshik) can be reviewed before purchase." />
             <FAQItem q="Where is NOVA Labs based and where does it ship?" a="NOVA Labs is UAE-based and ships express, cold-chain across the UAE and the wider GCC, including Dubai and Abu Dhabi. All products are for laboratory and research use only." />

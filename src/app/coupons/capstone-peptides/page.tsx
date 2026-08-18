@@ -4,6 +4,7 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
+import { vendorDiscountPct } from "@/data/prices";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -18,6 +19,7 @@ function P({ slug, children }: { slug: string; children: React.ReactNode }) {
 }
 
 export default function CapstonePeptidesCouponPage() {
+  const discountPct = vendorDiscountPct("capstone-peptides");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -26,7 +28,7 @@ export default function CapstonePeptidesCouponPage() {
       <CouponBreadcrumb slug="capstone-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Capstone Peptides Discount Code: PROFPEPTIDE &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Capstone Peptides Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
       <CouponCodeCard slug="capstone-peptides" className="mb-8" />
 
@@ -66,11 +68,11 @@ export default function CapstonePeptidesCouponPage() {
             />
             <FAQItem
               q="Does Capstone Peptides have a coupon code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Capstone Peptides order. This code is verified and maintained by Prof. Peptide."
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Capstone Peptides order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
               q="How do I use the Capstone Peptides discount code?"
-              a="Add your items to cart at capstonepeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total."
+              a={`Add your items to cart at capstonepeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem
               q="Is Capstone Peptides third-party tested?"

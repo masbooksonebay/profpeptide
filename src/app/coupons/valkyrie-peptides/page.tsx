@@ -5,6 +5,7 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
+import { vendorDiscountPct } from "@/data/prices";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -19,6 +20,7 @@ function P({ slug, children }: { slug: string; children: React.ReactNode }) {
 }
 
 export default function ValkyriePeptidesCouponPage() {
+  const discountPct = vendorDiscountPct("valkyrie-peptides");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -27,7 +29,7 @@ export default function ValkyriePeptidesCouponPage() {
       <CouponBreadcrumb slug="valkyrie-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Valkyrie Peptides Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Valkyrie Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="valkyrie-peptides" />
       <CouponCodeCard slug="valkyrie-peptides" className="mb-8" />
@@ -62,11 +64,11 @@ export default function ValkyriePeptidesCouponPage() {
             />
             <FAQItem
               q="Does Valkyrie Peptides have a discount code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Valkyrie Peptides order. This code is verified and maintained by Prof. Peptide. Valkyrie separately offers a 20%-off-for-life program for active military, veterans, and first responders, arranged by contacting the vendor directly."
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Valkyrie Peptides order. This code is verified and maintained by Prof. Peptide. Valkyrie separately offers a 20%-off-for-life program for active military, veterans, and first responders, arranged by contacting the vendor directly.`}
             />
             <FAQItem
               q="How do I use the Valkyrie Peptides discount code?"
-              a="Add your items to cart at valkyriepeps.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total. The code is tied to this referral link."
+              a={`Add your items to cart at valkyriepeps.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total. The code is tied to this referral link.`}
             />
             <FAQItem
               q="Is Valkyrie Peptides third-party tested?"

@@ -24,7 +24,7 @@ export default function VitalCoreResearchCouponPage() {
       <CouponBreadcrumb slug="vital-core-research" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Vital Core Research Discount Code &mdash; Save 20%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Vital Core Research Discount Code &mdash; Save {discountPct}%</h1>
  </div>
  <CouponFacts slug="vital-core-research" />
  <CouponCodeCard slug="vital-core-research" className="mb-8" />
@@ -130,11 +130,11 @@ export default function VitalCoreResearchCouponPage() {
  />
  <FAQItem
  q="Does Vital Core Research have a discount code?"
- a="Yes. Use code PROF20 at checkout to save 20% on any Vital Core Research order. This code is verified and maintained by Prof. Peptide."
+ a={`Yes. Use code PROF20 at checkout to save ${discountPct}% on any Vital Core Research order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
  q="How do I use the Vital Core Research discount code?"
- a="Add your items to cart at vitalcoreresearch.com, proceed to checkout, and enter PROF20 in the discount code field. The 20% discount will be applied to your order total."
+ a={`Add your items to cart at vitalcoreresearch.com, proceed to checkout, and enter PROF20 in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem
  q="Is Vital Core Research third-party tested?"

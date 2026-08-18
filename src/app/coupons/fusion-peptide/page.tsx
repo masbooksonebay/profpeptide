@@ -7,9 +7,11 @@ import { CouponPills } from "@/components/CouponPills";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { RegionPill } from "@/components/RegionPill";
+import { vendorDiscountPct } from "@/data/prices";
 
 
 export default function FusionPeptideCouponPage() {
+  const discountPct = vendorDiscountPct("fusion-peptide");
  // Retired vendor: permanently redirect to the coupons hub (belt-and-suspenders
  // with the next.config.js redirect). Page kept on disk per retirement plan.
  redirect("/coupons");
@@ -21,7 +23,7 @@ export default function FusionPeptideCouponPage() {
       <CouponBreadcrumb slug="fusion-peptide" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Fusion Peptide Discount Code &mdash; Save 15%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Fusion Peptide Discount Code &mdash; Save {discountPct}%</h1>
  </div>
  <div className="flex flex-wrap items-center gap-2 mb-8">
  <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
@@ -130,11 +132,11 @@ export default function FusionPeptideCouponPage() {
  />
  <FAQItem
  q="Does Fusion Peptide have a discount code?"
- a="Yes. Use code PROFPEPTIDE at checkout to save 15% on any Fusion Peptide order. This code is verified and maintained by Prof. Peptide."
+ a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Fusion Peptide order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
  q="How do I use the Fusion Peptide discount code?"
- a="Add your items to cart at fusionpeptide.com, proceed to checkout, and enter PROFPEPTIDE in the promo code field. The 15% discount will be applied automatically to your order total."
+ a={`Add your items to cart at fusionpeptide.com, proceed to checkout, and enter PROFPEPTIDE in the promo code field. The ${discountPct}% discount will be applied automatically to your order total.`}
  />
  <FAQItem
  q="Does Fusion Peptide offer alternative delivery formats?"

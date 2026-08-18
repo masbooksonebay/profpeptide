@@ -37,7 +37,7 @@ export default function LAPeptidesCouponPage() {
       <CouponBreadcrumb slug="la-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">LA Peptides Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">LA Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="la-peptides" />
       <CouponCodeCard slug="la-peptides" className="mb-8" />
@@ -84,8 +84,8 @@ export default function LAPeptidesCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="Does LA Peptides have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any LA Peptides order. This code is verified and maintained by Prof. Peptide." />
-            <FAQItem q="How do I use the LA Peptides discount code?" a="Add your items to cart at lapeptides.net, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
+            <FAQItem q="Does LA Peptides have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any LA Peptides order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="How do I use the LA Peptides discount code?" a={`Add your items to cart at lapeptides.net, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="Is LA Peptides third-party tested?" a="Yes. Every LA Peptides batch undergoes third-party testing to a minimum purity of ≥99%, and LA Peptides publishes a full batch-specific Certificate of Analysis library at lapeptides.net/product-certificates/, issued by the third-party lab Bioviridian — covering identity (LC-MS), purity (RP-HPLC), endotoxin (USP <85>), heavy metals (USP <232>), and sterility (USP <71>), each with a per-record web verification code checkable at bioviridians.com/coa-search.html." />
             <FAQItem q="Where does LA Peptides ship from?" a="LA Peptides sources and manufactures its peptides within the United States and ships domestically with fast, discreet, trackable shipping." />
             <FAQItem q="What does LA Peptides carry?" a="A catalog of 70+ research peptides across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator categories, in vial, spray, and capsule formats." />
