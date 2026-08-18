@@ -45,7 +45,15 @@ export interface Vendor {
   /** One-line testing/COA note shown under the vendor's card in the profile VendorHighlightBlock.
    *  Single source (was hardcoded per-profile in each `highlights` array, which drifted). Keep it
    *  card-width-safe (~2 short lines) and factual — no accreditation Capstone doesn't hold, no
-   *  purity figure Nura doesn't publish. */
+   *  purity figure Nura doesn't publish.
+   *
+   *  DELIBERATELY ABSENT on ascension-peptides, ez-peptides, and peptide-partners — do NOT add one.
+   *  Their profile notes are PER-COMPOUND on purpose: they encode the compound's store-specific
+   *  product name so a buyer can find it (ascension "Sold as R-10 / R-30" on retatrutide vs "Sold as
+   *  T-10 / T-30" on tirzepatide; peptide-partners "Sold as 'GLP-3 Retatrutide'"; ez-peptides lists
+   *  the compounds each SKU actually stocks). A single registry note can't vary by compound, so
+   *  collapsing them into one blockNote would destroy the exact identifier a buyer needs. They
+   *  intentionally stay on per-profile `highlights` notes. */
   blockNote?: string;
 }
 
@@ -69,6 +77,10 @@ export const vendors: Record<string, Vendor> = {
     url: "https://aeropeptides.com/?ref=PROF15",
     detailPage: "/coupons/aero-peptides",
     facts: { purityStandard: "≥98%", coa: "on-request" },
+    // Drift-resolved 2026-08-18: chose "≥98% purity" over "Third-party ISO-lab tested". Aero's COAs
+    // report ≥98% area-percent purity (a concrete, checkable figure, mirrored in facts.purityStandard);
+    // the ISO claim rests on an UNNAMED external lab we haven't verified — no labAccreditation here.
+    blockNote: "≥98% purity · COAs on request",
   },
   "almighty-peptides": {
     name: "Almighty Peptides",
@@ -96,6 +108,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://ameanopeptides.com/?ref=hmvyvxhr",
     detailPage: "/coupons/ameano-peptides",
     facts: { purityStandard: "≥99%", coa: "per-product", labName: "Janoshik", testMethods: "HPLC, LC-MS" },
+    blockNote: "Published per-product COAs · third-party verified",
   },
   "amino-club": {
     name: "Amino Club",
@@ -163,6 +176,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://go.biolongevitylabs.com/aff_c?offer_id=1&aff_id=2702",
     detailPage: "/coupons/biolongevity-labs",
     facts: { coa: "per-batch", labName: "BioRegen", purityStandard: "99%+", testMethods: "LC-MS with UV" },
+    blockNote: "Per-batch COAs",
   },
   // BioPure's discount is 5% off — the LOWEST on the roster. That IS the discount; do NOT
   // round it up anywhere. Site states ">99%" purity (homepage, stated consistently) and a COA
@@ -247,6 +261,10 @@ export const vendors: Record<string, Vendor> = {
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
     detailPage: "/coupons/glacier-aminos",
     facts: { coa: "per-batch", labName: "Forever Young Pharmacy, Freedom Diagnostics, Kovera Labs", testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin; sterility + heavy metals on Kovera lots", coldChain: true },
+    // Drift-resolved 2026-08-18: chose "Batch-traceable COAs" over the generic "Batch COAs". Glacier
+    // publishes a batch-searchable COA library — each cert ties to a batch number, with Kovera /verify
+    // and Freedom Diagnostics search codes — so traceability is the verified distinction, not just COAs.
+    blockNote: "Batch-traceable COAs · cold-chain shipping",
   },
   "ignite-peptides": {
     name: "Ignite Peptides",
@@ -308,6 +326,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://modernaminos.com/?ref=profpeptide",
     detailPage: "/coupons/modern-aminos",
     facts: { coa: "login-gated", labName: "Vanguard Laboratory, Freedom Diagnostics, TrustPointe Analytics", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC-UV/VIS, LC-MS/MS", contaminants: "Endotoxin (USP <85>)" },
+    blockNote: "ISO 17025 lab",
   },
   "nextgen-peptides": {
     name: "NextGen Peptides",
@@ -326,6 +345,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://peptidology.co/?ref=mkmhgxqi",
     detailPage: "/coupons/peptidology",
     facts: { coa: "per-batch", labName: "Vanguard Laboratory, Eagle Analytical Services", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC-UV/VIS, ICP-MS, GC-MS", contaminants: "Heavy metals (ICP-MS), endotoxin (LAL), sterility (USP <71> + ScanRDI), residual solvents (GC-MS), TFA" },
+    blockNote: "ISO 17025 lab · batch COAs",
   },
   "integrative-peptides": {
     name: "Integrative Peptides",
@@ -335,6 +355,10 @@ export const vendors: Record<string, Vendor> = {
     url: "https://integrativepeptides.com/affiliate/profpeptide/",
     detailPage: "/coupons/integrative-peptides",
     facts: { purityStandard: "≥99%" },
+    // Drift-resolved 2026-08-18: chose "Oral format" over "Oral capsules & spray". The coupon page
+    // documents oral capsules/tablets and topical preparations but names no spray, so the specific
+    // "spray" claim is unsupported; "Oral format" is the defensible generalization.
+    blockNote: "Oral format — no injection needed",
   },
   // Legendary publishes ONLY a generic "every product is third-party tested" claim — no COA
   // library, no named/accredited lab, and no vendor-stated purity standard (the "99% pure" on
@@ -435,6 +459,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://peptidegiants.com/?ref=urunwnog",
     detailPage: "/coupons/peptide-giants",
     facts: { coa: "library", labName: "Janoshik", testMethods: "HPLC" },
+    blockNote: "Third-party tested by Janoshik",
   },
   "purerx-peptides": {
     name: "PureRx Peptides",
@@ -444,6 +469,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://purerxpeptides.com/?ref=urunwnog",
     detailPage: "/coupons/purerx-peptides",
     facts: { labName: "Accumark Labs, Forever Young Analytics", testMethods: "HPLC" },
+    blockNote: "Same-day dispatch (order by 2:30pm CST)",
   },
   "peptides-gg": {
     name: "Peptides.gg",
@@ -453,6 +479,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://peptides.gg/?coupon=prof15",
     detailPage: "/coupons/peptides-gg",
     facts: { coa: "per-batch", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
+    blockNote: "Per-batch COAs",
   },
   "purerawz": {
     name: "PureRawz",
@@ -489,6 +516,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://royal-peptides.com/?ref=urunwnog",
     detailPage: "/coupons/royal-peptides",
     facts: { coa: "per-batch", labName: "Janoshik", purityStandard: "99%+", testMethods: "HPLC", labClaim: "cGMP/ISO manufacturing (vendor-stated)" },
+    blockNote: "cGMP/ISO labs · batch COAs",
   },
   "science-based-peptides": {
     name: "Science Based Peptides",
@@ -546,6 +574,10 @@ export const vendors: Record<string, Vendor> = {
     // both phantoms, removed. (Freedom Diagnostics ledger: this was an unsupported claim, so
     // treasure-coast does NOT belong to the Freedom concentration.) coa: on-request.
     facts: { coa: "on-request" },
+    // CORRECTED on migration 2026-08-18: the per-profile note was "Per-batch COAs", but the Job-2
+    // cert pass above found NO published COAs (badge only, coa: on-request) — that note was a phantom.
+    // blockNote is the factual version matching facts, not a verbatim carry-over of the drifted note.
+    blockNote: "Third-party tested · COA on request",
   },
   "valkyrie-peptides": {
     name: "Valkyrie Peptides",
