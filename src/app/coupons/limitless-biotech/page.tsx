@@ -5,9 +5,11 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
+import { vendorDiscountPct } from "@/data/prices";
 
 
 export default function LimitlessBiotechCouponPage() {
+  const discountPct = vendorDiscountPct("limitless-biotech");
  return (
  <div className="section max-w-3xl">
  <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -16,7 +18,7 @@ export default function LimitlessBiotechCouponPage() {
       <CouponBreadcrumb slug="limitless-biotech" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Limitless Biotech Discount Code &mdash; Save 15%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Limitless Biotech Discount Code &mdash; Save {discountPct}%</h1>
  </div>
  <CouponFacts slug="limitless-biotech" />
  <CouponCodeCard slug="limitless-biotech" className="mb-8" />
@@ -88,11 +90,11 @@ export default function LimitlessBiotechCouponPage() {
  />
  <FAQItem
  q="Does Limitless Biotech have a discount code?"
- a="Yes. Use code PROFPEPTIDE at checkout to save 15% on any Limitless Biotech order. This code is verified and maintained by Prof. Peptide."
+ a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Limitless Biotech order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
  q="How do I use the Limitless Biotech discount code?"
- a="Add your items to cart at limitlessbiotech.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 15% discount will be applied to your order total."
+ a={`Add your items to cart at limitlessbiotech.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem
  q="What testing does Limitless Biotech conduct?"

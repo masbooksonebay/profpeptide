@@ -36,7 +36,7 @@ export default function RealPeptidesCouponPage() {
       <CouponBreadcrumb slug="real-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Real Peptides Discount Code &mdash; Save 20%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Real Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="real-peptides" />
       <CouponCodeCard slug="real-peptides" className="mb-8" />
@@ -83,11 +83,11 @@ export default function RealPeptidesCouponPage() {
             />
             <FAQItem
               q="Does Real Peptides have a discount code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save 20% on any Real Peptides order. This code is verified and maintained by Prof. Peptide."
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Real Peptides order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
               q="How do I use the Real Peptides discount code?"
-              a="Add your items to cart at realpeptides.co, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 20% discount will be applied to your order total."
+              a={`Add your items to cart at realpeptides.co, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem
               q="How does Real Peptides test its peptides?"

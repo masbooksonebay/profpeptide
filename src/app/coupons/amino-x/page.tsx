@@ -24,7 +24,7 @@ export default function AminoXCouponPage() {
       <CouponBreadcrumb slug="amino-x" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Amino X Discount Code &mdash; Save 15%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Amino X Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="amino-x" />
       <CouponCodeCard slug="amino-x" className="mb-8" />
@@ -100,11 +100,11 @@ export default function AminoXCouponPage() {
             />
             <FAQItem
               q="Does Amino X have a discount code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save 15% on any Amino X order. This code is verified and maintained by Prof. Peptide."
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Amino X order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
               q="How do I use the Amino X discount code?"
-              a="Add your items to cart at aminox.net, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 15% discount will be applied to your order total."
+              a={`Add your items to cart at aminox.net, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem
               q="What testing does Amino X do?"

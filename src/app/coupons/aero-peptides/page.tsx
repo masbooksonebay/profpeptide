@@ -27,7 +27,7 @@ export default function AeroPeptidesCouponPage() {
       <CouponBreadcrumb slug="aero-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Aero Peptides Discount Code &mdash; Save 15%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Aero Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="aero-peptides" />
       <CouponCodeCard slug="aero-peptides" className="mb-8" />
@@ -122,7 +122,7 @@ export default function AeroPeptidesCouponPage() {
             />
             <FAQItem
               q="Does Aero Peptides have a discount code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save 15% on any Aero Peptides order. This code is verified and maintained by Prof. Peptide."
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Aero Peptides order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
               q="How do I use the Aero Peptides discount code?"

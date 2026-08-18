@@ -7,9 +7,11 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { RegionPill } from "@/components/RegionPill";
 import { vendors } from "@/data/vendors";
+import { vendorDiscountPct } from "@/data/prices";
 
 
 export default function ParticlePeptidesCouponPage() {
+  const discountPct = vendorDiscountPct("particle-peptides");
  const v = vendors["particle-peptides"];
  return (
  <div className="section max-w-3xl">
@@ -19,7 +21,7 @@ export default function ParticlePeptidesCouponPage() {
       <CouponBreadcrumb slug="particle-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Particle Peptides Discount Code &mdash; Save 10%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Particle Peptides Discount Code &mdash; Save {discountPct}%</h1>
  </div>
  <div className="flex flex-wrap items-center gap-2 mb-8">
  <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
@@ -118,11 +120,11 @@ export default function ParticlePeptidesCouponPage() {
  />
  <FAQItem
  q="Does Particle Peptides have a discount code?"
- a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Particle Peptides order. This code is verified and maintained by Prof. Peptide."
+ a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Particle Peptides order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
  q="How do I use the Particle Peptides discount code?"
- a="Add your items to cart at particlepeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total."
+ a={`Add your items to cart at particlepeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem
  q="What testing does Particle Peptides conduct?"

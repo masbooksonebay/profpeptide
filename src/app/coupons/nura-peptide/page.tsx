@@ -24,7 +24,7 @@ export default function NuraPeptideCouponPage() {
       <CouponBreadcrumb slug="nura-peptide" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Nura Peptide Discount Code: PROFPEPTIDE &mdash; Save 25%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Nura Peptide Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
       <CouponCodeCard slug="nura-peptide" className="mb-8" />
 
@@ -110,8 +110,8 @@ export default function NuraPeptideCouponPage() {
           <div className="space-y-2">
             <FAQItem q="What peptides does Nura Peptide carry?" a="Nura carries research compounds across several categories. Its metabolic/GLP line is sold under proprietary code names — Retatrutide (listed as GLP-3R), Tirzepatide (listed as GLP-2T), Semaglutide (listed as GLP-1SG), and a Retatrutide/Cagrilintide blend (listed as GLP-3R/CAG) — alongside MOTS-C, AOD-9604, and 5-Amino-1MQ; recovery peptides such as BPC-157, TB-500, and a BPC-157/TB-500 blend; growth-hormone secretagogues including CJC-1295, Ipamorelin, Tesamorelin, Sermorelin, and IGF-1 LR3; longevity and bioregulator compounds including Epitalon, NAD+, SS-31, and Glutathione; plus GHK-Cu, the GLOW and KLOW blends, Semax, Selank, DSIP, PT-141, and KPV." />
             <FAQItem q="Where do I find Retatrutide (GLP-3R), Tirzepatide (GLP-2T), and Semaglutide (GLP-1SG) on Nura's site?" a="Nura lists its GLP/metabolic peptides under proprietary code names. Retatrutide is listed as GLP-3R, Tirzepatide as GLP-2T, and Semaglutide as GLP-1SG; the GLP-3R/CAG blend is Retatrutide + Cagrilintide. Search those codes in the Nura catalog to reach the matching product page and its published Certificate of Analysis." />
-            <FAQItem q="Does Nura Peptide have a coupon code?" a="Yes. Use code PROFPEPTIDE at checkout to save 25% on your entire Nura Peptide order. This code is verified and maintained by Prof. Peptide." />
-            <FAQItem q="How do I use the Nura Peptide discount code?" a="Add your items to cart at nurapeptide.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 25% discount will be applied to your order total." />
+            <FAQItem q="Does Nura Peptide have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire Nura Peptide order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="How do I use the Nura Peptide discount code?" a={`Add your items to cart at nurapeptide.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How does Nura Peptide test its peptides?" a="Every Nura batch is third-party tested by Freedom Diagnostics, whose certificates confirm identity by LC-MS, purity by HPLC-UV, and net content, with recent reports adding endotoxin (USP <85>) and microbial (PCR) screening; each COA is verifiable by its search code at FreedomDiagnosticsTesting.com. Nura does not publish a single headline purity figure; the per-batch COA is the record of each lot's results." />
             <FAQItem q="Are Certificates of Analysis available for Nura products?" a="Yes. Nura publishes a public COA library where each batch's Freedom Diagnostics Certificate of Analysis can be viewed and verified by its search code at FreedomDiagnosticsTesting.com." />
             <FAQItem q="Is Nura Peptide US-based?" a="Yes — Nura Peptide is US-based and ships domestically. All products are for laboratory and research use only." />

@@ -35,7 +35,7 @@ export default function AmpPeptidesCouponPage() {
       <CouponBreadcrumb slug="amp-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">AMP Peptides Discount Code &mdash; Save 15%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">AMP Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="amp-peptides" />
       <CouponCodeCard slug="amp-peptides" className="mb-8" />
@@ -82,7 +82,7 @@ export default function AmpPeptidesCouponPage() {
             />
             <FAQItem
               q="Does AMP Peptides have a discount code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save 15% on any AMP Peptides order. This code is verified and maintained by Prof. Peptide, and beats AMP's public LIGHTNING code (10%)."
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any AMP Peptides order. This code is verified and maintained by Prof. Peptide, and beats AMP's public LIGHTNING code (10%).`}
             />
             <FAQItem
               q="How do I use the AMP Peptides discount code?"

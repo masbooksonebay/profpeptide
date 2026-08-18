@@ -24,7 +24,7 @@ export default function PureRawzCouponPage() {
       <CouponBreadcrumb slug="purerawz" />
 
         <div className="flex flex-wrap items-center gap-3 mb-1">
-          <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">PureRawz Discount Code &mdash; Save 10%</h1>
+          <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">PureRawz Discount Code &mdash; Save {discountPct}%</h1>
         </div>
         <CouponFacts slug="purerawz" />
         <CouponCodeCard slug="purerawz" className="mb-8" />

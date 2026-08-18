@@ -41,7 +41,7 @@ export default function NextGenPeptidesCouponPage() {
       <CouponBreadcrumb slug="nextgen-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">NextGen Peptides Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">NextGen Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="nextgen-peptides" />
       <CouponCodeCard slug="nextgen-peptides" className="mb-8" />
@@ -87,8 +87,8 @@ export default function NextGenPeptidesCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="Does NextGen Peptides have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any NextGen Peptides order. This code is verified and maintained by Prof. Peptide." />
-            <FAQItem q="How do I use the NextGen Peptides discount code?" a="Add your items to cart at ngpeptide.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
+            <FAQItem q="Does NextGen Peptides have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any NextGen Peptides order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="How do I use the NextGen Peptides discount code?" a={`Add your items to cart at ngpeptide.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="Is NextGen Peptides third-party tested?" a="Yes — by ILS Laboratories (San Diego, CA; ISO/IEC 17025-accredited), with earlier (pre-March 2026) batches tested by Freedom Diagnostics. Each ILS COA runs peptide purity and content by HPLC, identity by HPLC retention-time matching, heavy metals (ICP-MS), sterility (PCR), endotoxin (USP <85>), and a fentanyl screen, and is individually QR-verifiable at portal.ils-lab.com. NextGen publishes a public, searchable COA Library at ngpeptide.com/coa-library/." />
             <FAQItem q="What is NextGen Peptides' purity standard?" a="NextGen Peptides states ≥99% purity verified by HPLC, with a Certificate of Analysis available for every product." />
             <FAQItem q="What does NextGen Peptides carry?" a="Research compounds across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator categories, in vial, spray, and capsule formats." />

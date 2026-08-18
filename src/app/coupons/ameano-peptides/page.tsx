@@ -25,7 +25,7 @@ export default function AmeanoPeptidesCouponPage() {
       <CouponBreadcrumb slug="ameano-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Ameano Peptides Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Ameano Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="ameano-peptides" />
       <CouponCodeCard slug="ameano-peptides" className="mb-8" />
@@ -120,7 +120,7 @@ export default function AmeanoPeptidesCouponPage() {
             />
             <FAQItem
               q="Does Ameano Peptides have a discount code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any Ameano Peptides order. This code is verified and maintained by Prof. Peptide."
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Ameano Peptides order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
               q="How do I use the Ameano Peptides discount code?"

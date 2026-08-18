@@ -35,7 +35,7 @@ export default function ImprovedPeptidesCouponPage() {
       <CouponBreadcrumb slug="improved-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Improved Peptides Discount Code &mdash; Save 15%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Improved Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="improved-peptides" />
       <CouponCodeCard slug="improved-peptides" className="mb-8" />
@@ -83,7 +83,7 @@ export default function ImprovedPeptidesCouponPage() {
             />
             <FAQItem
               q="Does Improved Peptides have a discount code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save 15% on your Improved Peptides order. This code is verified and maintained by Prof. Peptide. Improved also runs an automatic 'buy two, get one free' bundle, but bundle pricing does not combine with a discount code — the 15% code applies to standard (non-bundle) pricing."
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your Improved Peptides order. This code is verified and maintained by Prof. Peptide. Improved also runs an automatic 'buy two, get one free' bundle, but bundle pricing does not combine with a discount code — the 15% code applies to standard (non-bundle) pricing.`}
             />
             <FAQItem
               q="How do I use the Improved Peptides discount code?"

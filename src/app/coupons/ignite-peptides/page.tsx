@@ -24,7 +24,7 @@ export default function IgnitePeptidesCouponPage() {
       <CouponBreadcrumb slug="ignite-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Ignite Peptides Discount Code &mdash; Save 10%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Ignite Peptides Discount Code &mdash; Save {discountPct}%</h1>
  </div>
  <CouponFacts slug="ignite-peptides" />
  <CouponCodeCard slug="ignite-peptides" className="mb-8" />
@@ -121,11 +121,11 @@ export default function IgnitePeptidesCouponPage() {
  />
  <FAQItem
  q="Does Ignite Peptides have a discount code?"
- a="Yes. Use code PROF10 at checkout to save 10% on your Ignite Peptides order. This code is verified and maintained by Prof. Peptide."
+ a={`Yes. Use code PROF10 at checkout to save ${discountPct}% on your Ignite Peptides order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
  q="How do I use the Ignite Peptides discount code?"
- a="Add your items to cart at ignitepeptides.com, proceed to checkout, and enter PROF10 in the discount code field. The 10% discount will be applied to your order total."
+ a={`Add your items to cart at ignitepeptides.com, proceed to checkout, and enter PROF10 in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem
  q="Is Ignite Peptides third-party tested?"

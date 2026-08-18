@@ -25,7 +25,7 @@ export default function PureRxPeptidesCouponPage() {
       <CouponBreadcrumb slug="purerx-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">PureRx Peptides Discount Code &mdash; Save 15%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">PureRx Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="purerx-peptides" />
       <CouponCodeCard slug="purerx-peptides" className="mb-8" />
@@ -106,8 +106,8 @@ export default function PureRxPeptidesCouponPage() {
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What peptides does PureRx Peptides carry?" a="PureRx carries research compounds across several categories: metabolic and GLP-class compounds including Retatrutide, Tirzepatide, Cagrilintide, and AOD-9604; recovery peptides such as BPC-157; growth-hormone secretagogues including CJC-1295 (DAC) and Ipamorelin; short-peptide bioregulators including Cardiogen, Cortagen, and Epitalon; plus GHK-Cu, DSIP, and ARA-290 (Cibinetide)." />
-            <FAQItem q="Does PureRx Peptides have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 15% on your entire PureRx Peptides order. This code is verified and maintained by Prof. Peptide." />
-            <FAQItem q="How do I use the PureRx Peptides discount code?" a="Add your items to cart at purerxpeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 15% discount will be applied to your order total." />
+            <FAQItem q="Does PureRx Peptides have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire PureRx Peptides order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="How do I use the PureRx Peptides discount code?" a={`Add your items to cart at purerxpeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How does PureRx Peptides test its peptides?" a="PureRx sends samples to independent labs — Accumark Labs and Forever Young Analytics — that report identity and purity by HPLC on a Certificate of Analysis; a recent Accumark report is QR/sample-code verifiable at accumarklabs.com. PureRx describes its program as a multi-step QC process using an ISO-certified lab and mass spectrometry, but the certificates reviewed show HPLC analysis with no accreditation mark." />
             <FAQItem q="Are Certificates of Analysis available for PureRx products?" a="COAs are available for applicable PureRx products. Each COA documents the batch's results and includes third-party testing information to help verify product identity." />
             <FAQItem q="Is PureRx Peptides US-based, and how fast does it ship?" a="Yes — PureRx Peptides is US-based and ships domestically. Orders placed before 2:30pm CST ship the same day, with 2-day shipping. All products are for laboratory and research use only." />

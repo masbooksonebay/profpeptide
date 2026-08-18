@@ -25,7 +25,7 @@ export default function PeptideGiantsCouponPage() {
       <CouponBreadcrumb slug="peptide-giants" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptide Giants Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptide Giants Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="peptide-giants" />
       <CouponCodeCard slug="peptide-giants" className="mb-8" />
@@ -106,8 +106,8 @@ export default function PeptideGiantsCouponPage() {
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What peptides does Peptide Giants carry?" a="Peptide Giants carries research compounds as both single vials and multi-vial kits, spanning metabolic and GLP-class compounds (including Cagrilintide, AOD-9604, MOTS-C, and 5-Amino-1MQ), recovery peptides such as BPC-157 and TB-500, growth-hormone secretagogues including CJC-1295, Ipamorelin, and IGF-1 LR3, skin compounds such as GHK-Cu and Melanotan II, the GLOW and KLOW blends, longevity compounds including Epitalon, NAD+, and Glutathione, plus KPV, Kisspeptin-10, and Oxytocin." />
-            <FAQItem q="Does Peptide Giants have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 10% on your entire Peptide Giants order. This code is verified and maintained by Prof. Peptide." />
-            <FAQItem q="How do I use the Peptide Giants discount code?" a="Add your items to cart at peptidegiants.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total." />
+            <FAQItem q="Does Peptide Giants have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire Peptide Giants order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="How do I use the Peptide Giants discount code?" a={`Add your items to cart at peptidegiants.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How does Peptide Giants test its peptides?" a="Every Peptide Giants product is third-party tested by Janoshik, an independent analytical lab widely used in the research-peptide space. The per-batch Janoshik reports state purity (typically 99%+) and peptide content and are individually verifiable at janoshik.com/verify with a unique key and QR code; the reports do not print the analytical method." />
             <FAQItem q="Are lab reports available for Peptide Giants products?" a="Yes. Peptide Giants publishes a Lab Reports section on its site where researchers can review the third-party (Janoshik) testing documentation for its products." />
             <FAQItem q="Is Peptide Giants US-based, and how fast does it ship?" a="Yes — Peptide Giants ships from the USA with same-day US dispatch on most orders and free priority shipping on domestic orders over $200. Products are for laboratory and research use only." />

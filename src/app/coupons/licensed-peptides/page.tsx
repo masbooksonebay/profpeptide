@@ -5,9 +5,11 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
+import { vendorDiscountPct } from "@/data/prices";
 
 
 export default function LicensedPeptidesCouponPage() {
+  const discountPct = vendorDiscountPct("licensed-peptides");
   return (
     <div className="section max-w-3xl">
       <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
@@ -16,7 +18,7 @@ export default function LicensedPeptidesCouponPage() {
       <CouponBreadcrumb slug="licensed-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Licensed Peptides Discount Code &mdash; Save 5%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Licensed Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="licensed-peptides" />
       <CouponCodeCard slug="licensed-peptides" className="mb-8" />
@@ -70,8 +72,8 @@ export default function LicensedPeptidesCouponPage() {
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What peptides does Licensed Peptides carry?" a="Licensed Peptides carries single-compound peptides, peptide blends, and peptide capsules across metabolic, healing, growth-hormone, longevity, and pigmentation research areas. Its catalog includes the GLP metabolic line — Retatrutide (listed as LP3-R) and Tirzepatide (LP2-T) — plus MOTS-C, BPC-157, TB-500, Tesamorelin, Ipamorelin, Sermorelin, IGF-1 LR3, Epitalon, NAD+, and GHK-Cu, alongside its own branded blends." />
-            <FAQItem q="Does Licensed Peptides have a discount code?" a="Yes. Use code PROFPEPTIDE at checkout to save 5% on your Licensed Peptides order. This code is verified and maintained by Prof. Peptide." />
-            <FAQItem q="How do I use the Licensed Peptides discount code?" a="Add your items to cart at licensedpeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 5% discount will be applied to your order total." />
+            <FAQItem q="Does Licensed Peptides have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your Licensed Peptides order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="How do I use the Licensed Peptides discount code?" a={`Add your items to cart at licensedpeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How does Licensed Peptides test its peptides?" a="Licensed Peptides publishes batch-specific Certificates of Analysis issued by Vanguard Laboratory of Olympia, WA (A2LA Certificate #6377.01.01, ISO/IEC 17025:2017-accredited). Each COA verifies chromatographic purity and quantity by HPLC-UV/VIS (99%+ stated) plus heavy metals (ICP-MS), endotoxin (LAL), and sterility (USP <71>); recent batch reports also add residual solvents (GC-MS) and trifluoroacetic acid (ion chromatography). Reports are signed by the lab's director and linked on each product page." />
             <FAQItem q="What are LP3-R and LP2-T?" a="Licensed Peptides lists its GLP metabolic peptides under coded names. LP3-R (labeled GLP-3 R on the COA) is Retatrutide, CAS 2381089-83-2; LP2-T (GLP-2 T) is Tirzepatide, CAS 2023788-19-2. The Vanguard Certificates of Analysis identify the compounds by name — the GLP-3 R report's chromatogram peak is labeled Retatrutide and the GLP-2 T report's is labeled Tirzepatide." />
             <FAQItem q="Does Licensed Peptides offer free shipping?" a="Yes. Licensed Peptides offers free FedEx shipping on orders over $200, with same-day US fulfillment. All products are for laboratory and research use only." />

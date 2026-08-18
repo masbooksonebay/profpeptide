@@ -27,7 +27,7 @@ export default function TreasureCoastPeptidesCouponPage() {
       <CouponBreadcrumb slug="treasure-coast-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Treasure Coast Peptides Discount Code &mdash; Save 15%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Treasure Coast Peptides Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="treasure-coast-peptides" />
       <CouponCodeCard slug="treasure-coast-peptides" className="mb-8" />
@@ -115,8 +115,8 @@ export default function TreasureCoastPeptidesCouponPage() {
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What peptides does Treasure Coast Peptides carry?" a="Treasure Coast carries a broad research-peptide catalog spanning metabolic compounds (Cagrilintide, MOTS-c, AOD-9604, 5-Amino-1MQ), recovery and repair peptides (BPC-157, TB-500, KPV), growth-hormone secretagogues (CJC-1295, Ipamorelin, Sermorelin, Tesamorelin, GHRP-6, IGF-1 LR3), cognitive compounds (Semax, Selank, Pinealon), skin peptides (GHK-Cu, Melanotan-1, Melanotan-2, GLOW), longevity and sleep compounds (NAD+, Epitalon, Cibinetide, DSIP), and sexual/reproductive compounds (PT-141, Kisspeptin, Oxytocin). It also stocks laboratory research supplies." />
-            <FAQItem q="Does Treasure Coast Peptides have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save 15% on your entire Treasure Coast Peptides order. This code is verified and maintained by Prof. Peptide and valid as of ${CODES_VERIFIED_DATE}.`} />
-            <FAQItem q="How do I use the Treasure Coast Peptides discount code?" a="Add your items to cart at treasurecoastpeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 15% discount will be applied to your order total." />
+            <FAQItem q="Does Treasure Coast Peptides have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire Treasure Coast Peptides order. This code is verified and maintained by Prof. Peptide and valid as of ${CODES_VERIFIED_DATE}.`} />
+            <FAQItem q="How do I use the Treasure Coast Peptides discount code?" a={`Add your items to cart at treasurecoastpeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How does Treasure Coast Peptides test its peptides?" a="Treasure Coast states its research peptides are third-party tested for identity, purity, and concentration (the concentration check verifies labeled potency). This is reported as the vendor states it, not as independently verified — Prof. Peptide reviewed no Treasure Coast certificate." />
             <FAQItem q="Where is Treasure Coast Peptides based and what does shipping cost?" a="Treasure Coast Peptides is a Florida-based, U.S. supplier. Orders over $200 ship free within the United States. Every order is backed by a satisfaction / money-back guarantee, easy returns, and secure ordering." />
             <FAQItem q="Does Treasure Coast Peptides sell research supplies too?" a="Yes. In addition to research peptides, Treasure Coast stocks laboratory research supplies such as bacteriostatic water, vials, and everyday consumables, so a full research workflow can be sourced in one order." />

@@ -26,7 +26,7 @@ export default function BioCollexCouponPage() {
       <CouponBreadcrumb slug="biocollex" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">BioCollex Discount Code &mdash; Save 10%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">BioCollex Discount Code &mdash; Save {discountPct}%</h1>
       </div>
       <CouponFacts slug="biocollex" />
       <CouponCodeCard slug="biocollex" className="mb-8" />
@@ -117,11 +117,11 @@ export default function BioCollexCouponPage() {
  />
             <FAQItem
               q="Does BioCollex have a discount code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save 10% on any BioCollex order. This code is verified and maintained by Prof. Peptide."
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any BioCollex order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
               q="How do I use the BioCollex discount code?"
-              a="Add your items to cart at biocollexresearch.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The 10% discount will be applied to your order total."
+              a={`Add your items to cart at biocollexresearch.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem
               q="Is BioCollex third-party tested?"
