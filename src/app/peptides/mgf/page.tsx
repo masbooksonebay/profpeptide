@@ -409,6 +409,10 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+          The pegylated form, PEG-MGF, is sold as a distinct product with its own{" "}
+          <Link href="/prices/peg-mgf" className="text-[#3A759F] hover:underline">PEG-MGF price comparison</Link>.
+        </p>
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
           <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
           </Link>

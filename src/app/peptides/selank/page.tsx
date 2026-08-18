@@ -409,7 +409,7 @@ const sections = [
     id: "where-to-buy",
     title: "Where to source Selank",
     intro:
-      "Outside Russia, Selank is sold by specialty research peptide vendors as research-grade material. Choose vendors that provide third-party testing (HPLC purity, mass spectrometric identity confirmation). The vendors highlighted below have been vetted — including N-Acetyl Selank variants and nasal format options.",
+      "Outside Russia, Selank is sold by specialty research peptide vendors as research-grade material. Choose vendors that provide third-party testing (HPLC purity, mass spectrometric identity confirmation). The vendors highlighted below have been vetted, and include nasal-format options.",
     node: (
       <div className="space-y-4">
         <VendorHighlightBlock compoundSlug="selank"
@@ -419,6 +419,10 @@ const sections = [
             { slug: "vital-core-research" },
           ]}
         />
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+          N-Acetyl Selank &mdash; the N-terminally acetylated variant, sold as a distinct product &mdash; has its own{" "}
+          <Link href="/prices/na-selank" className="text-[#3A759F] hover:underline">NA-Selank price comparison</Link>.
+        </p>
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
           <Link href="/coupons" className="text-[#3A759F] hover:underline">
             See all {activeVendorCount} verified vendors &rarr;
