@@ -95,7 +95,11 @@ export const vendors: Record<string, Vendor> = {
   "amino-club": {
     name: "Amino Club",
     code: "PROFPEPTIDE",
-    discount: "20% off",
+    // TEMPORARY BOOST 35% (vendor-confirmed), runs through Mon Aug 31 2026 11:59 PM EDT,
+    // then REVERT to "20% off". No dated-expiry support in this schema, so the revert is
+    // logged in scripts/price-pull/skip-ledger.json (_pending_reverts) for the Aug 31
+    // weekend run. Every rate surface derives from this string — reverting here reverts all.
+    discount: "35% off",
     region: "US",
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
     detailPage: "/coupons/amino-club",

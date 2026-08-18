@@ -30,7 +30,7 @@ export default function AminoClubCouponPage() {
       <CouponBreadcrumb slug="amino-club" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Amino Club Discount Code: PROFPEPTIDE &mdash; Save 20%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Amino Club Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
       <CouponCodeCard slug="amino-club" className="mb-8" />
 
@@ -130,7 +130,7 @@ export default function AminoClubCouponPage() {
             />
             <FAQItem
               q="Does Amino Club have a coupon code?"
-              a="Yes. Use code PROFPEPTIDE at checkout to save 20% on any Amino Club order. This code is verified and maintained by Prof. Peptide."
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Amino Club order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
               q="How do I use the Amino Club discount code?"
