@@ -3153,3 +3153,48 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ---
 
+
+
+## VENDOR: Capstone Peptides
+- **slug:** capstone-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** capstonepeptides.com
+- **traffic:** (not pulled) | **pulled:** August 18 2026
+- **sale posture:** No sitewide sale observed; PP code (10%, PROFPEPTIDE) stacks.
+
+### Single compounds
+| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| BPC-157 | 5mg | $50.00 | $10.00 | — | ✓ | product/bpc-157-5-mg/ |
+| BPC-157 | 10mg | $60.00 | $6.00 | — | ✓ | product/bpc-157-10-mg/ |
+| CagriSema (listed as C-Amylin / GLP-1S) | 10mg | $120.00 | $12.00 | — | ✓ | product/c-amylin-cagrilintide-glp-1s-semaglutide-blend-5-5-mg/ |
+| Epitalon | 10mg | $45.00 | $4.50 | — | ✓ | product/epithalon-10-mg/ |
+| Ipamorelin | 5mg | $50.00 | $10.00 | — | ✓ | product/ipamorelin-5-mg/ |
+| Melanotan II | 10mg | $45.00 | $4.50 | — | ✓ | product/melanotan-2-10-mg/ |
+| MOTS-C | 10mg | $60.00 | $6.00 | — | ✓ | product/mots-c-10-mg/ |
+| NAD+ | 500mg | $75.00 | $0.15 | — | ✓ | product/nad-500-mg/ |
+| PT-141 | 10mg | $50.00 | $5.00 | — | ✓ | product/pt-141-10-mg/ |
+| Retatrutide (listed as GLP-3R) | 10mg | $90.00 | $9.00 | — | ✓ | product/glp-3r-retatrutide-10-mg/ |
+| Retatrutide (listed as GLP-3R) | 30mg | $200.00 | $6.67 | — | ✓ | product/glp-3r-retatrutide-30-mg/ |
+| Selank | 5mg | $35.00 | $7.00 | — | ✓ | product/selank-5-mg/ |
+| Semaglutide (listed as GLP-1S) | 5mg | $70.00 | $14.00 | — | ✓ | product/glp-1s-semaglutide-5-mg/ |
+| Semaglutide (listed as GLP-1S) | 10mg | $85.00 | $8.50 | — | ✓ | product/glp-1s-semaglutide-10-mg/ |
+| Semax | 30mg | $90.00 | $3.00 | — | ✓ | product/semax-30-mg/ |
+| Sermorelin | 5mg | $45.00 | $9.00 | — | ✓ | product/sermorelin-5-mg/ |
+| TB-500 | 10mg | $70.00 | $7.00 | — | ✓ | product/tb-500-10-mg/ |
+| Tesamorelin | 10mg | $85.00 | $8.50 | — | ✓ | product/tesamorelin-10-mg/ |
+| Thymosin Alpha-1 | 10mg | $70.00 | $7.00 | — | ✓ | product/thymosin-alpha-1-10-mg/ |
+| Tirzepatide (listed as GLP-2T) | 10mg | $85.00 | $8.50 | — | ✓ | product/glp-2t-tirzepatide-10-mg/ |
+| Tirzepatide (listed as GLP-2T) | 30mg | $140.00 | $4.67 | — | ✓ | product/glp-2t-tirzepatide-30-mg/ |
+
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| CJC-1295 (no DAC)/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $90.00 | not published | ✓ | product/cjc-1295-ipamorelin-blend-5-5-mg/ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $120.00 | not published | ✓ | product/glow-70-mg/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $110.00 | not published | ✓ | product/bpc-157-tb-500-blend-10-10-mg/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $99.00 | not published | ✓ | product/bpc-157-tb-500-blend-5-5-mg/ |
+
+### Sprays: none
+### Excluded: supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+
+---
+

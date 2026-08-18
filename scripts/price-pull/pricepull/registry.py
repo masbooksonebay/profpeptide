@@ -103,6 +103,14 @@ VENDORS = {
     "biocollex": dict(name="BioCollex", domain="biocollexresearch.com", adapter="woo",
         variation_model="pack-size", coded_decoder=True, sale_posture="No sale.",
         notes="Variations are Pack Size (vial-count); mg from NAME, base = single-vial. CJC/IPA 5/5 ratio published."),
+    "capstone-peptides": dict(name="Capstone Peptides", domain="capstonepeptides.com", adapter="woo",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="No sitewide sale observed; PP code (10%, PROFPEPTIDE) stacks.",
+        notes="Onboarded 2026-08. Woo Store API PUBLIC (wc/store/v1/products, per_page=100 -> 27 SKUs). "
+              "ALL SKUs are 'simple' — size is in the NAME, not a variation. Coded metabolic line "
+              "self-decodes in the name (key on the compound WORD: GLP-1S Semaglutide, GLP-2T Tirzepatide, "
+              "GLP-3R Retatrutide; C-Amylin Cagrilintide/GLP-1S Semaglutide = CagriSema). Accumark Labs "
+              "COAs. 2 bacteriostatic-water SKUs fall out via scope."),
     "ez-peptides": dict(name="EZ Peptides", domain="ezpeptides.com", adapter="woo",
         variation_model="dosage", coded_decoder=True, sale_posture="No sale.",
         notes="GLP coded EZP-1P/2P/3P/CG — Janoshik COA-verified. TB4=TB-500."),

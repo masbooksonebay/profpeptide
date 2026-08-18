@@ -454,6 +454,11 @@ for br in blend_data_rows:
     # everywhere -> every row drops -> no CJC/Ipa blend emits (no silently-merged two-molecule page).
     if base_name == "CJC-1295/Ipamorelin":
         form = cjc_form(br.get("vendor_slug"))
+        # Slug-less form fallback: honor an explicit "(no DAC)" in the doc display — a decoder sets it
+        # ONLY from the vendor's own molecular formula (Capstone: "CJC-1295 (no DAC)"), so it is evidence,
+        # not a guess. Never infer DAC from a bare/"(DAC)" display (that's the default label, not a form).
+        if form is None and "(no DAC)" in br["raw_name"]:
+            form = "no-dac"
         if form is None:
             blend_cjc_unresolved.append((br["vendor"], br.get("vendor_slug") or "—"))
             continue
