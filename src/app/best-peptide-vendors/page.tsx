@@ -45,6 +45,10 @@ interface HubVendor {
 //   - Ascension Peptides + Swiss Chems: removed from this featured subset Aug 2026.
 //     (Ascension remains PROVEN in attribution.ts and still surfaces on profiles;
 //     Swiss Chems is CUT — see attribution.ts — so it was already off every profile.)
+//   - EZ Peptides, Glacier Aminos, Oasis Labs: removed from this featured subset Aug 2026.
+//     All three remain PROVEN in attribution.ts, so they still surface on /coupons, /vendors,
+//     and every profile block (price-row derivation) — this removal is the /best-peptide-vendors
+//     page only. Capstone Peptides added the same day (registry entry + public Accumark COA library).
 // Curated copy for the featured subset. Every field EXCEPT `code` is hand-set for
 // this page; `code` is omitted on purpose and pulled from the registry below, so a
 // code change (e.g. Glacier PROF10→PROFPEPTIDE, Aug 2026) can never go stale here
@@ -60,24 +64,6 @@ const featured: Omit<HubVendor, "code">[] = [
     strengths: ["Third-party tested, 99%+ purity", "ISO/IEC 17025-accredited lab", "Per-batch verifiable COAs", "20% off with code"],
   },
   {
-    name: "EZ Peptides",
-    slug: "ez-peptides",
-    url: "https://ezpeptides.com/?ref=nldbbgvs",
-    discount: "10% off",
-    description:
-      "US-based supplier in Albuquerque, New Mexico, known for fast fulfillment \u2014 orders ship within 0\u20132 business days with same-day shipping available. Every batch is independently third-party tested with a Certificate of Analysis, and EZ reports a self-reported 4.7/5 rating across 176+ reviews (its own figure; no independent Trustpilot profile).",
-    strengths: ["Third-party tested, COA per batch", "Ships in 0\u20132 business days", "Self-reported 4.7/5 (176+ reviews)", "10% off with code"],
-  },
-  {
-    name: "Glacier Aminos",
-    slug: "glacier-aminos",
-    url: "https://glacieraminos.shop/?ref=cknlhxrm",
-    discount: "10% off",
-    description:
-      "US-based, family-owned research-peptide supplier with same-day shipping (before 12PM MST) and US fulfillment. Every batch is third-party tested at independent American labs under a 7-point protocol \u2014 HPLC purity, identity, endotoxin, sterility, heavy metals, and multi-vial batch conformity. Each vial carries a unique batch code and a QR link to its COA, plus a purity guarantee (free replacement if independent testing shows purity below their stated threshold).",
-    strengths: ["7-point third-party testing", "Per-vial QR-code COAs", "US-based, family-owned", "10% off with code"],
-  },
-  {
     name: "Nura Peptide",
     slug: "nura-peptide",
     url: "https://nurapeptide.com/?ref=profpeptide",
@@ -87,15 +73,6 @@ const featured: Omit<HubVendor, "code">[] = [
     strengths: ["Third-party tested (Freedom Diagnostics)", "LC-MS identity + HPLC-UV purity", "Verifiable per-batch COA library", "25% off with code"],
   },
   {
-    name: "Oasis Labs",
-    slug: "oasis-labs",
-    url: "https://myoasislabs.com/?sld=profpeptide",
-    discount: "15% off",
-    description:
-      "Veteran-owned, Las Vegas-based supplier with in-house fulfillment. Every batch is third-party tested at US labs to a guaranteed 99% purity, with a public COA Library plus a unique QR code on each vial for point-of-use COA access. Cold-shield shipping with same-day processing.",
-    strengths: ["Third-party tested, 99% purity", "Per-vial QR-code COAs", "Veteran-owned, in-house fulfillment", "15% off with code"],
-  },
-  {
     name: "Peptide Partners",
     slug: "peptide-partners",
     url: "https://peptide.partners/ref/48/",
@@ -103,6 +80,15 @@ const featured: Omit<HubVendor, "code">[] = [
     description:
       "US research peptide supplier that runs four independent test types per batch: purity, endotoxin, heavy metals, and sterility. Extensive transparency on test data and documentation.",
     strengths: ["Four independent batch tests", "Endotoxin + sterility tested", "Published COAs", "Transparent test data"],
+  },
+  {
+    name: "Capstone Peptides",
+    slug: "capstone-peptides",
+    url: "https://capstonepeptides.com/",
+    discount: "10% off",
+    description:
+      "US-based research-compound supplier with an openly browsable catalog and per-vial pricing (no account required). Every one of its 25 catalog compounds carries a batch certificate from Accumark Labs in a public COA library; 24 link the certificate from the product page, and the Retatrutide 30 mg lot is verifiable by its AccuVerify code. The certificate we reviewed — a 30 mg Retatrutide lot — is a core panel confirming identity, purity (99.52% against a >98.0% spec), and quantity; it does not include endotoxin, heavy-metal, or sterility testing, and Accumark prints no lab accreditation.",
+    strengths: ["Public Accumark Labs COA library", "Identity + HPLC purity + quantity", "Browsable catalog & per-vial prices", "10% off with code"],
   },
 ];
 

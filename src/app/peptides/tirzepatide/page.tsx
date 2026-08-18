@@ -620,8 +620,9 @@ const peptideNews = articlesForPeptide("tirzepatide");
 if (peptideNews.length) sections.push({ id: "news", title: "In the News", node: <ProfileNews articles={peptideNews} /> });
 
 const tocSections = [
+  ...sections.filter((s) => s.id === "where-to-buy").map((s) => ({ id: s.id, title: s.title })),
   { id: "overview", title: "What is Tirzepatide?" },
-  ...sections.map((s) => ({ id: s.id, title: s.title })),
+  ...sections.filter((s) => s.id !== "where-to-buy").map((s) => ({ id: s.id, title: s.title })),
 ];
 
 export default function TirzepatidePage() {
@@ -684,6 +685,16 @@ export default function TirzepatidePage() {
       {/* Two-column: primary content + right rail */}
       <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12 lg:items-start">
         <main className="min-w-0">
+      {sections.filter((s) => s.id === "where-to-buy").map((s) => (
+        <div key={s.id} id={s.id} className="scroll-mt-24 mb-12">
+          <h2 className="section-heading mb-3">{s.title}</h2>
+          {s.intro && (
+            <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-4">{s.intro}</p>
+          )}
+          {s.node}
+        </div>
+      ))}
+
 
       <div id="overview" className="scroll-mt-24">
         <h2 className="section-heading mb-3">What is Tirzepatide?</h2>
@@ -723,7 +734,7 @@ export default function TirzepatidePage() {
         </div>
       </div>
 
-      {sections.map((s) => (
+      {sections.filter((s) => s.id !== "where-to-buy").map((s) => (
           <div key={s.id} id={s.id} className="scroll-mt-24 mt-12 border-t-2 border-brand/30 pt-12">
             <h2 className="section-heading mb-3">
               {s.title}
