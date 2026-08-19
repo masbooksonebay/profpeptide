@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { routes } from "@/data/routes";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Footer() {
   return (
@@ -65,6 +66,9 @@ export default function Footer() {
               <li><Link href="/contact" className="hover:text-[#3A759F]">Contact</Link></li>
             </ul>
           </div>
+        </div>
+        <div className="border-t border-[#D9DEE4] dark:border-slate-700 pt-8 pb-8">
+          <NewsletterSignup />
         </div>
         <div className="border-t border-[#D9DEE4] dark:border-slate-700 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-xs text-gray-400 dark:text-slate-500">
