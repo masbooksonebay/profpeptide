@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const DESTINATION_EMAIL = "profpeptide@gmail.com";
-const FROM_ADDRESS = "Prof. Peptide <onboarding@resend.dev>";
+const FROM_ADDRESS = "Prof. Peptide <contact@mail.profpeptide.com>";
 
 const CATEGORY_LABELS: Record<string, string> = {
   "peptide-supplement": "Question about a peptide or supplement",
