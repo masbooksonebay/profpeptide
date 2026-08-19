@@ -7,6 +7,7 @@ import { indexablePriceCount } from "@/data/prices";
 import { profileCount, appPeptideFloor } from "@/data/peptideCategories";
 import { routes } from "@/data/routes";
 import HeroSearch from "@/components/HeroSearch";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 // Every count on this page is DERIVED from its single source of truth so it can't drift:
 // profileCount / appPeptideFloor from the library taxonomy, vendors from
@@ -256,6 +257,17 @@ export default function Home() {
               </p>
               <Link href="/app" className="btn-primary text-sm w-full text-center block">Get the App</Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter signup band — the elevated homepage placement (the footer keeps its own
+          compact form for the other 467 pages). Reuses NewsletterSignup with variant="card" so
+          there is ONE form and ONE submit path; the card gives it Get-the-App visual weight. */}
+      <section className="bg-white dark:bg-[#0f172a] border-t border-gray-100 dark:border-slate-800">
+        <div className="section">
+          <div className="panel-card p-8 sm:p-10 max-w-3xl mx-auto">
+            <NewsletterSignup variant="card" />
           </div>
         </div>
       </section>
