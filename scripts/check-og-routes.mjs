@@ -42,13 +42,17 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 const REQUIRED = ["opengraph-image.tsx", "twitter-image.tsx"];
 
-// Retired coupon slugs, from the generated { slug, retired }[] registry (gen-vendor-slugs.mjs).
-// News articles are never "retired", so this map only affects coupon pages.
-const retiredSlugs = new Set(
-  JSON.parse(readFileSync(join(root, "src/data/vendors.slugs.json"), "utf8"))
-    .filter((v) => v.retired)
-    .map((v) => v.slug),
-);
+// Retired coupon slugs, parsed straight from the COMMITTED src/data/vendors.ts. Do NOT read
+// vendors.slugs.json here — it is gitignored AND generated later in the build chain (by
+// gen-vendor-slugs.mjs, which runs AFTER this guard), so on a fresh Vercel clone it does not
+// exist yet and readFileSync would ENOENT the build. Same top-level-entry regex to_prices.py
+// uses: each `  "slug": { … },` block, flagged retired if its body contains `retired: true`.
+// News articles are never "retired", so this only affects coupon pages.
+const vendorsTs = readFileSync(join(root, "src/data/vendors.ts"), "utf8");
+const retiredSlugs = new Set();
+for (const m of vendorsTs.matchAll(/^ {2}"([a-z0-9-]+)":\s*\{([\s\S]*?)^ {2}\},/gm)) {
+  if (/\bretired:\s*true\b/.test(m[2])) retiredSlugs.add(m[1]);
+}
 
 // Every per-item page that wants its OWN card needs both route files. Coupon pages
 // (generateCouponOg) and news ARTICLE pages (generateNewsOg) both qualify — each is a
