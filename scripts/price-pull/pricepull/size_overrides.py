@@ -83,10 +83,6 @@ SIZE_OVERRIDE = {
     "synthesis-peptides": {
         "GHK-Cu": None,  # profile
     },
-    # purerx-peptides — 1 size-less
-    "purerx-peptides": {
-        "GHK-Cu": None,  # profile
-    },
     # biopure-peptides — 1 size-less
     "biopure-peptides": {
         "Kisspeptin-10": None,  # profile

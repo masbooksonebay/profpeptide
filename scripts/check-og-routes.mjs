@@ -1,4 +1,4 @@
-// scripts/check-og-routes.mjs — the missing-OG-route guard.
+// scripts/check-og-routes.mjs — the OG-route guard (retired-aware).
 //
 // Every per-vendor coupon page (src/app/coupons/<slug>/page.tsx) must ship its OWN
 // file-based OpenGraph + Twitter image routes (opengraph-image.tsx + twitter-image.tsx,
@@ -10,17 +10,31 @@
 // shipped route-less (created in e64c095, never given routes) until they were retrofitted
 // in 0db7913 — three pages, found by eye, never counted. This makes the class loud.
 //
-// Pure LOCAL analysis — a directory listing. No network. Safe on every build.
+// ── RETIRED VENDORS ARE THE INVERSE ────────────────────────────────────────────────
+// A retired vendor whose coupon page.tsx is KEPT (it redirect()s to /coupons — fusion and
+// synthesis do this) must NOT ship image routes: opengraph-image.tsx / twitter-image.tsx are
+// independent route segments that the page.tsx redirect and the next.config `/coupons/<slug>{/}?`
+// redirect DO NOT cover (the redirect matches the bare path + trailing slash, never the
+// `/opengraph-image` sub-segment). So the image route stays live and crawlable — an orphan.
+// fusion-peptide's opengraph-image was still being crawled weeks after retirement precisely
+// because the OLD version of this guard REQUIRED those files with no retired exemption, so the
+// orphan couldn't be deleted without failing the build. This guard now enforces the opposite for
+// retired vendors, and additionally requires the page.tsx redirect so the coupon page can't rot
+// into a live dead page. A PERMANENT removal deletes the whole dir (nordic/apollo/purerx) and is
+// never scanned here; only retired-with-kept-dir vendors hit these rules.
 //
-// FAILS (exit 1) when a coupon page directory is missing opengraph-image.tsx and/or
-// twitter-image.tsx. There is no allowlist: the routes are one-line wrappers around
-// generateCouponOg(slug) and every coupon page legitimately needs both. The coupons INDEX
-// (src/app/coupons/page.tsx) is not a vendor page and is not checked.
+// Pure LOCAL analysis — a directory listing + a redirect() substring check + the generated
+// vendors.slugs.json registry. No network. Safe on every build.
+//
+// FAILS (exit 1) when:
+//   • an ACTIVE coupon page (or any news article) is missing opengraph-image.tsx / twitter-image.tsx
+//   • a RETIRED coupon page still HAS either image route (the orphan), or
+//   • a RETIRED coupon page's page.tsx has no redirect() (a live dead page)
 //
 // Run:  npm run check:og-routes
-// Exit: 0 = every coupon page has both routes; 1 = at least one is missing a route.
+// Exit: 0 = every page is in its correct state; 1 = at least one violation.
 
-import { readdirSync, existsSync, statSync } from "node:fs";
+import { readdirSync, existsSync, statSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -28,40 +42,69 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 const REQUIRED = ["opengraph-image.tsx", "twitter-image.tsx"];
 
+// Retired coupon slugs, from the generated { slug, retired }[] registry (gen-vendor-slugs.mjs).
+// News articles are never "retired", so this map only affects coupon pages.
+const retiredSlugs = new Set(
+  JSON.parse(readFileSync(join(root, "src/data/vendors.slugs.json"), "utf8"))
+    .filter((v) => v.retired)
+    .map((v) => v.slug),
+);
+
 // Every per-item page that wants its OWN card needs both route files. Coupon pages
 // (generateCouponOg) and news ARTICLE pages (generateNewsOg) both qualify — each is a
 // slug directory with a page.tsx. The /news hub's page.tsx sits directly in src/app/news
 // (not a subdirectory), so it isn't scanned here; it ships its own routes separately.
 const BASES = [
-  { label: "coupon page", dir: join(root, "src/app/coupons"), gen: "generateCouponOg" },
-  { label: "news article", dir: join(root, "src/app/news"), gen: "generateNewsOg" },
+  { label: "coupon page", dir: join(root, "src/app/coupons"), gen: "generateCouponOg", retireAware: true },
+  { label: "news article", dir: join(root, "src/app/news"), gen: "generateNewsOg", retireAware: false },
 ];
 
 const offenders = [];
 let total = 0;
-for (const { label, dir, gen } of BASES) {
+for (const { label, dir, gen, retireAware } of BASES) {
   const slugs = readdirSync(dir).filter((name) => {
     const d = join(dir, name);
     return statSync(d).isDirectory() && existsSync(join(d, "page.tsx"));
   });
   for (const slug of slugs.sort()) {
     total++;
+    const present = REQUIRED.filter((f) => existsSync(join(dir, slug, f)));
     const missing = REQUIRED.filter((f) => !existsSync(join(dir, slug, f)));
-    if (missing.length) offenders.push({ slug: `${label} ${slug}`, missing, gen });
+
+    if (retireAware && retiredSlugs.has(slug)) {
+      // Retired: MUST NOT have image routes, and page.tsx MUST redirect.
+      if (present.length) {
+        offenders.push({ slug: `${label} ${slug}`, kind: "retired-has-routes", detail: present.join(" + ") });
+      }
+      const pageSrc = readFileSync(join(dir, slug, "page.tsx"), "utf8");
+      if (!/\bredirect\s*\(/.test(pageSrc)) {
+        offenders.push({ slug: `${label} ${slug}`, kind: "retired-no-redirect", detail: "page.tsx" });
+      }
+    } else if (missing.length) {
+      // Active: MUST have both routes.
+      offenders.push({ slug: `${label} ${slug}`, kind: "active-missing-routes", detail: missing.join(" + "), gen });
+    }
   }
 }
 
 if (offenders.length) {
-  console.error(`\ncheck:og-routes FAILED — ${offenders.length} page(s) missing an OG/Twitter route.`);
-  for (const { slug, missing, gen } of offenders) {
-    console.error(`    • ${slug} — missing ${missing.join(" + ")} (wrap ${gen}("<slug>"))`);
+  console.error(`\ncheck:og-routes FAILED — ${offenders.length} violation(s).`);
+  for (const o of offenders) {
+    if (o.kind === "active-missing-routes") {
+      console.error(`    • ${o.slug} — ACTIVE, missing ${o.detail} (wrap ${o.gen}("<slug>"))`);
+    } else if (o.kind === "retired-has-routes") {
+      console.error(`    • ${o.slug} — RETIRED, must DELETE ${o.detail} (live crawlable OG orphan; the redirect doesn't cover it)`);
+    } else if (o.kind === "retired-no-redirect") {
+      console.error(`    • ${o.slug} — RETIRED, page.tsx has no redirect() (live dead page — add redirect("/coupons"))`);
+    }
   }
   console.error(
-    `  Each item page needs opengraph-image.tsx AND twitter-image.tsx (one-line wrappers around\n` +
-    `  generateCouponOg / generateNewsOg). Without them the page falls back to the site-wide\n` +
-    `  og-image.png default instead of its own card. Copy the routes from any sibling page.`,
+    `  Active item pages need opengraph-image.tsx AND twitter-image.tsx (wrappers around\n` +
+    `  generateCouponOg / generateNewsOg). Retired coupon pages must have NEITHER (they leak a\n` +
+    `  crawlable OG image the redirect can't catch) and MUST redirect(). Permanent removals delete\n` +
+    `  the whole dir instead.`,
   );
   process.exit(1);
 }
 
-console.log(`check:og-routes OK — all ${total} coupon + news-article pages ship their own OpenGraph + Twitter card routes.`);
+console.log(`check:og-routes OK — ${total} coupon + news-article page(s): active pages ship both card routes, retired pages carry none and redirect.`);

@@ -193,7 +193,6 @@ const sections = [
         <VendorHighlightBlock compoundSlug="cardiogen"
           highlights={[
             { slug: "peptides-gg", note: "Per-batch COAs" },
-            { slug: "purerx-peptides", note: "Same-day dispatch (order by 2:30pm CST)" },
             { slug: "peptidology", note: "ISO 17025 lab · batch COAs" },
             { slug: "biolongevity-labs", note: "Per-batch COAs" },
           ]}

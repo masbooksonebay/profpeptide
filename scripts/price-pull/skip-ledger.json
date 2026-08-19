@@ -40,11 +40,11 @@
       "recheck": true
     },
     "purerx-peptides": {
-      "category": "transient",
-      "reason": "HTTP 503 Service Unavailable on the Store API. Likely transient — retry next run.",
+      "category": "permanent",
+      "reason": "Affiliate program discontinued 2026-08-19 — vendor permanently removed from the site (registry entry, price rows, master-doc section, LISTED, pipeline entries and coupon dir all deleted; /coupons/purerx-peptides 308-redirects to the hub). Do NOT re-onboard without a new affiliate agreement.",
       "first_seen": "2026-08-16",
-      "last_seen": "2026-08-16",
-      "recheck": true
+      "last_seen": "2026-08-19",
+      "recheck": false
     },
     "nova-labs": {
       "category": "currency",

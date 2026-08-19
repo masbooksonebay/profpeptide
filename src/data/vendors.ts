@@ -461,16 +461,6 @@ export const vendors: Record<string, Vendor> = {
     facts: { coa: "library", labName: "Janoshik", testMethods: "HPLC" },
     blockNote: "Third-party tested by Janoshik",
   },
-  "purerx-peptides": {
-    name: "PureRx Peptides",
-    code: "PROFPEPTIDE",
-    discount: "15% off",
-    region: "US",
-    url: "https://purerxpeptides.com/?ref=urunwnog",
-    detailPage: "/coupons/purerx-peptides",
-    facts: { labName: "Accumark Labs, Forever Young Analytics", testMethods: "HPLC" },
-    blockNote: "Same-day dispatch (order by 2:30pm CST)",
-  },
   "peptides-gg": {
     name: "Peptides.gg",
     code: "PROF15",
