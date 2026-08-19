@@ -16,10 +16,17 @@ no Notion IDs, no per-vendor referral URLs. The raw commission figures stay out 
   vendor-confirmed only · `UNVERIFIED` = reachable, no signature · `UNREACHABLE` = 403/wall.
 
 > 🔴 **Failure-cluster note.** The confirmed/suspected binding failures do **not** share one
-> platform. Spartan = Post Affiliate Pro (code unbound, confirmed 2026-08-10). Ignite = AffiliateWP.
-> Almighty = Solid Affiliate + AffiliateWP. Fingerprinting does **not** predict binding failure —
-> the same platforms (AffiliateWP, GoAffPro) also back fully-working proven vendors. Binding is a
-> per-vendor configuration fact, verified only by a portal/coupon check, not by platform.
+> platform. Spartan = Post Affiliate Pro (code unbound, confirmed first-hand 2026-08-10).
+> Almighty = Solid Affiliate + AffiliateWP ($0 on high traffic). Fingerprinting does **not** predict
+> binding failure — the same platforms (AffiliateWP, GoAffPro) also back fully-working proven
+> vendors. Binding is a per-vendor configuration fact, verified only by a portal/coupon check, not
+> by platform.
+>
+> **Correction 2026-08-19:** Ignite (AffiliateWP) was previously named here as a binding failure on a
+> speculative "PAP cluster" hypothesis that contradicted its own AffiliateWP fingerprint — and the
+> ledger's own $36.45 "resolved" entry was discounted as stale. Antonio (Ignite) confirmed first-hand
+> that PROF10 credits (acct 5024, used 3×, paid out); Ignite is now **PROVEN**. The speculative-cluster
+> reasoning — grouping vendors by an assumed platform rather than per-vendor evidence — is the error.
 
 ## PROVEN (recorded commission)
 | slug | status | comm. tier | platform | conf. |
@@ -37,6 +44,7 @@ no Notion IDs, no per-vendor referral URLs. The raw commission figures stay out 
 | vital-core-research | proven | <$100 | GoAffPro | HIGH |
 | integrative-peptides | proven | <$100 | AffiliateWP | HIGH |
 | limitless-biotech | proven | <$100 | **Everflow** 🔴 | HIGH |
+| ignite-peptides | proven | <$100 | AffiliateWP | HIGH (vendor-confirmed 2026-08-19; restored from CUT — see correction note above) |
 
 ## GRACED (new; live code, no conversion yet)
 | slug | status | comm. tier | platform | conf. |
@@ -54,7 +62,6 @@ no Notion IDs, no per-vendor referral URLs. The raw commission figures stay out 
 | slug | status | comm. tier | platform | conf. | why cut |
 |---|---|---|---|---|---|
 | spartan-peptides | cut | <$100 (ledger) | **Post Affiliate Pro** | HIGH | code not bound (confirmed 2026-08-10) |
-| ignite-peptides | cut | <$100 (ledger) | AffiliateWP | HIGH | no coupon binding in portal |
 | almighty-peptides | cut | none | Solid Affiliate + AffiliateWP | HIGH | $0 on high traffic; no coupon binding |
 | behemoth-labz | cut | none | AffiliateWP | HIGH | $0 recorded |
 | purerawz | cut | none | UNREACHABLE (403) | — | $0 recorded |

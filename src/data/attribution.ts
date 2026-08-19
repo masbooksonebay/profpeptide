@@ -32,6 +32,15 @@
 // biolongevity-labs — PROVEN from portal config AND conversion data (TUNE, PROFPEPTIDE in Offer
 //   Details → Promo Codes; 4 of 4 conversions code-attributed). Verified 2026-08-11; moved up
 //   from GRACED once its binding + attribution were confirmed.
+// ignite-peptides — RESTORED from CUT 2026-08-19 on first-hand vendor confirmation. Antonio at
+//   Ignite confirmed by email that PROF10 is bound to Mark's affiliate account 5024, credits
+//   WITHOUT a click, and has been used 3× (paid out). WHY THE ORIGINAL CUT WAS WRONG: it rested on
+//   a speculative "Post Affiliate Pro cluster" hypothesis (almighty + spartan + ignite all on PAP)
+//   — but Ignite's OWN fingerprint is AffiliateWP, not PAP (the premise contradicted its own data),
+//   and the ledger already recorded $36.45 "resolved" for it, which the cut discounted as stale.
+//   The cut note itself said to revisit on fresh first-hand confirmation; this is it. AffiliateWP,
+//   <$100 recorded, HIGH conf. (Code switch PROF10 → PROFPEPTIDE is HELD separately, pending
+//   Antonio confirming PROF10 still credits post-switch — see the coupon page + vendors.ts.)
 const PROVEN_LIST = [
   "peptide-partners",
   "amino-club",
@@ -47,6 +56,7 @@ const PROVEN_LIST = [
   "integrative-peptides",
   "limitless-biotech",
   "biolongevity-labs",
+  "ignite-peptides",
 ];
 export const PROVEN = new Set<string>(PROVEN_LIST);
 
@@ -93,10 +103,13 @@ export const LISTED = new Set<string>(PROVEN_LIST.concat(GRACED_LIST));
 //                        the code works at checkout and credits nobody. Newer first-hand
 //                        info wins over the 5-week-stale ledger. DO NOT restore from the
 //                        ledger's "RESOLVED."
-//   ignite-peptides    — Ledger (Jul 4) also marks "resolved" ($36.45). Cut as part of the
-//                        same suspected Post Affiliate Pro cluster (almighty + spartan +
-//                        ignite all on PAP would explain the whole unbound cluster). Revisit
-//                        only on fresh first-hand confirmation, not the stale ledger.
+//   ignite-peptides    — ✅ RESTORED TO PROVEN 2026-08-19 (moved to PROVEN_LIST above). The
+//                        original cut was a REASONING ERROR, recorded here so it stays visible:
+//                        it assumed Ignite was in a "Post Affiliate Pro cluster," but Ignite's
+//                        fingerprint is AffiliateWP (not PAP) — the cluster premise contradicted
+//                        its own data — and it ignored the ledger's own $36.45 "resolved" entry
+//                        as "stale." Antonio (Ignite) confirmed first-hand: PROF10 bound to acct
+//                        5024, credits without a click, used 3×, paid out.
 //   behemoth-labz      — $0 recorded (code PROF10). Not promoted.
 //   purerawz           — $0 recorded, early-stage. Not promoted.
 //   particle-peptides  — binding UNCONFIRMED + prices non-USD (EUR). Not promoted.
@@ -108,7 +121,6 @@ export const LISTED = new Set<string>(PROVEN_LIST.concat(GRACED_LIST));
 export const CUT_FOR_REFERENCE = [
   "almighty-peptides",
   "spartan-peptides",
-  "ignite-peptides",
   "behemoth-labz",
   "purerawz",
   "particle-peptides",
