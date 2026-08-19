@@ -65,7 +65,6 @@ export const couponLead: Record<string, string> = {
   "particle-peptides": "Liquilabs full-panel COAs, Ph. Eur. limits", // A
   "peptide-partners": "Four independent batch tests, published COAs", // D (multi-lab)
   "peptide-giants": "Every batch Janoshik-tested, public reports", // A
-  "purerx-peptides": "HPLC COAs; Accumark lot verifiable", // D (multi-lab)
   "peptides-gg": "Freedom Diagnostics per-batch COAs, US-made", // A
   "purerawz": "MZ Biolabs per-batch COAs; peptides, SARMs & more", // A
   "purity-peptides": "99%+ HPLC/mass-spec, third-party COAs", // C

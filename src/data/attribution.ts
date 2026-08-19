@@ -60,7 +60,6 @@ export const PROVEN = new Set<string>(PROVEN_LIST);
 const GRACED_LIST = [
   "ameano-peptides",
   "peptide-giants",
-  "purerx-peptides",
   "peptidology",
   "aero-peptides",
   "treasure-coast-peptides",

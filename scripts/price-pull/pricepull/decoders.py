@@ -483,13 +483,7 @@ def _spartan(n):
     if re.match(r'GLP-3\s*\(\s*Reta', n, re.I): return (_c('Retatrutide', 'GLP-3(Reta)'), 'retatrutide', 'single')
 
 
-@_decoder('purerx-peptides')  # self-identifying: PureRx's OWN product descriptions name the compound
-# ("Reta 60mg" desc says Retatrutide, "Tirz" -> Tirzepatide, "Sema" -> Semaglutide). Verified from the
-# page, not decoded by analogy — the abbreviation is a truncation the description spells out in full.
-def _purerx(n):
-    if re.match(r'Reta\b', n, re.I): return (_c('Retatrutide', 'Reta'), 'retatrutide', 'single')
-    if re.match(r'Tirz\b', n, re.I): return (_c('Tirzepatide', 'Tirz'), 'tirzepatide', 'single')
-    if re.match(r'Sema\b', n, re.I): return (_c('Semaglutide', 'Sema'), 'semaglutide', 'single')
+# purerx-peptides decoder REMOVED 2026-08-19 — affiliate program discontinued (permanent exit).
 
 
 @_decoder('peptide-giants')  # PG-3RT VERIFIED = Retatrutide — the Janoshik identity report names

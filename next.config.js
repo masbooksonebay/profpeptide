@@ -159,6 +159,15 @@ const nextConfig = {
         destination: "/coupons",
         permanent: true,
       },
+      // REMOVED 2026-08-19: PureRx Peptides — affiliate program discontinued. Full removal
+      // (nordic/apollo pattern): registry entry, price rows (master doc + generated), LISTED,
+      // pipeline entries and the whole coupons/purerx-peptides dir deleted; this redirect
+      // consolidates the residual link equity from its indexed page.
+      {
+        source: "/coupons/purerx-peptides{/}?",
+        destination: "/coupons",
+        permanent: true,
+      },
       // Normalize ANY trailing-slash URL to its canonical no-trailing-slash form
       // with a single clean 301. Kept LAST so the specific redirects above match
       // first; pairs with skipTrailingSlashRedirect above.

@@ -208,16 +208,7 @@ VENDORS = {
               "Locked Rule 4 — MA's blends (Cartalax Blend, GHK-Cu/KPV, Glow, KLOW, 4x, MOTS-C/5-Amino) route to the "
               "blend track; SARMs/nootropics/supplements/topicals/insurance drop via the scope filter."),
     # ---- batch 4 ----
-    "purerx-peptides": dict(name="PureRx Peptides", domain="purerxpeptides.com", adapter="woo",
-        variation_model="dosage", coded_decoder=True,
-        sale_posture="Check product-level sale_price each refresh; PP code stacks.",
-        notes="Onboarded 2026-08. WooCommerce, Store API readable (62 products, 1 page); mg in NAME. "
-              "GLP abbreviations decode from the vendor's OWN product descriptions (self-identifying, NOT by "
-              "analogy): Reta=Retatrutide, Tirz=Tirzepatide, Sema=Semaglutide (each desc names the compound). "
-              "Bioregulators (Cardiogen/Cortagen/Pinealon/Vilon/Testagen/Ovagen/Cartalax) + backlog metabolics "
-              "(Survodutide, Mazdutide, SLU-PP-332) carried; PNC-27/P21/Lipo-C/AHK-Cu scope-filtered. "
-              "'IGF1-IR3' is a vendor typo for IGF-1 LR3 (I-for-L) — excluded unless aliased. Query-param "
-              "affiliate (?ref) -> deep links once slugs captured."),
+    # purerx-peptides REMOVED 2026-08-19 — affiliate program discontinued (permanent exit).
     "peptide-giants": dict(name="Peptide Giants", domain="peptidegiants.com", adapter="woo",
         variation_model="dosage", coded_decoder=True,
         sale_posture="Check product-level sale_price each refresh; PP code stacks.",
