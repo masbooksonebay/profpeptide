@@ -36,6 +36,13 @@ const VERIFIED_SET = new Set(VENDORS_VERIFIED_SLUGS);
  * WHICH vendors were reachable (VENDORS_VERIFIED_SLUGS), not just the date — a vendor whose
  * link was dead is excluded, so its coupon page must NOT display a verified date claiming a
  * verification it didn't get. Gate the visible "✓ Code verified …" badge on this.
+ *
+ * 🔴 KNOWN GAP (queued 2026-08-19) — the CouponCodeCard salience passage ("…coupon code is verified
+ * as of {CODES_VERIFIED_DATE}…") does NOT yet call this gate: it renders for any slug in
+ * COUPON_SENTENCE_VENDORS. So if a NEXT check:vendors run drops a vendor from VERIFIED_SET (dead
+ * link), its pill hides but its salience SENTENCE still asserts "verified as of …" — a false claim.
+ * FIX: gate `showSentence` in CouponCodeCard.tsx on isCodeVerified(slug) too. Harmless today (all
+ * opted-in vendors are verified); it bites the first run that drops one of them.
  */
 export function isCodeVerified(slug: string): boolean {
   return VERIFIED_SET.has(slug);
