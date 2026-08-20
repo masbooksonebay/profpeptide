@@ -64,10 +64,13 @@ export function CouponCodeCard({
       <CopyCode code={v.code} size="large" />
       {/* Only the verified pill — the discount is already in the H1 ("Save X%") right above. */}
       <CouponPills slug={slug} discount={false} />
+      {/* Phase-1 tracked redirect: the Shop button routes through /go/{slug}?from=coupon-card,
+          which counts the click in KV (fire-and-forget) then 302s to the vendor's affiliate URL
+          verbatim. shopHref, if ever passed, still links direct (untracked) — no card passes it today. */}
       <a
-        href={shopHref ?? v.url}
+        href={shopHref ?? `/go/${slug}?from=coupon-card`}
         target="_blank"
-        rel="noopener noreferrer sponsored"
+        rel="sponsored nofollow noopener"
         className="btn-primary w-full text-center block"
       >
         {shopLabel ?? `Shop ${v.name}`}</a>

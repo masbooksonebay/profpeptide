@@ -125,6 +125,12 @@ const newsDates = (() => {
 module.exports = {
   siteUrl: "https://profpeptide.com",
   generateRobotsTxt: true,
+  // Keep non-content endpoints out of the crawl: /go/ is the tracked affiliate redirector (also
+  // sends X-Robots-Tag: noindex per response) and /api/ is server routes — neither should be
+  // indexed or followed. Everything else stays allowed.
+  robotsTxtOptions: {
+    policies: [{ userAgent: "*", allow: "/", disallow: ["/go/", "/api/"] }],
+  },
   trailingSlash: false,
   // autoLastmod: false stops next-sitemap injecting the build-time default. lastmod is added
   // per-entity in transform()/additionalPaths() — see the note above module.exports.
