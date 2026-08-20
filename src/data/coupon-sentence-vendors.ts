@@ -28,4 +28,35 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // Added 2026-08-16 as SEPARATE cohorts (see docs/PP_COUPON_SALIENCE_EXPERIMENT.md):
   "nura-peptide",       // vendor page never ranked (the /coupons hub did) — tests if it surfaces at all
   "capstone-peptides",  // never crawled — indexed WITH the treatment from the start, no baseline
+  // ── NON-RANKING ROLLOUT 2026-08-19 (23 slugs) ──────────────────────────────────────────────
+  // The 22 non-ranking pages + the legendary pilot got the other four changes (H1 code, facts line
+  // removed, FAQ "coupon code", domain in the first paragraph) in main 76d79db, but WITHOUT this
+  // passage — so they shipped briefly as a 4-of-5 variant. Adding them here restores change #2 for
+  // FULL PARITY with the 7 above (the passage is component-rendered, invisible in page.tsx — which
+  // is exactly why the earlier "the 7 are H1→card→prose" read missed it). All 23 were in the
+  // 2026-08-19 check:vendors verified set, so "verified as of {CODES_VERIFIED_DATE}" is true for
+  // each. The four salience CONTROLS (almighty, spartan, royal, amino-x) are NOT here — excluded.
+  "99-purity-peptides",
+  "alpha-peptides",
+  "amp-peptides",
+  "behemoth-labz",
+  "biolongevity-labs",
+  "crush-research",
+  "improved-peptides",
+  "integrative-peptides",
+  "ion-peptide",
+  "la-peptides",
+  "legendary-peptides",
+  "licensed-peptides",
+  "limitless-biotech",
+  "nextgen-peptides",
+  "nova-labs",
+  "peptide-giants",
+  "peptides-gg",
+  "purity-peptides",
+  "science-based-peptides",
+  "swiss-chems",
+  "treasure-coast-peptides",
+  "valkyrie-peptides",
+  "vital-core-research",
 ]);

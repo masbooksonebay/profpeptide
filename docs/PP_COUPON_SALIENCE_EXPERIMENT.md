@@ -116,8 +116,25 @@ with it — the control group was ALREADY compromised: only `royal` had a valid 
 baseline, and even its ranked URL changed between rounds. The series is WEAK, not clean. But treating
 the controls turns it from weak into UNREADABLE, so they stay out regardless.
 
-**Treatment structure (corrected 2026-08-19):** the rollout matches the 7 already-treated pages
-exactly — H1 (with code) → CouponCodeCard → prose. There is NO "sentences above the card" element (an
-earlier spec draft had one; dropped — the positive result came from the H1→card→prose structure). The
-vendor domain and any relocated region fact (e.g. legendary's "US-based") live in the FIRST prose
-paragraph BELOW the card, Capstone-pattern.
+**Treatment structure (this paragraph was WRONG — superseded by "Full parity" below):** the rollout
+FIRST shipped as H1 (with code) → CouponCodeCard → prose, on the belief the 7 had "no sentences above
+the card." That belief was false: the 7 render a two-sentence passage ABOVE the card via
+COUPON_SENTENCE_VENDORS (component-rendered by CouponCodeCard, invisible in page.tsx source), so the
+rollout was briefly a 4-of-5 variant. Corrected the same day — see "Full parity for the 23" below. What
+IS unchanged and correct: the vendor domain and any relocated region fact (e.g. legendary's "US-based")
+live in the FIRST prose paragraph BELOW the card, Capstone-pattern.
+
+## Full parity for the 23 (2026-08-19, same day)
+
+Sequence — deliberately recorded, not smoothed over (timing matters if the next SERP round moves):
+1. **main 76d79db** — the 23 non-ranking pages (22 + legendary pilot) shipped with **4 of the 5
+   changes**: H1 code, facts line removed, FAQ "coupon code", domain in the first paragraph. They
+   LACKED change #2 (the two-sentence salience passage) — a brief **4-of-5 variant**. Cause: the
+   pilot correction dropped #2 on the belief "the 7 are H1→card→prose," but the 7's passage is
+   component-rendered via COUPON_SENTENCE_VENDORS (invisible in page.tsx source) — both reads missed it.
+2. **[this change]** — added all 23 slugs to `src/data/coupon-sentence-vendors.ts`, restoring change
+   #2. The 23 are now **full 5-of-5 parity** with the 7. One data file drives it; no page edits (that
+   is the component-toggle design). All 23 were in the 2026-08-19 check:vendors verified set, so the
+   passage's "verified as of {CODES_VERIFIED_DATE}" (August 2026) is true for each.
+
+The four salience CONTROLS (almighty, spartan, royal, amino-x) remain excluded from BOTH variables.
