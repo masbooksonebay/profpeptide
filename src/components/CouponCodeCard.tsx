@@ -52,11 +52,30 @@ export function CouponCodeCard({
 }) {
   const v = vendors[slug];
   if (!v) return null;
-  // GATED vendors: the code must not appear on this page's crawlable surfaces. Render the reveal
-  // box (code behind a click, routed through /go/?from=reveal-modal) and DO NOT render the code
-  // box or the salience sentence. See reveal-gate-vendors.ts.
-  if (REVEAL_GATE_VENDORS.has(slug)) return <RevealCodeBox slug={slug} className={className} />;
   const pct = v.discount.match(/(\d+)\s*%/)?.[1];
+  // GATED vendors (reveal-gate-vendors.ts): the CODE must not appear on any crawlable surface, so
+  // render the reveal box (code behind a click, routed through /go/?from=reveal-modal) instead of
+  // the code box. But KEEP the two-sentence salience passage — its job is giving Google a
+  // snippet-worthy passage; only the code had to leave it. S1 uses a GATED, code-free,
+  // POSITION-NEUTRAL variant (no "above"/"below" — the reveal button's position may change and the
+  // sentence must read as a standalone snippet); S2 is byte-identical to the standard pair (it names
+  // "coupon code" generically, never the code string). All three gated pages render this pair so a
+  // future SERP round can't confuse the gate effect with a copy-length effect. Sentence gated only
+  // on `sentence && pct` (not COUPON_SENTENCE_VENDORS) so every gated page carries it.
+  // NOTE (queue item 8, left in place per scope): S2 asserts "verified as of {month}" without calling
+  // isCodeVerified(slug) — the same site-wide defect flagged at src/data/codes-verified.ts. Not fixed here.
+  if (REVEAL_GATE_VENDORS.has(slug)) {
+    return (
+      <>
+        {sentence && pct != null && (
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+            Reveal your Prof. Peptide code to save {pct}% at {v.name} on your order. The {v.name} coupon code is verified as of {CODES_VERIFIED_DATE} and gives you a {pct}% discount at checkout.
+          </p>
+        )}
+        <RevealCodeBox slug={slug} className={className} />
+      </>
+    );
+  }
   const showSentence = sentence && COUPON_SENTENCE_VENDORS.has(slug) && pct != null;
   return (
     <>
