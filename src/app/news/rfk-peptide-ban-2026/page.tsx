@@ -2,22 +2,23 @@ import Link from "next/link";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
+import ArticleCorrection from "@/components/ArticleCorrection";
 
 export const metadata = {
   alternates: { canonical: "/news/rfk-peptide-ban-2026" },
   title: "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List | Prof. Peptide",
   description:
-    "HHS Secretary Robert F. Kennedy Jr. announced that 14 of 19 previously restricted peptides will be moved off the FDA\u2019s \u201Cdo not compound\u201D list \u2014 the largest regulatory reversal in U.S. peptide history.",
+    "HHS Secretary Robert F. Kennedy Jr. announced an intent to move about 14 of 19 restricted peptides off the FDA\u2019s Category 2 \u201Cdo not compound\u201D list \u2014 but removal from Category 2 is not placement in Category 1, and no peptide is yet confirmed legally compoundable.",
   openGraph: {
     title: "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List",
-    description: "14 of 19 restricted peptides will be moved off the FDA\u2019s \u201Cdo not compound\u201D list \u2014 the largest regulatory reversal in U.S. peptide history.",
+    description: "RFK Jr. announced an intent to move about 14 of 19 peptides off the FDA\u2019s Category 2 \u201Cdo not compound\u201D list \u2014 but removal from Category 2 is not Category 1 placement, and none is yet confirmed compoundable.",
     url: "https://profpeptide.com/news/rfk-peptide-ban-2026",
     // No images here: the file-based opengraph-image.tsx provides the per-article card.
   },
   twitter: {
     card: "summary_large_image" as const,
     title: "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List",
-    description: "14 of 19 restricted peptides coming off the FDA restricted list.",
+    description: "RFK Jr. announced an intent to move about 14 of 19 peptides off the FDA’s Category 2 list — removal from Category 2 is not Category 1 placement.",
     // No images here: the file-based twitter-image.tsx provides the per-article card.
   },
 };
@@ -29,8 +30,9 @@ export default function RFKPeptideBanPage() {
         "@context": "https://schema.org",
         "@type": "NewsArticle",
         "headline": "RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List",
-        "description": "HHS Secretary Robert F. Kennedy Jr. announced that 14 of 19 previously restricted peptides will be moved off the FDA\u2019s \u201Cdo not compound\u201D list.",
+        "description": "HHS Secretary Robert F. Kennedy Jr. announced an intent to move about 14 of 19 restricted peptides off the FDA\u2019s Category 2 \u201Cdo not compound\u201D list; removal from Category 2 is not placement in Category 1, and no peptide is yet confirmed compoundable.",
         "datePublished": "2026-04-10",
+        "dateModified": "2026-08-20",
         "url": "https://profpeptide.com/news/rfk-peptide-ban-2026",
         "publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" },
         "author": {
@@ -50,11 +52,14 @@ export default function RFKPeptideBanPage() {
         </h1>
 
         <div className="space-y-6 text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+          <ArticleCorrection date="August 20, 2026">
+            An earlier version of this article described Secretary Kennedy&rsquo;s February 27 announcement as a completed reclassification that made these peptides eligible for compounding. That was inaccurate. Removing a peptide from the FDA&rsquo;s Category 2 &ldquo;do not compound&rdquo; list is not the same as adding it to Category 1 &mdash; the list of bulk substances a pharmacy may actually compound. The FDA has published no such Category 1 addition, and none of the 19 peptides is confirmed legally compoundable. The announcement remains a statement of intent, not a regulatory action; the article has been corrected to reflect that distinction.
+          </ArticleCorrection>
           <p>
-            In a landmark announcement on February 27, 2026, HHS Secretary Robert F. Kennedy Jr. stated that approximately 14 of the 19 peptides currently on the FDA&rsquo;s Category 2 &ldquo;do not compound&rdquo; list would be reclassified &mdash; making them eligible for legal compounding through licensed pharmacies once again.
+            In an announcement on February 27, 2026, HHS Secretary Robert F. Kennedy Jr. stated that approximately 14 of the 19 peptides currently on the FDA&rsquo;s Category 2 &ldquo;do not compound&rdquo; list would be removed from that list. Removing a peptide from Category 2 is not the same as adding it to Category 1 &mdash; the list of bulk substances a compounding pharmacy may actually prepare. A peptide becomes eligible for compounding only once the FDA formally adds it to Category 1, and to date none of these compounds has been added.
           </p>
           <p>
-            The announcement, made on the Joe Rogan Experience podcast, represents the single largest reversal of peptide restrictions in U.S. regulatory history.
+            The announcement, made on the Joe Rogan Experience podcast, would mark a significant shift in peptide compounding policy &mdash; but it was a statement of intent, not a completed regulatory action, and as of this writing no peptide has changed compounding status.
           </p>
 
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Background: The 2023 FDA Peptide Ban</h2>
@@ -64,7 +69,7 @@ export default function RFKPeptideBanPage() {
 
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">What RFK Jr. Announced</h2>
           <p>
-            Kennedy indicated that approximately 14 of the 19 restricted peptides would move from Category 2 to Category 1, restoring their eligibility for licensed compounding pharmacies. Compounds expected to be affected include:
+            Kennedy indicated that approximately 14 of the 19 restricted peptides would be removed from Category 2. He framed this as restoring their eligibility for licensed compounding &mdash; but that eligibility depends on the FDA formally adding each compound to the Category 1 bulk-substances list, and to date none of the 19 has been added to Category 1. Compounds named in the announcement include:
           </p>
           <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-slate-300">
             <li><Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link></li>

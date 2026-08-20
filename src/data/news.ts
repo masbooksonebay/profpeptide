@@ -127,7 +127,7 @@ export const articles: NewsArticle[] = [
     peptides: ["bpc-157", "tb-500", "cjc-1295", "semax"],
     date: "April 10, 2026",
     excerpt:
-      "HHS Secretary Robert F. Kennedy Jr. announced that 14 of 19 previously restricted peptides will be moved off the FDA’s “do not compound” list — the largest regulatory reversal in U.S. peptide history.",
+      "HHS Secretary Robert F. Kennedy Jr. announced an intent to move about 14 of 19 restricted peptides off the FDA’s Category 2 “do not compound” list — but removal from Category 2 is not the same as Category 1 placement, and none is yet confirmed compoundable.",
   },
 ];
 
