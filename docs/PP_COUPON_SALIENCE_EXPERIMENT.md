@@ -97,3 +97,27 @@ ceiling — which is why the last two controls slipped a day (below).
 ## Scope invariant
 Seven treated (A: 5, B: 1, C: 1); **43 of 50 coupon pages byte-identical**. Any future rollout must
 keep the four CONTROL slugs untouched until the series concludes.
+
+## Non-ranking rollout + domain addition (decision recorded 2026-08-19)
+
+A rollout of the five-change treatment (+ a sixth: the vendor DOMAIN after its name in the first
+full paragraph, Capstone pattern) to the ~27 pages that do NOT rank with an own-title snippet.
+
+🔴 **The domain addition is a LOW-COST EXPERIMENT, not a validated fix — do not later read it as
+evidence-based.** The Aug-2026 domain audit found the opposite of a signal: the vendor domain was
+already in-prose on ~96–100% of coupon pages (ranked AND not-ranked), and first-sentence placement
+was MORE common among the NOT-ranking group. Domain presence does not separate ranked from
+not-ranked pages. It goes in here only because these pages don't rank anyway and it's cheap to add.
+
+🔴 **CONTROL COLLISION — resolved: the four experiment CONTROLS are EXCLUDED.** The 27-page scope
+as first given included all four (almighty-peptides, spartan-peptides, royal-peptides, amino-x).
+Decision (Mark, 2026-08-19): drop all four; **treatable scope is 23, not 27**. Honest caveat recorded
+with it — the control group was ALREADY compromised: only `royal` had a valid Round-1 stripped
+baseline, and even its ranked URL changed between rounds. The series is WEAK, not clean. But treating
+the controls turns it from weak into UNREADABLE, so they stay out regardless.
+
+**Treatment structure (corrected 2026-08-19):** the rollout matches the 7 already-treated pages
+exactly — H1 (with code) → CouponCodeCard → prose. There is NO "sentences above the card" element (an
+earlier spec draft had one; dropped — the positive result came from the H1→card→prose structure). The
+vendor domain and any relocated region fact (e.g. legendary's "US-based") live in the FIRST prose
+paragraph BELOW the card, Capstone-pattern.

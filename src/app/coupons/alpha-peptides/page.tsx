@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,15 +23,14 @@ export default function AlphaPeptidesCouponPage() {
       <CouponBreadcrumb slug="alpha-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Alpha Peptides Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Alpha Peptides Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="alpha-peptides" />
       <CouponCodeCard slug="alpha-peptides" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Alpha Peptides is a U.S.-based, East Coast research supplier with a peptide-forward catalog of 30+ compounds &mdash; a deep growth-hormone bench alongside GLP-class metabolic research, recovery blends, longevity, cognitive, sleep, and reproductive-health compounds. What it leads on is verifiable testing: rather than resting on a bare purity number, Alpha runs a five-test verification panel per lot at an independent, ISO&nbsp;17025-aligned U.S. laboratory and files a Certificate of Analysis against every lot on a public COA page. Popular compounds by research area:
+            Alpha Peptides (alpha-peptides.com) is a U.S.-based, East Coast research supplier with a peptide-forward catalog of 30+ compounds &mdash; a deep growth-hormone bench alongside GLP-class metabolic research, recovery blends, longevity, cognitive, sleep, and reproductive-health compounds. What it leads on is verifiable testing: rather than resting on a bare purity number, Alpha runs a five-test verification panel per lot at an independent, ISO&nbsp;17025-aligned U.S. laboratory and files a Certificate of Analysis against every lot on a public COA page. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -120,7 +118,7 @@ export default function AlphaPeptidesCouponPage() {
               a="Alpha Peptides is peptide-forward, with a deep growth-hormone bench (CJC-1295 with and without DAC, Ipamorelin, Sermorelin, Tesamorelin, GHRP-2/6, Hexarelin, IGF-1 LR3 and DES, MGF, Follistatin-344). It also carries GLP-class metabolic compounds (Retatrutide, Tirzepatide, Semaglutide and Cagrilintide — listed under coded names like GLP-3 RT, GLP-2 TZ and GLP-1 SM), MOTS-C, AOD-9604 and 5-Amino-1MQ; recovery compounds (BPC-157, TB-500, the BPC-157 + TB-500 blend, KPV); skin and longevity compounds (GHK-Cu, GLOW, KLOW, Melanotan I and II, Glutathione, Epitalon, NAD+, SS-31, Pinealon); cognitive peptides (Semax, Selank, Adamax); DSIP for sleep; reproductive-health compounds (PT-141, Oxytocin, Kisspeptin-10); and immune/signaling compounds (Thymosin Alpha-1, VIP, LL-37, Cibinetide/ARA-290)."
             />
             <FAQItem
-              q="Does Alpha Peptides have a discount code?"
+              q="Does Alpha Peptides have a coupon code?"
               a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your Alpha Peptides order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem

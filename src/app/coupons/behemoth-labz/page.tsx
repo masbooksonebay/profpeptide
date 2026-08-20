@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
@@ -25,15 +24,14 @@ export default function BehemothLabzCouponPage() {
       <CouponBreadcrumb slug="behemoth-labz" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Behemoth Labz Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Behemoth Labz Discount Code: PROF10 &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="behemoth-labz" />
       <CouponCodeCard slug="behemoth-labz" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Behemoth Labz is a US-based research compound supplier founded in 2014 with a focus on SARMs, peptides, nootropics, prohormones, and supplements for scientific research purposes. Based in the United States, Behemoth Labz ships domestically with free shipping on orders over $100 and offers worldwide shipping, making their catalog accessible to researchers globally. Popular compounds by research area:
+            Behemoth Labz (behemothlabz.com) is a US-based research compound supplier founded in 2014 with a focus on SARMs, peptides, nootropics, prohormones, and supplements for scientific research purposes. Based in the United States, Behemoth Labz ships domestically with free shipping on orders over $100 and offers worldwide shipping, making their catalog accessible to researchers globally. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -131,7 +129,7 @@ export default function BehemothLabzCouponPage() {
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What products does Behemoth Labz carry?" a="Behemoth Labz carries research products across SARMs, peptides, nootropics, prohormones, and PCT categories. Their SARMs catalog includes RAD-140, MK-677, LGD-4033, Ostarine, YK-11, S-23, GW-501516, and SR-9009. Nootropics include Noopept, Phenibut, and racetam-class compounds. Their peptide selection includes individual compounds and pre-formulated research blends. Products are available in liquid, capsule, and powder forms. All products are third-party tested by Colmaric Analyticals (Goodlettsville, TN), with published COAs confirming identity and assay by HPLC." />
-            <FAQItem q="Does Behemoth Labz have a discount code?" a={`Yes. Use code PROF10 at checkout to save ${discountPct}% on your entire Behemoth Labz order. This code is verified and maintained by Prof. Peptide and valid as of ${CODES_VERIFIED_DATE}.`} />
+            <FAQItem q="Does Behemoth Labz have a coupon code?" a={`Yes. Use code PROF10 at checkout to save ${discountPct}% on your entire Behemoth Labz order. This code is verified and maintained by Prof. Peptide and valid as of ${CODES_VERIFIED_DATE}.`} />
             <FAQItem q="How do I use the Behemoth Labz discount code?" a={`Add your items to cart at behemothlabz.com, proceed to checkout, and enter PROF10 in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How is Behemoth Labz third-party tested?" a="Every Behemoth Labz product is third-party tested by Colmaric Analyticals LLC, an independent laboratory in Goodlettsville, Tennessee. Its published Certificates of Analysis confirm identity and assay by HPLC and show purity results above 99%." />
             <FAQItem q="Does Behemoth Labz offer free shipping?" a="Yes. Behemoth Labz offers free domestic shipping on US orders over $100. International shipping is available worldwide at additional rates." />

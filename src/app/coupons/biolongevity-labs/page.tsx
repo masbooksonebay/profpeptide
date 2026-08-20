@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -27,15 +26,14 @@ export default function BiolongevityLabsCouponPage() {
       <CouponBreadcrumb slug="biolongevity-labs" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Biolongevity Labs Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Biolongevity Labs Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="biolongevity-labs" />
       <CouponCodeCard slug="biolongevity-labs" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Biolongevity Labs is a U.S.-based manufacturer of research-grade peptides and bioregulators with a broad catalog &mdash; a growth-hormone bench, recovery blends, skin and longevity compounds, cognitive peptides, reproductive and immune-signaling research, and a deep line of Khavinson short-peptide bioregulators. What it leads on is documentation: a public COA library of BioRegen certificates confirming identity and purity by LC-MS, with Biolongevity stating that every batch is verified through three independent certified laboratories before release. Popular compounds by research area:
+            Biolongevity Labs (biolongevitylabs.com) is a U.S.-based manufacturer of research-grade peptides and bioregulators with a broad catalog &mdash; a growth-hormone bench, recovery blends, skin and longevity compounds, cognitive peptides, reproductive and immune-signaling research, and a deep line of Khavinson short-peptide bioregulators. What it leads on is documentation: a public COA library of BioRegen certificates confirming identity and purity by LC-MS, with Biolongevity stating that every batch is verified through three independent certified laboratories before release. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -129,7 +127,7 @@ export default function BiolongevityLabsCouponPage() {
               a="Biolongevity Labs carries a broad research catalog: metabolic compounds (Cagrilintide, MOTS-C, 5-Amino-1MQ); a growth-hormone bench (Ipamorelin, a CJC-1295 no-DAC + Ipamorelin blend, Tesamorelin, a Tesamorelin + Ipamorelin blend, PEG-MGF, Follistatin); recovery compounds (BPC-157, TB-500, the BPC-157 + TB-500 blend, KPV); skin and longevity compounds (GHK-Cu, the GLOW and KLOW blends, Melanotan I, Epitalon — listed as Epithalon — and NAD+); cognitive peptides (N-Acetyl Semax and N-Acetyl Selank Amidate); DSIP for sleep; reproductive-health compounds (PT-141, Kisspeptin-10); immune and signaling compounds (Thymosin Alpha-1, LL-37, Cibinetide — listed as ARA-290); and a deep line of Khavinson short-peptide bioregulators (Cardiogen, Cortagen, Pinealon, Thymogen — listed as Thymagen — among others). It does not list GLP-1 metabolic compounds."
             />
             <FAQItem
-              q="Does Biolongevity Labs have a discount code?"
+              q="Does Biolongevity Labs have a coupon code?"
               a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your Biolongevity Labs order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem

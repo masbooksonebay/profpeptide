@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -41,15 +40,14 @@ export default function NextGenPeptidesCouponPage() {
       <CouponBreadcrumb slug="nextgen-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">NextGen Peptides Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">NextGen Peptides Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="nextgen-peptides" />
       <CouponCodeCard slug="nextgen-peptides" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            NextGen Peptides is a US-based research-peptide supplier that states 75,000+ orders fulfilled, offering research compounds across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator categories in vial, spray, and capsule formats, with same-day US shipping. Popular compounds by research area:
+            NextGen Peptides (ngpeptide.com) is a US-based research-peptide supplier that states 75,000+ orders fulfilled, offering research compounds across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator categories in vial, spray, and capsule formats, with same-day US shipping. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <Cat label="Metabolic & Weight Loss"><P slug="retatrutide">Retatrutide</P>, <P slug="tirzepatide">Tirzepatide</P>, <P slug="cagrilintide">Cagrilintide</P>, <P slug="mots-c">MOTS-c</P>, <P slug="aod-9604">AOD-9604</P>, <P slug="5-amino-1mq">5-Amino-1MQ</P></Cat>
@@ -87,7 +85,7 @@ export default function NextGenPeptidesCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="Does NextGen Peptides have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any NextGen Peptides order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="Does NextGen Peptides have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any NextGen Peptides order. This code is verified and maintained by Prof. Peptide.`} />
             <FAQItem q="How do I use the NextGen Peptides discount code?" a={`Add your items to cart at ngpeptide.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="Is NextGen Peptides third-party tested?" a="Yes — by ILS Laboratories (San Diego, CA; ISO/IEC 17025-accredited), with earlier (pre-March 2026) batches tested by Freedom Diagnostics. Each ILS COA runs peptide purity and content by HPLC, identity by HPLC retention-time matching, heavy metals (ICP-MS), sterility (PCR), endotoxin (USP <85>), and a fentanyl screen, and is individually QR-verifiable at portal.ils-lab.com. NextGen publishes a public, searchable COA Library at ngpeptide.com/coa-library/." />
             <FAQItem q="What is NextGen Peptides' purity standard?" a="NextGen Peptides states ≥99% purity verified by HPLC, with a Certificate of Analysis available for every product." />

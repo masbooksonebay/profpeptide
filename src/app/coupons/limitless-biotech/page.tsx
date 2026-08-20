@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { vendorDiscountPct } from "@/data/prices";
 
 
@@ -18,15 +17,14 @@ export default function LimitlessBiotechCouponPage() {
       <CouponBreadcrumb slug="limitless-biotech" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Limitless Biotech Discount Code &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Limitless Biotech Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
  </div>
- <CouponFacts slug="limitless-biotech" />
  <CouponCodeCard slug="limitless-biotech" className="mb-8" />
 
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Limitless Biotech is a US-based research peptide supplier founded in Florida, formerly known as Limitless Life Nootropics. The company states it offers one of the largest research-peptide catalogs available &mdash; 90+ compounds (the vendor&rsquo;s figure) spanning peptides, nootropics, and advanced longevity compounds. Limitless Biotech ships worldwide and offers a 30-day money-back guarantee. Their products are used by physicians, biohackers, and research laboratories. Products contain no fillers such as mannitol or lactose. Popular compounds by research area:
+ Limitless Biotech (limitlessbiotech.com) is a US-based research peptide supplier founded in Florida, formerly known as Limitless Life Nootropics. The company states it offers one of the largest research-peptide catalogs available &mdash; 90+ compounds (the vendor&rsquo;s figure) spanning peptides, nootropics, and advanced longevity compounds. Limitless Biotech ships worldwide and offers a 30-day money-back guarantee. Their products are used by physicians, biohackers, and research laboratories. Products contain no fillers such as mannitol or lactose. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -89,7 +87,7 @@ export default function LimitlessBiotechCouponPage() {
  a="Limitless Biotech states it carries 90+ research-grade compounds &mdash; one of the largest catalogs in the research-peptide space, per the vendor. Their catalog includes recovery peptides such as BPC-157 and TB-500, growth hormone secretagogues including Sermorelin, Ipamorelin, and CJC-1295, metabolic compounds including AOD-9604 and Semaglutide, cognitive and nootropic compounds including Selank and Semax, longevity compounds including Epitalon, MOTS-c, and NAD+, and sexual health compounds including PT-141. Peptide capsule and spray formats are also available alongside standard lyophilized compounds."
  />
  <FAQItem
- q="Does Limitless Biotech have a discount code?"
+ q="Does Limitless Biotech have a coupon code?"
  a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Limitless Biotech order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem

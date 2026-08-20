@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -35,15 +34,14 @@ export default function ImprovedPeptidesCouponPage() {
       <CouponBreadcrumb slug="improved-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Improved Peptides Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Improved Peptides Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="improved-peptides" />
       <CouponCodeCard slug="improved-peptides" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Improved Peptides (The Improved Company LLC) is a US-based research-peptide supplier that states it launched in 2026 and has shipped 1,300+ orders. Its catalog is single-vial lyophilized peptides, with a standing &ldquo;buy two, get one free&rdquo; promotion (which does not combine with a discount code). Payment is by Visa, Mastercard, PayPal, Venmo, and Zelle. Popular compounds by research area:
+            Improved Peptides (improvedpeptides.com, operated by The Improved Company LLC) is a US-based research-peptide supplier that states it launched in 2026 and has shipped 1,300+ orders. Its catalog is single-vial lyophilized peptides, with a standing &ldquo;buy two, get one free&rdquo; promotion (which does not combine with a discount code). Payment is by Visa, Mastercard, PayPal, Venmo, and Zelle. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <Cat label="Recovery &amp; Tissue Repair"><P slug="bpc-157">BPC-157</P>, <P slug="tb-500">TB-500</P>, <P slug="kpv">KPV</P>, and a Wolverine (BPC-157 + TB-500) blend</Cat>
@@ -82,7 +80,7 @@ export default function ImprovedPeptidesCouponPage() {
               a="Improved Peptides carries about 24 single-vial lyophilized research compounds spanning recovery (BPC-157, TB-500, KPV, a Wolverine blend), metabolic/GLP (GLP-1S which its COA identifies as Semaglutide, plus coded GLP-2T and GLP-3R, MOTS-C, 5-Amino-1MQ), growth-hormone secretagogues (CJC-1295/Ipamorelin, Tesamorelin), skin and pigmentation (GHK-Cu, MT-1, MT-2, PT-141, GLOW and KLOW blends), cognitive and sleep (Selank, Semax, DSIP), and longevity (Epithalon, NAD+)."
             />
             <FAQItem
-              q="Does Improved Peptides have a discount code?"
+              q="Does Improved Peptides have a coupon code?"
               a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your Improved Peptides order. This code is verified and maintained by Prof. Peptide. Improved also runs an automatic 'buy two, get one free' bundle, but bundle pricing does not combine with a discount code — the 15% code applies to standard (non-bundle) pricing.`}
             />
             <FAQItem
