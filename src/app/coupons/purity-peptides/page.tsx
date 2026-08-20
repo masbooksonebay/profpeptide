@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -26,15 +25,14 @@ export default function PurityPeptidesCouponPage() {
       <CouponBreadcrumb slug="purity-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Purity Peptides Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Purity Peptides Discount Code: PROF15 &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="purity-peptides" />
       <CouponCodeCard slug="purity-peptides" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Purity Peptides is a Canadian research-peptide vendor &mdash; North American sourced, manufactured, and tested &mdash; with a broad catalog spanning metabolic, recovery, performance, growth-hormone, cognitive, skin, gut-health, sleep, longevity, bioregulator, and sexual-health research. Popular compounds by research area:
+            Purity Peptides (puritypeptides.is) is a Canadian research-peptide vendor &mdash; North American sourced, manufactured, and tested &mdash; with a broad catalog spanning metabolic, recovery, performance, growth-hormone, cognitive, skin, gut-health, sleep, longevity, bioregulator, and sexual-health research. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -138,7 +136,7 @@ export default function PurityPeptidesCouponPage() {
               a="Purity Peptides carries research compounds across metabolic, recovery, growth-hormone, cognitive, skin, gut-health, longevity, bioregulator, and sexual-health categories. Flagship compounds include Retatrutide, Tirzepatide, BPC-157, TB-500, GHK-Cu, CJC-1295/Ipamorelin, and NAD+, along with the GLOW and KLOW blends."
             />
             <FAQItem
-              q="Does Purity Peptides have a discount code?"
+              q="Does Purity Peptides have a coupon code?"
               a={`Yes. Use code PROF15 at checkout to save ${discountPct}% on any Purity Peptides order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem

@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { vendors } from "@/data/vendors";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
@@ -25,15 +24,14 @@ export default function PeptideGiantsCouponPage() {
       <CouponBreadcrumb slug="peptide-giants" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptide Giants Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptide Giants Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="peptide-giants" />
       <CouponCodeCard slug="peptide-giants" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Peptide Giants is a US-based research-peptide supplier offering both single vials and multi-vial kits across metabolic and GLP-class compounds, recovery and repair peptides, growth-hormone secretagogues, skin and longevity research compounds, and multi-peptide blends. Every product is third-party tested by Janoshik, and lab reports are published on the site. Popular compounds by research area:
+            Peptide Giants (peptidegiants.com) is a US-based research-peptide supplier offering both single vials and multi-vial kits across metabolic and GLP-class compounds, recovery and repair peptides, growth-hormone secretagogues, skin and longevity research compounds, and multi-peptide blends. Every product is third-party tested by Janoshik, and lab reports are published on the site. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -106,7 +104,7 @@ export default function PeptideGiantsCouponPage() {
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What peptides does Peptide Giants carry?" a="Peptide Giants carries research compounds as both single vials and multi-vial kits, spanning metabolic and GLP-class compounds (including Cagrilintide, AOD-9604, MOTS-C, and 5-Amino-1MQ), recovery peptides such as BPC-157 and TB-500, growth-hormone secretagogues including CJC-1295, Ipamorelin, and IGF-1 LR3, skin compounds such as GHK-Cu and Melanotan II, the GLOW and KLOW blends, longevity compounds including Epitalon, NAD+, and Glutathione, plus KPV, Kisspeptin-10, and Oxytocin." />
-            <FAQItem q="Does Peptide Giants have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire Peptide Giants order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="Does Peptide Giants have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire Peptide Giants order. This code is verified and maintained by Prof. Peptide.`} />
             <FAQItem q="How do I use the Peptide Giants discount code?" a={`Add your items to cart at peptidegiants.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How does Peptide Giants test its peptides?" a="Every Peptide Giants product is third-party tested by Janoshik, an independent analytical lab widely used in the research-peptide space. The per-batch Janoshik reports state purity (typically 99%+) and peptide content and are individually verifiable at janoshik.com/verify with a unique key and QR code; the reports do not print the analytical method." />
             <FAQItem q="Are lab reports available for Peptide Giants products?" a="Yes. Peptide Giants publishes a Lab Reports section on its site where researchers can review the third-party (Janoshik) testing documentation for its products." />

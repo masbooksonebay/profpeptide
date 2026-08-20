@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { vendorDiscountPct } from "@/data/prices";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
@@ -29,9 +28,8 @@ export default function IonPeptideCouponPage() {
       <CouponBreadcrumb slug="ion-peptide" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Ion Peptide Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Ion Peptide Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="ion-peptide" />
       <CouponCodeCard slug="ion-peptide" className="mb-8" />
 
       <div className="space-y-8">
@@ -66,7 +64,7 @@ export default function IonPeptideCouponPage() {
               a="Ion Peptide carries a broad research catalog spanning metabolic and GLP-class compounds (Semaglutide, Tirzepatide, and Retatrutide — listed under the coded names ION-1S, ION-2T, and ION-3R — plus Cagrilintide, AOD-9604, and 5-Amino-1MQ), recovery peptides (BPC-157, TB-500, KPV, the Wolverine blend), growth-hormone secretagogues (CJC-1295, Ipamorelin, GHRP-2, GHRP-6, Fragment 176-191), skin and anti-aging compounds (GHK-Cu, GLOW, KLOW, Melanotan I and II), longevity and cognitive compounds (Epitalon, Glutathione, FOXO4-DRI, DSIP), PT-141, and a separate line of cosmetic formulations. Its catalog and per-vial prices are openly browsable."
             />
             <FAQItem
-              q="Does Ion Peptide have a discount code?"
+              q="Does Ion Peptide have a coupon code?"
               a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Ion Peptide order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem

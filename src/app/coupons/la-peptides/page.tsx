@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -37,15 +36,14 @@ export default function LAPeptidesCouponPage() {
       <CouponBreadcrumb slug="la-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">LA Peptides Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">LA Peptides Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="la-peptides" />
       <CouponCodeCard slug="la-peptides" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            LA Peptides is a US-based research-peptide supplier with a catalog of 70+ compounds spanning metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator research categories, plus spray and capsule formats. Orders ship domestically with fast, discreet, trackable US shipping. Popular compounds by research area:
+            LA Peptides (lapeptides.net) is a US-based research-peptide supplier with a catalog of 70+ compounds spanning metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator research categories, plus spray and capsule formats. Orders ship domestically with fast, discreet, trackable US shipping. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <Cat label="Metabolic & Weight Loss"><P slug="retatrutide">Retatrutide</P>, <P slug="tirzepatide">Tirzepatide</P>, <P slug="semaglutide">Semaglutide</P>, <P slug="mots-c">MOTS-c</P>, <P slug="cagrilintide">Cagrilintide</P>, <P slug="5-amino-1mq">5-Amino-1MQ</P>, <P slug="aod-9604">AOD-9604</P></Cat>
@@ -84,7 +82,7 @@ export default function LAPeptidesCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="Does LA Peptides have a discount code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any LA Peptides order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="Does LA Peptides have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any LA Peptides order. This code is verified and maintained by Prof. Peptide.`} />
             <FAQItem q="How do I use the LA Peptides discount code?" a={`Add your items to cart at lapeptides.net, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="Is LA Peptides third-party tested?" a="Yes. Every LA Peptides batch undergoes third-party testing to a minimum purity of ≥99%, and LA Peptides publishes a full batch-specific Certificate of Analysis library at lapeptides.net/product-certificates/, issued by the third-party lab Bioviridian — covering identity (LC-MS), purity (RP-HPLC), endotoxin (USP <85>), heavy metals (USP <232>), and sterility (USP <71>), each with a per-record web verification code checkable at bioviridians.com/coa-search.html." />
             <FAQItem q="Where does LA Peptides ship from?" a="LA Peptides sources and manufactures its peptides within the United States and ships domestically with fast, discreet, trackable shipping." />

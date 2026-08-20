@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { vendorDiscountPct } from "@/data/prices";
 
 
@@ -18,15 +17,14 @@ export default function IntegrativePeptidesCouponPage() {
       <CouponBreadcrumb slug="integrative-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Integrative Peptides Discount Code &mdash; Save {discountPct}% with PROFPEPTIDE</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Integrative Peptides Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
  </div>
- <CouponFacts slug="integrative-peptides" />
  <CouponCodeCard slug="integrative-peptides" className="mb-8" />
 
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Integrative Peptides was founded in 2018 with a mission to make advanced peptide therapies accessible without needles or high costs. They specialize in oral peptide formulations designed for physician use and patient access &mdash; a key differentiator from most research peptide vendors who sell injectable lyophilized powders. Integrative states that it uses FDA-compliant manufacturing and independent third-party lab testing to a &ge;99% purity standard on every batch, screening for heavy metals, microbials, and other contaminants. Popular compounds by research area:
+ Integrative Peptides (integrativepeptides.com) was founded in 2018 with a mission to make advanced peptide therapies accessible without needles or high costs. They specialize in oral peptide formulations designed for physician use and patient access &mdash; a key differentiator from most research peptide vendors who sell injectable lyophilized powders. Integrative states that it uses FDA-compliant manufacturing and independent third-party lab testing to a &ge;99% purity standard on every batch, screening for heavy metals, microbials, and other contaminants. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -62,7 +60,7 @@ export default function IntegrativePeptidesCouponPage() {
  a="Integrative Peptides specializes in oral and topical peptide formulations designed for researchers who prefer non-injectable delivery formats. Their catalog includes oral BPC-157 (capsules and tablets), topical preparations, and combination peptide formulations."
  />
  <FAQItem
- q="Does Integrative Peptides have a discount code?"
+ q="Does Integrative Peptides have a coupon code?"
  a={`Yes, use code PROFPEPTIDE for ${discountPct}% off your order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem

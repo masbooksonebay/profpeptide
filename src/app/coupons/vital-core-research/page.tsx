@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,15 +23,14 @@ export default function VitalCoreResearchCouponPage() {
       <CouponBreadcrumb slug="vital-core-research" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Vital Core Research Discount Code &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Vital Core Research Discount Code: PROF20 &mdash; Save {discountPct}%</h1>
  </div>
- <CouponFacts slug="vital-core-research" />
  <CouponCodeCard slug="vital-core-research" className="mb-8" />
 
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Vital Core Research is a US-based research compound supplier headquartered in Arizona. The company operates a Research Rewards Program offering loyalty points on every purchase, redeemable against future orders. Same-day shipping is standard, with full order tracking provided on all shipments. Vital Core Research offers one of the most comprehensive research compound catalogs available &mdash; 56 products spanning peptides, SARMs, GLP-class metabolic compounds, peptide blends, and capsule formulations. Popular compounds by research area:
+ Vital Core Research (vitalcoreresearch.com) is a US-based research compound supplier headquartered in Arizona. The company operates a Research Rewards Program offering loyalty points on every purchase, redeemable against future orders. Same-day shipping is standard, with full order tracking provided on all shipments. Vital Core Research offers one of the most comprehensive research compound catalogs available &mdash; 56 products spanning peptides, SARMs, GLP-class metabolic compounds, peptide blends, and capsule formulations. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -129,7 +127,7 @@ export default function VitalCoreResearchCouponPage() {
  a="Vital Core Research carries 56 research products across peptides, SARMs, and blends. Their metabolic catalog covers the full GLP generation range including Semaglutide, Tirzepatide, Retatrutide, Cagrilintide, and combination blends. Recovery peptides include BPC-157 and TB-500. Growth hormone secretagogues include CJC-1295 (both DAC and No DAC), Ipamorelin, Sermorelin, Tesamorelin, Hexarelin, GHRP-2, GHRP-6, and IGF-1 LR3. Longevity compounds include NAD+, Epithalon, and MOTS-c. Cognitive peptides include Semax and Selank. Sexual health compounds include PT-141. Immune compounds include Thymosin Alpha-1. Novel compounds include SLU-PP-332 capsules and Tesofensine capsules. Pre-formulated blends include GLOW and KLOW. A 13-compound SARMs catalog is also available."
  />
  <FAQItem
- q="Does Vital Core Research have a discount code?"
+ q="Does Vital Core Research have a coupon code?"
  a={`Yes. Use code PROF20 at checkout to save ${discountPct}% on any Vital Core Research order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem

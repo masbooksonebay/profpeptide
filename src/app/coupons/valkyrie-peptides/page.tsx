@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { vendorDiscountPct } from "@/data/prices";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
@@ -29,9 +28,8 @@ export default function ValkyriePeptidesCouponPage() {
       <CouponBreadcrumb slug="valkyrie-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Valkyrie Peptides Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Valkyrie Peptides Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="valkyrie-peptides" />
       <CouponCodeCard slug="valkyrie-peptides" className="mb-8" />
 
       <div className="space-y-8">
@@ -63,7 +61,7 @@ export default function ValkyriePeptidesCouponPage() {
               a="From a homepage snapshot taken before the store moved behind a login (August 2026), Valkyrie's catalog included Retatrutide (listed as GLP-3 (RT)), GHK-Cu, and the GLOW, KLOW, and Wolverine (BPC-157 + TB-500) blends. The full catalog now sits behind a research-account login."
             />
             <FAQItem
-              q="Does Valkyrie Peptides have a discount code?"
+              q="Does Valkyrie Peptides have a coupon code?"
               a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Valkyrie Peptides order. This code is verified and maintained by Prof. Peptide. Valkyrie separately offers a 20%-off-for-life program for active military, veterans, and first responders, arranged by contacting the vendor directly.`}
             />
             <FAQItem

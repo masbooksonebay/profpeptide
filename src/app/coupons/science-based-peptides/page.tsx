@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,15 +23,14 @@ export default function ScienceBasedPeptidesCouponPage() {
       <CouponBreadcrumb slug="science-based-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Science Based Peptides Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Science Based Peptides Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="science-based-peptides" />
       <CouponCodeCard slug="science-based-peptides" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Science Based Peptides is a U.S. research supplier with a catalog built around analytical workflows and batch documentation &mdash; GLP-class metabolic research alongside a growth-hormone bench, recovery blends, skin and longevity compounds, cognitive peptides, and reproductive-health research. What it leads on is per-batch traceability: every product page carries a downloadable Certificate of Analysis tied to a specific batch number and tested date, and the store describes its focus as independent COAs, batch-level documentation, and conservative handling standards. Popular compounds by research area:
+            Science Based Peptides (sciencebasedpeptides.com) is a U.S. research supplier with a catalog built around analytical workflows and batch documentation &mdash; GLP-class metabolic research alongside a growth-hormone bench, recovery blends, skin and longevity compounds, cognitive peptides, and reproductive-health research. What it leads on is per-batch traceability: every product page carries a downloadable Certificate of Analysis tied to a specific batch number and tested date, and the store describes its focus as independent COAs, batch-level documentation, and conservative handling standards. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -120,7 +118,7 @@ export default function ScienceBasedPeptidesCouponPage() {
               a="Science Based Peptides carries GLP-class metabolic compounds (Retatrutide — listed under the coded name GLP 3-(RT)), AOD-9604, MOTS-C and 5-Amino-1MQ; a growth-hormone bench (CJC-1295 no-DAC, the CJC-1295 + Ipamorelin blend, Ipamorelin, Tesamorelin, IGF-1 LR3); recovery compounds (BPC-157, TB-500, the BPC-157 + TB-500 blend, KPV); skin and longevity compounds (GHK-Cu, GLOW, KLOW, Melanotan I and II, Glutathione, Epitalon, NAD+); cognitive peptides (Semax, Selank); DSIP for sleep; PT-141 for reproductive-health research; and the immune/signaling compound Thymosin Alpha-1. The catalog also lists bacteriostatic water and a research accessory or two."
             />
             <FAQItem
-              q="Does Science Based Peptides have a discount code?"
+              q="Does Science Based Peptides have a coupon code?"
               a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your Science Based Peptides order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem

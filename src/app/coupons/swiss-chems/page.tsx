@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,15 +23,14 @@ export default function SwissChemsCouponPage() {
       <CouponBreadcrumb slug="swiss-chems" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Swiss Chems Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Swiss Chems Discount Code: PROF10 &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="swiss-chems" />
       <CouponCodeCard slug="swiss-chems" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Swiss Chems is a U.S.-based research supplier with a peptide-forward catalog &mdash; a notably deep growth-hormone and peptide bench alongside recovery, longevity, cognitive, and reproductive-health compounds. What sets it apart on transparency is a public Independent Test Results page paired with a per-product verification system: rather than citing a bare purity number, Swiss Chems publishes full third-party Certificates of Analysis (not summaries) and lets researchers verify a product against its batch record. Popular compounds by research area:
+            Swiss Chems (swisschems.is) is a U.S.-based research supplier with a peptide-forward catalog &mdash; a notably deep growth-hormone and peptide bench alongside recovery, longevity, cognitive, and reproductive-health compounds. What sets it apart on transparency is a public Independent Test Results page paired with a per-product verification system: rather than citing a bare purity number, Swiss Chems publishes full third-party Certificates of Analysis (not summaries) and lets researchers verify a product against its batch record. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -117,7 +115,7 @@ export default function SwissChemsCouponPage() {
               a="Swiss Chems is peptide-forward, with a particularly deep growth-hormone bench (CJC-1295 with and without DAC, Ipamorelin, Sermorelin, Tesamorelin, GHRP-2/6, Hexarelin, IGF-1 LR3 and DES, MGF/PEG-MGF, Follistatin-344). It also carries recovery compounds (BPC-157, TB-500), metabolic peptides (MOTS-C, 5-Amino-1MQ, FTPP), longevity and skin compounds (GHK-Cu, Epitalon, Glutathione), cognitive peptides (Semax, Selank), DSIP for sleep, and reproductive-health compounds (PT-141, Melanotan II, Oxytocin, Kisspeptin-10, and more)."
             />
             <FAQItem
-              q="Does Swiss Chems have a discount code?"
+              q="Does Swiss Chems have a coupon code?"
               a={`Yes. Use code PROF10 at checkout to save ${discountPct}% on your Swiss Chems order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem

@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,9 +23,8 @@ export default function PeptidesGgCouponPage() {
       <CouponBreadcrumb slug="peptides-gg" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptides.gg Discount Code &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptides.gg Discount Code: PROF15 &mdash; Save {discountPct}%</h1>
  </div>
- <CouponFacts slug="peptides-gg" />
  <CouponCodeCard slug="peptides-gg" className="mb-8" />
 
  <div className="space-y-8">
@@ -132,7 +130,7 @@ export default function PeptidesGgCouponPage() {
  a="Peptides.gg carries 90+ research-grade products across GLP/metabolic, growth hormone, recovery, longevity and bioregulator, and nootropic categories — available as vials, liquids, and capsules. Highlights include Retatrutide, Semaglutide, Tirzepatide, Cagrilintide, CJC-1295, Ipamorelin, Tesamorelin, IGF-1 LR3, BPC-157, TB-500, GHK-Cu, KPV, KLOW and GLOW blends, Epitalon and a deep Khavinson bioregulator line, plus Semax, Selank, and Noopept."
  />
  <FAQItem
- q="Does Peptides.gg have a discount code?"
+ q="Does Peptides.gg have a coupon code?"
  a={`Yes. Use code PROF15 at checkout to save ${discountPct}% on any Peptides.gg order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
