@@ -2,6 +2,8 @@ import { CopyCode } from "@/components/CopyCode";
 import { CouponPills } from "@/components/CouponPills";
 import { vendors } from "@/data/vendors";
 import { COUPON_SENTENCE_VENDORS } from "@/data/coupon-sentence-vendors";
+import { REVEAL_GATE_VENDORS } from "@/data/reveal-gate-vendors";
+import { RevealCodeBox } from "@/components/RevealCodeBox";
 import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
 
 /**
@@ -50,6 +52,10 @@ export function CouponCodeCard({
 }) {
   const v = vendors[slug];
   if (!v) return null;
+  // GATED vendors: the code must not appear on this page's crawlable surfaces. Render the reveal
+  // box (code behind a click, routed through /go/?from=reveal-modal) and DO NOT render the code
+  // box or the salience sentence. See reveal-gate-vendors.ts.
+  if (REVEAL_GATE_VENDORS.has(slug)) return <RevealCodeBox slug={slug} className={className} />;
   const pct = v.discount.match(/(\d+)\s*%/)?.[1];
   const showSentence = sentence && COUPON_SENTENCE_VENDORS.has(slug) && pct != null;
   return (

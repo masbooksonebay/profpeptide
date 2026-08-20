@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { vendors } from "@/data/vendors";
+import { REVEAL_GATE_VENDORS } from "@/data/reveal-gate-vendors";
 import { articles } from "@/data/news";
 
 const IMAGE_SIZE = { width: 1200, height: 630 };
@@ -53,10 +54,14 @@ function resolveOgCopy(slug: string, discount: string): { percent: number | null
 export function altFor(slug: string): string {
   const vendor = vendors[slug];
   if (!vendor) return "Prof. Peptide — verified research peptide discount codes";
+  // Gated vendors: the code must not appear in the OG alt text (a crawlable surface).
+  const gated = REVEAL_GATE_VENDORS.has(slug);
   const { percent, prefix } = resolveOgCopy(slug, vendor.discount);
-  if (percent === null) return `${vendor.name} discount code ${vendor.code}`;
+  if (percent === null) return gated ? `${vendor.name} discount code` : `${vendor.name} discount code ${vendor.code}`;
   const save = prefix ? `Save ${prefix.toLowerCase()} ${percent}%` : `Save ${percent}%`;
-  return `${vendor.name} discount code ${vendor.code} — ${save} on research peptides`;
+  return gated
+    ? `${vendor.name} — ${save} on research peptides`
+    : `${vendor.name} discount code ${vendor.code} — ${save} on research peptides`;
 }
 
 // Auto-fit the coupon code so a long code (e.g. PROFPEPTIDE, 11 chars) stays in
@@ -247,6 +252,7 @@ function VendorCard({
   code,
   prefix,
   tone = "dark",
+  gated = false,
 }: {
   bg: string;
   mark: string;
@@ -255,6 +261,7 @@ function VendorCard({
   code: string;
   prefix?: string;
   tone?: Tone;
+  gated?: boolean;
 }) {
   const pal = palette(tone);
   return (
@@ -292,13 +299,16 @@ function VendorCard({
         <div style={{ display: "flex", marginTop: 10, fontSize: 48, fontWeight: 500, color: pal.secondary, letterSpacing: -0.5 }}>
           {name}
         </div>
-        <div style={{ display: "flex", alignItems: "center", marginTop: 26 }}>
-          <PriceTagIcon tone={tone} />
-          <div style={{ display: "flex", alignItems: "center", marginLeft: 16 }}>
-            <div style={{ fontSize: 36, fontWeight: 500, color: pal.secondary, marginRight: 14 }}>Use code</div>
-            <div style={{ fontSize: codeFontSize(code), fontWeight: 700, color: pal.accent, letterSpacing: 1 }}>{code}</div>
+        {/* Gated vendors: NO "Use code {code}" row — the code must not render on the OG card. */}
+        {!gated && (
+          <div style={{ display: "flex", alignItems: "center", marginTop: 26 }}>
+            <PriceTagIcon tone={tone} />
+            <div style={{ display: "flex", alignItems: "center", marginLeft: 16 }}>
+              <div style={{ fontSize: 36, fontWeight: 500, color: pal.secondary, marginRight: 14 }}>Use code</div>
+              <div style={{ fontSize: codeFontSize(code), fontWeight: 700, color: pal.accent, letterSpacing: 1 }}>{code}</div>
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       <div style={{ display: "flex", marginTop: 40 }}>
@@ -415,7 +425,7 @@ export async function generateCouponOg(slug: string): Promise<ImageResponse> {
     !vendor || pct === null ? (
       <FallbackCard bg={bgLight} mark={mark} tone="light" />
     ) : (
-      <VendorCard bg={bgLight} mark={mark} tone="light" name={vendor.name} percent={pct} code={vendor.code} prefix={prefix} />
+      <VendorCard bg={bgLight} mark={mark} tone="light" name={vendor.name} percent={pct} code={vendor.code} prefix={prefix} gated={REVEAL_GATE_VENDORS.has(slug)} />
     );
 
   return new ImageResponse(element, { ...IMAGE_SIZE, fonts });

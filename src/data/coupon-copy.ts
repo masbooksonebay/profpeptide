@@ -99,8 +99,15 @@ export function couponDescription(
   code: string,
   pct: number,
   monthYear: string,
+  gated = false,
 ): string {
-  const tail = `code ${code} saves ${pct}% at ${vendorName}, verified ${monthYear}.`;
+  // Gated vendors (reveal-gate-vendors.ts): the code must NOT appear in the meta description.
+  // Drop "code {CODE} " from the tail — the gated result is strictly SHORTER than the ungated
+  // form, so it stays within the same ≤155-char budget check:freshness verifies (ungated = the
+  // upper bound). The lead + discount + verified-month freshness signal all remain.
+  const tail = gated
+    ? `save ${pct}% at ${vendorName}, verified ${monthYear}.`
+    : `code ${code} saves ${pct}% at ${vendorName}, verified ${monthYear}.`;
   const lead = couponLead[slug];
   return lead ? `${lead} — ${tail}` : `${tail[0].toUpperCase()}${tail.slice(1)}`;
 }

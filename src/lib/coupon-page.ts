@@ -3,6 +3,7 @@ import { buildPageMetadata } from "@/lib/seo";
 import { vendors } from "@/data/vendors";
 import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
 import { couponDescription } from "@/data/coupon-copy";
+import { REVEAL_GATE_VENDORS } from "@/data/reveal-gate-vendors";
 import { VENDORS_VERIFIED_ISO } from "@/data/vendors-verified.generated";
 
 const SITE_URL = "https://profpeptide.com";
@@ -33,11 +34,13 @@ function priceValidUntilISO(): string {
 export function couponOffer(slug: string): Record<string, unknown> {
   const v = vendors[slug];
   const pct = discountPct(slug);
+  // Gated vendors: the code must not appear in the JSON-LD Offer (a crawlable surface).
+  const gated = REVEAL_GATE_VENDORS.has(slug);
   return {
     "@context": "https://schema.org",
     "@type": "Offer",
     name: `${v.name} Discount Code - Save ${pct}%`,
-    description: `Use code ${v.code} for ${pct}% off at ${v.name}`,
+    description: gated ? `Save ${pct}% at ${v.name}` : `Use code ${v.code} for ${pct}% off at ${v.name}`,
     url: `${SITE_URL}/coupons/${slug}`,
     validFrom: VENDORS_VERIFIED_ISO,
     priceValidUntil: priceValidUntilISO(),
@@ -67,7 +70,11 @@ export function buildCouponMetadata({
 }: { slug: string } & Omit<Parameters<typeof buildPageMetadata>[0], "path" | "title" | "description">): Metadata {
   const v = vendors[slug];
   const pct = discountPct(slug);
-  const title = `${v.name} Discount Code: ${v.code} — Save ${pct}%`;
-  const description = couponDescription(slug, v.name, v.code, pct, CODES_VERIFIED_DATE);
+  // Gated vendors: strip the code from the <title> and the meta description (crawlable surfaces).
+  const gated = REVEAL_GATE_VENDORS.has(slug);
+  const title = gated
+    ? `${v.name} Discount Code — Save ${pct}%`
+    : `${v.name} Discount Code: ${v.code} — Save ${pct}%`;
+  const description = couponDescription(slug, v.name, v.code, pct, CODES_VERIFIED_DATE, gated);
   return buildPageMetadata({ path: `/coupons/${slug}`, title, description, ...rest });
 }

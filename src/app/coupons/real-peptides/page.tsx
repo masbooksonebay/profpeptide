@@ -7,7 +7,6 @@ import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
-import { vendors } from "@/data/vendors";
 
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
@@ -23,7 +22,6 @@ function P({ slug, children }: { slug: string; children: React.ReactNode }) {
 }
 
 export default function RealPeptidesCouponPage() {
-  const v = vendors["real-peptides"];
   const rows = vendorProductRows("real-peptides");
   const discountPct = vendorDiscountPct("real-peptides");
   const autoApply = codeAutoApplies("real-peptides");
@@ -69,7 +67,7 @@ export default function RealPeptidesCouponPage() {
             {autoApply ? (
               <>your price after the {discountPct}% code</>
             ) : (
-              <>your price once you apply code {v.code} at checkout</>
+              <>your price once you apply your discount code at checkout</>
             )}. Prices current as of {PRICES_UPDATED_DATE}.
           </p>
         </div>
@@ -83,11 +81,11 @@ export default function RealPeptidesCouponPage() {
             />
             <FAQItem
               q="Does Real Peptides have a discount code?"
-              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Real Peptides order. This code is verified and maintained by Prof. Peptide.`}
+              a={`Yes. Prof. Peptide maintains a verified discount code for Real Peptides — click "Reveal discount code" above to see it and copy it. It saves ${discountPct}% on any Real Peptides order.`}
             />
             <FAQItem
               q="How do I use the Real Peptides discount code?"
-              a={`Add your items to cart at realpeptides.co, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
+              a={`Reveal the code above and copy it, then add your items to cart at realpeptides.co, proceed to checkout, and paste it into the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem
               q="How does Real Peptides test its peptides?"
