@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { routes } from "@/data/routes";
-import NewsletterSignup from "@/components/NewsletterSignup";
+import FooterNewsletter from "@/components/FooterNewsletter";
 
 export default function Footer() {
   return (
@@ -67,9 +67,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-[#D9DEE4] dark:border-slate-700 pt-8 pb-8">
-          <NewsletterSignup />
-        </div>
+        <FooterNewsletter />
         <div className="border-t border-[#D9DEE4] dark:border-slate-700 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-xs text-gray-400 dark:text-slate-500">
             <p>&copy; {new Date().getFullYear()} Strength Cycle Studios, LLC. All rights reserved.</p>
