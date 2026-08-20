@@ -31,9 +31,14 @@ export async function recordGoClick(
   from: string | null | undefined,
   now: Date,
 ): Promise<void> {
+  const key = goCountKey(slug, normalizeFrom(from), utcDay(now));
   try {
-    await kvIncr(goCountKey(slug, normalizeFrom(from), utcDay(now)));
-  } catch {
-    /* fire-and-forget: never let a counter failure affect the redirect */
+    await kvIncr(key);
+  } catch (err) {
+    // Never let a counter failure affect the redirect — but don't swallow it silently: a systemic
+    // KV outage should be visible, not invisible. Log the key + error message only (the @vercel/kv
+    // token/URL live in the client config / headers, not the message, so nothing credential-bearing
+    // is emitted here).
+    console.error(`[go-count] KV write failed for key ${key}:`, err instanceof Error ? `${err.name}: ${err.message}` : String(err));
   }
 }

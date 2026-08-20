@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { waitUntil } from "@vercel/functions";
 import { kv } from "@vercel/kv";
 import { goTarget } from "@/lib/go";
 import { recordGoClick } from "@/lib/go-count";
@@ -19,9 +20,12 @@ export async function GET(request: NextRequest, { params }: { params: { slug: st
     });
   }
 
-  // FIRE-AND-FORGET: never await the counter — the 302 must not wait on KV. A missing/unprovisioned
-  // KV (or any error) is swallowed inside recordGoClick so a broken counter can't break a click.
-  void recordGoClick((k) => kv.incr(k), slug, request.nextUrl.searchParams.get("from"), new Date());
+  // Count the click WITHOUT blocking the 302. `waitUntil` keeps the invocation alive until the KV
+  // write settles (a plain `void` promise is dropped when Vercel freezes the function after the
+  // response — that lost writes in production; see PP /go/ diagnosis). It does NOT delay the response.
+  // Any KV error is still swallowed inside recordGoClick (now also logged) so a broken counter can
+  // never break a click — the redirect below is constructed and returned regardless.
+  waitUntil(recordGoClick((k) => kv.incr(k), slug, request.nextUrl.searchParams.get("from"), new Date()));
 
   // Location is the RAW affiliate URL — NOT new URL(target) — so the ref path/query is byte-identical.
   return new NextResponse(null, {

@@ -33,6 +33,7 @@
     "check:go-redirects": "node scripts/check-go-redirects.mjs"
   },
   "dependencies": {
+    "@vercel/functions": "^3.9.5",
     "@vercel/kv": "^3.0.0",
     "fuse.js": "^7.3.0",
     "lucide-react": "^1.29.0",
