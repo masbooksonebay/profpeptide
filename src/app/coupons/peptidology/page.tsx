@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 
@@ -36,7 +35,6 @@ export default function PeptidologyCouponPage() {
       <div className="flex flex-wrap items-center gap-3 mb-1">
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptidology Discount Code &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="peptidology" />
       <CouponCodeCard slug="peptidology" className="mb-8" />
 
       <div className="space-y-8">
