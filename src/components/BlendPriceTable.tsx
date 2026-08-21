@@ -72,7 +72,7 @@ export default function BlendPriceTable({ blendSlug, config }: { blendSlug: stri
               )}
             </div>
             <div className="justify-self-end">{r.isAffiliate && r.code ? <CopyCode code={r.code} /> : <span className="text-xs text-gray-300 dark:text-slate-600">—</span>}</div>
-            <div>{r.isAffiliate && r.affiliateUrl ? <a href={r.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm whitespace-nowrap h-9 py-0">Shop</a> : null}</div>
+            <div>{r.isAffiliate && r.affiliateUrl ? <a href={`/go/${r.entry.vendor}?from=price-grid`} target="_blank" rel="sponsored nofollow noopener" className="btn-primary text-sm whitespace-nowrap h-9 py-0">Shop</a> : null}</div>
           </div>
         ))}
       </div>
@@ -99,7 +99,7 @@ export default function BlendPriceTable({ blendSlug, config }: { blendSlug: stri
             </div>
             <div className="flex items-center gap-3 mt-2">
               {r.isAffiliate && r.code && <CopyCode code={r.code} className="flex-[2]" />}
-              {r.isAffiliate && r.affiliateUrl && <a href={r.affiliateUrl} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm h-9 py-0 flex-[3]">Shop</a>}
+              {r.isAffiliate && r.affiliateUrl && <a href={`/go/${r.entry.vendor}?from=price-grid`} target="_blank" rel="sponsored nofollow noopener" className="btn-primary text-sm h-9 py-0 flex-[3]">Shop</a>}
             </div>
           </div>
         ))}

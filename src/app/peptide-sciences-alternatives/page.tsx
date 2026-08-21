@@ -49,6 +49,7 @@ export default function PeptideSciencesAlternativesPage() {
             { slug: "glacier-aminos" },
             { slug: "ez-peptides" },
           ]}
+          from="ps-alternatives"
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mt-4">
           See all vetted suppliers and current codes on the <Link href="/coupons" className="text-[#3A759F] hover:underline">vendor coupons</Link> page.

@@ -31,9 +31,12 @@ export interface VendorHighlightBlockProps {
    *  vetted vendor (e.g. igf-1-des) still links to its price page. Passed explicitly (not from the
    *  route) so the link sits in static, crawlable HTML. */
   compoundSlug?: string;
+  /** ?from= value for the Shop link's /go/ route, so clicks are separable per surface. Defaults to
+   *  "profile-block" (the 61 /peptides profiles); /peptide-sciences-alternatives passes its own. */
+  from?: string;
 }
 
-export default function VendorHighlightBlock({ highlights, compoundSlug }: VendorHighlightBlockProps) {
+export default function VendorHighlightBlock({ highlights, compoundSlug, from = "profile-block" }: VendorHighlightBlockProps) {
   // Selection order of precedence:
   //   1. EXPLICIT PIN (src/data/vendor-pins.ts) — render exactly this ordered set, overriding
   //      derivation. Filtered to LISTED as a safety net; check:vendor-pins guarantees every
@@ -147,9 +150,9 @@ export default function VendorHighlightBlock({ highlights, compoundSlug }: Vendo
                     <>
                       <CopyCode code={v.code} size="large" />
                       <a
-                        href={v.url}
+                        href={`/go/${h.slug}?from=${from}`}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="sponsored nofollow noopener"
                         className="btn-primary w-full text-center block text-xs py-2"
                       >
                         Shop {v.name}</a>

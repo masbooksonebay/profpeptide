@@ -159,9 +159,9 @@ function VendorCard({ v }: { v: Vendor }) {
         </div>
 
         <a
-          href={v.url}
+          href={`/go/${v.slug}?from=coupon-hub-shop`}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored nofollow noopener"
           className="btn-primary w-full text-center block"
         >
           Shop Now</a>

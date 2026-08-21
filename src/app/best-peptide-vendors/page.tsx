@@ -192,9 +192,9 @@ export default function BestPeptideVendorsPage() {
                 <div className="flex items-center justify-between gap-3">
                   <CopyCode code={v.code} />
                   <a
-                    href={v.url}
+                    href={`/go/${v.slug}?from=featured-vendors`}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="sponsored nofollow noopener"
                     className="btn-primary text-xs px-4 h-9 py-0 whitespace-nowrap"
                   >
                     Shop {v.name}
