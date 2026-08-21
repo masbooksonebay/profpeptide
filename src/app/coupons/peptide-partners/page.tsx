@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,15 +23,14 @@ export default function PeptidePartnersCouponPage() {
       <CouponBreadcrumb slug="peptide-partners" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptide Partners Discount Code &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptide Partners Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
  </div>
- <CouponFacts slug="peptide-partners" />
  <CouponCodeCard slug="peptide-partners" className="mb-8" />
 
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Peptide Partners is a US-based research peptide supplier operating out of Florida, reachable during business hours at (941) 248-3873. The company operates on a wholesale pricing model, listing cost per milligram transparently on every product page &mdash; a practice uncommon among research peptide suppliers. Bulk pricing structures offer significant savings at higher quantities. Their catalog spans metabolic compounds, growth hormone secretagogues, recovery peptides, cognitive compounds, longevity peptides, and skin health compounds. Popular compounds by research area:
+ Peptide Partners (peptide.partners) is a US-based research peptide supplier operating out of Florida, reachable during business hours at (941) 248-3873. The company operates on a wholesale pricing model, listing cost per milligram transparently on every product page &mdash; a practice uncommon among research peptide suppliers. Bulk pricing structures offer significant savings at higher quantities. Their catalog spans metabolic compounds, growth hormone secretagogues, recovery peptides, cognitive compounds, longevity peptides, and skin health compounds. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -123,12 +121,12 @@ export default function PeptidePartnersCouponPage() {
  a="Peptide Partners carries research peptides across a broad range of categories. Their metabolic and GLP-1 compound catalog includes Semaglutide, Tirzepatide, Retatrutide, and MOTS-c. Recovery peptides include BPC-157, TB-500, and combination blends. Growth hormone secretagogues include Ipamorelin, CJC-1295, Sermorelin, and Tesamorelin. Additional categories include cognitive compounds such as Semax and Selank, skin health peptides including GHK-Cu, longevity and mitochondrial compounds including NAD+, SS-31, and Humanin, and immune peptides including Thymosin Alpha-1 and PT-141."
  />
  <FAQItem
- q="Does Peptide Partners have a discount code?"
+ q="Does Peptide Partners have a coupon code?"
  a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Peptide Partners order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
  q="How do I use the Peptide Partners discount code?"
- a={`Add your items to cart at peptide.partners, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
+ a={`Add your items to cart at peptide.partners, proceed to checkout, and enter PROFPEPTIDE in the coupon field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem
  q="What types of third-party testing does Peptide Partners provide?"

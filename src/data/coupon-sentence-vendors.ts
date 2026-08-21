@@ -15,9 +15,13 @@
 // stays attributable, not site-wide. A vendor NOT in this Set renders byte-for-byte as before.
 //
 // ASSIGNMENT 2026-08 — the FIVE rewritten-title / no-snippet pages, shipped together WITH the
-// code-in-H1 change as ONE intervention (title↔H1 alignment + prose density). Their four
-// title-holding, snippet-winning peers (ameano-peptides, modern-aminos, peptide-partners,
-// purerawz) are the CONTROL GROUP — deliberately excluded from BOTH variables; do not add them.
+// code-in-H1 change as ONE intervention (title↔H1 alignment + prose density). Their title-holding,
+// snippet-winning peers were the CONTROL GROUP, deliberately excluded from BOTH variables.
+// peptide-partners was PROMOTED OUT of that group on 2026-08-21 (Mark's call — it ranks low, so
+// there is little snippet position to protect and its revenue is code-attributed, not
+// SERP-dependent) and is now treated below. ameano-peptides, modern-aminos, and purerawz REMAIN
+// controls — do not add them. (For the record: this treatment has moved PRESENTATION on every page
+// it touched and moved RANK on none; if rank does not improve here, that is the expected outcome.)
 export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // Stripped cohort (rewritten-title / no-snippet baseline)
   "amino-club",
@@ -59,4 +63,7 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   "treasure-coast-peptides",
   "valkyrie-peptides",
   "vital-core-research",
+  // Promoted out of the CONTROL GROUP 2026-08-21 (see ASSIGNMENT note above): a low-ranking,
+  // code-attributed page brought onto the treatment; its three former control peers stay excluded.
+  "peptide-partners",
 ]);
