@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { vendors } from "@/data/vendors";
 import { CopyCode } from "@/components/CopyCode";
+import { RevealCodeBox } from "@/components/RevealCodeBox";
+import { REVEAL_GATE_VENDORS } from "@/data/reveal-gate-vendors";
 import { compoundVendorCount, deriveHighlightVendors, isBlendSlug, blendVendorCount } from "@/data/prices";
 import { LISTED } from "@/data/attribution";
 import { VENDOR_PINS } from "@/data/vendor-pins";
@@ -136,14 +138,23 @@ export default function VendorHighlightBlock({ highlights, compoundSlug }: Vendo
                 )}
 
                 <div className="mt-auto space-y-2 pt-2">
-                  <CopyCode code={v.code} size="large" />
-                  <a
-                    href={v.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary w-full text-center block text-xs py-2"
-                  >
-                    Shop {v.name}</a>
+                  {REVEAL_GATE_VENDORS.has(h.slug) ? (
+                    // GATED: the code must not display. RevealCodeBox provides the reveal (code
+                    // behind a click) AND its own Shop link routed through /go/?from=reveal-modal,
+                    // so it replaces both the CopyCode and the direct Shop link below.
+                    <RevealCodeBox slug={h.slug} />
+                  ) : (
+                    <>
+                      <CopyCode code={v.code} size="large" />
+                      <a
+                        href={v.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary w-full text-center block text-xs py-2"
+                      >
+                        Shop {v.name}</a>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

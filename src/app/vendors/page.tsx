@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { vendors } from "@/data/vendors";
-import { CopyCode } from "@/components/CopyCode";
+import { VendorCodeChip } from "@/components/VendorCodeChip";
 
 export const metadata = {
   alternates: { canonical: "/vendors" },
@@ -22,9 +22,9 @@ export const metadata = {
 // Generated from vendors.ts so the list stays in sync as vendors change:
 // active (non-retired) vendors only, sorted alphabetically by display name.
 // Each card links to that vendor's own profile page via its detailPage field.
-const activeVendors = Object.values(vendors)
-  .filter((v) => !v.retired)
-  .sort((a, b) => a.name.localeCompare(b.name));
+const activeVendors = Object.entries(vendors)
+  .filter(([, v]) => !v.retired)
+  .sort(([, a], [, b]) => a.name.localeCompare(b.name));
 
 export default function VendorProfilesPage() {
   return (
@@ -39,7 +39,7 @@ export default function VendorProfilesPage() {
           internal profile via a full-bleed overlay Link, so the copy-code chip can be a
           real <button> sibling (not nested in an anchor) and still be clicked directly. */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {activeVendors.map((v) => (
+        {activeVendors.map(([slug, v]) => (
           <div key={v.detailPage} className="card group relative flex flex-col">
             <Link href={v.detailPage} aria-label={`View ${v.name} profile`} className="absolute inset-0 z-0" />
             <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors">
@@ -47,7 +47,7 @@ export default function VendorProfilesPage() {
             </h2>
             <span className="tag mt-3 self-start">{v.discount}</span>
             <div className="relative z-10 mt-3 self-start">
-              <CopyCode code={v.code} />
+              <VendorCodeChip slug={slug} code={v.code} />
             </div>
             <span className="mt-4 text-xs font-medium text-[#3A759F] group-hover:underline">
               View profile &rarr;

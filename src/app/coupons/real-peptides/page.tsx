@@ -81,11 +81,11 @@ export default function RealPeptidesCouponPage() {
             />
             <FAQItem
               q="Does Real Peptides have a discount code?"
-              a={`Yes. Prof. Peptide maintains a verified discount code for Real Peptides — click "Reveal discount code" above to see it and copy it. It saves ${discountPct}% on any Real Peptides order.`}
+              a={`Yes. Prof. Peptide maintains a verified discount code for Real Peptides — use the "Reveal discount code" button to see it and copy it. It saves ${discountPct}% on any Real Peptides order.`}
             />
             <FAQItem
               q="How do I use the Real Peptides discount code?"
-              a={`Reveal the code above and copy it, then add your items to cart at realpeptides.co, proceed to checkout, and paste it into the discount code field. The ${discountPct}% discount will be applied to your order total.`}
+              a={`Reveal the code and copy it, then add your items to cart at realpeptides.co, proceed to checkout, and paste it into the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem
               q="How does Real Peptides test its peptides?"

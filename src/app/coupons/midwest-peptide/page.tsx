@@ -120,11 +120,11 @@ export default function MidwestPeptideCouponPage() {
             />
             <FAQItem
               q="Does Midwest Peptide have a coupon code?"
-              a={`Yes. Prof. Peptide maintains a verified discount code for Midwest Peptide — click "Reveal discount code" above to see it and copy it. It saves ${discountPct}% on any Midwest Peptide order.`}
+              a={`Yes. Prof. Peptide maintains a verified discount code for Midwest Peptide — use the "Reveal discount code" button to see it and copy it. It saves ${discountPct}% on any Midwest Peptide order.`}
             />
             <FAQItem
               q="How do I use the Midwest Peptide discount code?"
-              a={`Reveal the code above and copy it, then add your items to cart at midwestpeptide.com, proceed to checkout, and paste it into the discount code field. The ${discountPct}% discount will be applied to your order total.`}
+              a={`Reveal the code and copy it, then add your items to cart at midwestpeptide.com, proceed to checkout, and paste it into the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem
               q="Is Midwest Peptide third-party tested?"

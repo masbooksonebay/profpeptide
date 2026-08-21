@@ -4,7 +4,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import { Icon } from "@/components/CategoryIcon";
-import { CopyCode } from "@/components/CopyCode";
+import { VendorCodeChip } from "@/components/VendorCodeChip";
 import {
   vendors as registry,
   regionFlag,
@@ -13,6 +13,7 @@ import {
 import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
 
 interface Vendor {
+  slug: string;
   name: string;
   url: string;
   code: string;
@@ -50,6 +51,9 @@ interface VendorSection {
  */
 function toCard(v: RegistryVendor): Vendor {
   return {
+    // detailPage is "/coupons/{slug}" for every vendor — derive the slug so the card can gate the
+    // code (REVEAL_GATE_VENDORS) and link a gated card's reveal to its coupon page.
+    slug: v.detailPage?.replace(/^\/coupons\//, "") ?? "",
     name: v.name,
     url: v.url,
     code: v.code,
@@ -148,7 +152,7 @@ function VendorCard({ v }: { v: Vendor }) {
 
         <div className="mb-4">
           {v.code ? (
-            <CopyCode code={v.code} size="large" />
+            <VendorCodeChip slug={v.slug} code={v.code} size="large" />
           ) : (
             <div className="w-full bg-gray-50 dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-600 px-4 py-2.5 rounded-lg text-sm text-center text-gray-500 dark:text-slate-400 italic">Coming soon</div>
           )}
