@@ -3,7 +3,7 @@
 
 // The surfaces a click can originate from. `?from=` is validated against this set so a malformed or
 // spoofed value can't create junk counter keys; anything unknown buckets as "unknown".
-export const GO_SURFACES = ["coupon-card", "coupon-reveal", "reveal-modal", "profile-block", "price-grid", "search"] as const;
+export const GO_SURFACES = ["coupon-card", "coupon-reveal", "reveal-modal", "coupon-hub-card", "vendors-card", "profile-block", "price-grid", "search"] as const;
 export type GoSurface = (typeof GO_SURFACES)[number];
 
 export function normalizeFrom(from: string | null | undefined): string {

@@ -152,7 +152,7 @@ function VendorCard({ v }: { v: Vendor }) {
 
         <div className="mb-4">
           {v.code ? (
-            <VendorCodeChip slug={v.slug} code={v.code} size="large" />
+            <VendorCodeChip slug={v.slug} code={v.code} size="large" from="coupon-hub-card" />
           ) : (
             <div className="w-full bg-gray-50 dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-600 px-4 py-2.5 rounded-lg text-sm text-center text-gray-500 dark:text-slate-400 italic">Coming soon</div>
           )}

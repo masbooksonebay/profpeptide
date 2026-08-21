@@ -47,7 +47,7 @@ export default function VendorProfilesPage() {
             </h2>
             <span className="tag mt-3 self-start">{v.discount}</span>
             <div className="relative z-10 mt-3 self-start">
-              <VendorCodeChip slug={slug} code={v.code} />
+              <VendorCodeChip slug={slug} code={v.code} from="vendors-card" />
             </div>
             <span className="mt-4 text-xs font-medium text-[#3A759F] group-hover:underline">
               View profile &rarr;
