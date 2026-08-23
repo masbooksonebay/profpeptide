@@ -40,7 +40,7 @@ export default function PeptidologyCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Peptidology is a research-peptide supplier with a catalog of 70+ compounds across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator research categories, in vial, capsule, and blend formats. It positions analytical rigor as its differentiator (see testing below). Popular compounds by research area:
+            Peptidology (peptidology.co) is a research-peptide supplier with a catalog of 70+ compounds across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator research categories, in vial, capsule, and blend formats. It positions analytical rigor as its differentiator (see testing below). Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <Cat label="Metabolic & Weight Loss"><P slug="retatrutide">Retatrutide</P>, <P slug="tirzepatide">Tirzepatide</P>, <P slug="semaglutide">Semaglutide</P>, <P slug="mots-c">MOTS-c</P>, <P slug="aod-9604">AOD-9604</P>, <P slug="5-amino-1mq">5-Amino-1MQ</P></Cat>
@@ -79,7 +79,7 @@ export default function PeptidologyCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="Does Peptidology have a discount code?" a={`Yes. Prof. Peptide maintains a verified discount code for Peptidology — use the "Reveal discount code" button to see it and copy it. It saves ${discountPct}% on any Peptidology order.`} />
+            <FAQItem q="Does Peptidology have a coupon code?" a={`Yes. Prof. Peptide maintains a verified discount code for Peptidology — use the "Reveal discount code" button to see it and copy it. It saves ${discountPct}% on any Peptidology order.`} />
             <FAQItem q="How do I use the Peptidology discount code?" a={`Reveal the code and copy it, then add your items to cart at peptidology.co, proceed to checkout, and paste it into the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="Is Peptidology third-party tested?" a="Yes. Every batch is tested by Vanguard Laboratory (A2LA #6377.01.01, ISO/IEC 17025:2017) — identity, purity, and assay by HPLC-UV/VIS, heavy metals (ICP-MS), endotoxins (LAL), and sterility (USP <71>), with recent batches adding residual solvents (GC-MS), container-closure, and solubility checks — and Eagle Analytical Services runs a ScanRDI rapid sterility test, so each certificate carries two independent sterility results." />
             <FAQItem q="What is Peptidology's testing standard?" a="Peptidology describes its program as 14-point testing and states cGMP-aligned production with up to 23 vials tested per batch. Testing runs under Vanguard Laboratory's A2LA / ISO 17025:2017 accreditation, with a second-lab ScanRDI sterility test by Eagle Analytical Services." />

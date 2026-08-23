@@ -40,7 +40,7 @@ export default function RealPeptidesCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Real Peptides is a US-based research-peptide supplier headquartered in Saint Petersburg, Florida, with a catalog of 75 research compounds shipped domestically from physical inventory (no drop-shipping). Every order is backed by a Package Protection guarantee &mdash; shipments lost, stolen, or damaged in transit are replaced or refunded within a 45-day window; this covers shipping, not product purity. Popular compounds by research area:
+            Real Peptides (realpeptides.co) is a US-based research-peptide supplier headquartered in Saint Petersburg, Florida, with a catalog of 75 research compounds shipped domestically from physical inventory (no drop-shipping). Every order is backed by a Package Protection guarantee &mdash; shipments lost, stolen, or damaged in transit are replaced or refunded within a 45-day window; this covers shipping, not product purity. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <Cat label="Metabolic &amp; Weight Loss"><P slug="retatrutide">Retatrutide</P> (listed as Trinity-X), <P slug="tirzepatide">Tirzepatide</P> (listed as GLYCON-X), <P slug="cagrilintide">Cagrilintide</P>, <P slug="mots-c">MOTS-c</P>, <P slug="5-amino-1mq">5-Amino-1MQ</P></Cat>
@@ -78,7 +78,7 @@ export default function RealPeptidesCouponPage() {
               a="Real Peptides carries 75 research compounds spanning metabolic/GLP-class peptides, recovery and repair peptides, growth-hormone secretagogues, skin, and longevity research. Its GLP line uses coded names — Trinity-X is Retatrutide (confirmed on its Certificate of Analysis, identity 'GLP RT'), and GLYCON-X is Tirzepatide, whose vial is labelled 'GLP-2 T' (the GLP-2 tier) and whose product page describes the dual GLP-1/GIP agonist mechanism unique to Tirzepatide, in 15mg, 30mg, and 60mg vials."
             />
             <FAQItem
-              q="Does Real Peptides have a discount code?"
+              q="Does Real Peptides have a coupon code?"
               a={`Yes. Prof. Peptide maintains a verified discount code for Real Peptides — use the "Reveal discount code" button to see it and copy it. It saves ${discountPct}% on any Real Peptides order.`}
             />
             <FAQItem
