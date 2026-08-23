@@ -68,4 +68,7 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   "peptide-partners",
   // New vendor onboarded 2026-08-21 — ships on the current treatment from day one (no untreated baseline).
   "forge-performance-co",
+  // Tier-A rollout PILOT 2026-08-22 (coverage-audit gap-fill): first of the untreated non-control pages
+  // brought to full parity, proving the five-change mechanism before the remaining Tier-A batch.
+  "ascension-peptides",
 ]);

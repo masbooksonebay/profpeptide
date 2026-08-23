@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,15 +23,14 @@ export default function AscensionPeptidesCouponPage() {
       <CouponBreadcrumb slug="ascension-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Ascension Peptides Discount Code &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Ascension Peptides Discount Code: {v.code} &mdash; Save {discountPct}%</h1>
  </div>
- <CouponFacts slug="ascension-peptides" />
  <CouponCodeCard slug="ascension-peptides" className="mb-8" />
 
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Ascension Peptides is a US-based research peptide supplier shipping exclusively within the United States. Ascension distinguishes itself through an extensive catalog of individual peptides and pre-formulated peptide blends and stacks &mdash; combining multiple compounds into single research formulations. Wholesale and distributor tiered pricing programs are available for higher-volume research operations. Popular compounds by research area:
+ Ascension Peptides (ascensionpeptides.com) is a US-based research peptide supplier shipping exclusively within the United States. Ascension distinguishes itself through an extensive catalog of individual peptides and pre-formulated peptide blends and stacks &mdash; combining multiple compounds into single research formulations. Wholesale and distributor tiered pricing programs are available for higher-volume research operations. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -129,11 +127,11 @@ export default function AscensionPeptidesCouponPage() {
  a="Ascension Peptides carries a wide range of individual research peptides and pre-formulated blends. Their catalog includes GLP-1 compounds such as Semaglutide, recovery peptides including BPC-157 and TB-500, growth hormone secretagogues including CJC-1295 and Ipamorelin, skin health compounds including GHK-Cu and Melanotan, and longevity compounds including NAD+, Epithalon, and MOTS-c. Pre-formulated stacks including the Wolverine Stack and GLOW blend are also available."
  />
  <FAQItem
- q="Does Ascension Peptides have a discount code?"
+ q="Does Ascension Peptides have a coupon code?"
  a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Ascension Peptides order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
- q="How do I use the Ascension Peptides discount code?"
+ q="How do I use the Ascension Peptides coupon code?"
  a={`Add your items to cart at ascensionpeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem
