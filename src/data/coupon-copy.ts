@@ -52,6 +52,7 @@ export const couponLead: Record<string, string> = {
   "ignite-peptides": "99%+ purity, per-product COAs", // C
   "improved-peptides": "Freedom Diagnostics & Krause LC-MS COAs; public library", // A (two named labs + rare public COA library)
   "ion-peptide": "Kovera Labs per-lot COAs — LC-MS identity, endotoxin & heavy-metals; public library", // A (named lab, full panel, mass-spec identity, verifiable library)
+  "forge-performance-co": "Three-lab batch COAs with a fentanyl screen, lab-verifiable", // A (three named labs, standout fentanyl screen, publicly verifiable library — no purity figure)
   "la-peptides": "Bioviridian batch COAs, ≥99%, made in USA", // A
   "mile-high-compounds": "Public batch-matched COA library; Chromate + ISO-17025 Vanguard", // A (two named labs, one ISO-accredited)
   "modern-aminos": "ISO-17025 accredited, per-batch COAs", // B (multi-lab + ISO)

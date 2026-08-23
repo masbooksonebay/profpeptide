@@ -412,6 +412,33 @@ export const vendors: Record<string, Vendor> = {
     // price-pull decoder should carry this forward.
     facts: { coa: "library", purityStandard: "99%+", labName: "Kovera Labs", testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin (LAL, ≤0.5 EU/mL), microbial sterility, heavy metals (As/Cd/Pb/Hg)" },
   },
+  "forge-performance-co": {
+    name: "Forge Performance Co",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    // Affiliate link /ref/34/ issued by Forge (2026-08-21) — www + trailing slash, used EXACTLY as
+    // given (curl → 200, no redirect; NOT normalization-sensitive, so new URL() leaves it byte-identical).
+    // 10% is the READER rate — the agreement's tiered commission + personal-discount ladder are NOT the
+    // reader's rate and appear nowhere on the site.
+    url: "https://www.forgeperformanceco.com/ref/34/",
+    detailPage: "/coupons/forge-performance-co",
+    // Onboarded 2026-08-21 (VETTED PASS, not account-gated): Texas LLC, Austin (3801 N Capital of Texas
+    // Hwy, Ste E240-3348) — no ISO/A2LA accreditation printed, so none stated. Public catalog + per-vial
+    // prices (machine-readable → price-pull viable, NOT skip-ledgered). Public batch-searchable COA
+    // LIBRARY at /coas/ + /verify-a-coa/: certs from THREE independent US labs — Freedom Diagnostics,
+    // ILS Laboratories, Kovera Labs — each confirmed on the LAB's own portal (report#/search/access
+    // code), not on Forge's site; cap+crimp color keys to the matching certificate. Panel documented by
+    // the library: HPLC purity, LC-MS identity, net content, heavy metals (ICP-MS), endotoxin USP <85>,
+    // microbial (PCR), + a FENTANYL screen (LC-MS) — rare on the roster and the standout. Purity: site
+    // claims all batches ≥99% (an aggregated RESULT, not a published minimum) → deliberately NOT carried
+    // as a purityStandard fact. Coded GLP line (GLP-RT, GLP-TZ) NOT decoded — naming implies
+    // RT=retatrutide / TZ=tirzepatide but that is UNCONFIRMED (needs first-hand confirmation like
+    // ion-peptide/real-peptides); a future price-pull decoder must carry this forward. Research based on
+    // the site's COA-library/verify pages, not a raw certificate PDF read.
+    facts: { coa: "library", labName: "Freedom Diagnostics, ILS Laboratories, Kovera Labs", testMethods: "HPLC, LC-MS, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals (ICP-MS), endotoxin (USP <85>), microbial sterility (PCR), fentanyl screen (LC-MS)" },
+    blockNote: "Three-lab batch COAs · fentanyl-screened · verify on each lab's portal",
+  },
   "oasis-labs": {
     name: "Oasis Labs",
     code: "PROFPEPTIDE",

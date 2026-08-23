@@ -66,4 +66,6 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // Promoted out of the CONTROL GROUP 2026-08-21 (see ASSIGNMENT note above): a low-ranking,
   // code-attributed page brought onto the treatment; its three former control peers stay excluded.
   "peptide-partners",
+  // New vendor onboarded 2026-08-21 — ships on the current treatment from day one (no untreated baseline).
+  "forge-performance-co",
 ]);

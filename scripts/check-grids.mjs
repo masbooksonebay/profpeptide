@@ -58,6 +58,10 @@ const UNREACHABLE = new Set([
 // 99-purity is Next.js+Payload with a public /api/products, and biopure's woo Store API is
 // reachable with a browser UA) — removed the moment their rows landed.
 const ONBOARDING_BACKLOG = {
+  // Forge onboarded 2026-08-21 (coupon page + registry live). Prices ARE machine-readable — clean
+  // per-vial catalog — so the pull is VIABLE (not skip-ledgered); just not run yet. Also needs the
+  // coded GLP line (GLP-RT, GLP-TZ) decoded first — unconfirmed, so held rather than guessed.
+  "forge-performance-co": { reason: "pull viable (machine-readable per-vial prices) but not run yet; coded GLP-RT/GLP-TZ need decoding before rows land", since: "2026-08-21" },
   // NOVA reports prices in AED; the pull stored them as USD (~3.67x inflated). Pulled its rows
   // from price data as immediate mitigation. Blocked pending a currency decision (refuse non-USD
   // at pull / convert / render native) — see the currency-handling report.
