@@ -31,7 +31,7 @@ export default function GlacierAminosCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Glacier Aminos is a US-based research peptide supplier with domestic fulfillment and USD pricing. The company operates a fully public catalog &mdash; all products, including its three GLP-1 class compounds, are listed and accessible without account gating. Their catalog spans the metabolic GLP category, recovery and repair peptides, longevity compounds, and cosmetic peptides, alongside a small number of proprietary research blends not carried by other Prof. Peptide-tracked vendors. Popular compounds by research area:
+            Glacier Aminos (glacieraminos.shop) is a US-based research peptide supplier with domestic fulfillment and USD pricing. The company operates a fully public catalog &mdash; all products, including its three GLP-1 class compounds, are listed and accessible without account gating. Their catalog spans the metabolic GLP category, recovery and repair peptides, longevity compounds, and cosmetic peptides, alongside a small number of proprietary research blends not carried by other Prof. Peptide-tracked vendors. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">

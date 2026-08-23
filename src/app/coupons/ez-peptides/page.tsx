@@ -30,7 +30,7 @@ export default function EZPeptidesCouponPage() {
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- EZ Peptides is a U.S.-based research-peptide supplier headquartered in Albuquerque, New Mexico, known for fast fulfillment (0&ndash;2 business-day shipping), with an independent Certificate of Analysis on every batch and a self-reported 4.7/5 rating across 176+ reviews (EZ&apos;s own figure; no independent Trustpilot profile exists to corroborate it). Their catalog spans metabolic, recovery, growth-hormone, cognitive, skin, immunity, longevity, and sexual-health research compounds. Popular compounds by research area:
+ EZ Peptides (ezpeptides.com) is a U.S.-based research-peptide supplier headquartered in Albuquerque, New Mexico, known for fast fulfillment (0&ndash;2 business-day shipping), with an independent Certificate of Analysis on every batch and a self-reported 4.7/5 rating across 176+ reviews (EZ&apos;s own figure; no independent Trustpilot profile exists to corroborate it). Their catalog spans metabolic, recovery, growth-hormone, cognitive, skin, immunity, longevity, and sexual-health research compounds. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">

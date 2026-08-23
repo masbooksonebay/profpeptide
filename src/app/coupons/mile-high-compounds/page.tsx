@@ -44,7 +44,7 @@ export default function MileHighCompoundsCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Mile High Compounds is a US-based research-materials supplier with a catalog of 60+ compounds across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator research categories, in vial and capsule formats. The company positions testing transparency as its core differentiator, with same-day shipping. Popular compounds by research area:
+            Mile High Compounds (milehighcompounds.is) is a US-based research-materials supplier with a catalog of 60+ compounds across metabolic, recovery, growth-hormone, cognitive, skin, longevity, and bioregulator research categories, in vial and capsule formats. The company positions testing transparency as its core differentiator, with same-day shipping. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <Cat label="Metabolic & Weight Loss"><P slug="retatrutide">Retatrutide</P>, <P slug="tirzepatide">Tirzepatide</P>, <P slug="semaglutide">Semaglutide</P>, <P slug="mots-c">MOTS-c</P>, <P slug="cagrilintide">Cagrilintide</P>, <P slug="5-amino-1mq">5-Amino-1MQ</P>, <P slug="aod-9604">AOD-9604</P></Cat>

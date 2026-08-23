@@ -31,7 +31,7 @@ export default function NuraPeptideCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Nura Peptide is a US-based research-peptide supplier that ships domestically and publishes a Certificate of Analysis for every batch through a public COA library. Its catalog spans metabolic and GLP-class compounds, recovery and repair peptides, growth-hormone secretagogues, longevity and bioregulator compounds, skin research peptides, and cognitive compounds. Popular compounds by research area:
+            Nura Peptide (nurapeptide.com) is a US-based research-peptide supplier that ships domestically and publishes a Certificate of Analysis for every batch through a public COA library. Its catalog spans metabolic and GLP-class compounds, recovery and repair peptides, growth-hormone secretagogues, longevity and bioregulator compounds, skin research peptides, and cognitive compounds. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">

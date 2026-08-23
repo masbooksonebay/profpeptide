@@ -37,7 +37,7 @@ export default function AminoClubCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Amino Club is a US-based research-peptide vendor with a broad catalog of more than two dozen research compounds spanning metabolic, recovery, growth-hormone, skin, cognitive, immunity, longevity, and sexual-health research. Popular compounds by research area:
+            Amino Club (aminoclub.com) is a US-based research-peptide vendor with a broad catalog of more than two dozen research compounds spanning metabolic, recovery, growth-hormone, skin, cognitive, immunity, longevity, and sexual-health research. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">

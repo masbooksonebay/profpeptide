@@ -28,7 +28,7 @@ export default function MidwestPeptideCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Midwest Peptide is a US-based research-peptide vendor operated by Midwest BioResearch LLC and based in Mission, Kansas. It supplies research-use-only peptides across metabolic, recovery, growth-hormone, skin, cognitive, sleep, longevity, and sexual-health research. Popular compounds by research area:
+            Midwest Peptide (midwestpeptide.com) is a US-based research-peptide vendor operated by Midwest BioResearch LLC and based in Mission, Kansas. It supplies research-use-only peptides across metabolic, recovery, growth-hormone, skin, cognitive, sleep, longevity, and sexual-health research. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
