@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,15 +23,14 @@ export default function RoyalPeptidesCouponPage() {
       <CouponBreadcrumb slug="royal-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Royal Peptides Discount Code &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Royal Peptides Discount Code: {v.code} &mdash; Save {discountPct}%</h1>
  </div>
- <CouponFacts slug="royal-peptides" />
- <CouponCodeCard slug="royal-peptides" className="mb-8" />
+  <CouponCodeCard slug="royal-peptides" className="mb-8" />
 
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Royal Peptides is a US-based research peptide supplier founded in 2023, led by a team with decades of combined experience in biotechnology, logistics, and scientific operations. The company operates fulfillment centers in Texas, Florida, and Indiana within the United States, with additional international logistics hubs in Toronto, Dubai, and Africa &mdash; enabling fast and reliable delivery to researchers worldwide. Same-day shipping is available on orders placed before noon PST. Royal Peptides offers 24/7 customer support and a wholesale program for higher-volume research procurement. Their website also includes a built-in peptide dosage calculator (PepCalc) for researcher convenience. Popular compounds by research area:
+ Royal Peptides (royal-peptides.com) is a US-based research peptide supplier founded in 2023, led by a team with decades of combined experience in biotechnology, logistics, and scientific operations. The company operates fulfillment centers in Texas, Florida, and Indiana within the United States, with additional international logistics hubs in Toronto, Dubai, and Africa &mdash; enabling fast and reliable delivery to researchers worldwide. Same-day shipping is available on orders placed before noon PST. Royal Peptides offers 24/7 customer support and a wholesale program for higher-volume research procurement. Their website also includes a built-in peptide dosage calculator (PepCalc) for researcher convenience. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -132,11 +130,11 @@ export default function RoyalPeptidesCouponPage() {
  a="Royal Peptides carries research-grade peptides across recovery, growth hormone, metabolic, skin health, longevity, cognitive, and sexual health research categories. Their catalog includes compounds such as BPC-157, TB-500, CJC-1295, Ipamorelin, Semaglutide, GHK-Cu, and PT-141 among others."
  />
  <FAQItem
- q="Does Royal Peptides have a discount code?"
+ q="Does Royal Peptides have a coupon code?"
  a={`Yes. Use code PROF10 at checkout to save ${discountPct}% on any Royal Peptides order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
- q="How do I use the Royal Peptides discount code?"
+ q="How do I use the Royal Peptides coupon code?"
  a={`Add your items to cart at royal-peptides.com, proceed to checkout, and enter PROF10 in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem

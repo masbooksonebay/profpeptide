@@ -11,17 +11,21 @@
 // box ("Use code {CODE} at {VENDOR} to save {PCT} on your order."). A vendor NOT in it renders
 // exactly what it renders today — byte-for-byte.
 //
-// ⚠️ RANDOMIZED, NOT BLANKET. Rolled out a few deliberately-chosen slugs at a time so the change
-// stays attributable, not site-wide. A vendor NOT in this Set renders byte-for-byte as before.
+// 🔴 CONTROL GROUP DISSOLVED 2026-08-23 — Mark's decision, final. This began as a RANDOMIZED rollout
+// (a few slugs at a time, with the title-holding / snippet-winning peers held back as a CONTROL
+// GROUP) so the change stayed attributable. That experiment is now OVER: the treatment is proven in
+// live SERPs across the roster, and the Round-1 control baseline was already recorded as unusable
+// (three of the four true controls never had a valid baseline). It is now a BLANKET treatment —
+// every coupon page gets it, with NO exceptions. peptide-partners left the control group 2026-08-21;
+// the remaining former controls — ameano-peptides, modern-aminos, purerawz (the old "do not add
+// them" group) and almighty-peptides, spartan-peptides, royal-peptides, amino-x (the four true
+// controls) — were ALL brought onto the treatment on 2026-08-23. Do NOT re-exclude any of them, and
+// add every new coupon page here as it ships.
 //
-// ASSIGNMENT 2026-08 — the FIVE rewritten-title / no-snippet pages, shipped together WITH the
-// code-in-H1 change as ONE intervention (title↔H1 alignment + prose density). Their title-holding,
-// snippet-winning peers were the CONTROL GROUP, deliberately excluded from BOTH variables.
-// peptide-partners was PROMOTED OUT of that group on 2026-08-21 (Mark's call — it ranks low, so
-// there is little snippet position to protect and its revenue is code-attributed, not
-// SERP-dependent) and is now treated below. ameano-peptides, modern-aminos, and purerawz REMAIN
-// controls — do not add them. (For the record: this treatment has moved PRESENTATION on every page
-// it touched and moved RANK on none; if rank does not improve here, that is the expected outcome.)
+// The ONLY coupon pages not in this Set are the three legacy hardcoded-CopyCode templates —
+// particle-peptides, fusion-peptide, synthesis-peptides — whose code box sits below the prose, so
+// the passage cannot lead without a structural rewrite. They are HELD pending that conversion (not
+// excluded), and join this Set the moment they are converted.
 export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // Stripped cohort (rewritten-title / no-snippet baseline)
   "amino-club",
@@ -39,7 +43,8 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // FULL PARITY with the 7 above (the passage is component-rendered, invisible in page.tsx — which
   // is exactly why the earlier "the 7 are H1→card→prose" read missed it). All 23 were in the
   // 2026-08-19 check:vendors verified set, so "verified as of {CODES_VERIFIED_DATE}" is true for
-  // each. The four salience CONTROLS (almighty, spartan, royal, amino-x) are NOT here — excluded.
+  // each. The four salience controls (almighty, spartan, royal, amino-x) were excluded here at the
+  // time; they were added 2026-08-23 when the control group dissolved (see the header + bottom of Set).
   "99-purity-peptides",
   "alpha-peptides",
   "amp-peptides",
@@ -63,8 +68,8 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   "treasure-coast-peptides",
   "valkyrie-peptides",
   "vital-core-research",
-  // Promoted out of the CONTROL GROUP 2026-08-21 (see ASSIGNMENT note above): a low-ranking,
-  // code-attributed page brought onto the treatment; its three former control peers stay excluded.
+  // Promoted out of the CONTROL GROUP 2026-08-21: a low-ranking, code-attributed page brought onto
+  // the treatment ahead of the rest; its former control peers followed on 2026-08-23 (see header).
   "peptide-partners",
   // New vendor onboarded 2026-08-21 — ships on the current treatment from day one (no untreated baseline).
   "forge-performance-co",
@@ -79,4 +84,14 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   "biopure-peptides",
   "ignite-peptides",
   "oasis-labs",
+  // CONTROL GROUP DISSOLVED 2026-08-23 (Mark's decision — see header): the seven former controls
+  // brought onto the treatment. ameano-peptides / modern-aminos / purerawz were the "do not add
+  // them" group; almighty / spartan / royal / amino-x were the four true salience controls.
+  "almighty-peptides",
+  "amino-x",
+  "royal-peptides",
+  "spartan-peptides",
+  "ameano-peptides",
+  "modern-aminos",
+  "purerawz",
 ]);

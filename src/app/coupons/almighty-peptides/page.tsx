@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,15 +23,14 @@ export default function AlmightyPeptidesCouponPage() {
       <CouponBreadcrumb slug="almighty-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Almighty Peptides Discount Code &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Almighty Peptides Discount Code: {v.code} &mdash; Save {discountPct}%</h1>
  </div>
- <CouponFacts slug="almighty-peptides" />
- <CouponCodeCard slug="almighty-peptides" className="mb-8" />
+  <CouponCodeCard slug="almighty-peptides" className="mb-8" />
 
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Almighty Peptides is a US-based research compound supplier headquartered in Lantana, Florida. The company&apos;s team brings over a decade of experience in the research supply industry and has been shipping products internationally since the early 2000s &mdash; one of the longest-established operations on our vendor list. Almighty Peptides offers a 100% money-back guarantee and free shipping on orders over $200. A standout feature of their pricing model is the Buy 1 Get 1 Free offer available on the majority of their product catalog, effectively doubling the value of most orders. Popular compounds by research area:
+ Almighty Peptides (almightypeptides.com) is a US-based research compound supplier headquartered in Lantana, Florida. The company&apos;s team brings over a decade of experience in the research supply industry and has been shipping products internationally since the early 2000s &mdash; one of the longest-established operations on our vendor list. Almighty Peptides offers a 100% money-back guarantee and free shipping on orders over $200. A standout feature of their pricing model is the Buy 1 Get 1 Free offer available on the majority of their product catalog, effectively doubling the value of most orders. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -117,11 +115,11 @@ export default function AlmightyPeptidesCouponPage() {
  a="Almighty Peptides carries 60+ research compounds across three delivery formats. Their lyophilized peptide catalog includes metabolic compounds such as Semaglutide, Tirzepatide, and Retatrutide, recovery peptides including BPC-157 and TB-500, growth hormone secretagogues including CJC-1295, Ipamorelin, Sermorelin, and Tesamorelin, longevity compounds including NAD+, Epitalon, and MOTS-c, skin health compounds including GHK-Cu, and sexual health compounds including PT-141 and Melanotan II. Their capsule catalog includes BPC-157, GHK-Cu, Methylene Blue, MK-677, LGD-4033, and SLU-PP-332. Their liquids catalog covers SARMs, aromatase inhibitors, and other research chemicals."
  />
  <FAQItem
- q="Does Almighty Peptides have a discount code?"
+ q="Does Almighty Peptides have a coupon code?"
  a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Almighty Peptides order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
- q="How do I use the Almighty Peptides discount code?"
+ q="How do I use the Almighty Peptides coupon code?"
  a={`Add your items to cart at almightypeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem

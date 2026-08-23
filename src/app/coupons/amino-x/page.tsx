@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,15 +23,14 @@ export default function AminoXCouponPage() {
       <CouponBreadcrumb slug="amino-x" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Amino X Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Amino X Discount Code: {v.code} &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="amino-x" />
-      <CouponCodeCard slug="amino-x" className="mb-8" />
+            <CouponCodeCard slug="amino-x" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Amino X (AMINO X LLC) is a US-based research-peptide vendor with a focused catalog spanning metabolic, recovery, growth-hormone, cognitive, and skin-health research &mdash; 17 listings, shown with live prices below. It offers free shipping on orders over $200, and the vendor also circulates a public AMINO15 discount code. Profile-backed compounds by research area:
+            Amino X (AMINO X LLC, aminox.net) is a US-based research-peptide vendor with a focused catalog spanning metabolic, recovery, growth-hormone, cognitive, and skin-health research &mdash; 17 listings, shown with live prices below. It offers free shipping on orders over $200, and the vendor also circulates a public AMINO15 discount code. Profile-backed compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -99,11 +97,11 @@ export default function AminoXCouponPage() {
               a="Amino X carries research compounds across metabolic, recovery, growth-hormone, cognitive, and skin-health categories. Profile-backed compounds include MOTS-c, Retatrutide, Tirzepatide, BPC-157, TB-500, CJC-1295, Tesamorelin, GHK-Cu, and Selank, along with the KLOW blend."
             />
             <FAQItem
-              q="Does Amino X have a discount code?"
+              q="Does Amino X have a coupon code?"
               a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Amino X order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
-              q="How do I use the Amino X discount code?"
+              q="How do I use the Amino X coupon code?"
               a={`Add your items to cart at aminox.net, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem

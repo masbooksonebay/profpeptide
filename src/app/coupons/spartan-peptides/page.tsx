@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { vendors } from "@/data/vendors";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
@@ -27,15 +26,14 @@ export default function SpartanPeptidesCouponPage() {
       <CouponBreadcrumb slug="spartan-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Spartan Peptides Discount Code &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Spartan Peptides Discount Code: {v.code} &mdash; Save {discountPct}%</h1>
  </div>
- <CouponFacts slug="spartan-peptides" />
- <CouponCodeCard slug="spartan-peptides" className="mb-8" />
+  <CouponCodeCard slug="spartan-peptides" className="mb-8" />
 
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Spartan Peptides is a US-based research-peptide supplier offering a focused catalog of compounds at &ge;98% HPLC-verified purity, with same-day domestic dispatch. Their range spans metabolic and GLP compounds, tissue-repair and growth-hormone peptides, cognitive and longevity research compounds, and pre-built stacks.
+ Spartan Peptides (spartanpeptides.com) is a US-based research-peptide supplier offering a focused catalog of compounds at &ge;98% HPLC-verified purity, with same-day domestic dispatch. Their range spans metabolic and GLP compounds, tissue-repair and growth-hormone peptides, cognitive and longevity research compounds, and pre-built stacks.
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -120,11 +118,11 @@ export default function SpartanPeptidesCouponPage() {
  a="Spartan Peptides carries research compounds across eight categories. Anti-aging and cellular health compounds include GHK-Cu, Epitalon, NAD+, and MOTS-c. Recovery and repair peptides include BPC-157 and TB-500. Their weight loss catalog features GLP-3 (Retatrutide). Muscle development compounds include IGF-1 LR3. Additional categories cover sexual health (PT-141), mood and sleep, focus and clarity, and immunity compounds."
  />
  <FAQItem
- q="Does Spartan Peptides have a discount code?"
+ q="Does Spartan Peptides have a coupon code?"
  a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Spartan Peptides order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
- q="How do I use the Spartan Peptides discount code?"
+ q="How do I use the Spartan Peptides coupon code?"
  a={`Add your items to cart at spartanpeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem
