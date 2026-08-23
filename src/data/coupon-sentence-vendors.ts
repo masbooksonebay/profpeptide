@@ -71,4 +71,12 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // Tier-A rollout PILOT 2026-08-22 (coverage-audit gap-fill): first of the untreated non-control pages
   // brought to full parity, proving the five-change mechanism before the remaining Tier-A batch.
   "ascension-peptides",
+  // Tier-A rollout BATCH 2026-08-22 — the five standard-structure untreated pages, brought to parity in
+  // one pass after the ascension pilot. (particle-peptides is held: it is a legacy hardcoded-CopyCode
+  // template like fusion/synthesis, needing a structural conversion — handled separately, not batched.)
+  "aero-peptides",
+  "biocollex",
+  "biopure-peptides",
+  "ignite-peptides",
+  "oasis-labs",
 ]);

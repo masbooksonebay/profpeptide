@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -26,15 +25,14 @@ export default function BioCollexCouponPage() {
       <CouponBreadcrumb slug="biocollex" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">BioCollex Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">BioCollex Discount Code: {v.code} &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="biocollex" />
       <CouponCodeCard slug="biocollex" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            BioCollex is a U.S.-based peptide supplier headquartered in Oakland, Maryland, focused on providing research-grade compounds for laboratory use. All products are independently tested to a 99% purity standard by Freedom Diagnostics (FreedomDiagnosticsTesting.com), and BioCollex states they are synthesized by a C-GMP certified manufacturer. Every batch ships with a batch-matched Certificate of Analysis &mdash; reporting purity by HPLC-UV, identity by LC-MS, and net peptide content, with a per-lot accession and search code searchable at FreedomDiagnosticsTesting.com &mdash; for full traceability and reproducibility.
+            BioCollex (biocollexresearch.com) is a U.S.-based peptide supplier headquartered in Oakland, Maryland, focused on providing research-grade compounds for laboratory use. All products are independently tested to a 99% purity standard by Freedom Diagnostics (FreedomDiagnosticsTesting.com), and BioCollex states they are synthesized by a C-GMP certified manufacturer. Every batch ships with a batch-matched Certificate of Analysis &mdash; reporting purity by HPLC-UV, identity by LC-MS, and net peptide content, with a per-lot accession and search code searchable at FreedomDiagnosticsTesting.com &mdash; for full traceability and reproducibility.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             BioCollex is known for fast fulfillment &mdash; all orders placed before 3 PM EST ship same day, with delivery in 2&ndash;3 business days. Free shipping is available on U.S. orders over $200. The company emphasizes competitive pricing and responsive 24/7 customer support.
@@ -116,11 +114,11 @@ export default function BioCollexCouponPage() {
  a="The BioCollex catalog includes a strong selection of research compounds including Retatrutide, Tirzepatide, BPC-157, TB-500, GHK-Cu, NAD+, Semax, Selank, PT-141, Tesamorelin, CJC-1295, Ipamorelin, and more. Pre-formulated blends such as the Wolverine Stack (BPC-157 + TB-500) are also available."
  />
             <FAQItem
-              q="Does BioCollex have a discount code?"
+              q="Does BioCollex have a coupon code?"
               a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any BioCollex order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
-              q="How do I use the BioCollex discount code?"
+              q="How do I use the BioCollex coupon code?"
               a={`Add your items to cart at biocollexresearch.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem

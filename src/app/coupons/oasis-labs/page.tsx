@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,15 +23,14 @@ export default function OasisLabsCouponPage() {
       <CouponBreadcrumb slug="oasis-labs" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Oasis Labs Discount Code &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Oasis Labs Discount Code: {v.code} &mdash; Save {discountPct}%</h1>
  </div>
- <CouponFacts slug="oasis-labs" />
  <CouponCodeCard slug="oasis-labs" className="mb-8" />
 
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Oasis Labs is a veteran-owned research peptide supplier based in Las Vegas, Nevada. Founded by researchers who were dissatisfied with the inconsistency, poor service, and lack of transparency prevalent in the peptide industry, the company operates with a stated commitment to discipline, honesty, and transparency that reflects its veteran ownership. All customer service and order fulfillment is handled in-house at their Las Vegas facility by dedicated staff &mdash; not outsourced. The company offers a loyalty rewards program (Oasis Rewards) providing cash back and tier-based discounts for returning customers.
+ Oasis Labs (myoasislabs.com) is a veteran-owned research peptide supplier based in Las Vegas, Nevada. Founded by researchers who were dissatisfied with the inconsistency, poor service, and lack of transparency prevalent in the peptide industry, the company operates with a stated commitment to discipline, honesty, and transparency that reflects its veteran ownership. All customer service and order fulfillment is handled in-house at their Las Vegas facility by dedicated staff &mdash; not outsourced. The company offers a loyalty rewards program (Oasis Rewards) providing cash back and tier-based discounts for returning customers.
  </p>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
  Oasis Labs maintains a broad research catalog spanning metabolic, recovery, performance, growth-hormone, cognitive, skin, immunity, sleep, longevity, and sexual-health research. Popular compounds by research area:
@@ -132,11 +130,11 @@ export default function OasisLabsCouponPage() {
  a="Oasis Labs carries research-grade peptides across recovery, growth hormone, metabolic, cognitive, and longevity categories. Their catalog includes compounds such as BPC-157, TB-500, CJC-1295, Ipamorelin, Semaglutide, GHK-Cu, and Thymosin Alpha-1, among others."
  />
  <FAQItem
- q="Does Oasis Labs have a discount code?"
+ q="Does Oasis Labs have a coupon code?"
  a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Oasis Labs order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
- q="How do I use the Oasis Labs discount code?"
+ q="How do I use the Oasis Labs coupon code?"
  a={`Add your items to cart at myoasislabs.com, proceed to checkout, and enter PROFPEPTIDE in the promo code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem

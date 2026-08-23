@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -24,15 +23,14 @@ export default function IgnitePeptidesCouponPage() {
       <CouponBreadcrumb slug="ignite-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Ignite Peptides Discount Code &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Ignite Peptides Discount Code: {v.code} &mdash; Save {discountPct}%</h1>
  </div>
- <CouponFacts slug="ignite-peptides" />
  <CouponCodeCard slug="ignite-peptides" className="mb-8" />
 
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Ignite Peptides is a US-based research peptide supplier founded in 2022 and headquartered in Owatonna, Minnesota. The company serves academic researchers, independent scientists, and professional laboratories across the United States, with a catalog of over 40 research-grade peptides spanning metabolic, recovery, growth hormone, cognitive, and longevity research categories. All orders ship domestically from within the United States with discreet packaging and encrypted payment systems. Popular compounds by research area:
+ Ignite Peptides (ignitepeptides.com) is a US-based research peptide supplier founded in 2022 and headquartered in Owatonna, Minnesota. The company serves academic researchers, independent scientists, and professional laboratories across the United States, with a catalog of over 40 research-grade peptides spanning metabolic, recovery, growth hormone, cognitive, and longevity research categories. All orders ship domestically from within the United States with discreet packaging and encrypted payment systems. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -120,11 +118,11 @@ export default function IgnitePeptidesCouponPage() {
  a="Ignite Peptides carries 40+ research-grade compounds across metabolic, recovery, growth hormone, and longevity categories. Their catalog includes compounds such as BPC-157, TB-500, CJC-1295, Semaglutide, and Retatrutide, alongside a broad range of additional peptides for diverse research applications."
  />
  <FAQItem
- q="Does Ignite Peptides have a discount code?"
+ q="Does Ignite Peptides have a coupon code?"
  a={`Yes. Use code PROF10 at checkout to save ${discountPct}% on your Ignite Peptides order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
- q="How do I use the Ignite Peptides discount code?"
+ q="How do I use the Ignite Peptides coupon code?"
  a={`Add your items to cart at ignitepeptides.com, proceed to checkout, and enter PROF10 in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem

@@ -4,7 +4,6 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CouponFacts } from "@/components/CouponFacts";
 import { vendors } from "@/data/vendors";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
@@ -27,15 +26,14 @@ export default function AeroPeptidesCouponPage() {
       <CouponBreadcrumb slug="aero-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Aero Peptides Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Aero Peptides Discount Code: {v.code} &mdash; Save {discountPct}%</h1>
       </div>
-      <CouponFacts slug="aero-peptides" />
       <CouponCodeCard slug="aero-peptides" className="mb-8" />
 
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Aero Peptides is a US-based, domestically sourced research-peptide vendor with a catalog of 25 research compounds spanning cellular health &amp; longevity, growth-hormone support, immune, metabolic, skin, recovery, and multi-peptide blends. All material is research-use-only (not for human consumption). Popular compounds by research area:
+            Aero Peptides (aeropeptides.com) is a US-based, domestically sourced research-peptide vendor with a catalog of 25 research compounds spanning cellular health &amp; longevity, growth-hormone support, immune, metabolic, skin, recovery, and multi-peptide blends. All material is research-use-only (not for human consumption). Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -121,11 +119,11 @@ export default function AeroPeptidesCouponPage() {
               a="Aero carries 25 research compounds across cellular health & longevity, growth-hormone support, immune, metabolic, skin, recovery, and multi-peptide blends. Its GLP/metabolic line is sold under code names: Retatrutide (listed as GLP3 – Reta), Tirzepatide (listed as GLP1 – Tirz), and Semaglutide (listed as GLP1 – Semaglutide), alongside SS-31, MOTS-C, NAD+, BPC-157, TB-500, GHK-Cu, CJC-1295, Tesamorelin, and the KLOW and GLOW blends."
             />
             <FAQItem
-              q="Does Aero Peptides have a discount code?"
+              q="Does Aero Peptides have a coupon code?"
               a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Aero Peptides order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
-              q="How do I use the Aero Peptides discount code?"
+              q="How do I use the Aero Peptides coupon code?"
               a="Add your items to cart at aeropeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The discount will be applied to your order total. Domestic shipping is free over $150."
             />
             <FAQItem
