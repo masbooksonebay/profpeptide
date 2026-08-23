@@ -1,11 +1,9 @@
 "use client";
 
 import FAQItem from "@/components/FAQItem";
-import { CopyCode } from "@/components/CopyCode";
-import { CouponPills } from "@/components/CouponPills";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
-import { RegionPill } from "@/components/RegionPill";
+import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { vendors } from "@/data/vendors";
 import { vendorDiscountPct } from "@/data/prices";
 
@@ -21,17 +19,14 @@ export default function ParticlePeptidesCouponPage() {
       <CouponBreadcrumb slug="particle-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Particle Peptides Discount Code &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Particle Peptides Discount Code: {v.code} &mdash; Save {discountPct}%</h1>
  </div>
- <div className="flex flex-wrap items-center gap-2 mb-8">
- <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
- <RegionPill slug="particle-peptides" />
- </div>
+ <CouponCodeCard slug="particle-peptides" className="mb-8" />
 
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Particle Peptides is a European research peptide supplier headquartered in Lucenec, Slovakia (PARTICLE s.r.o., Kolonada 4490/18, Lucenec 984 01), serving research institutes, universities, laboratories, and individual researchers worldwide. It describes itself as ten years on the market &mdash; consistent with its particlepeptides.com domain, registered in 2015 &mdash; and states it serves over 10,000 clients. Particle also reports a self-reported 4.9/5 rating from 323 reviews (the vendor&apos;s own figure; no independent Trustpilot profile exists to corroborate it). Particle Peptides ships internationally. Their website includes a built-in peptide dosage calculator and an educational blog covering peptide science and research. Particle Peptides also proactively warns customers about fake and cloned websites impersonating their brand. Popular compounds by research area:
+ Particle Peptides (particlepeptides.com) is a European research peptide supplier headquartered in Lucenec, Slovakia (PARTICLE s.r.o., Kolonada 4490/18, Lucenec 984 01), serving research institutes, universities, laboratories, and individual researchers worldwide. It describes itself as ten years on the market &mdash; consistent with its particlepeptides.com domain, registered in 2015 &mdash; and states it serves over 10,000 clients. Particle also reports a self-reported 4.9/5 rating from 323 reviews (the vendor&apos;s own figure; no independent Trustpilot profile exists to corroborate it). Particle Peptides ships internationally. Their website includes a built-in peptide dosage calculator and an educational blog covering peptide science and research. Particle Peptides also proactively warns customers about fake and cloned websites impersonating their brand. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -97,20 +92,6 @@ export default function ParticlePeptidesCouponPage() {
  </p>
  </div>
 
- <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
- <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
- <CopyCode code="PROFPEPTIDE" size="large" />
- <CouponPills slug="particle-peptides" />
- <a
- href={v.url}
- target="_blank"
- rel="noopener noreferrer sponsored"
- className="btn-primary w-full text-center block"
- >
- Shop Particle Peptides</a>
- </div>
-
-
  <div>
  <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
  <div className="space-y-2">
@@ -119,11 +100,11 @@ export default function ParticlePeptidesCouponPage() {
  a="Particle Peptides carries 25 research compounds across eight categories. Healing and regeneration compounds include BPC-157, TB-500, GHK-Cu, LL-37, and KPV. Growth hormone secretagogues include Ipamorelin, CJC-1295 with DAC, Mod GRF 1-29 (CJC-1295 no DAC), GHRP-2, GHRP-6, and Hexarelin. Longevity and anti-aging compounds include Epithalon, MOTS-c, Pinealon, Thymalin, and Thymosin Alpha-1. Weight loss compounds include Retatrutide and AOD-9604. Cognitive compounds include Semax and Selank. Sleep research compounds include DSIP. Reproductive health compounds include Melanotan 2. Their specialty catalog also includes FOXO4-DRI (Proxofim), a rare senolytic compound."
  />
  <FAQItem
- q="Does Particle Peptides have a discount code?"
+ q="Does Particle Peptides have a coupon code?"
  a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Particle Peptides order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
- q="How do I use the Particle Peptides discount code?"
+ q="How do I use the Particle Peptides coupon code?"
  a={`Add your items to cart at particlepeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem

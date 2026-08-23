@@ -22,10 +22,11 @@
 // controls) — were ALL brought onto the treatment on 2026-08-23. Do NOT re-exclude any of them, and
 // add every new coupon page here as it ships.
 //
-// The ONLY coupon pages not in this Set are the three legacy hardcoded-CopyCode templates —
-// particle-peptides, fusion-peptide, synthesis-peptides — whose code box sits below the prose, so
-// the passage cannot lead without a structural rewrite. They are HELD pending that conversion (not
-// excluded), and join this Set the moment they are converted.
+// particle-peptides was CONVERTED to the standard CouponCodeCard template on 2026-08-23 (mirrored
+// nova-labs) and treated. The ONLY coupon pages still not in this Set are the two remaining legacy
+// hardcoded-CopyCode templates — fusion-peptide, synthesis-peptides — whose code box sits below the
+// prose, so the passage cannot lead without the same structural rewrite. They are HELD pending that
+// conversion (not excluded), and join this Set the moment they are converted.
 export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // Stripped cohort (rewritten-title / no-snippet baseline)
   "amino-club",
@@ -77,8 +78,8 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // brought to full parity, proving the five-change mechanism before the remaining Tier-A batch.
   "ascension-peptides",
   // Tier-A rollout BATCH 2026-08-22 — the five standard-structure untreated pages, brought to parity in
-  // one pass after the ascension pilot. (particle-peptides is held: it is a legacy hardcoded-CopyCode
-  // template like fusion/synthesis, needing a structural conversion — handled separately, not batched.)
+  // one pass after the ascension pilot. (particle-peptides was held here as a legacy template; it was
+  // converted to the standard CouponCodeCard structure and treated on 2026-08-23 — see bottom of Set.)
   "aero-peptides",
   "biocollex",
   "biopure-peptides",
@@ -94,4 +95,9 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   "ameano-peptides",
   "modern-aminos",
   "purerawz",
+  // Legacy template CONVERTED 2026-08-23: particle-peptides was a hardcoded-CopyCode page with its
+  // code box below the prose; rebuilt on the standard CouponCodeCard structure (mirrored nova-labs,
+  // the treated non-US precedent) so the salience pair leads. EU context preserved in prose +
+  // registry region. fusion-peptide and synthesis-peptides remain the only legacy pages left.
+  "particle-peptides",
 ]);
