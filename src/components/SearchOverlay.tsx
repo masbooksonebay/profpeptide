@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Fuse from "fuse.js";
 import { searchIndex, categoryLabels, type SearchCategory, type SearchEntry } from "@/lib/search-index";
+import { expandQuery } from "@/data/search-aliases";
 import { routes } from "@/data/routes";
 
 // Order + vocabulary mirror the top nav. Labels/hrefs/sublines come from the canonical route
@@ -25,8 +26,21 @@ const QUICK_LINKS: SearchEntry[] = [
   quick(routes.calculator),
 ];
 
-const CATEGORY_ORDER: SearchCategory[] = ["peptide", "supplement", "comparison", "news", "page"];
-const MAX_RESULTS = 10;
+// Tiebreak order only — groups actually render ordered by their best match score (below), so the
+// category holding the strongest hit is shown first. Used when two categories tie on score.
+const CATEGORY_ORDER: SearchCategory[] = [
+  "peptide", "guide", "comparison", "price", "coupon", "supplement", "glossary", "news", "page",
+];
+const MAX_RESULTS = 12;
+// Tuning (verified against real queries — see the task report). threshold gates Fuse's fuzzy
+// matcher; SCORE_FLOOR then drops weak matches that slipped under it (0 = perfect, 1 = worst), so
+// a stray fuzzy near-miss like "syringe"→"serine" no longer surfaces once real content is indexed.
+const THRESHOLD = 0.34;
+const SCORE_FLOOR = 0.4;
+// Glossary entries are reference micro-terms that all point to the single /glossary page, so they
+// must never outrank a dedicated content page for the same word (e.g. "syringe" → the guide, not
+// the "Insulin Syringe" glossary line). They render below every primary-content group.
+const referenceTier = (cat: SearchCategory): number => (cat === "glossary" ? 1 : 0);
 
 interface Props {
   isOpen: boolean;
@@ -46,9 +60,10 @@ export default function SearchOverlay({ isOpen, onClose }: Props) {
           { name: "tags", weight: 0.2 },
           { name: "description", weight: 0.1 },
         ],
-        threshold: 0.4,
+        threshold: THRESHOLD,
         ignoreLocation: true,
         includeScore: true,
+        minMatchCharLength: 2,
       }),
     []
   );
@@ -84,18 +99,36 @@ export default function SearchOverlay({ isOpen, onClose }: Props) {
 
   const results = useMemo(() => {
     const q = query.trim();
-    if (!q) return [] as SearchEntry[];
-    return fuse.search(q).slice(0, MAX_RESULTS).map((r) => r.item);
+    if (!q) return [] as { item: SearchEntry; score: number }[];
+    // Expand synonyms/abbreviations/brands (src/data/search-aliases.ts) BEFORE matching, then drop
+    // weak fuzzy matches with the score floor so only genuine hits surface.
+    const expanded = expandQuery(q);
+    return fuse
+      .search(expanded)
+      .filter((r) => (r.score ?? 1) <= SCORE_FLOOR)
+      .slice(0, MAX_RESULTS)
+      .map((r) => ({ item: r.item, score: r.score ?? 1 }));
   }, [query, fuse]);
 
-  const grouped = useMemo(() => {
+  // Group by category, ordering the groups by their best (lowest) score so the category holding the
+  // single strongest match renders first — the top result is always the first thing shown.
+  const orderedGroups = useMemo(() => {
     const map = new Map<SearchCategory, SearchEntry[]>();
-    for (const entry of results) {
-      const arr = map.get(entry.category) ?? [];
-      arr.push(entry);
-      map.set(entry.category, arr);
+    const best = new Map<SearchCategory, number>();
+    for (const { item, score } of results) {
+      const arr = map.get(item.category) ?? [];
+      arr.push(item);
+      map.set(item.category, arr);
+      best.set(item.category, Math.min(best.get(item.category) ?? 1, score));
     }
-    return map;
+    return Array.from(map.keys())
+      .sort(
+        (a, b) =>
+          referenceTier(a) - referenceTier(b) ||
+          (best.get(a)! - best.get(b)!) ||
+          CATEGORY_ORDER.indexOf(a) - CATEGORY_ORDER.indexOf(b)
+      )
+      .map((cat) => [cat, map.get(cat)!] as const);
   }, [results]);
 
   if (!isOpen) return null;
@@ -167,12 +200,12 @@ export default function SearchOverlay({ isOpen, onClose }: Props) {
           )}
 
           {trimmed && results.length > 0 &&
-            CATEGORY_ORDER.filter((cat) => grouped.has(cat)).map((cat) => (
+            orderedGroups.map(([cat, items]) => (
               <div key={cat} className="py-2">
                 <div className="px-4 pt-3 pb-2 text-xs uppercase tracking-wide text-gray-400 dark:text-slate-500">
                   {categoryLabels[cat]}
                 </div>
-                {grouped.get(cat)!.map((entry) => (
+                {items.map((entry) => (
                   <ResultRow key={entry.url} entry={entry} onSelect={handleSelect} />
                 ))}
               </div>
