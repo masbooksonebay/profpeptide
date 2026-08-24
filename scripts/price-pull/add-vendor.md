@@ -6,6 +6,13 @@ suite already knows is in `pricepull/`; this is the human decision path around i
 
 Run from `scripts/price-pull/`. Read-only until the final `--write`.
 
+> **Scope.** This is the *price-pull* path (steps 1–6). A **coupon-page-only** vendor —
+> one added to `vendors.ts` with a `/coupons/<slug>` page but no price grid (capstone,
+> valkyrie, particle) — skips steps 1–6 entirely and never opens this doc. It still needs
+> **[step 7 (Activate the verified pill)](#7-activate-the-verified-pill)** — that step is the
+> one thing every onboarding path shares. There is no separate runbook for the coupon-only
+> path yet; until there is, treat step 7 as its checklist.
+
 ---
 
 ## 1. Detect the platform
@@ -114,3 +121,35 @@ python3 refresh.py --vendor new-vendor --write      # replace/append the section
 
 `pulled:` is stamped with today's date automatically. Review the diff, then commit the doc
 by explicit path. **Do not push** — parked, per the standing workflow.
+
+## 7. Activate the verified pill
+
+Adding the vendor to `vendors.ts` with a `/coupons/<slug>` page makes it **active**, but the
+coupon page's "✓ Verified" pill and its SERP-facing verified date render only for slugs in
+`VENDORS_VERIFIED_SLUGS` (`src/data/vendors-verified.generated.ts`) — the machine set written by
+a clean `scripts/check-vendors.mjs` run. A newly-added vendor is absent from that set until the
+check runs, so **it ships pill-less**. Close that as part of the onboarding change:
+
+```bash
+npm run check:vendors      # fetches every active affiliate link; needs live network, NOT in CI
+```
+
+- Confirm the new slug lands in `VENDORS_VERIFIED_SLUGS` (a clean run means its link was reachable).
+- If the run reports the vendor's link **DEAD**, it exits non-zero and **excludes** the slug — fix
+  the affiliate URL (or retire the vendor) before onboarding. Never commit a pill the link didn't earn.
+- Commit the regenerated `src/data/vendors-verified.generated.ts` in the **same PR** as the vendor,
+  by explicit path. (The run also advances the freshness stamp to today — that's expected.)
+
+**The trip-wire — a build-log warning is the signal, not noise.** The build chain *cannot* run
+`check:vendors` (it hits ~48 live third-party sites), so three guards WARN instead of failing:
+`check:verified-membership`, `check:surfaces`, `check:freshness`. A line like
+
+```
+!!  MISSING VERIFIED PILL (warning — build continues, deploys not blocked)
+!!      • new-vendor-slug
+!!  Fix: npm run check:vendors, then commit src/data/vendors-verified.generated.ts
+```
+
+means exactly one thing: **a new active vendor never got step 7.** It is actionable — run the check
+and commit the stamp. (This is how the Forge gap was found: the warning fired correctly for days; it
+just wasn't acted on. Don't let it scroll past.)
