@@ -53,9 +53,9 @@ export default function LegendaryPeptidesCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Sleep</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>, <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>, <Link href="/peptides/adamax" className="text-[#3A759F] hover:underline">Adamax</Link>
+                <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>, <Link href="/peptides/adamax" className="text-[#3A759F] hover:underline">Adamax</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -65,18 +65,30 @@ export default function LegendaryPeptidesCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Gut Health &amp; Immunity</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Recovery</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
               <dd className="text-gray-600 dark:text-slate-300">
                 <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>, <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual &amp; Gut Health</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual Health</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
+                <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin</Link>
               </dd>
             </div>
-          </dl>
+</dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Every Legendary Peptides product page carries a downloadable Certificate of Analysis from Freedom Diagnostics, an independent US lab (FreedomDiagnosticsTesting.com). Each certificate is batch-matched to a lot number and reports identity by LC-MS, purity by HPLC-UV, net peptide content, and endotoxin by an LAL assay run in duplicate under USP &lt;85&gt; (≤0.05 EU/mL sensitivity); it carries a per-lot accession and search code &mdash; recent certificates add a QR code &mdash; searchable at FreedomDiagnosticsTesting.com. The most recent Legendary lots extend the panel with a PCR microbial screen and a fentanyl screen, both reported as passing, and Legendary states that fentanyl screening of internationally sourced material is a standing part of its sourcing checks.
           </p>

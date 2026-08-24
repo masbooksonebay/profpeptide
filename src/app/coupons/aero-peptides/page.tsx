@@ -55,6 +55,12 @@ export default function AeroPeptidesCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/adamax" className="text-[#3A759F] hover:underline">Adamax</Link>, <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin, Hair &amp; Cosmetic</dt>
               <dd className="text-gray-600 dark:text-slate-300">
                 <Link href="/peptides/melanotan-i" className="text-[#3A759F] hover:underline">Melanotan I</Link>, <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>, <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>
@@ -63,7 +69,7 @@ export default function AeroPeptidesCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Immune &amp; Inflammatory</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/adamax" className="text-[#3A759F] hover:underline">Adamax</Link>, <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
+                <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -84,7 +90,7 @@ export default function AeroPeptidesCouponPage() {
                 Bacteriostatic Water
               </dd>
             </div>
-          </dl>
+</dl>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-4 bg-gray-50 dark:bg-[#1e293b] mb-4">
             <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
               <span className="font-semibold text-[#16181B] dark:text-slate-100">Finding the GLP compounds on Aero&apos;s site:</span> Aero lists its metabolic/GLP peptides under code names. Retatrutide (GLP3 – Reta), Tirzepatide (GLP1 – Tirz), and Semaglutide (GLP1 – Semaglutide) &mdash; search those codes in the Aero catalog to reach the corresponding product page. These GLP1/GLP3 labels are Aero&apos;s own SKU codes, not the standard GLP-1/2/3 tier convention (in which GLP-1 denotes Semaglutide) &mdash; on Aero&apos;s site both Tirzepatide and Semaglutide carry a GLP1 prefix.

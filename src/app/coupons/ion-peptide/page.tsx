@@ -42,9 +42,10 @@ export default function IonPeptideCouponPage() {
             <Cat label="Recovery &amp; Tissue Repair"><P slug="bpc-157">BPC-157</P>, <P slug="tb-500">TB-500</P>, <P slug="kpv">KPV</P>, <P slug="wolverine-stack">Wolverine (BPC-157 + TB-500)</P></Cat>
             <Cat label="Growth Hormone"><P slug="cjc-1295">CJC-1295</P>, <P slug="ipamorelin">Ipamorelin</P>, <P slug="ghrp-2">GHRP-2</P>, <P slug="ghrp-6">GHRP-6</P>, <P slug="hgh-fragment-176-191">Fragment 176-191</P></Cat>
             <Cat label="Skin Health &amp; Anti-Aging"><P slug="ghk-cu">GHK-Cu</P>, <P slug="glow">GLOW</P>, <P slug="klow">KLOW</P>, <P slug="melanotan-i">Melanotan I</P>, <P slug="melanotan-ii">Melanotan II</P></Cat>
-            <Cat label="Longevity &amp; Cognitive"><P slug="epitalon">Epitalon</P>, <P slug="glutathione">Glutathione</P>, <P slug="foxo4-dri">FOXO4-DRI</P>, <P slug="dsip">DSIP</P></Cat>
+            <Cat label="Sleep &amp; Recovery"><P slug="dsip">DSIP</P></Cat>
+            <Cat label="Longevity"><P slug="epitalon">Epitalon</P>, <P slug="glutathione">Glutathione</P>, <P slug="foxo4-dri">FOXO4-DRI</P></Cat>
             <Cat label="Sexual Health"><P slug="pt-141">PT-141</P></Cat>
-          </dl>
+</dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Ion labels its GLP-class metabolic compounds with coded names that follow the GLP-1/2/3 tier convention: ION-1S is Semaglutide, ION-2T is Tirzepatide, and ION-3R is Retatrutide. We list each under both its compound name and its code &mdash; &ldquo;Semaglutide (ION-1S)&rdquo; &mdash; so a reader searching Ion&rsquo;s store for the coded name still lands on the right compound. That mapping is confirmed to us first-hand rather than read off a certificate.
           </p>

@@ -47,10 +47,11 @@ export default function ImprovedPeptidesCouponPage() {
             <Cat label="Metabolic &amp; GLP"><P slug="semaglutide">GLP-1S (Semaglutide)</P>, GLP-2T and GLP-3R (coded GLP compounds), <P slug="mots-c">MOTS-C</P>, <P slug="5-amino-1mq">5-Amino-1MQ</P></Cat>
             <Cat label="Recovery &amp; Tissue Repair"><P slug="bpc-157">BPC-157</P>, <P slug="tb-500">TB-500</P>, <P slug="kpv">KPV</P>, and a Wolverine (BPC-157 + TB-500) blend</Cat>
             <Cat label="Growth Hormone"><P slug="cjc-1295">CJC-1295</P>/<P slug="ipamorelin">Ipamorelin</P>, <P slug="tesamorelin">Tesamorelin</P></Cat>
-            <Cat label="Cognitive &amp; Sleep"><P slug="selank">Selank</P>, <P slug="semax">Semax</P>, <P slug="dsip">DSIP</P></Cat>
+            <Cat label="Cognitive &amp; Nootropic"><P slug="selank">Selank</P>, <P slug="semax">Semax</P></Cat>
             <Cat label="Skin &amp; Pigmentation"><P slug="ghk-cu">GHK-Cu</P>, <P slug="melanotan-i">MT-1</P>, <P slug="melanotan-ii">MT-2</P>, <P slug="pt-141">PT-141</P>, plus GLOW and KLOW blends</Cat>
+            <Cat label="Sleep &amp; Recovery"><P slug="dsip">DSIP</P></Cat>
             <Cat label="Longevity"><P slug="epitalon">Epithalon</P>, <P slug="nad-plus">NAD+</P></Cat>
-          </dl>
+</dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Improved Peptides publishes a public COA Library, and each product page links its own Certificate of Analysis &mdash; a genuinely public, per-product library that most vendors don&rsquo;t offer. Of its 24 catalog items, 10 currently have a published COA; the rest are marked &ldquo;in verification,&rdquo; available on request. The certificates we reviewed were split across two independent US labs: Freedom Diagnostics (signed by principal chemist Alex Johnson, each report carrying a search code verifiable at FreedomDiagnosticsTesting.com) and Krause Analytical of Austin, TX (signed by laboratory director Mark C. Krause). Each report confirms identity by LC-MS and purity by RP-HPLC-UV &mdash; 99.02&ndash;99.9% across the certificates reviewed &mdash; plus net peptide content, and each carries a product-specific lot (e.g. IP-BPC-2026-001, an April 2026 batch). Improved&rsquo;s coded GLP names map to known compounds &mdash; its &ldquo;GLP-1S&rdquo; certificate is issued for Semaglutide. Improved additionally states that it runs endotoxin (under 0.25 EU/mg), microbial and sterility testing to USP standards, and fills in an ISO 7 cleanroom; those panels are not printed on the certificates we reviewed, so they are reported here as the vendor states them, not as independently verified. No lab accreditation is printed on the certificates.
           </p>

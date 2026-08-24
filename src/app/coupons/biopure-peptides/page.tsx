@@ -48,9 +48,9 @@ export default function BioPurePeptidesCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Sleep</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>, <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>
+                <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -66,6 +66,12 @@ export default function BioPurePeptidesCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Recovery</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
               <dd className="text-gray-600 dark:text-slate-300">
                 <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>, <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>, <Link href="/peptides/ss-31" className="text-[#3A759F] hover:underline">SS-31</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>
@@ -77,7 +83,7 @@ export default function BioPurePeptidesCouponPage() {
                 <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>, <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin</Link>, <Link href="/peptides/vip" className="text-[#3A759F] hover:underline">VIP</Link>
               </dd>
             </div>
-          </dl>
+</dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             BioPure Peptides states that every batch is third-party tested for purity, potency, and quality to a &gt;99% purity standard, and that a Certificate of Analysis comes with each product. Its manufacturing facility is described as WHO/GMP and ISO 9001 certified &mdash; a manufacturing certification, not a testing-lab accreditation. The testing above is reported here as the vendor states it, not as independently verified &mdash; Prof. Peptide reviewed no BioPure certificate.
           </p>

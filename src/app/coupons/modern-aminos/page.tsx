@@ -67,18 +67,30 @@ export default function ModernAminosCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Sexual Health</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Recovery</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>, <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>, <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin</Link>, <Link href="/peptides/oxytocin" className="text-[#3A759F] hover:underline">Oxytocin</Link>
+                <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity &amp; Bioregulators</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>, <Link href="/peptides/cardiogen" className="text-[#3A759F] hover:underline">Cardiogen</Link>, <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Cartalax</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Prostamax</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Testagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Livagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Vesugen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Bronchogen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Vilon</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Ovagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Chonluten</Link>
+                <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Cartalax</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Prostamax</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Testagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Livagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Vesugen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Bronchogen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Vilon</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Ovagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Chonluten</Link>
               </dd>
             </div>
-          </dl>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Bioregulators</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>, <Link href="/peptides/cardiogen" className="text-[#3A759F] hover:underline">Cardiogen</Link>, <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual Health</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>, <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin</Link>, <Link href="/peptides/oxytocin" className="text-[#3A759F] hover:underline">Oxytocin</Link>
+              </dd>
+            </div>
+</dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             MA-2TZ and MA-1S are Modern Aminos&apos; own coded GLP-1 SKUs; their product pages state no CAS number, formula, molecular weight, or compound name, so they are listed under their codes and not decoded. MA-3RT is Retatrutide &mdash; the vendor&apos;s own /product/retatrutide/ URL resolves to the MA-3RT page, and the product image reads &ldquo;GLP/GIP/GLUCAGON 10MG,&rdquo; the retatrutide triple-agonist profile. MA-1P is documented on-site as Petrelintide (ZP8396; CAS 2766385-23-1).
           </p>

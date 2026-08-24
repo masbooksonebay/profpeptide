@@ -46,9 +46,9 @@ export default function NovaLabsCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Neuro</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>, <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>
+                <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -58,12 +58,18 @@ export default function NovaLabsCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Recovery</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity &amp; Immune</dt>
               <dd className="text-gray-600 dark:text-slate-300">
                 <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>
               </dd>
             </div>
-          </dl>
+</dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Every NOVA Labs batch is independently tested by Janoshik, whose per-batch reports state purity (typically &ge;99%) and measured peptide content and are individually verifiable at janoshik.com/verify using a unique key and QR code; each report also carries a Janoshik task number and the NOVA batch code. NOVA describes its program as third-party HPLC and mass-spec testing to &ge;99% purity by accredited laboratories &mdash; the Janoshik reports reviewed confirm purity and content but do not print the analytical method or an accreditation mark. NOVA publishes a Batch Testing Results table linking each peptide&apos;s per-batch COA so researchers can confirm a specific lot before purchase.
           </p>

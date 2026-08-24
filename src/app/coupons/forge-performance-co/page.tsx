@@ -39,12 +39,14 @@ export default function ForgePerformanceCoCouponPage() {
           </p>
           <dl className="space-y-2 mb-4">
             <Cat label="Metabolic Authority"><P slug="retatrutide">Retatrutide</P> (GLP-RT), <P slug="tirzepatide">Tirzepatide</P> (GLP-TZ), <P slug="cagrilintide">Cagrilintide</P>, and HCG</Cat>
-            <Cat label="Growth &amp; Repair"><P slug="bpc-157">BPC-157</P>, <P slug="tb-500">TB-500</P>, <P slug="cjc-1295">CJC-1295</P>, <P slug="ipamorelin">Ipamorelin</P>, <P slug="sermorelin">Sermorelin</P>, <P slug="tesamorelin">Tesamorelin</P>, <P slug="thymosin-alpha-1">Thymosin Alpha-1</P></Cat>
+            <Cat label="Recovery &amp; Tissue Repair"><P slug="bpc-157">BPC-157</P>, <P slug="tb-500">TB-500</P></Cat>
+            <Cat label="Growth &amp; Repair"><P slug="cjc-1295">CJC-1295</P>, <P slug="ipamorelin">Ipamorelin</P>, <P slug="sermorelin">Sermorelin</P>, <P slug="tesamorelin">Tesamorelin</P></Cat>
             <Cat label="Aesthetics &amp; Focus"><P slug="ghk-cu">GHK-Cu</P>, <P slug="semax">Semax</P>, <P slug="melanotan-ii">Melanotan 2</P>, and the coded KLOW and IGNITION blends</Cat>
+            <Cat label="Gut Health &amp; Immunity"><P slug="thymosin-alpha-1">Thymosin Alpha-1</P></Cat>
             <Cat label="Cellular Drive"><P slug="mots-c">MOTS-c</P>, <P slug="nad-plus">NAD+</P>, <P slug="glutathione">Glutathione</P>, and SLU-PP-332</Cat>
             <Cat label="Stacks"><P slug="wolverine-stack">WOLVERINE</P> (BPC-157 + TB-500), REBUILD (GHK-Cu + <P slug="kpv">KPV</P>), and a <P slug="tesamorelin-ipamorelin">Tesamorelin + Ipamorelin</P> blend</Cat>
             <Cat label="Lab Essentials">bacteriostatic water and reconstitution supplies</Cat>
-          </dl>
+</dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Forge labels its two GLP-class metabolic compounds with coded names that follow the GLP-tier convention other vendors use: GLP-RT is Retatrutide and GLP-TZ is Tirzepatide. We list each under both its compound name and its code &mdash; &ldquo;Retatrutide (GLP-RT)&rdquo; &mdash; so a reader searching Forge&rsquo;s store for the coded name still lands on the right compound. That mapping is confirmed to us first-hand rather than read off a certificate.
           </p>
