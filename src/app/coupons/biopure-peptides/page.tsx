@@ -48,9 +48,9 @@ export default function BioPurePeptidesCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Sleep</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>, <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>, <Link href="/peptides/ss-31" className="text-[#3A759F] hover:underline">SS-31</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>
+                <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>, <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -60,15 +60,15 @@ export default function BioPurePeptidesCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Sleep</dt>
-              <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>, <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>
-              </dd>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Immune &amp; Repair</dt>
               <dd className="text-gray-600 dark:text-slate-300">
                 <Link href="/peptides/ll-37" className="text-[#3A759F] hover:underline">LL-37</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/cibinetide" className="text-[#3A759F] hover:underline">ARA-290</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>, <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>, <Link href="/peptides/ss-31" className="text-[#3A759F] hover:underline">SS-31</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">

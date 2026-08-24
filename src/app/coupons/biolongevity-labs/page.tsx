@@ -43,21 +43,15 @@ export default function BiolongevityLabsCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
-              <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>, <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link> (no-DAC, offered as a CJC-1295 + Ipamorelin blend), <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link>, <Link href="/peptides/tesamorelin-ipamorelin" className="text-[#3A759F] hover:underline">Tesamorelin + Ipamorelin</Link>, <Link href="/peptides/mgf" className="text-[#3A759F] hover:underline">PEG-MGF</Link>, <Link href="/peptides/follistatin" className="text-[#3A759F] hover:underline">Follistatin</Link>
-              </dd>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
               <dd className="text-gray-600 dark:text-slate-300">
                 <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>, <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">BPC-157 + TB-500</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin, Anti-Aging &amp; Longevity</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>, <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>, <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>, <Link href="/peptides/melanotan-i" className="text-[#3A759F] hover:underline">Melanotan I</Link>, <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link> (Epithalon), <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>
+                <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>, <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link> (no-DAC, offered as a CJC-1295 + Ipamorelin blend), <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link>, <Link href="/peptides/tesamorelin-ipamorelin" className="text-[#3A759F] hover:underline">Tesamorelin + Ipamorelin</Link>, <Link href="/peptides/mgf" className="text-[#3A759F] hover:underline">PEG-MGF</Link>, <Link href="/peptides/follistatin" className="text-[#3A759F] hover:underline">Follistatin</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -67,15 +61,9 @@ export default function BiolongevityLabsCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Recovery</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin, Anti-Aging &amp; Longevity</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>
-              </dd>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual &amp; Reproductive Health</dt>
-              <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>, <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin-10</Link>
+                <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>, <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>, <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>, <Link href="/peptides/melanotan-i" className="text-[#3A759F] hover:underline">Melanotan I</Link>, <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link> (Epithalon), <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -85,9 +73,21 @@ export default function BiolongevityLabsCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Recovery</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Peptide Bioregulators</dt>
               <dd className="text-gray-600 dark:text-slate-300">
                 <Link href="/peptides/cardiogen" className="text-[#3A759F] hover:underline">Cardiogen</Link>, <Link href="/peptides/cortagen" className="text-[#3A759F] hover:underline">Cortagen</Link>, <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>, <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link> (Thymagen)
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual &amp; Reproductive Health</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>, <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin-10</Link>
               </dd>
             </div>
           </dl>

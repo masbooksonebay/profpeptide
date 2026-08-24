@@ -37,27 +37,21 @@ export default function AeroPeptidesCouponPage() {
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cellular Health &amp; Longevity</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolics &amp; Appetite</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/ss-31" className="text-[#3A759F] hover:underline">SS-31</Link>, <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>, <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>
+                <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> (GLP3 – Reta), <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> (GLP1 – Tirz), <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> (GLP1 – Semaglutide)
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Repair &amp; Recovery</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link> (5–10mg), <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Blend</Link> (BPC-157 5mg + TB-500 5mg)
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone Support</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3</Link>, <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin-10</Link>, <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link>, <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link> No DAC (10mg), <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link> No DAC + <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>
-              </dd>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Immune &amp; Inflammatory</dt>
-              <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/adamax" className="text-[#3A759F] hover:underline">Adamax</Link>, <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
-              </dd>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolics &amp; Appetite</dt>
-              <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>, <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> (GLP3 – Reta), <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> (GLP1 – Tirz), <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> (GLP1 – Semaglutide)
+                <Link href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3</Link>, <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin-10</Link>, <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>, <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link>, <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link> No DAC (10mg), <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link> No DAC + <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -67,9 +61,15 @@ export default function AeroPeptidesCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Repair &amp; Recovery</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Immune &amp; Inflammatory</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link> (5–10mg), <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Blend</Link> (BPC-157 5mg + TB-500 5mg)
+                <Link href="/peptides/adamax" className="text-[#3A759F] hover:underline">Adamax</Link>, <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cellular Health &amp; Longevity</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/ss-31" className="text-[#3A759F] hover:underline">SS-31</Link>, <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>, <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">

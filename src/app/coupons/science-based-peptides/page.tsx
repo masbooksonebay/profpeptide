@@ -40,15 +40,21 @@ export default function ScienceBasedPeptidesCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>, <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">BPC-157 + TB-500</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
               <dd className="text-gray-600 dark:text-slate-300">
                 <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link> (no-DAC), <Link href="/peptides/cjc-1295-dac-ipamorelin" className="text-[#3A759F] hover:underline">CJC-1295 + Ipamorelin</Link>, <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>, <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link>, <Link href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>, <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">BPC-157 + TB-500</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>
+                <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -58,9 +64,9 @@ export default function ScienceBasedPeptidesCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Cognitive &amp; Nootropic</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Immune &amp; Signaling</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>, <Link href="/peptides/selank" className="text-[#3A759F] hover:underline">Selank</Link>
+                <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -73,12 +79,6 @@ export default function ScienceBasedPeptidesCouponPage() {
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sexual &amp; Reproductive Health</dt>
               <dd className="text-gray-600 dark:text-slate-300">
                 <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>
-              </dd>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Immune &amp; Signaling</dt>
-              <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>
               </dd>
             </div>
           </dl>

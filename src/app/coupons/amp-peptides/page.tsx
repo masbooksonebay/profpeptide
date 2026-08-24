@@ -44,11 +44,11 @@ export default function AmpPeptidesCouponPage() {
             AMP Peptides (amp-peptides.com, operated by AMP Peptides LLC) is a US-based research-peptide supplier shipping domestically, with free USA shipping over $150 and stated 24-hour dispatch. Its catalog is single-vial lyophilized peptides; AMP also offers recurring multi-month &ldquo;Supply&rdquo; subscriptions on some GLP-class compounds alongside standard one-time pricing. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
+            <Cat label="Metabolic &amp; GLP"><P slug="retatrutide">Retatrutide</P> (GLP3RT)</Cat>
             <Cat label="Recovery &amp; Tissue Repair"><P slug="bpc-157">BPC-157</P>, <P slug="tb-500">TB-500</P>, and a BPC-157 / TB-500 blend</Cat>
             <Cat label="Growth Hormone"><P slug="cjc-1295">CJC-1295</P> / <P slug="ipamorelin">Ipamorelin</P>, <P slug="igf-1-lr3">IGF-1 LR3</P></Cat>
             <Cat label="Skin Health &amp; Anti-Aging"><P slug="ghk-cu">GHK-Cu</P>, plus a &ldquo;GLOW&rdquo; blend</Cat>
             <Cat label="Longevity"><P slug="epitalon">Epithalon</P>, <P slug="glutathione">Glutathione</P></Cat>
-            <Cat label="Metabolic &amp; GLP"><P slug="retatrutide">Retatrutide</P> (GLP3RT)</Cat>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             AMP Peptides states that its compounds are analyzed by an independent third-party laboratory &mdash; Janoshik Analytical &mdash; before release, with no in-house testing, to a stated 99%+ purity by HPLC and ESI-MS. One important caveat: the only Certificate of Analysis shown publicly is explicitly labelled a &ldquo;Sample CoA &mdash; actual results vary by lot.&rdquo; It is an illustrative example (BPC-157, lot AMP-2026-001) rather than a batch-matched report, and carries no signatory or accreditation. Real, lot-specific Certificates of Analysis are available on request by email (info@amp-peptides.com) rather than in a public library. Because Prof. Peptide has not reviewed an actual lot certificate, AMP&rsquo;s Janoshik testing is reported here as the vendor states it, not as independently verified.

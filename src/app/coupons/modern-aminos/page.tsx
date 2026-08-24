@@ -43,21 +43,15 @@ export default function ModernAminosCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
-              <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link>, <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>, <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>, <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>, <Link href="/peptides/tesamorelin-ipamorelin" className="text-[#3A759F] hover:underline">Tesamorelin + Ipamorelin</Link>, <Link href="/peptides/hexarelin" className="text-[#3A759F] hover:underline">Hexarelin</Link>, <Link href="/peptides/ghrp-2" className="text-[#3A759F] hover:underline">GHRP-2</Link>, <Link href="/peptides/mgf" className="text-[#3A759F] hover:underline">MGF</Link>, <Link href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3</Link>, <Link href="/peptides/mgf" className="text-[#3A759F] hover:underline">PEG-MGF</Link>, HGH Fragment 176-191
-              </dd>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Recovery &amp; Tissue Repair</dt>
               <dd className="text-gray-600 dark:text-slate-300">
                 <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, <Link href="/peptides/tb-500" className="text-[#3A759F] hover:underline">TB-500</Link>, <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">BPC-157 + TB-500</Link>, <Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link>, <Link href="/peptides/ll-37" className="text-[#3A759F] hover:underline">LL-37</Link>, <Link href="/peptides/cibinetide" className="text-[#3A759F] hover:underline">ARA-290 (Cibinetide)</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin Health &amp; Anti-Aging</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Growth Hormone</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>, <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>, <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>, <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>
+                <Link href="/peptides/tesamorelin" className="text-[#3A759F] hover:underline">Tesamorelin</Link>, <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>, <Link href="/peptides/ipamorelin" className="text-[#3A759F] hover:underline">Ipamorelin</Link>, <Link href="/peptides/cjc-1295" className="text-[#3A759F] hover:underline">CJC-1295</Link>, <Link href="/peptides/tesamorelin-ipamorelin" className="text-[#3A759F] hover:underline">Tesamorelin + Ipamorelin</Link>, <Link href="/peptides/hexarelin" className="text-[#3A759F] hover:underline">Hexarelin</Link>, <Link href="/peptides/ghrp-2" className="text-[#3A759F] hover:underline">GHRP-2</Link>, <Link href="/peptides/mgf" className="text-[#3A759F] hover:underline">MGF</Link>, <Link href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3</Link>, <Link href="/peptides/mgf" className="text-[#3A759F] hover:underline">PEG-MGF</Link>, HGH Fragment 176-191
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -67,15 +61,21 @@ export default function ModernAminosCouponPage() {
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
-              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity &amp; Bioregulators</dt>
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin Health &amp; Anti-Aging</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>, <Link href="/peptides/cardiogen" className="text-[#3A759F] hover:underline">Cardiogen</Link>, <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Cartalax</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Prostamax</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Testagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Livagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Vesugen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Bronchogen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Vilon</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Ovagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Chonluten</Link>
+                <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>, <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>, <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>, <Link href="/peptides/melanotan-ii" className="text-[#3A759F] hover:underline">Melanotan II</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Sleep &amp; Sexual Health</dt>
               <dd className="text-gray-600 dark:text-slate-300">
                 <Link href="/peptides/dsip" className="text-[#3A759F] hover:underline">DSIP</Link>, <Link href="/peptides/pt-141" className="text-[#3A759F] hover:underline">PT-141</Link>, <Link href="/peptides/kisspeptin" className="text-[#3A759F] hover:underline">Kisspeptin</Link>, <Link href="/peptides/oxytocin" className="text-[#3A759F] hover:underline">Oxytocin</Link>
+              </dd>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
+              <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Longevity &amp; Bioregulators</dt>
+              <dd className="text-gray-600 dark:text-slate-300">
+                <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>, <Link href="/peptides/glutathione" className="text-[#3A759F] hover:underline">Glutathione</Link>, <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>, <Link href="/peptides/cardiogen" className="text-[#3A759F] hover:underline">Cardiogen</Link>, <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Cartalax</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Prostamax</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Testagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Livagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Vesugen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Bronchogen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Vilon</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Ovagen</Link>, <Link href="/bioregulators" className="text-[#3A759F] hover:underline">Chonluten</Link>
               </dd>
             </div>
           </dl>

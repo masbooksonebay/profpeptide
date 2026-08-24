@@ -41,9 +41,9 @@ export default function CapstonePeptidesCouponPage() {
             <Cat label="Metabolic &amp; Weight Loss"><P slug="semaglutide">Semaglutide</P> (GLP-1S), <P slug="tirzepatide">Tirzepatide</P> (GLP-2T), <P slug="retatrutide">Retatrutide</P> (GLP-3R), <P slug="cagrilintide">Cagrilintide</P> (in the C-Amylin / GLP-1S blend), <P slug="mots-c">MOTS-C</P></Cat>
             <Cat label="Recovery &amp; Tissue Repair"><P slug="bpc-157">BPC-157</P>, <P slug="tb-500">TB-500</P>, <P slug="wolverine-stack">BPC-157 + TB-500 blend</P>, <P slug="glow">GLOW</P></Cat>
             <Cat label="Growth Hormone"><P slug="cjc-1295">CJC-1295</P>, <P slug="ipamorelin">Ipamorelin</P>, <P slug="tesamorelin">Tesamorelin</P>, <P slug="sermorelin">Sermorelin</P></Cat>
-            <Cat label="Longevity &amp; Immune"><P slug="epitalon">Epithalon</P>, <P slug="nad-plus">NAD+</P>, <P slug="thymosin-alpha-1">Thymosin Alpha-1</P></Cat>
             <Cat label="Cognitive &amp; Neuro"><P slug="semax">Semax</P>, <P slug="selank">Selank</P></Cat>
             <Cat label="Skin &amp; Sexual Health"><P slug="melanotan-ii">Melanotan 2</P>, <P slug="pt-141">PT-141</P></Cat>
+            <Cat label="Longevity &amp; Immune"><P slug="epitalon">Epithalon</P>, <P slug="nad-plus">NAD+</P>, <P slug="thymosin-alpha-1">Thymosin Alpha-1</P></Cat>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             Capstone labels its GLP-class metabolic compounds with coded names that follow the GLP-1/2/3 tier convention: GLP-1S is Semaglutide, GLP-2T is Tirzepatide, and GLP-3R is Retatrutide; the C-Amylin / GLP-1S blend is Cagrilintide + Semaglutide. We list each under both its compound name and its code &mdash; &ldquo;Semaglutide (GLP-1S)&rdquo; &mdash; so a reader searching Capstone&rsquo;s store for the coded name still lands on the right compound.

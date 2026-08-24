@@ -44,11 +44,11 @@ export default function ImprovedPeptidesCouponPage() {
             Improved Peptides (improvedpeptides.com, operated by The Improved Company LLC) is a US-based research-peptide supplier that states it launched in 2026 and has shipped 1,300+ orders. Its catalog is single-vial lyophilized peptides, with a standing &ldquo;buy two, get one free&rdquo; promotion (which does not combine with a discount code). Payment is by Visa, Mastercard, PayPal, Venmo, and Zelle. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
-            <Cat label="Recovery &amp; Tissue Repair"><P slug="bpc-157">BPC-157</P>, <P slug="tb-500">TB-500</P>, <P slug="kpv">KPV</P>, and a Wolverine (BPC-157 + TB-500) blend</Cat>
             <Cat label="Metabolic &amp; GLP"><P slug="semaglutide">GLP-1S (Semaglutide)</P>, GLP-2T and GLP-3R (coded GLP compounds), <P slug="mots-c">MOTS-C</P>, <P slug="5-amino-1mq">5-Amino-1MQ</P></Cat>
+            <Cat label="Recovery &amp; Tissue Repair"><P slug="bpc-157">BPC-157</P>, <P slug="tb-500">TB-500</P>, <P slug="kpv">KPV</P>, and a Wolverine (BPC-157 + TB-500) blend</Cat>
             <Cat label="Growth Hormone"><P slug="cjc-1295">CJC-1295</P>/<P slug="ipamorelin">Ipamorelin</P>, <P slug="tesamorelin">Tesamorelin</P></Cat>
-            <Cat label="Skin &amp; Pigmentation"><P slug="ghk-cu">GHK-Cu</P>, <P slug="melanotan-i">MT-1</P>, <P slug="melanotan-ii">MT-2</P>, <P slug="pt-141">PT-141</P>, plus GLOW and KLOW blends</Cat>
             <Cat label="Cognitive &amp; Sleep"><P slug="selank">Selank</P>, <P slug="semax">Semax</P>, <P slug="dsip">DSIP</P></Cat>
+            <Cat label="Skin &amp; Pigmentation"><P slug="ghk-cu">GHK-Cu</P>, <P slug="melanotan-i">MT-1</P>, <P slug="melanotan-ii">MT-2</P>, <P slug="pt-141">PT-141</P>, plus GLOW and KLOW blends</Cat>
             <Cat label="Longevity"><P slug="epitalon">Epithalon</P>, <P slug="nad-plus">NAD+</P></Cat>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
