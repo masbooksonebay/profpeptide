@@ -57,7 +57,7 @@ export default function AeroPeptidesCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolics &amp; Appetite</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>, <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> (listed as GLP3 – Reta), <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> (listed as GLP1 – Tirz), <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> (listed as GLP1 – Semaglutide)
+                <Link href="/peptides/sermorelin" className="text-[#3A759F] hover:underline">Sermorelin</Link>, <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> (GLP3 – Reta), <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> (GLP1 – Tirz), <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> (GLP1 – Semaglutide)
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -87,7 +87,7 @@ export default function AeroPeptidesCouponPage() {
           </dl>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-4 bg-gray-50 dark:bg-[#1e293b] mb-4">
             <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-              <span className="font-semibold text-[#16181B] dark:text-slate-100">Finding the GLP compounds on Aero&apos;s site:</span> Aero lists its metabolic/GLP peptides under code names. Retatrutide is listed as GLP3 – Reta, Tirzepatide as GLP1 – Tirz, and Semaglutide as GLP1 – Semaglutide &mdash; search those codes in the Aero catalog to reach the corresponding product page.
+              <span className="font-semibold text-[#16181B] dark:text-slate-100">Finding the GLP compounds on Aero&apos;s site:</span> Aero lists its metabolic/GLP peptides under code names. Retatrutide (GLP3 – Reta), Tirzepatide (GLP1 – Tirz), and Semaglutide (GLP1 – Semaglutide) &mdash; search those codes in the Aero catalog to reach the corresponding product page. These GLP1/GLP3 labels are Aero&apos;s own SKU codes, not the standard GLP-1/2/3 tier convention (in which GLP-1 denotes Semaglutide) &mdash; on Aero&apos;s site both Tirzepatide and Semaglutide carry a GLP1 prefix.
             </p>
           </div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -116,7 +116,7 @@ export default function AeroPeptidesCouponPage() {
           <div className="space-y-2">
             <FAQItem
               q="What peptides does Aero Peptides carry?"
-              a="Aero carries 25 research compounds across cellular health & longevity, growth-hormone support, immune, metabolic, skin, recovery, and multi-peptide blends. Its GLP/metabolic line is sold under code names: Retatrutide (listed as GLP3 – Reta), Tirzepatide (listed as GLP1 – Tirz), and Semaglutide (listed as GLP1 – Semaglutide), alongside SS-31, MOTS-C, NAD+, BPC-157, TB-500, GHK-Cu, CJC-1295, Tesamorelin, and the KLOW and GLOW blends."
+              a="Aero carries 25 research compounds across cellular health & longevity, growth-hormone support, immune, metabolic, skin, recovery, and multi-peptide blends. Its GLP/metabolic line is sold under code names: Retatrutide (GLP3 – Reta), Tirzepatide (GLP1 – Tirz), and Semaglutide (GLP1 – Semaglutide), alongside SS-31, MOTS-C, NAD+, BPC-157, TB-500, GHK-Cu, CJC-1295, Tesamorelin, and the KLOW and GLOW blends."
             />
             <FAQItem
               q="Does Aero Peptides have a coupon code?"
@@ -128,7 +128,7 @@ export default function AeroPeptidesCouponPage() {
             />
             <FAQItem
               q="Where do I find Semaglutide (GLP1 – Semaglutide), Tirzepatide (GLP1 – Tirz), and Retatrutide (GLP3 – Reta) on Aero's site?"
-              a="Aero lists its GLP/metabolic peptides under code names. Semaglutide is listed as GLP1 – Semaglutide, Tirzepatide as GLP1 – Tirz, and Retatrutide as GLP3 – Reta. Search those codes in the Aero catalog to reach the matching product page."
+              a="Aero lists its GLP/metabolic peptides under code names. Semaglutide (GLP1 – Semaglutide), Tirzepatide (GLP1 – Tirz), and Retatrutide (GLP3 – Reta). Search those codes in the Aero catalog to reach the matching product page."
             />
             <FAQItem
               q="What testing does Aero Peptides do?"

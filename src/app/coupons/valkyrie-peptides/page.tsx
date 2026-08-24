@@ -38,7 +38,7 @@ export default function ValkyriePeptidesCouponPage() {
             Valkyrie Peptides is a US-based research-peptide supplier (valkyriepeps.com). Payment is by Zelle, Cash App, and Venmo only &mdash; the store does not process cards, so a purchase carries none of the chargeback protection a card network provides; plan accordingly. Orders and support run through the vendor by phone at (208) 243-9222. Valkyrie also runs a standing 20%-off-for-life program for active military, veterans, and first responders, arranged by contacting the vendor directly &mdash; a deeper discount than the public code below. According to Trustpilot, Valkyrie holds a rating of 4.7 across 36 reviews. Compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
-            <Cat label="Metabolic &amp; Weight Loss"><P slug="retatrutide">Retatrutide</P> (listed as GLP-3 (RT))</Cat>
+            <Cat label="Metabolic &amp; Weight Loss"><P slug="retatrutide">Retatrutide</P> (GLP-3 (RT))</Cat>
             <Cat label="Recovery &amp; Tissue Repair"><P slug="wolverine-stack">BPC-157 + TB-500</P> (Wolverine)</Cat>
             <Cat label="Skin Health &amp; Anti-Aging"><P slug="ghk-cu">GHK-Cu</P>, <P slug="glow">GLOW</P>, <P slug="klow">KLOW</P></Cat>
           </dl>
@@ -58,7 +58,7 @@ export default function ValkyriePeptidesCouponPage() {
           <div className="space-y-2">
             <FAQItem
               q="What products does Valkyrie Peptides carry?"
-              a="From a homepage snapshot taken before the store moved behind a login (August 2026), Valkyrie's catalog included Retatrutide (listed as GLP-3 (RT)), GHK-Cu, and the GLOW, KLOW, and Wolverine (BPC-157 + TB-500) blends. The full catalog now sits behind a research-account login."
+              a="From a homepage snapshot taken before the store moved behind a login (August 2026), Valkyrie's catalog included Retatrutide (GLP-3 (RT)), GHK-Cu, and the GLOW, KLOW, and Wolverine (BPC-157 + TB-500) blends. The full catalog now sits behind a research-account login."
             />
             <FAQItem
               q="Does Valkyrie Peptides have a coupon code?"

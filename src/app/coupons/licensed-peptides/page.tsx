@@ -30,7 +30,7 @@ export default function LicensedPeptidesCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; GLP</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> (sold as LP3-R), <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> (LP2-T), <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>
+                <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> (LP3-R), <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> (LP2-T), <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -69,7 +69,7 @@ export default function LicensedPeptidesCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="What peptides does Licensed Peptides carry?" a="Licensed Peptides carries single-compound peptides, peptide blends, and peptide capsules across metabolic, healing, growth-hormone, longevity, and pigmentation research areas. Its catalog includes the GLP metabolic line — Retatrutide (listed as LP3-R) and Tirzepatide (LP2-T) — plus MOTS-C, BPC-157, TB-500, Tesamorelin, Ipamorelin, Sermorelin, IGF-1 LR3, Epitalon, NAD+, and GHK-Cu, alongside its own branded blends." />
+            <FAQItem q="What peptides does Licensed Peptides carry?" a="Licensed Peptides carries single-compound peptides, peptide blends, and peptide capsules across metabolic, healing, growth-hormone, longevity, and pigmentation research areas. Its catalog includes the GLP metabolic line — Retatrutide (LP3-R) and Tirzepatide (LP2-T) — plus MOTS-C, BPC-157, TB-500, Tesamorelin, Ipamorelin, Sermorelin, IGF-1 LR3, Epitalon, NAD+, and GHK-Cu, alongside its own branded blends." />
             <FAQItem q="Does Licensed Peptides have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your Licensed Peptides order. This code is verified and maintained by Prof. Peptide.`} />
             <FAQItem q="How do I use the Licensed Peptides discount code?" a={`Add your items to cart at licensedpeptides.com, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How does Licensed Peptides test its peptides?" a="Licensed Peptides publishes batch-specific Certificates of Analysis issued by Vanguard Laboratory of Olympia, WA (A2LA Certificate #6377.01.01, ISO/IEC 17025:2017-accredited). Each COA verifies chromatographic purity and quantity by HPLC-UV/VIS (99%+ stated) plus heavy metals (ICP-MS), endotoxin (LAL), and sterility (USP <71>); recent batch reports also add residual solvents (GC-MS) and trifluoroacetic acid (ion chromatography). Reports are signed by the lab's director and linked on each product page." />

@@ -57,7 +57,7 @@ export default function BiolongevityLabsCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Skin, Anti-Aging &amp; Longevity</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>, <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>, <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>, <Link href="/peptides/melanotan-i" className="text-[#3A759F] hover:underline">Melanotan I</Link>, <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link> (listed as Epithalon), <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>
+                <Link href="/peptides/ghk-cu" className="text-[#3A759F] hover:underline">GHK-Cu</Link>, <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</Link>, <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>, <Link href="/peptides/melanotan-i" className="text-[#3A759F] hover:underline">Melanotan I</Link>, <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link> (Epithalon), <Link href="/peptides/nad-plus" className="text-[#3A759F] hover:underline">NAD+</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -81,13 +81,13 @@ export default function BiolongevityLabsCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Immune &amp; Signaling</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/ll-37" className="text-[#3A759F] hover:underline">LL-37</Link>, <Link href="/peptides/cibinetide" className="text-[#3A759F] hover:underline">Cibinetide</Link> (listed as ARA-290)
+                <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, <Link href="/peptides/ll-37" className="text-[#3A759F] hover:underline">LL-37</Link>, <Link href="/peptides/cibinetide" className="text-[#3A759F] hover:underline">Cibinetide</Link> (ARA-290)
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Peptide Bioregulators</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/cardiogen" className="text-[#3A759F] hover:underline">Cardiogen</Link>, <Link href="/peptides/cortagen" className="text-[#3A759F] hover:underline">Cortagen</Link>, <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>, <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link> (listed as Thymagen)
+                <Link href="/peptides/cardiogen" className="text-[#3A759F] hover:underline">Cardiogen</Link>, <Link href="/peptides/cortagen" className="text-[#3A759F] hover:underline">Cortagen</Link>, <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>, <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link> (Thymagen)
               </dd>
             </div>
           </dl>
@@ -124,7 +124,7 @@ export default function BiolongevityLabsCouponPage() {
           <div className="space-y-2">
             <FAQItem
               q="What peptides does Biolongevity Labs carry?"
-              a="Biolongevity Labs carries a broad research catalog: metabolic compounds (Cagrilintide, MOTS-C, 5-Amino-1MQ); a growth-hormone bench (Ipamorelin, a CJC-1295 no-DAC + Ipamorelin blend, Tesamorelin, a Tesamorelin + Ipamorelin blend, PEG-MGF, Follistatin); recovery compounds (BPC-157, TB-500, the BPC-157 + TB-500 blend, KPV); skin and longevity compounds (GHK-Cu, the GLOW and KLOW blends, Melanotan I, Epitalon — listed as Epithalon — and NAD+); cognitive peptides (N-Acetyl Semax and N-Acetyl Selank Amidate); DSIP for sleep; reproductive-health compounds (PT-141, Kisspeptin-10); immune and signaling compounds (Thymosin Alpha-1, LL-37, Cibinetide — listed as ARA-290); and a deep line of Khavinson short-peptide bioregulators (Cardiogen, Cortagen, Pinealon, Thymogen — listed as Thymagen — among others). It does not list GLP-1 metabolic compounds."
+              a="Biolongevity Labs carries a broad research catalog: metabolic compounds (Cagrilintide, MOTS-C, 5-Amino-1MQ); a growth-hormone bench (Ipamorelin, a CJC-1295 no-DAC + Ipamorelin blend, Tesamorelin, a Tesamorelin + Ipamorelin blend, PEG-MGF, Follistatin); recovery compounds (BPC-157, TB-500, the BPC-157 + TB-500 blend, KPV); skin and longevity compounds (GHK-Cu, the GLOW and KLOW blends, Melanotan I, Epitalon (Epithalon) and NAD+); cognitive peptides (N-Acetyl Semax and N-Acetyl Selank Amidate); DSIP for sleep; reproductive-health compounds (PT-141, Kisspeptin-10); immune and signaling compounds (Thymosin Alpha-1, LL-37, Cibinetide (ARA-290)); and a deep line of Khavinson short-peptide bioregulators (Cardiogen, Cortagen, Pinealon, Thymogen (Thymagen) among others). It does not list GLP-1 metabolic compounds."
             />
             <FAQItem
               q="Does Biolongevity Labs have a coupon code?"

@@ -43,7 +43,7 @@ export default function RealPeptidesCouponPage() {
             Real Peptides (realpeptides.co) is a US-based research-peptide supplier headquartered in Saint Petersburg, Florida, with a catalog of 75 research compounds shipped domestically from physical inventory (no drop-shipping). Every order is backed by a Package Protection guarantee &mdash; shipments lost, stolen, or damaged in transit are replaced or refunded within a 45-day window; this covers shipping, not product purity. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
-            <Cat label="Metabolic &amp; Weight Loss"><P slug="retatrutide">Retatrutide</P> (listed as Trinity-X), <P slug="tirzepatide">Tirzepatide</P> (listed as GLYCON-X), <P slug="cagrilintide">Cagrilintide</P>, <P slug="mots-c">MOTS-c</P>, <P slug="5-amino-1mq">5-Amino-1MQ</P></Cat>
+            <Cat label="Metabolic &amp; Weight Loss"><P slug="retatrutide">Retatrutide</P> (Trinity-X), <P slug="tirzepatide">Tirzepatide</P> (GLYCON-X), <P slug="cagrilintide">Cagrilintide</P>, <P slug="mots-c">MOTS-c</P>, <P slug="5-amino-1mq">5-Amino-1MQ</P></Cat>
             <Cat label="Recovery &amp; Tissue Repair"><P slug="bpc-157">BPC-157</P></Cat>
             <Cat label="Growth Hormone"><P slug="hexarelin">Hexarelin</P>, <P slug="igf-1-lr3">IGF-1 LR3</P></Cat>
             <Cat label="Skin Health &amp; Anti-Aging"><P slug="ghk-cu">GHK-Cu</P></Cat>
@@ -91,7 +91,7 @@ export default function RealPeptidesCouponPage() {
             />
             <FAQItem
               q="What is Trinity-X (and GLYCON-X)?"
-              a="Trinity-X is Real Peptides' coded name for Retatrutide — confirmed on its Freedom Diagnostics certificate (identity 'GLP RT') and in its own product title. GLYCON-X is Tirzepatide: the vial is labelled 'GLP-2 T' — the GLP-2 tier that decodes to Tirzepatide — and Real's own product page describes it as a dual GLP-1/GIP agonist, the mechanism unique to Tirzepatide. We list it as Tirzepatide (listed as GLYCON-X) so that searching Real's store for the coded name still leads there."
+              a="Trinity-X is Real Peptides' coded name for Retatrutide — confirmed on its Freedom Diagnostics certificate (identity 'GLP RT') and in its own product title. GLYCON-X is Tirzepatide: the vial is labelled 'GLP-2 T' — the GLP-2 tier that decodes to Tirzepatide — and Real's own product page describes it as a dual GLP-1/GIP agonist, the mechanism unique to Tirzepatide. We list it as Tirzepatide (GLYCON-X) so that searching Real's store for the coded name still leads there."
             />
             <FAQItem
               q="What does Real Peptides' Package Protection cover?"

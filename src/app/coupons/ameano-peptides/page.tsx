@@ -37,7 +37,7 @@ export default function AmeanoPeptidesCouponPage() {
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
               <dt className="font-semibold text-[#16181B] dark:text-slate-100 sm:w-44 sm:flex-shrink-0">Metabolic &amp; Weight Loss</dt>
               <dd className="text-gray-600 dark:text-slate-300">
-                <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> (listed as AMP-3P), <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> (listed as AMP-2P), <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> (listed as AMP-1P), <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide</Link>, <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>, <Link href="/peptides/5-amino-1mq" className="text-[#3A759F] hover:underline">5-Amino-1MQ</Link>, <Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link>
+                <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> (AMP-3P), <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> (AMP-2P), <Link href="/peptides/semaglutide" className="text-[#3A759F] hover:underline">Semaglutide</Link> (AMP-1P), <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide</Link>, <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link>, <Link href="/peptides/5-amino-1mq" className="text-[#3A759F] hover:underline">5-Amino-1MQ</Link>, <Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link>
               </dd>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -85,7 +85,7 @@ export default function AmeanoPeptidesCouponPage() {
           </dl>
           <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-4 bg-gray-50 dark:bg-[#1e293b] mb-4">
             <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-              <span className="font-semibold text-[#16181B] dark:text-slate-100">Finding the GLP compounds on Ameano&apos;s site:</span> Ameano lists its metabolic/GLP peptides under proprietary code names. Retatrutide is listed as AMP-3P, Tirzepatide as AMP-2P, and Semaglutide as AMP-1P &mdash; search those codes in the Ameano catalog to reach the corresponding product page.
+              <span className="font-semibold text-[#16181B] dark:text-slate-100">Finding the GLP compounds on Ameano&apos;s site:</span> Ameano lists its metabolic/GLP peptides under proprietary code names. Retatrutide (AMP-3P), Tirzepatide (AMP-2P), and Semaglutide (AMP-1P) &mdash; search those codes in the Ameano catalog to reach the corresponding product page.
             </p>
           </div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -114,7 +114,7 @@ export default function AmeanoPeptidesCouponPage() {
           <div className="space-y-2">
             <FAQItem
               q="What peptides does Ameano Peptides carry?"
-              a="Ameano carries 60+ research compounds across metabolic, growth-hormone, recovery, skin, longevity, cognitive, immunity, and sexual-health categories. Its metabolic/GLP line is sold under proprietary code names: Retatrutide (listed as AMP-3P), Tirzepatide (listed as AMP-2P), and Semaglutide (listed as AMP-1P), alongside Cagrilintide, BPC-157, TB-500, GHK-Cu, CJC-1295, Ipamorelin, and NAD+."
+              a="Ameano carries 60+ research compounds across metabolic, growth-hormone, recovery, skin, longevity, cognitive, immunity, and sexual-health categories. Its metabolic/GLP line is sold under proprietary code names: Retatrutide (AMP-3P), Tirzepatide (AMP-2P), and Semaglutide (AMP-1P), alongside Cagrilintide, BPC-157, TB-500, GHK-Cu, CJC-1295, Ipamorelin, and NAD+."
             />
             <FAQItem
               q="Does Ameano Peptides have a coupon code?"
@@ -126,7 +126,7 @@ export default function AmeanoPeptidesCouponPage() {
             />
             <FAQItem
               q="Where do I find Semaglutide (AMP-1P), Tirzepatide (AMP-2P), and Retatrutide (AMP-3P) on Ameano's site?"
-              a="Ameano lists its GLP/metabolic peptides under proprietary code names. Semaglutide is listed as AMP-1P, Tirzepatide as AMP-2P, and Retatrutide as AMP-3P. Search those AMP codes in the Ameano catalog to reach the matching product page and its published Certificate of Analysis."
+              a="Ameano lists its GLP/metabolic peptides under proprietary code names. Semaglutide (AMP-1P), Tirzepatide (AMP-2P), and Retatrutide (AMP-3P). Search those AMP codes in the Ameano catalog to reach the matching product page and its published Certificate of Analysis."
             />
             <FAQItem
               q="What testing does Ameano Peptides do?"
