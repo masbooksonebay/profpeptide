@@ -186,6 +186,11 @@ secs = [s for s in re.split(r"\n(?=## VENDOR: )", doc) if s.startswith("## VENDO
 
 rows = []                 # kept single-compound entries
 blend_data_rows = []      # raw blend rows captured from every vendor's ### Blends table
+blend_skips = []          # THE BLEND SKIP LEDGER: every dropped blend row -> {vendor, blend, size, reason}
+                          # (date stamped from the doc's per-vendor pull date at emit time). Singles are
+                          # surfaced by the excl[] counters + "arithmetic closes" invariant; blends had no
+                          # equivalent — blend_unmapped was computed and never printed, silently eating rows.
+                          # Every drop path below MUST append here so the ledger + coverage check see it.
 VENDOR_NAMES = {}         # slug -> doc display name (fallback for vendors absent from vendors.ts)
 VENDOR_PULLED = {}        # slug -> per-vendor pull date (for the honest MIN stamp)
 excl = {"blends": 0, "sprays": 0, "unverified_single": 0, "nosize_single": 0, "noprice_single": 0,
@@ -231,13 +236,23 @@ for s in secs:
                     # by DAC vs no-DAC (parity with the singles split); absent -> the row can't be
                     # resolved and is dropped, never guessed. Committed rows predate it, so today this
                     # is None everywhere and the blend split emits nothing until a re-pull.
-                    if key == "blends" and vslug and len(c) >= 4:
-                        blend_data_rows.append({
-                            "vendor": vslug, "raw_name": c[0], "components": c[1],
-                            "size_cell": c[2], "base_cell": c[3],
-                            "stock_cell": c[5] if len(c) >= 6 else "",
-                            "vendor_slug": c[6] if len(c) >= 7 and c[6] not in ("—", "-") else None,
-                        })
+                    if key == "blends":
+                        if vslug and len(c) >= 4:
+                            blend_data_rows.append({
+                                "vendor": vslug, "raw_name": c[0], "components": c[1],
+                                "size_cell": c[2], "base_cell": c[3],
+                                "stock_cell": c[5] if len(c) >= 6 else "",
+                                "vendor_slug": c[6] if len(c) >= 7 and c[6] not in ("—", "-") else None,
+                            })
+                        else:
+                            # counted in excl['blends'] but too malformed to enter the blend pipeline
+                            # (no vendor slug / <4 columns). Was a silent loss; now ledgered.
+                            blend_skips.append({
+                                "vendor": vslug or "unknown",
+                                "blend": (c[0] if c else "?"),
+                                "size": (c[2] if len(c) >= 3 else "—"),
+                                "reason": "uncaptured-malformed-row",
+                            })
 
     # singles block
     blk = re.search(r"### Single compounds.*?(?=\n### |\n## |\Z)", s, re.S)
@@ -446,6 +461,11 @@ BLEND_INDEX_OUT = ROOT / "src" / "data" / "blends.index.json"
 _blend_groups = _dd(list)          # profile slug -> [{vendor, mg, price, inStock}]
 blend_unmapped = _Counter()        # doc blend base name -> count (reported, not emitted)
 blend_cjc_unresolved = []          # CJC-1295/Ipamorelin rows whose slug doesn't state DAC/no-DAC — DROPPED
+def _skip_blend(br, base_name, reason):
+    """Record one dropped blend row in the ledger (date stamped later from the doc)."""
+    blend_skips.append({"vendor": br["vendor"], "blend": base_name,
+                        "size": br.get("size_cell", "—"), "reason": reason})
+
 for br in blend_data_rows:
     base_name = blend_base_name(br["raw_name"])
     # CJC-1295/Ipamorelin: DAC and no-DAC are different molecules (see the singles split). Resolve
@@ -461,22 +481,34 @@ for br in blend_data_rows:
             form = "no-dac"
         if form is None:
             blend_cjc_unresolved.append((br["vendor"], br.get("vendor_slug") or "—"))
+            _skip_blend(br, base_name, "cjc-form-unresolved")
             continue
         slug = "cjc-1295-no-dac-ipamorelin" if form == "no-dac" else "cjc-1295-dac-ipamorelin"
     else:
         slug = BLEND_MAP.get(base_name)
         if slug is None:
             blend_unmapped[base_name] += 1
+            # sub-classify the unmapped bucket so the ledger distinguishes a deliberate hold
+            # ([backlog] / [coded, UNVERIFIED]) from a genuinely-unrecognized blend (needs a
+            # BLEND_MAP entry, e.g. GHK-Cu/KPV) — the latter is the truly-silent class.
+            raw = br["raw_name"]
+            reason = ("backlog" if "[backlog]" in raw
+                      else "coded-unverified" if ("coded" in raw.lower() or "UNVERIFIED" in raw)
+                      else "unmapped")
+            _skip_blend(br, base_name, reason)
             continue
     if br["vendor"] in RETIRED:
+        _skip_blend(br, base_name, "retired-vendor")
         continue
     mg = N.mg_value(br["size_cell"])
     price = parse_base(br["base_cell"])
     if mg is None or price is None:        # no comparable config/price
+        _skip_blend(br, base_name, "no-size-or-price")
         continue
     _blend_groups[slug].append({
         "vendor": br["vendor"], "mg": mg, "price": price,
         "inStock": "no" not in br["stock_cell"].lower(),
+        "base": base_name, "size": br["size_cell"],   # carried for the dedup/below-gate ledger entries
     })
 
 BLEND_MIN_VENDORS = 3               # a config needs >=3 vendors to publish a comparison table
@@ -485,15 +517,27 @@ blend_index = []                    # {slug, configs:[{config,vendors}], vendors
 blend_no_modal = []                 # slugs with NO config reaching >=3 vendors (reported, not emitted)
 blend_config_report = []            # (slug, [(config, n)], union) for the report
 for slug, items in sorted(_blend_groups.items()):
-    # group by configuration (Total mg); keep the lowest total price per vendor within each config
+    # group by configuration (Total mg); keep the lowest total price per vendor within each config.
+    # The DISPLACED row (same vendor+config, higher price) was silently discarded — now ledgered.
     by_cfg = _dd(dict)              # mg -> {vendor: item}
     for i in items:
         mg = round(i["mg"], 4)
         bv = by_cfg[mg]
-        if i["vendor"] not in bv or i["price"] < bv[i["vendor"]]["price"]:
+        if i["vendor"] not in bv:
             bv[i["vendor"]] = i
+        elif i["price"] < bv[i["vendor"]]["price"]:
+            _skip_blend({"vendor": bv[i["vendor"]]["vendor"], "size_cell": bv[i["vendor"]]["size"]},
+                        bv[i["vendor"]]["base"], "config-dedup")   # previous winner is now the loser
+            bv[i["vendor"]] = i
+        else:
+            _skip_blend({"vendor": i["vendor"], "size_cell": i["size"]}, i["base"], "config-dedup")
     # A config is comparable only with >=3 vendors sharing it; publish EVERY qualifying config
-    # (e.g. Wolverine 10mg AND 20mg), largest first. Below the threshold -> not a comparison.
+    # (e.g. Wolverine 10mg AND 20mg), largest first. Below the threshold -> not a comparison; every
+    # row in a below-gate config is ledgered (this is the "pack / multi-config exclusion" class).
+    for mg, bv in by_cfg.items():
+        if len(bv) < BLEND_MIN_VENDORS:
+            for i in bv.values():
+                _skip_blend({"vendor": i["vendor"], "size_cell": i["size"]}, i["base"], "below-vendor-gate")
     qualifying = sorted(((mg, bv) for mg, bv in by_cfg.items() if len(bv) >= BLEND_MIN_VENDORS),
                         key=lambda x: (-len(x[1]), x[0]))
     if not qualifying:
@@ -533,6 +577,45 @@ BLEND_CARRIES_OUT = ROOT / "src" / "data" / "blend-carries.generated.json"
 blend_carries = {slug: sorted({i["vendor"] for i in items}) for slug, items in sorted(_blend_groups.items())}
 blend_carries_text = json.dumps(blend_carries, indent=2) + "\n"
 
+# --- BLEND SKIP LEDGER: every doc blend row that did NOT emit, with a reason -------------------
+# Singles get the excl[] counters + the printed "arithmetic closes" invariant. Blends had none —
+# blend_unmapped was computed and never printed, silently eating rows (2 GHK-Cu/KPV). This is the
+# blend equivalent: a deterministic, committed, per-row record so a dropped blend is never invisible.
+# Deterministic (dates come from the doc's per-vendor pull dates, never today's) so check:prices-sync
+# byte-diffs it like the other artifacts, and check:blend-skips asserts doc rows = emitted + ledgered.
+BLEND_SKIPS_OUT = ROOT / "src" / "data" / "blend-skips.generated.json"
+_REASON_LEGEND = {
+    "cjc-form-unresolved": "CJC-1295/Ipamorelin row whose slug doesn't state DAC vs no-DAC — dropped, never guessed (recoverable via re-pull / product-description read).",
+    "below-vendor-gate":   "A mapped blend config with <3 vendors — not a comparison surface (the pack / minority-config class).",
+    "config-dedup":        "Same vendor + same config as a cheaper row for this blend — the dearer duplicate is dropped, the cheapest kept.",
+    "retired-vendor":      "Blend row belongs to a retired vendor — excluded like its single rows.",
+    "coded-unverified":    "[coded, UNVERIFIED] blend — not force-mapped; held until the code is confirmed.",
+    "unmapped":            "Blend base name not in BLEND_MAP — genuinely unrecognized; needs a mapping decision before it can emit.",
+    "backlog":             "[backlog]-tagged blend — deliberately held (e.g. missing a component cert).",
+    "no-size-or-price":    "No parseable Total-mg config or price — nothing comparable to publish.",
+    "uncaptured-malformed-row": "Row counted in the ### Blends table but too malformed to enter the pipeline (no vendor slug / <4 columns).",
+}
+for e in blend_skips:                       # deterministic date stamp from the doc
+    d = VENDOR_PULLED.get(e["vendor"])
+    e["date"] = d.isoformat() if d else "unknown"
+blend_skips.sort(key=lambda e: (e["reason"], e["vendor"], e["blend"], e["size"]))
+_skip_by_reason = _Counter(e["reason"] for e in blend_skips)
+blend_skips_obj = {
+    "_README": ("Every doc ### Blends row that did NOT reach src/data/prices.blends.generated.ts, "
+                "with a reason. Generated by to_prices.py; do not hand-edit. Guarded by "
+                "check:prices-sync (byte drift) and check:blend-skips (coverage + a per-reason "
+                "baseline that fails when drops WORSEN). Invariant: docBlendRows == emittedBlendRows "
+                "+ skippedBlendRows."),
+    "_reasonLegend": _REASON_LEGEND,
+    "docBlendRows": excl["blends"],
+    "emittedBlendRows": len(blend_rows_out),
+    "skippedBlendRows": len(blend_skips),
+    "byReason": dict(sorted(_skip_by_reason.items())),
+    "entries": [{"vendor": e["vendor"], "blend": e["blend"], "size": e["size"],
+                 "reason": e["reason"], "date": e["date"]} for e in blend_skips],
+}
+blend_skips_text = json.dumps(blend_skips_obj, indent=2, ensure_ascii=False) + "\n"
+
 # --- sitemap lastmod: REAL per-entity change dates from the doc's per-vendor `pulled:` dates -------
 # next-sitemap reads this to stamp <lastmod> on ONLY the two URL classes whose change date we truly
 # record: /coupons/<vendor> (that vendor's own pull date) and /prices/<compound> (the MAX pull date
@@ -567,7 +650,7 @@ if "--emit" in sys.argv:
     what = sys.argv[sys.argv.index("--emit") + 1] if sys.argv.index("--emit") + 1 < len(sys.argv) else "prices"
     sys.stdout.write({"prices": prices_text, "index": index_text,
                       "blends": blends_text, "blends-index": blends_index_text,
-                      "lastmod": lastmod_text}.get(what, prices_text))
+                      "lastmod": lastmod_text, "blend-skips": blend_skips_text}.get(what, prices_text))
     sys.exit(0)
 
 OUT.write_text(prices_text)
@@ -576,6 +659,7 @@ BLEND_OUT.write_text(blends_text)
 BLEND_INDEX_OUT.write_text(blends_index_text)
 BLEND_CARRIES_OUT.write_text(blend_carries_text)
 LASTMOD_OUT.write_text(lastmod_text)
+BLEND_SKIPS_OUT.write_text(blend_skips_text)
 
 # --- report ------------------------------------------------------------------
 print(f"PRICES_UPDATED (oldest rendering vendor's pull date): {PRICES_UPDATED}")
@@ -604,11 +688,21 @@ print(f"  singles arithmetic closes: {_ss==doc_single_total} "
       f"+{excl['not_a_compound']}+{excl['editorial_scope']}+{excl['cjc_unresolved']}"
       f"+{excl['vendor_suppressed']}={doc_single_total})")
 print(f"non-single excluded (separate tracks): blends={excl['blends']} sprays={excl['sprays']}")
+
+# --- BLEND SKIP LEDGER report (the blend equivalent of the singles "arithmetic closes" block) ----
+print(f"\nblend rows: doc={excl['blends']}  emitted={len(blend_rows_out)}  skipped={len(blend_skips)}"
+      f"  -> {BLEND_SKIPS_OUT.relative_to(ROOT)}")
+_bclose = len(blend_rows_out) + len(blend_skips) == excl['blends']
+print(f"  blend arithmetic closes: {_bclose} ({len(blend_rows_out)}+{len(blend_skips)}={excl['blends']})")
+for reason, n in sorted(_skip_by_reason.items(), key=lambda x: -x[1]):
+    print(f"    skipped [{reason}]: {n}")
+# blend_unmapped was previously COMPUTED AND NEVER PRINTED — it silently ate GHK-Cu/KPV rows. Print it.
+if blend_unmapped:
+    print(f"  blend_unmapped (base name not in BLEND_MAP — the formerly-silent bucket): {dict(sorted(blend_unmapped.items()))}")
 if blend_cjc_unresolved:
-    print(f"CJC-1295/Ipamorelin blend rows DROPPED (slug doesn't state DAC/no-DAC — parked until the pull "
-          f"preserves the blend slug): {len(blend_cjc_unresolved)}")
-elif any(blend_base_name(br["raw_name"]) == "CJC-1295/Ipamorelin" for br in blend_data_rows):
-    print("CJC-1295/Ipamorelin blend: 0 rows carry a slug yet — split resolver live, emits nothing until a re-pull.")
+    print(f"  CJC-1295/Ipamorelin rows dropped (slug doesn't state DAC/no-DAC): {len(blend_cjc_unresolved)}")
+if blend_no_modal:
+    print(f"  blend slugs with NO config reaching >={BLEND_MIN_VENDORS} vendors: {[s for s, _ in blend_no_modal]}")
 
 # --- sale reporting ----------------------------------------------------------
 sale_rows = [r for r in rows if r.get("onSale")]

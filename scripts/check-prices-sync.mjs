@@ -27,6 +27,7 @@ const targets = [
   { emit: "blends", file: "src/data/prices.blends.generated.ts" },
   { emit: "blends-index", file: "src/data/blends.index.json" },
   { emit: "lastmod", file: "src/data/lastmod.generated.json" },
+  { emit: "blend-skips", file: "src/data/blend-skips.generated.json" },
 ];
 
 let drift = false;
