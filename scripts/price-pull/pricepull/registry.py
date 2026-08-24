@@ -111,6 +111,16 @@ VENDORS = {
               "self-decodes in the name (key on the compound WORD: GLP-1S Semaglutide, GLP-2T Tirzepatide, "
               "GLP-3R Retatrutide; C-Amylin Cagrilintide/GLP-1S Semaglutide = CagriSema). Accumark Labs "
               "COAs. 2 bacteriostatic-water SKUs fall out via scope."),
+    "forge-performance-co": dict(name="Forge Performance Co", domain="www.forgeperformanceco.com", adapter="woo",
+        variation_model="dosage", coded_decoder=True,
+        sale_posture="No sitewide sale (every price == regular_price); PP code (10%, PROFPEPTIDE) stacks at checkout.",
+        notes="Onboarded 2026-08. Woo Store API PUBLIC (wc/store/v1/products, per_page=100 -> 28 SKUs, all 'simple', "
+              "USD). Size in the NAME. GLP line decoded FIRST-HAND by Mark (affiliate account access, 2026-08): "
+              "GLP-RT Retatrutide, GLP-TZ Tirzepatide (decoders._forge). Blends captured: WOLVERINE wolverine-stack, "
+              "Tesa/Ipa tesamorelin-ipamorelin, CJC-1295(No Dac)+Ipamorelin gh-stack, KLOW klow (auto). EXCLUDED in the "
+              "decoder (leak/composition guards): REBUILD (GHK-Cu+KPV, no PP blend slug), IGNITION (coded, composition "
+              "unconfirmed), FPC-31 closeout (compound unconfirmed), HCG. Merch tee + BAC water + SLU-PP-332 capsules "
+              "fall out via scope/form. GLP-RT 2-Pack/3-Pack = multi-vial bulk (pack-SKU decision — see report)."),
     "ez-peptides": dict(name="EZ Peptides", domain="ezpeptides.com", adapter="woo",
         variation_model="dosage", coded_decoder=True, sale_posture="No sale.",
         notes="GLP coded EZP-1P/2P/3P/CG — Janoshik COA-verified. TB4=TB-500."),

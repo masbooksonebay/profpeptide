@@ -582,6 +582,27 @@ def _improved(n):
     if re.match(r'GLP-1S', n, re.I): return (_c('Semaglutide', 'GLP-1S'), 'semaglutide', 'single')
 
 
+@_decoder('forge-performance-co')  # GLP-RT = Retatrutide, GLP-TZ = Tirzepatide — DECODED FIRST-HAND by Mark
+# (2026-08; affiliate with account access), the SAME basis as ion-peptide/real-peptides: a first-hand vendor
+# decode, NOT a certificate and NOT decode-by-convention. Recorded per the coded-name verification standard.
+# The rest of this decoder is a BLEND-LEAK GUARD: without it, match() silently resolves Forge's combo SKUs to a
+# single component ("CJC-1295 (No Dac) + Ipamorelin" -> ipamorelin; "Tesa/Ipa" -> tesamorelin) — a blend price
+# mis-attributed to one compound. Each combo is routed to its registered blend slug, or EXCLUDEd when no PP
+# blend slug / no confirmed composition exists, so nothing drops silently.
+def _forge(n):
+    if re.match(r'GLP-RT\b', n, re.I): return (_c('Retatrutide', 'GLP-RT'), 'retatrutide', 'single')
+    if re.match(r'GLP-TZ\b', n, re.I): return (_c('Tirzepatide', 'GLP-TZ'), 'tirzepatide', 'single')
+    # Blends captured to their registered slugs (else match() leaks them to one component)
+    if re.match(r'WOLVERINE', n, re.I): return ('Wolverine (BPC-157/TB-500)', 'wolverine-stack', 'blend')
+    if re.match(r'Tesa/Ipa', n, re.I): return ('Tesamorelin/Ipamorelin', 'tesamorelin-ipamorelin', 'blend')
+    if re.match(r'CJC-1295 \(No Dac\) \+ Ipamorelin', n, re.I): return ('CJC-1295 (No DAC)/Ipamorelin', 'gh-stack', 'blend')
+    # No verified composition / no PP blend slug -> EXCLUDE (never leak to a component)
+    if re.match(r'REBUILD', n, re.I): return ('EXCLUDE', None, None)   # GHK-Cu + KPV blend; no PP ghk-cu/kpv blend slug
+    if re.match(r'IGNITION', n, re.I): return ('EXCLUDE', None, None)  # coded blend; composition unconfirmed
+    if re.match(r'FPC-31', n, re.I): return ('EXCLUDE', None, None)    # coded closeout; underlying compound unconfirmed
+    if re.match(r'HCG', n, re.I): return ('EXCLUDE', None, None)
+
+
 def decode(vendor, name):
     fn = DECODERS.get(vendor)
     return fn(name.strip()) if fn else None

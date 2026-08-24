@@ -432,10 +432,11 @@ export const vendors: Record<string, Vendor> = {
     // the library: HPLC purity, LC-MS identity, net content, heavy metals (ICP-MS), endotoxin USP <85>,
     // microbial (PCR), + a FENTANYL screen (LC-MS) — rare on the roster and the standout. Purity: site
     // claims all batches ≥99% (an aggregated RESULT, not a published minimum) → deliberately NOT carried
-    // as a purityStandard fact. Coded GLP line (GLP-RT, GLP-TZ) NOT decoded — naming implies
-    // RT=retatrutide / TZ=tirzepatide but that is UNCONFIRMED (needs first-hand confirmation like
-    // ion-peptide/real-peptides); a future price-pull decoder must carry this forward. Research based on
-    // the site's COA-library/verify pages, not a raw certificate PDF read.
+    // as a purityStandard fact. Coded GLP line DECODED first-hand by Mark (2026-08, affiliate account
+    // access): GLP-RT = Retatrutide, GLP-TZ = Tirzepatide (decoders._forge; same standard as
+    // ion-peptide/real-peptides). Price-pulled 2026-08-23 (15 singles + 4 blends; GLP-RT 2/3-Pack bulk
+    // excluded, REBUILD/IGNITION/FPC-31 excluded — see the pull report). Research based on the site's
+    // COA-library/verify pages, not a raw certificate PDF read.
     facts: { coa: "library", labName: "Freedom Diagnostics, ILS Laboratories, Kovera Labs", testMethods: "HPLC, LC-MS, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals (ICP-MS), endotoxin (USP <85>), microbial sterility (PCR), fentanyl screen (LC-MS)" },
     blockNote: "Three-lab batch COAs · fentanyl-screened · verify on each lab's portal",
   },

@@ -3123,3 +3123,42 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ---
 
+
+
+## VENDOR: Forge Performance Co
+- **slug:** forge-performance-co | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** www.forgeperformanceco.com
+- **traffic:** (not pulled) | **pulled:** August 23 2026
+- **sale posture:** No sitewide sale (every price == regular_price); PP code (10%, PROFPEPTIDE) stacks at checkout.
+
+### Single compounds
+| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| BPC-157 | 10mg | $50.00 | $5.00 | — | ✓ | product/bpc-157-10mg/ |
+| Cagrilintide | 10mg | $70.00 | $7.00 | — | ✓ | product/cagrilintide-10mg/ |
+| GHK-Cu | 100mg | $50.00 | $0.50 | — | ✓ | product/ghk-cu-100mg/ |
+| Glutathione | 1500mg | $60.00 | $0.04 | — | ✗ | product/glutathione-1500mg/ |
+| Melanotan II | 10mg | $35.00 | $3.50 | — | ✓ | product/melanotan-2-10mg/ |
+| MOTS-C | 20mg | $60.00 | $3.00 | — | ✓ | product/mots-c-20mg/ |
+| NAD+ | 500mg | $50.00 | $0.10 | — | ✗ | product/nad-500mg/ |
+| Retatrutide (listed as GLP-RT) | 10mg | $80.00 | $8.00 | — | ✓ | product/glp-rt-10mg/ |
+| Retatrutide (listed as GLP-RT) | 30mg | $160.00 | $5.33 | — | ✗ | product/glp-rt-30mg/ |
+| Semax | 10mg | $40.00 | $4.00 | — | ✓ | product/semax-10mg/ |
+| Sermorelin | 10mg | $50.00 | $5.00 | — | ✗ | product/sermorelin-10mg/ |
+| TB-500 | 10mg | $60.00 | $6.00 | — | ✗ | product/tb-500-10mg/ |
+| Tesamorelin | 10mg | $60.00 | $6.00 | — | ✓ | product/tesamorelin-10mg/ |
+| Thymosin Alpha-1 | 10mg | $60.00 | $6.00 | — | ✓ | product/thymosin-alpha-1-10mg/ |
+| Tirzepatide (listed as GLP-TZ) | 30mg | $100.00 | $3.33 | — | ✗ | product/glp-tz-30mg/ |
+
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| CJC-1295 (No DAC)/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $60.00 | not published | ✓ | product/cjc-1295-no-dac-ipamorelin-10mg/ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $100.00 | not published | ✓ | product/klow-80mg/ |
+| Tesamorelin/Ipamorelin | Tesamorelin/Ipamorelin | 16mg | $80.00 | 16/13/3 (published) | ✓ | product/tesamorelin-ipamorelin-16mg/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 20mg | $70.00 | not published | ✓ | product/wolverine-20mg/ |
+
+### Sprays: none
+### Excluded: clinical/other, multi-vial kit / pack (by name), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+
+---
+
