@@ -12,6 +12,9 @@
 export interface FaqEntry {
   q: string;
   a: string;
+  // Optional "Full answer →" link rendered INSIDE the accordion answer, when a dedicated
+  // /faq/[slug] page answers this question's topic in depth (the inline-link rule, PP_FAQ §4b).
+  more?: { href: string; label: string };
 }
 
 export interface FaqSection {
@@ -56,6 +59,7 @@ export const faqSections: FaqSection[] = [
       {
         q: "Why do most peptides need to be injected — can they be taken orally?",
         a: "Most research peptides are administered via subcutaneous injection because they are degraded by digestive enzymes in the stomach and intestines before they can be absorbed intact into the bloodstream. Peptide bonds are broken down by proteases during digestion — the same process that digests food proteins. Injection bypasses this degradation and delivers the peptide directly into systemic circulation. Some peptides have been developed in nasal spray or oral formulations — Semaglutide (Rybelsus) is a notable example of an oral peptide that uses special absorption enhancers to survive digestion. Intranasal delivery is also used for some smaller peptides like Semax and Selank. Research into oral peptide delivery is an active area of pharmaceutical development.",
+        more: { href: "/faq/can-you-use-insulin-needles-for-peptides", label: "Can you use insulin needles for peptides?" },
       },
     ],
   },

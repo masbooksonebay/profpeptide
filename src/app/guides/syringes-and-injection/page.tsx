@@ -32,6 +32,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Needle gauge.</span> Typically 29–31 gauge. Higher number = thinner needle. Standard peptide-research gauge is 30 or 31.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Needle length.</span> 5/16&Prime; (8 mm) is the standard for subcutaneous injection. Longer lengths (1/2&Prime;, 12.7 mm) are reserved for intramuscular use, which is rarely the right route for peptides.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Why insulin syringes won.</span> Most research peptides are dosed in microgram or low-milligram quantities, dissolved in a few mL of bacteriostatic water. The resulting injection volume is almost always under 50 units &mdash; well within insulin-syringe range &mdash; and the unit ticks give finer resolution than a standard 1 mL tuberculin syringe.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Short answer.</span> <Link href="/faq/can-you-use-insulin-needles-for-peptides" className="text-[#3A759F] hover:underline">Can you use insulin needles for peptides?</Link> &mdash; yes, and why they&rsquo;re the standard tool.</li>
         </ol>
       </div>
     ),

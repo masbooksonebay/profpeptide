@@ -79,6 +79,17 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
                 </ul>
               );
             }
+            if (b.kind === "cta") {
+              return (
+                <p key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+                  {b.text}{" "}
+                  <Link href={b.href} className="text-[#3A759F] hover:underline font-medium">
+                    {b.label}
+                  </Link>
+                  .
+                </p>
+              );
+            }
             return (
               <p key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                 {b.text}
@@ -96,6 +107,24 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
             .
           </p>
         </div>
+
+        {q.related && q.related.length > 0 && (
+          <div className="mt-8">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Related questions</h2>
+            <ul className="space-y-2">
+              {q.related.map((slug) => {
+                const r = faqQuestionBySlug(slug);
+                return r ? (
+                  <li key={slug}>
+                    <Link href={`/faq/${slug}`} className="text-[#3A759F] hover:underline font-medium">
+                      {r.question}
+                    </Link>
+                  </li>
+                ) : null;
+              })}
+            </ul>
+          </div>
+        )}
 
         <div className="mt-8 p-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 rounded-lg text-sm text-amber-800 dark:text-amber-300 leading-relaxed">
           For educational and research purposes only. Not medical advice. Not for human use.

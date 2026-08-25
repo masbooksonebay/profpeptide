@@ -47,6 +47,13 @@ export default function FAQPage() {
                     {open === key && (
                       <div className="px-5 pb-4 text-sm text-gray-600 dark:text-slate-300 leading-relaxed border-t border-gray-50 dark:border-slate-700 pt-3">
                         {faq.a}
+                        {faq.more && (
+                          <div className="mt-2">
+                            <Link href={faq.more.href} className="text-xs font-medium text-[#3A759F] hover:underline">
+                              Full answer: {faq.more.label} &rarr;
+                            </Link>
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>

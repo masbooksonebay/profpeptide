@@ -13,7 +13,11 @@
 export type FaqBlock =
   | { kind: "heading"; text: string }
   | { kind: "p"; text: string }
-  | { kind: "list"; items: string[] };
+  | { kind: "list"; items: string[] }
+  // An inline call-to-action paragraph: prose + one link. Used for a mid-answer handoff
+  // (e.g. the units section → /calculator). Rendered as a <p> with a <Link>; its text + label
+  // are folded into the schema answer via faqAnswerText, so schema still matches the visible text.
+  | { kind: "cta"; text: string; href: string; label: string };
 
 export interface FaqQuestion {
   /** URL segment: /faq/<slug>. */
@@ -34,6 +38,8 @@ export interface FaqQuestion {
   body: FaqBlock[];
   /** Handoff to the canonical page for depth. */
   handoff: { href: string; label: string; text: string };
+  /** Slugs of related FAQ question pages in the same cluster — rendered as cross-links. */
+  related?: string[];
 }
 
 export const faqQuestions: FaqQuestion[] = [
@@ -98,6 +104,89 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For injection technique, site rotation, unit-to-mcg conversion, and reconstitution, see the full",
     },
+    related: ["can-you-use-insulin-needles-for-peptides"],
+  },
+  {
+    slug: "can-you-use-insulin-needles-for-peptides",
+    question: "Can you use insulin needles for peptides?",
+    title: "Can You Use Insulin Needles for Peptides? Yes — U-100 Syringes",
+    metaDescription:
+      "Yes — U-100 insulin syringes are the standard for subcutaneous peptide injection: a 29–31 gauge, 5/16-inch (8 mm) fixed needle on a barrel calibrated 100 units = 1 mL. How the unit markings map to peptide doses, plus the single-use caveats.",
+    searchTags: [
+      "insulin needles",
+      "insulin syringe",
+      "can you use insulin needles for peptides",
+      "can i use insulin needles for peptides",
+      "can you use insulin syringes for peptides",
+      "are insulin needles good for peptides",
+      "insulin syringe units per ml",
+      "how many units is 500 mcg on an insulin syringe",
+      "u-100 insulin syringe markings",
+    ],
+    hubBlurb:
+      "Whether insulin syringes are the right tool for subcutaneous peptide injection (yes), the U-100 unit system, and how the markings map to peptide doses.",
+    lede:
+      "Yes — U-100 insulin syringes are the standard tool for subcutaneous peptide injection. They pair a fine 29-to-31-gauge, 5/16-inch (8 mm) fixed needle with a barrel calibrated so 100 units equals 1 mL, which suits the small microgram-to-milligram doses peptides are reconstituted to. They are single-use, and the needle is not replaceable.",
+    body: [
+      {
+        kind: "heading",
+        text: "Why insulin syringes fit peptide injection",
+      },
+      {
+        kind: "p",
+        text:
+          "Insulin syringes became the default for peptide research for the same reasons they suit insulin: a fine 29–31 gauge needle, a short 5/16-inch (8 mm) length that lands in subcutaneous fat, and tightly-spaced unit markings that resolve the very small volumes a reconstituted peptide dose occupies. They are inexpensive, sold in boxes at any pharmacy, and have minimal dead space at the tip so the drawn volume matches the dose closely. The needle is fixed to the barrel rather than swappable, which keeps the whole path sterile and low-waste.",
+      },
+      {
+        kind: "heading",
+        text: "The U-100 unit system: 100 units = 1 mL",
+      },
+      {
+        kind: "p",
+        text:
+          "\"U-100\" means the barrel is calibrated so 100 units of fluid equal exactly 1 mL — so 1 unit is 0.01 mL. The ticks measure VOLUME of liquid, not the amount of peptide. Barrels come in 0.3 mL (30 units), 0.5 mL (50 units), and 1 mL (100 units); the needle gauge and length are typically identical across all three, and the smaller barrels have finer tick spacing, which is why 0.3 and 0.5 mL are common for the small draws typical of peptide doses.",
+      },
+      {
+        kind: "heading",
+        text: "Reading the markings for peptide dosing",
+      },
+      {
+        kind: "p",
+        text:
+          "Because units are a volume measure, a unit count does not map to a fixed peptide dose — the conversion depends entirely on the reconstitution (how many mg went into the vial and how much bacteriostatic water). The standard is 100 units per mL (U-100); to turn units into micrograms you need the vial's mg and the water volume. So \"how many units is 500 mcg\" has no single answer — it changes with the mix. The relationship: mcg per unit = (mg in vial ÷ mL of water) × 10.",
+      },
+      {
+        kind: "cta",
+        text: "For the exact units to draw for any dose and reconstitution, the",
+        href: "/calculator",
+        label: "Prof. Peptide dosage calculator",
+      },
+      {
+        kind: "heading",
+        text: "Single-use and the fixed needle",
+      },
+      {
+        kind: "p",
+        text:
+          "Insulin syringes are single-use: the needle dulls on the first insertion, and the industry consensus across diabetes care and peptide research is one use per needle. Because the needle is integral to the barrel, it is not replaced separately — the whole syringe is discarded into a sharps container after one use. Reusing one is reported to increase pain, tissue trauma, and vial-contamination risk for negligible savings.",
+      },
+      {
+        kind: "list",
+        items: [
+          "Calibration: U-100 — 100 units = 1 mL, so 1 unit = 0.01 mL (units are volume, not dose).",
+          "Needle: 29–31 gauge, 5/16 in (8 mm), fixed to the barrel; 30 g is the usual default.",
+          "Barrels: 0.3 mL (30 u), 0.5 mL (50 u), 1 mL (100 u) — smaller barrels read finer.",
+          "Single-use; the needle is not replaceable.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/guides/syringes-and-injection",
+      label: "Insulin Syringes & Injection guide",
+      text:
+        "For injection technique, injection sites, unit-to-mcg conversion, and reconstitution, see the full",
+    },
+    related: ["what-size-needle-for-peptides"],
   },
 ];
 
@@ -108,6 +197,7 @@ export function faqAnswerText(q: FaqQuestion): string {
   for (const b of q.body) {
     if (b.kind === "p" || b.kind === "heading") parts.push(b.text);
     else if (b.kind === "list") parts.push(b.items.join(" "));
+    else if (b.kind === "cta") parts.push(`${b.text} ${b.label}.`);
   }
   parts.push(`${q.handoff.text} ${q.handoff.label}.`);
   return parts.join(" ").replace(/\s+/g, " ").trim();

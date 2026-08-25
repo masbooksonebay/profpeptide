@@ -280,6 +280,7 @@ export default function CalculatorPage() {
               </code>
               <p className="mt-1 text-xs text-gray-400 dark:text-slate-500">Units on U-100 syringe</p>
               <Link href="/faq/what-size-needle-for-peptides" className="mt-1 inline-block text-xs text-[#3A759F] hover:underline">What size needle? &rarr;</Link>
+              <Link href="/faq/can-you-use-insulin-needles-for-peptides" className="mt-1 block text-xs text-[#3A759F] hover:underline">Can you use insulin needles? &rarr;</Link>
             </div>
           </div>
         </div>
