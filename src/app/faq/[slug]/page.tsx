@@ -1,0 +1,108 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
+import JsonLd from "@/components/JsonLd";
+import PageDisclaimer from "@/components/PageDisclaimer";
+import { buildPageMetadata } from "@/lib/seo";
+import { faqPageJsonLd } from "@/lib/faq-schema";
+import { faqQuestions, faqQuestionBySlug, faqAnswerText } from "@/data/faqQuestions";
+
+export function generateStaticParams() {
+  return faqQuestions.map((q) => ({ slug: q.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const q = faqQuestionBySlug(params.slug);
+  if (!q) return {};
+  return buildPageMetadata({
+    path: `/faq/${q.slug}`,
+    title: q.title,
+    description: q.metaDescription,
+    ogTitle: q.question,
+    ogDescription: q.metaDescription,
+    // Defer OG to this segment's opengraph-image.tsx (generic content card).
+    useDefaultOgImage: false,
+  });
+}
+
+export default function FaqQuestionPage({ params }: { params: { slug: string } }) {
+  const q = faqQuestionBySlug(params.slug);
+  if (!q) notFound();
+
+  // FAQPage schema derives from the SAME text the page renders (faqAnswerText),
+  // never a hand-written second copy.
+  const faqSchema = faqPageJsonLd([{ q: q.question, a: faqAnswerText(q) }]);
+
+  return (
+    <>
+      <JsonLd data={faqSchema} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "FAQ", path: "/faq" },
+          { name: q.question },
+        ])}
+      />
+      <div className="section max-w-3xl">
+        <Link href="/faq" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
+          Back to FAQ
+        </Link>
+
+        <div className="flex flex-wrap items-center gap-3 mb-4">
+          <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">{q.question}</h1>
+          <span className="tag">FAQ</span>
+        </div>
+
+        {/* The answer, first — figures up top, no preamble. */}
+        <p className="text-lg text-gray-700 dark:text-slate-200 leading-relaxed font-medium mb-8">
+          {q.lede}
+        </p>
+
+        <div className="space-y-5">
+          {q.body.map((b, i) => {
+            if (b.kind === "heading") {
+              return (
+                <h2 key={i} className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-1">
+                  {b.text}
+                </h2>
+              );
+            }
+            if (b.kind === "list") {
+              return (
+                <ul key={i} className="list-disc list-inside space-y-1">
+                  {b.items.map((it, j) => (
+                    <li key={j} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+                      {it}
+                    </li>
+                  ))}
+                </ul>
+              );
+            }
+            return (
+              <p key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+                {b.text}
+              </p>
+            );
+          })}
+        </div>
+
+        <div className="mt-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+            {q.handoff.text}{" "}
+            <Link href={q.handoff.href} className="text-[#3A759F] hover:underline font-medium">
+              {q.handoff.label}
+            </Link>
+            .
+          </p>
+        </div>
+
+        <div className="mt-8 p-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 rounded-lg text-sm text-amber-800 dark:text-amber-300 leading-relaxed">
+          For educational and research purposes only. Not medical advice. Not for human use.
+        </div>
+
+        <PageDisclaimer />
+      </div>
+    </>
+  );
+}

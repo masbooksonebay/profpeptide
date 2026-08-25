@@ -279,6 +279,7 @@ export default function CalculatorPage() {
                 Draw Volume mL &times; 100
               </code>
               <p className="mt-1 text-xs text-gray-400 dark:text-slate-500">Units on U-100 syringe</p>
+              <Link href="/faq/what-size-needle-for-peptides" className="mt-1 inline-block text-xs text-[#3A759F] hover:underline">What size needle? &rarr;</Link>
             </div>
           </div>
         </div>

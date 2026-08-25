@@ -217,6 +217,7 @@ const sections = [
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Why thinner is better.</span> Lower-viscosity peptide solutions flow easily through fine needles, and thinner needles cause less pain, bruising, and tissue trauma than thicker ones.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">When to use 1/2&Prime; (12.7 mm).</span> Intramuscular injection &mdash; rarely the right route for peptides. A handful of peptide protocols specify IM dosing; check the specific peptide&rsquo;s profile before assuming subQ.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Drawing from the vial.</span> The same syringe used for injection draws from the vial. Some users keep a separate larger-gauge needle for drawing thick reconstituted solutions then swap to the insulin syringe for injection &mdash; for typical peptide viscosity this is unnecessary.</li>
+        <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Quick answer.</span> For just the numbers, see <Link href="/faq/what-size-needle-for-peptides" className="text-[#3A759F] hover:underline">what size needle for peptides</Link> &mdash; the gauge and length commonly used, at a glance.</li>
       </ol>
     ),
   },

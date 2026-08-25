@@ -61,6 +61,7 @@ const { peptideCategories } = execModule("src/data/peptideCategories.ts");
 const { supplements } = execModule("src/data/supplements.ts");
 const { articles } = execModule("src/data/news.ts");
 const { glossarySections } = execModule("src/data/glossary.ts");
+const { faqQuestions } = execModule("src/data/faqQuestions.ts");
 const { vendors } = execModule("src/data/vendors.ts");
 const { routes } = execModule("src/data/routes.ts");
 const priceIndex = JSON.parse(readFileSync(P("src/data/prices.index.json"), "utf8"));
@@ -99,6 +100,10 @@ export function buildEntries() {
     const { title, description } = parsePageMeta(P("src/app/guides", slug, "page.tsx"));
     push(title || titleCase(slug), `/guides/${slug}`, "guide", description);
   }
+
+  // FAQ question pages (/faq/[slug]) — one googled question each. searchTags carry the exact
+  // GSC queries (e.g. "needle size") so the page is findable by how it's actually searched.
+  for (const q of faqQuestions) push(q.question, `/faq/${q.slug}`, "guide", q.metaDescription, q.searchTags);
 
   // News articles
   for (const a of articles) push(a.title, `/news/${a.slug}`, "news", a.excerpt || "");
