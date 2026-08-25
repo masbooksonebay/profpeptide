@@ -168,6 +168,10 @@ const sections = [
           Phase 2 trials tested doses from 0.5 mg to 12 mg weekly. Phase 3 (TRIUMPH-4) tested 9 mg and 12 mg as maintenance doses, with full Phase 3 results pending for the 4 mg lower-dose maintenance arm. Half-life is approximately 6 days, supporting once-weekly dosing with steady state reached in 4–5 weeks at each dose level.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Common question:</span>{" "}
+          <Link href="/faq/how-often-is-retatrutide-dosed" className="text-[#3A759F] hover:underline">How often is retatrutide dosed? &rarr;</Link>
+        </p>
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           If side effects are difficult to tolerate at any step, holding at the current dose for an additional 4 weeks is standard practice and does not appear to reduce long-term outcomes. Some users in research settings split doses into 2–3 smaller injections per week to reduce side effects, though this is not the protocol used in clinical trials.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

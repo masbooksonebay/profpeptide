@@ -277,6 +277,89 @@ export const faqQuestions: FaqQuestion[] = [
     },
     related: ["what-size-needle-for-peptides", "can-you-use-insulin-needles-for-peptides"],
   },
+  {
+    slug: "how-often-is-retatrutide-dosed",
+    question: "How often is retatrutide dosed?",
+    title: "How Often Is Retatrutide Dosed? Once Weekly in Trials",
+    metaDescription:
+      "In the retatrutide trials the dose was a once-weekly subcutaneous injection, escalated every 4 weeks from a low start up to 12 mg; Phase 2 tested 0.5–12 mg weekly (half-life ~6 days supports weekly dosing). Reported from the trial protocols, not a recommendation.",
+    searchTags: [
+      "reta dosing",
+      "retatrutide dosing",
+      "how often is retatrutide dosed",
+      "how often do you take reta",
+      "retatrutide dosing schedule",
+      "how often to inject retatrutide",
+      "retatrutide dosing frequency",
+    ],
+    hubBlurb:
+      "The once-weekly subcutaneous schedule and every-4-week titration the retatrutide trials used, reported from the profile's cited Phase 2/3 protocols.",
+    lede:
+      "In the clinical trials retatrutide was given as a once-weekly subcutaneous injection, with the dose escalated every 4 weeks from a low start up to a 12 mg maximum. The Phase 2 trials tested doses from 0.5 mg to 12 mg weekly. This reports the trial protocols, not a dosing recommendation.",
+    body: [
+      {
+        kind: "heading",
+        text: "Once-weekly, by subcutaneous injection",
+      },
+      {
+        kind: "p",
+        text:
+          "In the trials retatrutide was administered once weekly by subcutaneous injection. Its half-life is approximately 6 days, which supports a once-weekly interval, with steady state reached in about 4–5 weeks at each dose level.",
+      },
+      {
+        kind: "heading",
+        text: "The escalation the trials used",
+      },
+      {
+        kind: "p",
+        text:
+          "Rather than starting at the target dose, the trials raised the dose every 4 weeks. The Phase 3 TRIUMPH protocol stepped it up as follows, all once weekly; the Phase 2 trials tested the 0.5 mg to 12 mg weekly range.",
+      },
+      {
+        kind: "list",
+        items: [
+          "Weeks 1–4: 2 mg once weekly.",
+          "Weeks 5–8: 4 mg once weekly.",
+          "Weeks 9–12: 6 mg once weekly.",
+          "Weeks 13–16: 9 mg once weekly.",
+          "Weeks 17+: 12 mg once weekly (the maximum dose tested).",
+        ],
+      },
+      {
+        kind: "heading",
+        text: "Why the trials escalated slowly",
+      },
+      {
+        kind: "p",
+        text:
+          "The stepwise increase was used to give the body time to adapt and to reduce gastrointestinal side effects. Phase 2 data showed that starting at a higher dose (4 mg) increased side-effect rates without improving outcomes, which is why the trials began low and titrated up.",
+      },
+      {
+        kind: "heading",
+        text: "How long the trials ran",
+      },
+      {
+        kind: "p",
+        text:
+          "The Phase 2 obesity trial ran 48 weeks in 338 adults, and the companion Phase 2 type 2 diabetes trial ran 36 weeks in 281 adults — both with the once-weekly injection maintained across the study.",
+      },
+      {
+        kind: "list",
+        items: [
+          "Frequency: once weekly, subcutaneous.",
+          "Titration: dose raised every 4 weeks (TRIUMPH: 2 → 4 → 6 → 9 → 12 mg).",
+          "Phase 2 dose range tested: 0.5–12 mg weekly.",
+          "Half-life ~6 days; steady state in ~4–5 weeks per dose level.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/peptides/retatrutide",
+      label: "Retatrutide research profile",
+      text:
+        "For the mechanism, trial results, side effects, sources, and full dosing detail, see the",
+    },
+  },
 ];
 
 /** Flatten a question to the plain-text answer used verbatim in the FAQPage schema —
