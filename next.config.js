@@ -41,6 +41,13 @@ const nextConfig = {
       // LIGHT vial base (coupon-card-light.jpg); the dark base is still loaded by loadAssets (shared
       // with home/content) so it stays traced too. All must be bundled or the cards 500 in prod.
       "/coupons/**": ["./public/og/coupon-card-base.jpg", "./public/og/coupon-card-light.jpg", "./public/logo-glasses.png", "./public/fonts/*.ttf"],
+      // /prices/[compound] + /faq/[slug] OG cards are DYNAMIC routes (parameterized metadata image
+      // routes don't prerender in Next 14.2), so they render in a serverless function at runtime and
+      // MUST have loadAssets()'s seven files bundled — else readFile ENOENTs → 500 (every /prices card
+      // shipped cardless since d99c44d). generateContentOg reads the full loadAssets set, so mirror
+      // /coupons/** exactly (both card JPGs, the logo, the four Inter fonts). Enforced by check:og-assets.
+      "/prices/**": ["./public/og/coupon-card-base.jpg", "./public/og/coupon-card-light.jpg", "./public/logo-glasses.png", "./public/fonts/*.ttf"],
+      "/faq/**": ["./public/og/coupon-card-base.jpg", "./public/og/coupon-card-light.jpg", "./public/logo-glasses.png", "./public/fonts/*.ttf"],
       // News OG cards: article routes render the brand tile (generateNewsOg → logo-glasses.png);
       // the /news hub still uses the content card (generateContentOg → coupon-card-base.jpg).
       // Both need the Inter fonts. Without this, the tracer drops the assets in prod → 500.
