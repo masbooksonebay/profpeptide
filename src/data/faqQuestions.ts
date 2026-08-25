@@ -40,6 +40,10 @@ export interface FaqQuestion {
   handoff: { href: string; label: string; text: string };
   /** Slugs of related FAQ question pages in the same cluster — rendered as cross-links. */
   related?: string[];
+  /** Compound FAQ pages end with a "Where to Buy" vendor block (standing rule). `compoundSlug`
+   *  drives the shared <VendorHighlightBlock>'s /prices CTA; the vendor SET is the fixed curated
+   *  trio pinned in the page. Injection-prep pages (needle/bac water) omit this. */
+  whereToBuy?: { compoundSlug: string };
 }
 
 export const faqQuestions: FaqQuestion[] = [
@@ -359,6 +363,379 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For the mechanism, trial results, side effects, sources, and full dosing detail, see the",
     },
+    related: ["how-often-is-tirzepatide-dosed", "how-often-is-semaglutide-dosed"],
+    whereToBuy: { compoundSlug: "retatrutide" },
+  },
+  {
+    slug: "how-often-is-tirzepatide-dosed",
+    question: "How often is tirzepatide dosed?",
+    title: "How Often Is Tirzepatide Dosed? Once Weekly in Trials",
+    metaDescription:
+      "In the SURMOUNT/SURPASS trials and the FDA-approved label, tirzepatide is a once-weekly subcutaneous injection, escalated every 4 weeks from 2.5 mg through 15 mg over 20 weeks (2.5→5→7.5→10→12.5→15), then held at a 5, 10, or 15 mg weekly maintenance dose. Reported from the protocols, not a recommendation.",
+    searchTags: [
+      "tirzepatide dosing",
+      "how often is tirzepatide dosed",
+      "tirzepatide dosing schedule",
+      "how often to inject tirzepatide",
+      "tirz dosing",
+      "how often do you take tirzepatide",
+      "tirzepatide frequency",
+    ],
+    hubBlurb:
+      "The once-weekly subcutaneous schedule and every-4-week titration (2.5→15 mg) the tirzepatide trials and FDA label used.",
+    lede:
+      "In the SURMOUNT and SURPASS trials and the FDA-approved label, tirzepatide is given as a once-weekly subcutaneous injection. The dose is escalated every 4 weeks from a 2.5 mg start through 15 mg over 20 weeks (2.5 → 5 → 7.5 → 10 → 12.5 → 15), then held at a 5, 10, or 15 mg weekly maintenance dose. This reports the trial and label protocols, not a recommendation.",
+    body: [
+      {
+        kind: "heading",
+        text: "Once-weekly, by subcutaneous injection",
+      },
+      {
+        kind: "p",
+        text:
+          "In the trials and on the FDA-approved label, tirzepatide is administered once weekly by subcutaneous injection. Its half-life is approximately 5 days, which supports the once-weekly interval, with steady state reached in about 4 weeks at each dose level.",
+      },
+      {
+        kind: "heading",
+        text: "The titration the trials used",
+      },
+      {
+        kind: "p",
+        text:
+          "Rather than starting at the target dose, the FDA-approved schedule (the SURMOUNT-1 protocol) raises the dose every 4 weeks over 20 weeks, all once weekly:",
+      },
+      {
+        kind: "list",
+        items: [
+          "Weeks 1–4: 2.5 mg once weekly (initiation dose).",
+          "Weeks 5–8: 5 mg once weekly.",
+          "Weeks 9–12: 7.5 mg once weekly.",
+          "Weeks 13–16: 10 mg once weekly.",
+          "Weeks 17–20: 12.5 mg once weekly.",
+          "Weeks 21+: 15 mg once weekly (maximum dose).",
+        ],
+      },
+      {
+        kind: "heading",
+        text: "Maintenance and why it titrates slowly",
+      },
+      {
+        kind: "p",
+        text:
+          "Maintenance doses in the trials were 5, 10, or 15 mg once weekly. The slow titration is used to reduce gastrointestinal side effects; faster escalation was reported to increase side-effect rates without improving outcomes.",
+      },
+      {
+        kind: "cta",
+        text: "To convert a mg dose to syringe units and plan reconstitution, the",
+        href: "/calculator",
+        label: "Prof. Peptide dosage calculator",
+      },
+      {
+        kind: "list",
+        items: [
+          "Frequency: once weekly, subcutaneous.",
+          "Titration: dose raised every 4 weeks (2.5 → 5 → 7.5 → 10 → 12.5 → 15 mg) over 20 weeks.",
+          "Maintenance: 5, 10, or 15 mg once weekly.",
+          "Half-life ~5 days; steady state in ~4 weeks per dose level.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/peptides/tirzepatide",
+      label: "Tirzepatide research profile",
+      text:
+        "For the mechanism, trial results, side effects, sources, and full dosing detail, see the",
+    },
+    related: ["how-often-is-retatrutide-dosed", "how-often-is-semaglutide-dosed"],
+    whereToBuy: { compoundSlug: "tirzepatide" },
+  },
+  {
+    slug: "how-often-is-semaglutide-dosed",
+    question: "How often is semaglutide dosed?",
+    title: "How Often Is Semaglutide Dosed? Once Weekly in Trials",
+    metaDescription:
+      "In the STEP trials and the FDA label, injectable semaglutide is a once-weekly subcutaneous injection, escalated every 4 weeks from 0.25 mg to 2.4 mg over 16 weeks (Wegovy); Ozempic tops out at 2.0 mg weekly, and oral Rybelsus is taken daily. Half-life ~7 days. Reported from the protocols.",
+    searchTags: [
+      "semaglutide dosing",
+      "how often is semaglutide dosed",
+      "semaglutide dosing schedule",
+      "how often to inject semaglutide",
+      "sema dosing",
+      "how often do you take semaglutide",
+      "semaglutide frequency",
+      "ozempic dosing schedule",
+      "wegovy dosing schedule",
+    ],
+    hubBlurb:
+      "The once-weekly injectable schedule (0.25→2.4 mg), the Ozempic/Rybelsus variants, and the every-4-week titration the semaglutide trials and label used.",
+    lede:
+      "In the STEP trials and the FDA-approved label, injectable semaglutide (Wegovy/Ozempic) is given as a once-weekly subcutaneous injection, escalated every 4 weeks from 0.25 mg to a 2.4 mg maintenance dose over 16 weeks. Oral semaglutide (Rybelsus) is a daily tablet instead. This reports the trial and label protocols, not a recommendation.",
+    body: [
+      {
+        kind: "heading",
+        text: "Once weekly by injection; daily as an oral tablet",
+      },
+      {
+        kind: "p",
+        text:
+          "Injectable semaglutide (Wegovy for weight management, Ozempic for type 2 diabetes) is administered once weekly by subcutaneous injection; its half-life is approximately 7 days, which supports the once-weekly interval. Oral semaglutide (Rybelsus, type 2 diabetes only) is taken once daily instead.",
+      },
+      {
+        kind: "heading",
+        text: "The Wegovy titration",
+      },
+      {
+        kind: "p",
+        text:
+          "The Wegovy weight-management schedule escalates the dose every 4 weeks over 16 weeks, all once weekly:",
+      },
+      {
+        kind: "list",
+        items: [
+          "Weeks 1–4: 0.25 mg once weekly.",
+          "Weeks 5–8: 0.5 mg once weekly.",
+          "Weeks 9–12: 1.0 mg once weekly.",
+          "Weeks 13–16: 1.7 mg once weekly.",
+          "Weeks 17+: 2.4 mg once weekly (maintenance).",
+        ],
+      },
+      {
+        kind: "heading",
+        text: "Ozempic and oral Rybelsus",
+      },
+      {
+        kind: "p",
+        text:
+          "For type 2 diabetes, Ozempic tops out at 2.0 mg once weekly, escalating 0.25 → 0.5 → 1.0 → 2.0 mg with each step at least 4 weeks. Oral Rybelsus is taken once daily on an empty stomach at 3, 7, or 14 mg; its low oral bioavailability is why the tablet doses are larger than the injectable.",
+      },
+      {
+        kind: "heading",
+        text: "Why it titrates slowly",
+      },
+      {
+        kind: "p",
+        text:
+          "The stepwise increase is used to reduce gastrointestinal side effects; escalating faster was reported to raise side-effect rates without improving outcomes.",
+      },
+      {
+        kind: "cta",
+        text: "To convert a mg dose to syringe units and plan reconstitution, the",
+        href: "/calculator",
+        label: "Prof. Peptide dosage calculator",
+      },
+      {
+        kind: "list",
+        items: [
+          "Injectable: once weekly, subcutaneous; oral Rybelsus: once daily.",
+          "Wegovy titration: 0.25 → 0.5 → 1.0 → 1.7 → 2.4 mg every 4 weeks over 16 weeks.",
+          "Ozempic max: 2.0 mg once weekly.",
+          "Half-life ~7 days; steady state in ~4–5 weeks per dose level.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/peptides/semaglutide",
+      label: "Semaglutide research profile",
+      text:
+        "For the mechanism, trial results, side effects, sources, and full dosing detail, see the",
+    },
+    related: ["how-often-is-retatrutide-dosed", "how-often-is-tirzepatide-dosed"],
+    whereToBuy: { compoundSlug: "semaglutide" },
+  },
+  {
+    slug: "how-often-are-cjc-1295-and-ipamorelin-dosed",
+    question: "How often are CJC-1295 and Ipamorelin dosed?",
+    title: "How Often Are CJC-1295 and Ipamorelin Dosed? Frequency Explained",
+    metaDescription:
+      "Frequency follows each compound's half-life: CJC-1295 with DAC is dosed once weekly (6–8-day half-life), while CJC-1295 without DAC and Ipamorelin are dosed multiple times daily (short half-lives). No controlled trial established a combined protocol; amounts are convention. Reported from the cited pharmacology.",
+    searchTags: [
+      "cjc-1295 ipamorelin dosing",
+      "how often are cjc-1295 and ipamorelin dosed",
+      "cjc 1295 ipamorelin dosing schedule",
+      "how often to inject cjc-1295 ipamorelin",
+      "gh stack dosing",
+      "cjc ipamorelin frequency",
+      "ipamorelin dosing",
+      "cjc-1295 dosing",
+    ],
+    hubBlurb:
+      "Why the pair's frequency splits by half-life — CJC-1295 DAC weekly vs no-DAC CJC and Ipamorelin multiple times daily — with the combination's no-trial caveat.",
+    lede:
+      "The dosing frequency follows each compound's half-life. CJC-1295 with DAC has a 6–8-day half-life (from a cited human pharmacokinetic study) and is dosed once weekly; CJC-1295 without DAC (Mod GRF 1-29) and Ipamorelin have short half-lives and are dosed multiple times daily, most commonly pre-bed. No controlled trial established a combined protocol.",
+    body: [
+      {
+        kind: "heading",
+        text: "Frequency follows half-life",
+      },
+      {
+        kind: "p",
+        text:
+          "The DAC form of CJC-1295 binds albumin, giving it a 6–8-day half-life (documented in a cited human pharmacokinetic study), which is why it is dosed once weekly. CJC-1295 without DAC (Mod GRF 1-29) and Ipamorelin have short half-lives, so they are dosed several times daily — pre-bed being the most common single-dose timing, aligning with the natural overnight growth-hormone pulse.",
+      },
+      {
+        kind: "heading",
+        text: "The two ways the pair is run",
+      },
+      {
+        kind: "list",
+        items: [
+          "Standard (no-DAC) pair: CJC-1295 no-DAC and Ipamorelin are co-administered at the same frequency — multiple times daily — because their short half-lives are synchronized.",
+          "DAC alternative: CJC-1295 DAC once weekly, with Ipamorelin still dosed daily — two different schedules, since Ipamorelin's daily pulse adds the pulsatile signal the long-acting CJC-1295 DAC does not.",
+        ],
+      },
+      {
+        kind: "heading",
+        text: "About the amounts and the combination",
+      },
+      {
+        kind: "p",
+        text:
+          "This reports frequency, which follows the cited pharmacology. The specific microgram amounts and exact number of daily doses are community convention, not from a controlled trial — the profiles state there are no approved dosing standards for the combination itself. Reported, not a recommendation.",
+      },
+      {
+        kind: "list",
+        items: [
+          "CJC-1295 with DAC: once weekly (6–8-day half-life).",
+          "CJC-1295 without DAC (Mod GRF 1-29): multiple times daily (short half-life).",
+          "Ipamorelin: multiple times daily, pre-bed most common (short half-life).",
+          "No controlled-trial protocol for the combination; amounts are convention.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/peptides/gh-stack",
+      label: "GH Stack (CJC-1295 + Ipamorelin) profile",
+      text:
+        "For each compound's mechanism, the cited pharmacokinetic sources, and the full context, see the",
+    },
+    whereToBuy: { compoundSlug: "gh-stack" },
+  },
+  {
+    slug: "how-often-is-bpc-157-dosed",
+    question: "How often is BPC-157 dosed?",
+    title: "How Often Is BPC-157 Dosed? What the Evidence Actually Shows",
+    metaDescription:
+      "No human clinical trial has established a BPC-157 dosing frequency. The once/twice-daily figures circulated online are community convention, not trial data — the cited evidence is largely animal-model plus one small human case series (a single localized injection, no dose). Reported as what the literature studied.",
+    searchTags: [
+      "bpc-157 dosing",
+      "how often is bpc-157 dosed",
+      "bpc 157 dosing schedule",
+      "how often to inject bpc-157",
+      "bpc-157 frequency",
+      "how often do you take bpc-157",
+      "bpc157 dosing",
+    ],
+    hubBlurb:
+      "Why there is no established BPC-157 dosing frequency — the circulating numbers are convention, and the cited evidence is animal-model plus one small human case series.",
+    lede:
+      "No human clinical trial has established a dosing frequency for BPC-157. The once-or-twice-daily figures circulated online are community convention, not trial data. The published evidence cited on its profile is largely animal-model work on mechanism and tissue healing, plus one small human case series — so there is no studied schedule to report.",
+    body: [
+      {
+        kind: "heading",
+        text: "No established human dosing protocol",
+      },
+      {
+        kind: "p",
+        text:
+          "BPC-157 is not FDA-approved and has no completed human dosing trial. The frequencies and amounts repeated across the research community — including named influencer protocols — are convention, not figures derived from a controlled study. This page reports that state honestly rather than presenting convention as an answer.",
+      },
+      {
+        kind: "heading",
+        text: "What the cited literature actually studied",
+      },
+      {
+        kind: "p",
+        text:
+          "Most of the cited BPC-157 literature is animal-model work examining mechanism and tissue repair, not a dosing schedule. The one cited human report is a small case series in which patients with chronic knee pain received a single localized injection, with no standardized dose or frequency established; a registered Phase-1 oral trial has no published results.",
+      },
+      {
+        kind: "cta",
+        text: "For how BPC-157 and TB-500 compare as research peptides, see the",
+        href: "/compare/bpc-157-vs-tb-500",
+        label: "BPC-157 vs TB-500 comparison",
+      },
+      {
+        kind: "list",
+        items: [
+          "No human clinical trial has established a dosing frequency.",
+          "The circulating once/twice-daily figures are community convention, not trial data.",
+          "The one cited human datum is a single localized injection (no dose reported).",
+          "Most cited evidence is animal-model, on mechanism and healing.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/peptides/bpc-157",
+      label: "BPC-157 research profile",
+      text:
+        "For the mechanism, the cited studies, side effects, and the community convention in context, see the",
+    },
+    related: ["how-often-is-tb-500-dosed"],
+    whereToBuy: { compoundSlug: "bpc-157" },
+  },
+  {
+    slug: "how-often-is-tb-500-dosed",
+    question: "How often is TB-500 dosed?",
+    title: "How Often Is TB-500 Dosed? What the Evidence Actually Shows",
+    metaDescription:
+      "No human clinical trial has established a TB-500 dosing frequency. The circulated twice-weekly loading / weekly maintenance figures are community convention, not trial data — the cited studies cover mechanism and wound healing, and the multi-day half-life is an animal estimate. Reported as what the literature studied.",
+    searchTags: [
+      "tb-500 dosing",
+      "how often is tb-500 dosed",
+      "tb 500 dosing schedule",
+      "how often to inject tb-500",
+      "tb-500 frequency",
+      "how often do you take tb-500",
+      "tb500 dosing",
+      "thymosin beta 4 dosing",
+    ],
+    hubBlurb:
+      "Why there is no established TB-500 dosing frequency — the loading/maintenance numbers are convention, and the cited studies are mechanism/wound-healing with an animal-estimated half-life.",
+    lede:
+      "No human clinical trial has established a dosing frequency for TB-500. The twice-weekly loading and weekly maintenance figures circulated online are community convention, not trial data. The cited studies examined mechanism and wound healing rather than a dosing schedule, and the multi-day half-life is an estimate from animal work — so there is no studied schedule to report.",
+    body: [
+      {
+        kind: "heading",
+        text: "No established human dosing protocol",
+      },
+      {
+        kind: "p",
+        text:
+          "TB-500 is not FDA-approved and has no completed human dosing trial establishing a frequency. The loading-then-maintenance regimen repeated across the research community is convention, loosely attributed to early clinical trials whose doses were never published. This page reports that state rather than presenting the convention as an answer.",
+      },
+      {
+        kind: "heading",
+        text: "What the cited literature actually studied",
+      },
+      {
+        kind: "p",
+        text:
+          "The cited TB-500 studies examined mechanism, cell migration, and wound-healing outcomes — not a dosing schedule. The multi-day half-life that is offered as the rationale for infrequent dosing is an estimate from animal pharmacokinetics, not a human-trial figure. No cited study reports a frequency or dose amount for research use.",
+      },
+      {
+        kind: "cta",
+        text: "For how TB-500 and BPC-157 compare as research peptides, see the",
+        href: "/compare/bpc-157-vs-tb-500",
+        label: "BPC-157 vs TB-500 comparison",
+      },
+      {
+        kind: "list",
+        items: [
+          "No human clinical trial has established a dosing frequency.",
+          "The circulating twice-weekly/loading-maintenance figures are community convention.",
+          "The cited studies cover mechanism and wound healing, not a schedule.",
+          "The multi-day half-life is an animal-study estimate.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/peptides/tb-500",
+      label: "TB-500 research profile",
+      text:
+        "For the mechanism, the cited studies, side effects, and the community convention in context, see the",
+    },
+    related: ["how-often-is-bpc-157-dosed"],
+    whereToBuy: { compoundSlug: "tb-500" },
   },
 ];
 

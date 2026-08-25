@@ -34,9 +34,19 @@ export interface VendorHighlightBlockProps {
   /** ?from= value for the Shop link's /go/ route, so clicks are separable per surface. Defaults to
    *  "profile-block" (the 61 /peptides profiles); /peptide-sciences-alternatives passes its own. */
   from?: string;
+  /**
+   * EXPLICIT per-render pin: render exactly this ordered vendor set, overriding derivation AND the
+   * compound-global VENDOR_PINS — same code path as a pin, but scoped to this render so it does NOT
+   * change the profile pages that share the compoundSlug. Used by the compound FAQ pages, whose
+   * "Where to Buy" is a deliberate curated trio (amino-club / capstone-peptides / peptide-partners)
+   * rather than the profile's price-derived set. Filtered to LISTED as a safety net; cards, notes
+   * (from blockNote), codes/rates (from vendors.ts), and reveal-gating all behave identically — only
+   * the SET is fixed. The /prices CTA still derives from compoundSlug.
+   */
+  pinSlugs?: string[];
 }
 
-export default function VendorHighlightBlock({ highlights, compoundSlug, from = "profile-block" }: VendorHighlightBlockProps) {
+export default function VendorHighlightBlock({ highlights, compoundSlug, from = "profile-block", pinSlugs }: VendorHighlightBlockProps) {
   // Selection order of precedence:
   //   1. EXPLICIT PIN (src/data/vendor-pins.ts) — render exactly this ordered set, overriding
   //      derivation. Filtered to LISTED as a safety net; check:vendor-pins guarantees every
@@ -45,7 +55,7 @@ export default function VendorHighlightBlock({ highlights, compoundSlug, from = 
   //   3. Hand-curated fallback — only where the grid tracks nothing (blends/combos), filtered to
   //      LISTED so a cut vendor can never render.
   // No invented pairings: a vendor appears only via a pin+row, a price row, or a curated entry.
-  const pinned = compoundSlug ? VENDOR_PINS[compoundSlug] : undefined;
+  const pinned = pinSlugs ?? (compoundSlug ? VENDOR_PINS[compoundSlug] : undefined);
   const derived = compoundSlug && !pinned ? deriveHighlightVendors(compoundSlug) : [];
   // Card note: the vendor's registry `blockNote` is the single source (so a note can't drift or go
   // missing per-profile the way the hardcoded `highlights` notes did); the per-profile `highlights`

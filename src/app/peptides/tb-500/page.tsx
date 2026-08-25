@@ -177,6 +177,10 @@ const sections = [
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
           <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
         </p>
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Common question:</span>{" "}
+          <Link href="/faq/how-often-is-tb-500-dosed" className="text-[#3A759F] hover:underline">How often is TB-500 dosed? &rarr;</Link>
+        </p>
       </div>
     ),
   },

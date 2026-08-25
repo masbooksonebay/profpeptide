@@ -7,6 +7,12 @@ import PageDisclaimer from "@/components/PageDisclaimer";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd } from "@/lib/faq-schema";
 import { faqQuestions, faqQuestionBySlug, faqAnswerText } from "@/data/faqQuestions";
+import VendorHighlightBlock from "@/components/VendorHighlightBlock";
+
+// Standing rule (Mark, 2026-08-25): compound FAQ pages end with a curated "Where to Buy" trio,
+// same order on every page. Pinned per-render so the profile pages (which derive their own set)
+// are untouched. Codes/rates/gating flow from vendors.ts through the shared component.
+const WHERE_TO_BUY_TRIO = ["amino-club", "capstone-peptides", "peptide-partners"];
 
 export function generateStaticParams() {
   return faqQuestions.map((q) => ({ slug: q.slug }));
@@ -107,6 +113,17 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
             .
           </p>
         </div>
+
+        {q.whereToBuy && (
+          <div className="mt-10">
+            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Where to Buy</h2>
+            <VendorHighlightBlock
+              compoundSlug={q.whereToBuy.compoundSlug}
+              pinSlugs={WHERE_TO_BUY_TRIO}
+              from="faq-dosing"
+            />
+          </div>
+        )}
 
         {q.related && q.related.length > 0 && (
           <div className="mt-8">
