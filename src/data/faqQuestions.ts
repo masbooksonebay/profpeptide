@@ -734,7 +734,89 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For the mechanism, the cited studies, side effects, and the community convention in context, see the",
     },
-    related: ["how-often-is-bpc-157-dosed"],
+    related: ["how-often-is-bpc-157-dosed", "thymosin-beta-4-side-effects"],
+    whereToBuy: { compoundSlug: "tb-500" },
+  },
+  {
+    slug: "thymosin-beta-4-side-effects",
+    question: "What are the side effects of thymosin beta-4?",
+    title: "Thymosin Beta-4 (TB-500) Side Effects: What Studies Report",
+    metaDescription:
+      "No human trial has characterized thymosin beta-4 (TB-500) side effects. Human exposure is two Phase 2 trials terminated for non-efficacy with no published safety data; the cited studies cover wound-healing mechanism in animals. The theoretical tumor question its angiogenic role raises is unresolved by the cited literature.",
+    searchTags: [
+      "thymosin beta 4 side effects",
+      "thymosin beta-4 side effects",
+      "tb4 side effects",
+      "tb4 frag side effects",
+      "tb-500 side effects",
+      "tb500 side effects",
+      "does tb-500 cause cancer",
+      "thymosin beta 4 safety",
+    ],
+    hubBlurb:
+      "Why there is no characterized human side-effect profile for thymosin beta-4 / TB-500 — human exposure is two terminated Phase 2 trials, the cited studies are animal wound-healing mechanism, and the tumor question stays theoretical.",
+    lede:
+      "No human clinical trial has characterized the side effects of thymosin beta-4 or its synthetic fragment TB-500. Human exposure is limited to two Phase 2 trials terminated for non-efficacy before publishing safety data, and the cited literature studies wound-healing mechanism in animals — so repeated “no side effects” claims reflect absence of study, not evidence of absence.",
+    body: [
+      {
+        kind: "heading",
+        text: "TB-500 and thymosin beta-4: the same molecule?",
+      },
+      {
+        kind: "p",
+        text:
+          "TB-500 is a synthetic fragment of thymosin beta-4, the 43-amino-acid protein the body produces naturally. The fragment keeps the active cell-migration region in a shorter, easier-to-synthesize form. Research literature — and search queries — use the two names interchangeably, though strict pharmacology references distinguish the full endogenous protein from the synthetic fragment.",
+      },
+      {
+        kind: "cta",
+        text: "For how the fragment compares with BPC-157 as a research peptide, see the",
+        href: "/compare/bpc-157-vs-tb-500",
+        label: "BPC-157 vs TB-500 comparison",
+      },
+      {
+        kind: "heading",
+        text: "What human safety data actually exists",
+      },
+      {
+        kind: "p",
+        text:
+          "Human exposure to thymosin beta-4 is limited to two RegeneRx-sponsored Phase 2 trials — in pressure ulcers (NCT00382161) and epidermolysis bullosa (NCT00311766) — both terminated for non-efficacy reasons such as patient availability and drug expiration, not for safety findings. Neither produced a published adverse-event dataset. There are no completed Phase 3 trials and no long-term human safety data.",
+      },
+      {
+        kind: "heading",
+        text: "What the cited studies examined",
+      },
+      {
+        kind: "p",
+        text:
+          "The literature cited on the profile studies mechanism and wound healing — actin binding, cell migration, angiogenesis, and tissue repair — largely in animal models. These studies were not designed to characterize side effects, so they neither report nor rule out adverse effects in humans. Claims that TB-500 has “no side effects” reflect this absence of study rather than evidence of safety.",
+      },
+      {
+        kind: "heading",
+        text: "The tumor-growth question",
+      },
+      {
+        kind: "p",
+        text:
+          "Because thymosin beta-4 promotes cell migration and angiogenesis — the growth of new blood vessels — a theoretical question has been raised about whether it could stimulate existing tumors. The cited literature does not resolve this: those studies were designed to measure wound-healing and regenerative activity, not malignancy risk, and no cited trial assessed it in humans. The question is open, not answered, in the sources this profile cites.",
+      },
+      {
+        kind: "list",
+        items: [
+          "No human trial has characterized the side effects of thymosin beta-4 / TB-500.",
+          "Human exposure is two Phase 2 trials, both terminated for non-efficacy, with no published safety data.",
+          "The cited studies examine wound-healing mechanism in animal models, not adverse effects.",
+          "The theoretical tumor-stimulation question is not resolved by the cited literature.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/peptides/tb-500",
+      label: "TB-500 research profile",
+      text:
+        "For the mechanism, the cited studies, and how the side-effect question is discussed in context, see the",
+    },
+    related: ["how-often-is-tb-500-dosed"],
     whereToBuy: { compoundSlug: "tb-500" },
   },
 ];

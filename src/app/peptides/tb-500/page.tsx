@@ -372,6 +372,10 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           TB-500 has a clean safety profile in animal studies. RegeneRx&apos;s Phase 2 trials in pressure ulcers and epidermolysis bullosa (NCT00382161, NCT00311766) reported it was well-tolerated, though both trials were terminated for non-efficacy reasons (lack of patient availability, drug expiration). No completed Phase 3 human safety trials exist.
         </p>
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Common question:</span>{" "}
+          <Link href="/faq/thymosin-beta-4-side-effects" className="text-[#3A759F] hover:underline">What are the side effects of thymosin beta-4? &rarr;</Link>
+        </p>
       </div>
     ),
   },
