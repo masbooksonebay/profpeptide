@@ -1,10 +1,10 @@
-// Single source of truth for the /faq hub page.
+// Single source of truth for the FAQ accordions on /faq AND /supplements.
 //
-// The /faq page (src/app/faq/page.tsx) renders the accordion from `faqSections`,
-// and the FAQPage JSON-LD (src/app/faq/layout.tsx) is BUILT from the same array via
-// faqPageJsonLd() — so the schema can never drift from the visible answers again.
-// (It used to be a hand-maintained second copy; the legality answer had already
-// diverged 813 chars visible vs 710 in schema.) The VISIBLE text here is canonical.
+// Both pages render the shared <FaqAccordion> from filtered views of `faqSections`
+// (hubFaqSections / supplementFaqSections below) and build their FAQPage JSON-LD from the
+// SAME entries via faqPageJsonLd() — so the schema can never drift from the visible answers.
+// (It used to be a hand-maintained second copy; the legality answer had already diverged
+// 813 chars visible vs 710 in schema.) The VISIBLE text here is canonical.
 //
 // Keep answers plain strings (no JSX) so this module stays import-free — the derived
 // search-index generator executes it the same way it executes glossary.ts.
@@ -20,6 +20,10 @@ export interface FaqEntry {
 export interface FaqSection {
   title: string;
   icon: string;
+  // Which surface this section renders on. The /faq hub shows every "faq" section; the
+  // "supplements" section moved to the bottom of /supplements. ONE source, both pages filter it —
+  // no forked copy (the single-source rule that killed the schema drift stays intact).
+  surface: "faq" | "supplements";
   faqs: FaqEntry[];
 }
 
@@ -27,6 +31,7 @@ export const faqSections: FaqSection[] = [
   {
     title: "About Peptides",
     icon: "flask-outline",
+    surface: "faq",
     faqs: [
       {
         q: "What are research peptides?",
@@ -66,6 +71,7 @@ export const faqSections: FaqSection[] = [
   {
     title: "About Supplements",
     icon: "bag-outline",
+    surface: "supplements",
     faqs: [
       {
         q: "How are supplements different from research peptides?",
@@ -88,6 +94,7 @@ export const faqSections: FaqSection[] = [
   {
     title: "Reconstitution & Storage",
     icon: "beaker-outline",
+    surface: "faq",
     faqs: [
       {
         q: "How do I reconstitute a lyophilized peptide?",
@@ -111,6 +118,7 @@ export const faqSections: FaqSection[] = [
   {
     title: "About This Site",
     icon: "search-outline",
+    surface: "faq",
     faqs: [
       {
         q: "Is the information on this site medical advice?",
@@ -135,3 +143,12 @@ export const faqSections: FaqSection[] = [
     ],
   },
 ];
+
+// Derived views of the ONE source above — both consumers filter, neither forks the data:
+//   /faq hub (src/app/faq/page.tsx)  → hubFaqSections     (everything except supplements)
+//   /supplements bottom (page.tsx)   → supplementFaqSections / supplementFaqs
+// Each page renders the shared <FaqAccordion> and derives its FAQPage JSON-LD from these, so the
+// visible answers and the schema can never diverge.
+export const hubFaqSections: FaqSection[] = faqSections.filter((s) => s.surface !== "supplements");
+export const supplementFaqSections: FaqSection[] = faqSections.filter((s) => s.surface === "supplements");
+export const supplementFaqs: FaqEntry[] = supplementFaqSections.flatMap((s) => s.faqs);

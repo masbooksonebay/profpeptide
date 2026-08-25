@@ -3,6 +3,9 @@ import JsonLd from "@/components/JsonLd";
 import { supplementCategories, supplementsForCategory, supplementCount } from "@/data/supplements";
 import { buildPageMetadata } from "@/lib/seo";
 import { HubCategoryBrowser } from "@/components/HubCategoryBrowser";
+import FaqAccordion from "@/components/FaqAccordion";
+import { supplementFaqs } from "@/data/faq";
+import { faqPageJsonLd } from "@/lib/faq-schema";
 
 export const metadata = buildPageMetadata({
   path: "/supplements",
@@ -24,6 +27,8 @@ export default function SupplementsPage() {
   return (
     <>
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Supplements" }])} />
+      {/* The ONE FAQPage on this page — derived from the SAME supplementFaqs the accordions render. */}
+      <JsonLd data={faqPageJsonLd(supplementFaqs)} />
       <div className="section">
         <div className="mb-10">
           <span className="tag mb-3 inline-block">Research Profiles</span>
@@ -34,6 +39,16 @@ export default function SupplementsPage() {
           </p>
         </div>
         <HubCategoryBrowser categories={categories} hrefPrefix="/supplements" variant="supplements" />
+
+        {/* Supplement FAQs — moved off the /faq hub so /faq is purely peptide/site questions.
+            Same shared FaqAccordion the hub uses; the single FAQPage above derives from these. */}
+        <div className="mt-16 max-w-3xl">
+          <h2 className="text-2xl font-bold text-[#16181B] dark:text-slate-100 mb-2">Supplement FAQs</h2>
+          <p className="text-sm text-gray-500 dark:text-slate-400 mb-6 leading-relaxed">
+            Common questions about how supplements differ from research peptides, FDA status, and quality.
+          </p>
+          <FaqAccordion faqs={supplementFaqs} />
+        </div>
       </div>
     </>
   );
