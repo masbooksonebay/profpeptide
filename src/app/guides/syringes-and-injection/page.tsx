@@ -153,7 +153,8 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Always know your reconstitution before calculating a dose.</span> The same number of units delivers a different dose depending on how much water is in the vial. Write the reconstitution volume on the vial label as soon as you mix it, and double-check before every draw. The Prof. Peptide{" "}
           <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</Link>{" "}
-          handles this conversion automatically.
+          handles this conversion automatically. For how the volume you choose sets the concentration, see{" "}
+          <Link href="/faq/how-much-bac-water-for-peptides" className="text-[#3A759F] hover:underline">how much bac water to add to peptides</Link>.
         </p>
       </div>
     ),

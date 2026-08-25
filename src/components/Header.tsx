@@ -94,6 +94,15 @@ function DropdownPanel({ entry }: { entry: NavEntry }) {
           <span className="w-5 text-center text-xs">&rarr;</span>
           View All {baseHref === "/peptides" ? "Peptides" : "Supplements"}
         </Link>
+        {baseHref === "/peptides" && (
+          <Link
+            href="/faq"
+            className="flex items-center gap-2.5 px-4 py-2 text-sm font-medium text-[#3A759F] hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+          >
+            <span className="w-5 text-center text-xs">&rarr;</span>
+            Peptide FAQs
+          </Link>
+        )}
       </div>
     </div>
   );
@@ -134,6 +143,7 @@ function mobileSubItems(entry: NavEntry): { label: string; href: string; icon?: 
         icon: c.label,
       })),
       { label: `View All ${entry.href === "/peptides" ? "Peptides" : "Supplements"}`, href: entry.href },
+      ...(entry.href === "/peptides" ? [{ label: "Peptide FAQs", href: "/faq" }] : []),
     ];
   }
   return [];

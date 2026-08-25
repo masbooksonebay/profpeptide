@@ -139,6 +139,7 @@ export default function CalculatorPage() {
                   onChange={(e) => setWaterVolume(e.target.value)}
                   className="w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#3A759F] transition"
                 />
+                <Link href="/faq/how-much-bac-water-for-peptides" className="mt-1 inline-block text-xs text-[#3A759F] hover:underline">How much bac water? &rarr;</Link>
               </div>
 
               <div>

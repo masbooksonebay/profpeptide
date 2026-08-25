@@ -92,6 +92,7 @@ export const faqSections: FaqSection[] = [
       {
         q: "How do I reconstitute a lyophilized peptide?",
         a: "Lyophilized (freeze-dried) peptides are reconstituted by adding bacteriostatic water to the vial. The volume of water added determines the final concentration of the solution. Use a sterile syringe to inject the water slowly down the side of the vial — do not shake, as this can degrade the peptide. Swirl gently until fully dissolved. Use aseptic technique throughout. The Prof. Peptide Dosage Calculator can help you calculate the exact volume to add based on your desired concentration and dose.",
+        more: { href: "/faq/how-much-bac-water-for-peptides", label: "How much bac water do you add to peptides?" },
       },
       {
         q: "What is bacteriostatic water and why is it used?",

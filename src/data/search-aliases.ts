@@ -35,6 +35,9 @@ export const searchAliases: Record<string, string> = {
   bacwater: "bac water",
   "bac-water": "bac water",
   bacteriostatic: "bac water",
+  // "bac water" ↔ "bacteriostatic water": additive expansion keeps the typed phrase AND adds the
+  // formal one, so either surfaces the bac-water FAQ, the reconstitution content, and the glossary.
+  "bac water": "bacteriostatic water",
   reconstitute: "reconstitution",
   reconstituting: "reconstitution",
 

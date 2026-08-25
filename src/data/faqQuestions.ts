@@ -104,7 +104,7 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For injection technique, site rotation, unit-to-mcg conversion, and reconstitution, see the full",
     },
-    related: ["can-you-use-insulin-needles-for-peptides"],
+    related: ["can-you-use-insulin-needles-for-peptides", "how-much-bac-water-for-peptides"],
   },
   {
     slug: "can-you-use-insulin-needles-for-peptides",
@@ -186,7 +186,96 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For injection technique, injection sites, unit-to-mcg conversion, and reconstitution, see the full",
     },
-    related: ["what-size-needle-for-peptides"],
+    related: ["what-size-needle-for-peptides", "how-much-bac-water-for-peptides"],
+  },
+  {
+    slug: "how-much-bac-water-for-peptides",
+    question: "How much bac water do you add to peptides?",
+    title: "How Much Bac Water for Peptides? The mg ÷ mL Rule",
+    metaDescription:
+      "There's no single volume — the bacteriostatic water you add sets the concentration (mg ÷ mL = mg/mL). 1–3 mL per vial is commonly used; a 10 mg vial in 2 mL gives 5 mg/mL, so 1 unit (0.01 mL) draws 50 mcg. The dosage calculator does the math.",
+    searchTags: [
+      "bac water",
+      "bacteriostatic water",
+      "how much bac water for peptides",
+      "how much bac water for 10mg peptide",
+      "how much bac water for ghk-cu",
+      "how much bacteriostatic water for peptides",
+      "can i use an insulin syringe to reconstitute peptides",
+      "what size needle for reconstituting peptides",
+      "how to reconstitute peptides",
+      "reconstitution",
+    ],
+    hubBlurb:
+      "How the amount of bacteriostatic water sets the concentration (mg ÷ mL), the commonly used range, and a worked 10 mg / 2 mL example — with the math on the calculator.",
+    lede:
+      "There's no single correct volume — the amount of bacteriostatic water you add sets the concentration, and concentration sets how many units each dose draws. A commonly used range is 1–3 mL per vial. The rule is simple: milligrams in the vial ÷ millilitres of water = mg per mL.",
+    body: [
+      {
+        kind: "heading",
+        text: "The relationship: mg ÷ mL sets the concentration",
+      },
+      {
+        kind: "p",
+        text:
+          "The volume of bacteriostatic water is a choice, not a fixed number — it determines the concentration of the reconstituted solution, and the concentration determines how many syringe units each dose occupies. More water means a lower concentration, which means more units (a larger, easier-to-read draw) for the same dose; less water means a higher concentration and a smaller draw. Peptides are commonly reconstituted with roughly 1–3 mL per vial, chosen so a typical dose lands on readable unit marks.",
+      },
+      {
+        kind: "heading",
+        text: "A worked example: a 10 mg vial + 2 mL",
+      },
+      {
+        kind: "p",
+        text:
+          "Add 2 mL of bacteriostatic water to a 10 mg vial and the concentration is 10 mg ÷ 2 mL = 5 mg/mL. On a U-100 insulin syringe 1 unit is 0.01 mL, so 1 unit draws 0.05 mg (50 mcg) — a 250 mcg dose is 5 units. The same 10 mg vial in 1 mL instead gives 10 mg/mL, so 1 unit draws 100 mcg and the same dose is 2.5 units. The volume you pick simply shifts where your dose lands on the barrel.",
+      },
+      {
+        kind: "cta",
+        text: "For the exact water volume and units to draw for your vial size and target dose, the",
+        href: "/calculator",
+        label: "Prof. Peptide dosage calculator",
+      },
+      {
+        kind: "heading",
+        text: "Why the volume choice matters",
+      },
+      {
+        kind: "p",
+        text:
+          "The point of picking a volume is dose measurability. Too concentrated and a typical dose is a 1–2 unit sliver that's hard to draw accurately; too dilute and the draw can exceed the barrel. The commonly used approach is to choose a concentration so the intended dose falls in a comfortable 5–30 unit range on the syringe, then write the reconstitution volume on the vial and keep it consistent.",
+      },
+      {
+        kind: "heading",
+        text: "Can you use an insulin syringe to reconstitute?",
+      },
+      {
+        kind: "p",
+        text:
+          "Yes — the same U-100 insulin syringe both draws the bacteriostatic water into the vial and later draws each dose. Add the water slowly down the inside wall of the vial rather than blasting it onto the powder, and swirl gently rather than shaking, which is reported to degrade some peptides. Some researchers use a larger syringe to move the water and switch to the insulin syringe for dosing, but for the small volumes involved one insulin syringe handles both.",
+      },
+      {
+        kind: "cta",
+        text: "The needle that draws the water is the same one that injects the dose —",
+        href: "/faq/what-size-needle-for-peptides",
+        label: "what size needle for peptides",
+      },
+      {
+        kind: "list",
+        items: [
+          "Rule: mg in vial ÷ mL of water = mg/mL (concentration).",
+          "Commonly used: about 1–3 mL of bacteriostatic water per vial.",
+          "Example: 10 mg + 2 mL = 5 mg/mL; 1 unit (0.01 mL) = 50 mcg.",
+          "An insulin syringe both reconstitutes and doses; add water slowly, don't shake.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/guides/syringes-and-injection",
+      label: "Insulin Syringes & Injection guide",
+      text:
+        "For reconstitution step by step, unit-to-mcg conversion, storage, and injection technique, see the full",
+    },
+    related: ["what-size-needle-for-peptides", "can-you-use-insulin-needles-for-peptides"],
   },
 ];
 
