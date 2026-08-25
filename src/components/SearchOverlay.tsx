@@ -100,14 +100,24 @@ export default function SearchOverlay({ isOpen, onClose }: Props) {
   const results = useMemo(() => {
     const q = query.trim();
     if (!q) return [] as { item: SearchEntry; score: number }[];
-    // Expand synonyms/abbreviations/brands (src/data/search-aliases.ts) BEFORE matching, then drop
-    // weak fuzzy matches with the score floor so only genuine hits surface.
-    const expanded = expandQuery(q);
-    return fuse
-      .search(expanded)
-      .filter((r) => (r.score ?? 1) <= SCORE_FLOOR)
-      .slice(0, MAX_RESULTS)
-      .map((r) => ({ item: r.item, score: r.score ?? 1 }));
+    // expandQuery returns ADDITIVE variants (the literal query + alias expansions). Search each,
+    // and merge by BEST score per entry — so an alias BROADENS the results without replacing (and
+    // hiding) a literal match: "needle size" reaches the needle page (literal) while "needle" still
+    // reaches the syringe guide (alias). Keyed by the entry object, so distinct entries that share a
+    // URL (glossary terms all point at /glossary) are not collapsed. Score floor still drops weak fuzz.
+    const best = new Map<SearchEntry, number>();
+    for (const variant of expandQuery(q)) {
+      for (const r of fuse.search(variant)) {
+        const score = r.score ?? 1;
+        if (score > SCORE_FLOOR) continue;
+        const prev = best.get(r.item);
+        if (prev === undefined || score < prev) best.set(r.item, score);
+      }
+    }
+    return Array.from(best.entries())
+      .map(([item, score]) => ({ item, score }))
+      .sort((a, b) => a.score - b.score)
+      .slice(0, MAX_RESULTS);
   }, [query, fuse]);
 
   // Group by category, ordering the groups by their best (lowest) score so the category holding the
