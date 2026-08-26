@@ -99,6 +99,12 @@ export const searchAliases: Record<string, string> = {
   zadaxin: "thymosin alpha-1",
   "follistatin 344": "follistatin",
   "grf 1-29": "sermorelin",
+  // "trt" ↔ "testosterone": bidirectional additive expansion (same mechanism as bac water).
+  // "trt" surfaces all four testosterone pages (the 3 testosterone-titled + the TRT-titled
+  // timeline); "testosterone" queries reach the TRT-titled timeline page. "trt" is the therapy's
+  // standard name, not an abbreviation — the no-"test cyp"/"test e"-alias rule is unaffected.
+  trt: "testosterone",
+  testosterone: "trt",
 };
 
 // Expand a raw query into the set of query strings to search — ADDITIVE, not replacing.

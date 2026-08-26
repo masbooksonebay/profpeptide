@@ -19,9 +19,24 @@ export type FaqBlock =
   // are folded into the schema answer via faqAnswerText, so schema still matches the visible text.
   | { kind: "cta"; text: string; href: string; label: string };
 
+/** Groups the /faq hub's In-depth cards into sections. The hub DERIVES its grouping from this
+ *  field (never a hand-ordered list), so a new question lands in its section automatically. */
+export type FaqCategory = "injection" | "dosing" | "side-effects" | "trt";
+
+/** Section order + display titles for the In-depth grouping. Titles use the hub's accordion
+ *  section-header typography. */
+export const FAQ_CATEGORY_ORDER: { key: FaqCategory; title: string }[] = [
+  { key: "injection", title: "Injection & Preparation" },
+  { key: "dosing", title: "Dosing" },
+  { key: "side-effects", title: "Side Effects" },
+  { key: "trt", title: "Testosterone & TRT" },
+];
+
 export interface FaqQuestion {
   /** URL segment: /faq/<slug>. */
   slug: string;
+  /** In-depth hub section this question belongs to. */
+  category: FaqCategory;
   /** The question, as typed into search — used for the H1 and the FAQPage schema question. */
   question: string;
   /** <title>. Mirrors the query; may add the answer hook. */
@@ -49,6 +64,7 @@ export interface FaqQuestion {
 export const faqQuestions: FaqQuestion[] = [
   {
     slug: "what-size-needle-for-peptides",
+    category: "injection",
     question: "What size needle for peptides?",
     title: "What Size Needle for Peptides? Gauge and Length",
     metaDescription:
@@ -112,6 +128,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "can-you-use-insulin-needles-for-peptides",
+    category: "injection",
     question: "Can you use insulin needles for peptides?",
     title: "Can You Use Insulin Needles for Peptides? Yes — U-100 Syringes",
     metaDescription:
@@ -194,6 +211,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-much-bac-water-for-peptides",
+    category: "injection",
     question: "How much bac water do you add to peptides?",
     title: "How Much Bac Water for Peptides? The mg ÷ mL Rule",
     metaDescription:
@@ -283,6 +301,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-often-is-retatrutide-dosed",
+    category: "dosing",
     question: "How often is retatrutide dosed?",
     title: "How Often Is Retatrutide Dosed? Once Weekly in Trials",
     metaDescription:
@@ -368,6 +387,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-often-is-tirzepatide-dosed",
+    category: "dosing",
     question: "How often is tirzepatide dosed?",
     title: "How Often Is Tirzepatide Dosed? Once Weekly in Trials",
     metaDescription:
@@ -451,6 +471,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-often-is-semaglutide-dosed",
+    category: "dosing",
     question: "How often is semaglutide dosed?",
     title: "How Often Is Semaglutide Dosed? Once Weekly in Trials",
     metaDescription:
@@ -544,6 +565,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-often-are-cjc-1295-and-ipamorelin-dosed",
+    category: "dosing",
     question: "How often are CJC-1295 and Ipamorelin dosed?",
     title: "How Often Are CJC-1295 and Ipamorelin Dosed? Frequency Explained",
     metaDescription:
@@ -612,6 +634,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-often-is-bpc-157-dosed",
+    category: "dosing",
     question: "How often is BPC-157 dosed?",
     title: "How Often Is BPC-157 Dosed? What the Evidence Actually Shows",
     metaDescription:
@@ -675,6 +698,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-often-is-tb-500-dosed",
+    category: "dosing",
     question: "How often is TB-500 dosed?",
     title: "How Often Is TB-500 Dosed? What the Evidence Actually Shows",
     metaDescription:
@@ -739,6 +763,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "thymosin-beta-4-side-effects",
+    category: "side-effects",
     question: "What are the side effects of thymosin beta-4?",
     title: "Thymosin Beta-4 (TB-500) Side Effects: What Studies Report",
     metaDescription:
@@ -821,6 +846,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "igf-1-lr3-side-effects",
+    category: "side-effects",
     question: "What are the side effects of IGF-1 LR3?",
     title: "IGF-1 LR3 Side Effects: What the Evidence Shows",
     metaDescription:
@@ -895,6 +921,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "klow-peptide-blend-side-effects",
+    category: "side-effects",
     question: "What are the side effects of the KLOW peptide blend?",
     title: "KLOW Blend Side Effects: BPC-157, TB-500, GHK-Cu, KPV",
     metaDescription:
@@ -991,6 +1018,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-often-is-testosterone-cypionate-injected",
+    category: "trt",
     question: "How often is testosterone cypionate injected?",
     title: "How Often Is Testosterone Cypionate Injected? What the Label and Guidelines Say",
     metaDescription:
@@ -1067,6 +1095,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-often-is-testosterone-enanthate-injected",
+    category: "trt",
     question: "How often is testosterone enanthate injected?",
     title: "How Often Is Testosterone Enanthate Injected? What the Label and Guidelines Say",
     metaDescription:
@@ -1142,6 +1171,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "can-testosterone-be-injected-subcutaneously",
+    category: "trt",
     question: "Can testosterone be injected subcutaneously?",
     title: "Can Testosterone Be Injected Subcutaneously? What the Labels Say",
     metaDescription:
@@ -1218,6 +1248,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-long-does-trt-take-to-work",
+    category: "trt",
     question: "How long does TRT take to work?",
     title: "How Long Does TRT Take to Work? What the Research Reports",
     metaDescription:

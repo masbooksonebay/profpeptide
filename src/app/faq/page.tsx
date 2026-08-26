@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Icon } from "@/components/CategoryIcon";
 import FaqAccordion from "@/components/FaqAccordion";
 import { hubFaqSections } from "@/data/faq";
-import { faqQuestions } from "@/data/faqQuestions";
+import { faqQuestions, FAQ_CATEGORY_ORDER } from "@/data/faqQuestions";
 import { faqPageJsonLd } from "@/lib/faq-schema";
 
 // FAQPage JSON-LD DERIVED from the same hubFaqSections the page renders (never a second copy).
@@ -40,21 +40,36 @@ export default function FAQPage() {
           (a question page nothing links to is not shipped). Derived from faqQuestions. */}
       {faqQuestions.length > 0 && (
         <div className="mt-14">
-          <h2 className="text-lg font-bold text-[#16181B] dark:text-slate-100 mb-4 pb-2 border-b border-gray-100 dark:border-slate-800">
+          <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-slate-500 mb-6">
             In-depth answers
-          </h2>
-          <div className="space-y-3">
-            {faqQuestions.map((q) => (
-              <div key={q.slug} className="border border-gray-100 dark:border-slate-700 rounded-xl px-5 py-4">
-                <Link href={`/faq/${q.slug}`} className="text-sm font-medium text-[#16181B] dark:text-slate-200 hover:text-[#3A759F]">
-                  {q.question}
-                </Link>
-                <p className="text-xs text-gray-500 dark:text-slate-400 mt-1 leading-relaxed">{q.hubBlurb}</p>
-                <Link href={`/faq/${q.slug}`} className="text-xs font-medium text-[#3A759F] hover:underline mt-2 inline-block">
-                  Full answer &rarr;
-                </Link>
-              </div>
-            ))}
+          </p>
+          {/* Grouped by category, derived from FAQ_CATEGORY_ORDER + each question's `category`,
+              so a new question lands in its section automatically. Card markup unchanged. */}
+          <div className="space-y-10">
+            {FAQ_CATEGORY_ORDER.map(({ key, title }) => {
+              const questions = faqQuestions.filter((q) => q.category === key);
+              if (questions.length === 0) return null;
+              return (
+                <div key={key}>
+                  <h2 className="text-lg font-bold text-[#16181B] dark:text-slate-100 mb-4 pb-2 border-b border-gray-100 dark:border-slate-800">
+                    {title}
+                  </h2>
+                  <div className="space-y-3">
+                    {questions.map((q) => (
+                      <div key={q.slug} className="border border-gray-100 dark:border-slate-700 rounded-xl px-5 py-4">
+                        <Link href={`/faq/${q.slug}`} className="text-sm font-medium text-[#16181B] dark:text-slate-200 hover:text-[#3A759F]">
+                          {q.question}
+                        </Link>
+                        <p className="text-xs text-gray-500 dark:text-slate-400 mt-1 leading-relaxed">{q.hubBlurb}</p>
+                        <Link href={`/faq/${q.slug}`} className="text-xs font-medium text-[#3A759F] hover:underline mt-2 inline-block">
+                          Full answer &rarr;
+                        </Link>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       )}
