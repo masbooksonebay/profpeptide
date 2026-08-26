@@ -76,6 +76,7 @@ export const searchAliases: Record<string, string> = {
   ta1: "thymosin alpha-1",
   nad: "nad+",
   igf: "igf-1",
+  igf1: "igf-1",
   ghrp: "ghrp",
   pt141: "pt-141",
   "pt 141": "pt-141",

@@ -819,6 +819,176 @@ export const faqQuestions: FaqQuestion[] = [
     related: ["how-often-is-tb-500-dosed"],
     whereToBuy: { compoundSlug: "tb-500" },
   },
+  {
+    slug: "igf-1-lr3-side-effects",
+    question: "What are the side effects of IGF-1 LR3?",
+    title: "IGF-1 LR3 Side Effects: What the Evidence Shows",
+    metaDescription:
+      "Hypoglycemia is the one IGF-1 LR3 side effect the cited literature supports — IGF-1's insulin-like glucose-uptake effect, reported alongside food. No controlled human trial has characterized the analog itself, and the cited sources do not resolve the IGF-1/cancer question its mitogenic mechanism raises.",
+    searchTags: [
+      "igf 1 lr3 side effects",
+      "igf-1 lr3 side effects",
+      "side effects of igf 1 lr3",
+      "igf-1 lr3",
+      "igf lr3",
+      "igf lr3 side effects",
+      "igf 1 peptide side effects",
+    ],
+    hubBlurb:
+      "The one cited IGF-1 LR3 side effect (hypoglycemia) versus what is not established — the analog has no controlled human trials, and the cited sources leave the IGF-1/cancer question open.",
+    lede:
+      "The one side effect the cited literature supports is hypoglycemia — IGF-1's insulin-like effect on glucose uptake, documented in the cited review of IGF-I as an anabolic agent and reported alongside food. Beyond that, no controlled human trial has characterized IGF-1 LR3 specifically, so native IGF-1's profile does not transfer automatically to the analog.",
+    body: [
+      {
+        kind: "heading",
+        text: "IGF-1 LR3 vs native IGF-1: why the safety profile does not transfer",
+      },
+      {
+        kind: "p",
+        text:
+          "Native IGF-1 exists as an approved drug (mecasermin / Increlex, for severe primary IGF-1 deficiency in children). IGF-1 LR3 is a modified analog — an arginine substitution at position 3 and a 13-amino-acid N-terminal extension reduce its binding-protein affinity, extending half-life from minutes to roughly 20–30 hours and raising potency about threefold. Because the analog stays active far longer and is not the approved molecule, IGF-1's clinical adverse-event profile does not automatically describe it — and IGF-1 LR3 itself has no controlled human trials.",
+      },
+      {
+        kind: "heading",
+        text: "Hypoglycemia — the cited adverse effect",
+      },
+      {
+        kind: "p",
+        text:
+          "The cited pharmacological review of growth hormone, IGF-I, and insulin as anabolic agents documents hypoglycemia as IGF-I's principal adverse effect, driven by its insulin-like action on glucose uptake. Because IGF-1 LR3 retains and prolongs IGF-1 receptor agonism, this is the mechanistically central risk for the analog — and the reason the research convention pairs administration with food, since injected without food the glucose-uptake effect can lower blood sugar.",
+      },
+      {
+        kind: "heading",
+        text: "The cancer / mitogenic question",
+      },
+      {
+        kind: "p",
+        text:
+          "IGF-1 is a growth factor: the cited mechanism studies show IGF-1 LR3 drives cell proliferation through the PI3K/Akt and MAPK/ERK pathways. That mitogenic action is the basis for a theoretical concern — whether it could accelerate the growth of a pre-existing tumor. The cited literature does not resolve this: those studies characterized muscle, bone, and signalling mechanisms, not cancer outcomes, and no cited trial measured malignancy risk in humans. The question is open, not answered, in the sources this profile cites.",
+      },
+      {
+        kind: "heading",
+        text: "What is not established",
+      },
+      {
+        kind: "p",
+        text:
+          "Other effects discussed in the research community — joint pain, fluid retention, carpal-tunnel-like numbness, and receptor desensitization with sustained high-dose use — are not characterized in the cited literature. They are reported anecdotally rather than measured in a trial of the analog, and no completed human safety study of IGF-1 LR3 exists to confirm or rule them out.",
+      },
+      {
+        kind: "list",
+        items: [
+          "Hypoglycemia is the one adverse effect the cited literature supports (IGF-1's insulin-like glucose-uptake action).",
+          "IGF-1 LR3 has no controlled human trials; native IGF-1's approved-drug profile does not transfer automatically.",
+          "The mitogenic mechanism is cited; the human cancer-risk question is not resolved by the cited sources.",
+          "Other reported effects are anecdotal, not characterized in the cited literature.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/peptides/igf-1-lr3",
+      label: "IGF-1 LR3 research profile",
+      text:
+        "For the mechanism, the cited studies, dosing convention, and regulatory status in context, see the",
+    },
+    whereToBuy: { compoundSlug: "igf-1-lr3" },
+  },
+  {
+    slug: "klow-peptide-blend-side-effects",
+    question: "What are the side effects of the KLOW peptide blend?",
+    title: "KLOW Blend Side Effects: BPC-157, TB-500, GHK-Cu, KPV",
+    metaDescription:
+      "No study has examined the KLOW blend (BPC-157, TB-500, GHK-Cu, KPV) itself — side-effect information is per-component only, and for each, human data is limited or absent: BPC-157 and TB-500 have no completed human trials, GHK-Cu's human evidence is topical, and KPV has not completed clinical trials.",
+    searchTags: [
+      "klow peptide blend side effects",
+      "klow side effects",
+      "klow blend side effects",
+      "klow peptide side effects",
+      "klow bpc-157 tb-500 ghk-cu kpv",
+      "klow blend bpc-157 tb-500 ghk-cu kpv side effects",
+    ],
+    hubBlurb:
+      "Why there is no blend-level side-effect data for KLOW — no trial has studied the four-peptide combination, so side effects are per-component, and each component's human safety data is limited or absent.",
+    lede:
+      "No study has examined the side effects of the KLOW blend itself — there are no controlled trials of the four-peptide combination (BPC-157, TB-500, GHK-Cu, KPV), so any side-effect information is per-component, not blend-level. And for each of the four, human side-effect data is limited or absent; the cited evidence is largely animal and mechanistic.",
+    body: [
+      {
+        kind: "heading",
+        text: "No blend-level safety data",
+      },
+      {
+        kind: "p",
+        text:
+          "KLOW is a compounded four-peptide blend — BPC-157, TB-500, GHK-Cu, and KPV, typically a pre-blended 80 mg vial. No clinical trial has studied the combination itself; the synergy rationale rests on the components' complementary mechanisms, not on a comparative trial of the blend. Nothing below is a blend-level finding — each item is sourced from one component's own cited literature.",
+      },
+      {
+        kind: "heading",
+        text: "BPC-157 and TB-500",
+      },
+      {
+        kind: "p",
+        text:
+          "Neither BPC-157 nor TB-500 has completed human trials characterizing side effects. For both, the cited literature studies wound-healing mechanism largely in animal models — it neither reports nor rules out adverse effects in humans. TB-500's terminated Phase 2 human trials produced no published adverse-event data.",
+      },
+      {
+        kind: "cta",
+        text: "TB-500's side-effect evidence is covered in the",
+        href: "/faq/thymosin-beta-4-side-effects",
+        label: "thymosin beta-4 side-effects page",
+      },
+      {
+        kind: "cta",
+        text: "and BPC-157's dosing evidence in",
+        href: "/faq/how-often-is-bpc-157-dosed",
+        label: "how often BPC-157 is dosed",
+      },
+      {
+        kind: "heading",
+        text: "GHK-Cu",
+      },
+      {
+        kind: "p",
+        text:
+          "GHK-Cu's strongest human evidence is topical: a small controlled trial of the topical copper-tripeptide complex after laser skin resurfacing is among the few human studies, and topical cosmetic use has a long safety record. Injectable GHK-Cu — the route relevant to KLOW — is different: it is not FDA-approved (the FDA prohibited compounded injectable preparation in 2023), and its systemic effects come from animal and limited human research, not controlled human safety trials.",
+      },
+      {
+        kind: "heading",
+        text: "KPV",
+      },
+      {
+        kind: "p",
+        text:
+          "KPV is an anti-inflammatory tripeptide derived from α-MSH; its cited evidence is animal-model (colitis, dermatitis) and mechanistic (NF-κB inhibition, PepT1-mediated uptake). It has not completed Phase 2 or 3 human trials, so its side-effect profile in humans is not characterized in the cited literature.",
+      },
+      {
+        kind: "heading",
+        text: "What this means for the blend",
+      },
+      {
+        kind: "p",
+        text:
+          "Because each component's human side-effect data is limited or absent, and no study has looked at the four together, the blend's side-effect profile cannot be stated from evidence — combining them is not shown to be safer or riskier than any component alone. Reports of mild effects (injection-site reactions, transient fatigue, mild GI changes) are anecdotal and consistent with what the individual components are reported to produce, not measured in a trial of the blend.",
+      },
+      {
+        kind: "list",
+        items: [
+          "No controlled trial has studied the KLOW combination; there is no blend-level side-effect data.",
+          "BPC-157 and TB-500 have no completed human trials; the cited evidence is animal wound-healing mechanism.",
+          "GHK-Cu's cited human evidence is topical; injectable systemic safety is not established in controlled trials.",
+          "KPV has not completed human trials; its evidence is animal-model and mechanistic.",
+          "Reports of mild effects are anecdotal, not measured in a trial of the blend.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/peptides/klow",
+      label: "KLOW blend research profile",
+      text:
+        "For each component's mechanism, the cited studies, and the blend's dosing and regulatory status in context, see the",
+    },
+    related: ["thymosin-beta-4-side-effects"],
+    whereToBuy: { compoundSlug: "klow" },
+  },
 ];
 
 /** Flatten a question to the plain-text answer used verbatim in the FAQPage schema —

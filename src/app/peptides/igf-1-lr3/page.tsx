@@ -344,6 +344,10 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Critical contraindications: active cancer or cancer history (IGF-1 stimulates cell growth including potentially cancerous cells), pregnancy or breastfeeding, diabetic retinopathy (IGF-1 may accelerate eye blood vessel growth), uncontrolled diabetes, and age under 21 (can affect growth plate closure). Always have food available when injecting. Most experienced users keep glucose tabs or simple sugar nearby during the first weeks of a cycle.
         </p>
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Common question:</span>{" "}
+          <Link href="/faq/igf-1-lr3-side-effects" className="text-[#3A759F] hover:underline">What are the side effects of IGF-1 LR3? &rarr;</Link>
+        </p>
       </div>
     ),
   },

@@ -291,6 +291,10 @@ const sections = [
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           KLOW combines four peptides with no FDA approval as injectables. Compounded preparations vary widely in quality — third-party HPLC testing of each component is essential. The combined safety profile of the four-peptide blend has not been formally studied.
         </p>
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Common question:</span>{" "}
+          <Link href="/faq/klow-peptide-blend-side-effects" className="text-[#3A759F] hover:underline">What are the side effects of the KLOW peptide blend? &rarr;</Link>
+        </p>
       </div>
     ),
   },
