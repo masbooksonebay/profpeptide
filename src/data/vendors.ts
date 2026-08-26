@@ -268,7 +268,7 @@ export const vendors: Record<string, Vendor> = {
   },
   "ignite-peptides": {
     name: "Ignite Peptides",
-    code: "PROF10",
+    code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
     url: "https://ignitepeptides.com/ref/profpeptide/",
@@ -528,7 +528,7 @@ export const vendors: Record<string, Vendor> = {
   },
   "royal-peptides": {
     name: "Royal Peptides",
-    code: "PROF10",
+    code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
     url: "https://royal-peptides.com/?ref=urunwnog",

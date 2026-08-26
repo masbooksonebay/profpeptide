@@ -128,7 +128,7 @@
   {
     "slug": "ignite-peptides",
     "name": "Ignite Peptides",
-    "code": "PROF10",
+    "code": "PROFPEPTIDE",
     "discount": "10% off",
     "url": "https://ignitepeptides.com/ref/profpeptide/"
   },
@@ -289,7 +289,7 @@
   {
     "slug": "royal-peptides",
     "name": "Royal Peptides",
-    "code": "PROF10",
+    "code": "PROFPEPTIDE",
     "discount": "10% off",
     "url": "https://royal-peptides.com/?ref=urunwnog"
   },

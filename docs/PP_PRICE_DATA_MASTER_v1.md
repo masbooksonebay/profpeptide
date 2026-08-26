@@ -864,7 +864,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 
 ## VENDOR: Ignite Peptides
-- **slug:** ignite-peptides | **code:** PROF10 | **discount:** 10% off | **url:** ignitepeptides.com
+- **slug:** ignite-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** ignitepeptides.com
 - **traffic:** (not pulled) | **pulled:** August 16 2026
 - **sale posture:** Product sale 5/34; code stacks.
 
@@ -1398,7 +1398,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 
 ## VENDOR: Royal Peptides
-- **slug:** royal-peptides | **code:** PROF10 | **discount:** 10% off | **url:** royal-peptides.com
+- **slug:** royal-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** royal-peptides.com
 - **traffic:** (not pulled) | **pulled:** August 16 2026
 - **sale posture:** No sale.
 
