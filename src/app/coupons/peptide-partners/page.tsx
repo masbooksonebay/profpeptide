@@ -94,6 +94,11 @@ export default function PeptidePartnersCouponPage() {
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
  Every certificate of analysis provided by Peptide Partners is independently verifiable on the issuing laboratory&apos;s own website &mdash; not merely a downloadable PDF. Each product page lists a Manufacturer ID and Batch ID enabling direct cross-reference with the third-party lab&apos;s records. Peptide Partners explicitly addresses certificate fraud in the research peptide industry, noting that doctored images and stolen certificates are common, and provides verification guidance so researchers can authenticate documentation themselves.
  </p>
+ <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mt-4">
+ Beyond the vendor&apos;s own certificates,{" "}
+ <a href="https://www.finnrick.com/vendors/peptide-partners" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">Finnrick</a>{" "}
+ &mdash; an independent service that runs blind testing on customer-submitted peptide samples &mdash; ranks Peptide Partners #1 for retatrutide purity, with a 93% rating across 27 tests, as of August 2026. That standing is specific to retatrutide; Finnrick publishes separate per-compound ratings for each vendor.
+ </p>
  </div>
 
  {/* Catalog — code card, then the product grid (one row per compound+size). */}

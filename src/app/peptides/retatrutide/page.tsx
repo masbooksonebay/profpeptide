@@ -471,7 +471,7 @@ const sections = [
           highlights={[
             { slug: "amino-club", note: "ISO 17025 tested · batch COAs" },
             { slug: "glacier-aminos", note: "Batch-traceable COAs · cold-chain shipping" },
-            { slug: "peptide-partners", note: "Sold as 'GLP-3 Retatrutide'" },
+            { slug: "peptide-partners", note: "Sold as 'GLP-3 Retatrutide' · Finnrick #1 retatrutide purity (93%, Aug 2026)" },
             { slug: "ascension-peptides", note: "Sold as R-10 / R-30" },
             { slug: "vital-core-research" },
           ]}
