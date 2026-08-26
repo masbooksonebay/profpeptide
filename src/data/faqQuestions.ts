@@ -1091,6 +1091,7 @@ export const faqQuestions: FaqQuestion[] = [
       "how-often-is-testosterone-enanthate-injected",
       "can-testosterone-be-injected-subcutaneously",
       "how-long-does-trt-take-to-work",
+      "how-often-is-bloodwork-done-on-trt",
     ],
   },
   {
@@ -1167,6 +1168,7 @@ export const faqQuestions: FaqQuestion[] = [
       "how-often-is-testosterone-cypionate-injected",
       "can-testosterone-be-injected-subcutaneously",
       "how-long-does-trt-take-to-work",
+      "how-often-is-bloodwork-done-on-trt",
     ],
   },
   {
@@ -1244,6 +1246,7 @@ export const faqQuestions: FaqQuestion[] = [
       "how-often-is-testosterone-cypionate-injected",
       "how-often-is-testosterone-enanthate-injected",
       "how-long-does-trt-take-to-work",
+      "how-often-is-bloodwork-done-on-trt",
     ],
   },
   {
@@ -1327,9 +1330,236 @@ export const faqQuestions: FaqQuestion[] = [
         "To track a testosterone protocol and its estimated level curves over time, see the",
     },
     related: [
-      "how-often-is-testosterone-cypionate-injected",
-      "how-often-is-testosterone-enanthate-injected",
-      "can-testosterone-be-injected-subcutaneously",
+      "what-is-a-normal-testosterone-level",
+      "how-often-is-bloodwork-done-on-trt",
+      "does-trt-cause-hair-loss",
+    ],
+  },
+  {
+    slug: "what-is-a-normal-testosterone-level",
+    category: "trt",
+    question: "What is a normal testosterone level?",
+    title: "What Is a Normal Testosterone Level? Reference Ranges by Source",
+    metaDescription:
+      "The harmonized normal total-testosterone range (Travison 2017, healthy nonobese men 19–39) is 264–916 ng/dL, median 531; the 2018 Endocrine Society guideline uses 264 ng/dL as the lower diagnostic threshold. Ranges vary by lab and assay — reported as the named sources state.",
+    searchTags: [
+      "what is a normal testosterone level",
+      "normal testosterone levels by age",
+      "testosterone reference range",
+      "normal testosterone range",
+      "healthy testosterone level",
+      "testosterone levels chart",
+    ],
+    hubBlurb:
+      "The harmonized normal testosterone reference range (264–916 ng/dL) from Travison 2017 and the Endocrine Society's 264 ng/dL diagnostic threshold — with the caveat that ranges vary by lab and assay.",
+    lede:
+      "The most widely used harmonized reference range for total testosterone in healthy nonobese men aged 19–39 is 264–916 ng/dL (2.5th–97.5th percentile), with a median of 531 ng/dL, per Travison et al. (2017). The 2018 Endocrine Society guideline uses 264 ng/dL as the lower diagnostic threshold. Ranges vary by lab and assay.",
+    body: [
+      {
+        kind: "heading",
+        text: "The harmonized reference range",
+      },
+      {
+        kind: "p",
+        text:
+          "A 2017 study — Travison, Vesper, Orwoll, et al., The Journal of Clinical Endocrinology & Metabolism, 102(4):1161–1173 — pooled four cohorts of healthy nonobese men aged 19–39 and, after standardizing to a CDC reference method, reported these total-testosterone percentiles: 2.5th 264, 5th 303, 50th (median) 531, 95th 852, 97.5th 916 ng/dL. The 264–916 ng/dL span between the 2.5th and 97.5th percentiles is the commonly cited “normal” range.",
+      },
+      {
+        kind: "heading",
+        text: "The diagnostic threshold guidelines use",
+      },
+      {
+        kind: "p",
+        text:
+          "The 2018 Endocrine Society Clinical Practice Guideline (Bhasin et al., JCEM 103(5):1715–1744) adopts 264 ng/dL — the lower limit of that harmonized range — as the threshold below which, with consistent symptoms and a repeat morning measurement, hypogonadism is considered. These figures are reported as the sources state them, not as a personal target.",
+      },
+      {
+        kind: "heading",
+        text: "Why ranges vary by lab and assay",
+      },
+      {
+        kind: "p",
+        text:
+          "The Travison paper is explicit that lab results are not directly comparable: “A substantial proportion of intercohort variation in testosterone levels is due to assay differences.” Before harmonization, three cohorts of men aged 40–49 measured 501, 551, and 618 ng/dL; after standardizing to the CDC method they converged to 487, 494, and 471. A given lab's reference interval depends on its assay and population — which is why the harmonized range exists, and why an individual result is read against the reporting lab's own range.",
+      },
+      {
+        kind: "list",
+        items: [
+          "Harmonized normal range (Travison 2017, healthy nonobese men 19–39): 264–916 ng/dL, median 531.",
+          "Endocrine Society 2018 lower diagnostic threshold: 264 ng/dL.",
+          "Results vary by lab and assay — read against the reporting lab's own reference interval.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/app",
+      label: "Prof. Peptide app",
+      text:
+        "To log testosterone results and track them over time against a protocol, see the",
+    },
+    related: [
+      "how-often-is-bloodwork-done-on-trt",
+      "how-long-does-trt-take-to-work",
+      "does-trt-cause-hair-loss",
+    ],
+  },
+  {
+    slug: "how-often-is-bloodwork-done-on-trt",
+    category: "trt",
+    question: "How often is bloodwork done on TRT?",
+    title: "How Often Is Bloodwork Done on TRT? The Monitoring Schedule",
+    metaDescription:
+      "The 2018 Endocrine Society guideline recommends evaluating men on TRT at 3–6 months then annually: testosterone and hematocrit at baseline, 3–6 months, and annually; PSA and prostate exam before starting and at 3–6 months for men 40+ with baseline PSA above 0.6 ng/mL. The guideline's protocol, reported.",
+    searchTags: [
+      "how often is bloodwork done on trt",
+      "trt blood work how often",
+      "trt monitoring schedule",
+      "what labs for trt",
+      "trt lab tests",
+      "trt bloodwork frequency",
+    ],
+    hubBlurb:
+      "The 2018 Endocrine Society monitoring schedule for testosterone therapy — testosterone and hematocrit at baseline, 3–6 months, and annually; PSA and a prostate exam for men 40+.",
+    lede:
+      "The 2018 Endocrine Society guideline recommends evaluating men on testosterone therapy at 3–6 months after starting, then annually. It calls for measuring testosterone and hematocrit at baseline, 3–6 months, and annually, plus PSA and a prostate exam before starting and at 3–6 months for men 40 and older with a baseline PSA above 0.6 ng/mL.",
+    body: [
+      {
+        kind: "heading",
+        text: "The Endocrine Society monitoring schedule",
+      },
+      {
+        kind: "p",
+        text:
+          "The 2018 Endocrine Society Clinical Practice Guideline (Bhasin et al., The Journal of Clinical Endocrinology & Metabolism, 103(5):1715–1744) recommends a standardized plan during the first year of therapy: evaluate symptoms, adverse effects, and adherence, and measure serum testosterone and hematocrit, at an initial follow-up of 3–6 months after starting.",
+      },
+      {
+        kind: "heading",
+        text: "Testosterone",
+      },
+      {
+        kind: "p",
+        text:
+          "The guideline recommends measuring serum testosterone to confirm it is in the target range (it targets the mid-normal range for the assay used), checked at the 3–6 month follow-up and then periodically.",
+      },
+      {
+        kind: "heading",
+        text: "Hematocrit",
+      },
+      {
+        kind: "p",
+        text:
+          "Because testosterone can raise red-cell mass, the guideline recommends checking hematocrit at baseline, at 3–6 months, and then annually. It advises against starting therapy in a man whose baseline hematocrit is already above the lab's upper limit without first addressing the erythrocytosis risk.",
+      },
+      {
+        kind: "heading",
+        text: "PSA and prostate exam",
+      },
+      {
+        kind: "p",
+        text:
+          "For men 40 and older with a baseline PSA above 0.6 ng/mL, the guideline recommends a digital rectal exam and PSA before starting, again at 3–6 months, and thereafter in line with standard prostate-cancer screening guidelines.",
+      },
+      {
+        kind: "p",
+        text:
+          "This is the guideline's monitoring protocol, reported as written. Testosterone therapy is a prescription treatment; what to test and how often for a given person is a clinical decision made with a licensed physician. This page is educational and describes what the guideline says — it is not medical advice.",
+      },
+      {
+        kind: "list",
+        items: [
+          "Initial follow-up: 3–6 months after starting, then annually (Endocrine Society 2018).",
+          "Testosterone + hematocrit: baseline, 3–6 months, then annually.",
+          "PSA + prostate exam: men 40+ with baseline PSA >0.6 ng/mL — before, at 3–6 months, then per screening guidelines.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/app",
+      label: "Prof. Peptide app",
+      text:
+        "To log and track these labs over time on a testosterone protocol, see the",
+    },
+    related: [
+      "what-is-a-normal-testosterone-level",
+      "how-long-does-trt-take-to-work",
+      "does-trt-cause-hair-loss",
+    ],
+  },
+  {
+    slug: "does-trt-cause-hair-loss",
+    category: "trt",
+    question: "Does TRT cause hair loss?",
+    title: "Does TRT Cause Hair Loss? What the Mechanism and Evidence Show",
+    metaDescription:
+      "Male pattern hair loss is DHT-driven: 5-alpha-reductase converts testosterone to DHT, which miniaturizes scalp follicles in genetically susceptible men (~80% heritable). TRT raises androgens, but the cited literature establishes no TRT-specific hair-loss rate — the mechanism is known, the outcome is not quantified.",
+    searchTags: [
+      "does trt cause hair loss",
+      "trt hair loss",
+      "does testosterone cause hair loss",
+      "testosterone therapy hair loss",
+      "trt and balding",
+      "does trt cause balding",
+    ],
+    hubBlurb:
+      "The DHT mechanism behind androgenetic alopecia and why TRT-specific hair-loss outcomes are not quantified in the cited literature — mechanism known, outcome not established.",
+    lede:
+      "Male pattern hair loss is driven by DHT, a testosterone metabolite: 5-alpha-reductase converts testosterone to DHT, which binds scalp-follicle receptors and miniaturizes them in genetically susceptible men (heredity is ~80% of the predisposition). Testosterone therapy raises androgen levels, but the cited literature does not establish a TRT-specific rate of hair loss — the mechanism is known, the outcome is not quantified.",
+    body: [
+      {
+        kind: "heading",
+        text: "The mechanism: testosterone → DHT → follicle miniaturization",
+      },
+      {
+        kind: "p",
+        text:
+          "Male androgenetic alopecia is an androgen-driven process. As the Endotext chapter on Male Androgenetic Alopecia (Asfour, Cranwell, Sinclair, 2023) describes it, the enzyme 5-alpha-reductase converts testosterone to the more active metabolite DHT; “DHT binds the androgen receptor with 5 times the avidity of testosterone,” and DHT binding to the scalp hair follicle androgen receptors produces male androgenetic alopecia. The histological hallmark is progressive hair-follicle miniaturization — shorter growth phases and smaller hairs.",
+      },
+      {
+        kind: "heading",
+        text: "Genetic susceptibility decides who is affected",
+      },
+      {
+        kind: "p",
+        text:
+          "Whether this process happens is largely inherited. The same source reports that “twin studies identified heredity as accounting for around 80% of the predisposition to baldness,” following a polygenic pattern rather than simple dominance. The androgen-receptor gene is described as necessary but not sufficient — androgens drive the process, but only in men whose genetics make their follicles susceptible.",
+      },
+      {
+        kind: "heading",
+        text: "Where TRT fits — and what is not established",
+      },
+      {
+        kind: "p",
+        text:
+          "Testosterone therapy raises circulating androgens, including the substrate 5-alpha-reductase converts to DHT — so mechanistically it can accelerate hair loss in men already genetically susceptible to androgenetic alopecia. But the cited literature stops there: the androgenetic-alopecia source does not address exogenous testosterone therapy and scalp hair loss, and provides no TRT-specific incidence. What is established is the DHT mechanism and its genetic gating; what is not established, in these sources, is how often — or how much — hair loss occurs specifically as a result of testosterone therapy. The historical observation that castrated men did not develop pattern baldness unless given testosterone shows androgen dependence, not a therapy-specific rate.",
+      },
+      {
+        kind: "heading",
+        text: "The honest bottom line",
+      },
+      {
+        kind: "p",
+        text:
+          "So the answer is neither “yes, TRT causes hair loss” nor “no, it doesn't.” Hair loss on testosterone therapy depends on individual genetic susceptibility to androgenetic alopecia through the DHT pathway; the mechanism is well-documented, but the cited literature does not quantify a TRT-specific outcome. Testosterone therapy is a prescription treatment, and questions about a specific person's risk are clinical ones for a licensed physician. This page describes what the sources establish and where they are silent — it is not medical advice.",
+      },
+      {
+        kind: "list",
+        items: [
+          "DHT (from testosterone via 5-alpha-reductase) drives androgenetic alopecia; DHT binds follicle receptors ~5× more avidly than testosterone (Endotext, Asfour 2023).",
+          "Heredity accounts for ~80% of the predisposition — genetics gate who is susceptible.",
+          "TRT raises androgens, but the cited literature establishes no TRT-specific hair-loss rate — mechanism known, outcome not quantified.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/app",
+      label: "Prof. Peptide app",
+      text:
+        "To track a testosterone protocol and its bloodwork over time, see the",
+    },
+    related: [
+      "how-long-does-trt-take-to-work",
+      "what-is-a-normal-testosterone-level",
+      "how-often-is-bloodwork-done-on-trt",
     ],
   },
 ];
