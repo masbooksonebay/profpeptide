@@ -83,6 +83,22 @@ export const searchAliases: Record<string, string> = {
   glow: "glow",
   klow: "klow",
   epithalon: "epitalon", // common alternate spelling
+  // Identity aliases (chemical name / brand / INN -> profile). Space and hyphen forms both
+  // added where a query is normally typed with spaces, since expandQuery collapses whitespace
+  // but preserves hyphens. Bare-identity forms route to the PROFILE; longer intent queries
+  // (e.g. "thymosin beta 4 side effects") never match these whole-query keys, so their FAQ
+  // pages keep the top slot.
+  "thymosin beta 4": "tb-500",
+  "thymosin beta-4": "tb-500",
+  ibutamoren: "mk-677",
+  bremelanotide: "pt-141",
+  "copper peptide": "ghk-cu",
+  "modified grf 1-29": "cjc-1295",
+  "delta sleep inducing peptide": "dsip",
+  thymalfasin: "thymosin alpha-1",
+  zadaxin: "thymosin alpha-1",
+  "follistatin 344": "follistatin",
+  "grf 1-29": "sermorelin",
 };
 
 // Expand a raw query into the set of query strings to search — ADDITIVE, not replacing.
