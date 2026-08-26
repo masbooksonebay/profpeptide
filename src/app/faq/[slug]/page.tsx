@@ -147,7 +147,8 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
           For educational and research purposes only. Not medical advice. Not for human use.
         </div>
 
-        <PageDisclaimer />
+        {/* Affiliate disclosure only where the page actually carries vendor links. */}
+        {q.whereToBuy && <PageDisclaimer />}
       </div>
     </>
   );

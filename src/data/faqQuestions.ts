@@ -989,6 +989,77 @@ export const faqQuestions: FaqQuestion[] = [
     related: ["thymosin-beta-4-side-effects"],
     whereToBuy: { compoundSlug: "klow" },
   },
+  {
+    slug: "how-often-is-testosterone-cypionate-injected",
+    question: "How often is testosterone cypionate injected?",
+    title: "How Often Is Testosterone Cypionate Injected? What the Label and Guidelines Say",
+    metaDescription:
+      "The FDA Depo-Testosterone label states 50–400 mg every two to four weeks intramuscularly; the 2018 Endocrine Society guideline describes 75–100 mg weekly or 150–200 mg every two weeks. Testosterone cypionate's half-life is about eight days — the basis for these intervals. What each named source states.",
+    searchTags: [
+      "how often is testosterone cypionate injected",
+      "how often do you inject testosterone cypionate",
+      "testosterone cypionate injection frequency",
+      "how often to take testosterone cypionate",
+      "testosterone cypionate dosing frequency",
+      "testosterone cypionate how often injection",
+    ],
+    hubBlurb:
+      "What the FDA Depo-Testosterone label and the 2018 Endocrine Society guideline state about testosterone cypionate injection frequency, and the ~8-day half-life behind the intervals.",
+    lede:
+      "The FDA label for Depo-Testosterone (testosterone cypionate) states 50–400 mg intramuscularly every two to four weeks for replacement in hypogonadal men. The 2018 Endocrine Society guideline instead describes 75–100 mg weekly or 150–200 mg every two weeks. The label puts the drug's half-life at about eight days, which is the rationale for these intervals.",
+    body: [
+      {
+        kind: "heading",
+        text: "What the FDA label states",
+      },
+      {
+        kind: "p",
+        text:
+          "The FDA prescribing information for Depo-Testosterone (testosterone cypionate injection, a Schedule III controlled substance) gives the dosage for replacement in the hypogonadal male as 50–400 mg administered intramuscularly every two to four weeks. It specifies intramuscular use only, given deep in the gluteal muscle. This is the label's stated schedule, reported as written.",
+      },
+      {
+        kind: "heading",
+        text: "What the Endocrine Society guideline describes",
+      },
+      {
+        kind: "p",
+        text:
+          "The 2018 Endocrine Society Clinical Practice Guideline (Bhasin et al., The Journal of Clinical Endocrinology & Metabolism, 2018) lists, as typical starting doses for intramuscular testosterone enanthate or cypionate, 150–200 mg every two weeks or 75–100 mg weekly. These are shorter intervals and smaller per-dose amounts than the label's two-to-four-week schedule.",
+      },
+      {
+        kind: "heading",
+        text: "Why the intervals are what they are (half-life)",
+      },
+      {
+        kind: "p",
+        text:
+          "The FDA label states that testosterone cypionate's half-life after intramuscular injection is approximately eight days. With a half-life of roughly a week, a dose every one to two weeks falls within about one half-life — the pharmacologic basis for the guideline's weekly and every-two-week intervals, whereas the label's wider two-to-four-week schedule allows larger peaks and troughs between injections.",
+      },
+      {
+        kind: "heading",
+        text: "Where the label and the guideline differ",
+      },
+      {
+        kind: "p",
+        text:
+          "The two named sources describe different schedules: the FDA label, 50–400 mg every two to four weeks; the 2018 Endocrine Society guideline, 75–100 mg weekly or 150–200 mg every two weeks. Both are reported here as each source states them. Testosterone cypionate is a prescription medication and a controlled substance; which schedule applies to a given person is a clinical decision made with a licensed physician. This page is educational and describes what the documents say — it is not medical advice.",
+      },
+      {
+        kind: "list",
+        items: [
+          "FDA Depo-Testosterone label: 50–400 mg intramuscularly every two to four weeks.",
+          "2018 Endocrine Society guideline: 75–100 mg weekly or 150–200 mg every two weeks.",
+          "The label states the half-life is about eight days — the basis for these intervals.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/app",
+      label: "Prof. Peptide app",
+      text:
+        "For estimated level curves modelled from the published ~8-day half-life across weekly, every-two-week, and titration schedules, see the",
+    },
+  },
 ];
 
 /** Flatten a question to the plain-text answer used verbatim in the FAQPage schema —
