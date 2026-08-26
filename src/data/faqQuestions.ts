@@ -1059,6 +1059,247 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For estimated level curves modelled from the published ~8-day half-life across weekly, every-two-week, and titration schedules, see the",
     },
+    related: [
+      "how-often-is-testosterone-enanthate-injected",
+      "can-testosterone-be-injected-subcutaneously",
+      "how-long-does-trt-take-to-work",
+    ],
+  },
+  {
+    slug: "how-often-is-testosterone-enanthate-injected",
+    question: "How often is testosterone enanthate injected?",
+    title: "How Often Is Testosterone Enanthate Injected? What the Label and Guidelines Say",
+    metaDescription:
+      "Two FDA labels differ: the classic intramuscular testosterone enanthate label states 50–400 mg every two to four weeks; Xyosted, an approved weekly subcutaneous auto-injector, states 75 mg once weekly (50–100 mg range). The 2018 Endocrine Society guideline describes 75–100 mg weekly or 150–200 mg every two weeks.",
+    searchTags: [
+      "how often is testosterone enanthate injected",
+      "testosterone enanthate injection frequency",
+      "how often to inject testosterone enanthate",
+      "testosterone enanthate dosing frequency",
+      "testosterone enanthate how often injection",
+    ],
+    hubBlurb:
+      "What the classic intramuscular testosterone enanthate label, the weekly-subcutaneous Xyosted label, and the 2018 Endocrine Society guideline each state about injection frequency.",
+    lede:
+      "Two FDA labels for testosterone enanthate give different schedules. The classic intramuscular label (Delatestryl lineage) states 50–400 mg every two to four weeks. Xyosted, an FDA-approved weekly subcutaneous auto-injector, states 75 mg once a week, titratable 50–100 mg. The 2018 Endocrine Society guideline describes 75–100 mg weekly or 150–200 mg every two weeks.",
+    body: [
+      {
+        kind: "heading",
+        text: "What the intramuscular label states",
+      },
+      {
+        kind: "p",
+        text:
+          "The FDA prescribing information for intramuscular testosterone enanthate (the Delatestryl lineage, a Schedule III controlled substance) gives the replacement dosage as 50 to 400 mg every two to four weeks, for intramuscular use only, injected deeply into the gluteal muscle. The label attributes the multi-week interval to slow absorption of the ester from its oil depot rather than to a long half-life of testosterone itself — it states testosterone's half-life as 10 to 100 minutes.",
+      },
+      {
+        kind: "heading",
+        text: "What the Xyosted label states (weekly subcutaneous)",
+      },
+      {
+        kind: "p",
+        text:
+          "Xyosted is an FDA-approved testosterone enanthate auto-injector for once-weekly subcutaneous injection in the abdomen. Its labeled starting dose is 75 mg once a week, adjustable in 25 mg steps to a range of 50 to 100 mg weekly based on testosterone trough levels. This is a different route and a shorter interval than the classic intramuscular label — reported here as the Xyosted label states it.",
+      },
+      {
+        kind: "heading",
+        text: "What the Endocrine Society guideline describes",
+      },
+      {
+        kind: "p",
+        text:
+          "The 2018 Endocrine Society Clinical Practice Guideline (Bhasin et al., The Journal of Clinical Endocrinology & Metabolism, 2018) lists, as typical starting doses for intramuscular testosterone enanthate or cypionate, 150–200 mg every two weeks or 75–100 mg weekly.",
+      },
+      {
+        kind: "heading",
+        text: "Where the enanthate schedules differ",
+      },
+      {
+        kind: "p",
+        text:
+          "Across the named sources the intervals differ: the classic intramuscular label, 50–400 mg every two to four weeks; Xyosted, 75 mg (50–100 mg) subcutaneously once weekly; the Endocrine Society guideline, 75–100 mg weekly or 150–200 mg every two weeks. Each is reported as its source states it. Testosterone enanthate is a prescription medication and a controlled substance; which schedule applies to a given person is a clinical decision made with a licensed physician. This page is educational and describes what the documents say — it is not medical advice.",
+      },
+      {
+        kind: "list",
+        items: [
+          "Classic IM label (Delatestryl lineage): 50–400 mg intramuscularly every two to four weeks.",
+          "Xyosted (FDA-approved): 75 mg subcutaneously once weekly, titratable 50–100 mg.",
+          "2018 Endocrine Society guideline: 75–100 mg weekly or 150–200 mg every two weeks.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/app",
+      label: "Prof. Peptide app",
+      text:
+        "For estimated testosterone level curves modelled from published pharmacokinetic data across weekly, every-two-week, and titration schedules, see the",
+    },
+    related: [
+      "how-often-is-testosterone-cypionate-injected",
+      "can-testosterone-be-injected-subcutaneously",
+      "how-long-does-trt-take-to-work",
+    ],
+  },
+  {
+    slug: "can-testosterone-be-injected-subcutaneously",
+    question: "Can testosterone be injected subcutaneously?",
+    title: "Can Testosterone Be Injected Subcutaneously? What the Labels Say",
+    metaDescription:
+      "Yes — Xyosted, an FDA-approved testosterone enanthate auto-injector, is labeled for once-weekly subcutaneous injection (75 mg, 50–100 mg range). The classic Depo-Testosterone and Delatestryl labels are intramuscular only. A 2018 study (Am J Health-Syst Pharm) found subcutaneous exposure comparable to intramuscular.",
+    searchTags: [
+      "can you inject testosterone subcutaneously",
+      "can testosterone be injected subcutaneously",
+      "subcutaneous testosterone injection",
+      "testosterone subq vs im",
+      "testosterone subcutaneous vs intramuscular",
+      "subq testosterone injection",
+    ],
+    hubBlurb:
+      "Whether testosterone can be injected subcutaneously — the FDA-approved weekly SC product, the intramuscular-only classic labels, and a published SC-vs-IM pharmacokinetic comparison.",
+    lede:
+      "Yes. Xyosted, an FDA-approved testosterone enanthate auto-injector, is labeled for once-weekly subcutaneous injection in the abdomen (75 mg, titratable 50–100 mg). The classic testosterone labels — Depo-Testosterone and Delatestryl — are intramuscular only. A 2018 pharmacokinetic study found subcutaneous testosterone delivered exposure comparable to intramuscular injection.",
+    body: [
+      {
+        kind: "heading",
+        text: "Yes — there is an FDA-approved subcutaneous product",
+      },
+      {
+        kind: "p",
+        text:
+          "Xyosted (testosterone enanthate) is FDA-approved for testosterone replacement in adult men by once-weekly subcutaneous injection in the abdominal region. Its labeled starting dose is 75 mg once a week, adjustable to a range of 50 to 100 mg. That approval is the direct answer: testosterone can be injected subcutaneously, and there is a product specifically labeled for that route.",
+      },
+      {
+        kind: "heading",
+        text: "The classic labels are intramuscular only",
+      },
+      {
+        kind: "p",
+        text:
+          "The older testosterone ester labels are written for intramuscular use. Depo-Testosterone (testosterone cypionate) states intramuscular use only, and Delatestryl (testosterone enanthate) states “for intramuscular use only,” injected deep in the gluteal muscle. The subcutaneous route is specific to products such as Xyosted that are labeled for it.",
+      },
+      {
+        kind: "heading",
+        text: "What a pharmacokinetic comparison found",
+      },
+      {
+        kind: "p",
+        text:
+          "A 2018 pilot pharmacokinetic study (Wilson, Kiang, and Ensom, American Journal of Health-System Pharmacy, 75(6):351–358) compared subcutaneous and intramuscular testosterone injection in people on stable therapy. It reported that total testosterone exposure was comparable between the two routes (mean AUC 1.7 versus 1.9 nmol·days/L/mg, p > 0.05) and that the subcutaneous route was more tolerable. This is that study's finding, reported as such.",
+      },
+      {
+        kind: "heading",
+        text: "What this means",
+      },
+      {
+        kind: "p",
+        text:
+          "The named sources support that subcutaneous testosterone injection is an established, FDA-approved route (Xyosted) and that a published comparison found it delivered testosterone exposure comparable to intramuscular injection. Testosterone is a prescription medication and a controlled substance; route and dose are clinical decisions made with a licensed physician. This page is educational and describes what the documents say — it is not medical advice.",
+      },
+      {
+        kind: "list",
+        items: [
+          "Xyosted is FDA-approved for once-weekly subcutaneous testosterone (75 mg, 50–100 mg range).",
+          "Depo-Testosterone and Delatestryl are labeled intramuscular only.",
+          "A 2018 study (Am J Health-Syst Pharm 75(6):351) found SC exposure comparable to IM (AUC 1.7 vs 1.9, p > 0.05).",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/app",
+      label: "Prof. Peptide app",
+      text:
+        "For estimated testosterone level curves modelled from published pharmacokinetic data across weekly and every-two-week schedules, see the",
+    },
+    related: [
+      "how-often-is-testosterone-cypionate-injected",
+      "how-often-is-testosterone-enanthate-injected",
+      "how-long-does-trt-take-to-work",
+    ],
+  },
+  {
+    slug: "how-long-does-trt-take-to-work",
+    question: "How long does TRT take to work?",
+    title: "How Long Does TRT Take to Work? What the Research Reports",
+    metaDescription:
+      "A 2011 review (Saad et al., European Journal of Endocrinology) mapped testosterone therapy's onset: sexual interest at about three weeks, erections up to six months, mood at three to six weeks, body composition at twelve to sixteen weeks, red cells at three months. Reported findings, not promises.",
+    searchTags: [
+      "how long does trt take to work",
+      "how long for testosterone to work",
+      "trt timeline",
+      "how long does testosterone take to work",
+      "testosterone therapy timeline",
+      "when does trt start working",
+    ],
+    hubBlurb:
+      "What the published onset-of-effects review (Saad et al. 2011) reports about when testosterone therapy's effects appear and peak, domain by domain.",
+    lede:
+      "A widely cited review — Saad et al. (2011, European Journal of Endocrinology) — mapped when testosterone treatment's effects appear. It reported effects on sexual interest after about three weeks, changes in erections up to six months, mood effects at three to six weeks, and body-composition changes over twelve to sixteen weeks. These are the review's reported timelines, not guarantees.",
+    body: [
+      {
+        kind: "heading",
+        text: "Where the timelines come from",
+      },
+      {
+        kind: "p",
+        text:
+          "The standard reference for how quickly testosterone therapy acts is a 2011 review — Saad, Aversa, Isidori, Zafalon, Zitzmann, and Gooren, “Onset of effects of testosterone treatment and time span until maximum effects are achieved,” European Journal of Endocrinology, 165(5):675–685. It compiled, across published studies, when each type of effect first appears and when it reaches a maximum. The figures below are that review's, reported as findings.",
+      },
+      {
+        kind: "heading",
+        text: "Sexual effects",
+      },
+      {
+        kind: "p",
+        text:
+          "The review reported that effects on sexual interest appear after three weeks, plateauing at six weeks, with no further increase expected beyond that. Changes in erections and ejaculations may require up to six months.",
+      },
+      {
+        kind: "heading",
+        text: "Mood, metabolic, and body-composition effects",
+      },
+      {
+        kind: "p",
+        text:
+          "It reported that effects on depressive mood become detectable after three to six weeks, with a maximum at eighteen to thirty weeks. Effects on lipids appeared after four weeks, maximal at six to twelve months. Insulin sensitivity may improve within days, but effects on glycemic control become evident only after three to twelve months. Changes in fat mass, lean body mass, and muscle strength occur within twelve to sixteen weeks and stabilize at six to twelve months.",
+      },
+      {
+        kind: "heading",
+        text: "Blood, prostate, and bone",
+      },
+      {
+        kind: "p",
+        text:
+          "The review reported that effects on red blood cell production are evident at three months, peaking at nine to twelve months; that PSA and prostate volume rise marginally, plateauing at twelve months; and that effects on bone are detectable after six months and continue for at least three years.",
+      },
+      {
+        kind: "heading",
+        text: "How to read these numbers",
+      },
+      {
+        kind: "p",
+        text:
+          "These are timelines the review compiled from published studies — when effects were observed to appear and peak — not a promise of what any individual will experience. Testosterone therapy is a prescription treatment; whether it is appropriate, and what to expect, are clinical questions for a licensed physician. This page is educational and describes what the review reports — it is not medical advice.",
+      },
+      {
+        kind: "list",
+        items: [
+          "Saad et al. 2011 (Eur J Endocrinol 165(5):675): sexual interest at ~3 weeks; erections up to 6 months.",
+          "Mood at 3–6 weeks (max 18–30 weeks); lipids from 4 weeks; body composition at 12–16 weeks.",
+          "Red cells at 3 months (peak 9–12 months); bone from 6 months. Reported findings, not promises.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/app",
+      label: "Prof. Peptide app",
+      text:
+        "To track a testosterone protocol and its estimated level curves over time, see the",
+    },
+    related: [
+      "how-often-is-testosterone-cypionate-injected",
+      "how-often-is-testosterone-enanthate-injected",
+      "can-testosterone-be-injected-subcutaneously",
+    ],
   },
 ];
 
