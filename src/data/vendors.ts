@@ -96,7 +96,7 @@ export const vendors: Record<string, Vendor> = {
     code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
-    url: "https://alpha-peptides.com/aff/850/",
+    url: "https://alpha-peptides.io/aff/850/",
     detailPage: "/coupons/alpha-peptides",
     facts: { coa: "library", labAccreditation: "ISO/IEC 17025" },
   },

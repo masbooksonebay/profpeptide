@@ -67,7 +67,7 @@ VENDORS = {
               "others so new coded GLPs are decoded (or held UNVERIFIED) promptly rather than silently "
               "excluded. Also present but out of current PP scope: AHK-Cu (copper hair peptide, no profile), "
               "amino-h2o (0.9% saline supply)."),
-    "alpha-peptides": dict(name="Alpha Peptides", domain="alpha-peptides.com", adapter="woo",
+    "alpha-peptides": dict(name="Alpha Peptides", domain="alpha-peptides.io", adapter="woo",
         variation_model="dosage", coded_decoder=True,
         sale_posture="Product-level sale_price on ~25/59; code STACKS.",
         notes="GLP coded GLP-1 SM/GLP-2 TZ/GLP-3 RT — COA-verified."),

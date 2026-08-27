@@ -231,7 +231,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 
 ## VENDOR: Alpha Peptides
-- **slug:** alpha-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** alpha-peptides.com
+- **slug:** alpha-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** alpha-peptides.io
 - **traffic:** (not pulled) | **pulled:** August 16 2026
 - **sale posture:** Product-level sale_price on ~25/59; code STACKS.
 

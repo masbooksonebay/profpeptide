@@ -30,7 +30,7 @@ export default function AlphaPeptidesCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Alpha Peptides (alpha-peptides.com) is a U.S.-based, East Coast research supplier with a peptide-forward catalog of 30+ compounds &mdash; a deep growth-hormone bench alongside GLP-class metabolic research, recovery blends, longevity, cognitive, sleep, and reproductive-health compounds. What it leads on is verifiable testing: rather than resting on a bare purity number, Alpha runs a five-test verification panel per lot at an independent, ISO&nbsp;17025-aligned U.S. laboratory and files a Certificate of Analysis against every lot on a public COA page. Popular compounds by research area:
+            Alpha Peptides (alpha-peptides.io) is a U.S.-based, East Coast research supplier with a peptide-forward catalog of 30+ compounds &mdash; a deep growth-hormone bench alongside GLP-class metabolic research, recovery blends, longevity, cognitive, sleep, and reproductive-health compounds. What it leads on is verifiable testing: rather than resting on a bare purity number, Alpha runs a five-test verification panel per lot at an independent, ISO&nbsp;17025-aligned U.S. laboratory and files a Certificate of Analysis against every lot on a public COA page. Popular compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
             <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -101,7 +101,7 @@ export default function AlphaPeptidesCouponPage() {
             The distinguishing feature is verifiability: Certificates of Analysis are published on a public COA page and filed against every lot, so a researcher can check identity and purity at the batch level before use. Vials are lyophilized, foil-sealed, and shipped cold-chain from the East Coast; fulfillment is U.S.-only, typically same or next business day.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            One note worth flagging: several copycat sites imitate this brand. <span className="font-semibold text-[#16181B] dark:text-slate-100">alpha-peptides.com is the authoritative store</span>, and the Shop button below links to it directly &mdash; enter code PROFPEPTIDE there to apply the discount.
+            One note worth flagging: several copycat sites imitate this brand. <span className="font-semibold text-[#16181B] dark:text-slate-100">alpha-peptides.io is the authoritative store</span>, and the Shop button below links to it directly &mdash; enter code PROFPEPTIDE there to apply the discount.
           </p>
         </div>
 
@@ -135,7 +135,7 @@ export default function AlphaPeptidesCouponPage() {
             />
             <FAQItem
               q="How do I use the Alpha Peptides discount code?"
-              a="Add your items to cart at alpha-peptides.com (the brand's authoritative store), proceed to checkout, and enter PROFPEPTIDE in the coupon field. The discount is applied to your order total."
+              a="Add your items to cart at alpha-peptides.io (the brand's authoritative store), proceed to checkout, and enter PROFPEPTIDE in the coupon field. The discount is applied to your order total."
             />
             <FAQItem
               q="Is Alpha Peptides third-party tested?"
