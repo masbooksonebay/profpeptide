@@ -238,6 +238,13 @@
     "url": "https://myoasislabs.com/?sld=profpeptide"
   },
   {
+    "slug": "paradigm-peptides",
+    "name": "Paradigm Peptides",
+    "code": "PROFPEPTIDE",
+    "discount": "10% off",
+    "url": "https://www.paradigm-peptide.com/?ref=PROFPEPTIDE"
+  },
+  {
     "slug": "particle-peptides",
     "name": "Particle Peptides",
     "code": "PROFPEPTIDE",

@@ -62,6 +62,9 @@ const ONBOARDING_BACKLOG = {
   // require a free account), so no price-pull adapter yet — coupon-page-only, no /prices rows until
   // the gate/adapter is handled. GLP catalog uses coded names (H-(R/S/T/C) + blends), COA-decoded.
   "hydro-research":     { reason: "login-gated storefront (no price-pull adapter) — coupon-page-only, no /prices rows", since: "2026-08-26" },
+  // Paradigm Peptides onboarded 2026-08-26 (coupon page live). Wix storefront — no Store API /
+  // price-pull adapter — so coupon-page-only, no /prices rows. Gate B is Finnrick-anchored.
+  "paradigm-peptides":  { reason: "Wix storefront (no Store API / price-pull adapter) — coupon-page-only, no /prices rows", since: "2026-08-26" },
   // NOVA reports prices in AED; the pull stored them as USD (~3.67x inflated). Pulled its rows
   // from price data as immediate mitigation. Blocked pending a currency decision (refuse non-USD
   // at pull / convert / render native) — see the currency-handling report.

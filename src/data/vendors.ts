@@ -280,6 +280,20 @@ export const vendors: Record<string, Vendor> = {
     facts: { coa: "library", labName: "Janoshik, Chromate Labs, ILS-Lab", testMethods: "HPLC (purity), LC-MS/identity", contaminants: "endotoxin, heavy metals, sterility" },
     blockNote: "Portal-verifiable COAs (Janoshik/Chromate)",
   },
+  "paradigm-peptides": {
+    name: "Paradigm Peptides",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    // GoAffPro (loader confirmed in source). Ref link first-hand from Mark's GoAffPro dashboard.
+    // Gate B basis is Finnrick's independent blind-testing program (no self-published COAs on the
+    // Wix storefront) — #7 of 307 on Finnrick, verified live 2026-08-26. This is the hyphenated
+    // paradigm-peptide.com, which disavows the former (unrelated, defunct) paradigmpeptides.com;
+    // Finnrick's domain verification + post-2025 test history are specific to this site.
+    url: "https://www.paradigm-peptide.com/?ref=PROFPEPTIDE",
+    detailPage: "/coupons/paradigm-peptides",
+    blockNote: "#7 of 307 on Finnrick's independent testing (Aug 2026)",
+  },
   "ignite-peptides": {
     name: "Ignite Peptides",
     code: "PROFPEPTIDE",

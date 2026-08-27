@@ -62,6 +62,7 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   "limitless-biotech",
   "nextgen-peptides",
   "nova-labs",
+  "paradigm-peptides",
   "peptide-giants",
   "peptides-gg",
   "purity-peptides",
