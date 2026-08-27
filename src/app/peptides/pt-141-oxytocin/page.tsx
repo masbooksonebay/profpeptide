@@ -306,7 +306,6 @@ const sections = [
     body: [
       "Antihypertensives and cardiovascular medications. PT-141 produces a transient mean BP increase (~8/5 mmHg) that can interact unpredictably with antihypertensives, beta-blockers, and calcium channel blockers. On-label, PT-141 should not be used by people with cardiovascular disease or uncontrolled hypertension.",
       "PDE5 inhibitors (sildenafil, tadalafil, vardenafil). PT-141 raises BP transiently; PDE5 inhibitors lower BP. Concurrent use could produce complex cardiovascular effects. Not recommended without medical supervision.",
-      "Nitrates. PT-141 should not be combined with nitrate compounds (nitroglycerin, isosorbide mononitrate) due to additive cardiovascular risk. This is a hard contraindication in the Vyleesi prescribing information.",
       "Naltrexone and opioid-receptor modulators. Melanocortin and opioid systems interact centrally. Theoretical pharmacodynamic interaction; no documented clinical event, but awareness is warranted.",
       "Oxytocin interactions. At intranasal doses used in research, oxytocin has no well-documented drug interactions. Clinical IV oxytocin (uterotonic use) is known to interact with sympathomimetics and cause cardiovascular effects, but these do not apply to intranasal research doses.",
       "Alcohol. May amplify PT-141 flushing, headache, and nausea. No specific PT-141 + alcohol interaction data, but general caution applies.",

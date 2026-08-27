@@ -364,7 +364,7 @@ const sections = [
           </h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Long-term cardiovascular safety not established.</span> Phase 2 data extends to ~28-day exposure only.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical tumor growth risk.</span> GH/IGF-1 elevation could accelerate pre-existing tumors. Contraindicated with active malignancy.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical tumor-growth risk.</span> GH/IGF-1 elevation could accelerate pre-existing tumors, so active malignancy is treated as a theoretical exclusion in research contexts.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Phase 2 trial subject death.</span> One subject death in the Phase 2 program was investigated; the attending physician concluded the most likely cause was asymptomatic coronary artery disease unrelated to treatment.</li>
           </ol>
         </div>

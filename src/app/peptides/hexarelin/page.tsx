@@ -295,7 +295,7 @@ const sections = [
           <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Serious (rare)</h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cardiovascular effects are not fully characterized in humans.</span> Hexarelin's CD36-mediated cardiac actions are mostly preclinical; long-term human cardiovascular safety is not established.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical tumor-growth risk.</span> GH/IGF-1 elevation could accelerate a pre-existing malignancy; contraindicated with active cancer.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical tumor-growth risk.</span> GH/IGF-1 elevation could accelerate a pre-existing malignancy, so active cancer is treated as a theoretical exclusion in research contexts.</li>
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

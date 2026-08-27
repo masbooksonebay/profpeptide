@@ -348,7 +348,7 @@ const sections = [
           </h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Allergic reactions.</span> Uncommon &mdash; was FDA-approved with established safety profile.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical tumor growth risk.</span> GH/IGF-1 elevation could accelerate pre-existing tumors. Contraindicated with active malignancy.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical tumor-growth risk.</span> GH/IGF-1 elevation could accelerate pre-existing tumors, so active malignancy is treated as a theoretical exclusion in research contexts.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hypothyroidism.</span> Rare; monitored in long-term protocols.</li>
           </ol>
         </div>

@@ -354,7 +354,7 @@ const sections = [
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Central serous chorioretinopathy.</span> Vision impairment &mdash; documented in a case report at a 1 mg single dose (10x typical), resolved after discontinuation. Never exceed 200 mcg/day.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical fertility effects.</span> Sustained activin pathway modulation could affect long-term reproductive function. Monitor reproductive hormones if fertility is an active concern.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical tumor growth acceleration.</span> Satellite cell and growth pathway activation could accelerate pre-existing tumors. Contraindicated if there is any history of malignancy.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical tumor-growth acceleration.</span> Satellite-cell and growth-pathway activation could accelerate pre-existing tumors, so any history of malignancy is treated as a theoretical exclusion in research contexts.</li>
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

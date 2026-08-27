@@ -337,12 +337,12 @@ const sections = [
           </h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Severe hypoglycemia.</span> Risk increases significantly above 50 mcg/day. Symptoms: shakiness, sweating, confusion, fainting. Always keep simple sugar available.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical tumor growth acceleration.</span> IGF-1 stimulates cell proliferation including potentially cancerous cells. Contraindicated in users with cancer history.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical tumor-growth concern.</span> IGF-1 LR3 drives cell proliferation through the MAPK/ERK pathway [2]; whether that could accelerate a pre-existing tumor is unresolved — no controlled human trial of the analog has measured cancer risk. On that mechanistic basis, a personal history of malignancy is treated as a theoretical exclusion in research contexts.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Receptor desensitization.</span> Sustained high-dose use can reduce future effectiveness &mdash; the basis for 4+ week off periods between cycles.</li>
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Critical contraindications: active cancer or cancer history (IGF-1 stimulates cell growth including potentially cancerous cells), pregnancy or breastfeeding, diabetic retinopathy (IGF-1 may accelerate eye blood vessel growth), uncontrolled diabetes, and age under 21 (can affect growth plate closure). Always have food available when injecting. Most experienced users keep glucose tabs or simple sugar nearby during the first weeks of a cycle.
+          None of the following is established in a controlled human trial of the analog — they are precautionary exclusions applied in research contexts on mechanistic grounds. Because IGF-1 LR3 drives cell proliferation [2], a personal or family history of malignancy is treated as a theoretical exclusion; pregnancy and breastfeeding are avoided for lack of any safety data; the analog&apos;s insulin-like glucose-lowering effect makes uncontrolled diabetes a monitoring concern; and IGF-1&apos;s roles in blood-vessel and skeletal growth are why diabetic retinopathy and age under 21 (growth-plate closure) are commonly treated as exclusions. Always have food available when injecting, and keep glucose tabs or simple sugar nearby during the first weeks of a cycle.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Common question:</span>{" "}

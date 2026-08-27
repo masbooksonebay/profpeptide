@@ -351,7 +351,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          PT-141 is contraindicated in patients with uncontrolled hypertension or cardiovascular disease due to transient blood pressure rises. The 8-doses-per-month limit exists to minimize hyperpigmentation risk &mdash; exceeding it raises the chance of skin darkening that may persist after stopping the drug. PT-141 reduces oral absorption (bioavailability) of certain medications (e.g., naltrexone, indomethacin) by slowing gastric motility. Pregnancy contraindicated based on animal teratogenicity data.
+          PT-141 is contraindicated in patients with uncontrolled hypertension or cardiovascular disease due to transient blood pressure rises. The 8-doses-per-month limit exists to minimize hyperpigmentation risk &mdash; exceeding it raises the chance of skin darkening that may persist after stopping the drug. PT-141 reduces oral absorption (bioavailability) of certain medications (e.g., naltrexone, indomethacin) by slowing gastric motility. The Vyleesi label advises discontinuing if pregnancy is suspected, based on animal fetal-harm data; pregnancy is not itself a labeled contraindication.
         </p>
       </div>
     ),
@@ -385,7 +385,7 @@ const sections = [
     id: "limitations",
     title: "What are the limitations of PT-141 research?",
     intro:
-      "PT-141 (Vyleesi) is FDA-approved ONLY for acquired, generalized HSDD in premenopausal women. ALL OFF-LABEL USES (male ED, postmenopausal HSDD, SSRI-induced dysfunction) are not FDA-approved. Researchers have questioned the relevance and effect sizes of the Phase 3 rating scales. Contraindicated in pregnancy (animal teratogenicity), uncontrolled hypertension, and cardiovascular disease. Hyperpigmentation risk increases beyond 8 doses/month and may not resolve after stopping. NOT WADA-prohibited.",
+      "PT-141 (Vyleesi) is FDA-approved ONLY for acquired, generalized HSDD in premenopausal women. ALL OFF-LABEL USES (male ED, postmenopausal HSDD, SSRI-induced dysfunction) are not FDA-approved. Researchers have questioned the relevance and effect sizes of the Phase 3 rating scales. Contraindicated (per the Vyleesi label) in uncontrolled hypertension and cardiovascular disease; the label also advises discontinuing if pregnancy is suspected, based on animal fetal-harm data. Hyperpigmentation risk increases beyond 8 doses/month and may not resolve after stopping. NOT WADA-prohibited.",
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -398,7 +398,7 @@ const sections = [
           Researchers have questioned the relevance and effect sizes of the rating scales used in Phase 3 trials. The drug&apos;s clinical benefit was statistically significant but considered modest by some reviewers. Treatment should be discontinued after 8 weeks if no improvement in sexual desire and distress.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          PT-141 is contraindicated in pregnancy (animal teratogenicity), uncontrolled hypertension, and cardiovascular disease. Hyperpigmentation risk increases with use beyond 8 doses per month and may not resolve after stopping the drug.
+          Per the Vyleesi label, PT-141 is contraindicated in uncontrolled hypertension and cardiovascular disease; the label also advises discontinuing if pregnancy is suspected, based on animal fetal-harm data. Hyperpigmentation risk increases with use beyond 8 doses per month and may not resolve after stopping the drug.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The World Anti-Doping Agency does not currently include PT-141 on the prohibited list.

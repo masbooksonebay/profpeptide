@@ -351,7 +351,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Tesamorelin has completed Phase 3 trials and ongoing FDA post-marketing surveillance. Long-term cardiovascular safety has not been established. Tesamorelin is contraindicated in pregnancy (causes fetal harm in animal models), in patients with disrupted hypothalamic-pituitary axis, in active malignancy, and in those with hypersensitivity to tesamorelin.
+          Tesamorelin has completed Phase 3 trials and ongoing FDA post-marketing surveillance. Long-term cardiovascular safety has not been established. Per the Egrifta WR FDA label, tesamorelin is contraindicated in pregnancy (animal fetal-harm data), in patients with disrupted hypothalamic-pituitary axis, in active malignancy, and in those with known hypersensitivity to tesamorelin or its excipients.
         </p>
       </div>
     ),
@@ -385,7 +385,7 @@ const sections = [
     id: "limitations",
     title: "What are the limitations of Tesamorelin research?",
     intro:
-      "Tesamorelin is FDA-approved for HIV-associated lipodystrophy only — all other uses are off-label and not supported by controlled trial evidence. The drug is not indicated for general weight loss (weight-neutral effect, only visceral fat reduction). Long-term cardiovascular safety has not been established. Contraindicated in pregnancy, disrupted hypothalamic-pituitary axis, and active malignancy. WADA-prohibited (Section S2).",
+      "Tesamorelin is FDA-approved for HIV-associated lipodystrophy only — all other uses are off-label and not supported by controlled trial evidence. The drug is not indicated for general weight loss (weight-neutral effect, only visceral fat reduction). Long-term cardiovascular safety has not been established. Per the Egrifta WR FDA label, contraindicated in pregnancy, disrupted hypothalamic-pituitary axis, and active malignancy. WADA-prohibited (Section S2).",
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -395,7 +395,7 @@ const sections = [
           Long-term cardiovascular safety has not been established. The FDA labeling specifically notes that long-term cardiovascular outcomes data is absent and patients should have risk/benefit reassessed if visceral fat is not reduced by 26 weeks.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Tesamorelin is contraindicated in pregnancy (causes fetal harm &mdash; hydrocephaly in rat offspring at 2–4x clinical dose). It is also contraindicated in patients with disrupted hypothalamic-pituitary axis and active malignancy.
+          Per the Egrifta WR FDA label, tesamorelin is contraindicated in pregnancy (animal fetal-harm data &mdash; hydrocephaly in rat offspring at ~2–4x the clinical dose by AUC). It is also contraindicated in patients with disrupted hypothalamic-pituitary axis and active malignancy.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The European Medicines Agency initially authorized tesamorelin in 2014 but the marketing authorization was subsequently withdrawn by the sponsor.
