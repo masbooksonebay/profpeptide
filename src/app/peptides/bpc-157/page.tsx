@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     q: "What's the typical cycle?",
-    a: "Most users run 4–8 week cycles followed by 4+ week breaks. Chronic conditions or post-surgical recovery sometimes use 8–12 week cycles. Continuous long-term use isn't well studied. The Huberman protocol recommends 8 weeks on, 8–10 weeks off.",
+    a: "Most users run 4–8 week cycles followed by 4+ week breaks. Chronic conditions or post-surgical recovery sometimes use 8–12 week cycles. Continuous long-term use isn't well studied. The protocol popularized by the Huberman Lab podcast is 8 weeks on, 8–10 weeks off — a community protocol, not a clinical recommendation.",
   },
   {
     q: "Where can I buy BPC-157?",
