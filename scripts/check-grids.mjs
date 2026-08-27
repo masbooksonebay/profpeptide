@@ -87,6 +87,16 @@ const ONBOARDING_BACKLOG = {
   // pending Mark's decision on whether Capstone enters the price grid. Coded GLPs (GLP-1S=Semaglutide
   // / GLP-2T=Tirzepatide / GLP-3R=Retatrutide) decode straight from the product names. COAs are a
   // public Accumark Labs library (per-lot, AccuVerify-checkable on the lab's own domain).
+  // Onboarded 2026-08-27 (coupon page + registry live). GoAffPro program (accepted PP), code
+  // 'profpeptide' (lowercase), 15% customer / 20% commission, Venmo Net-3. WooCommerce with a public
+  // catalog, so a price pull IS possible later; held coupon-page-only for now. Binding assumption
+  // (Mark): GoAffPro codes are generally bound — built without a check-0 pause; first commission proves it.
+  "order-my-peptides":  { reason: "GoAffPro coupon-only build (WooCommerce, price pull possible later) — no /prices rows yet; code-binding unconfirmed, first commission proves it", since: "2026-08-27" },
+  // Onboarded 2026-08-27 (coupon page + registry live). GoAffPro program (accepted PP), code
+  // 'profpeptide' (lowercase), 10% customer / 15% commission. WooCommerce, per-product COAs (2 labs:
+  // Freedom Diagnostics 2025 -> Bioviridian 2026). A product-EXCLUSION list exists on the GoAffPro
+  // portal (contents unread, irrelevant to the coupon page). Price pull possible later; coupon-only for now.
+  "athena-peptides":    { reason: "GoAffPro coupon-only build (WooCommerce, price pull possible later) — no /prices rows yet; commission has a product-exclusion list (unread)", since: "2026-08-27" },
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────

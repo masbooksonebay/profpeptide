@@ -63,6 +63,13 @@
     "url": "https://ascensionpeptides.com/ref/profpeptide/"
   },
   {
+    "slug": "athena-peptides",
+    "name": "Athena Peptides",
+    "code": "profpeptide",
+    "discount": "10% off",
+    "url": "https://athenapeptides.com/?ref=PROFPEPTIDE"
+  },
+  {
     "slug": "behemoth-labz",
     "name": "Behemoth Labz",
     "code": "PROF10",
@@ -236,6 +243,13 @@
     "code": "PROFPEPTIDE",
     "discount": "15% off",
     "url": "https://myoasislabs.com/?sld=profpeptide"
+  },
+  {
+    "slug": "order-my-peptides",
+    "name": "Order My Peptides",
+    "code": "profpeptide",
+    "discount": "15% off",
+    "url": "https://ordermypeptides.com/"
   },
   {
     "slug": "paradigm-peptides",

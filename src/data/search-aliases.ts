@@ -108,6 +108,10 @@ export const searchAliases: Record<string, string> = {
   // Hydro Research's domain is hydroresearchpeptides.com, so "hydro peptides" is a natural
   // query for the "Hydro Research" vendor page.
   "hydro peptides": "hydro research",
+  // Order My Peptides' domain is ordermypeptides.com (no spaces); "athena" is the natural short
+  // query for the "Athena Peptides" vendor page.
+  ordermypeptides: "order my peptides",
+  athena: "athena peptides",
 };
 
 // Expand a raw query into the set of query strings to search — ADDITIVE, not replacing.

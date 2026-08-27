@@ -176,6 +176,8 @@ export const generatedSearchIndex: SearchEntry[] = [
   {"title":"Aero Peptides Discount Code","url":"/coupons/aero-peptides","category":"coupon","description":"Aero Peptides coupon code and promo offer","tags":[]},
   {"title":"Almighty Peptides Discount Code","url":"/coupons/almighty-peptides","category":"coupon","description":"Almighty Peptides coupon code and promo offer","tags":[]},
   {"title":"Alpha Peptides Discount Code","url":"/coupons/alpha-peptides","category":"coupon","description":"Alpha Peptides coupon code and promo offer","tags":[]},
+  {"title":"Athena Peptides Discount Code","url":"/coupons/athena-peptides","category":"coupon","description":"Athena Peptides coupon code and promo offer","tags":[]},
+  {"title":"Order My Peptides Discount Code","url":"/coupons/order-my-peptides","category":"coupon","description":"Order My Peptides coupon code and promo offer","tags":[]},
   {"title":"Ameano Peptides Discount Code","url":"/coupons/ameano-peptides","category":"coupon","description":"Ameano Peptides coupon code and promo offer","tags":[]},
   {"title":"Amino Club Discount Code","url":"/coupons/amino-club","category":"coupon","description":"Amino Club coupon code and promo offer","tags":[]},
   {"title":"Amino X Discount Code","url":"/coupons/amino-x","category":"coupon","description":"Amino X coupon code and promo offer","tags":[]},

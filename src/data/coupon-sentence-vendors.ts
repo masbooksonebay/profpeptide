@@ -102,4 +102,7 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // the treated non-US precedent) so the salience pair leads. EU context preserved in prose +
   // registry region. fusion-peptide and synthesis-peptides remain the only legacy pages left.
   "particle-peptides",
+  // Added 2026-08-27 as they shipped (coupon-only GoAffPro builds).
+  "order-my-peptides",
+  "athena-peptides",
 ]);

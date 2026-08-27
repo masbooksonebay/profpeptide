@@ -100,6 +100,38 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/alpha-peptides",
     facts: { coa: "library", labAccreditation: "ISO/IEC 17025" },
   },
+  "athena-peptides": {
+    name: "Athena Peptides",
+    code: "profpeptide",
+    discount: "10% off",
+    region: "US",
+    // GoAffPro program (accepted PP). ?ref=PROFPEPTIDE per Mark's portal read; coupon code
+    // 'profpeptide' (lowercase, exactly as issued). Customer discount is 10% — the 15% figure is the
+    // affiliate COMMISSION, never the card/H1. COAs live per-product-page (their architecture, no
+    // central library): 2025 certs = Freedom Diagnostics (FreedomDiagnosticsTesting.com), 2026 certs
+    // = Bioviridian Inc (Bryan/College Station TX, bioviridians.com/coa-search.html — the current lab).
+    // Both lab-side verifiable; certs carry "Lot: NA" with a QC/search code (vial label <-> chromatogram
+    // <-> portal) as traceability. GLP line coded GLP-1 S / GLP-2 T / GLP-3 R (GLP-2 T = Tirzepatide,
+    // confirmed on a Bioviridian cert). Domain footprint to Jul 2020.
+    url: "https://athenapeptides.com/?ref=PROFPEPTIDE",
+    detailPage: "/coupons/athena-peptides",
+    facts: { coa: "per-product", labName: "Freedom Diagnostics, Bioviridian Inc", testMethods: "RP-HPLC (214nm), LC-MS/MS, MALDI-MS" },
+    blockNote: "Per-product COAs, lab-side verification (Freedom Diagnostics / Bioviridian)",
+  },
+  "order-my-peptides": {
+    name: "Order My Peptides",
+    code: "profpeptide",
+    discount: "15% off",
+    region: "US",
+    // GoAffPro program (accepted PP). Code-priority attribution — 'profpeptide' (lowercase, exactly
+    // as issued) credits the sale; plain domain used. Operated by New Life Health Labs LLC. Per-batch
+    // COA library at /coas tested by Accumark Labs (HPLC-DAD identity/quantity/purity); each cert
+    // carries a QR + sample code that resolves on the lab's own site (accumarklabs.com).
+    url: "https://ordermypeptides.com/",
+    detailPage: "/coupons/order-my-peptides",
+    facts: { coa: "library", labName: "Accumark Labs", testMethods: "HPLC-DAD (identity, quantity, purity)" },
+    blockNote: "Per-batch COAs, QR-verifiable at the lab (Accumark)",
+  },
   "ameano-peptides": {
     name: "Ameano Peptides",
     code: "PROFPEPTIDE",
