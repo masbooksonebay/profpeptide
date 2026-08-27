@@ -94,6 +94,10 @@ export default function SwissChemsCouponPage() {
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Because the analysis is performed by outside laboratories and the COAs are published in full rather than summarized, researchers can check identity and purity at the batch level before use. One transparency caveat worth noting: Swiss Chems does not always name the specific testing laboratories, so the published COAs &mdash; rather than a named lab accreditation &mdash; are the primary verification artifact.
           </p>
+          <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mt-4">
+            For an outside view, independent blind-test reporting on Swiss Chems &mdash; per-batch results from customer-submitted samples &mdash; is available at{" "}
+            <a href="https://www.finnrick.com/vendors/swiss-chems" target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline">Finnrick</a>, on their Swiss Chems vendor page.
+          </p>
         </div>
 
         {/* Catalog — code card, then the product grid (one row per compound+size). */}
