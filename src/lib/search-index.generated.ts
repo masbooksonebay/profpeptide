@@ -189,6 +189,7 @@ export const generatedSearchIndex: SearchEntry[] = [
   {"title":"Crush Research Discount Code","url":"/coupons/crush-research","category":"coupon","description":"Crush Research coupon code and promo offer","tags":[]},
   {"title":"EZ Peptides Discount Code","url":"/coupons/ez-peptides","category":"coupon","description":"EZ Peptides coupon code and promo offer","tags":[]},
   {"title":"Glacier Aminos Discount Code","url":"/coupons/glacier-aminos","category":"coupon","description":"Glacier Aminos coupon code and promo offer","tags":[]},
+  {"title":"Hydro Research Discount Code","url":"/coupons/hydro-research","category":"coupon","description":"Hydro Research coupon code and promo offer","tags":[]},
   {"title":"Ignite Peptides Discount Code","url":"/coupons/ignite-peptides","category":"coupon","description":"Ignite Peptides coupon code and promo offer","tags":[]},
   {"title":"Improved Peptides Discount Code","url":"/coupons/improved-peptides","category":"coupon","description":"Improved Peptides coupon code and promo offer","tags":[]},
   {"title":"LA Peptides Discount Code","url":"/coupons/la-peptides","category":"coupon","description":"LA Peptides coupon code and promo offer","tags":[]},

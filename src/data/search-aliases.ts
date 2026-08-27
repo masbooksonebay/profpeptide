@@ -105,6 +105,9 @@ export const searchAliases: Record<string, string> = {
   // standard name, not an abbreviation — the no-"test cyp"/"test e"-alias rule is unaffected.
   trt: "testosterone",
   testosterone: "trt",
+  // Hydro Research's domain is hydroresearchpeptides.com, so "hydro peptides" is a natural
+  // query for the "Hydro Research" vendor page.
+  "hydro peptides": "hydro research",
 };
 
 // Expand a raw query into the set of query strings to search — ADDITIVE, not replacing.

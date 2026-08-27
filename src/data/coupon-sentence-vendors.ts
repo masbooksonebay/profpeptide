@@ -52,6 +52,7 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   "behemoth-labz",
   "biolongevity-labs",
   "crush-research",
+  "hydro-research",
   "improved-peptides",
   "integrative-peptides",
   "ion-peptide",

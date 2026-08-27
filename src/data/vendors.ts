@@ -266,6 +266,20 @@ export const vendors: Record<string, Vendor> = {
     // and Freedom Diagnostics search codes — so traceability is the verified distinction, not just COAs.
     blockNote: "Batch-traceable COAs · cold-chain shipping",
   },
+  "hydro-research": {
+    name: "Hydro Research",
+    code: "PROFPEPTIDE",
+    discount: "20% off",
+    region: "US",
+    // Standing affiliate code (welcome email): PROFPEPTIDE = 20% off, permanent. SliceWP,
+    // code-priority attribution (the code credits regardless of link) — so the plain domain is used
+    // (no SliceWP ref link supplied). Current evergreen sale codes live in the page's sale section,
+    // NOT here: PROFPEPTIDE50 (50% off GLPs), PROFPEPTIDE25 (25% off everything else).
+    url: "https://hydroresearchpeptides.com/",
+    detailPage: "/coupons/hydro-research",
+    facts: { coa: "library", labName: "Janoshik, Chromate Labs, ILS-Lab", testMethods: "HPLC (purity), LC-MS/identity", contaminants: "endotoxin, heavy metals, sterility" },
+    blockNote: "Portal-verifiable COAs (Janoshik/Chromate)",
+  },
   "ignite-peptides": {
     name: "Ignite Peptides",
     code: "PROFPEPTIDE",
