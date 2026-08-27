@@ -590,7 +590,7 @@ export default function MOTScPage() {
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Reduced muscle wasting through suppression of myostatin signaling</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Cardiovascular protection in diabetic models</li>
               <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Potential anti-aging effects through mitochondrial function support</li>
-              <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">No significant side effects in early clinical exposure</li>
+              
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

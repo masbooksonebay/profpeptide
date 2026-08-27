@@ -231,7 +231,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of the Metabolic Blend?",
     intro:
-      "The combined safety profile of this 3-component blend has not been formally studied. Side effects are extrapolated from each component&apos;s individual literature plus user reports. NAD+ injection has a distinct and clinically documented side-effect profile at higher doses; MOTS-c appears generally well tolerated in limited human research; 5-Amino-1MQ has very limited human safety data.",
+      "The combined safety profile of this 3-component blend has not been formally studied. Side effects are extrapolated from each component&apos;s individual literature plus user reports. NAD+ injection has a distinct and clinically documented side-effect profile at higher doses; MOTS-c has only limited human research; 5-Amino-1MQ has very limited human safety data.",
     node: (
       <div className="space-y-5">
         <div>

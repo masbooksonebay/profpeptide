@@ -319,7 +319,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of Sermorelin?",
     intro:
-      "Sermorelin had over 18 years of FDA-approved clinical use as Geref before the brand was discontinued (for commercial reasons, not safety or efficacy). It has the most established human safety profile of any GHRH analog discussed in research peptide contexts. The most-reported user effects are mild injection-site reactions, transient facial flushing, and mild headache especially with first doses.",
+      "Sermorelin had over 18 years of FDA-approved clinical use as Geref before the brand was discontinued (for commercial reasons, not safety or efficacy). The most-reported user effects are mild injection-site reactions, transient facial flushing, and mild headache especially with first doses.",
     node: (
       <div className="space-y-5">
         <div>
@@ -353,7 +353,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Sermorelin had over 18 years of FDA-approved clinical use as Geref before the brand was discontinued (for commercial reasons, not safety or efficacy). It has the most established human safety profile of any GHRH analog discussed in research peptide contexts. The discontinuation of Geref was confirmed by the FDA as not being for safety or effectiveness reasons.
+          Sermorelin had over 18 years of FDA-approved clinical use as Geref before the brand was discontinued (for commercial reasons, not safety or efficacy). The discontinuation of Geref was confirmed by the FDA as not being for safety or effectiveness reasons.
         </p>
       </div>
     ),

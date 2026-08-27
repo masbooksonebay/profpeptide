@@ -331,7 +331,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of KPV?",
     intro:
-      "KPV has one of the cleanest side-effect profiles of any peptide on Prof. Peptide. The α-MSH-derived structure suggests low toxicity. The most-reported user effects are mild injection-site reactions (subcutaneous) or occasional GI changes (oral). No documented serious adverse events at standard doses, though long-term safety beyond 6 months is not formally characterized.",
+      "KPV's α-MSH-derived structure suggests low toxicity. The most-reported user effects are mild injection-site reactions (subcutaneous) or occasional GI changes (oral). No documented serious adverse events at standard doses, though long-term safety beyond 6 months is not formally characterized.",
     node: (
       <div className="space-y-5">
         <div>
@@ -357,12 +357,12 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">No documented serious adverse events at standard doses.</span></li>
+            
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Long-term safety beyond 6 months not formally characterized.</span></li>
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          KPV has one of the cleanest side-effect profiles of any peptide on Prof. Peptide. The α-MSH-derived structure suggests low toxicity. NOT FDA-approved for any indication.
+          KPV's α-MSH-derived structure suggests low toxicity. NOT FDA-approved for any indication.
         </p>
       </div>
     ),

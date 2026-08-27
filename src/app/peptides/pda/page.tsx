@@ -173,7 +173,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of PDA?",
     intro:
-      "No PDA-specific safety study exists. The expected profile is BPC-157's: in animal studies the parent peptide has an unusually clean profile, with no toxic dose identified across decades of rodent work, but there are no completed long-term human safety trials for either form. Because the arginine counterion is the only difference, no distinct safety signal is anticipated — but this is inference, not tested fact.",
+      "No PDA-specific safety study exists. The expected profile is BPC-157's: in animal studies the parent peptide has no toxic dose identified across decades of rodent work, but there are no completed long-term human safety trials for either form. Because the arginine counterion is the only difference, no distinct safety signal is anticipated — but this is inference, not tested fact.",
     body: [
       "Injection-site reactions. Mild redness or irritation, typically transient — the most commonly reported effect in user protocols.",
       "Occasional mild dizziness or headache. Reported inconsistently on initial doses; usually self-limiting.",

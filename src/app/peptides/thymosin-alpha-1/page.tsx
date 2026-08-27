@@ -318,7 +318,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of Thymosin Alpha-1?",
     intro:
-      "Thymosin Alpha-1 has the cleanest safety profile of any peptide on Prof. Peptide due to decades of clinical use under regulated conditions in 35+ countries. The international post-marketing surveillance is more substantial than for almost any other research peptide. The most-reported user effects are mild injection-site reactions and transient mild fever after first few doses. No major adverse events documented in 35+ years of clinical use.",
+      "Thymosin Alpha-1 has decades of clinical use under regulated conditions in 35+ countries, with international post-marketing surveillance. The most-reported user effects are mild injection-site reactions and transient mild fever after first few doses. No major adverse events documented in 35+ years of clinical use.",
     node: (
       <div className="space-y-5">
         <div>
@@ -345,12 +345,12 @@ const sections = [
           </h3>
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">No major adverse events documented in 35+ years of clinical use.</span></li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Excellent safety profile in cancer chemotherapy adjunct settings.</span></li>
+            
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Theoretical antagonism with active immunosuppressant therapy.</span></li>
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Thymosin Alpha-1 has the cleanest safety profile of any peptide on Prof. Peptide due to decades of clinical use under regulated conditions in 35+ countries. The international post-marketing surveillance is more substantial than for almost any other research peptide.
+          Thymosin Alpha-1 has decades of clinical use under regulated conditions in 35+ countries, with international post-marketing surveillance.
         </p>
       </div>
     ),

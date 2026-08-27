@@ -98,7 +98,7 @@ const studies = [
     year: "1998",
     access: "Open Access",
     url: "https://pubmed.ncbi.nlm.nih.gov/9849822/",
-    summary: "The landmark selectivity study for Ipamorelin — the GHRP component of this stack. Established that Ipamorelin produces robust GH release with approximately 90% less cortisol elevation and no meaningful ACTH or prolactin response compared to older GHRPs (GHRP-2, GHRP-6, Hexarelin). This clean hormonal profile is why Ipamorelin became the default GHRP for stacking with GHRH analogs — it adds GH pulse triggering through the ghrelin receptor without cortisol and appetite side effects. Combined with Tesamorelin&apos;s documented VAT-reduction data, Ipamorelin&apos;s selectivity makes this the cleanest dual-pathway GH blend for metabolic research.",
+    summary: "The landmark selectivity study for Ipamorelin — the GHRP component of this stack. Established that Ipamorelin produces robust GH release with approximately 90% less cortisol elevation and no meaningful ACTH or prolactin response compared to older GHRPs (GHRP-2, GHRP-6, Hexarelin). This clean hormonal profile is why Ipamorelin became the default GHRP for stacking with GHRH analogs — it adds GH pulse triggering through the ghrelin receptor without cortisol and appetite side effects.",
   },
   {
     title: "Growth Hormone Secretagogues: History, Mechanism of Action, and Clinical Development",

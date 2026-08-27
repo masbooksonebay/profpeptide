@@ -316,7 +316,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of Semax?",
     intro:
-      "Semax has one of the cleanest safety profiles of any nootropic peptide. Decades of Russian pharmaceutical use plus extensive preclinical toxicological studies show no serious adverse events, no addiction, no withdrawal, and no HPA-axis activation. The most common issues are local (nasal irritation) or due to overstimulation (resolves with dose reduction). Long-term continuous daily use beyond standard 10–14 day cycles has limited published data.",
+      "Decades of Russian pharmaceutical use of semax plus extensive preclinical toxicological studies show no serious adverse events, no addiction, no withdrawal, and no HPA-axis activation. The most common issues are local (nasal irritation) or due to overstimulation (resolves with dose reduction). Long-term continuous daily use beyond standard 10–14 day cycles has limited published data.",
     node: (
       <div className="space-y-5">
         <div>
@@ -350,7 +350,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Semax has one of the cleanest safety profiles of any nootropic peptide. Decades of Russian pharmaceutical use plus extensive preclinical toxicological studies show no serious adverse events, no addiction, no withdrawal, and no HPA-axis activation. The most common issues are local (nasal irritation) or due to overstimulation (resolves with dose reduction). Long-term continuous daily use beyond standard 10–14 day cycles has limited published data.
+          Decades of Russian pharmaceutical use of semax plus extensive preclinical toxicological studies show no serious adverse events, no addiction, no withdrawal, and no HPA-axis activation. The most common issues are local (nasal irritation) or due to overstimulation (resolves with dose reduction). Long-term continuous daily use beyond standard 10–14 day cycles has limited published data.
         </p>
       </div>
     ),

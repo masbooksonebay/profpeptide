@@ -19,7 +19,7 @@ export const metadata = buildPageMetadata({
 const faqs = [
   {
     q: "How is ipamorelin different from GHRP-2 or GHRP-6?",
-    a: "All three are growth hormone-releasing peptides that activate the ghrelin receptor. The critical difference is selectivity. GHRP-2 and GHRP-6 also raise cortisol, prolactin, and ACTH alongside GH. Ipamorelin raises only GH — no significant effect on other pituitary hormones even at very high doses. This makes ipamorelin the cleanest GHRP for long-term use.",
+    a: "All three are growth hormone-releasing peptides that activate the ghrelin receptor. The critical difference is selectivity. GHRP-2 and GHRP-6 also raise cortisol, prolactin, and ACTH alongside GH. Ipamorelin raises only GH — no significant effect on other pituitary hormones even at very high doses.",
   },
   {
     q: "Should I stack ipamorelin with CJC-1295?",
@@ -316,7 +316,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of Ipamorelin?",
     intro:
-      "Ipamorelin has one of the cleanest safety profiles of any GHRP because of its selectivity. It does NOT raise cortisol (a problem with GHRP-2 and GHRP-6) and does not affect prolactin or other pituitary hormones. The most-reported user effects are mild injection-site reactions and a brief hunger spike (ghrelin receptor activation, 30–60 minutes post-injection). Long-term safety data beyond 12 weeks is limited.",
+      "Ipamorelin is selective: it does NOT raise cortisol (a problem with GHRP-2 and GHRP-6) and does not affect prolactin or other pituitary hormones. The most-reported user effects are mild injection-site reactions and a brief hunger spike (ghrelin receptor activation, 30–60 minutes post-injection). Long-term safety data beyond 12 weeks is limited.",
     node: (
       <div className="space-y-5">
         <div>
@@ -350,7 +350,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Ipamorelin has one of the cleanest safety profiles of any GHRP because of its selectivity. It does NOT raise cortisol (a problem with GHRP-2 and GHRP-6) and does not affect prolactin or other pituitary hormones. Long-term use should be monitored for IGF-1 elevation and glucose tolerance &mdash; both rise modestly with sustained GH stimulation.
+          Ipamorelin is selective: it does NOT raise cortisol (a problem with GHRP-2 and GHRP-6) and does not affect prolactin or other pituitary hormones. Long-term use should be monitored for IGF-1 elevation and glucose tolerance &mdash; both rise modestly with sustained GH stimulation.
         </p>
       </div>
     ),

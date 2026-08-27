@@ -187,7 +187,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of glutathione?",
     intro:
-      "Glutathione is generally well tolerated (it is an endogenous molecule and is broadly regarded as safe as a supplement), but tolerability varies by route, and the cosmetic IV use carries specific safety concerns.",
+      "Glutathione is an endogenous molecule, but tolerability varies by route, and the cosmetic IV use carries specific safety concerns.",
     body: [
       "Oral. Usually well tolerated; occasional mild GI complaints (bloating, cramping) at higher doses.",
       "Inhaled/nebulized. Can trigger bronchospasm in some people with asthma or reactive airways.",

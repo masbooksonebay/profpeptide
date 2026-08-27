@@ -320,7 +320,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of Selank?",
     intro:
-      "Selank has one of the cleanest safety profiles of any anxiolytic compound. Russian clinical use spanning decades has documented no addictive potential, no tolerance development, no withdrawal syndrome, and no significant cognitive or motor impairment. Most-reported effects are mild nasal irritation (intranasal route), mild stimulating effect (avoid late evening dosing), and slight headache (first doses). Western-standard long-term safety data remains limited.",
+      "Russian clinical use of selank spanning decades has documented no addictive potential, no tolerance development, no withdrawal syndrome, and no significant cognitive or motor impairment. Most-reported effects are mild nasal irritation (intranasal route), mild stimulating effect (avoid late evening dosing), and slight headache (first doses). Western-standard long-term safety data remains limited.",
     node: (
       <div className="space-y-5">
         <div>
@@ -354,7 +354,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Selank has one of the cleanest safety profiles of any anxiolytic compound. Russian clinical use spanning decades has documented no addictive potential, no tolerance development, no withdrawal syndrome, and no significant cognitive or motor impairment. This combination of efficacy and safety profile is unusual among anxiety treatments &mdash; most options carry sedation, dependence risk, or both. Western-standard long-term safety data remains limited.
+          Russian clinical use of selank spanning decades has documented no addictive potential, no tolerance development, no withdrawal syndrome, and no significant cognitive or motor impairment. Western-standard long-term safety data remains limited.
         </p>
       </div>
     ),

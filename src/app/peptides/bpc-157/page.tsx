@@ -339,7 +339,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of BPC-157?",
     intro:
-      "BPC-157 has one of the cleanest safety profiles of any research peptide in animal studies — researchers have not identified a toxic dose (no LD1) in tested species across 30+ years of research. However, no completed human safety trials confirm long-term safety in humans. The most-reported user effects are mild injection-site reactions and occasional mild dizziness on initial doses. The FDA classified BPC-157 as a Category 2 bulk drug substance in 2023, restricting compounding-pharmacy availability.",
+      "In animal studies, researchers have not identified a toxic dose (no LD1) for BPC-157 in tested species across 30+ years of research. However, no completed human safety trials confirm long-term safety in humans. The most-reported user effects are mild injection-site reactions and occasional mild dizziness on initial doses. The FDA classified BPC-157 as a Category 2 bulk drug substance in 2023, restricting compounding-pharmacy availability.",
     node: (
       <div className="space-y-5">
         <div>
@@ -349,7 +349,7 @@ const sections = [
           <ol className="list-decimal list-inside space-y-1">
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Injection site reactions.</span> Mild redness or irritation, typically resolves within hours.</li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">No common systemic side effects.</span> Animal studies have not identified consistent systemic adverse effects.</li>
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Most users report no acute side effects.</span> Subjective tolerance is generally excellent.</li>
+            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Most users report no acute side effects.</span></li>
           </ol>
         </div>
         <div>
@@ -373,7 +373,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          BPC-157 has one of the cleanest safety profiles of any research peptide in animal studies &mdash; researchers have not identified a toxic dose (no LD1) in tested species across 30+ years of research. However, no completed human safety trials confirm long-term safety in humans. The FDA classified BPC-157 as a Category 2 bulk drug substance in 2023, restricting its availability through compounding pharmacies.
+          In animal studies, researchers have not identified a toxic dose (no LD1) for BPC-157 in tested species across 30+ years of research. However, no completed human safety trials confirm long-term safety in humans. The FDA classified BPC-157 as a Category 2 bulk drug substance in 2023, restricting its availability through compounding pharmacies.
         </p>
       </div>
     ),

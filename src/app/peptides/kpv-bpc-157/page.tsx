@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "What side effects are reported with KPV + BPC-157?",
-    a: "The combination is generally well-tolerated in preclinical models. Most reported side effects in research-community use are mild: injection-site reactions (redness, mild irritation), transient fatigue, and transient GI changes (loose stool or appetite shifts, especially with oral BPC-157). Less common: mild headache, mild nausea during the first week. Serious effects are rare and theoretical — primarily the angiogenesis-stimulation concern with BPC-157 in oncology-adjacent contexts. KPV does not engage melanocortin receptors and does not produce the pigmentation or appetite side effects associated with full-length α-MSH.",
+    a: "Most reported side effects of the combination in research-community use are mild: injection-site reactions (redness, mild irritation), transient fatigue, and transient GI changes (loose stool or appetite shifts, especially with oral BPC-157). Less common: mild headache, mild nausea during the first week. Serious effects are rare and theoretical — primarily the angiogenesis-stimulation concern with BPC-157 in oncology-adjacent contexts. KPV does not engage melanocortin receptors and does not produce the pigmentation or appetite side effects associated with full-length α-MSH.",
   },
   {
     q: "How long before KPV + BPC-157 shows effects for gut issues?",

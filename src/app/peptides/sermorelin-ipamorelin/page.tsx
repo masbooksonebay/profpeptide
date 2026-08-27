@@ -346,7 +346,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of Sermorelin + Ipamorelin?",
     intro:
-      "Most reported side effects are mild and reflect GH-axis physiology — water retention, transient flushing, injection-site reactions, and early sleep changes. Ipamorelin&apos;s selectivity keeps the profile cleaner than older GHRP stacks. Theoretical long-term concerns are insulin resistance and receptor desensitization from sustained GH-axis activation. Sermorelin&apos;s clinical use history provides the most reassuring real-world safety context of the GHRH analogs.",
+      "Most reported side effects are mild and reflect GH-axis physiology — water retention, transient flushing, injection-site reactions, and early sleep changes. Ipamorelin&apos;s selectivity avoids the cortisol and prolactin elevation of older GHRP stacks. Theoretical long-term concerns are insulin resistance and receptor desensitization from sustained GH-axis activation.",
     node: (
       <div className="space-y-5">
         <div>
@@ -383,7 +383,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Sermorelin&apos;s compounding-pharmacy clinical use provides the most reassuring real-world safety data of any GHRH analog research stack component. Ipamorelin&apos;s selectivity profile means the combination avoids the cortisol elevation, prolactin elevation, and excessive appetite that older GHRP stacks produced.
+          Ipamorelin&apos;s selectivity profile means the combination avoids the cortisol elevation, prolactin elevation, and excessive appetite that older GHRP stacks produced.
         </p>
       </div>
     ),

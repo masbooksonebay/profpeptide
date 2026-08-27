@@ -261,7 +261,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of Semax + Selank?",
     intro:
-      "Side effects of intranasal Semax + Selank are typically mild and local — nasal irritation, occasional mild headache, transient activation or alertness changes. Both peptides have decades of Russian clinical use as approved pharmaceuticals, supporting a favorable safety class. Neither component produces sedation, dependence, or withdrawal at standard doses.",
+      "Side effects of intranasal Semax + Selank are typically mild and local — nasal irritation, occasional mild headache, transient activation or alertness changes. Both peptides have decades of Russian clinical use as approved pharmaceuticals. Neither component produces sedation, dependence, or withdrawal at standard doses.",
     node: (
       <div className="space-y-5">
         <div>
@@ -296,7 +296,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Decades of Russian clinical use with both components support a generally favorable safety class. Neither peptide produces sedation, dependence, withdrawal, or tolerance at standard doses — a major differentiator from benzodiazepines for the anxiolytic side of the blend.
+          Both components have decades of Russian clinical use. Neither peptide produces sedation, dependence, withdrawal, or tolerance at standard doses — a major differentiator from benzodiazepines for the anxiolytic side of the blend.
         </p>
       </div>
     ),

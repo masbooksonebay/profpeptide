@@ -362,7 +362,7 @@ const sections = [
             Serious (rare)
           </h3>
           <ol className="list-decimal list-inside space-y-1">
-            <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">No major adverse events at therapeutic doses.</span></li>
+            
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Very rare allergic reactions.</span></li>
             <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Methylation depletion at very high doses.</span> Counter with methyl donors (TMG, B12).</li>
           </ol>

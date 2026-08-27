@@ -277,7 +277,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of GHRP-2?",
     intro:
-      "GHRP-2 is generally well tolerated but is not cortisol-sparing. The most common effects are a transient appetite spike, mild injection-site reactions, and GH-related water retention or tingling. Its distinguishing caveat versus ipamorelin is a modest rise in cortisol and prolactin. Long-term controlled human safety data is limited.",
+      "GHRP-2 is not cortisol-sparing. The most common effects are a transient appetite spike, mild injection-site reactions, and GH-related water retention or tingling. Its distinguishing caveat versus ipamorelin is a modest rise in cortisol and prolactin. Long-term controlled human safety data is limited.",
     node: (
       <div className="space-y-5">
         <div>

@@ -303,7 +303,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of Epitalon?",
     intro:
-      "Epitalon has one of the cleanest safety profiles of any peptide on Prof. Peptide, supported by decades of Russian human use under research conditions. Russian cohort data spanning 20+ years documents no major adverse events. Reported effects are mild — injection site reactions, occasional vivid dreams during cycles (consistent with the pineal/melatonin pathway), mild headache. The single theoretical concern is telomerase activation in cancer contexts, which is why cancer patients should consult their oncologist before use.",
+      "Epitalon has decades of documented Russian human use under research conditions; Russian cohort data spanning 20+ years documents no major adverse events. Reported effects are mild — injection site reactions, occasional vivid dreams during cycles (consistent with the pineal/melatonin pathway), mild headache. The single theoretical concern is telomerase activation in cancer contexts, which is why cancer patients should consult their oncologist before use.",
     node: (
       <div className="space-y-5">
         <div>
@@ -334,7 +334,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Epitalon has one of the cleanest safety profiles of any peptide on Prof. Peptide, supported by decades of Russian human use under research conditions. NOT FDA-approved. Cancer patients should consult their oncologist before use given the theoretical concern about telomerase activation in cancer cells.
+          Epitalon has decades of documented Russian human use under research conditions. NOT FDA-approved. Cancer patients should consult their oncologist before use given the theoretical concern about telomerase activation in cancer cells.
         </p>
       </div>
     ),

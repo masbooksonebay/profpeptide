@@ -291,7 +291,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          The combined safety profile of the Wolverine Stack has not been formally studied. Most evidence comes from individual peptide research plus research-community use reports. Both peptides have clean preclinical safety profiles individually.
+          The combined safety profile of the Wolverine Stack has not been formally studied. Most evidence comes from individual peptide research plus research-community use reports.
         </p>
       </div>
     ),

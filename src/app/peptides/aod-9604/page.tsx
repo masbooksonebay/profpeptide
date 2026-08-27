@@ -300,7 +300,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of AOD-9604?",
     intro:
-      "AOD-9604 has one of the cleanest short-term safety profiles of any peptide tested in obesity trials. The Phase 2 program found no meaningful elevation in IGF-1, blood glucose, blood pressure, heart rate, or other monitored parameters. The most-reported user effects are mild injection-site reactions. Long-term safety data beyond 24 weeks does not exist, and the FDA cited unresolved concerns in 2024 declining 503A bulks list inclusion.",
+      "In its Phase 2 program, AOD-9604 showed no meaningful elevation in IGF-1, blood glucose, blood pressure, heart rate, or other monitored parameters. The most-reported user effects are mild injection-site reactions. Long-term safety data beyond 24 weeks does not exist, and the FDA cited unresolved concerns in 2024 declining 503A bulks list inclusion.",
     node: (
       <div className="space-y-5">
         <div>
@@ -332,7 +332,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          AOD-9604 has one of the cleanest short-term safety profiles of any peptide tested in obesity trials. The Phase 2 program found no meaningful elevation in IGF-1, blood glucose, blood pressure, heart rate, or other monitored parameters. However, long-term safety data beyond 24 weeks does not exist, and the FDA cited concerns about peptide impurities and potential immunogenicity in declining 503A bulks list inclusion in December 2024.
+          In its Phase 2 program, AOD-9604 showed no meaningful elevation in IGF-1, blood glucose, blood pressure, heart rate, or other monitored parameters. However, long-term safety data beyond 24 weeks does not exist, and the FDA cited concerns about peptide impurities and potential immunogenicity in declining 503A bulks list inclusion in December 2024.
         </p>
       </div>
     ),

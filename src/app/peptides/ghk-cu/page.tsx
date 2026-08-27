@@ -318,7 +318,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of GHK-Cu?",
     intro:
-      "GHK-Cu is NOT FDA-approved for injectable use (FDA prohibits compounded injectable commercial preparation as of 2023). Topical GHK-Cu is widely available in cosmetic formulations with decades of safe-use history. The most common practical issue is topical irritation — typically resolves with reduced concentration or frequency. Mild injection-site reactions are reported for injectable use. Copper allergy is a real but uncommon contraindication.",
+      "GHK-Cu is NOT FDA-approved for injectable use (FDA prohibits compounded injectable commercial preparation as of 2023). Topical GHK-Cu is widely available in cosmetic formulations. The most common practical issue is topical irritation — typically resolves with reduced concentration or frequency. Mild injection-site reactions are reported for injectable use. Copper allergy is a real but uncommon contraindication.",
     node: (
       <div className="space-y-5">
         <div>
@@ -352,7 +352,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          GHK-Cu is NOT FDA-approved for injectable use. The FDA prohibits injectable GHK-Cu in commercial compounding as of 2023. Topical GHK-Cu is widely available in cosmetic formulations and has decades of safe-use history. The most common practical issue is topical irritation &mdash; typically resolves with reduced concentration or frequency.
+          GHK-Cu is NOT FDA-approved for injectable use. The FDA prohibits injectable GHK-Cu in commercial compounding as of 2023. Topical GHK-Cu is widely available in cosmetic formulations. The most common practical issue is topical irritation &mdash; typically resolves with reduced concentration or frequency.
         </p>
       </div>
     ),

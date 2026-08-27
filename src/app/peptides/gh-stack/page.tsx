@@ -390,7 +390,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of the GH Stack?",
     intro:
-      "Most reported GH Stack side effects are mild and reflect the GH axis's natural effects on water balance and tissue growth — water retention, mild appetite changes, transient injection-site reactions. Ipamorelin's selectivity makes it cleaner than older GHRPs, which is why this combination became the default stack. The theoretical long-term concerns are insulin resistance and receptor desensitization from sustained GH-axis activation.",
+      "Most reported GH Stack side effects are mild and reflect the GH axis's natural effects on water balance and tissue growth — water retention, mild appetite changes, transient injection-site reactions. Ipamorelin's selectivity is why this combination became the default stack. The theoretical long-term concerns are insulin resistance and receptor desensitization from sustained GH-axis activation.",
     node: (
       <div className="space-y-5">
         <div>

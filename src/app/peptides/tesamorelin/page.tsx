@@ -317,7 +317,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of Tesamorelin?",
     intro:
-      "Tesamorelin has the strongest documented safety profile of any GHRH analog because of completed Phase 3 trials and ongoing FDA post-marketing surveillance. The most-reported user effects are injection-site reactions, arthralgia (joint pain consistent with sustained GH elevation), and peripheral edema. Anti-tesamorelin IgG antibodies develop in 56–85% of patients but did not eliminate efficacy in trials. Glucose tolerance should be monitored during therapy.",
+      "Tesamorelin has completed Phase 3 trials and ongoing FDA post-marketing surveillance. The most-reported user effects are injection-site reactions, arthralgia (joint pain consistent with sustained GH elevation), and peripheral edema. Anti-tesamorelin IgG antibodies develop in 56–85% of patients but did not eliminate efficacy in trials. Glucose tolerance should be monitored during therapy.",
     node: (
       <div className="space-y-5">
         <div>
@@ -351,7 +351,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Tesamorelin has the strongest documented safety profile of any GHRH analog because of completed Phase 3 trials and ongoing FDA post-marketing surveillance. Long-term cardiovascular safety has not been established. Tesamorelin is contraindicated in pregnancy (causes fetal harm in animal models), in patients with disrupted hypothalamic-pituitary axis, in active malignancy, and in those with hypersensitivity to tesamorelin.
+          Tesamorelin has completed Phase 3 trials and ongoing FDA post-marketing surveillance. Long-term cardiovascular safety has not been established. Tesamorelin is contraindicated in pregnancy (causes fetal harm in animal models), in patients with disrupted hypothalamic-pituitary axis, in active malignancy, and in those with hypersensitivity to tesamorelin.
         </p>
       </div>
     ),

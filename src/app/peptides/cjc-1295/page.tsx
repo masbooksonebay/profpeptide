@@ -335,7 +335,7 @@ const sections = [
     id: "side-effects",
     title: "What are the side effects of CJC-1295?",
     intro:
-      "CJC-1295 was generally well-tolerated in human Phase 1 and 2 trials. The most-reported user effects are mild injection-site reactions, transient facial flushing (vasodilation), and mild headache especially with first or higher doses. Less common moderate effects (fluid retention, carpal-tunnel-like numbness) are consistent with the GH/IGF-1 elevation. One Phase 2 trial subject death contributed to discontinuation but was investigated and attributed to unrelated coronary artery disease.",
+      "CJC-1295 was reported as generally well-tolerated in the human Phase 1 and 2 trials [4][5]. The most-reported user effects are mild injection-site reactions, transient facial flushing (vasodilation), and mild headache especially with first or higher doses. Less common moderate effects (fluid retention, carpal-tunnel-like numbness) are consistent with the GH/IGF-1 elevation. One Phase 2 trial subject death contributed to discontinuation but was investigated and attributed to unrelated coronary artery disease.",
     node: (
       <div className="space-y-5">
         <div>
@@ -369,7 +369,7 @@ const sections = [
           </ol>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          CJC-1295 was generally well-tolerated in human Phase 1 and 2 trials. The Phase 2 trial subject death noted above was investigated and the attending physician concluded the most likely cause was asymptomatic coronary artery disease unrelated to treatment. However, this incident contributed to the discontinuation of clinical development. Long-term safety data beyond Phase 2 trials does not exist.
+          CJC-1295 was reported as generally well-tolerated in the human Phase 1 and 2 trials [4][5]. The Phase 2 trial subject death noted above was investigated and the attending physician concluded the most likely cause was asymptomatic coronary artery disease unrelated to treatment. However, this incident contributed to the discontinuation of clinical development. Long-term safety data beyond Phase 2 trials does not exist.
         </p>
       </div>
     ),
