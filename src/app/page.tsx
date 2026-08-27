@@ -138,8 +138,13 @@ export default function Home() {
           "https://www.instagram.com/profpeptidehq/",
         ],
       }} />
-      <section className="bg-white dark:bg-[#0f172a] border-b border-gray-100 dark:border-slate-800">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center">
+      {/* Hero fills the first viewport exactly (100svh minus the sticky header: h-16 = 64px,
+          md:h-[72px] = 72px — see Header.tsx). svh (not vh) so the mobile URL bar can't break it.
+          Content is vertically centered and unchanged (same type scale/search/buttons); min-h (not
+          fixed h) means a stack taller than the viewport just extends the section — never
+          scroll-within-itself. The trust/stats band arrives on first scroll, cued below. */}
+      <section className="relative flex flex-col justify-center min-h-[calc(100svh-64px)] md:min-h-[calc(100svh-72px)] bg-white dark:bg-[#0f172a] border-b border-gray-100 dark:border-slate-800">
+        <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 py-12 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-[#16181B] dark:text-slate-100 leading-tight mb-5">
             Everything you need for<br className="hidden sm:block" /> peptide research, in one place
           </h1>
@@ -168,6 +173,13 @@ export default function Home() {
               <Link key={r.href} href={r.href} className="btn-outline text-base px-8 sm:px-0 sm:w-44 whitespace-nowrap py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-4px_rgba(16,24,40,0.14)]">{label ?? r.navLabel}</Link>
             ))}
           </div>
+        </div>
+        {/* Scroll cue — a muted chevron at the hero's bottom edge signalling the stats band below.
+            Gentle opacity pulse only, no text; pointer-events-none so it never intercepts clicks. */}
+        <div className="absolute inset-x-0 bottom-6 flex justify-center pointer-events-none" aria-hidden="true">
+          <svg className="w-6 h-6 text-gray-300 dark:text-slate-600 animate-pulse" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
         </div>
       </section>
 
