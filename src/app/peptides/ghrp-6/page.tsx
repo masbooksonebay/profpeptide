@@ -140,11 +140,11 @@ const sections = [
     id: "dosing",
     title: "How is GHRP-6 dosed?",
     intro:
-      "GHRP-6 is given by subcutaneous injection, commonly 100–300 mcg per dose, once to three times daily, on an empty stomach. Bedtime is common; the strong appetite spike is a practical consideration for timing. It is usually combined with a GHRH analog for a larger GH pulse.",
+      "No controlled trial has established a research-use dose for GHRP-6 — the circulating figures are community convention, not trial-derived. GHRP-6 is given by subcutaneous injection; commonly cited amounts are 100–300 mcg per dose, once to three times daily, on an empty stomach. Bedtime is common; the strong appetite spike is a practical consideration for timing. It is usually combined with a GHRH analog for a larger GH pulse.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard dose.</span> 100–300 mcg subcutaneously per injection, on an empty stomach.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Community-convention dose.</span> 100–300 mcg subcutaneously per injection, on an empty stomach.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Timing around hunger.</span> Many users dose before a planned meal (to leverage the appetite effect) or at bedtime (to sleep through it).</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Multiple daily dosing.</span> 100–200 mcg 2–3× daily for sustained effect.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Saturation caveat.</span> Beyond roughly 1 mcg/kg, extra GHRP-6 adds cortisol and prolactin rather than GH.</li>

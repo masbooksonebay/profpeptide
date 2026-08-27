@@ -138,11 +138,11 @@ const sections = [
     id: "dosing",
     title: "How is Epitalon dosed?",
     intro:
-      "Epitalon is administered as a subcutaneous injection in 10–20 day intensive cycles followed by extended breaks of 2–6 months. The standard Russian protocol uses 5–10 mg total per cycle, divided as 0.5–1 mg daily. Bedtime injection is preferred to align with the natural pineal/melatonin pathway timing. Lifelong cycling (2–4 cycles per year) is common in Russian gerontology contexts.",
+      "No controlled Western trial has established an epitalon dose — the figures below come from Russian gerontology protocols and community convention, not Western trial-derived guidance. Epitalon is administered as a subcutaneous injection in 10–20 day intensive cycles followed by extended breaks of 2–6 months. The commonly cited amount is 5–10 mg total per cycle, divided as 0.5–1 mg daily. Bedtime injection is preferred to align with the natural pineal/melatonin pathway timing. Lifelong cycling (2–4 cycles per year) is common in Russian gerontology contexts.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard cycle.</span> 5–10 mg total dose per cycle, divided as 0.5–1 mg subcutaneously daily for 10–20 days.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Community-convention cycle.</span> 5–10 mg total dose per cycle, divided as 0.5–1 mg subcutaneously daily for 10–20 days.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle frequency.</span> 2–4 cycles per year, with 2–6 months between cycles.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Bedtime preferred &mdash; aligns with pineal/melatonin pathway timing.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution.</span> 10 mg vial + 2 mL bacteriostatic water = 5 mg/mL. See How is Epitalon administered? for the full reconstitution table.</li>

@@ -172,15 +172,15 @@ const sections = [
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Semax + Selank is administered as an intranasal spray. Dosing is in micrograms per spray per peptide; protocols range from a single spray per nostril once daily up to 2–3 sprays per nostril 2–3× daily, depending on the goal and individual response.
+          The Semax + Selank combination has not been studied in a controlled trial — the figures below are community convention, anchored to each component's Russian clinical dose. It is administered as an intranasal spray; dosing is in micrograms per spray per peptide, with protocols ranging from a single spray per nostril once daily up to 2–3 sprays per nostril 2–3× daily, depending on the goal and individual response.
         </p>
         <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
-          Standard research protocol (20 mg blend vial):
+          Community-convention protocol (20 mg blend vial):
         </p>
         <ol className="list-decimal list-inside space-y-1">
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Per-spray dose.</span> ~100 mcg of each peptide per 50 μL spray when a 20 mg vial (10 mg Semax + 10 mg Selank) is reconstituted into a 10 mL nasal spray bottle.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Starting protocol.</span> 1 spray per nostril once daily (morning) — total ~200 mcg Semax + 200 mcg Selank per day.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard maintenance.</span> 1–2 sprays per nostril, 1–2× daily — total 300–600 mcg of each peptide per day, in line with the per-component clinical protocols (Semax 300–600 mcg/day, Selank 300–900 mcg/day in Russian clinical use).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Community-convention maintenance.</span> 1–2 sprays per nostril, 1–2× daily — total 300–600 mcg of each peptide per day, in line with the per-component clinical protocols (Semax 300–600 mcg/day, Selank 300–900 mcg/day in Russian clinical use).</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Higher-stress or higher-performance protocol.</span> 2–3 sprays per nostril, 2–3× daily, with at least 4 hours between doses.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle length.</span> 2–6 weeks active; cycle off when the acute need passes.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Timing.</span> Morning is the default. Pre-stressor dosing (30–60 minutes before a known stress trigger) is documented in research-community use.</li>

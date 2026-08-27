@@ -145,11 +145,11 @@ const sections = [
     id: "dosing",
     title: "How is Sermorelin dosed?",
     intro:
-      "Sermorelin is administered as a subcutaneous injection. The short 10–20 minute half-life means effects depend entirely on dose timing. Standard dosing is 200–500 mcg once daily at bedtime. Cycle length is typically 3–6 months for adult GHRH-replacement protocols; some patients use continuously under clinical supervision. Empty-stomach dosing is non-negotiable for full GH response.",
+      "The only FDA-approved sermorelin regimen was Geref, dosed at 30 mcg/kg once daily at bedtime for GH deficiency in children — the adult flat-dose protocols below are off-label anti-aging / GHRH-replacement convention, not the approved regimen and not trial-derived. Sermorelin is administered as a subcutaneous injection; the short 10–20 minute half-life means effects depend entirely on dose timing. The figure that circulates in research communities is 200–500 mcg once daily at bedtime, run in cycles of typically 3–6 months (some use continuously under clinical supervision). Empty-stomach dosing is non-negotiable for full GH response.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard dose.</span> 200–500 mcg subcutaneously once daily at bedtime.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Community-convention dose.</span> 200–500 mcg subcutaneously once daily at bedtime.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Higher dose.</span> Up to 1000 mcg per dose for patients with more severe GHRH-axis decline.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Empty stomach.</span> Insulin spikes from food blunt GH release &mdash; wait 2+ hours after eating, 30 min before next meal.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle length.</span> 3–6 months is common for adult GHRH-replacement protocols; some patients use continuously under clinical supervision.</li>

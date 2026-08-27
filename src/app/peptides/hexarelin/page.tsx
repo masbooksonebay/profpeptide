@@ -139,11 +139,11 @@ const sections = [
     id: "dosing",
     title: "How is Hexarelin dosed?",
     intro:
-      "Hexarelin is given by subcutaneous injection, commonly 100–200 mcg per dose, once to three times daily, on an empty stomach. Because of desensitization, it is usually cycled (e.g. shorter blocks with breaks) rather than run continuously, and is often paired with a GHRH analog.",
+      "No controlled trial has established a research-use GH dose for hexarelin — the circulating figures are community convention, not trial-derived. Hexarelin is given by subcutaneous injection; commonly cited amounts are 100–200 mcg per dose, once to three times daily, on an empty stomach. Because of desensitization, it is usually cycled (e.g. shorter blocks with breaks) rather than run continuously, and is often paired with a GHRH analog.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard dose.</span> 100–200 mcg subcutaneously per injection, on an empty stomach.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Community-convention dose.</span> 100–200 mcg subcutaneously per injection, on an empty stomach.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Bedtime dosing.</span> A single dose 30–60 minutes before sleep aligns with the natural overnight GH peak.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle to limit desensitization.</span> Hexarelin desensitizes faster than other GHRPs — shorter blocks (e.g. a few weeks) with breaks, or intermittent use, preserve the GH response.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Saturation caveat.</span> Beyond roughly 1–2 mcg/kg, extra dose mostly adds cortisol/prolactin, not GH.</li>

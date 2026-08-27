@@ -157,19 +157,19 @@ const sections = [
     id: "dosing",
     title: "How is BPC-157 dosed?",
     intro:
-      "BPC-157 is administered by subcutaneous injection or oral dosing. Injection produces stronger systemic effects and is preferred for musculoskeletal injuries. Oral dosing is preferred for gastrointestinal applications because BPC-157's unusual gastric acid stability allows it to act locally on gut tissue. Standard injectable dosing is 250 mcg once or twice daily; higher protocols use 500 mcg once or twice daily for severe injuries or post-surgical recovery.",
+      "No human clinical trial has established a BPC-157 dose — the figures below are community convention, extrapolated from animal-model work (plus one small human case series that used a single localized injection, no set dose). BPC-157 is administered by subcutaneous injection or oral dosing. Injection produces stronger systemic effects and is preferred for musculoskeletal injuries; oral dosing is preferred for gastrointestinal applications because BPC-157's unusual gastric acid stability allows it to act locally on gut tissue. The commonly cited injectable figures are 250 mcg once or twice daily, with higher protocols at 500 mcg once or twice daily for severe injuries or post-surgical recovery.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard injectable.</span> 250 mcg subcutaneously once daily, or 250 mcg twice daily for stronger effect.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Community-convention injectable.</span> 250 mcg subcutaneously once daily, or 250 mcg twice daily for stronger effect.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Higher injectable.</span> 500 mcg once or twice daily for severe injuries or post-surgical recovery.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Localized injection.</span> Injecting subcutaneously near the injury site (tendon, joint capsule, muscle belly) is more effective for localized injuries than abdominal injection.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Weight-based reference.</span> Research literature uses 2.5–3.75 mcg/kg twice daily &mdash; for most adults this is 300–400 mcg/day.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Weight-based reference.</span> The animal research literature uses 2.5–3.75 mcg/kg twice daily &mdash; for most adults that extrapolates to 300–400 mcg/day.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle length.</span> 4–8 weeks for routine recovery; up to 12 weeks for chronic conditions or post-surgical protocols.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Oral dosing.</span> 250–500 mcg once or twice daily on an empty stomach for gut-related research.</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-          Plasma half-life is under 30 minutes, but biological effects extend well beyond plasma clearance &mdash; likely due to local tissue depot activity and downstream gene expression changes. Dose titration is common, starting at 250 mcg daily and increasing as tolerated. The Huberman protocol recommends 300–500 mcg subcutaneously, two to three times per week for 8 weeks, followed by an 8–10 week off period.
+          Plasma half-life is under 30 minutes, but biological effects extend well beyond plasma clearance &mdash; likely due to local tissue depot activity and downstream gene expression changes. Dose titration is common, starting at 250 mcg daily and increasing as tolerated. The protocol popularized by the Huberman Lab podcast (300–500 mcg subcutaneously, two to three times per week for 8 weeks, then an 8–10 week off period) is a widely-repeated community protocol, not a clinical recommendation.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}

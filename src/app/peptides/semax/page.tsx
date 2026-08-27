@@ -149,11 +149,11 @@ const sections = [
     id: "dosing",
     title: "How is Semax dosed?",
     intro:
-      "Semax is administered intranasally as a 0.1% (1 mg/mL) or 1% (10 mg/mL) solution. The intranasal route allows partial nose-to-brain transport via olfactory and trigeminal pathways. Subcutaneous administration is also used in research contexts. Oral bioavailability is effectively zero — gastric peptidases destroy the molecule. Standard cognitive-enhancement dose: 600–1,200 mcg/day intranasally via 0.1% solution.",
+      "Semax is a Russian-registered nootropic/neuroprotective drug; its stroke-recovery dosing is a Russian clinical protocol, while the cognitive-enhancement figures are community convention rather than trial-derived. It is administered intranasally as a 0.1% (1 mg/mL) or 1% (10 mg/mL) solution — the intranasal route allows partial nose-to-brain transport via olfactory and trigeminal pathways. Subcutaneous administration is also used in research contexts; oral bioavailability is effectively zero (gastric peptidases destroy the molecule). The commonly cited cognitive-enhancement figure is 600–1,200 mcg/day intranasally via 0.1% solution.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cognitive enhancement (standard).</span> 600–1,200 mcg/day intranasally via 0.1% solution. Typically split as 1–2 drops per nostril, 2–3 times daily.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cognitive enhancement (community convention).</span> 600–1,200 mcg/day intranasally via 0.1% solution. Typically split as 1–2 drops per nostril, 2–3 times daily.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Stroke recovery (Russian protocol).</span> 9,000–18,000 mcg/day intranasally via 1% solution, administered within 6–12 hours of ischemic onset, continued for 10–14 days.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Optic nerve disorders.</span> 2–3 drops per nostril, 3–4× daily, for 5–10 days.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Subcutaneous research dosing.</span> 250–1,000 mcg/kg per dose; typical fixed dose 200–600 mcg per injection.</li>

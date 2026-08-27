@@ -136,11 +136,11 @@ const sections = [
     id: "dosing",
     title: "How is AOD-9604 dosed?",
     intro:
-      "AOD-9604 was tested in clinical trials in both oral and subcutaneous formulations. Research-grade material is typically used by subcutaneous injection. There is no FDA-approved dose because AOD-9604 was discontinued before approval. Common research-grade dosing is 250–500 mcg subcutaneously once daily; some protocols use 2–3 mg per week split into multiple injections.",
+      "AOD-9604's clinical development — the Metabolic Pharmaceuticals obesity program — centered on ORAL dosing, and there is no FDA-approved dose because the drug was discontinued before approval. Research-grade material is now typically used by subcutaneous injection, a route not validated by that trial program — so the injectable figures below are community convention. Common research-grade dosing is 250–500 mcg subcutaneously once daily; some protocols use 2–3 mg per week split into multiple injections.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard injectable.</span> 250–500 mcg subcutaneously once daily.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Community-convention injectable.</span> 250–500 mcg subcutaneously once daily.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Split protocols.</span> Some protocols use 2–3 mg per week split into multiple injections.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Historical oral doses.</span> 0.25 mg, 0.5 mg, and 1.0 mg daily (oral bioavailability is poor &mdash; research has shifted to injectable).</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle length.</span> 8–12 weeks is the most common, though there is no established standard.</li>

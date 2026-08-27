@@ -136,11 +136,11 @@ const sections = [
     id: "dosing",
     title: "How is Ipamorelin dosed?",
     intro:
-      "Ipamorelin is administered as a subcutaneous injection. The 2-hour half-life means effects depend on dose timing rather than continuous coverage. Standard dosing is 200–300 mcg subcutaneously per injection, with bedtime as the most common protocol (aligns with natural overnight GH peak). Frequently stacked with CJC-1295 (with or without DAC) for synergistic dual-pathway GH release.",
+      "No controlled trial has established a research-use dose for ipamorelin — the figures below are community convention, not trial-derived (the half-life comes from the cited pharmacology). Ipamorelin is administered as a subcutaneous injection; the 2-hour half-life means effects depend on dose timing rather than continuous coverage. The commonly cited amount is 200–300 mcg subcutaneously per injection, with bedtime the most common timing (aligns with the natural overnight GH peak). Frequently stacked with CJC-1295 (with or without DAC) for synergistic dual-pathway GH release.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard dose.</span> 200–300 mcg subcutaneously per injection.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Community-convention dose.</span> 200–300 mcg subcutaneously per injection.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Bedtime dosing.</span> 200–300 mcg before sleep &mdash; most common protocol, aligns with natural GH peak during deep sleep.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Multiple daily dosing.</span> 200 mcg 2–3x per day (morning, mid-day, bedtime) for users targeting sustained effect.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pre-workout dosing.</span> Some users add a 200 mcg dose 30–60 minutes before training to amplify exercise-induced GH release.</li>

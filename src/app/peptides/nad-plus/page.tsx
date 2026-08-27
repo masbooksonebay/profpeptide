@@ -162,7 +162,7 @@ const sections = [
     id: "dosing",
     title: "How is NAD+ dosed?",
     intro:
-      "NAD+ dosing varies dramatically by route of administration. Subcutaneous and IV produce direct NAD+ elevation; oral precursors (NMN, NR) require conversion in the body. Subcutaneous is notoriously painful (burning at injection site for several minutes). IV infusion is clinical-setting only. Sublingual and oral precursors avoid injection but with different absorption profiles.",
+      "No controlled trial has established an injectable NAD+ dose — the figures below are community convention and vary dramatically by route. Subcutaneous and IV produce direct NAD+ elevation; oral precursors (NMN, NR) require conversion in the body. Subcutaneous is notoriously painful (burning at injection site for several minutes). IV infusion is clinical-setting only. Sublingual and oral precursors avoid injection but with different absorption profiles.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">

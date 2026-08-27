@@ -160,7 +160,7 @@ const sections = [
     id: "dosing",
     title: "How is TB-500 dosed?",
     intro:
-      "TB-500 is administered as a subcutaneous injection in a loading-then-maintenance pattern that mimics the original RegeneRx clinical trial protocols. Loading phase (weeks 1–4): 2.0–2.5 mg twice weekly. Maintenance phase (weeks 5–8): 2.0 mg once weekly. The longer half-life (multiple days in animal studies) is why twice-weekly dosing is sufficient — TB-500 is more expensive per dose than BPC-157 but cycle frequency is lower.",
+      "No human clinical trial has established a TB-500 dose — the loading-then-maintenance figures below are community convention, loosely attributed to RegeneRx's early thymosin beta-4 trials whose doses were never published for research use. TB-500 is administered as a subcutaneous injection in that loading-then-maintenance pattern: loading phase (weeks 1–4), 2.0–2.5 mg twice weekly; maintenance phase (weeks 5–8), 2.0 mg once weekly. The longer half-life (multiple days, an estimate from animal studies) is the rationale offered for twice-weekly dosing — TB-500 is more expensive per dose than BPC-157 but cycle frequency is lower.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">

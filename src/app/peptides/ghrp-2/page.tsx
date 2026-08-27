@@ -144,11 +144,11 @@ const sections = [
     id: "dosing",
     title: "How is GHRP-2 dosed?",
     intro:
-      "GHRP-2 is given by subcutaneous injection. Research protocols commonly use 100–300 mcg per dose, once to three times daily, on an empty stomach — bedtime is the most common single-dose timing. It is frequently combined with CJC-1295 for dual-pathway GH release.",
+      "No controlled trial has established a research-use dose for GHRP-2 — the figures that circulate in research communities are community convention, not trial-derived. GHRP-2 is given by subcutaneous injection; the commonly cited amounts are 100–300 mcg per dose, once to three times daily, on an empty stomach — bedtime is the most common single-dose timing. It is frequently combined with CJC-1295 for dual-pathway GH release.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard dose.</span> 100–300 mcg subcutaneously per injection, on an empty stomach.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Community-convention dose.</span> 100–300 mcg subcutaneously per injection, on an empty stomach.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Bedtime dosing.</span> A single dose 30–60 minutes before sleep aligns with the natural overnight GH peak and lets you sleep through the appetite spike.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Multiple daily dosing.</span> 100–200 mcg 2–3× daily (e.g. morning, mid-day, bedtime) for sustained effect.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Saturation caveat.</span> Doses much above ~1 mcg/kg give little extra GH but more cortisol/prolactin — higher is not better with GHRP-2.</li>

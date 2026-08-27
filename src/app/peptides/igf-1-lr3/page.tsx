@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "Should I inject post-workout or pre-workout?",
-    a: "Post-workout is the standard approach. Resistance training creates a temporary spike in growth hormone and increases IGF-1 receptor sensitivity in worked muscles. Injecting within 30–60 minutes post-workout capitalizes on this window. Research suggests post-workout IGF-1 administration increases muscle protein synthesis rates by an additional ~35% vs rest-day administration.",
+    a: "Post-workout is the common community approach. Resistance training creates a temporary spike in growth hormone and increases IGF-1 receptor sensitivity in worked muscles, so injecting within 30–60 minutes post-workout is thought to capitalize on this window. The specific timing figures circulating in the research community are convention — no controlled human trial of the analog has quantified a post-workout advantage.",
   },
   {
     q: "Do I need post-cycle therapy (PCT)?",
@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     q: "Is IGF-1 LR3 safe long-term?",
-    a: "Limited human safety data exists. The most well-documented concerns are hypoglycemia risk during use and theoretical risk of accelerated tumor growth in users with cancer history. Most users follow 4–6 week cycles with 4+ week breaks rather than continuous use, both for safety conservatism and to maintain receptor sensitivity.",
+    a: "Limited human safety data exists. The best-documented concern is hypoglycemia risk during use; the tumor-growth concern is theoretical (IGF-1's mitogenic action), and on that basis a personal history of malignancy is treated as a theoretical exclusion — no controlled human trial of the analog has measured cancer risk. Most users follow 4–6 week cycles with 4+ week breaks rather than continuous use, both for safety conservatism and to maintain receptor sensitivity.",
   },
   {
     q: "Where can I buy IGF-1 LR3?",
@@ -139,12 +139,12 @@ const sections = [
     id: "dosing",
     title: "How is IGF-1 LR3 dosed?",
     intro:
-      "IGF-1 LR3 is administered as a once-daily subcutaneous (or intramuscular) injection. The 20–30 hour half-life makes once-daily dosing sufficient to maintain stable blood levels. Timing relative to training and food matters more than time of day. Cycles run 4–6 weeks on, followed by minimum 4 weeks off to allow IGF-1 receptor sensitivity to reset. Doses above 50 mcg/day significantly increase hypoglycemia risk without proportional muscle-building benefit.",
+      "No controlled human trial of IGF-1 LR3 has established a dose — the figures below are community convention (the amounts that circulate in research communities), not trial-derived. IGF-1 LR3 is administered as a once-daily subcutaneous (or intramuscular) injection; the 20–30 hour half-life makes once-daily dosing sufficient to maintain stable blood levels. Timing relative to training and food matters more than time of day. Cycles run 4–6 weeks on, followed by a minimum 4 weeks off to allow IGF-1 receptor sensitivity to reset. Doses above 50 mcg/day significantly increase hypoglycemia risk without proportional muscle-building benefit.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Beginner range.</span> 20–30 mcg per day for the first cycle to assess tolerance and response.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard range.</span> 30–50 mcg per day for established users.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Community-convention range.</span> 30–50 mcg per day for established users.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Anabolic ceiling.</span> ~40–50 mcg/day appears to be the practical upper limit; doses above 50 mcg significantly increase hypoglycemia risk without proportional benefit.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle length.</span> 4–6 weeks on, followed by minimum 4 weeks off to allow IGF-1 receptor sensitivity to reset.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Within-cycle pulsing.</span> Some users follow 5 days on, 2 days off within the cycle to reduce receptor downregulation.</li>

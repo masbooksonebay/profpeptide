@@ -156,11 +156,11 @@ const sections = [
     id: "dosing",
     title: "How is Selank dosed?",
     intro:
-      "Selank is administered intranasally as a 0.15% solution (1.5 mg/mL). The intranasal route allows partial nose-to-brain transport via olfactory and trigeminal pathways. Subcutaneous administration is also used in research contexts. Oral bioavailability is effectively zero. Standard Russian protocol: 250–300 mcg per nostril, 2–3 times daily, for 14-day courses.",
+      "Selank is a Russian-registered anxiolytic; the dosing figures below are its Russian clinical protocol, not from Western controlled trials. It is administered intranasally as a 0.15% solution (1.5 mg/mL) — the intranasal route allows partial nose-to-brain transport via olfactory and trigeminal pathways. Subcutaneous administration is also used in research contexts; oral bioavailability is effectively zero. The Russian clinical protocol is 250–300 mcg per nostril, 2–3 times daily, for 14-day courses.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard intranasal (Russian approved).</span> 250–300 mcg per nostril, 2–3 times daily, for 14-day courses. ~1,500–2,250 mcg/day total.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Russian-registered intranasal protocol.</span> 250–300 mcg per nostril, 2–3 times daily, for 14-day courses. ~1,500–2,250 mcg/day total.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Lower-end starting dose.</span> 200 mcg per nostril, 2× daily &mdash; for first-time users to assess tolerance.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Subcutaneous research dosing.</span> 250–500 mcg per injection, once daily.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Course length.</span> 14 days standard. Cycling 2–4 weeks on, 2–4 weeks off mirrors Russian clinical protocols. No tolerance reported.</li>

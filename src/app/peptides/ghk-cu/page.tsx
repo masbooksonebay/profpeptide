@@ -154,7 +154,7 @@ const sections = [
     id: "dosing",
     title: "How is GHK-Cu dosed?",
     intro:
-      "GHK-Cu is used both topically (cosmetic skincare — strongest evidence base, FDA-permitted) and as an injectable research peptide (FDA-restricted as of 2023). Topical dose is 1–3% in serums/creams applied 1–2× daily. Injectable research protocol is typically a 30-day phased cycle: 1 mg/day for days 1–15, then 2 mg/day for days 16–30, followed by a 30-day break.",
+      "GHK-Cu is used both topically (cosmetic skincare — the stronger evidence base, FDA-permitted) and as an injectable research peptide (FDA-restricted as of 2023). Topical use is 1–3% in serums/creams applied 1–2× daily. The injectable figures are community convention, not trial-derived: a 30-day phased cycle is typical — 1 mg/day for days 1–15, then 2 mg/day for days 16–30, followed by a 30-day break.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">

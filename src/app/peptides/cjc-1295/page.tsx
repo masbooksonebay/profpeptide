@@ -154,7 +154,7 @@ const sections = [
     id: "dosing",
     title: "How is CJC-1295 dosed?",
     intro:
-      "CJC-1295 dosing depends on whether DAC is included. With DAC, the long half-life allows weekly dosing (1–2 mg once or twice weekly). Without DAC (Modified GRF 1-29), the short half-life requires multiple daily doses (100 mcg, 2–3 times daily), typically paired with a GHRP like ipamorelin. Empty-stomach dosing maximizes GH response — insulin spikes from food blunt the GH signal.",
+      "No controlled trial has established a chronic dosing protocol for CJC-1295 — its Phase 1 and 2 studies characterized pharmacokinetics and single- and multiple-dose safety, not a research-use regimen. The figures below are community convention (the amounts that circulate in research communities), not trial-derived; they track each form's half-life. With DAC, the long half-life allows weekly dosing (1–2 mg once or twice weekly). Without DAC (Modified GRF 1-29), the short half-life is dosed multiple times daily (100 mcg, 2–3 times daily), typically paired with a GHRP like ipamorelin. Empty-stomach dosing maximizes GH response — insulin spikes from food blunt the GH signal.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">

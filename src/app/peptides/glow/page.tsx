@@ -171,14 +171,14 @@ const sections = [
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          GLOW is administered as a subcutaneous injection. Standard preparations supply roughly 40 doses per 70 mg vial at the typical research protocol.
+          No controlled trial has established a GLOW dose — GLOW is a pre-blended community formulation and the figures below are community convention. It is administered as a subcutaneous injection; standard preparations supply roughly 40 doses per 70 mg vial at the typical protocol.
         </p>
         <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
-          Standard research protocol (70 mg vial):
+          Community-convention protocol (70 mg vial):
         </p>
         <ol className="list-decimal list-inside space-y-1">
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution.</span> 70 mg vial + 2 mL bacteriostatic water = 35 mg/mL blend.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Standard dose.</span> 0.25–0.5 mL subcutaneously, 5 days/week (5 on, 2 off).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Community-convention dose.</span> 0.25–0.5 mL subcutaneously, 5 days/week (5 on, 2 off).</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Vial duration.</span> Each ~40-dose 70 mg vial typically lasts ~8 weeks at standard protocol.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle length.</span> 8–12 weeks active, 4-week break recommended before re-cycling.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Timing.</span> Bedtime injection, at least 2 hours post-meal.</li>

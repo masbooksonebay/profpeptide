@@ -142,7 +142,7 @@ const sections = [
     id: "dosing",
     title: "How is Melanotan II dosed?",
     intro:
-      "MT-II is administered as a subcutaneous injection. Given the documented serious adverse events at higher doses, conservative starting and maintenance doses are critical. ALWAYS START with a 0.1 mg test dose to assess tolerance. Loading phase uses 0.25–0.5 mg per dose, 3–5 days per week, 2–4 weeks. Maintenance: 0.5 mg, 1–2× per week. NEVER exceed 1 mg per dose — the 6 mg case report describes near-fatal toxicity.",
+      "No controlled trial has established a Melanotan II dose — the figures below are community convention. That matters especially here: because serious adverse events are documented at higher doses, conservative dosing is critical. MT-II is administered as a subcutaneous injection. ALWAYS START with a 0.1 mg test dose to assess tolerance. The convention loading phase is 0.25–0.5 mg per dose, 3–5 days per week, 2–4 weeks; maintenance is 0.5 mg, 1–2× per week. NEVER exceed 1 mg per dose — the 6 mg case report describes near-fatal toxicity.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">

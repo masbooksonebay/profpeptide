@@ -162,7 +162,7 @@ const sections = [
     id: "dosing",
     title: "How is KPV dosed?",
     intro:
-      "KPV is administered orally (enteric-coated capsules), subcutaneously, or topically depending on the application. Oral is preferred for gut applications because PepT1-mediated uptake concentrates KPV at inflamed intestinal mucosa. Injection produces systemic effects for general anti-inflammatory use. Topical formulations target skin inflammation. Cycle length is 4–8 weeks active with a 2-week break recommended.",
+      "No human trial has established a KPV dose — the figures below are community convention, not trial-derived. KPV is administered orally (enteric-coated capsules), subcutaneously, or topically depending on the application. Oral is preferred for gut applications because PepT1-mediated uptake concentrates KPV at inflamed intestinal mucosa; injection produces systemic effects for general anti-inflammatory use; topical formulations target skin inflammation. The commonly cited cycle length is 4–8 weeks active with a 2-week break.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
