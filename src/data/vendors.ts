@@ -551,10 +551,13 @@ export const vendors: Record<string, Vendor> = {
   },
   "peptides-gg": {
     name: "Peptides.gg",
-    code: "PROF15",
+    code: "PROFPEPTIDE",
     discount: "15% off",
     region: "US",
-    url: "https://peptides.gg/?coupon=prof15",
+    // Code rebound PROF15 -> PROFPEPTIDE (vendor-confirmed to Mark, 2026-08-27). Same class as the
+    // Royal/Ignite rebind (a147382f) — the drift risk is hardcoded FAQ literals on the coupon page
+    // and the price-data doc, not just this entry.
+    url: "https://peptides.gg/?coupon=profpeptide",
     detailPage: "/coupons/peptides-gg",
     facts: { coa: "per-batch", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
     blockNote: "Per-batch COAs",

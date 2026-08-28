@@ -23,7 +23,7 @@ export default function PeptidesGgCouponPage() {
       <CouponBreadcrumb slug="peptides-gg" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">
- <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptides.gg Discount Code: PROF15 &mdash; Save {discountPct}%</h1>
+ <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Peptides.gg Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
  </div>
  <CouponCodeCard slug="peptides-gg" className="mb-8" />
 
@@ -131,11 +131,11 @@ export default function PeptidesGgCouponPage() {
  />
  <FAQItem
  q="Does Peptides.gg have a coupon code?"
- a={`Yes. Use code PROF15 at checkout to save ${discountPct}% on any Peptides.gg order. This code is verified and maintained by Prof. Peptide.`}
+ a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Peptides.gg order. This code is verified and maintained by Prof. Peptide.`}
  />
  <FAQItem
  q="How do I use the Peptides.gg discount code?"
- a={`Add your items to cart at peptides.gg, proceed to checkout, and enter PROF15 in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
+ a={`Add your items to cart at peptides.gg, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
  />
  <FAQItem
  q="What testing does Peptides.gg conduct?"

@@ -282,9 +282,9 @@
   {
     "slug": "peptides-gg",
     "name": "Peptides.gg",
-    "code": "PROF15",
+    "code": "PROFPEPTIDE",
     "discount": "15% off",
-    "url": "https://peptides.gg/?coupon=prof15"
+    "url": "https://peptides.gg/?coupon=profpeptide"
   },
   {
     "slug": "peptidology",

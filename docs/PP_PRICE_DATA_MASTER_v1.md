@@ -1116,7 +1116,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 
 ## VENDOR: Peptides.gg
-- **slug:** peptides-gg | **code:** PROF15 | **discount:** 15% off | **url:** peptides.gg
+- **slug:** peptides-gg | **code:** PROFPEPTIDE | **discount:** 15% off | **url:** peptides.gg
 - **traffic:** (not pulled) | **pulled:** August 16 2026
 - **sale posture:** No sale.
 
