@@ -17,7 +17,7 @@ export default function OrderMyPeptidesCouponPage() {
       <CouponBreadcrumb slug="order-my-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Order My Peptides Discount Code: profpeptide &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Order My Peptides Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
       <CouponCodeCard slug="order-my-peptides" className="mb-8" />
 
@@ -62,11 +62,11 @@ export default function OrderMyPeptidesCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="Does Order My Peptides have a coupon code?" a={`Yes. Use code profpeptide at checkout to save ${discountPct}% on your Order My Peptides order. The code is lowercase, exactly as issued, and is verified and maintained by Prof. Peptide.`} />
-            <FAQItem q="How do I use the Order My Peptides discount code?" a={`Add your items to cart at ordermypeptides.com, proceed to checkout, and enter profpeptide (lowercase) in the coupon field. The ${discountPct}% discount is applied to your order total.`} />
+            <FAQItem q="Does Order My Peptides have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your Order My Peptides order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="How do I use the Order My Peptides discount code?" a={`Add your items to cart at ordermypeptides.com, proceed to checkout, and enter PROFPEPTIDE in the coupon field. The ${discountPct}% discount is applied to your order total.`} />
             <FAQItem q="How is Order My Peptides tested?" a="Order My Peptides publishes a per-batch Certificate of Analysis library, with testing by Accumark Labs. Each certificate reports identity, measured quantity, and purity by HPLC with UV/DAD detection, plus a chromatogram and mass-spectrum trace, and is tied to a lot code. Each cert carries a QR and sample code that verify on the lab's own site (accumarklabs.com). Prof. Peptide opened the Semaglutide 5mg (99.56%) and Tirzepatide 10mg (99.75%) certificates — both Accumark, both lab-verifiable." />
             <FAQItem q="What is 'Reta GGG'?" a="Reta GGG is Order My Peptides' store name for retatrutide, the triple-agonist (GGG) GLP compound. The compound behind the coded name is identified on that product's Certificate of Analysis. Tirzepatide and Semaglutide are listed under their own names." />
-            <FAQItem q="Does Order My Peptides offer free shipping?" a="The store advertises free shipping on orders over $150 and same-day dispatch on orders over $200. These are shipping terms set by the vendor and are separate from the profpeptide coupon — they do not change or stack onto the discount." />
+            <FAQItem q="Does Order My Peptides offer free shipping?" a="The store advertises free shipping on orders over $150 and same-day dispatch on orders over $200. These are shipping terms set by the vendor and are separate from the PROFPEPTIDE coupon — they do not change or stack onto the discount." />
             <FAQItem q="Who operates Order My Peptides?" a="Order My Peptides (ordermypeptides.com) is operated by New Life Health Labs LLC, a US supplier. All products are sold for laboratory and research use only." />
           </div>
         </div>

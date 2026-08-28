@@ -102,11 +102,12 @@ export const vendors: Record<string, Vendor> = {
   },
   "athena-peptides": {
     name: "Athena Peptides",
-    code: "profpeptide",
+    code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
-    // GoAffPro program (accepted PP). ?ref=PROFPEPTIDE per Mark's portal read; coupon code
-    // 'profpeptide' (lowercase, exactly as issued). Customer discount is 10% — the 15% figure is the
+    // GoAffPro program (accepted PP). ?ref=PROFPEPTIDE per Mark's portal read; coupon code issued
+    // lowercase ('profpeptide') but rendered uppercase for roster consistency (Mark's call, 2026-08-27
+    // — codes are case-insensitive at checkout). Customer discount is 10% — the 15% figure is the
     // affiliate COMMISSION, never the card/H1. COAs live per-product-page (their architecture, no
     // central library): 2025 certs = Freedom Diagnostics (FreedomDiagnosticsTesting.com), 2026 certs
     // = Bioviridian Inc (Bryan/College Station TX, bioviridians.com/coa-search.html — the current lab).
@@ -120,11 +121,12 @@ export const vendors: Record<string, Vendor> = {
   },
   "order-my-peptides": {
     name: "Order My Peptides",
-    code: "profpeptide",
+    code: "PROFPEPTIDE",
     discount: "15% off",
     region: "US",
-    // GoAffPro program (accepted PP). Code-priority attribution — 'profpeptide' (lowercase, exactly
-    // as issued) credits the sale; plain domain used. Operated by New Life Health Labs LLC. Per-batch
+    // GoAffPro program (accepted PP). Code-priority attribution — issued lowercase ('profpeptide')
+    // but rendered uppercase for roster consistency (Mark's call, 2026-08-27 — case-insensitive at
+    // checkout); plain domain used. Operated by New Life Health Labs LLC. Per-batch
     // COA library at /coas tested by Accumark Labs (HPLC-DAD identity/quantity/purity); each cert
     // carries a QR + sample code that resolves on the lab's own site (accumarklabs.com).
     url: "https://ordermypeptides.com/",

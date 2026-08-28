@@ -65,7 +65,7 @@
   {
     "slug": "athena-peptides",
     "name": "Athena Peptides",
-    "code": "profpeptide",
+    "code": "PROFPEPTIDE",
     "discount": "10% off",
     "url": "https://athenapeptides.com/?ref=PROFPEPTIDE"
   },
@@ -247,7 +247,7 @@
   {
     "slug": "order-my-peptides",
     "name": "Order My Peptides",
-    "code": "profpeptide",
+    "code": "PROFPEPTIDE",
     "discount": "15% off",
     "url": "https://ordermypeptides.com/"
   },

@@ -17,7 +17,7 @@ export default function AthenaPeptidesCouponPage() {
       <CouponBreadcrumb slug="athena-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Athena Peptides Discount Code: profpeptide &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Athena Peptides Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
       <CouponCodeCard slug="athena-peptides" className="mb-8" />
 
@@ -68,8 +68,8 @@ export default function AthenaPeptidesCouponPage() {
         <div>
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
-            <FAQItem q="Does Athena Peptides have a coupon code?" a={`Yes. Use code profpeptide at checkout to save ${discountPct}% on your Athena Peptides order. The code is lowercase, exactly as issued, and is verified and maintained by Prof. Peptide.`} />
-            <FAQItem q="How do I use the Athena Peptides discount code?" a={`Add your items to cart at athenapeptides.com, proceed to checkout, and enter profpeptide (lowercase) in the coupon field. The ${discountPct}% discount is applied to your order total.`} />
+            <FAQItem q="Does Athena Peptides have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your Athena Peptides order. This code is verified and maintained by Prof. Peptide.`} />
+            <FAQItem q="How do I use the Athena Peptides discount code?" a={`Add your items to cart at athenapeptides.com, proceed to checkout, and enter PROFPEPTIDE in the coupon field. The ${discountPct}% discount is applied to your order total.`} />
             <FAQItem q="How does Athena Peptides test its peptides?" a="Athena posts a Certificate of Analysis on each product's own page, tested at two independent US labs — Freedom Diagnostics on its 2025 certificates and Bioviridian Inc (Bryan/College Station, TX) on its current 2026 certificates. The panel is purity by RP-HPLC (214nm), identity by mass spectrometry (LC-MS/MS or MALDI-MS), and content by HPLC quantitation, and each certificate verifies on the testing lab's own portal (Bioviridian at bioviridians.com/coa-search.html). Prof. Peptide opened four certificates across both labs; purities ran 98.55–99.8%." />
             <FAQItem q="What are GLP-1 S, GLP-2 T, and GLP-3 R?" a="Athena lists its GLP metabolic peptides under coded names. The compound behind each is identified on that product's Certificate of Analysis: GLP-2 T tests as Tirzepatide (Prof. Peptide confirmed this on a Bioviridian certificate), and by the same convention GLP-1 S is Semaglutide and GLP-3 R is Retatrutide. The line runs 10/20/30/40 mg." />
             <FAQItem q="Why do Athena's certificates say 'Lot Number: NA'?" a="Athena's certificates list 'Lot Number: NA' rather than a formal lot number. Traceability instead runs through a per-certificate QC/search code that ties the vial label to the chromatogram header and to the lab's verification portal — so a vial can be matched to its certificate by that code, though not by a conventional lot number." />
