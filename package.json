@@ -12,6 +12,8 @@
     "check:chat-corpus": "node scripts/check-chat-corpus.mjs",
     "gen:search-index": "node scripts/gen-search-index.mjs",
     "gen:chat-corpus": "node scripts/gen-chat-corpus.mjs",
+    "test:chat-format": "node scripts/test-chat-format.mjs",
+    "test:chat-retrieval": "node scripts/test-chat-retrieval.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:grids": "node scripts/check-grids.mjs",
     "check:attribution": "node scripts/check-attribution.mjs",

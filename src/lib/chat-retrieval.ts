@@ -53,6 +53,17 @@ interface IndexedPage {
   /** The title's leading entity-name segment (before " — "/" | ", where every profile/vendor
    *  page's own naming convention puts the compound/vendor name), normalized for exact comparison. */
   normalizedTitleHead: string;
+  /** Deduped token lists for the subset-match test. Arrays, not Sets: this project's tsconfig sets
+   *  no `target` (so TS defaults to ES5) and doesn't enable downlevelIteration, which makes
+   *  `for…of` over a Set a compile error. Arrays iterate at any target — and changing the global
+   *  tsconfig to work around a scoped retrieval helper would be the wrong blast radius. */
+  slugTokenList: string[];
+  titleHeadTokenList: string[];
+}
+
+/** Dedupe without Set iteration (see the note above). */
+function uniq(tokens: string[]): string[] {
+  return tokens.filter((t, i, arr) => arr.indexOf(t) === i);
 }
 
 let indexed: IndexedPage[] | null = null;
@@ -71,6 +82,8 @@ function getIndex(): IndexedPage[] {
       bodyTokenCounts,
       normalizedSlug: normalize(slug.replace(/-/g, " ")),
       normalizedTitleHead: normalize(titleHead),
+      slugTokenList: uniq(tokenize(slug)),
+      titleHeadTokenList: uniq(tokenize(titleHead)),
     };
   });
   return indexed;
@@ -81,14 +94,39 @@ export interface RetrievalHit {
   score: number;
 }
 
-// Score = weighted token overlap, PLUS a decisive bonus when the query normalizes to essentially
-// the page's own entity name (its slug, or the leading segment of its title before the " — "/" | "
-// subtitle divider every profile/vendor page uses). That bonus is what separates a compound's own
-// canonical page from comparison pages that merely mention it in passing — token-overlap alone
-// scores those the same (both contain "bpc-157" once in the title), and on a tie a comparison page
-// can out-rank the real profile purely from alphabetical corpus order. Verified against a live
-// regression: "BPC-157" previously surfaced 3 /compare/* pages and never the actual profile.
+// Score = weighted token overlap, PLUS an entity-match bonus in one of two exclusive tiers. The
+// bonus is what separates a compound's own canonical page from pages that merely CONTAIN its name —
+// comparison pages, and blend pages whose own name happens to include it. Token overlap alone can't
+// tell those apart (all of them carry "bpc-157" in title and slug), and ties then break on
+// alphabetical corpus order, which is arbitrary.
+//
+//   EXACT  — the query IS the entity name ("BPC-157", "KLOW"). Verified against a live regression:
+//            "BPC-157" previously surfaced 3 /compare/* pages and never the actual profile.
+//   SUBSET — the query CONTAINS the entity's complete name plus other words ("what is BPC-157 used
+//            for in research"). This is the generalization of EXACT to natural-language questions,
+//            which never normalize to a bare entity name. It discriminates correctly in BOTH
+//            directions, which is the point:
+//              · "what is BPC-157 used for in research" contains {bpc,157} — the canonical page's
+//                whole name — but NOT {semaglutide,bpc,157}, so only the canonical page is lifted.
+//                (Blends were previously winning this query outright: their titles carry the word
+//                "Research" — "Semaglutide + BPC-157 — ...Research Stack" — banking a title-token
+//                hit the real profile's title can't match. Confirmed live: the model answered with
+//                "I couldn't retrieve a dedicated standalone BPC-157 page".)
+//              · "semaglutide BPC-157 blend" contains the BLEND's whole name too, so the blend also
+//                qualifies — and wins on base score, since it matches more title/slug tokens. A fix
+//                that made single-entity pages always beat blends would just be the same bug facing
+//                the other way.
 const EXACT_ENTITY_BONUS = 40;
+const SUBSET_ENTITY_BONUS = 24;
+// "Short entity name" guard: only a compact name earns the subset bonus. A long title whose many
+// tokens all happen to appear in a long query shouldn't collect the same decisive lift.
+const MAX_ENTITY_TOKENS_FOR_SUBSET = 4;
+
+/** True when every token of a page's entity name appears in the query (and the name is short). */
+function entityCoveredByQuery(entityTokens: string[], queryTokens: Set<string>): boolean {
+  if (entityTokens.length === 0 || entityTokens.length > MAX_ENTITY_TOKENS_FOR_SUBSET) return false;
+  return entityTokens.every((t) => queryTokens.has(t));
+}
 
 export function searchCorpus(query: string, limit = 3): RetrievalHit[] {
   const qTokens = tokenize(query);
@@ -96,6 +134,7 @@ export function searchCorpus(query: string, limit = 3): RetrievalHit[] {
   const idx = getIndex();
   const scored: RetrievalHit[] = [];
   const qNormalized = normalize(query);
+  const qTokenSet = new Set(qTokens);
 
   for (const entry of idx) {
     let score = 0;
@@ -105,8 +144,17 @@ export function searchCorpus(query: string, limit = 3): RetrievalHit[] {
       const bodyHits = entry.bodyTokenCounts.get(t);
       if (bodyHits) score += Math.min(bodyHits, 5); // cap so one very common word can't dominate
     }
-    if (qNormalized.length > 2 && (qNormalized === entry.normalizedSlug || qNormalized === entry.normalizedTitleHead)) {
+    // Exclusive tiers — a page earns at most one, so an exact match can't also collect the subset
+    // bonus on top (they'd both be true, since an exact match is trivially a subset of itself).
+    const isExact =
+      qNormalized.length > 2 && (qNormalized === entry.normalizedSlug || qNormalized === entry.normalizedTitleHead);
+    if (isExact) {
       score += EXACT_ENTITY_BONUS;
+    } else if (
+      entityCoveredByQuery(entry.slugTokenList, qTokenSet) ||
+      entityCoveredByQuery(entry.titleHeadTokenList, qTokenSet)
+    ) {
+      score += SUBSET_ENTITY_BONUS;
     }
     if (score > 0) scored.push({ page: entry.page, score });
   }

@@ -10,6 +10,7 @@
 //      belt-and-suspenders against the model reciting a code from pretraining or hallucinating one.
 import { vendors } from "@/data/vendors";
 import { generatedChatCorpus } from "./chat-corpus.generated";
+import { normalizeDiscountFormatting } from "./chat-format";
 
 // ── few-shot dosing examples, sourced from the LIVE corpus at import time (not hand-authored) ──
 // Per Phase 1 §3a: "the few-shot examples in that instruction should be pulled from the live
@@ -132,6 +133,12 @@ export function substitutePlaceholdersAndFilter(rawText: string): SubstitutionRe
     if (kind.toUpperCase() === "CODE") return v.code;
     return v.discount;
   });
+
+  // Unconditional code-level guarantee, not a hope the model followed the instruction above.
+  // Live production produced BOTH "10% off%" and "20% off off" despite the system prompt saying
+  // not to — a system-prompt instruction is a request, the model doesn't always comply. This runs
+  // every time, regardless.
+  text = normalizeDiscountFormatting(text);
 
   return { text, substitutions, strippedResiduals };
 }
