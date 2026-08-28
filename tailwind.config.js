@@ -28,6 +28,22 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
       },
+      // Homepage hero scroll cue: two small downward bounces packed into the first ~8% of a
+      // 10s loop (≈0.8s of motion), then dead still for the rest — catches the eye on load and
+      // once every ~10s without nagging during reading. Paired with motion-reduce:animate-none.
+      keyframes: {
+        "scroll-cue": {
+          "0%": { transform: "translateY(0)" },
+          "2%": { transform: "translateY(6px)" },
+          "4%": { transform: "translateY(0)" },
+          "6%": { transform: "translateY(4px)" },
+          "8%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        "scroll-cue": "scroll-cue 10s ease-out infinite",
+      },
     },
   },
   plugins: [],

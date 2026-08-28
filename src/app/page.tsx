@@ -174,10 +174,11 @@ export default function Home() {
             ))}
           </div>
         </div>
-        {/* Scroll cue — a muted chevron at the hero's bottom edge signalling the stats band below.
-            Gentle opacity pulse only, no text; pointer-events-none so it never intercepts clicks. */}
+        {/* Scroll cue — an accent chevron at the hero's bottom edge signalling the stats band below.
+            Two small downward bounces on load, then still, repeating every ~10s (animate-scroll-cue);
+            no motion under prefers-reduced-motion. No text; pointer-events-none so it never intercepts clicks. */}
         <div className="absolute inset-x-0 bottom-6 flex justify-center pointer-events-none" aria-hidden="true">
-          <svg className="w-6 h-6 text-gray-300 dark:text-slate-600 animate-pulse" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+          <svg className="w-7 h-7 text-brand/80 animate-scroll-cue motion-reduce:animate-none" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </div>
