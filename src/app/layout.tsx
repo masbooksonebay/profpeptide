@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Disclaimer from "@/components/Disclaimer";
 import ThemeProvider from "@/components/ThemeProvider";
+import ChatWidget from "@/components/ChatWidget";
 import { appPeptideFloor } from "@/data/peptideCategories";
 import { supplementCount } from "@/data/supplements";
 
@@ -70,6 +71,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Disclaimer />
           <Footer />
+          <ChatWidget />
         </ThemeProvider>
       </body>
     </html>
