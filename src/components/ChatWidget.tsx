@@ -82,6 +82,11 @@ export default function ChatWidget() {
   const [streaming, setStreaming] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [phase, setPhase] = useState<ChatPhase>("thinking");
+  // Mobile = below the panel's own sm: boundary. Everything modal-related below is gated on this;
+  // desktop keeps a floating panel over a live, scrollable page and must not regress.
+  const [isMobile, setIsMobile] = useState(false);
+  // Visual-viewport geometry, mobile+open only. null = don't override layout.
+  const [vv, setVv] = useState<{ height: number; top: number } | null>(null);
   const searchLabelAtRef = useRef<number>(0);
   const phaseTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -224,6 +229,97 @@ export default function ChatWidget() {
     }
   }
 
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 639.98px)");
+    const apply = () => setIsMobile(mq.matches);
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
+  }, []);
+
+  // ---- background scroll lock (mobile, while open) ----------------------------------------
+  // TECHNIQUE: position:fixed on <body> with a negative top offset, NOT `overflow: hidden`.
+  // overflow:hidden alone does not stop iOS Safari — the page still rubber-bands and momentum
+  // scrolling carries through, which is one of the reported symptoms. position:fixed genuinely
+  // freezes it.
+  //
+  // The known cost of position:fixed is that it collapses the scroll offset to 0, so the page
+  // jumps to the top on open and stays there on close. That is avoided here by capturing scrollY
+  // BEFORE locking, holding the page in place visually with `top: -scrollY`, and restoring the
+  // exact offset in the cleanup. Net visible movement: none, in either direction.
+  //
+  // Cleanup restores the previous inline values rather than clearing them, so this cannot stomp a
+  // style some other component set on <body>.
+  useEffect(() => {
+    if (state !== "active" || !isMobile) return;
+    const body = document.body;
+    const scrollY = window.scrollY;
+    const prev = {
+      position: body.style.position,
+      top: body.style.top,
+      left: body.style.left,
+      right: body.style.right,
+      width: body.style.width,
+      overflow: body.style.overflow,
+    };
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.left = "0";
+    body.style.right = "0";
+    body.style.width = "100%";
+    body.style.overflow = "hidden";
+    return () => {
+      body.style.position = prev.position;
+      body.style.top = prev.top;
+      body.style.left = prev.left;
+      body.style.right = prev.right;
+      body.style.width = prev.width;
+      body.style.overflow = prev.overflow;
+      // `behavior: "instant"` is REQUIRED, not a stylistic choice: globals.css sets
+      // `html { scroll-behavior: smooth }` site-wide, so a plain scrollTo(0, y) ANIMATES the
+      // restore. The user would watch the page glide back to where they were — the visible jump
+      // this whole approach exists to avoid — and the position is still wrong on the next frame.
+      // Measured: with the default behavior the restore landed on 0 instead of 900; with "instant"
+      // it lands exactly. Verified outside React too, so it is the CSS, not an effect-timing bug.
+      window.scrollTo({ top: scrollY, behavior: "instant" });
+    };
+  }, [state, isMobile]);
+
+  // ---- keyboard: anchor the panel to the VISUAL viewport (mobile, while open) --------------
+  // iOS Safari does not shrink the layout viewport when the software keyboard appears. A panel
+  // sized with layout units (bottom-0, 100vh, 100svh) therefore keeps its full pre-keyboard height,
+  // and its input row ends up underneath the keyboard — invisible and untappable. window.
+  // visualViewport is the only thing that reports the real visible rectangle.
+  //
+  // Driving BOTH height and top matters: when iOS scrolls the layout viewport to reveal a focused
+  // input it sets visualViewport.offsetTop, and a position:fixed element that ignores that appears
+  // to jump. Tracking `scroll` as well as `resize` is what keeps the panel still while the keyboard
+  // animates in. Listeners are torn down by this effect's cleanup, which runs on close (the panel
+  // is conditionally rendered) and on unmount.
+  useEffect(() => {
+    if (state !== "active" || !isMobile) {
+      setVv(null);
+      return;
+    }
+    const v = window.visualViewport;
+    if (!v) return; // no support: fall back to the CSS layout, which is the pre-existing behaviour
+    const update = () => setVv({ height: v.height, top: v.offsetTop });
+    update();
+    v.addEventListener("resize", update);
+    v.addEventListener("scroll", update);
+    // window.resize as well as the visualViewport events, deliberately. Not every engine fires a
+    // visualViewport `resize` for every geometry change — caught in testing, where shrinking the
+    // viewport left the panel pinned at its stale opening height (844px against a 508px visible
+    // area) and put the input row back under the fold, i.e. the exact bug this effect exists to
+    // prevent. Both sources call the same idempotent update, so a doubled event costs nothing.
+    window.addEventListener("resize", update);
+    return () => {
+      v.removeEventListener("resize", update);
+      v.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+    };
+  }, [state, isMobile]);
+
   // Single close path for every route (Esc, the mobile X, the launcher). Focus returns to the
   // launcher so a keyboard user lands on the control that reopens the panel, rather than being
   // dropped at the top of the document with no idea where they are.
@@ -292,7 +388,28 @@ export default function ChatWidget() {
           on tall viewports; a shorter viewport just shrinks the implied height, never overlaps either
           edge. The mobile INPUT bar gets its own safe-area padding below. */}
       {state === "active" && (
-        <div className="fixed z-40 top-16 inset-x-0 bottom-0 sm:inset-x-auto sm:top-[80px] md:top-[88px] sm:bottom-24 sm:right-6 sm:w-[380px] sm:max-h-[600px] flex flex-col bg-white dark:bg-[#1e293b] sm:border sm:border-[#D9DEE4] dark:sm:border-slate-700 sm:rounded-xl shadow-[0_8px_32px_-4px_rgba(16,24,40,0.25)]">
+        /* MOBILE = TRUE MODAL. `inset-0` (was top-16) so the panel owns the entire viewport: the
+           64px header strip it used to leave exposed was fully interactive — the site logo LINK,
+           the hamburger and search all hit-tested outside the panel, so a stray tap could navigate
+           away and take the conversation with it. Covering the viewport with an opaque surface is
+           what makes "nothing behind is reachable" true, rather than a separate backdrop element.
+
+           z-[60] on mobile is load-bearing, not a bump for luck: Header.tsx is `sticky top-0 z-50`,
+           so at z-40 the header painted ON TOP of a panel that geometrically covered it and stayed
+           hit-testable — inset-0 alone left the exact bug it was meant to fix. sm:z-40 restores the
+           original stacking on desktop, where the panel sits below the header and never overlaps it.
+
+           The inline style (mobile only) anchors the panel to the VISUAL viewport so the keyboard
+           can't push the input row out of sight — see the visualViewport effect above. It sets top
+           and height and neutralises the CSS `bottom`, because bottom would otherwise re-anchor the
+           element to the un-shrunk layout viewport and fight the height.
+
+           DESKTOP (sm+) is untouched: still a bounded floating card at the launcher's corner, over a
+           page that stays scrollable and interactive. Every modal behaviour is gated on isMobile. */
+        <div
+          style={isMobile && vv ? { top: vv.top, height: vv.height, bottom: "auto" } : undefined}
+          className="fixed z-[60] sm:z-40 inset-0 sm:inset-x-auto sm:inset-y-auto sm:top-[80px] md:top-[88px] sm:bottom-24 sm:right-6 sm:w-[380px] sm:max-h-[600px] flex flex-col bg-white dark:bg-[#1e293b] sm:border sm:border-[#D9DEE4] dark:sm:border-slate-700 sm:rounded-xl shadow-[0_8px_32px_-4px_rgba(16,24,40,0.25)]"
+        >
           <PanelChrome
             onClose={closePanel}
             messages={messages}
@@ -352,7 +469,10 @@ function PanelChrome({
   }, []);
   return (
     <div className="flex flex-col h-full">
-      <div className="flex items-center justify-between px-4 py-3 border-b border-[#D9DEE4] dark:border-slate-700">
+      {/* Mobile safe-area padding on TOP: now that the panel is inset-0 it reaches the status bar /
+          notch, which the old top-16 offset used to keep it clear of. sm: resets to the plain py-3
+          because the desktop card floats below the header and never meets a system inset. */}
+      <div className="flex items-center justify-between px-4 py-3 pt-[calc(0.75rem+env(safe-area-inset-top))] sm:pt-3 border-b border-[#D9DEE4] dark:border-slate-700">
         <div>
           <div className="font-semibold text-[#16181B] dark:text-slate-100 text-sm">Prof. Peptide</div>
           <div className="text-xs text-gray-500 dark:text-slate-400">Ask about peptides, vendors, and more...</div>
@@ -372,7 +492,9 @@ function PanelChrome({
         </button>
       </div>
 
-      <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
+      {/* overscroll-contain stops a flick at the top/bottom of the message list from chaining into
+          the page behind it — the other half of "the background does not move". */}
+      <div ref={scrollRef} className="flex-1 overflow-y-auto overscroll-contain px-4 py-4 space-y-4">
         {messages.length === 0 && (
           <div className="space-y-2">
             <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">Try asking:</p>
