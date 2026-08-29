@@ -292,8 +292,13 @@ function PanelChrome({
           <p className="text-2xl font-semibold tracking-tight text-brand mb-6">
             Prof. Peptide AI
           </p>
-          <button type="button" onClick={onStart} className="btn-primary">
-            Start Conversation
+          {/* text-base overrides btn-primary's text-sm (utilities layer wins over the
+              components layer) — a one-step bump so the label doesn't read small next to
+              the text-2xl title above it. Local to this button; the shared .btn-primary
+              stays text-sm everywhere else. Padding is unchanged: px-6 py-3 still clears
+              a 16px label comfortably. */}
+          <button type="button" onClick={onStart} className="btn-primary text-base">
+            Start chat
           </button>
         </div>
       ) : (
