@@ -16,6 +16,7 @@
 // scrolls freely under/past the corner the launcher occupies rather than being permanently obscured.
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { ArrowUp } from "lucide-react";
 import { linkifyPpUrls } from "@/lib/chat-linkify";
 
 type WidgetState = "collapsed" | "preconversation" | "active";
@@ -339,6 +340,9 @@ function PanelChrome({
   scrollRef: React.RefObject<HTMLDivElement>;
   onSend: (text: string) => void;
 }) {
+  // Empty input or an in-flight answer means there is nothing to send. Drives BOTH the disabled
+  // attribute and the fill colour, so the two can never disagree about the state.
+  const canSend = !streaming && input.trim().length > 0;
   return (
     <div className="flex flex-col h-full">
       <div className="flex items-center justify-between px-4 py-3 border-b border-[#D9DEE4] dark:border-slate-700">
@@ -431,28 +435,56 @@ function PanelChrome({
             {error && <p className="text-xs text-red-600 dark:text-red-400">{error}</p>}
           </div>
 
+          {/* The send control lives INSIDE the input, not beside it.
+              It used to be `flex gap-2` with a text "Send" button as a second item, which overflowed
+              the panel on a ~380px screen and pushed the button off-screen where it could not be
+              tapped. The cause was structural, not a width to tune: a flex item's default
+              `min-width: auto` means an <input> refuses to shrink below its intrinsic size, so
+              `flex-1` could not save the row no matter what widths were set. One element in the row
+              instead of two removes the failure mode entirely rather than tuning around it.
+
+              Same implementation on desktop — there is no reason for them to diverge, and a single
+              code path can't drift between breakpoints. */}
           <form
             onSubmit={(e) => {
               e.preventDefault();
               onSend(input);
             }}
-            className="p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:pb-3 border-t border-[#D9DEE4] dark:border-slate-700 flex gap-2"
+            className="p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:pb-3 border-t border-[#D9DEE4] dark:border-slate-700"
           >
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask a question…"
-              disabled={streaming}
-              className="flex-1 text-sm px-3 py-2 rounded-md border border-[#D9DEE4] dark:border-slate-700 bg-white dark:bg-[#1e293b] text-gray-800 dark:text-slate-200 focus:outline-none focus:border-brand disabled:opacity-60"
-            />
-            <button
-              type="submit"
-              disabled={streaming || !input.trim()}
-              className="btn-primary px-4 disabled:opacity-50"
-            >
-              Send
-            </button>
+            <div className="relative">
+              <input
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                placeholder="Ask a question…"
+                disabled={streaming}
+                /* pr-11 reserves exactly the 44px the button occupies, so typed text can never run
+                   underneath the arrow. */
+                className="w-full text-sm pl-3 pr-11 py-2 rounded-md border border-[#D9DEE4] dark:border-slate-700 bg-white dark:bg-[#1e293b] text-gray-800 dark:text-slate-200 focus:outline-none focus:border-brand disabled:opacity-60"
+              />
+              <button
+                type="submit"
+                disabled={!canSend}
+                aria-label="Send message"
+                /* The BUTTON is 44x44 (the platform minimum tap target); the visible circle inside
+                   it is 32px, matching the iOS app's sendBtn (32x32, borderRadius 16). The hit area
+                   deliberately extends past the visible circle — that padding is the point. */
+                className="absolute right-0 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center disabled:cursor-default"
+              >
+                <span
+                  /* Muted grey when there is nothing to send, brand accent once there is, with a
+                     quiet colour fade between. motion-reduce drops the fade to an instant swap —
+                     the colour still conveys the state, so nothing is lost without the animation. */
+                  className={
+                    "w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-200 motion-reduce:transition-none " +
+                    (canSend ? "bg-brand" : "bg-gray-300 dark:bg-slate-600")
+                  }
+                >
+                  <ArrowUp className="w-[18px] h-[18px] text-white" strokeWidth={2.5} aria-hidden="true" />
+                </span>
+              </button>
+            </div>
           </form>
         </>
       )}
