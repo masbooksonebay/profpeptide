@@ -21,6 +21,21 @@ export interface NewsArticle {
 // article can never ship without its self-canonical <link rel="canonical">.
 export const articles: NewsArticle[] = [
   {
+    title: "Lilly Sues Six Retatrutide Sellers \u2014 and the Legal Architecture Is the Story",
+    slug: "lilly-retatrutide-lawsuits-ruo-sellers-2026",
+    peptides: ["retatrutide"],
+    date: "August 29, 2026",
+    excerpt:
+      "Eli Lilly filed six federal lawsuits on August 12, 2026 over retatrutide sales \u2014 four research-use-only peptide sellers, a med spa, and a compounding pharmacy. The filings are allegations and nothing has been decided, but the pleading choices are instructive: no patent counts, no FDCA counts, and eight states\u2019 unfair-competition and consumer-protection statutes instead, plus one Lanham Act claim. Why that architecture, what it says about the limits of an \u201Cresearch use only\u201D label, and why an investigational molecule with no shortage pathway makes these suits different in kind from the 2024\u201325 compounding fights.",
+  },
+  {
+    title: "Louisiana Wrote Peptides Into Statute \u2014 and What the Legislature Cut Is the Story",
+    slug: "louisiana-act-374-state-peptide-compounding-2026",
+    date: "August 29, 2026",
+    excerpt:
+      "Act 374 took effect August 1, 2026, the first state statute we can identify that legislates on peptides by name. The enacted R.S. 37:23.5 is narrower than the bill introduced: the Category 2 conditions, the FDA prohibited-list condition, and the API-sourcing requirement were all amended out before passage, leaving a plain federal-compliance standard. What survived restrains state licensing boards rather than authorizing anything \u2014 which is why it is better read as a state-level overlay on the 503A lane than as a fourth lane.",
+  },
+  {
     title: "The 503B Exclusion of Semaglutide, Tirzepatide, and Liraglutide — and the Three Lanes of Peptide Access",
     slug: "glp1-compounding-503a-503b-three-lanes-2026",
     peptides: ["semaglutide", "tirzepatide"],
