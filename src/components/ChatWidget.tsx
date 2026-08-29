@@ -15,11 +15,15 @@
 // existing control. Inline page content (Shop buttons, price-grid controls) is never fixed, so it
 // scrolls freely under/past the corner the launcher occupies rather than being permanently obscured.
 import { useCallback, useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { ArrowUp } from "lucide-react";
 import { linkifyPpUrls } from "@/lib/chat-linkify";
 
-type WidgetState = "collapsed" | "preconversation" | "active";
+// Two states only. There was a third, "preconversation" — a splash card with the logo, a
+// "Prof. Peptide AI" title and a "Start chat" button — sitting between the launcher and the
+// conversation. It was removed: it cost a tap to reach the thing the user already asked for by
+// clicking the launcher, and the seed prompts do its job better from inside the empty message
+// area, where they are one tap from an actual answer instead of two.
+type WidgetState = "collapsed" | "active";
 
 /** What the panel tells the user it's doing while they wait. "thinking" is the client-side default
  *  from the moment they hit send; "searching"/"generating" come from the route's phase events. */
@@ -230,14 +234,11 @@ export default function ChatWidget() {
 
   // The launcher is a true toggle: it stays mounted whether the panel is open or closed, and
   // clicking it while open collapses the panel (on mobile, the header's X does the same — the
-  // full-screen panel covers the launcher there). Reopening returns to the conversation if one is
-  // already underway, rather than back to the splash.
+  // full-screen panel covers the launcher there). Opening always lands on the conversation —
+  // an existing one if there is one, an empty one with the seed prompts if there isn't.
   function toggleChat() {
-    if (state === "collapsed") {
-      setState(messages.length > 0 ? "active" : "preconversation");
-    } else {
-      closePanel();
-    }
+    if (state === "collapsed") setState("active");
+    else closePanel();
   }
 
   // Esc dismisses the panel — the conventional keyboard route, and on desktop (where the header X
@@ -259,10 +260,6 @@ export default function ChatWidget() {
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [state, closePanel]);
-
-  function startConversation() {
-    setState("active");
-  }
 
   return (
     <>
@@ -294,12 +291,10 @@ export default function ChatWidget() {
           + 16px gap at each breakpoint, bottom-24 clears the 56px launcher plus margin. max-h caps it
           on tall viewports; a shorter viewport just shrinks the implied height, never overlaps either
           edge. The mobile INPUT bar gets its own safe-area padding below. */}
-      {(state === "preconversation" || state === "active") && (
+      {state === "active" && (
         <div className="fixed z-40 top-16 inset-x-0 bottom-0 sm:inset-x-auto sm:top-[80px] md:top-[88px] sm:bottom-24 sm:right-6 sm:w-[380px] sm:max-h-[600px] flex flex-col bg-white dark:bg-[#1e293b] sm:border sm:border-[#D9DEE4] dark:sm:border-slate-700 sm:rounded-xl shadow-[0_8px_32px_-4px_rgba(16,24,40,0.25)]">
           <PanelChrome
-            state={state}
             onClose={closePanel}
-            onStart={startConversation}
             messages={messages}
             input={input}
             setInput={setInput}
@@ -316,9 +311,7 @@ export default function ChatWidget() {
 }
 
 function PanelChrome({
-  state,
   onClose,
-  onStart,
   messages,
   input,
   setInput,
@@ -328,9 +321,7 @@ function PanelChrome({
   scrollRef,
   onSend,
 }: {
-  state: WidgetState;
   onClose: () => void;
-  onStart: () => void;
   messages: ChatMessage[];
   input: string;
   setInput: (v: string) => void;
@@ -343,6 +334,22 @@ function PanelChrome({
   // Empty input or an in-flight answer means there is nothing to send. Drives BOTH the disabled
   // attribute and the fill colour, so the two can never disagree about the state.
   const canSend = !streaming && input.trim().length > 0;
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Autofocus the input on open — DESKTOP ONLY. This component is mounted by a conditional render
+  // in the parent, so it mounts fresh every time the panel opens and a mount effect is precisely
+  // "on open"; there is no state to watch.
+  //
+  // The breakpoint test is deliberate and matches the panel's own sm: boundary (640px). Focusing an
+  // input on a touch device raises the software keyboard immediately, which would cover the seed
+  // prompts — the one thing a first-time user should see, and the reason they were moved into the
+  // empty message area at all. So mobile opens unfocused and the prompts stay visible; tapping the
+  // input still raises the keyboard, on the user's initiative, exactly as expected.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (!window.matchMedia("(min-width: 640px)").matches) return;
+    inputRef.current?.focus();
+  }, []);
   return (
     <div className="flex flex-col h-full">
       <div className="flex items-center justify-between px-4 py-3 border-b border-[#D9DEE4] dark:border-slate-700">
@@ -365,129 +372,96 @@ function PanelChrome({
         </button>
       </div>
 
-      {state === "preconversation" ? (
-        /* Pre-conversation splash. No panel fill or border: the grey box competed with the content,
-           and the site's own aesthetic is restrained — whitespace and type carry this instead.
-           items-center + justify-center centers the whole block (mark → title → button) as one unit
-           in whatever vertical space the panel has, rather than parking it at an arbitrary height.
-           The button sizes to its content (btn-primary's own px-6 py-3), not edge-to-edge, which
-           reads more deliberate in a centered layout. */
-        <div className="flex-1 flex flex-col items-center justify-center px-6 py-8 text-center">
-          {/* The site's own logo mark, same asset the Header uses. alt="" — decorative here, since
-              the title immediately below already names the product; announcing it twice to a screen
-              reader would be noise. */}
-          <Image
-            src="/logo-glasses.png"
-            alt=""
-            width={56}
-            height={56}
-            className="w-14 h-14 object-contain mb-4"
+      <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
+        {messages.length === 0 && (
+          <div className="space-y-2">
+            <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">Try asking:</p>
+            {SEED_PROMPTS.map((p) => (
+              <button
+                key={p}
+                type="button"
+                onClick={() => onSend(p)}
+                className="block w-full text-left text-sm px-3 py-2 rounded-md border border-[#D9DEE4] dark:border-slate-700 text-gray-600 dark:text-slate-300 hover:border-brand hover:text-brand transition-colors"
+              >
+                {p}
+              </button>
+            ))}
+          </div>
+        )}
+        {messages.map((m, i) => (
+          <div key={i} className={m.role === "user" ? "flex justify-end" : "flex justify-start"}>
+            <div
+              className={
+                m.role === "user"
+                  ? "max-w-[85%] rounded-xl px-3 py-2 bg-brand text-white text-sm whitespace-pre-wrap"
+                  : "max-w-[85%] rounded-xl px-3 py-2 bg-[#F4F6F8] dark:bg-[#0f172a] text-gray-800 dark:text-slate-200 text-sm whitespace-pre-wrap"
+              }
+            >
+              {m.content ? (
+                <LinkifiedText text={m.content} onLight={m.role !== "user"} />
+              ) : streaming && i === messages.length - 1 ? (
+                <PendingIndicator phase={phase} />
+              ) : (
+                ""
+              )}
+            </div>
+          </div>
+        ))}
+        {error && <p className="text-xs text-red-600 dark:text-red-400">{error}</p>}
+      </div>
+
+      {/* The send control lives INSIDE the input, not beside it.
+          It used to be `flex gap-2` with a text "Send" button as a second item, which overflowed
+          the panel on a ~380px screen and pushed the button off-screen where it could not be
+          tapped. The cause was structural, not a width to tune: a flex item's default
+          `min-width: auto` means an <input> refuses to shrink below its intrinsic size, so
+          `flex-1` could not save the row no matter what widths were set. One element in the row
+          instead of two removes the failure mode entirely rather than tuning around it.
+
+          Same implementation on desktop — there is no reason for them to diverge, and a single
+          code path can't drift between breakpoints. */}
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          onSend(input);
+        }}
+        className="p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:pb-3 border-t border-[#D9DEE4] dark:border-slate-700"
+      >
+        <div className="relative">
+          <input
+            ref={inputRef}
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Ask a question…"
+            disabled={streaming}
+            /* pr-11 reserves exactly the 44px the button occupies, so typed text can never run
+               underneath the arrow. */
+            className="w-full text-sm pl-3 pr-11 py-2 rounded-md border border-[#D9DEE4] dark:border-slate-700 bg-white dark:bg-[#1e293b] text-gray-800 dark:text-slate-200 focus:outline-none focus:border-brand disabled:opacity-60"
           />
-          <p className="text-2xl font-semibold tracking-tight text-brand mb-6">
-            Prof. Peptide AI
-          </p>
-          {/* text-base overrides btn-primary's text-sm (utilities layer wins over the
-              components layer) — a one-step bump so the label doesn't read small next to
-              the text-2xl title above it. Local to this button; the shared .btn-primary
-              stays text-sm everywhere else. Padding is unchanged: px-6 py-3 still clears
-              a 16px label comfortably. */}
-          <button type="button" onClick={onStart} className="btn-primary text-base">
-            Start chat
+          <button
+            type="submit"
+            disabled={!canSend}
+            aria-label="Send message"
+            /* The BUTTON is 44x44 (the platform minimum tap target); the visible circle inside
+               it is 32px, matching the iOS app's sendBtn (32x32, borderRadius 16). The hit area
+               deliberately extends past the visible circle — that padding is the point. */
+            className="absolute right-0 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center disabled:cursor-default"
+          >
+            <span
+              /* Muted grey when there is nothing to send, brand accent once there is, with a
+                 quiet colour fade between. motion-reduce drops the fade to an instant swap —
+                 the colour still conveys the state, so nothing is lost without the animation. */
+              className={
+                "w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-200 motion-reduce:transition-none " +
+                (canSend ? "bg-brand" : "bg-gray-300 dark:bg-slate-600")
+              }
+            >
+              <ArrowUp className="w-[18px] h-[18px] text-white" strokeWidth={2.5} aria-hidden="true" />
+            </span>
           </button>
         </div>
-      ) : (
-        <>
-          <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
-            {messages.length === 0 && (
-              <div className="space-y-2">
-                <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">Try asking:</p>
-                {SEED_PROMPTS.map((p) => (
-                  <button
-                    key={p}
-                    type="button"
-                    onClick={() => onSend(p)}
-                    className="block w-full text-left text-sm px-3 py-2 rounded-md border border-[#D9DEE4] dark:border-slate-700 text-gray-600 dark:text-slate-300 hover:border-brand hover:text-brand transition-colors"
-                  >
-                    {p}
-                  </button>
-                ))}
-              </div>
-            )}
-            {messages.map((m, i) => (
-              <div key={i} className={m.role === "user" ? "flex justify-end" : "flex justify-start"}>
-                <div
-                  className={
-                    m.role === "user"
-                      ? "max-w-[85%] rounded-xl px-3 py-2 bg-brand text-white text-sm whitespace-pre-wrap"
-                      : "max-w-[85%] rounded-xl px-3 py-2 bg-[#F4F6F8] dark:bg-[#0f172a] text-gray-800 dark:text-slate-200 text-sm whitespace-pre-wrap"
-                  }
-                >
-                  {m.content ? (
-                    <LinkifiedText text={m.content} onLight={m.role !== "user"} />
-                  ) : streaming && i === messages.length - 1 ? (
-                    <PendingIndicator phase={phase} />
-                  ) : (
-                    ""
-                  )}
-                </div>
-              </div>
-            ))}
-            {error && <p className="text-xs text-red-600 dark:text-red-400">{error}</p>}
-          </div>
-
-          {/* The send control lives INSIDE the input, not beside it.
-              It used to be `flex gap-2` with a text "Send" button as a second item, which overflowed
-              the panel on a ~380px screen and pushed the button off-screen where it could not be
-              tapped. The cause was structural, not a width to tune: a flex item's default
-              `min-width: auto` means an <input> refuses to shrink below its intrinsic size, so
-              `flex-1` could not save the row no matter what widths were set. One element in the row
-              instead of two removes the failure mode entirely rather than tuning around it.
-
-              Same implementation on desktop — there is no reason for them to diverge, and a single
-              code path can't drift between breakpoints. */}
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              onSend(input);
-            }}
-            className="p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:pb-3 border-t border-[#D9DEE4] dark:border-slate-700"
-          >
-            <div className="relative">
-              <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask a question…"
-                disabled={streaming}
-                /* pr-11 reserves exactly the 44px the button occupies, so typed text can never run
-                   underneath the arrow. */
-                className="w-full text-sm pl-3 pr-11 py-2 rounded-md border border-[#D9DEE4] dark:border-slate-700 bg-white dark:bg-[#1e293b] text-gray-800 dark:text-slate-200 focus:outline-none focus:border-brand disabled:opacity-60"
-              />
-              <button
-                type="submit"
-                disabled={!canSend}
-                aria-label="Send message"
-                /* The BUTTON is 44x44 (the platform minimum tap target); the visible circle inside
-                   it is 32px, matching the iOS app's sendBtn (32x32, borderRadius 16). The hit area
-                   deliberately extends past the visible circle — that padding is the point. */
-                className="absolute right-0 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center disabled:cursor-default"
-              >
-                <span
-                  /* Muted grey when there is nothing to send, brand accent once there is, with a
-                     quiet colour fade between. motion-reduce drops the fade to an instant swap —
-                     the colour still conveys the state, so nothing is lost without the animation. */
-                  className={
-                    "w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-200 motion-reduce:transition-none " +
-                    (canSend ? "bg-brand" : "bg-gray-300 dark:bg-slate-600")
-                  }
-                >
-                  <ArrowUp className="w-[18px] h-[18px] text-white" strokeWidth={2.5} aria-hidden="true" />
-                </span>
-              </button>
-            </div>
-          </form>
-        </>
-      )}
+      </form>
 
       {/* Footer: the standing disclosure, plus a quiet attribution line. "Powered by Claude" is
           PLAIN TEXT by design — no Anthropic/Claude logo or mark, no link, and no wording implying

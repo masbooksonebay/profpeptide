@@ -176,8 +176,15 @@ export default function Home() {
         </div>
         {/* Scroll cue — an accent chevron at the hero's bottom edge signalling the stats band below.
             Two small downward bounces on load, then still, repeating every ~10s (animate-scroll-cue);
-            no motion under prefers-reduced-motion. No text; pointer-events-none so it never intercepts clicks. */}
-        <div className="absolute inset-x-0 bottom-6 flex justify-center pointer-events-none" aria-hidden="true">
+            no motion under prefers-reduced-motion. No text; pointer-events-none so it never intercepts clicks.
+            DESKTOP ONLY (hidden sm:flex). The cue is pinned to the SECTION's bottom edge, which only
+            coincides with the viewport's bottom when the content fits inside min-h. On mobile the five
+            CTAs stack one per line and the content outgrows that minimum, so the section bottom — and
+            the cue with it — sits below the fold: measured 174px below at 380x812 and 97px below at
+            390x844. The hero itself is fine; min-h resolved to exactly 100svh-64px at both widths
+            (748px and 780px), so svh is working and this is not a hero-sizing bug. A cue nobody can
+            see is just weight, so it is hidden where it cannot be reached. */}
+        <div className="hidden sm:flex absolute inset-x-0 bottom-6 justify-center pointer-events-none" aria-hidden="true">
           <svg className="w-7 h-7 text-brand/80 animate-scroll-cue motion-reduce:animate-none" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
