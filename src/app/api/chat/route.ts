@@ -32,7 +32,14 @@
 //
 // POST /api/chat
 //   body: { messages: { role: "user"|"assistant", content: string }[] }
-//   200 -> text/event-stream, custom shape: {"type":"delta"|"done"|"error", ...}
+//   200 -> text/event-stream, custom shape: {"type":"delta"|"phase"|"done"|"error", ...}
+//
+// PHASE EVENTS: because the loop below is non-streaming (see above), the user waits through a
+// model call, a corpus search, and a second model call before the first delta appears — 5-10s of
+// nothing. The loop already runs inside this stream with `send` in scope, so telling the client
+// which stage it is in costs one line per stage and no restructuring: {"type":"phase","phase":
+// "searching"|"generating"}. Purely advisory — a client that ignores phase events still gets a
+// correct answer, so this can never break the contract.
 //   errors -> JSON { error: { code, message } }
 export const runtime = "nodejs";
 
@@ -239,6 +246,9 @@ export async function POST(req: Request): Promise<Response> {
             break;
           }
 
+          // Tool use confirmed: the next thing that happens is a corpus search, so say so.
+          send({ type: "phase", phase: "searching" });
+
           messages.push({ role: "assistant", content: response.content });
           const toolResults = toolUses.map((tu) => ({
             type: "tool_result" as const,
@@ -246,6 +256,10 @@ export async function POST(req: Request): Promise<Response> {
             content: runSearchTool(typeof tu.input.query === "string" ? tu.input.query : ""),
           }));
           messages.push({ role: "user", content: toolResults as unknown as AnthropicContentBlock[] });
+
+          // Search done. Whatever happens next — the next loop iteration or the forced call below —
+          // is the model writing the answer.
+          send({ type: "phase", phase: "generating" });
 
           if (round === MAX_TOOL_ROUNDS - 1) {
             // Force a final answer on the next (uncounted) call rather than leaving the user with

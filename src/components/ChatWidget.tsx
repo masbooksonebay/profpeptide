@@ -19,6 +19,27 @@ import Image from "next/image";
 import { linkifyPpUrls } from "@/lib/chat-linkify";
 
 type WidgetState = "collapsed" | "preconversation" | "active";
+
+/** What the panel tells the user it's doing while they wait. "thinking" is the client-side default
+ *  from the moment they hit send; "searching"/"generating" come from the route's phase events. */
+type ChatPhase = "thinking" | "searching" | "generating";
+
+/** No byte from the server for this long and we give up. Without it a silently stalled connection
+ *  (server hung, network black-holed mid-stream) leaves `reader.read()` pending forever, so the
+ *  `finally` that clears `streaming` never runs and the indicator animates until the tab closes.
+ *  Generous, because two Anthropic round-trips plus a corpus search legitimately take 5-10s. */
+const STALL_TIMEOUT_MS = 45_000;
+
+/** Minimum time the "Searching Prof. Peptide…" label stays up.
+ *
+ *  MEASURED, not guessed: the route emits `searching` and `generating` in the SAME millisecond
+ *  (t+1.18s/t+1.18s and t+3.73s/t+3.73s across sampled runs), because retrieval is an in-memory
+ *  scan of an already-loaded corpus — it costs ~0ms. The real wait is the two Anthropic round-trips
+ *  either side of it. Without a floor the search phase would flash for a single frame and no user
+ *  would ever see it, even though a search genuinely ran (one sampled question ran THREE of them).
+ *  This is a floor on a true event's visibility, not a fake stage: the label never appears unless
+ *  the route actually reported a search. */
+const SEARCH_LABEL_MIN_MS = 600;
 type ChatMessage = { role: "user" | "assistant"; content: string };
 
 const SEED_PROMPTS = [
@@ -55,6 +76,9 @@ export default function ChatWidget() {
   const [input, setInput] = useState("");
   const [streaming, setStreaming] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [phase, setPhase] = useState<ChatPhase>("thinking");
+  const searchLabelAtRef = useRef<number>(0);
+  const phaseTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const scrollRef = useRef<HTMLDivElement>(null);
   const abortRef = useRef<AbortController | null>(null);
   const launcherRef = useRef<HTMLButtonElement>(null);
@@ -63,7 +87,26 @@ export default function ChatWidget() {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }, [messages, streaming]);
 
-  useEffect(() => () => abortRef.current?.abort(), []);
+  useEffect(
+    () => () => {
+      abortRef.current?.abort();
+      if (phaseTimerRef.current) clearTimeout(phaseTimerRef.current);
+    },
+    []
+  );
+
+  /** Writes text into the waiting placeholder bubble (or appends, if it has already been cleaned
+   *  up) so an informational reply lands where the user is already looking. */
+  function fillPlaceholder(content: string) {
+    setMessages((m) => {
+      if (m.length > 0 && m[m.length - 1].role === "assistant" && m[m.length - 1].content === "") {
+        const copy = [...m];
+        copy[copy.length - 1] = { role: "assistant", content };
+        return copy;
+      }
+      return [...m, { role: "assistant", content }];
+    });
+  }
 
   async function sendMessage(text: string) {
     const trimmed = text.trim();
@@ -73,9 +116,28 @@ export default function ChatWidget() {
     setMessages(next);
     setInput("");
     setStreaming(true);
+    setPhase("thinking");
+    // The placeholder assistant bubble goes in IMMEDIATELY, not after the response headers: the
+    // indicator renders inside it, so when real text arrives it fills this same bubble and nothing
+    // moves. That's what makes the swap jump-free — it isn't two elements, it's one bubble whose
+    // contents change. Every exit path below removes it again if it never got content.
+    setMessages((m) => [...m, { role: "assistant", content: "" }]);
 
     const controller = new AbortController();
     abortRef.current = controller;
+
+    // Reset on every chunk, so this fires on SILENCE rather than on total duration — a long but
+    // healthy answer is never cut off, while a dead connection is.
+    let stalled = false;
+    let watchdog: ReturnType<typeof setTimeout> | undefined;
+    const armWatchdog = () => {
+      if (watchdog) clearTimeout(watchdog);
+      watchdog = setTimeout(() => {
+        stalled = true;
+        controller.abort();
+      }, STALL_TIMEOUT_MS);
+    };
+    armWatchdog();
 
     try {
       const res = await fetch("/api/chat", {
@@ -86,25 +148,22 @@ export default function ChatWidget() {
       });
 
       if (res.status === 503) {
-        setMessages((m) => [...m, { role: "assistant", content: "Chat isn't set up on this deployment yet." }]);
-        setStreaming(false);
+        fillPlaceholder("Chat isn't set up on this deployment yet.");
         return;
       }
       if (!res.ok || !res.body) {
         const body = await res.json().catch(() => null);
         setError(body?.error?.message ?? "Something went wrong. Try again.");
-        setStreaming(false);
         return;
       }
 
       let assistantText = "";
-      setMessages((m) => [...m, { role: "assistant", content: "" }]);
-
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
       let buffer = "";
       while (true) {
         const { done, value } = await reader.read();
+        armWatchdog();
         if (done) break;
         buffer += decoder.decode(value, { stream: true });
         const events = buffer.split("\n\n");
@@ -121,15 +180,42 @@ export default function ChatWidget() {
               copy[copy.length - 1] = { role: "assistant", content: snapshot };
               return copy;
             });
+          } else if (payload.type === "phase") {
+            // Advisory only — an unrecognised phase is ignored rather than trusted into state.
+            if (payload.phase === "searching") {
+              if (phaseTimerRef.current) clearTimeout(phaseTimerRef.current);
+              searchLabelAtRef.current = Date.now();
+              setPhase("searching");
+            } else if (payload.phase === "generating") {
+              const shown = Date.now() - searchLabelAtRef.current;
+              const wait = Math.max(0, SEARCH_LABEL_MIN_MS - shown);
+              if (phaseTimerRef.current) clearTimeout(phaseTimerRef.current);
+              if (wait === 0) setPhase("generating");
+              else phaseTimerRef.current = setTimeout(() => setPhase("generating"), wait);
+            }
           } else if (payload.type === "error") {
             setError(payload.message);
           }
         }
       }
     } catch (err) {
-      if ((err as Error).name !== "AbortError") setError("Connection lost. Try again.");
+      // A stall aborts deliberately, so it surfaces as AbortError too — the flag tells the two
+      // apart. An abort we did NOT cause (panel unmount) stays silent, as before.
+      if (stalled) setError("That took too long. Try again.");
+      else if ((err as Error).name !== "AbortError") setError("Connection lost. Try again.");
     } finally {
+      if (watchdog) clearTimeout(watchdog);
+      if (phaseTimerRef.current) clearTimeout(phaseTimerRef.current);
       setStreaming(false);
+      setPhase("thinking");
+      // The single place the placeholder is cleaned up. Whatever happened — 429, network drop,
+      // stall, malformed event, an empty answer — an assistant bubble that never received content
+      // is removed here, so the indicator can't outlive the request on ANY path.
+      setMessages((m) =>
+        m.length > 0 && m[m.length - 1].role === "assistant" && m[m.length - 1].content === ""
+          ? m.slice(0, -1)
+          : m
+      );
     }
   }
 
@@ -217,6 +303,7 @@ export default function ChatWidget() {
             input={input}
             setInput={setInput}
             streaming={streaming}
+            phase={phase}
             error={error}
             scrollRef={scrollRef}
             onSend={sendMessage}
@@ -235,6 +322,7 @@ function PanelChrome({
   input,
   setInput,
   streaming,
+  phase,
   error,
   scrollRef,
   onSend,
@@ -246,6 +334,7 @@ function PanelChrome({
   input: string;
   setInput: (v: string) => void;
   streaming: boolean;
+  phase: ChatPhase;
   error: string | null;
   scrollRef: React.RefObject<HTMLDivElement>;
   onSend: (text: string) => void;
@@ -332,7 +421,7 @@ function PanelChrome({
                   {m.content ? (
                     <LinkifiedText text={m.content} onLight={m.role !== "user"} />
                   ) : streaming && i === messages.length - 1 ? (
-                    "…"
+                    <PendingIndicator phase={phase} />
                   ) : (
                     ""
                   )}
@@ -424,5 +513,47 @@ function LinkifiedText({ text, onLight }: { text: string; onLight: boolean }) {
         )
       )}
     </>
+  );
+}
+
+// The waiting indicator, rendered INSIDE the placeholder assistant bubble (see sendMessage) so it
+// occupies the exact position and styling the real answer will, and the swap moves nothing.
+//
+// PHASES: the route reports what it's actually doing (src/app/api/chat/route.ts emits
+// {"type":"phase"}), so the label is honest rather than a generic stand-in — during the corpus
+// search it says so, and it only claims to be writing once the model is writing. If a phase event
+// never arrives, this stays on the "thinking" default and still works.
+//
+// MOTION: opacity-only pulse on a stagger — no bounce, no spinner, no translation. Under
+// prefers-reduced-motion the animation is dropped entirely (motion-reduce:animate-none, matching
+// the homepage scroll cue) and the dots render as three static marks, which still reads as a
+// placeholder rather than as an empty bubble.
+//
+// ACCESSIBILITY: role="status" + aria-live="polite" announces the wait without interrupting, and
+// the announcement is the LABEL only — the dots carry aria-hidden, so a screen reader never reads
+// them as message content, and nothing here is announced as part of the conversation. The label is
+// visible too: once the route can say "Searching Prof. Peptide…", hiding that from sighted users
+// would throw away the whole point of the phase events.
+const PHASE_LABEL: Record<ChatPhase, string> = {
+  thinking: "Thinking…",
+  searching: "Searching Prof. Peptide…",
+  generating: "Writing the answer…",
+};
+
+function PendingIndicator({ phase }: { phase: ChatPhase }) {
+  const label = PHASE_LABEL[phase];
+  return (
+    <span role="status" aria-live="polite" className="inline-flex items-center gap-2">
+      <span aria-hidden="true" className="inline-flex items-center gap-1">
+        {[0, 1, 2].map((i) => (
+          <span
+            key={i}
+            className="w-1.5 h-1.5 rounded-full bg-gray-400 dark:bg-slate-500 animate-chat-dot motion-reduce:animate-none"
+            style={{ animationDelay: `${i * 0.16}s` }}
+          />
+        ))}
+      </span>
+      <span className="text-xs text-gray-500 dark:text-slate-400">{label}</span>
+    </span>
   );
 }
