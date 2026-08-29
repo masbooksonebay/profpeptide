@@ -16,6 +16,7 @@
 // scrolls freely under/past the corner the launcher occupies rather than being permanently obscured.
 import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { linkifyPpUrls } from "@/lib/chat-linkify";
 
 type WidgetState = "collapsed" | "preconversation" | "active";
 type ChatMessage = { role: "user" | "assistant"; content: string };
@@ -328,7 +329,13 @@ function PanelChrome({
                       : "max-w-[85%] rounded-xl px-3 py-2 bg-[#F4F6F8] dark:bg-[#0f172a] text-gray-800 dark:text-slate-200 text-sm whitespace-pre-wrap"
                   }
                 >
-                  {m.content || (streaming && i === messages.length - 1 ? "…" : "")}
+                  {m.content ? (
+                    <LinkifiedText text={m.content} onLight={m.role !== "user"} />
+                  ) : streaming && i === messages.length - 1 ? (
+                    "…"
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
             ))}
@@ -371,5 +378,51 @@ function PanelChrome({
         <p className="mt-0.5">Powered by Claude</p>
       </div>
     </div>
+  );
+}
+
+// Renders answer text with Prof. Peptide URLs as links and EVERYTHING else as plain text.
+//
+// 🔒 No dangerouslySetInnerHTML, no markdown renderer, no HTML parsing — the text is model output
+// with retrieved page content flowing through it, so it is treated as data end to end. Segmenting
+// happens in src/lib/chat-linkify.ts (strict PP-only allowlist; hrefs rebuilt onto a fixed origin
+// rather than taken from the matched text), and React escapes every text segment on the way out.
+//
+// STREAMING: this runs on each render, so links appear as the text arrives rather than only at
+// completion. A URL still mid-stream links to the partial path it has so far and corrects itself on
+// the next chunk — self-healing, because nothing is memoized across chunks.
+//
+// TARGET=_BLANK, deliberately: the conversation is plain React state with no storage backing (see
+// this file's header), so a same-tab navigation destroys it. Verified rather than assumed. A link
+// that silently wipes the chat would be worse than the plain-text URL it replaced. rel="noopener
+// noreferrer" comes with it as the standard safeguard for _blank.
+function LinkifiedText({ text, onLight }: { text: string; onLight: boolean }) {
+  const segments = linkifyPpUrls(text);
+  return (
+    <>
+      {segments.map((seg, i) =>
+        seg.type === "link" ? (
+          <a
+            key={i}
+            href={seg.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            // The site's standard inline-link treatment (text-brand === #3A759F, the accent token
+            // 2,939 inline links already use), plus break-words because a full URL must wrap inside
+            // a 380px panel. On the user's brand-filled bubble the accent would vanish into the
+            // background, so links there use the bubble's own foreground with an underline.
+            className={
+              onLight
+                ? "text-brand hover:underline break-words"
+                : "text-white underline break-words"
+            }
+          >
+            {seg.value}
+          </a>
+        ) : (
+          <span key={i}>{seg.value}</span>
+        )
+      )}
+    </>
   );
 }
