@@ -40,11 +40,11 @@ const faqs = [
   },
   {
     q: "Does tirzepatide cause muscle loss?",
-    a: "All GLP-class drugs can cause loss of lean mass alongside fat loss, especially during rapid weight reduction. Estimates suggest 20–40% of weight lost on tirzepatide is from lean tissue. Resistance training and adequate protein intake (1.2–1.6 g/kg body weight per day) significantly reduce muscle loss.",
+    a: "All GLP-class drugs can cause loss of lean mass alongside fat loss, especially during rapid weight reduction. Estimates suggest 20–40% of weight lost on tirzepatide is from lean tissue. In the GLP-1 literature, resistance training and higher protein intake (studies typically use 1.2–1.6 g/kg body weight per day) are associated with reduced lean-mass loss; no tirzepatide-specific trial has tested either.",
   },
   {
     q: "Can I drink alcohol on tirzepatide?",
-    a: "Alcohol compounds nausea and dehydration, and can increase hypoglycemia risk. Most users find it best to avoid alcohol or drink minimally, especially in the first 48 hours after each weekly injection. Alcohol can also worsen reflux and gastric symptoms.",
+    a: "Alcohol compounds nausea and dehydration, and can increase hypoglycemia risk. The commonly reported practice is to abstain or drink minimally in the first 48 hours after each weekly injection, when levels peak. Alcohol can also worsen reflux and gastric symptoms.",
   },
   {
     q: "Is tirzepatide covered by insurance?",
@@ -152,7 +152,7 @@ const sections = [
     id: "dosing",
     title: "How is Tirzepatide dosed?",
     intro:
-      "Tirzepatide is administered as a once-weekly subcutaneous injection. The FDA-approved titration schedule starts at 2.5 mg and increases every 4 weeks through six dose tiers (2.5 → 5 → 7.5 → 10 → 12.5 → 15 mg) over 20 weeks. Maintenance doses are 5, 10, or 15 mg weekly depending on tolerance and goals. The slow titration is non-negotiable; faster escalation significantly increases GI side effects without improving outcomes.",
+      "Tirzepatide is administered as a once-weekly subcutaneous injection. The FDA-approved titration schedule starts at 2.5 mg and increases every 4 weeks through six dose tiers (2.5 → 5 → 7.5 → 10 → 12.5 → 15 mg) over 20 weeks. Maintenance doses are 5, 10, or 15 mg weekly depending on tolerance and goals. The approved labels titrate rather than start at a maintenance dose; faster escalation significantly increases GI side effects without improving outcomes.",
     node: (
       <div className="space-y-3">
         <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
@@ -167,7 +167,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Weeks 21+.</span> 15 mg once weekly (maximum dose).</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-          Maintenance doses are 5, 10, or 15 mg weekly. Most users continue increasing through the schedule until they reach their target weight loss or hit dose-limiting side effects. Holding at the current dose for an additional 4 weeks if side effects are difficult to tolerate is standard practice and does not appear to reduce long-term outcomes.
+          Maintenance doses are 5, 10, or 15 mg weekly. Most users continue increasing through the schedule until they reach their target weight loss or hit dose-limiting side effects. The Mounjaro label increases the dose only after at least 4 weeks on the current one, so remaining at a step longer is within the labelled schedule, and the published outcomes do not show that extension reducing long-term outcomes.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Half-life is approximately 5 days (~120 hours), supporting once-weekly dosing with steady state reached in roughly 4 weeks at each dose level. Dose adjustments aren&rsquo;t typically needed for kidney or liver impairment, though dehydration from GI side effects can affect kidney function and should be monitored.
@@ -202,12 +202,12 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection, once weekly. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Any time, but consistent. Many users inject at the same day and time each week (e.g., Sunday mornings).</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each week to reduce localized irritation. Stay at least 1 inch from previous injection sites.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> If less than 4 days late, take as soon as remembered. If 4 or more days late, skip the missed dose and resume on the next scheduled day. Do not double-dose.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> The Mounjaro label instructs rotating injection sites with each dose, which is intended to limit localized irritation. Stay at least 1 inch from previous injection sites.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> The Mounjaro label instructs administering a missed dose as soon as possible within 4 days (96 hours), and skipping to the next regularly scheduled day beyond that. The label does not direct doubling a dose.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pen handling.</span> Mounjaro/Zepbound pens come pre-filled. Store refrigerated until use. Allow to warm to room temperature for 30 minutes before injecting to reduce sting.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Eating pattern.</span> Smaller, more frequent meals reduce nausea. Avoid large fatty meals especially in the 24 hours after injection.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hydration.</span> Drink water consistently. Tirzepatide blunts thirst signals, so set a daily water target rather than waiting for thirst.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Avoid for at least 48 hours after injection &mdash; alcohol compounds nausea and dehydration.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Eating pattern.</span> Smaller, more frequent meals reduce nausea. Large fatty meals in the 24 hours after injection are the commonly reported trigger for nausea.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hydration.</span> Tirzepatide blunts thirst signalling, so thirst becomes an unreliable cue for intake — which is why a fixed daily target rather than thirst-driven drinking is the practice users report.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Alcohol compounds nausea and dehydration, and the 48 hours after injection is when levels peak. The commonly reported practice is to abstain across that window.</li>
         </ol>
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">

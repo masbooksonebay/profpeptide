@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "Does retatrutide cause muscle loss?",
-    a: "Like all GLP-1-class drugs, retatrutide can cause loss of lean muscle alongside fat loss, especially during rapid weight reduction. Resistance training and adequate protein intake (typically 1.2–1.6 g/kg body weight per day) significantly reduce muscle loss.",
+    a: "Like all GLP-1-class drugs, retatrutide can cause loss of lean muscle alongside fat loss, especially during rapid weight reduction. In the GLP-1 literature, resistance training and higher protein intake (studies typically use 1.2–1.6 g/kg body weight per day) are associated with reduced lean-mass loss; no retatrutide-specific trial has tested either.",
   },
   {
     q: "What is dysesthesia and should I be concerned?",
@@ -60,7 +60,7 @@ const faqs = [
   },
   {
     q: "Can I drink alcohol on retatrutide?",
-    a: "Alcohol compounds nausea and dehydration. Most users find it best to avoid alcohol for at least 48 hours after each weekly injection, when medication levels peak. Alcohol also increases hypoglycemia risk in users with type 2 diabetes.",
+    a: "Alcohol compounds nausea and dehydration. The commonly reported practice is to abstain for the 48 hours after each weekly injection, when levels peak. Alcohol also increases hypoglycemia risk in users with type 2 diabetes.",
   },
   {
     q: "Where can I get retatrutide?",
@@ -147,10 +147,77 @@ const sections = [
       "In trials, most participants noticed reduced appetite within the first 1–2 weeks of starting. Modest weight loss (about 2–3% of body weight) typically appeared by week 4 at the 2 mg starting dose. Significant weight loss accumulated over the dose-escalation phase as the dose was increased every 4 weeks. By 24 weeks, average weight loss was around 17%; by 48 weeks, around 24%; and by 68 weeks (TRIUMPH-4), around 28.7% at the highest dose. The weight-loss curve was still declining at the end of the longest trials, suggesting full effects may take longer than 68 weeks to plateau.",
   },
   {
+    id: "reconstitution",
+    title: "How is Retatrutide reconstituted?",
+    intro:
+      "Retatrutide ships as a lyophilized powder that must be reconstituted before it can be measured. This is arithmetic rather than protocol: the water sets the concentration, and the concentration sets how many units on the syringe correspond to a given milligram amount. The volume chosen does not change how much peptide the vial contains.",
+    node: (
+      <div className="space-y-4">
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Bacteriostatic versus sterile water.</span> Bacteriostatic water carries 0.9% benzyl alcohol, a preservative that inhibits bacterial growth and allows a vial to be entered more than once. Sterile water has no preservative and is single-use &mdash; every entry after the first introduces organisms into a medium that will not suppress them. For a vial measured out across several occasions, that preservative is the whole distinction.
+        </p>
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
+          Volume, concentration, and units on a 100-unit syringe
+        </p>
+        {/* ARITHMETIC ONLY. The milligram columns are the Phase 3 TRIUMPH escalation steps — they are
+            here because they are the figures the trials administered, and the caption says so. This
+            table must never imply which row to pick; a reconstitution guide that smuggles in a
+            "common starting dose" is making a dosing recommendation in a table's clothing. */}
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr>
+                {["Vial + water", "Concentration", "2 mg", "4 mg", "6 mg", "9 mg", "12 mg"].map((h) => (
+                  <th key={h} scope="col" className="text-left font-semibold text-[#16181B] dark:text-slate-100 border-b border-[#D9DEE4] dark:border-slate-700 py-2 pr-4 whitespace-nowrap">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["10 mg + 1 mL", "10 mg/mL", "20 units", "40 units", "60 units", "90 units", "\u2014"],
+                ["10 mg + 2 mL", "5 mg/mL", "40 units", "80 units", "over 100", "over 100", "\u2014"],
+                ["20 mg + 1 mL", "20 mg/mL", "10 units", "20 units", "30 units", "45 units", "60 units"],
+                ["20 mg + 2 mL", "10 mg/mL", "20 units", "40 units", "60 units", "90 units", "over 100"],
+              ].map((row) => (
+                <tr key={row[0]}>
+                  {row.map((cell, ci) => (
+                    <td key={ci} className={"border-b border-gray-100 dark:border-slate-800 py-2 pr-4 whitespace-nowrap " + (ci === 0 ? "font-medium text-[#16181B] dark:text-slate-100" : "text-gray-600 dark:text-slate-300")}>{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
+          Milligram columns are the Phase 3 TRIUMPH escalation steps, listed because they are the figures the trials administered &mdash; not as a recommendation to use any of them. &mdash; marks a dose larger than the vial holds; &ldquo;over 100&rdquo; marks a measurement exceeding one 100-unit syringe. The arithmetic is units = (dose in mg &divide; concentration in mg/mL) &times; 100.
+        </p>
+        <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Mechanics</p>
+        <ol className="list-decimal list-inside space-y-1">
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Swab both rubber stoppers with alcohol and let them dry &mdash; wiping while wet moves contaminants rather than killing them.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Aim the water down the inside wall of the glass rather than onto the powder; a stream striking lyophilized peptide directly can denature it.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Swirl gently until dissolved. Shaking is avoided &mdash; peptides are sensitive to the shear forces agitation creates.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">A clear solution is expected; visible particulates or cloudiness after full dissolution indicate the vial should not be used.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">Refrigerate once reconstituted. The lyophilized powder is comparatively stable; the solution is not.</li>
+        </ol>
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Storage.</span> Reconstituted peptide is held at 2&ndash;8&deg;C and protected from light. Retatrutide has no approved product label, so there is no manufacturer-established in-use stability period to cite &mdash; this reflects general peptide handling rather than a retatrutide stability study.
+        </p>
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
+          <span className="font-semibold">Common question:</span>{" "}
+          <NavLink href="/faq/how-much-bac-water-for-retatrutide" className="text-[#3A759F] hover:underline">How much bacteriostatic water for retatrutide?</NavLink>
+        </p>
+        <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
+          To run these numbers for any vial size and volume, use the{" "}
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
+        </p>
+      </div>
+    ),
+  },
+  {
     id: "dosing",
     title: "How is Retatrutide dosed?",
     intro:
-      "Retatrutide is administered as a once-weekly subcutaneous injection. Phase 3 TRIUMPH trials use a stepwise dose-escalation protocol — starting at 2 mg and increasing every 4 weeks — to give the body time to adapt and reduce gastrointestinal side effects. The slow titration is non-negotiable; Phase 2 data showed that starting at a higher dose (4 mg) significantly increased side-effect rates without improving outcomes.",
+      "Retatrutide is administered as a once-weekly subcutaneous injection. Phase 3 TRIUMPH trials use a stepwise dose-escalation protocol — starting at 2 mg and increasing every 4 weeks — to give the body time to adapt and reduce gastrointestinal side effects. The trials titrate rather than start high on the basis of Phase 2 data, which showed that beginning at 4 mg increased side-effect rates without improving outcomes.",
     node: (
       <div className="space-y-3">
         <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
@@ -171,7 +238,7 @@ const sections = [
           <NavLink href="/faq/how-often-is-retatrutide-dosed" className="text-[#3A759F] hover:underline">How often is retatrutide dosed?</NavLink>
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          If side effects are difficult to tolerate at any step, holding at the current dose for an additional 4 weeks is standard practice and does not appear to reduce long-term outcomes. Some users in research settings split doses into 2–3 smaller injections per week to reduce side effects, though this is not the protocol used in clinical trials.
+          The TRIUMPH protocols permit an additional 4 weeks at the current step where side effects are poorly tolerated, and the published outcomes do not show that extension reducing long-term results. Splitting a weekly dose into 2–3 smaller injections is a community convention reported outside trial settings, not a protocol any trial used.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Retatrutide is not FDA-approved and is investigational. Dosing protocols outside of clinical trials are derived from trial data and user reports — there are no approved retail dosing standards.
@@ -194,10 +261,10 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection, once weekly. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Any time, but consistent. Many users inject in the morning or before bed depending on side-effect timing.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each week to reduce localized irritation. Stay at least 1 inch from previous injection sites.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> If less than 5 days late, take as soon as remembered. If more than 5 days late, skip the missed dose and resume on the next scheduled day. Do not double-dose.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Avoid for at least 48 hours after injection — alcohol compounds nausea and dehydration.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hydration.</span> Drink water consistently. The medication blunts thirst signals, so set a daily water target rather than waiting for thirst.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Weekly site rotation, with at least an inch between consecutive sites, is the standard practice for subcutaneous GLP-1-class injections and is intended to limit localized irritation.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Retatrutide has no approved label, so there is no missed-dose instruction for it. The convention carried over from approved once-weekly GLP-1 labels is a 5-day window — administer if fewer than 5 days have passed, otherwise skip to the next scheduled day rather than doubling.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Alcohol compounds nausea and dehydration, and the 48 hours after injection is when levels peak. The commonly reported practice is to abstain across that window.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hydration.</span> The compound blunts thirst signalling, so thirst becomes an unreliable cue for intake — which is why a fixed daily target rather than thirst-driven drinking is the practice users report.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Eating pattern.</span> Small meals every 3–4 hours rather than waiting for hunger, which is suppressed. Empty-stomach nausea is the most common trigger for vomiting.</li>
         </ol>
 
@@ -497,6 +564,25 @@ const sections = [
           </div>
         ))}
       </div>
+    ),
+  },
+  {
+    id: "common-questions",
+    title: "Common questions",
+    intro:
+      "Each of these answers one question on its own page. The profile is the place for mechanism, evidence, and safety in context; these are for the specific thing someone typed into a search box.",
+    node: (
+      <ul className="space-y-2">
+        {[
+          { href: "/faq/how-is-retatrutide-dosed-in-research", label: "How is retatrutide dosed in research?" },
+          { href: "/faq/how-often-is-retatrutide-dosed", label: "How often is retatrutide dosed?" },
+          { href: "/faq/how-much-bac-water-for-retatrutide", label: "How much bacteriostatic water for retatrutide?" },
+        ].map((q) => (
+          <li key={q.href}>
+            <NavLink href={q.href} className="text-lg text-[#3A759F] hover:underline">{q.label}</NavLink>
+          </li>
+        ))}
+      </ul>
     ),
   },
   {

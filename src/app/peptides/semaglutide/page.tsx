@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "Does semaglutide cause muscle loss?",
-    a: "All GLP-class drugs can cause loss of lean mass alongside fat loss, especially during rapid weight reduction. Estimates suggest 25–40% of weight lost on semaglutide is from lean tissue. Resistance training and adequate protein intake (1.2–1.6 g/kg body weight per day) significantly reduce muscle loss.",
+    a: "All GLP-class drugs can cause loss of lean mass alongside fat loss, especially during rapid weight reduction. Estimates suggest 25–40% of weight lost on semaglutide is from lean tissue. In the GLP-1 literature, resistance training and higher protein intake (studies typically use 1.2–1.6 g/kg body weight per day) are associated with reduced lean-mass loss; no semaglutide-specific trial has tested either.",
   },
   {
     q: "Is semaglutide better than tirzepatide?",
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "Can I drink alcohol on semaglutide?",
-    a: "Alcohol compounds nausea and dehydration, and can increase hypoglycemia risk. Most users find it best to avoid alcohol or drink minimally, especially in the first 48 hours after each weekly injection.",
+    a: "Alcohol compounds nausea and dehydration, and can increase hypoglycemia risk. The commonly reported practice is to abstain or drink minimally in the first 48 hours after each weekly injection, when levels peak.",
   },
   {
     q: "Why are real-world results lower than trial results?",
@@ -162,7 +162,7 @@ const sections = [
     id: "dosing",
     title: "How is Semaglutide dosed?",
     intro:
-      "Semaglutide is administered as a once-weekly subcutaneous injection (Wegovy/Ozempic) or as a daily oral tablet (Rybelsus, for type 2 diabetes only). Injectable dosing follows a stepwise 16-week escalation from 0.25 mg → 2.4 mg, with each step lasting 4 weeks to let the body adapt and reduce gastrointestinal side effects. The slow titration is non-negotiable; trying to escalate faster significantly increases side-effect rates without improving outcomes.",
+      "Semaglutide is administered as a once-weekly subcutaneous injection (Wegovy/Ozempic) or as a daily oral tablet (Rybelsus, for type 2 diabetes only). Injectable dosing follows a stepwise 16-week escalation from 0.25 mg → 2.4 mg, with each step lasting 4 weeks to let the body adapt and reduce gastrointestinal side effects. The approved labels titrate rather than start at a maintenance dose; trying to escalate faster significantly increases side-effect rates without improving outcomes.",
     node: (
       <div className="space-y-3">
         <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">
@@ -176,7 +176,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Weeks 17+.</span> 2.4 mg once weekly (maintenance dose).</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-          Most users continue increasing through the schedule until they reach the 2.4 mg maintenance dose or hit dose-limiting side effects. Holding at the current dose for an additional 4 weeks if side effects are difficult to tolerate is standard practice and does not appear to reduce long-term outcomes. The 1.7 mg dose is sometimes used as the long-term maintenance dose if 2.4 mg is poorly tolerated.
+          Most users continue increasing through the schedule until they reach the 2.4 mg maintenance dose or hit dose-limiting side effects. The Ozempic and Wegovy labels allow an additional 4 weeks at the current dose where side effects are poorly tolerated, and the published outcomes do not show that extension reducing long-term outcomes. The 1.7 mg dose is sometimes used as the long-term maintenance dose if 2.4 mg is poorly tolerated.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           For type 2 diabetes (Ozempic), the maximum approved dose is 2.0 mg weekly. The escalation is similar: 0.25 → 0.5 → 1.0 → 2.0 mg, with each step lasting at least 4 weeks.
@@ -217,12 +217,12 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection, once weekly. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Any time, but consistent. Many users inject at the same day and time each week.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine for injectable. Rybelsus (oral) must be taken on an empty stomach with no more than 4 oz of plain water, then wait at least 30 minutes before eating, drinking, or taking other medications.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each week to reduce localized irritation. Stay at least 1 inch from previous injection sites.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> If less than 5 days late, take as soon as remembered. If 5 or more days late, skip the missed dose and resume on the next scheduled day. Do not double-dose.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> The labels permit the abdomen, thigh, or upper arm and allow the site to change without a dose adjustment; weekly rotation is the standard practice for limiting localized irritation. Stay at least 1 inch from previous injection sites.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> The Ozempic label instructs administering a missed dose within 5 days, and skipping to the next scheduled day beyond that. The Wegovy label differs — it is framed by proximity to the next dose, administering only if the next scheduled dose is more than 2 days away. Neither label directs doubling a dose.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Pen handling.</span> Wegovy and Ozempic pens come pre-filled. Store refrigerated until use. Allow to warm to room temperature for 30 minutes before injecting to reduce sting.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Eating pattern.</span> Smaller, more frequent meals reduce nausea. Avoid large fatty meals especially in the 24 hours after injection.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hydration.</span> Drink water consistently. Semaglutide blunts thirst signals, so set a daily water target rather than waiting for thirst.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Avoid for at least 48 hours after injection &mdash; alcohol compounds nausea and dehydration.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Eating pattern.</span> Smaller, more frequent meals reduce nausea. Large fatty meals in the 24 hours after injection are the commonly reported trigger for nausea.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hydration.</span> Semaglutide blunts thirst signalling, so thirst becomes an unreliable cue for intake — which is why a fixed daily target rather than thirst-driven drinking is the practice users report.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Alcohol compounds nausea and dehydration, and the 48 hours after injection is when levels peak. The commonly reported practice is to abstain across that window.</li>
         </ol>
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">

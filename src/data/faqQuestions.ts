@@ -17,7 +17,14 @@ export type FaqBlock =
   // An inline call-to-action paragraph: prose + one link. Used for a mid-answer handoff
   // (e.g. the units section → /calculator). Rendered as a <p> with a <Link>; its text + label
   // are folded into the schema answer via faqAnswerText, so schema still matches the visible text.
-  | { kind: "cta"; text: string; href: string; label: string };
+  | { kind: "cta"; text: string; href: string; label: string }
+  // A reference table — the extractable artifact on a mechanics question ("how much BAC water").
+  // `caption` states what the table IS, so the schema answer (faqAnswerText) stays readable when the
+  // grid is flattened to prose; `note` carries the caveat that must travel with the numbers.
+  // ARITHMETIC ONLY. A row here converts a volume to a concentration to syringe units. It must never
+  // imply which row a reader should pick — that is a dosing recommendation wearing a table's
+  // clothes, and it is exactly how the competitor pages this pattern answers get it wrong.
+  | { kind: "table"; caption: string; headers: string[]; rows: string[][]; note?: string };
 
 /** Groups the /faq hub's In-depth cards into sections. The hub DERIVES its grouping from this
  *  field (never a hand-ordered list), so a new question lands in its section automatically. */
@@ -298,6 +305,156 @@ export const faqQuestions: FaqQuestion[] = [
         "For reconstitution step by step, unit-to-mcg conversion, storage, and injection technique, see the full",
     },
     related: ["what-size-needle-for-peptides", "can-you-use-insulin-needles-for-peptides"],
+  },
+  {
+    slug: "how-much-bac-water-for-retatrutide",
+    category: "injection",
+    question: "How much bacteriostatic water for retatrutide?",
+    title: "How Much Bacteriostatic Water for Retatrutide? Reconstitution Math",
+    metaDescription:
+      "Any volume works — the water only sets the concentration. 1 mL into a 10 mg vial gives 10 mg/mL, so 2 mg is 20 units on a 100-unit insulin syringe; 2 mL gives 5 mg/mL and doubles the units. Reference table for common vial sizes, with the arithmetic shown.",
+    searchTags: [
+      "how much bac water for retatrutide",
+      "retatrutide reconstitution",
+      "how to reconstitute retatrutide",
+      "retatrutide bacteriostatic water",
+      "retatrutide mixing calculator",
+      "retatrutide units",
+      "how much water to mix retatrutide",
+      "reta reconstitution",
+    ],
+    hubBlurb:
+      "There is no single correct volume — the water sets the concentration, and the concentration sets the syringe units. The reference table converts vial size and volume into units for the trial dose points.",
+    lede:
+      "Any volume works, because the bacteriostatic water only sets the concentration — it does not change how much peptide is in the vial. Adding 1 mL to a 10 mg vial gives 10 mg/mL, so a 2 mg dose measures 20 units on a 100-unit insulin syringe. Adding 2 mL gives 5 mg/mL and the same 2 mg becomes 40 units.",
+    body: [
+      { kind: "heading", text: "Why there is no single correct volume" },
+      {
+        kind: "p",
+        text:
+          "Reconstitution is arithmetic, not a protocol. The vial contains a fixed mass of lyophilized peptide; the water is a solvent that determines how concentrated the resulting solution is. More water means a lower concentration and more syringe units for the same milligram amount — the amount of peptide drawn is identical either way. What a volume changes is how easy the measurement is to read on the syringe barrel.",
+      },
+      {
+        kind: "p",
+        text:
+          "The practical constraint is the syringe. A standard 100-unit insulin syringe holds 1 mL, so any combination that pushes a single measurement past 100 units means drawing twice. Choosing a concentration that lands the intended measurement comfortably inside one barrel is the only thing the volume decision is optimizing.",
+      },
+      { kind: "heading", text: "Reference table: volume, concentration, and syringe units" },
+      {
+        kind: "table",
+        caption:
+          "Units on a 100-unit (1 mL) insulin syringe. Dose points are the Phase 3 TRIUMPH escalation steps, listed because they are the figures the trials used — not as a recommendation to use any of them.",
+        headers: ["Vial + water", "Concentration", "2 mg", "4 mg", "6 mg", "9 mg", "12 mg"],
+        rows: [
+          ["10 mg + 1 mL", "10 mg/mL", "20 units", "40 units", "60 units", "90 units", "—"],
+          ["10 mg + 2 mL", "5 mg/mL", "40 units", "80 units", "over 100", "over 100", "—"],
+          ["20 mg + 1 mL", "20 mg/mL", "10 units", "20 units", "30 units", "45 units", "60 units"],
+          ["20 mg + 2 mL", "10 mg/mL", "20 units", "40 units", "60 units", "90 units", "over 100"],
+        ],
+        note:
+          "\u2014 marks a dose larger than the vial holds. \u201COver 100\u201D marks a measurement that exceeds one 100-unit syringe. The arithmetic is: units = (dose in mg \u00f7 concentration in mg/mL) \u00d7 100.",
+      },
+      {
+        kind: "cta",
+        text: "To run these numbers for any vial size and volume rather than reading them off a table, use the",
+        href: "/calculator",
+        label: "dosage calculator",
+      },
+      { kind: "heading", text: "Bacteriostatic versus sterile water" },
+      {
+        kind: "p",
+        text:
+          "Bacteriostatic water contains 0.9% benzyl alcohol, a preservative that inhibits bacterial growth and allows a reconstituted vial to be entered more than once. Sterile water contains no preservative: it is single-use, because every needle entry after the first risks introducing organisms into a medium that will not suppress them. For a vial measured out across multiple occasions, the preservative is the entire distinction.",
+      },
+      { kind: "heading", text: "Mechanics" },
+      {
+        kind: "list",
+        items: [
+          "Swab both rubber stoppers with alcohol and let them dry — wiping while wet moves contaminants rather than killing them.",
+          "Aim the water down the inside wall of the glass, not directly onto the powder. A stream striking lyophilized peptide directly can denature it.",
+          "Swirl gently until dissolved. Do not shake: peptides are sensitive to the shear forces agitation creates.",
+          "A clear solution is expected. Visible particulates or cloudiness after full dissolution indicate the vial should not be used.",
+          "Refrigerate after reconstitution. The lyophilized powder is comparatively stable, but the solution is not.",
+        ],
+      },
+      { kind: "heading", text: "Storage after reconstitution" },
+      {
+        kind: "p",
+        text:
+          "Reconstituted peptide is stored refrigerated at 2-8 degrees Celsius and protected from light. Retatrutide has no approved product label, so there is no manufacturer-established in-use stability period to cite — the storage practice reported here is general peptide handling, not a figure derived from a retatrutide stability study.",
+      },
+    ],
+    handoff: {
+      href: "/peptides/retatrutide",
+      label: "Retatrutide profile",
+      text: "For other common questions regarding retatrutide, see the full",
+    },
+    related: ["how-much-bac-water-for-peptides", "how-is-retatrutide-dosed-in-research", "how-often-is-retatrutide-dosed"],
+    whereToBuy: { compoundSlug: "retatrutide" },
+  },
+  {
+    slug: "how-is-retatrutide-dosed-in-research",
+    category: "dosing",
+    question: "How is retatrutide dosed in research?",
+    title: "How Is Retatrutide Dosed in Research? Trial Doses and Escalation",
+    metaDescription:
+      "Phase 2 tested 0.5-12 mg weekly; Phase 3 TRIUMPH escalates from 2 mg every four weeks to 9 mg and 12 mg maintenance. Retatrutide is investigational with no approved label, so there is no approved dosing standard — only what the trials administered.",
+    searchTags: [
+      "how is retatrutide dosed",
+      "retatrutide dosing research",
+      "retatrutide trial doses",
+      "retatrutide escalation schedule",
+      "triumph retatrutide dose",
+      "retatrutide phase 3 dosing",
+      "retatrutide mg per week",
+      "reta dosing",
+    ],
+    hubBlurb:
+      "The doses the retatrutide trials actually administered — Phase 2's 0.5-12 mg range and the Phase 3 TRIUMPH escalation — and why no approved dosing standard exists.",
+    lede:
+      "Retatrutide is administered once weekly by subcutaneous injection in trials. Phase 2 tested 0.5 mg to 12 mg weekly; Phase 3 TRIUMPH uses a stepwise escalation starting at 2 mg and increasing every four weeks, with 9 mg and 12 mg tested as maintenance doses. It is investigational, so no approved dosing standard exists outside these protocols.",
+    body: [
+      { kind: "heading", text: "What the trials administered" },
+      {
+        kind: "p",
+        text:
+          "The Phase 2 program tested weekly doses from 0.5 mg to 12 mg. The Phase 3 TRIUMPH program escalates in four-week steps — 2 mg, then 4 mg, then 6 mg, then 9 mg, with 12 mg as the highest maintenance dose tested. Half-life is approximately six days, which is the pharmacokinetic basis for the once-weekly interval, with steady state reached across four to five weeks at each level.",
+      },
+      {
+        kind: "p",
+        text:
+          "The escalation is not incidental to the protocol. Phase 2 data showed that beginning at 4 mg rather than titrating up increased gastrointestinal side-effect rates without improving outcomes, which is why the trials step rather than start high.",
+      },
+      { kind: "heading", text: "Why there is no approved dosing standard" },
+      {
+        kind: "p",
+        text:
+          "Retatrutide has no marketing approval in any jurisdiction, so there is no prescribing information, no label-established dose, and no regulator-reviewed dosing standard. Every figure above is a trial protocol figure — what was administered to enrolled participants under supervision, reported here as what the research used. Material sold as research-use-only carries no dosing instructions of any kind.",
+      },
+      {
+        kind: "cta",
+        text: "To convert any of these milligram figures into syringe units for a given vial and volume, use the",
+        href: "/calculator",
+        label: "dosage calculator",
+      },
+      {
+        kind: "list",
+        items: [
+          "Phase 2: 0.5 mg to 12 mg weekly, subcutaneous.",
+          "Phase 3 TRIUMPH: 2 mg start, escalating every four weeks.",
+          "TRIUMPH-4 tested 9 mg and 12 mg as maintenance doses.",
+          "Approximately six-day half-life; once-weekly administration.",
+          "No approved label, and therefore no approved dosing standard.",
+        ],
+      },
+    ],
+    handoff: {
+      href: "/peptides/retatrutide",
+      label: "Retatrutide profile",
+      text: "For other common questions regarding retatrutide, see the full",
+    },
+    related: ["how-often-is-retatrutide-dosed", "how-much-bac-water-for-retatrutide"],
+    whereToBuy: { compoundSlug: "retatrutide" },
   },
   {
     slug: "how-often-is-retatrutide-dosed",
@@ -1572,6 +1729,12 @@ export function faqAnswerText(q: FaqQuestion): string {
     if (b.kind === "p" || b.kind === "heading") parts.push(b.text);
     else if (b.kind === "list") parts.push(b.items.join(" "));
     else if (b.kind === "cta") parts.push(`${b.text} ${b.label}.`);
+    // Tables flatten to "caption: header row; each data row" so the FAQPage schema answer carries
+    // the SAME figures the reader sees — never a second, hand-written copy that could drift.
+    else if (b.kind === "table") {
+      parts.push(`${b.caption} ${b.headers.join(", ")}. ${b.rows.map((r) => r.join(", ")).join("; ")}.`);
+      if (b.note) parts.push(b.note);
+    }
   }
   parts.push(`${q.handoff.text} ${q.handoff.label}.`);
   return parts.join(" ").replace(/\s+/g, " ").trim();

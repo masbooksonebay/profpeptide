@@ -85,6 +85,57 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
                 </ul>
               );
             }
+            if (b.kind === "table") {
+              return (
+                <figure key={i} className="pt-2">
+                  <figcaption className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed mb-3">
+                    {b.caption}
+                  </figcaption>
+                  {/* overflow-x-auto: a 6-column reference grid cannot fit a 380px screen, and this
+                      is the artifact people come for — it scrolls inside its own box rather than
+                      forcing the page to scroll sideways. */}
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm border-collapse">
+                      <thead>
+                        <tr>
+                          {b.headers.map((h) => (
+                            <th
+                              key={h}
+                              scope="col"
+                              className="text-left font-semibold text-[#16181B] dark:text-slate-100 border-b border-[#D9DEE4] dark:border-slate-700 py-2 pr-4 whitespace-nowrap"
+                            >
+                              {h}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {b.rows.map((row, ri) => (
+                          <tr key={ri}>
+                            {row.map((cell, ci) => (
+                              <td
+                                key={ci}
+                                className={
+                                  "border-b border-gray-100 dark:border-slate-800 py-2 pr-4 whitespace-nowrap " +
+                                  (ci === 0
+                                    ? "font-medium text-[#16181B] dark:text-slate-100"
+                                    : "text-gray-600 dark:text-slate-300")
+                                }
+                              >
+                                {cell}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  {b.note && (
+                    <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed mt-3">{b.note}</p>
+                  )}
+                </figure>
+              );
+            }
             if (b.kind === "cta") {
               return (
                 <p key={i} className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

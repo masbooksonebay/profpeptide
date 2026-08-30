@@ -173,7 +173,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">CagriSema fixed-dose.</span> 2.4 mg cagrilintide + 2.4 mg semaglutide in a single weekly injection (FDA-submitted formulation).</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-          Holding at the current dose for an additional 4 weeks if side effects are difficult to tolerate is standard practice and does not appear to reduce long-term outcomes &mdash; consistent with GLP-class titration practice.
+          The trial protocols allow an additional 4 weeks at the current dose where side effects are poorly tolerated, and the published outcomes do not show that extension reducing long-term outcomes &mdash; consistent with GLP-class titration practice.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
@@ -198,9 +198,9 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection, once weekly. Common sites are the abdomen (avoiding 2 inches around the navel), upper outer thighs, and back of the upper arms.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Any consistent time. Many users inject at the same day and time each week.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine; no fasting requirement.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each week to reduce localized irritation.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> If less than 5 days late, take as soon as remembered. If 5 or more days late, skip the missed dose and resume on the next scheduled day. Do not double-dose.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Eating pattern.</span> Smaller, more frequent meals reduce nausea. Avoid large fatty meals especially in the 24 hours after injection.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Weekly site rotation is the standard practice for subcutaneous injections of this class and is intended to limit localized irritation.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Cagrilintide is investigational and has no approved label, so there is no missed-dose instruction for it. The convention carried over from approved once-weekly incretin labels is a 5-day window — administer if fewer than 5 days have passed, otherwise skip to the next scheduled day rather than doubling.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Eating pattern.</span> Smaller, more frequent meals reduce nausea. Large fatty meals in the 24 hours after injection are the commonly reported trigger for nausea.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Limit alcohol especially in the first 48 hours after injection &mdash; compounds nausea and dehydration.</li>
         </ol>
 
@@ -246,7 +246,7 @@ const sections = [
         </div>
 
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-          <span className="font-semibold">Dose escalation schedule.</span> Cagrilintide&apos;s weekly dose escalates every 4 weeks across 5 tiers. Holding at any step for an extra 4 weeks is standard practice if GI side effects are difficult to tolerate.
+          <span className="font-semibold">Dose escalation schedule.</span> Cagrilintide&apos;s weekly dose escalates every 4 weeks across 5 tiers. The trial protocols permit an extra 4 weeks at any step where GI side effects are poorly tolerated.
         </p>
 
         <div className="overflow-x-auto -mx-4 sm:mx-0">

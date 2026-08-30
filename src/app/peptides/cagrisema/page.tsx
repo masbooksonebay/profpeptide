@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "Does CagriSema cause muscle loss?",
-    a: "Like all GLP-1-class therapies, CagriSema can cause loss of lean muscle alongside fat loss during rapid weight reduction. Resistance training and adequate protein intake (typically 1.2–1.6 g/kg body weight per day) significantly reduce muscle loss. Cagrilintide may modestly attenuate this effect compared to GLP-1 monotherapy in some preclinical work, but human data on body composition with CagriSema specifically is still limited.",
+    a: "Like all GLP-1-class therapies, CagriSema can cause loss of lean muscle alongside fat loss during rapid weight reduction. In the GLP-1 literature, resistance training and higher protein intake (studies typically use 1.2–1.6 g/kg body weight per day) are associated with reduced lean-mass loss; no CagriSema-specific trial has tested either. Cagrilintide may modestly attenuate this effect compared to GLP-1 monotherapy in some preclinical work, but human data on body composition with CagriSema specifically is still limited.",
   },
   {
     q: "Can I stack CagriSema with semaglutide or tirzepatide?",
@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "Can I drink alcohol on CagriSema?",
-    a: "Alcohol compounds nausea, dehydration, and hypoglycemia risk in users with type 2 diabetes. Most users find it best to avoid alcohol for at least 48 hours after each weekly injection, when medication levels peak. Slowed gastric emptying can also unpredictably change how alcohol is absorbed.",
+    a: "Alcohol compounds nausea, dehydration, and hypoglycemia risk in users with type 2 diabetes. The commonly reported practice is to abstain for the 48 hours after each weekly injection, when levels peak. Slowed gastric emptying can also unpredictably change how alcohol is absorbed.",
   },
   {
     q: "Where can I get CagriSema?",
@@ -229,7 +229,7 @@ const sections = [
           *Both components are co-titrated in lockstep — the pre-blended product fixes the 1:1 ratio at every step. To adjust the ratio independently (e.g., escalate amylin while holding GLP-1), researchers must buy the two component peptides separately rather than using a pre-blend.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-          If side effects are difficult to tolerate at any step, holding at the current dose for an additional 4 weeks is the standard mitigation. In REDEFINE 2, 61.9% of participants reached the highest maintenance dose by week 68 under a flexible-dosing protocol — meaning a substantial minority held at a lower dose for the duration of the trial and still produced meaningful weight loss.
+          If side effects are difficult to tolerate at any step, the REDEFINE protocols allow an additional 4 weeks at the current dose. In REDEFINE 2, 61.9% of participants reached the highest maintenance dose by week 68 under a flexible-dosing protocol — meaning a substantial minority held at a lower dose for the duration of the trial and still produced meaningful weight loss.
         </p>
         <div className="pt-4">
           <h3 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
@@ -266,10 +266,10 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection, once weekly. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Any time, but consistent. Many users inject in the evening to sleep through the strongest nausea window after dose increases.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine. Both components are administered without regard to meals.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each week to reduce localized irritation. Stay at least 1 inch from previous injection sites — injection site reactions were reported in approximately 12% of CagriSema participants in REDEFINE 1.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> If less than 5 days late, take as soon as remembered. If more than 5 days late, skip the missed dose and resume on the next scheduled day. Do not double-dose.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Avoid for at least 48 hours after injection — alcohol compounds nausea, dehydration, and hypoglycemia risk in users with type 2 diabetes.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hydration.</span> Drink water consistently. The medication blunts thirst signals, so set a daily water target rather than waiting for thirst.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Weekly site rotation is the standard practice for subcutaneous injections of this class and is intended to limit localized irritation. Stay at least 1 inch from previous injection sites — injection site reactions were reported in approximately 12% of CagriSema participants in REDEFINE 1.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> CagriSema is investigational and has no approved label, so there is no missed-dose instruction for it. Its semaglutide component's Ozempic label uses a 5-day window — administer if fewer than 5 days have passed, otherwise skip to the next scheduled day rather than doubling.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Alcohol.</span> Alcohol compounds nausea, dehydration, and hypoglycemia risk in users with type 2 diabetes. The 48 hours after injection is when levels peak, and the commonly reported practice is to abstain across that window.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hydration.</span> The combination blunts thirst signalling, so thirst becomes an unreliable cue for intake — which is why a fixed daily target rather than thirst-driven drinking is the practice users report.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Eating pattern.</span> Small meals every 3–4 hours rather than waiting for hunger, which is suppressed. Empty-stomach nausea is the most common trigger for vomiting.</li>
         </ol>
 
