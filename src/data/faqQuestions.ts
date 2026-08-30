@@ -44,16 +44,30 @@ export interface FaqSource {
 
 /** Groups the /faq hub's In-depth cards into sections. The hub DERIVES its grouping from this
  *  field (never a hand-ordered list), so a new question lands in its section automatically. */
-export type FaqCategory = "injection" | "dosing" | "side-effects" | "trt" | "legality";
+export type FaqCategory = "basics" | "uses" | "injection" | "dosing" | "side-effects" | "trt" | "legality";
 
 /** Section order + display titles for the In-depth grouping. Titles use the hub's accordion
  *  section-header typography. */
+// Order is reading order for a newcomer: what they are, what they are for, how they are prepared,
+// how they are dosed, what goes wrong, and where the law sits. TRT sits last because it is a
+// distinct audience rather than a step in that sequence.
+//
+// ⚠️ TITLES MIRROR THE PROFILE TOCs. Every peptide profile renders the same section vocabulary —
+// "What is {X} used for?", "How is {X} dosed?", "What are the side effects of {X}?" — so the FAQ
+// categories use the same words rather than near-synonyms. Two navigation systems describing one
+// thing differently is drift, and this codebase has already paid for that with six "Back to" label
+// variants for a single destination.
 export const FAQ_CATEGORY_ORDER: { key: FaqCategory; title: string }[] = [
-  { key: "injection", title: "Injection & Preparation" },
+  { key: "basics", title: "Peptide Basics" },
+  { key: "uses", title: "What Peptides Are Used For" },
+  // Retitled from "Injection & Preparation": its four questions (needle size, insulin needles, bac
+  // water x2) are all about preparing a dose, which is what the reconstitution category page covers.
+  // Keeping the KEY means the existing spokes stay grouped rather than being orphaned by a rename.
+  { key: "injection", title: "Reconstitution & Preparation" },
   { key: "dosing", title: "Dosing" },
   { key: "side-effects", title: "Side Effects" },
-  { key: "trt", title: "Testosterone & TRT" },
   { key: "legality", title: "Legality & Regulation" },
+  { key: "trt", title: "Testosterone & TRT" },
 ];
 
 export interface FaqQuestion {
@@ -79,6 +93,10 @@ export interface FaqQuestion {
   handoff: { href: string; label: string; text: string };
   /** Slugs of related FAQ question pages in the same cluster — rendered as cross-links. */
   related?: string[];
+  /** Marks this entry as the CATEGORY PAGE for a category — the in-depth general answer that sits
+   *  between /faq and the per-compound spokes. The hub features it at the head of its group, and
+   *  every spoke in that category links up to it. At most one per category. */
+  categoryFor?: FaqCategory;
   /** Compound FAQ pages end with a "Where to Buy" vendor block (standing rule). `compoundSlug`
    *  drives the shared <VendorHighlightBlock>'s /prices CTA; the vendor SET is the fixed curated
    *  trio pinned in the page. Injection-prep pages (needle/bac water) omit this. */
@@ -87,8 +105,158 @@ export interface FaqQuestion {
 
 export const faqQuestions: FaqQuestion[] = [
   {
+    slug: "what-are-research-peptides",
+    category: "basics",
+    categoryFor: "basics",
+    question: "What are research peptides?",
+    title: "What Are Research Peptides? Short Chains, Sold for Lab Use",
+    metaDescription:
+      "A peptide is a short chain of amino acids — shorter than a protein, larger than a single amino acid. “Research peptide” is a commercial category, not a chemical one: material sold labelled for laboratory use rather than approved for people.",
+    searchTags: ["what are research peptides","what is a research peptide","research peptides meaning","peptides vs proteins","what does research peptide mean","are peptides drugs"],
+    hubBlurb: "What a peptide actually is chemically, why “research peptide” describes a sales channel rather than a molecule, and how the category relates to approved drugs.",
+    lede:
+      "A peptide is a short chain of amino acids — longer than a single amino acid, shorter than a protein, with the boundary drawn loosely around fifty residues. “Research peptide” is not a chemical category at all: it describes how the material is sold, labelled for laboratory use rather than approved for people.",
+    body: [
+      { kind: "heading", text: "The chemistry, briefly" },
+      { kind: "p", text: "Amino acids joined by peptide bonds form a chain. Two make a dipeptide, a handful an oligopeptide, and somewhere past roughly fifty the word becomes protein — a convention rather than a hard line. Length matters practically: short chains are digested in the gut, which is why most are studied by injection, and they clear quickly, which is why dosing intervals differ so widely between compounds." },
+      { kind: "p", text: "Sequence determines everything else. BPC-157 is fifteen amino acids; semaglutide is a modified GLP-1 analogue engineered for a week-long half-life. Both are peptides. Almost nothing else about them is comparable, which is why this site keeps a page per compound rather than a page about peptides." },
+      { kind: "heading", text: "“Research peptide” describes a channel, not a molecule" },
+      { kind: "p", text: "The phrase is commercial. It marks material sold labelled for laboratory use — not evaluated, not approved, and not manufactured to pharmaceutical standards by default. The same molecule can exist in both worlds: semaglutide is an approved medicine under brand names and is also sold as research-grade powder. The chemistry does not change across that line; the regulatory status, the quality assurance and the legal position all do." },
+      { kind: "p", text: "That is why purity documentation carries the weight it does here. With no approval process standing behind a vial, third-party certificates are the only evidence of what is in it." },
+      { kind: "cta", text: "How vendors are assessed on exactly that evidence is set out in the", href: "/methodology", label: "methodology" },
+      { kind: "heading", text: "Approved, investigational, or neither" },
+      { kind: "list", items: [
+        "Approved — a regulator has reviewed the evidence and cleared a specific product for a specific use. Semaglutide and tirzepatide are here.",
+        "Investigational — in trials, with no approval anywhere yet. Retatrutide and cagrilintide are here.",
+        "Neither — studied to varying depths, sometimes for decades, but never taken through a completed approval process. Most of the compounds people mean by “research peptide” sit here.",
+      ]},
+      { kind: "p", text: "The third group is the widest and the most uneven. Some have substantial animal literature and no human trials; others have early human data that stopped. What they share is the absence of a regulator's verdict, which is a different thing from a negative one." },
+    ],
+    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
+    related: ["are-research-peptides-legal","what-size-needle-for-peptides"],
+  },
+  {
+    slug: "what-are-peptides-used-for",
+    category: "uses",
+    categoryFor: "uses",
+    question: "What are peptides used for?",
+    title: "What Are Peptides Used For? What the Research Actually Studied",
+    metaDescription:
+      "Research peptides cluster into a handful of areas — metabolic and weight, tissue repair, growth-hormone signalling, cognition, and pigmentation. What matters per compound is which of those a trial actually tested, and how far that testing went.",
+    searchTags: ["what are peptides used for","what do research peptides do","peptide uses","what is bpc-157 used for","peptides for recovery","peptide research areas"],
+    hubBlurb: "The research areas peptides cluster into, and why “used for” on this site means what a study examined rather than what a vendor advertises.",
+    lede:
+      "Research peptides cluster into a few areas: metabolic and weight regulation, tissue repair, growth-hormone signalling, cognition, and pigmentation. What a given compound is “used for” on this site means what the published research examined — which is frequently narrower than the claims made around it.",
+    body: [
+      { kind: "heading", text: "The clusters" },
+      { kind: "list", items: [
+        "Metabolic and weight — the incretin family, where the evidence is deepest because these compounds went through commercial drug development.",
+        "Tissue repair and recovery — largely animal literature, often extensive, with human trials scarce.",
+        "Growth-hormone signalling — secretagogues that raise endogenous GH rather than supplying it, with older clinical work behind several of them.",
+        "Cognition and mood — a cluster where much of the human data was generated outside Western regulatory systems and is harder to appraise.",
+        "Pigmentation and skin — a small group where the mechanism is well characterised and the safety literature is thin.",
+      ]},
+      { kind: "heading", text: "What “studied for” is doing in that sentence" },
+      { kind: "p", text: "A compound being studied for something is not evidence that it achieves it. Trials fail, and a large share of the literature behind these compounds is preclinical — cells and animals, where a mechanism can be real and still not translate. Each profile states the evidence stage rather than flattening everything into “research shows.”" },
+      { kind: "p", text: "The gap between the studied use and the marketed use is where most confusion on this subject originates. A peptide investigated in a rat tendon model becomes, three retellings later, a recovery product. The intermediate steps — does it work in humans, at what exposure, with what safety — are exactly the ones missing." },
+      { kind: "cta", text: "For how the evidence behind each compound is weighed and labelled, see the", href: "/methodology", label: "methodology" },
+      { kind: "heading", text: "Why the per-compound page is the real answer" },
+      { kind: "p", text: "Grouping by research area is useful for orientation and misleading past that point. Two compounds in the same cluster can differ by decades of evidence: within the metabolic group, one has completed Phase 3 trials with published outcomes and another has never been given to a human. The cluster tells you what question was being asked, not what answer came back." },
+    ],
+    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
+    related: ["what-are-research-peptides","are-research-peptides-legal"],
+  },
+  {
+    slug: "how-are-peptides-reconstituted",
+    category: "injection",
+    categoryFor: "injection",
+    question: "How are peptides reconstituted?",
+    title: "How Are Peptides Reconstituted? The Arithmetic, Step by Step",
+    metaDescription:
+      "Reconstitution is arithmetic, not protocol: the water sets the concentration and the concentration sets the syringe units. Any volume works. Bacteriostatic versus sterile water, the mechanics, and why the vial contents never change.",
+    searchTags: ["how to reconstitute peptides","peptide reconstitution","how much bac water","mixing peptides","bacteriostatic water peptides","reconstitution calculator"],
+    hubBlurb: "Why any volume works, what the water actually changes, and the handling steps that protect the material — the general version of the per-compound maths.",
+    lede:
+      "Reconstitution is arithmetic rather than protocol. A vial holds a fixed mass of lyophilised powder; the water added is a solvent that sets how concentrated the solution becomes. Any volume works, because the amount of peptide drawn for a given dose is identical either way — only the number of syringe units changes.",
+    body: [
+      { kind: "heading", text: "What the water changes, and what it does not" },
+      { kind: "p", text: "Adding more water lowers the concentration and raises the units measured for the same milligram amount. It does not dilute the dose, add anything, or make the material weaker. The only thing being optimised is legibility on the syringe barrel: a standard 100-unit insulin syringe holds 1 mL, so a combination that pushes one measurement past 100 units means drawing twice." },
+      { kind: "p", text: "The arithmetic is one line. Units equal the dose in milligrams divided by the concentration in milligrams per millilitre, multiplied by one hundred. Everything else about reconstitution follows from that." },
+      { kind: "cta", text: "To run it for a specific vial size and volume rather than by hand, use the", href: "/calculator", label: "dosage calculator" },
+      { kind: "heading", text: "Bacteriostatic versus sterile water" },
+      { kind: "p", text: "Bacteriostatic water contains 0.9% benzyl alcohol, a preservative that inhibits bacterial growth and permits a vial to be entered more than once. Sterile water has no preservative and is single-use: every entry after the first introduces organisms into a medium that will not suppress them. Where a vial is measured out across several occasions, that preservative is the entire distinction between the two." },
+      { kind: "heading", text: "Handling" },
+      { kind: "list", items: [
+        "Both rubber stoppers are swabbed with alcohol and allowed to dry — wiping while wet moves contaminants rather than killing them.",
+        "The water is aimed down the inside wall of the glass rather than onto the powder; a stream striking lyophilised peptide directly can denature it.",
+        "The vial is swirled until dissolved rather than shaken, because peptides are sensitive to the shear forces agitation creates.",
+        "A clear solution is expected; particulates or cloudiness after full dissolution indicate the vial should not be used.",
+        "Reconstituted material is refrigerated. The lyophilised powder is comparatively stable; the solution is not.",
+      ]},
+      { kind: "p", text: "These are mechanical steps, and they are the one part of this subject where an instruction is simply an instruction. Nothing here depends on which compound is in the vial." },
+      { kind: "heading", text: "Where the per-compound pages differ" },
+      { kind: "p", text: "Vial sizes vary, and the dose points worth tabulating vary with them — a compound with a published trial schedule has meaningful milligram figures to convert, and one without has none. That is why the reference tables live on the individual pages rather than here." },
+    ],
+    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
+    related: ["how-much-bac-water-for-peptides","what-size-needle-for-peptides","can-you-use-insulin-needles-for-peptides"],
+  },
+  {
+    slug: "how-are-peptides-dosed",
+    category: "dosing",
+    categoryFor: "dosing",
+    question: "How are peptides dosed?",
+    title: "How Are Peptides Dosed? Trial Figures Versus Convention",
+    metaDescription:
+      "Two different kinds of figure circulate: what a trial or approved label established, and what a research community conventionally practises. They are not the same claim, and for most peptides only the second exists.",
+    searchTags: ["how are peptides dosed","peptide dosing","peptide dosage guide","how often to inject peptides","peptide dosing schedule","peptide half life dosing"],
+    hubBlurb: "Why two kinds of dosing figure circulate, how to tell them apart, and what half-life has to do with injection frequency.",
+    lede:
+      "Two different kinds of figure circulate, and confusing them is the central problem. One is what a clinical trial or an approved label actually established. The other is what a research community conventionally practises. For most research peptides only the second exists — and a convention is a practice that circulates, not a finding.",
+    body: [
+      { kind: "heading", text: "Telling the two apart" },
+      { kind: "p", text: "A trial figure comes with a protocol, a participant count, and published outcomes; it can be checked. A convention comes with repetition. Both are worth reporting, and this site reports both while labelling which is which — an honest absence is more useful than a plausible number filling the gap." },
+      { kind: "p", text: "The tell is attribution. Where a figure can be traced to a named trial or a product label, the page says so. Where it cannot, the page says that instead, rather than borrowing authority from the fact that a number is widely repeated." },
+      { kind: "heading", text: "Why frequency varies so much" },
+      { kind: "p", text: "Half-life sets the interval. A compound cleared in under an hour cannot hold a steady concentration on weekly administration, which is why several growth-hormone secretagogues appear in multiple-times-daily schedules. Engineered incretins carry structural modifications that extend half-life to days, which is what makes once-weekly administration coherent for them." },
+      { kind: "p", text: "Where a schedule escalates in steps rather than starting at its maintenance figure, that is usually tolerability rather than efficacy: the published rationale is generally that starting high raises side-effect rates without improving outcomes." },
+      { kind: "cta", text: "To convert any milligram figure into syringe units, use the", href: "/calculator", label: "dosage calculator" },
+      { kind: "heading", text: "What this site will not do" },
+      { kind: "p", text: "It will not tell anyone what to take. There is a real difference between reporting that a convention exists and instructing a reader to follow it, and the whole standard rests on that line. A figure appearing on a page is not an endorsement of it, and none of this is medical advice." },
+      { kind: "p", text: "For compounds with no completed human dosing trial — which is most of them — the honest answer to “how is this dosed” begins by saying that no trial established a dose, and then reports what circulates anyway. Both halves are true and the page needs both." },
+    ],
+    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
+    related: ["how-often-is-bpc-157-dosed","how-often-is-tb-500-dosed","how-is-retatrutide-dosed-in-research"],
+  },
+  {
+    slug: "what-are-the-side-effects-of-peptides",
+    category: "side-effects",
+    categoryFor: "side-effects",
+    question: "What are the side effects of peptides?",
+    title: "What Are the Side Effects of Peptides? What Is Known, and What Isn’t",
+    metaDescription:
+      "For most research peptides no human trial has characterised a side-effect profile at all. Where effects are documented they are compound-specific — the incretins have trial-scale safety data, most others have almost none.",
+    searchTags: ["peptide side effects","are peptides safe","research peptide side effects","peptide risks","do peptides have side effects","peptide safety"],
+    hubBlurb: "Why a general answer is mostly an absence, what the documented effects look like where they exist, and why injection-site reactions are the one common thread.",
+    lede:
+      "For most research peptides, no human trial has characterised a side-effect profile at all — so the honest general answer is that it is largely unknown. Where effects are documented, they are compound-specific: the incretin drugs carry trial-scale safety data, and most other compounds carry almost none.",
+    body: [
+      { kind: "heading", text: "Why the general answer is an absence" },
+      { kind: "p", text: "Side-effect profiles come from systematic collection during controlled trials. Compounds that never completed that process have no such dataset, and what circulates instead is self-report — uncontrolled, unblinded, and structurally unable to detect anything rare, delayed, or silent. Absence of reported effects in that setting is not evidence of safety; it is mostly evidence that nobody was measuring." },
+      { kind: "p", text: "Preclinical work has the opposite limitation. Animal safety data can be extensive and still not transfer, because dose scaling, metabolism and exposure duration all differ." },
+      { kind: "heading", text: "Where real data exists" },
+      { kind: "p", text: "The incretin class is the exception. Gastrointestinal effects — nausea, vomiting, diarrhoea, constipation — are the most frequently reported in those trials, generally most pronounced during dose escalation. Those profiles come from thousands of participants under observation, which is a categorically different evidential basis from the rest of this field." },
+      { kind: "p", text: "Injection-site reactions are the one thread running across almost everything administered subcutaneously: localised redness, irritation or swelling, independent of what is in the syringe." },
+      { kind: "heading", text: "The questions the literature has not closed" },
+      { kind: "p", text: "Some compounds raise theoretical concerns their evidence base cannot resolve — growth-signalling pathways and angiogenic mechanisms both prompt long-term questions that short studies were never designed to answer. Those pages say the question is open rather than answering it in either direction, because an unresolved question reported as resolved is the more damaging error." },
+      { kind: "p", text: "Purity is a separate hazard from pharmacology. With no approval process standing behind a vial, contamination and mislabelling are failure modes that have nothing to do with the molecule itself." },
+    ],
+    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
+    related: ["thymosin-beta-4-side-effects","igf-1-lr3-side-effects","klow-peptide-blend-side-effects"],
+  },
+  {
     slug: "are-research-peptides-legal",
     category: "legality",
+    categoryFor: "legality",
     question: "Are research peptides legal in the United States?",
     title: "Are Research Peptides Legal in the US? The Three Lanes, Explained",
     metaDescription:
