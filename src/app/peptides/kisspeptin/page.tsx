@@ -8,6 +8,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/kisspeptin",
@@ -42,9 +43,7 @@ const faqs = [
     a: (
       <>
         Kisspeptin is sold by specialty research-peptide vendors as a research-use-only material. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>
         .
       </>
     ),
@@ -148,7 +147,7 @@ const sections = [
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           These are clinical-trial parameters, not an at-home regimen — kisspeptin is research-use-only and its administration in studies is medically supervised. Need to plan reconstitution math for research use? See the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>{" "}
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>{" "}
           and the{" "}
           <Link href="/guides/syringes-and-injection" className="text-[#3A759F] hover:underline">syringes and injection technique</Link> guide.
         </p>
@@ -203,9 +202,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all {activeVendorCount} verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all {activeVendorCount} verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -401,9 +398,7 @@ export default function KisspeptinPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
         </div>

@@ -7,6 +7,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/semaglutide-bpc-157",
@@ -63,9 +64,7 @@ const faqs = [
         Both compounds are available separately from research peptide vendors. Because they are not
         pre-blended, researchers source two vials independently. PP maintains a list of vetted vendors
         with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>
         .
       </>
     ),
@@ -247,9 +246,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate reconstitution and draw volumes? Use the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">
-            dosage calculator &rarr;
-          </Link>
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>
           .
         </p>
       </div>
@@ -295,9 +292,7 @@ const sections = [
           Tirzepatide is a dual GIP/GLP-1 receptor agonist with superior weight-loss efficacy in
           trials (~20–22% vs ~15%). Researchers choosing tirzepatide over semaglutide for the GLP-1
           component apply the same BPC-157 rationale. See{" "}
-          <Link href="/peptides/tirzepatide-bpc-157" className="text-[#3A759F] hover:underline">
-            Tirzepatide + BPC-157 &rarr;
-          </Link>
+          <NavLink href="/peptides/tirzepatide-bpc-157" className="text-[#3A759F] hover:underline">Tirzepatide + BPC-157</NavLink>
           .
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -316,9 +311,7 @@ const sections = [
           Adding TB-500 to the BPC-157 component broadens connective-tissue coverage via actin-mediated
           cellular migration. Relevant for researchers experiencing tendon or joint stress during rapid
           weight loss or who are adding progressive resistance training. See{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">
-            Wolverine Stack &rarr;
-          </Link>
+          <NavLink href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</NavLink>
           .
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -483,9 +476,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -826,9 +817,7 @@ export default function SemaglutideBpc157Page() {
               <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span>{" "}
               Both compounds are sold separately by research peptide vendors. Neither is available
               as a pre-blended vial. See{" "}
-              <Link href="/coupons" className="text-[#3A759F] hover:underline">
-                Verified Discount Codes &rarr;
-              </Link>{" "}
+              <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
               for current options.
             </p>
           </div>

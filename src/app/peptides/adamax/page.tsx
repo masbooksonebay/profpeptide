@@ -8,6 +8,7 @@ import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/adamax",
@@ -48,9 +49,7 @@ const faqs = [
     a: (
       <>
         Adamax is sold by a small number of specialty research-peptide vendors as research-grade material. Given the absence of any published characterization, third-party testing (HPLC purity and mass-spectrometric identity) matters more than usual. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>
         .
       </>
     ),
@@ -148,7 +147,7 @@ const sections = [
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           If you are reconstituting a vial, the arithmetic (mg per vial and bacteriostatic-water volume to syringe units) is the same as any peptide &mdash; use the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>. Because no dose is established for Adamax, treat any resulting number as arbitrary until real dosing data exists.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>. Because no dose is established for Adamax, treat any resulting number as arbitrary until real dosing data exists.
         </p>
       </div>
     ),
@@ -344,9 +343,7 @@ const sections = [
           Prefer vendors that publish batch-specific Certificates of Analysis with both purity and identity data. Because there is no reference literature for Adamax, an identity confirmation (mass spectrometry) is the only way a vendor can substantiate what the compound actually is.
         </p>
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all {activeVendorCount} verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all {activeVendorCount} verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -519,7 +516,7 @@ export default function AdamaxPage() {
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             Adamax is a research compound sold by specialty peptide vendors and discussed in nootropic communities as a modified analog of{" "}
             <Link href="/peptides/semax" className="text-[#3A759F] hover:underline">Semax</Link>. Vendors describe it as N-acetyl-Semax bearing a C-terminal adamantane group &mdash; sold under vendor names such as N-Acetyl Semax Adamantane or NA-Semax-Adamantane, with no official INN or code designation &mdash; two chemical modifications intended to make it more lipophilic, more resistant to enzymatic breakdown, and longer-acting than Semax. That description is consistent across vendor sources but has not been confirmed in any peer-reviewed publication. Critically, there is no published scientific literature on Adamax itself: a PubMed search returns no studies on the compound, and every claim about its effects, potency, or pharmacokinetics traces to vendor marketing or anecdotal user reports rather than controlled research. What follows describes what Adamax is <em>marketed as</em>, places it in the context of its real, well-studied parent Semax (clearly labeled as Semax data), and is explicit about where evidence simply does not exist. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
+            <NavLink href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics</NavLink>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
@@ -541,9 +538,7 @@ export default function AdamaxPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
         </div>

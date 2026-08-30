@@ -6,6 +6,7 @@ import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { vendors } from "@/data/vendors";
 import { vendorDiscountPct } from "@/data/prices";
+import BackLink from "@/components/BackLink";
 
 
 export default function ParticlePeptidesCouponPage() {
@@ -13,9 +14,7 @@ export default function ParticlePeptidesCouponPage() {
  const v = vendors["particle-peptides"];
  return (
  <div className="section max-w-3xl">
- <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
- &larr; Back to Discount Codes
- </Link>
+ <BackLink href="/coupons">Back to Discount Codes</BackLink>
       <CouponBreadcrumb slug="particle-peptides" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">

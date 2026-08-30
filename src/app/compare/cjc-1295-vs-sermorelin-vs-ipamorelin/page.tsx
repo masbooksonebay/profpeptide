@@ -4,6 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import BackLink from "@/components/BackLink";
 
 export const metadata = buildPageMetadata({
   path: "/compare/cjc-1295-vs-sermorelin-vs-ipamorelin",
@@ -40,7 +41,7 @@ export default function CJCvsSermorelinvsIpamorelinPage() {
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Comparisons", path: "/compare" }, { name: "CJC-1295 vs Sermorelin vs Ipamorelin — Growth Hormone Peptide Comparison" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-5xl">
-      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <BackLink href="/compare">Back to Comparisons</BackLink>
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">CJC-1295 vs Sermorelin vs Ipamorelin &mdash; Growth Hormone Peptide Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">CJC-1295, Sermorelin, and Ipamorelin are the three most researched growth hormone secretagogue peptides. CJC-1295 and Sermorelin are both GHRH analogs &mdash; they mimic growth hormone releasing hormone. Ipamorelin is a GHRP &mdash; it works through a different receptor (GHS-R1a) to trigger GH pulses. Understanding their differences is key to understanding why they&apos;re often studied together.</p>
 

@@ -18,6 +18,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { CategoryIcon } from "@/components/CategoryIcon";
+import NavLink from "@/components/NavLink";
 
 export interface HubCategory {
   slug: string;
@@ -59,9 +60,23 @@ export function HubCategoryBrowser({
         <button
           type="button"
           onClick={() => setFilter(null)}
-          className="text-xs text-[#3A759F] hover:underline mb-8 inline-block"
+          className="text-xs text-[#3A759F] hover:underline mb-8 inline-flex items-center gap-1"
         >
-          &larr; Show all categories
+          {/* Glyph only, shared with BackLink — this is NOT a BackLink. It is a <button> that clears
+              a filter: no href, no navigation, so routing it through a Link-based component would
+              mean inventing an href for it. The chevron is shared so the site speaks one directional
+              language; the behaviour stays a state reset. */}
+          <svg
+            className="w-3.5 h-3.5 shrink-0"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          Show all categories
         </button>
       )}
       <div className="space-y-10">
@@ -81,9 +96,7 @@ export function HubCategoryBrowser({
               ))}
             </ul>
             {variant === "peptides" && cat.slug === "bioregulators" && (
-              <Link href="/bioregulators" className="text-sm text-[#3A759F] hover:underline mt-3 inline-block">
-                Read the bioregulator guide &rarr;
-              </Link>
+              <NavLink href="/bioregulators" className="text-sm text-[#3A759F] hover:underline mt-3 inline-block">Read the bioregulator guide</NavLink>
             )}
           </div>
         ))}

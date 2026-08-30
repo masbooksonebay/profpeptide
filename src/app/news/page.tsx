@@ -2,6 +2,7 @@ import Link from "next/link";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import { articles } from "@/data/news";
+import NavLink from "@/components/NavLink";
 
 export const metadata = {
   alternates: { canonical: "/news" },
@@ -81,12 +82,10 @@ export default function NewsPage() {
                 </summary>
                 <div className="px-5 pb-5">
                   <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed">{a.excerpt}</p>
-                  <Link
+                  <NavLink
                     href={`/news/${a.slug}`}
                     className="text-xs font-medium text-[#3A759F] mt-3 inline-block hover:underline"
-                  >
-                    Read more &rarr;
-                  </Link>
+                  >Read more</NavLink>
                 </div>
               </details>
             ),

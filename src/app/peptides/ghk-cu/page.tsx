@@ -8,6 +8,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/ghk-cu",
@@ -58,9 +59,7 @@ const faqs = [
     a: (
       <>
         Topical GHK-Cu is widely available in cosmetic skincare products at 1–3% concentrations. Injectable research-grade GHK-Cu is sold by specialty peptide vendors (note FDA restriction on compounded injectable as of 2023). PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>
         .
       </>
     ),
@@ -169,7 +168,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -419,9 +418,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all {activeVendorCount} verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all {activeVendorCount} verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -599,7 +596,7 @@ export default function GHKCuPage() {
             blend for skin and recovery, or in the broader{" "}
             <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</Link>{" "}
             blend. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
+            <NavLink href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics</NavLink>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
@@ -619,9 +616,7 @@ export default function GHKCuPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
         </div>
@@ -687,7 +682,7 @@ export default function GHKCuPage() {
       <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/compare/bpc-157-vs-ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157 vs GHK-Cu &rarr;</Link>
+        <NavLink href="/compare/bpc-157-vs-ghk-cu" className="text-sm font-medium text-[#3A759F] hover:underline">BPC-157 vs GHK-Cu</NavLink>
         </div>
       </div>
 

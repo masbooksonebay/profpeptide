@@ -4,6 +4,8 @@ import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import BackLink from "@/components/BackLink";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/compare/retatrutide-vs-tirzepatide",
@@ -57,7 +59,7 @@ export default function RetatrutideVsTirzepatidePage() {
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Comparisons", path: "/compare" }, { name: "Retatrutide vs Tirzepatide — GLP Triple Agonist vs Dual Agonist" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <BackLink href="/compare">Back to Comparisons</BackLink>
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Retatrutide vs Tirzepatide &mdash; Triple Agonist vs Dual Agonist Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">Retatrutide</Link> and <Link href="/peptides/tirzepatide" className="text-[#3A759F] hover:underline">Tirzepatide</Link> are both injectable peptides for weight loss and metabolic health, but they work on different numbers of receptors. Tirzepatide is FDA-approved and activates two receptors (GLP-1 and GIP). Retatrutide is investigational and activates three (GLP-1, GIP, and glucagon), which appears to drive even greater weight loss in trials. Here&apos;s how they compare.</p>
 
@@ -142,9 +144,9 @@ export default function RetatrutideVsTirzepatidePage() {
       <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-5 mb-8">
         <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Related comparisons</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
-          <Link href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Semaglutide &rarr;</Link>
-          <Link href="/compare/semaglutide-vs-tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide &rarr;</Link>
+          <NavLink href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide</NavLink>
+          <NavLink href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Semaglutide</NavLink>
+          <NavLink href="/compare/semaglutide-vs-tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide</NavLink>
         </div>
       </div>
 

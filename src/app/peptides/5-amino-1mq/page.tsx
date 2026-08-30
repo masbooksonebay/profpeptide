@@ -7,6 +7,7 @@ import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/5-amino-1mq",
@@ -159,9 +160,7 @@ const sections = [
         <VendorHighlightBlock compoundSlug="5-amino-1mq" />
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Prof. Peptide maintains a vetted list of peptide and research-compound vendors with verified discount codes. See{" "}
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            Verified Discount Codes &rarr;
-          </Link>{" "}
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
           for current options.
         </p>
       </div>
@@ -325,7 +324,7 @@ export default function FiveAmino1MQPage() {
             and{" "}
             <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-c</Link>, and it is one component of the{" "}
             <Link href="/peptides/nad-mots-c-5-amino-1mq" className="text-[#3A759F] hover:underline">Metabolic Blend (NAD+ / MOTS-c / 5-Amino-1MQ)</Link>. All evidence is preclinical, and research-grade 5-Amino-1MQ is unapproved, Research Use Only material &mdash; not for human use. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
+            <NavLink href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics</NavLink>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
@@ -343,9 +342,7 @@ export default function FiveAmino1MQPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> 5-Amino-1MQ is an unapproved research chemical sold by specialty vendors for laboratory use only. PP maintains a vetted list of vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
         </div>

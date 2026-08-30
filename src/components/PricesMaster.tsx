@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { CategoryIcon } from "@/components/CategoryIcon";
 import { priceIndexByCategory, type Unit } from "@/data/prices";
+import NavLink from "@/components/NavLink";
 
 function fmt(n: number): string {
   return "$" + n.toFixed(2);
@@ -111,9 +112,7 @@ export default function PricesMaster() {
                   {/* compare link — spans the second row on mobile; own column on desktop.
                       The number lives in the vendor-count column, so the link is action-only
                       ("Compare →"); it reads correctly for any count, including 1 vendor. */}
-                  <Link href={`/prices/${c.slug}`} className="col-span-2 sm:col-span-1 justify-self-start text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">
-                    Compare &rarr;
-                  </Link>
+                  <NavLink href={`/prices/${c.slug}`} className="col-span-2 sm:col-span-1 justify-self-start text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">Compare</NavLink>
                 </div>
               ))}
             </div>

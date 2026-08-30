@@ -6,6 +6,7 @@ import { computeReconstitution } from '@/lib/reconstitution';
 import { compounds, mgDefaultFor } from '@/data/compounds';
 import CompoundCombobox from '@/components/CompoundCombobox';
 import { addEntry } from '@/lib/logStore';
+import NavLink from "@/components/NavLink";
 
 interface Results {
   concentration: number;
@@ -139,7 +140,7 @@ export default function CalculatorPage() {
                   onChange={(e) => setWaterVolume(e.target.value)}
                   className="w-full px-4 py-2.5 rounded-md border border-gray-300 dark:border-slate-600 text-sm text-gray-800 dark:text-slate-200 placeholder-gray-400 dark:placeholder-slate-500 bg-gray-50 dark:bg-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#3A759F] transition"
                 />
-                <Link href="/faq/how-much-bac-water-for-peptides" className="mt-1 inline-block text-xs text-[#3A759F] hover:underline">How much bac water? &rarr;</Link>
+                <NavLink href="/faq/how-much-bac-water-for-peptides" className="mt-1 inline-block text-xs text-[#3A759F] hover:underline">How much bac water?</NavLink>
               </div>
 
               <div>
@@ -246,7 +247,7 @@ export default function CalculatorPage() {
                   {savedMsg && (
                     <span className="text-sm text-green-600 dark:text-green-400">
                       {savedMsg}{' '}
-                      <Link href="/log" className="text-[#3A759F] hover:underline">View Log &rarr;</Link>
+                      <NavLink href="/log" className="text-[#3A759F] hover:underline">View Log</NavLink>
                     </span>
                   )}
                 </div>
@@ -280,8 +281,8 @@ export default function CalculatorPage() {
                 Draw Volume mL &times; 100
               </code>
               <p className="mt-1 text-xs text-gray-400 dark:text-slate-500">Units on U-100 syringe</p>
-              <Link href="/faq/what-size-needle-for-peptides" className="mt-1 inline-block text-xs text-[#3A759F] hover:underline">What size needle? &rarr;</Link>
-              <Link href="/faq/can-you-use-insulin-needles-for-peptides" className="mt-1 block text-xs text-[#3A759F] hover:underline">Can you use insulin needles? &rarr;</Link>
+              <NavLink href="/faq/what-size-needle-for-peptides" className="mt-1 inline-block text-xs text-[#3A759F] hover:underline">What size needle?</NavLink>
+              <NavLink href="/faq/can-you-use-insulin-needles-for-peptides" className="mt-1 block text-xs text-[#3A759F] hover:underline">Can you use insulin needles?</NavLink>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NavLink from "@/components/NavLink";
 
 export interface RelatedLink {
   href: string;
@@ -43,9 +43,7 @@ export default function RelatedLinks({ items }: { items: RelatedLink[] }) {
       <ul className="space-y-2">
         {items.map((i) => (
           <li key={i.href}>
-            <Link href={i.href} className="text-sm text-[#3A759F] hover:underline">
-              {i.label} &rarr;
-            </Link>
+            <NavLink href={i.href} className="text-sm text-[#3A759F] hover:underline">{i.label}</NavLink>
           </li>
         ))}
       </ul>

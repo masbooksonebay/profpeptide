@@ -10,6 +10,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/retatrutide",
@@ -66,9 +67,7 @@ const faqs = [
     a: (
       <>
         Retatrutide is investigational and not available by prescription. Research-grade product is sold by peptide vendors for laboratory use only. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>
         .
       </>
     ),
@@ -169,7 +168,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Common question:</span>{" "}
-          <Link href="/faq/how-often-is-retatrutide-dosed" className="text-[#3A759F] hover:underline">How often is retatrutide dosed? &rarr;</Link>
+          <NavLink href="/faq/how-often-is-retatrutide-dosed" className="text-[#3A759F] hover:underline">How often is retatrutide dosed?</NavLink>
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           If side effects are difficult to tolerate at any step, holding at the current dose for an additional 4 weeks is standard practice and does not appear to reduce long-term outcomes. Some users in research settings split doses into 2–3 smaller injections per week to reduce side effects, though this is not the protocol used in clinical trials.
@@ -179,7 +178,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -477,9 +476,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all {activeVendorCount} verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all {activeVendorCount} verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -675,7 +672,7 @@ export default function RetatrutidePage() {
       <div className="mb-8 p-4 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold text-[#16181B] dark:text-slate-100">Latest research:</span> Phase 3 TRIUMPH-1 results released May 21, 2026 &mdash; 30.3% average weight loss at 104 weeks, comparable to bariatric surgery outcomes.{" "}
-          <Link href="/news/retatrutide-triumph-1-phase-3-results" className="text-[#3A759F] hover:underline">Read the full breakdown &rarr;</Link>
+          <NavLink href="/news/retatrutide-triumph-1-phase-3-results" className="text-[#3A759F] hover:underline">Read the full breakdown</NavLink>
         </p>
       </div>
 
@@ -707,9 +704,7 @@ export default function RetatrutidePage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
         </div>
@@ -777,9 +772,9 @@ export default function RetatrutidePage() {
       <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-        <Link href="/compare/retatrutide-vs-tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Tirzepatide &rarr;</Link>
-        <Link href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Semaglutide &rarr;</Link>
-        <Link href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide &rarr;</Link>
+        <NavLink href="/compare/retatrutide-vs-tirzepatide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Tirzepatide</NavLink>
+        <NavLink href="/compare/retatrutide-vs-semaglutide" className="text-sm font-medium text-[#3A759F] hover:underline">Retatrutide vs Semaglutide</NavLink>
+        <NavLink href="/compare/semaglutide-vs-tirzepatide-vs-retatrutide" className="text-sm font-medium text-[#3A759F] hover:underline">Semaglutide vs Tirzepatide vs Retatrutide</NavLink>
         </div>
       </div>
 

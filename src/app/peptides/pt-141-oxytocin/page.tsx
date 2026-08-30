@@ -7,6 +7,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/pt-141-oxytocin",
@@ -63,9 +64,7 @@ const faqs = [
     a: (
       <>
         PT-141 is available from several research peptide vendors as a lyophilized vial. Oxytocin availability varies &mdash; it is more commonly sourced through compounding pharmacies as a nasal spray or troche than as an injectable research peptide. See the{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>{" "}
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
         page for current vetted vendor options with verified codes.
       </>
     ),
@@ -193,7 +192,7 @@ const sections = [
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
             Need to calculate your dose? Use the{" "}
-            <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+            <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
           </p>
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
@@ -339,9 +338,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -560,9 +557,7 @@ export default function PT141OxytocinPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PT-141 is available from research peptide vendors. Oxytocin is typically sourced through compounding pharmacies. Neither research-grade PT-141 nor compounded oxytocin is equivalent to FDA-approved products. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current vetted vendor options.
           </p>
         </div>

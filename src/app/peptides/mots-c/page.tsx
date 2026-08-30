@@ -10,6 +10,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/mots-c",
@@ -60,9 +61,7 @@ const faqs = [
     a: (
       <>
         MOTS-c is sold by specialty research peptide vendors. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>
         .
       </>
     ),
@@ -165,7 +164,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -410,9 +409,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all {activeVendorCount} verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all {activeVendorCount} verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -578,7 +575,7 @@ export default function MOTScPage() {
         <div className="space-y-4">
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             MOTS-c (short for Mitochondrial ORF of the 12S rRNA Type-c, sometimes written MOTSc) is a 16-amino-acid peptide encoded inside the mitochondrial genome itself &mdash; making it one of the first known mitochondria-derived peptides. Classed as a Mitochondrial-Derived Peptide (MDP) and often described as an AMPK activator or exercise mimetic. Discovered in 2015 at USC, it acts as a hormone-like signal from mitochondria to the rest of the body, regulating metabolism through AMPK pathways (the same master energy regulator activated by metformin and exercise). Research interest has focused on insulin resistance, type 2 diabetes, muscle preservation, and cellular aging. MOTS-c blood levels naturally decline with age, which has made it a candidate for longevity research. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
+            <NavLink href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics</NavLink>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
@@ -598,9 +595,7 @@ export default function MOTScPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
         </div>

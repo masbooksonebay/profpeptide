@@ -6,6 +6,7 @@ import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/aod-9604-mots-c",
@@ -162,7 +163,7 @@ const sections = [
         </div>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate a dose? Convert mg/mcg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -452,9 +453,7 @@ export default function AOD9604MOTScPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sold by specialty research-peptide vendors as two separate compounds, and occasionally as a pre-combined &ldquo;fat-loss&rdquo; or &ldquo;metabolic&rdquo; blend. None of the components are FDA-approved as injectables. See{" "}
-            <Link href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">
-              Verified Peptide Vendors &rarr;
-            </Link>{" "}
+            <NavLink href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">Verified Peptide Vendors</NavLink>{" "}
             for current options.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">

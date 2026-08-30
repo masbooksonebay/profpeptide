@@ -3,6 +3,7 @@ import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import RelatedLinks from "@/components/RelatedLinks";
 import { buildPageMetadata } from "@/lib/seo";
+import BackLink from "@/components/BackLink";
 
 const HEADLINE =
   "The 503B Exclusion of Semaglutide, Tirzepatide, and Liraglutide — and the Three Lanes of Peptide Access";
@@ -35,9 +36,7 @@ export default function GLP1Compounding503A503BThreeLanesPage() {
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "News", path: "/news" }, { name: "The 503B Exclusion and the Three Lanes of Peptide Access" }])} />
 
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
-          &larr; Back to News
-        </Link>
+        <BackLink href="/news">Back to News</BackLink>
 
         <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">August 17, 2026</p>
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">

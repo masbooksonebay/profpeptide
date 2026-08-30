@@ -8,6 +8,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/hexarelin",
@@ -55,7 +56,7 @@ const faqs = [
     a: (
       <>
         Hexarelin is sold by specialty research-peptide vendors. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes &rarr;</Link>.
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>.
       </>
     ),
   },
@@ -158,7 +159,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -362,7 +363,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">See all {activeVendorCount} verified vendors &rarr;</Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all {activeVendorCount} verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -508,7 +509,7 @@ export default function HexarelinPage() {
             Hexarelin (examorelin, or hexarelin acetate; His-D-2-methyl-Trp-Ala-Trp-D-Phe-Lys-NH2) is a potent synthetic hexapeptide growth-hormone secretagogue — a methylated, more stable analog of the original{" "}
             <Link href="/peptides/ghrp-6" className="text-[#3A759F] hover:underline">GHRP-6</Link>. It activates the ghrelin receptor (GHSR-1a) to release a strong GH pulse, but its distinctive feature is a second receptor: hexarelin also binds CD36 in the heart and vasculature, giving it cardioprotective effects in animal models that appear largely independent of GH. Two caveats define its practical use: the GH response desensitizes with continuous dosing (so it is cycled), and its cardiac research — while genuinely interesting — is preclinical. Like{" "}
             <Link href="/peptides/ghrp-2" className="text-[#3A759F] hover:underline">GHRP-2</Link>, it is not fully GH-selective. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
+            <NavLink href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics</NavLink>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">Reported benefits:</p>
@@ -526,7 +527,7 @@ export default function HexarelinPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes &rarr;</Link> for current options.
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink> for current options.
           </p>
         </div>
       </div>

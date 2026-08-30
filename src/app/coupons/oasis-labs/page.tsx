@@ -7,6 +7,7 @@ import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
+import BackLink from "@/components/BackLink";
 
 
 export default function OasisLabsCouponPage() {
@@ -17,9 +18,7 @@ export default function OasisLabsCouponPage() {
   const shopUrl = makeShopUrlFor("oasis-labs");
   return (
  <div className="section max-w-3xl">
- <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
- &larr; Back to Discount Codes
- </Link>
+ <BackLink href="/coupons">Back to Discount Codes</BackLink>
       <CouponBreadcrumb slug="oasis-labs" />
 
  <div className="flex flex-wrap items-center gap-3 mb-1">

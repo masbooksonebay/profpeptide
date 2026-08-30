@@ -6,6 +6,7 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import AmazonCTAButton from "@/components/AmazonCTAButton";
 import { buildPageMetadata } from "@/lib/seo";
+import BackLink from "@/components/BackLink";
 
 export const metadata = buildPageMetadata({
   path: "/supplements/quercetin",
@@ -554,7 +555,7 @@ export default function QuercetinPage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <BackLink href="/supplements">Back to Supplement Library</BackLink>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Quercetin</h1>

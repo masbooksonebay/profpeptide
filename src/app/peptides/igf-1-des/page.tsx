@@ -8,6 +8,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/igf-1-des",
@@ -60,9 +61,7 @@ const faqs = [
     a: (
       <>
         IGF-1 DES is sold only as a research-grade material. In PP&apos;s vetted vendor directory it is currently listed by Swiss Chems &mdash; see the{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>{" "}
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
         page for current options.
       </>
     ),
@@ -395,9 +394,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all {activeVendorCount} verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all {activeVendorCount} verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -565,7 +562,7 @@ export default function Igf1DesPage() {
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             IGF-1 DES &mdash; des(1-3)IGF-1, also called destripeptide IGF-1 &mdash; is a truncated 67-amino-acid analogue of insulin-like growth factor-1, missing the N-terminal tripeptide Gly-Pro-Glu. Deleting that tripeptide (especially the Glu3 residue) sharply lowers its affinity for IGF-binding proteins, so it escapes the sequestration that normally blunts circulating IGF-1 &mdash; making it markedly more potent than intact IGF-1 in cell and rodent studies. Crucially, that potency is an <span className="font-semibold">availability</span> effect, not stronger receptor binding, and the evidence base is almost entirely preclinical: there are essentially no controlled human trials. It is a distinct compound from the approved drug{" "}
             mecasermin (Increlex), which is recombinant full-length IGF-1. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
+            <NavLink href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics</NavLink>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
@@ -583,9 +580,7 @@ export default function Igf1DesPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> IGF-1 DES is a niche research-grade compound with limited coverage among vetted vendors. Compare current prices across the vendors that stock it, or see{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
         </div>

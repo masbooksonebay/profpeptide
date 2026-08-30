@@ -4,6 +4,7 @@ import { PRICES_UPDATED_DATE, priceVendorCount, priceBlends } from "@/data/price
 import PricesMaster from "@/components/PricesMaster";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
+import NavLink from "@/components/NavLink";
 
 const VENDOR_N = priceVendorCount();
 
@@ -49,9 +50,7 @@ export default function PricesPage() {
               <span className="text-xs text-gray-500 dark:text-slate-400 whitespace-nowrap justify-self-end sm:justify-self-start">
                 {b.configs.map((c) => c.config).join(" · ")}
               </span>
-              <Link href={`/prices/${b.slug}`} className="col-span-2 sm:col-span-1 justify-self-start text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">
-                Compare &rarr;
-              </Link>
+              <NavLink href={`/prices/${b.slug}`} className="col-span-2 sm:col-span-1 justify-self-start text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">Compare</NavLink>
             </div>
           ))}
         </div>

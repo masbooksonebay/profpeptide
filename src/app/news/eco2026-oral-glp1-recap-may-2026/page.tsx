@@ -3,6 +3,7 @@ import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import BackLink from "@/components/BackLink";
 
 export const metadata = buildPageMetadata({
   path: "/news/eco2026-oral-glp1-recap-may-2026",
@@ -32,9 +33,7 @@ export default function Eco2026OralGlp1RecapMay2026Page() {
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "News", path: "/news" }, { name: "ECO2026 Recap — Oral GLP-1 Data from Novo, Lilly, and Viking" }])} />
 
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
-          &larr; Back to News
-        </Link>
+        <BackLink href="/news">Back to News</BackLink>
 
         <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">May 17, 2026 &middot; Last updated: May 17, 2026</p>
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-6">

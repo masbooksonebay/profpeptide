@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
@@ -8,6 +7,8 @@ import CompoundPriceTable from "@/components/CompoundPriceTable";
 import BlendPriceTable from "@/components/BlendPriceTable";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
+import BackLink from "@/components/BackLink";
+import NavLink from "@/components/NavLink";
 
 type Entry =
   | { slug: string; name: string; kind: "compound" }
@@ -64,9 +65,7 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
   return (
     <div className="section max-w-4xl">
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Prices", path: "/prices" }, { name: c.name }])} />
-      <Link href="/prices" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
-        &larr; Back to Price Comparison
-      </Link>
+      <BackLink href="/prices">Back to Price Comparison</BackLink>
 
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-2">{c.name} Price Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-2 max-w-2xl">
@@ -79,14 +78,10 @@ export default function CompoundPricePage({ params }: { params: { compound: stri
       {(profiled || family) && (
         <div className="flex flex-wrap items-center gap-4 mb-6 text-sm">
           {profiled && (
-            <Link href={`/peptides/${c.slug}`} className="text-[#3A759F] hover:underline font-medium">
-              Read the {c.name} research profile &rarr;
-            </Link>
+            <NavLink href={`/peptides/${c.slug}`} className="text-[#3A759F] hover:underline font-medium">Read the {c.name} research profile</NavLink>
           )}
           {family && (
-            <Link href={`/prices/${family.slug}`} className="text-[#3A759F] hover:underline font-medium">
-              {family.name}: compare all forms &rarr;
-            </Link>
+            <NavLink href={`/prices/${family.slug}`} className="text-[#3A759F] hover:underline font-medium">{family.name}: compare all forms</NavLink>
           )}
         </div>
       )}

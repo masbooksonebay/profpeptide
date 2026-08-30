@@ -7,6 +7,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/nad-mots-c-5-amino-1mq",
@@ -60,9 +61,7 @@ const faqs = [
     a: (
       <>
         This combination blend is sold by specialty research peptide vendors, typically as a lyophilized powder vial. Availability of the 3-component combined vial varies by vendor &mdash; some stock each component separately. PP maintains a list of vetted vendors with verified discount codes &mdash; see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>
         .
       </>
     ),
@@ -182,7 +181,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -214,14 +213,14 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Epitalon (longevity/anti-aging addition).</span> Epitalon is a synthetic tetrapeptide studied for telomerase activation, pineal regulation, and anti-aging effects. In the longevity framing, Epitalon adds a different mechanistic angle (telomere/epigenetic) to this blend&apos;s mitochondrial/NAD+ focus. See{" "}
-          <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon &rarr;</Link>.
+          <NavLink href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</NavLink>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time-restricted feeding or caloric restriction.</span> AMPK activation from MOTS-c is synergistic with the fasted metabolic state produced by time-restricted feeding. The NNMT inhibition from 5-Amino-1MQ was studied in the context of diet-induced obesity; a low-glycemic dietary context maximizes the relevance of its adipocyte effects.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid: redundant NAD+ precursors.</span> Stacking oral NMN or NR supplementation on top of direct injectable NAD+ creates potential for oversaturation of the NAD+ pathway and unnecessary PARP activation. Researchers tracking NAD+ levels should choose one primary replenishment strategy.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid: other GLP-1 agonists or metabolic injectables.</span> Compounds like semaglutide or tirzepatide act on a different metabolic axis (GLP-1/GIP receptor signaling, appetite and gastric motility) and can be stacked contextually, but their metabolic effects overlap in ways that make dosing harder to attribute. See the{" "}
-          <Link href="/peptides/semaglutide-bpc-157" className="text-[#3A759F] hover:underline">Semaglutide + BPC-157 blend &rarr;</Link>{" "}
+          <NavLink href="/peptides/semaglutide-bpc-157" className="text-[#3A759F] hover:underline">Semaglutide + BPC-157 blend</NavLink>{" "}
           or{" "}
-          <Link href="/peptides/tirzepatide-bpc-157" className="text-[#3A759F] hover:underline">Tirzepatide + BPC-157 blend &rarr;</Link>{" "}
+          <NavLink href="/peptides/tirzepatide-bpc-157" className="text-[#3A759F] hover:underline">Tirzepatide + BPC-157 blend</NavLink>{" "}
           if GLP-1-mediated weight loss is the primary goal.
         </li>
       </ol>
@@ -338,9 +337,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -527,9 +524,7 @@ export default function MetabolicBlendPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> The three components (NAD+, MOTS-c, 5-Amino-1MQ) are sold by specialty research peptide vendors; our data does not confirm a pre-blended vial. None of the three components are FDA-approved as injectables. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
         </div>

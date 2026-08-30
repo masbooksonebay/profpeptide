@@ -8,6 +8,7 @@ import { vendors } from "@/data/vendors";
 import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
+import BackLink from "@/components/BackLink";
 
 
 export default function TreasureCoastPeptidesCouponPage() {
@@ -20,9 +21,7 @@ export default function TreasureCoastPeptidesCouponPage() {
   const shopUrl = makeShopUrlFor("treasure-coast-peptides");
   return (
     <div className="section max-w-3xl">
-      <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
-        &larr; Back to Discount Codes
-      </Link>
+      <BackLink href="/coupons">Back to Discount Codes</BackLink>
       <CouponBreadcrumb slug="treasure-coast-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { vendors, type Vendor } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
+import NavLink from "@/components/NavLink";
 
 // Rows are DERIVED from the vendor registry (src/data/vendors.ts) — every active vendor
 // auto-appears, so this surface can never silently drift out of completeness. Each cell maps
@@ -143,9 +144,7 @@ export default function VendorTestingIndexPage() {
           <button onClick={downloadCsv} className="btn-primary text-sm px-4 py-2">
             Download as CSV
           </button>
-          <Link href="/contact" className="text-sm font-medium text-[#3A759F] hover:underline">
-            Submit a correction or a COA &rarr;
-          </Link>
+          <NavLink href="/contact" className="text-sm font-medium text-[#3A759F] hover:underline">Submit a correction or a COA</NavLink>
         </div>
       </div>
 

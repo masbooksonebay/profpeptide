@@ -3,6 +3,8 @@ import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import BackLink from "@/components/BackLink";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/news/rfk-peptide-update-april-2026",
@@ -31,9 +33,7 @@ export default function RFKPeptideUpdatePage() {
       }} />
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "News", path: "/news" }, { name: "RFK’s Peptide Ruling: Where Things Stand in April 2026" }])} />
       <div className="section max-w-3xl">
-        <Link href="/news" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
-          &larr; Back to News
-        </Link>
+        <BackLink href="/news">Back to News</BackLink>
 
         <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">April 12, 2026 &middot; Last updated: April 12, 2026</p>
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-6">
@@ -88,7 +88,7 @@ export default function RFKPeptideUpdatePage() {
 
         <div className="mt-8 p-4 bg-[#3A759F]/10 border border-[#3A759F]/20 rounded-lg">
           <p className="text-sm text-gray-600 dark:text-slate-300">
-            Read our original breakdown: <Link href="/news/rfk-peptide-ban-2026" className="text-[#3A759F] hover:underline font-medium">RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List &rarr;</Link>
+            Read our original breakdown: <NavLink href="/news/rfk-peptide-ban-2026" className="text-[#3A759F] hover:underline font-medium">RFK Jr. Announces 14 Peptides Coming Off FDA Restricted List</NavLink>
           </p>
         </div>
 

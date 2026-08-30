@@ -6,6 +6,7 @@ import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/semax-selank",
@@ -68,9 +69,7 @@ const faqs = [
     a: (
       <>
         Semax and Selank are sold by specialty research peptide vendors; our data does not confirm a pre-blended Semax-Selank vial. Where a combined preparation is used, it is typically reconstituted into a nasal spray (a 20 mg total vial holds 10 mg of each peptide). Quality varies dramatically by source; third-party HPLC testing is recommended. PP maintains a list of vetted vendors with verified discount codes — see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>
         .
       </>
     ),
@@ -207,7 +206,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate concentration and per-spray dose? Convert mg to spray volume with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -529,9 +528,7 @@ export default function SemaxSelankPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Semax and Selank are sold by specialty research peptide vendors; a combined preparation, where used, is typically reconstituted into a nasal spray. Neither component is FDA-approved (both are approved in Russia). See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
         </div>

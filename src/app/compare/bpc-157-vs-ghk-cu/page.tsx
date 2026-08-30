@@ -4,6 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import BackLink from "@/components/BackLink";
 
 export const metadata = buildPageMetadata({
   path: "/compare/bpc-157-vs-ghk-cu",
@@ -42,7 +43,7 @@ export default function BPC157vsGHKCuPage() {
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Comparisons", path: "/compare" }, { name: "BPC-157 vs GHK-Cu — Healing Peptide Comparison" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <BackLink href="/compare">Back to Comparisons</BackLink>
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">BPC-157 vs GHK-Cu &mdash; Healing &amp; Tissue Repair Peptide Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">BPC-157 and GHK-Cu are both studied for tissue repair and healing, but they work through completely different mechanisms and have distinct primary applications. BPC-157 originates from gastric biology and excels in systemic tissue repair. GHK-Cu is a copper-binding tripeptide with extraordinary gene regulatory activity, primarily studied for skin, wound healing, and anti-aging.</p>
 

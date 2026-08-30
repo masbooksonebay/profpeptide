@@ -4,6 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import BackLink from "@/components/BackLink";
 
 export const metadata = buildPageMetadata({
   path: "/compare/kpv-vs-bpc-157",
@@ -43,7 +44,7 @@ export default function KPVvsBPC157Page() {
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Comparisons", path: "/compare" }, { name: "KPV vs BPC-157: Anti-Inflammatory vs Tissue Repair" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <BackLink href="/compare">Back to Comparisons</BackLink>
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">KPV vs BPC-157 &mdash; Anti-Inflammatory vs Tissue Repair</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/kpv" className="text-[#3A759F] hover:underline">KPV</Link> and <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link> both show up in gut, immune, and recovery research, so they get compared &mdash; but they are two genuinely different compounds that work through different mechanisms. This page explains what each actually is, how they differ, and which research question each fits.</p>
 

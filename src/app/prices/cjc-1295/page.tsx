@@ -5,6 +5,8 @@ import { PRICES_UPDATED_DATE, priceDisambiguation, compoundVendorCount } from "@
 import { hasProfile } from "@/data/peptideCategories";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
+import BackLink from "@/components/BackLink";
+import NavLink from "@/components/NavLink";
 
 // /prices/cjc-1295 is a DISAMBIGUATION hub, not a price table. "CJC-1295" is sold as two
 // different molecules (DAC vs no-DAC / Mod GRF 1-29) with different half-lives; this page
@@ -30,9 +32,7 @@ export default function CjcDisambiguationPage() {
       <JsonLd
         data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Prices", path: "/prices" }, { name: "CJC-1295" }])}
       />
-      <Link href="/prices" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
-        &larr; Back to Price Comparison
-      </Link>
+      <BackLink href="/prices">Back to Price Comparison</BackLink>
 
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-2">CJC-1295 Price Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-2 max-w-2xl">{DISAMBIG.note}</p>
@@ -63,9 +63,7 @@ export default function CjcDisambiguationPage() {
       </div>
 
       {hasProfile("cjc-1295") && (
-        <Link href="/peptides/cjc-1295" className="text-sm text-[#3A759F] hover:underline font-medium">
-          Read the CJC-1295 research profile (DAC vs no-DAC explained) &rarr;
-        </Link>
+        <NavLink href="/peptides/cjc-1295" className="text-sm text-[#3A759F] hover:underline font-medium">Read the CJC-1295 research profile (DAC vs no-DAC explained)</NavLink>
       )}
 
       <p className="text-xs text-gray-400 dark:text-slate-500 leading-relaxed mt-10 border-t border-gray-100 dark:border-slate-800 pt-6">

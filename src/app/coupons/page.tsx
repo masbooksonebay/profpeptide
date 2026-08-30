@@ -11,6 +11,7 @@ import {
   type Vendor as RegistryVendor,
 } from "@/data/vendors";
 import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
+import NavLink from "@/components/NavLink";
 
 interface Vendor {
   slug: string;
@@ -167,12 +168,10 @@ function VendorCard({ v }: { v: Vendor }) {
           Shop Now</a>
 
         {v.detailPage && (
-          <Link
+          <NavLink
             href={v.detailPage}
             className="block w-full text-center text-xs font-medium text-[#3A759F] hover:text-[#0a5c60] mt-3 py-2 rounded-lg hover:bg-[#3A759F]/10 transition-colors"
-          >
-            Learn More &rarr;
-          </Link>
+          >Learn More</NavLink>
         )}
       </div>
     </div>

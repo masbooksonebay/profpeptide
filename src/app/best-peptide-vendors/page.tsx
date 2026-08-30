@@ -4,6 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import { CopyCode } from "@/components/CopyCode";
 import { vendors as vendorRegistry } from "@/data/vendors";
 import { FEATURED_VENDORS_REVIEWED_DATE, FEATURED_VENDORS_REVIEWED_DATE_ISO } from "@/data/reviewed-dates";
+import NavLink from "@/components/NavLink";
 
 export const metadata = {
   alternates: { canonical: "/best-peptide-vendors" },
@@ -149,9 +150,7 @@ export default function BestPeptideVendorsPage() {
               This page covers vendor quality. Current codes and promotions live on our codes page.
             </p>
           </div>
-          <Link href="/coupons" className="text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">
-            See current codes &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">See current codes</NavLink>
         </div>
 
         <div className="space-y-6">
@@ -200,12 +199,10 @@ export default function BestPeptideVendorsPage() {
                     Shop {v.name}
                   </a>
                 </div>
-                <Link
+                <NavLink
                   href={`/coupons/${v.slug}`}
                   className="inline-block text-xs font-medium text-[#3A759F] hover:underline"
-                >
-                  Read full review &rarr;
-                </Link>
+                >Read full review</NavLink>
               </div>
             </div>
           ))}

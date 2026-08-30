@@ -7,6 +7,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/tirzepatide-bpc-157",
@@ -207,7 +208,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -239,7 +240,7 @@ const sections = [
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Cagrilintide (+ tirzepatide = &ldquo;CagriSema&rdquo; analog / &ldquo;CagriZep&rdquo;).</span> Cagrilintide is a long-acting amylin analog that reduces appetite through a complementary satiety pathway (area postrema / nucleus tractus solitarius), independent of GLP-1/GIP. Early data suggest additive weight loss when combined with semaglutide; the tirzepatide + cagrilintide combination is an active research area. See{" "}
-          <Link href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide &rarr;</Link>.
+          <NavLink href="/peptides/cagrilintide" className="text-[#3A759F] hover:underline">Cagrilintide</NavLink>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">TB-500 (for concurrent musculoskeletal injury).</span> Researchers who are managing an active tendon, ligament, or soft-tissue injury alongside a tirzepatide protocol sometimes add TB-500 to BPC-157&apos;s daily dose to access the full{" "}
@@ -373,9 +374,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -592,9 +591,7 @@ export default function TirzepatideBpc157Page() {
             </p>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sold as two separate vials by research peptide vendors. Neither component is FDA-approved in research-grade form. See{" "}
-              <Link href="/coupons" className="text-[#3A759F] hover:underline">
-                Verified Discount Codes &rarr;
-              </Link>{" "}
+              <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
               for current vetted vendor options.
             </p>
           </div>

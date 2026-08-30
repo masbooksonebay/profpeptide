@@ -7,6 +7,7 @@ import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/wolverine-stack",
@@ -61,9 +62,7 @@ const faqs = [
     a: (
       <>
         Sold pre-blended by some research peptide vendors (typically 10 mg or 20 mg total) and as two separate vials by others. Pre-blended is more convenient; separate vials let researchers run non-1:1 ratios. PP maintains a list of vetted vendors with verified discount codes — see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>
         .
       </>
     ),
@@ -199,7 +198,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -228,19 +227,19 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">GLOW blend (+ GHK-Cu).</span> Adds copper tripeptide for collagen, skin, and gene-expression effects on top of the Wolverine repair backbone. Use when skin or dermal recovery is a goal alongside tissue repair. See{" "}
-          <Link href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW &rarr;</Link>.
+          <NavLink href="/peptides/glow" className="text-[#3A759F] hover:underline">GLOW</NavLink>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">KLOW blend (+ GHK-Cu + KPV).</span> The most comprehensive recovery blend — adds GHK-Cu and KPV for skin remodeling and NF-κB-mediated inflammation control. Use when target tissue is chronically inflamed or post-procedure reactive. See{" "}
-          <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW &rarr;</Link>.
+          <NavLink href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</NavLink>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">GH-class peptides (CJC-1295 + Ipamorelin, MK-677).</span> Adds growth hormone signaling for systemic anabolic and tissue-repair support. Theoretical synergy via increased IGF-1 levels. See{" "}
-          <Link href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack &rarr;</Link>.
+          <NavLink href="/peptides/gh-stack" className="text-[#3A759F] hover:underline">GH Stack</NavLink>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">IGF-1 LR3.</span> Direct IGF-1 receptor activation paired with the local healing peptides. More aggressive systemic anabolic effect; combined cycles tend to be shorter (4–6 weeks). See{" "}
-          <Link href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3 &rarr;</Link>.
+          <NavLink href="/peptides/igf-1-lr3" className="text-[#3A759F] hover:underline">IGF-1 LR3</NavLink>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + 1.2–1.6 g/kg protein.</span> Recommended baseline for any musculoskeletal recovery protocol. Mechanical loading is required for proper tendon and muscle remodeling — peptides accelerate the substrate but do not replace the load signal.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
@@ -528,9 +527,7 @@ export default function WolverineStackPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sold pre-blended by some research peptide vendors and as separate vials by others. Neither component is FDA-approved. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
           <VendorHighlightBlock compoundSlug="wolverine-stack" />

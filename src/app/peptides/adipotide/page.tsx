@@ -8,6 +8,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/adipotide",
@@ -38,9 +39,7 @@ const faqs = [
     a: (
       <>
         Adipotide is sold by a limited number of research-peptide suppliers as a research chemical only. In PP&apos;s vetted directory it is currently listed by Swiss Chems &mdash; see the{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>{" "}
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
         page for current options.
       </>
     ),
@@ -345,9 +344,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all {activeVendorCount} verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all {activeVendorCount} verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -504,7 +501,7 @@ export default function AdipotidePage() {
             Adipotide (also called FTPP, for fat-targeted proapoptotic peptide, or by the code Prohibitin-TP01) is a synthetic chimeric proapoptotic peptidomimetic first described by Kolonin and colleagues in 2004. It fuses a homing sequence (CKGGRAKDC) that seeks the blood vessels feeding white fat to a proapoptotic payload, D(KLAKLAK)2 &mdash; written in full as the construct CKGGRAKDC-GG-D(KLAKLAK)2 &mdash; that kills those vessels, causing the surrounding fat to be resorbed. In obese mice and obese monkeys it produced striking fat and weight loss, but the single human trial ever opened was terminated early and never reported, and a kidney-toxicity signal appeared in primates. It is mechanistically unrelated to GLP-1 metabolic peptides such as{" "}
             <Link href="/peptides/retatrutide" className="text-[#3A759F] hover:underline">retatrutide</Link>{" "}
             despite sometimes being discussed alongside them. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
+            <NavLink href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics</NavLink>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
@@ -524,9 +521,7 @@ export default function AdipotidePage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Adipotide is sold by a limited number of research suppliers. In PP&apos;s vetted directory it is currently listed by Swiss Chems &mdash; see{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
         </div>

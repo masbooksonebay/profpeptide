@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NavLink from "@/components/NavLink";
 
 export default function ContactLink({
   pageName,
@@ -14,12 +14,10 @@ export default function ContactLink({
       <p className="text-base text-gray-500 dark:text-slate-400 leading-relaxed">
         Have a question about{" "}
         <span className="text-gray-700 dark:text-slate-300">{pageName}</span>?{" "}
-        <Link
+        <NavLink
           href={href}
           className="text-[#3A759F] dark:text-cyan-400 hover:underline underline-offset-2 ml-1"
-        >
-          Send us an email &rarr;
-        </Link>
+        >Send us an email</NavLink>
       </p>
     </div>
   );

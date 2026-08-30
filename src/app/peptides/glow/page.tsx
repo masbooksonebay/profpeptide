@@ -7,6 +7,7 @@ import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/glow",
@@ -67,9 +68,7 @@ const faqs = [
     a: (
       <>
         GLOW blends are sold by specialty research peptide vendors as compounded preparations. Quality varies dramatically — third-party HPLC testing is essential. PP maintains a list of vetted vendors with verified discount codes — see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>
         .
       </>
     ),
@@ -209,7 +208,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -237,11 +236,11 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">KLOW blend (+ KPV).</span> Adds KPV tripeptide for anti-inflammatory and immune coverage on top of GLOW's recovery + skin mechanism. Use when the target tissue is chronically inflamed, post-procedure reactive, or autoimmune-adjacent. See{" "}
-          <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW &rarr;</Link>.
+          <NavLink href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</NavLink>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Wolverine Stack (BPC-157 + TB-500).</span> The 2-component alternative without GHK-Cu — for users prioritizing recovery and joint applications over skin. See{" "}
-          <Link href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack &rarr;</Link>.
+          <NavLink href="/peptides/wolverine-stack" className="text-[#3A759F] hover:underline">Wolverine Stack</NavLink>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Topical GHK-Cu serum.</span> Layered skin effect — injectable GLOW for systemic GHK-Cu gene expression plus topical for local skin concentration.</li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Resistance training + adequate protein.</span> Natural pairing for tissue regeneration and recovery applications.</li>
@@ -543,9 +542,7 @@ export default function GLOWPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> GLOW is sold by specialty research peptide vendors as a compounded blend. None of the three component peptides are FDA-approved as injectables. See{" "}
-            <Link href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">
-              Verified Peptide Vendors &rarr;
-            </Link>{" "}
+            <NavLink href="/best-peptide-vendors" className="text-[#3A759F] hover:underline">Verified Peptide Vendors</NavLink>{" "}
             for current options.
           </p>
           <VendorHighlightBlock compoundSlug="glow" />

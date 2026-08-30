@@ -6,6 +6,7 @@ import PageDisclaimer from "@/components/PageDisclaimer";
 import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/bioregulators",
@@ -126,7 +127,7 @@ export default function BioregulatorsPage() {
             <Link href="/peptides/cortagen" className="text-[#3A759F] hover:underline">Cortagen</Link>,{" "}
             <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>, and{" "}
             <Link href="/peptides/cardiogen" className="text-[#3A759F] hover:underline">Cardiogen</Link>. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
+            <NavLink href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics</NavLink>
           </p>
         </div>
       </div>
@@ -236,9 +237,9 @@ export default function BioregulatorsPage() {
           <div className="space-y-4">
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
               The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the deep Khavinson bioregulator line &mdash; Epitalon, Pinealon, Cortagen, Thymogen, Cardiogen, and more. See the{" "}
-              <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">peptides.gg discount code (<VendorCode slug="peptides-gg" />) &rarr;</Link>{" "}
+              <NavLink href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">peptides.gg discount code (<VendorCode slug="peptides-gg" />)</NavLink>{" "}
               for current options, and verify a Certificate of Analysis before purchase. New to peptide research?{" "}
-              <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
+              <NavLink href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics</NavLink>
             </p>
           </div>
         </div>

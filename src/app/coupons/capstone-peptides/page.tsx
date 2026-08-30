@@ -5,6 +5,7 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { vendorDiscountPct } from "@/data/prices";
+import BackLink from "@/components/BackLink";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -22,9 +23,7 @@ export default function CapstonePeptidesCouponPage() {
   const discountPct = vendorDiscountPct("capstone-peptides");
   return (
     <div className="section max-w-3xl">
-      <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
-        &larr; Back to Discount Codes
-      </Link>
+      <BackLink href="/coupons">Back to Discount Codes</BackLink>
       <CouponBreadcrumb slug="capstone-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">

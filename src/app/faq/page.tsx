@@ -4,6 +4,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 import { hubFaqSections } from "@/data/faq";
 import { faqQuestions, FAQ_CATEGORY_ORDER } from "@/data/faqQuestions";
 import { faqPageJsonLd } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 // FAQPage JSON-LD DERIVED from the same hubFaqSections the page renders (never a second copy).
 // It lives here, not in layout.tsx, so it scopes to /faq alone and not the /faq/[slug] children.
@@ -61,9 +62,7 @@ export default function FAQPage() {
                           {q.question}
                         </Link>
                         <p className="text-xs text-gray-500 dark:text-slate-400 mt-1 leading-relaxed">{q.hubBlurb}</p>
-                        <Link href={`/faq/${q.slug}`} className="text-xs font-medium text-[#3A759F] hover:underline mt-2 inline-block">
-                          Full answer &rarr;
-                        </Link>
+                        <NavLink href={`/faq/${q.slug}`} className="text-xs font-medium text-[#3A759F] hover:underline mt-2 inline-block">Full answer</NavLink>
                       </div>
                     ))}
                   </div>

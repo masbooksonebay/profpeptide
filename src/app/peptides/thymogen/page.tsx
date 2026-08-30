@@ -8,6 +8,7 @@ import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/thymogen",
@@ -53,9 +54,7 @@ const faqs = [
     a: (
       <>
         Thymogen is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
-        <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
-          Peptides.gg discount code (<VendorCode slug="peptides-gg" />) &rarr;
-        </Link>
+        <NavLink href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">Peptides.gg discount code (<VendorCode slug="peptides-gg" />)</NavLink>
         .
       </>
     ),
@@ -183,9 +182,7 @@ const sections = [
         <VendorHighlightBlock compoundSlug="thymogen" />
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-          <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
-            Peptides.gg discount code (<VendorCode slug="peptides-gg" />) &rarr;
-          </Link>{" "}
+          <NavLink href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">Peptides.gg discount code (<VendorCode slug="peptides-gg" />)</NavLink>{" "}
           for current options.
         </p>
       </div>
@@ -350,7 +347,7 @@ export default function ThymogenPage() {
             <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>{" "}
             and{" "}
             <Link href="/peptides/epitalon" className="text-[#3A759F] hover:underline">Epitalon</Link>. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
+            <NavLink href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics</NavLink>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
@@ -368,9 +365,7 @@ export default function ThymogenPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Thymogen is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-            <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
-              Peptides.gg discount code (<VendorCode slug="peptides-gg" />) &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">Peptides.gg discount code (<VendorCode slug="peptides-gg" />)</NavLink>{" "}
             for current options.
           </p>
         </div>
@@ -425,7 +420,7 @@ export default function ThymogenPage() {
         <Link href="/peptides/selank" className="text-sm font-medium text-[#3A759F] hover:underline">Selank</Link>
         <Link href="/peptides/dsip" className="text-sm font-medium text-[#3A759F] hover:underline">DSIP</Link>
         </div>
-        <Link href="/bioregulators" className="text-sm font-medium text-[#3A759F] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
+        <NavLink href="/bioregulators" className="text-sm font-medium text-[#3A759F] hover:underline mt-3 inline-block">Read the bioregulator guide</NavLink>
       </div>
 
       {/* TODO: add a Comparisons block (e.g. Thymogen vs Thymosin Alpha-1, or sibling-bioregulator comparisons) once those comparison pages are built. */}

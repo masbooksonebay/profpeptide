@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 import type { FaqEntry } from "@/data/faq";
+import NavLink from "@/components/NavLink";
 
 // Shared expand/collapse FAQ list. Rendered on /faq (per section) and at the bottom of
 // /supplements — the same component, never a second copy. Each instance owns its open state
@@ -26,9 +26,7 @@ export default function FaqAccordion({ faqs }: { faqs: FaqEntry[] }) {
                 {faq.a}
                 {faq.more && (
                   <div className="mt-2">
-                    <Link href={faq.more.href} className="text-xs font-medium text-[#3A759F] hover:underline">
-                      Full answer: {faq.more.label} &rarr;
-                    </Link>
+                    <NavLink href={faq.more.href} className="text-xs font-medium text-[#3A759F] hover:underline">Full answer: {faq.more.label}</NavLink>
                   </div>
                 )}
               </div>

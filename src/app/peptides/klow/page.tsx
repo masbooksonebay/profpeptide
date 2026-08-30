@@ -7,6 +7,7 @@ import ProfileTOC from "@/components/ProfileTOC";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/klow",
@@ -56,9 +57,7 @@ const faqs = [
     a: (
       <>
         KLOW is sold as a pre-blended 80 mg vial by specialty research peptide vendors. Quality varies dramatically by source — third-party HPLC testing of each component is essential. PP maintains a list of vetted vendors with verified discount codes — see{" "}
-        <Link href="/coupons" className="text-[#3A759F] hover:underline">
-          Verified Discount Codes &rarr;
-        </Link>
+        <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>
         .
       </>
     ),
@@ -204,7 +203,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -293,7 +292,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Common question:</span>{" "}
-          <Link href="/faq/klow-peptide-blend-side-effects" className="text-[#3A759F] hover:underline">What are the side effects of the KLOW peptide blend? &rarr;</Link>
+          <NavLink href="/faq/klow-peptide-blend-side-effects" className="text-[#3A759F] hover:underline">What are the side effects of the KLOW peptide blend?</NavLink>
         </p>
       </div>
     ),
@@ -529,9 +528,7 @@ export default function KLOWPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> KLOW is sold by specialty research peptide vendors as a compounded blend, typically as an 80 mg vial. None of the four components are FDA-approved as injectables. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
           <VendorHighlightBlock compoundSlug="klow" />

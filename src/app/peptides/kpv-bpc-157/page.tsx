@@ -7,6 +7,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/kpv-bpc-157",
@@ -195,7 +196,7 @@ const sections = [
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
           Need to calculate your dose? Convert mg to syringe units and plan reconstitution with the{" "}
-          <Link href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator &rarr;</Link>.
+          <NavLink href="/calculator" className="text-[#3A759F] hover:underline">dosage calculator</NavLink>.
         </p>
       </div>
     ),
@@ -224,11 +225,11 @@ const sections = [
       <ol className="list-decimal list-inside space-y-1">
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Step up: KLOW (+ GHK-Cu + TB-500).</span> The most logical upgrade for researchers who also need skin remodeling, collagen synthesis, or broader tissue repair alongside gut healing. KLOW already contains both KPV and BPC-157 at the core. See{" "}
-          <Link href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW &rarr;</Link>.
+          <NavLink href="/peptides/klow" className="text-[#3A759F] hover:underline">KLOW</NavLink>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Thymosin Alpha-1 (TA1).</span> An immune-modulating peptide with independent gut-associated lymphoid tissue effects. Mechanistically complementary for IBD-adjacent research where immune dysregulation is a driver alongside inflammation. See{" "}
-          <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1 &rarr;</Link>.
+          <NavLink href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</NavLink>.
         </li>
         <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           <span className="font-semibold">Dietary and gut support (non-peptide).</span> Low-FODMAP or anti-inflammatory diet, glutamine supplementation, and probiotics are commonly used alongside KPV + BPC-157 in gut-repair protocols. These are complementary, not competing, with the peptide combination.
@@ -333,9 +334,7 @@ const sections = [
           ]}
         />
         <p className="text-sm text-gray-500 dark:text-slate-400 leading-relaxed">
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            See all verified vendors &rarr;
-          </Link>
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">See all verified vendors</NavLink>
         </p>
       </div>
     ),
@@ -555,9 +554,7 @@ export default function KpvBpc157Page() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Sold as separate research-grade vials (KPV and BPC-157) by specialty peptide vendors; some vendors carry oral KPV capsules. Neither is FDA-approved. See{" "}
-            <Link href="/coupons" className="text-[#3A759F] hover:underline">
-              Verified Discount Codes &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons" className="text-[#3A759F] hover:underline">Verified Discount Codes</NavLink>{" "}
             for current options.
           </p>
         </div>

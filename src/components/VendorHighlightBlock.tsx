@@ -8,6 +8,7 @@ import { REVEAL_GATE_VENDORS } from "@/data/reveal-gate-vendors";
 import { compoundVendorCount, deriveHighlightVendors, isBlendSlug, blendVendorCount } from "@/data/prices";
 import { LISTED } from "@/data/attribution";
 import { VENDOR_PINS } from "@/data/vendor-pins";
+import NavLink from "@/components/NavLink";
 
 export interface VendorHighlight {
   slug: string;
@@ -83,12 +84,10 @@ export default function VendorHighlightBlock({ highlights, compoundSlug, from = 
   if (selected.length === 0 && !showCta) return null;
 
   const cta = showCta ? (
-    <Link
+    <NavLink
       href={`/prices/${compoundSlug}`}
       className="mt-4 flex items-center justify-center gap-2 rounded-xl border border-[#3A759F]/40 bg-[#3A759F]/10 px-4 py-3 text-sm font-semibold text-[#3A759F] hover:bg-[#3A759F]/15 transition-colors"
-    >
-      Compare prices across {vendorCount} vendors &rarr;
-    </Link>
+    >Compare prices across {vendorCount} vendors</NavLink>
   ) : null;
 
   // CTA-only: indexable compound with no vetted vendor to feature (e.g. igf-1-des). Give the link

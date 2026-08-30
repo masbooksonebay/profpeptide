@@ -4,6 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import BackLink from "@/components/BackLink";
 
 export const metadata = buildPageMetadata({
   path: "/compare/aod-9604-vs-mots-c",
@@ -43,7 +44,7 @@ export default function AOD9604vsMOTScPage() {
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Comparisons", path: "/compare" }, { name: "AOD-9604 vs MOTS-C: Two Distinct Metabolic Peptides" }])} />
       <JsonLd data={faqPageJsonLd(faqs, isWhereToBuy)} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <BackLink href="/compare">Back to Comparisons</BackLink>
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">AOD-9604 vs MOTS-C &mdash; Two Distinct Metabolic Peptides</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl"><Link href="/peptides/aod-9604" className="text-[#3A759F] hover:underline">AOD-9604</Link> and <Link href="/peptides/mots-c" className="text-[#3A759F] hover:underline">MOTS-C</Link> both show up in fat-loss and metabolic research, so they get compared &mdash; but unlike some &ldquo;versus&rdquo; pairs, these are two genuinely different compounds that work through different mechanisms. This page lays out what each actually is, how they differ, and which research question each fits.</p>
 

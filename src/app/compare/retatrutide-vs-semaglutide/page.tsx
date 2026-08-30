@@ -3,6 +3,7 @@ import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
+import BackLink from "@/components/BackLink";
 
 export const metadata = buildPageMetadata({
   path: "/compare/retatrutide-vs-semaglutide",
@@ -33,7 +34,7 @@ export default function RetatrutideVsSemaglutidePage() {
       <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Retatrutide vs Semaglutide — GLP Triple Agonist vs Single Agonist","description":"Retatrutide vs Semaglutide research comparison: weight loss data, FDA status, cardiovascular evidence, dosing, and which to choose.","url":"https://profpeptide.com/compare/retatrutide-vs-semaglutide","publisher": { "@type": "Organization", "@id": "https://profpeptide.com/#organization", "name": "Prof. Peptide", "url": "https://profpeptide.com", "logo": "https://profpeptide.com/icon.png" }}} />
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Comparisons", path: "/compare" }, { name: "Retatrutide vs Semaglutide — GLP Triple Agonist vs Single Agonist" }])} />
     <div className="section max-w-4xl">
-      <Link href="/compare" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Comparisons</Link>
+      <BackLink href="/compare">Back to Comparisons</BackLink>
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Retatrutide vs Semaglutide &mdash; Triple Agonist vs Single Agonist Comparison</h1>
       <p className="text-lg text-gray-500 dark:text-slate-400 leading-relaxed mb-8 max-w-2xl">Semaglutide and Retatrutide sit at opposite ends of the GLP class. Semaglutide activates one receptor (GLP-1) and is FDA-approved with the longest safety record in the class. Retatrutide activates three (GLP-1, GIP, and glucagon) and is still investigational, but Phase 3 trials show it producing nearly twice the weight loss. Here&apos;s how they compare.</p>
 

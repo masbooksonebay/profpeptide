@@ -6,6 +6,7 @@ import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { vendorDiscountPct } from "@/data/prices";
 import { vendors } from "@/data/vendors";
+import BackLink from "@/components/BackLink";
 
 
 export default function BioPurePeptidesCouponPage() {
@@ -13,9 +14,7 @@ export default function BioPurePeptidesCouponPage() {
   const v = vendors["biopure-peptides"];
   return (
     <div className="section max-w-3xl">
-      <Link href="/coupons" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">
-        &larr; Back to Discount Codes
-      </Link>
+      <BackLink href="/coupons">Back to Discount Codes</BackLink>
       <CouponBreadcrumb slug="biopure-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">

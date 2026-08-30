@@ -8,6 +8,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/cortagen",
@@ -48,9 +49,7 @@ const faqs = [
     a: (
       <>
         Cortagen is sold by specialty research peptide vendors for laboratory use only. Quality varies &mdash; verify a Certificate of Analysis before purchase. Peptides.gg carries the Khavinson bioregulator line &mdash; see the{" "}
-        <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
-          Peptides.gg discount code (<VendorCode slug="peptides-gg" />) &rarr;
-        </Link>
+        <NavLink href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">Peptides.gg discount code (<VendorCode slug="peptides-gg" />)</NavLink>
         .
       </>
     ),
@@ -183,9 +182,7 @@ const sections = [
         />
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           The bioregulator line is more specialized than the mainstream peptide catalog, so not every vendor carries it. See{" "}
-          <Link href="/coupons" className="text-[#3A759F] hover:underline">
-            all verified discount codes &rarr;
-          </Link>{" "}
+          <NavLink href="/coupons" className="text-[#3A759F] hover:underline">all verified discount codes</NavLink>{" "}
           for current options.
         </p>
       </div>
@@ -350,7 +347,7 @@ export default function CortagenPage() {
             <Link href="/peptides/pinealon" className="text-[#3A759F] hover:underline">Pinealon</Link>{" "}
             and{" "}
             <Link href="/peptides/thymogen" className="text-[#3A759F] hover:underline">Thymogen</Link>. New to peptide research?{" "}
-            <Link href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics &rarr;</Link>
+            <NavLink href="/guides/peptide-research-basics" className="text-[#3A759F] hover:underline">Start with the basics</NavLink>
           </p>
           <div>
             <p className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-2">
@@ -368,9 +365,7 @@ export default function CortagenPage() {
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> Cortagen is sold by specialty peptide vendors for laboratory use only. Peptides.gg carries the Khavinson bioregulator line. See the{" "}
-            <Link href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">
-              Peptides.gg discount code (<VendorCode slug="peptides-gg" />) &rarr;
-            </Link>{" "}
+            <NavLink href="/coupons/peptides-gg" className="text-[#3A759F] hover:underline">Peptides.gg discount code (<VendorCode slug="peptides-gg" />)</NavLink>{" "}
             for current options.
           </p>
         </div>
@@ -424,7 +419,7 @@ export default function CortagenPage() {
         <Link href="/peptides/semax" className="text-sm font-medium text-[#3A759F] hover:underline">Semax</Link>
         <Link href="/peptides/selank" className="text-sm font-medium text-[#3A759F] hover:underline">Selank</Link>
         </div>
-        <Link href="/bioregulators" className="text-sm font-medium text-[#3A759F] hover:underline mt-3 inline-block">Read the bioregulator guide &rarr;</Link>
+        <NavLink href="/bioregulators" className="text-sm font-medium text-[#3A759F] hover:underline mt-3 inline-block">Read the bioregulator guide</NavLink>
       </div>
 
       {/* TODO: add a Bioregulator Comparisons block (e.g. Cortagen vs Cardiogen / Pinealon) once those comparison pages are built and the four-spoke set (incl. Cardiogen) is live. */}

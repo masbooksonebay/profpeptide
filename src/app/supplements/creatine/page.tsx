@@ -6,6 +6,8 @@ import PageTOC from "@/components/PageTOC";
 import ContactLink from "@/components/ContactLink";
 import AmazonCTAButton from "@/components/AmazonCTAButton";
 import { buildPageMetadata } from "@/lib/seo";
+import BackLink from "@/components/BackLink";
+import NavLink from "@/components/NavLink";
 
 export const metadata = buildPageMetadata({
   path: "/supplements/creatine",
@@ -534,7 +536,7 @@ export default function CreatinePage() {
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={faqPageSchema} />
     <div className="section max-w-3xl">
-      <Link href="/supplements" className="text-sm text-[#3A759F] hover:underline mb-6 inline-block">&larr; Back to Supplement Library</Link>
+      <BackLink href="/supplements">Back to Supplement Library</BackLink>
 
       <div className="flex flex-wrap items-center gap-3 mb-2">
         <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Creatine</h1>
@@ -635,7 +637,7 @@ export default function CreatinePage() {
       <div className="mt-6 p-5 border border-[#3A759F]/20 bg-[#3A759F]/10 rounded-xl">
         <h2 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mb-2">Comparisons</h2>
         <div className="flex flex-wrap gap-4">
-          <Link href="/compare/creatine-vs-beta-alanine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine vs Beta-Alanine &rarr;</Link>
+          <NavLink href="/compare/creatine-vs-beta-alanine" className="text-sm font-medium text-[#3A759F] hover:underline">Creatine vs Beta-Alanine</NavLink>
         </div>
       </div>
 

@@ -8,6 +8,7 @@ import { profileCount, appPeptideFloor } from "@/data/peptideCategories";
 import { routes } from "@/data/routes";
 import HeroSearch from "@/components/HeroSearch";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import NavLink from "@/components/NavLink";
 
 // Every count on this page is DERIVED from its single source of truth so it can't drift:
 // profileCount / appPeptideFloor from the library taxonomy, vendors from
@@ -214,7 +215,7 @@ export default function Home() {
         <div className="mb-12">
           <div className="flex items-end justify-between mb-4">
             <h2 className="text-xl font-bold text-[#16181B] dark:text-slate-100">Latest News</h2>
-            <Link href="/news" className="text-xs font-medium text-[#3A759F] hover:underline">View all news &rarr;</Link>
+            <NavLink href="/news" className="text-xs font-medium text-[#3A759F] hover:underline">View all news</NavLink>
           </div>
           <Link
             href={`/news/${latest.slug}`}
