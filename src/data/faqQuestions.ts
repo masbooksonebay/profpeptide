@@ -113,6 +113,19 @@ export interface FaqQuestion {
    *  between /faq and the per-compound spokes. The hub features it at the head of its group, and
    *  every spoke in that category links up to it. At most one per category. */
   categoryFor?: FaqCategory;
+  /** INTERNAL editorial review date (ISO yyyy-mm-dd). Set it where the page's content is tied to
+   *  something with a known expiry — a pending trial readout, a regulatory position that moves —
+   *  rather than on every page: a date on everything is a date nobody reads.
+   *
+   *  🔒 NEVER RENDERED. It is an editorial prompt, not reader-facing. A visible "review by" date on
+   *  a medical-adjacent page invites exactly the wrong reading (that the content is certified until
+   *  then), and readers have no use for our review cadence. The page template does not reference
+   *  this field; check:freshness is the only consumer.
+   *
+   *  Surfaced as a WARN-ONLY line in check:freshness, deliberately never a build failure — a page
+   *  that needs re-reading is a prompt to look, not a reason to block an unrelated deploy. Same
+   *  severity contract as that guard's stamp-age warning. */
+  reviewAfter?: string;
   /** Compound FAQ pages end with a "Where to Buy" vendor block (standing rule). `compoundSlug`
    *  drives the shared <VendorHighlightBlock>'s /prices CTA; the vendor SET is the fixed curated
    *  trio pinned in the page. Injection-prep pages (needle/bac water) omit this. */
@@ -122,6 +135,8 @@ export interface FaqQuestion {
 export const faqQuestions: FaqQuestion[] = [
   {
     slug: "what-are-research-peptides",
+    // names retatrutide and cagrilintide as "investigational" — false the day either is approved
+    reviewAfter: "2027-01-01",
     category: "basics",
     categoryFor: "basics",
     question: "What are research peptides?",
@@ -288,6 +303,8 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "are-research-peptides-legal",
+    // regulatory posture moves; this project has already corrected the FDA Category 1/2 distinction twice
+    reviewAfter: "2026-12-31",
     category: "legality",
     categoryFor: "legality",
     question: "Are research peptides legal in the United States?",
@@ -796,6 +813,8 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-is-retatrutide-dosed-in-research",
+    // figures are TRIUMPH protocol doses; an approval would replace them with a label
+    reviewAfter: "2027-01-01",
     category: "dosing",
     question: "How is retatrutide dosed in research?",
     title: "How Is Retatrutide Dosed in Research? Trial Doses and Escalation",
@@ -859,6 +878,8 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-often-is-retatrutide-dosed",
+    // same TRIUMPH protocol basis as the amount page
+    reviewAfter: "2027-01-01",
     category: "frequency",
     question: "How often is retatrutide dosed?",
     title: "How Often Is Retatrutide Dosed? Once Weekly in Trials",
@@ -936,14 +957,15 @@ export const faqQuestions: FaqQuestion[] = [
     ],
     handoff: {
       href: "/peptides/retatrutide",
-      label: "Retatrutide research profile",
-      text:
-        "For the mechanism, trial results, side effects, sources, and full dosing detail, see the",
+      label: "Retatrutide profile",
+      text: "For other common questions regarding retatrutide, see the full",
     },
     whereToBuy: { compoundSlug: "retatrutide" },
   },
   {
     slug: "what-is-retatrutide-used-for",
+    // four of six indications have not reported; TRIUMPH-3 is expected 2027 or later
+    reviewAfter: "2027-01-01",
     category: "uses",
     question: "What is retatrutide used for?",
     title: "What Is Retatrutide Used For? The Indications Actually Being Trialled",
@@ -983,6 +1005,8 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "what-are-the-side-effects-of-retatrutide",
+    // rates are Phase 2 / TRIUMPH-4; Phase 3 safety data will supersede them
+    reviewAfter: "2027-01-01",
     category: "side-effects",
     question: "What are the side effects of retatrutide?",
     title: "Retatrutide Side Effects: Reported Rates from the Trials",

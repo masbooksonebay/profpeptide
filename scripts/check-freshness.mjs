@@ -6,6 +6,13 @@
 //     longer month. Over-155 ships a TRUNCATED description — an output bug — so this fails the
 //     build; the fix (trim a differentiator in src/data/coupon-copy.ts) is immediate.
 //
+//   FAQ REVIEW DATES (WARN ONLY, exit 0). A handful of /faq pages are pinned to something with a
+//     known expiry — a pending trial readout, a regulatory position that moves. `reviewAfter` on
+//     those entries records when the content should be re-read. Past that date this prints a
+//     warning naming each page; it never fails. A page that needs re-reading is a prompt to look,
+//     NOT a reason to block an unrelated deploy — same severity reasoning as the stamp below.
+//     🔒 reviewAfter is INTERNAL: this guard is its only consumer and it never renders.
+//
 //   STAMP AGE (WARN ONLY, exit 0). The machine link-check stamp (VENDORS_VERIFIED_ISO) drives
 //     the cosmetic coupon "verified <month>". It only advances on a clean check:vendors run,
 //     which depends on 33 third-party sites being reachable — so a single genuinely-dead
@@ -59,6 +66,20 @@ if (!VENDORS_VERIFIED_ISO || !/^\d{4}-\d{2}-\d{2}$/.test(VENDORS_VERIFIED_ISO)) 
   }
 }
 
+// ── FAQ REVIEW DATES — WARN ONLY, never gates the build ──────────────────────────
+// faqQuestions.ts is import-free by contract (the search-index generator executes it the same
+// way), so the same transpile+execute path reads it without a second parser to drift.
+const { faqQuestions } = execModule("src/data/faqQuestions.ts", "faqQuestions.ts");
+const todayIso = new Date().toISOString().slice(0, 10);
+const dated = faqQuestions.filter((q) => q.reviewAfter);
+const overdue = dated
+  .filter((q) => q.reviewAfter < todayIso)
+  .sort((a, b) => a.reviewAfter.localeCompare(b.reviewAfter));
+const malformed = dated.filter((q) => !/^\d{4}-\d{2}-\d{2}$/.test(q.reviewAfter));
+console.log(
+  `faq review dates: ${dated.length} page(s) carry reviewAfter, ${overdue.length} past due (today ${todayIso})`
+);
+
 // ── DESCRIPTION BUDGET — HARD FAIL under the longest month ────────────────────────
 const { vendors } = execModule("src/data/vendors.ts", "vendors.ts");
 const { couponDescription } = execModule("src/data/coupon-copy.ts", "coupon-copy.ts");
@@ -80,6 +101,23 @@ for (const [slug, v] of Object.entries(vendors)) {
 console.log(`descriptions: ${checked} checked under worst-case "${worstMonth}"; longest = ${tightest.slug} at ${tightest.len}/${SERP_MAX}`);
 
 // ── result ───────────────────────────────────────────────────────────────────────
+// Both warnings print LAST and loud (so they can't scroll away) but never set the exit code.
+if (overdue.length || malformed.length) {
+  const bar = "!".repeat(74);
+  console.warn(`\n${bar}`);
+  console.warn(`!!  FAQ PAGES DUE FOR REVIEW (warning — build continues, deploys not blocked)`);
+  for (const q of overdue) {
+    console.warn(`!!      • /faq/${q.slug} — reviewAfter ${q.reviewAfter}`);
+  }
+  for (const q of malformed) {
+    console.warn(`!!      • /faq/${q.slug} — reviewAfter "${q.reviewAfter}" is not yyyy-mm-dd`);
+  }
+  console.warn(`!!  These pages are pinned to a pending readout or a moving regulatory position.`);
+  console.warn(`!!  Fix: re-read the page against current sources, then move or clear reviewAfter`);
+  console.warn(`!!       in src/data/faqQuestions.ts.`);
+  console.warn(`${bar}\n`);
+}
+
 // Age warning prints LAST and loud (so it can't scroll away) but never sets exit code.
 if (ageWarning) {
   const bar = "!".repeat(74);
@@ -95,4 +133,8 @@ if (failures.length) {
   for (const f of failures) console.error(`  ✗ ${f}`);
   process.exit(1);
 }
-console.log(`check:freshness OK — every coupon description fits under the longest month${ageWarning ? " (see stamp warning above)" : ""}.`);
+const notes = [ageWarning ? "stamp" : null, overdue.length || malformed.length ? "faq review" : null].filter(Boolean);
+console.log(
+  `check:freshness OK — every coupon description fits under the longest month` +
+    `${notes.length ? ` (see ${notes.join(" + ")} warning${notes.length > 1 ? "s" : ""} above)` : ""}.`
+);
