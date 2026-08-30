@@ -163,6 +163,68 @@ export function searchCorpus(query: string, limit = 3): RetrievalHit[] {
   return scored.slice(0, limit);
 }
 
+// ── regulatory recency: reserving a slot for news ────────────────────────────────────────────
+// Ranking alone cannot surface news for a question like "Can pharmacies compound BPC-157?".
+// Measured: the BPC-157 profile scores 78, the blend pages 43-45, and the best news page 13 (rank
+// 19) — because body-token hits are capped, so a page that is ENTIRELY about compounding policy
+// but never says "BPC-157" in its title or slug can't compete with one that does.
+//
+// That matters because the profile's own regulatory line is a snapshot: it says BPC-157 was
+// classified Category 2 "in 2023" and knows nothing about the April 2026 removal or the July 2026
+// advisory vote. Answering from the profile alone is stale-but-plausible — the worst failure mode.
+//
+// The fix is SELECTION, not scoring: leave every score untouched (so no other query class can be
+// perturbed — the ranking probe still passes unchanged) and instead append the best-scoring news
+// page when the query is about legality/regulation and none made the cut. The canonical page keeps
+// its top slot; news is added alongside, never in place of.
+const REGULATORY_TERMS = [
+  "compound", "compounds", "compounded", "compounding", "legal", "legality", "illegal",
+  "ban", "banned", "fda", "approved", "approval", "unapproved", "prescription", "prescribe",
+  "pharmacy", "pharmacies", "503a", "503b", "category", "bulks", "rule", "rules", "rulemaking",
+  "regulation", "regulations", "regulatory", "lawsuit", "lawsuits", "sued", "sue", "litigation",
+  "allegation", "schedule", "restricted", "policy", "law",
+];
+
+/** How close to the best news score a page must be to count as a comparable candidate, inside
+ *  which recency decides. 0.6 keeps the genuinely on-topic cluster and drops the long tail. */
+const NEWS_RELEVANCE_BAND = 0.6;
+
+/** True when the query is asking about legal/regulatory status rather than pharmacology. */
+export function isRegulatoryQuery(query: string): boolean {
+  const tokens = new Set(tokenize(query));
+  return REGULATORY_TERMS.some((t) => tokens.has(t));
+}
+
+/**
+ * What the chat route should inject: the ranked hits, plus — for regulatory questions — the best
+ * news page if the ranking didn't already include one. Retrieval scoring is deliberately NOT
+ * modified; this is a composition step on top of it, so `searchCorpus` remains a pure ranker and
+ * the regression probe keeps testing exactly that.
+ */
+export function retrieveForChat(query: string, limit = 2): RetrievalHit[] {
+  const hits = searchCorpus(query, limit);
+  if (!isRegulatoryQuery(query)) return hits;
+  if (hits.some((h) => h.page.category === "news")) return hits;
+  // Widen the search only far enough to find news, then append at most one.
+  //
+  // Picking the single best-SCORING news page is wrong here, and measurably so: for "Can pharmacies
+  // compound BPC-157?" that selected the PCAC *meeting agenda* (April 28) — an announcement of a
+  // meeting that has since taken place — over the August 8 piece explaining what actually happened
+  // and that nothing became legal. On regulatory status the freshest comparable source is the
+  // right one, because that is the whole reason news is being injected.
+  //
+  // So: take the news pages that are in the same relevance band as the best one, and among those
+  // prefer the most recent. The band keeps this from dragging in a recent-but-irrelevant article —
+  // relevance still gates the candidate set, recency only breaks the tie inside it.
+  const wider = searchCorpus(query, 40);
+  const news = wider.filter((h) => h.page.category === "news");
+  if (news.length === 0) return hits;
+  const bestScore = news[0].score;
+  const band = news.filter((h) => h.score >= bestScore * NEWS_RELEVANCE_BAND);
+  const newest = band.reduce((a, b) => ((b.page.dateIso ?? "") > (a.page.dateIso ?? "") ? b : a), band[0]);
+  return [...hits, newest];
+}
+
 // The corpus token estimate is baked in at generation time (per-page `tokenEstimate`); used by the
 // route to decide how many matched pages it can afford to inject for a given call.
 export function estimateInjectionTokens(hits: RetrievalHit[]): number {

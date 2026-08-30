@@ -31,7 +31,7 @@ function load(rel, shim = {}) {
 }
 
 const corpus = load("src/lib/chat-corpus.generated.ts");
-const { searchCorpus } = load("src/lib/chat-retrieval.ts", {
+const { searchCorpus, retrieveForChat, isRegulatoryQuery } = load("src/lib/chat-retrieval.ts", {
   "./chat-corpus.generated": corpus,
   "./chat-corpus": {},
 });
@@ -75,9 +75,39 @@ for (const { q, expectTop } of QUERIES) {
   if (!ok) console.log(`     EXPECTED TOP: ${expectTop}`);
 }
 
+// ── retrieveForChat: the news slot the route actually injects ────────────────────────────────
+// searchCorpus above is the pure ranker. retrieveForChat adds one news page for regulatory
+// questions, because a profile's regulatory line is a snapshot ("Category 2 in 2023" on BPC-157)
+// and answering compounding questions from it alone is stale-but-plausible. These cases pin both
+// halves: that news IS added when it should be, and that nothing else is disturbed when it
+// shouldn't be.
+let augFailures = 0;
+const aug = (label, ok) => {
+  console.log(`\n${ok ? "✓" : "✗"} ${label}`);
+  if (!ok) augFailures += 1;
+};
+const cats = (q) => retrieveForChat(q, 2).map((h) => h.page.category);
+const urls = (q) => retrieveForChat(q, 2).map((h) => h.page.url);
+
+console.log("\n--- retrieveForChat (news slot) ---");
+aug('"Can pharmacies compound BPC-157?" keeps the profile FIRST and adds news',
+  urls("Can pharmacies compound BPC-157?")[0] === "/peptides/bpc-157" &&
+  cats("Can pharmacies compound BPC-157?").includes("news"));
+aug('"What did Eli Lilly sue over?" retrieves the lawsuits article',
+  urls("What did Eli Lilly sue over?")[0] === "/news/lilly-retatrutide-lawsuits-ruo-sellers-2026");
+aug('regulatory phrasings are detected', ["Is BPC-157 legal?", "Is retatrutide banned?", "Can pharmacies compound BPC-157?"].every(isRegulatoryQuery));
+aug('pharmacology phrasings are NOT treated as regulatory',
+  !["What is BPC-157 used for in research?", "What doses were used in retatrutide trials?", "semaglutide BPC-157 blend"].some(isRegulatoryQuery));
+aug('non-regulatory queries get NO extra page (ranking untouched)',
+  ["What is BPC-157 used for in research?", "semaglutide BPC-157 blend"].every((q) => retrieveForChat(q, 2).length === 2));
+aug('the injected news page is the most RECENT of the comparable ones, not just top-scoring',
+  (() => { const n = retrieveForChat("Can pharmacies compound BPC-157?", 2).find((h) => h.page.category === "news");
+           return !!n && n.page.dateIso >= "2026-08-01"; })());
+aug('every news page carries a date', corpus.generatedChatCorpus.filter((p) => p.category === "news").every((p) => p.date && p.dateIso));
+
 const asserted = QUERIES.filter((x) => x.expectTop !== null).length;
-if (failures > 0) {
-  console.error(`\ntest:chat-retrieval FAILED — ${failures}/${asserted} asserted quer(ies) ranked wrong.`);
+if (failures > 0 || augFailures > 0) {
+  console.error(`\ntest:chat-retrieval FAILED — ${failures}/${asserted} ranking quer(ies) wrong, ${augFailures} news-slot check(s) failed.`);
   process.exit(1);
 }
-console.log(`\ntest:chat-retrieval OK — ${asserted}/${asserted} asserted queries rank as expected.`);
+console.log(`\ntest:chat-retrieval OK — ${asserted}/${asserted} asserted queries rank as expected; news-slot checks pass.`);

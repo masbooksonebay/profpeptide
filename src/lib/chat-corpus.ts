@@ -6,6 +6,8 @@
 // regenerate — never edit the generated array by hand, and never add prose here that doesn't
 // already live on a real page (no second editorial layer to maintain).
 //
+// NEWS pages additionally carry `date`/`dateIso` (see below) — the corpus's only recency signal.
+//
 // EXCLUSION RULE: discount codes, prices, and stock status are stripped at generation time and
 // replaced with a "[[REDACTED]]" token (see gen-chat-corpus.mjs). A retriever must never treat
 // that token as real content, and a chat feature must supply codes/prices from vendors.ts / the
@@ -20,7 +22,7 @@ export interface ChatCorpusFaq {
   a: string;
 }
 
-export type ChatCorpusCategory = "peptide" | "supplement" | "guide" | "comparison" | "vendor" | "faq";
+export type ChatCorpusCategory = "peptide" | "supplement" | "guide" | "comparison" | "vendor" | "faq" | "news";
 
 export interface ChatCorpusPage {
   url: string;
@@ -39,6 +41,18 @@ export interface ChatCorpusPage {
   tokenEstimate: number;
   /** Count of code/price/stock substitutions made on this page. */
   redactions: number;
+  /** Publication date, NEWS ONLY (absent on every other category).
+   *
+   *  A first-class field rather than body prose because news is the one content type where recency
+   *  changes what an answer MEANS. "The FDA has proposed to exclude…" was true when it was written
+   *  and may be false later; a retrieved paragraph with no date attached invites the model to
+   *  present a dated regulatory posture as the current one. Sourced from src/data/news.ts — the
+   *  same registry the /news index and the homepage read, so it cannot drift from what the site
+   *  displays. Human form ("August 17, 2026") is what the page shows; `dateIso` is the sortable
+   *  counterpart for anything that needs ordering or comparison. */
+  date?: string;
+  /** ISO-8601 (YYYY-MM-DD) form of `date`, news only. */
+  dateIso?: string;
 }
 
 export { generatedChatCorpus } from "./chat-corpus.generated";

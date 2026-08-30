@@ -13,6 +13,10 @@
 //   coupon/vendor pages                            <- page.tsx full JSX body (FAQItem + prose)
 //   faq/[slug] pages                                <- src/data/faqQuestions.ts (import-free data;
 //                                                       reuses the site's own faqAnswerText())
+//   /news articles                                  <- page.tsx full JSX body (same pure-prose
+//                                                       shape as coupon pages: no sections/faqs/
+//                                                       rows arrays at all), PLUS the publication
+//                                                       date joined from src/data/news.ts
 //
 // EXCLUSION RULE (locked spec): discount codes, prices, and stock status are NEVER extracted into
 // the corpus. Two layers catch them:
@@ -467,6 +471,36 @@ function extractFaqQuestionsModule() {
   });
 }
 
+// ── news dates ────────────────────────────────────────────────────────────────────────────────
+// src/data/news.ts is the canonical registry the /news index and the homepage already read, and it
+// is import-free, so it can be exec'd directly like faqQuestions.ts. Taking the date from there
+// rather than scraping the dateline <p> or the JSON-LD datePublished out of the page means the
+// corpus date is the SAME value the site displays — it cannot drift from the listing, and a page
+// whose markup changes shape doesn't silently lose its date.
+function newsDateIndex() {
+  const { articles } = execModule("src/data/news.ts");
+  const bySlug = new Map();
+  for (const a of articles) {
+    bySlug.set(a.slug, { date: a.date, dateIso: toIsoDate(a.date), excerpt: a.excerpt ?? "" });
+  }
+  return bySlug;
+}
+
+const MONTHS = {
+  january: "01", february: "02", march: "03", april: "04", may: "05", june: "06",
+  july: "07", august: "08", september: "09", october: "10", november: "11", december: "12",
+};
+
+/** "August 17, 2026" -> "2026-08-17". Returns "" for anything that doesn't parse, rather than
+ *  guessing — a wrong date is worse than a missing one on a recency signal. */
+function toIsoDate(human) {
+  const m = /^([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})$/.exec(String(human ?? "").trim());
+  if (!m) return "";
+  const mm = MONTHS[m[1].toLowerCase()];
+  if (!mm) return "";
+  return `${m[3]}-${mm}-${String(m[2]).padStart(2, "0")}`;
+}
+
 function dirsIn(rel) {
   const dir = P(rel);
   if (!existsSync(dir)) return [];
@@ -497,6 +531,31 @@ export function buildCorpus() {
       }
       pages.push(p);
     }
+  }
+
+  // News articles. Same pure-JSX extraction as coupon pages (verified: no sections/faqs/rows
+  // arrays on any of them), with the publication date joined on from the registry afterwards.
+  // The date is also PREPENDED to fullText, not just carried as a field: retrieval scores against
+  // fullText, and the injected text is what the model actually reads — a date the model cannot see
+  // is a date it cannot caveat with.
+  const newsDates = newsDateIndex();
+  for (const slug of dirsIn("src/app/news")) {
+    const abs = P("src/app/news", slug, "page.tsx");
+    const p = extractPage(abs, `/news/${slug}`, "news");
+    if (!p.fullText) {
+      SKIPPED.push(`/news/${slug} — no extractable content found`);
+      continue;
+    }
+    const meta = newsDates.get(slug);
+    if (meta) {
+      p.date = meta.date;
+      p.dateIso = meta.dateIso;
+      p.fullText = `Published: ${meta.date}\n\n${p.fullText}`;
+      p.tokenEstimate = Math.ceil(p.fullText.length / 4);
+    } else {
+      SKIPPED.push(`/news/${slug} — no entry in src/data/news.ts, published date unknown`);
+    }
+    pages.push(p);
   }
 
   // Bioregulators: a single article page, not a per-entity directory.
