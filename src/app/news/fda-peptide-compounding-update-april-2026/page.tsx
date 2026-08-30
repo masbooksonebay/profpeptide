@@ -64,7 +64,35 @@ export default function FDAPeptideCompoundingUpdatePage() {
             The FDA uses a two-tier system for evaluating compounds that compounding pharmacies want to produce:
           </p>
           <p>
-            <strong>Category 1</strong> &mdash; The compound is considered safe enough for compounding while still under FDA review. Compounding pharmacies can legally produce it with a valid prescription.
+          {/* ─────────────────────────────────────────────────────────────────────────────────
+              🔒 ESTABLISHED FACT — VERIFIED 2026-08-30 AGAINST PRIMARY SOURCES. DO NOT RE-DERIVE.
+              This claim has drifted across several editing passes because the underlying fact was
+              never written down next to it. It is written down now; read the citation before
+              changing anything here.
+
+              CATEGORY 1 IS NOT AUTHORISATION. FDA's own list is titled "503A Category 1 — Bulk Drug
+              Substances UNDER EVALUATION" (FDA, "Bulk Drug Substances Nominated for Use in
+              Compounding Under Section 503A", updated May 14, 2026 —
+              https://www.fda.gov/media/94155/download). Category 1 confers only interim enforcement
+              discretion while FDA evaluates a nomination; it is not placement on the 503A Bulks
+              List, which requires a final rule.
+
+              NO PCAC PEPTIDE IS IN CATEGORY 1. That May 14, 2026 list contains none of BPC-157, KPV,
+              TB-500, MOTS-c, Epitalon, Semax or DSIP/Emideltide. The only peptide-family entries are
+              GHK-Cu (except injectable routes) and Vasoactive Intestinal Peptide.
+
+              THE SEQUENCE, each step distinct: nomination -> Category 1 (under evaluation) -> PCAC
+              recommendation (NON-BINDING) -> FDA rulemaking -> placement on the 503A Bulks List.
+              Per Federal Register notice 2026-07361 (Docket FDA-2025-N-6895, April 16, 2026), the
+              seven peptides were "being considered for inclusion on the 503A Bulks List" — i.e. not
+              on it. PCAC met July 23–24, 2026 and recommended six; FDA's own review had proposed
+              BPC-157 NOT be included. No final rule placing any peptide has issued.
+
+              GHK-Cu, for completeness: removed from Category 1 on April 22, 2026 when its
+              nominations were withdrawn, then "GHK-Cu (except for injectable routes of
+              administration)" was added back after a nominator clarified on May 5, 2026.
+              ───────────────────────────────────────────────────────────────────────────────── */}
+            <strong>Category 1</strong> &mdash; FDA&rsquo;s own title for this list is &ldquo;Bulk Drug Substances Under Evaluation.&rdquo; It means a nomination is being assessed and is covered by interim enforcement discretion in the meantime &mdash; not that the substance is approved, and not that it has been placed on the 503A Bulks List, which requires a final rule.
           </p>
           <p>
             <strong>Category 2</strong> &mdash; The FDA has flagged significant safety concerns. Compounding pharmacies cannot produce it under the standard 503A framework.

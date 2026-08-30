@@ -64,7 +64,35 @@ export default function RFKPeptideUpdatePage() {
             Compounding pharmacies are in a holding pattern. Many are preparing to resume peptide compounding as soon as written guidance is issued, but most are waiting for explicit FDA clearance before filling orders. Until the formal list is published, the Category 2 designations remain in effect.
           </p>
           <p>
-            It is also important to understand what reclassification does and does not mean. Moving a peptide from Category 2 to Category 1 restores its eligibility for compounding under physician prescription &mdash; it does not constitute FDA approval. Compounded peptides would still require a valid prescription, still lack formal FDA approval as finished drug products, and still carry no standardized dosing guidelines.
+          {/* ─────────────────────────────────────────────────────────────────────────────────
+              🔒 ESTABLISHED FACT — VERIFIED 2026-08-30 AGAINST PRIMARY SOURCES. DO NOT RE-DERIVE.
+              This claim has drifted across several editing passes because the underlying fact was
+              never written down next to it. It is written down now; read the citation before
+              changing anything here.
+
+              CATEGORY 1 IS NOT AUTHORISATION. FDA's own list is titled "503A Category 1 — Bulk Drug
+              Substances UNDER EVALUATION" (FDA, "Bulk Drug Substances Nominated for Use in
+              Compounding Under Section 503A", updated May 14, 2026 —
+              https://www.fda.gov/media/94155/download). Category 1 confers only interim enforcement
+              discretion while FDA evaluates a nomination; it is not placement on the 503A Bulks
+              List, which requires a final rule.
+
+              NO PCAC PEPTIDE IS IN CATEGORY 1. That May 14, 2026 list contains none of BPC-157, KPV,
+              TB-500, MOTS-c, Epitalon, Semax or DSIP/Emideltide. The only peptide-family entries are
+              GHK-Cu (except injectable routes) and Vasoactive Intestinal Peptide.
+
+              THE SEQUENCE, each step distinct: nomination -> Category 1 (under evaluation) -> PCAC
+              recommendation (NON-BINDING) -> FDA rulemaking -> placement on the 503A Bulks List.
+              Per Federal Register notice 2026-07361 (Docket FDA-2025-N-6895, April 16, 2026), the
+              seven peptides were "being considered for inclusion on the 503A Bulks List" — i.e. not
+              on it. PCAC met July 23–24, 2026 and recommended six; FDA's own review had proposed
+              BPC-157 NOT be included. No final rule placing any peptide has issued.
+
+              GHK-Cu, for completeness: removed from Category 1 on April 22, 2026 when its
+              nominations were withdrawn, then "GHK-Cu (except for injectable routes of
+              administration)" was added back after a nominator clarified on May 5, 2026.
+              ───────────────────────────────────────────────────────────────────────────────── */}
+            It is also important to understand what reclassification does and does not mean. FDA&rsquo;s Category 1 is titled &ldquo;Bulk Drug Substances Under Evaluation&rdquo; &mdash; it is an interim status carrying enforcement discretion while the agency assesses a nomination, not authorisation to compound and not FDA approval. Placement on the 503A Bulks List is a separate step requiring a final rule. Compounded peptides would still require a valid prescription, still lack formal FDA approval as finished drug products, and still carry no standardized dosing guidelines.
           </p>
 
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 pt-2">Why the Delay Matters</h2>

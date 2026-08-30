@@ -143,12 +143,12 @@ export const faqQuestions: FaqQuestion[] = [
       {
         kind: "p",
         text:
-          "For the compounding lanes, the FDA sorts nominated bulk drug substances into categories. Category 2 is the \u201Csignificant safety concern\u201D list; Category 1 covers substances that may be eligible for use while under evaluation. In April 2026 the FDA removed twelve peptides from Category 2 after their nominations were withdrawn (docket FDA-2025-N-6895).",
+          "For the compounding lanes, the FDA sorts nominated bulk drug substances into categories. FDA titles them plainly: Category 1 is \u201CBulk Drug Substances Under Evaluation,\u201D Category 2 \u201Cthose that Raise Significant Safety Concerns,\u201D Category 3 \u201Cnominated without adequate support.\u201D Category 1 is an interim status carrying enforcement discretion during assessment \u2014 not authorisation, and not placement on the 503A Bulks List, which takes a final rule. In April 2026 the FDA removed twelve peptides from Category 2 after their nominations were withdrawn (docket FDA-2025-N-6895).",
       },
       {
         kind: "p",
         text:
-          "The precision that matters: removal from Category 2 is not authorisation to compound, and it does not move a substance into Category 1. The number of peptides confirmed sitting in Category 1 as a result of those actions is none. A vendor presenting the Category 2 removals as \u201Cpeptides are being legalised\u201D is describing something that did not happen.",
+          "The precision that matters: removal from Category 2 is not authorisation to compound, and it does not move a substance into Category 1. FDA\u2019s Category 1 list as updated May 14, 2026 contains none of the seven peptides the advisory committee reviewed \u2014 its only peptide-family entries are GHK-Cu (except injectable routes) and Vasoactive Intestinal Peptide. A vendor presenting the Category 2 removals as \u201Cpeptides are being legalised\u201D is describing something that did not happen.",
       },
       { kind: "heading", text: "What moved in 2026 \u2014 and what \u201Cproposed\u201D means" },
       {
@@ -234,6 +234,11 @@ export const faqQuestions: FaqQuestion[] = [
             cite: "FDA, Warning Letter to Summit Research Peptides (MARCS-CMS 695607, December 10, 2024)",
             href: "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/summit-research-peptides-695607-12102024",
             note: "the earliest of the recent letters, establishing this as a pattern rather than a one-off",
+          },
+          {
+            cite: "FDA, Bulk Drug Substances Nominated for Use in Compounding Under Section 503A (categories 1\u20133, updated May 14, 2026)",
+            href: "https://www.fda.gov/media/94155/download",
+            note: "FDA\u2019s own titles for the categories, and the Category 1 contents \u2014 which include none of the seven peptides the July 2026 advisory committee reviewed",
           },
           {
             cite: "Louisiana Act No. 374 (SB 253), 2026 Regular Session \u2014 enrolled act enacting R.S. 37:23.5",
