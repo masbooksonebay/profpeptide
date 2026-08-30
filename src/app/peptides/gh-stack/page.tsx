@@ -9,6 +9,7 @@ import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/gh-stack",
@@ -230,7 +231,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Pre-bed is the default &mdash; 30&ndash;60 minutes before sleep. Some protocols add a second dose post-workout or upon waking.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Empty stomach.</span> At least 2 hours after the last meal. Elevated insulin and somatostatin blunt the GH response &mdash; this is the most important timing rule for the GH Stack.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Alternate sites each injection. Stay at least 1 inch from previous injection sites.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Resume on the next scheduled dose. Do not double-dose. For weekly CJC-1295 with DAC, shift the next dose by 1&ndash;2 days if needed.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Resume on the next scheduled dose. The convention is not to double-dose. For weekly CJC-1295 with DAC, shift the next dose by 1&ndash;2 days if needed.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution.</span> Use bacteriostatic water for injection (BAC water) at the volume specified by the dosing calculator. Swirl gently &mdash; do not shake &mdash; to avoid damaging the peptides.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycling.</span> 8&ndash;12 weeks on, 4-week minimum break. Cycling avoids pituitary receptor desensitization and preserves GH-axis responsiveness.</li>
         </ol>
@@ -703,6 +704,9 @@ export default function GHStackPage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

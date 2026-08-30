@@ -11,6 +11,7 @@ import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/dsip",
@@ -38,7 +39,7 @@ const faqs = [
   },
   {
     q: "What's the right dose?",
-    a: "There is no standardized clinical dose. Original IV human studies used 25 nmol/kg (~21 mcg/kg). Modern subcutaneous protocols typically use 100–200 mcg per dose, but this is derived from biohacker community reports rather than clinical trials. Start low (50–100 mcg) and titrate up only if needed.",
+    a: "There is no standardized clinical dose. Original IV human studies used 25 nmol/kg (~21 mcg/kg). Modern subcutaneous protocols typically use 100–200 mcg per dose, but this is derived from biohacker community reports rather than clinical trials. The reported practice is to begin at the low end (50–100 mcg) and titrate up only if needed.",
   },
   {
     q: "Should I take DSIP daily?",
@@ -183,8 +184,8 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection at bedtime is the most common route. Intranasal also used.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> 30–60 minutes before sleep. Some protocols use daytime dosing for the next-night effect.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine &mdash; DSIP can be absorbed orally (unusual for a peptide), but injection is preferred for research dosing.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each injection (abdomen, thigh, upper arm).</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Skip and resume next scheduled dose. Do not double-dose.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Sites are conventionally rotated each injection (abdomen, thigh, upper arm).</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Skip and resume next scheduled dose. The convention is not to double-dose.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Avoid with sedatives.</span> Avoid combining with sedatives, benzodiazepines, alcohol &mdash; possible additive CNS depression.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle structure.</span> 5–7 days on, with breaks. Avoid continuous daily long-term use given limited safety data.</li>
         </ol>
@@ -623,6 +624,9 @@ export default function DSIPPage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

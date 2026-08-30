@@ -9,6 +9,7 @@ import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/follistatin",
@@ -151,7 +152,7 @@ const sections = [
     id: "dosing",
     title: "How is Follistatin dosed?",
     intro:
-      "Follistatin (FS-344) is administered as a daily subcutaneous injection during cycles. The ~90-minute half-life requires daily dosing during cycles to maintain effective levels. Cycle structure (10–30 days on, 3–4 weeks off) is standard practice to allow reproductive hormone changes to normalize and to limit cumulative activin pathway modulation. Dosing protocols are derived from community/research practice rather than validated clinical trials.",
+      "Follistatin (FS-344) is administered as a daily subcutaneous injection during cycles. The ~90-minute half-life requires daily dosing during cycles to maintain effective levels. A cycle structure of 10–30 days on and 3–4 weeks off is the community convention, intended to allow reproductive hormone changes to normalize and to limit cumulative activin pathway modulation. Dosing protocols are derived from community/research practice rather than validated clinical trials.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
@@ -187,8 +188,8 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection, daily during the cycle. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Any time, but consistent. Many users inject in the morning or post-workout to align peak levels with training stimulus.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each day to reduce localized irritation. Stay at least 1 inch from previous injection sites.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Skip and resume the next day. Do not double-dose &mdash; the short half-life means a doubled dose would briefly spike well above the recommended ceiling without sustained benefit.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Rotating sites each day, with at least an inch between consecutive sites, is the convention for limiting localized irritation.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Skip and resume the next day. The convention is not to double-dose &mdash; the short half-life means a doubled dose would briefly spike well above the recommended ceiling without sustained benefit.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution handling.</span> Add bacteriostatic water slowly down the inside wall of the vial &mdash; do not spray directly onto powder. Gently swirl or roll until dissolved. Do not shake. Follistatin is a large glycoprotein and denatures with rough handling.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle structure.</span> 10–30 days on, 3–4 weeks off. Avoid continuous use.</li>
         </ol>
@@ -637,6 +638,9 @@ export default function FollistatinPage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

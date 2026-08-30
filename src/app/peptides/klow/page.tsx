@@ -8,6 +8,7 @@ import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/klow",
@@ -218,7 +219,7 @@ const sections = [
       "Time of day. Bedtime is the standard default — gives the peptides an undisturbed window during early-night tissue repair cycles. Any consistent time works.",
       "With or without food. Either is fine. KLOW components do not interact with food absorption.",
       "Site rotation. Alternate sites each injection. Stay at least 1 inch from previous injection sites — mild injection-site reactions are the most commonly reported side effect.",
-      "Missed dose. Resume on the next scheduled day. Do not double-dose to compensate for a missed daily injection.",
+      "Missed dose. Resume on the next scheduled day. The convention is not to double-dose to compensate for a missed daily injection.",
       "Reconstitution. Use bacteriostatic water for injection (BAC water) at the volume specified by the dosing calculator. Swirl gently — do not shake — to avoid damaging the peptides.",
       "Local injection for soft-tissue work. For tendon, ligament, or post-procedure recovery applications, researchers often inject within 1–2 inches of the affected area rather than at a distant rotation site.",
     ],
@@ -545,6 +546,9 @@ export default function KLOWPage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

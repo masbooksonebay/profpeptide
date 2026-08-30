@@ -9,6 +9,7 @@ import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/sermorelin",
@@ -144,7 +145,7 @@ const sections = [
     id: "dosing",
     title: "How is Sermorelin dosed?",
     intro:
-      "The only FDA-approved sermorelin regimen was Geref, dosed at 30 mcg/kg once daily at bedtime for GH deficiency in children — the adult flat-dose protocols below are off-label anti-aging / GHRH-replacement convention, not the approved regimen and not trial-derived. Sermorelin is administered as a subcutaneous injection; the short 10–20 minute half-life means effects depend entirely on dose timing. The figure that circulates in research communities is 200–500 mcg once daily at bedtime, run in cycles of typically 3–6 months (some use continuously under clinical supervision). Empty-stomach dosing is non-negotiable for full GH response.",
+      "The only FDA-approved sermorelin regimen was Geref, dosed at 30 mcg/kg once daily at bedtime for GH deficiency in children — the adult flat-dose protocols below are off-label anti-aging / GHRH-replacement convention, not the approved regimen and not trial-derived. Sermorelin is administered as a subcutaneous injection; the short 10–20 minute half-life means effects depend entirely on dose timing. The figure that circulates in research communities is 200–500 mcg once daily at bedtime, run in cycles of typically 3–6 months (some use continuously under clinical supervision). Empty-stomach dosing is the convention, on the rationale that food-driven insulin blunts the GH response.",
     node: (
       <div className="space-y-3">
         <ol className="list-decimal list-inside space-y-1">
@@ -183,7 +184,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection. Common sites: abdomen, thigh, upper arm.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Bedtime is strongly preferred. Inject 30–60 minutes before sleep to align with natural overnight GH peak.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Empty stomach. Wait 2+ hours after eating, 30 min before next meal.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each injection to reduce localized irritation. Stay at least 1 inch from previous injection sites.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Rotating sites each injection, with at least an inch between consecutive sites, is the convention for limiting localized irritation.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Skip and resume next scheduled dose &mdash; short half-life makes catch-up unnecessary.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle structure.</span> 3–6 months common; continuous use under clinical supervision also documented.</li>
         </ol>
@@ -615,6 +616,9 @@ export default function SermorelinPage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

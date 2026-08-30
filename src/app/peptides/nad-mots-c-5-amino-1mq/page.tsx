@@ -8,6 +8,7 @@ import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/nad-mots-c-5-amino-1mq",
@@ -198,7 +199,7 @@ const sections = [
       "Site rotation. Alternate injection sites each dose to avoid local accumulation and reduce injection-site reactions.",
       "Reconstitution. Use bacteriostatic water for injection. Swirl gently to dissolve &mdash; do not shake. Discard if the solution is cloudy, discolored, or particulate.",
       "IV vs SC for NAD+. NAD+ in full research protocols is often delivered by slow IV infusion (to reduce flushing and cardiovascular pressure symptoms). SC delivery is more practical and is used in research-community protocols, typically at lower doses per injection than IV protocols.",
-      "Missed dose. Resume on the next scheduled day. Do not double-dose to compensate for a missed injection.",
+      "Missed dose. Resume on the next scheduled day. The convention is not to double-dose to compensate for a missed injection.",
     ],
   },
   {
@@ -540,6 +541,9 @@ export default function MetabolicBlendPage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

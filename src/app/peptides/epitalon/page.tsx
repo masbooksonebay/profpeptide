@@ -11,6 +11,7 @@ import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/epitalon",
@@ -50,7 +51,7 @@ const faqs = [
   },
   {
     q: "Is Epitalon safe long-term?",
-    a: "Russian cohort data spanning 20+ years suggests excellent long-term safety. Methodology differs from Western RCT standards, but the duration of human observation is unmatched in peptide research. Cycling rather than continuous use is standard practice. Cancer patients should consult their oncologist before use given theoretical telomerase activation concerns in cancer contexts.",
+    a: "Russian cohort data spanning 20+ years suggests excellent long-term safety. Methodology differs from Western RCT standards, but the duration of human observation is unmatched in peptide research. Cycling rather than continuous use is the community convention. Cancer patients should consult their oncologist before use given theoretical telomerase activation concerns in cancer contexts.",
   },
   {
     q: "What is the optimal dosing schedule?",
@@ -174,8 +175,8 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection, once daily during the cycle. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Bedtime preferred &mdash; aligns with pineal/melatonin pathway timing.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine; no fasting requirement.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each day to reduce localized irritation. Stay at least 1 inch from previous injection sites.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Skip and resume the next day. Do not double-dose.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Rotating sites each day, with at least an inch between consecutive sites, is the convention for limiting localized irritation.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Skip and resume the next day. The convention is not to double-dose.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution handling.</span> Add bacteriostatic water slowly down the inside wall of the vial. Swirl gently &mdash; do not shake.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle structure.</span> Single 10–20 day intensive cycle, then 2–6 month break. Lifelong cycling (2–4 cycles per year) is the conventional framing.</li>
         </ol>
@@ -616,6 +617,9 @@ export default function EpitalonPage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

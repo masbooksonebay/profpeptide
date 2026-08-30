@@ -8,6 +8,7 @@ import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/mk-677-ipamorelin",
@@ -296,7 +297,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Empty stomach.</span> Critical for Ipamorelin: elevated insulin and somatostatin blunt the GH response. MK-677&apos;s oral dose (taken earlier in the evening) does not block Ipamorelin&apos;s injectable response because MK-677&apos;s GHS-R1a action precedes the injection window.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Alternate injection sites each dose. Stay at least 1 inch from previous injection sites.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution.</span> Use bacteriostatic water for injection (BAC water). Swirl gently &mdash; do not shake &mdash; to avoid damaging the lyophilized peptide. Reconstituted solution: refrigerate at 2&ndash;8&deg;C and use within 30 days.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed Ipamorelin dose.</span> Resume on the next scheduled dose. Do not double-dose. MK-677&apos;s 24 h half-life means missing a single MK-677 oral dose has minimal impact on the overall GH/IGF-1 baseline.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed Ipamorelin dose.</span> Resume on the next scheduled dose. The convention is not to double-dose. MK-677&apos;s 24 h half-life means missing a single MK-677 oral dose has minimal impact on the overall GH/IGF-1 baseline.</li>
         </ol>
 
         <div className="overflow-x-auto -mx-4 sm:mx-0 pt-2">
@@ -752,6 +753,9 @@ export default function MK677IpamorelinPage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

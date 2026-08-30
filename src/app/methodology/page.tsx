@@ -115,7 +115,32 @@ export default function MethodologyPage() {
             </p>
           </Section>
 
-          <Section title="How we research the science">
+          {/* The dosing standard, documented where the site explains how it works. The one-line
+            version renders next to every dosing section via components/DosingContext.tsx; this is
+            the full statement of the same rule. Keep the two consistent. */}
+        <Section title="How we report doses">
+          <p>
+            Dosing is where a research site is most tempted to become an advice site, so the standard is
+            explicit. Prof. Peptide reports two different kinds of fact and labels them separately:
+            what a clinical trial or an approved product label actually established, and what a
+            research community conventionally practises. Both can appear on the same page without
+            contradiction, because they are not the same claim.
+          </p>
+          <p>
+            A trial figure is attributed to its trial, and a label figure to its label. A convention is
+            named as a convention &mdash; a practice that circulates, not a finding. Where neither
+            exists, the page says so rather than filling the gap with a plausible number; an honest
+            absence is more useful than an invented protocol.
+          </p>
+          <p>
+            What the site does not do is instruct. There is a real difference between reporting that a
+            convention exists and telling a reader to follow it, and the whole standard sits on that
+            line. Nothing here is a recommendation, and a figure appearing on a page is not an
+            endorsement of it.
+          </p>
+        </Section>
+
+        <Section title="How we research the science">
             <p>
               Our {profileCount} peptide profiles and {supplementCount} supplement profiles are built from primary sources &mdash; peer-reviewed literature indexed on PubMed and PMC, published clinical-trial data, and FDA drug labels &mdash; not secondhand summaries. Specific claims such as mechanism, half-life, and pharmacokinetics are attributed to named studies, and every profile ends with a linked References section pointing back to the originals. Where the evidence is preclinical, limited, or contested, we say so plainly rather than padding the gap with personal protocols dressed up as fact.
             </p>

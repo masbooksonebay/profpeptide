@@ -7,6 +7,7 @@ import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/semax-selank",
@@ -223,7 +224,7 @@ const sections = [
       "Spray priming. Prime the spray bottle with 2–3 actuations to waste before the first use of a freshly reconstituted bottle.",
       "Spray technique. Avoid sniffing too hard — the goal is for the spray to deposit on the upper nasal mucosa for olfactory-pathway absorption, not to swallow the spray. A gentle inhalation during the spray is enough.",
       "Multiple sprays per dose. Wait 30–60 seconds between sprays in the same nostril to allow the first spray to settle on the mucosa.",
-      "Missed dose. Skip and resume on the next scheduled dose. Do not double-dose.",
+      "Missed dose. Skip and resume on the next scheduled dose. The convention is not to double-dose.",
     ],
   },
   {
@@ -544,6 +545,9 @@ export default function SemaxSelankPage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

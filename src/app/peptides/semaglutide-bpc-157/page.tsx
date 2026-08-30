@@ -8,6 +8,7 @@ import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/semaglutide-bpc-157",
@@ -265,8 +266,8 @@ const sections = [
       "With or without food. Semaglutide: independent of meals (injected, not oral). BPC-157: independent of meals.",
       "Site rotation. Alternate abdomen, thigh, and upper arm for semaglutide. Alternate left and right abdominal quadrants for daily BPC-157. Maintain at least 1 inch from previous injection sites.",
       "Reconstitution. Use bacteriostatic water for injection. Swirl gently — do not shake either compound. Semaglutide is particularly sensitive to agitation.",
-      "Missed semaglutide dose. If missed by ≤5 days, administer as soon as possible. If more than 5 days have elapsed, skip and administer on the next scheduled day. Do not double-dose.",
-      "Missed BPC-157 dose. Resume on the next scheduled day. Do not double-dose.",
+      "Missed semaglutide dose. If missed by ≤5 days, administer as soon as possible. If more than 5 days have elapsed, skip and administer on the next scheduled day. The convention is not to double-dose.",
+      "Missed BPC-157 dose. Resume on the next scheduled day. The convention is not to double-dose.",
     ],
   },
   {
@@ -833,7 +834,10 @@ export default function SemaglutideBpc157Page() {
                   {s.intro}
                 </p>
               )}
-              {s.node && s.node}
+              {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
+            {s.node && s.node}
               {s.content && (
                 <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                   {s.content}

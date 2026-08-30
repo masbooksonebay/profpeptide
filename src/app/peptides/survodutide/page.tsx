@@ -11,6 +11,7 @@ import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/survodutide",
@@ -152,7 +153,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Type 2 diabetes trial.</span> A 16-week dose-finding study of several titration schemes, establishing glycemic and weight effects at the higher doses.</li>
         </ol>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed pt-2">
-          Survodutide is long-acting, supporting once-weekly administration. Escalation is deliberately slow: gastrointestinal tolerability, not efficacy, is the limiting factor early in a protocol, and holding at a step until side effects settle is standard practice in the trial designs.
+          Survodutide is long-acting, supporting once-weekly administration. Escalation is deliberately slow: gastrointestinal tolerability, not efficacy, is the limiting factor early in a protocol, and the trial designs hold at a step until side effects settle.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Survodutide is investigational. Any dosing outside a clinical trial is derived from published trial data, not from approved retail guidelines, which do not exist for this compound.
@@ -175,8 +176,8 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection, once weekly. Common sites are the abdomen (avoiding a 2-inch radius around the navel), upper outer thighs, and back of the upper arms.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Any time, but consistent from week to week. Many researchers inject in the evening to sleep through peak GI effects during titration.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Either is fine; the long half-life makes meal timing largely irrelevant to absorption.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each week to reduce localized irritation. Stay at least 1 inch from previous injection sites.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> If a few days late, take as soon as remembered; if closer to the next scheduled dose, skip and resume on schedule. Do not double-dose.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Rotating sites each week, with at least an inch between consecutive sites, is the convention for limiting localized irritation.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> The reported practice is to administer if only a few days late, and to skip to the next scheduled dose if closer to it. The convention is not to double-dose.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Hydration and eating pattern.</span> The GLP-1 arm blunts thirst and hunger signals; a set daily water target and small, regular meals reduce nausea and empty-stomach discomfort.</li>
         </ol>
 
@@ -614,6 +615,9 @@ export default function SurvodutidePage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

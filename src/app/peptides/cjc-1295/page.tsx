@@ -11,6 +11,7 @@ import { priceDisambiguation, compoundVendorCount } from "@/data/prices";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/cjc-1295",
@@ -193,8 +194,8 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection. Common sites: abdomen, thigh, upper arm.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Bedtime is most common (aligns with natural GH peaks). Modified GRF 1-29 requires multiple daily doses spread through the day.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Empty stomach. Wait 2+ hours after eating, and 30+ minutes before next meal.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each injection to reduce localized irritation. Stay at least 1 inch from previous injection sites.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose (DAC).</span> If less than 2 days late, take as soon as remembered; if more, skip and resume next scheduled dose.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Rotating sites each injection, with at least an inch between consecutive sites, is the convention for limiting localized irritation.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose (DAC).</span> The reported practice is to administer if less than 2 days late, and to skip to the next scheduled dose beyond that.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose (no DAC).</span> Skip and resume next scheduled dose &mdash; the short half-life makes catch-up dosing unnecessary.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle structure.</span> 8–12 weeks on, 4+ weeks off.</li>
         </ol>
@@ -642,7 +643,7 @@ export default function CJC1295Page() {
             </ul>
           </div>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> With DAC: typically 1–2 mg subcutaneously once or twice weekly. Without DAC (Modified GRF 1-29): typically 100 mcg per dose, multiple times daily. Cycle length 8–12 weeks. Empty-stomach dosing is non-negotiable for full GH response.
+            <span className="font-semibold text-[#16181B] dark:text-slate-100">Common research dose:</span> With DAC: typically 1–2 mg subcutaneously once or twice weekly. Without DAC (Modified GRF 1-29): typically 100 mcg per dose, multiple times daily. Cycle length 8–12 weeks. Empty-stomach dosing is the convention, on the rationale that food-driven insulin blunts the GH response.
           </p>
           <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
             <span className="font-semibold text-[#16181B] dark:text-slate-100">Where to buy:</span> PP maintains a vetted list of peptide vendors with verified discount codes. See{" "}
@@ -662,6 +663,9 @@ export default function CJC1295Page() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

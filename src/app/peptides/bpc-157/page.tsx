@@ -10,6 +10,7 @@ import ContactLink from "@/components/ContactLink";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/bpc-157",
@@ -197,9 +198,9 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Route.</span> Subcutaneous injection for systemic effects, or near the injury site for localized injuries (tendons, joints, muscle bellies). Common sites: abdomen, thigh, upper arm.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Time of day.</span> Morning or post-workout is most common in user protocols. Some users prefer pre-bed for overnight repair.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">With or without food.</span> Subcutaneous BPC-157 is unaffected by food. Oral BPC-157 is best on an empty stomach.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Use a different site each day to reduce localized irritation. Stay at least 1 inch from previous injection sites.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Rotating sites each day, with at least an inch between consecutive sites, is the convention for limiting localized irritation.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Localized injection.</span> For tendon or joint injuries, inject 0.5–1 inch from the injured area. Avoid injecting directly into the tendon or joint space.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> If less than 12 hours late, take as soon as remembered. Otherwise skip and resume on the next scheduled day.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> The reported practice is to administer if less than 12 hours late, and otherwise to skip to the next scheduled day.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycle structure.</span> Most users run 4–8 week cycles followed by 4+ week off periods. Continuous use is not well-studied.</li>
         </ol>
 
@@ -675,6 +676,9 @@ export default function BPC157Page() {
               {s.intro}
             </p>
           )}
+          {/* Why trial figures and community conventions can both appear here — see the
+              component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+          {s.id === "dosing" && <DosingContext />}
           {s.node && s.node}
           {s.content && (
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

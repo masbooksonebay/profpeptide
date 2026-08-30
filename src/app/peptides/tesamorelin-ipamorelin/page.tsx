@@ -8,6 +8,7 @@ import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/tesamorelin-ipamorelin",
@@ -252,7 +253,7 @@ const sections = [
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Same injection or separate syringes.</span> Both peptides may be drawn into the same insulin syringe for a single injection, or administered as separate injections. Do not mix in the same vial for storage.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Site rotation.</span> Alternate injection sites each dose. Stay at least 1 inch from previous injection sites to minimize injection-site reactions.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Reconstitution.</span> Use bacteriostatic water for injection (BAC water). Swirl gently &mdash; do not shake &mdash; to avoid damaging the lyophilized peptides. Tesamorelin should be reconstituted with the volume specified on the vial or as calculated for the target dose.</li>
-          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Resume on the next scheduled dose. Do not double-dose. For once-daily protocols, a single missed injection has minimal impact; consistency over weeks matters more than any individual dose.</li>
+          <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Missed dose.</span> Resume on the next scheduled dose. The convention is not to double-dose. For once-daily protocols, a single missed injection has minimal impact; consistency over weeks matters more than any individual dose.</li>
           <li className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed"><span className="font-semibold">Cycling.</span> 8&ndash;16 weeks active, 4&ndash;8 week minimum off-period. Cycling avoids pituitary receptor desensitization and preserves GH-axis responsiveness over repeated research cycles.</li>
         </ol>
 
@@ -674,6 +675,9 @@ export default function TesaIpamorelinPage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

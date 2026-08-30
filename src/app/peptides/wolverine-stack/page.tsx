@@ -8,6 +8,7 @@ import ContactLink from "@/components/ContactLink";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/wolverine-stack",
@@ -215,7 +216,7 @@ const sections = [
       "Site rotation. Alternate sites each injection. Stay at least 1 inch from previous injection sites — mild injection-site reactions are the most commonly reported side effect.",
       "Local injection for soft-tissue work. For tendon, ligament, or post-procedure recovery, BPC-157 is often injected within 0.5–1 inch of the affected area rather than at a distant rotation site. TB-500 is given systemically regardless.",
       "Reconstitution. Use bacteriostatic water for injection (BAC water) at the volume specified by the dosing calculator. Swirl gently — do not shake — to avoid damaging the peptides.",
-      "Missed dose. For BPC-157 (daily), resume on the next scheduled day. For TB-500 (load or maintenance), shift the next scheduled dose by 1–2 days if needed. Do not double-dose.",
+      "Missed dose. For BPC-157 (daily), resume on the next scheduled day. For TB-500 (load or maintenance), shift the next scheduled dose by 1–2 days if needed. The convention is not to double-dose.",
     ],
   },
   {
@@ -544,6 +545,9 @@ export default function WolverineStackPage() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>

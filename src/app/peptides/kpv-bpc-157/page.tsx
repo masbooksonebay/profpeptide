@@ -8,6 +8,7 @@ import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd, isWhereToBuy } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import DosingContext from "@/components/DosingContext";
 
 export const metadata = buildPageMetadata({
   path: "/peptides/kpv-bpc-157",
@@ -211,7 +212,7 @@ const sections = [
       "Subcutaneous route. Standard insulin syringe (U-100, 29–31 gauge). Common sites: abdomen (avoiding 2-inch radius around navel), upper outer thighs, back of upper arms. Rotate sites each injection to minimize reaction.",
       "Time of day. Either morning (fasted, before breakfast) or bedtime (at least 2 hours after last meal) for oral; any consistent time for SC. Bedtime SC is a common choice to align with overnight repair.",
       "Reconstitution (SC only). Use bacteriostatic water for injection. Swirl gently — do not shake. Reconstituted solution: store at 2–8°C and use within 30 days. Do not freeze reconstituted vials.",
-      "Missed dose. Resume at the next scheduled dose. Do not double-dose. For oral dosing, consistency with empty-stomach timing matters more than precise time-of-day.",
+      "Missed dose. Resume at the next scheduled dose. The convention is not to double-dose. For oral dosing, consistency with empty-stomach timing matters more than precise time-of-day.",
       "Injection technique (SC). Insert needle at 45–90° into a pinched fold of skin. Inject slowly. Remove and apply gentle pressure. No need to aspirate for SC injection.",
       "Peri-injury use (SC BPC-157). For any non-GI tissue component, BPC-157 can be injected within 0.5–1 inch of the affected anatomical area for localized repair signaling.",
     ],
@@ -570,6 +571,9 @@ export default function KpvBpc157Page() {
                 {s.intro}
               </p>
             )}
+            {/* Why trial figures and community conventions can both appear here — see the
+                component. Keyed on the dosing section only: this is where the misunderstanding forms. */}
+            {s.id === "dosing" && <DosingContext />}
             {s.node && s.node}
             {s.content && (
               <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">{s.content}</p>
