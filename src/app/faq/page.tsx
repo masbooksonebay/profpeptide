@@ -5,6 +5,7 @@ import { hubFaqSections } from "@/data/faq";
 import { faqQuestions, FAQ_CATEGORY_ORDER } from "@/data/faqQuestions";
 import { faqPageJsonLd } from "@/lib/faq-schema";
 import NavLink from "@/components/NavLink";
+import { pickerLabels } from "@/lib/faq-related";
 
 // FAQPage JSON-LD DERIVED from the same hubFaqSections the page renders (never a second copy).
 // It lives here, not in layout.tsx, so it scopes to /faq alone and not the /faq/[slug] children.
@@ -21,6 +22,7 @@ const PICKER_THRESHOLD = 5;
 // nothing about what the reader is choosing between. Generic fallback for anything unlisted.
 const PICKER_LABEL: Record<string, string> = {
   dosing: "Dosing for specific peptides",
+  frequency: "Frequency for specific peptides",
   "side-effects": "Side effects of specific peptides",
   uses: "What specific peptides are used for",
   injection: "Reconstituting specific peptides",
@@ -61,9 +63,19 @@ export default function FAQPage() {
               // PER-COMPOUND vs GENERAL is read from `whereToBuy.compoundSlug`, which already marks
               // a compound page (the injection-prep pages deliberately omit it). No new field, and
               // no hand-kept list to fall out of sync.
+              // Labels are the COMPOUND NAME alone ("BPC-157"), derived from the /peptides taxonomy
+              // rather than hand-written — the heading has already said what the list is, so
+              // repeating "How often is … dosed?" on every row is noise, and 64 hand-kept labels
+              // would drift. 🔒 The URLs are untouched: the slug stays the full question, because
+              // that is what matches the search query and is the entire point of the spoke.
+              const labels = pickerLabels(spokes.filter((q) => q.whereToBuy).map((q) => q.whereToBuy!.compoundSlug));
               const perCompound = spokes
                 .filter((q) => q.whereToBuy)
-                .sort((a, b) => a.whereToBuy!.compoundSlug.localeCompare(b.whereToBuy!.compoundSlug));
+                .sort((a, b) =>
+                  labels[a.whereToBuy!.compoundSlug].localeCompare(labels[b.whereToBuy!.compoundSlug], "en", {
+                    sensitivity: "base",
+                  })
+                );
               const general = spokes.filter((q) => !q.whereToBuy);
               // Collapse only where a flat list stops being usable. Dosing will eventually carry one
               // spoke per compound (up to 64); a category with three does not need a picker.
@@ -116,8 +128,8 @@ export default function FAQPage() {
                       <ul className="px-5 pb-4 pt-2 grid sm:grid-cols-2 gap-x-6 gap-y-2 border-t border-gray-100 dark:border-slate-800">
                         {perCompound.map((q) => (
                           <li key={q.slug}>
-                            <Link href={`/faq/${q.slug}`} className="text-sm text-[#3A759F] hover:underline">
-                              {q.question}
+                            <Link href={`/faq/${q.slug}`} aria-label={q.question} className="text-sm text-[#3A759F] hover:underline">
+                              {labels[q.whereToBuy!.compoundSlug]}
                             </Link>
                           </li>
                         ))}

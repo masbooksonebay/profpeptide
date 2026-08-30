@@ -44,7 +44,7 @@ export interface FaqSource {
 
 /** Groups the /faq hub's In-depth cards into sections. The hub DERIVES its grouping from this
  *  field (never a hand-ordered list), so a new question lands in its section automatically. */
-export type FaqCategory = "basics" | "uses" | "injection" | "dosing" | "side-effects" | "trt" | "legality";
+export type FaqCategory = "basics" | "uses" | "injection" | "dosing" | "frequency" | "side-effects" | "trt" | "legality";
 
 /** Section order + display titles for the In-depth grouping. Titles use the hub's accordion
  *  section-header typography. */
@@ -65,6 +65,11 @@ export const FAQ_CATEGORY_ORDER: { key: FaqCategory; title: string }[] = [
   // Keeping the KEY means the existing spokes stay grouped rather than being orphaned by a rename.
   { key: "injection", title: "Reconstitution & Preparation" },
   { key: "dosing", title: "Dosing" },
+  // Split out of "dosing" (Mark, 2026-08-30). "How is X dosed" (amount) and "how often is X dosed"
+  // (frequency) are different queries with different intent, and answering both under one heading
+  // meant one compound produced two entries a picker could not tell apart. Two categories let the
+  // category itself do the disambiguating, so each picker lists a compound name exactly once.
+  { key: "frequency", title: "Dosing Frequency" },
   { key: "side-effects", title: "Side Effects" },
   { key: "legality", title: "Legality & Regulation" },
   { key: "trt", title: "Testosterone & TRT" },
@@ -91,7 +96,11 @@ export interface FaqQuestion {
   body: FaqBlock[];
   /** Handoff to the canonical page for depth. */
   handoff: { href: string; label: string; text: string };
-  /** Slugs of related FAQ question pages in the same cluster — rendered as cross-links. */
+  /** Manual cross-links, for the GENERAL spokes only (needle size, bac water, the TRT cluster).
+   *  Category pages and per-compound spokes DERIVE their Related list instead — see
+   *  lib/faq-related.ts — because the useful relation for those two shapes is structural:
+   *  a category page relates to other category pages, and a compound spoke relates to the same
+   *  compound's other spokes. Setting this on either shape has no effect; the derivation wins. */
   related?: string[];
   /** Marks this entry as the CATEGORY PAGE for a category — the in-depth general answer that sits
    *  between /faq and the per-compound spokes. The hub features it at the head of its group, and
@@ -133,7 +142,6 @@ export const faqQuestions: FaqQuestion[] = [
       { kind: "p", text: "The third group is the widest and the most uneven. Some have substantial animal literature and no human trials; others have early human data that stopped. What they share is the absence of a regulator's verdict, which is a different thing from a negative one." },
     ],
     handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
-    related: ["are-research-peptides-legal","what-size-needle-for-peptides"],
   },
   {
     slug: "what-are-peptides-used-for",
@@ -164,7 +172,6 @@ export const faqQuestions: FaqQuestion[] = [
       { kind: "p", text: "Grouping by research area is useful for orientation and misleading past that point. Two compounds in the same cluster can differ by decades of evidence: within the metabolic group, one has completed Phase 3 trials with published outcomes and another has never been given to a human. The cluster tells you what question was being asked, not what answer came back." },
     ],
     handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
-    related: ["what-are-research-peptides","are-research-peptides-legal"],
   },
   {
     slug: "how-are-peptides-reconstituted",
@@ -198,7 +205,6 @@ export const faqQuestions: FaqQuestion[] = [
       { kind: "p", text: "Vial sizes vary, and the dose points worth tabulating vary with them — a compound with a published trial schedule has meaningful milligram figures to convert, and one without has none. That is why the reference tables live on the individual pages rather than here." },
     ],
     handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
-    related: ["how-much-bac-water-for-peptides","what-size-needle-for-peptides","can-you-use-insulin-needles-for-peptides"],
   },
   {
     slug: "how-are-peptides-dosed",
@@ -208,7 +214,7 @@ export const faqQuestions: FaqQuestion[] = [
     title: "How Are Peptides Dosed? Trial Figures Versus Convention",
     metaDescription:
       "Two different kinds of figure circulate: what a trial or approved label established, and what a research community conventionally practises. They are not the same claim, and for most peptides only the second exists.",
-    searchTags: ["how are peptides dosed","peptide dosing","peptide dosage guide","how often to inject peptides","peptide dosing schedule","peptide half life dosing"],
+    searchTags: ["how are peptides dosed","peptide dosing","peptide dosage guide","peptide dose amount","mg vs mcg peptides","peptide dosage mg"],
     hubBlurb: "Why two kinds of dosing figure circulate, how to tell them apart, and what half-life has to do with injection frequency.",
     lede:
       "Two different kinds of figure circulate, and confusing them is the central problem. One is what a clinical trial or an approved label actually established. The other is what a research community conventionally practises. For most research peptides only the second exists — and a convention is a practice that circulates, not a finding.",
@@ -216,16 +222,37 @@ export const faqQuestions: FaqQuestion[] = [
       { kind: "heading", text: "Telling the two apart" },
       { kind: "p", text: "A trial figure comes with a protocol, a participant count, and published outcomes; it can be checked. A convention comes with repetition. Both are worth reporting, and this site reports both while labelling which is which — an honest absence is more useful than a plausible number filling the gap." },
       { kind: "p", text: "The tell is attribution. Where a figure can be traced to a named trial or a product label, the page says so. Where it cannot, the page says that instead, rather than borrowing authority from the fact that a number is widely repeated." },
-      { kind: "heading", text: "Why frequency varies so much" },
-      { kind: "p", text: "Half-life sets the interval. A compound cleared in under an hour cannot hold a steady concentration on weekly administration, which is why several growth-hormone secretagogues appear in multiple-times-daily schedules. Engineered incretins carry structural modifications that extend half-life to days, which is what makes once-weekly administration coherent for them." },
-      { kind: "p", text: "Where a schedule escalates in steps rather than starting at its maintenance figure, that is usually tolerability rather than efficacy: the published rationale is generally that starting high raises side-effect rates without improving outcomes." },
-      { kind: "cta", text: "To convert any milligram figure into syringe units, use the", href: "/calculator", label: "dosage calculator" },
-      { kind: "heading", text: "What this site will not do" },
-      { kind: "p", text: "It will not tell anyone what to take. There is a real difference between reporting that a convention exists and instructing a reader to follow it, and the whole standard rests on that line. A figure appearing on a page is not an endorsement of it, and none of this is medical advice." },
+      { kind: "heading", text: "Where no trial established an amount" },
       { kind: "p", text: "For compounds with no completed human dosing trial — which is most of them — the honest answer to “how is this dosed” begins by saying that no trial established a dose, and then reports what circulates anyway. Both halves are true and the page needs both." },
+      { kind: "heading", text: "How amounts are written" },
+      { kind: "p", text: "Milligrams and micrograms both appear, and a factor of a thousand separates them: 250 mcg and 0.25 mg are the same amount written two ways. Trial protocols for the engineered incretins are usually stated in milligrams, while figures for the growth-hormone secretagogues are more often quoted in micrograms. Some preclinical figures are expressed per kilogram of body weight instead, which is a different kind of number and does not resolve to a fixed amount without one." },
+      { kind: "cta", text: "To convert any milligram figure into syringe units, use the", href: "/calculator", label: "dosage calculator" },
     ],
     handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
-    related: ["how-often-is-bpc-157-dosed","how-often-is-tb-500-dosed","how-is-retatrutide-dosed-in-research"],
+  },
+  {
+    slug: "how-often-are-peptides-dosed",
+    category: "frequency",
+    categoryFor: "frequency",
+    question: "How often are peptides dosed?",
+    title: "How Often Are Peptides Dosed? Half-Life Sets the Interval",
+    metaDescription:
+      "Frequency is not a preference — it follows from how fast a compound clears. Engineered incretins hold a concentration for days and appear weekly; short-lived secretagogues appear daily or more often. For most research peptides no trial established a schedule at all.",
+    searchTags: ["how often are peptides dosed","peptide dosing frequency","how often to inject peptides","peptide dosing schedule","peptide half life dosing","weekly vs daily peptides"],
+    hubBlurb: "Why one compound appears weekly and another several times a day, what titration is actually for, and how to read a schedule nobody ran a trial on.",
+    lede:
+      "Frequency follows from clearance rather than preference. A compound that leaves circulation in under an hour cannot hold a steady concentration on a weekly interval, and one engineered to persist for days has no reason to be given more often than that. Where a schedule exists at all, half-life is what set it.",
+    body: [
+      { kind: "heading", text: "Half-life sets the interval" },
+      { kind: "p", text: "A compound cleared in under an hour cannot hold a steady concentration on weekly administration, which is why several growth-hormone secretagogues appear in multiple-times-daily schedules. Engineered incretins carry structural modifications that extend half-life to days, which is what makes once-weekly administration coherent for them." },
+      { kind: "p", text: "That is also why frequency and amount are separate questions. Two schedules can deliver the same weekly total and behave differently, because what changes is the shape of the concentration curve rather than the quantity." },
+      { kind: "heading", text: "What titration is for" },
+      { kind: "p", text: "Where a schedule escalates in steps rather than starting at its maintenance figure, that is usually tolerability rather than efficacy: the published rationale is generally that starting high raises side-effect rates without improving outcomes. The escalation is a property of the published protocol, not a rule about how anything ought to be approached." },
+      { kind: "heading", text: "Where no trial established a schedule" },
+      { kind: "p", text: "For most research peptides no completed human trial fixed an interval, and what circulates instead is a convention — a practice that repeats, not a finding. Prof. Peptide reports those conventions and says plainly that they are conventions. Where a half-life has been measured, that measurement is the one piece of evidence a frequency claim can actually be checked against, so the per-compound pages lead with it." },
+      { kind: "cta", text: "To convert any schedule's milligram figure into syringe units, use the", href: "/calculator", label: "dosage calculator" },
+    ],
+    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
   },
   {
     slug: "what-are-the-side-effects-of-peptides",
@@ -251,7 +278,6 @@ export const faqQuestions: FaqQuestion[] = [
       { kind: "p", text: "Purity is a separate hazard from pharmacology. With no approval process standing behind a vial, contamination and mislabelling are failure modes that have nothing to do with the molecule itself." },
     ],
     handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
-    related: ["thymosin-beta-4-side-effects","igf-1-lr3-side-effects","klow-peptide-blend-side-effects"],
   },
   {
     slug: "are-research-peptides-legal",
@@ -438,7 +464,6 @@ export const faqQuestions: FaqQuestion[] = [
       label: "questions hub",
       text: "For the other common questions about research peptides, see the",
     },
-    related: ["how-much-bac-water-for-peptides", "what-size-needle-for-peptides"],
   },
   {
     slug: "what-size-needle-for-peptides",
@@ -760,7 +785,6 @@ export const faqQuestions: FaqQuestion[] = [
       label: "Retatrutide profile",
       text: "For other common questions regarding retatrutide, see the full",
     },
-    related: ["how-much-bac-water-for-peptides", "how-is-retatrutide-dosed-in-research", "how-often-is-retatrutide-dosed"],
     whereToBuy: { compoundSlug: "retatrutide" },
   },
   {
@@ -824,12 +848,11 @@ export const faqQuestions: FaqQuestion[] = [
       label: "Retatrutide profile",
       text: "For other common questions regarding retatrutide, see the full",
     },
-    related: ["how-often-is-retatrutide-dosed", "how-much-bac-water-for-retatrutide"],
     whereToBuy: { compoundSlug: "retatrutide" },
   },
   {
     slug: "how-often-is-retatrutide-dosed",
-    category: "dosing",
+    category: "frequency",
     question: "How often is retatrutide dosed?",
     title: "How Often Is Retatrutide Dosed? Once Weekly in Trials",
     metaDescription:
@@ -910,12 +933,11 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For the mechanism, trial results, side effects, sources, and full dosing detail, see the",
     },
-    related: ["how-often-is-tirzepatide-dosed", "how-often-is-semaglutide-dosed"],
     whereToBuy: { compoundSlug: "retatrutide" },
   },
   {
     slug: "how-often-is-tirzepatide-dosed",
-    category: "dosing",
+    category: "frequency",
     question: "How often is tirzepatide dosed?",
     title: "How Often Is Tirzepatide Dosed? Once Weekly in Trials",
     metaDescription:
@@ -994,12 +1016,11 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For the mechanism, trial results, side effects, sources, and full dosing detail, see the",
     },
-    related: ["how-often-is-retatrutide-dosed", "how-often-is-semaglutide-dosed"],
     whereToBuy: { compoundSlug: "tirzepatide" },
   },
   {
     slug: "how-often-is-semaglutide-dosed",
-    category: "dosing",
+    category: "frequency",
     question: "How often is semaglutide dosed?",
     title: "How Often Is Semaglutide Dosed? Once Weekly in Trials",
     metaDescription:
@@ -1088,12 +1109,11 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For the mechanism, trial results, side effects, sources, and full dosing detail, see the",
     },
-    related: ["how-often-is-retatrutide-dosed", "how-often-is-tirzepatide-dosed"],
     whereToBuy: { compoundSlug: "semaglutide" },
   },
   {
     slug: "how-often-are-cjc-1295-and-ipamorelin-dosed",
-    category: "dosing",
+    category: "frequency",
     question: "How often are CJC-1295 and Ipamorelin dosed?",
     title: "How Often Are CJC-1295 and Ipamorelin Dosed? Frequency Explained",
     metaDescription:
@@ -1162,7 +1182,7 @@ export const faqQuestions: FaqQuestion[] = [
   },
   {
     slug: "how-often-is-bpc-157-dosed",
-    category: "dosing",
+    category: "frequency",
     question: "How often is BPC-157 dosed?",
     title: "How Often Is BPC-157 Dosed? What the Evidence Actually Shows",
     metaDescription:
@@ -1221,12 +1241,11 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For the mechanism, the cited studies, side effects, and the community convention in context, see the",
     },
-    related: ["how-often-is-tb-500-dosed"],
     whereToBuy: { compoundSlug: "bpc-157" },
   },
   {
     slug: "how-often-is-tb-500-dosed",
-    category: "dosing",
+    category: "frequency",
     question: "How often is TB-500 dosed?",
     title: "How Often Is TB-500 Dosed? What the Evidence Actually Shows",
     metaDescription:
@@ -1286,7 +1305,6 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For the mechanism, the cited studies, side effects, and the community convention in context, see the",
     },
-    related: ["how-often-is-bpc-157-dosed", "thymosin-beta-4-side-effects"],
     whereToBuy: { compoundSlug: "tb-500" },
   },
   {
@@ -1369,7 +1387,6 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For the mechanism, the cited studies, and how the side-effect question is discussed in context, see the",
     },
-    related: ["how-often-is-tb-500-dosed"],
     whereToBuy: { compoundSlug: "tb-500" },
   },
   {
@@ -1541,7 +1558,6 @@ export const faqQuestions: FaqQuestion[] = [
       text:
         "For each component's mechanism, the cited studies, and the blend's dosing and regulatory status in context, see the",
     },
-    related: ["thymosin-beta-4-side-effects"],
     whereToBuy: { compoundSlug: "klow" },
   },
   {

@@ -7,6 +7,7 @@ import PageDisclaimer from "@/components/PageDisclaimer";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd } from "@/lib/faq-schema";
 import { faqQuestions, faqQuestionBySlug, faqAnswerText } from "@/data/faqQuestions";
+import { faqRelatedLinks } from "@/lib/faq-related";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 
 // Standing rule (Mark, 2026-08-25): compound FAQ pages end with a curated "Where to Buy" trio,
@@ -35,6 +36,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 export default function FaqQuestionPage({ params }: { params: { slug: string } }) {
   const q = faqQuestionBySlug(params.slug);
   if (!q) notFound();
+
+  const related = faqRelatedLinks(q);
 
   // FAQPage schema derives from the SAME text the page renders (faqAnswerText),
   // never a hand-written second copy.
@@ -202,27 +205,36 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
           </div>
         )}
 
-        {q.related && q.related.length > 0 && (
+        {/* DERIVED, not hand-picked — see lib/faq-related.ts for the rule. A category page relates
+            to the other category pages; a compound spoke relates to the same compound's other
+            spokes, its category page and its profile. It is never a subset of a list the page has
+            already rendered somewhere else. */}
+        {related.length > 0 && (
           <div className="mt-8">
             <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Related questions</h2>
             <ul className="space-y-2">
-              {q.related.map((slug) => {
-                const r = faqQuestionBySlug(slug);
-                return r ? (
-                  <li key={slug}>
-                    <Link href={`/faq/${slug}`} className="text-[#3A759F] hover:underline font-medium">
-                      {r.question}
-                    </Link>
-                  </li>
-                ) : null;
-              })}
+              {related.map((r) => (
+                <li key={r.href}>
+                  <Link href={r.href} className="text-[#3A759F] hover:underline font-medium">
+                    {r.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         )}
 
-        <div className="mt-8 p-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 rounded-lg text-sm text-amber-800 dark:text-amber-300 leading-relaxed">
-          For educational and research purposes only. Not medical advice. Not for human use.
-        </div>
+        {/* One short line, not a panel. The FAQ pages previously carried an amber block here AND
+            (on the dosing category page) a full "What this site will not do" section — a fourth
+            and fifth disclaimer variant on a site that already has Disclaimer.tsx, PageDisclaimer,
+            16 hand-written amber blocks and a /disclaimer page. The wording is the chat panel's
+            (ChatWidget DISCLOSURE_TEXT) so the site says the same thing on every surface.
+            🔒 The EPISTEMICS were not deleted, only de-duplicated: the full statement of the
+            report-versus-instruct standard lives on /methodology ("How we report doses"), and its
+            one-line version renders beside every profile dosing section via DosingContext.tsx. */}
+        <p className="mt-8 text-sm text-gray-500 dark:text-slate-400">
+          Research use only. Not medical advice.
+        </p>
 
         {/* Affiliate disclosure only where the page actually carries vendor links. */}
         {q.whereToBuy && <PageDisclaimer />}
