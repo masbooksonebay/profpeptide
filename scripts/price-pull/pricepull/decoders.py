@@ -333,14 +333,6 @@ def _oasis(n):
     if re.match(r'GLP3\(R\)', n, re.I): return (_c('Retatrutide', 'GLP3(R)'), 'retatrutide', 'single')
 
 
-@_decoder('purerawz')  # GLP-1.x: UNVERIFIED (no COA/MW/identity; permalinks only). LY3437943:
-# VERIFIED — Eli Lilly's published clinical development code for Retatrutide (hard identity).
-def _purerawz(n):
-    if re.match(r'LY ?3437943', n, re.I): return (_c('Retatrutide', 'LY3437943'), 'retatrutide', 'single')
-    if re.match(r'GLP-1\.[23] ?\+ ?GLP-1 Blend|GLP-1\.3 ?\+', n, re.I): return ('GLP-1.x blend [coded, UNVERIFIED]', None, 'blend_bk')
-    if re.match(r'GLP-1(\.[0-9])?$', n, re.I): return (n.upper() + ' [coded, UNVERIFIED]', None, 'single_bk')
-
-
 @_decoder('synthesis-peptides')  # verified: .co (synthesispeptides.co) product-page spec table.
 # GLP-3R: CAS 2381089-83-2 + synonym LY3437943 + "tri-agonist GLP-1/GIP/Glucagon" -> Retatrutide
 #         (vendor MW 5058.5 is anomalous vs Reta ~4731, but CAS + Lilly code are definitive).

@@ -121,8 +121,6 @@ export const LISTED = new Set<string>(PROVEN_LIST.concat(GRACED_LIST));
 export const CUT_FOR_REFERENCE = [
   "almighty-peptides",
   "spartan-peptides",
-  "behemoth-labz",
-  "purerawz",
   "particle-peptides",
   "swiss-chems",
 ];

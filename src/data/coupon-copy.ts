@@ -41,7 +41,6 @@ export const couponLead: Record<string, string> = {
   "amino-club": "ISO-17025 lab, ≥99% purity, per-batch COAs", // B
   "amino-x": "Kovera Labs-tested, 99%+ purity", // A
   "ascension-peptides": "MZ BioLabs per-batch COAs; blends & stacks", // A
-  "behemoth-labz": "Colmaric-tested; peptides & SARMs", // A
   "biolongevity-labs": "BioRegen LC-MS per-batch COAs", // A
   "biopure-peptides": "US-made; ≥99% purity standard, COA with each order", // C (no COA published online — vendor-stated)
   "biocollex": "Freedom Diagnostics per-batch COAs, same-day ship", // A
@@ -67,7 +66,6 @@ export const couponLead: Record<string, string> = {
   "peptide-partners": "Four independent batch tests, published COAs", // D (multi-lab)
   "peptide-giants": "Every batch Janoshik-tested, public reports", // A
   "peptides-gg": "Freedom Diagnostics per-batch COAs, US-made", // A
-  "purerawz": "MZ Biolabs per-batch COAs; peptides, SARMs & more", // A
   "purity-peptides": "99%+ HPLC/mass-spec, third-party COAs", // C
   "real-peptides": "Freedom Diagnostics per-product COAs, ≥99%", // A
   "royal-peptides": "Independent Janoshik batch reports, 99%+", // A

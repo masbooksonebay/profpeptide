@@ -70,7 +70,6 @@ VENDOR_COMPOUND_SUPPRESS = {
 # silently. Keyed by vendor slug -> exact code -> compound slug; listedAs = the code.
 CODED_DECODE = {
     "glacier-aminos":      {"GLA-1 SM": "semaglutide", "GLA-2 TRZ": "tirzepatide", "GLA-3 RT": "retatrutide"},
-    "purerawz":            {"GLP-1": "semaglutide", "GLP-1.2": "tirzepatide", "GLP-1.3": "retatrutide"},
     "vital-core-research": {"GLP-1": "semaglutide", "GLP-2": "tirzepatide", "GLP-3": "retatrutide"},
     # 2026-07 batch — Mark-confirmed (same standard). LA's key uses an en-dash "–" (the
     # source name, unescaped from "GLP &#8211; 3 (R)"). NextGen TRZ-2/Cagri are decoded in

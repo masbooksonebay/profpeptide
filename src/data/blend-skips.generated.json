@@ -11,13 +11,13 @@
     "no-size-or-price": "No parseable Total-mg config or price — nothing comparable to publish.",
     "uncaptured-malformed-row": "Row counted in the ### Blends table but too malformed to enter the pipeline (no vendor slug / <4 columns)."
   },
-  "docBlendRows": 210,
-  "emittedBlendRows": 145,
-  "skippedBlendRows": 65,
+  "docBlendRows": 202,
+  "emittedBlendRows": 141,
+  "skippedBlendRows": 61,
   "byReason": {
     "backlog": 1,
     "below-vendor-gate": 22,
-    "cjc-form-unresolved": 19,
+    "cjc-form-unresolved": 15,
     "coded-unverified": 3,
     "config-dedup": 11,
     "no-size-or-price": 1,
@@ -208,20 +208,6 @@
       "date": "2026-08-16"
     },
     {
-      "vendor": "behemoth-labz",
-      "blend": "CJC-1295/Ipamorelin",
-      "size": "4mg",
-      "reason": "cjc-form-unresolved",
-      "date": "2026-08-08"
-    },
-    {
-      "vendor": "behemoth-labz",
-      "blend": "CJC-1295/Ipamorelin",
-      "size": "8mg",
-      "reason": "cjc-form-unresolved",
-      "date": "2026-08-08"
-    },
-    {
       "vendor": "biocollex",
       "blend": "CJC-1295/Ipamorelin",
       "size": "10mg",
@@ -276,20 +262,6 @@
       "size": "20mg",
       "reason": "cjc-form-unresolved",
       "date": "2026-08-16"
-    },
-    {
-      "vendor": "purerawz",
-      "blend": "CJC-1295/Ipamorelin",
-      "size": "1.1mg",
-      "reason": "cjc-form-unresolved",
-      "date": "2026-08-08"
-    },
-    {
-      "vendor": "purerawz",
-      "blend": "CJC-1295/Ipamorelin",
-      "size": "6mg",
-      "reason": "cjc-form-unresolved",
-      "date": "2026-08-08"
     },
     {
       "vendor": "purity-peptides",

@@ -70,13 +70,6 @@
     "url": "https://athenapeptides.com/?ref=PROFPEPTIDE"
   },
   {
-    "slug": "behemoth-labz",
-    "name": "Behemoth Labz",
-    "code": "PROF10",
-    "discount": "10% off",
-    "url": "https://behemothlabz.com/aff/208/"
-  },
-  {
     "slug": "biocollex",
     "name": "BioCollex",
     "code": "PROFPEPTIDE",
@@ -292,13 +285,6 @@
     "code": "PROFPEPTIDE",
     "discount": "10% off",
     "url": "https://peptidology.co/?ref=mkmhgxqi"
-  },
-  {
-    "slug": "purerawz",
-    "name": "PureRawz",
-    "code": "PROF10",
-    "discount": "10% off",
-    "url": "https://purerawz.co/?ref=1901"
   },
   {
     "slug": "purity-peptides",

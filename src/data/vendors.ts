@@ -193,15 +193,6 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/ascension-peptides",
     facts: { coa: "per-batch", purityStandard: "99%+", labName: "MZ BioLabs", testMethods: "HPLC-UV, HPLC-MS" },
   },
-  "behemoth-labz": {
-    name: "Behemoth Labz",
-    code: "PROF10",
-    discount: "10% off",
-    region: "US",
-    url: "https://behemothlabz.com/aff/208/",
-    detailPage: "/coupons/behemoth-labz",
-    facts: { coa: "per-batch", labName: "Colmaric Analyticals", testMethods: "HPLC" },
-  },
   "biolongevity-labs": {
     name: "Biolongevity Labs",
     code: "PROFPEPTIDE",
@@ -563,15 +554,6 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/peptides-gg",
     facts: { coa: "per-batch", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
     blockNote: "Per-batch COAs",
-  },
-  "purerawz": {
-    name: "PureRawz",
-    code: "PROF10",
-    discount: "10% off",
-    region: "US",
-    url: "https://purerawz.co/?ref=1901",
-    detailPage: "/coupons/purerawz",
-    facts: { coa: "per-batch", labName: "MZ Biolabs", purityStandard: "99%", testMethods: "HPLC-UV, mass spec" },
   },
   "purity-peptides": {
     name: "Purity Peptides",

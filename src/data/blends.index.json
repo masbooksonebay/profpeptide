@@ -30,10 +30,10 @@
     "configs": [
       {
         "config": "70mg",
-        "vendors": 24
+        "vendors": 22
       }
     ],
-    "vendors": 24,
+    "vendors": 22,
     "indexable": true
   },
   {
@@ -41,10 +41,10 @@
     "configs": [
       {
         "config": "80mg",
-        "vendors": 27
+        "vendors": 25
       }
     ],
-    "vendors": 27,
+    "vendors": 25,
     "indexable": true
   },
   {

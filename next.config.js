@@ -170,6 +170,22 @@ const nextConfig = {
       // (nordic/apollo pattern): registry entry, price rows (master doc + generated), LISTED,
       // pipeline entries and the whole coupons/purerx-peptides dir deleted; this redirect
       // consolidates the residual link equity from its indexed page.
+      // REMOVED 2026-08-30: Behemoth Labz + PureRawz — Mark's decision. Full removal on the
+      // purerx pattern (docs/PP_VENDOR_EXIT_CHECKLIST.md): registry entries, master-doc sections,
+      // all 183 price rows, LISTED, coupon-copy, COUPON_SENTENCE_VENDORS and the pipeline entries
+      // deleted, both coupons/ dirs removed. These consolidate the residual link equity.
+      // 🔴 Their shared code PROF10 is ALSO Swiss Chems' — swiss-chems keeps both the code and its
+      // ?ref=PROF10 affiliate URL. The code was not touched.
+      {
+        source: "/coupons/behemoth-labz{/}?",
+        destination: "/coupons",
+        permanent: true,
+      },
+      {
+        source: "/coupons/purerawz{/}?",
+        destination: "/coupons",
+        permanent: true,
+      },
       {
         source: "/coupons/purerx-peptides{/}?",
         destination: "/coupons",

@@ -1,6 +1,6 @@
 {
   "_README": "Persistent record of vendors a price-pull run could NOT write, so a later run reports 'skipped last week, still broken' instead of rediscovering it. Keyed by vendor slug. category ∈ {vendor-broken, walled, incomplete-pull, transient, currency, permanent, pin-loss}. first_seen/last_seen are ISO dates (ET). recheck = whether the next run should retry (transient/walled) or leave it (permanent/currency until the vendor changes). Update last_seen each run the skip persists; remove an entry the run the vendor writes cleanly again. NOTE: amino-club is deliberately NOT here — its blend [nototal] drop was OURS (blend_total name-only fallback), fixed 2026-08-16, not a vendor skip. HOW IT WAS FOUND (record 2026-08-16): the blend_total gap had been silently dropping ~35 blend rows across 10 vendors for an unknown time. It surfaced ONLY because amino-club was PINNED (vendor-pins) on GLOW/KLOW/Wolverine — its re-pull dropped those blends and check:vendor-pins FAILED loudly. Without that pin the drop stays silent (a WARN-only blend counter). Takeaway: a vendor pin has DIAGNOSTIC value beyond placement — it turns a silent per-vendor data loss into a hard build failure. Worth keeping pins on compounds we care about partly for that trip-wire effect.",
-  "_updated": "2026-08-17",
+  "_updated": "2026-08-30",
   "_pending_reverts": {
     "_README": "Time-boxed vendor changes that MUST be undone on a specific date. The weekend price-pull run reads this and reports any revert whose due date has passed. Not consumed by any build guard — this is a human/CC checklist surfaced each weekend run.",
     "amino-club-discount": {
@@ -12,18 +12,18 @@
   },
   "skips": {
     "purerawz": {
-      "category": "vendor-broken",
-      "reason": "Live catalog degraded: 42 of 53 products show price $0 with zero variations (kept empty Form/Strength attribute shells); only 11 priced. Row-drop floor REFUSED the write (145 → 18 singles, -83%).",
+      "category": "permanent",
+      "reason": "PureRawz permanently removed from the site 2026-08-30 (Mark's decision) — registry entry, master-doc section, all price rows, LISTED, coupon-copy, COUPON_SENTENCE_VENDORS, pipeline entries and the coupon dir all deleted; /coupons/purerawz 308-redirects to the hub. NOTE: its code PROF10 is SHARED with swiss-chems, which keeps it. Do NOT re-onboard without a new affiliate agreement.",
       "first_seen": "2026-08-16",
-      "last_seen": "2026-08-16",
-      "recheck": true
+      "last_seen": "2026-08-30",
+      "recheck": false
     },
     "behemoth-labz": {
-      "category": "walled",
-      "reason": "Cloudflare bot-challenge turned on — API and homepage both 403 (cf-mitigated: challenge); 'Just a moment…' even in a JS browser. Storefront browsable by a human, not by tooling. Needs a browser pull or a paste. Was pullable before 2026-08-16.",
+      "category": "permanent",
+      "reason": "Behemoth Labz permanently removed from the site 2026-08-30 (Mark's decision) — registry entry, master-doc section, all price rows, LISTED, coupon-copy, COUPON_SENTENCE_VENDORS, pipeline entries and the coupon dir all deleted; /coupons/behemoth-labz 308-redirects to the hub. NOTE: its code PROF10 is SHARED with swiss-chems, which keeps it. Do NOT re-onboard without a new affiliate agreement.",
       "first_seen": "2026-08-16",
-      "last_seen": "2026-08-16",
-      "recheck": true
+      "last_seen": "2026-08-30",
+      "recheck": false
     },
     "la-peptides": {
       "category": "walled",

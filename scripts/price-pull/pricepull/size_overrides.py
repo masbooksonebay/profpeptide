@@ -75,10 +75,6 @@ SIZE_OVERRIDE = {
     "integrative-peptides": {
         "Thymogen": None,  # profile
     },
-    # purerawz — 1 size-less
-    "purerawz": {
-        "Glutathione": None,  # profile
-    },
     # synthesis-peptides — 1 size-less
     "synthesis-peptides": {
         "GHK-Cu": None,  # profile

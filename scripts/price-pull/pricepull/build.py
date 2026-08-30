@@ -89,31 +89,11 @@ MANUAL_EXCLUDE = {
                                 "the package total can't be computed from public data. Stays excluded (absent beats a "
                                 "guessed total). Re-add per-variant once the count is confirmed."),
     ],
-    "behemoth-labz": [
-        ("dihexa", "form-strength product (powder/liquid/tabs); its '10mg per ml' liquid mis-parses as a "
-                   "10mg vial ($9.18 = $0.92/mg). Not a vial price. (MK-777 is the same class — reported, "
-                   "not yet excluded.)"),
-        ("bpc-157-tb-500", "blend leak: BPC-157/TB-500 blend -> BPC-157 (4/15mg). Also catches the "
-                           "igf-lr3-bpc-157-tb-500 blend (11mg)."),
-        ("igf-lr3-bpc-157", "blend leak: IGF-1 LR3/BPC-157 (+TB-500) blends -> BPC-157 (6/11mg)."),
-        ("bpc-157-arg-tb-500", "blend leak: BPC-157/Arg/TB-500/GHK-Cu 4-way blend -> BPC-157 30mg."),
-        ("ipamorelin-ghrp-2", "blend leak: Ipamorelin/GHRP-2 blend -> Ipamorelin 20mg."),
-        ("sermorelin-ghrp-2", "blend leak: Sermorelin/GHRP-2 blend -> Sermorelin 10mg."),
-        ("sermorelin-ipamorelin", "blend leak: Sermorelin/Ipamorelin blend -> Sermorelin 20mg."),
-    ],
     "biopure-peptides": [
         ("wolverine", "'BPC Wolverine + KPV - 14.5mg' is a 3-component blend (Wolverine BPC-157/TB-500 + KPV) "
                       "that the shared classifier mis-reads as a KPV 14.5mg SINGLE ($129.99 = $8.97/mg of "
                       "'KPV', wrong). Not in the blend registry, so excluded here rather than shipped as a bad single."),
         ("th9507-ipamorelin", "blend leak: TSM(Tesamorelin=TH9507)/Ipamorelin blend -> Ipamorelin 5mg ($19.00/mg)."),
-    ],
-    "purerawz": [
-        ("the-alpha-blend", "blend leak: multi-component 'Alpha Blend' -> BPC-157 6mg ($27.41/mg)."),
-        ("kpv-bpc-157-arg", "blend leak: KPV/BPC-157/Arg blend -> BPC-157 15mg."),
-        ("bpc-157-tb-500-ghk-cu", "blend leak: BPC-157/TB-500/GHK-Cu blend -> BPC-157 30mg."),
-        ("sermorelin-ghrp-2", "blend leak: Sermorelin/GHRP-2 blend -> Sermorelin 5mg."),
-        ("sermorelin-ghrp-6", "blend leak: Sermorelin/GHRP-6 blend -> Sermorelin 10mg."),
-        ("sermorelin-ipamorelin", "blend leak: Sermorelin/Ipamorelin blend -> Sermorelin 20mg."),
     ],
     "ameano-peptides": [
         ("reta-cagri-blend", "blend leak: Retatrutide/Cagrilintide blend -> Cagrilintide 12.5mg ($10.80/mg)."),

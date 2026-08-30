@@ -49,7 +49,6 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   "99-purity-peptides",
   "alpha-peptides",
   "amp-peptides",
-  "behemoth-labz",
   "biolongevity-labs",
   "crush-research",
   "hydro-research",
@@ -96,7 +95,6 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   "spartan-peptides",
   "ameano-peptides",
   "modern-aminos",
-  "purerawz",
   // Legacy template CONVERTED 2026-08-23: particle-peptides was a hardcoded-CopyCode page with its
   // code box below the prose; rebuilt on the standard CouponCodeCard structure (mirrored nova-labs,
   // the treated non-US precedent) so the salience pair leads. EU context preserved in prose +
