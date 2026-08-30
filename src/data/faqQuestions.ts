@@ -21,9 +21,16 @@ export type FaqBlock =
   // A reference table — the extractable artifact on a mechanics question ("how much BAC water").
   // `caption` states what the table IS, so the schema answer (faqAnswerText) stays readable when the
   // grid is flattened to prose; `note` carries the caveat that must travel with the numbers.
-  // ARITHMETIC ONLY. A row here converts a volume to a concentration to syringe units. It must never
-  // imply which row a reader should pick — that is a dosing recommendation wearing a table's
-  // clothes, and it is exactly how the competitor pages this pattern answers get it wrong.
+  // TWO SANCTIONED USES, both "a fact per row, no row preferred":
+  //   1. RECONSTITUTION ARITHMETIC — a row converts a volume to a concentration to syringe units.
+  //      It must never imply which row a reader should pick: that is a dosing recommendation
+  //      wearing a table's clothes, and it is exactly how the competitor pages this pattern
+  //      answers get it wrong.
+  //   2. REPORTED ADVERSE-EVENT RATES — a row is one effect, the rate observed, and the trial that
+  //      observed it. Added for the retatrutide side-effects spoke, where the rates ARE the answer
+  //      and a prose list buries them. The same discipline applies: every row carries its source,
+  //      so the table reports findings and never advises. A rate with no named trial does not
+  //      belong in one — a percentage reads as clinical fact whether or not it earned it.
   | { kind: "table"; caption: string; headers: string[]; rows: string[][]; note?: string }
   // A Sources block, following the NEWS-ARTICLE citation pattern rather than the profile's numbered
   // references: PRIMARY sources (Federal Register, FDA, court filings, statute text) listed before
@@ -932,6 +939,90 @@ export const faqQuestions: FaqQuestion[] = [
       label: "Retatrutide research profile",
       text:
         "For the mechanism, trial results, side effects, sources, and full dosing detail, see the",
+    },
+    whereToBuy: { compoundSlug: "retatrutide" },
+  },
+  {
+    slug: "what-is-retatrutide-used-for",
+    category: "uses",
+    question: "What is retatrutide used for?",
+    title: "What Is Retatrutide Used For? The Indications Actually Being Trialled",
+    metaDescription:
+      "Retatrutide is investigational and approved nowhere, so the answer is what Lilly\u2019s TRIUMPH programme is testing. Obesity and type 2 diabetes have reported; cardiovascular outcomes, sleep apnea and metabolic liver disease are still running.",
+    searchTags: ["what is retatrutide used for","retatrutide uses","retatrutide indications","what does retatrutide do","retatrutide weight loss","retatrutide diabetes","retatrutide clinical trials"],
+    hubBlurb: "Which indications have reported and which are still running \u2014 organised by how far the evidence has actually travelled, not by what the compound might do.",
+    lede:
+      "Retatrutide holds no approval in any jurisdiction, so there is no labelled indication to report. What exists instead is a trial programme: Eli Lilly\u2019s TRIUMPH studies, where obesity is the lead indication and type 2 diabetes the second. Four further indications are under investigation and have not reported Phase 3 results.",
+    body: [
+      { kind: "heading", text: "Indications that have reported" },
+      { kind: "p", text: "Two Phase 3 readouts have landed. TRIUMPH-4, reported in December 2025, enrolled adults with obesity and knee osteoarthritis and recorded average weight loss of 28.7% at the 12 mg dose across 68 weeks; the same study recorded a 44-point improvement on the WOMAC pain subscale, an osteoarthritis measure. TRANSCEND-T2D-1, reported in March 2026, enrolled people with type 2 diabetes and recorded a 2.0% reduction in A1C alongside 16.8% weight loss at 12 mg over 40 weeks." },
+      { kind: "p", text: "Those two figures answer different questions and are not interchangeable. A1C measures glycaemic control; the weight figures measure body mass. A study reporting both is reporting two outcomes, not one outcome twice." },
+      { kind: "heading", text: "Indications still under investigation" },
+      { kind: "list", items: [
+        "Cardiovascular outcomes \u2014 TRIUMPH-3 is running in patients with established cardiovascular disease, with results expected in 2027 or later.",
+        "Obstructive sleep apnea \u2014 Phase 2 recorded a 42% reduction in the apnea-hypopnea index; a dedicated Phase 3 sits in the TRIUMPH programme.",
+        "Metabolic liver disease (MASH) \u2014 Phase 2 recorded reductions in liver fat and improved insulin sensitivity, with a Phase 3 underway.",
+      ]},
+      { kind: "p", text: "A Phase 2 signal is a reason to run a Phase 3, not a smaller version of one. The apnea and liver figures above are the former, and the distinction is the whole difference between an indication that has been demonstrated and one that is being tested." },
+      { kind: "heading", text: "Why the list is broader than most compounds\u2019" },
+      { kind: "p", text: "Retatrutide agonises three receptors \u2014 GLP-1, GIP and glucagon \u2014 where semaglutide engages one and tirzepatide two. The glucagon arm is what makes a wide indication list mechanistically plausible, because glucagon signalling touches hepatic fat and energy expenditure rather than appetite alone. Plausible is not demonstrated: the breadth of the programme reflects a hypothesis Lilly is funding, and each indication stands or falls on its own readout." },
+      { kind: "p", text: "That is also why this page will date. Two of six indications have reported; the rest are scheduled through 2027, and any of them can fail." },
+      { kind: "list", items: [
+        "No approval anywhere \u2014 every use below is investigational.",
+        "Reported: obesity (TRIUMPH-4, 28.7% at 12 mg / 68 weeks) and type 2 diabetes (TRANSCEND-T2D-1, 2.0% A1C at 12 mg / 40 weeks).",
+        "Reported alongside obesity: knee osteoarthritis pain (44-point WOMAC improvement, TRIUMPH-4).",
+        "Running, not reported: cardiovascular outcomes, sleep apnea, metabolic liver disease.",
+      ]},
+    ],
+    handoff: {
+      href: "/peptides/retatrutide",
+      label: "Retatrutide profile",
+      text: "For other common questions regarding retatrutide, see the full",
+    },
+    whereToBuy: { compoundSlug: "retatrutide" },
+  },
+  {
+    slug: "what-are-the-side-effects-of-retatrutide",
+    category: "side-effects",
+    question: "What are the side effects of retatrutide?",
+    title: "Retatrutide Side Effects: Reported Rates from the Trials",
+    metaDescription:
+      "Gastrointestinal effects dominate, as across the incretin class \u2014 but dysesthesia, reported in about 21% at 12 mg in TRIUMPH-4, is specific to retatrutide and not seen with semaglutide or tirzepatide. Reported rates, with the trial that reported each.",
+    searchTags: ["retatrutide side effects","retatrutide safety","does retatrutide cause nausea","retatrutide dysesthesia","retatrutide side effects 12mg","retatrutide adverse events","is retatrutide safe"],
+    hubBlurb: "The reported rates with the trial behind each, the dysesthesia finding that is specific to retatrutide, and what trial safety data does not tell you about a research-market vial.",
+    lede:
+      "Gastrointestinal effects dominate, as they do across the incretin class, and they were most pronounced during dose escalation. One finding is specific to retatrutide: dysesthesia \u2014 abnormal skin sensations \u2014 was reported in about 21% of participants at 12 mg in TRIUMPH-4, and has not been reported with semaglutide or tirzepatide.",
+    body: [
+      { kind: "heading", text: "The dysesthesia finding" },
+      { kind: "p", text: "Dysesthesia covers tingling, burning or prickling sensations in the skin. It is the one effect that separates retatrutide\u2019s reported profile from the rest of the class, and the proposed explanation is the glucagon-receptor arm that the other two compounds do not have. That explanation is a hypothesis about mechanism rather than a demonstrated cause." },
+      { kind: "heading", text: "Reported rates" },
+      { kind: "table",
+        caption: "Effects reported in the retatrutide trials, with the rate and the study that reported it. Ranges reflect different doses across studies; the higher figure is generally the 12 mg arm.",
+        headers: ["Effect", "Reported rate", "Reported in"],
+        rows: [
+          ["Nausea", "up to 60%", "Phase 2, 12 mg"],
+          ["Diarrhoea", "15\u201333%", "higher doses"],
+          ["Vomiting", "21\u201326%", "higher doses"],
+          ["Constipation", "11\u201325%", "across doses"],
+          ["Dysesthesia", "~21%", "TRIUMPH-4, 12 mg"],
+          ["Injection-site reactions", "up to 8%", "across doses"],
+          ["Heart-rhythm changes", "~6% (vs 3% placebo)", "trials"],
+          ["Gallbladder events", "~1.1%", "trials"],
+          ["Liver-enzyme elevation (transient ALT)", "~1%", "trials"],
+          ["Pancreatitis", "~0.4%", "Phase 2"],
+        ],
+        note: "Resting heart rate rose by an average of 5\u201310 beats per minute, peaking around week 24 before declining. Every figure here is an observed rate in a controlled trial population, not a prediction for any individual.",
+      },
+      { kind: "heading", text: "How the totals compare" },
+      { kind: "p", text: "Discontinuation attributable to side effects ranged from 6% to 16% across the Phase 2 trials, concentrated in the escalation phase rather than at maintenance. The serious adverse event rate was 4% \u2014 the same figure recorded in the placebo arm, which is the comparison that gives the number meaning. Most reported effects were graded mild to moderate and diminished with continued administration." },
+      { kind: "heading", text: "What this data does not cover" },
+      { kind: "p", text: "Every rate above comes from a controlled trial of Lilly\u2019s clinical material, administered at defined doses under supervision, with adverse events collected systematically. A vial sold on the research market is not that material, and the trial safety profile does not transfer to it: identity, purity and actual content are separate questions from pharmacology, and no rate table can speak to them." },
+      { kind: "p", text: "The programme is also ongoing. The longest published exposure is 68 weeks, so effects that would only appear over years are outside what any current dataset could have detected." },
+    ],
+    handoff: {
+      href: "/peptides/retatrutide",
+      label: "Retatrutide profile",
+      text: "For other common questions regarding retatrutide, see the full",
     },
     whereToBuy: { compoundSlug: "retatrutide" },
   },
