@@ -23,3 +23,29 @@ export function normalizeDiscountFormatting(text: string): string {
   out = out.replace(/%(\s*%)+/g, "%");
   return out;
 }
+
+// ── residual code/price stripper — output-side safety backstop ───────────────────────────────────
+// Used by /api/chat-app, which has NO {{CODE}}/{{DISCOUNT}} substitution and never imports vendors.ts
+// (coupons/prices are deliberately absent from the app assistant). But the corpus still contains 54
+// vendor pages, redacted to [[REDACTED]] where a code/price was — a model asked about a vendor could
+// still HALLUCINATE a PROF-shaped code or a "$…" price from pretraining. This strips anything
+// code/price-shaped unconditionally, so nothing commerce-shaped can reach an app user regardless of
+// what the model wrote. Same regex family the site's redaction uses; kept here (import-free) rather
+// than reaching into the site's substitution chain, so the app path pulls in zero vendor code.
+const RESIDUAL_CODE_RE = /\bPROF[A-Z0-9]{2,}\b/g;
+const RESIDUAL_PRICE_RE = /\$\d[\d,]*(?:\.\d{1,2})?/g;
+
+export interface ResidualStripResult {
+  text: string;
+  stripped: number;
+}
+
+export function stripResidualCodesAndPrices(rawText: string): ResidualStripResult {
+  let stripped = 0;
+  const hit = () => {
+    stripped += 1;
+    return "[unavailable — see the vendor's page on profpeptide.com]";
+  };
+  const text = rawText.replace(RESIDUAL_CODE_RE, hit).replace(RESIDUAL_PRICE_RE, hit);
+  return { text, stripped };
+}

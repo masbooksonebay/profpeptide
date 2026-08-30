@@ -32,8 +32,9 @@ export const LOG_RETENTION_DAYS = 30;
 const LOG_TTL_SECONDS = LOG_RETENTION_DAYS * 24 * 60 * 60;
 
 /** Newest-first list of record keys. Capped so it can't grow without bound; entries whose record
- *  has already expired simply resolve to null on read and are filtered out. */
-const LOG_INDEX_KEY = "chat:log:index";
+ *  has already expired simply resolve to null on read and are filtered out. Keyspace-scoped so
+ *  /api/chat ("chat") and /api/chat-app ("chatapp") keep wholly separate analytics streams. */
+const indexKeyFor = (keyspace: string) => `${keyspace}:log:index`;
 const LOG_INDEX_MAX = 2000;
 
 export type ChatGuardrail =
@@ -113,15 +114,16 @@ export function looksLikeNotFound(answer: string): boolean {
  * Write one turn's record. Never throws — a logging failure must cost analytics, not the answer.
  * Returns true when the write landed, so callers/tests can assert on it without depending on it.
  */
-export async function logChatTurn(record: ChatLogRecord): Promise<boolean> {
+export async function logChatTurn(record: ChatLogRecord, keyspace = "chat"): Promise<boolean> {
   try {
-    const key = `chat:log:${record.ts}:${Math.random().toString(36).slice(2, 10)}`;
+    const indexKey = indexKeyFor(keyspace);
+    const key = `${keyspace}:log:${record.ts}:${Math.random().toString(36).slice(2, 10)}`;
     // TTL on the record itself — retention cannot outlive the policy even if everything else here
     // breaks or the index is never trimmed again.
     await kv.set(key, record, { ex: LOG_TTL_SECONDS });
-    await kv.lpush(LOG_INDEX_KEY, key);
-    await kv.ltrim(LOG_INDEX_KEY, 0, LOG_INDEX_MAX - 1);
-    await kv.expire(LOG_INDEX_KEY, LOG_TTL_SECONDS);
+    await kv.lpush(indexKey, key);
+    await kv.ltrim(indexKey, 0, LOG_INDEX_MAX - 1);
+    await kv.expire(indexKey, LOG_TTL_SECONDS);
     return true;
   } catch {
     // Swallowed by design. See the header: a KV outage degrades analytics, never the conversation.
@@ -130,9 +132,9 @@ export async function logChatTurn(record: ChatLogRecord): Promise<boolean> {
 }
 
 /** Most recent records, newest first. Entries whose record has expired are filtered out. */
-export async function readRecentLog(limit = 200): Promise<ChatLogRecord[]> {
+export async function readRecentLog(limit = 200, keyspace = "chat"): Promise<ChatLogRecord[]> {
   try {
-    const keys = await kv.lrange<string>(LOG_INDEX_KEY, 0, Math.max(0, limit - 1));
+    const keys = await kv.lrange<string>(indexKeyFor(keyspace), 0, Math.max(0, limit - 1));
     if (!keys || keys.length === 0) return [];
     const records = await Promise.all(keys.map((k) => kv.get<ChatLogRecord>(k).catch(() => null)));
     return records.filter((r): r is ChatLogRecord => Boolean(r));
