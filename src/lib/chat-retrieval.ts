@@ -202,9 +202,21 @@ export function isRegulatoryQuery(query: string): boolean {
  * the regression probe keeps testing exactly that.
  */
 export function retrieveForChat(query: string, limit = 2): RetrievalHit[] {
+  return retrieveForChatDetailed(query, limit).hits;
+}
+
+export interface ChatRetrieval {
+  hits: RetrievalHit[];
+  /** True when the news slot appended a page that plain ranking would not have returned. Reported
+   *  here rather than re-derived by the caller: the caller would have to run the ranker a second
+   *  time to find out, which is both wasted work and a chance for the two to disagree. */
+  newsSlotFired: boolean;
+}
+
+export function retrieveForChatDetailed(query: string, limit = 2): ChatRetrieval {
   const hits = searchCorpus(query, limit);
-  if (!isRegulatoryQuery(query)) return hits;
-  if (hits.some((h) => h.page.category === "news")) return hits;
+  if (!isRegulatoryQuery(query)) return { hits, newsSlotFired: false };
+  if (hits.some((h) => h.page.category === "news")) return { hits, newsSlotFired: false };
   // Widen the search only far enough to find news, then append at most one.
   //
   // Picking the single best-SCORING news page is wrong here, and measurably so: for "Can pharmacies
@@ -218,11 +230,11 @@ export function retrieveForChat(query: string, limit = 2): RetrievalHit[] {
   // relevance still gates the candidate set, recency only breaks the tie inside it.
   const wider = searchCorpus(query, 40);
   const news = wider.filter((h) => h.page.category === "news");
-  if (news.length === 0) return hits;
+  if (news.length === 0) return { hits, newsSlotFired: false };
   const bestScore = news[0].score;
   const band = news.filter((h) => h.score >= bestScore * NEWS_RELEVANCE_BAND);
   const newest = band.reduce((a, b) => ((b.page.dateIso ?? "") > (a.page.dateIso ?? "") ? b : a), band[0]);
-  return [...hits, newest];
+  return { hits: [...hits, newest], newsSlotFired: true };
 }
 
 // The corpus token estimate is baked in at generation time (per-page `tokenEstimate`); used by the

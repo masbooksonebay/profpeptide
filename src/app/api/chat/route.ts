@@ -43,7 +43,8 @@
 //   errors -> JSON { error: { code, message } }
 export const runtime = "nodejs";
 
-import { retrieveForChat, type RetrievalHit } from "@/lib/chat-retrieval";
+import { retrieveForChatDetailed, type RetrievalHit } from "@/lib/chat-retrieval";
+import { hashIp, logChatTurn, looksLikeNotFound, type ChatGuardrail, type RetrievedRef } from "@/lib/chat-log";
 import { SYSTEM_PROMPT, substitutePlaceholdersAndFilter } from "@/lib/chat-system-prompt";
 import {
   checkFirstPersonDosing,
@@ -130,13 +131,29 @@ function formatPageForModel(page: RetrievalHit["page"]): string {
   );
 }
 
-function runSearchTool(query: string): string {
+/** The user's most recent message — what the turn is actually asking. */
+function lastQuestionOf(messages: { role: string; content: string }[]): string {
+  return [...messages].reverse().find((m) => m.role === "user")?.content ?? "";
+}
+
+/** Per-request analytics accumulator. Populated as the turn runs, written once at the end.
+ *  Deliberately plain data with no behaviour: nothing here may influence the answer. */
+interface Telemetry {
+  retrieved: RetrievedRef[];
+  newsSlotFired: boolean;
+  zeroRetrieval: boolean;
+}
+
+function runSearchTool(query: string, telemetry: Telemetry): string {
   // retrieveForChat, not searchCorpus: for legality/regulatory questions it also appends the best
   // news page when ranking alone missed one. A profile's regulatory line is a snapshot (BPC-157's
   // still says "Category 2 in 2023"), so without this the model can answer a compounding question
   // from stale-but-plausible text and never see that the posture has moved.
-  const hits = retrieveForChat(query, 2);
+  const { hits, newsSlotFired } = retrieveForChatDetailed(query, 2);
+  telemetry.retrieved.push(...hits.map((h) => ({ url: h.page.url, score: h.score })));
+  if (newsSlotFired) telemetry.newsSlotFired = true;
   if (hits.length === 0) {
+    telemetry.zeroRetrieval = true;
     return "No matching content found on Prof. Peptide for that query. Tell the user this topic " +
       "isn't covered rather than answering from general knowledge.";
   }
@@ -155,6 +172,7 @@ interface AnthropicMessage {
 async function callAnthropic(apiKey: string, messages: AnthropicMessage[]): Promise<{
   stop_reason: string;
   content: AnthropicContentBlock[];
+  usage?: { input_tokens?: number; output_tokens?: number };
 }> {
   const res = await fetch(ANTHROPIC_URL, {
     method: "POST",
@@ -209,7 +227,31 @@ export async function POST(req: Request): Promise<Response> {
   const validated = validateBody(parsed);
   if (!validated.ok) return jsonError(400, "invalid_body", validated.message);
 
+  const startedAt = Date.now();
   const ip = getClientIp(req);
+  const telemetry: Telemetry = { retrieved: [], newsSlotFired: false, zeroRetrieval: false };
+  /** One write per turn, fire-and-forget. `void` is deliberate: the response must not wait on
+   *  analytics, and logChatTurn never rejects (it swallows its own errors), so there is nothing
+   *  here for an unhandled rejection to escape from. */
+  const writeLog = (
+    question: string,
+    guardrail: ChatGuardrail | null,
+    extra: { notFound?: boolean; inputTokens?: number | null; outputTokens?: number | null } = {}
+  ) => {
+    void logChatTurn({
+      ts: new Date().toISOString(),
+      ipHash: hashIp(ip),
+      question,
+      retrieved: telemetry.retrieved,
+      newsSlotFired: telemetry.newsSlotFired,
+      guardrail,
+      zeroRetrieval: telemetry.zeroRetrieval,
+      notFound: extra.notFound ?? false,
+      inputTokens: extra.inputTokens ?? null,
+      outputTokens: extra.outputTokens ?? null,
+      latencyMs: Date.now() - startedAt,
+    });
+  };
   let rate;
   try {
     rate = await checkIpDailyLimit(ip);
@@ -220,6 +262,7 @@ export async function POST(req: Request): Promise<Response> {
     rate = { ok: true, remaining: -1 };
   }
   if (!rate.ok) {
+    writeLog(lastQuestionOf(validated.messages), "rate_limited");
     return jsonError(429, "rate_limited", "Daily chat limit reached. Try again tomorrow, or use search.");
   }
 
@@ -232,11 +275,22 @@ export async function POST(req: Request): Promise<Response> {
       const send = (obj: unknown) => controller.enqueue(encoder.encode(sseChunk(obj)));
 
       if (dosingCheck.blocked) {
+        writeLog(lastUserMessage?.content ?? "", "dosing_prefilter");
         send({ type: "delta", text: dosingCheck.reason });
         send({ type: "done" });
         controller.close();
         return;
       }
+
+      // Declared OUTSIDE the try so the catch path can still report the tokens already spent —
+      // a turn that failed mid-way still cost money, and a log that omits it understates spend.
+      // Usage accumulates across tool-use round trips: a turn is often 2-3 API calls, so reporting
+      // only the last would undercount every multi-round conversation.
+      const usage = { input: 0, output: 0 };
+      const tally = (r: { usage?: { input_tokens?: number; output_tokens?: number } }) => {
+        usage.input += r.usage?.input_tokens ?? 0;
+        usage.output += r.usage?.output_tokens ?? 0;
+      };
 
       try {
         const messages: AnthropicMessage[] = validated.messages.map((m) => ({ role: m.role, content: m.content }));
@@ -244,6 +298,7 @@ export async function POST(req: Request): Promise<Response> {
         let finalText = "";
         for (let round = 0; round < MAX_TOOL_ROUNDS; round++) {
           const response = await callAnthropic(apiKey, messages);
+          tally(response);
           const toolUses = response.content.filter((b): b is Extract<AnthropicContentBlock, { type: "tool_use" }> => b.type === "tool_use");
 
           if (toolUses.length === 0 || response.stop_reason !== "tool_use") {
@@ -261,7 +316,7 @@ export async function POST(req: Request): Promise<Response> {
           const toolResults = toolUses.map((tu) => ({
             type: "tool_result" as const,
             tool_use_id: tu.id,
-            content: runSearchTool(typeof tu.input.query === "string" ? tu.input.query : ""),
+            content: runSearchTool(typeof tu.input.query === "string" ? tu.input.query : "", telemetry),
           }));
           messages.push({ role: "user", content: toolResults as unknown as AnthropicContentBlock[] });
 
@@ -273,6 +328,7 @@ export async function POST(req: Request): Promise<Response> {
             // Force a final answer on the next (uncounted) call rather than leaving the user with
             // nothing after burning the round budget on searches.
             const forced = await callAnthropic(apiKey, messages);
+            tally(forced);
             finalText = forced.content
               .filter((b): b is Extract<AnthropicContentBlock, { type: "text" }> => b.type === "text")
               .map((b) => b.text)
@@ -294,8 +350,16 @@ export async function POST(req: Request): Promise<Response> {
           await new Promise((r) => setTimeout(r, 12));
         }
         send({ type: "done" });
+        // The answer is inspected for a not-found admission and then DISCARDED — the boolean is
+        // kept, the text is not (see chat-log.ts: the answer is never stored).
+        writeLog(lastUserMessage?.content ?? "", null, {
+          notFound: looksLikeNotFound(safeText),
+          inputTokens: usage.input,
+          outputTokens: usage.output,
+        });
       } catch (err) {
         send({ type: "error", message: err instanceof Error ? err.message : "Something went wrong." });
+        writeLog(lastUserMessage?.content ?? "", "api_error", { inputTokens: usage.input, outputTokens: usage.output });
       } finally {
         controller.close();
       }
