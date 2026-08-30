@@ -39,7 +39,8 @@ export const faqSections: FaqSection[] = [
       },
       {
         q: "Are research peptides legal in the United States?",
-        a: "The legal status of research peptides in the US is complex and evolving. Peptides sold strictly for laboratory research purposes — labeled \"for research use only, not for human consumption\" — occupy a regulatory gray area. They are not scheduled controlled substances in most cases, but they are also not FDA approved for human use. The FDA has placed a growing number of peptides on its Category 1 and Category 2 bulk drug substance lists, restricting their use in commercial compounding pharmacies. Regulations tightened significantly in 2025, with the FDA issuing a Final Guidance on research-grade compounds that introduced new labeling and institutional verification requirements. The regulatory landscape continues to evolve — always verify current status before sourcing any peptide.",
+        a: "It depends which channel is meant, and that is not a dodge \u2014 compounding pharmacies, bulk outsourcing facilities and research-use-only sellers sit under three different regimes. Most of these compounds are not federally scheduled, yet none is approved for human use, and no federal action in 2026 has been finalised.",
+        more: { href: "/faq/are-research-peptides-legal", label: "Are research peptides legal in the United States?" },
       },
       {
         q: "What does \"for research use only\" mean?",

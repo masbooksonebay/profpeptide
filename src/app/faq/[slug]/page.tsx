@@ -85,6 +85,32 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
                 </ul>
               );
             }
+            if (b.kind === "sources") {
+              const group = (label: string, items: typeof b.primary) => (
+                <>
+                  <h3 className="text-sm font-semibold text-[#16181B] dark:text-slate-100 mt-4 mb-2">{label}</h3>
+                  <ul className="list-disc list-inside space-y-1">
+                    {items.map((sx) => (
+                      <li key={sx.href} className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
+                        {/* External citation: keeps the arrow, per the site's glyph rule — chevron is
+                            internal navigation, arrow means this link leaves for a source. */}
+                        <a href={sx.href} target="_blank" rel="noopener noreferrer" className="text-[#3A759F] hover:underline break-words">
+                          {sx.cite} &rarr;
+                        </a>{" "}
+                        &mdash; {sx.note}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              );
+              return (
+                <div key={i} className="pt-4 border-t border-gray-100 dark:border-slate-800">
+                  <h2 className="text-xl font-semibold text-[#16181B] dark:text-slate-100">Sources</h2>
+                  {group("Primary", b.primary)}
+                  {b.secondary && b.secondary.length > 0 && group("Secondary", b.secondary)}
+                </div>
+              );
+            }
             if (b.kind === "table") {
               return (
                 <figure key={i} className="pt-2">

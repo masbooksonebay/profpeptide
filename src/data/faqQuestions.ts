@@ -24,11 +24,27 @@ export type FaqBlock =
   // ARITHMETIC ONLY. A row here converts a volume to a concentration to syringe units. It must never
   // imply which row a reader should pick — that is a dosing recommendation wearing a table's
   // clothes, and it is exactly how the competitor pages this pattern answers get it wrong.
-  | { kind: "table"; caption: string; headers: string[]; rows: string[][]; note?: string };
+  | { kind: "table"; caption: string; headers: string[]; rows: string[][]; note?: string }
+  // A Sources block, following the NEWS-ARTICLE citation pattern rather than the profile's numbered
+  // references: PRIMARY sources (Federal Register, FDA, court filings, statute text) listed before
+  // SECONDARY (law-firm analysis, trade press), each with a note saying what it is being cited FOR.
+  // Only for question pages that make regulatory or legal claims — a dosing page does not need one.
+  // 🔒 CITE ONLY WHAT WAS READ. A citation to a source nobody opened borrows authority the page has
+  // not earned, and this project has now caught three separate instances of a secondary source
+  // repeating something that turned out to be false.
+  | { kind: "sources"; primary: FaqSource[]; secondary?: FaqSource[] };
+
+export interface FaqSource {
+  /** Full citation as it should read on the page. */
+  cite: string;
+  href: string;
+  /** What this source is being relied on FOR — never omitted; it is what makes the citation checkable. */
+  note: string;
+}
 
 /** Groups the /faq hub's In-depth cards into sections. The hub DERIVES its grouping from this
  *  field (never a hand-ordered list), so a new question lands in its section automatically. */
-export type FaqCategory = "injection" | "dosing" | "side-effects" | "trt";
+export type FaqCategory = "injection" | "dosing" | "side-effects" | "trt" | "legality";
 
 /** Section order + display titles for the In-depth grouping. Titles use the hub's accordion
  *  section-header typography. */
@@ -37,6 +53,7 @@ export const FAQ_CATEGORY_ORDER: { key: FaqCategory; title: string }[] = [
   { key: "dosing", title: "Dosing" },
   { key: "side-effects", title: "Side Effects" },
   { key: "trt", title: "Testosterone & TRT" },
+  { key: "legality", title: "Legality & Regulation" },
 ];
 
 export interface FaqQuestion {
@@ -69,6 +86,187 @@ export interface FaqQuestion {
 }
 
 export const faqQuestions: FaqQuestion[] = [
+  {
+    slug: "are-research-peptides-legal",
+    category: "legality",
+    question: "Are research peptides legal in the United States?",
+    title: "Are Research Peptides Legal in the US? The Three Lanes, Explained",
+    metaDescription:
+      "Most research peptides are not controlled substances, but they are not approved for human use either — and \u201Clegal\u201D depends entirely on which channel you mean. 503A pharmacy compounding, 503B outsourcing, and research-use-only sales are three separate regimes. Nothing proposed in 2026 has been finalised.",
+    searchTags: [
+      "are research peptides legal",
+      "are peptides legal",
+      "is it legal to buy research peptides",
+      "peptide legality usa",
+      "are research peptides legal in the us",
+      "research use only peptides legal",
+      "peptide fda regulation",
+      "are peptides controlled substances",
+    ],
+    hubBlurb:
+      "Why there is no single answer: 503A compounding, 503B outsourcing and research-use-only sales are three separate regulatory channels, and the 2026 movement is proposed rather than final.",
+    lede:
+      "There is no single answer, because \u201Clegal\u201D depends on which channel is meant. Most research peptides are not federally scheduled controlled substances, but they are also not FDA-approved for human use \u2014 selling one for human use makes it an unapproved new drug regardless of what the label says. Compounding, outsourcing and research-use-only sales are three separate regimes with different rules.",
+    body: [
+      { kind: "heading", text: "The short answer, and why it cannot be shorter" },
+      {
+        kind: "p",
+        text:
+          "Two things are true at once, and most coverage picks one. Most research peptides are not listed as federally scheduled controlled substances, so possessing one is not the kind of offence that possessing a Schedule II drug is. And no research peptide is FDA-approved for human use \u2014 which means that once a product is intended for human use, it is an unapproved new drug under the Federal Food, Drug, and Cosmetic Act, and distributing it violates the Act. The gap between those two facts is the entire subject.",
+      },
+      {
+        kind: "p",
+        text:
+          "That is a regulatory grey area, not a settled permission. It is also moving: several federal actions in 2026 have changed what is proposed, and none of them has yet changed what is final.",
+      },
+      { kind: "heading", text: "Three lanes, not one rulebook" },
+      {
+        kind: "p",
+        text:
+          "The single most common error is treating \u201Cpeptide regulation\u201D as one thing. It runs through three separate channels, each with its own statutory test, its own list of substances, and its own timeline. A rule that moves in one lane frequently says nothing at all about the others.",
+      },
+      {
+        kind: "list",
+        items: [
+          "503A \u2014 a state-licensed pharmacy compounding a drug for one identified patient against a prescription.",
+          "503B \u2014 an FDA-registered outsourcing facility compounding in bulk, generally without a patient-specific prescription.",
+          "Research-use-only \u2014 material sold labelled for laboratory use, outside both compounding regimes entirely.",
+        ],
+      },
+      {
+        kind: "cta",
+        text: "This framework, and which 2026 action lands in which lane, is set out in full in",
+        href: "/news/glp1-compounding-503a-503b-three-lanes-2026",
+        label: "the three-lanes explainer",
+      },
+      { kind: "heading", text: "Category 1 and Category 2 \u2014 what placement actually restricts" },
+      {
+        kind: "p",
+        text:
+          "For the compounding lanes, the FDA sorts nominated bulk drug substances into categories. Category 2 is the \u201Csignificant safety concern\u201D list; Category 1 covers substances that may be eligible for use while under evaluation. In April 2026 the FDA removed twelve peptides from Category 2 after their nominations were withdrawn (docket FDA-2025-N-6895).",
+      },
+      {
+        kind: "p",
+        text:
+          "The precision that matters: removal from Category 2 is not authorisation to compound, and it does not move a substance into Category 1. The number of peptides confirmed sitting in Category 1 as a result of those actions is none. A vendor presenting the Category 2 removals as \u201Cpeptides are being legalised\u201D is describing something that did not happen.",
+      },
+      { kind: "heading", text: "What moved in 2026 \u2014 and what \u201Cproposed\u201D means" },
+      {
+        kind: "p",
+        text:
+          "On April 30, 2026 the FDA proposed to exclude semaglutide, tirzepatide and liraglutide from the 503B Bulks List, having found no clinical need. The notice published in the Federal Register on May 1 and the comment window, extended to July 30, 2026, has closed. The agency is weighing comments. No final rule has issued \u2014 proposed and banned remain different words.",
+      },
+      {
+        kind: "p",
+        text:
+          "Separately, the FDA\u2019s Pharmacy Compounding Advisory Committee met on July 23\u201324, 2026 and recommended six peptides \u2014 BPC-157, KPV, TB-500, MOTS-c, Epitalon and Semax \u2014 for the 503A Bulks List, rejecting DSIP. Those votes are non-binding recommendations. Placement requires the FDA to act through rulemaking with HHS sign-off, a process observers expect to run into 2027. Nothing became compoundable on the day of the vote.",
+      },
+      {
+        kind: "cta",
+        text: "The recorded tallies and what the vote does and does not do are covered in",
+        href: "/news/fda-pcac-peptide-vote-july-2026",
+        label: "the PCAC vote recap",
+      },
+      { kind: "heading", text: "A \u201Cresearch use only\u201D label is not a legal shield" },
+      {
+        kind: "p",
+        text:
+          "This is the part most often misunderstood, and it is settled enough to state plainly: the disclaimer does not control the analysis. Intended use does. The FDA has issued a run of warning letters to peptide sellers \u2014 among them Summit Research Peptides (December 2024), USApeptide.com (February 2025), Pinnacle Peptides (December 2025) and Wholesale Peptide (June 2026) \u2014 each finding that despite labelling reading \u201Cresearch use only\u201D or \u201Cnot for human consumption,\u201D evidence from the labelling and websites established the products were intended as drugs for human use. On that finding the products are unapproved new drugs under section 505(a).",
+      },
+      {
+        kind: "p",
+        text:
+          "The same theory drives private litigation. On August 12, 2026 Eli Lilly filed six federal lawsuits over retatrutide sales, pleading state unfair-competition and consumer-protection statutes rather than patent or FDCA claims, and arguing that the marketing conduct around a label \u2014 dosing charts, injection instructions, weight-loss claims, consumer-facing distribution \u2014 is evidence of intended human use. Those cases are unresolved: a lawsuit is an allegation, and no court has found any defendant liable.",
+      },
+      {
+        kind: "cta",
+        text: "The pleading architecture, and why Lilly avoided patent and FDCA claims, is examined in",
+        href: "/news/lilly-retatrutide-lawsuits-ruo-sellers-2026",
+        label: "the retatrutide lawsuits piece",
+      },
+      { kind: "heading", text: "States are moving too \u2014 and what a state law cannot do" },
+      {
+        kind: "p",
+        text:
+          "Louisiana Act 374 took effect on August 1, 2026, the first state statute we can identify that legislates on peptides by name. Its enacted text restrains state licensing boards from prohibiting providers and pharmacists from working with peptides, conditioned on compliance with the federal compounding provisions and the applicable USP-NF chapters.",
+      },
+      {
+        kind: "p",
+        text:
+          "A state controls licensure; it does not control what federal law permits to be compounded. A statute telling state boards not to punish a pharmacist removes one enforcer, not the federal prohibition. Act 374 is drafted to avoid that collision \u2014 its protection only ever attaches to conduct that is already federally compliant.",
+      },
+      {
+        kind: "cta",
+        text: "What the legislature removed from the bill before passage, and why it matters, is in",
+        href: "/news/louisiana-act-374-state-peptide-compounding-2026",
+        label: "the Act 374 analysis",
+      },
+      { kind: "heading", text: "What this does not mean" },
+      {
+        kind: "list",
+        items: [
+          "This is not legal advice. It reports the regulatory position; it does not tell anyone what they may lawfully do.",
+          "None of the 2026 movement is final. A proposal is not a rule, and an advisory recommendation is not an approval.",
+          "\u201CNot a controlled substance\u201D is not the same as \u201Capproved,\u201D and it is not a green light for human use.",
+          "The position is evolving, and the dates on this page are part of its meaning.",
+        ],
+      },
+      {
+        kind: "cta",
+        text: "How Prof. Peptide sources and checks what it publishes is set out in the",
+        href: "/methodology",
+        label: "methodology",
+      },
+      {
+        kind: "sources",
+        primary: [
+          {
+            cite: "FDA, Warning Letter to Wholesale Peptide (MARCS-CMS 729447, June 17, 2026)",
+            href: "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/wholesale-peptide-729447-06172026",
+            note: "the FDA's position that \u201Cresearch use only\u201D labelling does not prevent a product being an unapproved new drug where evidence shows intended human use",
+          },
+          {
+            cite: "FDA, Warning Letter to USApeptide.com (MARCS-CMS 696885, February 26, 2025)",
+            href: "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/usapeptidecom-696885-02262025",
+            note: "the same finding against a different seller, with the disclaimers quoted",
+          },
+          {
+            cite: "FDA, Warning Letter to Summit Research Peptides (MARCS-CMS 695607, December 10, 2024)",
+            href: "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/summit-research-peptides-695607-12102024",
+            note: "the earliest of the recent letters, establishing this as a pattern rather than a one-off",
+          },
+          {
+            cite: "Louisiana Act No. 374 (SB 253), 2026 Regular Session \u2014 enrolled act enacting R.S. 37:23.5",
+            href: "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1478374",
+            note: "the enacted Louisiana text, which differs materially from the bill as introduced",
+          },
+        ],
+        secondary: [
+          {
+            cite: "Prof. Peptide, The 503B Exclusion and the Three Lanes of Peptide Access (August 17, 2026)",
+            href: "/news/glp1-compounding-503a-503b-three-lanes-2026",
+            note: "the lane framework, the Category 2 removals and docket FDA-2025-N-6895, and the Federal Register dates and comment deadline, each cited to primary sources there",
+          },
+          {
+            cite: "Prof. Peptide, FDA Advisory Panel Recommends Six Peptides for Compounding (August 5, 2026)",
+            href: "/news/fda-pcac-peptide-vote-july-2026",
+            note: "the July 23\u201324 PCAC tallies and the rulemaking steps that must follow a recommendation",
+          },
+          {
+            cite: "Prof. Peptide, Lilly Sues Six Retatrutide Sellers (August 29, 2026)",
+            href: "/news/lilly-retatrutide-lawsuits-ruo-sellers-2026",
+            note: "the six case captions, the eight-state pleading, and the absence of patent and FDCA claims",
+          },
+        ],
+      },
+    ],
+    handoff: {
+      href: "/faq",
+      label: "questions hub",
+      text: "For the other common questions about research peptides, see the",
+    },
+    related: ["how-much-bac-water-for-peptides", "what-size-needle-for-peptides"],
+  },
   {
     slug: "what-size-needle-for-peptides",
     category: "injection",
@@ -1731,6 +1929,9 @@ export function faqAnswerText(q: FaqQuestion): string {
     else if (b.kind === "cta") parts.push(`${b.text} ${b.label}.`);
     // Tables flatten to "caption: header row; each data row" so the FAQPage schema answer carries
     // the SAME figures the reader sees — never a second, hand-written copy that could drift.
+    // Sources are NOT folded into the schema answer: a citation list is not part of the answer to
+    // the question, and padding the FAQPage answer with reference text would misrepresent it.
+    else if (b.kind === "sources") { /* intentionally omitted from the schema answer */ }
     else if (b.kind === "table") {
       parts.push(`${b.caption} ${b.headers.join(", ")}. ${b.rows.map((r) => r.join(", ")).join("; ")}.`);
       if (b.note) parts.push(b.note);
