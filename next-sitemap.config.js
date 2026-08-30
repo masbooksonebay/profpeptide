@@ -89,7 +89,10 @@ const NEWS_DETAIL = /^\/news\/[a-z0-9-]+$/;
 //
 // What we emit instead — ONLY where the date reflects a REAL change to that entity, sourced from
 // build-visible data, so different pages carry genuinely different dates:
-//   • /coupons/<vendor>   -> lastmodData.vendorPulled[vendor]   (that vendor's own price-pull date)
+//   • /coupons/<vendor>   -> MAX(vendorPulled[vendor], couponContentDates[vendor]) — the later of the
+//                            vendor's price-pull date and that page's own content-change date. The
+//                            pull date alone was a real defect: a content edit without a pull shipped
+//                            a lastmod claiming the page had not changed.
 //   • /prices/<compound>  -> lastmodData.compoundPulled[compound] (MAX pull date over the vendors that
 //                            render a row for it — the compound's freshest data)
 //   • /news/<slug>        -> the article's publish date, parsed from news.ts
@@ -102,6 +105,25 @@ const NEWS_DETAIL = /^\/news\/[a-z0-9-]+$/;
 // a fabricated one is corrosive. Partial coverage is the design, not a gap.
 const lastmodData = require("./src/data/lastmod.generated.json");
 const { vendorPulled = {}, compoundPulled = {} } = lastmodData;
+
+// Per-coupon-page CONTENT change dates — {slug: "YYYY-MM-DD"}, derived from a committed hash map
+// (scripts/gen-content-dates.mjs, guarded by check-content-dates.mjs). This closes the gap the
+// per-entity design left open: vendorPulled answers "when did this vendor's PRICES change", which
+// says nothing about an edit to the page's prose, code, FAQ or differentiator. Read here as plain
+// committed JSON — no git, no mtimes, no build clock, so none of the reasons the Aug 2026
+// content-lastmod attempt was reverted apply.
+const contentDates = require("./src/data/content-dates.generated.json");
+const couponContentDates = Object.fromEntries(
+  Object.entries(contentDates.coupons || {}).map(([slug, v]) => [slug, v.date])
+);
+
+/** Later of two YYYY-MM-DD strings; either may be undefined. Lexicographic compare is safe and
+ *  timezone-free for this format — deliberately not Date parsing, which shifts across UTC. */
+function maxDate(a, b) {
+  if (!a) return b;
+  if (!b) return a;
+  return a > b ? a : b;
+}
 
 // News publish dates: parsed from src/data/news.ts (the source of truth; no generated JSON). Each
 // article's `date` is a human string ("August 8, 2026"); convert to ISO with an explicit month map so
@@ -176,8 +198,12 @@ module.exports = {
     // only) missed them. The category filter is now client-side (HubCategoryBrowser), so both
     // hubs prerender ○ and enter the manifest on their own — the explicit re-add is gone.
     ...activeCouponSlugs.map((slug) => {
-      // Coupon lastmod = that vendor's own price-pull date (absent -> no <lastmod>). No changefreq/priority.
-      const lastmod = vendorPulled[slug];
+      // Coupon lastmod = the LATER of the vendor's price-pull date and the page's own content-change
+      // date. Either alone is wrong: the pull date ignores prose/code/FAQ edits (Royal's code fix
+      // landed 2026-08-26 while the sitemap still said 2026-08-16), and the content date ignores a
+      // refreshed price table. Whichever moved last is the honest answer, and taking the max means a
+      // date can never travel backwards. Absent both -> no <lastmod>, as before.
+      const lastmod = maxDate(vendorPulled[slug], couponContentDates[slug]);
       return { loc: `/coupons/${slug}`, ...(lastmod ? { lastmod } : {}) };
     }),
   ],
