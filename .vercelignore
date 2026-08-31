@@ -1,0 +1,15 @@
+# Files uploaded to Vercel on deploy. Same syntax as .gitignore.
+#
+# docs/archive/ — the 2026-08-31 project-knowledge export: 343 files, ~6.8 MB of superseded
+# markdown kept for history only (see docs/archive/README.md). Nothing in it is a route, is
+# imported by src, or is read at build or runtime, so shipping it to the build machine is pure
+# upload cost.
+#
+# 🔴 SCOPE IS DELIBERATE — ignore docs/archive/, NOT docs/.
+# Three guards that run in the Vercel build chain read docs/PP_PRICE_DATA_MASTER_v1.md:
+# check-doc-integrity, check-prices-sync (via scripts/price-pull/to_prices.py) and
+# check-blend-skips. Verified empirically: with that file absent all three exit 1, and because
+# the build script is &&-linked they fail before `next build` ever runs — every deploy would
+# die. Widening this to `docs/` breaks production. If the archive ever needs company here, add
+# the specific subdirectory, never the parent.
+docs/archive/
