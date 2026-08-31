@@ -80,12 +80,23 @@ export function faqHandoff(q: FaqQuestion): FaqHandoff {
     return {
       href: `/peptides/${compound}`,
       label: `${name} profile`,
-      // Lower-cased in the sentence, proper-cased in the link label — "regarding retatrutide, see
-      // the full Retatrutide profile" is how the locked line reads.
-      text: `For other common questions regarding ${name.toLowerCase()}, see the full`,
+      // "regarding retatrutide, see the full Retatrutide profile" — lower-cased mid-sentence,
+      // proper-cased in the link label.
+      // 🔴 ONLY where the name is an ordinary word. Most of this roster is alphanumeric
+      // designators — BPC-157, TB-500, GHK-Cu, MK-677, IGF-1 LR3 — and lower-casing those
+      // produces "regarding bpc-157", which reads as a typo rather than a sentence. Caught on the
+      // BPC-157 pilot, before the other ~55 coded names inherited it.
+      text: `For other common questions regarding ${sentenceCaseName(name)}, see the full`,
     };
   }
   return HUB_HANDOFF;
+}
+
+// A compound name mid-sentence: lower-cased only when it is a single ordinary word ("Retatrutide"
+// -> "retatrutide"). Anything carrying a digit, an internal capital, or more than one token is a
+// designator and keeps its canonical form ("BPC-157", "GHK-Cu", "CJC-1295 + Ipamorelin").
+function sentenceCaseName(name: string): string {
+  return /^[A-Z][a-z]+$/.test(name) ? name.toLowerCase() : name;
 }
 
 export interface FaqRelatedLink {
