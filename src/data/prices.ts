@@ -368,6 +368,54 @@ export function highlightVendorsFor(compoundSlug: string, slots = 4): string[] {
   return [...priority, ...rest, ...blendRest].slice(0, slots);
 }
 
+/**
+ * The "Also stocking {compound}" foot block: vendors with a verified price row for this compound
+ * that the priority card block did NOT already show, capped at `limit`.
+ *
+ * 🔴 SELECTIVE BY CONSTRUCTION. It returns [] unless at least `min` such vendors remain, so the
+ * block is absent from thin profiles rather than rendering a one-name stub. That absence is the
+ * point: an identical block on every page is the shape Google discounts, and this one varies by
+ * page for a real reason — actual, verified stock — which is what earns the link.
+ *
+ * 🔒 ONE LINK PER VENDOR. Each name links to its /coupons page and nothing else; there are no
+ * per-vendor price anchors. A block with 8 links passes more through each than a block with 15,
+ * and the coupon pages are where the authority audit said the scarce equity is needed.
+ */
+// Vendors kept OUT of the foot block. Nura Peptide is here for the same reason its 20 profile
+// pins were emptied and it came off /best-peptide-vendors on 2026-09-01: it is not converting, so
+// it does not get placements. It keeps its coupon page, registry entry and price rows — this list
+// governs editorial placement only, never whether a vendor exists.
+const FOOT_BLOCK_EXCLUDED: string[] = ["nura-peptide"];
+
+export function alsoStockingVendors(compoundSlug: string, min = 3, limit = 4): string[] {
+  const shown = highlightVendorsFor(compoundSlug);
+  const rows = compoundRows(compoundSlug)
+    .map((r) => r.entry.vendor)
+    .concat(blendRows(compoundSlug).map((r) => r.vendor));
+  const rest = rows.filter(
+    (v, i, a) =>
+      a.indexOf(v) === i &&
+      LISTED.has(v) &&
+      shown.indexOf(v) === -1 &&
+      FOOT_BLOCK_EXCLUDED.indexOf(v) === -1,
+  );
+  if (rest.length < min) return [];
+  rest.sort((a, b) => (vendors[a]?.name ?? a).localeCompare(vendors[b]?.name ?? b));
+  // 🔴 ROTATE, DO NOT TAKE THE ALPHABETICAL HEAD. Taking the first `limit` after an A–Z sort hands
+  // every slot on every profile to the same few names: measured on the first build, Ameano took
+  // +29 profiles and Aero +18, while Peptidology — one of the widest-catalogue, thinnest-linked
+  // vendors this block exists to help — took +1. A deterministic per-compound offset spreads the
+  // slots across everyone who actually stocks the compound, so a vendor's share ends up
+  // proportional to the breadth of its real stock, which is the property being rewarded.
+  // Deterministic (same input → same output) so the build stays reproducible and the guards hold.
+  let h = 0;
+  for (let i = 0; i < compoundSlug.length; i++) h = (h * 31 + compoundSlug.charCodeAt(i)) % 100003;
+  const start = h % rest.length;
+  const out: string[] = [];
+  for (let i = 0; i < Math.min(limit, rest.length); i++) out.push(rest[(start + i) % rest.length]);
+  return out;
+}
+
 export function deriveHighlightVendors(compoundSlug: string, limit = 3): string[] {
   const slugs = Array.from(new Set(compoundRows(compoundSlug).map((r) => r.entry.vendor))).filter(
     (s) => LISTED.has(s),

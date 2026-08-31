@@ -9,6 +9,7 @@ import { compoundVendorCount, highlightVendorsFor, isBlendSlug, blendVendorCount
 import { LISTED } from "@/data/attribution";
 import { VENDOR_PINS } from "@/data/vendor-pins";
 import NavLink from "@/components/NavLink";
+import AlsoStocking from "@/components/AlsoStocking";
 
 export interface VendorHighlight {
   slug: string;
@@ -83,8 +84,14 @@ export default function VendorHighlightBlock({ highlights, compoundSlug, from = 
     : 0;
   const showCta = !!compoundSlug && vendorCount >= 3;
 
+  // The foot block renders on PROFILES ONLY (from === "profile-block"). It is deliberately not on
+  // the FAQ or alternatives surfaces: those pages have a single narrow job, and a second vendor
+  // list would dilute both the page and the link budget. One edit here covers all 61 profiles,
+  // which is why it lives in the component rather than in 61 page files.
+  const foot = from === "profile-block" && compoundSlug ? <AlsoStocking compoundSlug={compoundSlug} /> : null;
+
   // Nothing to say: no vendors and not indexable → render nothing (blends with no curation).
-  if (selected.length === 0 && !showCta) return null;
+  if (selected.length === 0 && !showCta) return foot;
 
   const cta = showCta ? (
     <NavLink
@@ -103,6 +110,7 @@ export default function VendorHighlightBlock({ highlights, compoundSlug, from = 
           can still compare current market prices across every vendor that stocks it:
         </p>
         {cta}
+      {foot}
       </div>
     );
   }
@@ -177,6 +185,7 @@ export default function VendorHighlightBlock({ highlights, compoundSlug, from = 
         })}
       </div>
       {cta}
+      {foot}
     </>
   );
 }

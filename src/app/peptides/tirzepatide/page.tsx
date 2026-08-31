@@ -171,7 +171,12 @@ const sections = [
           Maintenance doses are 5, 10, or 15 mg weekly. Most users continue increasing through the schedule until they reach their target weight loss or hit dose-limiting side effects. The Mounjaro label increases the dose only after at least 4 weeks on the current one, so remaining at a step longer is within the labelled schedule, and the published outcomes do not show that extension reducing long-term outcomes.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Half-life is approximately 5 days (~120 hours), supporting once-weekly dosing with steady state reached in roughly 4 weeks at each dose level. Dose adjustments aren&rsquo;t typically needed for kidney or liver impairment, though dehydration from GI side effects can affect kidney function and should be monitored.
+          {/* 🔒 VERIFIED 2026-08-30 AGAINST THE MOUNJARO AND ZEPBOUND LABELS ON DAILYMED.
+            DO NOT RE-DERIVE. Unlike semaglutide (four labels, four different missed-dose rules),
+            tirzepatide's two labels agree with each other — but they do NOT agree with any
+            semaglutide label, and they differ from each other on the pediatric ceiling. */}
+        Both approved labels state the same missed-dose rule: administer as soon as possible within 4 days (96 hours) after the missed dose, and if more than 4 days have passed, skip it and administer the next dose on the regularly scheduled day. That differs from every semaglutide label, so a rule carried over from one compound to the other will be wrong. The maximum is 15 mg once weekly for all indications on the Zepbound label; the Mounjaro label states the same 15 mg adult maximum alongside a separate 10 mg maximum in pediatric patients &mdash; a distinction that disappears whenever a dose figure is quoted without its population.
+        Half-life is approximately 5 days (~120 hours), supporting once-weekly dosing with steady state reached in roughly 4 weeks at each dose level. Dose adjustments aren&rsquo;t typically needed for kidney or liver impairment, though dehydration from GI side effects can affect kidney function and should be monitored.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           For research-grade tirzepatide outside FDA-approved use, dosing protocols mirror the approved schedule. There are no separate research-grade dosing standards.

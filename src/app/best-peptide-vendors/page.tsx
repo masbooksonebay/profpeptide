@@ -41,8 +41,11 @@ interface HubVendor {
 // they appear on /coupons and /vendors (which list the whole registry).
 //   - Alpha Peptides: newly approved, attribution not yet verified — intentionally
 //     excluded here (still present on /coupons, /vendors, /coupons/alpha-peptides).
-//   - Nura Peptide: added Aug 2026 once attribution was confirmed (Freedom Diagnostics
-//     testing; 25% off with PROFPEPTIDE).
+//   - Nura Peptide: added Aug 2026 once attribution was confirmed, REMOVED 2026-09-01 — it is
+//     not converting. Same call that emptied its 20 profile pins (data/vendor-priority.ts).
+//     It keeps its coupon page, registry entry and price rows; only the editorial placements go.
+//     No renumbering needed: this list is sorted by display name at render and carries no
+//     ordinal, so a removal closes cleanly.
 //   - Ascension Peptides + Swiss Chems: removed from this featured subset Aug 2026.
 //     (Ascension remains PROVEN in attribution.ts and still surfaces on profiles;
 //     Swiss Chems is CUT — see attribution.ts — so it was already off every profile.)
@@ -67,14 +70,6 @@ const featured: Omit<HubVendor, "code" | "discount">[] = [
     description:
       "US-based supplier with a broad catalog of more than two dozen research compounds. Every batch is third-party tested by an ISO/IEC 17025-accredited lab to a 99%+ HPLC purity standard, with additional heavy-metal (ICP-MS), sterility, and endotoxin screening. Each product links a batch-specific Certificate of Analysis that is downloadable and independently verifiable through the issuing lab’s portal.",
     strengths: ["Third-party tested, 99%+ purity", "ISO/IEC 17025-accredited lab", "Per-batch verifiable COAs", RATE_CHIP],
-  },
-  {
-    name: "Nura Peptide",
-    slug: "nura-peptide",
-    url: "https://nurapeptide.com/?ref=profpeptide",
-    description:
-      "US-based supplier with a public COA library. Every batch is third-party tested by Freedom Diagnostics, whose certificates confirm identity by LC-MS and purity by HPLC-UV, with recent reports adding endotoxin (USP <85>) and microbial (PCR) screening; each COA is verifiable by its search code at FreedomDiagnosticsTesting.com. Catalog spans metabolic, recovery, growth-hormone, and longevity compounds, plus the GLOW and KLOW blends.",
-    strengths: ["Third-party tested (Freedom Diagnostics)", "LC-MS identity + HPLC-UV purity", "Verifiable per-batch COA library", RATE_CHIP],
   },
   {
     name: "Peptide Partners",

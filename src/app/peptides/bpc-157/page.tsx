@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "Why did the FDA restrict BPC-157?",
-    a: "In 2023, the FDA classified BPC-157 as a Category 2 bulk drug substance, citing concerns about peptide impurities, lack of completed human safety trials, and safety risks. This restricts its availability through compounding pharmacies in the US. It can still be sold as a research-grade peptide for laboratory use.",
+    a: "In 2023, the FDA placed BPC-157 in Category 2 of the bulk drug substances list — the significant-safety-concern category — citing peptide impurities, the absence of completed human safety trials, and safety risks. That bars compounding pharmacies in the US from preparing it. The position since is procedural: BPC-157 was technically removed from Category 2 when the original nominators withdrew, then renominated through a different pathway. Removal from Category 2 does not authorise compounding and is not placement in Category 1. It can still be sold as a research-grade peptide for laboratory use.",
   },
   {
     q: "What's the typical cycle?",
@@ -135,9 +135,9 @@ const sections = [
     id: "research",
     title: "What is BPC-157 used for?",
     intro:
-      "BPC-157's research evidence base spans tendon and ligament repair, muscle injury recovery, gastrointestinal protection, bone healing, and CNS/peripheral nerve repair. The gastrointestinal evidence is the most established (BPC-157 was originally isolated from gastric juice protective protein). The musculoskeletal data is the most popular application, with a 2025 systematic review (Vasireddi et al.) analyzing 36 studies. No completed Phase 2 or 3 human trials exist for any application.",
+      "BPC-157's research evidence base spans tendon and ligament repair, muscle injury recovery, gastrointestinal protection, bone healing, and CNS/peripheral nerve repair. The gastrointestinal evidence is the most established (BPC-157 was originally isolated from gastric juice protective protein). The musculoskeletal data is the most popular application, with a 2025 systematic review in HSS Journal (Vasireddi et al.) analyzing 36 studies. No completed Phase 2 or 3 human trials exist for any application.",
     body: [
-      "Tendon and Ligament Repair [3][6]. Multiple rat studies show 30–50% faster Achilles tendon and rotator cuff healing. A 2025 systematic review in Sports Health analyzed 36 studies and found consistent benefits across musculoskeletal models.",
+      "Tendon and Ligament Repair [3][6]. Multiple rat studies show 30–50% faster Achilles tendon and rotator cuff healing. A 2025 systematic review in HSS Journal (Vasireddi et al.) analyzed 36 studies published between 1993 and 2024 and found consistent benefits across musculoskeletal models.",
       "Muscle Injury Recovery [7]. Crush-injury and blunt-force models show accelerated functional recovery. BPC-157 supports muscle fiber regeneration and reduces fibrotic scar formation.",
       "Gastrointestinal Protection [5][8]. The most established research area. BPC-157 protects against NSAID-induced gastric lesions, accelerates ulcer healing, supports inflammatory bowel disease (IBD) models, and promotes intestinal anastomosis healing after surgery.",
       "Bone Healing. Fracture models demonstrate improved mineralization rates and faster bone callus formation.",
@@ -406,11 +406,22 @@ const sections = [
     id: "limitations",
     title: "What are the limitations of BPC-157 research?",
     intro:
-      "BPC-157 is not FDA-approved and is classified as a Category 2 bulk drug substance, meaning it cannot be compounded by commercial pharmacies in the US (2023 restriction). Almost all efficacy evidence is from rodent models — no completed Phase 2 or 3 human trials exist. Much of the published research originates from a single Croatian research group (Sikiric et al.), creating concentration-of-source bias. BPC-157 was temporarily WADA-prohibited in 2022 but is no longer on the WADA list.",
+      "BPC-157 is not FDA-approved. The FDA placed it in Category 2 in 2023, barring compounding pharmacies from preparing it; it was later technically removed when the original nominators withdrew and then renominated through a different pathway, which changes the procedure rather than the position. Almost all efficacy evidence is from rodent models — no completed Phase 2 or 3 human trials exist. Much of the published research originates from a single Croatian research group (Sikiric et al.), creating concentration-of-source bias. BPC-157 was temporarily WADA-prohibited in 2022 but is no longer on the WADA list.",
     node: (
       <div className="space-y-3">
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          BPC-157 is not FDA-approved and is classified as a Category 2 bulk drug substance, meaning it cannot be compounded by commercial pharmacies in the US. This restriction was finalized in 2023.
+      {/* 🔒 ESTABLISHED FACT — VERIFIED 2026-08-30 AGAINST PRIMARY SOURCES. DO NOT RE-DERIVE.
+          BPC-157's Category 2 history is procedural and has been settled once already; the full
+          derivation lives on /news/fda-pcac-meeting-agenda-july-2026 and
+          /news/fda-pcac-peptide-vote-july-2026. Point at those rather than re-reasoning it.
+            · Placed in Category 2 (the "significant safety concern" list) in 2023.
+            · TECHNICALLY REMOVED from Category 2 when the original nominators withdrew, then
+              RENOMINATED through a different pathway — procedural, not a substantive change.
+            · 🔴 Removal from Category 2 authorises nothing and is NOT placement in Category 1.
+              Zero peptides are confirmed in Category 1 as a result of the 2026 actions.
+          Writing "the 2023 restriction was finalized" as a static present-tense fact is the error
+          this block exists to stop; it had shipped on this profile. */}
+          BPC-157 is not FDA-approved. The FDA placed it in Category 2 &mdash; the significant-safety-concern list, which bars compounding pharmacies from preparing it &mdash; in 2023. Its status since is procedural rather than settled: it was technically removed from Category 2 when the original nominators withdrew, then renominated through a different pathway. Removal from Category 2 authorises nothing and is not the same as placement in Category 1.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           Almost all evidence for BPC-157 is from rodent models. No completed Phase 2 or Phase 3 human clinical trials exist. A Phase 1 safety and pharmacokinetics trial (NCT02637284) was registered but published peer-reviewed results are not available.
@@ -428,7 +439,7 @@ const sections = [
     id: "where-to-buy",
     title: "Where to source BPC-157",
     intro:
-      "BPC-157 is not FDA-approved and cannot be compounded by commercial pharmacies in the US (Category 2 bulk drug substance, 2023). Research-grade material is sold by specialty peptide vendors. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — and span both injectable and oral format options for the GI research use case.",
+      "BPC-157 is not FDA-approved and cannot be compounded by commercial pharmacies in the US (placed in Category 2 in 2023; its status since is procedural — see the regulatory note above). Research-grade material is sold by specialty peptide vendors. The vendors highlighted below have been vetted for transparent third-party testing, traceable batch documentation, and verified discount codes — and span both injectable and oral format options for the GI research use case.",
     node: (
       <div className="space-y-4">
         <VendorHighlightBlock compoundSlug="bpc-157"

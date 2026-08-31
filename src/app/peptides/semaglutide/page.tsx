@@ -186,7 +186,19 @@ const sections = [
           Rybelsus (oral semaglutide) is approved only for type 2 diabetes. Doses are 3 mg, 7 mg, or 14 mg taken once daily on an empty stomach with no more than 4 oz of plain water, then waiting at least 30 minutes before eating. Oral bioavailability is low (about 1%), which is why the doses are larger than the injectable form.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-          Half-life is approximately 165 hours (~7 days), supporting once-weekly dosing with steady state reached in about 4 weeks at each dose level. Dose adjustments aren&rsquo;t typically needed for kidney or liver impairment, though dehydration from GI side effects can affect kidney function and should be monitored.
+          A more recent oral label for chronic weight management escalates by DAY rather than by week &mdash; 1.5 mg for days 1&ndash;30, 4 mg for days 31&ndash;60, 9 mg for days 61&ndash;90, and 25 mg from day 91 onward. Those milligram figures look far larger than the 2.4 mg injectable maintenance dose because oral bioavailability is low, not because exposure is larger; reading an oral figure as though it were an injectable one is the most consequential mistake available on this subject.
+        {/* 🔒 VERIFIED 2026-08-30 AGAINST THE LABELS ON DAILYMED. DO NOT RE-DERIVE, and never
+            write "the semaglutide label" &mdash; there is no such thing. FOUR approved labels carry
+            FOUR different missed-dose rules, and no two agree:
+              Ozempic (injectable, weekly)  — administer within 5 days of the missed dose.
+              Wegovy  (injectable, weekly)  — if the next scheduled dose is MORE than 2 days away,
+                                              administer as soon as possible; if LESS than 2 days
+                                              away, do not administer it.
+              Rybelsus / oral (tablet, daily) — skip it and take the next dose the following day.
+            Each rule below is attributed to the product it belongs to. The FAQ spokes
+            (/faq/how-is-semaglutide-dosed) carry the same set from the same verification. */}
+        Missed-dose handling is written differently on each label, and the rules are not interchangeable. The Ozempic label instructs that a missed dose be administered within 5 days. The Wegovy label instead keys on proximity to the next dose: if the next scheduled dose is more than 2 days away, administer as soon as possible; if it is less than 2 days away, do not administer the missed dose. The oral tablets, being daily, simply skip the missed dose and resume the following day. A rule learned from one of these products does not transfer to another.
+        Half-life is approximately 165 hours (~7 days), supporting once-weekly dosing with steady state reached in about 4 weeks at each dose level. Dose adjustments aren&rsquo;t typically needed for kidney or liver impairment, though dehydration from GI side effects can affect kidney function and should be monitored.
         </p>
         <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
           For research-grade semaglutide outside FDA-approved use, dosing protocols mirror the approved schedule. There are no separate research-grade dosing standards.
