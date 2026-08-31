@@ -7,7 +7,7 @@ import PageDisclaimer from "@/components/PageDisclaimer";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd } from "@/lib/faq-schema";
 import { faqQuestions, faqQuestionBySlug, faqAnswerText } from "@/data/faqQuestions";
-import { faqRelatedLinks } from "@/lib/faq-related";
+import { faqRelatedLinks, faqHandoff } from "@/lib/faq-related";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 
 // Standing rule (Mark, 2026-08-25): compound FAQ pages end with a curated "Where to Buy" trio,
@@ -38,10 +38,12 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
   if (!q) notFound();
 
   const related = faqRelatedLinks(q);
+  // Derived unless the entry overrides it — see the rule on faqHandoff().
+  const handoff = faqHandoff(q);
 
   // FAQPage schema derives from the SAME text the page renders (faqAnswerText),
   // never a hand-written second copy.
-  const faqSchema = faqPageJsonLd([{ q: q.question, a: faqAnswerText(q) }]);
+  const faqSchema = faqPageJsonLd([{ q: q.question, a: faqAnswerText(q, handoff) }]);
 
   return (
     <>
@@ -186,9 +188,9 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
 
         <div className="mt-8 p-4 bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl">
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            {q.handoff.text}{" "}
-            <Link href={q.handoff.href} className="text-[#3A759F] hover:underline font-medium">
-              {q.handoff.label}
+            {handoff.text}{" "}
+            <Link href={handoff.href} className="text-[#3A759F] hover:underline font-medium">
+              {handoff.label}
             </Link>
             .
           </p>

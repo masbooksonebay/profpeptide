@@ -44,6 +44,50 @@ export function pickerLabels(slugs: string[]): Record<string, string> {
   return out;
 }
 
+export interface FaqHandoff {
+  href: string;
+  label: string;
+  text: string;
+}
+
+// The hub handoff every CATEGORY PAGE carries. Byte-identical across all seven before this was
+// derived, which is the definition of a constant that had been copy-pasted.
+const HUB_HANDOFF: FaqHandoff = {
+  href: "/faq",
+  label: "questions hub",
+  text: "For the other common questions about research peptides, see the",
+};
+
+// 🔒 THE HANDOFF RULE. `handoff` on a question is now an OPTIONAL OVERRIDE, not a required field.
+//
+// WHY: a sweep of all 30 spokes found 19 distinct handoff texts for what is mostly one job, and two
+// of those variant clusters were pure drift — the compound->profile label had split into
+// "{Name} profile" (6) and "{Name} research profile" (7), and two injection-prep spokes carried the
+// same sentence with one noun swapped ("site rotation" vs "injection sites"). That is precisely the
+// six-"Back to"-variants pattern the BackLink/NavLink extraction fixed, caught before 60 more
+// compound spokes inherited whichever variant happened to win.
+//
+// WHY NOT PURE DERIVATION: several overrides say something a generic line cannot. "the community
+// convention in context" is the whole point of a BPC-157 handoff (no trial dose exists, so the
+// convention discussion IS the profile's value); "each component's mechanism" is the point of a
+// four-component blend's. Flattening those to one sentence would trade drift for blandness. So:
+// derive the default, keep the override for pages that genuinely have more to say.
+export function faqHandoff(q: FaqQuestion): FaqHandoff {
+  if (q.handoff) return q.handoff;
+  if (q.whereToBuy) {
+    const compound = q.whereToBuy.compoundSlug;
+    const name = compoundDisplayName(compound);
+    return {
+      href: `/peptides/${compound}`,
+      label: `${name} profile`,
+      // Lower-cased in the sentence, proper-cased in the link label — "regarding retatrutide, see
+      // the full Retatrutide profile" is how the locked line reads.
+      text: `For other common questions regarding ${name.toLowerCase()}, see the full`,
+    };
+  }
+  return HUB_HANDOFF;
+}
+
 export interface FaqRelatedLink {
   href: string;
   label: string;
@@ -82,7 +126,7 @@ export function faqRelatedLinks(q: FaqQuestion): FaqRelatedLink[] {
     // The profile, unless the handoff box directly above already points there — two links to the
     // same URL on one page is the redundancy this rule exists to remove.
     const profileHref = `/peptides/${compound}`;
-    if (q.handoff.href !== profileHref) {
+    if (faqHandoff(q).href !== profileHref) {
       links.push({ href: profileHref, label: `${compoundDisplayName(compound)} research profile` });
     }
     return links;

@@ -101,8 +101,15 @@ export interface FaqQuestion {
   lede: string;
   /** The comprehensive answer body. */
   body: FaqBlock[];
-  /** Handoff to the canonical page for depth. */
-  handoff: { href: string; label: string; text: string };
+  /** OPTIONAL override for the "see the full X" handoff at the foot of the answer.
+   *
+   *  Omit it and lib/faq-related.ts DERIVES the right one: a compound spoke gets
+   *  "For other common questions regarding {name}, see the full {Name} profile", a category page
+   *  gets the questions-hub line. Set it only where the page has something a generic line cannot
+   *  say — a destination that is not the compound's profile (the syringe guide, the app), or a
+   *  reason to name what the profile holds ("the community convention in context", where no trial
+   *  dose exists and that discussion IS the value). See the rule on faqHandoff(). */
+  handoff?: { href: string; label: string; text: string };
   /** Manual cross-links, for the GENERAL spokes only (needle size, bac water, the TRT cluster).
    *  Category pages and per-compound spokes DERIVE their Related list instead — see
    *  lib/faq-related.ts — because the useful relation for those two shapes is structural:
@@ -163,7 +170,6 @@ export const faqQuestions: FaqQuestion[] = [
       ]},
       { kind: "p", text: "The third group is the widest and the most uneven. Some have substantial animal literature and no human trials; others have early human data that stopped. What they share is the absence of a regulator's verdict, which is a different thing from a negative one." },
     ],
-    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
   },
   {
     slug: "what-are-peptides-used-for",
@@ -193,7 +199,6 @@ export const faqQuestions: FaqQuestion[] = [
       { kind: "heading", text: "Why the per-compound page is the real answer" },
       { kind: "p", text: "Grouping by research area is useful for orientation and misleading past that point. Two compounds in the same cluster can differ by decades of evidence: within the metabolic group, one has completed Phase 3 trials with published outcomes and another has never been given to a human. The cluster tells you what question was being asked, not what answer came back." },
     ],
-    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
   },
   {
     slug: "how-are-peptides-reconstituted",
@@ -226,7 +231,6 @@ export const faqQuestions: FaqQuestion[] = [
       { kind: "heading", text: "Where the per-compound pages differ" },
       { kind: "p", text: "Vial sizes vary, and the dose points worth tabulating vary with them — a compound with a published trial schedule has meaningful milligram figures to convert, and one without has none. That is why the reference tables live on the individual pages rather than here." },
     ],
-    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
   },
   {
     slug: "how-are-peptides-dosed",
@@ -250,7 +254,6 @@ export const faqQuestions: FaqQuestion[] = [
       { kind: "p", text: "Milligrams and micrograms both appear, and a factor of a thousand separates them: 250 mcg and 0.25 mg are the same amount written two ways. Trial protocols for the engineered incretins are usually stated in milligrams, while figures for the growth-hormone secretagogues are more often quoted in micrograms. Some preclinical figures are expressed per kilogram of body weight instead, which is a different kind of number and does not resolve to a fixed amount without one." },
       { kind: "cta", text: "To convert any milligram figure into syringe units, use the", href: "/calculator", label: "dosage calculator" },
     ],
-    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
   },
   {
     slug: "how-often-are-peptides-dosed",
@@ -274,7 +277,6 @@ export const faqQuestions: FaqQuestion[] = [
       { kind: "p", text: "For most research peptides no completed human trial fixed an interval, and what circulates instead is a convention — a practice that repeats, not a finding. Prof. Peptide reports those conventions and says plainly that they are conventions. Where a half-life has been measured, that measurement is the one piece of evidence a frequency claim can actually be checked against, so the per-compound pages lead with it." },
       { kind: "cta", text: "To convert any schedule's milligram figure into syringe units, use the", href: "/calculator", label: "dosage calculator" },
     ],
-    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
   },
   {
     slug: "what-are-the-side-effects-of-peptides",
@@ -299,7 +301,6 @@ export const faqQuestions: FaqQuestion[] = [
       { kind: "p", text: "Some compounds raise theoretical concerns their evidence base cannot resolve — growth-signalling pathways and angiogenic mechanisms both prompt long-term questions that short studies were never designed to answer. Those pages say the question is open rather than answering it in either direction, because an unresolved question reported as resolved is the more damaging error." },
       { kind: "p", text: "Purity is a separate hazard from pharmacology. With no approval process standing behind a vial, contamination and mislabelling are failure modes that have nothing to do with the molecule itself." },
     ],
-    handoff: { href: "/faq", label: "questions hub", text: "For the other common questions about research peptides, see the" },
   },
   {
     slug: "are-research-peptides-legal",
@@ -483,11 +484,6 @@ export const faqQuestions: FaqQuestion[] = [
         ],
       },
     ],
-    handoff: {
-      href: "/faq",
-      label: "questions hub",
-      text: "For the other common questions about research peptides, see the",
-    },
   },
   {
     slug: "what-size-needle-for-peptides",
@@ -632,7 +628,7 @@ export const faqQuestions: FaqQuestion[] = [
       href: "/guides/syringes-and-injection",
       label: "Insulin Syringes & Injection guide",
       text:
-        "For injection technique, injection sites, unit-to-mcg conversion, and reconstitution, see the full",
+        "For injection technique, site rotation, unit-to-mcg conversion, and reconstitution, see the full",
     },
     related: ["what-size-needle-for-peptides", "how-much-bac-water-for-peptides"],
   },
@@ -804,11 +800,6 @@ export const faqQuestions: FaqQuestion[] = [
           "Reconstituted peptide is stored refrigerated at 2-8 degrees Celsius and protected from light. Retatrutide has no approved product label, so there is no manufacturer-established in-use stability period to cite — the storage practice reported here is general peptide handling, not a figure derived from a retatrutide stability study.",
       },
     ],
-    handoff: {
-      href: "/peptides/retatrutide",
-      label: "Retatrutide profile",
-      text: "For other common questions regarding retatrutide, see the full",
-    },
     whereToBuy: { compoundSlug: "retatrutide" },
   },
   {
@@ -869,11 +860,6 @@ export const faqQuestions: FaqQuestion[] = [
         ],
       },
     ],
-    handoff: {
-      href: "/peptides/retatrutide",
-      label: "Retatrutide profile",
-      text: "For other common questions regarding retatrutide, see the full",
-    },
     whereToBuy: { compoundSlug: "retatrutide" },
   },
   {
@@ -955,11 +941,6 @@ export const faqQuestions: FaqQuestion[] = [
         ],
       },
     ],
-    handoff: {
-      href: "/peptides/retatrutide",
-      label: "Retatrutide profile",
-      text: "For other common questions regarding retatrutide, see the full",
-    },
     whereToBuy: { compoundSlug: "retatrutide" },
   },
   {
@@ -996,11 +977,6 @@ export const faqQuestions: FaqQuestion[] = [
         "Running, not reported: cardiovascular outcomes, sleep apnea, metabolic liver disease.",
       ]},
     ],
-    handoff: {
-      href: "/peptides/retatrutide",
-      label: "Retatrutide profile",
-      text: "For other common questions regarding retatrutide, see the full",
-    },
     whereToBuy: { compoundSlug: "retatrutide" },
   },
   {
@@ -1043,11 +1019,6 @@ export const faqQuestions: FaqQuestion[] = [
       { kind: "p", text: "Every rate above comes from a controlled trial of Lilly\u2019s clinical material, administered at defined doses under supervision, with adverse events collected systematically. A vial sold on the research market is not that material, and the trial safety profile does not transfer to it: identity, purity and actual content are separate questions from pharmacology, and no rate table can speak to them." },
       { kind: "p", text: "The programme is also ongoing. The longest published exposure is 68 weeks, so effects that would only appear over years are outside what any current dataset could have detected." },
     ],
-    handoff: {
-      href: "/peptides/retatrutide",
-      label: "Retatrutide profile",
-      text: "For other common questions regarding retatrutide, see the full",
-    },
     whereToBuy: { compoundSlug: "retatrutide" },
   },
   {
@@ -1125,12 +1096,6 @@ export const faqQuestions: FaqQuestion[] = [
         ],
       },
     ],
-    handoff: {
-      href: "/peptides/tirzepatide",
-      label: "Tirzepatide research profile",
-      text:
-        "For the mechanism, trial results, side effects, sources, and full dosing detail, see the",
-    },
     whereToBuy: { compoundSlug: "tirzepatide" },
   },
   {
@@ -1218,12 +1183,6 @@ export const faqQuestions: FaqQuestion[] = [
         ],
       },
     ],
-    handoff: {
-      href: "/peptides/semaglutide",
-      label: "Semaglutide research profile",
-      text:
-        "For the mechanism, trial results, side effects, sources, and full dosing detail, see the",
-    },
     whereToBuy: { compoundSlug: "semaglutide" },
   },
   {
@@ -2225,7 +2184,20 @@ export const faqQuestions: FaqQuestion[] = [
 
 /** Flatten a question to the plain-text answer used verbatim in the FAQPage schema —
  *  the SAME text the page renders, so schema and visible answer can never diverge. */
-export function faqAnswerText(q: FaqQuestion): string {
+// `handoff` is passed IN rather than derived here, because this module must stay import-free — the
+// search-index and chat-corpus generators transpile+execute it, and the derivation needs the
+// /peptides taxonomy. The page template resolves it via faqHandoff() and passes the result, so the
+// JSON-LD answer and the visible text stay byte-identical where that parity actually matters (the
+// rendered page, which is what a crawler reads). Callers that cannot resolve it — the chat-corpus
+// generator — get the entry's own override or the hub line; the handoff is one trailing navigation
+// sentence, so a generic fallback there costs the corpus nothing.
+export function faqAnswerText(
+  q: FaqQuestion,
+  handoff: { text: string; label: string } = q.handoff ?? {
+    text: "For the other common questions about research peptides, see the",
+    label: "questions hub",
+  }
+): string {
   const parts = [q.lede];
   for (const b of q.body) {
     if (b.kind === "p" || b.kind === "heading") parts.push(b.text);
@@ -2241,7 +2213,7 @@ export function faqAnswerText(q: FaqQuestion): string {
       if (b.note) parts.push(b.note);
     }
   }
-  parts.push(`${q.handoff.text} ${q.handoff.label}.`);
+  parts.push(`${handoff.text} ${handoff.label}.`);
   return parts.join(" ").replace(/\s+/g, " ").trim();
 }
 
