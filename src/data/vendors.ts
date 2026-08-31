@@ -456,6 +456,33 @@ export const vendors: Record<string, Vendor> = {
     facts: { coa: "per-batch", labName: "Vanguard Laboratory, Eagle Analytical Services", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC-UV/VIS, ICP-MS, GC-MS", contaminants: "Heavy metals (ICP-MS), endotoxin (LAL), sterility (USP <71> + ScanRDI), residual solvents (GC-MS), TFA" },
     blockNote: "ISO 17025 lab · batch COAs",
   },
+  // Testing read 2026-08-31 (first-hand recon, this session): Freedom Diagnostics. IRON publishes a
+  // COA library of 20 certificates. Each carries a Search Code, and the code resolves on the LAB's
+  // OWN domain — coas.freedomdiagnosticstesting.com/<Code>.pdf — not only on IRON's site. Verified
+  // end-to-end: IRON2510230085 returns a real PDF whose contents match the file IRON publishes
+  // exactly (Cagrilintide 10MG, lot IR-2510-005, 11.66 mg net, 99.834%). That lab-side
+  // resolvability is the Omega1 standard and it is the reason this vendor clears the gate.
+  // PANEL (what the certificates actually run): identity, purity, net peptide content, appearance,
+  // by HPLC-UV coupled with mass spectrometry. No contaminant panel, so no `contaminants`; Freedom
+  // prints no accreditation on these, so `labAccreditation` stays empty — same shape as alera and
+  // capstone/Accumark.
+  // 🔴 NO `purityStandard`. The certificates report OBSERVED results (99.229–99.834% on the lots
+  // read), and IRON publishes no purity SPEC. A spec is a different claim from a result, and the
+  // runbook's rule is to carry only what the certs show — so this field is deliberately absent.
+  // ⚠️ `coa: "library"`, never "per-batch": 20 published certificates against a far larger catalog.
+  // Vendor claims NOT carried anywhere (cGMP facility, years in operation, endotoxin/LAL testing)
+  // are unsupported by the certificates read and appear on no PP surface, asserted or attributed.
+  // Storefront sits behind an account login wall — no PP copy implies otherwise.
+  "iron-peptides": {
+    name: "IRON Peptides",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    url: "https://ironpeptides.is/?ref=PROFPEPTIDE",
+    detailPage: "/coupons/iron-peptides",
+    blockNote: "Freedom Diagnostics \u00b7 lab-verifiable COAs",
+    facts: { coa: "library", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
+  },
   "integrative-peptides": {
     name: "Integrative Peptides",
     code: "PROFPEPTIDE",

@@ -225,6 +225,7 @@ export const generatedSearchIndex: SearchEntry[] = [
   {"title":"Modern Aminos Discount Code","url":"/coupons/modern-aminos","category":"coupon","description":"Modern Aminos coupon code and promo offer","tags":[]},
   {"title":"NextGen Peptides Discount Code","url":"/coupons/nextgen-peptides","category":"coupon","description":"NextGen Peptides coupon code and promo offer","tags":[]},
   {"title":"Peptidology Discount Code","url":"/coupons/peptidology","category":"coupon","description":"Peptidology coupon code and promo offer","tags":[]},
+  {"title":"IRON Peptides Discount Code","url":"/coupons/iron-peptides","category":"coupon","description":"IRON Peptides coupon code and promo offer","tags":[]},
   {"title":"Integrative Peptides Discount Code","url":"/coupons/integrative-peptides","category":"coupon","description":"Integrative Peptides coupon code and promo offer","tags":[]},
   {"title":"Legendary Peptides Discount Code","url":"/coupons/legendary-peptides","category":"coupon","description":"Legendary Peptides coupon code and promo offer","tags":[]},
   {"title":"Limitless Biotech Discount Code","url":"/coupons/limitless-biotech","category":"coupon","description":"Limitless Biotech coupon code and promo offer","tags":[]},

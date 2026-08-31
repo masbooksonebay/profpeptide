@@ -122,6 +122,9 @@ export const searchAliases: Record<string, string> = {
   "level-up": "level up peptides",
   "mog labs": "moglabs",
   "moglabs bio": "moglabs",
+  // Added 2026-08-31. IRON's domain is ironpeptides.is; "iron" alone is the natural short query.
+  iron: "iron peptides",
+  ironpeptides: "iron peptides",
 };
 
 // Expand a raw query into the set of query strings to search — ADDITIVE, not replacing.

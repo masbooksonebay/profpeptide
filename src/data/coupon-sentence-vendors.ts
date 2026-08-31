@@ -107,4 +107,6 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   "alera-research",
   "level-up-peptides",
   "moglabs",
+  // Added 2026-08-31.
+  "iron-peptides",
 ]);

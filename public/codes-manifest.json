@@ -168,6 +168,13 @@
     "url": "https://ionpeptide.com/?ref=PROFPEPTIDE"
   },
   {
+    "slug": "iron-peptides",
+    "name": "IRON Peptides",
+    "code": "PROFPEPTIDE",
+    "discount": "10% off",
+    "url": "https://ironpeptides.is/?ref=PROFPEPTIDE"
+  },
+  {
     "slug": "la-peptides",
     "name": "LA Peptides",
     "code": "PROFPEPTIDE",

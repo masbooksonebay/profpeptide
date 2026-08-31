@@ -7,12 +7,12 @@
 // own affiliate dashboard), so "verified and working" is what we can honestly claim.
 
 /** ISO date of the last check:vendors run that cleared the floor. */
-export const VENDORS_VERIFIED_ISO = "2026-09-01";
+export const VENDORS_VERIFIED_ISO = "2026-08-31";
 
 /** Human-readable form of {@link VENDORS_VERIFIED_ISO} for SERP-facing copy. */
-export const VENDORS_VERIFIED_DATE = "September 1, 2026";
+export const VENDORS_VERIFIED_DATE = "August 31, 2026";
 
 /** Vendor slugs actually verified (reachable, not DEAD) in that run. A coupon page must
  *  render its "verified" date ONLY if its slug is in this set — a vendor excluded from
  *  the last run (dead link) must not claim a verification it didn't get. */
-export const VENDORS_VERIFIED_SLUGS = ["99-purity-peptides","aero-peptides","alera-research","almighty-peptides","alpha-peptides","ameano-peptides","amino-club","amino-x","amp-peptides","ascension-peptides","athena-peptides","biocollex","biolongevity-labs","biopure-peptides","capstone-peptides","crush-research","ez-peptides","forge-performance-co","glacier-aminos","hydro-research","ignite-peptides","improved-peptides","integrative-peptides","ion-peptide","la-peptides","legendary-peptides","level-up-peptides","licensed-peptides","limitless-biotech","midwest-peptide","mile-high-compounds","modern-aminos","moglabs","nextgen-peptides","nova-labs","nura-peptide","oasis-labs","order-my-peptides","paradigm-peptides","particle-peptides","peptide-giants","peptide-partners","peptides-gg","peptidology","purity-peptides","real-peptides","royal-peptides","science-based-peptides","spartan-peptides","swiss-chems","treasure-coast-peptides","valkyrie-peptides","vital-core-research"];
+export const VENDORS_VERIFIED_SLUGS = ["99-purity-peptides","aero-peptides","alera-research","almighty-peptides","alpha-peptides","ameano-peptides","amino-club","amino-x","amp-peptides","ascension-peptides","athena-peptides","biocollex","biolongevity-labs","biopure-peptides","capstone-peptides","crush-research","ez-peptides","forge-performance-co","glacier-aminos","hydro-research","ignite-peptides","improved-peptides","integrative-peptides","ion-peptide","iron-peptides","la-peptides","legendary-peptides","level-up-peptides","licensed-peptides","limitless-biotech","midwest-peptide","mile-high-compounds","modern-aminos","moglabs","nextgen-peptides","nova-labs","nura-peptide","oasis-labs","order-my-peptides","paradigm-peptides","particle-peptides","peptide-giants","peptide-partners","peptides-gg","peptidology","purity-peptides","real-peptides","royal-peptides","science-based-peptides","spartan-peptides","swiss-chems","treasure-coast-peptides","valkyrie-peptides","vital-core-research"];
