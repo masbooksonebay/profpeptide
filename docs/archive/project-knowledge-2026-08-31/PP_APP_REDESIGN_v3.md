@@ -1,0 +1,117 @@
+# PP App Redesign — Teardown, Design Direction & Build State
+
+**Status:** ACTIVE — design-direction reference AND implementation/build log for the PP app premium redesign.
+**Version:** v3 (June 26, 2026) — adds **§A Implementation State & Locked Build Decisions** (the actual build work: Phase 2a–2c, V4 elevation, B1 [+] sheet, Stage 4 full theming, Research Library A+B redesign, Liquid Glass declined). Adds **§B Supersede notes** (the IA in old §8 and the elevation values in the theme spec are now superseded by what shipped). Carries forward v2's design direction (§1–§9: teardown, PK-curve spec, onboarding, RUO posture, nutrition-skip) **by reference — see PP_APP_REDESIGN_v2 for full text.**
+**Branch:** `feat/app-premium-redesign` @ **`bc50c02`** · **main untouched at `f82f37f`** (push is Mark's trigger).
+**Related:** PP_APP_THEME_SPEC v1 (token contract — elevation values partly superseded, see §B), PP_MASTER (+ addenda), `constants/theme.ts`, `components/Card.tsx`.
+
+---
+
+# §A. IMPLEMENTATION STATE & LOCKED BUILD DECISIONS (this session)
+
+## A0. Execution / verification discipline (LOCKED, every app CC prompt)
+- **HEADLESS ONLY** on every CC prompt: no computer-use / cliclick; CC must not tap/click/move windows or take over the screen. Verify via git, `tsc --noEmit`, `npm test`, `simctl` (openurl to navigate, `io booted screenshot` to capture), and curl only. Live GUI interaction / visual sign-off is **Mark's**. (CC kept seizing the screen via computer-use until this was made standing; also a Code-tab "hide other windows while Claude works" setting can be toggled off.)
+- **Preview-route pattern (LOCKED):** for any "show me options" decision, CC builds a **throwaway** `app/<name>-preview.tsx` route, screenshots the candidates headlessly, then **deletes it**. Used this session for the [+] sheet (A/B then B1/B2) and the glass tab bar. Never ship a preview route.
+- **Recurring CC commit quirk (benign):** when a path is `git rm`'d, a follow-up `git add` of that path aborts before staging other files, so the first commit captures only the deletion. CC has self-caught + amended every time (sheet build, glass cleanup). Not a problem — just expect the amend.
+- **Branch hygiene:** all redesign work on `feat/app-premium-redesign`; **main is never pushed by Claude/CC** — Mark triggers the push. Per-stage logical commits, explicit-path staging, never `git add -A`.
+
+## A1. Elevation — FINAL (V4) — LOCKED
+Long tuning arc (V1→V4) resolved to the **"Pep-AI float"**:
+- Light page background **`#f7f8fa`** (near-white, intentionally *not* pure white so white cards lift).
+- Light card = **two-layer shadow**: outer wide penumbra `shadowOffset{0,16}/radius 40/opacity 0.12` + inner tight contact `{0,2}/6/0.10`, `shadowColor #0f172a`, `elevation 8`.
+- Implemented via a **reusable `components/Card.tsx`** (nested Views: outer penumbra + inner contact in LIGHT; **lightness + border** in DARK — dark cardOuter/cardInner are no-ops). `theme.ts` has separate `lightElevation` / `darkElevation` objects (clean split).
+- **STANDING RULE: every white / card-like surface uses `<Card>`.**
+- **Confirmed learnings:** float comes from a SOFT/DIFFUSE two-layer shadow on a NEAR-WHITE page, *not* page-darkness contrast. The earlier "blinding" complaint was screen-brightness (dark chat → light app), not the design.
+- **Stage 4 shadow re-tune (modals/callouts):** light `callout` `0 16px 40px @0.18 → 0 12px 36px @0.12`; `modal` `→ 0 16px 40px @0.14` — soft float matching the cards (the old heavy `0.18` values are gone).
+
+## A2. Information architecture — FINAL — LOCKED (supersedes old §8)
+**Tab bar: Home · Track · [+] · Vendors · Profile. Launches on Home.**
+- **Home** = glance/read dashboard (PK-curve area + **read-only** "Today" + nav cards incl. the Research Library card + the "Results" stub). No Taken/Skip on Home.
+- **Track** = do/edit (schedule / protocol builder + dose log **with Taken/Skip**).
+- **Center [+]** = an **action button, not a route** → opens the action sheet (below).
+- **Calculator** removed from the tab bar; reachable via [+]; its **History segment** (reconstitution log) intact.
+- **Learn** removed from the tab bar → surfaced as the **"Research Library" card on Home** → the redesigned Research Library screen.
+- Phase-2c Stage 1 skeleton **reviewed + passed** (7-point check: launches Home; Track has Taken/Skip; Home Today read-only; [+] reaches all 3 flows; Calculator+History via [+]; BPC-157 data intact across the Home/Track split; tab bar correct).
+
+## A3. [+] action sheet — FINAL = **B1 standalone tiles** — LOCKED
+- No "Quick Actions" header (removed).
+- Three actions as **standalone `<Card>` tiles** (no wrapping container), each = tinted accent icon-chip + bold label, gaps between, floating **above the tab bar** over a dimmed backdrop (tap-scrim dismiss), clearing the home indicator (`TAB_BAR_HEIGHT = 88` shared const).
+- Actions + routes: **Log Dose** (`checkmark-circle-outline`) → `/track`; **New Protocol** (`add-circle-outline`) → `/track?action=new-protocol`; **Calculator** (`calculator-outline`) → `/calculator`.
+- Themed light + dark. (Chose B1 over B2-in-a-container after a rendered compare — the container muted the float.)
+
+## A4. Research Library redesign — FINAL — LOCKED (Stages A + B done)
+The former Learn screen (`app/(tabs)/learn.tsx`), fully rebuilt and theme-migrated:
+- **One system:** the old "Browse by Category" buttons AND the separate compound list were **merged into a single accordion.** Each category = a `<Card>` header (icon + name + **count pill** + chevron), collapsed by default; expands to peptide rows (name + one-line descriptor + chevron) nested in the same card; independent multi-open.
+- **Search** (pinned top) filters the accordion live + **auto-expands** categories with matches; empty → all collapsed; matches name + descriptor.
+- **Ordering (LOCKED):** **categories follow profpeptide.com `/peptides` taxonomy order** (sourced from the app's own `categoryIcons` key order, which mirrors the site's `?category=` URLs — NOT alphabetized): Metabolic & Weight Loss → Recovery & Tissue Repair → Performance & Energy → Growth Hormone → Cognitive & Nootropic → Skin Health & Anti-Aging → Gut Health & Immunity → Sleep & Recovery → Longevity → Bioregulators → Sexual Health. **Peptides within each category = alphabetical (A–Z).**
+- **Peptide tap → summary popup** (themed `<Card>` modal, light+dark, tap-scrim dismiss): name + 2–3 sentence summary + "Learn more on profpeptide.com" → `/peptides/<slug>`.
+- **Footer:** quiet "Visit profpeptide.com" text link + 3 social icons (moved from mid-screen; no loud CTA).
+- **Supplements removed** (in-app only — website supplement pages + peptide deep-links untouched). 48 peptide entries intact.
+- **Vocab (LOCKED):** screen = **"Research Library"**; list label = **"Compounds"**.
+
+### A4a. Peptide popup summary sourcing (LOCKED — strict order, never invent/embellish)
+1. **PRIMARY:** the app's EXISTING per-peptide data (`desc` + `benefits` fields) — already PP-verified, RUO-framed. *(All 48 were composed from this alone this session — 0 enriched, 0 freshly researched.)*
+2. **ENRICH where thin:** pull from that peptide's profpeptide.com `/peptides/<slug>` page (PP's own verified content) — reuse PP framing/facts, don't freelance.
+3. **FALLBACK:** brief fresh research, RUO-safe, no embellishment.
+- Any enrichment/research must be **listed/auditable** per peptide. Summaries live in the **data layer** (slug-keyed `SUMMARIES` map / `summary` field), not inline JSX. Row keeps the one-liner; popup shows the fuller version.
+
+## A5. Liquid Glass (iOS 26) — DECLINED this cycle, queued next — LOCKED
+- The floating frosted pill tab bar (Yahoo Finance style) is Apple's iOS 26 **Liquid Glass** material.
+- **`expo-blur` approximation evaluated** (throwaway preview, light+dark) and **declined**: it's a *static frost* (no real lensing/refraction over scrolling content), renders flatter on sim, and making it real = ripping out the expo-router `tabBar` + app-wide safe-area/scroll-clearance work (high blast radius mid-submission) + a likely redo once Expo ships native iOS 26 support. Preview deleted, `expo-blur` uninstalled (clean).
+- **DECISION:** pursue **real** Liquid Glass **next cycle, once Expo/RN ships native iOS 26 support** — at which point a floating glass tab bar pairs naturally with the V4 floating-card language. Don't ship the fake.
+
+## A6. App pre-submission queue (LOCKED — ONE App Store review cycle)
+1. ✅ Phase 2a/2b/2c · ✅ Elevation V4 · ✅ [+] B1 sheet · ✅ **Stage 4 (full legacy-surface theming)** · ✅ **Research Library A + B**
+2. **Haptics** — `expo-haptics` (first-party), central `lib/haptics.ts`: Taken = notification **Success**, Skip = impact **Light**, toggles = **selection**, primary CTAs = impact **Medium**, destructive = **Warning/Error**; **none** on scroll/tabs/scrub; respect reduce-motion.
+3. **AI chat** — biggest build, **highest App-Review / RUO-rejection risk**; must hold the "no dosing / no medical advice" posture (Pep AI's "Pep Bot" RUO gate copy in v2 §6 is the model).
+4. **Submit.**
+- **OPEN DECISION — Apple Health / Results:** Mark wants weight + body-fat % tracking. Framed as the **data source for the existing "Results" stub** (not a separate feature); manual entry as the Android/no-Health fallback. Effort = moderate (config-plugin + dev/prod build — HealthKit not in Expo Go; `@kingstinct/react-native-health` or similar; HealthKit entitlement + usage strings + privacy flow + extra App-Review surface; weight/body-fat are the *easy* HealthKit types). **Claude's lean: build as the Results feature NEXT cycle, not this one.** Awaiting Mark's this-cycle-or-next call.
+
+## A7. Small follow-ups (non-blocking, logged)
+- **Cold-deep-link guard:** cold-launching directly to `/track?action=new-protocol` as the very first route throws "navigate before mounting" (`router.setParams` before Root Layout mounts). The real [+]→New Protocol path reaches Track warm and works. Guard the param effect until nav is ready. Pre-existing, out of Stage 4 scope.
+- **`www` canonical:** the Research Library popup "Learn more" links use `https://www.profpeptide.com/...` (with `www`); most site work this session used the apex `profpeptide.com`. Confirm `www`→apex redirect (or both serve) so the link lands.
+- **A–Z blend grouping (cosmetic):** strict A–Z interleaves CJC variants with the CJC+Ipamorelin blend. Fine as-is; future "group blends" tweak if it ever bugs.
+
+## A8. Phase / commit history (this redesign, branch `feat/app-premium-redesign`)
+| Phase | What | Key SHAs |
+|---|---|---|
+| 2a | AI chat-bubble icon, Sourcing→Vendors rename, guarded dev-seed History, icon-options (all kept) | `c10d40a` `67dcc92` `888e1ea` `5acc681` |
+| 2b | Token migration: chrome + Track body; shadow-vs-lightness split | `11f1115` `e39a2d0` |
+| Elev | V3 Card adoption → **V4 lock** | `15b833e` `c33f953` `bd4fb36` `752b8e5` |
+| 2c S1 | IA restructure (Home/Track/[+]/Vendors/Profile) — reviewed/passed | `72decfd` |
+| 2c [+] | B1 tile sheet (real) | `29718ca` |
+| 2c S2 | Learn→Home Research Library card + Supplements removal | `d5cc023` `4eecee0` |
+| RL A | Research Library rebuild + theme migration (accordion/search/footer) | `15f3808` |
+| Glass | preview built `a22072f` → declined → cleaned up `a7fd3bb` | `a22072f` `a7fd3bb` |
+| Stage 4 | All legacy surfaces → tokens (Track modals / Calculator / ReconHistory / Vendors); shadow re-tune; legacy palette retired | `e30205f` `822926c` `f523967` |
+| RL B | Peptide summary popup + category/peptide ordering | `bc50c02` |
+
+**Current THEMED surfaces (light+dark correct):** Home, Track body, Profile, Research Library, [+] tile sheet, chrome, Track modals (New Protocol + detail), Calculator, ReconstitutionHistory, Vendors. **Legacy palette fully retired** (zero refs app-wide; `colors`/`spacing`/`borderRadius` exports removed).
+
+---
+
+# §B. SUPERSEDE NOTES (what shipped vs. the June-23 direction docs)
+- **IA:** v2 §8 described the pre-merge 5-tab (`Calculator·Log·Schedule·Learn·Discounts`) and Pep AI's reference structure. **Superseded by §A2:** the shipped IA is **Home · Track · [+] · Vendors · Profile**.
+- **Elevation values:** PP_APP_THEME_SPEC v1 §3 proposed a 3-rung shadow ladder (`--shadow-md 0 4px 20px @0.08`, etc.) and `--bg #f5f7fa`. **Superseded by §A1:** shipped is `--bg #f7f8fa` + the **V4 two-layer** card shadow via `<Card>`, with modal/callout softened to `@0.12`/`@0.14` in Stage 4. The theme spec's *principles* (two hand-tuned themes, shadow-vs-lightness split, cyan anchor, AA discipline) all hold; only the specific shadow/`--bg` numbers are updated by what was tuned in-app.
+- **Everything else in v2 / theme-spec v1 stands** — esp. the **PK Curve Component Spec (v2 §9)** and **token contract** — and remains the direction for the still-unbuilt PK curve + the AI chat RUO posture.
+
+---
+
+# §C. Design direction — carried forward UNCHANGED from v2 (see PP_APP_REDESIGN_v2 for full text)
+- **§1–§2** Teardown (Shotsy/Pep AI/PeptidePal) + the light+dark-both-hand-tuned decision (Path C, cyan `#0891b2` anchor, no auto-invert; dark = elevation-by-lightness, light = elevation-by-shadow).
+- **§3** Half-life / PK-curve architecture (opt-in per-compound, Off by default; per-value PubMed/PMC citations; PeptideProfile single source feeding app + site).
+- **§4** Onboarding cut to 3–4 screens (consent/disclaimer → optional creator code → notifications); steal Pep AI's per-screen craft, not its 11-screen length; creator-code-at-onboarding adopted.
+- **§5** Nutrition / meal-tracking **SKIP** (confirmed).
+- **§6** RUO posture confirmed shippable (Pep AI ships full tracker + PK curve + calculator on research-only framing; opt-in half-life is the mechanism).
+- **§9** **PK Curve Component Spec** (the hero component CC builds first): solid-past / dotted-future split at "Now"; hollow scrub ring + value/timestamp callout; distinct dose-marker dot; compound + timeframe dropdowns; ceiling label + dashed gridlines; gradient fill; per-mode rendering. **Still the spec for when the curve gets built.**
+
+---
+
+## 📅 Changelog
+**June 26, 2026 (v3):** Added §A (implementation state + locked build decisions: HEADLESS-only + preview-route discipline; **V4 elevation final** via reusable `<Card>`; **IA final** Home·Track·[+]·Vendors·Profile; **[+] = B1 standalone tiles**; **Stage 4** full legacy-surface theming + shadow re-tune + legacy-palette retirement; **Research Library A+B** redesign incl. accordion, search, site-ordered categories + A–Z peptides, summary popup with locked sourcing hierarchy, Supplements removed; **Liquid Glass declined this cycle, queued next**; pre-submission queue haptics→AI→submit; Apple Health/Results open decision; small follow-ups). Added §B supersede notes (IA §8, theme-spec elevation values). §C carries v2 design direction forward by reference. Branch `feat/app-premium-redesign` @ `bc50c02`; main untouched `f82f37f`.
+**June 23, 2026 (v2):** PK Curve Component Spec from live capture; full teardown confirmations. *(See PP_APP_REDESIGN_v2.)*
+**June 23, 2026 (v1):** Initial teardown + design-direction locks.
+
+---
+
+*Design direction + build log for the PP premium redesign. RULE #0 governs. CC owns build; Claude instructs (HEADLESS only). Branch `feat/app-premium-redesign` @ `bc50c02`, main untouched. Next build: haptics → AI chat → submit; Apple Health/Results open.*
