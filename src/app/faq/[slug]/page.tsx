@@ -10,10 +10,12 @@ import { faqQuestions, faqQuestionBySlug, faqAnswerText } from "@/data/faqQuesti
 import { faqRelatedLinks, faqHandoff } from "@/lib/faq-related";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
 
-// Standing rule (Mark, 2026-08-25): compound FAQ pages end with a curated "Where to Buy" trio,
-// same order on every page. Pinned per-render so the profile pages (which derive their own set)
-// are untouched. Codes/rates/gating flow from vendors.ts through the shared component.
-const WHERE_TO_BUY_TRIO = ["amino-club", "capstone-peptides", "peptide-partners"];
+// The "Where to Buy" set is DERIVED, not curated (Mark, 2026-08-30). It was a hardcoded trio
+// — amino-club / capstone-peptides / peptide-partners on every compound FAQ page regardless of
+// whether they stocked the compound. Two problems with that: a card for a vendor that does not
+// sell the peptide is a broken click, and an identical block on every page is exactly the shape
+// Google discounts. Now it uses the same priority-first, stock-gated selection the profiles use,
+// so the set varies by compound for a real reason. Codes/rates/gating still flow from vendors.ts.
 
 export function generateStaticParams() {
   return faqQuestions.map((q) => ({ slug: q.slug }));
@@ -201,7 +203,6 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
             <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Where to Buy</h2>
             <VendorHighlightBlock
               compoundSlug={q.whereToBuy.compoundSlug}
-              pinSlugs={WHERE_TO_BUY_TRIO}
               from="faq-dosing"
             />
           </div>

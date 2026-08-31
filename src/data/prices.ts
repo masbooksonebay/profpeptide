@@ -3,6 +3,7 @@ import { generatedPriceEntries, GENERATED_PRICES_UPDATED, generatedVendorNames }
 import { categoryOrder, libraryCategoryOf, hasProfile } from "./peptideCategories";
 import pricesIndex from "./prices.index.json";
 import { LISTED, PROVEN } from "./attribution";
+import { eligiblePriorityVendors } from "./vendor-priority";
 import { generatedBlendEntries } from "./prices.blends.generated";
 import blendsIndex from "./blends.index.json";
 
@@ -325,6 +326,48 @@ export function compoundVendorCount(compoundSlug: string): number {
  * combos, which the per-compound grid doesn't track): the caller then falls back to any
  * hand-curated highlights, and blends without curation render nothing.
  */
+/**
+ * The vendor cards a profile renders, in order:
+ *   1. PRIORITY vendors that HAVE A PRICE ROW for this compound — the placement lever, gated on
+ *      verified stock so a card is never a broken click (see data/vendor-priority.ts).
+ *   2. Remaining slots filled from the ordinary derivation (proven → editorsPick → bestDeal → alpha),
+ *      excluding anything already placed.
+ *
+ * WHY THE TOP-UP: 26 of 64 profiles have ZERO priority coverage — Capstone's catalog is small and
+ * four vendors cannot span the roster. Rendering an empty block on those would drop the vendor
+ * section from 40% of the library, and every one of them still has vendors that demonstrably stock
+ * the compound. Those profiles become the earned-placement surface for under-distributed vendors,
+ * which is the same effect the placement work is chasing — arrived at by stock rather than by pin.
+ */
+export function highlightVendorsFor(compoundSlug: string, slots = 4): string[] {
+  // BOTH price surfaces. Single-compound rows live in priceEntries; blends price separately on
+  // blendRows, and a blend profile (glow, klow, wolverine-stack, tesamorelin-ipamorelin) has no
+  // single rows at all — reading only the first surface made every blend fall through to the
+  // hand-curated fallback, which is precisely the un-verified placement this system removes.
+  // Arrays, not Sets: tsconfig has no `target`, so it defaults to ES5 and spreading/iterating a
+  // Set is a compile error (TS2802) without downlevelIteration. Same constraint the chat
+  // retrieval scorer hit.
+  const stockingArr = compoundRows(compoundSlug)
+    .map((r) => r.entry.vendor)
+    .concat(blendRows(compoundSlug).map((r) => r.vendor));
+  const stocks = (v: string) => stockingArr.indexOf(v) !== -1;
+  const priority = eligiblePriorityVendors().filter((v) => stocks(v) && LISTED.has(v));
+  if (priority.length >= slots) return priority.slice(0, slots);
+  const rest = deriveHighlightVendors(compoundSlug, slots + priority.length).filter(
+    (v) => !priority.includes(v),
+  );
+  // Blend profiles: derivation reads single rows only, so top up from the blend surface too,
+  // keeping the same LISTED + not-retired gate.
+  const blendRest = blendRows(compoundSlug)
+    .map((r) => r.vendor)
+    .filter(
+      (v, i, a) =>
+        a.indexOf(v) === i && LISTED.has(v) && !priority.includes(v) && !rest.includes(v),
+    )
+    .sort();
+  return [...priority, ...rest, ...blendRest].slice(0, slots);
+}
+
 export function deriveHighlightVendors(compoundSlug: string, limit = 3): string[] {
   const slugs = Array.from(new Set(compoundRows(compoundSlug).map((r) => r.entry.vendor))).filter(
     (s) => LISTED.has(s),

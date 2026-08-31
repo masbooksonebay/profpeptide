@@ -32,46 +32,18 @@
 // profiles," not as "taking 12 from Glacier" — but it was both. Before adding any pin, check the
 // derived top-3 it displaces: every pin on a compound a PROVEN vendor would have won is a silent
 // −1 to that vendor's profile link-equity.
-export const VENDOR_PINS: Record<string, string[]> = {
-  // ss-31 uses a DIFFERENT trio ON PURPOSE — this is not an inconsistency. Amino Club
-  // has NO ss-31 price row, so the standard { nura, amino-club, peptide-partners } set
-  // can't be honored here. BioCollex (PROVEN, and carries ss-31) takes Amino Club's
-  // slot; Peptide Partners is retained — that fills the trio, so Ascension is not pinned
-  // here. (Ascension's 50% PROFPEPTIDE rate is VERIFIED — Mark cart-tested it at checkout
-  // multiple times; see scripts/price-pull/README.md. The earlier "flagged unverified in the
-  // rate audit" note here was WRONG and is removed.) All three below carry an ss-31 row.
-  "ss-31": ["nura-peptide", "peptide-partners", "biocollex"],
-  // ── CAPSTONE SWAP 2026-08-18 ──────────────────────────────────────────────────
-  // Once Capstone's price rows landed, the third pin slot moves from Peptide Partners to Capstone on
-  // the 18 profiles Capstone STOCKS -> { nura-peptide, capstone-peptides, amino-club }. That is 11
-  // single swaps + glow + wolverine-stack (2 blends) = 13 slots taken from peptide-partners, plus 5
-  // NEW pins (epitalon, melanotan-ii, selank, semax, thymosin-alpha-1) that were previously derived.
-  // peptide-partners keeps its coupon page, Professor's-Picks membership, and /vendors — only the
-  // profile block slot moves. cagrisema is deliberately NOT pinned: nura and amino-club carry no
-  // cagrisema row (Capstone is its only vendor), so no valid trio exists — it stays derived. kpv,
-  // klow and ss-31 are unchanged (Capstone doesn't stock them). Every vendor in each set below
-  // carries a price row for that compound (single or blend), so check:vendor-pins holds.
-  //   Historical (pre-swap, preserved in git): the Nura rollout added these 2026-08-13; cagrilintide
-  //   was excluded because Nura carries it only inside its GLP-3R/CAG blend (no standalone row).
-  tesamorelin: ["nura-peptide", "capstone-peptides", "amino-club"],
-  "nad-plus": ["nura-peptide", "capstone-peptides", "amino-club"],
-  "mots-c": ["nura-peptide", "capstone-peptides", "amino-club"],
-  kpv: ["nura-peptide", "amino-club", "peptide-partners"],
-  sermorelin: ["nura-peptide", "capstone-peptides", "amino-club"],
-  "pt-141": ["nura-peptide", "capstone-peptides", "amino-club"],
-  glow: ["nura-peptide", "capstone-peptides", "amino-club"],
-  klow: ["nura-peptide", "amino-club", "peptide-partners"],
-  "wolverine-stack": ["nura-peptide", "capstone-peptides", "amino-club"],
-  retatrutide: ["nura-peptide", "capstone-peptides", "amino-club"],
-  tirzepatide: ["nura-peptide", "capstone-peptides", "amino-club"],
-  semaglutide: ["nura-peptide", "capstone-peptides", "amino-club"],
-  ipamorelin: ["nura-peptide", "capstone-peptides", "amino-club"],
-  "bpc-157": ["nura-peptide", "capstone-peptides", "amino-club"],
-  "tb-500": ["nura-peptide", "capstone-peptides", "amino-club"],
-  // 5 new pins — Capstone provides the third proven slot on profiles that were deriving before:
-  epitalon: ["nura-peptide", "capstone-peptides", "amino-club"],
-  "melanotan-ii": ["nura-peptide", "capstone-peptides", "amino-club"],
-  selank: ["nura-peptide", "capstone-peptides", "amino-club"],
-  semax: ["nura-peptide", "capstone-peptides", "amino-club"],
-  "thymosin-alpha-1": ["nura-peptide", "capstone-peptides", "amino-club"],
-};
+// ── SUPERSEDED 2026-08-30 ──────────────────────────────────────────────────────────────────────
+// The pin map is now EMPTY. Profile vendor blocks are selected by data/vendor-priority.ts —
+// priority vendors first, gated on a real price row, remaining slots derived. That covers what the
+// pins were doing (placing chosen vendors) while making the "does it stock this" check structural
+// instead of a guard catching a stale hand-edit after the fact.
+//
+// Nura Peptide held 20 of these 21 pins and was removed entirely: it is not converting. Per the
+// ⚠️ note above, those pins were never additive — each Nura slot was taken from whoever derivation
+// would have shown (Glacier alone lost 12 profiles to that rollout), so removing them returns that
+// equity rather than destroying it.
+//
+// The MECHANISM is deliberately kept, not deleted: an entry here still overrides selection, and
+// check:vendor-pins still enforces that every pinned vendor is LISTED and carries a price row for
+// the compound. That is the escape hatch for a future editorial override — it is simply unused.
+export const VENDOR_PINS: Record<string, string[]> = {};

@@ -5,7 +5,7 @@ import { vendors } from "@/data/vendors";
 import { CopyCode } from "@/components/CopyCode";
 import { RevealCodeBox } from "@/components/RevealCodeBox";
 import { REVEAL_GATE_VENDORS } from "@/data/reveal-gate-vendors";
-import { compoundVendorCount, deriveHighlightVendors, isBlendSlug, blendVendorCount } from "@/data/prices";
+import { compoundVendorCount, highlightVendorsFor, isBlendSlug, blendVendorCount } from "@/data/prices";
 import { LISTED } from "@/data/attribution";
 import { VENDOR_PINS } from "@/data/vendor-pins";
 import NavLink from "@/components/NavLink";
@@ -57,7 +57,10 @@ export default function VendorHighlightBlock({ highlights, compoundSlug, from = 
   //      LISTED so a cut vendor can never render.
   // No invented pairings: a vendor appears only via a pin+row, a price row, or a curated entry.
   const pinned = pinSlugs ?? (compoundSlug ? VENDOR_PINS[compoundSlug] : undefined);
-  const derived = compoundSlug && !pinned ? deriveHighlightVendors(compoundSlug) : [];
+  // PRIORITY-FIRST, STOCK-GATED (data/vendor-priority.ts): the four priority vendors fill the
+  // block wherever they have a price row for this compound, remaining slots go to other vendors
+  // that demonstrably stock it. Replaces the old flat derivation AND the Nura pin rollout.
+  const derived = compoundSlug && !pinned ? highlightVendorsFor(compoundSlug) : [];
   // Card note: the vendor's registry `blockNote` is the single source (so a note can't drift or go
   // missing per-profile the way the hardcoded `highlights` notes did); the per-profile `highlights`
   // note is only a fallback for vendors that carry no blockNote yet.
