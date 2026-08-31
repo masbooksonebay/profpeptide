@@ -117,7 +117,23 @@ export default function VendorHighlightBlock({ highlights, compoundSlug, from = 
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {/* GRID — MAX 2 COLUMNS (was md:grid-cols-3).
+          Card counts are matrix-derived and vary per page; the distribution is 4 on 36 profiles,
+          3 on 8, 2 on 5, 1 on 1. At 3-across a 4-card set stranded its last card alone on row two,
+          which is the common case. Two columns give 4 -> a clean 2x2, and every card is wider.
+            · 4 -> 2x2.
+            · 3 -> 2 + 1. The third card keeps NORMAL (half) width in the first column rather than
+              stretching across the row: uniform card width across the whole system matters more
+              than filling the trailing gap, and a stretched card reads as a different component.
+            · 2 -> side by side, one row.
+            · 1 -> constrained below (a lone card must not span the full container).
+          Mobile is unchanged: grid-cols-1 until the md breakpoint, exactly as before. */}
+      <div
+        className={
+          "grid grid-cols-1 gap-4 " +
+          (selected.length === 1 ? "md:max-w-sm" : "md:grid-cols-2")
+        }
+      >
         {selected.map((h) => {
           const v = vendors[h.slug];
           if (!v) return null;

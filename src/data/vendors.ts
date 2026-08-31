@@ -210,6 +210,9 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ascensionpeptides.com/ref/profpeptide/",
     detailPage: "/coupons/ascension-peptides",
+    // blockNote sourced 2026-09-01 from this vendor's own /coupons/ascension-peptides page:
+    //   "Ascension states a 99%+ purity standard for its catalog, and every COA is downloadable"
+    blockNote: "Public COAs \u00b7 vendor-stated 99%+",
     facts: { coa: "per-batch", purityStandard: "99%+", labName: "MZ BioLabs", testMethods: "HPLC-UV, HPLC-MS" },
   },
   "biolongevity-labs": {
@@ -246,6 +249,9 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://biocollexresearch.com/?ref=profpeptidehq",
     detailPage: "/coupons/biocollex",
+    // blockNote sourced 2026-09-01 from this vendor's own /coupons/biocollex page:
+    //   "All products are independently tested to a 99% purity standard by Freedom Diagnostics"
+    blockNote: "Freedom Diagnostics \u00b7 99% purity",
     facts: { coa: "per-batch", purityStandard: "99%", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
   },
   // Onboarded Aug 2026. WooCommerce; catalog + per-vial prices public (no account gate). COAs are
@@ -286,6 +292,9 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ezpeptides.com/?ref=nldbbgvs",
     detailPage: "/coupons/ez-peptides",
+    // blockNote sourced 2026-09-01 from this vendor's own /coupons/ez-peptides page:
+    //   "Every EZ Peptides batch is third-party tested by Janoshik, an independent analytical laboratory"
+    blockNote: "Janoshik-tested \u00b7 COA per batch",
     facts: { coa: "per-batch", labName: "Janoshik", testMethods: "HPLC, LC-MS" },
   },
   "fusion-peptide": {
@@ -345,6 +354,9 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ignitepeptides.com/ref/profpeptide/",
     detailPage: "/coupons/ignite-peptides",
+    // blockNote sourced 2026-09-01 from this vendor's own /coupons/ignite-peptides page:
+    //   "The published Certificates of Analysis are issued by two independent labs: Janoshik"
+    blockNote: "Two independent labs \u00b7 per-product COAs",
     facts: { coa: "per-product", purityStandard: "99%+", labName: "Janoshik, Freedom Diagnostics", testMethods: "HPLC, LC-MS" },
   },
   // Onboarded 2026-08 (GoAffPro; PROFPEPTIDE bound, 15% verified in-cart — 20% is the commission,
@@ -544,6 +556,9 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://myoasislabs.com/?sld=profpeptide",
     detailPage: "/coupons/oasis-labs",
+    // blockNote sourced 2026-09-01 from this vendor's own /coupons/oasis-labs page:
+    //   "Recent batches are tested by Bioviridian \u2014 identity by MALDI-MS, purity by RP-HPLC (214 nm)"
+    blockNote: "Bioviridian-tested \u00b7 verifiable COAs",
     facts: { coa: "per-batch", purityStandard: "99%", labName: "Bioviridian, BioRegen", testMethods: "RP-HPLC, MALDI-MS, LC-MS", coldChain: true },
   },
   // Restored 2026-08 after Particle issued a working code. Prices are in EUR — verified at
@@ -573,6 +588,9 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptide.partners/ref/48/",
     detailPage: "/coupons/peptide-partners",
+    // blockNote sourced 2026-09-01 from this vendor's own /coupons/peptide-partners page:
+    //   "two independent labs that currently run in parallel, TrustPointe Analytics (Dorr, MI) and Kovera Labs"
+    blockNote: "TrustPointe + Kovera \u00b7 endotoxin & sterility",
     facts: { coa: "per-batch", purityStandard: "99%+", labName: "TrustPointe, Kovera, BioRegen", testMethods: "RP-HPLC, LC-MS, ICP, USP <85>", contaminants: "Heavy metals (ICP), endotoxin (USP <85>), sterility (PCR)" },
     editorsPick: true,
   },
@@ -717,6 +735,9 @@ export const vendors: Record<string, Vendor> = {
     // only, both HPLC-UV/VIS: chromatographic purity (99.19–99.66% observed) + quantity. NOT identity/MS,
     // endotoxin, heavy-metals, sterility, or microbial — do not imply them. Certs self-limit (Vanguard did
     // not observe sampling, cannot confirm authenticity/lot representativeness). All 3 dated 2025.
+    // blockNote sourced 2026-09-01 from this vendor's own /coupons/vital-core-research page:
+    //   "issued by Vanguard Laboratory of Olympia, Washington \u2014 an ISO/IEC 17025:2017 accredited laboratory"
+    blockNote: "Vanguard Labs \u00b7 ISO 17025 accredited",
     facts: { coa: "per-product", labName: "Vanguard Laboratory", labAccreditation: "ISO/IEC 17025:2017 (A2LA #6377.01.01)", testMethods: "HPLC-UV/VIS" },
   },
   // Brand is "NOVA Labs"; storefront domain is nova-biolabs.com — both intentional, do NOT

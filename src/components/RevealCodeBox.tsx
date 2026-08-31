@@ -20,7 +20,7 @@ export function RevealCodeBox({ slug, className = "" }: { slug: string; classNam
       <RevealCode
         slug={slug}
         from="reveal-modal"
-        triggerClassName="w-full text-center rounded-lg border-2 border-dashed border-[#3A759F]/50 dark:border-[#3A759F]/60 bg-white dark:bg-[#0f172a] py-4 text-base font-semibold text-[#3A759F] hover:bg-[#3A759F]/5 dark:hover:bg-[#3A759F]/10 transition-colors"
+        triggerClassName="w-full text-center rounded-lg border-2 border-dashed border-[#3A759F]/50 dark:border-[#3A759F]/60 bg-white dark:bg-[#0f172a] px-4 py-5 min-h-[3.5rem] flex items-center justify-center text-base font-semibold text-[#3A759F] hover:bg-[#3A759F]/5 dark:hover:bg-[#3A759F]/10 transition-colors"
       >
         Reveal discount code
       </RevealCode>
