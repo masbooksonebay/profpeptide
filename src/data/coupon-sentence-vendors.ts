@@ -103,4 +103,8 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // Added 2026-08-27 as they shipped (coupon-only GoAffPro builds).
   "order-my-peptides",
   "athena-peptides",
+  // Added 2026-08-30 (coupon-only GoAffPro builds).
+  "alera-research",
+  "level-up-peptides",
+  "moglabs",
 ]);

@@ -14,6 +14,13 @@
     "url": "https://aeropeptides.com/?ref=PROF15"
   },
   {
+    "slug": "alera-research",
+    "name": "Alera Research",
+    "code": "PROFPEPTIDE",
+    "discount": "10% off",
+    "url": "https://www.aleraresearch.com/?ref=PROFPEPTIDE"
+  },
+  {
     "slug": "almighty-peptides",
     "name": "Almighty Peptides",
     "code": "PROFPEPTIDE",
@@ -175,6 +182,13 @@
     "url": "https://www.legendarypeptides.com/?affiliate=PROFPEPTIDE"
   },
   {
+    "slug": "level-up-peptides",
+    "name": "Level Up Peptides",
+    "code": "PROFPEPTIDE",
+    "discount": "15% off",
+    "url": "https://level-up-peptides.com/?ref=PROFPEPTIDE"
+  },
+  {
     "slug": "licensed-peptides",
     "name": "Licensed Peptides",
     "code": "PROFPEPTIDE",
@@ -208,6 +222,13 @@
     "code": "PROFPEPTIDE",
     "discount": "10% off",
     "url": "https://modernaminos.com/?ref=profpeptide"
+  },
+  {
+    "slug": "moglabs",
+    "name": "Moglabs",
+    "code": "PROFPEPTIDE",
+    "discount": "10% off",
+    "url": "https://moglabs.bio/?ref=profpeptide"
   },
   {
     "slug": "nextgen-peptides",

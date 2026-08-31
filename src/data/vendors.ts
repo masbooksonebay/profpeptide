@@ -82,6 +82,25 @@ export const vendors: Record<string, Vendor> = {
     // the ISO claim rests on an UNNAMED external lab we haven't verified — no labAccreditation here.
     blockNote: "≥98% purity · COAs on request",
   },
+  // Testing read 2026-08-30: Freedom Diagnostics. Search codes from Alera's own certificates
+  // (Aler2603030070, Aler2605140255) resolve on the LAB's public index, not on Alera's site; the
+  // index shows 26 certificates across three submission dates (Mar 3, Mar 24, May 14 2026). The
+  // cert read: lot 0002 AOD-9604, 99.36%, panel = HPLC-UV purity + MS identity + net content, no
+  // contaminant panel — so no `contaminants`, and Freedom prints no accreditation on these, so
+  // `labAccreditation` stays empty (the capstone/Accumark shape).
+  // ⚠️ PUBLISHING gap, not a testing gap: the product pages publish only the March lot-0001 certs
+  // while the lab index holds 26. The page states what the index shows, attributed, and does not
+  // claim per-lot publishing they don't do — `coa: "library"`, never "per-batch".
+  "alera-research": {
+    name: "Alera Research",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    url: "https://www.aleraresearch.com/?ref=PROFPEPTIDE",
+    detailPage: "/coupons/alera-research",
+    blockNote: "Freedom Diagnostics \u2014 HPLC-UV + MS",
+    facts: { coa: "library", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", purityStandard: "99%+" },
+  },
   "almighty-peptides": {
     name: "Almighty Peptides",
     code: "PROFPEPTIDE",
@@ -370,6 +389,31 @@ export const vendors: Record<string, Vendor> = {
     // implies (attributed, not in facts). Identity is HPLC spec-match, not MS. Coded GLP names
     // decode from CAS: MHC-2 TRZ=Tirzepatide, MHC-3 RT=Retatrutide, MHC-1 SM=Semaglutide.
     facts: { coa: "library", labName: "Chromate, Vanguard Laboratory", purityStandard: "99%+", testMethods: "RP-HPLC-UV" },
+  },
+  // Testing read 2026-08-30: TWO labs. Chromate COA #33551, client "MogLabs.bio", batch BPC002 —
+  // purity 98.353% against a >98% spec, PLUS sterility USP <1223> BacT/ALERT (Pass), endotoxin by
+  // kinetic chromogenic LAL (<0.0945 EU/mg) and metals <50 ppb. The access code is printed in full
+  // with a QR and VERIFIES against Chromate's own records. Second lab: Janoshik #109342, same client.
+  // Chromate prints no accreditation on the certificate, so `labAccreditation` stays empty.
+  // 🔴 Their COA library exposes PREVIOUS lots as well as the current one — the best lot-history
+  // transparency of any vendor screened. Nobody else on the roster offers it.
+  // ⚠️ Latest evidence is ~April 2026 (~4 months old at the time of the read). The page DATES the
+  // testing rather than writing it as current-to-the-month.
+  "moglabs": {
+    name: "Moglabs",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    url: "https://moglabs.bio/?ref=profpeptide",
+    detailPage: "/coupons/moglabs",
+    blockNote: "Chromate + Janoshik \u2014 sterility, endotoxin, metals",
+    facts: {
+      coa: "library",
+      labName: "Chromate",
+      testMethods: "HPLC purity, sterility USP <1223> (BacT/ALERT), kinetic chromogenic LAL endotoxin, metals",
+      contaminants: "Sterility (USP <1223> BacT/ALERT), endotoxin (kinetic chromogenic LAL), metals",
+      purityStandard: "98%+",
+    },
   },
   "modern-aminos": {
     name: "Modern Aminos",
@@ -720,6 +764,32 @@ export const vendors: Record<string, Vendor> = {
   // on one code) — only the path-based /ref/60815/ link would still attribute. Discount is 5%
   // (ties BioPure as the lowest on the roster) — do NOT round it up. Affiliate URL is
   // PATH-BASED (/ref/60815/), same shape as 99-purity and peptide-partners.
+  // Testing read 2026-08-30: Freedom Diagnostics, client "Level Up Peptides", lot LU-LC10.A,
+  // reported Aug 24 2026. This is the DEEPEST panel on the roster and it is why the vendor earns a
+  // page at all: purity 99.85% (HPLC-UV), identity (LC-MS), net content, endotoxin USP <85> run in
+  // DUPLICATE (both <=0.05 EU/mL), microbial PCR (no detectable microbial DNA), and elemental
+  // impurities by ICP-MS (As/Cd/Pb/Hg). Lab index: 21 certificates across 7 dates, May 26 -> Aug 18
+  // 2026 — an active cadence, not a one-off.
+  // Freedom prints no accreditation on these certificates, so `labAccreditation` stays empty.
+  // 🔴 STOREFRONT IS REGISTER-TO-BROWSE. Every HTML catalog path serves "Login Required — to browse
+  // this website, please log in or create an account"; zero product tiles render. The coupon page
+  // says so plainly rather than listing a catalog a reader cannot reach.
+  "level-up-peptides": {
+    name: "Level Up Peptides",
+    code: "PROFPEPTIDE",
+    discount: "15% off",
+    region: "US",
+    url: "https://level-up-peptides.com/?ref=PROFPEPTIDE",
+    detailPage: "/coupons/level-up-peptides",
+    blockNote: "Freedom Diagnostics \u2014 endotoxin + microbial + metals",
+    facts: {
+      coa: "login-gated",
+      labName: "Freedom Diagnostics",
+      testMethods: "HPLC-UV, LC-MS, ICP-MS, USP <85> endotoxin, microbial PCR",
+      contaminants: "Endotoxin (USP <85>, in duplicate), microbial DNA (PCR), elemental impurities (ICP-MS: As, Cd, Pb, Hg)",
+      purityStandard: "99%+",
+    },
+  },
   "licensed-peptides": {
     name: "Licensed Peptides",
     code: "PROFPEPTIDE",

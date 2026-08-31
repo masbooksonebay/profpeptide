@@ -97,6 +97,24 @@ const ONBOARDING_BACKLOG = {
   // Freedom Diagnostics 2025 -> Bioviridian 2026). A product-EXCLUSION list exists on the GoAffPro
   // portal (contents unread, irrelevant to the coupon page). Price pull possible later; coupon-only for now.
   "athena-peptides":    { reason: "GoAffPro coupon-only build (WooCommerce, price pull possible later) — no /prices rows yet; commission has a product-exclusion list (unread)", since: "2026-08-27" },
+  // Onboarded 2026-08-30 (coupon page + registry live). GoAffPro, code PROFPEPTIDE, 10% customer /
+  // 20% commission. Open WooCommerce with a public Store API — 24 products read live — so a price
+  // pull IS possible later; held coupon-page-only for now. Runs a near-sitewide sale (~20%) plus
+  // automatic quantity discounts from 3 items, which a pull would have to account for.
+  "alera-research":     { reason: "GoAffPro coupon-only build (open WooCommerce, price pull possible later) — no /prices rows yet; near-sitewide sale + quantity tiers need a sale-posture decision first", since: "2026-08-30" },
+  // Onboarded 2026-08-30 (coupon page + registry live). GoAffPro, code PROFPEPTIDE, 15% customer /
+  // 15% commission (they genuinely match — not a transcription error).
+  // 🔴 Storefront is REGISTER-TO-BROWSE: every HTML catalog path serves "Login Required" and renders
+  // zero product tiles. Its woo Store API is nonetheless open and returns 36 products, so a pull is
+  // technically possible — but publishing prices a reader cannot verify without an account is a
+  // decision for Mark, not a default. Coupon-page-only, no grid.
+  "level-up-peptides":  { reason: "register-to-browse storefront (HTML catalog is login-walled; Store API open) — coupon-page-only, no grid pending a decision on publishing prices readers cannot see without an account", since: "2026-08-30" },
+  // Onboarded 2026-08-30 (coupon page + registry live). GoAffPro, code profpeptide (rendered
+  // uppercase on PP), 10% customer / 15% commission. Open WooCommerce, 58 products read live, so a
+  // price pull IS possible later. Catalog mixes peptides with research chemicals/nootropics outside
+  // PP's scope, and its GLP line is coded (MOG-3 R = Retatrutide from their own lot RT103 cert;
+  // MOG-2 T left undecoded) — both need handling in a pull, so coupon-page-only for now.
+  "moglabs":            { reason: "GoAffPro coupon-only build (open WooCommerce, price pull possible later) — no /prices rows yet; catalog mixes non-peptide research chemicals and the GLP line is partly undecoded", since: "2026-08-30" },
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────

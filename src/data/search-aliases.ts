@@ -112,6 +112,16 @@ export const searchAliases: Record<string, string> = {
   // query for the "Athena Peptides" vendor page.
   ordermypeptides: "order my peptides",
   athena: "athena peptides",
+  // Added 2026-08-30. "alera" and "level up" are the natural short queries for the "Alera
+  // Research" / "Level Up Peptides" vendor pages; Level Up's domain is hyphenated
+  // (level-up-peptides.com) so the unhyphenated forms need to reach it too. "Moglabs" is
+  // already the page title, so it needs only its domain-suffix and spaced variants.
+  alera: "alera research",
+  "level up": "level up peptides",
+  levelup: "level up peptides",
+  "level-up": "level up peptides",
+  "mog labs": "moglabs",
+  "moglabs bio": "moglabs",
 };
 
 // Expand a raw query into the set of query strings to search — ADDITIVE, not replacing.
