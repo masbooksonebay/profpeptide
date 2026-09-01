@@ -10,7 +10,7 @@
 export const VENDORS_VERIFIED_ISO = "2026-09-01";
 
 /** Human-readable form of {@link VENDORS_VERIFIED_ISO} for SERP-facing copy. */
-export const VENDORS_VERIFIED_DATE = "August 31, 2026";
+export const VENDORS_VERIFIED_DATE = "September 1, 2026";
 
 /** Vendor slugs actually verified (reachable, not DEAD) in that run. A coupon page must
  *  render its "verified" date ONLY if its slug is in this set — a vendor excluded from
