@@ -7,7 +7,7 @@
 // own affiliate dashboard), so "verified and working" is what we can honestly claim.
 
 /** ISO date of the last check:vendors run that cleared the floor. */
-export const VENDORS_VERIFIED_ISO = "2026-08-31";
+export const VENDORS_VERIFIED_ISO = "2026-09-01";
 
 /** Human-readable form of {@link VENDORS_VERIFIED_ISO} for SERP-facing copy. */
 export const VENDORS_VERIFIED_DATE = "August 31, 2026";
