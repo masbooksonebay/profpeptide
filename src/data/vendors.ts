@@ -483,6 +483,52 @@ export const vendors: Record<string, Vendor> = {
     blockNote: "Freedom Diagnostics \u00b7 lab-verifiable COAs",
     facts: { coa: "library", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
   },
+  // Testing read 2026-09-01. FIVE named laboratories verified FROM THE CERTIFICATES THEMSELVES,
+  // not from vendor copy: Freedom Diagnostics (107 of the 195 published certs), ILS Laboratories,
+  // San Diego (17), Kovera Labs (16), Vanguard Laboratory, Olympia WA (12) and TrustPointe
+  // Analytics LLC, Dorr MI (2). A further 41 certs are image-only PDFs that were NOT machine-read,
+  // so nothing is claimed about them. `labName` carries the two largest; the page names the rest.
+  // 🔴 LAB-SIDE RESOLVABILITY — the reason this vendor clears the gate. Freedom certificates print
+  // a Search Code that resolves on the LAB's OWN domain (coas.freedomdiagnosticstesting.com/<Code>.pdf).
+  // Verified end-to-end TWICE, byte-identical to the vendor's copy: ORBI2607220001 (md5 026070e7…)
+  // and Orbi2608180461 (md5 f0a55dfb…). ILS certificates print their own access code for
+  // verification at ils-lab.com. Same standard as iron-peptides and Omega1.
+  // PANEL (Freedom template — what those certificates actually print): identity LC-MS · purity
+  // HPLC-UV · net peptide content · endotoxin USP <85> LAL run in DUPLICATE · microbial PCR ·
+  // elemental impurities ICP-MS (As/Cd/Pb/Hg) · fentanyl screen · and FOUR vials assayed
+  // separately, each with its own purity and content figure. Deeper than the roster norm.
+  // ⚠️ PANELS DIFFER BY LAB — the ILS template runs HPLC purity/identity/quantitation, a fentanyl
+  // immunoassay, endotoxin USP <85> and ICP-MS per USP <233>. `testMethods`/`contaminants` carry
+  // only what the certificates read have in common; the page does not present one panel as universal.
+  // ⚠️ NO accreditation claimed anywhere. Freedom prints none on these certificates, so
+  // `labAccreditation` stays empty — same shape as iron-peptides, alera and capstone.
+  // 🔴 `purityStandard` is the VENDOR'S STATED standard only ("verified at >99% purity", FAQ), and
+  // the page ATTRIBUTES it rather than asserting it: a certificate read for 1G-SGT 10mg lot
+  // 1G100326 reports 98.98%, so the blanket claim is not uniformly borne out by their own record.
+  // Coded GLP names decode from the certificates, which NAME THE COMPOUND IN PLAIN TEXT:
+  // 3G-RT = Retatrutide, G2-TRZ = Tirzepatide, 1G-SGT = Semaglutide, Cag = Cagrilintide.
+  // Survodutide is sold uncoded under its own name.
+  // `coa: "per-batch"` — 195 certificates with multiple DATED batches per SKU (3G-RT 20mg alone
+  // carries eight), not a fixed library.
+  // ⚠️ The incretin certificates are published but are absent from the vendor's own COA index and
+  // sitemap. The coupon page CITES those URLs directly so a reader can reach them; PP does not
+  // describe the vendor's navigation on any surface.
+  "orbitrex-peptides": {
+    name: "Orbitrex Peptides",
+    code: "PROFPEPTIDE",
+    discount: "15% off",
+    region: "US",
+    url: "https://orbitrexpeptide.is/?ref=PROFPEPTIDE&utm_campaign=PROFPEPTIDE&utm_medium=referral&utm_source=affiliate",
+    detailPage: "/coupons/orbitrex-peptides",
+    blockNote: "Freedom Diagnostics + ILS \u00b7 endotoxin, PCR, ICP-MS",
+    facts: {
+      coa: "per-batch",
+      labName: "Freedom Diagnostics, ILS Laboratories",
+      testMethods: "LC-MS identity, HPLC-UV purity, net peptide content",
+      contaminants: "Endotoxin (USP <85> LAL, duplicate), microbial (PCR), elemental impurities (ICP-MS)",
+      purityStandard: "99%+",
+    },
+  },
   "integrative-peptides": {
     name: "Integrative Peptides",
     code: "PROFPEPTIDE",

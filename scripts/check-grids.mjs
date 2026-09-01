@@ -65,6 +65,11 @@ const ONBOARDING_BACKLOG = {
   // Paradigm Peptides onboarded 2026-08-26 (coupon page live). Wix storefront — no Store API /
   // price-pull adapter — so coupon-page-only, no /prices rows. Gate B is Finnrick-anchored.
   "paradigm-peptides":  { reason: "Wix storefront (no Store API / price-pull adapter) — coupon-page-only, no /prices rows", since: "2026-08-26" },
+  // Orbitrex onboarded 2026-09-01 (coupon page live). Catalog is fully readable server-side, but the
+  // WordPress REST API is DISABLED (/wp-json/ → 404) so there is no Store API to pull — coupon-page-only,
+  // no /prices rows until an HTML adapter is written. GLP catalog uses coded names (3G-RT / G2-TRZ /
+  // 1G-SGT / Cag), each decoded from a certificate that names the compound in plain text.
+  "orbitrex-peptides":  { reason: "WP REST API disabled (no Store API / price-pull adapter) — coupon-page-only, no /prices rows", since: "2026-09-01" },
   // NOVA reports prices in AED; the pull stored them as USD (~3.67x inflated). Pulled its rows
   // from price data as immediate mitigation. Blocked pending a currency decision (refuse non-USD
   // at pull / convert / render native) — see the currency-handling report.
