@@ -94,13 +94,13 @@ export default function SynthesisPeptidesCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Synthesis Peptides runs per-batch third-party HPLC testing on its research compounds, verifying a minimum of &ge;98% purity before release. A Certificate of Analysis is available on request &mdash; email Synthesis with your order number to receive the batch-specific COA for the lot you received.
+            Synthesis Peptides runs per-batch third-party HPLC testing on its research compounds, verifying a minimum of &ge;98% purity before release. The certificates are issued by Freedom Diagnostics, and a certificate resolves on the laboratory&rsquo;s own site rather than only on Synthesis&rsquo;s &mdash; so the check runs against the lab rather than against the vendor.
           </p>
         </div>
 
         <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
           <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-          <CopyCode code="PROFPEPTIDE10" size="large" />
+          <CopyCode code="PROFPEPTIDE" size="large" />
           <CouponPills slug="synthesis-peptides" />
           <a
             href="/go/synthesis-peptides?from=coupon-card"
@@ -121,11 +121,11 @@ export default function SynthesisPeptidesCouponPage() {
             />
             <FAQItem
               q="Does Synthesis Peptides have a discount code?"
-              a={`Yes. Use code PROFPEPTIDE10 at checkout to save ${discountPct}% on any Synthesis Peptides order. This code is verified and maintained by Prof. Peptide.`}
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on any Synthesis Peptides order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
               q="How do I use the Synthesis Peptides discount code?"
-              a={`Add your items to cart at synthesispeptides.co, proceed to checkout, and enter PROFPEPTIDE10 in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
+              a={`Add your items to cart at synthesispeptides.co, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem
               q="What testing does Synthesis Peptides do?"
@@ -137,7 +137,7 @@ export default function SynthesisPeptidesCouponPage() {
             />
             <FAQItem
               q="Does Synthesis Peptides provide Certificates of Analysis?"
-              a="Yes. A batch-specific Certificate of Analysis is available on request — email Synthesis Peptides with your order number and they will provide the COA for the lot you received."
+              a="Yes. Certificates are issued by Freedom Diagnostics and published for its compounds, and a certificate resolves on the laboratory's own site rather than only on Synthesis Peptides' — so the check runs against the lab rather than against the vendor."
             />
           </div>
         </div>

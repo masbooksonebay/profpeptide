@@ -747,7 +747,7 @@ export const vendors: Record<string, Vendor> = {
   },
   "synthesis-peptides": {
     name: "Synthesis Peptides",
-    code: "PROFPEPTIDE10",
+    code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
     url: "https://synthesispeptides.co/?synthaff=105",
@@ -760,9 +760,13 @@ export const vendors: Record<string, Vendor> = {
     // and ?synthaff=105 SURVIVES that redirect (verified live: the final URL keeps the param), so
     // attribution is intact. The price-pull registry already carried .co; the vendor registry, the
     // coupon page and the master doc did not. All updated together.
-    // ⚠️ CODE UNVERIFIED — see the coupon page. PROFPEPTIDE10 is PP's own July value and is the
-    // ONLY record of it: the live site publishes no code anywhere, and Mark confirmed the 10% rate
-    // but not the string. Left exactly as it was rather than guessed at.
+    // CODE CONFIRMED BY MARK 2026-09-02: PROFPEPTIDE, not the July value PROFPEPTIDE10. The change
+    // could not have been derived — the live site publishes no code anywhere and the rescreen notes
+    // record only the 10% affiliate commission — so it was carried unverified until Mark read it
+    // from the portal. 99-purity-peptides made the same PROFPEPTIDE10 -> PROFPEPTIDE rename, so a
+    // vendor-side migration off the suffixed form has precedent on this roster.
+    // 🔒 check:codes Tier 1 enforces that every literal on the coupon page equals this field, so
+    // the page and the registry cannot drift apart.
   },
   "treasure-coast-peptides": {
     name: "Treasure Coast",
