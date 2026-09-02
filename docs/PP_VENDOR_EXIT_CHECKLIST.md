@@ -66,6 +66,38 @@ master-doc section is gone.)
   redirect, and **no `/prices/<compound>` fell below the 3-vendor indexable gate**
   (would flip a page to `noindex`).
 
+## Reinstating a temporarily-hidden vendor
+
+Removing `retired: true` and the two redirects is necessary but NOT sufficient. Reinstatement is
+the moment to bring the page up to the current pattern, because a hidden page freezes on the day
+it was hidden while every live page moves on. Synthesis Peptides (reinstated 2026-09-02, hidden
+2026-07-24) came back six weeks stale: a dead `.io` domain, a purity figure the vendor had since
+lowered, a raw affiliate href bypassing `/go/`, and both OG routes missing because the exit
+checklist had correctly deleted them.
+
+🔴 **A vendor on the LEGACY hardcoded-CopyCode template must be converted to `CouponCodeCard` as
+part of the reinstatement, not after it.** `fusion-peptide` is the only remaining one.
+
+Converting is not cosmetic. The legacy template ships three defects the standard pattern does not:
+
+1. **The H1 omits the discount code**, so it no longer matches the `<title>` a SERP renders.
+2. **No salience sentences** — the two-sentence passage the whole treatment exists to give Google
+   is absent, because it comes from `CouponCodeCard` via `COUPON_SENTENCE_VENDORS`.
+3. 🔴 **The "Verified" pill is a hand-written `<span>`, not `<CouponPills>` — so it ROUTES AROUND
+   `isCodeVerified()`.** This is the important one and the reason this note exists. The gate is
+   real and it works, but it lives inside a component; hand-written markup that merely *looks*
+   like the component inherits none of it. Synthesis shipped a green "Verified" badge from July
+   onward for a vendor that was not in the verified set, and no guard caught it, because guards
+   check registry/prose consistency rather than whether a claim went through the right component.
+   Same class as the ungated S2 meta-description claim fixed at `f6e85e2`.
+   **Rule: any verified claim must come from `CouponPills` / `CouponCodeCard`. Never hand-write one.**
+
+Also, on conversion: delete the whole legacy pill row rather than porting it. Nothing is lost —
+the standard pattern carries the purity figure and the region in PROSE (the intro sentence and the
+testing paragraph), which is where `amino-club`, the reference page, keeps them. Check the prose
+actually states them before deleting the pills, then add the slug to `COUPON_SENTENCE_VENDORS`
+(its header says legacy pages join "the moment they are converted").
+
 ## Guardrails that catch mistakes
 - `check:og-routes.mjs` — active coupon dirs MUST have both image routes; retired dirs
   MUST have neither AND must redirect. (This is the guard that would have caught the
