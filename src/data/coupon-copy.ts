@@ -98,16 +98,24 @@ export function couponDescription(
   vendorName: string,
   code: string,
   pct: number,
-  monthYear: string,
+  /** "Month Year" when the vendor IS verified; "" (or null) when it is not — see the note below. */
+  monthYear: string | null,
   gated = false,
 ): string {
   // Gated vendors (reveal-gate-vendors.ts): the code must NOT appear in the meta description.
   // Drop "code {CODE} " from the tail — the gated result is strictly SHORTER than the ungated
   // form, so it stays within the same ≤155-char budget check:freshness verifies (ungated = the
   // upper bound). The lead + discount + verified-month freshness signal all remain.
+  // 🔒 THE VERIFIED CLAUSE IS CONDITIONAL. `monthYear` empty/null means this vendor is NOT in the
+  // last check:vendors verified set, so the description must not claim a verification it did not
+  // get — the same rule the "✓ Verified" pill already follows (isCodeVerified). Caller decides;
+  // this function only renders what it is handed. Omitting the clause makes the string SHORTER,
+  // so the ≤155-char budget check:freshness enforces is unaffected (ungated+verified stays the
+  // upper bound it measures).
+  const verified = monthYear ? `, verified ${monthYear}` : "";
   const tail = gated
-    ? `save ${pct}% at ${vendorName}, verified ${monthYear}.`
-    : `code ${code} saves ${pct}% at ${vendorName}, verified ${monthYear}.`;
+    ? `save ${pct}% at ${vendorName}${verified}.`
+    : `code ${code} saves ${pct}% at ${vendorName}${verified}.`;
   const lead = couponLead[slug];
   return lead ? `${lead} — ${tail}` : `${tail[0].toUpperCase()}${tail.slice(1)}`;
 }

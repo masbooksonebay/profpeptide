@@ -4,7 +4,7 @@ import { vendors } from "@/data/vendors";
 import { COUPON_SENTENCE_VENDORS } from "@/data/coupon-sentence-vendors";
 import { REVEAL_GATE_VENDORS } from "@/data/reveal-gate-vendors";
 import { RevealCodeBox } from "@/components/RevealCodeBox";
-import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
+import { CODES_VERIFIED_DATE, isCodeVerified } from "@/data/codes-verified";
 
 /**
  * The coupon code card — eyebrow + code + discount/verified pills + Shop button — as ONE
@@ -62,14 +62,19 @@ export function CouponCodeCard({
   // "coupon code" generically, never the code string). All three gated pages render this pair so a
   // future SERP round can't confuse the gate effect with a copy-length effect. Sentence gated only
   // on `sentence && pct` (not COUPON_SENTENCE_VENDORS) so every gated page carries it.
-  // NOTE (queue item 8, left in place per scope): S2 asserts "verified as of {month}" without calling
-  // isCodeVerified(slug) — the same site-wide defect flagged at src/data/codes-verified.ts. Not fixed here.
+  // 🔒 S2's VERIFIED CLAUSE IS GATED (queue item 8, FIXED 2026-09-02). It used to assert
+  // "verified as of {month}" for any slug in COUPON_SENTENCE_VENDORS, without consulting
+  // isCodeVerified — so a vendor whose pill was hidden (absent from the last verified set) still
+  // had its salience sentence claim a verification it never got. Orbitrex was live in that state.
+  // Only the CLAUSE is dropped, never the sentence: the passage exists to give Google a
+  // snippet-worthy block, and deleting it for an unverified vendor would trade a false claim for a
+  // lost surface. Unverified renders the same sentence minus the four words.
   if (REVEAL_GATE_VENDORS.has(slug)) {
     return (
       <>
         {sentence && pct != null && (
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Reveal your Prof. Peptide code to save {pct}% at {v.name} on your order. The {v.name} coupon code is verified as of {CODES_VERIFIED_DATE} and gives you a {pct}% discount at checkout.
+            Reveal your Prof. Peptide code to save {pct}% at {v.name} on your order. The {v.name} coupon code{isCodeVerified(slug) ? ` is verified as of ${CODES_VERIFIED_DATE} and` : ""} gives you a {pct}% discount at checkout.
           </p>
         )}
         <RevealCodeBox slug={slug} className={className} />
@@ -81,7 +86,7 @@ export function CouponCodeCard({
     <>
       {showSentence && (
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-          Use code {v.code} at {v.name} to save {pct}% on your order. The {v.name} coupon code is verified as of {CODES_VERIFIED_DATE} and gives you a {pct}% discount at checkout.
+          Use code {v.code} at {v.name} to save {pct}% on your order. The {v.name} coupon code{isCodeVerified(slug) ? ` is verified as of ${CODES_VERIFIED_DATE} and` : ""} gives you a {pct}% discount at checkout.
         </p>
       )}
       <div className={`border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b] ${className}`}>

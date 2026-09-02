@@ -24,7 +24,7 @@
 // Run:  npm run check:vendors
 
 import ts from "typescript";
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
@@ -158,8 +158,61 @@ function prettyToday() {
   return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
 }
 
+// 🔴 MONOTONIC GUARD — the stamp may only ever move FORWARD.
+//
+// THE REGRESSION THIS PREVENTS (2026-08-31, shipped live before it was caught): the stamp had been
+// deliberately set to 2026-09-01 so a scheduled recrawl would see September. A vendor onboarding
+// later that day ran check:vendors for the routine reason (runbook step 9 — give the new vendor its
+// "✓ Verified" pill), and this function unconditionally wrote isoToday() = 2026-08-31. That dragged
+// ALL 54 coupon pages from "September 2026" back to "August 2026" — pill, salience sentence, meta
+// description, OG description, JSON-LD validFrom and the /coupons hub title, every one of which
+// derives from this single constant. Nothing failed; the site simply started claiming an older
+// verification than it had. It reached production.
+//
+// The date is an attestation, and an attestation that can silently regress is worse than a stale
+// one: a reader can tell a stale date is stale, but cannot tell that a correct-looking date is a
+// downgrade. So a backwards write is refused OUTRIGHT and LOUDLY — process.exit(1), never a warning.
+// This project has been bitten enough times by quiet skips that a silent refusal would just be the
+// same defect wearing a different hat.
+//
+// SCOPE — this covers every automated path. scripts/check-vendors.mjs is the ONLY code that writes
+// this file (verified: the sole writeFileSync of outPath is below). The GitHub Actions job
+// (.github/workflows/monthly-vendor-verify.yml) does NOT write it — it runs this same script and
+// then `git add`s whatever the script produced, so it cannot bypass this guard. The one path that
+// remains unguarded by construction is a HAND EDIT of the generated file, which is deliberate: that
+// is the escape hatch for setting the stamp forward on purpose, and it is visible in a diff.
+function readExistingIso() {
+  if (!existsSync(outPath)) return null;
+  const m = readFileSync(outPath, "utf8").match(/VENDORS_VERIFIED_ISO = "(\d{4}-\d{2}-\d{2})"/);
+  return m ? m[1] : null;
+}
+
 function writeTimestamp(verifiedSlugs) {
   const iso = isoToday();
+  const existing = readExistingIso();
+  // ISO-8601 dates compare correctly as strings, so no Date parsing is needed (and none of its
+  // timezone hazards are introduced). Equal is allowed — re-running on the same day is routine and
+  // must still be able to refresh VENDORS_VERIFIED_SLUGS for a newly-onboarded vendor.
+  if (existing && iso < existing) {
+    const bar = "!".repeat(74);
+    console.error(`\n${bar}`);
+    console.error(`!!  REFUSED TO WRITE THE VERIFICATION STAMP — it would move BACKWARDS.`);
+    console.error(`!!`);
+    console.error(`!!      currently in the file : ${existing}`);
+    console.error(`!!      this run would write  : ${iso}   (today)`);
+    console.error(`!!`);
+    console.error(`!!  The stamp drives the "verified" month on all coupon pages — the pill, the`);
+    console.error(`!!  salience sentence, the meta and OG descriptions, the JSON-LD Offer and the`);
+    console.error(`!!  /coupons hub title. Writing an older date would make the site claim a`);
+    console.error(`!!  verification OLDER than the one it already published, which a reader cannot`);
+    console.error(`!!  detect. Nothing was written; VENDORS_VERIFIED_SLUGS is unchanged too.`);
+    console.error(`!!`);
+    console.error(`!!  If the forward date was set deliberately, that is working as intended —`);
+    console.error(`!!  leave it. If it was set in error, correct it by hand in`);
+    console.error(`!!  src/data/vendors-verified.generated.ts, then re-run.`);
+    console.error(`${bar}\n`);
+    process.exit(1);
+  }
   const pretty = prettyToday();
   const slugs = [...verifiedSlugs].sort();
   const body =

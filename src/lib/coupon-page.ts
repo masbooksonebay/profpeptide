@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
 import { vendors } from "@/data/vendors";
-import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
+import { CODES_VERIFIED_DATE, isCodeVerified } from "@/data/codes-verified";
 import { couponDescription } from "@/data/coupon-copy";
 import { REVEAL_GATE_VENDORS } from "@/data/reveal-gate-vendors";
 import { VENDORS_VERIFIED_ISO } from "@/data/vendors-verified.generated";
@@ -75,6 +75,13 @@ export function buildCouponMetadata({
   const title = gated
     ? `${v.name} Discount Code — Save ${pct}%`
     : `${v.name} Discount Code: ${v.code} — Save ${pct}%`;
-  const description = couponDescription(slug, v.name, v.code, pct, CODES_VERIFIED_DATE, gated);
+  // 🔴 GATED ON isCodeVerified — the description must follow the pill. A vendor absent from the
+  // last verified set renders no "✓ Verified" pill, and before this it still shipped a meta
+  // description reading "…verified {month}." Orbitrex was live in exactly that state: no pill on
+  // the page, a verification claim in the SERP snippet. The SERP is the surface where the claim
+  // does the most work and gets the least scrutiny, so it is the one that most needs the gate.
+  const description = couponDescription(
+    slug, v.name, v.code, pct, isCodeVerified(slug) ? CODES_VERIFIED_DATE : null, gated,
+  );
   return buildPageMetadata({ path: `/coupons/${slug}`, title, description, ...rest });
 }

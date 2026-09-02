@@ -4,7 +4,7 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
+import { CODES_VERIFIED_DATE, isCodeVerified } from "@/data/codes-verified";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
@@ -116,7 +116,7 @@ export default function GlacierAminosCouponPage() {
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What peptides does Glacier Aminos carry?" a="Glacier Aminos carries research compounds across several categories. Its metabolic GLP catalog includes Semaglutide, Tirzepatide, Retatrutide, and Cagrilintide, along with combination compounds such as a GLP-3/Cagrilintide blend and a GLP-2.5 tirzepatide/retatrutide hybrid. Recovery and repair peptides include BPC-157, TB-500, GHK-Cu, and a CJC-1295/Ipamorelin blend. Longevity and additional research compounds include Epithalon, FOXO4-DRI, 5-Amino-1MQ, AOD-9604, DSIP, Glutathione, and Cartalax. Glacier also carries KLOW 80, a proprietary blend of KPV, LL-37, Oxytocin, and its Wolverine blend." />
-            <FAQItem q="Does Glacier Aminos have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire Glacier Aminos order. This code is verified and maintained by Prof. Peptide and valid as of ${CODES_VERIFIED_DATE}.`} />
+            <FAQItem q="Does Glacier Aminos have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire Glacier Aminos order. This code is maintained by Prof. Peptide${isCodeVerified("glacier-aminos") ? ` and verified as of ${CODES_VERIFIED_DATE}` : ""}.`} />
             <FAQItem q="How do I use the Glacier Aminos discount code?" a={`Add your items to cart at glacieraminos.shop, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How does Glacier Aminos test its peptides?" a="Glacier Aminos publishes a public, batch-searchable COA library. Its certificates come from three independent US labs over time — Forever Young Pharmacy (September 2025), Freedom Diagnostics (late 2025 to early 2026, the bulk of the library), and Kovera Labs (the most recent 2026 lots) — reporting purity by HPLC and net peptide content. The Freedom and Kovera reports test three vials per batch and add an endotoxin screen; the Kovera reports go furthest, also covering LC-MS identity, microbial sterility, and heavy metals. Glacier describes its process as a seven-step testing protocol." />
             <FAQItem q="How do I verify a Glacier Aminos Certificate of Analysis?" a="Every Glacier Aminos batch is traceable. Each Certificate of Analysis is tied to a batch number searchable at glacieraminos.shop. The Kovera Labs reports carry a per-record access code verifiable at koveralabs.com/verify, and the Freedom Diagnostics reports a search code at FreedomDiagnosticsTesting.com, so documentation can be matched to the specific batch received rather than a generic product-page certificate." />

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { vendors } from "@/data/vendors";
-import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
+import { CODES_VERIFIED_DATE, isCodeVerified } from "@/data/codes-verified";
 import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
 import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import BackLink from "@/components/BackLink";
@@ -113,7 +113,7 @@ export default function CrushResearchCouponPage() {
           <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-2">
             <FAQItem q="What peptides does Crush Research carry?" a="Crush Research carries research compounds across several categories. Its metabolic GLP catalog includes Retatrutide and Tirzepatide (listed on-site as Triple Agonist and Double Agonist), Cagrilintide, MOTS-c, and AOD-9604. Recovery and repair peptides include BPC-157, TB-500, KPV, and a BPC-157/TB-500 blend. Growth-hormone secretagogues include CJC-1295, Ipamorelin, Sermorelin, and Tesamorelin. The catalog also spans cognitive compounds (Semax, Selank, Adamax, Pinealon), skin peptides (GHK-Cu, Melanotan-1, Melanotan-2, KLOW), and longevity compounds (NAD+, Epitalon, Glutathione)." />
-            <FAQItem q="Does Crush Research have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire Crush Research order. This code is verified and maintained by Prof. Peptide and valid as of ${CODES_VERIFIED_DATE}.`} />
+            <FAQItem q="Does Crush Research have a coupon code?" a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your entire Crush Research order. This code is maintained by Prof. Peptide${isCodeVerified("crush-research") ? ` and verified as of ${CODES_VERIFIED_DATE}` : ""}.`} />
             <FAQItem q="How do I use the Crush Research discount code?" a={`Add your items to cart at crushresearch.shop, proceed to checkout, and enter PROFPEPTIDE in the discount code field. The ${discountPct}% discount will be applied to your order total.`} />
             <FAQItem q="How does Crush Research test its peptides?" a="Crush publishes a public per-batch Certificate of Analysis library, tested by ILS Laboratories (San Diego, CA), an ISO/IEC 17025-accredited lab. Each COA runs a Full QC Panel — purity and identity by HPLC, net peptide content, heavy metals (ICP-MS), sterility (PCR), and endotoxin (USP <85>) — and reports HPLC conformity across three samples per batch (the multi-vial testing), with some lots adding a fentanyl screen." />
             <FAQItem q="How do I verify a Crush Research COA?" a="Visit the public testing page at crushresearch.shop and match the batch number on your vial to its Certificate of Analysis. Each ILS Laboratories report also carries a QR code and access code that independently verify it at portal.ils-lab.com, alongside the full purity, identity, net-content, heavy-metal, sterility, and endotoxin results for that batch." />
