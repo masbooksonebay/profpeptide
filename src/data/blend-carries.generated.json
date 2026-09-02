@@ -25,6 +25,7 @@
     "peptide-partners",
     "peptidology",
     "royal-peptides",
+    "synthesis-peptides",
     "vital-core-research"
   ],
   "ghrp-2-tesamorelin-mgf-ipamorelin": [
@@ -54,7 +55,8 @@
     "peptidology",
     "purity-peptides",
     "royal-peptides",
-    "science-based-peptides"
+    "science-based-peptides",
+    "synthesis-peptides"
   ],
   "klow": [
     "alpha-peptides",
@@ -82,10 +84,12 @@
     "peptidology",
     "purity-peptides",
     "science-based-peptides",
+    "synthesis-peptides",
     "treasure-coast-peptides"
   ],
   "nad-mots-c-5-amino-1mq": [
-    "biolongevity-labs"
+    "biolongevity-labs",
+    "synthesis-peptides"
   ],
   "retatrutide-cagrilintide": [
     "nura-peptide"
@@ -148,6 +152,7 @@
     "royal-peptides",
     "science-based-peptides",
     "swiss-chems",
+    "synthesis-peptides",
     "treasure-coast-peptides",
     "vital-core-research"
   ]

@@ -1,6 +1,5 @@
 "use client";
 
-import { redirect } from "next/navigation";
 import FAQItem from "@/components/FAQItem";
 import { CopyCode } from "@/components/CopyCode";
 import { CouponPills } from "@/components/CouponPills";
@@ -13,11 +12,6 @@ import BackLink from "@/components/BackLink";
 
 export default function SynthesisPeptidesCouponPage() {
   const discountPct = vendorDiscountPct("synthesis-peptides");
-  // HIDDEN 2026-07-24: affiliate broken — redirect to the coupons hub (belt-and-
-  // suspenders with the next.config.js redirect + vendors.ts `retired` flag). The
-  // full page is kept on disk below; re-enable by removing this redirect and the
-  // `retired` flag when the non-affiliate vendor set launches.
-  redirect("/coupons");
   return (
     <div className="section max-w-3xl">
       <BackLink href="/coupons">Back to Discount Codes</BackLink>
@@ -28,7 +22,7 @@ export default function SynthesisPeptidesCouponPage() {
       </div>
       <div className="flex flex-wrap items-center gap-2 mb-8">
         <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
-        <span className="text-xs bg-slate-100 text-slate-700 border border-slate-300 px-2 py-0.5 rounded-full font-medium">&ge;99% Purity Verified</span>
+        <span className="text-xs bg-slate-100 text-slate-700 border border-slate-300 px-2 py-0.5 rounded-full font-medium">&ge;98% Purity Verified</span>
         <RegionPill slug="synthesis-peptides" />
       </div>
 
@@ -100,7 +94,7 @@ export default function SynthesisPeptidesCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Synthesis Peptides runs per-batch third-party HPLC testing on its research compounds, verifying a minimum of &ge;99% purity before release. A Certificate of Analysis is available on request &mdash; email Synthesis with your order number to receive the batch-specific COA for the lot you received.
+            Synthesis Peptides runs per-batch third-party HPLC testing on its research compounds, verifying a minimum of &ge;98% purity before release. A Certificate of Analysis is available on request &mdash; email Synthesis with your order number to receive the batch-specific COA for the lot you received.
           </p>
         </div>
 
@@ -109,9 +103,9 @@ export default function SynthesisPeptidesCouponPage() {
           <CopyCode code="PROFPEPTIDE10" size="large" />
           <CouponPills slug="synthesis-peptides" />
           <a
-            href="https://synthesispeptides.io/?synthaff=105"
+            href="/go/synthesis-peptides?from=coupon-card"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="sponsored nofollow noopener"
             className="btn-primary w-full text-center block"
           >
             Shop Synthesis Peptides</a>
@@ -131,15 +125,15 @@ export default function SynthesisPeptidesCouponPage() {
             />
             <FAQItem
               q="How do I use the Synthesis Peptides discount code?"
-              a={`Add your items to cart at synthesispeptides.io, proceed to checkout, and enter PROFPEPTIDE10 in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
+              a={`Add your items to cart at synthesispeptides.co, proceed to checkout, and enter PROFPEPTIDE10 in the discount code field. The ${discountPct}% discount will be applied to your order total.`}
             />
             <FAQItem
               q="What testing does Synthesis Peptides do?"
-              a="Synthesis Peptides conducts per-batch third-party HPLC testing on its research compounds, verifying a minimum of 99%+ purity before a batch is released."
+              a="Synthesis Peptides conducts per-batch third-party HPLC testing on its research compounds, verifying a minimum of 98%+ purity before a batch is released."
             />
             <FAQItem
               q="What is the minimum purity standard at Synthesis Peptides?"
-              a="Synthesis Peptides verifies a minimum of 99%+ purity via third-party HPLC analysis on every batch before it is offered for sale."
+              a="Synthesis Peptides verifies a minimum of 98%+ purity via third-party HPLC analysis on every batch before it is offered for sale."
             />
             <FAQItem
               q="Does Synthesis Peptides provide Certificates of Analysis?"

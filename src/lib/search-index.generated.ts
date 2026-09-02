@@ -244,6 +244,7 @@ export const generatedSearchIndex: SearchEntry[] = [
   {"title":"Science Based Peptides Discount Code","url":"/coupons/science-based-peptides","category":"coupon","description":"Science Based Peptides coupon code and promo offer","tags":[]},
   {"title":"Spartan Peptides Discount Code","url":"/coupons/spartan-peptides","category":"coupon","description":"Spartan Peptides coupon code and promo offer","tags":[]},
   {"title":"Swiss Chems Discount Code","url":"/coupons/swiss-chems","category":"coupon","description":"Swiss Chems coupon code and promo offer","tags":[]},
+  {"title":"Synthesis Peptides Discount Code","url":"/coupons/synthesis-peptides","category":"coupon","description":"Synthesis Peptides coupon code and promo offer","tags":[]},
   {"title":"Treasure Coast Discount Code","url":"/coupons/treasure-coast-peptides","category":"coupon","description":"Treasure Coast coupon code and promo offer","tags":[]},
   {"title":"Valkyrie Peptides Discount Code","url":"/coupons/valkyrie-peptides","category":"coupon","description":"Valkyrie Peptides coupon code and promo offer","tags":[]},
   {"title":"Vital Core Research Discount Code","url":"/coupons/vital-core-research","category":"coupon","description":"Vital Core Research coupon code and promo offer","tags":[]},

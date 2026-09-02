@@ -30,15 +30,27 @@ const blendsPath = join(root, "src/data/prices.blends.generated.ts");
 const ledgerPath = join(root, "src/data/blend-skips.generated.json");
 
 // ── BASELINE ────────────────────────────────────────────────────────────────
-// Reviewed 2026-08-24. 65 blend rows drop, all accounted and (per the diagnosis) legitimate or
-// recoverable-but-parked. Raise a count here ONLY after confirming the new drops are acceptable;
-// a bump is a deliberate act, not a silent one. Reasons: see _reasonLegend in the ledger.
-const BASELINE_TOTAL = 65;
+// Reviewed 2026-08-24 (65 rows), RE-REVIEWED 2026-09-02 (56 rows) when Synthesis Peptides was
+// reinstated. Raise a count here ONLY after confirming the new drops are acceptable; a bump is a
+// deliberate act, not a silent one. Reasons: see _reasonLegend in the ledger.
+//
+// WHAT MOVED AND WHY, confirmed against the ledger entries rather than assumed:
+//   retired-vendor      6 -> 0   All six were Synthesis rows, dropped solely because the vendor
+//                                carried `retired: true`. Un-hiding it removes the reason entirely;
+//                                Synthesis was the only retired vendor with blend rows.
+//   below-vendor-gate  22 -> 23  Exactly one of those six lands here instead of emitting:
+//                                Synthesis's NAD+/MOTS-C/5-Amino-1MQ 120mg, which has fewer than
+//                                three vendors at that config. A real gate, not a pipeline fault —
+//                                the other five now emit.
+//   cjc-form-unresolved 19 -> 15 UNRELATED pre-existing recovery the guard had been warning about
+//                                ("lower the baseline"). Brought in line so the by-reason figures
+//                                sum to the total instead of carrying four rows of stale slack.
+const BASELINE_TOTAL = 56;
 const BASELINE_BY_REASON = {
-  "below-vendor-gate": 22,
-  "cjc-form-unresolved": 19,
+  "below-vendor-gate": 23,
+  "cjc-form-unresolved": 15,
   "config-dedup": 11,
-  "retired-vendor": 6,
+  "retired-vendor": 0,
   "coded-unverified": 3,
   "unmapped": 2,
   "backlog": 1,

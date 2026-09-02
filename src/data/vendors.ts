@@ -750,16 +750,19 @@ export const vendors: Record<string, Vendor> = {
     code: "PROFPEPTIDE10",
     discount: "10% off",
     region: "US",
-    url: "https://synthesispeptides.io/?synthaff=105",
+    url: "https://synthesispeptides.co/?synthaff=105",
     detailPage: "/coupons/synthesis-peptides",
-    // HIDDEN 2026-07-24: affiliate program broken (portal redirects to homepage,
-    // mixed-up accounts) and they'd be the lone non-affiliate vendor on the price
-    // surface. Reuses the `retired` display-hide (off /vendors, /coupons hub, the
-    // count, and the sitemap; coupon page redirects). NOT a permanent retirement —
-    // data + price-suite re-onboard are preserved. Re-enable with the non-affiliate
-    // vendor set by removing this one flag (and the redirect in the coupon page.tsx
-    // + next.config.js). See also src/app/vendor-testing-index (row commented out).
-    retired: true,
+    // REINSTATED 2026-09-02 (Mark: affiliate tracking fixed — the sole reason for the hide).
+    // Hidden 2026-07-24 because the affiliate portal redirected to the homepage with mixed-up
+    // accounts; that was always a display-hide, never a retirement, so the data and the price
+    // suite were preserved and the `retired` flag + the two redirects were all that came off.
+    // 🔴 DOMAIN MOVED .io -> .co. The live site 301s synthesispeptides.io -> synthesispeptides.co,
+    // and ?synthaff=105 SURVIVES that redirect (verified live: the final URL keeps the param), so
+    // attribution is intact. The price-pull registry already carried .co; the vendor registry, the
+    // coupon page and the master doc did not. All updated together.
+    // ⚠️ CODE UNVERIFIED — see the coupon page. PROFPEPTIDE10 is PP's own July value and is the
+    // ONLY record of it: the live site publishes no code anywhere, and Mark confirmed the 10% rate
+    // but not the string. Left exactly as it was rather than guessed at.
   },
   "treasure-coast-peptides": {
     name: "Treasure Coast",

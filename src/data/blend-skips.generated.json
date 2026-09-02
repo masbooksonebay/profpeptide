@@ -12,16 +12,15 @@
     "uncaptured-malformed-row": "Row counted in the ### Blends table but too malformed to enter the pipeline (no vendor slug / <4 columns)."
   },
   "docBlendRows": 206,
-  "emittedBlendRows": 145,
-  "skippedBlendRows": 61,
+  "emittedBlendRows": 150,
+  "skippedBlendRows": 56,
   "byReason": {
     "backlog": 1,
-    "below-vendor-gate": 22,
+    "below-vendor-gate": 23,
     "cjc-form-unresolved": 15,
     "coded-unverified": 3,
     "config-dedup": 11,
     "no-size-or-price": 1,
-    "retired-vendor": 6,
     "unmapped": 2
   },
   "entries": [
@@ -176,6 +175,13 @@
       "vendor": "science-based-peptides",
       "blend": "GLOW",
       "size": "50mg",
+      "reason": "below-vendor-gate",
+      "date": "2026-08-16"
+    },
+    {
+      "vendor": "synthesis-peptides",
+      "blend": "NAD+/MOTS-C/5-Amino-1MQ",
+      "size": "120mg",
       "reason": "below-vendor-gate",
       "date": "2026-08-16"
     },
@@ -395,48 +401,6 @@
       "size": "—",
       "reason": "no-size-or-price",
       "date": "2026-08-08"
-    },
-    {
-      "vendor": "synthesis-peptides",
-      "blend": "CJC-1295/Ipamorelin",
-      "size": "10mg",
-      "reason": "retired-vendor",
-      "date": "2026-08-16"
-    },
-    {
-      "vendor": "synthesis-peptides",
-      "blend": "GLOW",
-      "size": "70mg",
-      "reason": "retired-vendor",
-      "date": "2026-08-16"
-    },
-    {
-      "vendor": "synthesis-peptides",
-      "blend": "KLOW",
-      "size": "80mg",
-      "reason": "retired-vendor",
-      "date": "2026-08-16"
-    },
-    {
-      "vendor": "synthesis-peptides",
-      "blend": "NAD+/MOTS-C/5-Amino-1MQ",
-      "size": "120mg",
-      "reason": "retired-vendor",
-      "date": "2026-08-16"
-    },
-    {
-      "vendor": "synthesis-peptides",
-      "blend": "Wolverine",
-      "size": "10mg",
-      "reason": "retired-vendor",
-      "date": "2026-08-16"
-    },
-    {
-      "vendor": "synthesis-peptides",
-      "blend": "Wolverine",
-      "size": "20mg",
-      "reason": "retired-vendor",
-      "date": "2026-08-16"
     },
     {
       "vendor": "ameano-peptides",

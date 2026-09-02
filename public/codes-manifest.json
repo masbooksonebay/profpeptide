@@ -364,6 +364,13 @@
     "url": "https://swisschems.is/?ref=PROF10"
   },
   {
+    "slug": "synthesis-peptides",
+    "name": "Synthesis Peptides",
+    "code": "PROFPEPTIDE10",
+    "discount": "10% off",
+    "url": "https://synthesispeptides.co/?synthaff=105"
+  },
+  {
     "slug": "treasure-coast-peptides",
     "name": "Treasure Coast",
     "code": "PROFPEPTIDE",

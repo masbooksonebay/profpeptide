@@ -144,13 +144,6 @@ const nextConfig = {
         destination: "/coupons",
         permanent: true,
       },
-      // HIDDEN 2026-07-24: affiliate broken — hidden via vendors.ts `retired`, not a
-      // permanent retirement. page.tsx kept on disk; remove this + the flag to re-enable.
-      {
-        source: "/coupons/synthesis-peptides{/}?",
-        destination: "/coupons",
-        permanent: true,
-      },
       // REMOVED vendors (entry deleted, not `retired`): a126305 dropped Nordic Peptides and
       // ec23364 dropped Apollo Peptide Sciences (dead website), leaving no page — so their
       // still-indexed URLs 404'd. Redirect them to the hub to consolidate the residual link

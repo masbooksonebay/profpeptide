@@ -1231,7 +1231,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ---
 ## VENDOR: Synthesis Peptides
-- **slug:** synthesis-peptides | **code:** PROFPEPTIDE10 | **discount:** 10% off | **url:** synthesispeptides.io
+- **slug:** synthesis-peptides | **code:** PROFPEPTIDE10 | **discount:** 10% off | **url:** synthesispeptides.co
 - **traffic:** (not pulled) | **pulled:** August 16 2026
 - **sale posture:** No product-level sale (single price per variant).
 
