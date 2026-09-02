@@ -1,6 +1,6 @@
 import { vendors } from "./vendors";
 import { generatedPriceEntries, GENERATED_PRICES_UPDATED, generatedVendorNames } from "./prices.generated";
-import { categoryOrder, libraryCategoryOf, hasProfile } from "./peptideCategories";
+import { categoryOrder, libraryCategoryOf, libraryNameOf, hasProfile } from "./peptideCategories";
 import pricesIndex from "./prices.index.json";
 import { LISTED, PROVEN } from "./attribution";
 import { eligiblePriorityVendors } from "./vendor-priority";
@@ -161,12 +161,41 @@ export interface VendorProductRow {
  * any vendor's product-row grid; the caller derives the post-code price (base × discount)
  * and builds the shop URL from `vendorSlug`.
  */
+/**
+ * The compound name to RENDER, reconciling two sources that legitimately disagree.
+ *
+ * The price data's `compoundName` is transcribed from each vendor's own store during the pull;
+ * the /peptides taxonomy carries the site's canonical spelling. They drift.
+ *
+ * 🔴 CASE ONLY — and that limit is the whole design. A blanket "prefer the taxonomy name" was
+ * measured across all 1,782 price rows before this was written: it would have changed 249 rows
+ * across 9 compounds, and only ONE of those changes was right. It would have pulled LIBRARY forms
+ * into a dense price column — "VIP" -> "VIP (Vasoactive Intestinal Peptide)" (26 rows),
+ * "SS-31" -> "SS-31 (Elamipretide)" (33), "Glutathione" -> "Glutathione (GSH)" (39) — and on
+ * kisspeptin it would have LOST specificity, replacing the actual product name "Kisspeptin-10"
+ * with the category name "Kisspeptin" on 27 rows. The library name disambiguates in a browsable
+ * list; the grid needs the short form. Different jobs.
+ *
+ * Restricting the fallback to pure capitalisation differences keeps every one of those, and fixes
+ * the two real defects: "cagrisema" -> "CagriSema" (1 row, was rendering lowercase beside properly
+ * cased peers) and "MOTS-C" -> "MOTS-c" (71 rows — the site spells it MOTS-c 304 times on the
+ * profile and 6 in the library; only the price surface disagreed).
+ *
+ * Applied at the single seam both name-producing paths share, so the vendor grid and the /prices
+ * pages can never diverge from each other, and any future consumer inherits it.
+ */
+export function displayCompoundName(slug: string, dataName: string): string {
+  const canonical = libraryNameOf[slug];
+  if (!canonical) return dataName; // no taxonomy entry (blends, backlog compounds) — leave as-is
+  return canonical.toLowerCase() === dataName.toLowerCase() ? canonical : dataName;
+}
+
 export function vendorProductRows(vendorKey: string): VendorProductRow[] {
   return priceEntries
     .filter((e) => e.vendor === vendorKey)
     .map((e) => ({
       compound: e.compound,
-      compoundName: e.compoundName,
+      compoundName: displayCompoundName(e.compound, e.compoundName),
       hasProfile: hasProfile(e.compound),
       vendorSlug: e.vendorSlug,
       sizeMg: e.sizeMg,
@@ -460,7 +489,7 @@ export function priceCompounds(): { slug: string; name: string }[] {
   for (const e of priceEntries) {
     if (!seen.has(e.compound)) {
       seen.add(e.compound);
-      out.push({ slug: e.compound, name: e.compoundName });
+      out.push({ slug: e.compound, name: displayCompoundName(e.compound, e.compoundName) });
     }
   }
   return out;

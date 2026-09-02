@@ -162,6 +162,14 @@ export const libraryCategoryOf: Record<string, string> = Object.fromEntries(
  */
 const EXTRA_PROFILE_SLUGS: string[] = [];
 
+/** slug -> library DISPLAY NAME, for every compound in the taxonomy. The library is the site's
+ *  canonical spelling of a compound; the price data carries its own compoundName, transcribed from
+ *  each vendor's store, and the two can drift on capitalisation. See displayCompoundName() in
+ *  prices.ts for how that drift is reconciled (case only — never the longer library form). */
+export const libraryNameOf: Record<string, string> = Object.fromEntries(
+  peptideCategories.flatMap((c) => c.peptides.map((p) => [p.slug, p.name])),
+);
+
 export const PROFILE_SLUGS: Set<string> = new Set([
   ...peptideCategories.flatMap((c) => c.peptides.map((p) => p.slug)),
   ...EXTRA_PROFILE_SLUGS,
