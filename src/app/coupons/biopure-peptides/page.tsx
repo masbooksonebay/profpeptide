@@ -4,14 +4,18 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { vendorDiscountPct } from "@/data/prices";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import { vendors } from "@/data/vendors";
 import BackLink from "@/components/BackLink";
 
 
 export default function BioPurePeptidesCouponPage() {
-  const discountPct = vendorDiscountPct("biopure-peptides");
   const v = vendors["biopure-peptides"];
+  const rows = vendorProductRows("biopure-peptides");
+  const discountPct = vendorDiscountPct("biopure-peptides");
+  const autoApply = codeAutoApplies("biopure-peptides");
+  const shopUrl = makeShopUrlFor("biopure-peptides");
   return (
     <div className="section max-w-3xl">
       <BackLink href="/coupons">Back to Discount Codes</BackLink>
@@ -88,6 +92,23 @@ export default function BioPurePeptidesCouponPage() {
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             BioPure Peptides is US-based and made in the USA. All products are sold for laboratory and research use only.
+          </p>
+        </div>
+        {/* Catalog — same shared-component path as glacier-aminos, iron-peptides and
+            capstone-peptides. Rows DERIVED from vendorProductRows(); no hand-written table, no
+            per-vendor variant. Deep links verified live against real product pages before ship. */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">BioPure Peptides catalog &amp; prices</h2>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are BioPure Peptides&apos; list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
           </p>
         </div>
 

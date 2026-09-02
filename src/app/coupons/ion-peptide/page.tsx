@@ -4,7 +4,9 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { vendorDiscountPct } from "@/data/prices";
+import { vendors } from "@/data/vendors";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import BackLink from "@/components/BackLink";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
@@ -20,7 +22,11 @@ function P({ slug, children }: { slug: string; children: React.ReactNode }) {
 }
 
 export default function IonPeptideCouponPage() {
+  const v = vendors["ion-peptide"];
+  const rows = vendorProductRows("ion-peptide");
   const discountPct = vendorDiscountPct("ion-peptide");
+  const autoApply = codeAutoApplies("ion-peptide");
+  const shopUrl = makeShopUrlFor("ion-peptide");
   return (
     <div className="section max-w-3xl">
       <BackLink href="/coupons">Back to Discount Codes</BackLink>
@@ -53,6 +59,23 @@ export default function IonPeptideCouponPage() {
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Two points of context. Kovera Labs does not print an ISO 17025 or A2LA accreditation on its certificates, so no accreditation is claimed here &mdash; the strength of the report is its panel breadth and the independent, externally verifiable check, not a printed accreditation. And the certificate we read in full is a single lot of one compound; the library itself is broad and per-lot, but a researcher should confirm the specific batch on hand at koveralabs.com/verify before use.
+          </p>
+        </div>
+        {/* Catalog — same shared-component path as glacier-aminos, iron-peptides and
+            capstone-peptides. Rows DERIVED from vendorProductRows(); no hand-written table, no
+            per-vendor variant. Deep links verified live against real product pages before ship. */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">Ion Peptide catalog &amp; prices</h2>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are Ion Peptide&apos; list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
           </p>
         </div>
 

@@ -4,7 +4,9 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { vendorDiscountPct } from "@/data/prices";
+import { vendors } from "@/data/vendors";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
 import BackLink from "@/components/BackLink";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
@@ -20,7 +22,11 @@ function P({ slug, children }: { slug: string; children: React.ReactNode }) {
 }
 
 export default function ForgePerformanceCoCouponPage() {
+  const v = vendors["forge-performance-co"];
+  const rows = vendorProductRows("forge-performance-co");
   const discountPct = vendorDiscountPct("forge-performance-co");
+  const autoApply = codeAutoApplies("forge-performance-co");
+  const shopUrl = makeShopUrlFor("forge-performance-co");
   return (
     <div className="section max-w-3xl">
       <BackLink href="/coupons">Back to Discount Codes</BackLink>
@@ -54,6 +60,23 @@ export default function ForgePerformanceCoCouponPage() {
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Two points of context. None of Forge&rsquo;s three labs prints an ISO/IEC 17025 or A2LA accreditation mark on its certificates, so no accreditation is claimed here &mdash; the strength of the program is the breadth of the panel and the fact that every certificate is independently verifiable on the issuing lab&rsquo;s own portal, not a printed accreditation. And a published testing panel describes what is measured, not a purity result: a researcher should look up the specific batch on hand on the issuing laboratory&rsquo;s verifier before use.
+          </p>
+        </div>
+        {/* Catalog — same shared-component path as glacier-aminos, iron-peptides and
+            capstone-peptides. Rows DERIVED from vendorProductRows(); no hand-written table, no
+            per-vendor variant. Deep links verified live against real product pages before ship. */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">Forge Performance Co catalog &amp; prices</h2>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are Forge Performance Co&apos; list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
           </p>
         </div>
 
