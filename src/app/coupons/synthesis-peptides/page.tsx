@@ -1,11 +1,9 @@
 "use client";
 
 import FAQItem from "@/components/FAQItem";
-import { CopyCode } from "@/components/CopyCode";
-import { CouponPills } from "@/components/CouponPills";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
-import { RegionPill } from "@/components/RegionPill";
+import { CouponCodeCard } from "@/components/CouponCodeCard";
 import { vendorDiscountPct } from "@/data/prices";
 import BackLink from "@/components/BackLink";
 
@@ -18,13 +16,22 @@ export default function SynthesisPeptidesCouponPage() {
       <CouponBreadcrumb slug="synthesis-peptides" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Synthesis Peptides Discount Code &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Synthesis Peptides Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
-      <div className="flex flex-wrap items-center gap-2 mb-8">
-        <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full font-medium">Verified</span>
-        <span className="text-xs bg-slate-100 text-slate-700 border border-slate-300 px-2 py-0.5 rounded-full font-medium">&ge;98% Purity Verified</span>
-        <RegionPill slug="synthesis-peptides" />
-      </div>
+      {/* CONVERTED off the legacy hardcoded-CopyCode template 2026-09-02. The old head was
+          H1 -> a hand-written pill row -> a bare code box further down the page. Three of those
+          were defects, not styling:
+            · the H1 omitted the code, so it no longer matched the <title> the SERP shows;
+            · there were no salience sentences at all — the passage Google quotes was simply absent;
+            · 🔴 the "Verified" pill was a hand-written <span>, NOT <CouponPills>, so it bypassed
+              isCodeVerified() and asserted verification for a vendor that is not in the verified
+              set. Same class as the ungated S2 claim fixed at f6e85e2.
+          The whole pill row is gone. <CouponCodeCard> renders the only verified pill, and that one
+          IS gated — Synthesis shows none until a check:vendors run adds it.
+          Nothing was lost with the pills: the ≥98% purity figure and the US origin both already
+          live in prose (the intro paragraph and the testing paragraph), which is where the
+          standard pattern carries them — amino-club states neither as a pill either. */}
+      <CouponCodeCard slug="synthesis-peptides" className="mb-8" />
 
       <div className="space-y-8">
         <div>
@@ -96,19 +103,6 @@ export default function SynthesisPeptidesCouponPage() {
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Synthesis Peptides runs per-batch third-party HPLC testing on its research compounds, verifying a minimum of &ge;98% purity before release. The certificates are issued by Freedom Diagnostics, and a certificate resolves on the laboratory&rsquo;s own site rather than only on Synthesis&rsquo;s &mdash; so the check runs against the lab rather than against the vendor.
           </p>
-        </div>
-
-        <div className="border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b]">
-          <p className="text-xs text-gray-400 dark:text-slate-500 uppercase tracking-wider font-semibold mb-1">Your Discount Code</p>
-          <CopyCode code="PROFPEPTIDE" size="large" />
-          <CouponPills slug="synthesis-peptides" />
-          <a
-            href="/go/synthesis-peptides?from=coupon-card"
-            target="_blank"
-            rel="sponsored nofollow noopener"
-            className="btn-primary w-full text-center block"
-          >
-            Shop Synthesis Peptides</a>
         </div>
 
 

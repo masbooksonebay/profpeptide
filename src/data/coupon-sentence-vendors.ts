@@ -109,4 +109,8 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   "moglabs",
   // Added 2026-08-31.
   "iron-peptides",
+  // Converted off the legacy hardcoded-CopyCode template 2026-09-02 and added here the same day —
+  // the header note says these join the Set 'the moment they are converted'. fusion-peptide is now
+  // the only legacy page left, and it is retired + redirecting.
+  "synthesis-peptides",
 ]);
