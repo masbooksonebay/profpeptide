@@ -4,7 +4,9 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { vendorDiscountPct } from "@/data/prices";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
+import { vendors } from "@/data/vendors";
 import BackLink from "@/components/BackLink";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
@@ -20,7 +22,11 @@ function P({ slug, children }: { slug: string; children: React.ReactNode }) {
 }
 
 export default function CapstonePeptidesCouponPage() {
+  const v = vendors["capstone-peptides"];
+  const rows = vendorProductRows("capstone-peptides");
   const discountPct = vendorDiscountPct("capstone-peptides");
+  const autoApply = codeAutoApplies("capstone-peptides");
+  const shopUrl = makeShopUrlFor("capstone-peptides");
   return (
     <div className="section max-w-3xl">
       <BackLink href="/coupons">Back to Discount Codes</BackLink>
@@ -56,6 +62,35 @@ export default function CapstonePeptidesCouponPage() {
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             One point of context: Accumark Labs does not print a laboratory accreditation on its certificates, so no accreditation is claimed here &mdash; the strength of the record is the independent, externally verifiable check on the lab&rsquo;s own domain, not a printed accreditation. Capstone is US-based and ships domestically. All products are sold for laboratory and research use only.
+          </p>
+        </div>
+
+        {/* Catalog — identical to glacier-aminos and iron-peptides: the shared <VendorProductGrid>,
+            rows DERIVED from vendorProductRows() so the table cannot drift when prices refresh, and
+            the standard struck-list / post-code caption. No hand-written table, no per-vendor variant.
+            ⚠️ CAPSTONE IS MARK'S OWN BUSINESS and carries brand + compliance rules, so NO new prose
+            was written here beyond the standard caption — which contains only price mechanics (list
+            vs post-code, the code, the date). It makes no therapeutic, dosing or human-use claim and
+            names no compound, so it does not touch the RUO guardrails. The compound names in the grid
+            come from PP's own taxonomy, exactly as they already do in this page's catalog list and
+            FAQ above, and on /prices.
+            Deep links resolve to real product pages (verified live: /product/bpc-157-5-mg/ -> 200).
+            🔴 They carry NO attribution token, because Capstone's registry `url` is a bare homepage
+            with no ref/coupon parameter — unlike every other vendor in this class. That is expected
+            for Mark's own store (there is no affiliate commission to attribute to himself) and is
+            reported rather than "fixed" by inventing a token. */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">Capstone Peptides catalog &amp; prices</h2>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are Capstone Peptides&apos; list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
           </p>
         </div>
 
