@@ -4,7 +4,9 @@ import FAQItem from "@/components/FAQItem";
 import Link from "next/link";
 import { CouponBreadcrumb } from "@/components/CouponBreadcrumb";
 import { CouponCodeCard } from "@/components/CouponCodeCard";
-import { vendorDiscountPct } from "@/data/prices";
+import { VendorProductGrid, makeShopUrlFor } from "@/components/VendorProductGrid";
+import { vendorProductRows, vendorDiscountPct, codeAutoApplies, PRICES_UPDATED_DATE } from "@/data/prices";
+import { vendors } from "@/data/vendors";
 import BackLink from "@/components/BackLink";
 
 function Cat({ label, children }: { label: string; children: React.ReactNode }) {
@@ -20,7 +22,11 @@ function P({ slug, children }: { slug: string; children: React.ReactNode }) {
 }
 
 export default function IronPeptidesCouponPage() {
+  const v = vendors["iron-peptides"];
+  const rows = vendorProductRows("iron-peptides");
   const discountPct = vendorDiscountPct("iron-peptides");
+  const autoApply = codeAutoApplies("iron-peptides");
+  const shopUrl = makeShopUrlFor("iron-peptides");
   return (
     <div className="section max-w-3xl">
       <BackLink href="/coupons">Back to Discount Codes</BackLink>
@@ -60,6 +66,31 @@ export default function IronPeptidesCouponPage() {
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
             Two points of context. Freedom Diagnostics does not print a laboratory accreditation on these certificates, so none is claimed here &mdash; the strength of the record is the independent, externally verifiable check on the lab&rsquo;s own domain. And the certificates are published as a library rather than one per batch, which is why this page describes them that way. IRON is US-based. All products are sold for laboratory and research use only.
+          </p>
+        </div>
+
+        {/* Catalog — mirrors the glacier-aminos pattern exactly: shared <VendorProductGrid>, rows
+            DERIVED from vendorProductRows() so the table cannot drift when prices refresh, and the
+            same struck-list / post-code caption. Nothing here is hand-written per product.
+            The grid's Shop links are the vendor's affiliate deep links rather than /go/ — that is
+            deliberate and matches every other coupon page: per-vendor /coupons/{slug} product grids
+            are Phase B and explicitly excluded from check:go-routing (Phase-A surfaces — the hub,
+            /prices/*, /peptides/*, /best-peptide-vendors — are the ones that must route through /go/).
+            ⚠️ IRON deep links land on its sign-in page, because every product URL redirects to the
+            account wall. Accepted as-is (Mark, 2026-09-02): a login step is a reasonable landing for
+            a login-walled vendor, so no suppression. */}
+        <div>
+          <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-5">IRON Peptides catalog &amp; prices</h2>
+
+          <VendorProductGrid rows={rows} discountPct={discountPct} shopUrlFor={shopUrl} />
+
+          <p className="text-xs text-gray-400 dark:text-slate-500 mt-3">
+            Struck-through prices are IRON Peptides&apos; list price; the bold figure is{" "}
+            {autoApply ? (
+              <>your price after the {discountPct}% code</>
+            ) : (
+              <>your price once you apply code {v.code} at checkout</>
+            )}. Prices current as of {PRICES_UPDATED_DATE}.
           </p>
         </div>
 
