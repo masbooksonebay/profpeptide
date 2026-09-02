@@ -160,6 +160,21 @@ VENDORS = {
         notes="Onboarded 2026-07. GLP1/2/3 (PGL codes) UNVERIFIED — empty product descriptions. "
               "Out-of-scope carried: PNC-27 + Klotho (OUT_OF_SCOPE), ACE-031 + Gonadorelin (scope filter). "
               "Login + Cloudflare soft-gate (Store API readable)."),
+    # Onboarded to the price pipeline 2026-09-02. The HTML storefront sits behind an ACCOUNT LOGIN
+    # WALL (every catalog path 301s to /access-v3/), but that is irrelevant here: the woo adapter
+    # reads /wp-json/wc/store/v1/products, which IRON serves OPEN and unauthenticated. No session
+    # cookie needed (contrast modern-aminos, whose Store API requires one).
+    # INTEGRITY: the endpoint returns X-WP-Total, so the adapter's IncompletePull refusal is armed.
+    # Verified it is a true total and not a per_page cap — per_page=20 reports 5 pages, per_page=100
+    # reports 1, and page 2 returns 0 items.
+    # GLP LINE is coded IR-1SG / IR-2TZ / IR-3RT — see to_prices.CODED_DECODE for what is and is
+    # NOT asserted. Catalog also carries SARMs, capsules, droppers, sprays and MERCH, all of which
+    # are out of PP scope and excluded downstream.
+    "iron-peptides": dict(name="IRON Peptides", domain="ironpeptides.is", adapter="woo",
+        variation_model="dosage", coded_decoder=True, sale_posture="No sale (0/100 on_sale).",
+        notes="Store API open though the storefront is login-walled. Variations are 'Select MG' "
+              "(dosage); 'Size' variations are merch (apparel) and are excluded. GLP coded "
+              "IR-1SG/IR-2TZ/IR-3RT."),
     "integrative-peptides": dict(name="Integrative Peptides", domain="integrativepeptides.com", adapter="woo",
         variation_model="dosage", coded_decoder=False, sale_posture="Product sale 1/73.",
         notes="Mostly oral/topical wellness — small peptide overlap."),

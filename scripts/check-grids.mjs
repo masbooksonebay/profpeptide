@@ -119,12 +119,6 @@ const ONBOARDING_BACKLOG = {
   // price pull IS possible later. Catalog mixes peptides with research chemicals/nootropics outside
   // PP's scope, and its GLP line is coded (MOG-3 R = Retatrutide from their own lot RT103 cert;
   // MOG-2 T left undecoded) — both need handling in a pull, so coupon-page-only for now.
-  // Onboarded 2026-08-31 (coupon page + registry live). Code PROFPEPTIDE, 10% customer discount.
-  // 🔴 Storefront is behind an ACCOUNT LOGIN WALL: every HTML catalog path redirects to a sign-in
-  // page. Its woo Store API is nonetheless open, so a pull is technically possible — but publishing
-  // prices a reader cannot see without registering is Mark's call, not a default. Same posture as
-  // level-up-peptides. Coupon-page-only, no grid.
-  "iron-peptides":      { reason: "account login wall on the HTML storefront (Store API open) — coupon-page-only, no grid pending a decision on publishing prices readers cannot see without an account", since: "2026-08-31" },
   "moglabs":            { reason: "GoAffPro coupon-only build (open WooCommerce, price pull possible later) — no /prices rows yet; catalog mixes non-peptide research chemicals and the GLP line is partly undecoded", since: "2026-08-30" },
 };
 

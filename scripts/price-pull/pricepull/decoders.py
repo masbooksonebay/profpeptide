@@ -308,6 +308,25 @@ def _ameano(n):
     if re.match(r'AMP-3P', n, re.I): return (_c('Retatrutide', 'AMP-3P'), 'retatrutide', 'single')
 
 
+@_decoder('iron-peptides')
+# IRON's GLP line is coded IR-1SG / IR-2TZ / IR-3RT. Following the glacier/mile-high pattern, the
+# DOC keeps the vendor's own code with an explicit [coded, UNVERIFIED] marker and the compound is
+# asserted downstream in to_prices.CODED_DECODE — so the master doc always records what IRON
+# actually calls the product, and only the site surface shows the decoded compound.
+# The per-code evidence (and the fact that the three codes are NOT equally supported) is recorded
+# in full at to_prices.CODED_DECODE — read it before strengthening any claim, particularly IR-1SG.
+# MERCH is the class no other vendor on the roster has: IRON sells apparel and caps whose variations
+# are a clothing 'Size' attribute, not a dose. Excluded explicitly rather than left to the generic
+# no-parseable-size rule, so the reason is recorded rather than inferred from an absence.
+def _iron(n):
+    if re.match(r'IR-[123]\s*(SG|TZ|RT)', n, re.I):
+        code = re.match(r'(IR-[123]\s*(?:SG|TZ|RT))', n, re.I).group(1).upper()
+        return (f'{code} [coded, UNVERIFIED]', None, 'single_bk')
+    if re.search(r'hoodie|sweatshirt|t-?shirt|\bcap\b|beanie|merch', n, re.I):
+        return ('EXCLUDE', None, None)
+    return None
+
+
 @_decoder('glacier-aminos')  # UNVERIFIED: no COA/MW/formula/name on product pages or /coa -> coded name only
 def _glacier(n):
     if re.match(r'GLA-2\.5', n, re.I): return ('Tirz/Reta blend [backlog]', None, 'blend_bk')

@@ -76,6 +76,23 @@ CODED_DECODE = {
     # decoders.py (verified); only its GLP-3 is mapped here.
     "la-peptides":         {"GLP – 1 (S)": "semaglutide", "GLP – 2 (T)": "tirzepatide", "GLP – 3 (R)": "retatrutide"},
     "mile-high-compounds": {"MHC-1 SM": "semaglutide", "MHC-2 TRZ": "tirzepatide", "MHC-3 RT": "retatrutide"},
+    # IRON — decode VERIFIED against the Store API on 2026-09-02, and the three codes do NOT rest on
+    # equal evidence. Recorded per code so a later reader does not level them up:
+    #   IR-3RT -> retatrutide  MECHANISTIC, and unique: the product description states agonist
+    #             activity at THREE receptors — GLP-1R, GIPR and GCGR. A triple agonist including
+    #             glucagon is retatrutide and nothing else. ⚠️ IRON's description USED to name
+    #             "Retatrutide" outright (read during vendor recon days earlier); that naming has
+    #             since been REMOVED from the page. The decode still holds on mechanism, but the
+    #             hard-naming evidence is gone — re-check before strengthening any claim about it.
+    #   IR-2TZ -> tirzepatide  STRONGEST, two independent lines: dual GLP-1/GIP agonist (uniquely
+    #             tirzepatide among marketed compounds) AND the product's own SKU, IRONP-TRZ-US-10MG.
+    #   IR-1SG -> semaglutide  WEAKEST — convention plus URL. Its description is generic NATIVE
+    #             GLP-1 boilerplate naming no molecule, with no CAS, MW or formula. The evidence is
+    #             the "SG" code letters and the vendor's own product address /product/sema-glp-1/.
+    #             That is the same standard already accepted for glacier's "GLA-1 SM" and mile-high's
+    #             "MHC-1 SM", so it is mapped for consistency — but it is corroboration, not proof,
+    #             and it is the one to drop first if the standard tightens.
+    "iron-peptides":       {"IR-1SG": "semaglutide", "IR-2TZ": "tirzepatide", "IR-3RT": "retatrutide"},
     # peptidology's GLP codes are intentionally absent: the vendor is suppressed from the three
     # incretin pages by VENDOR_COMPOUND_SUPPRESS (name-agnostic), so decoding them here would be
     # dead weight. Do NOT re-add — suppression happens post-resolve regardless of the code.

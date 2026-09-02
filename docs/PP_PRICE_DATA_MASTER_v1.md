@@ -2852,3 +2852,93 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 
 ---
 
+
+
+## VENDOR: IRON Peptides
+- **slug:** iron-peptides | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** ironpeptides.is
+- **traffic:** (not pulled) | **pulled:** September 2 2026
+- **sale posture:** No sale (0/100 on_sale).
+
+### Single compounds
+| Compound | Size | Base | $/mg | Regular | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| 5-Amino-1MQ | 10mg | $69.00 | $6.90 | — | ✓ | product/5-amino-1mq/ |
+| 5-Amino-1MQ | 50mg | $189.00 | $3.78 | — | ✓ | product/5-amino-1mq/ |
+| AOD-9604 | 5mg | $59.00 | $11.80 | — | ✓ | product/aod-9604-5mg/ |
+| AOD-9604 | 10mg | $109.00 | $10.90 | — | ✓ | product/aod-9604-5mg/ |
+| BPC-157 | 10mg | $79.00 | $7.90 | — | ✓ | product/bpc-157-10mg/ |
+| Cagrilintide | 10mg | $89.00 | $8.90 | — | ✓ | product/cagrilintide-10mg/ |
+| Cibinetide | 10mg | $89.00 | $8.90 | — | ✓ | product/ara-290/ |
+| CJC-1295 | 10mg | $89.00 | $8.90 | — | ✓ | product/cjc-1295-10mg/ |
+| DSIP | 5mg | $79.00 | $15.80 | — | ✓ | product/dsip/ |
+| Epitalon | 10mg | $89.00 | $8.90 | — | ✓ | product/epitalon/ |
+| FOXO4-DRI [backlog] | 10mg | $239.00 | $23.90 | — | ✓ | product/foxo4-dri-d-retro-inverso-10mg/ |
+| GHK-Cu | 50mg | $54.00 | $1.08 | — | ✓ | product/ghk-cu/ |
+| GHK-Cu | 100mg | $89.00 | $0.89 | — | ✓ | product/ghk-cu/ |
+| Glutathione | 200mg | $39.00 | $0.20 | — | ✓ | product/l-glutathione-200mg/ |
+| Glutathione | 500mg | $99.00 | $0.20 | — | ✓ | product/l-glutathione/ |
+| Glutathione | 1500mg | $109.00 | $0.07 | — | ✓ | product/l-glutathione-1500mg/ |
+| IGF-1 LR3 | 1mg | $89.00 | $89.00 | — | ✓ | product/igf-1-lr3-1mg/ |
+| Ipamorelin | 10mg | $79.00 | $7.90 | — | ✓ | product/ipamorelin-5mg/ |
+| IR-1SG [coded, UNVERIFIED] | 10mg | $79.00 | $7.90 | — | ✓ | product/sema-glp-1/ |
+| IR-1SG [coded, UNVERIFIED] | 30mg | $179.00 | $5.97 | — | ✓ | product/sema-glp-1/ |
+| IR-2TZ [coded, UNVERIFIED] | 10mg | $84.00 | $8.40 | — | ✓ | product/t-glp-2/ |
+| IR-2TZ [coded, UNVERIFIED] | 30mg | $229.00 | $7.63 | — | ✓ | product/t-glp-2/ |
+| IR-2TZ [coded, UNVERIFIED] | 60mg | $319.00 | $5.32 | — | ✓ | product/t-glp-2/ |
+| IR-3RT [coded, UNVERIFIED] | 5mg | $89.00 | $17.80 | — | ✓ | product/glp-3/ |
+| IR-3RT [coded, UNVERIFIED] | 10mg | $129.00 | $12.90 | — | ✓ | product/glp-3/ |
+| IR-3RT [coded, UNVERIFIED] | 30mg | $249.00 | $8.30 | — | ✓ | product/glp-3/ |
+| IR-3RT [coded, UNVERIFIED] | 60mg | $329.00 | $5.48 | — | ✓ | product/glp-3/ |
+| KPV | 10mg | $89.00 | $8.90 | — | ✓ | product/kpv/ |
+| Livagen [backlog] | 20mg | $79.00 | $3.95 | — | ✓ | product/livagen-20-mg/ |
+| Mazdutide [backlog] | 10mg | $109.00 | $10.90 | — | ✓ | product/mazdutide-10mg/ |
+| Melanotan II | 10mg | $59.00 | $5.90 | — | ✓ | product/melanotan-ii-mt-2-10mg/ |
+| MOTS-C | 10mg | $74.00 | $7.40 | — | ✓ | product/mots-c-5mg/ |
+| NAD+ | 500mg | $149.00 | $0.30 | — | ✓ | product/nad/ |
+| NAD+ | 1000mg | $199.00 | $0.20 | — | ✓ | product/nad/ |
+| Oxytocin | 5mg | $59.00 | $11.80 | — | ✓ | product/oxytocin-5mg/ |
+| Pancragen [backlog] | 20mg | $79.00 | $3.95 | — | ✓ | product/pancragen-20-mg/ |
+| Prostamax [backlog] | 20mg | $79.00 | $3.95 | — | ✓ | product/prostamax-20-mg/ |
+| PT-141 | 10mg | $69.00 | $6.90 | — | ✓ | product/pt-141-10mg/ |
+| Selank | 10mg | $79.00 | $7.90 | — | ✓ | product/selank/ |
+| Semax | 10mg | $79.00 | $7.90 | — | ✓ | product/semax/ |
+| SLU-PP-332 [backlog] | 5mg | $69.00 | $13.80 | — | ✗ | product/slu-pp-332-10mg/ |
+| SS-31 | 10mg | $99.00 | $9.90 | — | ✓ | product/ss-31/ |
+| SS-31 | 50mg | $279.00 | $5.58 | — | ✓ | product/ss-31/ |
+| Survodutide [backlog] | 10mg | $139.00 | $13.90 | — | ✗ | product/survodutide/ |
+| TB-500 | 10mg | $94.00 | $9.40 | — | ✓ | product/tb-500-10mg/ |
+| Tesamorelin | 10mg | $109.00 | $10.90 | — | ✓ | product/tesamorelin-10mg/ |
+| Testagen [backlog] | 20mg | $79.00 | $3.95 | — | ✓ | product/testagen-20-mg/ |
+| VIP | 10mg | $89.00 | $8.90 | — | ✓ | product/vip/ |
+
+### Blends (total mg; ratio where published)
+| Blend | Components | Total mg | Base | Ratio | Stock | Vendor Slug |
+| --- | --- | --- | --- | --- | --- | --- |
+| CJC-1295 (DAC)/Ipamorelin | CJC-1295/Ipamorelin | 10mg | $109.00 | not published | ✓ | product/ipamorelin-cjc-1295-no-dac/ |
+| GLOW | GHK-Cu/BPC-157/TB-500 | 70mg | $159.00 | not published | ✓ | product/glow-70mg/ |
+| KLOW | GHK-Cu/BPC-157/TB-500/KPV | 80mg | $184.00 | 50/10/10/10 (published) | ✓ | product/klow-80mg/ |
+| Wolverine (BPC-157/TB-500) | BPC-157/TB-500 | 10mg | $109.00 | 5/5 (published) | ✓ | product/bpc-tb/ |
+
+### Sprays / strips (separate format, no $/mg)
+| Product | Size | Base | Stock |
+| --- | --- | --- | --- |
+| Adamax (spray) | — | $109.00 | ✗ |
+| AOD-9604 (spray) | — | $89.00 | ✓ |
+| BPC-157 (spray) | — | $99.00 | ✓ |
+| DSIP (spray) | — | $99.00 | ✗ |
+| GHK-Cu (spray) | — | $79.00 | ✗ |
+| Glutathione (spray) | — | $109.00 | ✓ |
+| Melanotan I (spray) | — | $89.00 | ✓ |
+| Melanotan II (spray) | — | $89.00 | ✓ |
+| NAD+ (spray) | — | $169.00 | ✓ |
+| Oxytocin (spray) | — | $99.00 | ✗ |
+| PT-141 (spray) | — | $119.00 | ✗ |
+| Selank (spray) | — | $89.00 | ✓ |
+| Semax (spray) | 30mg | $89.00 | ✓ |
+| TB-500 (spray) | — | $99.00 | ✓ |
+| VIP (spray) | — | $99.00 | ✓ |
+
+### Excluded: clinical/other, no parseable size (Rule 4), oral/capsule, out-of-scope (SARMs/Rx/cosmetics), supply — bac water/supplies, capsules/oral forms, SARMs, Rx, cosmetics, clinical hormones (out of PP scope).
+
+---
+

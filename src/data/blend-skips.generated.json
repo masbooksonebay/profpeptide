@@ -11,8 +11,8 @@
     "no-size-or-price": "No parseable Total-mg config or price — nothing comparable to publish.",
     "uncaptured-malformed-row": "Row counted in the ### Blends table but too malformed to enter the pipeline (no vendor slug / <4 columns)."
   },
-  "docBlendRows": 202,
-  "emittedBlendRows": 141,
+  "docBlendRows": 206,
+  "emittedBlendRows": 145,
   "skippedBlendRows": 61,
   "byReason": {
     "backlog": 1,

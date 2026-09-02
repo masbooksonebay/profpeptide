@@ -83,6 +83,21 @@ SIZE_OVERRIDE = {
     "biopure-peptides": {
         "Kisspeptin-10": None,  # profile
     },
+    # iron-peptides — 4 size-less. UNUSUALLY, three of the four are RECOVERABLE without opening a
+    # product page: IRON encodes the vial size in its own SKU string, which the Store API returns.
+    # That is a vendor-authored field, not a scrape of a related-products grid (the AMP/Selank
+    # failure mode this file warns about), so the mg below are filled rather than left None.
+    #   Thymosin Alpha 1  VIAL-THYMALPHA1-10MG   -> 10
+    #   Thymalin          VIAL-THYMALIN-10MG     -> 10
+    #   Kisspeptin-10     VIAL-KISSPEPTIN-10MG   -> 10
+    # Dihexa is deliberately absent: its SKU is CAPS-DIHEXA-10MG-60 — a 60-count CAPSULE pack, an
+    # oral form that is out of PP scope regardless of size, so it is correctly excluded, not missing.
+    # ⚠️ These three stay OUT of the grid today: nothing reads this file yet (see the header).
+    "iron-peptides": {
+        "Thymosin Alpha 1": 10,   # profile — from SKU VIAL-THYMALPHA1-10MG
+        "Thymalin [backlog]": 10, # no profile (backlog) — from SKU VIAL-THYMALIN-10MG
+        "Kisspeptin-10": 10,      # profile — from SKU VIAL-KISSPEPTIN-10MG
+    },
     # real-peptides — 1 size-less
     "real-peptides": {
         "Mazdutide [backlog]": None,  # no profile (backlog/hub)
