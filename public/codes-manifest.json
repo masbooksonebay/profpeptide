@@ -322,6 +322,13 @@
     "url": "https://peptidology.co/?ref=mkmhgxqi"
   },
   {
+    "slug": "peptira",
+    "name": "Peptira",
+    "code": "PROFPEPTIDE",
+    "discount": "10% off",
+    "url": "https://peptira.com/?ref=PROFPEPTIDE"
+  },
+  {
     "slug": "purity-peptides",
     "name": "Purity Peptides",
     "code": "PROF15",

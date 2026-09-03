@@ -238,6 +238,7 @@ export const generatedSearchIndex: SearchEntry[] = [
   {"title":"Peptide Partners Discount Code","url":"/coupons/peptide-partners","category":"coupon","description":"Peptide Partners coupon code and promo offer","tags":[]},
   {"title":"Peptide Giants Discount Code","url":"/coupons/peptide-giants","category":"coupon","description":"Peptide Giants coupon code and promo offer","tags":[]},
   {"title":"Peptides.gg Discount Code","url":"/coupons/peptides-gg","category":"coupon","description":"Peptides.gg coupon code and promo offer","tags":[]},
+  {"title":"Peptira Discount Code","url":"/coupons/peptira","category":"coupon","description":"Peptira coupon code and promo offer","tags":[]},
   {"title":"Purity Peptides Discount Code","url":"/coupons/purity-peptides","category":"coupon","description":"Purity Peptides coupon code and promo offer","tags":[]},
   {"title":"Real Peptides Discount Code","url":"/coupons/real-peptides","category":"coupon","description":"Real Peptides coupon code and promo offer","tags":[]},
   {"title":"Royal Peptides Discount Code","url":"/coupons/royal-peptides","category":"coupon","description":"Royal Peptides coupon code and promo offer","tags":[]},

@@ -693,6 +693,51 @@ export const vendors: Record<string, Vendor> = {
     facts: { coa: "per-batch", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
     blockNote: "Per-batch COAs",
   },
+  // Onboarded 2026-09-03. Peptira LLC, PO Box 391, Chadron NE 69337 (Support@peptira.com). Store
+  // REST API open and unauthenticated; catalog = 100 products. Single lab: Freedom Diagnostics,
+  // client name "Peptira LLC". 320 certificates published across 86 of the 100 products, per-batch
+  // with a historical trail (not a fixed one-per-SKU library).
+  // 🔴 LAB-SIDE RESOLVABILITY — the reason this vendor clears the gate, and the strongest result on
+  // the roster to date. Checked five incretin certificates against Freedom Diagnostics' own domain:
+  // FOUR resolved byte-identical to Peptira's copy, and the fifth (Survodutide) matched in content.
+  // Same class of check as iron-peptides and orbitrex-peptides, cleaner hit rate than either.
+  // PANEL (what these certificates print): identity and purity by HPLC-UV with mass spec; purity
+  // and content measured PER-VIAL across 3 vials, individually reported and averaged (not a single
+  // lot figure); appearance; bacterial endotoxin in duplicate, ≤0.05 EU/mL. No accreditation is
+  // printed on these certificates, so `labAccreditation` stays empty.
+  // 🔴 `purityStandard` LEFT EMPTY ON PURPOSE. The site states purity three inconsistent ways
+  // ("typically ≥97%", "Purity 99%", "Purity ≥97% … typically +99%") — none is picked; the page
+  // points to the certificates' own per-vial measured result instead. Same treatment as IRON.
+  // DECODE — two evidence tiers, worded differently on the page so neither borrows the other's
+  // confidence:
+  //   CAG-4 = Cagrilintide — VERIFIED. Its own certificate names Cagrilintide as BOTH Product and
+  //     Identity, and its WooCommerce slug is literally `cagrilintide`.
+  //   Survodutide — VERIFIED, sold and certified under its own name, no code involved.
+  //   RETA-3 / SEMA-1 / TIRZ-2 — CORROBORATED ONLY. Their certificates are themselves GLP-coded
+  //     (GLP RT / GLP SM / GLP TZ); no CAS, formula or MW appears anywhere. Same standard as
+  //     Glacier's GLA-1 SM — a naming convention, not certificate-confirmed identity.
+  //   No mazdutide in the catalog.
+  // ⚠️ PLATFORM NOT RECORDED. A loader script on the page read as GoAffPro, but Mark confirmed
+  // Peptira is NOT on GoAffPro — likely a stale/leftover script, not the live affiliate platform.
+  // Left unrecorded rather than guessed.
+  // Internal only, NEVER rendered: 10% reader discount, 15% PP commission, 30-day cookie window
+  // (confirmed from the live Set-Cookie header, not vendor copy).
+  "peptira": {
+    name: "Peptira",
+    code: "PROFPEPTIDE",
+    discount: "10% off",
+    region: "US",
+    url: "https://peptira.com/?ref=PROFPEPTIDE",
+    detailPage: "/coupons/peptira",
+    facts: {
+      coa: "per-batch",
+      labName: "Freedom Diagnostics",
+      testMethods: "HPLC-UV identity + mass spec, per-vial purity/content (3-vial average)",
+      contaminants: "Endotoxin (duplicate, \u2264 0.05 EU/mL)",
+    },
+    // PROPOSED, awaiting Mark's approval — see report.
+    blockNote: "Freedom Diagnostics \u00b7 byte-identical COAs",
+  },
   "purity-peptides": {
     name: "Purity Peptides",
     code: "PROF15",

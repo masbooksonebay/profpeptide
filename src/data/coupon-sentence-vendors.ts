@@ -118,4 +118,7 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // part of the treatment that exists purely to give Google a quotable block. An omission, not a
   // decision: nothing anywhere recorded a reason to hold it back.
   "orbitrex-peptides",
+  // Added at onboarding 2026-09-03 — Orbitrex shipped without this and had to be fixed after the
+  // fact; Peptira joins the Set the same day its coupon page ships so that gap can't repeat.
+  "peptira",
 ]);

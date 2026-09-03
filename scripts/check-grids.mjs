@@ -120,6 +120,10 @@ const ONBOARDING_BACKLOG = {
   // PP's scope, and its GLP line is coded (MOG-3 R = Retatrutide from their own lot RT103 cert;
   // MOG-2 T left undecoded) — both need handling in a pull, so coupon-page-only for now.
   "moglabs":            { reason: "GoAffPro coupon-only build (open WooCommerce, price pull possible later) — no /prices rows yet; catalog mixes non-peptide research chemicals and the GLP line is partly undecoded", since: "2026-08-30" },
+  // Onboarded 2026-09-03 (coupon page + registry live). Store REST API is open and unauthenticated
+  // — a price pull IS possible — but this task was scoped to onboarding only, not a pull. 100
+  // products, 320 Freedom Diagnostics certificates across 86 of them. Coupon-page-only for now.
+  "peptira":            { reason: "onboarding-only scope — Store REST API open and unauthenticated, price pull possible later but not run", since: "2026-09-03" },
 };
 
 // ── loaders ─────────────────────────────────────────────────────────────────

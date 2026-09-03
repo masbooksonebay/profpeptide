@@ -67,6 +67,7 @@ export const couponLead: Record<string, string> = {
   "peptide-partners": "Four independent batch tests, published COAs", // D (multi-lab)
   "peptide-giants": "Every batch Janoshik-tested, public reports", // A
   "peptides-gg": "Freedom Diagnostics per-batch COAs, US-made", // A
+  "peptira": "Freedom Diagnostics COAs, byte-identical on the lab's own domain", // A (named lab; the lab-side byte-identical resolution is the differentiator, same class as iron-peptides/orbitrex-peptides)
   "purity-peptides": "99%+ HPLC/mass-spec, third-party COAs", // C
   "real-peptides": "Freedom Diagnostics per-product COAs, ≥99%", // A
   "royal-peptides": "Independent Janoshik batch reports, 99%+", // A
