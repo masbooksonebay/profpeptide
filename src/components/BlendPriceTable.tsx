@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { blendPriceRows, type BlendRow } from "@/data/prices";
 import { CopyCode } from "@/components/CopyCode";
+import { backLinkParam } from "@/data/back-link-sources";
 
 function fmt(n: number): string {
   return "$" + n.toFixed(2);
@@ -55,7 +56,7 @@ export default function BlendPriceTable({ blendSlug, config }: { blendSlug: stri
           <div key={i} className={`${GRID} py-2.5 border-b border-gray-100 dark:border-slate-800`}>
             <div className="min-w-0 self-baseline">
               {r.couponPage ? (
-                <Link href={r.couponPage} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.vendorName}</Link>
+                <Link href={`${r.couponPage}?from=${backLinkParam("price-grid", blendSlug)}`} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.vendorName}</Link>
               ) : (
                 <span className="text-sm font-semibold text-[#16181B] dark:text-slate-100">{r.vendorName}</span>
               )}
@@ -84,7 +85,7 @@ export default function BlendPriceTable({ blendSlug, config }: { blendSlug: stri
             <div className="flex items-baseline justify-between gap-2">
               <div className="flex-1 min-w-0 flex items-baseline gap-2 flex-wrap">
                 {r.couponPage ? (
-                  <Link href={r.couponPage} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.vendorName}</Link>
+                  <Link href={`${r.couponPage}?from=${backLinkParam("price-grid", blendSlug)}`} className="text-sm font-semibold text-[#3A759F] hover:underline">{r.vendorName}</Link>
                 ) : (
                   <span className="text-sm font-semibold text-[#16181B] dark:text-slate-100">{r.vendorName}</span>
                 )}

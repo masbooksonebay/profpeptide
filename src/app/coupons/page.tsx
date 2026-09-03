@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import { backLinkParam } from "@/data/back-link-sources";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import { Icon } from "@/components/CategoryIcon";
 import { VendorCodeChip } from "@/components/VendorCodeChip";
@@ -107,7 +108,7 @@ function VendorCard({ v }: { v: Vendor }) {
           }`}
         >
           {v.detailPage ? (
-            <Link href={v.detailPage} className="inline-block text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-all duration-150 hover:scale-105 origin-left">
+            <Link href={`${v.detailPage}?from=${backLinkParam("coupon-hub-card")}`} className="inline-block text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-all duration-150 hover:scale-105 origin-left">
               {v.name}
             </Link>
           ) : (
@@ -169,7 +170,7 @@ function VendorCard({ v }: { v: Vendor }) {
 
         {v.detailPage && (
           <NavLink
-            href={v.detailPage}
+            href={`${v.detailPage}?from=${backLinkParam("coupon-hub-card")}`}
             className="block w-full text-center text-xs font-medium text-[#3A759F] hover:text-[#0a5c60] mt-3 py-2 rounded-lg hover:bg-[#3A759F]/10 transition-colors"
           >Learn More</NavLink>
         )}

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { vendors, type Vendor } from "@/data/vendors";
 import JsonLd from "@/components/JsonLd";
+import { backLinkParam } from "@/data/back-link-sources";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import NavLink from "@/components/NavLink";
 
@@ -163,7 +164,7 @@ export default function VendorTestingIndexPage() {
             {rows.map((r) => (
               <tr key={r.slug} className="border-t border-gray-100 dark:border-slate-800 align-top">
                 <th scope="row" className="px-3 py-3 text-left font-medium whitespace-nowrap sticky left-0 bg-white dark:bg-[#0f172a]">
-                  <Link href={`/coupons/${r.slug}`} className="text-[#3A759F] hover:underline">{r.name}</Link>
+                  <Link href={`/coupons/${r.slug}?from=${backLinkParam("vendor-testing")}`} className="text-[#3A759F] hover:underline">{r.name}</Link>
                 </th>
                 {COLUMNS.map((c) => (
                   <td key={c.key} className="px-3 py-3"><Cell value={r[c.key]} /></td>

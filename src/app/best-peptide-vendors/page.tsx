@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
+import { backLinkParam } from "@/data/back-link-sources";
 import { CopyCode } from "@/components/CopyCode";
 import { vendors as vendorRegistry } from "@/data/vendors";
 import { FEATURED_VENDORS_REVIEWED_DATE, FEATURED_VENDORS_REVIEWED_DATE_ISO } from "@/data/reviewed-dates";
@@ -156,7 +157,7 @@ export default function BestPeptideVendorsPage() {
             >
               <div className="flex items-start justify-between gap-4 mb-3 flex-wrap">
                 <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100">
-                  <Link href={`/coupons/${v.slug}`} className="hover:text-[#3A759F] transition-colors">
+                  <Link href={`/coupons/${v.slug}?from=${backLinkParam("featured-vendors")}`} className="hover:text-[#3A759F] transition-colors">
                     {v.name}
                   </Link>
                 </h2>
@@ -195,7 +196,7 @@ export default function BestPeptideVendorsPage() {
                   </a>
                 </div>
                 <NavLink
-                  href={`/coupons/${v.slug}`}
+                  href={`/coupons/${v.slug}?from=${backLinkParam("featured-vendors")}`}
                   className="inline-block text-xs font-medium text-[#3A759F] hover:underline"
                 >Read full review</NavLink>
               </div>

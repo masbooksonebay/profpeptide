@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { vendors } from "@/data/vendors";
 import { VendorCodeChip } from "@/components/VendorCodeChip";
+import { backLinkParam } from "@/data/back-link-sources";
 
 export const metadata = {
   alternates: { canonical: "/vendors" },
@@ -41,7 +42,7 @@ export default function VendorProfilesPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {activeVendors.map(([slug, v]) => (
           <div key={v.detailPage} className="card group relative flex flex-col">
-            <Link href={v.detailPage} aria-label={`View ${v.name} profile`} className="absolute inset-0 z-0" />
+            <Link href={`${v.detailPage}?from=${backLinkParam("vendors-card")}`} aria-label={`View ${v.name} profile`} className="absolute inset-0 z-0" />
             <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors">
               {v.name}
             </h2>

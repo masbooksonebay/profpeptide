@@ -10,6 +10,7 @@ import { LISTED } from "@/data/attribution";
 import { VENDOR_PINS } from "@/data/vendor-pins";
 import NavLink from "@/components/NavLink";
 import AlsoStocking from "@/components/AlsoStocking";
+import { backLinkParam } from "@/data/back-link-sources";
 
 export interface VendorHighlight {
   slug: string;
@@ -144,7 +145,7 @@ export default function VendorHighlightBlock({ highlights, compoundSlug, from = 
             >
               <div className="flex items-center justify-between gap-2 px-4 py-3 border-b border-gray-100 dark:border-slate-700">
                 <Link
-                  href={v.detailPage}
+                  href={`${v.detailPage}?from=${backLinkParam(from, from === "profile-block" ? compoundSlug : undefined)}`}
                   className="text-sm font-bold text-[#16181B] dark:text-slate-100 hover:text-[#3A759F] transition-colors"
                 >
                   {v.name}

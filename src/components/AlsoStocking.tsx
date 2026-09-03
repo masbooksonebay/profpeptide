@@ -3,6 +3,7 @@ import NavLink from "@/components/NavLink";
 import { vendors } from "@/data/vendors";
 import { alsoStockingVendors, compoundVendorCount, blendVendorCount, isBlendSlug } from "@/data/prices";
 import { peptideCategories } from "@/data/peptideCategories";
+import { backLinkParam } from "@/data/back-link-sources";
 
 // Display name from the /peptides taxonomy — the same table the library page and the FAQ picker
 // labels read, so the compound is never named two different ways on one site.
@@ -46,7 +47,7 @@ export default function AlsoStocking({ compoundSlug }: { compoundSlug: string })
         {also.map((slug, i) => (
           <span key={slug}>
             {i > 0 && ", "}
-            <Link href={`/coupons/${slug}`} className="text-[#3A759F] hover:underline">
+            <Link href={`/coupons/${slug}?from=${backLinkParam("also-stocking", compoundSlug)}`} className="text-[#3A759F] hover:underline">
               {vendors[slug]?.name ?? slug}
             </Link>
           </span>
