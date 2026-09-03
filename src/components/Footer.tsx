@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { routes } from "@/data/routes";
 import FooterNewsletter from "@/components/FooterNewsletter";
+import FooterDisclaimer from "@/components/FooterDisclaimer";
 
 export default function Footer() {
   return (
@@ -72,9 +73,7 @@ export default function Footer() {
           <div className="text-xs text-gray-400 dark:text-slate-500">
             <p>&copy; {new Date().getFullYear()} Strength Cycle Studios, LLC. All rights reserved.</p>
           </div>
-          <p className="text-xs text-gray-400 dark:text-slate-500 text-center sm:text-right max-w-sm">
-            For educational and research purposes only. Not medical advice. Not for human consumption.
-          </p>
+          <FooterDisclaimer />
         </div>
       </div>
     </footer>

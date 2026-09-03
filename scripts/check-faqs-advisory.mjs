@@ -206,6 +206,38 @@ if (findings.length > 0) {
   process.exit(1);
 }
 
+// ── TRT-slug drift guard ──────────────────────────────────────────────────────────────────────
+// src/data/trt-faq-slugs.ts hand-maintains the category:"trt" slug list rather than importing
+// faqQuestions.ts (2,500+ lines) into the client bundle FooterDisclaimer ships on every page \u2014 see
+// that file's own header. A hand-maintained list can silently drift from the real data (a TRT page
+// added/removed/recategorised without updating it), which would leave the wrong disclaimer on a
+// page again \u2014 exactly the bug this whole fix exists to close. Asserted here rather than in a new
+// script: this file already reads faqQuestions.ts as raw text for the shape-A/B extraction above.
+const faqSrc = readFileSync(join(root, "src/data/faqQuestions.ts"), "utf8");
+const realTrtSlugs = new Set();
+for (const m of stripComments(faqSrc).matchAll(/slug:\s*"([a-z0-9-]+)"[\s\S]{0,400}?category:\s*"trt"/g)) {
+  realTrtSlugs.add(m[1]);
+}
+const trtSlugsSrc = readFileSync(join(root, "src/data/trt-faq-slugs.ts"), "utf8");
+const hardcodedTrtSlugs = new Set([...stripComments(trtSlugsSrc).matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]));
+
+const missingFromHardcoded = [...realTrtSlugs].filter((s) => !hardcodedTrtSlugs.has(s));
+const staleInHardcoded = [...hardcodedTrtSlugs].filter((s) => !realTrtSlugs.has(s));
+
+if (missingFromHardcoded.length || staleInHardcoded.length) {
+  console.error("check:faqs-advisory FAILED \u2014 src/data/trt-faq-slugs.ts has drifted from faqQuestions.ts:\n");
+  if (missingFromHardcoded.length) {
+    console.error(`  category:"trt" in faqQuestions.ts but MISSING from trt-faq-slugs.ts (would render RUO/"not for human use" wrongly):`);
+    for (const s of missingFromHardcoded) console.error(`    + ${s}`);
+  }
+  if (staleInHardcoded.length) {
+    console.error(`  in trt-faq-slugs.ts but NOT category:"trt" in faqQuestions.ts (would wrongly SUPPRESS correct RUO framing):`);
+    for (const s of staleInHardcoded) console.error(`    - ${s}`);
+  }
+  console.error("\n  Fix: update src/data/trt-faq-slugs.ts to match the current category:\"trt\" set exactly.");
+  process.exit(1);
+}
+
 console.log(
-  `check:faqs-advisory OK \u2014 ${scannedAnswers} FAQ answer(s) across ${scannedPages} page(s) (both faqs[] and <FAQItem> shapes); none instruct the reader.`
+  `check:faqs-advisory OK \u2014 ${scannedAnswers} FAQ answer(s) across ${scannedPages} page(s) (both faqs[] and <FAQItem> shapes); none instruct the reader. TRT slug list matches faqQuestions.ts (${realTrtSlugs.size} slugs).`
 );

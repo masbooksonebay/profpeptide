@@ -4,6 +4,7 @@ import Link from "next/link";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import PageDisclaimer from "@/components/PageDisclaimer";
+import { TRT_MEDICAL_DISCLAIMER } from "@/data/trt-disclaimers";
 import { buildPageMetadata } from "@/lib/seo";
 import { faqPageJsonLd } from "@/lib/faq-schema";
 import { faqQuestions, faqQuestionBySlug, faqAnswerText } from "@/data/faqQuestions";
@@ -234,12 +235,20 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
             (ChatWidget DISCLOSURE_TEXT) so the site says the same thing on every surface.
             🔒 The EPISTEMICS were not deleted, only de-duplicated: the full statement of the
             report-versus-instruct standard lives on /methodology ("How we report doses"), and its
-            one-line version renders beside every profile dosing section via DosingContext.tsx. */}
+            one-line version renders beside every profile dosing section via DosingContext.tsx.
+            🔴 GATED ON category !== "trt" (fixed 2026-09-04). "Research use only" is correct for a
+            research-peptide compound and WRONG for TRT: testosterone is a prescription medicine
+            taken by humans under medical supervision, not a research chemical sold RUO. This was
+            rendering unconditionally on all 7 category:"trt" pages before this fix. Do NOT weaken
+            or remove this line for non-TRT pages — RUO framing is correct and required there. */}
         <p className="mt-8 text-sm text-gray-500 dark:text-slate-400">
-          Research use only. Not medical advice.
+          {q.category === "trt" ? TRT_MEDICAL_DISCLAIMER : "Research use only. Not medical advice."}
         </p>
 
-        {/* Affiliate disclosure only where the page actually carries vendor links. */}
+        {/* Affiliate disclosure only where the page actually carries vendor OR referral links.
+            TRT pages have neither today (no whereToBuy, no referral-provider field yet), so
+            neither branch renders for them — see PageDisclaimer's "referral" variant, built and
+            ready for when a referral link exists, not wired to anything yet. */}
         {q.whereToBuy && <PageDisclaimer />}
       </div>
     </>
