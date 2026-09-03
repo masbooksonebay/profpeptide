@@ -43,6 +43,7 @@
     "check:codes": "node scripts/check-codes.mjs",
     "check:market-claims": "node scripts/check-market-claims.mjs",
     "gen:codes-manifest": "node scripts/gen-codes-manifest.mjs",
+    "go:stats": "node scripts/go-stats.mjs",
     "check:go-redirects": "node scripts/check-go-redirects.mjs",
     "check:go-routing": "node scripts/check-go-routing.mjs"
   },
