@@ -22,7 +22,7 @@ export default function SwissChemsCouponPage() {
       <CouponBreadcrumb slug="swiss-chems" />
 
       <div className="flex flex-wrap items-center gap-3 mb-1">
-        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Swiss Chems Discount Code: PROF10 &mdash; Save {discountPct}%</h1>
+        <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100">Swiss Chems Discount Code: PROFPEPTIDE &mdash; Save {discountPct}%</h1>
       </div>
       <CouponCodeCard slug="swiss-chems" className="mb-8" />
 
@@ -125,11 +125,11 @@ export default function SwissChemsCouponPage() {
             />
             <FAQItem
               q="Does Swiss Chems have a coupon code?"
-              a={`Yes. Use code PROF10 at checkout to save ${discountPct}% on your Swiss Chems order. This code is verified and maintained by Prof. Peptide.`}
+              a={`Yes. Use code PROFPEPTIDE at checkout to save ${discountPct}% on your Swiss Chems order. This code is verified and maintained by Prof. Peptide.`}
             />
             <FAQItem
               q="How do I use the Swiss Chems discount code?"
-              a="Add your items to cart at swisschems.is, proceed to checkout, and enter PROF10 in the coupon field. The discount is applied to your order total."
+              a="Add your items to cart at swisschems.is, proceed to checkout, and enter PROFPEPTIDE in the coupon field. The discount is applied to your order total."
             />
             <FAQItem
               q="Is Swiss Chems third-party tested?"

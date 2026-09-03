@@ -741,7 +741,16 @@ export const vendors: Record<string, Vendor> = {
   },
   "swiss-chems": {
     name: "Swiss Chems",
-    code: "PROF10",
+    // Code changed PROF10 -> PROFPEPTIDE 2026-09-03: Swiss Chems' new affiliate manager (Karen)
+    // confirmed in writing that PP's code changed AND that it is bound to PP's affiliate account
+    // for code-only attribution (credits without a referral-link click). The DISCOUNT RATE was
+    // NOT part of that confirmation — 10% is carried forward unconfirmed, not re-verified.
+    // 🔴 The URL's ?ref=PROF10 was DELIBERATELY LEFT UNCHANGED: Karen's confirmation covered the
+    // checkout code only, not the link-click ref token, and other vendors' url ref tokens are
+    // independent of their code (e.g. vital-core-research's ?ref=nbwnvhnu has no relation to
+    // PROF20) — so changing it without confirmation risks breaking a separate, unconfirmed
+    // attribution path. Ask Karen before touching it.
+    code: "PROFPEPTIDE",
     discount: "10% off",
     region: "US",
     url: "https://swisschems.is/?ref=PROF10",

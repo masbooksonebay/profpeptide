@@ -95,7 +95,7 @@ export default function AboutPage() {
           <section>
             <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 mb-3">Affiliate disclosure</h2>
             <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
-              Prof. Peptide is supported by affiliate commissions from the vendors we list. The codes on this site {/* codes:disclosure — generic illustrative list, not a per-vendor code; exempt from check:codes Tier 3 */}(PROFPEPTIDE, PROF10, and others) give you a discount and pay us a commission when used. Vendors are selected and ranked based on verified COA transparency, purity standards, and fulfillment reliability &mdash; independently of commission rates.
+              Prof. Peptide is supported by affiliate commissions from the vendors we list. The codes on this site {/* codes:disclosure — generic illustrative list, not a per-vendor code; exempt from check:codes Tier 3 */}(PROFPEPTIDE, PROF15, and others) give you a discount and pay us a commission when used. Vendors are selected and ranked based on verified COA transparency, purity standards, and fulfillment reliability &mdash; independently of commission rates.
             </p>
           </section>
         </div>

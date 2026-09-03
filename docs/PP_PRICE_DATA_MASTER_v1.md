@@ -1161,7 +1161,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 
 ## VENDOR: Swiss Chems
-- **slug:** swiss-chems | **code:** PROF10 | **discount:** 10% off | **url:** swisschems.is
+- **slug:** swiss-chems | **code:** PROFPEPTIDE | **discount:** 10% off | **url:** swisschems.is
 - **traffic:** (not pulled) | **pulled:** August 3 2026
 - **sale posture:** Product sale 46/145; code stacks.
 
