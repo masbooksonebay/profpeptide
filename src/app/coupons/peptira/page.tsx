@@ -34,10 +34,20 @@ export default function PeptiraCouponPage() {
       <div className="space-y-8">
         <div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Peptira (peptira.com) is a US-based research-peptide supplier with a 100-product catalog. The thing worth knowing first is how its certificates check out: we checked several against the testing laboratory&rsquo;s own website rather than taking Peptira&rsquo;s copies on faith, and they matched. What follows documents the incretin cluster we were able to verify against Peptira&rsquo;s own certificates:
+            Peptira (peptira.com) is a US-based research-peptide supplier with a 100-product catalog. The thing worth knowing first is how its certificates check out: we checked several against the testing laboratory&rsquo;s own website rather than taking Peptira&rsquo;s copies on faith, and they matched. Compounds by research area:
           </p>
           <dl className="space-y-2 mb-4">
-            <Cat label="Metabolic &amp; Weight Loss"><P slug="cagrilintide">Cagrilintide</P> (CAG-4), <P slug="survodutide">Survodutide</P>, <P slug="retatrutide">Retatrutide</P> (RETA-3), <P slug="semaglutide">Semaglutide</P> (SEMA-1), <P slug="tirzepatide">Tirzepatide</P> (TIRZ-2)</Cat>
+            <Cat label="Metabolic &amp; Weight Loss"><P slug="retatrutide">Retatrutide</P> (RETA-3), <P slug="tirzepatide">Tirzepatide</P> (TIRZ-2), <P slug="semaglutide">Semaglutide</P> (SEMA-1), <P slug="cagrilintide">Cagrilintide</P> (CAG-4), <P slug="survodutide">Survodutide</P>, <P slug="mots-c">MOTS-c</P>, <P slug="aod-9604">AOD-9604</P>, <P slug="5-amino-1mq">5-Amino-1MQ</P></Cat>
+            <Cat label="Recovery &amp; Tissue Repair"><P slug="bpc-157">BPC-157</P>, <P slug="tb-500">TB-500</P>, <P slug="wolverine-stack">Wolverine Stack</P> (TB/BP Blend), <P slug="cibinetide">Cibinetide (ARA-290)</P></Cat>
+            <Cat label="Performance &amp; Energy"><P slug="igf-1-lr3">IGF-1 LR3</P>, Aicar</Cat>
+            <Cat label="Growth Hormone"><P slug="cjc-1295">CJC-1295</P> (DAC and no-DAC), <P slug="gh-stack">CJC-1295 + Ipamorelin</P>, <P slug="ipamorelin">Ipamorelin</P>, <P slug="tesamorelin">Tesamorelin</P>, <P slug="ghrp-6">GHRP-6</P>, <P slug="hexarelin">Hexarelin</P></Cat>
+            <Cat label="Cognitive &amp; Nootropic"><P slug="semax">Semax</P>, <P slug="selank">Selank</P>, <P slug="adamax">Adamax</P>, PE-22-28</Cat>
+            <Cat label="Skin Health &amp; Anti-Aging"><P slug="ghk-cu">GHK-Cu</P>, AHK-Cu, <P slug="glow">GLOW</P>, <P slug="klow">KLOW</P>, <P slug="melanotan-i">Melanotan I</P>, <P slug="melanotan-ii">Melanotan II</P>, Snap-8</Cat>
+            <Cat label="Gut Health &amp; Immunity"><P slug="kpv">KPV</P>, <P slug="ll-37">LL-37</P>, <P slug="thymosin-alpha-1">Thymosin Alpha-1</P>, <P slug="vip">VIP</P>, Phoenix (KPV/TB/BPC Blend)</Cat>
+            <Cat label="Sleep &amp; Recovery"><P slug="dsip">DSIP</P></Cat>
+            <Cat label="Longevity"><P slug="nad-plus">NAD+</P>, <P slug="epitalon">Epitalon</P>, <P slug="glutathione">Glutathione</P>, <P slug="ss-31">SS-31</P>, FOXO4-DRI</Cat>
+            <Cat label="Sexual Health"><P slug="pt-141">PT-141</P>, <P slug="oxytocin">Oxytocin</P>, <P slug="kisspeptin">Kisspeptin</P></Cat>
+            <Cat label="Bioregulators"><P slug="pinealon">Pinealon</P>, <P slug="cortagen">Cortagen</P>, Thymalin, Thymagen, Vilon, Cartalax</Cat>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
             The strength of that decode varies by compound, and we word it accordingly. <P slug="cagrilintide">Cagrilintide</P>&rsquo;s own certificate names it directly &mdash; as both the Product and the Identity result &mdash; and its store address uses the plain slug &ldquo;cagrilintide,&rdquo; so CAG-4 is a confirmed identity, not an inference. <P slug="survodutide">Survodutide</P> is sold and certified under its own name, no code involved. RETA-3, SEMA-1 and TIRZ-2 are a weaker case: their certificates are themselves coded (GLP RT, GLP SM, GLP TZ), and no CAS number, molecular formula or molecular weight appears anywhere we could read. We treat that naming convention as corroboration rather than proof &mdash; the same standard applied to Glacier&rsquo;s GLA-1 SM.
