@@ -740,7 +740,15 @@ export const vendors: Record<string, Vendor> = {
   },
   "purity-peptides": {
     name: "Purity Peptides",
-    code: "PROF15",
+    // Code changed PROF15 -> PROFPEPTIDE 2026-09-03 (Mark-confirmed). The old code still works on
+    // Purity's end, but PP publishes only PROFPEPTIDE. The DISCOUNT RATE was NOT part of that
+    // confirmation — 15% is carried forward unconfirmed, not re-verified.
+    // 🔴 The URL's ?sld=PROF15 was DELIBERATELY LEFT UNCHANGED: Mark's confirmation covered the
+    // checkout code only, not the link-click tracking token, and this site already treats the two
+    // as independent by convention (see aero-peptides' own ?ref=PROF15 note — its affiliate
+    // identifier, not its code). Changing it without vendor confirmation risks breaking a separate,
+    // unconfirmed attribution path. Ask Purity before touching it.
+    code: "PROFPEPTIDE",
     discount: "15% off",
     region: "CA",
     url: "https://puritypeptides.is/?sld=PROF15",

@@ -1354,7 +1354,7 @@ Each vendor header carries: **slug · code · discount · url**, **traffic · pu
 ---
 
 ## VENDOR: Purity Peptides
-- **slug:** purity-peptides | **code:** PROF15 | **discount:** 15% off | **url:** puritypeptides.is
+- **slug:** purity-peptides | **code:** PROFPEPTIDE | **discount:** 15% off | **url:** puritypeptides.is
 - **traffic:** (not pulled) | **pulled:** August 11 2026
 - **sale posture:** No sale (single price per product).
 
