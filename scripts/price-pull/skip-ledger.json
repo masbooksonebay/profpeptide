@@ -3,11 +3,15 @@
   "_updated": "2026-08-30",
   "_pending_reverts": {
     "_README": "Time-boxed vendor changes that MUST be undone on a specific date. The weekend price-pull run reads this and reports any revert whose due date has passed. Not consumed by any build guard — this is a human/CC checklist surfaced each weekend run.",
-    "amino-club-discount": {
-      "action": "In src/data/vendors.ts, set amino-club discount back to \"20% off\" (currently \"35% off\").",
-      "reason": "Vendor-confirmed temporary 35% boost; reverts to the 20% standing rate.",
-      "due": "2026-08-31",
-      "due_detail": "Boost runs through Mon Aug 31 2026 11:59 PM EDT. Aug 31 is a Sunday (weekend-pull day) — do the revert on that run. Every rate surface derives from the vendors.ts discount string, so the single edit reverts title/H1/salience/code-card/FAQ/OG/hub/Offer/price-grid at once. A 35% rate still live in September is worse than 20% now."
+    "_completed": {
+      "_README": "Reverts that have been carried out. Kept rather than deleted so the ledger records that a time-boxed change was closed, and when, rather than going silently empty.",
+      "amino-club-discount": {
+        "action": "In src/data/vendors.ts, set amino-club discount back to \"20% off\" (currently \"35% off\").",
+        "reason": "Vendor-confirmed temporary 35% boost; reverts to the 20% standing rate.",
+        "due": "2026-08-31",
+        "completed": "2026-09-02",
+        "completed_note": "DONE 2026-09-02 (Mark-confirmed the vendor had reverted). Landed two days after the Aug 31 due date: this ledger is a human checklist that no build guard reads, so an overdue revert fails nothing and PP served 35% into September. If a dated-expiry mechanism is ever added, this is the case that argues for it."
+      }
     }
   },
   "skips": {

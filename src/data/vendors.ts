@@ -166,11 +166,14 @@ export const vendors: Record<string, Vendor> = {
   "amino-club": {
     name: "Amino Club",
     code: "PROFPEPTIDE",
-    // TEMPORARY BOOST 35% (vendor-confirmed), runs through Mon Aug 31 2026 11:59 PM EDT,
-    // then REVERT to "20% off". No dated-expiry support in this schema, so the revert is
-    // logged in scripts/price-pull/skip-ledger.json (_pending_reverts) for the Aug 31
-    // weekend run. Every rate surface derives from this string — reverting here reverts all.
-    discount: "35% off",
+    // 20% is the STANDING rate. A vendor-confirmed temporary boost to 35% ran through
+    // Mon Aug 31 2026 11:59 PM EDT; the vendor reverted and this was set back on 2026-09-02
+    // (Mark-confirmed), two days after the boost lapsed — the revert was logged in
+    // scripts/price-pull/skip-ledger.json (_pending_reverts) but nothing FAILS on an overdue
+    // entry, so it was carried live at 35% for two days. Every rate surface derives from this
+    // one string — H1, salience, code card, FAQ, OG card, hub, Offer schema and the price
+    // grid's post-code column all followed it up and have all followed it back down.
+    discount: "20% off",
     region: "US",
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
     detailPage: "/coupons/amino-club",
