@@ -113,4 +113,9 @@ export const COUPON_SENTENCE_VENDORS = new Set<string>([
   // the header note says these join the Set 'the moment they are converted'. fusion-peptide is now
   // the only legacy page left, and it is retired + redirecting.
   "synthesis-peptides",
+  // Added 2026-09-02. Orbitrex shipped on the standard CouponCodeCard template but was never added
+  // here, so it rendered the H1 and the code card with NO salience passage between them — the one
+  // part of the treatment that exists purely to give Google a quotable block. An omission, not a
+  // decision: nothing anywhere recorded a reason to hold it back.
+  "orbitrex-peptides",
 ]);
