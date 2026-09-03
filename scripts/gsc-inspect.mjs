@@ -113,7 +113,10 @@ async function inspectOne(tokenManager, url, { retried = false } = {}) {
   if (r.robotsTxtState && r.robotsTxtState !== "ALLOWED") issues.push(`robots:${r.robotsTxtState}`);
   if (r.indexingState && r.indexingState !== "INDEXING_ALLOWED") issues.push(`indexing:${r.indexingState}`);
   if (r.pageFetchState && r.pageFetchState !== "SUCCESSFUL") issues.push(`fetch:${r.pageFetchState}`);
-  if (r.userCanonical && r.googleCanonical && r.userCanonical !== r.googleCanonical) {
+  // Trailing slash only ("https://x/" vs "https://x") is not a real mismatch — Google's own two
+  // fields are inconsistent about it (observed on the bare root URL), so normalize before diffing.
+  const stripSlash = (u) => u?.replace(/\/$/, "");
+  if (r.userCanonical && r.googleCanonical && stripSlash(r.userCanonical) !== stripSlash(r.googleCanonical)) {
     issues.push(`canonical-mismatch (ours: ${r.userCanonical})`);
   }
   return {
