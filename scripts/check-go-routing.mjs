@@ -39,6 +39,10 @@ function isPhaseA(p) {
   if (p.startsWith("/peptides/")) return true;
   if (p === "/best-peptide-vendors") return true;
   if (p === "/peptide-sciences-alternatives") return true;
+  // Added 2026-09-04: /vendors gained a Shop button (VendorShopButton.tsx) routed through
+  // /go/{slug}?from=vendors-card — the first outbound link this surface has ever carried. Without
+  // this line a raw affiliate href here would go completely uncaught.
+  if (p === "/vendors") return true;
   return false;
 }
 
