@@ -43,7 +43,11 @@ const otherVendors = activeVendors.filter((v) => !v.editorsPick).sort(byName).ma
 
 export default function CouponsPage() {
   return (
-    <div className="section max-w-3xl">
+    // max-w-4xl (not the max-w-3xl prose column this page shipped with) — this is a directory of
+    // 57 cards, not body copy. Follows /prices and /prices/[compound]'s precedent: the site's other
+    // single-column list-of-rows surface at this width, one step narrower than /vendors' max-w-5xl
+    // 3-column grid, whose shape doesn't apply here.
+    <div className="section max-w-4xl">
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Discount Codes" }])} />
       <span className="tag mb-3 inline-block">Updated Regularly</span>
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-8">Discount Codes</h1>

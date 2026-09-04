@@ -43,11 +43,16 @@ function CheckGlyph({ className }: { className: string }) {
 /**
  * Shared click-to-copy code control — the SINGLE implementation used for every
  * discount/coupon code across the site so a code looks and behaves identically per
- * context. Two sizes, one component:
- *   - "chip"  (default): compact inline accent pill — dense contexts (price tables, /vendors).
- *   - "large": full-width prominent box (gray field, big mono, letter-spaced, centered) —
- *              contexts where the code IS the point (/coupons hub + per-vendor pages,
- *              peptide-profile vendor cards, the reveal modal). Matches the pre-consolidation CodeBox.
+ * context. Three sizes, one component:
+ *   - "chip"    (default): compact inline accent pill — dense contexts (price tables, /vendors).
+ *   - "chip-lg": the same inline accent pill, scaled up — the /coupons hub card (2026-09
+ *                redesign), where the code is one of four elements ("name → discount → code →
+ *                Shop") meant to read as primary, but the row layout (code beside the Shop
+ *                button, not full-width) rules out "large"'s block treatment. Verified against
+ *                the longest live code, "PROFPEPTIDE" (11 chars) — no wrap at this size.
+ *   - "large":   full-width prominent box (gray field, big mono, letter-spaced, centered) —
+ *                contexts where the code IS the point (per-vendor pages, peptide-profile vendor
+ *                cards, the reveal modal). Matches the pre-consolidation CodeBox.
  * A copy glyph precedes the code so the copy affordance is discoverable at both sizes; on a
  * CONFIRMED copy the whole content swaps to a green checkmark + "Copied!" and a persistent
  * aria-live region announces it (so the feedback is not purely visual). The code text is always
@@ -65,15 +70,17 @@ export function CopyCode({
 }: {
   code: string;
   className?: string;
-  size?: "chip" | "large";
+  size?: "chip" | "chip-lg" | "large";
 }) {
   const [copied, setCopied] = useState(false);
   const timer = useRef<ReturnType<typeof setTimeout>>();
   const base =
     size === "large"
       ? "block w-full px-4 py-3 rounded-lg text-lg font-mono font-bold tracking-widest text-center bg-gray-50 dark:bg-[#1e293b] border border-[#D9DEE4] dark:border-slate-600 text-[#16181B] dark:text-slate-100 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors cursor-pointer"
-      : "h-9 inline-flex items-center justify-center px-2.5 rounded-md text-xs font-mono font-semibold tracking-wide border border-[#3A759F]/40 bg-[#3A759F]/10 text-[#3A759F] hover:bg-[#3A759F]/20 transition-colors whitespace-nowrap";
-  const glyph = size === "large" ? "w-4 h-4" : "w-3.5 h-3.5";
+      : size === "chip-lg"
+        ? "h-11 inline-flex items-center justify-center px-3.5 rounded-md text-sm font-mono font-semibold tracking-wide border border-[#3A759F]/40 bg-[#3A759F]/10 text-[#3A759F] hover:bg-[#3A759F]/20 transition-colors whitespace-nowrap"
+        : "h-9 inline-flex items-center justify-center px-2.5 rounded-md text-xs font-mono font-semibold tracking-wide border border-[#3A759F]/40 bg-[#3A759F]/10 text-[#3A759F] hover:bg-[#3A759F]/20 transition-colors whitespace-nowrap";
+  const glyph = size === "large" ? "w-4 h-4" : size === "chip-lg" ? "w-4 h-4" : "w-3.5 h-3.5";
   const copy = () => {
     // Only CONFIRM on a resolved write. Optional chaining short-circuits to `undefined` when the
     // Clipboard API is missing (insecure context) — then we show nothing rather than a false

@@ -24,7 +24,7 @@ export function VendorCodeChip({
   slug: string;
   code: string;
   from: string;
-  size?: "chip" | "large";
+  size?: "chip" | "chip-lg" | "large";
   className?: string;
 }) {
   if (REVEAL_GATE_VENDORS.has(slug)) {
@@ -35,7 +35,9 @@ export function VendorCodeChip({
         triggerClassName={
           size === "large"
             ? "flex w-full items-center justify-center gap-1 px-4 py-3 rounded-lg text-base font-semibold border-2 border-dashed border-[#3A759F]/50 dark:border-[#3A759F]/60 bg-white dark:bg-[#0f172a] text-[#3A759F] hover:bg-[#3A759F]/5 dark:hover:bg-[#3A759F]/10 transition-colors"
-            : "inline-flex h-9 items-center gap-1 px-2.5 rounded-md text-xs font-semibold border border-[#3A759F]/40 bg-[#3A759F]/10 text-[#3A759F] hover:bg-[#3A759F]/20 transition-colors whitespace-nowrap"
+            : size === "chip-lg"
+              ? "inline-flex h-11 items-center gap-1 px-3.5 rounded-md text-sm font-semibold border border-[#3A759F]/40 bg-[#3A759F]/10 text-[#3A759F] hover:bg-[#3A759F]/20 transition-colors whitespace-nowrap"
+              : "inline-flex h-9 items-center gap-1 px-2.5 rounded-md text-xs font-semibold border border-[#3A759F]/40 bg-[#3A759F]/10 text-[#3A759F] hover:bg-[#3A759F]/20 transition-colors whitespace-nowrap"
         }
       >
         {size === "large" ? "Reveal discount code" : <>Reveal code</>}

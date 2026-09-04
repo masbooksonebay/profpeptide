@@ -909,7 +909,10 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/nura-peptide",
     facts: { coa: "library", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>), microbial (PCR)" },
     blockNote: "Freedom Diagnostics · verifiable COAs",
-    editorsPick: true,
+    // editorsPick removed 2026-09: dropped for not converting (recorded elsewhere) and sits on
+    // FOOT_BLOCK_EXCLUDED — being featured in Professor's Picks contradicted that. Falls through
+    // to the alphabetical run at N automatically; no other file changes.
+    editorsPick: false,
   },
   // 99 Purity's sources disagree on the discount: the welcome email says 10% off, the
   // affiliate dashboard header says 15% OFF (same code, now PROFPEPTIDE — was PROFPEPTIDE10). Mark's call is to

@@ -52,11 +52,17 @@ export function CouponsBrowser({
   // resets scroll to 0 when it doesn't recognize the hash target at commit time — running in the
   // same tick raced it and consistently lost (confirmed: an un-deferred scrollIntoView() here left
   // window.scrollY at 0 in the browser). One rAF puts this after that pass.
+  //
+  // `behavior: "instant"` is NOT optional — globals.css sets `html { scroll-behavior: smooth }`
+  // site-wide, so a bare scrollIntoView() (no explicit behavior) starts an ANIMATED scroll, and that
+  // animation was getting interrupted before it finished (confirmed: it consistently left scrollY a
+  // few px from 0, nowhere near the target). Passing "instant" makes it a single-frame jump that
+  // can't be interrupted mid-flight — confirmed this actually lands on the target on a cold load.
   useEffect(() => {
     const hash = window.location.hash.slice(1);
     if (!hash) return;
     const raf = requestAnimationFrame(() => {
-      document.getElementById(hash)?.scrollIntoView();
+      document.getElementById(hash)?.scrollIntoView({ behavior: "instant" });
     });
     return () => cancelAnimationFrame(raf);
   }, []);
@@ -69,48 +75,49 @@ export function CouponsBrowser({
 
   return (
     <div>
-      <div className="mb-6 flex flex-col sm:flex-row sm:items-center gap-3">
-        <div className="relative flex-1">
-          <svg
-            className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 dark:text-slate-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
-          </svg>
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search vendors by name…"
-            aria-label="Search vendors by name"
-            className="w-full pl-9 pr-4 py-2.5 rounded-lg border border-[#D9DEE4] dark:border-slate-600 bg-white dark:bg-[#0f172a] text-sm text-[#16181B] dark:text-slate-100 placeholder:text-gray-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#3A759F]/40"
-          />
-        </div>
-        <div className="flex flex-wrap gap-0.5" aria-label="Jump to letter">
-          {LETTERS.map((l) =>
-            !q && activeLetters.has(l) ? (
-              <a
-                key={l}
-                href={`#letter-${l}`}
-                className="w-6 h-6 flex items-center justify-center text-[11px] font-semibold uppercase rounded text-[#3A759F] hover:bg-[#3A759F]/10 transition-colors"
-              >
-                {l}
-              </a>
-            ) : (
-              <span
-                key={l}
-                aria-hidden="true"
-                className="w-6 h-6 flex items-center justify-center text-[11px] font-semibold uppercase rounded text-gray-300 dark:text-slate-700"
-              >
-                {l}
-              </span>
-            )
-          )}
-        </div>
+      {/* Own row, full width — was squeezed beside the A–Z bar (sm:flex-row), which left it narrow
+          and easy to lose. Sizing matches SearchOverlay (py-4, text-base): the site's own precedent
+          for "a search box you can actually read what you typed in," not an invented size. */}
+      <div className="relative mb-4">
+        <svg
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 dark:text-slate-500"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+        </svg>
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search vendors"
+          aria-label="Search vendors"
+          className="w-full pl-12 pr-4 py-4 rounded-lg border border-[#D9DEE4] dark:border-slate-600 bg-white dark:bg-[#0f172a] text-base text-[#16181B] dark:text-slate-100 placeholder:text-gray-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#3A759F]/40"
+        />
+      </div>
+      <div className="mb-6 flex flex-wrap gap-0.5" aria-label="Jump to letter">
+        {LETTERS.map((l) =>
+          !q && activeLetters.has(l) ? (
+            <a
+              key={l}
+              href={`#letter-${l}`}
+              className="w-6 h-6 flex items-center justify-center text-[11px] font-semibold uppercase rounded text-[#3A759F] hover:bg-[#3A759F]/10 transition-colors"
+            >
+              {l}
+            </a>
+          ) : (
+            <span
+              key={l}
+              aria-hidden="true"
+              className="w-6 h-6 flex items-center justify-center text-[11px] font-semibold uppercase rounded text-gray-300 dark:text-slate-700"
+            >
+              {l}
+            </span>
+          )
+        )}
       </div>
 
       {filtered ? (
