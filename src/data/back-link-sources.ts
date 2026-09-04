@@ -27,12 +27,25 @@
 type FixedSource = { kind: "fixed"; href: string; label: string };
 /** A source whose return target is per-page: the slug rides in the param as "<surface>:<slug>". */
 type SlugSource = { kind: "slug"; prefix: string; label: string };
+/**
+ * A source whose PAGE is fixed but whose SCROLL POSITION on that page is per-card: the letter-group
+ * id rides in the param the same way a SlugSource's slug does ("<surface>:<letter>"), but resolves
+ * to a URL FRAGMENT (`${href}#letter-<x>`) instead of a path segment. Added for the /coupons hub's
+ * A–Z redesign (2026-09) — coupon-hub-card was a FixedSource before, so a reader returning from a
+ * coupon page always landed at the top of the 57-card list, regardless of which letter they left
+ * from.
+ */
+type AnchorSource = { kind: "anchor"; href: string; label: string };
 
-export type BackLinkSource = FixedSource | SlugSource;
+export type BackLinkSource = FixedSource | SlugSource | AnchorSource;
 
 export const BACK_LINK_SOURCES: Record<string, BackLinkSource> = {
   // ── Fixed-target surfaces ────────────────────────────────────────────────────────────────────
-  "coupon-hub-card": { kind: "fixed", href: "/coupons", label: "Back to Discount Codes" },
+  // coupon-hub-card carries the vendor's letter-group id as an anchor fragment (see AnchorSource
+  // above), not a fixed href. Professor's Picks cards (outside the alphabetical run) pass no slug,
+  // which resolves to the plain /coupons href below — correct, since there's no letter group to
+  // return to.
+  "coupon-hub-card": { kind: "anchor", href: "/coupons", label: "Back to Discount Codes" },
   "vendors-card": { kind: "fixed", href: "/vendors", label: "Back to Verified Vendors" },
   "featured-vendors": { kind: "fixed", href: "/best-peptide-vendors", label: "Back to Best Peptide Vendors" },
   "vendor-testing": { kind: "fixed", href: "/vendor-testing-index", label: "Back to Vendor Testing Index" },
@@ -52,6 +65,12 @@ export const BACK_LINK_DEFAULT = { href: "/coupons", label: "Back to Discount Co
 // a path, a protocol, an encoded traversal, anyone's hand-edited experiment — fails the test and
 // falls back, so a crafted ?from= can never steer the href off-site or inject markup.
 const SLUG_RE = /^[a-z0-9][a-z0-9-]{0,63}$/;
+
+// An anchor id is a single letter-group key — one lowercase letter or digit (see
+// CouponsBrowser.tsx's firstKey(), which buckets a vendor by its name's first character).
+// Anything else (a path, a longer string, punctuation) is malformed input and falls back to the
+// anchor-less href, never pasted into the fragment.
+const ANCHOR_RE = /^[a-z0-9]$/;
 
 /**
  * Resolve a raw `?from=` value to a back-link target.
@@ -73,6 +92,12 @@ export function resolveBackLink(raw: string | null | undefined): { href: string;
   if (src.kind === "fixed") {
     // A fixed surface handed a slug is malformed input, not a new destination.
     return slug ? BACK_LINK_DEFAULT : { href: src.href, label: src.label };
+  }
+  if (src.kind === "anchor") {
+    // No slug (Professor's Picks cards) resolves to the plain href — there's no letter group to
+    // return to. A malformed anchor key falls back the same way, never a broken/empty fragment.
+    if (!slug || !ANCHOR_RE.test(slug)) return { href: src.href, label: src.label };
+    return { href: `${src.href}#letter-${slug}`, label: src.label };
   }
   if (!SLUG_RE.test(slug)) return BACK_LINK_DEFAULT;
   return { href: `${src.prefix}/${slug}`, label: src.label };
