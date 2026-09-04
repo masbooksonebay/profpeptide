@@ -1980,9 +1980,9 @@ export const faqQuestions: FaqQuestion[] = [
     slug: "how-often-is-testosterone-cypionate-injected",
     category: "trt",
     question: "How often is testosterone cypionate injected?",
-    title: "How Often Is Testosterone Cypionate Injected? What the Label and Guidelines Say",
+    title: "How Often Is Testosterone Cypionate Injected? Labels, Guidelines, and the Literature",
     metaDescription:
-      "The FDA Depo-Testosterone label states 50–400 mg every two to four weeks intramuscularly; the 2018 Endocrine Society guideline describes 75–100 mg weekly or 150–200 mg every two weeks. Testosterone cypionate's half-life is about eight days — the basis for these intervals. What each named source states.",
+      "Two FDA labels (Depo-Testosterone: every 2–4 weeks; Xyosted: weekly, trough-titrated), the 2018 Endocrine Society and AUA guidelines, and what the published literature says about peak-to-trough management and sub-weekly dosing in practice.",
     searchTags: [
       "how often is testosterone cypionate injected",
       "how often do you inject testosterone cypionate",
@@ -1992,13 +1992,13 @@ export const faqQuestions: FaqQuestion[] = [
       "testosterone cypionate how often injection",
     ],
     hubBlurb:
-      "What the FDA Depo-Testosterone label and the 2018 Endocrine Society guideline state about testosterone cypionate injection frequency, and the ~8-day half-life behind the intervals.",
+      "Two FDA labels, the 2018 Endocrine Society and AUA guidelines, and the published literature on peak-to-trough management and sub-weekly dosing in practice — what each named source states.",
     lede:
-      "The FDA label for Depo-Testosterone (testosterone cypionate) states 50–400 mg intramuscularly every two to four weeks for replacement in hypogonadal men. The 2018 Endocrine Society guideline instead describes 75–100 mg weekly or 150–200 mg every two weeks. The label puts the drug's half-life at about eight days, which is the rationale for these intervals.",
+      "Two FDA labels address testosterone injection frequency. Depo-Testosterone (testosterone cypionate) states 50–400 mg intramuscularly every two to four weeks. Xyosted — a separate product, testosterone enanthate rather than cypionate — states a fixed weekly subcutaneous injection with the dose, not the interval, adjusted by a measured trough level. The 2018 Endocrine Society guideline describes 75–100 mg weekly or 150–200 mg every two weeks; the 2018 AUA guideline's dosing table lists 50–200 mg every 7 to 14 days. None of the four goes below a weekly interval.",
     body: [
       {
         kind: "heading",
-        text: "What the FDA label states",
+        text: "What the Depo-Testosterone FDA label states",
       },
       {
         kind: "p",
@@ -2007,12 +2007,30 @@ export const faqQuestions: FaqQuestion[] = [
       },
       {
         kind: "heading",
+        text: "What the Xyosted FDA label states",
+      },
+      {
+        kind: "p",
+        text:
+          "Xyosted is a separate FDA-approved product — testosterone enanthate, not cypionate — labeled for subcutaneous injection in the abdominal region once a week. Its starting dose is 75 mg. The label's titration is by a measured trough level drawn seven days after the dose, beginning six weeks in: a rise of 25 mg when the trough reads below 350 ng/dL, a reduction of 25 mg when it reads at or above 650 ng/dL, and no change when it falls between 350 and 650 ng/dL, keeping the dose within a 50–100 mg weekly range. The interval itself is fixed at once weekly throughout — the label adjusts the amount injected, not how often.",
+      },
+      {
+        kind: "heading",
         text: "What the Endocrine Society guideline describes",
       },
       {
         kind: "p",
         text:
-          "The 2018 Endocrine Society Clinical Practice Guideline (Bhasin et al., The Journal of Clinical Endocrinology & Metabolism, 2018) lists, as typical starting doses for intramuscular testosterone enanthate or cypionate, 150–200 mg every two weeks or 75–100 mg weekly. These are shorter intervals and smaller per-dose amounts than the label's two-to-four-week schedule.",
+          "The 2018 Endocrine Society Clinical Practice Guideline (Bhasin et al., The Journal of Clinical Endocrinology & Metabolism, 2018) lists, as typical starting doses for intramuscular testosterone enanthate or cypionate, 150–200 mg every two weeks or 75–100 mg weekly. These are shorter intervals and smaller per-dose amounts than the Depo-Testosterone label's two-to-four-week schedule.",
+      },
+      {
+        kind: "heading",
+        text: "What the AUA guideline states",
+      },
+      {
+        kind: "p",
+        text:
+          "The American Urological Association's 2018 guideline (Mulhall et al., The Journal of Urology, 2018) carries its own dosing table for injectable testosterone. For testosterone cypionate or enanthate, it lists 50–200 mg administered every seven to fourteen days. A figure attributed to this guideline circulates widely — that it states a preference for smaller, more frequent doses — but that statement does not appear among the guideline's own numbered recommendations, and is not reported here for that reason.",
       },
       {
         kind: "heading",
@@ -2021,23 +2039,44 @@ export const faqQuestions: FaqQuestion[] = [
       {
         kind: "p",
         text:
-          "The FDA label states that testosterone cypionate's half-life after intramuscular injection is approximately eight days. With a half-life of roughly a week, a dose every one to two weeks falls within about one half-life — the pharmacologic basis for the guideline's weekly and every-two-week intervals, whereas the label's wider two-to-four-week schedule allows larger peaks and troughs between injections.",
+          "The FDA label states that testosterone cypionate's half-life after intramuscular injection is approximately eight days. With a half-life of roughly a week, a dose every one to two weeks falls within about one half-life — the pharmacologic basis for the guidelines' weekly and every-two-week intervals, whereas the Depo-Testosterone label's wider two-to-four-week schedule allows larger peaks and troughs between injections. Xyosted's trough-triggered titration is the same underlying goal — keeping the level inside a target band — worked into an approved label's own algorithm rather than left to the prescriber to reconstruct from the half-life alone.",
       },
       {
         kind: "heading",
-        text: "Where the label and the guideline differ",
+        text: "What the literature says about peak-to-trough management",
       },
       {
         kind: "p",
         text:
-          "The two named sources describe different schedules: the FDA label, 50–400 mg every two to four weeks; the 2018 Endocrine Society guideline, 75–100 mg weekly or 150–200 mg every two weeks. Both are reported here as each source states them. Testosterone cypionate is a prescription medication and a controlled substance; which schedule applies to a given person is a clinical decision made with a licensed physician. This page is educational and describes what the documents say — it is not medical advice.",
+          "Two published studies compare how the injected level behaves within a weekly interval, rather than comparing different intervals against each other. Choi et al. (The Journal of Urology, 2022) compared 234 men on weekly intramuscular cypionate against weekly subcutaneous enanthate and reported lower post-therapy hematocrit and estradiol in the subcutaneous group, attributed to the auto-injector's lower peak-to-trough ratio at the same weekly interval. Kaminetsky et al. (The Journal of Urology, 2019), a 52-week study of 150 men on weekly subcutaneous dosing adjusted to 50, 75, or 100 mg, reported a steady pharmacokinetic profile with small peak and trough fluctuations. Both studies hold the interval at once weekly and vary the route or the dose — neither tested injecting more often than weekly.",
+      },
+      {
+        kind: "heading",
+        text: "More frequent dosing in practice",
+      },
+      {
+        kind: "p",
+        text:
+          "Dosing more often than weekly — twice weekly or every other day — is used in practice. No FDA label or guideline named on this page describes or recommends an interval shorter than once weekly; the sources above stop at weekly. The one published study of the shorter-interval practice that could be located is a conference abstract: Ohlander et al., presented at the American Urological Association's 2016 Annual Meeting (The Journal of Urology 2016;195(4S), abstract MP76-05), reporting erythrocytosis in 11% of men dosed once weekly against 29% of men dosed twice weekly (p=0.007). Two things are worth stating plainly about that figure: it comes from a conference abstract rather than a completed peer-reviewed paper, and it was read from a secondary index after the original conference page returned an access error — a lower evidentiary tier than the labels and guidelines above, and the only citable study of the practice found.",
+      },
+      {
+        kind: "heading",
+        text: "Where the sources differ",
+      },
+      {
+        kind: "p",
+        text:
+          "Four named sources address interval, and all four stay at a week or longer: the Depo-Testosterone label, 50–400 mg every two to four weeks; the Xyosted label, a fixed weekly interval with the dose titrated by trough; the 2018 Endocrine Society guideline, 75–100 mg weekly or 150–200 mg every two weeks; the 2018 AUA guideline, 50–200 mg every seven to fourteen days. Dosing more often than weekly sits outside all four and is documented, on the evidence located, only in the single conference abstract above. Testosterone cypionate is a prescription medication and a controlled substance; which schedule applies to a given person is a clinical decision made with a licensed physician. This page is educational and describes what the documents say — it is not medical advice.",
       },
       {
         kind: "list",
         items: [
           "FDA Depo-Testosterone label: 50–400 mg intramuscularly every two to four weeks.",
+          "FDA Xyosted label (testosterone enanthate): fixed weekly subcutaneous interval, 75 mg starting dose, titrated 50–100 mg by measured trough.",
           "2018 Endocrine Society guideline: 75–100 mg weekly or 150–200 mg every two weeks.",
+          "2018 AUA guideline: 50–200 mg every 7 to 14 days.",
           "The label states the half-life is about eight days — the basis for these intervals.",
+          "Sub-weekly dosing appears in practice but in no label or guideline above; the only located study is a 2016 conference abstract, not a peer-reviewed paper.",
         ],
       },
     ],
