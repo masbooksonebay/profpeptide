@@ -6,13 +6,11 @@
 // lib/go.ts). Commission 8%, rising to 10% at 3+ actions, action type "Website Purchase",
 // 30-day last-click window. Verified 2026-09-04 from the CJ dashboard + TRT Nation's own site.
 //
-// 🔴 CC DOES NOT HAVE THE PID OR LINK_ID — placeholder below, DO NOT GUESS. Mark fills this in
-// from the CJ dashboard. Tracking-link shape: https://www.dpbolvw.net/click-{PID}-{LINK_ID}
-// (direct linking is enabled on the CJ side, so this can point at any TRT Nation page, not just
-// its homepage, once the real PID/LINK_ID are known).
+// CONFIGURED 2026-09-04 — Mark's own CJ Click URL, "TRT Referral Link 2", pasted verbatim by him
+// (never guessed or typed by CC). Verified by Mark to resolve to
+// https://trtnation.com/testosterone-replacement-therapy/ through three hops before this landed.
 //
-// null is the unconfigured state, not a placeholder STRING — TrtReferralCard.tsx treats null as
-// "do not render the card" (see that file). A placeholder string risks silently shipping as a
-// real-looking but dead href if someone forgets it's a placeholder; null can't be mistaken for a
-// working link by any code that reads it.
-export const TRT_NATION_TRACKING_URL: string | null = null;
+// While this was null (the unconfigured state, NOT a placeholder string), TrtReferralCard.tsx
+// rendered nothing on any page — see that file. A placeholder string would have risked silently
+// shipping as a real-looking but dead href if someone forgot it was one; null couldn't be.
+export const TRT_NATION_TRACKING_URL: string | null = "https://www.dpbolvw.net/click-101871011-17101350";
