@@ -10,6 +10,7 @@ import { faqPageJsonLd } from "@/lib/faq-schema";
 import { faqQuestions, faqQuestionBySlug, faqAnswerText } from "@/data/faqQuestions";
 import { faqRelatedLinks, faqHandoff } from "@/lib/faq-related";
 import VendorHighlightBlock from "@/components/VendorHighlightBlock";
+import TrtReferralCard from "@/components/TrtReferralCard";
 
 // The "Where to Buy" set is DERIVED, not curated (Mark, 2026-08-30). It was a hardcoded trio
 // — amino-club / capstone-peptides / peptide-partners on every compound FAQ page regardless of
@@ -209,6 +210,11 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
           </div>
         )}
 
+        {/* The TRT-page equivalent of "Where to Buy" — a referral card, not a vendor block. Gated
+            on the SAME category field the disclaimer branch uses (no new flag). Renders nothing of
+            its own accord if TRT_NATION_TRACKING_URL is unconfigured — see TrtReferralCard.tsx. */}
+        {q.category === "trt" && <TrtReferralCard />}
+
         {/* DERIVED, not hand-picked — see lib/faq-related.ts for the rule. A category page relates
             to the other category pages; a compound spoke relates to the same compound's other
             spokes, its category page and its profile. It is never a subset of a list the page has
@@ -245,10 +251,9 @@ export default function FaqQuestionPage({ params }: { params: { slug: string } }
           {q.category === "trt" ? TRT_MEDICAL_DISCLAIMER : "Research use only. Not medical advice."}
         </p>
 
-        {/* Affiliate disclosure only where the page actually carries vendor OR referral links.
-            TRT pages have neither today (no whereToBuy, no referral-provider field yet), so
-            neither branch renders for them — see PageDisclaimer's "referral" variant, built and
-            ready for when a referral link exists, not wired to anything yet. */}
+        {/* Affiliate disclosure for vendor links. The referral-variant disclosure for TRT pages
+            renders INSIDE TrtReferralCard itself (2026-09-04), not here — see that file for why
+            it has to live coupled to the card rather than as a second independent gate. */}
         {q.whereToBuy && <PageDisclaimer />}
       </div>
     </>
