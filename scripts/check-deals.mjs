@@ -41,6 +41,9 @@ for (const d of deals) {
   if (d.endsAt && Number.isNaN(new Date(d.endsAt).getTime())) {
     errors.push(`  "${d.vendorSlug}": endsAt "${d.endsAt}" does not parse as a date`);
   }
+  if (d.aspectRatio !== undefined && !/^\d+(\.\d+)?\s*\/\s*\d+(\.\d+)?$/.test(d.aspectRatio)) {
+    errors.push(`  "${d.vendorSlug}": aspectRatio "${d.aspectRatio}" is not a "width/height" CSS aspect-ratio value`);
+  }
 }
 
 if (errors.length) {

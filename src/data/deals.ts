@@ -25,19 +25,30 @@ export interface Deal {
   endsAt?: string;
   /** Short exclusions line, e.g. "Excludes bundles already on sale." */
   terms?: string;
+  /** CSS `aspect-ratio` value, e.g. "2/3". Vendors' creatives vary in shape (a square social tile,
+   *  a tall email flyer, …) — this sizes the image's reserved box (see DealsPage) to that specific
+   *  creative so it renders edge to edge instead of letterboxing inside a box sized for a different
+   *  vendor's asset. Omit to fall back to DEFAULT_DEAL_ASPECT_RATIO. */
+  aspectRatio?: string;
 }
+
+/** Fallback box shape for an entry that omits `aspectRatio` — a generic portrait-flyer ratio,
+ *  reasonable until the actual creative is known. Chosen, not measured: no real Deal should stay on
+ *  this default for long, since it's very unlikely to exactly match whatever gets dropped in. */
+export const DEFAULT_DEAL_ASPECT_RATIO = "4/5";
 
 export const deals: Deal[] = [
   {
     vendorSlug: "nura-peptide",
-    // PLACEHOLDER — Mark supplies the real file. See the build report for the exact drop-in path
-    // and the width/height this entry currently assumes (must be updated to the real file's
-    // intrinsic pixel dimensions, or the rendered image will be stretched/squished).
     image: "/deals/nura-peptide-labor-day-2026.jpg",
     imageAlt: "Nura Peptide Labor Day promotional flyer listing codes LABOR20 and GLPBOGO",
     headline:
       "Use code PROFPEPTIDE instead — 25% off, more than the code on this flyer, and it still stacks with GLPBOGO.",
     // No endsAt: Nura's email said "ENDING SOON" with no date.
+    // The real file (Mark's "Nura Labor Day Promo.jpg") is 1024x1536px = 2/3 — set explicitly so
+    // it renders edge to edge rather than falling back to DEFAULT_DEAL_ASPECT_RATIO's 4/5, which
+    // would letterbox a poster designed to fill its own frame.
+    aspectRatio: "2/3",
   },
 ];
 

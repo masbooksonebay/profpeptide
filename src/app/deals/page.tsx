@@ -1,7 +1,7 @@
 import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
-import { activeDeals, type Deal } from "@/data/deals";
+import { activeDeals, DEFAULT_DEAL_ASPECT_RATIO, type Deal } from "@/data/deals";
 import { vendors, type Vendor } from "@/data/vendors";
 import { VendorShopButton } from "@/components/VendorShopButton";
 
@@ -50,12 +50,16 @@ export default function DealsPage() {
               <p className="text-base text-gray-600 dark:text-slate-300 leading-relaxed mb-4">{deal.headline}</p>
 
               {/* fill + a fixed-aspect wrapper reserves the box before the image loads (no layout
-                  shift) without needing the real file's exact intrinsic pixel dimensions, which
-                  aren't in the Deal data shape and aren't known yet for a placeholder creative
-                  (see check-deals.mjs / the build report for the real path Mark drops the file at).
-                  object-contain means an unexpected real aspect ratio letterboxes instead of
-                  stretching. */}
-              <div className="relative w-full aspect-[4/5] bg-[#F4F6F8] dark:bg-slate-800/40 rounded-lg overflow-hidden mb-4">
+                  shift) without needing next/image's width/height props, which aren't in the Deal
+                  data shape. The ratio itself is set INLINE, not via a Tailwind aspect-[] class —
+                  deal.aspectRatio is a runtime data value, and Tailwind's JIT scanner only generates
+                  CSS for class strings it finds literally in source, so a template-interpolated
+                  class name here would silently produce no rule at all. object-contain means a
+                  creative whose real ratio doesn't match still letterboxes instead of stretching. */}
+              <div
+                className="relative w-full bg-[#F4F6F8] dark:bg-slate-800/40 rounded-lg overflow-hidden mb-4"
+                style={{ aspectRatio: deal.aspectRatio ?? DEFAULT_DEAL_ASPECT_RATIO }}
+              >
                 <Image
                   src={deal.image}
                   alt={deal.imageAlt}
