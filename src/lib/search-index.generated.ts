@@ -369,6 +369,8 @@ export const generatedSearchIndex: SearchEntry[] = [
   {"title":"Thymosin","url":"/glossary","category":"glossary","description":"A family of peptides produced by the thymus involved in immune regulation and tissue repair. Thymosin Alpha-1 and TB-500 are commonly researched examples.","tags":[]},
   {"title":"Units","url":"/glossary","category":"glossary","description":"In the context of insulin syringes, 100 units = 1 mL.","tags":[]},
   {"title":"Vial","url":"/glossary","category":"glossary","description":"A small glass or plastic container holding lyophilized peptide powder. Research peptides are typically sold in sealed vials of 2–10 mg.","tags":[]},
+  {"title":"ILS Laboratories","url":"/labs/ils-laboratories","category":"lab","description":"ILS Laboratories (San Diego, CA) — accreditation, testing panel, and verification","tags":[]},
+  {"title":"Bioviridian","url":"/labs/bioviridian","category":"lab","description":"Bioviridian (College Station, TX) — accreditation, testing panel, and verification","tags":[]},
   {"title":"Peptide Library","url":"/peptides","category":"page","description":"Browse all peptide profiles","tags":[]},
   {"title":"Verified Vendors","url":"/vendors","category":"page","description":"Every vendor we track","tags":[]},
   {"title":"Featured Vendors","url":"/best-peptide-vendors","category":"page","description":"Vetted research suppliers","tags":[]},
@@ -381,6 +383,7 @@ export const generatedSearchIndex: SearchEntry[] = [
   {"title":"Guides","url":"/guides","category":"page","description":"How-to guides for peptide research","tags":[]},
   {"title":"Glossary","url":"/glossary","category":"page","description":"Peptide & supplement research glossary","tags":[]},
   {"title":"FAQ","url":"/faq","category":"page","description":"Frequently asked questions","tags":[]},
+  {"title":"Labs","url":"/labs","category":"page","description":"The independent labs behind vendors' Certificates of Analysis","tags":[]},
   {"title":"Vendor Testing Index","url":"/vendor-testing-index","category":"page","description":"Third-party testing by vendor","tags":[]},
   {"title":"Prof. Peptide App","url":"/app","category":"page","description":"Get the Prof. Peptide app","tags":[]},
 ];

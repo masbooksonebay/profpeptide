@@ -22,7 +22,7 @@ export interface ChatCorpusFaq {
   a: string;
 }
 
-export type ChatCorpusCategory = "peptide" | "supplement" | "guide" | "comparison" | "vendor" | "faq" | "news";
+export type ChatCorpusCategory = "peptide" | "supplement" | "guide" | "comparison" | "vendor" | "faq" | "news" | "lab";
 
 export interface ChatCorpusPage {
   url: string;

@@ -471,6 +471,56 @@ function extractFaqQuestionsModule() {
   });
 }
 
+// Lab profiles (/labs/<slug>) are a data-driven route (one page.tsx, generateStaticParams over
+// src/data/labs.ts), not a per-slug directory — dirsIn()'s directory scan can't find them the way
+// it finds peptides/supplements/guides/compare/coupons. Extracted straight from the data module
+// instead, same technique as extractFaqQuestionsModule() above. Vendor matches are resolved the
+// same way the page itself resolves them — vendorsUsingLab() from vendors.ts, joined by slug — so
+// the corpus can answer "which vendors use lab X" without a second hand-kept list.
+function extractLabsModule() {
+  const { labs, ACCREDITATION_CHECKED_DATE } = execModule("src/data/labs.ts");
+  const { vendorsUsingLab } = execModule("src/data/vendors.ts");
+  const counter = { count: 0 };
+  return labs.map((lab) => {
+    const vendors = vendorsUsingLab(lab.slug);
+    const findingText = lab.accreditationFindings
+      .map((f) =>
+        f.status === "no-record"
+          ? `${f.body}: no accreditation record found as of ${ACCREDITATION_CHECKED_DATE}.`
+          : `${f.body}: possible record found, identity unconfirmed — ${f.detail}`
+      )
+      .join(" ");
+    const panelText = lab.panel.map((p) => `${p.name} (${p.method}): ${p.measures}.`).join(" ");
+    const sections = [
+      { heading: "Identity", text: lab.identity },
+      { heading: "Accreditation", text: `${lab.accreditationClaim} ${findingText}` },
+      ...(lab.cloneWarning ? [{ heading: "Cloned report template", text: lab.cloneWarning }] : []),
+      { heading: "What its reports contain", text: panelText },
+      { heading: "How verification works", text: `${lab.verification.mechanics} ${lab.verification.limits}` },
+      {
+        heading: "Vendors using this lab",
+        text: vendors.length ? `PP-listed vendors naming ${lab.name}: ${vendors.map((v) => v.name).join(", ")}.` : "",
+      },
+      { heading: "Limitations", text: lab.limitations.join(" ") },
+    ].map((s) => ({ heading: s.heading, text: redactLiterals(s.text, counter) }));
+    const fullText = sections
+      .filter((s) => s.text)
+      .map((s) => `${s.heading}: ${s.text}`)
+      .join("\n\n");
+    return {
+      url: `/labs/${lab.slug}`,
+      title: redactLiterals(lab.name, counter),
+      category: "lab",
+      sections: sections.filter((s) => s.text),
+      faqs: [],
+      studies: "",
+      fullText,
+      tokenEstimate: Math.ceil(fullText.length / 4),
+      redactions: counter.count,
+    };
+  });
+}
+
 // ── news dates ────────────────────────────────────────────────────────────────────────────────
 // src/data/news.ts is the canonical registry the /news index and the homepage already read, and it
 // is import-free, so it can be exec'd directly like faqQuestions.ts. Taking the date from there
@@ -566,6 +616,7 @@ export function buildCorpus() {
   }
 
   pages.push(...extractFaqQuestionsModule());
+  pages.push(...extractLabsModule());
 
   pages.sort((a, b) => a.url.localeCompare(b.url));
   return pages;

@@ -1061,6 +1061,19 @@ export const certVerifiedVendorCount = Object.values(vendors).filter(
   (v) => !v.retired && v.facts?.labs?.some((l) => l.confidence === "verified"),
 ).length;
 
+/**
+ * Active vendors whose `facts.labs` names this lab, matched by SLUG — never by the printed
+ * `name` string, because the same real lab is printed differently across vendors' own
+ * certificates (ILS Laboratories: most print "ILS Laboratories," Hydro Research's own
+ * certificates print "ILS-Lab"). Powers /labs/<slug>'s "Vendors using this lab" section.
+ */
+export function vendorsUsingLab(labSlug: string): { slug: string; name: string }[] {
+  return Object.entries(vendors)
+    .filter(([, v]) => !v.retired && v.facts?.labs?.some((l) => l.slug === labSlug))
+    .map(([slug, v]) => ({ slug, name: v.name }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
 const REGION_WORD: Record<Vendor["region"], string> = {
   US: "US-based",
   CA: "Canada-based",

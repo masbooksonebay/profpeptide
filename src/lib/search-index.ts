@@ -19,7 +19,8 @@ export type SearchCategory =
   | "coupon"
   | "price"
   | "glossary"
-  | "page";
+  | "page"
+  | "lab";
 
 export interface SearchEntry {
   title: string;
@@ -41,4 +42,5 @@ export const categoryLabels: Record<SearchCategory, string> = {
   price: "Prices",
   glossary: "Glossary",
   page: "Pages",
+  lab: "Labs",
 };

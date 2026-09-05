@@ -64,6 +64,7 @@ const { glossarySections } = execModule("src/data/glossary.ts");
 const { faqQuestions } = execModule("src/data/faqQuestions.ts");
 const { vendors } = execModule("src/data/vendors.ts");
 const { routes } = execModule("src/data/routes.ts");
+const { labs } = execModule("src/data/labs.ts");
 const priceIndex = JSON.parse(readFileSync(P("src/data/prices.index.json"), "utf8"));
 const blendIndex = JSON.parse(readFileSync(P("src/data/blends.index.json"), "utf8"));
 
@@ -133,6 +134,9 @@ export function buildEntries() {
   for (const sec of glossarySections)
     for (const [term, def] of sec.terms) push(term, "/glossary", "glossary", def);
 
+  // Lab profiles — /labs/<slug>, data-driven off src/data/labs.ts (not a per-slug directory).
+  for (const lab of labs) push(lab.name, `/labs/${lab.slug}`, "lab", `${lab.name} (${lab.location}) — accreditation, testing panel, and verification`);
+
   // Hub / navigational pages. routes.ts owns the six primary destinations; HUB_PAGES adds the
   // remaining stable anchors. This is the ONLY curated set — a dozen fixed top-level pages that
   // do not grow, not a content list. (Flagged in the task report.)
@@ -152,6 +156,7 @@ const HUB_PAGES = [
   ["Guides", "/guides", "How-to guides for peptide research"],
   ["Glossary", "/glossary", "Peptide & supplement research glossary"],
   ["FAQ", "/faq", "Frequently asked questions"],
+  ["Labs", "/labs", "The independent labs behind vendors' Certificates of Analysis"],
   ["Vendor Testing Index", "/vendor-testing-index", "Third-party testing by vendor"],
   ["Prof. Peptide App", "/app", "Get the Prof. Peptide app"],
 ];
