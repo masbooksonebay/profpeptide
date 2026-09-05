@@ -1,4 +1,31 @@
 /**
+ * COA-verified: PP read an actual certificate naming this lab (or, for a small handful of
+ * vendors, a certificate the vendor's own site otherwise attests to). Claimed: the vendor names
+ * this lab in its own prose/marketing, but PP has not seen a certificate confirming it — e.g.
+ * real-peptides' "Kovera" (a vendor-stated second lab, no published Kovera certificate) or
+ * amp-peptides' "Janoshik Analytical" (the only public COA is an illustrative sample, not a
+ * lot-matched report). Replaces the old two-field labName/labClaim split, which broke down
+ * whenever ONE lab was verified and ANOTHER was only claimed for the same vendor.
+ */
+export type LabConfidence = "verified" | "claimed";
+
+/**
+ * One laboratory named on a vendor's certificates or in its own testing claims. `slug` is a
+ * stable per-lab identifier — NOT consumed by anything yet, reserved for a future /labs/<slug>
+ * profile page. It stays consistent across vendors sharing the same real-world lab even when each
+ * vendor's own prose names it slightly differently (e.g. hydro-research's own certificates print
+ * "ILS-Lab" while others print "ILS Laboratories" — both carry slug "ils-laboratories").
+ */
+export interface LabEntry {
+  /** As printed on THIS vendor's certificate or stated in THIS vendor's own prose — not
+   *  normalized across vendors. See the slug note above for why. */
+  name: string;
+  /** Canonical cross-vendor lab identifier. Reserved for /labs/<slug>; nothing reads it yet. */
+  slug?: string;
+  confidence: LabConfidence;
+}
+
+/**
  * Structured facts that compose the coupon page's subtitle (see vendorFactsLine). Populated
  * per vendor from that vendor's OWN site. Absent fields simply drop their segment.
  */
@@ -10,16 +37,14 @@ export interface VendorFacts {
   coa?: "per-batch" | "per-product" | "library" | "on-request" | "login-gated";
   /** Lab accreditation the vendor states, e.g. "ISO/IEC 17025". */
   labAccreditation?: string;
-  /** A specific third-party lab VERIFIED from the vendor's own COA — a proper noun
-   *  (e.g. "Kovera Labs", "Janoshik"). NEVER a vague descriptor: a vendor's own
-   *  unverified account of its testing goes in `labClaim`, not here. Rendered as a
-   *  stated fact ("Tested by {labName}") in the testing index. */
-  labName?: string;
-  /** The vendor's OWN unverified description of its testing, used when no specific
-   *  lab is confirmable from a COA (e.g. "independent US labs", "cGMP/ISO labs").
-   *  Rendered ATTRIBUTED ('Vendor states: "{labClaim}"') so a reader can tell a
-   *  vendor's assertion apart from a COA-verified lab at a glance. */
-  labClaim?: string;
+  /** Third-party labs named on this vendor's certificates or in its own testing claims, in the
+   *  order the vendor's own prose presents them — order is meaningful (e.g. Orbitrex's own prose
+   *  leads with "Freedom Diagnostics covers the largest share, with further certificates
+   *  from…"). Absent or empty when no lab is named anywhere (aero-peptides, paradigm-peptides,
+   *  integrative-peptides) — that absence IS the fact, not a gap to fill with a fallback string.
+   *  A vague, unnamed count claim ("three independent laboratories" with no names given) does NOT
+   *  belong here — this array holds named labs only, verified or claimed; see LabConfidence. */
+  labs?: LabEntry[];
   /** Analytical methods the vendor states it runs, e.g. "HPLC, mass spec". Free text. */
   testMethods?: string;
   /** Contaminant/safety panels the vendor states it runs, e.g. "Heavy metals, endotoxin". */
@@ -99,7 +124,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://www.aleraresearch.com/?ref=PROFPEPTIDE",
     detailPage: "/coupons/alera-research",
     blockNote: "Freedom Diagnostics \u2014 HPLC-UV + MS",
-    facts: { coa: "library", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", purityStandard: "99%+" },
+    facts: { coa: "library", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }], testMethods: "HPLC-UV, LC-MS", purityStandard: "99%+" },
   },
   "almighty-peptides": {
     name: "Almighty Peptides",
@@ -108,7 +133,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.almightypeptides.com/?sld=profpeptide",
     detailPage: "/coupons/almighty-peptides",
-    facts: { labName: "Bioviridian", testMethods: "RP-HPLC, MALDI-MS" },
+    facts: { labs: [{ name: "Bioviridian", slug: "bioviridian", confidence: "verified" }], testMethods: "RP-HPLC, MALDI-MS" },
   },
   "alpha-peptides": {
     name: "Alpha Peptides",
@@ -120,7 +145,7 @@ export const vendors: Record<string, Vendor> = {
     // labName added 2026-09: ~60 certificates linked from /coa/ name Analytical Formulations,
     // Inc. (Windcrest, TX). Two link directly to the lab's own public storage bucket, not a copy
     // hosted by Alpha — named-on-certificates, not independently byte-verified.
-    facts: { coa: "library", labName: "Analytical Formulations, Inc.", labAccreditation: "ISO/IEC 17025" },
+    facts: { coa: "library", labs: [{ name: "Analytical Formulations, Inc.", slug: "analytical-formulations", confidence: "verified" }], labAccreditation: "ISO/IEC 17025" },
   },
   "athena-peptides": {
     name: "Athena Peptides",
@@ -138,7 +163,7 @@ export const vendors: Record<string, Vendor> = {
     // confirmed on a Bioviridian cert). Domain footprint to Jul 2020.
     url: "https://athenapeptides.com/?ref=PROFPEPTIDE",
     detailPage: "/coupons/athena-peptides",
-    facts: { coa: "per-product", labName: "Freedom Diagnostics, Bioviridian Inc", testMethods: "RP-HPLC (214nm), LC-MS/MS, MALDI-MS" },
+    facts: { coa: "per-product", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }, { name: "Bioviridian Inc", slug: "bioviridian", confidence: "verified" }], testMethods: "RP-HPLC (214nm), LC-MS/MS, MALDI-MS" },
     blockNote: "Per-product COAs, lab-side verification (Freedom Diagnostics / Bioviridian)",
   },
   "order-my-peptides": {
@@ -153,7 +178,7 @@ export const vendors: Record<string, Vendor> = {
     // carries a QR + sample code that resolves on the lab's own site (accumarklabs.com).
     url: "https://ordermypeptides.com/",
     detailPage: "/coupons/order-my-peptides",
-    facts: { coa: "library", labName: "Accumark Labs", testMethods: "HPLC-DAD (identity, quantity, purity)" },
+    facts: { coa: "library", labs: [{ name: "Accumark Labs", slug: "accumark-labs", confidence: "verified" }], testMethods: "HPLC-DAD (identity, quantity, purity)" },
     blockNote: "Per-batch COAs, QR-verifiable at the lab (Accumark)",
   },
   "ameano-peptides": {
@@ -163,7 +188,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ameanopeptides.com/?ref=hmvyvxhr",
     detailPage: "/coupons/ameano-peptides",
-    facts: { purityStandard: "≥99%", coa: "per-product", labName: "Janoshik", testMethods: "HPLC, LC-MS" },
+    facts: { purityStandard: "≥99%", coa: "per-product", labs: [{ name: "Janoshik", slug: "janoshik", confidence: "verified" }], testMethods: "HPLC, LC-MS" },
     blockNote: "Published per-product COAs · third-party verified",
   },
   "amino-club": {
@@ -184,7 +209,7 @@ export const vendors: Record<string, Vendor> = {
     // labs — ILS Laboratories (41/48, current/primary) and Freedom Diagnostics (7/48,
     // legacy/vial products). One Freedom cert byte-matched the lab's own public index copy.
     // Same two-lab, same-order shape as midwest-peptide's entry above.
-    facts: { purityStandard: "≥99%", coa: "per-batch", labName: "ILS Laboratories, Freedom Diagnostics", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals, sterility, endotoxin" },
+    facts: { purityStandard: "≥99%", coa: "per-batch", labs: [{ name: "ILS Laboratories", slug: "ils-laboratories", confidence: "verified" }, { name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }], labAccreditation: "ISO/IEC 17025", testMethods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals, sterility, endotoxin" },
     blockNote: "ILS Laboratories · batch COAs",
     editorsPick: true,
   },
@@ -195,7 +220,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://aminox.net/?coupon=PROFPEPTIDE",
     detailPage: "/coupons/amino-x",
-    facts: { coa: "per-batch", purityStandard: "99%+", labName: "Kovera Labs", testMethods: "RP-HPLC, LC-MS" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labs: [{ name: "Kovera Labs", slug: "kovera-labs", confidence: "verified" }], testMethods: "RP-HPLC, LC-MS" },
   },
   // Onboarded 2026-08 (GoAffPro; PROFPEPTIDE bound to the affiliate account, 15% verified in-cart).
   // Janoshik is VENDOR-STATED only: the sole public "cert" is a labelled "Sample CoA" (an on-page
@@ -211,7 +236,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://amp-peptides.com/?ref=PROFPEPTIDE",
     detailPage: "/coupons/amp-peptides",
-    facts: { purityStandard: "99%+", coa: "on-request", labClaim: "Janoshik Analytical, independent third-party lab", testMethods: "HPLC, ESI-MS" },
+    facts: { purityStandard: "99%+", coa: "on-request", labs: [{ name: "Janoshik Analytical", slug: "janoshik", confidence: "claimed" }], testMethods: "HPLC, ESI-MS" },
   },
   "ascension-peptides": {
     name: "Ascension Peptides",
@@ -223,7 +248,7 @@ export const vendors: Record<string, Vendor> = {
     // blockNote sourced 2026-09-01 from this vendor's own /coupons/ascension-peptides page:
     //   "Ascension states a 99%+ purity standard for its catalog, and every COA is downloadable"
     blockNote: "Public COAs \u00b7 vendor-stated 99%+",
-    facts: { coa: "per-batch", purityStandard: "99%+", labName: "MZ BioLabs", testMethods: "HPLC-UV, HPLC-MS" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labs: [{ name: "MZ BioLabs", slug: "mz-biolabs", confidence: "verified" }], testMethods: "HPLC-UV, HPLC-MS" },
   },
   "biolongevity-labs": {
     name: "Biolongevity Labs",
@@ -232,7 +257,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://go.biolongevitylabs.com/aff_c?offer_id=1&aff_id=2702",
     detailPage: "/coupons/biolongevity-labs",
-    facts: { coa: "per-batch", labName: "BioRegen", purityStandard: "99%+", testMethods: "LC-MS with UV" },
+    facts: { coa: "per-batch", labs: [{ name: "BioRegen", slug: "bioregen", confidence: "verified" }], purityStandard: "99%+", testMethods: "LC-MS with UV" },
     blockNote: "Per-batch COAs",
   },
   // BioPure's discount is 5% off — the LOWEST on the roster. That IS the discount; do NOT
@@ -259,7 +284,7 @@ export const vendors: Record<string, Vendor> = {
     // CERTIFICATES, nothing more — never describe AxisPharm as independent, accredited, or
     // verified; labAccreditation stays intentionally absent. coa stays "on-request" — nothing is
     // published/linked on the site itself.
-    facts: { purityStandard: "≥99%", coa: "on-request", labName: "AxisPharm, LLC" },
+    facts: { purityStandard: "≥99%", coa: "on-request", labs: [{ name: "AxisPharm, LLC", slug: "axispharm", confidence: "verified" }, { name: "MZ Biolabs", slug: "mz-biolabs", confidence: "verified" }] },
   },
   "biocollex": {
     name: "BioCollex",
@@ -271,7 +296,7 @@ export const vendors: Record<string, Vendor> = {
     // blockNote sourced 2026-09-01 from this vendor's own /coupons/biocollex page:
     //   "All products are independently tested to a 99% purity standard by Freedom Diagnostics"
     blockNote: "Freedom Diagnostics \u00b7 99% purity",
-    facts: { coa: "per-batch", purityStandard: "99%", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
+    facts: { coa: "per-batch", purityStandard: "99%", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }], testMethods: "HPLC-UV, LC-MS" },
   },
   // Onboarded Aug 2026. WooCommerce; catalog + per-vial prices public (no account gate). COAs are
   // published PRE-PURCHASE in a per-lot library (/lab-testing-coas/) by Accumark Labs (a DBA of
@@ -292,7 +317,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://capstonepeptides.com/",
     detailPage: "/coupons/capstone-peptides",
     editorsPick: true,
-    facts: { purityStandard: "≥98% by HPLC", coa: "library", labName: "Accumark Labs", testMethods: "HPLC" },
+    facts: { purityStandard: "≥98% by HPLC", coa: "library", labs: [{ name: "Accumark Labs", slug: "accumark-labs", confidence: "verified" }], testMethods: "HPLC" },
     blockNote: "Accumark Labs · digital COAs",
   },
   "crush-research": {
@@ -302,7 +327,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://crushresearch.shop/?ref=PROFPEPTIDE",
     detailPage: "/coupons/crush-research",
-    facts: { coa: "per-batch", labName: "ILS Laboratories", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals (ICP-MS), sterility (PCR), endotoxin (USP <85>)" },
+    facts: { coa: "per-batch", labs: [{ name: "ILS Laboratories", slug: "ils-laboratories", confidence: "verified" }], labAccreditation: "ISO/IEC 17025", testMethods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals (ICP-MS), sterility (PCR), endotoxin (USP <85>)" },
   },
   "ez-peptides": {
     name: "EZ Peptides",
@@ -314,7 +339,7 @@ export const vendors: Record<string, Vendor> = {
     // blockNote sourced 2026-09-01 from this vendor's own /coupons/ez-peptides page:
     //   "Every EZ Peptides batch is third-party tested by Janoshik, an independent analytical laboratory"
     blockNote: "Janoshik-tested \u00b7 COA per batch",
-    facts: { coa: "per-batch", labName: "Janoshik", testMethods: "HPLC, LC-MS" },
+    facts: { coa: "per-batch", labs: [{ name: "Janoshik", slug: "janoshik", confidence: "verified" }], testMethods: "HPLC, LC-MS" },
   },
   "fusion-peptide": {
     name: "Fusion Peptide",
@@ -332,7 +357,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://glacieraminos.shop/?ref=cknlhxrm",
     detailPage: "/coupons/glacier-aminos",
-    facts: { coa: "per-batch", labName: "Forever Young Pharmacy, Freedom Diagnostics, Kovera Labs", testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin; sterility + heavy metals on Kovera lots", coldChain: true },
+    facts: { coa: "per-batch", labs: [{ name: "Forever Young Pharmacy", slug: "forever-young-pharmacy", confidence: "verified" }, { name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }, { name: "Kovera Labs", slug: "kovera-labs", confidence: "verified" }], testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin; sterility + heavy metals on Kovera lots", coldChain: true },
     // Drift-resolved 2026-08-18: chose "Batch-traceable COAs" over the generic "Batch COAs". Glacier
     // publishes a batch-searchable COA library — each cert ties to a batch number, with Kovera /verify
     // and Freedom Diagnostics search codes — so traceability is the verified distinction, not just COAs.
@@ -349,7 +374,7 @@ export const vendors: Record<string, Vendor> = {
     // NOT here: PROFPEPTIDE50 (50% off GLPs), PROFPEPTIDE25 (25% off everything else).
     url: "https://hydroresearchpeptides.com/",
     detailPage: "/coupons/hydro-research",
-    facts: { coa: "library", labName: "Janoshik, Chromate Labs, ILS-Lab", testMethods: "HPLC (purity), LC-MS/identity", contaminants: "endotoxin, heavy metals, sterility" },
+    facts: { coa: "library", labs: [{ name: "Janoshik", slug: "janoshik", confidence: "verified" }, { name: "Chromate Labs", slug: "chromate", confidence: "verified" }, { name: "ILS-Lab", slug: "ils-laboratories", confidence: "verified" }], testMethods: "HPLC (purity), LC-MS/identity", contaminants: "endotoxin, heavy metals, sterility" },
     blockNote: "Portal-verifiable COAs (Janoshik/Chromate)",
   },
   "paradigm-peptides": {
@@ -376,7 +401,7 @@ export const vendors: Record<string, Vendor> = {
     // blockNote sourced 2026-09-01 from this vendor's own /coupons/ignite-peptides page:
     //   "The published Certificates of Analysis are issued by two independent labs: Janoshik"
     blockNote: "Two independent labs \u00b7 per-product COAs",
-    facts: { coa: "per-product", purityStandard: "99%+", labName: "Janoshik, Freedom Diagnostics", testMethods: "HPLC, LC-MS" },
+    facts: { coa: "per-product", purityStandard: "99%+", labs: [{ name: "Janoshik", slug: "janoshik", confidence: "verified" }, { name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }], testMethods: "HPLC, LC-MS" },
   },
   // Onboarded 2026-08 (GoAffPro; PROFPEPTIDE bound, 15% verified in-cart — 20% is the commission,
   // NOT the customer discount). Public COA library (10 of 24 have a published COA; rest "in
@@ -393,7 +418,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://improvedpeptides.com/?ref=PROFPEPTIDE",
     detailPage: "/coupons/improved-peptides",
-    facts: { purityStandard: "≥99%", coa: "library", labName: "Freedom Diagnostics, Krause Analytical", testMethods: "RP-HPLC-UV, LC-MS" },
+    facts: { purityStandard: "≥99%", coa: "library", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }, { name: "Krause Analytical", slug: "krause-analytical", confidence: "verified" }], testMethods: "RP-HPLC-UV, LC-MS" },
   },
   "la-peptides": {
     name: "LA Peptides",
@@ -402,7 +427,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://lapeptides.net/?ref=xocwamxz",
     detailPage: "/coupons/la-peptides",
-    facts: { coa: "per-batch", labName: "Bioviridian", purityStandard: "99%+", testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin (USP <85>), heavy metals (USP <232>), sterility (USP <71>)" },
+    facts: { coa: "per-batch", labs: [{ name: "Bioviridian", slug: "bioviridian", confidence: "verified" }], purityStandard: "99%+", testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin (USP <85>), heavy metals (USP <232>), sterility (USP <71>)" },
   },
   "mile-high-compounds": {
     name: "Mile High Compounds",
@@ -419,7 +444,7 @@ export const vendors: Record<string, Vendor> = {
     // identity + purity + content only — NOT the endotoxin/sterility/heavy-metals the "8x" claim
     // implies (attributed, not in facts). Identity is HPLC spec-match, not MS. Coded GLP names
     // decode from CAS: MHC-2 TRZ=Tirzepatide, MHC-3 RT=Retatrutide, MHC-1 SM=Semaglutide.
-    facts: { coa: "library", labName: "Chromate, Vanguard Laboratory", purityStandard: "99%+", testMethods: "RP-HPLC-UV" },
+    facts: { coa: "library", labs: [{ name: "Chromate", slug: "chromate", confidence: "verified" }, { name: "Vanguard Laboratory", slug: "vanguard-laboratory", confidence: "verified" }], purityStandard: "99%+", testMethods: "RP-HPLC-UV" },
   },
   // Testing read 2026-08-30: TWO labs. Chromate COA #33551, client "MogLabs.bio", batch BPC002 —
   // purity 98.353% against a >98% spec, PLUS sterility USP <1223> BacT/ALERT (Pass), endotoxin by
@@ -440,7 +465,7 @@ export const vendors: Record<string, Vendor> = {
     blockNote: "Chromate + Janoshik \u2014 sterility, endotoxin, metals",
     facts: {
       coa: "library",
-      labName: "Chromate",
+      labs: [{ name: "Chromate", slug: "chromate", confidence: "verified" }, { name: "Janoshik", slug: "janoshik", confidence: "verified" }],
       testMethods: "HPLC purity, sterility USP <1223> (BacT/ALERT), kinetic chromogenic LAL endotoxin, metals",
       contaminants: "Sterility (USP <1223> BacT/ALERT), endotoxin (kinetic chromogenic LAL), metals",
       purityStandard: "98%+",
@@ -453,7 +478,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://modernaminos.com/?ref=profpeptide",
     detailPage: "/coupons/modern-aminos",
-    facts: { coa: "login-gated", labName: "Vanguard Laboratory, Freedom Diagnostics, TrustPointe Analytics", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC-UV/VIS, LC-MS/MS", contaminants: "Endotoxin (USP <85>)" },
+    facts: { coa: "login-gated", labs: [{ name: "Vanguard Laboratory", slug: "vanguard-laboratory", confidence: "verified" }, { name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }, { name: "TrustPointe Analytics", slug: "trustpointe-analytics", confidence: "verified" }], labAccreditation: "ISO/IEC 17025", testMethods: "HPLC-UV/VIS, LC-MS/MS", contaminants: "Endotoxin (USP <85>)" },
     blockNote: "ISO 17025 lab",
   },
   "nextgen-peptides": {
@@ -463,7 +488,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://ngpeptide.com/?ref=fysuzocl",
     detailPage: "/coupons/nextgen-peptides",
-    facts: { coa: "library", labName: "ILS Laboratories", labAccreditation: "ISO/IEC 17025", purityStandard: "≥99%", testMethods: "HPLC, ICP-MS", contaminants: "Heavy metals (ICP-MS, USP <233>), endotoxin (USP <85>), sterility (PCR), fentanyl screen" },
+    facts: { coa: "library", labs: [{ name: "ILS Laboratories", slug: "ils-laboratories", confidence: "verified" }, { name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "claimed" }], labAccreditation: "ISO/IEC 17025", purityStandard: "≥99%", testMethods: "HPLC, ICP-MS", contaminants: "Heavy metals (ICP-MS, USP <233>), endotoxin (USP <85>), sterility (PCR), fentanyl screen" },
   },
   "peptidology": {
     name: "Peptidology",
@@ -472,7 +497,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptidology.co/?ref=mkmhgxqi",
     detailPage: "/coupons/peptidology",
-    facts: { coa: "per-batch", labName: "Vanguard Laboratory, Eagle Analytical Services", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC-UV/VIS, ICP-MS, GC-MS", contaminants: "Heavy metals (ICP-MS), endotoxin (LAL), sterility (USP <71> + ScanRDI), residual solvents (GC-MS), TFA" },
+    facts: { coa: "per-batch", labs: [{ name: "Vanguard Laboratory", slug: "vanguard-laboratory", confidence: "verified" }, { name: "Eagle Analytical Services", slug: "eagle-analytical-services", confidence: "verified" }], labAccreditation: "ISO/IEC 17025", testMethods: "HPLC-UV/VIS, ICP-MS, GC-MS", contaminants: "Heavy metals (ICP-MS), endotoxin (LAL), sterility (USP <71> + ScanRDI), residual solvents (GC-MS), TFA" },
     blockNote: "ISO 17025 lab · batch COAs",
   },
   // Testing read 2026-08-31 (first-hand recon, this session): Freedom Diagnostics. IRON publishes a
@@ -500,7 +525,7 @@ export const vendors: Record<string, Vendor> = {
     url: "https://ironpeptides.is/?ref=PROFPEPTIDE",
     detailPage: "/coupons/iron-peptides",
     blockNote: "Freedom Diagnostics \u00b7 lab-verifiable COAs",
-    facts: { coa: "library", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
+    facts: { coa: "library", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }], testMethods: "HPLC-UV, LC-MS" },
   },
   // Testing read 2026-09-01. FIVE named laboratories verified FROM THE CERTIFICATES THEMSELVES,
   // not from vendor copy: Freedom Diagnostics (107 of the 195 published certs), ILS Laboratories,
@@ -542,7 +567,7 @@ export const vendors: Record<string, Vendor> = {
     blockNote: "Freedom Diagnostics + ILS \u00b7 endotoxin, PCR, ICP-MS",
     facts: {
       coa: "per-batch",
-      labName: "Freedom Diagnostics, ILS Laboratories",
+      labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }, { name: "ILS Laboratories", slug: "ils-laboratories", confidence: "verified" }, { name: "Kovera Labs", slug: "kovera-labs", confidence: "verified" }, { name: "Vanguard Laboratory", slug: "vanguard-laboratory", confidence: "verified" }, { name: "TrustPointe Analytics", slug: "trustpointe-analytics", confidence: "verified" }],
       testMethods: "LC-MS identity, HPLC-UV purity, net peptide content",
       contaminants: "Endotoxin (USP <85> LAL, duplicate), microbial (PCR), elemental impurities (ICP-MS)",
       purityStandard: "99%+",
@@ -573,7 +598,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.legendarypeptides.com/?affiliate=PROFPEPTIDE",
     detailPage: "/coupons/legendary-peptides",
-    facts: { coa: "per-product", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>); recent lots: microbial (PCR), fentanyl" },
+    facts: { coa: "per-product", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }], testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>); recent lots: microbial (PCR), fentanyl" },
   },
   "limitless-biotech": {
     name: "Limitless Biotech",
@@ -585,7 +610,7 @@ export const vendors: Record<string, Vendor> = {
     // labName upgraded from labClaim 2026-09: 450 certificate links sampled across 92 products
     // name FOUR labs, not the vendor's stated three. None of the three labs' verify portals could
     // be queried — named-on-certificates, not independently verified, so no labAccreditation here.
-    facts: { coa: "on-request", purityStandard: "≥98.5%", labName: "TrustPointe Analytics, Janoshik, MZ Biolabs, Vanguard Laboratory", testMethods: "HPLC, LC-MS", contaminants: "Sterility, endotoxin, contaminants" },
+    facts: { coa: "on-request", purityStandard: "≥98.5%", labs: [{ name: "TrustPointe Analytics", slug: "trustpointe-analytics", confidence: "verified" }, { name: "Janoshik", slug: "janoshik", confidence: "verified" }, { name: "MZ Biolabs", slug: "mz-biolabs", confidence: "verified" }, { name: "Vanguard Laboratory", slug: "vanguard-laboratory", confidence: "verified" }], testMethods: "HPLC, LC-MS", contaminants: "Sterility, endotoxin, contaminants" },
   },
   "midwest-peptide": {
     name: "Midwest Peptide",
@@ -594,7 +619,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://midwestpeptide.com?ref=PROFPEPTIDE",
     detailPage: "/coupons/midwest-peptide",
-    facts: { coa: "per-batch", labName: "ILS Laboratories, Freedom Diagnostics", labAccreditation: "ISO/IEC 17025", purityStandard: "≥99%", testMethods: "RP-HPLC-UV, mass spectrometry", contaminants: "Heavy metals (ICP-MS, USP <233>), endotoxin (LAL), sterility (PCR), fentanyl screen" },
+    facts: { coa: "per-batch", labs: [{ name: "ILS Laboratories", slug: "ils-laboratories", confidence: "verified" }, { name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }], labAccreditation: "ISO/IEC 17025", purityStandard: "≥99%", testMethods: "RP-HPLC-UV, mass spectrometry", contaminants: "Heavy metals (ICP-MS, USP <233>), endotoxin (LAL), sterility (PCR), fentanyl screen" },
   },
   "ion-peptide": {
     name: "Ion Peptide",
@@ -614,7 +639,7 @@ export const vendors: Record<string, Vendor> = {
     // confirmation (2026-08): ION-1S=Semaglutide, ION-2T=Tirzepatide, ION-3R=Retatrutide. Evidence tier =
     // first-hand confirmation, NOT a certificate (same treatment as Real's GLYCON-X vial label); a future
     // price-pull decoder should carry this forward.
-    facts: { coa: "library", purityStandard: "99%+", labName: "Kovera Labs", testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin (LAL, ≤0.5 EU/mL), microbial sterility, heavy metals (As/Cd/Pb/Hg)" },
+    facts: { coa: "library", purityStandard: "99%+", labs: [{ name: "Kovera Labs", slug: "kovera-labs", confidence: "verified" }], testMethods: "RP-HPLC, LC-MS", contaminants: "Endotoxin (LAL, ≤0.5 EU/mL), microbial sterility, heavy metals (As/Cd/Pb/Hg)" },
   },
   "forge-performance-co": {
     name: "Forge Performance Co",
@@ -641,7 +666,7 @@ export const vendors: Record<string, Vendor> = {
     // ion-peptide/real-peptides). Price-pulled 2026-08-23 (15 singles + 4 blends; GLP-RT 2/3-Pack bulk
     // excluded, REBUILD/IGNITION/FPC-31 excluded — see the pull report). Research based on the site's
     // COA-library/verify pages, not a raw certificate PDF read.
-    facts: { coa: "library", labName: "Freedom Diagnostics, ILS Laboratories, Kovera Labs", testMethods: "HPLC, LC-MS, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals (ICP-MS), endotoxin (USP <85>), microbial sterility (PCR), fentanyl screen (LC-MS)" },
+    facts: { coa: "library", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }, { name: "ILS Laboratories", slug: "ils-laboratories", confidence: "verified" }, { name: "Kovera Labs", slug: "kovera-labs", confidence: "verified" }], testMethods: "HPLC, LC-MS, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals (ICP-MS), endotoxin (USP <85>), microbial sterility (PCR), fentanyl screen (LC-MS)" },
     blockNote: "Three-lab batch COAs · fentanyl-screened · verify on each lab's portal",
   },
   "oasis-labs": {
@@ -654,7 +679,7 @@ export const vendors: Record<string, Vendor> = {
     // blockNote sourced 2026-09-01 from this vendor's own /coupons/oasis-labs page:
     //   "Recent batches are tested by Bioviridian \u2014 identity by MALDI-MS, purity by RP-HPLC (214 nm)"
     blockNote: "Bioviridian-tested \u00b7 verifiable COAs",
-    facts: { coa: "per-batch", purityStandard: "99%", labName: "Bioviridian, BioRegen", testMethods: "RP-HPLC, MALDI-MS, LC-MS", coldChain: true },
+    facts: { coa: "per-batch", purityStandard: "99%", labs: [{ name: "Bioviridian", slug: "bioviridian", confidence: "verified" }, { name: "BioRegen", slug: "bioregen", confidence: "verified" }], testMethods: "RP-HPLC, MALDI-MS, LC-MS", coldChain: true },
   },
   // Restored 2026-08 after Particle issued a working code. Prices are in EUR — verified at
   // checkout: €30.89 with the PROFPEPTIDE 10% discount of €3.09, so the code works end to end.
@@ -674,7 +699,7 @@ export const vendors: Record<string, Vendor> = {
     // per-batch certs w/ QR verify (base.liquilabs.cz). No accreditation printed on the COA (the
     // ISO 9001/13485 the page cites is the MANUFACTURER's, so labAccreditation stays absent).
     // Detection is HPLC-UV with spectral + RT identity — NOT mass spec; don't claim MS.
-    facts: { coa: "library", labName: "Liquilabs", testMethods: "RP-HPLC-UV; identity by UV spectrum + retention time", contaminants: "Microbial (USP <61>/Ph. Eur. 2.6.12), endotoxin (USP <85>/Ph. Eur. 2.6.14), heavy metals (7 elements, USP <232>/Ph. Eur. 5.20)" },
+    facts: { coa: "library", labs: [{ name: "Liquilabs", slug: "liquilabs", confidence: "verified" }], testMethods: "RP-HPLC-UV; identity by UV spectrum + retention time", contaminants: "Microbial (USP <61>/Ph. Eur. 2.6.12), endotoxin (USP <85>/Ph. Eur. 2.6.14), heavy metals (7 elements, USP <232>/Ph. Eur. 5.20)" },
   },
   "peptide-partners": {
     name: "Peptide Partners",
@@ -686,7 +711,7 @@ export const vendors: Record<string, Vendor> = {
     // blockNote sourced 2026-09-01 from this vendor's own /coupons/peptide-partners page:
     //   "two independent labs that currently run in parallel, TrustPointe Analytics (Dorr, MI) and Kovera Labs"
     blockNote: "TrustPointe + Kovera \u00b7 endotoxin & sterility",
-    facts: { coa: "per-batch", purityStandard: "99%+", labName: "TrustPointe, Kovera, BioRegen", testMethods: "RP-HPLC, LC-MS, ICP, USP <85>", contaminants: "Heavy metals (ICP), endotoxin (USP <85>), sterility (PCR)" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labs: [{ name: "TrustPointe Analytics", slug: "trustpointe-analytics", confidence: "verified" }, { name: "Kovera Labs", slug: "kovera-labs", confidence: "verified" }, { name: "BioRegen", slug: "bioregen", confidence: "verified" }], testMethods: "RP-HPLC, LC-MS, ICP, USP <85>", contaminants: "Heavy metals (ICP), endotoxin (USP <85>), sterility (PCR)" },
     editorsPick: true,
   },
   "peptide-giants": {
@@ -696,7 +721,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://peptidegiants.com/?ref=urunwnog",
     detailPage: "/coupons/peptide-giants",
-    facts: { coa: "library", labName: "Janoshik", testMethods: "HPLC" },
+    facts: { coa: "library", labs: [{ name: "Janoshik", slug: "janoshik", confidence: "verified" }], testMethods: "HPLC" },
     blockNote: "Third-party tested by Janoshik",
   },
   "peptides-gg": {
@@ -709,7 +734,7 @@ export const vendors: Record<string, Vendor> = {
     // and the price-data doc, not just this entry.
     url: "https://peptides.gg/?coupon=profpeptide",
     detailPage: "/coupons/peptides-gg",
-    facts: { coa: "per-batch", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS" },
+    facts: { coa: "per-batch", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }], testMethods: "HPLC-UV, LC-MS" },
     blockNote: "Per-batch COAs",
   },
   // Onboarded 2026-09-03. Peptira LLC, PO Box 391, Chadron NE 69337 (Support@peptira.com). Store
@@ -750,7 +775,7 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/peptira",
     facts: {
       coa: "per-batch",
-      labName: "Freedom Diagnostics",
+      labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }],
       testMethods: "HPLC-UV identity + mass spec, per-vial purity/content (3-vial average)",
       contaminants: "Endotoxin (duplicate, \u2264 0.05 EU/mL)",
     },
@@ -772,7 +797,7 @@ export const vendors: Record<string, Vendor> = {
     region: "CA",
     url: "https://puritypeptides.is/?sld=PROF15",
     detailPage: "/coupons/purity-peptides",
-    facts: { coa: "per-batch", purityStandard: "99%+", labName: "MDX Biolabs, Vanguard Laboratory", testMethods: "HPLC, mass spec", contaminants: "Endotoxin (LAL)" },
+    facts: { coa: "per-batch", purityStandard: "99%+", labs: [{ name: "MDx BioAnalytical Laboratory", slug: "mdx-bioanalytical-laboratory", confidence: "verified" }, { name: "Vanguard Laboratory", slug: "vanguard-laboratory", confidence: "verified" }], testMethods: "HPLC, mass spec", contaminants: "Endotoxin (LAL)" },
   },
   "real-peptides": {
     name: "Real Peptides",
@@ -781,7 +806,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.realpeptides.co/ref/688/",
     detailPage: "/coupons/real-peptides",
-    facts: { coa: "per-product", labName: "Freedom Diagnostics", purityStandard: "≥99%", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>)" },
+    facts: { coa: "per-product", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }, { name: "Kovera", slug: "kovera-labs", confidence: "claimed" }], purityStandard: "≥99%", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>)" },
   },
   "royal-peptides": {
     name: "Royal Peptides",
@@ -790,7 +815,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://royal-peptides.com/?ref=urunwnog",
     detailPage: "/coupons/royal-peptides",
-    facts: { coa: "per-batch", labName: "Janoshik", purityStandard: "99%+", testMethods: "HPLC", labClaim: "cGMP/ISO manufacturing (vendor-stated)" },
+    facts: { coa: "per-batch", labs: [{ name: "Janoshik", slug: "janoshik", confidence: "verified" }], purityStandard: "99%+", testMethods: "HPLC" },
     blockNote: "cGMP/ISO labs · batch COAs",
   },
   "science-based-peptides": {
@@ -800,7 +825,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.sciencebasedpeptides.com/ref/PROFPEPTIDE",
     detailPage: "/coupons/science-based-peptides",
-    facts: { coa: "per-batch" },
+    facts: { coa: "per-batch", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }] },
   },
   "spartan-peptides": {
     name: "Spartan Peptides",
@@ -809,7 +834,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://spartanpeptides.com/?a_aid=profpeptide&a_bid=ce6347d0",
     detailPage: "/coupons/spartan-peptides",
-    facts: { purityStandard: "≥98%", coa: "per-batch", labName: "MZ BioLabs", testMethods: "HPLC, mass spec" },
+    facts: { purityStandard: "≥98%", coa: "per-batch", labs: [{ name: "MZ BioLabs", slug: "mz-biolabs", confidence: "verified" }], testMethods: "HPLC, mass spec" },
   },
   "swiss-chems": {
     name: "Swiss Chems",
@@ -831,7 +856,7 @@ export const vendors: Record<string, Vendor> = {
     // test reports (task numbers, verify keys, per-batch data). The other 20 are self-branded
     // "SC-HPLC-*" documents naming no lab — "Tested By A US-Certified Laboratory" only, generic
     // badge, reused signature images. Janoshik covers the majority, not the whole library.
-    facts: { coa: "library", labName: "Janoshik" },
+    facts: { coa: "library", labs: [{ name: "Janoshik", slug: "janoshik", confidence: "verified" }] },
   },
   "synthesis-peptides": {
     name: "Synthesis Peptides",
@@ -855,6 +880,10 @@ export const vendors: Record<string, Vendor> = {
     // vendor-side migration off the suffixed form has precedent on this roster.
     // 🔒 check:codes Tier 1 enforces that every literal on the coupon page equals this field, so
     // the page and the registry cannot drift apart.
+    // facts added 2026-09: page names Freedom Diagnostics ("certificates are issued by Freedom
+    // Diagnostics, and a certificate resolves on the laboratory's own site") — this vendor had no
+    // facts object at all before.
+    facts: { labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }] },
   },
   "treasure-coast-peptides": {
     name: "Treasure Coast",
@@ -875,7 +904,7 @@ export const vendors: Record<string, Vendor> = {
     // against the lab's own copy, prefix-collision-checked. Janoshik appears once, on an older
     // Apr-2025 GLOW report. Partial coverage, not a full library — coa stays "on-request" (nothing
     // is linked/published on the pages a reader actually sees).
-    facts: { coa: "on-request", labName: "Freedom Diagnostics, Janoshik" },
+    facts: { coa: "on-request", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }, { name: "Janoshik", slug: "janoshik", confidence: "verified" }] },
     // CORRECTED on migration 2026-08-18: the per-profile note was "Per-batch COAs", but the Job-2
     // cert pass above found NO published COAs (badge only, coa: on-request) — that note was a phantom.
     // blockNote is the factual version matching facts, not a verbatim carry-over of the drifted note.
@@ -896,7 +925,7 @@ export const vendors: Record<string, Vendor> = {
     // hard login-walled 2026-08-09: no price pull, no cart test, COAs login-gated. Payments Zelle/Cash
     // App/Venmo only (no cards). coupon bound to the account. Cert Identity field reads valkyriepeptides.com
     // vs the valkyriepeps.com store — a second same-operation signal (Trustpilot was the first); not proof.
-    facts: { coa: "login-gated", labName: "Horizon Analytical", testMethods: "UPLC-MS", contaminants: "Endotoxin (<0.05 EU/mL)" },
+    facts: { coa: "login-gated", labs: [{ name: "Horizon Analytical", slug: "horizon-analytical", confidence: "verified" }], testMethods: "UPLC-MS", contaminants: "Endotoxin (<0.05 EU/mL)" },
   },
   "vital-core-research": {
     name: "Vital Core Research",
@@ -913,7 +942,7 @@ export const vendors: Record<string, Vendor> = {
     // blockNote sourced 2026-09-01 from this vendor's own /coupons/vital-core-research page:
     //   "issued by Vanguard Laboratory of Olympia, Washington \u2014 an ISO/IEC 17025:2017 accredited laboratory"
     blockNote: "Vanguard Labs \u00b7 ISO 17025 accredited",
-    facts: { coa: "per-product", labName: "Vanguard Laboratory", labAccreditation: "ISO/IEC 17025:2017 (A2LA #6377.01.01)", testMethods: "HPLC-UV/VIS" },
+    facts: { coa: "per-product", labs: [{ name: "Vanguard Laboratory", slug: "vanguard-laboratory", confidence: "verified" }], labAccreditation: "ISO/IEC 17025:2017 (A2LA #6377.01.01)", testMethods: "HPLC-UV/VIS" },
   },
   // Brand is "NOVA Labs"; storefront domain is nova-biolabs.com — both intentional, do NOT
   // "fix" the name to match the domain. First Middle East / GCC vendor: region "AE" (UAE-based),
@@ -927,7 +956,7 @@ export const vendors: Record<string, Vendor> = {
     region: "AE",
     url: "https://www.nova-biolabs.com/?ref=kbandvut",
     detailPage: "/coupons/nova-labs",
-    facts: { purityStandard: "≥99%", coa: "per-batch", labName: "Janoshik", testMethods: "HPLC", coldChain: true },
+    facts: { purityStandard: "≥99%", coa: "per-batch", labs: [{ name: "Janoshik", slug: "janoshik", confidence: "verified" }], testMethods: "HPLC", coldChain: true },
   },
   "nura-peptide": {
     name: "Nura Peptide",
@@ -937,7 +966,7 @@ export const vendors: Record<string, Vendor> = {
     // ?ref=profpeptide is Nura's GoAffPro affiliate identifier — leave untouched.
     url: "https://nurapeptide.com/?ref=profpeptide",
     detailPage: "/coupons/nura-peptide",
-    facts: { coa: "library", labName: "Freedom Diagnostics", testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>), microbial (PCR)" },
+    facts: { coa: "library", labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }], testMethods: "HPLC-UV, LC-MS", contaminants: "Endotoxin (USP <85>), microbial (PCR)" },
     blockNote: "Freedom Diagnostics · verifiable COAs",
     // editorsPick removed 2026-09: dropped for not converting (recorded elsewhere) and sits on
     // FOOT_BLOCK_EXCLUDED — being featured in Professor's Picks contradicted that. Falls through
@@ -955,7 +984,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://99puritypeptides.com/ref/profpeptide",
     detailPage: "/coupons/99-purity-peptides",
-    facts: { purityStandard: "≥99%", coa: "per-batch", labName: "Eagle Analytical Services", testMethods: "USP <621> potency", contaminants: "Sterility (ScanRDI), endotoxin (USP <85>)" },
+    facts: { purityStandard: "≥99%", coa: "per-batch", labs: [{ name: "Eagle Analytical Services", slug: "eagle-analytical-services", confidence: "verified" }], testMethods: "USP <621> potency", contaminants: "Sterility (ScanRDI), endotoxin (USP <85>)" },
   },
   // Licensed Peptides originally issued a SHARED code (Affiliate5) handed to EVERY affiliate;
   // they swapped it to the unique PROFPEPTIDE on request. If it ever reverts to a shared code,
@@ -983,7 +1012,7 @@ export const vendors: Record<string, Vendor> = {
     blockNote: "Freedom Diagnostics \u2014 endotoxin + microbial + metals",
     facts: {
       coa: "login-gated",
-      labName: "Freedom Diagnostics",
+      labs: [{ name: "Freedom Diagnostics", slug: "freedom-diagnostics", confidence: "verified" }],
       testMethods: "HPLC-UV, LC-MS, ICP-MS, USP <85> endotoxin, microbial PCR",
       contaminants: "Endotoxin (USP <85>, in duplicate), microbial DNA (PCR), elemental impurities (ICP-MS: As, Cd, Pb, Hg)",
       purityStandard: "99%+",
@@ -996,7 +1025,7 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://licensedpeptides.com/ref/60815/",
     detailPage: "/coupons/licensed-peptides",
-    facts: { coa: "per-batch", labName: "Vanguard Laboratory", labAccreditation: "ISO/IEC 17025:2017", purityStandard: "99%+", testMethods: "HPLC-UV/VIS", contaminants: "Heavy metals (ICP-MS), endotoxin (LAL), sterility (USP <71>), residual solvents (GC-MS), TFA (ion chromatography)" },
+    facts: { coa: "per-batch", labs: [{ name: "Vanguard Laboratory", slug: "vanguard-laboratory", confidence: "verified" }], labAccreditation: "ISO/IEC 17025:2017", purityStandard: "99%+", testMethods: "HPLC-UV/VIS", contaminants: "Heavy metals (ICP-MS), endotoxin (LAL), sterility (USP <71>), residual solvents (GC-MS), TFA (ion chromatography)" },
   },
 };
 
@@ -1021,15 +1050,15 @@ export const maxActiveDiscountPct = Math.max(
 );
 
 /**
- * Active vendors with a COMPLETED certificate pass — a named third-party lab recorded in
- * `facts.labName` (PP read an actual certificate). Distinct from `facts.labClaim`, which is a
- * lab the vendor NAMES but whose certificate PP has not seen (attributed, not counted here).
- * Derived, never hardcoded — the /methodology page cites this so the figure can't rot as passes
- * are added. A conservative floor: a few vendors had a COA read during coded-name decoding
- * without a `facts.labName`, so the true number of certificates opened is at least this.
+ * Active vendors with a COMPLETED certificate pass — at least one `facts.labs` entry with
+ * confidence "verified" (PP read an actual certificate). A vendor whose only named labs are all
+ * "claimed" does NOT count here — that's a lab the vendor names but whose certificate PP hasn't
+ * seen. Derived, never hardcoded — the /methodology page cites this so the figure can't rot as
+ * passes are added. A conservative floor: a few vendors had a COA read during coded-name decoding
+ * without a `facts.labs` entry, so the true number of certificates opened is at least this.
  */
 export const certVerifiedVendorCount = Object.values(vendors).filter(
-  (v) => !v.retired && v.facts?.labName,
+  (v) => !v.retired && v.facts?.labs?.some((l) => l.confidence === "verified"),
 ).length;
 
 const REGION_WORD: Record<Vendor["region"], string> = {

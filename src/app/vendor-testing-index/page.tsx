@@ -33,16 +33,22 @@ interface Row {
 // library COAs are treated as batch-specific.
 //
 // thirdParty distinguishes a COA-VERIFIED lab from a vendor's own unverified assertion — the two
-// must never read alike (that was the old defect). A verified `labName` renders as a plain fact
-// ("Tested by X"); a `labClaim` — or a bare `labAccreditation` claim, which is also just the
-// vendor's assertion — renders ATTRIBUTED ('Vendor states: "…"') and is muted in <Cell>. Nothing
+// must never read alike (that was the old defect). One or more "verified" `facts.labs` entries
+// render as a plain fact ("Tested by X, Y"); if NONE are verified, one or more "claimed" entries
+// — or a bare `labAccreditation` claim, which is also just the vendor's assertion — render
+// ATTRIBUTED ('Vendor states: "…"') and are muted in <Cell>. A vendor can carry BOTH a verified
+// and a claimed lab (real-peptides, nextgen-peptides) — verified always wins the headline cell;
+// the claimed entry doesn't disappear, it just isn't what's being asserted as fact here. Nothing
 // here is a PP finding; PP tests nothing.
 function deriveRow(slug: string, v: Vendor): Row {
   const f = v.facts ?? {};
-  const thirdParty = f.labName
-    ? `Tested by ${f.labName}`
-    : f.labClaim
-    ? `Vendor states: “${f.labClaim}”`
+  const labs = f.labs ?? [];
+  const verifiedLabs = labs.filter((l) => l.confidence === "verified");
+  const claimedLabs = labs.filter((l) => l.confidence === "claimed");
+  const thirdParty = verifiedLabs.length
+    ? `Tested by ${verifiedLabs.map((l) => l.name).join(", ")}`
+    : claimedLabs.length
+    ? `Vendor states: “${claimedLabs.map((l) => l.name).join(", ")}”`
     : f.labAccreditation
     ? `Vendor states: “${f.labAccreditation}-accredited lab”`
     : "Pending";
