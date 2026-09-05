@@ -25,18 +25,23 @@ const categories = [
 type NavEntry = {
   label: string;
   href: string;
-  dropdown?: "categories" | "vendors";
+  dropdown?: "categories" | "vendors" | "codes";
 };
 
 // Labels/hrefs from the canonical route registry (src/data/routes.ts). "Vendors" is the ONLY
 // bare-"Vendors" label on the site — it's the dropdown PARENT (href = the Verified directory),
 // never a link label to a specific vendor page. App is not a canonical route entry (inline).
+//
+// "Codes" is a dropdown PARENT the same way "Vendors" is (2026-09): its own click target is
+// /coupons — the parent's PRE-dropdown destination, same relationship Vendors has to /vendors —
+// and the panel offers /coupons again alongside /deals rather than the parent going somewhere the
+// dropdown doesn't. There is no more standalone "Deals" nav item; /deals is reachable only from
+// here (this replaced an initial flat "Deals" item Mark asked to fold into a dropdown instead).
 const nav: NavEntry[] = [
   { label: routes.peptides.navLabel, href: routes.peptides.href, dropdown: "categories" },
   { label: "Vendors", href: routes.verifiedVendors.href, dropdown: "vendors" },
   { label: routes.prices.navLabel, href: routes.prices.href },
-  { label: routes.deals.navLabel, href: routes.deals.href },
-  { label: routes.coupons.navLabel, href: routes.coupons.href },
+  { label: routes.coupons.navLabel, href: routes.coupons.href, dropdown: "codes" },
   { label: routes.calculator.navLabel, href: routes.calculator.href },
   { label: "App", href: "/app" },
 ];
@@ -47,6 +52,14 @@ const vendorLinks = [
   { label: routes.verifiedVendors.navLabel, href: routes.verifiedVendors.href },
   { label: routes.featuredVendors.navLabel, href: routes.featuredVendors.href },
   { label: routes.coupons.longLabel, href: routes.coupons.href },
+];
+
+// "Codes" dropdown destinations. Exact copy from Mark, not derived from routes.ts (routes.coupons
+// carries the longer "Vendor Discount Codes"/routes.deals carries "Vendor Deals & Promotions" —
+// both too long for a two-item panel row).
+const codesLinks = [
+  { label: "Discount Codes", href: routes.coupons.href },
+  { label: "Deals & Promos", href: routes.deals.href },
 ];
 
 // Dark mode is disabled: the site renders light-only. The ThemeToggle control
@@ -69,6 +82,23 @@ function DropdownPanel({ entry }: { entry: NavEntry }) {
             className="flex items-center gap-2.5 px-4 py-2 text-sm text-gray-600 dark:text-slate-300 hover:bg-[#3A759F] hover:text-white transition-colors"
           >
             {v.label}
+          </Link>
+        ))}
+      </div>
+    );
+  }
+  // "codes" variant: same flat-list shape as "vendors" above (two destinations, no icons, no
+  // "View All" footer — there's nothing beyond these two to link to).
+  if (entry.dropdown === "codes") {
+    return (
+      <div className="bg-white dark:bg-[#1e293b] border border-gray-100 dark:border-slate-700 rounded-xl shadow-lg py-2 w-64">
+        {codesLinks.map((c) => (
+          <Link
+            key={c.href}
+            href={c.href}
+            className="flex items-center gap-2.5 px-4 py-2 text-sm text-gray-600 dark:text-slate-300 hover:bg-[#3A759F] hover:text-white transition-colors"
+          >
+            {c.label}
           </Link>
         ))}
       </div>
@@ -136,6 +166,7 @@ function ThemeToggle() {
 // the desktop panel); vendor links do not. Peptides also gets a "View All" row for parity.
 function mobileSubItems(entry: NavEntry): { label: string; href: string; icon?: string }[] {
   if (entry.dropdown === "vendors") return vendorLinks;
+  if (entry.dropdown === "codes") return codesLinks;
   if (entry.dropdown === "categories") {
     return [
       ...categories.map((c) => ({
