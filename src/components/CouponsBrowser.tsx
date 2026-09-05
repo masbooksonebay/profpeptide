@@ -1,8 +1,10 @@
 "use client";
 
-// Client-side search + A–Z browser for the /coupons hub (57 vendors, one alphabetical run below a
-// featured Professor's Picks block). Mirrors HubCategoryBrowser's shape for the SAME reason: the
-// server renders the FULL list (every card, every letter divider) so crawlers and no-JS readers see
+// Client-side search + A–Z browser — the shared shell behind BOTH /coupons (57 vendors by code)
+// and /vendors (the same 57 by lab testing). Generic over the card ITEM type: the caller supplies
+// `renderCard`, so this component owns search/A–Z/letter-grouping/scroll-restore exactly once and
+// neither page duplicates it. Mirrors HubCategoryBrowser's shape for the SAME reason: the server
+// renders the FULL list (every card, every letter divider) so crawlers and no-JS readers see
 // everything regardless of script — this component only narrows what's VISIBLE, entirely client-side
 // state, never written back to the URL.
 //
@@ -22,7 +24,6 @@
 // across the site.
 
 import { useEffect, useMemo, useState } from "react";
-import { CouponsHubCard, type CouponsHubVendor } from "@/components/CouponsHubCard";
 
 const LETTERS = "abcdefghijklmnopqrstuvwxyz0123456789".split("");
 
@@ -32,12 +33,22 @@ function firstKey(name: string): string {
   return /[a-z0-9]/.test(c) ? c : "#";
 }
 
-export function CouponsBrowser({
+/** The minimum shape this browser needs from an item — either page's vendor type satisfies it. */
+export interface BrowsableVendor {
+  slug: string;
+  name: string;
+}
+
+export function CouponsBrowser<T extends BrowsableVendor>({
   picks,
   vendors,
+  renderCard,
 }: {
-  picks: CouponsHubVendor[];
-  vendors: CouponsHubVendor[];
+  picks: T[];
+  vendors: T[];
+  /** `anchorKey` is the letter-group id ("m", "9", …) for a card in the lettered run — undefined
+   *  for a Professor's Pick or a search result, neither of which sits under a letter divider. */
+  renderCard: (v: T, anchorKey?: string) => React.ReactNode;
 }) {
   const [query, setQuery] = useState("");
   const q = query.trim().toLowerCase();
@@ -69,7 +80,7 @@ export function CouponsBrowser({
 
   const filtered = useMemo(() => {
     if (!q) return null;
-    const match = (v: CouponsHubVendor) => v.name.toLowerCase().includes(q);
+    const match = (v: T) => v.name.toLowerCase().includes(q);
     return [...picks, ...vendors].filter(match).sort((a, b) => a.name.localeCompare(b.name));
   }, [q, picks, vendors]);
 
@@ -126,7 +137,7 @@ export function CouponsBrowser({
             {filtered.length} {filtered.length === 1 ? "result" : "results"}
           </p>
           {filtered.map((v) => (
-            <CouponsHubCard key={v.slug} v={v} />
+            <div key={v.slug}>{renderCard(v)}</div>
           ))}
           {filtered.length === 0 && (
             <p className="text-sm text-gray-500 dark:text-slate-400 py-6 text-center">
@@ -143,7 +154,7 @@ export function CouponsBrowser({
               </p>
               <div className="space-y-4">
                 {picks.map((v) => (
-                  <CouponsHubCard key={v.slug} v={v} />
+                  <div key={v.slug}>{renderCard(v)}</div>
                 ))}
               </div>
             </div>
@@ -162,7 +173,7 @@ export function CouponsBrowser({
                       </span>
                     </div>
                   )}
-                  <CouponsHubCard v={v} anchorKey={key} />
+                  {renderCard(v, key)}
                 </div>
               );
             })}

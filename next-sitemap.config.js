@@ -58,9 +58,12 @@ const DROP_PATTERNS = [
 // arrival) and wastes crawl budget. /vendors + /vendor-testing-index were noindex
 // but leaked into the sitemap until Aug 2026; keep this set in lockstep with the
 // pages' robots metadata.
+// /vendors REMOVED 2026-09: it flipped to `index: true` when it stopped duplicating /coupons (now
+// a distinct testing directory, not a thin copy) — see src/app/vendors/layout.tsx. Leaving it here
+// would recreate exactly the noindex-in-sitemap contradiction this set exists to prevent, just
+// inverted (indexable page deliberately excluded from the sitemap).
 const DROP_EXACT = new Set([
   "/contact", // src/app/contact -> metadata.robots { index: false }
-  "/vendors", // src/app/vendors -> metadata.robots { index: false } (thin directory duplicating /coupons)
   "/vendor-testing-index", // src/app/vendor-testing-index/layout -> { index: false } (under construction)
   "/prototype/profile", // design sandbox -> metadata.robots { index: false }
   "/prototype/logo", // logo comparison (dev) -> metadata.robots { index: false }

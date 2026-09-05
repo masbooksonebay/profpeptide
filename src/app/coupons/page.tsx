@@ -7,7 +7,7 @@ import { Icon } from "@/components/CategoryIcon";
 import { vendors as registry, regionFlag, type Vendor as RegistryVendor } from "@/data/vendors";
 import { CODES_VERIFIED_DATE } from "@/data/codes-verified";
 import { CouponsBrowser } from "@/components/CouponsBrowser";
-import type { CouponsHubVendor } from "@/components/CouponsHubCard";
+import { CouponsHubCard, type CouponsHubVendor } from "@/components/CouponsHubCard";
 
 /**
  * Vendor list is DERIVED from the registry (src/data/vendors.ts) — the single source of truth.
@@ -61,7 +61,11 @@ export default function CouponsPage() {
         </p>
       </div>
 
-      <CouponsBrowser picks={picks} vendors={otherVendors} />
+      <CouponsBrowser
+        picks={picks}
+        vendors={otherVendors}
+        renderCard={(v, anchorKey) => <CouponsHubCard v={v} anchorKey={anchorKey} />}
+      />
 
       {/* "Vendor COA & Testing-Transparency Index" card removed — /vendor-testing-index is
           under construction and currently renders data known to be wrong. The route stays live;

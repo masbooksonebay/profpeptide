@@ -1,71 +1,81 @@
-import Link from "next/link";
-import { vendors } from "@/data/vendors";
-import { VendorCodeChip } from "@/components/VendorCodeChip";
-import { VendorShopButton } from "@/components/VendorShopButton";
-import { backLinkParam } from "@/data/back-link-sources";
+"use client";
 
-export const metadata = {
-  alternates: { canonical: "/vendors" },
-  title: "Verified Vendors — Research Peptide Suppliers | Prof. Peptide",
-  description:
-    "An alphabetical directory of the research-peptide vendors we profile, each with its discount code and savings. Select a vendor to open its full profile.",
-  // CONFIRMED (Aug 2026): noindex, follow — deliberate and settled.
-  // /vendors is a thin directory that duplicates /coupons on vendors, codes,
-  // discounts, and link targets (every card links to /coupons/<slug>) but carries
-  // less content. Indexing it would create a thin competitor to /coupons for the
-  // same queries. noindex keeps it out of search; follow: true lets crawlers reach
-  // every vendor profile through it. The nav/footer "Verified Vendors" link stays —
-  // this page exists to serve READERS a scannable all-43 directory, not Google.
-  // It must also stay OUT of the sitemap (next-sitemap.config.js DROP_EXACT) so the
-  // noindex-in-sitemap contradiction can't return.
-  robots: { index: false, follow: true },
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/breadcrumb";
+import { vendors as registry, regionFlag, type Vendor as RegistryVendor } from "@/data/vendors";
+import { CouponsBrowser } from "@/components/CouponsBrowser";
+import { VendorTestingCard, type VendorTestingVendor } from "@/components/VendorTestingCard";
+
+/**
+ * /vendors redesigned 2026-09 from a near-duplicate of /coupons (same 57 vendors, same
+ * discount/code/Shop) into the TESTING directory: which lab tested which vendor, sourced from
+ * facts.labs (migrated in c648ec5). Layout is /coupons' own — search box, A–Z bar, letter
+ * dividers, one card per row, Professor's Picks once at top — via the SAME CouponsBrowser shell,
+ * generalized to take a renderCard callback rather than forked. US/International stay merged into
+ * one alphabetical run, same as /coupons (nothing downstream reads that split here either).
+ */
+const NO_LAB_NOTE: Record<string, string> = {
+  // Aero's own site (not this page) says a public COA library is "in preparation" — true and
+  // worth saying, but not a lab name and not a promise this page should imply is imminent.
+  "aero-peptides": "No lab named — public COA library in preparation",
+  // Finnrick is a blind-testing/ranking SERVICE, not a COA-issuing lab — do not let this read as
+  // one. (Same distinction the paradigm-peptides coupon page already draws.)
+  "paradigm-peptides": "No lab named — Finnrick blind-tests select products, not a certifying lab",
+  "integrative-peptides": "No lab named",
 };
 
-// Generated from vendors.ts so the list stays in sync as vendors change:
-// active (non-retired) vendors only, sorted alphabetically by display name.
-// Each card links to that vendor's own profile page via its detailPage field.
-const activeVendors = Object.entries(vendors)
-  .filter(([, v]) => !v.retired)
-  .sort(([, a], [, b]) => a.name.localeCompare(b.name));
+/**
+ * 1–3 labs: name them. 4+: a count ("Third-party tested by N independent laboratories") — NOT a
+ * bare lab-count rule, a LENGTH one: Orbitrex's 5-name line measured at 784px in the card's 808px
+ * content width (a 24px margin, not worth shipping). But limitless-biotech's 4-name line is only
+ * 86 characters — comfortably shorter than Orbitrex's 116 — so a mechanical "4 or more" cutoff
+ * would compress a line that actually fits. 100 chars sits in the gap between them (limitless-
+ * biotech 86, Orbitrex 116) with margin on both sides.
+ */
+function labLineFor(slug: string, v: RegistryVendor): string {
+  const labs = v.facts?.labs ?? [];
+  if (labs.length === 0) return NO_LAB_NOTE[slug] ?? "No lab named";
+  const full = `Third-party tested by ${labs.map((l) => l.name).join(", ")}`;
+  return full.length <= 100 ? full : `Third-party tested by ${labs.length} independent laboratories`;
+}
+
+function toCard(v: RegistryVendor): VendorTestingVendor {
+  return {
+    slug: v.detailPage?.replace(/^\/coupons\//, "") ?? "",
+    name: v.name,
+    region: `${regionFlag[v.region]} ${v.region}`,
+    detailPage: v.detailPage,
+    labLine: labLineFor(v.detailPage?.replace(/^\/coupons\//, "") ?? "", v),
+  };
+}
+
+const activeVendors = Object.values(registry).filter((v) => !v.retired);
+const byName = (a: RegistryVendor, b: RegistryVendor) => a.name.localeCompare(b.name);
+
+const picks = activeVendors.filter((v) => v.editorsPick).sort(byName).map(toCard);
+const otherVendors = activeVendors.filter((v) => !v.editorsPick).sort(byName).map(toCard);
 
 export default function VendorProfilesPage() {
   return (
-    <div className="section">
-      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">Verified Vendors</h1>
-      <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-8 max-w-2xl">
-        A directory of verified peptide vendors we profile — each with its discount code and
-        savings. Select a vendor to open its full profile.
-      </p>
-      {/* Clickable vendor cards — mirrors the homepage feature-grid .card
-          (accent border + shadow lift on hover). Whole card links to the vendor's
-          internal profile via a full-bleed overlay Link, so the copy-code chip AND the Shop
-          button can both be real <button>/<a> SIBLINGS of that overlay (each its own
-          `relative z-10` wrapper, never nested inside the overlay anchor — that would be
-          invalid HTML and make the click ambiguous) and still be clicked directly. */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {activeVendors.map(([slug, v]) => (
-          <div key={v.detailPage} className="card group relative flex flex-col">
-            <Link href={`${v.detailPage}?from=${backLinkParam("vendors-card")}`} aria-label={`View ${v.name} profile`} className="absolute inset-0 z-0" />
-            <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100 group-hover:text-[#3A759F] transition-colors">
-              {v.name}
-            </h2>
-            <span className="tag mt-3 self-start">{v.discount}</span>
-            <div className="relative z-10 mt-3 self-start">
-              <VendorCodeChip slug={slug} code={v.code} from="vendors-card" />
-            </div>
-            {/* Replaces "View profile →" (2026-09-04): that text duplicated the card's own
-                full-bleed Link to the same profile. A Shop button is a real second destination,
-                not a duplicate — routes through /go/{slug}?from=vendors-card, the surface that
-                already exists in GO_SURFACES and is already wired through this page's overlay
-                Link + VendorCodeChip above. Sibling of the overlay, own z-10 stacking context —
-                see VendorShopButton.tsx for why gated vendors branch to the reveal modal here
-                instead of linking out. */}
-            <div className="relative z-10 mt-4">
-              <VendorShopButton slug={slug} from="vendors-card" />
-            </div>
-          </div>
-        ))}
+    <div className="section max-w-4xl">
+      <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Verified Vendors" }])} />
+      <span className="tag mb-3 inline-block">Updated Regularly</span>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-8">Verified Vendors</h1>
+
+      <div className="flex items-center justify-center gap-2.5 mb-8 py-3.5 px-4 bg-[#3A759F]/10 border border-[#3A759F]/30 rounded-lg">
+        <svg className="w-5 h-5 text-[#3A759F] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <p className="text-base font-bold text-[#16181B] dark:text-white tracking-tight">
+          Which lab tested which vendor, from their own published certificates
+        </p>
       </div>
+
+      <CouponsBrowser
+        picks={picks}
+        vendors={otherVendors}
+        renderCard={(v, anchorKey) => <VendorTestingCard v={v} anchorKey={anchorKey} />}
+      />
     </div>
   );
 }

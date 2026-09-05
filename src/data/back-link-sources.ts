@@ -46,7 +46,10 @@ export const BACK_LINK_SOURCES: Record<string, BackLinkSource> = {
   // which resolves to the plain /coupons href below — correct, since there's no letter group to
   // return to.
   "coupon-hub-card": { kind: "anchor", href: "/coupons", label: "Back to Discount Codes" },
-  "vendors-card": { kind: "fixed", href: "/vendors", label: "Back to Verified Vendors" },
+  // Upgraded to an AnchorSource 2026-09 alongside /vendors' own A–Z redesign — same reasoning as
+  // coupon-hub-card above: without a letter-group anchor, a reader returning from a vendor's
+  // coupon page always landed at the top of the 57-card list, not the letter they left from.
+  "vendors-card": { kind: "anchor", href: "/vendors", label: "Back to Verified Vendors" },
   "featured-vendors": { kind: "fixed", href: "/best-peptide-vendors", label: "Back to Best Peptide Vendors" },
   "vendor-testing": { kind: "fixed", href: "/vendor-testing-index", label: "Back to Vendor Testing Index" },
   "ps-alternatives": { kind: "fixed", href: "/peptide-sciences-alternatives", label: "Back to Peptide Sciences Alternatives" },
