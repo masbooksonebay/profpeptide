@@ -101,10 +101,10 @@ export default function AminoClubCouponPage() {
             </div>
           </dl>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-            Every batch is tested by an ISO/IEC 17025-accredited third-party laboratory under a full quality-control panel, not purity alone. HPLC quantifies purity against a published 99%+ standard; identity is confirmed against a reference standard; ICP-MS screens for heavy metals (arsenic, cadmium, chromium, mercury, lead); sterility is verified by PCR; and bacterial endotoxin is measured by the USP &lt;85&gt; method. Every batch is tested before release, so each lot carries its own documented result rather than a single representative certificate.
+            Every batch is tested by a named third-party laboratory, not an unnamed one. Current batches (41 of 48 product certificates we sampled) are tested by ILS Laboratories, San Diego, CA &mdash; ISO/IEC 17025-accredited &mdash; under a full quality-control panel: HPLC quantifies purity against a published 99%+ standard, identity is confirmed against a reference standard, ICP-MS screens for heavy metals (arsenic, cadmium, chromium, mercury, lead), sterility is verified by PCR, and bacterial endotoxin is measured by the USP &lt;85&gt; method. Some earlier, legacy vial products (7 of 48) were tested by Freedom Diagnostics instead. Every batch is tested before release, so each lot carries its own documented result rather than a single representative certificate.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Each product page links a batch-specific Certificate of Analysis showing the lot number, purity percentage, identity confirmation, and test date &mdash; downloadable and independently verifiable through the issuing laboratory&apos;s portal. That lot-level, externally verifiable documentation, paired with the 99%+ purity threshold and ISO/IEC 17025 accreditation, gives researchers a traceable quality record for every order.
+            Each product page links a batch-specific Certificate of Analysis showing the lot number, purity percentage, identity confirmation, and test date. One Freedom Diagnostics certificate we checked came back byte-identical to that laboratory&apos;s own public index copy &mdash; the strongest verification available for a vendor-hosted document. That lot-level documentation, paired with the 99%+ purity threshold, gives researchers a traceable quality record for every order.
           </p>
         </div>
 
@@ -137,11 +137,11 @@ export default function AminoClubCouponPage() {
             />
             <FAQItem
               q="What testing does Amino Club do?"
-              a="Every batch is third-party tested by an ISO/IEC 17025-accredited laboratory. Testing covers HPLC purity (99%+), identity confirmation, heavy-metal screening via ICP-MS, sterility, and endotoxin screening."
+              a="Every batch is third-party tested. Current batches are tested by ILS Laboratories (San Diego, CA; ISO/IEC 17025-accredited); some earlier, legacy vial products were tested by Freedom Diagnostics. Testing covers HPLC purity (99%+), identity confirmation, heavy-metal screening via ICP-MS, sterility, and endotoxin screening."
             />
             <FAQItem
               q="What is the minimum purity standard at Amino Club?"
-              a="Amino Club verifies a minimum of 99%+ purity via HPLC analysis through an ISO/IEC 17025-accredited third-party lab before a batch is offered for sale."
+              a="Amino Club verifies a minimum of 99%+ purity via HPLC analysis before a batch is offered for sale. Current batches are tested by ILS Laboratories (San Diego, CA; ISO/IEC 17025-accredited); some earlier vial products were tested by Freedom Diagnostics."
             />
             <FAQItem
               q="Does Amino Club provide Certificates of Analysis?"

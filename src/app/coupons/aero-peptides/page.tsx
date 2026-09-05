@@ -96,7 +96,7 @@ export default function AeroPeptidesCouponPage() {
             </p>
           </div>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Aero Peptides tests through a third-party, ISO-accredited external lab (not owned by Aero). Each batch is verified by HPLC-MS for identity (within 1 mass unit), reverse-phase HPLC for purity (≥98%, area-percent), an LAL assay for endotoxin (&lt;0.1 EU/mg), and GC for residual solvents (&lt;0.5%); the Certificate of Analysis carries the external lab&apos;s stamp and signatory, with raw HPLC traces and mass-spec spectra available on request. Every order ships with an independent COA, and Aero states a searchable public COA library is in preparation &mdash; until it goes live, a COA for any specific compound or lot is available on request (emailed as a PDF).
+            Aero Peptides tests through an unnamed third-party, ISO-accredited external lab (not owned by Aero). Each batch is verified by HPLC-MS for identity (within 1 mass unit), reverse-phase HPLC for purity (≥98%, area-percent), an LAL assay for endotoxin (&lt;0.1 EU/mg), and GC for residual solvents (&lt;0.5%); the Certificate of Analysis carries the external lab&apos;s stamp and signatory. Every order ships with its own independent Certificate of Analysis. There is no public, searchable COA library on the site.
           </p>
         </div>
 
@@ -137,11 +137,11 @@ export default function AeroPeptidesCouponPage() {
             />
             <FAQItem
               q="What testing does Aero Peptides do?"
-              a="Aero tests through a third-party, ISO-accredited external lab: HPLC-MS identity verification (within 1 mass unit), reverse-phase HPLC purity (≥98%, area-percent), endotoxin below 0.1 EU/mg (LAL assay), and residual solvents below 0.5% (GC). The COA carries the external lab's stamp and signatory, and raw HPLC/mass-spec data is available on request."
+              a="Aero tests through an unnamed third-party, ISO-accredited external lab: HPLC-MS identity verification (within 1 mass unit), reverse-phase HPLC purity (≥98%, area-percent), endotoxin below 0.1 EU/mg (LAL assay), and residual solvents below 0.5% (GC). The COA carries the external lab's stamp and signatory."
             />
             <FAQItem
               q="Does Aero Peptides provide Certificates of Analysis?"
-              a="Yes — every order ships with an independent, third-party COA, and a COA for any specific compound or lot is available on request (Aero emails the PDF). A searchable public COA library is in preparation but is not yet live, so per-product COAs are provided on request rather than published on the site at this time."
+              a="Yes — every order ships with its own independent, third-party Certificate of Analysis. There is no public, searchable COA library on the site."
             />
           </div>
         </div>

@@ -117,7 +117,10 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://alpha-peptides.io/aff/850/",
     detailPage: "/coupons/alpha-peptides",
-    facts: { coa: "library", labAccreditation: "ISO/IEC 17025" },
+    // labName added 2026-09: ~60 certificates linked from /coa/ name Analytical Formulations,
+    // Inc. (Windcrest, TX). Two link directly to the lab's own public storage bucket, not a copy
+    // hosted by Alpha — named-on-certificates, not independently byte-verified.
+    facts: { coa: "library", labName: "Analytical Formulations, Inc.", labAccreditation: "ISO/IEC 17025" },
   },
   "athena-peptides": {
     name: "Athena Peptides",
@@ -177,8 +180,12 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
     detailPage: "/coupons/amino-club",
-    facts: { purityStandard: "≥99%", coa: "per-batch", labClaim: "ISO 17025 accredited laboratories", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals, sterility, endotoxin" },
-    blockNote: "ISO 17025 tested · batch COAs",
+    // labName upgraded from labClaim 2026-09: certificates sampled (48 product links) name TWO
+    // labs — ILS Laboratories (41/48, current/primary) and Freedom Diagnostics (7/48,
+    // legacy/vial products). One Freedom cert byte-matched the lab's own public index copy.
+    // Same two-lab, same-order shape as midwest-peptide's entry above.
+    facts: { purityStandard: "≥99%", coa: "per-batch", labName: "ILS Laboratories, Freedom Diagnostics", labAccreditation: "ISO/IEC 17025", testMethods: "HPLC, ICP-MS, PCR, USP <85>", contaminants: "Heavy metals, sterility, endotoxin" },
+    blockNote: "ILS Laboratories · batch COAs",
     editorsPick: true,
   },
   "amino-x": {
@@ -242,8 +249,17 @@ export const vendors: Record<string, Vendor> = {
     // Job-2 cert pass (Aug 2026): NO COAs published online — product pages carry only a
     // "Third Party Tested" badge and say a COA "comes with the product"; no lab is named
     // anywhere on the site and none is downloadable. The prior labName "AxisPharm" was a
-    // phantom (unverifiable; not on the site) — removed. coa: on-request.
-    facts: { purityStandard: "≥99%", coa: "on-request" },
+    // phantom (unverifiable; not on the site) — removed.
+    //
+    // RESTORED 2026-09 — the prior removal couldn't have known this: nine distinct certificates
+    // (unique IDs, lot numbers, LC-MS + UV purity + LAL endotoxin data) name AxisPharm, LLC on
+    // every 2025-2026 certificate, with MZ Biolabs on one older 2024 certificate.
+    // 🔴 AxisPharm, LLC has NO independently discoverable web presence of its own —
+    // axispharm.com belongs to an unrelated San Diego CRO. This is the name PRINTED ON THE
+    // CERTIFICATES, nothing more — never describe AxisPharm as independent, accredited, or
+    // verified; labAccreditation stays intentionally absent. coa stays "on-request" — nothing is
+    // published/linked on the site itself.
+    facts: { purityStandard: "≥99%", coa: "on-request", labName: "AxisPharm, LLC" },
   },
   "biocollex": {
     name: "BioCollex",
@@ -566,7 +582,10 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://www.limitlesslifenootropics.com/?_ef_transaction_id=&oid=1&affid=10477",
     detailPage: "/coupons/limitless-biotech",
-    facts: { coa: "on-request", purityStandard: "≥98.5%", labClaim: "three independent labs", testMethods: "HPLC, LC-MS", contaminants: "Sterility, endotoxin, contaminants" },
+    // labName upgraded from labClaim 2026-09: 450 certificate links sampled across 92 products
+    // name FOUR labs, not the vendor's stated three. None of the three labs' verify portals could
+    // be queried — named-on-certificates, not independently verified, so no labAccreditation here.
+    facts: { coa: "on-request", purityStandard: "≥98.5%", labName: "TrustPointe Analytics, Janoshik, MZ Biolabs, Vanguard Laboratory", testMethods: "HPLC, LC-MS", contaminants: "Sterility, endotoxin, contaminants" },
   },
   "midwest-peptide": {
     name: "Midwest Peptide",
@@ -808,7 +827,11 @@ export const vendors: Record<string, Vendor> = {
     region: "US",
     url: "https://swisschems.is/?ref=PROF10",
     detailPage: "/coupons/swiss-chems",
-    facts: { coa: "library" },
+    // labName added 2026-09: of 50 published certificates reviewed, 30 (60%) are genuine Janoshik
+    // test reports (task numbers, verify keys, per-batch data). The other 20 are self-branded
+    // "SC-HPLC-*" documents naming no lab — "Tested By A US-Certified Laboratory" only, generic
+    // badge, reused signature images. Janoshik covers the majority, not the whole library.
+    facts: { coa: "library", labName: "Janoshik" },
   },
   "synthesis-peptides": {
     name: "Synthesis Peptides",
@@ -842,10 +865,17 @@ export const vendors: Record<string, Vendor> = {
     detailPage: "/coupons/treasure-coast-peptides",
     // Job-2 cert pass (Aug 2026): NO COAs published online — product pages carry only a
     // "Third Party Tested" badge, name no lab, and publish no certificate. The prior labName
-    // "Janoshik, Freedom Diagnostics" and purityStandard "99%+" appear NOWHERE on the site —
-    // both phantoms, removed. (Freedom Diagnostics ledger: this was an unsupported claim, so
-    // treasure-coast does NOT belong to the Freedom concentration.) coa: on-request.
-    facts: { coa: "on-request" },
+    // "Janoshik, Freedom Diagnostics" and purityStandard "99%+" appeared NOWHERE on the site at
+    // that time — both treated as phantoms, removed.
+    //
+    // UPDATED 2026-09 — this was a coverage gap, not a wrong call: certs DO exist, just not linked
+    // from rendered product pages. They're reachable only via the WordPress media API, embedded in
+    // product photo galleries the rendered pages never link to. Of 25 products sampled, only 6 had
+    // a discoverable certificate. Freedom Diagnostics is current/primary — one cert MD5-byte-matched
+    // against the lab's own copy, prefix-collision-checked. Janoshik appears once, on an older
+    // Apr-2025 GLOW report. Partial coverage, not a full library — coa stays "on-request" (nothing
+    // is linked/published on the pages a reader actually sees).
+    facts: { coa: "on-request", labName: "Freedom Diagnostics, Janoshik" },
     // CORRECTED on migration 2026-08-18: the per-profile note was "Per-batch COAs", but the Job-2
     // cert pass above found NO published COAs (badge only, coa: on-request) — that note was a phantom.
     // blockNote is the factual version matching facts, not a verbatim carry-over of the drifted note.

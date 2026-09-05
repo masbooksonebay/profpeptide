@@ -23,7 +23,7 @@ export default function IntegrativePeptidesCouponPage() {
  <div className="space-y-8">
  <div>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
- Integrative Peptides (integrativepeptides.com) was founded in 2018 with a mission to make advanced peptide therapies accessible without needles or high costs. They specialize in oral peptide formulations designed for physician use and patient access &mdash; a key differentiator from most research peptide vendors who sell injectable lyophilized powders. Integrative states that it uses FDA-compliant manufacturing and independent third-party lab testing to a &ge;99% purity standard on every batch, screening for heavy metals, microbials, and other contaminants. Popular compounds by research area:
+ Integrative Peptides (integrativepeptides.com) was founded in 2018 with a mission to make advanced peptide therapies accessible without needles or high costs. They specialize in oral peptide formulations designed for physician use and patient access &mdash; a key differentiator from most research peptide vendors who sell injectable lyophilized powders. As of September 2026, Integrative&apos;s full 84-product catalog sits behind a healthcare-provider login; pricing and product detail aren&apos;t visible without an account. Integrative states that it uses FDA-compliant manufacturing and independent third-party lab testing to a &ge;99% purity standard on every batch, screening for heavy metals, microbials, and other contaminants &mdash; no specific testing laboratory is named anywhere on the site. Popular compounds by research area:
  </p>
  <dl className="space-y-2 mb-4">
  <div className="flex flex-col sm:flex-row sm:gap-3 text-sm">
@@ -46,7 +46,7 @@ export default function IntegrativePeptidesCouponPage() {
  </div>
  </dl>
  <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
- Their product catalog includes <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, TB4-Frag, <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, KPV, Thymogen Alpha-1, CerebroPrep, CogniPep, PinealPep, and other peptide complexes &mdash; all in oral and convenient formats. Integrative states that every batch undergoes independent third-party laboratory testing and is screened for heavy metals, residual solvents, and endotoxins. This oral-first approach makes Integrative Peptides particularly relevant for practitioners and patients who prefer non-injectable administration routes.
+ Their product catalog (84 products, from the last snapshot before the site added a healthcare-provider login gate) includes <Link href="/peptides/bpc-157" className="text-[#3A759F] hover:underline">BPC-157</Link>, TB4-Frag, <Link href="/peptides/thymosin-alpha-1" className="text-[#3A759F] hover:underline">Thymosin Alpha-1</Link>, KPV, Thymogen Alpha-1, CerebroPrep, CogniPep, PinealPep, and other peptide complexes &mdash; all in oral and convenient formats. Integrative states that every batch undergoes independent third-party laboratory testing and is screened for heavy metals, residual solvents, and endotoxins; no specific lab is named anywhere on the site, including in that pre-gate snapshot. This oral-first approach makes Integrative Peptides particularly relevant for practitioners and patients who prefer non-injectable administration routes.
  </p>
  </div>
 
@@ -68,7 +68,7 @@ export default function IntegrativePeptidesCouponPage() {
  />
  <FAQItem
  q="Are Integrative Peptides products third-party tested?"
- a="Integrative states that every batch is independently third-party tested to ≥99% purity and screened for heavy metals, residual solvents, and endotoxins, and that its manufacturing is FDA-compliant."
+ a="Integrative states that every batch is independently third-party tested to ≥99% purity and screened for heavy metals, residual solvents, and endotoxins, and that its manufacturing is FDA-compliant. No specific testing laboratory is named anywhere on the site. As of September 2026, the full catalog sits behind a healthcare-provider login, so current product-level detail isn't publicly viewable."
  />
  <FAQItem
  q="Where does Integrative Peptides ship?"

@@ -91,7 +91,7 @@ export default function SwissChemsCouponPage() {
             Every Swiss Chems product is independently third-party tested at external laboratories by HPLC (to confirm identity and concentration) and mass spectrometry (to confirm molecular structure), against a 99%+ purity standard &mdash; batches that fall short are rejected. The distinguishing feature is verifiability: full batch Certificates of Analysis are published on a public Independent Test Results page and linked from product pages, and a product-verification system lets a researcher confirm the specific item they received.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">
-            Because the analysis is performed by outside laboratories and the COAs are published in full rather than summarized, researchers can check identity and purity at the batch level before use. One transparency caveat worth noting: Swiss Chems does not always name the specific testing laboratories, so the published COAs &mdash; rather than a named lab accreditation &mdash; are the primary verification artifact.
+            Because the analysis is performed by outside laboratories and the COAs are published in full rather than summarized, researchers can check identity and purity at the batch level before use. Of the 50 published certificates we reviewed, 30 are genuine Janoshik test reports &mdash; carrying task numbers, verify keys, and per-batch data. The other 20 are self-branded &ldquo;SC-HPLC-*&rdquo; documents that name no lab: they state only &ldquo;Tested By A US-Certified Laboratory&rdquo; alongside a generic badge, and reuse identical signature images across different products. So Janoshik is named on roughly 60% of the published COAs; the remainder name no laboratory at all.
           </p>
           <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mt-4">
             For an outside view, independent blind-test reporting on Swiss Chems &mdash; per-batch results from customer-submitted samples &mdash; is available at{" "}
@@ -133,7 +133,7 @@ export default function SwissChemsCouponPage() {
             />
             <FAQItem
               q="Is Swiss Chems third-party tested?"
-              a="Yes. Swiss Chems products are independently third-party tested at external laboratories by HPLC and mass spectrometry against a 99%+ purity standard, with batches below that standard rejected. Full batch Certificates of Analysis are published on a public Independent Test Results page rather than summarized."
+              a="Yes. Swiss Chems products are independently third-party tested at external laboratories by HPLC and mass spectrometry against a 99%+ purity standard, with batches below that standard rejected. Full batch Certificates of Analysis are published on a public Independent Test Results page rather than summarized. Of the 50 we reviewed, 30 are genuine Janoshik test reports (task numbers, verify keys, per-batch data); the other 20 are self-branded documents naming no lab, stating only &ldquo;Tested By A US-Certified Laboratory.&rdquo; Janoshik is named on roughly 60% of published COAs; the rest name no laboratory."
             />
             <FAQItem
               q="How can I verify a Swiss Chems product?"
