@@ -5,7 +5,11 @@ export const metadata = {
   ...buildPageMetadata({
     path: "/vendors",
     title: "Verified Vendors — Third-Party Lab Testing Directory | Prof. Peptide",
-    description: `Which lab tested which research-peptide vendor, drawn from ${activeVendorCount} vendors' own published certificates — named labs, not marketing claims.`,
+    // 2026-09: rewritten alongside the on-page intro fix — the prior wording ("Which lab tested
+    // which research-peptide vendor...") echoed the banner copy that got cut for describing the
+    // data structure rather than giving a reader a reason to read on. Matches the new intro's
+    // framing instead.
+    description: `A directory of ${activeVendorCount} peptide vendors we profile — each with the laboratory that tested it, named from the vendor's own published certificates.`,
     // /vendors keeps its existing generic content OG card (generateContentOg, via
     // opengraph-image.tsx) — untouched by this redesign, and the new title doesn't make it wrong:
     // that card was already a static, page-agnostic brand card ("Independent Peptide &

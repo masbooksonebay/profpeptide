@@ -60,16 +60,18 @@ export default function VendorProfilesPage() {
     <div className="section max-w-4xl">
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Verified Vendors" }])} />
       <span className="tag mb-3 inline-block">Updated Regularly</span>
-      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-8">Verified Vendors</h1>
-
-      <div className="flex items-center justify-center gap-2.5 mb-8 py-3.5 px-4 bg-[#3A759F]/10 border border-[#3A759F]/30 rounded-lg">
-        <svg className="w-5 h-5 text-[#3A759F] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <p className="text-base font-bold text-[#16181B] dark:text-white tracking-tight">
-          Which lab tested which vendor, from their own published certificates
-        </p>
-      </div>
+      <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-4">Verified Vendors</h1>
+      {/* Intro sentence, not a status badge (2026-09 fix): the redesign put "Which lab tested which
+          vendor..." in the slot /coupons uses for a live freshness badge ("Verified codes — {month}"),
+          describing the data structure instead of giving a reader a reason to read on. /vendors has
+          no equivalent status to show — facts.labs carries no verification date — so that slot is
+          gone entirely rather than repurposed. This is body copy under the H1, the shape the page
+          had before the redesign (a plain <p>, not a bordered/backgrounded banner). */}
+      <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-8 max-w-2xl">
+        A directory of the peptide vendors we profile &mdash; each with the laboratory that tested
+        it, named from the vendor&apos;s own published certificates. Select a vendor to open its
+        full profile.
+      </p>
 
       <CouponsBrowser
         picks={picks}
