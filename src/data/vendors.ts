@@ -194,14 +194,17 @@ export const vendors: Record<string, Vendor> = {
   "amino-club": {
     name: "Amino Club",
     code: "PROFPEPTIDE",
-    // 20% is the STANDING rate. A vendor-confirmed temporary boost to 35% ran through
-    // Mon Aug 31 2026 11:59 PM EDT; the vendor reverted and this was set back on 2026-09-02
-    // (Mark-confirmed), two days after the boost lapsed — the revert was logged in
-    // scripts/price-pull/skip-ledger.json (_pending_reverts) but nothing FAILS on an overdue
-    // entry, so it was carried live at 35% for two days. Every rate surface derives from this
-    // one string — H1, salience, code card, FAQ, OG card, hub, Offer schema and the price
-    // grid's post-code column all followed it up and have all followed it back down.
-    discount: "20% off",
+    // 20% is the STANDING rate. This is the SECOND vendor-confirmed temporary boost to 35% —
+    // the first ran through Mon Aug 31 2026 11:59 PM EDT and reverted late (5f9ba18, landed
+    // 2026-09-02, two days overdue: the ledger below is a human checklist no build guard reads).
+    // This one is confirmed via SMS from Amino Club's partner line (+1 833 309-6125), received
+    // 2026-09-05: "Amino Club: your affiliate code now gives 35% off (Labor Day Sale) through
+    // Thu, Sep 17, 3:00 AM EDT. Share it while the boost is on." REVERT to "20% off" is due then
+    // — logged in scripts/price-pull/skip-ledger.json (_pending_reverts). Expect a third boost;
+    // this schema still has no dated-expiry support. Every rate surface derives from this one
+    // string — H1, salience, code card, FAQ, OG card, hub, Offer schema and the price grid's
+    // post-code column all follow it.
+    discount: "35% off",
     region: "US",
     url: "https://aminoclub.com?utm_source=affiliate_marketing&code=PROFPEPTIDE",
     detailPage: "/coupons/amino-club",

@@ -7,6 +7,19 @@ import { RevealCodeBox } from "@/components/RevealCodeBox";
 import { CODES_VERIFIED_DATE, isCodeVerified } from "@/data/codes-verified";
 
 /**
+ * PILOT (2026-09-05, Amino Club only): sentence 2's "verified as of {month}" clause is what
+ * Google is quoting as a cached, dateable claim — measured stale on ~20 Amino Club pages
+ * ("verified as of August 2026" against a live September) because a crawled snippet has no way to
+ * force-refresh. A vendor in this Set gets a clause with no month instead, so the cached copy can
+ * never go stale again — it also drops sentence 2's second {pct} mention, which sentence 1 already
+ * carries and which Google was never shown anyway (only the H1 + sentence 1 make the snippet).
+ * Sentence 1 is UNCHANGED for a piloted vendor — only this clause branches — so the two vendor
+ * fields it reads (code, name, pct) still come from the same one registry string as every other
+ * treated vendor. A slug NOT in this Set renders the standard clause, byte-identical to before.
+ */
+const NO_MONTH_VERIFIED_CLAUSE = new Set<string>(["amino-club"]);
+
+/**
  * The coupon code card — eyebrow + code + discount/verified pills + Shop button — as ONE
  * shared component. Extracted rather than duplicated so a rollout to the other coupon pages
  * is a swap, not a copy-paste fork. (Historical note: an earlier pilot rendered this twice on
@@ -86,7 +99,11 @@ export function CouponCodeCard({
     <>
       {showSentence && (
         <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-          Use code {v.code} at {v.name} to save {pct}% on your order. The {v.name} coupon code{isCodeVerified(slug) ? ` is verified as of ${CODES_VERIFIED_DATE} and` : ""} gives you a {pct}% discount at checkout.
+          {NO_MONTH_VERIFIED_CLAUSE.has(slug) ? (
+            <>Use code {v.code} at {v.name} to save {pct}% on your order. Prof. Peptide verifies this code directly with the vendor and updates it when it changes.</>
+          ) : (
+            <>Use code {v.code} at {v.name} to save {pct}% on your order. The {v.name} coupon code{isCodeVerified(slug) ? ` is verified as of ${CODES_VERIFIED_DATE} and` : ""} gives you a {pct}% discount at checkout.</>
+          )}
         </p>
       )}
       <div className={`border border-gray-100 dark:border-slate-700 rounded-xl p-6 bg-gray-50 dark:bg-[#1e293b] ${className}`}>

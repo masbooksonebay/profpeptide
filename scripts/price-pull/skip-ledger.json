@@ -3,6 +3,12 @@
   "_updated": "2026-08-30",
   "_pending_reverts": {
     "_README": "Time-boxed vendor changes that MUST be undone on a specific date. The weekend price-pull run reads this and reports any revert whose due date has passed. Not consumed by any build guard — this is a human/CC checklist surfaced each weekend run.",
+    "amino-club-discount": {
+      "action": "In src/data/vendors.ts, set amino-club discount back to \"20% off\" (currently \"35% off\").",
+      "reason": "Vendor-confirmed SECOND temporary 35% boost (Labor Day Sale), via SMS from Amino Club's partner line (+1 833 309-6125) received 2026-09-05: \"Amino Club: your affiliate code now gives 35% off (Labor Day Sale) through Thu, Sep 17, 3:00 AM EDT. Share it while the boost is on.\"",
+      "due": "2026-09-17",
+      "due_detail": "Boost runs through Thu Sep 17 2026 3:00 AM EDT. This is the SECOND boost — the first ran to Aug 31 and reverted late (see _completed below, landed Sep 2, two days overdue: this ledger is a human checklist no build guard reads). Expect a third. Every rate surface derives from the vendors.ts discount string, so the single edit reverts H1/salience/code-card/FAQ/OG/hub/Offer/price-grid at once — plus the amino-club OG/twitter-image CARD_REV token (bump it again; Next hashes the ROUTE FILE, not the rendered PNG) and content-dates.generated.json (regenerate, don't hand-edit)."
+    },
     "_completed": {
       "_README": "Reverts that have been carried out. Kept rather than deleted so the ledger records that a time-boxed change was closed, and when, rather than going silently empty.",
       "amino-club-discount": {
