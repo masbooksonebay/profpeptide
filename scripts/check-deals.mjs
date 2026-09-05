@@ -41,6 +41,14 @@ for (const d of deals) {
   if (d.endsAt && Number.isNaN(new Date(d.endsAt).getTime())) {
     errors.push(`  "${d.vendorSlug}": endsAt "${d.endsAt}" does not parse as a date`);
   }
+  if (d.endsAtZone !== undefined) {
+    if (!d.endsAt) errors.push(`  "${d.vendorSlug}": endsAtZone set without endsAt — meaningless, drop one or the other`);
+    try {
+      new Intl.DateTimeFormat("en-US", { timeZone: d.endsAtZone });
+    } catch {
+      errors.push(`  "${d.vendorSlug}": endsAtZone "${d.endsAtZone}" is not a valid IANA zone`);
+    }
+  }
   if (d.aspectRatio !== undefined && !/^\d+(\.\d+)?\s*\/\s*\d+(\.\d+)?$/.test(d.aspectRatio)) {
     errors.push(`  "${d.vendorSlug}": aspectRatio "${d.aspectRatio}" is not a "width/height" CSS aspect-ratio value`);
   }

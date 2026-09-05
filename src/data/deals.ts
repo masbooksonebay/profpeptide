@@ -20,9 +20,16 @@ export interface Deal {
   /** Rendered ABOVE the image. Tells the reader PP's code beats what's printed on the flyer — it
    *  does not argue with the image, it instructs past it. */
   headline: string;
-  /** ISO-8601 timestamp. Present -> the entry disappears once past (see activeDeals). Absent ->
-   *  stays live until Mark removes it by hand (some vendor emails say "ending soon" with no date). */
+  /** ISO-8601 timestamp (a real instant — include the UTC offset or "Z"). Present -> the entry
+   *  disappears once past (see activeDeals) AND its deadline renders on the card. Absent -> stays
+   *  live until Mark removes it by hand, and the card renders an honest no-date line instead (some
+   *  vendor emails say "ending soon" with no date) — never a blank, and never a guessed date. */
   endsAt?: string;
+  /** IANA zone the deadline displays in, e.g. "America/Chicago". Vendors state their deadlines in
+   *  several different zones — this is what keeps "Ends {time}" honest instead of silently
+   *  relabeling everyone's deadline as Eastern. Omit only when the vendor's own stated zone really
+   *  is DEFAULT_ENDS_AT_ZONE; meaningless without `endsAt`. */
+  endsAtZone?: string;
   /** Short exclusions line, e.g. "Excludes bundles already on sale." */
   terms?: string;
   /** CSS `aspect-ratio` value, e.g. "2/3". Vendors' creatives vary in shape (a square social tile,
@@ -36,6 +43,33 @@ export interface Deal {
  *  reasonable until the actual creative is known. Chosen, not measured: no real Deal should stay on
  *  this default for long, since it's very unlikely to exactly match whatever gets dropped in. */
 export const DEFAULT_DEAL_ASPECT_RATIO = "4/5";
+
+/** Fallback display zone for a deal that omits `endsAtZone` — PP and most of its roster are
+ *  US-based on Eastern time. A vendor stating its deadline in a different zone must set
+ *  `endsAtZone` explicitly; this default is not a substitute for reading what the vendor said. */
+export const DEFAULT_ENDS_AT_ZONE = "America/New_York";
+
+/**
+ * The card's deadline line — always renders something, never blank and never a guessed date.
+ * `endsAt` present -> "Ends {month day, h:mm AM/PM ZONE}" in the deal's own stated zone
+ * (Intl.DateTimeFormat resolves the abbreviation, e.g. EDT vs EST, from the actual date, so this
+ * stays correct across a DST boundary rather than hardcoding a label that could go stale).
+ * `endsAt` absent -> an honest line saying so, rather than a card with no timing information at
+ * all (the actual gap this exists to close: nothing on the card previously told a reader whether a
+ * promo was live today or three weeks stale).
+ */
+export function formatEndsAt(deal: Pick<Deal, "endsAt" | "endsAtZone">): string {
+  if (!deal.endsAt) return "No end date given — confirm current availability with the vendor.";
+  const formatted = new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    timeZoneName: "short",
+    timeZone: deal.endsAtZone ?? DEFAULT_ENDS_AT_ZONE,
+  }).format(new Date(deal.endsAt));
+  return `Ends ${formatted}`;
+}
 
 export const deals: Deal[] = [
   {

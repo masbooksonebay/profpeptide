@@ -1,7 +1,7 @@
 import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
-import { activeDeals, DEFAULT_DEAL_ASPECT_RATIO, type Deal } from "@/data/deals";
+import { activeDeals, formatEndsAt, DEFAULT_DEAL_ASPECT_RATIO, type Deal } from "@/data/deals";
 import { vendors, type Vendor } from "@/data/vendors";
 import { VendorCodeChip } from "@/components/VendorCodeChip";
 
@@ -47,8 +47,9 @@ export default function DealsPage() {
       <span className="tag mb-3 inline-block">Live Promotions</span>
       <h1 className="text-3xl font-bold text-[#16181B] dark:text-slate-100 mb-3">Vendor Deals</h1>
       <p className="text-sm text-gray-500 dark:text-slate-400 mb-10 leading-relaxed max-w-lg">
-        Promotional creatives straight from Prof. Peptide-listed vendors — with PP&apos;s own code
-        called out wherever it beats what&apos;s printed on the flyer.
+        Promotional creatives straight from Prof. Peptide-listed vendors, with PP&apos;s own code
+        called out wherever it beats what&apos;s printed on the flyer. Most vendors let a sale and
+        an affiliate code stack — check each card for the specifics, since a few don&apos;t.
       </p>
 
       {entries.length === 0 ? (
@@ -84,6 +85,14 @@ export default function DealsPage() {
                     the reader PP's code beats the one printed on the flyer. */}
                 <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed">{deal.headline}</p>
 
+                {/* DEADLINE — right after the headline, before the code: it's the next thing worth
+                    knowing once the reader's decided the offer is worth a look ("is this even still
+                    on?"), ahead of the mechanics of claiming it. Unconditional — formatEndsAt()
+                    always returns a real line (a dated "Ends …" or an honest no-date admission),
+                    never blank: a card with no timing information at all was the actual gap this
+                    closes, not just a missing endsAt. */}
+                <p className="text-xs font-medium text-[#3A759F]">{formatEndsAt(deal)}</p>
+
                 {/* Code button ABOVE the creative, not beside a separate Shop button — clicking the
                     image (below) IS the shop action now, so a second CTA would be redundant.
                     VendorCodeChip, not a bare CopyCode: same component CouponsHubCard uses, so a
@@ -99,9 +108,10 @@ export default function DealsPage() {
                     sibling to the code button above, not an ancestor of it, so there is no shared
                     DOM/z-index to get wrong the way an overlay card would: the two controls simply
                     don't occupy the same pixels, so a click can never land on the wrong one.
-                    HEIGHT budget: CREATIVE_HEIGHT_PX (260px) + this card's header/text/code chrome
-                    measured (in-browser, real render, not estimated) at ~510px total on Nura's
-                    entry — comfortably inside a 1280x800/1366x768 laptop viewport's usable height
+                    HEIGHT budget: CREATIVE_HEIGHT_PX (260px) + this card's header/text/deadline/code
+                    chrome measured (in-browser, real render, not estimated) at 545px total on
+                    Nura's entry (was 501px before the deadline line was added) — comfortably inside
+                    a 1280x800/1366x768 laptop viewport's usable height
                     (screen height minus browser chrome minus the site's own sticky header). Fixed
                     height + aspectRatio + width left to resolve means the box's WIDTH is DERIVED
                     from the image's real shape (height x ratio), not the reverse — the box already
@@ -126,13 +136,8 @@ export default function DealsPage() {
                   />
                 </a>
 
-                {(deal.terms || deal.endsAt) && (
-                  <p className="text-xs text-gray-400 dark:text-slate-500">
-                    {deal.terms}
-                    {deal.terms && deal.endsAt ? " · " : ""}
-                    {deal.endsAt &&
-                      `Ends ${new Date(deal.endsAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`}
-                  </p>
+                {deal.terms && (
+                  <p className="text-xs text-gray-400 dark:text-slate-500">{deal.terms}</p>
                 )}
               </div>
             </article>
