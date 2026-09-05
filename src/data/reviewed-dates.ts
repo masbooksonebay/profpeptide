@@ -23,7 +23,7 @@ const monthYear = (iso: string): string => {
 
 /** ISO month the Featured Vendors hub (/best-peptide-vendors) was last editorially
  *  reviewed. Bump when you re-vet that curated list. */
-export const FEATURED_VENDORS_REVIEWED_ISO = "2026-08";
+export const FEATURED_VENDORS_REVIEWED_ISO = "2026-09";
 
 /** "Month Year" the /best-peptide-vendors "Updated …" badge renders — derived from the ISO
  *  above so the badge, and any other on-page "when", can't silently go stale month to month. */

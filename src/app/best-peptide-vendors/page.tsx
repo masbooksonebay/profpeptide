@@ -50,10 +50,14 @@ interface HubVendor {
 //   - Ascension Peptides + Swiss Chems: removed from this featured subset Aug 2026.
 //     (Ascension remains PROVEN in attribution.ts and still surfaces on profiles;
 //     Swiss Chems is CUT — see attribution.ts — so it was already off every profile.)
-//   - EZ Peptides, Glacier Aminos, Oasis Labs: removed from this featured subset Aug 2026.
-//     All three remain PROVEN in attribution.ts, so they still surface on /coupons, /vendors,
-//     and every profile block (price-row derivation) — this removal is the /best-peptide-vendors
-//     page only. Capstone Peptides added the same day (registry entry + public Accumark COA library).
+//   - EZ Peptides, Oasis Labs: removed from this featured subset Aug 2026. Both remain PROVEN in
+//     attribution.ts, so they still surface on /coupons, /vendors, and every profile block
+//     (price-row derivation) — this removal is the /best-peptide-vendors page only. Capstone
+//     Peptides added the same day (registry entry + public Accumark COA library).
+//   - Glacier Aminos: removed Aug 2026 (see above), RE-ADDED 2026-09-05 along with Crush Research
+//     (new). Both summaries are sourced from their own /coupons/<slug> pages, not re-derived from
+//     the vendor sites. Peptide Partners' summary was also rewritten the same day — it was thin
+//     next to the others — pulling in its two-lab-in-parallel testing detail from the same source.
 // Curated copy for the featured subset. Every field EXCEPT `code` and `discount` is
 // hand-set for this page; `code` and the discount RATE are omitted on purpose and
 // pulled from the registry below, so a code change (e.g. Glacier PROF10→PROFPEPTIDE) or
@@ -77,8 +81,24 @@ const featured: Omit<HubVendor, "code" | "discount">[] = [
     slug: "peptide-partners",
     url: "https://peptide.partners/ref/48/",
     description:
-      "US research peptide supplier that runs four independent test types per batch: purity, endotoxin, heavy metals, and sterility. Extensive transparency on test data and documentation.",
-    strengths: ["Four independent batch tests", "Endotoxin + sterility tested", "Published COAs", "Transparent test data"],
+      "US-based research peptide supplier that tests batches through two independent labs running in parallel — TrustPointe Analytics (Dorr, MI) and Kovera Labs — with many batches carrying certificates from both. Testing covers purity by RP-HPLC (99.7–99.99% across the certificates reviewed), identity by LC-MS, endotoxin under USP <85> (≤0.5 EU/mL), heavy metals by ICP, and rapid sterility screening. Every certificate is independently verifiable on the issuing lab’s own website, though the certificates themselves carry no laboratory accreditation mark.",
+    strengths: ["Two independent labs in parallel", "RP-HPLC purity 99.7–99.99%", "Endotoxin, heavy metals & sterility tested", "Verifiable on each lab’s site"],
+  },
+  {
+    name: "Glacier Aminos",
+    slug: "glacier-aminos",
+    url: "https://glacieraminos.shop/?ref=cknlhxrm",
+    description:
+      "US-based supplier with a fully public catalog and no account gating required to browse or buy. Glacier Aminos publishes a public, batch-searchable Certificate of Analysis library, with certificates issued over time by three independent US labs — Forever Young Pharmacy, Freedom Diagnostics, and most recently Kovera Labs, whose reports carry a per-record code verifiable directly at the lab. Testing covers HPLC purity and net peptide content, with the newest lots adding endotoxin, sterility, and heavy-metal screening. Cold-chain shipping is included on every order.",
+    strengths: ["Public, batch-searchable COA library", "Three independent labs over time", "Cold-chain shipping included", RATE_CHIP],
+  },
+  {
+    name: "Crush Research",
+    slug: "crush-research",
+    url: "https://crushresearch.shop/?ref=PROFPEPTIDE",
+    description:
+      "US-based, veteran-owned supplier built around batch- and lot-level accountability. Every batch is tested by ILS Laboratories, an ISO/IEC 17025-accredited lab, running a Full QC Panel — HPLC purity and identity, heavy metals by ICP-MS, and sterility by PCR — with HPLC conformity checked across three vials per batch rather than a single sample. Every report is independently verifiable at portal.ils-lab.com using the access code printed on it.",
+    strengths: ["ILS Laboratories, ISO/IEC 17025-accredited", "Three vials tested per batch", "Verifiable at portal.ils-lab.com", RATE_CHIP],
   },
   {
     name: "Capstone Peptides",
@@ -125,7 +145,7 @@ export default function BestPeptideVendorsPage() {
       }} />
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Featured Vendors" }])} />
 
-      <div className="section max-w-3xl">
+      <div className="section max-w-4xl">
         {/* Editorial review stamp — DERIVED from FEATURED_VENDORS_REVIEWED_ISO (a hand-set
             human-review date, bumped when the curated list is re-vetted), not typed inline.
             The H1 no longer carries its own date — that produced two months on one screen
@@ -149,56 +169,63 @@ export default function BestPeptideVendorsPage() {
           <NavLink href="/coupons" className="text-sm font-medium text-[#3A759F] hover:underline whitespace-nowrap">See current codes</NavLink>
         </div>
 
-        <div className="space-y-6">
+        {/* Card shape matches /coupons (CouponsHubCard) and /vendors (VendorTestingCard) post-2026-09
+            redesign: a header band (name + pill, bg-gray-50, border-b) over a body (px-5 py-4),
+            same rounded-xl/border/shadow-sm hover:shadow-md/hover:border-accent treatment. NO search
+            box, NO A–Z bar (CouponsBrowser) — this is a short, hand-curated list, not a 57-entry
+            directory; those controls exist there because of the count, not because of the shape. */}
+        <div className="space-y-4">
           {vendors.map((v) => (
             <div
               key={v.slug}
-              className="border border-[#D9DEE4] dark:border-slate-700 rounded-xl p-6 bg-white dark:bg-[#0f172a] hover:shadow-md transition-shadow"
+              className="rounded-xl overflow-hidden border border-[#D9DEE4] dark:border-slate-600 shadow-sm hover:shadow-md hover:border-[#3A759F]/40 transition-all duration-200 bg-white dark:bg-[#0f172a]"
             >
-              <div className="flex items-start justify-between gap-4 mb-3 flex-wrap">
-                <h2 className="text-lg font-semibold text-[#16181B] dark:text-slate-100">
+              <div className="px-5 py-3.5 bg-gray-50 dark:bg-[#1e293b] border-b border-gray-100 dark:border-slate-700 flex items-center justify-between gap-3">
+                <h2 className="font-bold text-xl leading-tight text-[#16181B] dark:text-slate-100 truncate">
                   <Link href={`/coupons/${v.slug}?from=${backLinkParam("featured-vendors")}`} className="hover:text-[#3A759F] transition-colors">
                     {v.name}
                   </Link>
                 </h2>
-                <span className="text-xs font-bold text-[#3A759F] bg-[#3A759F]/15 px-2.5 py-1 rounded-full whitespace-nowrap">
+                <span className="text-sm font-bold text-[#3A759F] bg-[#3A759F]/15 px-3 py-1.5 rounded-full whitespace-nowrap flex-shrink-0">
                   {v.discount}
                 </span>
               </div>
 
-              <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
-                {v.description}
-              </p>
+              <div className="px-5 py-4">
+                <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-4">
+                  {v.description}
+                </p>
 
-              <div className="flex flex-wrap gap-2 mb-5">
-                {v.strengths.map((s) => (
-                  <span
-                    key={s}
-                    className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-600 dark:text-slate-300 border border-[#D9DEE4] dark:border-slate-600 px-2.5 py-0.5 rounded-full"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-
-              <div className="space-y-3">
-                {/* Code (chip) + Shop (filled CTA, no arrow) on one row, equal height —
-                    same pattern as the price-table rows. Review link is its own line below. */}
-                <div className="flex items-center justify-between gap-3">
-                  <CopyCode code={v.code} />
-                  <a
-                    href={`/go/${v.slug}?from=featured-vendors`}
-                    target="_blank"
-                    rel="sponsored nofollow noopener"
-                    className="btn-primary text-xs px-4 h-9 py-0 whitespace-nowrap"
-                  >
-                    Shop {v.name}
-                  </a>
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {v.strengths.map((s) => (
+                    <span
+                      key={s}
+                      className="text-xs bg-gray-50 dark:bg-[#1e293b] text-gray-600 dark:text-slate-300 border border-[#D9DEE4] dark:border-slate-600 px-2.5 py-0.5 rounded-full"
+                    >
+                      {s}
+                    </span>
+                  ))}
                 </div>
-                <NavLink
-                  href={`/coupons/${v.slug}?from=${backLinkParam("featured-vendors")}`}
-                  className="inline-block text-xs font-medium text-[#3A759F] hover:underline"
-                >Read full review</NavLink>
+
+                <div className="space-y-3">
+                  {/* Code (chip) + Shop (filled CTA, no arrow) on one row, equal height —
+                      same pattern as the price-table rows. Review link is its own line below. */}
+                  <div className="flex items-center justify-between gap-3">
+                    <CopyCode code={v.code} />
+                    <a
+                      href={`/go/${v.slug}?from=featured-vendors`}
+                      target="_blank"
+                      rel="sponsored nofollow noopener"
+                      className="btn-primary text-xs px-4 h-9 py-0 whitespace-nowrap"
+                    >
+                      Shop {v.name}
+                    </a>
+                  </div>
+                  <NavLink
+                    href={`/coupons/${v.slug}?from=${backLinkParam("featured-vendors")}`}
+                    className="inline-block text-xs font-medium text-[#3A759F] hover:underline"
+                  >Read full review</NavLink>
+                </div>
               </div>
             </div>
           ))}
