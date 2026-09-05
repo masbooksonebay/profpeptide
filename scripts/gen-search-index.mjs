@@ -157,6 +157,7 @@ const HUB_PAGES = [
   ["Glossary", "/glossary", "Peptide & supplement research glossary"],
   ["FAQ", "/faq", "Frequently asked questions"],
   ["Labs", "/labs", "The independent labs behind vendors' Certificates of Analysis"],
+  ["Vendor Deals", "/deals", "Live vendor promotions and discount codes"],
   ["Vendor Testing Index", "/vendor-testing-index", "Third-party testing by vendor"],
   ["Prof. Peptide App", "/app", "Get the Prof. Peptide app"],
 ];

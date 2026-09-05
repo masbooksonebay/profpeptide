@@ -35,6 +35,7 @@ const nav: NavEntry[] = [
   { label: routes.peptides.navLabel, href: routes.peptides.href, dropdown: "categories" },
   { label: "Vendors", href: routes.verifiedVendors.href, dropdown: "vendors" },
   { label: routes.prices.navLabel, href: routes.prices.href },
+  { label: routes.deals.navLabel, href: routes.deals.href },
   { label: routes.coupons.navLabel, href: routes.coupons.href },
   { label: routes.calculator.navLabel, href: routes.calculator.href },
   { label: "App", href: "/app" },

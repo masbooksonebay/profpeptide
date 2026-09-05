@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/check-links.mjs && node scripts/check-prices-orphan.mjs && node scripts/check-doc-integrity.mjs && node scripts/check-prices-sync.mjs && node scripts/check-blend-skips.mjs && node scripts/check-grids.mjs && node scripts/check-attribution.mjs && node scripts/check-vendor-pins.mjs && node scripts/check-freshness.mjs && node scripts/check-surfaces.mjs && node scripts/check-verified-membership.mjs && node scripts/check-og-routes.mjs && node scripts/check-go-redirects.mjs && node scripts/check-coupon-prose.mjs && node scripts/check-market-claims.mjs && node scripts/check-counts.mjs && node scripts/check-prices.mjs && node scripts/check-codes.mjs && node scripts/check-search-index.mjs && node scripts/check-chat-corpus.mjs && node scripts/check-content-dates.mjs && node scripts/check-faqs-advisory.mjs && node scripts/gen-vendor-slugs.mjs && node scripts/gen-codes-manifest.mjs && next build && next-sitemap && node scripts/check-sitemap-noindex.mjs && node scripts/check-og-metadata.mjs && node scripts/check-og-assets.mjs && node scripts/check-sitemap-coverage.mjs && node scripts/check-orphan-pages.mjs && node scripts/check-go-routing.mjs",
+    "build": "node scripts/check-links.mjs && node scripts/check-prices-orphan.mjs && node scripts/check-doc-integrity.mjs && node scripts/check-prices-sync.mjs && node scripts/check-blend-skips.mjs && node scripts/check-grids.mjs && node scripts/check-attribution.mjs && node scripts/check-vendor-pins.mjs && node scripts/check-deals.mjs && node scripts/check-freshness.mjs && node scripts/check-surfaces.mjs && node scripts/check-verified-membership.mjs && node scripts/check-og-routes.mjs && node scripts/check-go-redirects.mjs && node scripts/check-coupon-prose.mjs && node scripts/check-market-claims.mjs && node scripts/check-counts.mjs && node scripts/check-prices.mjs && node scripts/check-codes.mjs && node scripts/check-search-index.mjs && node scripts/check-chat-corpus.mjs && node scripts/check-content-dates.mjs && node scripts/check-faqs-advisory.mjs && node scripts/gen-vendor-slugs.mjs && node scripts/gen-codes-manifest.mjs && next build && next-sitemap && node scripts/check-sitemap-noindex.mjs && node scripts/check-og-metadata.mjs && node scripts/check-og-assets.mjs && node scripts/check-sitemap-coverage.mjs && node scripts/check-orphan-pages.mjs && node scripts/check-go-routing.mjs",
     "start": "next start",
     "lint": "next lint",
     "check:vendors": "node scripts/check-vendors.mjs",
@@ -23,6 +23,7 @@
     "check:grids": "node scripts/check-grids.mjs",
     "check:attribution": "node scripts/check-attribution.mjs",
     "check:vendor-pins": "node scripts/check-vendor-pins.mjs",
+    "check:deals": "node scripts/check-deals.mjs",
     "check:prices-orphan": "node scripts/check-prices-orphan.mjs",
     "check:freshness": "node scripts/check-freshness.mjs",
     "check:surfaces": "node scripts/check-surfaces.mjs",

@@ -1,5 +1,5 @@
 // Canonical labels + sublines for the site's primary destinations — the SINGLE SOURCE OF
-// TRUTH for how these six pages are named across the nav, hero, Quick Links, cards, and footer.
+// TRUTH for how these pages are named across the nav, hero, Quick Links, cards, and footer.
 // Only labels / hrefs / sublines live here; per-surface JSX and layout stay local to each
 // consumer (Header, SearchOverlay, app/page.tsx, Footer).
 //
@@ -56,6 +56,12 @@ export const routes = {
     navLabel: "Codes",
     longLabel: "Vendor Discount Codes",
     subline: "Vendor codes & promos",
+  },
+  deals: {
+    href: "/deals",
+    navLabel: "Deals",
+    longLabel: "Vendor Deals & Promotions",
+    subline: "Live promo creatives & codes",
   },
   calculator: {
     href: "/calculator",

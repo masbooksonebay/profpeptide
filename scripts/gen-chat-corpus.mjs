@@ -471,12 +471,47 @@ function extractFaqQuestionsModule() {
   });
 }
 
-// Lab profiles (/labs/<slug>) are a data-driven route (one page.tsx, generateStaticParams over
-// src/data/labs.ts), not a per-slug directory — dirsIn()'s directory scan can't find them the way
-// it finds peptides/supplements/guides/compare/coupons. Extracted straight from the data module
-// instead, same technique as extractFaqQuestionsModule() above. Vendor matches are resolved the
-// same way the page itself resolves them — vendorsUsingLab() from vendors.ts, joined by slug — so
-// the corpus can answer "which vendors use lab X" without a second hand-kept list.
+// /deals is a single static page whose entire body renders from `deals.ts` object properties
+// (deal.headline, vendor.name, vendor.code, vendor.discount, …) inside one `{entries.map(...)}` —
+// there's no top-level `sections`/`faqs` array and `entries` isn't a literal AST array extractPage()
+// can see (it's built at runtime from activeDeals()), so its generic JSX walker would collapse the
+// whole map() to a single REDACT token instead of real prose. Extracted straight from the data
+// module instead, same technique as extractLabsModule() above. Deliberately does NOT surface the
+// vendor's code or discount rate as text — same sitewide rule as everywhere else in this corpus:
+// codes/prices/rates come from vendors.ts at request time, never as a fact the model has memorized
+// from a snapshot that can go stale. redactLiterals() strips them from the headline automatically
+// (a headline like "Use code PROFPEPTIDE instead — 25% off" already matches CODE_PATTERN and
+// DISCOUNT_PATTERN), which is a second, belt-and-suspenders reason not to hand-write them here too.
+function extractDealsModule() {
+  const { activeDeals } = execModule("src/data/deals.ts");
+  const { vendors } = execModule("src/data/vendors.ts");
+  const counter = { count: 0 };
+  const now = new Date();
+  const live = activeDeals(now)
+    .map((deal) => ({ deal, vendor: vendors[deal.vendorSlug] }))
+    .filter((e) => e.vendor && !e.vendor.retired);
+  if (live.length === 0) return [];
+  const sections = live.map(({ deal, vendor }) => {
+    const bits = [redactLiterals(deal.headline, counter)];
+    if (deal.terms) bits.push(redactLiterals(deal.terms, counter));
+    return { heading: vendor.name, text: bits.join(" ") };
+  });
+  const fullText = ["Prof. Peptide runs a live vendor-deals page at /deals with vendor-supplied promotional creatives.", ...sections.map((s) => `${s.heading}: ${s.text}`)].join("\n\n");
+  return [
+    {
+      url: "/deals",
+      title: "Vendor Deals",
+      category: "vendor",
+      sections,
+      faqs: [],
+      studies: "",
+      fullText,
+      tokenEstimate: Math.ceil(fullText.length / 4),
+      redactions: counter.count,
+    },
+  ];
+}
+
 function extractLabsModule() {
   const { labs, ACCREDITATION_CHECKED_DATE } = execModule("src/data/labs.ts");
   const { vendorsUsingLab } = execModule("src/data/vendors.ts");
@@ -617,6 +652,7 @@ export function buildCorpus() {
 
   pages.push(...extractFaqQuestionsModule());
   pages.push(...extractLabsModule());
+  pages.push(...extractDealsModule());
 
   pages.sort((a, b) => a.url.localeCompare(b.url));
   return pages;

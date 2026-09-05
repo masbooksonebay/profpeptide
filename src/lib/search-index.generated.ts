@@ -384,6 +384,7 @@ export const generatedSearchIndex: SearchEntry[] = [
   {"title":"Glossary","url":"/glossary","category":"page","description":"Peptide & supplement research glossary","tags":[]},
   {"title":"FAQ","url":"/faq","category":"page","description":"Frequently asked questions","tags":[]},
   {"title":"Labs","url":"/labs","category":"page","description":"The independent labs behind vendors' Certificates of Analysis","tags":[]},
+  {"title":"Vendor Deals","url":"/deals","category":"page","description":"Live vendor promotions and discount codes","tags":[]},
   {"title":"Vendor Testing Index","url":"/vendor-testing-index","category":"page","description":"Third-party testing by vendor","tags":[]},
   {"title":"Prof. Peptide App","url":"/app","category":"page","description":"Get the Prof. Peptide app","tags":[]},
 ];

@@ -43,6 +43,10 @@ function isPhaseA(p) {
   // /go/{slug}?from=vendors-card — the first outbound link this surface has ever carried. Without
   // this line a raw affiliate href here would go completely uncaught.
   if (p === "/vendors") return true;
+  // Added for /deals: every entry's Shop button routes through /go/{slug}?from=deals
+  // (VendorShopButton.tsx). Same gap /vendors had before the line above — this page wasn't scanned
+  // until added here.
+  if (p === "/deals") return true;
   return false;
 }
 
